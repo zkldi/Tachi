@@ -92,6 +92,36 @@ for (const { game, matchType, playtype } of uniquenessChecks) {
 			continue;
 		}
 
+		if (
+			(matchType === "inGameID" || matchType === "sdvxInGameID")
+			&& (el.data.inGameID === null || el.data.inGameID === undefined)
+		) {
+			console.log(
+				chalk.yellow(
+					`Chart ID ${el.chartID} (song ID ${el.songID}) cannot be matched using matchType=${
+						matchType
+					} because its inGameID is unknown.`,
+				)
+			);
+			warns++;
+			continue;
+		}
+
+		if (
+			matchType === "inGameStrID"
+			&& (el.data.inGameStrID === null && el.data.inGameStrID === undefined)
+		) {
+			console.log(
+				chalk.yellow(
+					`Chart ID ${el.chartID} (song ID ${el.songID}) cannot be matched using matchType=${
+						matchType
+					} because its inGameStrID is unknown.`,
+				)
+			);
+			warns++;
+			continue;
+		}
+
 		let newUniqueThingies = handler.fn(el);
 
 		// make single returns into arrays. convenient.

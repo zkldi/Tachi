@@ -18,32 +18,67 @@ function test<T>(desc: string, fn: TestFn<T>): Test<T> {
 const CHART_CHECKS: { [G in Game]?: Array<Test<ChartDocument<GPTStrings[G]>>> } = {
 	iidx: [
 		test("Level should not be 0", (c) => c.level !== "0"),
-		test("LevelNum should be an integer greater than 0", (c) =>
-			c.levelNum > 0 && Number.isInteger(c.levelNum)),
-		test("Level and LevelNum should align", (c) => c.level === c.levelNum.toString()),
+		test(
+			"LevelNum should be an integer greater than 0 if level is known",
+			(c) =>	c.level === "?" || c.levelNum > 0
+		),
+		test(
+			"Level and LevelNum should align",
+			(c) => (c.level === "?" && c.levelNum === 0) || c.level === c.levelNum.toString()
+		),
 	],
 	chunithm: [
 		test("Level should not be 0", (c) => c.level !== "0"),
-		test("LevelNum should be an integer greater than 0", (c) =>
-			c.levelNum > 0 && Number.isInteger(c.levelNum)),
+		test("LevelNum should be a number greater than 0", (c) => c.levelNum > 0),
+		test(
+			"Level and LevelNum should align (X+ should be X.5 or higher)",
+			(c) => {
+				if (c.level.endsWith("+")) {
+					return c.levelNum * 10 % 10 >= 5
+				} else {
+					return c.levelNum * 10 % 10 < 5
+				}
+			},
+		),
+		test(
+			"inGameID should not exceed 8000, which is reserved for WORLD'S END charts.",
+			(c) => c.data.inGameID === null || c.data.inGameID < 8000,
+		)
 	],
 	maimaidx: [
 		test("Level should not be 0", (c) => c.level !== "0"),
-		test("LevelNum should be an integer greater than 0", (c) =>
-			c.levelNum > 0 && Number.isInteger(c.levelNum)),
+		test("LevelNum should be an number greater than 0", (c) => c.levelNum > 0),
+		test("inGameID for ST charts should be smaller than 10000",
+			(c) => {
+				if (c.difficulty.startsWith("DX")) {
+					return true;
+				}
+
+				return c.data.inGameID === null || c.data.inGameID < 10000;
+			},
+		),
+		test(
+			"inGameID for DX charts should be between 10000 (inclusive) and 20000 (exclusive)",
+			(c) => {
+				if (!c.difficulty.startsWith("DX")) {
+					return true;
+				}
+
+				if (c.data.inGameID === null) {
+					return true;
+				}
+
+				return c.data.inGameID >= 10000 && c.data.inGameID < 20000;
+			},
+		),
+		test(
+			"inGameID should not exceed 100000, which is reserved for UTAGE charts.",
+			(c) => c.data.inGameID === null || c.data.inGameID < 100000,
+		),
 	],
 };
 
 const SONG_CHECKS: { [G in Game]?: Array<Test<SongDocument<G>>> } = {};
-
-function FormatPrError(err, foreword = "Error") {
-	const receivedText =
-		typeof err.userVal === "object" && err.userVal !== null
-			? ""
-			: ` | Received ${err.userVal} [${err.userVal === null ? "null" : typeof err.userVal}]`;
-
-	return `${foreword}: ${err.keychain} | ${err.message}${receivedText}.`;
-}
 
 let exitCode = 0;
 const suites: Array<{ name: string; good: boolean; report: unknown }> = [];
@@ -89,14 +124,10 @@ for (const collection of collections) {
 		const pretty = formatFn(d, game as Game);
 
 		for (const check of checks[game as Game] ?? []) {
-			try {
-				check.fn(d);
-			} catch (err) {
+			if (!check.fn(d)) {
 				console.error(
 					chalk.red(
-						`[ERR] ${collectionName} | ${check.desc} | ${pretty} | ${FormatPrError(
-							err
-						)}.`
+						`[ERR] ${collectionName} | ${check.desc} | ${pretty}`,
 					)
 				);
 				failed = true;

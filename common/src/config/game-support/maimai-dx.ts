@@ -211,10 +211,12 @@ export const MAIMAI_DX_SINGLE_CONF = {
 		buddiesplus: "BUDDiES PLUS",
 	},
 
-	chartData: z.strictObject({}),
+	chartData: z.strictObject({
+		inGameID: z.number().int().nonnegative().nullable(),
+	}),
 
 	preferences: z.strictObject({}),
 	scoreMeta: z.strictObject({}),
 
-	supportedMatchTypes: ["songTitle", "tachiSongID"],
+	supportedMatchTypes: ["songTitle", "tachiSongID", "inGameID"],
 } as const satisfies INTERNAL_GAME_PT_CONFIG;

@@ -1,8 +1,11 @@
 const fetch = require("node-fetch");
-const { CreateChartID, ReadCollection, WriteCollection } = require("../../util");
+const { CreateChartID, ReadCollection, WriteCollection, GetFreshSongIDGenerator } = require("../../util");
+const { CreateLogger } = require("mei-logger");
 
-const CURRENT_VERSION = "buddies";
-const CURRENT_VERSION_NUM = 240;
+const logger = CreateLogger("parse-maimaidx-dataset");
+
+const CURRENT_VERSION = "buddiesplus";
+const CURRENT_VERSION_NUM = 245;
 const DATA_URL = "https://maimai.sega.jp/data/maimai_songs.json";
 const ALIAS_URL =
 	"https://raw.githubusercontent.com/lomotos10/GCM-bot/main/data/aliases/en/maimai.tsv";
@@ -57,12 +60,18 @@ const versionOverrides = {
 	const songs = ReadCollection("songs-maimaidx.json");
 	const charts = ReadCollection("charts-maimaidx.json");
 
-	const existingSongs = new Map(songs.map((e) => [e.title, e.id]));
-	const existingCharts = new Map(charts.map((e) => [`${e.songID} ${e.difficulty}`, e.chartID]));
+	const existingSongs = new Map(songs.map((e) => [`${e.title}-${e.artist}`, e.id]));
+	const existingCharts = new Map(charts.map((e) => [`${e.songID}-${e.difficulty}`, e.chartID]));
+
+	logger.info(`Fetching official song information from ${DATA_URL}...`);
 
 	const datum = await fetch(DATA_URL).then((r) => r.json());
 	const aliases = new Map();
+
+	logger.info(`Fetching aliases from ${ALIAS_URL}...`);
+
 	const aliasesRaw = await fetch(ALIAS_URL).then((r) => r.text());
+	
 	for (const line of aliasesRaw.split("\n")) {
 		const [title, ...alias] = line.split("\t");
 		aliases.set(title, alias);
@@ -72,7 +81,8 @@ const versionOverrides = {
 	// japanese titled songs
 	const altTitles = [];
 
-	let songID = Math.max(Math.max(...existingSongs.values()), 0) + 1;
+	const getFreshSongID = GetFreshSongIDGenerator("maimaidx");
+	let chartsWithLevelChanges = 0;
 
 	for (const data of datum) {
 		// We don't support UTAGE charts, which are similar to CHUNITHM's WORLD'S END.
@@ -80,26 +90,30 @@ const versionOverrides = {
 			continue;
 		}
 
-		let thisSongID = songID;
-
 		const version = versionOverrides[data.title] ?? Number(data.version.substring(0, 3));
+		
 		if (version > CURRENT_VERSION_NUM && !Object.keys(versionOverrides).includes(data.title)) {
-			// Skipping songs that are newer than currently supported version (FESTiVAL PLUS).
+			// Skipping songs that are newer than currently supported version.
+			logger.warn(`Ignoring song ${data.artist} - ${data.title}, which is newer than CURRENT_VERSION_NUM.`);
 			continue;
 		}
+
+		let tachiSongID = existingSongs.get(`${data.title}-${data.artist}`);
+
 		if (data.title === "　" && data.artist === "x0o0x_") {
 			// Manual override since the song's title is "" (empty) in the dataset.
-			continue;
+			tachiSongID = 959;
 		}
 
-		if (existingSongs.has(data.title)) {
-			thisSongID = existingSongs.get(data.title);
-			const song = songs.find((e) => e.id === thisSongID);
+		if (tachiSongID !== undefined) {
+			const song = songs.find((e) => e.id === tachiSongID);
+			
 			song.searchTerms = aliases.get(data.title.trim()) ?? [];
 		} else {
-			songID++;
+			tachiSongID = getFreshSongID();
+
 			songs.push({
-				id: thisSongID,
+				id: tachiSongID,
 				title: data.title.trim(),
 				artist: data.artist.trim(),
 				searchTerms: aliases.get(data.title.trim()) ?? [],
@@ -109,7 +123,8 @@ const versionOverrides = {
 					genre: data.catcode.trim(),
 				},
 			});
-			console.log(`New song: ${data.artist.trim()} - ${data.title.trim()}`);
+
+			logger.info(`Added new song ${data.artist.trim()} - ${data.title.trim()}.`);
 		}
 
 		diffNames.forEach((diff) => {
@@ -118,28 +133,42 @@ const versionOverrides = {
 				return;
 			}
 
-			const chartID = existingCharts.get(`${thisSongID} DX ${diffMap.get(diff)}`);
+			const chartID = existingCharts.get(`${tachiSongID}-DX ${diffMap.get(diff)}`);
 			const chart = charts.find((e) => e.chartID === chartID);
-			if (chartID) {
+			const lvNum = Number(data[`dx_lev_${diff}`].replace(/\+/u, ".6"));
+			
+			if (chartID) {	
 				if (!chart.versions.includes(CURRENT_VERSION)) {
 					chart.versions.push(CURRENT_VERSION);
 				}
+
+				if (chart.level !== data[`dx_lev_${diff}`]) {
+					logger.info(`Chart ${data.artist} - ${data.title} [DX ${diffMap.get(diff)}] (${chartID}) has had a level change: ${chart.level} -> ${data[`dx_lev_${diff}`]}.`);
+
+					chart.level = data[`dx_lev_${diff}`];
+					chart.levelNum = lvNum;
+					
+					chartsWithLevelChanges++;
+				}
+
 				return;
 			}
 
-			const lvNum = Number(data[`dx_lev_${diff}`].replace(/\+/u, ".7"));
-
 			charts.push({
-				songID: thisSongID,
+				songID: tachiSongID,
 				chartID: CreateChartID(),
 				level: data[`dx_lev_${diff}`],
 				levelNum: lvNum,
 				isPrimary: true,
 				difficulty: `DX ${diffMap.get(diff)}`,
 				playtype: "Single",
-				data: {},
+				data: {
+					inGameID: null,
+				},
 				versions: [CURRENT_VERSION],
 			});
+
+			logger.info(`Added new chart ${data.artist} - ${data.title} [DX ${diffMap.get(diff)}].`);
 		});
 
 		diffNames.forEach((diff) => {
@@ -148,19 +177,30 @@ const versionOverrides = {
 				return;
 			}
 
-			const chartID = existingCharts.get(`${thisSongID} ${diffMap.get(diff)}`);
+			const chartID = existingCharts.get(`${tachiSongID}-${diffMap.get(diff)}`);
 			const chart = charts.find((e) => e.chartID === chartID);
+
+			const lvNum = Number(data[`lev_${diff}`].replace(/\+/u, ".6"));
+
 			if (chartID) {
 				if (!chart.versions.includes(CURRENT_VERSION)) {
 					chart.versions.push(CURRENT_VERSION);
 				}
+
+				if (chart.level !== data[`lev_${diff}`]) {
+					logger.info(`Chart ${data.artist} - ${data.title} [${diffMap.get(diff)}] (${chartID}) has had a level change: ${chart.level} -> ${data[`lev_${diff}`]}.`);
+
+					chart.level = data[`lev_${diff}`];
+					chart.levelNum = lvNum;
+
+					chartsWithLevelChanges++;
+				}
+
 				return;
 			}
 
-			const lvNum = Number(data[`lev_${diff}`].replace(/\+/u, ".7"));
-
 			charts.push({
-				songID: thisSongID,
+				songID: tachiSongID,
 				chartID: CreateChartID(),
 				level: data[`lev_${diff}`],
 				levelNum: lvNum,
@@ -170,7 +210,13 @@ const versionOverrides = {
 				data: {},
 				versions: [CURRENT_VERSION],
 			});
+
+			logger.info(`Added new chart ${data.artist} - ${data.title} [${diffMap.get(diff)}].`);
 		});
+	}
+
+	if (chartsWithLevelChanges > 0) {
+		logger.warn(`${chartsWithLevelChanges} chart(s) has had level changes, and their levelNum has been adjusted to default values. You should obtain the new levelNum for this chart using merge-options.ts or add-maimaidx-internal-levels.ts.`);
 	}
 
 	WriteCollection("charts-maimaidx.json", charts);
