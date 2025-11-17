@@ -20,6 +20,13 @@ const logger = CreateLogCtx(__filename);
  * change.
  */
 async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: string) {
+	if (tableEntries.length === 0) {
+		logger.info(
+			`No entries in table ${prefix}, skipping removals to prevent instantly wiping the table.`
+		);
+		return;
+	}
+
 	// There are two ways to approach this, we could wipe the table
 	// and then just apply the update. That is easy enough, but
 	// leaves us in a temporary* invalid state for a while.
@@ -62,7 +69,7 @@ async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: s
 		return;
 	}
 
-	logger.info(`Removing ${toRemove} chart(s) from ${prefix}.`);
+	logger.info(`Removing ${toRemove.length} chart(s) from ${prefix}.`);
 
 	// remove this table info from all of the charts that no longer
 	// exist in the table.
@@ -74,7 +81,8 @@ async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: s
 			$pull: {
 				"data.tableFolders": { table: prefix },
 			},
-		}
+		},
+		{ multi: true }
 	);
 }
 
@@ -103,7 +111,8 @@ async function ImportTableLevels(
 			$pull: {
 				"tableFolders.table": prefix,
 			},
-		}
+		},
+		{ multi: true }
 	);
 
 	await db.charts.bms.update(
@@ -114,7 +123,8 @@ async function ImportTableLevels(
 			$pull: {
 				"tableFolders.table": prefix,
 			},
-		}
+		},
+		{ multi: true }
 	);
 
 	for (const td of tableEntries) {
