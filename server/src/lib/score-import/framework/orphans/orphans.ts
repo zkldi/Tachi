@@ -137,50 +137,54 @@ export async function ReprocessOrphan(
 		return null;
 	}
 
-	await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
-
-	// else, import the orphan.
-
-	let converterReturns;
-
 	try {
-		converterReturns = await ProcessSuccessfulConverterReturn(
-			orphan.userID,
-			res,
-			blacklist,
-			logger,
-			true
-		);
-	} catch (err) {
-		if (IsConverterFailure(err) && err.failureType === "InvalidScore") {
+		// else, import the orphan.
+
+		let converterReturns;
+
+		try {
+			converterReturns = await ProcessSuccessfulConverterReturn(
+				orphan.userID,
+				res,
+				blacklist,
+				logger,
+				true
+			);
+		} catch (err) {
+			if (IsConverterFailure(err) && err.failureType === "InvalidScore") {
+				return null;
+			}
+
+			throw err;
+		}
+
+		if (converterReturns === null || !converterReturns.success) {
 			return null;
 		}
 
-		throw err;
-	}
+		const user = await GetUserWithID(orphan.userID);
 
-	if (converterReturns === null || !converterReturns.success) {
-		return null;
-	}
+		if (!user) {
+			logger.severe(
+				`Orphan ${orphan.orphanID} belongs to ${orphan.userID}, but that user no longer exists in the database. Going to skip this and remove the orphan.`
+			);
+			return null;
+		}
 
-	const user = await GetUserWithID(orphan.userID);
-
-	if (!user) {
-		logger.severe(
-			`Orphan ${orphan.orphanID} belongs to ${orphan.userID}, but that user no longer exists in the database. Going to skip this and remove the orphan.`
+		await HandlePostImportSteps(
+			[converterReturns],
+			user,
+			orphan.importType,
+			orphan.game,
+			null,
+			logger,
+			undefined
 		);
-		return null;
+
+		return converterReturns;
+	} finally {
+		// Delete the orphaned score *after* the deorphan process definitely ends in a
+		// success or a failure.
+		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
 	}
-
-	await HandlePostImportSteps(
-		[converterReturns],
-		user,
-		orphan.importType,
-		orphan.game,
-		null,
-		logger,
-		undefined
-	);
-
-	return converterReturns;
 }
