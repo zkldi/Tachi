@@ -137,54 +137,54 @@ export async function ReprocessOrphan(
 		return null;
 	}
 
+	// else, import the orphan.
+
+	let converterReturns;
+
 	try {
-		// else, import the orphan.
-
-		let converterReturns;
-
-		try {
-			converterReturns = await ProcessSuccessfulConverterReturn(
-				orphan.userID,
-				res,
-				blacklist,
-				logger,
-				true
-			);
-		} catch (err) {
-			if (IsConverterFailure(err) && err.failureType === "InvalidScore") {
-				return null;
-			}
-
-			throw err;
-		}
-
-		if (converterReturns === null || !converterReturns.success) {
-			return null;
-		}
-
-		const user = await GetUserWithID(orphan.userID);
-
-		if (!user) {
-			logger.severe(
-				`Orphan ${orphan.orphanID} belongs to ${orphan.userID}, but that user no longer exists in the database. Going to skip this and remove the orphan.`
-			);
-			return null;
-		}
-
-		await HandlePostImportSteps(
-			[converterReturns],
-			user,
-			orphan.importType,
-			orphan.game,
-			null,
+		converterReturns = await ProcessSuccessfulConverterReturn(
+			orphan.userID,
+			res,
+			blacklist,
 			logger,
-			undefined
+			true
 		);
+	} catch (err) {
+		if (IsConverterFailure(err) && err.failureType === "InvalidScore") {
+			await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
+			return null;
+		}
 
-		return converterReturns;
-	} finally {
-		// Delete the orphaned score *after* the deorphan process definitely ends in a
-		// success or a failure.
-		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
+		// Deliberately do not delete the orphan here, so the orphaned score
+		// can be inspected for errors.
+		throw err;
 	}
+
+	if (converterReturns === null || !converterReturns.success) {
+		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
+		return null;
+	}
+
+	const user = await GetUserWithID(orphan.userID);
+
+	if (!user) {
+		logger.severe(
+			`Orphan ${orphan.orphanID} belongs to ${orphan.userID}, but that user no longer exists in the database. Going to skip this and remove the orphan.`
+		);
+		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
+		return null;
+	}
+
+	await HandlePostImportSteps(
+		[converterReturns],
+		user,
+		orphan.importType,
+		orphan.game,
+		null,
+		logger,
+		undefined
+	);
+
+	await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
+	return converterReturns;
 }
