@@ -192,7 +192,7 @@ export async function ReprocessOrphan(
 }
 
 export async function DeorphanScores(query: FilterQuery<OrphanScoreDocument>, logger: KtLogger) {
-	const orphans = await db["orphan-scores"].find({});
+	const orphans = await db["orphan-scores"].find(query);
 
 	// ScoreIDs are essentially userID dependent, so this is fine.
 	const blacklist = await GetBlacklist();
