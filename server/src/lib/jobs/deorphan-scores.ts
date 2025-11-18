@@ -25,15 +25,19 @@ export async function DeoprhanScores() {
 		// at the same time.
 		// See #511.
 
-		// eslint-disable-next-line no-await-in-loop
-		const r = await ReprocessOrphan(or, blacklist, logger);
+		try {
+			// eslint-disable-next-line no-await-in-loop
+			const r = await ReprocessOrphan(or, blacklist, logger);
 
-		if (r === null) {
-			removed++;
-		} else if (r === false) {
-			failed++;
-		} else {
-			success++;
+			if (r === null) {
+				removed++;
+			} else if (r === false) {
+				failed++;
+			} else {
+				success++;
+			}
+		} catch (err) {
+			logger.error(`Failed to reprocess orphan.`, { orphanID: or.orphanID, err });
 		}
 	}
 

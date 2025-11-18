@@ -182,7 +182,7 @@ router.post("/orphans", RequirePermissions("submit_score"), async (req, res) => 
 	let success = 0;
 	let removed = 0;
 
-	await Promise.all(
+	await Promise.allSettled(
 		orphans.map((or) =>
 			ReprocessOrphan(or, blacklist, logger).then((r) => {
 				processed++;

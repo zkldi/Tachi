@@ -139,7 +139,7 @@ async function HandleOrphanChartProcess(
 	const blacklist = await GetBlacklist();
 	const scoresToDeorphan = await db["orphan-scores"].find(criteria);
 
-	await Promise.all(scoresToDeorphan.map((e) => ReprocessOrphan(e, blacklist, logger)));
+	await Promise.allSettled(scoresToDeorphan.map((e) => ReprocessOrphan(e, blacklist, logger)));
 
 	return chart;
 }
