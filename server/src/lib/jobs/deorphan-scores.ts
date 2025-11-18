@@ -6,7 +6,7 @@ import { WrapScriptPromise } from "utils/misc";
 
 const logger = CreateLogCtx(__dirname);
 
-export async function DeoprhanScoresMain() {
+export async function DeorphanScoresMain() {
 	const { success, failed, removed } = await DeorphanScores({}, logger);
 
 	logger.info(`Finished attempting deorphaning.`);
@@ -15,5 +15,5 @@ export async function DeoprhanScoresMain() {
 }
 
 if (require.main === module) {
-	WrapScriptPromise(DeoprhanScoresMain(), logger);
+	WrapScriptPromise(DeorphanScoresMain(), logger);
 }
