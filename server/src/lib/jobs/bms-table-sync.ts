@@ -8,7 +8,7 @@ import { InitaliseFolderChartLookup } from "utils/folder";
 import { FormatBMSTables, WrapScriptPromise } from "utils/misc";
 import type { BMSTableEntry } from "bms-table-loader";
 import type { FilterQuery } from "mongodb";
-import type { BMSTableInfo, ChartDocument } from "tachi-common";
+import type { BMSTableInfo, ChartDocument, Playtypes } from "tachi-common";
 
 const logger = CreateLogCtx(__filename);
 
@@ -19,7 +19,11 @@ const logger = CreateLogCtx(__filename);
  * to go from the sl12 folder to st0 -- which is a cross-table
  * change.
  */
-async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: string) {
+async function HandleTableRemovals(
+	tableEntries: Array<BMSTableEntry>,
+	playtype: Playtypes["bms"],
+	prefix: string
+) {
 	if (tableEntries.length === 0) {
 		logger.info(
 			`No entries in table ${prefix}, skipping removals to prevent instantly wiping the table.`
@@ -34,8 +38,13 @@ async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: s
 	// *unless this script crashes, in which case it's
 	// no longer temporary
 	const existingCharts = (await db.charts.bms.find({
+		playtype,
 		"data.tableFolders.table": prefix,
 	})) as unknown as Array<ChartDocument<"bms:7K" | "bms:14K">>;
+
+	logger.info(
+		`Found ${existingCharts.length} existing chart(s) in the database for table ${prefix}.`
+	);
 
 	// As such, the easiest way to handle this is to disjoint
 	// the current md5s in the table against the md5s in the new
@@ -60,9 +69,15 @@ async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: s
 	const toRemove: Array<string> = [];
 
 	for (const chart of existingCharts) {
-		if (!newTableMD5s.has(chart.data.hashMD5) && !newTableSHA256s.has(chart.data.hashSHA256)) {
-			toRemove.push(chart.chartID);
+		if (newTableMD5s.has(chart.data.hashMD5)) {
+			continue;
 		}
+
+		if (newTableSHA256s.has(chart.data.hashSHA256)) {
+			continue;
+		}
+
+		toRemove.push(chart.chartID);
 	}
 
 	if (toRemove.length === 0) {
@@ -89,14 +104,14 @@ async function HandleTableRemovals(tableEntries: Array<BMSTableEntry>, prefix: s
 async function ImportTableLevels(
 	tableEntries: Array<BMSTableEntry>,
 	prefix: string,
-	playtype: "7K" | "14K"
+	playtype: Playtypes["bms"]
 ) {
 	let failures = 0;
 	let success = 0;
 	const total = tableEntries.length;
 
-	logger.info(`Handling removals for ${prefix}...`);
-	await HandleTableRemovals(tableEntries, prefix);
+	logger.info(`Handling removals for ${playtype}:${prefix}...`);
+	await HandleTableRemovals(tableEntries, playtype, prefix);
 
 	const md5s = tableEntries.filter((e) => e.checksum.type === "md5").map((e) => e.checksum.value);
 	const sha256s = tableEntries
@@ -109,7 +124,7 @@ async function ImportTableLevels(
 		},
 		{
 			$pull: {
-				"tableFolders.table": prefix,
+				"data.tableFolders": { table: prefix },
 			},
 		},
 		{ multi: true }
@@ -121,7 +136,7 @@ async function ImportTableLevels(
 		},
 		{
 			$pull: {
-				"tableFolders.table": prefix,
+				"data.tableFolders": { table: prefix },
 			},
 		},
 		{ multi: true }
