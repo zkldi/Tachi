@@ -188,6 +188,12 @@ async function GetSortedPBs(game: Game, playtype: Playtype, chartID: string) {
 			[`scoreData.score`]: -1,
 			[`scoreData.platinumScore`]: -1,
 		};
+	} else if (game === "chunithm") {
+		sortOptions = {
+			[`scoreData.score`]: -1,
+			[`scoreData.enumIndexes.noteLamp`]: -1,
+			[`scoreData.enumIndexes.clearLamp`]: -1,
+		};
 	}
 
 	return db["personal-bests"].aggregate([
