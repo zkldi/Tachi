@@ -3,19 +3,17 @@ import {
 	InvalidScoreFailure,
 	SongOrChartNotFoundFailure,
 } from "../../../framework/common/converter-failures";
-import db from "external/mongo/db";
 import { HandleOrphanQueue } from "lib/orphan-queue/orphan-queue";
-import { ReprocessOrphan } from "lib/score-import/framework/orphans/orphans";
+import { DeorphanScores } from "lib/score-import/framework/orphans/orphans";
 import { ServerConfig, TachiConfig } from "lib/setup/config";
 import { Random20Hex } from "utils/misc";
-import { GetBlacklist } from "utils/queries/blacklist";
 import { FindChartOnSHA256, FindChartOnSHA256Playtype } from "utils/queries/charts";
 import { FindSongOnID } from "utils/queries/songs";
 import type { DryScore } from "../../../framework/common/types";
 import type { ConverterFunction } from "../../common/types";
 import type { BeatorajaChart, BeatorajaContext, BeatorajaScore } from "./types";
 import type { KtLogger } from "lib/logger/logger";
-import type { ChartDocument, SongDocument, Playtypes, Playtype } from "tachi-common";
+import type { ChartDocument, SongDocument, Playtypes } from "tachi-common";
 import type { Mutable } from "utils/types";
 
 const LAMP_LOOKUP = {
@@ -136,10 +134,7 @@ async function HandleOrphanChartProcess(
 		);
 	}
 
-	const blacklist = await GetBlacklist();
-	const scoresToDeorphan = await db["orphan-scores"].find(criteria);
-
-	await Promise.all(scoresToDeorphan.map((e) => ReprocessOrphan(e, blacklist, logger)));
+	await DeorphanScores(criteria, logger);
 
 	return chart;
 }

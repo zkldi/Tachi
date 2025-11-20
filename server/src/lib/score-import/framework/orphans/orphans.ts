@@ -4,6 +4,7 @@ import { HandlePostImportSteps } from "../score-importing/score-import-main";
 import { ProcessSuccessfulConverterReturn } from "../score-importing/score-importing";
 import db from "external/mongo/db";
 import fjsh from "fast-json-stable-hash";
+import { GetBlacklist } from "utils/queries/blacklist";
 import { GetUserWithID } from "utils/user";
 import type {
 	ConverterFnReturnOrFailure,
@@ -14,6 +15,7 @@ import type {
 } from "../../import-types/common/types";
 import type { ConverterFailure } from "../common/converter-failures";
 import type { KtLogger } from "lib/logger/logger";
+import type { FilterQuery } from "mongodb";
 import type { Game, ImportTypes, integer } from "tachi-common";
 
 /**
@@ -137,8 +139,6 @@ export async function ReprocessOrphan(
 		return null;
 	}
 
-	await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
-
 	// else, import the orphan.
 
 	let converterReturns;
@@ -153,13 +153,17 @@ export async function ReprocessOrphan(
 		);
 	} catch (err) {
 		if (IsConverterFailure(err) && err.failureType === "InvalidScore") {
+			await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
 			return null;
 		}
 
+		// Deliberately do not delete the orphan here, so the orphaned score
+		// can be inspected for errors.
 		throw err;
 	}
 
 	if (converterReturns === null || !converterReturns.success) {
+		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
 		return null;
 	}
 
@@ -169,6 +173,7 @@ export async function ReprocessOrphan(
 		logger.severe(
 			`Orphan ${orphan.orphanID} belongs to ${orphan.userID}, but that user no longer exists in the database. Going to skip this and remove the orphan.`
 		);
+		await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
 		return null;
 	}
 
@@ -182,5 +187,47 @@ export async function ReprocessOrphan(
 		undefined
 	);
 
+	await db["orphan-scores"].remove({ orphanID: orphan.orphanID });
 	return converterReturns;
+}
+
+export async function DeorphanScores(query: FilterQuery<OrphanScoreDocument>, logger: KtLogger) {
+	const orphans = await db["orphan-scores"].find(query);
+
+	// ScoreIDs are essentially userID dependent, so this is fine.
+	const blacklist = await GetBlacklist();
+
+	logger.info(`Found ${orphans.length} orphans.`, { query });
+
+	let failed = 0;
+	let success = 0;
+	let removed = 0;
+	let processed = 0;
+
+	for (const or of orphans) {
+		// We have to await like this to avoid mid-air race conditions,
+		// where two orphans attempt to deorphan to the same scoreID
+		// at the same time.
+		// See #511.
+
+		processed++;
+
+		try {
+			// eslint-disable-next-line no-await-in-loop
+			const r = await ReprocessOrphan(or, blacklist, logger);
+
+			if (r === null) {
+				removed++;
+			} else if (r === false) {
+				failed++;
+			} else {
+				success++;
+			}
+		} catch (err) {
+			logger.error(`Failed to reprocess orphan.`, { orphanID: or.orphanID, err });
+			failed++;
+		}
+	}
+
+	return { processed, removed, failed, success };
 }

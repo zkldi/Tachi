@@ -1,7 +1,7 @@
 import { BacksyncBMSPMSSongsAndCharts } from "../backsync-bms-pms-data";
 import { UpdateAILevels } from "../bms-ai-table-sync";
 import { SyncBMSTables } from "../bms-table-sync";
-import { DeoprhanScores } from "../deorphan-scores";
+import { DeorphanScoresMain } from "../deorphan-scores";
 import { UGSSnapshot } from "../ugs-snapshot";
 import { UpdatePoyashiData } from "../update-bpi-data";
 import { UpdateDPTiers } from "../update-dp-tiers";
@@ -28,7 +28,7 @@ const jobs: Array<Job> = [
 		// We run an hour after snapshotting UGS
 		// just to spread load out a bit.
 		cronFormat: "1 0 * * *",
-		run: DeoprhanScores,
+		run: DeorphanScoresMain,
 	},
 ];
 
