@@ -102,6 +102,16 @@ export function DisplayLevelNum({
 	prefix?: string;
 	game: Game;
 }) {
+	// Always display 1dp levelNum for these games
+	if (["ongeki", "chunithm", "maimai", "maimaidx", "wacca"].includes(game)) {
+		return (
+			<Muted>
+				{prefix}
+				{levelNum.toFixed(1)}
+			</Muted>
+		);
+	}
+
 	// Don't display levelnum if its identical to the level, the decimal places in the
 	// level end with .0, or the levelNum itself is 0.
 	if (levelNum.toString() === level || level.endsWith(".0") || levelNum === 0) {

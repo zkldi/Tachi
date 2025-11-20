@@ -9780,7 +9780,10 @@
 		},
 		"id": 819,
 		"searchTerms": [
-			"Last Brutal Sister Flandre S"
+			"Last Brutal Sister Flandre S",
+			"flandre s",
+			"saishuu kichiku imouto flandre s",
+			"devil sister flandre s"
 		],
 		"title": "最終鬼畜妹フランドール・S"
 	},
@@ -22390,6 +22393,7 @@
 		"artist": "鳳 ここな(CV.石見舞菜香)、静香(CV.長谷川育美)、カトリナ・グリーベル(CV.天城サリー)、新妻八恵(CV.長縄まりあ)、柳場ぱんだ(CV.大空直美)、流石知冴(CV.佐々木李子)「ワールドダイスター 夢のステラリウム」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 116.335,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2717,
@@ -22405,6 +22409,7 @@
 		"artist": "静香(CV.長谷川育美)「ワールドダイスター 夢のステラリウム」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 153.6,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2718,
@@ -22413,9 +22418,10 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "柳場ぱんだ(CV:大空直美)、与那国緋花里(CV:下地紫野)「ワールドダイスター 夢のステラリウム」",
+		"artist": "柳場ぱんだ(CV.大空直美)、与那国緋花里(CV.下地紫野)「ワールドダイスター 夢のステラリウム」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 122.759,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2719,
@@ -22430,6 +22436,7 @@
 		"artist": "原口沙輔 feat.重音テト",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 121.412,
 			"genre": "niconico"
 		},
 		"id": 2720,
@@ -22444,6 +22451,7 @@
 		"artist": "てにをは",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 148.264,
 			"genre": "niconico"
 		},
 		"id": 2721,
@@ -22613,6 +22621,7 @@
 		"artist": "歌：V.I.P 作詞：廉　作曲：廉 「神椿市協奏中。」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 150.154,
 			"genre": "niconico"
 		},
 		"id": 2740,
@@ -22627,6 +22636,7 @@
 		"artist": "歌：可不 作詞：MIMI　作曲：MIMI 「神椿市協奏中。」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 146,
 			"genre": "niconico"
 		},
 		"id": 2741,
@@ -22640,6 +22650,7 @@
 		"artist": "plastic feat. サキト",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 147.907,
 			"genre": "VARIETY"
 		},
 		"id": 2743,
@@ -22825,6 +22836,7 @@
 		"artist": "DECO*27",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 162.312,
 			"genre": "niconico"
 		},
 		"id": 2758,
@@ -22838,6 +22850,7 @@
 		"artist": "DECO*27",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 158.4,
 			"genre": "niconico"
 		},
 		"id": 2759,
@@ -22852,6 +22865,7 @@
 		"artist": "DECO*27",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 138.409,
 			"genre": "niconico"
 		},
 		"id": 2760,
@@ -22865,6 +22879,7 @@
 		"artist": "隣の庭は青い(庭師+Aoi)",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 137.062,
 			"genre": "ゲキマイ"
 		},
 		"id": 2763,
@@ -22933,6 +22948,7 @@
 		"artist": "BlackY VS 大国奏音",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 161.333,
 			"genre": "ORIGINAL"
 		},
 		"id": 2768,
@@ -22944,6 +22960,7 @@
 		"artist": "舞ヶ原シンセ研究会",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 168,
 			"genre": "イロドリミドリ"
 		},
 		"id": 2769,
@@ -22955,6 +22972,7 @@
 		"artist": "永田泰之",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 167.91,
 			"genre": "VARIETY"
 		},
 		"id": 2771,
@@ -22969,6 +22987,7 @@
 		"artist": "富田美憂「デート・ア・ライブ」",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 90.987,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2776,
@@ -22980,6 +22999,7 @@
 		"artist": "作詞、Vocal：癒月 作編曲：dai",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 153.103,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2779,
@@ -22991,6 +23011,7 @@
 		"artist": "403",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 149.338,
 			"genre": "VARIETY"
 		},
 		"id": 2780,
@@ -23002,6 +23023,7 @@
 		"artist": "IOSYS TRAX",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 161.111,
 			"genre": "ゲキマイ"
 		},
 		"id": 2782,
@@ -23013,6 +23035,7 @@
 		"artist": "削除",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 131.7,
 			"genre": "ゲキマイ"
 		},
 		"id": 2783,
@@ -23024,6 +23047,7 @@
 		"artist": "owl＊tree",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 124.966,
 			"genre": "ゲキマイ"
 		},
 		"id": 2784,
@@ -23037,6 +23061,7 @@
 		"artist": "Laur",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 124.8,
 			"genre": "ゲキマイ"
 		},
 		"id": 2785,
@@ -23048,6 +23073,7 @@
 		"artist": "ビートまりお×まろん",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 125.714,
 			"genre": "東方Project"
 		},
 		"id": 2787,
@@ -23064,6 +23090,7 @@
 		"artist": "ビートまりお",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 143.676,
 			"genre": "東方Project"
 		},
 		"id": 2792,
@@ -23154,6 +23181,7 @@
 		"artist": "ビートまりお",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 152.258,
 			"genre": "VARIETY"
 		},
 		"id": 2801,
@@ -23165,6 +23193,7 @@
 		"artist": "Acotto vs Potwi",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 161.667,
 			"genre": "ORIGINAL"
 		},
 		"id": 2802,
@@ -23176,6 +23205,7 @@
 		"artist": "Shade feat.仲村芽衣子",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 143.256,
 			"genre": "POPS & ANIME"
 		},
 		"id": 2803,
@@ -23187,6 +23217,7 @@
 		"artist": "-45",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 148.889,
 			"genre": "VARIETY"
 		},
 		"id": 2804,
@@ -23200,6 +23231,7 @@
 		"artist": "ああああ",
 		"data": {
 			"displayVersion": "CHUNITHM VERSE",
+			"duration": 146.538,
 			"genre": "ゲキマイ"
 		},
 		"id": 2805,
@@ -23302,5 +23334,903 @@
 			"realize"
 		],
 		"title": "リアライズ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nor「ブルーアーカイブ -Blue Archive-」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 142,
+			"genre": "VARIETY"
+		},
+		"id": 2816,
+		"searchTerms": [],
+		"title": "RE Aoharu"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mitsukiyo「ブルーアーカイブ -Blue Archive-」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 122.667,
+			"genre": "VARIETY"
+		},
+		"id": 2817,
+		"searchTerms": [],
+		"title": "Unwelcome School"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mitsukiyo「ブルーアーカイブ -Blue Archive-」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 157.333,
+			"genre": "VARIETY"
+		},
+		"id": 2818,
+		"searchTerms": [
+			"irodori canvas"
+		],
+		"title": "彩りキャンバス"
+	},
+	{
+		"altTitles": [],
+		"artist": "ずっと真夜中でいいのに。",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 150,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2819,
+		"searchTerms": [],
+		"title": "TAIDADA"
+	},
+	{
+		"altTitles": [],
+		"artist": "弌誠「ゲーム『ゼンレスゾーンゼロ』エレン・ジョー 同人イメージソング」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 158.282,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2820,
+		"searchTerms": [
+			"moechakkafire"
+		],
+		"title": "モエチャッカファイア"
+	},
+	{
+		"altTitles": [],
+		"artist": "こっちのけんと",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 162.041,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2821,
+		"searchTerms": [
+			"hai yorokonde"
+		],
+		"title": "はいよろこんで"
+	},
+	{
+		"altTitles": [],
+		"artist": "すりぃ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 148.525,
+			"genre": "niconico"
+		},
+		"id": 2822,
+		"searchTerms": [
+			"lavie"
+		],
+		"title": "ラヴィ"
+	},
+	{
+		"altTitles": [],
+		"artist": "柊マグネタイト",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 144,
+			"genre": "niconico"
+		},
+		"id": 2823,
+		"searchTerms": [
+			"tetoris"
+		],
+		"title": "テトリス"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 144,
+			"genre": "niconico"
+		},
+		"id": 2824,
+		"searchTerms": [
+			"momiagewo shakaagewo",
+			"mayonnaise fried chicken"
+		],
+		"title": "モ　ミ　ア　ゲ　ヲ　シ　ャ　カ　ア　ゲ　ヲ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお × 黒魔",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 179.076,
+			"genre": "東方Project"
+		},
+		"id": 2825,
+		"searchTerms": [
+			"Last Brutal Sister Flandre S (Chroma Remix)",
+			"flandre s chroma remix",
+			"saishuu kichiku imouto flandre s chroma remix",
+			"devil sister flandre s chroma remix"
+		],
+		"title": "最終鬼畜妹フランドール・S (Chroma Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "TJ.hangneil + Atomic Sphere feat.Annabel",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 150.469,
+			"genre": "VARIETY"
+		},
+		"id": 2826,
+		"searchTerms": [
+			"the tower of nirv",
+			"nirv no shinzou"
+		],
+		"title": "ニルヴの心臓"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：渡部チェル／歌：珠洲島 有栖(CV：長縄 まりあ)、皇城 セツナ(CV：八巻 アンナ)、柏木 咲姫(CV：石見 舞菜香)、日向 千夏(CV：岡咲 美保)、井之原 小星(CV：ももの はるな)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 152.79,
+			"genre": "ゲキマイ"
+		},
+		"id": 2827,
+		"searchTerms": [],
+		"title": "Individual on parade!"
+	},
+	{
+		"altTitles": [],
+		"artist": "Artifact vs. Dualcast",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 134.925,
+			"genre": "ゲキマイ"
+		},
+		"id": 2828,
+		"searchTerms": [],
+		"title": "Energizing Flame"
+	},
+	{
+		"altTitles": [],
+		"artist": "HiTECH NINJA",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 140.784,
+			"genre": "ゲキマイ"
+		},
+		"id": 2829,
+		"searchTerms": [],
+		"title": "Daydreama"
+	},
+	{
+		"altTitles": [],
+		"artist": "Street",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 160.737,
+			"genre": "ORIGINAL"
+		},
+		"id": 2831,
+		"searchTerms": [
+			"kronos"
+		],
+		"title": "χρόνος"
+	},
+	{
+		"altTitles": [],
+		"artist": "Zekk",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 138.361,
+			"genre": "ORIGINAL"
+		},
+		"id": 2832,
+		"searchTerms": [],
+		"title": "TOXIC"
+	},
+	{
+		"altTitles": [],
+		"artist": "BilliumMoto",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 149.674,
+			"genre": "ORIGINAL"
+		},
+		"id": 2833,
+		"searchTerms": [
+			"parallel horizons",
+			"heikou tengai"
+		],
+		"title": "並行天涯"
+	},
+	{
+		"altTitles": [],
+		"artist": "DÉ DÉ MOUSE",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 140.903,
+			"genre": "ORIGINAL"
+		},
+		"id": 2834,
+		"searchTerms": [],
+		"title": "luminoid love PART2"
+	},
+	{
+		"altTitles": [],
+		"artist": "NAMV & Game-i",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 144.316,
+			"genre": "ORIGINAL"
+		},
+		"id": 2835,
+		"searchTerms": [],
+		"title": "Wing:No.6223"
+	},
+	{
+		"altTitles": [],
+		"artist": "藍月なくる",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 158.27,
+			"genre": "ORIGINAL"
+		},
+		"id": 2836,
+		"searchTerms": [
+			"emotion capture"
+		],
+		"title": "エモーション・キャプチャー"
+	},
+	{
+		"altTitles": [],
+		"artist": "棗いつき",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 149.368,
+			"genre": "ORIGINAL"
+		},
+		"id": 2837,
+		"searchTerms": [],
+		"title": "Flap&Clap"
+	},
+	{
+		"altTitles": [],
+		"artist": "Rígr feat. 光吉猛修",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 173.268,
+			"genre": "ORIGINAL"
+		},
+		"id": 2838,
+		"searchTerms": [
+			"kaminari"
+		],
+		"title": "神鳴"
+	},
+	{
+		"altTitles": [],
+		"artist": "ゆこぴ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 139.034,
+			"genre": "niconico"
+		},
+		"id": 2839,
+		"searchTerms": [
+			"pig thunder",
+			"buta thunder",
+			"buta sandaa"
+		],
+		"title": "ブタサンダー"
+	},
+	{
+		"altTitles": [],
+		"artist": "ゆこぴ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 128.163,
+			"genre": "niconico"
+		},
+		"id": 2840,
+		"searchTerms": [
+			"watashi no haisha-san",
+			"my dentist"
+		],
+		"title": "私の歯医者さん"
+	},
+	{
+		"altTitles": [],
+		"artist": "椎名もた",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 142.615,
+			"genre": "niconico"
+		},
+		"id": 2841,
+		"searchTerms": [
+			"shoujo A"
+		],
+		"title": "少女A"
+	},
+	{
+		"altTitles": [],
+		"artist": "蝶々P",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 132.5,
+			"genre": "niconico"
+		},
+		"id": 2842,
+		"searchTerms": [
+			"e aa sou",
+			"hm ah yes"
+		],
+		"title": "え？あぁ、そう。- 10th Anniversary Edition -"
+	},
+	{
+		"altTitles": [],
+		"artist": "鬱P feat.鯖",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 152.842,
+			"genre": "ORIGINAL"
+		},
+		"id": 2843,
+		"searchTerms": [
+			"no lights"
+		],
+		"title": "ノーライ"
+	},
+	{
+		"altTitles": [],
+		"artist": "wotaku feat. SHIKI",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 134.817,
+			"genre": "ORIGINAL"
+		},
+		"id": 2844,
+		"searchTerms": [
+			"anoano",
+			"that day that room that happened",
+			"ano hi ano heya de atta koto"
+		],
+		"title": "あの日、あの部屋で、あったこと"
+	},
+	{
+		"altTitles": [],
+		"artist": "ShiBa",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 144,
+			"genre": "ORIGINAL"
+		},
+		"id": 2845,
+		"searchTerms": [],
+		"title": "Star Saveler"
+	},
+	{
+		"altTitles": [],
+		"artist": "Team Grimoire & 穴山大輔",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 168.734,
+			"genre": "ORIGINAL"
+		},
+		"id": 2846,
+		"searchTerms": [],
+		"title": "Tru'nembra"
+	},
+	{
+		"altTitles": [],
+		"artist": "五十嵐 撫子(CV:花井 美春)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 155.368,
+			"genre": "イロドリミドリ"
+		},
+		"id": 2847,
+		"searchTerms": [
+			"tani ga nai"
+		],
+		"title": "単位がない！"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sta feat.b",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 132.558,
+			"genre": "ゲキマイ"
+		},
+		"id": 2848,
+		"searchTerms": [
+			"argent symmetry"
+		],
+		"title": "アージェントシンメトリー"
+	},
+	{
+		"altTitles": [],
+		"artist": "アーリャ（CV：上坂すみれ）「時々ボソッとロシア語でデレる隣のアーリャさん」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 98.571,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2849,
+		"searchTerms": [
+			"roshidere",
+			"ichiban kagayaku hoshi"
+		],
+		"title": "1番輝く星"
+	},
+	{
+		"altTitles": [],
+		"artist": "しぐれうい",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 158.571,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2850,
+		"searchTerms": [
+			"catcher in the ui",
+			"ui mugibatake de tsukamaete"
+		],
+		"title": "うい麦畑でつかまえて"
+	},
+	{
+		"altTitles": [],
+		"artist": "宝鐘マリン（ホロライブ）",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 133.875,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2851,
+		"searchTerms": [
+			"dead ma'am's chest",
+			"yuurei sensen"
+		],
+		"title": "幽霊船戦"
+	},
+	{
+		"altTitles": [],
+		"artist": "サツキ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 118.481,
+			"genre": "niconico"
+		},
+		"id": 2852,
+		"searchTerms": [
+			"obsomeat",
+			"obsolete meat"
+		],
+		"title": "オブソミート"
+	},
+	{
+		"altTitles": [],
+		"artist": "Guiano",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 135.455,
+			"genre": "niconico"
+		},
+		"id": 2853,
+		"searchTerms": [
+			"superhero"
+		],
+		"title": "スーパーヒーロー"
+	},
+	{
+		"altTitles": [],
+		"artist": "ツミキ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 154.884,
+			"genre": "niconico"
+		},
+		"id": 2854,
+		"searchTerms": [
+			"culture"
+		],
+		"title": "カルチャ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kijibato feat. をとは",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 151.821,
+			"genre": "ORIGINAL"
+		},
+		"id": 2855,
+		"searchTerms": [
+			"naizou manip",
+			"manip"
+		],
+		"title": "内臓♡マニピ"
+	},
+	{
+		"altTitles": [],
+		"artist": "電気式華憐音楽集団",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 121.829,
+			"genre": "ORIGINAL"
+		},
+		"id": 2856,
+		"searchTerms": [],
+		"title": "Steamed on the Beat"
+	},
+	{
+		"altTitles": [],
+		"artist": "シャティ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 138.462,
+			"genre": "ORIGINAL"
+		},
+		"id": 2857,
+		"searchTerms": [],
+		"title": "Challenger!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "void (Mournfinale)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 169.412,
+			"genre": "ORIGINAL"
+		},
+		"id": 2858,
+		"searchTerms": [],
+		"title": "Everything Will Be One"
+	},
+	{
+		"altTitles": [],
+		"artist": "藤堂 陽南袴(CV:八島 さらら)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 145.6,
+			"genre": "イロドリミドリ"
+		},
+		"id": 2859,
+		"searchTerms": [],
+		"title": "Burn!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "Toby Fox「UNDERTALE」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 108.522,
+			"genre": "VARIETY"
+		},
+		"id": 2862,
+		"searchTerms": [
+			"spider dance"
+		],
+		"title": "スパイダーダンス"
+	},
+	{
+		"altTitles": [],
+		"artist": "超てんちゃん",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 144,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2864,
+		"searchTerms": [
+			"cubism"
+		],
+		"title": "きゅびずむ"
+	},
+	{
+		"altTitles": [],
+		"artist": "超てんちゃん",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 159.568,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2865,
+		"searchTerms": [
+			"cubibibibism"
+		],
+		"title": "きゅびびびびずむ"
+	},
+	{
+		"altTitles": [],
+		"artist": "吉田夜世 feat.棗いつき",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 155.182,
+			"genre": "ORIGINAL"
+		},
+		"id": 2866,
+		"searchTerms": [
+			"naraku on air"
+		],
+		"title": "ナラク・オン・エア"
+	},
+	{
+		"altTitles": [],
+		"artist": "大漠波新 feat.ウォルピスカーター",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 141.277,
+			"genre": "ORIGINAL"
+		},
+		"id": 2867,
+		"searchTerms": [
+			"system"
+		],
+		"title": "システム"
+	},
+	{
+		"altTitles": [],
+		"artist": "瀬名水紀 feat.六宮",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 152.581,
+			"genre": "ORIGINAL"
+		},
+		"id": 2868,
+		"searchTerms": [
+			"kohakuiro"
+		],
+		"title": "恋伯色"
+	},
+	{
+		"altTitles": [],
+		"artist": "USAO vs DJ Myosuke",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 159.628,
+			"genre": "ORIGINAL"
+		},
+		"id": 2869,
+		"searchTerms": [],
+		"title": "OUTRAGE"
+	},
+	{
+		"altTitles": [],
+		"artist": "葛城 華(CV:丸岡 和佳奈)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 119.731,
+			"genre": "イロドリミドリ"
+		},
+		"id": 2870,
+		"searchTerms": [
+			"soul no piece",
+			"piece of soul"
+		],
+		"title": "ソウルのピース"
+	},
+	{
+		"altTitles": [],
+		"artist": "A-One",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 137.382,
+			"genre": "東方Project"
+		},
+		"id": 2871,
+		"searchTerms": [],
+		"title": "Idoratrize World"
+	},
+	{
+		"altTitles": [],
+		"artist": "暁Records",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 158.367,
+			"genre": "東方Project"
+		},
+		"id": 2872,
+		"searchTerms": [],
+		"title": "Necromantic"
+	},
+	{
+		"altTitles": [],
+		"artist": "黒皇帝",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 169.251,
+			"genre": "東方Project"
+		},
+		"id": 2873,
+		"searchTerms": [],
+		"title": "Galaxy Collapse"
+	},
+	{
+		"altTitles": [],
+		"artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 133.077,
+			"genre": "niconico"
+		},
+		"id": 2874,
+		"searchTerms": [
+			"hajimari no mirai",
+			"the future of beginning"
+		],
+		"title": "はじまりの未来"
+	},
+	{
+		"altTitles": [],
+		"artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 133.091,
+			"genre": "niconico"
+		},
+		"id": 2875,
+		"searchTerms": [],
+		"title": "Worlders"
+	},
+	{
+		"altTitles": [],
+		"artist": "山本真央樹",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 154.79,
+			"genre": "ゲキマイ"
+		},
+		"id": 2876,
+		"searchTerms": [
+			"sinfonietta spiral galaxy",
+			"kajou ginga no sinfonietta",
+			"sinfonietta",
+			"spiral galaxy"
+		],
+		"title": "渦状銀河のシンフォニエッタ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nhato",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 140.69,
+			"genre": "ORIGINAL"
+		},
+		"id": 2877,
+		"searchTerms": [],
+		"title": "Warp Speed"
+	},
+	{
+		"altTitles": [],
+		"artist": "polysha",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 160.313,
+			"genre": "ORIGINAL"
+		},
+		"id": 2878,
+		"searchTerms": [],
+		"title": "In the Straying Story"
+	},
+	{
+		"altTitles": [],
+		"artist": "Laur feat.Tia",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 163.793,
+			"genre": "ORIGINAL"
+		},
+		"id": 2879,
+		"searchTerms": [],
+		"title": "PhenomenoN"
+	},
+	{
+		"altTitles": [],
+		"artist": "suzu",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 142.34,
+			"genre": "ORIGINAL"
+		},
+		"id": 2880,
+		"searchTerms": [
+			"rinne reirei"
+		],
+		"title": "輪廻玲々"
+	},
+	{
+		"altTitles": [],
+		"artist": "桔梗 小夜曲(CV:原田 彩楓)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 165.6,
+			"genre": "イロドリミドリ"
+		},
+		"id": 2881,
+		"searchTerms": [],
+		"title": "Hardsync"
+	},
+	{
+		"altTitles": [],
+		"artist": "t+pazolite",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 146.233,
+			"genre": "ゲキマイ"
+		},
+		"id": 2882,
+		"searchTerms": [
+			"shitoshitoto",
+			"drizzling"
+		],
+		"title": "しとしとと"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぷにる（CV：篠原 侑）「ぷにるはかわいいスライム」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 137.857,
+			"genre": "POPS & ANIME"
+		},
+		"id": 2893,
+		"searchTerms": [
+			"gyumu"
+		],
+		"title": "ぎゅむ！"
+	},
+	{
+		"altTitles": [],
+		"artist": "なみぐる",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 120.225,
+			"genre": "niconico"
+		},
+		"id": 2894,
+		"searchTerms": [
+			"zunda shaking"
+		],
+		"title": "ずんだシェイキング"
+	},
+	{
+		"altTitles": [],
+		"artist": "Toby Fox「UNDERTALE」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 160.257,
+			"genre": "VARIETY"
+		},
+		"id": 2895,
+		"searchTerms": [
+			"hopes and dreams",
+			"yume to kibou"
+		],
+		"title": "夢と希望"
 	}
 ]

@@ -15,6 +15,10 @@ on:
       - "common/**"
   workflow_dispatch:
 
+concurrency:
+  group: "seeds-lock-${{ github.sha }}"
+  cancel-in-progress: false
+
 jobs:
   test:
     runs-on: ubuntu-latest
