@@ -105,3 +105,32 @@ for (const song of songdata) {
 
 MutateCollection("songs-wacca.json", (songs) => [...songs, ...newSongs]);
 MutateCollection("charts-wacca.json", (charts) => [...charts, ...newCharts]);
+
+MutateCollection("charts-wacca.json", (charts) => {
+	for (const song of songdata) {
+		const chartsForSong = charts.filter((chart) => chart.data.inGameID === song.id);
+		for (let diffIndex = 0; diffIndex < song.sheets.length; diffIndex++) {
+			const newChart = song.sheets[diffIndex];
+			if (!chartsForSong.find((existing) => existing.levelNum === newChart.difficulty)) {
+				console.log(
+					`Found rerate on ${waccaDiffIndex[diffIndex]} for ${song.artist} - ${song.title}`
+				);
+				const isPlus = (newChart.difficulty * 10) % 10 >= 7;
+				const oldChart = chartsForSong.find(
+					(existing) =>
+						existing.songID === chartsForSong[0].songID &&
+						existing.difficulty === waccaDiffIndex[diffIndex]
+				);
+				for (const chart of charts) {
+					if (chart.chartID === oldChart.chartID) {
+						console.log(`Changing from ${chart.levelNum} to ${newChart.difficulty}`);
+						chart.level = `${Math.trunc(newChart.difficulty)}${isPlus ? "+" : ""}`;
+						chart.levelNum = newChart.difficulty;
+						break;
+					}
+				}
+			}
+		}
+	}
+	return charts;
+});
