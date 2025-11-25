@@ -64,7 +64,6 @@ const MaimaiDXMatchingClasses = [
 	ClassValue("B1", "B1"),
 
 	ClassValue("A5", "A5"),
-	ClassValue("A5", "A5"),
 	ClassValue("A4", "A4"),
 	ClassValue("A3", "A3"),
 	ClassValue("A2", "A2"),
