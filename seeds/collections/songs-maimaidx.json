@@ -19325,5 +19325,195 @@
 			"favorite daily dish announcing dragon"
 		],
 		"title": "好きな惣菜発表ドラゴン"
+	},
+	{
+		"altTitles": [],
+		"artist": "三枝明那",
+		"data": {
+			"duration": 162.312,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1509,
+		"searchTerms": [
+			"wavy"
+		],
+		"title": "うぇいびー"
+	},
+	{
+		"altTitles": [],
+		"artist": "三枝明那",
+		"data": {
+			"duration": 144.286,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1510,
+		"searchTerms": [],
+		"title": "RED"
+	},
+	{
+		"altTitles": [],
+		"artist": "七次元生徒会！",
+		"data": {
+			"duration": 125.561,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1511,
+		"searchTerms": [
+			"liar puppet",
+			"horafuki puppet"
+		],
+		"title": "ホラフキパペット"
+	},
+	{
+		"altTitles": [],
+		"artist": "社築 × sasakure.UK",
+		"data": {
+			"duration": 151.656,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1512,
+		"searchTerms": [],
+		"title": "BlackFlagBreaker!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"duration": 151.818,
+			"genre": "maimai"
+		},
+		"id": 1513,
+		"searchTerms": [
+			"false amber"
+		],
+		"title": "False Amber (from the Black Bazaar, Or by A Kervan Trader from the Lands Afar, Or Buried Beneath the Shifting Sands That Lead Everywhere but Nowhere)"
+	},
+	{
+		"altTitles": [],
+		"artist": "削除",
+		"data": {
+			"duration": 143.647,
+			"genre": "maimai"
+		},
+		"id": 1514,
+		"searchTerms": [],
+		"title": "AFTER PANDORA"
+	},
+	{
+		"altTitles": [],
+		"artist": "qfeileadh feat.のあ",
+		"data": {
+			"duration": 137.727,
+			"genre": "maimai"
+		},
+		"id": 1515,
+		"searchTerms": [
+			"imbrued flux"
+		],
+		"title": "IMBRUED:FLUX"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nego_tiator",
+		"data": {
+			"duration": 132,
+			"genre": "maimai"
+		},
+		"id": 1516,
+		"searchTerms": [
+			"suna no hako",
+			"sandbox"
+		],
+		"title": "砂の函"
+	},
+	{
+		"altTitles": [],
+		"artist": "rN",
+		"data": {
+			"duration": 160.612,
+			"genre": "maimai"
+		},
+		"id": 1517,
+		"searchTerms": [],
+		"title": "Amereistr"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず",
+		"data": {
+			"duration": 163.315,
+			"genre": "maimai"
+		},
+		"id": 1518,
+		"searchTerms": [],
+		"title": "World's end BLACKBOX"
+	},
+	{
+		"altTitles": [],
+		"artist": "xi",
+		"data": {
+			"duration": 261.499,
+			"genre": "maimai"
+		},
+		"id": 1519,
+		"searchTerms": [
+			"xaleidoscopix"
+		],
+		"title": "Xaleid◆scopiX"
+	},
+	{
+		"altTitles": [],
+		"artist": "カモメサノエレクトリックオーケストラ include Limonène",
+		"data": {
+			"duration": 245.426,
+			"genre": "maimai"
+		},
+		"id": 1520,
+		"searchTerms": [
+			"refrain"
+		],
+		"title": "Ref:rain (for 7th Heaven)"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず Vs. Tanchiky Vs. uma Vs. モリモリあつし",
+		"data": {
+			"duration": 154.158,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1521,
+		"searchTerms": [
+			"myth release"
+		],
+		"title": "MYTH Re：LEASE"
+	},
+	{
+		"altTitles": [],
+		"artist": "マサラダ",
+		"data": {
+			"duration": 172.889,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1522,
+		"searchTerms": [
+			"outlaws",
+			"musekinin shuugoutai",
+			"0 responsibility society"
+		],
+		"title": "㋰責任集合体"
+	},
+	{
+		"altTitles": [],
+		"artist": "r-906",
+		"data": {
+			"duration": 164.91,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1523,
+		"searchTerms": [
+			"step for a crescent 2023",
+			"mikazuki step 2023"
+		],
+		"title": "三日月ステップ 2023"
 	}
 ]
