@@ -632,6 +632,7 @@ router.post(
 				...user,
 				username: body.newUsername,
 			};
+			req.session.save();
 		}
 
 		return res.status(200).json({
