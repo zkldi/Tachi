@@ -8,10 +8,11 @@ These instructions assume you've already set up the [development container](http
 ts-node merge-options.ts --version <VERSION> --input /path/to/chunithm/App/data /path/to/chunithm/Option
 ```
 
-2. Check the logs to see if the script changed anything unexpected, and fix if it happens.
-3. Manually add search terms in `seeds/collections/songs-chunithm.json`. At a minimum, songs with
+2. In the same directory, reorder the versions by running `node sort-versions.js`.
+3. Check the logs to see if the script changed anything unexpected, and fix if it happens.
+4. Manually add search terms in `seeds/collections/songs-chunithm.json`. At a minimum, songs with
 Japanese titles should be romanized.
-4. In the root project folder, run `just seeds test`.
+5. In the root project folder, run `just seeds test`.
 
 ## Parsing song durations
 
@@ -39,4 +40,5 @@ ts-node parse-song-durations.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm
 
 ## Adding songs to the international version
 
-See the [make-things-available-in-intl.js](./make-things-available-in-intl.js) script.
+See the [make-things-available-in-intl.js](./make-things-available-in-intl.js) script. Afterwards,
+reorder the versions by running the [sort-versions.js](./sort-versions.js) script.
