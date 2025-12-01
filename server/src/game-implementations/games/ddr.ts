@@ -276,7 +276,7 @@ export const DDR_IMPL: GPTServerImplementation<"ddr:DP" | "ddr:SP"> = {
 	],
 	profileCalcs: {
 		flareSkill: async (game: Game, playtype: Playtype, userID: integer) => {
-			const sc: Array<PBScoreDocumentWithSong> = await db["personal-bests"].aggregate([
+			const sc: Array<PBScoreDocumentWithSong> = await db.scores.aggregate([
 				{
 					$match: {
 						userID,
@@ -313,8 +313,15 @@ export const DDR_IMPL: GPTServerImplementation<"ddr:DP" | "ddr:SP"> = {
 			let classicIndex = 0;
 			let goldIndex = 0;
 			let whiteIndex = 0;
+			const seenCharts = [] as Array<string>;
 
 			for (const score of sc) {
+				if (seenCharts.includes(score.chartID)) {
+					score.top = 99;
+					continue;
+				}
+
+				seenCharts.push(score.chartID);
 				if (score.song.data.flareCategory === "CLASSIC") {
 					score.top = classicIndex++;
 				} else if (score.song.data.flareCategory === "WHITE") {
