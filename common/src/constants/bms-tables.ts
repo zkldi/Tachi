@@ -259,4 +259,20 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		description:
 			"Solar, Stellaverse's alternative table for Insane1-esque charts. Follows the Satellite table in difficulty.",
 	},
+	{
+		name: "Code Stream (st)",
+		asciiPrefix: "csst",
+		url: "https://air-afother.github.io/chordstream-table-split/chordstreamST.html",
+		playtype: "7K",
+		prefix: "重発狂",
+		description: "16th Chordstream table, st0+ difficulty",
+	},
+	{
+		name: "Code Stream (sl)",
+		asciiPrefix: "cssl",
+		url: "https://air-afother.github.io/chordstream-table-split/chordstream.html",
+		playtype: "7K",
+		prefix: "乱打",
+		description: "16th Chordstream table, sl0-sl12 difficulty",
+	},
 ];
