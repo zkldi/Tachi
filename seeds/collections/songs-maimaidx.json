@@ -19515,5 +19515,43 @@
 			"mikazuki step 2023"
 		],
 		"title": "三日月ステップ 2023"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお",
+		"data": {
+			"duration": 144.649,
+			"genre": "東方Project"
+		},
+		"id": 1524,
+		"searchTerms": [],
+		"title": "Help me, ERINNNNNN!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお×まろん",
+		"data": {
+			"duration": 124.286,
+			"genre": "東方Project"
+		},
+		"id": 1525,
+		"searchTerms": [
+			"super last brutal sister flandre s",
+			"super flandre s",
+			"cho saishuu kichiku imouto flandre s",
+			"super devil sister flandre s"
+		],
+		"title": "超最終鬼畜妹フランドール・S"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお",
+		"data": {
+			"duration": 151.613,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1526,
+		"searchTerms": [],
+		"title": "Destined Marionette"
 	}
 ]

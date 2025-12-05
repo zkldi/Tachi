@@ -241,8 +241,10 @@ for (const optionsDir of options.input) {
 			const musicData = data.MusicData;
 			const inGameID = Number(musicData.name.id);
 
-			if (inGameID >= 100000) {
+			if (inGameID >= 100000 || inGameID === 11879) {
 				// Ignore UTAGE charts, which are not supported by Tachi.
+				// Ignore Xaleid◆scopiX (2): event chart used to implement the KALEIDXSCOPE event,
+				// not normally playable.
 				continue;
 			}
 
