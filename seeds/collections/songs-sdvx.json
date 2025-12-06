@@ -26440,5 +26440,65 @@
 			"sunlittoybox_juggernautck"
 		],
 		"title": "Sunlit toybox"
+	},
+	{
+		"altTitles": [],
+		"artist": "あまみ×ひなみ",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2425,
+		"searchTerms": [
+			"divineether_amamihinami"
+		],
+		"title": "Divine Ether"
+	},
+	{
+		"altTitles": [],
+		"artist": "RoughSkreamZ",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2426,
+		"searchTerms": [
+			"evilsignof_roughskreamz"
+		],
+		"title": "#Evil_Signs_of_Bloodlines"
+	},
+	{
+		"altTitles": [],
+		"artist": "みーに feat. まより",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2427,
+		"searchTerms": [
+			"fluffyadventure_miini"
+		],
+		"title": "フラッフィー・アドベンチャー！"
+	},
+	{
+		"altTitles": [],
+		"artist": "Gardens",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2428,
+		"searchTerms": [
+			"temporalveil_gardens"
+		],
+		"title": "Temporal Veil"
+	},
+	{
+		"altTitles": [],
+		"artist": "RoughSketch",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2429,
+		"searchTerms": [
+			"gogogo_roughsketch"
+		],
+		"title": "555 (Please call me “Go! Go! Go!”)"
 	}
 ]
