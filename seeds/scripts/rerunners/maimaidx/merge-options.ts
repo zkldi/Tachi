@@ -155,32 +155,37 @@ for (const chart of existingCharts) {
 	songTitleArtistMap.set(`${song.title}-${song.artist}`, song.id);
 }
 
-const parser = new XMLParser({
-	numberParseOptions: {
-		hex: false,
-		leadingZeros: false,
-		// do not coerce any number-like strings to numbers, since song titles
-		// may also be numbers. we coerce anything we know to be a number later.
-		skipLike: /.*/u,
-	},
-});
+const blacklist = readFileSync(path.join(__dirname, "blacklist.txt"), "utf-8")
+	.split("\n")
+	.filter((e) => !e.startsWith("#") && e.trim() !== "")
+	.map((e) => new RegExp(e, "u"));
 
-const newSongs: Array<SongDocument<"maimaidx">> = [];
-const newCharts: Array<ChartDocument<"maimaidx:Single">> = [];
-
-const songIDGenerator = GetFreshSongIDGenerator("maimaidx");
-
-for (const optionsDir of options.input) {
-	for (const option of readdirSync(optionsDir)) {
-		if (!option.match(/^[A-Z]\d{3}$/u)) {
-			continue;
+function isInBlacklist(str: string) {
+	for (const regex of blacklist) {
+		if (regex.exec(str)) {
+			return true;
 		}
+	}
 
-		const optionDir = path.join(optionsDir, option);
-		const musicsDir = path.join(optionDir, "music");
-		const soundDataDir = path.join(optionDir, "SoundData");
+	return false;
+}
 
-		if (options.vgmsBinary && existsSync(soundDataDir)) {
+// Read all audio files ahead of time so the correct file is used, in case of
+// audio fixes
+if (options.vgmsBinary) {
+	for (const optionsDir of options.input) {
+		for (const option of readdirSync(optionsDir)) {
+			if (!option.match(/^[A-Z]\d{3}$/u)) {
+				continue;
+			}
+
+			const optionDir = path.join(optionsDir, option);
+			const soundDataDir = path.join(optionDir, "SoundData");
+
+			if (!existsSync(soundDataDir)) {
+				continue;
+			}
+
 			for (const cueFileName of readdirSync(soundDataDir)) {
 				if (!cueFileName.match(/music\d+\.awb$/u)) {
 					continue;
@@ -211,6 +216,32 @@ for (const optionsDir of options.input) {
 				}
 			}
 		}
+	}
+}
+
+const parser = new XMLParser({
+	numberParseOptions: {
+		hex: false,
+		leadingZeros: false,
+		// do not coerce any number-like strings to numbers, since song titles
+		// may also be numbers. we coerce anything we know to be a number later.
+		skipLike: /.*/u,
+	},
+});
+
+const newSongs: Array<SongDocument<"maimaidx">> = [];
+const newCharts: Array<ChartDocument<"maimaidx:Single">> = [];
+
+const songIDGenerator = GetFreshSongIDGenerator("maimaidx");
+
+for (const optionsDir of options.input) {
+	for (const option of readdirSync(optionsDir)) {
+		if (!option.match(/^[A-Z]\d{3}$/u)) {
+			continue;
+		}
+
+		const optionDir = path.join(optionsDir, option);
+		const musicsDir = path.join(optionDir, "music");
 
 		if (!existsSync(musicsDir)) {
 			logger.warn(`Option at ${optionDir} does not have a "music" folder.`);
@@ -241,10 +272,10 @@ for (const optionsDir of options.input) {
 			const musicData = data.MusicData;
 			const inGameID = Number(musicData.name.id);
 
-			if (inGameID >= 100000 || inGameID === 11879) {
-				// Ignore UTAGE charts, which are not supported by Tachi.
-				// Ignore Xaleid◆scopiX (2): event chart used to implement the KALEIDXSCOPE event,
-				// not normally playable.
+			if (isInBlacklist(`S${inGameID}`)) {
+				logger.verbose(
+					`Ignored ${musicData.artistName.str} - ${musicData.name.str} (inGameID ${inGameID}) as it is in the blacklist.`
+				);
 				continue;
 			}
 
@@ -322,7 +353,9 @@ for (const optionsDir of options.input) {
 				songTitleArtistMap.set(`${songDoc.title}-${songDoc.artist}`, tachiSongID);
 				songMap.set(tachiSongID, songDoc);
 
-				logger.info(`Added new song ${songDoc.artist} - ${songDoc.title}.`);
+				logger.info(
+					`Added new song ${songDoc.artist} - ${songDoc.title} (inGameID ${inGameID}, tachiSongID ${tachiSongID}).`
+				);
 			} else {
 				const songDoc = songMap.get(tachiSongID)!;
 
@@ -345,6 +378,13 @@ for (const optionsDir of options.input) {
 					throw new Error(
 						`Unknown difficulty ID ${index}. Update seeds/scripts/rerunners/maimaidx/merge-options.ts and possibly common/src/config/game-support/maimai-dx.ts.`
 					);
+				}
+
+				if (isInBlacklist(`C${inGameID}-${difficultyName}`)) {
+					logger.verbose(
+						`Ignoring ${musicData.artistName.str} - ${musicData.name.str} [${difficultyName}] (inGameID ${inGameID}) as it is in the blacklist.`
+					);
+					continue;
 				}
 
 				if (inGameID > 10000) {
