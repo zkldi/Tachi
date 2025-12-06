@@ -25,3 +25,25 @@ ts-node merge-options.ts --version <VERSION> --input /path/to/maimai/App/Package
 4. Manually add search terms in `seeds/collections/songs-maimaidx.json`. At a minimum, songs with
 Japanese titles should be romanized.
 5. In the root project folder, run `just seeds test`.
+
+## Adding a new version
+
+1. Add a new version in `common/src/config/game-support/maimai-dx.ts`.
+	- Also, add an Omnimix variant for the previous version.
+2. Create tables and folders for the new version (and the omnimix version).
+See `seeds/scripts/rerunners/maimaidx/add-maimaidx-table-and-folders.js`. You will have
+to adjust the constants for the version you're adding.
+3. Deactivate old tables using `seeds/scripts/rerunners/toggle-table-inactive.js`:
+
+```
+node toggle-table-inactive.js -t maimaidx-Single-<VERSION>-levels
+```
+
+Keep tables for the current and last (aka n-1) versions.
+
+4. Switch the new table to the default one by editing `seeds/collections/tables.json`.
+Change to `"default": true` for the current version, and `"default": false` for all
+other tables of the game.
+
+5. Verify you've done everything correctly by running `just seeds test` in the root project
+folder.

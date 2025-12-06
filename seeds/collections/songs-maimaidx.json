@@ -19553,5 +19553,33 @@
 		"id": 1526,
 		"searchTerms": [],
 		"title": "Destined Marionette"
+	},
+	{
+		"altTitles": [],
+		"artist": "みきとP",
+		"data": {
+			"duration": 159.6,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1527,
+		"searchTerms": [
+			"shoujo rei",
+			"ghost girl"
+		],
+		"title": "少女レイ"
+	},
+	{
+		"altTitles": [],
+		"artist": "R Sound Design",
+		"data": {
+			"duration": 163.022,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1528,
+		"searchTerms": [
+			"imperial girl",
+			"teikoku shoujou"
+		],
+		"title": "帝国少女"
 	}
 ]

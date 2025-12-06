@@ -1,0 +1,23 @@
+# List of charts to ignore when parsing game data.
+# Each line is a regex, and these regexes are matched against the strings:
+# - S<song ID>
+# - C<song ID>-<difficulty>
+# Empty lines, or lines starting with # are ignored.
+
+# Ignore all UTAGEs (ID >=100000) since they're unsupported on Kamaitachi.
+S1\d{5}$
+
+# Ignore Xaleid◆scopiX (2): event chart used to implement the KALEIDXSCOPE event,
+# not normally playable.
+S11879$
+
+S11856$
+S11857$
+S11858$
+S11859$
+S11861$
+S11874$
+S11875$
+S11876$
+S11877$
+S11878$
