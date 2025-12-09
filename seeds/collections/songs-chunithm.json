@@ -4194,7 +4194,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "Petit Rabbit's「ご注文はうさぎですか？？」",
+		"artist": "Petit Rabbit's「ご注文はうさぎですか？」",
 		"data": {
 			"displayVersion": "CHUNITHM AIR PLUS",
 			"duration": 109.6,
@@ -24189,6 +24189,141 @@
 			"drizzling"
 		],
 		"title": "しとしとと"
+	},
+	{
+		"altTitles": [],
+		"artist": "かいりきベア",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 159,
+			"genre": "niconico"
+		},
+		"id": 2883,
+		"searchTerms": [
+			"sai love jinsei runner",
+			"saiai jinsei runner"
+		],
+		"title": "最愛人生ランナー"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 146.436,
+			"genre": "niconico"
+		},
+		"id": 2884,
+		"searchTerms": [
+			"we are pico pico hammers"
+		],
+		"title": "ウィーアーピコピコハンマーズ!!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "雄之助",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 153.882,
+			"genre": "niconico"
+		},
+		"id": 2885,
+		"searchTerms": [
+			"jet black"
+		],
+		"title": "ジェットブラック"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ponchi♪ feat.初音ミク",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 159.948,
+			"genre": "niconico"
+		},
+		"id": 2886,
+		"searchTerms": [
+			"treasure garden"
+		],
+		"title": "トレジャーガーデン"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 141.159,
+			"genre": "niconico"
+		},
+		"id": 2887,
+		"searchTerms": [
+			"denkoh sekka"
+		],
+		"title": "電光刹歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "tn-shi",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 152.616,
+			"genre": "ORIGINAL"
+		},
+		"id": 2888,
+		"searchTerms": [],
+		"title": "hyperreality"
+	},
+	{
+		"altTitles": [],
+		"artist": "technoplanet feat. Tamako Kinoshita",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 167.797,
+			"genre": "ORIGINAL"
+		},
+		"id": 2889,
+		"searchTerms": [],
+		"title": "Deep Blue"
+	},
+	{
+		"altTitles": [],
+		"artist": "ZxNX + Redsign",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 162.667,
+			"genre": "ORIGINAL"
+		},
+		"id": 2890,
+		"searchTerms": [],
+		"title": "DEvourER"
+	},
+	{
+		"altTitles": [],
+		"artist": "BlackY VS Yooh VS siromaru VS xi VS モリモリあつし",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 178.518,
+			"genre": "ORIGINAL"
+		},
+		"id": 2891,
+		"searchTerms": [
+			"tsukuri nanji ra shinsekai e ayumu mono nari",
+			"tsukuri",
+			"creation"
+		],
+		"title": "創 -汝ら新世界へ歩む者なり-"
+	},
+	{
+		"altTitles": [],
+		"artist": "Lycoris in the parterre",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE",
+			"duration": 146.4,
+			"genre": "VARIETY"
+		},
+		"id": 2892,
+		"searchTerms": [],
+		"title": "Kaleidoscope"
 	},
 	{
 		"altTitles": [],

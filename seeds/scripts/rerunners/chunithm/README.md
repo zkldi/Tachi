@@ -29,11 +29,11 @@ sudo install -Dm755 vgmstream-cli /usr/local/bin
 
 This step only needs to be done once.
 
-2. Navigate to `seeds/scripts/rerunners/ongeki` and run the `parse-song-durations.ts` script:
+2. Navigate to `seeds/scripts/rerunners/ongeki` and run the `parse-song-duration.ts` script:
 
 ```
-ts-node parse-song-durations.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm/App/data -g chunithm
-ts-node parse-song-durations.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm/Option -g chunithm
+ts-node parse-song-duration.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm/App/data -g chunithm
+ts-node parse-song-duration.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm/Option -g chunithm
 ```
 
 3. In the root project folder, run `just seeds test`.
@@ -42,3 +42,24 @@ ts-node parse-song-durations.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm
 
 See the [make-things-available-in-intl.js](./make-things-available-in-intl.js) script. Afterwards,
 reorder the versions by running the [sort-versions.js](./sort-versions.js) script.
+
+## Adding a new version
+
+1. Add a new version in `common/src/config/game-support/chunithm.ts`. Also add Omnimix and International variants.
+2. Create tables and folders for the new version (and the omnimix version).
+See `seeds/scripts/rerunners/chunith/add-tables-and-folders`. You will have
+to adjust the constants for the version you're adding.
+3. Deactivate old tables using `seeds/scripts/rerunners/toggle-table-inactive.js`:
+
+```
+node toggle-table-inactive.js -t chunithm-Single-<VERSION>-levels
+```
+
+Keep tables for the current and last (aka n-1) versions.
+
+4. Switch the new table to the default one by editing `seeds/collections/tables.json`.
+Change to `"default": true` for the current version, and `"default": false` for all
+other tables of the game.
+
+5. Verify you've done everything correctly by running `just seeds test` in the root project
+folder.
