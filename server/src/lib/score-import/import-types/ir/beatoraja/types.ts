@@ -64,4 +64,14 @@ export interface BeatorajaScore {
 	lpr: integer;
 	ems: integer;
 	lms: integer;
+
+	gaugeHistory:
+		| {
+				groove: Array<integer>;
+				hard: Array<integer>;
+				exhard: Array<integer>;
+				easy: Array<integer>;
+		  }
+		| null
+		| undefined;
 }

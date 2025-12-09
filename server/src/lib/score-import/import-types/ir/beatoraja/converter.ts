@@ -201,6 +201,9 @@ export const ConverterIRBeatoraja: ConverterFunction<BeatorajaScore, BeatorajaCo
 	> = {
 		bp: data.minbp === -1 ? null : data.minbp,
 		gauge: data.gauge === -1 ? null : data.gauge,
+		gaugeHistoryEasy: data.gaugeHistory?.easy,
+		gaugeHistoryGroove: data.gaugeHistory?.groove,
+		gaugeHistoryHard: data.gaugeHistory?.hard,
 	};
 
 	for (const k of [
