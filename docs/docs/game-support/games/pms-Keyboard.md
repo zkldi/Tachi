@@ -33,6 +33,9 @@ For more information on what metrics are and how they work, see [TODO]!
 | `bp` | Integer | The total bads + poors in this score. |
 | `gauge` | Decimal | The life in percent (between 0 and 100) that was on the gauge at the end of the chart. |
 | `gaugeHistory` | Array&lt;Decimal&gt; | A snapshot of the gauge percent throughout the chart. The values should be null from the point the user dies until the end of the chart. |
+| `gaugeHistoryEasy` | Array&lt;Decimal&gt; | The easy gauge history. |
+| `gaugeHistoryGroove` | Array&lt;Decimal&gt; | The groove gauge history. |
+| `gaugeHistoryHard` | Array&lt;Decimal&gt; | The hard gauge history. |
 | `epg` | Integer | The amount of early PGreats in this score. |
 | `egr` | Integer | The amount of early greats in this score. |
 | `egd` | Integer | The amount of early goods in this score. |
