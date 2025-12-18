@@ -78,6 +78,11 @@ The following judgements are defined:
 | ID | Pretty Name |
 | :: | :: |
 | `konaste` | Konaste |
+| `fuzzUp` | FUZZ-UP |
+| `highVoltage` | HIGH-VOLTAGE |
+| `nextage` | NEX+AGE |
+| `exchain` | EXCHAIN |
+| `matixx` | Matixx |
 
 ## Supported Match Types
 

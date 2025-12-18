@@ -80,6 +80,7 @@ The following judgements are defined:
 | :: | :: |
 | `peace` | peace |
 | `kaimei` | Kaimei Riddles |
+| `unilab` | Unilab |
 
 ## Supported Match Types
 
