@@ -23,6 +23,7 @@ For more information on what metrics are and how they work, see [TODO]!
 | Metric Name | Type | Description |
 | :: | :: | :: |
 | `grade` | "D", "C", "B", "BB", "BBB", "A", "AA", "AAA", "S", "SS", "SSS", "SSS+" | The grade this score was. |
+| `platinumStars` | Integer | The number of platinum stars of this score |
 
 ### Optional Metrics
 
@@ -34,6 +35,10 @@ For more information on what metrics are and how they work, see [TODO]!
 | `damage` | Integer | The number of damage ticks received. |
 | `bellCount` | Integer | The number of bells collected. |
 | `totalBellCount` | Integer | The maximum number of bells that could have been obtained at the time of the play's end. |
+| `scoreGraph` | Array&lt;Decimal \| null &gt; | The history of the projected score, queried in one-second intervals. |
+| `platinumGraph` | Array&lt;Decimal \| null &gt; | The Platinum Score history, queried in one-second intervals. |
+| `bellGraph` | Array&lt;Decimal \| null &gt; | The history of the number of bells missed, queried in one-second intervals. |
+| `lifeGraph` | Array&lt;Decimal \| null &gt; | The life gauge history, queried in one-second intervals. |
 
 ## Judgements
 
@@ -48,13 +53,16 @@ The following judgements are defined:
 
 ### Score Rating Algorithms
 
+The default rating algorithm is `rating`.
+
 | Name | Description |
 | :: | :: |
 | `rating` | A rating value of this score, capping at +2.0 at SSS+. This is identical to the system used in bright MEMORY and earlier versions. |
 | `scoreRating` | A rating value of this score, capping at +2.7 at 1,010,000. This is identical to the system used in Re:Fresh. |
 | `starRating` | A rating value of this score, based on stars derived from Platinum Score. This is identical to the system used in Re:Fresh. |
-
 ### Session Rating Algorithms
+
+The default rating algorithm is `naiveRating`.
 
 | Name | Description |
 | :: | :: |
@@ -63,6 +71,8 @@ The following judgements are defined:
 | `starRating` | The average of your best 10 star ratings this session. |
 
 ### Profile Rating Algorithms
+
+The default rating algorithm is `naiveRating`.
 
 | Name | Description |
 | :: | :: |
@@ -81,15 +91,15 @@ The following judgements are defined:
 
 | Name | Type | Values |
 | :: | :: | :: |
-| `colour` | DERIVED | BLUE, GREEN, ORANGE, RED, PURPLE, COPPER, SILVER, GOLD, PLATINUM, RAINBOW
+| `colour` | DERIVED | BLUE, GREEN, ORANGE, RED, PURPLE, COPPER, SILVER, GOLD, PLATINUM, RAINBOW, RAINBOW_SHINY, RAINBOW_EX
 
 ## Versions
 
 | ID | Pretty Name |
 | :: | :: |
-| `brightMemory2Omni` | bright MEMORY Act.2 Omnimix |
-| `brightMemory3` | bright MEMORY Act.3 |
-| `brightMemory3Omni` | bright MEMORY Act.3 Omnimix |
+| `brightMemory2Omni` | bright MEMORY Act.II Omnimix |
+| `brightMemory3` | bright MEMORY Act.III |
+| `brightMemory3Omni` | bright MEMORY Act.III Omnimix |
 | `refresh` | Re:Fresh |
 | `refreshOmni` | Re:Fresh Omnimix |
 
