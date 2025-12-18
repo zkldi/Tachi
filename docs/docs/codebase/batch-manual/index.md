@@ -153,6 +153,8 @@ This is supported for the following games:
 - CHUNITHM
 - GITADORA
 - maimai
+- maimai DX
+- WACCA
 - MUSECA
 
 - sdvxInGameID
