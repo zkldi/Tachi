@@ -26500,5 +26500,53 @@
 			"gogogo_roughsketch"
 		],
 		"title": "555 (Please call me “Go! Go! Go!”)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Qutabire",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2430,
+		"searchTerms": [
+			"blessedhorizon_qutabire"
+		],
+		"title": "Blessed Horizon"
+	},
+	{
+		"altTitles": [],
+		"artist": "やどりぎ",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2431,
+		"searchTerms": [
+			"souseinobou_yadorigi"
+		],
+		"title": "双星の冒険録"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"meteorologists\"",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2432,
+		"searchTerms": [
+			"soranaki_meteorologists"
+		],
+		"title": "天泣"
+	},
+	{
+		"altTitles": [],
+		"artist": "ひまわり＊パンチ",
+		"data": {
+			"displayVersion": "exceed"
+		},
+		"id": 2433,
+		"searchTerms": [
+			"metameta_himawaripunch"
+		],
+		"title": "めた・メタ？ひまわり＊パンチ"
 	}
 ]
