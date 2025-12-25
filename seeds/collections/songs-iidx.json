@@ -28832,5 +28832,135 @@
 		"id": 2567,
 		"searchTerms": [],
 		"title": "Welcome to the Mosh Pit"
+	},
+	{
+		"altTitles": [],
+		"artist": "常盤ゆう",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "Swing Waltz"
+		},
+		"id": 2568,
+		"searchTerms": [
+			"CHOCOLATE PHILO"
+		],
+		"title": "CHOCOLATE PHILOSOPHY"
+	},
+		{
+		"altTitles": [],
+		"artist": "くにたけみゆき",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "J-POP"
+		},
+		"id": 2569,
+		"searchTerms": [
+			"DESTINY LOVERS"
+		],
+		"title": "Destiny lovers"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "Emo Rock"
+		},
+		"id": 2570,
+		"searchTerms": [
+			"Hopeful Daybreak"
+		],
+		"title": "Hopeful Daybreak!!!"
+	},
+{
+		"altTitles": [],
+		"artist": "SOUND HOLIC Vs. BEMANI Sound Team \"T.Kakuta\" feat. Nana Takahashi",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "演歌METAL"
+		},
+		"id": 2571,
+		"searchTerms": [
+			"KITKA SHURANOMA"
+		],
+		"title": "鬼華-修羅の舞-"
+	},
+	{
+		"altTitles": [],
+		"artist": "あさき",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "ビジュアル"
+		},
+		"id": 2572,
+		"searchTerms": [
+			"GEKKOUCHOU"
+		],
+		"title": "月光蝶"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"meteorologists\"",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "Progressive"
+		},
+		"id": 2573,
+		"searchTerms": [
+			"SORANAKI"
+		],
+		"title": "天泣"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"HuΣeR × Yvya\"",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "Progressive Metal"
+		},
+		"id": 2574,
+		"searchTerms": [
+			"NEURON"
+		],
+		"title": "多極性ニューロンの崩壊による人間の末路"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ TOTTO",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "空想ファンタジーシリーズ"
+		},
+		"id": 2575,
+		"searchTerms": [
+			"MINARAITENSHI T"
+		],
+		"title": "見習い天使と星降りの丘"
+	},
+	{
+		"altTitles": [],
+		"artist": "PON",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "Adam Copeland"
+		},
+		"id": 2576,
+		"searchTerms": [
+			"RAIKUN"
+		],
+		"title": "雷君"
+	},
+	{
+		"altTitles": [],
+		"artist": "ギラギラメガネ団",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "ネガメロック"
+		},
+		"id": 2577,
+		"searchTerms": [
+			"RYORAN HITCHART"
+		],
+		"title": "繚乱ヒットチャート"
 	}
 ]
