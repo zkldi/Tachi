@@ -150825,5 +150825,517 @@
 		"versions": [
 			"prismplus"
 		]
+	},
+	{
+		"chartID": "5d9ef8a37f509dd9f1a1601de39f24fe22101be5",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11856
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1529,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "c950f1948f38ddd512c15f5dffd0633930437bc3",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11856
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1529,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "17392d250154d81e343996b9f2f97184043049b6",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11856
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"playtype": "Single",
+		"songID": 1529,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "5133caa6097d5a5589f8290cd35768fc8ffbffed",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11856
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.9,
+		"playtype": "Single",
+		"songID": 1529,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "20be475d4bc9d74db59d870032ec227f1a00602a",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11857
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"playtype": "Single",
+		"songID": 1530,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "e5b00de8051a1ec7adc116c6fda848e82c3eaf73",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11857
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1530,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "5bb26173bb4620005178c03af674b782e786a399",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11857
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1530,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "e7e9572d351dca74fbcad7ec0cf2ec94411122e3",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11857
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1530,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "447e47b1edb0ff120697463949a2e5ff0b2b15e5",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11858
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.2,
+		"playtype": "Single",
+		"songID": 1531,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "71bd013930058f5fe1767fbc9db9e1749401f31c",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11858
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1531,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "e4e1685926d213e38f16ce4a1d7c5fc4e3d399c8",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11858
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"playtype": "Single",
+		"songID": 1531,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "ef64be99efbf7683901406c9a388e4c6647268c8",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11858
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13,
+		"playtype": "Single",
+		"songID": 1531,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "16faa35a3f4436169fdca17d3bcf9e2843384ffd",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11859
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"playtype": "Single",
+		"songID": 1532,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "ed0256ec580e9e0bc8d07b4df364af2d88672aaa",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11859
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1532,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "7b666c891cf6ff4055a92aa4e24085a01d292641",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11859
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"playtype": "Single",
+		"songID": 1532,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "e681ade49dd79c5d73b8a6663b4aee8b5dc70a87",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11859
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.8,
+		"playtype": "Single",
+		"songID": 1532,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "6e499097d0a32763ec6432a515a0d74e84cd6c14",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11874
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.7,
+		"playtype": "Single",
+		"songID": 1533,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "29d7e37c8447a9ea6903ad5811133420bbb2c9f0",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11874
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1533,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "8c226da6ecac938b7ae970ed115573eac9746ff1",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11874
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12,
+		"playtype": "Single",
+		"songID": 1533,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "4d4bf13b51eb240fd62ac196ce3d20ca1b78b841",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11874
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.9,
+		"playtype": "Single",
+		"songID": 1533,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "dca0d371197b0deb296ea11e77189ac6e26b2ed7",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11875
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.8,
+		"playtype": "Single",
+		"songID": 1534,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "ddc9798d2763b4498b68711cad4b93dc2052d720",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11875
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1534,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "5ea0baaddd582de6b84991646ebf96b2565786f8",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11875
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.2,
+		"playtype": "Single",
+		"songID": 1534,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "a4105a8bb47da49b679582c011eff4c9f91069da",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11875
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.8,
+		"playtype": "Single",
+		"songID": 1534,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "8274ff552e8e8e7a67b641b6c530df4e3f11d646",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11876
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"playtype": "Single",
+		"songID": 1535,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "fc6ad79cc0ecf1ab50ad931a3cf655a884b95f63",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11876
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1535,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "801a3bae74484299ee2c4e592f27c40bb8c02b78",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11876
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13,
+		"playtype": "Single",
+		"songID": 1535,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "ef38746532b4d37d9f415acfb88dcad03419731a",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11876
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.4,
+		"playtype": "Single",
+		"songID": 1535,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "4b8cb3833f3a7f8e85ef38535771ed16a8992292",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11877
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.6,
+		"playtype": "Single",
+		"songID": 1536,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "51b1a2bec0cf2634a551f4fd0a78f073040707d4",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11877
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1536,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "7146caeb3b66f8ef3291f8b3f3d551c5e41115a7",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11877
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.2,
+		"playtype": "Single",
+		"songID": 1536,
+		"versions": [
+			"prismplus"
+		]
+	},
+	{
+		"chartID": "707abec7014f13103e8a492212f89c51208e3997",
+		"data": {
+			"displayVersion": "maimaiでらっくす PRiSM PLUS",
+			"inGameID": 11877
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.8,
+		"playtype": "Single",
+		"songID": 1536,
+		"versions": [
+			"prismplus"
+		]
 	}
 ]

@@ -19581,5 +19581,106 @@
 			"teikoku shoujou"
 		],
 		"title": "帝国少女"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kanaria",
+		"data": {
+			"duration": 138.086,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1529,
+		"searchTerms": [],
+		"title": "MIRA"
+	},
+	{
+		"altTitles": [],
+		"artist": "雪乃イト",
+		"data": {
+			"duration": 157.385,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1530,
+		"searchTerms": [
+			"karamawari library"
+		],
+		"title": "空回りライブラリ"
+	},
+	{
+		"altTitles": [],
+		"artist": "なきそ",
+		"data": {
+			"duration": 119.478,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1531,
+		"searchTerms": [
+			"omajinai",
+			"the spell"
+		],
+		"title": "お呪い"
+	},
+	{
+		"altTitles": [],
+		"artist": "GYARI",
+		"data": {
+			"duration": 162.667,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1532,
+		"searchTerms": [
+			"arikitari",
+			"arikitari na koi no uta",
+			"a commonplace love song",
+			"hanakuma no uta wa kawaii shi koharu rikka wa maji de urusai",
+			"hanakuma's song is cute and koharu rikka is really loud"
+		],
+		"title": "ありきたりな恋の歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "MYUKKE.",
+		"data": {
+			"duration": 126,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1533,
+		"searchTerms": [],
+		"title": "NO ONE YES MAN"
+	},
+	{
+		"altTitles": [],
+		"artist": "rider",
+		"data": {
+			"duration": 128.8,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1534,
+		"searchTerms": [],
+		"title": "Leave All Behind"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ardolf vs. Daily天利 (原曲： nm-y & Kry.exe)",
+		"data": {
+			"duration": 158.667,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1535,
+		"searchTerms": [
+			"retribution"
+		],
+		"title": "Retribution ～ Cycle of Redemption ～"
+	},
+	{
+		"altTitles": [],
+		"artist": "米虾Fomiki & 初云CLoudie",
+		"data": {
+			"duration": 157.174,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1536,
+		"searchTerms": [],
+		"title": "Luminescence"
 	}
 ]
