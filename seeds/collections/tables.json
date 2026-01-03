@@ -1026,7 +1026,7 @@
 			"F037e606c874253d9825e2e404738bd13dae384a50e9591ce1fd62912ab00df92"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-omni-levels",
 		"title": "CHUNITHM (LUMINOUS PLUS Omnimix)"
@@ -1043,7 +1043,7 @@
 			"F73ed1fffd54e77a99e038e340410c776b6d2a2028b115a5c2fc7daf99d44980e"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-omni-difficulties",
 		"title": "CHUNITHM (LUMINOUS PLUS Omnimix) (Difficulties)"
@@ -1078,7 +1078,7 @@
 			"F1e2dad337f35f872fcb9d9726bd4012570c5ce0c644c2d68f97f2f3c9c884d76"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-levels",
 		"title": "CHUNITHM (LUMINOUS PLUS)"
@@ -1095,7 +1095,7 @@
 			"Fdc7e7e6ae0b83372f68c4821c4cace37d488f621dad5e009108dc9406cf74957"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-difficulties",
 		"title": "CHUNITHM (LUMINOUS PLUS) (Difficulties)"
@@ -1625,7 +1625,7 @@
 			"F5a9f10ba46112815e2a16e6732e412e7af9ebc2cc4e2404e2cc1114fc0b537e2"
 		],
 		"game": "chunithm",
-		"inactive": true,
+		"inactive": false,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-omni-levels",
 		"title": "CHUNITHM (VERSE Omnimix)"
@@ -1642,7 +1642,7 @@
 			"F5f1b5dea699911f8d656b0c82179b0922eed18684f61f0dc31b4468d12c93f75"
 		],
 		"game": "chunithm",
-		"inactive": true,
+		"inactive": false,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-omni-difficulties",
 		"title": "CHUNITHM (VERSE Omnimix) (Difficulties)"
@@ -1677,7 +1677,7 @@
 			"F46c1359635eb10809bed8eba53cd0da7fa0b09abe5caa31f195096c12d6a71f4"
 		],
 		"game": "chunithm",
-		"inactive": true,
+		"inactive": false,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-levels",
 		"title": "CHUNITHM (VERSE)"
@@ -1694,7 +1694,7 @@
 			"F7619677b79823975f6364254b0661e5575814b49713f8e8962d63bcc3b27dfe8"
 		],
 		"game": "chunithm",
-		"inactive": true,
+		"inactive": false,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-difficulties",
 		"title": "CHUNITHM (VERSE) (Difficulties)"
