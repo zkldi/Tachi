@@ -5333,5 +5333,71 @@
 		"id": 449,
 		"searchTerms": [],
 		"title": "Don't Fight The Music"
+	},
+	{
+		"altTitles": [],
+		"artist": "Hommarju",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 450,
+		"searchTerms": [],
+		"title": "Pop Sequence"
+	},
+	{
+		"altTitles": [],
+		"artist": "t+pazolite x Hommarju x ginkiha (FLUCTON)",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 451,
+		"searchTerms": [],
+		"title": "Crossing Delta"
+	},
+	{
+		"altTitles": [],
+		"artist": "ginkiha",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 452,
+		"searchTerms": [],
+		"title": "Paved Garden"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Myosuke",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "TANO*C"
+		},
+		"id": 453,
+		"searchTerms": [],
+		"title": "Shadow Bang"
+	},
+	{
+		"altTitles": [],
+		"artist": "t+pazolite",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 454,
+		"searchTerms": [],
+		"title": "Slapstick Parfait"
+	},
+	{
+		"altTitles": [],
+		"artist": "reku mochizuki",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 455,
+		"searchTerms": [],
+		"title": "Kirakira Noel Story!!"
 	}
 ]
