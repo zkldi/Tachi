@@ -7,6 +7,7 @@ import {
 import deepmerge from "deepmerge";
 import db from "external/mongo/db";
 import CreateLogCtx from "lib/logger/logger";
+import { InvalidScoreFailure } from "lib/score-import/framework/common/converter-failures";
 import t from "tap";
 import { dmf } from "test-utils/misc";
 import ResetDBState from "test-utils/resets";
@@ -262,8 +263,8 @@ t.test("#ResolveSongAndChart", (t) => {
 				{
 					matchType: "popnChartHash",
 					identifier: chartHash,
-					game: "popn",
-					playtype: "9B",
+					game: "iidx",
+					playtype: "SP",
 					version: null,
 				},
 				logger
@@ -320,9 +321,9 @@ t.test("#ResolveSongAndChart", (t) => {
 		t.end();
 	});
 
-	t.test("Should trigger failsave if invalid matchType is provided.", async (t) => {
-		t.equal(
-			await ResolveSongAndChart(
+	t.test("Should trigger failsave if invalid matchType is provided.", (t) => {
+		t.rejects(() =>
+			ResolveSongAndChart(
 				{
 					// @ts-expect-error bad
 					matchType: "BAD_MATCHTYPE",
@@ -331,8 +332,7 @@ t.test("#ResolveSongAndChart", (t) => {
 					version: null,
 				},
 				logger
-			),
-			null
+			)
 		);
 
 		t.end();
@@ -357,28 +357,26 @@ t.test("#ResolveChartFromSong", (t) => {
 		t.end();
 	});
 
-	t.test("Should return null if no difficulty is provided.", async (t) => {
-		t.equal(
-			await ResolveChartFromSong(
+	t.test("Should return null if no difficulty is provided.", (t) => {
+		t.rejects(() =>
+			ResolveChartFromSong(
 				Testing511Song,
 				deepmerge(baseResolverWithDiff, { difficulty: null })
-			),
-			null
+			)
 		);
 
 		t.end();
 	});
 
-	t.test("Should return null if an invalid difficulty is provided.", async (t) => {
-		t.equal(
-			await ResolveChartFromSong(
+	t.test("Should return null if an invalid difficulty is provided.", (t) => {
+		t.rejects(() =>
+			ResolveChartFromSong(
 				Testing511Song,
 				// @ts-expect-error bad
 				deepmerge(baseResolverWithDiff, {
 					difficulty: "NOT_VALID_DIFFICULTY",
 				})
-			),
-			null
+			)
 		);
 
 		t.end();
