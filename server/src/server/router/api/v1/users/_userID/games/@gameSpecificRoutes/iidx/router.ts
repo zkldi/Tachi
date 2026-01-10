@@ -1,6 +1,7 @@
 import { Router } from "express";
 import db from "external/mongo/db";
 import { CUSTOM_TACHI_IIDX_PLAYLISTS } from "lib/game-specific/iidx-playlists";
+import { ResolveSongAndChart } from "lib/score-import/import-types/common/batch-manual/converter";
 import { EAM_VERSION_NAMES } from "lib/score-import/import-types/common/eamusement-iidx-csv/parser";
 import { AggressiveRateLimitMiddleware } from "server/middleware/rate-limiter";
 import { ValidatePlaytypeFromParamFor } from "server/router/api/v1/games/_game/_playtype/middleware";

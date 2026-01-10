@@ -142,3 +142,79 @@ t.test("GET /api/v1/games/:game/:playtype/charts", (t) => {
 
 	t.end();
 });
+
+t.test("POST /api/v1/games/:game/:playtype/charts/resolve", (t) => {
+	t.beforeEach(ResetDBState);
+	t.beforeEach(LoadTachiIIDXData);
+
+	t.test("Should resolve a chart using tachiSongID matchType.", async (t) => {
+		const res = await mockApi.post("/api/v1/games/iidx/SP/charts/resolve").send({
+			matchType: "tachiSongID",
+			identifier: "1",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 200);
+		t.equal(res.body.success, true);
+		t.equal(res.body.body.chart.chartID, Testing511SPA.chartID);
+		t.equal(res.body.body.song.id, 1);
+		t.equal(res.body.body.song.title, "5.1.1.");
+
+		t.end();
+	});
+
+	t.test("Should resolve a chart using songTitle matchType.", async (t) => {
+		const res = await mockApi.post("/api/v1/games/iidx/SP/charts/resolve").send({
+			matchType: "songTitle",
+			identifier: "5.1.1.",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 200);
+		t.equal(res.body.success, true);
+		t.equal(res.body.body.chart.chartID, Testing511SPA.chartID);
+		t.equal(res.body.body.song.id, 1);
+
+		t.end();
+	});
+
+	t.test("Should return 404 when chart cannot be resolved.", async (t) => {
+		const res = await mockApi.post("/api/v1/games/iidx/SP/charts/resolve").send({
+			matchType: "tachiSongID",
+			identifier: "99999",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 404);
+		t.equal(res.body.success, false);
+		t.match(res.body.description, /Could not resolve this chart/u);
+
+		t.end();
+	});
+
+	t.test("Should return 400 for invalid request body.", async (t) => {
+		const res = await mockApi.post("/api/v1/games/iidx/SP/charts/resolve").send({
+			matchType: "invalidMatchType",
+			identifier: "1",
+		});
+
+		t.equal(res.statusCode, 400);
+		t.equal(res.body.success, false);
+
+		t.end();
+	});
+
+	t.test("Should return 400 when required fields are missing.", async (t) => {
+		const res = await mockApi.post("/api/v1/games/iidx/SP/charts/resolve").send({
+			matchType: "tachiSongID",
+			// missing identifier
+		});
+
+		t.equal(res.statusCode, 400);
+		t.equal(res.body.success, false);
+
+		t.end();
+	});
+
+	t.end();
+});

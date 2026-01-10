@@ -1,8 +1,4 @@
-import {
-	ConverterBatchManual,
-	ResolveChartFromSong,
-	ResolveMatchTypeToTachiData,
-} from "./converter";
+import { ConverterBatchManual, ResolveChartFromSong, ResolveSongAndChart } from "./converter";
 import { InvalidScoreFailure } from "../../../framework/common/converter-failures";
 import deepmerge from "deepmerge";
 import db from "external/mongo/db";
@@ -54,12 +50,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 	t.beforeEach(ResetDBState);
 
 	t.test("Should resolve for the songID if the matchType is songID", async (t) => {
-		const res = await ResolveMatchTypeToTachiData(
-			baseBatchManualScore,
-			context,
-			importType,
-			logger
-		);
+		const res = await ResolveSongAndChart(baseBatchManualScore, context, importType, logger);
 
 		t.hasStrict(
 			res,
@@ -69,7 +60,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					// eslint-disable-next-line lines-around-comment
 					// @ts-expect-error bad
 					deepmerge(baseBatchManualScore, { identifier: "90000" }),
@@ -84,7 +75,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 	});
 
 	t.test("Should resolve for the song title if the matchType is songTitle", async (t) => {
-		const res = await ResolveMatchTypeToTachiData(
+		const res = await ResolveSongAndChart(
 			deepmerge(baseBatchManualScore, { matchType: "songTitle", identifier: "5.1.1." }),
 			context,
 			importType,
@@ -99,7 +90,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					deepmerge(baseBatchManualScore, {
 						matchType: "songTitle",
 						identifier: "INVALID_TITLE",
@@ -115,7 +106,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 	});
 
 	t.test("Should resolve for the sdvx inGameID if matchType is sdvxInGameID", async (t) => {
-		const res = await ResolveMatchTypeToTachiData(
+		const res = await ResolveSongAndChart(
 			{
 				matchType: "sdvxInGameID",
 				identifier: "1",
@@ -136,7 +127,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					{
 						matchType: "sdvxInGameID",
 						identifier: "9999999",
@@ -163,7 +154,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 			} as ChartDocument<"sdvx:Single">)
 		);
 
-		const res = await ResolveMatchTypeToTachiData(
+		const res = await ResolveSongAndChart(
 			{
 				matchType: "sdvxInGameID",
 				identifier: "1",
@@ -191,7 +182,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		const bmsContext: BatchManualContext = deepmerge(context, { game: "bms", playtype: "7K" });
 
-		const resMD5 = await ResolveMatchTypeToTachiData(
+		const resMD5 = await ResolveSongAndChart(
 			deepmerge(baseBatchManualScore, {
 				matchType: "bmsChartHash",
 				identifier: GAZER17MD5,
@@ -207,7 +198,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 			"Should return the right song and chart."
 		);
 
-		const resSHA256 = await ResolveMatchTypeToTachiData(
+		const resSHA256 = await ResolveSongAndChart(
 			deepmerge(baseBatchManualScore, {
 				matchType: "bmsChartHash",
 				identifier: GAZER17SHA256,
@@ -225,7 +216,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					deepmerge(baseBatchManualScore, {
 						matchType: "bmsChartHash",
 						identifier: "bad_hash",
@@ -248,7 +239,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 			playtype: "9B",
 		});
 
-		const res = await ResolveMatchTypeToTachiData(
+		const res = await ResolveSongAndChart(
 			deepmerge(baseBatchManualScore, {
 				matchType: "popnChartHash",
 				identifier: chartHash,
@@ -278,7 +269,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		const chartHash = "2c26d666fa7c907e85115dbb279c267c14a263d47b2d46a93f99eae49d779119";
 
 		t.rejects(() =>
-			ResolveMatchTypeToTachiData(
+			ResolveSongAndChart(
 				deepmerge(baseBatchManualScore, {
 					matchType: "popnChartHash",
 					identifier: chartHash,
@@ -300,7 +291,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 			playtype: "Controller",
 		});
 
-		const res = await ResolveMatchTypeToTachiData(
+		const res = await ResolveSongAndChart(
 			deepmerge(baseBatchManualScore, {
 				matchType: "uscChartHash",
 				identifier: chartHash,
@@ -332,7 +323,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					deepmerge(baseBatchManualScore, {
 						matchType: "uscChartHash",
 						identifier: chartHash,
@@ -350,7 +341,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 	t.test("Should trigger failsave if invalid matchType is provided.", (t) => {
 		t.rejects(
 			() =>
-				ResolveMatchTypeToTachiData(
+				ResolveSongAndChart(
 					deepmerge(baseBatchManualScore, {
 						matchType: "BAD_MATCHTYPE",
 					}),

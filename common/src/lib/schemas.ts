@@ -1004,3 +1004,25 @@ export const PR_BATCH_MANUAL = (game: Game, playtype: Playtype): PrudenceSchema 
 	scores: [PR_BATCH_MANUAL_SCORE(game, playtype)],
 	classes: optNull(PR_BATCH_MANUAL_CLASSES(game, playtype)),
 });
+
+export const PR_RESOLVER: PrudenceSchema = {
+	matchType: p.isIn(
+		"songTitle",
+		"tachiSongID",
+		"bmsChartHash",
+		"itgChartHash",
+		"sdvxInGameID",
+		"inGameID",
+		"inGameStrID",
+		"uscChartHash",
+		"popnChartHash",
+		"ddrSongHash"
+	),
+	identifier: "string",
+	comment: optNull(p.isBoundedString(3, 240)),
+
+	// extra disambiguators
+	difficulty: "*?string",
+	artist: "*?string",
+	version: "*?string",
+};
