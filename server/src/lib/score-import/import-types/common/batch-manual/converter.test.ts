@@ -309,7 +309,7 @@ t.test("#ResolveSongAndChart", (t) => {
 					matchType: "uscChartHash",
 					identifier: chartHash,
 					game: "usc",
-					playtype: "Controller",
+					playtype: "Keyboard",
 					version: null,
 				},
 				logger
