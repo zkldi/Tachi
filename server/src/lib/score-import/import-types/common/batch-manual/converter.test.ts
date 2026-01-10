@@ -300,11 +300,11 @@ t.test("#ResolveSongAndChart", (t) => {
 		t.end();
 	});
 
-	t.test("Should honor playtype in uscChartHash despite non-unique chartIDs.", async (t) => {
+	t.test("Should honor playtype in uscChartHash despite non-unique chartIDs.", (t) => {
 		const chartHash = "USC_CHART_HASH";
 
-		t.equal(
-			await ResolveSongAndChart(
+		t.rejects(() =>
+			ResolveSongAndChart(
 				{
 					matchType: "uscChartHash",
 					identifier: chartHash,
@@ -313,8 +313,7 @@ t.test("#ResolveSongAndChart", (t) => {
 					version: null,
 				},
 				logger
-			),
-			null
+			)
 		);
 
 		t.end();
