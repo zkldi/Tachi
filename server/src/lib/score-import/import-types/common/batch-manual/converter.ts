@@ -35,7 +35,9 @@ import type {
 	MatchTypeResolverWithDifficulty,
 } from "tachi-common";
 
-function BatchManualScoreToResolver(
+// only public because used in tests; ts has no way of doing that
+// lol
+export function BatchManualScoreToResolver(
 	data: BatchManualScore,
 	context: BatchManualContext
 ): MatchTypeResolver {

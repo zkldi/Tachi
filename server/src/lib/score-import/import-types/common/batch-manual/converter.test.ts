@@ -1,4 +1,9 @@
-import { ConverterBatchManual, ResolveChartFromSong, ResolveSongAndChart } from "./converter";
+import {
+	BatchManualScoreToResolver,
+	ConverterBatchManual,
+	ResolveChartFromSong,
+	ResolveSongAndChart,
+} from "./converter";
 import { InvalidScoreFailure } from "../../../framework/common/converter-failures";
 import deepmerge from "deepmerge";
 import db from "external/mongo/db";
@@ -15,7 +20,13 @@ import {
 } from "test-utils/test-data";
 import { EscapeStringRegexp } from "utils/misc";
 import type { BatchManualContext } from "./types";
-import type { BatchManualScore, ChartDocument, Game } from "tachi-common";
+import type {
+	BatchManualScore,
+	ChartDocument,
+	Game,
+	MatchTypeResolver,
+	MatchTypeResolverWithDifficulty,
+} from "tachi-common";
 
 const baseBatchManualScore = {
 	score: 500,
@@ -46,11 +57,17 @@ const logger = CreateLogCtx(__filename);
 
 const importType = "file/batch-manual" as const;
 
-t.test("#ResolveMatchTypeToTachiData", (t) => {
+const baseResolver: MatchTypeResolver = BatchManualScoreToResolver(baseBatchManualScore, context);
+const baseResolverWithDiff: MatchTypeResolverWithDifficulty = BatchManualScoreToResolver(
+	baseBatchManualScore,
+	context
+) as MatchTypeResolverWithDifficulty;
+
+t.test("#ResolveSongAndChart", (t) => {
 	t.beforeEach(ResetDBState);
 
 	t.test("Should resolve for the songID if the matchType is songID", async (t) => {
-		const res = await ResolveSongAndChart(baseBatchManualScore, context, importType, logger);
+		const res = await ResolveSongAndChart(baseResolver, logger);
 
 		t.hasStrict(
 			res,
@@ -63,9 +80,7 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 				ResolveSongAndChart(
 					// eslint-disable-next-line lines-around-comment
 					// @ts-expect-error bad
-					deepmerge(baseBatchManualScore, { identifier: "90000" }),
-					context,
-					importType,
+					deepmerge(baseResolver, { identifier: "90000" }),
 					logger
 				),
 			ktdWrap("Cannot find song with songID 90000")
@@ -76,9 +91,8 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 	t.test("Should resolve for the song title if the matchType is songTitle", async (t) => {
 		const res = await ResolveSongAndChart(
-			deepmerge(baseBatchManualScore, { matchType: "songTitle", identifier: "5.1.1." }),
-			context,
-			importType,
+			// @ts-expect-error bad
+			deepmerge(baseResolver, { matchType: "songTitle", identifier: "5.1.1." }),
 			logger
 		);
 
@@ -91,12 +105,11 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		t.rejects(
 			() =>
 				ResolveSongAndChart(
-					deepmerge(baseBatchManualScore, {
+					// @ts-expect-error bad
+					deepmerge(baseResolver, {
 						matchType: "songTitle",
 						identifier: "INVALID_TITLE",
 					}),
-					context,
-					importType,
 					logger
 				),
 			ktdWrap("Cannot find song with title INVALID_TITLE")
@@ -111,11 +124,10 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 				matchType: "sdvxInGameID",
 				identifier: "1",
 				difficulty: "ADV",
-				lamp: "CLEAR",
-				score: 9_000_001,
+				game: "sdvx",
+				playtype: "Single",
+				version: null,
 			},
-			{ game: "sdvx", playtype: "Single", service: "foo", version: null },
-			importType,
 			logger
 		);
 
@@ -132,11 +144,10 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 						matchType: "sdvxInGameID",
 						identifier: "9999999",
 						difficulty: "ADV",
-						lamp: "CLEAR",
-						score: 9_000_001,
+						game: "sdvx",
+						playtype: "Single",
+						version: null,
 					},
-					{ game: "sdvx", playtype: "Single", service: "foo", version: null },
-					importType,
 					logger
 				),
 			ktdWrap("Cannot find SDVX chart with inGameID 9999999", "sdvx")
@@ -159,11 +170,10 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 				matchType: "sdvxInGameID",
 				identifier: "1",
 				difficulty: "ANY_INF",
-				lamp: "CLEAR",
-				score: 9_000_001,
+				game: "sdvx",
+				playtype: "Single",
+				version: null,
 			},
-			{ game: "sdvx", playtype: "Single", service: "foo", version: null },
-			importType,
 			logger
 		);
 
@@ -180,15 +190,14 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		const GAZER17MD5 = "38616b85332037cc12924f2ae2840262";
 		const GAZER17SHA256 = "195fe1be5c3e74fccd04dc426e05f8a9cfa8a1059c339d0a23e99f63661f0b7d";
 
-		const bmsContext: BatchManualContext = deepmerge(context, { game: "bms", playtype: "7K" });
-
 		const resMD5 = await ResolveSongAndChart(
-			deepmerge(baseBatchManualScore, {
+			{
 				matchType: "bmsChartHash",
 				identifier: GAZER17MD5,
-			}),
-			bmsContext,
-			importType,
+				game: "bms",
+				playtype: "7K",
+				version: null,
+			},
 			logger
 		);
 
@@ -199,12 +208,13 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		);
 
 		const resSHA256 = await ResolveSongAndChart(
-			deepmerge(baseBatchManualScore, {
+			{
 				matchType: "bmsChartHash",
 				identifier: GAZER17SHA256,
-			}),
-			bmsContext,
-			importType,
+				game: "bms",
+				playtype: "7K",
+				version: null,
+			},
 			logger
 		);
 
@@ -217,15 +227,16 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		t.rejects(
 			() =>
 				ResolveSongAndChart(
-					deepmerge(baseBatchManualScore, {
+					{
 						matchType: "bmsChartHash",
 						identifier: "bad_hash",
-					}),
-					bmsContext,
-					importType,
+						game: "bms",
+						playtype: "7K",
+						version: null,
+					},
 					logger
 				),
-			ktdWrap("Cannot find chart for hash ", "bms")
+			ktdWrap("Cannot find chart with hash bad_hash", "bms")
 		);
 
 		t.end();
@@ -240,12 +251,13 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		});
 
 		const res = await ResolveSongAndChart(
-			deepmerge(baseBatchManualScore, {
+			{
 				matchType: "popnChartHash",
 				identifier: chartHash,
-			}),
-			popnContext,
-			importType,
+				game: "popn",
+				playtype: "9B",
+				version: null,
+			},
 			logger
 		);
 
@@ -270,12 +282,13 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 
 		t.rejects(() =>
 			ResolveSongAndChart(
-				deepmerge(baseBatchManualScore, {
+				{
 					matchType: "popnChartHash",
 					identifier: chartHash,
-				}),
-				context,
-				importType,
+					game: "popn",
+					playtype: "9B",
+					version: null,
+				},
 				logger
 			)
 		);
@@ -286,18 +299,14 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 	t.test("Should resolve for the usc chartHash if the matchType is uscChartHash", async (t) => {
 		const chartHash = "USC_CHART_HASH";
 
-		const uscContext: BatchManualContext = deepmerge(context, {
-			game: "usc",
-			playtype: "Controller",
-		});
-
 		const res = await ResolveSongAndChart(
-			deepmerge(baseBatchManualScore, {
+			{
 				matchType: "uscChartHash",
 				identifier: chartHash,
-			}),
-			uscContext,
-			importType,
+				game: "usc",
+				playtype: "Controller",
+				version: null,
+			},
 			logger
 		);
 
@@ -324,12 +333,13 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		t.rejects(
 			() =>
 				ResolveSongAndChart(
-					deepmerge(baseBatchManualScore, {
+					{
 						matchType: "uscChartHash",
 						identifier: chartHash,
-					}),
-					uscContext,
-					importType,
+						game: "usc",
+						playtype: "Controller",
+						version: null,
+					},
 					logger
 				),
 			ktdWrap("Cannot find chart with hash USC_CHART_HASH", "usc")
@@ -342,11 +352,13 @@ t.test("#ResolveMatchTypeToTachiData", (t) => {
 		t.rejects(
 			() =>
 				ResolveSongAndChart(
-					deepmerge(baseBatchManualScore, {
+					{
+						// @ts-expect-error bad
 						matchType: "BAD_MATCHTYPE",
-					}),
-					context,
-					importType,
+						game: "iidx",
+						playtype: "SP",
+						version: null,
+					},
 					logger
 				),
 			new InvalidScoreFailure(`Cannot use matchType BAD_MATCHTYPE for beatmania IIDX (SP)`)
@@ -366,10 +378,7 @@ t.test("#ResolveChartFromSong", (t) => {
 			Testing511Song,
 
 			// has playtype + diff
-			baseBatchManualScore,
-
-			{ game: "iidx", service: "foo", playtype: "SP", version: null },
-			importType
+			baseResolverWithDiff
 		);
 
 		t.hasStrict(res, Testing511SPA);
@@ -382,9 +391,7 @@ t.test("#ResolveChartFromSong", (t) => {
 			() =>
 				ResolveChartFromSong(
 					Testing511Song,
-					deepmerge(baseBatchManualScore, { difficulty: null }),
-					{ game: "iidx", service: "foo", playtype: "SP", version: null },
-					importType
+					deepmerge(baseResolverWithDiff, { difficulty: null })
 				),
 			new InvalidScoreFailure(
 				`Missing 'difficulty' field, but was necessary for this lookup.`
@@ -399,11 +406,10 @@ t.test("#ResolveChartFromSong", (t) => {
 			() =>
 				ResolveChartFromSong(
 					Testing511Song,
-					deepmerge(baseBatchManualScore, {
+					// @ts-expect-error bad
+					deepmerge(baseResolver, {
 						difficulty: "NOT_VALID_DIFFICULTY" as const,
-					}),
-					{ game: "iidx", service: "foo", playtype: "SP", version: null },
-					importType
+					})
 				),
 			/Invalid Difficulty for iidx SP/u
 		);
@@ -418,9 +424,7 @@ t.test("#ResolveChartFromSong", (t) => {
 					Testing511Song,
 
 					// 511 has no legg (yet, lol)
-					deepmerge(baseBatchManualScore, { difficulty: "LEGGENDARIA" as const }),
-					{ game: "iidx", service: "foo", version: null, playtype: "SP" },
-					importType
+					deepmerge(baseResolverWithDiff, { difficulty: "LEGGENDARIA" as const })
 				),
 			ktdWrap("Cannot find chart for 5.1.1. (SP LEGGENDARIA)")
 		);
@@ -429,17 +433,7 @@ t.test("#ResolveChartFromSong", (t) => {
 	});
 
 	t.test("Should successfully lookup if version is provided.", async (t) => {
-		const res = await ResolveChartFromSong(
-			Testing511Song,
-			baseBatchManualScore,
-			{
-				game: "iidx",
-				service: "foo",
-				playtype: "SP",
-				version: "27",
-			},
-			importType
-		);
+		const res = await ResolveChartFromSong(Testing511Song, baseResolverWithDiff);
 
 		t.hasStrict(res, Testing511SPA);
 
