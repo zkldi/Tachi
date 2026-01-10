@@ -11,7 +11,7 @@ import { PR_RESOLVER } from "tachi-common/lib/schemas";
 import { IsString } from "utils/misc";
 import { FindChartsOnPopularity } from "utils/queries/charts";
 import { GetGPT } from "utils/req-tachi-data";
-import type { MatchTypeResolver } from "tachi-common";
+import type { MatchTypeResolver, UGPTSettingsDocument } from "tachi-common";
 
 const logger = CreateLogCtx(__filename);
 const router: Router = Router({ mergeParams: true });
@@ -98,11 +98,12 @@ router.get("/", async (req, res) => {
 				(e) => (e as ChartDocument<"iidx:DP" | "iidx:SP">).data["2dxtraSet"] === null
 			);
 		} else {
-			const iidxSettings = await db["game-settings"].findOne({
+			// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+			const iidxSettings = (await db["game-settings"].findOne({
 				userID: req[SYMBOL_TACHI_API_AUTH].userID,
 				game,
 				playtype,
-			});
+			})) as UGPTSettingsDocument<"iidx:DP" | "iidx:SP"> | null;
 
 			if (!iidxSettings?.preferences.gameSpecific.display2DXTra) {
 				charts = charts.filter(
