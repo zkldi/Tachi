@@ -4,7 +4,6 @@ import {
 	ResolveChartFromSong,
 	ResolveSongAndChart,
 } from "./converter";
-import { InvalidScoreFailure } from "../../../framework/common/converter-failures";
 import deepmerge from "deepmerge";
 import db from "external/mongo/db";
 import CreateLogCtx from "lib/logger/logger";
@@ -18,12 +17,9 @@ import {
 	Testing511SPA,
 	TestingSDVXAlbidaChart,
 } from "test-utils/test-data";
-import { EscapeStringRegexp } from "utils/misc";
-import type { BatchManualContext } from "./types";
 import type {
 	BatchManualScore,
 	ChartDocument,
-	Game,
 	MatchTypeResolver,
 	MatchTypeResolverWithDifficulty,
 } from "tachi-common";
@@ -42,16 +38,6 @@ const context = {
 	service: "foo",
 	version: null,
 };
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const ktdWrap = (msg: string, game: Game = "iidx", version = null): any => ({
-	importType: "file/batch-manual",
-	message: new RegExp(EscapeStringRegexp(msg), "u"),
-	converterContext: { game, service: "foo", version },
-
-	// any under t.match rules.
-	data: {},
-});
 
 const logger = CreateLogCtx(__filename);
 
@@ -75,15 +61,14 @@ t.test("#ResolveSongAndChart", (t) => {
 			"Should return the right song and chart."
 		);
 
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					// eslint-disable-next-line lines-around-comment
-					// @ts-expect-error bad
-					deepmerge(baseResolver, { identifier: "90000" }),
-					logger
-				),
-			ktdWrap("Cannot find song with songID 90000")
+		t.equal(
+			await ResolveSongAndChart(
+				// eslint-disable-next-line lines-around-comment
+				// @ts-expect-error bad
+				deepmerge(baseResolver, { identifier: "90000" }),
+				logger
+			),
+			null
 		);
 
 		t.end();
@@ -102,17 +87,16 @@ t.test("#ResolveSongAndChart", (t) => {
 			"Should return the right song and chart."
 		);
 
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					// @ts-expect-error bad
-					deepmerge(baseResolver, {
-						matchType: "songTitle",
-						identifier: "INVALID_TITLE",
-					}),
-					logger
-				),
-			ktdWrap("Cannot find song with title INVALID_TITLE")
+		t.equal(
+			await ResolveSongAndChart(
+				// @ts-expect-error bad
+				deepmerge(baseResolver, {
+					matchType: "songTitle",
+					identifier: "INVALID_TITLE",
+				}),
+				logger
+			),
+			null
 		);
 
 		t.end();
@@ -137,20 +121,19 @@ t.test("#ResolveSongAndChart", (t) => {
 			"Should return the right song and chart."
 		);
 
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					{
-						matchType: "sdvxInGameID",
-						identifier: "9999999",
-						difficulty: "ADV",
-						game: "sdvx",
-						playtype: "Single",
-						version: null,
-					},
-					logger
-				),
-			ktdWrap("Cannot find SDVX chart with inGameID 9999999", "sdvx")
+		t.equal(
+			await ResolveSongAndChart(
+				{
+					matchType: "sdvxInGameID",
+					identifier: "9999999",
+					difficulty: "ADV",
+					game: "sdvx",
+					playtype: "Single",
+					version: null,
+				},
+				logger
+			),
+			null
 		);
 
 		t.end();
@@ -224,19 +207,18 @@ t.test("#ResolveSongAndChart", (t) => {
 			"Should return the right song and chart."
 		);
 
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					{
-						matchType: "bmsChartHash",
-						identifier: "bad_hash",
-						game: "bms",
-						playtype: "7K",
-						version: null,
-					},
-					logger
-				),
-			ktdWrap("Cannot find chart with hash bad_hash", "bms")
+		t.equal(
+			await ResolveSongAndChart(
+				{
+					matchType: "bmsChartHash",
+					identifier: "bad_hash",
+					game: "bms",
+					playtype: "7K",
+					version: null,
+				},
+				logger
+			),
+			null
 		);
 
 		t.end();
@@ -244,11 +226,6 @@ t.test("#ResolveSongAndChart", (t) => {
 
 	t.test("Should resolve for the popn chartHash if the matchType is popnChartHash", async (t) => {
 		const chartHash = "2c26d666fa7c907e85115dbb279c267c14a263d47b2d46a93f99eae49d779119";
-
-		const popnContext: BatchManualContext = deepmerge(context, {
-			game: "popn",
-			playtype: "9B",
-		});
 
 		const res = await ResolveSongAndChart(
 			{
@@ -277,11 +254,11 @@ t.test("#ResolveSongAndChart", (t) => {
 		t.end();
 	});
 
-	t.test("Should reject if popnChartHash is used while game is not popn", (t) => {
+	t.test("Should reject if popnChartHash is used while game is not popn", async (t) => {
 		const chartHash = "2c26d666fa7c907e85115dbb279c267c14a263d47b2d46a93f99eae49d779119";
 
-		t.rejects(() =>
-			ResolveSongAndChart(
+		t.equal(
+			await ResolveSongAndChart(
 				{
 					matchType: "popnChartHash",
 					identifier: chartHash,
@@ -290,7 +267,8 @@ t.test("#ResolveSongAndChart", (t) => {
 					version: null,
 				},
 				logger
-			)
+			),
+			null
 		);
 
 		t.end();
@@ -322,46 +300,39 @@ t.test("#ResolveSongAndChart", (t) => {
 		t.end();
 	});
 
-	t.test("Should honor playtype in uscChartHash despite non-unique chartIDs.", (t) => {
+	t.test("Should honor playtype in uscChartHash despite non-unique chartIDs.", async (t) => {
 		const chartHash = "USC_CHART_HASH";
 
-		const uscContext: BatchManualContext = deepmerge(context, {
-			game: "usc",
-			playtype: "Keyboard",
-		});
-
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					{
-						matchType: "uscChartHash",
-						identifier: chartHash,
-						game: "usc",
-						playtype: "Controller",
-						version: null,
-					},
-					logger
-				),
-			ktdWrap("Cannot find chart with hash USC_CHART_HASH", "usc")
+		t.equal(
+			await ResolveSongAndChart(
+				{
+					matchType: "uscChartHash",
+					identifier: chartHash,
+					game: "usc",
+					playtype: "Controller",
+					version: null,
+				},
+				logger
+			),
+			null
 		);
 
 		t.end();
 	});
 
-	t.test("Should trigger failsave if invalid matchType is provided.", (t) => {
-		t.rejects(
-			() =>
-				ResolveSongAndChart(
-					{
-						// @ts-expect-error bad
-						matchType: "BAD_MATCHTYPE",
-						game: "iidx",
-						playtype: "SP",
-						version: null,
-					},
-					logger
-				),
-			new InvalidScoreFailure(`Cannot use matchType BAD_MATCHTYPE for beatmania IIDX (SP)`)
+	t.test("Should trigger failsave if invalid matchType is provided.", async (t) => {
+		t.equal(
+			await ResolveSongAndChart(
+				{
+					// @ts-expect-error bad
+					matchType: "BAD_MATCHTYPE",
+					game: "iidx",
+					playtype: "SP",
+					version: null,
+				},
+				logger
+			),
+			null
 		);
 
 		t.end();
@@ -386,47 +357,42 @@ t.test("#ResolveChartFromSong", (t) => {
 		t.end();
 	});
 
-	t.test("Should throw an error if no difficulty is provided.", (t) => {
-		t.rejects(
-			() =>
-				ResolveChartFromSong(
-					Testing511Song,
-					deepmerge(baseResolverWithDiff, { difficulty: null })
-				),
-			new InvalidScoreFailure(
-				`Missing 'difficulty' field, but was necessary for this lookup.`
-			)
+	t.test("Should return null if no difficulty is provided.", async (t) => {
+		t.equal(
+			await ResolveChartFromSong(
+				Testing511Song,
+				deepmerge(baseResolverWithDiff, { difficulty: null })
+			),
+			null
 		);
 
 		t.end();
 	});
 
-	t.test("Should throw an error if an invalid difficulty is provided.", (t) => {
-		t.rejects(
-			() =>
-				ResolveChartFromSong(
-					Testing511Song,
-					// @ts-expect-error bad
-					deepmerge(baseResolver, {
-						difficulty: "NOT_VALID_DIFFICULTY" as const,
-					})
-				),
-			/Invalid Difficulty for iidx SP/u
+	t.test("Should return null if an invalid difficulty is provided.", async (t) => {
+		t.equal(
+			await ResolveChartFromSong(
+				Testing511Song,
+				// @ts-expect-error bad
+				deepmerge(baseResolverWithDiff, {
+					difficulty: "NOT_VALID_DIFFICULTY",
+				})
+			),
+			null
 		);
 
 		t.end();
 	});
 
-	t.test("Should throw an error if no chart could be found.", (t) => {
-		t.rejects(
-			() =>
-				ResolveChartFromSong(
-					Testing511Song,
+	t.test("Should return null if no chart could be found.", async (t) => {
+		t.equal(
+			await ResolveChartFromSong(
+				Testing511Song,
 
-					// 511 has no legg (yet, lol)
-					deepmerge(baseResolverWithDiff, { difficulty: "LEGGENDARIA" as const })
-				),
-			ktdWrap("Cannot find chart for 5.1.1. (SP LEGGENDARIA)")
+				// 511 has no legg (yet, lol)
+				deepmerge(baseResolverWithDiff, { difficulty: "LEGGENDARIA" as const })
+			),
+			null
 		);
 
 		t.end();
