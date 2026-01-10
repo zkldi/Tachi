@@ -44,12 +44,13 @@ export function BatchManualScoreToResolver(
 	// already validated by prudence
 	const resolver: MatchTypeResolver = {
 		// @ts-expect-error already validated by prudence
-
 		difficulty: data.difficulty,
 		identifier: data.identifier,
 		matchType: data.matchType,
 		artist: data.artist,
 		version: context.version,
+		game: context.game,
+		playtype: context.playtype,
 	};
 
 	return resolver;
