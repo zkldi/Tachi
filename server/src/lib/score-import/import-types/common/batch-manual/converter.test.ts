@@ -255,11 +255,11 @@ t.test("#ResolveSongAndChart", (t) => {
 		t.end();
 	});
 
-	t.test("Should reject if popnChartHash is used while game is not popn", async (t) => {
+	t.test("Should reject if popnChartHash is used while game is not popn", (t) => {
 		const chartHash = "2c26d666fa7c907e85115dbb279c267c14a263d47b2d46a93f99eae49d779119";
 
-		t.equal(
-			await ResolveSongAndChart(
+		t.rejects(() =>
+			ResolveSongAndChart(
 				{
 					matchType: "popnChartHash",
 					identifier: chartHash,
@@ -268,8 +268,7 @@ t.test("#ResolveSongAndChart", (t) => {
 					version: null,
 				},
 				logger
-			),
-			null
+			)
 		);
 
 		t.end();
