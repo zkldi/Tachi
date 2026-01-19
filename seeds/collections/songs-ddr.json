@@ -3241,6 +3241,7 @@
 		"artist": "J-RAVERS",
 		"data": {
 			"basename": "acol",
+			"ddrSongHash": "01lbO69qQiP691ll6DIiqPbIdd9O806o",
 			"flareCategory": "GOLD",
 			"inGameID": 37225
 		},
@@ -16967,6 +16968,30 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "Ninja Never DieS!",
+		"data": {
+			"basename": "buco",
+			"flareCategory": "GOLD",
+			"inGameID": 38684
+		},
+		"id": 38684,
+		"searchTerms": [],
+		"title": "Burstix Comet"
+	},
+	{
+		"altTitles": [],
+		"artist": "Aoi",
+		"data": {
+			"basename": "ausu",
+			"flareCategory": "GOLD",
+			"inGameID": 38685
+		},
+		"id": 38685,
+		"searchTerms": [],
+		"title": "Autosummer"
+	},
+	{
+		"altTitles": [],
 		"artist": "Tanchiky",
 		"data": {
 			"basename": "hodf",
@@ -17016,6 +17041,18 @@
 		"id": 38689,
 		"searchTerms": [],
 		"title": "fluctus"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず vs. siromaru",
+		"data": {
+			"basename": "cots",
+			"flareCategory": "GOLD",
+			"inGameID": 38690
+		},
+		"id": 38690,
+		"searchTerms": [],
+		"title": "Collapse of the Sanctuary"
 	},
 	{
 		"altTitles": [],
@@ -17107,6 +17144,18 @@
 		"id": 38697,
 		"searchTerms": [],
 		"title": "Thunderstorm"
+	},
+	{
+		"altTitles": [],
+		"artist": "SOUND HOLIC Vs. ZYTOKINE feat. Nana Takahashi",
+		"data": {
+			"basename": "brhe",
+			"flareCategory": "GOLD",
+			"inGameID": 38699
+		},
+		"id": 38699,
+		"searchTerms": [],
+		"title": "BRAIN-HEART"
 	},
 	{
 		"altTitles": [],
@@ -17204,6 +17253,7 @@
 		"artist": "BEMANI Sound Team \"Coyaan & KE!JU 1%\"",
 		"data": {
 			"basename": "jitu2",
+			"ddrSongHash": "bD1bQi091lOIO01Q1dq9bQqQ1blDI0Pq",
 			"flareCategory": "GOLD",
 			"inGameID": 38707
 		},
@@ -17541,6 +17591,7 @@
 		"artist": "PRIDASK",
 		"data": {
 			"basename": "swht",
+			"ddrSongHash": "OOqoq9IPOQIqiid16l0bDdiQQ11QQD88",
 			"flareCategory": "GOLD",
 			"inGameID": 38734
 		},
@@ -18135,6 +18186,18 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "Covered by ちょぴん",
+		"data": {
+			"basename": "kawi",
+			"flareCategory": "GOLD",
+			"inGameID": 38798
+		},
+		"id": 38798,
+		"searchTerms": [],
+		"title": "可愛くてごめん"
+	},
+	{
+		"altTitles": [],
 		"artist": "Covered by 滝沢玻琉",
 		"data": {
 			"basename": "syou",
@@ -18171,6 +18234,18 @@
 		"id": 38801,
 		"searchTerms": [],
 		"title": "Knock Yourself Out XD"
+	},
+	{
+		"altTitles": [],
+		"artist": "Covered by uzumaki with Hommarju",
+		"data": {
+			"basename": "wwto",
+			"flareCategory": "GOLD",
+			"inGameID": 38802
+		},
+		"id": 38802,
+		"searchTerms": [],
+		"title": "WOW WAR TONIGHT ～時には起こせよムーヴメント"
 	},
 	{
 		"altTitles": [],
@@ -18291,6 +18366,18 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "マキシウキョウ",
+		"data": {
+			"basename": "kksy",
+			"flareCategory": "GOLD",
+			"inGameID": 38812
+		},
+		"id": 38812,
+		"searchTerms": [],
+		"title": "覚悟せよ！エンタンメ～ン ～より身の切り売り自暴自棄版～"
+	},
+	{
+		"altTitles": [],
 		"artist": "TOMOSUKE feat.あさき",
 		"data": {
 			"basename": "mkss",
@@ -18392,5 +18479,281 @@
 		"id": 38820,
 		"searchTerms": [],
 		"title": "EBONY & IVORY"
+	},
+	{
+		"altTitles": [],
+		"artist": "Covered by taru",
+		"data": {
+			"basename": "zatt",
+			"flareCategory": "GOLD",
+			"inGameID": 38821
+		},
+		"id": 38821,
+		"searchTerms": [],
+		"title": "雑踏、僕らの街"
+	},
+	{
+		"altTitles": [],
+		"artist": "PSYQUI feat. mikanzil",
+		"data": {
+			"basename": "byon",
+			"flareCategory": "GOLD",
+			"inGameID": 38822
+		},
+		"id": 38822,
+		"searchTerms": [],
+		"title": "Bye or not"
+	},
+	{
+		"altTitles": [],
+		"artist": "ETIA.",
+		"data": {
+			"basename": "dais",
+			"flareCategory": "GOLD",
+			"inGameID": 38823
+		},
+		"id": 38823,
+		"searchTerms": [],
+		"title": "Daisycutter"
+	},
+	{
+		"altTitles": [],
+		"artist": "ARM × BEMANI Sound Team \"U1 overground\"",
+		"data": {
+			"basename": "zend",
+			"flareCategory": "GOLD",
+			"inGameID": 38824
+		},
+		"id": 38824,
+		"searchTerms": [],
+		"title": "ZENDEGI DANCE"
+	},
+	{
+		"altTitles": [],
+		"artist": "KUMOKIRI",
+		"data": {
+			"basename": "sipp",
+			"flareCategory": "GOLD",
+			"inGameID": 38825
+		},
+		"id": 38825,
+		"searchTerms": [],
+		"title": "疾風迅雷"
+	},
+	{
+		"altTitles": [],
+		"artist": "晴いちばん",
+		"data": {
+			"basename": "expl",
+			"flareCategory": "GOLD",
+			"inGameID": 38826
+		},
+		"id": 38826,
+		"searchTerms": [],
+		"title": "エクスプロウル"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"U1-ASAMi\"",
+		"data": {
+			"basename": "eoth",
+			"flareCategory": "GOLD",
+			"inGameID": 38827
+		},
+		"id": 38827,
+		"searchTerms": [],
+		"title": "EYE OF THE HEAVEN"
+	},
+	{
+		"altTitles": [],
+		"artist": "雪乃イト",
+		"data": {
+			"basename": "icem",
+			"flareCategory": "GOLD",
+			"inGameID": 38828
+		},
+		"id": 38828,
+		"searchTerms": [],
+		"title": "アイスクリームマジック"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"Yvya\"",
+		"data": {
+			"basename": "saip",
+			"flareCategory": "GOLD",
+			"inGameID": 38831
+		},
+		"id": 38831,
+		"searchTerms": [],
+		"title": "Saiph"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remixed by BEMANI Sound Team \"Coyaan + U1\"",
+		"data": {
+			"basename": "houu2",
+			"flareCategory": "GOLD",
+			"inGameID": 38834
+		},
+		"id": 38834,
+		"searchTerms": [],
+		"title": "鳳 (Five Flares Mix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remixed by Zekk",
+		"data": {
+			"basename": "newm2",
+			"flareCategory": "GOLD",
+			"inGameID": 38835
+		},
+		"id": 38835,
+		"searchTerms": [],
+		"title": "New Millennium Pt.2"
+	},
+	{
+		"altTitles": [],
+		"artist": "covered by 音乃瀬奏(ReGLOSS)",
+		"data": {
+			"basename": "murm2",
+			"flareCategory": "GOLD",
+			"inGameID": 38836
+		},
+		"id": 38836,
+		"searchTerms": [],
+		"title": "murmur twins (guitar pop ver.)"
+	},
+	{
+		"altTitles": [],
+		"artist": "covered by 儒烏風亭らでん(ReGLOSS)",
+		"data": {
+			"basename": "akao2",
+			"flareCategory": "GOLD",
+			"inGameID": 38837
+		},
+		"id": 38837,
+		"searchTerms": [],
+		"title": "朱と碧のランページ"
+	},
+	{
+		"altTitles": [],
+		"artist": "covered by 轟はじめ(ReGLOSS)",
+		"data": {
+			"basename": "rmrm2",
+			"flareCategory": "GOLD",
+			"inGameID": 38838
+		},
+		"id": 38838,
+		"searchTerms": [],
+		"title": "リメンバーリメンバー"
+	},
+	{
+		"altTitles": [],
+		"artist": "covered by 一条莉々華(ReGLOSS)",
+		"data": {
+			"basename": "kjnf2",
+			"flareCategory": "GOLD",
+			"inGameID": 38839
+		},
+		"id": 38839,
+		"searchTerms": [],
+		"title": "カジノファイヤーことみちゃん"
+	},
+	{
+		"altTitles": [],
+		"artist": "ReGLOSS",
+		"data": {
+			"basename": "shos",
+			"flareCategory": "GOLD",
+			"inGameID": 38840
+		},
+		"id": 38840,
+		"searchTerms": [],
+		"title": "Shooting Star"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"Captain KING\"",
+		"data": {
+			"basename": "mero",
+			"flareCategory": "GOLD",
+			"inGameID": 38841
+		},
+		"id": 38841,
+		"searchTerms": [],
+		"title": "迷宮のロンド"
+	},
+	{
+		"altTitles": [],
+		"artist": "uma vs. モリモリあつし",
+		"data": {
+			"basename": "toul",
+			"flareCategory": "GOLD",
+			"inGameID": 38842
+		},
+		"id": 38842,
+		"searchTerms": [],
+		"title": "東方妖々夢 ULTIMATE MEDLEY"
+	},
+	{
+		"altTitles": [],
+		"artist": "N-Driver",
+		"data": {
+			"basename": "antd",
+			"flareCategory": "GOLD",
+			"inGameID": 38843
+		},
+		"id": 38843,
+		"searchTerms": [],
+		"title": "4NT1 D34D"
+	},
+	{
+		"altTitles": [],
+		"artist": "Shiron",
+		"data": {
+			"basename": "ddda",
+			"flareCategory": "GOLD",
+			"inGameID": 38844
+		},
+		"id": 38844,
+		"searchTerms": [],
+		"title": "Deadly Dolly Dance"
+	},
+	{
+		"altTitles": [],
+		"artist": "Amateras Records feat. KUMI(ヲタみん)",
+		"data": {
+			"basename": "renk",
+			"flareCategory": "GOLD",
+			"inGameID": 38847
+		},
+		"id": 38847,
+		"searchTerms": [],
+		"title": "恋繋エピローグ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Amateras Records feat. 築山さえ",
+		"data": {
+			"basename": "skdr",
+			"flareCategory": "GOLD",
+			"inGameID": 38848
+		},
+		"id": 38848,
+		"searchTerms": [],
+		"title": "SkyDrive! (HASEKO EUROBEAT MIX)"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお",
+		"data": {
+			"basename": "sans2",
+			"flareCategory": "GOLD",
+			"inGameID": 38849
+		},
+		"id": 38849,
+		"searchTerms": [],
+		"title": "チルノのパーフェクトさんすう学園"
 	}
 ]
