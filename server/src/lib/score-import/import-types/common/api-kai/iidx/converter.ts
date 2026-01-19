@@ -301,6 +301,8 @@ function ConvertVersion(version: integer): Versions["iidx:DP" | "iidx:SP"] {
 			return "30";
 		case 31:
 			return "31";
+		case 32:
+			return "32";
 	}
 
 	throw new InvalidScoreFailure(`Unsupported version ${version}.`);

@@ -193,3 +193,104 @@ t.test("GET /api/v1/users/:userID/games/:game/:playtype/pbs/:chartID", (t) => {
 
 	t.end();
 });
+
+t.test("POST /api/v1/users/:userID/games/:game/:playtype/pbs/resolve", (t) => {
+	t.beforeEach(ResetDBState);
+	t.beforeEach(LoadTachiIIDXData);
+
+	t.test(
+		"Should resolve a chart and return user's PB using tachiSongID matchType.",
+		async (t) => {
+			await db["personal-bests"].insert(TestingIIDXSPScorePB);
+
+			const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+				matchType: "tachiSongID",
+				identifier: "1",
+				difficulty: "ANOTHER",
+			});
+
+			t.equal(res.statusCode, 200);
+			t.equal(res.body.success, true);
+			t.equal(res.body.body.pb.chartID, Testing511SPA.chartID);
+			t.equal(res.body.body.chart.chartID, Testing511SPA.chartID);
+			t.equal(res.body.body.song.id, 1);
+			t.equal(res.body.body.song.title, "5.1.1.");
+
+			t.end();
+		}
+	);
+
+	t.test("Should resolve a chart and return user's PB using songTitle matchType.", async (t) => {
+		await db["personal-bests"].insert(TestingIIDXSPScorePB);
+
+		const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+			matchType: "songTitle",
+			identifier: "5.1.1.",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 200);
+		t.equal(res.body.success, true);
+		t.equal(res.body.body.pb.chartID, Testing511SPA.chartID);
+		t.equal(res.body.body.chart.chartID, Testing511SPA.chartID);
+		t.equal(res.body.body.song.id, 1);
+
+		t.end();
+	});
+
+	t.test("Should return 404 when chart cannot be resolved.", async (t) => {
+		const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+			matchType: "tachiSongID",
+			identifier: "99999",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 404);
+		t.equal(res.body.success, false);
+		t.match(res.body.description, /Could not resolve this chart/u);
+
+		t.end();
+	});
+
+	t.test("Should return 404 when user has no PB on resolved chart.", async (t) => {
+		// Don't insert any PBs - user hasn't played this chart
+
+		const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+			matchType: "tachiSongID",
+			identifier: "1",
+			difficulty: "ANOTHER",
+		});
+
+		t.equal(res.statusCode, 404);
+		t.equal(res.body.success, false);
+		t.match(res.body.description, /has not played this chart/u);
+
+		t.end();
+	});
+
+	t.test("Should return 400 for invalid request body.", async (t) => {
+		const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+			matchType: "invalidMatchType",
+			identifier: "1",
+		});
+
+		t.equal(res.statusCode, 400);
+		t.equal(res.body.success, false);
+
+		t.end();
+	});
+
+	t.test("Should return 400 when required fields are missing.", async (t) => {
+		const res = await mockApi.post("/api/v1/users/1/games/iidx/SP/pbs/resolve").send({
+			matchType: "tachiSongID",
+			// missing identifier
+		});
+
+		t.equal(res.statusCode, 400);
+		t.equal(res.body.success, false);
+
+		t.end();
+	});
+
+	t.end();
+});

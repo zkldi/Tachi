@@ -1,6 +1,6 @@
 # Session Endpoints
 
-*****
+---
 
 ## Get a specific session
 
@@ -12,17 +12,18 @@ None.
 
 ### Response
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `session` | [SessionDocument](../../schemas/session.md) | The session document at this ID. |
-| `scores` | Array&lt;[ScoreDocument](../../schemas/score.md)&gt; | The score documents involved in this session. |
-| `songs` | Array&lt;[SongDocument](../../schemas/song.md)&gt; | The songs these score documents belong to. |
-| `charts` | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; | The charts these score documents belong to. |
-| `user` | [UserDocument](../../schemas/user.md) | The user that made this session. |
+| Property  |                         Type                         |                  Description                  |
+| :-------: | :--------------------------------------------------: | :-------------------------------------------: |
+| `session` |     [SessionDocument](../../schemas/session.md)      |       The session document at this ID.        |
+| `scores`  | Array&lt;[ScoreDocument](../../schemas/score.md)&gt; | The score documents involved in this session. |
+|  `songs`  |  Array&lt;[SongDocument](../../schemas/song.md)&gt;  |  The songs these score documents belong to.   |
+| `charts`  | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; |  The charts these score documents belong to.  |
+|  `user`   |        [UserDocument](../../schemas/user.md)         |       The user that made this session.        |
 
 ### Example
 
 #### Request
+
 ```
 GET /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 ```
@@ -33,7 +34,7 @@ GET /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 {
 	user: {
 		id: 1,
-		username: "zkrising",
+		username: "zkldi",
 		// ...
 	},
 	session: {
@@ -62,7 +63,7 @@ GET /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 }
 ```
 
-*****
+---
 
 ## Modify a session
 
@@ -75,32 +76,33 @@ GET /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `name` (optional) | String | A new name for this session. This must be between 3 and 80 characters. If not present, no update will be made to the session name. |
-| `desc` (optional) | String | A new description for this session. This must be between 3 and 120 characters. If not present, no update to the description will be made. |
-| `highlight` (optional) | boolean | Whether this session is highlighted or not. If not present, no change will be made to the highlighted status. |
+|        Property        |  Type   |                                                                Description                                                                |
+| :--------------------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------: |
+|   `name` (optional)    | String  |    A new name for this session. This must be between 3 and 80 characters. If not present, no update will be made to the session name.     |
+|   `desc` (optional)    | String  | A new description for this session. This must be between 3 and 120 characters. If not present, no update to the description will be made. |
+| `highlight` (optional) | boolean |               Whether this session is highlighted or not. If not present, no change will be made to the highlighted status.               |
 
 !!! info
-	Although all these fields are optional, making a request
-	without any of them is a 400 error.
+Although all these fields are optional, making a request
+without any of them is a 400 error.
 
 ### Response
 
-| Property | Type | Description |
-| :: | :: | :: |
+| Property |                    Type                     |                  Description                   |
+| :------: | :-----------------------------------------: | :--------------------------------------------: |
 | `<body>` | [SessionDocument](../../schemas/session.md) | The new session document, after modifications. |
 
 ### Example
 
 #### Request
+
 ```
 PATCH /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 ```
 
 ```json
 {
-	"name": "new session name",
+	"name": "new session name"
 }
 ```
 

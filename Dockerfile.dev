@@ -59,4 +59,4 @@ RUN mkdir node_modules .pnpm-store
 RUN echo "update-notifier=false" >> /home/tachi/.npmrc
 
 # keep container alive indefinitely
-CMD ["/bin/fish"]
+ENTRYPOINT ["sh", "-c", "sudo chown -R tachi:tachi /tachi && exec /bin/fish"]

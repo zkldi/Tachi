@@ -1,12 +1,15 @@
 services:
   mongo:
     container_name: mongo
+    command: "--config /etc/mongod.conf"
     image: mongo:5
     restart: unless-stopped
     ports:
       - "27017:27017"
     volumes:
       - tachi-volume:/data/db
+      - "./dev/mongod.conf:/etc/mongod.conf"
+
   redis:
     container_name: redis
     command: redis-server --save 60 1 --loglevel warning
@@ -33,6 +36,7 @@ services:
       # don't let pnpm's node_modules linkery bleed out of its container
       - /tachi/node_modules/
       - /tachi/.pnpm-store
+
 volumes:
   tachi-volume:
   tachi-redis:

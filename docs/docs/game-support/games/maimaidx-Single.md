@@ -29,6 +29,8 @@ For more information on what metrics are and how they work, see [TODO]!
 | `fast` | Integer | The amount of mistakes in this score that were a result of hitting early. |
 | `slow` | Integer | The amount of mistakes in this score that were a result of hitting late. |
 | `maxCombo` | Integer | The largest combo in this score. |
+| `percentGraph` | Array&lt;Decimal \| null &gt; | The history of the projected achievement, queried in one-second intervals. |
+| `lifeGraph` | Array&lt;Decimal \| null &gt; | Life count history, queried in one-second intervals. |
 
 ## Judgements
 
@@ -89,8 +91,15 @@ The following judgements are defined:
 | `festival` | FESTiVAL |
 | `festivalplus` | FESTiVAL PLUS |
 | `buddies` | BUDDiES |
+| `buddies-omni` | BUDDiES Omnimix |
+| `buddiesplus` | BUDDiES PLUS |
+| `buddiesplus-omni` | BUDDiES PLUS Omnimix |
+| `prism` | PRiSM |
+| `prism-omni` | PRiSM Omnimix |
+| `prismplus` | PRiSM PLUS |
 
 ## Supported Match Types
 
 - `songTitle`
 - `tachiSongID`
+- `inGameID`

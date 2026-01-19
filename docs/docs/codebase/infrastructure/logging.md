@@ -5,10 +5,10 @@ WinstonJS for logging. We use a slightly modified setup
 of winston, but the same basic logging principles apply.
 
 !!! note
-	If you like my defaults for logging, they can be quickly
-	invoked with the [Mei](https://github.com/zkrising/mei) wrapper.
+If you like my defaults for logging, they can be quickly
+invoked with the [Mei](https://github.com/zkldi/mei) wrapper.
 
-*****
+---
 
 ## Log Levels
 
@@ -78,10 +78,10 @@ logger.info("foo");
 ```
 
 !!! info
-	This is the default [LOG_LEVEL](./config) for tachi.
+This is the default [LOG_LEVEL](./config) for tachi.
 
-	This means that all the levels below this are
-	not displayed to the console or stored.
+    This means that all the levels below this are
+    not displayed to the console or stored.
 
 `info` indicates that something notable has happened. This
 should not be used for any errors - instead, it should be
@@ -129,7 +129,7 @@ logger.info("foo");
 ```
 
 !!! info
-	CreateLogCtx is short for Create Log Context.
+CreateLogCtx is short for Create Log Context.
 
 This will spawn an instance of the logger with the context
 of the current filename.
@@ -144,17 +144,17 @@ logger with the user's name and import type as "context".
 const logger = CreateLogCtx(`${username} ${userID}`);
 
 logger.info("foo");
-// [zkrising 1] INFO: foo
+// [zkldi INFO: foo
 
 SomeOtherFunction(argument1, argument2, logger);
 ```
 
 !!! info
-	Logger should be the last argument for a function that
-	takes a logger.
+Logger should be the last argument for a function that
+takes a logger.
 
-	The only exception to this is if it uses our `fetch` API,
-	which **MUST** always be the last call.
+    The only exception to this is if it uses our `fetch` API,
+    which **MUST** always be the last call.
 
 If we have an existing logger and want to append context,
 we can do that with the `AppendLogCtx` function.
@@ -178,8 +178,8 @@ file logs everything above `LOG_LEVEL`. The second file
 logs `error` and above calls.
 
 !!! bug
-	Unintentional behaviour occurs here if LOG_LEVEL is
-	above `error` - the main file will not log errors,
-	but the error file will log errors regardless.
+Unintentional behaviour occurs here if LOG_LEVEL is
+above `error` - the main file will not log errors,
+but the error file will log errors regardless.
 
-	This may be fixed at some point, but is fairly low priority.
+    This may be fixed at some point, but is fairly low priority.

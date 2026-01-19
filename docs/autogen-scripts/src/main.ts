@@ -145,7 +145,7 @@ ${metricsToTbl(gptConfig.optionalMetrics)}
 
 ## Judgements
 
-The folowing judgements are defined:
+The following judgements are defined:
 
 ${stringArrToList(gptConfig.orderedJudgements)}
 

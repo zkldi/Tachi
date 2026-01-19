@@ -48,7 +48,7 @@ async function sendMsg(message: string, octokit: any, repo: Repository, issue: n
 app.webhooks.on(["pull_request.opened", "pull_request.edited"], async ({ octokit, payload }) => {
 	try {
 		const filesChanged = (await fetch(
-			`https://api.github.com/repos/zkrising/Tachi/pulls/${payload.number}/files`
+			`https://api.github.com/repos/zkldi/Tachi/pulls/${payload.number}/files`
 		).then((r) => r.json())) as Array<{ filename: string }>;
 
 		// if any file modified in this pr is a collection

@@ -39,7 +39,10 @@ const MATCH_TYPE_CHECKS: Record<
 	  }
 > = {
 	tachiSongID: { type: "CHARTS", fn: (s) => `${s.songID}-${s.difficulty}` },
-	songTitle: { type: "SONGS", fn: (s) => [s.title, ...s.altTitles] },
+	songTitle: {
+		type: "SONGS",
+		fn: (s) => [s.title.toLowerCase(), ...s.altTitles.map((t: string) => t.toLowerCase())],
+	},
 	bmsChartHash: {
 		type: "CHARTS",
 		fn: (c: ChartDocument<"bms:7K" | "bms:14K">) => [c.data.hashMD5, c.data.hashSHA256],
@@ -142,7 +145,7 @@ for (const { game, matchType, playtype } of uniquenessChecks) {
 				if (matchType === "songTitle") {
 					console.log(
 						chalk.yellow(
-							`Song title ${maybeUnique} wasn't unique in ${FormatGame(
+							`Song title ${maybeUnique} wasn't case-insensitively unique in ${FormatGame(
 								game,
 								playtype
 							)}. Imports using this song title *will* have their scores rejected.`

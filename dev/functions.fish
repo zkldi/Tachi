@@ -113,7 +113,7 @@ function seeds
 	set selected_file (fd -e ts -e js --strip-cwd-prefix | $fzfcmd)
 
 	if test -n "$selected_file"
-		set cmd "ts-node ./$selected_file"
+		set cmd ts-node "./$selected_file"
 		echo $cmd
 	
 		$cmd

@@ -71,6 +71,7 @@ The following judgements are defined:
 - `VVD`
 - `XCD`
 - `MXM`
+- `ULT`
 
 ## Classes
 

@@ -19325,5 +19325,362 @@
 			"favorite daily dish announcing dragon"
 		],
 		"title": "好きな惣菜発表ドラゴン"
+	},
+	{
+		"altTitles": [],
+		"artist": "三枝明那",
+		"data": {
+			"duration": 162.312,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1509,
+		"searchTerms": [
+			"wavy"
+		],
+		"title": "うぇいびー"
+	},
+	{
+		"altTitles": [],
+		"artist": "三枝明那",
+		"data": {
+			"duration": 144.286,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1510,
+		"searchTerms": [],
+		"title": "RED"
+	},
+	{
+		"altTitles": [],
+		"artist": "七次元生徒会！",
+		"data": {
+			"duration": 125.561,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1511,
+		"searchTerms": [
+			"liar puppet",
+			"horafuki puppet"
+		],
+		"title": "ホラフキパペット"
+	},
+	{
+		"altTitles": [],
+		"artist": "社築 × sasakure.UK",
+		"data": {
+			"duration": 151.656,
+			"genre": "POPS＆アニメ"
+		},
+		"id": 1512,
+		"searchTerms": [],
+		"title": "BlackFlagBreaker!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"duration": 151.818,
+			"genre": "maimai"
+		},
+		"id": 1513,
+		"searchTerms": [
+			"false amber"
+		],
+		"title": "False Amber (from the Black Bazaar, Or by A Kervan Trader from the Lands Afar, Or Buried Beneath the Shifting Sands That Lead Everywhere but Nowhere)"
+	},
+	{
+		"altTitles": [],
+		"artist": "削除",
+		"data": {
+			"duration": 143.647,
+			"genre": "maimai"
+		},
+		"id": 1514,
+		"searchTerms": [],
+		"title": "AFTER PANDORA"
+	},
+	{
+		"altTitles": [],
+		"artist": "qfeileadh feat.のあ",
+		"data": {
+			"duration": 137.727,
+			"genre": "maimai"
+		},
+		"id": 1515,
+		"searchTerms": [
+			"imbrued flux"
+		],
+		"title": "IMBRUED:FLUX"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nego_tiator",
+		"data": {
+			"duration": 132,
+			"genre": "maimai"
+		},
+		"id": 1516,
+		"searchTerms": [
+			"suna no hako",
+			"sandbox"
+		],
+		"title": "砂の函"
+	},
+	{
+		"altTitles": [],
+		"artist": "rN",
+		"data": {
+			"duration": 160.612,
+			"genre": "maimai"
+		},
+		"id": 1517,
+		"searchTerms": [],
+		"title": "Amereistr"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず",
+		"data": {
+			"duration": 163.315,
+			"genre": "maimai"
+		},
+		"id": 1518,
+		"searchTerms": [],
+		"title": "World's end BLACKBOX"
+	},
+	{
+		"altTitles": [],
+		"artist": "xi",
+		"data": {
+			"duration": 261.499,
+			"genre": "maimai"
+		},
+		"id": 1519,
+		"searchTerms": [
+			"xaleidoscopix"
+		],
+		"title": "Xaleid◆scopiX"
+	},
+	{
+		"altTitles": [],
+		"artist": "カモメサノエレクトリックオーケストラ include Limonène",
+		"data": {
+			"duration": 245.426,
+			"genre": "maimai"
+		},
+		"id": 1520,
+		"searchTerms": [
+			"refrain"
+		],
+		"title": "Ref:rain (for 7th Heaven)"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず Vs. Tanchiky Vs. uma Vs. モリモリあつし",
+		"data": {
+			"duration": 154.158,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1521,
+		"searchTerms": [
+			"myth release"
+		],
+		"title": "MYTH Re：LEASE"
+	},
+	{
+		"altTitles": [],
+		"artist": "マサラダ",
+		"data": {
+			"duration": 172.889,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1522,
+		"searchTerms": [
+			"outlaws",
+			"musekinin shuugoutai",
+			"0 responsibility society"
+		],
+		"title": "㋰責任集合体"
+	},
+	{
+		"altTitles": [],
+		"artist": "r-906",
+		"data": {
+			"duration": 164.91,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1523,
+		"searchTerms": [
+			"step for a crescent 2023",
+			"mikazuki step 2023"
+		],
+		"title": "三日月ステップ 2023"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお",
+		"data": {
+			"duration": 144.649,
+			"genre": "東方Project"
+		},
+		"id": 1524,
+		"searchTerms": [],
+		"title": "Help me, ERINNNNNN!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお×まろん",
+		"data": {
+			"duration": 124.286,
+			"genre": "東方Project"
+		},
+		"id": 1525,
+		"searchTerms": [
+			"super last brutal sister flandre s",
+			"super flandre s",
+			"cho saishuu kichiku imouto flandre s",
+			"super devil sister flandre s"
+		],
+		"title": "超最終鬼畜妹フランドール・S"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお",
+		"data": {
+			"duration": 151.613,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1526,
+		"searchTerms": [],
+		"title": "Destined Marionette"
+	},
+	{
+		"altTitles": [],
+		"artist": "みきとP",
+		"data": {
+			"duration": 159.6,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1527,
+		"searchTerms": [
+			"shoujo rei",
+			"ghost girl"
+		],
+		"title": "少女レイ"
+	},
+	{
+		"altTitles": [],
+		"artist": "R Sound Design",
+		"data": {
+			"duration": 163.022,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1528,
+		"searchTerms": [
+			"imperial girl",
+			"teikoku shoujou"
+		],
+		"title": "帝国少女"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kanaria",
+		"data": {
+			"duration": 138.086,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1529,
+		"searchTerms": [],
+		"title": "MIRA"
+	},
+	{
+		"altTitles": [],
+		"artist": "雪乃イト",
+		"data": {
+			"duration": 157.385,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1530,
+		"searchTerms": [
+			"karamawari library"
+		],
+		"title": "空回りライブラリ"
+	},
+	{
+		"altTitles": [],
+		"artist": "なきそ",
+		"data": {
+			"duration": 119.478,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1531,
+		"searchTerms": [
+			"omajinai",
+			"the spell"
+		],
+		"title": "お呪い"
+	},
+	{
+		"altTitles": [],
+		"artist": "GYARI",
+		"data": {
+			"duration": 162.667,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": 1532,
+		"searchTerms": [
+			"arikitari",
+			"arikitari na koi no uta",
+			"a commonplace love song",
+			"hanakuma no uta wa kawaii shi koharu rikka wa maji de urusai",
+			"hanakuma's song is cute and koharu rikka is really loud"
+		],
+		"title": "ありきたりな恋の歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "MYUKKE.",
+		"data": {
+			"duration": 126,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1533,
+		"searchTerms": [],
+		"title": "NO ONE YES MAN"
+	},
+	{
+		"altTitles": [],
+		"artist": "rider",
+		"data": {
+			"duration": 128.8,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1534,
+		"searchTerms": [],
+		"title": "Leave All Behind"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ardolf vs. Daily天利 (原曲： nm-y & Kry.exe)",
+		"data": {
+			"duration": 158.667,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1535,
+		"searchTerms": [
+			"retribution"
+		],
+		"title": "Retribution ～ Cycle of Redemption ～"
+	},
+	{
+		"altTitles": [],
+		"artist": "米虾Fomiki & 初云CLoudie",
+		"data": {
+			"duration": 157.174,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1536,
+		"searchTerms": [],
+		"title": "Luminescence"
 	}
 ]

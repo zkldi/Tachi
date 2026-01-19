@@ -454,7 +454,9 @@
 			"Fdfdce10ee518f37c4ab3657abf2ce912cbf523359e2689a96ecf020b0ab8bb26",
 			"F4c7bb7c15715dfece55170d98a1d7ba2c4b4dafb361f348282701aae5fe8baae",
 			"F9bdaa06980b75f3406dbaa93ed2bf1be47b6b60cfb1463a3b7c88d5c350963c6",
-			"F93c9abfd0d678a9f5ec1aac023dd945c971a283fedd1fd0017dea0e4aa9b6528"
+			"F93c9abfd0d678a9f5ec1aac023dd945c971a283fedd1fd0017dea0e4aa9b6528",
+			"F731adc90fd77c9b2cd0e1761bd61c610fb250fe4bee5acfbeee6f69159e33abd",
+			"F4b69207ae5710ca30e42e1019093a71dbba15071d467361bf224a76687936c79"
 		],
 		"game": "bms",
 		"inactive": false,
@@ -719,6 +721,30 @@
 	},
 	{
 		"default": false,
+		"description": "Solar, Stellaverse's alternative table for Insane1-esque charts. Follows the Satellite table in difficulty.",
+		"folders": [
+			"F90018c2ea858993e4a395fa4a86d687c052390a50b97c516cf37d2b5c9969cd4",
+			"F3ae364912dadd34e419f75b41cc8523e83645b6b0074fda8b84f4b3472b6e324",
+			"Fdecb12edc6b325f53bebb8851a3c4eb0ca53327fb656b868156c7f2dc3a842f2",
+			"Fe375353ab7cecd5461e8c0e9e9f34522f9e1d0d75cb83cfbcbc5c1da252d7017",
+			"F41f85a95151aa72239cf2196c5baeadc693b6f4d5c227ec1f96e0f6572fb3cdc",
+			"Fabb672bf47e8dba1473308c91cf94bfdb374fde81bd9eff64ab54b8a30e28963",
+			"Fd6d7e8958d4f385490b12844c23a999a42cf0b87dc5cad487e52aa7f53f9b946",
+			"F70aa698b7282ae39d87863b80ae96bc7172df79d68fe8611f1de09c47ec574ff",
+			"F8a247853ecc1deb3a3d858a4e4cc30fc8500eb47c16bc453c2d7430ee1c85f3f",
+			"F200ede1e5a592cfdd4dfee37f49d902e87404c0db5fef6e726081315c2ed2ad8",
+			"F0d9219bcdfbc9e47a00c519ce3613a14823c4ad5722839d5970d178f78e1921f",
+			"F6f93be9a9100aabcb420b14b49ea607f22fe9ead7105b0049ca8117a695aa6ad",
+			"F569a5ef67ce75df8d232a80feb43923e063c9933da947744fe50923a38af327f"
+		],
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"tableID": "bms-7K-solar",
+		"title": "Solar"
+	},
+	{
+		"default": false,
 		"description": "The 7K Stardust table. This table covers ☆1 to ☆7.",
 		"folders": [
 			"F5223d2972604af59298db03e4bd4551624c5687ab8aa9e46640c4815f50c68a4",
@@ -792,6 +818,30 @@
 		"playtype": "7K",
 		"tableID": "bms-7K-stella",
 		"title": "Stella"
+	},
+	{
+		"default": false,
+		"description": "Supernova, Stellaverse's alternative table for Insane1-esque charts. Follows the Stella table in difficulty.",
+		"folders": [
+			"Fc2ac8a9e56455c7502944fc193575dbed1a885708beb0bc598525a96d5d8374f",
+			"Fc1a0e192dcb76e6ffcf2768339a507724c32ea5eea5ec8ed59d0861bef075064",
+			"F665b0fb22bfb083e7dd102d0962e3ea00a9a0b062d946926b73eeb4368d79c80",
+			"F4d7bf8096511c436e9b4fb0f663d14e2b938bbe2cffad3ea8f40fdd7e1d65f1b",
+			"Feb86a857395601a1d27f84d1578aeceef74c4e83c8fd5f24ff1b248945a64a10",
+			"F1bdfb104793d2cf0a4d8f7462243ea665f701db9f4cc2e953b919692c875187b",
+			"F514f91feb7306b81bcdf89d05b23bd97215a05e9220051aa0e8980c13a8d1c52",
+			"F3d3efbb41eb7395c62f8fe5de1513acf5c7f83316b71a4458629449e4a43aac2",
+			"F179d2df88d5677ce3c2a3ec3ad97c5660fd6505d296507feed2ee1aeaf22f408",
+			"F964275ecd90ebda1fdfc7c7e66243078c13f81908f1257a1418719bb6c410db2",
+			"F66770e27c119af000db4dc73e0f3a9311a96d9be2f32a128db159e60eba1ae71",
+			"F67a277f384072f10d4e6c84d87fe397597ce1ee62e193bdcc3e5642867a67ec0",
+			"F808d9623055b308630b45af06321555a174005bd795a790237b247d64028358b"
+		],
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"tableID": "bms-7K-supernova",
+		"title": "Supernova"
 	},
 	{
 		"default": false,
@@ -976,7 +1026,7 @@
 			"F037e606c874253d9825e2e404738bd13dae384a50e9591ce1fd62912ab00df92"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-omni-levels",
 		"title": "CHUNITHM (LUMINOUS PLUS Omnimix)"
@@ -993,7 +1043,7 @@
 			"F73ed1fffd54e77a99e038e340410c776b6d2a2028b115a5c2fc7daf99d44980e"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-omni-difficulties",
 		"title": "CHUNITHM (LUMINOUS PLUS Omnimix) (Difficulties)"
@@ -1028,7 +1078,7 @@
 			"F1e2dad337f35f872fcb9d9726bd4012570c5ce0c644c2d68f97f2f3c9c884d76"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-levels",
 		"title": "CHUNITHM (LUMINOUS PLUS)"
@@ -1045,7 +1095,7 @@
 			"Fdc7e7e6ae0b83372f68c4821c4cace37d488f621dad5e009108dc9406cf74957"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-luminousplus-difficulties",
 		"title": "CHUNITHM (LUMINOUS PLUS) (Difficulties)"
@@ -1523,7 +1573,7 @@
 			"F6e3bab8efa50af337873432c574f96c039e8b7ac678632d8ff4fc4cd1fc5f1b2"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-intl-levels",
 		"title": "CHUNITHM (VERSE International)"
@@ -1540,7 +1590,7 @@
 			"F5c89f008e387271e01a12abfca85aef07e295c478f7266caf82d204d85bb1aa8"
 		],
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-intl-difficulties",
 		"title": "CHUNITHM (VERSE International) (Difficulties)"
@@ -1598,7 +1648,7 @@
 		"title": "CHUNITHM (VERSE Omnimix) (Difficulties)"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Levels for CHUNITHM in VERSE.",
 		"folders": [
 			"Fcb7b909c3fc5eabb7211cc7e6c92b2f0af58f5d03d48f9b2d859acfe5510b20e",
@@ -1648,6 +1698,162 @@
 		"playtype": "Single",
 		"tableID": "chunithm-Single-verse-difficulties",
 		"title": "CHUNITHM (VERSE) (Difficulties)"
+	},
+	{
+		"default": false,
+		"description": "Levels for CHUNITHM in X-VERSE International.",
+		"folders": [
+			"Fe386543664924d2267528fa7603e4cb5b781a64741bf962ca57852592e5dc49e",
+			"Fd6dca35c400eac880e8f8ee998c3d1ec7d6076f8296da1b481aaaaed575b1595",
+			"Ff5aa7146c9cc572c5be0bc6c6d3226aadcb9f5fe4e00cec13098b0f371648627",
+			"F57dade5c85231209d0b336c89dfa84ae6ac5284b6e92f3d21087cfb89a49f0de",
+			"F02a445f05d18b237e8adae4b4aabb7693b383fec78aaa4e80ff328c188beb933",
+			"Fdb566a07fc91fd63990fa1dd6864c1fc70976ae7093b486bcba7473e7992e221",
+			"F09652e226a90238fafbf488bd1a86a8f106d4c24490ea0847d3c792e274ccfe2",
+			"F553d9f51b2546df599ab2ada36c2362db39244344693962919f742bc3fa083a2",
+			"F52de6f14579ec9ee1c6430a19aff5b5f91b6db5ab0b1911eae535951ac5659d3",
+			"Fdaf7c832e51cfc23924513cbe44e2f1ad90f0665a6628269c2d2cb387d4329ad",
+			"Fccdcc8c02073ac12e7dd165f8d55a2a17efbcb58faa4d8fa6a7850f15883b1c7",
+			"F6513449a98265e3c63f3b37f33f72cde1b27e22207a0a153ab95b62f09b60527",
+			"Fb822c03e7c804b4cafa63fdd1748469a8e7f75cf2d87251e6457973622ed0b5f",
+			"F250561198285f25db73753fe30f6f85cc4f417c1e238fb2fb82cdc181b9285f3",
+			"Ffeb20fd25b71cda5f9de9006c504e6cb762474387f4d6769df87cf631a3edb0c",
+			"F5c6deed5a11553470e27a8d2ec40de7af7fe37e3865a9ad2e40e051f93eb354c",
+			"Fd58e13b6bf2dd2024555112cac321e893757b8880fe8c24f35d2e3367800930b",
+			"F99dfede2929d518e0f83f7bd7530cf486f2d24fab9aaf931140c8e8a143f5ae7",
+			"F2534cfa94bc86823605828ab249738f4da2ee467b9a5f4da9726527ea4268db0",
+			"F029015766d2bbe9af95f7421546fe6ceca070c81600999ab1d93905f1de8f494",
+			"Fe06ee81e02d05cd626f5bd85f704168b7ba42dc3c128b77f0dd4b7ac882fd6d4",
+			"F6dba9593f5a90a792b739fb749b156f6835054470c773ab7d7bef8dcf6069479",
+			"Fed82b94e4d830a40894070d5904c38c46815b2d9e4455b8a2254fcd1cb735161",
+			"Fe008404ed076db79c3ea8a249456ca9f8b493bb55b0b9e32e646e3c8ab7f903d"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-intl-levels",
+		"title": "CHUNITHM (X-VERSE International)"
+	},
+	{
+		"default": false,
+		"description": "Difficulties for CHUNITHM in X-VERSE International.",
+		"folders": [
+			"F29cf75cc374f0bf012a8e8805293dfe7d7a1994fa225b9f70ed2a703234eaa2e",
+			"Facbfd1512cc2c53313e6fd7d92b6b8d861090a0747335f3e6add42a417590f0a",
+			"F23fa4adf22e9a3124b98ced3bfab301e78a7d1e3f83908052e1291ec38d2251d",
+			"F4189916efac866a65bc9f9ab73900cbcc6f81a5b6906d049673de566f3b746d2",
+			"F0cd842b13c2f6e0e9d50f0acfea08ccccefcd08a63345364c2c674d9fc63c393",
+			"Fee202376cdba6c231f02a9dc81d5c11eb31d8012e7326d5b254a6a307b06d992"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-intl-difficulties",
+		"title": "CHUNITHM (X-VERSE International) (Difficulties)"
+	},
+	{
+		"default": false,
+		"description": "Levels for CHUNITHM in X-VERSE Omnimix.",
+		"folders": [
+			"Fc429784caeff000ae22fba7d484092b363198600704b0e259e6364b25a5881df",
+			"Fe006089cfc89eb7b2b1fe2c6342e3d9200c43817c846d93091898b29334aeec1",
+			"F26199ec75c91707bdf2c1bf6e99d3e028f9e2a2d130ca0868b703c92028def59",
+			"F5377638cdb94810566c0997a7dc9017f08f9ff717037c9d097296bfa19663f8f",
+			"F5c13a20a45a523bbb351ddffeb08ba66199f4479118e23896969584f038ea119",
+			"F54735bff37cad7724f519551a2ee08bebff164f2b07f767c9e158eafc1ab33af",
+			"F24633285c3dfadf192819fbe24510d30e570910fecb89d84d0be1f443b8baee6",
+			"F0f69bd36549a23eca398abc399eb3633f7088fe5698c3fdc879044ada5ab2a33",
+			"Fddd14e10560db50561fdaddbd01a175855b922f4fa9510a365c5cc9d08c7c311",
+			"Fc468ce4cbe28fb9767a1a0962673ef01cd3f6190aac88462896b4d0b9fa8d9c0",
+			"F15eb5fb557bd60d06aa79ef4014455a021178eb8a4b638cf4636a97de0a2bbc1",
+			"F7c3ded39712c123fbc009b2ed2e7e0192e109e5d71a8988afc4ca04bc9a7e49d",
+			"Ffe61aa86aef86eea8269c184b63e817cadcab05489f649915e882bdd69c7cd4a",
+			"F88c97aa503fe954bdedb645e8255ffb0af21e7c384e8870a4ab157cba192fd44",
+			"F2e27a1b7cddb18fc51f2fac5823b62b16da16aa9096430cf412e09f0bb9bfbfa",
+			"Ffee9110d161fa009c01d9345ced29b250b3ba19b8a0290e87a0387a00e576b41",
+			"F74e34a65b8067265eb6372ac22bfc47506db69a0d4d55aaaf7bd607bf04fbf57",
+			"F25bc85d7a459a8d965a1f2e172470afe079bbc5334cb40aabfadb74923f16ad8",
+			"F5baf2261e0dd1951a23b829904e64b3432873d154f61997f7008bbff2c5ff2bd",
+			"F4b84a2f010cbc4a5d4ea86ad8bc3d5044bded033886c4880e834d95d689077f3",
+			"F14a30424b9c340ed14ddd1cfbb1d29a141c2d19f19b81ee72883315a6c76ba8c",
+			"F245da7e6646724753e98d52b00c7d26a9ec23efe892a7b4f199f50ca7f8bd630",
+			"F0d0d4f8730f76190fb730075affaa7a5b8276e09a93435d81acacb92393a1ca6",
+			"F124173f84369a68925522f74bd8a0355c04a87a0826f7f91d9ce1c21d498b436"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-omni-levels",
+		"title": "CHUNITHM (X-VERSE Omnimix)"
+	},
+	{
+		"default": false,
+		"description": "Difficulties for CHUNITHM in X-VERSE Omnimix.",
+		"folders": [
+			"Fa24a8ede359fbcc7def3b43277bdb9e652f70ffe3fc8a9b4f93dd79426cdb0da",
+			"F405274c8729a9606cfd80af8a257f03b6e2b3f10dc3b5c3894d5da71204d3f20",
+			"F7b0ecb8b690df07129792d03848e456bb824c1545ba27c3993851fface4bf1a6",
+			"F9e47bf5304b86844e274859134c54236dbf9a6314b8eb9d35aa2cfa0b5640ead",
+			"F660ce2d42c07dbcb642ac028464813a5038955afa9a873e58ea072ac5f9dcfaf",
+			"F09392625378737b320168c8e1554162dfa249e938366b49836bd5cd0df2e7ef4"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-omni-difficulties",
+		"title": "CHUNITHM (X-VERSE Omnimix) (Difficulties)"
+	},
+	{
+		"default": true,
+		"description": "Levels for CHUNITHM in X-VERSE.",
+		"folders": [
+			"F7b6305ea7ed5ec5bef5f980b1d012e61f195cda4bc9968918c303d864af1b1d6",
+			"F139404c3e1e346510c9b10389e532caef17d03a4b94d657d989a357a99e78236",
+			"F0a416172c558455b1eca4f40d19e3fb3b19c4a4d119eeb36bed0debb00944567",
+			"F50e5a11bf7d0cbea739ed30bef9094c9e24a34043e509eda4d13f68f7e250529",
+			"F06bddb855c74f0f0b06ab9623a86521104f7b6918b1416bf83927490c5e3f6d9",
+			"Fd38afe63b64bcfe163f92900fe3b98904fd65c457e209207a5dae4e9058e4283",
+			"F4d0778cfb84315310c148b546b9e3407b9c9ba824e490761cccc7320867c927b",
+			"Fd2bab4d3785eddb1c0658c722bab8a2642f82d8d90f56540a7ea4c79823af579",
+			"Ff943cdbcd5e3ef9dbf82bd0a6bf83997878d521477e4a1c24279155ea8f90742",
+			"F9bdbb4910f9706a2a8c347e6016119ee8b153f12d7408bb2ee999b24df16a871",
+			"F8682445afed83b8ed7595629415ed705867f133f9e92345e1662232ad0e13961",
+			"Fe6f718c84cf23f0b344de37e30f86e01c9708a2ae9d6c13f97a6542a2bc6671b",
+			"F1f92fadd45d053f02da059ffef90bfae458c430b9be0f7be1bd98d99a8eaa727",
+			"F3427c117fc3a0c77297f72e646480576ab6de2d6ee61290ebb348160a69091e2",
+			"Fa27715dd78044592f849dcebe62cbcdcc7705135bff3800118e8e597fb4a2209",
+			"F8904dc7b23bb9a3e00e02c7c85ca77db7554240b240da394862ea5d073b5001f",
+			"Fdb652b6a45268f1ecdbd64eb2c0ef59d3720dc2d39440a265cd02d424fb2cafd",
+			"Fb61d80c8da317a07ae548a04b354c9938d3ae3f61f7e327f826bb8386632032e",
+			"F15084c19e21332976e1f5faa8b6c2c94aeb8d37b9cc2880dd4828be5895e7b76",
+			"F4edb32d69ea6044883da052dd8fdb79880b5145d152c3467b949c7e76326532f",
+			"Fa7d0693da3b654e880c35dd390c367b80ff83e16f2057e02e1034d96370dbe30",
+			"Fb8dd20c5b26b296bab04c0ec33435cbae06eb073b78ead6270a9d037bb714cd8",
+			"Fb838946527662355bfdf9f5ccf446db994f4eb0945e46a7098e41c31e2cb23c3",
+			"F5f1f2f243c69ac61afcc2fca47dac27b18017882c9b965bab7c420c0cc6e23e0"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-levels",
+		"title": "CHUNITHM (X-VERSE)"
+	},
+	{
+		"default": false,
+		"description": "Difficulties for CHUNITHM in X-VERSE.",
+		"folders": [
+			"F0c3eaf9249fa04e8501d0680c4fdcfd53cc947ce14d8fd7ededd124633c4fd66",
+			"Fc6fe5786e00a80396ddf1b2e5d8c935ff1599ea7f3dee623365f51fb2a14eab8",
+			"F53b0ceccfe55fd580f515272c27e09213ae8d482733490ba953463d40509e51e",
+			"F14463ead732fa6f8bb8d050fd439f9823dbd77aa700c1a17436efe92565b29e5",
+			"F205e23b63ffede2e7cc8a8ad71a270316bec837be31401393ab6250329479f22",
+			"F4e83259002f2ebc240e7e655644eeafc86917e1db0135643f269dab8a94a7a02"
+		],
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "chunithm-Single-xverse-difficulties",
+		"title": "CHUNITHM (X-VERSE) (Difficulties)"
 	},
 	{
 		"default": false,

@@ -25,6 +25,12 @@ function prSchemaify(schema: PrudenceSchema) {
 }
 
 export const DatabaseSchemas: Record<Databases, SchemaValidatorFunction> = {
+	"user-name-changes": prSchemaify({
+		userID: p.isPositiveNonZeroInteger,
+		username: "string",
+		timestamp: p.isPositiveInteger,
+		previousUsername: "string",
+	}),
 	"import-locks": prSchemaify({
 		userID: p.isPositiveNonZeroInteger,
 		locked: "boolean",

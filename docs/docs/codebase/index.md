@@ -1,6 +1,6 @@
 # Codebase Overview
 
-This part of the documentation is for the [Tachi-Server](https://github.com/zkrising/Tachi/tree/main/server) codebase.
+This part of the documentation is for the [Tachi-Server](https://github.com/zkldi/Tachi/tree/main/server) codebase.
 
 ## Codebase Documentation vs. Code Documentation
 

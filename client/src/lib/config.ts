@@ -53,7 +53,7 @@ try {
 		<div>Welp. Looks like we're down. Sorry about that.</div>
 		<div>Chances are, this is just a temporary outage and will be fixed soon.</div>
 		<div style="font-size: 1.25rem; margin-top: 1rem; margin-bottom: 1rem;">
-			Please be patient, <a href="https://github.com/zkrising/Tachi">Tachi is maintained by a very small team.</a>
+			Please be patient, <a href="https://github.com/zkldi/Tachi">Tachi is maintained by a very small team.</a>
 		</div>
 		<div>An error message can be found in the console. (<code>Ctrl-Shift-I</code>)</div>`
 		}

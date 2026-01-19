@@ -113,7 +113,7 @@ const main = async () => {
 					artist: inputSong.artist,
 					data: {
 						genre: inputSong.genre as any,
-					},
+					} as any,
 					title: inputSong.name,
 				};
 				changes.songs.push(song.title);

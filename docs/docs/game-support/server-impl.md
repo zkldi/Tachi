@@ -16,25 +16,25 @@ an implementation here. You can declare a function that takes in the metric's va
 and the chart the score is on and validate accordingly.
 
 These functions should return a string on error, and true on success. This is aligned
-with how [Prudence](https://github.com/zkrising/Prudence) works, so you can re-use prudence
+with how [Prudence](https://github.com/zkldi/Prudence) works, so you can re-use prudence
 functions here.
 
 !!! example
-	```ts
-	musicRate: (rate, chart) => {
-		switch (chart.difficulty) {
-			case "BSC":
-			case "ADV":
-			case "EXT":
-				return p.isBetween(0, 100)(rate);
+```ts
+musicRate: (rate, chart) => {
+switch (chart.difficulty) {
+case "BSC":
+case "ADV":
+case "EXT":
+return p.isBetween(0, 100)(rate);
 
-			case "HARD BSC":
-			case "HARD ADV":
-			case "HARD EXT":
-				return p.isBetween(0, 120)(rate);
-		}
-	},
-	```
+    		case "HARD BSC":
+    		case "HARD ADV":
+    		case "HARD EXT":
+    			return p.isBetween(0, 120)(rate);
+    	}
+    },
+    ```
 
 ## `derivers`
 
@@ -43,9 +43,9 @@ that takes in the provided metrics and the chart for this score and should retur
 the metric value we expect.
 
 !!! example
-	```ts
+`ts
 	percent: (metrics, chart) => (100 * metrics.score) / (chart.data.notecount * 2);
-	```
+	`
 
 ## `scoreCalcs`, `sessionCalcs`, `profileCalcs`
 
@@ -87,7 +87,7 @@ HARD CLEAR/FULL COMBO
 
 ## `pbMergeFunctions`
 
-How should we combine scores into one PB? There is an *extraordinarily* useful helper
+How should we combine scores into one PB? There is an _extraordinarily_ useful helper
 function for this called `CreatePBMergeFor`.
 
 The way PBs are merged works like a chain: the first score is the best score this user
@@ -129,8 +129,8 @@ As mentioned above, the chain of PB functions starts by plucking the best score 
 user has on this chart under the `defaultMetric`. What should we call that score?
 
 !!! example
-	For IIDX, this is "Best Score". For something like GITADORA, which only has percent,
-	this might be called "Best Percent".
+For IIDX, this is "Best Score". For something like GITADORA, which only has percent,
+this might be called "Best Percent".
 
 ## `scoreValidators`
 

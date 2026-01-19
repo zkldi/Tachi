@@ -1,6 +1,6 @@
 const { MutateCollection } = require("../../util");
 
-const CURRENT_INTL_VERSION = "verse-intl";
+const CURRENT_INTL_VERSION = "xverse-intl";
 
 // Go to https://chunithm-net-eng.com/mobile/record/musicGenre/master (requires an account)
 // and enter in the console:

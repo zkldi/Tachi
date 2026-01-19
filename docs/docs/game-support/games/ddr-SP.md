@@ -21,12 +21,16 @@ For more information on what metrics are and how they work, see [TODO]!
 | Metric Name | Type | Description |
 | :: | :: | :: |
 | `grade` | "E", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "AA-", "AA", "AA+", "AAA" | The grade this score was. Note that grades are capped at F if this was a fail. |
-| `percent` | Decimal | The % value this score was worth. This is a number between 0 and 100. |
 
 ### Optional Metrics
 
 | Metric Name | Type | Description |
 | :: | :: | :: |
+| `flare` | "0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "EX" | The Flare rank. If no Flare is provided, Flare 0 is chosen by default. |
+| `exScore` | Integer | The EXScore value. Marvelous and O.K. judgements are worth 3 points, Perfect judgements are worth 2 points, Great judgements are worth 1 point, and Good and lower judgements are not worth any points. |
+| `fast` | Integer | The amount of mistakes in this score that were a result of hitting early. |
+| `slow` | Integer | The amount of mistakes in this score that were a result of hitting late. |
+| `maxCombo` | Integer | The largest combo in this score. |
 
 ## Judgements
 
@@ -71,6 +75,7 @@ The following judgements are defined:
 
 | Name | Type | Values |
 | :: | :: | :: |
+| `flare` | DERIVED | NONE, NONE+, NONE++, NONE+++, MERCURY, MERCURY+, MERCURY++, MERCURY+++, VENUS, VENUS+, VENUS++, VENUS+++, EARTH, EARTH+, EARTH++, EARTH+++, MARS, MARS+, MARS++, MARS+++, JUPITER, JUPITER+, JUPITER++, JUPITER+++, SATURN, SATURN+, SATURN++, SATURN+++, URANUS, URANUS+, URANUS++, URANUS+++, NEPTUNE, NEPTUNE+, NEPTUNE++, NEPTUNE+++, SUN, SUN+, SUN++, SUN+++, WORLD
 
 ## Versions
 
@@ -80,8 +85,8 @@ The following judgements are defined:
 | `a20` | A20 |
 | `a20plus` | A20+ |
 | `a3` | A3 |
-| `world` | WORLD |
 | `konaste` | Konaste |
+| `world` | World |
 
 ## Supported Match Types
 

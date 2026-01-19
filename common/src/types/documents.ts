@@ -776,3 +776,10 @@ export interface ImportTrackerFailed extends BaseImportTracker {
  * is kept track of via { @see ImportDocument }.
  */
 export type ImportTrackerDocument = ImportTrackerFailed | ImportTrackerOngoing;
+
+export interface UserNameChangeDocument {
+	userID: integer;
+	username: string;
+	timestamp: integer;
+	previousUsername: string;
+}

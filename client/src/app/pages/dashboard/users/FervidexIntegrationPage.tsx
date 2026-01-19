@@ -123,7 +123,8 @@ function FervidexForm({
 							Your Card ID. You can specify multiple by separating them with spaces.
 							<br />
 							<span className="text-warning">
-								Warning: CardIDs are the ones that <b>DON'T</b> start with E004.
+								Warning: CardIDs are the ones that <b>DON'T</b> start with E004 or
+								012E.
 							</span>
 						</Form.Label>
 						<Form.Control
@@ -138,12 +139,14 @@ function FervidexForm({
 						{formSettings.cards.some((c) => !isCardIDValid(c)) && (
 							<div className="text-danger">
 								CardIDs should be 16 characters, or a <code>C</code> followed by 12
-								characters!
+								digits!
 							</div>
 						)}
-						{formSettings.cards.some((x) => x.startsWith("E004")) && (
+						{formSettings.cards.some(
+							(x) => x.startsWith("E004") || x.startsWith("012E")
+						) && (
 							<div className="text-danger">
-								CardIDs are <b>NOT</b> the ones that start with E004!
+								CardIDs are <b>NOT</b> the ones that start with E004 or 012E!
 							</div>
 						)}
 					</Form.Group>

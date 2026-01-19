@@ -28,7 +28,7 @@ export default function SeedsPicker({
 	// a repo is one of the following:
 	// null - nothing has been selected yet
 	// "local" - we're referring to the files on the local development disk
-	// "GitHub:NAME/REPO" - we're referring to a repository on github, like GitHub:zkrising/Tachi
+	// "GitHub:NAME/REPO" - we're referring to a repository on github, like GitHub:zkldi/Tachi
 	const [repo, setRepo] = useState<string | null>(null);
 
 	// to list commits, we need to know what branch we're looking at.

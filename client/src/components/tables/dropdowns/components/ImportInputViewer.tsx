@@ -97,7 +97,7 @@ function InnerImportInputViewer({
 				<Muted>
 					For information on what each argument means,{" "}
 					<ExternalLink
-						href={`https://github.com/zkrising/Tachi/blob/main/server/src/lib/score-import/import-types/${importType}/parser.ts`}
+						href={`https://github.com/zkldi/Tachi/blob/main/server/src/lib/score-import/import-types/${importType}/parser.ts`}
 					>
 						view the signature of the parser function for <code>{importType}</code>
 					</ExternalLink>

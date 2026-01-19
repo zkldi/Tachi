@@ -187,6 +187,9 @@ export const CHUNITHM_SINGLE_CONF = {
 		verse: "VERSE",
 		"verse-intl": "VERSE International",
 		"verse-omni": "VERSE Omnimix",
+		xverse: "X-VERSE",
+		"xverse-intl": "X-VERSE International",
+		"xverse-omni": "X-VERSE Omnimix",
 	},
 
 	chartData: z.strictObject({

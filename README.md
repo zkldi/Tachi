@@ -45,7 +45,7 @@ Tachi is intended to be developed inside a container. This ensures that you have
 
 VSCode has excellent native support for dev containers, and as such this is the only method of local development we recommend.
 
-Over the years we have had a *lot* of issues with people having subtle variations on their system (or on windows). Given the contributor-centricity of Tachi, it's untenable to expect every contributor to be an expert with local dev setup.
+Over the years we have had a _lot_ of issues with people having subtle variations on their system (or on windows). Given the contributor-centricity of Tachi, it's untenable to expect every contributor to be an expert with local dev setup.
 
 The devcontainer provides us with the most simple, consistent experience, and allows us to put nice-to-haves inside the user's shell.
 

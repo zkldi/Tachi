@@ -10,14 +10,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/zkrising/Tachi.git"
+		"url": "git+https://github.com/zkldi/Tachi.git"
 	},
 	"author": "zk",
 	"license": "SEE LICENSE IN EACH PACKAGE",
 	"bugs": {
-		"url": "https://github.com/zkrising/Tachi/issues"
+		"url": "https://github.com/zkldi/Tachi/issues"
 	},
-	"homepage": "https://github.com/zkrising/Tachi#readme",
+	"homepage": "https://github.com/zkldi/Tachi#readme",
 	"devDependencies": {
 		"@types/node": "18.11.18",
 		"@types/tap": "15.0.3",

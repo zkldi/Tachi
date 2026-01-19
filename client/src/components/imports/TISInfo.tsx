@@ -9,7 +9,7 @@ export default function TISInfo({ name }: { name: string }) {
 			<ol className="instructions-list">
 				<li>
 					Download the latest version of the {TachiConfig.NAME} Import Scripts{" "}
-					<ExternalLink href="https://github.com/zkrising/Tachi-import-scripts/releases">
+					<ExternalLink href="https://github.com/zkldi/Tachi-import-scripts/releases">
 						here
 					</ExternalLink>
 					.

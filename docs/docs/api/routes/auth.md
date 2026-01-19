@@ -3,48 +3,48 @@
 These endpoints relate to internal authentication methods. Read the warning below.
 
 !!! danger
-	This is **NOT** for external use. You should **NEVER**
-	be requesting a username and password from a user.
+This is **NOT** for external use. You should **NEVER**
+be requesting a username and password from a user.
 
-	Furthermore, interacting with this programmatically
-	is near-impossible because you need to complete a CAPTCHA.
+    Furthermore, interacting with this programmatically
+    is near-impossible because you need to complete a CAPTCHA.
 
-	Nevertheless, This is documented for completeness' sake.
+    Nevertheless, This is documented for completeness' sake.
 
 !!! warning
-	All of these endpoints are aggressively rate limited. If you fire a bot at this, you will probably get
-	your IP blacklisted. Don't do that.
+All of these endpoints are aggressively rate limited. If you fire a bot at this, you will probably get
+your IP blacklisted. Don't do that.
 
-*****
+---
 
 ## Login with username and password.
 
-```POST /api/v1/auth/login```
+`POST /api/v1/auth/login`
 
 Logs a user in and returns a session cookie.
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `username` | String | The user's username. This is compared case-insensitively.
-| `!password` | String | The user's password. |
-| `captcha` | String | Information about the captcha filled out by the user. We use a Google ReCaptcha instance. |
+|  Property   |  Type  |                                        Description                                        |
+| :---------: | :----: | :---------------------------------------------------------------------------------------: |
+| `username`  | String |                 The user's username. This is compared case-insensitively.                 |
+| `!password` | String |                                   The user's password.                                    |
+|  `captcha`  | String | Information about the captcha filled out by the user. We use a Google ReCaptcha instance. |
 
 !!! info
-	The `!` prefix is special in that anything with it is assumed to be private and is **always**
-	ignored by our request logger.
+The `!` prefix is special in that anything with it is assumed to be private and is **always**
+ignored by our request logger.
 
-	Without it, we would log passwords!
+    Without it, we would log passwords!
 
 ### Response
 
-| Property | Type | Description |
-| :: | :: | :: |
+| Property |  Type   |               Description                |
+| :------: | :-----: | :--------------------------------------: |
 | `userID` | Integer | The ID of the user you authenticated as. |
 
-| HTTP Header | Description |
-| :: | :: |
+| HTTP Header  |                     Description                      |
+| :----------: | :--------------------------------------------------: |
 | `Set-Cookie` | Contains a session cookie for future authentication. |
 
 ### Example
@@ -57,20 +57,21 @@ POST /api/v1/auth/login
 
 ```json
 {
-	"username": "zkrising",
+	"username": "zkldi",
 	"!password": "my_password",
 	"captcha": "herebedragons"
 }
 ```
 
 #### Response
+
 ```json
 {
 	"userID": 1
 }
 ```
 
-*****
+---
 
 ## Register a new account.
 
@@ -78,24 +79,24 @@ POST /api/v1/auth/login
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `username` | String | A string between 3 and 20 characters. The first character must be A-Z, _ or -. The other 19 may be A-Z, 0-9, _ or -. |
-| `!password` | String | An 8 character or longer string. |
-| `email` | String | |
-| `inviteCode` (Kamaitachi Only) | String (Undefined/Unused on Bokutachi) | If on Kamaitachi, this is the user's invitation code. |
-| `captcha` | String | |
-
+|            Property            |                  Type                  |                                                     Description                                                      |
+| :----------------------------: | :------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+|           `username`           |                 String                 | A string between 3 and 20 characters. The first character must be A-Z, _ or -. The other 19 may be A-Z, 0-9, _ or -. |
+|          `!password`           |                 String                 |                                           An 8 character or longer string.                                           |
+|            `email`             |                 String                 |                                                                                                                      |
+| `inviteCode` (Kamaitachi Only) | String (Undefined/Unused on Bokutachi) |                                If on Kamaitachi, this is the user's invitation code.                                 |
+|           `captcha`            |                 String                 |                                                                                                                      |
 
 ### Response
 
-| Property | Type | Description |
-| :: | :: | :: |
+| Property |                 Type                  |               Description               |
+| :------: | :-----------------------------------: | :-------------------------------------: |
 | `<body>` | [UserDocument](../../schemas/user.md) | The newly-created user's User Document. |
 
 ### Example
 
 #### Request
+
 ```
 POST /api/v1/auth/register
 ```
@@ -136,7 +137,7 @@ POST /api/v1/auth/register
 }
 ```
 
-*****
+---
 
 ## Verify an email from the code that was sent to it.
 
@@ -144,9 +145,9 @@ POST /api/v1/auth/register
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `code` | String | The Code that was sent to the users mailbox. |
+| Property |  Type  |                 Description                  |
+| :------: | :----: | :------------------------------------------: |
+|  `code`  | String | The Code that was sent to the users mailbox. |
 
 ### Response
 
@@ -155,6 +156,7 @@ Empty Object
 ### Example
 
 #### Request
+
 ```
 {
 	"code": "abcdef1234567890"
@@ -165,7 +167,7 @@ Empty Object
 
 Empty Object.
 
-*****
+---
 
 ## Resend a verification email to the requesting user's email address.
 
@@ -185,8 +187,7 @@ Empty object.
 
 N/A
 
-
-*****
+---
 
 ## Log Out.
 
@@ -205,6 +206,7 @@ Empty Object.
 ### Example
 
 #### Request
+
 ```
 POST /api/v1/auth/logout
 ```
@@ -213,21 +215,21 @@ POST /api/v1/auth/logout
 
 Nothing.
 
-*****
+---
 
 ## Create a password reset code and send it to the provided email.
 
 `POST /api/v1/auth/forgot-password`
 
 !!! note
-	This endpoint sends the password reset code pretty-printed to the email, and is **NOT**
-	returned as part of the HTTP request.
+This endpoint sends the password reset code pretty-printed to the email, and is **NOT**
+returned as part of the HTTP request.
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `email` | String | A user's email. If the email does not correspond to any accounts, 202 is returned anyway as a security measure. |
+| Property |  Type  |                                                   Description                                                   |
+| :------: | :----: | :-------------------------------------------------------------------------------------------------------------: |
+| `email`  | String | A user's email. If the email does not correspond to any accounts, 202 is returned anyway as a security measure. |
 
 ### Response
 
@@ -236,18 +238,19 @@ Empty Object. The endpoint immediately returns 202 to avoid giving away informat
 ### Example
 
 #### Request
+
 ```js
 {
-	"email": "zkrising.dev@gmail.com"
+	"email": "zkldiv@gmail.com"
 }
 ```
 
 #### Response
 
-Although the request body returns nothing, `zkrising.dev@gmail.com` will have recieved an email with
+Although the request body returns nothing, `zkldiv@gmail.com` will have recieved an email with
 a URL containing the password reset code.
 
-*****
+---
 
 ## Reset a user's password with a password reset code.
 
@@ -255,10 +258,10 @@ a URL containing the password reset code.
 
 ### Parameters
 
-| Property | Type | Description |
-| :: | :: | :: |
-| `code` | String | A password reset code. This is provided in a password reset email. |
-| `!password` | String | The password to change to. |
+|  Property   |  Type  |                            Description                             |
+| :---------: | :----: | :----------------------------------------------------------------: |
+|   `code`    | String | A password reset code. This is provided in a password reset email. |
+| `!password` | String |                     The password to change to.                     |
 
 ### Response
 
@@ -267,10 +270,11 @@ Empty Object.
 ### Example
 
 #### Request
+
 ```js
 {
 	"code": "1234567890abcdef",
-	"!password": "zkrising_is_so_cool",
+	"!password": "zkldi_so_cool",
 }
 ```
 

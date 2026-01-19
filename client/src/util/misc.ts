@@ -585,15 +585,19 @@ export function HumanisedJoinArray(arr: Array<string>, lastJoiner = "or") {
 }
 
 export function isCardIDValid(cardID: string) {
-	if (cardID.startsWith("E004")) {
+	if (cardID.startsWith("E004") || cardID.startsWith("012E")) {
 		return false;
 	}
 
-	if (cardID[0] === "C") {
-		return cardID.length === 13;
+	if (cardID.match(/^C[0-9]{12}$/u) !== null) {
+		return true;
 	}
 
-	return cardID.length === 16;
+	if (cardID.match(/^[0-9A-z]{14}[1|2][0-9A-z]$/u) !== null) {
+		return true;
+	}
+
+	return false;
 }
 
 /**

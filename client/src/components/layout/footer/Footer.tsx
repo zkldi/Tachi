@@ -74,7 +74,7 @@ export function Footer() {
 						)}
 						<Nav.Link
 							as={ExternalLink}
-							href="https://github.com/zkrising/Tachi"
+							href="https://github.com/zkldi/Tachi"
 							className={linkClassNames}
 						>
 							Source Code

@@ -1,18 +1,23 @@
 import { Router } from "express";
 import db from "external/mongo/db";
+import CreateLogCtx from "lib/logger/logger";
 import { GetRivalUsers } from "lib/rivals/rivals";
+import { ResolveSongAndChart } from "lib/score-import/import-types/common/batch-manual/converter";
 import { SearchSpecificGameSongsAndCharts } from "lib/search/search";
 import prValidate from "server/middleware/prudence-validate";
 import { AggressiveRateLimitMiddleware } from "server/middleware/rate-limiter";
 import { GetGamePTConfig } from "tachi-common";
+import { PR_RESOLVER } from "tachi-common/lib/schemas";
 import { GetRelevantSongsAndCharts } from "utils/db";
 import { IsValidScoreAlg } from "utils/misc";
 import { GetAdjacentAbove, GetAdjacentBelow } from "utils/queries/pbs";
 import { GetUGPT } from "utils/req-tachi-data";
 import { FilterChartsAndSongs, GetPBOnChart, GetScoreIDsFromComposed } from "utils/scores";
 import { GetUsersWithIDs } from "utils/user";
+import type { MatchTypeResolver } from "tachi-common";
 
 const router: Router = Router({ mergeParams: true });
+const logger = CreateLogCtx(__filename);
 
 /**
  * Searches a user's personal bests.
@@ -285,6 +290,49 @@ router.get("/:chartID/leaderboard-adjacent", async (req, res) => {
 			adjacentAbove,
 			adjacentBelow,
 			users,
+		},
+	});
+});
+
+/**
+ * Use the tachi "resolve" engine to identify a chart instead of
+ * using the Tachi IDs. Used to get a PB.
+ *
+ * @name POST /api/v1/users/:userID/games/:game/:playtype/pbs/resolve
+ */
+router.post("/resolve", prValidate(PR_RESOLVER), async (req, res) => {
+	const { user, game, playtype } = GetUGPT(req);
+
+	const safeBody = {
+		...req.safeBody,
+		game,
+		playtype,
+	} as unknown as MatchTypeResolver;
+	const got = await ResolveSongAndChart(safeBody, logger);
+
+	if (!got) {
+		return res.status(404).json({
+			success: false,
+			description: `Could not resolve this chart with details: ${safeBody.matchType}:${safeBody.identifier} (Extra specifiers: version=${safeBody.version}, artist=${safeBody.artist})`,
+		});
+	}
+
+	const pb = await GetPBOnChart(user.id, got.chart.chartID);
+
+	if (!pb) {
+		return res.status(404).json({
+			success: false,
+			description: `This user has not played this chart.`,
+		});
+	}
+
+	return res.status(200).json({
+		success: true,
+		description: "Successfully retrieved PB for user.",
+		body: {
+			pb,
+			chart: got.chart,
+			song: got.song,
 		},
 	});
 });

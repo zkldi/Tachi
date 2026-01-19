@@ -6,7 +6,7 @@ import { GetEveryonesRivalIDs } from "lib/rivals/rivals";
 import { GetGPTConfig, GetGamePTConfig } from "tachi-common";
 import { DeleteUndefinedProps } from "utils/misc";
 import type { KtLogger } from "lib/logger/logger";
-import type { BulkWriteUpdateOneOperation, FilterQuery } from "mongodb";
+import type { BulkWriteUpdateOneOperation, FilterQuery, SortOptionObject } from "mongodb";
 import type {
 	GPTString,
 	Game,
@@ -179,27 +179,51 @@ export async function UpdateChartRanking(game: Game, playtype: Playtype, chartID
 
 async function GetSortedPBs(game: Game, playtype: Playtype, chartID: string) {
 	const gptConfig = GetGamePTConfig(game, playtype);
+	let sortOptions: SortOptionObject<PBScoreDocument> = {
+		[`scoreData.${gptConfig.defaultMetric}`]: -1,
+	};
 
 	if (game === "ongeki") {
-		return db["personal-bests"].find(
-			{ chartID },
-			{
-				sort: {
-					[`scoreData.score`]: -1,
-					[`scoreData.platinumScore`]: -1,
-					timeAchieved: 1,
-				},
-			}
-		);
+		sortOptions = {
+			[`scoreData.score`]: -1,
+			[`scoreData.platinumScore`]: -1,
+		};
+	} else if (game === "chunithm") {
+		sortOptions = {
+			[`scoreData.score`]: -1,
+			[`scoreData.enumIndexes.noteLamp`]: -1,
+			[`scoreData.enumIndexes.clearLamp`]: -1,
+		};
 	}
 
-	return db["personal-bests"].find(
-		{ chartID },
+	return db["personal-bests"].aggregate([
 		{
-			sort: {
-				[`scoreData.${gptConfig.defaultMetric}`]: -1,
+			$match: {
+				chartID,
+			},
+		},
+		{
+			$addFields: {
+				hasTimeAchieved: {
+					$cond: {
+						if: { $eq: ["$timeAchieved", null] },
+						then: false,
+						else: true,
+					},
+				},
+			},
+		},
+		{
+			$sort: {
+				...sortOptions,
+				hasTimeAchieved: -1,
 				timeAchieved: 1,
 			},
-		}
-	);
+		},
+		{
+			$project: {
+				hasTimeAchieved: 0,
+			},
+		},
+	]);
 }

@@ -124,7 +124,7 @@ export default function SpecificFolderPage({ reqUser, game, playtype }: Props) {
 				<Divider />
 			</div>
 			<div className="col-12 d-flex">
-				<div className="btn-group d-flex w-100">
+				<div className="btn-group overflow-x-auto scrollbar-hide d-flex w-100">
 					<SelectLinkButton className="text-wrap" to={base}>
 						<Icon type="table" /> Normal View
 					</SelectLinkButton>

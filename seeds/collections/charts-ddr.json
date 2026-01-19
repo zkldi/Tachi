@@ -228,8 +228,8 @@
 		},
 		"difficulty": "DIFFICULT",
 		"isPrimary": true,
-		"level": "7",
-		"levelNum": 7,
+		"level": "8",
+		"levelNum": 8,
 		"playtype": "DP",
 		"songID": 11,
 		"versions": [
@@ -564,8 +564,8 @@
 		},
 		"difficulty": "BASIC",
 		"isPrimary": true,
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"playtype": "DP",
 		"songID": 13,
 		"versions": [
@@ -86959,8 +86959,8 @@
 		},
 		"difficulty": "BASIC",
 		"isPrimary": true,
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"playtype": "DP",
 		"songID": 37908,
 		"versions": [
@@ -90450,8 +90450,8 @@
 		},
 		"difficulty": "BASIC",
 		"isPrimary": true,
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"playtype": "DP",
 		"songID": 37934,
 		"versions": [

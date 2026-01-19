@@ -3,21 +3,17 @@ import { Router } from "express";
 import db from "external/mongo/db";
 import { SYMBOL_TACHI_API_AUTH } from "lib/constants/tachi";
 import CreateLogCtx from "lib/logger/logger";
-import { ResolveMatchTypeToTachiData } from "lib/score-import/import-types/common/batch-manual/converter";
+import { ResolveSongAndChart } from "lib/score-import/import-types/common/batch-manual/converter";
 import { SearchSpecificGameSongs } from "lib/search/search";
 import prValidate from "server/middleware/prudence-validate";
-import {
-	type ChartDocument,
-	type integer,
-	type MatchTypes,
-	type UGPTSettingsDocument,
-} from "tachi-common";
+import { type ChartDocument, type integer, type MatchTypes } from "tachi-common";
+import { PR_RESOLVER } from "tachi-common/lib/schemas";
 import { IsString } from "utils/misc";
 import { FindChartsOnPopularity } from "utils/queries/charts";
 import { GetGPT } from "utils/req-tachi-data";
-import type { ConverterFailure } from "lib/score-import/framework/common/converter-failures";
-import type { BatchManualScore } from "tachi-common";
+import type { MatchTypeResolver, UGPTSettingsDocument } from "tachi-common";
 
+const logger = CreateLogCtx(__filename);
 const router: Router = Router({ mergeParams: true });
 
 /**
@@ -102,6 +98,7 @@ router.get("/", async (req, res) => {
 				(e) => (e as ChartDocument<"iidx:DP" | "iidx:SP">).data["2dxtraSet"] === null
 			);
 		} else {
+			// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 			const iidxSettings = (await db["game-settings"].findOne({
 				userID: req[SYMBOL_TACHI_API_AUTH].userID,
 				game,
@@ -126,81 +123,38 @@ router.get("/", async (req, res) => {
 	});
 });
 
-interface ResolveArgs {
-	identifier: string;
-	difficulty?: string;
-	matchType: MatchTypes;
-	version?: string;
-}
-
 /**
- * Resolve a chart using one of the batch manual matchTypes.
+ * Use the tachi "resolve" engine to identify a chart instead of
+ * using the Tachi IDs. Used to get a chart.
  *
- * @name GET /api/v1/games/:game/:playtype/charts/resolve
+ * @name POST /api/v1/users/:userID/games/:game/:playtype/pbs/resolve
  */
-router.get(
-	"/resolve",
-	prValidate({
-		identifier: "string",
-		difficulty: "*string",
-		matchType: "string",
-	}),
-	async (req, res) => {
-		const { game, playtype } = GetGPT(req);
+router.post("/resolve", prValidate(PR_RESOLVER), async (req, res) => {
+	const { game, playtype } = GetGPT(req);
 
-		const logger = CreateLogCtx(__filename);
+	const safeBody = {
+		...req.safeBody,
+		game,
+		playtype,
+	} as unknown as MatchTypeResolver;
+	const got = await ResolveSongAndChart(safeBody, logger);
 
-		const query = req.query as unknown as ResolveArgs;
-
-		try {
-			const mockBatchManualScore: BatchManualScore = {
-				identifier: query.identifier,
-				matchType: query.matchType,
-				difficulty: query.difficulty,
-			} as unknown as BatchManualScore;
-
-			const { song, chart } = await ResolveMatchTypeToTachiData(
-				// This is an extremely silly hack. Basically, this function is called
-				// relatively deep in the batch-manual import process. I couldn't be bothered
-				// to refactor this to take more generic arguments, so instead, we're just
-				// hackily saying "yeah this is definitely a "batch-manual score", trust us.
-				// We happen to know that this function doesn't interact or care about the
-				// scorey bits, but hey ho. This is still a stupid hack. Wouldn't happen in
-				// Rust.
-				mockBatchManualScore,
-				{
-					game,
-					playtype,
-					// we're using this function in a way it wasn't intended to be used.
-					// I don't really care though. This is a hack.
-					service: "Lookup Hack",
-					version: query.version as any,
-				},
-				// This is completely unecessary and totally just used for debug logging.
-				// That said, we realllly shouldn't be treating a function like this as this
-				// malleable bit of noise.
-				"ir/direct-manual",
-				logger
-			);
-
-			return res.status(200).json({
-				success: true,
-				description: `Found song & chart.`,
-				body: {
-					song,
-					chart,
-				},
-			});
-		} catch (e) {
-			const err = e as ConverterFailure;
-
-			return res.status(404).json({
-				success: false,
-				description: err.message,
-			});
-		}
+	if (!got) {
+		return res.status(404).json({
+			success: false,
+			description: `Could not resolve this chart with details: ${safeBody.matchType}:${safeBody.identifier} (Extra specifiers: version=${safeBody.version}, artist=${safeBody.artist})`,
+		});
 	}
-);
+
+	return res.status(200).json({
+		success: true,
+		description: "Successfully retrieved chart info.",
+		body: {
+			chart: got.chart,
+			song: got.song,
+		},
+	});
+});
 
 router.use("/:chartID", chartIDRouter);
 

@@ -6,7 +6,7 @@ be treated like a Wiki for Tachi information.
 As such, nothing here will require programming knowledge,
 but it might help.
 
-*****
+---
 
 ## What is Tachi?
 
@@ -32,7 +32,7 @@ Tachi is a score tracker and analyser for various rhythm
 games. It was designed out of a dislike for existing websites
 that display your scores. I think that scores are integral
 to the rhythm game experience, and that displaying them
-properly is *just* as important.
+properly is _just_ as important.
 
 The benefits of Tachi include features like [Sessions](./features.md#sessions), which break your scores up into
 groups of when they were played, and [Goals](./features.md#goals) which let you set automatically updating targets for yourself!
@@ -63,6 +63,6 @@ The rules can be found [here](./rules.md).
 
 ## I have a bug report or feature request.
 
-Please reach out on discord or [GitHub Issues](https://github.com/zkrising/Tachi)!
+Please reach out on discord or [GitHub Issues](https://github.com/zkldi/Tachi)!
 
 --8<-- "includes/abbreviations.md"

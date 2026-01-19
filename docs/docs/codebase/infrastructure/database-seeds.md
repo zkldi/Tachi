@@ -1,6 +1,6 @@
 # Database Seeds
 
-Tachi tracks the contents of its songs and charts in something called the [Database Seeds](https://github.com/zkrising/Tachi/tree/main/seeds).
+Tachi tracks the contents of its songs and charts in something called the [Database Seeds](https://github.com/zkldi/Tachi/tree/main/seeds).
 
 The databases in question aren't (normally) altered by the server code. We essentially overload git and its CI tools to version control parts of our database.
 

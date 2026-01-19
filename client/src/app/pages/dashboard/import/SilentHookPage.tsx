@@ -22,7 +22,7 @@ export default function SilentHookPage() {
 			<ol className="instructions-list">
 				<li>
 					Download <code>silent</code> from{" "}
-					<ExternalLink href="https://zkrising.com/stuff/silent-latest.zip">
+					<ExternalLink href="https://zkldi.com/stuff/silent-latest.zip">
 						here
 					</ExternalLink>{" "}
 					and place all the <code>.dll</code> files in the same folder as{" "}

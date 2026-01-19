@@ -1,10 +1,9 @@
 import { Router } from "express";
-import db from "external/mongo/db";
 import { SIXTEEN_MEGABTYES } from "lib/constants/filesize";
 import { SYMBOL_TACHI_API_AUTH } from "lib/constants/tachi";
 import CreateLogCtx from "lib/logger/logger";
 import { ExpressWrappedScoreImportMain } from "lib/score-import/framework/express-wrapper";
-import { ReprocessOrphan } from "lib/score-import/framework/orphans/orphans";
+import { DeorphanScores } from "lib/score-import/framework/orphans/orphans";
 import { MakeScoreImport } from "lib/score-import/framework/score-import";
 import { ServerConfig, TachiConfig } from "lib/setup/config";
 import { p } from "prudence";
@@ -168,33 +167,9 @@ router.post("/orphans", RequirePermissions("submit_score"), async (req, res) => 
 
 	logger.info(`User ${FormatUserDoc(userDoc)} forced an orphan sync.`);
 
-	const orphans = await db["orphan-scores"].find({
-		userID: userDoc.id,
-	});
-
-	// ScoreIDs are essentially userID dependent, so this is fine.
-	const blacklist = (await db["score-blacklist"].find({ userID: userDoc.id })).map(
-		(e) => e.scoreID
-	);
-
-	let processed = 0;
-	let failed = 0;
-	let success = 0;
-	let removed = 0;
-
-	await Promise.all(
-		orphans.map((or) =>
-			ReprocessOrphan(or, blacklist, logger).then((r) => {
-				processed++;
-				if (r === null) {
-					removed++;
-				} else if (r === false) {
-					failed++;
-				} else {
-					success++;
-				}
-			})
-		)
+	const { processed, removed, failed, success } = await DeorphanScores(
+		{ userID: userDoc.id },
+		logger
 	);
 
 	logger.info(`Finished attempting deorphaning.`);

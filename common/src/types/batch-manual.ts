@@ -10,6 +10,8 @@ import type {
 	Judgements,
 	ConfProvidedMetrics,
 	ScoreMeta,
+	Playtype,
+	Game,
 } from "./game-config";
 import type { ExtractMetrics } from "./metrics";
 import type { AllFieldsNullableOptional } from "./utils";
@@ -27,6 +29,25 @@ type MatchTypesWithDifficulty =
 	| "tachiSongID";
 
 export type MatchTypes = MatchTypesNoDifficulty | MatchTypesWithDifficulty;
+
+interface MatchTypeBase {
+	game: Game;
+	playtype: Playtype;
+	version: Versions[GPTString] | null;
+	identifier: string;
+	artist?: string | null;
+}
+
+export type MatchTypeResolverWithDifficulty = MatchTypeBase & {
+	matchType: MatchTypesWithDifficulty;
+	difficulty: string;
+};
+
+export type MatchTypeResolverNoDifficulty = MatchTypeBase & {
+	matchType: MatchTypesNoDifficulty;
+};
+
+export type MatchTypeResolver = MatchTypeResolverNoDifficulty | MatchTypeResolverWithDifficulty;
 
 export type BatchManualScore<GPT extends GPTString = GPTString> = ExtractMetrics<
 	ConfProvidedMetrics[GPT]

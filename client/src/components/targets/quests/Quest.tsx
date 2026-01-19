@@ -262,7 +262,7 @@ export function InnerQuestSectionGoal({
 				<GoalLink goal={goal} />
 
 				{!goalSub.achieved && (
-					<div className="ms-auto text-danger">
+					<div className="ms-auto text-end text-danger">
 						<span className="text-danger">{goalSub.progressHuman}</span>
 						<Muted> / {goalSub.outOfHuman}</Muted>
 					</div>

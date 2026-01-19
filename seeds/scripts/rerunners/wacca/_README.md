@@ -12,3 +12,14 @@ fs.writeFileSync('songlist.json', JSON.stringify(e));
 Then run the .js with node.
 
 Clearly not ideal, but it just works.
+
+If you get an error about require not being defined, try replacing the first line with:
+```js
+import fs from 'fs';
+```
+
+If there are two consts containing song data instead of one, you can replace the variable passed to stringify with:
+```js
+a.concat(b)
+```
+where 'a' and 'b' are the 2 consts.

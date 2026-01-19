@@ -14,7 +14,7 @@ All work should be merged into `main`.
 Nothing private, nothing pertaining to an instance of Tachi. These are backbone files, such
 as songs, charts, and folders.
 
-You can read more about what all these documents mean in [common/](https://github.com/zkrising/Tachi/tree/main/common).
+You can read more about what all these documents mean in [common/](https://github.com/zkldi/Tachi/tree/main/common).
 
 - `songs-{game}`
 

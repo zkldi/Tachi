@@ -4,8 +4,6 @@ import { ReadCollection, WriteCollection } from "../../util";
 import { ChartDocument, SongDocument } from "tachi-common";
 import readline from "readline";
 
-const SKIP_SCRAPING = true;
-
 type OngekiChart = ChartDocument<"ongeki:Single">;
 type OngekiSong = SongDocument<"ongeki">;
 
@@ -151,7 +149,7 @@ const main = async () => {
 	const charts: OngekiChart[] = ReadCollection("charts-ongeki.json");
 	const songs: OngekiSong[] = ReadCollection("songs-ongeki.json");
 
-	if (!SKIP_SCRAPING) {
+	if (process.argv[process.argv.length - 1] !== "--list") {
 		await scrapeAll(charts, songs);
 	}
 	await listMissing(charts, songs, 12.7); // Charts below 12+ are whatever

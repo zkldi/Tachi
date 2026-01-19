@@ -32,7 +32,15 @@ import {
 	GetRecentlyViewedFoldersAnyGPT,
 } from "utils/queries/summary";
 import { GetUser } from "utils/req-tachi-data";
-import { CheckIfEmailInUse, FormatUserDoc, GetAllRankings, GetUserWithID } from "utils/user";
+import {
+	CanChangeUsername,
+	CheckIfEmailInUse,
+	FormatUserDoc,
+	GetAllRankings,
+	GetNextAvailableUsernameChange,
+	GetUserCaseInsensitive,
+	GetUserWithID,
+} from "utils/user";
 import type {
 	AnyProfileRatingAlg,
 	GPTString,
@@ -515,6 +523,158 @@ router.post(
 	}
 );
 
+/**
+ * Changes the users username.
+ * Requires self-key level permissions.
+ *
+ * @param !password - The new password. Must pass password validation rules.
+ * @param newUsername - The new username. Must pass username validation rules.
+ *
+ * @name POST /api/v1/users/:userID/change-username
+ */
+router.post(
+	"/change-username",
+	RequireSelfRequestFromUser,
+	prValidate(
+		{
+			"!password": ValidatePassword,
+			newUsername: p.regex(/^[a-zA-Z_-][a-zA-Z0-9_-]{2,20}$/u),
+		},
+		{
+			newUsername:
+				"Username must be between 3 and 20 characters long, can only contain alphanumeric characters and cannot start with a number.",
+			"!password": "Invalid password.",
+		}
+	),
+	async (req, res) => {
+		const body = req.safeBody as {
+			"!password": string;
+			newUsername: string;
+		};
+
+		const user = req.session.tachi?.user;
+
+		/* istanbul ignore next */
+		if (!user) {
+			logger.severe(
+				`IP ${req.ip} got to /change-username without a user, but passed RequireSelfRequest?`
+			);
+
+			// this should be a 500, but lie to them.
+			return res.status(403).json({
+				success: false,
+				description: `You are not authorised to perform this action.`,
+			});
+		}
+
+		const privateInfo = await db["user-private-information"].findOne({
+			userID: user.id,
+		});
+
+		/* istanbul ignore next */
+		if (!privateInfo) {
+			logger.severe(`User ${FormatUserDoc(user)} has no private information?`, { user });
+			return res.status(500).json({
+				success: false,
+				description: `An internal server error has occured.`,
+			});
+		}
+
+		const isPasswordValid = await PasswordCompare(body["!password"], privateInfo.password);
+
+		if (!isPasswordValid) {
+			return res.status(401).json({
+				success: false,
+				description: `Invalid password.`,
+			});
+		}
+
+		const existingUser = await GetUserCaseInsensitive(body.newUsername);
+
+		if (existingUser) {
+			logger.verbose(`Invalid username ${body.newUsername}, already in use.`);
+			return res.status(409).json({
+				success: false,
+				description: "This username is already in use.",
+			});
+		}
+
+		const canChangeUsername = await CanChangeUsername(user.id);
+
+		if (!canChangeUsername) {
+			return res.status(403).json({
+				success: false,
+				description: "You can only change your username every 6 months.",
+			});
+		}
+
+		await db.users.update(
+			{
+				id: user.id,
+			},
+			{
+				$set: {
+					username: body.newUsername,
+					usernameLowercase: body.newUsername.toLowerCase(),
+				},
+			}
+		);
+
+		await db["user-name-changes"].insert({
+			userID: user.id,
+			username: body.newUsername,
+			timestamp: Date.now(),
+			previousUsername: user.username,
+		});
+
+		if (req.session.tachi?.user) {
+			req.session.tachi.user = {
+				...user,
+				username: body.newUsername,
+			};
+			req.session.save();
+		}
+
+		return res.status(200).json({
+			success: true,
+			description: `Updated your username!`,
+			body: {},
+		});
+	}
+);
+
+/**
+ * Get the last time the user changed their username,
+ * and whether they can change their username again.
+ *
+ * @name GET /api/v1/users/:userID/last-username-change
+ */
+router.get("/last-username-change", async (req, res) => {
+	const user = GetUser(req);
+
+	const nextAvailableChange = await GetNextAvailableUsernameChange(user.id);
+
+	const canChange = await CanChangeUsername(user.id);
+
+	let body;
+
+	if (canChange) {
+		body = {
+			canChange: true,
+		};
+	} else {
+		body = {
+			canChange: false,
+			nextAvailableChange,
+		};
+	}
+
+	return res.status(200).json({
+		success: true,
+		description: `Next available username change.`,
+		body,
+	});
+});
 /**
  * Get the recent import types this user has used.
  *

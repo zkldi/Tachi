@@ -639,7 +639,7 @@ function ServicesPage({ reqUser }: { reqUser: UserDocument }) {
 				<Divider />
 			</Col>
 			<Col xs={12}>
-				<div className="btn-group">
+				<div className="btn-group d-flex overflow-x-auto scrollbar-hide whitespace-nowrap">
 					<SelectLinkButton to={`${baseUrl}/fervidex`}>Fervidex</SelectLinkButton>
 					<SelectLinkButton to={`${baseUrl}/cg-gan`}>CG GAN</SelectLinkButton>
 					<SelectLinkButton to={`${baseUrl}/cg-nag`}>CG NAG</SelectLinkButton>

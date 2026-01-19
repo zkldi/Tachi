@@ -99,7 +99,13 @@ async function GenericUpsert<T extends Record<string, any>>(
 				// @ts-expect-error Actually, T is assignable to OptionalId<T>.
 				insertOne: { document },
 			});
-		} else if (update && fjsh.hash(document, "sha256") !== fjsh.hash(exists, "sha256")) {
+		} else if (update) {
+			const changed = fjsh.hash(document, "sha256") !== fjsh.hash(exists, "sha256");
+
+			if (!changed) {
+				continue;
+			}
+
 			logger.verbose(`Updating ${document[field]}`);
 
 			updateOps.push({
@@ -112,7 +118,27 @@ async function GenericUpsert<T extends Record<string, any>>(
 				},
 			});
 
-			changedFields.push(document[field]);
+			// Update all changed documents, but only record a subset of it as "actually changed"
+			// to lighten the load of recalcs.
+			let shouldMarkAsChanged: boolean = changed;
+
+			if (collection.name.startsWith("charts-")) {
+				// Do not count charts that only have their `versions` array updated as changed.
+				// This is for the benefit of games with regular new versions (e.g. maimai DX/CHUNITHM
+				// has a new version every 6 months) and need new versions added to the array for tables
+				// and folders, but doesn't need a recalc because the `levelNum` (a.k.a. internal level)
+				// has not changed.
+				//
+				// Currently, there should be no games depending on the versions array for metric calculation
+				// (DDR uses song.data.flareCategory instead).
+				shouldMarkAsChanged =
+					fjsh.hash({ ...document, versions: [] }, "sha256") !==
+					fjsh.hash({ ...exists, versions: [] }, "sha256");
+			}
+
+			if (shouldMarkAsChanged) {
+				changedFields.push(document[field]);
+			}
 		}
 	}
 

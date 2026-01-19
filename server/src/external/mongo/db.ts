@@ -49,6 +49,7 @@ import type {
 	CGCardInfo,
 	GPTStrings,
 	MytCardInfo,
+	UserNameChangeDocument,
 } from "tachi-common";
 import type { MigrationDocument, PrivateUserInfoDocument } from "utils/types";
 
@@ -212,6 +213,7 @@ const db = {
 	migrations: monkDB.get<MigrationDocument>("migrations"),
 	notifications: monkDB.get<NotificationDocument>("notifications"),
 	"import-trackers": monkDB.get<ImportTrackerDocument>("import-trackers"),
+	"user-name-changes": monkDB.get<UserNameChangeDocument>("user-name-changes"),
 };
 
 export type StaticDatabases = Exclude<

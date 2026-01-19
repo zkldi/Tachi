@@ -29,7 +29,7 @@ export default function ITGHookPage() {
 			<ol className="instructions-list">
 				<li>
 					Download the latest version of <code>Tachi.lua</code>{" "}
-					<ExternalLink href="https://github.com/zkrising/Simply-Love-Tachi-Module">
+					<ExternalLink href="https://github.com/zkldi/Simply-Love-Tachi-Module">
 						here
 					</ExternalLink>
 					.

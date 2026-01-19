@@ -241,4 +241,38 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		url: "https://egret9.github.io/Scramble/",
 		colour: COLOUR_SET.vibrantOrange,
 	},
+	{
+		name: "Supernova",
+		asciiPrefix: "supernova",
+		url: "https://stellabms.xyz/sn/table.html",
+		playtype: "7K",
+		prefix: "sn",
+		description:
+			"Supernova, Stellaverse's alternative table for Insane1-esque charts. Follows the Stella table in difficulty.",
+	},
+	{
+		name: "Solar",
+		asciiPrefix: "solar",
+		url: "https://stellabms.xyz/so/table.html",
+		playtype: "7K",
+		prefix: "so",
+		description:
+			"Solar, Stellaverse's alternative table for Insane1-esque charts. Follows the Satellite table in difficulty.",
+	},
+	{
+		name: "Code Stream (st)",
+		asciiPrefix: "csst",
+		url: "https://air-afother.github.io/chordstream-table-split/chordstreamST.html",
+		playtype: "7K",
+		prefix: "重発狂",
+		description: "16th Chordstream table, st0+ difficulty",
+	},
+	{
+		name: "Code Stream (sl)",
+		asciiPrefix: "cssl",
+		url: "https://air-afother.github.io/chordstream-table-split/chordstream.html",
+		playtype: "7K",
+		prefix: "乱打",
+		description: "16th Chordstream table, sl0-sl12 difficulty",
+	},
 ];

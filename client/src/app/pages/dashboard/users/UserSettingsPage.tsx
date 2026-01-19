@@ -1,6 +1,7 @@
 import { APIFetchV1, ToAPIURL } from "util/api";
 import { DelayedPageReload, FetchJSONBody, UppercaseFirst } from "util/misc";
 import { Themes, getStoredTheme, mediaQueryPrefers, setTheme } from "util/themeUtils";
+import { ONE_DAY } from "util/constants/time";
 import useSetSubheader from "components/layout/header/useSetSubheader";
 import Card from "components/layout/page/Card";
 import ProfilePicture from "components/user/ProfilePicture";
@@ -10,15 +11,16 @@ import Muted from "components/util/Muted";
 import SelectButton from "components/util/SelectButton";
 import { UserSettingsContext } from "context/UserSettingsContext";
 import { useFormik } from "formik";
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Stack from "react-bootstrap/Stack";
-import { UserDocument, UserSettingsDocument } from "tachi-common";
+import { integer, UserDocument, UserSettingsDocument } from "tachi-common";
 import toast from "react-hot-toast";
 import { SetState } from "types/react";
+import useApiQuery from "components/util/query/useApiQuery";
 
 interface Props {
 	reqUser: UserDocument;
@@ -97,36 +99,34 @@ export default function UserSettingsDocumentPage({ reqUser }: Props) {
 }
 
 export function AccountSettings({ reqUser }: { reqUser: UserDocument }) {
-	const formikPassword = useFormik({
-		initialValues: {
-			"!oldPassword": "",
-			"!password": "",
-			confPass: "",
-		},
-		onSubmit: async (values) => {
-			const r = await APIFetchV1<UserSettingsDocument>(
-				`/users/${reqUser.id}/change-password`,
-				{
-					method: "POST",
-					...FetchJSONBody({
-						"!oldPassword": values["!oldPassword"],
-						"!password": values["!password"],
-					}),
-				},
-				true,
-				true
-			);
+	const [page, setPage] = useState<"email" | "password" | "username">("email");
 
-			if (r.success) {
-				formikPassword.setValues({
-					"!oldPassword": "",
-					"!password": "",
-					confPass: "",
-				});
-			}
-		},
-	});
+	return (
+		<>
+			<div className="btn-group d-flex justify-content-center">
+				<SelectButton value={page} setValue={setPage} id="email">
+					<Icon type="envelope" /> Email
+				</SelectButton>
+				<SelectButton value={page} setValue={setPage} id="password">
+					<Icon type="lock" /> Password
+				</SelectButton>
+				<SelectButton value={page} setValue={setPage} id="username">
+					<Icon type="user" /> Username
+				</SelectButton>
+			</div>
+			<Divider />
+			{page === "email" ? (
+				<ChangeEmailForm reqUser={reqUser} />
+			) : page === "password" ? (
+				<ChangePasswordForm reqUser={reqUser} />
+			) : (
+				<ChangeUsernameForm reqUser={reqUser} />
+			)}
+		</>
+	);
+}
 
+function ChangeEmailForm({ reqUser }: { reqUser: UserDocument }) {
 	const formikEmail = useFormik({
 		initialValues: {
 			"!password": "",
@@ -158,112 +158,284 @@ export function AccountSettings({ reqUser }: { reqUser: UserDocument }) {
 	});
 
 	return (
+		<Form onSubmit={formikEmail.handleSubmit} className="d-flex flex-column gap-4">
+			<Form.Group>
+				<Form.Label>Password</Form.Label>
+				<Form.Control
+					type="password"
+					id="!password"
+					value={formikEmail.values["!password"]}
+					placeholder="Your Current Password"
+					onChange={formikEmail.handleChange}
+				/>
+				{formikEmail.values["!password"].length < 8 && (
+					<Form.Text className="text-warning">
+						Passwords have to be at least 8 characters long.
+					</Form.Text>
+				)}
+			</Form.Group>
+			<Form.Group>
+				<Form.Label>New Email</Form.Label>
+				<Form.Control
+					type="email"
+					id="email"
+					value={formikEmail.values.email}
+					placeholder="New Email"
+					onChange={formikEmail.handleChange}
+				/>
+			</Form.Group>
+			<Form.Group>
+				<Form.Label>Confirm New Email</Form.Label>
+				<Form.Control
+					type="email"
+					id="confEmail"
+					value={formikEmail.values.confEmail}
+					placeholder="New Email"
+					onChange={formikEmail.handleChange}
+				/>
+			</Form.Group>
+			{!(formikEmail.values.email === formikEmail.values.confEmail) && (
+				<Form.Text className="text-danger">Emails don't match!</Form.Text>
+			)}
+			<Button
+				className="mt-8"
+				variant="danger"
+				type="submit"
+				disabled={
+					!(
+						formikEmail.values.email === formikEmail.values.confEmail &&
+						formikEmail.values["!password"].length >= 8
+					)
+				}
+			>
+				Change Email
+			</Button>
+		</Form>
+	);
+}
+
+function ChangePasswordForm({ reqUser }: { reqUser: UserDocument }) {
+	const formikPassword = useFormik({
+		initialValues: {
+			"!oldPassword": "",
+			"!password": "",
+			confPass: "",
+		},
+		onSubmit: async (values) => {
+			const r = await APIFetchV1<UserSettingsDocument>(
+				`/users/${reqUser.id}/change-password`,
+				{
+					method: "POST",
+					...FetchJSONBody({
+						"!oldPassword": values["!oldPassword"],
+						"!password": values["!password"],
+					}),
+				},
+				true,
+				true
+			);
+
+			if (r.success) {
+				formikPassword.setValues({
+					"!oldPassword": "",
+					"!password": "",
+					confPass: "",
+				});
+			}
+		},
+	});
+
+	return (
+		<Form onSubmit={formikPassword.handleSubmit} className="d-flex flex-column gap-4">
+			<Form.Group>
+				<Form.Label>Old Password</Form.Label>
+				<Form.Control
+					type="password"
+					id="!oldPassword"
+					value={formikPassword.values["!oldPassword"]}
+					placeholder="Your Current Password"
+					onChange={formikPassword.handleChange}
+				/>
+			</Form.Group>
+			<Form.Group>
+				<Form.Label>New Password</Form.Label>
+				<Form.Control
+					type="password"
+					id="!password"
+					value={formikPassword.values["!password"]}
+					placeholder="New Password"
+					onChange={formikPassword.handleChange}
+				/>
+				{formikPassword.values["!password"].length < 8 && (
+					<Form.Text className="text-warning">
+						Passwords have to be at least 8 characters long.
+					</Form.Text>
+				)}
+			</Form.Group>
+			<Form.Group>
+				<Form.Label>Confirm New Password</Form.Label>
+				<Form.Control
+					type="password"
+					id="confPass"
+					value={formikPassword.values.confPass}
+					placeholder="New Password"
+					onChange={formikPassword.handleChange}
+				/>
+			</Form.Group>
+			{!(formikPassword.values["!password"] === formikPassword.values.confPass) && (
+				<Form.Text className="text-danger">Passwords don't match!</Form.Text>
+			)}
+			<Button
+				className="mt-8"
+				variant="danger"
+				type="submit"
+				disabled={
+					!(
+						formikPassword.values["!password"] === formikPassword.values.confPass &&
+						formikPassword.values.confPass.length >= 8
+					)
+				}
+			>
+				Change Password
+			</Button>
+		</Form>
+	);
+}
+
+function ChangeUsernameForm({ reqUser }: { reqUser: UserDocument }) {
+	const lastUsernameChange = useApiQuery<
+		{ canChange: true } | { canChange: false; nextAvailableChange: integer | null }
+	>(`/users/${reqUser.id}/last-username-change`);
+
+	const nameChangeFormik = useFormik({
+		initialValues: {
+			"!password": "",
+			newUsername: "",
+		},
+		onSubmit: async (values) => {
+			const r = await APIFetchV1(
+				`/users/${reqUser.id}/change-username`,
+				{
+					method: "POST",
+					...FetchJSONBody({
+						"!password": values["!password"],
+						newUsername: values.newUsername,
+					}),
+				},
+				true,
+				true
+			);
+
+			if (r.success) {
+				nameChangeFormik.setValues({
+					"!password": "",
+					newUsername: "",
+				});
+
+				setTimeout(() => {
+					window.location.href = "/u/me";
+				}, 300);
+			}
+		},
+	});
+
+	const [usernameState, setUsernameState] = useState({
+		isTaken: true,
+		isValid: false,
+	});
+	const [lastTimeout, setLastTimeout] = useState<null | number>(null);
+
+	useEffect(() => {
+		if (lastTimeout !== null) {
+			clearTimeout(lastTimeout);
+		}
+
+		const isValid = /^[a-zA-Z_-][a-zA-Z0-9_-]{2,20}$/u.test(
+			nameChangeFormik.values.newUsername
+		);
+
+		setUsernameState((state) => ({
+			...state,
+			isValid,
+		}));
+
+		if (!isValid) {
+			return;
+		}
+
+		const handle = window.setTimeout(async () => {
+			const usernameQuery = await APIFetchV1<UserDocument | null>(
+				`/users/${nameChangeFormik.values.newUsername}`
+			);
+
+			setUsernameState((state) => ({
+				...state,
+				isTaken: usernameQuery.statusCode === 200,
+			}));
+		}, 600);
+
+		setLastTimeout(handle);
+	}, [nameChangeFormik.values.newUsername]);
+
+	return (
 		<>
-			<Form onSubmit={formikEmail.handleSubmit} className="d-flex flex-column gap-4">
+			<Form onSubmit={nameChangeFormik.handleSubmit} className="d-flex flex-column gap-4">
 				<Form.Group>
 					<Form.Label>Password</Form.Label>
 					<Form.Control
 						type="password"
 						id="!password"
-						value={formikEmail.values["!password"]}
+						value={nameChangeFormik.values["!password"]}
 						placeholder="Your Current Password"
-						onChange={formikEmail.handleChange}
+						onChange={nameChangeFormik.handleChange}
 					/>
-					{formikEmail.values["!password"].length < 8 && (
-						<Form.Text className="text-warning">
-							Passwords have to be at least 8 characters long.
-						</Form.Text>
+				</Form.Group>
+				<Form.Group>
+					<Form.Label>New Username</Form.Label>
+					<Form.Control
+						className="mb-4"
+						type="text"
+						id="newUsername"
+						value={nameChangeFormik.values.newUsername}
+						placeholder="New Username"
+						onChange={nameChangeFormik.handleChange}
+					/>
+					{nameChangeFormik.values.newUsername.length > 3 && (
+						<div className="d-flex flex-column gap-2">
+							{usernameState.isValid && usernameState.isTaken && (
+								<Alert variant="danger">Username is already in use.</Alert>
+							)}
+
+							{!usernameState.isValid && (
+								<Alert variant="danger">
+									Username is invalid. Must be 3-20 characters long. Must start
+									with a letter. Must only contain letters, numbers, and
+									underscores.
+								</Alert>
+							)}
+						</div>
 					)}
 				</Form.Group>
-				<Form.Group>
-					<Form.Label>New Email</Form.Label>
-					<Form.Control
-						type="email"
-						id="email"
-						value={formikEmail.values.email}
-						placeholder="New Email"
-						onChange={formikEmail.handleChange}
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Confirm New Email</Form.Label>
-					<Form.Control
-						type="email"
-						id="confEmail"
-						value={formikEmail.values.confEmail}
-						placeholder="New Email"
-						onChange={formikEmail.handleChange}
-					/>
-				</Form.Group>
-				{!(formikEmail.values.email === formikEmail.values.confEmail) && (
-					<Form.Text className="text-danger">Emails don't match!</Form.Text>
+				{!lastUsernameChange.data?.canChange && (
+					<Alert variant="danger">
+						You can only change your username every 6 months. Your next username change
+						will be available on{" "}
+						{new Date(
+							lastUsernameChange.data?.nextAvailableChange ?? 0
+						).toLocaleDateString()}
+						.
+					</Alert>
 				)}
 				<Button
 					className="mt-8"
 					variant="danger"
 					type="submit"
 					disabled={
-						!(
-							formikEmail.values.email === formikEmail.values.confEmail &&
-							formikEmail.values["!password"].length >= 8
-						)
+						nameChangeFormik.values["!password"].length < 8 ||
+						!lastUsernameChange.data?.canChange
 					}
 				>
-					Change Email
-				</Button>
-			</Form>
-			<Divider />
-			<Form onSubmit={formikPassword.handleSubmit} className="d-flex flex-column gap-4">
-				<Form.Group>
-					<Form.Label>Old Password</Form.Label>
-					<Form.Control
-						type="password"
-						id="!oldPassword"
-						value={formikPassword.values["!oldPassword"]}
-						placeholder="Your Current Password"
-						onChange={formikPassword.handleChange}
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>New Password</Form.Label>
-					<Form.Control
-						type="password"
-						id="!password"
-						value={formikPassword.values["!password"]}
-						placeholder="New Password"
-						onChange={formikPassword.handleChange}
-					/>
-					{formikPassword.values["!password"].length < 8 && (
-						<Form.Text className="text-warning">
-							Passwords have to be at least 8 characters long.
-						</Form.Text>
-					)}
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Confirm New Password</Form.Label>
-					<Form.Control
-						type="password"
-						id="confPass"
-						value={formikPassword.values.confPass}
-						placeholder="New Password"
-						onChange={formikPassword.handleChange}
-					/>
-				</Form.Group>
-				{!(formikPassword.values["!password"] === formikPassword.values.confPass) && (
-					<Form.Text className="text-danger">Passwords don't match!</Form.Text>
-				)}
-				<Button
-					className="mt-8"
-					variant="danger"
-					type="submit"
-					disabled={
-						!(
-							formikPassword.values["!password"] === formikPassword.values.confPass &&
-							formikPassword.values.confPass.length >= 8
-						)
-					}
-				>
-					Change Password
+					Change Username
 				</Button>
 			</Form>
 		</>

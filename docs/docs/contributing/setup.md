@@ -2,7 +2,7 @@
 
 Before you can contribute to Tachi, it'll help to have a functional setup on your machine.
 
-You don't *necessarily* need to have a working install to contribute - you could easily
+You don't _necessarily_ need to have a working install to contribute - you could easily
 make documentation contributions without having anything running on your machine - but
 it's extremely helpful to be able to run Tachi's things while working on them.
 
@@ -15,7 +15,7 @@ We'll need a code editor so we can actually edit Tachi's code.
 Please install [VSCode](https://code.visualstudio.com).
 We'll use this as our editor because of it's excellent support for dev containers.
 
-### Terminal 
+### Terminal
 
 You'll also need a terminal to run commands in. For Linux and Mac users, you can just open
 a Terminal app.
@@ -24,79 +24,76 @@ However, for Windows users we recommend installing the [Windows Terminal](https:
 
 With a terminal open you can proceed to the next steps!
 
-### Git 
+### Git
 
 You'll need `git` to clone Tachi to your machine.
 
 === "Windows"
-	Install git [from the official website](https://git-scm.com/downloads).
+Install git [from the official website](https://git-scm.com/downloads).
 
 === "Ubuntu, Debian"
-	Open a terminal and type this:
-	
-	```sh
+Open a terminal and type this:
+`sh
 	sudo apt install git
-	```
+	`
 
 === "Arch, Manjaro"
-	Open a terminal and type this:
+Open a terminal and type this:
 
-	```sh
-	sudo pacman -S git
-	```
+    ```sh
+    sudo pacman -S git
+    ```
 
 === "MacOS"
-	Open a terminal and type this:
+Open a terminal and type this:
 
-	```sh
-	brew install git
-	```
+    ```sh
+    brew install git
+    ```
 
 ## 1. Getting Docker.
 
 To set everything else up for local development, we'll use [Docker](https://docker.com).
 
 === "Windows, WSL Ubuntu"
-	You should install [Docker Desktop](https://docs.docker.com/desktop/) instead.
-	Docker doesn't work well inside WSL.
+You should install [Docker Desktop](https://docs.docker.com/desktop/) instead.
+Docker doesn't work well inside WSL.
 
 === "Debian"
-	[Please use the official Docker install guide.](https://docs.docker.com/engine/install/debian/)
+[Please use the official Docker install guide.](https://docs.docker.com/engine/install/debian/)
 
 === "Ubuntu"
-	[Please use the official Docker install guide.](https://docs.docker.com/engine/install/ubuntu/)
+[Please use the official Docker install guide.](https://docs.docker.com/engine/install/ubuntu/)
 
 === "Arch, Manjaro"
-	Open a terminal and type this:
+Open a terminal and type this:
 
-	```sh
-	sudo pacman -S docker docker-compose
-	```
+    ```sh
+    sudo pacman -S docker docker-compose
+    ```
 
 === "MacOS"
-	Open a terminal and type this:
+Open a terminal and type this:
 
-	```sh
-	brew install docker docker-compose
-	```
+    ```sh
+    brew install docker docker-compose
+    ```
 
 !!! info
-	Docker is like a VM[^1]. It runs an entire Linux box to contain your software in, and generally sidesteps the whole "works on some machines" problem.
+Docker is like a VM[^1]. It runs an entire Linux box to contain your software in, and generally sidesteps the whole "works on some machines" problem.
 
 ## 2. Fork and pull the repo.
 
 Since you can't just commit straight to someone else's codebase (that would be a massive security issue), you need to make a fork of Tachi - One owned by you!
 
-Go to [the Tachi repository](https://github.com/zkrising/Tachi) and click the Fork button in the top right (Make sure you're signed in).
+Go to [the Tachi repository](https://github.com/zkldi/Tachi) and click the Fork button in the top right (Make sure you're signed in).
 
 Now, back to the terminal:
 
 !!! tip
-	It's good organisation to make a folder on your PC for codestuffs.
-	
-	If you do that, make sure you open the terminal in that folder,
-	so your Tachi repo will save there!
-
+It's good organisation to make a folder on your PC for codestuffs.
+If you do that, make sure you open the terminal in that folder,
+so your Tachi repo will save there!
 
 Open a terminal and type the following commands:
 
@@ -115,10 +112,10 @@ code Tachi
 
 Your personal machine could be running anything. Windows, Mac, Linux, whatever!
 Tachi expects to be running on Linux and with specific versions of certain software running.
-It's a huge pain to ask *you* to install that software and manage it yourself.
+It's a huge pain to ask _you_ to install that software and manage it yourself.
 Plus, subtle differences between Windows and Linux cause problems _all_ the time.
 
-As such, we work *inside* a docker container. This is sort of like having a Linux VM with everything set up perfectly for you.
+As such, we work _inside_ a docker container. This is sort of like having a Linux VM with everything set up perfectly for you.
 I've spent quite a bit of time making this container user friendly, and it has so many nice things pre-installed for you.
 
 Perhaps more importantly, the container has everything needed to run Tachi perfectly. Neat!
@@ -130,17 +127,17 @@ With `VSCode` open to Tachi, install the [Dev Container](https://marketplace.vis
 Then, hit `Ctrl+Shift+P` to view all commands, and run `Dev Containers: Rebuild and Reopen in Container`.
 
 !!! warning
-	First time setup can take a very long time.
-	This depends on the performance of your machine, and whether you're using Windows or not.
+First time setup can take a very long time.
+This depends on the performance of your machine, and whether you're using Windows or not.
 
-	You can click `view log` in the bottom right to see the progress of making the container.
+    You can click `view log` in the bottom right to see the progress of making the container.
 
 ### Working in the container
 
 **You want to do ALL your work inside the container.**
 Doing thing outside of the container will cause issues or crashes.
 
-There is a subtle confusing trick here. We now want to use a terminal *inside* our container.
+There is a subtle confusing trick here. We now want to use a terminal _inside_ our container.
 **Do not use a terminal outside of VSCode now.**
 
 To open a terminal inside `VSCode`, use `Ctrl+J` to open the bottom panel.
@@ -165,15 +162,15 @@ The frontend will be running on `http://127.0.0.1:3000`.
 The backend will be running on `https://127.0.0.1:8080`.
 
 !!! danger
-	The backend **always runs on HTTPS** in local development. This is because browsers
-	tend to *really* hate HTTP mode nowadays, and it causes so many problems.
+The backend **always runs on HTTPS** in local development. This is because browsers
+tend to _really_ hate HTTP mode nowadays, and it causes so many problems.
 
-	You **need** to navigate to your running instance of the backend in a browser, and tell
-	the browser that you trust these certificates. Otherwise, all client requests to
-	the server will silently be chomped by the browser.
+    You **need** to navigate to your running instance of the backend in a browser, and tell
+    the browser that you trust these certificates. Otherwise, all client requests to
+    the server will silently be chomped by the browser.
 
 !!! tip
-	Type `just` in the terminal to see other available commands.
+Type `just` in the terminal to see other available commands.
 
 Navigate to http://127.0.0.1:3000 and check your Tachi instance!
 

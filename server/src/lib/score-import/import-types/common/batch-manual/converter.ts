@@ -27,12 +27,34 @@ import type {
 	BatchManualScore,
 	ChartDocument,
 	Difficulties,
-	ImportTypes,
 	SongDocument,
 	Versions,
 	GPTString,
 	ProvidedMetrics,
+	MatchTypeResolver,
+	MatchTypeResolverWithDifficulty,
 } from "tachi-common";
+
+// only public because used in tests; ts has no way of doing that
+// lol
+export function BatchManualScoreToResolver(
+	data: BatchManualScore,
+	context: BatchManualContext
+): MatchTypeResolver {
+	// already validated by prudence
+	const resolver: MatchTypeResolver = {
+		// @ts-expect-error already validated by prudence
+		difficulty: data.difficulty,
+		identifier: data.identifier,
+		matchType: data.matchType,
+		artist: data.artist,
+		version: context.version,
+		game: context.game,
+		playtype: context.playtype,
+	};
+
+	return resolver;
+}
 
 /**
  * Creates a ConverterFn for the BatchManualScore format. This curries
@@ -48,7 +70,20 @@ export const ConverterBatchManual: ConverterFunction<BatchManualScore, BatchManu
 ) => {
 	const { game, playtype } = context;
 
-	const { song, chart } = await ResolveMatchTypeToTachiData(data, context, importType, logger);
+	const resolver = BatchManualScoreToResolver(data, context);
+
+	const got = await ResolveSongAndChart(resolver, logger);
+
+	if (got === null) {
+		throw new SongOrChartNotFoundFailure(
+			`Cannot find chart ${resolver.matchType}:${resolver.identifier}.`,
+			importType,
+			data,
+			context
+		);
+	}
+
+	const { song, chart } = got;
 
 	let service = context.service;
 
@@ -95,21 +130,19 @@ export const ConverterBatchManual: ConverterFunction<BatchManualScore, BatchManu
 	};
 };
 
-export async function ResolveMatchTypeToTachiData(
-	data: BatchManualScore,
-	context: BatchManualContext,
-	importType: ImportTypes,
+export async function ResolveSongAndChart(
+	resolver: MatchTypeResolver,
 	logger: KtLogger
-): Promise<{ song: SongDocument; chart: ChartDocument }> {
-	const { game, playtype } = context;
+): Promise<{ song: SongDocument; chart: ChartDocument } | null> {
+	const { game, playtype } = resolver;
 
 	const config = GetGamePTConfig(game, playtype);
 
-	if (!config.supportedMatchTypes.includes(data.matchType)) {
+	if (!config.supportedMatchTypes.includes(resolver.matchType)) {
 		// special, more helpful error message
-		if (game === "sdvx" && data.matchType === "inGameID") {
+		if (game === "sdvx" && resolver.matchType === "inGameID") {
 			throw new InvalidScoreFailure(
-				`Cannot use matchType ${data.matchType} for ${FormatGame(
+				`Cannot use matchType ${resolver.matchType} for ${FormatGame(
 					game,
 					playtype
 				)}. Use 'sdvxInGameID' instead.`
@@ -117,29 +150,24 @@ export async function ResolveMatchTypeToTachiData(
 		}
 
 		throw new InvalidScoreFailure(
-			`Cannot use matchType ${data.matchType} for ${FormatGame(
+			`Cannot use matchType ${resolver.matchType} for ${FormatGame(
 				game,
 				playtype
 			)}. Expected any of ${config.supportedMatchTypes.join(", ")}.`
 		);
 	}
 
-	switch (data.matchType) {
+	switch (resolver.matchType) {
 		case "bmsChartHash": {
-			const chart = await FindBMSChartOnHash(data.identifier);
+			const chart = await FindBMSChartOnHash(resolver.identifier);
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart for hash ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
-			if (chart.playtype !== context.playtype) {
+			if (chart.playtype !== playtype) {
 				throw new InvalidScoreFailure(
-					`Chart ${chart.chartID}'s playtype was ${chart.playtype}, but this was not equal to the import playtype of ${context.playtype}.`
+					`Chart ${chart.chartID}'s playtype was ${chart.playtype}, but this was not equal to the import playtype of ${playtype}.`
 				);
 			}
 
@@ -156,15 +184,10 @@ export async function ResolveMatchTypeToTachiData(
 		}
 
 		case "itgChartHash": {
-			const chart = await FindITGChartOnHash(data.identifier);
+			const chart = await FindITGChartOnHash(resolver.identifier);
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart for itgChartHash ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await FindSongOnID(game, chart.songID);
@@ -186,16 +209,11 @@ export async function ResolveMatchTypeToTachiData(
 
 			const chart = await db.charts.popn.findOne({
 				playtype,
-				"data.hashSHA256": data.identifier,
+				"data.hashSHA256": resolver.identifier,
 			});
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart for popnChartHash ${data.identifier} (${context.playtype}).`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await FindSongOnID(game, chart.songID);
@@ -212,39 +230,41 @@ export async function ResolveMatchTypeToTachiData(
 
 		case "tachiSongID": {
 			const songID = AssertStrAsPositiveInt(
-				data.identifier,
+				resolver.identifier,
 				"Invalid songID - must be a stringified positive integer."
 			);
 
 			const song = await FindSongOnID(game, songID);
 
 			if (!song) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find song with songID ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
-			const chart = await ResolveChartFromSong(song, data, context, importType);
+			const chart = await ResolveChartFromSong(song, resolver);
+
+			if (!chart) {
+				return null;
+			}
 
 			return { song, chart };
 		}
 
 		case "songTitle": {
-			const song = await FindSongOnTitleInsensitive(game, data.identifier, data.artist);
+			const song = await FindSongOnTitleInsensitive(
+				game,
+				resolver.identifier,
+				resolver.artist
+			);
 
 			if (!song) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find song with title ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
-			const chart = await ResolveChartFromSong(song, data, context, importType);
+			const chart = await ResolveChartFromSong(song, resolver);
+
+			if (!chart) {
+				return null;
+			}
 
 			return { song, chart };
 		}
@@ -252,7 +272,7 @@ export async function ResolveMatchTypeToTachiData(
 		case "sdvxInGameID": {
 			let chart: ChartDocument | null;
 
-			const identifier = Number(data.identifier);
+			const identifier = Number(resolver.identifier);
 
 			const config = GetGamePTConfig("sdvx", "Single");
 
@@ -268,22 +288,22 @@ export async function ResolveMatchTypeToTachiData(
 			}
 
 			if (
-				!config.difficulties.order.includes(data.difficulty) &&
-				data.difficulty !== "ANY_INF"
+				!config.difficulties.order.includes(resolver.difficulty) &&
+				resolver.difficulty !== "ANY_INF"
 			) {
 				throw new InvalidScoreFailure(
 					`Invalid difficulty '${
-						data.difficulty
+						resolver.difficulty
 					}', Expected any of ${config.difficulties.order.join(", ")} or ANY_INF`
 				);
 			}
 
-			const diff = data.difficulty as Difficulties["sdvx:Single"] | "ANY_INF";
+			const diff = resolver.difficulty as Difficulties["sdvx:Single"] | "ANY_INF";
 
-			if (context.version) {
-				if (!Object.keys(config.versions).includes(context.version)) {
+			if (resolver.version) {
+				if (!Object.keys(config.versions).includes(resolver.version)) {
 					throw new InvalidScoreFailure(
-						`Unsupported version ${context.version}. Expected any of ${Object.keys(
+						`Unsupported version ${resolver.version}. Expected any of ${Object.keys(
 							config.versions
 						).join(", ")}.`
 					);
@@ -292,19 +312,14 @@ export async function ResolveMatchTypeToTachiData(
 				chart = await FindSDVXChartOnInGameIDVersion(
 					identifier,
 					diff,
-					context.version as Versions["sdvx:Single"]
+					resolver.version as Versions["sdvx:Single"]
 				);
 			} else {
 				chart = await FindSDVXChartOnInGameID(identifier, diff);
 			}
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find SDVX chart with inGameID ${identifier}, difficulty ${diff} and version ${context.version}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await db.anySongs[game].findOne({ id: chart.songID });
@@ -318,35 +333,30 @@ export async function ResolveMatchTypeToTachiData(
 		}
 
 		case "inGameID": {
-			const identifier = Number(data.identifier);
+			const identifier = Number(resolver.identifier);
 
-			const difficulty = AssertStrAsDifficulty(data.difficulty, game, context.playtype);
+			const difficulty = AssertStrAsDifficulty(resolver.difficulty, game, resolver.playtype);
 
-			let chart;
+			let chart: ChartDocument | null | undefined;
 
-			if (context.version) {
+			if (resolver.version) {
 				chart = await db.anyCharts[game].findOne({
 					"data.inGameID": identifier,
-					playtype: context.playtype,
+					playtype: resolver.playtype,
 					difficulty,
-					versions: context.version,
+					versions: resolver.version,
 				});
 			} else {
 				chart = await db.anyCharts[game].findOne({
 					"data.inGameID": identifier,
-					playtype: context.playtype,
+					playtype: resolver.playtype,
 					difficulty,
 					isPrimary: true,
 				});
 			}
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart for inGameID ${data.identifier} (${context.playtype}).`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await db.anySongs[game].findOne({ id: chart.songID });
@@ -360,33 +370,28 @@ export async function ResolveMatchTypeToTachiData(
 		}
 
 		case "inGameStrID": {
-			const difficulty = AssertStrAsDifficulty(data.difficulty, game, context.playtype);
+			const difficulty = AssertStrAsDifficulty(resolver.difficulty, game, resolver.playtype);
 
 			let chart;
 
-			if (context.version) {
+			if (resolver.version) {
 				chart = await db.anyCharts[game].findOne({
-					"data.inGameStrID": data.identifier,
-					playtype: context.playtype,
+					"data.inGameStrID": resolver.identifier,
+					playtype: resolver.playtype,
 					difficulty,
-					versions: context.version,
+					versions: resolver.version,
 				});
 			} else {
 				chart = await db.anyCharts[game].findOne({
-					"data.inGameStrID": data.identifier,
-					playtype: context.playtype,
+					"data.inGameStrID": resolver.identifier,
+					playtype: resolver.playtype,
 					difficulty,
 					isPrimary: true,
 				});
 			}
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart for inGameStrID ${data.identifier} (${context.playtype}).`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await db.anySongs[game].findOne({ id: chart.songID });
@@ -409,17 +414,12 @@ export async function ResolveMatchTypeToTachiData(
 			}
 
 			const chart = await db.charts.usc.findOne({
-				"data.hashSHA1": data.identifier,
+				"data.hashSHA1": resolver.identifier,
 				playtype,
 			});
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find chart with hash ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			const song = await db.anySongs[game].findOne({ id: chart.songID });
@@ -437,19 +437,14 @@ export async function ResolveMatchTypeToTachiData(
 				throw new InvalidScoreFailure(`ddrSongHash matchType can only be used on DDR.`);
 			}
 
-			const difficulty = AssertStrAsDifficulty(data.difficulty, game, context.playtype);
+			const difficulty = AssertStrAsDifficulty(resolver.difficulty, game, resolver.playtype);
 
 			const song = await db.anySongs.ddr.findOne({
-				"data.ddrSongHash": data.identifier,
+				"data.ddrSongHash": resolver.identifier,
 			});
 
 			if (!song) {
-				throw new SongOrChartNotFoundFailure(
-					`Cannot find song with ddrSongHash ${data.identifier}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			// check that a chart with the song's id exists
@@ -464,36 +459,31 @@ export async function ResolveMatchTypeToTachiData(
 
 			let chart;
 
-			if (context.version) {
+			if (resolver.version) {
 				chart = await db.anyCharts.ddr.findOne({
 					songID: song.id,
-					playtype: context.playtype,
+					playtype: resolver.playtype,
 					difficulty,
-					versions: context.version,
+					versions: resolver.version,
 				});
 			} else {
 				chart = await db.anyCharts.ddr.findOne({
 					songID: song.id,
-					playtype: context.playtype,
+					playtype: resolver.playtype,
 					difficulty,
 					isPrimary: true,
 				});
 			}
 
 			if (!chart) {
-				throw new SongOrChartNotFoundFailure(
-					`Found song with ddrSongHash ${data.identifier} but cannot find chart ${context.playtype} ${difficulty}.`,
-					importType,
-					data,
-					context
-				);
+				return null;
 			}
 
 			return { song, chart };
 		}
 
 		default: {
-			const { matchType } = data;
+			const { matchType } = resolver;
 
 			logger.error(
 				`Invalid matchType ${matchType} ended up in conversion - should have been rejected by prudence?`
@@ -507,41 +497,34 @@ export async function ResolveMatchTypeToTachiData(
 
 export async function ResolveChartFromSong(
 	song: SongDocument,
-	data: BatchManualScore,
-	context: BatchManualContext,
-	importType: ImportTypes
+	resolver: MatchTypeResolverWithDifficulty
 ) {
-	const game = context.game;
+	const game = resolver.game;
 
-	if (!data.difficulty) {
+	if (!resolver.difficulty) {
 		throw new InvalidScoreFailure(
 			`Missing 'difficulty' field, but was necessary for this lookup.`
 		);
 	}
 
-	const difficulty = AssertStrAsDifficulty(data.difficulty, game, context.playtype);
+	const difficulty = AssertStrAsDifficulty(resolver.difficulty, game, resolver.playtype);
 
 	let chart;
 
-	if (context.version) {
+	if (resolver.version) {
 		chart = await FindChartWithPTDFVersion(
 			game,
 			song.id,
-			context.playtype,
+			resolver.playtype,
 			difficulty,
-			context.version
+			resolver.version
 		);
 	} else {
-		chart = await FindChartWithPTDF(game, song.id, context.playtype, difficulty);
+		chart = await FindChartWithPTDF(game, song.id, resolver.playtype, difficulty);
 	}
 
 	if (!chart) {
-		throw new SongOrChartNotFoundFailure(
-			`Cannot find chart for ${song.title} (${context.playtype} ${difficulty})`,
-			importType,
-			data,
-			context
-		);
+		return null;
 	}
 
 	return chart;

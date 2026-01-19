@@ -5,6 +5,7 @@ import LR2orajaDBPage from "app/pages/dashboard/import/LR2orajaDBPage";
 import BeatorajaIRPage from "app/pages/dashboard/import/BeatorajaIRPage";
 import ChunitachiPage from "app/pages/dashboard/import/ChunitachiPage";
 import FervidexPage from "app/pages/dashboard/import/FervidexPage";
+import IIDXCGSiteImportPage from "app/pages/dashboard/import/IIDXCGSiteImportPage";
 import IIDXEamCSVPage from "app/pages/dashboard/import/IIDXEamCSVPage";
 import ImportPage from "app/pages/dashboard/import/ImportPage";
 import KsHookPage from "app/pages/dashboard/import/KsHookPage";
@@ -227,6 +228,10 @@ export default function ImportRoutes() {
 							</Route>
 							<Route exact path="/import/cg-gan-jubeat">
 								<CGIntegrationPage cgType="gan" game="jubeat" />
+							</Route>
+
+							<Route exact path="/import/kt-cg-iidx-importer">
+								<IIDXCGSiteImportPage />
 							</Route>
 
 							<Route exact path="/import/myt-chunithm">

@@ -78,7 +78,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: pnpm --filter tachi-client build
         env:
-          VITE_GIT_REPO: "GitHub:zkrising/Tachi"
+          VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_TCHIC_MODE: "boku"
           VITE_GOATCOUNTER: "https://tachi.goatcounter.com/count"
           VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
@@ -101,7 +101,7 @@ jobs:
           VITE_DISCORD: "https://discord.gg/NNgGJbpQUj"
           VITE_TCHIC_MODE: "kamai"
           VITE_CDN_URL: "https://cdn-kamai.tachi.ac"
-          VITE_GIT_REPO: "GitHub:zkrising/Tachi"
+          VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
           TACHI_NAME: "Kamaitachi"
           BUILD_OUT_DIR: /home/runner/kamai
@@ -126,7 +126,7 @@ jobs:
           VITE_SERVER_URL: "https://staging.tachi.ac"
           VITE_TCHIC_MODE: "omni"
           VITE_CDN_URL: "https://cdn-staging.tachi.ac"
-          VITE_GIT_REPO: "GitHub:zkrising/Tachi"
+          VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
           TACHI_NAME: "Tachi Staging"
           BUILD_OUT_DIR: /home/runner/staging

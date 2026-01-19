@@ -1,4 +1,5 @@
 import db from "external/mongo/db";
+import { ONE_DAY } from "lib/constants/time";
 import CreateLogCtx from "lib/logger/logger";
 import { GetGamePTConfig, UserAuthLevels } from "tachi-common";
 import type { FindOneResult } from "monk";
@@ -284,4 +285,25 @@ export async function GetAllUserRivals(userID: integer) {
 		.flat();
 
 	return rivals;
+}
+
+const USERNAME_CHANGE_COOLDOWN = ONE_DAY * 180; // 6 months
+
+export async function CanChangeUsername(userID: integer) {
+	const nextAvailableChange = await GetNextAvailableUsernameChange(userID);
+
+	return nextAvailableChange === null || nextAvailableChange < Date.now();
+}
+
+export async function GetNextAvailableUsernameChange(userID: integer): Promise<integer | null> {
+	const lastChange = await db["user-name-changes"].findOne(
+		{ userID },
+		{ sort: { timestamp: -1 } }
+	);
+
+	if (!lastChange) {
+		return null;
+	}
+
+	return lastChange.timestamp + USERNAME_CHANGE_COOLDOWN;
 }
