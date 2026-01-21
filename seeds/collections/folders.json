@@ -42237,6 +42237,19 @@
 	{
 		"data": {
 			"level": "1",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F9aa0e11529f8a29ce1c0996221421cdcd80759d164b55efdb71d870619396310",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "1",
 			"versions": "prismplus"
 		},
 		"folderID": "Fb109a12b19d82d0705ea8c34b68cde17fbbde9b3d8f4d44397db8fddae04bd99",
@@ -42375,6 +42388,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "Ffb6c75f70e2ab7fd0e987fefcd544ecd8e0c77c9bcbc4a394bdd733bf68aac02",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -42523,6 +42549,19 @@
 	{
 		"data": {
 			"level": "10+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F4e488b77e7db3bef4e59053374bf3871139f6ed1847710b4ef8c04d663a6f158",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10+",
 			"versions": "prismplus"
 		},
 		"folderID": "F73d4a5c9e83de8df2a0d47b22412b22b9243f41040233bda71f0bb5df5f4f189",
@@ -42661,6 +42700,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F6adb0c36526c2649848f6d83af026f485751f94ee22e42324b63178eed70b002",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -42809,6 +42861,19 @@
 	{
 		"data": {
 			"level": "11+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F38b1fbf5edc3e75382f5adfc36d7a29072eadffd012adeb3237f0d6ecf50d978",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11+",
 			"versions": "prismplus"
 		},
 		"folderID": "Ff537bee0faffc0c7d00e9af0208165ef4e62f6bac62640bc8152b3c2cb631494",
@@ -42947,6 +43012,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F5e67896944e52e4a96798b49993bf4d232d6a03d4f9e123329c20e5e687f436b",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -43095,6 +43173,19 @@
 	{
 		"data": {
 			"level": "12+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F077af3ae7afcdce6793960707ea47a15eb492d983c5e314690f981f2993d8cd7",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12+",
 			"versions": "prismplus"
 		},
 		"folderID": "Fe563867b324acf9e810547259c68ccc6e3df3a809a354e77918f2d213bfc7650",
@@ -43233,6 +43324,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "Fa95ef38065e99bad0a2e6232fa2f5b9fecdff1073a930f756552e7c279cfae36",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -43381,6 +43485,19 @@
 	{
 		"data": {
 			"level": "13+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "Fb5cc01099fa2f59a7df50b94b48292a5ca53fd4763bc4985c0cafe3701356a70",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13+",
 			"versions": "prismplus"
 		},
 		"folderID": "Fc80e67663bcdb4f8ef3a7d8d7c0375f21173073c220db484bf20e5e16dcaa4e7",
@@ -43519,6 +43636,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "Fd5b3879651f0a284a72404d2ef3dcf2402d47070b6b847d07ec3d528faf3558e",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -43667,6 +43797,19 @@
 	{
 		"data": {
 			"level": "14+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F61734b95a4e47b232efe80eec9e6f0761001e633cfded8dbb4c085ed68b2bd51",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14+",
 			"versions": "prismplus"
 		},
 		"folderID": "Fbf58a6059e1295bb482f6659aae715d395c6031583d053396eef9eb83d1c7507",
@@ -43805,6 +43948,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F84f27d8ddea716786fda8c2d18c913a3b95799d6c3718d117b9c125f1492a583",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -43953,6 +44109,19 @@
 	{
 		"data": {
 			"level": "2",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F28d88a2391bce45441cc490af7bb9812b5c3656254a9d65f8763ad84d170a540",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "2",
 			"versions": "prismplus"
 		},
 		"folderID": "F2741e3c4774abf3aea7515cd7eb0b7cbf115b03eae75a5ca18d3c2b766bd0e35",
@@ -44091,6 +44260,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "3",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F41b5ef0b4ae7882952e00895d2e7bb6d73c2456feeaa62597df228f4bd310383",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -44239,6 +44421,19 @@
 	{
 		"data": {
 			"level": "4",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F11f540be64140d5094c1b870d4a60e588a4f99a5b8e5a0195661b0ec5a168341",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "4",
 			"versions": "prismplus"
 		},
 		"folderID": "F0807b5b8eaf65521b23eeb2f94d922db4f24becd2b10f8baea751579bfa153d3",
@@ -44377,6 +44572,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "5",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "Fe371c4fbbffad1d20794a00d4a7026915f4603df5a6a9938f85699576d21db97",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -44525,6 +44733,19 @@
 	{
 		"data": {
 			"level": "6",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F373843cfe29b6c7bb44e34cb4d6ac0058e37f77014571e9e62147544a5d3f3b6",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "6",
 			"versions": "prismplus"
 		},
 		"folderID": "F11812fb1445cbf6854798699dd726a86d87ed682b12c722377b8fa2b1b2fb77e",
@@ -44663,6 +44884,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F46a6951f8d7103d1076c704f96ff917b965364a60cfad695515d670585249d8e",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -44811,6 +45045,19 @@
 	{
 		"data": {
 			"level": "7+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F2a707795fb8e74ed251c7a63647c478af179b7d84a9aadd9040be6240b3c544f",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7+",
 			"versions": "prismplus"
 		},
 		"folderID": "F49de5277fb0154fd7dc06d9b37ca2c0171747dde5fc26cc32c15a2236ca67f85",
@@ -44949,6 +45196,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F4aa34c87acd53b43eddf49f25fd73ca643ebcd971c22ab29014941ca48e35277",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
@@ -45097,6 +45357,19 @@
 	{
 		"data": {
 			"level": "8+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F625a5db4e64692027706872d3fa728ec1a5f76f80c1cf68b43b9005b3b57bf19",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8+",
 			"versions": "prismplus"
 		},
 		"folderID": "F8158c5d9ffe50d5e63046f336492dda65feb10d01c30c6119f984bf6a8ee78be",
@@ -45240,6 +45513,19 @@
 	{
 		"data": {
 			"level": "9",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F0c24c415aa5317a0ac0e31040a8e527f2e8096ea9abfbcff9f9b388217570f10",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (PRiSM PLUS Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9",
 			"versions": "prismplus"
 		},
 		"folderID": "F38dac8d5934e6a39c37930ed040bfdec7049c9a18af6b6fc78f54ec77d902215",
@@ -45378,6 +45664,19 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9+ (PRiSM Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9+",
+			"versions": "prismplus-omni"
+		},
+		"folderID": "F1bd098d5f00f2d9b1866eec1de48b6572056a37aa3975d921d4a4a89cff4227f",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (PRiSM PLUS Omnimix)",
 		"type": "charts"
 	},
 	{
