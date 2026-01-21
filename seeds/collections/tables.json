@@ -5182,7 +5182,7 @@
 			"Ff919e95125827edb34d0edb412c8ad4b1d3b4dc5dd8ea68442d5ffed14eab4ac"
 		],
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "maimaidx-Single-prism-omni-levels",
 		"title": "maimai DX (PRiSM Omnimix)"
@@ -5250,7 +5250,7 @@
 			"F679496e23dabe3f9e700f3fbeb7d85475394808b9ebaf8663a31bec116ef1df8"
 		],
 		"game": "maimaidx",
-		"inactive": true,
+		"inactive": false,
 		"playtype": "Single",
 		"tableID": "maimaidx-Single-prismplus-levels",
 		"title": "maimai DX (PRiSM PLUS)"
@@ -5284,7 +5284,7 @@
 			"Fc8644419818f6095bdf08eec2847234a9a34ecb8097f0fe9001d714c1d4efeca"
 		],
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "maimaidx-Single-prism-levels",
 		"title": "maimai DX (PRiSM)"
