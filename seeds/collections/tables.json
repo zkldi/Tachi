@@ -5052,6 +5052,40 @@
 		"title": "maimai DX (BUDDiES)"
 	},
 	{
+		"default": true,
+		"description": "Levels for maimai DX in CiRCLE.",
+		"folders": [
+			"F0a80f6806ffb5e84c076feb92e3030040437d95b1e375826a93033543f993508",
+			"F3e9346868af3e1a9ccaa27ef98d5653a2e35683b9d18a24944211d3b021372a6",
+			"F6524800df1f331b2bd1fbc6c8850d9309d944cc3f3cb339f654907738aa5bd7b",
+			"F5abb7d24ec22e7ad6ea9833777a7ae223fab3afa6c41cf5874bc9a80a49d469e",
+			"F99b0979f23d688a772e004eaa5757552be3d70dee8c1863d1154c178514d182a",
+			"F26f15f676ddff949a99b5416ab041c263dc14a35639da6953ca030b49bfef76e",
+			"F81a995704b5ca4c08e3f8a1d7cd25f76a62954ab991db032838beeb281d42184",
+			"Fd35c0d38b593f15bc7d935ca0206fbd6e72d0a3d7982834d05e01174d82f3658",
+			"F14c296a8311483d4cd4b009ba673c883acf0333dba46ae2443af8336637be23a",
+			"F4e5cd0675b01831312aec0ea2b0ee42abd990227a206f86a4baeae47155deeb6",
+			"Fbe66537e71a1c8bc490bc25eb37fded8d8c15c0c37e6d6a4e123e79f0960da6f",
+			"Fcc5dbd80328ac7d1e74b8110a04663cffc265144f20c95406f72c71b99dd3e0e",
+			"F27880c2cb47716e18fcb45c9ff2cc27c34dc695b822f4a12b79e0e75a7c98120",
+			"F10bcd0a5d8714b321cadd2c392d4496a9609c483540c8f1ad84acfbbc6e6a128",
+			"F54988e616f86114a99d3dc411b46e3d9ba317b5c1f1df373c56d7870d69def43",
+			"Fd92e4e693de99d258ff1826ed9022cc1c7718222b5a9b25ead7a4614304cecc0",
+			"F7b2aa694e3871434b48e1c7cbfd36ef4275488ecd88a0cec16a5b99a2b7b5ec5",
+			"F22fe4d7aa48026a1aa5f719c05b3e9d8ca639af907ce7b96df44090a13e4031f",
+			"Fc76d023b4aa0651369631987ad16ad5ce801c80190f0a45147b006e43fd3ce11",
+			"Ffbef2634a665f654e7c1c94ffc33a677c00a7ee184846fcfc5875c4dccc91462",
+			"F4aeecfede4dd6caa86ea15f6383ba66edb81f4202a7649910343ff5092733e9c",
+			"Ff8568d8ee3a245752e7859f54ed6b77c2078075d301706a5269ac0dd05c29f98",
+			"Fadb6e5f50803a81537cd3fb11103a691b3eda5553846f0b2e6c13a14a3ad990c"
+		],
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "maimaidx-Single-circle-levels",
+		"title": "maimai DX (CiRCLE)"
+	},
+	{
 		"default": false,
 		"description": "Levels for maimai DX in FESTiVAL PLUS.",
 		"folders": [
@@ -5154,7 +5188,7 @@
 		"title": "maimai DX (PRiSM Omnimix)"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Levels for maimai DX in PRiSM PLUS.",
 		"folders": [
 			"Fb109a12b19d82d0705ea8c34b68cde17fbbde9b3d8f4d44397db8fddae04bd99",
@@ -5182,7 +5216,7 @@
 			"F679496e23dabe3f9e700f3fbeb7d85475394808b9ebaf8663a31bec116ef1df8"
 		],
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"tableID": "maimaidx-Single-prismplus-levels",
 		"title": "maimai DX (PRiSM PLUS)"

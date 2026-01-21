@@ -42185,6 +42185,19 @@
 	{
 		"data": {
 			"level": "1",
+			"versions": "circle"
+		},
+		"folderID": "F0a80f6806ffb5e84c076feb92e3030040437d95b1e375826a93033543f993508",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "1",
 			"versions": "festivalplus"
 		},
 		"folderID": "F3cb8c46dfb31ca7fb8d4ec18b226232b8a05303f88f329a83455099317f1759b",
@@ -42228,7 +42241,7 @@
 		},
 		"folderID": "Fb109a12b19d82d0705ea8c34b68cde17fbbde9b3d8f4d44397db8fddae04bd99",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 1 (PRiSM PLUS)",
@@ -42315,6 +42328,19 @@
 	{
 		"data": {
 			"level": "10",
+			"versions": "circle"
+		},
+		"folderID": "F27880c2cb47716e18fcb45c9ff2cc27c34dc695b822f4a12b79e0e75a7c98120",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10",
 			"versions": "festivalplus"
 		},
 		"folderID": "F39f2ff24749ee84eb2ef65272c5ce9748603234cea2e867be517ec615031a0cd",
@@ -42358,7 +42384,7 @@
 		},
 		"folderID": "F317b85fe04e754ec29ce4cb4408e33293a9beb3d213e128d73d25580f8f8eada",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10 (PRiSM PLUS)",
@@ -42445,6 +42471,19 @@
 	{
 		"data": {
 			"level": "10+",
+			"versions": "circle"
+		},
+		"folderID": "F10bcd0a5d8714b321cadd2c392d4496a9609c483540c8f1ad84acfbbc6e6a128",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F428f846939f3d4c7867793342635c084f1daa60f877510e55e41911491c22dd8",
@@ -42488,7 +42527,7 @@
 		},
 		"folderID": "F73d4a5c9e83de8df2a0d47b22412b22b9243f41040233bda71f0bb5df5f4f189",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10+ (PRiSM PLUS)",
@@ -42575,6 +42614,19 @@
 	{
 		"data": {
 			"level": "11",
+			"versions": "circle"
+		},
+		"folderID": "F54988e616f86114a99d3dc411b46e3d9ba317b5c1f1df373c56d7870d69def43",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fc3c6420d856640721403d67a0936b0a413124dc2a1ab8ab6275371132b1577eb",
@@ -42618,7 +42670,7 @@
 		},
 		"folderID": "Ffdc14d6d08080f8fe3060ba46d3182ac6e2e105c7e77d427ff2c083dfbd050d8",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11 (PRiSM PLUS)",
@@ -42705,6 +42757,19 @@
 	{
 		"data": {
 			"level": "11+",
+			"versions": "circle"
+		},
+		"folderID": "Fd92e4e693de99d258ff1826ed9022cc1c7718222b5a9b25ead7a4614304cecc0",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F7f065feb073c6e323b805de43b192778352c56043f0467cfa3f61b166b4a957e",
@@ -42748,7 +42813,7 @@
 		},
 		"folderID": "Ff537bee0faffc0c7d00e9af0208165ef4e62f6bac62640bc8152b3c2cb631494",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11+ (PRiSM PLUS)",
@@ -42835,6 +42900,19 @@
 	{
 		"data": {
 			"level": "12",
+			"versions": "circle"
+		},
+		"folderID": "F7b2aa694e3871434b48e1c7cbfd36ef4275488ecd88a0cec16a5b99a2b7b5ec5",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12",
 			"versions": "festivalplus"
 		},
 		"folderID": "F2d28eac9a3dbf79ecf2d30c795190ce005d4849c4d6a07c7b53ca8c77db5d19b",
@@ -42878,7 +42956,7 @@
 		},
 		"folderID": "Fb5b8c8d968d87273b397bab441e3527c9a98d408148f4459eaf7df336ac1ebc0",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12 (PRiSM PLUS)",
@@ -42965,6 +43043,19 @@
 	{
 		"data": {
 			"level": "12+",
+			"versions": "circle"
+		},
+		"folderID": "F22fe4d7aa48026a1aa5f719c05b3e9d8ca639af907ce7b96df44090a13e4031f",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12+",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fa4546475e53fd9e4b0ed219dc291ea2954d8bdd68a51ee46b6f6241be0b7756e",
@@ -43008,7 +43099,7 @@
 		},
 		"folderID": "Fe563867b324acf9e810547259c68ccc6e3df3a809a354e77918f2d213bfc7650",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12+ (PRiSM PLUS)",
@@ -43095,6 +43186,19 @@
 	{
 		"data": {
 			"level": "13",
+			"versions": "circle"
+		},
+		"folderID": "Fc76d023b4aa0651369631987ad16ad5ce801c80190f0a45147b006e43fd3ce11",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fc4c668440b3536d795e765436c1631c5b72d52a8a5d38695755a2fe09221bb14",
@@ -43138,7 +43242,7 @@
 		},
 		"folderID": "F145a80566790955d9624ce086b7d7fb7fc9994ad18274307b2177245a60bd9ea",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13 (PRiSM PLUS)",
@@ -43225,6 +43329,19 @@
 	{
 		"data": {
 			"level": "13+",
+			"versions": "circle"
+		},
+		"folderID": "Ffbef2634a665f654e7c1c94ffc33a677c00a7ee184846fcfc5875c4dccc91462",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13+",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fbd4ed8acc14521b02cab253af19531f17c4379cc20480301d068a9e9e3fcb460",
@@ -43268,7 +43385,7 @@
 		},
 		"folderID": "Fc80e67663bcdb4f8ef3a7d8d7c0375f21173073c220db484bf20e5e16dcaa4e7",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13+ (PRiSM PLUS)",
@@ -43355,6 +43472,19 @@
 	{
 		"data": {
 			"level": "14",
+			"versions": "circle"
+		},
+		"folderID": "F4aeecfede4dd6caa86ea15f6383ba66edb81f4202a7649910343ff5092733e9c",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14",
 			"versions": "festivalplus"
 		},
 		"folderID": "F091c61a1e5a413bc5cda2163bae3b67e20f78a12b52303564dec02496a49bd32",
@@ -43398,7 +43528,7 @@
 		},
 		"folderID": "Fb4e867ba6c890e3efe77c198dca502a32776783e0fc456e51c61a09620c80bf0",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14 (PRiSM PLUS)",
@@ -43485,6 +43615,19 @@
 	{
 		"data": {
 			"level": "14+",
+			"versions": "circle"
+		},
+		"folderID": "Ff8568d8ee3a245752e7859f54ed6b77c2078075d301706a5269ac0dd05c29f98",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F3272f7922b405de1d5bb1b92c2ddcbbc246880bc38f742b56f95f58a1f28e777",
@@ -43528,7 +43671,7 @@
 		},
 		"folderID": "Fbf58a6059e1295bb482f6659aae715d395c6031583d053396eef9eb83d1c7507",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14+ (PRiSM PLUS)",
@@ -43615,6 +43758,19 @@
 	{
 		"data": {
 			"level": "15",
+			"versions": "circle"
+		},
+		"folderID": "Fadb6e5f50803a81537cd3fb11103a691b3eda5553846f0b2e6c13a14a3ad990c",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15",
 			"versions": "festivalplus"
 		},
 		"folderID": "F249c6b4ed09ef3ce477aa34c8ccf9ec102d9965f77af851f01ba55fe0b2df516",
@@ -43658,7 +43814,7 @@
 		},
 		"folderID": "F679496e23dabe3f9e700f3fbeb7d85475394808b9ebaf8663a31bec116ef1df8",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15 (PRiSM PLUS)",
@@ -43745,6 +43901,19 @@
 	{
 		"data": {
 			"level": "2",
+			"versions": "circle"
+		},
+		"folderID": "F3e9346868af3e1a9ccaa27ef98d5653a2e35683b9d18a24944211d3b021372a6",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "2",
 			"versions": "festivalplus"
 		},
 		"folderID": "F1c949078387d1d1f0932e1ce33855b93254b0c23842e462805cc808a32cadabf",
@@ -43788,7 +43957,7 @@
 		},
 		"folderID": "F2741e3c4774abf3aea7515cd7eb0b7cbf115b03eae75a5ca18d3c2b766bd0e35",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 2 (PRiSM PLUS)",
@@ -43875,6 +44044,19 @@
 	{
 		"data": {
 			"level": "3",
+			"versions": "circle"
+		},
+		"folderID": "F6524800df1f331b2bd1fbc6c8850d9309d944cc3f3cb339f654907738aa5bd7b",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "3",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fb03ab9cd2656ce4c3af8c37b46484519cf365f1531e14856b6c3fae180ac09de",
@@ -43918,7 +44100,7 @@
 		},
 		"folderID": "F6ed61315bc580dd626acfd9926a02cfcecc6d64128eeee53d07fc91a2703187e",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (PRiSM PLUS)",
@@ -44005,6 +44187,19 @@
 	{
 		"data": {
 			"level": "4",
+			"versions": "circle"
+		},
+		"folderID": "F5abb7d24ec22e7ad6ea9833777a7ae223fab3afa6c41cf5874bc9a80a49d469e",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "4",
 			"versions": "festivalplus"
 		},
 		"folderID": "F6bf37ad839452dfa34571d14536ff83f7532298cc6d91a1bfe9d9eca703c0aa9",
@@ -44048,7 +44243,7 @@
 		},
 		"folderID": "F0807b5b8eaf65521b23eeb2f94d922db4f24becd2b10f8baea751579bfa153d3",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 4 (PRiSM PLUS)",
@@ -44135,6 +44330,19 @@
 	{
 		"data": {
 			"level": "5",
+			"versions": "circle"
+		},
+		"folderID": "F99b0979f23d688a772e004eaa5757552be3d70dee8c1863d1154c178514d182a",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "5",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fe233e3a1f661b14fa34d30048ba42b0e9b6148a733ddf6d0a87c7a7b2c42553b",
@@ -44178,7 +44386,7 @@
 		},
 		"folderID": "F01c75cc582b53a7b19cf81e34fdd000e2db34f3d9a49d0d2a80231bc3d728f4b",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (PRiSM PLUS)",
@@ -44265,6 +44473,19 @@
 	{
 		"data": {
 			"level": "6",
+			"versions": "circle"
+		},
+		"folderID": "F26f15f676ddff949a99b5416ab041c263dc14a35639da6953ca030b49bfef76e",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "6",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fe7f71b4d744597a1cea719c6de50fc5f34e4563711350c572583ab0aeca9be37",
@@ -44308,7 +44529,7 @@
 		},
 		"folderID": "F11812fb1445cbf6854798699dd726a86d87ed682b12c722377b8fa2b1b2fb77e",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 6 (PRiSM PLUS)",
@@ -44395,6 +44616,19 @@
 	{
 		"data": {
 			"level": "7",
+			"versions": "circle"
+		},
+		"folderID": "F81a995704b5ca4c08e3f8a1d7cd25f76a62954ab991db032838beeb281d42184",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7",
 			"versions": "festivalplus"
 		},
 		"folderID": "Fc4e09b577ab32460324dbb63e5bd9cb07080e504a6801783c61abeb0f6d84e92",
@@ -44438,7 +44672,7 @@
 		},
 		"folderID": "F32134b24a7c88186ae3cbd67fb17d715c5bd6353fe5d400e491f801a08c5a07f",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (PRiSM PLUS)",
@@ -44525,6 +44759,19 @@
 	{
 		"data": {
 			"level": "7+",
+			"versions": "circle"
+		},
+		"folderID": "Fd35c0d38b593f15bc7d935ca0206fbd6e72d0a3d7982834d05e01174d82f3658",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F415ceafb19ad3e4c8470ae1f65b0e0191092e92813791c7d815cb3575c9d4e40",
@@ -44568,7 +44815,7 @@
 		},
 		"folderID": "F49de5277fb0154fd7dc06d9b37ca2c0171747dde5fc26cc32c15a2236ca67f85",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7+ (PRiSM PLUS)",
@@ -44655,6 +44902,19 @@
 	{
 		"data": {
 			"level": "8",
+			"versions": "circle"
+		},
+		"folderID": "F14c296a8311483d4cd4b009ba673c883acf0333dba46ae2443af8336637be23a",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8",
 			"versions": "festivalplus"
 		},
 		"folderID": "F19c85ce0d47f2ec3cb58f8af4bb907d3acbf2946cbf7a01068cd8232ed93c432",
@@ -44698,7 +44958,7 @@
 		},
 		"folderID": "F4c7868f27d259eaee66785b2ec5a706a3863555951a43ca63969bcffcb65e377",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (PRiSM PLUS)",
@@ -44785,6 +45045,19 @@
 	{
 		"data": {
 			"level": "8+",
+			"versions": "circle"
+		},
+		"folderID": "F4e5cd0675b01831312aec0ea2b0ee42abd990227a206f86a4baeae47155deeb6",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F68780aac362eccc701537c6ca3ce22d2000e668b78b4b0db440b70a58ede10a5",
@@ -44828,7 +45101,7 @@
 		},
 		"folderID": "F8158c5d9ffe50d5e63046f336492dda65feb10d01c30c6119f984bf6a8ee78be",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8+ (PRiSM PLUS)",
@@ -44915,6 +45188,19 @@
 	{
 		"data": {
 			"level": "9",
+			"versions": "circle"
+		},
+		"folderID": "Fbe66537e71a1c8bc490bc25eb37fded8d8c15c0c37e6d6a4e123e79f0960da6f",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9",
 			"versions": "festivalplus"
 		},
 		"folderID": "F85f8595cc4e4e50840aa5da914034412c7fff420b464b334cec3f8f1981ae8e5",
@@ -44958,7 +45244,7 @@
 		},
 		"folderID": "F38dac8d5934e6a39c37930ed040bfdec7049c9a18af6b6fc78f54ec77d902215",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9 (PRiSM PLUS)",
@@ -45045,6 +45331,19 @@
 	{
 		"data": {
 			"level": "9+",
+			"versions": "circle"
+		},
+		"folderID": "Fcc5dbd80328ac7d1e74b8110a04663cffc265144f20c95406f72c71b99dd3e0e",
+		"game": "maimaidx",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (CiRCLE)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9+",
 			"versions": "festivalplus"
 		},
 		"folderID": "F5d0f96d7589d1afdf04e98f7404ef2d9724c069944ae0e532a6a9ca02101a01a",
@@ -45088,7 +45387,7 @@
 		},
 		"folderID": "F4370275c4dba47e94adcf6885ea831378cae5a59c93df006465e214c2a5f3c2b",
 		"game": "maimaidx",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9+ (PRiSM PLUS)",

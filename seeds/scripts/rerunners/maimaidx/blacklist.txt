@@ -10,6 +10,3 @@ S1\d{5}$
 # Ignore Xaleid◆scopiX (2): event chart used to implement the KALEIDXSCOPE event,
 # not normally playable.
 S11879$
-
-S11861$
-S11878$
