@@ -13,7 +13,8 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 		grade: ({ percent }) => GetGrade(MAIMAIDX_GBOUNDARIES, percent),
 	},
 	scoreCalcs: {
-		rate: (scoreData, chart) => MaimaiDXRate.calculate(scoreData.percent, chart.levelNum),
+		rate: (scoreData, chart) =>
+			MaimaiDXRate.calculate(scoreData.percent, chart.levelNum, scoreData.lamp),
 	},
 	sessionCalcs: { rate: SessionAvgBest10For("rate") },
 	profileCalcs: {
@@ -88,6 +89,16 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 
 			if (s.scoreData.lamp === "ALL PERFECT" && s.scoreData.percent < 100.5) {
 				return "Cannot have an ALL PERFECT without at least 100.5%.";
+			}
+
+			if (s.scoreData.lamp === "FAILED" && s.scoreData.percent >= 80) {
+				return "Cannot have a FAILED if the score is above 80%.";
+			}
+
+			// Specifically check for CLEARs to allow FULL COMBO/FULL COMBO+ scores
+			// below 80%, which are possible
+			if (s.scoreData.lamp === "CLEAR" && s.scoreData.percent < 80) {
+				return "Cannot have a CLEAR if the score is below 80%.";
 			}
 		},
 	],
