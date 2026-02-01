@@ -13,7 +13,21 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 		grade: ({ percent }) => GetGrade(MAIMAIDX_GBOUNDARIES, percent),
 	},
 	scoreCalcs: {
-		rate: (scoreData, chart) => MaimaiDXRate.calculate(scoreData.percent, chart.levelNum),
+		rate: (scoreData, chart) =>
+			MaimaiDXRate.calculate(
+				scoreData.percent,
+				chart.levelNum,
+				// Provide the lamp only when the score is an ALL PERFECT/ALL PERFECT+
+				// for the +1 rating bonus. Ideally, we should be able to just apply
+				// the lamp as-is, but there are a bunch of invalid scores on Tachi
+				// that don't pass the validation rules we've set on rg-stats (for example,
+				// there's a 100.18% fail), and fixing those lamps is a brittle
+				// and multi-step process since it modifies the scoreID (you can see
+				// the CHUNITHM lamp split migration to see how horrible it is.)
+				scoreData.lamp === "ALL PERFECT" || scoreData.lamp === "ALL PERFECT+"
+					? scoreData.lamp
+					: undefined
+			),
 	},
 	sessionCalcs: { rate: SessionAvgBest10For("rate") },
 	profileCalcs: {
@@ -88,6 +102,14 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 
 			if (s.scoreData.lamp === "ALL PERFECT" && s.scoreData.percent < 100.5) {
 				return "Cannot have an ALL PERFECT without at least 100.5%.";
+			}
+
+			if (s.scoreData.lamp === "CLEAR" && s.scoreData.percent < 80) {
+				return "Cannot have a CLEAR without at least 80%.";
+			}
+
+			if (s.scoreData.lamp === "FAILED" && s.scoreData.percent >= 80) {
+				return "Cannot have a FAILED if the score is above 80%.";
 			}
 		},
 	],
