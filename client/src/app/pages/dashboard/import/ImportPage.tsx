@@ -354,6 +354,13 @@ function ImportInfoDisplayer({ game }: { game: Game }) {
 				moreInfo="This is the recommended way to import O.N.G.E.K.I. scores; data is submitted at the end of each play."
 			/>,
 			<ImportInfoCard
+				name="O.N.G.E.K.I. Site Importer"
+				href="kt-ongeki-site-importer"
+				desc="Use your data from O.N.G.E.K.I. NET."
+				moreInfo="If you are playing on an official Ongeki server, you can import play data from it here."
+				key="O.N.G.E.K.I. NET Importer"
+			/>,
+			<ImportInfoCard
 				name="ARTEMiS Exporter"
 				href="ongeki-artemis-exporter"
 				desc="Export your scores from an ARTEMiS instance."
