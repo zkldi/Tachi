@@ -50,7 +50,7 @@
 		"hash.js": "1.1.7",
 		"humanize-duration": "3.27.0",
 		"json-2-csv": "3.14.4",
-		"lodash": "4.17.21",
+		"lodash": "4.17.23",
 		"luxon": "2.0.1",
 		"nanoid": "3.1.23",
 		"natural-compare": "^1.4.0",
