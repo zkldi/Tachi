@@ -647,8 +647,8 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
       nodemailer:
-        specifier: 6.7.2
-        version: 6.7.2
+        specifier: 7.0.11
+        version: 7.0.11
       prudence:
         specifier: 0.10.0
         version: 0.10.0
@@ -9010,8 +9010,8 @@ packages:
       - supports-color
     dev: true
 
-  /nodemailer@6.7.2:
-    resolution: {integrity: sha512-Dz7zVwlef4k5R71fdmxwR8Q39fiboGbu3xgswkzGwczUfjp873rVxt1O46+Fh0j1ORnAC6L9+heI8uUpO6DT7Q==}
+  /nodemailer@7.0.11:
+    resolution: {integrity: sha512-gnXhNRE0FNhD7wPSCGhdNh46Hs6nm+uTyg+Kq0cZukNQiYdnCsoQjodNP9BQVG9XrcK/v6/MgpAPBUFyzh9pvw==}
     engines: {node: '>=6.0.0'}
     dev: false
 
@@ -10236,10 +10236,6 @@ packages:
 
   /rg-stats@1.1.0:
     resolution: {integrity: sha512-KQxSjnHXvb2B9Z+y/OwtUzStIjyXsn78c1XSF0t5L9G5UsVjyyO250eq4ih00X1WjvPRE9AtC4h38gBZEWClkw==}
-    dev: false
-
-  /rg-stats@1.0.0:
-    resolution: {integrity: sha512-Itt3OJden5riCkSY7o5whJTqK/DQNteJdQ+AXZ2upNNESOO/7JnWx+n/jJiSimR+XOE/rSggTxXLujHcE4Z0nA==}
     dev: false
 
   /rimraf@2.4.5:
