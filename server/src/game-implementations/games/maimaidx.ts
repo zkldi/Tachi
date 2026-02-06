@@ -17,16 +17,7 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 			MaimaiDXRate.calculate(
 				scoreData.percent,
 				chart.levelNum,
-				// Provide the lamp only when the score is an ALL PERFECT/ALL PERFECT+
-				// for the +1 rating bonus. Ideally, we should be able to just apply
-				// the lamp as-is, but there are a bunch of invalid scores on Tachi
-				// that don't pass the validation rules we've set on rg-stats (for example,
-				// there's a 100.18% fail), and fixing those lamps is a brittle
-				// and multi-step process since it modifies the scoreID (you can see
-				// the CHUNITHM lamp split migration to see how horrible it is.)
-				scoreData.lamp === "ALL PERFECT" || scoreData.lamp === "ALL PERFECT+"
-					? scoreData.lamp
-					: undefined
+				scoreData.lamp
 			),
 	},
 	sessionCalcs: { rate: SessionAvgBest10For("rate") },
@@ -112,5 +103,54 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 				return "Cannot have a FAILED if the score is above 80%.";
 			}
 		},
+		(s) => {
+			const { great, good, miss } = s.scoreData.judgements;
+			
+			// Assume the lamp is correct if judgements aren't provided.
+			if (IsNullish(great) || IsNullish(good) || IsNullish(miss)) {
+				return;
+			}
+		
+			if (s.scoreData.lamp === "ALL PERFECT+" && great + good + miss > 0) {
+				return "Cannot have an ALL PERFECT+ with any non-perfect judgements.";
+			}
+			
+			if (s.scoreData.lamp === "ALL PERFECT" && great + good + miss > 0) {
+				return "Cannot have an ALL PERFECT with any non-perfect judgements.";
+			}
+			
+			if (s.scoreData.lamp === "FULL COMBO+" && good + miss > 0) {
+				return "Cannot have a FULL COMBO+ with any goods or misses.";
+			}
+			
+			if (s.scoreData.lamp === "FULL COMBO" && miss > 0) {
+				return "Cannot have a FULL COMBO with any misses.";
+			}
+		},
+		(s) => {
+			const { maxCombo } = s.scoreData.optional;
+			const { pcrit, perfect, great, good, miss } = s.scoreData.judgements;
+			
+			if (
+				IsNullish(maxCombo) ||
+				IsNullish(pcrit) ||
+				IsNullish(perfect) ||
+				IsNullish(great) ||
+				IsNullish(good) ||
+				IsNullish(miss)
+			) {
+				return;
+			}
+			
+			if (
+				s.scoreData.lamp !== "CLEAR" &&
+				s.scoreData.lamp !== "FAILED" &&
+				pcrit + perfect + great + good + miss !== maxCombo
+			) {
+				const article = s.scoreData.lamp.startsWith("ALL PERFECT") ? "an" : "a";
+				
+				return `Cannot have ${article} ${s.scoreData.lamp} if maxCombo is not equal to the sum of judgements.`;
+			}
+		}
 	],
 };

@@ -8,6 +8,7 @@ import FixUndefinedBMSData from "./migrations/fix-undefined-bms-data";
 import JoinINFCastHourCharts from "./migrations/join-inf-casthour-charts";
 import JoinINFCastHourSongs from "./migrations/join-inf-casthour-songs";
 import KtRatingToCuratorSkill from "./migrations/ktRating-to-curator-skill";
+import MaimaiDXFixLamps from "./migrations/maimaidx-fix-lamps";
 import MarkFervidexAsWithoutIntent from "./migrations/mark-fervidex-as-without-intent";
 import MarkKsHookAsWithoutIntent from "./migrations/mark-kshook-as-without-intent";
 import NullLR2HookFailedBPs from "./migrations/null-lr2hook-failed-bps";
@@ -77,9 +78,10 @@ if (Environment.nodeEnv !== "test") {
 			RmHot,
 			ChunithmLampSplit,
 			OngekiV2,
-			ChunithmFixPreferredDefaultEnum
+			ChunithmFixPreferredDefaultEnum,
 			// SdvxMaxxiveLampRearrange,
-			// SdvxMaxxiveGoals
+			// SdvxMaxxiveGoals,
+			MaimaiDXFixLamps
 		);
 	}
 
