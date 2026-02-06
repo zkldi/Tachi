@@ -54331,6 +54331,70 @@
 		]
 	},
 	{
+		"chartID": "1ee6607c5e17b4def19fd55f5e37356cda81903f",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10674
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 442,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "a6a3e98873230e9b36b08e11b4963ba556806f7a",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10674
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 442,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "b2e9ea9fb45cb43577e9f7c8a61612b05b4dbd18",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10674
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"playtype": "Single",
+		"songID": 442,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "0cb352c6812558b005a07561d984c7348525cf29",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10674
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.2,
+		"playtype": "Single",
+		"songID": 442,
+		"versions": [
+			"circle"
+		]
+	},
+	{
 		"chartID": "70d8ff8eda6ddb9f4f689da1fb0a038f4917e57a",
 		"data": {
 			"displayVersion": "maimai MiLK",
@@ -165001,6 +165065,134 @@
 		"levelNum": 13,
 		"playtype": "Single",
 		"songID": 1558,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "61045a8a16d8451a542d332728ba2724de9be6d8",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11919
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"playtype": "Single",
+		"songID": 1559,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "269cba761d08b985f810c3f2ffafef827088f8a8",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11919
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1559,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "df058d61acd8a4156cd3ef2f0268c4ca0fe33a49",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11919
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"playtype": "Single",
+		"songID": 1559,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "754fe7127d3dc8bf7401b1e6adc2d73d132d1956",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11919
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.7,
+		"playtype": "Single",
+		"songID": 1559,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "d6d3a4314707e57bb88cb03b7fb4fbc707e4849c",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11920
+		},
+		"difficulty": "DX Advanced",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"playtype": "Single",
+		"songID": 1560,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "d53d4f0206ff665541e4592b3c6d997db48dacec",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11920
+		},
+		"difficulty": "DX Basic",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1560,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "e17fc9eeaf7c2eaf93481516109988440d0590bb",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11920
+		},
+		"difficulty": "DX Expert",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1560,
+		"versions": [
+			"circle"
+		]
+	},
+	{
+		"chartID": "0e3a7ad01e2ab13fd58536a6239c4f71ce0fc2b8",
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11920
+		},
+		"difficulty": "DX Master",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.5,
+		"playtype": "Single",
+		"songID": 1560,
 		"versions": [
 			"circle"
 		]

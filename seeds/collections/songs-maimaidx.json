@@ -19955,5 +19955,29 @@
 			"science"
 		],
 		"title": "サイエンス"
+	},
+	{
+		"altTitles": [],
+		"artist": "「太鼓の達人」より",
+		"data": {
+			"duration": 145.333,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1559,
+		"searchTerms": [
+			"angel dream"
+		],
+		"title": "エンジェル ドリーム"
+	},
+	{
+		"altTitles": [],
+		"artist": "さだきち「太鼓の達人」より",
+		"data": {
+			"duration": 118.144,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": 1560,
+		"searchTerms": [],
+		"title": "Hurtling Boys"
 	}
 ]
