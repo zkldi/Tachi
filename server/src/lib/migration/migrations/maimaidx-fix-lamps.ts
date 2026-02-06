@@ -84,10 +84,6 @@ const migration: Migration = {
 
 			await ProcessPBs("maimaidx", "Single", userID, chartIDs, logger);
 		}
-
-		for (const chartID of affectedCharts) {
-			await UpdateChartRanking("maimaidx", "Single", chartID);
-		}
 	},
 	down: () => {
 		throw new Error(`Unable to revert transaction.`);
