@@ -68,7 +68,7 @@ const migration: Migration = {
 				lamp = "FAILED";
 			}
 
-			UpdateScore(
+			await UpdateScore(
 				score,
 				{
 					...score,
