@@ -22,8 +22,8 @@ const migration: Migration = {
 			"scoreData.percent": { $gte: 80 },
 		});
 
-		// @ts-expect-error query assures we're getting maimaidx:Single scores
 		invalidScores.push(
+			// @ts-expect-error query assures we're getting maimaidx:Single scores
 			...(await db.scores.find({
 				game: "maimaidx",
 				playtype: "Single",
