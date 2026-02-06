@@ -283,7 +283,6 @@ function StatDelta({
 	}
 
 	const formattedV2 = FormatValue(game, playtype, mode, property, v2);
-	const d = FormatValue(game, playtype, mode, property, v2 - v1);
 
 	let colour;
 	if (v2 === v1) {
@@ -304,6 +303,7 @@ function StatDelta({
 		property === "playcount" ||
 		mode === "folder"
 	) {
+		const d = FormatValue(game, playtype, mode, property, v2 - v1);
 		delta = ` (${v2 > v1 ? `+${d}` : v2 === v1 ? `±${d}` : d})`;
 	}
 

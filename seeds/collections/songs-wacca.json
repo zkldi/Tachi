@@ -5399,5 +5399,60 @@
 		"id": 455,
 		"searchTerms": [],
 		"title": "Kirakira Noel Story!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "Blacklolita",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 456,
+		"searchTerms": [],
+		"title": "Giga Flare VIP"
+	},
+	{
+		"altTitles": [],
+		"artist": "P*Light 「CHRONO CIRCLE」より",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 457,
+		"searchTerms": [],
+		"title": "SWAG!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "星街すいせい",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "アニメ／ＰＯＰ"
+		},
+		"id": 458,
+		"searchTerms": [],
+		"title": "ビビデバ | BIBBIDIBA"
+	},
+	{
+		"altTitles": [],
+		"artist": "aran 「Rotaeno」より",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 459,
+		"searchTerms": [],
+		"title": "Maholova"
+	},
+	{
+		"altTitles": [],
+		"artist": "ETIA. 「Rotaeno」より",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 460,
+		"searchTerms": [],
+		"title": "MVURBD"
 	}
 ]
