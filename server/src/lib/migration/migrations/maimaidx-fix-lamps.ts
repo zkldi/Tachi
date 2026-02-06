@@ -1,9 +1,9 @@
 import db from "external/mongo/db";
 import CreateLogCtx from "lib/logger/logger";
-import { UpdateChartRanking } from "lib/score-import/framework/pb/create-pb-doc";
 import { ProcessPBs } from "lib/score-import/framework/pb/process-pbs";
 import UpdateScore from "lib/score-mutation/update-score";
 import { integer, ProvidedMetrics, ScoreDocument } from "tachi-common";
+import { RecalcAllScores } from "utils/calculations/recalc-scores";
 import type { Migration } from "utils/types";
 
 const logger = CreateLogCtx(__filename);
@@ -84,6 +84,14 @@ const migration: Migration = {
 
 			await ProcessPBs("maimaidx", "Single", userID, chartIDs, logger);
 		}
+		
+		// maimai DX CiRCLE rating recalc
+		await RecalcAllScores({
+			game: "maimaidx",
+			"scoreData.lamp": {
+				$in: ["ALL PERFECT", "ALL PERFECT+"],
+			},
+		});
 	},
 	down: () => {
 		throw new Error(`Unable to revert transaction.`);
