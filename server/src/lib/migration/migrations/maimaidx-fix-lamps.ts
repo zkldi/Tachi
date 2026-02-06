@@ -2,8 +2,8 @@ import db from "external/mongo/db";
 import CreateLogCtx from "lib/logger/logger";
 import { ProcessPBs } from "lib/score-import/framework/pb/process-pbs";
 import UpdateScore from "lib/score-mutation/update-score";
-import { integer, ProvidedMetrics, ScoreDocument } from "tachi-common";
 import { RecalcAllScores } from "utils/calculations/recalc-scores";
+import type { integer, ProvidedMetrics, ScoreDocument } from "tachi-common";
 import type { Migration } from "utils/types";
 
 const logger = CreateLogCtx(__filename);
@@ -23,12 +23,14 @@ const migration: Migration = {
 		});
 
 		// @ts-expect-error query assures we're getting maimaidx:Single scores
-		invalidScores.push(...await db.scores.find({
-			game: "maimaidx",
-			playtype: "Single",
-			"scoreData.lamp": "CLEAR",
-			"scoreData.percent": { $lt: 80 },
-		}));
+		invalidScores.push(
+			...(await db.scores.find({
+				game: "maimaidx",
+				playtype: "Single",
+				"scoreData.lamp": "CLEAR",
+				"scoreData.percent": { $lt: 80 },
+			}))
+		);
 
 		for (const score of invalidScores) {
 			// @ts-expect-error just in case
@@ -43,18 +45,19 @@ const migration: Migration = {
 			affectedCharts.add(score.chartID);
 
 			let lamp: ProvidedMetrics["maimaidx:Single"]["lamp"];
+
 			if (score.scoreData.percent === 101) {
 				lamp = "ALL PERFECT+";
 			} else if (
-				score.scoreData.percent >= 100.5
-				&& score.scoreData.judgements.great === 0
-				&& score.scoreData.judgements.good === 0
-				&& score.scoreData.judgements.miss === 0
+				score.scoreData.percent >= 100.5 &&
+				score.scoreData.judgements.great === 0 &&
+				score.scoreData.judgements.good === 0 &&
+				score.scoreData.judgements.miss === 0
 			) {
 				lamp = "ALL PERFECT";
 			} else if (
-				score.scoreData.judgements.good === 0
-				&& score.scoreData.judgements.miss === 0
+				score.scoreData.judgements.good === 0 &&
+				score.scoreData.judgements.miss === 0
 			) {
 				lamp = "FULL COMBO+";
 			} else if (score.scoreData.judgements.miss === 0) {
@@ -74,8 +77,8 @@ const migration: Migration = {
 						lamp,
 					},
 				},
-				/*updateOldChart=*/false,
-				/*skipUpdatingPBs=*/true
+				/* updateOldChart=*/ false,
+				/* skipUpdatingPBs=*/ true
 			);
 		}
 
@@ -84,7 +87,7 @@ const migration: Migration = {
 
 			await ProcessPBs("maimaidx", "Single", userID, chartIDs, logger);
 		}
-		
+
 		// maimai DX CiRCLE rating recalc
 		await RecalcAllScores({
 			game: "maimaidx",

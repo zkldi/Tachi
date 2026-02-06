@@ -14,11 +14,7 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 	},
 	scoreCalcs: {
 		rate: (scoreData, chart) =>
-			MaimaiDXRate.calculate(
-				scoreData.percent,
-				chart.levelNum,
-				scoreData.lamp
-			),
+			MaimaiDXRate.calculate(scoreData.percent, chart.levelNum, scoreData.lamp),
 	},
 	sessionCalcs: { rate: SessionAvgBest10For("rate") },
 	profileCalcs: {
@@ -105,24 +101,24 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 		},
 		(s) => {
 			const { great, good, miss } = s.scoreData.judgements;
-			
+
 			// Assume the lamp is correct if judgements aren't provided.
 			if (IsNullish(great) || IsNullish(good) || IsNullish(miss)) {
 				return;
 			}
-		
+
 			if (s.scoreData.lamp === "ALL PERFECT+" && great + good + miss > 0) {
 				return "Cannot have an ALL PERFECT+ with any non-perfect judgements.";
 			}
-			
+
 			if (s.scoreData.lamp === "ALL PERFECT" && great + good + miss > 0) {
 				return "Cannot have an ALL PERFECT with any non-perfect judgements.";
 			}
-			
+
 			if (s.scoreData.lamp === "FULL COMBO+" && good + miss > 0) {
 				return "Cannot have a FULL COMBO+ with any goods or misses.";
 			}
-			
+
 			if (s.scoreData.lamp === "FULL COMBO" && miss > 0) {
 				return "Cannot have a FULL COMBO with any misses.";
 			}
@@ -130,7 +126,7 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 		(s) => {
 			const { maxCombo } = s.scoreData.optional;
 			const { pcrit, perfect, great, good, miss } = s.scoreData.judgements;
-			
+
 			if (
 				IsNullish(maxCombo) ||
 				IsNullish(pcrit) ||
@@ -141,16 +137,16 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 			) {
 				return;
 			}
-			
+
 			if (
 				s.scoreData.lamp !== "CLEAR" &&
 				s.scoreData.lamp !== "FAILED" &&
 				pcrit + perfect + great + good + miss !== maxCombo
 			) {
 				const article = s.scoreData.lamp.startsWith("ALL PERFECT") ? "an" : "a";
-				
+
 				return `Cannot have ${article} ${s.scoreData.lamp} if maxCombo is not equal to the sum of judgements.`;
 			}
-		}
+		},
 	],
 };
