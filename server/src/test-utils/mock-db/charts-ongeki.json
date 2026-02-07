@@ -4,7 +4,9 @@
 		"data": {
 			"displayVersion": "オンゲキ bright",
 			"inGameID": 678,
-			"maxPlatScore": 2768
+			"maxPlatScore": 2768,
+			"isReMaster": false,
+			"isBonusTrack": false
 		},
 		"difficulty": "MASTER",
 		"isPrimary": true,

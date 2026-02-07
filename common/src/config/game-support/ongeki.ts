@@ -223,9 +223,10 @@ export const ONGEKI_SINGLE_CONF = {
 			"オンゲキ bright MEMORY Act.3",
 			"オンゲキ Re:Fresh",
 		]),
-		isReMaster: z.boolean().optional(),
+		isBonusTrack: z.boolean(),
+		isReMaster: z.boolean(),
 		maxPlatScore: z.number().int(),
-		inGameID: z.number().int(),
+		inGameID: z.number().int().optional(),
 		chartViewURL: z.string().optional(),
 	}),
 

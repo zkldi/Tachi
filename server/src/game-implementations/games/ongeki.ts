@@ -10,7 +10,7 @@ import type { GPTServerImplementation } from "game-implementations/types";
 import type { ChartDocument, Game, integer, Playtype } from "tachi-common";
 
 const isUnranked = (chart: ChartDocument<"ongeki:Single">) =>
-	(chart.data.inGameID >= 7000 && chart.data.inGameID < 8000) || chart.levelNum === 0.0;
+	chart.data.isBonusTrack || chart.levelNum === 0.0;
 
 const starCount = (platinumScore: number, maxPlatinumScore: number) => {
 	const pct = Math.floor((platinumScore / maxPlatinumScore) * 100);
