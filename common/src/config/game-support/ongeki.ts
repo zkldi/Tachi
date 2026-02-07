@@ -225,8 +225,8 @@ export const ONGEKI_SINGLE_CONF = {
 		]),
 		isBonusTrack: z.boolean(),
 		isReMaster: z.boolean(),
-		maxPlatScore: z.number().int(),
-		inGameID: z.number().int().optional(),
+		maxPlatScore: z.number().int().nonnegative(),
+		inGameID: z.number().int().nonnegative().nullable(),
 		chartViewURL: z.string().optional(),
 	}),
 
