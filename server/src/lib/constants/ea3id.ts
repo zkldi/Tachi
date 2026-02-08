@@ -26,4 +26,6 @@ export const EXT_PINKYCRUSH = [
 	"2025082500",
 ];
 
+export const EXT_SPARKLE_SHOWER = ["2025091700"];
+
 export const MODEL_SDVX3_KONASTE = "QCV";

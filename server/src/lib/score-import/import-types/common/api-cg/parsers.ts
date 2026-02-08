@@ -8,6 +8,7 @@ import { FormatPrError } from "tachi-common";
 import type { ParserFunctionReturns } from "../types";
 import type {
 	CGContext,
+	CGIIDXScore,
 	CGJubeatScore,
 	CGMusecaScore,
 	CGPopnScore,
@@ -92,12 +93,36 @@ const PR_CG_POPN = {
 	dateTime: "string",
 };
 
+const PR_CG_IIDX = {
+	internalId: p.isPositiveInteger,
+	difficulty: "string",
+	version: p.isPositiveInteger,
+	exScore: p.isPositiveInteger,
+	clearType: p.isPositiveInteger,
+	perfectCount: p.isPositiveInteger,
+	greatCount: p.isPositiveInteger,
+
+	// missCount is -1 when it's not recorded, so we have to allow that.
+	missCount: p.or(p.isPositiveInteger, p.is(-1)),
+
+	// unused
+	dead: p.any,
+
+	option1: p.isPositiveInteger,
+	option2: p.isPositiveInteger,
+	ghost: p.any,
+	ghostGauge: p.any,
+
+	dateTime: "string",
+};
+
 // given a CG game, what should the returned data look like?
 const CG_SCHEMAS: Record<CGSupportedGames, PrudenceSchema> = {
+	iidx: PR_CG_IIDX,
 	jb: PR_CG_JUBEAT,
 	msc: PR_CG_MUSECA,
-	sdvx: PR_CG_SDVX,
 	popn: PR_CG_POPN,
+	sdvx: PR_CG_SDVX,
 };
 
 /**
@@ -148,13 +173,16 @@ export const ParseCGDevMuseca = CreateCGParser<CGMusecaScore>("msc", "dev");
 export const ParseCGDevSDVX = CreateCGParser<CGSDVXScore>("sdvx", "dev");
 export const ParseCGDevJubeat = CreateCGParser<CGJubeatScore>("jb", "dev");
 export const ParseCGDevPopn = CreateCGParser<CGPopnScore>("popn", "dev");
+export const ParseCGDevIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev");
 
 export const ParseCGGanMuseca = CreateCGParser<CGMusecaScore>("msc", "gan");
 export const ParseCGGanSDVX = CreateCGParser<CGSDVXScore>("sdvx", "gan");
 export const ParseCGGanJubeat = CreateCGParser<CGJubeatScore>("jb", "gan");
 export const ParseCGGanPopn = CreateCGParser<CGPopnScore>("popn", "gan");
+export const ParseCGGanIIDX = CreateCGParser<CGIIDXScore>("iidx", "gan");
 
 export const ParseCGNagMuseca = CreateCGParser<CGMusecaScore>("msc", "nag");
 export const ParseCGNagSDVX = CreateCGParser<CGSDVXScore>("sdvx", "nag");
 export const ParseCGNagJubeat = CreateCGParser<CGJubeatScore>("jb", "nag");
 export const ParseCGNagPopn = CreateCGParser<CGPopnScore>("popn", "nag");
+export const ParseCGNagIIDX = CreateCGParser<CGIIDXScore>("iidx", "nag");

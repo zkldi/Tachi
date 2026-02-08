@@ -12,14 +12,17 @@ import {
 	ParseCGDevPopn,
 	ParseCGDevSDVX,
 	ParseCGDevJubeat,
+	ParseCGDevIIDX,
 	ParseCGGanMuseca,
 	ParseCGGanPopn,
 	ParseCGGanSDVX,
 	ParseCGGanJubeat,
+	ParseCGGanIIDX,
 	ParseCGNagMuseca,
 	ParseCGNagPopn,
 	ParseCGNagSDVX,
 	ParseCGNagJubeat,
+	ParseCGNagIIDX,
 } from "./common/api-cg/parsers";
 import ParseBatchManual from "./file/batch-manual/parser";
 import ParseEamusementIIDXCSV from "./file/eamusement-iidx-csv/parser";
@@ -59,16 +62,19 @@ export const Parsers = {
 	"api/cg-dev-popn": ParseCGDevPopn,
 	"api/cg-dev-museca": ParseCGDevMuseca,
 	"api/cg-dev-jubeat": ParseCGDevJubeat,
+	"api/cg-dev-iidx": ParseCGDevIIDX,
 
 	"api/cg-nag-sdvx": ParseCGNagSDVX,
 	"api/cg-nag-popn": ParseCGNagPopn,
 	"api/cg-nag-museca": ParseCGNagMuseca,
 	"api/cg-nag-jubeat": ParseCGNagJubeat,
+	"api/cg-nag-iidx": ParseCGNagIIDX,
 
 	"api/cg-gan-sdvx": ParseCGGanSDVX,
 	"api/cg-gan-popn": ParseCGGanPopn,
 	"api/cg-gan-museca": ParseCGGanMuseca,
 	"api/cg-gan-jubeat": ParseCGGanJubeat,
+	"api/cg-gan-iidx": ParseCGGanIIDX,
 
 	"api/myt-chunithm": ParseMytChunithm,
 	"api/myt-maimaidx": ParseMytMaimaiDx,

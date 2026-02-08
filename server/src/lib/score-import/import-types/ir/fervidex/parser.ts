@@ -6,6 +6,7 @@ import {
 	EXT_EPOLIS,
 	EXT_HEROIC_VERSE,
 	EXT_PINKYCRUSH,
+	EXT_SPARKLE_SHOWER,
 	EXT_RESIDENT,
 	EXT_ROOTAGE,
 	MODEL_IIDX,
@@ -158,6 +159,10 @@ export function SoftwareIDToVersion(
 					return "32";
 				} else if (data.rev === REV_OMNIMIX) {
 					return "32-omni";
+				}
+			} else if (EXT_SPARKLE_SHOWER.includes(data.ext)) {
+				if (data.rev === REV_NORMAL) {
+					return "33";
 				}
 			}
 		}
