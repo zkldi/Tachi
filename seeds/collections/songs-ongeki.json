@@ -3681,8 +3681,8 @@
 		"id": 305,
 		"searchTerms": [
 			"Dodonpachi dai ondo",
-			"daiondo",
-			"daifukkatsu"
+			"Dodonpachi daiondo",
+			"Daifukkatsu"
 		],
 		"title": "どどんぱち大音頭"
 	},
@@ -4386,7 +4386,8 @@
 		"id": 363,
 		"searchTerms": [
 			"Nouten chokugeki",
-			"Noten"
+			"Noten chokugeki",
+			"Brain attack"
 		],
 		"title": "脳天直撃"
 	},
@@ -6443,7 +6444,6 @@
 		},
 		"id": 532,
 		"searchTerms": [
-			"Ruler Count, Zero Suzushima Alice solo",
 			"Ruler Count, Zero Suzushima Arisu solo"
 		],
 		"title": "Ruler Count, Zero -珠洲島 有栖ソロver.-"
@@ -7556,7 +7556,6 @@
 		},
 		"id": 623,
 		"searchTerms": [
-			"Y.Y.Y. keikaku!!!! Suzushima Alice solo",
 			"Y.Y.Y. keikaku!!!! Suzushima Arisu solo"
 		],
 		"title": "Y.Y.Y.計画!!!! -珠洲島 有栖ソロver.-"
@@ -9260,7 +9259,6 @@
 		},
 		"id": 762,
 		"searchTerms": [
-			"STARRED HEART Suzushima Alice solo",
 			"STARRED HEART Suzushima Arisu solo"
 		],
 		"title": "STARRED HEART -珠洲島 有栖ソロver.-"
@@ -10541,7 +10539,6 @@
 		},
 		"id": 865,
 		"searchTerms": [
-			"YAMINABE PANIC ~gochisou tsumekomi full course~ Suzushima Alice solo",
 			"YAMINABE PANIC ~gochisou tsumekomi full course~ Suzushima Arisu solo"
 		],
 		"title": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～ -珠洲島 有栖ソロver.-"
@@ -11126,7 +11123,6 @@
 		},
 		"id": 913,
 		"searchTerms": [
-			"Ichigeki! no Thema Suzushima Alice solo",
 			"Ichigeki! no Thema Suzushima Arisu solo"
 		],
 		"title": "いちげき！のテーマ -珠洲島 有栖ソロver.-"
@@ -11875,7 +11871,6 @@
 		},
 		"id": 974,
 		"searchTerms": [
-			"Dramatic...? Suzushima Alice solo",
 			"Dramatic...? Suzushima Arisu solo"
 		],
 		"title": "Dramatic…？ -珠洲島 有栖ソロver.-"
@@ -12056,7 +12051,7 @@
 		"id": 988,
 		"searchTerms": [
 			"Yukiotoko",
-			"yuki otoko"
+			"Yuki otoko"
 		],
 		"title": "雪男"
 	},
@@ -12317,7 +12312,6 @@
 		},
 		"id": 1009,
 		"searchTerms": [
-			"Individual on parade! Suzushima Alice solo",
 			"Individual on parade! Suzushima Arisu solo"
 		],
 		"title": "Individual on parade! -珠洲島 有栖ソロver.-"
@@ -12685,8 +12679,7 @@
 		"id": 1039,
 		"searchTerms": [
 			"Kurutta minzoku",
-			"Prata",
-			"Bazooka",
+			"Prata Bazooka",
 			"Gyoza"
 		],
 		"title": "#狂った民族2 PRAVARGYAZOOQA"
@@ -13778,5 +13771,405 @@
 			"WakeUP MakeUP FEVER! Shinonome Tsumugi solo"
 		],
 		"title": "WakeUP MakeUP FEVER! -東雲 つむぎソロver.-"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：TAG／歌：井之原 小星(CV：ももの はるな)",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1129,
+		"searchTerms": ["Suki ga tomaranai"],
+		"title": "スキが止まらない！"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：RD-Sounds／歌：柏木 咲姫(CV：石見 舞菜香)",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1130,
+		"searchTerms": [],
+		"title": "in den Himmel steigen"
+	},
+	{
+		"altTitles": [],
+		"artist": "igel",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1131,
+		"searchTerms": ["Tenga yuuei"],
+		"title": "天河游泳"
+	},
+	{
+		"altTitles": [],
+		"artist": "安井洋介",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1132,
+		"searchTerms": [],
+		"title": "TAIKAN GAME"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yooh / Kobaryo",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1133,
+		"searchTerms": [],
+		"title": "Good bye, Merry-Go-Round. (Kobaryo's FTN-Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Alicemetix ex-ZAQUVA",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1134,
+		"searchTerms": [],
+		"title": "Xingularity"
+	},
+	{
+		"altTitles": [],
+		"artist": "rintaro soma",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1135,
+		"searchTerms": [],
+		"title": "girls.exe"
+	},
+	{
+		"altTitles": [],
+		"artist": "蓮ノ空女学院スクールアイドルクラブ",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1136,
+		"searchTerms": [],
+		"title": "Dream Believers (105期Ver.)"
+	},
+	{
+		"altTitles": [],
+		"artist": "蓮ノ空女学院スクールアイドルクラブ",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1137,
+		"searchTerms": ["I do me"],
+		"title": "アイドゥーミー！"
+	},
+	{
+		"altTitles": [],
+		"artist": "すりぃ×相沢",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1138,
+		"searchTerms": ["Ambivalence"],
+		"title": "アンビバレンス"
+	},
+	{
+		"altTitles": [],
+		"artist": "Shu feat. 七海うらら",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1139,
+		"searchTerms": ["Oshama na princess"],
+		"title": "おしゃまなプリンセス"
+	},
+	{
+		"altTitles": [],
+		"artist": "DIVELA feat.いゔどっと",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1140,
+		"searchTerms": ["Blood hunter"],
+		"title": "B100d Hunter"
+	},
+	{
+		"altTitles": [],
+		"artist": "40mP × sasakure.UK",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1141,
+		"searchTerms": ["Hajimari no mirai"],
+		"title": "はじまりの未来"
+	},
+	{
+		"altTitles": [],
+		"artist": "じん",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1142,
+		"searchTerms": [],
+		"title": "Worlders"
+	},
+	{
+		"altTitles": [],
+		"artist": "雨良 Amala",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1143,
+		"searchTerms": ["Dai dai dai dai dai kirai", "Daidaidaidaidaikirai"],
+		"title": "ダイダイダイダイダイキライ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Zekk",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1144,
+		"searchTerms": [],
+		"title": "Tachyon"
+	},
+	{
+		"altTitles": [],
+		"artist": "tn-shi",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1145,
+		"searchTerms": [],
+		"title": "lovelynonsense"
+	},
+	{
+		"altTitles": [],
+		"artist": "taichi hiyama",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1146,
+		"searchTerms": ["Rokurensei"],
+		"title": "六連星"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぼっちぼろまる",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1147,
+		"searchTerms": ["Tonosama beam"],
+		"title": "トノサマビーム"
+	},
+	{
+		"altTitles": [],
+		"artist": "Palette Project（暁月クララ、七海ロナ、常磐カナメ、藤宮コトハ、江波キョウカ、鬼多見アユム、香鳴ハノン）",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1148,
+		"searchTerms": ["Kimiiro chronicle"],
+		"title": "キミイロクロニクル"
+	},
+	{
+		"altTitles": [],
+		"artist": "RouteHeart（七海ロナ・藤宮コトハ）",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1149,
+		"searchTerms": ["Tokimeki kindan shoujou"],
+		"title": "トキメキ禁断症状"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sputrip（暁月クララ・香鳴ハノン・常磐カナメ）",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1150,
+		"searchTerms": ["Hikari no wakusei"],
+		"title": "光の惑星"
+	},
+	{
+		"altTitles": [],
+		"artist": "REGALILIA（江波キョウカ・鬼多見アユム）",
+		"data": {
+			"genre": "POPS＆ANIME"
+		},
+		"id": 1151,
+		"searchTerms": [],
+		"title": "MORAL"
+	},
+	{
+		"altTitles": [],
+		"artist": "魔界都市ニイガタ（黄泉路テヂーモ×dawn-system×かゆき）",
+		"data": {
+			"genre": "VARIETY"
+		},
+		"id": 1152,
+		"searchTerms": ["Ukiyoe yokochou"],
+		"title": "浮世絵横丁"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず FEAT. 月乃",
+		"data": {
+			"genre": "VARIETY"
+		},
+		"id": 1153,
+		"searchTerms": [],
+		"title": "I.M.I"
+	},
+	{
+		"altTitles": [],
+		"artist": "いるかアイス × Tanchiky feat. 初音ミク",
+		"data": {
+			"genre": "VARIETY"
+		},
+		"id": 1154,
+		"searchTerms": ["Yumetsumugi no wanderer"],
+		"title": "夢紡ぎのワンダラー"
+	},
+	{
+		"altTitles": [],
+		"artist": "かいりきベア",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1155,
+		"searchTerms": ["Saiai jinsei runner"],
+		"title": "最愛人生ランナー"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1156,
+		"searchTerms": ["We are Pico Pico Hammers!!!!"],
+		"title": "ウィーアーピコピコハンマーズ!!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "雄之助",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1157,
+		"searchTerms": ["Jet black"],
+		"title": "ジェットブラック"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ponchi♪ feat.初音ミク",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1158,
+		"searchTerms": ["Treasure garden"],
+		"title": "トレジャーガーデン"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1159,
+		"searchTerms": ["Denkousekka"],
+		"title": "電光刹歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "ARM＋夕野ヨシミ (IOSYS) feat.藤咲かりん",
+		"data": {
+			"genre": "東方Project"
+		},
+		"id": 1160,
+		"searchTerms": ["Marisa wa taihen na mono wo nusunde ikimashita", "Marisa stole the precious thing" ],
+		"title": "魔理沙は大変なものを盗んでいきました"
+	},
+	{
+		"altTitles": [],
+		"artist": "少女フラクタル",
+		"data": {
+			"genre": "東方Project"
+		},
+		"id": 1161,
+		"searchTerms": ["Samayoi no mei ~amatsu~"],
+		"title": "彷徨いの冥～天～"
+	},
+	{
+		"altTitles": [],
+		"artist": "きくお",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1162,
+		"searchTerms": ["Aishite Aishite Aishite"],
+		"title": "愛して愛して愛して"
+	},
+	{
+		"altTitles": [],
+		"artist": "なきそ",
+		"data": {
+			"genre": "niconico"
+		},
+		"id": 1163,
+		"searchTerms": ["Omajinai"],
+		"title": "お呪い"
+	},
+	{
+		"altTitles": [],
+		"artist": "アオワイファイ feat.犀羅",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1164,
+		"searchTerms": ["Furafurafura,"],
+		"title": "ふらふらふら、"
+	},
+	{
+		"altTitles": [],
+		"artist": "Cosmograph",
+		"data": {
+			"genre": "チュウマイ"
+		},
+		"id": 1165,
+		"searchTerms": [],
+		"title": "Straight into the lights"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：三角 葵(CV：春野 杏)",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1170,
+		"searchTerms": ["Kanjou acceleration Misumi Aoi solo"],
+		"title": "感情アクセラレイション -三角 葵ソロver.-"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：早乙女 彩華(CV：中島 唯)",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1171,
+		"searchTerms": ["Kanjou acceleration Saotome Ayaka solo"],
+		"title": "感情アクセラレイション -早乙女 彩華ソロver.-"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：柏木 咲姫(CV：石見 舞菜香)",
+		"data": {
+			"genre": "オンゲキ"
+		},
+		"id": 1172,
+		"searchTerms": ["Kanjou acceleration Kashiwagi Saki solo"],
+		"title": "感情アクセラレイション -柏木 咲姫ソロver.-"
 	}
 ]

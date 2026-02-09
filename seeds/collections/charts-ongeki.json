@@ -7713,6 +7713,27 @@
 		]
 	},
 	{
+		"chartID": "e4d0af176c4b8b48b49a488eb8260bc4a540a819",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/luna/01048luna.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": true,
+			"maxPlatScore": 2948
+		},
+		"difficulty": "LUNATIC",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.7,
+		"playtype": "Single",
+		"songID": 79,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
 		"chartID": "444b10cf67d24e4f7255e7bf00654b9a5dd2c8ec",
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/01/01048mst.htm",
@@ -102817,6 +102838,3270 @@
 		"levelNum": 12.6,
 		"playtype": "Single",
 		"songID": 1128,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b98b7fa6d850818e006de6ada3712eea50795e34",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1328
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.7,
+		"playtype": "Single",
+		"songID": 1129,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "156a468e944f3b2f15c004979416e672dce1ef98",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1312
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1129,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "3d92b26341853a883436b113e96417256b596201",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05055exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2732
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.8,
+		"playtype": "Single",
+		"songID": 1129,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b53349c6103537d2c1bdc6b4e49be73e71e2d013",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05055mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3276
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.7,
+		"playtype": "Single",
+		"songID": 1129,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "bf5059b6d4f504698bc252a0467eba6528db2808",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 974
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1130,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9fa30b83a3fe3794806f9ca18df63de1c95484fb",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 766
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1130,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "ff677a96ece6e75d92d6403eee78cde4f9551439",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05056exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2350
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.1,
+		"playtype": "Single",
+		"songID": 1130,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "3ffe239023e297a23cb11a8e999bbe5e6422f348",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05056mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3840
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.7,
+		"playtype": "Single",
+		"songID": 1130,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "5b6ef8d288e7fc1ad83800c1a36ce53a9ef3d9e3",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1114
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1131,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "360a0c05e4c26c8100747c54a1ca918840fe6146",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 706
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1131,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "02ecb58c2fde961b5c70a1dfedaa594f7fcfcdee",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05057exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2224
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12,
+		"playtype": "Single",
+		"songID": 1131,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "23c78d8f790b7efe068f447850a51e9b028393c0",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05057mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2586
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.3,
+		"playtype": "Single",
+		"songID": 1131,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "07157f3616bc887054a0e0e62c00a08b50ceda7c",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1216
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"playtype": "Single",
+		"songID": 1132,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f6f3395197fd6287fbff663a143e1d33ec775ac7",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 842
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1132,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e3db16188ec9ffbf460bc3a691b784090121793d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05058exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2146
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1132,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e316d900ac52697e4bf6a8550c5ce6844026a673",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05058mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2844
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.2,
+		"playtype": "Single",
+		"songID": 1132,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "ce8e96a1635eee7cc70675f0e31fe12691da89aa",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1362
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"playtype": "Single",
+		"songID": 1133,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6b01f8623274c3328ad1f83b3c187415c1a4ba79",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 768
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1133,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "470b353f5693dfdb491030502465c76eec776549",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05059exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2112
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.1,
+		"playtype": "Single",
+		"songID": 1133,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f57227f0808b58f8e2f2c51d4f5b9fd683aa8b6e",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05059mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3000
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.9,
+		"playtype": "Single",
+		"songID": 1133,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1828249b890be435034e897ee29454c0d453ba7f",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1014
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1134,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "06d79ecde6a4f92f35d9720e9648b76cb7a569ae",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 602
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1134,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "7b77141019ce2f1dca51753f451d8e9f21314bfe",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05060exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2048
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1134,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e777d21ac2cf5c9908985de77a6ca9da576a6645",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05060mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2652
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.8,
+		"playtype": "Single",
+		"songID": 1134,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "62426d493344017e2344ffd6619e97d162b5ebd4",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05061adv.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2088
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.7,
+		"playtype": "Single",
+		"songID": 1135,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "172914b3f43f20bc60e8a68fa20687e020f817e1",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1120
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1135,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9d1e7f92f81002a773380375199fa1a780f8e864",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05061exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2440
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.2,
+		"playtype": "Single",
+		"songID": 1135,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "c291bfb32072e85b116ccff2d78112e58e034f66",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05061mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 4396
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "15",
+		"levelNum": 15.5,
+		"playtype": "Single",
+		"songID": 1135,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "c4d100c0ea30065b9ebf417f7da67e91b6a5c7a8",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1206
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1136,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "61838c9caa18afc96e877437dc3a23bc051bb709",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 630
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1136,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b059adbcc387236c669dcc93e49d7c9527fbffac",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1654
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1136,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e89e651479e1d938a83c0829445d8efa0991aa5b",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05062mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2512
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.9,
+		"playtype": "Single",
+		"songID": 1136,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "84b0bd3077ba5519be4e9129cfa3b2f4881c6551",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 678
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.7,
+		"playtype": "Single",
+		"songID": 1137,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "2e6e2c0d4ddabc72d57fc9c094d467d91e4c5481",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 530
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1137,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "d4e68ed4bb2df1e6465e30a776462cc4678f9942",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1174
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"playtype": "Single",
+		"songID": 1137,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "cb122aa8c1151719cd72e0879470c7574db12b69",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05063mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2222
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.8,
+		"playtype": "Single",
+		"songID": 1137,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "39b9954e30a5c74c5e29d8a2394aff5ef03cbc12",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1424
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"playtype": "Single",
+		"songID": 1138,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "73fe8743dd03e6ffc48cf0d2e73ab183bb1f8c11",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1200
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1138,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f401bc4fb696c346c6499c1ef9b9b9bf6d8e9b0f",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05064exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2008
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11,
+		"playtype": "Single",
+		"songID": 1138,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b64f9c43091ddc555d70169fb33b23d33eb4e2a5",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05064mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3024
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.3,
+		"playtype": "Single",
+		"songID": 1138,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "29443870869cfcfc6180355c6d46f3a97eabd6af",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1204
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1139,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "982f4da9f21f39ba150a6f6bdac6c6347a83d6fd",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 998
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1139,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "a3c46469fd8f50a05d1f691a6f5e53ca762ca3f4",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05066exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2140
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.2,
+		"playtype": "Single",
+		"songID": 1139,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6b93fc66ec63a7a088addaa1b8f79868615e7fe2",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05066mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3246
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.3,
+		"playtype": "Single",
+		"songID": 1139,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "60cc9b64f86acd1ed42413a921bef5ca7ced4432",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1092
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1140,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4c04b7dd4b10c4089fda6235654d42332a4b15c7",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 492
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1140,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "93414b981882a685521b67a6566ee14247792c0c",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05065exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2272
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.7,
+		"playtype": "Single",
+		"songID": 1140,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "512ef901d6388994f1e692cd814bbc69c3875181",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05065mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2834
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.5,
+		"playtype": "Single",
+		"songID": 1140,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4425a69c81c48499d989893a87030cbb073eeea4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 844
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1141,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b38087156edaaa7e8610f4f8a851c51477a84867",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 882
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1141,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "95edc9f1b22622f37d186f20ecdd6bd7c43bbb75",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1306
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"playtype": "Single",
+		"songID": 1141,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1e95e77b93ca43b9267e57adb097a1cce62acde7",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05067mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1858
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.5,
+		"playtype": "Single",
+		"songID": 1141,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "96fef4936c7d11b38ce79b11b5ad3682725487c9",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 652
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1142,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "3929e72077e5d812676373b5a8e9de31f0ad3068",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 534
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1142,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "7e044827e4b1271e336d6014b4a645d066b5f268",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1206
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"playtype": "Single",
+		"songID": 1142,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "24582331ac443c29f31970fdd6bccdfff790ddb4",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05068mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2352
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1142,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "86cf62374c7ba2c87686dce3ff215fe68eb62cd4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 984
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1143,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "954eee669e55e22c8f6973b70ee2a46af3fb7ea5",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 636
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1143,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6c6f7afacc1d6940c7b3f3ba648170a05d93eab3",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1400
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"playtype": "Single",
+		"songID": 1143,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "51af8412145257012cf2c994f1d33026d0e3b450",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05069mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2296
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.4,
+		"playtype": "Single",
+		"songID": 1143,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "af4b1260cd3ee5cdbe9d38ff5b16321863c7e203",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1546
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"playtype": "Single",
+		"songID": 1144,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6a06c7c5eb7487ff3b568a2e385b4aeaf5dc1cec",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 772
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1144,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "d43460dcad99529141901245b61498b70e001841",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05070exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2948
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.6,
+		"playtype": "Single",
+		"songID": 1144,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "86b28310fe3f425b1a2fa4d04f6afc910dfebf2d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05070mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2906
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.4,
+		"playtype": "Single",
+		"songID": 1144,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6651056e8065b9b6ccc861aae1b325c38030945a",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1946
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"playtype": "Single",
+		"songID": 1145,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4a0951beb0b8c64f8774bb4e6e801c750a693a7a",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1140
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1145,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "64f0e498ffe7f1e48106ee1755f9697f3210a1f7",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05071exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3388
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.2,
+		"playtype": "Single",
+		"songID": 1145,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "8912eef2223f547c586765d961b192fb62eb1154",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05071mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 4520
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "15",
+		"levelNum": 15.4,
+		"playtype": "Single",
+		"songID": 1145,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "c2a7cbaa8f177b6920467c89c2c5d87654d68505",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1126
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1146,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9fccb758788b2fee1f82c9899317bd9f38b5c0e1",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 660
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1146,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f36e64ba0b6cd80b3e6131df8898aa43c8167af2",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05073exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2018
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.7,
+		"playtype": "Single",
+		"songID": 1146,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "148ae9c9c99311b82ec9b7cf1740a68cef29d881",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05073mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2266
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.2,
+		"playtype": "Single",
+		"songID": 1146,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4a7a8031ab85b7ea407261bbaba8f59a5dc7abc5",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1130
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1147,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "92afa4d9cfafea73659fb1588cd2737d4f90bd16",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 818
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1147,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6016335d065b63c0e4898e78a4fdc64d616a68d4",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05072exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1464
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.4,
+		"playtype": "Single",
+		"songID": 1147,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e464fe717c70682cca06470a100bef9fcb3bf1d5",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05072mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2350
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.6,
+		"playtype": "Single",
+		"songID": 1147,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "a65cb9e478956e5be3904b9586a8a5fa12b4a559",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1568
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"playtype": "Single",
+		"songID": 1148,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "25d252de6745919e70d71d2fb7fefb9c2da4a985",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 932
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1148,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "ac620fb134328031f1fecc7803a70d78206b8913",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2388
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"playtype": "Single",
+		"songID": 1148,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e15ebefe14ccbd0c5b21919d016a0d3f2a3d5ef7",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05074mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3760
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.1,
+		"playtype": "Single",
+		"songID": 1148,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b8656a38ac1ef517e942055666f99aa81e24a238",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 916
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1149,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "15366a508237497e4accf293c2fe268e9de38130",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 678
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1149,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "8dda61c16352dc80f025a2e9474e8ede35a93023",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1426
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1149,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "0cb2c83c27ecbc28bf8ccab3da5fcc7c97ce9d5f",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05075mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2000
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.3,
+		"playtype": "Single",
+		"songID": 1149,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e9d97b6055c0be50c85b63efc2d1d7ea837bbfb7",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1572
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1150,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "70cc5fc978f34bbd408f6f76741132cad38a0028",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1116
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1150,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f0872889df1c0a2b95291d649679d1353aa9460a",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2200
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"playtype": "Single",
+		"songID": 1150,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "a8993fd5e61345a07a13a7b0e1a7fce8c9a98a24",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05076mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3348
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1150,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "d2d80321da0ae05b903ce22f54a85f9f714a3c63",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2350
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1151,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f6379668ad7e4c94959a90ec84a9613158b1dc65",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1060
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1151,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "663f2d022e7aa858edcb78ee1ff73d61bef629fc",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05077exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2400
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.8,
+		"playtype": "Single",
+		"songID": 1151,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1ce9d513ce31f3aa3934120a544e33da0e83fa62",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05077mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3648
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.7,
+		"playtype": "Single",
+		"songID": 1151,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "78118526740de8ed1343dc52fe3726e8945e28f7",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1376
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1152,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "6fe75013aa1fbfa260ab721b71e7bb5c8525c1bc",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 654
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1152,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "759c5933643e466cadd3d9c0aee3a6c05551d17b",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05078exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1906
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.3,
+		"playtype": "Single",
+		"songID": 1152,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "0dc2e2df322dcffca8b25fa0df431b87a66b416d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05078mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3396
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.9,
+		"playtype": "Single",
+		"songID": 1152,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "98b189a9adf269de58515e8db061d186cbb700a4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1386
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1153,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "fd7538e62dc73cd6bef18e16413ea1c786eab732",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1068
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1153,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9b164f4787e560ed196e4b479d1f457fa0d46a7b",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05079exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2232
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.5,
+		"playtype": "Single",
+		"songID": 1153,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "7b5458f5622f484cad1fa49f6e7d86929f0682f7",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05079mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3522
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14,
+		"playtype": "Single",
+		"songID": 1153,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "77131fd6592d362e2867bf7bdf03aab861242110",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1440
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1154,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "3291c4804e4eed82ad11f20f19da6f82b6576026",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 908
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1154,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "60532ffab101a83a714c64a112aea795a22e724d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05080exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2376
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.3,
+		"playtype": "Single",
+		"songID": 1154,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "773a7622561a7bba0c92123b79a99d7c9a6ec6ed",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05080mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2940
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.2,
+		"playtype": "Single",
+		"songID": 1154,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "71c0756fa002a8bdb54a9a3d06007dc70a2a3696",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1264
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"playtype": "Single",
+		"songID": 1155,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9ee4de212fa5a1954840e804510e1e7fc65893f2",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 856
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1155,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "703e69d7c8403f9dccecf3dba6e5e12ac1b66926",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05081exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1916
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.3,
+		"playtype": "Single",
+		"songID": 1155,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "94100a578c8124828790375fe68945d7eb7fb4cd",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05081mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3570
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.8,
+		"playtype": "Single",
+		"songID": 1155,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "d1cb9746fbe6acb224928a4e3451cf78699c0f97",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1536
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1156,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "163ef2da66bf1a088a088ef13a2bc0d7fe85dbfd",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 976
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1156,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "85aeef5bd0d44b5c3792d25f4c99309e783a9fd8",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05082exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2570
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1156,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "8422655dcfd69c895b130fc1e4186a8c00cf1dba",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05082mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3442
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.5,
+		"playtype": "Single",
+		"songID": 1156,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "36dbdb2346341f4b19d2c9db41ba6881ca03ed7b",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1120
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.7,
+		"playtype": "Single",
+		"songID": 1157,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "321bcdfae7ae564ff7d0a601208015a717f17237",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 758
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1157,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "aecad05ffec5c4ace31feac79050fced3e6ec0d4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1640
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"playtype": "Single",
+		"songID": 1157,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e065a525043dc3b4eff55358e998593fccd5ce04",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05083mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2920
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.5,
+		"playtype": "Single",
+		"songID": 1157,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "65d790eb58a8b791f16f14af69c3258bccf3042e",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1320
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"playtype": "Single",
+		"songID": 1158,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "85c26e92fe6d606e9bb802a28b97780a8b695424",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 862
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1158,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "fa16d8881400d232977ff15e453a080adccf13ce",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05084exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2188
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12",
+		"levelNum": 12.4,
+		"playtype": "Single",
+		"songID": 1158,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "74367d2594e1167d0c0d4438ce33b44241364947",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05084mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3194
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.4,
+		"playtype": "Single",
+		"songID": 1158,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "84749a3c20fa8714de5c03b28ce9563bc56ce577",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1230
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1159,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "be7e861fcf0ae1a7e9ade51625e9c8e9ad3fc232",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 674
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1159,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1de4226346331d9bbae80457cb89c714be8de388",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05085exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1984
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.9,
+		"playtype": "Single",
+		"songID": 1159,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "91bcf8b215ce494429eac5421afb286ba514c6f6",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05085mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3520
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.9,
+		"playtype": "Single",
+		"songID": 1159,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "c66fc48b0b7c4d39498e5a064f4219bcee59e305",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 868
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"playtype": "Single",
+		"songID": 1160,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "dbf7a19fe02102e3dacbc5f22cadeddba7c2bece",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 582
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1160,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4c76879870c062684fa18c37cfc73749c0527306",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05086exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1410
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.2,
+		"playtype": "Single",
+		"songID": 1160,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e545168bf53c87a3f3a2b4c17b1efbb5416c522a",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05086mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2336
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14",
+		"levelNum": 14.5,
+		"playtype": "Single",
+		"songID": 1160,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1745f1c118ff9ddd3b18f1c0635f916348e51176",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 984
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1161,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "dd949bad6c7308e461cb55901f70e3626b79450f",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 654
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"playtype": "Single",
+		"songID": 1161,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "41f9e44360ffdf8d395d9f897e33b3dfdd621a7c",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1792
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"playtype": "Single",
+		"songID": 1161,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9be929eb6804b2d2106c3e9d506010e08977728d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05087mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2440
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13.3,
+		"playtype": "Single",
+		"songID": 1161,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "f58653946b44fd237ca1cde6752bb71171e1ac14",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1282
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"playtype": "Single",
+		"songID": 1162,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "8b7a19255a1bf308164fd07d74a77cb3d2df19de",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 742
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1162,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "a277682d80422b1226de0ac74270d3b41267422d",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1980
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"playtype": "Single",
+		"songID": 1162,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "b5cf28111b480a4ce924cc5a7ee90696a2756c61",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05090mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2852
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "14+",
+		"levelNum": 14.9,
+		"playtype": "Single",
+		"songID": 1162,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "ed9f51c4e191082ce683ef33e0ee8b2a96e877e4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 842
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.7,
+		"playtype": "Single",
+		"songID": 1163,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "76552d96fda3c647795e6d34aa01245a5b773ce4",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 808
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"playtype": "Single",
+		"songID": 1163,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "764b4a93e2f7ab594e53331d152583048e36e9c1",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05091exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1428
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.7,
+		"playtype": "Single",
+		"songID": 1163,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e0f994b5aa623943eaba2b1b111f267e591bc62e",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05091mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2676
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.9,
+		"playtype": "Single",
+		"songID": 1163,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "8d1d32e73f0b3daba1db8748dda2470a6778a62d",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 944
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"playtype": "Single",
+		"songID": 1164,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e2bc76ad82438b3eae5ff9b2cfbda9477a0f22af",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 458
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1164,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "13a38f3aa3fcc3c62d81c641df0e1832c073ed9c",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05088exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1436
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.8,
+		"playtype": "Single",
+		"songID": 1164,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e88c389922e7603a4455f12f4b91b8c721f53d9b",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05088mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2282
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13+",
+		"levelNum": 13.9,
+		"playtype": "Single",
+		"songID": 1164,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "992212d6303b7fbbdabede583edc2ae61b5f75dd",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 1622
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"playtype": "Single",
+		"songID": 1165,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "a4f7060c771ef1748f09edb006c12d5e75227e25",
+		"data": {
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 990
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"playtype": "Single",
+		"songID": 1165,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "4559e62bafa5b9bca23d0719f7294861abca261b",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05089exp.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 2340
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "12+",
+		"levelNum": 12.8,
+		"playtype": "Single",
+		"songID": 1165,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "03adecfb23dec4a721da4e7e137f5d4fdbd3b56d",
+		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/05/05089mst.htm",
+			"displayVersion": "オンゲキ Re:Fresh",
+			"inGameID": null,
+			"isBonusTrack": false,
+			"isReMaster": false,
+			"maxPlatScore": 3354
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "15",
+		"levelNum": 15,
+		"playtype": "Single",
+		"songID": 1165,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "cabd8b98233bacd9061702848d2c33fa211b54cc",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1236
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1170,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "e1c0d3c58924d2c855a4a7d62a736b27ae98a3df",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 672
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1170,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "1512afaf1e5abcd87e8a8c1dce70a1f4cc4839b0",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1754
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1170,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "9d7cea16abafec03360c6bc030eb770f585863b2",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 2600
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13,
+		"playtype": "Single",
+		"songID": 1170,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "62f6f5ff3f068b7b40ec028d7534662bc5d201f0",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1236
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1171,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "584322ae25be76dbcc6b953ccdb449e10c409022",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 672
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1171,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "2a2d707c219bbab4b82b50b81abeba798b530318",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1754
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1171,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "295882f598af4c15d9f6771e1ccf98dccc7234e8",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 2600
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13,
+		"playtype": "Single",
+		"songID": 1171,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "bd0969c319cb6507a1b17a30a78dc54d906ee9cf",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1236
+		},
+		"difficulty": "ADVANCED",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"playtype": "Single",
+		"songID": 1172,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "684ccd71a49e10f0a3806e86ff31d4ea1a69a15e",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 672
+		},
+		"difficulty": "BASIC",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"playtype": "Single",
+		"songID": 1172,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "d42644ced5534672bbec644a33e2743b8a68a32f",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 1754
+		},
+		"difficulty": "EXPERT",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9,
+		"playtype": "Single",
+		"songID": 1172,
+		"versions": [
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"chartID": "df8cf5190a338429516525d236141a6a4e1ea988",
+		"data": {
+			"displayVersion": "オンゲキ bright MEMORY Act.1",
+			"inGameID": null,
+			"isBonusTrack": true,
+			"isReMaster": false,
+			"maxPlatScore": 2600
+		},
+		"difficulty": "MASTER",
+		"isPrimary": true,
+		"level": "13",
+		"levelNum": 13,
+		"playtype": "Single",
+		"songID": 1172,
 		"versions": [
 			"refresh",
 			"refreshOmni"
