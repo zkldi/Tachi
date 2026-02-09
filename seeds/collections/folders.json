@@ -49943,13 +49943,73 @@
 	},
 	{
 		"data": {
+			"data¬genre": "LUNATIC",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "F059268c2f5fe90988e139e8c3ba7decbefc1f7758c5d28ac299bfe6492384634",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "LUNATIC-only (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "LUNATIC",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F5043cdd2d9d56c39f98760d97029ae232e273f9f61a94c926d2341b7a9a7c26f",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "LUNATIC-only (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "LUNATIC",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "F56ff99be0be1d071e8b6921a460cf70df92c577993115b9feb857a0514862fa0",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "LUNATIC-only (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
 			"data": {
 				"genre": "LUNATIC"
 			}
 		},
 		"folderID": "F9d16ef4904c44f91ae78d8c71c7b1ddf19e8706006fb93e80be277bc97bdae1e",
 		"game": "ongeki",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "LUNATIC-only songs",
@@ -50065,6 +50125,126 @@
 	},
 	{
 		"data": {
+			"data¬genre": "niconico",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "F5a8941ce35f391adc7128d20bf396528e5e854ee89c7e8c46afcad2f14dd0c46",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "niconico (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "niconico",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fad8302aa02e59664ae10e556ebf6492b2622a8e1b94433728589257846f049e8",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "niconico (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "niconico",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "F2b9e545c5ea522f5d0d1856c39601b9935c32304d82a24da0de8bc65b2b51347",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "niconico (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "POPS＆ANIME",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "Fcf6de08ad489e93719c1af416a732d8b7cb62658e78d2305273dc6957457f237",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "POPS＆ANIME (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "POPS＆ANIME",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F61351354e4367d2e6d1e5b9803e806d7a3e022a023f31e4d752c05f8619bb8bd",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "POPS＆ANIME (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "POPS＆ANIME",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "F4c4d241ebabc5c60d8011e0729603a2382a664b580f6d9fb18a541b1cc019088",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "POPS＆ANIME (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
 			"data¬isReMaster": true,
 			"difficulty": "LUNATIC",
 			"versions": "brightMemory3Omni"
@@ -50147,6 +50327,246 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Re:MASTER (Re:Fresh) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "VARIETY",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "Fff189673a21a1a6cc39e9ded0e2236028aaad3c18883d7351f58e97e9c789fc3",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "VARIETY (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "VARIETY",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F9e093f592ed325576c302afa878148062f51bcf7ce5b32f9a45ebe7e38255822",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "VARIETY (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "VARIETY",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "Ffd5a1377a180ac7968a3614243ceba5ef920c9003c26aad8d3c7628e49b5f5d7",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "VARIETY (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "オンゲキ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "F3eed5934da2a2e056d1b8fd121c92096cfe75f1340dc90dd325d2369b17f7faf",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "オンゲキ (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "オンゲキ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F568c84ff5c1315e44a80ea65c378e523e271e04ddee25c366d1212e8cfb1a565",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "オンゲキ (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "オンゲキ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "Ffabe05583d371a6d421610ffa5eba8c2f1509f5225d727281e409550b0766945",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "オンゲキ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "チュウマイ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "F101167e11074fd74718d1fb28d4e2561c9a0f3355f8ba43009ba38c7cf8ba70e",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "チュウマイ (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "チュウマイ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F15a73f282b03b20f95be6b362232ea5e5c918d01f552b2d51696f5956c57dc46",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "チュウマイ (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "チュウマイ",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "F5f2c09ccada8a9d48a26d41dfda88e60c641a4944459ff4834e9ab65886e8d29",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "チュウマイ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "東方Project",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "brightMemory3Omni"
+		},
+		"folderID": "F99ad6b471f9ccb1acd026c8aa1820bf5325bc582320bf06f11018a532302c6a5",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "東方Project (bright MEMORY Act.3 Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "東方Project",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refreshOmni"
+		},
+		"folderID": "F82a03c3ad15db9e427b62b7a7a93aad7eaa8abe9aad94f304b991c8ddb60e55d",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "東方Project (Re:Fresh Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬genre": "東方Project",
+			"data¬isBonusTrack": false,
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"LUNATIC"
+				]
+			},
+			"versions": "refresh"
+		},
+		"folderID": "Fc280560186057ead7d50ec5dbfe33df95c4e5127c8a068360da1b1572ddbb6cc",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "東方Project (Re:Fresh)",
 		"type": "charts"
 	},
 	{

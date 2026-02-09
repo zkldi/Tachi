@@ -9,16 +9,6 @@ export const ONGEKI_CONF = {
 	name: "O.N.G.E.K.I.",
 	playtypes: ["Single"],
 	songData: z.strictObject({
-		genre: z.enum([
-			"POPS＆ANIME",
-			"niconico",
-			"東方Project",
-			"VARIETY",
-			"チュウマイ",
-			"オンゲキ",
-			"LUNATIC",
-			"ボーナストラック",
-		]),
 		duration: z.number().optional(),
 	}),
 } as const satisfies INTERNAL_GAME_CONFIG;
@@ -222,6 +212,16 @@ export const ONGEKI_SINGLE_CONF = {
 			"オンゲキ bright MEMORY Act.2",
 			"オンゲキ bright MEMORY Act.3",
 			"オンゲキ Re:Fresh",
+		]),
+		genre: z.enum([
+			"POPS＆ANIME",
+			"niconico",
+			"東方Project",
+			"VARIETY",
+			"チュウマイ",
+			"オンゲキ",
+			"LUNATIC",
+			"ボーナストラック",
 		]),
 		isBonusTrack: z.boolean(),
 		isReMaster: z.boolean(),

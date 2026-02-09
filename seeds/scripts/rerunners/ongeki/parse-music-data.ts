@@ -111,9 +111,7 @@ const main = async () => {
 					altTitles: [],
 					searchTerms: [],
 					artist: inputSong.artist,
-					data: {
-						genre: inputSong.genre as any,
-					} as any,
+					data: {},
 					title: inputSong.name,
 				};
 				changes.songs.push(song.title);
@@ -153,6 +151,7 @@ const main = async () => {
 					songID: song.id,
 					data: {
 						displayVersion: ver as any,
+						genre: inputSong.genre as any,
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
 						isReMaster: inputSong.isReMaster,

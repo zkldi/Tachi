@@ -1410,6 +1410,7 @@ export const TestingOngekiChart: ChartDocument<"ongeki:Single"> = {
 	chartID: "213796bdb6150f80ba6412ce69df1249e16c0cb0",
 	data: {
 		displayVersion: "オンゲキ bright MEMORY Act.3",
+		genre: "POPS＆ANIME",
 		inGameID: 2137,
 		maxPlatScore: 1000,
 		isReMaster: false,
@@ -1465,6 +1466,7 @@ export const TestingOngekiChartConverter: ChartDocument<"ongeki:Single"> = {
 	chartID: "e5e4ee3d4feb233c399751b3ba3daf8ba149c9e6",
 	data: {
 		displayVersion: "オンゲキ bright",
+		genre: "POPS＆ANIME",
 		inGameID: 678,
 		maxPlatScore: 2768,
 		isReMaster: false,
@@ -1483,7 +1485,6 @@ export const TestingOngekiSongConverter: SongDocument<"ongeki"> = {
 	altTitles: ["SENOTETOHETSUTEITSUTENNO"],
 	artist: "本城香澄（CV：岩橋由佳）「Re:ステージ！プリズムステップ」",
 	data: {
-		genre: "POPS＆ANIME",
 		duration: 120,
 	},
 	id: 683,
