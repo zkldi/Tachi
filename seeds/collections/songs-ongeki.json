@@ -7,9 +7,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1,
-		"searchTerms": [
-			"Kimi no shiranai monogatari"
-		],
+		"searchTerms": ["Kimi no shiranai monogatari", "The Story You Don't Know"],
 		"title": "君の知らない物語"
 	},
 	{
@@ -20,9 +18,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 2,
-		"searchTerms": [
-			"Sugar song to bitter step"
-		],
+		"searchTerms": ["Sugar Song to Bitter Step", "Sugar Song and Bitter Step"],
 		"title": "シュガーソングとビターステップ"
 	},
 	{
@@ -33,9 +29,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 3,
-		"searchTerms": [
-			"Maware! Setsugetsuka"
-		],
+		"searchTerms": ["Maware! Setsugetsuka"],
 		"title": "回レ！雪月花"
 	},
 	{
@@ -46,9 +40,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 4,
-		"searchTerms": [
-			"Youkoso Japari Park e"
-		],
+		"searchTerms": ["Youkoso Japari Park e"],
 		"title": "ようこそジャパリパークへ"
 	},
 	{
@@ -59,9 +51,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 5,
-		"searchTerms": [
-			"Fattoshite tougenkyou"
-		],
+		"searchTerms": ["Fattoshite Tougenkyou"],
 		"title": "ファッとして桃源郷"
 	},
 	{
@@ -72,9 +62,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 6,
-		"searchTerms": [
-			"Kakushinteki metamaruphose!"
-		],
+		"searchTerms": ["Kakushinteki metamaruphose!"],
 		"title": "かくしん的☆めたまるふぉ～ぜっ!"
 	},
 	{
@@ -129,9 +117,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 11,
-		"searchTerms": [
-			"Tori no uta"
-		],
+		"searchTerms": ["Tori no uta"],
 		"title": "鳥の詩"
 	},
 	{
@@ -153,9 +139,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 13,
-		"searchTerms": [
-			"Tokimeki experience!"
-		],
+		"searchTerms": ["Tokimeki experience!"],
 		"title": "ときめきエクスペリエンス！"
 	},
 	{
@@ -177,9 +161,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 15,
-		"searchTerms": [
-			"Shuwarin dreamin'"
-		],
+		"searchTerms": ["Shuwarin dreamin'"],
 		"title": "しゅわりん☆どり〜みん"
 	},
 	{
@@ -201,9 +183,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 17,
-		"searchTerms": [
-			"Egao no orchestra!"
-		],
+		"searchTerms": ["Egao no orchestra!"],
 		"title": "えがおのオーケストラっ！"
 	},
 	{
@@ -214,9 +194,7 @@
 			"genre": "niconico"
 		},
 		"id": 18,
-		"searchTerms": [
-			"Noushou sakuretsu girl"
-		],
+		"searchTerms": ["Noushou sakuretsu girl"],
 		"title": "脳漿炸裂ガール"
 	},
 	{
@@ -227,9 +205,7 @@
 			"genre": "niconico"
 		},
 		"id": 19,
-		"searchTerms": [
-			"Amanojaku"
-		],
+		"searchTerms": ["Amanojaku"],
 		"title": "天ノ弱"
 	},
 	{
@@ -240,9 +216,7 @@
 			"genre": "niconico"
 		},
 		"id": 20,
-		"searchTerms": [
-			"Okochama sensou"
-		],
+		"searchTerms": ["Okochama sensou"],
 		"title": "おこちゃま戦争"
 	},
 	{
@@ -253,9 +227,7 @@
 			"genre": "niconico"
 		},
 		"id": 21,
-		"searchTerms": [
-			"Rokuchounen to ichiya monogatari"
-		],
+		"searchTerms": ["Rokuchounen to ichiya monogatari"],
 		"title": "六兆年と一夜物語"
 	},
 	{
@@ -266,9 +238,7 @@
 			"genre": "niconico"
 		},
 		"id": 22,
-		"searchTerms": [
-			"Senbonzakura"
-		],
+		"searchTerms": ["Senbonzakura"],
 		"title": "千本桜"
 	},
 	{
@@ -279,9 +249,7 @@
 			"genre": "niconico"
 		},
 		"id": 23,
-		"searchTerms": [
-			"Kimi no yozora shoukaihan"
-		],
+		"searchTerms": ["Kimi no yozora shoukaihan"],
 		"title": "キミノヨゾラ哨戒班"
 	},
 	{
@@ -292,9 +260,7 @@
 			"genre": "niconico"
 		},
 		"id": 24,
-		"searchTerms": [
-			"Kibori namazu to migikata zombie"
-		],
+		"searchTerms": ["Kibori namazu to migikata zombie"],
 		"title": "木彫り鯰と右肩ゾンビ"
 	},
 	{
@@ -305,9 +271,7 @@
 			"genre": "niconico"
 		},
 		"id": 25,
-		"searchTerms": [
-			"Oni KYOKAN"
-		],
+		"searchTerms": ["Oni KYOKAN"],
 		"title": "鬼KYOKAN"
 	},
 	{
@@ -318,9 +282,7 @@
 			"genre": "niconico"
 		},
 		"id": 26,
-		"searchTerms": [
-			"Bokura no 16bit warz"
-		],
+		"searchTerms": ["Bokura no 16bit Warz"],
 		"title": "ぼくらの16bit戦争"
 	},
 	{
@@ -332,7 +294,8 @@
 		},
 		"id": 27,
 		"searchTerms": [
-			"Hatsune Miku no gekishou"
+			"Hatsune Miku no Gekishou",
+			"The Intense Voice of Hatsune Miku"
 		],
 		"title": "初音ミクの激唱"
 	},
@@ -344,9 +307,7 @@
 			"genre": "niconico"
 		},
 		"id": 28,
-		"searchTerms": [
-			"Hibikase"
-		],
+		"searchTerms": ["Hibikase"],
 		"title": "ヒビカセ"
 	},
 	{
@@ -357,9 +318,7 @@
 			"genre": "niconico"
 		},
 		"id": 29,
-		"searchTerms": [
-			"Greenlights serenade"
-		],
+		"searchTerms": ["Greenlights Serenade"],
 		"title": "グリーンライツ・セレナーデ"
 	},
 	{
@@ -370,9 +329,7 @@
 			"genre": "niconico"
 		},
 		"id": 30,
-		"searchTerms": [
-			"Suna no wakusei feat. HATSUNE MIKU"
-		],
+		"searchTerms": ["Suna no Wakusei", "Dune", "Sand Planet"],
 		"title": "砂の惑星 feat. HATSUNE MIKU"
 	},
 	{
@@ -383,9 +340,7 @@
 			"genre": "niconico"
 		},
 		"id": 31,
-		"searchTerms": [
-			"Ghost rule"
-		],
+		"searchTerms": ["Ghost Rule"],
 		"title": "ゴーストルール"
 	},
 	{
@@ -396,9 +351,7 @@
 			"genre": "niconico"
 		},
 		"id": 32,
-		"searchTerms": [
-			"Buriki no dance"
-		],
+		"searchTerms": ["Buriki no Dance"],
 		"title": "ブリキノダンス"
 	},
 	{
@@ -420,9 +373,7 @@
 			"genre": "東方Project"
 		},
 		"id": 34,
-		"searchTerms": [
-			"Night of knights"
-		],
+		"searchTerms": ["Night of Knights"],
 		"title": "ナイト・オブ・ナイツ"
 	},
 	{
@@ -444,9 +395,7 @@
 			"genre": "東方Project"
 		},
 		"id": 36,
-		"searchTerms": [
-			"Gensou no satellite"
-		],
+		"searchTerms": ["Gensou no Satellite"],
 		"title": "幻想のサテライト"
 	},
 	{
@@ -457,9 +406,7 @@
 			"genre": "東方Project"
 		},
 		"id": 37,
-		"searchTerms": [
-			"Energy Booster ~ Shanghai kouchakan"
-		],
+		"searchTerms": ["Energy Booster ~ Shanghai Kouchakan"],
 		"title": "Energy Booster ～ 上海紅茶館"
 	},
 	{
@@ -470,9 +417,7 @@
 			"genre": "東方Project"
 		},
 		"id": 38,
-		"searchTerms": [
-			"Aqua terrarium"
-		],
+		"searchTerms": ["Aqua Terrarium"],
 		"title": "アクアテラリウム"
 	},
 	{
@@ -483,9 +428,7 @@
 			"genre": "東方Project"
 		},
 		"id": 39,
-		"searchTerms": [
-			"Yojigen chouyaku kikan"
-		],
+		"searchTerms": ["Yojigen chouyaku kikan"],
 		"title": "四次元跳躍機関"
 	},
 	{
@@ -496,9 +439,7 @@
 			"genre": "東方Project"
 		},
 		"id": 40,
-		"searchTerms": [
-			"Remilia destiny"
-		],
+		"searchTerms": ["Remilia destiny"],
 		"title": "れみりあ☆デスティニー"
 	},
 	{
@@ -531,9 +472,7 @@
 			"genre": "東方Project"
 		},
 		"id": 43,
-		"searchTerms": [
-			"Saishuu kichiku imouto Flandre S"
-		],
+		"searchTerms": ["Saishuu kichiku imouto Flandre S"],
 		"title": "最終鬼畜妹フランドール・Ｓ"
 	},
 	{
@@ -544,9 +483,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 44,
-		"searchTerms": [
-			"Geki! Teikoku kagekidan"
-		],
+		"searchTerms": ["Geki! Teikoku kagekidan"],
 		"title": "檄!帝国華撃団"
 	},
 	{
@@ -590,9 +527,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 48,
-		"searchTerms": [
-			"Omoiyoshino"
-		],
+		"searchTerms": ["Omoiyoshino"],
 		"title": "オモイヨシノ"
 	},
 	{
@@ -603,9 +538,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 49,
-		"searchTerms": [
-			"Kamui"
-		],
+		"searchTerms": ["Kamui"],
 		"title": "神威"
 	},
 	{
@@ -627,9 +560,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 51,
-		"searchTerms": [
-			"GO!GO! Love rhythm"
-		],
+		"searchTerms": ["GO!GO! Love rhythm"],
 		"title": "ＧＯ！ＧＯ！ラブリズム♥"
 	},
 	{
@@ -651,9 +582,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 53,
-		"searchTerms": [
-			"Shinshou shinkirou"
-		],
+		"searchTerms": ["Shinshou shinkirou"],
 		"title": "心象蜃気楼"
 	},
 	{
@@ -686,9 +615,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 56,
-		"searchTerms": [
-			"Amenohoakari"
-		],
+		"searchTerms": ["Amenohoakari"],
 		"title": "天火明命"
 	},
 	{
@@ -765,9 +692,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 63,
-		"searchTerms": [
-			"Senkou no Brionac"
-		],
+		"searchTerms": ["Senkou no Brionac"],
 		"title": "閃鋼のブリューナク"
 	},
 	{
@@ -824,9 +749,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 68,
-		"searchTerms": [
-			"End mark ni kibou to namida o soete"
-		],
+		"searchTerms": ["End mark ni kibou to namida o soete"],
 		"title": "エンドマークに希望と涙を添えて"
 	},
 	{
@@ -859,9 +782,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 71,
-		"searchTerms": [
-			"Minna Happy!!"
-		],
+		"searchTerms": ["Minna Happy!!"],
 		"title": "みんな Happy!!"
 	},
 	{
@@ -905,9 +826,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 75,
-		"searchTerms": [
-			"P!P!P!P! Gaoh!!"
-		],
+		"searchTerms": ["P!P!P!P! Gaoh!!"],
 		"title": "P！P！P！P！がおー!!"
 	},
 	{
@@ -918,9 +837,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 76,
-		"searchTerms": [
-			"Tatemae to honshin no dairantou"
-		],
+		"searchTerms": ["Tatemae to honshin no dairantou"],
 		"title": "タテマエと本心の大乱闘"
 	},
 	{
@@ -942,9 +859,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 78,
-		"searchTerms": [
-			"Rockin' pink monster"
-		],
+		"searchTerms": ["Rockin' pink monster"],
 		"title": "ロッキンピンクモンスター"
 	},
 	{
@@ -955,9 +870,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 79,
-		"searchTerms": [
-			"Butsumetsu beaters"
-		],
+		"searchTerms": ["Butsumetsu beaters"],
 		"title": "ブツメツビーターズ"
 	},
 	{
@@ -1067,9 +980,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 89,
-		"searchTerms": [
-			"Ketsui"
-		],
+		"searchTerms": ["Ketsui"],
 		"title": "No Remorse"
 	},
 	{
@@ -1091,9 +1002,7 @@
 			"genre": "niconico"
 		},
 		"id": 91,
-		"searchTerms": [
-			"Kamisama nejimaki"
-		],
+		"searchTerms": ["Kamisama nejimaki"],
 		"title": "カミサマネジマキ"
 	},
 	{
@@ -1104,9 +1013,7 @@
 			"genre": "niconico"
 		},
 		"id": 92,
-		"searchTerms": [
-			"Yi-er fun club"
-		],
+		"searchTerms": ["Yi-er fun club"],
 		"title": "いーあるふぁんくらぶ"
 	},
 	{
@@ -1117,9 +1024,7 @@
 			"genre": "niconico"
 		},
 		"id": 93,
-		"searchTerms": [
-			"Shiawase ni nareru kakushi command ga arurashii"
-		],
+		"searchTerms": ["Shiawase ni nareru kakushi command ga arurashii"],
 		"title": "幸せになれる隠しコマンドがあるらしい"
 	},
 	{
@@ -1130,9 +1035,7 @@
 			"genre": "niconico"
 		},
 		"id": 94,
-		"searchTerms": [
-			"Chururira chururira daddadda!"
-		],
+		"searchTerms": ["Chururira chururira daddadda!"],
 		"title": "チュルリラ・チュルリラ・ダッダッダ！"
 	},
 	{
@@ -1154,9 +1057,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 96,
-		"searchTerms": [
-			"Watashi ondo"
-		],
+		"searchTerms": ["Watashi ondo"],
 		"title": "わたし音頭"
 	},
 	{
@@ -1167,9 +1068,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 97,
-		"searchTerms": [
-			"Tsuresatte tojikomete suki ni shite"
-		],
+		"searchTerms": ["Tsuresatte tojikomete suki ni shite"],
 		"title": "連れ去って・閉じ込めて・好きにして"
 	},
 	{
@@ -1202,9 +1101,7 @@
 			"genre": "東方Project"
 		},
 		"id": 100,
-		"searchTerms": [
-			"Tsuki ni murakumo hana ni kaze"
-		],
+		"searchTerms": ["Tsuki ni murakumo hana ni kaze"],
 		"title": "月に叢雲華に風"
 	},
 	{
@@ -1226,9 +1123,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 102,
-		"searchTerms": [
-			"Hey-day capriccio"
-		],
+		"searchTerms": ["Hey-day capriccio"],
 		"title": "Hey-day狂騒曲（カプリチオ）"
 	},
 	{
@@ -1239,9 +1134,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 103,
-		"searchTerms": [
-			"Yura yura Ring-Dong-Dance"
-		],
+		"searchTerms": ["Yura yura Ring-Dong-Dance"],
 		"title": "ゆら・ゆらRing-Dong-Dance"
 	},
 	{
@@ -1263,9 +1156,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 105,
-		"searchTerms": [
-			"Goka! Gokai!? Phantom thief!"
-		],
+		"searchTerms": ["Goka! Gokai!? Phantom thief!"],
 		"title": "ゴーカ！ごーかい！？ファントムシーフ！"
 	},
 	{
@@ -1276,9 +1167,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 106,
-		"searchTerms": [
-			"Ikazuchi"
-		],
+		"searchTerms": ["Ikazuchi"],
 		"title": "怒槌"
 	},
 	{
@@ -1336,9 +1225,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 111,
-		"searchTerms": [
-			"secret base ~kimi ga kuretamono~ (10 years after Ver.)"
-		],
+		"searchTerms": ["secret base ~kimi ga kuretamono~ (10 years after Ver.)"],
 		"title": "secret base ～君がくれたもの～ (10 years after Ver.)"
 	},
 	{
@@ -1404,9 +1291,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 117,
-		"searchTerms": [
-			"Kokoro koko kara"
-		],
+		"searchTerms": ["Kokoro koko kara"],
 		"title": "こころここから"
 	},
 	{
@@ -1417,9 +1302,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 118,
-		"searchTerms": [
-			"Robot planet utopia"
-		],
+		"searchTerms": ["Robot planet utopia"],
 		"title": "ロボットプラネットユートピア"
 	},
 	{
@@ -1430,9 +1313,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 119,
-		"searchTerms": [
-			"Toki no boukensha"
-		],
+		"searchTerms": ["Toki no boukensha"],
 		"title": "時の冒険者"
 	},
 	{
@@ -1465,9 +1346,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 122,
-		"searchTerms": [
-			"Ryuusei"
-		],
+		"searchTerms": ["Ryuusei"],
 		"title": "流星"
 	},
 	{
@@ -1489,9 +1368,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 124,
-		"searchTerms": [
-			"Girly Days"
-		],
+		"searchTerms": ["Girly Days"],
 		"title": "超電磁少女Days"
 	},
 	{
@@ -1502,9 +1379,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 125,
-		"searchTerms": [
-			"Desuno! White & Black"
-		],
+		"searchTerms": ["Desuno! White & Black"],
 		"title": "ですのっ！White & Black"
 	},
 	{
@@ -1515,9 +1390,7 @@
 			"genre": "niconico"
 		},
 		"id": 126,
-		"searchTerms": [
-			"Hibana"
-		],
+		"searchTerms": ["Hibana"],
 		"title": "ヒバナ"
 	},
 	{
@@ -1528,9 +1401,7 @@
 			"genre": "niconico"
 		},
 		"id": 127,
-		"searchTerms": [
-			"Roki"
-		],
+		"searchTerms": ["Roki"],
 		"title": "ロキ"
 	},
 	{
@@ -1541,9 +1412,7 @@
 			"genre": "niconico"
 		},
 		"id": 128,
-		"searchTerms": [
-			"Queen of heart"
-		],
+		"searchTerms": ["Queen of heart"],
 		"title": "クイーンオブハート"
 	},
 	{
@@ -1620,9 +1489,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 135,
-		"searchTerms": [
-			"Kanpeki Will"
-		],
+		"searchTerms": ["Kanpeki Will"],
 		"title": "カンペキWill"
 	},
 	{
@@ -1633,9 +1500,7 @@
 			"genre": "niconico"
 		},
 		"id": 136,
-		"searchTerms": [
-			"Unhappy refrain"
-		],
+		"searchTerms": ["Unhappy refrain"],
 		"title": "アンハッピーリフレイン"
 	},
 	{
@@ -1657,9 +1522,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 138,
-		"searchTerms": [
-			"Honnouteki Survivor"
-		],
+		"searchTerms": ["Honnouteki Survivor"],
 		"title": "本能的 Survivor"
 	},
 	{
@@ -1681,9 +1544,7 @@
 			"genre": "niconico"
 		},
 		"id": 140,
-		"searchTerms": [
-			"Hatsune Miku no shoushitsu"
-		],
+		"searchTerms": ["Hatsune Miku no shoushitsu"],
 		"title": "初音ミクの消失"
 	},
 	{
@@ -1694,9 +1555,7 @@
 			"genre": "niconico"
 		},
 		"id": 141,
-		"searchTerms": [
-			"Roshin yuukai"
-		],
+		"searchTerms": ["Roshin yuukai"],
 		"title": "炉心融解"
 	},
 	{
@@ -1707,9 +1566,7 @@
 			"genre": "niconico"
 		},
 		"id": 142,
-		"searchTerms": [
-			"Hoshikuzu utopia"
-		],
+		"searchTerms": ["Hoshikuzu utopia"],
 		"title": "星屑ユートピア"
 	},
 	{
@@ -1731,9 +1588,7 @@
 			"genre": "niconico"
 		},
 		"id": 144,
-		"searchTerms": [
-			"*Hello, planet."
-		],
+		"searchTerms": ["*Hello, planet."],
 		"title": "＊ハロー、プラネット。"
 	},
 	{
@@ -1744,9 +1599,7 @@
 			"genre": "niconico"
 		},
 		"id": 145,
-		"searchTerms": [
-			"Karakuri pierrot"
-		],
+		"searchTerms": ["Karakuri pierrot"],
 		"title": "からくりピエロ"
 	},
 	{
@@ -1812,9 +1665,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 151,
-		"searchTerms": [
-			"ONGEKI zen'iki Akane-sama?"
-		],
+		"searchTerms": ["ONGEKI zen'iki Akane-sama?"],
 		"title": "オンゲキ全域★アカネサマ？"
 	},
 	{
@@ -1825,9 +1676,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 152,
-		"searchTerms": [
-			"Ikazuchi~Mitsuyoshi Takenobu ichibu nazo~"
-		],
+		"searchTerms": ["Ikazuchi~Mitsuyoshi Takenobu ichibu nazo~"],
 		"title": "怒槌～光吉猛修一部謎～"
 	},
 	{
@@ -1849,9 +1698,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 154,
-		"searchTerms": [
-			"Gokujou smile"
-		],
+		"searchTerms": ["Gokujou smile"],
 		"title": "極上スマイル"
 	},
 	{
@@ -1884,9 +1731,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 157,
-		"searchTerms": [
-			"Arisa no Thema"
-		],
+		"searchTerms": ["Arisa no Thema"],
 		"title": "アリサのテーマ"
 	},
 	{
@@ -1908,9 +1753,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 159,
-		"searchTerms": [
-			"Menimeni manimani"
-		],
+		"searchTerms": ["Menimeni manimani"],
 		"title": "メニメニマニマニ"
 	},
 	{
@@ -1921,9 +1764,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 160,
-		"searchTerms": [
-			"Ne! Ko!"
-		],
+		"searchTerms": ["Ne! Ko!"],
 		"title": "ネ！コ！"
 	},
 	{
@@ -1934,9 +1775,7 @@
 			"genre": "niconico"
 		},
 		"id": 161,
-		"searchTerms": [
-			"Charles"
-		],
+		"searchTerms": ["Charles"],
 		"title": "シャルル"
 	},
 	{
@@ -1947,9 +1786,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 162,
-		"searchTerms": [
-			"Owari no saki no syllable"
-		],
+		"searchTerms": ["Owari no saki no syllable"],
 		"title": "終わりの先の音節"
 	},
 	{
@@ -1960,9 +1797,7 @@
 			"genre": "東方Project"
 		},
 		"id": 163,
-		"searchTerms": [
-			"Epikouros no niji wa mou mienai"
-		],
+		"searchTerms": ["Epikouros no niji wa mou mienai"],
 		"title": "エピクロスの虹はもう見えない"
 	},
 	{
@@ -1984,9 +1819,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 165,
-		"searchTerms": [
-			"Mendooi! Yahhooi! Tomodachi!"
-		],
+		"searchTerms": ["Mendooi! Yahhooi! Tomodachi!"],
 		"title": "めんどーい！やっほーい！ともだち！"
 	},
 	{
@@ -2008,10 +1841,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 167,
-		"searchTerms": [
-			"Kokoro",
-			"Heart"
-		],
+		"searchTerms": ["Kokoro", "Heart"],
 		"title": "心"
 	},
 	{
@@ -2022,9 +1852,7 @@
 			"genre": "東方Project"
 		},
 		"id": 168,
-		"searchTerms": [
-			"Shinchoku dou desu ka?"
-		],
+		"searchTerms": ["Shinchoku dou desu ka?"],
 		"title": "進捗どうですか？"
 	},
 	{
@@ -2035,9 +1863,7 @@
 			"genre": "東方Project"
 		},
 		"id": 169,
-		"searchTerms": [
-			"Touhou Youyoumu ~the maximum moving about~"
-		],
+		"searchTerms": ["Touhou Youyoumu ~the maximum moving about~"],
 		"title": "東方妖々夢 ～the maximum moving about～"
 	},
 	{
@@ -2048,9 +1874,7 @@
 			"genre": "東方Project"
 		},
 		"id": 170,
-		"searchTerms": [
-			"Kansouou"
-		],
+		"searchTerms": ["Kansouou"],
 		"title": "寒想桜"
 	},
 	{
@@ -2061,9 +1885,7 @@
 			"genre": "東方Project"
 		},
 		"id": 171,
-		"searchTerms": [
-			"Youko sengakuto"
-		],
+		"searchTerms": ["Youko sengakuto"],
 		"title": "妖狐仙楽踏"
 	},
 	{
@@ -2096,9 +1918,7 @@
 			"genre": "東方Project"
 		},
 		"id": 174,
-		"searchTerms": [
-			"Sakura musubi"
-		],
+		"searchTerms": ["Sakura musubi"],
 		"title": "櫻結び"
 	},
 	{
@@ -2164,9 +1984,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 180,
-		"searchTerms": [
-			"Doubutsu paradise"
-		],
+		"searchTerms": ["Doubutsu paradise"],
 		"title": "どうぶつ☆パラダイス"
 	},
 	{
@@ -2177,9 +1995,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 181,
-		"searchTerms": [
-			"Y.Y.Y. keikaku!!!!"
-		],
+		"searchTerms": ["Y.Y.Y. keikaku!!!!"],
 		"title": "Y.Y.Y.計画!!!!"
 	},
 	{
@@ -2245,9 +2061,7 @@
 			"genre": "niconico"
 		},
 		"id": 187,
-		"searchTerms": [
-			"Melt"
-		],
+		"searchTerms": ["Melt"],
 		"title": "メルト"
 	},
 	{
@@ -2303,7 +2117,8 @@
 		},
 		"id": 192,
 		"searchTerms": [
-			"Cirno no perfect sansuu kyoushitsu"
+			"Cirno no perfect sansuu kyoushitsu",
+			"Cirno's perfect math class "
 		],
 		"title": "チルノのパーフェクトさんすう教室"
 	},
@@ -2326,12 +2141,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 194,
-		"searchTerms": [
-			"omega4",
-			"w4",
-			"wwww",
-			"omegalul"
-		],
+		"searchTerms": ["omega4", "w4", "wwww"],
 		"title": "ω4"
 	},
 	{
@@ -2342,9 +2152,7 @@
 			"genre": "niconico"
 		},
 		"id": 195,
-		"searchTerms": [
-			"Donut hole"
-		],
+		"searchTerms": ["Donut hole"],
 		"title": "ドーナツホール"
 	},
 	{
@@ -2355,9 +2163,7 @@
 			"genre": "niconico"
 		},
 		"id": 196,
-		"searchTerms": [
-			"Jinsei reset button"
-		],
+		"searchTerms": ["Jinsei reset button"],
 		"title": "人生リセットボタン"
 	},
 	{
@@ -2368,9 +2174,7 @@
 			"genre": "niconico"
 		},
 		"id": 197,
-		"searchTerms": [
-			"Mousou kanshou daishou renmei"
-		],
+		"searchTerms": ["Mousou kanshou daishou renmei"],
 		"title": "妄想感傷代償連盟"
 	},
 	{
@@ -2381,9 +2185,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 198,
-		"searchTerms": [
-			"Kousen tuning"
-		],
+		"searchTerms": ["Kousen tuning"],
 		"title": "光線チューニング"
 	},
 	{
@@ -2394,9 +2196,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 199,
-		"searchTerms": [
-			"Adabana necromancy"
-		],
+		"searchTerms": ["Adabana necromancy"],
 		"title": "徒花ネクロマンシー"
 	},
 	{
@@ -2473,9 +2273,7 @@
 			"genre": "niconico"
 		},
 		"id": 206,
-		"searchTerms": [
-			"Dance robot dance"
-		],
+		"searchTerms": ["Dance robot dance"],
 		"title": "ダンスロボットダンス"
 	},
 	{
@@ -2486,9 +2284,7 @@
 			"genre": "niconico"
 		},
 		"id": 207,
-		"searchTerms": [
-			"Gigantic O.T.N"
-		],
+		"searchTerms": ["Gigantic O.T.N"],
 		"title": "ギガンティックO.T.N"
 	},
 	{
@@ -2499,9 +2295,7 @@
 			"genre": "niconico"
 		},
 		"id": 208,
-		"searchTerms": [
-			"Kaisei"
-		],
+		"searchTerms": ["Kaisei"],
 		"title": "快晴"
 	},
 	{
@@ -2512,9 +2306,7 @@
 			"genre": "niconico"
 		},
 		"id": 209,
-		"searchTerms": [
-			"Summertime record"
-		],
+		"searchTerms": ["Summertime record"],
 		"title": "サマータイムレコード"
 	},
 	{
@@ -2525,9 +2317,7 @@
 			"genre": "niconico"
 		},
 		"id": 210,
-		"searchTerms": [
-			"Bless your breath"
-		],
+		"searchTerms": ["Bless your breath"],
 		"title": "ブレス・ユア・ブレス"
 	},
 	{
@@ -2549,9 +2339,7 @@
 			"genre": "東方Project"
 		},
 		"id": 212,
-		"searchTerms": [
-			"Sadomami holic"
-		],
+		"searchTerms": ["Sadomami holic"],
 		"title": "サドマミホリック"
 	},
 	{
@@ -2562,9 +2350,7 @@
 			"genre": "東方Project"
 		},
 		"id": 213,
-		"searchTerms": [
-			"Kanbu de tomatte sugu tokeru ~ kyouki no Udongein"
-		],
+		"searchTerms": ["Kanbu de tomatte sugu tokeru ~ kyouki no Udongein"],
 		"title": "患部で止まってすぐ溶ける～狂気の優曇華院"
 	},
 	{
@@ -2586,9 +2372,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 215,
-		"searchTerms": [
-			"Saikyou the summertime!!!!!"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!!"],
 		"title": "最強 the サマータイム!!!!!"
 	},
 	{
@@ -2599,9 +2383,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 216,
-		"searchTerms": [
-			"Massugu stream!"
-		],
+		"searchTerms": ["Massugu stream!"],
 		"title": "まっすぐ→→→ストリーム！"
 	},
 	{
@@ -2634,9 +2416,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 219,
-		"searchTerms": [
-			"Toridori morimori! Lovely fruits"
-		],
+		"searchTerms": ["Toridori morimori! Lovely fruits"],
 		"title": "トリドリ⇒モリモリ！Lovely fruits☆"
 	},
 	{
@@ -2658,9 +2438,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 221,
-		"searchTerms": [
-			"Yoake no string"
-		],
+		"searchTerms": ["Yoake no string"],
 		"title": "夜明けのストリング"
 	},
 	{
@@ -2682,10 +2460,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 223,
-		"searchTerms": [
-			"Hibachi",
-			"Dodonpachi"
-		],
+		"searchTerms": ["Hibachi", "Dodonpachi"],
 		"title": "緋蜂"
 	},
 	{
@@ -2696,9 +2471,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 224,
-		"searchTerms": [
-			"Eien memory"
-		],
+		"searchTerms": ["Eien memory"],
 		"title": "永遠メモリー"
 	},
 	{
@@ -2709,9 +2482,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 225,
-		"searchTerms": [
-			"Hoshi no dialogue"
-		],
+		"searchTerms": ["Hoshi no dialogue"],
 		"title": "星のダイアローグ"
 	},
 	{
@@ -2733,9 +2504,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 227,
-		"searchTerms": [
-			"Jinruimina senpai!"
-		],
+		"searchTerms": ["Jinruimina senpai!"],
 		"title": "人類みなセンパイ！"
 	},
 	{
@@ -2746,9 +2515,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 228,
-		"searchTerms": [
-			"Toumei seisai"
-		],
+		"searchTerms": ["Toumei seisai"],
 		"title": "透明声彩"
 	},
 	{
@@ -2759,9 +2526,7 @@
 			"genre": "東方Project"
 		},
 		"id": 229,
-		"searchTerms": [
-			"Usatei"
-		],
+		"searchTerms": ["Usatei"],
 		"title": "ウサテイ"
 	},
 	{
@@ -2772,9 +2537,7 @@
 			"genre": "東方Project"
 		},
 		"id": 230,
-		"searchTerms": [
-			"Zenryoku happy life"
-		],
+		"searchTerms": ["Zenryoku happy life"],
 		"title": "全力ハッピーライフ"
 	},
 	{
@@ -2785,9 +2548,7 @@
 			"genre": "東方Project"
 		},
 		"id": 231,
-		"searchTerms": [
-			"Replica no koi"
-		],
+		"searchTerms": ["Replica no koi"],
 		"title": "レプリカの恋"
 	},
 	{
@@ -2809,9 +2570,7 @@
 			"genre": "東方Project"
 		},
 		"id": 233,
-		"searchTerms": [
-			"Gin no meguri"
-		],
+		"searchTerms": ["Gin no meguri"],
 		"title": "銀のめぐり"
 	},
 	{
@@ -2822,9 +2581,7 @@
 			"genre": "niconico"
 		},
 		"id": 234,
-		"searchTerms": [
-			"Invisible"
-		],
+		"searchTerms": ["Invisible"],
 		"title": "インビジブル"
 	},
 	{
@@ -2835,9 +2592,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 235,
-		"searchTerms": [
-			"MAKING! High touch!"
-		],
+		"searchTerms": ["MAKING! High touch!"],
 		"title": "MAKING！ハイタッチ！"
 	},
 	{
@@ -2859,9 +2614,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 237,
-		"searchTerms": [
-			"Mirai no kanata"
-		],
+		"searchTerms": ["Mirai no kanata"],
 		"title": "未来の彼方"
 	},
 	{
@@ -2872,9 +2625,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 238,
-		"searchTerms": [
-			"Seishun cider"
-		],
+		"searchTerms": ["Seishun cider"],
 		"title": "青春サイダー"
 	},
 	{
@@ -2907,9 +2658,7 @@
 			"genre": "niconico"
 		},
 		"id": 241,
-		"searchTerms": [
-			"Suisei honeymoon"
-		],
+		"searchTerms": ["Suisei honeymoon"],
 		"title": "彗星ハネムーン"
 	},
 	{
@@ -2920,9 +2669,7 @@
 			"genre": "niconico"
 		},
 		"id": 242,
-		"searchTerms": [
-			"Mabel (self cover)"
-		],
+		"searchTerms": ["Mabel (self cover)"],
 		"title": "メーベル (self cover)"
 	},
 	{
@@ -2933,9 +2680,7 @@
 			"genre": "東方Project"
 		},
 		"id": 243,
-		"searchTerms": [
-			"Night of knights (Cranky Remix)"
-		],
+		"searchTerms": ["Night of knights (Cranky Remix)"],
 		"title": "ナイト・オブ・ナイツ (Cranky Remix)"
 	},
 	{
@@ -2946,9 +2691,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 244,
-		"searchTerms": [
-			"Pocket kara nuritsubuse!"
-		],
+		"searchTerms": ["Pocket kara nuritsubuse!"],
 		"title": "ポケットからぬりつぶせ！"
 	},
 	{
@@ -3003,9 +2746,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 249,
-		"searchTerms": [
-			"Start line"
-		],
+		"searchTerms": ["Start line"],
 		"title": "スタートライン"
 	},
 	{
@@ -3016,9 +2757,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 250,
-		"searchTerms": [
-			"Onegai My Boy"
-		],
+		"searchTerms": ["Onegai My Boy"],
 		"title": "お願い☆My Boy"
 	},
 	{
@@ -3029,9 +2768,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 251,
-		"searchTerms": [
-			"Hoshikuzu seeker"
-		],
+		"searchTerms": ["Hoshikuzu seeker"],
 		"title": "星屑☆シーカー"
 	},
 	{
@@ -3042,9 +2779,7 @@
 			"genre": "niconico"
 		},
 		"id": 252,
-		"searchTerms": [
-			"DeliHeal yondara kimi ga kita"
-		],
+		"searchTerms": ["DeliHeal yondara kimi ga kita"],
 		"title": "デリヘル呼んだら君が来た"
 	},
 	{
@@ -3055,9 +2790,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 253,
-		"searchTerms": [
-			"Kanjou acceleration"
-		],
+		"searchTerms": ["Kanjou acceleration"],
 		"title": "感情アクセラレイション"
 	},
 	{
@@ -3090,9 +2823,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 256,
-		"searchTerms": [
-			"Sekai no himitsu"
-		],
+		"searchTerms": ["Sekai no himitsu"],
 		"title": "セカイのヒミツ"
 	},
 	{
@@ -3103,9 +2834,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 257,
-		"searchTerms": [
-			"Tada kimi ni hare"
-		],
+		"searchTerms": ["Tada kimi ni hare"],
 		"title": "ただ君に晴れ"
 	},
 	{
@@ -3116,9 +2845,7 @@
 			"genre": "niconico"
 		},
 		"id": 258,
-		"searchTerms": [
-			"Uraomote lovers"
-		],
+		"searchTerms": ["Uraomote lovers"],
 		"title": "裏表ラバーズ"
 	},
 	{
@@ -3140,9 +2867,7 @@
 			"genre": "niconico"
 		},
 		"id": 260,
-		"searchTerms": [
-			"Fixer"
-		],
+		"searchTerms": ["Fixer"],
 		"title": "フィクサー"
 	},
 	{
@@ -3153,9 +2878,7 @@
 			"genre": "niconico"
 		},
 		"id": 261,
-		"searchTerms": [
-			"Kodomo no Shikumi"
-		],
+		"searchTerms": ["Kodomo no Shikumi"],
 		"title": "こどものしくみ"
 	},
 	{
@@ -3166,9 +2889,7 @@
 			"genre": "niconico"
 		},
 		"id": 262,
-		"searchTerms": [
-			"Tokyo ghetto"
-		],
+		"searchTerms": ["Tokyo ghetto"],
 		"title": "トーキョーゲットー"
 	},
 	{
@@ -3190,9 +2911,7 @@
 			"genre": "niconico"
 		},
 		"id": 264,
-		"searchTerms": [
-			"Shiroi yuki no princess wa"
-		],
+		"searchTerms": ["Shiroi yuki no princess wa"],
 		"title": "白い雪のプリンセスは"
 	},
 	{
@@ -3214,9 +2933,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 266,
-		"searchTerms": [
-			"Jingle bell"
-		],
+		"searchTerms": ["Jingle bell"],
 		"title": "ジングルベル"
 	},
 	{
@@ -3238,9 +2955,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 268,
-		"searchTerms": [
-			"Lightspeed days"
-		],
+		"searchTerms": ["Lightspeed days"],
 		"title": "ライトスピード・デイズ"
 	},
 	{
@@ -3251,9 +2966,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 269,
-		"searchTerms": [
-			"Neko matsuri"
-		],
+		"searchTerms": ["Neko matsuri"],
 		"title": "猫祭り"
 	},
 	{
@@ -3297,9 +3010,7 @@
 			"genre": "niconico"
 		},
 		"id": 273,
-		"searchTerms": [
-			"Ai kotoba III"
-		],
+		"searchTerms": ["Ai kotoba III"],
 		"title": "愛言葉Ⅲ"
 	},
 	{
@@ -3310,9 +3021,7 @@
 			"genre": "niconico"
 		},
 		"id": 274,
-		"searchTerms": [
-			"Setsuna trip"
-		],
+		"searchTerms": ["Setsuna trip"],
 		"title": "セツナトリップ"
 	},
 	{
@@ -3345,9 +3054,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 277,
-		"searchTerms": [
-			"Hitoribocchi satellite"
-		],
+		"searchTerms": ["Hitoribocchi satellite"],
 		"title": "ヒトリボッチサテライト"
 	},
 	{
@@ -3391,9 +3098,7 @@
 			"genre": "niconico"
 		},
 		"id": 281,
-		"searchTerms": [
-			"Chikyuu saigo no kokuhaku o"
-		],
+		"searchTerms": ["Chikyuu saigo no kokuhaku o"],
 		"title": "地球最後の告白を"
 	},
 	{
@@ -3415,9 +3120,7 @@
 			"genre": "東方Project"
 		},
 		"id": 283,
-		"searchTerms": [
-			"Shuwa spa daisakusen"
-		],
+		"searchTerms": ["Shuwa spa daisakusen"],
 		"title": "しゅわスパ大作戦☆"
 	},
 	{
@@ -3472,9 +3175,7 @@
 			"genre": "niconico"
 		},
 		"id": 288,
-		"searchTerms": [
-			"ONEgai darlin'"
-		],
+		"searchTerms": ["ONEgai darlin'"],
 		"title": "おねがいダーリン"
 	},
 	{
@@ -3496,9 +3197,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 290,
-		"searchTerms": [
-			"Harumodoki"
-		],
+		"searchTerms": ["Harumodoki"],
 		"title": "春擬き"
 	},
 	{
@@ -3509,9 +3208,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 291,
-		"searchTerms": [
-			"Watashitachi mahou otome desu"
-		],
+		"searchTerms": ["Watashitachi mahou otome desu"],
 		"title": "わたしたち魔法乙女です☆"
 	},
 	{
@@ -3522,9 +3219,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 292,
-		"searchTerms": [
-			"Peace sign"
-		],
+		"searchTerms": ["Peace sign"],
 		"title": "ピースサイン"
 	},
 	{
@@ -3546,9 +3241,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 294,
-		"searchTerms": [
-			"Hyadain no kakakata kataomoi-C"
-		],
+		"searchTerms": ["Hyadain no kakakata kataomoi-C"],
 		"title": "ヒャダインのカカカタ☆カタオモイ-C"
 	},
 	{
@@ -3559,9 +3252,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 295,
-		"searchTerms": [
-			"Onegai muscle"
-		],
+		"searchTerms": ["Onegai muscle"],
 		"title": "お願いマッスル"
 	},
 	{
@@ -3572,9 +3263,7 @@
 			"genre": "niconico"
 		},
 		"id": 296,
-		"searchTerms": [
-			"Otome kaibou"
-		],
+		"searchTerms": ["Otome kaibou"],
 		"title": "乙女解剖"
 	},
 	{
@@ -3585,9 +3274,7 @@
 			"genre": "niconico"
 		},
 		"id": 297,
-		"searchTerms": [
-			"Dramaturgy"
-		],
+		"searchTerms": ["Dramaturgy"],
 		"title": "ドラマツルギー"
 	},
 	{
@@ -3598,9 +3285,7 @@
 			"genre": "niconico"
 		},
 		"id": 298,
-		"searchTerms": [
-			"Melty land nightmare"
-		],
+		"searchTerms": ["Melty land nightmare"],
 		"title": "メルティランドナイトメア"
 	},
 	{
@@ -3611,9 +3296,7 @@
 			"genre": "東方Project"
 		},
 		"id": 299,
-		"searchTerms": [
-			"Shissou ensemble"
-		],
+		"searchTerms": ["Shissou ensemble"],
 		"title": "疾走あんさんぶる"
 	},
 	{
@@ -3679,11 +3362,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 305,
-		"searchTerms": [
-			"Dodonpachi dai ondo",
-			"Dodonpachi daiondo",
-			"Daifukkatsu"
-		],
+		"searchTerms": ["Dodonpachi dai ondo", "Dodonpachi daiondo", "Daifukkatsu"],
 		"title": "どどんぱち大音頭"
 	},
 	{
@@ -3705,9 +3384,7 @@
 			"genre": "niconico"
 		},
 		"id": 307,
-		"searchTerms": [
-			"Seyana. ~nandemo iu koto o kiite kureru Akane-chan~"
-		],
+		"searchTerms": ["Seyana. ~nandemo iu koto o kiite kureru Akane-chan~"],
 		"title": "Seyana. ～何でも言うことを聞いてくれるアカネチャン～"
 	},
 	{
@@ -3718,9 +3395,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 308,
-		"searchTerms": [
-			"Everyday world"
-		],
+		"searchTerms": ["Everyday world"],
 		"title": "エブリデイワールド"
 	},
 	{
@@ -3742,9 +3417,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 310,
-		"searchTerms": [
-			"Hoshi no kizuna"
-		],
+		"searchTerms": ["Hoshi no kizuna"],
 		"title": "ホシノキズナ"
 	},
 	{
@@ -3766,9 +3439,7 @@
 			"genre": "niconico"
 		},
 		"id": 312,
-		"searchTerms": [
-			"Android girl"
-		],
+		"searchTerms": ["Android girl"],
 		"title": "アンドロイドガール"
 	},
 	{
@@ -3779,9 +3450,7 @@
 			"genre": "niconico"
 		},
 		"id": 313,
-		"searchTerms": [
-			"Cheche check one-two!"
-		],
+		"searchTerms": ["Cheche check one-two!"],
 		"title": "チェチェ・チェック・ワンツー！"
 	},
 	{
@@ -3792,9 +3461,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 314,
-		"searchTerms": [
-			"Ryouran otome musougeki"
-		],
+		"searchTerms": ["Ryouran otome musougeki"],
 		"title": "撩乱乙女†無双劇"
 	},
 	{
@@ -3827,9 +3494,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 317,
-		"searchTerms": [
-			"Contrail ~kiseki~"
-		],
+		"searchTerms": ["Contrail ~kiseki~"],
 		"title": "Contrail ～軌跡～"
 	},
 	{
@@ -3840,9 +3505,7 @@
 			"genre": "東方Project"
 		},
 		"id": 318,
-		"searchTerms": [
-			"Monosugoi kuruttoru Flan-chan ga monosugoi uta"
-		],
+		"searchTerms": ["Monosugoi kuruttoru Flan-chan ga monosugoi uta"],
 		"title": "物凄い狂っとるフランちゃんが物凄いうた"
 	},
 	{
@@ -3864,9 +3527,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 320,
-		"searchTerms": [
-			"Pakupaku girl"
-		],
+		"searchTerms": ["Pakupaku girl"],
 		"title": "ぱくぱく☆がーる"
 	},
 	{
@@ -3888,9 +3549,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 322,
-		"searchTerms": [
-			"Amatsu kami"
-		],
+		"searchTerms": ["Amatsu kami"],
 		"title": "アマツカミ"
 	},
 	{
@@ -3901,9 +3560,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 323,
-		"searchTerms": [
-			"Sega Saturn kidou on(H.)(Remix)"
-		],
+		"searchTerms": ["Sega Saturn kidou on(H.)(Remix)"],
 		"title": "セガサターン起動音[H.][Remix]"
 	},
 	{
@@ -3914,9 +3571,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 324,
-		"searchTerms": [
-			"Susume! My way!"
-		],
+		"searchTerms": ["Susume! My way!"],
 		"title": "進め！マイウェイ！"
 	},
 	{
@@ -3949,9 +3604,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 327,
-		"searchTerms": [
-			"Happy typhoon"
-		],
+		"searchTerms": ["Happy typhoon"],
 		"title": "ハッピータイフーン"
 	},
 	{
@@ -4017,9 +3670,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 333,
-		"searchTerms": [
-			"Little soldier"
-		],
+		"searchTerms": ["Little soldier"],
 		"title": "リトルソルジャー"
 	},
 	{
@@ -4030,10 +3681,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 334,
-		"searchTerms": [
-			"Deluxe",
-			"Delukkumaimai Tentekomai!"
-		],
+		"searchTerms": ["Deluxe", "Delukkumaimai Tentekomai!"],
 		"title": "でらっくmaimai♪てんてこまい!"
 	},
 	{
@@ -4055,9 +3703,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 336,
-		"searchTerms": [
-			"Natsuiro hanabi"
-		],
+		"searchTerms": ["Natsuiro hanabi"],
 		"title": "夏色花火"
 	},
 	{
@@ -4079,9 +3725,7 @@
 			"genre": "niconico"
 		},
 		"id": 338,
-		"searchTerms": [
-			"Unknown Mother Goose"
-		],
+		"searchTerms": ["Unknown Mother Goose"],
 		"title": "アンノウン・マザーグース"
 	},
 	{
@@ -4092,9 +3736,7 @@
 			"genre": "niconico"
 		},
 		"id": 339,
-		"searchTerms": [
-			"Sweet magic"
-		],
+		"searchTerms": ["Sweet magic"],
 		"title": "スイートマジック"
 	},
 	{
@@ -4105,9 +3747,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 340,
-		"searchTerms": [
-			"Choujou maimain"
-		],
+		"searchTerms": ["Choujou maimain"],
 		"title": "超常マイマイン"
 	},
 	{
@@ -4118,9 +3758,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 341,
-		"searchTerms": [
-			"Kizuna wa zutto Growing Up!!!"
-		],
+		"searchTerms": ["Kizuna wa zutto Growing Up!!!"],
 		"title": "絆はずっとGrowing Up!!!"
 	},
 	{
@@ -4142,9 +3780,7 @@
 			"genre": "niconico"
 		},
 		"id": 343,
-		"searchTerms": [
-			"Shinkai no little cry feat. Toki Asako"
-		],
+		"searchTerms": ["Shinkai no little cry feat. Toki Asako"],
 		"title": "深海のリトルクライ feat. 土岐麻子"
 	},
 	{
@@ -4177,9 +3813,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 346,
-		"searchTerms": [
-			"NATSUKAGE"
-		],
+		"searchTerms": ["NATSUKAGE"],
 		"title": "NATSUKAGE-夏陰-"
 	},
 	{
@@ -4201,9 +3835,7 @@
 			"genre": "東方Project"
 		},
 		"id": 348,
-		"searchTerms": [
-			"Lunatic red eyes"
-		],
+		"searchTerms": ["Lunatic red eyes"],
 		"title": "ルナティックレッドアイズ"
 	},
 	{
@@ -4214,9 +3846,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 349,
-		"searchTerms": [
-			"Hanatachi ni kibou o"
-		],
+		"searchTerms": ["Hanatachi ni kibou o"],
 		"title": "花たちに希望を"
 	},
 	{
@@ -4227,9 +3857,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 350,
-		"searchTerms": [
-			"Bassline yatteru? wara"
-		],
+		"searchTerms": ["Bassline yatteru? wara"],
 		"title": "ベースラインやってる？笑"
 	},
 	{
@@ -4273,9 +3901,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 354,
-		"searchTerms": [
-			"Ludicium"
-		],
+		"searchTerms": ["Ludicium"],
 		"title": "Iudicium “Apocalypsis Mix”"
 	},
 	{
@@ -4308,9 +3934,7 @@
 			"genre": "niconico"
 		},
 		"id": 357,
-		"searchTerms": [
-			"Nonsense bungaku"
-		],
+		"searchTerms": ["Nonsense bungaku"],
 		"title": "ナンセンス文学"
 	},
 	{
@@ -4321,9 +3945,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 358,
-		"searchTerms": [
-			"Sun(Mile)Flower"
-		],
+		"searchTerms": ["Sun(Mile)Flower"],
 		"title": "スン(マイル)フラワー～Sun(Mile)Flower"
 	},
 	{
@@ -4334,9 +3956,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 359,
-		"searchTerms": [
-			"Yes! Yuyuyu YuruYuri"
-		],
+		"searchTerms": ["Yes! Yuyuyu YuruYuri"],
 		"title": "いぇす！ゆゆゆ☆ゆるゆり♪♪"
 	},
 	{
@@ -4347,9 +3967,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 360,
-		"searchTerms": [
-			"100% chuugakusei"
-		],
+		"searchTerms": ["100% chuugakusei"],
 		"title": "100%ちゅ～学生"
 	},
 	{
@@ -4360,9 +3978,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 361,
-		"searchTerms": [
-			"Hitogata"
-		],
+		"searchTerms": ["Hitogata"],
 		"title": "ヒトガタ"
 	},
 	{
@@ -4384,11 +4000,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 363,
-		"searchTerms": [
-			"Nouten chokugeki",
-			"Noten chokugeki",
-			"Brain attack"
-		],
+		"searchTerms": ["Nouten chokugeki", "Noten chokugeki", "Brain attack"],
 		"title": "脳天直撃"
 	},
 	{
@@ -4399,9 +4011,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 364,
-		"searchTerms": [
-			"YuruYuri, ten'yawan'ya"
-		],
+		"searchTerms": ["YuruYuri, ten'yawan'ya"],
 		"title": "ゆるゆり、てんやわんや☆"
 	},
 	{
@@ -4412,9 +4022,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 365,
-		"searchTerms": [
-			"Supatto! Spy & spice"
-		],
+		"searchTerms": ["Supatto! Spy & spice"],
 		"title": "スパッと！スパイ＆スパイス"
 	},
 	{
@@ -4458,9 +4066,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 369,
-		"searchTerms": [
-			"Colorful"
-		],
+		"searchTerms": ["Colorful"],
 		"title": "カラフル"
 	},
 	{
@@ -4482,9 +4088,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 371,
-		"searchTerms": [
-			"Gurenge"
-		],
+		"searchTerms": ["Gurenge"],
 		"title": "紅蓮華"
 	},
 	{
@@ -4506,9 +4110,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 373,
-		"searchTerms": [
-			"Fuwafuwa time"
-		],
+		"searchTerms": ["Fuwafuwa time"],
 		"title": "ふわふわ時間(タイム)"
 	},
 	{
@@ -4519,9 +4121,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 374,
-		"searchTerms": [
-			"Shinryaku no susume"
-		],
+		"searchTerms": ["Shinryaku no susume"],
 		"title": "侵略ノススメ☆"
 	},
 	{
@@ -4532,9 +4132,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 375,
-		"searchTerms": [
-			"Gotoubun no kimochi"
-		],
+		"searchTerms": ["Gotoubun no kimochi"],
 		"title": "五等分の気持ち"
 	},
 	{
@@ -4545,9 +4143,7 @@
 			"genre": "niconico"
 		},
 		"id": 376,
-		"searchTerms": [
-			"Dareka no shinzou ni nareta nara"
-		],
+		"searchTerms": ["Dareka no shinzou ni nareta nara"],
 		"title": "だれかの心臓になれたなら"
 	},
 	{
@@ -4558,9 +4154,7 @@
 			"genre": "niconico"
 		},
 		"id": 377,
-		"searchTerms": [
-			"Teo"
-		],
+		"searchTerms": ["Teo"],
 		"title": "テオ"
 	},
 	{
@@ -4571,9 +4165,7 @@
 			"genre": "niconico"
 		},
 		"id": 378,
-		"searchTerms": [
-			"Venom"
-		],
+		"searchTerms": ["Venom"],
 		"title": "ベノム"
 	},
 	{
@@ -4584,9 +4176,7 @@
 			"genre": "東方Project"
 		},
 		"id": 379,
-		"searchTerms": [
-			"Night of knights (xi Remix)"
-		],
+		"searchTerms": ["Night of knights (xi Remix)"],
 		"title": "ナイト・オブ・ナイツ (xi Remix)"
 	},
 	{
@@ -4608,9 +4198,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 381,
-		"searchTerms": [
-			"RAIKIRI"
-		],
+		"searchTerms": ["RAIKIRI"],
 		"title": "雷切-RAIKIRI-"
 	},
 	{
@@ -4643,9 +4231,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 384,
-		"searchTerms": [
-			"Ukiuki Candy!"
-		],
+		"searchTerms": ["Ukiuki Candy!"],
 		"title": "ウキウキ☆Candy!"
 	},
 	{
@@ -4711,9 +4297,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 390,
-		"searchTerms": [
-			"STARTLINER Hoshizaki Akari solo"
-		],
+		"searchTerms": ["STARTLINER Hoshizaki Akari solo"],
 		"title": "STARTLINER -星咲 あかりソロver.-"
 	},
 	{
@@ -4724,9 +4308,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 391,
-		"searchTerms": [
-			"STARTLINER Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["STARTLINER Fujisawa Yuzu solo"],
 		"title": "STARTLINER -藤沢 柚子ソロver.-"
 	},
 	{
@@ -4737,9 +4319,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 392,
-		"searchTerms": [
-			"STARTLINER Aoi Misumi solo"
-		],
+		"searchTerms": ["STARTLINER Aoi Misumi solo"],
 		"title": "STARTLINER -三角 葵ソロver.-"
 	},
 	{
@@ -4750,10 +4330,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 393,
-		"searchTerms": [
-			"Toua -O.N.G.E.K.I. MIX-",
-			"Dodonpachi"
-		],
+		"searchTerms": ["Toua -O.N.G.E.K.I. MIX-", "Dodonpachi"],
 		"title": "東亞 -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -4775,9 +4352,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 395,
-		"searchTerms": [
-			"Connect"
-		],
+		"searchTerms": ["Connect"],
 		"title": "コネクト"
 	},
 	{
@@ -4810,9 +4385,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 398,
-		"searchTerms": [
-			"Yoimachi cantare"
-		],
+		"searchTerms": ["Yoimachi cantare"],
 		"title": "よいまちカンターレ"
 	},
 	{
@@ -4823,9 +4396,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 399,
-		"searchTerms": [
-			"Gabriel DropKick"
-		],
+		"searchTerms": ["Gabriel DropKick"],
 		"title": "ガヴリールドロップキック"
 	},
 	{
@@ -4847,9 +4418,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 401,
-		"searchTerms": [
-			"Tsukuyomi step"
-		],
+		"searchTerms": ["Tsukuyomi step"],
 		"title": "ツクヨミステップ"
 	},
 	{
@@ -4860,9 +4429,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 402,
-		"searchTerms": [
-			"Hangeki! Totsugeki! Back To Back!"
-		],
+		"searchTerms": ["Hangeki! Totsugeki! Back To Back!"],
 		"title": "反撃! 突撃! Back To Back!"
 	},
 	{
@@ -4873,9 +4440,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 403,
-		"searchTerms": [
-			"Shinkakei Colors"
-		],
+		"searchTerms": ["Shinkakei Colors"],
 		"title": "進化系Colors"
 	},
 	{
@@ -4899,9 +4464,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 405,
-		"searchTerms": [
-			"Enjou, enjou!!"
-		],
+		"searchTerms": ["Enjou, enjou!!"],
 		"title": "宛城、炎上！！"
 	},
 	{
@@ -4912,9 +4475,7 @@
 			"genre": "niconico"
 		},
 		"id": 406,
-		"searchTerms": [
-			"Zettai ni chocomint o taberu Aoi-chan"
-		],
+		"searchTerms": ["Zettai ni chocomint o taberu Aoi-chan"],
 		"title": "絶対にチョコミントを食べるアオイチャン"
 	},
 	{
@@ -4925,9 +4486,7 @@
 			"genre": "niconico"
 		},
 		"id": 407,
-		"searchTerms": [
-			"Ikasama life game"
-		],
+		"searchTerms": ["Ikasama life game"],
 		"title": "イカサマライフゲイム"
 	},
 	{
@@ -4938,9 +4497,7 @@
 			"genre": "niconico"
 		},
 		"id": 408,
-		"searchTerms": [
-			"Meitantei renzoku satsujin jiken"
-		],
+		"searchTerms": ["Meitantei renzoku satsujin jiken"],
 		"title": "名探偵連続殺人事件"
 	},
 	{
@@ -4951,9 +4508,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 409,
-		"searchTerms": [
-			"Kimi wa \"miteitane\"?"
-		],
+		"searchTerms": ["Kimi wa \"miteitane\"?"],
 		"title": "キミは“見ていたね”？"
 	},
 	{
@@ -4999,9 +4554,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 413,
-		"searchTerms": [
-			"Yamitsuki"
-		],
+		"searchTerms": ["Yamitsuki"],
 		"title": "ヤミツキ"
 	},
 	{
@@ -5045,9 +4598,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 417,
-		"searchTerms": [
-			"Let's Starry Party! Takase Rio solo"
-		],
+		"searchTerms": ["Let's Starry Party! Takase Rio solo"],
 		"title": "Let's Starry Party！ -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -5058,9 +4609,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 418,
-		"searchTerms": [
-			"Let's Starry Party! Yūki Riku solo"
-		],
+		"searchTerms": ["Let's Starry Party! Yūki Riku solo"],
 		"title": "Let's Starry Party！ -結城 莉玖ソロver.-"
 	},
 	{
@@ -5071,9 +4620,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 419,
-		"searchTerms": [
-			"Let's Starry Party! Tsubaki Aihara solo"
-		],
+		"searchTerms": ["Let's Starry Party! Tsubaki Aihara solo"],
 		"title": "Let's Starry Party！ -藍原 椿ソロver.-"
 	},
 	{
@@ -5084,9 +4631,7 @@
 			"genre": "東方Project"
 		},
 		"id": 420,
-		"searchTerms": [
-			"Seishoujo sacrifice"
-		],
+		"searchTerms": ["Seishoujo sacrifice"],
 		"title": "聖少女サクリファイス"
 	},
 	{
@@ -5108,9 +4653,7 @@
 			"genre": "東方Project"
 		},
 		"id": 422,
-		"searchTerms": [
-			"Satori ~3rd EyEs (2020 Recall)"
-		],
+		"searchTerms": ["Satori ~3rd EyEs (2020 Recall)"],
 		"title": "Satori ～3rd EyEs (2020 Recall)"
 	},
 	{
@@ -5132,9 +4675,7 @@
 			"genre": "niconico"
 		},
 		"id": 424,
-		"searchTerms": [
-			"Aisarenakute mo kimi ga iru"
-		],
+		"searchTerms": ["Aisarenakute mo kimi ga iru"],
 		"title": "愛されなくても君がいる"
 	},
 	{
@@ -5193,10 +4734,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 429,
-		"searchTerms": [
-			"RBG",
-			"RGB"
-		],
+		"searchTerms": ["RBG", "RGB"],
 		"title": "Red and Blue and Green"
 	},
 	{
@@ -5207,9 +4745,7 @@
 			"genre": "niconico"
 		},
 		"id": 430,
-		"searchTerms": [
-			"Bitter choco decoration"
-		],
+		"searchTerms": ["Bitter choco decoration"],
 		"title": "ビターチョコデコレーション"
 	},
 	{
@@ -5220,9 +4756,7 @@
 			"genre": "niconico"
 		},
 		"id": 431,
-		"searchTerms": [
-			"Umiyuri kaiteitan"
-		],
+		"searchTerms": ["Umiyuri kaiteitan"],
 		"title": "ウミユリ海底譚"
 	},
 	{
@@ -5233,9 +4767,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 432,
-		"searchTerms": [
-			"YAMINABE PANIC ~gochisou tsumekomi full course~"
-		],
+		"searchTerms": ["YAMINABE PANIC ~gochisou tsumekomi full course~"],
 		"title": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～"
 	},
 	{
@@ -5257,10 +4789,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 434,
-		"searchTerms": [
-			"DFTM",
-			"Donfai"
-		],
+		"searchTerms": ["DFTM", "Donfai"],
 		"title": "Don't Fight The Music"
 	},
 	{
@@ -5271,9 +4800,7 @@
 			"genre": "niconico"
 		},
 		"id": 435,
-		"searchTerms": [
-			"Time machine"
-		],
+		"searchTerms": ["Time machine"],
 		"title": "タイムマシン"
 	},
 	{
@@ -5284,9 +4811,7 @@
 			"genre": "niconico"
 		},
 		"id": 436,
-		"searchTerms": [
-			"Tsugihagi staccato"
-		],
+		"searchTerms": ["Tsugihagi staccato"],
 		"title": "ツギハギスタッカート"
 	},
 	{
@@ -5319,9 +4844,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 439,
-		"searchTerms": [
-			"Canaria"
-		],
+		"searchTerms": ["Canaria"],
 		"title": "カナリア"
 	},
 	{
@@ -5332,9 +4855,7 @@
 			"genre": "niconico"
 		},
 		"id": 440,
-		"searchTerms": [
-			"Taiyoukei disco"
-		],
+		"searchTerms": ["Taiyoukei disco"],
 		"title": "太陽系デスコ"
 	},
 	{
@@ -5345,9 +4866,7 @@
 			"genre": "東方Project"
 		},
 		"id": 441,
-		"searchTerms": [
-			"Tengu no otoshi bumi feat. ytr"
-		],
+		"searchTerms": ["Tengu no otoshi bumi feat. ytr"],
 		"title": "天狗の落とし文 feat. ｙｔｒ"
 	},
 	{
@@ -5358,9 +4877,7 @@
 			"genre": "東方Project"
 		},
 		"id": 442,
-		"searchTerms": [
-			"Akeboshi rocket"
-		],
+		"searchTerms": ["Akeboshi rocket"],
 		"title": "明星ロケット"
 	},
 	{
@@ -5382,9 +4899,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 444,
-		"searchTerms": [
-			"Kiss Me Kiss Sakurai Haruna solo"
-		],
+		"searchTerms": ["Kiss Me Kiss Sakurai Haruna solo"],
 		"title": "Kiss Me Kiss -桜井 春菜ソロver.-"
 	},
 	{
@@ -5395,9 +4910,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 445,
-		"searchTerms": [
-			"Kiss Me Kiss Saotome Ayaka solo"
-		],
+		"searchTerms": ["Kiss Me Kiss Saotome Ayaka solo"],
 		"title": "Kiss Me Kiss -早乙女 彩華ソロver.-"
 	},
 	{
@@ -5408,9 +4921,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 446,
-		"searchTerms": [
-			"Crying heart"
-		],
+		"searchTerms": ["Crying heart"],
 		"title": "クライングハート"
 	},
 	{
@@ -5421,9 +4932,7 @@
 			"genre": "niconico"
 		},
 		"id": 447,
-		"searchTerms": [
-			"Yoshiwara lament"
-		],
+		"searchTerms": ["Yoshiwara lament"],
 		"title": "吉原ラメント"
 	},
 	{
@@ -5434,9 +4943,7 @@
 			"genre": "niconico"
 		},
 		"id": 448,
-		"searchTerms": [
-			"Scramble kousai"
-		],
+		"searchTerms": ["Scramble kousai"],
 		"title": "スクランブル交際"
 	},
 	{
@@ -5469,9 +4976,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 451,
-		"searchTerms": [
-			"Dakara boku wa ongaku o yameta"
-		],
+		"searchTerms": ["Dakara boku wa ongaku o yameta"],
 		"title": "だから僕は音楽を辞めた"
 	},
 	{
@@ -5482,9 +4987,7 @@
 			"genre": "niconico"
 		},
 		"id": 452,
-		"searchTerms": [
-			"Inochi ni kirawareteiru"
-		],
+		"searchTerms": ["Inochi ni kirawareteiru"],
 		"title": "命に嫌われている"
 	},
 	{
@@ -5495,9 +4998,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 453,
-		"searchTerms": [
-			"SAKURA skip"
-		],
+		"searchTerms": ["SAKURA skip"],
 		"title": "SAKURAスキップ"
 	},
 	{
@@ -5519,9 +5020,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 455,
-		"searchTerms": [
-			"Watashi Connect"
-		],
+		"searchTerms": ["Watashi Connect"],
 		"title": "ワタシConnect*"
 	},
 	{
@@ -5532,9 +5031,7 @@
 			"genre": "東方Project"
 		},
 		"id": 456,
-		"searchTerms": [
-			"Bad Apple!! feat.nomico (Butaotome Ver.)"
-		],
+		"searchTerms": ["Bad Apple!! feat.nomico (Butaotome Ver.)"],
 		"title": "Bad Apple!! feat.nomico (豚乙女 Ver.)"
 	},
 	{
@@ -5556,9 +5053,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 458,
-		"searchTerms": [
-			"Miya getsukyou"
-		],
+		"searchTerms": ["Miya getsukyou"],
 		"title": "美夜月鏡"
 	},
 	{
@@ -5569,9 +5064,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 459,
-		"searchTerms": [
-			"Ai no hana"
-		],
+		"searchTerms": ["Ai no hana"],
 		"title": "藍の華"
 	},
 	{
@@ -5582,9 +5075,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 460,
-		"searchTerms": [
-			"Sakurairo fuwari"
-		],
+		"searchTerms": ["Sakurairo fuwari"],
 		"title": "サクライロフワリ"
 	},
 	{
@@ -5617,9 +5108,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 463,
-		"searchTerms": [
-			"Tenkuu cafeteria"
-		],
+		"searchTerms": ["Tenkuu cafeteria"],
 		"title": "天空カフェテリア"
 	},
 	{
@@ -5641,9 +5130,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 465,
-		"searchTerms": [
-			"Hatsukoi wa kimiiro memory"
-		],
+		"searchTerms": ["Hatsukoi wa kimiiro memory"],
 		"title": "初恋は君色メモリー"
 	},
 	{
@@ -5676,9 +5163,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 468,
-		"searchTerms": [
-			"Byoushin o kamu"
-		],
+		"searchTerms": ["Byoushin o kamu"],
 		"title": "秒針を噛む"
 	},
 	{
@@ -5689,9 +5174,7 @@
 			"genre": "niconico"
 		},
 		"id": 469,
-		"searchTerms": [
-			"World's end dancehall"
-		],
+		"searchTerms": ["World's end dancehall"],
 		"title": "ワールズエンド・ダンスホール"
 	},
 	{
@@ -5702,9 +5185,7 @@
 			"genre": "niconico"
 		},
 		"id": 470,
-		"searchTerms": [
-			"Kokoroyohou"
-		],
+		"searchTerms": ["Kokoroyohou"],
 		"title": "心予報"
 	},
 	{
@@ -5726,9 +5207,7 @@
 			"genre": "東方Project"
 		},
 		"id": 472,
-		"searchTerms": [
-			"LostWord chronicle"
-		],
+		"searchTerms": ["LostWord chronicle"],
 		"title": "ロストワードクロニカル"
 	},
 	{
@@ -5783,9 +5262,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 477,
-		"searchTerms": [
-			"Saikkou no entame da!!"
-		],
+		"searchTerms": ["Saikkou no entame da!!"],
 		"title": "最っ高のエンタメだ!!"
 	},
 	{
@@ -5840,9 +5317,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 483,
-		"searchTerms": [
-			"Pocket kara nuritsubuse! Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Pocket kara nuritsubuse! Hinata Chinatsu solo"],
 		"title": "ポケットからぬりつぶせ！ -日向 千夏ソロver.-"
 	},
 	{
@@ -5853,9 +5328,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 484,
-		"searchTerms": [
-			"Pocket kara nuritsubuse! Kashiwagi Mia solo"
-		],
+		"searchTerms": ["Pocket kara nuritsubuse! Kashiwagi Mia solo"],
 		"title": "ポケットからぬりつぶせ！ -柏木 美亜ソロver.-"
 	},
 	{
@@ -5866,9 +5339,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 485,
-		"searchTerms": [
-			"Pocket kara nuritsubuse! Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Pocket kara nuritsubuse! Shinonome Tsumugi solo"],
 		"title": "ポケットからぬりつぶせ！ -東雲 つむぎソロver.-"
 	},
 	{
@@ -5879,9 +5350,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 486,
-		"searchTerms": [
-			"Battle Garegga"
-		],
+		"searchTerms": ["Battle Garegga"],
 		"title": "Fly to the Leaden Sky -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -5903,9 +5372,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 488,
-		"searchTerms": [
-			"SEGA NET"
-		],
+		"searchTerms": ["SEGA NET"],
 		"title": "セガNET麻雀MJ -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -5949,9 +5416,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 492,
-		"searchTerms": [
-			"Shakkiiin!!"
-		],
+		"searchTerms": ["Shakkiiin!!"],
 		"title": "シャッキーーン！！"
 	},
 	{
@@ -5962,9 +5427,7 @@
 			"genre": "niconico"
 		},
 		"id": 493,
-		"searchTerms": [
-			"Luckgakist"
-		],
+		"searchTerms": ["Luckgakist"],
 		"title": "ラクガキスト"
 	},
 	{
@@ -5975,9 +5438,7 @@
 			"genre": "niconico"
 		},
 		"id": 494,
-		"searchTerms": [
-			"Bocca della verita"
-		],
+		"searchTerms": ["Bocca della verita"],
 		"title": "ボッカデラベリタ"
 	},
 	{
@@ -5988,9 +5449,7 @@
 			"genre": "niconico"
 		},
 		"id": 495,
-		"searchTerms": [
-			"Ano yo iki no bus ni notte saraba."
-		],
+		"searchTerms": ["Ano yo iki no bus ni notte saraba."],
 		"title": "あの世行きのバスに乗ってさらば。"
 	},
 	{
@@ -6001,9 +5460,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 496,
-		"searchTerms": [
-			"Bokutachi no tabi to epilogue."
-		],
+		"searchTerms": ["Bokutachi no tabi to epilogue."],
 		"title": "僕たちの旅とエピローグ。"
 	},
 	{
@@ -6014,9 +5471,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 497,
-		"searchTerms": [
-			"Shigatsu no ame"
-		],
+		"searchTerms": ["Shigatsu no ame"],
 		"title": "四月の雨"
 	},
 	{
@@ -6027,9 +5482,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 498,
-		"searchTerms": [
-			"Muteki no frontier sanjuushi"
-		],
+		"searchTerms": ["Muteki no frontier sanjuushi"],
 		"title": "無敵のフロンティア三銃士"
 	},
 	{
@@ -6051,9 +5504,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 500,
-		"searchTerms": [
-			"Ahoy!! Warera Houshou kaizokudan"
-		],
+		"searchTerms": ["Ahoy!! Warera Houshou kaizokudan"],
 		"title": "Ahoy!! 我ら宝鐘海賊団☆"
 	},
 	{
@@ -6075,9 +5526,7 @@
 			"genre": "東方Project"
 		},
 		"id": 502,
-		"searchTerms": [
-			"Shiawase usagi"
-		],
+		"searchTerms": ["Shiawase usagi"],
 		"title": "シアワセうさぎ・ぺこみこマリン"
 	},
 	{
@@ -6088,9 +5537,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 503,
-		"searchTerms": [
-			"Mendooi! Yahhooi! Tomodachi! Inohara Koboshi solo"
-		],
+		"searchTerms": ["Mendooi! Yahhooi! Tomodachi! Inohara Koboshi solo"],
 		"title": "めんどーい！やっほーい！ともだち！  -井之原 小星ソロver.-"
 	},
 	{
@@ -6101,9 +5548,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 504,
-		"searchTerms": [
-			"Mendooi! Yahhooi! Tomodachi! Kashiwagi Saki solo"
-		],
+		"searchTerms": ["Mendooi! Yahhooi! Tomodachi! Kashiwagi Saki solo"],
 		"title": "めんどーい！やっほーい！ともだち！  -柏木 咲姫ソロver.-"
 	},
 	{
@@ -6125,9 +5570,7 @@
 			"genre": "niconico"
 		},
 		"id": 506,
-		"searchTerms": [
-			"Yobanashi deceive"
-		],
+		"searchTerms": ["Yobanashi deceive"],
 		"title": "夜咄ディセイブ"
 	},
 	{
@@ -6138,9 +5581,7 @@
 			"genre": "niconico"
 		},
 		"id": 507,
-		"searchTerms": [
-			"Last resort"
-		],
+		"searchTerms": ["Last resort"],
 		"title": "ラストリゾート"
 	},
 	{
@@ -6217,9 +5658,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 514,
-		"searchTerms": [
-			"Illuminage land"
-		],
+		"searchTerms": ["Illuminage land"],
 		"title": "イルミナージュ・ランド"
 	},
 	{
@@ -6230,9 +5669,7 @@
 			"genre": "niconico"
 		},
 		"id": 515,
-		"searchTerms": [
-			"Ame to Petra"
-		],
+		"searchTerms": ["Ame to Petra"],
 		"title": "雨とペトラ"
 	},
 	{
@@ -6254,9 +5691,7 @@
 			"genre": "niconico"
 		},
 		"id": 517,
-		"searchTerms": [
-			"Violence trigger"
-		],
+		"searchTerms": ["Violence trigger"],
 		"title": "バイオレンストリガー"
 	},
 	{
@@ -6267,9 +5702,7 @@
 			"genre": "niconico"
 		},
 		"id": 518,
-		"searchTerms": [
-			"Alkali rettousei"
-		],
+		"searchTerms": ["Alkali rettousei"],
 		"title": "アルカリレットウセイ"
 	},
 	{
@@ -6280,9 +5713,7 @@
 			"genre": "niconico"
 		},
 		"id": 519,
-		"searchTerms": [
-			"Kire carry on"
-		],
+		"searchTerms": ["Kire carry on"],
 		"title": "キレキャリオン"
 	},
 	{
@@ -6293,9 +5724,7 @@
 			"genre": "niconico"
 		},
 		"id": 520,
-		"searchTerms": [
-			"Zenmai shoujo tokei"
-		],
+		"searchTerms": ["Zenmai shoujo tokei"],
 		"title": "撥条少女時計"
 	},
 	{
@@ -6317,9 +5746,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 522,
-		"searchTerms": [
-			"Cinderella disco"
-		],
+		"searchTerms": ["Cinderella disco"],
 		"title": "シンデレラディスコ"
 	},
 	{
@@ -6330,9 +5757,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 523,
-		"searchTerms": [
-			"Jeanne d'Arc no doukoku"
-		],
+		"searchTerms": ["Jeanne d'Arc no doukoku"],
 		"title": "ジャンヌ・ダルクの慟哭"
 	},
 	{
@@ -6343,9 +5768,7 @@
 			"genre": "niconico"
 		},
 		"id": 524,
-		"searchTerms": [
-			"Negative shinkaron"
-		],
+		"searchTerms": ["Negative shinkaron"],
 		"title": "ネガティブ進化論"
 	},
 	{
@@ -6356,9 +5779,7 @@
 			"genre": "niconico"
 		},
 		"id": 525,
-		"searchTerms": [
-			"Nyannyanteki uchuuron"
-		],
+		"searchTerms": ["Nyannyanteki uchuuron"],
 		"title": "猫猫的宇宙論"
 	},
 	{
@@ -6369,9 +5790,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 526,
-		"searchTerms": [
-			"Kokuhaku bungee jump"
-		],
+		"searchTerms": ["Kokuhaku bungee jump"],
 		"title": "告白バンジージャンプ"
 	},
 	{
@@ -6382,9 +5801,7 @@
 			"genre": "niconico"
 		},
 		"id": 527,
-		"searchTerms": [
-			"Totemo suteki na rokugatsu deshita"
-		],
+		"searchTerms": ["Totemo suteki na rokugatsu deshita"],
 		"title": "とても素敵な六月でした"
 	},
 	{
@@ -6417,9 +5834,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 530,
-		"searchTerms": [
-			"Ruler Count, Zero Ōsaka Akane solo"
-		],
+		"searchTerms": ["Ruler Count, Zero Ōsaka Akane solo"],
 		"title": "Ruler Count, Zero -逢坂 茜ソロver.-"
 	},
 	{
@@ -6430,9 +5845,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 531,
-		"searchTerms": [
-			"Ruler Count, Zero Kujō Kaede solo"
-		],
+		"searchTerms": ["Ruler Count, Zero Kujō Kaede solo"],
 		"title": "Ruler Count, Zero -九條 楓ソロver.-"
 	},
 	{
@@ -6443,9 +5856,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 532,
-		"searchTerms": [
-			"Ruler Count, Zero Suzushima Arisu solo"
-		],
+		"searchTerms": ["Ruler Count, Zero Suzushima Arisu solo"],
 		"title": "Ruler Count, Zero -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -6456,9 +5867,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 533,
-		"searchTerms": [
-			"Kizuna Sparkling World"
-		],
+		"searchTerms": ["Kizuna Sparkling World"],
 		"title": "キズナ Sparkling World"
 	},
 	{
@@ -6469,9 +5878,7 @@
 			"genre": "niconico"
 		},
 		"id": 534,
-		"searchTerms": [
-			"Akari ga yatte kita zo"
-		],
+		"searchTerms": ["Akari ga yatte kita zo"],
 		"title": "アカリがやってきたぞっ"
 	},
 	{
@@ -6482,9 +5889,7 @@
 			"genre": "niconico"
 		},
 		"id": 535,
-		"searchTerms": [
-			"Kibou no tsuki"
-		],
+		"searchTerms": ["Kibou no tsuki"],
 		"title": "幾望の月"
 	},
 	{
@@ -6561,9 +5966,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 542,
-		"searchTerms": [
-			"Ray ray ~chouzetsu saikyou Ame-chan Mix~"
-		],
+		"searchTerms": ["Ray ray ~chouzetsu saikyou Ame-chan Mix~"],
 		"title": "レーイレーイ ～超絶最強アメちゃん Mix～"
 	},
 	{
@@ -6596,9 +5999,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 545,
-		"searchTerms": [
-			"Oyasumi no uta"
-		],
+		"searchTerms": ["Oyasumi no uta"],
 		"title": "おやすみのうた"
 	},
 	{
@@ -6620,9 +6021,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 547,
-		"searchTerms": [
-			"Splash Dance!! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Splash Dance!! Hoshizaki Akari solo"],
 		"title": "Splash Dance!! -星咲 あかりソロver.-"
 	},
 	{
@@ -6633,9 +6032,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 548,
-		"searchTerms": [
-			"Splash Dance!! Takase Rio solo"
-		],
+		"searchTerms": ["Splash Dance!! Takase Rio solo"],
 		"title": "Splash Dance!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -6646,9 +6043,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 549,
-		"searchTerms": [
-			"Splash Dance!! Sakurai Haruna solo"
-		],
+		"searchTerms": ["Splash Dance!! Sakurai Haruna solo"],
 		"title": "Splash Dance!! -桜井 春菜ソロver.-"
 	},
 	{
@@ -6659,9 +6054,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 550,
-		"searchTerms": [
-			"Splash Dance!! Inohara Koboshi solo"
-		],
+		"searchTerms": ["Splash Dance!! Inohara Koboshi solo"],
 		"title": "Splash Dance!! -井之原 小星ソロver.-"
 	},
 	{
@@ -6672,9 +6065,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 551,
-		"searchTerms": [
-			"Splash Dance!! Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Splash Dance!! Hinata Chinatsu solo"],
 		"title": "Splash Dance!! -日向 千夏ソロver.-"
 	},
 	{
@@ -6685,9 +6076,7 @@
 			"genre": "niconico"
 		},
 		"id": 552,
-		"searchTerms": [
-			"Next nest"
-		],
+		"searchTerms": ["Next nest"],
 		"title": "ネクストネスト"
 	},
 	{
@@ -6709,9 +6098,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 554,
-		"searchTerms": [
-			"FUCK TIAMAT"
-		],
+		"searchTerms": ["FUCK TIAMAT"],
 		"title": "TiamaT:F minor"
 	},
 	{
@@ -6755,9 +6142,7 @@
 			"genre": "東方Project"
 		},
 		"id": 558,
-		"searchTerms": [
-			"Itazura sensation"
-		],
+		"searchTerms": ["Itazura sensation"],
 		"title": "悪戯センセーション"
 	},
 	{
@@ -6804,9 +6189,7 @@
 			"genre": "niconico"
 		},
 		"id": 562,
-		"searchTerms": [
-			"Rinne tensei"
-		],
+		"searchTerms": ["Rinne tensei"],
 		"title": "輪廻転生"
 	},
 	{
@@ -6817,9 +6200,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 563,
-		"searchTerms": [
-			"Sono gunjou ga itoshikatta you datta"
-		],
+		"searchTerms": ["Sono gunjou ga itoshikatta you datta"],
 		"title": "その群青が愛しかったようだった"
 	},
 	{
@@ -6841,10 +6222,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 565,
-		"searchTerms": [
-			"Reend of a Dream",
-			"Re:End of a Dream"
-		],
+		"searchTerms": ["Reend of a Dream", "Re:End of a Dream"],
 		"title": "Re：End of a Dream"
 	},
 	{
@@ -6855,9 +6233,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 566,
-		"searchTerms": [
-			"Starring Stars Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Starring Stars Hoshizaki Akari solo"],
 		"title": "Starring Stars -星咲 あかりソロver.-"
 	},
 	{
@@ -6868,9 +6244,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 567,
-		"searchTerms": [
-			"Starring Stars Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Starring Stars Fujisawa Yuzu solo"],
 		"title": "Starring Stars -藤沢 柚子ソロver.-"
 	},
 	{
@@ -6881,9 +6255,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 568,
-		"searchTerms": [
-			"Starring Stars Aoi Misumi solo"
-		],
+		"searchTerms": ["Starring Stars Aoi Misumi solo"],
 		"title": "Starring Stars -三角 葵ソロver.-"
 	},
 	{
@@ -6894,9 +6266,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 569,
-		"searchTerms": [
-			"Rail romanesque Hachiroku ver."
-		],
+		"searchTerms": ["Rail romanesque Hachiroku ver."],
 		"title": "レイル・ロマネスク ハチロクver."
 	},
 	{
@@ -6907,9 +6277,7 @@
 			"genre": "niconico"
 		},
 		"id": 570,
-		"searchTerms": [
-			"Kuusou ressha"
-		],
+		"searchTerms": ["Kuusou ressha"],
 		"title": "空奏列車"
 	},
 	{
@@ -6964,9 +6332,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 575,
-		"searchTerms": [
-			"Ohayou japonica"
-		],
+		"searchTerms": ["Ohayou japonica"],
 		"title": "おはようジャポニカ"
 	},
 	{
@@ -6977,9 +6343,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 576,
-		"searchTerms": [
-			"Arimasuka?"
-		],
+		"searchTerms": ["Arimasuka?"],
 		"title": "あ・り・ま・す・か？"
 	},
 	{
@@ -6990,9 +6354,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 577,
-		"searchTerms": [
-			"Nini"
-		],
+		"searchTerms": ["Nini"],
 		"title": "ニニ"
 	},
 	{
@@ -7003,9 +6365,7 @@
 			"genre": "東方Project"
 		},
 		"id": 578,
-		"searchTerms": [
-			"Kaze ni noseta negai"
-		],
+		"searchTerms": ["Kaze ni noseta negai"],
 		"title": "風に乗せた願い"
 	},
 	{
@@ -7016,9 +6376,7 @@
 			"genre": "東方Project"
 		},
 		"id": 579,
-		"searchTerms": [
-			"Danzai wa amaneku ningen no moto ni"
-		],
+		"searchTerms": ["Danzai wa amaneku ningen no moto ni"],
 		"title": "断罪は遍く人間の元に"
 	},
 	{
@@ -7029,9 +6387,7 @@
 			"genre": "東方Project"
 		},
 		"id": 580,
-		"searchTerms": [
-			"Kero9destiny"
-		],
+		"searchTerms": ["Kero9destiny"],
 		"title": "ケロ⑨destiny"
 	},
 	{
@@ -7042,9 +6398,7 @@
 			"genre": "東方Project"
 		},
 		"id": 581,
-		"searchTerms": [
-			"Kawazuishi"
-		],
+		"searchTerms": ["Kawazuishi"],
 		"title": "蛙石"
 	},
 	{
@@ -7066,9 +6420,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 583,
-		"searchTerms": [
-			"Karappo nonfiction"
-		],
+		"searchTerms": ["Karappo nonfiction"],
 		"title": "カラッポ・ノンフィクション"
 	},
 	{
@@ -7079,9 +6431,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 584,
-		"searchTerms": [
-			"Burning Hearts ~honoo no ANGEL~"
-		],
+		"searchTerms": ["Burning Hearts ~honoo no ANGEL~"],
 		"title": "Burning Hearts ～炎のANGEL～"
 	},
 	{
@@ -7092,9 +6442,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 585,
-		"searchTerms": [
-			"Nandodemo Waraou"
-		],
+		"searchTerms": ["Nandodemo Waraou"],
 		"title": "なんどでも笑おう"
 	},
 	{
@@ -7116,9 +6464,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 587,
-		"searchTerms": [
-			"Yonde Mirakurun!"
-		],
+		"searchTerms": ["Yonde Mirakurun!"],
 		"title": "よんでミラクるん!"
 	},
 	{
@@ -7140,9 +6486,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 589,
-		"searchTerms": [
-			"Hana wa odoreya iroha ni ho"
-		],
+		"searchTerms": ["Hana wa odoreya iroha ni ho"],
 		"title": "花ハ踊レヤいろはにほ"
 	},
 	{
@@ -7153,9 +6497,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 590,
-		"searchTerms": [
-			"Usseewa"
-		],
+		"searchTerms": ["Usseewa"],
 		"title": "うっせぇわ"
 	},
 	{
@@ -7166,9 +6508,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 591,
-		"searchTerms": [
-			"Haru o tsugeru"
-		],
+		"searchTerms": ["Haru o tsugeru"],
 		"title": "春を告げる"
 	},
 	{
@@ -7190,9 +6530,7 @@
 			"genre": "niconico"
 		},
 		"id": 593,
-		"searchTerms": [
-			"Darling dance"
-		],
+		"searchTerms": ["Darling dance"],
 		"title": "ダーリンダンス"
 	},
 	{
@@ -7203,9 +6541,7 @@
 			"genre": "niconico"
 		},
 		"id": 594,
-		"searchTerms": [
-			"Ren'ai saiban"
-		],
+		"searchTerms": ["Ren'ai saiban"],
 		"title": "恋愛裁判"
 	},
 	{
@@ -7216,9 +6552,7 @@
 			"genre": "niconico"
 		},
 		"id": 595,
-		"searchTerms": [
-			"Junky night town orchestra"
-		],
+		"searchTerms": ["Junky night town orchestra"],
 		"title": "ジャンキーナイトタウンオーケストラ"
 	},
 	{
@@ -7229,9 +6563,7 @@
 			"genre": "東方Project"
 		},
 		"id": 596,
-		"searchTerms": [
-			"Iro wa nioedo chirinuruwo"
-		],
+		"searchTerms": ["Iro wa nioedo chirinuruwo"],
 		"title": "色は匂へど散りぬるを"
 	},
 	{
@@ -7242,9 +6574,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 598,
-		"searchTerms": [
-			"Dement ~after legend~"
-		],
+		"searchTerms": ["Dement ~after legend~"],
 		"title": "Dement ～after legend～"
 	},
 	{
@@ -7299,9 +6629,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 603,
-		"searchTerms": [
-			"Hanadoki wa yume o miru"
-		],
+		"searchTerms": ["Hanadoki wa yume o miru"],
 		"title": "花時は夢を見る。"
 	},
 	{
@@ -7312,9 +6640,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 604,
-		"searchTerms": [
-			"Gaming polar bear"
-		],
+		"searchTerms": ["Gaming polar bear"],
 		"title": "ゲーミングポーラーベア"
 	},
 	{
@@ -7336,9 +6662,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 606,
-		"searchTerms": [
-			"Mirage fragrance"
-		],
+		"searchTerms": ["Mirage fragrance"],
 		"title": "ミラージュ・フレイグランス"
 	},
 	{
@@ -7360,9 +6684,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 608,
-		"searchTerms": [
-			"No Limit RED Force Hoshizaki Akari solo"
-		],
+		"searchTerms": ["No Limit RED Force Hoshizaki Akari solo"],
 		"title": "No Limit RED Force -星咲 あかりソロver.-"
 	},
 	{
@@ -7373,9 +6695,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 609,
-		"searchTerms": [
-			"No Limit RED Force Tsubaki Aihara solo"
-		],
+		"searchTerms": ["No Limit RED Force Tsubaki Aihara solo"],
 		"title": "No Limit RED Force -藍原 椿ソロver.-"
 	},
 	{
@@ -7386,9 +6706,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 610,
-		"searchTerms": [
-			"No Limit RED Force Saotome Ayaka solo"
-		],
+		"searchTerms": ["No Limit RED Force Saotome Ayaka solo"],
 		"title": "No Limit RED Force -早乙女 彩華ソロver.-"
 	},
 	{
@@ -7399,9 +6717,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 611,
-		"searchTerms": [
-			"No Limit RED Force Kashiwagi Saki solo"
-		],
+		"searchTerms": ["No Limit RED Force Kashiwagi Saki solo"],
 		"title": "No Limit RED Force -柏木 咲姫ソロver.-"
 	},
 	{
@@ -7412,9 +6728,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 612,
-		"searchTerms": [
-			"No Limit RED Force Kashiwagi Mia solo"
-		],
+		"searchTerms": ["No Limit RED Force Kashiwagi Mia solo"],
 		"title": "No Limit RED Force -柏木 美亜ソロver.-"
 	},
 	{
@@ -7425,9 +6739,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 613,
-		"searchTerms": [
-			"Saishuu kichiku zenbu koe"
-		],
+		"searchTerms": ["Saishuu kichiku zenbu koe"],
 		"title": "最終鬼畜全部声"
 	},
 	{
@@ -7438,10 +6750,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 614,
-		"searchTerms": [
-			"Take",
-			"Bamboo"
-		],
+		"searchTerms": ["Take", "Bamboo"],
 		"title": "竹"
 	},
 	{
@@ -7463,9 +6772,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 616,
-		"searchTerms": [
-			"Psalms ~tamashii no kaeru basho~"
-		],
+		"searchTerms": ["Psalms ~tamashii no kaeru basho~"],
 		"title": "Psalms ～魂の還るばしょ～"
 	},
 	{
@@ -7476,9 +6783,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 617,
-		"searchTerms": [
-			"Ebby nurseday"
-		],
+		"searchTerms": ["Ebby nurseday"],
 		"title": "エッビーナースデイ"
 	},
 	{
@@ -7489,9 +6794,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 618,
-		"searchTerms": [
-			"Amakamisama"
-		],
+		"searchTerms": ["Amakamisama"],
 		"title": "アマカミサマ"
 	},
 	{
@@ -7502,9 +6805,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 619,
-		"searchTerms": [
-			"Happy end o hajime kara"
-		],
+		"searchTerms": ["Happy end o hajime kara"],
 		"title": "ハッピーエンドをはじめから"
 	},
 	{
@@ -7515,10 +6816,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 620,
-		"searchTerms": [
-			"VTuber no uta",
-			"Buichubba"
-		],
+		"searchTerms": ["VTuber no uta", "Buichubba"],
 		"title": "ぶいちゅっばの歌"
 	},
 	{
@@ -7529,9 +6827,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 621,
-		"searchTerms": [
-			"Y.Y.Y. keikaku!!!! Ōsaka Akane solo"
-		],
+		"searchTerms": ["Y.Y.Y. keikaku!!!! Ōsaka Akane solo"],
 		"title": "Y.Y.Y.計画!!!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -7542,9 +6838,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 622,
-		"searchTerms": [
-			"Y.Y.Y. keikaku!!!! Kujō Kaede solo"
-		],
+		"searchTerms": ["Y.Y.Y. keikaku!!!! Kujō Kaede solo"],
 		"title": "Y.Y.Y.計画!!!! -九條 楓ソロver.-"
 	},
 	{
@@ -7555,9 +6849,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 623,
-		"searchTerms": [
-			"Y.Y.Y. keikaku!!!! Suzushima Arisu solo"
-		],
+		"searchTerms": ["Y.Y.Y. keikaku!!!! Suzushima Arisu solo"],
 		"title": "Y.Y.Y.計画!!!! -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -7590,9 +6882,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 626,
-		"searchTerms": [
-			"magia"
-		],
+		"searchTerms": ["magia"],
 		"title": "μάγια"
 	},
 	{
@@ -7603,9 +6893,7 @@
 			"genre": "niconico"
 		},
 		"id": 627,
-		"searchTerms": [
-			"Hatsune tenchi kaibyaku shinwa"
-		],
+		"searchTerms": ["Hatsune tenchi kaibyaku shinwa"],
 		"title": "初音天地開闢神話"
 	},
 	{
@@ -7616,9 +6904,7 @@
 			"genre": "niconico"
 		},
 		"id": 628,
-		"searchTerms": [
-			"39 music!"
-		],
+		"searchTerms": ["39 music!"],
 		"title": "39みゅーじっく！"
 	},
 	{
@@ -7629,9 +6915,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 629,
-		"searchTerms": [
-			"Welcome to ONSEN!!"
-		],
+		"searchTerms": ["Welcome to ONSEN!!"],
 		"title": "うぇるかむ to ONSEN!!"
 	},
 	{
@@ -7642,9 +6926,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 630,
-		"searchTerms": [
-			"Adachi oufu wwww"
-		],
+		"searchTerms": ["Adachi oufu wwww"],
 		"title": "足立オウフwwww"
 	},
 	{
@@ -7655,9 +6937,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 631,
-		"searchTerms": [
-			"Fuku yadoru otoya Tamaonsen"
-		],
+		"searchTerms": ["Fuku yadoru otoya Tamaonsen"],
 		"title": "福宿音屋魂音泉"
 	},
 	{
@@ -7668,9 +6948,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 632,
-		"searchTerms": [
-			"Pokapoka onsen ondo"
-		],
+		"searchTerms": ["Pokapoka onsen ondo"],
 		"title": "ぽかぽか温泉音頭"
 	},
 	{
@@ -7692,9 +6970,7 @@
 			"genre": "niconico"
 		},
 		"id": 634,
-		"searchTerms": [
-			"Eien ni game de taisen shitai Kiritan"
-		],
+		"searchTerms": ["Eien ni game de taisen shitai Kiritan"],
 		"title": "永遠にゲームで対戦したいキリタン"
 	},
 	{
@@ -7705,9 +6981,7 @@
 			"genre": "niconico"
 		},
 		"id": 635,
-		"searchTerms": [
-			"Dennou shoujo wa utahime no yume o miru ka?"
-		],
+		"searchTerms": ["Dennou shoujo wa utahime no yume o miru ka?"],
 		"title": "電脳少女は歌姫の夢を見るか？"
 	},
 	{
@@ -7731,9 +7005,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 637,
-		"searchTerms": [
-			"Muteki no frontier sanjuushi Aoi Misumi solo"
-		],
+		"searchTerms": ["Muteki no frontier sanjuushi Aoi Misumi solo"],
 		"title": "無敵のフロンティア三銃士 -三角 葵ソロver.-"
 	},
 	{
@@ -7744,9 +7016,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 638,
-		"searchTerms": [
-			"Muteki no frontier sanjuushi Kujō Kaede solo"
-		],
+		"searchTerms": ["Muteki no frontier sanjuushi Kujō Kaede solo"],
 		"title": "無敵のフロンティア三銃士 -九條 楓ソロver.-"
 	},
 	{
@@ -7757,9 +7027,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 639,
-		"searchTerms": [
-			"Muteki no frontier sanjuushi Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Muteki no frontier sanjuushi Hinata Chinatsu solo"],
 		"title": "無敵のフロンティア三銃士 -日向 千夏ソロver.-"
 	},
 	{
@@ -7770,9 +7038,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 640,
-		"searchTerms": [
-			"700,000,000,000,000,000,000,000 no sora de"
-		],
+		"searchTerms": ["700,000,000,000,000,000,000,000 no sora de"],
 		"title": "700,000,000,000,000,000,000,000の空で"
 	},
 	{
@@ -7783,9 +7049,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 641,
-		"searchTerms": [
-			"Chat noir"
-		],
+		"searchTerms": ["Chat noir"],
 		"title": "シャノワール"
 	},
 	{
@@ -7807,9 +7071,7 @@
 			"genre": "東方Project"
 		},
 		"id": 643,
-		"searchTerms": [
-			"Okuu no nuclear fusion dojo"
-		],
+		"searchTerms": ["Okuu no nuclear fusion dojo"],
 		"title": "お空のニュークリアフュージョン道場"
 	},
 	{
@@ -7886,9 +7148,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 650,
-		"searchTerms": [
-			"Amatsu kaze"
-		],
+		"searchTerms": ["Amatsu kaze"],
 		"title": "天つ風"
 	},
 	{
@@ -7899,9 +7159,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 651,
-		"searchTerms": [
-			"Happy new nyaa"
-		],
+		"searchTerms": ["Happy new nyaa"],
 		"title": "はっぴぃ にゅう にゃあ"
 	},
 	{
@@ -7912,9 +7170,7 @@
 			"genre": "niconico"
 		},
 		"id": 652,
-		"searchTerms": [
-			"Sekai wa mada hajimatte sura inai"
-		],
+		"searchTerms": ["Sekai wa mada hajimatte sura inai"],
 		"title": "セカイはまだ始まってすらいない"
 	},
 	{
@@ -7925,9 +7181,7 @@
 			"genre": "niconico"
 		},
 		"id": 653,
-		"searchTerms": [
-			"Kuyamu to kaite mirai"
-		],
+		"searchTerms": ["Kuyamu to kaite mirai"],
 		"title": "悔やむと書いてミライ"
 	},
 	{
@@ -7960,9 +7214,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 656,
-		"searchTerms": [
-			"Heart Cooking Recipe Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Heart Cooking Recipe Fujisawa Yuzu solo"],
 		"title": "Heart Cooking Recipe -藤沢 柚子ソロver.-"
 	},
 	{
@@ -7973,9 +7225,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 657,
-		"searchTerms": [
-			"Heart Cooking Recipe Inohara Koboshi solo"
-		],
+		"searchTerms": ["Heart Cooking Recipe Inohara Koboshi solo"],
 		"title": "Heart Cooking Recipe -井之原 小星ソロver.-"
 	},
 	{
@@ -7986,9 +7236,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 658,
-		"searchTerms": [
-			"Heart Cooking Recipe Kujō Kaede solo"
-		],
+		"searchTerms": ["Heart Cooking Recipe Kujō Kaede solo"],
 		"title": "Heart Cooking Recipe -九條 楓ソロver.-"
 	},
 	{
@@ -8010,9 +7258,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 660,
-		"searchTerms": [
-			"Itsuka hanasaku sono mae ni"
-		],
+		"searchTerms": ["Itsuka hanasaku sono mae ni"],
 		"title": "いつか花咲くその前に"
 	},
 	{
@@ -8045,9 +7291,7 @@
 			"genre": "niconico"
 		},
 		"id": 663,
-		"searchTerms": [
-			"Sekai"
-		],
+		"searchTerms": ["Sekai"],
 		"title": "セカイ"
 	},
 	{
@@ -8058,9 +7302,7 @@
 			"genre": "niconico"
 		},
 		"id": 664,
-		"searchTerms": [
-			"Wah wah world"
-		],
+		"searchTerms": ["Wah wah world"],
 		"title": "ワーワーワールド"
 	},
 	{
@@ -8071,9 +7313,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 665,
-		"searchTerms": [
-			"Kimi no Starlight Road"
-		],
+		"searchTerms": ["Kimi no Starlight Road"],
 		"title": "君のStarlight Road"
 	},
 	{
@@ -8095,9 +7335,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 667,
-		"searchTerms": [
-			"numbers"
-		],
+		"searchTerms": ["numbers"],
 		"title": "2112410403927243233368"
 	},
 	{
@@ -8130,9 +7368,7 @@
 			"genre": "niconico"
 		},
 		"id": 670,
-		"searchTerms": [
-			"Kusare gedou to chocolate"
-		],
+		"searchTerms": ["Kusare gedou to chocolate"],
 		"title": "腐れ外道とチョコレゐト"
 	},
 	{
@@ -8176,9 +7412,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 674,
-		"searchTerms": [
-			"Kimi wa \"miteitane\"? Yūki Riku solo"
-		],
+		"searchTerms": ["Kimi wa \"miteitane\"? Yūki Riku solo"],
 		"title": "キミは“見ていたね”？ -結城 莉玖ソロver.-"
 	},
 	{
@@ -8189,9 +7423,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 675,
-		"searchTerms": [
-			"Kimi wa \"miteitane\"? Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Kimi wa \"miteitane\"? Shinonome Tsumugi solo"],
 		"title": "キミは“見ていたね”？ -東雲 つむぎソロver.-"
 	},
 	{
@@ -8202,9 +7434,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 676,
-		"searchTerms": [
-			"give it up to you Sakurai Haruna solo"
-		],
+		"searchTerms": ["give it up to you Sakurai Haruna solo"],
 		"title": "give it up to you -桜井 春菜ソロver.-"
 	},
 	{
@@ -8215,9 +7445,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 677,
-		"searchTerms": [
-			"give it up to you Saotome Ayaka solo"
-		],
+		"searchTerms": ["give it up to you Saotome Ayaka solo"],
 		"title": "give it up to you -早乙女 彩華ソロver.-"
 	},
 	{
@@ -8228,9 +7456,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 678,
-		"searchTerms": [
-			"Mirai memories!"
-		],
+		"searchTerms": ["Mirai memories!"],
 		"title": "ミライメモリーズ！"
 	},
 	{
@@ -8241,9 +7467,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 679,
-		"searchTerms": [
-			"Kiri no shosai"
-		],
+		"searchTerms": ["Kiri no shosai"],
 		"title": "霧の書斎"
 	},
 	{
@@ -8265,9 +7489,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 681,
-		"searchTerms": [
-			"Watashitachi, shiki o asobundesu!!"
-		],
+		"searchTerms": ["Watashitachi, shiki o asobundesu!!"],
 		"title": "私たち、四季を遊ぶんです！！"
 	},
 	{
@@ -8289,9 +7511,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 683,
-		"searchTerms": [
-			"Seeno de tobe tte itten no!"
-		],
+		"searchTerms": ["Seeno de tobe tte itten no!"],
 		"title": "せーので跳べって言ってんの！"
 	},
 	{
@@ -8302,9 +7522,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 684,
-		"searchTerms": [
-			"Epitorica no matsuri"
-		],
+		"searchTerms": ["Epitorica no matsuri"],
 		"title": "エピトゥリカの祀"
 	},
 	{
@@ -8337,9 +7555,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 687,
-		"searchTerms": [
-			"Literature"
-		],
+		"searchTerms": ["Literature"],
 		"title": "リテラチュア"
 	},
 	{
@@ -8350,9 +7566,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 688,
-		"searchTerms": [
-			"Thunder line"
-		],
+		"searchTerms": ["Thunder line"],
 		"title": "サンダーライン"
 	},
 	{
@@ -8363,9 +7577,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 689,
-		"searchTerms": [
-			"Umapyoi densetsu"
-		],
+		"searchTerms": ["Umapyoi densetsu"],
 		"title": "うまぴょい伝説"
 	},
 	{
@@ -8387,9 +7599,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 691,
-		"searchTerms": [
-			"Hysteric night girl"
-		],
+		"searchTerms": ["Hysteric night girl"],
 		"title": "ヒステリックナイトガール"
 	},
 	{
@@ -8400,9 +7610,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 692,
-		"searchTerms": [
-			"Kinmokusei feat.Ado"
-		],
+		"searchTerms": ["Kinmokusei feat.Ado"],
 		"title": "金木犀 feat.Ado"
 	},
 	{
@@ -8424,9 +7632,7 @@
 			"genre": "niconico"
 		},
 		"id": 694,
-		"searchTerms": [
-			"Yuurei Tokyo"
-		],
+		"searchTerms": ["Yuurei Tokyo"],
 		"title": "幽霊東京"
 	},
 	{
@@ -8437,9 +7643,7 @@
 			"genre": "東方Project"
 		},
 		"id": 695,
-		"searchTerms": [
-			"Kamigami ga koishita Gensoukyou"
-		],
+		"searchTerms": ["Kamigami ga koishita Gensoukyou"],
 		"title": "神々が恋した幻想郷"
 	},
 	{
@@ -8450,9 +7654,7 @@
 			"genre": "東方Project"
 		},
 		"id": 696,
-		"searchTerms": [
-			"Kaiten feat.Ayaponzu*"
-		],
+		"searchTerms": ["Kaiten feat.Ayaponzu*"],
 		"title": "回転 feat.あやぽんず＊"
 	},
 	{
@@ -8463,9 +7665,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 697,
-		"searchTerms": [
-			"Borochi"
-		],
+		"searchTerms": ["Borochi"],
 		"title": "8OROCHI"
 	},
 	{
@@ -8553,9 +7753,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 705,
-		"searchTerms": [
-			"Jump!! Jump!! Jump!! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Jump!! Jump!! Jump!! Hoshizaki Akari solo"],
 		"title": "Jump!! Jump!! Jump!! -星咲 あかりソロver.-"
 	},
 	{
@@ -8566,9 +7764,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 706,
-		"searchTerms": [
-			"Jump!! Jump!! Jump!! Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Jump!! Jump!! Jump!! Fujisawa Yuzu solo"],
 		"title": "Jump!! Jump!! Jump!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -8579,9 +7775,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 707,
-		"searchTerms": [
-			"Jump!! Jump!! Jump!! Aoi Misumi solo"
-		],
+		"searchTerms": ["Jump!! Jump!! Jump!! Aoi Misumi solo"],
 		"title": "Jump!! Jump!! Jump!! -三角 葵ソロver.-"
 	},
 	{
@@ -8592,9 +7786,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 708,
-		"searchTerms": [
-			"Jump!! Jump!! Jump!! Takase Rio solo"
-		],
+		"searchTerms": ["Jump!! Jump!! Jump!! Takase Rio solo"],
 		"title": "Jump!! Jump!! Jump!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -8605,9 +7797,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 709,
-		"searchTerms": [
-			"Jump!! Jump!! Jump!! Ōsaka Akane solo"
-		],
+		"searchTerms": ["Jump!! Jump!! Jump!! Ōsaka Akane solo"],
 		"title": "Jump!! Jump!! Jump!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -8629,9 +7819,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 711,
-		"searchTerms": [
-			"Ataraxia"
-		],
+		"searchTerms": ["Ataraxia"],
 		"title": "Ἀταραξία"
 	},
 	{
@@ -8653,9 +7841,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 713,
-		"searchTerms": [
-			"Namida kakushite onna michi"
-		],
+		"searchTerms": ["Namida kakushite onna michi"],
 		"title": "涙隠しておんな道"
 	},
 	{
@@ -8710,9 +7896,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 718,
-		"searchTerms": [
-			"Marimo to omochabako"
-		],
+		"searchTerms": ["Marimo to omochabako"],
 		"title": "まりもとおもちゃ箱"
 	},
 	{
@@ -8723,9 +7907,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 719,
-		"searchTerms": [
-			"Sono emerald o miyo"
-		],
+		"searchTerms": ["Sono emerald o miyo"],
 		"title": "其のエメラルドを見よ"
 	},
 	{
@@ -8736,9 +7918,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 720,
-		"searchTerms": [
-			"op1 fear titan"
-		],
+		"searchTerms": ["op1 fear titan"],
 		"title": "Op.I《fear-TITΛN-》"
 	},
 	{
@@ -8760,9 +7940,7 @@
 			"genre": "niconico"
 		},
 		"id": 722,
-		"searchTerms": [
-			"Saihate"
-		],
+		"searchTerms": ["Saihate"],
 		"title": "サイハテ"
 	},
 	{
@@ -8773,9 +7951,7 @@
 			"genre": "niconico"
 		},
 		"id": 723,
-		"searchTerms": [
-			"Miracle paint"
-		],
+		"searchTerms": ["Miracle paint"],
 		"title": "ミラクルペイント"
 	},
 	{
@@ -8786,9 +7962,7 @@
 			"genre": "niconico"
 		},
 		"id": 724,
-		"searchTerms": [
-			"Paradichlorobenzene"
-		],
+		"searchTerms": ["Paradichlorobenzene"],
 		"title": "パラジクロロベンゼン"
 	},
 	{
@@ -8799,9 +7973,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 725,
-		"searchTerms": [
-			"Muteki moment"
-		],
+		"searchTerms": ["Muteki moment"],
 		"title": "無敵☆moment"
 	},
 	{
@@ -8812,9 +7984,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 726,
-		"searchTerms": [
-			"Crinoid"
-		],
+		"searchTerms": ["Crinoid"],
 		"title": "クライノイド"
 	},
 	{
@@ -8825,9 +7995,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 727,
-		"searchTerms": [
-			"Wagamama MIRROR HEART"
-		],
+		"searchTerms": ["Wagamama MIRROR HEART"],
 		"title": "ワガママMIRROR HEART"
 	},
 	{
@@ -8849,9 +8017,7 @@
 			"genre": "niconico"
 		},
 		"id": 729,
-		"searchTerms": [
-			"Positive dance time"
-		],
+		"searchTerms": ["Positive dance time"],
 		"title": "ポジティブ☆ダンスタイム"
 	},
 	{
@@ -8862,9 +8028,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 730,
-		"searchTerms": [
-			"Maiodore! maimai time"
-		],
+		"searchTerms": ["Maiodore! maimai time"],
 		"title": "マイオドレ！舞舞タイム"
 	},
 	{
@@ -8908,9 +8072,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 734,
-		"searchTerms": [
-			"Wakare no waltz"
-		],
+		"searchTerms": ["Wakare no waltz"],
 		"title": "別れのワルツ"
 	},
 	{
@@ -8921,9 +8083,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 735,
-		"searchTerms": [
-			"Sorairo memories"
-		],
+		"searchTerms": ["Sorairo memories"],
 		"title": "空色メモリーズ"
 	},
 	{
@@ -8945,9 +8105,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 737,
-		"searchTerms": [
-			"Saikyou the summertime!!!!! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!! Hoshizaki Akari solo"],
 		"title": "最強 the サマータイム!!!!! -星咲 あかりソロver.-"
 	},
 	{
@@ -8958,9 +8116,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 738,
-		"searchTerms": [
-			"Saikyou the summertime!!!!! Takase Rio solo"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!! Takase Rio solo"],
 		"title": "最強 the サマータイム!!!!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -8971,9 +8127,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 739,
-		"searchTerms": [
-			"Saikyou the summertime!!!!! Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!! Hinata Chinatsu solo"],
 		"title": "最強 the サマータイム!!!!! -日向 千夏ソロver.-"
 	},
 	{
@@ -8984,9 +8138,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 740,
-		"searchTerms": [
-			"Saikyou the summertime!!!!! Kashiwagi Mia solo"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!! Kashiwagi Mia solo"],
 		"title": "最強 the サマータイム!!!!! -柏木 美亜ソロver.-"
 	},
 	{
@@ -8997,9 +8149,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 741,
-		"searchTerms": [
-			"Saikyou the summertime!!!!! Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Saikyou the summertime!!!!! Shinonome Tsumugi solo"],
 		"title": "最強 the サマータイム!!!!! -東雲 つむぎソロver.-"
 	},
 	{
@@ -9010,9 +8160,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 742,
-		"searchTerms": [
-			"Chouzenshin! Manten smile!"
-		],
+		"searchTerms": ["Chouzenshin! Manten smile!"],
 		"title": "超前進！満点スマイル！"
 	},
 	{
@@ -9023,9 +8171,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 743,
-		"searchTerms": [
-			"Random Sunday"
-		],
+		"searchTerms": ["Random Sunday"],
 		"title": "ランダムサンデー"
 	},
 	{
@@ -9058,9 +8204,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 746,
-		"searchTerms": [
-			"Vibes 2k20 (owl*aging remix)"
-		],
+		"searchTerms": ["Vibes 2k20 (owl*aging remix)"],
 		"title": "Vibes 2k20 (owl＊aging remix)"
 	},
 	{
@@ -9071,9 +8215,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 747,
-		"searchTerms": [
-			"Onsoku days!!"
-		],
+		"searchTerms": ["Onsoku days!!"],
 		"title": "オンソクデイズ!!"
 	},
 	{
@@ -9095,9 +8237,7 @@
 			"genre": "niconico"
 		},
 		"id": 749,
-		"searchTerms": [
-			"Tiger rampage"
-		],
+		"searchTerms": ["Tiger rampage"],
 		"title": "タイガーランペイジ"
 	},
 	{
@@ -9108,9 +8248,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 750,
-		"searchTerms": [
-			"Tricksters"
-		],
+		"searchTerms": ["Tricksters"],
 		"title": "Trrricksters!!"
 	},
 	{
@@ -9121,9 +8259,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 751,
-		"searchTerms": [
-			"Long slow arrive"
-		],
+		"searchTerms": ["Long slow arrive"],
 		"title": "ロング・スロー・アライブ"
 	},
 	{
@@ -9167,9 +8303,7 @@
 			"genre": "niconico"
 		},
 		"id": 755,
-		"searchTerms": [
-			"Vivid hero"
-		],
+		"searchTerms": ["Vivid hero"],
 		"title": "ビビッドヒーロー"
 	},
 	{
@@ -9180,9 +8314,7 @@
 			"genre": "niconico"
 		},
 		"id": 756,
-		"searchTerms": [
-			"Hikyou sentai Urotander"
-		],
+		"searchTerms": ["Hikyou sentai Urotander"],
 		"title": "卑怯戦隊うろたんだー"
 	},
 	{
@@ -9193,9 +8325,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 757,
-		"searchTerms": [
-			"Ondan choujin Gorillaizer"
-		],
+		"searchTerms": ["Ondan choujin Gorillaizer"],
 		"title": "音弾超人ゴリライザー"
 	},
 	{
@@ -9206,9 +8336,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 758,
-		"searchTerms": [
-			"Geki Geki!! Gekitou Break Out!!"
-		],
+		"searchTerms": ["Geki Geki!! Gekitou Break Out!!"],
 		"title": "Geki Geki!! 激闘Break Out!!"
 	},
 	{
@@ -9219,9 +8347,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 759,
-		"searchTerms": [
-			"STARRED HEART Hoshizaki Akari solo"
-		],
+		"searchTerms": ["STARRED HEART Hoshizaki Akari solo"],
 		"title": "STARRED HEART -星咲 あかりソロver.-"
 	},
 	{
@@ -9232,9 +8358,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 760,
-		"searchTerms": [
-			"STARRED HEART Yūki Riku solo"
-		],
+		"searchTerms": ["STARRED HEART Yūki Riku solo"],
 		"title": "STARRED HEART -結城 莉玖ソロver.-"
 	},
 	{
@@ -9245,9 +8369,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 761,
-		"searchTerms": [
-			"STARRED HEART Kujō Kaede solo"
-		],
+		"searchTerms": ["STARRED HEART Kujō Kaede solo"],
 		"title": "STARRED HEART -九條 楓ソロver.-"
 	},
 	{
@@ -9258,9 +8380,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 762,
-		"searchTerms": [
-			"STARRED HEART Suzushima Arisu solo"
-		],
+		"searchTerms": ["STARRED HEART Suzushima Arisu solo"],
 		"title": "STARRED HEART -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -9271,9 +8391,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 763,
-		"searchTerms": [
-			"STARRED HEART Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["STARRED HEART Shinonome Tsumugi solo"],
 		"title": "STARRED HEART -東雲 つむぎソロver.-"
 	},
 	{
@@ -9309,9 +8427,7 @@
 			"genre": "東方Project"
 		},
 		"id": 766,
-		"searchTerms": [
-			"Curious Mitsuyoshi gupai -matsuri-"
-		],
+		"searchTerms": ["Curious Mitsuyoshi gupai -matsuri-"],
 		"title": "キュアリアス光吉古牌　－祭－"
 	},
 	{
@@ -9333,9 +8449,7 @@
 			"genre": "東方Project"
 		},
 		"id": 768,
-		"searchTerms": [
-			"Youyoubakko ~ Who done it!!!"
-		],
+		"searchTerms": ["Youyoubakko ~ Who done it!!!"],
 		"title": "妖々跋扈 ～ Who done it！！！"
 	},
 	{
@@ -9346,9 +8460,7 @@
 			"genre": "東方Project"
 		},
 		"id": 769,
-		"searchTerms": [
-			"Yuuyami ni mezameshi wa"
-		],
+		"searchTerms": ["Yuuyami ni mezameshi wa"],
 		"title": "幽闇に目醒めしは"
 	},
 	{
@@ -9392,9 +8504,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 774,
-		"searchTerms": [
-			"Rockin' pink monster (Butaotome ranko Vo Ver.)"
-		],
+		"searchTerms": ["Rockin' pink monster (Butaotome ranko Vo Ver.)"],
 		"title": "ロッキンピンクモンスター (豚乙女ランコVo Ver.)"
 	},
 	{
@@ -9416,9 +8526,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 776,
-		"searchTerms": [
-			"History breaker"
-		],
+		"searchTerms": ["History breaker"],
 		"title": "ヒストリー×ブレイカー"
 	},
 	{
@@ -9440,10 +8548,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 778,
-		"searchTerms": [
-			"Seelenwanderung",
-			"Zeerenwanderung"
-		],
+		"searchTerms": ["Seelenwanderung", "Zeerenwanderung"],
 		"title": "ゼーレンヴァンデルング"
 	},
 	{
@@ -9465,9 +8570,7 @@
 			"genre": "niconico"
 		},
 		"id": 780,
-		"searchTerms": [
-			"Streaming heart"
-		],
+		"searchTerms": ["Streaming heart"],
 		"title": "ストリーミングハート"
 	},
 	{
@@ -9478,9 +8581,7 @@
 			"genre": "niconico"
 		},
 		"id": 781,
-		"searchTerms": [
-			"Haiboku no shounen"
-		],
+		"searchTerms": ["Haiboku no shounen"],
 		"title": "敗北の少年"
 	},
 	{
@@ -9491,9 +8592,7 @@
 			"genre": "niconico"
 		},
 		"id": 782,
-		"searchTerms": [
-			"Autophagy"
-		],
+		"searchTerms": ["Autophagy"],
 		"title": "オートファジー"
 	},
 	{
@@ -9504,9 +8603,7 @@
 			"genre": "niconico"
 		},
 		"id": 783,
-		"searchTerms": [
-			"Machigai sagashi"
-		],
+		"searchTerms": ["Machigai sagashi"],
 		"title": "マチガイサガシ"
 	},
 	{
@@ -9528,9 +8625,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 785,
-		"searchTerms": [
-			"malmis"
-		],
+		"searchTerms": ["malmis"],
 		"title": "Malicious Mischance"
 	},
 	{
@@ -9552,9 +8647,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 787,
-		"searchTerms": [
-			"Loeschen"
-		],
+		"searchTerms": ["Loeschen"],
 		"title": "Löschen"
 	},
 	{
@@ -9576,9 +8669,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 789,
-		"searchTerms": [
-			"Transcend Lights Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Transcend Lights Hoshizaki Akari solo"],
 		"title": "Transcend Lights -星咲 あかりソロver.-"
 	},
 	{
@@ -9589,9 +8680,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 790,
-		"searchTerms": [
-			"Transcend Lights Takase Rio solo"
-		],
+		"searchTerms": ["Transcend Lights Takase Rio solo"],
 		"title": "Transcend Lights -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -9602,9 +8691,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 791,
-		"searchTerms": [
-			"Transcend Lights Kashiwagi Mia solo"
-		],
+		"searchTerms": ["Transcend Lights Kashiwagi Mia solo"],
 		"title": "Transcend Lights -柏木 美亜ソロver.-"
 	},
 	{
@@ -9615,9 +8702,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 792,
-		"searchTerms": [
-			"Transcend Lights Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Transcend Lights Shinonome Tsumugi solo"],
 		"title": "Transcend Lights -東雲 つむぎソロver.-"
 	},
 	{
@@ -9628,9 +8713,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 793,
-		"searchTerms": [
-			"Transcend Lights Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["Transcend Lights Sumeragi Setsuna solo"],
 		"title": "Transcend Lights -皇城 セツナソロver.-"
 	},
 	{
@@ -9663,9 +8746,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 796,
-		"searchTerms": [
-			"Aozora contrail"
-		],
+		"searchTerms": ["Aozora contrail"],
 		"title": "青空コントレール"
 	},
 	{
@@ -9698,9 +8779,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 799,
-		"searchTerms": [
-			"Shitoshitoto"
-		],
+		"searchTerms": ["Shitoshitoto"],
 		"title": "しとしとと"
 	},
 	{
@@ -9711,9 +8790,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 800,
-		"searchTerms": [
-			"Illumination"
-		],
+		"searchTerms": ["Illumination"],
 		"title": "イルミネーション"
 	},
 	{
@@ -9735,9 +8812,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 802,
-		"searchTerms": [
-			"Yume o kanaeru basho"
-		],
+		"searchTerms": ["Yume o kanaeru basho"],
 		"title": "夢を叶える場所"
 	},
 	{
@@ -9748,9 +8823,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 803,
-		"searchTerms": [
-			"Kouen no lateral arc"
-		],
+		"searchTerms": ["Kouen no lateral arc"],
 		"title": "光焔のラテラルアーク"
 	},
 	{
@@ -9761,11 +8834,7 @@
 			"genre": "LUNATIC"
 		},
 		"id": 804,
-		"searchTerms": [
-			"Ongeki",
-			"Grudge attack",
-			"Shinji Hosoe"
-		],
+		"searchTerms": ["Ongeki", "Grudge attack", "Shinji Hosoe"],
 		"title": "怨撃"
 	},
 	{
@@ -9776,13 +8845,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 805,
-		"searchTerms": [
-			"mu3",
-			"myu3",
-			"moo3",
-			"mü3",
-			"u3"
-		],
+		"searchTerms": ["mu3", "myu3", "moo3", "mü3", "u3"],
 		"title": "μ3"
 	},
 	{
@@ -9843,9 +8906,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 810,
-		"searchTerms": [
-			"Asayake platform"
-		],
+		"searchTerms": ["Asayake platform"],
 		"title": "朝焼けプラットホーム"
 	},
 	{
@@ -9856,9 +8917,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 811,
-		"searchTerms": [
-			"Koko kara hajimaru prologue."
-		],
+		"searchTerms": ["Koko kara hajimaru prologue."],
 		"title": "ここからはじまるプロローグ。"
 	},
 	{
@@ -9869,9 +8928,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 812,
-		"searchTerms": [
-			"Kizuna wa zutto Growing Up!!! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Kizuna wa zutto Growing Up!!! Hoshizaki Akari solo"],
 		"title": "絆はずっとGrowing Up!!! -星咲 あかりソロver.-"
 	},
 	{
@@ -9882,9 +8939,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 813,
-		"searchTerms": [
-			"Kizuna wa zutto Growing Up!!! Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Kizuna wa zutto Growing Up!!! Fujisawa Yuzu solo"],
 		"title": "絆はずっとGrowing Up!!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -9895,9 +8950,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 814,
-		"searchTerms": [
-			"Kizuna wa zutto Growing Up!!! Aoi Misumi solo"
-		],
+		"searchTerms": ["Kizuna wa zutto Growing Up!!! Aoi Misumi solo"],
 		"title": "絆はずっとGrowing Up!!! -三角 葵ソロver.-"
 	},
 	{
@@ -9908,9 +8961,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 815,
-		"searchTerms": [
-			"Tobidase! TO THE COSMIC!!"
-		],
+		"searchTerms": ["Tobidase! TO THE COSMIC!!"],
 		"title": "とびだせ！TO THE COSMIC!!"
 	},
 	{
@@ -9921,9 +8972,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 816,
-		"searchTerms": [
-			"Cosmo pop funclub"
-		],
+		"searchTerms": ["Cosmo pop funclub"],
 		"title": "コスモポップファンクラブ"
 	},
 	{
@@ -9956,9 +9005,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 819,
-		"searchTerms": [
-			"Yume hanabi"
-		],
+		"searchTerms": ["Yume hanabi"],
 		"title": "夢花火"
 	},
 	{
@@ -9969,9 +9016,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 820,
-		"searchTerms": [
-			"Hardcore syndrome"
-		],
+		"searchTerms": ["Hardcore syndrome"],
 		"title": "ハードコア・シンドローム"
 	},
 	{
@@ -10004,9 +9049,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 823,
-		"searchTerms": [
-			"Caliburne ~Story of the Legendary sword~"
-		],
+		"searchTerms": ["Caliburne ~Story of the Legendary sword~"],
 		"title": "Caliburne ～Story of the Legendary sword～"
 	},
 	{
@@ -10017,9 +9060,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 824,
-		"searchTerms": [
-			"Ryouran otome musougeki Takase Rio solo"
-		],
+		"searchTerms": ["Ryouran otome musougeki Takase Rio solo"],
 		"title": "撩乱乙女†無双劇 -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -10030,9 +9071,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 825,
-		"searchTerms": [
-			"Ryouran otome musougeki Tsubaki Aihara solo"
-		],
+		"searchTerms": ["Ryouran otome musougeki Tsubaki Aihara solo"],
 		"title": "撩乱乙女†無双劇 -藍原 椿ソロver.-"
 	},
 	{
@@ -10043,9 +9082,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 826,
-		"searchTerms": [
-			"Ryouran otome musougeki Yūki Riku solo"
-		],
+		"searchTerms": ["Ryouran otome musougeki Yūki Riku solo"],
 		"title": "撩乱乙女†無双劇 -結城 莉玖ソロver.-"
 	},
 	{
@@ -10056,9 +9093,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 827,
-		"searchTerms": [
-			"Sora no tonari"
-		],
+		"searchTerms": ["Sora no tonari"],
 		"title": "宙の隣"
 	},
 	{
@@ -10069,9 +9104,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 828,
-		"searchTerms": [
-			"Yume kikyou"
-		],
+		"searchTerms": ["Yume kikyou"],
 		"title": "ユメキキョウ"
 	},
 	{
@@ -10082,9 +9115,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 829,
-		"searchTerms": [
-			"Shukusei shinpan"
-		],
+		"searchTerms": ["Shukusei shinpan"],
 		"title": "宿星審判"
 	},
 	{
@@ -10095,9 +9126,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 830,
-		"searchTerms": [
-			"Girl's Party Planet! Sakurai Haruna solo"
-		],
+		"searchTerms": ["Girl's Party Planet! Sakurai Haruna solo"],
 		"title": "Girl's Party Planet! -桜井 春菜ソロver.-"
 	},
 	{
@@ -10108,9 +9137,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 831,
-		"searchTerms": [
-			"Girl's Party Planet! Saotome Ayaka solo"
-		],
+		"searchTerms": ["Girl's Party Planet! Saotome Ayaka solo"],
 		"title": "Girl's Party Planet! -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10121,9 +9148,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 832,
-		"searchTerms": [
-			"Girl's Party Planet! Inohara Koboshi solo"
-		],
+		"searchTerms": ["Girl's Party Planet! Inohara Koboshi solo"],
 		"title": "Girl's Party Planet! -井之原 小星ソロver.-"
 	},
 	{
@@ -10134,9 +9159,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 833,
-		"searchTerms": [
-			"Girl's Party Planet! Kashiwagi Saki solo"
-		],
+		"searchTerms": ["Girl's Party Planet! Kashiwagi Saki solo"],
 		"title": "Girl's Party Planet! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -10158,9 +9181,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 835,
-		"searchTerms": [
-			"Hachimitsu adventure"
-		],
+		"searchTerms": ["Hachimitsu adventure"],
 		"title": "はちみつアドベンチャー"
 	},
 	{
@@ -10171,9 +9192,7 @@
 			"genre": "niconico"
 		},
 		"id": 836,
-		"searchTerms": [
-			"Cat loving"
-		],
+		"searchTerms": ["Cat loving"],
 		"title": "キャットラビング"
 	},
 	{
@@ -10217,9 +9236,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 840,
-		"searchTerms": [
-			"Kajou ginga no sinfonietta"
-		],
+		"searchTerms": ["Kajou ginga no sinfonietta"],
 		"title": "渦状銀河のシンフォニエッタ"
 	},
 	{
@@ -10230,9 +9247,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 841,
-		"searchTerms": [
-			"HEADLINER Hoshizaki Akari solo"
-		],
+		"searchTerms": ["HEADLINER Hoshizaki Akari solo"],
 		"title": "HEADLINER -星咲 あかりソロver.-"
 	},
 	{
@@ -10243,9 +9258,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 842,
-		"searchTerms": [
-			"HEADLINER Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["HEADLINER Fujisawa Yuzu solo"],
 		"title": "HEADLINER -藤沢 柚子ソロver.-"
 	},
 	{
@@ -10256,9 +9269,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 843,
-		"searchTerms": [
-			"HEADLINER Aoi Misumi solo"
-		],
+		"searchTerms": ["HEADLINER Aoi Misumi solo"],
 		"title": "HEADLINER -三角 葵ソロver.-"
 	},
 	{
@@ -10269,9 +9280,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 844,
-		"searchTerms": [
-			"HEADLINER Takase Rio solo"
-		],
+		"searchTerms": ["HEADLINER Takase Rio solo"],
 		"title": "HEADLINER -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -10282,9 +9291,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 845,
-		"searchTerms": [
-			"HEADLINER Sakurai Haruna solo"
-		],
+		"searchTerms": ["HEADLINER Sakurai Haruna solo"],
 		"title": "HEADLINER -桜井 春菜ソロver.-"
 	},
 	{
@@ -10295,9 +9302,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 846,
-		"searchTerms": [
-			"HEADLINER Kashiwagi Saki solo"
-		],
+		"searchTerms": ["HEADLINER Kashiwagi Saki solo"],
 		"title": "HEADLINER -柏木 咲姫ソロver.-"
 	},
 	{
@@ -10308,9 +9313,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 847,
-		"searchTerms": [
-			"HEADLINER Ōsaka Akane solo"
-		],
+		"searchTerms": ["HEADLINER Ōsaka Akane solo"],
 		"title": "HEADLINER -逢坂 茜ソロver.-"
 	},
 	{
@@ -10321,9 +9324,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 848,
-		"searchTerms": [
-			"HEADLINER Hinata Chinatsu solo"
-		],
+		"searchTerms": ["HEADLINER Hinata Chinatsu solo"],
 		"title": "HEADLINER -日向 千夏ソロver.-"
 	},
 	{
@@ -10334,9 +9335,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 849,
-		"searchTerms": [
-			"HEADLINER Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["HEADLINER Sumeragi Setsuna solo"],
 		"title": "HEADLINER -皇城 セツナソロver.-"
 	},
 	{
@@ -10347,9 +9346,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 850,
-		"searchTerms": [
-			"Aozora contrail Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Aozora contrail Hoshizaki Akari solo"],
 		"title": "青空コントレール -星咲 あかりソロver.-"
 	},
 	{
@@ -10360,9 +9357,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 851,
-		"searchTerms": [
-			"Aozora contrail Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Aozora contrail Hinata Chinatsu solo"],
 		"title": "青空コントレール -日向 千夏ソロver.-"
 	},
 	{
@@ -10373,9 +9368,7 @@
 			"genre": "niconico"
 		},
 		"id": 852,
-		"searchTerms": [
-			"Goodbye sengen"
-		],
+		"searchTerms": ["Goodbye sengen"],
 		"title": "グッバイ宣言"
 	},
 	{
@@ -10386,9 +9379,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 853,
-		"searchTerms": [
-			"Rainy color watercolor"
-		],
+		"searchTerms": ["Rainy color watercolor"],
 		"title": "レイニーカラー・ウォーターカラー"
 	},
 	{
@@ -10410,9 +9401,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 855,
-		"searchTerms": [
-			"Kirameke Shoot it Now!"
-		],
+		"searchTerms": ["Kirameke Shoot it Now!"],
 		"title": "キラメケ→Shoot it Now!"
 	},
 	{
@@ -10423,9 +9412,7 @@
 			"genre": "niconico"
 		},
 		"id": 856,
-		"searchTerms": [
-			"Vampire (DECO*27)"
-		],
+		"searchTerms": ["Vampire (DECO*27)"],
 		"title": "ヴァンパイア"
 	},
 	{
@@ -10447,9 +9434,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 858,
-		"searchTerms": [
-			"Kumo no ito"
-		],
+		"searchTerms": ["Kumo no ito"],
 		"title": "蜘蛛の糸"
 	},
 	{
@@ -10460,9 +9445,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 859,
-		"searchTerms": [
-			"Idenshi level spiral"
-		],
+		"searchTerms": ["Idenshi level spiral"],
 		"title": "遺伝子レベル∞スパイラル"
 	},
 	{
@@ -10473,9 +9456,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 860,
-		"searchTerms": [
-			"Koi kou enshi"
-		],
+		"searchTerms": ["Koi kou enshi"],
 		"title": "恋ひ恋ふ縁"
 	},
 	{
@@ -10486,9 +9467,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 861,
-		"searchTerms": [
-			"S'il vous president"
-		],
+		"searchTerms": ["S'il vous president"],
 		"title": "シル・ヴ・プレジデント"
 	},
 	{
@@ -10499,9 +9478,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 862,
-		"searchTerms": [
-			"Hana to, yuki to, drum 'n' bass."
-		],
+		"searchTerms": ["Hana to, yuki to, drum 'n' bass."],
 		"title": "花と、雪と、ドラムンベース。"
 	},
 	{
@@ -10551,9 +9528,7 @@
 			"genre": "niconico"
 		},
 		"id": 866,
-		"searchTerms": [
-			"Phony"
-		],
+		"searchTerms": ["Phony"],
 		"title": "フォニイ"
 	},
 	{
@@ -10619,9 +9594,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 872,
-		"searchTerms": [
-			"Kimi to infinity"
-		],
+		"searchTerms": ["Kimi to infinity"],
 		"title": "君とインフィニティ -2021-"
 	},
 	{
@@ -10632,9 +9605,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 873,
-		"searchTerms": [
-			"Sensei sensation"
-		],
+		"searchTerms": ["Sensei sensation"],
 		"title": "宣誓センセーション"
 	},
 	{
@@ -10656,9 +9627,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 875,
-		"searchTerms": [
-			"Ichigeki! no Thema"
-		],
+		"searchTerms": ["Ichigeki! no Thema"],
 		"title": "いちげき！のテーマ"
 	},
 	{
@@ -10669,9 +9638,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 876,
-		"searchTerms": [
-			"parallel prism"
-		],
+		"searchTerms": ["parallel prism"],
 		"title": "PARALLEL★PRISM"
 	},
 	{
@@ -10704,9 +9671,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 879,
-		"searchTerms": [
-			"Butterfly Wave Saotome Ayaka solo"
-		],
+		"searchTerms": ["Butterfly Wave Saotome Ayaka solo"],
 		"title": "Butterfly Wave -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10717,9 +9682,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 880,
-		"searchTerms": [
-			"Butterfly Wave Kujō Kaede solo"
-		],
+		"searchTerms": ["Butterfly Wave Kujō Kaede solo"],
 		"title": "Butterfly Wave -九條 楓ソロver.-"
 	},
 	{
@@ -10730,9 +9693,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 881,
-		"searchTerms": [
-			"Butterfly Wave Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["Butterfly Wave Sumeragi Setsuna solo"],
 		"title": "Butterfly Wave -皇城 セツナソロver.-"
 	},
 	{
@@ -10743,9 +9704,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 882,
-		"searchTerms": [
-			"Hoshi meguri, hate no kimi e."
-		],
+		"searchTerms": ["Hoshi meguri, hate no kimi e."],
 		"title": "星めぐり、果ての君へ。"
 	},
 	{
@@ -10756,9 +9715,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 883,
-		"searchTerms": [
-			"starlight limited"
-		],
+		"searchTerms": ["starlight limited"],
 		"title": "Starlight★Limited"
 	},
 	{
@@ -10780,9 +9737,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 885,
-		"searchTerms": [
-			"Tsukikage no traumerei"
-		],
+		"searchTerms": ["Tsukikage no traumerei"],
 		"title": "月影のトロイメライ"
 	},
 	{
@@ -10804,9 +9759,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 887,
-		"searchTerms": [
-			"Antigravity girl"
-		],
+		"searchTerms": ["Antigravity girl"],
 		"title": "アンチグラビティ・ガール"
 	},
 	{
@@ -10817,9 +9770,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 888,
-		"searchTerms": [
-			"Mondai nightripper!"
-		],
+		"searchTerms": ["Mondai nightripper!"],
 		"title": "モンダイナイトリッパー！"
 	},
 	{
@@ -10830,9 +9781,7 @@
 			"genre": "niconico"
 		},
 		"id": 889,
-		"searchTerms": [
-			"Villain"
-		],
+		"searchTerms": ["Villain"],
 		"title": "ヴィラン"
 	},
 	{
@@ -10843,9 +9792,7 @@
 			"genre": "niconico"
 		},
 		"id": 890,
-		"searchTerms": [
-			"Lag train"
-		],
+		"searchTerms": ["Lag train"],
 		"title": "ラグトレイン"
 	},
 	{
@@ -10867,9 +9814,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 892,
-		"searchTerms": [
-			"Cinderella disco Tsubaki Aihara solo"
-		],
+		"searchTerms": ["Cinderella disco Tsubaki Aihara solo"],
 		"title": "シンデレラディスコ -藍原 椿ソロver.-"
 	},
 	{
@@ -10880,9 +9825,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 893,
-		"searchTerms": [
-			"Cinderella disco Saotome Ayaka solo"
-		],
+		"searchTerms": ["Cinderella disco Saotome Ayaka solo"],
 		"title": "シンデレラディスコ -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10959,9 +9902,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 900,
-		"searchTerms": [
-			"On stage!"
-		],
+		"searchTerms": ["On stage!"],
 		"title": "オン×ステージ！"
 	},
 	{
@@ -10972,9 +9913,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 901,
-		"searchTerms": [
-			"Natsuyoi starmine"
-		],
+		"searchTerms": ["Natsuyoi starmine"],
 		"title": "夏宵スターマイン"
 	},
 	{
@@ -10996,9 +9935,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 903,
-		"searchTerms": [
-			"Inarabu kokumotsu to tameiki majiri no unsouya"
-		],
+		"searchTerms": ["Inarabu kokumotsu to tameiki majiri no unsouya"],
 		"title": "居並ぶ穀物と溜息まじりの運送屋"
 	},
 	{
@@ -11031,9 +9968,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 906,
-		"searchTerms": [
-			"Natsuyoi starmine Aoi Misumi solo"
-		],
+		"searchTerms": ["Natsuyoi starmine Aoi Misumi solo"],
 		"title": "夏宵スターマイン -三角 葵ソロver.-"
 	},
 	{
@@ -11044,9 +9979,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 907,
-		"searchTerms": [
-			"Natsuyoi starmine Tsubaki Aihara solo"
-		],
+		"searchTerms": ["Natsuyoi starmine Tsubaki Aihara solo"],
 		"title": "夏宵スターマイン -藍原 椿ソロver.-"
 	},
 	{
@@ -11057,9 +9990,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 908,
-		"searchTerms": [
-			"Natsuyoi starmine Saotome Ayaka solo"
-		],
+		"searchTerms": ["Natsuyoi starmine Saotome Ayaka solo"],
 		"title": "夏宵スターマイン -早乙女 彩華ソロver.-"
 	},
 	{
@@ -11070,9 +10001,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 909,
-		"searchTerms": [
-			"Natsuyoi starmine Kujō Kaede solo"
-		],
+		"searchTerms": ["Natsuyoi starmine Kujō Kaede solo"],
 		"title": "夏宵スターマイン -九條 楓ソロver.-"
 	},
 	{
@@ -11083,9 +10012,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 910,
-		"searchTerms": [
-			"Natsuyoi starmine Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Natsuyoi starmine Shinonome Tsumugi solo"],
 		"title": "夏宵スターマイン -東雲 つむぎソロver.-"
 	},
 	{
@@ -11096,9 +10023,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 911,
-		"searchTerms": [
-			"Ichigeki! no Thema Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Ichigeki! no Thema Fujisawa Yuzu solo"],
 		"title": "いちげき！のテーマ -藤沢 柚子ソロver.-"
 	},
 	{
@@ -11109,9 +10034,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 912,
-		"searchTerms": [
-			"Ichigeki! no Thema Yūki Riku solo"
-		],
+		"searchTerms": ["Ichigeki! no Thema Yūki Riku solo"],
 		"title": "いちげき！のテーマ -結城 莉玖ソロver.-"
 	},
 	{
@@ -11122,9 +10045,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 913,
-		"searchTerms": [
-			"Ichigeki! no Thema Suzushima Arisu solo"
-		],
+		"searchTerms": ["Ichigeki! no Thema Suzushima Arisu solo"],
 		"title": "いちげき！のテーマ -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -11135,9 +10056,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 914,
-		"searchTerms": [
-			"Ichigeki! no Thema Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Ichigeki! no Thema Hinata Chinatsu solo"],
 		"title": "いちげき！のテーマ -日向 千夏ソロver.-"
 	},
 	{
@@ -11148,9 +10067,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 915,
-		"searchTerms": [
-			"Tsukuyomi ni naru"
-		],
+		"searchTerms": ["Tsukuyomi ni naru"],
 		"title": "月詠に鳴る"
 	},
 	{
@@ -11172,9 +10089,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 917,
-		"searchTerms": [
-			"Kizuna hitotsu"
-		],
+		"searchTerms": ["Kizuna hitotsu"],
 		"title": "キズナヒトツ"
 	},
 	{
@@ -11185,9 +10100,7 @@
 			"genre": "東方Project"
 		},
 		"id": 918,
-		"searchTerms": [
-			"Reitai spark Ex"
-		],
+		"searchTerms": ["Reitai spark Ex"],
 		"title": "レータイスパークEx"
 	},
 	{
@@ -11209,9 +10122,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 920,
-		"searchTerms": [
-			"Pokapoka onsen ondo Aoi Misumi solo"
-		],
+		"searchTerms": ["Pokapoka onsen ondo Aoi Misumi solo"],
 		"title": "ぽかぽか温泉音頭 -三角 葵ソロver.-"
 	},
 	{
@@ -11222,9 +10133,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 921,
-		"searchTerms": [
-			"Pokapoka onsen ondo Ōsaka Akane solo"
-		],
+		"searchTerms": ["Pokapoka onsen ondo Ōsaka Akane solo"],
 		"title": "ぽかぽか温泉音頭 -逢坂 茜ソロver.-"
 	},
 	{
@@ -11235,9 +10144,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 922,
-		"searchTerms": [
-			"Pokapoka onsen ondo Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Pokapoka onsen ondo Hinata Chinatsu solo"],
 		"title": "ぽかぽか温泉音頭 -日向 千夏ソロver.-"
 	},
 	{
@@ -11303,9 +10210,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 928,
-		"searchTerms": [
-			"Amatsu kaze feat. Natsukawa Yoko"
-		],
+		"searchTerms": ["Amatsu kaze feat. Natsukawa Yoko"],
 		"title": "天つ風 feat. 夏川陽子"
 	},
 	{
@@ -11371,9 +10276,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 934,
-		"searchTerms": [
-			"Seija no kodou"
-		],
+		"searchTerms": ["Seija no kodou"],
 		"title": "聖者の鼓動"
 	},
 	{
@@ -11384,9 +10287,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 935,
-		"searchTerms": [
-			"Arc-en-ciel"
-		],
+		"searchTerms": ["Arc-en-ciel"],
 		"title": "アルカンシエル"
 	},
 	{
@@ -11397,9 +10298,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 936,
-		"searchTerms": [
-			"NEVER GET OVER"
-		],
+		"searchTerms": ["NEVER GET OVER"],
 		"title": "N3V3R G3T OV3R"
 	},
 	{
@@ -11410,9 +10309,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 937,
-		"searchTerms": [
-			"We are back"
-		],
+		"searchTerms": ["We are back"],
 		"title": "WE'RE BACK!!"
 	},
 	{
@@ -11423,9 +10320,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 938,
-		"searchTerms": [
-			"Geki Geki!! Gekitou Break Out!! Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Geki Geki!! Gekitou Break Out!! Fujisawa Yuzu solo"],
 		"title": "Geki Geki!! 激闘Break Out!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -11436,9 +10331,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 939,
-		"searchTerms": [
-			"Geki Geki!! Gekitou Break Out!! Inohara Koboshi solo"
-		],
+		"searchTerms": ["Geki Geki!! Gekitou Break Out!! Inohara Koboshi solo"],
 		"title": "Geki Geki!! 激闘Break Out!! -井之原 小星ソロver.-"
 	},
 	{
@@ -11449,9 +10342,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 940,
-		"searchTerms": [
-			"Geki Geki!! Gekitou Break Out!! Ōsaka Akane solo"
-		],
+		"searchTerms": ["Geki Geki!! Gekitou Break Out!! Ōsaka Akane solo"],
 		"title": "Geki Geki!! 激闘Break Out!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -11484,9 +10375,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 943,
-		"searchTerms": [
-			"Yokan no signal"
-		],
+		"searchTerms": ["Yokan no signal"],
 		"title": "予感のシグナル"
 	},
 	{
@@ -11508,9 +10397,7 @@
 			"genre": "niconico"
 		},
 		"id": 945,
-		"searchTerms": [
-			"SEKAI-chan to KAFU-chan no otsukai gassoukyoku"
-		],
+		"searchTerms": ["SEKAI-chan to KAFU-chan no otsukai gassoukyoku"],
 		"title": "星界ちゃんと可不ちゃんのおつかい合騒曲"
 	},
 	{
@@ -11521,9 +10408,7 @@
 			"genre": "niconico"
 		},
 		"id": 946,
-		"searchTerms": [
-			"Parasol cider"
-		],
+		"searchTerms": ["Parasol cider"],
 		"title": "パラソルサイダー"
 	},
 	{
@@ -11534,9 +10419,7 @@
 			"genre": "niconico"
 		},
 		"id": 947,
-		"searchTerms": [
-			"Stella"
-		],
+		"searchTerms": ["Stella"],
 		"title": "ステラ"
 	},
 	{
@@ -11558,9 +10441,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 949,
-		"searchTerms": [
-			"Tsuppare! Nyankee tamashii"
-		],
+		"searchTerms": ["Tsuppare! Nyankee tamashii"],
 		"title": "つっぱれ！にゃんきー魂"
 	},
 	{
@@ -11571,9 +10452,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 950,
-		"searchTerms": [
-			"GAME:CHANGER"
-		],
+		"searchTerms": ["GAME:CHANGER"],
 		"title": "GAME：CHANGER"
 	},
 	{
@@ -11595,12 +10474,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 952,
-		"searchTerms": [
-			"3bun Girl",
-			"Sanbun Girl",
-			"3-minute Girl",
-			"Ultra Girl"
-		],
+		"searchTerms": ["3bun Girl", "Sanbun Girl", "3-minute Girl", "Ultra Girl"],
 		"title": "3分ガール"
 	},
 	{
@@ -11611,9 +10485,7 @@
 			"genre": "niconico"
 		},
 		"id": 953,
-		"searchTerms": [
-			"Dokuzu"
-		],
+		"searchTerms": ["Dokuzu"],
 		"title": "ド屑"
 	},
 	{
@@ -11624,9 +10496,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 954,
-		"searchTerms": [
-			"Hangeki! Totsugeki! Back To Back! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Hangeki! Totsugeki! Back To Back! Hoshizaki Akari solo"],
 		"title": "反撃! 突撃! Back To Back! -星咲 あかりソロver.-"
 	},
 	{
@@ -11637,9 +10507,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 955,
-		"searchTerms": [
-			"Hangeki! Totsugeki! Back To Back! Takase Rio solo"
-		],
+		"searchTerms": ["Hangeki! Totsugeki! Back To Back! Takase Rio solo"],
 		"title": "反撃! 突撃! Back To Back! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -11650,9 +10518,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 956,
-		"searchTerms": [
-			"Sirius no kagayaki no you ni"
-		],
+		"searchTerms": ["Sirius no kagayaki no you ni"],
 		"title": "シリウスの輝きのように"
 	},
 	{
@@ -11674,9 +10540,7 @@
 			"genre": "niconico"
 		},
 		"id": 958,
-		"searchTerms": [
-			"Kyuukurarin"
-		],
+		"searchTerms": ["Kyuukurarin"],
 		"title": "きゅうくらりん"
 	},
 	{
@@ -11709,9 +10573,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 961,
-		"searchTerms": [
-			"ARTM"
-		],
+		"searchTerms": ["ARTM"],
 		"title": "And Revive The Melody"
 	},
 	{
@@ -11744,9 +10606,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 964,
-		"searchTerms": [
-			"Happy shooting star"
-		],
+		"searchTerms": ["Happy shooting star"],
 		"title": "はっぴ～しゅ～てぃんぐすた～"
 	},
 	{
@@ -11779,9 +10639,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 967,
-		"searchTerms": [
-			"On stage! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["On stage! Hoshizaki Akari solo"],
 		"title": "オン×ステージ！ -星咲 あかりソロver.-"
 	},
 	{
@@ -11792,9 +10650,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 968,
-		"searchTerms": [
-			"On stage! Shikimiya Mana solo"
-		],
+		"searchTerms": ["On stage! Shikimiya Mana solo"],
 		"title": "オン×ステージ！ -式宮 舞菜ソロver.-"
 	},
 	{
@@ -11805,9 +10661,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 969,
-		"searchTerms": [
-			"Prominence Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["Prominence Sumeragi Setsuna solo"],
 		"title": "Prominence -皇城 セツナソロver.-"
 	},
 	{
@@ -11818,9 +10672,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 970,
-		"searchTerms": [
-			"Prominence Shikimiya Aone solo"
-		],
+		"searchTerms": ["Prominence Shikimiya Aone solo"],
 		"title": "Prominence -式宮 碧音ソロver.-"
 	},
 	{
@@ -11831,9 +10683,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 971,
-		"searchTerms": [
-			"Planetarium revue"
-		],
+		"searchTerms": ["Planetarium revue"],
 		"title": "プラネタリウム・レヴュー"
 	},
 	{
@@ -11844,9 +10694,7 @@
 			"genre": "東方Project"
 		},
 		"id": 972,
-		"searchTerms": [
-			"Scarlet keisatsu no ghetto patrol 24 ji"
-		],
+		"searchTerms": ["Scarlet keisatsu no ghetto patrol 24 ji"],
 		"title": "スカーレット警察のゲットーパトロール24時"
 	},
 	{
@@ -11857,9 +10705,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 973,
-		"searchTerms": [
-			"Dramatic...? Hoshizaki Akari solo"
-		],
+		"searchTerms": ["Dramatic...? Hoshizaki Akari solo"],
 		"title": "Dramatic…？ -星咲 あかりソロver.-"
 	},
 	{
@@ -11870,9 +10716,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 974,
-		"searchTerms": [
-			"Dramatic...? Suzushima Arisu solo"
-		],
+		"searchTerms": ["Dramatic...? Suzushima Arisu solo"],
 		"title": "Dramatic…？ -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -11883,9 +10727,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 975,
-		"searchTerms": [
-			"Dramatic...? Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Dramatic...? Hinata Chinatsu solo"],
 		"title": "Dramatic…？ -日向 千夏ソロver.-"
 	},
 	{
@@ -11896,9 +10738,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 976,
-		"searchTerms": [
-			"Dramatic...? Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["Dramatic...? Sumeragi Setsuna solo"],
 		"title": "Dramatic…？ -皇城 セツナソロver.-"
 	},
 	{
@@ -11909,9 +10749,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 977,
-		"searchTerms": [
-			"Angel pitagori houmitai!"
-		],
+		"searchTerms": ["Angel pitagori houmitai!"],
 		"title": "えんじぇる♡ピタゴリ☆ほーみたい！"
 	},
 	{
@@ -11935,9 +10773,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 979,
-		"searchTerms": [
-			"Heart thermography"
-		],
+		"searchTerms": ["Heart thermography"],
 		"title": "ハートサーモグラフィー"
 	},
 	{
@@ -11948,9 +10784,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 980,
-		"searchTerms": [
-			"History breaker Takase Rio solo"
-		],
+		"searchTerms": ["History breaker Takase Rio solo"],
 		"title": "ヒストリー×ブレイカー -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -11961,9 +10795,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 981,
-		"searchTerms": [
-			"History breaker Tsubaki Aihara solo"
-		],
+		"searchTerms": ["History breaker Tsubaki Aihara solo"],
 		"title": "ヒストリー×ブレイカー -藍原 椿ソロver.-"
 	},
 	{
@@ -11974,9 +10806,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 982,
-		"searchTerms": [
-			"History breaker Yūki Riku solo"
-		],
+		"searchTerms": ["History breaker Yūki Riku solo"],
 		"title": "ヒストリー×ブレイカー -結城 莉玖ソロver.-"
 	},
 	{
@@ -12009,10 +10839,7 @@
 			"genre": "niconico"
 		},
 		"id": 985,
-		"searchTerms": [
-			"Romeo to Cinderella",
-			"Romeo and Cinderella"
-		],
+		"searchTerms": ["Romeo to Cinderella", "Romeo and Cinderella"],
 		"title": "ロミオとシンデレラ"
 	},
 	{
@@ -12023,9 +10850,7 @@
 			"genre": "niconico"
 		},
 		"id": 986,
-		"searchTerms": [
-			"Ohime-sama ni naritai no!"
-		],
+		"searchTerms": ["Ohime-sama ni naritai no!"],
 		"title": "おひめさまになりたいのッ！"
 	},
 	{
@@ -12036,9 +10861,7 @@
 			"genre": "niconico"
 		},
 		"id": 987,
-		"searchTerms": [
-			"Zunda party night"
-		],
+		"searchTerms": ["Zunda party night"],
 		"title": "ずんだパーリナイ"
 	},
 	{
@@ -12049,10 +10872,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 988,
-		"searchTerms": [
-			"Yukiotoko",
-			"Yuki otoko"
-		],
+		"searchTerms": ["Yukiotoko", "Yuki otoko"],
 		"title": "雪男"
 	},
 	{
@@ -12074,9 +10894,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 990,
-		"searchTerms": [
-			"temptation"
-		],
+		"searchTerms": ["temptation"],
 		"title": "10pt8ion"
 	},
 	{
@@ -12109,9 +10927,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 993,
-		"searchTerms": [
-			"Fuujin Raijin"
-		],
+		"searchTerms": ["Fuujin Raijin"],
 		"title": "風仁雷仁"
 	},
 	{
@@ -12133,9 +10949,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 995,
-		"searchTerms": [
-			"Entei no gray euchronia"
-		],
+		"searchTerms": ["Entei no gray euchronia"],
 		"title": "淵底のグレイ・ユークロニア"
 	},
 	{
@@ -12146,9 +10960,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 996,
-		"searchTerms": [
-			"Meiran genbu"
-		],
+		"searchTerms": ["Meiran genbu"],
 		"title": "冥乱幻舞"
 	},
 	{
@@ -12159,9 +10971,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 997,
-		"searchTerms": [
-			"Gachikoi labyrinth"
-		],
+		"searchTerms": ["Gachikoi labyrinth"],
 		"title": "ガチ恋ラビリンス"
 	},
 	{
@@ -12172,9 +10982,7 @@
 			"genre": "niconico"
 		},
 		"id": 998,
-		"searchTerms": [
-			"Melancholic"
-		],
+		"searchTerms": ["Melancholic"],
 		"title": "メランコリック"
 	},
 	{
@@ -12196,9 +11004,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1000,
-		"searchTerms": [
-			"Icing dream"
-		],
+		"searchTerms": ["Icing dream"],
 		"title": "アイシング・ドリーム"
 	},
 	{
@@ -12220,9 +11026,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1002,
-		"searchTerms": [
-			"Thunder rescue!"
-		],
+		"searchTerms": ["Thunder rescue!"],
 		"title": "サンダーレスキュー！"
 	},
 	{
@@ -12233,9 +11037,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1003,
-		"searchTerms": [
-			"Awahakuchuumu"
-		],
+		"searchTerms": ["Awahakuchuumu"],
 		"title": "泡白昼夢"
 	},
 	{
@@ -12246,9 +11048,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1004,
-		"searchTerms": [
-			"Tricky Treat!!! Ōsaka Akane solo"
-		],
+		"searchTerms": ["Tricky Treat!!! Ōsaka Akane solo"],
 		"title": "Tricky Treat!!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -12259,9 +11059,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1005,
-		"searchTerms": [
-			"Tricky Treat!!! Takase Rio solo"
-		],
+		"searchTerms": ["Tricky Treat!!! Takase Rio solo"],
 		"title": "Tricky Treat!!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -12272,9 +11070,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1006,
-		"searchTerms": [
-			"Tricky Treat!!! Kashiwagi Saki solo"
-		],
+		"searchTerms": ["Tricky Treat!!! Kashiwagi Saki solo"],
 		"title": "Tricky Treat!!! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -12285,9 +11081,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1007,
-		"searchTerms": [
-			"Individual on parade! Kashiwagi Saki solo"
-		],
+		"searchTerms": ["Individual on parade! Kashiwagi Saki solo"],
 		"title": "Individual on parade! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -12298,9 +11092,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1008,
-		"searchTerms": [
-			"Individual on parade! Inohara Koboshi solo"
-		],
+		"searchTerms": ["Individual on parade! Inohara Koboshi solo"],
 		"title": "Individual on parade! -井之原 小星ソロver.-"
 	},
 	{
@@ -12311,9 +11103,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1009,
-		"searchTerms": [
-			"Individual on parade! Suzushima Arisu solo"
-		],
+		"searchTerms": ["Individual on parade! Suzushima Arisu solo"],
 		"title": "Individual on parade! -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -12324,9 +11114,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1010,
-		"searchTerms": [
-			"Individual on parade! Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Individual on parade! Hinata Chinatsu solo"],
 		"title": "Individual on parade! -日向 千夏ソロver.-"
 	},
 	{
@@ -12337,9 +11125,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1011,
-		"searchTerms": [
-			"Individual on parade! Sumeragi Setsuna solo"
-		],
+		"searchTerms": ["Individual on parade! Sumeragi Setsuna solo"],
 		"title": "Individual on parade! -皇城 セツナソロver.-"
 	},
 	{
@@ -12361,9 +11147,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1013,
-		"searchTerms": [
-			"Amber chronicle"
-		],
+		"searchTerms": ["Amber chronicle"],
 		"title": "アンバークロニクル"
 	},
 	{
@@ -12374,9 +11158,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1014,
-		"searchTerms": [
-			"Love labyrinth"
-		],
+		"searchTerms": ["Love labyrinth"],
 		"title": "ラブ・ラビリンス"
 	},
 	{
@@ -12387,9 +11169,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1015,
-		"searchTerms": [
-			"idol life flight"
-		],
+		"searchTerms": ["idol life flight"],
 		"title": "アイドライフライト"
 	},
 	{
@@ -12400,9 +11180,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1016,
-		"searchTerms": [
-			"Kiraira"
-		],
+		"searchTerms": ["Kiraira"],
 		"title": "キライラ"
 	},
 	{
@@ -12413,9 +11191,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1017,
-		"searchTerms": [
-			"Slow arise"
-		],
+		"searchTerms": ["Slow arise"],
 		"title": "スローアライズ"
 	},
 	{
@@ -12448,9 +11224,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1020,
-		"searchTerms": [
-			"Crimson teiou"
-		],
+		"searchTerms": ["Crimson teiou"],
 		"title": "クリムゾン帝王"
 	},
 	{
@@ -12472,9 +11246,7 @@
 			"genre": "niconico"
 		},
 		"id": 1022,
-		"searchTerms": [
-			"Hiasobi"
-		],
+		"searchTerms": ["Hiasobi"],
 		"title": "ヒアソビ"
 	},
 	{
@@ -12485,9 +11257,7 @@
 			"genre": "niconico"
 		},
 		"id": 1023,
-		"searchTerms": [
-			"Sayonara princess"
-		],
+		"searchTerms": ["Sayonara princess"],
 		"title": "さよならプリンセス"
 	},
 	{
@@ -12498,10 +11268,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1024,
-		"searchTerms": [
-			"Deae Ex Machina",
-			"Deus Ex Machina"
-		],
+		"searchTerms": ["Deae Ex Machina", "Deus Ex Machina"],
 		"title": "デアエ・エクス・マキナ！"
 	},
 	{
@@ -12578,9 +11345,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1031,
-		"searchTerms": [
-			"KYOREN ROMANCE"
-		],
+		"searchTerms": ["KYOREN ROMANCE"],
 		"title": "狂恋ROMANCE"
 	},
 	{
@@ -12602,9 +11367,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1033,
-		"searchTerms": [
-			"Big Cloud Salt Candy"
-		],
+		"searchTerms": ["Big Cloud Salt Candy"],
 		"title": "Small Cloud Sugar Candy"
 	},
 	{
@@ -12615,10 +11378,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1034,
-		"searchTerms": [
-			"SAIKYO STRONGER",
-			"SAIKYO WEAKER"
-		],
+		"searchTerms": ["SAIKYO STRONGER", "SAIKYO WEAKER"],
 		"title": "最強STRONGER"
 	},
 	{
@@ -12629,9 +11389,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1035,
-		"searchTerms": [
-			"Kimi yo"
-		],
+		"searchTerms": ["Kimi yo"],
 		"title": "君よ"
 	},
 	{
@@ -12642,9 +11400,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1036,
-		"searchTerms": [
-			"Koi no illusionista"
-		],
+		"searchTerms": ["Koi no illusionista"],
 		"title": "恋のイリュージョニスタ"
 	},
 	{
@@ -12677,11 +11433,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1039,
-		"searchTerms": [
-			"Kurutta minzoku",
-			"Prata Bazooka",
-			"Gyoza"
-		],
+		"searchTerms": ["Kurutta minzoku", "Prata Bazooka", "Gyoza"],
 		"title": "#狂った民族2 PRAVARGYAZOOQA"
 	},
 	{
@@ -12692,9 +11444,7 @@
 			"genre": "niconico"
 		},
 		"id": 1040,
-		"searchTerms": [
-			"Kodoku no hate"
-		],
+		"searchTerms": ["Kodoku no hate"],
 		"title": "孤独の果て"
 	},
 	{
@@ -12705,9 +11455,7 @@
 			"genre": "niconico"
 		},
 		"id": 1041,
-		"searchTerms": [
-			"Yomosugara kimi omofu"
-		],
+		"searchTerms": ["Yomosugara kimi omofu"],
 		"title": "夜もすがら君想ふ"
 	},
 	{
@@ -12718,9 +11466,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1042,
-		"searchTerms": [
-			"Aria no saikyou shimobe keikaku"
-		],
+		"searchTerms": ["Aria no saikyou shimobe keikaku"],
 		"title": "アリアの最強しもべ計画♡"
 	},
 	{
@@ -12753,9 +11499,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1045,
-		"searchTerms": [
-			"Gunjou signal"
-		],
+		"searchTerms": ["Gunjou signal"],
 		"title": "群青シグナル"
 	},
 	{
@@ -12766,9 +11510,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1046,
-		"searchTerms": [
-			"Tsumugiboshi"
-		],
+		"searchTerms": ["Tsumugiboshi"],
 		"title": "ツムギボシ（starring オンゲキシューターズ）"
 	},
 	{
@@ -12801,9 +11543,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1049,
-		"searchTerms": [
-			"Gensou roukaku"
-		],
+		"searchTerms": ["Gensou roukaku"],
 		"title": "幻想楼閣"
 	},
 	{
@@ -12880,9 +11620,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1056,
-		"searchTerms": [
-			"MAKING! High touch! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["MAKING! High touch! Hoshizaki Akari solo"],
 		"title": "MAKING！ハイタッチ！ -星咲 あかりソロver.-"
 	},
 	{
@@ -12893,9 +11631,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1057,
-		"searchTerms": [
-			"MAKING! High touch! Sakurai Haruna solo"
-		],
+		"searchTerms": ["MAKING! High touch! Sakurai Haruna solo"],
 		"title": "MAKING！ハイタッチ！ -桜井 春菜ソロver.-"
 	},
 	{
@@ -12906,9 +11642,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1058,
-		"searchTerms": [
-			"MAKING! High touch! Ōsaka Akane solo"
-		],
+		"searchTerms": ["MAKING! High touch! Ōsaka Akane solo"],
 		"title": "MAKING！ハイタッチ！ -逢坂 茜ソロver.-"
 	},
 	{
@@ -12919,9 +11653,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1059,
-		"searchTerms": [
-			"Susume! My way! Hinata Chinatsu solo"
-		],
+		"searchTerms": ["Susume! My way! Hinata Chinatsu solo"],
 		"title": "進め！マイウェイ！ -日向 千夏ソロver.-"
 	},
 	{
@@ -12932,9 +11664,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1060,
-		"searchTerms": [
-			"Susume! My way! Kashiwagi Mia solo"
-		],
+		"searchTerms": ["Susume! My way! Kashiwagi Mia solo"],
 		"title": "進め！マイウェイ！ -柏木 美亜ソロver.-"
 	},
 	{
@@ -12945,9 +11675,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1061,
-		"searchTerms": [
-			"Susume! My way! Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["Susume! My way! Shinonome Tsumugi solo"],
 		"title": "進め！マイウェイ！ -東雲 つむぎソロver.-"
 	},
 	{
@@ -13013,9 +11741,7 @@
 			"genre": "東方Project"
 		},
 		"id": 1067,
-		"searchTerms": [
-			"Matsuyoi nightbug"
-		],
+		"searchTerms": ["Matsuyoi nightbug"],
 		"title": "マツヨイナイトバグ"
 	},
 	{
@@ -13048,9 +11774,7 @@
 			"genre": "niconico"
 		},
 		"id": 1070,
-		"searchTerms": [
-			"Tondemo wonders"
-		],
+		"searchTerms": ["Tondemo wonders"],
 		"title": "トンデモワンダーズ"
 	},
 	{
@@ -13061,10 +11785,7 @@
 			"genre": "niconico"
 		},
 		"id": 1071,
-		"searchTerms": [
-			"Mesmerizer",
-			"Mesmeriser"
-		],
+		"searchTerms": ["Mesmerizer", "Mesmeriser"],
 		"title": "メズマライザー"
 	},
 	{
@@ -13075,9 +11796,7 @@
 			"genre": "niconico"
 		},
 		"id": 1072,
-		"searchTerms": [
-			"Override"
-		],
+		"searchTerms": ["Override"],
 		"title": "オーバーライド"
 	},
 	{
@@ -13099,9 +11818,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1074,
-		"searchTerms": [
-			"A"
-		],
+		"searchTerms": ["A"],
 		"title": "∀"
 	},
 	{
@@ -13112,9 +11829,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1075,
-		"searchTerms": [
-			"ATM"
-		],
+		"searchTerms": ["ATM"],
 		"title": "8-EM"
 	},
 	{
@@ -13125,9 +11840,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1076,
-		"searchTerms": [
-			"Kyoumei gattai Otogelion"
-		],
+		"searchTerms": ["Kyoumei gattai Otogelion"],
 		"title": "共鳴合体 オトゲリヲン"
 	},
 	{
@@ -13138,9 +11851,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1077,
-		"searchTerms": [
-			"Ichiban kagayaku hoshi"
-		],
+		"searchTerms": ["Ichiban kagayaku hoshi"],
 		"title": "1番輝く星"
 	},
 	{
@@ -13151,9 +11862,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1078,
-		"searchTerms": [
-			"Bibbidiba"
-		],
+		"searchTerms": ["Bibbidiba"],
 		"title": "ビビデバ"
 	},
 	{
@@ -13175,9 +11884,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1080,
-		"searchTerms": [
-			"Honnouteki Survivor Takase Rio solo"
-		],
+		"searchTerms": ["Honnouteki Survivor Takase Rio solo"],
 		"title": "本能的 Survivor -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -13188,9 +11895,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1081,
-		"searchTerms": [
-			"Honnouteki Survivor Yuuki Riku solo"
-		],
+		"searchTerms": ["Honnouteki Survivor Yuuki Riku solo"],
 		"title": "本能的 Survivor -結城 莉玖ソロver.-"
 	},
 	{
@@ -13201,9 +11906,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1082,
-		"searchTerms": [
-			"Honnouteki Survivor Aihara Tsubaki solo"
-		],
+		"searchTerms": ["Honnouteki Survivor Aihara Tsubaki solo"],
 		"title": "本能的 Survivor -藍原 椿ソロver.-"
 	},
 	{
@@ -13214,9 +11917,7 @@
 			"genre": "ボーナストラック"
 		},
 		"id": 1083,
-		"searchTerms": [
-			"Individual on parade Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Individual on parade Fujisawa Yuzu solo"],
 		"title": "Individual on parade! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -13227,9 +11928,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1084,
-		"searchTerms": [
-			"Gadget wa princess"
-		],
+		"searchTerms": ["Gadget wa princess"],
 		"title": "ガジェットはプリンセス"
 	},
 	{
@@ -13240,9 +11939,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1085,
-		"searchTerms": [
-			"Unison monologue"
-		],
+		"searchTerms": ["Unison monologue"],
 		"title": "ユニゾンモノローグ"
 	},
 	{
@@ -13264,9 +11961,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1087,
-		"searchTerms": [
-			"Gaotto!! Saikyou party night"
-		],
+		"searchTerms": ["Gaotto!! Saikyou party night"],
 		"title": "がおっと!!最強☆ぱーりーないと"
 	},
 	{
@@ -13277,9 +11972,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1088,
-		"searchTerms": [
-			"Tsubaki uruwashi"
-		],
+		"searchTerms": ["Tsubaki uruwashi"],
 		"title": "耐冬花麗"
 	},
 	{
@@ -13301,10 +11994,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1090,
-		"searchTerms": [
-			"Allnight dancer",
-			"All night dancer"
-		],
+		"searchTerms": ["Allnight dancer", "All night dancer"],
 		"title": "ALLNIGHT_DANCER"
 	},
 	{
@@ -13315,9 +12005,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1091,
-		"searchTerms": [
-			"Nyx"
-		],
+		"searchTerms": ["Nyx"],
 		"title": "Nýx"
 	},
 	{
@@ -13361,9 +12049,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1095,
-		"searchTerms": [
-			"Orange scale"
-		],
+		"searchTerms": ["Orange scale"],
 		"title": "オレンジスケール"
 	},
 	{
@@ -13374,9 +12060,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1096,
-		"searchTerms": [
-			"Hon no kansou"
-		],
+		"searchTerms": ["Hon no kansou"],
 		"title": "ほんの感想"
 	},
 	{
@@ -13387,9 +12071,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1097,
-		"searchTerms": [
-			"Latest showman"
-		],
+		"searchTerms": ["Latest showman"],
 		"title": "レイテストショーマン"
 	},
 	{
@@ -13400,9 +12082,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1098,
-		"searchTerms": [
-			"Ikkai kaite sayounara"
-		],
+		"searchTerms": ["Ikkai kaite sayounara"],
 		"title": "いっかい書いてさようなら"
 	},
 	{
@@ -13424,9 +12104,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1100,
-		"searchTerms": [
-			"Concussion"
-		],
+		"searchTerms": ["Concussion"],
 		"title": "Concvssion"
 	},
 	{
@@ -13448,9 +12126,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1102,
-		"searchTerms": [
-			"Halo"
-		],
+		"searchTerms": ["Halo"],
 		"title": "[HALO]"
 	},
 	{
@@ -13472,10 +12148,7 @@
 			"genre": "niconico"
 		},
 		"id": 1104,
-		"searchTerms": [
-			"Hitomania",
-			"Hito mania"
-		],
+		"searchTerms": ["Hitomania", "Hito mania"],
 		"title": "人マニア"
 	},
 	{
@@ -13486,9 +12159,7 @@
 			"genre": "niconico"
 		},
 		"id": 1105,
-		"searchTerms": [
-			"Liar dancer"
-		],
+		"searchTerms": ["Liar dancer"],
 		"title": "ライアーダンサー"
 	},
 	{
@@ -13499,9 +12170,7 @@
 			"genre": "niconico"
 		},
 		"id": 1106,
-		"searchTerms": [
-			"Realize"
-		],
+		"searchTerms": ["Realize"],
 		"title": "リアライズ"
 	},
 	{
@@ -13512,9 +12181,7 @@
 			"genre": "チュウマイ"
 		},
 		"id": 1107,
-		"searchTerms": [
-			"Azure Vixen"
-		],
+		"searchTerms": ["Azure Vixen"],
 		"title": "Λzure Vixen"
 	},
 	{
@@ -13525,9 +12192,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1108,
-		"searchTerms": [
-			"Papipupe Popping! Talk!"
-		],
+		"searchTerms": ["Papipupe Popping! Talk!"],
 		"title": "パピプペ Popping！ Talk！"
 	},
 	{
@@ -13582,9 +12247,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1113,
-		"searchTerms": [
-			"Issatsu no arrow"
-		],
+		"searchTerms": ["Issatsu no arrow"],
 		"title": "一冊のアロー"
 	},
 	{
@@ -13617,9 +12280,7 @@
 			"genre": "VARIETY"
 		},
 		"id": 1116,
-		"searchTerms": [
-			"Irodori canvas"
-		],
+		"searchTerms": ["Irodori canvas"],
 		"title": "彩りキャンバス"
 	},
 	{
@@ -13663,9 +12324,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1120,
-		"searchTerms": [
-			"Natsuiro hanabi Fujisawa Yuzu solo"
-		],
+		"searchTerms": ["Natsuiro hanabi Fujisawa Yuzu solo"],
 		"title": "夏色花火 -藤沢 柚子ソロver.-"
 	},
 	{
@@ -13676,9 +12335,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1121,
-		"searchTerms": [
-			"Natsuiro hanabi Saotome Ayaka solo"
-		],
+		"searchTerms": ["Natsuiro hanabi Saotome Ayaka solo"],
 		"title": "夏色花火 -早乙女 彩華ソロver.-"
 	},
 	{
@@ -13689,9 +12346,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1122,
-		"searchTerms": [
-			"Iudicium Apocalypsis Mix Kashiwagi Saki solo"
-		],
+		"searchTerms": ["Iudicium Apocalypsis Mix Kashiwagi Saki solo"],
 		"title": "Iudicium “Apocalypsis Mix” -柏木 咲姫ソロver.-"
 	},
 	{
@@ -13702,9 +12357,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1123,
-		"searchTerms": [
-			"Iudicium Apocalypsis Mix Kashiwagi Mia solo"
-		],
+		"searchTerms": ["Iudicium Apocalypsis Mix Kashiwagi Mia solo"],
 		"title": "Iudicium “Apocalypsis Mix” -柏木 美亜ソロver.-"
 	},
 	{
@@ -13715,9 +12368,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1124,
-		"searchTerms": [
-			"WakeUP MakeUP FEVER! Hoshizaki Akari solo"
-		],
+		"searchTerms": ["WakeUP MakeUP FEVER! Hoshizaki Akari solo"],
 		"title": "WakeUP MakeUP FEVER! -星咲 あかりソロver.-"
 	},
 	{
@@ -13728,9 +12379,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1125,
-		"searchTerms": [
-			"WakeUP MakeUP FEVER! Takase Rio solo"
-		],
+		"searchTerms": ["WakeUP MakeUP FEVER! Takase Rio solo"],
 		"title": "WakeUP MakeUP FEVER! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -13741,9 +12390,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1126,
-		"searchTerms": [
-			"WakeUP MakeUP FEVER! Aihara Tsubaki solo"
-		],
+		"searchTerms": ["WakeUP MakeUP FEVER! Aihara Tsubaki solo"],
 		"title": "WakeUP MakeUP FEVER! -藍原 椿ソロver.-"
 	},
 	{
@@ -13754,9 +12401,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1127,
-		"searchTerms": [
-			"WakeUP MakeUP FEVER! Inohara Koboshi solo"
-		],
+		"searchTerms": ["WakeUP MakeUP FEVER! Inohara Koboshi solo"],
 		"title": "WakeUP MakeUP FEVER! -桜井 春菜ソロver.-"
 	},
 	{
@@ -13767,9 +12412,7 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1128,
-		"searchTerms": [
-			"WakeUP MakeUP FEVER! Shinonome Tsumugi solo"
-		],
+		"searchTerms": ["WakeUP MakeUP FEVER! Shinonome Tsumugi solo"],
 		"title": "WakeUP MakeUP FEVER! -東雲 つむぎソロver.-"
 	},
 	{
@@ -14089,7 +12732,10 @@
 			"genre": "東方Project"
 		},
 		"id": 1160,
-		"searchTerms": ["Marisa wa taihen na mono wo nusunde ikimashita", "Marisa stole the precious thing" ],
+		"searchTerms": [
+			"Marisa wa taihen na mono wo nusunde ikimashita",
+			"Marisa stole the precious thing"
+		],
 		"title": "魔理沙は大変なものを盗んでいきました"
 	},
 	{
