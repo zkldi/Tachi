@@ -110,7 +110,16 @@ The default rating algorithm is `naiveRating`.
 - `inGameID`
 
 ### Song Title Matching
-There are numerous songs with non-unique names (e.g. Singularity, Singularity and Singularity), but this can be resolved by providing the `artist` field. The only exception is Perfect Shining, which uniquely has two LUNATIC charts and has to be matched by `inGameID`:
+There are several songs with non-unique names:
 
-- LUNATIC 0 (Loctest chart) `inGameID: 8003`
-- LUNATIC 13+ (Re:Master) `inGameID: 8091`
+- Singularity (technoplanet) `inGameID: 391`
+- Singularity (ETIA.「Arcaea」) `inGameID: 454`
+- Singularity (SEGA SOUND STAFF「セガNET麻雀 MJ」) `inGameID: 516`
+
+- Hand in Hand (livetune) `inGameID: 380`
+- Hand in Hand (ユーフィリア(CV：高橋 李依)「アンジュ・ヴィエルジュ」) `inGameID: 212`
+
+- Perfect_Shining!! LUNATIC 0 (Loctest chart) `inGameID: 8003`
+- Perfect_Shining!! LUNATIC 13+ (Re:Master) `inGameID: 8091`
+
+Most of these conflicts can be resolved by providing the `artist` field; the only exception is Perfect Shining, which uniquely has two LUNATIC charts and has to be matched by `inGameID`.
