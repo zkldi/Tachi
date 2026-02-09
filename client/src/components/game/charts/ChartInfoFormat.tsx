@@ -34,10 +34,6 @@ export default function ChartInfoFormat({
 	game,
 	playtype,
 }: { chart: ChartDocument; song: SongDocument } & GamePT) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[GetGPTString(game, playtype)];
-
-	const ratingSystems = gptImpl.ratingSystems;
-
 	const { data, error } = useApiQuery<FolderDocument[]>(
 		`/games/${game}/${playtype}/charts/${chart.chartID}/folders`
 	);
@@ -96,48 +92,7 @@ export default function ChartInfoFormat({
 				<ChartInfoMiddle song={song} chart={chart} game={game} />
 			</Col>
 			<Col xs={12} lg={3}>
-				{ratingSystems.length !== 0 &&
-				ratingSystems.some((k) => IsNotNullish(k.toString(chart as any))) ? (
-					<MiniTable headers={["Ratings"]} colSpan={2}>
-						{ratingSystems.map((e) => {
-							// @ts-expect-error bad types
-							const strV = e.toString(chart);
-							// @ts-expect-error bad types
-							const numV = e.toNumber(chart);
-
-							if (
-								strV === null ||
-								strV === undefined ||
-								numV === null ||
-								numV === undefined
-							) {
-								return null;
-							}
-
-							return (
-								<tr key={e.name}>
-									<td>{e.name}</td>
-									<td>
-										{strV} <Muted>({numV.toFixed(2)})</Muted>
-										{/* @ts-expect-error utterly silly types */}
-										{e.idvDifference(chart) && (
-											<>
-												<br />
-												<QuickTooltip tooltipContent="Individual Difference - The difficulty of this varies massively between people!">
-													<span>
-														<Icon type="balance-scale-left" />
-													</span>
-												</QuickTooltip>
-											</>
-										)}
-									</td>
-								</tr>
-							);
-						})}
-					</MiniTable>
-				) : (
-					<Muted>No tierlist info.</Muted>
-				)}
+				<ChartInfoRight song={song} chart={chart} game={game} playtype={playtype} />
 			</Col>
 		</Row>
 	);
@@ -212,4 +167,87 @@ function ChartInfoMiddle({
 			)}
 		</>
 	);
+}
+
+function ChartInfoRight({
+	game,
+	song,
+	chart,
+	playtype,
+}: { chart: ChartDocument; song: SongDocument } & GamePT) {
+	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[GetGPTString(game, playtype)];
+
+	const ratingSystems = gptImpl.ratingSystems;
+
+	if (ratingSystems.length === 0) {
+		const searchTerms = [...song.altTitles, ...song.searchTerms];
+		if (searchTerms.length === 0) {
+			return (
+				<>
+					<Muted>No search terms.</Muted>
+				</>
+			);
+		} else {
+			return (
+				<>
+					<h5>Search terms</h5>
+					<ul style={{ textAlign: "left" }}>
+						{searchTerms.map((m) => (
+							<li>{m}</li>
+						))}
+					</ul>
+				</>
+			);
+		}
+	}
+
+	if (ratingSystems.some((k) => IsNotNullish(k.toString(chart as any)))) {
+		return (
+			<>
+				<MiniTable headers={["Ratings"]} colSpan={2}>
+					{ratingSystems.map((e) => {
+						// @ts-expect-error bad types
+						const strV = e.toString(chart);
+						// @ts-expect-error bad types
+						const numV = e.toNumber(chart);
+
+						if (
+							strV === null ||
+							strV === undefined ||
+							numV === null ||
+							numV === undefined
+						) {
+							return null;
+						}
+
+						return (
+							<tr key={e.name}>
+								<td>{e.name}</td>
+								<td>
+									{strV} <Muted>({numV.toFixed(2)})</Muted>
+									{/* @ts-expect-error utterly silly types */}
+									{e.idvDifference(chart) && (
+										<>
+											<br />
+											<QuickTooltip tooltipContent="Individual Difference - The difficulty of this varies massively between people!">
+												<span>
+													<Icon type="balance-scale-left" />
+												</span>
+											</QuickTooltip>
+										</>
+									)}
+								</td>
+							</tr>
+						);
+					})}
+				</MiniTable>
+			</>
+		);
+	} else {
+		return (
+			<>
+				<Muted>No tierlist info.</Muted>
+			</>
+		);
+	}
 }
