@@ -113,7 +113,7 @@ function GraphComponent({
 				},
 			]}
 			game="ongeki"
-			duration={song.data.duration}
+			duration={song.data.duration ?? 240}
 		/>
 	);
 }
