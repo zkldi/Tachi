@@ -1,3 +1,4 @@
+/* eslint-disable no-bitwise */
 import { FormatCGService } from "../util";
 import {
 	InternalFailure,
@@ -60,7 +61,7 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 
 	const timeAchieved = ParseDateFromString(data.dateTime);
 
-	const scoreMeta = ConvertOptions(data.option1, data.option2);
+	const scoreMeta = ConvertOptions(data);
 
 	const dryScore: DryScore<"iidx:DP" | "iidx:SP"> = {
 		comment: null,
@@ -79,11 +80,7 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 				bp: data.missCount === -1 ? null : data.missCount,
 			},
 		},
-		scoreMeta: {
-			assist: ConvertAssist(data.option1),
-			gauge: ConvertGauge(data.option1),
-			random: ConvertRandom(data.option1, data.option2),
-		},
+		scoreMeta,
 	};
 
 	return { song, chart, dryScore };
@@ -232,6 +229,93 @@ const OldLeggendariaConversionTable: Record<integer, integer> = {
 	24101: 24011,
 };
 
+function ConvertOptions(data: CGIIDXScore) {
+	if (data.version < 23) {
+		return {}; // Unknown if bits are the same in older versions
+	}
+
+	const opt1 = BigInt(data.option1);
+	const opt2 = BigInt(data.option2);
+	const isModern = data.version >= 27;
+
+	const RANDOM_MASKS: Record<string, bigint> = isModern
+		? {
+				RANDOM: 1n << 39n,
+				"R-RAN": 1n << 40n,
+				"S-RAN": 1n << 41n,
+				MIRROR: 1n << 42n,
+		  }
+		: {
+				RANDOM: 1n << 18n,
+				"R-RAN": 1n << 19n,
+				"S-RAN": 1n << 20n,
+				MIRROR: 1n << 21n,
+		  };
+
+	const GAUGE_MASKS: Record<string, bigint> = isModern
+		? {
+				"ASSIST EASY": 1n << 35n,
+				EASY: 1n << 36n,
+				HARD: 1n << 37n,
+				"EX-HARD": 1n << 38n,
+		  }
+		: {
+				"ASSIST EASY": 1n << 14n,
+				EASY: 1n << 15n,
+				HARD: 1n << 16n,
+				"EX-HARD": 1n << 17n,
+		  };
+
+	// TODO: find bits for AUTO SCRATCH and LEGACY NOTE
+
+	// Helper to find which string keys match the bitmask
+	const getActiveOptions = (val: bigint, masks: Record<string, bigint>): Array<string> => {
+		const options = [];
+
+		for (const [name, mask] of Object.entries(masks)) {
+			if ((val & mask) !== 0n) {
+				options.push(name);
+			}
+		}
+
+		return options;
+	};
+
+	const scoreMeta: any = {};
+
+	// for Random options, if no options are selected we know NONRAN is used.
+	// and we know only one option can be selected.
+
+	scoreMeta.random = "NONRAN";
+
+	const randomOptions = getActiveOptions(opt1, RANDOM_MASKS);
+
+	if (randomOptions.length > 0) {
+		scoreMeta.random = randomOptions[0];
+	}
+
+	// Handle Double Play (DP) difficulty if it starts with "D"
+	if (data.difficulty.startsWith("D")) {
+		scoreMeta.random = [scoreMeta.random, "NONRAN"];
+		const rightSide = getActiveOptions(opt2, RANDOM_MASKS);
+
+		if (rightSide.length > 0) {
+			scoreMeta.random[1] = rightSide[0];
+		}
+	}
+
+	// for Gauge options, if no options are selected we do NOT know the gauge type
+	// like Random only one Gauge can be selected
+
+	const gaugeOptions = getActiveOptions(opt1, GAUGE_MASKS);
+
+	if (gaugeOptions.length > 0) {
+		scoreMeta.gauge = gaugeOptions[0];
+	}
+
+	return scoreMeta;
+}
+
 function ConvertDifficulty(difficulty: string): Difficulties["iidx:DP" | "iidx:SP"] {
 	switch (difficulty.charAt(2)) {
 		case "N":
@@ -268,35 +352,6 @@ function ConvertLamp(lamp: integer): GetEnumValue<"iidx:DP" | "iidx:SP", "lamp">
 	}
 
 	throw new InvalidScoreFailure(`Unknown lamp value ${lamp}.`);
-}
-
-function ConvertAssist(
-	option1: integer
-): "AUTO SCRATCH" | "FULL ASSIST" | "LEGACY NOTE" | "NO ASSIST" {
-	// TODO
-	return "NO ASSIST";
-}
-
-function ConvertGauge(option1: integer): "ASSISTED EASY" | "EASY" | "EX-HARD" | "HARD" | "NORMAL" {
-	// TODO
-	return "NORMAL";
-}
-
-function ConvertRandom(
-	option1: integer,
-	option2: integer
-):
-	| "MIRROR"
-	| "NONRAN"
-	| "R-RANDOM"
-	| "RANDOM"
-	| "S-RANDOM"
-	| [
-			"MIRROR" | "NONRAN" | "R-RANDOM" | "RANDOM" | "S-RANDOM",
-			"MIRROR" | "NONRAN" | "R-RANDOM" | "RANDOM" | "S-RANDOM"
-	  ] {
-	// TODO
-	return "NONRAN";
 }
 
 function ConvertVersion(version: integer): Versions["iidx:DP" | "iidx:SP"] {
