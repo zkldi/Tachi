@@ -189,7 +189,9 @@ function ChartInfoMiddle({
 	const diff = FormatDifficultySearch(chart, game);
 	const gameName =
 		game === "ongeki" ? "オンゲキ" : game === "maimaidx" ? "maimai" : gameConfig.name;
-	const formattedTitle = song.title.replace(/-/gu, " ");
+	const formattedTitle = song.title
+		.replace(/([!?,]){4,}/g, (m) => m[0].repeat(3)) 
+		.replace(/-/gu, " ");
 
 	let search = `${gameName} ${formattedTitle}`;
 
