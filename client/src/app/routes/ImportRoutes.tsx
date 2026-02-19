@@ -34,6 +34,7 @@ import OngekiArtemisExportPage from "app/pages/dashboard/import/OngekiArtemisExp
 import MytIntegrationPage from "components/imports/MYTIntegrationPage";
 import OngekiInoharaPage from "app/pages/dashboard/import/OngekiInoharaPage";
 import OngekiSiteImportPage from "app/pages/dashboard/import/OngekiSiteImportPage";
+import RizuPage from "app/pages/dashboard/import/RizuPage";
 
 export default function ImportRoutes() {
 	const { user } = useContext(UserContext);
@@ -254,6 +255,10 @@ export default function ImportRoutes() {
 
 							<Route exact path="/import/kt-maimaidx-site-importer">
 								<MaimaiDXSiteImportPage />
+							</Route>
+
+							<Route exact path="/import/rizu">
+								<RizuPage />
 							</Route>
 
 							<Route exact path="/import/ongeki-artemis-exporter">

@@ -321,6 +321,13 @@ function ImportInfoDisplayer({ game }: { game: Game }) {
 	} else if (game === "maimaidx") {
 		Content.unshift(
 			<ImportInfoCard
+				name="Rizu"
+				href="rizu"
+				desc="Automatically import scores, whenever you get them."
+				key="Rizu"
+				moreInfo="This is the recommended way to import maimai DX scores; data is submitted at the end of each play."
+			/>,
+			<ImportInfoCard
 				name="maimai DX Site Importer"
 				href="kt-maimaidx-site-importer"
 				desc="Use your data from maimai DX NET."
