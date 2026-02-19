@@ -95,6 +95,7 @@ The default rating algorithm is `jubility`.
 | `festo` | festo |
 | `festo-omni` | festo Omnimix |
 | `ave` | Ave. |
+| `beyond` | beyond the Ave. |
 
 ## Supported Match Types
 

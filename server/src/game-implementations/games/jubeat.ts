@@ -94,7 +94,7 @@ async function GetBestJubilityOnSongs(
 	return r.map((e) => e.doc);
 }
 
-const CURRENT_JUBEAT_HOT_VERSION: Versions["jubeat:Single"] = "ave";
+const CURRENT_JUBEAT_HOT_VERSION: Versions["jubeat:Single"] = "beyond";
 
 export async function GetPBsForJubility(userID: integer) {
 	const hotSongs = await db.songs.jubeat.find(

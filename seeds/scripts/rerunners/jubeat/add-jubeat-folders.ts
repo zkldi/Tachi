@@ -21,7 +21,7 @@ function CreateFolder(criteria, title) {
 	return f;
 }
 
-const versions = ["ave"];
+const versions = ["beyond"];
 
 for (const version of versions) {
 	const shouldAddDecimals = true;
