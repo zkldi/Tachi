@@ -117,7 +117,7 @@ function ConvertVersion(ver: number): Versions["jubeat:Single"] {
 		case 11:
 			return "ave";
 		case 12:
-			return "beyond"
+			return "beyond";
 	}
 
 	throw new InvalidScoreFailure(`Unknown Game Version ${ver}.`);
