@@ -4246,6 +4246,37 @@
 	},
 	{
 		"default": false,
+		"description": "Decimal Level Folders for jubeat beyond the Ave..",
+		"folders": [
+			"F6ba0d99b7c53d6afcc79239d4949ac46bd1e30fed816d49b181cea2868c3b074",
+			"F9715cb42cf23ad087a38c6268b0d4ff256ee8755fc38dd8f5ba253b52f3b9c6f",
+			"F6787520cc91d5e134348c6a28c0d71743301338e7e2645d9a0349dbf1e3e7be6",
+			"F6e91f89a0ba01a829f81036b162f4979526308098294aa398b97ada6d8450c86",
+			"F73c8212db56f0243dd5be30badd91eb3db6434d0906494cf7c50dc49c2150cd2",
+			"Fb7280596b648a4b45d556acb30f4d8bc890298a5269f0fe33f8be036e45ada2e",
+			"F2db885b186454807ab2530007efe1b7af8ec245fe6403e26456026137fe9be78",
+			"F2b475e2314e5b0b55f5d1dc284517edc9b728e4eff61d30ac300c734c2d6bb6a",
+			"Fa6c7363c6d649efa5d3e0d5d08617c2698ad33c4cb123a7097be6b976be104bb",
+			"F594308cfa089b59f0f43c9ad215b4ff05f0fc31e855c0bee00f6d77f392693e5",
+			"Fb1bed8c606e68f4de258524fcf57cc13a4828902b6044fc6bb3ed27481a51094",
+			"F15a9ecd9a56c200bc7ce81258583a7cf2fee943c4144d35992fff20dcec82f76",
+			"F2b4e69f934d087dee608ae0e4e0814fb861d598d041790c3eaa4ab18fb9e5410",
+			"F09c5917a9efd79825d86c1c304716a8599a60e4cf28bd538ed09657c0735986d",
+			"F4dd1287b1492b32c9891ba7d7d058c52434730b9e4d98298c70899d7571a1cd8",
+			"Fedf2e0b776ac2824fcfa5ee826a7911f7ec6d69f2d0fad23b0efdf20a2560225",
+			"F953c2ef6d8069738091840662c93e88dd8acd3ddb5d3182637f9d6a5ff6cd8e1",
+			"Fd8c48a43905eab97d75c702ba9ed0458808a92cc54edfc18774e9216350b89cf",
+			"F37baaae854021bc38055d39b5ca188a6ab9715642272ee54eec8b8642cdb1ee8",
+			"F8adf9afff55e30c6e60de178786a223f82ad55e2f0c195d31b5b2c6e66edfcc2"
+		],
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "jubeat-Single-declv-beyond",
+		"title": "Decimal Level Folders (beyond the Ave.)"
+	},
+	{
+		"default": false,
 		"description": "Decimal Level Folders for jubeat festo Omnimix.",
 		"folders": [
 			"Fd5bb624ce939d93dbefda85a5d49e702b6a905744755122ff2a7626cd4bd5e23",
@@ -4370,6 +4401,37 @@
 	},
 	{
 		"default": false,
+		"description": "Hard Mode Decimal Level Folders for jubeat beyond the Ave..",
+		"folders": [
+			"F3324782938a9fc0505be264e2ebaf44f653645eac2047d3777917149f4faf464",
+			"F8b833ba827774ef4ba6f0ca69fe52d6986570b9d68950869ad7453039547cfdb",
+			"F99f19986fa30f2344ac86e3a477d19f1888b6791440ad2b1c4cb825adb762713",
+			"Fba8e1689da0e2dbc3068e612b638ddadadd15028f4b3fab3dd94608703ae57d2",
+			"F8ad3b8bf786a27e9fe158eedd2c613ce71381c3583629eadb37fe08e90990f20",
+			"F62ce23ef45de790945da5bb827444778e5f728cfbde0df91bcd7fe3be0d337d8",
+			"Feb4333524ebe9fef97db9125483d0252439d295ce7155e2894521f0666fc71af",
+			"Fb8729512340b4830b2cd05e5183adb578c8ffffed1690071df11630dddf31894",
+			"F0cc29b9c77e8db5ad1ef6b3e9942f340c505c5938fe5afb0c04369587ba2a816",
+			"F8fb73c78ac5408ec1bc64017c963a896009c8a96adec8cfd6a6f232792ee1c3a",
+			"F785f060ad1b0682f9856e2d5d8afcb6f61183572d7fe7d457cad668965ab9f9c",
+			"F0b2632bf2a92838e2d60843df22284b038d592709b8b88b54adfdc1c1e711d23",
+			"F628f33be162abc0aa88031c46fee4e761000a0e64ddda8bc2cc155bc8f762953",
+			"F8f6ac725b671a79eaa0a2c0d23199224f032fa280e1c5c63015b6e413cce89b6",
+			"F7d1897e463fed142df9e21e9685f7af8d96b9d0027d148a85a66c7ade483fdab",
+			"F867037eb8d072b2245fe9bc4772a879f4d5e0f5c43356b67f80c0e5a94ce2510",
+			"F3ea4c1e47944e68c296fd6f5c053e50b4e16abd464ffadb5b58e7b5d649e4ac5",
+			"Fff180c8ef4be6ed77dd89051bc4abbea920f5b35f8cc8af24760df3cb6464ebb",
+			"F90830919c5788287978442330ceec0420c3c6444eab4868584322ae7cfa066bc",
+			"F45ffc60a1bdad9c0196bc9570df2e687668bc8c4c8dbdbdd4b7b1fc73db1fabd"
+		],
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "jubeat-Single-declvhd-beyond",
+		"title": "Hard Mode Decimal Level Folders (beyond the Ave.)"
+	},
+	{
+		"default": false,
 		"description": "Hard Mode Decimal Level Folders for jubeat festo Omnimix.",
 		"folders": [
 			"F2365569405dcba0ba32c05b6c858f0a870047a5655fd0df3f7d1dc65f61b1f26",
@@ -4481,6 +4543,27 @@
 		"playtype": "Single",
 		"tableID": "jubeat-Single-lvhd-ave",
 		"title": "Hard Mode Level Folders (Ave.)"
+	},
+	{
+		"default": false,
+		"description": "Hard Mode Level Folders for jubeat beyond the Ave.. This table does not have separate folders for each decimal.",
+		"folders": [
+			"F3712484a6c2312875ffdfc2ce9d337316e91587131d853a3b98c8f97fa345cea",
+			"Fa86f29ea7ef6c822d64fea7f0dce718df20a9326b9b04d0ee9007ecb8faeec9f",
+			"F234a8150aed8204c77b5503bb0bde210ea91f026636c08b725b9185ea86cd680",
+			"F5af76d7d6c4ae53b3e5b8336607652149e2f2b2f44c6c4cda5a99257e46dfab7",
+			"F21403b7c135b68326dcde936782ea92352e97eb82fa5b4a2a02670515b32926d",
+			"F60ba8694c8a4593cc47a397f6722ae92c77c039e64dbed57c752581c3e09c934",
+			"F817119a0177d7f427890542cb230cc6b2948fe1d9287202bc6264b8dde2b9be5",
+			"Fa37774cba061021ac8f29d5348b1203d3aadd6deba044cfc19ef88bee1f9d77b",
+			"F4715243c8ac82841d35833f9d8ec925b0492c4ef7dbfd1bc86d627808ee54b6b",
+			"Fe83435cec91709360c64cce8f09fd7fb369d0ee0c5c525827dc516eb08f43535"
+		],
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "jubeat-Single-lvhd-beyond",
+		"title": "Hard Mode Level Folders (beyond the Ave.)"
 	},
 	{
 		"default": false,
@@ -4672,7 +4755,7 @@
 		"title": "Hard Mode Level Folders (saucer)"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Level Folders for jubeat Ave.. This table does not have separate folders for each decimal.",
 		"folders": [
 			"F4b9110f2e0428df39a2b3e4fec6a3ac2b658b3dc7d11b892ca41da657f820b6b",
@@ -4691,6 +4774,27 @@
 		"playtype": "Single",
 		"tableID": "jubeat-Single-lv-ave",
 		"title": "Level Folders (Ave.)"
+	},
+	{
+		"default": true,
+		"description": "Level Folders for jubeat beyond the Ave.. This table does not have separate folders for each decimal.",
+		"folders": [
+			"F46861cd3e9dd2a31b4ac8de73131a52ae104a7e28517e0a1ded5a6abdebace5d",
+			"F9543ae25a930acfd7e064b9819b3e293ae8a6fd1155c2d825d69eab9f97e5146",
+			"Fa9d0817c685c29dd2f86dd6ab6bf03d8105dd48a3d934e466754d2ef0a82f77c",
+			"Fef417ec6c6a579a5ced58557b2f9bd2122e07db3e317b5566d5a490c388cec9a",
+			"F2d733ea79314ff165d7a5428602138f58e74445be49b1c15cc93ebfaca3edeb9",
+			"F8fa99c1cb98bd2e52fc99a8f84a63ee2c4c7210a99bd01b842ed0c65a403c312",
+			"F3bb58a91fdfed39cf677486b201a0609467bf9a97cf9ed8f968f2824881eda5f",
+			"F3ce54fa4be7df453bd791746784ae05b6267aa2701f00c5175ed6b58c2f42376",
+			"F5ae30be4c48276ae0bd6ddac16516004c106b599cdd80692fa754474352a1b7b",
+			"Fd73adfd618a6ba91e883360d95cf28a772c4fbcf538d420a9a3d6b7b2bbaec1f"
+		],
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"tableID": "jubeat-Single-lv-beyond",
+		"title": "Level Folders (beyond the Ave.)"
 	},
 	{
 		"default": false,
