@@ -6090,7 +6090,7 @@
 			"genre": "ダークマター",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "dldl11, st10"
+			"tableString": "dldl10, st10"
 		},
 		"id": 574,
 		"searchTerms": [],
@@ -310329,7 +310329,7 @@
 			"genre": "Piano solo",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 29357,
 		"searchTerms": [],
@@ -319390,7 +319390,7 @@
 			"genre": "ELEPOP",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 30172,
 		"searchTerms": [],
@@ -319767,7 +319767,7 @@
 			"genre": "progressive breaks",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 30216,
 		"searchTerms": [],
@@ -325227,7 +325227,7 @@
 			"genre": "Future Bass",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ3"
+			"tableString": "δ3"
 		},
 		"id": 30716,
 		"searchTerms": [],
@@ -334093,7 +334093,7 @@
 			"genre": "Epic Full On",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 31564,
 		"searchTerms": [],
@@ -350811,7 +350811,7 @@
 			"genre": "RAVE / HARD DANCE",
 			"subartist": "BGA by 出前 / BMSSP",
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 33193,
 		"searchTerms": [],
@@ -359508,7 +359508,7 @@
 			"genre": "Nerd Mixture",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 33968,
 		"searchTerms": [],
@@ -365033,7 +365033,7 @@
 			"genre": "Sweet Hardcore",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 34487,
 		"searchTerms": [],
@@ -391137,7 +391137,7 @@
 			"genre": "ANTHEM EUPHORIA",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 36895,
 		"searchTerms": [],
@@ -408193,7 +408193,7 @@
 			"genre": "Future Bass / Electronica",
 			"subartist": "obj.saki miyako",
 			"subtitle": null,
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 38396,
 		"searchTerms": [],
@@ -413107,7 +413107,7 @@
 			"genre": "Hard Nocturne",
 			"subartist": "obj:MGN",
 			"subtitle": "[DPN]",
-			"tableString": "☆2, δ2"
+			"tableString": "δ2"
 		},
 		"id": 38840,
 		"searchTerms": [],
@@ -619586,7 +619586,7 @@
 			"genre": "Tech Dance/Dubstek",
 			"subartist": "obj j.pami",
 			"subtitle": null,
-			"tableString": "δ1"
+			"tableString": "☆1, δ1"
 		},
 		"id": 58716,
 		"searchTerms": [],
@@ -621029,7 +621029,7 @@
 			"genre": "SHIBUYA-KEI",
 			"subartist": null,
 			"subtitle": null,
-			"tableString": "δ1"
+			"tableString": "☆1, δ1"
 		},
 		"id": 58847,
 		"searchTerms": [],
@@ -846462,7 +846462,7 @@
 			"genre": "Mirage Story",
 			"subartist": null,
 			"subtitle": "[miracle]",
-			"tableString": "dy1, st6"
+			"tableString": "dldl6, dy1, st6"
 		},
 		"id": 79243,
 		"searchTerms": [],
@@ -937852,7 +937852,7 @@
 			"genre": "POP'n GROOVE",
 			"subartist": "",
 			"subtitle": "",
-			"tableString": "sl2"
+			"tableString": "sl2, UdesubUde2"
 		},
 		"id": 87601,
 		"searchTerms": [],
@@ -1016697,7 +1016697,7 @@
 			"genre": "kawaii J-POP",
 			"subartist": "",
 			"subtitle": "",
-			"tableString": "sl0"
+			"tableString": "sl0, UdesubUde0"
 		},
 		"id": 93709,
 		"searchTerms": [],
@@ -1040149,7 +1040149,7 @@
 			"genre": "HYPER VG-RΘCK",
 			"subartist": "obj . Atharnal",
 			"subtitle": "[Shooting Game]",
-			"tableString": "sl4"
+			"tableString": "sl4, UdeUde4"
 		},
 		"id": 95513,
 		"searchTerms": [],
@@ -1062371,5 +1062371,70 @@
 		"id": 97222,
 		"searchTerms": [],
 		"title": "世界が僕らを好いた結果"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ras",
+		"data": {
+			"genre": "Tech electro",
+			"subartist": "obj: sadboy",
+			"subtitle": "[6K UE Happy End]",
+			"tableString": null
+		},
+		"id": 97223,
+		"searchTerms": [],
+		"title": "STAGER"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Sharpnel",
+		"data": {
+			"genre": "J-Core",
+			"subartist": "obj.yuko",
+			"subtitle": "",
+			"tableString": null
+		},
+		"id": 97224,
+		"searchTerms": [],
+		"title": "The Power of Underground"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ E_Pigeon/mov:VJ R054",
+		"data": {
+			"genre": "NRG Hardcore",
+			"subartist": "OBJ: DJ E_Pigeon",
+			"subtitle": "[SP NORMAL]",
+			"tableString": null
+		},
+		"id": 97225,
+		"searchTerms": [],
+		"title": "untitled_project_01"
+	},
+	{
+		"altTitles": [],
+		"artist": "dawn-system",
+		"data": {
+			"genre": "R&B",
+			"subartist": "Vocal:megumi./ obj.turbow",
+			"subtitle": "[+]",
+			"tableString": "▼4"
+		},
+		"id": 97226,
+		"searchTerms": [],
+		"title": "meet me in your love"
+	},
+	{
+		"altTitles": [],
+		"artist": "かんざきしおん",
+		"data": {
+			"genre": "Colour House",
+			"subartist": "",
+			"subtitle": "",
+			"tableString": "▼12"
+		},
+		"id": 97227,
+		"searchTerms": [],
+		"title": "awayuki[I]"
 	}
 ]
