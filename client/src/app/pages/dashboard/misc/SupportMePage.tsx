@@ -15,11 +15,11 @@ export default function SupportMePage() {
 			</p>
 			<p>
 				If you want to support {TachiConfig.NAME} development, you can donate to my{" "}
-				<ExternalLink href="https://ko-fi.com/zkldi">Ko-fi</ExternalLink>.
+				<ExternalLink href="https://ko-fi.com/zkrising">Ko-fi</ExternalLink>.
 			</p>
 			<p>
 				Alternatively, you can star the{" "}
-				<ExternalLink href="https://github.com/zkldichi">GitHub Repo</ExternalLink>. This
+				<ExternalLink href="https://github.com/zkldi/Tachi">GitHub Repo</ExternalLink>. This
 				makes me look cool to employers!
 			</p>
 		</div>
