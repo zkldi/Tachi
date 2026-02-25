@@ -79,7 +79,7 @@ export default function SupportBanner({ user }: { user: UserDocument }) {
 				<br />
 				<br />
 				If you want to support development, you can donate to my{" "}
-				<ExternalLink href="https://ko-fi.com/zkldi">Ko-Fi</ExternalLink>
+				<ExternalLink href="https://ko-fi.com/zkrising">Ko-Fi</ExternalLink>
 				, if you indicate your account name in the donation, you'll get a shiny name on the
 				site!
 				<br />
@@ -87,7 +87,7 @@ export default function SupportBanner({ user }: { user: UserDocument }) {
 				<br />
 				<br />
 				Alternatively, you can star or contribute to the fully-open-source{" "}
-				<ExternalLink href="https://github.com/zkldichi">GitHub Repo</ExternalLink>. This
+				<ExternalLink href="https://github.com/zkldi/Tachi">GitHub Repo</ExternalLink>. This
 				makes me look cool to employers!
 			</span>
 		</Card>
