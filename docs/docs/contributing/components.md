@@ -25,7 +25,7 @@ For more information, read our [Issue Reporting Guide](./components/issues.md).
 
 ### Documentation
 
-We store our documentation as a series of markdown files in the [Main Repository](https://github.com/zkldichi). You can find it under the `docs/` folder.
+We store our documentation as a series of markdown files in the [Main Repository](https://github.com/zkldi/Tachi). You can find it under the `docs/` folder.
 
 Writing, maintaining and proofreading the documentation is something that is **severely** neglected
 at the moment. Simple things like typo fixes, all the way up to writing new explanations about major features
