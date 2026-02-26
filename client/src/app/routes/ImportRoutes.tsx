@@ -33,6 +33,7 @@ import ChunithmMYTExport from "app/pages/dashboard/import/ChunithmMYTExportPage"
 import OngekiArtemisExportPage from "app/pages/dashboard/import/OngekiArtemisExportPage";
 import MytIntegrationPage from "components/imports/MYTIntegrationPage";
 import OngekiInoharaPage from "app/pages/dashboard/import/OngekiInoharaPage";
+import OngekiSiteImportPage from "app/pages/dashboard/import/OngekiSiteImportPage";
 
 export default function ImportRoutes() {
 	const { user } = useContext(UserContext);
@@ -261,6 +262,10 @@ export default function ImportRoutes() {
 
 							<Route exact path="/import/inohara">
 								<OngekiInoharaPage />
+							</Route>
+
+							<Route exact path="/import/kt-ongeki-site-importer">
+								<OngekiSiteImportPage />
 							</Route>
 						</>
 					)}

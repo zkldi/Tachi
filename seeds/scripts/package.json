@@ -18,7 +18,7 @@
 		"@types/lodash.get": "^4.4.7",
 		"@types/node": "18.11.18",
 		"better-sqlite3": "9.4.5",
-		"binary-parser": "^2.2.1",
+		"binary-parser": "^2.3.0",
 		"bms-table-loader": "2.0.0",
 		"chalk": "4",
 		"cheerio": "^1.0.0-rc.12",

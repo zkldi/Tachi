@@ -13,7 +13,8 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 		grade: ({ percent }) => GetGrade(MAIMAIDX_GBOUNDARIES, percent),
 	},
 	scoreCalcs: {
-		rate: (scoreData, chart) => MaimaiDXRate.calculate(scoreData.percent, chart.levelNum),
+		rate: (scoreData, chart) =>
+			MaimaiDXRate.calculate(scoreData.percent, chart.levelNum, scoreData.lamp),
 	},
 	sessionCalcs: { rate: SessionAvgBest10For("rate") },
 	profileCalcs: {
@@ -88,6 +89,63 @@ export const MAIMAIDX_IMPL: GPTServerImplementation<"maimaidx:Single"> = {
 
 			if (s.scoreData.lamp === "ALL PERFECT" && s.scoreData.percent < 100.5) {
 				return "Cannot have an ALL PERFECT without at least 100.5%.";
+			}
+
+			if (s.scoreData.lamp === "CLEAR" && s.scoreData.percent < 80) {
+				return "Cannot have a CLEAR without at least 80%.";
+			}
+
+			if (s.scoreData.lamp === "FAILED" && s.scoreData.percent >= 80) {
+				return "Cannot have a FAILED if the score is above 80%.";
+			}
+		},
+		(s) => {
+			const { great, good, miss } = s.scoreData.judgements;
+
+			// Assume the lamp is correct if judgements aren't provided.
+			if (IsNullish(great) || IsNullish(good) || IsNullish(miss)) {
+				return;
+			}
+
+			if (s.scoreData.lamp === "ALL PERFECT+" && great + good + miss > 0) {
+				return "Cannot have an ALL PERFECT+ with any non-perfect judgements.";
+			}
+
+			if (s.scoreData.lamp === "ALL PERFECT" && great + good + miss > 0) {
+				return "Cannot have an ALL PERFECT with any non-perfect judgements.";
+			}
+
+			if (s.scoreData.lamp === "FULL COMBO+" && good + miss > 0) {
+				return "Cannot have a FULL COMBO+ with any goods or misses.";
+			}
+
+			if (s.scoreData.lamp === "FULL COMBO" && miss > 0) {
+				return "Cannot have a FULL COMBO with any misses.";
+			}
+		},
+		(s) => {
+			const { maxCombo } = s.scoreData.optional;
+			const { pcrit, perfect, great, good, miss } = s.scoreData.judgements;
+
+			if (
+				IsNullish(maxCombo) ||
+				IsNullish(pcrit) ||
+				IsNullish(perfect) ||
+				IsNullish(great) ||
+				IsNullish(good) ||
+				IsNullish(miss)
+			) {
+				return;
+			}
+
+			if (
+				s.scoreData.lamp !== "CLEAR" &&
+				s.scoreData.lamp !== "FAILED" &&
+				pcrit + perfect + great + good + miss !== maxCombo
+			) {
+				const article = s.scoreData.lamp.startsWith("ALL PERFECT") ? "an" : "a";
+
+				return `Cannot have ${article} ${s.scoreData.lamp} if maxCombo is not equal to the sum of judgements.`;
 			}
 		},
 	],

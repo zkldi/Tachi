@@ -97,6 +97,8 @@ The following judgements are defined:
 | `prism` | PRiSM |
 | `prism-omni` | PRiSM Omnimix |
 | `prismplus` | PRiSM PLUS |
+| `prismplus-omni` | PRiSM PLUS Omnimix |
+| `circle` | CiRCLE |
 
 ## Supported Match Types
 

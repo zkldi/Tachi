@@ -40,6 +40,7 @@ const VERSION_DISPLAY_NAMES = [
 	"maimaiでらっくす BUDDiES PLUS",
 	"maimaiでらっくす PRiSM",
 	"maimaiでらっくす PRiSM PLUS",
+	"maimaiでらっくす CiRCLE",
 ];
 const DIFFICULTIES = ["Basic", "Advanced", "Expert", "Master", "Re:Master"];
 const GENRE_MAP = {

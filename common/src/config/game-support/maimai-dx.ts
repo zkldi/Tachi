@@ -229,6 +229,8 @@ export const MAIMAI_DX_SINGLE_CONF = {
 		prism: "PRiSM",
 		"prism-omni": "PRiSM Omnimix",
 		prismplus: "PRiSM PLUS",
+		"prismplus-omni": "PRiSM PLUS Omnimix",
+		circle: "CiRCLE",
 	},
 
 	chartData: z.strictObject({
