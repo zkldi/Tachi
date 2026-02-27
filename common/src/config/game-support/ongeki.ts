@@ -10,6 +10,7 @@ export const ONGEKI_CONF = {
 	playtypes: ["Single"],
 	songData: z.strictObject({
 		duration: z.number().optional(),
+		flavorGenre: z.string().optional()
 	}),
 } as const satisfies INTERNAL_GAME_CONFIG;
 

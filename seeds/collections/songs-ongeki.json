@@ -521,7 +521,8 @@
 		"altTitles": [],
 		"artist": "Junk",
 		"data": {
-			"duration": 142.083
+			"duration": 142.083,
+			"flavorGenre": "TRANCE"
 		},
 		"id": 45,
 		"searchTerms": [],
@@ -541,7 +542,8 @@
 		"altTitles": [],
 		"artist": "xi",
 		"data": {
-			"duration": 160.838
+			"duration": 160.838,
+			"flavorGenre": "RENAISSANCE HARDCORE"
 		},
 		"id": 47,
 		"searchTerms": [],
@@ -597,7 +599,8 @@
 		"altTitles": [],
 		"artist": "t+pazolite",
 		"data": {
-			"duration": 122.842
+			"duration": 122.842,
+			"flavorGenre": "JOYPOLIS"
 		},
 		"id": 52,
 		"searchTerms": [],
@@ -841,7 +844,8 @@
 		"altTitles": [],
 		"artist": "曲：Tom-H@ck／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
-			"duration": 157.44
+			"duration": 157.44,
+			"flavorGenre": "モンスターJKロック"
 		},
 		"id": 75,
 		"searchTerms": [
@@ -865,7 +869,8 @@
 		"altTitles": [],
 		"artist": "Feryquitous",
 		"data": {
-			"duration": 130.16
+			"duration": 130.16,
+			"flavorGenre": "Helzh Out"
 		},
 		"id": 77,
 		"searchTerms": [],
@@ -887,7 +892,8 @@
 		"altTitles": [],
 		"artist": "有形ランペイジ",
 		"data": {
-			"duration": 149.813
+			"duration": 149.813,
+			"flavorGenre": "NEOEDOBTZ"
 		},
 		"id": 79,
 		"searchTerms": [
@@ -899,7 +905,8 @@
 		"altTitles": [],
 		"artist": "曲：佐藤純一（fhána）／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
-			"duration": 156.045
+			"duration": 156.045,
+			"flavorGenre": "ふんわりディスコ"
 		},
 		"id": 80,
 		"searchTerms": [],
@@ -919,7 +926,8 @@
 		"altTitles": [],
 		"artist": "Cranky,Morrigan feat.Lily",
 		"data": {
-			"duration": 145.667
+			"duration": 145.667,
+			"flavorGenre": "Feline Groove"
 		},
 		"id": 82,
 		"searchTerms": [],
@@ -959,7 +967,8 @@
 		"altTitles": [],
 		"artist": "曲：ZAQ／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
-			"duration": 153.375
+			"duration": 153.375,
+			"flavorGenre": "プリンセスナイトロック"
 		},
 		"id": 86,
 		"searchTerms": [],
@@ -969,7 +978,8 @@
 		"altTitles": [],
 		"artist": "Sampling Masters MEGA",
 		"data": {
-			"duration": 132.273
+			"duration": 132.273,
+			"flavorGenre": "Meter hardcore"
 		},
 		"id": 87,
 		"searchTerms": [],
@@ -979,7 +989,8 @@
 		"altTitles": [],
 		"artist": "t+pazolite",
 		"data": {
-			"duration": 141.444
+			"duration": 141.444,
+			"flavorGenre": "Nightmare"
 		},
 		"id": 88,
 		"searchTerms": [],
@@ -1095,7 +1106,8 @@
 		"altTitles": [],
 		"artist": "EBIMAYO",
 		"data": {
-			"duration": 121.757
+			"duration": 121.757,
+			"flavorGenre": "GOODMOOMBAH"
 		},
 		"id": 98,
 		"searchTerms": [],
@@ -1208,7 +1220,8 @@
 		"altTitles": [],
 		"artist": "かねこちはる",
 		"data": {
-			"duration": 134.057
+			"duration": 134.057,
+			"flavorGenre": "symphonic"
 		},
 		"id": 108,
 		"searchTerms": [],
@@ -1218,7 +1231,8 @@
 		"altTitles": [],
 		"artist": "xi",
 		"data": {
-			"duration": 136.981
+			"duration": 136.981,
+			"flavorGenre": "LIFE STREAM"
 		},
 		"id": 109,
 		"searchTerms": [],
@@ -1438,7 +1452,8 @@
 		"altTitles": [],
 		"artist": "LeaF",
 		"data": {
-			"duration": 136.95
+			"duration": 136.95,
+			"flavorGenre": "EMOTIONAL HARDCORE TECHNO"
 		},
 		"id": 129,
 		"searchTerms": [],
@@ -1478,7 +1493,8 @@
 		"altTitles": [],
 		"artist": "Junk",
 		"data": {
-			"duration": 153.383
+			"duration": 153.383,
+			"flavorGenre": "Maiden House"
 		},
 		"id": 133,
 		"searchTerms": [],
@@ -1666,7 +1682,8 @@
 		"altTitles": [],
 		"artist": "Street",
 		"data": {
-			"duration": 119.143
+			"duration": 119.143,
+			"flavorGenre": "Drumstep"
 		},
 		"id": 150,
 		"searchTerms": [],
@@ -1846,7 +1863,8 @@
 		"altTitles": [],
 		"artist": "IOSYS TRAX",
 		"data": {
-			"duration": 161.111
+			"duration": 161.111,
+			"flavorGenre": "フューチャーレイヴブレイクス"
 		},
 		"id": 166,
 		"searchTerms": [],
@@ -1856,7 +1874,8 @@
 		"altTitles": [],
 		"artist": "削除 (Violin : Katali)",
 		"data": {
-			"duration": 149.848
+			"duration": 149.848,
+			"flavorGenre": "Life"
 		},
 		"id": 167,
 		"searchTerms": [
@@ -1969,7 +1988,8 @@
 		"altTitles": [],
 		"artist": "siromaru + cranky",
 		"data": {
-			"duration": 151.875
+			"duration": 151.875,
+			"flavorGenre": "HARMONIC SCHRANZ"
 		},
 		"id": 177,
 		"searchTerms": [],
@@ -2116,7 +2136,8 @@
 		"altTitles": [],
 		"artist": "Laur",
 		"data": {
-			"duration": 159.633
+			"duration": 159.633,
+			"flavorGenre": "Classical Hardcore"
 		},
 		"id": 191,
 		"searchTerms": [],
@@ -2139,7 +2160,8 @@
 		"altTitles": [],
 		"artist": "Project Grimoire",
 		"data": {
-			"duration": 149.538
+			"duration": 149.538,
+			"flavorGenre": "mythology"
 		},
 		"id": 193,
 		"searchTerms": [],
@@ -2149,7 +2171,8 @@
 		"altTitles": [],
 		"artist": "穴山大輔 VS 光吉猛修 VS Kai",
 		"data": {
-			"duration": 166.158
+			"duration": 166.158,
+			"flavorGenre": "Neuro Opera"
 		},
 		"id": 194,
 		"searchTerms": [
@@ -2403,7 +2426,8 @@
 		"altTitles": [],
 		"artist": "曲：本多友紀（Arte Refact）／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
-			"duration": 159.783
+			"duration": 159.783,
+			"flavorGenre": "OTAKU HAPPYCORE"
 		},
 		"id": 216,
 		"searchTerms": [
@@ -2425,7 +2449,8 @@
 		"altTitles": [],
 		"artist": "owl＊tree",
 		"data": {
-			"duration": 158.308
+			"duration": 158.308,
+			"flavorGenre": "owl＊samba"
 		},
 		"id": 218,
 		"searchTerms": [],
@@ -2447,7 +2472,8 @@
 		"altTitles": [],
 		"artist": "sky_delta",
 		"data": {
-			"duration": 145.946
+			"duration": 145.946,
+			"flavorGenre": "Lucid Hardcore"
 		},
 		"id": 220,
 		"searchTerms": [],
@@ -2620,7 +2646,8 @@
 		"altTitles": [],
 		"artist": "曲：山本恭平（Arte Refact）／歌：FIREシューターズ",
 		"data": {
-			"duration": 150.216
+			"duration": 150.216,
+			"flavorGenre": "High Touch! SKA-ROCK"
 		},
 		"id": 235,
 		"searchTerms": [
@@ -2632,7 +2659,8 @@
 		"altTitles": [],
 		"artist": "山本真央樹",
 		"data": {
-			"duration": 156
+			"duration": 156,
+			"flavorGenre": "Progressive Fusion"
 		},
 		"id": 236,
 		"searchTerms": [],
@@ -2676,7 +2704,8 @@
 		"altTitles": [],
 		"artist": "ゆうゆ / 篠螺悠那",
 		"data": {
-			"duration": 136.025
+			"duration": 136.025,
+			"flavorGenre": "Euro Rave"
 		},
 		"id": 240,
 		"searchTerms": [],
@@ -2836,7 +2865,8 @@
 		"altTitles": [],
 		"artist": "orangentle",
 		"data": {
-			"duration": 126.667
+			"duration": 126.667,
+			"flavorGenre": "Dissociative Identity Disorder"
 		},
 		"id": 254,
 		"searchTerms": [],
@@ -3102,7 +3132,8 @@
 		"altTitles": [],
 		"artist": "Yooh",
 		"data": {
-			"duration": 126.487
+			"duration": 126.487,
+			"flavorGenre": "Amusement hardcore"
 		},
 		"id": 278,
 		"searchTerms": [
@@ -3378,7 +3409,8 @@
 		"altTitles": [],
 		"artist": "Sound Artz",
 		"data": {
-			"duration": 151.409
+			"duration": 151.409,
+			"flavorGenre": "Hands Up"
 		},
 		"id": 303,
 		"searchTerms": [],
@@ -3388,7 +3420,8 @@
 		"altTitles": [],
 		"artist": "Lite Show Magic",
 		"data": {
-			"duration": 128.182
+			"duration": 128.182,
+			"flavorGenre": "220"
 		},
 		"id": 304,
 		"searchTerms": [],
@@ -3446,7 +3479,8 @@
 		"altTitles": [],
 		"artist": "Mastermind(xi+nora2r)",
 		"data": {
-			"duration": 140.938
+			"duration": 140.938,
+			"flavorGenre": "Breakthrough"
 		},
 		"id": 309,
 		"searchTerms": [],
@@ -3801,7 +3835,8 @@
 		"altTitles": [],
 		"artist": "曲：原田篤（Arte Refact）／歌：ASTERISM [星咲 あかり(CV：赤尾 ひかる)、藤沢 柚子(CV：久保田 梨沙)、三角 葵(CV：春野 杏)]",
 		"data": {
-			"duration": 165.472
+			"duration": 165.472,
+			"flavorGenre": "KizunaEmotions"
 		},
 		"id": 341,
 		"searchTerms": [
@@ -3813,7 +3848,8 @@
 		"altTitles": [],
 		"artist": "MisoilePunch♪",
 		"data": {
-			"duration": 150.856
+			"duration": 150.856,
+			"flavorGenre": "Starry Chip Rock"
 		},
 		"id": 342,
 		"searchTerms": [],
@@ -3835,7 +3871,8 @@
 		"altTitles": [],
 		"artist": "SHIKI",
 		"data": {
-			"duration": 152.863
+			"duration": 152.863,
+			"flavorGenre": "TRANCE CORE"
 		},
 		"id": 344,
 		"searchTerms": [],
@@ -3845,7 +3882,8 @@
 		"altTitles": [],
 		"artist": "削除 feat. Nikki Simmons",
 		"data": {
-			"duration": 162
+			"duration": 162,
+			"flavorGenre": "BEAM"
 		},
 		"id": 345,
 		"searchTerms": [
@@ -3891,7 +3929,8 @@
 		"altTitles": [],
 		"artist": "Sound piercer feat.DAZBEE",
 		"data": {
-			"duration": 172.941
+			"duration": 172.941,
+			"flavorGenre": "FINALE"
 		},
 		"id": 349,
 		"searchTerms": [
@@ -3916,7 +3955,8 @@
 		"altTitles": [],
 		"artist": "Cres.",
 		"data": {
-			"duration": 134
+			"duration": 134,
+			"flavorGenre": "ReQuiEm tRanCe"
 		},
 		"id": 351,
 		"searchTerms": [],
@@ -4049,7 +4089,8 @@
 		"altTitles": [],
 		"artist": "黒沢ダイスケ VS 穴山大輔",
 		"data": {
-			"duration": 173.793
+			"duration": 173.793,
+			"flavorGenre": "Wダイスケ"
 		},
 		"id": 363,
 		"searchTerms": [
@@ -4087,7 +4128,8 @@
 		"altTitles": [],
 		"artist": "onoken",
 		"data": {
-			"duration": 171.667
+			"duration": 171.667,
+			"flavorGenre": "drum'n bass"
 		},
 		"id": 366,
 		"searchTerms": [],
@@ -4330,7 +4372,8 @@
 		"altTitles": [],
 		"artist": "s-don",
 		"data": {
-			"duration": 143.226
+			"duration": 143.226,
+			"flavorGenre": "Tomahawk"
 		},
 		"id": 388,
 		"searchTerms": [],
@@ -4340,7 +4383,8 @@
 		"altTitles": [],
 		"artist": "xi",
 		"data": {
-			"duration": 137.5
+			"duration": 137.5,
+			"flavorGenre": "HAPPY ART"
 		},
 		"id": 389,
 		"searchTerms": [],
@@ -4465,7 +4509,8 @@
 		"altTitles": [],
 		"artist": "有形ランペイジ",
 		"data": {
-			"duration": 158.13
+			"duration": 158.13,
+			"flavorGenre": "progressive"
 		},
 		"id": 400,
 		"searchTerms": [],
@@ -4571,7 +4616,8 @@
 		"altTitles": [],
 		"artist": "曲：篠崎あやと、橘亮祐／歌：結城 莉玖(CV：朝日奈 丸佳)、東雲 つむぎ(CV：和泉 風花)",
 		"data": {
-			"duration": 145
+			"duration": 145,
+			"flavorGenre": "探偵ポップス"
 		},
 		"id": 409,
 		"searchTerms": [
@@ -4715,7 +4761,8 @@
 		"altTitles": [],
 		"artist": "くっちー (DARKSIDE APPROACH)",
 		"data": {
-			"duration": 152.67
+			"duration": 152.67,
+			"flavorGenre": "DANCE SPEED"
 		},
 		"id": 422,
 		"searchTerms": [
@@ -4844,7 +4891,8 @@
 		"altTitles": [],
 		"artist": "kanone",
 		"data": {
-			"duration": 154.5
+			"duration": 154.5,
+			"flavorGenre": "Hi-EnergeTech Trance"
 		},
 		"id": 433,
 		"searchTerms": [],
@@ -4854,7 +4902,8 @@
 		"altTitles": [],
 		"artist": "黒魔",
 		"data": {
-			"duration": 161.018
+			"duration": 161.018,
+			"flavorGenre": "いっぱい"
 		},
 		"id": 434,
 		"searchTerms": [
@@ -5154,7 +5203,8 @@
 		"altTitles": [],
 		"artist": "カラフル・サウンズ・ポート",
 		"data": {
-			"duration": 156.183
+			"duration": 156.183,
+			"flavorGenre": "TECHNO POP"
 		},
 		"id": 460,
 		"searchTerms": [
@@ -5298,7 +5348,8 @@
 		"altTitles": [],
 		"artist": "削除",
 		"data": {
-			"duration": 154.613
+			"duration": 154.613,
+			"flavorGenre": "fantasy"
 		},
 		"id": 473,
 		"searchTerms": [],
@@ -5362,7 +5413,8 @@
 		"altTitles": [],
 		"artist": "kamome sano",
 		"data": {
-			"duration": 151.368
+			"duration": 151.368,
+			"flavorGenre": "渋谷系"
 		},
 		"id": 479,
 		"searchTerms": [],
@@ -5543,7 +5595,8 @@
 		"altTitles": [],
 		"artist": "ああああ",
 		"data": {
-			"duration": 141.373
+			"duration": 141.373,
+			"flavorGenre": "game music"
 		},
 		"id": 496,
 		"searchTerms": [
@@ -5693,7 +5746,8 @@
 		"altTitles": [],
 		"artist": "Aoi",
 		"data": {
-			"duration": 124.56
+			"duration": 124.56,
+			"flavorGenre": "HYBRID CORE"
 		},
 		"id": 509,
 		"searchTerms": [],
@@ -5703,7 +5757,8 @@
 		"altTitles": [],
 		"artist": "光吉猛修の兄",
 		"data": {
-			"duration": 166.475
+			"duration": 166.475,
+			"flavorGenre": "crossover orchestra"
 		},
 		"id": 510,
 		"searchTerms": [],
@@ -5723,7 +5778,8 @@
 		"altTitles": [],
 		"artist": "pan",
 		"data": {
-			"duration": 150.308
+			"duration": 150.308,
+			"flavorGenre": "Sugar core"
 		},
 		"id": 512,
 		"searchTerms": [],
@@ -5826,7 +5882,8 @@
 		"altTitles": [],
 		"artist": "Junk feat.nananao",
 		"data": {
-			"duration": 112.751
+			"duration": 112.751,
+			"flavorGenre": "Maiden House"
 		},
 		"id": 521,
 		"searchTerms": [],
@@ -5848,7 +5905,8 @@
 		"altTitles": [],
 		"artist": "ガリガリさむし",
 		"data": {
-			"duration": 129.421
+			"duration": 129.421,
+			"flavorGenre": "Hard Musette"
 		},
 		"id": 523,
 		"searchTerms": [
@@ -5908,7 +5966,8 @@
 		"altTitles": [],
 		"artist": "BACO",
 		"data": {
-			"duration": 139.321
+			"duration": 139.321,
+			"flavorGenre": "LOVELY HIGHSPEED"
 		},
 		"id": 528,
 		"searchTerms": [],
@@ -6010,7 +6069,8 @@
 		"altTitles": [],
 		"artist": "Nankumo",
 		"data": {
-			"duration": 91.621
+			"duration": 91.621,
+			"flavorGenre": "HAPPY"
 		},
 		"id": 537,
 		"searchTerms": [],
@@ -6092,7 +6152,8 @@
 		"altTitles": [],
 		"artist": "曲：山本恭平（Arte Refact）／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
-			"duration": 150.415
+			"duration": 150.415,
+			"flavorGenre": "僕らが紡ぐRPG"
 		},
 		"id": 545,
 		"searchTerms": [
@@ -6259,7 +6320,8 @@
 		"altTitles": [],
 		"artist": "ルゼ",
 		"data": {
-			"duration": 157.517
+			"duration": 157.517,
+			"flavorGenre": "PANDORA FOX"
 		},
 		"id": 560,
 		"searchTerms": [
@@ -6316,7 +6378,8 @@
 		"altTitles": [],
 		"artist": "uma vs. モリモリあつし",
 		"data": {
-			"duration": 144.477
+			"duration": 144.477,
+			"flavorGenre": "HARD RENAISSANCE"
 		},
 		"id": 565,
 		"searchTerms": [
@@ -6389,7 +6452,8 @@
 		"altTitles": [],
 		"artist": "kanone",
 		"data": {
-			"duration": 138.227
+			"duration": 138.227,
+			"flavorGenre": "Hi-NRGTECH Trance"
 		},
 		"id": 571,
 		"searchTerms": [
@@ -6411,7 +6475,8 @@
 		"altTitles": [],
 		"artist": "BlackY",
 		"data": {
-			"duration": 148.159
+			"duration": 148.159,
+			"flavorGenre": "HARD RENAISSANCE"
 		},
 		"id": 573,
 		"searchTerms": [],
@@ -6421,7 +6486,8 @@
 		"altTitles": [],
 		"artist": "TJ.hangneil",
 		"data": {
-			"duration": 158.078
+			"duration": 158.078,
+			"flavorGenre": "progressive/regressive"
 		},
 		"id": 574,
 		"searchTerms": [],
@@ -6455,7 +6521,8 @@
 		"altTitles": [],
 		"artist": "テヅカ x Qayo",
 		"data": {
-			"duration": 142.49
+			"duration": 142.49,
+			"flavorGenre": "ORIENTAL CORE"
 		},
 		"id": 577,
 		"searchTerms": [
@@ -6515,7 +6582,8 @@
 		"altTitles": [],
 		"artist": "Tanchiky",
 		"data": {
-			"duration": 126.42
+			"duration": 126.42,
+			"flavorGenre": "POWER BASS"
 		},
 		"id": 582,
 		"searchTerms": [
@@ -6527,7 +6595,8 @@
 		"altTitles": [],
 		"artist": "Ino(chronoize) feat. 柳瀬マサキ",
 		"data": {
-			"duration": 150.068
+			"duration": 150.068,
+			"flavorGenre": "BOYS FutureCore POP"
 		},
 		"id": 583,
 		"searchTerms": [
@@ -6723,7 +6792,8 @@
 		"altTitles": [],
 		"artist": "曲：小高光太郎／歌：オンゲキシューターズ",
 		"data": {
-			"duration": 159.75
+			"duration": 159.75,
+			"flavorGenre": "ファンタスティックスペクタクル"
 		},
 		"id": 601,
 		"searchTerms": [],
@@ -6755,7 +6825,8 @@
 		"altTitles": [],
 		"artist": "OSTER project",
 		"data": {
-			"duration": 158.625
+			"duration": 158.625,
+			"flavorGenre": "CYBER PANIC FUSION"
 		},
 		"id": 604,
 		"searchTerms": [
@@ -6777,7 +6848,8 @@
 		"altTitles": [],
 		"artist": "Sound piercer “Espitz”",
 		"data": {
-			"duration": 156.835
+			"duration": 156.835,
+			"flavorGenre": "Progressive Fantasia"
 		},
 		"id": 606,
 		"searchTerms": [
@@ -6789,7 +6861,8 @@
 		"altTitles": [],
 		"artist": "AJURIKA",
 		"data": {
-			"duration": 153.6
+			"duration": 153.6,
+			"flavorGenre": "SUPER CORE"
 		},
 		"id": 607,
 		"searchTerms": [],
@@ -6873,7 +6946,8 @@
 		"altTitles": [],
 		"artist": "立秋 feat. ちょこ",
 		"data": {
-			"duration": 143.683
+			"duration": 143.683,
+			"flavorGenre": "社会"
 		},
 		"id": 614,
 		"searchTerms": [
@@ -6886,7 +6960,8 @@
 		"altTitles": [],
 		"artist": "EmoCosine",
 		"data": {
-			"duration": 142.125
+			"duration": 142.125,
+			"flavorGenre": "Mental Health"
 		},
 		"id": 615,
 		"searchTerms": [],
@@ -6896,7 +6971,8 @@
 		"altTitles": [],
 		"artist": "qfeileadh&レゾナンスもえこ",
 		"data": {
-			"duration": 153.615
+			"duration": 153.615,
+			"flavorGenre": "Requiem"
 		},
 		"id": 616,
 		"searchTerms": [
@@ -7003,7 +7079,8 @@
 		"altTitles": [],
 		"artist": "梅干茶漬け",
 		"data": {
-			"duration": 135.378
+			"duration": 135.378,
+			"flavorGenre": "picopico pop"
 		},
 		"id": 625,
 		"searchTerms": [],
@@ -7204,7 +7281,8 @@
 		"altTitles": [],
 		"artist": "ABE_YUTA",
 		"data": {
-			"duration": 124.038
+			"duration": 124.038,
+			"flavorGenre": "ENCORE"
 		},
 		"id": 642,
 		"searchTerms": [],
@@ -7236,7 +7314,8 @@
 		"altTitles": [],
 		"artist": "Aliesrite* (Ym1024 feat. lamie*)",
 		"data": {
-			"duration": 161.194
+			"duration": 161.194,
+			"flavorGenre": "J-Pop"
 		},
 		"id": 645,
 		"searchTerms": [],
@@ -7246,7 +7325,8 @@
 		"altTitles": [],
 		"artist": "mommy",
 		"data": {
-			"duration": 112.041
+			"duration": 112.041,
+			"flavorGenre": "PIANO SOLO"
 		},
 		"id": 646,
 		"searchTerms": [],
@@ -7266,7 +7346,8 @@
 		"altTitles": [],
 		"artist": "Cranky",
 		"data": {
-			"duration": 104.91
+			"duration": 104.91,
+			"flavorGenre": "Rave"
 		},
 		"id": 648,
 		"searchTerms": [],
@@ -7276,7 +7357,8 @@
 		"altTitles": [],
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：桜井 春菜(CV：近藤 玲奈)、柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
-			"duration": 132.152
+			"duration": 132.152,
+			"flavorGenre": "Fluffy Pop"
 		},
 		"id": 649,
 		"searchTerms": [],
@@ -7344,7 +7426,8 @@
 		"altTitles": [],
 		"artist": "Ninja Action Team",
 		"data": {
-			"duration": 150.316
+			"duration": 150.316,
+			"flavorGenre": "Happy Hardcore"
 		},
 		"id": 655,
 		"searchTerms": [],
@@ -7532,7 +7615,8 @@
 		"altTitles": [],
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：珠洲島 有栖(CV：長縄 まりあ)、皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
-			"duration": 148.727
+			"duration": 148.727,
+			"flavorGenre": "Kitchen Pop"
 		},
 		"id": 672,
 		"searchTerms": [],
@@ -7542,7 +7626,8 @@
 		"altTitles": [],
 		"artist": "とろまる",
 		"data": {
-			"duration": 145.833
+			"duration": 145.833,
+			"flavorGenre": "Electro Pop Jazz"
 		},
 		"id": 673,
 		"searchTerms": [],
@@ -7612,7 +7697,8 @@
 		"altTitles": [],
 		"artist": "igel",
 		"data": {
-			"duration": 143.5
+			"duration": 143.5,
+			"flavorGenre": "Bibliophilia"
 		},
 		"id": 679,
 		"searchTerms": [
@@ -7624,7 +7710,8 @@
 		"altTitles": [],
 		"artist": "削除",
 		"data": {
-			"duration": 136.138
+			"duration": 136.138,
+			"flavorGenre": "Magical Panic Adventure"
 		},
 		"id": 680,
 		"searchTerms": [],
@@ -7668,7 +7755,8 @@
 		"altTitles": [],
 		"artist": "sasakure.UK",
 		"data": {
-			"duration": 173.836
+			"duration": 173.836,
+			"flavorGenre": "WORLDTRONICA"
 		},
 		"id": 684,
 		"searchTerms": [
@@ -7680,7 +7768,8 @@
 		"altTitles": [],
 		"artist": "naotyu-",
 		"data": {
-			"duration": 128.129
+			"duration": 128.129,
+			"flavorGenre": "Progressive breaks"
 		},
 		"id": 685,
 		"searchTerms": [],
@@ -7690,7 +7779,8 @@
 		"altTitles": [],
 		"artist": "SHIKI",
 		"data": {
-			"duration": 126.316
+			"duration": 126.316,
+			"flavorGenre": "HARD RENAISSANCE"
 		},
 		"id": 686,
 		"searchTerms": [],
@@ -7828,7 +7918,8 @@
 		"altTitles": [],
 		"artist": "xi",
 		"data": {
-			"duration": 146.881
+			"duration": 146.881,
+			"flavorGenre": "HAPPY HARDCORE"
 		},
 		"id": 698,
 		"searchTerms": [],
@@ -7858,7 +7949,8 @@
 		"altTitles": [],
 		"artist": "Palme",
 		"data": {
-			"duration": 158.507
+			"duration": 158.507,
+			"flavorGenre": "80's Pop Fusion"
 		},
 		"id": 701,
 		"searchTerms": [],
@@ -7868,7 +7960,8 @@
 		"altTitles": [],
 		"artist": "Srav3R",
 		"data": {
-			"duration": 146.211
+			"duration": 146.211,
+			"flavorGenre": "Multicolored Rave"
 		},
 		"id": 702,
 		"searchTerms": [],
@@ -7878,7 +7971,8 @@
 		"altTitles": [],
 		"artist": "Massive New Krew",
 		"data": {
-			"duration": 135.871
+			"duration": 135.871,
+			"flavorGenre": "HARDSTYLE"
 		},
 		"id": 703,
 		"searchTerms": [],
@@ -7888,7 +7982,8 @@
 		"altTitles": [],
 		"artist": "かめりあ",
 		"data": {
-			"duration": 146.333
+			"duration": 146.333,
+			"flavorGenre": "Our Vague Nostalgia for Flash Animations"
 		},
 		"id": 704,
 		"searchTerms": [],
@@ -7980,7 +8075,8 @@
 		"altTitles": [],
 		"artist": "曲：本多友紀（Arte Refact）／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
-			"duration": 149.077
+			"duration": 149.077,
+			"flavorGenre": "エレクトロスウィング・トラップ&リディム"
 		},
 		"id": 712,
 		"searchTerms": [],
@@ -8022,7 +8118,8 @@
 		"altTitles": [],
 		"artist": "曲：山本恭平（Arte Refact）／歌：桜井 春菜(CV：近藤 玲奈)、早乙女 彩華(CV：中島 唯)、井之原 小星(CV：ももの はるな)、柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
-			"duration": 150.6
+			"duration": 150.6,
+			"flavorGenre": "女子会ディスコ"
 		},
 		"id": 716,
 		"searchTerms": [],
@@ -8032,7 +8129,8 @@
 		"altTitles": [],
 		"artist": "pan",
 		"data": {
-			"duration": 156.667
+			"duration": 156.667,
+			"flavorGenre": "Girl's House"
 		},
 		"id": 717,
 		"searchTerms": [],
@@ -8054,7 +8152,8 @@
 		"altTitles": [],
 		"artist": "庭師",
 		"data": {
-			"duration": 162.623
+			"duration": 162.623,
+			"flavorGenre": "Hybrid SpeedSamba"
 		},
 		"id": 719,
 		"searchTerms": [
@@ -8066,7 +8165,8 @@
 		"altTitles": [],
 		"artist": "xi vs かねこちはる",
 		"data": {
-			"duration": 152.264
+			"duration": 152.264,
+			"flavorGenre": "TITANOMAKHIA"
 		},
 		"id": 720,
 		"searchTerms": [
@@ -8387,7 +8487,8 @@
 		"altTitles": [],
 		"artist": "MisoilePunch♪",
 		"data": {
-			"duration": 158.612
+			"duration": 158.612,
+			"flavorGenre": "Everlasting Blue"
 		},
 		"id": 748,
 		"searchTerms": [],
@@ -8434,7 +8535,8 @@
 		"altTitles": [],
 		"artist": "nmk feat.橘花音",
 		"data": {
-			"duration": 121.011
+			"duration": 121.011,
+			"flavorGenre": "EUROBEAT"
 		},
 		"id": 752,
 		"searchTerms": [],
@@ -8444,7 +8546,8 @@
 		"altTitles": [],
 		"artist": "wa. vs ETIA.",
 		"data": {
-			"duration": 115.625
+			"duration": 115.625,
+			"flavorGenre": "MULTIVERSE"
 		},
 		"id": 753,
 		"searchTerms": [],
@@ -8488,7 +8591,8 @@
 		"altTitles": [],
 		"artist": "ゴリライザー制作委員会",
 		"data": {
-			"duration": 107.391
+			"duration": 107.391,
+			"flavorGenre": "特撮"
 		},
 		"id": 757,
 		"searchTerms": [
@@ -8641,7 +8745,8 @@
 		"altTitles": [],
 		"artist": "LeaF",
 		"data": {
-			"duration": 149.714
+			"duration": 149.714,
+			"flavorGenre": "KYRIE"
 		},
 		"id": 770,
 		"searchTerms": [],
@@ -8661,7 +8766,8 @@
 		"altTitles": [],
 		"artist": "曲：ANCHOR／歌：皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
-			"duration": 157.895
+			"duration": 157.895,
+			"flavorGenre": "大宇宙エモーショナルエレクトロロック"
 		},
 		"id": 773,
 		"searchTerms": [],
@@ -8705,7 +8811,8 @@
 		"altTitles": [],
 		"artist": "Feryquitous",
 		"data": {
-			"duration": 135.079
+			"duration": 135.079,
+			"flavorGenre": "Ai"
 		},
 		"id": 777,
 		"searchTerms": [],
@@ -8728,7 +8835,8 @@
 		"altTitles": [],
 		"artist": "kanone vs. BlackY",
 		"data": {
-			"duration": 164.634
+			"duration": 164.634,
+			"flavorGenre": "ハイテックコア"
 		},
 		"id": 779,
 		"searchTerms": [],
@@ -8932,7 +9040,8 @@
 		"altTitles": [],
 		"artist": "Lime",
 		"data": {
-			"duration": 137.974
+			"duration": 137.974,
+			"flavorGenre": "Dramatical"
 		},
 		"id": 797,
 		"searchTerms": [],
@@ -8952,7 +9061,8 @@
 		"altTitles": [],
 		"artist": "t+pazolite",
 		"data": {
-			"duration": 146.233
+			"duration": 146.233,
+			"flavorGenre": "rain music"
 		},
 		"id": 799,
 		"searchTerms": [
@@ -8986,7 +9096,8 @@
 		"altTitles": [],
 		"artist": "Junk",
 		"data": {
-			"duration": 168.982
+			"duration": 168.982,
+			"flavorGenre": "Maiden House"
 		},
 		"id": 802,
 		"searchTerms": [
@@ -8998,7 +9109,8 @@
 		"altTitles": [],
 		"artist": "大国奏音",
 		"data": {
-			"duration": 156.818
+			"duration": 156.818,
+			"flavorGenre": "BRIGHT"
 		},
 		"id": 803,
 		"searchTerms": [
@@ -9010,7 +9122,8 @@
 		"altTitles": [],
 		"artist": "細江慎治",
 		"data": {
-			"duration": 138.546
+			"duration": 138.546,
+			"flavorGenre": "BULLET HELL GABBA"
 		},
 		"id": 804,
 		"searchTerms": [
@@ -9024,7 +9137,8 @@
 		"altTitles": [],
 		"artist": "水野健治 VS 穴山大輔",
 		"data": {
-			"duration": 172.5
+			"duration": 172.5,
+			"flavorGenre": "SYMPHONIC HARD PSY"
 		},
 		"id": 805,
 		"searchTerms": [
@@ -9041,7 +9155,8 @@
 		"altTitles": [],
 		"artist": "曲：田中秀和／歌：オンゲキシューターズ",
 		"data": {
-			"duration": 220.779
+			"duration": 220.779,
+			"flavorGenre": "MEMORY"
 		},
 		"id": 806,
 		"searchTerms": [],
@@ -9067,7 +9182,8 @@
 		"altTitles": [],
 		"artist": "ああああ vs ぺのれり",
 		"data": {
-			"duration": 173.295
+			"duration": 173.295,
+			"flavorGenre": "ChipOrchestra"
 		},
 		"id": 808,
 		"searchTerms": [
@@ -9079,7 +9195,8 @@
 		"altTitles": [],
 		"artist": "SEGA SOUND STAFF arranged by Kanon Oguni",
 		"data": {
-			"duration": 173.647
+			"duration": 173.647,
+			"flavorGenre": "SEE YOU NEXT TIME"
 		},
 		"id": 809,
 		"searchTerms": [],
@@ -9935,7 +10052,8 @@
 		"altTitles": [],
 		"artist": "カタオカツグミ",
 		"data": {
-			"duration": 163.927
+			"duration": 163.927,
+			"flavorGenre": "叙情派エレクトロフュージョン"
 		},
 		"id": 883,
 		"searchTerms": [
@@ -10071,7 +10189,8 @@
 		"altTitles": [],
 		"artist": "litmus*",
 		"data": {
-			"duration": 143.437
+			"duration": 143.437,
+			"flavorGenre": "Electro House"
 		},
 		"id": 895,
 		"searchTerms": [],
@@ -10121,7 +10240,8 @@
 		"altTitles": [],
 		"artist": "曲：塩野 海／歌：星咲 あかり(CV：赤尾 ひかる)、式宮 舞菜(CV：牧野 天音)",
 		"data": {
-			"duration": 167.294
+			"duration": 167.294,
+			"flavorGenre": "ズッ友POP"
 		},
 		"id": 900,
 		"searchTerms": [
@@ -10307,7 +10427,8 @@
 		"altTitles": [],
 		"artist": "あず♪",
 		"data": {
-			"duration": 157.636
+			"duration": 157.636,
+			"flavorGenre": "隕石MUSIC"
 		},
 		"id": 916,
 		"searchTerms": [],
@@ -10409,7 +10530,8 @@
 		"altTitles": [],
 		"artist": "Tsukasa(Arte Refact)",
 		"data": {
-			"duration": 83.333
+			"duration": 83.333,
+			"flavorGenre": "Drum'n'Bass"
 		},
 		"id": 925,
 		"searchTerms": [],
@@ -10451,7 +10573,8 @@
 		"altTitles": [],
 		"artist": "わかどり",
 		"data": {
-			"duration": 130.986
+			"duration": 130.986,
+			"flavorGenre": "Jazz House"
 		},
 		"id": 929,
 		"searchTerms": [],
@@ -10461,7 +10584,8 @@
 		"altTitles": [],
 		"artist": "曲：Kijibato(Dream Monster)／歌：逢坂 茜(CV：大空 直美)、高瀬 梨緒(CV：久保 ユリカ)、柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
-			"duration": 148.937
+			"duration": 148.937,
+			"flavorGenre": "Spooky Core"
 		},
 		"id": 930,
 		"searchTerms": [],
@@ -10595,7 +10719,8 @@
 		"altTitles": [],
 		"artist": "曲：下野 隼／歌：皇城 セツナ(CV：八巻 アンナ)、式宮 碧音(CV：髙橋 ミナミ)",
 		"data": {
-			"duration": 166.568
+			"duration": 166.568,
+			"flavorGenre": "ズッ友ROCK"
 		},
 		"id": 942,
 		"searchTerms": [],
@@ -10698,7 +10823,8 @@
 		"altTitles": [],
 		"artist": "Reku Mochizuki",
 		"data": {
-			"duration": 120.811
+			"duration": 120.811,
+			"flavorGenre": "HARD WALTZ"
 		},
 		"id": 951,
 		"searchTerms": [],
@@ -10803,7 +10929,8 @@
 		"altTitles": [],
 		"artist": "Getty vs. DJ DiA",
 		"data": {
-			"duration": 116.211
+			"duration": 116.211,
+			"flavorGenre": "Pumpcore"
 		},
 		"id": 960,
 		"searchTerms": [],
@@ -10825,7 +10952,8 @@
 		"altTitles": [],
 		"artist": "曲：Kijibato／歌：星咲 あかり(CV：赤尾 ひかる)、珠洲島 有栖(CV：長縄 まりあ)、日向 千夏(CV：岡咲 美保)、皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
-			"duration": 149.511
+			"duration": 149.511,
+			"flavorGenre": "Progressive Drum&Bass"
 		},
 		"id": 962,
 		"searchTerms": [],
@@ -10867,7 +10995,8 @@
 		"altTitles": [],
 		"artist": "Yuta Imai",
 		"data": {
-			"duration": 170.609
+			"duration": 170.609,
+			"flavorGenre": "WALTZ THE HARDEST"
 		},
 		"id": 966,
 		"searchTerms": [],
@@ -11184,7 +11313,8 @@
 		"altTitles": [],
 		"artist": "カラフル・サウンズ・ポート",
 		"data": {
-			"duration": 146.62
+			"duration": 146.62,
+			"flavorGenre": "classical crossover pop"
 		},
 		"id": 993,
 		"searchTerms": [
@@ -11508,7 +11638,8 @@
 		"altTitles": [],
 		"artist": "paraoka",
 		"data": {
-			"duration": 123.614
+			"duration": 123.614,
+			"flavorGenre": "Progressive"
 		},
 		"id": 1021,
 		"searchTerms": [],
@@ -11605,7 +11736,8 @@
 		"altTitles": [],
 		"artist": "Acotto",
 		"data": {
-			"duration": 136.235
+			"duration": 136.235,
+			"flavorGenre": "Psystyle Concertante"
 		},
 		"id": 1030,
 		"searchTerms": [],
@@ -11798,7 +11930,8 @@
 		"altTitles": [],
 		"artist": "MYUKKE.",
 		"data": {
-			"duration": 135.2
+			"duration": 135.2,
+			"flavorGenre": "HYBRID DANCE"
 		},
 		"id": 1047,
 		"searchTerms": [],
@@ -11830,7 +11963,8 @@
 		"altTitles": [],
 		"artist": "TAK x Sobrem",
 		"data": {
-			"duration": 155.551
+			"duration": 155.551,
+			"flavorGenre": "Descent and Bass"
 		},
 		"id": 1050,
 		"searchTerms": [],
@@ -12083,7 +12217,8 @@
 		"altTitles": [],
 		"artist": "Lime",
 		"data": {
-			"duration": 147.225
+			"duration": 147.225,
+			"flavorGenre": "Dramatical"
 		},
 		"id": 1073,
 		"searchTerms": [],
@@ -12093,7 +12228,8 @@
 		"altTitles": [],
 		"artist": "ああああ",
 		"data": {
-			"duration": 126.612
+			"duration": 126.612,
+			"flavorGenre": "Ω"
 		},
 		"id": 1074,
 		"searchTerms": [
@@ -12279,7 +12415,8 @@
 		"altTitles": [],
 		"artist": "brz1128",
 		"data": {
-			"duration": 128.242
+			"duration": 128.242,
+			"flavorGenre": "BURNING RAVE"
 		},
 		"id": 1090,
 		"searchTerms": [
@@ -12304,7 +12441,8 @@
 		"altTitles": [],
 		"artist": "Aoi",
 		"data": {
-			"duration": 141.943
+			"duration": 141.943,
+			"flavorGenre": "Hybrid Hydro Core"
 		},
 		"id": 1092,
 		"searchTerms": [],
@@ -12414,7 +12552,8 @@
 		"altTitles": [],
 		"artist": "Blacklolita",
 		"data": {
-			"duration": 129.128
+			"duration": 129.128,
+			"flavorGenre": "Neo Digital Future"
 		},
 		"id": 1102,
 		"searchTerms": [
@@ -12754,7 +12893,9 @@
 	{
 		"altTitles": [],
 		"artist": "Yooh / Kobaryo",
-		"data": {},
+		"data": {
+			"flavorGenre": "Chaotic Speedcore"
+		},
 		"id": 1133,
 		"searchTerms": [
 			"GBMGR"
@@ -12764,7 +12905,9 @@
 	{
 		"altTitles": [],
 		"artist": "Alicemetix ex-ZAQUVA",
-		"data": {},
+		"data": {
+			"flavorGenre": "VARIABLE CORE"
+		},
 		"id": 1134,
 		"searchTerms": [],
 		"title": "Xingularity"
@@ -12931,7 +13074,9 @@
 	{
 		"altTitles": [],
 		"artist": "魔界都市ニイガタ（黄泉路テヂーモ×dawn-system×かゆき）",
-		"data": {},
+		"data": {
+			"flavorGenre": "tatamiser"
+		},
 		"id": 1152,
 		"searchTerms": [
 			"Ukiyoe Yokochou"
@@ -13068,9 +13213,7 @@
 	{
 		"altTitles": [],
 		"artist": "KiRaRe「Re:ステージ！プリズムステップ」",
-		"data": {
-			"genre": "POPS＆ANIME"
-		},
+		"data": {},
 		"id": 1166,
 		"searchTerms": [],
 		"title": "367Days"
@@ -13078,9 +13221,7 @@
 	{
 		"altTitles": [],
 		"artist": "ステラマリス「Re:ステージ！プリズムステップ」",
-		"data": {
-			"genre": "POPS＆ANIME"
-		},
+		"data": {},
 		"id": 1167,
 		"searchTerms": [],
 		"title": "Brilliant Wings"
@@ -13088,9 +13229,7 @@
 	{
 		"altTitles": [],
 		"artist": "トロワアンジュ「Re:ステージ！プリズムステップ」",
-		"data": {
-			"genre": "POPS＆ANIME"
-		},
+		"data": {},
 		"id": 1168,
 		"searchTerms": [],
 		"title": "Abyss to Eden"
@@ -13098,9 +13237,7 @@
 	{
 		"altTitles": [],
 		"artist": "曲：下野 隼／歌：結城 莉玖(CV：朝日奈 丸佳)、坂東 美久龍(CV：山田 奈都美)",
-		"data": {
-			"genre": "オンゲキ"
-		},
+		"data": {},
 		"id": 1169,
 		"searchTerms": [],
 		"title": "No Rock,No Life！"
