@@ -17,7 +17,7 @@ const main = () => {
 	const missingIDs: Map<OngekiSong, number> = new Map();
 
 	for (const song of songs) {
-		if (song.data.duration === undefined) {
+		if (song.data.duration === null) {
 			missingDurations.push(song);
 		}
 		if (hasCJK(song.title) && song.searchTerms.length === 0) {

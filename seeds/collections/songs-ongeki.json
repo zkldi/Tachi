@@ -14022,6 +14022,7 @@
 		"altTitles": [],
 		"artist": "曲：TAG／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1129,
@@ -14034,6 +14035,7 @@
 		"altTitles": [],
 		"artist": "曲：RD-Sounds／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1130,
@@ -14044,6 +14046,7 @@
 		"altTitles": [],
 		"artist": "igel",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1131,
@@ -14056,6 +14059,7 @@
 		"altTitles": [],
 		"artist": "安井洋介",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1132,
@@ -14066,6 +14070,7 @@
 		"altTitles": [],
 		"artist": "Yooh / Kobaryo",
 		"data": {
+			"duration": null,
 			"flavorGenre": "Chaotic Speedcore",
 			"genre": "オンゲキ"
 		},
@@ -14079,6 +14084,7 @@
 		"altTitles": [],
 		"artist": "Alicemetix ex-ZAQUVA",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1134,
@@ -14089,6 +14095,7 @@
 		"altTitles": [],
 		"artist": "rintaro soma",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1135,
@@ -14099,6 +14106,7 @@
 		"altTitles": [],
 		"artist": "蓮ノ空女学院スクールアイドルクラブ",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1136,
@@ -14109,6 +14117,7 @@
 		"altTitles": [],
 		"artist": "蓮ノ空女学院スクールアイドルクラブ",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1137,
@@ -14121,6 +14130,7 @@
 		"altTitles": [],
 		"artist": "すりぃ×相沢",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1138,
@@ -14133,6 +14143,7 @@
 		"altTitles": [],
 		"artist": "Shu feat. 七海うらら",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1139,
@@ -14145,6 +14156,7 @@
 		"altTitles": [],
 		"artist": "DIVELA feat.いゔどっと",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1140,
@@ -14157,6 +14169,7 @@
 		"altTitles": [],
 		"artist": "40mP × sasakure.UK",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1141,
@@ -14169,6 +14182,7 @@
 		"altTitles": [],
 		"artist": "じん",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1142,
@@ -14179,6 +14193,7 @@
 		"altTitles": [],
 		"artist": "雨良 Amala",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1143,
@@ -14192,6 +14207,7 @@
 		"altTitles": [],
 		"artist": "Zekk",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1144,
@@ -14202,6 +14218,7 @@
 		"altTitles": [],
 		"artist": "tn-shi",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1145,
@@ -14212,6 +14229,7 @@
 		"altTitles": [],
 		"artist": "taichi hiyama",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1146,
@@ -14224,6 +14242,7 @@
 		"altTitles": [],
 		"artist": "ぼっちぼろまる",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1147,
@@ -14236,6 +14255,7 @@
 		"altTitles": [],
 		"artist": "Palette Project（暁月クララ、七海ロナ、常磐カナメ、藤宮コトハ、江波キョウカ、鬼多見アユム、香鳴ハノン）",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1148,
@@ -14248,6 +14268,7 @@
 		"altTitles": [],
 		"artist": "RouteHeart（七海ロナ・藤宮コトハ）",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1149,
@@ -14260,6 +14281,7 @@
 		"altTitles": [],
 		"artist": "Sputrip（暁月クララ・香鳴ハノン・常磐カナメ）",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1150,
@@ -14272,6 +14294,7 @@
 		"altTitles": [],
 		"artist": "REGALILIA（江波キョウカ・鬼多見アユム）",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1151,
@@ -14282,6 +14305,7 @@
 		"altTitles": [],
 		"artist": "魔界都市ニイガタ（黄泉路テヂーモ×dawn-system×かゆき）",
 		"data": {
+			"duration": null,
 			"flavorGenre": "tatamiser",
 			"genre": "VARIETY"
 		},
@@ -14295,6 +14319,7 @@
 		"altTitles": [],
 		"artist": "打打だいず FEAT. 月乃",
 		"data": {
+			"duration": null,
 			"genre": "VARIETY"
 		},
 		"id": 1153,
@@ -14305,6 +14330,7 @@
 		"altTitles": [],
 		"artist": "いるかアイス × Tanchiky feat. 初音ミク",
 		"data": {
+			"duration": null,
 			"genre": "VARIETY"
 		},
 		"id": 1154,
@@ -14317,6 +14343,7 @@
 		"altTitles": [],
 		"artist": "かいりきベア",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1155,
@@ -14329,6 +14356,7 @@
 		"altTitles": [],
 		"artist": "cosMo＠暴走P",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1156,
@@ -14341,6 +14369,7 @@
 		"altTitles": [],
 		"artist": "雄之助",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1157,
@@ -14353,6 +14382,7 @@
 		"altTitles": [],
 		"artist": "Ponchi♪ feat.初音ミク",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1158,
@@ -14365,6 +14395,7 @@
 		"altTitles": [],
 		"artist": "かめりあ",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1159,
@@ -14377,6 +14408,7 @@
 		"altTitles": [],
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat.藤咲かりん",
 		"data": {
+			"duration": null,
 			"genre": "東方Project"
 		},
 		"id": 1160,
@@ -14390,6 +14422,7 @@
 		"altTitles": [],
 		"artist": "少女フラクタル",
 		"data": {
+			"duration": null,
 			"genre": "東方Project"
 		},
 		"id": 1161,
@@ -14402,6 +14435,7 @@
 		"altTitles": [],
 		"artist": "きくお",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1162,
@@ -14414,6 +14448,7 @@
 		"altTitles": [],
 		"artist": "なきそ",
 		"data": {
+			"duration": null,
 			"genre": "niconico"
 		},
 		"id": 1163,
@@ -14426,6 +14461,7 @@
 		"altTitles": [],
 		"artist": "アオワイファイ feat.犀羅",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1164,
@@ -14438,6 +14474,7 @@
 		"altTitles": [],
 		"artist": "Cosmograph",
 		"data": {
+			"duration": null,
 			"genre": "チュウマイ"
 		},
 		"id": 1165,
@@ -14448,6 +14485,7 @@
 		"altTitles": [],
 		"artist": "KiRaRe「Re:ステージ！プリズムステップ」",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1166,
@@ -14458,6 +14496,7 @@
 		"altTitles": [],
 		"artist": "ステラマリス「Re:ステージ！プリズムステップ」",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1167,
@@ -14468,6 +14507,7 @@
 		"altTitles": [],
 		"artist": "トロワアンジュ「Re:ステージ！プリズムステップ」",
 		"data": {
+			"duration": null,
 			"genre": "POPS＆ANIME"
 		},
 		"id": 1168,
@@ -14478,6 +14518,7 @@
 		"altTitles": [],
 		"artist": "曲：下野 隼／歌：結城 莉玖(CV：朝日奈 丸佳)、坂東 美久龍(CV：山田 奈都美)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1169,
@@ -14488,6 +14529,7 @@
 		"altTitles": [],
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：三角 葵(CV：春野 杏)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1170,
@@ -14500,6 +14542,7 @@
 		"altTitles": [],
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1171,
@@ -14512,6 +14555,7 @@
 		"altTitles": [],
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
+			"duration": null,
 			"genre": "オンゲキ"
 		},
 		"id": 1172,
