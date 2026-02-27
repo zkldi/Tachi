@@ -7,16 +7,12 @@ export default function IIDXStyleSongChartInfoFormat({
 	chart,
 	game,
 }: {
-	song: SongDocument;
+	song: SongDocument<"iidx" | "popn" | "bms" | "pms" | "ongeki" | "chunithm" | "maimaidx">;
 	chart: ChartDocument | null;
 	game: Game;
 }) {
 	const genre =
-		"flavorGenre" in song.data
-			? song.data.flavorGenre
-			: "genre" in song.data
-			? song.data.genre
-			: "";
+		game === "ongeki" ? (song as SongDocument<"ongeki">).data.flavorGenre : song.data.genre;
 	return (
 		<>
 			<h4>{genre}</h4>
