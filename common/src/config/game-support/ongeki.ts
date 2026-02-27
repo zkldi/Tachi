@@ -20,7 +20,7 @@ export const ONGEKI_CONF = {
 			"ボーナストラック",
 		]),
 		duration: z.number().optional(),
-		flavorGenre: z.string().optional()
+		flavorGenre: z.string().optional(),
 	}),
 } as const satisfies INTERNAL_GAME_CONFIG;
 
