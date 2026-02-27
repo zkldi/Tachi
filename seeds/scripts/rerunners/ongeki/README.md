@@ -10,4 +10,5 @@
    1. Run `npx ts-node scrape-sdvx-in.ts`.
    2. Fix any missing entries manually in `seeds/collections/charts-ongeki.json` (refer to `songs-ongeki.json` for `songID`s).
 5. Manually add search terms in `songs-ongeki.json`, especially romanizations (optional)
-6. In the root project folder, run `just seeds test`.
+6. Run `npx ts-node sync-bonus-track-data.ts` if any bonus tracks are present.
+7. In the root project folder, run `just seeds test`.
