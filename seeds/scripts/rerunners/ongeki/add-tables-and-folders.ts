@@ -1,7 +1,6 @@
 import { Command } from "commander";
-import { ChartDocument, FolderDocument, GetGamePTConfig, TableDocument } from "tachi-common";
+import { FolderDocument, GetGamePTConfig } from "tachi-common";
 import { CreateFolderID, MutateCollection } from "../../util";
-import { FilterQuery } from "mongodb";
 
 const LEVELS = [
 	"0",
@@ -31,57 +30,49 @@ const LEVELS = [
 	"15+",
 ];
 const DIFFICULTIES = ["BASIC", "ADVANCED", "EXPERT", "MASTER", "LUNATIC", "Re:MASTER"];
-const GENRES = [
-	"POPS＆ANIME",
-	"niconico",
-	"東方Project",
-	"VARIETY",
-	"チュウマイ",
-	"オンゲキ",
-	"LUNATIC",
-];
 
-const COMMAND = new Command().requiredOption("-v, --version <version>").parse(process.argv);
-const OPTIONS = COMMAND.opts();
-const VERSION = OPTIONS.version;
-const VERSION_NAME = GetGamePTConfig("ongeki", "Single").versions[VERSION];
+const command = new Command().requiredOption("-v, --version <version>").parse(process.argv);
+const options = command.opts();
+const version = options.version;
 
-if (!VERSION_NAME) {
+const tachiVersions = GetGamePTConfig("ongeki", "Single").versions;
+const versionName = tachiVersions[version];
+
+if (!versionName) {
 	throw new Error(
-		`Invalid version ${VERSION}. Please update game config before adding tables and folders.`
+		`Invalid version of ${version}. Please update game config before adding tables and folders.`
 	);
 }
 
-const NEW_FOLDERS: FolderDocument[] = [];
-const LEVEL_FOLDER_IDS: string[] = [];
-const DIFFICULTY_FOLDER_IDS: string[] = [];
-const GENRE_FOLDER_IDS: string[] = [];
+const newFolders: FolderDocument[] = [];
+const levelFolderIDs: string[] = [];
+const difficultyFolderIDs: string[] = [];
 
 for (const level of LEVELS) {
 	const data = {
 		level,
-		versions: VERSION,
+		versions: version,
 		"data¬isBonusTrack": false,
 	};
 
 	const folderID = CreateFolderID(data, "ongeki", "Single");
 
-	LEVEL_FOLDER_IDS.push(folderID);
+	levelFolderIDs.push(folderID);
 
-	NEW_FOLDERS.push({
+	newFolders.push({
 		data,
 		folderID,
 		game: "ongeki",
 		inactive: false,
 		playtype: "Single",
 		searchTerms: [],
-		title: `Level ${level} (${VERSION_NAME})`,
+		title: `Level ${level} (${versionName})`,
 		type: "charts",
 	});
 }
 
 for (const difficulty of DIFFICULTIES) {
-	const data = { difficulty, versions: VERSION, "data¬isBonusTrack": false };
+	const data = { difficulty, versions: version, "data¬isBonusTrack": false };
 
 	if (difficulty === "LUNATIC") {
 		data["data¬isReMaster"] = false;
@@ -92,111 +83,45 @@ for (const difficulty of DIFFICULTIES) {
 
 	const folderID = CreateFolderID(data, "ongeki", "Single");
 
-	DIFFICULTY_FOLDER_IDS.push(folderID);
+	difficultyFolderIDs.push(folderID);
 
-	NEW_FOLDERS.push({
+	newFolders.push({
 		data,
 		folderID,
 		game: "ongeki",
 		inactive: false,
 		playtype: "Single",
 		searchTerms: [],
-		title: `${difficulty} (${VERSION_NAME})`,
+		title: `${difficulty} (${versionName})`,
 		type: "charts",
 	});
 }
 
-for (const genre of GENRES) {
-	if (genre === "ボーナストラック") {
-		continue;
-	}
-	const genreName = genre === "LUNATIC" ? "LUNATIC-only" : genre;
-	const data = {
-		versions: VERSION,
-		difficulty: { "~in": ["MASTER", "LUNATIC"] },
-		"data¬isBonusTrack": false,
-		"data¬genre": genre,
-	} as unknown as FilterQuery<ChartDocument>;
-	const folderID = CreateFolderID(data, "ongeki", "Single");
-
-	GENRE_FOLDER_IDS.push(folderID);
-
-	NEW_FOLDERS.push({
-		data,
-		folderID,
-		game: "ongeki",
-		inactive: false,
-		playtype: "Single",
-		searchTerms: [],
-		title: `${genreName} (${VERSION_NAME})`,
-		type: "charts",
-	});
-}
-
-MutateCollection("tables.json", (ts: TableDocument[]) => {
-	const tableIDLevels = `ongeki-Single-${VERSION}-levels`;
-	const tableIDDiffs = `ongeki-Single-${VERSION}-difficulties`;
-	const tableIDGenres = `ongeki-Single-${VERSION}-genres`;
-
-	if (ts.find((t) => t.tableID === tableIDLevels) === undefined) {
-		ts.push({
+MutateCollection("tables.json", (ts) => {
+	ts.push(
+		{
 			default: false,
-			description: `Levels for O.N.G.E.K.I. in ${VERSION_NAME}.`,
-			folders: LEVEL_FOLDER_IDS,
+			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
+			folders: levelFolderIDs,
 			game: "ongeki",
 			inactive: false,
 			playtype: "Single",
-			tableID: tableIDLevels,
-			title: `O.N.G.E.K.I. (${VERSION_NAME})`,
-		});
-		console.log(`Added ${tableIDLevels}`);
-	} else {
-		console.log(`Skipped ${tableIDLevels}`);
-	}
-
-	if (ts.find((t) => t.tableID === tableIDDiffs) === undefined) {
-		ts.push({
+			tableID: `ongeki-Single-${version}-levels`,
+			title: `O.N.G.E.K.I. (${versionName})`,
+		},
+		{
 			default: false,
-			description: `Difficulties for O.N.G.E.K.I. in ${VERSION_NAME}.`,
-			folders: DIFFICULTY_FOLDER_IDS,
+			description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
+			folders: difficultyFolderIDs,
 			game: "ongeki",
 			inactive: false,
 			playtype: "Single",
-			tableID: tableIDDiffs,
-			title: `O.N.G.E.K.I. (${VERSION_NAME}) (Difficulties)`,
-		});
-		console.log(`Added ${tableIDDiffs}`);
-	} else {
-		console.log(`Skipped ${tableIDDiffs}`);
-	}
-
-	if (ts.find((t) => t.tableID === tableIDGenres) === undefined) {
-		ts.push({
-			default: false,
-			description: `Genres for O.N.G.E.K.I. in ${VERSION_NAME}.`,
-			folders: GENRE_FOLDER_IDS,
-			game: "ongeki",
-			inactive: false,
-			playtype: "Single",
-			tableID: tableIDGenres,
-			title: `O.N.G.E.K.I. (${VERSION_NAME}) (Genres)`,
-		});
-		console.log(`Added ${tableIDGenres}`);
-	} else {
-		console.log(`Skipped ${tableIDGenres}`);
-	}
+			tableID: `ongeki-Single-${version}-difficulties`,
+			title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
+		}
+	);
 
 	return ts;
 });
 
-MutateCollection("folders.json", (folders: FolderDocument[]) => {
-	for (const newFolder of NEW_FOLDERS) {
-		if (folders.find((f) => f.folderID === newFolder.folderID) === undefined) {
-			folders.push(newFolder);
-			console.log(`Added ${newFolder.title}`);
-		} else {
-			console.log(`Skipped ${newFolder.title}`);
-		}
-	}
-	return folders;
-});
+MutateCollection("folders.json", (fs) => [...fs, ...newFolders]);
