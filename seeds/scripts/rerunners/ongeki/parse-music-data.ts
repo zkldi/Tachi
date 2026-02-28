@@ -155,7 +155,8 @@ const main = async () => {
 						displayVersion: ver as any,
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
-						isReMaster: inputSong.isReMaster,
+						isReMaster:
+							inputChart.difficulty === "LUNATIC" ? inputSong.isReMaster : undefined,
 						isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
 					},
 					difficulty: inputChart.difficulty,

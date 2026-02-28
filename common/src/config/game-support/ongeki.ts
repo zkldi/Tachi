@@ -225,7 +225,7 @@ export const ONGEKI_SINGLE_CONF = {
 			"オンゲキ Re:Fresh",
 		]),
 		isBonusTrack: z.boolean(),
-		isReMaster: z.boolean(),
+		isReMaster: z.boolean().optional(),
 		maxPlatScore: z.number().int().nonnegative(),
 		inGameID: z.number().int().nonnegative().nullable(),
 		chartViewURL: z.string().optional(),
