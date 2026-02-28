@@ -4249,9 +4249,7 @@
 			"genre": "POPS＆ANIME"
 		},
 		"id": 346,
-		"searchTerms": [
-			"NATSUKAGE"
-		],
+		"searchTerms": [],
 		"title": "NATSUKAGE-夏陰-"
 	},
 	{
@@ -12394,6 +12392,7 @@
 		"artist": "打打だいず vs. siromaru vs. Tanchiky",
 		"data": {
 			"duration": 148.429,
+			"flavorGenre": "Symphonic Hardcore",
 			"genre": "オンゲキ"
 		},
 		"id": 995,
@@ -12821,6 +12820,7 @@
 		"artist": "DÉ DÉ MOUSE",
 		"data": {
 			"duration": 152.111,
+			"flavorGenre": "Futuredisco",
 			"genre": "オンゲキ"
 		},
 		"id": 1029,
@@ -13269,6 +13269,7 @@
 		"artist": "ミツキヨ",
 		"data": {
 			"duration": 153.3,
+			"flavorGenre": "Electronics",
 			"genre": "オンゲキ"
 		},
 		"id": 1065,
@@ -14252,6 +14253,7 @@
 		"artist": "Zekk",
 		"data": {
 			"duration": null,
+			"flavorGenre": "MIXTURE",
 			"genre": "オンゲキ"
 		},
 		"id": 1144,
