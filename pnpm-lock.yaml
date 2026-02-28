@@ -463,8 +463,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
       fast-xml-parser:
-        specifier: ^4.2.5
-        version: 4.2.7
+        specifier: ^5.3.8
+        version: 5.3.8
       glob:
         specifier: ^7.2.0
         version: 7.2.3
@@ -6510,18 +6510,18 @@ packages:
     resolution: {integrity: sha512-CDYeykkle1LiA/uqQyNwYpFbyF6Axec6YapmpUP+/RHWIoR1zKjocdvNaTsxCxZzQ6v9MLXaSYm9Qq0thv0DHg==}
     hasBin: true
     dependencies:
-      strnum: 1.0.5
-    dev: false
-
-  /fast-xml-parser@4.2.7:
-    resolution: {integrity: sha512-J8r6BriSLO1uj2miOk1NW0YVm8AGOOu3Si2HQp/cSmo6EA4m3fcwu2WKjJ4RK9wMLBtg69y1kS8baDiQBR41Ig==}
-    hasBin: true
-    dependencies:
-      strnum: 1.0.5
+      strnum: 1.1.2
     dev: false
 
   /fast-xml-parser@5.3.4:
     resolution: {integrity: sha512-EFd6afGmXlCx8H8WTZHhAoDaWaGyuIBoZJ2mknrNxug+aZKjkp0a0dlars9Izl+jF+7Gu1/5f/2h68cQpe0IiA==}
+    hasBin: true
+    dependencies:
+      strnum: 2.1.2
+    dev: false
+
+  /fast-xml-parser@5.3.8:
+    resolution: {integrity: sha512-53jIF4N6u/pxvaL1eb/hEZts/cFLWZ92eCfLrNyCI0k38lettCG/Bs40W9pPwoPXyHQlKu2OUbQtiEIZK/J6Vw==}
     hasBin: true
     dependencies:
       strnum: 2.1.2
@@ -10964,8 +10964,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /strnum@1.0.5:
-    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
+  /strnum@1.1.2:
+    resolution: {integrity: sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==}
     dev: false
 
   /strnum@2.1.2:
