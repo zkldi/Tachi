@@ -339,7 +339,8 @@
 		"id": 27,
 		"searchTerms": [
 			"Hatsune Miku no Gekishou",
-			"The Intense Voice of Hatsune Miku"
+			"The Intense Voice of Hatsune Miku",
+			"The Singing Passion of Hatsune Miku"
 		],
 		"title": "初音ミクの激唱"
 	},
@@ -430,7 +431,8 @@
 		},
 		"id": 34,
 		"searchTerms": [
-			"Night of Knights"
+			"Night of Knights",
+			"Knight of Nights"
 		],
 		"title": "ナイト・オブ・ナイツ"
 	},
@@ -1861,7 +1863,8 @@
 		},
 		"id": 152,
 		"searchTerms": [
-			"Ikazuchi~Mitsuyoshi Takenobu Ichibu Nazo~"
+			"Ikazuchi~Mitsuyoshi Takenobu Ichibu Nazo~",
+			"April fools"
 		],
 		"title": "怒槌～光吉猛修一部謎～"
 	},
@@ -2986,7 +2989,8 @@
 		},
 		"id": 243,
 		"searchTerms": [
-			"Night of Knights (Cranky Remix)"
+			"Night of Knights (Cranky Remix)",
+			"Knight of Nights"
 		],
 		"title": "ナイト・オブ・ナイツ (Cranky Remix)"
 	},
@@ -3045,7 +3049,8 @@
 		},
 		"id": 248,
 		"searchTerms": [
-			"WV"
+			"WV",
+			"Pizza"
 		],
 		"title": "World Vanquisher"
 	},
@@ -4659,7 +4664,8 @@
 		},
 		"id": 379,
 		"searchTerms": [
-			"Night of Knights (xi Remix)"
+			"Night of Knights (xi Remix)",
+			"Knight of Nights"
 		],
 		"title": "ナイト・オブ・ナイツ (xi Remix)"
 	},
@@ -5054,7 +5060,8 @@
 		},
 		"id": 411,
 		"searchTerms": [
-			"Night of Knights (Camellia's \"Once Upon A Night\" Remix)"
+			"Night of Knights (Camellia's \"Once Upon A Night\" Remix)",
+			"Knight of Nights"
 		],
 		"title": "ナイト・オブ・ナイツ (かめりあ’s“ワンス・アポン・ア・ナイト”Remix)"
 	},
@@ -6665,7 +6672,8 @@
 		},
 		"id": 542,
 		"searchTerms": [
-			"Ray Ray ~Chouzetsu Saikyou Ame-chan Mix~"
+			"Ray Ray ~Chouzetsu Saikyou Ame-chan Mix~",
+			"Rei Rei"
 		],
 		"title": "レーイレーイ ～超絶最強アメちゃん Mix～"
 	},
@@ -8020,7 +8028,8 @@
 		},
 		"id": 650,
 		"searchTerms": [
-			"Amatsu Kaze"
+			"Amatsu Kaze",
+			"Amatsukaze"
 		],
 		"title": "天つ風"
 	},
@@ -8206,7 +8215,8 @@
 		},
 		"id": 665,
 		"searchTerms": [
-			"Kimi no Starlight Road"
+			"Kimi no Starlight Road",
+			"Groove Coaster"
 		],
 		"title": "君のStarlight Road"
 	},
@@ -8218,7 +8228,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 666,
-		"searchTerms": [],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "STARLIGHT TWILIGHT -GC edit-"
 	},
 	{
@@ -8230,7 +8242,9 @@
 		},
 		"id": 667,
 		"searchTerms": [
-			"Numbers"
+			"Numbers",
+			"Digits",
+			"Groove Coaster"
 		],
 		"title": "2112410403927243233368"
 	},
@@ -8242,7 +8256,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 668,
-		"searchTerms": [],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Crimson Phoenix"
 	},
 	{
@@ -8253,7 +8269,9 @@
 			"genre": "LUNATIC"
 		},
 		"id": 669,
-		"searchTerms": [],
+		"searchTerms": [
+			"Dariusburst"
+		],
 		"title": "The world of spirit"
 	},
 	{
@@ -10012,7 +10030,9 @@
 			"genre": "オンゲキ"
 		},
 		"id": 809,
-		"searchTerms": [],
+		"searchTerms": [
+			"Memories of ONGEKI"
+		],
 		"title": "Memories of O.N.G.E.K.I."
 	},
 	{
@@ -10117,7 +10137,9 @@
 			"genre": "オンゲキ"
 		},
 		"id": 817,
-		"searchTerms": [],
+		"searchTerms": [
+			"Loctest"
+		],
 		"title": "Perfect Shining!!"
 	},
 	{
@@ -10648,7 +10670,8 @@
 		"id": 858,
 		"searchTerms": [
 			"Kumo no Ito",
-			"Spider's Thread"
+			"Spider's Thread",
+			"Arira"
 		],
 		"title": "蜘蛛の糸"
 	},
@@ -11513,7 +11536,8 @@
 		},
 		"id": 928,
 		"searchTerms": [
-			"Amatsu Kaze feat. Natsukawa Yoko"
+			"Amatsu Kaze feat. Natsukawa Yoko",
+			"Amatsukaze"
 		],
 		"title": "天つ風 feat. 夏川陽子"
 	},
@@ -11571,7 +11595,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 933,
-		"searchTerms": [],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "ouroboros -twin stroke of the end-"
 	},
 	{
@@ -11583,7 +11609,10 @@
 		},
 		"id": 934,
 		"searchTerms": [
-			"Seija no Kodou"
+			"Seija no Kodou",
+			"Groove Coaster",
+			"Pigeon",
+			"Dove"
 		],
 		"title": "聖者の鼓動"
 	},
@@ -11596,7 +11625,8 @@
 		},
 		"id": 935,
 		"searchTerms": [
-			"Arc-en-ciel"
+			"Arc-en-ciel",
+			"Groove Coaster"
 		],
 		"title": "アルカンシエル"
 	},
@@ -12303,7 +12333,8 @@
 		},
 		"id": 990,
 		"searchTerms": [
-			"Temptation"
+			"Temptation",
+			"Groove Coaster"
 		],
 		"title": "10pt8ion"
 	},
@@ -12315,7 +12346,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 991,
-		"searchTerms": [],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Got more raves? -xiRemix-"
 	},
 	{
@@ -12326,7 +12359,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 992,
-		"searchTerms": [],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Lethal Dose"
 	},
 	{
@@ -13048,7 +13083,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 1050,
-		"searchTerms": [],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "DIE IN"
 	},
 	{
@@ -13059,7 +13096,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 1051,
-		"searchTerms": [],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "OBLIVION"
 	},
 	{
@@ -13071,7 +13110,8 @@
 		},
 		"id": 1052,
 		"searchTerms": [
-			"UAD"
+			"UAD",
+			"DJMAX"
 		],
 		"title": "U.A.D"
 	},
@@ -13083,7 +13123,9 @@
 			"genre": "VARIETY"
 		},
 		"id": 1053,
-		"searchTerms": [],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "I want You"
 	},
 	{
@@ -14039,7 +14081,9 @@
 			"genre": "オンゲキ"
 		},
 		"id": 1130,
-		"searchTerms": [],
+		"searchTerms": [
+			"Saki singing in German"
+		],
 		"title": "in den Himmel steigen"
 	},
 	{
