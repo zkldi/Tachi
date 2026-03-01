@@ -169,6 +169,54 @@
 	},
 	{
 		"default": false,
+		"description": "16th Chordstream table, sl0-sl12 difficulty",
+		"folders": [
+			"F2024dfa1f989b1fb70c620f766e12c8c8b7893e4f5d90a408f3863e112cc6e76",
+			"F8570287bef888ffc6aec50d0d5bf48be19d46835969df2729c6f6f2c0c3fb16d",
+			"F86d70f1f19c6086ba795796e899b8baeea3bb1e6f538b6aa2aef7bcc4951bd17",
+			"Fca514d2931d76607b3dd92bbd5692eecfd7b585d994fa29788d38e50ff918f55",
+			"F60b112da4e6d3e429db25c47c18979f33f80c811f66894fba4c9d83c9acb2df3",
+			"F1e84df333d23386ee98052492db3851d862be191dcf9322f734f0ad9e1050297",
+			"F43431ee4a724c9d8cf0de4105747c2d38d16b55628ab108aae2726426347dba3",
+			"F550777d5bc1c662a1bcd0f10e89433f4aba48c2224f149688499a640b93a7272",
+			"F4f764821cb9a43ab8d56ffea47fb060d28c33ee006243724491b7b7b5116d098",
+			"F07575a59a43fb11ae26dfdd97ac3ea982a289d5b8c95ff174faa93425ea93183",
+			"Fe448c6f719b2a2d2815851f050f725b9a7b92326f74fe5ae9af6d621f87638a7",
+			"F647aee6dd33d4187c5c485afdc341f1bc02d82a8bebea533b6c2fda483676cba",
+			"F4c4fb43dcd8f5aeba532ce8d3fc06da244fbd40174824950697e2b9f97ae94a3"
+		],
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"tableID": "bms-7K-cssl",
+		"title": "Code Stream (sl)"
+	},
+	{
+		"default": false,
+		"description": "16th Chordstream table, st0+ difficulty",
+		"folders": [
+			"F5ca2f787d0039642af83f84451eae2ed1b283a4438a19b224f6af7ae3dfc7f1a",
+			"Fb35a8721c993c27832484c90e4590641cfc41a0ee030aea05e057ed0469c0953",
+			"Ffa89eb67cb227878e60432f79b2c5a8020f092c2d4e81b5ac4b7a83680533388",
+			"Ff15c799d1a70728f7aa0802d67e7a46f7c49c255df9337ce4c948d11ac7e52e8",
+			"F424e146103a54ccf5806a435e045a5ff8dcac7f07c59343896c8b5801a52fd16",
+			"F91534a5be4aa723a26666d28ae54a0a2411b5b4960da6193457fe43295ba4e73",
+			"F2ebc9c3a60c0dd0296dda88506924c36d3e8a0d89e764c4fe5a6b2b372cec3d6",
+			"F54e779257e4ea9b7c4aaadd86269959e7ecc7d562232a1108081b4bd064a87f7",
+			"F91bd575dce367f321fb146e47ceeaea4215030069e7d7fcc92546dd4895e815c",
+			"F1dee03881a672d8e61c5c6397f7c35ea5f8f900bdbc274d9e205b1d69eb65e3c",
+			"F79ec311d178509f1f0e8089cbac8ef74119fdc3cc349fb23bbb06a85918ce64c",
+			"F9e8a24a8f3a1b9430c50bf2662e4a2c9c20ff416d6930f769569a2806b00d05b",
+			"Fa9fe48fae0b9adbc3ac5ee6a7bbdf7ddd3dd8bae25f9abafdcbdb3ac8ee50de9"
+		],
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"tableID": "bms-7K-csst",
+		"title": "Code Stream (st)"
+	},
+	{
+		"default": false,
 		"description": "Delayjoy is a delay practice table. dl0 is approximately equivalent to an st0",
 		"folders": [
 			"Fc1c9354e928bda2e964e870ca6ddbdb9d8d16c278864c1c03f953b2d2f58fc70",
@@ -456,7 +504,9 @@
 			"F9bdaa06980b75f3406dbaa93ed2bf1be47b6b60cfb1463a3b7c88d5c350963c6",
 			"F93c9abfd0d678a9f5ec1aac023dd945c971a283fedd1fd0017dea0e4aa9b6528",
 			"F731adc90fd77c9b2cd0e1761bd61c610fb250fe4bee5acfbeee6f69159e33abd",
-			"F4b69207ae5710ca30e42e1019093a71dbba15071d467361bf224a76687936c79"
+			"F4b69207ae5710ca30e42e1019093a71dbba15071d467361bf224a76687936c79",
+			"F3715cdcf2dda640fc2a434823cbd55227412d9e6553738b10c2bc463e6d37155",
+			"Fb15ecb7a2415adfa8e9347af91c8e9a6697c033c515ce50856e6c6f32fca2e88"
 		],
 		"game": "bms",
 		"inactive": false,
