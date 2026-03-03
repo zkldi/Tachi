@@ -13093,6 +13093,7 @@
 		"artist": "ESTi",
 		"data": {
 			"duration": 122.128,
+			"flavorGenre": "Dramatic Trance",
 			"genre": "VARIETY"
 		},
 		"id": 1051,
@@ -13106,6 +13107,7 @@
 		"artist": "HAYAKO",
 		"data": {
 			"duration": 126.047,
+			"flavorGenre": "Future House",
 			"genre": "VARIETY"
 		},
 		"id": 1052,
@@ -13120,6 +13122,7 @@
 		"artist": "Lin-G",
 		"data": {
 			"duration": 108.857,
+			"flavorGenre": "House Dance",
 			"genre": "VARIETY"
 		},
 		"id": 1053,
