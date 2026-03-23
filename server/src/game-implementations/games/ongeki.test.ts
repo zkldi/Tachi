@@ -215,6 +215,8 @@ t.test("ONGEKI Implementation", (t: any) => {
 		f(19, "RAINBOW");
 		f(20, "RAINBOW_SHINY");
 		f(21, "RAINBOW_EX");
+		f(22, "RAINBOW_EX_TRUE");
+		f(23, "RAINBOW_EX_TRUE");
 
 		t.end();
 	});

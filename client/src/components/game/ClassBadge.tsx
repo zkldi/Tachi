@@ -49,7 +49,7 @@ export default function ClassBadge<GPT extends GPTString = GPTString>({
 		);
 	} else {
 		badgeComponent = (
-			<Badge className="mx-2" bg={""} style={classStyle}>
+			<Badge className={`mx-2 ${classStyle.shine ? "shine" : ""}`} bg={""} style={classStyle}>
 				{data.display}
 			</Badge>
 		);

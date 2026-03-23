@@ -35,7 +35,8 @@ export const OngekiColours = [
 	ClassValue("PLATINUM", "鉑", "Platinum: 18.000~18.999 Rating"),
 	ClassValue("RAINBOW", "虹", "Rainbow: 19.000~19.999 Rating"),
 	ClassValue("RAINBOW_SHINY", "虹(光)", "Rainbow Shiny: 20.000~20.999 Rating"),
-	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~ Rating"),
+	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~21.999 Rating"),
+	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ Rating"),
 ];
 
 export const ONGEKI_SINGLE_CONF = {

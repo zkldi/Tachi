@@ -105,7 +105,9 @@ export const ONGEKI_IMPL: GPTServerImplementation<"ongeki:Single"> = {
 				return null;
 			}
 
-			if (rating >= 21) {
+			if (rating >= 22) {
+				return "RAINBOW_EX_TRUE";
+			} else if (rating >= 21) {
 				return "RAINBOW_EX";
 			} else if (rating >= 20) {
 				return "RAINBOW_SHINY";

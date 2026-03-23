@@ -91,7 +91,7 @@ The default rating algorithm is `naiveRating`.
 
 | Name | Type | Values |
 | :: | :: | :: |
-| `colour` | DERIVED | BLUE, GREEN, ORANGE, RED, PURPLE, COPPER, SILVER, GOLD, PLATINUM, RAINBOW, RAINBOW_SHINY, RAINBOW_EX
+| `colour` | DERIVED | BLUE, GREEN, ORANGE, RED, PURPLE, COPPER, SILVER, GOLD, PLATINUM, RAINBOW, RAINBOW_SHINY, RAINBOW_EX, RAINBOW_EX_TRUE
 
 ## Versions
 
