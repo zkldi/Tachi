@@ -5454,5 +5454,49 @@
 		"id": 460,
 		"searchTerms": [],
 		"title": "MVURBD"
+	},
+	{
+		"altTitles": [],
+		"artist": "Getty feat. DJ Noriken",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "TANO*C"
+		},
+		"id": 461,
+		"searchTerms": [],
+		"title": "Burned Out"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": 462,
+		"searchTerms": [],
+		"title": "Mega TSKR"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Myosuke & Gram",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "TANO*C"
+		},
+		"id": 463,
+		"searchTerms": [],
+		"title": "Rebellion of Phantom"
+	},
+	{
+		"altTitles": [],
+		"artist": "Lusumi",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "オリジナル"
+		},
+		"id": 464,
+		"searchTerms": [],
+		"title": "sys_dei/cide"
 	}
 ]
