@@ -23,7 +23,7 @@ import OngekiPlatinumCell from "components/tables/cells/OngekiPlatinumCell";
 import CHUNITHMLampCell from "components/tables/cells/CHUNITHMLampCell";
 import OngekiDamageCell from "components/tables/cells/OngekiDamageCell";
 import OngekiScoreRatingCell from "components/tables/cells/OngekiScoreRatingCell";
-import { bgc, RAINBOW_EX_GRADIENT, RAINBOW_GRADIENT, RAINBOW_SHINY_GRADIENT } from "./games/_util";
+import { bgc, RAINBOW_EX_GRADIENT, RAINBOW_GRADIENT } from "./games/_util";
 import { BMS_14K_IMPL, BMS_7K_IMPL, PMS_IMPL } from "./games/bms-pms";
 import { IIDX_DP_IMPL, IIDX_SP_IMPL } from "./games/iidx";
 import { GPTClientImplementation } from "./types";
@@ -775,9 +775,22 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				SILVER: bgc("gray", "var(--bs-light)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				PLATINUM: bgc("silver", "var(--bs-dark)"),
-				RAINBOW: RAINBOW_GRADIENT,
-				RAINBOW_SHINY: RAINBOW_SHINY_GRADIENT,
-				RAINBOW_EX: RAINBOW_EX_GRADIENT,
+				RAINBOW: {
+					background: "linear-gradient(-45deg, #ff73d6 20%, #00ffff 50%,  #ebfb2a 80%)",
+					color: "var(--bs-dark)",
+				},
+				RAINBOW_SHINY: {
+					background: "linear-gradient(-45deg, #ff73d6 20%, #00ffff 50%,  #ebfb2a 80%)",
+					color: "var(--bs-dark)",
+					shine: true,
+				},
+				RAINBOW_EX: {
+					background:
+						"linear-gradient(-45deg, #df7e85 20%, #efef51 40%, #4bee83 60%, #70bdd7 80%)",
+					color: "var(--bs-dark)",
+					shine: true,
+				},
+				RAINBOW_EX_TRUE: { ...RAINBOW_EX_GRADIENT, shine: true },
 			},
 		},
 		enumColours: {

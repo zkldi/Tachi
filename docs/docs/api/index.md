@@ -95,7 +95,7 @@ case where the request fails.
 
 That should be everything. If you have any questions about the API, you can
 contact me at `zk@tachi.ac`. You can also write an issue on the
-[Issue Tracker](https://github.com/zkldichi). I'll get around to either.
+[Issue Tracker](https://github.com/zkldi/Tachi). I'll get around to either.
 
 It's entirely possible that I might've made a typo or wrote a poor explaination
 of something, so please reach out!

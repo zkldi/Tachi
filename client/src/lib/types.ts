@@ -74,7 +74,7 @@ export type GPTClassColours<GPT extends GPTString> = {
 			| "info"
 			| "success"
 			| null
-			| CSSProperties;
+			| (CSSProperties & { shine?: boolean });
 	};
 };
 

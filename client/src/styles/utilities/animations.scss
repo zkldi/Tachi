@@ -1,8 +1,40 @@
 @keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes shine {
+	0% {
+		top: -150%;
+		left: -150%;
+	}
+	100% {
+		top: 150%;
+		left: 150%;
+	}
+}
+
+.shine {
+	position: relative;
+	overflow: hidden;
+}
+
+.shine::before {
+	background: linear-gradient(
+		transparent,
+		rgba(255, 255, 255, 0.5) 50%,
+		transparent
+	);
+	content: "";
+	display: block;
+	width: 150%;
+	height: 2rem;
+	position: absolute;
+	transform: rotate(-45deg);
+	animation: shine 4s infinite ease-in-out;
+	z-index: 100;
 }

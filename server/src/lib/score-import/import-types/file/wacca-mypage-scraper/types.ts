@@ -21,7 +21,7 @@ export interface MyPageRecordsParsedPB {
 }
 
 export interface MyPagePlayerStage {
-	// eslint-disable-next-line lines-around-comment -- https://github.com/zkldichi/pull/673#discussion_r965947793
+	// eslint-disable-next-line lines-around-comment -- https://github.com/zkldi/Tachi/pull/673#discussion_r965947793
 	// https://github.com/XezolesS/WaccaMyPageScraper/blob/acebe4b655eb09b3ddbc15802dd948d5f9c5e0d3/WaccaMyPageScraper/Data/Stage.cs
 	id: number;
 	name: string;

@@ -36,12 +36,6 @@ export const RAINBOW_GRADIENT = {
 	color: "var(--bs-dark)",
 } as const;
 
-export const RAINBOW_SHINY_GRADIENT = {
-	background:
-		"linear-gradient(-45deg, #ff8697, #ff9dbf, #9e81d0, #87caff, #7dae80, #ffffa7, #ffd88a, #ffab8d, #ff8697)",
-	color: "var(--bs-dark)",
-} as const;
-
 export const RAINBOW_EX_GRADIENT = {
 	background: "linear-gradient(-45deg, #0fa091, #0f98d5, #67087f, #d9007e, #f56e06)",
 	color: "var(--bs-light)",
