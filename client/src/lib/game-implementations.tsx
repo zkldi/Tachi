@@ -848,7 +848,9 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 			[
 				"Platinum Score",
 				"P-Score",
-				NumericSOV((x) => x.scoreData.platinumStars * 100000 + x.scoreData.platinumScore),
+				NumericSOV(
+					(x) => x.scoreData.platinumScore / (x as any).__related.chart.data.maxPlatScore
+				),
 			],
 			["Judgements", "Notes", NumericSOV((x) => x.scoreData.judgements.cbreak ?? 0)],
 			[
