@@ -3814,6 +3814,34 @@
 	},
 	{
 		"data": {
+			"data¬tableFolders¬table": "乱打"
+		},
+		"folderID": "Fb15ecb7a2415adfa8e9347af91c8e9a6697c033c515ce50856e6c6f32fca2e88",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [
+			"cssl"
+		],
+		"title": "Code Stream (sl)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders¬table": "重発狂"
+		},
+		"folderID": "F3715cdcf2dda640fc2a434823cbd55227412d9e6553738b10c2bc463e6d37155",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [
+			"csst"
+		],
+		"title": "Code Stream (st)",
+		"type": "charts"
+	},
+	{
+		"data": {
 			"data¬tableFolders¬table": "dl"
 		},
 		"folderID": "Fcf221f3abd17ae3607718898be929121d44c3582c90e300c6e7efdc83df6187a",
@@ -8902,6 +8930,227 @@
 			"data¬tableFolders": {
 				"~elemMatch": {
 					"level": "0",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F2024dfa1f989b1fb70c620f766e12c8c8b7893e4f5d90a408f3863e112cc6e76",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打0",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "1",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F8570287bef888ffc6aec50d0d5bf48be19d46835969df2729c6f6f2c0c3fb16d",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打1",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "10",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "Fe448c6f719b2a2d2815851f050f725b9a7b92326f74fe5ae9af6d621f87638a7",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打10",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "11",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F647aee6dd33d4187c5c485afdc341f1bc02d82a8bebea533b6c2fda483676cba",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打11",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "12",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F4c4fb43dcd8f5aeba532ce8d3fc06da244fbd40174824950697e2b9f97ae94a3",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打12",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "2",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F86d70f1f19c6086ba795796e899b8baeea3bb1e6f538b6aa2aef7bcc4951bd17",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打2",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "3",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "Fca514d2931d76607b3dd92bbd5692eecfd7b585d994fa29788d38e50ff918f55",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打3",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "4",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F60b112da4e6d3e429db25c47c18979f33f80c811f66894fba4c9d83c9acb2df3",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打4",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "5",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F1e84df333d23386ee98052492db3851d862be191dcf9322f734f0ad9e1050297",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打5",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "6",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F43431ee4a724c9d8cf0de4105747c2d38d16b55628ab108aae2726426347dba3",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打6",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "7",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F550777d5bc1c662a1bcd0f10e89433f4aba48c2224f149688499a640b93a7272",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打7",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "8",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F4f764821cb9a43ab8d56ffea47fb060d28c33ee006243724491b7b7b5116d098",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打8",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "9",
+					"table": "乱打"
+				}
+			}
+		},
+		"folderID": "F07575a59a43fb11ae26dfdd97ac3ea982a289d5b8c95ff174faa93425ea93183",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "乱打9",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "0",
 					"table": "双"
 				}
 			}
@@ -9048,6 +9297,227 @@
 		"playtype": "7K",
 		"searchTerms": [],
 		"title": "双8",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "0",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F5ca2f787d0039642af83f84451eae2ed1b283a4438a19b224f6af7ae3dfc7f1a",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂0",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "1",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "Fb35a8721c993c27832484c90e4590641cfc41a0ee030aea05e057ed0469c0953",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂1",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "10",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F79ec311d178509f1f0e8089cbac8ef74119fdc3cc349fb23bbb06a85918ce64c",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂10",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "11",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F9e8a24a8f3a1b9430c50bf2662e4a2c9c20ff416d6930f769569a2806b00d05b",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂11",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "12",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "Fa9fe48fae0b9adbc3ac5ee6a7bbdf7ddd3dd8bae25f9abafdcbdb3ac8ee50de9",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂12",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "2",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "Ffa89eb67cb227878e60432f79b2c5a8020f092c2d4e81b5ac4b7a83680533388",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂2",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "3",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "Ff15c799d1a70728f7aa0802d67e7a46f7c49c255df9337ce4c948d11ac7e52e8",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂3",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "4",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F424e146103a54ccf5806a435e045a5ff8dcac7f07c59343896c8b5801a52fd16",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂4",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "5",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F91534a5be4aa723a26666d28ae54a0a2411b5b4960da6193457fe43295ba4e73",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂5",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "6",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F2ebc9c3a60c0dd0296dda88506924c36d3e8a0d89e764c4fe5a6b2b372cec3d6",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂6",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "7",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F54e779257e4ea9b7c4aaadd86269959e7ecc7d562232a1108081b4bd064a87f7",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂7",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "8",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F91bd575dce367f321fb146e47ceeaea4215030069e7d7fcc92546dd4895e815c",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂8",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬tableFolders": {
+				"~elemMatch": {
+					"level": "9",
+					"table": "重発狂"
+				}
+			}
+		},
+		"folderID": "F1dee03881a672d8e61c5c6397f7c35ea5f8f900bdbc274d9e205b1d69eb65e3c",
+		"game": "bms",
+		"inactive": false,
+		"playtype": "7K",
+		"searchTerms": [],
+		"title": "重発狂9",
 		"type": "charts"
 	},
 	{
@@ -34541,6 +35011,26 @@
 				]
 			},
 			"level": "1",
+			"versions": "beyond"
+		},
+		"folderID": "F46861cd3e9dd2a31b4ac8de73131a52ae104a7e28517e0a1ded5a6abdebace5d",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "1",
 			"versions": "copious"
 		},
 		"folderID": "Fc0784a113cc997075ea210d7ce090a1dfab3f4b2b2a372a5f2450047a696b351",
@@ -34609,6 +35099,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 1 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "1",
+			"versions": "beyond"
+		},
+		"folderID": "F3712484a6c2312875ffdfc2ce9d337316e91587131d853a3b98c8f97fa345cea",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -34941,6 +35451,26 @@
 				]
 			},
 			"level": "10.0",
+			"versions": "beyond"
+		},
+		"folderID": "Fb1bed8c606e68f4de258524fcf57cc13a4828902b6044fc6bb3ed27481a51094",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.0 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.0",
 			"versions": "festo-omni"
 		},
 		"folderID": "Ff1b3d62d8857cebdca0425f71f6e0dc7dd3ad16a461085c37c283e91e93d5e21",
@@ -34989,6 +35519,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.0 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.0",
+			"versions": "beyond"
+		},
+		"folderID": "F785f060ad1b0682f9856e2d5d8afcb6f61183572d7fe7d457cad668965ab9f9c",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.0 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -35107,6 +35657,29 @@
 				"~gte": 10,
 				"~lt": 11
 			},
+			"versions": "beyond"
+		},
+		"folderID": "Fd73adfd618a6ba91e883360d95cf28a772c4fbcf538d420a9a3d6b7b2bbaec1f",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.0-10.9 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"levelNum": {
+				"~gte": 10,
+				"~lt": 11
+			},
 			"versions": "copious"
 		},
 		"folderID": "Fa586873ded00c8ccd79df99c6f257cfb42e349712ff51d7a829ea48e3dadc8d8",
@@ -35184,6 +35757,29 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.0-10.9 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"levelNum": {
+				"~gte": 10,
+				"~lt": 11
+			},
+			"versions": "beyond"
+		},
+		"folderID": "Fe83435cec91709360c64cce8f09fd7fb369d0ee0c5c525827dc516eb08f43535",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.0-10.9 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -35561,6 +36157,26 @@
 				]
 			},
 			"level": "10.1",
+			"versions": "beyond"
+		},
+		"folderID": "F15a9ecd9a56c200bc7ce81258583a7cf2fee943c4144d35992fff20dcec82f76",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.1 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.1",
 			"versions": "festo-omni"
 		},
 		"folderID": "F7a695c59902ac85ce13eda734fd56c24e3fa037f94a6a1dcdc052d941f4094bf",
@@ -35609,6 +36225,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.1 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.1",
+			"versions": "beyond"
+		},
+		"folderID": "F0b2632bf2a92838e2d60843df22284b038d592709b8b88b54adfdc1c1e711d23",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.1 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -35721,6 +36357,26 @@
 				]
 			},
 			"level": "10.2",
+			"versions": "beyond"
+		},
+		"folderID": "F2b4e69f934d087dee608ae0e4e0814fb861d598d041790c3eaa4ab18fb9e5410",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.2 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.2",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fb5a46b2bad5f313f269858bd970a98f71320b5ffe6e505fd1202bce81336b90c",
@@ -35769,6 +36425,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.2 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.2",
+			"versions": "beyond"
+		},
+		"folderID": "F628f33be162abc0aa88031c46fee4e761000a0e64ddda8bc2cc155bc8f762953",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.2 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -35881,6 +36557,26 @@
 				]
 			},
 			"level": "10.3",
+			"versions": "beyond"
+		},
+		"folderID": "F09c5917a9efd79825d86c1c304716a8599a60e4cf28bd538ed09657c0735986d",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.3 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.3",
 			"versions": "festo-omni"
 		},
 		"folderID": "F0be80ccd99a5cfdc8418b99432ba3cb6f07cae3ecc6011c448841db34948f3c9",
@@ -35929,6 +36625,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.3 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.3",
+			"versions": "beyond"
+		},
+		"folderID": "F8f6ac725b671a79eaa0a2c0d23199224f032fa280e1c5c63015b6e413cce89b6",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.3 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36041,6 +36757,26 @@
 				]
 			},
 			"level": "10.4",
+			"versions": "beyond"
+		},
+		"folderID": "F4dd1287b1492b32c9891ba7d7d058c52434730b9e4d98298c70899d7571a1cd8",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.4 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.4",
 			"versions": "festo-omni"
 		},
 		"folderID": "Ffd5f22143b82953f3f915127cb6dee37bd87c2c805b20cedde5988582b774867",
@@ -36089,6 +36825,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.4 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.4",
+			"versions": "beyond"
+		},
+		"folderID": "F7d1897e463fed142df9e21e9685f7af8d96b9d0027d148a85a66c7ade483fdab",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.4 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36201,6 +36957,26 @@
 				]
 			},
 			"level": "10.5",
+			"versions": "beyond"
+		},
+		"folderID": "Fedf2e0b776ac2824fcfa5ee826a7911f7ec6d69f2d0fad23b0efdf20a2560225",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.5 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.5",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fca4aa6df9c482137d4c799ddca23a0cc922e9824d73d83c06533eec91866a14c",
@@ -36249,6 +37025,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.5 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.5",
+			"versions": "beyond"
+		},
+		"folderID": "F867037eb8d072b2245fe9bc4772a879f4d5e0f5c43356b67f80c0e5a94ce2510",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.5 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36361,6 +37157,26 @@
 				]
 			},
 			"level": "10.6",
+			"versions": "beyond"
+		},
+		"folderID": "F953c2ef6d8069738091840662c93e88dd8acd3ddb5d3182637f9d6a5ff6cd8e1",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.6 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.6",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fb6a942be115ae75a1780093a02f48776e87a4ceede66343d8dca4973bf1a273e",
@@ -36409,6 +37225,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.6 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.6",
+			"versions": "beyond"
+		},
+		"folderID": "F3ea4c1e47944e68c296fd6f5c053e50b4e16abd464ffadb5b58e7b5d649e4ac5",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.6 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36521,6 +37357,26 @@
 				]
 			},
 			"level": "10.7",
+			"versions": "beyond"
+		},
+		"folderID": "Fd8c48a43905eab97d75c702ba9ed0458808a92cc54edfc18774e9216350b89cf",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.7 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.7",
 			"versions": "festo-omni"
 		},
 		"folderID": "F49b89289b8459c957ddf148ccece4339886236308120b9eb6378acc997eacd79",
@@ -36569,6 +37425,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.7 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.7",
+			"versions": "beyond"
+		},
+		"folderID": "Fff180c8ef4be6ed77dd89051bc4abbea920f5b35f8cc8af24760df3cb6464ebb",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.7 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36681,6 +37557,26 @@
 				]
 			},
 			"level": "10.8",
+			"versions": "beyond"
+		},
+		"folderID": "F37baaae854021bc38055d39b5ca188a6ab9715642272ee54eec8b8642cdb1ee8",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.8 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.8",
 			"versions": "festo-omni"
 		},
 		"folderID": "F39b77f2b560c7555e3458157654e94ea65e6156adee5fba4a928a53b836e5b42",
@@ -36729,6 +37625,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.8 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.8",
+			"versions": "beyond"
+		},
+		"folderID": "F90830919c5788287978442330ceec0420c3c6444eab4868584322ae7cfa066bc",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.8 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -36841,6 +37757,26 @@
 				]
 			},
 			"level": "10.9",
+			"versions": "beyond"
+		},
+		"folderID": "F8adf9afff55e30c6e60de178786a223f82ad55e2f0c195d31b5b2c6e66edfcc2",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.9 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "10.9",
 			"versions": "festo-omni"
 		},
 		"folderID": "F3eb9acf9a41c52ccb096b4125034d5d9fa9977714eacfccdbd7fb43f5c6a7331",
@@ -36889,6 +37825,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10.9 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "10.9",
+			"versions": "beyond"
+		},
+		"folderID": "F45ffc60a1bdad9c0196bc9570df2e687668bc8c4c8dbdbdd4b7b1fc73db1fabd",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10.9 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -37001,6 +37957,26 @@
 				]
 			},
 			"level": "2",
+			"versions": "beyond"
+		},
+		"folderID": "F9543ae25a930acfd7e064b9819b3e293ae8a6fd1155c2d825d69eab9f97e5146",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "2",
 			"versions": "copious"
 		},
 		"folderID": "F77dff203be337b9d0103b1f895f135e8f68b44fd5541159daddbb1edcb2bc860",
@@ -37069,6 +38045,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 2 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "2",
+			"versions": "beyond"
+		},
+		"folderID": "Fa86f29ea7ef6c822d64fea7f0dce718df20a9326b9b04d0ee9007ecb8faeec9f",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -37401,6 +38397,26 @@
 				]
 			},
 			"level": "3",
+			"versions": "beyond"
+		},
+		"folderID": "Fa9d0817c685c29dd2f86dd6ab6bf03d8105dd48a3d934e466754d2ef0a82f77c",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "3",
 			"versions": "copious"
 		},
 		"folderID": "F8871234eb8e1739af3ee0b241fb0a2f409589f8407944dac86222a3c6a2664fa",
@@ -37469,6 +38485,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "3",
+			"versions": "beyond"
+		},
+		"folderID": "F234a8150aed8204c77b5503bb0bde210ea91f026636c08b725b9185ea86cd680",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -37801,6 +38837,26 @@
 				]
 			},
 			"level": "4",
+			"versions": "beyond"
+		},
+		"folderID": "Fef417ec6c6a579a5ced58557b2f9bd2122e07db3e317b5566d5a490c388cec9a",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "4",
 			"versions": "copious"
 		},
 		"folderID": "F9c927d54289dea04203760544b75698c4270bbc89ee516eebccfbae22680a79b",
@@ -37869,6 +38925,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 4 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "4",
+			"versions": "beyond"
+		},
+		"folderID": "F5af76d7d6c4ae53b3e5b8336607652149e2f2b2f44c6c4cda5a99257e46dfab7",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -38201,6 +39277,26 @@
 				]
 			},
 			"level": "5",
+			"versions": "beyond"
+		},
+		"folderID": "F2d733ea79314ff165d7a5428602138f58e74445be49b1c15cc93ebfaca3edeb9",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "5",
 			"versions": "copious"
 		},
 		"folderID": "Fc83b91978840957b65d377b2053fd277a8bec14a8f23fd7c4fdc992b2cd81cbd",
@@ -38269,6 +39365,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "5",
+			"versions": "beyond"
+		},
+		"folderID": "F21403b7c135b68326dcde936782ea92352e97eb82fa5b4a2a02670515b32926d",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -38601,6 +39717,26 @@
 				]
 			},
 			"level": "6",
+			"versions": "beyond"
+		},
+		"folderID": "F8fa99c1cb98bd2e52fc99a8f84a63ee2c4c7210a99bd01b842ed0c65a403c312",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "6",
 			"versions": "copious"
 		},
 		"folderID": "Fe203c8bbdc9549043ae68805f9d112695cdf8e9231e4f7a21b16bd53cce9d63f",
@@ -38669,6 +39805,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 6 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "6",
+			"versions": "beyond"
+		},
+		"folderID": "F60ba8694c8a4593cc47a397f6722ae92c77c039e64dbed57c752581c3e09c934",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -39001,6 +40157,26 @@
 				]
 			},
 			"level": "7",
+			"versions": "beyond"
+		},
+		"folderID": "F3bb58a91fdfed39cf677486b201a0609467bf9a97cf9ed8f968f2824881eda5f",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "7",
 			"versions": "copious"
 		},
 		"folderID": "Ff50b97390b0121e9ba355873caf43b45a82a03d635371e921f6a51ae19f8fe1e",
@@ -39069,6 +40245,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "7",
+			"versions": "beyond"
+		},
+		"folderID": "F817119a0177d7f427890542cb230cc6b2948fe1d9287202bc6264b8dde2b9be5",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -39401,6 +40597,26 @@
 				]
 			},
 			"level": "8",
+			"versions": "beyond"
+		},
+		"folderID": "F3ce54fa4be7df453bd791746784ae05b6267aa2701f00c5175ed6b58c2f42376",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "8",
 			"versions": "copious"
 		},
 		"folderID": "Fa2b74d5fada19308eb33450c20f696a44957505041fbd4aef4b06b481b8c751f",
@@ -39469,6 +40685,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "8",
+			"versions": "beyond"
+		},
+		"folderID": "Fa37774cba061021ac8f29d5348b1203d3aadd6deba044cfc19ef88bee1f9d77b",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -39801,6 +41037,26 @@
 				]
 			},
 			"level": "9.0",
+			"versions": "beyond"
+		},
+		"folderID": "F6ba0d99b7c53d6afcc79239d4949ac46bd1e30fed816d49b181cea2868c3b074",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.0 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.0",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fd5bb624ce939d93dbefda85a5d49e702b6a905744755122ff2a7626cd4bd5e23",
@@ -39849,6 +41105,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.0 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.0",
+			"versions": "beyond"
+		},
+		"folderID": "F3324782938a9fc0505be264e2ebaf44f653645eac2047d3777917149f4faf464",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.0 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -39967,6 +41243,29 @@
 				"~gte": 9,
 				"~lt": 10
 			},
+			"versions": "beyond"
+		},
+		"folderID": "F5ae30be4c48276ae0bd6ddac16516004c106b599cdd80692fa754474352a1b7b",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.0-9.9 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"levelNum": {
+				"~gte": 9,
+				"~lt": 10
+			},
 			"versions": "copious"
 		},
 		"folderID": "Fdbb7928cf96fcb982133edcdc0d2903a36f36684ff6a6e5baa0a6af683409598",
@@ -40044,6 +41343,29 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.0-9.9 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"levelNum": {
+				"~gte": 9,
+				"~lt": 10
+			},
+			"versions": "beyond"
+		},
+		"folderID": "F4715243c8ac82841d35833f9d8ec925b0492c4ef7dbfd1bc86d627808ee54b6b",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.0-9.9 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -40421,6 +41743,26 @@
 				]
 			},
 			"level": "9.1",
+			"versions": "beyond"
+		},
+		"folderID": "F9715cb42cf23ad087a38c6268b0d4ff256ee8755fc38dd8f5ba253b52f3b9c6f",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.1 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.1",
 			"versions": "festo-omni"
 		},
 		"folderID": "F1d92d7f0b7495f853ecc6a59477f554ed5c1071384f8dc4751153c5cc6d7451f",
@@ -40469,6 +41811,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.1 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.1",
+			"versions": "beyond"
+		},
+		"folderID": "F8b833ba827774ef4ba6f0ca69fe52d6986570b9d68950869ad7453039547cfdb",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.1 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -40581,6 +41943,26 @@
 				]
 			},
 			"level": "9.2",
+			"versions": "beyond"
+		},
+		"folderID": "F6787520cc91d5e134348c6a28c0d71743301338e7e2645d9a0349dbf1e3e7be6",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.2 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.2",
 			"versions": "festo-omni"
 		},
 		"folderID": "F8a1b1132e5f14ea1c08f89aebb65c00713265f87b1cc8f3d4a73b836360b4886",
@@ -40629,6 +42011,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.2 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.2",
+			"versions": "beyond"
+		},
+		"folderID": "F99f19986fa30f2344ac86e3a477d19f1888b6791440ad2b1c4cb825adb762713",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.2 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -40741,6 +42143,26 @@
 				]
 			},
 			"level": "9.3",
+			"versions": "beyond"
+		},
+		"folderID": "F6e91f89a0ba01a829f81036b162f4979526308098294aa398b97ada6d8450c86",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.3 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.3",
 			"versions": "festo-omni"
 		},
 		"folderID": "F9acea0b278b8448062157f994fde89438ae22b0f01b3cde87d3611de0f043132",
@@ -40789,6 +42211,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.3 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.3",
+			"versions": "beyond"
+		},
+		"folderID": "Fba8e1689da0e2dbc3068e612b638ddadadd15028f4b3fab3dd94608703ae57d2",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.3 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -40901,6 +42343,26 @@
 				]
 			},
 			"level": "9.4",
+			"versions": "beyond"
+		},
+		"folderID": "F73c8212db56f0243dd5be30badd91eb3db6434d0906494cf7c50dc49c2150cd2",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.4 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.4",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fd20dc5655f5a368096614f7093d1d9a2a44dcec03a6a519dc51bbda1326e28f3",
@@ -40949,6 +42411,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.4 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.4",
+			"versions": "beyond"
+		},
+		"folderID": "F8ad3b8bf786a27e9fe158eedd2c613ce71381c3583629eadb37fe08e90990f20",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.4 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -41061,6 +42543,26 @@
 				]
 			},
 			"level": "9.5",
+			"versions": "beyond"
+		},
+		"folderID": "Fb7280596b648a4b45d556acb30f4d8bc890298a5269f0fe33f8be036e45ada2e",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.5 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.5",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fcbabc5acc06a36077396ae670c02d5477a367438777188c0c780222a656af438",
@@ -41109,6 +42611,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.5 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.5",
+			"versions": "beyond"
+		},
+		"folderID": "F62ce23ef45de790945da5bb827444778e5f728cfbde0df91bcd7fe3be0d337d8",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.5 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -41221,6 +42743,26 @@
 				]
 			},
 			"level": "9.6",
+			"versions": "beyond"
+		},
+		"folderID": "F2db885b186454807ab2530007efe1b7af8ec245fe6403e26456026137fe9be78",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.6 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.6",
 			"versions": "festo-omni"
 		},
 		"folderID": "F2fc642977bad848ff05d9cc97af2efd48e7493eea0dd5d707361184f397b6a68",
@@ -41269,6 +42811,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.6 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.6",
+			"versions": "beyond"
+		},
+		"folderID": "Feb4333524ebe9fef97db9125483d0252439d295ce7155e2894521f0666fc71af",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.6 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -41381,6 +42943,26 @@
 				]
 			},
 			"level": "9.7",
+			"versions": "beyond"
+		},
+		"folderID": "F2b475e2314e5b0b55f5d1dc284517edc9b728e4eff61d30ac300c734c2d6bb6a",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.7 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.7",
 			"versions": "festo-omni"
 		},
 		"folderID": "F965c297f454c3e2cdc04e66f366af65543bd320358284a71c321f69d9fdfdb1b",
@@ -41429,6 +43011,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.7 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.7",
+			"versions": "beyond"
+		},
+		"folderID": "Fb8729512340b4830b2cd05e5183adb578c8ffffed1690071df11630dddf31894",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.7 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -41541,6 +43143,26 @@
 				]
 			},
 			"level": "9.8",
+			"versions": "beyond"
+		},
+		"folderID": "Fa6c7363c6d649efa5d3e0d5d08617c2698ad33c4cb123a7097be6b976be104bb",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.8 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.8",
 			"versions": "festo-omni"
 		},
 		"folderID": "F87be14fff303494eb598aa99d6b3a54daee9a17f8527d1fded709fdffb74a788",
@@ -41589,6 +43211,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.8 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.8",
+			"versions": "beyond"
+		},
+		"folderID": "F0cc29b9c77e8db5ad1ef6b3e9942f340c505c5938fe5afb0c04369587ba2a816",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.8 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -41701,6 +43343,26 @@
 				]
 			},
 			"level": "9.9",
+			"versions": "beyond"
+		},
+		"folderID": "F594308cfa089b59f0f43c9ad215b4ff05f0fc31e855c0bee00f6d77f392693e5",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.9 (beyond the Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"BSC",
+					"ADV",
+					"EXT"
+				]
+			},
+			"level": "9.9",
 			"versions": "festo-omni"
 		},
 		"folderID": "Fc14a2034372aa3d90253ef8bf09afd01873c23f9f58e4874d833ff1b15a2ae3f",
@@ -41749,6 +43411,26 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9.9 (Hard Mode) (Ave.)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"HARD BSC",
+					"HARD ADV",
+					"HARD EXT"
+				]
+			},
+			"level": "9.9",
+			"versions": "beyond"
+		},
+		"folderID": "F8fb73c78ac5408ec1bc64017c963a896009c8a96adec8cfd6a6f232792ee1c3a",
+		"game": "jubeat",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9.9 (Hard Mode) (beyond the Ave.)",
 		"type": "charts"
 	},
 	{
@@ -46184,13 +47866,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~lt": 7000
-			},
+			"data¬isBonusTrack": false,
 			"difficulty": "ADVANCED",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F926f58195b6e502654570b7ae179a293a1996be8356389b5ac65f2f99632b191",
+		"folderID": "F019293e33cc019dc4d4d4f55bb295b6cfb74062748c9652844fcda8d4306fbc2",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46204,14 +47884,44 @@
 				"~lt": 7000
 			},
 			"difficulty": "ADVANCED",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F926f58195b6e502654570b7ae179a293a1996be8356389b5ac65f2f99632b191",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ADVANCED (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"difficulty": "ADVANCED",
 			"versions": "refresh"
 		},
-		"folderID": "F08f88693a50f0d3d5a3019d6b0095901fa83b440efd1ca17a3a38ae0d0534355",
+		"folderID": "F9bdb99f38b604c461e912b8655f5bd792bb6189841e79bedb983f0318b2f08a2",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "ADVANCED (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~lt": 7000
+			},
+			"difficulty": "ADVANCED",
+			"versions": "refresh"
+		},
+		"folderID": "F08f88693a50f0d3d5a3019d6b0095901fa83b440efd1ca17a3a38ae0d0534355",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ADVANCED (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46264,13 +47974,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~lt": 7000
-			},
+			"data¬isBonusTrack": false,
 			"difficulty": "BASIC",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F6e0f79828e049cf59d5bf3f69fee1eca55b8c2ee973dd1f9a4c1e9181d80827b",
+		"folderID": "F38f43d34d4fdaf3c7c7f0983eb880ac87ef0fcf8bdc00ab8609045a2db3de1c2",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46284,14 +47992,56 @@
 				"~lt": 7000
 			},
 			"difficulty": "BASIC",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F6e0f79828e049cf59d5bf3f69fee1eca55b8c2ee973dd1f9a4c1e9181d80827b",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "BASIC (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"difficulty": "BASIC",
 			"versions": "refresh"
 		},
-		"folderID": "F2478c0debc6ab076945b12b501dcb110a0e2277ef56595b7b981c21d8b0e09c3",
+		"folderID": "Fbeed9a78f574369555f6d16f0a2b6a85fd8e4b4fd929ae15ab06d6ef4df34763",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "BASIC (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~lt": 7000
+			},
+			"difficulty": "BASIC",
+			"versions": "refresh"
+		},
+		"folderID": "F2478c0debc6ab076945b12b501dcb110a0e2277ef56595b7b981c21d8b0e09c3",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "BASIC (Re:Fresh) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": true
+		},
+		"folderID": "F9faa5c1b030ed0ca4c1bb347ea331f62050c2d3e0e13d6b1c45af8d8844df692",
+		"game": "ongeki",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Bonus tracks",
 		"type": "charts"
 	},
 	{
@@ -46303,10 +48053,10 @@
 		},
 		"folderID": "F34a8b0ba9ab1d49b73d4cb0c68aca2ca2fff5ef4f0eaa0d169c8cabaaf7f24e3",
 		"game": "ongeki",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
-		"title": "Bonus tracks",
+		"title": "Bonus tracks (old)",
 		"type": "charts"
 	},
 	{
@@ -46359,13 +48109,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~lt": 7000
-			},
+			"data¬isBonusTrack": false,
 			"difficulty": "EXPERT",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fe6dd33f70ca2a79fcce76739d1cf00a5ce0efaa6b62e22a90a33c3acf7f6ccfe",
+		"folderID": "F7eba0a99893ce70fbf35da5b6feda79ff9b0342e9ebf656b0dce33722ab37085",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46379,14 +48127,44 @@
 				"~lt": 7000
 			},
 			"difficulty": "EXPERT",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fe6dd33f70ca2a79fcce76739d1cf00a5ce0efaa6b62e22a90a33c3acf7f6ccfe",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "EXPERT (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"difficulty": "EXPERT",
 			"versions": "refresh"
 		},
-		"folderID": "F9a0e4dfbdf5d0dfd51c0f738033de9e924df4ac5651e95e8087225052466695a",
+		"folderID": "Ff337389e020a5572002b3e026fcc306064662951752de1b854d735067f89523e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "EXPERT (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~lt": 7000
+			},
+			"difficulty": "EXPERT",
+			"versions": "refresh"
+		},
+		"folderID": "F9a0e4dfbdf5d0dfd51c0f738033de9e924df4ac5651e95e8087225052466695a",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "EXPERT (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46430,10 +48208,11 @@
 	},
 	{
 		"data": {
+			"data¬isBonusTrack": false,
 			"level": "0",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fd8e306cee04a195610cb6b504cba6a3a76d04523ea6a510275859949fea9c1fc",
+		"folderID": "F9c5c1dea3de593e12d02703987385ad9db669d649f5f60057186e31f8c97878a",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46444,14 +48223,41 @@
 	{
 		"data": {
 			"level": "0",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fd8e306cee04a195610cb6b504cba6a3a76d04523ea6a510275859949fea9c1fc",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 0 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "0",
 			"versions": "refresh"
 		},
-		"folderID": "F4f2b698877b5bc95a61f5a855505f46cad196722785a6f77fae3e6fe8d8b7ce7",
+		"folderID": "F355e2f7300d8a78d8ff5c5c0f03506fdde1b1afc32b77017e92f6840bef4d537",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 0 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "0",
+			"versions": "refresh"
+		},
+		"folderID": "F4f2b698877b5bc95a61f5a855505f46cad196722785a6f77fae3e6fe8d8b7ce7",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 0 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46526,16 +48332,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "1",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F6153fa5d95ea654c5ce6ef8b3582444b4a771e1d549f0e11a5fccd995b4b5c52",
+		"folderID": "F0b22a2f7d7b0f6d0621026312a29d0f70a75a34eeef73520a19061f52bc3cd41",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46552,14 +48353,47 @@
 				}
 			},
 			"level": "1",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F6153fa5d95ea654c5ce6ef8b3582444b4a771e1d549f0e11a5fccd995b4b5c52",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "1",
 			"versions": "refresh"
 		},
-		"folderID": "Fafdee855b3eb2b7f15320ba5b612a9ace651ae577937a8fd617704638a66e164",
+		"folderID": "F82e7b4426fb38b8f30345daf7d36efb79a4ae705adcf21ad534e703770c9b2b3",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 1 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "1",
+			"versions": "refresh"
+		},
+		"folderID": "Fafdee855b3eb2b7f15320ba5b612a9ace651ae577937a8fd617704638a66e164",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46634,16 +48468,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "10",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F83efac88509a0c9dec80b8e65ced1fbe04b90b959fa363794770658edce71bb0",
+		"folderID": "F18e9883f3ad576f80927f0fa0ae8319c240e14ebae9664f0268f65a03551862e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46660,14 +48489,47 @@
 				}
 			},
 			"level": "10",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F83efac88509a0c9dec80b8e65ced1fbe04b90b959fa363794770658edce71bb0",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "10",
 			"versions": "refresh"
 		},
-		"folderID": "Ff2d48b2f8c8b08f48a50096fa4770e3d4e356a357b7f65acc477a81648b4836a",
+		"folderID": "F30c81599092538c9b996e11fa4f0edd2171739ec2d4aa7df978e1fb73365d83c",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "10",
+			"versions": "refresh"
+		},
+		"folderID": "Ff2d48b2f8c8b08f48a50096fa4770e3d4e356a357b7f65acc477a81648b4836a",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46742,16 +48604,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "10+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fa68a04e80b382dca1402e601293b8e1758ad6592b7cf4c8f2170dcca0da94347",
+		"folderID": "F894f431f829ae3db6138e3333dd77870b280905fd26cf4066f6a2e2431ab7d90",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46768,14 +48625,47 @@
 				}
 			},
 			"level": "10+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fa68a04e80b382dca1402e601293b8e1758ad6592b7cf4c8f2170dcca0da94347",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "10+",
 			"versions": "refresh"
 		},
-		"folderID": "F980ee749bfb7d592e49408764441ad62066773055b2595e21c5a945b31daf106",
+		"folderID": "F4f95b1c4c011439fd42bfc0a51c5253a102db5826c6a579f75aed51304a46331",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "10+",
+			"versions": "refresh"
+		},
+		"folderID": "F980ee749bfb7d592e49408764441ad62066773055b2595e21c5a945b31daf106",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46850,16 +48740,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "11",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F018b461820721d56e478ea2e234c6c6ca5fa0f700408e42b004ad3fa94a87303",
+		"folderID": "F72d00b884e4103af2248678be0784e1dffe6b1870bbe61db10dd8a703b9a77c2",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46876,14 +48761,47 @@
 				}
 			},
 			"level": "11",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F018b461820721d56e478ea2e234c6c6ca5fa0f700408e42b004ad3fa94a87303",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "11",
 			"versions": "refresh"
 		},
-		"folderID": "F35d077e25e91ebcef00668a81e3c761cdf36f0875252eb093edd4476ee6861a8",
+		"folderID": "F37593281d77f7ee59b1245c728b30d6c64c79ef62e599a9ce05893f534c51b31",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "11",
+			"versions": "refresh"
+		},
+		"folderID": "F35d077e25e91ebcef00668a81e3c761cdf36f0875252eb093edd4476ee6861a8",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -46958,16 +48876,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "11+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F441bd43de7b24b297c8a8fa9842dc8c2182e444435f137aaa7d5e12ed7005bc1",
+		"folderID": "F3572f08d1bc5c835cc17a2e349761fac93aa96c566e52a3bc73d23ee002a6f5e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -46984,14 +48897,47 @@
 				}
 			},
 			"level": "11+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F441bd43de7b24b297c8a8fa9842dc8c2182e444435f137aaa7d5e12ed7005bc1",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "11+",
 			"versions": "refresh"
 		},
-		"folderID": "F0cad8733c234b93715c25070853cfb506f5eab043312679fa498585e9839f77a",
+		"folderID": "F51b389ef8b6c5b43bece53f77cde9ce549dafa5cebd95efcb18704ee14e80e0b",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "11+",
+			"versions": "refresh"
+		},
+		"folderID": "F0cad8733c234b93715c25070853cfb506f5eab043312679fa498585e9839f77a",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47066,16 +49012,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "12",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fe9b5fc9e21aafd0cca4221ce85b8506c593c79e7b7c8b5e907128b03109a8e63",
+		"folderID": "F0804a6fe37a30515bc75b3e355843ee50409abac4cb63d50bfb85bfab901c1ef",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47092,14 +49033,47 @@
 				}
 			},
 			"level": "12",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fe9b5fc9e21aafd0cca4221ce85b8506c593c79e7b7c8b5e907128b03109a8e63",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "12",
 			"versions": "refresh"
 		},
-		"folderID": "Fa126a4bfb5c021c029a5c60e417c4b52134868c7a66c7cb6cacfd4231847cd51",
+		"folderID": "F10800f7ce3e243713b2c13d3b17dd67cbcfb9a8dfa69e73873d9d3f7e1f8ccbb",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "12",
+			"versions": "refresh"
+		},
+		"folderID": "Fa126a4bfb5c021c029a5c60e417c4b52134868c7a66c7cb6cacfd4231847cd51",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47174,16 +49148,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "12+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F3fcd73d7fa1a31186bb9d48c3c615496b887c791f022efb5db354e4c2151adb2",
+		"folderID": "Ff2f3d9dfbf84ddb3880f294793accf61bcb9b57f4f276bca16eb3d467195564c",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47200,14 +49169,47 @@
 				}
 			},
 			"level": "12+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F3fcd73d7fa1a31186bb9d48c3c615496b887c791f022efb5db354e4c2151adb2",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "12+",
 			"versions": "refresh"
 		},
-		"folderID": "F324e892317cbe183e0baff6fc27ed55df54f721c9175588853d5c07aa8f2c0a6",
+		"folderID": "F6f1ee3271186ba9fd88e5dcda806df71f304779f04c5812ef211ec60cfee770e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "12+",
+			"versions": "refresh"
+		},
+		"folderID": "F324e892317cbe183e0baff6fc27ed55df54f721c9175588853d5c07aa8f2c0a6",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47282,16 +49284,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "13",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F88e4061441b54406b89eae8970f78dc3bb47d641c67c50ec8d23ffe17b2c3d83",
+		"folderID": "F9b58612b2008b91fcbc5955cc7da7f28cfc4dd8fd604acb032569bbc87163f6f",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47308,14 +49305,47 @@
 				}
 			},
 			"level": "13",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F88e4061441b54406b89eae8970f78dc3bb47d641c67c50ec8d23ffe17b2c3d83",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "13",
 			"versions": "refresh"
 		},
-		"folderID": "F576605e9d7276fe2e280eadc61a5415ff0f8bcc13aaef68aca6149ba0aa0c6e6",
+		"folderID": "Fd9ace81af599c895617753fd5372d2d5abb9725a5c0a55f638e7cf62110cccfc",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "13",
+			"versions": "refresh"
+		},
+		"folderID": "F576605e9d7276fe2e280eadc61a5415ff0f8bcc13aaef68aca6149ba0aa0c6e6",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47390,16 +49420,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "13+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Faac3724955c27679c9cbf30139e9850db72a019bf9f4c7393150f70b129872e8",
+		"folderID": "Ffb841b41a202ccac79f428af7be91a282a08ea08f3c14758994c94ac53fbc8cd",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47416,14 +49441,47 @@
 				}
 			},
 			"level": "13+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Faac3724955c27679c9cbf30139e9850db72a019bf9f4c7393150f70b129872e8",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "13+",
 			"versions": "refresh"
 		},
-		"folderID": "F72d6326c3746cd58a3395f910085843bef6c8499edded40bbdd7e19821d514b1",
+		"folderID": "Fe8611aa1891032cca226210014b4cbd08db5d2683966e1b3ee2989a4a353e65e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "13+",
+			"versions": "refresh"
+		},
+		"folderID": "F72d6326c3746cd58a3395f910085843bef6c8499edded40bbdd7e19821d514b1",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47498,16 +49556,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "14",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F3ec740b29bfa01dba1962dc3754b96cc5788544ccde91217671765ecb6dc42c8",
+		"folderID": "Fd45cb4d19ed3562c486b1dc07574096cd4cd58a7306067af3a9492e73422d287",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47524,14 +49577,47 @@
 				}
 			},
 			"level": "14",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F3ec740b29bfa01dba1962dc3754b96cc5788544ccde91217671765ecb6dc42c8",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "14",
 			"versions": "refresh"
 		},
-		"folderID": "Fdaed73b57b1148ab86196d301a7e9e68430f33c362cf17c1cea4a6d7a6bad313",
+		"folderID": "Fbdb6a0902fb6a699f256b00e20cb6b7488c2868e94985f530f74cde53cc14ae9",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "14",
+			"versions": "refresh"
+		},
+		"folderID": "Fdaed73b57b1148ab86196d301a7e9e68430f33c362cf17c1cea4a6d7a6bad313",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47606,16 +49692,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "14+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F6a96eeb5acea0f446f057325665cdf3e66183183635cf9d46c446ba1344ddcb8",
+		"folderID": "F16eba2250e47e329d72715516875c8494beab4adfc08fef3f1f0eafa35586ee7",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47632,14 +49713,47 @@
 				}
 			},
 			"level": "14+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F6a96eeb5acea0f446f057325665cdf3e66183183635cf9d46c446ba1344ddcb8",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "14+",
 			"versions": "refresh"
 		},
-		"folderID": "Fb6164fc4bf400f691c290e06fb6780046461a105ada1d2f6b15ce53bdb6a98ae",
+		"folderID": "Fc8b0f523d821f55673eb65fd8fa9e2b609db1f8357b8aba38cfedeaef60c10eb",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "14+",
+			"versions": "refresh"
+		},
+		"folderID": "Fb6164fc4bf400f691c290e06fb6780046461a105ada1d2f6b15ce53bdb6a98ae",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47714,16 +49828,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "15",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F58b522c9c7858ddd194375e2b87ee44b396560a04a3732e17b4a9f959edeb5e5",
+		"folderID": "F4f3432170e43629d3656ed4e55a07648d6e2f15a7a7befa7c10e3b18e287ff29",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47740,14 +49849,47 @@
 				}
 			},
 			"level": "15",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F58b522c9c7858ddd194375e2b87ee44b396560a04a3732e17b4a9f959edeb5e5",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "15",
 			"versions": "refresh"
 		},
-		"folderID": "F726a8bbdcacd7936192b90fdb79400b99ee444eb8ce37fdd6122826e1f9ab582",
+		"folderID": "Fed1249dcdca879abcd5fa2f2b40e06619c7c8d2c7c3ffcc8faeffdf1d6aebab0",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "15",
+			"versions": "refresh"
+		},
+		"folderID": "F726a8bbdcacd7936192b90fdb79400b99ee444eb8ce37fdd6122826e1f9ab582",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47822,16 +49964,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "15+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F8fa29b4aadc6248d20fbf805eff3634a570b02e7caf6781e87d59a0b391b5771",
+		"folderID": "F4e79270e4e597765e2712018ea2caa25917da814c12a3a1317d45089e1820ff3",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47848,14 +49985,47 @@
 				}
 			},
 			"level": "15+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F8fa29b4aadc6248d20fbf805eff3634a570b02e7caf6781e87d59a0b391b5771",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "15+",
 			"versions": "refresh"
 		},
-		"folderID": "Fef8139461c072d28b5261418f1487f1983cdac913fff218a4b395bc2054f9116",
+		"folderID": "F1c44ca7749c5133150ea535b774449fb4ff24f1629f1369dc2bd59e5fb9c4e5c",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "15+",
+			"versions": "refresh"
+		},
+		"folderID": "Fef8139461c072d28b5261418f1487f1983cdac913fff218a4b395bc2054f9116",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -47930,16 +50100,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "2",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F7d798153e4f69dbb8d73015ce78318287cda1d8386bb58368bbb43f0325bd912",
+		"folderID": "F590801560ea37c551e0fbd60276df8fa7b3a266de2d568296bbce1f67c5eafe0",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -47956,14 +50121,47 @@
 				}
 			},
 			"level": "2",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F7d798153e4f69dbb8d73015ce78318287cda1d8386bb58368bbb43f0325bd912",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "2",
 			"versions": "refresh"
 		},
-		"folderID": "F97e8b43aad0c3a62110b09bf723044d88743c2eb44069b43ffc7164cf0d49676",
+		"folderID": "F74e15e28266083ec172734f1825cf6dd6329cbe80fc7bae112b9de07f5bd3eb1",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 2 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "2",
+			"versions": "refresh"
+		},
+		"folderID": "F97e8b43aad0c3a62110b09bf723044d88743c2eb44069b43ffc7164cf0d49676",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48038,16 +50236,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "3",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F235bb603eb18252b492f1832ee514b8f9486afcdd77e3812b35364421cb24908",
+		"folderID": "Fe6b21f09d031778e510f7da2497cc6522b1607dfcdf7039d49cd58f4297e1c3e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48064,14 +50257,47 @@
 				}
 			},
 			"level": "3",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F235bb603eb18252b492f1832ee514b8f9486afcdd77e3812b35364421cb24908",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "3",
 			"versions": "refresh"
 		},
-		"folderID": "F8d1c16529d7f38f214556d21ff392e9f2b6c478382ebdf6418db2baf6743b79e",
+		"folderID": "F9ece75af82638720455384255a26f3e4f202e6ea42d288ba111aff296e0622c3",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "3",
+			"versions": "refresh"
+		},
+		"folderID": "F8d1c16529d7f38f214556d21ff392e9f2b6c478382ebdf6418db2baf6743b79e",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48146,16 +50372,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "4",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F1a99521b9b71c5a1dd9e7305a911d2200a0e92585c700127e24bcafafeeae557",
+		"folderID": "F756a1f780c901f22ca020bca6abf2b7820d1727d4431f889e72322fb9758ec2e",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48172,14 +50393,47 @@
 				}
 			},
 			"level": "4",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F1a99521b9b71c5a1dd9e7305a911d2200a0e92585c700127e24bcafafeeae557",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "4",
 			"versions": "refresh"
 		},
-		"folderID": "F6de5de1517ac2cf6ee05d229d9e9db719167acf3837dcb8b93cb58d3e8fd7480",
+		"folderID": "F02dc244e0991dbd8fb80696585caaf62fb2ef4d625e6939bf85fa6b303396a7f",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 4 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "4",
+			"versions": "refresh"
+		},
+		"folderID": "F6de5de1517ac2cf6ee05d229d9e9db719167acf3837dcb8b93cb58d3e8fd7480",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48254,16 +50508,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "5",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F0df2faf8990e125c2fb5a4a0152f03a08553dcdd8964e4bad9f323d9b3aacb00",
+		"folderID": "F746796ca5ebcf9c54269dc8ec2ee2c3417f5e9d8b61e3271f141cac07ab5470f",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48280,14 +50529,47 @@
 				}
 			},
 			"level": "5",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F0df2faf8990e125c2fb5a4a0152f03a08553dcdd8964e4bad9f323d9b3aacb00",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "5",
 			"versions": "refresh"
 		},
-		"folderID": "Ffe603e48a940ab8552b87806ae94acaa4c143d78f7f828d9e6afc5313fafe698",
+		"folderID": "Fe2fb3a1e4d536e291330438802181de79a70a288489bcba0dcf616a41a29b680",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "5",
+			"versions": "refresh"
+		},
+		"folderID": "Ffe603e48a940ab8552b87806ae94acaa4c143d78f7f828d9e6afc5313fafe698",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48362,16 +50644,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "6",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F38f9ef2100458ae414d19b9b30173e3add874cd5878e306cf1f7262745823187",
+		"folderID": "F621ea714650ad5668966462e35a4fd05ac0b150160a5637906b142b250b3fd3c",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48388,14 +50665,47 @@
 				}
 			},
 			"level": "6",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F38f9ef2100458ae414d19b9b30173e3add874cd5878e306cf1f7262745823187",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "6",
 			"versions": "refresh"
 		},
-		"folderID": "F2141400b79e91a3dbb7183f3c5b35e92484492ede65b2ddc767d5d8d088f5984",
+		"folderID": "Ff58874f6ddc73eb3f88723f8a0807a5f53df179513a83c9032d0b1ac992a0af2",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 6 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "6",
+			"versions": "refresh"
+		},
+		"folderID": "F2141400b79e91a3dbb7183f3c5b35e92484492ede65b2ddc767d5d8d088f5984",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48470,16 +50780,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "7",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F5bc76d43c23b60567e779ce96f1bae4cd68783c715f0fcc1915be7c905b95cdc",
+		"folderID": "F8c8b148bf0e2fd9d7a8733e527c6accaa36bbbdb6c85ad7b824f59335b229523",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48496,14 +50801,47 @@
 				}
 			},
 			"level": "7",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F5bc76d43c23b60567e779ce96f1bae4cd68783c715f0fcc1915be7c905b95cdc",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "7",
 			"versions": "refresh"
 		},
-		"folderID": "Fc29571054ff042500576479a66dc1620463a7f65100955171aa5b6a7386a5aa3",
+		"folderID": "Fe6b1cddf8676702ebe5f9f3f37261facd82ee1866f331cad6b28eac833814ded",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "7",
+			"versions": "refresh"
+		},
+		"folderID": "Fc29571054ff042500576479a66dc1620463a7f65100955171aa5b6a7386a5aa3",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48578,16 +50916,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "7+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Ff664d4785d2adec8607a6df9198e09181c81dfeffee23f70e44b88d2b73bd61b",
+		"folderID": "F6fb193feb36e8025c23943dd01d5f2f78969e33a488ac785d59d1e7c3e087992",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48604,14 +50937,47 @@
 				}
 			},
 			"level": "7+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Ff664d4785d2adec8607a6df9198e09181c81dfeffee23f70e44b88d2b73bd61b",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "7+",
 			"versions": "refresh"
 		},
-		"folderID": "F4dc79ff218752a3f1f6aa51221056d7bd49a84d499310aaf069e916fe33848ad",
+		"folderID": "Fcca45777e2320b1a1adc3edea3c2905a0821a8fb5c2e628612e9120b14f6fd6a",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "7+",
+			"versions": "refresh"
+		},
+		"folderID": "F4dc79ff218752a3f1f6aa51221056d7bd49a84d499310aaf069e916fe33848ad",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48686,16 +51052,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "8",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fb2bb451e447cccd32f09657620c86883db8cdc46420f2dae7891c47cb86a800e",
+		"folderID": "F299927de9fba2b68b0aeab67a08b4d9427bd17b9db8286725f8a07912730eaef",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48712,14 +51073,47 @@
 				}
 			},
 			"level": "8",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fb2bb451e447cccd32f09657620c86883db8cdc46420f2dae7891c47cb86a800e",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "8",
 			"versions": "refresh"
 		},
-		"folderID": "F92734fd0505344aaeca3a329fe7c228107eb5dc59ab92b7a45fb6db21e263003",
+		"folderID": "Ffbed74047475db8913217a6ec3f66f48e4117040cf1ddf1821859d2e553a6e2b",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "8",
+			"versions": "refresh"
+		},
+		"folderID": "F92734fd0505344aaeca3a329fe7c228107eb5dc59ab92b7a45fb6db21e263003",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48794,16 +51188,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "8+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fc1a625eca8c6df9c318fd45a97105f2b9565b1a3a430e2191a3d505bb42d0736",
+		"folderID": "Fd4cebc8c09edf26299df4505f385b1fb23c7735f81d877931683930bb80e6ab7",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48820,14 +51209,47 @@
 				}
 			},
 			"level": "8+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fc1a625eca8c6df9c318fd45a97105f2b9565b1a3a430e2191a3d505bb42d0736",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "8+",
 			"versions": "refresh"
 		},
-		"folderID": "F2d299c8bf66e5e4f0666765984d4aa069ab844ccedba5e51f13ac449c846c399",
+		"folderID": "Fb64490bb405bf5bc14e533a90217ed2261f7436c0b0b724738d9391a746e67c5",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "8+",
+			"versions": "refresh"
+		},
+		"folderID": "F2d299c8bf66e5e4f0666765984d4aa069ab844ccedba5e51f13ac449c846c399",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -48902,16 +51324,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "9",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F06660ee6a2e0cc55ed0a619ffdae9ffde5edfe2d970f9da94f331a394f8797d8",
+		"folderID": "F6bcacb07b2d04500e2e227621614db9cae971b86fbe8d2fc235e78c78c13c8e0",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -48928,14 +51345,47 @@
 				}
 			},
 			"level": "9",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F06660ee6a2e0cc55ed0a619ffdae9ffde5edfe2d970f9da94f331a394f8797d8",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "9",
 			"versions": "refresh"
 		},
-		"folderID": "F8aa7a85b829aaebbb3c7832dee28d7e7ebd72479f10bb18d6209574a3cd43752",
+		"folderID": "Fcc71fa06165893bf932874d1e3c70ab50cf3ce3c4c93b70dfb262dc313a49d43",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9 (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "9",
+			"versions": "refresh"
+		},
+		"folderID": "F8aa7a85b829aaebbb3c7832dee28d7e7ebd72479f10bb18d6209574a3cd43752",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -49010,16 +51460,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~not": {
-					"~gte": 7000,
-					"~lt": 8000
-				}
-			},
+			"data¬isBonusTrack": false,
 			"level": "9+",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F3fbc01fda64baeb4ca08294e7e1d9717b5566a9bcc425388b940aad0e6c2f00b",
+		"folderID": "Fff738f7fd407611fb845ffc6e07b9f87ed5727cda93f24963b3cd7d5bc8def0b",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -49036,14 +51481,47 @@
 				}
 			},
 			"level": "9+",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F3fbc01fda64baeb4ca08294e7e1d9717b5566a9bcc425388b940aad0e6c2f00b",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"level": "9+",
 			"versions": "refresh"
 		},
-		"folderID": "Fd6ea6197839c9af4d62b58f3554fb07b3230586cc3da9c9e746c8f6046a7a1e6",
+		"folderID": "Fd24dffc316cf87e2fb40e3e6f16c23d250314e06dc439f4c03ee997a45d63422",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9+ (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~not": {
+					"~gte": 7000,
+					"~lt": 8000
+				}
+			},
+			"level": "9+",
+			"versions": "refresh"
+		},
+		"folderID": "Fd6ea6197839c9af4d62b58f3554fb07b3230586cc3da9c9e746c8f6046a7a1e6",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -49089,11 +51567,12 @@
 	},
 	{
 		"data": {
+			"data¬isBonusTrack": false,
 			"data¬isReMaster": false,
 			"difficulty": "LUNATIC",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F2d15f52de88e1ecfefb23a5c245aa47166b8717262c09750e952978df1416e5d",
+		"folderID": "Ffa72bea20f238bf52393ac4f4ec50ca61c4c19a7fbb4c172bff8f58f0d7119f9",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -49105,14 +51584,43 @@
 		"data": {
 			"data¬isReMaster": false,
 			"difficulty": "LUNATIC",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F2d15f52de88e1ecfefb23a5c245aa47166b8717262c09750e952978df1416e5d",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "LUNATIC (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"data¬isReMaster": false,
+			"difficulty": "LUNATIC",
 			"versions": "refresh"
 		},
-		"folderID": "F2de5fd8f784e94c6e2c60c5960b1306aadb76c54ce9b502421813cfa66532a36",
+		"folderID": "F47679afb42bf11092bf9fdbe5906848928a70c05753e8401b8edde08af2261ca",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "LUNATIC (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isReMaster": false,
+			"difficulty": "LUNATIC",
+			"versions": "refresh"
+		},
+		"folderID": "F2de5fd8f784e94c6e2c60c5960b1306aadb76c54ce9b502421813cfa66532a36",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "LUNATIC (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -49179,13 +51687,11 @@
 	},
 	{
 		"data": {
-			"data¬inGameID": {
-				"~lt": 7000
-			},
+			"data¬isBonusTrack": false,
 			"difficulty": "MASTER",
 			"versions": "refreshOmni"
 		},
-		"folderID": "Fe1c195cb0076220594ffc04a8dd94bcd903a2e2f9ed59d8ccd7b194bf37d0543",
+		"folderID": "Ffe0d091a06276080938466796ef863c5b80cb171eb685b5ca06d4444e7257d8a",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -49199,14 +51705,44 @@
 				"~lt": 7000
 			},
 			"difficulty": "MASTER",
+			"versions": "refreshOmni"
+		},
+		"folderID": "Fe1c195cb0076220594ffc04a8dd94bcd903a2e2f9ed59d8ccd7b194bf37d0543",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"difficulty": "MASTER",
 			"versions": "refresh"
 		},
-		"folderID": "Fe4a9d5778b692ee1e73acaa424da2f996a0b0939f46f346e16c2adc69a896453",
+		"folderID": "F75cfeea531a597ca6d110c7bc9f5e7181ef1cb2769cf5f63118a25afb57349a0",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "MASTER (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬inGameID": {
+				"~lt": 7000
+			},
+			"difficulty": "MASTER",
+			"versions": "refresh"
+		},
+		"folderID": "Fe4a9d5778b692ee1e73acaa424da2f996a0b0939f46f346e16c2adc69a896453",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{
@@ -49239,11 +51775,12 @@
 	},
 	{
 		"data": {
+			"data¬isBonusTrack": false,
 			"data¬isReMaster": true,
 			"difficulty": "LUNATIC",
 			"versions": "refreshOmni"
 		},
-		"folderID": "F543fcc76da5eb064c53309bc6170b9ae8fe0fc34ada85cb358d56282a3ea326b",
+		"folderID": "Fb4c96928cba8aaf2c6a43586ebd8b5849c75eab7601cddd97d3808e0c36139ce",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
@@ -49255,14 +51792,43 @@
 		"data": {
 			"data¬isReMaster": true,
 			"difficulty": "LUNATIC",
+			"versions": "refreshOmni"
+		},
+		"folderID": "F543fcc76da5eb064c53309bc6170b9ae8fe0fc34ada85cb358d56282a3ea326b",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Re:MASTER (Re:Fresh Omnimix) (Old)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isBonusTrack": false,
+			"data¬isReMaster": true,
+			"difficulty": "LUNATIC",
 			"versions": "refresh"
 		},
-		"folderID": "F591906452a12c984f9a5e436543802e493d15782b678b518dbeba3705720c77c",
+		"folderID": "Fa806f93af12b15a6ed1ef975f5811046561407cdd03997a06e1c45866d92e2b8",
 		"game": "ongeki",
 		"inactive": false,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Re:MASTER (Re:Fresh)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"data¬isReMaster": true,
+			"difficulty": "LUNATIC",
+			"versions": "refresh"
+		},
+		"folderID": "F591906452a12c984f9a5e436543802e493d15782b678b518dbeba3705720c77c",
+		"game": "ongeki",
+		"inactive": true,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Re:MASTER (Re:Fresh) (Old)",
 		"type": "charts"
 	},
 	{

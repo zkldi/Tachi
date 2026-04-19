@@ -244,6 +244,47 @@ EnableGraphs = true
 #
 # If present, an * matches everyone else`,
 	},
+	{
+		clientID: "CXRizu",
+		requestedPermissions: ["submit_score"],
+		name: "Rizu",
+		redirectUri: null,
+		webhookUri: null,
+		apiKeyFilename: "Rizu.cfg",
+		apiKeyTemplate: `[General]
+
+## Whether to enable score submissions
+# Setting type: Boolean
+# Default value: true
+Enable = true
+
+## Timeout for score submission in seconds
+# Setting type: Int32
+# Default value: 30
+NetworkTimeout = 30
+
+## Folder for storing imports that failed due to network errors.
+## Leave empty to disable
+# Setting type: String
+# Default value: UserData/Rizu/FailedImports
+FailedImportsFolder = UserData/Rizu/FailedImports
+
+[Keys]
+
+## Kamaitachi API keys to use for score submissions, in the format
+## of \`<access-code> = <api-key>\`. The \`default\` key is used as fallback
+## if an access code does not have an API key set, and can be removed.
+# Setting type: String
+# Default value:
+default = %%TACHI_KEY%%
+
+[Tachi]
+
+## Tachi instance base URL
+# Setting type: String
+# Default value: https://kamai.tachi.ac
+BaseUrl = ${ServerConfig.OUR_URL}`,
+	},
 ];
 
 const BokuDefaultClients: DefaultClients = [

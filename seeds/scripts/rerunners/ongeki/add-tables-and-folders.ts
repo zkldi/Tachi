@@ -52,15 +52,9 @@ for (const level of LEVELS) {
 	const data = {
 		level,
 		versions: version,
+		"data¬isBonusTrack": false,
 	};
-	if (level !== "0") {
-		data["data¬inGameID"] = {
-			"~not": {
-				"~gte": 7000,
-				"~lt": 8000,
-			},
-		};
-	}
+
 	const folderID = CreateFolderID(data, "ongeki", "Single");
 
 	levelFolderIDs.push(folderID);
@@ -78,17 +72,13 @@ for (const level of LEVELS) {
 }
 
 for (const difficulty of DIFFICULTIES) {
-	const data = { difficulty, versions: version };
+	const data = { difficulty, versions: version, "data¬isBonusTrack": false };
 
 	if (difficulty === "LUNATIC") {
 		data["data¬isReMaster"] = false;
 	} else if (difficulty === "Re:MASTER") {
 		data["data¬isReMaster"] = true;
 		data.difficulty = "LUNATIC";
-	} else {
-		data["data¬inGameID"] = {
-			"~lt": 7000,
-		};
 	}
 
 	const folderID = CreateFolderID(data, "ongeki", "Single");

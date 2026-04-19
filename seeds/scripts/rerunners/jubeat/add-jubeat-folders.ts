@@ -3,7 +3,7 @@ const { MutateCollection, CreateFolderID } = require("../../util");
 import { JUBEAT_SINGLE_CONF } from "tachi-common/config/game-support/jubeat";
 import { FolderDocument } from "tachi-common/src/types";
 
-function CreateFolder(criteria, title) {
+function CreateFolder(criteria, title, hardMode) {
 	const f: any = {
 		game: "jubeat",
 		playtype: "Single",
@@ -14,6 +14,10 @@ function CreateFolder(criteria, title) {
 		inactive: false,
 	};
 
+	f.data.difficulty = hardMode
+		? { "~in": ["HARD BSC", "HARD ADV", "HARD EXT"] }
+		: { "~in": ["BSC", "ADV", "EXT"] };
+
 	const folderID = CreateFolderID(f.data, f.game, f.playtype);
 
 	f.folderID = folderID;
@@ -21,7 +25,7 @@ function CreateFolder(criteria, title) {
 	return f;
 }
 
-const versions = ["ave"];
+const versions = ["beyond"];
 
 for (const version of versions) {
 	const shouldAddDecimals = true;
@@ -35,21 +39,17 @@ for (const version of versions) {
 			{
 				level,
 				versions: version,
-				difficulty: {
-					"~in": ["BSC", "ADV", "EXT"],
-				},
 			},
-			`Level ${level} (${versionPretty})`
+			`Level ${level} (${versionPretty})`,
+			false
 		);
 		const fh = CreateFolder(
 			{
 				level,
 				versions: version,
-				difficulty: {
-					"~in": ["HARD BSC", "HARD ADV", "HARD EXT"],
-				},
 			},
-			`Level ${level} (Hard Mode) (${versionPretty})`
+			`Level ${level} (Hard Mode) (${versionPretty})`,
+			true
 		);
 
 		levelFolders.push(f);
@@ -58,27 +58,31 @@ for (const version of versions) {
 
 	levelFolders.push(
 		CreateFolder(
-			{ levelNum: { "~gte": 9, "~lt": 10 }, versions: version, "data¬isHardMode": false },
-			`Level 9.0-9.9 (${versionPretty})`
+			{ levelNum: { "~gte": 9, "~lt": 10 }, versions: version },
+			`Level 9.0-9.9 (${versionPretty})`,
+			false
 		)
 	);
 	levelFolders.push(
 		CreateFolder(
-			{ levelNum: { "~gte": 10, "~lt": 11 }, versions: version, "data¬isHardMode": false },
-			`Level 10.0-10.9 (${versionPretty})`
+			{ levelNum: { "~gte": 10, "~lt": 11 }, versions: version },
+			`Level 10.0-10.9 (${versionPretty})`,
+			false
 		)
 	);
 
 	levelHardFolders.push(
 		CreateFolder(
-			{ levelNum: { "~gte": 9, "~lt": 10 }, versions: version, "data¬isHardMode": true },
-			`Level 9.0-9.9 (Hard Mode) (${versionPretty})`
+			{ levelNum: { "~gte": 9, "~lt": 10 }, versions: version },
+			`Level 9.0-9.9 (Hard Mode) (${versionPretty})`,
+			true
 		)
 	);
 	levelHardFolders.push(
 		CreateFolder(
-			{ levelNum: { "~gte": 10, "~lt": 11 }, versions: version, "data¬isHardMode": true },
-			`Level 10.0-10.9 (Hard Mode) (${versionPretty})`
+			{ levelNum: { "~gte": 10, "~lt": 11 }, versions: version },
+			`Level 10.0-10.9 (Hard Mode) (${versionPretty})`,
+			true
 		)
 	);
 
@@ -109,12 +113,14 @@ for (const version of versions) {
 			"10.9",
 		]) {
 			const f = CreateFolder(
-				{ level, versions: version, "data¬isHardMode": false },
-				`Level ${level} (${versionPretty})`
+				{ level, versions: version },
+				`Level ${level} (${versionPretty})`,
+				false
 			);
 			const fh = CreateFolder(
-				{ level, versions: version, "data¬isHardMode": true },
-				`Level ${level} (Hard Mode) (${versionPretty})`
+				{ level, versions: version },
+				`Level ${level} (Hard Mode) (${versionPretty})`,
+				true
 			);
 
 			detailFolders.push(f);

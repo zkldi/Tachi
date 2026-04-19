@@ -13,6 +13,7 @@ import { BackgroundContext } from "context/BackgroundContext";
 import NotificationsPage from "app/pages/dashboard/users/NotificationsPage";
 import SearchPage from "app/pages/dashboard/search/SearchPage";
 import { DashboardPage } from "../pages/dashboard/DashboardPage";
+import CreditsPage from "../pages/dashboard/misc/CreditsPage";
 import GameRoutes from "./GameRoutes";
 import ImportRoutes from "./ImportRoutes";
 import UserRoutes from "./UserRoutes";
@@ -80,6 +81,10 @@ export default function DashboardRoutes() {
 
 					<Route exact path="/privacy">
 						<PrivacyPolicyPage />
+					</Route>
+
+					<Route exact path="/credits">
+						<CreditsPage />
 					</Route>
 
 					<Route exact path="/support">

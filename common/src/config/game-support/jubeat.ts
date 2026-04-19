@@ -124,6 +124,7 @@ export const JUBEAT_SINGLE_CONF = {
 		festo: "festo",
 		"festo-omni": "festo Omnimix",
 		ave: "Ave.",
+		beyond: "beyond the Ave.",
 	},
 
 	chartData: z.strictObject({

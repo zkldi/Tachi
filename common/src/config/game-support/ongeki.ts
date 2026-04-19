@@ -19,7 +19,8 @@ export const ONGEKI_CONF = {
 			"LUNATIC",
 			"ボーナストラック",
 		]),
-		duration: z.number(),
+		duration: z.number().nullable(),
+		flavorGenre: z.string().optional(),
 	}),
 } as const satisfies INTERNAL_GAME_CONFIG;
 
@@ -35,7 +36,8 @@ export const OngekiColours = [
 	ClassValue("PLATINUM", "鉑", "Platinum: 18.000~18.999 Rating"),
 	ClassValue("RAINBOW", "虹", "Rainbow: 19.000~19.999 Rating"),
 	ClassValue("RAINBOW_SHINY", "虹(光)", "Rainbow Shiny: 20.000~20.999 Rating"),
-	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~ Rating"),
+	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~21.999 Rating"),
+	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ Rating"),
 ];
 
 export const ONGEKI_SINGLE_CONF = {
@@ -223,9 +225,10 @@ export const ONGEKI_SINGLE_CONF = {
 			"オンゲキ bright MEMORY Act.3",
 			"オンゲキ Re:Fresh",
 		]),
+		isBonusTrack: z.boolean(),
 		isReMaster: z.boolean().optional(),
-		maxPlatScore: z.number().int(),
-		inGameID: z.number().int(),
+		maxPlatScore: z.number().int().nonnegative(),
+		inGameID: z.number().int().nonnegative().nullable(),
 		chartViewURL: z.string().optional(),
 	}),
 

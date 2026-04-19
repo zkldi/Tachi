@@ -155,6 +155,9 @@ const main = async () => {
 						displayVersion: ver as any,
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
+						isReMaster:
+							inputChart.difficulty === "LUNATIC" ? inputSong.isReMaster : undefined,
+						isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
 					},
 					difficulty: inputChart.difficulty,
 					isPrimary: true,
@@ -163,9 +166,6 @@ const main = async () => {
 					playtype: "Single",
 					versions: [CURRENT_VERSION, CURRENT_OMNIMIX],
 				};
-				if (chart.difficulty === "LUNATIC") {
-					chart.data.isReMaster = inputSong.isReMaster;
-				}
 				changes.charts.push(`${song.title} ${chart.difficulty} ${chart.level}`);
 				charts.push(chart);
 			}

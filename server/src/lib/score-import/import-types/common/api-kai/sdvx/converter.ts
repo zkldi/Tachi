@@ -18,7 +18,7 @@ const PR_KAI_SDVX_SCORE = {
 	music_id: p.isPositiveInteger,
 	music_difficulty: p.isBoundedInteger(0, 4),
 	played_version: p.isBoundedInteger(1, 6),
-	clear_type: p.isBoundedInteger(1, 5),
+	clear_type: p.isBoundedInteger(1, 6),
 	max_chain: p.isPositiveInteger,
 	score: p.isBoundedInteger(0, 10_000_000),
 	critical: p.isPositiveInteger,
