@@ -28962,5 +28962,64 @@
 			"RYORAN HITCHART"
 		],
 		"title": "繚乱ヒットチャート"
+	},
+	{
+		"altTitles": [],
+		"artist": "SOUND HOLIC feat. Nana Takahashi",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "GIRL'S EUROBEAT"
+		},
+		"id": 2578,
+		"searchTerms": [],
+		"title": "CARNIVOROUS"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Totoriott",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "WONDER QUEST"
+		},
+		"id": 2579,
+		"searchTerms": [],
+		"title": "Chronoxia"
+	},
+	{
+		"altTitles": [],
+		"artist": "KOTONOHOUSE",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "HYBRID RHYTHM BASS"
+		},
+		"id": 2580,
+		"searchTerms": [],
+		"title": "I Want To Do This Keep"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dirty Androids",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "FUTURE BASS"
+		},
+		"id": 2581,
+		"searchTerms": [],
+		"title": "Pale Garden"
+	},
+	{
+		"altTitles": [],
+		"artist": "NU-KO",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "わんわんコア"
+		},
+		"id": 2582,
+		"searchTerms": [
+			"Pochiko no shiawasena nichijou",
+			"Pochiko",
+			"Pupcore"
+		],
+		"title": "ポチコの幸せな日常"
 	}
 ]
