@@ -9735,7 +9735,7 @@
 		},
 		"folderID": "Facbfd1512cc2c53313e6fd7d92b6b8d861090a0747335f3e6add42a417590f0a",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "ADVANCED (X-VERSE International)",
@@ -9752,6 +9752,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "ADVANCED (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ADVANCED",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fc9b70c67ebea3a108f0b4864403233c2950de7f0792ae4ccd9739b6e31d63e34",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ADVANCED (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ADVANCED",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Ffa01f4285bd9fdd4e355376acfd0e4cad88859580241f1e3015b2aebbec6b885",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ADVANCED (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ADVANCED",
+			"versions": "xversex"
+		},
+		"folderID": "F42fea96c5203dba80465e03f31e81911fcd8d0184a47ff0103e4b190009b6af8",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ADVANCED (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -9982,7 +10021,7 @@
 		},
 		"folderID": "F29cf75cc374f0bf012a8e8805293dfe7d7a1994fa225b9f70ed2a703234eaa2e",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "BASIC (X-VERSE International)",
@@ -9999,6 +10038,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "BASIC (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "BASIC",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fdd4b38839861f45cada10c710d166b76527065977dce54d461804c73b3f44a27",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "BASIC (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "BASIC",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F11b5c7bcb30c01f5ca305ad33db6937bc9986085bcb6516ef10ebd9500432ff6",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "BASIC (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "BASIC",
+			"versions": "xversex"
+		},
+		"folderID": "Fd9936430e2632d963b24bec9b007b0d8c86174c78246c4d474746c2618199991",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "BASIC (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -10229,7 +10307,7 @@
 		},
 		"folderID": "F23fa4adf22e9a3124b98ced3bfab301e78a7d1e3f83908052e1291ec38d2251d",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "EXPERT (X-VERSE International)",
@@ -10246,6 +10324,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "EXPERT (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "EXPERT",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F7adea00133170ed8e8956aeea7c6f471faba03a8b72feb1edae67b9a22be88ae",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "EXPERT (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "EXPERT",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F4d32c8c9186952f94b3a0f81588ec24fbbd12734ac0fb8e9c00f99ec1f86bb1d",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "EXPERT (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "EXPERT",
+			"versions": "xversex"
+		},
+		"folderID": "F24a34ff7b47fc7544d62d369ee234f1ff73a3ef965f10d28ece4bdac356953e5",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "EXPERT (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -10489,7 +10606,7 @@
 		},
 		"folderID": "Fe386543664924d2267528fa7603e4cb5b781a64741bf962ca57852592e5dc49e",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 1 (X-VERSE International)",
@@ -10506,6 +10623,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 1 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "1",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F10f8ced62275119617b2cc090628b11f6c6261801360c829232a5ad0af213fda",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "1",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F046baf57512b957afe7af67ef4b611066fce3a2cb8901134f8cce668b0103017",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "1",
+			"versions": "xversex"
+		},
+		"folderID": "F6e5a873bd9d50c2b8a87e5221ddae1aaddacb41789b3bba3459a3dcee34270ce",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 1 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -10749,7 +10905,7 @@
 		},
 		"folderID": "Fb822c03e7c804b4cafa63fdd1748469a8e7f75cf2d87251e6457973622ed0b5f",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10 (X-VERSE International)",
@@ -10766,6 +10922,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fc5cfb7274045b12cb9e36c1837e869bcade076a60b34b70c9badfc2c4b8152a3",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F9704e9719e8be9753d75c9c03cd6c9f3317ed8fdc1f98cb5789dc007c1a6a786",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10",
+			"versions": "xversex"
+		},
+		"folderID": "F4f0e94ea6e2b08e9422056a5648a102344f2c518ec4368033745b94c7630e136",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -11009,7 +11204,7 @@
 		},
 		"folderID": "F250561198285f25db73753fe30f6f85cc4f417c1e238fb2fb82cdc181b9285f3",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10+ (X-VERSE International)",
@@ -11026,6 +11221,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 10+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F0090ef80fb39cb81013333743217862a3ba04b51464389b95beed62a049c501f",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F98a017f4874848297ab02df0c83d545e4a40726cafa2a0c0e709b664009c630c",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "10+",
+			"versions": "xversex"
+		},
+		"folderID": "F2e67b3d7ca0a121619174e910ebdfcbc9ca265076563125837e8de00ea0da61d",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 10+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -11269,7 +11503,7 @@
 		},
 		"folderID": "Ffeb20fd25b71cda5f9de9006c504e6cb762474387f4d6769df87cf631a3edb0c",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11 (X-VERSE International)",
@@ -11286,6 +11520,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F21e3258edbaf730c5480013df5fd4b2277539643032d5d691aa0a641bd306a05",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F80761cb1277a5aee8493a8083fc494970481c725b03b016553f483363841d684",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11",
+			"versions": "xversex"
+		},
+		"folderID": "F2172a8dca42ba8693d4f68617fa1938add765726b6c97935fdb7f0bc9831b158",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -11529,7 +11802,7 @@
 		},
 		"folderID": "F5c6deed5a11553470e27a8d2ec40de7af7fe37e3865a9ad2e40e051f93eb354c",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11+ (X-VERSE International)",
@@ -11546,6 +11819,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 11+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F2f010029e193be66257f4561541ff327bf5a024359ef4fd0d6182d6c640cde35",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F10d0d4c83a4a4677d7fa1896d61e5a1ddcc8f3dac3ec878766f509c575b3e6a7",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "11+",
+			"versions": "xversex"
+		},
+		"folderID": "F4f9b014e489769f20c84a0126789e112e94a4eafed23096a23a80eac02d35d9a",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 11+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -11789,7 +12101,7 @@
 		},
 		"folderID": "Fd58e13b6bf2dd2024555112cac321e893757b8880fe8c24f35d2e3367800930b",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12 (X-VERSE International)",
@@ -11806,6 +12118,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Faafed2efd314c61bfe45e8c8a69300378ebca4df75380d7982aeaf8468421a05",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Ff6b2a6e0bf89c46b9b8bac47c5381c6f2d8baf995c2a5191d32e357bf96c46c7",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12",
+			"versions": "xversex"
+		},
+		"folderID": "F092db5414cef718cbad0c13728d3081013b7b9d457c8d37681437349bff3beec",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -12049,7 +12400,7 @@
 		},
 		"folderID": "F99dfede2929d518e0f83f7bd7530cf486f2d24fab9aaf931140c8e8a143f5ae7",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12+ (X-VERSE International)",
@@ -12066,6 +12417,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 12+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fea7f965d7ecee5d5668a58c64fd4dfb1ddc6f8636ab710283298a88db4b94802",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F0d13b80fdc09e892bcd1dd2572478d02cda14c69a824cc08374bdea8fb28ed97",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "12+",
+			"versions": "xversex"
+		},
+		"folderID": "F95d7ce9892133a32e5fd00f51b5263f3ed3896ccd5fea9b40a9089a39620b8c5",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 12+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -12309,7 +12699,7 @@
 		},
 		"folderID": "F2534cfa94bc86823605828ab249738f4da2ee467b9a5f4da9726527ea4268db0",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13 (X-VERSE International)",
@@ -12326,6 +12716,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F606bfab292fe5e9a48b6948164cc910efeac633a442bb0c85fa97920d72ef5eb",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fbe791782c90d97ea66387b24a4c9ba27417288695d23357eb5c42601d0971171",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13",
+			"versions": "xversex"
+		},
+		"folderID": "Ffd9ec0a570ea29f202a5605da98b2e3c80198b7bfa797d07ba0ae82dca7d8667",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -12569,7 +12998,7 @@
 		},
 		"folderID": "F029015766d2bbe9af95f7421546fe6ceca070c81600999ab1d93905f1de8f494",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13+ (X-VERSE International)",
@@ -12586,6 +13015,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 13+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F32baaf1d05c9c04a13bcfa9fb3140a0441572a1257814a6db51c31792e94b11e",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F89246a8bd6a99232abf90ba6dd0c2ac232d8bf1c59fd206fc01d9f59a6b1b6d2",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "13+",
+			"versions": "xversex"
+		},
+		"folderID": "Fdb17af717a8e9fc2be7f752e44456e02bb8a7dec373fec0daa6cb93093f511d4",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 13+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -12829,7 +13297,7 @@
 		},
 		"folderID": "Fe06ee81e02d05cd626f5bd85f704168b7ba42dc3c128b77f0dd4b7ac882fd6d4",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14 (X-VERSE International)",
@@ -12846,6 +13314,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F7d137f460e821299ad548693c87c7614b549d91221ad99ee265bc481b31d134f",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fcbc1caf33e1d94d62808b0c8952db361347105da71f5d87b0a6811808cef21bc",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14",
+			"versions": "xversex"
+		},
+		"folderID": "F664c48e83b824d9cd26fe9c4397f069bd4bf3aaae321c24228a9ffa22832713b",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -13089,7 +13596,7 @@
 		},
 		"folderID": "F6dba9593f5a90a792b739fb749b156f6835054470c773ab7d7bef8dcf6069479",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14+ (X-VERSE International)",
@@ -13106,6 +13613,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 14+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fad07d35afa8aa489bfd0e759a532f98a6605a5568926b539d9b00e9e2d84e97a",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F7a8789ff51f1ceef4b0f3c4df44c8995c8a24a663d2416dc30448d394381e0d5",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "14+",
+			"versions": "xversex"
+		},
+		"folderID": "F174211aa08a1008bf4d8cacfe827a61efd17030439d7ff31c29bf10806fc4520",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 14+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -13349,7 +13895,7 @@
 		},
 		"folderID": "Fed82b94e4d830a40894070d5904c38c46815b2d9e4455b8a2254fcd1cb735161",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15 (X-VERSE International)",
@@ -13366,6 +13912,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fd638681ec631f679030a0210f376256935c1a6f43fddd8853628f2a40604736f",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F587a8266b8f531dbb356b84e904aabb8e13c145ed286a21035102e4325b3c3ea",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15",
+			"versions": "xversex"
+		},
+		"folderID": "Feae02c25894cfae29ff6ffad1421941fa04423e52b180431e562cfaaa416fde3",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -13609,7 +14194,7 @@
 		},
 		"folderID": "Fe008404ed076db79c3ea8a249456ca9f8b493bb55b0b9e32e646e3c8ab7f903d",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15+ (X-VERSE International)",
@@ -13626,6 +14211,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 15+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F5bbc22eaa30ef98e60f083a06c099a9555fc1d3bb55085e756fe7c25a1b82dde",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F0801e7113bd88f3d05aa4a82a5e124b73e7041de6b447982fde3bf006219d175",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "15+",
+			"versions": "xversex"
+		},
+		"folderID": "F4571a6b220034ecad2b3317bd6af3d388295c8716dab778b39b7661ad4f194ba",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 15+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -13869,7 +14493,7 @@
 		},
 		"folderID": "Fd6dca35c400eac880e8f8ee998c3d1ec7d6076f8296da1b481aaaaed575b1595",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 2 (X-VERSE International)",
@@ -13886,6 +14510,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 2 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "2",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F72f41c91fa5a8f3ee48243195b0440e5100f21794b03d285b10f42f9f88abcb1",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "2",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F8df7ba7b714f991d1065f129a8890db8946093a5f80202f9d2f5895f5958798d",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "2",
+			"versions": "xversex"
+		},
+		"folderID": "Fe570dcfab418ee0f286ce1971bfe4000be2e3f142c9ddf5b23ef98f86e9b0e61",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 2 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -14129,7 +14792,7 @@
 		},
 		"folderID": "Ff5aa7146c9cc572c5be0bc6c6d3226aadcb9f5fe4e00cec13098b0f371648627",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (X-VERSE International)",
@@ -14146,6 +14809,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 3 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "3",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F5f6bc79ced64f3ee70ae45dcf32b563fb0f1521f2b3238f63025434fdba039b5",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "3",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F8a77555d699299f906dc9d817fc2cb5034f18b758053a73bef801ee9705ecb2b",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "3",
+			"versions": "xversex"
+		},
+		"folderID": "F51fdf5c56ea9617650d660c46eb856bd6dd674a931020893a6eb7934dc3aa3ff",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 3 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -14389,7 +15091,7 @@
 		},
 		"folderID": "F57dade5c85231209d0b336c89dfa84ae6ac5284b6e92f3d21087cfb89a49f0de",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 4 (X-VERSE International)",
@@ -14406,6 +15108,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 4 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "4",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F60105b126c3008d8820b4033973e7bc1e8cb775b0bbd68f6c1e532dc6ad48efd",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "4",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F431baa61334b0bc27bca3ec45ad2e347c86e460b9e8b5a35b8db0515326c2456",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "4",
+			"versions": "xversex"
+		},
+		"folderID": "F6170c950710c83a645127d1ea93449f04b66c92bbe5cdce36282029de2d8e6d1",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 4 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -14649,7 +15390,7 @@
 		},
 		"folderID": "F02a445f05d18b237e8adae4b4aabb7693b383fec78aaa4e80ff328c188beb933",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (X-VERSE International)",
@@ -14666,6 +15407,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 5 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "5",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F34d3c213fda72df0e11ded23e42b57ff55f37ddef0ff1b854862d27a85dc660f",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "5",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F756cc9ebec74fa5a447e06a664d6e121dc30937ed91d4d01511afa53302dfa34",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "5",
+			"versions": "xversex"
+		},
+		"folderID": "F8b055dac77d7ecbbbee146519ef9c58b37cf12da1ebe819ebc2186c1d0342c53",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 5 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -14909,7 +15689,7 @@
 		},
 		"folderID": "Fdb566a07fc91fd63990fa1dd6864c1fc70976ae7093b486bcba7473e7992e221",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 6 (X-VERSE International)",
@@ -14926,6 +15706,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 6 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "6",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F5ac4f99c7f376736657e31ed5f4d7906a3271d438feabb7043cd8ad104ec7be2",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "6",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F5e060d04246aa31438370080c0802f0fad2691cd144584427f733b7edc5cd5bc",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "6",
+			"versions": "xversex"
+		},
+		"folderID": "F64abf7f8637477e3849c752d6e8c87a20e16ebe4e278a8c9c4991266182aacf2",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 6 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -15169,7 +15988,7 @@
 		},
 		"folderID": "F09652e226a90238fafbf488bd1a86a8f106d4c24490ea0847d3c792e274ccfe2",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (X-VERSE International)",
@@ -15186,6 +16005,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fd1af559fd214f76e4ea6c87b90a9d31ef11c9cdadc015a93cfbc4d84d9ac4833",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fa355606d58a58846c002b2d20d0189dd0fb291e39fa67ac64ea3cae047bef66c",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7",
+			"versions": "xversex"
+		},
+		"folderID": "F987577057b78b90b364e769692668309c6f488e4bdfb8801db5ce66b5d110304",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -15429,7 +16287,7 @@
 		},
 		"folderID": "F553d9f51b2546df599ab2ada36c2362db39244344693962919f742bc3fa083a2",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7+ (X-VERSE International)",
@@ -15446,6 +16304,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 7+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F2aae0124c8b8a615cbd69d42e55bd48024d0560e3961e8bff15b7ffaf8d13931",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F534d618e580a79183d2950457831e07f2d62d514bf0350c269f9045adb53a683",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "7+",
+			"versions": "xversex"
+		},
+		"folderID": "Fb42bf4ce4579bbe67cd43b1e208de17cf6b9a5dac19e88956c45181ed5dc4fc9",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 7+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -15689,7 +16586,7 @@
 		},
 		"folderID": "F52de6f14579ec9ee1c6430a19aff5b5f91b6db5ab0b1911eae535951ac5659d3",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (X-VERSE International)",
@@ -15706,6 +16603,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F26d428a90c674a18ebdaa8106094dd2a05aa0c23818feb0cbb09a46546b336ca",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fe7f6fc3ee2ba1f95358bcc8bfb82c4233ceedb9e3ea916db73a9acd0e5eaa549",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8",
+			"versions": "xversex"
+		},
+		"folderID": "Ff42bffee424d0b9c1de0ff319780220acd408726b1ad5480fb0fed1c993810cc",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -15949,7 +16885,7 @@
 		},
 		"folderID": "Fdaf7c832e51cfc23924513cbe44e2f1ad90f0665a6628269c2d2cb387d4329ad",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8+ (X-VERSE International)",
@@ -15966,6 +16902,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 8+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F24d5ec0095262d4246dfa8804d1111df045a41520b0df11c63fbeb42aaed0209",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fef182d656bb469a87dad86453267d503ff58274a6b418b7c953ea7b8876d9bd6",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "8+",
+			"versions": "xversex"
+		},
+		"folderID": "F84665df97a08b65e4008f40d1e982c2cecc5ad51c06ec93849b2d0506201435e",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 8+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -16209,7 +17184,7 @@
 		},
 		"folderID": "Fccdcc8c02073ac12e7dd165f8d55a2a17efbcb58faa4d8fa6a7850f15883b1c7",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9 (X-VERSE International)",
@@ -16226,6 +17201,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9 (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fd2160b4d66198e290952f5a3a98387f68bf67a9740e812ae0b4538977aefda10",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9",
+			"versions": "xversex-omni"
+		},
+		"folderID": "F5d833fd17fffddc0b83b84d27c0428a94d3c7a186469c8d2d490788940515ce6",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9",
+			"versions": "xversex"
+		},
+		"folderID": "Ffe7f8bf0009a8c74a90d5e4b5594433b5c58c218fa5799c7b09a9db4e1493af3",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9 (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -16469,7 +17483,7 @@
 		},
 		"folderID": "F6513449a98265e3c63f3b37f33f72cde1b27e22207a0a153ab95b62f09b60527",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9+ (X-VERSE International)",
@@ -16486,6 +17500,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "Level 9+ (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9+",
+			"versions": "xversex-intl"
+		},
+		"folderID": "Fd85bb3a0573d701a915f8a0e1906d00c5f2394e0613e47906cd4ff4d15bead29",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9+",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fcc2d1cdb532e72862f5f29054c09bb0813c614fb9fedd5a4a89e03ea7d3dd48b",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"level": "9+",
+			"versions": "xversex"
+		},
+		"folderID": "F86dfbec3e4315695b8a726acabdb456d1bebf58d65754c480badf5bf226f9582",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "Level 9+ (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -16716,7 +17769,7 @@
 		},
 		"folderID": "F4189916efac866a65bc9f9ab73900cbcc6f81a5b6906d049673de566f3b746d2",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "MASTER (X-VERSE International)",
@@ -16733,6 +17786,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "MASTER (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "MASTER",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F8e0da9418524adebca50c8be8d756653416c99657630c573806ad8e975e3b218",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "MASTER",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Ff4049e46e3508d5da864ac84b2363c49551bfdce3f122f3e97156bdfcb9c9379",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "MASTER",
+			"versions": "xversex"
+		},
+		"folderID": "Fa5c39072a8dd2192276d18a788f64e5b303e1c12ad370cc218708c1858d7246f",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -16850,7 +17942,7 @@
 		},
 		"folderID": "Fee202376cdba6c231f02a9dc81d5c11eb31d8012e7326d5b254a6a307b06d992",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "MASTER+ULTIMA (X-VERSE International)",
@@ -16872,6 +17964,60 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "MASTER+ULTIMA (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"ULTIMA"
+				]
+			},
+			"versions": "xversex-intl"
+		},
+		"folderID": "F364f7a7e028a84c7a958623aa248b150ebc864aa5fbc845d5e2eb1a5cef11767",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER+ULTIMA (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"ULTIMA"
+				]
+			},
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fdf0e7a0c4ec84cb934692334bf6470e0ec2448ab99bb82ff6d7cfb43928b7816",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER+ULTIMA (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": {
+				"~in": [
+					"MASTER",
+					"ULTIMA"
+				]
+			},
+			"versions": "xversex"
+		},
+		"folderID": "F7badfe2da255a015185ea153b6179e850affe2a2a91654bf762564c67ea47e98",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "MASTER+ULTIMA (X-VERSE-X)",
 		"type": "charts"
 	},
 	{
@@ -17107,7 +18253,7 @@
 		},
 		"folderID": "F0cd842b13c2f6e0e9d50f0acfea08ccccefcd08a63345364c2c674d9fc63c393",
 		"game": "chunithm",
-		"inactive": false,
+		"inactive": true,
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "ULTIMA (X-VERSE International)",
@@ -17124,6 +18270,45 @@
 		"playtype": "Single",
 		"searchTerms": [],
 		"title": "ULTIMA (X-VERSE Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ULTIMA",
+			"versions": "xversex-intl"
+		},
+		"folderID": "F714deb8914270717a5056f73dc39e38f234a4cec1f6df65fac543fdaf7a56c20",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ULTIMA (X-VERSE-X International)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ULTIMA",
+			"versions": "xversex-omni"
+		},
+		"folderID": "Fef28dce0e07241dd62a08d56095b14bb61fe55d848e9d2efc795d78f7f049daf",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ULTIMA (X-VERSE-X Omnimix)",
+		"type": "charts"
+	},
+	{
+		"data": {
+			"difficulty": "ULTIMA",
+			"versions": "xversex"
+		},
+		"folderID": "F51b95ce56fe0329a69a308758ca85e682b2932f85f7e5eb73f608c81c2890938",
+		"game": "chunithm",
+		"inactive": false,
+		"playtype": "Single",
+		"searchTerms": [],
+		"title": "ULTIMA (X-VERSE-X)",
 		"type": "charts"
 	},
 	{

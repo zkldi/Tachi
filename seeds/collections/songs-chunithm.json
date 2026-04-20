@@ -9789,6 +9789,17 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "SQUARE ENIX",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 820,
+		"searchTerms": [],
+		"title": "ビッグブリッヂの死闘 -シアトリズムFFAC Arrange- from FFV"
+	},
+	{
+		"altTitles": [],
 		"artist": "HaNaMiNa feat.Nadeshiko",
 		"data": {
 			"displayVersion": "CHUNITHM CRYSTAL",
@@ -20516,7 +20527,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "箱部なる (CV: M・A・O)",
+		"artist": "箱部 なる(CV:M・A・O)",
 		"data": {
 			"displayVersion": "CHUNITHM LUMINOUS",
 			"duration": 172.756,
@@ -23361,7 +23372,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "Mitsukiyo「ブルーアーカイブ -Blue Archive-」",
+		"artist": "SUGAR RUSH「ブルーアーカイブ -Blue Archive-」",
 		"data": {
 			"displayVersion": "CHUNITHM X-VERSE",
 			"duration": 157.333,
@@ -24367,5 +24378,731 @@
 			"yume to kibou"
 		],
 		"title": "夢と希望"
+	},
+	{
+		"altTitles": [],
+		"artist": "米津玄師",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2896,
+		"searchTerms": [],
+		"title": "BOW AND ARROW （アニメ・オープニングver.）"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ave Mujica",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2897,
+		"searchTerms": [],
+		"title": "Ave Mujica"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ave Mujica",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2898,
+		"searchTerms": [],
+		"title": "KiLLKiSS"
+	},
+	{
+		"altTitles": [],
+		"artist": "サカナクション",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2899,
+		"searchTerms": [],
+		"title": "怪獣"
+	},
+	{
+		"altTitles": [],
+		"artist": "不破湊",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2900,
+		"searchTerms": [],
+		"title": "一旦ステイ TONIGHT"
+	},
+	{
+		"altTitles": [],
+		"artist": "DECO*27",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2901,
+		"searchTerms": [],
+		"title": "モニタリング"
+	},
+	{
+		"altTitles": [],
+		"artist": "なきそ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2902,
+		"searchTerms": [],
+		"title": "化けの花"
+	},
+	{
+		"altTitles": [],
+		"artist": "はろける",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2903,
+		"searchTerms": [],
+		"title": "キャンディークッキーチョコレート"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぱらどっと",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2904,
+		"searchTerms": [],
+		"title": "Ultimate taste"
+	},
+	{
+		"altTitles": [],
+		"artist": "saaa",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2905,
+		"searchTerms": [],
+		"title": "MORNINGLOOM"
+	},
+	{
+		"altTitles": [],
+		"artist": "SHIKI",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2906,
+		"searchTerms": [],
+		"title": "Angelic Layer"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2907,
+		"searchTerms": [],
+		"title": "AiAe"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ゲキマイ"
+		},
+		"id": 2908,
+		"searchTerms": [],
+		"title": "WakeUP MakeUP FEVER!"
+	},
+	{
+		"altTitles": [],
+		"artist": "カタオカツグミ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ゲキマイ"
+		},
+		"id": 2909,
+		"searchTerms": [],
+		"title": "Starlight★Limited"
+	},
+	{
+		"altTitles": [],
+		"artist": "llliiillliiilll",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ゲキマイ"
+		},
+		"id": 2910,
+		"searchTerms": [],
+		"title": "BIRTH"
+	},
+	{
+		"altTitles": [],
+		"artist": "小野 美苗(CV:伊藤 美来)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "イロドリミドリ"
+		},
+		"id": 2911,
+		"searchTerms": [],
+		"title": "当たり前田の小野美苗"
+	},
+	{
+		"altTitles": [],
+		"artist": "MIMI feat.wawa",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2912,
+		"searchTerms": [],
+		"title": "魔法に照らされたアンコール"
+	},
+	{
+		"altTitles": [],
+		"artist": "niki feat.DELUTAYA",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2913,
+		"searchTerms": [],
+		"title": "ジナ"
+	},
+	{
+		"altTitles": [],
+		"artist": "s-don",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2914,
+		"searchTerms": [],
+		"title": "Road to Aventura"
+	},
+	{
+		"altTitles": [],
+		"artist": "ああああ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2915,
+		"searchTerms": [],
+		"title": "☆をつなぐシュトラール"
+	},
+	{
+		"altTitles": [],
+		"artist": "AKIRA YAMAOKA",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2916,
+		"searchTerms": [],
+		"title": "MOMOCO68000"
+	},
+	{
+		"altTitles": [],
+		"artist": "MIssionary & DCWH",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2917,
+		"searchTerms": [],
+		"title": "〚回帰〛 ～Scherzo ~フォルトゥーナの悪戯~"
+	},
+	{
+		"altTitles": [],
+		"artist": "Felysrator (feat. Lamanya)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2918,
+		"searchTerms": [],
+		"title": "tHE uNcontRollaBle ciNdeRella"
+	},
+	{
+		"altTitles": [],
+		"artist": "かねこちはる",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2919,
+		"searchTerms": [],
+		"title": "轆轤首"
+	},
+	{
+		"altTitles": [],
+		"artist": "蓮ノ空女学院スクールアイドルクラブ「Link！Like！ラブライブ！」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2920,
+		"searchTerms": [],
+		"title": "アイドゥーミー！"
+	},
+	{
+		"altTitles": [],
+		"artist": "Edel Note[セラス 柳田 リリエンフェルト(CV.三宅美羽)、桂城 泉(CV.進藤あまね)]「Link！Like！ラブライブ！」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2921,
+		"searchTerms": [],
+		"title": "Edelied"
+	},
+	{
+		"altTitles": [],
+		"artist": "マサラダ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2922,
+		"searchTerms": [],
+		"title": "㋰責任集合体"
+	},
+	{
+		"altTitles": [],
+		"artist": "isonosuke",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2923,
+		"searchTerms": [],
+		"title": "バカ通信"
+	},
+	{
+		"altTitles": [],
+		"artist": "さたぱんP",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2924,
+		"searchTerms": [],
+		"title": "ヤババイナ"
+	},
+	{
+		"altTitles": [],
+		"artist": "凋叶棕 feat. めらみぽっぷ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2925,
+		"searchTerms": [],
+		"title": "A-Yah-YAh-YaH-YAH!"
+	},
+	{
+		"altTitles": [],
+		"artist": "魂音泉",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2926,
+		"searchTerms": [],
+		"title": "アマノジャクリバース feat. ｙｔｒ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Jerico",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2927,
+		"searchTerms": [],
+		"title": "The Music of Violent Eating"
+	},
+	{
+		"altTitles": [],
+		"artist": "FELT",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2928,
+		"searchTerms": [],
+		"title": "New World"
+	},
+	{
+		"altTitles": [],
+		"artist": "森羅万象",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "東方Project"
+		},
+		"id": 2929,
+		"searchTerms": [],
+		"title": "メイドノココロハアヤツリドール"
+	},
+	{
+		"altTitles": [],
+		"artist": "sound piercer feat.Ritsu",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2932,
+		"searchTerms": [],
+		"title": "愛と煩悩と輪廻と常識の極彩世界"
+	},
+	{
+		"altTitles": [],
+		"artist": "kei_iwata / KeiuO",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2933,
+		"searchTerms": [],
+		"title": "ゼイタクするまで抱きしめて"
+	},
+	{
+		"altTitles": [],
+		"artist": "あとぅす feat.橘花音",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2934,
+		"searchTerms": [],
+		"title": "LAST PROPOZE"
+	},
+	{
+		"altTitles": [],
+		"artist": "駄菓子O型 feat.みょみょ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2935,
+		"searchTerms": [],
+		"title": "天地のうた"
+	},
+	{
+		"altTitles": [],
+		"artist": "OSTER project feat. 常盤ゆう",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2936,
+		"searchTerms": [],
+		"title": "Aether Wind"
+	},
+	{
+		"altTitles": [],
+		"artist": "Qutabire feat.柚子花",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2937,
+		"searchTerms": [],
+		"title": "そして春めくモノローグ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sakuzyo or Sobrem",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2938,
+		"searchTerms": [],
+		"title": "Sweet & Sour"
+	},
+	{
+		"altTitles": [],
+		"artist": "芒崎 奏(CV:立花 理香)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "イロドリミドリ"
+		},
+		"id": 2939,
+		"searchTerms": [],
+		"title": "ソレイユ"
+	},
+	{
+		"altTitles": [],
+		"artist": "花鋏キョウ、獅子神レオナ、水瓶ミア、夢川かなう",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2940,
+		"searchTerms": [],
+		"title": "もっと！"
+	},
+	{
+		"altTitles": [],
+		"artist": "獅子神レオナ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2941,
+		"searchTerms": [],
+		"title": "はっぴーでいず！"
+	},
+	{
+		"altTitles": [],
+		"artist": "花鋏キョウ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2942,
+		"searchTerms": [],
+		"title": "Behavior"
+	},
+	{
+		"altTitles": [],
+		"artist": "SAWTOWNE",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2943,
+		"searchTerms": [],
+		"title": "M@GICAL☆CURE! LOVE ♥ SHOT!"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAK",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2944,
+		"searchTerms": [],
+		"title": "LEMON MELON COOKIE"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾),長門有希(CV.茅原実里),朝比奈みくる(CV.後藤邑子)、キョン(CV.杉田智和)、古泉一樹(CV.小野大輔)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2945,
+		"searchTerms": [],
+		"title": "無敵的ハピネス！(SOS団5人Ver.)"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2946,
+		"searchTerms": [],
+		"title": "Chasing destiny"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2947,
+		"searchTerms": [],
+		"title": "Colorful Starting Line"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yuta Imai",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ゲキマイ"
+		},
+		"id": 2948,
+		"searchTerms": [],
+		"title": "THE TRiANGLE"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yu_Asahina",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2949,
+		"searchTerms": [],
+		"title": "Verse X"
+	},
+	{
+		"altTitles": [],
+		"artist": "xi",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2950,
+		"searchTerms": [],
+		"title": "DOMiNUS_GRAiL"
+	},
+	{
+		"altTitles": [],
+		"artist": "もちうつね feat.桃寝ちのい",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2951,
+		"searchTerms": [],
+		"title": "パステル・シタイ！"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ponchi♪ feat.はぁち",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2952,
+		"searchTerms": [],
+		"title": "彩祭ワンダーワン！"
+	},
+	{
+		"altTitles": [],
+		"artist": "ShiBa × U-Ruri",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2953,
+		"searchTerms": [],
+		"title": "Fly Better!"
+	},
+	{
+		"altTitles": [],
+		"artist": "t+pazolite vs Yuta Imai",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "ORIGINAL"
+		},
+		"id": 2954,
+		"searchTerms": [],
+		"title": "Phantom Crisis"
+	},
+	{
+		"altTitles": [],
+		"artist": "萩原 七々瀬(CV:東城 日沙子)",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "イロドリミドリ"
+		},
+		"id": 2955,
+		"searchTerms": [],
+		"title": "Future Refrain"
+	},
+	{
+		"altTitles": [],
+		"artist": "マサラダ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2956,
+		"searchTerms": [],
+		"title": "ウルトラトレーラー"
+	},
+	{
+		"altTitles": [],
+		"artist": "藤原ハガネ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "niconico"
+		},
+		"id": 2957,
+		"searchTerms": [],
+		"title": "ふぁんぶる！"
+	},
+	{
+		"altTitles": [],
+		"artist": "うえだゆうじ",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 2958,
+		"searchTerms": [],
+		"title": "僕達のギャグマンガ日和"
+	},
+	{
+		"altTitles": [],
+		"artist": "永田泰之",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2959,
+		"searchTerms": [],
+		"title": "無双の咆哮 Warcry Overload"
+	},
+	{
+		"altTitles": [],
+		"artist": "A-One",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2960,
+		"searchTerms": [],
+		"title": "God only knows"
+	},
+	{
+		"altTitles": [],
+		"artist": "DiGiTAL WiNG",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2961,
+		"searchTerms": [],
+		"title": "New Starlight"
+	},
+	{
+		"altTitles": [],
+		"artist": "mozell",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "VARIETY"
+		},
+		"id": 2962,
+		"searchTerms": [],
+		"title": "バンバード ～Piano Version～"
+	},
+	{
+		"altTitles": [],
+		"artist": "サイダーガール TVアニメ「悪役令嬢転生おじさん」",
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"genre": "POPS & ANIME"
+		},
+		"id": 3003,
+		"searchTerms": [],
+		"title": "Choose!!!"
 	}
 ]

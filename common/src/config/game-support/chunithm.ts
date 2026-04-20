@@ -190,6 +190,9 @@ export const CHUNITHM_SINGLE_CONF = {
 		xverse: "X-VERSE",
 		"xverse-intl": "X-VERSE International",
 		"xverse-omni": "X-VERSE Omnimix",
+		xversex: "X-VERSE-X",
+		"xversex-intl": "X-VERSE-X International",
+		"xversex-omni": "X-VERSE-X Omnimix",
 	},
 
 	chartData: z.strictObject({

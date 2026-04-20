@@ -30,8 +30,18 @@ const DISPLAY_VERSIONS = [
 	"CHUNITHM LUMINOUS PLUS",
 	"CHUNITHM VERSE",
 	"CHUNITHM X-VERSE",
+	"CHUNITHM X-VERSE-X",
 ];
-const VERSIONS = ["paradiselost", "sun", "sunplus", "luminous", "luminousplus", "verse", "xverse"];
+const VERSIONS = [
+	"paradiselost",
+	"sun",
+	"sunplus",
+	"luminous",
+	"luminousplus",
+	"verse",
+	"xverse",
+	"xversex",
+];
 
 interface IDWithDisplayName {
 	id: string;
