@@ -82,7 +82,7 @@
 		"express-rate-limit": "5.5.1",
 		"express-session": "1.17.2",
 		"fast-json-stable-hash": "1.0.3",
-		"fast-xml-parser": "4.1.2",
+		"fast-xml-parser": "5.7.0",
 		"helmet": "5.0.2",
 		"html-entities": "^2.3.2",
 		"json5": "2.2.0",
