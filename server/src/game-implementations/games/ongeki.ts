@@ -209,9 +209,11 @@ export const ONGEKI_IMPL: GPTServerImplementation<"ongeki:Single"> = {
 				}
 			}
 
-			if (s.scoreData.bellLamp === "FULL BELL" && s.scoreData.noteLamp === "LOSS") {
-				return "Cannot have a LOSS with a FULL BELL.";
-			}
+			// LMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO
+			// if (s.scoreData.bellLamp === "FULL BELL" && s.scoreData.noteLamp === "LOSS") {
+			//		return "Cannot have a LOSS with a FULL BELL.";
+			// }
+			// LMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO
 
 			if (s.scoreData.platinumScore > chart.data.maxPlatScore) {
 				return `Cannot have ${s.scoreData.platinumScore}/${chart.data.maxPlatScore} Platinum Score.`;
