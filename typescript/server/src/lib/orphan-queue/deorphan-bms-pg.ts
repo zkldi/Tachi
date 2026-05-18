@@ -1,8 +1,6 @@
 import { GetChartByIdForGame } from "#lib/db-formats/chart";
 import { log } from "#lib/log/log";
-import {
-	LEGACY_CHART_ID_LENGTH,
-} from "#lib/score-import/framework/score-importing/score-id";
+import { LEGACY_CHART_ID_LENGTH } from "#lib/score-import/framework/score-importing/score-id";
 import DB from "#services/pg/db";
 import { GetNextBmsPmsSongLegacyId } from "#utils/db";
 import { Random20Hex } from "#utils/misc";

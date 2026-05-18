@@ -22,7 +22,7 @@ const router: Router = Router({ mergeParams: true });
 
 router.use(async (req, res, next) => {
 	if (!req[SYMBOL_TACHI_API_AUTH]) {
-		log.info(
+		log.debug(
 			{
 				body: req.body,
 				query: req.query,
@@ -43,7 +43,7 @@ router.use(async (req, res, next) => {
 		user = null;
 	}
 
-	log.info(
+	log.debug(
 		{
 			user,
 			body: req.body,
