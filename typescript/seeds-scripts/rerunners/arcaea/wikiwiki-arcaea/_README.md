@@ -1,6 +1,6 @@
 ## Chart constants
 Get the data by going to [譜面定数表](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8)
-or [譜面定数表 (Level 7以下)]([https://wikiwiki.jp/arcaea/譜面定数表/譜面定数表 (Level 7以下)](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8%20%28Level%207%E4%BB%A5%E4%B8%8B%29)) and paste in the contents
+or [譜面定数表 (Level 7以下)](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8%20%28Level%207%E4%BB%A5%E4%B8%8B%29) and paste in the contents
 of this script in the browser console:
 
 ```js

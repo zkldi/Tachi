@@ -1,5 +1,19 @@
 [
 	{
+		"chartID": "C19e3c867df174cda540",
+		"data": {
+			"inGameStrID": "sayonarahatsukoi",
+			"notecount": 728
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19d35e0f9610b823f70",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "sayonarahatsukoi",
 			"notecount": 666
@@ -459,6 +473,20 @@
 		"level": "5",
 		"levelNum": 5.5,
 		"songID": "S19d35e0f96aaa41fc53",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df160579c9d",
+		"data": {
+			"inGameStrID": "snowwhite",
+			"notecount": 1031
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19d35e0f96b86eca2a2",
 		"versions": ["mobile"]
 	},
 	{
@@ -1005,6 +1033,20 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19d35e0f976dd2c062e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df17b267b15",
+		"data": {
+			"inGameStrID": "anokumene",
+			"notecount": 971
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19d35e0f97719323c81",
 		"versions": ["mobile"]
 	},
 	{
@@ -1803,6 +1845,20 @@
 		"level": "7",
 		"levelNum": 7.5,
 		"songID": "S19d35e0f9887d71cf08",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df15d7ea5eb",
+		"data": {
+			"inGameStrID": "clotho",
+			"notecount": 1031
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19d35e0f9891195c8dd",
 		"versions": ["mobile"]
 	},
 	{
@@ -3528,6 +3584,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df1e9cb594a",
+		"data": {
+			"inGameStrID": "bethere",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19d35e0f9b3bca806cd",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "bethere",
 			"notecount": 982
@@ -3567,6 +3637,20 @@
 		"level": "7",
 		"levelNum": 7.5,
 		"songID": "S19d35e0f9b3bca806cd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df1cf04ede4",
+		"data": {
+			"inGameStrID": "cyberneciacatharsis",
+			"notecount": 991
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19d35e0f9b4fc28647a",
 		"versions": ["mobile"]
 	},
 	{
@@ -3651,6 +3735,20 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19d35e0f9b56053171b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df1cb87db48",
+		"data": {
+			"inGameStrID": "inkarusi",
+			"notecount": 857
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19d35e0f9b66dfba685",
 		"versions": ["mobile"]
 	},
 	{
@@ -3948,6 +4046,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df11db5b94d",
+		"data": {
+			"inGameStrID": "suomi",
+			"notecount": 732
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19d35e0f9bd32ff63d6",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "suomi",
 			"notecount": 818
@@ -4183,6 +4295,20 @@
 		"level": "7",
 		"levelNum": 7.5,
 		"songID": "S19d35e0f9c2ad842d8e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df1672b7558",
+		"data": {
+			"inGameStrID": "nhelv",
+			"notecount": 1474
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19d35e0f9c4ff74189e",
 		"versions": ["mobile"]
 	},
 	{
@@ -4981,6 +5107,20 @@
 		"level": "7",
 		"levelNum": 7.5,
 		"songID": "S19d35e0f9d5432382a6",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df18503f8dd",
+		"data": {
+			"inGameStrID": "libertas",
+			"notecount": 1048
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19d35e0f9d60c3e3428",
 		"versions": ["mobile"]
 	},
 	{
@@ -6286,6 +6426,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df19b32f570",
+		"data": {
+			"inGameStrID": "heavenlycaress",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19d35e0f9f4de57aa13",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "heavenlycaress",
 			"notecount": 1560
@@ -6552,6 +6706,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df135ee87e2",
+		"data": {
+			"inGameStrID": "einherjar",
+			"notecount": 1857
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19d35e0f9fa4655d530",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "einherjar",
 			"notecount": 1159
@@ -6759,6 +6927,20 @@
 		"level": "7+",
 		"levelNum": 7.8,
 		"songID": "S19d35e0f9fe968b6005",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df171a08898",
+		"data": {
+			"inGameStrID": "oblivia",
+			"notecount": 1021
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19d35e0f9ff25be60d6",
 		"versions": ["mobile"]
 	},
 	{
@@ -7193,6 +7375,20 @@
 		"level": "7+",
 		"levelNum": 7.8,
 		"songID": "S19d35e0fa085df756e1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df143867da7",
+		"data": {
+			"inGameStrID": "altale",
+			"notecount": 1074
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19d35e0fa09b6a6e90d",
 		"versions": ["mobile"]
 	},
 	{
@@ -8050,6 +8246,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df1447f9857",
+		"data": {
+			"inGameStrID": "purpleverse",
+			"notecount": 1202
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19d35e0fa1d60804bc6",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "purpleverse",
 			"notecount": 1023
@@ -8131,6 +8341,20 @@
 		"level": "6",
 		"levelNum": 6.5,
 		"songID": "S19d35e0fa1ecb1fca8d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df1abc2a276",
+		"data": {
+			"inGameStrID": "eccentrictale",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19d35e0fa1f5834dcfe",
 		"versions": ["mobile"]
 	},
 	{
@@ -9688,6 +9912,20 @@
 		"versions": ["mobile"]
 	},
 	{
+		"chartID": "C19e3c867df276381f7e",
+		"data": {
+			"inGameStrID": "kyogenkigo",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19d35e0fa4460954144",
+		"versions": ["mobile"]
+	},
+	{
 		"data": {
 			"inGameStrID": "kyogenkigo",
 			"notecount": 969
@@ -9811,6 +10049,20 @@
 		"level": "7",
 		"levelNum": 7.5,
 		"songID": "S19d35e0fa46cf475299",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a856b866",
+		"data": {
+			"inGameStrID": "smallcloud",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19d35e0fa47931a4eaa",
 		"versions": ["mobile"]
 	},
 	{
@@ -10287,6 +10539,20 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0fa5108f56fbf",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b03a46ec",
+		"data": {
+			"inGameStrID": "energysynergymatrix",
+			"notecount": 1011
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19d35e0fa52a8ec0bca",
 		"versions": ["mobile"]
 	},
 	{
@@ -15327,6 +15593,8882 @@
 		"level": "9",
 		"levelNum": 9.6,
 		"songID": "S19d35e0fac88208dab0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df11a8d3379",
+		"data": {
+			"inGameStrID": "axiumcrisis",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.3,
+		"songID": "S19e3c867df133d91868",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df1211df453",
+		"data": {
+			"inGameStrID": "viciousheroism",
+			"notecount": 1772
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.2,
+		"songID": "S19e3c867df18c4017bc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28aa5c432",
+		"data": {
+			"inGameStrID": "innocence",
+			"notecount": 1157
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df2019ba3df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df232cdda3b",
+		"data": {
+			"inGameStrID": "innocence",
+			"notecount": 1023
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df2019ba3df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2917d59a9",
+		"data": {
+			"inGameStrID": "innocence",
+			"notecount": 734
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2019ba3df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28005ad0d",
+		"data": {
+			"inGameStrID": "innocence",
+			"notecount": 811
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2019ba3df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df278f5a973",
+		"data": {
+			"inGameStrID": "fantasy",
+			"notecount": 965
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df203188739",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28bd47a04",
+		"data": {
+			"inGameStrID": "fantasy",
+			"notecount": 536
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df203188739",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2c6c9eb60",
+		"data": {
+			"inGameStrID": "fantasy",
+			"notecount": 715
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df203188739",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df24d1d546e",
+		"data": {
+			"inGameStrID": "kyorenromance",
+			"notecount": 1519
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df2068464c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df26cd87ac7",
+		"data": {
+			"inGameStrID": "kyorenromance",
+			"notecount": 821
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df2068464c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df299d5920d",
+		"data": {
+			"inGameStrID": "kyorenromance",
+			"notecount": 982
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2068464c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2f1165c01",
+		"data": {
+			"inGameStrID": "edenwacca",
+			"notecount": 1365
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df20c95774f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2efb21521",
+		"data": {
+			"inGameStrID": "edenwacca",
+			"notecount": 826
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df20c95774f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df238565db0",
+		"data": {
+			"inGameStrID": "edenwacca",
+			"notecount": 1194
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df20c95774f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df205614078",
+		"data": {
+			"inGameStrID": "desive",
+			"notecount": 1340
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df217c62e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20ca75e44",
+		"data": {
+			"inGameStrID": "desive",
+			"notecount": 1273
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df217c62e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22c994725",
+		"data": {
+			"inGameStrID": "desive",
+			"notecount": 1007
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df217c62e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df299cfc7b5",
+		"data": {
+			"inGameStrID": "desive",
+			"notecount": 1051
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df217c62e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2fc3e4223",
+		"data": {
+			"inGameStrID": "beautifuldreamer",
+			"notecount": 1139
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df21ae1d2e7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df220cf77a6",
+		"data": {
+			"inGameStrID": "beautifuldreamer",
+			"notecount": 611
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df21ae1d2e7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2daedb6b2",
+		"data": {
+			"inGameStrID": "beautifuldreamer",
+			"notecount": 773
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df21ae1d2e7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20db78c65",
+		"data": {
+			"inGameStrID": "namelesspassion",
+			"notecount": 1223
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df21fac06b5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df204a31da5",
+		"data": {
+			"inGameStrID": "namelesspassion",
+			"notecount": 681
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df21fac06b5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a02223a6",
+		"data": {
+			"inGameStrID": "namelesspassion",
+			"notecount": 890
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df21fac06b5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df260f10691",
+		"data": {
+			"inGameStrID": "blackmind",
+			"notecount": 1274
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df2266aa692",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2ecf60497",
+		"data": {
+			"inGameStrID": "blackmind",
+			"notecount": 601
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df2266aa692",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2ccc737aa",
+		"data": {
+			"inGameStrID": "blackmind",
+			"notecount": 754
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df2266aa692",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df242941d56",
+		"data": {
+			"inGameStrID": "floatingworld",
+			"notecount": 1047
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df23eac77c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df295384e79",
+		"data": {
+			"inGameStrID": "floatingworld",
+			"notecount": 753
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df23eac77c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df219e8cd7a",
+		"data": {
+			"inGameStrID": "floatingworld",
+			"notecount": 793
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df23eac77c0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df291b6610b",
+		"data": {
+			"inGameStrID": "xtreme",
+			"notecount": 1258
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2402b4bac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2fa661930",
+		"data": {
+			"inGameStrID": "xtreme",
+			"notecount": 752
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2402b4bac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27a3b6b13",
+		"data": {
+			"inGameStrID": "xtreme",
+			"notecount": 831
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2402b4bac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20c138160",
+		"data": {
+			"inGameStrID": "distortionhuman",
+			"notecount": 1317
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df24297bc38",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df287f4e6dc",
+		"data": {
+			"inGameStrID": "distortionhuman",
+			"notecount": 544
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df24297bc38",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df25691902e",
+		"data": {
+			"inGameStrID": "distortionhuman",
+			"notecount": 841
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df24297bc38",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d2979af0",
+		"data": {
+			"inGameStrID": "qovat",
+			"notecount": 1299
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df244af060c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df298009802",
+		"data": {
+			"inGameStrID": "qovat",
+			"notecount": 519
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df244af060c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2ce9b6b4b",
+		"data": {
+			"inGameStrID": "qovat",
+			"notecount": 765
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df244af060c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d05f75ea",
+		"data": {
+			"inGameStrID": "stratoliner",
+			"notecount": 877
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df24aecb529",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2122ee777",
+		"data": {
+			"inGameStrID": "stratoliner",
+			"notecount": 535
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df24aecb529",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df200fc6e6b",
+		"data": {
+			"inGameStrID": "stratoliner",
+			"notecount": 702
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df24aecb529",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2781ae180",
+		"data": {
+			"inGameStrID": "temptationgc",
+			"notecount": 1087
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df251c4398b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bbbd95ed",
+		"data": {
+			"inGameStrID": "temptationgc",
+			"notecount": 906
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df251c4398b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2abd18900",
+		"data": {
+			"inGameStrID": "temptationgc",
+			"notecount": 475
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df251c4398b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df261a63cc9",
+		"data": {
+			"inGameStrID": "temptationgc",
+			"notecount": 704
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df251c4398b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df266efb86b",
+		"data": {
+			"inGameStrID": "lightmyway",
+			"notecount": 954
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df2536bb897",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27e44f7c7",
+		"data": {
+			"inGameStrID": "lightmyway",
+			"notecount": 673
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2536bb897",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2849ad8b2",
+		"data": {
+			"inGameStrID": "lightmyway",
+			"notecount": 738
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df2536bb897",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2f5171835",
+		"data": {
+			"inGameStrID": "teravolt",
+			"notecount": 1008
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df25488658f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2dc12daf0",
+		"data": {
+			"inGameStrID": "teravolt",
+			"notecount": 675
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df25488658f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df236d457bc",
+		"data": {
+			"inGameStrID": "teravolt",
+			"notecount": 804
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df25488658f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a444e0b2",
+		"data": {
+			"inGameStrID": "overdrive",
+			"notecount": 1108
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df25999da02",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df253d01c4c",
+		"data": {
+			"inGameStrID": "overdrive",
+			"notecount": 584
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df25999da02",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20eaa9b2f",
+		"data": {
+			"inGameStrID": "overdrive",
+			"notecount": 714
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df25999da02",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2677a62de",
+		"data": {
+			"inGameStrID": "distortedfate",
+			"notecount": 1402
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df264292664",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20b0b09f6",
+		"data": {
+			"inGameStrID": "distortedfate",
+			"notecount": 1172
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df264292664",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27c43ef19",
+		"data": {
+			"inGameStrID": "distortedfate",
+			"notecount": 756
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df264292664",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a19be27b",
+		"data": {
+			"inGameStrID": "distortedfate",
+			"notecount": 890
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df264292664",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df23d6fa27f",
+		"data": {
+			"inGameStrID": "onandon",
+			"notecount": 836
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df26b94f071",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2338c331c",
+		"data": {
+			"inGameStrID": "onandon",
+			"notecount": 370
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df26b94f071",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df25098d065",
+		"data": {
+			"inGameStrID": "onandon",
+			"notecount": 616
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df26b94f071",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2abe8eaf9",
+		"data": {
+			"inGameStrID": "ashenboundary",
+			"notecount": 1183
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df26ddfb412",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df215ada096",
+		"data": {
+			"inGameStrID": "ashenboundary",
+			"notecount": 702
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df26ddfb412",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df257bb328a",
+		"data": {
+			"inGameStrID": "ashenboundary",
+			"notecount": 813
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df26ddfb412",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df21abde260",
+		"data": {
+			"inGameStrID": "hellohell",
+			"notecount": 770
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df2728cd326",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22a857dba",
+		"data": {
+			"inGameStrID": "hellohell",
+			"notecount": 673
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df2728cd326",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20ca28f57",
+		"data": {
+			"inGameStrID": "hellohell",
+			"notecount": 466
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df2728cd326",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a3bb3ffd",
+		"data": {
+			"inGameStrID": "hellohell",
+			"notecount": 445
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df2728cd326",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df281d1bb36",
+		"data": {
+			"inGameStrID": "invain",
+			"notecount": 1111
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df27a4b8bf7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27c75ce16",
+		"data": {
+			"inGameStrID": "invain",
+			"notecount": 562
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df27a4b8bf7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d2c4b778",
+		"data": {
+			"inGameStrID": "invain",
+			"notecount": 677
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df27a4b8bf7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df23c5b2193",
+		"data": {
+			"inGameStrID": "lethalvoltage",
+			"notecount": 1497
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df280c03aaa",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22a77976b",
+		"data": {
+			"inGameStrID": "lethalvoltage",
+			"notecount": 724
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df280c03aaa",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b8dd8d6b",
+		"data": {
+			"inGameStrID": "lethalvoltage",
+			"notecount": 922
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df280c03aaa",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e2874aad",
+		"data": {
+			"inGameStrID": "chromafill",
+			"notecount": 1130
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df282f7bfb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e078ba0f",
+		"data": {
+			"inGameStrID": "chromafill",
+			"notecount": 757
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df282f7bfb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df263402be5",
+		"data": {
+			"inGameStrID": "chromafill",
+			"notecount": 890
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df282f7bfb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e12a5f7b",
+		"data": {
+			"inGameStrID": "stargateextreme",
+			"notecount": 915
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df286b58cd1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b53d100e",
+		"data": {
+			"inGameStrID": "stargateextreme",
+			"notecount": 724
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df286b58cd1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bd694fbd",
+		"data": {
+			"inGameStrID": "stargateextreme",
+			"notecount": 337
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df286b58cd1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28b3a76f8",
+		"data": {
+			"inGameStrID": "stargateextreme",
+			"notecount": 430
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df286b58cd1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2ab6cd925",
+		"data": {
+			"inGameStrID": "epicurus",
+			"notecount": 884
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df28baf0bae",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e7b67a89",
+		"data": {
+			"inGameStrID": "epicurus",
+			"notecount": 783
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df28baf0bae",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df24ba0aa7d",
+		"data": {
+			"inGameStrID": "epicurus",
+			"notecount": 595
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df28baf0bae",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df280d84c1e",
+		"data": {
+			"inGameStrID": "epicurus",
+			"notecount": 644
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df28baf0bae",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28376c9c0",
+		"data": {
+			"inGameStrID": "ouverture",
+			"notecount": 913
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df291dd1515",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2943e5480",
+		"data": {
+			"inGameStrID": "ouverture",
+			"notecount": 583
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df291dd1515",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d6b34f33",
+		"data": {
+			"inGameStrID": "ouverture",
+			"notecount": 786
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df291dd1515",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27586079a",
+		"data": {
+			"inGameStrID": "shrink",
+			"notecount": 939
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df2978f340b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df274b80cac",
+		"data": {
+			"inGameStrID": "shrink",
+			"notecount": 451
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2978f340b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df217a147a7",
+		"data": {
+			"inGameStrID": "shrink",
+			"notecount": 660
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df2978f340b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a6a4f708",
+		"data": {
+			"inGameStrID": "transientspace",
+			"notecount": 805
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df299545c06",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2792a12c8",
+		"data": {
+			"inGameStrID": "transientspace",
+			"notecount": 419
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df299545c06",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df214e82e8a",
+		"data": {
+			"inGameStrID": "transientspace",
+			"notecount": 607
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df299545c06",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2339f073c",
+		"data": {
+			"inGameStrID": "leaveallbehind",
+			"notecount": 828
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df29fcc865a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df297534c4e",
+		"data": {
+			"inGameStrID": "leaveallbehind",
+			"notecount": 380
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19e3c867df29fcc865a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df230772d22",
+		"data": {
+			"inGameStrID": "leaveallbehind",
+			"notecount": 488
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df29fcc865a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df236990ad1",
+		"data": {
+			"inGameStrID": "theformula",
+			"notecount": 957
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df2aaca28c2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2f4e4259e",
+		"data": {
+			"inGameStrID": "theformula",
+			"notecount": 427
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2aaca28c2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df254619eb0",
+		"data": {
+			"inGameStrID": "theformula",
+			"notecount": 587
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df2aaca28c2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df29a79b901",
+		"data": {
+			"inGameStrID": "metamysteria",
+			"notecount": 1309
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df2abe1c825",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df287a1c245",
+		"data": {
+			"inGameStrID": "metamysteria",
+			"notecount": 844
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df2abe1c825",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27f6b686a",
+		"data": {
+			"inGameStrID": "metamysteria",
+			"notecount": 905
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2abe1c825",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22f1780f3",
+		"data": {
+			"inGameStrID": "alterego",
+			"notecount": 1644
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.3,
+		"songID": "S19e3c867df2adfa73fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20fcb92b9",
+		"data": {
+			"inGameStrID": "alterego",
+			"notecount": 1466
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2adfa73fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22b60baf5",
+		"data": {
+			"inGameStrID": "alterego",
+			"notecount": 865
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2adfa73fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28eb24f43",
+		"data": {
+			"inGameStrID": "alterego",
+			"notecount": 1213
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df2adfa73fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2ac7fcc1e",
+		"data": {
+			"inGameStrID": "backtobasics",
+			"notecount": 1544
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df2b53cbb91",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2fc797a35",
+		"data": {
+			"inGameStrID": "backtobasics",
+			"notecount": 717
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df2b53cbb91",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df245323018",
+		"data": {
+			"inGameStrID": "backtobasics",
+			"notecount": 1115
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df2b53cbb91",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28b7812aa",
+		"data": {
+			"inGameStrID": "morningloom",
+			"notecount": 1035
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df2b844206f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df21fc7428d",
+		"data": {
+			"inGameStrID": "morningloom",
+			"notecount": 940
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df2b844206f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bfe2df33",
+		"data": {
+			"inGameStrID": "morningloom",
+			"notecount": 710
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2b844206f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2320f6041",
+		"data": {
+			"inGameStrID": "morningloom",
+			"notecount": 829
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2b844206f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df292f6fcb6",
+		"data": {
+			"inGameStrID": "wishuponasnow",
+			"notecount": 1309
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2bc71cd90",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2c7850445",
+		"data": {
+			"inGameStrID": "wishuponasnow",
+			"notecount": 1031
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2bc71cd90",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e775db13",
+		"data": {
+			"inGameStrID": "wishuponasnow",
+			"notecount": 1095
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df2bc71cd90",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2cad84c21",
+		"data": {
+			"inGameStrID": "ionostream",
+			"notecount": 871
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df2c6b639a5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df21dd80eb8",
+		"data": {
+			"inGameStrID": "ionostream",
+			"notecount": 818
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df2c6b639a5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22aebbc06",
+		"data": {
+			"inGameStrID": "ionostream",
+			"notecount": 845
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2c6b639a5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2be6d840c",
+		"data": {
+			"inGameStrID": "ionostream",
+			"notecount": 890
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df2c6b639a5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df21cfc1830",
+		"data": {
+			"inGameStrID": "ichirin",
+			"notecount": 708
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df2cc748038",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20fea478a",
+		"data": {
+			"inGameStrID": "ichirin",
+			"notecount": 368
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df2cc748038",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e9c20008",
+		"data": {
+			"inGameStrID": "ichirin",
+			"notecount": 519
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2cc748038",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df290ec643e",
+		"data": {
+			"inGameStrID": "mirinae",
+			"notecount": 1277
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df2ce4ca166",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a446210b",
+		"data": {
+			"inGameStrID": "mirinae",
+			"notecount": 646
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2ce4ca166",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b390fdd2",
+		"data": {
+			"inGameStrID": "mirinae",
+			"notecount": 881
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df2ce4ca166",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b459e9a2",
+		"data": {
+			"inGameStrID": "awakeninruins",
+			"notecount": 754
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df2d27dabbe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df23cff8a02",
+		"data": {
+			"inGameStrID": "awakeninruins",
+			"notecount": 412
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2d27dabbe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df25d5fc656",
+		"data": {
+			"inGameStrID": "awakeninruins",
+			"notecount": 570
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df2d27dabbe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2dca6d08c",
+		"data": {
+			"inGameStrID": "hypnotize",
+			"notecount": 1164
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df2d3b9a19d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df26e0b2992",
+		"data": {
+			"inGameStrID": "hypnotize",
+			"notecount": 993
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df2d3b9a19d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22de1242e",
+		"data": {
+			"inGameStrID": "hypnotize",
+			"notecount": 518
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2d3b9a19d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2475ad8f6",
+		"data": {
+			"inGameStrID": "hypnotize",
+			"notecount": 761
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df2d3b9a19d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df258424209",
+		"data": {
+			"inGameStrID": "ultradiaxon",
+			"notecount": 1228
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df2df9c4254",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df23b46caf0",
+		"data": {
+			"inGameStrID": "ultradiaxon",
+			"notecount": 605
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2df9c4254",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df258a17ffb",
+		"data": {
+			"inGameStrID": "ultradiaxon",
+			"notecount": 896
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df2df9c4254",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df20aa930d7",
+		"data": {
+			"inGameStrID": "lunarossa",
+			"notecount": 920
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df2dfc8173b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2adcd4f43",
+		"data": {
+			"inGameStrID": "lunarossa",
+			"notecount": 443
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2dfc8173b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df204a6c81f",
+		"data": {
+			"inGameStrID": "lunarossa",
+			"notecount": 578
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df2dfc8173b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df268c5480e",
+		"data": {
+			"inGameStrID": "signof",
+			"notecount": 735
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df2edb8fdb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2763c9ce5",
+		"data": {
+			"inGameStrID": "signof",
+			"notecount": 490
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2edb8fdb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df235984216",
+		"data": {
+			"inGameStrID": "signof",
+			"notecount": 564
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2edb8fdb8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2991bee52",
+		"data": {
+			"inGameStrID": "oldschoolsalvage",
+			"notecount": 1316
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df2efcc0526",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df227a21ee1",
+		"data": {
+			"inGameStrID": "oldschoolsalvage",
+			"notecount": 705
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df2efcc0526",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df26ef2e21a",
+		"data": {
+			"inGameStrID": "oldschoolsalvage",
+			"notecount": 950
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2efcc0526",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df232cb3ae1",
+		"data": {
+			"inGameStrID": "aloneandlorn",
+			"notecount": 970
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df2f04f51d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bebf6c05",
+		"data": {
+			"inGameStrID": "aloneandlorn",
+			"notecount": 643
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df2f04f51d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df29590dcdf",
+		"data": {
+			"inGameStrID": "aloneandlorn",
+			"notecount": 742
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2f04f51d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28698a799",
+		"data": {
+			"inGameStrID": "tasogare",
+			"notecount": 962
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2f16a8a63",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df279c3b33c",
+		"data": {
+			"inGameStrID": "tasogare",
+			"notecount": 803
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df2f16a8a63",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df270b32975",
+		"data": {
+			"inGameStrID": "tasogare",
+			"notecount": 584
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2f16a8a63",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b005c2bf",
+		"data": {
+			"inGameStrID": "tasogare",
+			"notecount": 634
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2f16a8a63",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df29deb49e2",
+		"data": {
+			"inGameStrID": "hotarubinoyuki",
+			"notecount": 991
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df2f5b26dfd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a1e979cb",
+		"data": {
+			"inGameStrID": "hotarubinoyuki",
+			"notecount": 589
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2f5b26dfd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bc9eea74",
+		"data": {
+			"inGameStrID": "hotarubinoyuki",
+			"notecount": 733
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df2f5b26dfd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b50996ba",
+		"data": {
+			"inGameStrID": "hypervision",
+			"notecount": 1040
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df2f9152c65",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df22dd45a46",
+		"data": {
+			"inGameStrID": "hypervision",
+			"notecount": 639
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df2f9152c65",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df23143b0ea",
+		"data": {
+			"inGameStrID": "hypervision",
+			"notecount": 839
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df2f9152c65",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2209ad030",
+		"data": {
+			"inGameStrID": "felys",
+			"notecount": 1130
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df2fa1051f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d029b186",
+		"data": {
+			"inGameStrID": "felys",
+			"notecount": 626
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2fa1051f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df238b3543b",
+		"data": {
+			"inGameStrID": "felys",
+			"notecount": 771
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2fa1051f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2d43f65ed",
+		"data": {
+			"inGameStrID": "judgement",
+			"notecount": 1432
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2fa4e06ed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2cb79f425",
+		"data": {
+			"inGameStrID": "judgement",
+			"notecount": 844
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df2fa4e06ed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2f222be6c",
+		"data": {
+			"inGameStrID": "judgement",
+			"notecount": 1055
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df2fa4e06ed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df28740d3c3",
+		"data": {
+			"inGameStrID": "jingle",
+			"notecount": 1047
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df2fc9edbcc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2e2156bd8",
+		"data": {
+			"inGameStrID": "jingle",
+			"notecount": 848
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df2fc9edbcc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df29b7c06db",
+		"data": {
+			"inGameStrID": "jingle",
+			"notecount": 530
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df2fc9edbcc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df27fa2f56a",
+		"data": {
+			"inGameStrID": "jingle",
+			"notecount": 741
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df2fc9edbcc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df26cfd8ce5",
+		"data": {
+			"inGameStrID": "alephzero",
+			"notecount": 919
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df2fe35e6d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2b10849c3",
+		"data": {
+			"inGameStrID": "alephzero",
+			"notecount": 388
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df2fe35e6d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2039893e8",
+		"data": {
+			"inGameStrID": "alephzero",
+			"notecount": 579
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df2fe35e6d3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2a8e4ccb6",
+		"data": {
+			"inGameStrID": "masqueradelegion",
+			"notecount": 1064
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df2ff1001e1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2bd7854fa",
+		"data": {
+			"inGameStrID": "masqueradelegion",
+			"notecount": 510
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df2ff1001e1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df2c23a1392",
+		"data": {
+			"inGameStrID": "masqueradelegion",
+			"notecount": 698
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df2ff1001e1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a7b0405a",
+		"data": {
+			"inGameStrID": "yomibitoshirazu",
+			"notecount": 1075
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df300859169",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34ea3ee66",
+		"data": {
+			"inGameStrID": "yomibitoshirazu",
+			"notecount": 641
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df300859169",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d0ee81e0",
+		"data": {
+			"inGameStrID": "yomibitoshirazu",
+			"notecount": 764
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df300859169",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c6697529",
+		"data": {
+			"inGameStrID": "andrevivemelody",
+			"notecount": 1710
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df30841fd71",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cc6067e7",
+		"data": {
+			"inGameStrID": "andrevivemelody",
+			"notecount": 962
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df30841fd71",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e0b3e77b",
+		"data": {
+			"inGameStrID": "andrevivemelody",
+			"notecount": 1269
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df30841fd71",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31348c591",
+		"data": {
+			"inGameStrID": "factorder",
+			"notecount": 1015
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df30dcc435f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b2a50117",
+		"data": {
+			"inGameStrID": "factorder",
+			"notecount": 849
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df30dcc435f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33e3f8a67",
+		"data": {
+			"inGameStrID": "factorder",
+			"notecount": 510
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df30dcc435f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df353c62433",
+		"data": {
+			"inGameStrID": "factorder",
+			"notecount": 663
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df30dcc435f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33e8ed299",
+		"data": {
+			"inGameStrID": "liftoff",
+			"notecount": 988
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df310a67c0d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31f8a20df",
+		"data": {
+			"inGameStrID": "liftoff",
+			"notecount": 660
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df310a67c0d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df361bf5ea8",
+		"data": {
+			"inGameStrID": "liftoff",
+			"notecount": 459
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df310a67c0d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d26f4c7b",
+		"data": {
+			"inGameStrID": "liftoff",
+			"notecount": 500
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df310a67c0d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3153a1d71",
+		"data": {
+			"inGameStrID": "raysofremnant",
+			"notecount": 1118
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3126a891c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3af8e08d0",
+		"data": {
+			"inGameStrID": "raysofremnant",
+			"notecount": 982
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df3126a891c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c4f4ef08",
+		"data": {
+			"inGameStrID": "raysofremnant",
+			"notecount": 710
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3126a891c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ce729880",
+		"data": {
+			"inGameStrID": "raysofremnant",
+			"notecount": 766
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3126a891c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df387283f8e",
+		"data": {
+			"inGameStrID": "shinchoku",
+			"notecount": 1162
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df314309881",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3382c34e4",
+		"data": {
+			"inGameStrID": "shinchoku",
+			"notecount": 957
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df314309881",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33bd961b1",
+		"data": {
+			"inGameStrID": "shinchoku",
+			"notecount": 595
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df314309881",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38b170f76",
+		"data": {
+			"inGameStrID": "shinchoku",
+			"notecount": 743
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df314309881",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3923b5fb2",
+		"data": {
+			"inGameStrID": "virtus",
+			"notecount": 1341
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df319c164d0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df316364004",
+		"data": {
+			"inGameStrID": "virtus",
+			"notecount": 1222
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df319c164d0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cd368101",
+		"data": {
+			"inGameStrID": "virtus",
+			"notecount": 877
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df319c164d0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df361fb36f6",
+		"data": {
+			"inGameStrID": "virtus",
+			"notecount": 1000
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df319c164d0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a36e82f6",
+		"data": {
+			"inGameStrID": "paradoxpalette",
+			"notecount": 1043
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df31ab24499",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ff4382d4",
+		"data": {
+			"inGameStrID": "paradoxpalette",
+			"notecount": 814
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df31ab24499",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a61ab2a7",
+		"data": {
+			"inGameStrID": "paradoxpalette",
+			"notecount": 476
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df31ab24499",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a7909d38",
+		"data": {
+			"inGameStrID": "paradoxpalette",
+			"notecount": 653
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df31ab24499",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3dfdf04fd",
+		"data": {
+			"inGameStrID": "deathbyglamour",
+			"notecount": 912
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df31bd0b53c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37cb35f5c",
+		"data": {
+			"inGameStrID": "deathbyglamour",
+			"notecount": 610
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df31bd0b53c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bf51e8d1",
+		"data": {
+			"inGameStrID": "deathbyglamour",
+			"notecount": 460
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df31bd0b53c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31cbb76fc",
+		"data": {
+			"inGameStrID": "deathbyglamour",
+			"notecount": 470
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df31bd0b53c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31b21592e",
+		"data": {
+			"inGameStrID": "breachoffaith",
+			"notecount": 1448
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df31cc5c877",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df360456793",
+		"data": {
+			"inGameStrID": "breachoffaith",
+			"notecount": 1373
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df31cc5c877",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3417e0b37",
+		"data": {
+			"inGameStrID": "breachoffaith",
+			"notecount": 986
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df31cc5c877",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df35d255fe4",
+		"data": {
+			"inGameStrID": "breachoffaith",
+			"notecount": 1171
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df31cc5c877",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b0d72849",
+		"data": {
+			"inGameStrID": "dontfightmusic",
+			"notecount": 1385
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df31e1b0385",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a6e043c3",
+		"data": {
+			"inGameStrID": "dontfightmusic",
+			"notecount": 1043
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df31e1b0385",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df384c73a61",
+		"data": {
+			"inGameStrID": "dontfightmusic",
+			"notecount": 757
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df31e1b0385",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33e8a3b34",
+		"data": {
+			"inGameStrID": "dontfightmusic",
+			"notecount": 962
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df31e1b0385",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e4125055",
+		"data": {
+			"inGameStrID": "superambulance",
+			"notecount": 1371
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df31ea5f911",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df316a783ef",
+		"data": {
+			"inGameStrID": "superambulance",
+			"notecount": 740
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df31ea5f911",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df388bd6450",
+		"data": {
+			"inGameStrID": "superambulance",
+			"notecount": 971
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df31ea5f911",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df315dd1e9e",
+		"data": {
+			"inGameStrID": "iwantyou",
+			"notecount": 660
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df31edd73f3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df320dd521d",
+		"data": {
+			"inGameStrID": "iwantyou",
+			"notecount": 528
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df31edd73f3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34d538f64",
+		"data": {
+			"inGameStrID": "iwantyou",
+			"notecount": 326
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df31edd73f3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33eca5090",
+		"data": {
+			"inGameStrID": "iwantyou",
+			"notecount": 395
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df31edd73f3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36f5e2d09",
+		"data": {
+			"inGameStrID": "yourbestnightmare",
+			"notecount": 1451
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df3202feaa8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f6757ab1",
+		"data": {
+			"inGameStrID": "yourbestnightmare",
+			"notecount": 1086
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df3202feaa8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3694a60a3",
+		"data": {
+			"inGameStrID": "yourbestnightmare",
+			"notecount": 760
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3202feaa8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37c6d1ea6",
+		"data": {
+			"inGameStrID": "yourbestnightmare",
+			"notecount": 925
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3202feaa8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31bb0186d",
+		"data": {
+			"inGameStrID": "megalovania",
+			"notecount": 1202
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df320497e77",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c7ec1828",
+		"data": {
+			"inGameStrID": "megalovania",
+			"notecount": 1064
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df320497e77",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b8387078",
+		"data": {
+			"inGameStrID": "megalovania",
+			"notecount": 906
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df320497e77",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c9b82906",
+		"data": {
+			"inGameStrID": "megalovania",
+			"notecount": 969
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df320497e77",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38548bcf9",
+		"data": {
+			"inGameStrID": "satisfaction",
+			"notecount": 1047
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df32168409a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fd63a38e",
+		"data": {
+			"inGameStrID": "satisfaction",
+			"notecount": 890
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df32168409a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c245e051",
+		"data": {
+			"inGameStrID": "satisfaction",
+			"notecount": 580
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df32168409a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38dfc8c4f",
+		"data": {
+			"inGameStrID": "satisfaction",
+			"notecount": 738
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df32168409a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3142c2d35",
+		"data": {
+			"inGameStrID": "particle",
+			"notecount": 881
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df323a3da35",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b3fdd77c",
+		"data": {
+			"inGameStrID": "particle",
+			"notecount": 890
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df323a3da35",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df346884c46",
+		"data": {
+			"inGameStrID": "particle",
+			"notecount": 519
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df323a3da35",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3dcaaabe2",
+		"data": {
+			"inGameStrID": "particle",
+			"notecount": 613
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df323a3da35",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fd81ec7f",
+		"data": {
+			"inGameStrID": "wontbackdown",
+			"notecount": 1015
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df324953a44",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31bf91a7b",
+		"data": {
+			"inGameStrID": "wontbackdown",
+			"notecount": 437
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df324953a44",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df35f195990",
+		"data": {
+			"inGameStrID": "wontbackdown",
+			"notecount": 551
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df324953a44",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3966c7df5",
+		"data": {
+			"inGameStrID": "breakbreak",
+			"notecount": 1251
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df3265cd1bd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3658ebd4d",
+		"data": {
+			"inGameStrID": "breakbreak",
+			"notecount": 894
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3265cd1bd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3099d5235",
+		"data": {
+			"inGameStrID": "breakbreak",
+			"notecount": 472
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3265cd1bd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df372201489",
+		"data": {
+			"inGameStrID": "breakbreak",
+			"notecount": 614
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3265cd1bd",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3de046bc1",
+		"data": {
+			"inGameStrID": "tictactoe",
+			"notecount": 907
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df326d7d353",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f76c064a",
+		"data": {
+			"inGameStrID": "tictactoe",
+			"notecount": 760
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df326d7d353",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f35e5d14",
+		"data": {
+			"inGameStrID": "tictactoe",
+			"notecount": 353
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df326d7d353",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a1034a0b",
+		"data": {
+			"inGameStrID": "tictactoe",
+			"notecount": 505
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df326d7d353",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30fc796a8",
+		"data": {
+			"inGameStrID": "daat",
+			"notecount": 1500
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df328a97543",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d6f5f0c8",
+		"data": {
+			"inGameStrID": "daat",
+			"notecount": 921
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df328a97543",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df368275a69",
+		"data": {
+			"inGameStrID": "daat",
+			"notecount": 1091
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df328a97543",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df379abe3f0",
+		"data": {
+			"inGameStrID": "blythe",
+			"notecount": 1207
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df329d4a190",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3156df5ed",
+		"data": {
+			"inGameStrID": "blythe",
+			"notecount": 1000
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df329d4a190",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39e789360",
+		"data": {
+			"inGameStrID": "blythe",
+			"notecount": 610
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df329d4a190",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3151759ae",
+		"data": {
+			"inGameStrID": "blythe",
+			"notecount": 729
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df329d4a190",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d5369453",
+		"data": {
+			"inGameStrID": "grandspell",
+			"notecount": 1289
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df32b5a1cd9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3055bdac6",
+		"data": {
+			"inGameStrID": "grandspell",
+			"notecount": 704
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df32b5a1cd9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c5ce5ced",
+		"data": {
+			"inGameStrID": "grandspell",
+			"notecount": 977
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df32b5a1cd9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ae7e1c60",
+		"data": {
+			"inGameStrID": "dematerialized",
+			"notecount": 790
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df32f99f6d1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df307845f5c",
+		"data": {
+			"inGameStrID": "dematerialized",
+			"notecount": 722
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df32f99f6d1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fc7e2440",
+		"data": {
+			"inGameStrID": "dematerialized",
+			"notecount": 469
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "1",
+		"levelNum": 1.5,
+		"songID": "S19e3c867df32f99f6d1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df351fb9aa2",
+		"data": {
+			"inGameStrID": "dematerialized",
+			"notecount": 659
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df32f99f6d1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df35792acc6",
+		"data": {
+			"inGameStrID": "crimsonquartz",
+			"notecount": 1200
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3354a2458",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df330b43fd7",
+		"data": {
+			"inGameStrID": "crimsonquartz",
+			"notecount": 861
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3354a2458",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e8a7af5d",
+		"data": {
+			"inGameStrID": "crimsonquartz",
+			"notecount": 569
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3354a2458",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32d7f2642",
+		"data": {
+			"inGameStrID": "crimsonquartz",
+			"notecount": 615
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3354a2458",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f9d32dc0",
+		"data": {
+			"inGameStrID": "thirdsun",
+			"notecount": 1043
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df33bf26609",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df395d1756e",
+		"data": {
+			"inGameStrID": "thirdsun",
+			"notecount": 811
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df33bf26609",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e20de453",
+		"data": {
+			"inGameStrID": "thirdsun",
+			"notecount": 532
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df33bf26609",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3577c85c1",
+		"data": {
+			"inGameStrID": "thirdsun",
+			"notecount": 702
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df33bf26609",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a9604974",
+		"data": {
+			"inGameStrID": "chaosblast",
+			"notecount": 1539
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df340d5e1ac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df347bb62b3",
+		"data": {
+			"inGameStrID": "chaosblast",
+			"notecount": 1290
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df340d5e1ac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36174a223",
+		"data": {
+			"inGameStrID": "chaosblast",
+			"notecount": 786
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df340d5e1ac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df304f06aac",
+		"data": {
+			"inGameStrID": "chaosblast",
+			"notecount": 1000
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df340d5e1ac",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df354c99a9f",
+		"data": {
+			"inGameStrID": "megalovaniarmx",
+			"notecount": 1468
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df341026fbc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bd0faf33",
+		"data": {
+			"inGameStrID": "megalovaniarmx",
+			"notecount": 1345
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df341026fbc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3873a2e6f",
+		"data": {
+			"inGameStrID": "megalovaniarmx",
+			"notecount": 946
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df341026fbc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cc09324e",
+		"data": {
+			"inGameStrID": "megalovaniarmx",
+			"notecount": 1151
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df341026fbc",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3900ae67f",
+		"data": {
+			"inGameStrID": "vulcanus",
+			"notecount": 1542
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df3499bce3a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3276c4548",
+		"data": {
+			"inGameStrID": "vulcanus",
+			"notecount": 968
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3499bce3a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3791173e2",
+		"data": {
+			"inGameStrID": "vulcanus",
+			"notecount": 1234
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df3499bce3a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df377731871",
+		"data": {
+			"inGameStrID": "renegade",
+			"notecount": 1165
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df349dba360",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d90e7d4e",
+		"data": {
+			"inGameStrID": "renegade",
+			"notecount": 994
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df349dba360",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32956bd36",
+		"data": {
+			"inGameStrID": "renegade",
+			"notecount": 655
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df349dba360",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31457cefa",
+		"data": {
+			"inGameStrID": "renegade",
+			"notecount": 751
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df349dba360",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34b6260a2",
+		"data": {
+			"inGameStrID": "furetemitai",
+			"notecount": 841
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df34f4cff2d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df307019ed5",
+		"data": {
+			"inGameStrID": "furetemitai",
+			"notecount": 763
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df34f4cff2d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ec9e3470",
+		"data": {
+			"inGameStrID": "furetemitai",
+			"notecount": 447
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df34f4cff2d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df335061abb",
+		"data": {
+			"inGameStrID": "furetemitai",
+			"notecount": 523
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df34f4cff2d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3824078cd",
+		"data": {
+			"inGameStrID": "trpno",
+			"notecount": 897
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df34f7a1d05",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c5159cee",
+		"data": {
+			"inGameStrID": "trpno",
+			"notecount": 451
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df34f7a1d05",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ec6bfc36",
+		"data": {
+			"inGameStrID": "trpno",
+			"notecount": 562
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df34f7a1d05",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3044c376f",
+		"data": {
+			"inGameStrID": "lastgoodbye",
+			"notecount": 911
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df35028e423",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fe95f938",
+		"data": {
+			"inGameStrID": "lastgoodbye",
+			"notecount": 727
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df35028e423",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ce08af08",
+		"data": {
+			"inGameStrID": "lastgoodbye",
+			"notecount": 497
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df35028e423",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f5eb313a",
+		"data": {
+			"inGameStrID": "lastgoodbye",
+			"notecount": 605
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df35028e423",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df321bd33ab",
+		"data": {
+			"inGameStrID": "invertedworld",
+			"notecount": 1065
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df351dcb17f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a0f23529",
+		"data": {
+			"inGameStrID": "invertedworld",
+			"notecount": 940
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df351dcb17f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33ff0b5f9",
+		"data": {
+			"inGameStrID": "invertedworld",
+			"notecount": 525
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df351dcb17f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df393aa91e6",
+		"data": {
+			"inGameStrID": "invertedworld",
+			"notecount": 646
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df351dcb17f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3954583a2",
+		"data": {
+			"inGameStrID": "lilly",
+			"notecount": 1353
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df353fa3691",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3eb9f2c96",
+		"data": {
+			"inGameStrID": "lilly",
+			"notecount": 1312
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df353fa3691",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df312ea0f48",
+		"data": {
+			"inGameStrID": "lilly",
+			"notecount": 865
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df353fa3691",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39328c668",
+		"data": {
+			"inGameStrID": "lilly",
+			"notecount": 1052
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df353fa3691",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38bf838ac",
+		"data": {
+			"inGameStrID": "aethercrest",
+			"notecount": 1941
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.5,
+		"songID": "S19e3c867df3541a2708",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37e2db973",
+		"data": {
+			"inGameStrID": "aethercrest",
+			"notecount": 1508
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3541a2708",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bf11cc3b",
+		"data": {
+			"inGameStrID": "aethercrest",
+			"notecount": 921
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3541a2708",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a26e3891",
+		"data": {
+			"inGameStrID": "aethercrest",
+			"notecount": 1147
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df3541a2708",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3748d8d3b",
+		"data": {
+			"inGameStrID": "azalea",
+			"notecount": 1075
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df358a3bf7a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df399f0c81d",
+		"data": {
+			"inGameStrID": "azalea",
+			"notecount": 1144
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df358a3bf7a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36b2a7746",
+		"data": {
+			"inGameStrID": "azalea",
+			"notecount": 847
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df358a3bf7a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df366ef0e2f",
+		"data": {
+			"inGameStrID": "azalea",
+			"notecount": 973
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df358a3bf7a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38737b759",
+		"data": {
+			"inGameStrID": "miles",
+			"notecount": 829
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df358b8a583",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34e9671b6",
+		"data": {
+			"inGameStrID": "miles",
+			"notecount": 687
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df358b8a583",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e4a68498",
+		"data": {
+			"inGameStrID": "miles",
+			"notecount": 385
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df358b8a583",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c01b4291",
+		"data": {
+			"inGameStrID": "miles",
+			"notecount": 548
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df358b8a583",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31be8982a",
+		"data": {
+			"inGameStrID": "violaillyria",
+			"notecount": 927
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3599da631",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df332a9a019",
+		"data": {
+			"inGameStrID": "violaillyria",
+			"notecount": 539
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3599da631",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3898beb57",
+		"data": {
+			"inGameStrID": "violaillyria",
+			"notecount": 683
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3599da631",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34ea56da1",
+		"data": {
+			"inGameStrID": "disintegration",
+			"notecount": 821
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df35d581f19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39c41c7a0",
+		"data": {
+			"inGameStrID": "disintegration",
+			"notecount": 605
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df35d581f19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a7c8f2c6",
+		"data": {
+			"inGameStrID": "disintegration",
+			"notecount": 387
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df35d581f19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bb3a98e6",
+		"data": {
+			"inGameStrID": "disintegration",
+			"notecount": 466
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df35d581f19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3530acbd8",
+		"data": {
+			"inGameStrID": "uad",
+			"notecount": 836
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df35f621641",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37ec2d2a4",
+		"data": {
+			"inGameStrID": "uad",
+			"notecount": 643
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df35f621641",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f226e071",
+		"data": {
+			"inGameStrID": "uad",
+			"notecount": 366
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df35f621641",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33cad69d1",
+		"data": {
+			"inGameStrID": "uad",
+			"notecount": 526
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df35f621641",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30fed97df",
+		"data": {
+			"inGameStrID": "ignition",
+			"notecount": 994
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df361490758",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df351f6c319",
+		"data": {
+			"inGameStrID": "ignition",
+			"notecount": 578
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df361490758",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3148bb50c",
+		"data": {
+			"inGameStrID": "ignition",
+			"notecount": 621
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df361490758",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3835f4e75",
+		"data": {
+			"inGameStrID": "incompleteone",
+			"notecount": 1008
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df361ed1250",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30aa138d0",
+		"data": {
+			"inGameStrID": "incompleteone",
+			"notecount": 912
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df361ed1250",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d73a9ddb",
+		"data": {
+			"inGameStrID": "incompleteone",
+			"notecount": 691
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df361ed1250",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df317ed0c95",
+		"data": {
+			"inGameStrID": "incompleteone",
+			"notecount": 848
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df361ed1250",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3dee64a17",
+		"data": {
+			"inGameStrID": "rainofconflict",
+			"notecount": 1247
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df362683c70",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3be507ca5",
+		"data": {
+			"inGameStrID": "rainofconflict",
+			"notecount": 1164
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df362683c70",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df361b3e1ba",
+		"data": {
+			"inGameStrID": "rainofconflict",
+			"notecount": 831
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df362683c70",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3494d1530",
+		"data": {
+			"inGameStrID": "rainofconflict",
+			"notecount": 934
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df362683c70",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f8ccb725",
+		"data": {
+			"inGameStrID": "endmoonlight",
+			"notecount": 738
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df36285afd4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df380fa2bd9",
+		"data": {
+			"inGameStrID": "endmoonlight",
+			"notecount": 340
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df36285afd4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34e4bc146",
+		"data": {
+			"inGameStrID": "endmoonlight",
+			"notecount": 434
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df36285afd4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31b40f183",
+		"data": {
+			"inGameStrID": "straightintolights",
+			"notecount": 1280
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df363e02654",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df327154674",
+		"data": {
+			"inGameStrID": "straightintolights",
+			"notecount": 1226
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df363e02654",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30d89ad22",
+		"data": {
+			"inGameStrID": "straightintolights",
+			"notecount": 583
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df363e02654",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d978de67",
+		"data": {
+			"inGameStrID": "straightintolights",
+			"notecount": 714
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df363e02654",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37d62c96e",
+		"data": {
+			"inGameStrID": "syriana",
+			"notecount": 880
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df366b0681f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38d5bbc25",
+		"data": {
+			"inGameStrID": "syriana",
+			"notecount": 490
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df366b0681f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df333421ed6",
+		"data": {
+			"inGameStrID": "syriana",
+			"notecount": 516
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df366b0681f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3acff1d19",
+		"data": {
+			"inGameStrID": "omajinai",
+			"notecount": 886
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df36f2c8025",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37b005fc6",
+		"data": {
+			"inGameStrID": "omajinai",
+			"notecount": 288
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df36f2c8025",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df328d34690",
+		"data": {
+			"inGameStrID": "omajinai",
+			"notecount": 572
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df36f2c8025",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f50ac285",
+		"data": {
+			"inGameStrID": "designant",
+			"notecount": 2184
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11+",
+		"levelNum": 11.9,
+		"songID": "S19e3c867df36f72e5fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31bdc6050",
+		"data": {
+			"inGameStrID": "designant",
+			"notecount": 1768
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df36f72e5fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d8adc104",
+		"data": {
+			"inGameStrID": "designant",
+			"notecount": 1055
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df36f72e5fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30b6dfc97",
+		"data": {
+			"inGameStrID": "designant",
+			"notecount": 1426
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df36f72e5fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df313298c2b",
+		"data": {
+			"inGameStrID": "placebobattler",
+			"notecount": 1194
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df37147be09",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38f82d459",
+		"data": {
+			"inGameStrID": "placebobattler",
+			"notecount": 597
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df37147be09",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c57f4855",
+		"data": {
+			"inGameStrID": "placebobattler",
+			"notecount": 827
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df37147be09",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38b087a6a",
+		"data": {
+			"inGameStrID": "incarnator",
+			"notecount": 1355
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df371c9c1ca",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f6bf2eb4",
+		"data": {
+			"inGameStrID": "incarnator",
+			"notecount": 1565
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df371c9c1ca",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df341d6f2d2",
+		"data": {
+			"inGameStrID": "incarnator",
+			"notecount": 1178
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df371c9c1ca",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3294b4ab0",
+		"data": {
+			"inGameStrID": "incarnator",
+			"notecount": 1276
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df371c9c1ca",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32a7f6bcf",
+		"data": {
+			"inGameStrID": "hailstone",
+			"notecount": 1002
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df372a5d469",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30e0c6eb7",
+		"data": {
+			"inGameStrID": "hailstone",
+			"notecount": 534
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df372a5d469",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3dd7bdf5e",
+		"data": {
+			"inGameStrID": "hailstone",
+			"notecount": 651
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df372a5d469",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df391702ba5",
+		"data": {
+			"inGameStrID": "altergate",
+			"notecount": 1324
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df3762ab49a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c36d7d86",
+		"data": {
+			"inGameStrID": "altergate",
+			"notecount": 774
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3762ab49a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bd7c9922",
+		"data": {
+			"inGameStrID": "altergate",
+			"notecount": 993
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df3762ab49a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ca9fc171",
+		"data": {
+			"inGameStrID": "dualdoom",
+			"notecount": 1292
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df3793a1c48",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e2ea3e69",
+		"data": {
+			"inGameStrID": "dualdoom",
+			"notecount": 1094
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df3793a1c48",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ba147991",
+		"data": {
+			"inGameStrID": "dualdoom",
+			"notecount": 838
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3793a1c48",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f73137ae",
+		"data": {
+			"inGameStrID": "dualdoom",
+			"notecount": 830
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3793a1c48",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cf328728",
+		"data": {
+			"inGameStrID": "eternitybreak",
+			"notecount": 1155
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df37eb566b8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f574133f",
+		"data": {
+			"inGameStrID": "eternitybreak",
+			"notecount": 1051
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df37eb566b8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36aad21bd",
+		"data": {
+			"inGameStrID": "eternitybreak",
+			"notecount": 634
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df37eb566b8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df330e2257a",
+		"data": {
+			"inGameStrID": "eternitybreak",
+			"notecount": 882
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df37eb566b8",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f7835ccb",
+		"data": {
+			"inGameStrID": "codeoblivion",
+			"notecount": 1503
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df386dce4c3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3494caf78",
+		"data": {
+			"inGameStrID": "codeoblivion",
+			"notecount": 1281
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df386dce4c3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df304a1361f",
+		"data": {
+			"inGameStrID": "codeoblivion",
+			"notecount": 773
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df386dce4c3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df35de11249",
+		"data": {
+			"inGameStrID": "codeoblivion",
+			"notecount": 1015
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df386dce4c3",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39ad4f904",
+		"data": {
+			"inGameStrID": "liar",
+			"notecount": 919
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19e3c867df3875afec1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33fee2032",
+		"data": {
+			"inGameStrID": "liar",
+			"notecount": 461
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3875afec1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c85d5ade",
+		"data": {
+			"inGameStrID": "liar",
+			"notecount": 614
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3875afec1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df313dcadda",
+		"data": {
+			"inGameStrID": "andorxor",
+			"notecount": 1404
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df38aadbd12",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32144c720",
+		"data": {
+			"inGameStrID": "andorxor",
+			"notecount": 1055
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df38aadbd12",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34198636b",
+		"data": {
+			"inGameStrID": "andorxor",
+			"notecount": 559
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df38aadbd12",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b4b635e4",
+		"data": {
+			"inGameStrID": "andorxor",
+			"notecount": 758
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df38aadbd12",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bd12a643",
+		"data": {
+			"inGameStrID": "paranoidarc",
+			"notecount": 1412
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df393521622",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bf7ca017",
+		"data": {
+			"inGameStrID": "paranoidarc",
+			"notecount": 1204
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df393521622",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df349f9a3f7",
+		"data": {
+			"inGameStrID": "paranoidarc",
+			"notecount": 762
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df393521622",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df392488bae",
+		"data": {
+			"inGameStrID": "paranoidarc",
+			"notecount": 849
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df393521622",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df357e8beea",
+		"data": {
+			"inGameStrID": "dontdie",
+			"notecount": 1004
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3938a4a8b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d4144700",
+		"data": {
+			"inGameStrID": "dontdie",
+			"notecount": 793
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df3938a4a8b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d66a7b5e",
+		"data": {
+			"inGameStrID": "dontdie",
+			"notecount": 460
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3938a4a8b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32e94ef51",
+		"data": {
+			"inGameStrID": "dontdie",
+			"notecount": 565
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df3938a4a8b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df341afbf4a",
+		"data": {
+			"inGameStrID": "onestepcloser",
+			"notecount": 752
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df394ac7a31",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3af48ab43",
+		"data": {
+			"inGameStrID": "onestepcloser",
+			"notecount": 454
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df394ac7a31",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34bc1da7b",
+		"data": {
+			"inGameStrID": "onestepcloser",
+			"notecount": 551
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df394ac7a31",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37059d55c",
+		"data": {
+			"inGameStrID": "undyingmacula",
+			"notecount": 1461
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19e3c867df3965e6e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e2f9ca41",
+		"data": {
+			"inGameStrID": "undyingmacula",
+			"notecount": 1250
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3965e6e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df379eca23f",
+		"data": {
+			"inGameStrID": "undyingmacula",
+			"notecount": 883
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3965e6e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e6ec960a",
+		"data": {
+			"inGameStrID": "undyingmacula",
+			"notecount": 904
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df3965e6e34",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df301eeeff1",
+		"data": {
+			"inGameStrID": "scarletlunar",
+			"notecount": 1037
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3969487f2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df377fbfa6a",
+		"data": {
+			"inGameStrID": "scarletlunar",
+			"notecount": 609
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3969487f2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30f89cadf",
+		"data": {
+			"inGameStrID": "scarletlunar",
+			"notecount": 698
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df3969487f2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3311da505",
+		"data": {
+			"inGameStrID": "awakening",
+			"notecount": 726
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df39b09e041",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c4e8cf8c",
+		"data": {
+			"inGameStrID": "awakening",
+			"notecount": 608
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df39b09e041",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df300034dea",
+		"data": {
+			"inGameStrID": "awakening",
+			"notecount": 394
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df39b09e041",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34e737206",
+		"data": {
+			"inGameStrID": "awakening",
+			"notecount": 492
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df39b09e041",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36fd0c994",
+		"data": {
+			"inGameStrID": "chaintonite",
+			"notecount": 1037
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df39dccbf19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df364e92b20",
+		"data": {
+			"inGameStrID": "chaintonite",
+			"notecount": 883
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df39dccbf19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bb322b14",
+		"data": {
+			"inGameStrID": "chaintonite",
+			"notecount": 723
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df39dccbf19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3333b7aee",
+		"data": {
+			"inGameStrID": "chaintonite",
+			"notecount": 759
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df39dccbf19",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33c6b320b",
+		"data": {
+			"inGameStrID": "ladymadestar",
+			"notecount": 753
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df39ef7ef7e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c1b169e9",
+		"data": {
+			"inGameStrID": "ladymadestar",
+			"notecount": 636
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df39ef7ef7e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39cadf88b",
+		"data": {
+			"inGameStrID": "ladymadestar",
+			"notecount": 394
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df39ef7ef7e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f859ed61",
+		"data": {
+			"inGameStrID": "ladymadestar",
+			"notecount": 491
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df39ef7ef7e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f62d20fa",
+		"data": {
+			"inGameStrID": "xterfusion",
+			"notecount": 1441
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df3a00b3a18",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38c0c74bd",
+		"data": {
+			"inGameStrID": "xterfusion",
+			"notecount": 1138
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3a00b3a18",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df328087778",
+		"data": {
+			"inGameStrID": "xterfusion",
+			"notecount": 640
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3a00b3a18",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b00be14c",
+		"data": {
+			"inGameStrID": "xterfusion",
+			"notecount": 924
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.3,
+		"songID": "S19e3c867df3a00b3a18",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df359be093c",
+		"data": {
+			"inGameStrID": "nightmare",
+			"notecount": 1116
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df3a16c7e83",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39ceec782",
+		"data": {
+			"inGameStrID": "nightmare",
+			"notecount": 901
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3a16c7e83",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a75422f0",
+		"data": {
+			"inGameStrID": "nightmare",
+			"notecount": 680
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3a16c7e83",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3be5126c4",
+		"data": {
+			"inGameStrID": "nightmare",
+			"notecount": 757
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3a16c7e83",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e61248ac",
+		"data": {
+			"inGameStrID": "marenyx",
+			"notecount": 1500
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e3c867df3a2b88717",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36ec1a1ea",
+		"data": {
+			"inGameStrID": "marenyx",
+			"notecount": 1307
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3a2b88717",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36d15726c",
+		"data": {
+			"inGameStrID": "marenyx",
+			"notecount": 886
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3a2b88717",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33c294dc0",
+		"data": {
+			"inGameStrID": "marenyx",
+			"notecount": 1143
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3a2b88717",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df329987883",
+		"data": {
+			"inGameStrID": "spiritdauntless",
+			"notecount": 1207
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df3a3eec9f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3631e2bec",
+		"data": {
+			"inGameStrID": "spiritdauntless",
+			"notecount": 693
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3a3eec9f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3febb3902",
+		"data": {
+			"inGameStrID": "spiritdauntless",
+			"notecount": 957
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3a3eec9f5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34c455ae1",
+		"data": {
+			"inGameStrID": "someday",
+			"notecount": 673
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3a42a726f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df385dc7d48",
+		"data": {
+			"inGameStrID": "someday",
+			"notecount": 367
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3a42a726f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3379f9b46",
+		"data": {
+			"inGameStrID": "someday",
+			"notecount": 477
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3a42a726f",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3aedffa22",
+		"data": {
+			"inGameStrID": "rostpagegene",
+			"notecount": 1028
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df3ad38d0ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d717da69",
+		"data": {
+			"inGameStrID": "rostpagegene",
+			"notecount": 475
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df3ad38d0ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e517cab4",
+		"data": {
+			"inGameStrID": "rostpagegene",
+			"notecount": 697
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df3ad38d0ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df352cb654a",
+		"data": {
+			"inGameStrID": "waltzforlorelei",
+			"notecount": 999
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3af7241e5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39a813c46",
+		"data": {
+			"inGameStrID": "waltzforlorelei",
+			"notecount": 916
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3af7241e5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df311c60b92",
+		"data": {
+			"inGameStrID": "waltzforlorelei",
+			"notecount": 664
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3af7241e5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30ac7b737",
+		"data": {
+			"inGameStrID": "waltzforlorelei",
+			"notecount": 814
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3af7241e5",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33500a7d6",
+		"data": {
+			"inGameStrID": "angelsboundary",
+			"notecount": 1246
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df3b182a076",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df301e439a4",
+		"data": {
+			"inGameStrID": "angelsboundary",
+			"notecount": 841
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df3b182a076",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d4c63942",
+		"data": {
+			"inGameStrID": "angelsboundary",
+			"notecount": 1013
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df3b182a076",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3535533cd",
+		"data": {
+			"inGameStrID": "heartache",
+			"notecount": 851
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df3b2e3806c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3dd3d0df2",
+		"data": {
+			"inGameStrID": "heartache",
+			"notecount": 803
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3b2e3806c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38369dc16",
+		"data": {
+			"inGameStrID": "heartache",
+			"notecount": 425
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "1",
+		"levelNum": 1.5,
+		"songID": "S19e3c867df3b2e3806c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df33f28e36a",
+		"data": {
+			"inGameStrID": "heartache",
+			"notecount": 687
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3b2e3806c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3989baed3",
+		"data": {
+			"inGameStrID": "astralexe",
+			"notecount": 1059
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3b94d671d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df345dcec24",
+		"data": {
+			"inGameStrID": "astralexe",
+			"notecount": 654
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3b94d671d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36df6f0cb",
+		"data": {
+			"inGameStrID": "astralexe",
+			"notecount": 734
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3b94d671d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df391b14128",
+		"data": {
+			"inGameStrID": "mvurbd",
+			"notecount": 1497
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3bd5aa66b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38cfac386",
+		"data": {
+			"inGameStrID": "mvurbd",
+			"notecount": 999
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3bd5aa66b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39f63a3ca",
+		"data": {
+			"inGameStrID": "mvurbd",
+			"notecount": 1031
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3bd5aa66b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a9a9ef42",
+		"data": {
+			"inGameStrID": "diesirae",
+			"notecount": 1263
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3bd70b9b7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b6e048f2",
+		"data": {
+			"inGameStrID": "diesirae",
+			"notecount": 1052
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3bd70b9b7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f5288602",
+		"data": {
+			"inGameStrID": "diesirae",
+			"notecount": 632
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3bd70b9b7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b12880b2",
+		"data": {
+			"inGameStrID": "diesirae",
+			"notecount": 802
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3bd70b9b7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c43008cb",
+		"data": {
+			"inGameStrID": "eightem",
+			"notecount": 1201
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df3beaf8577",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c66e3537",
+		"data": {
+			"inGameStrID": "eightem",
+			"notecount": 1081
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3beaf8577",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3abaa9a90",
+		"data": {
+			"inGameStrID": "eightem",
+			"notecount": 557
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3beaf8577",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cf55d92c",
+		"data": {
+			"inGameStrID": "eightem",
+			"notecount": 847
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3beaf8577",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df351a0fc10",
+		"data": {
+			"inGameStrID": "gensounosatellite",
+			"notecount": 1139
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3bfea6b4d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f64888d5",
+		"data": {
+			"inGameStrID": "gensounosatellite",
+			"notecount": 992
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e3c867df3bfea6b4d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a170c5b8",
+		"data": {
+			"inGameStrID": "gensounosatellite",
+			"notecount": 721
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3bfea6b4d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3366510a1",
+		"data": {
+			"inGameStrID": "gensounosatellite",
+			"notecount": 783
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3bfea6b4d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df367621cbe",
+		"data": {
+			"inGameStrID": "vainspire",
+			"notecount": 1133
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df3c008c2ec",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3112e9820",
+		"data": {
+			"inGameStrID": "vainspire",
+			"notecount": 947
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df3c008c2ec",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3361f4b65",
+		"data": {
+			"inGameStrID": "vainspire",
+			"notecount": 771
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3c008c2ec",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32ab663eb",
+		"data": {
+			"inGameStrID": "vainspire",
+			"notecount": 787
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df3c008c2ec",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32f07876d",
+		"data": {
+			"inGameStrID": "mod",
+			"notecount": 853
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df3c2ac3730",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df362b3cd41",
+		"data": {
+			"inGameStrID": "mod",
+			"notecount": 572
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3c2ac3730",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3aebd0b26",
+		"data": {
+			"inGameStrID": "mod",
+			"notecount": 676
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3c2ac3730",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df328ad5acb",
+		"data": {
+			"inGameStrID": "undefined",
+			"notecount": 896
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.4,
+		"songID": "S19e3c867df3c920ebed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3da0aaa21",
+		"data": {
+			"inGameStrID": "undefined",
+			"notecount": 371
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3c920ebed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30e343883",
+		"data": {
+			"inGameStrID": "undefined",
+			"notecount": 532
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3c920ebed",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32768ee96",
+		"data": {
+			"inGameStrID": "theraft",
+			"notecount": 1193
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3cdaf6f28",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3568718f5",
+		"data": {
+			"inGameStrID": "theraft",
+			"notecount": 999
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3cdaf6f28",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fc656110",
+		"data": {
+			"inGameStrID": "theraft",
+			"notecount": 722
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3cdaf6f28",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df385cb95fd",
+		"data": {
+			"inGameStrID": "theraft",
+			"notecount": 803
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3cdaf6f28",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df387f06a67",
+		"data": {
+			"inGameStrID": "saintorsinner",
+			"notecount": 0
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3ce1d645d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32f06c6de",
+		"data": {
+			"inGameStrID": "saintorsinner",
+			"notecount": 906
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3ce1d645d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39c6be5e9",
+		"data": {
+			"inGameStrID": "saintorsinner",
+			"notecount": 447
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3ce1d645d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3019be588",
+		"data": {
+			"inGameStrID": "saintorsinner",
+			"notecount": 563
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3ce1d645d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df34c38b0c0",
+		"data": {
+			"inGameStrID": "infinitedim",
+			"notecount": 1111
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3d137c71b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3cd35edea",
+		"data": {
+			"inGameStrID": "infinitedim",
+			"notecount": 947
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df3d137c71b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ca0bfa68",
+		"data": {
+			"inGameStrID": "infinitedim",
+			"notecount": 566
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3d137c71b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3a4a21a78",
+		"data": {
+			"inGameStrID": "infinitedim",
+			"notecount": 708
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3d137c71b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b2147e13",
+		"data": {
+			"inGameStrID": "lamentrain",
+			"notecount": 1637
+		},
+		"difficulty": "Beyond",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.4,
+		"songID": "S19e3c867df3d38b50ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d4d37d9e",
+		"data": {
+			"inGameStrID": "lamentrain",
+			"notecount": 1380
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3d38b50ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df344ea6fdd",
+		"data": {
+			"inGameStrID": "lamentrain",
+			"notecount": 1025
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3d38b50ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df318140f0a",
+		"data": {
+			"inGameStrID": "lamentrain",
+			"notecount": 1186
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3d38b50ee",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df389a8d25b",
+		"data": {
+			"inGameStrID": "prayer",
+			"notecount": 714
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.1,
+		"songID": "S19e3c867df3d59a6008",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38c26a919",
+		"data": {
+			"inGameStrID": "prayer",
+			"notecount": 591
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e3c867df3d59a6008",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39c87a791",
+		"data": {
+			"inGameStrID": "prayer",
+			"notecount": 419
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3d59a6008",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32ee80b56",
+		"data": {
+			"inGameStrID": "prayer",
+			"notecount": 479
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3d59a6008",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b7c7c214",
+		"data": {
+			"inGameStrID": "zephyrlast",
+			"notecount": 1166
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19e3c867df3d65b5885",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ebf1a7e7",
+		"data": {
+			"inGameStrID": "zephyrlast",
+			"notecount": 1027
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3d65b5885",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3057d6f82",
+		"data": {
+			"inGameStrID": "zephyrlast",
+			"notecount": 563
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3d65b5885",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df357eac690",
+		"data": {
+			"inGameStrID": "zephyrlast",
+			"notecount": 832
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3d65b5885",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3add343eb",
+		"data": {
+			"inGameStrID": "seethelights",
+			"notecount": 844
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df3d7e8eb0c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f8b9396a",
+		"data": {
+			"inGameStrID": "seethelights",
+			"notecount": 692
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df3d7e8eb0c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31cbd1e08",
+		"data": {
+			"inGameStrID": "seethelights",
+			"notecount": 445
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3d7e8eb0c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31766f94a",
+		"data": {
+			"inGameStrID": "seethelights",
+			"notecount": 582
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3d7e8eb0c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32468041c",
+		"data": {
+			"inGameStrID": "subsphere",
+			"notecount": 1327
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3d81d9c76",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37e201c0b",
+		"data": {
+			"inGameStrID": "subsphere",
+			"notecount": 1177
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df3d81d9c76",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b9364ff1",
+		"data": {
+			"inGameStrID": "subsphere",
+			"notecount": 781
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df3d81d9c76",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df325a1baf0",
+		"data": {
+			"inGameStrID": "subsphere",
+			"notecount": 997
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.1,
+		"songID": "S19e3c867df3d81d9c76",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39956b58e",
+		"data": {
+			"inGameStrID": "xxium",
+			"notecount": 1096
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df3d9923ec2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3280139f5",
+		"data": {
+			"inGameStrID": "xxium",
+			"notecount": 1182
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df3d9923ec2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3caf840e9",
+		"data": {
+			"inGameStrID": "xxium",
+			"notecount": 768
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3d9923ec2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31907ae40",
+		"data": {
+			"inGameStrID": "xxium",
+			"notecount": 806
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3d9923ec2",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3231d46ae",
+		"data": {
+			"inGameStrID": "epitaxy",
+			"notecount": 1410
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df3de7fc4a9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3afaeb5d1",
+		"data": {
+			"inGameStrID": "epitaxy",
+			"notecount": 1177
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df3de7fc4a9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ed6fd332",
+		"data": {
+			"inGameStrID": "epitaxy",
+			"notecount": 826
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3de7fc4a9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c2f03788",
+		"data": {
+			"inGameStrID": "epitaxy",
+			"notecount": 939
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e3c867df3de7fc4a9",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df358d0e1a2",
+		"data": {
+			"inGameStrID": "blazingair",
+			"notecount": 1129
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3e14ea5ef",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df321563f00",
+		"data": {
+			"inGameStrID": "blazingair",
+			"notecount": 757
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df3e14ea5ef",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df361d6db90",
+		"data": {
+			"inGameStrID": "blazingair",
+			"notecount": 433
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3e14ea5ef",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32224e9a5",
+		"data": {
+			"inGameStrID": "blazingair",
+			"notecount": 571
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3e14ea5ef",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c119b37d",
+		"data": {
+			"inGameStrID": "tabootears",
+			"notecount": 1125
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df3e2823e25",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e8880c34",
+		"data": {
+			"inGameStrID": "tabootears",
+			"notecount": 845
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.4,
+		"songID": "S19e3c867df3e2823e25",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df333df5717",
+		"data": {
+			"inGameStrID": "tabootears",
+			"notecount": 449
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3e2823e25",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31234bcda",
+		"data": {
+			"inGameStrID": "tabootears",
+			"notecount": 637
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3e2823e25",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e8cfb088",
+		"data": {
+			"inGameStrID": "dualdependency",
+			"notecount": 1162
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3e33da658",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39a62f497",
+		"data": {
+			"inGameStrID": "dualdependency",
+			"notecount": 987
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3e33da658",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3156e4bf2",
+		"data": {
+			"inGameStrID": "dualdependency",
+			"notecount": 607
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3e33da658",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36ee95bc9",
+		"data": {
+			"inGameStrID": "dualdependency",
+			"notecount": 784
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3e33da658",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3541bc526",
+		"data": {
+			"inGameStrID": "nowayback",
+			"notecount": 1008
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3e399b406",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c36f234e",
+		"data": {
+			"inGameStrID": "nowayback",
+			"notecount": 837
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.9,
+		"songID": "S19e3c867df3e399b406",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3280cd1be",
+		"data": {
+			"inGameStrID": "nowayback",
+			"notecount": 564
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3e399b406",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32576951d",
+		"data": {
+			"inGameStrID": "nowayback",
+			"notecount": 639
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3e399b406",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f3846ed7",
+		"data": {
+			"inGameStrID": "acheron",
+			"notecount": 1024
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df3e3fce42e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d97c47ce",
+		"data": {
+			"inGameStrID": "acheron",
+			"notecount": 538
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3e3fce42e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3c41ec383",
+		"data": {
+			"inGameStrID": "acheron",
+			"notecount": 688
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3e3fce42e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37f5248a9",
+		"data": {
+			"inGameStrID": "blackmirror",
+			"notecount": 894
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df3e638e373",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37583ad48",
+		"data": {
+			"inGameStrID": "blackmirror",
+			"notecount": 735
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.6,
+		"songID": "S19e3c867df3e638e373",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df39e97a55e",
+		"data": {
+			"inGameStrID": "blackmirror",
+			"notecount": 471
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3e638e373",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d3a597f5",
+		"data": {
+			"inGameStrID": "blackmirror",
+			"notecount": 613
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3e638e373",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3de99f345",
+		"data": {
+			"inGameStrID": "mask",
+			"notecount": 1201
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df3e8296660",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df367d4035e",
+		"data": {
+			"inGameStrID": "mask",
+			"notecount": 869
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df3e8296660",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3b9ac3209",
+		"data": {
+			"inGameStrID": "mask",
+			"notecount": 994
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df3e8296660",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df31b6596f2",
+		"data": {
+			"inGameStrID": "mylifeismine",
+			"notecount": 1075
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3eb3f5c16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37e0c1889",
+		"data": {
+			"inGameStrID": "mylifeismine",
+			"notecount": 933
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3eb3f5c16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3bb42c874",
+		"data": {
+			"inGameStrID": "mylifeismine",
+			"notecount": 460
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df3eb3f5c16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3779edddc",
+		"data": {
+			"inGameStrID": "mylifeismine",
+			"notecount": 612
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3eb3f5c16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3fed96a54",
+		"data": {
+			"inGameStrID": "dullblade",
+			"notecount": 1199
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e3c867df3ecd0a8c1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df379d4652b",
+		"data": {
+			"inGameStrID": "dullblade",
+			"notecount": 579
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3ecd0a8c1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df329017445",
+		"data": {
+			"inGameStrID": "dullblade",
+			"notecount": 780
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df3ecd0a8c1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df477bf3518",
+		"data": {
+			"inGameStrID": "meltyrhapsody",
+			"notecount": 1185
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e3c867df3ed4dff0b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4bf311a88",
+		"data": {
+			"inGameStrID": "meltyrhapsody",
+			"notecount": 975
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S19e3c867df3ed4dff0b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4f78eb5dd",
+		"data": {
+			"inGameStrID": "meltyrhapsody",
+			"notecount": 582
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df3ed4dff0b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df49fdd8f83",
+		"data": {
+			"inGameStrID": "meltyrhapsody",
+			"notecount": 790
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3ed4dff0b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df30c5a2163",
+		"data": {
+			"inGameStrID": "tau",
+			"notecount": 1057
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df3ef2aab1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df301e272ef",
+		"data": {
+			"inGameStrID": "tau",
+			"notecount": 553
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df3ef2aab1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3f309b9af",
+		"data": {
+			"inGameStrID": "tau",
+			"notecount": 798
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df3ef2aab1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df377502373",
+		"data": {
+			"inGameStrID": "welcomequeen",
+			"notecount": 1442
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df3f1c508df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df38a54b855",
+		"data": {
+			"inGameStrID": "welcomequeen",
+			"notecount": 1172
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3f1c508df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3031e38c6",
+		"data": {
+			"inGameStrID": "welcomequeen",
+			"notecount": 610
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df3f1c508df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df37b4345ce",
+		"data": {
+			"inGameStrID": "welcomequeen",
+			"notecount": 832
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df3f1c508df",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ef829b0d",
+		"data": {
+			"inGameStrID": "astralquant",
+			"notecount": 1388
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3f447ada6",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df332e3b78a",
+		"data": {
+			"inGameStrID": "astralquant",
+			"notecount": 782
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df3f447ada6",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3355a108f",
+		"data": {
+			"inGameStrID": "astralquant",
+			"notecount": 943
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.1,
+		"songID": "S19e3c867df3f447ada6",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3ab4b2885",
+		"data": {
+			"inGameStrID": "oblivion",
+			"notecount": 871
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3f47dbd3c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3526656c9",
+		"data": {
+			"inGameStrID": "oblivion",
+			"notecount": 759
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df3f47dbd3c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3baff7ba2",
+		"data": {
+			"inGameStrID": "oblivion",
+			"notecount": 469
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df3f47dbd3c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3d5cb154d",
+		"data": {
+			"inGameStrID": "oblivion",
+			"notecount": 527
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df3f47dbd3c",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3edb445f8",
+		"data": {
+			"inGameStrID": "swansong",
+			"notecount": 1225
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df3f64d3b20",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df303806bcc",
+		"data": {
+			"inGameStrID": "swansong",
+			"notecount": 563
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df3f64d3b20",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3457675ad",
+		"data": {
+			"inGameStrID": "swansong",
+			"notecount": 719
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df3f64d3b20",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df36de27ade",
+		"data": {
+			"inGameStrID": "extradimensional",
+			"notecount": 1726
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "11",
+		"levelNum": 11.3,
+		"songID": "S19e3c867df3fab8dce0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df356d0749b",
+		"data": {
+			"inGameStrID": "extradimensional",
+			"notecount": 1422
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df3fab8dce0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df383537a6b",
+		"data": {
+			"inGameStrID": "extradimensional",
+			"notecount": 1011
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df3fab8dce0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df32fdce751",
+		"data": {
+			"inGameStrID": "extradimensional",
+			"notecount": 1193
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df3fab8dce0",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3e86dc2d1",
+		"data": {
+			"inGameStrID": "wereallgonnadie",
+			"notecount": 1335
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.9,
+		"songID": "S19e3c867df3fb2ee37b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3196029ba",
+		"data": {
+			"inGameStrID": "wereallgonnadie",
+			"notecount": 1147
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df3fb2ee37b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df392e30601",
+		"data": {
+			"inGameStrID": "wereallgonnadie",
+			"notecount": 733
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df3fb2ee37b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df3237e663e",
+		"data": {
+			"inGameStrID": "wereallgonnadie",
+			"notecount": 864
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e3c867df3fb2ee37b",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df468296581",
+		"data": {
+			"inGameStrID": "signal",
+			"notecount": 1245
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e3c867df406296e5d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4ca1ee875",
+		"data": {
+			"inGameStrID": "signal",
+			"notecount": 1151
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e3c867df406296e5d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df49b7ff38f",
+		"data": {
+			"inGameStrID": "signal",
+			"notecount": 582
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df406296e5d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df41dd22885",
+		"data": {
+			"inGameStrID": "signal",
+			"notecount": 824
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df406296e5d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df406062bdb",
+		"data": {
+			"inGameStrID": "goodrage",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df40bb14b1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4676be9c9",
+		"data": {
+			"inGameStrID": "goodrage",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.3,
+		"songID": "S19e3c867df40bb14b1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4df7cf61e",
+		"data": {
+			"inGameStrID": "goodrage",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df40bb14b1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4f874757e",
+		"data": {
+			"inGameStrID": "goodrage",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df40bb14b1e",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4b369afda",
+		"data": {
+			"inGameStrID": "desertrealm",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.6,
+		"songID": "S19e3c867df41cd496fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df47f4bbd92",
+		"data": {
+			"inGameStrID": "desertrealm",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df41cd496fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4512563c3",
+		"data": {
+			"inGameStrID": "desertrealm",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e3c867df41cd496fe",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4703f276e",
+		"data": {
+			"inGameStrID": "riotsystem",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df4547ded08",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4a49a7a4b",
+		"data": {
+			"inGameStrID": "riotsystem",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df4547ded08",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4e796062a",
+		"data": {
+			"inGameStrID": "riotsystem",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df4547ded08",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df455b72ed6",
+		"data": {
+			"inGameStrID": "riotsystem",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df4547ded08",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4dcf58d51",
+		"data": {
+			"inGameStrID": "spearofjustice",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df467fb20af",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4c7ab6c1c",
+		"data": {
+			"inGameStrID": "spearofjustice",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df467fb20af",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4378219e6",
+		"data": {
+			"inGameStrID": "spearofjustice",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df467fb20af",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df49d9ae712",
+		"data": {
+			"inGameStrID": "spearofjustice",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df467fb20af",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4c764ef89",
+		"data": {
+			"inGameStrID": "mirrorrmx",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e3c867df4683f050d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df40405a38c",
+		"data": {
+			"inGameStrID": "mirrorrmx",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df4683f050d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df497dcbc6c",
+		"data": {
+			"inGameStrID": "mirrorrmx",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df4683f050d",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4efd27acd",
+		"data": {
+			"inGameStrID": "spiderdance",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.5,
+		"songID": "S19e3c867df48d31c8f7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4c398f319",
+		"data": {
+			"inGameStrID": "spiderdance",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df48d31c8f7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4dcd547dd",
+		"data": {
+			"inGameStrID": "spiderdance",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df48d31c8f7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df48ec0c1c3",
+		"data": {
+			"inGameStrID": "spiderdance",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df48d31c8f7",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4010a67df",
+		"data": {
+			"inGameStrID": "cryogenic",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19e3c867df495f12031",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df431d008ba",
+		"data": {
+			"inGameStrID": "cryogenic",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df495f12031",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4d96684d1",
+		"data": {
+			"inGameStrID": "cryogenic",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e3c867df495f12031",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df46fd25bf9",
+		"data": {
+			"inGameStrID": "cryogenic",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df495f12031",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df41e887888",
+		"data": {
+			"inGameStrID": "vallista",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df4a7ffe3fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df45ff124fc",
+		"data": {
+			"inGameStrID": "vallista",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df4a7ffe3fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4727fff92",
+		"data": {
+			"inGameStrID": "vallista",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e3c867df4a7ffe3fb",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df472e8d3ad",
+		"data": {
+			"inGameStrID": "shinoukyoseki",
+			"notecount": 1065
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df4b81186f1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4844d297c",
+		"data": {
+			"inGameStrID": "shinoukyoseki",
+			"notecount": 582
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3.5,
+		"songID": "S19e3c867df4b81186f1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df49714fb6e",
+		"data": {
+			"inGameStrID": "shinoukyoseki",
+			"notecount": 748
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e3c867df4b81186f1",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df49c0ecae7",
+		"data": {
+			"inGameStrID": "thirdavenue",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e3c867df4bfe9ddb4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df43121ae7c",
+		"data": {
+			"inGameStrID": "thirdavenue",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e3c867df4bfe9ddb4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4853421d9",
+		"data": {
+			"inGameStrID": "thirdavenue",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.1,
+		"songID": "S19e3c867df4bfe9ddb4",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df46d35d9b3",
+		"data": {
+			"inGameStrID": "unknownnum",
+			"notecount": 882
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e3c867df4d747310a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df46e04aa4b",
+		"data": {
+			"inGameStrID": "unknownnum",
+			"notecount": 486
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e3c867df4d747310a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df47e12a4ba",
+		"data": {
+			"inGameStrID": "unknownnum",
+			"notecount": 619
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e3c867df4d747310a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df492ab2d8a",
+		"data": {
+			"inGameStrID": "caramelpop",
+			"notecount": 959
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "9",
+		"levelNum": 9.1,
+		"songID": "S19e3c867df4edc9ef2a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4cf09f849",
+		"data": {
+			"inGameStrID": "caramelpop",
+			"notecount": 767
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8",
+		"levelNum": 8.1,
+		"songID": "S19e3c867df4edc9ef2a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df45ee01f71",
+		"data": {
+			"inGameStrID": "caramelpop",
+			"notecount": 610
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "2",
+		"levelNum": 2.5,
+		"songID": "S19e3c867df4edc9ef2a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df42b2b5fda",
+		"data": {
+			"inGameStrID": "caramelpop",
+			"notecount": 579
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "5",
+		"levelNum": 5.5,
+		"songID": "S19e3c867df4edc9ef2a",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df40e5e9f82",
+		"data": {
+			"inGameStrID": "asgore",
+			"notecount": 0
+		},
+		"difficulty": "Eternal",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e3c867df4ff27ca16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4180357d8",
+		"data": {
+			"inGameStrID": "asgore",
+			"notecount": 0
+		},
+		"difficulty": "Future",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e3c867df4ff27ca16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df4ae9456ef",
+		"data": {
+			"inGameStrID": "asgore",
+			"notecount": 0
+		},
+		"difficulty": "Past",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "4",
+		"levelNum": 4.5,
+		"songID": "S19e3c867df4ff27ca16",
+		"versions": ["mobile"]
+	},
+	{
+		"chartID": "C19e3c867df469d2c5fd",
+		"data": {
+			"inGameStrID": "asgore",
+			"notecount": 0
+		},
+		"difficulty": "Present",
+		"game": "arcaea",
+		"isPrimary": true,
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e3c867df4ff27ca16",
 		"versions": ["mobile"]
 	}
 ]
