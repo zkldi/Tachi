@@ -35,7 +35,7 @@ const MANUAL_TITLE_MAP = {
 	"Signal feat. Such": "Signal",
 	"キャラメルポップコーンたべたいよ～": "キャラメルポップコーンたべたいよ〜",
 	"患部で止まってすぐ溶ける　～ 狂気の優曇華院": "患部で止まってすぐ溶ける　〜 狂気の優曇華院",
-	"患部で止まってすぐ溶ける～ 狂気の優曇華院": "患部で止まってすぐ溶ける　〜 狂気の優曇華院"
+	"患部で止まってすぐ溶ける～ 狂気の優曇華院": "患部で止まってすぐ溶ける　〜 狂気の優曇華院",
 };
 // Multiple different songs with the same title, requiring artist search.
 const NEEDS_ARTIST_SEARCH = ["Quon", "Genesis"];
@@ -48,8 +48,8 @@ const AF_FTR_BLACKLIST = [
 	"0xe0e1ccull",
 	"HIVEMIND INTERLINKED",
 	"Live Faster Die Younger",
-	"Mistempered Malignance"
-]
+	"Mistempered Malignance",
+];
 
 const songs = ReadCollection("songs-arcaea.json");
 
@@ -81,12 +81,7 @@ function parseScrapedData(file, mutationCallback) {
 			continue;
 		}
 
-		const chart = FindChartWithDFVersion(
-			charts,
-			song.id,
-			entry.difficulty,
-			"mobile",
-		);
+		const chart = FindChartWithDFVersion(charts, song.id, entry.difficulty, "mobile");
 
 		if (!chart) {
 			console.warn(`${song.title} [${entry.difficulty}] - Couldn't find chart?`);
@@ -101,7 +96,7 @@ function parseScrapedData(file, mutationCallback) {
 }
 
 function chartConstantMutationCallback(chart, entry) {
-	if(chart.levelNum !== entry.levelNum) {
+	if (chart.levelNum !== entry.levelNum) {
 		console.info(`${entry.title} ${entry.difficulty} ${chart.levelNum} -> ${entry.levelNum}`);
 	}
 	chart.level = entry.level;
@@ -118,8 +113,14 @@ if (fs.existsSync(path.join(__dirname, "upper.json"))) {
 
 if (fs.existsSync(path.join(__dirname, "notecount.json"))) {
 	parseScrapedData("notecount.json", (chart, entry) => {
-		if (chart.data.notecount !== undefined && chart.data.notecount > 0 && chart.data.notecount !== entry.notecount) {
-			console.warn(`${entry.title} ${entry.difficulty} ${chart.notecount} -> ${entry.notecount}`);
+		if (
+			chart.data.notecount !== undefined &&
+			chart.data.notecount > 0 &&
+			chart.data.notecount !== entry.notecount
+		) {
+			console.warn(
+				`${entry.title} ${entry.difficulty} ${chart.notecount} -> ${entry.notecount}`,
+			);
 		}
 		chart.data = {
 			...chart.data,

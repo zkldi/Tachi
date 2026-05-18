@@ -42,7 +42,7 @@ interface SonglistEntry {
 	search_artist?: LocalizedSearchTerms;
 	version: string;
 	difficulties: Array<SonglistChart>;
-	deleted?: boolean
+	deleted?: boolean;
 }
 
 interface PacklistEntry {
@@ -178,7 +178,7 @@ const newSongs: Array<SongDocument<"arcaea">> = [];
 const newCharts: Array<ChartDocument<"arcaea">> = [];
 
 for (const entry of data.songs) {
-	if(entry.deleted) {
+	if (entry.deleted) {
 		continue;
 	}
 	const inGameID = entry.id;

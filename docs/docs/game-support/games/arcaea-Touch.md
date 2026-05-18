@@ -63,6 +63,7 @@ The following judgements are defined:
 - `Past`
 - `Present`
 - `Future`
+- `Eternal`
 - `Beyond`
 
 ## Classes
