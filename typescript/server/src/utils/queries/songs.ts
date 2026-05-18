@@ -9,8 +9,6 @@ import {
 import DB from "#services/pg/db";
 import { sql } from "kysely";
 
-import { EscapeStringRegexp } from "../misc";
-
 /**
  * Finds a song document for the given game with the given title (or alt-title).
  * This is NOT the preferred way to find a song, as encodings, and typos, make this
@@ -51,22 +49,20 @@ export async function FindSongOnTitleInsensitive(
 	title: string,
 	artist?: string | null,
 ): Promise<SongDocument | null> {
-	const titlePat = `^${EscapeStringRegexp(title)}$`;
-	const artistPat = `^${EscapeStringRegexp(artist ?? "")}$`;
 
 	let q = DB.selectFrom("song")
 		.select(SELECT_SONG_ROW)
 		.where("song.game_group", "=", game)
 		.where((eb) =>
 			eb.or([
-				sql<boolean>`song.title ~* ${titlePat}`,
-				sql<boolean>`EXISTS (SELECT 1 FROM unnest(song.alt_titles) AS a WHERE a ~* ${titlePat})`,
+				sql<boolean>`LOWER(song.title) = LOWER(${title})`,
+				sql<boolean>`EXISTS (SELECT 1 FROM unnest(song.alt_titles) AS a WHERE LOWER(a) = LOWER(${title}))`,
 			]),
 		)
 		.limit(2);
 
 	if (artist) {
-		q = q.where(sql<boolean>`song.artist ~* ${artistPat}`);
+		q = q.where(sql<boolean>`LOWER(song.artist) = LOWER(${artist})`);
 	}
 
 	const res = await q.execute();
