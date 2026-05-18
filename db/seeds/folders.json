@@ -122,6 +122,17 @@
 	},
 	{
 		"game": "arcaea",
+		"id": "F19e3c01575ffb2191d9",
+		"inactive": false,
+		"legacyFolderID": "",
+		"searchTerms": [],
+		"slug": "7p-mobile",
+		"title": "Level 7+ (Mobile)",
+		"versionFilter": ["mobile"],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "arcaea",
 		"id": "F19d35f0cf25f9312476",
 		"inactive": false,
 		"legacyFolderID": "F248840fcf44c5d23f308d1674e6a74b80080d8d967f8901601e7c8279721f8c0",
@@ -130,6 +141,17 @@
 		"title": "Level 8 (Mobile)",
 		"versionFilter": ["mobile"],
 		"where": "chart.level = '8'"
+	},
+	{
+		"game": "arcaea",
+		"id": "F19e3c01575f43835f33",
+		"inactive": false,
+		"legacyFolderID": "",
+		"searchTerms": [],
+		"slug": "8p-mobile",
+		"title": "Level 8+ (Mobile)",
+		"versionFilter": ["mobile"],
+		"where": "chart.level = '8+'"
 	},
 	{
 		"game": "arcaea",

@@ -1,8 +1,7 @@
-export function FindChartWithPTDFVersion(collection, songID, playtype, difficulty, version) {
+export function FindChartWithDFVersion(collection, songID, difficulty, version) {
 	return collection.find(
 		(chart) =>
-			chart.song.id === songID &&
-			chart.playtype === playtype &&
+			chart.songID === songID &&
 			chart.difficulty === difficulty &&
 			chart.versions.includes(version),
 	);

@@ -162,8 +162,8 @@
 		"id": "C19d35e175454a037914",
 		"isPrimary": true,
 		"legacyChartID": "5160d836dd58ac4f6b7f5b4782e15e61b9710db6",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.7,
 		"songID": "S19d35e0f964a033ae79",
 		"versions": ["mobile"]
 	},
@@ -204,8 +204,8 @@
 		"id": "C19d35e1754620d1020a",
 		"isPrimary": true,
 		"legacyChartID": "29412ffab50654f49d9eb60d76ca1bba05d20930",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f96528c6848c",
 		"versions": ["mobile"]
 	},
@@ -428,7 +428,7 @@
 		"id": "C19d35e1754baa94a271",
 		"isPrimary": true,
 		"legacyChartID": "85da18fd30d1fe2ae42538571d02dd9f84c7dac6",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0f96aaa41fc53",
 		"versions": ["mobile"]
@@ -555,7 +555,7 @@
 		"isPrimary": true,
 		"legacyChartID": "6de80c703b255d9fcb6cb80106c32dbf1f60e2b6",
 		"level": "9",
-		"levelNum": 9,
+		"levelNum": 9.1,
 		"songID": "S19d35e0f96d1dd44b6b",
 		"versions": ["mobile"]
 	},
@@ -610,8 +610,8 @@
 		"id": "C19d35e1754fdd665899",
 		"isPrimary": true,
 		"legacyChartID": "59d6e90c392d27c38b6542ca52dee94c684034e6",
-		"level": "8",
-		"levelNum": 8.8,
+		"level": "9",
+		"levelNum": 9,
 		"songID": "S19d35e0f96e7ab2aa3b",
 		"versions": ["mobile"]
 	},
@@ -709,7 +709,7 @@
 		"isPrimary": true,
 		"legacyChartID": "9c369d3219967916316ba46ea734ab07e8c2d708",
 		"level": "9+",
-		"levelNum": 9.7,
+		"levelNum": 9.8,
 		"songID": "S19d35e0f970bceb0f24",
 		"versions": ["mobile"]
 	},
@@ -807,7 +807,7 @@
 		"isPrimary": true,
 		"legacyChartID": "3bc66e2b592349f623b3cfe695adc3b7cbfaa47b",
 		"level": "11",
-		"levelNum": 11,
+		"levelNum": 11.2,
 		"songID": "S19d35e0f972b9536f3e",
 		"versions": ["mobile"]
 	},
@@ -821,7 +821,7 @@
 		"isPrimary": true,
 		"legacyChartID": "48de13e0be17a282eed6ef97e6e1478eb59bc55e",
 		"level": "10",
-		"levelNum": 10.1,
+		"levelNum": 10,
 		"songID": "S19d35e0f973162565cb",
 		"versions": ["mobile"]
 	},
@@ -932,8 +932,8 @@
 		"id": "C19d35e17556ae02d1eb",
 		"isPrimary": true,
 		"legacyChartID": "7f5d76c42137cf42b35b0d50acd1f2bbd99b0b85",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f975f91c96e9",
 		"versions": ["mobile"]
 	},
@@ -1072,8 +1072,8 @@
 		"id": "C19d35e175597d226c9f",
 		"isPrimary": true,
 		"legacyChartID": "a91cb464429a89fb2b9440bbe5f4a24728683868",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9789656d9a4",
 		"versions": ["mobile"]
 	},
@@ -1115,7 +1115,7 @@
 		"isPrimary": true,
 		"legacyChartID": "e6e44009a1eab08003ababbe1396d770ec974f05",
 		"level": "10",
-		"levelNum": 10.1,
+		"levelNum": 10.3,
 		"songID": "S19d35e0f979ff755eda",
 		"versions": ["mobile"]
 	},
@@ -1156,8 +1156,8 @@
 		"id": "C19d35e1755a3acc5ced",
 		"isPrimary": true,
 		"legacyChartID": "2a9a232641cddfbcc9847f24c5be7b900a6f6c49",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f979ff755eda",
 		"versions": ["mobile"]
 	},
@@ -1170,8 +1170,8 @@
 		"id": "C19d35e1755b400d0b94",
 		"isPrimary": true,
 		"legacyChartID": "d38de7c42b01b434558e96ff89cd02ef1e1ced62",
-		"level": "8",
-		"levelNum": 8.8,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0f97a2b21fcf5",
 		"versions": ["mobile"]
 	},
@@ -1255,7 +1255,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ab8450a847f819e192a75e1863e7588f2bd78a9d",
 		"level": "10",
-		"levelNum": 10.3,
+		"levelNum": 10.2,
 		"songID": "S19d35e0f97cbf434f4c",
 		"versions": ["mobile"]
 	},
@@ -1296,8 +1296,8 @@
 		"id": "C19d35e1755e49acbefe",
 		"isPrimary": true,
 		"legacyChartID": "dc04e752082e363028bcf38ea3d12529e13993d4",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f97dfae7e437",
 		"versions": ["mobile"]
 	},
@@ -1338,8 +1338,8 @@
 		"id": "C19d35e1755f70bb3fd8",
 		"isPrimary": true,
 		"legacyChartID": "34c13cf63d7cce89afd648a4af4c5fae7bbfb83f",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f97e7d1864f5",
 		"versions": ["mobile"]
 	},
@@ -1506,7 +1506,7 @@
 		"id": "C19d35e17563ba73e68a",
 		"isPrimary": true,
 		"legacyChartID": "32aefd4688f91d2ad057c405ae539a0ce546a0b4",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0f98232efa010",
 		"versions": ["mobile"]
@@ -1604,8 +1604,8 @@
 		"id": "C19d35e175653b5cce1c",
 		"isPrimary": true,
 		"legacyChartID": "99487ab7e99d4a216ec31a1ddfda88c8a2d15b73",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9847e8f7dc3",
 		"versions": ["mobile"]
 	},
@@ -1688,7 +1688,7 @@
 		"id": "C19d35e1756755df1fce",
 		"isPrimary": true,
 		"legacyChartID": "e33e9d394a5d4f94ad8f568f6c3b8f75b1aa218e",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0f986bf5676aa",
 		"versions": ["mobile"]
@@ -1801,7 +1801,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ae08f833ab562a9e7159327d3eb08dac195b2da5",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9887d71cf08",
 		"versions": ["mobile"]
 	},
@@ -1814,8 +1814,8 @@
 		"id": "C19d35e1756a484cede1",
 		"isPrimary": true,
 		"legacyChartID": "18cb8a6db9cbc0ee192b792ffbed82eac5c1249a",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9891195c8dd",
 		"versions": ["mobile"]
 	},
@@ -1996,8 +1996,8 @@
 		"id": "C19d35e1756f7968bc5b",
 		"isPrimary": true,
 		"legacyChartID": "b47fe31a1cedf38d2957b5e1f3edb51144fb2bf8",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f98e47c3347d",
 		"versions": ["mobile"]
 	},
@@ -2304,8 +2304,8 @@
 		"id": "C19d35e175765c5bdaf5",
 		"isPrimary": true,
 		"legacyChartID": "224d6cf87f135f35f4bd1149c34a352bce93e00a",
-		"level": "10",
-		"levelNum": 10,
+		"level": "9+",
+		"levelNum": 9.9,
 		"songID": "S19d35e0f99559d3e589",
 		"versions": ["mobile"]
 	},
@@ -2347,7 +2347,7 @@
 		"isPrimary": true,
 		"legacyChartID": "c3cf93aa0603222a925c87a4a56b193d39131f7e",
 		"level": "9+",
-		"levelNum": 9.9,
+		"levelNum": 9.8,
 		"songID": "S19d35e0f996cdf9d542",
 		"versions": ["mobile"]
 	},
@@ -2389,7 +2389,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b20150a691b46a3570721343ec26d5b6d42211fc",
 		"level": "10",
-		"levelNum": 10.5,
+		"levelNum": 10.6,
 		"songID": "S19d35e0f9975c526b86",
 		"versions": ["mobile"]
 	},
@@ -2402,8 +2402,8 @@
 		"id": "C19d35e1757889cd9989",
 		"isPrimary": true,
 		"legacyChartID": "436608368455d840cb49332cef30eb030e72d2ec",
-		"level": "10",
-		"levelNum": 10,
+		"level": "9+",
+		"levelNum": 9.9,
 		"songID": "S19d35e0f9975c526b86",
 		"versions": ["mobile"]
 	},
@@ -2528,8 +2528,8 @@
 		"id": "C19d35e1757bf395ab19",
 		"isPrimary": true,
 		"legacyChartID": "012e1020fbe7f03e7c36d02e56a15e641cc9b9a4",
-		"level": "10+",
-		"levelNum": 10.7,
+		"level": "10",
+		"levelNum": 10.6,
 		"songID": "S19d35e0f99a9d4001bd",
 		"versions": ["mobile"]
 	},
@@ -2571,7 +2571,7 @@
 		"isPrimary": true,
 		"legacyChartID": "5e7baa2b68395f2590b49fee23f6394aee5f1fbd",
 		"level": "11",
-		"levelNum": 11.3,
+		"levelNum": 11.1,
 		"songID": "S19d35e0f99bcc75e453",
 		"versions": ["mobile"]
 	},
@@ -2682,8 +2682,8 @@
 		"id": "C19d35e1757e57271913",
 		"isPrimary": true,
 		"legacyChartID": "6aa11c6da7dad064dc4211f8f6af6f668ab18630",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f99d14e2c733",
 		"versions": ["mobile"]
 	},
@@ -2697,7 +2697,7 @@
 		"isPrimary": true,
 		"legacyChartID": "e43105d6fc625a5ac90273e07611a242315f4dba",
 		"level": "10",
-		"levelNum": 10,
+		"levelNum": 10.2,
 		"songID": "S19d35e0f99e9c3c5787",
 		"versions": ["mobile"]
 	},
@@ -2752,7 +2752,7 @@
 		"id": "C19d35e17581b2ae69d4",
 		"isPrimary": true,
 		"legacyChartID": "1024d36bb8e302554ac076f6178e77e327cfa8fb",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0f9a0bd86dcf7",
 		"versions": ["mobile"]
@@ -2864,8 +2864,8 @@
 		"id": "C19d35e17583202355dc",
 		"isPrimary": true,
 		"legacyChartID": "661e5990b15e8d1e4d0cc3366731cff18121a425",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9a27cecd029",
 		"versions": ["mobile"]
 	},
@@ -2878,8 +2878,8 @@
 		"id": "C19d35e175848df2d961",
 		"isPrimary": true,
 		"legacyChartID": "956e50d9a8a248e0346a3d331f748f4bd90b2053",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9a3e75b132b",
 		"versions": ["mobile"]
 	},
@@ -2920,8 +2920,8 @@
 		"id": "C19d35e17585d52a11d8",
 		"isPrimary": true,
 		"legacyChartID": "f1b4f76cd82c2d1e9a7f9730059123fdde874284",
-		"level": "8",
-		"levelNum": 8.8,
+		"level": "9",
+		"levelNum": 9.1,
 		"songID": "S19d35e0f9a45c4caa10",
 		"versions": ["mobile"]
 	},
@@ -2963,7 +2963,7 @@
 		"isPrimary": true,
 		"legacyChartID": "5c97bf06e95c0cdc4fd6be4336a7c422f3ce5c83",
 		"level": "9",
-		"levelNum": 9.5,
+		"levelNum": 9.4,
 		"songID": "S19d35e0f9a53be4ca00",
 		"versions": ["mobile"]
 	},
@@ -3172,8 +3172,8 @@
 		"id": "C19d35e1758b62d64e3f",
 		"isPrimary": true,
 		"legacyChartID": "539dee6eeceb19b3c8ff4e41d2048f9a0d82d4a6",
-		"level": "10+",
-		"levelNum": 10.7,
+		"level": "10",
+		"levelNum": 10.5,
 		"songID": "S19d35e0f9aabbbe0047",
 		"versions": ["mobile"]
 	},
@@ -3200,8 +3200,8 @@
 		"id": "C19d35e1758b6936dc83",
 		"isPrimary": true,
 		"legacyChartID": "22e80fbe45d3248f471ab1d421d3a29ed6c601a2",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9aabbbe0047",
 		"versions": ["mobile"]
 	},
@@ -3326,7 +3326,7 @@
 		"id": "C19d35e1758f4a859c89",
 		"isPrimary": true,
 		"legacyChartID": "e2268eb66929d3caf8cd6afa5aacf028a7aba84a",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0f9ae6401b865",
 		"versions": ["mobile"]
@@ -3480,8 +3480,8 @@
 		"id": "C19d35e1759231ddb843",
 		"isPrimary": true,
 		"legacyChartID": "b347db32fbe280f1197751d8c5f493e18549ffd3",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8,
 		"songID": "S19d35e0f9b1271213be",
 		"versions": ["mobile"]
 	},
@@ -3522,8 +3522,8 @@
 		"id": "C19d35e17593008eeed3",
 		"isPrimary": true,
 		"legacyChartID": "55e87516635485216f1eadf0756e2dc65520e79d",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9b2d5199d3c",
 		"versions": ["mobile"]
 	},
@@ -3620,7 +3620,7 @@
 		"id": "C19d35e175960dc1bf8b",
 		"isPrimary": true,
 		"legacyChartID": "c58b44e09f1861b3ff63cfd198924ac2215f45e4",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0f9b56053171b",
 		"versions": ["mobile"]
@@ -3662,8 +3662,8 @@
 		"id": "C19d35e1759778559be6",
 		"isPrimary": true,
 		"legacyChartID": "0a6f8d916176fc340ffc5138e4177a50b6b256a5",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9b66dfba685",
 		"versions": ["mobile"]
 	},
@@ -3704,7 +3704,7 @@
 		"id": "C19d35e17598b6ac29da",
 		"isPrimary": true,
 		"legacyChartID": "70eb594419c6ebc2571f281bce04353de5c0a396",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0f9b70ac089b5",
 		"versions": ["mobile"]
@@ -3830,8 +3830,8 @@
 		"id": "C19d35e1759b8211863d",
 		"isPrimary": true,
 		"legacyChartID": "a08253b94995d63aa6a84582f3d9c642a11da74e",
-		"level": "10+",
-		"levelNum": 10.7,
+		"level": "10",
+		"levelNum": 10.5,
 		"songID": "S19d35e0f9ba5b0286e3",
 		"versions": ["mobile"]
 	},
@@ -3915,7 +3915,7 @@
 		"isPrimary": true,
 		"legacyChartID": "9d3ddec8b98f4b8cd3e55dc91223c14f5b01a405",
 		"level": "11",
-		"levelNum": 11.3,
+		"levelNum": 11.1,
 		"songID": "S19d35e0f9bcb79f05f6",
 		"versions": ["mobile"]
 	},
@@ -3956,8 +3956,8 @@
 		"id": "C19d35e1759edaa76f24",
 		"isPrimary": true,
 		"legacyChartID": "0e3a9f726ecc56c6b75c0c6305318cd7e9a2c940",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9bd32ff63d6",
 		"versions": ["mobile"]
 	},
@@ -4096,7 +4096,7 @@
 		"id": "C19d35e175a13b1d218a",
 		"isPrimary": true,
 		"legacyChartID": "02924f2599e05d9779539dd07de5407f5ccf4da1",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 9.1,
 		"songID": "S19d35e0f9c0eb58720f",
 		"versions": ["mobile"]
@@ -4152,8 +4152,8 @@
 		"id": "C19d35e175a3e2ea2832",
 		"isPrimary": true,
 		"legacyChartID": "b7cbb8c497c28a18a094fc5b7ef292fe7dbfe311",
-		"level": "9",
-		"levelNum": 9.6,
+		"level": "9+",
+		"levelNum": 9.7,
 		"songID": "S19d35e0f9c2ad842d8e",
 		"versions": ["mobile"]
 	},
@@ -4181,7 +4181,7 @@
 		"isPrimary": true,
 		"legacyChartID": "d947604ebde20ecc0e518154da8cbe846048e517",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9c2ad842d8e",
 		"versions": ["mobile"]
 	},
@@ -4503,7 +4503,7 @@
 		"isPrimary": true,
 		"legacyChartID": "96b08f00bc386b024ff842ab1b14ee85f06f794c",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.3,
 		"songID": "S19d35e0f9cbbde9049f",
 		"versions": ["mobile"]
 	},
@@ -4530,8 +4530,8 @@
 		"id": "C19d35e175ab1ee07613",
 		"isPrimary": true,
 		"legacyChartID": "fb5f949ca839b0e435b96a1fd7be44e90456f055",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9cbbde9049f",
 		"versions": ["mobile"]
 	},
@@ -4573,7 +4573,7 @@
 		"isPrimary": true,
 		"legacyChartID": "d660791677b93fc1bea1c8c42d955a0b183f38f5",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9cccdfd83bb",
 		"versions": ["mobile"]
 	},
@@ -4713,7 +4713,7 @@
 		"isPrimary": true,
 		"legacyChartID": "2d4d43f6fac00ce419f44e07002ec00eece10cec",
 		"level": "9",
-		"levelNum": 9,
+		"levelNum": 9.1,
 		"songID": "S19d35e0f9d09e5583d6",
 		"versions": ["mobile"]
 	},
@@ -4768,7 +4768,7 @@
 		"id": "C19d35e175b16b614cd8",
 		"isPrimary": true,
 		"legacyChartID": "238d818e94980ac72757c4de91ec29883c5016b8",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0f9d16eab5c11",
 		"versions": ["mobile"]
@@ -4811,7 +4811,7 @@
 		"isPrimary": true,
 		"legacyChartID": "9fdf5f2af4b18a86f2e55a8aa13a289d26e0bf79",
 		"level": "9+",
-		"levelNum": 9.8,
+		"levelNum": 9.7,
 		"songID": "S19d35e0f9d2815995de",
 		"versions": ["mobile"]
 	},
@@ -4853,7 +4853,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ad9c19f235ef4ce9372e570fac7eb37c917e4f26",
 		"level": "10",
-		"levelNum": 10.2,
+		"levelNum": 10.3,
 		"songID": "S19d35e0f9d3bc9e21d0",
 		"versions": ["mobile"]
 	},
@@ -4909,7 +4909,7 @@
 		"isPrimary": true,
 		"legacyChartID": "4612d05489d5768eec927d99bf76aa75bb54861d",
 		"level": "10",
-		"levelNum": 10.1,
+		"levelNum": 10,
 		"songID": "S19d35e0f9d46959e670",
 		"versions": ["mobile"]
 	},
@@ -4979,7 +4979,7 @@
 		"isPrimary": true,
 		"legacyChartID": "bfd2ec6bc509bb687a42bfaabd87c5b43df6c668",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9d5432382a6",
 		"versions": ["mobile"]
 	},
@@ -5034,7 +5034,7 @@
 		"id": "C19d35e175b7fa5afb8d",
 		"isPrimary": true,
 		"legacyChartID": "a64ff677d5b086f722110183fc63d00be494f85c",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0f9d78ac5917d",
 		"versions": ["mobile"]
@@ -5077,7 +5077,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ec10073cf0e09728939db5a203820d6ff09893be",
 		"level": "9",
-		"levelNum": 9.5,
+		"levelNum": 9.6,
 		"songID": "S19d35e0f9d8e0f710a1",
 		"versions": ["mobile"]
 	},
@@ -5090,7 +5090,7 @@
 		"id": "C19d35e175b89fc294d4",
 		"isPrimary": true,
 		"legacyChartID": "317de4b2bca681160691c7aa0e15b8db5b68c670",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0f9d8e0f710a1",
 		"versions": ["mobile"]
@@ -5301,7 +5301,7 @@
 		"isPrimary": true,
 		"legacyChartID": "71b3ecf95d51e839779baa9acd31b61c66f20ab5",
 		"level": "9",
-		"levelNum": 9,
+		"levelNum": 9.1,
 		"songID": "S19d35e0f9dd7919875e",
 		"versions": ["mobile"]
 	},
@@ -5328,8 +5328,8 @@
 		"id": "C19d35e175bdaf3292aa",
 		"isPrimary": true,
 		"legacyChartID": "852fe6e9c89bc672905031bab4efa060ce827453",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0f9dd7919875e",
 		"versions": ["mobile"]
 	},
@@ -5342,8 +5342,8 @@
 		"id": "C19d35e175beaa36fd38",
 		"isPrimary": true,
 		"legacyChartID": "a0445813ca8e93cef1ea92cb7d6b6e8046359cca",
-		"level": "8",
-		"levelNum": 8.6,
+		"level": "8+",
+		"levelNum": 8.7,
 		"songID": "S19d35e0f9dee8402f03",
 		"versions": ["mobile"]
 	},
@@ -5553,7 +5553,7 @@
 		"isPrimary": true,
 		"legacyChartID": "33a3f02e7418064ae02312bd09f00cfe8b12922c",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.3,
 		"songID": "S19d35e0f9e32bbf536f",
 		"versions": ["mobile"]
 	},
@@ -5595,7 +5595,7 @@
 		"isPrimary": true,
 		"legacyChartID": "f4616e4a712e28ab1fc1528508bd1f78cd86ae5c",
 		"level": "10+",
-		"levelNum": 10.8,
+		"levelNum": 10.7,
 		"songID": "S19d35e0f9e4519f5da5",
 		"versions": ["mobile"]
 	},
@@ -5860,8 +5860,8 @@
 		"id": "C19d35e175ca2682b117",
 		"isPrimary": true,
 		"legacyChartID": "631762ffd303cb7f63a8833a50cf7650d7a1a8fb",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0f9ea3dcd5cba",
 		"versions": ["mobile"]
 	},
@@ -6029,7 +6029,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ad422e58b009455174cf168e00a3ccb9f7dc83e5",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.2,
 		"songID": "S19d35e0f9ee94c8a1f5",
 		"versions": ["mobile"]
 	},
@@ -6057,7 +6057,7 @@
 		"isPrimary": true,
 		"legacyChartID": "9723fe8693d1f6fb696296c960f9f8d2c4c15884",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9ee94c8a1f5",
 		"versions": ["mobile"]
 	},
@@ -6070,8 +6070,8 @@
 		"id": "C19d35e175cf2a20a7ad",
 		"isPrimary": true,
 		"legacyChartID": "acfb424b1f0fd166e7c2093343ef44ae11fc0582",
-		"level": "10",
-		"levelNum": 10,
+		"level": "9+",
+		"levelNum": 9.9,
 		"songID": "S19d35e0f9efa0a6a3e2",
 		"versions": ["mobile"]
 	},
@@ -6099,7 +6099,7 @@
 		"isPrimary": true,
 		"legacyChartID": "8860dbe7f16dcb76683f17a0de7acda09259ad79",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0f9efa0a6a3e2",
 		"versions": ["mobile"]
 	},
@@ -6211,7 +6211,7 @@
 		"isPrimary": true,
 		"legacyChartID": "f3ad5a0ba73c1c719ef8f25194aeba8b995a4551",
 		"level": "10",
-		"levelNum": 10.6,
+		"levelNum": 10.5,
 		"songID": "S19d35e0f9f2f2e94ada",
 		"versions": ["mobile"]
 	},
@@ -6280,8 +6280,8 @@
 		"id": "C19d35e175d3871f557b",
 		"isPrimary": true,
 		"legacyChartID": "936e54e4c49d65e4fb3122a844011a70d06213e9",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9f3bdbf44e3",
 		"versions": ["mobile"]
 	},
@@ -6336,7 +6336,7 @@
 		"id": "C19d35e175d567006c95",
 		"isPrimary": true,
 		"legacyChartID": "47391fae612564041d58916c3e04bcf72a68b589",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0f9f5ee9838b6",
 		"versions": ["mobile"]
@@ -6406,8 +6406,8 @@
 		"id": "C19d35e175d6b061195c",
 		"isPrimary": true,
 		"legacyChartID": "fe9aaa6a9e759219b2f946da7089ab0a70cbfbf5",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9f6f046a9cd",
 		"versions": ["mobile"]
 	},
@@ -6504,8 +6504,8 @@
 		"id": "C19d35e175da725b5d98",
 		"isPrimary": true,
 		"legacyChartID": "7be03df029bd2f9431831e8cc89debb7cd003a04",
-		"level": "9+",
-		"levelNum": 9.9,
+		"level": "10",
+		"levelNum": 10,
 		"songID": "S19d35e0f9f91227ac34",
 		"versions": ["mobile"]
 	},
@@ -6756,8 +6756,8 @@
 		"id": "C19d35e175df4653f5b9",
 		"isPrimary": true,
 		"legacyChartID": "a3bbd76d3f53099911c71edd50ac28ab65e7a7f4",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0f9fe968b6005",
 		"versions": ["mobile"]
 	},
@@ -6882,8 +6882,8 @@
 		"id": "C19d35e175e25a9a492b",
 		"isPrimary": true,
 		"legacyChartID": "68db9d644f8114f60bc938dfb9b7b2ae79ff44e5",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa0115b6bda7",
 		"versions": ["mobile"]
 	},
@@ -6966,8 +6966,8 @@
 		"id": "C19d35e175e441b751d5",
 		"isPrimary": true,
 		"legacyChartID": "f02066c5947cc0145aa340e8d389b33d690107a8",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa035fb914c0",
 		"versions": ["mobile"]
 	},
@@ -7008,8 +7008,8 @@
 		"id": "C19d35e175e5671122aa",
 		"isPrimary": true,
 		"legacyChartID": "836c94e53adbded8b9bda978b5a2d0636d0de490",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa04505e46ab",
 		"versions": ["mobile"]
 	},
@@ -7023,7 +7023,7 @@
 		"isPrimary": true,
 		"legacyChartID": "59066e583562ef0f806e87324a655315e6c7209a",
 		"level": "10+",
-		"levelNum": 10.9,
+		"levelNum": 10.8,
 		"songID": "S19d35e0fa05fb7a3100",
 		"versions": ["mobile"]
 	},
@@ -7064,8 +7064,8 @@
 		"id": "C19d35e175e7b014fa46",
 		"isPrimary": true,
 		"legacyChartID": "20ddaeb952085d050608be175d1a98c29a671c5a",
-		"level": "10+",
-		"levelNum": 10.9,
+		"level": "11",
+		"levelNum": 11.1,
 		"songID": "S19d35e0fa0603c9b1c2",
 		"versions": ["mobile"]
 	},
@@ -7107,7 +7107,7 @@
 		"isPrimary": true,
 		"legacyChartID": "caf89ca328dac1f496d96a9e587b227a6a01736e",
 		"level": "11",
-		"levelNum": 11.5,
+		"levelNum": 11.7,
 		"songID": "S19d35e0fa0777246c3d",
 		"versions": ["mobile"]
 	},
@@ -7134,8 +7134,8 @@
 		"id": "C19d35e175e894fa80fa",
 		"isPrimary": true,
 		"legacyChartID": "51605780b793f626d028a0350ca15e17419aba75",
-		"level": "6",
-		"levelNum": 6.5,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa0777246c3d",
 		"versions": ["mobile"]
 	},
@@ -7190,8 +7190,8 @@
 		"id": "C19d35e175e9a463eea4",
 		"isPrimary": true,
 		"legacyChartID": "3dd58ea10ec996783dc0c04bc08ccab47411fac4",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa085df756e1",
 		"versions": ["mobile"]
 	},
@@ -7205,7 +7205,7 @@
 		"isPrimary": true,
 		"legacyChartID": "5c64573005e69a86c99312c01a74f6a71bd00ade",
 		"level": "9+",
-		"levelNum": 9.7,
+		"levelNum": 9.8,
 		"songID": "S19d35e0fa09b6a6e90d",
 		"versions": ["mobile"]
 	},
@@ -7246,7 +7246,7 @@
 		"id": "C19d35e175eb9a6a37cc",
 		"isPrimary": true,
 		"legacyChartID": "14785ad4da3b3f8012c2f46d5d66a6a2d86b09f1",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.9,
 		"songID": "S19d35e0fa0a355013bb",
 		"versions": ["mobile"]
@@ -7359,7 +7359,7 @@
 		"isPrimary": true,
 		"legacyChartID": "2fcfd1a79065257f13590c14fe23f9e7e5707a6f",
 		"level": "6",
-		"levelNum": 6,
+		"levelNum": 6.5,
 		"songID": "S19d35e0fa0cdf9c08a7",
 		"versions": ["mobile"]
 	},
@@ -7372,7 +7372,7 @@
 		"id": "C19d35e175ee41b42f30",
 		"isPrimary": true,
 		"legacyChartID": "ee71edfe490aaca91ea411c8313f23dd2fba8c39",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0fa0dc14c838f",
 		"versions": ["mobile"]
@@ -7485,7 +7485,7 @@
 		"isPrimary": true,
 		"legacyChartID": "bbb03d31d178427e0a5702382d4916da39b1458f",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa0f95a5d585",
 		"versions": ["mobile"]
 	},
@@ -7750,8 +7750,8 @@
 		"id": "C19d35e175f6143f9f32",
 		"isPrimary": true,
 		"legacyChartID": "11f43206eb39dd9f6c803213e8332750426555c1",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa1545d90da5",
 		"versions": ["mobile"]
 	},
@@ -7807,7 +7807,7 @@
 		"isPrimary": true,
 		"legacyChartID": "06258ad1fa423750c2b27027b0041713d75fd4c5",
 		"level": "10+",
-		"levelNum": 10.9,
+		"levelNum": 10.8,
 		"songID": "S19d35e0fa17953472fc",
 		"versions": ["mobile"]
 	},
@@ -7849,7 +7849,7 @@
 		"isPrimary": true,
 		"legacyChartID": "300298ef2f2b37d969ad3a40cb8b36180bc77005",
 		"level": "9+",
-		"levelNum": 9.8,
+		"levelNum": 9.9,
 		"songID": "S19d35e0fa189244c6c6",
 		"versions": ["mobile"]
 	},
@@ -7961,7 +7961,7 @@
 		"isPrimary": true,
 		"legacyChartID": "1867ba1a0ca4f44283e4652dd94cec34d1edb440",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa1aa82fecf1",
 		"versions": ["mobile"]
 	},
@@ -8087,7 +8087,7 @@
 		"isPrimary": true,
 		"legacyChartID": "686baed5409043148138219ec415d56dee89224e",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa1d60804bc6",
 		"versions": ["mobile"]
 	},
@@ -8310,7 +8310,7 @@
 		"id": "C19d35e17604eabd5460",
 		"isPrimary": true,
 		"legacyChartID": "691f52a74a3377f60f50d25be96dbcc0d5b6e452",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0fa239dc9319d",
 		"versions": ["mobile"]
@@ -8423,7 +8423,7 @@
 		"isPrimary": true,
 		"legacyChartID": "537e251cf38286201956974f62ce8c994cac7846",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa25efd8b89c",
 		"versions": ["mobile"]
 	},
@@ -8507,7 +8507,7 @@
 		"isPrimary": true,
 		"legacyChartID": "6143eb12383a98d77dc477b2ca32c8f95b868ea0",
 		"level": "6",
-		"levelNum": 6,
+		"levelNum": 6.5,
 		"songID": "S19d35e0fa27d83cc8d6",
 		"versions": ["mobile"]
 	},
@@ -8548,8 +8548,8 @@
 		"id": "C19d35e17609c2453604",
 		"isPrimary": true,
 		"legacyChartID": "bf2b3a34d4abb8edd179b11cd86e8752bbfb0652",
-		"level": "7",
-		"levelNum": 7,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa28f299d541",
 		"versions": ["mobile"]
 	},
@@ -8590,8 +8590,8 @@
 		"id": "C19d35e1760a7da15484",
 		"isPrimary": true,
 		"legacyChartID": "239c6b7c2fa10d3f0d7ba1103760622c87adac08",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa294da71f6f",
 		"versions": ["mobile"]
 	},
@@ -8605,7 +8605,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ef163853809ef69a098f128be7328eaaa805d6d0",
 		"level": "8",
-		"levelNum": 8.3,
+		"levelNum": 8.6,
 		"songID": "S19d35e0fa2a1ec781f9",
 		"versions": ["mobile"]
 	},
@@ -8674,8 +8674,8 @@
 		"id": "C19d35e1760c7acab6ab",
 		"isPrimary": true,
 		"legacyChartID": "b38483a75d382849adb1f7cf537e65a24e984f62",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa2bf0bc427e",
 		"versions": ["mobile"]
 	},
@@ -8758,8 +8758,8 @@
 		"id": "C19d35e1760ed4db7bef",
 		"isPrimary": true,
 		"legacyChartID": "cbf523ff78c76c723bf344e21648cf3a6d11e051",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa2d527d961c",
 		"versions": ["mobile"]
 	},
@@ -8800,8 +8800,8 @@
 		"id": "C19d35e1760f5bca07ee",
 		"isPrimary": true,
 		"legacyChartID": "e681c2e8de639a26fb9b04eabf2b117a32078e4c",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa2eae451c28",
 		"versions": ["mobile"]
 	},
@@ -8815,7 +8815,7 @@
 		"isPrimary": true,
 		"legacyChartID": "887f4e22c8d47e209e480a01886611d133997a37",
 		"level": "10",
-		"levelNum": 10.5,
+		"levelNum": 10.4,
 		"songID": "S19d35e0fa2f294eed8d",
 		"versions": ["mobile"]
 	},
@@ -8927,7 +8927,7 @@
 		"isPrimary": true,
 		"legacyChartID": "dd98d347015868a44a2db928f94a86c41c95a888",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa31165a802a",
 		"versions": ["mobile"]
 	},
@@ -8968,8 +8968,8 @@
 		"id": "C19d35e17613a8618939",
 		"isPrimary": true,
 		"legacyChartID": "93898c33dfbabf084ebb17db9a8e2d308cc110ca",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.3,
 		"songID": "S19d35e0fa321852dd4d",
 		"versions": ["mobile"]
 	},
@@ -8983,7 +8983,7 @@
 		"isPrimary": true,
 		"legacyChartID": "e043b38fb1ee91a24d35e60e61daa1f2fd6e5d6e",
 		"level": "8",
-		"levelNum": 8.4,
+		"levelNum": 8.6,
 		"songID": "S19d35e0fa33ab120e46",
 		"versions": ["mobile"]
 	},
@@ -9067,7 +9067,7 @@
 		"isPrimary": true,
 		"legacyChartID": "81cf834a1056d71928646fb0e427f6154254d01a",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.5,
 		"songID": "S19d35e0fa35cb98bbdd",
 		"versions": ["mobile"]
 	},
@@ -9095,7 +9095,7 @@
 		"isPrimary": true,
 		"legacyChartID": "2ff95448c314193cdbefec26be375aa7b8b781e0",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa35cb98bbdd",
 		"versions": ["mobile"]
 	},
@@ -9178,8 +9178,8 @@
 		"id": "C19d35e17618954b9f42",
 		"isPrimary": true,
 		"legacyChartID": "c1e8440fea0ecb4dbcbcee0fc908ba77d9dd99f9",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6,
 		"songID": "S19d35e0fa37ec9e3b5f",
 		"versions": ["mobile"]
 	},
@@ -9192,7 +9192,7 @@
 		"id": "C19d35e1761911ba07e6",
 		"isPrimary": true,
 		"legacyChartID": "0466f093667f12d2c885efd92389a63bcbfa0d1f",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0fa3869b6a9d0",
 		"versions": ["mobile"]
@@ -9304,8 +9304,8 @@
 		"id": "C19d35e1761bd790ac99",
 		"isPrimary": true,
 		"legacyChartID": "ad16ac3247d06a6ab31ae1d189b5948e3dfaeb91",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa3a5f9d66dc",
 		"versions": ["mobile"]
 	},
@@ -9361,7 +9361,7 @@
 		"isPrimary": true,
 		"legacyChartID": "436bf3f04adc6e82360c916e9670d6adc9a676b2",
 		"level": "11",
-		"levelNum": 11.1,
+		"levelNum": 11.2,
 		"songID": "S19d35e0fa3c4c8e8701",
 		"versions": ["mobile"]
 	},
@@ -9402,8 +9402,8 @@
 		"id": "C19d35e1761e9f2bbfa1",
 		"isPrimary": true,
 		"legacyChartID": "74c5c96129d18c48bd8df479f29171d92b977afd",
-		"level": "8",
-		"levelNum": 8.8,
+		"level": "9",
+		"levelNum": 9.1,
 		"songID": "S19d35e0fa3dac6bbcfe",
 		"versions": ["mobile"]
 	},
@@ -9472,8 +9472,8 @@
 		"id": "C19d35e1761fc498b85a",
 		"isPrimary": true,
 		"legacyChartID": "8fc4e679a2db819e428e9ceb3a9269dd73db3a93",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa3e087268f4",
 		"versions": ["mobile"]
 	},
@@ -9556,8 +9556,8 @@
 		"id": "C19d35e17621a7a05d26",
 		"isPrimary": true,
 		"legacyChartID": "042f8315f9544d775339880467b6dbf93b09adeb",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa4098955202",
 		"versions": ["mobile"]
 	},
@@ -9598,8 +9598,8 @@
 		"id": "C19d35e17622c8c94bb1",
 		"isPrimary": true,
 		"legacyChartID": "7f0420323cc9e94d8191e6830af56a1e82695cde",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6,
 		"songID": "S19d35e0fa417b9ba015",
 		"versions": ["mobile"]
 	},
@@ -9682,8 +9682,8 @@
 		"id": "C19d35e17624ee9f2fa3",
 		"isPrimary": true,
 		"legacyChartID": "f0d6d79d504cf50af11b48fa3020bf2dbda0ffbf",
-		"level": "8",
-		"levelNum": 8.3,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fa43a5b4a934",
 		"versions": ["mobile"]
 	},
@@ -9766,8 +9766,8 @@
 		"id": "C19d35e176267d8710b3",
 		"isPrimary": true,
 		"legacyChartID": "8bbcb518f249ccbe612e36ef3a0e39ce238c3b08",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.6,
 		"songID": "S19d35e0fa459beee280",
 		"versions": ["mobile"]
 	},
@@ -9809,7 +9809,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b55c98db99d927748e380ecff57662f0718b5e73",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa46cf475299",
 		"versions": ["mobile"]
 	},
@@ -9823,7 +9823,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ab7badf3dfc3b0998dfa39986f42f63792fb0f27",
 		"level": "9",
-		"levelNum": 9.1,
+		"levelNum": 9.3,
 		"songID": "S19d35e0fa47931a4eaa",
 		"versions": ["mobile"]
 	},
@@ -9934,8 +9934,8 @@
 		"id": "C19d35e1762ac7801898",
 		"isPrimary": true,
 		"legacyChartID": "303aebf771a845a8fdc321f95f5c292f842b52a8",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa493bf814d0",
 		"versions": ["mobile"]
 	},
@@ -9949,7 +9949,7 @@
 		"isPrimary": true,
 		"legacyChartID": "18774248e1d9abfe123b85bbcc703397f34e555c",
 		"level": "9+",
-		"levelNum": 9.7,
+		"levelNum": 9.8,
 		"songID": "S19d35e0fa4aecff3971",
 		"versions": ["mobile"]
 	},
@@ -9976,8 +9976,8 @@
 		"id": "C19d35e1762b284fe066",
 		"isPrimary": true,
 		"legacyChartID": "be2c70f3d7ca12d4cecdf20bfda55eeb65b6c178",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa4aecff3971",
 		"versions": ["mobile"]
 	},
@@ -10004,7 +10004,7 @@
 		"id": "C19d35e1762ce0ffb9ed",
 		"isPrimary": true,
 		"legacyChartID": "bb5342de8a740977c1bbd7ca8f66b16eefc974de",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0fa4bdc58d280",
 		"versions": ["mobile"]
@@ -10032,8 +10032,8 @@
 		"id": "C19d35e1762c24c006ce",
 		"isPrimary": true,
 		"legacyChartID": "1eb9de344a1225549b3b8ad7dedeee86004c7a6a",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6,
 		"songID": "S19d35e0fa4bdc58d280",
 		"versions": ["mobile"]
 	},
@@ -10089,7 +10089,7 @@
 		"isPrimary": true,
 		"legacyChartID": "f8851952958ae718f84017e1819ea035eb443b18",
 		"level": "10+",
-		"levelNum": 10.7,
+		"levelNum": 10.8,
 		"songID": "S19d35e0fa4d8d79f34c",
 		"versions": ["mobile"]
 	},
@@ -10116,8 +10116,8 @@
 		"id": "C19d35e1762e453eeec7",
 		"isPrimary": true,
 		"legacyChartID": "472a413af5128525f56b144509ba5e6af4db98b4",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fa4d8d79f34c",
 		"versions": ["mobile"]
 	},
@@ -10173,7 +10173,7 @@
 		"isPrimary": true,
 		"legacyChartID": "1d7697eb60151e6dfc1a31e546a6919163ffe911",
 		"level": "10",
-		"levelNum": 10.6,
+		"levelNum": 10.5,
 		"songID": "S19d35e0fa4fcd0e507b",
 		"versions": ["mobile"]
 	},
@@ -10200,8 +10200,8 @@
 		"id": "C19d35e176303c48a340",
 		"isPrimary": true,
 		"legacyChartID": "674e596025062373a3e4847ad10b5c006a870d12",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa4fcd0e507b",
 		"versions": ["mobile"]
 	},
@@ -10341,7 +10341,7 @@
 		"isPrimary": true,
 		"legacyChartID": "6283d90bf5ead27b28792edc4bcb98e459c247ff",
 		"level": "10",
-		"levelNum": 10.2,
+		"levelNum": 10.1,
 		"songID": "S19d35e0fa5301ab4c32",
 		"versions": ["mobile"]
 	},
@@ -10368,8 +10368,8 @@
 		"id": "C19d35e1763445af375b",
 		"isPrimary": true,
 		"legacyChartID": "259c5933dd74582bcb6e2022bdf58c777a7aabdb",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.1,
 		"songID": "S19d35e0fa5301ab4c32",
 		"versions": ["mobile"]
 	},
@@ -10425,7 +10425,7 @@
 		"isPrimary": true,
 		"legacyChartID": "2fe2544c96b3e7ae433721fb07399d4ede2d9af2",
 		"level": "10",
-		"levelNum": 10.1,
+		"levelNum": 10.2,
 		"songID": "S19d35e0fa558b97f2f5",
 		"versions": ["mobile"]
 	},
@@ -10467,7 +10467,7 @@
 		"isPrimary": true,
 		"legacyChartID": "c612c281341d4095442a6ed099b120cc0b63965a",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa558b97f2f5",
 		"versions": ["mobile"]
 	},
@@ -10522,8 +10522,8 @@
 		"id": "C19d35e17638db7d36b9",
 		"isPrimary": true,
 		"legacyChartID": "526c7c52160bb7e5ec2dbda3698b6c64969629be",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.8,
 		"songID": "S19d35e0fa5794cde75b",
 		"versions": ["mobile"]
 	},
@@ -10635,7 +10635,7 @@
 		"isPrimary": true,
 		"legacyChartID": "3d09fc8bf8b6c05be4442b4e3edf9c58ecaf5bae",
 		"level": "8",
-		"levelNum": 8.1,
+		"levelNum": 8.5,
 		"songID": "S19d35e0fa59c152455c",
 		"versions": ["mobile"]
 	},
@@ -10690,8 +10690,8 @@
 		"id": "C19d35e1763c9e5d018e",
 		"isPrimary": true,
 		"legacyChartID": "1dc4312cae15863315b72aedbad76a0b5b99f071",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa5b59d39688",
 		"versions": ["mobile"]
 	},
@@ -10760,8 +10760,8 @@
 		"id": "C19d35e1763d5c16314b",
 		"isPrimary": true,
 		"legacyChartID": "ec1ea52407dba2a28fdb754e358e557c1fda0635",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6,
 		"songID": "S19d35e0fa5cb7439e54",
 		"versions": ["mobile"]
 	},
@@ -10844,8 +10844,8 @@
 		"id": "C19d35e1763f4226eece",
 		"isPrimary": true,
 		"legacyChartID": "7b11323524485b3b0204cf35e93fbd966917f3b8",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa5e1b94fd78",
 		"versions": ["mobile"]
 	},
@@ -10886,8 +10886,8 @@
 		"id": "C19d35e176403056df65",
 		"isPrimary": true,
 		"legacyChartID": "0a558e0df2e4e19ca0938df31c607b8621899ce0",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa5faef2fb9a",
 		"versions": ["mobile"]
 	},
@@ -10900,8 +10900,8 @@
 		"id": "C19d35e1764134f05199",
 		"isPrimary": true,
 		"legacyChartID": "6f23edc3907e92a3461def445ea8230b5d34688c",
-		"level": "8",
-		"levelNum": 8.7,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fa60d20cd51c",
 		"versions": ["mobile"]
 	},
@@ -10928,8 +10928,8 @@
 		"id": "C19d35e1764119efa896",
 		"isPrimary": true,
 		"legacyChartID": "b69b635c4c0942b6692cb0ab219f6c0037997a36",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6,
 		"songID": "S19d35e0fa60d20cd51c",
 		"versions": ["mobile"]
 	},
@@ -11027,7 +11027,7 @@
 		"isPrimary": true,
 		"legacyChartID": "6a674f9454f8ff825032ff61e4139143db39756b",
 		"level": "10",
-		"levelNum": 10.2,
+		"levelNum": 10.1,
 		"songID": "S19d35e0fa63218a79fd",
 		"versions": ["mobile"]
 	},
@@ -11097,7 +11097,7 @@
 		"isPrimary": true,
 		"legacyChartID": "92565ec7924a9140fd19297f65b60c5f76870f08",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa64e7874a7c",
 		"versions": ["mobile"]
 	},
@@ -11153,7 +11153,7 @@
 		"isPrimary": true,
 		"legacyChartID": "45c3ab551003430d5c9cf9f7d610eda33d82770a",
 		"level": "9",
-		"levelNum": 9.3,
+		"levelNum": 9.4,
 		"songID": "S19d35e0fa668d2d3094",
 		"versions": ["mobile"]
 	},
@@ -11180,8 +11180,8 @@
 		"id": "C19d35e1764791dedb0b",
 		"isPrimary": true,
 		"legacyChartID": "1b707081e543d6618e45708d5c74128698742951",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "6",
+		"levelNum": 6.5,
 		"songID": "S19d35e0fa668d2d3094",
 		"versions": ["mobile"]
 	},
@@ -11222,8 +11222,8 @@
 		"id": "C19d35e17648c12c56f9",
 		"isPrimary": true,
 		"legacyChartID": "6412519986c784dc86a5372bc93eb196fe35f415",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa6762e9380b",
 		"versions": ["mobile"]
 	},
@@ -11264,8 +11264,8 @@
 		"id": "C19d35e17649a3bc9c0f",
 		"isPrimary": true,
 		"legacyChartID": "71a7c8061bc41b9b576cf5011403203f98fc5b4e",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa688047bd89",
 		"versions": ["mobile"]
 	},
@@ -11348,8 +11348,8 @@
 		"id": "C19d35e1764b9307bc02",
 		"isPrimary": true,
 		"legacyChartID": "5bff81145147b4a9c7c389dd091422e6b4359468",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa6a987d674c",
 		"versions": ["mobile"]
 	},
@@ -11432,8 +11432,8 @@
 		"id": "C19d35e1764d1e09252e",
 		"isPrimary": true,
 		"legacyChartID": "d10f82ebfcac32cf17fd111e3e69251b3f6b2b1f",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.5,
 		"songID": "S19d35e0fa6cb5c1b3b8",
 		"versions": ["mobile"]
 	},
@@ -11600,8 +11600,8 @@
 		"id": "C19d35e17651a4946a9e",
 		"isPrimary": true,
 		"legacyChartID": "901c4359439c19bcb924dc672136f5907afbaeeb",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa70a64a8dc0",
 		"versions": ["mobile"]
 	},
@@ -11615,7 +11615,7 @@
 		"isPrimary": true,
 		"legacyChartID": "1b991aa03bbd35439976e509acc6f34dad9188be",
 		"level": "10+",
-		"levelNum": 10.7,
+		"levelNum": 10.8,
 		"songID": "S19d35e0fa717076ec25",
 		"versions": ["mobile"]
 	},
@@ -11657,7 +11657,7 @@
 		"isPrimary": true,
 		"legacyChartID": "105b97efd6e172d6f80ab0d6abbb2ddc2138663b",
 		"level": "9",
-		"levelNum": 9.3,
+		"levelNum": 9.4,
 		"songID": "S19d35e0fa72d5e1fafd",
 		"versions": ["mobile"]
 	},
@@ -11769,7 +11769,7 @@
 		"isPrimary": true,
 		"legacyChartID": "f1f2ff1a24a1ca6a5ea6cd344ff56a11192002b5",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa74957a240a",
 		"versions": ["mobile"]
 	},
@@ -11825,7 +11825,7 @@
 		"isPrimary": true,
 		"legacyChartID": "12ea52e66aa2c7162e0cc6c33939cbaf9d093666",
 		"level": "8",
-		"levelNum": 8.3,
+		"levelNum": 8.5,
 		"songID": "S19d35e0fa76641f3aec",
 		"versions": ["mobile"]
 	},
@@ -11867,7 +11867,7 @@
 		"isPrimary": true,
 		"legacyChartID": "863b0eb03f13e904990efaf62de1f6f353e4c0e0",
 		"level": "9",
-		"levelNum": 9.2,
+		"levelNum": 9.4,
 		"songID": "S19d35e0fa7771244bb0",
 		"versions": ["mobile"]
 	},
@@ -11936,8 +11936,8 @@
 		"id": "C19d35e176595fd19cb4",
 		"isPrimary": true,
 		"legacyChartID": "7fa4a7b14487f9b8e9a898c7c56c0fe31e71619a",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa78c16db666",
 		"versions": ["mobile"]
 	},
@@ -11978,8 +11978,8 @@
 		"id": "C19d35e1765a4615670d",
 		"isPrimary": true,
 		"legacyChartID": "0f882f15f911690d33b8a8db28c22c20d9cb8db3",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa791e3350a7",
 		"versions": ["mobile"]
 	},
@@ -12091,7 +12091,7 @@
 		"isPrimary": true,
 		"legacyChartID": "22d02e197046fa43f4011633b8414118c4f6c816",
 		"level": "11",
-		"levelNum": 11.2,
+		"levelNum": 11.1,
 		"songID": "S19d35e0fa7c1eb02020",
 		"versions": ["mobile"]
 	},
@@ -12104,8 +12104,8 @@
 		"id": "C19d35e1765d4cb4e404",
 		"isPrimary": true,
 		"legacyChartID": "151cf04ca64ba0d69285799de1935dab968a9ff4",
-		"level": "9+",
-		"levelNum": 9.9,
+		"level": "10",
+		"levelNum": 10,
 		"songID": "S19d35e0fa7c1eb02020",
 		"versions": ["mobile"]
 	},
@@ -12132,8 +12132,8 @@
 		"id": "C19d35e1765d1112f003",
 		"isPrimary": true,
 		"legacyChartID": "4cfd31761eed6beaaa5fd30b36205b7badd70683",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa7c1eb02020",
 		"versions": ["mobile"]
 	},
@@ -12147,7 +12147,7 @@
 		"isPrimary": true,
 		"legacyChartID": "da372c5cd1a527d25126b996bfbc66fae4bc1c68",
 		"level": "11",
-		"levelNum": 11.4,
+		"levelNum": 11.5,
 		"songID": "S19d35e0fa7d6be3f6a6",
 		"versions": ["mobile"]
 	},
@@ -12161,7 +12161,7 @@
 		"isPrimary": true,
 		"legacyChartID": "25508b93bccc10a404bfeca12de99e450057370c",
 		"level": "10",
-		"levelNum": 10.3,
+		"levelNum": 10.4,
 		"songID": "S19d35e0fa7d6be3f6a6",
 		"versions": ["mobile"]
 	},
@@ -12174,8 +12174,8 @@
 		"id": "C19d35e1765eef02fd43",
 		"isPrimary": true,
 		"legacyChartID": "25406f8dc70f19193970b1f05c239690eb1e5c2a",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa7d6be3f6a6",
 		"versions": ["mobile"]
 	},
@@ -12188,8 +12188,8 @@
 		"id": "C19d35e1765e27323507",
 		"isPrimary": true,
 		"legacyChartID": "497eb3fbf59ee992f2add5d4c8a7fd8ff8387e17",
-		"level": "8",
-		"levelNum": 8.4,
+		"level": "8+",
+		"levelNum": 8.7,
 		"songID": "S19d35e0fa7d6be3f6a6",
 		"versions": ["mobile"]
 	},
@@ -12203,7 +12203,7 @@
 		"isPrimary": true,
 		"legacyChartID": "bc17fb16a9cb95e6a95291d7993bf00427ed2b2a",
 		"level": "11",
-		"levelNum": 11.4,
+		"levelNum": 11.6,
 		"songID": "S19d35e0fa7e4d38e10b",
 		"versions": ["mobile"]
 	},
@@ -12244,7 +12244,7 @@
 		"id": "C19d35e1765f78326eb3",
 		"isPrimary": true,
 		"legacyChartID": "3a1c0beb28cef567d497e37e0082a102a9b23e66",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0fa7e4d38e10b",
 		"versions": ["mobile"]
@@ -12273,7 +12273,7 @@
 		"isPrimary": true,
 		"legacyChartID": "f0fcaaacdcf2055dbbe7dbca09666d0c8358ecd4",
 		"level": "10+",
-		"levelNum": 10.8,
+		"levelNum": 10.9,
 		"songID": "S19d35e0fa7fca386fbb",
 		"versions": ["mobile"]
 	},
@@ -12286,8 +12286,8 @@
 		"id": "C19d35e176609192d51e",
 		"isPrimary": true,
 		"legacyChartID": "ffabdfa34c79b739fb5e566dd76cc0a9d1f41c22",
-		"level": "7",
-		"levelNum": 7,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa7fca386fbb",
 		"versions": ["mobile"]
 	},
@@ -12314,8 +12314,8 @@
 		"id": "C19d35e1766196bef85c",
 		"isPrimary": true,
 		"legacyChartID": "311cb20e3079c748521b0f614fdb6b27c21a100b",
-		"level": "9",
-		"levelNum": 9.6,
+		"level": "9+",
+		"levelNum": 9.7,
 		"songID": "S19d35e0fa80560f8874",
 		"versions": ["mobile"]
 	},
@@ -12455,7 +12455,7 @@
 		"isPrimary": true,
 		"legacyChartID": "06f3a72762ba0563bc89f96272aa04c1ca88d58c",
 		"level": "7",
-		"levelNum": 7,
+		"levelNum": 7.5,
 		"songID": "S19d35e0fa84bdb2386a",
 		"versions": ["mobile"]
 	},
@@ -12469,7 +12469,7 @@
 		"isPrimary": true,
 		"legacyChartID": "79106c976c7eb488837e8b8b4cd7856aa3d74d55",
 		"level": "9",
-		"levelNum": 9.3,
+		"levelNum": 9.6,
 		"songID": "S19d35e0fa8578b86c98",
 		"versions": ["mobile"]
 	},
@@ -12595,7 +12595,7 @@
 		"isPrimary": true,
 		"legacyChartID": "58bb12dc3ca044ae47a773a1e47f326f88bd93bb",
 		"level": "10",
-		"levelNum": 10.5,
+		"levelNum": 10.6,
 		"songID": "S19d35e0fa88827064fd",
 		"versions": ["mobile"]
 	},
@@ -12636,8 +12636,8 @@
 		"id": "C19d35e1766af50c085a",
 		"isPrimary": true,
 		"legacyChartID": "a9b91c2a89e49dc54ff2c280b4242b9dee4fa32e",
-		"level": "10+",
-		"levelNum": 10.9,
+		"level": "11",
+		"levelNum": 11,
 		"songID": "S19d35e0fa89c465df98",
 		"versions": ["mobile"]
 	},
@@ -12665,7 +12665,7 @@
 		"isPrimary": true,
 		"legacyChartID": "9b02238c5c231feb458f7cd522a4b1aedb24af29",
 		"level": "8",
-		"levelNum": 8.3,
+		"levelNum": 8.5,
 		"songID": "S19d35e0fa89c465df98",
 		"versions": ["mobile"]
 	},
@@ -12748,8 +12748,8 @@
 		"id": "C19d35e1766c0bb7e672",
 		"isPrimary": true,
 		"legacyChartID": "eabb7a0f709485bc2ff2caadbbcd6e00e8fcee05",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa8bcea53d4a",
 		"versions": ["mobile"]
 	},
@@ -12790,8 +12790,8 @@
 		"id": "C19d35e1766de79fae48",
 		"isPrimary": true,
 		"legacyChartID": "d8a2860e47cdc4ea94330d5573fca421cc0196dd",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa8c10a31ee4",
 		"versions": ["mobile"]
 	},
@@ -12804,8 +12804,8 @@
 		"id": "C19d35e1766e8a027e16",
 		"isPrimary": true,
 		"legacyChartID": "0acf2b1d82e9e559f156890ef17c17e6bdba9014",
-		"level": "8",
-		"levelNum": 8.1,
+		"level": "8+",
+		"levelNum": 8.8,
 		"songID": "S19d35e0fa8d4c4bb7e9",
 		"versions": ["mobile"]
 	},
@@ -12846,8 +12846,8 @@
 		"id": "C19d35e1766f509153ca",
 		"isPrimary": true,
 		"legacyChartID": "37175f52f54158f1be8069c6e303720650aa12af",
-		"level": "8",
-		"levelNum": 8.4,
+		"level": "8+",
+		"levelNum": 8.7,
 		"songID": "S19d35e0fa8ecacf65dd",
 		"versions": ["mobile"]
 	},
@@ -12889,7 +12889,7 @@
 		"isPrimary": true,
 		"legacyChartID": "516fca5729bf19f6fd5dd63d5920ea4d9466a79e",
 		"level": "9",
-		"levelNum": 9.3,
+		"levelNum": 9.4,
 		"songID": "S19d35e0fa8f335a1a49",
 		"versions": ["mobile"]
 	},
@@ -12916,8 +12916,8 @@
 		"id": "C19d35e17670573ae635",
 		"isPrimary": true,
 		"legacyChartID": "afe599dd10d688b126808250b4f5b0aa889f7839",
-		"level": "5",
-		"levelNum": 5.5,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fa8f335a1a49",
 		"versions": ["mobile"]
 	},
@@ -13000,8 +13000,8 @@
 		"id": "C19d35e17672c96d5ad4",
 		"isPrimary": true,
 		"legacyChartID": "cad5628fd21e6d030be4c59967b61a648ccdcbb4",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa910bc30954",
 		"versions": ["mobile"]
 	},
@@ -13015,7 +13015,7 @@
 		"isPrimary": true,
 		"legacyChartID": "3f90f0b2e37e3210d9375ec2e29dc35da90a66c4",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.5,
 		"songID": "S19d35e0fa92dfb65ff2",
 		"versions": ["mobile"]
 	},
@@ -13042,8 +13042,8 @@
 		"id": "C19d35e17673d9dbf3ba",
 		"isPrimary": true,
 		"legacyChartID": "8c11fcc1b3f5567115d3d45030069298ea1daa4b",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fa92dfb65ff2",
 		"versions": ["mobile"]
 	},
@@ -13056,8 +13056,8 @@
 		"id": "C19d35e17674c0349449",
 		"isPrimary": true,
 		"legacyChartID": "d4ccdebdeea81ffcb6b17785bd43a0daadb8b250",
-		"level": "10",
-		"levelNum": 10.6,
+		"level": "10+",
+		"levelNum": 10.7,
 		"songID": "S19d35e0fa9347c26bc5",
 		"versions": ["mobile"]
 	},
@@ -13084,8 +13084,8 @@
 		"id": "C19d35e176740b450378",
 		"isPrimary": true,
 		"legacyChartID": "9d87891cc17d249e2f50f23d268d180a6c6cb513",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8+",
+		"levelNum": 8.8,
 		"songID": "S19d35e0fa9347c26bc5",
 		"versions": ["mobile"]
 	},
@@ -13099,7 +13099,7 @@
 		"isPrimary": true,
 		"legacyChartID": "447a2bb4f31faa82f9347b850b23870286ed4ba1",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.6,
 		"songID": "S19d35e0fa94e8b1b34a",
 		"versions": ["mobile"]
 	},
@@ -13168,8 +13168,8 @@
 		"id": "C19d35e176760e775421",
 		"isPrimary": true,
 		"legacyChartID": "f5460df49ea9163b24bc507c940795e77e5015fb",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa955550e05a",
 		"versions": ["mobile"]
 	},
@@ -13266,7 +13266,7 @@
 		"id": "C19d35e17679802ebb09",
 		"isPrimary": true,
 		"legacyChartID": "6b21c62ff692a78a621fa754dfeb43e7a0b77d5e",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0fa98a7564669",
 		"versions": ["mobile"]
@@ -13351,7 +13351,7 @@
 		"isPrimary": true,
 		"legacyChartID": "ee4eb892a9449f2e25fd7efc27f6294d3f93af6c",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.6,
 		"songID": "S19d35e0fa9ae3104800",
 		"versions": ["mobile"]
 	},
@@ -13378,8 +13378,8 @@
 		"id": "C19d35e1767b1fbafb53",
 		"isPrimary": true,
 		"legacyChartID": "ec03cd272672a2add729aa269284df7af3acac5d",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa9ae3104800",
 		"versions": ["mobile"]
 	},
@@ -13435,7 +13435,7 @@
 		"isPrimary": true,
 		"legacyChartID": "137ab3202588a8f8eb4ac594f45539d640942fa6",
 		"level": "10+",
-		"levelNum": 10.7,
+		"levelNum": 10.8,
 		"songID": "S19d35e0fa9c3327a154",
 		"versions": ["mobile"]
 	},
@@ -13462,8 +13462,8 @@
 		"id": "C19d35e1767d402feed1",
 		"isPrimary": true,
 		"legacyChartID": "8e7bd9b6252b7930de7bbf7f1d8424db43393b18",
-		"level": "8",
-		"levelNum": 8.5,
+		"level": "8+",
+		"levelNum": 8.8,
 		"songID": "S19d35e0fa9c3327a154",
 		"versions": ["mobile"]
 	},
@@ -13476,7 +13476,7 @@
 		"id": "C19d35e1767e09d37ed6",
 		"isPrimary": true,
 		"legacyChartID": "a3575b8196764a660b0df4bd3ef1e82140f9361f",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S19d35e0fa9d1650dd44",
 		"versions": ["mobile"]
@@ -13560,8 +13560,8 @@
 		"id": "C19d35e1767fdc6f118c",
 		"isPrimary": true,
 		"legacyChartID": "aa34ae1bf6f441c6d5a1fb83c86c1a5f8aff6dcc",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fa9e43ba9b48",
 		"versions": ["mobile"]
 	},
@@ -13575,7 +13575,7 @@
 		"isPrimary": true,
 		"legacyChartID": "38f71daca5e94d0295f83302923b43c8a46143da",
 		"level": "9+",
-		"levelNum": 9.9,
+		"levelNum": 9.8,
 		"songID": "S19d35e0fa9f7728d625",
 		"versions": ["mobile"]
 	},
@@ -13686,8 +13686,8 @@
 		"id": "C19d35e17682e2afa5b5",
 		"isPrimary": true,
 		"legacyChartID": "cc28d1b405d6d7ba3acc5ad3f25f50729d3f5e31",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0faa170c4223a",
 		"versions": ["mobile"]
 	},
@@ -13910,8 +13910,8 @@
 		"id": "C19d35e17688b38880b3",
 		"isPrimary": true,
 		"legacyChartID": "d01bb96c295572a48e372684b19b989e16cc4e13",
-		"level": "8",
-		"levelNum": 8.9,
+		"level": "9",
+		"levelNum": 9,
 		"songID": "S19d35e0faa73d251631",
 		"versions": ["mobile"]
 	},
@@ -14022,8 +14022,8 @@
 		"id": "C19d35e1768a31b48051",
 		"isPrimary": true,
 		"legacyChartID": "96921e2319fdaceddb874f9fa1430fb6e4598788",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0faa9868eab1d",
 		"versions": ["mobile"]
 	},
@@ -14037,7 +14037,7 @@
 		"isPrimary": true,
 		"legacyChartID": "fa60d74688c45b6d6feb8c03976a445d04169e31",
 		"level": "10",
-		"levelNum": 10.5,
+		"levelNum": 10.4,
 		"songID": "S19d35e0faaa37c37352",
 		"versions": ["mobile"]
 	},
@@ -14064,8 +14064,8 @@
 		"id": "C19d35e1768b9fd414a6",
 		"isPrimary": true,
 		"legacyChartID": "82707b3bfdb18931c6568e4de123388938fa6d3d",
-		"level": "8",
-		"levelNum": 8.7,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0faaa37c37352",
 		"versions": ["mobile"]
 	},
@@ -14078,7 +14078,7 @@
 		"id": "C19d35e1768c3d4f1b72",
 		"isPrimary": true,
 		"legacyChartID": "c7d7f290e2c8f1b4a2b99039d968dbdee5af2515",
-		"level": "9+",
+		"level": "10",
 		"levelNum": 9.9,
 		"songID": "S19d35e0faab4432d8be",
 		"versions": ["mobile"]
@@ -14106,8 +14106,8 @@
 		"id": "C19d35e1768c098002c8",
 		"isPrimary": true,
 		"legacyChartID": "18e00019cca55bd4d95485424b4b2ca492eaa36e",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0faab4432d8be",
 		"versions": ["mobile"]
 	},
@@ -14190,8 +14190,8 @@
 		"id": "C19d35e1768eab5c45c4",
 		"isPrimary": true,
 		"legacyChartID": "4b5273cd735649944a46b93747cf4a64bb7041ac",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0faaddcb5c489",
 		"versions": ["mobile"]
 	},
@@ -14205,7 +14205,7 @@
 		"isPrimary": true,
 		"legacyChartID": "49f1ca38a139e824c4e5e79bef82d6ea929561d6",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.5,
 		"songID": "S19d35e0faae06406a29",
 		"versions": ["mobile"]
 	},
@@ -14232,8 +14232,8 @@
 		"id": "C19d35e17690ea3b2aa1",
 		"isPrimary": true,
 		"legacyChartID": "c7c41d9798b0f1f71a647dcf824c43683c8a4ca2",
-		"level": "8",
-		"levelNum": 8.3,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0faae06406a29",
 		"versions": ["mobile"]
 	},
@@ -14302,7 +14302,7 @@
 		"id": "C19d35e176923c658837",
 		"isPrimary": true,
 		"legacyChartID": "d033dcd6f0f1cac90a66bb23d3ce67bafc5573f3",
-		"level": "3",
+		"level": "4",
 		"levelNum": 4,
 		"songID": "S19d35e0fab0b4b1af82",
 		"versions": ["mobile"]
@@ -14331,7 +14331,7 @@
 		"isPrimary": true,
 		"legacyChartID": "101f460a312bc1f872111c1682cf652f1b02e8ae",
 		"level": "9+",
-		"levelNum": 9.7,
+		"levelNum": 9.9,
 		"songID": "S19d35e0fab10cf8b88d",
 		"versions": ["mobile"]
 	},
@@ -14415,7 +14415,7 @@
 		"isPrimary": true,
 		"legacyChartID": "5fdd6809df78810d28435bfacb98a265b007bd39",
 		"level": "9",
-		"levelNum": 9.5,
+		"levelNum": 9.4,
 		"songID": "S19d35e0fab37c7e0ea3",
 		"versions": ["mobile"]
 	},
@@ -14484,8 +14484,8 @@
 		"id": "C19d35e176963fb89e6e",
 		"isPrimary": true,
 		"legacyChartID": "64fce263366f047ccdffdd1bd4de14ac69df5eae",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fab49ee2e78a",
 		"versions": ["mobile"]
 	},
@@ -14526,8 +14526,8 @@
 		"id": "C19d35e1769798667147",
 		"isPrimary": true,
 		"legacyChartID": "e59849e910a41ba849e5aea772fdc72d43951c71",
-		"level": "8",
-		"levelNum": 8.4,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fab584d3b0d7",
 		"versions": ["mobile"]
 	},
@@ -14568,8 +14568,8 @@
 		"id": "C19d35e176984a1ea9c4",
 		"isPrimary": true,
 		"legacyChartID": "ac14f5dfbac218db2073b0d4e3977e5ecccc9d51",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fab691131403",
 		"versions": ["mobile"]
 	},
@@ -14625,7 +14625,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b777e7d0ba49943b2f16e2b45f49c7aa9c661c7e",
 		"level": "9+",
-		"levelNum": 9.7,
+		"levelNum": 9.8,
 		"songID": "S19d35e0fab81700aa2e",
 		"versions": ["mobile"]
 	},
@@ -14652,8 +14652,8 @@
 		"id": "C19d35e1769ad9690b94",
 		"isPrimary": true,
 		"legacyChartID": "e93f850fd0cea2de962c098308f25c8d7a4db97e",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fab81700aa2e",
 		"versions": ["mobile"]
 	},
@@ -14666,7 +14666,7 @@
 		"id": "C19d35e1769b9f40fc07",
 		"isPrimary": true,
 		"legacyChartID": "4a0054d768b3f3ce6742eb6579b1a0f91750ff37",
-		"level": "8",
+		"level": "8+",
 		"levelNum": 8.7,
 		"songID": "S19d35e0fab96599adec",
 		"versions": ["mobile"]
@@ -14694,8 +14694,8 @@
 		"id": "C19d35e1769b39ca6716",
 		"isPrimary": true,
 		"legacyChartID": "f74fa4279bf38eb3e342a263e2f6b2ffec90a4e0",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fab96599adec",
 		"versions": ["mobile"]
 	},
@@ -14736,8 +14736,8 @@
 		"id": "C19d35e1769cb97a6f1c",
 		"isPrimary": true,
 		"legacyChartID": "40c1171c4e04d7b57fec86e823cadcb05b6dfdb9",
-		"level": "6",
-		"levelNum": 6.5,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fabafaaa4c11",
 		"versions": ["mobile"]
 	},
@@ -14751,7 +14751,7 @@
 		"isPrimary": true,
 		"legacyChartID": "4f42ee77ed92d24a5956dc9fdc041a3a5cb15d59",
 		"level": "10",
-		"levelNum": 10.4,
+		"levelNum": 10.5,
 		"songID": "S19d35e0fabbc37fcfeb",
 		"versions": ["mobile"]
 	},
@@ -14778,8 +14778,8 @@
 		"id": "C19d35e1769de4f250fa",
 		"isPrimary": true,
 		"legacyChartID": "e98bec9f020959b2db539e5f73425695a3278011",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.1,
 		"songID": "S19d35e0fabbc37fcfeb",
 		"versions": ["mobile"]
 	},
@@ -14820,8 +14820,8 @@
 		"id": "C19d35e1769e26f2ab0d",
 		"isPrimary": true,
 		"legacyChartID": "23a41b793c38de28b5e468197c1eeefa2d718cd4",
-		"level": "7",
-		"levelNum": 7.5,
+		"level": "8",
+		"levelNum": 8.1,
 		"songID": "S19d35e0fabcfef633a7",
 		"versions": ["mobile"]
 	},
@@ -14835,7 +14835,7 @@
 		"isPrimary": true,
 		"legacyChartID": "6a877f46d9457650ef239601a81427d9bc01f41d",
 		"level": "11",
-		"levelNum": 11.1,
+		"levelNum": 11.3,
 		"songID": "S19d35e0fabd986e9d86",
 		"versions": ["mobile"]
 	},
@@ -14862,8 +14862,8 @@
 		"id": "C19d35e1769f9ab4496f",
 		"isPrimary": true,
 		"legacyChartID": "952465cf983ebc862751c6c5979f88488d8a7d36",
-		"level": "8",
-		"levelNum": 8.4,
+		"level": "8+",
+		"levelNum": 8.9,
 		"songID": "S19d35e0fabd986e9d86",
 		"versions": ["mobile"]
 	},
@@ -14891,7 +14891,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b29bbc938397e915f8e4b7f62039690d1e0394d0",
 		"level": "3",
-		"levelNum": 3,
+		"levelNum": 3.5,
 		"songID": "S19d35e0fabe05fda35d",
 		"versions": ["mobile"]
 	},
@@ -14905,7 +14905,7 @@
 		"isPrimary": true,
 		"legacyChartID": "7a32dd82749ad2903fa3ea9b98d5a30a794d7fc2",
 		"level": "6",
-		"levelNum": 6,
+		"levelNum": 6.5,
 		"songID": "S19d35e0fabe05fda35d",
 		"versions": ["mobile"]
 	},
@@ -14933,7 +14933,7 @@
 		"isPrimary": true,
 		"legacyChartID": "4ca6164c75764334355a28c252447c7e17362777",
 		"level": "4",
-		"levelNum": 4,
+		"levelNum": 4.5,
 		"songID": "S19d35e0fabfeec22e30",
 		"versions": ["mobile"]
 	},
@@ -14946,8 +14946,8 @@
 		"id": "C19d35e176a18f6fae7f",
 		"isPrimary": true,
 		"legacyChartID": "2b15a06ce955a338002e94e642523875891496c8",
-		"level": "7",
-		"levelNum": 7,
+		"level": "8",
+		"levelNum": 8.5,
 		"songID": "S19d35e0fabfeec22e30",
 		"versions": ["mobile"]
 	},
@@ -14961,7 +14961,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b930db4525f13fd072d13a25ae6454c9cdf5b53f",
 		"level": "9",
-		"levelNum": 9.5,
+		"levelNum": 9.6,
 		"songID": "S19d35e0fac0c792e12b",
 		"versions": ["mobile"]
 	},
@@ -14975,7 +14975,7 @@
 		"isPrimary": true,
 		"legacyChartID": "a7631da12bdc136d7d2ec19d0f8275a1659cce3e",
 		"level": "3",
-		"levelNum": 3,
+		"levelNum": 3.5,
 		"songID": "S19d35e0fac0c792e12b",
 		"versions": ["mobile"]
 	},
@@ -14988,8 +14988,8 @@
 		"id": "C19d35e176a2d2cacbdf",
 		"isPrimary": true,
 		"legacyChartID": "6244c1a105e735d0e8444c375b0e7d4d334ff19d",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7,
 		"songID": "S19d35e0fac0c792e12b",
 		"versions": ["mobile"]
 	},
@@ -15030,8 +15030,8 @@
 		"id": "C19d35e176a3c224be61",
 		"isPrimary": true,
 		"legacyChartID": "75ec60439a1d40f0b217b769a51e692033b08bf2",
-		"level": "6",
-		"levelNum": 6.5,
+		"level": "7",
+		"levelNum": 7.5,
 		"songID": "S19d35e0fac173d9192b",
 		"versions": ["mobile"]
 	},
@@ -15101,7 +15101,7 @@
 		"isPrimary": true,
 		"legacyChartID": "5ea66342997f62fabc88ac7ac17c89ccfa988e6e",
 		"level": "4",
-		"levelNum": 4,
+		"levelNum": 4.5,
 		"songID": "S19d35e0fac35bea2caa",
 		"versions": ["mobile"]
 	},
@@ -15156,8 +15156,8 @@
 		"id": "C19d35e176a6334a16f1",
 		"isPrimary": true,
 		"legacyChartID": "0adc4622c09328ce7e1fb7158ce9f02cb754a1ab",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7.5,
 		"songID": "S19d35e0fac4a8e0ad96",
 		"versions": ["mobile"]
 	},
@@ -15185,7 +15185,7 @@
 		"isPrimary": true,
 		"legacyChartID": "19d152f882341a6bb5d56a97312b1da8a3f7053c",
 		"level": "3",
-		"levelNum": 3,
+		"levelNum": 3.5,
 		"songID": "S19d35e0fac53c524309",
 		"versions": ["mobile"]
 	},
@@ -15213,7 +15213,7 @@
 		"isPrimary": true,
 		"legacyChartID": "0b1b1a7f8f4e2a7e84e5175977a9c2691702db55",
 		"level": "10",
-		"levelNum": 10.1,
+		"levelNum": 10.2,
 		"songID": "S19d35e0fac697207570",
 		"versions": ["mobile"]
 	},
@@ -15240,8 +15240,8 @@
 		"id": "C19d35e176a892b0443a",
 		"isPrimary": true,
 		"legacyChartID": "cb14bb3b844e352ec8e0e6035ba4004781cbafb6",
-		"level": "7",
-		"levelNum": 7,
+		"level": "7+",
+		"levelNum": 7.8,
 		"songID": "S19d35e0fac697207570",
 		"versions": ["mobile"]
 	},
@@ -15269,7 +15269,7 @@
 		"isPrimary": true,
 		"legacyChartID": "dc9826e3b744134b09b96f4e346bc5541434d612",
 		"level": "5",
-		"levelNum": 5,
+		"levelNum": 5.5,
 		"songID": "S19d35e0fac70d65a489",
 		"versions": ["mobile"]
 	},
@@ -15310,8 +15310,8 @@
 		"id": "C19d35e176aa3c3d2bd7",
 		"isPrimary": true,
 		"legacyChartID": "7bc99b59208c727798e2835ee40eed958028d673",
-		"level": "6",
-		"levelNum": 6,
+		"level": "7",
+		"levelNum": 7.5,
 		"songID": "S19d35e0fac88208dab0",
 		"versions": ["mobile"]
 	},
@@ -15325,7 +15325,7 @@
 		"isPrimary": true,
 		"legacyChartID": "b50ae6359f4c8aa16f4989a7bc353300a18948ac",
 		"level": "9",
-		"levelNum": 9.4,
+		"levelNum": 9.6,
 		"songID": "S19d35e0fac88208dab0",
 		"versions": ["mobile"]
 	}

@@ -2,9 +2,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { FindChartWithPTDFVersion } from "../../../finders.js";
-import { ApplyMutations } from "../../../mutations.js";
-import { ReadCollection } from "../../../util.js";
+import { FindChartWithDFVersion } from "../../../finders.js";
+import { ReadCollection, WriteCollection } from "../../../util.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -50,7 +49,6 @@ function parseScrapedData(file, mutationCallback) {
 	const charts = ReadCollection("charts-arcaea.json");
 
 	const ccData = JSON.parse(fs.readFileSync(path.join(__dirname, file), "utf-8"));
-	const mutations = [];
 
 	for (const entry of ccData) {
 		const song = findSong(songs, entry);
@@ -60,10 +58,9 @@ function parseScrapedData(file, mutationCallback) {
 			continue;
 		}
 
-		const chart = FindChartWithPTDFVersion(
+		const chart = FindChartWithDFVersion(
 			charts,
 			song.id,
-			"Touch",
 			entry.difficulty,
 			"mobile",
 		);
@@ -73,23 +70,16 @@ function parseScrapedData(file, mutationCallback) {
 			continue;
 		}
 
-		mutations.push(mutationCallback(chart, entry));
+		mutationCallback(chart, entry);
 	}
 
 	console.info(`Finished parsing ${file}`);
-	ApplyMutations("charts-arcaea.json", mutations);
+	WriteCollection("charts-arcaea.json", charts);
 }
 
 function chartConstantMutationCallback(chart, entry) {
-	return {
-		data: {
-			level: entry.level,
-			levelNum: entry.levelNum,
-		},
-		match: {
-			chartID: chart.chartID,
-		},
-	};
+	chart.level = entry.level;
+	chart.levelNum = entry.levelNum;
 }
 
 if (fs.existsSync(path.join(__dirname, "lower.json"))) {
@@ -101,14 +91,10 @@ if (fs.existsSync(path.join(__dirname, "upper.json"))) {
 }
 
 if (fs.existsSync(path.join(__dirname, "notecount.json"))) {
-	parseScrapedData("notecount.json", (chart, entry) => ({
-		data: {
-			data: {
-				notecount: entry.notecount,
-			},
-		},
-		match: {
-			chartID: chart.chartID,
-		},
-	}));
+	parseScrapedData("notecount.json", (chart, entry) => {
+		chart.data = {
+			...chart.data,
+			notecount: entry.notecount,
+		};
+	});
 }
