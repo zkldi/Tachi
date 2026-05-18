@@ -7,9 +7,11 @@ import {
 	type integer,
 	type SongDocument,
 } from "tachi-common";
+import crypto from "crypto";
 
 import {
 	CreateChartID,
+	CreateSongID,
 	GetFreshSongIDGenerator,
 	ReadCollection,
 	WriteCollection,
@@ -40,6 +42,7 @@ interface SonglistEntry {
 	search_artist?: LocalizedSearchTerms;
 	version: string;
 	difficulties: Array<SonglistChart>;
+	deleted?: boolean
 }
 
 interface PacklistEntry {
@@ -100,6 +103,8 @@ function convertDifficulty(input: integer): Difficulties["arcaea"] {
 			return "Future";
 		case 3:
 			return "Beyond";
+		case 4:
+			return "Eternal";
 	}
 
 	throw new Error(
@@ -158,9 +163,9 @@ const inGameIDToSongsMap: MultiMapUniqueValues<
 const existingCharts: Map<string, ChartDocument<"arcaea">> = new Map();
 
 for (const chart of existingChartDocs) {
-	const song = existingSongDocsById.get(chart.song.id);
+	const song = existingSongDocsById.get(chart.songID);
 	if (!song) {
-		console.warn(`Chart ${chart.song.id} does not belong to any song?`);
+		console.warn(`Chart ${chart.songID} does not belong to any song?`);
 		continue;
 	}
 	inGameIDToSongsMap.set(chart.data.inGameStrID, song);
@@ -173,6 +178,9 @@ const newSongs: Array<SongDocument<"arcaea">> = [];
 const newCharts: Array<ChartDocument<"arcaea">> = [];
 
 for (const entry of data.songs) {
+	if(entry.deleted) {
+		continue;
+	}
 	const inGameID = entry.id;
 	let possibleSongs = inGameIDToSongsMap.get(inGameID);
 
@@ -195,7 +203,8 @@ for (const entry of data.songs) {
 			artist: entry.artist,
 			altTitles,
 			searchTerms,
-			id: getNewSongID(),
+			id: CreateSongID(),
+			legacySongID: getNewSongID(),
 			data: {
 				displayVersion: entry.version,
 				songPack: convertPackName(packsByID, entry.set),
@@ -247,7 +256,8 @@ for (const entry of data.songs) {
 				artist: chart.artist ?? entry.artist,
 				altTitles,
 				searchTerms,
-				id: getNewSongID(),
+				id: CreateSongID(),
+				legacySongID: getNewSongID(),
 				data: {
 					displayVersion: chart.version ?? entry.version,
 					songPack: convertPackName(packsByID, entry.set),
@@ -270,15 +280,14 @@ for (const entry of data.songs) {
 		}
 
 		const chartDoc: ChartDocument<"arcaea"> = {
-			game: "arcaea",
-			chartID: CreateChartID(),
+			id: CreateChartID(),
 			songID: song.id,
+			legacyChartID: crypto.randomBytes(20).toString("hex"),
 			difficulty,
 			isPrimary: true,
 			level: `${chart.rating}${chart.ratingPlus ? "+" : ""}`,
 			levelNum: chart.rating + (chart.ratingPlus ? 0.7 : 0),
 			versions: ["mobile"],
-			playtype: "Touch",
 			data: {
 				inGameStrID: inGameID,
 				// Filled in later, but not by this script

@@ -131,7 +131,7 @@ function GetSongCollectionGameGroup(filename) {
 
 export function GetFreshSongIDGenerator(gameGroup) {
 	const existing = ReadCollection(`songs-${gameGroup}.json`);
-	let max = existing.reduce((acc, s) => Math.max(acc, s.id ?? 0), 0);
+	let max = existing.reduce((acc, s) => Math.max(acc, s.legacySongID ?? 0), 0);
 	return () => ++max;
 }
 

@@ -16,6 +16,7 @@ const ARCAEA_DIFFICULTY_COLORS: GPTClientImplementation<
 	Past: COLOUR_SET.paleBlue,
 	Present: COLOUR_SET.paleGreen,
 	Future: COLOUR_SET.purple,
+	Eternal: COLOUR_SET.palePurple,
 	Beyond: COLOUR_SET.vibrantRed,
 };
 

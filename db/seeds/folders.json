@@ -45,6 +45,17 @@
 	},
 	{
 		"game": "arcaea",
+		"id": "F19e3cdc05007035d8d0",
+		"inactive": false,
+		"legacyFolderID": "Ffe7f2dc36cbcc0e0880fff765f4e580f877af220b63e441d0eb661e92411fd19",
+		"searchTerms": [],
+		"slug": "11p-mobile",
+		"title": "Level 11+ (Mobile)",
+		"versionFilter": ["mobile"],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "arcaea",
 		"id": "F19d35f0cf25b7ac2d8b",
 		"inactive": false,
 		"legacyFolderID": "F9a381e5482d641280c0c6c70a4396a268ed005cfc346e171cae98f2e525068ee",
@@ -122,9 +133,9 @@
 	},
 	{
 		"game": "arcaea",
-		"id": "F19e3c01575ffb2191d9",
+		"id": "F19e3cc9eccdc9552061",
 		"inactive": false,
-		"legacyFolderID": "",
+		"legacyFolderID": "Fe247b9ea00af9c1ea12f24d0b10e949b454a8eb2df5ec3c9f55f789569a868c7",
 		"searchTerms": [],
 		"slug": "7p-mobile",
 		"title": "Level 7+ (Mobile)",
@@ -144,9 +155,9 @@
 	},
 	{
 		"game": "arcaea",
-		"id": "F19e3c01575f43835f33",
+		"id": "F19e3cc9eccd254cfb80",
 		"inactive": false,
-		"legacyFolderID": "",
+		"legacyFolderID": "Ff348f630a49f29d3a694d85efdc4a36f53d63877ea512935925aaf4d1a3188dc",
 		"searchTerms": [],
 		"slug": "8p-mobile",
 		"title": "Level 8+ (Mobile)",
