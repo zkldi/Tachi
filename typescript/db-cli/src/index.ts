@@ -134,8 +134,17 @@ databaseCmd
 
 			client = maintenanceClient;
 
-			await client.query(`DROP DATABASE "${dbName}"`);
-			console.log(`[migrate] Database "${dbName}" dropped.`);
+			const exists = await client.query(`SELECT 1 FROM pg_database WHERE datname = $1`, [
+				dbName,
+			]);
+
+			await client.query(`DROP DATABASE IF EXISTS "${dbName}"`);
+
+			if (exists.rowCount === 0) {
+				console.log(`[migrate] Database "${dbName}" does not exist; nothing to drop.`);
+			} else {
+				console.log(`[migrate] Database "${dbName}" dropped.`);
+			}
 		} catch (err) {
 			console.error("[migrate] Fatal:", err instanceof Error ? err.message : err);
 			process.exit(1);

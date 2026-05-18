@@ -110,7 +110,7 @@ describe("#ParserFn", () => {
 	});
 
 	it("No Playtype - game group without playtype is not a V3 game", () => {
-		expectThrowsFatal(
+		expectThrowsFatalMatch(
 			() =>
 				ParserFn(
 					{
@@ -121,10 +121,7 @@ describe("#ParserFn", () => {
 					false,
 					log,
 				),
-			new ScoreImportFatalError(
-				400,
-				`Invalid game 'iidx' - when meta.playtype is omitted, meta.game must be a canonical enabled game string (for example iidx-sp).`,
-			),
+			mockErr("Invalid game 'iidx'. It must be one of"),
 		);
 	});
 

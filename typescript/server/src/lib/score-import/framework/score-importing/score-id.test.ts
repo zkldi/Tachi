@@ -12,28 +12,43 @@ import { CreateScoreID } from "./score-id";
 
 describe("CreateScoreID", () => {
 	it("returns a T-prefixed 40-hex score id", () => {
-		const scoreID = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const scoreID = CreateScoreID(
+			"iidx-sp",
+			1,
+			TestingIIDXSPDryScore,
+			Testing511SPA.legacyChartID,
+		);
 
 		expect(scoreID).toMatch(/^T[0-9a-f]{40}/u);
 	});
 
 	it("varies with user id", () => {
-		const a = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
-		const b = CreateScoreID("iidx-sp", 2, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const a = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.legacyChartID);
+		const b = CreateScoreID("iidx-sp", 2, TestingIIDXSPDryScore, Testing511SPA.legacyChartID);
 
 		expect(a).not.toBe(b);
 	});
 
 	it("is stable for the same inputs", () => {
-		const scoreID = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const scoreID = CreateScoreID(
+			"iidx-sp",
+			1,
+			TestingIIDXSPDryScore,
+			Testing511SPA.legacyChartID,
+		);
 
 		expect(scoreID).toBe(
-			CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID),
+			CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.legacyChartID),
 		);
 	});
 
 	it("only incorporates score metrics that affect the checksum", () => {
-		const scoreID = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const scoreID = CreateScoreID(
+			"iidx-sp",
+			1,
+			TestingIIDXSPDryScore,
+			Testing511SPA.legacyChartID,
+		);
 
 		expect(scoreID).toBe(
 			CreateScoreID(
@@ -49,13 +64,18 @@ describe("CreateScoreID", () => {
 						},
 					} as DryScoreData<"iidx-sp">,
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 	});
 
 	it("changes when a provided metric changes", () => {
-		const scoreID = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const scoreID = CreateScoreID(
+			"iidx-sp",
+			1,
+			TestingIIDXSPDryScore,
+			Testing511SPA.legacyChartID,
+		);
 
 		expect(scoreID).not.toBe(
 			CreateScoreID(
@@ -66,7 +86,7 @@ describe("CreateScoreID", () => {
 						score: 0,
 					} as DryScoreData<"iidx-sp">,
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 	});
@@ -76,7 +96,7 @@ describe("CreateScoreID", () => {
 			"sdvx",
 			1,
 			TestingSDVXSingleDryScore,
-			Testing511SPA.chartID,
+			Testing511SPA.legacyChartID,
 		);
 
 		expect(sdvxScoreID).not.toBe(
@@ -86,7 +106,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: 1 } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 
@@ -97,7 +117,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: 1 } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		).not.toBe(
 			CreateScoreID(
@@ -106,7 +126,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: 100 } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 	});
@@ -119,7 +139,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: 1, fast: 18 } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		).toBe(
 			CreateScoreID(
@@ -128,7 +148,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: 1 } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 	});
@@ -141,7 +161,7 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: undefined } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		).toBe(
 			CreateScoreID(
@@ -150,14 +170,25 @@ describe("CreateScoreID", () => {
 				dmf(TestingSDVXSingleDryScore, {
 					scoreData: { optional: { exScore: null } },
 				}),
-				Testing511SPA.chartID,
+				Testing511SPA.legacyChartID,
 			),
 		);
 	});
 
 	it("is deterministic (canary - changing the algorithm is a breaking change)", () => {
-		const scoreID = CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, Testing511SPA.chartID);
+		const scoreID = CreateScoreID(
+			"iidx-sp",
+			1,
+			TestingIIDXSPDryScore,
+			Testing511SPA.legacyChartID,
+		);
 
 		expect(scoreID).toBe("T5d669c4d5d6ca80761e87698acd77c51d2bed95b64ab76e65952dbca7c26bc81");
+	});
+
+	it("throws when legacyChartID is not exactly 40 characters", () => {
+		expect(() =>
+			CreateScoreID("iidx-sp", 1, TestingIIDXSPDryScore, "not-a-legacy-chart-id"),
+		).toThrow(/legacyChartID must be exactly 40 characters/u);
 	});
 });

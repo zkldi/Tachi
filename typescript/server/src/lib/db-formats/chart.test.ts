@@ -61,6 +61,7 @@ describe("GetChartById", () => {
 		expect(c).toBeDefined();
 		expect(c!.game).toBe("iidx-sp");
 		expect(c!.chartID).toBe(CHART_ID);
+		expect(c!.legacyChartID).toBe(CHART_LEGACY_ID);
 		expect(c!.song.id).toBe(SONG_PG_ID);
 		expect(c!.versions).toContain("27");
 	});

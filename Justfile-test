@@ -87,7 +87,7 @@ bot-db-test-template-reset:
 	#!/bin/bash
 	set -euo pipefail
 	export POSTGRES_URL="{{POSTGRES_URL}}/tachi_bot_test_template"
-	tachidb database drop || true
+	tachidb database drop
 	tachidb database create
 	tachidb migrate run
 
@@ -97,7 +97,7 @@ server-db-test-template-reset:
 	#!/bin/bash
 	set -euo pipefail
 	export POSTGRES_URL="{{POSTGRES_URL}}/tachi_server_test_template"
-	tachidb database drop || true
+	tachidb database drop
 	tachidb database create
 	tachidb migrate run
 

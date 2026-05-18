@@ -493,10 +493,7 @@ export default function TableEvolutionReplay({
 			) : null}
 
 			<Collapse in={open}>
-				<div
-					className={enumMetricChoices.length > 1 ? "mt-2" : "mt-3"}
-					id={collapseId}
-				>
+				<div className={enumMetricChoices.length > 1 ? "mt-2" : "mt-3"} id={collapseId}>
 					{evoError ? <ApiError error={evoError} /> : null}
 
 					{open && evolutionLoading ? <Loading /> : null}

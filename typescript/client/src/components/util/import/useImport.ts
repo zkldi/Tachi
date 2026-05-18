@@ -64,27 +64,44 @@ export default function useImport(url: string, options: RequestInit) {
 					`/imports/${initRes.body.importID}/poll-status`,
 				);
 
-				if (pollRes.success) {
-					if (pollRes.body.importStatus === "completed") {
-						isImportFinished = true;
-						if (importState.state === "done") {
-							setImportState({ ...importState, import: pollRes.body.import });
-						} else {
-							setImportState({ state: "done", import: pollRes.body.import });
-						}
-					} else {
-						setImportState({
-							state: "waiting_processing",
-							progressInfo: pollRes.body.progress,
-						});
-
-						await Sleep(1000);
-					}
-				} else {
+				if (!pollRes.success || pollRes.statusCode >= 400) {
 					setImportState({ state: "failed", error: pollRes.description });
+					isImportFinished = true;
+					continue;
+				}
+
+				if (pollRes.body.importStatus === "completed") {
+					isImportFinished = true;
+					setImportState({ state: "done", import: pollRes.body.import });
+				} else if (pollRes.body.importStatus === "ongoing") {
+					const progress = pollRes.body.progress;
+					const description =
+						progress &&
+						typeof progress === "object" &&
+						"description" in progress &&
+						typeof progress.description === "string"
+							? progress.description
+							: "Importing.";
+
+					setImportState({
+						state: "waiting_processing",
+						progressInfo: { description },
+					});
+
+					await Sleep(1000);
+				} else {
+					setImportState({
+						state: "failed",
+						error: pollRes.description ?? "Import failed.",
+					});
 					isImportFinished = true;
 				}
 			}
+		} else {
+			setImportState({
+				state: "failed",
+				error: initRes.description ?? "Import failed.",
+			});
 		}
 	};
 

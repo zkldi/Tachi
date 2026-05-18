@@ -262,7 +262,7 @@ export const ConverterIRFervidex: ConverterFunction<FervidexScore, FervidexConte
 	// marked as a duplicate, but with highlight set. As such, we should highlight
 	// the score this is for.
 	if (data.highlight === true) {
-		const scoreID = CreateScoreID(game, context.userID, dryScore, chart.chartID);
+		const scoreID = CreateScoreID(game, context.userID, dryScore, chart.legacyChartID);
 
 		await DB.transaction().execute(async (trx) => {
 			const scoreRow = await trx

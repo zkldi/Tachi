@@ -285,4 +285,25 @@ describe("GET /api/v1/imports/:importID/poll-status", () => {
 		expect(res.body.body.importStatus).toBe("completed");
 		expect(res.body.body.import.importID).toBe(FakeImport.importID);
 	});
+
+	it("returns 400 with success false when import_tracker records a failure", async () => {
+		const { id: userID } = await seedUser({ username: "poll_failed_user" });
+
+		await DB.insertInto("import_tracker")
+			.values({
+				import_id: "failed-import",
+				user_id: userID,
+				import_type: "file/batch-manual",
+				user_intent: true,
+				time_started: new Date().toISOString(),
+				error: { message: "Invalid score file.", statusCode: 400 },
+			})
+			.execute();
+
+		const res = await mockApi.get("/api/v1/imports/failed-import/poll-status");
+
+		expect(res.status).toBe(400);
+		expect(res.body.success).toBe(false);
+		expect(res.body.description).toBe("Invalid score file.");
+	});
 });

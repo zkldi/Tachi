@@ -328,6 +328,7 @@ export const TestingSDVXAlbidaSong: SongDocument<"sdvx"> = {
 export const TestingSDVXAlbidaChart: ChartDocument<"sdvx"> = {
 	game: "sdvx",
 	chartID: "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
+	legacyChartID: "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
 	difficulty: "ADV",
 	song: TestingSDVXAlbidaSong,
 	levelNum: 10,
@@ -444,6 +445,7 @@ export const TestingJubeatSong: SongDocument<"jubeat"> = {
 export const TestingJubeatChart: ChartDocument<"jubeat"> = {
 	game: "jubeat",
 	chartID: "b90a319f18d1a746b330b8f4cd6f74874f664421",
+	legacyChartID: "b90a319f18d1a746b330b8f4cd6f74874f664421",
 	song: TestingJubeatSong,
 	level: "6",
 	levelNum: 6,
@@ -469,6 +471,7 @@ export const TestingGitadoraSong: SongDocument<"gitadora"> = {
 export const TestingGitadoraChart: ChartDocument<"gitadora-dora"> = {
 	game: "gitadora-dora",
 	chartID: "bf62dd6c78afaf6b4f95cce70b5b08af193c0c57",
+	legacyChartID: "bf62dd6c78afaf6b4f95cce70b5b08af193c0c57",
 	data: {
 		inGameID: 0,
 	},
@@ -496,6 +499,7 @@ export const TestingMaimaiSong: SongDocument<"maimai"> = {
 export const TestingMaimaiChart: ChartDocument<"maimai"> = {
 	game: "maimai",
 	chartID: "6e087e5f58519a2697374b9bff776a004046e952",
+	legacyChartID: "6e087e5f58519a2697374b9bff776a004046e952",
 	data: {
 		inGameID: 834,
 		inGameStrID: "pandora_paradoxxx",
@@ -524,6 +528,7 @@ export const TestingMaimaiDXSong: SongDocument<"maimaidx"> = {
 export const TestingMaimaiDXChart: ChartDocument<"maimaidx"> = {
 	game: "maimaidx",
 	chartID: "fbde73d543f93cbad9ec67052a7165700c5c8df6",
+	legacyChartID: "fbde73d543f93cbad9ec67052a7165700c5c8df6",
 	data: {
 		displayVersion: "maimai",
 		inGameID: 1,
@@ -552,6 +557,7 @@ export const TestingMusecaSong: SongDocument<"museca"> = {
 export const TestingMusecaChart: ChartDocument<"museca"> = {
 	game: "museca",
 	chartID: "4f3a7bf907f7be54a0c531dd9077e58fd7b6bb9c",
+	legacyChartID: "4f3a7bf907f7be54a0c531dd9077e58fd7b6bb9c",
 	data: {
 		inGameID: 1,
 	},
@@ -579,6 +585,7 @@ export const TestingPopnSong: SongDocument<"popn"> = {
 export const TestingPopnChart: ChartDocument<"popn"> = {
 	game: "popn",
 	chartID: "7489166ddfb6ec780249823d5bda255611fbc528",
+	legacyChartID: "7489166ddfb6ec780249823d5bda255611fbc528",
 	data: {
 		hashSHA256: "83287260cb32c5c54b06b76967ba8620dd3735063959d9fbaf2cffc0dba8a049",
 		inGameID: 0,
@@ -606,6 +613,7 @@ export const Testing511Song: SongDocument<"iidx"> = {
 export const Testing511SPA: ChartDocument<"iidx-sp"> = {
 	game: "iidx-sp",
 	chartID: "c2311194e3897ddb5745b1760d2c0141f933e683",
+	legacyChartID: "c2311194e3897ddb5745b1760d2c0141f933e683",
 	difficulty: "ANOTHER",
 	song: Testing511Song,
 	levelNum: 10,
@@ -653,6 +661,7 @@ export const TestingDDRSong: SongDocument<"ddr"> = {
 export const TestingDDRSP: ChartDocument<"ddr-sp"> = {
 	game: "ddr-sp",
 	chartID: "2fc2e0cfdda42addb7840b58be1df1f545310d66",
+	legacyChartID: "2fc2e0cfdda42addb7840b58be1df1f545310d66",
 	data: {
 		inGameID: 10,
 	},
@@ -667,6 +676,7 @@ export const TestingDDRSP: ChartDocument<"ddr-sp"> = {
 export const TestingAlbidaADV: ChartDocument<"sdvx"> = {
 	game: "sdvx",
 	chartID: "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
+	legacyChartID: "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
 	difficulty: "ADV",
 	song: TestingSDVXAlbidaSong,
 	levelNum: 10,
@@ -697,6 +707,7 @@ export const BMSGazerChart: ChartDocument<"bms-7k"> = {
 	game: "bms-7k",
 	song: BMSGazerSong,
 	chartID: "88eb6cc5683e2740cbd07f588a5f3db1db8d467b",
+	legacyChartID: "88eb6cc5683e2740cbd07f588a5f3db1db8d467b",
 	data: {
 		aiLevel: "0",
 		notecount: 2256,
@@ -731,6 +742,7 @@ export const CHUNITHMBBKKSong: SongDocument<"chunithm"> = {
 export const CHUNITHMBBKKChart: ChartDocument<"chunithm"> = {
 	game: "chunithm",
 	chartID: "192b96bdb6150f80ba6412ce02df1249e16c0cb0",
+	legacyChartID: "192b96bdb6150f80ba6412ce02df1249e16c0cb0",
 	difficulty: "BASIC",
 	song: CHUNITHMBBKKSong,
 	levelNum: 3,
@@ -780,6 +792,7 @@ export const TestingDoraChart: ChartDocument<"gitadora-dora"> = {
 	game: "gitadora-dora",
 	song: TestingGitadoraSong,
 	chartID: "29f0bfab357ba54e3fd0176fb3cbc578c9ec8df5",
+	legacyChartID: "29f0bfab357ba54e3fd0176fb3cbc578c9ec8df5",
 	difficulty: "BASIC",
 	levelNum: 1.6,
 	level: "1.60",
@@ -806,6 +819,7 @@ export const TestingWaccaPupaExp: ChartDocument<"wacca"> = {
 	game: "wacca",
 	song: TestingWaccaPupaSong,
 	chartID: "2abcf2da86f3d968dbe07695ab7ebf6b79cb0841",
+	legacyChartID: "2abcf2da86f3d968dbe07695ab7ebf6b79cb0841",
 	difficulty: "EXPERT",
 	levelNum: 13.7,
 	level: "13+",
@@ -1046,6 +1060,7 @@ export const TestingUSCSong: SongDocument<"usc"> = {
 export const TestingUSCChart: ChartDocument<"usc-keyboard"> = {
 	game: "usc-keyboard",
 	chartID: "USC_CHART_ID",
+	legacyChartID: "0000000000000000000000000000000000000001",
 	difficulty: "NOV",
 	song: TestingUSCSong,
 	levelNum: 1,
@@ -1454,6 +1469,7 @@ export const TestingArcaeaSheriruthSong: SongDocument<"arcaea"> = {
 export const TestingArcaeaSheriruthFTR: ChartDocument<"arcaea"> = {
 	game: "arcaea",
 	chartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55e",
+	legacyChartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55e",
 	data: {
 		inGameStrID: "sheriruth",
 		notecount: 1151,
@@ -1481,6 +1497,7 @@ export const TestingOngekiSong: SongDocument<"ongeki"> = {
 export const TestingOngekiChart: ChartDocument<"ongeki"> = {
 	game: "ongeki",
 	chartID: "213796bdb6150f80ba6412ce69df1249e16c0cb0",
+	legacyChartID: "213796bdb6150f80ba6412ce69df1249e16c0cb0",
 	data: {
 		displayVersion: "オンゲキ bright MEMORY Act.3",
 		inGameID: 2137,
@@ -1534,6 +1551,7 @@ export const TestingOngekiScorePB: PBScoreDocument<"ongeki"> = {
 export const TestingOngekiChartConverter: ChartDocument<"ongeki"> = {
 	game: "ongeki",
 	chartID: "e5e4ee3d4feb233c399751b3ba3daf8ba149c9e6",
+	legacyChartID: "e5e4ee3d4feb233c399751b3ba3daf8ba149c9e6",
 	data: {
 		displayVersion: "オンゲキ bright",
 		inGameID: 678,
@@ -1564,6 +1582,7 @@ export const TestingChunithmSongConverter: SongDocument<"chunithm"> = {
 export const TestingChunithmChartConverter: ChartDocument<"chunithm"> = {
 	game: "chunithm",
 	chartID: "fbba26a6a223b1dd0bf8ef139cfee83114b91086",
+	legacyChartID: "fbba26a6a223b1dd0bf8ef139cfee83114b91086",
 	data: {
 		inGameID: 956,
 	},
@@ -1595,6 +1614,7 @@ export const TestingChunithmWEChartConverter: ChartDocument<"chunithm"> = {
 	},
 	difficulty: "割☆4",
 	chartID: "C19e10e7a402af3865b8",
+	legacyChartID: "e5e4ee3d4feb233c399751b3ba3daf8ba149c9e6",
 	isPrimary: true,
 	level: "",
 	levelNum: 0,
@@ -1616,6 +1636,7 @@ export const TestingMaimaiDXSongConverter: SongDocument<"maimaidx"> = {
 export const TestingMaimaiDXChartConverter: ChartDocument<"maimaidx"> = {
 	game: "maimaidx",
 	chartID: "fab3d632610b9b98ee1e4f68e9ecf0161f9cb8cd",
+	legacyChartID: "fab3d632610b9b98ee1e4f68e9ecf0161f9cb8cd",
 	data: {
 		displayVersion: "maimaiでらっくす UNiVERSE",
 		inGameID: 11294,

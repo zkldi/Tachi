@@ -2,11 +2,22 @@
 import { loadServerEnvFile } from "#lib/setup/load-server-env";
 loadServerEnvFile(process.env.NODE_ENV === "test" ? ".env.test" : ".env");
 
-import { JOB_KIND_SCORE_IMPORT } from "#lib/jobs/job-queue/constants";
+import {
+	computeBackoffDelayMs,
+	JOB_KIND_SCORE_IMPORT,
+	SCORE_IMPORT_409_MAX_RETRIES,
+} from "#lib/jobs/job-queue/constants";
 import { parseJobQueueWorkerOptions } from "#lib/jobs/job-queue/parse-worker-options";
-import { ClaimNextJob, MarkJobDone, MarkJobFailed } from "#lib/jobs/job-queue/queue-ops";
+import {
+	ClaimNextJob,
+	MarkJobDone,
+	MarkJobFailed,
+	RequeueJobAfter409Attempt,
+} from "#lib/jobs/job-queue/queue-ops";
 import { log } from "#lib/log/log";
 import { maybeStartWorkerMetricsServer } from "#lib/metrics/worker-metrics";
+import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
+import { MarkImportAsFailed } from "#lib/score-import/framework/status-tracking/import-status-tracking";
 import { CloseScoreImportQueue } from "#lib/score-import/worker/queue";
 import { processScoreImportJobFromPayload } from "#lib/score-import/worker/score-import-job-processor";
 import { Env } from "#lib/setup/config";
@@ -91,9 +102,13 @@ async function bootstrap() {
 			const startMs = Date.now();
 
 			try {
+				let result:
+					| Awaited<ReturnType<typeof processScoreImportJobFromPayload>>
+					| undefined;
+
 				switch (job.job_kind) {
 					case JOB_KIND_SCORE_IMPORT:
-						await processScoreImportJobFromPayload(job.payload);
+						result = await processScoreImportJobFromPayload(job.payload);
 						break;
 					default:
 						log.error(
@@ -102,12 +117,54 @@ async function bootstrap() {
 						);
 						throw new Error(`Unknown job_kind ${String(job.job_kind)}`);
 				}
-				await MarkJobDone(job.row_id);
-				jobDurationSeconds?.observe(
-					{ job_kind: job.job_kind },
-					(Date.now() - startMs) / 1000,
-				);
-				jobsTotal?.inc({ job_kind: job.job_kind, status: "success" });
+
+				// Score import: handle 409 "ongoing import" with exponential-backoff retry.
+				if (result && !result.success && result.statusCode === 409) {
+					if (job.failed_attempts >= SCORE_IMPORT_409_MAX_RETRIES) {
+						log.warn(
+							{
+								row_id: job.row_id,
+								importID: result.importID,
+								failed_attempts: job.failed_attempts,
+							},
+							`Import ${result.importID} hit 409 ${job.failed_attempts} times, giving up.`,
+						);
+						await MarkImportAsFailed(
+							result.importID,
+							new ScoreImportFatalError(409, result.description),
+						);
+						await MarkJobFailed(job.row_id);
+						jobDurationSeconds?.observe(
+							{ job_kind: job.job_kind },
+							(Date.now() - startMs) / 1000,
+						);
+						jobsTotal?.inc({ job_kind: job.job_kind, status: "failure" });
+					} else {
+						const delayMs = computeBackoffDelayMs(job.failed_attempts);
+						const scheduledFor = new Date(Date.now() + delayMs).toISOString();
+						log.info(
+							{
+								row_id: job.row_id,
+								importID: result.importID,
+								failed_attempts: job.failed_attempts,
+								delayMs,
+							},
+							`Import ${result.importID} hit 409, requeueing in ${delayMs}ms (attempt ${job.failed_attempts + 1}/${SCORE_IMPORT_409_MAX_RETRIES}).`,
+						);
+						await RequeueJobAfter409Attempt(
+							job.row_id,
+							job.failed_attempts,
+							scheduledFor,
+						);
+					}
+				} else {
+					await MarkJobDone(job.row_id);
+					jobDurationSeconds?.observe(
+						{ job_kind: job.job_kind },
+						(Date.now() - startMs) / 1000,
+					);
+					jobsTotal?.inc({ job_kind: job.job_kind, status: "success" });
+				}
 			} catch (e) {
 				log.error(e, `Job ${job.row_id} (worker ${workerId}) failed.`);
 				await MarkJobFailed(job.row_id);

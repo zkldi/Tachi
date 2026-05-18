@@ -11,6 +11,7 @@ import {
 } from "#lib/score-import/framework/common/converter-failures";
 import { DeorphanScores } from "#lib/score-import/framework/orphans/orphans";
 import { ServerConfig, TachiConfig } from "#lib/setup/config";
+import { Random20Hex } from "#utils/misc";
 import { FindChartOnSHA256, FindChartOnSHA256Playtype } from "#utils/queries/charts";
 import { FindSongOnID } from "#utils/queries/songs";
 import {
@@ -297,6 +298,7 @@ function ConvertBeatorajaChartToTachi(chart: BeatorajaChart, game: BMSGames) {
 	const chartDoc: ChartDocument<BMSGames> = {
 		game,
 		chartID,
+		legacyChartID: Random20Hex(),
 		difficulty: "CHART",
 		isPrimary: true,
 		level: "?",

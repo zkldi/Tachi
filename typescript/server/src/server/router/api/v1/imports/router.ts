@@ -210,15 +210,13 @@ API_V1_ROUTER.add("GET /imports/:importID/poll-status", async ({ params }) => {
 
 		switch (tracker.type) {
 			case "ONGOING":
-				return success("Import is ongoing.", { importStatus: "ongoing", progress: 0 });
+				return success("Import is ongoing.", {
+					importStatus: "ongoing",
+					progress: { description: "Importing scores." },
+				});
 
 			case "FAILED":
-				return {
-					$status: tracker.error.statusCode ?? 500,
-					body: {},
-					description: tracker.error.message,
-					success: true as const,
-				};
+				throw new ExpectedErr(tracker.error.statusCode ?? 500, tracker.error.message);
 
 			default:
 				// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -242,15 +240,13 @@ API_V1_ROUTER.add("GET /imports/:importID/poll-status", async ({ params }) => {
 		const tracker = await GetImportTrackerByImportId(params.importID);
 
 		if (tracker?.type === "FAILED") {
-			return {
-				$status: tracker.error.statusCode ?? 500,
-				body: {},
-				description: tracker.error.message,
-				success: true as const,
-			};
+			throw new ExpectedErr(tracker.error.statusCode ?? 500, tracker.error.message);
 		}
 
-		return success("Import is ongoing.", { importStatus: "ongoing", progress: 0 });
+		return success("Import is ongoing.", {
+			importStatus: "ongoing",
+			progress: { description: "Importing scores." },
+		});
 	}
 
 	throw new ExpectedErr(500, "Unrecognised job queue state.");

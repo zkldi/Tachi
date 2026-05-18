@@ -114,20 +114,20 @@ export default function Activity({
 			data={clumped}
 			exhausted={exhausted}
 			fetchMoreFrom={(start) => {
-				APIFetchV1<ActivityReturn | RecordActivityReturn>(activityUrlWithCursor(url, start)).then(
-					(r) => {
-						if (r.success) {
-							const newActivity = ClumpActivity(r.body);
+				APIFetchV1<ActivityReturn | RecordActivityReturn>(
+					activityUrlWithCursor(url, start),
+				).then((r) => {
+					if (r.success) {
+						const newActivity = ClumpActivity(r.body);
 
-							if (newActivity.filter((e) => e.type === "SESSION").length < 30) {
-								setExhausted(true);
-							}
-
-							setClumped([...clumped, ...newActivity]);
-							setUsers([...users, ...GetUsers(r.body)]);
+						if (newActivity.filter((e) => e.type === "SESSION").length < 30) {
+							setExhausted(true);
 						}
-					},
-				);
+
+						setClumped([...clumped, ...newActivity]);
+						setUsers([...users, ...GetUsers(r.body)]);
+					}
+				});
 			}}
 			shouldShowGame={shouldShowGame}
 			users={users}

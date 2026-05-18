@@ -94,7 +94,7 @@ async function writeBmsPmsSongAndChart(
 		.insertInto("chart")
 		.values({
 			id: chartDoc.chartID,
-			legacy_id: chartDoc.chartID,
+			legacy_id: chartDoc.legacyChartID,
 			game: v3Game,
 			song_id: songNewID,
 			level: chartDoc.level,

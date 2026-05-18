@@ -74,7 +74,7 @@ async function seedSongs() {
 		await DB.insertInto("chart")
 			.values({
 				id: chart.chartID,
-				legacy_id: index,
+				legacy_id: chart.legacyChartID,
 				game: "chunithm",
 				song_id: chart.song.id,
 				difficulty: chart.difficulty,

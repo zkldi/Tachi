@@ -1,7 +1,11 @@
 import { GetChartByIdForGame } from "#lib/db-formats/chart";
 import { log } from "#lib/log/log";
+import {
+	LEGACY_CHART_ID_LENGTH,
+} from "#lib/score-import/framework/score-importing/score-id";
 import DB from "#services/pg/db";
 import { GetNextBmsPmsSongLegacyId } from "#utils/db";
+import { Random20Hex } from "#utils/misc";
 import { sql } from "kysely";
 import {
 	type BMSGames,
@@ -46,6 +50,10 @@ export async function DeorphanBmsIfInOrphanChartPg(
 	songDoc.id = songNewID;
 	chartDoc.song = songDoc;
 
+	if (chartDoc.legacyChartID?.length !== LEGACY_CHART_ID_LENGTH) {
+		chartDoc.legacyChartID = Random20Hex();
+	}
+
 	const ftsDocument = [...songDoc.searchTerms, ...songDoc.altTitles].filter(Boolean).join(" ");
 
 	await DB.transaction().execute(async (trx) => {
@@ -68,7 +76,7 @@ export async function DeorphanBmsIfInOrphanChartPg(
 			.insertInto("chart")
 			.values({
 				id: chartDoc.chartID,
-				legacy_id: chartDoc.chartID,
+				legacy_id: chartDoc.legacyChartID,
 				game,
 				song_id: songNewID,
 				level: chartDoc.level,

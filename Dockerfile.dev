@@ -25,7 +25,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
 		# postgres client tools (psql, pg_dump, pg_restore, pg_isready, etc.)
 		postgresql-client-18 \
 		# nice to haves
-		gh fish just fzf curl wget parallel neovim fd-find bat rsync \
+		gh fish just fzf curl wget parallel neovim fd-find bat ripgrep rsync \
 		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
 		minio-client \
 	# uninstall lynx so people don't get a CLI browser that can't load anything when they do `gh auth login`

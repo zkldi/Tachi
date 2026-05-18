@@ -355,7 +355,7 @@ async function HydrateCheckAndInsertScore(
 ): Promise<ScoreDocument | null> {
 	const game = dryScore.game;
 
-	const scoreID = CreateScoreID(game, userID, dryScore, chart.chartID, importLog);
+	const scoreID = CreateScoreID(game, userID, dryScore, chart.legacyChartID, importLog);
 
 	// sub-context thelog so the below logs are more accurate
 	const log = AppendLogCtx(scoreID, importLog);

@@ -126,7 +126,7 @@ export async function PerformScoreImport(
 				authToken,
 			);
 
-			if (pollRes.success) {
+			if (pollRes.success && pollRes.statusCode < 400) {
 				if (pollRes.body.importStatus === "completed") {
 					// is there even a nice way around this --
 					// why *are* we nested so deeply?
@@ -138,15 +138,27 @@ export async function PerformScoreImport(
 					return pollRes.body.import;
 				}
 
-				if (interaction) {
-					void interaction.editReply(
-						`Importing Scores: ${pollRes.body.progress.description}..`,
-					);
-				}
+				if (pollRes.body.importStatus === "ongoing") {
+					const progress = pollRes.body.progress;
+					const description =
+						progress &&
+						typeof progress === "object" &&
+						"description" in progress &&
+						typeof progress.description === "string"
+							? progress.description
+							: "Importing.";
 
-				// eslint-disable-next-line no-await-in-loop
-				await Sleep(1000);
-			} else {
+					if (interaction) {
+						void interaction.editReply(`Importing Scores: ${description}..`);
+					}
+
+					// eslint-disable-next-line no-await-in-loop
+					await Sleep(1000);
+					continue;
+				}
+			}
+
+			if (!pollRes.success || pollRes.statusCode >= 400) {
 				// silly kai bug they won't ever fix. hacking around it in the bot here.
 				if (/attempting reauthentication/u.exec(pollRes.description)) {
 					throw new Error(`Failed to import scores.
@@ -157,6 +169,10 @@ Please go to ${Env.TACHI_SERVER_LOCATION}/u/me/integrations/services to un-link 
 
 				throw new Error(`Failed to import scores. ${pollRes.description}.`);
 			}
+
+			throw new Error(
+				`Failed to import scores. ${pollRes.description ?? "Unexpected poll response."}.`,
+			);
 		}
 	}
 

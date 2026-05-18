@@ -18,7 +18,8 @@ import { type ImportTypes } from "tachi-common";
  * `ScoreImportFatalError` is turned into `ExpectedErr` for correct audit (`BAD` / not `THROW`).
  */
 export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input) => {
-	const { importID, importType, userIntent, skipStartTracking } = input;
+	const { importID, importType, userIntent, skipStartTracking, omitImportTrackerFailureOn409 } =
+		input;
 	const parserArguments = input[
 		"!parserArguments"
 	] as ScoreImportJobData<ImportTypes>["parserArguments"];
@@ -48,7 +49,10 @@ export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input
 		return { importID };
 	} catch (e) {
 		const err = e as Error | ScoreImportFatalError;
-		await MarkImportAsFailed(importID, err);
+		const is409 = err instanceof ScoreImportFatalError && err.statusCode === 409;
+		if (!is409 || !omitImportTrackerFailureOn409) {
+			await MarkImportAsFailed(importID, err);
+		}
 		if (err instanceof ScoreImportFatalError) {
 			throw new ExpectedErr(err.statusCode, err.message);
 		}

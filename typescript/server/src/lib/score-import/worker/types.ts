@@ -46,6 +46,7 @@ export interface ScoreImportProgress {
 export type ScoreImportWorkerReturns =
 	| {
 			description: string;
+			importID: string;
 			statusCode: integer;
 			success: false;
 	  }

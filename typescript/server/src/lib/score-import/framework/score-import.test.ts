@@ -119,6 +119,10 @@ describe("MakeScoreImport (ported from score-import.oldtest.ts)", () => {
 
 const JUBEAT_ARRAY_IG_FIRST = 80000037;
 
+function padLegacyChartId(legacyId: number): string {
+	return String(legacyId).padStart(40, "0");
+}
+
 function mkBatchManualMulterFile(body: object): Express.Multer.File {
 	return {
 		buffer: Buffer.from(JSON.stringify(body), "utf-8"),
@@ -167,7 +171,7 @@ async function seedJubeatChartArrayInGameID(opts: { chartId: string; legacyId: n
 	await DB.insertInto("chart")
 		.values({
 			id: opts.chartId,
-			legacy_id: String(opts.legacyId),
+			legacy_id: padLegacyChartId(opts.legacyId),
 			game: "jubeat",
 			song_id: `${TestingJubeatSong.id}-smoke-${opts.chartId}`,
 			difficulty: "ADV",
@@ -207,7 +211,7 @@ async function seedJubeatChartScalarInGameID(opts: {
 	await DB.insertInto("chart")
 		.values({
 			id: opts.chartId,
-			legacy_id: String(opts.legacyId),
+			legacy_id: padLegacyChartId(opts.legacyId),
 			game: "jubeat",
 			song_id: `${TestingJubeatSong.id}-${opts.songIdSuffix}`,
 			difficulty: "ADV",

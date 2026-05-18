@@ -76,3 +76,25 @@ export async function MarkJobFailed(rowId: string): Promise<void> {
 		.where("job_queue.row_id", "=", rowId)
 		.execute();
 }
+
+/**
+ * Requeue a currently-running job for a 409-retry attempt.
+ * Resets status to QUEUED, advances `scheduled_for` by the computed backoff delay,
+ * and increments `failed_attempts`.
+ */
+export async function RequeueJobAfter409Attempt(
+	rowId: string,
+	currentFailedAttempts: number,
+	scheduledForIso: string,
+): Promise<void> {
+	await DB.updateTable("job_queue")
+		.set({
+			status: JOB_STATUS_QUEUED,
+			scheduled_for: scheduledForIso,
+			failed_attempts: currentFailedAttempts + 1,
+			updated_at: new Date().toISOString(),
+		})
+		.where("job_queue.row_id", "=", rowId)
+		.where("job_queue.status", "=", JOB_STATUS_RUNNING)
+		.execute();
+}

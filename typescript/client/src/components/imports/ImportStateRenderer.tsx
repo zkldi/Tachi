@@ -30,7 +30,7 @@ export default function ImportStateRenderer({ state: s }: { state: ImportStates 
 								have, this might take a while.
 							</div>
 							<Divider />
-							<div>{s.progressInfo.description ?? "Importing."}..</div>
+							<div>{s.progressInfo?.description ?? "Importing."}..</div>
 						</>
 					) : s.state === "done" ? (
 						<>

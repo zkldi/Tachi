@@ -67,7 +67,7 @@ jobs:
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_TCHIC_MODE: "boku"
           VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
-          VITE_SERVER_URL: "https://v3-boku.tachi.ac"
+          VITE_SERVER_URL: "https://boku.tachi.ac"
           VITE_DISCORD: "https://discord.gg/E4n8ZZF5ES"
           VITE_CDN_URL: "https://cdn-boku.tachi.ac"
           TACHI_NAME: "Bokutachi"
@@ -77,7 +77,7 @@ jobs:
         run: bun run --filter tachi-client build
         env:
           VITE_MANDATE_LOGIN: true
-          VITE_SERVER_URL: "https://v3-kamai.tachi.ac"
+          VITE_SERVER_URL: "https://kamai.tachi.ac"
           VITE_EAG_CLIENT_ID: "332B9789DEA10B94DB0E345A6F8ECF54BB86E6DD"
           VITE_FLO_CLIENT_ID: "98B965554FB2341D969667F3D04CFC28F8C080ED"
           VITE_MIN_CLIENT_ID: "A0DBDBB063CD800530EF01C6488B282137E0191E"

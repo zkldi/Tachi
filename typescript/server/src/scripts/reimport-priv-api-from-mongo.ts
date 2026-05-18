@@ -21,13 +21,7 @@
 
 import type { Database, NewPrivApiClient, NewPrivApiToken } from "tachi-db";
 
-import {
-	type Insertable,
-	Kysely,
-	PostgresDialect,
-	type RawBuilder,
-	sql,
-} from "kysely";
+import { type Insertable, Kysely, PostgresDialect, type RawBuilder, sql } from "kysely";
 import monk from "monk";
 import { Pool } from "pg";
 
@@ -87,7 +81,9 @@ function permRec(
 const INSERT_CHUNK = 500;
 
 /** ON CONFLICT DO UPDATE — set each column from the proposed row (`excluded`). */
-function onConflictExcludedAll(exampleRow: Record<string, unknown>): Record<string, RawBuilder<unknown>> {
+function onConflictExcludedAll(
+	exampleRow: Record<string, unknown>,
+): Record<string, RawBuilder<unknown>> {
 	const toSet: Record<string, RawBuilder<unknown>> = {};
 
 	for (const key of Object.keys(exampleRow)) {
@@ -97,7 +93,9 @@ function onConflictExcludedAll(exampleRow: Record<string, unknown>): Record<stri
 	return toSet;
 }
 
-async function batchUpsertPrivApiClient(rows: ReadonlyArray<Insertable<Database["priv_api_client"]>>): Promise<void> {
+async function batchUpsertPrivApiClient(
+	rows: ReadonlyArray<Insertable<Database["priv_api_client"]>>,
+): Promise<void> {
 	if (rows.length === 0) {
 		return;
 	}
@@ -110,13 +108,17 @@ async function batchUpsertPrivApiClient(rows: ReadonlyArray<Insertable<Database[
 			.insertInto("priv_api_client")
 			.values(chunk as never)
 			.onConflict((oc) =>
-				oc.column("client_id").doUpdateSet(onConflictExcludedAll(chunk[0] as Record<string, unknown>)),
+				oc
+					.column("client_id")
+					.doUpdateSet(onConflictExcludedAll(chunk[0] as Record<string, unknown>)),
 			)
 			.execute();
 	}
 }
 
-async function batchUpsertPrivApiToken(rows: ReadonlyArray<Insertable<Database["priv_api_token"]>>): Promise<void> {
+async function batchUpsertPrivApiToken(
+	rows: ReadonlyArray<Insertable<Database["priv_api_token"]>>,
+): Promise<void> {
 	if (rows.length === 0) {
 		return;
 	}
@@ -128,7 +130,9 @@ async function batchUpsertPrivApiToken(rows: ReadonlyArray<Insertable<Database["
 			.insertInto("priv_api_token")
 			.values(chunk as never)
 			.onConflict((oc) =>
-				oc.column("token").doUpdateSet(onConflictExcludedAll(chunk[0] as Record<string, unknown>)),
+				oc
+					.column("token")
+					.doUpdateSet(onConflictExcludedAll(chunk[0] as Record<string, unknown>)),
 			)
 			.execute();
 	}
@@ -176,9 +180,7 @@ function mapApiClientRow(c: MongoApiClientsCollectionDocument): NewPrivApiClient
 
 async function main(): Promise<void> {
 	console.log("[reimport-priv-api] fetching api-clients from Mongo...");
-	const clients = await mongoDB
-		.get<MongoApiClientsCollectionDocument>("api-clients")
-		.find({});
+	const clients = await mongoDB.get<MongoApiClientsCollectionDocument>("api-clients").find({});
 
 	const clientRows: Array<NewPrivApiClient> = clients.map((c) => mapApiClientRow(c));
 
@@ -189,9 +191,7 @@ async function main(): Promise<void> {
 	await batchUpsertPrivApiClient(clientRows);
 
 	console.log("[reimport-priv-api] fetching api-tokens from Mongo...");
-	const apiTokens = await mongoDB
-		.get<MongoApiTokensCollectionDocument>("api-tokens")
-		.find({});
+	const apiTokens = await mongoDB.get<MongoApiTokensCollectionDocument>("api-tokens").find({});
 
 	const existingClientIds = new Set(
 		(await pg.selectFrom("priv_api_client").select("client_id").execute()).map(

@@ -303,7 +303,7 @@ describe("ConverterIRFervidex", () => {
 			log,
 		);
 
-		const scoreID = CreateScoreID("iidx-sp", userId, dryScore, chart.chartID);
+		const scoreID = CreateScoreID("iidx-sp", userId, dryScore, chart.legacyChartID);
 		const hydrated = HydrateScore(userId, dryScore, chart, song, scoreID, log);
 		const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", hydrated.scoreData);
 		const now = new Date().toISOString();

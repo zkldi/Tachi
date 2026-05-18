@@ -353,6 +353,8 @@ export interface ChartTierlistInfo {
 export interface ChartDocument<TGame extends V3Game = V3Game> {
 	game: TGame;
 	chartID: string;
+	/** Mongo-era 40-character chart identifier; used for score deduplication. */
+	legacyChartID: string;
 	level: string;
 	levelNum: number;
 	isPrimary: boolean;

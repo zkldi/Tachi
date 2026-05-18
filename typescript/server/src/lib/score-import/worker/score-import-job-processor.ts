@@ -63,6 +63,7 @@ export async function processScoreImportJobFromPayload(
 				userIntent: data.userIntent,
 				"!parserArguments": data.parserArguments as Array<unknown>,
 				skipStartTracking: true,
+				omitImportTrackerFailureOn409: true,
 			},
 		);
 		const importDocument = await LoadImportDocumentById(data.importID);
@@ -78,7 +79,12 @@ export async function processScoreImportJobFromPayload(
 				{ err: e, importID: data.importID },
 				`Import ${data.importID} hit ExpectedErr (user fault): ${e.reason}`,
 			);
-			return { success: false, statusCode: e.code, description: e.reason };
+			return {
+				success: false,
+				importID: data.importID,
+				statusCode: e.code,
+				description: e.reason,
+			};
 		}
 		log.error(e, `Import ${data.importID} failed unexpectedly.`);
 		throw e;

@@ -16,6 +16,7 @@ import { SELECT_SONG_DOCUMENT } from "./song";
 
 export const SELECT_CHART = [
 	"chart.id as chart_id",
+	"chart.legacy_id as chart_legacy_id",
 	"chart.game as chart_game",
 	"chart.level as chart_level",
 	"chart.level_num as chart_level_num",
@@ -33,6 +34,7 @@ export function ToChartDocument(row: ChartRow): ChartDocument {
 	return {
 		game: row.chart_game,
 		chartID: row.chart_id,
+		legacyChartID: row.chart_legacy_id,
 		song: {
 			altTitles: row.song_alt_titles,
 			artist: row.song_artist,
