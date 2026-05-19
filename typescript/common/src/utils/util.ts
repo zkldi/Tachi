@@ -246,28 +246,6 @@ export function FmtPercent(v: number, dp = 2) {
 }
 
 /**
- * Formats a number into "★★★☆☆"
- */
-export function FmtStars(num: number) {
-	if (num > 5) {
-		return "★★★★★(虹)";
-	}
-
-	return "★".repeat(num) + "☆".repeat(5 - num);
-}
-
-/**
- * Formats a number into "★★★"
- */
-export function FmtStarsCompact(num: number) {
-	if (num > 5) {
-		return "★★★★★(虹)";
-	}
-
-	return "★".repeat(num);
-}
-
-/**
  * Turns a number of 12834 into "12834" instead of "12,834".
  */
 export function FmtScoreNoCommas(v: number) {

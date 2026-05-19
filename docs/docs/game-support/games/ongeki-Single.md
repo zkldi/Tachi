@@ -23,7 +23,7 @@ For more information on what metrics are and how they work, see [TODO]!
 | Metric Name | Type | Description |
 | :: | :: | :: |
 | `grade` | "D", "C", "B", "BB", "BBB", "A", "AA", "AAA", "S", "SS", "SSS", "SSS+" | The grade this score was. |
-| `platinumStars` | Integer | The number of platinum stars of this score |
+| `platinumStars` | The number of platinum stars of this score |
 
 ### Optional Metrics
 

@@ -771,8 +771,9 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 		sessionImportantScoreCount: 45,
 		enumIcons: {
 			grade: "sort-alpha-up",
-			noteLamp: "lightbulb",
-			bellLamp: "lightbulb",
+			noteLamp: "sliders-h",
+			bellLamp: "bell",
+			platinumStars: "star-half-alt",
 		},
 		classColours: {
 			colour: {
@@ -829,6 +830,15 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				NONE: COLOUR_SET.gray,
 				"FULL BELL": COLOUR_SET.gold,
 			},
+			platinumStars: {
+				"☆☆☆☆☆": COLOUR_SET.gray,
+				"★☆☆☆☆": COLOUR_SET.red,
+				"★★☆☆☆": COLOUR_SET.orange,
+				"★★★☆☆": COLOUR_SET.blue,
+				"★★★★☆": COLOUR_SET.green,
+				"★★★★★": COLOUR_SET.gold,
+				"★★★★★(虹)": COLOUR_SET.white,
+			},
 		},
 		difficultyColours: {
 			BASIC: COLOUR_SET.green,
@@ -865,7 +875,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 					if (x.__related?.chart?.data !== undefined) {
 						return x.scoreData.platinumScore / x.__related.chart.data.maxPlatScore;
 					}
-					return x.scoreData.platinumStars * 100000 + x.scoreData.platinumScore;
+					return x.scoreData.platinumScore;
 				}),
 			],
 			["Judgements", "Notes", NumericSOV((x) => x.scoreData.judgements.cbreak ?? 0)],

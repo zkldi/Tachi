@@ -38566,6 +38566,17 @@
 		"where": "chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
 	},
 	{
+		"game": "ongeki",
+		"id": "F19e3d220686f96783f5",
+		"inactive": false,
+		"legacyFolderID": "Fedec341efe7df3a2c72661076f8d88ba8998871a22194030dc2ab53f36a401ce",
+		"searchTerms": [],
+		"slug": "refreshomni-variety",
+		"title": "VARIETY (Re:Fresh Omnimix)",
+		"versionFilter": ["refreshOmni"],
+		"where": "(song.data->>'genre')::text = 'VARIETY' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'LUNATIC')"
+	},
+	{
 		"game": "pms-controller",
 		"id": "F19d35f0cf2a77535243",
 		"inactive": false,

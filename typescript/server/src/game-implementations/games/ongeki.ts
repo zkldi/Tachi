@@ -5,14 +5,7 @@ import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { ONGEKIRating } from "rg-stats";
-import {
-	type ChartDocument,
-	FmtNum,
-	FmtStars,
-	FmtStarsCompact,
-	GetGrade,
-	ONGEKI_GBOUNDARIES,
-} from "tachi-common";
+import { type ChartDocument, FmtNum, GetGrade, ONGEKI_GBOUNDARIES } from "tachi-common";
 
 import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
 
@@ -24,7 +17,25 @@ const isUnranked = (chart: ChartDocument<"ongeki">) => {
 const starCount = (platinumScore: number, maxPlatinumScore: number) => {
 	const pct = Math.floor((platinumScore / maxPlatinumScore) * 100);
 
-	return Math.max(0, Math.min(pct, 99) - 93);
+	const v = Math.max(0, Math.min(pct, 99) - 93);
+	switch (v) {
+		case 0:
+			return "☆☆☆☆☆";
+		case 1:
+			return "★☆☆☆☆";
+		case 2:
+			return "★★☆☆☆";
+		case 3:
+			return "★★★☆☆";
+		case 4:
+			return "★★★★☆";
+		case 5:
+			return "★★★★★";
+		case 6:
+			return "★★★★★(虹)";
+		default:
+			throw new Error("Invalid star count");
+	}
 };
 
 export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
@@ -76,10 +87,15 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 			scoreRating: ONGEKIRating.calculateRefresh(
 				chart.levelNum,
 				scoreData.score,
-				scoreData.score === 1010000 ? "ALL BREAK+" : scoreData.noteLamp,
+				scoreData.noteLamp,
 				scoreData.bellLamp === "FULL BELL",
 			),
-			starRating: ONGEKIRating.calculatePlatinum(chart.levelNum, derivedData.platinumStars),
+			starRating: ONGEKIRating.calculatePlatinum(
+				chart.levelNum,
+				derivedData.platinumStars
+					.split("")
+					.reduce((a: number, v: string) => a + (v === "★" ? 1 : 0), 0),
+			),
 		};
 	},
 	pbRankingValues: (pb) => ({
@@ -146,7 +162,6 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 	goalCriteriaFormatters: {
 		score: GoalFmtScore,
 		platinumScore: (val: number) => `Get ${val.toLocaleString("en-GB")} Platinum Score on`,
-		platinumStars: (val: number) => `Get ${FmtStars(val)} on`,
 	},
 	goalProgressFormatters: {
 		grade: (pb, gradeIndex) =>
@@ -160,12 +175,10 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 		bellLamp: (pb) => pb.scoreData.bellLamp,
 		score: (pb) => FmtNum(pb.scoreData.score),
 		platinumScore: (pb) => FmtNum(pb.scoreData.platinumScore),
-		platinumStars: (pb) => FmtStarsCompact(pb.scoreData.platinumStars),
 	},
 	goalOutOfFormatters: {
 		score: GoalOutOfFmtScore,
 		platinumScore: GoalOutOfFmtScore,
-		platinumStars: () => FmtStarsCompact(6),
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

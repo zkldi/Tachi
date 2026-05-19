@@ -3,7 +3,7 @@ import { z } from "zod";
 
 import type { INTERNAL_GAME_CONFIG, INTERNAL_GAME_GROUP_CONFIG } from "../../types/internals";
 
-import { FmtNum, FmtStars } from "../../utils/util";
+import { FmtNum } from "../../utils/util";
 import { ClassValue, ToDecimalPlaces } from "../config-utils";
 import { FAST_SLOW_MAXCOMBO } from "./_common";
 
@@ -82,9 +82,9 @@ export const GAME_ONGEKI_CONF = {
 			description: "The grade this score was.",
 		},
 		platinumStars: {
-			type: "INTEGER",
-			validate: p.isBetween(0, 6),
-			formatter: FmtStars,
+			type: "ENUM",
+			values: ["☆☆☆☆☆", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", "★★★★★(虹)"],
+			minimumRelevantValue: "★☆☆☆☆",
 			description: "The number of platinum stars of this score",
 		},
 	},

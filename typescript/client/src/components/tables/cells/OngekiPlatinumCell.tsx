@@ -1,5 +1,5 @@
 import React from "react";
-import { FmtStars, FmtStarsCompact, type integer } from "tachi-common";
+import { type integer } from "tachi-common";
 
 export function StarField({
 	stars: stars,
@@ -8,8 +8,8 @@ export function StarField({
 	compact: boolean;
 	stars: integer;
 }) {
-	if (stars < 6) {
-		return <>{compact ? FmtStarsCompact(stars) : FmtStars(stars)}</>;
+	if (stars !== "★★★★★(虹)") {
+		return <>{compact ? stars.replace(/☆/gu, "") : stars}</>;
 	}
 	return (
 		<span

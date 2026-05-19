@@ -30,7 +30,7 @@ const scoreData: ScoreData<"ongeki"> = {
 	bellLamp: "FULL BELL",
 	score: 1_001_500,
 	platinumScore: 970,
-	platinumStars: 4,
+	platinumStars: "☆☆☆☆☆",
 	grade: "SSS",
 	judgements: {},
 	optional: { enumIndexes: {}, bellCount: 100 },
