@@ -63,6 +63,7 @@ const ARCAEA_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["classColo
 		PHASE_9: bgc("indigo", "var(--bs-light)"),
 		PHASE_10: bgc("firebrick", "var(--bs-light)"),
 		PHASE_11: bgc("darkred", "var(--bs-light)"),
+		PHASE_12: bgc("blueviolet", "var(--bs-light)"),
 	},
 };
 

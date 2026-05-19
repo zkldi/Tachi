@@ -71,7 +71,7 @@ The following judgements are defined:
 | Name | Type | Values |
 | :: | :: | :: |
 | `badge` | DERIVED | BLUE, GREEN, ASH_PURPLE, PURPLE, RED, ONE_STAR, TWO_STARS, THREE_STARS
-| `courseBanner` | PROVIDED | PHASE_1, PHASE_2, PHASE_3, PHASE_4, PHASE_5, PHASE_6, PHASE_7, PHASE_8, PHASE_9, PHASE_10, PHASE_11
+| `courseBanner` | PROVIDED | PHASE_1, PHASE_2, PHASE_3, PHASE_4, PHASE_5, PHASE_6, PHASE_7, PHASE_8, PHASE_9, PHASE_10, PHASE_11, PHASE_12
 
 ## Versions
 

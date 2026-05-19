@@ -41,6 +41,7 @@ const ArcaeaClasses = [
 	ClassValue("PHASE_9", "Phase 9", "Ego's Demise"),
 	ClassValue("PHASE_10", "Phase 10", "A Torrent of Light and Conflict"),
 	ClassValue("PHASE_11", "Phase 11", "Radiant Genesis"),
+	ClassValue("PHASE_12", "Phase 12", "Irruption of New Color"),
 ];
 
 export const GAME_ARCAEA_CONF = {
