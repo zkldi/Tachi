@@ -20,7 +20,6 @@ import {
 	type FolderDocument,
 	type GamesForGroup,
 	type integer,
-	LEGACY_GameToPlaytypeFn,
 	type SongDocument,
 	type TableDocument,
 } from "tachi-common";
@@ -128,7 +127,7 @@ export type TachiBMSTable = {
 
 /**
  * Get an "absolute URL" for this bms table. I.E.
- * https://example.com/api/v1/games/bms/7K/tables/exampleTable/header.json
+ * https://example.com/api/v1/games/bms-7k/tables/exampleTable/header.json
  */
 export function BMSTableToAbsoluteURL(
 	bmsTable: TachiBMSTable,
@@ -136,8 +135,6 @@ export function BMSTableToAbsoluteURL(
 	headerOrBody: "body" | "header",
 	userID: number | null,
 ) {
-	const playtype = LEGACY_GameToPlaytypeFn(game);
-
 	return (
 		ServerConfig.OUR_URL +
 		path.join(
@@ -147,7 +144,7 @@ export function BMSTableToAbsoluteURL(
 			// (otherwise, don't do anything)
 			bmsTable.forSpecificUser === true ? `users/${userID}` : "",
 
-			`games/bms/${playtype}/custom-tables/`,
+			`games/${game}/custom-tables/`,
 			bmsTable.urlName,
 			`${headerOrBody}.json`,
 		)
