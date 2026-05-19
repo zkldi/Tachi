@@ -13,7 +13,6 @@ export const GAME_GROUP_ARCAEA_CONF = {
 	// Potential future controller playtype support?
 	playtypes: ["Touch"],
 	songData: z.strictObject({
-		displayVersion: z.string(),
 		songPack: z.string(),
 	}),
 } as const satisfies INTERNAL_GAME_GROUP_CONFIG;
@@ -134,6 +133,7 @@ export const GAME_ARCAEA_CONF = {
 
 	chartData: z.strictObject({
 		inGameStrID: z.string(),
+		displayVersion: z.string(),
 		notecount: zodNonNegativeInt,
 	}),
 

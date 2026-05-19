@@ -206,7 +206,6 @@ for (const entry of data.songs) {
 			id: CreateSongID(),
 			legacySongID: getNewSongID(),
 			data: {
-				displayVersion: entry.version,
 				songPack: convertPackName(packsByID, entry.set),
 			},
 		};
@@ -259,7 +258,6 @@ for (const entry of data.songs) {
 				id: CreateSongID(),
 				legacySongID: getNewSongID(),
 				data: {
-					displayVersion: chart.version ?? entry.version,
 					songPack: convertPackName(packsByID, entry.set),
 				},
 			};
@@ -290,6 +288,7 @@ for (const entry of data.songs) {
 			versions: ["mobile"],
 			data: {
 				inGameStrID: inGameID,
+				displayVersion: chart.version ?? entry.version,
 				// Filled in later, but not by this script
 				notecount: 0,
 			},
