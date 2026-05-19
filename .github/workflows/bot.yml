@@ -7,6 +7,22 @@ on:
     paths:
       - "typescript/bot/**"
       - "typescript/common/**"
+      - "typescript/db/**"
+      - "typescript/bliss/**"
+      - "typescript/db-migration-engine/**"
+      - "db/migrations/**"
+      - "docker/Dockerfile.bot"
+      - ".github/workflows/bot.yml"
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "typescript/bot/**"
+      - "typescript/common/**"
+      - "typescript/db/**"
+      - "typescript/bliss/**"
+      - "typescript/db-migration-engine/**"
+      - "db/migrations/**"
       - "docker/Dockerfile.bot"
       - ".github/workflows/bot.yml"
   workflow_dispatch:
@@ -14,9 +30,58 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: "bot-${{ github.ref }}-${{ github.workflow }}"
+  cancel-in-progress: false
+
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zkldi/tachi-dev:main
+      options: --user root
+    env:
+      NODE_ENV: "test"
+    services:
+      tachi-postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: tachi
+          POSTGRES_PASSWORD: tachi
+          POSTGRES_DB: postgres
+        options: >-
+          --health-cmd "pg_isready -U tachi"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Link workspace to /tachi
+        # tachidb and just recipes assume the repo lives at /tachi.
+        run: rm -rf /tachi && ln -sf "$GITHUB_WORKSPACE" /tachi
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Lint code
+        run: bun run --filter tachi-bot lint
+
+      - name: Typecheck code
+        run: bun run --filter tachi-bot typecheck
+
+      - name: Run tests
+        run: bun run --filter tachi-bot test
+        env:
+          NODE_ENV: "test"
+
   docker-push:
     runs-on: ubuntu-latest
+    needs: [test]
+    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
     permissions:
       contents: read
       packages: write
@@ -37,7 +102,6 @@ jobs:
           echo "image_tag=${d}-${short}" >> "$GITHUB_OUTPUT"
 
       - name: Log in to GHCR
-
         uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
         with:
           registry: ghcr.io
@@ -73,7 +137,7 @@ jobs:
   dispatch-deploy:
     # See server.yml for rationale — deploy logs live in the private tachi-deploy repo.
     runs-on: ubuntu-latest
-    needs: [docker-push]
+    needs: [test, docker-push]
     if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     strategy:
       fail-fast: false

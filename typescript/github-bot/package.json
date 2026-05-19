@@ -8,6 +8,8 @@
 	"scripts": {
 		"build": "tsgo -b",
 		"start": "tsgo -b && node js/main.js",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
 		"typecheck": "tsgo --noEmit",
 		"bench": "node -e \"process.exit(0)\""
 	},
