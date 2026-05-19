@@ -5,7 +5,7 @@ import {
 	HandleBMSTableHTMLRequest,
 	type TachiBMSTable,
 } from "#lib/game-specific/custom-bms-tables";
-import { withGame } from "#lib/router/middleware";
+import { withGame, withGameAndReqData } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { FindBMSSieglindeRatedCharts } from "#utils/queries/charts";
@@ -82,7 +82,7 @@ API_V1_ROUTER.add("GET /games/:game/custom-tables", withGame, ({ ctx }) => {
  */
 API_V1_ROUTER.add(
 	"GET /games/:game/custom-tables/:tableUrlName",
-	withGame,
+	withGameAndReqData,
 	({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 
@@ -103,7 +103,7 @@ API_V1_ROUTER.add(
  */
 API_V1_ROUTER.add(
 	"GET /games/:game/custom-tables/:tableUrlName/header.json",
-	withGame,
+	withGameAndReqData,
 	async ({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 
@@ -124,7 +124,7 @@ API_V1_ROUTER.add(
  */
 API_V1_ROUTER.add(
 	"GET /games/:game/custom-tables/:tableUrlName/body.json",
-	withGame,
+	withGameAndReqData,
 	async ({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 
