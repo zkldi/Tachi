@@ -1,4 +1,3 @@
-import type { ScoreImportJobData } from "#lib/score-import/worker/types";
 import type { FileUploadImportTypes } from "tachi-common";
 
 import { SIXTEEN_MEGABTYES } from "#lib/constants/filesize";
@@ -6,7 +5,6 @@ import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { log } from "#lib/log/log";
 import { withPermission } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { ExpressWrappedScoreImportMain } from "#lib/score-import/framework/express-wrapper";
 import {
 	deleteOrphanScoreForUser,
 	DeorphanScores,
@@ -64,40 +62,26 @@ API_V1_ROUTER.rawAdd(
 
 		const userIntent = req.header("X-User-Intent")?.toLowerCase() === "true";
 
-		if (ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER) {
-			const importID = Random20Hex();
+		const importID = Random20Hex();
 
-			const job: ScoreImportJobData<FileUploadImportTypes> = {
-				importID,
-				userID: req[SYMBOL_TACHI_API_AUTH].userID!,
-				userIntent,
-				importType,
-				parserArguments: [req.file, req.safeBody],
-			};
-
-			// Fire the score import, but make no guarantees about its state.
-			void EnqueueScoreImportJob(job);
-
-			return res.status(202).json({
-				success: true,
-				description:
-					"Import loaded into queue. You can poll the provided URL for information on when its complete.",
-				body: {
-					url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
-					importID,
-				},
-			});
-		}
-
-		// Fire the score import and wait for it to finish!
-		const importResponse = await ExpressWrappedScoreImportMain<FileUploadImportTypes>(
-			req[SYMBOL_TACHI_API_AUTH].userID!,
+		// Fire the score import, but make no guarantees about its state.
+		void EnqueueScoreImportJob({
+			importID,
+			userID: req[SYMBOL_TACHI_API_AUTH].userID!,
 			userIntent,
 			importType,
-			[req.file, req.safeBody],
-		);
+			parserArguments: [req.file, req.safeBody],
+		});
 
-		return res.status(importResponse.statusCode).json(importResponse.body);
+		return res.status(202).json({
+			success: true,
+			description:
+				"Import loaded into queue. You can poll the provided URL for information on when its complete.",
+			body: {
+				url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
+				importID,
+			},
+		});
 	},
 );
 
@@ -113,39 +97,22 @@ API_V1_ROUTER.add("POST /import/from-api", async ({ input, req }) => {
 	const userID = req[SYMBOL_TACHI_API_AUTH].userID!;
 	const userIntent = req.header("X-User-Intent")?.toLowerCase() === "true";
 
-	if (ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER) {
-		void EnqueueScoreImportJob({
-			importID,
-			importType,
-			parserArguments: [userID],
-			userID,
-			userIntent,
-		});
-
-		return {
-			$status: 202,
-			body: {
-				importID,
-				url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
-			},
-			description:
-				"Import loaded into queue. You can poll the provided URL for information on when its complete.",
-			success: true,
-		};
-	}
-
-	const importResponse = await ExpressWrappedScoreImportMain(
+	void EnqueueScoreImportJob({
+		importID,
+		importType,
+		parserArguments: [userID],
 		userID,
 		userIntent,
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		importType as any,
-		[userID],
-	);
+	});
 
 	return {
-		$status: importResponse.statusCode,
-		body: importResponse.body,
-		description: "Import complete.",
+		$status: 202,
+		body: {
+			importID,
+			url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
+		},
+		description:
+			"Import loaded into queue. You can poll the provided URL for information on when its complete.",
 		success: true,
 	};
 });

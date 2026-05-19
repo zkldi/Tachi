@@ -192,24 +192,6 @@ The amount of OAuth2Clients one user can create at any one time. Defaults to 15.
 
 If true, all `OPTIONS` requests to the server will return `200`, no matter what. This is a hack used for development CORS.
 
-### USE_EXTERNAL_SCORE_IMPORT_WORKER
-
-- Type: Boolean
-- Default: false
-
-If true, an external worker process will be used to handle score imports.
-
-!!! warning
-	You have to run this worker yourself. `pnpm build && pnpm start-score-worker` will
-	run the external worker process.
-
-### EXTERNAL_SCORE_IMPORT_WORKER_CONCURRENCY
-
-- Type: Integer
-- Default: 10
-
-How many score imports one worker should be allowed to work on at a time. This improves parallelisation of score imports.
-
 ### BEATORAJA_QUEUE_SIZE
 
 - Type: Integer

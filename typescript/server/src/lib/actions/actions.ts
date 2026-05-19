@@ -416,12 +416,6 @@ export const ActionSignatures = {
 			userIntent: z.boolean(),
 			"!parserArguments": z.array(z.unknown()),
 			skipStartTracking: z.boolean().optional(),
-			/**
-			 * When true (worker-only), a 409 "ongoing import" error does NOT call
-			 * MarkImportAsFailed, allowing the job to be requeued for retry without
-			 * the API poller seeing an immediate failure.
-			 */
-			omitImportTrackerFailureOn409: z.boolean().optional(),
 		}),
 		output: z.object({
 			importID: z.string(),

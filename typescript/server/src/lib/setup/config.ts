@@ -56,9 +56,13 @@ const configSchema = z.object({
 	RATE_LIMIT: z.number().int().positive().default(500),
 	OAUTH_CLIENT_CAP: z.number().int().positive().default(15),
 	OPTIONS_ALWAYS_SUCCEEDS: z.boolean().optional(),
-	USE_EXTERNAL_SCORE_IMPORT_WORKER: z.boolean().default(false),
-	EXTERNAL_SCORE_IMPORT_WORKER_CONCURRENCY: z.number().int().positive().optional(),
 	ALLOW_RUNNING_OFFLINE: z.boolean().optional(),
+	/**
+	 * When true, score import HTTP routes run the import inline (via RunScoreImportOnce) instead of
+	 * enqueuing to the Postgres job queue. This should ONLY be set in test environments where no
+	 * job-queue worker is running. Never set this in production.
+	 */
+	INLINE_SCORE_IMPORT: z.boolean().default(false),
 	/** Dev/stress: when true, score import HTTP routes use an unlimited score-import rate limiter. */
 	DISABLE_SCORE_IMPORT_RATE_LIMIT: z.boolean().default(false),
 	ENABLE_METRICS: z.boolean().default(true),
@@ -424,7 +428,6 @@ const bootstrapInvite = opt("TACHI_INVITE_ADMIN_INITIAL_INVITE_CODE")?.trim() ||
 const seedsCfg = seedsConfig();
 const githubAppCfg = githubAppConfig();
 const clientDev = clientDevServer();
-const extWorkerConc = opt("TACHI_EXTERNAL_SCORE_IMPORT_WORKER_CONCURRENCY");
 
 const configFromEnv: unknown = {
 	CAPTCHA_SECRET_KEY: req("TACHI_CAPTCHA_SECRET_KEY"),
@@ -448,12 +451,8 @@ const configFromEnv: unknown = {
 	RATE_LIMIT: parseIntEnv("TACHI_RATE_LIMIT", 500),
 	OAUTH_CLIENT_CAP: parseIntEnv("TACHI_OAUTH_CLIENT_CAP", 15),
 	OPTIONS_ALWAYS_SUCCEEDS: parseBool("TACHI_OPTIONS_ALWAYS_SUCCEEDS"),
-	USE_EXTERNAL_SCORE_IMPORT_WORKER: parseBool("TACHI_USE_EXTERNAL_SCORE_IMPORT_WORKER", false),
-	EXTERNAL_SCORE_IMPORT_WORKER_CONCURRENCY: parseIntEnv(
-		"TACHI_EXTERNAL_SCORE_IMPORT_WORKER_CONCURRENCY",
-		10,
-	),
 	ALLOW_RUNNING_OFFLINE: parseBool("TACHI_ALLOW_RUNNING_OFFLINE"),
+	INLINE_SCORE_IMPORT: parseBool("TACHI_INLINE_SCORE_IMPORT", false) ?? false,
 	DISABLE_SCORE_IMPORT_RATE_LIMIT:
 		parseBool("TACHI_DISABLE_SCORE_IMPORT_RATE_LIMIT", false) ?? false,
 	ENABLE_METRICS: parseBool("TACHI_ENABLE_METRICS", true) ?? true,

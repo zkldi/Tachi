@@ -17,7 +17,6 @@ import {
 import { log } from "#lib/log/log";
 import { withImport } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { ServerConfig, TachiConfig } from "#lib/setup/config";
 import DB from "#services/pg/db";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import { GetUsersWithIDs, GetUserWithID } from "#utils/user";
@@ -166,13 +165,6 @@ async function findJobQueueForImport(importID: string) {
  * @name GET /api/v1/imports/:importID/poll-status
  */
 API_V1_ROUTER.add("GET /imports/:importID/poll-status", async ({ params }) => {
-	if (!ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER) {
-		throw new ExpectedErr(
-			501,
-			`${TachiConfig.NAME} does not use an external score import worker. Polling imports is not possible.`,
-		);
-	}
-
 	const importRow = await DB.selectFrom("import")
 		.select(["import.id", "import.status"])
 		.where("import.id", "=", params.importID)
