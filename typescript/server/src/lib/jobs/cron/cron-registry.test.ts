@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 
 import {
+	type CronTaskDef,
 	DEV_LOCAL_CRON_TASK_IDS,
 	filterCronTasksForEnvironment,
-	type CronTaskDef,
 } from "./cron-registry";
 
 const sampleDefs: Array<CronTaskDef> = [
