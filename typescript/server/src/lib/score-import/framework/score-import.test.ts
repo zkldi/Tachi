@@ -1,3 +1,5 @@
+import type { ScoreImportJobData } from "#lib/score-import/worker/types";
+
 import { seedUser } from "#actions/test-utils/api-tokens";
 import { CDNRetrieve } from "#lib/cdn/cdn";
 import { LoadImportDocumentById } from "#lib/db-formats/import-document";
@@ -90,10 +92,10 @@ describe("RunScoreImportOnce (ported from score-import.oldtest.ts)", () => {
 	it.skipIf(!process.env.TACHI_CDN_SAVE_LOCATION_BUCKET)(
 		"stores import-input on CDN when TACHI_CDN_SAVE_LOCATION_BUCKET is set",
 		async () => {
-			const jobData = {
+			const jobData: ScoreImportJobData<"ir/direct-manual"> = {
 				importID: "mockImportID_cdn",
-				importType: "ir/direct-manual" as const,
-				parserArguments: [FakeSmallBatchManual, false] as const,
+				importType: "ir/direct-manual",
+				parserArguments: [FakeSmallBatchManual, false],
 				userID: 1,
 				userIntent: true,
 			};
