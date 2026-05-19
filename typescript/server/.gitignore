@@ -1,6 +1,7 @@
 # Test stuffs
 .setup_env
 failed-tests.txt
+.vite-cache
 
 # Error Files
 scripts/validate-database-errs/*

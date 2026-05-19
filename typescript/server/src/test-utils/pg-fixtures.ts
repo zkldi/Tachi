@@ -3,6 +3,23 @@ import DB from "#services/pg/db";
 
 let minimalIidxChartCounter = 0;
 
+// `bcrypt.hash` at 12 rounds is ~250 ms - and the same handful of plaintexts
+// (`"password123"`, the per-file constants used by `change-password.test.ts`
+// et al.) gets hashed dozens of times per worker. The hash is a pure function
+// of plaintext + rounds (the salt varies, but tests don't care which salt as
+// long as `PasswordCompare(plaintext, hash)` round-trips), so we can memoize
+// here without changing any observable behaviour.
+const hashedPasswordCache = new Map<string, Promise<string>>();
+function cachedHashPassword(plaintext: string): Promise<string> {
+	const cached = hashedPasswordCache.get(plaintext);
+	if (cached !== undefined) {
+		return cached;
+	}
+	const p = HashPassword(plaintext);
+	hashedPasswordCache.set(plaintext, p);
+	return p;
+}
+
 /**
  * Inserts a minimal `song` + `chart` row for `iidx` / `SP` (`game` = `iidx-sp`) so
  * goal/chart validation (`GetChartById`) succeeds in tests.
@@ -86,7 +103,7 @@ export async function seedUser(opts?: SeedUserOpts) {
 	const userId = Number(id);
 
 	if (opts?.withCredential) {
-		const hashedPassword = await HashPassword(password);
+		const hashedPassword = await cachedHashPassword(password);
 
 		await DB.insertInto("priv_account_credential")
 			.values({ user_id: userId, email, password: hashedPassword })

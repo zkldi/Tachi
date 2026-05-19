@@ -1,4 +1,8 @@
 POSTGRES_URL := "postgresql://tachi:tachi@tachi-postgres"
+# Test Postgres lives on tmpfs with durability disabled (docker-compose-dev.yml,
+# `tachi-postgres-test` service). Defaults to the dev Postgres so tests still run
+# in environments without the dedicated -test service; override via env var.
+POSTGRES_TEST_URL := env_var_or_default("POSTGRES_TEST_URL", "postgresql://tachi:tachi@tachi-postgres")
 DEFAULT_DB := "tachi_dev"
 
 # Open a psql shell against the local dev Postgres instance.

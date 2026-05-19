@@ -47,12 +47,10 @@ autofix:
 fmt:
 	bun biome format --write
 	bun prettier --write --list-different .
-	# cd deploy/infra && tofu fmt -diff
 
 fmt-check:
 	bun biome format
 	bun prettier --check .
-	# cd deploy/infra && tofu fmt --check -diff
 
 test FILTER="*":
 	#!/bin/bash
@@ -68,6 +66,12 @@ test-typescript FILTER="*":
 	#!/bin/bash
 	set -euo pipefail
 
+	# `tachi-postgres-test` (tmpfs + fsync=off, see docker-compose-dev.yml) is the
+	# fast path; falls back to the dev PG if the dedicated service isn't running.
+	export POSTGRES_TEST_HOST="${POSTGRES_TEST_HOST:-tachi-postgres-test}"
+	# Keep POSTGRES_TEST_URL in sync so the `*-db-test-template-reset` recipes
+	# (called from vitest.globalSetup.ts) hit the same host the workers will.
+	export POSTGRES_TEST_URL="${POSTGRES_TEST_URL:-postgresql://tachi:tachi@${POSTGRES_TEST_HOST}}"
 	bun run --elide-lines=0 --sequential --filter '{{FILTER}}' test -- --reporter=default --reporter=junit --outputFile.junit=test-results/junit.xml
 
 # Summarize Vitest v8 coverage across workspaces (see typescript/coverage-tools).
@@ -83,20 +87,24 @@ test-parity suite="":
 
 # Create (or recreate) the bot test template database with all migrations applied.
 # Workers clone from this template rather than re-running migrations each time.
+# Targets the dedicated tmpfs `tachi-postgres-test` server (override via
+# POSTGRES_TEST_URL).
 bot-db-test-template-reset:
 	#!/bin/bash
 	set -euo pipefail
-	export POSTGRES_URL="{{POSTGRES_URL}}/tachi_bot_test_template"
+	export POSTGRES_URL="{{POSTGRES_TEST_URL}}/tachi_bot_test_template"
 	tachidb database drop
 	tachidb database create
 	tachidb migrate run
 
 # Create (or recreate) the server test template database with all migrations applied.
 # Workers clone from this template rather than re-running migrations each time.
+# Targets the dedicated tmpfs `tachi-postgres-test` server (override via
+# POSTGRES_TEST_URL).
 server-db-test-template-reset:
 	#!/bin/bash
 	set -euo pipefail
-	export POSTGRES_URL="{{POSTGRES_URL}}/tachi_server_test_template"
+	export POSTGRES_URL="{{POSTGRES_TEST_URL}}/tachi_server_test_template"
 	tachidb database drop
 	tachidb database create
 	tachidb migrate run

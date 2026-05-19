@@ -24,7 +24,7 @@ import { FormatUserDoc, GetUserWithIDGuaranteed } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import { p } from "prudence";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 const ParseMultipartScoredata = CreateMulterSingleUploadMiddleware("scoreData", SIXTEEN_MEGABTYES);
 

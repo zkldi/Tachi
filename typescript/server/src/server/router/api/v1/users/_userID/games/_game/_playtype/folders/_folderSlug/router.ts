@@ -7,7 +7,7 @@ import {
 import { LoadFolderEvolutionPayload } from "#lib/folders/table-evolution";
 import { withSelf, withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetFolderTimelineScores } from "#utils/queries/scores";
 import { UnixMillisecondsToISO8601 } from "#utils/time";

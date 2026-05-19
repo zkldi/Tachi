@@ -7,7 +7,7 @@ import {
 	GetKaiTypeClientCredentials,
 	KaiTypeToBaseURL,
 } from "#lib/score-import/import-types/common/api-kai/utils";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import fetch from "#utils/fetch";
 import { GetKaiAuth } from "#utils/queries/auth";
 import { FormatUserDoc } from "#utils/user";

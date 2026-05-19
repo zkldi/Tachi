@@ -2,7 +2,7 @@ import { ACTION_FollowUser } from "#actions/follow-user";
 import { ACTION_UnfollowUser } from "#actions/unfollow-user";
 import { withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetFollowingForUser } from "#utils/queries/settings";
 import { GetUsersWithIDs } from "#utils/user";
 

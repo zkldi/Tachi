@@ -23,7 +23,7 @@ import { GetRelevantSongsAndCharts } from "#utils/db";
 import { GetUsersWithIDs, GetUserWithID } from "#utils/user";
 import { ExpectedErr } from "bliss";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 // ─── Admin-facing import list ─────────────────────────────────────────────────
 

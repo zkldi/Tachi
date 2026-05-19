@@ -4,7 +4,7 @@ import {
 } from "#lib/db-formats/import-document";
 import { withRequestedUser } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 
 /**
  * Query this user's imports. Returns the 500 most recently-finished imports.

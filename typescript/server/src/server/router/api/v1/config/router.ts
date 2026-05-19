@@ -1,7 +1,7 @@
 import { success } from "#lib/router/typed-router";
 import { ServerConfig, TachiConfig } from "#lib/setup/config";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Returns Tachi Configuration info, such as server name, type, supported games

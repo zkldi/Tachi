@@ -8,7 +8,7 @@ import {
 } from "#lib/game-specific/custom-bms-tables";
 import { withGame, withRequestedUserAndReqData } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { FindBMSChartOnHashInGame } from "#utils/queries/charts";
 import { REQ_GetUser } from "#utils/req-tachi-data";
 import { ExpectedErr } from "bliss";

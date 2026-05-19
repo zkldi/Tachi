@@ -1,8 +1,19 @@
 /**
  * Vitest per-worker setup for parallel test execution.
  *
- * Each worker gets its own isolated Postgres database cloned from the
- * template created in vitest.globalSetup.ts.
+ * Each WORKER (not file) gets its own isolated Postgres database cloned from
+ * the template created in vitest.globalSetup.ts. With `pool: "threads"` and
+ * `isolate: false`, this module evaluates ONCE per worker thread but the
+ * lifecycle callbacks below still fire per test file - that asymmetry is
+ * fundamental to the perf win of `isolate: false`. As a result:
+ *
+ *   - The per-worker DB is created lazily on the first file that needs it.
+ *   - Cleanup (close pool, close mock-api, DROP DATABASE) deliberately does
+ *     NOT happen in `afterAll` - that would kill shared resources mid-worker.
+ *     Worker DBs are swept by vitest.globalSetup.ts's teardown.
+ *   - `beforeEach` still runs per test; it TRUNCATEs whatever the previous
+ *     test dirtied via the trigger-based tracker, gated on whether any app
+ *     code in this worker has actually touched the DB.
  *
  * IMPORTANT: process.env assignments at the top level of this module run
  * before the test file's module graph is resolved, so app code that reads
@@ -14,7 +25,10 @@ import crypto from "node:crypto";
 const WORKER_ID = crypto.randomUUID().slice(0, 8);
 const WORKER_DB_NAME = `tachi_server_test_${WORKER_ID}`;
 
-const POSTGRES_HOST = "tachi-postgres";
+// `tachi-postgres-test` (tmpfs + fsync=off, see docker-compose-dev.yml) is the
+// preferred backend for tests. Fall back to the dev Postgres if the dedicated
+// service isn't running so a freshly-cloned repo still passes tests.
+const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres";
 const POSTGRES_USER = "tachi";
 const POSTGRES_PASS = "tachi";
 
@@ -63,25 +77,6 @@ async function createWorkerDatabase() {
 	}
 }
 
-async function dropWorkerDatabase() {
-	const client = adminClient();
-
-	await client.connect();
-
-	try {
-		// Terminate any open connections first so DROP DATABASE succeeds.
-		await client.query(`
-			SELECT pg_terminate_backend(pid)
-			FROM pg_stat_activity
-			WHERE datname = '${WORKER_DB_NAME}'
-		`);
-
-		await client.query(`DROP DATABASE IF EXISTS "${WORKER_DB_NAME}"`);
-	} finally {
-		await client.end();
-	}
-}
-
 async function resetDatabase() {
 	// Lazily import so env vars are definitely set before the pool is created.
 	const { default: db } = await import("#services/pg/db");
@@ -111,8 +106,24 @@ async function resetDatabase() {
 	}
 }
 
-beforeAll(async () => {
+// Per-worker DB creation is lazy: only paid by workers whose tests actually
+// load #services/pg/db. Worth ~20-40 ms per pure-unit file. Test files'
+// top-level imports have already evaluated by the time this beforeAll runs,
+// so `__tachi_pg_loaded` reliably reflects "this file uses the DB".
+let workerDbCreatedHere = false;
+async function ensureWorkerDatabase() {
+	if (workerDbCreatedHere) {
+		return;
+	}
 	await createWorkerDatabase();
+	workerDbCreatedHere = true;
+}
+
+beforeAll(async () => {
+	const gFlags = globalThis as { __tachi_pg_loaded?: boolean };
+	if (gFlags.__tachi_pg_loaded === true) {
+		await ensureWorkerDatabase();
+	}
 });
 
 beforeEach(async (ctx) => {
@@ -130,51 +141,54 @@ beforeEach(async (ctx) => {
 		return;
 	}
 
-	const tReset0 = performance.now();
-	await resetDatabase();
-	if (TIMING) {
-		const d = performance.now() - tReset0;
-		resetCalls += 1;
-		msResetDatabaseTotal += d;
-		msResetDatabaseMax = Math.max(msResetDatabaseMax, d);
+	// Pure-unit test files (string parsers, math helpers, etc.) never reach for
+	// the DB pool, never import the auth router, never touch the rate limiter.
+	// resetDatabase()'s lazy `await import("#services/pg/db")` was paying a
+	// ~2 s first-time module-eval tax on those files for no benefit. Gate the
+	// whole setup body on `globalThis.__tachi_pg_loaded` (set when db.ts is
+	// imported by app code under test) and `__tachi_pg_used` (set when the
+	// pool actually serves a query). Both are property reads - zero imports
+	// when the file doesn't need them.
+	const g = globalThis as unknown as {
+		__tachi_pg_loaded?: boolean;
+		__tachi_pg_used?: boolean;
+	};
+
+	if (g.__tachi_pg_loaded === true && g.__tachi_pg_used === true) {
+		// Defensive: a test file that loads db.ts only inside an `it()` body
+		// would skip our beforeAll gate, so re-check here.
+		await ensureWorkerDatabase();
+		const tReset0 = performance.now();
+		await resetDatabase();
+		g.__tachi_pg_used = false;
+		if (TIMING) {
+			const d = performance.now() - tReset0;
+			resetCalls += 1;
+			msResetDatabaseTotal += d;
+			msResetDatabaseMax = Math.max(msResetDatabaseMax, d);
+		}
 	}
-	// Login-heavy router tests share the in-memory login rate limiter; reset each
-	// test so AggressiveRateLimit (15 / 10 min) does not 429 and omit Set-Cookie.
-	const tRl0 = performance.now();
-	const { ClearTestingRateLimitCache } = await import("#server/middleware/rate-limiter");
-	ClearTestingRateLimitCache();
-	if (TIMING) {
-		msRateLimitCacheTotal += performance.now() - tRl0;
+
+	// Login-heavy router tests share the in-memory login rate limiter; reset
+	// each test so AggressiveRateLimit (15 / 10 min) does not 429 and omit
+	// Set-Cookie. Skip the import entirely if no app code has ever loaded the
+	// rate limiter in this worker.
+	const gRl = globalThis as unknown as { __tachi_rate_limiter_loaded?: boolean };
+	if (gRl.__tachi_rate_limiter_loaded === true) {
+		const tRl0 = performance.now();
+		const { ClearTestingRateLimitCache } = await import("#server/middleware/rate-limiter");
+		ClearTestingRateLimitCache();
+		if (TIMING) {
+			msRateLimitCacheTotal += performance.now() - tRl0;
+		}
 	}
 });
 
-afterAll(async () => {
-	let msCloseMock = 0;
-	let msClosePg = 0;
-	let msDropDb = 0;
-
-	try {
-		const t0 = performance.now();
-		const { CloseServerConnection } = await import("#test-utils/mock-api");
-		await CloseServerConnection();
-		msCloseMock = performance.now() - t0;
-	} catch {
-		// No mock HTTP server in this worker, or close failed.
-	}
-
-	try {
-		const t0 = performance.now();
-		const { ClosePgConnection } = await import("#services/pg/db");
-		await ClosePgConnection();
-		msClosePg = performance.now() - t0;
-	} catch {
-		// Pool may not have been initialised if no test ran a query.
-	}
-
-	const tDrop0 = performance.now();
-	await dropWorkerDatabase();
-	msDropDb = performance.now() - tDrop0;
-
+// Per-file afterAll is deliberately a no-op with `isolate: false` - closing
+// the pool or stopping the supertest server here would break subsequent
+// files in the same worker. Worker-wide cleanup (DROP DATABASE, pool/server
+// close) is the job of vitest.globalSetup.ts's teardown sweep + process exit.
+afterAll(() => {
 	if (TIMING) {
 		const wallMs = performance.now() - workerWallStart;
 		const avgReset = resetCalls > 0 ? msResetDatabaseTotal / resetCalls : 0;
@@ -187,11 +201,9 @@ afterAll(async () => {
 				`reset_avg_ms=${avgReset.toFixed(1)}`,
 				`reset_max_ms=${msResetDatabaseMax.toFixed(1)}`,
 				`rate_limit_cache_reset_total_ms=${msRateLimitCacheTotal.toFixed(1)}`,
-				`teardown_close_mock_ms=${msCloseMock.toFixed(1)}`,
-				`teardown_close_pg_ms=${msClosePg.toFixed(1)}`,
-				`teardown_drop_db_ms=${msDropDb.toFixed(1)}`,
 				`worker_wall_ms=${wallMs.toFixed(1)}`,
 			].join(" "),
 		);
 	}
 }, 60_000);
+

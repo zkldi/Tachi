@@ -7,7 +7,7 @@ import { GetSongByID } from "#lib/db-formats/song";
 import { log } from "#lib/log/log";
 import { withScore, withScoreOwner } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetUserWithID } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import { GameToGameGroup } from "tachi-common";

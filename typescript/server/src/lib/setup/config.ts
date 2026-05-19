@@ -586,6 +586,29 @@ if (!versionDetail) {
  */
 const PG_POOL_MAX = parseIntEnv("PG_POOL_MAX", 10);
 
+/**
+ * Cost factor for `bcrypt.hash` (and the round-trip cost of `bcrypt.compare`
+ * against any resulting hash). Defaults to 12 - the value the codebase shipped
+ * with - and is enforced as a minimum outside test environments.
+ *
+ * In tests we want bcrypt to be effectively free: the test suite hashes /
+ * verifies dozens of passwords and at 12 rounds bcrypt dominates the auth-
+ * flavoured test budget. Set via TACHI_BCRYPT_SALT_ROUNDS (defaults to the
+ * bcryptjs minimum, 4, when NODE_ENV=test).
+ */
+const BCRYPT_SALT_ROUNDS = parseIntEnv(
+	"TACHI_BCRYPT_SALT_ROUNDS",
+	NODE_ENV === "test" ? 4 : 12,
+);
+
+if (NODE_ENV !== "test" && BCRYPT_SALT_ROUNDS < 12) {
+	log.crit(
+		`TACHI_BCRYPT_SALT_ROUNDS=${BCRYPT_SALT_ROUNDS} but NODE_ENV=${NODE_ENV}. ` +
+			`Refusing to start: rounds below 12 are only acceptable in test environments.`,
+	);
+	process.exit(1);
+}
+
 export const Env = {
 	PORT,
 	REDIS_URL,
@@ -596,4 +619,5 @@ export const Env = {
 	NODE_ENV: NODE_ENV as "dev" | "production" | "staging" | "test",
 	LOG_LEVEL: logLevel as "crit" | "debug" | "error" | "info" | "severe" | "verbose" | "warn",
 	PG_POOL_MAX,
+	BCRYPT_SALT_ROUNDS,
 };

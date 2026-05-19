@@ -7,7 +7,7 @@ import {
 } from "#lib/game-specific/custom-bms-tables";
 import { withGame } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { FindBMSSieglindeRatedCharts } from "#utils/queries/charts";
 import { ExpectedErr } from "bliss";
 import { type GamesForGroup, GameToGameGroup } from "tachi-common";

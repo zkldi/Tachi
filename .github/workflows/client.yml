@@ -99,7 +99,7 @@ jobs:
           VITE_EAG_CLIENT_ID: "A52JhudyAPK1KdBS3NrUhNsn"
           VITE_FLO_CLIENT_ID: "9krYLjq1rz9icCefO6OWxoMk"
           VITE_MIN_CLIENT_ID: "A0DBDBB063CD800530EF01C6488B282137E0191E"
-          VITE_GIT_REPO: "GitHub:zkldi/Tachi3"
+          VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
           TACHI_NAME: "Tachi Dev"
           BUILD_OUT_DIR: /tmp/dev

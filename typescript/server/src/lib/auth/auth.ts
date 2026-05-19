@@ -1,5 +1,5 @@
 import { log } from "#lib/log/log";
-import { ServerConfig } from "#lib/setup/config";
+import { Env, ServerConfig } from "#lib/setup/config";
 import DB from "#services/pg/db";
 import nodeFetch from "#utils/fetch";
 import { Random20Hex } from "#utils/misc";
@@ -16,8 +16,6 @@ import {
 	type UserSettingsDocument,
 } from "tachi-common";
 import { type Database } from "tachi-db";
-
-const BCRYPT_SALT_ROUNDS = 12;
 
 export const ValidatePassword = (self: unknown) =>
 	(typeof self === "string" && self.length >= 8) || "Passwords must be 8 characters or more.";
@@ -83,7 +81,7 @@ export const DEFAULT_USER_SETTINGS: UserSettingsDocument["preferences"] = {
 };
 
 export function HashPassword(plaintext: string) {
-	return bcrypt.hash(plaintext, BCRYPT_SALT_ROUNDS);
+	return bcrypt.hash(plaintext, Env.BCRYPT_SALT_ROUNDS);
 }
 
 export async function AddNewUser(

@@ -7,7 +7,7 @@ import {
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { SearchSpecificGameSongsAndCharts } from "#lib/search/song-charts";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import {

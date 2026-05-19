@@ -11,7 +11,7 @@ import { withGame, withRequestedUserAndReqData } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { EAM_VERSION_NAMES } from "#lib/score-import/import-types/common/eamusement-iidx-csv/parser";
 import { AggressiveRateLimitMiddleware } from "#server/middleware/rate-limiter";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetUserFromParam } from "#server/router/api/v1/users/_userID/middleware";
 import DB from "#services/pg/db";
 import { REQ_AssignToReqTachiData, REQ_GetUser } from "#utils/req-tachi-data";
