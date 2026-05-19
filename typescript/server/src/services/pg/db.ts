@@ -37,52 +37,13 @@ if (process.env.NODE_ENV === "test") {
 	const origConnect = pool.connect.bind(pool);
 	const origQuery = pool.query.bind(pool) as (...args: unknown[]) => unknown;
 
-	const queryTiming = process.env.TACHI_QUERY_TIMING === "1";
-
 	pool.connect = ((...args: unknown[]) => {
 		g.__tachi_pg_used = true;
-		if (queryTiming) {
-			const t0 = performance.now();
-			const p = (origConnect as (...a: unknown[]) => Promise<pg.PoolClient>)(...args);
-			return p.then((client) => {
-				const origClientQuery = client.query.bind(client) as (...a: unknown[]) => unknown;
-				client.query = ((...qa: unknown[]) => {
-					const qt0 = performance.now();
-					const sql =
-						typeof qa[0] === "string"
-							? qa[0]
-							: ((qa[0] as { text?: string } | null)?.text ?? "<unknown>");
-					const result = origClientQuery(...qa) as Promise<unknown>;
-					return Promise.resolve(result).then((v) => {
-						const dt = performance.now() - qt0;
-						process.stderr.write(
-							`[qtiming] ${dt.toFixed(1).padStart(7)}ms  +${(qt0 - t0).toFixed(1)}ms_after_connect  ${sql.slice(0, 80).replace(/\s+/gu, " ")}\n`,
-						);
-						return v;
-					});
-				}) as typeof client.query;
-				return client;
-			});
-		}
 		return (origConnect as (...a: unknown[]) => unknown)(...args);
 	}) as typeof pool.connect;
 
 	pool.query = ((...args: unknown[]) => {
 		g.__tachi_pg_used = true;
-		if (queryTiming) {
-			const qt0 = performance.now();
-			const sql =
-				typeof args[0] === "string"
-					? args[0]
-					: ((args[0] as { text?: string } | null)?.text ?? "<unknown>");
-			const result = origQuery(...args) as Promise<unknown>;
-			return Promise.resolve(result).then((v) => {
-				process.stderr.write(
-					`[qtiming] ${(performance.now() - qt0).toFixed(1).padStart(7)}ms  pool.query  ${sql.slice(0, 80).replace(/\s+/gu, " ")}\n`,
-				);
-				return v;
-			});
-		}
 		return origQuery(...args);
 	}) as typeof pool.query;
 }

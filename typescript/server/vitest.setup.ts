@@ -107,9 +107,9 @@ async function resetDatabase() {
 }
 
 // Per-worker DB creation is lazy: only paid by workers whose tests actually
-// load #services/pg/db. Worth ~20-40 ms per pure-unit file. Test files'
-// top-level imports have already evaluated by the time this beforeAll runs,
-// so `__tachi_pg_loaded` reliably reflects "this file uses the DB".
+// load #services/pg/db. With `isolate: false` this still triggers on the first
+// DB-using file in the worker; pure-unit-only workers skip CREATE DATABASE
+// entirely. `__tachi_pg_loaded` is set in db.ts on module load.
 let workerDbCreatedHere = false;
 async function ensureWorkerDatabase() {
 	if (workerDbCreatedHere) {
@@ -141,14 +141,13 @@ beforeEach(async (ctx) => {
 		return;
 	}
 
-	// Pure-unit test files (string parsers, math helpers, etc.) never reach for
-	// the DB pool, never import the auth router, never touch the rate limiter.
-	// resetDatabase()'s lazy `await import("#services/pg/db")` was paying a
-	// ~2 s first-time module-eval tax on those files for no benefit. Gate the
-	// whole setup body on `globalThis.__tachi_pg_loaded` (set when db.ts is
-	// imported by app code under test) and `__tachi_pg_used` (set when the
-	// pool actually serves a query). Both are property reads - zero imports
-	// when the file doesn't need them.
+	// Skip the TRUNCATE / cache-reset work when this worker has not yet loaded
+	// the DB at all (`__tachi_pg_loaded`, set in db.ts) or has not issued any
+	// query since the last reset (`__tachi_pg_used`, set by the pool wrappers
+	// in db.ts). Both are plain property reads on globalThis - no import cost
+	// when the conditions are false. Worth roughly 0.5-2 ms per pure-unit
+	// test in a mixed worker, and the DROP DATABASE / pool init cost on
+	// workers that happen to be pure-unit only.
 	const g = globalThis as unknown as {
 		__tachi_pg_loaded?: boolean;
 		__tachi_pg_used?: boolean;
@@ -171,8 +170,9 @@ beforeEach(async (ctx) => {
 
 	// Login-heavy router tests share the in-memory login rate limiter; reset
 	// each test so AggressiveRateLimit (15 / 10 min) does not 429 and omit
-	// Set-Cookie. Skip the import entirely if no app code has ever loaded the
-	// rate limiter in this worker.
+	// Set-Cookie. `__tachi_rate_limiter_loaded` is set on module load in
+	// rate-limiter.ts so we skip the import entirely on workers that never
+	// touch any router.
 	const gRl = globalThis as unknown as { __tachi_rate_limiter_loaded?: boolean };
 	if (gRl.__tachi_rate_limiter_loaded === true) {
 		const tRl0 = performance.now();

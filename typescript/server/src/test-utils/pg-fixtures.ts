@@ -3,12 +3,14 @@ import DB from "#services/pg/db";
 
 let minimalIidxChartCounter = 0;
 
-// `bcrypt.hash` at 12 rounds is ~250 ms - and the same handful of plaintexts
-// (`"password123"`, the per-file constants used by `change-password.test.ts`
-// et al.) gets hashed dozens of times per worker. The hash is a pure function
-// of plaintext + rounds (the salt varies, but tests don't care which salt as
-// long as `PasswordCompare(plaintext, hash)` round-trips), so we can memoize
-// here without changing any observable behaviour.
+// `bcrypt.hash` at the test-mode rounds (BCRYPT_SALT_ROUNDS=4, see config.ts)
+// is ~5 ms; in CI we have hundreds of `seedUser({ withCredential: true })`
+// calls across the suite, almost all of them with the same handful of
+// plaintexts (`"password123"` and friends). With `pool: "threads" +
+// isolate: false` this cache survives across every file a worker processes,
+// turning that into one hash per (plaintext, worker). The hash is a pure
+// function of plaintext + rounds for our purposes (the salt varies, but
+// tests only care that `PasswordCompare(plaintext, hash)` round-trips).
 const hashedPasswordCache = new Map<string, Promise<string>>();
 function cachedHashPassword(plaintext: string): Promise<string> {
 	const cached = hashedPasswordCache.get(plaintext);
