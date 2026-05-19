@@ -95,7 +95,24 @@ async function resetDatabase() {
 		const idents = ["_test_dirty_tables", ...dirty.rows.map((r) => r.table_name)].map((n) =>
 			sql.id(n),
 		);
-		await sql`TRUNCATE TABLE ${sql.join(idents, sql`, `)} RESTART IDENTITY CASCADE`.execute(db);
+		// TRUNCATE takes ACCESS EXCLUSIVE on every dirty table AND every table
+		// reachable via FK CASCADE. With `pool: "threads"` + `isolate: false`
+		// the mock-api supertest server is shared across files in a worker, so
+		// an HTTP response from the previous `it()` can still be holding a row
+		// lock on one of the cascade targets when `beforeEach` fires here. We
+		// surface that as a fail-fast `lock_timeout` (set on the txn so it
+		// applies to the TRUNCATE) instead of waiting `deadlock_timeout`
+		// (1 s by default), then retry up to 5 times. CI exposes this maybe
+		// 1-2 tests per ~1700 runs; locally it is invisible.
+		await runTruncateWithRetry(async () => {
+			await db.transaction().execute(async (trx) => {
+				await sql`SET LOCAL lock_timeout = '500ms'`.execute(trx);
+				await sql`TRUNCATE TABLE ${sql.join(
+					idents,
+					sql`, `,
+				)} RESTART IDENTITY CASCADE`.execute(trx);
+			});
+		});
 	}
 
 	try {
@@ -103,6 +120,34 @@ async function resetDatabase() {
 		clearGameStatsCacheForTests();
 	} catch {
 		// ignore - router not loaded in edge test contexts
+	}
+}
+
+const RETRYABLE_PG_CODES = new Set([
+	"40P01", // deadlock_detected
+	"55P03", // lock_not_available (lock_timeout)
+]);
+
+async function runTruncateWithRetry(fn: () => Promise<void>): Promise<void> {
+	const maxAttempts = 5;
+	for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+		try {
+			// Sequential retry of a single fail-fast op; awaiting in the loop
+			// is the whole point.
+			// eslint-disable-next-line no-await-in-loop
+			await fn();
+			return;
+		} catch (err) {
+			const code = (err as { code?: string } | null)?.code;
+			if (attempt === maxAttempts || code === undefined || !RETRYABLE_PG_CODES.has(code)) {
+				throw err;
+			}
+			// Exponential backoff with jitter, capped: 20, 40, 80, 160 ms.
+			const baseMs = 20 * 2 ** (attempt - 1);
+			const sleepMs = baseMs + Math.floor(Math.random() * baseMs);
+			// eslint-disable-next-line no-await-in-loop
+			await new Promise((resolve) => setTimeout(resolve, sleepMs));
+		}
 	}
 }
 
