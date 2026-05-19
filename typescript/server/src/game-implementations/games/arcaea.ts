@@ -116,14 +116,15 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 				return `FULL RECALL scores must have a score larger than 5 million. Got ${s.scoreData.score} instead.`;
 			}
 		},
-		(s) => {
-			const { far, lost } = s.scoreData.judgements;
+		// This doesn't work with PB exporters.
+		// (s) => {
+		// 	const { far, lost } = s.scoreData.judgements;
 
-			if (s.scoreData.lamp === "PURE MEMORY" && (lost ?? 0) + (far ?? 0) > 0) {
-				return "Cannot have a PURE MEMORY with any fars or losts.";
-			} else if (s.scoreData.lamp === "FULL RECALL" && (lost ?? 0) > 0) {
-				return "Cannot have a FULL RECALL with non-zero lost count.";
-			}
-		},
+		// 	if (s.scoreData.lamp === "PURE MEMORY" && (lost ?? 0) + (far ?? 0) > 0) {
+		// 		return "Cannot have a PURE MEMORY with any fars or losts.";
+		// 	} else if (s.scoreData.lamp === "FULL RECALL" && (lost ?? 0) > 0) {
+		// 		return "Cannot have a FULL RECALL with non-zero lost count.";
+		// 	}
+		// },
 	],
 };
