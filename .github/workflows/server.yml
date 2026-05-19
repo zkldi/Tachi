@@ -41,17 +41,28 @@ jobs:
     env:
       NODE_ENV: "test"
     services:
-      tachi-postgres:
+      # Test Postgres mirrors `tachi-postgres-test` in docker-compose-dev.yml:
+      # a tmpfs-backed PG sized for ~8 long-lived worker DBs with autovacuum
+      # on. `PGDATA` must be a SUBDIRECTORY of the tmpfs mount, otherwise
+      # initdb refuses to clobber the mount root. The runtime-tunable knobs
+      # (synchronous_commit, WAL ceiling, autovacuum naptime, etc.) are
+      # applied via `ALTER SYSTEM` in a setup step below; restart-required
+      # knobs (fsync, full_page_writes, shared_buffers, ...) we leave at
+      # the postgres defaults because `services:` does not let us pass
+      # postgres CLI args. With tmpfs, fsync is essentially free anyway.
+      tachi-postgres-test:
         image: postgres:18
         env:
           POSTGRES_USER: tachi
           POSTGRES_PASSWORD: tachi
           POSTGRES_DB: postgres
+          PGDATA: /var/lib/postgresql/data/pgdata
         options: >-
           --health-cmd "pg_isready -U tachi"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
+          --tmpfs /var/lib/postgresql/data:rw,size=3g
       tachi-redis:
         image: redis:7.4-alpine
         options: >-
@@ -92,11 +103,36 @@ jobs:
       - name: Typecheck code
         run: bun run --filter tachi-server typecheck
 
+      - name: Tune test Postgres for short-lived worker DBs
+        # The restart-only knobs (fsync, shared_buffers, ...) cannot be set
+        # because the GHA service syntax does not let us pass postgres CLI
+        # args. Everything below is reloadable; it lines up with the
+        # `-c ...` flags on `tachi-postgres-test` in docker-compose-dev.yml
+        # so CI and local behave the same once the suite starts running.
+        env:
+          PGPASSWORD: tachi
+        run: |
+          psql -h tachi-postgres-test -U tachi -d postgres <<'SQL'
+            ALTER SYSTEM SET synchronous_commit = off;
+            ALTER SYSTEM SET max_wal_size = '128MB';
+            ALTER SYSTEM SET min_wal_size = '32MB';
+            ALTER SYSTEM SET checkpoint_timeout = '30s';
+            ALTER SYSTEM SET autovacuum_naptime = '5s';
+            ALTER SYSTEM SET autovacuum_vacuum_scale_factor = 0.05;
+            ALTER SYSTEM SET autovacuum_analyze_scale_factor = 0.1;
+            SELECT pg_reload_conf();
+          SQL
+
       - name: Run tests
-        run: bun run --filter tachi-server test
         env:
           NODE_ENV: "test"
           PORT: 8080
+          POSTGRES_TEST_HOST: tachi-postgres-test
+          POSTGRES_TEST_URL: postgresql://tachi:tachi@tachi-postgres-test
+          # ubuntu-latest is 4 vCPU; cap workers to leave headroom for the
+          # PG service container and avoid oversubscribing tmpfs.
+          VITEST_MAX_WORKERS: "4"
+        run: bun run --filter tachi-server test
 
   docker-push:
     runs-on: ubuntu-latest
