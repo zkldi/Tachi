@@ -599,7 +599,7 @@ const PG_POOL_MAX = parseIntEnv("PG_POOL_MAX", 10);
 const BCRYPT_SALT_ROUNDS = parseIntEnv("TACHI_BCRYPT_SALT_ROUNDS", NODE_ENV === "test" ? 4 : 12);
 
 if (NODE_ENV !== "test" && BCRYPT_SALT_ROUNDS < 12) {
-	log.crit(
+	log.fatal(
 		`TACHI_BCRYPT_SALT_ROUNDS=${BCRYPT_SALT_ROUNDS} but NODE_ENV=${NODE_ENV}. ` +
 			`Refusing to start: rounds below 12 are only acceptable in test environments.`,
 	);
