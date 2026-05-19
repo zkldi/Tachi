@@ -14,7 +14,7 @@ export default function IIDXStyleSongChartInfoFormat({
 }: {
 	chart: ChartDocument | null;
 	game: V3Game;
-	song: SongDocument<"bms" | "chunithm" | "iidx" | "maimaidx" | "ongeki" | "pms" | "popn">;
+	song: SongDocument<"bms" | "chunithm" | "iidx" | "maimaidx" | "ongeki" | "pms" | "popn" | "arcaea">;
 }) {
 	const genre =
 		game === "ongeki"
