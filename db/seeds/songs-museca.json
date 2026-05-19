@@ -1,7 +1,7 @@
 [
 	{
 		"altTitles": [],
-		"artist": "Last Note. feat. GUMI",
+		"artist": "Last Note． feat. GUMI",
 		"data": {
 			"artistJP": "ﾗｽﾄﾉｰﾄﾌｨｰﾁｬﾘﾝｸﾞｸﾞﾐ",
 			"displayVersion": "1",
@@ -147,7 +147,7 @@
 		"artist": "Music by MasKaleido, Vocal by ぁゅ",
 		"data": {
 			"artistJP": "ﾏｽｶﾚｲﾄﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5-b",
 			"titleJP": "ｽﾀｰﾀﾞｽﾄﾏｰﾒｲﾄﾞ"
 		},
 		"id": "S19d35e0b42f6d1ef0bb",
@@ -212,7 +212,7 @@
 		"artist": "millstones",
 		"data": {
 			"artistJP": "ﾐﾙｽﾄｰﾝｽﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5-b",
 			"titleJP": "ﾄﾏﾄﾘｰﾌﾌﾞﾚｲｸｽ"
 		},
 		"id": "S19d35e0b4348d400e96",
@@ -224,9 +224,9 @@
 		"altTitles": [],
 		"artist": "VALLEYSTONE feat. 紫崎 雪",
 		"data": {
-			"artistJP": "ﾊﾞﾘｰｽﾄｰﾝ ﾋｭｰﾁｬﾘﾝｸﾞ ｼｻﾞｷﾕｷ",
+			"artistJP": "ﾊﾞﾘｰｽﾄｰﾝﾋｭｰﾁｬﾘﾝｸﾞｼｻﾞｷﾕｷ",
 			"displayVersion": "1",
-			"titleJP": "ﾗﾌﾞｼｯｸ ﾗﾌﾞﾁｭｰﾝ"
+			"titleJP": "ﾗﾌﾞｼｯｸﾗﾌﾞﾁｭｰﾝ"
 		},
 		"id": "S19d35e0b435a966cff4",
 		"legacySongID": 18,
@@ -278,7 +278,7 @@
 		"data": {
 			"artistJP": "ｸﾛﾏ",
 			"displayVersion": "1",
-			"titleJP": "ﾎﾟﾝﾎﾟﾝﾎﾟﾝﾎﾟｺﾀﾞｲｾﾝｿｳ!"
+			"titleJP": "ﾎﾟﾝﾎﾟﾝﾎﾟﾝﾎﾟｺﾀﾞｲｾﾝｿｳ"
 		},
 		"id": "S19d35e0b439c7c2ca64",
 		"legacySongID": 22,
@@ -368,7 +368,7 @@
 		"artist": "C-Show",
 		"data": {
 			"artistJP": "ｼｼｮｳ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾕｰｴﾇｵｰｴﾝﾜｶﾉｼﾞｮﾅﾉｶﾄｰﾎﾘｯｸﾐｯｸｽ"
 		},
 		"id": "S19d35e0b4408cf2f105",
@@ -413,7 +413,7 @@
 		"id": "S19d35e0b44440c9f6eb",
 		"legacySongID": 33,
 		"searchTerms": [],
-		"title": "inverted RAINBOW (M齣SECA Ver.)"
+		"title": "inverted RAINBOW (MÚSECA Ver.)"
 	},
 	{
 		"altTitles": [],
@@ -433,7 +433,7 @@
 		"artist": "埼玉最終兵器",
 		"data": {
 			"artistJP": "ｻｲﾀﾏｻｲｼｭｳﾍｲｷ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾃﾝｸｳﾉﾊﾅﾉﾐﾔｺ"
 		},
 		"id": "S19d35e0b44658211805",
@@ -446,7 +446,7 @@
 		"artist": "XL Project -yanagizm side-",
 		"data": {
 			"artistJP": "ｴｸｾﾙﾌﾟﾛｼﾞｪｸﾄﾔﾅｷﾞｽﾞﾑｻｲﾄﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾎｵｽﾞｷﾐﾀｲﾆｱｶｲﾀﾏｼｲｼﾞｮｳﾈﾂｽﾀｲﾙ"
 		},
 		"id": "S19d35e0b448ca11f6d5",
@@ -459,7 +459,7 @@
 		"artist": "アゴアニキ",
 		"data": {
 			"artistJP": "ｱｺﾞｱﾆｷ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾀﾞﾌﾞﾙﾗﾘｱｯﾄ"
 		},
 		"id": "S19d35e0b4491f73dd42",
@@ -498,7 +498,7 @@
 		"artist": "まふまふ",
 		"data": {
 			"artistJP": "ﾏﾌﾏﾌ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾊｰﾄﾉｱﾄｱｼﾞ"
 		},
 		"id": "S19d35e0b45165912643",
@@ -846,7 +846,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "溝口ゆうま feat. みこ齶なち齶あい",
+		"artist": "溝口ゆうま feat. みこ♡なち♡あい",
 		"data": {
 			"artistJP": "ﾐｿﾞﾉｸﾁﾕｳﾏﾌｭｰﾁｬﾘﾝｸﾞﾐｺﾅﾁｱｲ",
 			"displayVersion": "1",
@@ -859,7 +859,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "miko齶nachi feat.u-z",
+		"artist": "miko♡nachi feat.u-z",
 		"data": {
 			"artistJP": "ﾐｺﾊｰﾄﾅﾁﾌｨｰﾁｬﾘﾝｸﾞﾕｰｼﾞ",
 			"displayVersion": "1",
@@ -1089,7 +1089,7 @@
 		"id": "S19d35e0b47f5beefa69",
 		"legacySongID": 92,
 		"searchTerms": [],
-		"title": "齧rche"
+		"title": "Ärche"
 	},
 	{
 		"altTitles": [],
@@ -1187,7 +1187,7 @@
 		"artist": "Nem",
 		"data": {
 			"artistJP": "ﾈﾑ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｱｱｽﾊﾞﾗｼｷﾆｬﾝｾｲ"
 		},
 		"id": "S19d35e0b488cde6f260",
@@ -1200,7 +1200,7 @@
 		"artist": "トーマ",
 		"data": {
 			"artistJP": "ﾄｰﾏ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾏﾎｳｼｮｳｼﾞｮｺｳﾌｸﾛﾝ"
 		},
 		"id": "S19d35e0b48a215882c2",
@@ -1213,7 +1213,7 @@
 		"artist": "M.S.S Project",
 		"data": {
 			"artistJP": "ｴﾑｴｽｴｽﾌﾟﾛｼﾞｪｸﾄ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｴﾑｴｽｴｽﾌﾟﾗﾈｯﾄ"
 		},
 		"id": "S19d35e0b48bc9b3561d",
@@ -1239,7 +1239,7 @@
 		"artist": "n.k",
 		"data": {
 			"artistJP": "ｴﾇｹｰ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｺﾉﾌｻﾞｹﾀｽﾊﾞﾗｼｷｾｶｲﾊ､ﾎﾞｸﾉﾀﾒﾆｱﾙ"
 		},
 		"id": "S19d35e0b48eed08c590",
@@ -1252,7 +1252,7 @@
 		"artist": "n-buna",
 		"data": {
 			"artistJP": "ﾅﾌﾞﾅ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾑｼﾞﾝｴｷ"
 		},
 		"id": "S19d35e0b48fab7c3dfa",
@@ -1278,7 +1278,7 @@
 		"artist": "Pa's Lam System",
 		"data": {
 			"artistJP": "ﾊﾟｽﾞﾗﾑｼｽﾃﾑ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｲﾌ"
 		},
 		"id": "S19d35e0b4912dffb3b9",
@@ -1291,7 +1291,7 @@
 		"artist": "Yu_Asahina",
 		"data": {
 			"artistJP": "ﾕｳｱｻﾋﾅ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾌｧﾝｸｼｮﾝﾅﾝﾊﾞｰﾌｧｲﾌﾞ"
 		},
 		"id": "S19d35e0b492bcaa581a",
@@ -1304,7 +1304,7 @@
 		"artist": "Yunomi",
 		"data": {
 			"artistJP": "ﾕﾉﾐ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾐﾀﾗｼﾌﾟﾗﾄﾆｯｸﾌｨｰﾁｬﾘﾝｸﾞﾆｶﾓｷｭ"
 		},
 		"id": "S19d35e0b49326eb55c9",
@@ -1707,7 +1707,7 @@
 		"artist": "Daisuke Ohnuma",
 		"data": {
 			"artistJP": "ﾀﾞｲｽｹｵｵﾇﾏ",
-			"displayVersion": "15",
+			"displayVersion": "1.5",
 			"titleJP": "ｸﾗｯｸﾕｱｿｳﾙ"
 		},
 		"id": "S19d35e0b4b942b6dde2",
@@ -2643,12 +2643,2053 @@
 		"artist": "ぺのれり",
 		"data": {
 			"artistJP": "ﾍﾟﾉﾚﾘ",
-			"displayVersion": "1.5",
+			"displayVersion": "1.5-b",
 			"titleJP": "ｴｳﾞｧｰﾗｽﾃｨﾝｸﾞﾒｯｾｰｼﾞ"
 		},
 		"id": "S19d35e0b506c6a58ca7",
 		"legacySongID": 226,
 		"searchTerms": [],
 		"title": "Everlasting Message"
+	},
+	{
+		"altTitles": [],
+		"artist": "ハチ",
+		"data": {
+			"artistJP": "ﾊﾁ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾏﾄﾘｮｼｶ"
+		},
+		"id": "S19e3dbc52e8666a9202",
+		"legacySongID": 41,
+		"searchTerms": [],
+		"title": "マトリョシカ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ハチ",
+		"data": {
+			"artistJP": "ﾊﾁ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾄﾞｰﾅﾂﾎｰﾙ"
+		},
+		"id": "S19e3dbc52e8acfb31ce",
+		"legacySongID": 42,
+		"searchTerms": [],
+		"title": "ドーナツホール"
+	},
+	{
+		"altTitles": [],
+		"artist": "ノマ",
+		"data": {
+			"artistJP": "ﾉﾏ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾌﾞﾚｲﾝﾊﾟﾜｰ"
+		},
+		"id": "S19e3dbc52e8b0cef53e",
+		"legacySongID": 171,
+		"searchTerms": [],
+		"title": "Brain Power"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dustup",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b552ae207f8b",
+		"legacySongID": 227,
+		"searchTerms": [],
+		"title": "1116"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪ & ここなつ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b552d3e81145",
+		"legacySongID": 229,
+		"searchTerms": [],
+		"title": "チョコレートスマイル"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪&日向美ブルームーン",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b552f857441b",
+		"legacySongID": 228,
+		"searchTerms": [],
+		"title": "琥珀のくちづけ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sota Fujimori",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55313c6ba22",
+		"legacySongID": 241,
+		"searchTerms": [],
+		"title": "polygon"
+	},
+	{
+		"altTitles": [],
+		"artist": "海の底からマーメイド・Prim by ARM×狐夢想",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5531942fab4",
+		"legacySongID": 233,
+		"searchTerms": [],
+		"title": "ギョギョっと人魚・爆婚ブライダル"
+	},
+	{
+		"altTitles": [],
+		"artist": "Rche",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5531d6e4fd6",
+		"legacySongID": 242,
+		"searchTerms": [],
+		"title": "entelecheia"
+	},
+	{
+		"altTitles": [],
+		"artist": "U1 overground",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553282fbbb4",
+		"legacySongID": 246,
+		"searchTerms": [],
+		"title": "Go For The Top"
+	},
+	{
+		"altTitles": [],
+		"artist": "COSIO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5532a3d6a59",
+		"legacySongID": 249,
+		"searchTerms": [],
+		"title": "Rise Circuit"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nhato",
+		"data": {
+			"artistJP": "ﾝﾊﾄ",
+			"displayVersion": "m+",
+			"titleJP": "ﾏｼﾞｯｸ"
+		},
+		"id": "S19e3de7b553341da503",
+		"legacySongID": 240,
+		"searchTerms": [],
+		"title": "Magic"
+	},
+	{
+		"altTitles": [],
+		"artist": "TORIENA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5533953052c",
+		"legacySongID": 237,
+		"searchTerms": [],
+		"title": "Chewingood!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "NU-KO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5533dfeeee2",
+		"legacySongID": 245,
+		"searchTerms": [],
+		"title": "ポチコの幸せな日常"
+	},
+	{
+		"altTitles": [],
+		"artist": "U1 overground",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55340651487",
+		"legacySongID": 231,
+		"searchTerms": [],
+		"title": "Hunny Bunny"
+	},
+	{
+		"altTitles": [],
+		"artist": "Lite Show Magic (t+pazolite vs C-Show)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553465dd675",
+		"legacySongID": 238,
+		"searchTerms": [],
+		"title": "Crack Traxxxx"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sakuzyo",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5534c452547",
+		"legacySongID": 247,
+		"searchTerms": [],
+		"title": "Imprinting"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu☆",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5536b62e0f1",
+		"legacySongID": 250,
+		"searchTerms": [],
+		"title": "I/O"
+	},
+	{
+		"altTitles": [],
+		"artist": "Eagle",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5538fd48a28",
+		"legacySongID": 234,
+		"searchTerms": [],
+		"title": "Boomy and The Boost"
+	},
+	{
+		"altTitles": [],
+		"artist": "7mai",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553925f0f46",
+		"legacySongID": 236,
+		"searchTerms": [],
+		"title": "CUTE-Reflection"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remo-Con",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5539ad4cac0",
+		"legacySongID": 243,
+		"searchTerms": [],
+		"title": "EXTREMA PT.2"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ TOTTO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553a22da495",
+		"legacySongID": 230,
+		"searchTerms": [],
+		"title": "Windy Fairy"
+	},
+	{
+		"altTitles": [],
+		"artist": "隣の庭は青い(庭師+Aoi)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553a30c4123",
+		"legacySongID": 248,
+		"searchTerms": [],
+		"title": "遷"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ TOTTO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553d6c5c9f9",
+		"legacySongID": 232,
+		"searchTerms": [],
+		"title": "Astrogazer"
+	},
+	{
+		"altTitles": [],
+		"artist": "Tatsh feat.小田ユウ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553d7c2258a",
+		"legacySongID": 235,
+		"searchTerms": [],
+		"title": "Change the World"
+	},
+	{
+		"altTitles": [],
+		"artist": "Xi",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553dee87e26",
+		"legacySongID": 244,
+		"searchTerms": [],
+		"title": "Froge Dive"
+	},
+	{
+		"altTitles": [],
+		"artist": "KAN TAKAHIKO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b553e4cf3aeb",
+		"legacySongID": 239,
+		"searchTerms": [],
+		"title": "Auto Click"
+	},
+	{
+		"altTitles": [],
+		"artist": "uno feat.ちよこ(IOSYS)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5540eaf93f7",
+		"legacySongID": 264,
+		"searchTerms": [],
+		"title": "Twin Rocket"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAG",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554112d64d3",
+		"legacySongID": 263,
+		"searchTerms": [],
+		"title": "Reb∞t"
+	},
+	{
+		"altTitles": [],
+		"artist": "rider",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5541ac1b534",
+		"legacySongID": 273,
+		"searchTerms": [],
+		"title": "Hexennacht"
+	},
+	{
+		"altTitles": [],
+		"artist": "うらら remixed by SLAKE",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5541c152856",
+		"legacySongID": 255,
+		"searchTerms": [],
+		"title": "魔法的新定義 electro mix"
+	},
+	{
+		"altTitles": [],
+		"artist": "こすも８ｂｉｔ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5541f37cec8",
+		"legacySongID": 270,
+		"searchTerms": [],
+		"title": "Story of 40KB"
+	},
+	{
+		"altTitles": [],
+		"artist": "MARON (IOSYS)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5542865a6ef",
+		"legacySongID": 271,
+		"searchTerms": [],
+		"title": "BONE BORN"
+	},
+	{
+		"altTitles": [],
+		"artist": "seiya-murai feat. ALT",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5542db4a4c6",
+		"legacySongID": 269,
+		"searchTerms": [],
+		"title": "Spring Pain"
+	},
+	{
+		"altTitles": [],
+		"artist": "kors k",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5542e5cadbd",
+		"legacySongID": 251,
+		"searchTerms": [],
+		"title": "Virtual Sunrise"
+	},
+	{
+		"altTitles": [],
+		"artist": "マチゲリータ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55450502c16",
+		"legacySongID": 268,
+		"searchTerms": [],
+		"title": "不思議玩具ガンガラディンドン"
+	},
+	{
+		"altTitles": [],
+		"artist": "ここなつ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5545bc77178",
+		"legacySongID": 258,
+		"searchTerms": [],
+		"title": "ルミナスデイズ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu☆ feat. moimoi",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554608fea8f",
+		"legacySongID": 256,
+		"searchTerms": [],
+		"title": "OOO"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remixed by DJ Command",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55462fb2575",
+		"legacySongID": 253,
+		"searchTerms": [],
+		"title": "Mermaid girl -秋葉工房 MIX-"
+	},
+	{
+		"altTitles": [],
+		"artist": "t+pazolite",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55483760be3",
+		"legacySongID": 272,
+		"searchTerms": [],
+		"title": "Tomorrow Perfume (tpz Despair Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Camellia",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554904fd531",
+		"legacySongID": 259,
+		"searchTerms": [],
+		"title": "Quaoar"
+	},
+	{
+		"altTitles": [],
+		"artist": "はがね",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55490ff7be8",
+		"legacySongID": 265,
+		"searchTerms": [],
+		"title": "Pulsar"
+	},
+	{
+		"altTitles": [],
+		"artist": "黒魔",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554936e7a0f",
+		"legacySongID": 257,
+		"searchTerms": [],
+		"title": "Space Diver Tama"
+	},
+	{
+		"altTitles": [],
+		"artist": "TECHNO MASTERS",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5549c57c637",
+		"legacySongID": 274,
+		"searchTerms": [],
+		"title": "Two Months Off"
+	},
+	{
+		"altTitles": [],
+		"artist": "こふ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554a26ffe61",
+		"legacySongID": 262,
+		"searchTerms": [],
+		"title": "Milkyway - memorable -"
+	},
+	{
+		"altTitles": [],
+		"artist": "SUi",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554a8114368",
+		"legacySongID": 266,
+		"searchTerms": [],
+		"title": "Planetarium"
+	},
+	{
+		"altTitles": [],
+		"artist": "Rephaim",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554a823c649",
+		"legacySongID": 252,
+		"searchTerms": [],
+		"title": "Lament Configuration"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nekomata Master feat. Mimi Nyami",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554b72613ce",
+		"legacySongID": 261,
+		"searchTerms": [],
+		"title": "TWINKLING"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mr.Saturn",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554ccb0320e",
+		"legacySongID": 254,
+		"searchTerms": [],
+		"title": "Saturn"
+	},
+	{
+		"altTitles": [],
+		"artist": "Memme",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554e69463eb",
+		"legacySongID": 260,
+		"searchTerms": [],
+		"title": "Tantanmen"
+	},
+	{
+		"altTitles": [],
+		"artist": "工藤吉三（ベイシスケイプ）",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b554f2f5f2b3",
+		"legacySongID": 267,
+		"searchTerms": [],
+		"title": "キヤロラ衛星の軌跡"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJムラサメ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5550fe9181c",
+		"legacySongID": 278,
+		"searchTerms": [],
+		"title": "ANTHEM LANDING -A mix-"
+	},
+	{
+		"altTitles": [],
+		"artist": "HOUJIROU",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5551538db1f",
+		"legacySongID": 299,
+		"searchTerms": [],
+		"title": "Perfect Lady"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJムラサメ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55517cb6e91",
+		"legacySongID": 277,
+		"searchTerms": [],
+		"title": "ANTHEM LANDING -H mix-"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu☆",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5552b54e61c",
+		"legacySongID": 283,
+		"searchTerms": [],
+		"title": "竹取飛翔 ～ Lunatic Princess (Ryu☆Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mr.T feat. KAFN",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555338a551b",
+		"legacySongID": 291,
+		"searchTerms": [],
+		"title": "Burning Heat! [2020 Re:build]"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nhato Vs. MK",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5553dab67e1",
+		"legacySongID": 300,
+		"searchTerms": [],
+		"title": "VIBRΛ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Anquette",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5553fec9225",
+		"legacySongID": 280,
+		"searchTerms": [],
+		"title": "MY BABY MAMA"
+	},
+	{
+		"altTitles": [],
+		"artist": "佐野電磁",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5554c3d78f3",
+		"legacySongID": 282,
+		"searchTerms": [],
+		"title": "Duration"
+	},
+	{
+		"altTitles": [],
+		"artist": "Team Grimoire",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55552ea857d",
+		"legacySongID": 279,
+		"searchTerms": [],
+		"title": "saQrifice"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nazzo-Non-Heat",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55561401176",
+		"legacySongID": 286,
+		"searchTerms": [],
+		"title": "Wandering Gravity"
+	},
+	{
+		"altTitles": [],
+		"artist": "D.watt (IOSYS)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555702366ac",
+		"legacySongID": 288,
+		"searchTerms": [],
+		"title": "Underground Astronomy"
+	},
+	{
+		"altTitles": [],
+		"artist": "Jimmy Weckl feat.岩志太郎",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555842120f2",
+		"legacySongID": 296,
+		"searchTerms": [],
+		"title": "垂直OK!"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu*",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5558caf613e",
+		"legacySongID": 293,
+		"searchTerms": [],
+		"title": "in the Sky"
+	},
+	{
+		"altTitles": [],
+		"artist": "Zutt feat.NU-KO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555998c019f",
+		"legacySongID": 298,
+		"searchTerms": [],
+		"title": "世界の果てに約束の凱歌を"
+	},
+	{
+		"altTitles": [],
+		"artist": "黒魔",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5559fe856b1",
+		"legacySongID": 292,
+		"searchTerms": [],
+		"title": "Sayonara Planet Wars"
+	},
+	{
+		"altTitles": [],
+		"artist": "山本真央樹",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555ad4c7526",
+		"legacySongID": 290,
+		"searchTerms": [],
+		"title": "Cosminflation"
+	},
+	{
+		"altTitles": [],
+		"artist": "THOMAS HOWARD",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555b0c0349e",
+		"legacySongID": 295,
+		"searchTerms": [],
+		"title": "Silent Hill"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJムラサメ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555b898eaaf",
+		"legacySongID": 276,
+		"searchTerms": [],
+		"title": "ANTHEM LANDING -N mix-"
+	},
+	{
+		"altTitles": [],
+		"artist": "庭師",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555c16202dc",
+		"legacySongID": 289,
+		"searchTerms": [],
+		"title": "solar systeM"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dr.Honda",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555cc84429d",
+		"legacySongID": 281,
+		"searchTerms": [],
+		"title": "君のハートにロックオン"
+	},
+	{
+		"altTitles": [],
+		"artist": "Power Of Nature",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555cf9a251d",
+		"legacySongID": 275,
+		"searchTerms": [],
+		"title": "Hades Doll"
+	},
+	{
+		"altTitles": [],
+		"artist": "SDMS",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555de598c67",
+		"legacySongID": 285,
+		"searchTerms": [],
+		"title": "un deux trois"
+	},
+	{
+		"altTitles": [],
+		"artist": "asaki",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555de670a99",
+		"legacySongID": 294,
+		"searchTerms": [],
+		"title": "Stargazer"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ TOTTO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555e76df56c",
+		"legacySongID": 287,
+		"searchTerms": [],
+		"title": "ビビットストリーム"
+	},
+	{
+		"altTitles": [],
+		"artist": "ニシジマユーキ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555edadfda8",
+		"legacySongID": 297,
+		"searchTerms": [],
+		"title": "Diffused Reflection"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAG",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b555f007cc90",
+		"legacySongID": 284,
+		"searchTerms": [],
+		"title": "SABER WING"
+	},
+	{
+		"altTitles": [],
+		"artist": "原口沙輔 feat.重音テト",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55608428d09",
+		"legacySongID": 323,
+		"searchTerms": [],
+		"title": "イガク"
+	},
+	{
+		"altTitles": [],
+		"artist": "猫叉Master",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5560ebfa5d6",
+		"legacySongID": 311,
+		"searchTerms": [],
+		"title": "Nightmare before oversleep"
+	},
+	{
+		"altTitles": [],
+		"artist": "アリスシャッハと魔法の楽団",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5561a07002d",
+		"legacySongID": 324,
+		"searchTerms": [],
+		"title": "バッドエンド・シンドローム"
+	},
+	{
+		"altTitles": [],
+		"artist": "aran",
+		"data": {
+			"artistJP": "ｱﾗﾝ",
+			"displayVersion": "m+",
+			"titleJP": "ﾓｵﾝﾎﾞｳﾝﾂﾞ"
+		},
+		"id": "S19e3de7b5561f3833f2",
+		"legacySongID": 301,
+		"searchTerms": [],
+		"title": "Moonbound feat. Yukacco (USAO Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "O2i3",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55620f2ef1a",
+		"legacySongID": 307,
+		"searchTerms": [],
+		"title": "Belly Flopper"
+	},
+	{
+		"altTitles": [],
+		"artist": "dj TAKA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55623343764",
+		"legacySongID": 312,
+		"searchTerms": [],
+		"title": "Magical House Cleaning / Blue or Pink"
+	},
+	{
+		"altTitles": [],
+		"artist": "sasakure.UK feat. mirto",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55626bd4a5a",
+		"legacySongID": 305,
+		"searchTerms": [],
+		"title": "jet coaster☆girl tRiCkStAr Remix"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556377a7766",
+		"legacySongID": 316,
+		"searchTerms": [],
+		"title": "走れメロンパン"
+	},
+	{
+		"altTitles": [],
+		"artist": "ETIA.",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55655833141",
+		"legacySongID": 302,
+		"searchTerms": [],
+		"title": "Demetel"
+	},
+	{
+		"altTitles": [],
+		"artist": "PSYQUI",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55666fef487",
+		"legacySongID": 303,
+		"searchTerms": [],
+		"title": "MUTEKI"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55667c17e9a",
+		"legacySongID": 319,
+		"searchTerms": [],
+		"title": "そこはかとなくロマンセ"
+	},
+	{
+		"altTitles": [],
+		"artist": "山本椛 (monotone)",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55672fafc97",
+		"legacySongID": 308,
+		"searchTerms": [],
+		"title": "突撃！ガラスのニーソ姫！"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": "ﾋﾅﾀﾋﾞｰﾋﾞﾀｰｽｳｨｰﾂ",
+			"displayVersion": "m+",
+			"titleJP": "ｽｳｨｰﾂﾜｰﾄﾏｰﾗﾅｲ"
+		},
+		"id": "S19e3de7b556757a67b8",
+		"legacySongID": 317,
+		"searchTerms": [],
+		"title": "スイーツはとまらない♪"
+	},
+	{
+		"altTitles": [],
+		"artist": "Y2K, bbno$, Enrique Iglesias & Carly Rae Jepsen",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556773cca85",
+		"legacySongID": 310,
+		"searchTerms": [],
+		"title": "Lalala Remix"
+	},
+	{
+		"altTitles": [],
+		"artist": "MasKaleido feat. ぁゅ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556856c65c0",
+		"legacySongID": 306,
+		"searchTerms": [],
+		"title": "恋するレインガール"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5568626025f",
+		"legacySongID": 315,
+		"searchTerms": [],
+		"title": "今夜はパジャマパーティ"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556864e3e8e",
+		"legacySongID": 320,
+		"searchTerms": [],
+		"title": "ホーンテッド★メイドランチ"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAG underground overlay",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5568daf0fdc",
+		"legacySongID": 304,
+		"searchTerms": [],
+		"title": "Over The \"Period\""
+	},
+	{
+		"altTitles": [],
+		"artist": "Akira Complex",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5569a561f00",
+		"legacySongID": 321,
+		"searchTerms": [],
+		"title": "BLACK JACKAL"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kanaria",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5569db21712",
+		"legacySongID": 322,
+		"searchTerms": [],
+		"title": "KING"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ YOSHITAKA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556a704043c",
+		"legacySongID": 314,
+		"searchTerms": [],
+		"title": "Lisa-RICCIA"
+	},
+	{
+		"altTitles": [],
+		"artist": "Blacklolita",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556e53e327c",
+		"legacySongID": 313,
+		"searchTerms": [],
+		"title": "CyberConnect"
+	},
+	{
+		"altTitles": [],
+		"artist": "REDALiCE",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556eb8af1b1",
+		"legacySongID": 309,
+		"searchTerms": [],
+		"title": "VEGA"
+	},
+	{
+		"altTitles": [],
+		"artist": "日向美ビタースイーツ♪",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b556f16623e7",
+		"legacySongID": 318,
+		"searchTerms": [],
+		"title": "滅びに至るエランプシス"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mystic Moon",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557070c2526",
+		"legacySongID": 341,
+		"searchTerms": [],
+		"title": "IMANOGUILTS"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ako Atak",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557080a0fa5",
+		"legacySongID": 342,
+		"searchTerms": [],
+		"title": "BabeL ～Grand Story～"
+	},
+	{
+		"altTitles": [],
+		"artist": "AKIRA YAMAOKA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5570f01a965",
+		"legacySongID": 328,
+		"searchTerms": [],
+		"title": "250bpm"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"Mutsuhiko Izumi\"",
+		"data": {
+			"artistJP": "BEMANI Sound Team \"Mutsuhiko Izumi\"",
+			"displayVersion": "m+",
+			"titleJP": "MODEL FT4"
+		},
+		"id": "S19e3de7b55722974852",
+		"legacySongID": 325,
+		"searchTerms": [],
+		"title": "MODEL FT4"
+	},
+	{
+		"altTitles": [],
+		"artist": "SHAMDEL",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5573c421821",
+		"legacySongID": 350,
+		"searchTerms": [],
+		"title": "Towards the TOWER"
+	},
+	{
+		"altTitles": [],
+		"artist": "立秋 feat.ちょこ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5575827420c",
+		"legacySongID": 352,
+		"searchTerms": [],
+		"title": "竹"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remixed by DJ Yoshitaka",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5578036c81e",
+		"legacySongID": 331,
+		"searchTerms": [],
+		"title": "GHOSTBUSTERS"
+	},
+	{
+		"altTitles": [],
+		"artist": "いよわ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5578870c0de",
+		"legacySongID": 330,
+		"searchTerms": [],
+		"title": "きゅうくらりん"
+	},
+	{
+		"altTitles": [],
+		"artist": "Power Of Nature",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5579eba8a33",
+		"legacySongID": 338,
+		"searchTerms": [],
+		"title": "少年は空を辿る"
+	},
+	{
+		"altTitles": [],
+		"artist": "庭師",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5579f868ec1",
+		"legacySongID": 347,
+		"searchTerms": [],
+		"title": "キュリオシティ"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ YOSHITAKA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557a2c9ea99",
+		"legacySongID": 334,
+		"searchTerms": [],
+		"title": "Bloody Tears (IIDX EDITION)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Power Of Nature",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557a76fc516",
+		"legacySongID": 343,
+		"searchTerms": [],
+		"title": "BabeL ～Next Story～"
+	},
+	{
+		"altTitles": [],
+		"artist": "ARM feat. とろ美",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557aac1ca80",
+		"legacySongID": 326,
+		"searchTerms": [],
+		"title": "エンドレス・てゐマパーク"
+	},
+	{
+		"altTitles": [],
+		"artist": "seiya-murai feat.ALT",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557bb95cc20",
+		"legacySongID": 329,
+		"searchTerms": [],
+		"title": "隅田川夏恋歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yukopi",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557cb50dd35",
+		"legacySongID": 327,
+		"searchTerms": [],
+		"title": "強風オールバック"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dormir",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557cf5aa0ab",
+		"legacySongID": 336,
+		"searchTerms": [],
+		"title": "αρχη"
+	},
+	{
+		"altTitles": [],
+		"artist": "Cororo",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557d4825b54",
+		"legacySongID": 340,
+		"searchTerms": [],
+		"title": "ウエンレラの氷華"
+	},
+	{
+		"altTitles": [],
+		"artist": "Coyaan",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557db8a965f",
+		"legacySongID": 335,
+		"searchTerms": [],
+		"title": "Deep tenDon Reflex"
+	},
+	{
+		"altTitles": [],
+		"artist": "Camellia ft. Ninomae Ina'nis",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557e361da02",
+		"legacySongID": 333,
+		"searchTerms": [],
+		"title": "Drenched in Air"
+	},
+	{
+		"altTitles": [],
+		"artist": "Capital Wage Association",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557e44da743",
+		"legacySongID": 344,
+		"searchTerms": [],
+		"title": "BabeL ～roof garden～"
+	},
+	{
+		"altTitles": [],
+		"artist": "RedMuffleR",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557e9ad6756",
+		"legacySongID": 337,
+		"searchTerms": [],
+		"title": "Rubeus"
+	},
+	{
+		"altTitles": [],
+		"artist": "アメツチ絵日記",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557f3323505",
+		"legacySongID": 349,
+		"searchTerms": [],
+		"title": "黎明スケッチブック"
+	},
+	{
+		"altTitles": [],
+		"artist": "yuukiss",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b557f4669ba8",
+		"legacySongID": 332,
+		"searchTerms": [],
+		"title": "「月風魔伝」龍骨鬼戦 yks Remix"
+	},
+	{
+		"altTitles": [],
+		"artist": "fallen shepherd ft. RabbiTon Strings",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55800e6591a",
+		"legacySongID": 476,
+		"searchTerms": [],
+		"title": "ENDYMION"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ TOTTO",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55812bd0914",
+		"legacySongID": 354,
+		"searchTerms": [],
+		"title": "少女アリスと箱庭幻想コンチェルト"
+	},
+	{
+		"altTitles": [],
+		"artist": "Junior Senior",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55815a18884",
+		"legacySongID": 463,
+		"searchTerms": [],
+		"title": "Move Your Feet"
+	},
+	{
+		"altTitles": [],
+		"artist": "Hommarju",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55815be8ec6",
+		"legacySongID": 388,
+		"searchTerms": [],
+		"title": "Crazy Jackpot"
+	},
+	{
+		"altTitles": [],
+		"artist": "Endorfin.",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55815f04091",
+		"legacySongID": 394,
+		"searchTerms": [],
+		"title": "white night story"
+	},
+	{
+		"altTitles": [],
+		"artist": "REDALiCE",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55819b3a0b8",
+		"legacySongID": 368,
+		"searchTerms": [],
+		"title": "HiGHER"
+	},
+	{
+		"altTitles": [],
+		"artist": "佐々木博史",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558374b8b8f",
+		"legacySongID": 366,
+		"searchTerms": [],
+		"title": "Concertino In Blue"
+	},
+	{
+		"altTitles": [],
+		"artist": "C-Show",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5583ad77bbf",
+		"legacySongID": 374,
+		"searchTerms": [],
+		"title": "On the FM"
+	},
+	{
+		"altTitles": [],
+		"artist": "ああああ茶漬け",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558416b0dcb",
+		"legacySongID": 361,
+		"searchTerms": [],
+		"title": "魔女とオバケのいたずらファクトリー"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ feat. ななひら",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5585377c2c7",
+		"legacySongID": 373,
+		"searchTerms": [],
+		"title": "イーディーエム・ジャンパーズ ({E+H}DM Reboot)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Mutsuhiko Izumi",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5585b0a558b",
+		"legacySongID": 557,
+		"searchTerms": [],
+		"title": "JET WORLD"
+	},
+	{
+		"altTitles": [],
+		"artist": "Qrispy Joybox",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5585d2c3bfd",
+		"legacySongID": 387,
+		"searchTerms": [],
+		"title": "snow prism"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dirty Androids",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5585e4316cc",
+		"legacySongID": 365,
+		"searchTerms": [],
+		"title": "City Never Sleeps (IIDX Edition)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Camellia",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55861002600",
+		"legacySongID": 364,
+		"searchTerms": [],
+		"title": "LOST TECHNOLOGIE"
+	},
+	{
+		"altTitles": [],
+		"artist": "m@sumi & kidlit",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55865bc305c",
+		"legacySongID": 395,
+		"searchTerms": [],
+		"title": "雪夜の森のプリャースカ"
+	},
+	{
+		"altTitles": [],
+		"artist": "John Robinson",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558687a0903",
+		"legacySongID": 462,
+		"searchTerms": [],
+		"title": "Kecak"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぺのれり",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5586f39bebb",
+		"legacySongID": 358,
+		"searchTerms": [],
+		"title": "Preserved Valkyria"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nhato",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55870fca583",
+		"legacySongID": 376,
+		"searchTerms": [],
+		"title": "Virus Funk"
+	},
+	{
+		"altTitles": [],
+		"artist": "M2U",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558737ae13c",
+		"legacySongID": 464,
+		"searchTerms": [],
+		"title": "PandorA"
+	},
+	{
+		"altTitles": [],
+		"artist": "CLUB SPICE",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55873e43297",
+		"legacySongID": 554,
+		"searchTerms": [],
+		"title": "CUTIE CHASER"
+	},
+	{
+		"altTitles": [],
+		"artist": "Auridy",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55876652c93",
+		"legacySongID": 384,
+		"searchTerms": [],
+		"title": "Dreaming Sweetness (SL mix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAKA",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55880100e93",
+		"legacySongID": 392,
+		"searchTerms": [],
+		"title": "V2"
+	},
+	{
+		"altTitles": [],
+		"artist": "こふ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b55886985017",
+		"legacySongID": 386,
+		"searchTerms": [],
+		"title": "snow motion"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ashley Tisdale",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b5588a17cdf5",
+		"legacySongID": 561,
+		"searchTerms": [],
+		"title": "He Said She Said"
+	},
+	{
+		"altTitles": [],
+		"artist": "Lapix",
+		"data": {
+			"artistJP": "ﾗﾋﾟｯｸｽ",
+			"displayVersion": "m+",
+			"titleJP": "ｳﾝﾀﾞ ﾒﾋﾞｭｽ"
+		},
+		"id": "S19e3de7b5589cc17df3",
+		"legacySongID": 579,
+		"searchTerms": [],
+		"title": "Under Mebius feat. 藍月なくる (YUKIYANAGI Remix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "ke-ji",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558a2bc11ef",
+		"legacySongID": 359,
+		"searchTerms": [],
+		"title": "Joyeuse"
+	},
+	{
+		"altTitles": [],
+		"artist": "わるじぇんぬ",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558a739e7cb",
+		"legacySongID": 371,
+		"searchTerms": [],
+		"title": "O-HA! Mambo ~a Shiny new Today~"
+	},
+	{
+		"altTitles": [],
+		"artist": "TheaterR",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558b051a298",
+		"legacySongID": 360,
+		"searchTerms": [],
+		"title": "Ruins"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ ミラクル☆ストーン",
+		"data": {
+			"artistJP": "DJ Miracle☆Stone",
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558b61e3b5b",
+		"legacySongID": 543,
+		"searchTerms": [],
+		"title": "HAPPY☆LUCKY☆YEAPPY"
+	},
+	{
+		"altTitles": [],
+		"artist": "Noizenecio",
+		"data": {
+			"artistJP": "ﾉｲｾﾞﾈｼｵ",
+			"displayVersion": "m+",
+			"titleJP": "ﾗｲﾎﾞﾝ"
+		},
+		"id": "S19e3de7b558bc0e2ab6",
+		"legacySongID": 525,
+		"searchTerms": [],
+		"title": "Raibon"
+	},
+	{
+		"altTitles": [],
+		"artist": "camellia",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558d650a37f",
+		"legacySongID": 389,
+		"searchTerms": [],
+		"title": "Poison Mushroom"
+	},
+	{
+		"altTitles": [],
+		"artist": "SWAN K feat. Asuka M",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558f2969f66",
+		"legacySongID": 355,
+		"searchTerms": [],
+		"title": "Love B.B.B"
+	},
+	{
+		"altTitles": [],
+		"artist": "Maozon",
+		"data": {
+			"artistJP": null,
+			"displayVersion": "m+",
+			"titleJP": null
+		},
+		"id": "S19e3de7b558fdcb6e6f",
+		"legacySongID": 375,
+		"searchTerms": [],
+		"title": "Umbral"
 	}
 ]

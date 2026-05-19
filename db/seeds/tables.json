@@ -5676,6 +5676,33 @@
 		"title": "MÚSECA (1 + 1/2)"
 	},
 	{
+		"default": true,
+		"description": "Levels for MÚSECA in PLUS.",
+		"folders": [
+			"1-plus",
+			"2-plus",
+			"3-plus",
+			"4-plus",
+			"5-plus",
+			"6-plus",
+			"7-plus",
+			"8-plus",
+			"9-plus",
+			"10-plus",
+			"11-plus",
+			"12-plus",
+			"13-plus",
+			"14-plus",
+			"15-plus",
+			"16-plus"
+		],
+		"game": "museca",
+		"id": "T19e3e03e1370d162c9f",
+		"inactive": false,
+		"legacyTableID": "museca-Single-plus-levels",
+		"title": "MÚSECA (PLUS)"
+	},
+	{
 		"default": false,
 		"description": "Levels for O.N.G.E.K.I. in bright MEMORY Act.2 Omnimix.",
 		"folders": [

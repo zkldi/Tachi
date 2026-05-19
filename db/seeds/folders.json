@@ -35567,6 +35567,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e1379805a2ba",
+		"inactive": false,
+		"legacyFolderID": "F54d56fde06e349e7712483dca58c722cf0e69b57aa44e86d5d0d63c05d7da0ff",
+		"searchTerms": [],
+		"slug": "1-plus",
+		"title": "Level 1 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2ae9c66857",
 		"inactive": false,
 		"legacyFolderID": "Fb5033381b613ec9aa09c2266e3fb3b77d0d6e1e24cb7c626b0ae6571b18e019b",
@@ -35585,6 +35596,17 @@
 		"slug": "10-1-5",
 		"title": "Level 10 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e1373bc92d1a",
+		"inactive": false,
+		"legacyFolderID": "F60c2b15eaef11e44d79e350e8526378d81b09a863ca4c699ce52a9daf57f889d",
+		"searchTerms": [],
+		"slug": "10-plus",
+		"title": "Level 10 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '10'"
 	},
 	{
@@ -35611,6 +35633,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e137302b3dac",
+		"inactive": false,
+		"legacyFolderID": "Ff58fede29c0d273fa49c0981a09d9f3f523ce53c102ec37a81e886edf99f260e",
+		"searchTerms": [],
+		"slug": "11-plus",
+		"title": "Level 11 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2a5399c930",
 		"inactive": false,
 		"legacyFolderID": "Feff48f2ba0c9a72ad2b7c10c9a64d8fbfaecb4336c008980c3c30b78a55631c2",
@@ -35629,6 +35662,17 @@
 		"slug": "12-1-5",
 		"title": "Level 12 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e137ae55d6ce",
+		"inactive": false,
+		"legacyFolderID": "F037c91707a2ebab5998e37648b65b7a86a8d362bd2d8a1ac7fbf247bdf8e4f80",
+		"searchTerms": [],
+		"slug": "12-plus",
+		"title": "Level 12 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '12'"
 	},
 	{
@@ -35655,6 +35699,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e13709fca9ac",
+		"inactive": false,
+		"legacyFolderID": "Fac40a331b24c78be0b90d111c182048c95c2e5521bff23a9d275b415a2365867",
+		"searchTerms": [],
+		"slug": "13-plus",
+		"title": "Level 13 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2ab229bd49",
 		"inactive": false,
 		"legacyFolderID": "Fb43a75d7eda130f0514abd297bbb4b4b09486c3ad81e0ecb18de2c5a968c7878",
@@ -35673,6 +35728,17 @@
 		"slug": "14-1-5",
 		"title": "Level 14 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e137bf6efde1",
+		"inactive": false,
+		"legacyFolderID": "Fc6f75e1d6a14a6c52d397682a4ee74cbf9929d5ece668f287ce3106e3379c278",
+		"searchTerms": [],
+		"slug": "14-plus",
+		"title": "Level 14 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '14'"
 	},
 	{
@@ -35699,6 +35765,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e1376c913af0",
+		"inactive": false,
+		"legacyFolderID": "Fc84d7a2a3a2d1569e7a35e086ad874328375289bb890adb341ba1e22413015e5",
+		"searchTerms": [],
+		"slug": "15-plus",
+		"title": "Level 15 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2af0957f2f",
 		"inactive": false,
 		"legacyFolderID": "F4b269bccaa0fd9a1bed1346aa2d168307c1baae5a4d076e994750ca0862098bd",
@@ -35717,6 +35794,17 @@
 		"slug": "16-1-5",
 		"title": "Level 16 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e137cfba5fe3",
+		"inactive": false,
+		"legacyFolderID": "Fb093252b1f8c4642877c62114b07352be5f83a274ca5b542885b20242d7cb0ec",
+		"searchTerms": [],
+		"slug": "16-plus",
+		"title": "Level 16 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '16'"
 	},
 	{
@@ -35743,6 +35831,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e137d109cc98",
+		"inactive": false,
+		"legacyFolderID": "Fad3a7d5ded429ca323e3674f011581388c59d91938a5fa4e788fc0242bd9ab2c",
+		"searchTerms": [],
+		"slug": "2-plus",
+		"title": "Level 2 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2a827a7d97",
 		"inactive": false,
 		"legacyFolderID": "Fbfd9a58fe40449df1628e18f9645b9c10e1208057ff48032067c4d81901d8c62",
@@ -35761,6 +35860,17 @@
 		"slug": "3-1-5",
 		"title": "Level 3 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e137c68faa10",
+		"inactive": false,
+		"legacyFolderID": "F5356206e6eb1b3e58f935fdf0a46a287b656edcf6ae692bd3d5d9db633a312d9",
+		"searchTerms": [],
+		"slug": "3-plus",
+		"title": "Level 3 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '3'"
 	},
 	{
@@ -35787,6 +35897,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e137e0effdb3",
+		"inactive": false,
+		"legacyFolderID": "F104b87a4809acd970643f2d61c8be5ad6c0d9384bea5c2a913b4cfb206fb3aa0",
+		"searchTerms": [],
+		"slug": "4-plus",
+		"title": "Level 4 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2a7fafef13",
 		"inactive": false,
 		"legacyFolderID": "F8a42c3dd3b48652e6f41658e5f767183ce5c253d7c999ecbe573144d7be04377",
@@ -35805,6 +35926,17 @@
 		"slug": "5-1-5",
 		"title": "Level 5 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e13726fa9944",
+		"inactive": false,
+		"legacyFolderID": "F4be43a972d6f165623b57d2b251ade8b09c6b67edb4004671e589d451b6a0f6a",
+		"searchTerms": [],
+		"slug": "5-plus",
+		"title": "Level 5 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '5'"
 	},
 	{
@@ -35831,6 +35963,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e13758a3379f",
+		"inactive": false,
+		"legacyFolderID": "F10980d3ab7d62efcf1a00b847a247b288d6cefdfef25526eb63bb54a6a4117cd",
+		"searchTerms": [],
+		"slug": "6-plus",
+		"title": "Level 6 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2ab398c79a",
 		"inactive": false,
 		"legacyFolderID": "Fb5e10fa9199fd1d9bdf8b7ae0f966c839f22ff636fbb5b7a2a3d4ba40bc43b69",
@@ -35849,6 +35992,17 @@
 		"slug": "7-1-5",
 		"title": "Level 7 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e1379185e26f",
+		"inactive": false,
+		"legacyFolderID": "Ffe2dd17e6cab3da2b3f9b513db633415f3a5a3fe470705d491bafb383da05f8e",
+		"searchTerms": [],
+		"slug": "7-plus",
+		"title": "Level 7 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '7'"
 	},
 	{
@@ -35875,6 +36029,17 @@
 	},
 	{
 		"game": "museca",
+		"id": "F19e3e03e137306791b4",
+		"inactive": false,
+		"legacyFolderID": "F5e89fb8dbc0811a56f7a2f5a3c1a94c225f3e2ede99802ff81e7c2b6946071eb",
+		"searchTerms": [],
+		"slug": "8-plus",
+		"title": "Level 8 (PLUS)",
+		"versionFilter": ["m+"],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "museca",
 		"id": "F19d35f0cf2ad6722ecb",
 		"inactive": false,
 		"legacyFolderID": "F87345cd5f190cbda888fad39e5de60fac215f9adc94c82fd99e2fbe1c7cdf4a0",
@@ -35893,6 +36058,17 @@
 		"slug": "9-1-5",
 		"title": "Level 9 (1 + 1/2)",
 		"versionFilter": ["1.5"],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "museca",
+		"id": "F19e3e03e137a10d8865",
+		"inactive": false,
+		"legacyFolderID": "Fcc7edfdabc7943171652386ae37eb6d7a88fbb1e97ff63174778a59d7a98d242",
+		"searchTerms": [],
+		"slug": "9-plus",
+		"title": "Level 9 (PLUS)",
+		"versionFilter": ["m+"],
 		"where": "chart.level = '9'"
 	},
 	{

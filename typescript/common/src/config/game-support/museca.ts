@@ -99,6 +99,7 @@ export const GAME_MUSECA_CONF = {
 	versions: {
 		"1.5": "1 + 1/2",
 		"1.5-b": "1 + 1/2 Rev. B",
+		"m+": "PLUS",
 	},
 	/* eslint-enable quote-props */
 
