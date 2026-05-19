@@ -258,6 +258,7 @@
       "dependencies": {
         "@octokit/app": "catalog:",
         "@octokit/webhooks-types": "catalog:",
+        "bliss": "workspace:*",
         "dotenv": "catalog:",
         "express": "catalog:",
         "prudence": "catalog:",

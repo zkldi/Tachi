@@ -5,6 +5,7 @@ import express from "express";
 import { URLSearchParams } from "url";
 
 import { ProcessEnv } from "./config";
+import { log } from "#utils/log";
 
 const app = new App({
 	appId: ProcessEnv.appId,
@@ -17,6 +18,26 @@ const app = new App({
 		clientSecret: ProcessEnv.clientSecret,
 	},
 });
+
+const COMMENT_MARKERS = {
+	questProposal: "<!-- tachi-ghbot:quest-proposal -->",
+	seedDiff: "<!-- tachi-ghbot:seed-diff -->",
+} as const;
+
+type CommentMarker = (typeof COMMENT_MARKERS)[keyof typeof COMMENT_MARKERS];
+
+type OctokitRequester = {
+	request: (route: string, params: object) => Promise<{ data: unknown }>;
+};
+
+type IssueComment = {
+	body: string;
+	id: number;
+};
+
+function withCommentMarker(message: string, marker: CommentMarker): string {
+	return `${message.trimEnd()}\n${marker}`;
+}
 
 /**
  * Create a response that contains a link to the seeds diff viewer on seeds.tachi.ac.
@@ -98,7 +119,70 @@ async function listAllPullFiles(
 	return out;
 }
 
-async function sendMsg(message: string, octokit: any, repo: Repository, issue: number) {
+async function findBotComment(
+	octokit: OctokitRequester,
+	owner: string,
+	repoName: string,
+	issueNumber: number,
+	marker: CommentMarker,
+): Promise<IssueComment | undefined> {
+	let page = 1;
+	while (true) {
+		// eslint-disable-next-line no-await-in-loop -- pagination must be sequential
+		const { data } = await octokit.request(
+			"GET /repos/{owner}/{repo}/issues/{issue_number}/comments",
+			{
+				owner,
+				repo: repoName,
+				issue_number: issueNumber,
+				per_page: 100,
+				page,
+			},
+		);
+		const batch = data as IssueComment[];
+		const existing = batch.find((comment) => comment.body.includes(marker));
+		if (existing) {
+			return existing;
+		}
+		if (batch.length < 100) {
+			break;
+		}
+		page += 1;
+	}
+	return undefined;
+}
+
+async function upsertBotComment(
+	message: string,
+	marker: CommentMarker,
+	octokit: OctokitRequester,
+	repo: Repository,
+	issueNumber: number,
+): Promise<"created" | "updated"> {
+	const owner = repo.owner.login;
+	const body = withCommentMarker(message, marker);
+	const existing = await findBotComment(octokit, owner, repo.name, issueNumber, marker);
+
+	if (existing) {
+		await octokit.request("PATCH /repos/{owner}/{repo}/issues/comments/{comment_id}", {
+			owner,
+			repo: repo.name,
+			comment_id: existing.id,
+			body,
+		});
+		return "updated";
+	}
+
+	await octokit.request("POST /repos/{owner}/{repo}/issues/{issue_number}/comments", {
+		owner,
+		repo: repo.name,
+		issue_number: issueNumber,
+		body,
+	});
+	return "created";
+}
+
+async function sendMsg(message: string, octokit: OctokitRequester, repo: Repository, issue: number) {
 	await octokit.request("POST /repos/{owner}/{repo}/issues/{issue_number}/comments", {
 		owner: repo.owner.login,
 		repo: repo.name,
@@ -114,15 +198,27 @@ app.webhooks.on(
 		const pr = payload.pull_request;
 		const isQuestProposal = pr.head.ref.startsWith("quest-proposal/");
 
+		log.info(
+			{
+				action: payload.action,
+				prNumber: pr.number,
+				branch: pr.head.ref,
+				isQuestProposal,
+			},
+			"Handling pull_request webhook.",
+		);
+
 		// Quest-proposal PRs get a dedicated preview comment; all other PRs that
 		// touch db/seeds/ get the standard seed-diff link.
 		if (isQuestProposal) {
-			await sendMsg(
+			const commentAction = await upsertBotComment(
 				mkQuestProposalMsg(pr.base.sha, pr.head.sha, pr.number),
+				COMMENT_MARKERS.questProposal,
 				octokit,
 				repo,
 				pr.number,
 			);
+			log.info({ prNumber: pr.number, commentAction }, "Upserted quest-proposal comment.");
 			return;
 		}
 
@@ -135,15 +231,25 @@ app.webhooks.on(
 			);
 
 			if (prTouchesSeeds(filesChanged)) {
-				await sendMsg(
+				const commentAction = await upsertBotComment(
 					mkSeedDiffViewMsg(pr.base.sha, pr.head.sha, pr.number),
+					COMMENT_MARKERS.seedDiff,
 					octokit,
 					repo,
 					pr.number,
 				);
+				log.info({ prNumber: pr.number, commentAction }, "Upserted seed-diff comment.");
+				return;
 			}
+
+			log.debug({ prNumber: pr.number }, "PR does not touch db/seeds; no comment posted.");
 		} catch (err) {
-			await sendMsg(
+			log.error(
+				{ err, prNumber: pr.number },
+				"Failed to determine whether PR touches db/seeds.",
+			);
+
+			const commentAction = await upsertBotComment(
 				`I failed horribly figuring out whether this was a seeds diff or not. I'm sorry!
 
 *****
@@ -156,10 +262,12 @@ ${err}
 *****
 
 ${mkSeedDiffViewMsg(pr.base.sha, pr.head.sha, pr.number)}`,
+				COMMENT_MARKERS.seedDiff,
 				octokit,
 				repo,
 				pr.number,
 			);
+			log.info({ prNumber: pr.number, commentAction }, "Upserted seed-diff error comment.");
 		}
 	},
 );
@@ -167,14 +275,29 @@ ${mkSeedDiffViewMsg(pr.base.sha, pr.head.sha, pr.number)}`,
 app.webhooks.on(["pull_request.closed"], async ({ payload }) => {
 	const pr = payload.pull_request;
 
+	log.info(
+		{
+			action: payload.action,
+			prNumber: pr.number,
+			branch: pr.head.ref,
+			merged: pr.merged,
+		},
+		"Handling pull_request.closed webhook.",
+	);
+
 	// Only fire for merged PRs whose branch starts with quest-proposal/
 	if (!pr.merged || !pr.head.ref.startsWith("quest-proposal/")) {
+		log.debug(
+			{ prNumber: pr.number, merged: pr.merged, branch: pr.head.ref },
+			"Skipping quest-proposal merge notification.",
+		);
 		return;
 	}
 
 	if (!ProcessEnv.tachiApiOrigin || !ProcessEnv.tachiWebhookSecret) {
-		console.warn(
-			`Merged quest-proposal PR #${pr.number} but TACHI_API_ORIGIN or TACHI_WEBHOOK_SECRET are not set. Skipping server notification.`,
+		log.warn(
+			{ prNumber: pr.number },
+			"Merged quest-proposal PR but TACHI_API_ORIGIN or TACHI_WEBHOOK_SECRET are not set; skipping server notification.",
 		);
 		return;
 	}
@@ -190,14 +313,15 @@ app.webhooks.on(["pull_request.closed"], async ({ payload }) => {
 		});
 
 		if (!res.ok) {
-			console.error(
-				`Failed to notify Tachi server of merged PR #${pr.number}: ${res.status} ${res.statusText}`,
+			log.error(
+				{ prNumber: pr.number, status: res.status, statusText: res.statusText },
+				"Failed to notify Tachi server of merged quest-proposal PR.",
 			);
 		} else {
-			console.log(`Notified Tachi server: quest-proposal PR #${pr.number} merged.`);
+			log.info({ prNumber: pr.number }, "Notified Tachi server: quest-proposal PR merged.");
 		}
 	} catch (err) {
-		console.error(`Error notifying Tachi server of merged PR #${pr.number}:`, err);
+		log.error({ err, prNumber: pr.number }, "Error notifying Tachi server of merged quest-proposal PR.");
 	}
 });
 
@@ -209,6 +333,11 @@ app.webhooks.on(["issue_comment.created"], async ({ octokit, payload }) => {
 			.split("\n")[0]!
 			.split(/\s+/u)[1]
 			?.replace(/[^a-z]/u, "");
+
+		log.info(
+			{ prNumber: payload.issue.number, cmd: cmd ?? "(none)" },
+			"Handling issue_comment +bot command.",
+		);
 
 		switch (cmd) {
 			case "ping": {
@@ -253,5 +382,5 @@ expressApp.use(serverMiddleware);
 
 expressApp.get("/.deploy/up", (_req, res) => res.sendStatus(200));
 
-console.log(`Listening on port ${ProcessEnv.port}.`);
+log.info({ port: ProcessEnv.port }, "Listening for GitHub webhooks.");
 expressApp.listen(ProcessEnv.port);
