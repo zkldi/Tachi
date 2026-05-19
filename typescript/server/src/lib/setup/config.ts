@@ -596,10 +596,7 @@ const PG_POOL_MAX = parseIntEnv("PG_POOL_MAX", 10);
  * flavoured test budget. Set via TACHI_BCRYPT_SALT_ROUNDS (defaults to the
  * bcryptjs minimum, 4, when NODE_ENV=test).
  */
-const BCRYPT_SALT_ROUNDS = parseIntEnv(
-	"TACHI_BCRYPT_SALT_ROUNDS",
-	NODE_ENV === "test" ? 4 : 12,
-);
+const BCRYPT_SALT_ROUNDS = parseIntEnv("TACHI_BCRYPT_SALT_ROUNDS", NODE_ENV === "test" ? 4 : 12);
 
 if (NODE_ENV !== "test" && BCRYPT_SALT_ROUNDS < 12) {
 	log.crit(

@@ -12,7 +12,6 @@ export { API_V1_ROUTER };
 // imported. Ordering only matters where one route prefix shadows another
 // (e.g. `/users/_userID` after `/users`); within a group the order below
 // mirrors the original `await import(...)` block.
-/* eslint-disable import/order, simple-import-sort/imports */
 import "./status/router";
 import "./auth/router";
 import "./admin/router";
@@ -33,7 +32,6 @@ import "./localdev/router";
 import "./seeds/router";
 import "./proposals/router";
 import "./scores/_scoreID/router";
-
 import "./users/_userID/router";
 import "./users/_userID/pfp/router";
 import "./users/_userID/banner/router";
@@ -50,7 +48,6 @@ import "./users/_userID/integrations/kai/_kaiType/router";
 import "./users/_userID/integrations/fervidex/router";
 import "./users/_userID/integrations/kshook-sv6c/router";
 import "./users/_userID/integrations/myt/router";
-
 import "./users/_userID/games/@gameSpecificRoutes/bms/router";
 import "./users/_userID/games/@gameSpecificRoutes/iidx/router";
 import "./users/_userID/games/@gameSpecificRoutes/jubeat/router";
@@ -67,7 +64,6 @@ import "./users/_userID/games/_game/_playtype/folders/router";
 import "./users/_userID/games/_game/_playtype/folders/_folderSlug/router";
 import "./users/_userID/games/_game/_playtype/router";
 import "./users/_userID/games/_game/_playtype/rivals/router";
-/* eslint-enable import/order, simple-import-sort/imports */
 
 const router = API_V1_ROUTER.build();
 
