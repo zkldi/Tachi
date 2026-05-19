@@ -1,7 +1,7 @@
 [
 	{
 		"altTitles": [],
-		"artist": "Last Note. feat. GUMI",
+		"artist": "Last Note． feat. GUMI",
 		"data": {
 			"artistJP": "ﾗｽﾄﾉｰﾄﾌｨｰﾁｬﾘﾝｸﾞｸﾞﾐ",
 			"displayVersion": "1",
@@ -147,7 +147,7 @@
 		"artist": "Music by MasKaleido, Vocal by ぁゅ",
 		"data": {
 			"artistJP": "ﾏｽｶﾚｲﾄﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5-b",
 			"titleJP": "ｽﾀｰﾀﾞｽﾄﾏｰﾒｲﾄﾞ"
 		},
 		"id": "S19d35e0b42f6d1ef0bb",
@@ -212,7 +212,7 @@
 		"artist": "millstones",
 		"data": {
 			"artistJP": "ﾐﾙｽﾄｰﾝｽﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5-b",
 			"titleJP": "ﾄﾏﾄﾘｰﾌﾌﾞﾚｲｸｽ"
 		},
 		"id": "S19d35e0b4348d400e96",
@@ -224,9 +224,9 @@
 		"altTitles": [],
 		"artist": "VALLEYSTONE feat. 紫崎 雪",
 		"data": {
-			"artistJP": "ﾊﾞﾘｰｽﾄｰﾝ ﾋｭｰﾁｬﾘﾝｸﾞ ｼｻﾞｷﾕｷ",
+			"artistJP": "ﾊﾞﾘｰｽﾄｰﾝﾋｭｰﾁｬﾘﾝｸﾞｼｻﾞｷﾕｷ",
 			"displayVersion": "1",
-			"titleJP": "ﾗﾌﾞｼｯｸ ﾗﾌﾞﾁｭｰﾝ"
+			"titleJP": "ﾗﾌﾞｼｯｸﾗﾌﾞﾁｭｰﾝ"
 		},
 		"id": "S19d35e0b435a966cff4",
 		"legacySongID": 18,
@@ -278,7 +278,7 @@
 		"data": {
 			"artistJP": "ｸﾛﾏ",
 			"displayVersion": "1",
-			"titleJP": "ﾎﾟﾝﾎﾟﾝﾎﾟﾝﾎﾟｺﾀﾞｲｾﾝｿｳ!"
+			"titleJP": "ﾎﾟﾝﾎﾟﾝﾎﾟﾝﾎﾟｺﾀﾞｲｾﾝｿｳ"
 		},
 		"id": "S19d35e0b439c7c2ca64",
 		"legacySongID": 22,
@@ -368,7 +368,7 @@
 		"artist": "C-Show",
 		"data": {
 			"artistJP": "ｼｼｮｳ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾕｰｴﾇｵｰｴﾝﾜｶﾉｼﾞｮﾅﾉｶﾄｰﾎﾘｯｸﾐｯｸｽ"
 		},
 		"id": "S19d35e0b4408cf2f105",
@@ -413,7 +413,7 @@
 		"id": "S19d35e0b44440c9f6eb",
 		"legacySongID": 33,
 		"searchTerms": [],
-		"title": "inverted RAINBOW (M齣SECA Ver.)"
+		"title": "inverted RAINBOW (MÚSECA Ver.)"
 	},
 	{
 		"altTitles": [],
@@ -433,7 +433,7 @@
 		"artist": "埼玉最終兵器",
 		"data": {
 			"artistJP": "ｻｲﾀﾏｻｲｼｭｳﾍｲｷ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾃﾝｸｳﾉﾊﾅﾉﾐﾔｺ"
 		},
 		"id": "S19d35e0b44658211805",
@@ -446,7 +446,7 @@
 		"artist": "XL Project -yanagizm side-",
 		"data": {
 			"artistJP": "ｴｸｾﾙﾌﾟﾛｼﾞｪｸﾄﾔﾅｷﾞｽﾞﾑｻｲﾄﾞ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾎｵｽﾞｷﾐﾀｲﾆｱｶｲﾀﾏｼｲｼﾞｮｳﾈﾂｽﾀｲﾙ"
 		},
 		"id": "S19d35e0b448ca11f6d5",
@@ -459,7 +459,7 @@
 		"artist": "アゴアニキ",
 		"data": {
 			"artistJP": "ｱｺﾞｱﾆｷ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾀﾞﾌﾞﾙﾗﾘｱｯﾄ"
 		},
 		"id": "S19d35e0b4491f73dd42",
@@ -498,7 +498,7 @@
 		"artist": "まふまふ",
 		"data": {
 			"artistJP": "ﾏﾌﾏﾌ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾊｰﾄﾉｱﾄｱｼﾞ"
 		},
 		"id": "S19d35e0b45165912643",
@@ -846,7 +846,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "溝口ゆうま feat. みこ齶なち齶あい",
+		"artist": "溝口ゆうま feat. みこ♡なち♡あい",
 		"data": {
 			"artistJP": "ﾐｿﾞﾉｸﾁﾕｳﾏﾌｭｰﾁｬﾘﾝｸﾞﾐｺﾅﾁｱｲ",
 			"displayVersion": "1",
@@ -859,7 +859,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "miko齶nachi feat.u-z",
+		"artist": "miko♡nachi feat.u-z",
 		"data": {
 			"artistJP": "ﾐｺﾊｰﾄﾅﾁﾌｨｰﾁｬﾘﾝｸﾞﾕｰｼﾞ",
 			"displayVersion": "1",
@@ -1089,7 +1089,7 @@
 		"id": "S19d35e0b47f5beefa69",
 		"legacySongID": 92,
 		"searchTerms": [],
-		"title": "齧rche"
+		"title": "Ärche"
 	},
 	{
 		"altTitles": [],
@@ -1187,7 +1187,7 @@
 		"artist": "Nem",
 		"data": {
 			"artistJP": "ﾈﾑ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｱｱｽﾊﾞﾗｼｷﾆｬﾝｾｲ"
 		},
 		"id": "S19d35e0b488cde6f260",
@@ -1200,7 +1200,7 @@
 		"artist": "トーマ",
 		"data": {
 			"artistJP": "ﾄｰﾏ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾏﾎｳｼｮｳｼﾞｮｺｳﾌｸﾛﾝ"
 		},
 		"id": "S19d35e0b48a215882c2",
@@ -1213,7 +1213,7 @@
 		"artist": "M.S.S Project",
 		"data": {
 			"artistJP": "ｴﾑｴｽｴｽﾌﾟﾛｼﾞｪｸﾄ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｴﾑｴｽｴｽﾌﾟﾗﾈｯﾄ"
 		},
 		"id": "S19d35e0b48bc9b3561d",
@@ -1239,7 +1239,7 @@
 		"artist": "n.k",
 		"data": {
 			"artistJP": "ｴﾇｹｰ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｺﾉﾌｻﾞｹﾀｽﾊﾞﾗｼｷｾｶｲﾊ､ﾎﾞｸﾉﾀﾒﾆｱﾙ"
 		},
 		"id": "S19d35e0b48eed08c590",
@@ -1252,7 +1252,7 @@
 		"artist": "n-buna",
 		"data": {
 			"artistJP": "ﾅﾌﾞﾅ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾑｼﾞﾝｴｷ"
 		},
 		"id": "S19d35e0b48fab7c3dfa",
@@ -1278,7 +1278,7 @@
 		"artist": "Pa's Lam System",
 		"data": {
 			"artistJP": "ﾊﾟｽﾞﾗﾑｼｽﾃﾑ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ｲﾌ"
 		},
 		"id": "S19d35e0b4912dffb3b9",
@@ -1291,7 +1291,7 @@
 		"artist": "Yu_Asahina",
 		"data": {
 			"artistJP": "ﾕｳｱｻﾋﾅ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾌｧﾝｸｼｮﾝﾅﾝﾊﾞｰﾌｧｲﾌﾞ"
 		},
 		"id": "S19d35e0b492bcaa581a",
@@ -1304,7 +1304,7 @@
 		"artist": "Yunomi",
 		"data": {
 			"artistJP": "ﾕﾉﾐ",
-			"displayVersion": "1",
+			"displayVersion": "1.5",
 			"titleJP": "ﾐﾀﾗｼﾌﾟﾗﾄﾆｯｸﾌｨｰﾁｬﾘﾝｸﾞﾆｶﾓｷｭ"
 		},
 		"id": "S19d35e0b49326eb55c9",
@@ -1707,7 +1707,7 @@
 		"artist": "Daisuke Ohnuma",
 		"data": {
 			"artistJP": "ﾀﾞｲｽｹｵｵﾇﾏ",
-			"displayVersion": "15",
+			"displayVersion": "1.5",
 			"titleJP": "ｸﾗｯｸﾕｱｿｳﾙ"
 		},
 		"id": "S19d35e0b4b942b6dde2",
@@ -2643,12 +2643,51 @@
 		"artist": "ぺのれり",
 		"data": {
 			"artistJP": "ﾍﾟﾉﾚﾘ",
-			"displayVersion": "1.5",
+			"displayVersion": "1.5-b",
 			"titleJP": "ｴｳﾞｧｰﾗｽﾃｨﾝｸﾞﾒｯｾｰｼﾞ"
 		},
 		"id": "S19d35e0b506c6a58ca7",
 		"legacySongID": 226,
 		"searchTerms": [],
 		"title": "Everlasting Message"
+	},
+	{
+		"altTitles": [],
+		"artist": "ハチ",
+		"data": {
+			"artistJP": "ﾊﾁ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾄﾞｰﾅﾂﾎｰﾙ"
+		},
+		"id": "S19e41e45a8cdc32ab33",
+		"legacySongID": 42,
+		"searchTerms": [],
+		"title": "ドーナツホール"
+	},
+	{
+		"altTitles": [],
+		"artist": "ハチ",
+		"data": {
+			"artistJP": "ﾊﾁ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾏﾄﾘｮｼｶ"
+		},
+		"id": "S19e41e45a8cf93f46cf",
+		"legacySongID": 41,
+		"searchTerms": [],
+		"title": "マトリョシカ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ノマ",
+		"data": {
+			"artistJP": "ﾉﾏ",
+			"displayVersion": "1.5",
+			"titleJP": "ﾌﾞﾚｲﾝﾊﾟﾜｰ"
+		},
+		"id": "S19e41e45a8eb33ddbcf",
+		"legacySongID": 171,
+		"searchTerms": [],
+		"title": "Brain Power"
 	}
 ]
