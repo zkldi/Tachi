@@ -1625,7 +1625,8 @@
 			"expert-verse-intl",
 			"master-verse-intl",
 			"ultima-verse-intl",
-			"master-ultima-verse-intl"
+			"master-ultima-verse-intl",
+			"worlds-end-verse-intl"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d593150c3074",
@@ -1677,7 +1678,8 @@
 			"expert-verse-omni",
 			"master-verse-omni",
 			"ultima-verse-omni",
-			"master-ultima-verse-omni"
+			"master-ultima-verse-omni",
+			"worlds-end-verse-omni"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d5938e2265fc",
@@ -1729,7 +1731,8 @@
 			"expert-verse",
 			"master-verse",
 			"ultima-verse",
-			"master-ultima-verse"
+			"master-ultima-verse",
+			"worlds-end-verse"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d593d4cd21e7",
@@ -1781,7 +1784,8 @@
 			"expert-xverse-intl",
 			"master-xverse-intl",
 			"ultima-xverse-intl",
-			"master-ultima-xverse-intl"
+			"master-ultima-xverse-intl",
+			"worlds-end-xverse-intl"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d593bc50518b",
@@ -1833,7 +1837,8 @@
 			"expert-xverse-omni",
 			"master-xverse-omni",
 			"ultima-xverse-omni",
-			"master-ultima-xverse-omni"
+			"master-ultima-xverse-omni",
+			"worlds-end-xverse-omni"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d593120dd85e",
@@ -1868,7 +1873,8 @@
 			"14-xversex-intl",
 			"14p-xversex-intl",
 			"15-xversex-intl",
-			"15p-xversex-intl"
+			"15p-xversex-intl",
+			"16-xversex-intl"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79b02998fc6",
@@ -1885,7 +1891,8 @@
 			"expert-xversex-intl",
 			"master-xversex-intl",
 			"ultima-xversex-intl",
-			"master-ultima-xversex-intl"
+			"master-ultima-xversex-intl",
+			"worlds-end-xversex-intl"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79b6b64cdf3",
@@ -1920,7 +1927,8 @@
 			"14-xversex-omni",
 			"14p-xversex-omni",
 			"15-xversex-omni",
-			"15p-xversex-omni"
+			"15p-xversex-omni",
+			"16-xversex-omni"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79b964e77a9",
@@ -1937,7 +1945,8 @@
 			"expert-xversex-omni",
 			"master-xversex-omni",
 			"ultima-xversex-omni",
-			"master-ultima-xversex-omni"
+			"master-ultima-xversex-omni",
+			"worlds-end-xversex-omni"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79b67d9dfa6",
@@ -1972,7 +1981,8 @@
 			"14-xversex",
 			"14p-xversex",
 			"15-xversex",
-			"15p-xversex"
+			"15p-xversex",
+			"16-xversex"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79ba5f3c874",
@@ -1989,7 +1999,8 @@
 			"expert-xversex",
 			"master-xversex",
 			"ultima-xversex",
-			"master-ultima-xversex"
+			"master-ultima-xversex",
+			"worlds-end-xversex"
 		],
 		"game": "chunithm",
 		"id": "T19e3343d79bf63c1849",
@@ -2041,7 +2052,8 @@
 			"expert-xverse",
 			"master-xverse",
 			"ultima-xverse",
-			"master-ultima-xverse"
+			"master-ultima-xverse",
+			"worlds-end-xverse"
 		],
 		"game": "chunithm",
 		"id": "T19d35f0d59392b4398d",

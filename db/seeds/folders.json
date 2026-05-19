@@ -9450,6 +9450,39 @@
 	},
 	{
 		"game": "chunithm",
+		"id": "F19e3ea332a16b1cfd30",
+		"inactive": false,
+		"legacyFolderID": "Fcba47513351918a76f87a7d8742e480a39bc6ff0c3dc15eadeecf2537924e654",
+		"searchTerms": [],
+		"slug": "16-xversex-intl",
+		"title": "Level 16 (X-VERSE-X International)",
+		"versionFilter": ["xversex-intl"],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea3b4e8c66d5d6c",
+		"inactive": false,
+		"legacyFolderID": "F99a7b481c33198beedd0b7e74fc7b57c820d3cc9a292e25e20c60a37345b2c89",
+		"searchTerms": [],
+		"slug": "16-xversex-omni",
+		"title": "Level 16 (X-VERSE-X Omnimix)",
+		"versionFilter": ["xversex-omni"],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea23ece607f5777",
+		"inactive": false,
+		"legacyFolderID": "Fe4c4c4b575bb5879ba5190614ae383c605d792fad0808dd34862c05aa9972332",
+		"searchTerms": [],
+		"slug": "16-xversex",
+		"title": "Level 16 (X-VERSE-X)",
+		"versionFilter": ["xversex"],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
 		"id": "F19d35f0cf27c2e74a2b",
 		"inactive": true,
 		"legacyFolderID": "F3eacd6abcbf65ee2d13f4793a47c5fdc28e705187d68216dd307918f05ef5d63",
@@ -12835,6 +12868,105 @@
 		"title": "ULTIMA (X-VERSE)",
 		"versionFilter": ["xverse"],
 		"where": "chart.difficulty = 'ULTIMA'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea6628fba765c60",
+		"inactive": false,
+		"legacyFolderID": "Ffbe49e4ce85eb611223a72f3840552a151ca04945f26e78891c7898f1b7e42d4",
+		"searchTerms": [],
+		"slug": "worlds-end-verse-intl",
+		"title": "WORLD'S END (VERSE International)",
+		"versionFilter": ["verse-intl"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea66ea28016b536",
+		"inactive": false,
+		"legacyFolderID": "Ff8f5ec2b2aaee5946ce1ad4d9c0d85bf62bfa963a66b6494eebe834182f5e0eb",
+		"searchTerms": [],
+		"slug": "worlds-end-verse-omni",
+		"title": "WORLD'S END (VERSE Omnimix)",
+		"versionFilter": ["verse-omni"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea5ee548d7cac3c",
+		"inactive": false,
+		"legacyFolderID": "Fa27f071f2f04136d4719f283ddf7bb3a716587f0d52807ba748237660d7121a1",
+		"searchTerms": [],
+		"slug": "worlds-end-verse",
+		"title": "WORLD'S END (VERSE)",
+		"versionFilter": ["verse"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea681755feb202f",
+		"inactive": false,
+		"legacyFolderID": "F3b9a53ddfcae024334f7e11c36f6306e0f79127c8d8eedbe68fcc302c18dfd77",
+		"searchTerms": [],
+		"slug": "worlds-end-xverse-intl",
+		"title": "WORLD'S END (X-VERSE International)",
+		"versionFilter": ["xverse-intl"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea688c9aca70727",
+		"inactive": false,
+		"legacyFolderID": "F12ad787aff38d2eff1c509b2edd1fdfd903b5128b7a99657e030e8e275c720a8",
+		"searchTerms": [],
+		"slug": "worlds-end-xverse-omni",
+		"title": "WORLD'S END (X-VERSE Omnimix)",
+		"versionFilter": ["xverse-omni"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea332a248cb1e4c",
+		"inactive": false,
+		"legacyFolderID": "F14d53464ca145adf7896d2ef3da5c96236838b826cb6e88ff251de2ba5938ceb",
+		"searchTerms": [],
+		"slug": "worlds-end-xversex-intl",
+		"title": "WORLD'S END (X-VERSE-X International)",
+		"versionFilter": ["xversex-intl"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea3b4e8a7d47189",
+		"inactive": false,
+		"legacyFolderID": "Fd3cd552122e4a6178305a32e725430e9772942f75e96aedbc27948496a2a93ad",
+		"searchTerms": [],
+		"slug": "worlds-end-xversex-omni",
+		"title": "WORLD'S END (X-VERSE-X Omnimix)",
+		"versionFilter": ["xversex-omni"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea23ece2069b676",
+		"inactive": false,
+		"legacyFolderID": "F47ac3238489fe98c242885435a3a7cbf1ecb1d1cdf8d436a1abf46874377cb42",
+		"searchTerms": [],
+		"slug": "worlds-end-xversex",
+		"title": "WORLD'S END (X-VERSE-X)",
+		"versionFilter": ["xversex"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea67b46f0df934e",
+		"inactive": false,
+		"legacyFolderID": "F692942a465068bf9aaa14030a9cb6656220920ce4ef6e2471680a5435670cd32",
+		"searchTerms": [],
+		"slug": "worlds-end-xverse",
+		"title": "WORLD'S END (X-VERSE)",
+		"versionFilter": ["xverse"],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
 	},
 	{
 		"game": "ddr-dp",
