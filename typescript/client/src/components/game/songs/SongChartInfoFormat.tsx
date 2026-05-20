@@ -29,7 +29,8 @@ export default function SongChartInfoFormat({
 		);
 	}
 	if (["arcaea", "chunithm", "maimaidx", "ongeki"].includes(gameGroup)) {
-		let displayVersion = chart?.data.displayVersion ?? song.data.displayVersion;
+		let displayVersion =
+			(chart?.data as any).displayVersion ?? (song.data as any).displayVersion;
 		if (gameGroup === "arcaea") {
 			displayVersion = `version ${displayVersion}`;
 		}

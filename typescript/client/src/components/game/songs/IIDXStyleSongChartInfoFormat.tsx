@@ -20,7 +20,9 @@ export default function IIDXStyleSongChartInfoFormat({
 }) {
 	let genre: string;
 	if (game === "ongeki") {
-		genre = (song as SongDocument<"ongeki">).data.flavorGenre ?? song.data.genre;
+		genre =
+			(song as SongDocument<"ongeki">).data.flavorGenre ??
+			(song as SongDocument<"ongeki">).data.genre;
 	} else if (game === "arcaea") {
 		genre = (song as SongDocument<"arcaea">).data.songPack;
 	} else {
