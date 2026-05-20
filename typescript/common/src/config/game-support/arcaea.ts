@@ -134,7 +134,7 @@ export const GAME_ARCAEA_CONF = {
 	chartData: z.strictObject({
 		inGameStrID: z.string(),
 		displayVersion: z.string(),
-		notecount: zodNonNegativeInt,
+		notecount: z.number().int().positive().optional(),
 	}),
 
 	preferences: z.strictObject({}),

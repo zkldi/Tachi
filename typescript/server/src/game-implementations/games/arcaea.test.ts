@@ -8,7 +8,7 @@ import { mongoScoreDataToPg } from "#lib/v3/migration-tools";
 import DB from "#services/pg/db";
 import { dmf, mkMockPB, mkMockScore } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
-import { TestingArcaeaSheriruthFTR, TestingArcaeaSheriruthSong } from "#test-utils/test-data";
+import { TestingArcaeaSheriruthFTR, TestingArcaeaSheriruthPST, TestingArcaeaSheriruthSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
 	ARCAEA_GRADES,
@@ -20,6 +20,7 @@ import {
 import { beforeEach, describe, expect, it } from "vitest";
 
 const chart = TestingArcaeaSheriruthFTR;
+const chartWithoutNotecount = TestingArcaeaSheriruthPST;
 
 const baseMetrics: MongoProvidedMetrics["arcaea"] = {
 	lamp: "CLEAR",
@@ -318,7 +319,11 @@ describe("ARCAEA_IMPL", () => {
 			);
 
 			expect(ARCAEA_IMPL.chartSpecificValidators.score(10_001_152, chart)).toBe(
-				`Score cannot exceed ${10_000_000 + chart.data.notecount} for this chart.`,
+				`Score cannot exceed ${10_000_000 + (chart.data.notecount ?? 0)} for this chart.`,
+			);
+
+			expect(ARCAEA_IMPL.chartSpecificValidators.score(10_001_152, chartWithoutNotecount)).toBe(
+				true
 			);
 		});
 	});

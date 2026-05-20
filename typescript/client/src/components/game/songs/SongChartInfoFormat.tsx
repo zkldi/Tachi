@@ -29,9 +29,15 @@ export default function SongChartInfoFormat({
 		);
 	}
 	if (["arcaea", "chunithm", "maimaidx", "ongeki"].includes(gameGroup)) {
-		let displayVersion =
-			(chart?.data as any).displayVersion ?? (song.data as any).displayVersion;
-		if (gameGroup === "arcaea") {
+		let displayVersion: string | null = null;
+
+		if (chart !== null && "displayVersion" in chart.data) {
+			displayVersion = chart.data.displayVersion;
+		} else if ("displayVersion" in song.data) {
+			displayVersion = song.data.displayVersion;
+		}
+
+		if (displayVersion !== null && gameGroup === "arcaea") {
 			displayVersion = `version ${displayVersion}`;
 		}
 		return (
@@ -53,9 +59,11 @@ export default function SongChartInfoFormat({
 								prefix="Internal Level: "
 							/>
 						</h6>
-						<h6>
-							<Muted>From {displayVersion}</Muted>
-						</h6>
+						{displayVersion && (
+							<h6>
+								<Muted>From {displayVersion}</Muted>
+							</h6>
+						)}
 					</>
 				)}
 			</>

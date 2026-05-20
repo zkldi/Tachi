@@ -15,7 +15,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 				return `Score must be non-negative. Got ${score}`;
 			}
 
-			if (score > 10_000_000 + chart.data.notecount) {
+			if (chart.data.notecount && score > 10_000_000 + chart.data.notecount) {
 				return `Score cannot exceed ${10_000_000 + chart.data.notecount} for this chart.`;
 			}
 

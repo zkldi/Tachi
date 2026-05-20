@@ -1478,6 +1478,22 @@ export const TestingArcaeaSheriruthFTR: ChartDocument<"arcaea"> = {
 	versions: ["mobile"],
 };
 
+export const TestingArcaeaSheriruthPST: ChartDocument<"arcaea"> = {
+	game: "arcaea",
+	chartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55f",
+	legacyChartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55f",
+	data: {
+		displayVersion: "1.0",
+		inGameStrID: "sheriruth",
+	},
+	difficulty: "Past",
+	isPrimary: true,
+	level: "1",
+	levelNum: 1,
+	song: TestingArcaeaSheriruthSong,
+	versions: ["mobile"],
+};
+
 export const TestingOngekiSong: SongDocument<"ongeki"> = {
 	altTitles: ["SENOTETOHETSUTEITSUTENNO"],
 	artist: "本城香澄（CV：岩橋由佳）「Re:ステージ！プリズムステップ」",

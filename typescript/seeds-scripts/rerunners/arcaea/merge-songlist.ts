@@ -289,8 +289,6 @@ for (const entry of data.songs) {
 			data: {
 				inGameStrID: inGameID,
 				displayVersion: chart.version ?? entry.version,
-				// Filled in later, but not by this script
-				notecount: 0,
 			},
 		};
 		newCharts.push(chartDoc);

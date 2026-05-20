@@ -3842,8 +3842,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "bethere",
-			"notecount": 0
+			"inGameStrID": "bethere"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a0064a797945",
@@ -6887,8 +6886,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "heavenlycaress",
-			"notecount": 0
+			"inGameStrID": "heavenlycaress"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a006869aeed0",
@@ -8942,8 +8940,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "eccentrictale",
-			"notecount": 0
+			"inGameStrID": "eccentrictale"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a0065b173c90",
@@ -10622,8 +10619,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "kyogenkigo",
-			"notecount": 0
+			"inGameStrID": "kyogenkigo"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a0070e01f1b2",
@@ -10772,8 +10768,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "smallcloud",
-			"notecount": 0
+			"inGameStrID": "smallcloud"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a00724aa4258",
@@ -16712,8 +16707,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "axiumcrisis",
-			"notecount": 0
+			"inGameStrID": "axiumcrisis"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a006f91389b3",
@@ -20597,8 +20591,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "saintorsinner",
-			"notecount": 0
+			"inGameStrID": "saintorsinner"
 		},
 		"difficulty": "Beyond",
 		"id": "C19e3cb7a0098d3e99de",
@@ -24002,8 +23995,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "vallista",
-			"notecount": 0
+			"inGameStrID": "vallista"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b3e5ac7b6",
@@ -24017,8 +24009,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "vallista",
-			"notecount": 0
+			"inGameStrID": "vallista"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00b05601d17",
@@ -24032,8 +24023,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "vallista",
-			"notecount": 0
+			"inGameStrID": "vallista"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b43b0488b",
@@ -24152,8 +24142,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "asgore",
-			"notecount": 0
+			"inGameStrID": "asgore"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00b73135613",
@@ -24167,8 +24156,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "asgore",
-			"notecount": 0
+			"inGameStrID": "asgore"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b2ab5741e",
@@ -24182,8 +24170,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "asgore",
-			"notecount": 0
+			"inGameStrID": "asgore"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00bf3ce38fe",
@@ -24197,8 +24184,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "asgore",
-			"notecount": 0
+			"inGameStrID": "asgore"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00bc2237c40",
@@ -24452,8 +24438,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "cryogenic",
-			"notecount": 0
+			"inGameStrID": "cryogenic"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00ba41b7ef9",
@@ -24467,8 +24452,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "cryogenic",
-			"notecount": 0
+			"inGameStrID": "cryogenic"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00bda89589d",
@@ -24482,8 +24466,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "cryogenic",
-			"notecount": 0
+			"inGameStrID": "cryogenic"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00b458a784b",
@@ -24497,8 +24480,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "cryogenic",
-			"notecount": 0
+			"inGameStrID": "cryogenic"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b2e80e403",
@@ -24557,8 +24539,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "riotsystem",
-			"notecount": 0
+			"inGameStrID": "riotsystem"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00b4d90760e",
@@ -24572,8 +24553,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "riotsystem",
-			"notecount": 0
+			"inGameStrID": "riotsystem"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00bf626d778",
@@ -24587,8 +24567,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "riotsystem",
-			"notecount": 0
+			"inGameStrID": "riotsystem"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00bb19a12cc",
@@ -24602,8 +24581,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "riotsystem",
-			"notecount": 0
+			"inGameStrID": "riotsystem"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00bc20bd444",
@@ -25352,8 +25330,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "desertrealm",
-			"notecount": 0
+			"inGameStrID": "desertrealm"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b3ff08628",
@@ -25367,8 +25344,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "desertrealm",
-			"notecount": 0
+			"inGameStrID": "desertrealm"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00b39a9543b",
@@ -25382,8 +25358,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "desertrealm",
-			"notecount": 0
+			"inGameStrID": "desertrealm"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00bf5cd2fac",
@@ -25667,8 +25642,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spearofjustice",
-			"notecount": 0
+			"inGameStrID": "spearofjustice"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00b8ea70c4e",
@@ -25682,8 +25656,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spearofjustice",
-			"notecount": 0
+			"inGameStrID": "spearofjustice"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b52aa75d9",
@@ -25697,8 +25670,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spearofjustice",
-			"notecount": 0
+			"inGameStrID": "spearofjustice"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00b9575ae69",
@@ -25712,8 +25684,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spearofjustice",
-			"notecount": 0
+			"inGameStrID": "spearofjustice"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00baa881966",
@@ -25787,8 +25758,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "goodrage",
-			"notecount": 0
+			"inGameStrID": "goodrage"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00b7546985d",
@@ -25802,8 +25772,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "goodrage",
-			"notecount": 0
+			"inGameStrID": "goodrage"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00ba4cf5413",
@@ -25817,8 +25786,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "goodrage",
-			"notecount": 0
+			"inGameStrID": "goodrage"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00be6fb331a",
@@ -25832,8 +25800,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "goodrage",
-			"notecount": 0
+			"inGameStrID": "goodrage"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b413f23be",
@@ -25967,8 +25934,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "mirrorrmx",
-			"notecount": 0
+			"inGameStrID": "mirrorrmx"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b2102aa76",
@@ -25982,8 +25948,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "mirrorrmx",
-			"notecount": 0
+			"inGameStrID": "mirrorrmx"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00b2e866035",
@@ -25997,8 +25962,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "mirrorrmx",
-			"notecount": 0
+			"inGameStrID": "mirrorrmx"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b40cb1fdc",
@@ -26072,8 +26036,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "thirdavenue",
-			"notecount": 0
+			"inGameStrID": "thirdavenue"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b5e08ae46",
@@ -26087,8 +26050,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "thirdavenue",
-			"notecount": 0
+			"inGameStrID": "thirdavenue"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00bbf6ff8dc",
@@ -26102,8 +26064,7 @@
 	{
 		"data": {
 			"displayVersion": "6.13",
-			"inGameStrID": "thirdavenue",
-			"notecount": 0
+			"inGameStrID": "thirdavenue"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b2787ca03",
@@ -26117,8 +26078,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spiderdance",
-			"notecount": 0
+			"inGameStrID": "spiderdance"
 		},
 		"difficulty": "Eternal",
 		"id": "C19e3cb7a00b29f93401",
@@ -26132,8 +26092,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spiderdance",
-			"notecount": 0
+			"inGameStrID": "spiderdance"
 		},
 		"difficulty": "Future",
 		"id": "C19e3cb7a00b7faeb4ab",
@@ -26147,8 +26106,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spiderdance",
-			"notecount": 0
+			"inGameStrID": "spiderdance"
 		},
 		"difficulty": "Past",
 		"id": "C19e3cb7a00be54d7094",
@@ -26162,8 +26120,7 @@
 	{
 		"data": {
 			"displayVersion": "6.14",
-			"inGameStrID": "spiderdance",
-			"notecount": 0
+			"inGameStrID": "spiderdance"
 		},
 		"difficulty": "Present",
 		"id": "C19e3cb7a00b7e89765c",
