@@ -392,6 +392,16 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 			<ImportTypeInfoCard importType="api/cg-gan-jubeat" key="api/cg-gan-jubeat" />,
 			<ImportTypeInfoCard importType="api/cg-nag-jubeat" key="api/cg-nag-jubeat" />,
 		);
+	} else if (game === "arcaea") {
+		Content.unshift(
+			<ImportInfoCard
+				desc="Import PBs from your local savefile."
+				href="arcaea-st3"
+				key="Arcaea ST3"
+				moreInfo="This method is intended for syncing up old scores offline. "
+				name="ST3 Import"
+			/>,
+		);
 	}
 
 	return (

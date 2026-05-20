@@ -38,6 +38,8 @@ interface Props {
 	/** When `extraControls` is provided, set this to false to disable the import
 	 *  button until the controls have a valid value. */
 	extraValid?: boolean;
+	/** Target file format (default: .db) */
+	fileFormat?: string;
 	/**
 	 * Conversion function.  Receives a map of `key → opened Database` and
 	 * returns one or more Batch Manual documents plus any warnings.
@@ -58,6 +60,7 @@ export default function ImportSQLiteForm({
 	fileInputs,
 	extraControls,
 	extraValid = true,
+	fileFormat,
 	convert,
 }: Props) {
 	// One File ref per declared file input
@@ -162,7 +165,7 @@ export default function ImportSQLiteForm({
 				<Form.Group key={key}>
 					<Form.Label>{label}</Form.Label>
 					<input
-						accept=".db"
+						accept={fileFormat ?? ".db"}
 						className="form-control"
 						onChange={(e) => {
 							const file = e.target.files?.[0] ?? null;
