@@ -24,7 +24,7 @@ export default function IIDXStyleSongChartInfoFormat({
 	} else if (game === "arcaea") {
 		genre = (song as SongDocument<"arcaea">).data.songPack;
 	} else {
-		genre = song.data.genre!;
+		genre = (song as any).data.genre;
 	}
 
 	return (
