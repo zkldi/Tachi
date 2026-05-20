@@ -3,7 +3,7 @@ import { z } from "zod";
 import type { INTERNAL_GAME_CONFIG, INTERNAL_GAME_GROUP_CONFIG } from "../../types/internals";
 
 import { FmtNum } from "../../utils/util";
-import { ClassValue, ToDecimalPlaces, zodNonNegativeInt } from "../config-utils";
+import { ClassValue, ToDecimalPlaces } from "../config-utils";
 import { FAST_SLOW_MAXCOMBO } from "./_common";
 
 export const GAME_GROUP_ARCAEA_CONF = {
