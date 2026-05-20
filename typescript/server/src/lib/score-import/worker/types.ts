@@ -1,4 +1,3 @@
-import type { Job } from "bullmq";
 import type { ImportDocument, ImportTypes, integer } from "tachi-common";
 
 import type { Parsers } from "../import-types/parsers";
@@ -37,10 +36,13 @@ export interface ScoreImportJobData<I extends ImportTypes> {
 	parserArguments: ParserArguments<I>;
 }
 
-export type ScoreImportJob<I extends ImportTypes = ImportTypes> = Job<ScoreImportJobData<I>>;
-
 export interface ScoreImportProgress {
 	description: string;
+}
+
+/** Minimal interface for reporting import progress to a job runner. */
+export interface ScoreImportJob {
+	updateProgress(progress: ScoreImportProgress): Promise<void> | void;
 }
 
 export type ScoreImportWorkerReturns =

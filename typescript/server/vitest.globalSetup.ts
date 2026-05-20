@@ -4,8 +4,7 @@ import pg from "pg";
 
 import { ensureTestCdnBucket } from "./src/test-utils/ensure-test-cdn-bucket";
 
-// See note in vitest.setup.ts about POSTGRES_TEST_HOST + tachi-postgres-test.
-const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres";
+const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres-test";
 const POSTGRES_USER = "tachi";
 const POSTGRES_PASS = "tachi";
 const TEMPLATE_DB = "tachi_server_test_template";

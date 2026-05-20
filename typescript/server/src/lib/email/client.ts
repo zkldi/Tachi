@@ -1,6 +1,5 @@
 import { log } from "#lib/log/log";
 import { Env, ServerConfig } from "#lib/setup/config";
-import bunyan from "bunyan";
 import nodemailer, { type SentMessageInfo, type Transporter } from "nodemailer";
 
 let transporter: Transporter | undefined;
@@ -12,9 +11,7 @@ try {
 	transporter = nodemailer.createTransport({
 		newline: "unix",
 
-		logger: emailConf.TRANSPORT_OPS?.debug
-			? bunyan.createLogger({ name: "Email Logger" })
-			: undefined,
+		logger: emailConf.TRANSPORT_OPS?.debug ? log : undefined,
 		...emailConf.TRANSPORT_OPS,
 	});
 

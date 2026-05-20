@@ -7,6 +7,8 @@ check:
 	evaluate "just fmt-check"
 	evaluate "bun run --filter '*' lint"
 	evaluate "just typecheck"
+	evaluate "bun .scripts/ts_machete.js"
+	evaluate "bun .scripts/ts_autoinherit.js --check"
 
 	post_evaluate
 
@@ -66,12 +68,8 @@ test-typescript FILTER="*":
 	#!/bin/bash
 	set -euo pipefail
 
-	# `tachi-postgres-test` (tmpfs + fsync=off, see docker-compose-dev.yml) is the
-	# fast path; falls back to the dev PG if the dedicated service isn't running.
-	export POSTGRES_TEST_HOST="${POSTGRES_TEST_HOST:-tachi-postgres-test}"
-	# Keep POSTGRES_TEST_URL in sync so the `*-db-test-template-reset` recipes
-	# (called from vitest.globalSetup.ts) hit the same host the workers will.
-	export POSTGRES_TEST_URL="${POSTGRES_TEST_URL:-postgresql://tachi:tachi@${POSTGRES_TEST_HOST}}"
+	export POSTGRES_TEST_HOST="tachi-postgres-test"
+	export POSTGRES_TEST_URL="postgresql://tachi:tachi@${POSTGRES_TEST_HOST}"
 	bun run --elide-lines=0 --sequential --filter '{{FILTER}}' test -- --reporter=default --reporter=junit --outputFile.junit=test-results/junit.xml
 
 # Summarize Vitest v8 coverage across workspaces (see typescript/coverage-tools).

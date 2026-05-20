@@ -44,7 +44,7 @@ services:
   # Dedicated test Postgres. Lives on tmpfs with durability disabled - every
   # `CREATE DATABASE ... TEMPLATE`, every `TRUNCATE`, every commit is ~5-20x
   # faster than the dev DB. Wiped on container restart, which is exactly what
-  # we want for tests. Use POSTGRES_TEST_HOST in vitest setup to point at it.
+  # we want for tests.
   tachi-postgres-test:
     container_name: tachi-postgres-test
     image: postgres:18

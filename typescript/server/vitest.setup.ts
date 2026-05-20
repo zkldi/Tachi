@@ -28,7 +28,7 @@ const WORKER_DB_NAME = `tachi_server_test_${WORKER_ID}`;
 // `tachi-postgres-test` (tmpfs + fsync=off, see docker-compose-dev.yml) is the
 // preferred backend for tests. Fall back to the dev Postgres if the dedicated
 // service isn't running so a freshly-cloned repo still passes tests.
-const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres";
+const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres-test";
 const POSTGRES_USER = "tachi";
 const POSTGRES_PASS = "tachi";
 

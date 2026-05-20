@@ -444,8 +444,6 @@ function ParseImportInfo(importInfo: Array<ImportProcessingInfo>) {
 	return { scoreIDs, errors, scoreGameMap: scoreGameMap, chartIDs };
 }
 
-function SetJobProgress(job: ScoreImportJob | undefined, description: string) {
-	if (job) {
-		return job.updateProgress({ description });
-	}
+function SetJobProgress(_job: ScoreImportJob | undefined, _description: string) {
+	// TODO(zk): impl
 }

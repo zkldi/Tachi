@@ -42,8 +42,6 @@
 		"prudence": "catalog:",
 		"tachi-common": "workspace:*",
 		"tachi-db": "workspace:*",
-		"ts-node": "catalog:",
-		"tsconfig-paths": "catalog:",
 		"typescript": "catalog:"
 	},
 	"engines": {

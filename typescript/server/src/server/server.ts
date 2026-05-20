@@ -1,7 +1,6 @@
 import type { integer } from "tachi-common";
 
 import "express-async-errors";
-import connectRedis from "connect-redis";
 import express, { type Express } from "express";
 // THIS IMPORT **MUST** GO HERE. DO NOT MOVE IT. IT MUST OCCUR BEFORE ANYTHING HAPPENS WITH EXPRESS
 // BUT AFTER EXPRESS IS IMPORTED.
@@ -9,7 +8,6 @@ import express, { type Express } from "express";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { log } from "#lib/log/log";
 import { Env, ServerConfig, TachiConfig } from "#lib/setup/config";
-import { RedisClient } from "#services/redis/redis";
 import { IsNonEmptyString, IsRecord } from "#utils/misc";
 import { ExpectedErr } from "bliss";
 import expressSession from "express-session";
@@ -23,14 +21,14 @@ let store;
 
 if (Env.NODE_ENV !== "test") {
 	log.info({ bootInfo: true }, "Connecting ExpressSession to Redis.");
-	const RedisStore = connectRedis(expressSession);
-
-	store = new RedisStore({
-		host: "localhost",
-		port: 6379,
-		client: RedisClient,
-		prefix: TachiConfig.NAME,
-	});
+	// n.b. load bearing prefix here - do not remove the prefix for any reason.
+	// Dynamic import keeps redis.ts (which uses Bun.RedisClient) out of the
+	// module graph when running under Vitest's Node.js worker threads in tests.
+	const [{ RedisClient }, { BunRedisSessionStore }] = await Promise.all([
+		import("#services/redis/redis"),
+		import("#services/redis/session-store"),
+	]);
+	store = new BunRedisSessionStore(RedisClient, { prefix: TachiConfig.NAME });
 }
 
 const userSessionMiddleware = expressSession({

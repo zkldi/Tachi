@@ -6,7 +6,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "tsgo -b",
-		"calc-v1": "ts-node src/main.ts $@",
+		"calc-v1": "bun run src/main.ts $@",
 		"lint": "eslint .",
 		"lint-fix": "eslint . --fix",
 		"typecheck": "tsgo --noEmit",

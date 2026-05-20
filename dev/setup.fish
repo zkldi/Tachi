@@ -1,6 +1,5 @@
 #!/bin/fish
 
-# add a local bin for ts-node
 fish_add_path /tachi/node_modules/.bin
 
 source ./dev/fish-plugins/fisher/functions/fisher.fish

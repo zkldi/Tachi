@@ -18,7 +18,6 @@ import { log } from "#lib/log/log";
 import { maybeStartWorkerMetricsServer } from "#lib/metrics/worker-metrics";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import { MarkImportAsFailed } from "#lib/score-import/framework/status-tracking/import-status-tracking";
-import { CloseScoreImportQueue } from "#lib/score-import/worker/queue";
 import { processScoreImportJobFromPayload } from "#lib/score-import/worker/score-import-job-processor";
 import { Env } from "#lib/setup/config";
 import { ClosePgConnection } from "#services/pg/db";
@@ -183,7 +182,6 @@ async function bootstrap() {
 	clearInterval(heartbeatInterval);
 	metrics?.close();
 	log.info("Job worker loops stopped, closing resources.");
-	await CloseScoreImportQueue();
 	await CloseRedisConnection();
 	await ClosePgConnection();
 	process.exit(0);
