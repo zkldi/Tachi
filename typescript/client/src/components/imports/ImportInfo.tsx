@@ -86,6 +86,13 @@ export default function ImportInfo({
 
 	const importDoc = data.import;
 
+	const warningErrors = importDoc.errors.filter(
+		(e) => e.type === "SongOrChartNotFound" || e.type === "OrphanExists"
+	);
+	const hardErrors = importDoc.errors.filter(
+		(e) => e.type !== "SongOrChartNotFound" && e.type !== "OrphanExists"
+	);
+
 	return (
 		<>
 			{!noTopTable && (
@@ -125,56 +132,81 @@ export default function ImportInfo({
 				</ButtonGroup>
 				{tab === "errors" ? (
 					<>
-						<Alert variant="warning">
-							Some of these errors might not be very useful. Depending on how scores
-							are matched with data, all we have to display might be a hash.
-							<br />
-							<strong>SongOrChartNotFound</strong> means the score was still{" "}
-							<strong>saved as an orphan</strong> for nightly matching (around 1 AM
-							UTC) or manual reprocess - see{" "}
-							{user ? (
-								<Link to={`/u/${user.username}/orphans`}>Orphan scores</Link>
-							) : (
-								"Orphan scores"
-							)}
-							.
-						</Alert>
-						<TachiTable
-							dataset={data.import.errors}
-							entryName="Errors"
-							headers={[
-								["Error Name", "Error Name"],
-								["Info", "Info"],
-							]}
-							rowFunction={(r) => (
-								<tr>
-									<td>{r.type}</td>
-									<td>
-										<div>{r.message}</div>
-										{(r.type === "SongOrChartNotFound" ||
-											r.type === "OrphanExists" ||
-											r.orphanID !== undefined) && (
-											<div className="mt-2 small text-muted">
-												This may be stored as an orphan.{" "}
-												{user ? (
-													<Link to={`/u/${user.username}/orphans`}>
-														Open orphan queue
-													</Link>
-												) : (
-													"Open orphan queue"
-												)}
-												{r.orphanID ? (
-													<>
+						{importDoc.errors.length === 0 && (
+							<div className="text-center text-muted">No errors!</div>
+						)}
+						{warningErrors.length > 0 && (
+							<>
+								<h4>Warnings</h4>
+								<Alert variant="warning">
+									<strong>SongOrChartNotFound</strong> and{" "}
+									<strong>OrphanExists</strong> scores are{" "}
+									<strong>saved as orphans</strong> for nightly matching (around
+									1 AM UTC) or manual reprocess — see{" "}
+									{user ? (
+										<Link to={`/u/${user.username}/orphans`}>
+											Orphan scores
+										</Link>
+									) : (
+										"Orphan scores"
+									)}
+									.
+								</Alert>
+								<TachiTable
+									dataset={warningErrors}
+									entryName="Warnings"
+									headers={[
+										["Warning Name", "Warning Name"],
+										["Info", "Info"],
+									]}
+									rowFunction={(r) => (
+										<tr>
+											<td>{r.type}</td>
+											<td>
+												<div>{r.message}</div>
+												{r.orphanID !== undefined && (
+													<div className="mt-2 small text-muted">
+														{user ? (
+															<Link to={`/u/${user.username}/orphans`}>
+																Open orphan queue
+															</Link>
+														) : (
+															"Open orphan queue"
+														)}
 														{" "}
 														(ID: <code>{r.orphanID}</code>)
-													</>
-												) : null}
-											</div>
-										)}
-									</td>
-								</tr>
-							)}
-						/>
+													</div>
+												)}
+											</td>
+										</tr>
+									)}
+								/>
+							</>
+						)}
+						{hardErrors.length > 0 && (
+							<>
+								<h4>Errors</h4>
+								<Alert variant="danger">
+									Some of these errors might not be very useful. Depending on
+									how scores are matched with data, all we have to display might
+									be a hash.
+								</Alert>
+								<TachiTable
+									dataset={hardErrors}
+									entryName="Errors"
+									headers={[
+										["Error Name", "Error Name"],
+										["Info", "Info"],
+									]}
+									rowFunction={(r) => (
+										<tr>
+											<td>{r.type}</td>
+											<td>{r.message}</td>
+										</tr>
+									)}
+								/>
+							</>
+						)}
 					</>
 				) : tab === "scores" ? (
 					<ScoreTab data={data} />
