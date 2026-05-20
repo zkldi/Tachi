@@ -285,9 +285,7 @@ export async function GetEnumDistForFolderAsOf(
 			.where("score.user_id", "=", userID)
 			.where("score.game", "=", v3Game)
 			.where("score.chart_id", "in", chartIDs)
-			.where((eb) =>
-				eb.or([eb("score.time_added", "is", null), eb("score.time_added", "<", beforeIso)]),
-			)
+			.where("score.time_achieved", "<", beforeIso)
 			.execute();
 
 		const maxByChart = new Map<string, Record<string, integer>>();

@@ -17,6 +17,7 @@ import {
 } from "#utils/queries/scores";
 import { FilterChartsAndSongs } from "#utils/scores";
 import { ExpectedErr } from "bliss";
+import { sql } from "kysely";
 
 /**
  * Searches a user's individual scores.
@@ -107,7 +108,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_SCORE_DOCUMENT)
 			.where("score.user_id", "=", user.id)
 			.where("chart.id", "=", chart.chartID)
-			.orderBy("score.time_added", "desc")
+			.orderBy(sql`score.time_achieved desc nulls last`)
 			.execute();
 
 		return success(
