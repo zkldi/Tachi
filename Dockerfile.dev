@@ -1,55 +1,102 @@
-# For use via `devcontainer.json`. The docker-compose-dev file sets some other
-# important variables.
+# syntax=docker/dockerfile:1.7
+#
+# Two stages live here:
+#
+#   - `base`: minimal image used as the `container:` for every CI job. Just
+#     enough to run `bun install`, `bun run …`, `just`, `psql`, `rsync`, ssh.
+#     Published as `ghcr.io/zkldi/tachi-ci`.
+#   - `dev`:  superset of `base` with all the devcontainer QoL (fish, neovim,
+#     gh, ripgrep, fd, bat, fzf, mkdocs, minio-client, locales, sudo, the
+#     `tachi` user, ...). Published as `ghcr.io/zkldi/tachi-dev`.
+#
+# Always use `--no-install-recommends`. Debian's recommends-by-default pulls
+# the full LLVM/Mesa/Vulkan/GCC chain in via various transitive deps and adds
+# ~750MB of crap that nothing here actually needs.
 
-FROM debian:13
+# ---------------------------------------------------------------------------
+# bun-src: just here so we can `COPY --from=` the binary into our stages.
+#
+# We deliberately track the same floating tag prod uses (see
+# `docker/Dockerfile.server`, `FROM oven/bun:alpine`). The `debian` variant
+# is used here because our base is `debian:13-slim` (glibc), not Alpine
+# (musl). If/when prod pins a specific bun version, pin this to match.
+# ---------------------------------------------------------------------------
+FROM oven/bun:debian AS bun-src
+
+# ---------------------------------------------------------------------------
+# base: CI image
+# ---------------------------------------------------------------------------
+FROM debian:13-slim AS base
 
 WORKDIR /tachi
 
 # Add the official PostgreSQL APT repository so we can install client tools
 # that match the server version (v18). The Debian-packaged postgresql-client
-# only provides v17 on Debian 13 (trixie).
+# only provides v17 on Debian 13 (trixie). `gnupg` is only needed to dearmor
+# the keyring and is purged afterwards.
 RUN apt-get update \
-	&& apt-get install -y --no-install-recommends gnupg curl ca-certificates \
+	&& apt-get install -y --no-install-recommends \
+		ca-certificates curl gnupg \
 	&& curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc \
 		| gpg --dearmor -o /etc/apt/trusted.gpg.d/pgdg.gpg \
 	&& echo "deb https://apt.postgresql.org/pub/repos/apt trixie-pgdg main" \
-		> /etc/apt/sources.list.d/pgdg.list
-
-RUN DEBIAN_FRONTEND=noninteractive apt-get update \
-	&& apt-get upgrade -y \
-	&& apt-get install -y \
-		# essentials
-		git npm locales sudo unzip jq \
-		# docs pythonisms
-		python-is-python3 python3-setuptools pip mkdocs mkdocs-material \
-		# postgres client tools (psql, pg_dump, pg_restore, pg_isready, etc.)
+		> /etc/apt/sources.list.d/pgdg.list \
+	&& apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		# essentials for running the workspace in CI
+		git jq unzip just \
+		# vitest spawns workers via node; bun runs vitest itself but the
+		# worker subprocesses are node. With --no-install-recommends this
+		# pulls libnode115 but skips npm + nodejs-doc.
+		nodejs \
+		# postgres client tools (psql, pg_dump, pg_restore, pg_isready, ...)
 		postgresql-client-18 \
-		# nice to haves
-		gh fish just fzf curl wget parallel neovim fd-find bat ripgrep rsync \
-		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
-		minio-client \
-	# uninstall lynx so people don't get a CLI browser that can't load anything when they do `gh auth login`
-	&& apt-get purge -y lynx
+		# rsync + ssh client for the homepage deploy job
+		rsync openssh-client \
+	&& apt-get purge -y gnupg \
+	&& apt-get autoremove -y \
+	&& rm -rf /var/lib/apt/lists/*
 
-# so apt doesn't complain about the lack of a dialog-like program
-ENV DEBIAN_FRONTEND=readline
-
-# `fd` is called `fdfind` on debian. Awesome.
-RUN ln -s $(which fdfind) /usr/bin/fd
+# bun — copied from the official oven/bun image (see BUN_VERSION arg at top).
+# `bunx` is a symlink to `bun` in the upstream image; we recreate it here.
+COPY --from=bun-src /usr/local/bin/bun /usr/local/bin/bun
+RUN ln -sf /usr/local/bin/bun /usr/local/bin/bunx
 
 # expose the db CLI globally
 RUN ln -sf /tachi/typescript/db-cli/src/index.ts /usr/local/bin/tachidb
+
+# ---------------------------------------------------------------------------
+# dev: devcontainer image
+# ---------------------------------------------------------------------------
+FROM base AS dev
+
+# so apt doesn't complain about the lack of a dialog-like program
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		# shell + editor + admin
+		fish neovim sudo locales \
+		# search / files / network / parallel
+		ripgrep fd-find bat fzf parallel wget \
+		# python stack for docs work (mkdocs is run via Dockerfile.docs in CI,
+		# but devs build/preview docs locally from here)
+		python-is-python3 python3-pip mkdocs mkdocs-material \
+		# github CLI for `gh auth login`-style flows
+		gh \
+		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
+		minio-client \
+	&& rm -rf /var/lib/apt/lists/*
+
+ENV DEBIAN_FRONTEND=readline
+
+# `fd` is called `fdfind` on debian. Awesome.
+RUN ln -s "$(which fdfind)" /usr/bin/fd
 
 # setup locales
 # https://stackoverflow.com/questions/28405902/how-to-set-the-locale-inside-a-debian-ubuntu-docker-container
 RUN echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen && locale-gen
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-
-# bun
-# TODO(zk): This will just pull a random version off
-# the internet, unpinned. There's got to be something
-# better...
-RUN curl -fsSL https://bun.sh/install | BUN_INSTALL=/usr/local bash
 
 # https://github.com/python-babel/babel/issues/990
 # it wouldn't be python without needing absurd global state manipulation to fix
