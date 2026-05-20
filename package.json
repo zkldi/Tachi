@@ -207,7 +207,9 @@
 		"codemirror": "^6.0.2",
 		"comlink": "^4.4.2",
 		"fast-json-patch": "^3.1.1",
-		"cron-parser": "5.0.2"
+		"cron-parser": "5.0.2",
+		"@types/sql.js": "^1.4.11",
+		"sql.js": "^1.14.1"
 	},
 	"overrides": {
 		"@types/mongodb": "3.6.20",
