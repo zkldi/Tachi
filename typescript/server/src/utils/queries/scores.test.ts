@@ -3,7 +3,7 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { describe, expect, it } from "vitest";
 
-import { GetRecentUGPTHighlights, GetRecentUGScores } from "./scores";
+import { GetRecentUGPTHighlights, GetRecentUGPTScores } from "./scores";
 
 describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 	let counter = 0;
@@ -83,7 +83,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 			timeAddedMs: 9_000_000,
 		});
 
-		const scores = await GetRecentUGScores(userId, "iidx-sp", 10);
+		const scores = await GetRecentUGPTScores(userId, "iidx-sp", 10);
 		expect(scores.length).toBeGreaterThanOrEqual(2);
 		expect(scores[0]?.timeAdded).toBeGreaterThanOrEqual(scores[1]?.timeAdded ?? 0);
 	});
