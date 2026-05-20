@@ -86,6 +86,9 @@ RUN apt-get update \
 		gh \
 		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
 		minio-client \
+		# `xdg-open` so the client vite plugin can launch a browser without
+		# crashing on missing binary (see typescript/client/vite.config.ts).
+		xdg-utils \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV DEBIAN_FRONTEND=readline

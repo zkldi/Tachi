@@ -21,6 +21,8 @@ function openLoopbackInBrowserPlugin(): Plugin {
 		useHttps: boolean,
 	) => {
 		if (!httpServer) return;
+		// Opt out for headless dev containers / CI where no browser opener exists.
+		if (process.env.TACHI_NO_OPEN === "1" || process.env.CI) return;
 		const run = () => {
 			const addr = httpServer.address();
 			const port =
@@ -29,17 +31,21 @@ function openLoopbackInBrowserPlugin(): Plugin {
 					: (portFallback ?? 3000);
 			const protocol = useHttps ? "https" : "http";
 			const url = `${protocol}://localhost:${port}/`;
-			if (process.platform === "darwin") {
-				spawn("open", [url], { detached: true, stdio: "ignore" }).unref();
-			} else if (process.platform === "win32") {
-				spawn("cmd", ["/c", "start", "", url], {
-					detached: true,
-					stdio: "ignore",
-					shell: false,
-				}).unref();
-			} else {
-				spawn("xdg-open", [url], { detached: true, stdio: "ignore" }).unref();
-			}
+			const [cmd, args]: [string, string[]] =
+				process.platform === "darwin"
+					? ["open", [url]]
+					: process.platform === "win32"
+						? ["cmd", ["/c", "start", "", url]]
+						: ["xdg-open", [url]];
+			const child = spawn(cmd, args, {
+				detached: true,
+				stdio: "ignore",
+				shell: false,
+			});
+			// Without this, a missing opener binary (e.g. no xdg-open in a dev
+			// container) emits an unhandled 'error' event and crashes vite.
+			child.on("error", () => {});
+			child.unref();
 		};
 		if (httpServer.listening) run();
 		else httpServer.once("listening", run);

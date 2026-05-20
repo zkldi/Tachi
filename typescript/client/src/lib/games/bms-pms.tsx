@@ -14,6 +14,7 @@ import { bgc, CreateRatingSys } from "./_util";
 
 const BASE_IMPL: GPTClientImplementation<GamesForGroup["bms" | "pms"]> = {
 	sessionImportantScoreCount: 20,
+	reverseFolderOrder: true,
 	difficultyColours: {
 		CHART: COLOUR_SET.gray, // lol
 	},
