@@ -926,12 +926,8 @@ export const HC511UserGoal: GoalSubscriptionDocument = {
 export const TestingIIDXFolderSP10: FolderDocument = {
 	title: "Level 10",
 	game: "iidx-sp",
-	type: "charts",
 	folderID: "ed9d8c734447ce67d7135c0067441a98cc81aeaf",
 	slug: "level-10",
-	data: {
-		level: "10",
-	},
 	searchTerms: [],
 	inactive: false,
 };

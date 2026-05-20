@@ -1,7 +1,6 @@
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
 import { type CellsRenderFN } from "#types/seeds";
-import { FlattenValue, StringifyKeyChain } from "#util/misc";
 import { StrSOV } from "#util/sorts";
 import { type SearchFunctions } from "#util/ztable/search";
 import React from "react";
@@ -44,13 +43,7 @@ export const SeedsFolderSearchFns: SearchFunctions<FolderDocument> = {
 	query: (x) => {
 		const w = (x as { where?: string }).where;
 
-		if (typeof w === "string" && w.length > 0) {
-			return w;
-		}
-
-		return FlattenValue(x.data)
-			.map((e) => `${StringifyKeyChain(e.keychain)} ${e.value}`)
-			.join("\n");
+		return typeof w === "string" ? w : "";
 	},
 };
 
@@ -87,16 +80,7 @@ export const SeedsFolderCells: CellsRenderFN<FolderDocument> = ({
 				TYPE: <b>{folderSeedKindLabel(data)}</b>
 				<Divider />
 				<div className="text-start">
-					{showWhere ? (
-						<code className="text-break">{whereSql}</code>
-					) : (
-						FlattenValue(data.data).map((e, i) => (
-							<React.Fragment key={i}>
-								{StringifyKeyChain(e.keychain)} = {String(e.value)}
-								<br />
-							</React.Fragment>
-						))
-					)}
+					{showWhere && <code className="text-break">{whereSql}</code>}
 				</div>
 			</td>
 		</>

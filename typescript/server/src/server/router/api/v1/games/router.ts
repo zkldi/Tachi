@@ -678,9 +678,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/recently-raised", withGame, async ({
 API_V1_ROUTER.add("GET /games/:game/targets/goals/popular", withGame, async ({ ctx }) => {
 	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(ctx.game);
 
-	// GetMostSubscribedGoals internally converts GameGroup+playtype to V3Game for filtering
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const goals = await GetMostSubscribedGoals({ game: gameGroup as any, playtype });
+	const goals = await GetMostSubscribedGoals({ game: gameGroup, playtype });
 
 	return success(`Returned ${goals.length} goals.`, goals);
 });

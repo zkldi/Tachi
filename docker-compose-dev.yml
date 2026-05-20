@@ -1,15 +1,4 @@
 services:
-  tachi-mongo:
-    container_name: tachi-mongo
-    command: "--config /etc/mongod.conf"
-    image: mongo:5
-    restart: unless-stopped
-    ports:
-      - "27017:27017"
-    volumes:
-      - tachi-volume:/data/db
-      - "./dev/mongod.conf:/etc/mongod.conf"
-
   tachi-redis:
     container_name: tachi-redis
     command: redis-server --save 60 1 --loglevel warning
@@ -216,7 +205,6 @@ services:
       - ./observability/alloy-config.alloy:/etc/alloy/config.alloy
 
 volumes:
-  tachi-volume:
   tachi-redis:
   tachi-logs:
   tachi-postgres:

@@ -40,7 +40,6 @@
 		"@types/express-rate-limit": "catalog:",
 		"@types/express-serve-static-core": "catalog:",
 		"@types/express-session": "catalog:",
-		"@types/mongodb": "catalog:",
 		"@types/multer": "catalog:",
 		"@types/node": "catalog:",
 		"@types/node-fetch": "catalog:",
@@ -69,8 +68,6 @@
 		"html-entities": "catalog:",
 		"kysely": "catalog:",
 		"lodash": "catalog:",
-		"mongodb": "catalog:",
-		"monk": "catalog:",
 		"multer": "catalog:",
 		"node-cache": "catalog:",
 		"node-fetch": "catalog:",
@@ -98,9 +95,7 @@
 		"include": [
 			"src/*/!(test-utils)/**/*.ts"
 		],
-		"exclude": [
-			"src/external/mongo/schemas.ts"
-		]
+		"exclude": []
 	},
 	"engines": {
 		"bun": ">=1.2.0"

@@ -1,4 +1,3 @@
-import type { ICollection } from "monk";
 import type { GameGroup } from "tachi-common";
 
 import fs from "fs/promises";
@@ -289,23 +288,4 @@ export async function PullDatabaseSeeds() {
 	} else {
 		throw new Error(`SEEDS_CONFIG was not defined. You cannot pull a seeds repo.`);
 	}
-}
-
-export async function BacksyncCollection(
-	collectionName: SeedsCollections,
-	collection: ICollection,
-	commitMessage: string,
-) {
-	const repo = await PullDatabaseSeeds();
-
-	let charts = await collection.find({});
-
-	await repo.WriteCollection(collectionName, charts);
-
-	// @ts-expect-error Force node to free the memory.
-	charts = null;
-
-	await repo.CommitChangesBack(`${commitMessage} ${new Date().toISOString()}`);
-
-	await repo.Destroy();
 }

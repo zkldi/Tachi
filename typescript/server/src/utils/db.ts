@@ -1,4 +1,3 @@
-import type { FilterQuery } from "mongodb";
 import type { Game } from "tachi-db";
 
 import { GetChartsByIds, SELECT_CHART, ToChartDocument } from "#lib/db-formats/chart";
@@ -21,20 +20,28 @@ import {
 	FormatChart,
 	type GameGroup,
 	type GoalDocument,
-	type GoalSubscriptionDocument,
 	type integer,
 	LEGACY_GameGroupPTToGame,
 	type LEGACY_Playtype,
 	type PBScoreDocument,
 	type QuestDocument,
 	type QuestlineDocument,
-	type QuestSubscriptionDocument,
 	type ScoreDocument,
 } from "tachi-common";
 
 type MsTimeRange =
 	| number
 	| { $gt?: number; $gte?: number; $lt?: number; $lte?: number; $ne?: null };
+
+type UserIDFilter = integer | { $in: Array<integer> };
+
+interface TargetSubFilter {
+	game?: GameGroup;
+	playtype?: LEGACY_Playtype;
+	userID?: UserIDFilter;
+	timeAchieved?: MsTimeRange;
+	lastInteraction?: MsTimeRange;
+}
 
 function applyMsTimeOnColumn(
 	column:
@@ -92,7 +99,7 @@ function applyMsTimeOnColumn(
 	};
 }
 
-function whereUserIdOnGoalSub(userID: unknown) {
+function whereUserIdOnGoalSub(userID: UserIDFilter | undefined) {
 	if (userID === undefined) {
 		return undefined;
 	}
@@ -101,25 +108,16 @@ function whereUserIdOnGoalSub(userID: unknown) {
 		return (eb: any) => eb("goal_sub.user_id", "=", userID);
 	}
 
-	if (
-		userID &&
-		typeof userID === "object" &&
-		"$in" in userID &&
-		Array.isArray((userID as { $in: Array<integer> }).$in)
-	) {
-		const ids = (userID as { $in: Array<integer> }).$in;
+	const ids = userID.$in;
 
-		if (ids.length === 0) {
-			return () => sql`false`;
-		}
-
-		return (eb: any) => eb("goal_sub.user_id", "in", ids);
+	if (ids.length === 0) {
+		return () => sql`false`;
 	}
 
-	throw new Error("Unsupported userID filter for goal_sub.");
+	return (eb: any) => eb("goal_sub.user_id", "in", ids);
 }
 
-function whereUserIdOnQuestSub(userID: unknown) {
+function whereUserIdOnQuestSub(userID: UserIDFilter | undefined) {
 	if (userID === undefined) {
 		return undefined;
 	}
@@ -128,22 +126,13 @@ function whereUserIdOnQuestSub(userID: unknown) {
 		return (eb: any) => eb("quest_sub.user_id", "=", userID);
 	}
 
-	if (
-		userID &&
-		typeof userID === "object" &&
-		"$in" in userID &&
-		Array.isArray((userID as { $in: Array<integer> }).$in)
-	) {
-		const ids = (userID as { $in: Array<integer> }).$in;
+	const ids = userID.$in;
 
-		if (ids.length === 0) {
-			return () => sql`false`;
-		}
-
-		return (eb: any) => eb("quest_sub.user_id", "in", ids);
+	if (ids.length === 0) {
+		return () => sql`false`;
 	}
 
-	throw new Error("Unsupported userID filter for quest_sub.");
+	return (eb: any) => eb("quest_sub.user_id", "in", ids);
 }
 
 /**
@@ -266,49 +255,36 @@ export async function HumaniseChartID(chartID: string) {
  * Get recently achieved goals for this query.
  *
  * @param baseQuery - A base query, used to limit results on GPTs or UGPTs.
- * @param limit - How many recently achieved goals to search for. MongoDB: `0` means no limit.
+ * @param limit - How many recently achieved goals to search for. `0` means no limit.
  * @returns - The goals and their subs.
  */
 export async function GetRecentlyAchievedGoals(
-	baseQuery: Omit<FilterQuery<GoalSubscriptionDocument>, "achieved">,
+	{ game, playtype, userID, timeAchieved, lastInteraction }: TargetSubFilter,
 	limit = 100,
 ) {
-	const b = baseQuery as Record<string, unknown>;
-
 	let q = DB.selectFrom("goal_sub")
 		.innerJoin("goal", "goal.id", "goal_sub.goal_id")
 		.select(SELECT_GOAL_SUB_WITH_GOAL_GAME)
 		.where("goal_sub.was_instantly_achieved", "=", false)
 		.where("goal_sub.achieved", "=", true);
 
-	const uidFn = whereUserIdOnGoalSub(b.userID);
+	const uidFn = whereUserIdOnGoalSub(userID);
 
 	if (uidFn) {
 		q = q.where(uidFn);
 	}
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("goal.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("goal.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
-	const taFn = applyMsTimeOnColumn(
-		"goal_sub.time_achieved",
-		b.timeAchieved as MsTimeRange | undefined,
-	);
+	const taFn = applyMsTimeOnColumn("goal_sub.time_achieved", timeAchieved);
 
 	if (taFn) {
 		q = q.where(taFn);
 	}
 
-	const liFn = applyMsTimeOnColumn(
-		"goal_sub.last_interaction",
-		b.lastInteraction as MsTimeRange | undefined,
-	);
+	const liFn = applyMsTimeOnColumn("goal_sub.last_interaction", lastInteraction);
 
 	if (liFn) {
 		q = q.where(liFn);
@@ -341,11 +317,9 @@ export async function GetRecentlyAchievedGoals(
 }
 
 export async function GetRecentlyInteractedGoals(
-	baseQuery: Omit<FilterQuery<GoalSubscriptionDocument>, "achieved">,
+	{ game, playtype, userID, timeAchieved, lastInteraction }: TargetSubFilter,
 	limit = 100,
 ) {
-	const b = baseQuery as Record<string, unknown>;
-
 	let q = DB.selectFrom("goal_sub")
 		.innerJoin("goal", "goal.id", "goal_sub.goal_id")
 		.select(SELECT_GOAL_SUB_WITH_GOAL_GAME)
@@ -353,34 +327,23 @@ export async function GetRecentlyInteractedGoals(
 		.where("goal_sub.achieved", "=", false)
 		.where("goal_sub.last_interaction", "is not", null);
 
-	const uidFn = whereUserIdOnGoalSub(b.userID);
+	const uidFn = whereUserIdOnGoalSub(userID);
 
 	if (uidFn) {
 		q = q.where(uidFn);
 	}
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("goal.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("goal.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
-	const taFn = applyMsTimeOnColumn(
-		"goal_sub.time_achieved",
-		b.timeAchieved as MsTimeRange | undefined,
-	);
+	const taFn = applyMsTimeOnColumn("goal_sub.time_achieved", timeAchieved);
 
 	if (taFn) {
 		q = q.where(taFn);
 	}
 
-	const liFn = applyMsTimeOnColumn(
-		"goal_sub.last_interaction",
-		b.lastInteraction as MsTimeRange | undefined,
-	);
+	const liFn = applyMsTimeOnColumn("goal_sub.last_interaction", lastInteraction);
 
 	if (liFn) {
 		q = q.where(liFn);
@@ -413,45 +376,32 @@ export async function GetRecentlyInteractedGoals(
 }
 
 export async function GetRecentlyAchievedQuests(
-	baseQuery: Omit<FilterQuery<QuestSubscriptionDocument>, "achieved">,
+	{ game, playtype, userID, timeAchieved, lastInteraction }: TargetSubFilter,
 	limit = 100,
 ) {
-	const b = baseQuery as Record<string, unknown>;
-
 	let q = DB.selectFrom("quest_sub")
 		.innerJoin("quest", "quest.id", "quest_sub.quest_id")
 		.select(SELECT_QUEST_SUB_WITH_QUEST_GAME)
 		.where("quest_sub.was_instantly_achieved", "=", false)
 		.where("quest_sub.achieved", "=", true);
 
-	const uidFn = whereUserIdOnQuestSub(b.userID);
+	const uidFn = whereUserIdOnQuestSub(userID);
 
 	if (uidFn) {
 		q = q.where(uidFn);
 	}
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("quest.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("quest.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
-	const taFn = applyMsTimeOnColumn(
-		"quest_sub.time_achieved",
-		b.timeAchieved as MsTimeRange | undefined,
-	);
+	const taFn = applyMsTimeOnColumn("quest_sub.time_achieved", timeAchieved);
 
 	if (taFn) {
 		q = q.where(taFn);
 	}
 
-	const liFn = applyMsTimeOnColumn(
-		"quest_sub.last_interaction",
-		b.lastInteraction as MsTimeRange | undefined,
-	);
+	const liFn = applyMsTimeOnColumn("quest_sub.last_interaction", lastInteraction);
 
 	if (liFn) {
 		q = q.where(liFn);
@@ -483,11 +433,9 @@ export async function GetRecentlyAchievedQuests(
 }
 
 export async function GetRecentlyInteractedQuests(
-	baseQuery: Omit<FilterQuery<QuestSubscriptionDocument>, "achieved">,
+	{ game, playtype, userID, timeAchieved, lastInteraction }: TargetSubFilter,
 	limit = 100,
 ) {
-	const b = baseQuery as Record<string, unknown>;
-
 	let q = DB.selectFrom("quest_sub")
 		.innerJoin("quest", "quest.id", "quest_sub.quest_id")
 		.select(SELECT_QUEST_SUB_WITH_QUEST_GAME)
@@ -495,34 +443,23 @@ export async function GetRecentlyInteractedQuests(
 		.where("quest_sub.achieved", "=", false)
 		.where("quest_sub.was_instantly_achieved", "=", false);
 
-	const uidFn = whereUserIdOnQuestSub(b.userID);
+	const uidFn = whereUserIdOnQuestSub(userID);
 
 	if (uidFn) {
 		q = q.where(uidFn);
 	}
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("quest.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("quest.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
-	const taFn = applyMsTimeOnColumn(
-		"quest_sub.time_achieved",
-		b.timeAchieved as MsTimeRange | undefined,
-	);
+	const taFn = applyMsTimeOnColumn("quest_sub.time_achieved", timeAchieved);
 
 	if (taFn) {
 		q = q.where(taFn);
 	}
 
-	const liFn = applyMsTimeOnColumn(
-		"quest_sub.last_interaction",
-		b.lastInteraction as MsTimeRange | undefined,
-	);
+	const liFn = applyMsTimeOnColumn("quest_sub.last_interaction", lastInteraction);
 
 	if (liFn) {
 		q = q.where(liFn);
@@ -553,7 +490,7 @@ export async function GetRecentlyInteractedQuests(
 	return { quests, questSubs };
 }
 
-function whereUserIdOnGoalSubForAggregate(userID: unknown) {
+function whereUserIdOnGoalSubForAggregate(userID: UserIDFilter | undefined) {
 	if (userID === undefined) {
 		return undefined;
 	}
@@ -562,49 +499,33 @@ function whereUserIdOnGoalSubForAggregate(userID: unknown) {
 		return (eb: any) => eb("goal_sub.user_id", "=", userID);
 	}
 
-	if (
-		userID &&
-		typeof userID === "object" &&
-		"$in" in userID &&
-		Array.isArray((userID as { $in: Array<integer> }).$in)
-	) {
-		const ids = (userID as { $in: Array<integer> }).$in;
+	const ids = userID.$in;
 
-		if (ids.length === 0) {
-			return () => sql`false`;
-		}
-
-		return (eb: any) => eb("goal_sub.user_id", "in", ids);
+	if (ids.length === 0) {
+		return () => sql`false`;
 	}
 
-	throw new Error("Unsupported userID filter for goal_sub aggregate.");
+	return (eb: any) => eb("goal_sub.user_id", "in", ids);
 }
 
 export async function GetMostSubscribedGoals(
-	query: FilterQuery<GoalSubscriptionDocument>,
+	{ game, playtype, userID }: TargetSubFilter,
 	limit = 100,
 ): Promise<Array<{ __subscriptions: integer } & GoalDocument>> {
-	const b = query as Record<string, unknown>;
-
 	let q = DB.selectFrom("goal_sub")
 		.innerJoin("goal", "goal.id", "goal_sub.goal_id")
 		.select("goal_sub.goal_id")
 		.select(sql<number>`count(*)::int`.as("subscriptions"))
 		.groupBy("goal_sub.goal_id");
 
-	const uidFn = whereUserIdOnGoalSubForAggregate(b.userID);
+	const uidFn = whereUserIdOnGoalSubForAggregate(userID);
 
 	if (uidFn) {
 		q = q.where(uidFn);
 	}
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("goal.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("goal.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
 	const ranked = await q.orderBy("subscriptions", "desc").limit(limit).execute();
@@ -639,24 +560,17 @@ export async function GetMostSubscribedGoals(
 }
 
 export async function GetMostSubscribedQuests(
-	query: FilterQuery<QuestSubscriptionDocument>,
+	{ game, playtype }: TargetSubFilter,
 	limit = 100,
 ): Promise<Array<{ __subscriptions: integer } & QuestDocument>> {
-	const b = query as Record<string, unknown>;
-
 	let q = DB.selectFrom("quest")
 		.innerJoin("quest_sub", "quest_sub.quest_id", "quest.id")
 		.select("quest.id")
 		.select(sql<number>`count(*)::int`.as("subscriptions"))
 		.groupBy("quest.id");
 
-	if (b.game !== undefined && b.playtype !== undefined) {
-		const v3 = LEGACY_GameGroupPTToGame(
-			b.game as GameGroup,
-			b.playtype as LEGACY_Playtype,
-		) as Game;
-
-		q = q.where("quest.game", "=", v3);
+	if (game !== undefined && playtype !== undefined) {
+		q = q.where("quest.game", "=", LEGACY_GameGroupPTToGame(game, playtype) as Game);
 	}
 
 	const ranked = await q.orderBy("subscriptions", "desc").limit(limit).execute();

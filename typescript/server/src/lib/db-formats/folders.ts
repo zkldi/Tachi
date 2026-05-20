@@ -20,15 +20,10 @@ export function ToFolderDocument(
 	return {
 		folderID: row.id,
 		slug: row.slug,
-		data: {
-			$comment:
-				"This data does not exist anymore, and you never should've been depending on it, anyway. This field is only here for backwards compatibility.",
-		},
 		game: row.game,
 		inactive: row.inactive,
 		searchTerms: row.search_terms ?? [],
 		title: row.title,
-		type: "charts",
 	};
 }
 

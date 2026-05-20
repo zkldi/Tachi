@@ -90,7 +90,6 @@
 		"@types/lodash": "4.14.172",
 		"@types/lodash.get": "^4.4.7",
 		"@types/luxon": "^2.3.1",
-		"@types/mongodb": "3.6.20",
 		"@types/multer": "1.4.7",
 		"@types/natural-compare": "^1.4.1",
 		"@types/node": "*",
@@ -153,8 +152,6 @@
 		"lodash": "^4.17.23",
 		"lodash.get": "^4.4.2",
 		"luxon": "^2.3.1",
-		"mongodb": "3.6.3",
-		"monk": "^7.3.4",
 		"multer": "2.0.1",
 		"nanoid": "3.1.23",
 		"natural-compare": "^1.4.0",
@@ -210,8 +207,6 @@
 		"cron-parser": "5.0.2"
 	},
 	"overrides": {
-		"@types/mongodb": "3.6.20",
-		"@types/bson": "1.0.11",
 		"@types/node": "20.19.37",
 		"@types/express-serve-static-core": "4.17.29",
 		"@types/express": "4.17.13",
@@ -220,9 +215,7 @@
 		"typescript": "5.9.3"
 	},
 	"patchedDependencies": {
-		"@types/mongodb@3.6.20": "patches/@types__mongodb@3.6.20.patch",
-		"browserslist@4.21.4": "patches/browserslist@4.21.4.patch",
-		"monk@7.3.4": "patches/monk@7.3.4.patch"
+		"browserslist@4.21.4": "patches/browserslist@4.21.4.patch"
 	},
 	"engines": {
 		"bun": ">=1.2.0"

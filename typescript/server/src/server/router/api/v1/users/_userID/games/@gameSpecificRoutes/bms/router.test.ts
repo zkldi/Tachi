@@ -97,9 +97,7 @@ describe("GET /api/v1/users/:userID/games/:game/custom-tables/:tableUrlName", ()
 	it("returns HTML with a bmstable meta header for user-specific tables", async () => {
 		const { id } = await seedUser({ username: "bms_custom_tbl" });
 
-		const res = await mockApi.get(
-			`/api/v1/users/${id}/games/bms-7k/custom-tables/rival-info`,
-		);
+		const res = await mockApi.get(`/api/v1/users/${id}/games/bms-7k/custom-tables/rival-info`);
 
 		expect(res.status).toBe(200);
 		expect(res.text).toContain('meta name="bmstable"');
@@ -111,9 +109,7 @@ describe("GET /api/v1/users/:userID/games/:game/custom-tables/:tableUrlName", ()
 	it("returns 404 when fetching a public table from the user route", async () => {
 		const { id } = await seedUser({ username: "bms_custom_tbl_pub" });
 
-		const res = await mockApi.get(
-			`/api/v1/users/${id}/games/bms-7k/custom-tables/sieglindeEC`,
-		);
+		const res = await mockApi.get(`/api/v1/users/${id}/games/bms-7k/custom-tables/sieglindeEC`);
 
 		expect(res.status).toBe(404);
 		expect(res.body.description).toContain("user specific");
