@@ -1,6 +1,6 @@
 import {
-	type ScoreDocumentJoinRow,
 	LoadScoreDocumentsForImport,
+	type ScoreDocumentJoinRow,
 	SELECT_SCORE_DOCUMENT,
 	ToScoreDocument,
 } from "#lib/db-formats/score";
@@ -53,12 +53,12 @@ async function seedIidx511Chart() {
  * Insert an iidx-sp score that is committed (visible to ProcessPBs / CreatePBDoc).
  */
 async function insertCommittedIidxScore(opts: {
-	userId: number;
 	chartId: string;
-	scoreId: string;
 	importId?: string | null;
+	scoreId: string;
 	sessionId?: string | null;
 	timeMs?: number;
+	userId: number;
 }) {
 	const timeMs = opts.timeMs ?? Date.now();
 	const doc = mkFakeScoreIIDXSP({

@@ -206,9 +206,7 @@ describe("ProcessPBs", () => {
 		expect(pbBefore).toBeDefined();
 
 		// Delete the only score so the chart has no scores left.
-		await DB.deleteFrom("pb_composed_from")
-			.where("score_id", "=", scoreId)
-			.execute();
+		await DB.deleteFrom("pb_composed_from").where("score_id", "=", scoreId).execute();
 		await DB.deleteFrom("score").where("score.id", "=", scoreId).execute();
 
 		// ProcessPBs should now delete the stale pb row instead of leaving it.
@@ -249,9 +247,7 @@ describe("ProcessPBs", () => {
 			.execute();
 		expect(composedBefore.length).toBeGreaterThan(0);
 
-		await DB.deleteFrom("pb_composed_from")
-			.where("score_id", "=", scoreId)
-			.execute();
+		await DB.deleteFrom("pb_composed_from").where("score_id", "=", scoreId).execute();
 		await DB.deleteFrom("score").where("score.id", "=", scoreId).execute();
 
 		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
@@ -277,8 +273,18 @@ describe("ProcessPBs", () => {
 		const keepScoreId = randomBytes(10).toString("hex");
 		const deleteScoreId = randomBytes(10).toString("hex");
 
-		await insertIidxScoreRow({ userId, scoreId: keepScoreId, chartId: Testing511SPA.chartID, timeMs: 1000 });
-		await insertIidxScoreRow({ userId, scoreId: deleteScoreId, chartId: Testing511SPA.chartID, timeMs: 2000 });
+		await insertIidxScoreRow({
+			userId,
+			scoreId: keepScoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 1000,
+		});
+		await insertIidxScoreRow({
+			userId,
+			scoreId: deleteScoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 2000,
+		});
 
 		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
 

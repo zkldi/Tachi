@@ -1,8 +1,3 @@
-import {
-	type ScoreDocumentJoinRow,
-	SELECT_SCORE_DOCUMENT,
-	ToScoreDocument,
-} from "#lib/db-formats/score";
 import { log } from "#lib/log/log";
 import { ProcessPBs } from "#lib/score-import/framework/pb/process-pbs";
 import { mongoScoreDataToPg } from "#lib/v3/migration-tools";
@@ -50,13 +45,13 @@ async function seedIidx511Chart() {
 
 async function insertIidxScore(opts: {
 	chartId: string;
+	/** Set true when the score must be visible to ProcessPBs (score.committed). */
+	committed?: boolean;
 	importId: string | null;
 	scoreId: string;
 	sessionId: string | null;
-	userId: number;
-	/** Set true when the score must be visible to ProcessPBs (score.committed). */
-	committed?: boolean;
 	timeMs?: number;
+	userId: number;
 }) {
 	const timeMs = opts.timeMs ?? Date.now();
 	const doc = mkFakeScoreIIDXSP({
@@ -270,7 +265,14 @@ describe("RevertImport", () => {
 		const scoreId = "score_revert_pb_gone";
 
 		await insertImportRow(importId, userId);
-		await insertIidxScore({ userId, scoreId, chartId, importId, sessionId: null, committed: true });
+		await insertIidxScore({
+			userId,
+			scoreId,
+			chartId,
+			importId,
+			sessionId: null,
+			committed: true,
+		});
 
 		// Create the PB so there is something to linger if the bug is present.
 		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
@@ -328,7 +330,11 @@ describe("RevertImport", () => {
 		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
 
 		// Revert only import B (the one that held the better score).
-		const importDoc = mkFakeImport({ importID: importIdB, userID: userId, scoreIDs: [scoreIdB] });
+		const importDoc = mkFakeImport({
+			importID: importIdB,
+			userID: userId,
+			scoreIDs: [scoreIdB],
+		});
 		const err = await RevertImport(importDoc);
 		expect(err).toBeNull();
 
@@ -356,7 +362,14 @@ describe("RevertImport", () => {
 		const scoreId = "score_revert_pb_dirty";
 
 		await insertImportRow(importId, userId);
-		await insertIidxScore({ userId, scoreId, chartId, importId, sessionId: null, committed: true });
+		await insertIidxScore({
+			userId,
+			scoreId,
+			chartId,
+			importId,
+			sessionId: null,
+			committed: true,
+		});
 		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
 
 		const importDoc = mkFakeImport({ importID: importId, userID: userId, scoreIDs: [scoreId] });
@@ -378,7 +391,14 @@ describe("RevertImport", () => {
 		const scoreId = "score_revert_pb_composed";
 
 		await insertImportRow(importId, userId);
-		await insertIidxScore({ userId, scoreId, chartId, importId, sessionId: null, committed: true });
+		await insertIidxScore({
+			userId,
+			scoreId,
+			chartId,
+			importId,
+			sessionId: null,
+			committed: true,
+		});
 		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
 
 		const pbBefore = await DB.selectFrom("pb")
