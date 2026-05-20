@@ -1,5 +1,6 @@
 import "Justfile-gen"
 import "Justfile-apps"
+import "Justfile-java"
 import "Justfile-db"
 import "Justfile-backup"
 import "Justfile-misc"

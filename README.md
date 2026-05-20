@@ -57,3 +57,5 @@ This is also published to NPM when it hits production.
 - `docs/`, Which contains Tachi documentation. (MIT)
 
 - `typescript/sieglinde/`, Which contains our BMS/PMS analysis functions. (MIT)
+
+- `java/beatoraja-ir/`, Which is the Tachi Internet Ranking implementation for the LR2oraja variant of beatoraja. (MIT) Formerly `zkldi/tachi-beatoraja-ir`, brought into the monorepo per #1515.

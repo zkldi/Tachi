@@ -40,3 +40,7 @@ _SETUP_OK
 # Local debugging: `just db-schema` (see Justfile-db)
 db/schema.sql
 datasets/
+
+# java/beatoraja-ir (Gradle)
+java/**/.gradle
+java/**/build
