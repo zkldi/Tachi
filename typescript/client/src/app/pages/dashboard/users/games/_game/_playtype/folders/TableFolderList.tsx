@@ -45,7 +45,7 @@ export default function TableFolderList({
 
 	const dataset = useMemo(() => {
 		const arr = [];
-		for (const folder of tableFolderSlugsDisplayOrder(table)) {
+		for (const folder of tableFolderSlugsDisplayOrder(table, game)) {
 			const data = dataMap.get(folder);
 
 			if (!data) {
@@ -56,7 +56,7 @@ export default function TableFolderList({
 		}
 
 		return arr;
-	}, [dataMap, table]);
+	}, [dataMap, table, game]);
 
 	const { user } = useContext(UserContext);
 

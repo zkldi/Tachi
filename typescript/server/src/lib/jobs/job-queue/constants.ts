@@ -15,8 +15,8 @@ export const JOB_STATUS_FAILED = 3;
  * A job is given up after `failed_attempts` reaches MAX_RETRIES (i.e. after MAX_RETRIES
  * unsuccessful 409 attempts).
  */
-export const SCORE_IMPORT_409_RETRY_BASE_MS = 250;
-export const SCORE_IMPORT_409_RETRY_MAX_DELAY_MS = 60_000;
+export const SCORE_IMPORT_409_RETRY_BASE_MS = 1_000;
+export const SCORE_IMPORT_409_RETRY_MAX_DELAY_MS = 240_000;
 export const SCORE_IMPORT_409_MAX_RETRIES = 20;
 
 /**

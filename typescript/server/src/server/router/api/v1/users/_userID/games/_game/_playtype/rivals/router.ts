@@ -5,7 +5,7 @@ import { LoadPbDocumentsForUserSetSortedByCalculatedAlg } from "#lib/db-formats/
 import { GetChallengerUsers, GetRivalIDs, GetRivalUsers } from "#lib/rivals/rivals";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import { DedupeArr, IsString } from "#utils/misc";
 import { CheckStrScoreAlg } from "#utils/string-checks";

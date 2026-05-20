@@ -249,7 +249,9 @@ export async function LoadPbDocumentsForUserPrimaryChartsSortedByAlg(
 		.where("pb.user_id", "=", userId)
 		.where("chart.game", "=", v3Game)
 		.where("chart.is_primary", "=", true)
-		.orderBy(sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision`, "desc")
+		.orderBy(
+			sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision DESC NULLS LAST`,
+		)
 		.orderBy("pb.time_achieved", "desc")
 		.limit(limit)
 		.execute();
@@ -273,7 +275,9 @@ export async function LoadPbDocumentsForGameSortedByCalculatedAlg(
 		.select(SELECT_PB_DOCUMENT_WITH_LEADERBOARD)
 		.where("chart.game", "=", v3Game)
 		.where("pb.lens", "is", null)
-		.orderBy(sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision`, "desc")
+		.orderBy(
+			sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision DESC NULLS LAST`,
+		)
 		.orderBy("pb.time_achieved", "desc")
 		.limit(limit)
 		.execute();
@@ -304,7 +308,9 @@ export async function LoadPbDocumentsForUserSetSortedByCalculatedAlg(
 		.where("pb.user_id", "in", userIds)
 		.where("chart.game", "=", v3Game)
 		.where("pb.lens", "is", null)
-		.orderBy(sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision`, "desc")
+		.orderBy(
+			sql`(pb.calculated_data::jsonb->>${sql.lit(alg)})::double precision DESC NULLS LAST`,
+		)
 		.orderBy("pb.time_achieved", "desc")
 		.limit(limit)
 		.execute();

@@ -1,7 +1,6 @@
 import type { integer } from "tachi-common";
 
 import "express-async-errors";
-import connectRedis from "connect-redis";
 import express, { type Express } from "express";
 // THIS IMPORT **MUST** GO HERE. DO NOT MOVE IT. IT MUST OCCUR BEFORE ANYTHING HAPPENS WITH EXPRESS
 // BUT AFTER EXPRESS IS IMPORTED.
@@ -9,7 +8,6 @@ import express, { type Express } from "express";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { log } from "#lib/log/log";
 import { Env, ServerConfig, TachiConfig } from "#lib/setup/config";
-import { RedisClient } from "#services/redis/redis";
 import { IsNonEmptyString, IsRecord } from "#utils/misc";
 import { ExpectedErr } from "bliss";
 import expressSession from "express-session";
@@ -23,14 +21,14 @@ let store;
 
 if (Env.NODE_ENV !== "test") {
 	log.info({ bootInfo: true }, "Connecting ExpressSession to Redis.");
-	const RedisStore = connectRedis(expressSession);
-
-	store = new RedisStore({
-		host: "localhost",
-		port: 6379,
-		client: RedisClient,
-		prefix: TachiConfig.NAME,
-	});
+	// n.b. load bearing prefix here - do not remove the prefix for any reason.
+	// Dynamic import keeps redis.ts (which uses Bun.RedisClient) out of the
+	// module graph when running under Vitest's Node.js worker threads in tests.
+	const [{ RedisClient }, { BunRedisSessionStore }] = await Promise.all([
+		import("#services/redis/redis"),
+		import("#services/redis/session-store"),
+	]);
+	store = new BunRedisSessionStore(RedisClient, { prefix: TachiConfig.NAME });
 }
 
 const userSessionMiddleware = expressSession({
@@ -158,6 +156,24 @@ app.use((req, res, next) => {
 });
 
 app.use(RequestLoggerMiddleware);
+
+// Per-request timing for test-suite profiling. Enabled by TACHI_REQ_TIMING=1.
+// Writes one line per request to stderr with method, url, status, total ms
+// and an approximate "handler" budget (server-side time from middleware entry
+// to res.on('finish')). Cheap enough to leave in for ad-hoc profiling but
+// gated so it doesn't pollute the normal test log.
+if (Env.NODE_ENV === "test" && process.env.TACHI_REQ_TIMING === "1") {
+	app.use((req, res, next) => {
+		const t0 = performance.now();
+		res.on("finish", () => {
+			const ms = performance.now() - t0;
+			process.stderr.write(
+				`[reqtiming] ${req.method.padEnd(4)} ${res.statusCode} ${ms.toFixed(1).padStart(7)}ms  ${req.originalUrl}\n`,
+			);
+		});
+		next();
+	});
+}
 
 app.use("/", mainRouter);
 

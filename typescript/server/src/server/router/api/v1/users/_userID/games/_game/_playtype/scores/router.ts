@@ -7,7 +7,7 @@ import {
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { SearchSpecificGameSongsAndCharts } from "#lib/search/song-charts";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import {
@@ -17,6 +17,7 @@ import {
 } from "#utils/queries/scores";
 import { FilterChartsAndSongs } from "#utils/scores";
 import { ExpectedErr } from "bliss";
+import { sql } from "kysely";
 
 /**
  * Searches a user's individual scores.
@@ -107,7 +108,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_SCORE_DOCUMENT)
 			.where("score.user_id", "=", user.id)
 			.where("chart.id", "=", chart.chartID)
-			.orderBy("score.time_added", "desc")
+			.orderBy(sql`score.time_achieved desc nulls last`)
 			.execute();
 
 		return success(

@@ -20,6 +20,7 @@
 	"author": "zk",
 	"license": "AGPL3",
 	"devDependencies": {
+		"@types/bun": "catalog:",
 		"@types/pg": "catalog:",
 		"@types/supertest": "catalog:",
 		"@typescript/native-preview": "catalog:",
@@ -27,33 +28,23 @@
 		"eslint-config-tachi": "workspace:*",
 		"node-mocks-http": "catalog:",
 		"supertest": "catalog:",
-		"tsconfig-paths": "catalog:",
 		"vitest": "catalog:"
 	},
 	"dependencies": {
 		"@aws-sdk/client-s3": "catalog:",
 		"@octokit/app": "catalog:",
 		"@types/bcryptjs": "catalog:",
-		"@types/bunyan": "catalog:",
-		"@types/connect-redis": "catalog:",
 		"@types/express": "catalog:",
-		"@types/express-rate-limit": "catalog:",
 		"@types/express-serve-static-core": "catalog:",
 		"@types/express-session": "catalog:",
-		"@types/mongodb": "catalog:",
 		"@types/multer": "catalog:",
 		"@types/node": "catalog:",
 		"@types/node-fetch": "catalog:",
 		"@types/nodemailer": "catalog:",
-		"@types/rate-limit-redis": "catalog:",
-		"@types/redis": "catalog:",
 		"bcryptjs": "catalog:",
 		"bliss": "workspace:*",
 		"bms-table-loader": "catalog:",
-		"bullmq": "catalog:",
-		"bunyan": "catalog:",
 		"commander": "catalog:",
-		"connect-redis": "catalog:",
 		"cron-parser": "catalog:",
 		"csv-parse": "catalog:",
 		"deepmerge": "catalog:",
@@ -61,7 +52,6 @@
 		"express": "catalog:",
 		"express-async-errors": "catalog:",
 		"express-prom-bundle": "catalog:",
-		"express-rate-limit": "catalog:",
 		"express-session": "catalog:",
 		"fast-json-stable-hash": "catalog:",
 		"fast-xml-parser": "catalog:",
@@ -69,8 +59,6 @@
 		"html-entities": "catalog:",
 		"kysely": "catalog:",
 		"lodash": "catalog:",
-		"mongodb": "catalog:",
-		"monk": "catalog:",
 		"multer": "catalog:",
 		"node-cache": "catalog:",
 		"node-fetch": "catalog:",
@@ -79,13 +67,10 @@
 		"pg": "catalog:",
 		"prom-client": "catalog:",
 		"prudence": "catalog:",
-		"rate-limit-redis": "catalog:",
-		"redis": "catalog:",
 		"rg-stats": "catalog:",
 		"tachi-common": "workspace:*",
 		"tachi-db": "workspace:*",
 		"tachi-db-migration-engine": "workspace:*",
-		"ts-node": "catalog:",
 		"typescript": "catalog:",
 		"zod": "catalog:"
 	},
@@ -98,9 +83,7 @@
 		"include": [
 			"src/*/!(test-utils)/**/*.ts"
 		],
-		"exclude": [
-			"src/external/mongo/schemas.ts"
-		]
+		"exclude": []
 	},
 	"engines": {
 		"bun": ">=1.2.0"

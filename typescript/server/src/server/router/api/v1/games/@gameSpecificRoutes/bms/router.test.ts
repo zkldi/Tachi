@@ -63,6 +63,25 @@ async function seedBmsSongAndChart(opts: {
 	return { chartPgId, songPgId: songNewID, songLegacyId: 970_000 + n };
 }
 
+async function seedSieglindeEcTable() {
+	const tablePk = "tbl_sieglinde_ec_test";
+	const tableLegacy = "bms-7K-sgl-EC";
+
+	await DB.insertInto("table")
+		.values({
+			id: tablePk,
+			legacy_id: tableLegacy,
+			game: "bms-7k",
+			inactive: false,
+			title: "Sieglinde EC",
+			default_value: false,
+			slug: null,
+		})
+		.execute();
+
+	return { tablePk, tableLegacy };
+}
+
 describe("GET /api/v1/games/:game/sieglinde-charts", () => {
 	it("returns empty songs and charts when nothing matches", async () => {
 		const res = await mockApi.get("/api/v1/games/bms-7k/sieglinde-charts");
@@ -176,5 +195,58 @@ describe("GET /api/v1/games/:game/custom-tables", () => {
 		const urlNames = res.body.body.map((t: { urlName: string }) => t.urlName);
 		expect(urlNames).toContain("sieglindeEC");
 		expect(urlNames).toContain("sieglindeHC");
+	});
+});
+
+describe("GET /api/v1/games/:game/custom-tables/:tableUrlName", () => {
+	it("returns HTML with a bmstable meta header (not 500)", async () => {
+		const res = await mockApi.get("/api/v1/games/bms-7k/custom-tables/sieglindeEC");
+
+		expect(res.status).toBe(200);
+		expect(res.text).toContain('meta name="bmstable"');
+		expect(res.text).toContain(
+			"https://example.com/api/v1/games/bms-7k/custom-tables/sieglindeEC/header.json",
+		);
+	});
+
+	it("returns 404 for an unknown table", async () => {
+		const res = await mockApi.get("/api/v1/games/bms-7k/custom-tables/does-not-exist");
+
+		expect(res.status).toBe(404);
+		expect(res.body.success).toBe(false);
+	});
+
+	it("returns 404 when the table is for a different BMS playtype", async () => {
+		const res = await mockApi.get("/api/v1/games/bms-14k/custom-tables/sieglindeEC");
+
+		expect(res.status).toBe(404);
+		expect(res.body.description).toContain("bms-7k");
+	});
+});
+
+describe("GET /api/v1/games/:game/custom-tables/:tableUrlName/header.json", () => {
+	it("returns header.json for a public table", async () => {
+		await seedSieglindeEcTable();
+
+		const res = await mockApi.get("/api/v1/games/bms-7k/custom-tables/sieglindeEC/header.json");
+
+		expect(res.status).toBe(200);
+		expect(res.body.name).toBe("Sieglinde EC");
+		expect(res.body.symbol).toBe("sgl-");
+		expect(res.body.data_url).toBe(
+			"https://example.com/api/v1/games/bms-7k/custom-tables/sieglindeEC/body.json",
+		);
+		expect(Array.isArray(res.body.levels)).toBe(true);
+	});
+});
+
+describe("GET /api/v1/games/:game/custom-tables/:tableUrlName/body.json", () => {
+	it("returns body.json for a public table", async () => {
+		await seedSieglindeEcTable();
+
+		const res = await mockApi.get("/api/v1/games/bms-7k/custom-tables/sieglindeEC/body.json");
+
+		expect(res.status).toBe(200);
+		expect(Array.isArray(res.body)).toBe(true);
 	});
 });

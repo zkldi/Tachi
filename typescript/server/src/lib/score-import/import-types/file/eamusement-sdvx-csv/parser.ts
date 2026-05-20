@@ -55,7 +55,10 @@ export default function ParseEamusementSDVXCSV(
 	// All of these are guaranteed to not be null by the CSV parser.
 	// cells is guaranteed to have a length of exactly 11.
 	const iterable = (rawRows as Array<SDVXCSVRow>).map((cells) => ({
-		title: cells[0],
+		// Normalize all Unicode space separators (e.g. U+00A0 non-breaking space,
+		// which the e-amusement CSV export uses in place of regular spaces) to
+		// plain ASCII space so title lookups against the database succeed.
+		title: cells[0].replace(/\p{Zs}/gu, " "),
 		difficulty: cells[1],
 		level: cells[2],
 		lamp: cells[3],

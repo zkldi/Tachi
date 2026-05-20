@@ -16,10 +16,13 @@ import { type ImportTypes } from "tachi-common";
  * Authoritative score-import mutation: tracking (unless worker already did), parse + convert,
  * `EndTrackingImport` or `MarkImportAsFailed`, and `action` table audit. User-facing
  * `ScoreImportFatalError` is turned into `ExpectedErr` for correct audit (`BAD` / not `THROW`).
+ *
+ * The caller ({@link RunScoreImportOnce}) is responsible for acquiring and releasing the
+ * per-user import lock *before* invoking this action. `ScoreImportMain` will throw an
+ * `InternalFailure` if the lock is not held when it is called.
  */
 export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input) => {
-	const { importID, importType, userIntent, skipStartTracking, omitImportTrackerFailureOn409 } =
-		input;
+	const { importID, importType, userIntent, skipStartTracking } = input;
 	const parserArguments = input[
 		"!parserArguments"
 	] as ScoreImportJobData<ImportTypes>["parserArguments"];
@@ -49,10 +52,7 @@ export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input
 		return { importID };
 	} catch (e) {
 		const err = e as Error | ScoreImportFatalError;
-		const is409 = err instanceof ScoreImportFatalError && err.statusCode === 409;
-		if (!is409 || !omitImportTrackerFailureOn409) {
-			await MarkImportAsFailed(importID, err);
-		}
+		await MarkImportAsFailed(importID, err);
 		if (err instanceof ScoreImportFatalError) {
 			throw new ExpectedErr(err.statusCode, err.message);
 		}

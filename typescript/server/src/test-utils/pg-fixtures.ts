@@ -3,6 +3,25 @@ import DB from "#services/pg/db";
 
 let minimalIidxChartCounter = 0;
 
+// `bcrypt.hash` at the test-mode rounds (BCRYPT_SALT_ROUNDS=4, see config.ts)
+// is ~5 ms; in CI we have hundreds of `seedUser({ withCredential: true })`
+// calls across the suite, almost all of them with the same handful of
+// plaintexts (`"password123"` and friends). With `pool: "threads" +
+// isolate: false` this cache survives across every file a worker processes,
+// turning that into one hash per (plaintext, worker). The hash is a pure
+// function of plaintext + rounds for our purposes (the salt varies, but
+// tests only care that `PasswordCompare(plaintext, hash)` round-trips).
+const hashedPasswordCache = new Map<string, Promise<string>>();
+function cachedHashPassword(plaintext: string): Promise<string> {
+	const cached = hashedPasswordCache.get(plaintext);
+	if (cached !== undefined) {
+		return cached;
+	}
+	const p = HashPassword(plaintext);
+	hashedPasswordCache.set(plaintext, p);
+	return p;
+}
+
 /**
  * Inserts a minimal `song` + `chart` row for `iidx` / `SP` (`game` = `iidx-sp`) so
  * goal/chart validation (`GetChartById`) succeeds in tests.
@@ -86,7 +105,7 @@ export async function seedUser(opts?: SeedUserOpts) {
 	const userId = Number(id);
 
 	if (opts?.withCredential) {
-		const hashedPassword = await HashPassword(password);
+		const hashedPassword = await cachedHashPassword(password);
 
 		await DB.insertInto("priv_account_credential")
 			.values({ user_id: userId, email, password: hashedPassword })

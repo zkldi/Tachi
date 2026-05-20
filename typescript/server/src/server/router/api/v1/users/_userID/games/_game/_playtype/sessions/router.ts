@@ -8,7 +8,7 @@ import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { GetSessionScoreInfo } from "#lib/score-import/framework/sessions/sessions";
 import { SearchSessions } from "#lib/search/search";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetScoreIdsGroupedBySessionId } from "#utils/queries/sessions";
 import { CheckStrSessionAlg } from "#utils/string-checks";

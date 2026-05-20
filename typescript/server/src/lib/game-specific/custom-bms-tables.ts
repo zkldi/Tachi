@@ -11,7 +11,7 @@ import {
 	GetFoldersFromTable,
 	GetTableForIDGuaranteed,
 } from "#utils/folder";
-import { GetRecentUGScores } from "#utils/queries/scores";
+import { GetRecentUGPTScores } from "#utils/queries/scores";
 import { REQ_GetGame, REQ_GetUser } from "#utils/req-tachi-data";
 import path from "path";
 import {
@@ -20,7 +20,6 @@ import {
 	type FolderDocument,
 	type GamesForGroup,
 	type integer,
-	LEGACY_GameToPlaytypeFn,
 	type SongDocument,
 	type TableDocument,
 } from "tachi-common";
@@ -128,7 +127,7 @@ export type TachiBMSTable = {
 
 /**
  * Get an "absolute URL" for this bms table. I.E.
- * https://example.com/api/v1/games/bms/7K/tables/exampleTable/header.json
+ * https://example.com/api/v1/games/bms-7k/tables/exampleTable/header.json
  */
 export function BMSTableToAbsoluteURL(
 	bmsTable: TachiBMSTable,
@@ -136,8 +135,6 @@ export function BMSTableToAbsoluteURL(
 	headerOrBody: "body" | "header",
 	userID: number | null,
 ) {
-	const playtype = LEGACY_GameToPlaytypeFn(game);
-
 	return (
 		ServerConfig.OUR_URL +
 		path.join(
@@ -147,7 +144,7 @@ export function BMSTableToAbsoluteURL(
 			// (otherwise, don't do anything)
 			bmsTable.forSpecificUser === true ? `users/${userID}` : "",
 
-			`games/bms/${playtype}/custom-tables/`,
+			`games/${game}/custom-tables/`,
 			bmsTable.urlName,
 			`${headerOrBody}.json`,
 		)
@@ -323,7 +320,7 @@ export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
 			for (const rival of rivals) {
 				promises.push(
 					(async () => {
-						const scores = await GetRecentUGScores(rival.id, game);
+						const scores = await GetRecentUGPTScores(rival.id, game);
 
 						const data = await GetRelevantSongsAndCharts(scores);
 						const charts = data.charts as unknown as Array<
@@ -343,7 +340,7 @@ export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
 
 				promises.push(
 					(async () => {
-						const scores = await GetRecentUGScores(rival.id, game);
+						const scores = await GetRecentUGPTScores(rival.id, game);
 
 						const data = await GetRelevantSongsAndCharts(scores);
 						const charts = data.charts as unknown as Array<

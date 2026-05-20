@@ -10,11 +10,10 @@ import type {
 import { log } from "#lib/log/log";
 import { AwaitScoreImportWorkerResult } from "#lib/score-import/worker/await-worker-result";
 import { EnqueueScoreImportJob } from "#lib/score-import/worker/enqueue-pg";
+import { RunScoreImportOnce } from "#lib/score-import/worker/run-score-import";
 import { ServerConfig } from "#lib/setup/config";
 import { Random20Hex } from "#utils/misc";
-import { ExpectedErr } from "bliss";
 
-import { MakeScoreImport } from "./score-import";
 import ScoreImportFatalError from "./score-importing/score-import-error";
 
 export interface WrappedAPIResponse {
@@ -23,9 +22,15 @@ export interface WrappedAPIResponse {
 }
 
 /**
- * A thin(ish) wrapper for ScoreImportMain which converts thrown
- * errors and import documents into a WrappedAPIResponse, which can
- * be immediately sent with res.json().
+ * Runs a score import and converts the result into a {@link WrappedAPIResponse}
+ * suitable for `res.json()`.
+ *
+ * In normal operation this enqueues to the Postgres job queue and polls until the
+ * worker finishes (up to {@link AwaitScoreImportWorkerResult}'s deadline).
+ *
+ * When `ServerConfig.INLINE_SCORE_IMPORT` is true (test environments only, where
+ * no job-queue worker is running) the import runs inline via {@link RunScoreImportOnce}
+ * so tests exercise the full import code path without needing a live worker process.
  */
 export async function ExpressWrappedScoreImportMain<I extends ImportTypes>(
 	userID: integer,
@@ -47,11 +52,32 @@ export async function ExpressWrappedScoreImportMain<I extends ImportTypes>(
 		};
 
 		let res: ImportDocument;
-		if (ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER) {
+
+		if (ServerConfig.INLINE_SCORE_IMPORT) {
+			// Test-only inline path: runs the full import logic without the job queue.
+			const result = await RunScoreImportOnce(jobData);
+
+			switch (result.kind) {
+				case "done":
+					res = result.importDoc;
+					break;
+				case "lock_held":
+					return {
+						statusCode: 409,
+						body: {
+							success: false,
+							description: "This user already has an ongoing import.",
+						},
+					};
+				case "expected_err":
+					return {
+						statusCode: result.statusCode,
+						body: { success: false, description: result.description },
+					};
+			}
+		} else {
 			await EnqueueScoreImportJob(jobData);
 			res = await AwaitScoreImportWorkerResult(importID);
-		} else {
-			res = await MakeScoreImport(jobData);
 		}
 
 		return {
@@ -63,18 +89,13 @@ export async function ExpressWrappedScoreImportMain<I extends ImportTypes>(
 			},
 		};
 	} catch (err) {
-		// `ACTION_ScoreImport` throws `ExpectedErr` (mapped from `ScoreImportFatalError`); the
-		// await helper throws `ScoreImportFatalError` when the worker records a failed import.
-		if (ExpectedErr.is(err) || err instanceof ScoreImportFatalError) {
-			const description = ExpectedErr.is(err) ? err.reason : err.message;
-			const statusCode = ExpectedErr.is(err) ? err.code : err.statusCode;
-			log.info(description);
+		// `AwaitScoreImportWorkerResult` throws `ScoreImportFatalError` when the
+		// worker records a failed import.
+		if (err instanceof ScoreImportFatalError) {
+			log.info(err.message);
 			return {
-				statusCode,
-				body: {
-					success: false,
-					description,
-				},
+				statusCode: err.statusCode,
+				body: { success: false, description: err.message },
 			};
 		}
 

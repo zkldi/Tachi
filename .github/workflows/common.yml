@@ -22,7 +22,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/zkldi/tachi-dev:main
+      image: ghcr.io/zkldi/tachi-ci:main
       options: --user root
     steps:
       - name: Checkout

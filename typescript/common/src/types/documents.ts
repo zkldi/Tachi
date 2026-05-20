@@ -1,5 +1,3 @@
-import type { FilterQuery } from "mongodb";
-
 import type {
 	AnyClasses,
 	ChartDocumentData,
@@ -397,22 +395,7 @@ export interface BaseFolderDocument {
 	searchTerms: Array<string>;
 }
 
-export interface FolderSongsDocument extends BaseFolderDocument {
-	type: "songs";
-	data: FilterQuery<SongDocument>;
-}
-
-export interface FolderChartsDocument extends BaseFolderDocument {
-	type: "charts";
-	data: FilterQuery<ChartDocument>;
-}
-
-export interface FolderStaticDocument extends BaseFolderDocument {
-	type: "static";
-	data: Array<string>;
-}
-
-export type FolderDocument = FolderChartsDocument | FolderSongsDocument | FolderStaticDocument;
+export type FolderDocument = BaseFolderDocument;
 
 export interface FolderChartLookup {
 	chartID: string;

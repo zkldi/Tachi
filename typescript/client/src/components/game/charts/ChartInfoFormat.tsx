@@ -19,7 +19,6 @@ import {
 	type FolderDocument,
 	FormatDifficultySearch,
 	GameToGameGroup,
-	GetGameConfig,
 	GetGameGroupConfig,
 	type SongDocument,
 	type V3Game,
@@ -49,8 +48,6 @@ export default function ChartInfoFormat({
 		return <Loading />;
 	}
 
-	const versions = Object.keys(GetGameConfig(game).versions);
-
 	return (
 		<Row
 			className="text-center align-items-center"
@@ -64,12 +61,6 @@ export default function ChartInfoFormat({
 				{data.length !== 0 ? (
 					data
 						.sort((a, b) => a.title.localeCompare(b.title))
-						.sort((a, b) =>
-							"versions" in a.data && "versions" in b.data
-								? versions.indexOf(a.data.versions) -
-									versions.indexOf(b.data.versions)
-								: 0,
-						)
 						.map((e) => (
 							<li key={e.slug}>
 								{user && ugs ? (

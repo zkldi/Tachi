@@ -26,7 +26,7 @@ import {
 } from "#lib/proposals/github";
 import { success } from "#lib/router/typed-router";
 import { ServerConfig } from "#lib/setup/config";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 

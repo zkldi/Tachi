@@ -3,7 +3,7 @@ import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetUserWithIDGuaranteed } from "#utils/user";
 import { ExpectedErr } from "bliss";
 

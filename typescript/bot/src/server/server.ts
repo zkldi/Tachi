@@ -3,8 +3,8 @@ import type { APITokenDocument, UserDocument, WebhookEvents } from "tachi-common
 import { log } from "#utils/log";
 import { HandleQuestAchievedV1 } from "#webhook-handlers/quest-achieved";
 import express, { type Express } from "express";
-import path from "path";
 
+import accountLinkedHtml from "../../pages/account-linked.html" with { type: "text" };
 import { ANON_ACTION_Register } from "../anon-actions/register";
 import { Env } from "../config";
 import { RequestTypes, TachiServerV1Get, TachiServerV1Request } from "../utils/fetch-tachi";
@@ -108,7 +108,7 @@ app.get("/oauth/callback", async (req, res) => {
 		`${was_update ? "Updated" : "Created"} discord link for ${user.username} (id: ${user.id}).`,
 	);
 
-	res.sendFile(path.join(__dirname, "../../pages/account-linked.html"));
+	res.type("html").send(accountLinkedHtml);
 });
 
 /**

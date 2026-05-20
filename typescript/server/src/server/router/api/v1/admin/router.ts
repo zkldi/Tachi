@@ -24,7 +24,7 @@ import { GetUserWithIDGuaranteed, ResolveUser } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import { GameToGameGroup, type V3Game } from "tachi-common";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 API_V1_ROUTER.add("GET /admin/job-queue", withAdmin, async ({ input }) => {
 	const page = Math.max(0, input.page ?? 0);

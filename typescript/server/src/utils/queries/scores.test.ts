@@ -3,7 +3,7 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { describe, expect, it } from "vitest";
 
-import { GetRecentUGPTHighlights, GetRecentUGScores } from "./scores";
+import { GetRecentUGPTHighlights, GetRecentUGPTScores } from "./scores";
 
 describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 	let counter = 0;
@@ -11,7 +11,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 	async function seedIidxScore(opts: {
 		highlight: boolean;
 		scoreId: string;
-		timeAddedMs: number;
+		timeAchievedMs: number | null;
 		userId: number;
 	}) {
 		const n = ++counter;
@@ -60,32 +60,44 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 				judgements: JSON.stringify({}),
 				calculated_data: JSON.stringify({}),
 				meta: JSON.stringify({}),
-				time_achieved: null,
-				time_added: UnixMillisecondsToISO8601(opts.timeAddedMs),
+				time_achieved:
+					opts.timeAchievedMs !== null
+						? UnixMillisecondsToISO8601(opts.timeAchievedMs)
+						: null,
+				time_added: new Date().toISOString(),
 				highlight: opts.highlight,
 				comment: null,
 			})
 			.execute();
 	}
 
-	it("GetRecentUGPTScores orders by time_added desc", async () => {
+	it("GetRecentUGPTScores orders by time_achieved desc, nulls last", async () => {
 		const { id: userId } = await seedUser();
 		await seedIidxScore({
 			userId,
 			scoreId: `sc-old-${Date.now()}`,
 			highlight: false,
-			timeAddedMs: 1_000_000,
+			timeAchievedMs: 1_000_000,
 		});
 		await seedIidxScore({
 			userId,
 			scoreId: `sc-new-${Date.now()}`,
 			highlight: false,
-			timeAddedMs: 9_000_000,
+			timeAchievedMs: 9_000_000,
+		});
+		await seedIidxScore({
+			userId,
+			scoreId: `sc-null-${Date.now()}`,
+			highlight: false,
+			timeAchievedMs: null,
 		});
 
-		const scores = await GetRecentUGScores(userId, "iidx-sp", 10);
-		expect(scores.length).toBeGreaterThanOrEqual(2);
-		expect(scores[0]?.timeAdded).toBeGreaterThanOrEqual(scores[1]?.timeAdded ?? 0);
+		const scores = await GetRecentUGPTScores(userId, "iidx-sp", 10);
+		expect(scores.length).toBeGreaterThanOrEqual(3);
+		// newest play time first
+		expect(scores[0]?.timeAchieved).toBeGreaterThanOrEqual(scores[1]?.timeAchieved ?? 0);
+		// null time_achieved sorts last
+		expect(scores[scores.length - 1]?.timeAchieved).toBeNull();
 	});
 
 	it("GetRecentUGPTHighlights only returns highlight scores", async () => {
@@ -95,13 +107,13 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 			userId,
 			scoreId: `sc-hl-no-${base}`,
 			highlight: false,
-			timeAddedMs: base + 1000,
+			timeAchievedMs: base + 1000,
 		});
 		await seedIidxScore({
 			userId,
 			scoreId: `sc-hl-yes-${base}`,
 			highlight: true,
-			timeAddedMs: base + 2000,
+			timeAchievedMs: base + 2000,
 		});
 
 		const highlights = await GetRecentUGPTHighlights(userId, "iidx-sp", 50);

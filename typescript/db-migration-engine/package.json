@@ -28,7 +28,6 @@
 		"@types/node": "catalog:",
 		"@types/pg": "catalog:",
 		"eslint-config-tachi": "workspace:*",
-		"ts-node": "catalog:",
 		"typescript": "catalog:"
 	},
 	"engines": {

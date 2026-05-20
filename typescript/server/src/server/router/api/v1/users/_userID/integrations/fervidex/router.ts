@@ -2,7 +2,7 @@ import { ACTION_UpdateFervidexSettings } from "#actions/update-fervidex-settings
 import { SELECT_FER_SETTINGS, ToFervidexSettingsDocument } from "#lib/db-formats/fervidex-settings";
 import { withKamaitachi, withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 

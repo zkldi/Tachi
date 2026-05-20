@@ -123,9 +123,9 @@ export default function TableEvolutionReplay({
 	const folderSlugOrder = useMemo(
 		() =>
 			scope.kind === "table"
-				? tableFolderSlugsDisplayOrder(scope.table)
+				? tableFolderSlugsDisplayOrder(scope.table, game)
 				: [scope.folder.slug],
-		[scope],
+		[scope, game],
 	);
 
 	const scrubRef = useRef(0);

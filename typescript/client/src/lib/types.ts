@@ -148,4 +148,12 @@ export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
 	 * display?
 	 */
 	sessionImportantScoreCount: integer;
+
+	/**
+	 * By default folders are rendered in reverse of `table.folders` (so the highest
+	 * level / hardest folder shows first). Set this to flip that back — folders will
+	 * then be rendered in the order declared by the table. Used for games like BMS/PMS
+	 * where the table is already authored in the order the UI should display.
+	 */
+	reverseFolderOrder?: boolean;
 }

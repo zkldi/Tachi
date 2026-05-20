@@ -55,7 +55,7 @@ function Inner({
 }) {
 	const { data, error } = useApiQuery<{
 		song: SongDocument<"chunithm">;
-	}>(`/games/chunithm/Single/songs/${score.songID}`);
+	}>(`/games/chunithm/songs/${score.songID}`);
 
 	if (error !== null || data === undefined) {
 		return <Box message="Error retrieving chart" />;

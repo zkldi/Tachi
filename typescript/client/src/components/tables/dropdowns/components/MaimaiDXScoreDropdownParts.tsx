@@ -58,7 +58,7 @@ function Inner({
 }) {
 	const { data, error } = useApiQuery<{
 		song: SongDocument<"maimaidx">;
-	}>(`/games/maimaidx/Single/songs/${score.songID}`);
+	}>(`/games/maimaidx/songs/${score.songID}`);
 
 	if (error !== null || data === undefined) {
 		return <Box message="Error retrieving chart" />;

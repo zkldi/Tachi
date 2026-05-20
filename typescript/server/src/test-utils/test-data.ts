@@ -732,7 +732,6 @@ export const CHUNITHMBBKKSong: SongDocument<"chunithm"> = {
 	data: {
 		genre: "VARIETY",
 		duration: 128.541,
-		displayVersion: "CHUNITHM",
 	},
 	id: "S19d35e0b935765ded25",
 	searchTerms: [],
@@ -748,6 +747,7 @@ export const CHUNITHMBBKKChart: ChartDocument<"chunithm"> = {
 	levelNum: 3,
 	level: "3",
 	data: {
+		displayVersion: "CHUNITHM",
 		inGameID: 3,
 	},
 	isPrimary: true,
@@ -926,12 +926,8 @@ export const HC511UserGoal: GoalSubscriptionDocument = {
 export const TestingIIDXFolderSP10: FolderDocument = {
 	title: "Level 10",
 	game: "iidx-sp",
-	type: "charts",
 	folderID: "ed9d8c734447ce67d7135c0067441a98cc81aeaf",
 	slug: "level-10",
-	data: {
-		level: "10",
-	},
 	searchTerms: [],
 	inactive: false,
 };
@@ -1572,7 +1568,6 @@ export const TestingChunithmSongConverter: SongDocument<"chunithm"> = {
 	data: {
 		genre: "POPS & ANIME",
 		duration: 120,
-		displayVersion: "CHUNITHM CRYSTAL PLUS",
 	},
 	id: "s956",
 	searchTerms: [],
@@ -1584,6 +1579,7 @@ export const TestingChunithmChartConverter: ChartDocument<"chunithm"> = {
 	chartID: "fbba26a6a223b1dd0bf8ef139cfee83114b91086",
 	legacyChartID: "fbba26a6a223b1dd0bf8ef139cfee83114b91086",
 	data: {
+		displayVersion: "CHUNITHM CRYSTAL PLUS",
 		inGameID: 956,
 	},
 	difficulty: "MASTER",
@@ -1600,7 +1596,6 @@ export const TestingChunithmWESongConverter: SongDocument<"chunithm"> = {
 	data: {
 		duration: 135.275,
 		genre: "VARIETY",
-		displayVersion: "CHUNITHM NEW PLUS",
 	},
 	id: "S19d35e0c127c7e441ce",
 	searchTerms: ["xl techno more dance"],
@@ -1610,6 +1605,7 @@ export const TestingChunithmWESongConverter: SongDocument<"chunithm"> = {
 export const TestingChunithmWEChartConverter: ChartDocument<"chunithm"> = {
 	game: "chunithm",
 	data: {
+		displayVersion: "CHUNITHM NEW PLUS",
 		inGameID: 8235,
 	},
 	difficulty: "割☆4",

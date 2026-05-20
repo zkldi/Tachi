@@ -18,11 +18,11 @@ export function scoreDocumentJoin() {
 		.select(SELECT_SCORE_DOCUMENT);
 }
 
-export async function GetRecentUGScores(userID: integer, game: V3Game, limit = 100) {
+export async function GetRecentUGPTScores(userID: integer, game: V3Game, limit = 100) {
 	const rows = await scoreDocumentJoin()
 		.where("score.user_id", "=", userID)
 		.where("score.game", "=", game)
-		.orderBy("score.time_added", "desc")
+		.orderBy(sql`score.time_achieved desc nulls last`)
 		.limit(limit)
 		.execute();
 
@@ -86,7 +86,7 @@ export async function GetRecentUGPTHighlights(userID: integer, game: V3Game, lim
 		.where("score.user_id", "=", userID)
 		.where("score.game", "=", game)
 		.where("score.highlight", "=", true)
-		.orderBy("score.time_added", "desc")
+		.orderBy(sql`score.time_achieved desc nulls last`)
 		.limit(limit)
 		.execute();
 

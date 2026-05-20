@@ -17,8 +17,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@typescript/native-preview": "catalog:",
-		"eslint-config-tachi": "workspace:*",
-		"tsconfig-paths": "catalog:"
+		"eslint-config-tachi": "workspace:*"
 	},
 	"dependencies": {
 		"@types/lodash.get": "catalog:",

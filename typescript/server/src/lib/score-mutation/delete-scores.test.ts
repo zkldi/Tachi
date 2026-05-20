@@ -1,9 +1,16 @@
-import { LoadScoreDocumentsForImport } from "#lib/db-formats/score";
+import {
+	LoadScoreDocumentsForImport,
+	type ScoreDocumentJoinRow,
+	SELECT_SCORE_DOCUMENT,
+	ToScoreDocument,
+} from "#lib/db-formats/score";
+import { log } from "#lib/log/log";
+import { ProcessPBs } from "#lib/score-import/framework/pb/process-pbs";
 import { mongoScoreDataToPg } from "#lib/v3/migration-tools";
 import DB from "#services/pg/db";
 import { mkFakeScoreIIDXSP } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
-import { Testing511Song, Testing511SPA } from "#test-utils/test-data";
+import { Testing511Song, Testing511SPA, TestingIIDXSPScore } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { beforeEach, describe, expect, it } from "vitest";
 
@@ -40,6 +47,67 @@ async function seedIidx511Chart() {
 			data: chart.data,
 		})
 		.execute();
+}
+
+/**
+ * Insert an iidx-sp score that is committed (visible to ProcessPBs / CreatePBDoc).
+ */
+async function insertCommittedIidxScore(opts: {
+	chartId: string;
+	importId?: string | null;
+	scoreId: string;
+	sessionId?: string | null;
+	timeMs?: number;
+	userId: number;
+}) {
+	const timeMs = opts.timeMs ?? Date.now();
+	const doc = mkFakeScoreIIDXSP({
+		userID: opts.userId,
+		chartID: opts.chartId,
+		scoreID: opts.scoreId,
+		scoreData: TestingIIDXSPScore.scoreData,
+		calculatedData: TestingIIDXSPScore.calculatedData,
+		timeAchieved: timeMs,
+		timeAdded: timeMs,
+	});
+	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", doc.scoreData);
+	const ts = UnixMillisecondsToISO8601(timeMs);
+
+	await DB.insertInto("score")
+		.values({
+			id: opts.scoreId,
+			user_id: opts.userId,
+			chart_id: opts.chartId,
+			game: "iidx-sp",
+			session_id: opts.sessionId ?? null,
+			import_id: opts.importId ?? null,
+			data: JSON.stringify(data),
+			derived_data: JSON.stringify(derived),
+			judgements: JSON.stringify(judgements),
+			calculated_data: JSON.stringify(doc.calculatedData),
+			meta: JSON.stringify(doc.scoreMeta),
+			time_achieved: ts,
+			time_added: ts,
+			highlight: false,
+			comment: null,
+			committed: true,
+		})
+		.execute();
+}
+
+/**
+ * Load a full ScoreDocument from Postgres by score ID.
+ * Useful when you need to pass a score to DeleteMultipleScores but don't have an import_id.
+ */
+async function loadScoreDocById(scoreId: string) {
+	const row = await DB.selectFrom("score")
+		.innerJoin("chart", "chart.id", "score.chart_id")
+		.innerJoin("song", "song.id", "chart.song_id")
+		.leftJoin("import", "import.id", "score.import_id")
+		.select(SELECT_SCORE_DOCUMENT)
+		.where("score.id", "=", scoreId)
+		.executeTakeFirstOrThrow();
+	return ToScoreDocument(row as ScoreDocumentJoinRow);
 }
 
 describe("DeleteMultipleScores", () => {
@@ -142,9 +210,89 @@ describe("DeleteMultipleScores", () => {
 		expect(link).toBeUndefined();
 
 		const importStill = await DB.selectFrom("import")
-			.select("id")
-			.where("id", "=", importId)
+			.select("import.id")
+			.where("import.id", "=", importId)
 			.executeTakeFirst();
 		expect(importStill).toEqual({ id: importId });
+	});
+
+	it("deletes the pb row when all scores on the chart are removed (#1521)", async () => {
+		const { id: userId } = await seedUser({ username: "del_scores_pb_gone" });
+		const chartId = chart.chartID;
+		const scoreId = "score_del_pb_gone";
+
+		await insertCommittedIidxScore({ userId, chartId, scoreId });
+
+		// Establish the PB.
+		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
+
+		const pbBefore = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbBefore).toBeDefined();
+
+		const scoreDoc = await loadScoreDocById(scoreId);
+		await DeleteMultipleScores([scoreDoc]);
+
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbAfter).toBeUndefined();
+	});
+
+	it("updates the pb to the best remaining score when only some scores are removed", async () => {
+		const { id: userId } = await seedUser({ username: "del_scores_pb_update" });
+		const chartId = chart.chartID;
+		const keepScoreId = "score_del_pb_keep";
+		const deleteScoreId = "score_del_pb_delete";
+
+		// Both scores use the same scoreData; the later time_achieved one wins the PB.
+		await insertCommittedIidxScore({ userId, chartId, scoreId: keepScoreId, timeMs: 1_000 });
+		await insertCommittedIidxScore({ userId, chartId, scoreId: deleteScoreId, timeMs: 2_000 });
+
+		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
+
+		const deleteDoc = await loadScoreDocById(deleteScoreId);
+		await DeleteMultipleScores([deleteDoc]);
+
+		// PB should still exist and now be composed from the remaining score.
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbAfter).toBeDefined();
+
+		const composedFrom = await DB.selectFrom("pb_composed_from")
+			.select("pb_composed_from.score_id")
+			.where("pb_composed_from.pb_id", "=", pbAfter!.row_id)
+			.execute();
+		const composedScoreIds = composedFrom.map((r) => r.score_id);
+		expect(composedScoreIds).toContain(keepScoreId);
+		expect(composedScoreIds).not.toContain(deleteScoreId);
+	});
+
+	it("clears pb_dirty for the chart after deleting all scores", async () => {
+		const { id: userId } = await seedUser({ username: "del_scores_pb_dirty" });
+		const chartId = chart.chartID;
+		const scoreId = "score_del_pb_dirty";
+
+		await insertCommittedIidxScore({ userId, chartId, scoreId });
+		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
+
+		const scoreDoc = await loadScoreDocById(scoreId);
+		await DeleteMultipleScores([scoreDoc]);
+
+		// After a completed delete the dirty queue must be empty for this user/chart.
+		const dirty = await DB.selectFrom("pb_dirty")
+			.select("pb_dirty.chart_id")
+			.where("pb_dirty.user_id", "=", userId)
+			.where("pb_dirty.chart_id", "=", chartId)
+			.execute();
+		expect(dirty).toHaveLength(0);
 	});
 });

@@ -8,8 +8,11 @@ import { DefaultAdminUser } from "#lib/jobs/default-admin-user";
 import { DeorphanScoresMain } from "#lib/jobs/deorphan-scores";
 import { drainStatsQueuesInOrder } from "#lib/jobs/drain-dirty-queues";
 import { RebuildFolderChartLookupJob } from "#lib/jobs/rebuild-folder-chart-lookup";
-import { TachiConfig } from "#lib/setup/config";
+import { Env, TachiConfig } from "#lib/setup/config";
 import { DedupeArr } from "#utils/misc";
+
+/** Cron tasks that are safe to run in local dev before seeds are loaded. */
+export const DEV_LOCAL_CRON_TASK_IDS = ["drain_stats_queues"] as const;
 
 export interface CronTaskDef {
 	/** `cron_task.id` primary key. */
@@ -109,7 +112,26 @@ function buildList(): Array<CronTaskDef> {
 	if (DedupeArr(names).length !== names.length) {
 		throw new Error("cron task registry has duplicate id fields");
 	}
-	return out;
+	return filterCronTasksForEnvironment(out);
+}
+
+/**
+ * Local dev starts the cron worker alongside the API. With `last_scheduled_at = null`, daily
+ * maintenance jobs (BMS table sync, backsync, etc.) backfill immediately on a fresh database —
+ * often before `just db-load-seeds` has run. Keep only queue-draining enabled by default.
+ *
+ * Set `TACHI_ENABLE_ALL_CRONS=1` to register the full production cron set in dev.
+ */
+export function filterCronTasksForEnvironment(
+	defs: Array<CronTaskDef>,
+	nodeEnv: typeof Env.NODE_ENV = Env.NODE_ENV,
+	enableAllCrons = process.env.TACHI_ENABLE_ALL_CRONS === "1",
+): Array<CronTaskDef> {
+	if (nodeEnv !== "dev" || enableAllCrons) {
+		return defs;
+	}
+	const allowed = new Set<string>(DEV_LOCAL_CRON_TASK_IDS);
+	return defs.filter((d) => allowed.has(d.id));
 }
 
 let cached: Array<CronTaskDef> | undefined;

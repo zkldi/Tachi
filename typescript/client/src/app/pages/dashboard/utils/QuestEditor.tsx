@@ -358,17 +358,18 @@ export default function QuestEditor() {
 
 			{/* ── Centre panel: Quest editor ─────────────────────────────────── */}
 			<Col lg={5} xs={12}>
-				{selectedQuest && selectedQuestIdx !== null ? (
-					<EditableQuest
-						onChange={(updated) =>
-							setQuests(ChangeAtPosition(quests, updated, selectedQuestIdx))
-						}
-						onDelete={() => {
-							setQuests(DeleteInPosition(quests, selectedQuestIdx));
-							setSelectedQuestIdx(null);
-						}}
-						quest={selectedQuest}
-					/>
+			{selectedQuest && selectedQuestIdx !== null ? (
+				<EditableQuest
+					key={selectedQuestIdx}
+					onChange={(updated) =>
+						setQuests(ChangeAtPosition(quests, updated, selectedQuestIdx))
+					}
+					onDelete={() => {
+						setQuests(DeleteInPosition(quests, selectedQuestIdx));
+						setSelectedQuestIdx(null);
+					}}
+					quest={selectedQuest}
+				/>
 				) : (
 					<div className="d-flex h-100 align-items-center justify-content-center text-center text-body-secondary border rounded p-4">
 						<div>

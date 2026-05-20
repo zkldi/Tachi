@@ -4,7 +4,7 @@ import {
 } from "#lib/game-specific/iidx-playlists";
 import { withGame } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { ExpectedErr } from "bliss";
 import { type GamesForGroup, GameToGameGroup } from "tachi-common";
 

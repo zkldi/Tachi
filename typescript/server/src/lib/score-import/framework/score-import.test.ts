@@ -1,6 +1,10 @@
+import type { ScoreImportJobData } from "#lib/score-import/worker/types";
+
 import { seedUser } from "#actions/test-utils/api-tokens";
 import { CDNRetrieve } from "#lib/cdn/cdn";
 import { LoadImportDocumentById } from "#lib/db-formats/import-document";
+import { StartTrackingImport } from "#lib/score-import/framework/status-tracking/import-status-tracking";
+import { RunScoreImportOnce } from "#lib/score-import/worker/run-score-import";
 import DB from "#services/pg/db";
 import {
 	FakeSmallBatchManual,
@@ -11,8 +15,6 @@ import {
 import { Sleep } from "#utils/misc";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { beforeEach, describe, expect, it } from "vitest";
-
-import { MakeScoreImport } from "./score-import";
 
 async function seed511Chart() {
 	await DB.insertInto("song")
@@ -45,7 +47,7 @@ async function seed511Chart() {
 		.execute();
 }
 
-describe("MakeScoreImport (ported from score-import.oldtest.ts)", () => {
+describe("RunScoreImportOnce (ported from score-import.oldtest.ts)", () => {
 	beforeEach(async () => {
 		await seedUser({
 			username: "test_zkldi",
@@ -57,13 +59,19 @@ describe("MakeScoreImport (ported from score-import.oldtest.ts)", () => {
 	});
 
 	it("imports BATCH-MANUAL and matches LoadImportDocumentById", async () => {
-		const res = await MakeScoreImport({
+		const result = await RunScoreImportOnce({
 			importID: "mockImportID",
 			importType: "ir/direct-manual",
 			parserArguments: [FakeSmallBatchManual, false],
 			userID: 1,
 			userIntent: true,
 		});
+
+		expect(result.kind).toBe("done");
+		if (result.kind !== "done") {
+			return;
+		}
+		const res = result.importDoc;
 
 		expect(res.importID).toBe("mockImportID");
 
@@ -84,13 +92,18 @@ describe("MakeScoreImport (ported from score-import.oldtest.ts)", () => {
 	it.skipIf(!process.env.TACHI_CDN_SAVE_LOCATION_BUCKET)(
 		"stores import-input on CDN when TACHI_CDN_SAVE_LOCATION_BUCKET is set",
 		async () => {
-			await MakeScoreImport({
+			const jobData: ScoreImportJobData<"ir/direct-manual"> = {
 				importID: "mockImportID_cdn",
 				importType: "ir/direct-manual",
 				parserArguments: [FakeSmallBatchManual, false],
 				userID: 1,
 				userIntent: true,
-			});
+			};
+
+			// Production enqueues tracking (including CDN upload) before the worker runs
+			// RunScoreImportOnce with skipStartTracking.
+			await StartTrackingImport(jobData);
+			await RunScoreImportOnce(jobData);
 
 			await Sleep(800);
 
@@ -249,13 +262,19 @@ describe("batch-manual score import (smoke)", () => {
 		};
 
 		const importID = "import-smoke-jubeat-array";
-		const doc = await MakeScoreImport({
+		const result = await RunScoreImportOnce({
 			importID,
 			importType: "file/batch-manual",
 			parserArguments: [mkBatchManualMulterFile(batch), {}],
 			userID: 1,
 			userIntent: true,
 		});
+
+		expect(result.kind).toBe("done");
+		if (result.kind !== "done") {
+			return;
+		}
+		const doc = result.importDoc;
 
 		expect(doc.scoreIDs).toHaveLength(1);
 		expect(doc.errors).toHaveLength(0);
@@ -283,7 +302,7 @@ describe("batch-manual score import (smoke)", () => {
 			scores: [jubeatScoreLine({ identifier: 20_000_001, timeAchieved: baseMs })],
 		};
 
-		const doc1 = await MakeScoreImport({
+		const result1 = await RunScoreImportOnce({
 			importID: "import-dedup-sessions-1",
 			importType: "file/batch-manual",
 			parserArguments: [mkBatchManualMulterFile(batch), {}],
@@ -291,17 +310,29 @@ describe("batch-manual score import (smoke)", () => {
 			userIntent: true,
 		});
 
+		expect(result1.kind).toBe("done");
+		if (result1.kind !== "done") {
+			return;
+		}
+		const doc1 = result1.importDoc;
+
 		// Sanity check: first import should have created exactly one session
 		expect(doc1.createdSessions).toHaveLength(1);
 		expect(doc1.createdSessions[0]?.type).toBe("Created");
 
-		const doc2 = await MakeScoreImport({
+		const result2 = await RunScoreImportOnce({
 			importID: "import-dedup-sessions-2",
 			importType: "file/batch-manual",
 			parserArguments: [mkBatchManualMulterFile(batch), {}],
 			userID: 1,
 			userIntent: true,
 		});
+
+		expect(result2.kind).toBe("done");
+		if (result2.kind !== "done") {
+			return;
+		}
+		const doc2 = result2.importDoc;
 
 		// Second import of identical data should claim no sessions — no new scores
 		// were actually committed, so no session was touched.
@@ -362,13 +393,19 @@ describe("batch-manual score import (smoke)", () => {
 		};
 
 		const importID = "import-smoke-jubeat-session-meta";
-		const doc = await MakeScoreImport({
+		const result = await RunScoreImportOnce({
 			importID,
 			importType: "file/batch-manual",
 			parserArguments: [mkBatchManualMulterFile(batch), {}],
 			userID: 1,
 			userIntent: true,
 		});
+
+		expect(result.kind).toBe("done");
+		if (result.kind !== "done") {
+			return;
+		}
+		const doc = result.importDoc;
 
 		expect(doc.scoreIDs).toHaveLength(2);
 		expect(doc.errors).toHaveLength(0);

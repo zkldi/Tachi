@@ -4,6 +4,7 @@
 		"module": "Preserve",
 		"moduleResolution": "bundler",
 		"lib": ["ES2022"],
+		"types": ["bun"],
 		"paths": {
 			"#*": ["./src/*"]
 		}

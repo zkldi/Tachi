@@ -4,39 +4,39 @@ import type { EmptyObject } from "#utils/types";
 import type { GamesForGroup, integer } from "tachi-common";
 
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
+import { drainMytPlaylogStream } from "#lib/score-import/import-types/common/api-myt/buffer-playlog-stream";
 import {
 	CreateMytTransport,
 	FetchMytTitleAPIID,
 } from "#lib/score-import/import-types/common/api-myt/traverse-api";
 import { PlaylogRequestSchema, WaccaUser } from "#proto/generated/wacca/user_pb";
 import { create } from "@bufbuild/protobuf";
-import { ConnectError, createClient } from "@connectrpc/connect";
+import { createClient } from "@connectrpc/connect";
 
 import type { MytWaccaScore } from "./types";
 
 import CreateMytWACCAClassHandler from "./class-handler";
 
-async function* streamPlaylog(apiId: string, log: KtLogger): AsyncIterable<MytWaccaScore> {
+async function* streamPlaylog(
+	apiId: string,
+	log: KtLogger,
+	userID: integer,
+): AsyncIterable<MytWaccaScore> {
 	const client = createClient(WaccaUser, CreateMytTransport());
 	const request = create(PlaylogRequestSchema, { apiId });
 
-	try {
-		for await (const item of client.getPlaylog(request)) {
-			if (!item.info) {
-				log.warn(`Received WACCA playlog stream item with no info - skipping.`);
-				continue;
-			}
+	const items = await drainMytPlaylogStream(client.getPlaylog(request), log, {
+		gameLabel: "WACCA",
+		userID,
+	});
 
-			yield item.info;
-		}
-	} catch (err) {
-		if (err instanceof ConnectError) {
-			log.error({ err, code: err.code }, `MYT gRPC error streaming WACCA playlog`);
-		} else {
-			log.error({ err }, `Unexpected MYT error streaming WACCA playlog`);
+	for (const item of items) {
+		if (!item.info) {
+			log.warn(`Received WACCA playlog stream item with no info - skipping.`);
+			continue;
 		}
 
-		throw new ScoreImportFatalError(500, `Failed to get scores from MYT.`);
+		yield item.info;
 	}
 }
 
@@ -57,7 +57,7 @@ export default async function ParseMytWACCA(
 
 	return {
 		service: "MYT",
-		iterable: streamPlaylog(titleApiId, log),
+		iterable: streamPlaylog(titleApiId, log, userID),
 		context: {},
 		classProvider,
 		gameGroup: "wacca",

@@ -21,6 +21,22 @@ describe("ParseEamusementSDVXCSV", () => {
 		expect(iterableData.length).toBe(204);
 	});
 
+	it("normalises Unicode space separators in song titles to ASCII space", () => {
+		// e-amusement CSV exports use U+00A0 (non-breaking space) in song titles
+		// instead of regular spaces, causing title lookups to silently fail.
+		const header = "楽曲名,難易度,楽曲レベル,クリアランク,スコアグレード,ハイスコア,EXスコア,プレー回数,クリア回数,ULTIMATE CHAIN,PERFECT";
+		const nbspTitle = "snow\u00A0storm\u00A0-euphoria-";
+		const row = `${nbspTitle},EXHAUST,17.5,EXCESSIVE COMPLETE,AAA+,9821428,6635,5,2,0,0`;
+		const buffer = Buffer.from(`${header}\n${row}`);
+
+		const file = MockMulterFile(buffer, "score.csv");
+
+		const { iterable } = ParseEamusementSDVXCSV(file, {}, log);
+		const [entry] = iterable as Array<SDVXEamusementCSVData>;
+
+		expect(entry!.title).toBe("snow storm -euphoria-");
+	});
+
 	it("rejects rows with wrong cell counts", () => {
 		const buffer = Buffer.from(`${"a,".repeat(10)}a\n${"a,".repeat(3)}a`);
 

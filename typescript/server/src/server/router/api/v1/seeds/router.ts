@@ -10,7 +10,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 // Routes for interacting with the `seeds` folder in this instance of Tachi.
 

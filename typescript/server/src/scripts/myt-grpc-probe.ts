@@ -7,6 +7,9 @@
  *   bun run src/scripts/myt-grpc-probe.ts -- --profile-api-id "<title_api_id>" --game chunithm
  *   bun run src/scripts/myt-grpc-probe.ts -- --access-code "..." --game chunithm
  *
+ * Node A/B (same flags; builds a temp bundle — see docker/myt-grpc-probe-node.sh):
+ *   /app/docker/myt-grpc-probe-node.sh --stream-only --profile-api-id "..." --pause-ms 50
+ *
  * Env (required): TACHI_MYT_API_HOST, TACHI_MYT_AUTH_TOKEN
  *
  * Exit 0 only if every requested phase succeeds.
@@ -25,7 +28,6 @@ import { PlaylogRequestSchema, WaccaUser } from "#proto/generated/wacca/user_pb"
 import { create } from "@bufbuild/protobuf";
 import { Code, ConnectError, createClient, type Transport } from "@connectrpc/connect";
 import { createGrpcTransport } from "@connectrpc/connect-node";
-import { spawnSync } from "node:child_process";
 import { parseArgs } from "node:util";
 
 type ProbeGame = "chunithm" | "maimaidx" | "ongeki" | "wacca";
@@ -133,17 +135,26 @@ async function probeLookup(
 	}
 }
 
+function sleep(ms: number): Promise<void> {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function probeGetPlaylog(
 	transport: Transport,
 	profileApiId: string,
 	game: ProbeGame,
 	maxItems: number,
+	pauseMs: number,
 ): Promise<number> {
 	const started = performance.now();
 	let count = 0;
 	let firstItemMs: number | undefined;
 
-	log("stream", `GetPlaylog (max ${maxItems} items) profileApiId=${profileApiId} ...`);
+	const pauseNote = pauseMs > 0 ? `, pause ${pauseMs}ms/item (import-like)` : "";
+	log(
+		"stream",
+		`GetPlaylog (max ${maxItems} items${pauseNote}) profileApiId=${profileApiId} ...`,
+	);
 
 	const stream = createPlaylogStream(transport, profileApiId, game);
 
@@ -153,6 +164,10 @@ async function probeGetPlaylog(
 			if (firstItemMs === undefined) {
 				firstItemMs = Math.round(performance.now() - started);
 				log("stream", `First item after ${firstItemMs}ms`, { sample: summarizeItem(item) });
+			}
+
+			if (pauseMs > 0) {
+				await sleep(pauseMs);
 			}
 
 			if (count >= maxItems) {
@@ -231,18 +246,25 @@ function createPlaylogStream(
 	}
 }
 
-function printRuntimeInfo(): void {
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore
-	log("env", `Bun ${Bun.version}`);
-	log("env", `TACHI_MYT_API_HOST=${requireEnv("TACHI_MYT_API_HOST")}`);
+function runtimeLabel(): string {
+	const proc = process as {
+		versions?: { bun?: string; node?: string };
+	} & NodeJS.Process;
 
-	const node = spawnSync("node", ["--version"], { encoding: "utf8" });
-	if (node.status === 0 && node.stdout.trim()) {
-		log("env", `Node ${node.stdout.trim()} (available for manual A/B vs bun)`);
-	} else {
-		log("env", "Node not on PATH — streaming A/B needs a Node binary in the image");
+	if (proc.versions?.bun !== undefined) {
+		return `Bun ${proc.versions.bun}`;
 	}
+
+	if (proc.versions?.node !== undefined) {
+		return `Node ${proc.versions.node}`;
+	}
+
+	return `runtime pid=${process.pid}`;
+}
+
+function printRuntimeInfo(): void {
+	log("env", `Running on ${runtimeLabel()}`);
+	log("env", `TACHI_MYT_API_HOST=${requireEnv("TACHI_MYT_API_HOST")}`);
 }
 
 function printHelp(): void {
@@ -253,6 +275,7 @@ myt-grpc-probe — test MYT unary Lookup vs streaming GetPlaylog
   --access-code <code>    Card access code (runs Lookup first)
   --game <name>           chunithm | maimaidx | ongeki | wacca  (default: chunithm)
   --max-items <n>         Stop stream after N items (default: 5)
+  --pause-ms <n>          Sleep after each item (simulate slow score import)
   --lookup-only           Skip GetPlaylog
   --stream-only           Skip Lookup (requires --profile-api-id)
   -h, --help
@@ -262,6 +285,7 @@ Examples (inside container):
   cd /app/typescript/server
   bun run src/scripts/myt-grpc-probe.ts -- --access-code "YOUR_CODE" --game chunithm
   bun run src/scripts/myt-grpc-probe.ts -- --profile-api-id "abc123" --max-items 1
+  bun run src/scripts/myt-grpc-probe.ts -- --profile-api-id "abc123" --max-items 500 --pause-ms 50
 `);
 }
 
@@ -272,6 +296,7 @@ async function main(): Promise<void> {
 			"access-code": { type: "string" },
 			game: { type: "string", default: "chunithm" },
 			"max-items": { type: "string", default: "5" },
+			"pause-ms": { type: "string", default: "0" },
 			"lookup-only": { type: "boolean", default: false },
 			"stream-only": { type: "boolean", default: false },
 			help: { type: "boolean", short: "h", default: false },
@@ -292,6 +317,11 @@ async function main(): Promise<void> {
 	const maxItems = Number.parseInt(values["max-items"] ?? "5", 10);
 	if (!Number.isFinite(maxItems) || maxItems < 1) {
 		fail("--max-items must be a positive integer");
+	}
+
+	const pauseMs = Number.parseInt(values["pause-ms"] ?? "0", 10);
+	if (!Number.isFinite(pauseMs) || pauseMs < 0) {
+		fail("--pause-ms must be a non-negative integer");
 	}
 
 	printRuntimeInfo();
@@ -318,7 +348,7 @@ async function main(): Promise<void> {
 		fail("Need --profile-api-id or --access-code for GetPlaylog");
 	}
 
-	await probeGetPlaylog(transport, profileApiId, game, maxItems);
+	await probeGetPlaylog(transport, profileApiId, game, maxItems, pauseMs);
 	log("done", "All phases OK — exit 0");
 }
 

@@ -5,7 +5,7 @@ import {
 } from "#lib/db-formats/kshook-sv6c-settings";
 import { withKamaitachi, withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 

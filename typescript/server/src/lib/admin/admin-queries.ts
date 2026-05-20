@@ -1,5 +1,6 @@
 import type { Action, CronTask, CronTaskExecution, JobQueue } from "tachi-db";
 
+import { ONE_HOUR } from "#lib/constants/time";
 import {
 	SELECT_CRON_TASK,
 	SELECT_CRON_TASK_EXECUTION,
@@ -8,6 +9,13 @@ import {
 import DB from "#services/pg/db";
 
 export const ADMIN_PAGE_SIZE = 50;
+
+/** Only list job queue rows and actions from this many hours ago (inclusive). */
+export const ADMIN_RECENT_HOURS = 12;
+
+export function adminRecentSinceIso(hours = ADMIN_RECENT_HOURS): string {
+	return new Date(Date.now() - ONE_HOUR * hours).toISOString();
+}
 
 export interface JobQueueFilters {
 	job_kind?: string;
@@ -22,24 +30,26 @@ export interface PaginatedResult<T> {
 	total: number;
 }
 
-export function GetActiveJobs(): Promise<Array<JobQueue>> {
+/** Currently running jobs (not limited by the recent-hours window). */
+export function GetActiveJobs(limit = ADMIN_PAGE_SIZE): Promise<Array<JobQueue>> {
 	return DB.selectFrom("job_queue")
 		.select(SELECT_JOB_QUEUE)
 		.where("job_queue.status", "=", 1)
 		.orderBy("job_queue.scheduled_for", "asc")
+		.limit(limit)
 		.execute();
 }
 
 function jobQueueBaseQuery(filters: JobQueueFilters) {
-	let q = DB.selectFrom("job_queue");
+	let q = DB.selectFrom("job_queue").where("job_queue.created_at", ">=", adminRecentSinceIso());
 	if (filters.status !== undefined) {
-		q = q.where("status", "=", filters.status);
+		q = q.where("job_queue.status", "=", filters.status);
 	}
 	if (filters.job_kind) {
-		q = q.where("job_kind", "=", filters.job_kind);
+		q = q.where("job_queue.job_kind", "=", filters.job_kind);
 	}
 	if (filters.scope) {
-		q = q.where("scope", "=", filters.scope);
+		q = q.where("job_queue.scope", "=", filters.scope);
 	}
 	return q;
 }
@@ -82,7 +92,9 @@ export interface ActionFilters {
 export type ActionRow = { username: string | null } & Action;
 
 function actionFilteredQuery(filters: ActionFilters) {
-	let q = DB.selectFrom("action").leftJoin("account", "account.id", "action.user_id");
+	let q = DB.selectFrom("action")
+		.leftJoin("account", "account.id", "action.user_id")
+		.where("action.ts_start", ">=", adminRecentSinceIso());
 	if (filters.kind) {
 		q = q.where("action.kind", "=", filters.kind);
 	}

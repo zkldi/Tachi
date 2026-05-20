@@ -6,4 +6,8 @@ export const JOB_STATUS: Record<number, string> = {
 	3: "Failed",
 };
 
+/** Matches server `ADMIN_PAGE_SIZE` in admin-queries.ts */
 export const ADMIN_PAGE_SIZE = 50;
+
+/** Matches server `ADMIN_RECENT_HOURS` in admin-queries.ts */
+export const ADMIN_RECENT_HOURS = 12;

@@ -22,10 +22,7 @@
 		"codemirror": "catalog:",
 		"comlink": "catalog:",
 		"fast-json-patch": "catalog:",
-		"nanoid": "catalog:",
-		"natural-compare": "catalog:",
 		"react": "catalog:",
-		"react-bootstrap": "catalog:",
 		"react-dom": "catalog:",
 		"react-query": "catalog:",
 		"react-router-dom": "catalog:",
@@ -33,18 +30,14 @@
 		"zod": "catalog:"
 	},
 	"devDependencies": {
-		"@types/natural-compare": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
 		"@types/react-router-dom": "catalog:",
 		"@typescript/native-preview": "catalog:",
 		"@vitejs/plugin-react": "catalog:",
-		"bootstrap-scss": "catalog:",
 		"eslint-config-tachi": "workspace:*",
-		"sass": "catalog:",
 		"typescript": "catalog:",
-		"vite": "catalog:",
-		"vite-plugin-html": "catalog:"
+		"vite": "catalog:"
 	},
 	"engines": {
 		"bun": ">=1.2.0"
