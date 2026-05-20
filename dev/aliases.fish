@@ -15,3 +15,4 @@ defnew gca="git commit --amend"
 defnew gcaa="git commit --amend --all"
 defnew gst="git status" # are we in two kay?
 defnew rr="exec fish"
+defnew gpfwl="git push --force-with-lease"

@@ -1,7 +1,7 @@
 import { GetPBsForJubility } from "#game-implementations/games/jubeat";
 import { withGame, withRequestedUserAndReqData } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import { REQ_GetUser } from "#utils/req-tachi-data";
 import { ExpectedErr } from "bliss";

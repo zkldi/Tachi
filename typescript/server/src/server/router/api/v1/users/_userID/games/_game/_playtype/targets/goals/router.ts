@@ -9,7 +9,7 @@ import {
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { GetParentQuests } from "#lib/targets/quests";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 import { type GoalDocument } from "tachi-common";

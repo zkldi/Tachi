@@ -84,7 +84,7 @@ import {
 	type V3Game,
 } from "tachi-common";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 const gptStatCache = new NodeCache();
 

@@ -20,7 +20,7 @@ import {
 } from "#utils/user";
 import { ExpectedErr } from "bliss";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 const aggressiveRL = wrapExpressMiddleware(AggressiveRateLimitMiddleware);
 const hyperAggressiveRL = wrapExpressMiddleware(HyperAggressiveRateLimitMiddleware);

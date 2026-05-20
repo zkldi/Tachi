@@ -2,7 +2,7 @@ import { GetRecentActivityForMultipleGames } from "#lib/activity/activity";
 import { success } from "#lib/router/typed-router";
 import { ALL_GAMES } from "tachi-common";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 async function globalActivityImpl(input: { startTime?: number }) {
 	const data = await GetRecentActivityForMultipleGames(

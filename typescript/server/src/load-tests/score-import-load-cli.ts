@@ -3,7 +3,8 @@
  *
  * Uses real fixtures under src/test-utils/test-data/ (CSV, XML, JSON) - not MER.
  *
- * One in-flight import per user (409 if you exceed). Use a token pool sized ≥ concurrency.
+ * One in-flight import per user. If a concurrent import is already running the worker retries
+ * with exponential backoff. Use a token pool sized ≥ concurrency.
  *
  * @example
  * bun run load-test:score-import -- \\

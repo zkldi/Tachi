@@ -1,6 +1,6 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import useApiQuery from "#components/util/query/useApiQuery";
-import { ADMIN_PAGE_SIZE, JOB_STATUS } from "#lib/adminConstants";
+import { ADMIN_PAGE_SIZE, ADMIN_RECENT_HOURS, JOB_STATUS } from "#lib/adminConstants";
 import { MillisToSince } from "#util/time";
 import React from "react";
 import { Button, Form, Table } from "react-bootstrap";
@@ -84,8 +84,10 @@ export default function AdminJobQueuePage() {
 	}
 
 	const { activeJobs, filters, jobQueue } = data;
-	const totalPages = Math.ceil(jobQueue.total / ADMIN_PAGE_SIZE);
+	const pageSize = jobQueue.pageSize;
+	const totalPages = Math.ceil(jobQueue.total / pageSize);
 	const currentPage = jobQueue.page;
+	const activeJobsTruncated = activeJobs.length >= ADMIN_PAGE_SIZE;
 
 	function buildPageUrl(p: number) {
 		const sp = new URLSearchParams(location.search);
@@ -120,6 +122,12 @@ export default function AdminJobQueuePage() {
 					<h2 className="h5">
 						Active jobs <span className="badge bg-primary">{activeJobs.length}</span>
 					</h2>
+					{activeJobsTruncated && (
+						<p className="small text-body-secondary mb-2">
+							Showing the first {ADMIN_PAGE_SIZE} running jobs (oldest scheduled
+							first).
+						</p>
+					)}
 					<div className="table-responsive">
 						<Table hover size="sm" striped>
 							<thead>
@@ -146,9 +154,12 @@ export default function AdminJobQueuePage() {
 
 			<section>
 				<h2 className="h5">
-					All jobs{" "}
+					Recent jobs{" "}
 					<span className="badge bg-secondary">{jobQueue.total.toLocaleString()}</span>
 				</h2>
+				<p className="small text-body-secondary mb-3">
+					Jobs created in the last {ADMIN_RECENT_HOURS} hours (up to {pageSize} per page).
+				</p>
 
 				<Form
 					className="d-flex flex-wrap align-items-end gap-3 mb-3"

@@ -194,6 +194,16 @@ export const withGame = (req: Request): Promise<{ game: V3Game }> => {
 };
 
 /**
+ * Like {@link withGame}, but also assigns `game` onto request tachi data for
+ * legacy helpers (e.g. REQ_GetGame, BMS table handlers).
+ */
+export const withGameAndReqData: MiddlewareFn = async (req) => {
+	const ctx = await withGame(req);
+	REQ_AssignToReqTachiData(req, { game: ctx.game });
+	return ctx;
+};
+
+/**
  * Resolves the :userID param, validates :game, and loads the
  * user's game stats. Returns `{ game, requestedUser, userGameStats }`.
  */

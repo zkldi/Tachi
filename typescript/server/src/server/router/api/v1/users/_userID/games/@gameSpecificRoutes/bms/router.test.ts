@@ -93,6 +93,33 @@ async function insertBmsPb(userId: number, chartPgId: string) {
 		.execute();
 }
 
+describe("GET /api/v1/users/:userID/games/:game/custom-tables/:tableUrlName", () => {
+	it("returns HTML with a bmstable meta header for user-specific tables", async () => {
+		const { id } = await seedUser({ username: "bms_custom_tbl" });
+
+		const res = await mockApi.get(
+			`/api/v1/users/${id}/games/bms-7k/custom-tables/rival-info`,
+		);
+
+		expect(res.status).toBe(200);
+		expect(res.text).toContain('meta name="bmstable"');
+		expect(res.text).toContain(
+			`https://example.com/api/v1/users/${id}/games/bms-7k/custom-tables/rival-info/header.json`,
+		);
+	});
+
+	it("returns 404 when fetching a public table from the user route", async () => {
+		const { id } = await seedUser({ username: "bms_custom_tbl_pub" });
+
+		const res = await mockApi.get(
+			`/api/v1/users/${id}/games/bms-7k/custom-tables/sieglindeEC`,
+		);
+
+		expect(res.status).toBe(404);
+		expect(res.body.description).toContain("user specific");
+	});
+});
+
 describe("GET /api/v1/users/:userID/games/:game/best-score/:checksum", () => {
 	const md5 = "a1b2c3d4e5f6789012345678abcdef01";
 	const sha256 = "b".repeat(64);

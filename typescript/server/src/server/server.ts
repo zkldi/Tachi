@@ -159,6 +159,24 @@ app.use((req, res, next) => {
 
 app.use(RequestLoggerMiddleware);
 
+// Per-request timing for test-suite profiling. Enabled by TACHI_REQ_TIMING=1.
+// Writes one line per request to stderr with method, url, status, total ms
+// and an approximate "handler" budget (server-side time from middleware entry
+// to res.on('finish')). Cheap enough to leave in for ad-hoc profiling but
+// gated so it doesn't pollute the normal test log.
+if (Env.NODE_ENV === "test" && process.env.TACHI_REQ_TIMING === "1") {
+	app.use((req, res, next) => {
+		const t0 = performance.now();
+		res.on("finish", () => {
+			const ms = performance.now() - t0;
+			process.stderr.write(
+				`[reqtiming] ${req.method.padEnd(4)} ${res.statusCode} ${ms.toFixed(1).padStart(7)}ms  ${req.originalUrl}\n`,
+			);
+		});
+		next();
+	});
+}
+
 app.use("/", mainRouter);
 
 // completely stolen from ktapi error handler

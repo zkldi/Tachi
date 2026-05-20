@@ -51,6 +51,69 @@ services:
     volumes:
       - tachi-postgres:/var/lib/postgresql
       - "./dev/postgres-init.sql:/docker-entrypoint-initdb.d/init.sql"
+
+  # Dedicated test Postgres. Lives on tmpfs with durability disabled - every
+  # `CREATE DATABASE ... TEMPLATE`, every `TRUNCATE`, every commit is ~5-20x
+  # faster than the dev DB. Wiped on container restart, which is exactly what
+  # we want for tests. Use POSTGRES_TEST_HOST in vitest setup to point at it.
+  tachi-postgres-test:
+    container_name: tachi-postgres-test
+    image: postgres:18
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    # NOTE: with `pool: "threads" + isolate: false` (vitest.config.ts) the
+    # vitest worker DBs are long-lived (~25-30 files of writes each), so
+    # autovacuum + a small WAL ceiling + a working bgwriter are NEEDED to
+    # avoid filling the tmpfs. Earlier we shipped autovacuum=off +
+    # max_wal_size=1GB + bgwriter_lru_maxpages=0 (which was fine for the
+    # short-lived per-file DBs of isolate:true) and tests started failing
+    # mid-run with `No space left on device`.
+    command:
+      - postgres
+      - -c
+      - fsync=off
+      - -c
+      - synchronous_commit=off
+      - -c
+      - full_page_writes=off
+      - -c
+      - wal_level=minimal
+      - -c
+      - max_wal_senders=0
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - max_connections=200
+      - -c
+      - max_wal_size=128MB
+      - -c
+      - min_wal_size=32MB
+      - -c
+      - checkpoint_timeout=30s
+      - -c
+      - autovacuum=on
+      - -c
+      - autovacuum_naptime=5s
+      - -c
+      - autovacuum_vacuum_scale_factor=0.05
+      - -c
+      - autovacuum_analyze_scale_factor=0.1
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+      - -c
+      - pg_stat_statements.track=all
+    # Sized for ~16 concurrent worker DBs + template + WAL headroom.
+    # Each worker DB clone is ~150-250 MB post-migration, and `CREATE
+    # DATABASE ... TEMPLATE` can briefly double that during the copy.
+    tmpfs:
+      - /var/lib/postgresql/data:rw,size=6g
+    environment:
+      POSTGRES_USER: tachi
+      POSTGRES_PASSWORD: tachi
+      POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+
   tachi-s3:
     container_name: tachi-s3
     image: quay.io/minio/minio:RELEASE.2024-10-29T16-01-48Z

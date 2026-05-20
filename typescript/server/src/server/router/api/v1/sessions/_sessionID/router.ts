@@ -3,7 +3,7 @@ import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { GetSessionFolderRaises } from "#lib/folders/get-session-folder-raises";
 import { withSession, withSessionOwner } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetAdjacentSessions, GetSessionData, GetSessionIndex } from "#utils/queries/sessions";
 import { GetUserWithID } from "#utils/user";
 import { ExpectedErr } from "bliss";

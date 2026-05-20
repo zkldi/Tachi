@@ -6,9 +6,9 @@ import {
 	HandleBMSTableHTMLRequest,
 	type TachiBMSTable,
 } from "#lib/game-specific/custom-bms-tables";
-import { withGame, withRequestedUserAndReqData } from "#lib/router/middleware";
+import { withGame, withGameAndReqData, withRequestedUserAndReqData } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { FindBMSChartOnHashInGame } from "#utils/queries/charts";
 import { REQ_GetUser } from "#utils/req-tachi-data";
 import { ExpectedErr } from "bliss";
@@ -52,7 +52,7 @@ function resolveUserCustomBMSTableOrThrow(
 API_V1_ROUTER.add(
 	"GET /users/:userID/games/:game/custom-tables/:tableUrlName",
 	withRequestedUserAndReqData,
-	withGame,
+	withGameAndReqData,
 	({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 
@@ -74,7 +74,7 @@ API_V1_ROUTER.add(
 API_V1_ROUTER.add(
 	"GET /users/:userID/games/:game/custom-tables/:tableUrlName/header.json",
 	withRequestedUserAndReqData,
-	withGame,
+	withGameAndReqData,
 	async ({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 
@@ -96,7 +96,7 @@ API_V1_ROUTER.add(
 API_V1_ROUTER.add(
 	"GET /users/:userID/games/:game/custom-tables/:tableUrlName/body.json",
 	withRequestedUserAndReqData,
-	withGame,
+	withGameAndReqData,
 	async ({ ctx, params, req, res }) => {
 		const game = ctx.game as GamesForGroup["bms"];
 

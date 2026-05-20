@@ -1,4 +1,3 @@
-import { ServerConfig } from "#lib/setup/config";
 import { mongoScoreDataToPg } from "#lib/v3/migration-tools";
 import DB from "#services/pg/db";
 import mockApi, { CloseServerConnection } from "#test-utils/mock-api";
@@ -10,7 +9,7 @@ import {
 	TestingIIDXSPScore,
 } from "#test-utils/test-data";
 import { type ScoreData } from "tachi-common";
-import { afterAll, afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterAll, beforeEach, describe, expect, it } from "vitest";
 
 afterAll(() => CloseServerConnection());
 
@@ -228,25 +227,6 @@ describe("GET /api/v1/imports/failed", () => {
 });
 
 describe("GET /api/v1/imports/:importID/poll-status", () => {
-	let originalWorkerSetting: boolean;
-
-	beforeEach(async () => {
-		originalWorkerSetting = ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER;
-		ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER = true;
-	});
-
-	afterEach(() => {
-		ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER = originalWorkerSetting;
-	});
-
-	it("returns 501 when external worker is disabled", async () => {
-		ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER = false;
-
-		const res = await mockApi.get("/api/v1/imports/some-import/poll-status");
-
-		expect(res.status).toBe(501);
-	});
-
 	it("returns 404 when no import, tracker, or job exists", async () => {
 		const res = await mockApi.get("/api/v1/imports/nonexistent/poll-status");
 

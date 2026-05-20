@@ -26,7 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/zkldi/tachi-dev:main
+      image: ghcr.io/zkldi/tachi-ci:main
       options: --user root
     steps:
       - name: Checkout
@@ -46,7 +46,7 @@ jobs:
       - name: Production build
         run: bun run --filter tachi-seeds-webui build
         env:
-          VITE_SEEDS_REPO: zkldi/Tachi3
+          VITE_SEEDS_REPO: zkldi/Tachi
           BUILD_OUT_DIR: /tmp/seeds-webui
 
       - name: Bundle build output

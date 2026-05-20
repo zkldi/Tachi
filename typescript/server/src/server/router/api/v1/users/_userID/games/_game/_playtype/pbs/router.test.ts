@@ -193,6 +193,48 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/best", () => {
 		expect(res.body.body.pbs[0].calculatedData.ktLampRating).toBe(99);
 		expect(res.body.body.pbs[1].calculatedData.ktLampRating).toBe(10);
 	});
+
+	it("orders by alg=BPI with non-null values before null (NULLS LAST)", async () => {
+		const { id: userId } = await seedUser({ username: "ugpt_pb_best_bpi" });
+		await seedIidxSpProfile(userId);
+
+		const nullA = await seedIidxChartPb({ userId });
+		const nullB = await seedIidxChartPb({ userId });
+		const nullC = await seedIidxChartPb({ userId });
+		const mid = await seedIidxChartPb({ userId });
+		const top = await seedIidxChartPb({ userId });
+
+		for (const { chartPg } of [nullA, nullB, nullC, mid, top]) {
+			await DB.deleteFrom("pb").where("chart_id", "=", chartPg).execute();
+		}
+
+		for (const { chartPg } of [nullA, nullB, nullC]) {
+			await insertPbOnChart({
+				userId,
+				chartPg,
+				calculatedData: { BPI: null, ktLampRating: 1 },
+			});
+		}
+		await insertPbOnChart({
+			userId,
+			chartPg: mid.chartPg,
+			calculatedData: { BPI: 50, ktLampRating: 1 },
+		});
+		await insertPbOnChart({
+			userId,
+			chartPg: top.chartPg,
+			calculatedData: { BPI: 99, ktLampRating: 1 },
+		});
+
+		const res = await mockApi.get(`/api/v1/users/${userId}/games/iidx-sp/pbs/best?alg=BPI`);
+
+		expect(res.status).toBe(200);
+		const bpis = res.body.body.pbs.map(
+			(p: { calculatedData: { BPI: number | null } }) => p.calculatedData.BPI,
+		);
+		expect(bpis.slice(0, 2)).toEqual([99, 50]);
+		expect(bpis.slice(2).every((b: number | null) => b === null)).toBe(true);
+	});
 });
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/rivals", () => {

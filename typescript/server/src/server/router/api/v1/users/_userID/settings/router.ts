@@ -1,7 +1,7 @@
 import { ACTION_UpdateUserSettings } from "#actions/update-user-settings";
 import { withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetSettingsForUser } from "#utils/user";
 
 /**

@@ -9,6 +9,14 @@ import { OmitUndefinedKeys } from "#utils/misc";
 import rateLimit, { type Options } from "express-rate-limit";
 import RateLimitRedis from "rate-limit-redis";
 
+if (process.env.NODE_ENV === "test") {
+	// Signal to vitest.setup.ts that this worker has loaded the rate limiter,
+	// so its beforeEach should clear the in-memory cache. Pure-unit test files
+	// that never load any router skip the cache-clear (and the import chain)
+	// entirely.
+	(globalThis as { __tachi_rate_limiter_loaded?: boolean }).__tachi_rate_limiter_loaded = true;
+}
+
 function CreateStore(name: string) {
 	// undefined forces a default to an in-memory store
 	// So we use that when in testing or localdev.

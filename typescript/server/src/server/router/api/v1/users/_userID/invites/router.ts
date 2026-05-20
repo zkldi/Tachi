@@ -3,7 +3,7 @@ import { SELECT_INVITE, ToInviteDocument } from "#lib/db-formats/invite";
 import { GetTotalAllowedInvites } from "#lib/invites/invites";
 import { withInvitesEnabled, withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetUsersWithIDs } from "#utils/user";
 import { sql } from "kysely";

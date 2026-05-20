@@ -9,7 +9,7 @@ import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 import { type APIPermissions } from "tachi-common";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Retrieve the clients you created. Must be performed with a session-level request.
