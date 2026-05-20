@@ -1445,7 +1445,6 @@ export const TestingArcaeaSheriruthSong: SongDocument<"arcaea"> = {
 	altTitles: [],
 	artist: "Team Grimoire",
 	data: {
-		displayVersion: "1.0",
 		songPack: "Eternal Core",
 	},
 	id: "s19",
@@ -1467,6 +1466,7 @@ export const TestingArcaeaSheriruthFTR: ChartDocument<"arcaea"> = {
 	chartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55e",
 	legacyChartID: "48de13e0be17a282eed6ef97e6e1478eb59bc55e",
 	data: {
+		displayVersion: "1.0",
 		inGameStrID: "sheriruth",
 		notecount: 1151,
 	},

@@ -18,11 +18,13 @@ export default function IIDXStyleSongChartInfoFormat({
 		"arcaea" | "bms" | "chunithm" | "iidx" | "maimaidx" | "ongeki" | "pms" | "popn"
 	>;
 }) {
-	let genre = song.data.genre;
+	let genre: string;
 	if (game === "ongeki") {
 		genre = (song as SongDocument<"ongeki">).data.flavorGenre ?? song.data.genre;
 	} else if (game === "arcaea") {
-		genre = (song as SongDocument<"arceaa">).data.songPack;
+		genre = (song as SongDocument<"arcaea">).data.songPack;
+	} else {
+		genre = song.data.genre!;
 	}
 
 	return (
