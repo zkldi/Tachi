@@ -152,7 +152,7 @@ status = '/api/v1/status'
 # Tachi score import endpoint
 import = '/ir/direct-manual/import'
 # Tachi pbs endpoint
-pbs = '/api/v1/users/{}/games/sdvx/Single/pbs/all'
+pbs = '/api/v1/users/{}/games/sdvx/pbs/all'
 # Your Tachi API key
 api_key = '%%TACHI_KEY%%'
 `,
