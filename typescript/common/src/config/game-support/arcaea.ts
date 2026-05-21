@@ -89,7 +89,7 @@ export const GAME_ARCAEA_CONF = {
 	profileRatingAlgs: {
 		naivePotential: {
 			description:
-				"The average of your best 30 potential values. This is different to in-game, as it does not take into account your recent scores in any way.",
+				"The average of your best 30 Potential values. This is different to the in-game algorithm, as it does not take your recent scores into account in any way.",
 			formatter: ToDecimalPlaces(2),
 			associatedScoreAlgs: ["potential"],
 		},

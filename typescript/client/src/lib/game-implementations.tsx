@@ -786,11 +786,11 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				PLATINUM: bgc("silver", "var(--bs-dark)"),
 				RAINBOW: {
-					background: "linear-gradient(-45deg, #ff73d6 20%, #00ffff 50%, #ebfb2a 80%)",
+					background: "linear-gradient(-45deg, #ffa6e5 20%, #7effff 50%, #f1fb76 80%)",
 					color: "var(--bs-dark)",
 				},
 				RAINBOW_SHINY: {
-					background: "linear-gradient(-45deg, #ff73d6 20%, #00ffff 50%, #ebfb2a 80%)",
+					background: "linear-gradient(-45deg, #ffa6e5 20%, #7effff 50%, #f1fb76 80%)",
 					color: "var(--bs-dark)",
 					shine: true,
 				},

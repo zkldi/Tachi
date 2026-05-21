@@ -29,19 +29,19 @@ export const GAME_GROUP_ONGEKI_CONF = {
 } as const satisfies INTERNAL_GAME_GROUP_CONFIG;
 
 export const OngekiColours = [
-	ClassValue("BLUE", "水", "Blue: 0.000~3.999 Rating"),
-	ClassValue("GREEN", "緑", "Green: 4.000~6.999 Rating"),
-	ClassValue("ORANGE", "橙", "Orange: 7.000~8.999 Rating"),
-	ClassValue("RED", "赤", "Red: 9.000~10.999 Rating"),
-	ClassValue("PURPLE", "紫", "Purple: 11.000~12.999 Rating"),
-	ClassValue("COPPER", "銅", "Copper: 13.000~14.999 Rating"),
-	ClassValue("SILVER", "銀", "Silver: 15.000~16.999 Rating"),
-	ClassValue("GOLD", "金", "Gold: 17.000~17.999 Rating"),
-	ClassValue("PLATINUM", "鉑", "Platinum: 18.000~18.999 Rating"),
-	ClassValue("RAINBOW", "虹", "Rainbow: 19.000~19.999 Rating"),
-	ClassValue("RAINBOW_SHINY", "虹(光)", "Rainbow Shiny: 20.000~20.999 Rating"),
-	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~21.999 Rating"),
-	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ Rating"),
+	ClassValue("BLUE", "水", "Blue: 0.000~3.999 RatingRefresh"),
+	ClassValue("GREEN", "緑", "Green: 4.000~6.999 RatingRefresh"),
+	ClassValue("ORANGE", "橙", "Orange: 7.000~8.999 RatingRefresh"),
+	ClassValue("RED", "赤", "Red: 9.000~10.999 RatingRefresh"),
+	ClassValue("PURPLE", "紫", "Purple: 11.000~12.999 RatingRefresh"),
+	ClassValue("COPPER", "銅", "Copper: 13.000~14.999 RatingRefresh"),
+	ClassValue("SILVER", "銀", "Silver: 15.000~16.999 RatingRefresh"),
+	ClassValue("GOLD", "金", "Gold: 17.000~17.999 RatingRefresh"),
+	ClassValue("PLATINUM", "鉑", "Platinum: 18.000~18.999 RatingRefresh"),
+	ClassValue("RAINBOW", "虹", "Rainbow: 19.000~19.999 RatingRefresh"),
+	ClassValue("RAINBOW_SHINY", "虹(光)", "Rainbow Shiny: 20.000~20.999 RatingRefresh"),
+	ClassValue("RAINBOW_EX", "虹(極)", "Rainbow Extreme: 21.000~21.999 RatingRefresh"),
+	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ RatingRefresh"),
 ];
 
 export const GAME_ONGEKI_CONF = {
@@ -153,15 +153,15 @@ export const GAME_ONGEKI_CONF = {
 	},
 	sessionRatingAlgs: {
 		naiveRating: {
-			description: "The average of your best 10 classic ratings this session.",
+			description: "The average of your best 10 ClassicRatings this session.",
 			formatter: ToDecimalPlaces(2),
 		},
 		naiveScoreRating: {
-			description: "The average of your best 10 score ratings this session.",
+			description: "The average of your best 10 ScoreRatings this session.",
 			formatter: ToDecimalPlaces(3),
 		},
 		starRating: {
-			description: "The average of your best 10 star ratings this session.",
+			description: "The average of your best 10 StarRatings this session.",
 			formatter: ToDecimalPlaces(3),
 		},
 	},
@@ -173,8 +173,11 @@ export const GAME_ONGEKI_CONF = {
 			associatedScoreAlgs: ["rating"],
 		},
 		naiveRatingRefresh: {
-			description:
-				"A weighted sum of the average of your best 60 ScoreRatings, and your best 50 StarRatings. This is a simpler variant of the rating algorithm used in Re:Fresh, without distinguishing between new and old charts.",
+			description: `A weighted average of your best 60 ScoreRatings and 50 StarRatings:
+
+				NaiveRatingRefresh = ScoreRating x 1.2 + StarRating
+
+				This is a simpler variant of the rating algorithm used in Re:Fresh, without distinguishing between new and old charts.`,
 			formatter: ToDecimalPlaces(3),
 			associatedScoreAlgs: ["scoreRating", "starRating"],
 		},
