@@ -285,12 +285,19 @@ for (const optionsDir of options.input) {
 				continue;
 			}
 
-			// Manual override since the song's title is empty in the dataset and not
-			// IDEOGRAPHIC SPACE (U+3000).
-			let tachiSongID =
-				inGameID === 11422
-					? "S19d35e0d843641538f4"
-					: songTitleArtistMap.get(`${musicData.name.str}-${musicData.artistName.str}`);
+			
+			let tachiSongID: string | undefined;
+			if (inGameID === 11422) {
+				// Manual override since the song's title is empty in the dataset and not
+				// IDEOGRAPHIC SPACE (U+3000).
+				tachiSongID = "S19d35e0d843641538f4";
+			} else if (inGameID === 11956) {
+				// Manual override because the song's title changed from Break the Speaker
+				// to Break The Speakers, breaking title matching.
+				tachiSongID = "S19e48709584f1679c4d";
+			} else {
+				tachiSongID = songTitleArtistMap.get(`${musicData.name.str}-${musicData.artistName.str}`);
+			}
 
 			// Has this song been disabled in-game?
 			if (musicData.disable || Number(musicData.eventName.id) === 0) {
