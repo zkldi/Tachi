@@ -285,7 +285,6 @@ for (const optionsDir of options.input) {
 				continue;
 			}
 
-			
 			let tachiSongID: string | undefined;
 			if (inGameID === 11422) {
 				// Manual override since the song's title is empty in the dataset and not
@@ -296,7 +295,9 @@ for (const optionsDir of options.input) {
 				// to Break The Speakers, breaking title matching.
 				tachiSongID = "S19e48709584f1679c4d";
 			} else {
-				tachiSongID = songTitleArtistMap.get(`${musicData.name.str}-${musicData.artistName.str}`);
+				tachiSongID = songTitleArtistMap.get(
+					`${musicData.name.str}-${musicData.artistName.str}`,
+				);
 			}
 
 			// Has this song been disabled in-game?
