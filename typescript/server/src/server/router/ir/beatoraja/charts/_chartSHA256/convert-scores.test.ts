@@ -108,4 +108,19 @@ describe("TachiScoreDataToBeatorajaFormat (ported from convert-scores.oldtest.ts
 		expect(res.player).toBe("test_zkldi");
 		expect(res.epg).toBe(617);
 	});
+
+	it("sets metadata when supplied", () => {
+		const res = TachiScoreDataToBeatorajaFormat(
+			pbScore,
+			BMSGazerChart.data.hashSHA256,
+			"test_zkldi",
+			BMSGazerChart.data.notecount,
+			3,
+			{ inputDevice: "BM_CONTROLLER", random: "MIRROR" },
+		);
+
+		expect(res.deviceType).toBe("BM_CONTROLLER");
+		expect(res.random).toBe(1);
+		expect(res.playcount).toBe(3);
+	});
 });

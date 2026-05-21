@@ -5,6 +5,11 @@ import type {
 
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { GetChartById } from "#lib/db-formats/chart";
+import {
+	type PbDocumentJoinRow,
+	SELECT_PB_DOCUMENT_WITH_LEADERBOARD,
+	ToPbScoreDocument,
+} from "#lib/db-formats/pb";
 import { LoadScoreDocumentById } from "#lib/db-formats/score";
 import { GetSongByID } from "#lib/db-formats/song";
 import { log } from "#lib/log/log";
@@ -14,18 +19,163 @@ import { RequireNotGuest } from "#server/middleware/auth";
 import prValidate from "#server/middleware/prudence-validate";
 import DB from "#services/pg/db";
 import { UpdateClassIfGreater } from "#utils/class";
-import { IsRecord, NotNullish } from "#utils/misc";
+import { DedupeArr, IsRecord, NotNullish } from "#utils/misc";
+import { GetUsersWithIDs, ResolveUser } from "#utils/user";
 import { Router } from "express";
 import { sql } from "kysely";
 import { p } from "prudence";
-import { type Classes, type GamesForGroup, GameToGameGroup, type integer } from "tachi-common";
+import {
+	type BMSGames,
+	type Classes,
+	type GamesForGroup,
+	GameToGameGroup,
+	type integer,
+	type PBScoreDocument,
+	type UserDocument,
+} from "tachi-common";
 
 import { ValidateIRClientVersion } from "./auth";
+import { TachiScoreDataToBeatorajaFormat } from "./charts/_chartSHA256/convert-scores";
 import chartsRouter from "./charts/_chartSHA256/router";
 
 const router: Router = Router({ mergeParams: true });
 
 router.use(ValidateIRClientVersion);
+
+const BEATORAJA_GAMES = ["bms-7k", "bms-14k", "pms-controller", "pms-keyboard"] as const;
+
+interface BeatorajaPbExportRow extends PbDocumentJoinRow {
+	chart_data: unknown;
+}
+
+function GetBeatorajaChartData(row: BeatorajaPbExportRow) {
+	const chartData = row.chart_data as Record<string, unknown>;
+	const sha256 = chartData.hashSHA256;
+	const notecount = chartData.notecount;
+
+	if (typeof sha256 !== "string" || typeof notecount !== "number") {
+		log.warn(
+			{ chartID: row.chart_id, chartData },
+			`Skipping Beatoraja PB export row with invalid chart data.`,
+		);
+		return null;
+	}
+
+	return { notecount, sha256 };
+}
+
+async function GetBeatorajaRivalUsers(userID: integer): Promise<UserDocument[]> {
+	const rivalRows = await DB.selectFrom("game_rival")
+		.select("game_rival.rival")
+		.where("game_rival.user_id", "=", userID)
+		.where("game_rival.game", "in", BEATORAJA_GAMES)
+		.execute();
+
+	const rivalIDs = DedupeArr(rivalRows.map((r) => r.rival));
+
+	return GetUsersWithIDs(rivalIDs);
+}
+
+async function GetPermittedBeatorajaUserIDs(userID: integer) {
+	return new Set([userID, ...(await GetBeatorajaRivalUsers(userID)).map((r) => r.id)]);
+}
+
+async function LoadBeatorajaPbsForUser(userID: integer): Promise<BeatorajaPbExportRow[]> {
+	const rows = await DB.selectFrom("pb")
+		.innerJoin("chart_leaderboard", "chart_leaderboard.row_id", "pb.row_id")
+		.innerJoin("chart", "chart.id", "pb.chart_id")
+		.innerJoin("song", "song.id", "chart.song_id")
+		.select([
+			...SELECT_PB_DOCUMENT_WITH_LEADERBOARD,
+			"chart.data as chart_data",
+		])
+		.where("pb.user_id", "=", userID)
+		.where("chart.game", "in", BEATORAJA_GAMES)
+		.where("pb.lens", "is", null)
+		.orderBy("pb.time_achieved", "desc")
+		.execute();
+
+	return rows as BeatorajaPbExportRow[];
+}
+
+async function FormatBeatorajaPbsForUser(user: UserDocument, requestedBy: integer) {
+	const rows = await LoadBeatorajaPbsForUser(user.id);
+	const scores = await Promise.all(rows.map(async (row) => {
+		const chartData = GetBeatorajaChartData(row);
+
+		if (!chartData) {
+			return null;
+		}
+
+		const pb = await ToPbScoreDocument(row);
+
+		return TachiScoreDataToBeatorajaFormat(
+			pb as PBScoreDocument<BMSGames>,
+			chartData.sha256,
+			user.id === requestedBy ? "" : user.username,
+			chartData.notecount,
+			0,
+		);
+	}));
+
+	return scores.filter((score) => score !== null);
+}
+
+/**
+ * Returns all configured Tachi rivals that can be represented through beatoraja's
+ * game-wide rival API.
+ *
+ * @name GET /ir/beatoraja/rivals
+ */
+router.get("/rivals", async (req, res) => {
+	const userID = NotNullish(req[SYMBOL_TACHI_API_AUTH].userID);
+	const rivals = await GetBeatorajaRivalUsers(userID);
+
+	return res.status(200).json({
+		success: true,
+		description: `Returned ${rivals.length} rivals.`,
+		body: rivals.map((rival) => ({
+			id: `${rival.id}`,
+			name: rival.username,
+			rank: "",
+		})),
+	});
+});
+
+/**
+ * Exports every Beatoraja-compatible PB for a player. The beatoraja client uses
+ * this for initial local score import and rival score database hydration.
+ *
+ * @name GET /ir/beatoraja/players/:userID/scores
+ */
+router.get("/players/:userID/scores", async (req, res) => {
+	const userID = NotNullish(req[SYMBOL_TACHI_API_AUTH].userID);
+	const user = await ResolveUser(req.params.userID);
+
+	if (!user) {
+		return res.status(404).json({
+			success: false,
+			description: `User does not exist.`,
+		});
+	}
+
+	const permittedUserIDs = await GetPermittedBeatorajaUserIDs(userID);
+
+	if (!permittedUserIDs.has(user.id)) {
+		return res.status(403).json({
+			success: false,
+			description: `Cannot export scores for a player that is not you or your rival.`,
+		});
+	}
+
+	const scores = await FormatBeatorajaPbsForUser(user, userID);
+
+	return res.status(200).json({
+		success: true,
+		description: `Successfully returned ${scores.length} scores.`,
+		body: scores,
+	});
+});
 
 /**
  * Submits a beatoraja score to Tachi.
@@ -275,8 +425,8 @@ router.post(
 		const combinedMD5s = charts.map((e) => e.md5).join("");
 
 		const course = await DB.selectFrom("bms_course_lookup")
-			.select(["set", "game", "value"])
-			.where("md5sums", "=", combinedMD5s)
+			.select(["bms_course_lookup.set", "bms_course_lookup.game", "bms_course_lookup.value"])
+			.where("bms_course_lookup.md5sums", "=", combinedMD5s)
 			.executeTakeFirst();
 
 		if (!course) {

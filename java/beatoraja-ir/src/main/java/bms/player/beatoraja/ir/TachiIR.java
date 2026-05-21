@@ -1,6 +1,8 @@
 package bms.player.beatoraja.ir;
 
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
@@ -33,6 +35,8 @@ public class TachiIR implements IRConnection {
 	public static final String HOME;
 	public static final String VERSION;
 	private static final String BASE_URL;
+	private static final OkHttpClient HTTP_CLIENT = new OkHttpClient();
+	private static final ObjectMapper MAPPER = new ObjectMapper();
 
 	static {
 		var properties = new Properties();
@@ -82,9 +86,9 @@ public class TachiIR implements IRConnection {
 		int statusCode;
 
 		TachiResponse(JsonNode actualObj, int code) {
-			success = actualObj.get("success").asBoolean();
-			description = actualObj.get("description").asText();
-			body = actualObj.get("body");
+			success = actualObj.path("success").asBoolean(false);
+			description = actualObj.path("description").asText("Unknown response.");
+			body = actualObj.path("body");
 			statusCode = code;
 		}
 	}
@@ -103,16 +107,16 @@ public class TachiIR implements IRConnection {
 	 * Makes a GET request to BASE_URL + url.
 	 */
 	TachiResponse GETRequest(String url) throws Exception {
-		OkHttpClient client = new OkHttpClient();
-
 		Request request = new Request.Builder().url(BASE_URL + url).header("User-Agent", "OKHTTP")
 				.header("X-TachiIR-Version", VERSION).addHeader("Authorization", "Bearer " + apiToken)
 				.addHeader("Accept", "application/json").build();
 
-		try (Response response = client.newCall(request).execute()) {
+		try (Response response = HTTP_CLIENT.newCall(request).execute()) {
 			int code = response.code();
-			ObjectMapper mapper = new ObjectMapper();
-			JsonNode actualObj = mapper.readTree(response.body().string());
+			String responseBody = response.body() == null ? "" : response.body().string();
+			JsonNode actualObj = responseBody.isEmpty()
+					? MAPPER.createObjectNode().put("success", false).put("description", "Empty response.")
+					: MAPPER.readTree(responseBody);
 
 			return new TachiResponse(actualObj, code);
 		}
@@ -123,7 +127,6 @@ public class TachiIR implements IRConnection {
 	 * body.
 	 */
 	TachiResponse POSTRequest(String url, String JSON) throws Exception {
-		OkHttpClient client = new OkHttpClient();
 		// charset=utf-8 is redundant, but is here just incase.
 		RequestBody body = RequestBody.create(MediaType.get("application/json; charset=utf-8"), JSON);
 
@@ -131,10 +134,12 @@ public class TachiIR implements IRConnection {
 				.header("X-TachiIR-Version", VERSION).addHeader("Accept", "application/json")
 				.addHeader("Authorization", "Bearer " + apiToken).post(body).build();
 
-		try (Response response = client.newCall(request).execute()) {
+		try (Response response = HTTP_CLIENT.newCall(request).execute()) {
 			int code = response.code();
-			ObjectMapper mapper = new ObjectMapper();
-			JsonNode actualObj = mapper.readTree(response.body().string());
+			String responseBody = response.body() == null ? "" : response.body().string();
+			JsonNode actualObj = responseBody.isEmpty()
+					? MAPPER.createObjectNode().put("success", false).put("description", "Empty response.")
+					: MAPPER.readTree(responseBody);
 
 			return new TachiResponse(actualObj, code);
 		}
@@ -178,7 +183,7 @@ public class TachiIR implements IRConnection {
 	/**
 	 * Since we extend/implement a class with the IR, we're not allowed to use the
 	 * "throws exception" function signature modifier.
-	 * 
+	 *
 	 * This is the only way to throw errors, and is generally a horrific idea. Ah
 	 * well.
 	 */
@@ -188,14 +193,15 @@ public class TachiIR implements IRConnection {
 	}
 
 	public IRResponse<IRPlayerData> register(IRAccount account) {
-		return null;
+		ResponseCreator<IRPlayerData> rc = new ResponseCreator<IRPlayerData>();
+		return rc.create(false, "Registration is handled on the Tachi website.", null);
 	}
 
 	private String username;
 
 	/**
 	 * Basically does nothing. Performs some init and status checks for the IR.
-	 * 
+	 *
 	 * Authentication is already handled with API keys, and users are expected to
 	 * place their relevant API key inside `password`.
 	 */
@@ -248,6 +254,7 @@ public class TachiIR implements IRConnection {
 
 		try {
 			TachiResponse resp = GETRequest("/api/v1/status?echo=lr2oraja-ir");
+			JsonNode userBody = MAPPER.createObjectNode();
 
 			if (resp.success) {
 				log("Connected to " + BASE_URL + ".", Importance.DEBUG);
@@ -258,6 +265,7 @@ public class TachiIR implements IRConnection {
 				log("Sending request to /api/v1/users/" + username, Importance.INFO);
 
 				if (userResp.success) {
+					userBody = userResp.body;
 					log("Authenticated as " + userResp.body.get("username").asText() + ".", Importance.INFO);
 				} else {
 					log("Failed to find out who you are. Can't login!", Importance.ERROR);
@@ -269,7 +277,12 @@ public class TachiIR implements IRConnection {
 				_throw();
 			}
 
-			return rc.create(resp.success, resp.description, null);
+			IRPlayerData playerData = new IRPlayerData(
+					userBody.path("id").asText(username),
+					userBody.path("username").asText(username),
+					"");
+
+			return rc.create(resp.success, resp.description, playerData);
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return rc.create(false, "Internal Exception", null);
@@ -290,7 +303,7 @@ public class TachiIR implements IRConnection {
 
 	/**
 	 * Submits a score to the IR. This POSTs data out to submit-score.
-	 * 
+	 *
 	 * @warn This basically just serialises IRScoreData. If a beatoraja update
 	 *       causes this to collapse in on itself, that sucks.
 	 */
@@ -318,6 +331,58 @@ public class TachiIR implements IRConnection {
 			System.out.println(e.toString());
 			return rc.create(false, "Internal Exception", null);
 		}
+	}
+
+	private String urlEncode(String value) {
+		return URLEncoder.encode(value, StandardCharsets.UTF_8);
+	}
+
+	private IRScoreData parseScoreData(JsonNode objNode) {
+		ScoreData scoreData = new ScoreData();
+
+		// Yeah, this is just java.
+		scoreData.setDate(objNode.path("date").asLong());
+		scoreData.setPlayer(objNode.path("player").asText());
+		scoreData.setSha256(objNode.path("sha256").asText());
+		scoreData.setGauge(objNode.path("gauge").asInt());
+		scoreData.setEpg(objNode.path("epg").asInt());
+		scoreData.setLpg(objNode.path("lpg").asInt());
+		scoreData.setEgr(objNode.path("egr").asInt());
+		scoreData.setLgr(objNode.path("lgr").asInt());
+		scoreData.setEgd(objNode.path("egd").asInt());
+		scoreData.setLgd(objNode.path("lgd").asInt());
+		scoreData.setEbd(objNode.path("ebd").asInt());
+		scoreData.setLbd(objNode.path("lbd").asInt());
+		scoreData.setEpr(objNode.path("epr").asInt());
+		scoreData.setLpr(objNode.path("lpr").asInt());
+		scoreData.setEms(objNode.path("ems").asInt());
+		scoreData.setLms(objNode.path("lms").asInt());
+		scoreData.setNotes(objNode.path("notes").asInt());
+		scoreData.setPassnotes(objNode.path("passnotes").asInt());
+		scoreData.setClear(objNode.path("clear").asInt());
+		scoreData.setPlaycount(objNode.path("playcount").asInt());
+		scoreData.setRandom(objNode.path("random").asInt());
+		scoreData.setMinbp(objNode.path("minbp").asInt());
+		scoreData.setCombo(objNode.path("maxcombo").asInt());
+		scoreData.setMode(0);
+
+		return new IRScoreData(scoreData);
+	}
+
+	private IRScoreData[] parseScores(JsonNode body) {
+		ArrayList<IRScoreData> irScoreDatum = new ArrayList<IRScoreData>();
+
+		for (final JsonNode objNode : body) {
+			irScoreDatum.add(parseScoreData(objNode));
+		}
+
+		// weird java oddities: [0] instantiates a list faster than prealloc
+		IRScoreData[] irScoreArr = irScoreDatum.toArray(new IRScoreData[0]);
+
+		// Beatoraja expects these to be sorted.
+		Arrays.sort(irScoreArr, (a, b) -> b.getExscore() - a.getExscore());
+
+		return irScoreArr;
 	}
 
 	class CourseData {
@@ -359,7 +424,7 @@ public class TachiIR implements IRConnection {
 
 	/**
 	 * Retrieves other scores on this chart.
-	 * 
+	 *
 	 * @warn Beatoraja MANDATES that every single record on this chart is returned.
 	 *       If Tachi ever blows up to LR2IR scale, this function will obliterate
 	 *       both the IR and itself, and aggressive caching will have to be invoked.
@@ -369,67 +434,55 @@ public class TachiIR implements IRConnection {
 		ResponseCreator<IRScoreData[]> rc = new ResponseCreator<IRScoreData[]>();
 
 		try {
-			TachiResponse resp = GETRequest("/ir/beatoraja/charts/" + model.sha256 + "/scores");
+			TachiResponse resp;
+
+			if (model != null) {
+				resp = GETRequest("/ir/beatoraja/charts/" + urlEncode(model.sha256) + "/scores");
+			} else if (irpd != null) {
+				resp = GETRequest("/ir/beatoraja/players/" + urlEncode(irpd.id) + "/scores");
+			} else {
+				return rc.create(false, "Expected either a player or chart.", new IRScoreData[0]);
+			}
 
 			if (!resp.success) {
-				return rc.create(false, "No chart data.", null);
+				return rc.create(false, resp.description, new IRScoreData[0]);
 			}
 
-			ArrayList<IRScoreData> irScoreDatum = new ArrayList<IRScoreData>();
-
-			for (final JsonNode objNode : resp.body) {
-				ScoreData scoreData = new ScoreData();
-
-				// Yeah, this is just java.
-				scoreData.setDate(Long.valueOf(objNode.get("date").asInt()));
-				scoreData.setPlayer(objNode.get("player").asText());
-				scoreData.setSha256(objNode.get("sha256").asText());
-				scoreData.setGauge(objNode.get("gauge").asInt());
-				scoreData.setEpg(objNode.get("epg").asInt());
-				scoreData.setLpg(objNode.get("lpg").asInt());
-				scoreData.setEgr(objNode.get("egr").asInt());
-				scoreData.setLgr(objNode.get("lgr").asInt());
-				scoreData.setEgd(objNode.get("egd").asInt());
-				scoreData.setLgd(objNode.get("lgd").asInt());
-				scoreData.setEbd(objNode.get("ebd").asInt());
-				scoreData.setLbd(objNode.get("lbd").asInt());
-				scoreData.setEpr(objNode.get("epr").asInt());
-				scoreData.setLpr(objNode.get("lpr").asInt());
-				scoreData.setEms(objNode.get("ems").asInt());
-				scoreData.setLms(objNode.get("lms").asInt());
-				scoreData.setNotes(objNode.get("notes").asInt());
-				scoreData.setPassnotes(objNode.get("passnotes").asInt());
-				scoreData.setClear(objNode.get("clear").asInt());
-				scoreData.setPlaycount(objNode.get("playcount").asInt());
-				scoreData.setRandom(objNode.get("random").asInt());
-				scoreData.setMinbp(objNode.get("minbp").asInt());
-				scoreData.setCombo(objNode.get("maxcombo").asInt());
-				scoreData.setMode(0);
-
-				IRScoreData irsc = new IRScoreData(scoreData);
-
-				irScoreDatum.add(irsc);
-			}
-
-			// weird java oddities: [0] instantiates a list faster than prealloc
-			IRScoreData[] irScoreArr = irScoreDatum.toArray(new IRScoreData[0]);
-
-			// Beatoraja expects these to be sorted.
-			Arrays.sort(irScoreArr, (a, b) -> b.getExscore() - a.getExscore());
-
-			return rc.create(resp.success, resp.description, irScoreArr);
+			return rc.create(resp.success, resp.description, parseScores(resp.body));
 		} catch (Exception e) {
-			log("An error has occurred while fetching scores for " + model.title + " (" + model.sha256 + ")",
-					Importance.ERROR);
+			String context = model == null ? "player " + (irpd == null ? "<none>" : irpd.name)
+					: model.title + " (" + model.sha256 + ")";
+			log("An error has occurred while fetching scores for " + context, Importance.ERROR);
 			e.printStackTrace(System.out);
-			return rc.create(false, "Internal Exception", null);
+			return rc.create(false, "Internal Exception", new IRScoreData[0]);
 		}
 	}
 
 	public IRResponse<IRPlayerData[]> getRivals() {
-		// Apparently too much strain on the backend for this to work as intended
 		ResponseCreator<IRPlayerData[]> rc = new ResponseCreator<IRPlayerData[]>();
-		return rc.create(false, "Unimplemented.", new IRPlayerData[0]);
+
+		try {
+			TachiResponse resp = GETRequest("/ir/beatoraja/rivals");
+
+			if (!resp.success) {
+				return rc.create(false, resp.description, new IRPlayerData[0]);
+			}
+
+			ArrayList<IRPlayerData> rivals = new ArrayList<IRPlayerData>();
+
+			for (final JsonNode objNode : resp.body) {
+				rivals.add(new IRPlayerData(
+						objNode.path("id").asText(),
+						objNode.path("name").asText(),
+						objNode.path("rank").asText("")));
+			}
+
+			return rc.create(true, resp.description, rivals.toArray(new IRPlayerData[0]));
+		} catch (Exception e) {
+			log("An error has occurred while fetching rivals.", Importance.ERROR);
+			e.printStackTrace(System.out);
+			return rc.create(false, "Internal Exception", new IRPlayerData[0]);
+		}
 	}
 
 	public IRResponse<IRTableData[]> getTableDatas() {
@@ -439,9 +492,9 @@ public class TachiIR implements IRConnection {
 	}
 
 	public IRResponse<IRScoreData[]> getCoursePlayData(IRPlayerData irpd, IRCourseData course) {
-		// This will never be possible in Tachi.
+		// Tachi stores class achievements for courses, not course PB leaderboards.
 		ResponseCreator<IRScoreData[]> rc = new ResponseCreator<IRScoreData[]>();
-		return rc.create(false, "Unimplemented.", new IRScoreData[0]);
+		return rc.create(false, "Course rankings are not supported by Tachi.", new IRScoreData[0]);
 	}
 
 	class ChartResolveRequest {
@@ -455,40 +508,48 @@ public class TachiIR implements IRConnection {
 	}
 
 	public String getSongURL(IRChartData chart) {
-		String game;
-		String playtype;
+		String[] games;
 
 		switch (chart.mode) {
 			case BEAT_7K:
-				game = "bms";
-				playtype = "7K";
+				games = new String[] { "bms-7k" };
 				break;
 			case BEAT_14K:
-				game = "bms";
-				playtype = "14K";
+				games = new String[] { "bms-14k" };
 				break;
 			case POPN_9K:
-				// There's no match type for getting a PMS chart from
-				// its sha256, unfortunately.
-				return null;
+				games = new String[] { "pms-controller", "pms-keyboard" };
+				break;
 			default:
 				return null;
 		}
 
-		try {
-			ObjectWriter ow = new ObjectMapper().writer();
-			String json = ow.writeValueAsString(new ChartResolveRequest("bmsChartHash", chart.sha256));
+		for (String game : games) {
+			String url = getSongURL(game, chart.sha256);
 
-			TachiResponse resp = POSTRequest("/api/v1/games/" + game + "/" + playtype + "/charts/resolve", json);
+			if (url != null) {
+				return url;
+			}
+		}
+
+		return null;
+	}
+
+	private String getSongURL(String game, String sha256) {
+		try {
+			ObjectWriter ow = MAPPER.writer();
+			String json = ow.writeValueAsString(new ChartResolveRequest("bmsChartHash", sha256));
+
+			TachiResponse resp = POSTRequest("/api/v1/games/" + game + "/charts/resolve", json);
 
 			if (!resp.success) {
 				return null;
 			}
 
-			int songID = resp.body.get("song").get("id").asInt();
+			String songID = resp.body.get("song").get("id").asText();
 			String difficulty = resp.body.get("chart").get("difficulty").asText();
 
-			return BASE_URL + "/games/" + game + "/" + playtype + "/songs/" + songID + "/" + difficulty;
+			return BASE_URL + "/games/" + game + "/songs/" + songID + "/" + difficulty;
 		} catch (Exception e) {
 			log(e.toString(), Importance.ERROR);
 		}
