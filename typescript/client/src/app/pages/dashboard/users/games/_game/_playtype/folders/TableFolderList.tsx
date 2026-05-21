@@ -65,10 +65,14 @@ export default function TableFolderList({
 
 	useLayoutEffect(() => {
 		const container = containerRef.current;
-		if (!container) return;
+		if (!container) {
+			return;
+		}
 
 		const titles = container.querySelectorAll<HTMLElement>("[data-folder-title]");
-		if (!titles.length) return;
+		if (!titles.length) {
+			return;
+		}
 
 		// scrollWidth reports the full text width even when the element clips it via overflow:hidden.
 		const MAX_PX = 288; // 18rem hard ceiling

@@ -387,10 +387,14 @@ export default function TableEvolutionReplay({
 
 	useLayoutEffect(() => {
 		const container = foldersReplayPanelRef.current;
-		if (!container || replayRows.length === 0) return;
+		if (!container || replayRows.length === 0) {
+			return;
+		}
 
 		const titles = container.querySelectorAll<HTMLElement>("[data-evo-folder-title]");
-		if (!titles.length) return;
+		if (!titles.length) {
+			return;
+		}
 
 		const MAX_PX = 288;
 		const maxW = Math.max(...Array.from(titles, (el) => el.scrollWidth));
