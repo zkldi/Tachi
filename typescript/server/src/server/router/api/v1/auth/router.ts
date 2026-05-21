@@ -67,7 +67,7 @@ API_V1_ROUTER.add("POST /auth/login", aggressiveRL, async ({ input, req, res }) 
 			{ requestedUser },
 			`State desync for user ${FormatUserDoc(requestedUser)}. This user has no password/email information?`,
 		);
-		throw new ExpectedErr(500, "An internal server error has occured.");
+		throw new ExpectedErr(500, "An internal server error has occurred.");
 	}
 
 	const passwordMatch = await PasswordCompare(input["!password"], privateInfo.password);
@@ -81,7 +81,7 @@ API_V1_ROUTER.add("POST /auth/login", aggressiveRL, async ({ input, req, res }) 
 
 	if (!user) {
 		log.error({ requestedUser }, `User logged in as someone who does not exist?`);
-		throw new ExpectedErr(500, "An internal server error has occured.");
+		throw new ExpectedErr(500, "An internal server error has occurred.");
 	}
 
 	const settings = await GetSettingsForUser(requestedUser.id);
@@ -117,7 +117,7 @@ API_V1_ROUTER.add("POST /auth/register", aggressiveRL, async ({ input, req }) =>
 		log.error(
 			`User ${newUser.userID} does not have a user document, but one was just created.`,
 		);
-		throw new ExpectedErr(500, "An internal server error has occured.");
+		throw new ExpectedErr(500, "An internal server error has occurred.");
 	}
 
 	const settings = await GetSettingsForUser(user.id);

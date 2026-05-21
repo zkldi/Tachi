@@ -432,7 +432,7 @@ API_V1_ROUTER.add("GET /games/:game/charts/:chartID", withGame, withChart, async
 		log.error(
 			`Song ${chart.song.id} does not exist, yet chart ${chart.chartID} has it as a parent?`,
 		);
-		throw new ExpectedErr(500, "An internal server error has occured.");
+		throw new ExpectedErr(500, "An internal server error has occurred.");
 	}
 
 	return success(`Returned chart.`, { chart, song: songRes.doc });

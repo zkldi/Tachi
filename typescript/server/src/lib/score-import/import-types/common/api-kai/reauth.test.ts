@@ -87,7 +87,7 @@ describe("#CreateKaiReauthFunction", () => {
 		const reauthFn = CreateKaiReauthFunction("FLO", authDoc, log, mockFetch);
 
 		await expect(reauthFn()).rejects.toMatchObject({
-			message: "An error has occured while attempting reauthentication.",
+			message: "An error has occurred while attempting reauthentication.",
 		});
 
 		const dbChange = await DB.selectFrom("priv_svc_kai_auth_token")
@@ -123,7 +123,7 @@ describe("#CreateKaiReauthFunction", () => {
 		const reauthFn = CreateKaiReauthFunction("FLO", authDoc, log, mockFetch);
 
 		await expect(reauthFn()).rejects.toMatchObject({
-			message: "An error has occured while attempting reauthentication.",
+			message: "An error has occurred while attempting reauthentication.",
 		});
 
 		const dbChange = await DB.selectFrom("priv_svc_kai_auth_token")

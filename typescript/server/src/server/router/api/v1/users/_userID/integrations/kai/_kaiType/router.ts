@@ -109,7 +109,7 @@ API_V1_ROUTER.add(
 			log.error(
 				`Attempted to /callback ${kaiType}, but this server has no oauth2 credentials configured for that type.`,
 			);
-			throw new ExpectedErr(500, "A fatal error has occured, This has been reported.");
+			throw new ExpectedErr(500, "A fatal error has occurred, This has been reported.");
 		}
 
 		const { CLIENT_SECRET, CLIENT_ID, REDIRECT_URI } = maybeCredentials;

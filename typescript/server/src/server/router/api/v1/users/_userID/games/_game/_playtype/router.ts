@@ -375,7 +375,7 @@ API_V1_ROUTER.add(
 
 		if (!privateInfo) {
 			log.error({ user }, `State desync for user ${FormatUserDoc(user)}.`);
-			throw new ExpectedErr(500, "An internal server error has occured.");
+			throw new ExpectedErr(500, "An internal server error has occurred.");
 		}
 
 		const password = input["!password"] as string;

@@ -112,7 +112,7 @@ export type TachiBMSTable = {
 				game: GamesForGroup["bms"],
 			) => Promise<Array<RawBMSTableEntry>>;
 			// like, say, their rivals scores or something.
-			// then the callbacks need to recieve that info.
+			// then the callbacks need to receive that info.
 			getLevelOrder: (
 				userID: integer,
 				game: GamesForGroup["bms"],
@@ -163,7 +163,7 @@ function GetUserID(req: Request) {
 
 /**
  * Handle a request for a bms table. This endpoint should return "HTML" with the caveat
- * that atleast one of the lines should refer to a "bmstable" meta header.
+ * that at least one of the lines should refer to a "bmstable" meta header.
  */
 export function HandleBMSTableHTMLRequest(bmsTable: TachiBMSTable, req: Request, res: Response) {
 	let absURL;

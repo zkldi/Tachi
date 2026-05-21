@@ -54,7 +54,7 @@ export async function CreateKaiIIDXClassProvider(
 
 	return (game, _userID, _ratings, log) => {
 		if (err !== undefined) {
-			log.error({ err }, `An error occured while updating classes for ${baseUrl}.`);
+			log.error({ err }, `An error occurred while updating classes for ${baseUrl}.`);
 			return {};
 		}
 

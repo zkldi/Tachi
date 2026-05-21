@@ -78,7 +78,7 @@ The properties are described as this:
 | `artist` (Conditional) | String | If `matchType` is "songTitle", this field can be present, and describe the artist name for less equivocal matching. This field is optional for legacy purposes. |
 | `timeAchieved` (Optional) | integer \| null | This is *when* the score was achieved in unix milliseconds. This should be provided if possible, as Tachi uses it for a LOT of features. |
 | `comment` (Optional) | string \| null | A comment from the user about this score. |
-| `judgements` (Optional) | Record&lt;Game Judgement, integer&gt; | This should be a record of the judgements for your game + playtype, and the integer indicating how often they occured. |
+| `judgements` (Optional) | Record&lt;Game Judgement, integer&gt; | This should be a record of the judgements for your game + playtype, and the integer indicating how often they occurred. |
 | `optional` (Optional) | See [Game Specific Optional Metrics](../../schemas/score.md#game-specific) | Any optional metrics you wish to provide for this game. |
 | `scoreMeta` (Optional) | See [Game Specific Score Meta](../../schemas/score.md#game-specific) | This can be a partial record of various `scoreMeta` props for this game. |
 

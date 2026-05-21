@@ -104,7 +104,7 @@ export async function ExpressWrappedScoreImportMain<I extends ImportTypes>(
 			statusCode: 500,
 			body: {
 				success: false,
-				description: "An internal service error has occured. This has been reported!",
+				description: "An internal service error has occurred. This has been reported!",
 			},
 		};
 	}

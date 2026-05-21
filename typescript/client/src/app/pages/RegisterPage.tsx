@@ -24,7 +24,7 @@ export default function RegisterPage() {
 	const [err, setErr] = useState("");
 	// not opened: user has not clicked the rules link
 	// opened: user has clicked the rules link
-	// read: atleast 30 seconds have expired.
+	// read: at least 30 seconds have expired.
 	const [readRules, setReadRules] = useState<"acknowledged" | "not-opened" | "opened" | "read">(
 		"not-opened",
 	);

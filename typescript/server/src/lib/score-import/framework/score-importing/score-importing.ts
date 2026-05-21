@@ -162,7 +162,7 @@ export async function ImportIterableDatapoint<D, C>(
 			return {
 				success: false,
 				type: "InternalError",
-				message: "An internal service error has occured.",
+				message: "An internal service error has occurred.",
 				content: {},
 			};
 		}
@@ -245,13 +245,13 @@ export async function ImportIterableDatapoint<D, C>(
 			}
 
 			case "Internal": {
-				log.error({ err: ClassToObject(err) }, `Internal error occured.`);
+				log.error({ err: ClassToObject(err) }, `Internal error occurred.`);
 				return {
 					success: false,
 					type: "InternalError",
 
 					// could return cfnReturn.message here, but we might want to hide the details of the crash.
-					message: "An internal error has occured.",
+					message: "An internal error has occurred.",
 					content: {},
 				};
 			}
@@ -284,7 +284,7 @@ export async function ImportIterableDatapoint<D, C>(
 				return {
 					success: false,
 					type: "InternalError",
-					message: "An internal service error has occured.",
+					message: "An internal service error has occurred.",
 					content: {},
 				};
 			}

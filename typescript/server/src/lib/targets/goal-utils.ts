@@ -203,7 +203,7 @@ export async function ValidateGoalChartsAndCriteria(
 		case "multi": {
 			if (charts.data.length < 2) {
 				throw new Error(
-					`Invalid charts.data for 'multi' charts. Must specify atleast two charts.`,
+					`Invalid charts.data for 'multi' charts. Must specify at least two charts.`,
 				);
 			}
 

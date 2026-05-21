@@ -60,7 +60,7 @@ export function CreateKaiReauthFunction(
 			log.error({ res, err }, `Unexpected error while fetching reauth?`);
 			throw new ScoreImportFatalError(
 				500,
-				"An error has occured while attempting reauthentication.",
+				"An error has occurred while attempting reauthentication.",
 			);
 		}
 
@@ -85,7 +85,7 @@ export function CreateKaiReauthFunction(
 			log.error({ res, text }, `Unexpected ${res.status} error while fetching reauth?`);
 			throw new ScoreImportFatalError(
 				500,
-				"An error has occured while attempting reauthentication.",
+				"An error has occurred while attempting reauthentication.",
 			);
 		}
 
@@ -98,7 +98,7 @@ export function CreateKaiReauthFunction(
 			log.error({ res, err }, `Invalid JSON body in successful reauth response.`);
 			throw new ScoreImportFatalError(
 				500,
-				"An error has occured while attempting reauthentication.",
+				"An error has occurred while attempting reauthentication.",
 			);
 		}
 
@@ -108,7 +108,7 @@ export function CreateKaiReauthFunction(
 			log.error({ err, json }, `Invalid JSON body in successful reauth response.`);
 			throw new ScoreImportFatalError(
 				500,
-				"An error has occured while attempting reauthentication.",
+				"An error has occurred while attempting reauthentication.",
 			);
 		}
 

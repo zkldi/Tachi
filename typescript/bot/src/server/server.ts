@@ -91,7 +91,7 @@ app.get("/oauth/callback", async (req, res) => {
 		return res
 			.status(500)
 			.send(
-				"Something's gone very wrong. An internal server error has occured. This has been reported.",
+				"Something's gone very wrong. An internal server error has occurred. This has been reported.",
 			);
 	}
 
@@ -207,7 +207,7 @@ const MainExpressErrorHandler: express.ErrorRequestHandler = (err, req, res, _ne
 
 	return res.status(500).json({
 		success: false,
-		description: "A fatal internal server error has occured.",
+		description: "A fatal internal server error has occurred.",
 	});
 };
 

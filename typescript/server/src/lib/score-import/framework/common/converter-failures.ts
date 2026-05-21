@@ -91,7 +91,7 @@ export class InvalidScoreFailure extends ConverterFailure {
 }
 
 /**
- * KTInternalFailure - An unexpected, internal error has occured,
+ * KTInternalFailure - An unexpected, internal error has occurred,
  * and the score could not be processed.
  */
 export class InternalFailure extends ConverterFailure {

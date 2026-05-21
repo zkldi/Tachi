@@ -53,7 +53,7 @@ export async function CreateKaiSDVXClassProvider(
 		);
 
 		if (err !== undefined) {
-			log.error({ err }, `An error occured while updating classes for ${baseUrl}.`);
+			log.error({ err }, `An error occurred while updating classes for ${baseUrl}.`);
 			return {};
 		}
 

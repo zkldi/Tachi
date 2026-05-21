@@ -172,7 +172,7 @@ public class TachiIR implements IRConnection {
 	 * Utility wrapper for throwing a generic exception.
 	 */
 	private void _throw() throws Exception {
-		throw new Exception("An internal error has occured.");
+		throw new Exception("An internal error has occurred.");
 	}
 
 	/**
@@ -264,7 +264,7 @@ public class TachiIR implements IRConnection {
 					_throw();
 				}
 			} else {
-				log("An error has occured in logging in. Please make sure that you are putting an API Key in your password field, and not your site login password.",
+				log("An error has occurred in logging in. Please make sure that you are putting an API Key in your password field, and not your site login password.",
 						Importance.ERROR);
 				_throw();
 			}
@@ -419,7 +419,7 @@ public class TachiIR implements IRConnection {
 
 			return rc.create(resp.success, resp.description, irScoreArr);
 		} catch (Exception e) {
-			log("An error has occured while fetching scores for " + model.title + " (" + model.sha256 + ")",
+			log("An error has occurred while fetching scores for " + model.title + " (" + model.sha256 + ")",
 					Importance.ERROR);
 			e.printStackTrace(System.out);
 			return rc.create(false, "Internal Exception", null);

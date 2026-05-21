@@ -144,7 +144,7 @@ app.use(express.json({ limit: "4mb" }));
 
 app.use((req, res, next) => {
 	// Always mount an empty req body. We operate under the assumption that req.body is
-	// always defined as atleast an object.
+	// always defined as at least an object.
 	if (req.method !== "GET" && (typeof req.body !== "object" || req.body === null)) {
 		req.body = {};
 	}
@@ -234,7 +234,7 @@ const MAIN_ERR_HANDLER: express.ErrorRequestHandler = (err, req, res, _next) => 
 
 	return res.status(500).json({
 		success: false,
-		description: "A fatal internal server error has occured.",
+		description: "A fatal internal server error has occurred.",
 	});
 };
 

@@ -47,7 +47,7 @@ router.post("/submit-score", RequireNotGuest, async (req, res) => {
 		const errMsg = importRes.body.body.errors[0].message;
 
 		// If the error type is SongOrChartNotFound, then we **know** that
-		// the chart and score values were atleast typed correctly
+		// the chart and score values were at least typed correctly
 		// and can afford to make this assertion.
 		if (type === "SongOrChartNotFound") {
 			const { chart } = req.safeBody as { chart: BeatorajaChart };

@@ -35,7 +35,7 @@ function stripTableFoldersKeySql(prefix: string) {
 /**
  * Tables might have updates that remove charts from their table.
  *
- * We need to handle this -- infact, it's quite common for something
+ * We need to handle this -- in fact, it's quite common for something
  * to go from the sl12 folder to st0 -- which is a cross-table
  * change.
  */
@@ -154,7 +154,7 @@ async function ImportTableLevels(
 
 		if (!chart) {
 			log.warn(
-				`No chart exists in table for (${td.checksum.type}=${td.checksum.value}) Possible title: ${td.content.title} ${prefix}${td.content.level}`,
+				`No chart exists in table for (${td.checksum.type}=${td.checksum.value})w Possible title: ${td.content.title} ${prefix}${td.content.level}`,
 			);
 			failures++;
 			continue;

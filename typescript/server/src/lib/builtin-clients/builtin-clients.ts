@@ -71,7 +71,7 @@ const KamaiDefaultClients: DefaultClients = [
 		webhookUri: null,
 		apiKeyFilename: "ChunItachi.ini",
 		apiKeyTemplate: `[general]
-; Show information for debugging. Useful incase things go wrong.
+; Show information for debugging. Useful in case things go wrong.
 showDebug = true
 
 ; Set this to an extID if multiple people play on your setup

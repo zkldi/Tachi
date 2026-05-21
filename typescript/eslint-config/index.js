@@ -205,7 +205,7 @@ const react = /** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig
 		"react/jsx-uses-react": ["off"],
 		"react-hooks/rules-of-hooks": ["error"],
 		// Knowing when you're inexhaustive is very valuable, but actually being
-		// exhaustive is not always what you want, infact, we frequently don't want it.
+		// exhaustive is not always what you want, in fact, we frequently don't want it.
 		"react-hooks/exhaustive-deps": ["warn"],
 	},
 	settings: {

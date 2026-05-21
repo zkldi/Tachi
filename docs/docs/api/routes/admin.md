@@ -1,7 +1,7 @@
 # Admin Endpoints
 
 These endpoints are for adminstrator use. As such, they all
-require an `authLevel` of atleast 3. For more information, see the [UserDocument](../../schemas/user.md).
+require an `authLevel` of at least 3. For more information, see the [UserDocument](../../schemas/user.md).
 
 *****
 

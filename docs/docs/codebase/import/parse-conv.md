@@ -315,7 +315,7 @@ The song this score is for.
 
 Converters are also expected to fail.
 For this, we have a very specific throw format
-that should be thrown whenever a specific error has occured.
+that should be thrown whenever a specific error has occurred.
 
 These are called Failures, and a full list of them can be
 found [here](./conv-failures.md).

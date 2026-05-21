@@ -226,7 +226,7 @@ export async function LoadScoresIntoSessions(
 	}
 
 	// There's no state here where curGroup is empty,
-	// so push the group (which is guaranteed to have atleast one score)
+	// so push the group (which is guaranteed to have at least one score)
 	sessionScoreGroups.push(curGroup);
 
 	log.debug(`Created ${sessionScoreGroups.length} groups from timestamped scores.`);

@@ -61,7 +61,7 @@ export interface GoalSingleCriteria<TGame extends V3Game = V3Game> extends GoalC
 
 /**
  * Criteria for a score to match this criteria - this is a "count" mode, which means that
- * atleast N scores have to match this criteria. This is for things like folders.
+ * at least N scores have to match this criteria. This is for things like folders.
  */
 export interface GoalCountCriteria<TGame extends V3Game = V3Game> extends GoalCriteria<TGame> {
 	mode: "absolute" | "proportion";
@@ -470,7 +470,7 @@ export interface PBReference {
 }
 
 export interface PBScoreDocument<TGame extends V3Game = V3Game> {
-	// guaranteed to atleast have one element.
+	// guaranteed to at least have one element.
 	composedFrom: [PBReference, ...Array<PBReference>];
 	rankingData: {
 		outOf: integer;

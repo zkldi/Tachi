@@ -86,7 +86,7 @@ export class DatabaseSeedsRepo {
 	 * to the repository.
 	 *
 	 * @param commitMsg - The commit message.
-	 * @returns True when a commit has occured, false when it hasn't. Throws on failure.
+	 * @returns True when a commit has occurred, false when it hasn't. Throws on failure.
 	 */
 	async CommitChangesBack(commitMsg: string) {
 		log.debug(`Received commit-back request.`);
