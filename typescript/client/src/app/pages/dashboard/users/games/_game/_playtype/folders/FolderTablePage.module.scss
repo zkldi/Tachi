@@ -1,6 +1,6 @@
 .folderRowChartMeta {
 	align-items: center;
-	column-gap: 0.5rem;
+	column-gap: 0.375rem;
 	display: flex;
 	flex-shrink: 0;
 	justify-content: flex-end;
@@ -10,21 +10,26 @@
 
 .folderRowChartCount {
 	flex-shrink: 0;
+	font-size: 1.125rem;
 	font-variant-numeric: tabular-nums;
 	text-align: right;
 	width: 7ch;
 }
 
-/** Fixed width on large screens so progress bars align across rows; full width when stacked. */
+/** Sizes to content on large screens (up to 18rem); full width when stacked on mobile. */
 .folderRowTitle {
 	box-sizing: border-box;
+	font-size: 1.125rem;
 	max-width: 100%;
 	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 
 	@media (width >= 992px) {
-		flex: 0 0 18rem;
-		max-width: 18rem;
-		min-width: 18rem;
+		flex: 0 0 var(--folder-title-w, 10rem);
+		max-width: var(--folder-title-w, 10rem);
+		min-width: var(--folder-title-w, 10rem);
 	}
 }
 
@@ -56,11 +61,11 @@
 
 .folderRow {
 	border: 1px solid var(--bs-border-color);
-	border-radius: var(--bs-border-radius-xl);
+	border-radius: var(--bs-border-radius);
 	color: inherit;
 	display: block;
-	margin-bottom: 0.5rem;
-	padding: 0.875rem 1rem;
+	margin-bottom: 0.2rem;
+	padding: 0.2rem 0.75rem;
 	text-decoration: none;
 	transition:
 		border-color 0.12s ease,
@@ -109,6 +114,6 @@
 		box-shadow:
 			0 0.18rem 0.65rem color-mix(in srgb, var(--bs-primary) 22%, transparent),
 			inset 3px 0 0 0 var(--bs-primary);
-		padding-inline-start: calc(1rem - 4px);
+		padding-inline-start: calc(0.75rem - 4px);
 	}
 }
