@@ -10,7 +10,7 @@ import {
 	GetFoldersFromTable,
 	GetTableForIDGuaranteed,
 } from "#utils/folder";
-import { GetRecentUGPTScores } from "#utils/queries/scores";
+import { GetRecentUGPTHighlights, GetRecentUGPTScores } from "#utils/queries/scores";
 import { REQ_GetGame, REQ_GetUser } from "#utils/req-tachi-data";
 import { type BMSTableHead, LoadBMSTable, type RawBMSTableEntry } from "bms-table-loader";
 import path from "path";
@@ -417,7 +417,7 @@ export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
 
 				promises.push(
 					(async () => {
-						const scores = await GetRecentUGPTScores(rival.id, game);
+						const scores = await GetRecentUGPTHighlights(rival.id, game);
 
 						const data = await GetRelevantSongsAndCharts(scores);
 						const charts = data.charts as unknown as Array<
