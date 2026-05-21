@@ -18,7 +18,7 @@ export const ANON_ACTION_ForgotPassword = MakeAnonAction(
 		const userPrivateInfo = await DB.selectFrom("priv_account_credential")
 			.select(["user_id", "email"])
 			.where("email", "=", email)
-			.executeTakeFirstOrThrow();
+			.executeTakeFirst();
 
 		if (userPrivateInfo) {
 			const user = await GetUserWithIDGuaranteed(userPrivateInfo.user_id);
