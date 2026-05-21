@@ -85,10 +85,7 @@ async function LoadBeatorajaPbsForUser(userID: integer): Promise<BeatorajaPbExpo
 		.innerJoin("chart_leaderboard", "chart_leaderboard.row_id", "pb.row_id")
 		.innerJoin("chart", "chart.id", "pb.chart_id")
 		.innerJoin("song", "song.id", "chart.song_id")
-		.select([
-			...SELECT_PB_DOCUMENT_WITH_LEADERBOARD,
-			"chart.data as chart_data",
-		])
+		.select([...SELECT_PB_DOCUMENT_WITH_LEADERBOARD, "chart.data as chart_data"])
 		.where("pb.user_id", "=", userID)
 		.where("chart.game", "in", BEATORAJA_GAMES)
 		.where("pb.lens", "is", null)
@@ -100,23 +97,25 @@ async function LoadBeatorajaPbsForUser(userID: integer): Promise<BeatorajaPbExpo
 
 async function FormatBeatorajaPbsForUser(user: UserDocument, requestedBy: integer) {
 	const rows = await LoadBeatorajaPbsForUser(user.id);
-	const scores = await Promise.all(rows.map(async (row) => {
-		const chartData = GetBeatorajaChartData(row);
+	const scores = await Promise.all(
+		rows.map(async (row) => {
+			const chartData = GetBeatorajaChartData(row);
 
-		if (!chartData) {
-			return null;
-		}
+			if (!chartData) {
+				return null;
+			}
 
-		const pb = await ToPbScoreDocument(row);
+			const pb = await ToPbScoreDocument(row);
 
-		return TachiScoreDataToBeatorajaFormat(
-			pb as PBScoreDocument<BMSGames>,
-			chartData.sha256,
-			user.id === requestedBy ? "" : user.username,
-			chartData.notecount,
-			0,
-		);
-	}));
+			return TachiScoreDataToBeatorajaFormat(
+				pb as PBScoreDocument<BMSGames>,
+				chartData.sha256,
+				user.id === requestedBy ? "" : user.username,
+				chartData.notecount,
+				0,
+			);
+		}),
+	);
 
 	return scores.filter((score) => score !== null);
 }
