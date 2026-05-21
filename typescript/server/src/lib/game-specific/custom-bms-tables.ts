@@ -1,4 +1,3 @@
-import type { BMSTableHead, RawBMSTableEntry } from "bms-table-loader";
 import type { Request, Response } from "express-serve-static-core";
 
 import { log } from "#lib/log/log";
@@ -13,6 +12,7 @@ import {
 } from "#utils/folder";
 import { GetRecentUGPTScores } from "#utils/queries/scores";
 import { REQ_GetGame, REQ_GetUser } from "#utils/req-tachi-data";
+import { type BMSTableHead, LoadBMSTable, type RawBMSTableEntry } from "bms-table-loader";
 import path from "path";
 import {
 	type ChartDocument,
@@ -261,11 +261,88 @@ export async function HandleBMSTableBodyRequest(
 }
 
 /**
+ * Normalise a level value fetched from a proxied external BMS table.
+ *
+ * Rules applied in order after trimming:
+ *  - `sub<rest>` → `<rest> (sub)`   e.g. "sub3" → "3 (sub)"
+ *  - `<prefix><rest>` → `<rest>`    e.g. "dl3"  → "3"        (when prefix is "dl")
+ *  - otherwise returned as-is
+ */
+function fixLetsGoTimeHellLevel(raw: number | string, prefix: string): string {
+	const s = String(raw).trim();
+
+	if (s.startsWith("sub")) {
+		return `${s.slice("sub".length)} (sub)`;
+	}
+
+	if (s.startsWith(prefix)) {
+		return s.slice(prefix.length);
+	}
+
+	return s;
+}
+
+/**
+ * tables on lets-go-time-hell.com have " " as their symbol, and use level to encode
+ * table info. This is unacceptable for tachi, as its just fucking nonsense, so
+ * lets-go-proxy-unfuck.com and save everyone from themselves.
+ */
+export function LetsGoTimeHellProxyTable(opts: {
+	description: string;
+	game: GamesForGroup["bms"];
+	prefix: string;
+	sourceUrl: string;
+	tableName: string;
+	urlName: string;
+}): TachiBMSTable {
+	const { urlName, tableName, description, game, prefix, sourceUrl } = opts;
+
+	return {
+		urlName,
+		tableName,
+		description,
+		game,
+		symbol: prefix,
+		async getBody() {
+			const table = await LoadBMSTable(sourceUrl);
+
+			return table.body.map((entry) => ({
+				...entry.content,
+				level: fixLetsGoTimeHellLevel(entry.content.level, prefix),
+			}));
+		},
+		async getLevelOrder() {
+			const table = await LoadBMSTable(sourceUrl);
+
+			return table.getLevelOrder().map((l) => fixLetsGoTimeHellLevel(l, prefix));
+		},
+	};
+}
+
+/**
  * What custom tables does Tachi have?
  *
  * Adding a custom table here will just straight up add it to the site. Simple.
  */
 export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
+	LetsGoTimeHellProxyTable({
+		urlName: "delayjoy-fixed",
+		tableName: "Delayjoy",
+		description:
+			"Delayjoy is a delay practice table. dl0 is approximately equivalent to an st0",
+		game: "bms-7k",
+		prefix: "dl",
+		sourceUrl: "https://lets-go-time-hell.github.io/Delay-joy-table/header.json",
+	}),
+	LetsGoTimeHellProxyTable({
+		urlName: "arm-shougakkou-fixed",
+		tableName: "Arm Shougakkou",
+		description:
+			"The Arm-Shougakkou table is a gachi and gachi-ish practice table. Ude0 is approximately equivalent to an sl0",
+		game: "bms-7k",
+		prefix: "Ude",
+		sourceUrl: "https://lets-go-time-hell.github.io/Arm-Shougakkou-table/header.json",
+	}),
 	{
 		urlName: "sieglindeEC",
 		game: "bms-7k",
