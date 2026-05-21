@@ -1,6 +1,17 @@
 [
 	{
 		"game": "arcaea",
+		"id": "F19e4bf951000f1afda3",
+		"inactive": false,
+		"legacyFolderID": "F2137cf7fd3bbea6fa4c6b00a7ef2c24daede1a5a1b669a1394634e9c33602137",
+		"searchTerms": [],
+		"slug": "af-mobile",
+		"title": "Level ? (Mobile)",
+		"versionFilter": ["mobile"],
+		"where": "chart.level = '?'"
+	},
+	{
+		"game": "arcaea",
 		"id": "F19d35f0cf252f552f9f",
 		"inactive": false,
 		"legacyFolderID": "F9957cf7fd3bbea6fa4c6b00a7ef2c24daede1a5a1b669a1394634e9c3360e378",

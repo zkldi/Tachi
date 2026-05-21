@@ -3,6 +3,7 @@
 		"default": true,
 		"description": "Levels for the mobile version of Arcaea.",
 		"folders": [
+			"af-mobile",
 			"1-mobile",
 			"2-mobile",
 			"3-mobile",

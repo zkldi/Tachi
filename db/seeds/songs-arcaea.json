@@ -6383,5 +6383,60 @@
 		"legacySongID": 515,
 		"searchTerms": ["ぐらんどすぺる", "그랜드스펠"],
 		"title": "Grandspell"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dustvoxx",
+		"data": {
+			"songPack": "Shared Time (Binary Enfold)"
+		},
+		"id": "S19e4c00b8760d9b2806",
+		"legacySongID": 541,
+		"searchTerms": [],
+		"title": "Live Faster Die Younger"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぱらどっと",
+		"data": {
+			"songPack": "Lasting Eden"
+		},
+		"id": "S19e4c00b876cb70a82e",
+		"legacySongID": 540,
+		"searchTerms": [],
+		"title": "UNUSED LEVELS"
+	},
+	{
+		"altTitles": [],
+		"artist": "かたぎり",
+		"data": {
+			"songPack": "Extend Archive"
+		},
+		"id": "S19e4c00b877073f9cc5",
+		"legacySongID": 544,
+		"searchTerms": [],
+		"title": "HIVEMIND INTERLINKED"
+	},
+	{
+		"altTitles": [],
+		"artist": "f→n",
+		"data": {
+			"songPack": "Black Fate"
+		},
+		"id": "S19e4c00b87749fc87dd",
+		"legacySongID": 542,
+		"searchTerms": [],
+		"title": "0xe0e1ccull"
+	},
+	{
+		"altTitles": [],
+		"artist": "s-don vs nitro (lowiro)",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S19e4c00b87794b7c90b",
+		"legacySongID": 543,
+		"searchTerms": [],
+		"title": "Mistempered Malignance"
 	}
 ]

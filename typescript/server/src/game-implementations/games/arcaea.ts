@@ -26,7 +26,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		grade: GetGrade(ARCAEA_GBOUNDARIES, scoreData.score),
 	}),
 	scoreCalcs: (scoreData, _derivedData, chart) => ({
-		potential: Potential.calculate(scoreData.score, chart.levelNum),
+		potential: chart.levelNum > 0 ? Potential.calculate(scoreData.score, chart.levelNum) : 0,
 	}),
 	pbRankingValues: (pb) => ({
 		ranking: pb.scoreData.score,
