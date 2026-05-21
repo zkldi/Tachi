@@ -203,6 +203,12 @@ async function ImportTableLevels(
 export async function UpdateTable(tableInfo: BMSTableInfo) {
 	const table = await LoadBMSTable(tableInfo.url);
 
+	if (table.head.symbol !== tableInfo.prefix) {
+		throw new Error(
+			`Table ${tableInfo.name} (${tableInfo.url}) has unexpected symbol: expected ${JSON.stringify(tableInfo.prefix)}, got ${JSON.stringify(table.head.symbol)}.`,
+		);
+	}
+
 	log.info(`Bumping levels...`);
 	await ImportTableLevels(table.body, tableInfo.prefix, tableInfo.game);
 	log.info(`Levels bumped.`);
