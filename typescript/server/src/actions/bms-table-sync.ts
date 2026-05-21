@@ -154,7 +154,7 @@ async function ImportTableLevels(
 
 		if (!chart) {
 			log.warn(
-				`No chart exists in table for (${td.checksum.type}=${td.checksum.value} Possible title: ${td.content.title} ${prefix}${td.content.level}`,
+				`No chart exists in table for (${td.checksum.type}=${td.checksum.value}) Possible title: ${td.content.title} ${prefix}${td.content.level}`,
 			);
 			failures++;
 			continue;
