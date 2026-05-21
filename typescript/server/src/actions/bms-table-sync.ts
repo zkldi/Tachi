@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 
 import { MakeAction } from "#lib/actions/actions";
+import { rebuildFolderChartLookup } from "#lib/folders/rebuild-folder-chart-lookup";
 import { log } from "#lib/log/log";
 import { DeorphanBmsIfInOrphanChartPg } from "#lib/orphan-queue/deorphan-bms-pg";
 import DB from "#services/pg/db";
@@ -225,7 +226,7 @@ export async function syncBmsTablesCore() {
 	}
 
 	log.info(`Re-initialising folder-chart-lookup, since changes may have been made.`);
-	// await InitaliseFolderChartLookup();
+	await rebuildFolderChartLookup(DB);
 	log.info(`Done.`);
 }
 
