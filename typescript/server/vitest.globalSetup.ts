@@ -1,5 +1,4 @@
 import { execSync } from "node:child_process";
-
 import pg from "pg";
 
 import { ensureTestCdnBucket } from "./src/test-utils/ensure-test-cdn-bucket";

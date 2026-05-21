@@ -97,12 +97,6 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Lint code
-        run: bun run --filter tachi-server lint
-
-      - name: Typecheck code
-        run: bun run --filter tachi-server typecheck
-
       - name: Tune test Postgres for short-lived worker DBs
         # The restart-only knobs (fsync, shared_buffers, ...) cannot be set
         # because the GHA service syntax does not let us pass postgres CLI

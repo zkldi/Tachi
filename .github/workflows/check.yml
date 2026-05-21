@@ -1,25 +1,35 @@
-name: Common CI/CD
+name: Check
 
 on:
   push:
     branches:
       - "main"
     paths:
-      - "typescript/common/**"
-      - ".github/workflows/common.yml"
+      - "typescript/**"
+      - "biome.json"
+      - ".prettierrc"
+      - ".prettierignore"
+      - ".scripts/ts_machete.js"
+      - ".scripts/ts_autoinherit.js"
+      - ".github/workflows/check.yml"
   pull_request:
     branches:
       - "main"
     paths:
-      - "typescript/common/**"
-      - ".github/workflows/common.yml"
+      - "typescript/**"
+      - "biome.json"
+      - ".prettierrc"
+      - ".prettierignore"
+      - ".scripts/ts_machete.js"
+      - ".scripts/ts_autoinherit.js"
+      - ".github/workflows/check.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/zkldi/tachi-ci:main
@@ -33,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Run Tests
-        run: bun run --filter tachi-common test
+      - name: Check (format, lint, typecheck, machete, autoinherit)
+        run: just check
         env:
           NODE_ENV: "test"
