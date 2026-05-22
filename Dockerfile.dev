@@ -6,7 +6,7 @@
 #     enough to run `bun install`, `bun run …`, `just`, `psql`, `rsync`, ssh.
 #     Published as `ghcr.io/zkldi/tachi-ci`.
 #   - `dev`:  superset of `base` with all the devcontainer QoL (fish, neovim,
-#     gh, ripgrep, fd, bat, fzf, mdbook, minio-client, locales, sudo, the
+#     gh, ripgrep, fd, bat, fzf, mdbook (upstream binary), minio-client, locales, sudo, the
 #     `tachi` user, ...). Published as `ghcr.io/zkldi/tachi-dev`.
 #
 # Always use `--no-install-recommends`. Debian's recommends-by-default pulls
@@ -79,8 +79,6 @@ RUN apt-get update \
 		fish neovim sudo locales \
 		# search / files / network / parallel
 		ripgrep fd-find bat fzf parallel wget \
-		# mdbook for docs work (same package used in CI)
-		mdbook \
 		# github CLI for `gh auth login`-style flows
 		gh \
 		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
@@ -91,6 +89,19 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV DEBIAN_FRONTEND=readline
+
+# mdbook — use the upstream release binary, not the Debian-packaged one.
+# The Debian package (0.4.x+ds) has its bundled fonts stripped, so the
+# built site is missing fonts/fonts.css. The upstream tarball is complete.
+ARG MDBOOK_VERSION=0.5.3
+RUN set -eu; \
+	case "$(uname -m)" in \
+		x86_64)  arch=x86_64-unknown-linux-gnu ;; \
+		aarch64) arch=aarch64-unknown-linux-gnu ;; \
+		*) echo "Unsupported arch: $(uname -m)" >&2; exit 1 ;; \
+	esac; \
+	curl -sSL "https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-${arch}.tar.gz" \
+		| tar -xz -C /usr/local/bin
 
 # `fd` is called `fdfind` on debian. Awesome.
 RUN ln -s "$(which fdfind)" /usr/bin/fd
