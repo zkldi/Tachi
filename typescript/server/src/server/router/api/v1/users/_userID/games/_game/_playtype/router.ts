@@ -17,7 +17,7 @@ import { GetSongsByIDs } from "#lib/db-formats/song";
 import { log } from "#lib/log/log";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { IsString } from "#utils/misc";
 import DestroyUserGameProfile from "#utils/reset-state/destroy-user-game-profile";
@@ -375,7 +375,7 @@ API_V1_ROUTER.add(
 
 		if (!privateInfo) {
 			log.error({ user }, `State desync for user ${FormatUserDoc(user)}.`);
-			throw new ExpectedErr(500, "An internal server error has occured.");
+			throw new ExpectedErr(500, "An internal server error has occurred.");
 		}
 
 		const password = input["!password"] as string;

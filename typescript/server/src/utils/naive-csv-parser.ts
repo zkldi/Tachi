@@ -61,7 +61,7 @@ export function NaiveCSVParse(csvBuffer: Buffer, log: KtLogger) {
 		const cells = data.split(",").map((e) => {
 			// we want to remove quotes from anything that is *absolutely*
 			// surrounded by quotes.
-			// Even though we are naively parsing csvs, it seems like atleast
+			// Even though we are naively parsing csvs, it seems like at least
 			// one person managed to mangle their inputs such that this happened.
 			const isSurroundedByQuotes = /^"(.*)"$/u.exec(e) as [string, string] | null;
 

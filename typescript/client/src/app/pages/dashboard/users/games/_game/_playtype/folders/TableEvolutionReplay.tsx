@@ -123,14 +123,15 @@ export default function TableEvolutionReplay({
 	const folderSlugOrder = useMemo(
 		() =>
 			scope.kind === "table"
-				? tableFolderSlugsDisplayOrder(scope.table)
+				? tableFolderSlugsDisplayOrder(scope.table, game)
 				: [scope.folder.slug],
-		[scope],
+		[scope, game],
 	);
 
 	const scrubRef = useRef(0);
 	const foldersReplayPanelRef = useRef<HTMLDivElement>(null);
 	const [milestoneFeedFrameHeightPx, setMilestoneFeedFrameHeightPx] = useState(0);
+	const [evoTitleWidth, setEvoTitleWidth] = useState<number | null>(null);
 
 	useLayoutEffect(() => {
 		scrubRef.current = scrubTimeMs;
@@ -384,6 +385,22 @@ export default function TableEvolutionReplay({
 		workingEvents.length,
 	]);
 
+	useLayoutEffect(() => {
+		const container = foldersReplayPanelRef.current;
+		if (!container || replayRows.length === 0) {
+			return;
+		}
+
+		const titles = container.querySelectorAll<HTMLElement>("[data-evo-folder-title]");
+		if (!titles.length) {
+			return;
+		}
+
+		const MAX_PX = 288;
+		const maxW = Math.max(...Array.from(titles, (el) => el.scrollWidth));
+		setEvoTitleWidth(Math.min(MAX_PX, maxW));
+	}, [replayRows]);
+
 	const allEnumColours = useMemo(
 		() =>
 			GPT_CLIENT_IMPLEMENTATIONS[game].enumColours as
@@ -617,17 +634,25 @@ export default function TableEvolutionReplay({
 												</span>
 											</h6>
 											<div
-												className="border bg-body-secondary bg-opacity-10 gap-3 rounded vstack px-3 py-2"
+												className="border bg-body-secondary bg-opacity-10 gap-1 rounded vstack px-3 py-2"
 												ref={foldersReplayPanelRef}
+												style={
+													evoTitleWidth !== null
+														? ({
+																"--folder-title-w": `${evoTitleWidth}px`,
+															} as React.CSSProperties)
+														: undefined
+												}
 											>
 												{replayRows.map(({ folder, stats }) => (
 													<div
-														className={`${folderTableStyles.folderRow} bg-body-tertiary bg-opacity-25 rounded px-2 py-2`}
+														className={`${folderTableStyles.folderRow} bg-body-tertiary bg-opacity-25 mb-0`}
 														key={folder.slug}
 													>
-														<div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-3">
+														<div className="d-flex flex-column flex-lg-row align-items-lg-center gap-1 gap-lg-2">
 															<div
 																className={`fw-semibold text-truncate ${folderTableStyles.folderRowTitle}`}
+																data-evo-folder-title
 															>
 																{folder.title}
 															</div>

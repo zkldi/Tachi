@@ -3,7 +3,7 @@ import { ACTION_MarkAllNotificationsRead } from "#actions/mark-all-notifications
 import { SELECT_NOTIFICATION, ToNotificationDocument } from "#lib/db-formats/notification";
 import { withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 
 /**

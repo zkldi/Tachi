@@ -102,7 +102,7 @@ For now, all quests are built-in to Tachi. Ideally, we want the built-in Tachi q
 You shouldn't make goals like playing everything in a large folder, since those are more tests of endurance than skill. They're just going to be wasting their time!
 
 You should also avoid redundant goals -- all the goals in the quest should ideally be around the same difficulty! Something like Clear 10 18s and Clear 25 18s are obviously redundant, but this also applies to goals like AAA Easy_Chart and Way_harder_chart. Every goal and part of a goal in a quest should be something a player can reasonably have last to achieve.`,
-	builtin_questline: `I want every game on Tachi to have atleast one fairly comprehensive questline (see \`/faq whatare_questlines\`). These should be useful for players of all skill levels, so that they have some good ideas for goals to set around their level.
+	builtin_questline: `I want every game on Tachi to have at least one fairly comprehensive questline (see \`/faq whatare_questlines\`). These should be useful for players of all skill levels, so that they have some good ideas for goals to set around their level.
 
 I'm ideally looking for something that the average player can just set and have fun checking off. The questline itself should have the quests fairly distinguished, players shouldn't be pushing multiple quests in the same questline at the same time.
 	

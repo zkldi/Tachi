@@ -26,7 +26,7 @@ export type TachiIIDXPlaylist = {
 	| {
 			forSpecificUser: true; // playlist is user dependent.
 			// like, say, their rivals scores or something.
-			// then the callbacks need to recieve that info.
+			// then the callbacks need to receive that info.
 			getPlaylists: (
 				userID: integer,
 				game: "iidx-dp" | "iidx-sp",

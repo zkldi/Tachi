@@ -146,7 +146,7 @@ async function HandleOrphanChartProcess(
 }
 
 // NOTE: This converter handles both PMS and BMS scores. The two are very similar,
-// infact, beatoraja barely does anything different between the two. PMS is essentially
+// in fact, beatoraja barely does anything different between the two. PMS is essentially
 // BMS but with the columns set to 9.
 export const ConverterIRBeatoraja: ConverterFunction<BeatorajaScore, BeatorajaContext> = async (
 	data,

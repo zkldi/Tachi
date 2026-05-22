@@ -137,7 +137,7 @@ export type PBRankingValuesFunction<TGame extends V3Game> = (
 
 /**
  * Format a goal into a string. If a function is provided, it's called with this goals
- * criteria value, so a goal of "get 3600 on $CHART" would recieve 3600 as its
+ * criteria value, so a goal of "get 3600 on $CHART" would receive 3600 as its
  * argument.
  */
 export type GoalCriteriaFormatter = (num: number) => string;

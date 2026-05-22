@@ -60,10 +60,10 @@ export async function handleIsCommand(
 				});
 			}
 		} catch (err) {
-			log.error({ command, err }, `An error occured while executing a command.`);
+			log.error({ command, err }, `An error occurred while executing a command.`);
 
 			void interaction.editReply(
-				`An error has occured while executing this command (${err}). This has been reported.`,
+				`An error has occurred while executing this command (${err}). This has been reported.`,
 			);
 		}
 	} catch (e) {

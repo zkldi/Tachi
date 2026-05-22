@@ -360,6 +360,7 @@ export default function QuestEditor() {
 			<Col lg={5} xs={12}>
 				{selectedQuest && selectedQuestIdx !== null ? (
 					<EditableQuest
+						key={selectedQuestIdx}
 						onChange={(updated) =>
 							setQuests(ChangeAtPosition(quests, updated, selectedQuestIdx))
 						}

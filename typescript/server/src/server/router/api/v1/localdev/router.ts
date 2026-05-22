@@ -4,7 +4,7 @@ import DB from "#services/pg/db";
 import { GetFirstAdmin } from "#utils/user";
 import { ExpectedErr } from "bliss";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Reports whether the database has any rows in the `song` table (seed data).

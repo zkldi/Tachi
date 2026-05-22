@@ -131,8 +131,8 @@ describe("ProcessPBs", () => {
 		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
 
 		const pbs = await DB.selectFrom("pb")
-			.select("row_id")
-			.where("user_id", "=", userId)
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
 			.execute();
 		expect(pbs).toHaveLength(1);
 	});
@@ -177,9 +177,128 @@ describe("ProcessPBs", () => {
 		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID, ...extra]), log);
 
 		const pbs = await DB.selectFrom("pb")
-			.select("row_id")
-			.where("user_id", "=", userId)
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
 			.execute();
 		expect(pbs).toHaveLength(4);
+	});
+
+	it("deletes a stale pb row when the user has no remaining scores on the chart (#1521)", async () => {
+		await seedIidx511Chart();
+		const { id: userId } = await seedUser();
+		const scoreId = randomBytes(10).toString("hex");
+
+		await insertIidxScoreRow({
+			userId,
+			scoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 1000,
+		});
+
+		// Create the PB.
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		const pbBefore = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.executeTakeFirst();
+		expect(pbBefore).toBeDefined();
+
+		// Delete the only score so the chart has no scores left.
+		await DB.deleteFrom("pb_composed_from").where("score_id", "=", scoreId).execute();
+		await DB.deleteFrom("score").where("score.id", "=", scoreId).execute();
+
+		// ProcessPBs should now delete the stale pb row instead of leaving it.
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.executeTakeFirst();
+		expect(pbAfter).toBeUndefined();
+	});
+
+	it("also clears pb_composed_from when deleting a stale pb", async () => {
+		await seedIidx511Chart();
+		const { id: userId } = await seedUser();
+		const scoreId = randomBytes(10).toString("hex");
+
+		await insertIidxScoreRow({
+			userId,
+			scoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 1000,
+		});
+
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		const pbBefore = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.executeTakeFirstOrThrow();
+
+		// Verify pb_composed_from was created.
+		const composedBefore = await DB.selectFrom("pb_composed_from")
+			.select("pb_composed_from.score_id")
+			.where("pb_composed_from.pb_id", "=", pbBefore.row_id)
+			.execute();
+		expect(composedBefore.length).toBeGreaterThan(0);
+
+		await DB.deleteFrom("pb_composed_from").where("score_id", "=", scoreId).execute();
+		await DB.deleteFrom("score").where("score.id", "=", scoreId).execute();
+
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		// Both the pb row and any residual pb_composed_from entries must be gone.
+		const composedAfter = await DB.selectFrom("pb_composed_from")
+			.select("pb_composed_from.score_id")
+			.where("pb_composed_from.pb_id", "=", pbBefore.row_id)
+			.execute();
+		expect(composedAfter).toHaveLength(0);
+
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.row_id", "=", pbBefore.row_id)
+			.executeTakeFirst();
+		expect(pbAfter).toBeUndefined();
+	});
+
+	it("does not delete the pb for a chart that still has other scores", async () => {
+		await seedIidx511Chart();
+		const { id: userId } = await seedUser();
+
+		const keepScoreId = randomBytes(10).toString("hex");
+		const deleteScoreId = randomBytes(10).toString("hex");
+
+		await insertIidxScoreRow({
+			userId,
+			scoreId: keepScoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 1000,
+		});
+		await insertIidxScoreRow({
+			userId,
+			scoreId: deleteScoreId,
+			chartId: Testing511SPA.chartID,
+			timeMs: 2000,
+		});
+
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		// Remove only the second score, leaving the first.
+		await DB.deleteFrom("pb_composed_from").where("score_id", "=", deleteScoreId).execute();
+		await DB.deleteFrom("score").where("score.id", "=", deleteScoreId).execute();
+
+		await ProcessPBs("iidx-sp", userId, new Set([Testing511SPA.chartID]), log);
+
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.executeTakeFirst();
+		expect(pbAfter).toBeDefined();
 	});
 });

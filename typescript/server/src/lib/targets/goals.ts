@@ -724,7 +724,20 @@ export async function GetRelevantFolderGoals(goalIDs: Array<string>, chartIDsArr
 		.where("folder_chart_lookup.chart_id", "in", chartIDsArr)
 		.execute();
 
-	return rows.map(ToGoalDocument);
+	// The JOIN can return the same goal row more than once when multiple
+	// charts from chartIDsArr all belong to the same folder. Deduplicate
+	// by goal ID so each goal is only processed (and shouted out) once.
+	const seen = new Set<string>();
+	return rows
+		.filter((r) => {
+			if (seen.has(r.id)) {
+				return false;
+			}
+
+			seen.add(r.id);
+			return true;
+		})
+		.map(ToGoalDocument);
 }
 
 /**

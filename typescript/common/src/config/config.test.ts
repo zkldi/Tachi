@@ -1,13 +1,40 @@
 import { describe, expect, it } from "vitest";
 
 import { IsValidGame } from "../utils/util";
-import { allSupportedGameGroups, GetGameGroupConfig, LEGACY_GetGamePTConfig } from "./config";
+import {
+	ALL_GAMES,
+	allSupportedGameGroups,
+	GetGameGroupConfig,
+	LEGACY_GetGamePTConfig,
+} from "./config";
 
 describe("#IsValidGame", () => {
 	it("accepts games and rejects unknown strings", () => {
 		expect(IsValidGame("iidx-sp")).toBe(true);
 		expect(IsValidGame("not-a-real-game")).toBe(false);
 		expect(IsValidGame("")).toBe(false);
+	});
+});
+
+describe("ALL_GAMES", () => {
+	it("lists games in each game group's games order (BMS 7K before 14K)", () => {
+		const bmsGames = GetGameGroupConfig("bms").games;
+		const bmsIndex = ALL_GAMES.indexOf("bms-7k");
+		const bms14Index = ALL_GAMES.indexOf("bms-14k");
+
+		expect(bmsGames).toEqual(["bms-7k", "bms-14k"]);
+		expect(bmsIndex).toBeGreaterThanOrEqual(0);
+		expect(bms14Index).toBeGreaterThan(bmsIndex);
+	});
+
+	it("includes every configured V3 game exactly once", () => {
+		expect(new Set(ALL_GAMES).size).toBe(ALL_GAMES.length);
+
+		for (const group of allSupportedGameGroups) {
+			for (const game of GetGameGroupConfig(group).games) {
+				expect(ALL_GAMES).toContain(game);
+			}
+		}
 	});
 });
 

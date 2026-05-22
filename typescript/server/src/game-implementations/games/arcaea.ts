@@ -15,7 +15,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 				return `Score must be non-negative. Got ${score}`;
 			}
 
-			if (score > 10_000_000 + chart.data.notecount) {
+			if (chart.data.notecount && score > 10_000_000 + chart.data.notecount) {
 				return `Score cannot exceed ${10_000_000 + chart.data.notecount} for this chart.`;
 			}
 
@@ -26,7 +26,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		grade: GetGrade(ARCAEA_GBOUNDARIES, scoreData.score),
 	}),
 	scoreCalcs: (scoreData, _derivedData, chart) => ({
-		potential: Potential.calculate(scoreData.score, chart.levelNum),
+		potential: chart.levelNum > 0 ? Potential.calculate(scoreData.score, chart.levelNum) : 0,
 	}),
 	pbRankingValues: (pb) => ({
 		ranking: pb.scoreData.score,

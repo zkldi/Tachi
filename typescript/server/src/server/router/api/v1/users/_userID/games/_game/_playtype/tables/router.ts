@@ -3,7 +3,7 @@ import { GetEnumDistForFolders, GetFoldersFromTable } from "#lib/folders/folders
 import { LoadTableEvolutionPayload } from "#lib/folders/table-evolution";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { ExpectedErr } from "bliss";
 
 /**

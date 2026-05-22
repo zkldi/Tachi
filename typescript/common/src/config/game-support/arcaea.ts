@@ -3,7 +3,7 @@ import { z } from "zod";
 import type { INTERNAL_GAME_CONFIG, INTERNAL_GAME_GROUP_CONFIG } from "../../types/internals";
 
 import { FmtNum } from "../../utils/util";
-import { ClassValue, ToDecimalPlaces, zodNonNegativeInt } from "../config-utils";
+import { ClassValue, ToDecimalPlaces } from "../config-utils";
 import { FAST_SLOW_MAXCOMBO } from "./_common";
 
 export const GAME_GROUP_ARCAEA_CONF = {
@@ -13,7 +13,6 @@ export const GAME_GROUP_ARCAEA_CONF = {
 	// Potential future controller playtype support?
 	playtypes: ["Touch"],
 	songData: z.strictObject({
-		displayVersion: z.string(),
 		songPack: z.string(),
 	}),
 } as const satisfies INTERNAL_GAME_GROUP_CONFIG;
@@ -41,6 +40,7 @@ const ArcaeaClasses = [
 	ClassValue("PHASE_9", "Phase 9", "Ego's Demise"),
 	ClassValue("PHASE_10", "Phase 10", "A Torrent of Light and Conflict"),
 	ClassValue("PHASE_11", "Phase 11", "Radiant Genesis"),
+	ClassValue("PHASE_12", "Phase 12", "Irruption of New Color"),
 ];
 
 export const GAME_ARCAEA_CONF = {
@@ -89,7 +89,7 @@ export const GAME_ARCAEA_CONF = {
 	profileRatingAlgs: {
 		naivePotential: {
 			description:
-				"The average of your best 30 potential values. This is different to in-game, as it does not take into account your recent scores in any way.",
+				"The average of your best 30 Potential values. This is different to the in-game algorithm, as it does not take your recent scores into account in any way.",
 			formatter: ToDecimalPlaces(2),
 			associatedScoreAlgs: ["potential"],
 		},
@@ -101,11 +101,12 @@ export const GAME_ARCAEA_CONF = {
 
 	difficulties: {
 		type: "FIXED",
-		order: ["Past", "Present", "Future", "Beyond"],
+		order: ["Past", "Present", "Future", "Eternal", "Beyond"],
 		formatShort: {
 			Past: "PST",
 			Present: "PRS",
 			Future: "FTR",
+			Eternal: "ETR",
 			Beyond: "BYD",
 		},
 		formatLong: {},
@@ -132,7 +133,8 @@ export const GAME_ARCAEA_CONF = {
 
 	chartData: z.strictObject({
 		inGameStrID: z.string(),
-		notecount: zodNonNegativeInt,
+		displayVersion: z.string(),
+		notecount: z.number().int().positive().optional(),
 	}),
 
 	preferences: z.strictObject({}),

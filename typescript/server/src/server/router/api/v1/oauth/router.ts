@@ -3,7 +3,7 @@ import { ANON_ACTION_OAuthTokenExchange } from "#anon-actions/oauth-token-exchan
 import { success } from "#lib/router/typed-router";
 import { ExpectedErr } from "bliss";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Converts an auth code into a valid API key that is returned.

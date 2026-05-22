@@ -572,6 +572,7 @@ export enum ARCAEA_COURSE_BANNERS {
 	PHASE_9 = 8,
 	PHASE_10 = 9,
 	PHASE_11 = 10,
+	PHASE_12 = 11,
 }
 
 export enum ONGEKI_NOTE_LAMPS {

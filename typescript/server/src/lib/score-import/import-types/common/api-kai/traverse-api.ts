@@ -154,11 +154,11 @@ export async function* TraverseKaiAPI(
 
 		if (currentIteration > MAX_ITERATIONS) {
 			log.error(
-				`An infinite loop has occured - Terminating at MAX_ITERATIONS (${MAX_ITERATIONS}).`,
+				`An infinite loop has occurred - Terminating at MAX_ITERATIONS (${MAX_ITERATIONS}).`,
 			);
 			throw new ScoreImportFatalError(
 				508,
-				"An infinite loop appears to have occured while synchronising with this api.",
+				"An infinite loop appears to have occurred while synchronising with this api.",
 			);
 		}
 

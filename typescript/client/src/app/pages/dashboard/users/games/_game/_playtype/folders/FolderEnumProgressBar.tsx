@@ -9,7 +9,7 @@ import { type GameConfig, GetScoreMetricConf } from "tachi-common";
 
 import barStyles from "./FolderEnumProgressBar.module.scss";
 
-const FOLDER_ENUM_BAR_HEIGHT = "1.625rem";
+const FOLDER_ENUM_BAR_HEIGHT = "1.75rem";
 
 /** In-bar `%` text only when the segment is at least this wide (measured in CSS pixels). */
 const MIN_SEGMENT_WIDTH_PX_FOR_INLINE_LABEL = 30;
@@ -100,7 +100,7 @@ export default function FolderEnumProgressBar({
 				direction: "ltr",
 				display: "block",
 				height: FOLDER_ENUM_BAR_HEIGHT,
-				minHeight: "1.25rem",
+				minHeight: "1.5rem",
 				unicodeBidi: "isolate",
 				width: "100%",
 			}}

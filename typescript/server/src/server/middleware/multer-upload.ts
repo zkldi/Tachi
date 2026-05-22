@@ -30,7 +30,7 @@ export const CreateMulterSingleUploadMiddleware = (
 
 				return res.status(500).json({
 					success: false,
-					description: `An internal server error has occured.`,
+					description: `An internal server error has occurred.`,
 				});
 			}
 

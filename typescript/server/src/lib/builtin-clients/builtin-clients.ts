@@ -71,7 +71,7 @@ const KamaiDefaultClients: DefaultClients = [
 		webhookUri: null,
 		apiKeyFilename: "ChunItachi.ini",
 		apiKeyTemplate: `[general]
-; Show information for debugging. Useful incase things go wrong.
+; Show information for debugging. Useful in case things go wrong.
 showDebug = true
 
 ; Set this to an extID if multiple people play on your setup
@@ -152,7 +152,7 @@ status = '/api/v1/status'
 # Tachi score import endpoint
 import = '/ir/direct-manual/import'
 # Tachi pbs endpoint
-pbs = '/api/v1/users/{}/games/sdvx/Single/pbs/all'
+pbs = '/api/v1/users/{}/games/sdvx/pbs/all'
 # Your Tachi API key
 api_key = '%%TACHI_KEY%%'
 `,

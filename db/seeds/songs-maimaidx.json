@@ -19019,5 +19019,440 @@
 		"legacySongID": 1561,
 		"searchTerms": ["shoujo a", "young girl a"],
 		"title": "少女A"
+	},
+	{
+		"altTitles": [],
+		"artist": "吉田夜世 feat.ちっく。",
+		"data": {
+			"duration": 137.581,
+			"genre": "maimai"
+		},
+		"id": "S19e48709576055e2c4c",
+		"legacySongID": 1562,
+		"searchTerms": ["the ruin in the woods", "haikyo ni imasu campaign"],
+		"title": "廃墟にいますキャンペーン"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぱりぱりさらうどん",
+		"data": {
+			"duration": 111.25,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e487095784ccd0ca8",
+		"legacySongID": 1564,
+		"searchTerms": ["inochi test test", "life test, test"],
+		"title": "命テステス"
+	},
+	{
+		"altTitles": [],
+		"artist": "YOFUKASHi Sound Team feat.編井うも",
+		"data": {
+			"duration": 154.667,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709578940632af",
+		"legacySongID": 1563,
+		"searchTerms": ["shuushin henshin hakaishin zzz"],
+		"title": "しゅ～しん？変身☆ハカイシンzzZ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ヤレギノ",
+		"data": {
+			"duration": 143.71,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709578f0d13d43",
+		"legacySongID": 1565,
+		"searchTerms": ["haikei, saikou no omoidetachi", "dear my best memories"],
+		"title": "拝啓、最高の思い出たち"
+	},
+	{
+		"altTitles": [],
+		"artist": "ちから",
+		"data": {
+			"duration": 125,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e487095793aaa217d",
+		"legacySongID": 1567,
+		"searchTerms": ["rurou ranru"],
+		"title": "るろうらんる"
+	},
+	{
+		"altTitles": [],
+		"artist": "litmus*",
+		"data": {
+			"duration": 151.636,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709579d2c1d5a4",
+		"legacySongID": 1566,
+		"searchTerms": ["obenkyou time"],
+		"title": "おべんきょうたいむ"
+	},
+	{
+		"altTitles": [],
+		"artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+		"data": {
+			"duration": 132.692,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870957a15051840",
+		"legacySongID": 1568,
+		"searchTerms": ["hajimari no mirai", "the future of beginning"],
+		"title": "はじまりの未来"
+	},
+	{
+		"altTitles": [],
+		"artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+		"data": {
+			"duration": 133.091,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870957aa9ea6944",
+		"legacySongID": 1569,
+		"searchTerms": [],
+		"title": "Worlders"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"duration": 159.403,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870957b459a08e7",
+		"legacySongID": 1570,
+		"searchTerms": ["hiasobi", "playing with fire"],
+		"title": "ヒアソビ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kai",
+		"data": {
+			"duration": 142.144,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870957b722a8e5e",
+		"legacySongID": 1571,
+		"searchTerms": [],
+		"title": "ラプラスショコラ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Kobaryo",
+		"data": {
+			"duration": 140.548,
+			"genre": "maimai"
+		},
+		"id": "S19e4870957e9065cd32",
+		"legacySongID": 1572,
+		"searchTerms": [],
+		"title": "Customized Justice"
+	},
+	{
+		"altTitles": [],
+		"artist": "ナナツカゼ",
+		"data": {
+			"duration": 150.649,
+			"genre": "maimai"
+		},
+		"id": "S19e4870957eda0aa0aa",
+		"legacySongID": 1573,
+		"searchTerms": ["shinkuu toshi"],
+		"title": "真空都市"
+	},
+	{
+		"altTitles": [],
+		"artist": "Tatsunoshin & Aira Arere",
+		"data": {
+			"duration": 142.667,
+			"genre": "maimai"
+		},
+		"id": "S19e4870957f172028ef",
+		"legacySongID": 1574,
+		"searchTerms": [],
+		"title": "Eternal Return"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぱぱぱらビーチ",
+		"data": {
+			"duration": 139.594,
+			"genre": "maimai"
+		},
+		"id": "S19e4870957fd100f215",
+		"legacySongID": 1575,
+		"searchTerms": ["papapara beach"],
+		"title": "ぱぱぱらビーチ"
+	},
+	{
+		"altTitles": [],
+		"artist": "削除",
+		"data": {
+			"duration": 153.214,
+			"genre": "maimai"
+		},
+		"id": "S19e48709580e5b12ff6",
+		"legacySongID": 1577,
+		"searchTerms": [],
+		"title": "7 Wonders"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryo Fukuda",
+		"data": {
+			"duration": 135.512,
+			"genre": "maimai"
+		},
+		"id": "S19e48709580fa8c0dd6",
+		"legacySongID": 1576,
+		"searchTerms": ["get u back"],
+		"title": "Get U ♭ack"
+	},
+	{
+		"altTitles": [],
+		"artist": "かめりあ",
+		"data": {
+			"duration": 141.159,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870958155be32ba",
+		"legacySongID": 1578,
+		"searchTerms": ["denko sekka", "denkou sekka"],
+		"title": "電光刹歌"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ponchi♪",
+		"data": {
+			"duration": 159.948,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e487095820418ea7c",
+		"legacySongID": 1581,
+		"searchTerms": ["treasure garden"],
+		"title": "トレジャーガーデン"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"duration": 146.436,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870958280fbf57f",
+		"legacySongID": 1579,
+		"searchTerms": ["we are pico pico hammers"],
+		"title": "ウィーアーピコピコハンマーズ!!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "雄之助",
+		"data": {
+			"duration": 153.882,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709582dc475303",
+		"legacySongID": 1580,
+		"searchTerms": ["jet black"],
+		"title": "ジェットブラック"
+	},
+	{
+		"altTitles": [],
+		"artist": "かいりきベア",
+		"data": {
+			"duration": 159,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e487095834ec8ee16",
+		"legacySongID": 1582,
+		"searchTerms": ["saiai jinsei runner", "sai love jinsei runner"],
+		"title": "最愛人生ランナー"
+	},
+	{
+		"altTitles": [],
+		"artist": "ああああ",
+		"data": {
+			"duration": 145.952,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S19e48709584824b3772",
+		"legacySongID": 1584,
+		"searchTerms": [],
+		"title": "Galaxy Blaster"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Myosuke",
+		"data": {
+			"duration": 135,
+			"genre": "maimai"
+		},
+		"id": "S19e48709584f1679c4d",
+		"legacySongID": 1585,
+		"searchTerms": [],
+		"title": "Break The Speakers"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"duration": 168,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S19e487095866a0c48da",
+		"legacySongID": 1586,
+		"searchTerms": [
+			"Last Piece ni Shukufuku to Eikou wo",
+			"Finding Blessing and Glory in the Last Piece"
+		],
+		"title": "ラストピースに祝福と栄光を"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P「Fit Boxing feat. 初音ミク -ミクといっしょにエクササイズ-」",
+		"data": {
+			"duration": 165.69,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e487095872b0130d6",
+		"legacySongID": 1588,
+		"searchTerms": ["let's mikusercise"],
+		"title": "Let's ミクササイズ！！"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"duration": 145.548,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709587b2861c34",
+		"legacySongID": 1587,
+		"searchTerms": ["hatsune miku no bousou", "the rampage of hatsune miku"],
+		"title": "初音ミクの暴走"
+	},
+	{
+		"altTitles": [],
+		"artist": "halyosy",
+		"data": {
+			"duration": 158.74,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e48709587e249c09f",
+		"legacySongID": 1589,
+		"searchTerms": ["snowman"],
+		"title": "スノーマン (Rerec)"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ Myosuke & Gram",
+		"data": {
+			"duration": 144.133,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": "S19e4870958847e035b4",
+		"legacySongID": 1590,
+		"searchTerms": [],
+		"title": "JINGLE DEATH"
+	},
+	{
+		"altTitles": [],
+		"artist": "テヅカ",
+		"data": {
+			"duration": 143.448,
+			"genre": "maimai"
+		},
+		"id": "S19e487095899995f9eb",
+		"legacySongID": 1591,
+		"searchTerms": ["mikumari"],
+		"title": "ミクマリ"
+	},
+	{
+		"altTitles": [],
+		"artist": "adaptor vs DRIVE.",
+		"data": {
+			"duration": 142.875,
+			"genre": "maimai"
+		},
+		"id": "S19e4870958a2c729236",
+		"legacySongID": 1592,
+		"searchTerms": ["dreaming voltage", "ungaisouten"],
+		"title": "雲外蒼電 -Dreaming Voltage-"
+	},
+	{
+		"altTitles": [],
+		"artist": "Earliri",
+		"data": {
+			"duration": 129.5,
+			"genre": "maimai"
+		},
+		"id": "S19e4870958a842a20a2",
+		"legacySongID": 1593,
+		"searchTerms": ["kijokouyou"],
+		"title": "鬼女紅妖"
+	},
+	{
+		"altTitles": [],
+		"artist": "satella feat.Risa Yuzuki",
+		"data": {
+			"duration": 149.664,
+			"genre": "maimai"
+		},
+		"id": "S19e4870958a988bc132",
+		"legacySongID": 1594,
+		"searchTerms": ["katengetto"],
+		"title": "華天月兎"
+	},
+	{
+		"altTitles": [],
+		"artist": "しぐれうい",
+		"data": {
+			"duration": 158.571,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S19e4870958b057fc422",
+		"legacySongID": 1595,
+		"searchTerms": ["catcher in the ui", "ui mugibatake de tsukamaete"],
+		"title": "うい麦畑でつかまえて"
+	},
+	{
+		"altTitles": [],
+		"artist": "しぐれうい",
+		"data": {
+			"duration": 163.977,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S19e4870958baad9527b",
+		"legacySongID": 1596,
+		"searchTerms": ["let's live willfully", "katte ni ikimasho"],
+		"title": "勝手に生きましょ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ハム feat. 雨衣",
+		"data": {
+			"duration": 150,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870958c92b11ca4",
+		"legacySongID": 1597,
+		"searchTerms": ["aiaikasa", "aye aye umbrella"],
+		"title": "アイアイ傘"
+	},
+	{
+		"altTitles": [],
+		"artist": "cosMo＠暴走P",
+		"data": {
+			"duration": 130.99,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S19e4870958c9f6f6902",
+		"legacySongID": 1598,
+		"searchTerms": ["yaminabe"],
+		"title": "ヤミナベ!!!!"
 	}
 ]

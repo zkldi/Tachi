@@ -14,12 +14,20 @@ export default function IIDXStyleSongChartInfoFormat({
 }: {
 	chart: ChartDocument | null;
 	game: V3Game;
-	song: SongDocument<"bms" | "chunithm" | "iidx" | "maimaidx" | "ongeki" | "pms" | "popn">;
+	song: SongDocument<
+		"arcaea" | "bms" | "chunithm" | "iidx" | "maimaidx" | "ongeki" | "pms" | "popn"
+	>;
 }) {
-	const genre =
-		game === "ongeki"
-			? ((song as SongDocument<"ongeki">).data.flavorGenre ?? song.data.genre)
-			: song.data.genre;
+	let genre: string;
+	if (game === "ongeki") {
+		genre =
+			(song as SongDocument<"ongeki">).data.flavorGenre ??
+			(song as SongDocument<"ongeki">).data.genre;
+	} else if (game === "arcaea") {
+		genre = (song as SongDocument<"arcaea">).data.songPack;
+	} else {
+		genre = (song as any).data.genre;
+	}
 
 	return (
 		<>

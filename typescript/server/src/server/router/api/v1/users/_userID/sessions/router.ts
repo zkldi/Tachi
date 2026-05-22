@@ -1,7 +1,7 @@
 import { SELECT_SESSION_CALENDAR, ToSessionCalendarDocument } from "#lib/db-formats/session";
 import { withRequestedUser } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 
 /**

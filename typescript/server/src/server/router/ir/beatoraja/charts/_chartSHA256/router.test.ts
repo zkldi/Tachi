@@ -111,6 +111,7 @@ describe("GET /ir/beatoraja/charts/:chartSHA256/scores (Postgres)", () => {
 			epg: 617,
 			lpg: 0,
 			player: "",
+			playcount: 0,
 		});
 	});
 

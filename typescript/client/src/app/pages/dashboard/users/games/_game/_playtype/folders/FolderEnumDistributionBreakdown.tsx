@@ -99,14 +99,18 @@ export default function FolderEnumDistributionBreakdown({
 	}
 
 	let filled = 0;
+	let cumulativeCount = 0;
 	const rows = [];
 	for (let vi = conf.values.length - 1; vi >= valueIndexFloor; vi--) {
 		const label = conf.values[vi];
 		const count = bucket[label] ?? 0;
 
 		filled += count;
+		cumulativeCount += count;
 
 		const pct = total > 0 ? (100 * count) / total : 0;
+		const cumulPct = total > 0 ? (100 * cumulativeCount) / total : 0;
+		const showCumul = cumulativeCount > count && (minRelIx === -1 || vi >= minRelIx);
 		const chipFill = colours?.[label];
 		const chrome = distributionRowChrome(chipFill);
 		const pctWidth = pct > 0 ? `${ToFixedFloor(Math.min(100, Math.max(0, pct)), 3)}%` : "0%";
@@ -153,6 +157,12 @@ export default function FolderEnumDistributionBreakdown({
 						{label}
 					</span>
 					<span className="ms-auto tabular-nums text-nowrap">
+						<span
+							className="me-3 small text-body-secondary opacity-75"
+							style={showCumul ? undefined : { visibility: "hidden" }}
+						>
+							total {cumulativeCount} ({ToFixedFloor(cumulPct, 1)}%)
+						</span>
 						<span className="fw-bold fs-6 text-body-emphasis">{count}</span>
 						<span className="ms-2 small text-body-secondary">
 							({ToFixedFloor(pct, 1)}%)

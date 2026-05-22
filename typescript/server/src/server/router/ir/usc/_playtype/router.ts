@@ -369,7 +369,7 @@ router.post("/scores", RequirePermissions("submit_score"), async (req, res) => {
 	} catch (_err) {
 		return res.status(200).json({
 			statusCode: STATUS_CODES.SERVER_ERROR,
-			description: "An internal server error has occured.",
+			description: "An internal server error has occurred.",
 		});
 	}
 });
@@ -435,7 +435,7 @@ router.post(
 			/* istanbul ignore next */
 			return res.status(200).json({
 				statusCode: STATUS_CODES.SERVER_ERROR,
-				description: "An error has occured in storing the replay.",
+				description: "An error has occurred in storing the replay.",
 			});
 		}
 	},

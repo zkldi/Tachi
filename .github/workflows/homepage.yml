@@ -16,7 +16,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/zkldi/tachi-dev:main
+      image: ghcr.io/zkldi/tachi-ci:main
       options: --user root
     if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     steps:

@@ -1,6 +1,6 @@
 ## Chart constants
-Get the data by going to [譜面定数表](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8) 
-or [譜面定数表 (Level 7以下)](https://wikiwiki.jp/arcaea/譜面定数表/譜面定数表 (Level 7以下)) and paste in the contents
+Get the data by going to [譜面定数表](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8)
+or [譜面定数表 (Level 7以下)](https://wikiwiki.jp/arcaea/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8/%E8%AD%9C%E9%9D%A2%E5%AE%9A%E6%95%B0%E8%A1%A8%20%28Level%207%E4%BB%A5%E4%B8%8B%29) and paste in the contents
 of this script in the browser console:
 
 ```js
@@ -15,6 +15,8 @@ of this script in the browser console:
 				return "Future";
 			case "firebrick":
 				return "Beyond";
+			case "slateblue":
+				return "Eternal"
 			default:
 				throw new Error(
 					`Unknown difficulty color ${cssColor}. Update the script and try again.`
@@ -113,9 +115,9 @@ into the browser console:
 	const EXPECTED_HEADER_CELLS = ["Notes", "Song", "Composer", "Diff.", "Lv.", "F", "L", "A", "S"];
 
 	const results = [];
-	
+
 	const tables = document.querySelectorAll("table");
-	
+
 	for (const table of tables) {
 		const header = [...table.querySelectorAll("thead th")].map((th) => th.textContent);
 
@@ -138,7 +140,7 @@ into the browser console:
 			const difficulty = cells[3].textContent;
 			const level = cells[4].textContent;
 			const notecount = Number(cells[0].textContent);
-			
+
 			if (Number.isNaN(notecount)) {
 				console.error(`Could not parse notecount ${
 					cells[0].textContent

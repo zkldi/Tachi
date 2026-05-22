@@ -1,7 +1,6 @@
 import type http from "http";
 
 import { log } from "#lib/log/log";
-import { CloseScoreImportQueue } from "#lib/score-import/worker/queue";
 import { ClosePgConnection } from "#services/pg/db";
 import { CloseRedisConnection } from "#services/redis/redis";
 
@@ -33,9 +32,6 @@ async function CloseEverythingElse() {
 
 	log.info({ shutdownInfo: true }, "Closing Redis Connection.");
 	await CloseRedisConnection();
-
-	log.info({ shutdownInfo: true }, "Closing Score Import Queue.");
-	await CloseScoreImportQueue();
 
 	log.info(
 		{

@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 
 import { MakeAction } from "#lib/actions/actions";
+import { rebuildFolderChartLookup } from "#lib/folders/rebuild-folder-chart-lookup";
 import { log } from "#lib/log/log";
 import { DeorphanBmsIfInOrphanChartPg } from "#lib/orphan-queue/deorphan-bms-pg";
 import DB from "#services/pg/db";
@@ -34,7 +35,7 @@ function stripTableFoldersKeySql(prefix: string) {
 /**
  * Tables might have updates that remove charts from their table.
  *
- * We need to handle this -- infact, it's quite common for something
+ * We need to handle this -- in fact, it's quite common for something
  * to go from the sl12 folder to st0 -- which is a cross-table
  * change.
  */
@@ -153,7 +154,7 @@ async function ImportTableLevels(
 
 		if (!chart) {
 			log.warn(
-				`No chart exists in table for (${td.checksum.type}=${td.checksum.value} Possible title: ${td.content.title} ${prefix}${td.content.level}`,
+				`No chart exists in table for (${td.checksum.type}=${td.checksum.value})w Possible title: ${td.content.title} ${prefix}${td.content.level}`,
 			);
 			failures++;
 			continue;
@@ -203,6 +204,12 @@ async function ImportTableLevels(
 export async function UpdateTable(tableInfo: BMSTableInfo) {
 	const table = await LoadBMSTable(tableInfo.url);
 
+	if (table.head.symbol !== tableInfo.prefix) {
+		throw new Error(
+			`Table ${tableInfo.name} (${tableInfo.url}) has unexpected symbol: expected ${JSON.stringify(tableInfo.prefix)}, got ${JSON.stringify(table.head.symbol)}.`,
+		);
+	}
+
 	log.info(`Bumping levels...`);
 	await ImportTableLevels(table.body, tableInfo.prefix, tableInfo.game);
 	log.info(`Levels bumped.`);
@@ -219,7 +226,7 @@ export async function syncBmsTablesCore() {
 	}
 
 	log.info(`Re-initialising folder-chart-lookup, since changes may have been made.`);
-	// await InitaliseFolderChartLookup();
+	await rebuildFolderChartLookup(DB);
 	log.info(`Done.`);
 }
 

@@ -3,7 +3,7 @@ import { ACTION_DeleteApiToken } from "#actions/delete-api-token";
 import { SELECT_API_TOKEN, ToAPITokenDocument } from "#lib/db-formats/api-token";
 import { withRequestedUser, withSelf } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 
 /**

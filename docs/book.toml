@@ -1,0 +1,14 @@
+[book]
+title = "Tachi Documentation"
+description = "Documentation for Kamaitachi, Bokutachi and related things."
+authors = ["zkldi"]
+language = "en"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/zkldi/Tachi"
+edit-url-template = "https://github.com/zkldi/Tachi/edit/main/docs/src/{path}"
+no-section-label = true
+
+[output.html.search]
+enable = true

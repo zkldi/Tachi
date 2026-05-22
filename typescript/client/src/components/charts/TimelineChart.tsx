@@ -30,7 +30,7 @@ export default function TimelineChart({
 					Not Enough Data... Yet.
 					<br />
 					<small className="text-body-secondary">
-						(You need atleast 2 days worth of data)
+						(You need at least 2 days worth of data)
 					</small>
 				</div>
 			</div>

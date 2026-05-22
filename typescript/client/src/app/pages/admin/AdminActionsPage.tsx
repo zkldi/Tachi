@@ -1,6 +1,6 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import useApiQuery from "#components/util/query/useApiQuery";
-import { ADMIN_PAGE_SIZE } from "#lib/adminConstants";
+import { ADMIN_RECENT_HOURS } from "#lib/adminConstants";
 import { MillisToSince } from "#util/time";
 import React from "react";
 import { Badge, Button, Form, Table } from "react-bootstrap";
@@ -92,7 +92,8 @@ export default function AdminActionsPage() {
 	}
 
 	const { actions, filters } = data;
-	const totalPages = Math.ceil(actions.total / ADMIN_PAGE_SIZE);
+	const pageSize = actions.pageSize;
+	const totalPages = Math.ceil(actions.total / pageSize);
 	const currentPage = actions.page;
 
 	function buildPageUrl(p: number) {
@@ -122,6 +123,9 @@ export default function AdminActionsPage() {
 			<h2 className="h5">
 				Actions <span className="badge bg-secondary">{actions.total.toLocaleString()}</span>
 			</h2>
+			<p className="small text-body-secondary mb-0">
+				Actions from the last {ADMIN_RECENT_HOURS} hours (up to {pageSize} per page).
+			</p>
 
 			<Form className="d-flex flex-wrap align-items-end gap-3" onSubmit={onFilterSubmit}>
 				<Form.Group>

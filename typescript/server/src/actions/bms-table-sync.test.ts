@@ -44,6 +44,7 @@ describe("ACTION_BMSTableSync", () => {
 		({ id: adminId } = await seedUser({ authLevel: "admin" }));
 
 		mockLoadBMSTable.mockResolvedValue({
+			head: { symbol: fakeTable.prefix },
 			body: [
 				{
 					checksum: { type: "md5" as const, value: testMd5 },

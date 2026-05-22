@@ -1,7 +1,7 @@
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { VERSION_PRETTY } from "#lib/constants/version";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 const startTime = Date.now();
 

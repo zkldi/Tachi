@@ -2,15 +2,20 @@ import type { BMSGames, integer, PBScoreDocument } from "tachi-common";
 
 const LAMP_TO_BEATORAJA = [0, 1, 3, 4, 5, 6, 7, 8] as const;
 
-// const RAN_INDEXES = {
-// 	NONRAN: 0,
-// 	MIRROR: 1,
-// 	RANDOM: 2,
-// 	"R-RANDOM": 3,
-// 	"S-RANDOM": 4,
-// } as const;
+const RAN_INDEXES = {
+	NONRAN: 0,
+	MIRROR: 1,
+	RANDOM: 2,
+	"R-RANDOM": 3,
+	"S-RANDOM": 4,
+} as const;
 
-type BeatorajaJudgements = `${"e" | "l"}${"bd" | "gd" | "gr" | "pg" | "pr"}`;
+type BeatorajaScoreMeta = {
+	inputDevice?: string | null;
+	random?: keyof typeof RAN_INDEXES | [keyof typeof RAN_INDEXES, keyof typeof RAN_INDEXES] | null;
+};
+
+type BeatorajaJudgements = `${"e" | "l"}${"bd" | "gd" | "gr" | "ms" | "pg" | "pr"}`;
 
 type BeatorajaScoreJudgements = {
 	[K in BeatorajaJudgements]: integer;
@@ -50,8 +55,10 @@ export function TachiScoreDataToBeatorajaFormat(
 	username: string,
 	notecount: integer,
 	playcount: integer,
+	scoreMeta: BeatorajaScoreMeta = {},
 ) {
 	const scoreData = pbScore.scoreData;
+	const random = Array.isArray(scoreMeta.random) ? null : scoreMeta.random;
 
 	const beatorajaScore: BeatorajaPartialScoreFormat = {
 		sha256,
@@ -62,9 +69,8 @@ export function TachiScoreDataToBeatorajaFormat(
 		maxcombo: scoreData.optional.maxCombo ?? 0,
 		gauge: scoreData.optional.gauge ?? 0,
 
-		// These two are now unsupported due to performance concerns.
-		deviceType: null,
-		random: null,
+		deviceType: scoreMeta.inputDevice ?? null,
+		random: random === undefined || random === null ? null : RAN_INDEXES[random],
 
 		minbp: scoreData.optional.bp ?? 0,
 		passnotes: 0,
@@ -73,8 +79,8 @@ export function TachiScoreDataToBeatorajaFormat(
 
 	const judgements: Partial<BeatorajaScoreJudgements> = {};
 
-	// // Not everything exports these properties. If they're not there, they should default to 0.
-	// // For cases like LR2/manual - this will just result in a set of 0s.
+	// Not everything exports these properties. If they're not there, they should default to 0.
+	// For cases like LR2/manual - this will just result in a set of 0s.
 	for (const key of [
 		"egd",
 		"lgd",
@@ -82,11 +88,12 @@ export function TachiScoreDataToBeatorajaFormat(
 		"lbd",
 		"epr",
 		"lpr",
-		"ems",
-		"lms",
-	] as Array<BeatorajaJudgements>) {
+	] satisfies Array<BeatorajaJudgements>) {
 		judgements[key] = scoreData.optional[key] ?? 0;
 	}
+
+	judgements.ems = 0;
+	judgements.lms = 0;
 
 	// // If we have no epg/egr data, we can't calculate EX score on the beatoraja client.
 	// // We have to fake some data for LR2 scores/other scores.

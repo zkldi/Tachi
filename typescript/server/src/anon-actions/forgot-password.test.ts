@@ -123,32 +123,25 @@ describe("ANON_ACTION_ForgotPassword", () => {
 
 	// ── Email not found ────────────────────────────────────────────────────────
 
-	it("throws when no account is registered with the given email", async () => {
-		await expect(
-			ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" }),
-		).rejects.toThrow();
+	it("returns { silentlyRejected: true } when no account is registered with the given email", async () => {
+		const result = await ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" });
+
+		expect(result).toEqual({ silentlyRejected: true });
 	});
 
-	it("writes a THROW action row when the email is not found (dead executeTakeFirstOrThrow)", async () => {
-		await expect(
-			ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" }),
-		).rejects.toThrow();
+	it("writes a GOOD action row when the email is not found", async () => {
+		await ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" });
 
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "FORGOT_PASSWORD")
 			.executeTakeFirstOrThrow();
 
-		// executeTakeFirstOrThrow raises a raw NoResultError (not an ExpectedErr),
-		// so the audit framework marks it THROW rather than BAD.
-		// Note: the silentlyRejected branch in the source is dead code.
-		expect(action.result).toBe("THROW");
+		expect(action.result).toBe("GOOD");
 	});
 
 	it("does not insert any token when the email is not found", async () => {
-		await expect(
-			ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" }),
-		).rejects.toThrow();
+		await ANON_ACTION_ForgotPassword(taker, { "!email": "nobody@example.com" });
 
 		const rows = await DB.selectFrom("priv_password_reset_token")
 			.select("token")

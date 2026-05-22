@@ -7,7 +7,7 @@ import { withAuthedAsUser, withPermission, withRequestedUser } from "#lib/router
 import { success } from "#lib/router/typed-router";
 import { RequirePermissions } from "#server/middleware/auth";
 import { CreateMulterSingleUploadMiddleware } from "#server/middleware/multer-upload";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { REQ_GetTachiData } from "#utils/req-tachi-data";
 
 import { GetUserFromParam, RequireAuthedAsUser } from "../middleware";

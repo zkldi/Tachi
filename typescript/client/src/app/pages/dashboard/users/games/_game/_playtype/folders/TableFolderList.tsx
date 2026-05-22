@@ -2,7 +2,7 @@ import Icon from "#components/util/Icon";
 import { UserContext } from "#context/UserContext";
 import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { APIFetchV1 } from "#util/api";
-import React, { useContext, useMemo } from "react";
+import React, { useContext, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { GetGameConfig, type TableDocument } from "tachi-common";
 
@@ -45,7 +45,7 @@ export default function TableFolderList({
 
 	const dataset = useMemo(() => {
 		const arr = [];
-		for (const folder of tableFolderSlugsDisplayOrder(table)) {
+		for (const folder of tableFolderSlugsDisplayOrder(table, game)) {
 			const data = dataMap.get(folder);
 
 			if (!data) {
@@ -56,12 +56,40 @@ export default function TableFolderList({
 		}
 
 		return arr;
-	}, [dataMap, table]);
+	}, [dataMap, table, game]);
 
 	const { user } = useContext(UserContext);
 
+	const containerRef = useRef<HTMLDivElement>(null);
+	const [titleWidth, setTitleWidth] = useState<number | null>(null);
+
+	useLayoutEffect(() => {
+		const container = containerRef.current;
+		if (!container) {
+			return;
+		}
+
+		const titles = container.querySelectorAll<HTMLElement>("[data-folder-title]");
+		if (!titles.length) {
+			return;
+		}
+
+		// scrollWidth reports the full text width even when the element clips it via overflow:hidden.
+		const MAX_PX = 288; // 18rem hard ceiling
+		const maxW = Math.max(...Array.from(titles, (el) => el.scrollWidth));
+		setTitleWidth(Math.min(MAX_PX, maxW));
+	}, [dataset]);
+
 	return (
-		<div className="mt-4">
+		<div
+			className="mt-2"
+			ref={containerRef}
+			style={
+				titleWidth !== null
+					? ({ "--folder-title-w": `${titleWidth}px` } as React.CSSProperties)
+					: undefined
+			}
+		>
 			{dataset.length === 0 ? (
 				<div className="text-center text-body-secondary py-5">No folders.</div>
 			) : (
@@ -92,9 +120,10 @@ export default function TableFolderList({
 							}}
 							to={`/u/${reqUser.username}/games/${game}/folders/${data.folder.slug}`}
 						>
-							<div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-3">
+							<div className="d-flex flex-column flex-lg-row align-items-lg-center gap-1 gap-lg-2">
 								<div
 									className={`fw-semibold text-truncate ${folderTableStyles.folderRowTitle}`}
+									data-folder-title
 								>
 									{data.folder.title}
 								</div>

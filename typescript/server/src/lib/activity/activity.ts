@@ -102,7 +102,7 @@ function whereMsRangeOnColumn(
  * Optionally, startFrom can be passed, which will start this activity search from that
  * point in time.
  *
- * @bug - With the way `startFrom` works, its possible to "skip over" sessions that have
+ * @bug - With the way `startFrom` works, it's possible to "skip over" sessions that have
  * the **exact** same timestamp, but didn't fall into the previous limit.
  *
  * for an array of imagined timestamps with sessions=3, followed by startFrom=3

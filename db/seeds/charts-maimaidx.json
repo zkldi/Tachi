@@ -4407,6 +4407,62 @@
 	},
 	{
 		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10077
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095760588cdec",
+		"isPrimary": true,
+		"legacyChartID": "446d7d06c479aead89410bfad1299e2907e81fc2",
+		"level": "6",
+		"levelNum": 6.2,
+		"songID": "S19d35e0d4a6c3d6e15a",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10077
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709575cb5316a8",
+		"isPrimary": true,
+		"legacyChartID": "82e59c7f4c85876078d008846913022a30b62187",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19d35e0d4a6c3d6e15a",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10077
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095769efc6c58",
+		"isPrimary": true,
+		"legacyChartID": "0a7c7fc76b81228a2867fe97a88568b0c3b18a8a",
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19d35e0d4a6c3d6e15a",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10077
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709576a9021072",
+		"isPrimary": true,
+		"legacyChartID": "f48feb1b405dcf972558f29b3553fe8efae1ed9b",
+		"level": "13",
+		"levelNum": 13.2,
+		"songID": "S19d35e0d4a6c3d6e15a",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
 			"displayVersion": "maimai",
 			"inGameID": 77
 		},
@@ -5811,6 +5867,62 @@
 	},
 	{
 		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10106
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095850683be21",
+		"isPrimary": true,
+		"legacyChartID": "fdf41c249370da59251371d44b57e5a4d01a98c1",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19d35e0d4b2d21aa1fc",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10106
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709585daafa5d4",
+		"isPrimary": true,
+		"legacyChartID": "f2bbd7a46923d64a37feba67767b6dc84dfebaac",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19d35e0d4b2d21aa1fc",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10106
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958554c1581e",
+		"isPrimary": true,
+		"legacyChartID": "b470baf6b91d4f4b99379e09bf61f6cb62f735c0",
+		"level": "11",
+		"levelNum": 11.2,
+		"songID": "S19d35e0d4b2d21aa1fc",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 10106
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709585c7ccbda5",
+		"isPrimary": true,
+		"legacyChartID": "da30a78095a52405621b833012124ffe5ac1454e",
+		"level": "13",
+		"levelNum": 13.5,
+		"songID": "S19d35e0d4b2d21aa1fc",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
 			"displayVersion": "maimai PLUS",
 			"inGameID": 106
 		},
@@ -6672,6 +6784,20 @@
 			"prismplus-omni",
 			"circle"
 		]
+	},
+	{
+		"data": {
+			"displayVersion": "maimai PLUS",
+			"inGameID": 113
+		},
+		"difficulty": "Re:Master",
+		"id": "C19e4870957c0a091229",
+		"isPrimary": true,
+		"legacyChartID": "d4223070898227f81012de33c0ba1d7fe1a87394",
+		"level": "14",
+		"levelNum": 14.4,
+		"songID": "S19d35e0d4b9e50f4934",
+		"versions": ["circle"]
 	},
 	{
 		"data": {
@@ -85549,6 +85675,20 @@
 	{
 		"data": {
 			"displayVersion": "maimaiでらっくす Splash",
+			"inGameID": 11157
+		},
+		"difficulty": "DX Re:Master",
+		"id": "C19e4870957d683081b6",
+		"isPrimary": true,
+		"legacyChartID": "967e7710451c31d32a9912cb3a406190a464aa67",
+		"level": "14",
+		"levelNum": 14.1,
+		"songID": "S19d35e0d74d9b628748",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす Splash",
 			"inGameID": 11158
 		},
 		"difficulty": "DX Advanced",
@@ -92513,6 +92653,20 @@
 			"prismplus-omni",
 			"circle"
 		]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす Splash PLUS",
+			"inGameID": 11226
+		},
+		"difficulty": "DX Re:Master",
+		"id": "C19e4870957dd399c9b3",
+		"isPrimary": true,
+		"legacyChartID": "7fe874182274080ed1d97e506102e0e53ffc4c56",
+		"level": "13+",
+		"levelNum": 13.7,
+		"songID": "S19d35e0d78efa6cd38d",
+		"versions": ["circle"]
 	},
 	{
 		"data": {
@@ -103124,6 +103278,34 @@
 	},
 	{
 		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 1327
+		},
+		"difficulty": "Advanced",
+		"id": "C19e487095858d4650de",
+		"isPrimary": true,
+		"legacyChartID": "68a72fa279d232be4c6574a9046b71950f26e34c",
+		"level": "7+",
+		"levelNum": 7.7,
+		"songID": "S19d35e0d7ef71b6f00c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 1327
+		},
+		"difficulty": "Basic",
+		"id": "C19e48709585603a0e92",
+		"isPrimary": true,
+		"legacyChartID": "40f8a86854d1a3b9cbda68fbd6eee40fc72f214e",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19d35e0d7ef71b6f00c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
 			"displayVersion": "maimaiでらっくす UNiVERSE",
 			"inGameID": 11327
 		},
@@ -103229,6 +103411,34 @@
 			"prismplus-omni",
 			"circle"
 		]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 1327
+		},
+		"difficulty": "Expert",
+		"id": "C19e487095850760bf1f",
+		"isPrimary": true,
+		"legacyChartID": "9024c66ec67a0a8469c87332988fee9f778b9395",
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19d35e0d7ef71b6f00c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 1327
+		},
+		"difficulty": "Master",
+		"id": "C19e4870958500aef267",
+		"isPrimary": true,
+		"legacyChartID": "bac6ff5b78b8ee0a839fd636850e71d56c4ae7cf",
+		"level": "13",
+		"levelNum": 13.5,
+		"songID": "S19d35e0d7ef71b6f00c",
+		"versions": ["circle"]
 	},
 	{
 		"data": {
@@ -106912,6 +107122,20 @@
 			"prismplus-omni",
 			"circle"
 		]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす UNiVERSE",
+			"inGameID": 11365
+		},
+		"difficulty": "DX Re:Master",
+		"id": "C19e4870957eb581580f",
+		"isPrimary": true,
+		"legacyChartID": "17957caac8eba105a43f56ef77924fc5942bc4c3",
+		"level": "13+",
+		"levelNum": 13.7,
+		"songID": "S19d35e0d811e331b97c",
+		"versions": ["circle"]
 	},
 	{
 		"data": {
@@ -159335,5 +159559,2021 @@
 		"levelNum": 13.3,
 		"songID": "S19d35e0da9f189317b1",
 		"versions": ["prismplus", "prismplus-omni", "circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11883
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709577ec6ffb11",
+		"isPrimary": true,
+		"legacyChartID": "b9b6230d31232930d3093b63673dee52c92022ca",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e48709576055e2c4c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11883
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957758cf412d",
+		"isPrimary": true,
+		"legacyChartID": "9b9f9056ffb836dc31d19711da3987e581861147",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e48709576055e2c4c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11883
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095773dfb769c",
+		"isPrimary": true,
+		"legacyChartID": "1594f0be0c3f4ec46a455468d812a7909e7a5e37",
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e48709576055e2c4c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11883
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709577e715afc4",
+		"isPrimary": true,
+		"legacyChartID": "dfe7bf2d98d99ac4ef2f98bcc4cfa3a08238e4ce",
+		"level": "13+",
+		"levelNum": 13.9,
+		"songID": "S19e48709576055e2c4c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11922
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709578256f132e",
+		"isPrimary": true,
+		"legacyChartID": "a3b3d06712c0edc70f3563b12596d72f499c3721",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e487095784ccd0ca8",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11922
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709578e6b0918c",
+		"isPrimary": true,
+		"legacyChartID": "f53eb90895594e563e3c5d6fb8a86711dcaf41ed",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e487095784ccd0ca8",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11922
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095784fc234dd",
+		"isPrimary": true,
+		"legacyChartID": "61ed51db222d35c21fd1f2b628d68d5f9b6ad453",
+		"level": "11",
+		"levelNum": 11.2,
+		"songID": "S19e487095784ccd0ca8",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11922
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095780d539170",
+		"isPrimary": true,
+		"legacyChartID": "3324ed51a154ad7aeed4e95406d4a83258878396",
+		"level": "13+",
+		"levelNum": 13.6,
+		"songID": "S19e487095784ccd0ca8",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11921
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095785269034e",
+		"isPrimary": true,
+		"legacyChartID": "4f6e5eb681ad3a59654dc51994e794a50aac8f93",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e48709578940632af",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11921
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957846c25839",
+		"isPrimary": true,
+		"legacyChartID": "74cb37280fc0273a5266d027fb96ae72400159ec",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e48709578940632af",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11921
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095782e63a2d9",
+		"isPrimary": true,
+		"legacyChartID": "3f1d0957113bda84ed1254487005f314b2e222f2",
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e48709578940632af",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11921
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957811d75206",
+		"isPrimary": true,
+		"legacyChartID": "106ab5c65295028724c4bafecaaf027620eaa962",
+		"level": "13+",
+		"levelNum": 13.8,
+		"songID": "S19e48709578940632af",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11923
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957924ca971f",
+		"isPrimary": true,
+		"legacyChartID": "ea3d5c8d137ed6a872a4f52e51a6305e0bf9ac49",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e48709578f0d13d43",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11923
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095797a2d893f",
+		"isPrimary": true,
+		"legacyChartID": "878d7a50f10679d9d08c4dad0b490d835989daff",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e48709578f0d13d43",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11923
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709579b2256511",
+		"isPrimary": true,
+		"legacyChartID": "d49c7817c519bc32a57807bb541bdc860558de89",
+		"level": "9",
+		"levelNum": 9.2,
+		"songID": "S19e48709578f0d13d43",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11923
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709579342845fd",
+		"isPrimary": true,
+		"legacyChartID": "e65c0b87bcd0e0f54a9a88a557310c8eb0e79b59",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19e48709578f0d13d43",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11925
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709579990f1a1d",
+		"isPrimary": true,
+		"legacyChartID": "63b77a8892ce59377760aed77b24cc4fabf4bdf6",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e487095793aaa217d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11925
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709579be95e0e4",
+		"isPrimary": true,
+		"legacyChartID": "ad3cb011e5a9fa91d719b84faa47af95fc37b188",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e487095793aaa217d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11925
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709579fbe88ea1",
+		"isPrimary": true,
+		"legacyChartID": "e961a3363e2b8483bca73439ddf9debd13a2562f",
+		"level": "11+",
+		"levelNum": 11.8,
+		"songID": "S19e487095793aaa217d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11925
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709579eedfc3bb",
+		"isPrimary": true,
+		"legacyChartID": "577a9e436f95921e2e4e2d43667f5ca763799589",
+		"level": "14",
+		"levelNum": 14.3,
+		"songID": "S19e487095793aaa217d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11924
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957914284c62",
+		"isPrimary": true,
+		"legacyChartID": "95cf833287103d18fa605b6206cca51d15d6748d",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e48709579d2c1d5a4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11924
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095797b6c7c37",
+		"isPrimary": true,
+		"legacyChartID": "1adcdb44dbe8f6e80628ada8ec8c249f4b0d1378",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e48709579d2c1d5a4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11924
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957915ba096f",
+		"isPrimary": true,
+		"legacyChartID": "253ea31f91518cc9a5cd3a6f294cea394113e2b6",
+		"level": "12",
+		"levelNum": 12.4,
+		"songID": "S19e48709579d2c1d5a4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11924
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095798a4ec9d6",
+		"isPrimary": true,
+		"legacyChartID": "fb308c26b688094a20661066782ec88fe66c5718",
+		"level": "14",
+		"levelNum": 14.1,
+		"songID": "S19e48709579d2c1d5a4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11926
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957a31332461",
+		"isPrimary": true,
+		"legacyChartID": "4c37944022ad10fd91c48957ba427fff3540c6e1",
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e4870957a15051840",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11926
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957a3ef64c86",
+		"isPrimary": true,
+		"legacyChartID": "6c69f266331cdd4b5bc5df405a27394f3c7d1109",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e4870957a15051840",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11926
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957a0f05c352",
+		"isPrimary": true,
+		"legacyChartID": "65e3077822ffb98ab198196e6591fe62dd19c335",
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e4870957a15051840",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11926
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957a66dd3511",
+		"isPrimary": true,
+		"legacyChartID": "c60d51f204ba02db762fcb9427b6274703775961",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19e4870957a15051840",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11927
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957a2a405a0f",
+		"isPrimary": true,
+		"legacyChartID": "53aeb8b993c3570cbcf56bd03124e7f339396121",
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S19e4870957aa9ea6944",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11927
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957a2b0b3935",
+		"isPrimary": true,
+		"legacyChartID": "a27cf6fd74a59efc4c8582fd17a6cb9998d79f4e",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19e4870957aa9ea6944",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11927
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957a43570470",
+		"isPrimary": true,
+		"legacyChartID": "8093a5fe1385eb1d59b74bb094d5805c515c13d6",
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e4870957aa9ea6944",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11927
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957a7c85b38d",
+		"isPrimary": true,
+		"legacyChartID": "202eb2cd6c9657134a4bd6d02750e15398d6db68",
+		"level": "12+",
+		"levelNum": 12.8,
+		"songID": "S19e4870957aa9ea6944",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11929
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957b9fb2f31c",
+		"isPrimary": true,
+		"legacyChartID": "49f82da94c77038376ff1405a05fcb6b24b4b59c",
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e4870957b459a08e7",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11929
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957bc8a7fe8c",
+		"isPrimary": true,
+		"legacyChartID": "b84f0dc03fd9d224cdf79a63fa4f30d63bea0247",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e4870957b459a08e7",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11929
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957bccad748f",
+		"isPrimary": true,
+		"legacyChartID": "af41112b94a128e32ad5d2e28daa72a8777e71e1",
+		"level": "10",
+		"levelNum": 10.5,
+		"songID": "S19e4870957b459a08e7",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11929
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957b38ae6098",
+		"isPrimary": true,
+		"legacyChartID": "47f06fff2e7e696709e0fcc09d078c9efeac54eb",
+		"level": "13+",
+		"levelNum": 13.7,
+		"songID": "S19e4870957b459a08e7",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11950
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957be28b9ba0",
+		"isPrimary": true,
+		"legacyChartID": "836040c04ce42a7b15de82c20fdf23299162b113",
+		"level": "6",
+		"levelNum": 6.2,
+		"songID": "S19e4870957b722a8e5e",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11950
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957b57b3bbae",
+		"isPrimary": true,
+		"legacyChartID": "0540ab477229402aee379815585bb83dbc324801",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19e4870957b722a8e5e",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11950
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957bd64fc0fb",
+		"isPrimary": true,
+		"legacyChartID": "86b96c56b7299396d461de5d2ced3cea6ea6d7db",
+		"level": "9+",
+		"levelNum": 9.9,
+		"songID": "S19e4870957b722a8e5e",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11950
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957bd4209a73",
+		"isPrimary": true,
+		"legacyChartID": "066d35f42d3abf75a6446dd23739b4fbff82cdc8",
+		"level": "12+",
+		"levelNum": 12.9,
+		"songID": "S19e4870957b722a8e5e",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11884
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957e7ec5675f",
+		"isPrimary": true,
+		"legacyChartID": "e7ce7d96c654568e060bb0522906338e3bb85548",
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e4870957e9065cd32",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11884
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957e9210cd9c",
+		"isPrimary": true,
+		"legacyChartID": "df60328c30707abc384018e159605098a7a5f2c5",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e4870957e9065cd32",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11884
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957e91b62994",
+		"isPrimary": true,
+		"legacyChartID": "180d0042c5556e552b8c3329648898fe965c1596",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19e4870957e9065cd32",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11884
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957e821ee560",
+		"isPrimary": true,
+		"legacyChartID": "308f2d32d03fa90211b4fe4ab39985280f34eac6",
+		"level": "14+",
+		"levelNum": 14.8,
+		"songID": "S19e4870957e9065cd32",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11886
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957e938b0009",
+		"isPrimary": true,
+		"legacyChartID": "e3a062bd09a106dff13ebec22855afbcd829d6e1",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e4870957eda0aa0aa",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11886
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957e8ec16447",
+		"isPrimary": true,
+		"legacyChartID": "a00e11cf3819b19d46d6af64f7476712b578a516",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e4870957eda0aa0aa",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11886
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957ee722b626",
+		"isPrimary": true,
+		"legacyChartID": "990ff77ad6ae3665469faafbed14dc973e8dd647",
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e4870957eda0aa0aa",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11886
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957f4370e8ad",
+		"isPrimary": true,
+		"legacyChartID": "a3f8515e9559196563bc05d0ceaaf36e741b8f12",
+		"level": "13",
+		"levelNum": 13.4,
+		"songID": "S19e4870957eda0aa0aa",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11887
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957f64a01751",
+		"isPrimary": true,
+		"legacyChartID": "411d0948f1e0c3f297d963b668c3b1fb981138b4",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e4870957f172028ef",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11887
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957f20d86f9b",
+		"isPrimary": true,
+		"legacyChartID": "d2c171788aded5ef804a9bf087a7e8479ee3a58e",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e4870957f172028ef",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11887
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957f714f8f4d",
+		"isPrimary": true,
+		"legacyChartID": "51800757d8df65f644d8c874684dadedca58045a",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19e4870957f172028ef",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11887
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957f22a4d377",
+		"isPrimary": true,
+		"legacyChartID": "5fdee337ad70c4f727773e1fd541b7d7867ffda9",
+		"level": "13+",
+		"levelNum": 13.8,
+		"songID": "S19e4870957f172028ef",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11888
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870957fe63ed253",
+		"isPrimary": true,
+		"legacyChartID": "19bcaa61d0a2240c9bb814b862871c8d7e1c68cd",
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e4870957fd100f215",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11888
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870957f9d1cddc1",
+		"isPrimary": true,
+		"legacyChartID": "7959cf37b953785a7410d7ec9e41d6184166c609",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e4870957fd100f215",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11888
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870957fe03dd80d",
+		"isPrimary": true,
+		"legacyChartID": "cefa7bdc299b32b6706b2f2c7f27bfeb49cb3775",
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S19e4870957fd100f215",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11888
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870957fe5b88026",
+		"isPrimary": true,
+		"legacyChartID": "20262b9d8b72382c1b6b7832d8122908a3a0f243",
+		"level": "13+",
+		"levelNum": 13.6,
+		"songID": "S19e4870957fd100f215",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11898
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958066ef879f",
+		"isPrimary": true,
+		"legacyChartID": "6791c2aeb3d1a997dded90652bfdf56d57fc438b",
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e48709580e5b12ff6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11898
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095804cf24225",
+		"isPrimary": true,
+		"legacyChartID": "2bf388486c246a4b872ed90e2fad04f3534404a9",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e48709580e5b12ff6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11898
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709580f9978905",
+		"isPrimary": true,
+		"legacyChartID": "073830cf0732bf84dd80e4d22999b56295ea7c98",
+		"level": "12+",
+		"levelNum": 12.8,
+		"songID": "S19e48709580e5b12ff6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11898
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709580bb95f6cc",
+		"isPrimary": true,
+		"legacyChartID": "de365ae11ddf9dbed4f2c936daa1cc1780931f79",
+		"level": "14+",
+		"levelNum": 14.9,
+		"songID": "S19e48709580e5b12ff6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11889
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958051530f03",
+		"isPrimary": true,
+		"legacyChartID": "bd672306e447f8005b55f1c6b26705e06d799754",
+		"level": "8+",
+		"levelNum": 8.7,
+		"songID": "S19e48709580fa8c0dd6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11889
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709580a434caaa",
+		"isPrimary": true,
+		"legacyChartID": "804580ad79c8902e83390a0b0c13319220c18756",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e48709580fa8c0dd6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11889
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958040c1e502",
+		"isPrimary": true,
+		"legacyChartID": "926df8ac58c0c01afaaf91bebdfdaf939e0408a4",
+		"level": "12+",
+		"levelNum": 12.9,
+		"songID": "S19e48709580fa8c0dd6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11889
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709580600182f5",
+		"isPrimary": true,
+		"legacyChartID": "d281b3cb58a0a02e81d551af2c44e77e8ee28edd",
+		"level": "14",
+		"levelNum": 14.5,
+		"songID": "S19e48709580fa8c0dd6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11930
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095814ca27eed",
+		"isPrimary": true,
+		"legacyChartID": "2096a37f9f46740e2360685a07f9169f99200535",
+		"level": "7+",
+		"levelNum": 7.7,
+		"songID": "S19e4870958155be32ba",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11930
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958131036e37",
+		"isPrimary": true,
+		"legacyChartID": "04abcd4dc56d9bb39801b66d9976a5145100dceb",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e4870958155be32ba",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11930
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958117249dbb",
+		"isPrimary": true,
+		"legacyChartID": "d1e7e54ae3d74b1b3c708244c3e980bf49e61fbe",
+		"level": "11+",
+		"levelNum": 11.7,
+		"songID": "S19e4870958155be32ba",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11930
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709581d7b9f584",
+		"isPrimary": true,
+		"legacyChartID": "7016f867ddbb70ac1d1cbd4e1230ad7f72547f93",
+		"level": "13+",
+		"levelNum": 13.8,
+		"songID": "S19e4870958155be32ba",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11933
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709582939214d4",
+		"isPrimary": true,
+		"legacyChartID": "c04ed108546b1d14d0bc8c535ade0300b86c7ae0",
+		"level": "7+",
+		"levelNum": 7.7,
+		"songID": "S19e487095820418ea7c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11933
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709582d02459f1",
+		"isPrimary": true,
+		"legacyChartID": "9fa96f855c6b11b913af86c9e5f36978944260dd",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e487095820418ea7c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11933
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709582bbbe015c",
+		"isPrimary": true,
+		"legacyChartID": "9483fe20ddb9c37cc92d0647c92dcdc0740e521e",
+		"level": "11+",
+		"levelNum": 11.7,
+		"songID": "S19e487095820418ea7c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11933
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095836bf3ea83",
+		"isPrimary": true,
+		"legacyChartID": "19a7cc52e6a2d983d9b426fe98dadac13167c900",
+		"level": "13+",
+		"levelNum": 13.8,
+		"songID": "S19e487095820418ea7c",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11931
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709582bfb2c162",
+		"isPrimary": true,
+		"legacyChartID": "fde7beeb0eb5eefbd9948e75d584b90b5f969b7a",
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e4870958280fbf57f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11931
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709582b70b0a66",
+		"isPrimary": true,
+		"legacyChartID": "e072de8f7a73e156c4c6dac020a96d7cae80b1ea",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e4870958280fbf57f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11931
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958292a09fa5",
+		"isPrimary": true,
+		"legacyChartID": "99c38516e39d28296ddf136075936efbf02a243e",
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e4870958280fbf57f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11931
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709582665e5401",
+		"isPrimary": true,
+		"legacyChartID": "9bb1e337597c5fadf274328c7ca96ca8a5600de5",
+		"level": "13+",
+		"levelNum": 13.9,
+		"songID": "S19e4870958280fbf57f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11932
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095825e6fd708",
+		"isPrimary": true,
+		"legacyChartID": "8631b918cd9718fdff85d7b70d3171eac83098c0",
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e48709582dc475303",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11932
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095821bfa4311",
+		"isPrimary": true,
+		"legacyChartID": "bbb7f361b44c5616759f104ec8058fc0b5ca53b9",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e48709582dc475303",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11932
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709582df94794b",
+		"isPrimary": true,
+		"legacyChartID": "7477cc90dda206cc8c7c247f232a06beb6d6d4ac",
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19e48709582dc475303",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11932
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958235d72fc0",
+		"isPrimary": true,
+		"legacyChartID": "3a867d7b7299332e87e1573da0ac053d8fd9e07b",
+		"level": "13",
+		"levelNum": 13.2,
+		"songID": "S19e48709582dc475303",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11934
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958385d06e1e",
+		"isPrimary": true,
+		"legacyChartID": "9e3122ba9d604b562e4b73de39a78284d619deb8",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e487095834ec8ee16",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11934
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095830c1a5b91",
+		"isPrimary": true,
+		"legacyChartID": "08e473df1691850c84a28a2523660d3dbed8e23f",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e487095834ec8ee16",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11934
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709583f2c3bc99",
+		"isPrimary": true,
+		"legacyChartID": "16aa42103b77c5d50723954506bf7419bfb4138d",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19e487095834ec8ee16",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11934
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095830e1a06d5",
+		"isPrimary": true,
+		"legacyChartID": "f6aca2aa2e77c04d86e001321130cf3b34ebe2cc",
+		"level": "13+",
+		"levelNum": 13.7,
+		"songID": "S19e487095834ec8ee16",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11970
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709584af27a786",
+		"isPrimary": true,
+		"legacyChartID": "a4ca0391fe68295f4a9c0bf00f5de61b1f363be2",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e48709584824b3772",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11970
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709584d2e6fd6b",
+		"isPrimary": true,
+		"legacyChartID": "93001b30a581b68d36124cc53d7c91a131df6380",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e48709584824b3772",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11970
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958483e847f2",
+		"isPrimary": true,
+		"legacyChartID": "ec84689550e108cd1642e67866a36c470083771e",
+		"level": "11",
+		"levelNum": 11.5,
+		"songID": "S19e48709584824b3772",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11970
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095840b251e2b",
+		"isPrimary": true,
+		"legacyChartID": "595afd06ac8ff8896d9c694d80d7ea86ab005d92",
+		"level": "14",
+		"levelNum": 14.3,
+		"songID": "S19e48709584824b3772",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11956
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e487095843dba416e",
+		"isPrimary": true,
+		"legacyChartID": "bd23ade69ca3ce5c80eb825c8dd6755f2a0d6021",
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e48709584f1679c4d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11956
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958488a32c3d",
+		"isPrimary": true,
+		"legacyChartID": "05b300b4fa2578f8fe3c0afd1fe621a20ca46001",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e48709584f1679c4d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11956
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958430e1a57b",
+		"isPrimary": true,
+		"legacyChartID": "5240945d275feafc7a3f0749ee5cd31bab814ffa",
+		"level": "12+",
+		"levelNum": 12.9,
+		"songID": "S19e48709584f1679c4d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11956
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709584e8949000",
+		"isPrimary": true,
+		"legacyChartID": "7fba426628899258fbbab2f61bcf60227dfb7e67",
+		"level": "14+",
+		"levelNum": 14.7,
+		"songID": "S19e48709584f1679c4d",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11901
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709586876355e9",
+		"isPrimary": true,
+		"legacyChartID": "825605ec829cafae38d7552a42ad235a60ece8f2",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S19e487095866a0c48da",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11901
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e487095866f31e12d",
+		"isPrimary": true,
+		"legacyChartID": "acb787ed5e82d8a1805b29b70afa09c8aac77c57",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e487095866a0c48da",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11901
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958644ba75b5",
+		"isPrimary": true,
+		"legacyChartID": "7b595497308354c664935f285e878214e70f5e90",
+		"level": "12+",
+		"levelNum": 12.9,
+		"songID": "S19e487095866a0c48da",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11901
+		},
+		"difficulty": "DX Master",
+		"id": "C19e487095868bf5eb32",
+		"isPrimary": true,
+		"legacyChartID": "662dd94e83fad17da78ba89a4587987a7d4ce180",
+		"level": "14+",
+		"levelNum": 14.6,
+		"songID": "S19e487095866a0c48da",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11936
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958789fc6ceb",
+		"isPrimary": true,
+		"legacyChartID": "43711b326702d107583a0a7ba410aef699c6f9de",
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e487095872b0130d6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11936
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709587ae38c2f1",
+		"isPrimary": true,
+		"legacyChartID": "76326ba820dec9326fdbcb2edad08a2fc18bf7c8",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e487095872b0130d6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11936
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095871fc68248",
+		"isPrimary": true,
+		"legacyChartID": "add3c3e5a2d38d75c724fd83af55a9ea405a283d",
+		"level": "12",
+		"levelNum": 12.4,
+		"songID": "S19e487095872b0130d6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11936
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709587b6f229b8",
+		"isPrimary": true,
+		"legacyChartID": "5d0ad52b0069d3ace1cc9ce69f8329436518aa42",
+		"level": "13+",
+		"levelNum": 13.8,
+		"songID": "S19e487095872b0130d6",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11935
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958721423003",
+		"isPrimary": true,
+		"legacyChartID": "b7c689612f939a5abd8152a3129045cea35e7a6b",
+		"level": "8+",
+		"levelNum": 8.8,
+		"songID": "S19e48709587b2861c34",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11935
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958762de8ae9",
+		"isPrimary": true,
+		"legacyChartID": "dfa0623fe51fb876ea65915c22dba8596612e144",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e48709587b2861c34",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11935
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958758b5aa4f",
+		"isPrimary": true,
+		"legacyChartID": "9455d2611e4eb93d94f6d248c39c429d50c190f8",
+		"level": "12+",
+		"levelNum": 12.7,
+		"songID": "S19e48709587b2861c34",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11935
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709587ca114984",
+		"isPrimary": true,
+		"legacyChartID": "da2a3853ade48ffb603006b93988639bafd085ea",
+		"level": "13+",
+		"levelNum": 13.9,
+		"songID": "S19e48709587b2861c34",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11937
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709587247f3075",
+		"isPrimary": true,
+		"legacyChartID": "a85d374e0b0d68a7d582d0cff6e288b180337590",
+		"level": "6",
+		"levelNum": 6.2,
+		"songID": "S19e48709587e249c09f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11937
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e48709587305dce6b",
+		"isPrimary": true,
+		"legacyChartID": "a6497f0f132b014de2dc743b52d2a165b8cb4358",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19e48709587e249c09f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11937
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e487095872996c821",
+		"isPrimary": true,
+		"legacyChartID": "8f4d55223fa15d4c6da8bc6c0c9b13e33a9e3735",
+		"level": "9+",
+		"levelNum": 9.8,
+		"songID": "S19e48709587e249c09f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11937
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709587d5b15669",
+		"isPrimary": true,
+		"legacyChartID": "9cf0ffe321c023dd7a103f3d04c9fe78dfc8e380",
+		"level": "13",
+		"levelNum": 13.1,
+		"songID": "S19e48709587e249c09f",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11938
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709588c3b48d8b",
+		"isPrimary": true,
+		"legacyChartID": "a4c9da5fd02caca87e9dd53b67fe62e10939bb63",
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e4870958847e035b4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11938
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958818205086",
+		"isPrimary": true,
+		"legacyChartID": "dbb3b9bc104b1a06dd00ef7a3b1bce92f2fa6b81",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e4870958847e035b4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11938
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709588168abde4",
+		"isPrimary": true,
+		"legacyChartID": "54967a2e3f4d3a9f271813fb1c9e5bb52424c3ee",
+		"level": "12",
+		"levelNum": 12.4,
+		"songID": "S19e4870958847e035b4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11938
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709588659d7ae2",
+		"isPrimary": true,
+		"legacyChartID": "3269c1a8ed19157d2960c3dd0b4f60d04514bd1f",
+		"level": "14",
+		"levelNum": 14.1,
+		"songID": "S19e4870958847e035b4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11890
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e48709589970f90bd",
+		"isPrimary": true,
+		"legacyChartID": "19a139b2fcc06bb4eaede0acf97a08245e918ad2",
+		"level": "7+",
+		"levelNum": 7.8,
+		"songID": "S19e487095899995f9eb",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11890
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958918eeb6eb",
+		"isPrimary": true,
+		"legacyChartID": "fa82492bf7bcc70e8a403bc3f1faacdde0bd158e",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e487095899995f9eb",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11890
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e48709589cdceb143",
+		"isPrimary": true,
+		"legacyChartID": "0cdf660956b9c7b9158ac9c3f4c40ca5795d61a8",
+		"level": "10+",
+		"levelNum": 10.6,
+		"songID": "S19e487095899995f9eb",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11890
+		},
+		"difficulty": "DX Master",
+		"id": "C19e48709589000e57f5",
+		"isPrimary": true,
+		"legacyChartID": "d312de76919b292c1ecf7aaea891a019df174523",
+		"level": "13",
+		"levelNum": 13.5,
+		"songID": "S19e487095899995f9eb",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11891
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958a212ceb7b",
+		"isPrimary": true,
+		"legacyChartID": "8b24f57dd07430fdf746cfc643fce71328f5ee6a",
+		"level": "7+",
+		"levelNum": 7.7,
+		"songID": "S19e4870958a2c729236",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11891
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958ad7e11ee7",
+		"isPrimary": true,
+		"legacyChartID": "46d1849dcbdb7b6d760f09afaf17e242aada5295",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19e4870958a2c729236",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11891
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958a2b0d6263",
+		"isPrimary": true,
+		"legacyChartID": "8b491819e44624bd479be6c1d433cfc950920acc",
+		"level": "12",
+		"levelNum": 12.2,
+		"songID": "S19e4870958a2c729236",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11891
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958a363dd359",
+		"isPrimary": true,
+		"legacyChartID": "42ffebe0734bd5d0f2377df2f0aa4e5b319b7fba",
+		"level": "13+",
+		"levelNum": 13.9,
+		"songID": "S19e4870958a2c729236",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11892
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958afc313139",
+		"isPrimary": true,
+		"legacyChartID": "19a52738764c10f6142bd0d952cbc5777a57e3cb",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19e4870958a842a20a2",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11892
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958ae3945630",
+		"isPrimary": true,
+		"legacyChartID": "fff265d822f16f23359def257d4c65636cf0c473",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e4870958a842a20a2",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11892
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958a065730bb",
+		"isPrimary": true,
+		"legacyChartID": "cb5863ea3c59bfb6cdb0c847a425469bdfcc089a",
+		"level": "11+",
+		"levelNum": 11.7,
+		"songID": "S19e4870958a842a20a2",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11892
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958a38d233c5",
+		"isPrimary": true,
+		"legacyChartID": "d63a38d63afc10f36f83be1fdfebd0d6fdc5b087",
+		"level": "14",
+		"levelNum": 14.1,
+		"songID": "S19e4870958a842a20a2",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11893
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958a3e9770ea",
+		"isPrimary": true,
+		"legacyChartID": "5c59c58c3802b0b2df1e7b6304a9be3b3798faf4",
+		"level": "8",
+		"levelNum": 8.2,
+		"songID": "S19e4870958a988bc132",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11893
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958a10dd3ae3",
+		"isPrimary": true,
+		"legacyChartID": "648b4abf076695825f70f2a4c23537c7e5cf29a2",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e4870958a988bc132",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11893
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958ad14167e9",
+		"isPrimary": true,
+		"legacyChartID": "780bb33d1f34a337e749e19e40c74b36c452898a",
+		"level": "12",
+		"levelNum": 12.5,
+		"songID": "S19e4870958a988bc132",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11893
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958ab144bed5",
+		"isPrimary": true,
+		"legacyChartID": "41855120e3b06859b93c727f0727529b6e8b88ad",
+		"level": "14",
+		"levelNum": 14.4,
+		"songID": "S19e4870958a988bc132",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11939
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958b5ce8dc25",
+		"isPrimary": true,
+		"legacyChartID": "9a5e549064740222c446e6519b90a5747309f199",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19e4870958b057fc422",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11939
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958b5ce3ab92",
+		"isPrimary": true,
+		"legacyChartID": "83eb13a9ea4ee86175c08c3e8406a3b62a18e7ea",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e4870958b057fc422",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11939
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958beacf99d2",
+		"isPrimary": true,
+		"legacyChartID": "44cdcc1fc3803eb71a760be89a766653300d4ade",
+		"level": "10+",
+		"levelNum": 10.8,
+		"songID": "S19e4870958b057fc422",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11939
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958bfaeada9a",
+		"isPrimary": true,
+		"legacyChartID": "9360c966381241cda54b9272bf9ebe435ceaf07d",
+		"level": "13",
+		"levelNum": 13.2,
+		"songID": "S19e4870958b057fc422",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11940
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958b80cd04c3",
+		"isPrimary": true,
+		"legacyChartID": "097edbccc56c1829311084deea2edf3170cec9db",
+		"level": "7",
+		"levelNum": 7.5,
+		"songID": "S19e4870958baad9527b",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11940
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958b2019857f",
+		"isPrimary": true,
+		"legacyChartID": "fd1ef75991dabdf41e56c7bd36b8d30013f50005",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19e4870958baad9527b",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11940
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958b2424b495",
+		"isPrimary": true,
+		"legacyChartID": "d7baaea4d6db3ee2a268f64d4f6f8cbc04448746",
+		"level": "10",
+		"levelNum": 10.4,
+		"songID": "S19e4870958baad9527b",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11940
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958b98323cc8",
+		"isPrimary": true,
+		"legacyChartID": "fe53b45cbfa8c39ca5f7d4e1ff363136e81dbbd4",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19e4870958baad9527b",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11941
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958c6070cac6",
+		"isPrimary": true,
+		"legacyChartID": "3ab37749969ca251dfc84acde5102a970ee3ec10",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e4870958c92b11ca4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11941
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958c5f4f15f3",
+		"isPrimary": true,
+		"legacyChartID": "a0bd2a6dff8f051caa47249c91f2ca857b79167f",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19e4870958c92b11ca4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11941
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958cdecf423a",
+		"isPrimary": true,
+		"legacyChartID": "434085ad048fa3e908ccc18ef2913a359eb2356d",
+		"level": "9+",
+		"levelNum": 9.7,
+		"songID": "S19e4870958c92b11ca4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11941
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958cf215b4f1",
+		"isPrimary": true,
+		"legacyChartID": "0470d9d014173300cffe26261d699f2aa16f4e70",
+		"level": "12+",
+		"levelNum": 12.9,
+		"songID": "S19e4870958c92b11ca4",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11942
+		},
+		"difficulty": "DX Advanced",
+		"id": "C19e4870958cdfcc662a",
+		"isPrimary": true,
+		"legacyChartID": "be683c570527b21400bfc57405dc7c808e7cd0dd",
+		"level": "8",
+		"levelNum": 8.5,
+		"songID": "S19e4870958c9f6f6902",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11942
+		},
+		"difficulty": "DX Basic",
+		"id": "C19e4870958cf941f80f",
+		"isPrimary": true,
+		"legacyChartID": "dfd717f9581544335172ea56945675cb7614f0aa",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e4870958c9f6f6902",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11942
+		},
+		"difficulty": "DX Expert",
+		"id": "C19e4870958c7e9448bd",
+		"isPrimary": true,
+		"legacyChartID": "f3505efcd45922cb1af852ea41a2c6f48355c8aa",
+		"level": "12+",
+		"levelNum": 12.6,
+		"songID": "S19e4870958c9f6f6902",
+		"versions": ["circle"]
+	},
+	{
+		"data": {
+			"displayVersion": "maimaiでらっくす CiRCLE",
+			"inGameID": 11942
+		},
+		"difficulty": "DX Master",
+		"id": "C19e4870958cc82a1c8d",
+		"isPrimary": true,
+		"legacyChartID": "5bca491dada228fe23495de3ca913a6a650ab3a7",
+		"level": "14",
+		"levelNum": 14.5,
+		"songID": "S19e4870958c9f6f6902",
+		"versions": ["circle"]
 	}
 ]

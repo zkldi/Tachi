@@ -48,7 +48,7 @@ export default function UGPTRatingsTable({ ugs }: { ugs: UserGameStats }) {
 						<td>
 							<QuickTooltip
 								tooltipContent={
-									<div>
+									<div style={{ whiteSpace: "pre-line" }}>
 										{gameConfig.profileRatingAlgs[k].description}
 										{(gameConfig.profileRatingAlgs[k].associatedScoreAlgs ?? [])
 											.length > 0 && (

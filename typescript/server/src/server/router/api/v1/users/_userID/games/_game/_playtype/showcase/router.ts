@@ -8,7 +8,7 @@ import { success } from "#lib/router/typed-router";
 import { EvaluateShowcaseStat } from "#lib/showcase/evaluator";
 import { GetRelatedStatDocuments } from "#lib/showcase/get-related";
 import { EvaluateUsersStatsShowcase } from "#lib/showcase/get-stats";
-import { API_V1_ROUTER } from "#server/router/api/v1/router";
+import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import { GetUserWithIDGuaranteed, ResolveUser } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import {

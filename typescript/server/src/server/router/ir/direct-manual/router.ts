@@ -23,40 +23,39 @@ router.post(
 		const userIntent = req.header("X-User-Intent")?.toLowerCase() === "true";
 		const inferTimestamp = req.header("X-Infer-Score-TimeAchieved")?.toLowerCase() === "true";
 
-		if (ServerConfig.USE_EXTERNAL_SCORE_IMPORT_WORKER) {
-			const importID = Random20Hex();
-
-			const job: ScoreImportJobData<"ir/direct-manual"> = {
-				importID,
-				userID: req[SYMBOL_TACHI_API_AUTH].userID!,
+		if (ServerConfig.INLINE_SCORE_IMPORT) {
+			// Test-only inline path: run synchronously so tests get a real response body.
+			const importResponse = await ExpressWrappedScoreImportMain<"ir/direct-manual">(
+				req[SYMBOL_TACHI_API_AUTH].userID!,
 				userIntent,
-				importType: "ir/direct-manual",
-				parserArguments: [req.safeBody, inferTimestamp],
-			};
+				"ir/direct-manual",
+				[req.safeBody, inferTimestamp],
+			);
 
-			// Fire the score import, but make no guarantees about its state.
-			void EnqueueScoreImportJob(job);
-
-			return res.status(202).json({
-				success: true,
-				description:
-					"Import loaded into queue. You can poll the provided URL for information on when its complete.",
-				body: {
-					url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
-					importID,
-				},
-			});
+			return res.status(importResponse.statusCode).json(importResponse.body);
 		}
 
-		// Fire the score import and wait for it to finish!
-		const importResponse = await ExpressWrappedScoreImportMain<"ir/direct-manual">(
-			req[SYMBOL_TACHI_API_AUTH].userID!,
-			userIntent,
-			"ir/direct-manual",
-			[req.safeBody, inferTimestamp],
-		);
+		const importID = Random20Hex();
 
-		return res.status(importResponse.statusCode).json(importResponse.body);
+		const job: ScoreImportJobData<"ir/direct-manual"> = {
+			importID,
+			userID: req[SYMBOL_TACHI_API_AUTH].userID!,
+			userIntent,
+			importType: "ir/direct-manual",
+			parserArguments: [req.safeBody, inferTimestamp],
+		};
+
+		void EnqueueScoreImportJob(job);
+
+		return res.status(202).json({
+			success: true,
+			description:
+				"Import loaded into queue. You can poll the provided URL for information on when its complete.",
+			body: {
+				url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
+				importID,
+			},
+		});
 	},
 );
 

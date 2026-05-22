@@ -73,8 +73,6 @@ router.get("/scores", async (req, res) => {
 				chart.data.hashSHA256,
 				score.userID === requestingUserID ? "" : username,
 				chart.data.notecount,
-
-				// Playcount is always 0 at the moment due to performance concerns.
 				0,
 			),
 		);

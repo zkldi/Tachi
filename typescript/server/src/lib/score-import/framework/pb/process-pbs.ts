@@ -9,6 +9,9 @@ import { upsertPbFromMongoDoc } from "./upsert-pb-pg";
 
 /**
  * Process, recalculate and update a users PBs for this set of chartIDs.
+ *
+ * For charts where the user has no remaining scores, any stale `pb` row (and its
+ * `pb_composed_from` entries) is deleted so it does not linger after a revert.
  */
 export async function ProcessPBs(
 	game: V3Game,
@@ -20,24 +23,43 @@ export async function ProcessPBs(
 		return;
 	}
 
-	const promises = [];
-
-	for (const chartID of chartIDs) {
-		promises.push(
-			GetChartForIDGuaranteed(chartID).then((chart) => CreatePBDoc(game, userID, chart, log)),
-		);
-	}
+	const chartIDsArray = [...chartIDs];
+	const promises = chartIDsArray.map((chartID) =>
+		GetChartForIDGuaranteed(chartID).then((chart) => CreatePBDoc(game, userID, chart, log)),
+	);
 
 	const pbDocsReturn = await Promise.all(promises);
 
 	const pbDocs: Array<PBScoreDocumentNoRank> = [];
+	const emptyChartIDs: Array<string> = [];
 
-	for (const doc of pbDocsReturn) {
+	for (let i = 0; i < pbDocsReturn.length; i++) {
+		const doc = pbDocsReturn[i];
+
 		if (!doc) {
+			// No remaining scores on this chart — the PB row (if any) is stale.
+			emptyChartIDs.push(chartIDsArray[i]!);
 			continue;
 		}
 
 		pbDocs.push(doc);
+	}
+
+	// Delete stale PB rows for charts where the user has no remaining scores.
+	// pb_composed_from has no ON DELETE CASCADE on the pb_id FK, so clean it up first.
+	if (emptyChartIDs.length > 0) {
+		const stalePbRows = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userID)
+			.where("pb.chart_id", "in", emptyChartIDs)
+			.where("pb.lens", "is", null)
+			.execute();
+
+		if (stalePbRows.length > 0) {
+			const stalePbIds = stalePbRows.map((r) => r.row_id);
+			await DB.deleteFrom("pb_composed_from").where("pb_id", "in", stalePbIds).execute();
+			await DB.deleteFrom("pb").where("pb.row_id", "in", stalePbIds).execute();
+		}
 	}
 
 	if (pbDocs.length === 0) {

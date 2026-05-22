@@ -5,7 +5,7 @@ import { SearchGamesSongsCharts } from "#lib/search/song-charts";
 import { GetAllUserRivals, GetUserPlayedGames } from "#utils/user";
 import { type integer, type UserDocument, type V3Game } from "tachi-common";
 
-import { API_V1_ROUTER } from "../router";
+import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Performs a generic "search" across Tachi.

@@ -1,17 +1,31 @@
-# Tachi-Docs
+# Tachi Docs
 
-This is the documentation for Tachi.
+Documentation for Tachi, built with [mdbook](https://rust-lang.github.io/mdBook/).
 
-Our docs are hosted under [https://docs.tachi.ac](https://docs.tachi.ac)
+Hosted at [https://docs.tachi.ac](https://docs.tachi.ac).
 
-# Setup
+## Setup
 
-If you're in a horribly hellish python environment like me (Sorry Sera, you know its true) make sure you use `pip3`
+Install mdbook via cargo:
 
-- `pip install mkdocs`
-- `pip install mkdocs-material`
-- `mkdocs serve`
+```sh
+cargo install mdbook
+```
 
-# Contributing
+Or use the Justfile recipe:
 
-Fork the repository and PR your changes to `main`.
+```sh
+just docs-install
+```
+
+## Development
+
+Serve locally with live-reload on http://localhost:3001:
+
+```sh
+just docs-serve
+```
+
+## Contributing
+
+Fork the repository and PR your changes to `main`. Source files live in `docs/src/`.

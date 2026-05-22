@@ -1,5 +1,3 @@
-import type { FilterQuery } from "mongodb";
-
 import type {
 	AnyClasses,
 	ChartDocumentData,
@@ -63,7 +61,7 @@ export interface GoalSingleCriteria<TGame extends V3Game = V3Game> extends GoalC
 
 /**
  * Criteria for a score to match this criteria - this is a "count" mode, which means that
- * atleast N scores have to match this criteria. This is for things like folders.
+ * at least N scores have to match this criteria. This is for things like folders.
  */
 export interface GoalCountCriteria<TGame extends V3Game = V3Game> extends GoalCriteria<TGame> {
 	mode: "absolute" | "proportion";
@@ -397,22 +395,7 @@ export interface BaseFolderDocument {
 	searchTerms: Array<string>;
 }
 
-export interface FolderSongsDocument extends BaseFolderDocument {
-	type: "songs";
-	data: FilterQuery<SongDocument>;
-}
-
-export interface FolderChartsDocument extends BaseFolderDocument {
-	type: "charts";
-	data: FilterQuery<ChartDocument>;
-}
-
-export interface FolderStaticDocument extends BaseFolderDocument {
-	type: "static";
-	data: Array<string>;
-}
-
-export type FolderDocument = FolderChartsDocument | FolderSongsDocument | FolderStaticDocument;
+export type FolderDocument = BaseFolderDocument;
 
 export interface FolderChartLookup {
 	chartID: string;
@@ -487,7 +470,7 @@ export interface PBReference {
 }
 
 export interface PBScoreDocument<TGame extends V3Game = V3Game> {
-	// guaranteed to atleast have one element.
+	// guaranteed to at least have one element.
 	composedFrom: [PBReference, ...Array<PBReference>];
 	rankingData: {
 		outOf: integer;

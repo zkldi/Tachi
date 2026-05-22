@@ -62,6 +62,7 @@
 		"react-router-dom": "catalog:",
 		"react-select": "catalog:",
 		"rg-stats": "catalog:",
+		"sql.js": "catalog:",
 		"sync-fetch": "catalog:",
 		"tachi-common": "workspace:*",
 		"vite-plugin-html": "catalog:"
@@ -74,11 +75,12 @@
 		"@types/react-dom": "catalog:",
 		"@types/react-router-bootstrap": "catalog:",
 		"@types/react-router-dom": "catalog:",
+		"@types/sql.js": "catalog:",
+		"@typescript/native-preview": "catalog:",
 		"@vitejs/plugin-react": "catalog:",
 		"bootstrap-scss": "catalog:",
 		"eslint-config-tachi": "workspace:*",
 		"sass": "catalog:",
-		"@typescript/native-preview": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:"
 	},

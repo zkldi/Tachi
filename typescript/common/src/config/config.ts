@@ -97,10 +97,10 @@ export const GAME_CONFIGS = {
 	"iidx-dp": GAME_IIDX_DP_CONF,
 	museca: GAME_MUSECA_CONF,
 	sdvx: GAME_SDVX_CONF,
-	"bms-14k": GAME_BMS_14K_CONF,
 	"bms-7k": GAME_BMS_7K_CONF,
-	"gitadora-dora": GAME_GITADORA_DORA_CONF,
+	"bms-14k": GAME_BMS_14K_CONF,
 	"gitadora-gita": GAME_GITADORA_GITA_CONF,
+	"gitadora-dora": GAME_GITADORA_DORA_CONF,
 	chunithm: GAME_CHUNITHM_CONF,
 	wacca: GAME_WACCA_CONF,
 	jubeat: GAME_JUBEAT_SINGLE_CONF,
@@ -191,7 +191,12 @@ export function LEGACY_GameToGPTString(game: V3Game): LEGACY_GPTString {
 	return mapping[game];
 }
 
-export const ALL_GAMES = Object.keys(GAME_CONFIGS) as Array<V3Game>;
+export const allSupportedGameGroups = Object.keys(GAME_GROUP_CONFIGS) as Array<GameGroup>;
+
+/** V3 games in game-group order (matches each group's `games` array, e.g. BMS 7K before 14K). */
+export const ALL_GAMES = allSupportedGameGroups.flatMap(
+	(group) => GetGameGroupConfig(group).games,
+) as Array<V3Game>;
 
 export function GameToGameGroup(game: V3Game): GameGroup {
 	const mapping: Record<V3Game, GameGroup> = {
@@ -266,7 +271,6 @@ export function GetSpecificGameConfig<TGame extends V3Game>(game: TGame) {
 	return GAME_CONFIGS[game] as unknown as SpecificGameConfig<TGame>;
 }
 
-export const allSupportedGameGroups = Object.keys(GAME_GROUP_CONFIGS) as Array<GameGroup>;
 export const allGPTStrings = Object.keys(GAME_CONFIGS) as Array<LEGACY_GPTString>;
 
 export function GetScoreMetrics(

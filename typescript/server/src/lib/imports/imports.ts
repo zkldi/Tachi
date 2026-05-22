@@ -23,11 +23,11 @@ interface OngoingImportError {
 export async function RevertImport(importDoc: ImportDocument): Promise<OngoingImportError | null> {
 	log.info({ importDoc }, `Received revert-import request for import '${importDoc.importID}'`);
 
-	const scores = await GetImportScores(importDoc);
+	// Acquire the lock before loading scores so the snapshot is taken while the lock is held,
+	// preventing a race between a concurrent delete and the PB/session recalculation that follows.
+	const alreadyLocked = await CheckAndSetOngoingImportLock(importDoc.userID);
 
-	const hasNoOngoingImport = await CheckAndSetOngoingImportLock(importDoc.userID);
-
-	if (hasNoOngoingImport) {
+	if (alreadyLocked) {
 		log.info(`User ${importDoc.userID} tried to revert an import while they had one ongoing.`);
 
 		return {
@@ -35,12 +35,23 @@ export async function RevertImport(importDoc: ImportDocument): Promise<OngoingIm
 		};
 	}
 
+	const scores = await GetImportScores(importDoc);
+
 	try {
 		await DeleteMultipleScores(scores);
 
 		log.info(
 			{ importDoc },
 			`Deleted ${scores.length} scores as part of reverting import '${importDoc.importID}'.`,
+		);
+
+		const { numDeletedRows: orphansDeleted } = await DB.deleteFrom("orphan_score")
+			.where("orphan_score.import_id", "=", importDoc.importID)
+			.executeTakeFirstOrThrow();
+
+		log.info(
+			{ importDoc },
+			`Deleted ${orphansDeleted} orphan scores as part of reverting import '${importDoc.importID}'.`,
 		);
 
 		try {

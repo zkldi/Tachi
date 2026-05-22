@@ -157,7 +157,7 @@ export const RequirePermissions =
 
 			return res.status(500).json({
 				success: false,
-				description: "An internal error has occured.",
+				description: "An internal error has occurred.",
 			});
 		}
 
@@ -204,7 +204,7 @@ const CreateRequireNotGuest =
 			log.error(`RequirePermissions middleware was hit without any TachiAPIData?`);
 			return res.status(500).json({
 				success: false,
-				description: "An internal error has occured.",
+				description: "An internal error has occurred.",
 			});
 		}
 

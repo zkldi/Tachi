@@ -2,9 +2,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { FindChartWithPTDFVersion } from "../../../finders.js";
-import { ApplyMutations } from "../../../mutations.js";
-import { ReadCollection } from "../../../util.js";
+import { FindChartWithDFVersion } from "../../../finders.js";
+import { ReadCollection, WriteCollection } from "../../../util.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -27,11 +26,30 @@ const MANUAL_TITLE_MAP = {
 	"ベースラインやってる？w": "Can I Friend You on Bassbook? Lol",
 	"光速神授説- Divine Light of Myriad -": "Divine Light of Myriad",
 	"妖艶魔女-trappola bewitching-": "trappola bewitching",
-
 	"緋色月下、狂咲ノ絶(nayuta 2017 ver.)": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
+	// They use some fucked up delta character on wikiwiki
+	"LIVHT MY W​Δ​Y": "LIVHT MY WΔY",
+	"Rain of Conflictin a Radiant Abyss": "Rain of Conflict in a Radiant Abyss",
+	"MEGALOVANIA(Camellia Remix)": "MEGALOVANIA (Camellia Remix)",
+	"DA'AT-The First Seeker of Souls-": "DA'AT -The First Seeker of Souls-",
+	"Signal feat. Such": "Signal",
+	"キャラメルポップコーンたべたいよ～": "キャラメルポップコーンたべたいよ〜",
+	"患部で止まってすぐ溶ける　～ 狂気の優曇華院": "患部で止まってすぐ溶ける　〜 狂気の優曇華院",
+	"患部で止まってすぐ溶ける～ 狂気の優曇華院": "患部で止まってすぐ溶ける　〜 狂気の優曇華院",
 };
 // Multiple different songs with the same title, requiring artist search.
 const NEEDS_ARTIST_SEARCH = ["Quon", "Genesis"];
+
+const AF_FTR_BLACKLIST = [
+	"Singularity VVVIP",
+	"Ignotus Afterburn",
+	"overdead.",
+	"Red and Blue and Green",
+	"0xe0e1ccull",
+	"HIVEMIND INTERLINKED",
+	"Live Faster Die Younger",
+	"Mistempered Malignance",
+];
 
 const songs = ReadCollection("songs-arcaea.json");
 
@@ -50,9 +68,12 @@ function parseScrapedData(file, mutationCallback) {
 	const charts = ReadCollection("charts-arcaea.json");
 
 	const ccData = JSON.parse(fs.readFileSync(path.join(__dirname, file), "utf-8"));
-	const mutations = [];
 
 	for (const entry of ccData) {
+		if (AF_FTR_BLACKLIST.includes(entry.title) && entry.difficulty === "Future") {
+			continue;
+		}
+
 		const song = findSong(songs, entry);
 
 		if (!song) {
@@ -60,36 +81,26 @@ function parseScrapedData(file, mutationCallback) {
 			continue;
 		}
 
-		const chart = FindChartWithPTDFVersion(
-			charts,
-			song.id,
-			"Touch",
-			entry.difficulty,
-			"mobile",
-		);
+		const chart = FindChartWithDFVersion(charts, song.id, entry.difficulty, "mobile");
 
 		if (!chart) {
 			console.warn(`${song.title} [${entry.difficulty}] - Couldn't find chart?`);
 			continue;
 		}
 
-		mutations.push(mutationCallback(chart, entry));
+		mutationCallback(chart, entry);
 	}
 
 	console.info(`Finished parsing ${file}`);
-	ApplyMutations("charts-arcaea.json", mutations);
+	WriteCollection("charts-arcaea.json", charts);
 }
 
 function chartConstantMutationCallback(chart, entry) {
-	return {
-		data: {
-			level: entry.level,
-			levelNum: entry.levelNum,
-		},
-		match: {
-			chartID: chart.chartID,
-		},
-	};
+	if (chart.levelNum !== entry.levelNum) {
+		console.info(`${entry.title} ${entry.difficulty} ${chart.levelNum} -> ${entry.levelNum}`);
+	}
+	chart.level = entry.level;
+	chart.levelNum = entry.levelNum;
 }
 
 if (fs.existsSync(path.join(__dirname, "lower.json"))) {
@@ -101,14 +112,19 @@ if (fs.existsSync(path.join(__dirname, "upper.json"))) {
 }
 
 if (fs.existsSync(path.join(__dirname, "notecount.json"))) {
-	parseScrapedData("notecount.json", (chart, entry) => ({
-		data: {
-			data: {
-				notecount: entry.notecount,
-			},
-		},
-		match: {
-			chartID: chart.chartID,
-		},
-	}));
+	parseScrapedData("notecount.json", (chart, entry) => {
+		if (
+			chart.data.notecount !== undefined &&
+			chart.data.notecount > 0 &&
+			chart.data.notecount !== entry.notecount
+		) {
+			console.warn(
+				`${entry.title} ${entry.difficulty} ${chart.notecount} -> ${entry.notecount}`,
+			);
+		}
+		chart.data = {
+			...chart.data,
+			notecount: entry.notecount,
+		};
+	});
 }

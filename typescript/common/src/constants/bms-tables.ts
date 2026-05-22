@@ -188,8 +188,10 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		name: "delayjoy",
 		asciiPrefix: "delayjoy",
 
-		// these trailing slashes are important. keep them.
-		url: "https://lets-go-time-hell.github.io/Delay-joy-table/",
+		// The upstream table ships with a bare-space symbol rather than "dl".
+		// We proxy it through our own custom-tables endpoint which normalises the
+		// symbol and level names, so point the sync job at our proxy instead.
+		url: "https://boku.tachi.ac/api/v1/games/bms-7k/custom-tables/delayjoy-fixed",
 		game: "bms-7k",
 		prefix: "dl",
 		notDefault: true,
@@ -199,12 +201,16 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 	{
 		name: "Arm Shougakkou",
 		asciiPrefix: "armShougakkou",
-		url: "https://lets-go-time-hell.github.io/Arm-Shougakkou-table/",
+
+		// The upstream table ships with a bare-space symbol rather than "Ude".
+		// We proxy it through our own custom-tables endpoint which normalises the
+		// symbol and level names, so point the sync job at our proxy instead.
+		url: "https://boku.tachi.ac/api/v1/games/bms-7k/custom-tables/arm-shougakkou-fixed",
 		game: "bms-7k",
 		prefix: "Ude",
 		notDefault: true,
 		description:
-			"The Arm-Shougakkou table is A gachi and gachi-ish practice table, Ude0 is approximately equivalent to an sl0",
+			"The Arm-Shougakkou table is a gachi and gachi-ish practice table. Ude0 is approximately equivalent to an sl0",
 	},
 	{
 		name: "Exoplanet",

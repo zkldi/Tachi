@@ -13,9 +13,10 @@ import { bgc } from "./_util";
 const ARCAEA_DIFFICULTY_COLORS: GPTClientImplementation<
 	GamesForGroup["arcaea"]
 >["difficultyColours"] = {
-	Past: COLOUR_SET.paleBlue,
-	Present: COLOUR_SET.paleGreen,
+	Past: COLOUR_SET.blue,
+	Present: COLOUR_SET.green,
 	Future: COLOUR_SET.purple,
+	Eternal: COLOUR_SET.paleBlue,
 	Beyond: COLOUR_SET.vibrantRed,
 };
 
@@ -62,6 +63,7 @@ const ARCAEA_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["classColo
 		PHASE_9: bgc("indigo", "var(--bs-light)"),
 		PHASE_10: bgc("firebrick", "var(--bs-light)"),
 		PHASE_11: bgc("darkred", "var(--bs-light)"),
+		PHASE_12: bgc("blueviolet", "var(--bs-light)"),
 	},
 };
 

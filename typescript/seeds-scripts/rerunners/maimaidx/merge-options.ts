@@ -1,14 +1,17 @@
-import { log } from "#log";
+import { log } from "../../log";
 import { execFileSync } from "child_process";
 import { Command } from "commander";
+import crypto from "crypto";
 import { XMLParser } from "fast-xml-parser";
 import { existsSync, readdirSync, readFileSync, statSync } from "fs";
 import path from "path";
 import {
-	type ChartDocument,
+	GetGameConfig,
+	type SEEDS_ChartDocument,
 	type Difficulties,
-	LEGACY_GetGamePTConfig,
-	type SongDocument,
+	type SEEDS_SongDocument,
+	integer,
+	CreateSongID,
 } from "tachi-common";
 
 import {
@@ -47,7 +50,7 @@ const VERSION_DISPLAY_NAMES = [
 	"maimaiでらっくす CiRCLE",
 ];
 const DIFFICULTIES = ["Basic", "Advanced", "Expert", "Master", "Re:Master"];
-const GENRE_MAP = {
+const GENRE_MAP: Record<integer, string> = {
 	101: "POPS＆アニメ",
 	102: "niconico＆ボーカロイド",
 	103: "東方Project",
@@ -126,7 +129,7 @@ if (!options.vgmsBinary) {
 	}
 }
 
-const versions = Object.keys(LEGACY_GetGamePTConfig("maimaidx", "Single").versions);
+const versions = Object.keys(GetGameConfig("maimaidx").versions);
 
 if (versions.indexOf(options.version) === -1) {
 	throw new Error(
@@ -138,19 +141,20 @@ if (versions.indexOf(options.version) === -1) {
 
 const isLatestVersion =
 	versions.indexOf(options.version.replace(/(-intl|-omni)$/u, "")) === versions.length - 1;
-const existingSongs: Array<SongDocument<"maimaidx">> = ReadCollection("songs-maimaidx.json");
-const existingCharts: Array<ChartDocument<"maimaidx">> = ReadCollection("charts-maimaidx.json");
+const existingSongs: Array<SEEDS_SongDocument<"maimaidx">> = ReadCollection("songs-maimaidx.json");
+const existingCharts: Array<SEEDS_ChartDocument<"maimaidx">> =
+	ReadCollection("charts-maimaidx.json");
 const songMap = new Map(existingSongs.map((s) => [s.id, s]));
-const chartMap = new Map<string, ChartDocument<"maimaidx">>();
-const songTitleArtistMap = new Map<string, number>();
+const chartMap = new Map<string, SEEDS_ChartDocument<"maimaidx">>();
+const songTitleArtistMap = new Map<string, string>();
 const durationMap = new Map<string, number>();
 
 for (const chart of existingCharts) {
-	const song = songMap.get(chart.song.id);
+	const song = songMap.get(chart.songID);
 
 	if (song === undefined) {
 		log.error(
-			`CONSISTENCY ERROR: Chart ID ${chart.chartID} does not belong to any songs! (songID was ${chart.song.id})`,
+			`CONSISTENCY ERROR: Chart ID ${chart.id} does not belong to any songs! (songID was ${chart.songID})`,
 		);
 		process.exit(1);
 	}
@@ -231,8 +235,8 @@ const parser = new XMLParser({
 	},
 });
 
-const newSongs: Array<SongDocument<"maimaidx">> = [];
-const newCharts: Array<ChartDocument<"maimaidx">> = [];
+const newSongs: Array<SEEDS_SongDocument<"maimaidx">> = [];
+const newCharts: Array<SEEDS_ChartDocument<"maimaidx">> = [];
 
 const songIDGenerator = GetFreshSongIDGenerator("maimaidx");
 
@@ -281,12 +285,20 @@ for (const optionsDir of options.input) {
 				continue;
 			}
 
-			// Manual override since the song's title is empty in the dataset and not
-			// IDEOGRAPHIC SPACE (U+3000).
-			let tachiSongID =
-				inGameID === 11422
-					? 959
-					: songTitleArtistMap.get(`${musicData.name.str}-${musicData.artistName.str}`);
+			let tachiSongID: string | undefined;
+			if (inGameID === 11422) {
+				// Manual override since the song's title is empty in the dataset and not
+				// IDEOGRAPHIC SPACE (U+3000).
+				tachiSongID = "S19d35e0d843641538f4";
+			} else if (inGameID === 11956) {
+				// Manual override because the song's title changed from Break the Speaker
+				// to Break The Speakers, breaking title matching.
+				tachiSongID = "S19e48709584f1679c4d";
+			} else {
+				tachiSongID = songTitleArtistMap.get(
+					`${musicData.name.str}-${musicData.artistName.str}`,
+				);
+			}
 
 			// Has this song been disabled in-game?
 			if (musicData.disable || Number(musicData.eventName.id) === 0) {
@@ -311,7 +323,7 @@ for (const optionsDir of options.input) {
 				continue;
 			}
 
-			const displayVersion = VERSION_DISPLAY_NAMES[musicData.AddVersion.id];
+			const displayVersion = VERSION_DISPLAY_NAMES[Number(musicData.AddVersion.id)];
 
 			if (!displayVersion) {
 				throw new Error(
@@ -319,7 +331,7 @@ for (const optionsDir of options.input) {
 				);
 			}
 
-			const genre = GENRE_MAP[musicData.genreName.id];
+			const genre = GENRE_MAP[Number(musicData.genreName.id)];
 
 			if (!genre) {
 				throw new Error(
@@ -337,16 +349,16 @@ for (const optionsDir of options.input) {
 
 			// New song?
 			if (tachiSongID === undefined) {
-				const newSongID = songIDGenerator();
+				tachiSongID = CreateSongID();
+				const newLegacySongID = songIDGenerator();
 
-				tachiSongID = newSongID;
-
-				const songDoc: SongDocument<"maimaidx"> = {
+				const songDoc: SEEDS_SongDocument<"maimaidx"> = {
 					title: musicData.name.str,
 					altTitles: [],
 					searchTerms: [],
 					artist: musicData.artistName.str,
-					id: newSongID,
+					id: tachiSongID,
+					legacySongID: newLegacySongID,
 					data: {
 						genre,
 						duration,
@@ -354,8 +366,8 @@ for (const optionsDir of options.input) {
 				};
 
 				newSongs.push(songDoc);
-				songTitleArtistMap.set(`${songDoc.title}-${songDoc.artist}`, newSongID);
-				songMap.set(newSongID, songDoc);
+				songTitleArtistMap.set(`${songDoc.title}-${songDoc.artist}`, tachiSongID);
+				songMap.set(tachiSongID, songDoc);
 
 				log.info(
 					`Added new song ${songDoc.artist} - ${songDoc.title} (inGameID ${inGameID}, tachiSongID ${tachiSongID}).`,
@@ -395,7 +407,7 @@ for (const optionsDir of options.input) {
 					difficultyName = `DX ${difficultyName}`;
 				}
 
-				let exists: ChartDocument<"maimaidx"> | undefined;
+				let exists: SEEDS_ChartDocument<"maimaidx"> | undefined;
 
 				if (inGameID === 11422) {
 					exists = chartMap.get(`-x0o0x_-${difficultyName}`);
@@ -409,7 +421,7 @@ for (const optionsDir of options.input) {
 				const levelNum = calculateLevelNum(difficulty);
 
 				if (exists) {
-					const displayName = `${musicData.artistName.str} - ${musicData.name.str} [${exists.difficulty}] (${exists.chartID})`;
+					const displayName = `${musicData.artistName.str} - ${musicData.name.str} [${exists.difficulty}] (${exists.id})`;
 
 					if (exists.data.inGameID === null) {
 						log.info(`Adding inGameID ${inGameID} for chart ${displayName}.`);
@@ -456,16 +468,15 @@ for (const optionsDir of options.input) {
 					continue;
 				}
 
-				const chartDoc: ChartDocument<"maimaidx"> = {
-					chartID: CreateChartID(),
+				const chartDoc: SEEDS_ChartDocument<"maimaidx"> = {
+					id: CreateChartID(),
+					legacyChartID: crypto.randomBytes(20).toString("hex"),
 					songID: tachiSongID!,
-					game: "maimaidx",
 					difficulty: difficultyName as Difficulties["maimaidx"],
 					isPrimary: true,
 					level,
 					levelNum,
 					versions: [options.version],
-					playtype: "Single",
 					data: {
 						displayVersion,
 						inGameID,
@@ -475,7 +486,7 @@ for (const optionsDir of options.input) {
 				newCharts.push(chartDoc);
 
 				log.info(
-					`Inserted new chart ${musicData.artistName.str} - ${musicData.name.str} [${chartDoc.difficulty}] (${chartDoc.chartID}).`,
+					`Inserted new chart ${musicData.artistName.str} - ${musicData.name.str} [${chartDoc.difficulty}] (${chartDoc.id}).`,
 				);
 			}
 		}
