@@ -87,6 +87,12 @@ function bunInstall {
 	echo "Installed dependencies."
 }
 
+function configureGitHooks {
+	echo "Configuring git hooks path..."
+	git config core.hooksPath .githooks
+	echo "Git hooks path set to .githooks."
+}
+
 function syncDatabaseWithSeeds {
 	echo "Syncing database with seeds..."
 
@@ -108,6 +114,7 @@ setupShell
 mvExampleFiles
 seedMinioCdn
 bunInstall
+configureGitHooks
 
 if [ -e _SETUP_OK ] && [ $FORCE -eq 0 ]; then
 	echo "Already bootstrapped."
