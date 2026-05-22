@@ -350,7 +350,9 @@ describe("DeleteMultipleScores", () => {
 			.where("score.id", "=", scoreIdB)
 			.executeTakeFirst();
 		expect(survivingScore, "importB score must survive").toBeDefined();
-		expect(survivingScore!.session_id, "importB score must retain session link").toBe(sessionId);
+		expect(survivingScore!.session_id, "importB score must retain session link").toBe(
+			sessionId,
+		);
 
 		// The shared session must survive because importB's score remains.
 		const sessionRow = await DB.selectFrom("session")

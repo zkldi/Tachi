@@ -457,10 +457,9 @@ describe("score import engine — stress / abuse", () => {
 		});
 
 		// We expect a per-score validation error, not a fatal parse error.
-		expect(
-			result.kind,
-			`expected "done" with per-score errors but got ${result.kind}`,
-		).toBe("done");
+		expect(result.kind, `expected "done" with per-score errors but got ${result.kind}`).toBe(
+			"done",
+		);
 		if (result.kind !== "done") {
 			return;
 		}
@@ -470,7 +469,7 @@ describe("score import engine — stress / abuse", () => {
 		// The future-dated score must surface as a per-score error.
 		expect(result.importDoc.errors).toHaveLength(1);
 		expect(result.importDoc.errors[0]?.type).toBe("InvalidDatapoint");
-		expect(result.importDoc.errors[0]?.message).toMatch(/future/i);
+		expect(result.importDoc.errors[0]?.message).toMatch(/future/iu);
 	});
 
 	it("re-importing the same orphan produces an OrphanExists error (no new orphan_score row)", async () => {
@@ -538,12 +537,10 @@ describe("score import engine — stress / abuse", () => {
 				locked_at: new Date(ninetyMinutesAgoMs).toISOString(),
 			})
 			.onConflict((oc) =>
-				oc
-					.column("user_id")
-					.doUpdateSet({
-						locked: true,
-						locked_at: new Date(ninetyMinutesAgoMs).toISOString(),
-					}),
+				oc.column("user_id").doUpdateSet({
+					locked: true,
+					locked_at: new Date(ninetyMinutesAgoMs).toISOString(),
+				}),
 			)
 			.execute();
 
@@ -555,10 +552,9 @@ describe("score import engine — stress / abuse", () => {
 			userIntent: true,
 		});
 
-		expect(
-			result.kind,
-			"a >1h-old lock must be auto-freed; the next import must proceed",
-		).toBe("done");
+		expect(result.kind, "a >1h-old lock must be auto-freed; the next import must proceed").toBe(
+			"done",
+		);
 	});
 
 	it("a backdated score that beats the current PB takes over even though it was achieved years ago", async () => {
@@ -620,9 +616,7 @@ describe("score import engine — stress / abuse", () => {
 	// ────────────────────────────────────────────────────────────────────────────
 
 	it("import → revert → re-import leaves the user in a clean, equivalent state", async () => {
-		const batch = buildBatch([
-			iidxScore({ score: 1300, timeAchieved: 1_700_000_000_000 }),
-		]);
+		const batch = buildBatch([iidxScore({ score: 1300, timeAchieved: 1_700_000_000_000 })]);
 
 		const r1 = await RunScoreImportOnce({
 			importID: "stress-revert-cycle-1",
@@ -677,10 +671,9 @@ describe("score import engine — stress / abuse", () => {
 		}
 
 		expect(r2.importDoc.scoreIDs).toHaveLength(1);
-		expect(
-			r2.importDoc.scoreIDs[0],
-			"scoreID must be deterministic across import cycles",
-		).toBe(firstScoreId);
+		expect(r2.importDoc.scoreIDs[0], "scoreID must be deterministic across import cycles").toBe(
+			firstScoreId,
+		);
 
 		const pbAfterReimport = await DB.selectFrom("pb")
 			.select("pb.row_id")
