@@ -6,7 +6,6 @@ language = "en"
 src = "src"
 
 [output.html]
-site-url = "https://docs.tachi.ac/"
 git-repository-url = "https://github.com/zkldi/Tachi"
 edit-url-template = "https://github.com/zkldi/Tachi/edit/main/docs/src/{path}"
 no-section-label = true
