@@ -6,7 +6,7 @@
 #     enough to run `bun install`, `bun run …`, `just`, `psql`, `rsync`, ssh.
 #     Published as `ghcr.io/zkldi/tachi-ci`.
 #   - `dev`:  superset of `base` with all the devcontainer QoL (fish, neovim,
-#     gh, ripgrep, fd, bat, fzf, mkdocs, minio-client, locales, sudo, the
+#     gh, ripgrep, fd, bat, fzf, mdbook, minio-client, locales, sudo, the
 #     `tachi` user, ...). Published as `ghcr.io/zkldi/tachi-dev`.
 #
 # Always use `--no-install-recommends`. Debian's recommends-by-default pulls
@@ -79,9 +79,8 @@ RUN apt-get update \
 		fish neovim sudo locales \
 		# search / files / network / parallel
 		ripgrep fd-find bat fzf parallel wget \
-		# python stack for docs work (mkdocs is run via Dockerfile.docs in CI,
-		# but devs build/preview docs locally from here)
-		python-is-python3 python3-pip mkdocs mkdocs-material \
+		# mdbook for docs work (same package used in CI)
+		mdbook \
 		# github CLI for `gh auth login`-style flows
 		gh \
 		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
