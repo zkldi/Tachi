@@ -105,6 +105,26 @@ async function insertImportRow(importId: string, userId: number) {
 		.execute();
 }
 
+async function insertOrphanScore(opts: {
+	importId: string | null;
+	orphanId: string;
+	userId: number;
+}) {
+	await DB.insertInto("orphan_score")
+		.values({
+			orphan_id: opts.orphanId,
+			user_id: opts.userId,
+			import_id: opts.importId,
+			import_type: "file/batch-manual" as never,
+			game_group: "iidx",
+			data: JSON.stringify({}),
+			context: JSON.stringify({}),
+			time_inserted: new Date().toISOString(),
+			error_message: "",
+		})
+		.execute();
+}
+
 describe("RevertImport", () => {
 	beforeEach(seedIidx511Chart);
 
@@ -382,6 +402,126 @@ describe("RevertImport", () => {
 			.where("pb_dirty.chart_id", "=", chartId)
 			.execute();
 		expect(dirty, "pb_dirty must be empty after revert").toHaveLength(0);
+	});
+
+	it("correctly reverts an import that has multiple scores on the same chart", async () => {
+		const { id: userId } = await seedUser({ username: "revert_dup_chart" });
+		const chartId = chart.chartID;
+		const importId = `revert-dup-chart-${Date.now()}`;
+		const scoreId1 = "score_revert_dup_chart_1";
+		const scoreId2 = "score_revert_dup_chart_2";
+
+		await insertImportRow(importId, userId);
+
+		await insertIidxScore({
+			userId,
+			scoreId: scoreId1,
+			chartId,
+			importId,
+			sessionId: null,
+			committed: true,
+			timeMs: 1_000,
+		});
+		await insertIidxScore({
+			userId,
+			scoreId: scoreId2,
+			chartId,
+			importId,
+			sessionId: null,
+			committed: true,
+			timeMs: 2_000,
+		});
+
+		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
+
+		const pbBefore = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbBefore, "PB must exist before revert").toBeDefined();
+
+		const importDoc = mkFakeImport({
+			importID: importId,
+			userID: userId,
+			scoreIDs: [scoreId1, scoreId2],
+		});
+
+		const err = await RevertImport(importDoc);
+		expect(err).toBeNull();
+
+		// Both scores deleted.
+		const remaining = await DB.selectFrom("score")
+			.select("score.id")
+			.where("score.id", "in", [scoreId1, scoreId2])
+			.execute();
+		expect(remaining, "all scores in the import must be deleted").toHaveLength(0);
+
+		// Import row gone.
+		const importRow = await DB.selectFrom("import")
+			.select("import.id")
+			.where("import.id", "=", importId)
+			.executeTakeFirst();
+		expect(importRow, "import row must be deleted").toBeUndefined();
+
+		// Stale PB cleaned up even though ProcessPBs is called twice for the same chart.
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbAfter, "stale PB must be deleted after revert").toBeUndefined();
+
+		// pb_composed_from entries must be gone.
+		const composedFrom = await DB.selectFrom("pb_composed_from")
+			.select("pb_composed_from.score_id")
+			.where("pb_composed_from.score_id", "in", [scoreId1, scoreId2])
+			.execute();
+		expect(composedFrom, "pb_composed_from must be empty after revert").toHaveLength(0);
+	});
+
+	it("deletes orphan_score rows that belong to the reverted import", async () => {
+		const { id: userId } = await seedUser({ username: "revert_orphans_deleted" });
+		const importId = `revert-orphan-del-${Date.now()}`;
+
+		await insertImportRow(importId, userId);
+
+		// Two orphans tied to this import, one tied to a different import, one with no import.
+		const otherImportId = `revert-orphan-other-${Date.now()}`;
+		await insertImportRow(otherImportId, userId);
+
+		await insertOrphanScore({ userId, orphanId: "orphan-del-1", importId });
+		await insertOrphanScore({ userId, orphanId: "orphan-del-2", importId });
+		await insertOrphanScore({ userId, orphanId: "orphan-del-other", importId: otherImportId });
+		await insertOrphanScore({ userId, orphanId: "orphan-del-null", importId: null });
+
+		const importDoc = mkFakeImport({ importID: importId, userID: userId, scoreIDs: [] });
+		const err = await RevertImport(importDoc);
+		expect(err).toBeNull();
+
+		// The two orphans linked to the reverted import must be gone.
+		const gone1 = await DB.selectFrom("orphan_score")
+			.select("orphan_score.orphan_id")
+			.where("orphan_score.orphan_id", "=", "orphan-del-1")
+			.executeTakeFirst();
+		const gone2 = await DB.selectFrom("orphan_score")
+			.select("orphan_score.orphan_id")
+			.where("orphan_score.orphan_id", "=", "orphan-del-2")
+			.executeTakeFirst();
+		expect(gone1, "orphan linked to reverted import must be deleted").toBeUndefined();
+		expect(gone2, "orphan linked to reverted import must be deleted").toBeUndefined();
+
+		// Orphans from a different import and null-import orphans must survive.
+		const keptOther = await DB.selectFrom("orphan_score")
+			.select("orphan_score.orphan_id")
+			.where("orphan_score.orphan_id", "=", "orphan-del-other")
+			.executeTakeFirst();
+		const keptNull = await DB.selectFrom("orphan_score")
+			.select("orphan_score.orphan_id")
+			.where("orphan_score.orphan_id", "=", "orphan-del-null")
+			.executeTakeFirst();
+		expect(keptOther, "orphan from a different import must not be deleted").toBeDefined();
+		expect(keptNull, "orphan with no import_id must not be deleted").toBeDefined();
 	});
 
 	it("cleans up pb_composed_from when reverting an import that owned the only score", async () => {

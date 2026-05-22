@@ -276,6 +276,135 @@ describe("DeleteMultipleScores", () => {
 		expect(composedScoreIds).not.toContain(deleteScoreId);
 	});
 
+	it("keeps the session alive and recalculates when only some of its scores are deleted", async () => {
+		const { id: userId } = await seedUser({ username: "del_partial_session" });
+		const chartId = chart.chartID;
+		const importIdA = `del-partial-sess-a-${Date.now()}`;
+		const importIdB = `del-partial-sess-b-${Date.now()}`;
+		const sessionId = "sess-del-partial";
+		const scoreIdA = "score_del_partial_a";
+		const scoreIdB = "score_del_partial_b";
+		const now = new Date().toISOString();
+
+		await DB.insertInto("session")
+			.values({
+				id: sessionId,
+				user_id: userId,
+				game: "iidx-sp",
+				name: "partial-revert-session",
+				description: null,
+				time_inserted: now,
+				time_started: now,
+				time_ended: now,
+				calculated_data: JSON.stringify({}),
+				highlight: false,
+			})
+			.execute();
+
+		// Two separate imports both contributed scores to the same session.
+		for (const importId of [importIdA, importIdB]) {
+			await DB.insertInto("import")
+				.values({
+					id: importId,
+					user_id: userId,
+					time_started: now,
+					time_finished: now,
+					game_group: "iidx",
+					import_type: "file/batch-manual" as never,
+					user_intent: true,
+					service: "test",
+					status: "completed",
+				})
+				.execute();
+		}
+
+		await insertCommittedIidxScore({
+			userId,
+			chartId,
+			scoreId: scoreIdA,
+			importId: importIdA,
+			sessionId,
+		});
+		await insertCommittedIidxScore({
+			userId,
+			chartId,
+			scoreId: scoreIdB,
+			importId: importIdB,
+			sessionId,
+		});
+
+		// Delete only the scores belonging to importA.
+		const toDelete = await LoadScoreDocumentsForImport(importIdA);
+		await DeleteMultipleScores(toDelete);
+
+		// importA's score must be gone.
+		const deletedScore = await DB.selectFrom("score")
+			.select("score.id")
+			.where("score.id", "=", scoreIdA)
+			.executeTakeFirst();
+		expect(deletedScore, "importA score must be deleted").toBeUndefined();
+
+		// importB's score must survive and retain its session link.
+		const survivingScore = await DB.selectFrom("score")
+			.select(["score.id", "score.session_id"])
+			.where("score.id", "=", scoreIdB)
+			.executeTakeFirst();
+		expect(survivingScore, "importB score must survive").toBeDefined();
+		expect(survivingScore!.session_id, "importB score must retain session link").toBe(sessionId);
+
+		// The shared session must survive because importB's score remains.
+		const sessionRow = await DB.selectFrom("session")
+			.select("session.id")
+			.where("session.id", "=", sessionId)
+			.executeTakeFirst();
+		expect(sessionRow, "session must survive partial revert").toBeDefined();
+	});
+
+	it("correctly handles deleting multiple scores on the same chart in a single batch", async () => {
+		const { id: userId } = await seedUser({ username: "del_dup_chart" });
+		const chartId = chart.chartID;
+		const scoreId1 = "score_del_dup_chart_1";
+		const scoreId2 = "score_del_dup_chart_2";
+
+		await insertCommittedIidxScore({ userId, chartId, scoreId: scoreId1, timeMs: 1_000 });
+		await insertCommittedIidxScore({ userId, chartId, scoreId: scoreId2, timeMs: 2_000 });
+
+		await ProcessPBs("iidx-sp", userId, new Set([chartId]), log);
+
+		const pbBefore = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbBefore, "PB must exist before the batch delete").toBeDefined();
+
+		// Delete both scores in a single call — exercises the dedup path through ProcessPBs.
+		const score1Doc = await loadScoreDocById(scoreId1);
+		const score2Doc = await loadScoreDocById(scoreId2);
+		await DeleteMultipleScores([score1Doc, score2Doc]);
+
+		// All scores gone.
+		const remaining = await DB.selectFrom("score")
+			.select("score.id")
+			.where("score.id", "in", [scoreId1, scoreId2])
+			.execute();
+		expect(remaining, "all scores must be deleted").toHaveLength(0);
+
+		// Stale PB and its composed_from entries must be cleaned up.
+		const pbAfter = await DB.selectFrom("pb")
+			.select("pb.row_id")
+			.where("pb.user_id", "=", userId)
+			.where("pb.chart_id", "=", chartId)
+			.executeTakeFirst();
+		expect(pbAfter, "stale PB must be deleted").toBeUndefined();
+
+		const composedFrom = await DB.selectFrom("pb_composed_from")
+			.select("pb_composed_from.score_id")
+			.where("pb_composed_from.score_id", "in", [scoreId1, scoreId2])
+			.execute();
+		expect(composedFrom, "pb_composed_from entries must be gone").toHaveLength(0);
+	});
+
 	it("clears pb_dirty for the chart after deleting all scores", async () => {
 		const { id: userId } = await seedUser({ username: "del_scores_pb_dirty" });
 		const chartId = chart.chartID;
