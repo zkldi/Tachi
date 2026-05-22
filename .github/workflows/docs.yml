@@ -7,29 +7,53 @@ on:
     paths:
       - "docs/**"
       - ".github/workflows/docs.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".github/workflows/docs.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  build:
+    name: Build docs
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Install mdbook
+        uses: taiki-e/install-action@v2
         with:
-          persist-credentials: false
+          tool: mdbook
+
+      - name: Build
+        run: cd docs && mdbook build
+
+      - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-site
+          path: docs/book/
+          retention-days: 1
+
+  deploy:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: docs-site
+          path: site/
 
       - name: Install rsync
         run: sudo apt-get update && sudo apt-get install -y rsync
-
-      - name: Build Container
-        run: docker build . -t docs -f Dockerfile.docs
-
-      - name: Build Docs
-        run: docker run -v ./site:/site --entrypoint="mkdocs" docs build
 
       - name: Enable SSH
         env:
