@@ -11,7 +11,3 @@ docs-build:
 # Check that the docs build cleanly (used in CI).
 docs-check:
 	cd docs && mdbook build
-
-# Install mdbook. On Debian/Ubuntu use apt; elsewhere use cargo.
-docs-install:
-	cargo install mdbook
