@@ -90,18 +90,17 @@ RUN apt-get update \
 
 ENV DEBIAN_FRONTEND=readline
 
-# mdbook — use the upstream release binary, not the Debian-packaged one.
-# The Debian package (0.4.x+ds) has its bundled fonts stripped, so the
-# built site is missing fonts/fonts.css. The upstream tarball is complete.
-ARG MDBOOK_VERSION=0.5.3
+# mdbook — installed from vendored tarballs in dev/mdbook/ rather than the
+# Debian apt package, which strips bundled fonts (the +ds repackaging).
+COPY dev/mdbook/ /tmp/mdbook/
 RUN set -eu; \
 	case "$(uname -m)" in \
-		x86_64)  arch=x86_64-unknown-linux-gnu ;; \
-		aarch64) arch=aarch64-unknown-linux-gnu ;; \
+		x86_64)  tarball=mdbook-v0.5.3-x86_64-unknown-linux-gnu.tar.gz ;; \
+		aarch64) tarball=mdbook-v0.5.3-aarch64-unknown-linux-musl.tar.gz ;; \
 		*) echo "Unsupported arch: $(uname -m)" >&2; exit 1 ;; \
 	esac; \
-	curl -sSL "https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-${arch}.tar.gz" \
-		| tar -xz -C /usr/local/bin
+	tar -xz -C /usr/local/bin -f "/tmp/mdbook/${tarball}" \
+	&& rm -rf /tmp/mdbook
 
 # `fd` is called `fdfind` on debian. Awesome.
 RUN ln -s "$(which fdfind)" /usr/bin/fd
