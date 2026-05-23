@@ -45051,6 +45051,84 @@
 	},
 	{
 		"game": "ongeki",
+		"id": "F19e570517738a03fd28",
+		"inactive": false,
+		"legacyFolderID": "Fa4e9b011c6e2bc72680c6d8f5e4e1ae3f09db01cac2f54ade59fcf7cf177759d",
+		"searchTerms": [],
+		"slug": "g-niconico-brightmemory3omni",
+		"title": "niconico (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = 'niconico' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df454905fd2c0c",
+		"inactive": false,
+		"legacyFolderID": "F4382201344e46413b7576bdb214a82465bf7d0993c46ec1b7bde1343486b6fd4",
+		"searchTerms": [],
+		"slug": "g-niconico-refreshomni",
+		"title": "niconico (Re:Fresh Omnimix)",
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = 'niconico' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a037cc597067",
+		"inactive": false,
+		"legacyFolderID": "F0a4991cc7f298308ff14c027f3258c5eae99e64fdb0af81febda2ada452032f5",
+		"searchTerms": [],
+		"slug": "g-niconico-refresh",
+		"title": "niconico (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = 'niconico' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5705177352048baf",
+		"inactive": false,
+		"legacyFolderID": "F6a85120f00e887552cf3c9a83202351fba583f6e53d6a07c8c6c57b30c1abd23",
+		"searchTerms": [],
+		"slug": "g-pna-brightmemory3omni",
+		"title": "POPS＆ANIME (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = 'POPS＆ANIME' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df454986e7e9f3",
+		"inactive": false,
+		"legacyFolderID": "F196725a1f22150244568e2d5afed087d6e68730c6fa24d80c765a0bc4b69a7e3",
+		"searchTerms": [],
+		"slug": "g-pna-refreshomni",
+		"title": "POPS＆ANIME (Re:Fresh Omnimix)",
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = 'POPS＆ANIME' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a037f5196ba9",
+		"inactive": false,
+		"legacyFolderID": "Fd11761c0a4fb4b655f9d0edbd5b7fea6412ad02fe17fdce45c323d49285f0f7e",
+		"searchTerms": [],
+		"slug": "g-pna-refresh",
+		"title": "POPS＆ANIME (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = 'POPS＆ANIME' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
 		"id": "F19d35f0cf2a327475e2",
 		"inactive": false,
 		"legacyFolderID": "F20d1e739fd77625944c1b7985e9f06a8e81baa3d9b29cbcdf3b2eb3689d79189",
@@ -45129,14 +45207,159 @@
 	},
 	{
 		"game": "ongeki",
-		"id": "F19e3d220686f96783f5",
+		"id": "F19e57051773b788f9cf",
 		"inactive": false,
-		"legacyFolderID": "Fedec341efe7df3a2c72661076f8d88ba8998871a22194030dc2ab53f36a401ce",
+		"legacyFolderID": "F2706b181ad2022864e2ef8b87ef91225706505836a2a949b632a08bee3bd9a46",
 		"searchTerms": [],
-		"slug": "refreshomni-variety",
+		"slug": "g-variety-brightmemory3omni",
+		"title": "VARIETY (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = 'VARIETY' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df45491c9809e0",
+		"inactive": false,
+		"legacyFolderID": "F926eccf320bd3961cd799aaa778dd49a7830444e3c82faa2d910570706e45893",
+		"searchTerms": [],
+		"slug": "g-variety-refreshomni",
 		"title": "VARIETY (Re:Fresh Omnimix)",
-		"versionFilter": ["refreshOmni"],
-		"where": "(song.data->>'genre')::text = 'VARIETY' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'LUNATIC')"
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = 'VARIETY' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a037d164ee38",
+		"inactive": false,
+		"legacyFolderID": "Fed99321cde383247377c5d0809647eeb9938e3c8394f419306290758b8c16eec",
+		"searchTerms": [],
+		"slug": "g-variety-refresh",
+		"title": "VARIETY (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = 'VARIETY' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e570517732de68837",
+		"inactive": false,
+		"legacyFolderID": "Fbf6016dd7fab70b407ada568f2f873875d01e1848ba5fb2e6dd7029fbc6c88ea",
+		"searchTerms": [],
+		"slug": "g-ongeki-brightmemory3omni",
+		"title": "オンゲキ (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = 'オンゲキ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df45499140a573",
+		"inactive": false,
+		"legacyFolderID": "F328845724676f08d5284b7cd975dd6dec6cf9c7af6cd76ee478c8e20651f088e",
+		"searchTerms": [],
+		"slug": "g-ongeki-refreshomni",
+		"title": "オンゲキ (Re:Fresh Omnimix)",
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = 'オンゲキ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a03740d71b9d",
+		"inactive": false,
+		"legacyFolderID": "F2a015fe9ea960382b462b9bd617597ff85a9d89a70dc10c91e726c49deb75c7f",
+		"searchTerms": [],
+		"slug": "g-ongeki-refresh",
+		"title": "オンゲキ (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = 'オンゲキ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e57051773e6d9e575",
+		"inactive": false,
+		"legacyFolderID": "Fb6a4a9f178d43bf71164290c35a5064cfadac0309fb6969cff16560dd3c68025",
+		"searchTerms": [],
+		"slug": "g-chumai-brightmemory3omni",
+		"title": "チュウマイ (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = 'チュウマイ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df454983a394bb",
+		"inactive": false,
+		"legacyFolderID": "F7c7edb7390942ad9644e90218b5f3e354d1d79aa4bdf84535946edb27c293625",
+		"searchTerms": [],
+		"slug": "g-chumai-refreshomni",
+		"title": "チュウマイ (Re:Fresh Omnimix)",
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = 'チュウマイ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a0377d5cd7ba",
+		"inactive": false,
+		"legacyFolderID": "Fac4c5d49414732ecef73cbefb24f248b26a80854218c5ba51cfc188468808a43",
+		"searchTerms": [],
+		"slug": "g-chumai-refresh",
+		"title": "チュウマイ (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = 'チュウマイ' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e57051773d376ced7",
+		"inactive": false,
+		"legacyFolderID": "F5dccb78ff2ca0695a72594395e43407a6c5428cee16545a852240aad3ea186ac",
+		"searchTerms": [],
+		"slug": "g-toho-brightmemory3omni",
+		"title": "東方Project (bright MEMORY Act.3 Omnimix)",
+		"versionFilter": [
+			"brightMemory3Omni"
+		],
+		"where": "(song.data->>'genre')::text = '東方Project' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e56df45496c69d806",
+		"inactive": false,
+		"legacyFolderID": "F887a8abb7bcdad1895e7c32fe12ecc9e43a78f98dca45a7032667e6486d809f5",
+		"searchTerms": [],
+		"slug": "g-toho-refreshomni",
+		"title": "東方Project (Re:Fresh Omnimix)",
+		"versionFilter": [
+			"refreshOmni"
+		],
+		"where": "(song.data->>'genre')::text = '東方Project' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
+	},
+	{
+		"game": "ongeki",
+		"id": "F19e5704a0371196e9b2",
+		"inactive": false,
+		"legacyFolderID": "Fe73806f9bb097ee150d40015b66c8970be7888c462e8b38764c7340813910eac",
+		"searchTerms": [],
+		"slug": "g-toho-refresh",
+		"title": "東方Project (Re:Fresh)",
+		"versionFilter": [
+			"refresh"
+		],
+		"where": "(song.data->>'genre')::text = '東方Project' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')"
 	},
 	{
 		"game": "pms-controller",
