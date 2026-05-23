@@ -16,7 +16,7 @@ import { allImportTypes } from "tachi-common/constants/import-types";
 const WORKER_ID = crypto.randomUUID().slice(0, 8);
 const WORKER_DB_NAME = `tachi_bot_test_${WORKER_ID}`;
 
-const POSTGRES_HOST = "tachi-postgres";
+const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres-test";
 const POSTGRES_USER = "tachi";
 const POSTGRES_PASS = "tachi";
 

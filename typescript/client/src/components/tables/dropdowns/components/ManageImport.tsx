@@ -1,11 +1,17 @@
 import { useInvalidateUseApiQueryCache } from "#components/util/query/useApiQuery";
 import { APIFetchV1 } from "#util/api";
-import React, { useMemo, useReducer } from "react";
+import React, { useMemo, useState } from "react";
 import { Button } from "react-bootstrap";
 import { type ImportDocument } from "tachi-common";
 
-export default function ManageImport({ importDoc }: { importDoc: ImportDocument }) {
-	const [warn, upgWarn] = useReducer((r) => r + 1, 0);
+export default function ManageImport({
+	importDoc,
+	onReverted,
+}: {
+	importDoc: ImportDocument;
+	onReverted?: () => void;
+}) {
+	const [warn, setWarn] = useState(0);
 	const invalidateApiQueries = useInvalidateUseApiQueryCache();
 	const message = useMemo(() => {
 		if (warn === 0) {
@@ -30,9 +36,9 @@ export default function ManageImport({ importDoc }: { importDoc: ImportDocument 
 				disabled={warn >= 4}
 				onClick={() => {
 					if (warn < 3) {
-						upgWarn();
+						setWarn((w) => w + 1);
 					} else {
-						upgWarn();
+						setWarn(4);
 						APIFetchV1(
 							`/imports/${importDoc.importID}/revert`,
 							{
@@ -40,7 +46,18 @@ export default function ManageImport({ importDoc }: { importDoc: ImportDocument 
 							},
 							true,
 							true,
-						).then(() => invalidateApiQueries());
+						)
+							.then((res) => {
+								if (res.success) {
+									invalidateApiQueries();
+									onReverted?.();
+								} else {
+									setWarn(0);
+								}
+							})
+							.catch(() => {
+								setWarn(0);
+							});
 					}
 				}}
 				variant="danger"

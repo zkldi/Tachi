@@ -4,7 +4,7 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { CreateChartID } from "tachi-common";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { ACTION_BMSTableSync } from "./bms-table-sync";
+import { ACTION_BMSTableSync, extractBmstableRedirectTarget } from "./bms-table-sync";
 
 const { testMd5, mockLoadBMSTable, fakeTable } = vi.hoisted(() => {
 	const md5 = "c".repeat(32);
@@ -32,6 +32,42 @@ vi.mock("tachi-common", async (importOriginal) => {
 		...actual,
 		BMS_TABLES: [fakeTable],
 	};
+});
+
+describe("extractBmstableRedirectTarget", () => {
+	it("resolves darksabun github.io migration stubs to darksabun.club", () => {
+		const html = `<!doctype html>
+<script>
+  var newDomain = "https://darksabun.club";
+  window.location.replace(newDomain + window.location.pathname);
+</script>`;
+
+		expect(
+			extractBmstableRedirectTarget(
+				"https://darksabun.github.io/table/archive/insane1/",
+				html,
+			),
+		).toBe("https://darksabun.club/table/archive/insane1/");
+	});
+
+	it("preserves the source path for bare-domain meta refresh targets", () => {
+		const html = '<meta http-equiv="refresh" content="0; url=https://darksabun.club" />';
+
+		expect(
+			extractBmstableRedirectTarget(
+				"https://darksabun.github.io/table/archive/normal1/",
+				html,
+			),
+		).toBe("https://darksabun.club/table/archive/normal1/");
+	});
+
+	it("follows absolute window.location.replace targets", () => {
+		const html = `window.location.replace("https://example.com/table/header.json");`;
+
+		expect(extractBmstableRedirectTarget("https://old.example/table/", html)).toBe(
+			"https://example.com/table/header.json",
+		);
+	});
 });
 
 describe("ACTION_BMSTableSync", () => {

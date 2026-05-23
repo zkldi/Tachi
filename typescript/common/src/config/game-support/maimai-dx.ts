@@ -47,17 +47,26 @@ const MaimaiDXDans = [
 ];
 
 const MaimaiDXColours = [
-	ClassValue("WHITE", "White", "0 - 999 Rating"),
-	ClassValue("BLUE", "Blue", "1000 - 1999 Rating"),
-	ClassValue("GREEN", "Green", "2000 - 3999 Rating"),
-	ClassValue("YELLOW", "Yellow", "4000 - 6999 Rating"),
-	ClassValue("RED", "Red", "7000 - 9999 Rating"),
-	ClassValue("PURPLE", "Purple", "10000 - 11999 Rating"),
-	ClassValue("BRONZE", "Bronze", "12000 - 12999 Rating"),
-	ClassValue("SILVER", "Silver", "13000 - 13999 Rating"),
-	ClassValue("GOLD", "Gold", "14000 - 14499 Rating"),
-	ClassValue("PLATINUM", "Platinum", "14500 - 14999 Rating"),
-	ClassValue("RAINBOW", "Rainbow", ">=15000 Rating"),
+	ClassValue("WHITE", "白", "White: 0 - 999 Rating"),
+	ClassValue("BLUE", "青", "Blue: 1000 - 1999 Rating"),
+	ClassValue("GREEN", "緑", "Green: 2000 - 3999 Rating"),
+	ClassValue("YELLOW", "黄", "Yellow: 4000 - 6999 Rating"),
+	ClassValue("RED", "赤", "Red: 7000 - 9999 Rating"),
+	ClassValue("PURPLE", "紫", "Purple: 10000 - 11999 Rating"),
+	ClassValue("BRONZE", "銅", "Bronze: 12000 - 12999 Rating"),
+	ClassValue("SILVER", "銀", "Silver: 13000 - 13999 Rating"),
+	ClassValue("GOLD", "金 ★", "Gold I: 14000 - 14249 Rating"),
+	ClassValue("GOLD_II", "金 ★★", "Gold II: 14250 - 14499 Rating"),
+	ClassValue("PLATINUM", "白金 ★", "Platinum I: 14500 - 14749 Rating"),
+	ClassValue("PLATINUM_II", "白金 ★★", "Platinum II: 14750 - 14999 Rating"),
+	ClassValue("RAINBOW", "虹 ★", "Rainbow I: 15000 - 15249 Rating"),
+	ClassValue("RAINBOW_II", "虹 ★★", "Rainbow II: 15250 - 15499 Rating"),
+	ClassValue("RAINBOW_III", "虹 ★★★", "Rainbow III: 15500 - 15749 Rating"),
+	ClassValue("RAINBOW_IV", "虹 ★★★★", "Rainbow IV: 15750 - 15999 Rating"),
+	ClassValue("RAINBOW_EX_I", "虹 (極) ★", "Rainbow Extreme I: 16000 - 16249 Rating"),
+	ClassValue("RAINBOW_EX_II", "虹 (極) ★★", "Rainbow Extreme II: 16250 - 16499 Rating"),
+	ClassValue("RAINBOW_EX_III", "虹 (極) ★★★", "Rainbow Extreme III: 16500 - 16749 Rating"),
+	ClassValue("RAINBOW_EX_IV", "虹 (極) ★★★★", "Rainbow Extreme IV: >=16750 Rating"),
 ];
 
 const MaimaiDXMatchingClasses = [

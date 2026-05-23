@@ -109,7 +109,7 @@ function CGImporter({
 	const importType: APIImportTypes = `api/cg-${cgType}-${game}`;
 	const cgName = cgType === "dev" ? "CG Dev" : `CG ${cgType.toUpperCase()}`;
 
-	const { importState, runImport } = useImport("/import/from-api", {
+	const { importState, runImport, resetImport } = useImport("/import/from-api", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -154,7 +154,7 @@ function CGImporter({
 				typing <code>/sync</code>!
 			</div>
 			<Divider />
-			<ImportStateRenderer state={importState} />
+			<ImportStateRenderer onReverted={resetImport} state={importState} />
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import { seedApiToken } from "#actions/test-utils/api-tokens";
-import { CDNStoreOrOverwrite } from "#lib/cdn/cdn";
+import { CDNRetrieve, CDNStoreOrOverwrite } from "#lib/cdn/cdn";
 import { GetProfileBannerURL } from "#lib/cdn/url-format";
 import DB from "#services/pg/db";
 import mockApi, { CloseServerConnection } from "#test-utils/mock-api";
@@ -56,9 +56,14 @@ describe("PUT /api/v1/users/:userID/banner", () => {
 
 		expect(res.status).toBe(200);
 
-		const get = await mockApi.get(res.body.body.get).redirects(1);
+		const { custom_banner_location } = await DB.selectFrom("account")
+			.select("custom_banner_location")
+			.where("id", "=", 1)
+			.executeTakeFirstOrThrow();
 
-		expect(Buffer.isBuffer(get.body) ? get.body : Buffer.from(get.body)).toStrictEqual(img);
+		const stored = await CDNRetrieve(GetProfileBannerURL(1, custom_banner_location!));
+
+		expect(stored.length).toBeLessThan(img.length);
 	});
 
 	it("stores a banner when the user already had a custom banner", async () => {
@@ -76,8 +81,13 @@ describe("PUT /api/v1/users/:userID/banner", () => {
 
 		expect(res.status).toBe(200);
 
-		const get = await mockApi.get(res.body.body.get).redirects(1);
+		const { custom_banner_location } = await DB.selectFrom("account")
+			.select("custom_banner_location")
+			.where("id", "=", 1)
+			.executeTakeFirstOrThrow();
 
-		expect(Buffer.isBuffer(get.body) ? get.body : Buffer.from(get.body)).toStrictEqual(img);
+		const stored = await CDNRetrieve(GetProfileBannerURL(1, custom_banner_location!));
+
+		expect(stored.length).toBeLessThan(img.length);
 	});
 });

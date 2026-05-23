@@ -139,8 +139,17 @@ describe("MAIMAIDX_IMPL", () => {
 		it("maps rate to colour", () => {
 			c(null, null);
 			c(0, "WHITE");
+			c(16750, "RAINBOW_EX_IV");
+			c(16500, "RAINBOW_EX_III");
+			c(16250, "RAINBOW_EX_II");
+			c(16000, "RAINBOW_EX_I");
+			c(15750, "RAINBOW_IV");
+			c(15500, "RAINBOW_III");
+			c(15250, "RAINBOW_II");
 			c(15000, "RAINBOW");
+			c(14750, "PLATINUM_II");
 			c(14500, "PLATINUM");
+			c(14250, "GOLD_II");
 			c(14000, "GOLD");
 			c(13000, "SILVER");
 			c(12000, "BRONZE");

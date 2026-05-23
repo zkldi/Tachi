@@ -120,20 +120,14 @@ export default defineConfig({
 				extends: true,
 				test: {
 					name: "default",
-					exclude: [
-						"src/actions/bms-table-sync.test.ts",
-						"src/actions/change-pfp.test.ts",
-					],
+					exclude: ["src/actions/bms-table-sync.test.ts"],
 				},
 			},
 			{
 				extends: true,
 				test: {
 					name: "isolated",
-					include: [
-						"src/actions/bms-table-sync.test.ts",
-						"src/actions/change-pfp.test.ts",
-					],
+					include: ["src/actions/bms-table-sync.test.ts"],
 					poolOptions: {
 						threads: {
 							isolate: true,

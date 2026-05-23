@@ -66,4 +66,4 @@ jobs:
       - name: Deploy docs
         env:
           TACHI_HOST: ${{ secrets.TACHI_HOST }}
-        run: rsync --recursive --compress --delete --progress ./site/. "ci@${TACHI_HOST}:tachi-docs"
+        run: rsync --recursive --compress --delete --progress ./site/. "ci@${TACHI_HOST}:/srv/tachi-static/docs"

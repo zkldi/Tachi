@@ -1,6 +1,6 @@
 import { type ImportIDReturn } from "#types/api-returns";
 import { type ImportStates, NotStartedState } from "#types/import";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { type ImportDocument, type integer } from "tachi-common";
 /* eslint-disable no-await-in-loop */
 import { APIFetchV1 } from "#util/api";
@@ -105,5 +105,7 @@ export default function useImport(url: string, options: RequestInit) {
 		}
 	};
 
-	return { runImport, importState };
+	const resetImport = useCallback(() => setImportState(NotStartedState), []);
+
+	return { runImport, importState, resetImport };
 }

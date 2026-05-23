@@ -46,10 +46,15 @@ export function cdnObjectKey_PRIVATE(fileLoc: string): string {
 	return (saveLocPrivate.KEY_PREFIX ?? "") + fileLoc;
 }
 
+export interface S3ObjectMeta {
+	cacheControl?: string;
+	contentType?: string;
+}
+
 /**
  * Pushes a file to the configured S3 Bucket. Overwrites if already exists.
  */
-export function PushToS3_PUBLIC(path: string, content: string | Buffer) {
+export function PushToS3_PUBLIC(path: string, content: string | Buffer, meta?: S3ObjectMeta) {
 	if (path.startsWith("/")) {
 		throw new Error(
 			`no. absolutely not. Trying to do s3 push with a prefix /. this causes all sorts of trouble: ${path}`,
@@ -62,6 +67,8 @@ export function PushToS3_PUBLIC(path: string, content: string | Buffer) {
 			Bucket: saveLoc.BUCKET,
 			Key: cdnObjectKey(path),
 			Body: content,
+			CacheControl: meta?.cacheControl,
+			ContentType: meta?.contentType,
 		}),
 	);
 }

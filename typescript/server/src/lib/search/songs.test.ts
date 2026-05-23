@@ -2,6 +2,7 @@ import { GetChartsBySongId } from "#lib/db-formats/chart";
 import { SearchGlobalGameSongsAndCharts } from "#lib/search/song-charts";
 import DB from "#services/pg/db";
 import { ImportSeedsSubsetForTests } from "#services/pg/seeds";
+import { seedUser } from "#test-utils/pg-fixtures";
 import { resolveSeedsDir, seedsJsonAvailable } from "#test-utils/seed-paths";
 import { FindChartsOnPopularity } from "#utils/queries/charts";
 import { sql } from "kysely";
@@ -22,6 +23,10 @@ function makeSongId(n: number): string {
 
 function makeChartId(n: number): string {
 	return `C${n.toString(16).padStart(20, "0")}`;
+}
+
+function makeScoreId(n: number): string {
+	return `SC${n.toString(16).padStart(20, "0")}`;
 }
 
 async function countSongRows(): Promise<number> {
@@ -696,6 +701,137 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		expect(
 			(charts[0]?.data as { "2dxtraSet"?: string | null })["2dxtraSet"] ?? null,
 		).toBeNull();
+	});
+
+	it("FindChartsOnPopularity with songIDs only aggregates scores for those songs", async () => {
+		const targetSongID = makeSongId(892);
+		const otherSongID = makeSongId(893);
+		const targetChartID = makeChartId(892);
+		const otherChartID = makeChartId(893);
+
+		await DB.insertInto("song")
+			.values([
+				{
+					id: targetSongID,
+					legacy_id: 9_000_892,
+					game_group: "iidx",
+					title: "PopFilterTarget",
+					artist: "X",
+					search_terms: [],
+					alt_titles: [],
+					fts_document: "",
+					data: JSON.stringify({}),
+				},
+				{
+					id: otherSongID,
+					legacy_id: 9_000_893,
+					game_group: "iidx",
+					title: "PopFilterOther",
+					artist: "X",
+					search_terms: [],
+					alt_titles: [],
+					fts_document: "",
+					data: JSON.stringify({}),
+				},
+			])
+			.execute();
+
+		await DB.insertInto("chart")
+			.values([
+				{
+					id: targetChartID,
+					legacy_id: "3".repeat(40),
+					game: "iidx-sp",
+					song_id: targetSongID,
+					level: "10",
+					level_num: 10,
+					is_primary: true,
+					difficulty: "ANOTHER",
+					versions: [],
+					data: JSON.stringify({ notecount: 100 }),
+				},
+				{
+					id: otherChartID,
+					legacy_id: "4".repeat(40),
+					game: "iidx-sp",
+					song_id: otherSongID,
+					level: "11",
+					level_num: 11,
+					is_primary: true,
+					difficulty: "ANOTHER",
+					versions: [],
+					data: JSON.stringify({ notecount: 100 }),
+				},
+			])
+			.execute();
+
+		const { id: userID } = await seedUser({ username: "pop_filter_scores" });
+		await DB.insertInto("score")
+			.values([
+				{
+					id: makeScoreId(892),
+					user_id: userID,
+					chart_id: targetChartID,
+					game: "iidx-sp",
+					session_id: null,
+					import_id: null,
+					data: JSON.stringify({}),
+					derived_data: JSON.stringify({}),
+					judgements: JSON.stringify({}),
+					calculated_data: JSON.stringify({}),
+					meta: JSON.stringify({}),
+					time_achieved: new Date().toISOString(),
+					time_added: new Date().toISOString(),
+					highlight: false,
+					comment: null,
+				},
+				{
+					id: makeScoreId(893),
+					user_id: userID,
+					chart_id: otherChartID,
+					game: "iidx-sp",
+					session_id: null,
+					import_id: null,
+					data: JSON.stringify({}),
+					derived_data: JSON.stringify({}),
+					judgements: JSON.stringify({}),
+					calculated_data: JSON.stringify({}),
+					meta: JSON.stringify({}),
+					time_achieved: new Date().toISOString(),
+					time_added: new Date().toISOString(),
+					highlight: false,
+					comment: null,
+				},
+				{
+					id: makeScoreId(894),
+					user_id: userID,
+					chart_id: otherChartID,
+					game: "iidx-sp",
+					session_id: null,
+					import_id: null,
+					data: JSON.stringify({}),
+					derived_data: JSON.stringify({}),
+					judgements: JSON.stringify({}),
+					calculated_data: JSON.stringify({}),
+					meta: JSON.stringify({}),
+					time_achieved: new Date().toISOString(),
+					time_added: new Date().toISOString(),
+					highlight: false,
+					comment: null,
+				},
+			])
+			.execute();
+
+		const charts = await FindChartsOnPopularity(
+			"iidx-sp",
+			{ songIDs: [targetSongID], chartIDs: undefined },
+			0,
+			100,
+		);
+
+		expect(charts).toHaveLength(1);
+		expect(charts[0]?.chartID).toBe(targetChartID);
+		expect(charts[0]?.__playcount).toBe(1);
 	});
 
 	it("does not apply the iidx 2dxtra song rule to other game groups", async () => {

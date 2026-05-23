@@ -3,18 +3,17 @@
 	"version": "0.1.0",
 	"description": "",
 	"scripts": {
-		"build": "node build.mjs",
+		"build": "vite build",
+		"typecheck": "tsgo --noEmit",
 		"lint": "eslint .",
-		"lint-fix": "eslint . --fix",
-		"watch": "node build.mjs --watch"
+		"lint-fix": "eslint . --fix"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"eslint-config-tachi": "workspace:*",
-		"node-sass": "catalog:",
-		"prettier": "catalog:"
+		"vite": "catalog:"
 	},
 	"engines": {
 		"bun": ">=1.2.0"

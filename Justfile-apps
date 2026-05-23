@@ -43,3 +43,6 @@ client:
 
 seeds-webui:
 	cd typescript/seeds-webui && bun vite
+
+homepage:
+	cd typescript/homepage && bun vite

@@ -766,6 +766,7 @@ export async function FindChartsOnPopularity(
 	}
 
 	const chartIdFilter = filters?.chartIDs;
+	const songIdFilter = filters?.songIDs;
 
 	let q = DB.with("score_counts", (db) => {
 		let sq = db
@@ -776,6 +777,15 @@ export async function FindChartsOnPopularity(
 
 		if (chartIdFilter !== undefined) {
 			sq = sq.where("score.chart_id", "in", chartIdFilter);
+		}
+
+		// When searching by song title, only aggregate scores for matching charts.
+		// Without this, every search scans and groups every score row for the game
+		// (e.g. 3.7M rows for bms-7k on boku) before filtering to ~100 charts.
+		if (songIdFilter !== undefined) {
+			sq = sq
+				.innerJoin("chart as score_count_chart", "score_count_chart.id", "score.chart_id")
+				.where("score_count_chart.song_id", "in", songIdFilter);
 		}
 
 		return sq;

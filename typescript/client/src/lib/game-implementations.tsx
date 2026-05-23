@@ -66,6 +66,8 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				SILVER: bgc("gray", "var(--bs-light)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				PLATINUM: bgc("silver", "var(--bs-dark)"),
+				PLATINUM_II: bgc("silver", "var(--bs-dark)"),
+				PLATINUM_III: bgc("silver", "var(--bs-dark)"),
 				RAINBOW: RAINBOW_GRADIENT,
 				RAINBOW_II: RAINBOW_GRADIENT,
 				RAINBOW_III: RAINBOW_GRADIENT,
@@ -392,13 +394,17 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				BRONZE: bgc("brown", "var(--bs-light)"),
 				SILVER: bgc("gray", "var(--bs-light)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
+				GOLD_II: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				PLATINUM: bgc("lightgoldenrodyellow", "var(--bs-dark)"),
-
-				RAINBOW: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				PLATINUM_II: bgc("lightgoldenrodyellow", "var(--bs-dark)"),
+				RAINBOW: RAINBOW_GRADIENT,
+				RAINBOW_II: RAINBOW_GRADIENT,
+				RAINBOW_III: RAINBOW_GRADIENT,
+				RAINBOW_IV: RAINBOW_GRADIENT,
+				RAINBOW_EX_I: RAINBOW_EX_GRADIENT,
+				RAINBOW_EX_II: RAINBOW_EX_GRADIENT,
+				RAINBOW_EX_III: RAINBOW_EX_GRADIENT,
+				RAINBOW_EX_IV: RAINBOW_EX_GRADIENT,
 			},
 			matchingClass: {
 				B5: bgc("green", "var(--bs-light)"),

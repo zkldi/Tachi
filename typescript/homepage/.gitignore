@@ -5,6 +5,5 @@
 # Node Specific
 node_modules
 
-# Built file
-dist/index.html
-dist/style.css
+# Vite build output
+dist/

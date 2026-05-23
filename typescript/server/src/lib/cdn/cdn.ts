@@ -3,7 +3,12 @@ import type { Response } from "express";
 import { log } from "#lib/log/log";
 import { ServerConfig } from "#lib/setup/config";
 
-import { DeleteFromS3_PUBLIC, GetObjectFromS3_PUBLIC, PushToS3_PUBLIC } from "./s3";
+import {
+	DeleteFromS3_PUBLIC,
+	GetObjectFromS3_PUBLIC,
+	PushToS3_PUBLIC,
+	type S3ObjectMeta,
+} from "./s3";
 
 /**
  * Retrieves the bytes at the given CDN location from S3.
@@ -34,6 +39,20 @@ export async function CDNStoreOrOverwrite(fileLoc: string, data: string | Buffer
 	log.debug(`Storing or overwriting path ${fileLoc}.`);
 
 	await PushToS3_PUBLIC(fileLoc.replace(/^\//u, ""), data);
+}
+
+/**
+ * Stores a file at fileLoc with explicit S3 object metadata (ContentType, CacheControl).
+ * If it already exists, overwrite it.
+ */
+export async function CDNStoreWithMeta(
+	fileLoc: string,
+	data: string | Buffer,
+	meta: S3ObjectMeta,
+): Promise<void> {
+	log.debug(`Storing or overwriting path ${fileLoc} with metadata.`);
+
+	await PushToS3_PUBLIC(fileLoc.replace(/^\//u, ""), data, meta);
 }
 
 /**

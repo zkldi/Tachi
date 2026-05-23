@@ -1,7 +1,7 @@
 import { execSync } from "node:child_process";
 import pg from "pg";
 
-const POSTGRES_HOST = "tachi-postgres";
+const POSTGRES_HOST = process.env.POSTGRES_TEST_HOST ?? "tachi-postgres-test";
 const POSTGRES_USER = "tachi";
 const POSTGRES_PASS = "tachi";
 const TEMPLATE_DB = "tachi_bot_test_template";

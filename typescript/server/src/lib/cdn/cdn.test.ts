@@ -6,6 +6,7 @@
  */
 
 import { ServerConfig } from "#lib/setup/config";
+import { HashSHA256 } from "#utils/crypto";
 import { randomUUID } from "node:crypto";
 import { describe, expect, it, vi } from "vitest";
 
@@ -31,7 +32,7 @@ describe("cdn (S3 integration)", () => {
 		const original = Buffer.from([0, 255, 128, 1]);
 		await CDNStoreOrOverwrite(loc, original);
 		const got = await CDNRetrieve(loc);
-		expect(Buffer.compare(got, original)).toBe(0);
+		expect(HashSHA256(got)).toBe(HashSHA256(original));
 		await CDNDelete(loc);
 	});
 

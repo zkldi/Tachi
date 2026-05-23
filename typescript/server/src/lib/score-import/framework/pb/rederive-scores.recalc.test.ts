@@ -577,7 +577,6 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		await rederiveScoresForChart(chartId, log);
 
 		for (const scoreId of scoreIds) {
-			// eslint-disable-next-line no-await-in-loop
 			const row = await DB.selectFrom("score")
 				.select(["score.calculated_data"])
 				.where("score.id", "=", scoreId)

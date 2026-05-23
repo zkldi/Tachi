@@ -7,7 +7,13 @@ import React from "react";
 
 import ImportInfo from "./ImportInfo";
 
-export default function ImportStateRenderer({ state: s }: { state: ImportStates }) {
+export default function ImportStateRenderer({
+	state: s,
+	onReverted,
+}: {
+	onReverted?: () => void;
+	state: ImportStates;
+}) {
 	return (
 		<div className="row">
 			<div className="col-12">
@@ -40,7 +46,7 @@ export default function ImportStateRenderer({ state: s }: { state: ImportStates 
 							<Divider />
 							<div>
 								<h4>Messed up?</h4>
-								<ManageImport importDoc={s.import} />
+								<ManageImport importDoc={s.import} onReverted={onReverted} />
 							</div>
 						</>
 					) : (

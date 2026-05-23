@@ -102,7 +102,7 @@ function MytImporter({
 } & Pick<Props, "game">) {
 	const importType: APIImportTypes = `api/myt-${game}`;
 
-	const { importState, runImport } = useImport("/import/from-api", {
+	const { importState, runImport, resetImport } = useImport("/import/from-api", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -147,7 +147,7 @@ function MytImporter({
 				typing <code>/sync</code>!
 			</div>
 			<Divider />
-			<ImportStateRenderer state={importState} />
+			<ImportStateRenderer onReverted={resetImport} state={importState} />
 		</div>
 	);
 }
