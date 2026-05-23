@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { type FolderDocument, GetGameConfig } from "tachi-common";
-import { type SeedFolderRow } from "tachi-common/lib/folder-slug"
+import { type SeedFolderRow } from "tachi-common/lib/folder-slug";
 import crypto from "crypto";
 
 import { CreateFolderID, CreateTableID, CreateLegacyFolderID, MutateCollection } from "../../util";
@@ -39,8 +39,8 @@ const GENRES = [
 	["東方Project", "toho"],
 	["VARIETY", "variety"],
 	["チュウマイ", "chumai"],
-	["オンゲキ", "ongeki"]
-]
+	["オンゲキ", "ongeki"],
+];
 
 const command = new Command().requiredOption("-v, --version <version>").parse(process.argv);
 const options = command.opts();
@@ -146,7 +146,7 @@ MutateCollection("tables.json", (ts) => {
 			id: CreateTableID(),
 			inactive: false,
 			legacyTableID: `ongeki-Single-${version}-genres`,
-			title: `O.N.G.E.K.I. (${versionName}) (Genres)`
+			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
 		},
 	);
 
@@ -163,7 +163,7 @@ for (const [fullName, safeName] of GENRES) {
 		slug: `g-${safeName}-${version.toLowerCase()}`,
 		title: `${fullName} (${versionName})`,
 		versionFilter: [version],
-		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`
+		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`,
 	});
 }
 

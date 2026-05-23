@@ -42165,7 +42165,7 @@
 		"inactive": false,
 		"legacyFolderID": "F9faa5c1b030ed0ca4c1bb347ea331f62050c2d3e0e13d6b1c45af8d8844df692",
 		"searchTerms": [],
-		"slug": "bonus-tracks-isbonus",
+		"slug": "bonus-tracks",
 		"title": "Bonus tracks",
 		"where": "chart.data->>'isBonusTrack' = 'true'"
 	},
@@ -42175,7 +42175,7 @@
 		"inactive": true,
 		"legacyFolderID": "F34a8b0ba9ab1d49b73d4cb0c68aca2ca2fff5ef4f0eaa0d169c8cabaaf7f24e3",
 		"searchTerms": [],
-		"slug": "bonus-tracks",
+		"slug": "bonus-tracks-isbonus",
 		"title": "Bonus tracks (old)",
 		"where": "(chart.data->>'inGameID')::numeric >= 7000 AND (chart.data->>'inGameID')::numeric < 8000"
 	},
