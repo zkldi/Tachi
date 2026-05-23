@@ -269,9 +269,9 @@ function RevSelector({
 				const params = new URLSearchParams();
 
 				if (collection) {
-					params.set("path", `seeds/collections/${collection}`);
+					params.set("path", `db/seeds/${collection}`);
 				} else {
-					params.set("path", "seeds/collections");
+					params.set("path", "db/seeds");
 				}
 
 				const res = await fetch(

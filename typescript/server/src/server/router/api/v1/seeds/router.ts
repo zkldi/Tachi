@@ -1,7 +1,7 @@
 import { log } from "#lib/log/log";
 import { withLocalDev } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
-import { PullDatabaseSeeds } from "#lib/seeds/repo";
+import { PullDatabaseSeeds, SEEDS_COLLECTIONS_DIR } from "#lib/seeds/repo";
 import { Env } from "#lib/setup/config";
 import { GetCommit, ListGitCommitsInPath } from "#utils/git";
 import { asyncExec, IsString } from "#utils/misc";
@@ -27,12 +27,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // there's a lady who's sure
 // all that glitters is gold
-const LOCAL_DEV_SEEDS_PATH = path.join(
-	__dirname,
-
-	// and she's buying a...
-	"../../../../../../../seeds/collections",
-);
+const LOCAL_DEV_SEEDS_PATH = path.join(__dirname, "../../../../../../../../db/seeds");
 const TEST_SEEDS_PATH = path.join(__dirname, "../../../../../test-utils/mock-db");
 
 const LOCAL_SEEDS_PATH = Env.NODE_ENV === "test" ? TEST_SEEDS_PATH : LOCAL_DEV_SEEDS_PATH;
@@ -66,7 +61,7 @@ API_V1_ROUTER.add("GET /seeds/has-uncommitted-changes", withLocalDev, async () =
 	// a leading space, but that is not a proper solution.
 	const hasUncommittedChanges = stdout
 		.split("\n")
-		.some((row) => / seeds\/collections/u.exec(row));
+		.some((row) => row.includes(` ${SEEDS_COLLECTIONS_DIR}`));
 
 	return success(
 		hasUncommittedChanges
@@ -102,7 +97,7 @@ API_V1_ROUTER.add("GET /seeds/commits", withLocalDev, async ({ input }) => {
 	const realFile = file ?? ".";
 
 	// only check commits in seeds/collections
-	const commits = await ListGitCommitsInPath(branch, path.join("seeds", "collections", realFile));
+	const commits = await ListGitCommitsInPath(branch, path.join(SEEDS_COLLECTIONS_DIR, realFile));
 
 	return success(`Found ${commits.length} commits.`, commits);
 });
@@ -183,7 +178,7 @@ API_V1_ROUTER.add("GET /seeds/collections", withLocalDev, async ({ input }) => {
 		// @warn we don't actually bother doing any real shell
 		// escaping here, since these routes are only enabled in local development.
 		const { stdout: fileStdout } = await asyncExec(
-			`PAGER=cat git show '${rev}:seeds/collections' | tail -n +3`,
+			`PAGER=cat git show '${rev}:${SEEDS_COLLECTIONS_DIR}' | tail -n +3`,
 		);
 
 		// @warn this breaks for files that have newlines in their names.
@@ -198,7 +193,7 @@ API_V1_ROUTER.add("GET /seeds/collections", withLocalDev, async ({ input }) => {
 				// files in the collection as of this commit, so, this should never
 				// crash in that way, right?
 				const { stdout: content } = await asyncExec(
-					`PAGER=cat git show '${rev}:seeds/collections/${file}'`,
+					`PAGER=cat git show '${rev}:${SEEDS_COLLECTIONS_DIR}/${file}'`,
 				);
 				data[file] = JSON.parse(content);
 			}),

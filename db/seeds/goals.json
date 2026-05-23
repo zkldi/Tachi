@@ -43,7 +43,10 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e10d6cf3457ce4", "C19d35e10f64eaa8c280"],
+			"data": [
+				"C19d35e10d6cf3457ce4",
+				"C19d35e10f64eaa8c280"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -1005,7 +1008,10 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e10e17abee5636", "C19d35e10da1d3c16cda"],
+			"data": [
+				"C19d35e10e17abee5636",
+				"C19d35e10da1d3c16cda"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -1863,7 +1869,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e10e37c954e085", "C19d35e10fef1ca4f7d5", "C19d35e10dde016f1746"],
+			"data": [
+				"C19d35e10e37c954e085",
+				"C19d35e10fef1ca4f7d5",
+				"C19d35e10dde016f1746"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2011,7 +2021,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e120e2bd10f710", "C19d35e1207bcf55ca00", "C19d35e120dd312d5101"],
+			"data": [
+				"C19d35e120e2bd10f710",
+				"C19d35e1207bcf55ca00",
+				"C19d35e120dd312d5101"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2100,7 +2114,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11b34740b1895", "C19d35e11dd0d9664428", "C19d35e11ccba56d68b0"],
+			"data": [
+				"C19d35e11b34740b1895",
+				"C19d35e11dd0d9664428",
+				"C19d35e11ccba56d68b0"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2159,7 +2177,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11f958b637f1e", "C19d35e11aceb41230d4", "C19d35e11eddc2799df2"],
+			"data": [
+				"C19d35e11f958b637f1e",
+				"C19d35e11aceb41230d4",
+				"C19d35e11eddc2799df2"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2188,7 +2210,10 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e12116d1a9fcfc", "C19d35e11bef7119bb6c"],
+			"data": [
+				"C19d35e12116d1a9fcfc",
+				"C19d35e11bef7119bb6c"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2346,7 +2371,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11f23dafc55df", "C19d35e11e354caa941e", "C19d35e11e0ea3dc1118"],
+			"data": [
+				"C19d35e11f23dafc55df",
+				"C19d35e11e354caa941e",
+				"C19d35e11e0ea3dc1118"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2469,7 +2498,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11de939fe3f5e", "C19d35e11da7a2b49a00", "C19d35e120185035c8e6"],
+			"data": [
+				"C19d35e11de939fe3f5e",
+				"C19d35e11da7a2b49a00",
+				"C19d35e120185035c8e6"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2498,7 +2531,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11f8e16a9bb3a", "C19d35e1200edabf797a", "C19d35e11f6e613ef1d7"],
+			"data": [
+				"C19d35e11f8e16a9bb3a",
+				"C19d35e1200edabf797a",
+				"C19d35e11f6e613ef1d7"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2602,7 +2639,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11e8e7534f29c", "C19d35e11d3a7a55cb74", "C19d35e11cf85dbaf63d"],
+			"data": [
+				"C19d35e11e8e7534f29c",
+				"C19d35e11d3a7a55cb74",
+				"C19d35e11cf85dbaf63d"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2631,7 +2672,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11dc9b7fe43ae", "C19d35e11f5114594be5", "C19d35e11ea4d05b7556"],
+			"data": [
+				"C19d35e11dc9b7fe43ae",
+				"C19d35e11f5114594be5",
+				"C19d35e11ea4d05b7556"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2645,7 +2690,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11e92fa2b5166", "C19d35e11d4a7886bcae", "C19d35e11e2960cc06d3"],
+			"data": [
+				"C19d35e11e92fa2b5166",
+				"C19d35e11d4a7886bcae",
+				"C19d35e11e2960cc06d3"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2753,7 +2802,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11eb0be169eed", "C19d35e11e1c4ce9fa55", "C19d35e120916329931b"],
+			"data": [
+				"C19d35e11eb0be169eed",
+				"C19d35e11e1c4ce9fa55",
+				"C19d35e120916329931b"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2797,7 +2850,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11db98d00c586", "C19d35e11db31802a858", "C19d35e11ca41c6a9a26"],
+			"data": [
+				"C19d35e11db98d00c586",
+				"C19d35e11db31802a858",
+				"C19d35e11ca41c6a9a26"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2811,7 +2868,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11c4418d22289", "C19d35e11fbaf4bc2192", "C19d35e11f64f3ed2258"],
+			"data": [
+				"C19d35e11c4418d22289",
+				"C19d35e11fbaf4bc2192",
+				"C19d35e11f64f3ed2258"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -2943,7 +3004,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e12093ed1d3609", "C19d35e11f256efc4a68", "C19d35e11fb0cc4f031b"],
+			"data": [
+				"C19d35e12093ed1d3609",
+				"C19d35e11f256efc4a68",
+				"C19d35e11fb0cc4f031b"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3042,7 +3107,10 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11f82f2e7ec28", "C19d35e11f2c731fd2f4"],
+			"data": [
+				"C19d35e11f82f2e7ec28",
+				"C19d35e11f2c731fd2f4"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3086,7 +3154,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11edd1a77b160", "C19d35e11f95c08dff6e", "C19d35e11eff5f8f499e"],
+			"data": [
+				"C19d35e11edd1a77b160",
+				"C19d35e11f95c08dff6e",
+				"C19d35e11eff5f8f499e"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3171,7 +3243,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e120ba2a3794e5", "C19d35e11bf6ba32797b", "C19d35e11f2f083cda5a"],
+			"data": [
+				"C19d35e120ba2a3794e5",
+				"C19d35e11bf6ba32797b",
+				"C19d35e11f2f083cda5a"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3260,7 +3336,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e121160373cd93", "C19d35e11edb93dff80c", "C19d35e11fdc89943ed9"],
+			"data": [
+				"C19d35e121160373cd93",
+				"C19d35e11edb93dff80c",
+				"C19d35e11fdc89943ed9"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3274,7 +3354,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e11e1d061b96ca", "C19d35e11f838e8b8dc1", "C19d35e1210bfd434371"],
+			"data": [
+				"C19d35e11e1d061b96ca",
+				"C19d35e11f838e8b8dc1",
+				"C19d35e1210bfd434371"
+			],
 			"type": "multi"
 		},
 		"criteria": {
@@ -3338,7 +3422,11 @@
 	},
 	{
 		"charts": {
-			"data": ["C19d35e12099bc435ee4", "C19d35e1215439a4b677", "C19d35e12048a4a873fb"],
+			"data": [
+				"C19d35e12099bc435ee4",
+				"C19d35e1215439a4b677",
+				"C19d35e12048a4a873fb"
+			],
 			"type": "multi"
 		},
 		"criteria": {

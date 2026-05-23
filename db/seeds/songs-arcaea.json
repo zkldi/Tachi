@@ -7,7 +7,10 @@
 		},
 		"id": "S19d35e0f9610b823f70",
 		"legacySongID": 1,
-		"searchTerms": ["さよならはつこい", "사요나라 하츠코이"],
+		"searchTerms": [
+			"さよならはつこい",
+			"사요나라 하츠코이"
+		],
 		"title": "Sayonara Hatsukoi"
 	},
 	{
@@ -33,7 +36,10 @@
 		},
 		"id": "S19d35e0f9638bb3192f",
 		"legacySongID": 3,
-		"searchTerms": ["ぐっどてっく", "굿텍"],
+		"searchTerms": [
+			"ぐっどてっく",
+			"굿텍"
+		],
 		"title": "GOODTEK (Arcaea Edit)"
 	},
 	{
@@ -44,7 +50,10 @@
 		},
 		"id": "S19d35e0f964a033ae79",
 		"legacySongID": 4,
-		"searchTerms": ["くらいおぶゔぃえら", "크라이 오브 비엘라"],
+		"searchTerms": [
+			"くらいおぶゔぃえら",
+			"크라이 오브 비엘라"
+		],
 		"title": "cry of viyella"
 	},
 	{
@@ -55,7 +64,10 @@
 		},
 		"id": "S19d35e0f96528c6848c",
 		"legacySongID": 5,
-		"searchTerms": ["らいず", "라이즈"],
+		"searchTerms": [
+			"らいず",
+			"라이즈"
+		],
 		"title": "Rise"
 	},
 	{
@@ -66,7 +78,10 @@
 		},
 		"id": "S19d35e0f9666861c088",
 		"legacySongID": 6,
-		"searchTerms": ["るしふぁー", "루시퍼"],
+		"searchTerms": [
+			"るしふぁー",
+			"루시퍼"
+		],
 		"title": "Lucifer"
 	},
 	{
@@ -77,7 +92,10 @@
 		},
 		"id": "S19d35e0f967e377b7d7",
 		"legacySongID": 7,
-		"searchTerms": ["ふぇありーている", "페어리테일"],
+		"searchTerms": [
+			"ふぇありーている",
+			"페어리테일"
+		],
 		"title": "Fairytale"
 	},
 	{
@@ -104,7 +122,10 @@
 		},
 		"id": "S19d35e0f969137479f7",
 		"legacySongID": 9,
-		"searchTerms": ["ばばろっく", "바바로크"],
+		"searchTerms": [
+			"ばばろっく",
+			"바바로크"
+		],
 		"title": "Babaroque"
 	},
 	{
@@ -115,7 +136,10 @@
 		},
 		"id": "S19d35e0f96aaa41fc53",
 		"legacySongID": 10,
-		"searchTerms": ["めもりーふぁくとりー", "메모리팩토리.이즈"],
+		"searchTerms": [
+			"めもりーふぁくとりー",
+			"메모리팩토리.이즈"
+		],
 		"title": "memoryfactory.lzh"
 	},
 	{
@@ -126,7 +150,11 @@
 		},
 		"id": "S19d35e0f96b86eca2a2",
 		"legacySongID": 11,
-		"searchTerms": ["すのーほわいと", "すのうほわいと", "스노우 화이트"],
+		"searchTerms": [
+			"すのーほわいと",
+			"すのうほわいと",
+			"스노우 화이트"
+		],
 		"title": "Snow White"
 	},
 	{
@@ -137,7 +165,10 @@
 		},
 		"id": "S19d35e0f96c55deac16",
 		"legacySongID": 12,
-		"searchTerms": ["りれんとれす", "릴렌트리스"],
+		"searchTerms": [
+			"りれんとれす",
+			"릴렌트리스"
+		],
 		"title": "Relentless"
 	},
 	{
@@ -164,7 +195,12 @@
 		},
 		"id": "S19d35e0f96e7ab2aa3b",
 		"legacySongID": 14,
-		"searchTerms": ["うぇくさりあ", "ゔぇくさりあ", "벡자리아", "벡사리아"],
+		"searchTerms": [
+			"うぇくさりあ",
+			"ゔぇくさりあ",
+			"벡자리아",
+			"벡사리아"
+		],
 		"title": "Vexaria"
 	},
 	{
@@ -190,7 +226,11 @@
 		},
 		"id": "S19d35e0f970bceb0f24",
 		"legacySongID": 16,
-		"searchTerms": ["くおりあ", "퀄리아 아이디에테지아", "콸리아 아이디에테지아"],
+		"searchTerms": [
+			"くおりあ",
+			"퀄리아 아이디에테지아",
+			"콸리아 아이디에테지아"
+		],
 		"title": "qualia -ideaesthesia-"
 	},
 	{
@@ -201,7 +241,11 @@
 		},
 		"id": "S19d35e0f971df296e7e",
 		"legacySongID": 17,
-		"searchTerms": ["ぷらぐまてぃずむ", "프라그마티즘", "프래그마티즘"],
+		"searchTerms": [
+			"ぷらぐまてぃずむ",
+			"프라그마티즘",
+			"프래그마티즘"
+		],
 		"title": "PRAGMATISM"
 	},
 	{
@@ -212,7 +256,11 @@
 		},
 		"id": "S19d35e0f972b9536f3e",
 		"legacySongID": 18,
-		"searchTerms": ["ぷらぐまてぃずむ", "프라그마티즘", "프래그마티즘"],
+		"searchTerms": [
+			"ぷらぐまてぃずむ",
+			"프라그마티즘",
+			"프래그마티즘"
+		],
 		"title": "PRAGMATISM -RESURRECTION-"
 	},
 	{
@@ -243,7 +291,10 @@
 		},
 		"id": "S19d35e0f974483474ff",
 		"legacySongID": 20,
-		"searchTerms": ["るみあ", "루미아"],
+		"searchTerms": [
+			"るみあ",
+			"루미아"
+		],
 		"title": "Lumia"
 	},
 	{
@@ -254,7 +305,10 @@
 		},
 		"id": "S19d35e0f975f91c96e9",
 		"legacySongID": 21,
-		"searchTerms": ["でめんとあふたーれじぇんど", "디멘트 애프터 레전드"],
+		"searchTerms": [
+			"でめんとあふたーれじぇんど",
+			"디멘트 애프터 레전드"
+		],
 		"title": "Dement ~after legend~"
 	},
 	{
@@ -265,18 +319,28 @@
 		},
 		"id": "S19d35e0f976dd2c062e",
 		"legacySongID": 22,
-		"searchTerms": ["だんでらいおん", "단델라이온"],
+		"searchTerms": [
+			"だんでらいおん",
+			"단델라이온"
+		],
 		"title": "Dandelion"
 	},
 	{
-		"altTitles": ["Anokumene"],
+		"altTitles": [
+			"Anokumene"
+		],
 		"artist": "Jun Kuroda",
 		"data": {
 			"songPack": "Arcaea"
 		},
 		"id": "S19d35e0f97719323c81",
 		"legacySongID": 23,
-		"searchTerms": ["anokumene", "あねくめーね", "あねくめね", "아네쿠메네"],
+		"searchTerms": [
+			"anokumene",
+			"あねくめーね",
+			"あねくめね",
+			"아네쿠메네"
+		],
 		"title": "Anökumene"
 	},
 	{
@@ -304,7 +368,12 @@
 		},
 		"id": "S19d35e0f979ff755eda",
 		"legacySongID": 25,
-		"searchTerms": ["ぱーてぃゔぁいなる", "ぱーてぃーゔぁいなる", "파티 비닐", "파티 바이닐"],
+		"searchTerms": [
+			"ぱーてぃゔぁいなる",
+			"ぱーてぃーゔぁいなる",
+			"파티 비닐",
+			"파티 바이닐"
+		],
 		"title": "Party Vinyl"
 	},
 	{
@@ -315,11 +384,16 @@
 		},
 		"id": "S19d35e0f97a2b21fcf5",
 		"legacySongID": 26,
-		"searchTerms": ["ふらっしゅばっく", "플래시백"],
+		"searchTerms": [
+			"ふらっしゅばっく",
+			"플래시백"
+		],
 		"title": "Flashback"
 	},
 	{
-		"altTitles": ["フライブルクとエンドロウル"],
+		"altTitles": [
+			"フライブルクとエンドロウル"
+		],
 		"artist": "アリスシャッハと魔法の楽団",
 		"data": {
 			"songPack": "Crimson Solace"
@@ -341,7 +415,10 @@
 		},
 		"id": "S19d35e0f97cbf434f4c",
 		"legacySongID": 28,
-		"searchTerms": ["にるゔるーちぇ", "너브루체"],
+		"searchTerms": [
+			"にるゔるーちぇ",
+			"너브루체"
+		],
 		"title": "Nirv lucE"
 	},
 	{
@@ -352,7 +429,10 @@
 		},
 		"id": "S19d35e0f97dfae7e437",
 		"legacySongID": 29,
-		"searchTerms": ["ぱらだいす", "파라다이스"],
+		"searchTerms": [
+			"ぱらだいす",
+			"파라다이스"
+		],
 		"title": "Paradise"
 	},
 	{
@@ -363,7 +443,11 @@
 		},
 		"id": "S19d35e0f97e7d1864f5",
 		"legacySongID": 30,
-		"searchTerms": ["ぶらんどにゅーわーるど", "ぶらんにゅーわーるど", "브랜드 뉴 월드"],
+		"searchTerms": [
+			"ぶらんどにゅーわーるど",
+			"ぶらんにゅーわーるど",
+			"브랜드 뉴 월드"
+		],
 		"title": "Brand new world"
 	},
 	{
@@ -374,7 +458,12 @@
 		},
 		"id": "S19d35e0f97f5e9916e4",
 		"legacySongID": 31,
-		"searchTerms": ["dataerror", "でーたえらー", "데이타 에러", "데이터 에러"],
+		"searchTerms": [
+			"dataerror",
+			"でーたえらー",
+			"데이타 에러",
+			"데이터 에러"
+		],
 		"title": "DataErr0r"
 	},
 	{
@@ -385,7 +474,10 @@
 		},
 		"id": "S19d35e0f980b1ec46d2",
 		"legacySongID": 32,
-		"searchTerms": ["くろすそうる", "크로스 소울"],
+		"searchTerms": [
+			"くろすそうる",
+			"크로스 소울"
+		],
 		"title": "CROSS†SOUL"
 	},
 	{
@@ -396,7 +488,10 @@
 		},
 		"id": "S19d35e0f98138330f3e",
 		"legacySongID": 33,
-		"searchTerms": ["ゆあぼいすそー", "유어 보이스 이즈 소"],
+		"searchTerms": [
+			"ゆあぼいすそー",
+			"유어 보이스 이즈 소"
+		],
 		"title": "Your voice so... feat. Such"
 	},
 	{
@@ -407,11 +502,17 @@
 		},
 		"id": "S19d35e0f98232efa010",
 		"legacySongID": 34,
-		"searchTerms": ["くろのすたしす", "くろのすていしす", "크로노스테이시스"],
+		"searchTerms": [
+			"くろのすたしす",
+			"くろのすていしす",
+			"크로노스테이시스"
+		],
 		"title": "Chronostasis"
 	},
 	{
-		"altTitles": ["神奈川電脳暗渠"],
+		"altTitles": [
+			"神奈川電脳暗渠"
+		],
 		"artist": "南ゆに",
 		"data": {
 			"songPack": "Arcaea"
@@ -434,7 +535,10 @@
 		},
 		"id": "S19d35e0f9847e8f7dc3",
 		"legacySongID": 36,
-		"searchTerms": ["むーんらいとおぶさんどきゃっする", "문라이트 오브 샌드 캐슬"],
+		"searchTerms": [
+			"むーんらいとおぶさんどきゃっする",
+			"문라이트 오브 샌드 캐슬"
+		],
 		"title": "Moonlight of Sand Castle"
 	},
 	{
@@ -445,7 +549,10 @@
 		},
 		"id": "S19d35e0f985de580a49",
 		"legacySongID": 37,
-		"searchTerms": ["りこんすとらくしょん", "리컨스트럭션"],
+		"searchTerms": [
+			"りこんすとらくしょん",
+			"리컨스트럭션"
+		],
 		"title": "REconstruction"
 	},
 	{
@@ -472,11 +579,16 @@
 		},
 		"id": "S19d35e0f9872af3db1e",
 		"legacySongID": 39,
-		"searchTerms": ["おらくる", "오라클"],
+		"searchTerms": [
+			"おらくる",
+			"오라클"
+		],
 		"title": "Oracle"
 	},
 	{
-		"altTitles": ["aterlbus"],
+		"altTitles": [
+			"aterlbus"
+		],
 		"artist": "Aoi",
 		"data": {
 			"songPack": "Dynamix"
@@ -494,7 +606,9 @@
 		"title": "αterlβus"
 	},
 	{
-		"altTitles": ["クロートーと星の観測者"],
+		"altTitles": [
+			"クロートーと星の観測者"
+		],
 		"artist": "しーけー",
 		"data": {
 			"songPack": "Arcaea"
@@ -511,7 +625,9 @@
 		"title": "Clotho and the stargazer"
 	},
 	{
-		"altTitles": ["不浄な白い鳥"],
+		"altTitles": [
+			"不浄な白い鳥"
+		],
 		"artist": "MIssionary",
 		"data": {
 			"songPack": "Memory Archive"
@@ -574,11 +690,16 @@
 		},
 		"id": "S19d35e0f98dc2fc023a",
 		"legacySongID": 45,
-		"searchTerms": ["れーてうす", "레테우스"],
+		"searchTerms": [
+			"れーてうす",
+			"레테우스"
+		],
 		"title": "Lethaeus"
 	},
 	{
-		"altTitles": ["vsキミ戦争"],
+		"altTitles": [
+			"vsキミ戦争"
+		],
 		"artist": "U-ske (feat. lueur)",
 		"data": {
 			"songPack": "Ambivalent Vision"
@@ -601,7 +722,11 @@
 		},
 		"id": "S19d35e0f98f879078a8",
 		"legacySongID": 47,
-		"searchTerms": ["ぶろっさむず", "ぶらっさむず", "블로섬"],
+		"searchTerms": [
+			"ぶろっさむず",
+			"ぶらっさむず",
+			"블로섬"
+		],
 		"title": "Blossoms"
 	},
 	{
@@ -612,7 +737,10 @@
 		},
 		"id": "S19d35e0f9902687b2ae",
 		"legacySongID": 48,
-		"searchTerms": ["むーんはーと", "문하트"],
+		"searchTerms": [
+			"むーんはーと",
+			"문하트"
+		],
 		"title": "Moonheart"
 	},
 	{
@@ -623,18 +751,26 @@
 		},
 		"id": "S19d35e0f991166fd5d6",
 		"legacySongID": 49,
-		"searchTerms": ["じぇねしす", "제네시스"],
+		"searchTerms": [
+			"じぇねしす",
+			"제네시스"
+		],
 		"title": "Genesis"
 	},
 	{
-		"altTitles": ["ハルトピア ~Utopia of Spring~"],
+		"altTitles": [
+			"ハルトピア ~Utopia of Spring~"
+		],
 		"artist": "A-zu-ra",
 		"data": {
 			"songPack": "Arcaea"
 		},
 		"id": "S19d35e0f992361a06a9",
 		"legacySongID": 50,
-		"searchTerms": ["はるとぴあゆーとぴあおぶすぷりんぐ", "하루토피아 유토피아 오브 스프링"],
+		"searchTerms": [
+			"はるとぴあゆーとぴあおぶすぷりんぐ",
+			"하루토피아 유토피아 오브 스프링"
+		],
 		"title": "Harutopia ~Utopia of Spring~"
 	},
 	{
@@ -666,7 +802,10 @@
 		},
 		"id": "S19d35e0f9947a6b7181",
 		"legacySongID": 52,
-		"searchTerms": ["らびっといんざぶらっくるーむ", "래빗 인 더 블랙 룸"],
+		"searchTerms": [
+			"らびっといんざぶらっくるーむ",
+			"래빗 인 더 블랙 룸"
+		],
 		"title": "Rabbit In The Black Room"
 	},
 	{
@@ -677,7 +816,10 @@
 		},
 		"id": "S19d35e0f99559d3e589",
 		"legacySongID": 53,
-		"searchTerms": ["もでりすた", "모델리스타"],
+		"searchTerms": [
+			"もでりすた",
+			"모델리스타"
+		],
 		"title": "Modelista"
 	},
 	{
@@ -688,11 +830,16 @@
 		},
 		"id": "S19d35e0f996cdf9d542",
 		"legacySongID": 54,
-		"searchTerms": ["さうんどうぃっち", "사운드위치"],
+		"searchTerms": [
+			"さうんどうぃっち",
+			"사운드위치"
+		],
 		"title": "SOUNDWiTCH"
 	},
 	{
-		"altTitles": ["妖艶魔女 -trappola bewitching-"],
+		"altTitles": [
+			"妖艶魔女 -trappola bewitching-"
+		],
 		"artist": "gmtn.",
 		"data": {
 			"songPack": "Vicious Labyrinth"
@@ -733,7 +880,10 @@
 		},
 		"id": "S19d35e0f999029b53ce",
 		"legacySongID": 57,
-		"searchTerms": ["こんふりくと", "컨플릭트"],
+		"searchTerms": [
+			"こんふりくと",
+			"컨플릭트"
+		],
 		"title": "conflict"
 	},
 	{
@@ -760,7 +910,11 @@
 		},
 		"id": "S19d35e0f99bcc75e453",
 		"legacySongID": 59,
-		"searchTerms": ["ぐりーゔぁすでれぃー", "ぐりーばすれでぃー", "그리버스 레이디"],
+		"searchTerms": [
+			"ぐりーゔぁすでれぃー",
+			"ぐりーばすれでぃー",
+			"그리버스 레이디"
+		],
 		"title": "Grievous Lady"
 	},
 	{
@@ -771,7 +925,10 @@
 		},
 		"id": "S19d35e0f99c8afa0b80",
 		"legacySongID": 60,
-		"searchTerms": ["どりーみんあとらくしょん", "드리밍 어트랙션"],
+		"searchTerms": [
+			"どりーみんあとらくしょん",
+			"드리밍 어트랙션"
+		],
 		"title": "Dreamin' Attraction!!"
 	},
 	{
@@ -782,7 +939,11 @@
 		},
 		"id": "S19d35e0f99d14e2c733",
 		"legacySongID": 61,
-		"searchTerms": ["れっどあんどぶるー", "れっどあんどぶるーあんどぐりーん", "레드 앤 블루"],
+		"searchTerms": [
+			"れっどあんどぶるー",
+			"れっどあんどぶるーあんどぐりーん",
+			"레드 앤 블루"
+		],
 		"title": "Red and Blue"
 	},
 	{
@@ -793,7 +954,11 @@
 		},
 		"id": "S19d35e0f99e9c3c5787",
 		"legacySongID": 62,
-		"searchTerms": ["れっどあんどぶるー", "れっどあんどぶるーあんどぐりーん", "레드 앤 블루"],
+		"searchTerms": [
+			"れっどあんどぶるー",
+			"れっどあんどぶるーあんどぐりーん",
+			"레드 앤 블루"
+		],
 		"title": "Red and Blue and Green"
 	},
 	{
@@ -804,7 +969,10 @@
 		},
 		"id": "S19d35e0f99ff6fecd30",
 		"legacySongID": 63,
-		"searchTerms": ["わんらすとどらいぶ", "원 라스트 드라이브"],
+		"searchTerms": [
+			"わんらすとどらいぶ",
+			"원 라스트 드라이브"
+		],
 		"title": "One Last Drive"
 	},
 	{
@@ -815,18 +983,26 @@
 		},
 		"id": "S19d35e0f9a0bd86dcf7",
 		"legacySongID": 64,
-		"searchTerms": ["されんだー", "서렌더"],
+		"searchTerms": [
+			"されんだー",
+			"서렌더"
+		],
 		"title": "Surrender"
 	},
 	{
-		"altTitles": ["夜桜吹雪"],
+		"altTitles": [
+			"夜桜吹雪"
+		],
 		"artist": "A.SAKA",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0f9a1bc1d3eee",
 		"legacySongID": 65,
-		"searchTerms": ["よざくらふぶき", "요자쿠라 후부키"],
+		"searchTerms": [
+			"よざくらふぶき",
+			"요자쿠라 후부키"
+		],
 		"title": "Yosakura Fubuki"
 	},
 	{
@@ -837,7 +1013,10 @@
 		},
 		"id": "S19d35e0f9a27cecd029",
 		"legacySongID": 66,
-		"searchTerms": ["しあにん", "시아닌"],
+		"searchTerms": [
+			"しあにん",
+			"시아닌"
+		],
 		"title": "cyanine"
 	},
 	{
@@ -848,7 +1027,11 @@
 		},
 		"id": "S19d35e0f9a3e75b132b",
 		"legacySongID": 67,
-		"searchTerms": ["どりーむごーずおん", "드림 고즈 온", "드림 고스 온"],
+		"searchTerms": [
+			"どりーむごーずおん",
+			"드림 고즈 온",
+			"드림 고스 온"
+		],
 		"title": "Dream goes on"
 	},
 	{
@@ -859,7 +1042,11 @@
 		},
 		"id": "S19d35e0f9a45c4caa10",
 		"legacySongID": 68,
-		"searchTerms": ["じゃーにー", "저니", "져니"],
+		"searchTerms": [
+			"じゃーにー",
+			"저니",
+			"져니"
+		],
 		"title": "Journey"
 	},
 	{
@@ -870,7 +1057,10 @@
 		},
 		"id": "S19d35e0f9a53be4ca00",
 		"legacySongID": 69,
-		"searchTerms": ["すぺくた", "스펙타"],
+		"searchTerms": [
+			"すぺくた",
+			"스펙타"
+		],
 		"title": "Specta"
 	},
 	{
@@ -881,7 +1071,10 @@
 		},
 		"id": "S19d35e0f9a6750f0d53",
 		"legacySongID": 70,
-		"searchTerms": ["くおん", "쿠온"],
+		"searchTerms": [
+			"くおん",
+			"쿠온"
+		],
 		"title": "Quon"
 	},
 	{
@@ -892,7 +1085,10 @@
 		},
 		"id": "S19d35e0f9a7278199e9",
 		"legacySongID": 71,
-		"searchTerms": ["さいろ", "사이로"],
+		"searchTerms": [
+			"さいろ",
+			"사이로"
+		],
 		"title": "Syro"
 	},
 	{
@@ -903,7 +1099,10 @@
 		},
 		"id": "S19d35e0f9a81aa9a816",
 		"legacySongID": 72,
-		"searchTerms": ["りいんべんと", "리인벤트"],
+		"searchTerms": [
+			"りいんべんと",
+			"리인벤트"
+		],
 		"title": "Reinvent"
 	},
 	{
@@ -914,7 +1113,11 @@
 		},
 		"id": "S19d35e0f9a98969fa99",
 		"legacySongID": 73,
-		"searchTerms": ["さいれんとらっしゅ", "사일런트 러시", "사일런트 러쉬"],
+		"searchTerms": [
+			"さいれんとらっしゅ",
+			"사일런트 러시",
+			"사일런트 러쉬"
+		],
 		"title": "Silent Rush"
 	},
 	{
@@ -925,7 +1128,10 @@
 		},
 		"id": "S19d35e0f9aabbbe0047",
 		"legacySongID": 74,
-		"searchTerms": ["しんぎゅらりてぃ", "싱귤래리티"],
+		"searchTerms": [
+			"しんぎゅらりてぃ",
+			"싱귤래리티"
+		],
 		"title": "Singularity"
 	},
 	{
@@ -936,7 +1142,10 @@
 		},
 		"id": "S19d35e0f9ab0ee5b928",
 		"legacySongID": 75,
-		"searchTerms": ["しんぎゅらりてぃ", "싱귤래리티"],
+		"searchTerms": [
+			"しんぎゅらりてぃ",
+			"싱귤래리티"
+		],
 		"title": "Singularity VVVIP"
 	},
 	{
@@ -947,7 +1156,10 @@
 		},
 		"id": "S19d35e0f9acdda5734d",
 		"legacySongID": 76,
-		"searchTerms": ["めもりーふぉれすと", "메모리 포레스트"],
+		"searchTerms": [
+			"めもりーふぉれすと",
+			"메모리 포레스트"
+		],
 		"title": "Memory Forest"
 	},
 	{
@@ -958,7 +1170,11 @@
 		},
 		"id": "S19d35e0f9ad883d2346",
 		"legacySongID": 77,
-		"searchTerms": ["すとろんぐほーるず", "스트롱홀드", "스트롱홀즈"],
+		"searchTerms": [
+			"すとろんぐほーるず",
+			"스트롱홀드",
+			"스트롱홀즈"
+		],
 		"title": "Strongholds"
 	},
 	{
@@ -969,7 +1185,10 @@
 		},
 		"id": "S19d35e0f9ae6401b865",
 		"legacySongID": 78,
-		"searchTerms": ["ねくすととぅーゆー", "넥스트 투 유"],
+		"searchTerms": [
+			"ねくすととぅーゆー",
+			"넥스트 투 유"
+		],
 		"title": "next to you"
 	},
 	{
@@ -980,7 +1199,10 @@
 		},
 		"id": "S19d35e0f9af903a60ab",
 		"legacySongID": 79,
-		"searchTerms": ["めたりっくぱにっしゃー", "메탈릭 퍼니셔"],
+		"searchTerms": [
+			"めたりっくぱにっしゃー",
+			"메탈릭 퍼니셔"
+		],
 		"title": "Metallic Punisher"
 	},
 	{
@@ -991,18 +1213,28 @@
 		},
 		"id": "S19d35e0f9b017076bdb",
 		"legacySongID": 80,
-		"searchTerms": ["ぶらすたー", "블라스터"],
+		"searchTerms": [
+			"ぶらすたー",
+			"블라스터"
+		],
 		"title": "Blaster"
 	},
 	{
-		"altTitles": ["guardina"],
+		"altTitles": [
+			"guardina"
+		],
 		"artist": "Aoi",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0f9b1271213be",
 		"legacySongID": 81,
-		"searchTerms": ["guardina", "がーでぃな", "가디나", "가르디나"],
+		"searchTerms": [
+			"guardina",
+			"がーでぃな",
+			"가디나",
+			"가르디나"
+		],
 		"title": "γuarδina"
 	},
 	{
@@ -1013,7 +1245,11 @@
 		},
 		"id": "S19d35e0f9b2d5199d3c",
 		"legacySongID": 82,
-		"searchTerms": ["かーまいんさいず", "카마인 사이즈", "카마인 사이스"],
+		"searchTerms": [
+			"かーまいんさいず",
+			"카마인 사이즈",
+			"카마인 사이스"
+		],
 		"title": "carmine:scythe"
 	},
 	{
@@ -1024,7 +1260,10 @@
 		},
 		"id": "S19d35e0f9b3bca806cd",
 		"legacySongID": 83,
-		"searchTerms": ["びーぜあ", "비 데어"],
+		"searchTerms": [
+			"びーぜあ",
+			"비 데어"
+		],
 		"title": "Be There"
 	},
 	{
@@ -1050,7 +1289,10 @@
 		},
 		"id": "S19d35e0f9b56053171b",
 		"legacySongID": 85,
-		"searchTerms": ["こーるまいねーむ", "콜 마이 네임"],
+		"searchTerms": [
+			"こーるまいねーむ",
+			"콜 마이 네임"
+		],
 		"title": "Call My Name feat. Yukacco"
 	},
 	{
@@ -1061,11 +1303,16 @@
 		},
 		"id": "S19d35e0f9b66dfba685",
 		"legacySongID": 86,
-		"searchTerms": ["いんかるし", "인카루시"],
+		"searchTerms": [
+			"いんかるし",
+			"인카루시"
+		],
 		"title": "inkar-usi"
 	},
 	{
-		"altTitles": ["九番目の迷路"],
+		"altTitles": [
+			"九番目の迷路"
+		],
 		"artist": "アリスシャッハと魔法の楽団",
 		"data": {
 			"songPack": "Luminous Sky"
@@ -1088,7 +1335,10 @@
 		},
 		"id": "S19d35e0f9b88e4516a3",
 		"legacySongID": 88,
-		"searchTerms": ["ざめっせーじ", "더 메세지"],
+		"searchTerms": [
+			"ざめっせーじ",
+			"더 메세지"
+		],
 		"title": "The Message"
 	},
 	{
@@ -1099,7 +1349,10 @@
 		},
 		"id": "S19d35e0f9b9e044ab34",
 		"legacySongID": 89,
-		"searchTerms": ["さるふぁー", "설퍼"],
+		"searchTerms": [
+			"さるふぁー",
+			"설퍼"
+		],
 		"title": "Sulfur"
 	},
 	{
@@ -1110,7 +1363,10 @@
 		},
 		"id": "S19d35e0f9ba5b0286e3",
 		"legacySongID": 90,
-		"searchTerms": ["はるしおん", "할시온"],
+		"searchTerms": [
+			"はるしおん",
+			"할시온"
+		],
 		"title": "Halcyon"
 	},
 	{
@@ -1121,7 +1377,10 @@
 		},
 		"id": "S19d35e0f9bb4d52fcb5",
 		"legacySongID": 91,
-		"searchTerms": ["えーてるすとらいく", "에테르 스트라이크"],
+		"searchTerms": [
+			"えーてるすとらいく",
+			"에테르 스트라이크"
+		],
 		"title": "Ether Strike"
 	},
 	{
@@ -1132,7 +1391,10 @@
 		},
 		"id": "S19d35e0f9bcb79f05f6",
 		"legacySongID": 92,
-		"searchTerms": ["ふらくちゃーれい", "프랙쳐 레이"],
+		"searchTerms": [
+			"ふらくちゃーれい",
+			"프랙쳐 레이"
+		],
 		"title": "Fracture Ray"
 	},
 	{
@@ -1143,7 +1405,10 @@
 		},
 		"id": "S19d35e0f9bd32ff63d6",
 		"legacySongID": 93,
-		"searchTerms": ["すおみ", "수오미"],
+		"searchTerms": [
+			"すおみ",
+			"수오미"
+		],
 		"title": "Suomi"
 	},
 	{
@@ -1163,14 +1428,21 @@
 		"title": "Bookmaker (2D Version)"
 	},
 	{
-		"altTitles": ["堕楽の園"],
+		"altTitles": [
+			"堕楽の園"
+		],
 		"artist": "gmtn. (witch's slave)",
 		"data": {
 			"songPack": "Arcaea"
 		},
 		"id": "S19d35e0f9bfdde0beec",
 		"legacySongID": 95,
-		"searchTerms": ["だらくのその", "일리걸 파라다이스", "일리갈 파라다이스", "타락의 정원"],
+		"searchTerms": [
+			"だらくのその",
+			"일리걸 파라다이스",
+			"일리갈 파라다이스",
+			"타락의 정원"
+		],
 		"title": "Illegal Paradise"
 	},
 	{
@@ -1181,7 +1453,12 @@
 		},
 		"id": "S19d35e0f9c0eb58720f",
 		"legacySongID": 96,
-		"searchTerms": ["どろっぷでっど", "おーばーでっど", "드롭데드", "드랍데드"],
+		"searchTerms": [
+			"どろっぷでっど",
+			"おーばーでっど",
+			"드롭데드",
+			"드랍데드"
+		],
 		"title": "dropdead"
 	},
 	{
@@ -1192,7 +1469,12 @@
 		},
 		"id": "S19d35e0f9c1c47f4ad2",
 		"legacySongID": 97,
-		"searchTerms": ["どろっぷでっど", "おーばーでっど", "드롭데드", "드랍데드"],
+		"searchTerms": [
+			"どろっぷでっど",
+			"おーばーでっど",
+			"드롭데드",
+			"드랍데드"
+		],
 		"title": "overdead."
 	},
 	{
@@ -1203,7 +1485,10 @@
 		},
 		"id": "S19d35e0f9c2ad842d8e",
 		"legacySongID": 98,
-		"searchTerms": ["ふぉーるんすくえあ", "폴른스퀘어"],
+		"searchTerms": [
+			"ふぉーるんすくえあ",
+			"폴른스퀘어"
+		],
 		"title": "Fallensquare"
 	},
 	{
@@ -1214,11 +1499,16 @@
 		},
 		"id": "S19d35e0f9c4ff74189e",
 		"legacySongID": 99,
-		"searchTerms": ["ねるふ", "네르프"],
+		"searchTerms": [
+			"ねるふ",
+			"네르프"
+		],
 		"title": "Nhelv"
 	},
 	{
-		"altTitles": ["白道、多希望羊と信じありく。"],
+		"altTitles": [
+			"白道、多希望羊と信じありく。"
+		],
 		"artist": "Apo11o program ft. 大瀬良あい",
 		"data": {
 			"songPack": "Arcaea"
@@ -1241,18 +1531,26 @@
 		},
 		"id": "S19d35e0f9c6365062b7",
 		"legacySongID": 101,
-		"searchTerms": ["ぷるがとりうむ", "퍼가토리움"],
+		"searchTerms": [
+			"ぷるがとりうむ",
+			"퍼가토리움"
+		],
 		"title": "Purgatorium"
 	},
 	{
-		"altTitles": ["光"],
+		"altTitles": [
+			"光"
+		],
 		"artist": "THB",
 		"data": {
 			"songPack": "Tone Sphere"
 		},
 		"id": "S19d35e0f9c7b254ba5b",
 		"legacySongID": 102,
-		"searchTerms": ["ひかり", "히카리"],
+		"searchTerms": [
+			"ひかり",
+			"히카리"
+		],
 		"title": "Hikari"
 	},
 	{
@@ -1263,7 +1561,10 @@
 		},
 		"id": "S19d35e0f9c8c4decdcd",
 		"legacySongID": 103,
-		"searchTerms": ["すてーじゃーおーるすてーじくりあー", "스테이저 올 스테이지 클리어"],
+		"searchTerms": [
+			"すてーじゃーおーるすてーじくりあー",
+			"스테이저 올 스테이지 클리어"
+		],
 		"title": "STAGER (ALL STAGE CLEAR)"
 	},
 	{
@@ -1274,7 +1575,11 @@
 		},
 		"id": "S19d35e0f9c9cbaa66e6",
 		"legacySongID": 104,
-		"searchTerms": ["ほーるおぶみらーず", "홀 오브 미러즈", "홀 오브 미러스"],
+		"searchTerms": [
+			"ほーるおぶみらーず",
+			"홀 오브 미러즈",
+			"홀 오브 미러스"
+		],
 		"title": "Hall of Mirrors"
 	},
 	{
@@ -1300,7 +1605,10 @@
 		},
 		"id": "S19d35e0f9cbbde9049f",
 		"legacySongID": 106,
-		"searchTerms": ["てぃふぁれと", "티페리트"],
+		"searchTerms": [
+			"てぃふぁれと",
+			"티페리트"
+		],
 		"title": "Tiferet"
 	},
 	{
@@ -1311,7 +1619,10 @@
 		},
 		"id": "S19d35e0f9cccdfd83bb",
 		"legacySongID": 107,
-		"searchTerms": ["あれくさんどらいと", "알렉산드라이트"],
+		"searchTerms": [
+			"あれくさんどらいと",
+			"알렉산드라이트"
+		],
 		"title": "Alexandrite"
 	},
 	{
@@ -1322,7 +1633,10 @@
 		},
 		"id": "S19d35e0f9cdaac040f7",
 		"legacySongID": 108,
-		"searchTerms": ["るぎあ", "루기아"],
+		"searchTerms": [
+			"るぎあ",
+			"루기아"
+		],
 		"title": "Rugie"
 	},
 	{
@@ -1333,7 +1647,11 @@
 		},
 		"id": "S19d35e0f9ce944950fc",
 		"legacySongID": 109,
-		"searchTerms": ["あすとらるてーる", "あすとらるている", "아스트랄 테일"],
+		"searchTerms": [
+			"あすとらるてーる",
+			"あすとらるている",
+			"아스트랄 테일"
+		],
 		"title": "Astral tale"
 	},
 	{
@@ -1344,7 +1662,10 @@
 		},
 		"id": "S19d35e0f9cfd85b3e93",
 		"legacySongID": 110,
-		"searchTerms": ["ふぁんたじあ", "판타지아"],
+		"searchTerms": [
+			"ふぁんたじあ",
+			"판타지아"
+		],
 		"title": "Phantasia"
 	},
 	{
@@ -1370,11 +1691,17 @@
 		},
 		"id": "S19d35e0f9d16eab5c11",
 		"legacySongID": 112,
-		"searchTerms": ["まーりん", "메를린", "마린"],
+		"searchTerms": [
+			"まーりん",
+			"메를린",
+			"마린"
+		],
 		"title": "MERLIN"
 	},
 	{
-		"altTitles": ["DX超性能フルメタル少女"],
+		"altTitles": [
+			"DX超性能フルメタル少女"
+		],
 		"artist": "IOSYS TRAX (uno with.ちよこ)",
 		"data": {
 			"songPack": "Groove Coaster"
@@ -1397,7 +1724,10 @@
 		},
 		"id": "S19d35e0f9d3bc9e21d0",
 		"legacySongID": 114,
-		"searchTerms": ["おまけのすとろーく", "오마케노 스트로크"],
+		"searchTerms": [
+			"おまけのすとろーく",
+			"오마케노 스트로크"
+		],
 		"title": "OMAKENO Stroke"
 	},
 	{
@@ -1408,7 +1738,10 @@
 		},
 		"id": "S19d35e0f9d46959e670",
 		"legacySongID": 115,
-		"searchTerms": ["すかーれっとらんす", "스칼렛 랜스"],
+		"searchTerms": [
+			"すかーれっとらんす",
+			"스칼렛 랜스"
+		],
 		"title": "Scarlet Lance"
 	},
 	{
@@ -1433,11 +1766,16 @@
 		},
 		"id": "S19d35e0f9d60c3e3428",
 		"legacySongID": 117,
-		"searchTerms": ["りべるたす", "리베르타스"],
+		"searchTerms": [
+			"りべるたす",
+			"리베르타스"
+		],
 		"title": "Libertas"
 	},
 	{
-		"altTitles": ["虚空の夢"],
+		"altTitles": [
+			"虚空の夢"
+		],
 		"artist": "ak+q feat. Sennzai",
 		"data": {
 			"songPack": "Eternal Core"
@@ -1461,7 +1799,10 @@
 		},
 		"id": "S19d35e0f9d8e0f710a1",
 		"legacySongID": 119,
-		"searchTerms": ["あんちてーぜ", "안티테제"],
+		"searchTerms": [
+			"あんちてーぜ",
+			"안티테제"
+		],
 		"title": "Antithese"
 	},
 	{
@@ -1472,7 +1813,10 @@
 		},
 		"id": "S19d35e0f9d9d3716df9",
 		"legacySongID": 120,
-		"searchTerms": ["こらぷしょん", "커럽션"],
+		"searchTerms": [
+			"こらぷしょん",
+			"커럽션"
+		],
 		"title": "Corruption"
 	},
 	{
@@ -1483,7 +1827,11 @@
 		},
 		"id": "S19d35e0f9da848b84e3",
 		"legacySongID": 121,
-		"searchTerms": ["ぶらっくてりとりー", "블랙 테러토리", "블랙 테리토리"],
+		"searchTerms": [
+			"ぶらっくてりとりー",
+			"블랙 테러토리",
+			"블랙 테리토리"
+		],
 		"title": "Black Territory"
 	},
 	{
@@ -1494,7 +1842,11 @@
 		},
 		"id": "S19d35e0f9db51d51eb6",
 		"legacySongID": 122,
-		"searchTerms": ["ゔぃしゃすひろいずむ", "びしゃすひろいずむ", "비셔스 히로이즘"],
+		"searchTerms": [
+			"ゔぃしゃすひろいずむ",
+			"びしゃすひろいずむ",
+			"비셔스 히로이즘"
+		],
 		"title": "Vicious Heroism"
 	},
 	{
@@ -1505,7 +1857,11 @@
 		},
 		"id": "S19d35e0f9dcc95e9aa8",
 		"legacySongID": 123,
-		"searchTerms": ["しあえが", "시아이가", "시에가"],
+		"searchTerms": [
+			"しあえが",
+			"시아이가",
+			"시에가"
+		],
 		"title": "Cyaegha"
 	},
 	{
@@ -1516,7 +1872,12 @@
 		},
 		"id": "S19d35e0f9dd7919875e",
 		"legacySongID": 124,
-		"searchTerms": ["りびじー", "りゔぃじー", "레비지", "래비지"],
+		"searchTerms": [
+			"りびじー",
+			"りゔぃじー",
+			"레비지",
+			"래비지"
+		],
 		"title": "ReviXy"
 	},
 	{
@@ -1527,7 +1888,10 @@
 		},
 		"id": "S19d35e0f9dee8402f03",
 		"legacySongID": 125,
-		"searchTerms": ["ぐりむはーと", "그림하트"],
+		"searchTerms": [
+			"ぐりむはーと",
+			"그림하트"
+		],
 		"title": "Grimheart"
 	},
 	{
@@ -1538,7 +1902,12 @@
 		},
 		"id": "S19d35e0f9dfc071bb9b",
 		"legacySongID": 126,
-		"searchTerms": ["vector", "べくたー", "ゔぇくたー", "벡터"],
+		"searchTerms": [
+			"vector",
+			"べくたー",
+			"ゔぇくたー",
+			"벡터"
+		],
 		"title": "VECTOЯ"
 	},
 	{
@@ -1549,7 +1918,12 @@
 		},
 		"id": "S19d35e0f9e04535b16c",
 		"legacySongID": 127,
-		"searchTerms": ["すーぱーのゔぁ", "すーぱーのば", "수퍼노바", "슈퍼노바"],
+		"searchTerms": [
+			"すーぱーのゔぁ",
+			"すーぱーのば",
+			"수퍼노바",
+			"슈퍼노바"
+		],
 		"title": "SUPERNOVA"
 	},
 	{
@@ -1560,7 +1934,11 @@
 		},
 		"id": "S19d35e0f9e1689fd760",
 		"legacySongID": 128,
-		"searchTerms": ["どっととぅーどっと", "닷 투 닷", "도트 투 도트"],
+		"searchTerms": [
+			"どっととぅーどっと",
+			"닷 투 닷",
+			"도트 투 도트"
+		],
 		"title": "Dot to Dot feat. shully"
 	},
 	{
@@ -1571,18 +1949,29 @@
 		},
 		"id": "S19d35e0f9e25e24bd21",
 		"legacySongID": 129,
-		"searchTerms": ["がらくたどーるぷれい", "がらくたどーるぷれー", "가라쿠타 돌 플레이"],
+		"searchTerms": [
+			"がらくたどーるぷれい",
+			"がらくたどーるぷれー",
+			"가라쿠타 돌 플레이"
+		],
 		"title": "Garakuta Doll Play"
 	},
 	{
-		"altTitles": ["怒槌"],
+		"altTitles": [
+			"怒槌"
+		],
 		"artist": "光吉猛修",
 		"data": {
 			"songPack": "CHUNITHM"
 		},
 		"id": "S19d35e0f9e32bbf536f",
 		"legacySongID": 130,
-		"searchTerms": ["いかずち", "いかづち", "이카즈치", "분노의 망치"],
+		"searchTerms": [
+			"いかずち",
+			"いかづち",
+			"이카즈치",
+			"분노의 망치"
+		],
 		"title": "Ikazuchi"
 	},
 	{
@@ -1593,7 +1982,11 @@
 		},
 		"id": "S19d35e0f9e4519f5da5",
 		"legacySongID": 131,
-		"searchTerms": ["わーるどばんきっしゃー", "わーるどゔぁんきっしゃー", "월드 뱅퀴셔"],
+		"searchTerms": [
+			"わーるどばんきっしゃー",
+			"わーるどゔぁんきっしゃー",
+			"월드 뱅퀴셔"
+		],
 		"title": "World Vanquisher"
 	},
 	{
@@ -1604,7 +1997,11 @@
 		},
 		"id": "S19d35e0f9e566925afe",
 		"legacySongID": 132,
-		"searchTerms": ["どれっどのーと", "드레드노트", "드레드넛"],
+		"searchTerms": [
+			"どれっどのーと",
+			"드레드노트",
+			"드레드넛"
+		],
 		"title": "Dreadnought"
 	},
 	{
@@ -1615,7 +2012,10 @@
 		},
 		"id": "S19d35e0f9e69beaa2dd",
 		"legacySongID": 133,
-		"searchTerms": ["ぱーてぃくるあーつ", "파티클 아츠"],
+		"searchTerms": [
+			"ぱーてぃくるあーつ",
+			"파티클 아츠"
+		],
 		"title": "Particle Arts"
 	},
 	{
@@ -1626,7 +2026,10 @@
 		},
 		"id": "S19d35e0f9e7b6af5989",
 		"legacySongID": 134,
-		"searchTerms": ["ゔぃんでぃけーしょん", "빈디케이션"],
+		"searchTerms": [
+			"ゔぃんでぃけーしょん",
+			"빈디케이션"
+		],
 		"title": "Vindication"
 	},
 	{
@@ -1637,7 +2040,11 @@
 		},
 		"id": "S19d35e0f9e84d630062",
 		"legacySongID": 135,
-		"searchTerms": ["へぶんずどあー", "へゔんずどあー", "헤븐즈도어"],
+		"searchTerms": [
+			"へぶんずどあー",
+			"へゔんずどあー",
+			"헤븐즈도어"
+		],
 		"title": "Heavensdoor"
 	},
 	{
@@ -1648,7 +2055,10 @@
 		},
 		"id": "S19d35e0f9e976f18e0d",
 		"legacySongID": 136,
-		"searchTerms": ["りんぐどじぇねしす", "링드 제네시스"],
+		"searchTerms": [
+			"りんぐどじぇねしす",
+			"링드 제네시스"
+		],
 		"title": "Ringed Genesis"
 	},
 	{
@@ -1659,7 +2069,10 @@
 		},
 		"id": "S19d35e0f9ea3dcd5cba",
 		"legacySongID": 137,
-		"searchTerms": ["ちぇるしー", "첼시"],
+		"searchTerms": [
+			"ちぇるしー",
+			"첼시"
+		],
 		"title": "Chelsea"
 	},
 	{
@@ -1670,11 +2083,16 @@
 		},
 		"id": "S19d35e0f9eb2a8d71b5",
 		"legacySongID": 138,
-		"searchTerms": ["あいうえおーん", "아이우에온"],
+		"searchTerms": [
+			"あいうえおーん",
+			"아이우에온"
+		],
 		"title": "AI[UE]OON"
 	},
 	{
-		"altTitles": ["迷える音色は恋の唄"],
+		"altTitles": [
+			"迷える音色は恋の唄"
+		],
 		"artist": "からとPαnchii少年 feat.はるの",
 		"data": {
 			"songPack": "Sunset Radiance"
@@ -1697,7 +2115,10 @@
 		},
 		"id": "S19d35e0f9edfb3b2639",
 		"legacySongID": 140,
-		"searchTerms": ["たいみーだうんじぇんとりー", "타이 미 다운 젠틀리"],
+		"searchTerms": [
+			"たいみーだうんじぇんとりー",
+			"타이 미 다운 젠틀리"
+		],
 		"title": "Tie me down gently"
 	},
 	{
@@ -1708,7 +2129,11 @@
 		},
 		"id": "S19d35e0f9ee94c8a1f5",
 		"legacySongID": 141,
-		"searchTerms": ["ばるはらぜろ", "ゔぁるはらぜろ", "발할라 제로"],
+		"searchTerms": [
+			"ばるはらぜろ",
+			"ゔぁるはらぜろ",
+			"발할라 제로"
+		],
 		"title": "Valhalla:0"
 	},
 	{
@@ -1719,7 +2144,10 @@
 		},
 		"id": "S19d35e0f9efa0a6a3e2",
 		"legacySongID": 142,
-		"searchTerms": ["みるざむ", "미르잠"],
+		"searchTerms": [
+			"みるざむ",
+			"미르잠"
+		],
 		"title": "Mirzam"
 	},
 	{
@@ -1730,7 +2158,10 @@
 		},
 		"id": "S19d35e0f9f0bbb7fc3c",
 		"legacySongID": 143,
-		"searchTerms": ["だいおーど", "다이오드"],
+		"searchTerms": [
+			"だいおーど",
+			"다이오드"
+		],
 		"title": "Diode"
 	},
 	{
@@ -1741,7 +2172,11 @@
 		},
 		"id": "S19d35e0f9f11a45cbbf",
 		"legacySongID": 144,
-		"searchTerms": ["freefall", "ふりーふぉーる", "프리폴"],
+		"searchTerms": [
+			"freefall",
+			"ふりーふぉーる",
+			"프리폴"
+		],
 		"title": "FREEF4LL"
 	},
 	{
@@ -1752,7 +2187,10 @@
 		},
 		"id": "S19d35e0f9f2f2e94ada",
 		"legacySongID": 145,
-		"searchTerms": ["ぐろーりーろーど", "글로리 로드"],
+		"searchTerms": [
+			"ぐろーりーろーど",
+			"글로리 로드"
+		],
 		"title": "GLORY：ROAD"
 	},
 	{
@@ -1763,7 +2201,10 @@
 		},
 		"id": "S19d35e0f9f3bdbf44e3",
 		"legacySongID": 146,
-		"searchTerms": ["ものくろーむぷりんせす", "모노크롬 프린세스"],
+		"searchTerms": [
+			"ものくろーむぷりんせす",
+			"모노크롬 프린세스"
+		],
 		"title": "Monochrome Princess"
 	},
 	{
@@ -1774,7 +2215,12 @@
 		},
 		"id": "S19d35e0f9f4de57aa13",
 		"legacySongID": 147,
-		"searchTerms": ["へぶんりーかれす", "へゔんりーかれす", "헤븐리 카레스", "헤븐리 커레스"],
+		"searchTerms": [
+			"へぶんりーかれす",
+			"へゔんりーかれす",
+			"헤븐리 카레스",
+			"헤븐리 커레스"
+		],
 		"title": "Heavenly caress"
 	},
 	{
@@ -1785,7 +2231,11 @@
 		},
 		"id": "S19d35e0f9f5ee9838b6",
 		"legacySongID": 148,
-		"searchTerms": ["せんきょう", "센큐", "센큐우"],
+		"searchTerms": [
+			"せんきょう",
+			"센큐",
+			"센큐우"
+		],
 		"title": "Senkyou"
 	},
 	{
@@ -1796,7 +2246,10 @@
 		},
 		"id": "S19d35e0f9f6f046a9cd",
 		"legacySongID": 149,
-		"searchTerms": ["ふぃらめんと", "필라멘트"],
+		"searchTerms": [
+			"ふぃらめんと",
+			"필라멘트"
+		],
 		"title": "Filament"
 	},
 	{
@@ -1824,7 +2277,10 @@
 		},
 		"id": "S19d35e0f9f82483cc7f",
 		"legacySongID": 151,
-		"searchTerms": ["ばとるなんばーわん", "배틀 넘버 원"],
+		"searchTerms": [
+			"ばとるなんばーわん",
+			"배틀 넘버 원"
+		],
 		"title": "BATTLE NO.1"
 	},
 	{
@@ -1835,7 +2291,10 @@
 		},
 		"id": "S19d35e0f9f91227ac34",
 		"legacySongID": 152,
-		"searchTerms": ["らくりまおぶじうぇいすとらんど", "라크리마 오브 더 웨이스트랜드"],
+		"searchTerms": [
+			"らくりまおぶじうぇいすとらんど",
+			"라크리마 오브 더 웨이스트랜드"
+		],
 		"title": "La'qryma of the Wasteland"
 	},
 	{
@@ -1846,7 +2305,11 @@
 		},
 		"id": "S19d35e0f9fa4655d530",
 		"legacySongID": 153,
-		"searchTerms": ["えいんへりやるじょーかー", "えいんへりゃるじょーかー", "에인헤야르 조커"],
+		"searchTerms": [
+			"えいんへりやるじょーかー",
+			"えいんへりゃるじょーかー",
+			"에인헤야르 조커"
+		],
 		"title": "Einherjar Joker"
 	},
 	{
@@ -1857,18 +2320,27 @@
 		},
 		"id": "S19d35e0f9fb196c3899",
 		"legacySongID": 154,
-		"searchTerms": ["いざな", "이자나"],
+		"searchTerms": [
+			"いざな",
+			"이자나"
+		],
 		"title": "IZANA"
 	},
 	{
-		"altTitles": ["最強STRONGER"],
+		"altTitles": [
+			"最強STRONGER"
+		],
 		"artist": "REDALiCE vs USAO",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0f9fc7ce6d81f",
 		"legacySongID": 155,
-		"searchTerms": ["さいきょうすとろんがー", "사이쿄 스트롱거", "최강 스트롱거"],
+		"searchTerms": [
+			"さいきょうすとろんがー",
+			"사이쿄 스트롱거",
+			"최강 스트롱거"
+		],
 		"title": "SAIKYO STRONGER"
 	},
 	{
@@ -1879,7 +2351,10 @@
 		},
 		"id": "S19d35e0f9fd89e7746a",
 		"legacySongID": 156,
-		"searchTerms": ["わーるどえくぜきゅーとみー", "월드 엑스큐트 미"],
+		"searchTerms": [
+			"わーるどえくぜきゅーとみー",
+			"월드 엑스큐트 미"
+		],
 		"title": "world.execute(me);"
 	},
 	{
@@ -1890,7 +2365,10 @@
 		},
 		"id": "S19d35e0f9fe968b6005",
 		"legacySongID": 157,
-		"searchTerms": ["ぶりんくぶりんく", "블링크"],
+		"searchTerms": [
+			"ぶりんくぶりんく",
+			"블링크"
+		],
 		"title": "BLRINK"
 	},
 	{
@@ -1901,7 +2379,11 @@
 		},
 		"id": "S19d35e0f9ff25be60d6",
 		"legacySongID": 158,
-		"searchTerms": ["おぶりびあ", "おぶりゔぃあ", "오블리비아"],
+		"searchTerms": [
+			"おぶりびあ",
+			"おぶりゔぃあ",
+			"오블리비아"
+		],
 		"title": "Oblivia"
 	},
 	{
@@ -1912,7 +2394,11 @@
 		},
 		"id": "S19d35e0fa00994ce900",
 		"legacySongID": 159,
-		"searchTerms": ["あみぐでーた", "아미그다타", "아미그데이타"],
+		"searchTerms": [
+			"あみぐでーた",
+			"아미그다타",
+			"아미그데이타"
+		],
 		"title": "amygdata"
 	},
 	{
@@ -1938,7 +2424,10 @@
 		},
 		"id": "S19d35e0fa0201cc2a4e",
 		"legacySongID": 161,
-		"searchTerms": ["えくりぶりうむ", "이퀼리브리움"],
+		"searchTerms": [
+			"えくりぶりうむ",
+			"이퀼리브리움"
+		],
 		"title": "Equilibrium"
 	},
 	{
@@ -1949,7 +2438,10 @@
 		},
 		"id": "S19d35e0fa035fb914c0",
 		"legacySongID": 162,
-		"searchTerms": ["あんたごにずむ", "안타고니즘"],
+		"searchTerms": [
+			"あんたごにずむ",
+			"안타고니즘"
+		],
 		"title": "Antagonism"
 	},
 	{
@@ -1960,7 +2452,10 @@
 		},
 		"id": "S19d35e0fa04505e46ab",
 		"legacySongID": 163,
-		"searchTerms": ["ろすとでざいあ", "로스트 디자이어"],
+		"searchTerms": [
+			"ろすとでざいあ",
+			"로스트 디자이어"
+		],
 		"title": "Lost Desire"
 	},
 	{
@@ -1971,7 +2466,11 @@
 		},
 		"id": "S19d35e0fa05fb7a3100",
 		"legacySongID": 164,
-		"searchTerms": ["だんたりおん", "단탈리온", "단탈라이온"],
+		"searchTerms": [
+			"だんたりおん",
+			"단탈리온",
+			"단탈라이온"
+		],
 		"title": "Dantalion"
 	},
 	{
@@ -1993,7 +2492,10 @@
 		},
 		"id": "S19d35e0fa0777246c3d",
 		"legacySongID": 166,
-		"searchTerms": ["てんぺすてぃっしも", "템페스티시모"],
+		"searchTerms": [
+			"てんぺすてぃっしも",
+			"템페스티시모"
+		],
 		"title": "Tempestissimo"
 	},
 	{
@@ -2004,7 +2506,10 @@
 		},
 		"id": "S19d35e0fa085df756e1",
 		"legacySongID": 167,
-		"searchTerms": ["あーかゔ", "아카브"],
+		"searchTerms": [
+			"あーかゔ",
+			"아카브"
+		],
 		"title": "Arcahv"
 	},
 	{
@@ -2015,7 +2520,10 @@
 		},
 		"id": "S19d35e0fa09b6a6e90d",
 		"legacySongID": 168,
-		"searchTerms": ["あるてーる", "알테일"],
+		"searchTerms": [
+			"あるてーる",
+			"알테일"
+		],
 		"title": "Altale"
 	},
 	{
@@ -2026,7 +2534,11 @@
 		},
 		"id": "S19d35e0fa0a355013bb",
 		"legacySongID": 169,
-		"searchTerms": ["ぎぶみーあないとめあ", "기브 미 어 나이트메어", "깁 미 어 나이트메어"],
+		"searchTerms": [
+			"ぎぶみーあないとめあ",
+			"기브 미 어 나이트메어",
+			"깁 미 어 나이트메어"
+		],
 		"title": "Give Me a Nightmare"
 	},
 	{
@@ -2037,7 +2549,10 @@
 		},
 		"id": "S19d35e0fa0b7daed3bb",
 		"legacySongID": 170,
-		"searchTerms": ["ぶらっくろーたす", "블랙 로터스"],
+		"searchTerms": [
+			"ぶらっくろーたす",
+			"블랙 로터스"
+		],
 		"title": "Black Lotus"
 	},
 	{
@@ -2048,7 +2563,11 @@
 		},
 		"id": "S19d35e0fa0cdf9c08a7",
 		"legacySongID": 171,
-		"searchTerms": ["げっか", "겍카", "겟카"],
+		"searchTerms": [
+			"げっか",
+			"겍카",
+			"겟카"
+		],
 		"title": "Gekka (Short Version)"
 	},
 	{
@@ -2075,7 +2594,10 @@
 		},
 		"id": "S19d35e0fa0e4f8e4cda",
 		"legacySongID": 173,
-		"searchTerms": ["いふるーと", "이프 루트"],
+		"searchTerms": [
+			"いふるーと",
+			"이프 루트"
+		],
 		"title": "1F√"
 	},
 	{
@@ -2086,7 +2608,10 @@
 		},
 		"id": "S19d35e0fa0f95a5d585",
 		"legacySongID": 174,
-		"searchTerms": ["すかーれっとけーじ", "스칼렛 케이지"],
+		"searchTerms": [
+			"すかーれっとけーじ",
+			"스칼렛 케이지"
+		],
 		"title": "Scarlet Cage"
 	},
 	{
@@ -2097,7 +2622,11 @@
 		},
 		"id": "S19d35e0fa10370a6b23",
 		"legacySongID": 175,
-		"searchTerms": ["ふぇいんとらいと", "페인트 라이트", "페인트 라잇"],
+		"searchTerms": [
+			"ふぇいんとらいと",
+			"페인트 라이트",
+			"페인트 라잇"
+		],
 		"title": "Faint Light (Arcaea Edit)"
 	},
 	{
@@ -2108,7 +2637,10 @@
 		},
 		"id": "S19d35e0fa11edd619aa",
 		"legacySongID": 176,
-		"searchTerms": ["ふぃーるずそーらいと", "필즈 소 라잇"],
+		"searchTerms": [
+			"ふぃーるずそーらいと",
+			"필즈 소 라잇"
+		],
 		"title": "Feels So Right feat. Renko"
 	},
 	{
@@ -2119,7 +2651,10 @@
 		},
 		"id": "S19d35e0fa12565c7e64",
 		"legacySongID": 177,
-		"searchTerms": ["てりくま", "테리크마"],
+		"searchTerms": [
+			"てりくま",
+			"테리크마"
+		],
 		"title": "Teriqma"
 	},
 	{
@@ -2130,7 +2665,10 @@
 		},
 		"id": "S19d35e0fa13369fffd4",
 		"legacySongID": 178,
-		"searchTerms": ["まほろば", "마호로바"],
+		"searchTerms": [
+			"まほろば",
+			"마호로바"
+		],
 		"title": "MAHOROBA"
 	},
 	{
@@ -2141,7 +2679,11 @@
 		},
 		"id": "S19d35e0fa14a723327f",
 		"legacySongID": 179,
-		"searchTerms": ["ばっどてっく", "배드텍", "배드테크"],
+		"searchTerms": [
+			"ばっどてっく",
+			"배드텍",
+			"배드테크"
+		],
 		"title": "BADTEK"
 	},
 	{
@@ -2152,7 +2694,11 @@
 		},
 		"id": "S19d35e0fa1545d90da5",
 		"legacySongID": 180,
-		"searchTerms": ["まりしゃすみすちゃんす", "말리셔스 미스챈스", "말리셔스 미스찬스"],
+		"searchTerms": [
+			"まりしゃすみすちゃんす",
+			"말리셔스 미스챈스",
+			"말리셔스 미스찬스"
+		],
 		"title": "Malicious Mischance"
 	},
 	{
@@ -2163,7 +2709,11 @@
 		},
 		"id": "S19d35e0fa1693cb2935",
 		"legacySongID": 181,
-		"searchTerms": ["ごっとはいぶおぶらー", "ごっとはいゔおぶらー", "갓 하이브 오브 라"],
+		"searchTerms": [
+			"ごっとはいぶおぶらー",
+			"ごっとはいゔおぶらー",
+			"갓 하이브 오브 라"
+		],
 		"title": "Got hive of Ra"
 	},
 	{
@@ -2174,7 +2724,10 @@
 		},
 		"id": "S19d35e0fa17953472fc",
 		"legacySongID": 182,
-		"searchTerms": ["ぶちぎればーさーかー", "부치기레 버서커"],
+		"searchTerms": [
+			"ぶちぎればーさーかー",
+			"부치기레 버서커"
+		],
 		"title": "BUCHiGiRE Berserker"
 	},
 	{
@@ -2185,7 +2738,10 @@
 		},
 		"id": "S19d35e0fa189244c6c6",
 		"legacySongID": 183,
-		"searchTerms": ["ぎゃらくしーふれんず", "갤럭시 프렌즈"],
+		"searchTerms": [
+			"ぎゃらくしーふれんず",
+			"갤럭시 프렌즈"
+		],
 		"title": "Galaxy Friends"
 	},
 	{
@@ -2196,7 +2752,11 @@
 		},
 		"id": "S19d35e0fa19ab1eebfc",
 		"legacySongID": 184,
-		"searchTerms": ["くろすおーばー", "くろすおーゔぁー", "크로스오버"],
+		"searchTerms": [
+			"くろすおーばー",
+			"くろすおーゔぁー",
+			"크로스오버"
+		],
 		"title": "CROSS†OVER"
 	},
 	{
@@ -2207,7 +2767,11 @@
 		},
 		"id": "S19d35e0fa1aa82fecf1",
 		"legacySongID": 185,
-		"searchTerms": ["せらふぃないと", "제라파이나이트", "세라파이나이트"],
+		"searchTerms": [
+			"せらふぃないと",
+			"제라파이나이트",
+			"세라파이나이트"
+		],
 		"title": "Xeraphinite"
 	},
 	{
@@ -2218,7 +2782,10 @@
 		},
 		"id": "S19d35e0fa1b8193b17d",
 		"legacySongID": 186,
-		"searchTerms": ["らぴす", "라피스"],
+		"searchTerms": [
+			"らぴす",
+			"라피스"
+		],
 		"title": "Lapis"
 	},
 	{
@@ -2229,7 +2796,10 @@
 		},
 		"id": "S19d35e0fa1c781228f6",
 		"legacySongID": 187,
-		"searchTerms": ["ざなとす", "자나토스"],
+		"searchTerms": [
+			"ざなとす",
+			"자나토스"
+		],
 		"title": "Xanatos"
 	},
 	{
@@ -2240,18 +2810,28 @@
 		},
 		"id": "S19d35e0fa1d60804bc6",
 		"legacySongID": 188,
-		"searchTerms": ["ぱーぷるばーす", "ぱーぷるゔぁーす", "퍼플 버스"],
+		"searchTerms": [
+			"ぱーぷるばーす",
+			"ぱーぷるゔぁーす",
+			"퍼플 버스"
+		],
 		"title": "Purple Verse"
 	},
 	{
-		"altTitles": ["Alice a la mode"],
+		"altTitles": [
+			"Alice a la mode"
+		],
 		"artist": "Masanori Akita",
 		"data": {
 			"songPack": "Ephemeral Page"
 		},
 		"id": "S19d35e0fa1ecb1fca8d",
 		"legacySongID": 189,
-		"searchTerms": ["alice a la mode", "ありすあらもーど", "앨리스 아 라 모드"],
+		"searchTerms": [
+			"alice a la mode",
+			"ありすあらもーど",
+			"앨리스 아 라 모드"
+		],
 		"title": "Alice à la mode"
 	},
 	{
@@ -2262,7 +2842,11 @@
 		},
 		"id": "S19d35e0fa1f5834dcfe",
 		"legacySongID": 190,
-		"searchTerms": ["えきせんとりっくてーる", "えきせんとりっくている", "에센트릭 테일"],
+		"searchTerms": [
+			"えきせんとりっくてーる",
+			"えきせんとりっくている",
+			"에센트릭 테일"
+		],
 		"title": "Eccentric Tale"
 	},
 	{
@@ -2273,7 +2857,11 @@
 		},
 		"id": "S19d35e0fa20cf2f1ea2",
 		"legacySongID": 191,
-		"searchTerms": ["ありすずすーつけーす", "앨리스즈 수트케이스", "앨리스 수트케이스"],
+		"searchTerms": [
+			"ありすずすーつけーす",
+			"앨리스즈 수트케이스",
+			"앨리스 수트케이스"
+		],
 		"title": "Alice's Suitcase"
 	},
 	{
@@ -2284,7 +2872,10 @@
 		},
 		"id": "S19d35e0fa21006d6f44",
 		"legacySongID": 192,
-		"searchTerms": ["じゃんぷ", "점프"],
+		"searchTerms": [
+			"じゃんぷ",
+			"점프"
+		],
 		"title": "Jump"
 	},
 	{
@@ -2295,7 +2886,10 @@
 		},
 		"id": "S19d35e0fa222f7f6146",
 		"legacySongID": 193,
-		"searchTerms": ["ふぇりす", "펠리스"],
+		"searchTerms": [
+			"ふぇりす",
+			"펠리스"
+		],
 		"title": "Felis"
 	},
 	{
@@ -2306,7 +2900,11 @@
 		},
 		"id": "S19d35e0fa239dc9319d",
 		"legacySongID": 194,
-		"searchTerms": ["びさいどゆー", "びさいじゅー", "비사이드 유"],
+		"searchTerms": [
+			"びさいどゆー",
+			"びさいじゅー",
+			"비사이드 유"
+		],
 		"title": "Beside You"
 	},
 	{
@@ -2317,11 +2915,17 @@
 		},
 		"id": "S19d35e0fa241092affb",
 		"legacySongID": 195,
-		"searchTerms": ["はーとじゃっきん", "하트 잭킹", "하트 잭킨"],
+		"searchTerms": [
+			"はーとじゃっきん",
+			"하트 잭킹",
+			"하트 잭킨"
+		],
 		"title": "Heart Jackin'"
 	},
 	{
-		"altTitles": ["アリス・リデルに捧ぐ"],
+		"altTitles": [
+			"アリス・リデルに捧ぐ"
+		],
 		"artist": "モリモリあつし",
 		"data": {
 			"songPack": "The Journey Onwards (Ephemeral Page)"
@@ -2344,7 +2948,11 @@
 		},
 		"id": "S19d35e0fa2610b4e9d0",
 		"legacySongID": 197,
-		"searchTerms": ["れいじーあでぃくしょん", "레이지 애딕션", "레이지 에딕션"],
+		"searchTerms": [
+			"れいじーあでぃくしょん",
+			"레이지 애딕션",
+			"레이지 에딕션"
+		],
 		"title": "Lazy Addiction"
 	},
 	{
@@ -2355,7 +2963,11 @@
 		},
 		"id": "S19d35e0fa27d83cc8d6",
 		"legacySongID": 198,
-		"searchTerms": ["だずるほっぷ", "대즐 합", "대즐 홉"],
+		"searchTerms": [
+			"だずるほっぷ",
+			"대즐 합",
+			"대즐 홉"
+		],
 		"title": "Dazzle hop"
 	},
 	{
@@ -2376,18 +2988,27 @@
 		"title": "Viyella's Tears"
 	},
 	{
-		"altTitles": ["w4"],
+		"altTitles": [
+			"w4"
+		],
 		"artist": "穴山大輔 VS 光吉猛修 VS Kai",
 		"data": {
 			"songPack": "O.N.G.E.K.I."
 		},
 		"id": "S19d35e0fa294da71f6f",
 		"legacySongID": 200,
-		"searchTerms": ["omega four", "omega4", "おめがふぉー", "오메가 포"],
+		"searchTerms": [
+			"omega four",
+			"omega4",
+			"おめがふぉー",
+			"오메가 포"
+		],
 		"title": "ω4"
 	},
 	{
-		"altTitles": ["四月の雨"],
+		"altTitles": [
+			"四月の雨"
+		],
 		"artist": "cubesato",
 		"data": {
 			"songPack": "maimai"
@@ -2411,7 +3032,11 @@
 		},
 		"id": "S19d35e0fa2bf0bc427e",
 		"legacySongID": 202,
-		"searchTerms": ["せぶんすせんす", "세븐스 센스", "세븐 센스"],
+		"searchTerms": [
+			"せぶんすせんす",
+			"세븐스 센스",
+			"세븐 센스"
+		],
 		"title": "7thSense"
 	},
 	{
@@ -2422,7 +3047,10 @@
 		},
 		"id": "S19d35e0fa2cad4ec1b4",
 		"legacySongID": 203,
-		"searchTerms": ["おしゃますくらんぶる", "오샤마 스크램블!"],
+		"searchTerms": [
+			"おしゃますくらんぶる",
+			"오샤마 스크램블!"
+		],
 		"title": "Oshama Scramble!"
 	},
 	{
@@ -2448,7 +3076,10 @@
 		},
 		"id": "S19d35e0fa2eae451c28",
 		"legacySongID": 205,
-		"searchTerms": ["くらいまっくす", "클라이맥스"],
+		"searchTerms": [
+			"くらいまっくす",
+			"클라이맥스"
+		],
 		"title": "Climax"
 	},
 	{
@@ -2459,11 +3090,16 @@
 		},
 		"id": "S19d35e0fa2f294eed8d",
 		"legacySongID": 206,
-		"searchTerms": ["らすとせれぶれーしょん", "라스트 셀레브레이션"],
+		"searchTerms": [
+			"らすとせれぶれーしょん",
+			"라스트 셀레브레이션"
+		],
 		"title": "Last Celebration"
 	},
 	{
-		"altTitles": ["業 -善なる神とこの世の悪について-"],
+		"altTitles": [
+			"業 -善なる神とこの世の悪について-"
+		],
 		"artist": "光吉猛修 VS 穴山大輔",
 		"data": {
 			"songPack": "Collaboration Chapter 2 (CHUNITHM)"
@@ -2486,7 +3122,11 @@
 		},
 		"id": "S19d35e0fa31165a802a",
 		"legacySongID": 208,
-		"searchTerms": ["ぐろー", "ぐろう", "글로우"],
+		"searchTerms": [
+			"ぐろー",
+			"ぐろう",
+			"글로우"
+		],
 		"title": "Glow"
 	},
 	{
@@ -2497,7 +3137,10 @@
 		},
 		"id": "S19d35e0fa321852dd4d",
 		"legacySongID": 209,
-		"searchTerms": ["あとらくてぃあ", "어트랙티아"],
+		"searchTerms": [
+			"あとらくてぃあ",
+			"어트랙티아"
+		],
 		"title": "AttraqtiA"
 	},
 	{
@@ -2508,18 +3151,29 @@
 		},
 		"id": "S19d35e0fa33ab120e46",
 		"legacySongID": 210,
-		"searchTerms": ["えんちゃんてっどらぶ", "인챈티드 러브"],
+		"searchTerms": [
+			"えんちゃんてっどらぶ",
+			"인챈티드 러브"
+		],
 		"title": "enchanted love"
 	},
 	{
-		"altTitles": ["竹"],
+		"altTitles": [
+			"竹"
+		],
 		"artist": "立秋 feat.ちょこ",
 		"data": {
 			"songPack": "Extend Archive"
 		},
 		"id": "S19d35e0fa34ba1234f0",
 		"legacySongID": 211,
-		"searchTerms": ["たけ", "뱀부", "밤부", "타케", "대나무"],
+		"searchTerms": [
+			"たけ",
+			"뱀부",
+			"밤부",
+			"타케",
+			"대나무"
+		],
 		"title": "Bamboo"
 	},
 	{
@@ -2530,11 +3184,18 @@
 		},
 		"id": "S19d35e0fa35cb98bbdd",
 		"legacySongID": 212,
-		"searchTerms": ["ぎみだぶらっど", "ぎみーだぶらっど", "김미 다 블러드", "김미 더 블러드"],
+		"searchTerms": [
+			"ぎみだぶらっど",
+			"ぎみーだぶらっど",
+			"김미 다 블러드",
+			"김미 더 블러드"
+		],
 		"title": "GIMME DA BLOOD"
 	},
 	{
-		"altTitles": ["ベースラインやってる？ｗ"],
+		"altTitles": [
+			"ベースラインやってる？ｗ"
+		],
 		"artist": "かめりあ feat. ななひら",
 		"data": {
 			"songPack": "Memory Archive"
@@ -2557,7 +3218,10 @@
 		},
 		"id": "S19d35e0fa37ec9e3b5f",
 		"legacySongID": 214,
-		"searchTerms": ["らいふいずぴあの", "라이프 이즈 피아노"],
+		"searchTerms": [
+			"らいふいずぴあの",
+			"라이프 이즈 피아노"
+		],
 		"title": "Life is PIANO"
 	},
 	{
@@ -2568,7 +3232,11 @@
 		},
 		"id": "S19d35e0fa3869b6a9d0",
 		"legacySongID": 215,
-		"searchTerms": ["ぺーぱーうぃっち", "페이퍼 윗치", "페이퍼 위치"],
+		"searchTerms": [
+			"ぺーぱーうぃっち",
+			"페이퍼 윗치",
+			"페이퍼 위치"
+		],
 		"title": "Paper Witch"
 	},
 	{
@@ -2579,7 +3247,10 @@
 		},
 		"id": "S19d35e0fa395024e507",
 		"legacySongID": 216,
-		"searchTerms": ["くりすたるぐらびてぃ", "크리스탈 그래비티"],
+		"searchTerms": [
+			"くりすたるぐらびてぃ",
+			"크리스탈 그래비티"
+		],
 		"title": "Crystal Gravity"
 	},
 	{
@@ -2606,7 +3277,14 @@
 		},
 		"id": "S19d35e0fa3b5f95a178",
 		"legacySongID": 218,
-		"searchTerms": ["loschen", "れっしぇん", "뢰셴", "뢰센", "레셴", "레센"],
+		"searchTerms": [
+			"loschen",
+			"れっしぇん",
+			"뢰셴",
+			"뢰센",
+			"레셴",
+			"레센"
+		],
 		"title": "Löschen"
 	},
 	{
@@ -2617,7 +3295,11 @@
 		},
 		"id": "S19d35e0fa3c4c8e8701",
 		"legacySongID": 219,
-		"searchTerms": ["あいぐれしーかー", "아이글시커", "에이글시커"],
+		"searchTerms": [
+			"あいぐれしーかー",
+			"아이글시커",
+			"에이글시커"
+		],
 		"title": "Aegleseeker"
 	},
 	{
@@ -2628,7 +3310,10 @@
 		},
 		"id": "S19d35e0fa3dac6bbcfe",
 		"legacySongID": 220,
-		"searchTerms": ["こーすたるはいうぇい", "코스탈 하이웨이"],
+		"searchTerms": [
+			"こーすたるはいうぇい",
+			"코스탈 하이웨이"
+		],
 		"title": "Coastal Highway"
 	},
 	{
@@ -2639,7 +3324,12 @@
 		},
 		"id": "S19d35e0fa3e087268f4",
 		"legacySongID": 221,
-		"searchTerms": ["odysseia", "おでゅっせいあ", "오딧세이아", "오디세이아"],
+		"searchTerms": [
+			"odysseia",
+			"おでゅっせいあ",
+			"오딧세이아",
+			"오디세이아"
+		],
 		"title": "ΟΔΥΣΣΕΙΑ"
 	},
 	{
@@ -2650,7 +3340,11 @@
 		},
 		"id": "S19d35e0fa3f8eea353c",
 		"legacySongID": 222,
-		"searchTerms": ["おーばーうぇるむ", "오버웸", "오버웰름"],
+		"searchTerms": [
+			"おーばーうぇるむ",
+			"오버웸",
+			"오버웰름"
+		],
 		"title": "Overwhelm"
 	},
 	{
@@ -2661,7 +3355,11 @@
 		},
 		"id": "S19d35e0fa4098955202",
 		"legacySongID": 223,
-		"searchTerms": ["ばんだりずむ", "ゔぁんだりずむ", "반달리즘"],
+		"searchTerms": [
+			"ばんだりずむ",
+			"ゔぁんだりずむ",
+			"반달리즘"
+		],
 		"title": "Vandalism"
 	},
 	{
@@ -2672,7 +3370,11 @@
 		},
 		"id": "S19d35e0fa417b9ba015",
 		"legacySongID": 224,
-		"searchTerms": ["たーぼちゃーじゃー", "터보차저", "터보챠저"],
+		"searchTerms": [
+			"たーぼちゃーじゃー",
+			"터보차저",
+			"터보챠저"
+		],
 		"title": "Turbocharger"
 	},
 	{
@@ -2683,29 +3385,48 @@
 		},
 		"id": "S19d35e0fa428598452a",
 		"legacySongID": 225,
-		"searchTerms": ["じうるてぃましー", "じあるてぃましー", "더 울티머시", "더 울티마시"],
+		"searchTerms": [
+			"じうるてぃましー",
+			"じあるてぃましー",
+			"더 울티머시",
+			"더 울티마시"
+		],
 		"title": "THE ULTIMACY"
 	},
 	{
-		"altTitles": ["烈華RESONANCE"],
+		"altTitles": [
+			"烈華RESONANCE"
+		],
 		"artist": "REDALiCE vs Kobaryo",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0fa43a5b4a934",
 		"legacySongID": 226,
-		"searchTerms": ["れっかれぞなんす", "렉카 레조넌스", "렛카 레조넌스", "열화 레조넌스"],
+		"searchTerms": [
+			"れっかれぞなんす",
+			"렉카 레조넌스",
+			"렛카 레조넌스",
+			"열화 레조넌스"
+		],
 		"title": "REKKA RESONANCE"
 	},
 	{
-		"altTitles": ["狂言綺語"],
+		"altTitles": [
+			"狂言綺語"
+		],
 		"artist": "影虎。 & ikaruga_nex",
 		"data": {
 			"songPack": "Extend Archive"
 		},
 		"id": "S19d35e0fa4460954144",
 		"legacySongID": 227,
-		"searchTerms": ["きょうげんきご", "폴스 임벨리시먼트", "쿄겐키고", "광언기어"],
+		"searchTerms": [
+			"きょうげんきご",
+			"폴스 임벨리시먼트",
+			"쿄겐키고",
+			"광언기어"
+		],
 		"title": "False Embellishment"
 	},
 	{
@@ -2716,7 +3437,11 @@
 		},
 		"id": "S19d35e0fa459beee280",
 		"legacySongID": 228,
-		"searchTerms": ["はいぶまいんど", "はいゔまいんど", "하이브마인드"],
+		"searchTerms": [
+			"はいぶまいんど",
+			"はいゔまいんど",
+			"하이브마인드"
+		],
 		"title": "HIVEMIND"
 	},
 	{
@@ -2727,7 +3452,11 @@
 		},
 		"id": "S19d35e0fa46cf475299",
 		"legacySongID": 229,
-		"searchTerms": ["せくりゅーじょん", "세클루전", "서클루전"],
+		"searchTerms": [
+			"せくりゅーじょん",
+			"세클루전",
+			"서클루전"
+		],
 		"title": "Seclusion"
 	},
 	{
@@ -2738,7 +3467,10 @@
 		},
 		"id": "S19d35e0fa47931a4eaa",
 		"legacySongID": 230,
-		"searchTerms": ["すもーるくらうどしゅがーきゃんでぃ", "스몰 클라우드 슈가 캔디"],
+		"searchTerms": [
+			"すもーるくらうどしゅがーきゃんでぃ",
+			"스몰 클라우드 슈가 캔디"
+		],
 		"title": "Small Cloud Sugar Candy"
 	},
 	{
@@ -2749,11 +3481,17 @@
 		},
 		"id": "S19d35e0fa486454c5ee",
 		"legacySongID": 231,
-		"searchTerms": ["あるたーえーる", "알터에일", "얼터에일"],
+		"searchTerms": [
+			"あるたーえーる",
+			"알터에일",
+			"얼터에일"
+		],
 		"title": "AlterAle"
 	},
 	{
-		"altTitles": ["光速神授説 - Divine Light of Myriad -"],
+		"altTitles": [
+			"光速神授説 - Divine Light of Myriad -"
+		],
 		"artist": "yoho",
 		"data": {
 			"songPack": "Light of Salvation (Esoteric Order)"
@@ -2792,7 +3530,10 @@
 		},
 		"id": "S19d35e0fa4bdc58d280",
 		"legacySongID": 234,
-		"searchTerms": ["くおん", "쿠온"],
+		"searchTerms": [
+			"くおん",
+			"쿠온"
+		],
 		"title": "Quon"
 	},
 	{
@@ -2803,7 +3544,11 @@
 		},
 		"id": "S19d35e0fa4c4ee450b4",
 		"legacySongID": 235,
-		"searchTerms": ["うぃずゆー", "윗 유", "위드 유"],
+		"searchTerms": [
+			"うぃずゆー",
+			"윗 유",
+			"위드 유"
+		],
 		"title": "with U"
 	},
 	{
@@ -2814,7 +3559,10 @@
 		},
 		"id": "S19d35e0fa4d8d79f34c",
 		"legacySongID": 236,
-		"searchTerms": ["じぇのさいだー", "제노사이더"],
+		"searchTerms": [
+			"じぇのさいだー",
+			"제노사이더"
+		],
 		"title": "GENOCIDER"
 	},
 	{
@@ -2854,14 +3602,21 @@
 		"title": "Sheriruth (Laur Remix)"
 	},
 	{
-		"altTitles": ["緋纏いの宵"],
+		"altTitles": [
+			"緋纏いの宵"
+		],
 		"artist": "Freezer feat.妃苺",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0fa50190eec5e",
 		"legacySongID": 239,
-		"searchTerms": ["ひまといのよい", "이브닝 인 스칼렛", "히마토이노 요이", "주홍을 두른 밤"],
+		"searchTerms": [
+			"ひまといのよい",
+			"이브닝 인 스칼렛",
+			"히마토이노 요이",
+			"주홍을 두른 밤"
+		],
 		"title": "Evening in Scarlet"
 	},
 	{
@@ -2872,7 +3627,10 @@
 		},
 		"id": "S19d35e0fa5108f56fbf",
 		"legacySongID": 240,
-		"searchTerms": ["ぶるーこめっと", "블루 코멧"],
+		"searchTerms": [
+			"ぶるーこめっと",
+			"블루 코멧"
+		],
 		"title": "blue comet"
 	},
 	{
@@ -2898,7 +3656,10 @@
 		},
 		"id": "S19d35e0fa5301ab4c32",
 		"legacySongID": 242,
-		"searchTerms": ["げんがおぞ", "겐가오조"],
+		"searchTerms": [
+			"げんがおぞ",
+			"겐가오조"
+		],
 		"title": "G e n g a o z o"
 	},
 	{
@@ -2909,7 +3670,10 @@
 		},
 		"id": "S19d35e0fa54defcb96a",
 		"legacySongID": 243,
-		"searchTerms": ["ごーるでんすろーたらー", "골든슬러터러"],
+		"searchTerms": [
+			"ごーるでんすろーたらー",
+			"골든슬러터러"
+		],
 		"title": "goldenslaughterer"
 	},
 	{
@@ -2920,7 +3684,10 @@
 		},
 		"id": "S19d35e0fa558b97f2f5",
 		"legacySongID": 244,
-		"searchTerms": ["らすとえんどこんだくたー", "라스트엔드컨덕터"],
+		"searchTerms": [
+			"らすとえんどこんだくたー",
+			"라스트엔드컨덕터"
+		],
 		"title": "lastendconductor"
 	},
 	{
@@ -2931,7 +3698,11 @@
 		},
 		"id": "S19d35e0fa566883d288",
 		"legacySongID": 245,
-		"searchTerms": ["れどれんとしぇいぷ", "레돌렌트 셰이프", "레돌렌트 쉐이프"],
+		"searchTerms": [
+			"れどれんとしぇいぷ",
+			"레돌렌트 셰이프",
+			"레돌렌트 쉐이프"
+		],
 		"title": "Redolent Shape"
 	},
 	{
@@ -2942,7 +3713,12 @@
 		},
 		"id": "S19d35e0fa5794cde75b",
 		"legacySongID": 246,
-		"searchTerms": ["こすみか", "こずみか", "코스미카", "코즈미카"],
+		"searchTerms": [
+			"こすみか",
+			"こずみか",
+			"코스미카",
+			"코즈미카"
+		],
 		"title": "Cosmica"
 	},
 	{
@@ -2953,7 +3729,10 @@
 		},
 		"id": "S19d35e0fa58a897655b",
 		"legacySongID": 247,
-		"searchTerms": ["あせんと", "어센트"],
+		"searchTerms": [
+			"あせんと",
+			"어센트"
+		],
 		"title": "Ascent"
 	},
 	{
@@ -2964,11 +3743,16 @@
 		},
 		"id": "S19d35e0fa59c152455c",
 		"legacySongID": 248,
-		"searchTerms": ["りぶふぁすとだいやんぐ", "리브 패스트 다이 영"],
+		"searchTerms": [
+			"りぶふぁすとだいやんぐ",
+			"리브 패스트 다이 영"
+		],
 		"title": "Live Fast Die Young"
 	},
 	{
-		"altTitles": ["彩る夏の恋花火"],
+		"altTitles": [
+			"彩る夏の恋花火"
+		],
 		"artist": "karatoPαnchii feat.はるの",
 		"data": {
 			"songPack": "Memory Archive"
@@ -2994,7 +3778,11 @@
 		},
 		"id": "S19d35e0fa5b59d39688",
 		"legacySongID": 250,
-		"searchTerms": ["ふぁーすとすのう", "ふぁーすとすのー", "퍼스트 스노우"],
+		"searchTerms": [
+			"ふぁーすとすのう",
+			"ふぁーすとすのー",
+			"퍼스트 스노우"
+		],
 		"title": "First Snow"
 	},
 	{
@@ -3005,7 +3793,10 @@
 		},
 		"id": "S19d35e0fa5cb7439e54",
 		"legacySongID": 251,
-		"searchTerms": ["ぶるーろーず", "블루 로즈"],
+		"searchTerms": [
+			"ぶるーろーず",
+			"블루 로즈"
+		],
 		"title": "Blue Rose"
 	},
 	{
@@ -3016,18 +3807,29 @@
 		},
 		"id": "S19d35e0fa5d3a5c59ab",
 		"legacySongID": 252,
-		"searchTerms": ["ぶろっくどらいぶらりー", "블록드 라이브러리", "블락드 라이브러리"],
+		"searchTerms": [
+			"ぶろっくどらいぶらりー",
+			"블록드 라이브러리",
+			"블락드 라이브러리"
+		],
 		"title": "Blocked Library"
 	},
 	{
-		"altTitles": ["neo kosmo"],
+		"altTitles": [
+			"neo kosmo"
+		],
 		"artist": "ak+q × Street",
 		"data": {
 			"songPack": "Divided Heart"
 		},
 		"id": "S19d35e0fa5e1b94fd78",
 		"legacySongID": 253,
-		"searchTerms": ["neo kosmo", "ねおこすも", "네오 코스모", "네오 코즈모"],
+		"searchTerms": [
+			"neo kosmo",
+			"ねおこすも",
+			"네오 코스모",
+			"네오 코즈모"
+		],
 		"title": "nέο κόsmo"
 	},
 	{
@@ -3038,7 +3840,10 @@
 		},
 		"id": "S19d35e0fa5faef2fb9a",
 		"legacySongID": 254,
-		"searchTerms": ["らいとにんぐすくりゅー", "라이트닝 스크류"],
+		"searchTerms": [
+			"らいとにんぐすくりゅー",
+			"라이트닝 스크류"
+		],
 		"title": "Lightning Screw"
 	},
 	{
@@ -3049,7 +3854,11 @@
 		},
 		"id": "S19d35e0fa60d20cd51c",
 		"legacySongID": 255,
-		"searchTerms": ["らいとおぶみゅーず", "라이츠 오브 뮤즈", "라이트 오브 뮤즈"],
+		"searchTerms": [
+			"らいとおぶみゅーず",
+			"라이츠 오브 뮤즈",
+			"라이트 오브 뮤즈"
+		],
 		"title": "Lights of Muse"
 	},
 	{
@@ -3060,18 +3869,28 @@
 		},
 		"id": "S19d35e0fa61117ee3a8",
 		"legacySongID": 256,
-		"searchTerms": ["ふぁいなるすてっぷ", "파이널 스텝"],
+		"searchTerms": [
+			"ふぁいなるすてっぷ",
+			"파이널 스텝"
+		],
 		"title": "Final Step!"
 	},
 	{
-		"altTitles": ["秋の陽炎"],
+		"altTitles": [
+			"秋の陽炎"
+		],
 		"artist": "karatoPαnchii feat.はるの",
 		"data": {
 			"songPack": "Muse Dash"
 		},
 		"id": "S19d35e0fa628dd8c4db",
 		"legacySongID": 257,
-		"searchTerms": ["あきのかげろう", "헤이즈 오브 어텀", "아키노 카게로우", "가을의 아지랑이"],
+		"searchTerms": [
+			"あきのかげろう",
+			"헤이즈 오브 어텀",
+			"아키노 카게로우",
+			"가을의 아지랑이"
+		],
 		"title": "Haze of Autumn"
 	},
 	{
@@ -3082,7 +3901,10 @@
 		},
 		"id": "S19d35e0fa63218a79fd",
 		"legacySongID": 258,
-		"searchTerms": ["めでゅーさ", "메두사"],
+		"searchTerms": [
+			"めでゅーさ",
+			"메두사"
+		],
 		"title": "Medusa"
 	},
 	{
@@ -3093,7 +3915,10 @@
 		},
 		"id": "S19d35e0fa64e7874a7c",
 		"legacySongID": 259,
-		"searchTerms": ["いにっと", "이닛"],
+		"searchTerms": [
+			"いにっと",
+			"이닛"
+		],
 		"title": "init()"
 	},
 	{
@@ -3104,7 +3929,10 @@
 		},
 		"id": "S19d35e0fa6566928758",
 		"legacySongID": 260,
-		"searchTerms": ["いんたーねっとおーばーどーず", "인터넷 오버도즈"],
+		"searchTerms": [
+			"いんたーねっとおーばーどーず",
+			"인터넷 오버도즈"
+		],
 		"title": "INTERNET OVERDOSE"
 	},
 	{
@@ -3115,7 +3943,10 @@
 		},
 		"id": "S19d35e0fa668d2d3094",
 		"legacySongID": 261,
-		"searchTerms": ["さくらふぶき", "사쿠라 후부키"],
+		"searchTerms": [
+			"さくらふぶき",
+			"사쿠라 후부키"
+		],
 		"title": "Sakura Fubuki"
 	},
 	{
@@ -3126,7 +3957,10 @@
 		},
 		"id": "S19d35e0fa6762e9380b",
 		"legacySongID": 262,
-		"searchTerms": ["ぬるこんとろーる", "널컨트롤"],
+		"searchTerms": [
+			"ぬるこんとろーる",
+			"널컨트롤"
+		],
 		"title": "NULCTRL"
 	},
 	{
@@ -3152,7 +3986,12 @@
 		},
 		"id": "S19d35e0fa69d532af2d",
 		"legacySongID": 264,
-		"searchTerms": ["ねおうぃんぐす", "ねおういんぐす", "네오 윙즈", "네오 윙스"],
+		"searchTerms": [
+			"ねおうぃんぐす",
+			"ねおういんぐす",
+			"네오 윙즈",
+			"네오 윙스"
+		],
 		"title": "NEO WINGS"
 	},
 	{
@@ -3163,7 +4002,10 @@
 		},
 		"id": "S19d35e0fa6a987d674c",
 		"legacySongID": 265,
-		"searchTerms": ["きっしんぐるしふぁー", "키싱 루시퍼"],
+		"searchTerms": [
+			"きっしんぐるしふぁー",
+			"키싱 루시퍼"
+		],
 		"title": "Kissing Lucifer"
 	},
 	{
@@ -3191,7 +4033,12 @@
 		},
 		"id": "S19d35e0fa6cb5c1b3b8",
 		"legacySongID": 267,
-		"searchTerms": ["あうるげるみる", "아울겔미르", "아우겔미르", "아우르겔미르"],
+		"searchTerms": [
+			"あうるげるみる",
+			"아울겔미르",
+			"아우겔미르",
+			"아우르겔미르"
+		],
 		"title": "Aurgelmir"
 	},
 	{
@@ -3202,7 +4049,11 @@
 		},
 		"id": "S19d35e0fa6d66472924",
 		"legacySongID": 268,
-		"searchTerms": ["へっどぼんくえいく", "へっどぼんくえーく", "헤드 북 봉크 에이크"],
+		"searchTerms": [
+			"へっどぼんくえいく",
+			"へっどぼんくえーく",
+			"헤드 북 봉크 에이크"
+		],
 		"title": "Head BONK ache"
 	},
 	{
@@ -3213,7 +4064,10 @@
 		},
 		"id": "S19d35e0fa6e0fa7a287",
 		"legacySongID": 269,
-		"searchTerms": ["でぃーでぃーでぃー", "디디디"],
+		"searchTerms": [
+			"でぃーでぃーでぃー",
+			"디디디"
+		],
 		"title": "DDD"
 	},
 	{
@@ -3224,7 +4078,10 @@
 		},
 		"id": "S19d35e0fa6f1369a395",
 		"legacySongID": 270,
-		"searchTerms": ["ぷりずむ", "프리즘"],
+		"searchTerms": [
+			"ぷりずむ",
+			"프리즘"
+		],
 		"title": "Prism"
 	},
 	{
@@ -3235,7 +4092,10 @@
 		},
 		"id": "S19d35e0fa70a64a8dc0",
 		"legacySongID": 271,
-		"searchTerms": ["ぷろとふりっかー", "프로토플리커"],
+		"searchTerms": [
+			"ぷろとふりっかー",
+			"프로토플리커"
+		],
 		"title": "Protoflicker"
 	},
 	{
@@ -3246,29 +4106,43 @@
 		},
 		"id": "S19d35e0fa717076ec25",
 		"legacySongID": 272,
-		"searchTerms": ["すていしす", "스태이시스"],
+		"searchTerms": [
+			"すていしす",
+			"스태이시스"
+		],
 		"title": "Stasis"
 	},
 	{
-		"altTitles": ["ピコPico*とらんすれーしょんっ！"],
+		"altTitles": [
+			"ピコPico*とらんすれーしょんっ！"
+		],
 		"artist": "t+pazolite,ななひら,Cranky,Pico*",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0fa72d5e1fafd",
 		"legacySongID": 273,
-		"searchTerms": ["ぴこぴことらんすれーしょんっ", "피코 피코 트랜슬레이션"],
+		"searchTerms": [
+			"ぴこぴことらんすれーしょんっ",
+			"피코 피코 트랜슬레이션"
+		],
 		"title": "PICO-Pico-Translation!"
 	},
 	{
-		"altTitles": ["ネコノテ・カリタガール"],
+		"altTitles": [
+			"ネコノテ・カリタガール"
+		],
 		"artist": "Ino(chronoize)",
 		"data": {
 			"songPack": "Arcaea"
 		},
 		"id": "S19d35e0fa73b1644277",
 		"legacySongID": 274,
-		"searchTerms": ["댄싱 온 어 캣츠 포", "네코노테 카리타가루", "고양이 손 빌리고싶어걸"],
+		"searchTerms": [
+			"댄싱 온 어 캣츠 포",
+			"네코노테 카리타가루",
+			"고양이 손 빌리고싶어걸"
+		],
 		"title": "Dancin' on a Cat's Paw"
 	},
 	{
@@ -3279,7 +4153,11 @@
 		},
 		"id": "S19d35e0fa74957a240a",
 		"legacySongID": 275,
-		"searchTerms": ["mu", "みゅー", "뮤"],
+		"searchTerms": [
+			"mu",
+			"みゅー",
+			"뮤"
+		],
 		"title": "μ"
 	},
 	{
@@ -3290,7 +4168,10 @@
 		},
 		"id": "S19d35e0fa75b533c30b",
 		"legacySongID": 276,
-		"searchTerms": ["さんすきあ", "산 스키아"],
+		"searchTerms": [
+			"さんすきあ",
+			"산 스키아"
+		],
 		"title": "san skia"
 	},
 	{
@@ -3301,11 +4182,17 @@
 		},
 		"id": "S19d35e0fa76641f3aec",
 		"legacySongID": 277,
-		"searchTerms": ["あるたいる", "알타이르", "알테어"],
+		"searchTerms": [
+			"あるたいる",
+			"알타이르",
+			"알테어"
+		],
 		"title": "Altair (feat. *spiLa*)"
 	},
 	{
-		"altTitles": ["無機質世界に彩を"],
+		"altTitles": [
+			"無機質世界に彩を"
+		],
 		"artist": "MisomyL",
 		"data": {
 			"songPack": "Arcaea"
@@ -3328,7 +4215,11 @@
 		},
 		"id": "S19d35e0fa78c16db666",
 		"legacySongID": 279,
-		"searchTerms": ["とらっぷくろー", "とらっぷくろう", "트랩 크로우"],
+		"searchTerms": [
+			"とらっぷくろー",
+			"とらっぷくろう",
+			"트랩 크로우"
+		],
 		"title": "Trap Crow"
 	},
 	{
@@ -3339,7 +4230,10 @@
 		},
 		"id": "S19d35e0fa791e3350a7",
 		"legacySongID": 280,
-		"searchTerms": ["ぴゅーぱ", "퓨파"],
+		"searchTerms": [
+			"ぴゅーぱ",
+			"퓨파"
+		],
 		"title": "PUPA"
 	},
 	{
@@ -3350,7 +4244,10 @@
 		},
 		"id": "S19d35e0fa7af4336ae1",
 		"legacySongID": 281,
-		"searchTerms": ["でぃふぇくしょん", "디펙션"],
+		"searchTerms": [
+			"でぃふぇくしょん",
+			"디펙션"
+		],
 		"title": "Defection"
 	},
 	{
@@ -3361,18 +4258,28 @@
 		},
 		"id": "S19d35e0fa7b19cbada5",
 		"legacySongID": 282,
-		"searchTerms": ["いんふぃにっとすとらいふ", "인피니트 스트라이프"],
+		"searchTerms": [
+			"いんふぃにっとすとらいふ",
+			"인피니트 스트라이프"
+		],
 		"title": "Infinite Strife,"
 	},
 	{
-		"altTitles": ["魔王"],
+		"altTitles": [
+			"魔王"
+		],
 		"artist": "sasakure.UK × TJ.hangneil",
 		"data": {
 			"songPack": "Final Verdict"
 		},
 		"id": "S19d35e0fa7c1eb02020",
 		"legacySongID": 283,
-		"searchTerms": ["まおう", "월드 엔더", "마오", "마왕"],
+		"searchTerms": [
+			"まおう",
+			"월드 엔더",
+			"마오",
+			"마왕"
+		],
 		"title": "World Ender"
 	},
 	{
@@ -3383,7 +4290,10 @@
 		},
 		"id": "S19d35e0fa7d6be3f6a6",
 		"legacySongID": 284,
-		"searchTerms": ["ぺんてぃめんと", "펜티먼트"],
+		"searchTerms": [
+			"ぺんてぃめんと",
+			"펜티먼트"
+		],
 		"title": "Pentiment"
 	},
 	{
@@ -3394,7 +4304,10 @@
 		},
 		"id": "S19d35e0fa7e4d38e10b",
 		"legacySongID": 285,
-		"searchTerms": ["あるかなえでん", "아르카나 에덴"],
+		"searchTerms": [
+			"あるかなえでん",
+			"아르카나 에덴"
+		],
 		"title": "Arcana Eden"
 	},
 	{
@@ -3405,7 +4318,10 @@
 		},
 		"id": "S19d35e0fa7fca386fbb",
 		"legacySongID": 286,
-		"searchTerms": ["てすてぃふぁい", "테스티파이"],
+		"searchTerms": [
+			"てすてぃふぁい",
+			"테스티파이"
+		],
 		"title": "Testify"
 	},
 	{
@@ -3416,7 +4332,10 @@
 		},
 		"id": "S19d35e0fa80560f8874",
 		"legacySongID": 287,
-		"searchTerms": ["らぶれすどれす", "러브리스 드레스"],
+		"searchTerms": [
+			"らぶれすどれす",
+			"러브리스 드레스"
+		],
 		"title": "Loveless Dress"
 	},
 	{
@@ -3427,7 +4346,11 @@
 		},
 		"id": "S19d35e0fa81c477d0f4",
 		"legacySongID": 288,
-		"searchTerms": ["らすと", "らすともーめんと", "라스트"],
+		"searchTerms": [
+			"らすと",
+			"らすともーめんと",
+			"라스트"
+		],
 		"title": "Last"
 	},
 	{
@@ -3438,7 +4361,11 @@
 		},
 		"id": "S19d35e0fa8284328004",
 		"legacySongID": 289,
-		"searchTerms": ["らすと", "らすともーめんと", "라스트"],
+		"searchTerms": [
+			"らすと",
+			"らすともーめんと",
+			"라스트"
+		],
 		"title": "Last | Moment"
 	},
 	{
@@ -3449,7 +4376,10 @@
 		},
 		"id": "S19d35e0fa83ef3285d9",
 		"legacySongID": 290,
-		"searchTerms": ["らすとえたにてぃー", "라스트 이터니티"],
+		"searchTerms": [
+			"らすとえたにてぃー",
+			"라스트 이터니티"
+		],
 		"title": "Last | Eternity"
 	},
 	{
@@ -3460,18 +4390,29 @@
 		},
 		"id": "S19d35e0fa84bdb2386a",
 		"legacySongID": 291,
-		"searchTerms": ["かりまかるま", "かりーまかるま", "칼리마 카르마"],
+		"searchTerms": [
+			"かりまかるま",
+			"かりーまかるま",
+			"칼리마 카르마"
+		],
 		"title": "Callima Karma"
 	},
 	{
-		"altTitles": ["心"],
+		"altTitles": [
+			"心"
+		],
 		"artist": "削除 (Violin : Katali)",
 		"data": {
 			"songPack": "Collaboration Chapter 2 (O.N.G.E.K.I.)"
 		},
 		"id": "S19d35e0fa8578b86c98",
 		"legacySongID": 292,
-		"searchTerms": ["こころ", "하트", "코코로", "마음"],
+		"searchTerms": [
+			"こころ",
+			"하트",
+			"코코로",
+			"마음"
+		],
 		"title": "Heart"
 	},
 	{
@@ -3482,7 +4423,11 @@
 		},
 		"id": "S19d35e0fa86b841f64f",
 		"legacySongID": 293,
-		"searchTerms": ["あいでゅれい", "아이 드루", "아이 드류"],
+		"searchTerms": [
+			"あいでゅれい",
+			"아이 드루",
+			"아이 드류"
+		],
 		"title": "Ai Drew"
 	},
 	{
@@ -3493,7 +4438,11 @@
 		},
 		"id": "S19d35e0fa8721b23fcf",
 		"legacySongID": 294,
-		"searchTerms": ["ふらっふぃーふらっしゅ", "플러피 플래시", "플러피 플래쉬"],
+		"searchTerms": [
+			"ふらっふぃーふらっしゅ",
+			"플러피 플래시",
+			"플러피 플래쉬"
+		],
 		"title": "FLUFFY FLASH"
 	},
 	{
@@ -3521,7 +4470,10 @@
 		},
 		"id": "S19d35e0fa89c465df98",
 		"legacySongID": 296,
-		"searchTerms": ["らみあ", "라미아"],
+		"searchTerms": [
+			"らみあ",
+			"라미아"
+		],
 		"title": "LAMIA"
 	},
 	{
@@ -3532,7 +4484,10 @@
 		},
 		"id": "S19d35e0fa8a09568b4e",
 		"legacySongID": 297,
-		"searchTerms": ["ふりーまいせるふ", "프리 마이셀프"],
+		"searchTerms": [
+			"ふりーまいせるふ",
+			"프리 마이셀프"
+		],
 		"title": "Free Myself"
 	},
 	{
@@ -3543,7 +4498,10 @@
 		},
 		"id": "S19d35e0fa8bcea53d4a",
 		"legacySongID": 298,
-		"searchTerms": ["こころこすめてぃっく", "코코로 코스메틱"],
+		"searchTerms": [
+			"こころこすめてぃっく",
+			"코코로 코스메틱"
+		],
 		"title": "cocoro*cosmetic"
 	},
 	{
@@ -3554,22 +4512,32 @@
 		},
 		"id": "S19d35e0fa8c10a31ee4",
 		"legacySongID": 299,
-		"searchTerms": ["かぺら", "카펠라"],
+		"searchTerms": [
+			"かぺら",
+			"카펠라"
+		],
 		"title": "Capella"
 	},
 	{
-		"altTitles": ["だいあるのーと"],
+		"altTitles": [
+			"だいあるのーと"
+		],
 		"artist": "七草くりむ",
 		"data": {
 			"songPack": "Arcaea"
 		},
 		"id": "S19d35e0fa8d4c4bb7e9",
 		"legacySongID": 300,
-		"searchTerms": ["다이얼노트", "다이아루노토"],
+		"searchTerms": [
+			"다이얼노트",
+			"다이아루노토"
+		],
 		"title": "Dialnote"
 	},
 	{
-		"altTitles": ["月に叢雲華に風"],
+		"altTitles": [
+			"月に叢雲華に風"
+		],
 		"artist": "幽閉サテライト",
 		"data": {
 			"songPack": "World Extend"
@@ -3591,7 +4559,11 @@
 		},
 		"id": "S19d35e0fa8f335a1a49",
 		"legacySongID": 302,
-		"searchTerms": ["まんてぃす", "맨티스", "만티스"],
+		"searchTerms": [
+			"まんてぃす",
+			"맨티스",
+			"만티스"
+		],
 		"title": "MANTIS (Arcaea Ultra-Bloodrush VIP)"
 	},
 	{
@@ -3617,7 +4589,10 @@
 		},
 		"id": "S19d35e0fa910bc30954",
 		"legacySongID": 304,
-		"searchTerms": ["あすとらうぉーくするー", "아스트라 워크스루"],
+		"searchTerms": [
+			"あすとらうぉーくするー",
+			"아스트라 워크스루"
+		],
 		"title": "Astra walkthrough"
 	},
 	{
@@ -3628,7 +4603,10 @@
 		},
 		"id": "S19d35e0fa92dfb65ff2",
 		"legacySongID": 305,
-		"searchTerms": ["くろにくる", "크로니클"],
+		"searchTerms": [
+			"くろにくる",
+			"크로니클"
+		],
 		"title": "Chronicle"
 	},
 	{
@@ -3639,7 +4617,11 @@
 		},
 		"id": "S19d35e0fa9347c26bc5",
 		"legacySongID": 306,
-		"searchTerms": ["ぬるあぽふぇにあ", "널 아포페니아", "눌 아포페니아"],
+		"searchTerms": [
+			"ぬるあぽふぇにあ",
+			"널 아포페니아",
+			"눌 아포페니아"
+		],
 		"title": "NULL APOPHENIA"
 	},
 	{
@@ -3650,7 +4632,11 @@
 		},
 		"id": "S19d35e0fa94e8b1b34a",
 		"legacySongID": 307,
-		"searchTerms": ["くりむぞんすろーん", "크림슨 스론", "크림슨 쓰론"],
+		"searchTerms": [
+			"くりむぞんすろーん",
+			"크림슨 스론",
+			"크림슨 쓰론"
+		],
 		"title": "Crimson Throne"
 	},
 	{
@@ -3661,11 +4647,17 @@
 		},
 		"id": "S19d35e0fa955550e05a",
 		"legacySongID": 308,
-		"searchTerms": ["まにっくじあー", "매닉 지어", "마닉 지어"],
+		"searchTerms": [
+			"まにっくじあー",
+			"매닉 지어",
+			"마닉 지어"
+		],
 		"title": "Manic Jeer"
 	},
 	{
-		"altTitles": ["緋色月下、狂咲ノ絶 (nayuta 2017 ver.)"],
+		"altTitles": [
+			"緋色月下、狂咲ノ絶 (nayuta 2017 ver.)"
+		],
 		"artist": "nayuta x 黒鳥(EastNewSound)",
 		"data": {
 			"songPack": "Memory Archive"
@@ -3687,7 +4679,10 @@
 		},
 		"id": "S19d35e0fa970f4ebc25",
 		"legacySongID": 310,
-		"searchTerms": ["れっつろっく", "렛츠 락"],
+		"searchTerms": [
+			"れっつろっく",
+			"렛츠 락"
+		],
 		"title": "Let's Rock (Arcaea mix)"
 	},
 	{
@@ -3698,7 +4693,13 @@
 		},
 		"id": "S19d35e0fa98a7564669",
 		"legacySongID": 311,
-		"searchTerms": ["さいくるす", "さいくるず", "사이클즈", "사이클", "사이클스"],
+		"searchTerms": [
+			"さいくるす",
+			"さいくるず",
+			"사이클즈",
+			"사이클",
+			"사이클스"
+		],
 		"title": "CYCLES"
 	},
 	{
@@ -3709,7 +4710,11 @@
 		},
 		"id": "S19d35e0fa99e6a06bac",
 		"legacySongID": 312,
-		"searchTerms": ["まっくすれいじ", "まっくすれーじ", "맥스레이지"],
+		"searchTerms": [
+			"まっくすれいじ",
+			"まっくすれーじ",
+			"맥스레이지"
+		],
 		"title": "MAXRAGE"
 	},
 	{
@@ -3720,7 +4725,10 @@
 		},
 		"id": "S19d35e0fa9ae3104800",
 		"legacySongID": 313,
-		"searchTerms": ["いんふぃにてぃ", "인피니티"],
+		"searchTerms": [
+			"いんふぃにてぃ",
+			"인피니티"
+		],
 		"title": "[X]"
 	},
 	{
@@ -3731,7 +4739,10 @@
 		},
 		"id": "S19d35e0fa9b2765fe88",
 		"legacySongID": 314,
-		"searchTerms": ["てんぷてーしょん", "템테이션"],
+		"searchTerms": [
+			"てんぷてーしょん",
+			"템테이션"
+		],
 		"title": "TEmPTaTiON"
 	},
 	{
@@ -3742,18 +4753,26 @@
 		},
 		"id": "S19d35e0fa9c3327a154",
 		"legacySongID": 315,
-		"searchTerms": ["ぷりみてぃぶらいつ", "프리미티브 라이츠", "프리미티브 라이트"],
+		"searchTerms": [
+			"ぷりみてぃぶらいつ",
+			"프리미티브 라이츠",
+			"프리미티브 라이트"
+		],
 		"title": "PRIMITIVE LIGHTS"
 	},
 	{
-		"altTitles": ["コスモポップファンクラブ"],
+		"altTitles": [
+			"コスモポップファンクラブ"
+		],
 		"artist": "ナユタン星人",
 		"data": {
 			"songPack": "Collaboration Chapter 3 (CHUNITHM)"
 		},
 		"id": "S19d35e0fa9d1650dd44",
 		"legacySongID": 316,
-		"searchTerms": ["코스모 팝 펀클럽"],
+		"searchTerms": [
+			"코스모 팝 펀클럽"
+		],
 		"title": "Cosmo Pop Funclub"
 	},
 	{
@@ -3764,7 +4783,10 @@
 		},
 		"id": "S19d35e0fa9e43ba9b48",
 		"legacySongID": 317,
-		"searchTerms": ["いんぱくと", "임팩트"],
+		"searchTerms": [
+			"いんぱくと",
+			"임팩트"
+		],
 		"title": "IMPACT"
 	},
 	{
@@ -3775,7 +4797,10 @@
 		},
 		"id": "S19d35e0fa9f7728d625",
 		"legacySongID": 318,
-		"searchTerms": ["じぇねしす", "제네시스"],
+		"searchTerms": [
+			"じぇねしす",
+			"제네시스"
+		],
 		"title": "Genesis"
 	},
 	{
@@ -3786,11 +4811,17 @@
 		},
 		"id": "S19d35e0faa0b34ca847",
 		"legacySongID": 319,
-		"searchTerms": ["とりっくすたーず", "트릭스터즈", "트릭스터스"],
+		"searchTerms": [
+			"とりっくすたーず",
+			"트릭스터즈",
+			"트릭스터스"
+		],
 		"title": "Trrricksters!!"
 	},
 	{
-		"altTitles": ["蜘蛛の糸"],
+		"altTitles": [
+			"蜘蛛の糸"
+		],
 		"artist": "きくお×cosMo＠暴走P feat.影縫英",
 		"data": {
 			"songPack": "Collaboration Chapter 3 (CHUNITHM)"
@@ -3816,7 +4847,10 @@
 		},
 		"id": "S19d35e0faa24a433026",
 		"legacySongID": 321,
-		"searchTerms": ["ろすとえもーしょん", "로스트 이모션"],
+		"searchTerms": [
+			"ろすとえもーしょん",
+			"로스트 이모션"
+		],
 		"title": "Lost Emotion feat. nomico"
 	},
 	{
@@ -3827,7 +4861,10 @@
 		},
 		"id": "S19d35e0faa3562c532b",
 		"legacySongID": 322,
-		"searchTerms": ["ぎみっく", "기믹"],
+		"searchTerms": [
+			"ぎみっく",
+			"기믹"
+		],
 		"title": "GIMMICK"
 	},
 	{
@@ -3838,7 +4875,10 @@
 		},
 		"id": "S19d35e0faa421a03688",
 		"legacySongID": 323,
-		"searchTerms": ["ざさばいばー", "더 서바이버"],
+		"searchTerms": [
+			"ざさばいばー",
+			"더 서바이버"
+		],
 		"title": "The Survivor (Game Edit)"
 	},
 	{
@@ -3849,7 +4889,10 @@
 		},
 		"id": "S19d35e0faa53cb10f55",
 		"legacySongID": 324,
-		"searchTerms": ["にゅーよーくばっくれいず", "뉴욕 백 레이즈"],
+		"searchTerms": [
+			"にゅーよーくばっくれいず",
+			"뉴욕 백 레이즈"
+		],
 		"title": "New York Back Raise"
 	},
 	{
@@ -3860,18 +4903,27 @@
 		},
 		"id": "S19d35e0faa606219d1b",
 		"legacySongID": 325,
-		"searchTerms": ["ぎゃらくてぃっくらぶ", "갤럭틱 러브"],
+		"searchTerms": [
+			"ぎゃらくてぃっくらぶ",
+			"갤럭틱 러브"
+		],
 		"title": "Galactic Love"
 	},
 	{
-		"altTitles": ["無法地点"],
+		"altTitles": [
+			"無法地点"
+		],
 		"artist": "La prière",
 		"data": {
 			"songPack": "World Extend"
 		},
 		"id": "S19d35e0faa73d251631",
 		"legacySongID": 326,
-		"searchTerms": ["むほうちてん", "로우리스 포인트", "로리스 포인트"],
+		"searchTerms": [
+			"むほうちてん",
+			"로우리스 포인트",
+			"로리스 포인트"
+		],
 		"title": "Lawless Point"
 	},
 	{
@@ -3882,11 +4934,16 @@
 		},
 		"id": "S19d35e0faa8dadbcbe3",
 		"legacySongID": 327,
-		"searchTerms": ["ろすといんじあびす", "로스트 인 디 어비스"],
+		"searchTerms": [
+			"ろすといんじあびす",
+			"로스트 인 디 어비스"
+		],
 		"title": "Lost in the Abyss"
 	},
 	{
-		"altTitles": ["ヒュブリスの頂に聳えるのは"],
+		"altTitles": [
+			"ヒュブリスの頂に聳えるのは"
+		],
 		"artist": "qfeileadh feat.のあ",
 		"data": {
 			"songPack": "World Extend"
@@ -3908,7 +4965,10 @@
 		},
 		"id": "S19d35e0faaa37c37352",
 		"legacySongID": 329,
-		"searchTerms": ["とぅーざみるきーうぇい", "투 더 밀키 웨이"],
+		"searchTerms": [
+			"とぅーざみるきーうぇい",
+			"투 더 밀키 웨이"
+		],
 		"title": "To the Milky Way"
 	},
 	{
@@ -3951,7 +5011,10 @@
 		},
 		"id": "S19d35e0faaddcb5c489",
 		"legacySongID": 332,
-		"searchTerms": ["でびりっくすふぃあ", "데빌릭 스피어"],
+		"searchTerms": [
+			"でびりっくすふぃあ",
+			"데빌릭 스피어"
+		],
 		"title": "Devillic Sphere"
 	},
 	{
@@ -3962,7 +5025,11 @@
 		},
 		"id": "S19d35e0faae06406a29",
 		"legacySongID": 333,
-		"searchTerms": ["るーしっどとらべらー", "るしっどとらべらー", "루시드 트래블러"],
+		"searchTerms": [
+			"るーしっどとらべらー",
+			"るしっどとらべらー",
+			"루시드 트래블러"
+		],
 		"title": "Lucid Traveler"
 	},
 	{
@@ -3973,7 +5040,11 @@
 		},
 		"id": "S19d35e0faaf2fe384ee",
 		"legacySongID": 334,
-		"searchTerms": ["かおす", "けいおす", "카오스"],
+		"searchTerms": [
+			"かおす",
+			"けいおす",
+			"카오스"
+		],
 		"title": "CHAOS"
 	},
 	{
@@ -3984,7 +5055,12 @@
 		},
 		"id": "S19d35e0fab0b4b1af82",
 		"legacySongID": 335,
-		"searchTerms": ["ゆーすどとぅーびー", "ゆーすどとぅびー", "유즈 투 비", "유즈드 투 비"],
+		"searchTerms": [
+			"ゆーすどとぅーびー",
+			"ゆーすどとぅびー",
+			"유즈 투 비",
+			"유즈드 투 비"
+		],
 		"title": "Used to be"
 	},
 	{
@@ -3995,7 +5071,10 @@
 		},
 		"id": "S19d35e0fab10cf8b88d",
 		"legacySongID": 336,
-		"searchTerms": ["あるてぃめっとていすと", "언리미티드 테이스트"],
+		"searchTerms": [
+			"あるてぃめっとていすと",
+			"언리미티드 테이스트"
+		],
 		"title": "Ultimate taste"
 	},
 	{
@@ -4006,7 +5085,11 @@
 		},
 		"id": "S19d35e0fab2e42d8db9",
 		"legacySongID": 337,
-		"searchTerms": ["syuten", "しゅうてん", "슈텐"],
+		"searchTerms": [
+			"syuten",
+			"しゅうてん",
+			"슈텐"
+		],
 		"title": "syūten"
 	},
 	{
@@ -4017,7 +5100,10 @@
 		},
 		"id": "S19d35e0fab37c7e0ea3",
 		"legacySongID": 338,
-		"searchTerms": ["でぃーあーるじー", "디알지"],
+		"searchTerms": [
+			"でぃーあーるじー",
+			"디알지"
+		],
 		"title": "DRG"
 	},
 	{
@@ -4038,14 +5124,21 @@
 		"title": "99 Glooms"
 	},
 	{
-		"altTitles": ["II"],
+		"altTitles": [
+			"II"
+		],
 		"artist": "Cytus",
 		"data": {
 			"songPack": "Collaboration Chapter 2 (CYTUS II)"
 		},
 		"id": "S19d35e0fab584d3b0d7",
 		"legacySongID": 340,
-		"searchTerms": ["ii", "つー", "とぅー", "투"],
+		"searchTerms": [
+			"ii",
+			"つー",
+			"とぅー",
+			"투"
+		],
 		"title": " ͟͝͞Ⅱ́̕ "
 	},
 	{
@@ -4056,7 +5149,10 @@
 		},
 		"id": "S19d35e0fab691131403",
 		"legacySongID": 341,
-		"searchTerms": ["まぐのりあ", "매그놀리아"],
+		"searchTerms": [
+			"まぐのりあ",
+			"매그놀리아"
+		],
 		"title": "Magnolia"
 	},
 	{
@@ -4067,7 +5163,10 @@
 		},
 		"id": "S19d35e0fab779162f56",
 		"legacySongID": 342,
-		"searchTerms": ["さくりふぁいす", "새크리파이스"],
+		"searchTerms": [
+			"さくりふぁいす",
+			"새크리파이스"
+		],
 		"title": "SACRIFICE feat. ayame"
 	},
 	{
@@ -4078,7 +5177,10 @@
 		},
 		"id": "S19d35e0fab81700aa2e",
 		"legacySongID": 343,
-		"searchTerms": ["あーるじーびー", "알지비"],
+		"searchTerms": [
+			"あーるじーびー",
+			"알지비"
+		],
 		"title": "RGB"
 	},
 	{
@@ -4089,18 +5191,27 @@
 		},
 		"id": "S19d35e0fab96599adec",
 		"legacySongID": 344,
-		"searchTerms": ["うぇいとふぉーどーん", "웨잇 포 던", "웨잇 폴 던"],
+		"searchTerms": [
+			"うぇいとふぉーどーん",
+			"웨잇 포 던",
+			"웨잇 폴 던"
+		],
 		"title": "WAIT FOR DAWN"
 	},
 	{
-		"altTitles": ["レイヴンズ・プライド"],
+		"altTitles": [
+			"レイヴンズ・プライド"
+		],
 		"artist": "みーに feat. はらもりよしな",
 		"data": {
 			"songPack": "Lasting Eden"
 		},
 		"id": "S19d35e0fabafaaa4c11",
 		"legacySongID": 345,
-		"searchTerms": ["레이븐즈 프라이드", "레이븐스 프라이드"],
+		"searchTerms": [
+			"레이븐즈 프라이드",
+			"레이븐스 프라이드"
+		],
 		"title": "Raven's Pride"
 	},
 	{
@@ -4111,7 +5222,10 @@
 		},
 		"id": "S19d35e0fabbc37fcfeb",
 		"legacySongID": 346,
-		"searchTerms": ["らいずおぶざわーるど", "라이즈 오브 더 월드"],
+		"searchTerms": [
+			"らいずおぶざわーるど",
+			"라이즈 오브 더 월드"
+		],
 		"title": "Rise of the World"
 	},
 	{
@@ -4147,7 +5261,9 @@
 		"title": "Abstruse Dilemma"
 	},
 	{
-		"altTitles": ["感情の摩天楼 ～Arr.Demetori"],
+		"altTitles": [
+			"感情の摩天楼 ～Arr.Demetori"
+		],
 		"artist": "Demetori",
 		"data": {
 			"songPack": "World Extend"
@@ -4163,14 +5279,20 @@
 		"title": "Kanjou no Matenrou ～Arr.Demetori"
 	},
 	{
-		"altTitles": ["彼方の夢へと"],
+		"altTitles": [
+			"彼方の夢へと"
+		],
 		"artist": "ii/night feat. 綺良雪",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19d35e0fabfeec22e30",
 		"legacySongID": 350,
-		"searchTerms": ["かなたのゆめへと", "저 편의 꿈으로", "투 더 퍼디스트 드림"],
+		"searchTerms": [
+			"かなたのゆめへと",
+			"저 편의 꿈으로",
+			"투 더 퍼디스트 드림"
+		],
 		"title": "To the Furthest Dream"
 	},
 	{
@@ -4181,7 +5303,10 @@
 		},
 		"id": "S19d35e0fac0c792e12b",
 		"legacySongID": 351,
-		"searchTerms": ["りまいんどざそうるす", "리마인드 더 소울즈"],
+		"searchTerms": [
+			"りまいんどざそうるす",
+			"리마인드 더 소울즈"
+		],
 		"title": "Remind the Souls (Short Version)"
 	},
 	{
@@ -4192,18 +5317,30 @@
 		},
 		"id": "S19d35e0fac173d9192b",
 		"legacySongID": 352,
-		"searchTerms": ["dynitikos", "でぃにてぃこす", "でぃにてぃこーす", "디니티코스"],
+		"searchTerms": [
+			"dynitikos",
+			"でぃにてぃこす",
+			"でぃにてぃこーす",
+			"디니티코스"
+		],
 		"title": "Dynitikós"
 	},
 	{
-		"altTitles": ["雨神楽"],
+		"altTitles": [
+			"雨神楽"
+		],
 		"artist": "荒谷サトル",
 		"data": {
 			"songPack": "World Extend"
 		},
 		"id": "S19d35e0fac262f9a82b",
 		"legacySongID": 353,
-		"searchTerms": ["あめかぐら", "아메카구라", "우신락", "우신낙"],
+		"searchTerms": [
+			"あめかぐら",
+			"아메카구라",
+			"우신락",
+			"우신낙"
+		],
 		"title": "Amekagura"
 	},
 	{
@@ -4214,7 +5351,11 @@
 		},
 		"id": "S19d35e0fac35bea2caa",
 		"legacySongID": 354,
-		"searchTerms": ["bbkkbkk", "びーびーけーけーびーけーけー", "비비케이케이비비케이케이"],
+		"searchTerms": [
+			"bbkkbkk",
+			"びーびーけーけーびーけーけー",
+			"비비케이케이비비케이케이"
+		],
 		"title": "B.B.K.K.B.K.K."
 	},
 	{
@@ -4242,7 +5383,10 @@
 		},
 		"id": "S19d35e0fac53c524309",
 		"legacySongID": 356,
-		"searchTerms": ["てくにからー", "테크니컬러"],
+		"searchTerms": [
+			"てくにからー",
+			"테크니컬러"
+		],
 		"title": "Technicolour"
 	},
 	{
@@ -4253,7 +5397,10 @@
 		},
 		"id": "S19d35e0fac697207570",
 		"legacySongID": 357,
-		"searchTerms": ["ろごす", "로고스"],
+		"searchTerms": [
+			"ろごす",
+			"로고스"
+		],
 		"title": "Logos"
 	},
 	{
@@ -4264,7 +5411,11 @@
 		},
 		"id": "S19d35e0fac70d65a489",
 		"legacySongID": 358,
-		"searchTerms": ["えごえいみ", "えごーえいみ", "에고 에이미"],
+		"searchTerms": [
+			"えごえいみ",
+			"えごーえいみ",
+			"에고 에이미"
+		],
 		"title": "Ego Eimi"
 	},
 	{
@@ -4275,7 +5426,12 @@
 		},
 		"id": "S19d35e0fac88208dab0",
 		"legacySongID": 359,
-		"searchTerms": ["あーげな", "あげな", "아르게나", "아게나"],
+		"searchTerms": [
+			"あーげな",
+			"あげな",
+			"아르게나",
+			"아게나"
+		],
 		"title": "Arghena"
 	},
 	{
@@ -4319,7 +5475,10 @@
 		},
 		"id": "S19e3cb7a0072539ed2c",
 		"legacySongID": 369,
-		"searchTerms": ["えでん", "에덴"],
+		"searchTerms": [
+			"えでん",
+			"에덴"
+		],
 		"title": "eden"
 	},
 	{
@@ -4330,7 +5489,12 @@
 		},
 		"id": "S19e3cb7a00740451016",
 		"legacySongID": 376,
-		"searchTerms": ["light my way", "らいとまいうぇい", "라이트 마이 웨이", "라잇 마이 웨이"],
+		"searchTerms": [
+			"light my way",
+			"らいとまいうぇい",
+			"라이트 마이 웨이",
+			"라잇 마이 웨이"
+		],
 		"title": "LIVHT MY WΔY"
 	},
 	{
@@ -4341,7 +5505,11 @@
 		},
 		"id": "S19e3cb7a0074963011a",
 		"legacySongID": 368,
-		"searchTerms": ["えくすとりーむ", "익스트림", "엑스트림"],
+		"searchTerms": [
+			"えくすとりーむ",
+			"익스트림",
+			"엑스트림"
+		],
 		"title": "XTREME"
 	},
 	{
@@ -4352,7 +5520,10 @@
 		},
 		"id": "S19e3cb7a0074a41e654",
 		"legacySongID": 365,
-		"searchTerms": ["てらぼると", "테라볼트"],
+		"searchTerms": [
+			"てらぼると",
+			"테라볼트"
+		],
 		"title": "TeraVolt"
 	},
 	{
@@ -4363,7 +5534,10 @@
 		},
 		"id": "S19e3cb7a00757b082b1",
 		"legacySongID": 374,
-		"searchTerms": ["ふぇりすふぁいなるりみっくす", "펠리스 파이널 리믹스"],
+		"searchTerms": [
+			"ふぇりすふぁいなるりみっくす",
+			"펠리스 파이널 리믹스"
+		],
 		"title": "felys final remix"
 	},
 	{
@@ -4374,7 +5548,10 @@
 		},
 		"id": "S19e3cb7a00760c4647e",
 		"legacySongID": 366,
-		"searchTerms": ["すとらとらいなー", "스트라토라이너"],
+		"searchTerms": [
+			"すとらとらいなー",
+			"스트라토라이너"
+		],
 		"title": "Stratoliner"
 	},
 	{
@@ -4385,7 +5562,10 @@
 		},
 		"id": "S19e3cb7a0076cd770c6",
 		"legacySongID": 364,
-		"searchTerms": ["ねーむれすぱっしょん", "네임리스 패션"],
+		"searchTerms": [
+			"ねーむれすぱっしょん",
+			"네임리스 패션"
+		],
 		"title": "Nameless Passion"
 	},
 	{
@@ -4396,18 +5576,28 @@
 		},
 		"id": "S19e3cb7a0076df23c58",
 		"legacySongID": 362,
-		"searchTerms": ["fantasy", "ふぁんたじー", "판타지"],
+		"searchTerms": [
+			"fantasy",
+			"ふぁんたじー",
+			"판타지"
+		],
 		"title": "FANTA5Y"
 	},
 	{
-		"altTitles": ["Ouverture"],
+		"altTitles": [
+			"Ouverture"
+		],
 		"artist": "USAO & DJ Genki feat. ルーン(CV:河瀬茉希)",
 		"data": {
 			"songPack": "Collaboration Chapter 2 (WACCA)"
 		},
 		"id": "S19e3cb7a0078e374b97",
 		"legacySongID": 367,
-		"searchTerms": ["Ouverture", "おばーちゅあ", "오버쳐"],
+		"searchTerms": [
+			"Ouverture",
+			"おばーちゅあ",
+			"오버쳐"
+		],
 		"title": "Ouvertüre"
 	},
 	{
@@ -4418,11 +5608,16 @@
 		},
 		"id": "S19e3cb7a0079ad05665",
 		"legacySongID": 370,
-		"searchTerms": ["めたみすてりあ", "메타 미스테리아"],
+		"searchTerms": [
+			"めたみすてりあ",
+			"메타 미스테리아"
+		],
 		"title": "Meta-Mysteria"
 	},
 	{
-		"altTitles": ["患部で止まってすぐ溶ける　〜 狂気の優曇華院"],
+		"altTitles": [
+			"患部で止まってすぐ溶ける　〜 狂気の優曇華院"
+		],
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat. miko",
 		"data": {
 			"songPack": "Memory Archive"
@@ -4438,14 +5633,19 @@
 		"title": "Kanbu de Tomatte Sugu Tokeru"
 	},
 	{
-		"altTitles": ["アローンアンドローン"],
+		"altTitles": [
+			"アローンアンドローン"
+		],
 		"artist": "Ponchi♪ feat.はぁち",
 		"data": {
 			"songPack": "Extend Archive 2"
 		},
 		"id": "S19e3cb7a007bec099d7",
 		"legacySongID": 371,
-		"searchTerms": ["얼론 앤 론", "얼론 앤드 론"],
+		"searchTerms": [
+			"얼론 앤 론",
+			"얼론 앤드 론"
+		],
 		"title": "Alone & Lorn"
 	},
 	{
@@ -4456,7 +5656,10 @@
 		},
 		"id": "S19e3cb7a007ddfc309a",
 		"legacySongID": 375,
-		"searchTerms": ["おんあんどおん", "온 앤 온"],
+		"searchTerms": [
+			"おんあんどおん",
+			"온 앤 온"
+		],
 		"title": "On And On!! feat. Jenga"
 	},
 	{
@@ -4482,7 +5685,11 @@
 		},
 		"id": "S19e3cb7a007f7e10b0c",
 		"legacySongID": 363,
-		"searchTerms": ["とらんしえんとすぺーす", "트랜시언트 스페이스", "트랜지언트 스페이스"],
+		"searchTerms": [
+			"とらんしえんとすぺーす",
+			"트랜시언트 스페이스",
+			"트랜지언트 스페이스"
+		],
 		"title": "Transient Space"
 	},
 	{
@@ -4493,29 +5700,45 @@
 		},
 		"id": "S19e3cb7a0080452c747",
 		"legacySongID": 394,
-		"searchTerms": ["りーぶおーるびはいんど", "りーゔおーるびはいんど", "리브 올 비하인드"],
+		"searchTerms": [
+			"りーぶおーるびはいんど",
+			"りーゔおーるびはいんど",
+			"리브 올 비하인드"
+		],
 		"title": "Leave All Behind"
 	},
 	{
-		"altTitles": ["蛍火の雪"],
+		"altTitles": [
+			"蛍火の雪"
+		],
 		"artist": "Endorfin.",
 		"data": {
 			"songPack": "Sunset Radiance"
 		},
 		"id": "S19e3cb7a00809fa24f0",
 		"legacySongID": 377,
-		"searchTerms": ["ほたるびのゆき", "호타루비노 유키", "반딧불의 눈"],
+		"searchTerms": [
+			"ほたるびのゆき",
+			"호타루비노 유키",
+			"반딧불의 눈"
+		],
 		"title": "Hotarubi no Yuki"
 	},
 	{
-		"altTitles": ["Desive"],
+		"altTitles": [
+			"Desive"
+		],
 		"artist": "MisomyL",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19e3cb7a0080b4799c0",
 		"legacySongID": 398,
-		"searchTerms": ["desive", "でぃざいゔ", "디자이브"],
+		"searchTerms": [
+			"desive",
+			"でぃざいゔ",
+			"디자이브"
+		],
 		"title": "Désive"
 	},
 	{
@@ -4547,7 +5770,10 @@
 		},
 		"id": "S19e3cb7a0081aa5f2d5",
 		"legacySongID": 378,
-		"searchTerms": ["ざふぉーみゅら", "더 포뮬라"],
+		"searchTerms": [
+			"ざふぉーみゅら",
+			"더 포뮬라"
+		],
 		"title": "The Formula"
 	},
 	{
@@ -4558,7 +5784,11 @@
 		},
 		"id": "S19e3cb7a0081ca3b8d8",
 		"legacySongID": 391,
-		"searchTerms": ["りーさるぼるてーじ", "리썰 볼티지", "리썰 볼테이지"],
+		"searchTerms": [
+			"りーさるぼるてーじ",
+			"리썰 볼티지",
+			"리썰 볼테이지"
+		],
 		"title": "Lethal Voltage"
 	},
 	{
@@ -4569,7 +5799,10 @@
 		},
 		"id": "S19e3cb7a0081e471898",
 		"legacySongID": 389,
-		"searchTerms": ["あうぇーくんいんるいんず", "어웨이큰 인 루인즈"],
+		"searchTerms": [
+			"あうぇーくんいんるいんず",
+			"어웨이큰 인 루인즈"
+		],
 		"title": "Awaken In Ruins"
 	},
 	{
@@ -4580,7 +5813,10 @@
 		},
 		"id": "S19e3cb7a0082f6ec216",
 		"legacySongID": 382,
-		"searchTerms": ["あいおのすとりーむ", "아이오노스트림"],
+		"searchTerms": [
+			"あいおのすとりーむ",
+			"아이오노스트림"
+		],
 		"title": "IONOSTREAM"
 	},
 	{
@@ -4599,14 +5835,20 @@
 		"title": "Sign of \"10.5km\""
 	},
 	{
-		"altTitles": ["狂恋ROMANCE"],
+		"altTitles": [
+			"狂恋ROMANCE"
+		],
 		"artist": "REDALiCE vs DJ Myosuke feat. DELUTAYA",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19e3cb7a00846018725",
 		"legacySongID": 385,
-		"searchTerms": ["きょうれんろまんす", "쿄렌 로맨스", "광연 로맨스"],
+		"searchTerms": [
+			"きょうれんろまんす",
+			"쿄렌 로맨스",
+			"광연 로맨스"
+		],
 		"title": "KYOREN ROMANCE"
 	},
 	{
@@ -4617,11 +5859,17 @@
 		},
 		"id": "S19e3cb7a00849ad682c",
 		"legacySongID": 410,
-		"searchTerms": ["しゅりんく", "슈링크", "쉬링크"],
+		"searchTerms": [
+			"しゅりんく",
+			"슈링크",
+			"쉬링크"
+		],
 		"title": "shrink"
 	},
 	{
-		"altTitles": ["エピクロスの虹はもう見えない"],
+		"altTitles": [
+			"エピクロスの虹はもう見えない"
+		],
 		"artist": "SYNC.ART'S feat.Misato",
 		"data": {
 			"songPack": "Arcaea"
@@ -4645,7 +5893,10 @@
 		},
 		"id": "S19e3cb7a0085bfe9ee3",
 		"legacySongID": 407,
-		"searchTerms": ["ぶらっくまいんど", "블랙 마인드"],
+		"searchTerms": [
+			"ぶらっくまいんど",
+			"블랙 마인드"
+		],
 		"title": "Black MInD"
 	},
 	{
@@ -4656,18 +5907,28 @@
 		},
 		"id": "S19e3cb7a0085c7d157e",
 		"legacySongID": 397,
-		"searchTerms": ["くろまふぃる", "くろーまふぃる", "크로마필"],
+		"searchTerms": [
+			"くろまふぃる",
+			"くろーまふぃる",
+			"크로마필"
+		],
 		"title": "Chromafill"
 	},
 	{
-		"altTitles": ["、"],
+		"altTitles": [
+			"、"
+		],
 		"artist": "Kolaa & 熊子",
 		"data": {
 			"songPack": "Extend Archive 3"
 		},
 		"id": "S19e3cb7a008637ea3d1",
 		"legacySongID": 388,
-		"searchTerms": ["ichirin", "いちりん", "이치린"],
+		"searchTerms": [
+			"ichirin",
+			"いちりん",
+			"이치린"
+		],
 		"title": "〇、"
 	},
 	{
@@ -4678,7 +5939,10 @@
 		},
 		"id": "S19e3cb7a0086b3dd0ab",
 		"legacySongID": 383,
-		"searchTerms": ["あれふぜろ", "알레프 제로"],
+		"searchTerms": [
+			"あれふぜろ",
+			"알레프 제로"
+		],
 		"title": "Aleph-0"
 	},
 	{
@@ -4689,7 +5953,13 @@
 		},
 		"id": "S19e3cb7a0086dd9a8db",
 		"legacySongID": 386,
-		"searchTerms": ["こばっと", "こゔぁっと", "쿠오밧", "쿼밧", "코밧"],
+		"searchTerms": [
+			"こばっと",
+			"こゔぁっと",
+			"쿠오밧",
+			"쿼밧",
+			"코밧"
+		],
 		"title": "Qovat"
 	},
 	{
@@ -4700,7 +5970,10 @@
 		},
 		"id": "S19e3cb7a0087f346f02",
 		"legacySongID": 401,
-		"searchTerms": ["おーるどすくーるさるべーじ", "올드 스쿨 샐비지"],
+		"searchTerms": [
+			"おーるどすくーるさるべーじ",
+			"올드 스쿨 샐비지"
+		],
 		"title": "Old School Salvage"
 	},
 	{
@@ -4711,11 +5984,17 @@
 		},
 		"id": "S19e3cb7a00886bb5a9f",
 		"legacySongID": 408,
-		"searchTerms": ["はいぱーびじょん", "はいぱーゔぃじょん", "하이퍼 비전"],
+		"searchTerms": [
+			"はいぱーびじょん",
+			"はいぱーゔぃじょん",
+			"하이퍼 비전"
+		],
 		"title": "HYPER VISION"
 	},
 	{
-		"altTitles": ["黄昏の協奏曲"],
+		"altTitles": [
+			"黄昏の協奏曲"
+		],
 		"artist": "Scarlette",
 		"data": {
 			"songPack": "Memory Archive"
@@ -4738,7 +6017,10 @@
 		},
 		"id": "S19e3cb7a0088de6fe8f",
 		"legacySongID": 395,
-		"searchTerms": ["でぃすとーてっどふぇいと", "디스토디드 페이트"],
+		"searchTerms": [
+			"でぃすとーてっどふぇいと",
+			"디스토디드 페이트"
+		],
 		"title": "Distorted Fate"
 	},
 	{
@@ -4749,7 +6031,11 @@
 		},
 		"id": "S19e3cb7a008901a85b7",
 		"legacySongID": 411,
-		"searchTerms": ["いんべいん", "いんゔぇいん", "인 베인"],
+		"searchTerms": [
+			"いんべいん",
+			"いんゔぇいん",
+			"인 베인"
+		],
 		"title": "In Vain"
 	},
 	{
@@ -4760,7 +6046,10 @@
 		},
 		"id": "S19e3cb7a0089a2bdabe",
 		"legacySongID": 381,
-		"searchTerms": ["いのせんす", "이노센스"],
+		"searchTerms": [
+			"いのせんす",
+			"이노센스"
+		],
 		"title": "Innocence"
 	},
 	{
@@ -4771,7 +6060,11 @@
 		},
 		"id": "S19e3cb7a0089d51acb8",
 		"legacySongID": 384,
-		"searchTerms": ["ますかれーどれぎおん", "마스커레이드 리전", "마스커레이드 레기온"],
+		"searchTerms": [
+			"ますかれーどれぎおん",
+			"마스커레이드 리전",
+			"마스커레이드 레기온"
+		],
 		"title": "Masquerade Legion"
 	},
 	{
@@ -4782,7 +6075,10 @@
 		},
 		"id": "S19e3cb7a008acbdae20",
 		"legacySongID": 404,
-		"searchTerms": ["すたーげーとえくすとりーむ", "스트레인지 익스트림"],
+		"searchTerms": [
+			"すたーげーとえくすとりーむ",
+			"스트레인지 익스트림"
+		],
 		"title": "STARGATE EXTREME"
 	},
 	{
@@ -4793,7 +6089,10 @@
 		},
 		"id": "S19e3cb7a008b29f8e24",
 		"legacySongID": 412,
-		"searchTerms": ["ひぷのたいず", "히프노타이즈"],
+		"searchTerms": [
+			"ひぷのたいず",
+			"히프노타이즈"
+		],
 		"title": "Hypnotize"
 	},
 	{
@@ -4804,7 +6103,11 @@
 		},
 		"id": "S19e3cb7a008b6dab65f",
 		"legacySongID": 413,
-		"searchTerms": ["ashen boundary", "あっしぇんばうんだりー", "애쉰 바운더리"],
+		"searchTerms": [
+			"ashen boundary",
+			"あっしぇんばうんだりー",
+			"애쉰 바운더리"
+		],
 		"title": "Ashen 6oundary"
 	},
 	{
@@ -4815,7 +6118,10 @@
 		},
 		"id": "S19e3cb7a008bdf77367",
 		"legacySongID": 396,
-		"searchTerms": ["ふろーてぃんぐわーるど", "플로팅 월드"],
+		"searchTerms": [
+			"ふろーてぃんぐわーるど",
+			"플로팅 월드"
+		],
 		"title": "Floating World"
 	},
 	{
@@ -4826,7 +6132,10 @@
 		},
 		"id": "S19e3cb7a008bf80526d",
 		"legacySongID": 380,
-		"searchTerms": ["じんぐる", "징글"],
+		"searchTerms": [
+			"じんぐる",
+			"징글"
+		],
 		"title": "Jingle"
 	},
 	{
@@ -4837,7 +6146,11 @@
 		},
 		"id": "S19e3cb7a008bf8c5450",
 		"legacySongID": 406,
-		"searchTerms": ["temptation", "てんぷてーしょん", "템테이션"],
+		"searchTerms": [
+			"temptation",
+			"てんぷてーしょん",
+			"템테이션"
+		],
 		"title": "10pt8ion"
 	},
 	{
@@ -4864,7 +6177,10 @@
 		},
 		"id": "S19e3cb7a008d60e1858",
 		"legacySongID": 402,
-		"searchTerms": ["びゅーてぃふるどりーまー", "뷰티풀 드리머"],
+		"searchTerms": [
+			"びゅーてぃふるどりーまー",
+			"뷰티풀 드리머"
+		],
 		"title": "Beautiful Dreamer"
 	},
 	{
@@ -4875,18 +6191,26 @@
 		},
 		"id": "S19e3cb7a008d91e1256",
 		"legacySongID": 392,
-		"searchTerms": ["みりね", "みりねー", "미리내"],
+		"searchTerms": [
+			"みりね",
+			"みりねー",
+			"미리내"
+		],
 		"title": "MIRINAE"
 	},
 	{
-		"altTitles": ["ディストーション・ニンゲン"],
+		"altTitles": [
+			"ディストーション・ニンゲン"
+		],
 		"artist": "DJ Myosuke & KAJI",
 		"data": {
 			"songPack": "Extend Archive 3"
 		},
 		"id": "S19e3cb7a008e43eaf5d",
 		"legacySongID": 409,
-		"searchTerms": ["디스토션 휴먼"],
+		"searchTerms": [
+			"디스토션 휴먼"
+		],
 		"title": "Distortion Human"
 	},
 	{
@@ -4897,7 +6221,10 @@
 		},
 		"id": "S19e3cb7a008e997ab5f",
 		"legacySongID": 390,
-		"searchTerms": ["もーにんぐるーむ", "모닝글룸"],
+		"searchTerms": [
+			"もーにんぐるーむ",
+			"모닝글룸"
+		],
 		"title": "MORNINGLOOM"
 	},
 	{
@@ -4908,7 +6235,10 @@
 		},
 		"id": "S19e3cb7a008ef0414fd",
 		"legacySongID": 387,
-		"searchTerms": ["はろーへる", "헬로헬"],
+		"searchTerms": [
+			"はろーへる",
+			"헬로헬"
+		],
 		"title": "HELLOHELL"
 	},
 	{
@@ -4919,18 +6249,27 @@
 		},
 		"id": "S19e3cb7a008ffb2213c",
 		"legacySongID": 379,
-		"searchTerms": ["るなろっさ", "루나 로사", "루나 롯사"],
+		"searchTerms": [
+			"るなろっさ",
+			"루나 로사",
+			"루나 롯사"
+		],
 		"title": "Luna Rossa"
 	},
 	{
-		"altTitles": ["フレテミタイ"],
+		"altTitles": [
+			"フレテミタイ"
+		],
 		"artist": "みきとP",
 		"data": {
 			"songPack": "Extend Archive 3"
 		},
 		"id": "S19e3cb7a0090140ef37",
 		"legacySongID": 425,
-		"searchTerms": ["furetemitai", "닿고싶어"],
+		"searchTerms": [
+			"furetemitai",
+			"닿고싶어"
+		],
 		"title": "FURETE-MITAI"
 	},
 	{
@@ -4941,18 +6280,27 @@
 		},
 		"id": "S19e3cb7a009082d8085",
 		"legacySongID": 417,
-		"searchTerms": ["わるつふぉーろーれらい", "왈츠 포 로렐라이"],
+		"searchTerms": [
+			"わるつふぉーろーれらい",
+			"왈츠 포 로렐라이"
+		],
 		"title": "Waltz for Lorelei"
 	},
 	{
-		"altTitles": ["最高の悪夢"],
+		"altTitles": [
+			"最高の悪夢"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE"
 		},
 		"id": "S19e3cb7a009126d80be",
 		"legacySongID": 455,
-		"searchTerms": ["ゆあべすとないとめあ", "さいこうのあくむ", "유어 베스트 나이트메어"],
+		"searchTerms": [
+			"ゆあべすとないとめあ",
+			"さいこうのあくむ",
+			"유어 베스트 나이트메어"
+		],
 		"title": "Your Best Nightmare"
 	},
 	{
@@ -4963,7 +6311,10 @@
 		},
 		"id": "S19e3cb7a009139b13d1",
 		"legacySongID": 418,
-		"searchTerms": ["でゅあるどぅーむですまっち", "듀얼 룸 데스매치"],
+		"searchTerms": [
+			"でゅあるどぅーむですまっち",
+			"듀얼 룸 데스매치"
+		],
 		"title": "Dual Doom Deathmatch"
 	},
 	{
@@ -4974,7 +6325,10 @@
 		},
 		"id": "S19e3cb7a00916eeac70",
 		"legacySongID": 436,
-		"searchTerms": ["あんどりばいぶざめろでぃ", "앤 리바이브 더 멜로디"],
+		"searchTerms": [
+			"あんどりばいぶざめろでぃ",
+			"앤 리바이브 더 멜로디"
+		],
 		"title": "And Revive The Melody"
 	},
 	{
@@ -4985,7 +6339,10 @@
 		},
 		"id": "S19e3cb7a0091a0be3a3",
 		"legacySongID": 424,
-		"searchTerms": ["へいるすとーん", "헤일스톤"],
+		"searchTerms": [
+			"へいるすとーん",
+			"헤일스톤"
+		],
 		"title": "Hailstone"
 	},
 	{
@@ -4996,7 +6353,11 @@
 		},
 		"id": "S19e3cb7a0091d55bde7",
 		"legacySongID": 435,
-		"searchTerms": ["どんとふぁいとざみゅーじっく", "돈 파이트 더 뮤직", "돈 파잇 더 뮤직"],
+		"searchTerms": [
+			"どんとふぁいとざみゅーじっく",
+			"돈 파이트 더 뮤직",
+			"돈 파잇 더 뮤직"
+		],
 		"title": "Don't Fight The Music"
 	},
 	{
@@ -5021,7 +6382,10 @@
 		},
 		"id": "S19e3cb7a00923753fcb",
 		"legacySongID": 452,
-		"searchTerms": ["えーてるくれすとあすとらる", "에테르 크레스트 아스트랄"],
+		"searchTerms": [
+			"えーてるくれすとあすとらる",
+			"에테르 크레스트 아스트랄"
+		],
 		"title": "Aether Crest: Astral"
 	},
 	{
@@ -5032,11 +6396,16 @@
 		},
 		"id": "S19e3cb7a0092798ac1f",
 		"legacySongID": 433,
-		"searchTerms": ["りふとおふ", "리프트오프"],
+		"searchTerms": [
+			"りふとおふ",
+			"리프트오프"
+		],
 		"title": "LiftOff"
 	},
 	{
-		"altTitles": ["華麗なる死闘"],
+		"altTitles": [
+			"華麗なる死闘"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE"
@@ -5054,7 +6423,11 @@
 		},
 		"id": "S19e3cb7a009374d106c",
 		"legacySongID": 431,
-		"searchTerms": ["でぃえすいれ", "でぃえすいらえ", "디에스 이레"],
+		"searchTerms": [
+			"でぃえすいれ",
+			"でぃえすいらえ",
+			"디에스 이레"
+		],
 		"title": "Dies irae"
 	},
 	{
@@ -5065,7 +6438,10 @@
 		},
 		"id": "S19e3cb7a00937ea872e",
 		"legacySongID": 430,
-		"searchTerms": ["すぴりっとおぶざどーんとれす", "스피릿 오브 더 던틀리스"],
+		"searchTerms": [
+			"すぴりっとおぶざどーんとれす",
+			"스피릿 오브 더 던틀리스"
+		],
 		"title": "Spirit of the Dauntless"
 	},
 	{
@@ -5076,7 +6452,11 @@
 		},
 		"id": "S19e3cb7a0093c44e1c6",
 		"legacySongID": 419,
-		"searchTerms": ["いんばーてっどわーるど", "いんゔぁーてっどわーるど", "인버티드 월드"],
+		"searchTerms": [
+			"いんばーてっどわーるど",
+			"いんゔぁーてっどわーるど",
+			"인버티드 월드"
+		],
 		"title": "Inverted World"
 	},
 	{
@@ -5087,7 +6467,10 @@
 		},
 		"id": "S19e3cb7a0093deed38c",
 		"legacySongID": 445,
-		"searchTerms": ["ぶれいじんぐえあー", "블레이징 에어"],
+		"searchTerms": [
+			"ぶれいじんぐえあー",
+			"블레이징 에어"
+		],
 		"title": "BlazinG AIR"
 	},
 	{
@@ -5098,7 +6481,11 @@
 		},
 		"id": "S19e3cb7a00948b72406",
 		"legacySongID": 415,
-		"searchTerms": ["おるたーえご", "얼터 에고", "알터 에고"],
+		"searchTerms": [
+			"おるたーえご",
+			"얼터 에고",
+			"알터 에고"
+		],
 		"title": "ALTER EGO"
 	},
 	{
@@ -5109,7 +6496,10 @@
 		},
 		"id": "S19e3cb7a00952fad540",
 		"legacySongID": 432,
-		"searchTerms": ["あすとらるどっとえぐぜ", "아스트랄 이엑스이"],
+		"searchTerms": [
+			"あすとらるどっとえぐぜ",
+			"아스트랄 이엑스이"
+		],
 		"title": "astral.exe"
 	},
 	{
@@ -5120,7 +6510,10 @@
 		},
 		"id": "S19e3cb7a009645d93c8",
 		"legacySongID": 449,
-		"searchTerms": ["すとれーといんとぅざらいつ", "스트레이트 인투 더 라이츠"],
+		"searchTerms": [
+			"すとれーといんとぅざらいつ",
+			"스트레이트 인투 더 라이츠"
+		],
 		"title": "Straight into the lights"
 	},
 	{
@@ -5131,18 +6524,28 @@
 		},
 		"id": "S19e3cb7a00969377c81",
 		"legacySongID": 429,
-		"searchTerms": ["さーどさん", "서드 선", "써드 선"],
+		"searchTerms": [
+			"さーどさん",
+			"서드 선",
+			"써드 선"
+		],
 		"title": "Third Sun"
 	},
 	{
-		"altTitles": ["心の痛み"],
+		"altTitles": [
+			"心の痛み"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE"
 		},
 		"id": "S19e3cb7a00976bcd2ab",
 		"legacySongID": 453,
-		"searchTerms": ["はーとえいく", "こころのいたみ", "하트에이크"],
+		"searchTerms": [
+			"はーとえいく",
+			"こころのいたみ",
+			"하트에이크"
+		],
 		"title": "Heartache"
 	},
 	{
@@ -5153,7 +6556,10 @@
 		},
 		"id": "S19e3cb7a0097bebe003",
 		"legacySongID": 437,
-		"searchTerms": ["すわんそんぐ", "스완 송"],
+		"searchTerms": [
+			"すわんそんぐ",
+			"스완 송"
+		],
 		"title": "Swan Song"
 	},
 	{
@@ -5164,7 +6570,10 @@
 		},
 		"id": "S19e3cb7a0097e7d0dfd",
 		"legacySongID": 444,
-		"searchTerms": ["いぐにしょん", "이그니션"],
+		"searchTerms": [
+			"いぐにしょん",
+			"이그니션"
+		],
 		"title": "Ignition"
 	},
 	{
@@ -5175,18 +6584,26 @@
 		},
 		"id": "S19e3cb7a0098753278d",
 		"legacySongID": 446,
-		"searchTerms": ["えいてぃーえむ", "에이티엠"],
+		"searchTerms": [
+			"えいてぃーえむ",
+			"에이티엠"
+		],
 		"title": "8-EM"
 	},
 	{
-		"altTitles": ["プレヤ"],
+		"altTitles": [
+			"プレヤ"
+		],
 		"artist": "qfeileadh&レゾナンスもえこ",
 		"data": {
 			"songPack": "Extend Archive 3"
 		},
 		"id": "S19e3cb7a00987a48038",
 		"legacySongID": 427,
-		"searchTerms": ["pureya", "프레이어"],
+		"searchTerms": [
+			"pureya",
+			"프레이어"
+		],
 		"title": "Prayer"
 	},
 	{
@@ -5197,11 +6614,16 @@
 		},
 		"id": "S19e3cb7a00992a73daf",
 		"legacySongID": 423,
-		"searchTerms": ["せいんとおあしんなー", "세인트 오어 시너"],
+		"searchTerms": [
+			"せいんとおあしんなー",
+			"세인트 오어 시너"
+		],
 		"title": "Saint or Sinner"
 	},
 	{
-		"altTitles": ["幻想のサテライト"],
+		"altTitles": [
+			"幻想のサテライト"
+		],
 		"artist": "豚乙女",
 		"data": {
 			"songPack": "Memory Archive"
@@ -5225,7 +6647,10 @@
 		},
 		"id": "S19e3cb7a009b3aa6fd1",
 		"legacySongID": 428,
-		"searchTerms": ["くりむぞんくぉーつ", "크림슨 쿼츠"],
+		"searchTerms": [
+			"くりむぞんくぉーつ",
+			"크림슨 쿼츠"
+		],
 		"title": "Crimson Quartz"
 	},
 	{
@@ -5236,18 +6661,27 @@
 		},
 		"id": "S19e3cb7a009bce1fc5a",
 		"legacySongID": 420,
-		"searchTerms": ["むーぶゆあぼでぃ", "므브유알보디"],
+		"searchTerms": [
+			"むーぶゆあぼでぃ",
+			"므브유알보디"
+		],
 		"title": "MVURBD"
 	},
 	{
-		"altTitles": ["Vulcanus"],
+		"altTitles": [
+			"Vulcanus"
+		],
 		"artist": "Team Grimoire vs Aoi",
 		"data": {
 			"songPack": "Rotaeno"
 		},
 		"id": "S19e3cb7a009c3637c3a",
 		"legacySongID": 421,
-		"searchTerms": ["うるかぬす", "うるかーぬす", "불카누스"],
+		"searchTerms": [
+			"うるかぬす",
+			"うるかーぬす",
+			"불카누스"
+		],
 		"title": "Vulcānus"
 	},
 	{
@@ -5274,7 +6708,10 @@
 		},
 		"id": "S19e3cb7a009d0684be7",
 		"legacySongID": 448,
-		"searchTerms": ["ぶれいくぶれいくぶれいく", "브레이크 브레이크 브레이크"],
+		"searchTerms": [
+			"ぶれいくぶれいくぶれいく",
+			"브레이크 브레이크 브레이크"
+		],
 		"title": "BREaK! BREaK! BREaK!"
 	},
 	{
@@ -5285,7 +6722,11 @@
 		},
 		"id": "S19e3cb7a009d0d19788",
 		"legacySongID": 434,
-		"searchTerms": ["すーぱーあんびゅらんす", "슈퍼 앰뷸런스", "수퍼 앰뷸런스"],
+		"searchTerms": [
+			"すーぱーあんびゅらんす",
+			"슈퍼 앰뷸런스",
+			"수퍼 앰뷸런스"
+		],
 		"title": "SUPER AMBULANCE"
 	},
 	{
@@ -5296,7 +6737,10 @@
 		},
 		"id": "S19e3cb7a009d132f07d",
 		"legacySongID": 440,
-		"searchTerms": ["ぶりーちおぶふぇいす", "브리치 오브 페이스"],
+		"searchTerms": [
+			"ぶりーちおぶふぇいす",
+			"브리치 오브 페이스"
+		],
 		"title": "Breach of Faith"
 	},
 	{
@@ -5307,7 +6751,10 @@
 		},
 		"id": "S19e3cb7a009d8bf8e3b",
 		"legacySongID": 438,
-		"searchTerms": ["れねげーど", "레니게이드"],
+		"searchTerms": [
+			"れねげーど",
+			"레니게이드"
+		],
 		"title": "Renegade"
 	},
 	{
@@ -5318,7 +6765,11 @@
 		},
 		"id": "S19e3cb7a009dcc0e1c9",
 		"legacySongID": 414,
-		"searchTerms": ["じゃっじめんと", "저지멘트", "저지먼트"],
+		"searchTerms": [
+			"じゃっじめんと",
+			"저지멘트",
+			"저지먼트"
+		],
 		"title": "Judgement"
 	},
 	{
@@ -5329,7 +6780,11 @@
 		},
 		"id": "S19e3cb7a009dd573929",
 		"legacySongID": 450,
-		"searchTerms": ["うぃるとす", "버투스", "비르투스"],
+		"searchTerms": [
+			"うぃるとす",
+			"버투스",
+			"비르투스"
+		],
 		"title": "ViRTUS"
 	},
 	{
@@ -5340,7 +6795,10 @@
 		},
 		"id": "S19e3cb7a009ddb0ac7a",
 		"legacySongID": 416,
-		"searchTerms": ["えぴたくしー", "에피택시"],
+		"searchTerms": [
+			"えぴたくしー",
+			"에피택시"
+		],
 		"title": "epitaxy"
 	},
 	{
@@ -5351,18 +6809,28 @@
 		},
 		"id": "S19e3cb7a009e8ceb42c",
 		"legacySongID": 443,
-		"searchTerms": ["あすとらるくおんたいぜーしょん", "아스트랄 퀀티제이션"],
+		"searchTerms": [
+			"あすとらるくおんたいぜーしょん",
+			"아스트랄 퀀티제이션"
+		],
 		"title": "Astral Quantization"
 	},
 	{
-		"altTitles": ["ヨミビトシラズ"],
+		"altTitles": [
+			"ヨミビトシラズ"
+		],
 		"artist": "Limonène (サノカモメ+月島春果)",
 		"data": {
 			"songPack": "Collaboration Chapter 3 (maimai)"
 		},
 		"id": "S19e3cb7a009eb2eaf93",
 		"legacySongID": 451,
-		"searchTerms": ["yomibito shirazu", "어나니머스", "요미비토시라즈", "익명"],
+		"searchTerms": [
+			"yomibito shirazu",
+			"어나니머스",
+			"요미비토시라즈",
+			"익명"
+		],
 		"title": "yomibito_shirazu"
 	},
 	{
@@ -5373,7 +6841,10 @@
 		},
 		"id": "S19e3cb7a009f3334224",
 		"legacySongID": 441,
-		"searchTerms": ["らめんとれいん", "라멘트 레인"],
+		"searchTerms": [
+			"らめんとれいん",
+			"라멘트 레인"
+		],
 		"title": "Lament Rain"
 	},
 	{
@@ -5384,7 +6855,10 @@
 		},
 		"id": "S19e3cb7a009f5fe5ffd",
 		"legacySongID": 442,
-		"searchTerms": ["でじぐなんと", "데지그넌트"],
+		"searchTerms": [
+			"でじぐなんと",
+			"데지그넌트"
+		],
 		"title": "Designant."
 	},
 	{
@@ -5395,7 +6869,10 @@
 		},
 		"id": "S19e3cb7a009fcc9caa0",
 		"legacySongID": 439,
-		"searchTerms": ["れいずおぶれむなんと", "레이즈 오브 렘넌트"],
+		"searchTerms": [
+			"れいずおぶれむなんと",
+			"레이즈 오브 렘넌트"
+		],
 		"title": "Rays of Remnant"
 	},
 	{
@@ -5406,7 +6883,11 @@
 		},
 		"id": "S19e3cb7a00a08dfa79f",
 		"legacySongID": 474,
-		"searchTerms": ["さむでい", "さむでー", "섬데이"],
+		"searchTerms": [
+			"さむでい",
+			"さむでー",
+			"섬데이"
+		],
 		"title": "Someday"
 	},
 	{
@@ -5417,7 +6898,11 @@
 		},
 		"id": "S19e3cb7a00a0aa9ca3b",
 		"legacySongID": 465,
-		"searchTerms": ["うぉんとばっくだうん", "원트 백 다운", "원 백 다운"],
+		"searchTerms": [
+			"うぉんとばっくだうん",
+			"원트 백 다운",
+			"원 백 다운"
+		],
 		"title": "Won't Back Down"
 	},
 	{
@@ -5428,7 +6913,12 @@
 		},
 		"id": "S19e3cb7a00a15226a33",
 		"legacySongID": 476,
-		"searchTerms": ["あいうぉんとゆー", "あいうぉんちゅー", "아이 완트 유", "아이 원 츄"],
+		"searchTerms": [
+			"あいうぉんとゆー",
+			"あいうぉんちゅー",
+			"아이 완트 유",
+			"아이 원 츄"
+		],
 		"title": "I want You"
 	},
 	{
@@ -5439,7 +6929,10 @@
 		},
 		"id": "S19e3cb7a00a1b4783b7",
 		"legacySongID": 497,
-		"searchTerms": ["ゔぇいんすぱいあ", "베인스파이어"],
+		"searchTerms": [
+			"ゔぇいんすぱいあ",
+			"베인스파이어"
+		],
 		"title": "Vainspire"
 	},
 	{
@@ -5450,7 +6943,11 @@
 		},
 		"id": "S19e3cb7a00a24f56f3b",
 		"legacySongID": 494,
-		"searchTerms": ["えたにてぃぶれいく", "えたにてぃーぶれいく", "이터니티 브레이크"],
+		"searchTerms": [
+			"えたにてぃぶれいく",
+			"えたにてぃーぶれいく",
+			"이터니티 브레이크"
+		],
 		"title": "Eternity Break"
 	},
 	{
@@ -5461,11 +6958,16 @@
 		},
 		"id": "S19e3cb7a00a2f809759",
 		"legacySongID": 482,
-		"searchTerms": ["しーざらいつ", "시 더 라이츠"],
+		"searchTerms": [
+			"しーざらいつ",
+			"시 더 라이츠"
+		],
 		"title": "See the Lights!"
 	},
 	{
-		"altTitles": ["進捗どうですか?"],
+		"altTitles": [
+			"進捗どうですか?"
+		],
 		"artist": "sumijun feat. ななひら",
 		"data": {
 			"songPack": "Memory Archive"
@@ -5488,7 +6990,11 @@
 		},
 		"id": "S19e3cb7a00a4ae4eb8f",
 		"legacySongID": 467,
-		"searchTerms": ["れでぃーめいどすたー", "れでぃめいどすたー", "레이디메이드 스타"],
+		"searchTerms": [
+			"れでぃーめいどすたー",
+			"れでぃめいどすたー",
+			"레이디메이드 스타"
+		],
 		"title": "Ladymade Star"
 	},
 	{
@@ -5499,7 +7005,10 @@
 		},
 		"id": "S19e3cb7a00a5069ec0f",
 		"legacySongID": 498,
-		"searchTerms": ["のーうぇいばっく", "노 웨이 백"],
+		"searchTerms": [
+			"のーうぇいばっく",
+			"노 웨이 백"
+		],
 		"title": "No Way Back"
 	},
 	{
@@ -5510,7 +7019,10 @@
 		},
 		"id": "S19e3cb7a00a52c0170b",
 		"legacySongID": 464,
-		"searchTerms": ["だるぶれーど", "덜 블레이드"],
+		"searchTerms": [
+			"だるぶれーど",
+			"덜 블레이드"
+		],
 		"title": "Dull Blade"
 	},
 	{
@@ -5521,7 +7033,10 @@
 		},
 		"id": "S19e3cb7a00a551304ea",
 		"legacySongID": 478,
-		"searchTerms": ["らいあー", "라이어"],
+		"searchTerms": [
+			"らいあー",
+			"라이어"
+		],
 		"title": "Liar"
 	},
 	{
@@ -5532,7 +7047,10 @@
 		},
 		"id": "S19e3cb7a00a55d58c7b",
 		"legacySongID": 469,
-		"searchTerms": ["ゆーえーでぃー", "유에이디"],
+		"searchTerms": [
+			"ゆーえーでぃー",
+			"유에이디"
+		],
 		"title": "U.A.D"
 	},
 	{
@@ -5543,22 +7061,32 @@
 		},
 		"id": "S19e3cb7a00a5c698b82",
 		"legacySongID": 466,
-		"searchTerms": ["どんとだい", "돈 다이"],
+		"searchTerms": [
+			"どんとだい",
+			"돈 다이"
+		],
 		"title": "Don't Die"
 	},
 	{
-		"altTitles": ["プラシイボ♥バトラー"],
+		"altTitles": [
+			"プラシイボ♥バトラー"
+		],
 		"artist": "OSTER project",
 		"data": {
 			"songPack": "Memory Archive"
 		},
 		"id": "S19e3cb7a00a6304e0e6",
 		"legacySongID": 459,
-		"searchTerms": ["purashiibo batora", "플라시보 배틀러"],
+		"searchTerms": [
+			"purashiibo batora",
+			"플라시보 배틀러"
+		],
 		"title": "Placebo♥Battler"
 	},
 	{
-		"altTitles": ["朱月ノ姫"],
+		"altTitles": [
+			"朱月ノ姫"
+		],
 		"artist": "technoplanet feat. 夕月ティア",
 		"data": {
 			"songPack": "Extant Anima"
@@ -5582,7 +7110,11 @@
 		},
 		"id": "S19e3cb7a00a7218b8b7",
 		"legacySongID": 480,
-		"searchTerms": ["うぃーあーおーるごなだい", "위아 올 고나 다이", "위아 올 고너 다이"],
+		"searchTerms": [
+			"うぃーあーおーるごなだい",
+			"위아 올 고나 다이",
+			"위아 올 고너 다이"
+		],
 		"title": "We're All Gonna Die"
 	},
 	{
@@ -5593,7 +7125,10 @@
 		},
 		"id": "S19e3cb7a00a798ba693",
 		"legacySongID": 463,
-		"searchTerms": ["たう", "타우"],
+		"searchTerms": [
+			"たう",
+			"타우"
+		],
 		"title": "τ (tau)"
 	},
 	{
@@ -5604,7 +7139,10 @@
 		},
 		"id": "S19e3cb7a00a7a870fbd",
 		"legacySongID": 491,
-		"searchTerms": ["うぇるかむくいーんおぶふぃくしょん", "웰컴 퀸 오브 픽션"],
+		"searchTerms": [
+			"うぇるかむくいーんおぶふぃくしょん",
+			"웰컴 퀸 오브 픽션"
+		],
 		"title": "Welcome, Queen of Fiction."
 	},
 	{
@@ -5615,7 +7153,10 @@
 		},
 		"id": "S19e3cb7a00a7bab6cb8",
 		"legacySongID": 468,
-		"searchTerms": ["えんどおぶざむーんらいと", "엔드 오브 더 문라이트"],
+		"searchTerms": [
+			"えんどおぶざむーんらいと",
+			"엔드 오브 더 문라이트"
+		],
 		"title": "End of The Moonlight"
 	},
 	{
@@ -5626,7 +7167,10 @@
 		},
 		"id": "S19e3cb7a00a81f9f8b7",
 		"legacySongID": 487,
-		"searchTerms": ["でぃすいんてぐれーしょん", "디스인터그레이션"],
+		"searchTerms": [
+			"でぃすいんてぐれーしょん",
+			"디스인터그레이션"
+		],
 		"title": "disintegration"
 	},
 	{
@@ -5637,7 +7181,12 @@
 		},
 		"id": "S19e3cb7a00a82700291",
 		"legacySongID": 457,
-		"searchTerms": ["めがろばにあ", "めがろゔぁにあ", "메갈로바니아", "메갈로베니아"],
+		"searchTerms": [
+			"めがろばにあ",
+			"めがろゔぁにあ",
+			"메갈로바니아",
+			"메갈로베니아"
+		],
 		"title": "MEGALOVANIA"
 	},
 	{
@@ -5648,7 +7197,10 @@
 		},
 		"id": "S19e3cb7a00a83546b21",
 		"legacySongID": 495,
-		"searchTerms": ["ろすとぺーじじーん", "로스트 페이지 진"],
+		"searchTerms": [
+			"ろすとぺーじじーん",
+			"로스트 페이지 진"
+		],
 		"title": "ROST PAGE GENE"
 	},
 	{
@@ -5659,7 +7211,11 @@
 		},
 		"id": "S19e3cb7a00a86dae719",
 		"legacySongID": 485,
-		"searchTerms": ["りりぃ", "りりい", "릴리"],
+		"searchTerms": [
+			"りりぃ",
+			"りりい",
+			"릴리"
+		],
 		"title": "Lilly"
 	},
 	{
@@ -5670,11 +7226,16 @@
 		},
 		"id": "S19e3cb7a00a8d0c1baa",
 		"legacySongID": 479,
-		"searchTerms": ["ぶらいす", "블라이스"],
+		"searchTerms": [
+			"ぶらいす",
+			"블라이스"
+		],
 		"title": "BlythE"
 	},
 	{
-		"altTitles": ["多次元宇宙融合論"],
+		"altTitles": [
+			"多次元宇宙融合論"
+		],
 		"artist": "TAKIO feat. つぐ",
 		"data": {
 			"songPack": "Extant Anima"
@@ -5697,7 +7258,10 @@
 		},
 		"id": "S19e3cb7a00a99fb3fe1",
 		"legacySongID": 471,
-		"searchTerms": ["ないとめあ", "나이트메어"],
+		"searchTerms": [
+			"ないとめあ",
+			"나이트메어"
+		],
 		"title": "Nightmare"
 	},
 	{
@@ -5708,7 +7272,10 @@
 		},
 		"id": "S19e3cb7a00aa47420cb",
 		"legacySongID": 489,
-		"searchTerms": ["いんこんぷりーとざわん", "인컴플리트 더 원"],
+		"searchTerms": [
+			"いんこんぷりーとざわん",
+			"인컴플리트 더 원"
+		],
 		"title": "incomplete the one"
 	},
 	{
@@ -5719,11 +7286,16 @@
 		},
 		"id": "S19e3cb7a00ab9bd2fcd",
 		"legacySongID": 460,
-		"searchTerms": ["ぶらっくみらーおんざうぉーる", "블랙 미러 온 더 월"],
+		"searchTerms": [
+			"ぶらっくみらーおんざうぉーる",
+			"블랙 미러 온 더 월"
+		],
 		"title": "Black Mirror on the Wall"
 	},
 	{
-		"altTitles": ["これでホントにサヨナラ"],
+		"altTitles": [
+			"これでホントにサヨナラ"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE"
@@ -5746,7 +7318,10 @@
 		},
 		"id": "S19e3cb7a00ac8dcd0b7",
 		"legacySongID": 484,
-		"searchTerms": ["でゅあるでぃぺんでんしー", "듀얼 디펜던시"],
+		"searchTerms": [
+			"でゅあるでぃぺんでんしー",
+			"듀얼 디펜던시"
+		],
 		"title": "Dual Dependency"
 	},
 	{
@@ -5757,7 +7332,11 @@
 		},
 		"id": "S19e3cb7a00acd625f10",
 		"legacySongID": 472,
-		"searchTerms": ["てぃっくたっくとー", "ちっくたっくとー", "틱택토"],
+		"searchTerms": [
+			"てぃっくたっくとー",
+			"ちっくたっくとー",
+			"틱택토"
+		],
 		"title": "Tic! Tac! Toe!"
 	},
 	{
@@ -5784,7 +7363,10 @@
 		},
 		"id": "S19e3cb7a00ad5650718",
 		"legacySongID": 475,
-		"searchTerms": ["まいるす", "마일스"],
+		"searchTerms": [
+			"まいるす",
+			"마일스"
+		],
 		"title": "Miles"
 	},
 	{
@@ -5795,7 +7377,12 @@
 		},
 		"id": "S19e3cb7a00ad629d4a6",
 		"legacySongID": 490,
-		"searchTerms": ["かおすぶらすと", "けいおすぶらすと", "카오스블라스트", "카오스블래스트"],
+		"searchTerms": [
+			"かおすぶらすと",
+			"けいおすぶらすと",
+			"카오스블라스트",
+			"카오스블래스트"
+		],
 		"title": "CHAOSBLAST"
 	},
 	{
@@ -5806,7 +7393,10 @@
 		},
 		"id": "S19e3cb7a00ad6a95681",
 		"legacySongID": 470,
-		"searchTerms": ["おぶりびおん", "오블리비언"],
+		"searchTerms": [
+			"おぶりびおん",
+			"오블리비언"
+		],
 		"title": "OBLIVION"
 	},
 	{
@@ -5817,7 +7407,10 @@
 		},
 		"id": "S19e3cb7a00ad75520e5",
 		"legacySongID": 481,
-		"searchTerms": ["でまてりあらいずど", "디메테럴라이즈드"],
+		"searchTerms": [
+			"でまてりあらいずど",
+			"디메테럴라이즈드"
+		],
 		"title": "Dematerialized"
 	},
 	{
@@ -5844,7 +7437,10 @@
 		},
 		"id": "S19e3cb7a00adb40e0ec",
 		"legacySongID": 477,
-		"searchTerms": ["しりあな", "시리아나"],
+		"searchTerms": [
+			"しりあな",
+			"시리아나"
+		],
 		"title": "Syriana"
 	},
 	{
@@ -5855,7 +7451,11 @@
 		},
 		"id": "S19e3cb7a00adebf2d1d",
 		"legacySongID": 488,
-		"searchTerms": ["ふぁくとーだー", "팩토더", "팩트오더"],
+		"searchTerms": [
+			"ふぁくとーだー",
+			"팩토더",
+			"팩트오더"
+		],
 		"title": "Factorder"
 	},
 	{
@@ -5866,7 +7466,11 @@
 		},
 		"id": "S19e3cb7a00af060350d",
 		"legacySongID": 492,
-		"searchTerms": ["あるたーげーと", "알터게이트", "얼터게이트"],
+		"searchTerms": [
+			"あるたーげーと",
+			"알터게이트",
+			"얼터게이트"
+		],
 		"title": "AlterGate"
 	},
 	{
@@ -5877,7 +7481,10 @@
 		},
 		"id": "S19e3cb7a00af4d096e0",
 		"legacySongID": 473,
-		"searchTerms": ["さてぃすふぁくしょん", "새티스팩션"],
+		"searchTerms": [
+			"さてぃすふぁくしょん",
+			"새티스팩션"
+		],
 		"title": "SATISFACTION"
 	},
 	{
@@ -5888,7 +7495,10 @@
 		},
 		"id": "S19e3cb7a00af5653c59",
 		"legacySongID": 496,
-		"searchTerms": ["ゔぃおらいりゅりあ", "비올라 이률리아"],
+		"searchTerms": [
+			"ゔぃおらいりゅりあ",
+			"비올라 이률리아"
+		],
 		"title": "Viola Illyria"
 	},
 	{
@@ -5899,11 +7509,16 @@
 		},
 		"id": "S19e3cb7a00afa0da91e",
 		"legacySongID": 493,
-		"searchTerms": ["あけろん", "아케론"],
+		"searchTerms": [
+			"あけろん",
+			"아케론"
+		],
 		"title": "Acheron"
 	},
 	{
-		"altTitles": ["森奥虚跡"],
+		"altTitles": [
+			"森奥虚跡"
+		],
 		"artist": "ShiBa",
 		"data": {
 			"songPack": "World Extend 4"
@@ -5928,18 +7543,27 @@
 		},
 		"id": "S19e3cb7a00b048edd13",
 		"legacySongID": 531,
-		"searchTerms": ["ばりすた", "ゔぁりすた", "발리스타"],
+		"searchTerms": [
+			"ばりすた",
+			"ゔぁりすた",
+			"발리스타"
+		],
 		"title": "Vallista"
 	},
 	{
-		"altTitles": ["おまじない"],
+		"altTitles": [
+			"おまじない"
+		],
 		"artist": "Tsubusare BOZZ × Madoka*",
 		"data": {
 			"songPack": "World Extend 4"
 		},
 		"id": "S19e3cb7a00b06c6c780",
 		"legacySongID": 521,
-		"searchTerms": ["오마지나이", "주문"],
+		"searchTerms": [
+			"오마지나이",
+			"주문"
+		],
 		"title": "OMAJINAI"
 	},
 	{
@@ -5950,18 +7574,27 @@
 		},
 		"id": "S19e3cb7a00b1780adb6",
 		"legacySongID": 508,
-		"searchTerms": ["いんふぃにっとでぃめんしょん", "인피니트 디멘션"],
+		"searchTerms": [
+			"いんふぃにっとでぃめんしょん",
+			"인피니트 디멘션"
+		],
 		"title": "INFINITE DIMENSION"
 	},
 	{
-		"altTitles": ["アズゴア"],
+		"altTitles": [
+			"アズゴア"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE Pack Append (UNDERTALE)"
 		},
 		"id": "S19e3cb7a00b1d481159",
 		"legacySongID": 537,
-		"searchTerms": ["azugoa", "아스고르", "아스고어"],
+		"searchTerms": [
+			"azugoa",
+			"아스고르",
+			"아스고어"
+		],
 		"title": "ASGORE"
 	},
 	{
@@ -5972,7 +7605,11 @@
 		},
 		"id": "S19e3cb7a00b22e90753",
 		"legacySongID": 511,
-		"searchTerms": ["まれにくす", "まーれにくす", "마레닉스"],
+		"searchTerms": [
+			"まれにくす",
+			"まーれにくす",
+			"마레닉스"
+		],
 		"title": "MARENYX"
 	},
 	{
@@ -5983,7 +7620,10 @@
 		},
 		"id": "S19e3cb7a00b444512da",
 		"legacySongID": 505,
-		"searchTerms": ["あんどぱーぷるへいず", "앤 퍼플 해이즈"],
+		"searchTerms": [
+			"あんどぱーぷるへいず",
+			"앤 퍼플 해이즈"
+		],
 		"title": "Xxium and Purple haze"
 	},
 	{
@@ -5994,7 +7634,11 @@
 		},
 		"id": "S19e3cb7a00b4727cd5d",
 		"legacySongID": 500,
-		"searchTerms": ["あんだいんぐまーきゅら", "あんだいんぐまきゅら", "언다잉 마큘라"],
+		"searchTerms": [
+			"あんだいんぐまーきゅら",
+			"あんだいんぐまきゅら",
+			"언다잉 마큘라"
+		],
 		"title": "Undying Macula"
 	},
 	{
@@ -6005,7 +7649,11 @@
 		},
 		"id": "S19e3cb7a00b4ab70536",
 		"legacySongID": 514,
-		"searchTerms": ["たぶーてぃあーずゆーあっぷ", "타부 테어즈 유 업", "터부 테어즈 유 업"],
+		"searchTerms": [
+			"たぶーてぃあーずゆーあっぷ",
+			"타부 테어즈 유 업",
+			"터부 테어즈 유 업"
+		],
 		"title": "taboo tears you up 2017"
 	},
 	{
@@ -6016,7 +7664,10 @@
 		},
 		"id": "S19e3cb7a00b4b858ffe",
 		"legacySongID": 533,
-		"searchTerms": ["くらいおじぇにっく", "크라이오제닉"],
+		"searchTerms": [
+			"くらいおじぇにっく",
+			"크라이오제닉"
+		],
 		"title": "Cryogenic"
 	},
 	{
@@ -6027,7 +7678,11 @@
 		},
 		"id": "S19e3cb7a00b4d0bb64a",
 		"legacySongID": 517,
-		"searchTerms": ["mask", "ますく", "마스크"],
+		"searchTerms": [
+			"mask",
+			"ますく",
+			"마스크"
+		],
 		"title": "~_+"
 	},
 	{
@@ -6038,11 +7693,16 @@
 		},
 		"id": "S19e3cb7a00b54ec3cb8",
 		"legacySongID": 539,
-		"searchTerms": ["らいおっといんざしすてむ", "라이엇 인 더 시스템"],
+		"searchTerms": [
+			"らいおっといんざしすてむ",
+			"라이엇 인 더 시스템"
+		],
 		"title": "Riot in the System"
 	},
 	{
-		"altTitles": ["キャラメルポップコーンたべたいよ〜"],
+		"altTitles": [
+			"キャラメルポップコーンたべたいよ〜"
+		],
 		"artist": "ヤミナベレコーズ feat. 繭糸",
 		"data": {
 			"songPack": "Arcaea"
@@ -6067,18 +7727,28 @@
 		},
 		"id": "S19e3cb7a00b7383e9ea",
 		"legacySongID": 522,
-		"searchTerms": ["ちぇいんとぅないと", "체인 투나잇", "체인 투나이트"],
+		"searchTerms": [
+			"ちぇいんとぅないと",
+			"체인 투나잇",
+			"체인 투나이트"
+		],
 		"title": "CHAIN2NITE"
 	},
 	{
-		"altTitles": ["INCARNATOR00"],
+		"altTitles": [
+			"INCARNATOR00"
+		],
 		"artist": "Silentroom × N²",
 		"data": {
 			"songPack": "Arcaea Next Stage"
 		},
 		"id": "S19e3cb7a00b7b503ee1",
 		"legacySongID": 509,
-		"searchTerms": ["incarnator origin", "いんかーねーたーおりじん", "인카네이터 오리진"],
+		"searchTerms": [
+			"incarnator origin",
+			"いんかーねーたーおりじん",
+			"인카네이터 오리진"
+		],
 		"title": "INCARNATOR₀₀"
 	},
 	{
@@ -6089,7 +7759,10 @@
 		},
 		"id": "S19e3cb7a00b7bbaa1ad",
 		"legacySongID": 526,
-		"searchTerms": ["しぐなる", "시그널"],
+		"searchTerms": [
+			"しぐなる",
+			"시그널"
+		],
 		"title": "Signal"
 	},
 	{
@@ -6100,7 +7773,10 @@
 		},
 		"id": "S19e3cb7a00b88cddc5d",
 		"legacySongID": 507,
-		"searchTerms": ["えくすたーふゅーじょん", "엑스터퓨전"],
+		"searchTerms": [
+			"えくすたーふゅーじょん",
+			"엑스터퓨전"
+		],
 		"title": "Xterfusion"
 	},
 	{
@@ -6111,7 +7787,11 @@
 		},
 		"id": "S19e3cb7a00b901677be",
 		"legacySongID": 506,
-		"searchTerms": ["えんじぇるずばうんだりー", "엔젤 바운더리", "앤젤 바운더리"],
+		"searchTerms": [
+			"えんじぇるずばうんだりー",
+			"엔젤 바운더리",
+			"앤젤 바운더리"
+		],
 		"title": "Angel's Boundary"
 	},
 	{
@@ -6122,11 +7802,17 @@
 		},
 		"id": "S19e3cb7a00b933c0325",
 		"legacySongID": 510,
-		"searchTerms": ["ぜふぁーらーすてぃんぐ", "제퍼 라스팅", "제피르 라스팅"],
+		"searchTerms": [
+			"ぜふぁーらーすてぃんぐ",
+			"제퍼 라스팅",
+			"제피르 라스팅"
+		],
 		"title": "zephyrlasting"
 	},
 	{
-		"altTitles": ["［筏］は云う。幾ら漂流すれど不撓の心さえ有れば軈て行到ると。"],
+		"altTitles": [
+			"［筏］は云う。幾ら漂流すれど不撓の心さえ有れば軈て行到ると。"
+		],
 		"artist": "庭師",
 		"data": {
 			"songPack": "Memory Archive"
@@ -6143,14 +7829,19 @@
 		"title": "The 'Raft' taught me: your heart will always find a way."
 	},
 	{
-		"altTitles": ["メルティーラプソディー"],
+		"altTitles": [
+			"メルティーラプソディー"
+		],
 		"artist": "lapix feat. PANXI",
 		"data": {
 			"songPack": "MEGAREX"
 		},
 		"id": "S19e3cb7a00b9ed43a84",
 		"legacySongID": 525,
-		"searchTerms": ["merutexi rapusodexi", "멜티 랩소디"],
+		"searchTerms": [
+			"merutexi rapusodexi",
+			"멜티 랩소디"
+		],
 		"title": "Melty Rhapsody"
 	},
 	{
@@ -6161,7 +7852,10 @@
 		},
 		"id": "S19e3cb7a00ba192f3e5",
 		"legacySongID": 502,
-		"searchTerms": ["もっど", "모드"],
+		"searchTerms": [
+			"もっど",
+			"모드"
+		],
 		"title": "mod"
 	},
 	{
@@ -6172,7 +7866,10 @@
 		},
 		"id": "S19e3cb7a00ba42376ea",
 		"legacySongID": 523,
-		"searchTerms": ["わんすてっぷくろーさー", "원 스텝 클로저"],
+		"searchTerms": [
+			"わんすてっぷくろーさー",
+			"원 스텝 클로저"
+		],
 		"title": "One Step Closer"
 	},
 	{
@@ -6183,7 +7880,10 @@
 		},
 		"id": "S19e3cb7a00ba763c42b",
 		"legacySongID": 504,
-		"searchTerms": ["ぱらどっくすぱれっと", "패러독스 팔레트"],
+		"searchTerms": [
+			"ぱらどっくすぱれっと",
+			"패러독스 팔레트"
+		],
 		"title": "Paradox Palette"
 	},
 	{
@@ -6194,7 +7894,10 @@
 		},
 		"id": "S19e3cb7a00ba8c923b4",
 		"legacySongID": 503,
-		"searchTerms": ["ぱーてぃくる", "파티클"],
+		"searchTerms": [
+			"ぱーてぃくる",
+			"파티클"
+		],
 		"title": "Particle"
 	},
 	{
@@ -6205,7 +7908,10 @@
 		},
 		"id": "S19e3cb7a00bac2e123a",
 		"legacySongID": 534,
-		"searchTerms": ["でざーとれるむ", "데저트 렐름"],
+		"searchTerms": [
+			"でざーとれるむ",
+			"데저트 렐름"
+		],
 		"title": "Desertrealm"
 	},
 	{
@@ -6216,7 +7922,10 @@
 		},
 		"id": "S19e3cb7a00bad6bc309",
 		"legacySongID": 516,
-		"searchTerms": ["あんでふぁいんど", "언디파인드"],
+		"searchTerms": [
+			"あんでふぁいんど",
+			"언디파인드"
+		],
 		"title": "undefined"
 	},
 	{
@@ -6227,7 +7936,11 @@
 		},
 		"id": "S19e3cb7a00bb1dad87b",
 		"legacySongID": 513,
-		"searchTerms": ["azalea", "あざれあ", "아잘레아"],
+		"searchTerms": [
+			"azalea",
+			"あざれあ",
+			"아잘레아"
+		],
 		"title": "ΛZΛLEΛ"
 	},
 	{
@@ -6254,7 +7967,10 @@
 		},
 		"id": "S19e3cb7a00bc102a415",
 		"legacySongID": 524,
-		"searchTerms": ["まいらいふいずまいんあろーん", "마이 라이프 이즈 마인 얼론"],
+		"searchTerms": [
+			"まいらいふいずまいんあろーん",
+			"마이 라이프 이즈 마인 얼론"
+		],
 		"title": "My life is mine alone!"
 	},
 	{
@@ -6265,29 +7981,48 @@
 		},
 		"id": "S19e3cb7a00bc9f1947e",
 		"legacySongID": 499,
-		"searchTerms": ["えんどーさー", "앤도서", "엔도서", "인도서"],
+		"searchTerms": [
+			"えんどーさー",
+			"앤도서",
+			"엔도서",
+			"인도서"
+		],
 		"title": "ANDORXOR"
 	},
 	{
-		"altTitles": ["正義の槍"],
+		"altTitles": [
+			"正義の槍"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE Pack Append (UNDERTALE)"
 		},
 		"id": "S19e3cb7a00bcd4fe829",
 		"legacySongID": 536,
-		"searchTerms": ["seigi no yari", "せいぎのやり", "스피어 오브 저스티스", "정의의 창"],
+		"searchTerms": [
+			"seigi no yari",
+			"せいぎのやり",
+			"스피어 오브 저스티스",
+			"정의의 창"
+		],
 		"title": "Spear of Justice"
 	},
 	{
-		"altTitles": ["始マリノ詩"],
+		"altTitles": [
+			"始マリノ詩"
+		],
 		"artist": "有村京悟 feat.July",
 		"data": {
 			"songPack": "World Extend 4"
 		},
 		"id": "S19e3cb7a00bcfc80ab0",
 		"legacySongID": 501,
-		"searchTerms": ["hajimari no uta", "はじまりのうた", "어웨이크닝", "시작의 노래"],
+		"searchTerms": [
+			"hajimari no uta",
+			"はじまりのうた",
+			"어웨이크닝",
+			"시작의 노래"
+		],
 		"title": "Wake in Hour"
 	},
 	{
@@ -6298,7 +8033,11 @@
 		},
 		"id": "S19e3cb7a00bd0e77a16",
 		"legacySongID": 532,
-		"searchTerms": ["ぐっどれいじ", "ぐっどれーじ", "굿레이지"],
+		"searchTerms": [
+			"ぐっどれいじ",
+			"ぐっどれーじ",
+			"굿레이지"
+		],
 		"title": "GOODRAGE"
 	},
 	{
@@ -6309,7 +8048,10 @@
 		},
 		"id": "S19e3cb7a00bd73c6b3d",
 		"legacySongID": 512,
-		"searchTerms": ["こーどおぶりびおん", "코드 오블리비언"],
+		"searchTerms": [
+			"こーどおぶりびおん",
+			"코드 오블리비언"
+		],
 		"title": "Code: Oblivion"
 	},
 	{
@@ -6320,7 +8062,10 @@
 		},
 		"id": "S19e3cb7a00bdbead146",
 		"legacySongID": 518,
-		"searchTerms": ["ぱらのいどあーく", "파라노이드 아크"],
+		"searchTerms": [
+			"ぱらのいどあーく",
+			"파라노이드 아크"
+		],
 		"title": "Paranoid Arc"
 	},
 	{
@@ -6331,11 +8076,16 @@
 		},
 		"id": "S19e3cb7a00bdf3bb528",
 		"legacySongID": 538,
-		"searchTerms": ["みらーかもめさのりみっくす", "미러 카모메 사노 리믹스"],
+		"searchTerms": [
+			"みらーかもめさのりみっくす",
+			"미러 카모메 사노 리믹스"
+		],
 		"title": "MIRROR - kamome sano remix"
 	},
 	{
-		"altTitles": ["羽化する亜球体"],
+		"altTitles": [
+			"羽化する亜球体"
+		],
 		"artist": "窓辺リカ",
 		"data": {
 			"songPack": "Memory Archive"
@@ -6359,18 +8109,27 @@
 		},
 		"id": "S19e3cb7a00be608f636",
 		"legacySongID": 530,
-		"searchTerms": ["さーどあべにゅー", "さーどあゔぇにゅー", "서드 에비뉴"],
+		"searchTerms": [
+			"さーどあべにゅー",
+			"さーどあゔぇにゅー",
+			"서드 에비뉴"
+		],
 		"title": "3rd Avenue"
 	},
 	{
-		"altTitles": ["スパイダーダンス"],
+		"altTitles": [
+			"スパイダーダンス"
+		],
 		"artist": "Toby Fox",
 		"data": {
 			"songPack": "UNDERTALE Pack Append (UNDERTALE)"
 		},
 		"id": "S19e3cb7a00be77b409a",
 		"legacySongID": 535,
-		"searchTerms": ["supaida dansu", "스파이더 댄스"],
+		"searchTerms": [
+			"supaida dansu",
+			"스파이더 댄스"
+		],
 		"title": "Spider Dance"
 	},
 	{
@@ -6381,7 +8140,10 @@
 		},
 		"id": "S19e3cb7a00be7d0efaa",
 		"legacySongID": 515,
-		"searchTerms": ["ぐらんどすぺる", "그랜드스펠"],
+		"searchTerms": [
+			"ぐらんどすぺる",
+			"그랜드스펠"
+		],
 		"title": "Grandspell"
 	},
 	{

@@ -1,4 +1,4 @@
-import type { GameGroup, SongDocument, SongDocumentData } from "tachi-common";
+import type { GameGroup, SEEDS_SongDocument, SongDocument, SongDocumentData } from "tachi-common";
 
 import DB from "#services/pg/db";
 import { type Selection } from "kysely";
@@ -13,6 +13,18 @@ export const SELECT_SONG_DOCUMENT = [
 	"song.data as song_data",
 	"song.game_group as song_game_group",
 ] as const;
+
+/** Song row fields needed to write PG rows back into `songs-${game}.json`. */
+export const SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT = [
+	...SELECT_SONG_DOCUMENT,
+	"song.legacy_id as song_legacy_id",
+] as const;
+
+export type SongSeedExportRow = Selection<
+	Database,
+	"song",
+	(typeof SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT)[number]
+>;
 
 /** Full `song` row for single-table queries (e.g. title search). */
 export const SELECT_SONG_ROW = [
@@ -98,6 +110,20 @@ export function ToSongDocument(
 		altTitles: row.song_alt_titles,
 		data: row.song_data as SongDocumentData[typeof row.song_game_group],
 	};
+}
+
+/** Shape expected by seed import (`legacySongID` + id fields PG uses elsewhere). */
+export function ToSeedSongDocument(row: SongSeedExportRow): SEEDS_SongDocument<GameGroup> {
+	const gg = row.song_game_group;
+	return {
+		id: row.song_id,
+		title: row.song_title,
+		artist: row.song_artist,
+		searchTerms: row.song_search_terms,
+		altTitles: row.song_alt_titles,
+		data: row.song_data as SongDocumentData[typeof gg],
+		legacySongID: Number(row.song_legacy_id),
+	} as SEEDS_SongDocument<GameGroup>;
 }
 
 export function ToSongDocumentFromRow(row: SongRow): SongDocument {

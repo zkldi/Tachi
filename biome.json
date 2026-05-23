@@ -8,6 +8,7 @@
 	"files": {
 		"includes": [
 			"**",
+			"!db/seeds/**",
 			"!typescript/db/src/generated",
 			"!typescript/client/build",
 			"!typescript-vendor",

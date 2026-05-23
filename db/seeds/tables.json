@@ -1294,7 +1294,13 @@
 	{
 		"default": false,
 		"description": "Difficulties for CHUNITHM in NEW.",
-		"folders": ["basic-new", "advanced-new", "expert-new", "master-new", "ultima-new"],
+		"folders": [
+			"basic-new",
+			"advanced-new",
+			"expert-new",
+			"master-new",
+			"ultima-new"
+		],
 		"game": "chunithm",
 		"id": "T19d35f0d5925bdc60bb",
 		"inactive": true,
@@ -1578,7 +1584,13 @@
 	{
 		"default": false,
 		"description": "Difficulties for CHUNITHM in SUN.",
-		"folders": ["basic-sun", "advanced-sun", "expert-sun", "master-sun", "ultima-sun"],
+		"folders": [
+			"basic-sun",
+			"advanced-sun",
+			"expert-sun",
+			"master-sun",
+			"ultima-sun"
+		],
 		"game": "chunithm",
 		"id": "T19d35f0d59300ed4b23",
 		"inactive": true,

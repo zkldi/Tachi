@@ -8,7 +8,10 @@
 		},
 		"id": "S19d35e0fea2b80b07b0",
 		"legacySongID": 1,
-		"searchTerms": ["Kimi no Shiranai Monogatari", "The Story You Don't Know"],
+		"searchTerms": [
+			"Kimi no Shiranai Monogatari",
+			"The Story You Don't Know"
+		],
 		"title": "君の知らない物語"
 	},
 	{
@@ -20,7 +23,10 @@
 		},
 		"id": "S19d35e0fea3634aa6b6",
 		"legacySongID": 2,
-		"searchTerms": ["Sugar Song to Bitter Step", "Sugar Song and Bitter Step"],
+		"searchTerms": [
+			"Sugar Song to Bitter Step",
+			"Sugar Song and Bitter Step"
+		],
 		"title": "シュガーソングとビターステップ"
 	},
 	{
@@ -32,7 +38,9 @@
 		},
 		"id": "S19d35e0fea4a8038ea4",
 		"legacySongID": 3,
-		"searchTerms": ["Maware! Setsugetsuka"],
+		"searchTerms": [
+			"Maware! Setsugetsuka"
+		],
 		"title": "回レ！雪月花"
 	},
 	{
@@ -44,7 +52,9 @@
 		},
 		"id": "S19d35e0fea58115aa04",
 		"legacySongID": 4,
-		"searchTerms": ["Youkoso Japari Park e"],
+		"searchTerms": [
+			"Youkoso Japari Park e"
+		],
 		"title": "ようこそジャパリパークへ"
 	},
 	{
@@ -56,7 +66,9 @@
 		},
 		"id": "S19d35e0fea62ec58d71",
 		"legacySongID": 5,
-		"searchTerms": ["Fattoshite Tougenkyou"],
+		"searchTerms": [
+			"Fattoshite Tougenkyou"
+		],
 		"title": "ファッとして桃源郷"
 	},
 	{
@@ -68,7 +80,9 @@
 		},
 		"id": "S19d35e0fea73cf547e8",
 		"legacySongID": 6,
-		"searchTerms": ["Kakushinteki Metamaruphose!"],
+		"searchTerms": [
+			"Kakushinteki Metamaruphose!"
+		],
 		"title": "かくしん的☆めたまるふぉ～ぜっ!"
 	},
 	{
@@ -128,7 +142,9 @@
 		},
 		"id": "S19d35e0feac419a6e98",
 		"legacySongID": 11,
-		"searchTerms": ["Tori no Uta"],
+		"searchTerms": [
+			"Tori no Uta"
+		],
 		"title": "鳥の詩"
 	},
 	{
@@ -152,7 +168,9 @@
 		},
 		"id": "S19d35e0feae50537d28",
 		"legacySongID": 13,
-		"searchTerms": ["Tokimeki Experience!"],
+		"searchTerms": [
+			"Tokimeki Experience!"
+		],
 		"title": "ときめきエクスペリエンス！"
 	},
 	{
@@ -176,7 +194,9 @@
 		},
 		"id": "S19d35e0feb0f59a87dc",
 		"legacySongID": 15,
-		"searchTerms": ["Shuwarin Dreamin'"],
+		"searchTerms": [
+			"Shuwarin Dreamin'"
+		],
 		"title": "しゅわりん☆どり〜みん"
 	},
 	{
@@ -200,7 +220,9 @@
 		},
 		"id": "S19d35e0feb2fc2ed2dd",
 		"legacySongID": 17,
-		"searchTerms": ["Egao no Orchestra!"],
+		"searchTerms": [
+			"Egao no Orchestra!"
+		],
 		"title": "えがおのオーケストラっ！"
 	},
 	{
@@ -212,7 +234,9 @@
 		},
 		"id": "S19d35e0feb314518a84",
 		"legacySongID": 18,
-		"searchTerms": ["Noushou Sakuretsu Girl"],
+		"searchTerms": [
+			"Noushou Sakuretsu Girl"
+		],
 		"title": "脳漿炸裂ガール"
 	},
 	{
@@ -224,7 +248,9 @@
 		},
 		"id": "S19d35e0feb4f01c0d6a",
 		"legacySongID": 19,
-		"searchTerms": ["Amanojaku"],
+		"searchTerms": [
+			"Amanojaku"
+		],
 		"title": "天ノ弱"
 	},
 	{
@@ -236,7 +262,9 @@
 		},
 		"id": "S19d35e0feb52a3b2df9",
 		"legacySongID": 20,
-		"searchTerms": ["Okochama Sensou"],
+		"searchTerms": [
+			"Okochama Sensou"
+		],
 		"title": "おこちゃま戦争"
 	},
 	{
@@ -263,7 +291,10 @@
 		},
 		"id": "S19d35e0feb70abadf3a",
 		"legacySongID": 22,
-		"searchTerms": ["Senbonzakura", "Thousand Cherry Blossoms"],
+		"searchTerms": [
+			"Senbonzakura",
+			"Thousand Cherry Blossoms"
+		],
 		"title": "千本桜"
 	},
 	{
@@ -275,7 +306,9 @@
 		},
 		"id": "S19d35e0feb813f64943",
 		"legacySongID": 23,
-		"searchTerms": ["Kimi no Yozora Shoukaihan"],
+		"searchTerms": [
+			"Kimi no Yozora Shoukaihan"
+		],
 		"title": "キミノヨゾラ哨戒班"
 	},
 	{
@@ -287,7 +320,9 @@
 		},
 		"id": "S19d35e0feb9206a5320",
 		"legacySongID": 24,
-		"searchTerms": ["Kibori Namazu to Migikata Zombie"],
+		"searchTerms": [
+			"Kibori Namazu to Migikata Zombie"
+		],
 		"title": "木彫り鯰と右肩ゾンビ"
 	},
 	{
@@ -299,7 +334,11 @@
 		},
 		"id": "S19d35e0febaee6f3bd7",
 		"legacySongID": 25,
-		"searchTerms": ["Oni KYOKAN", "Drill Sergeant", "Demon Kyokan"],
+		"searchTerms": [
+			"Oni KYOKAN",
+			"Drill Sergeant",
+			"Demon Kyokan"
+		],
 		"title": "鬼KYOKAN"
 	},
 	{
@@ -311,7 +350,9 @@
 		},
 		"id": "S19d35e0febbe65380ad",
 		"legacySongID": 26,
-		"searchTerms": ["Bokura no 16bit Warz"],
+		"searchTerms": [
+			"Bokura no 16bit Warz"
+		],
 		"title": "ぼくらの16bit戦争"
 	},
 	{
@@ -339,7 +380,9 @@
 		},
 		"id": "S19d35e0febd7bb8a378",
 		"legacySongID": 28,
-		"searchTerms": ["Hibikase"],
+		"searchTerms": [
+			"Hibikase"
+		],
 		"title": "ヒビカセ"
 	},
 	{
@@ -351,7 +394,9 @@
 		},
 		"id": "S19d35e0febefd11ddb2",
 		"legacySongID": 29,
-		"searchTerms": ["Greenlights Serenade"],
+		"searchTerms": [
+			"Greenlights Serenade"
+		],
 		"title": "グリーンライツ・セレナーデ"
 	},
 	{
@@ -363,7 +408,11 @@
 		},
 		"id": "S19d35e0febfdf7dd2dd",
 		"legacySongID": 30,
-		"searchTerms": ["Suna no Wakusei", "Dune", "Sand Planet"],
+		"searchTerms": [
+			"Suna no Wakusei",
+			"Dune",
+			"Sand Planet"
+		],
 		"title": "砂の惑星 feat. HATSUNE MIKU"
 	},
 	{
@@ -375,7 +424,9 @@
 		},
 		"id": "S19d35e0fec05f847f11",
 		"legacySongID": 31,
-		"searchTerms": ["Ghost Rule"],
+		"searchTerms": [
+			"Ghost Rule"
+		],
 		"title": "ゴーストルール"
 	},
 	{
@@ -387,7 +438,9 @@
 		},
 		"id": "S19d35e0fec1e7f3c69d",
 		"legacySongID": 32,
-		"searchTerms": ["Buriki no Dance"],
+		"searchTerms": [
+			"Buriki no Dance"
+		],
 		"title": "ブリキノダンス"
 	},
 	{
@@ -411,7 +464,10 @@
 		},
 		"id": "S19d35e0fec322fd393e",
 		"legacySongID": 34,
-		"searchTerms": ["Night of Knights", "Knight of Nights"],
+		"searchTerms": [
+			"Night of Knights",
+			"Knight of Nights"
+		],
 		"title": "ナイト・オブ・ナイツ"
 	},
 	{
@@ -435,7 +491,9 @@
 		},
 		"id": "S19d35e0fec54cae49d5",
 		"legacySongID": 36,
-		"searchTerms": ["Gensou no Satellite"],
+		"searchTerms": [
+			"Gensou no Satellite"
+		],
 		"title": "幻想のサテライト"
 	},
 	{
@@ -447,7 +505,9 @@
 		},
 		"id": "S19d35e0fec66d7fa8db",
 		"legacySongID": 37,
-		"searchTerms": ["Energy Booster ~ Shanghai Kouchakan"],
+		"searchTerms": [
+			"Energy Booster ~ Shanghai Kouchakan"
+		],
 		"title": "Energy Booster ～ 上海紅茶館"
 	},
 	{
@@ -459,7 +519,9 @@
 		},
 		"id": "S19d35e0fec7918fa5b5",
 		"legacySongID": 38,
-		"searchTerms": ["Aqua Terrarium"],
+		"searchTerms": [
+			"Aqua Terrarium"
+		],
 		"title": "アクアテラリウム"
 	},
 	{
@@ -471,7 +533,9 @@
 		},
 		"id": "S19d35e0fec8b1cbb266",
 		"legacySongID": 39,
-		"searchTerms": ["Yojigen Chouyaku Kikan"],
+		"searchTerms": [
+			"Yojigen Chouyaku Kikan"
+		],
 		"title": "四次元跳躍機関"
 	},
 	{
@@ -483,7 +547,9 @@
 		},
 		"id": "S19d35e0fec9b31b5999",
 		"legacySongID": 40,
-		"searchTerms": ["Remilia Destiny"],
+		"searchTerms": [
+			"Remilia Destiny"
+		],
 		"title": "れみりあ☆デスティニー"
 	},
 	{
@@ -536,7 +602,9 @@
 		},
 		"id": "S19d35e0fecdbae5e452",
 		"legacySongID": 44,
-		"searchTerms": ["Geki! Teikoku Kagekidan"],
+		"searchTerms": [
+			"Geki! Teikoku Kagekidan"
+		],
 		"title": "檄!帝国華撃団"
 	},
 	{
@@ -586,7 +654,9 @@
 		},
 		"id": "S19d35e0fed110db15ab",
 		"legacySongID": 48,
-		"searchTerms": ["Omoiyoshino"],
+		"searchTerms": [
+			"Omoiyoshino"
+		],
 		"title": "オモイヨシノ"
 	},
 	{
@@ -598,7 +668,9 @@
 		},
 		"id": "S19d35e0fed2c4e13495",
 		"legacySongID": 49,
-		"searchTerms": ["Kamui"],
+		"searchTerms": [
+			"Kamui"
+		],
 		"title": "神威"
 	},
 	{
@@ -622,7 +694,9 @@
 		},
 		"id": "S19d35e0fed4c13c43d8",
 		"legacySongID": 51,
-		"searchTerms": ["GO!GO! Love Rhythm"],
+		"searchTerms": [
+			"GO!GO! Love Rhythm"
+		],
 		"title": "ＧＯ！ＧＯ！ラブリズム♥"
 	},
 	{
@@ -647,7 +721,9 @@
 		},
 		"id": "S19d35e0fed6c19ab8bb",
 		"legacySongID": 53,
-		"searchTerms": ["Shinshou Shinkirou"],
+		"searchTerms": [
+			"Shinshou Shinkirou"
+		],
 		"title": "心象蜃気楼"
 	},
 	{
@@ -683,7 +759,9 @@
 		},
 		"id": "S19d35e0fed9b854ac64",
 		"legacySongID": 56,
-		"searchTerms": ["Amenohoakari"],
+		"searchTerms": [
+			"Amenohoakari"
+		],
 		"title": "天火明命"
 	},
 	{
@@ -767,7 +845,10 @@
 		},
 		"id": "S19d35e0fee05d01705d",
 		"legacySongID": 63,
-		"searchTerms": ["Senkou no Brionac", "Brionac of Steel-flash"],
+		"searchTerms": [
+			"Senkou no Brionac",
+			"Brionac of Steel-flash"
+		],
 		"title": "閃鋼のブリューナク"
 	},
 	{
@@ -803,7 +884,9 @@
 		},
 		"id": "S19d35e0fee3a61a4735",
 		"legacySongID": 66,
-		"searchTerms": ["Ima Zo Agame Tatematsure Omaerayo!! ~Hime no Himetal Katsubou~"],
+		"searchTerms": [
+			"Ima Zo Agame Tatematsure Omaerayo!! ~Hime no Himetal Katsubou~"
+		],
 		"title": "今ぞ♡崇め奉れ☆オマエらよ！！～姫の秘メタル渇望～"
 	},
 	{
@@ -827,7 +910,10 @@
 		},
 		"id": "S19d35e0fee585e843d0",
 		"legacySongID": 68,
-		"searchTerms": ["End Mark ni Kibou to Namida o Soete", "Endmark"],
+		"searchTerms": [
+			"End Mark ni Kibou to Namida o Soete",
+			"Endmark"
+		],
 		"title": "エンドマークに希望と涙を添えて"
 	},
 	{
@@ -863,7 +949,9 @@
 		},
 		"id": "S19d35e0fee84a89fe44",
 		"legacySongID": 71,
-		"searchTerms": ["Minna Happy!!"],
+		"searchTerms": [
+			"Minna Happy!!"
+		],
 		"title": "みんな Happy!!"
 	},
 	{
@@ -912,7 +1000,9 @@
 		},
 		"id": "S19d35e0feece524cdbf",
 		"legacySongID": 75,
-		"searchTerms": ["P!P!P!P! Gaoh!!"],
+		"searchTerms": [
+			"P!P!P!P! Gaoh!!"
+		],
 		"title": "P！P！P！P！がおー!!"
 	},
 	{
@@ -924,7 +1014,9 @@
 		},
 		"id": "S19d35e0feedbb4cb10f",
 		"legacySongID": 76,
-		"searchTerms": ["Tatemae to Honshin no Dairantou"],
+		"searchTerms": [
+			"Tatemae to Honshin no Dairantou"
+		],
 		"title": "タテマエと本心の大乱闘"
 	},
 	{
@@ -949,7 +1041,9 @@
 		},
 		"id": "S19d35e0feef64eced33",
 		"legacySongID": 78,
-		"searchTerms": ["Rockin' Pink Monster"],
+		"searchTerms": [
+			"Rockin' Pink Monster"
+		],
 		"title": "ロッキンピンクモンスター"
 	},
 	{
@@ -962,7 +1056,9 @@
 		},
 		"id": "S19d35e0fef02e5b45eb",
 		"legacySongID": 79,
-		"searchTerms": ["Butsumetsu Beaters"],
+		"searchTerms": [
+			"Butsumetsu Beaters"
+		],
 		"title": "ブツメツビーターズ"
 	},
 	{
@@ -1087,7 +1183,9 @@
 		},
 		"id": "S19d35e0fefa1ddc01d6",
 		"legacySongID": 89,
-		"searchTerms": ["Ketsui"],
+		"searchTerms": [
+			"Ketsui"
+		],
 		"title": "No Remorse"
 	},
 	{
@@ -1111,7 +1209,9 @@
 		},
 		"id": "S19d35e0fefce26859ad",
 		"legacySongID": 91,
-		"searchTerms": ["Kamisama Nejimaki"],
+		"searchTerms": [
+			"Kamisama Nejimaki"
+		],
 		"title": "カミサマネジマキ"
 	},
 	{
@@ -1123,7 +1223,9 @@
 		},
 		"id": "S19d35e0fefd731fa394",
 		"legacySongID": 92,
-		"searchTerms": ["Yi-er Fun Club"],
+		"searchTerms": [
+			"Yi-er Fun Club"
+		],
 		"title": "いーあるふぁんくらぶ"
 	},
 	{
@@ -1151,7 +1253,9 @@
 		},
 		"id": "S19d35e0feff9d2c9ffe",
 		"legacySongID": 94,
-		"searchTerms": ["Chururira Chururira Daddadda!"],
+		"searchTerms": [
+			"Chururira Chururira Daddadda!"
+		],
 		"title": "チュルリラ・チュルリラ・ダッダッダ！"
 	},
 	{
@@ -1175,7 +1279,9 @@
 		},
 		"id": "S19d35e0ff01f4f757db",
 		"legacySongID": 96,
-		"searchTerms": ["Watashi Ondo"],
+		"searchTerms": [
+			"Watashi Ondo"
+		],
 		"title": "わたし音頭"
 	},
 	{
@@ -1187,7 +1293,9 @@
 		},
 		"id": "S19d35e0ff026f5d61eb",
 		"legacySongID": 97,
-		"searchTerms": ["Tsuresatte Tojikomete Suki ni Shite"],
+		"searchTerms": [
+			"Tsuresatte Tojikomete Suki ni Shite"
+		],
 		"title": "連れ去って・閉じ込めて・好きにして"
 	},
 	{
@@ -1224,7 +1332,9 @@
 		},
 		"id": "S19d35e0ff051c35654c",
 		"legacySongID": 100,
-		"searchTerms": ["Tsuki ni Murakumo Hana ni Kaze"],
+		"searchTerms": [
+			"Tsuki ni Murakumo Hana ni Kaze"
+		],
 		"title": "月に叢雲華に風"
 	},
 	{
@@ -1248,7 +1358,9 @@
 		},
 		"id": "S19d35e0ff071d11e269",
 		"legacySongID": 102,
-		"searchTerms": ["Hey-day Capriccio"],
+		"searchTerms": [
+			"Hey-day Capriccio"
+		],
 		"title": "Hey-day狂騒曲（カプリチオ）"
 	},
 	{
@@ -1260,7 +1372,9 @@
 		},
 		"id": "S19d35e0ff08b0d305f1",
 		"legacySongID": 103,
-		"searchTerms": ["Yura Yura Ring-Dong-Dance"],
+		"searchTerms": [
+			"Yura Yura Ring-Dong-Dance"
+		],
 		"title": "ゆら・ゆらRing-Dong-Dance"
 	},
 	{
@@ -1284,7 +1398,9 @@
 		},
 		"id": "S19d35e0ff0a7ae2d8d5",
 		"legacySongID": 105,
-		"searchTerms": ["Goka! Gokai!? Phantom Thief!"],
+		"searchTerms": [
+			"Goka! Gokai!? Phantom Thief!"
+		],
 		"title": "ゴーカ！ごーかい！？ファントムシーフ！"
 	},
 	{
@@ -1296,7 +1412,9 @@
 		},
 		"id": "S19d35e0ff0b0ad5e392",
 		"legacySongID": 106,
-		"searchTerms": ["Ikazuchi"],
+		"searchTerms": [
+			"Ikazuchi"
+		],
 		"title": "怒槌"
 	},
 	{
@@ -1361,7 +1479,9 @@
 		},
 		"id": "S19d35e0ff10ccd1039c",
 		"legacySongID": 111,
-		"searchTerms": ["Secret Base ~Kimi ga Kuretamono~ (10 years after ver.)"],
+		"searchTerms": [
+			"Secret Base ~Kimi ga Kuretamono~ (10 years after ver.)"
+		],
 		"title": "secret base ～君がくれたもの～ (10 years after Ver.)"
 	},
 	{
@@ -1433,7 +1553,9 @@
 		},
 		"id": "S19d35e0ff1605cef089",
 		"legacySongID": 117,
-		"searchTerms": ["Kokoro Koko kara"],
+		"searchTerms": [
+			"Kokoro Koko kara"
+		],
 		"title": "こころここから"
 	},
 	{
@@ -1445,7 +1567,9 @@
 		},
 		"id": "S19d35e0ff172b183891",
 		"legacySongID": 118,
-		"searchTerms": ["Robot Planet Utopia"],
+		"searchTerms": [
+			"Robot Planet Utopia"
+		],
 		"title": "ロボットプラネットユートピア"
 	},
 	{
@@ -1457,7 +1581,9 @@
 		},
 		"id": "S19d35e0ff18ffe4e826",
 		"legacySongID": 119,
-		"searchTerms": ["Toki no Boukensha"],
+		"searchTerms": [
+			"Toki no Boukensha"
+		],
 		"title": "時の冒険者"
 	},
 	{
@@ -1493,7 +1619,9 @@
 		},
 		"id": "S19d35e0ff1b2e098367",
 		"legacySongID": 122,
-		"searchTerms": ["Ryuusei"],
+		"searchTerms": [
+			"Ryuusei"
+		],
 		"title": "流星"
 	},
 	{
@@ -1517,7 +1645,9 @@
 		},
 		"id": "S19d35e0ff1db8414c04",
 		"legacySongID": 124,
-		"searchTerms": ["Girly Days"],
+		"searchTerms": [
+			"Girly Days"
+		],
 		"title": "超電磁少女Days"
 	},
 	{
@@ -1529,7 +1659,9 @@
 		},
 		"id": "S19d35e0ff1e94dcbd80",
 		"legacySongID": 125,
-		"searchTerms": ["Desuno! White & Black"],
+		"searchTerms": [
+			"Desuno! White & Black"
+		],
 		"title": "ですのっ！White & Black"
 	},
 	{
@@ -1541,7 +1673,9 @@
 		},
 		"id": "S19d35e0ff1f2c142d2e",
 		"legacySongID": 126,
-		"searchTerms": ["Hibana"],
+		"searchTerms": [
+			"Hibana"
+		],
 		"title": "ヒバナ"
 	},
 	{
@@ -1553,7 +1687,9 @@
 		},
 		"id": "S19d35e0ff209d6e2f3b",
 		"legacySongID": 127,
-		"searchTerms": ["Roki"],
+		"searchTerms": [
+			"Roki"
+		],
 		"title": "ロキ"
 	},
 	{
@@ -1565,7 +1701,9 @@
 		},
 		"id": "S19d35e0ff21a6729f87",
 		"legacySongID": 128,
-		"searchTerms": ["Queen of Heart"],
+		"searchTerms": [
+			"Queen of Heart"
+		],
 		"title": "クイーンオブハート"
 	},
 	{
@@ -1651,7 +1789,9 @@
 		},
 		"id": "S19d35e0ff28a0cb41f0",
 		"legacySongID": 135,
-		"searchTerms": ["Kanpeki Will"],
+		"searchTerms": [
+			"Kanpeki Will"
+		],
 		"title": "カンペキWill"
 	},
 	{
@@ -1663,7 +1803,9 @@
 		},
 		"id": "S19d35e0ff294c90292a",
 		"legacySongID": 136,
-		"searchTerms": ["Unhappy Refrain"],
+		"searchTerms": [
+			"Unhappy Refrain"
+		],
 		"title": "アンハッピーリフレイン"
 	},
 	{
@@ -1687,7 +1829,9 @@
 		},
 		"id": "S19d35e0ff2bc78a0ec7",
 		"legacySongID": 138,
-		"searchTerms": ["Honnouteki Survivor"],
+		"searchTerms": [
+			"Honnouteki Survivor"
+		],
 		"title": "本能的 Survivor"
 	},
 	{
@@ -1711,7 +1855,10 @@
 		},
 		"id": "S19d35e0ff2ded8cb7a7",
 		"legacySongID": 140,
-		"searchTerms": ["Hatsune Miku no Shoushitsu", "The Disappearance of Hatsune Miku"],
+		"searchTerms": [
+			"Hatsune Miku no Shoushitsu",
+			"The Disappearance of Hatsune Miku"
+		],
 		"title": "初音ミクの消失"
 	},
 	{
@@ -1723,7 +1870,10 @@
 		},
 		"id": "S19d35e0ff2efb97dc33",
 		"legacySongID": 141,
-		"searchTerms": ["Roshin Yuukai", "Meltdown"],
+		"searchTerms": [
+			"Roshin Yuukai",
+			"Meltdown"
+		],
 		"title": "炉心融解"
 	},
 	{
@@ -1735,7 +1885,9 @@
 		},
 		"id": "S19d35e0ff2fd44d4c35",
 		"legacySongID": 142,
-		"searchTerms": ["Hoshikuzu Utopia"],
+		"searchTerms": [
+			"Hoshikuzu Utopia"
+		],
 		"title": "星屑ユートピア"
 	},
 	{
@@ -1759,7 +1911,9 @@
 		},
 		"id": "S19d35e0ff311d5a913b",
 		"legacySongID": 144,
-		"searchTerms": ["*Hello, Planet."],
+		"searchTerms": [
+			"*Hello, Planet."
+		],
 		"title": "＊ハロー、プラネット。"
 	},
 	{
@@ -1771,7 +1925,9 @@
 		},
 		"id": "S19d35e0ff3274c13133",
 		"legacySongID": 145,
-		"searchTerms": ["Karakuri Pierrot"],
+		"searchTerms": [
+			"Karakuri Pierrot"
+		],
 		"title": "からくりピエロ"
 	},
 	{
@@ -1844,7 +2000,9 @@
 		},
 		"id": "S19d35e0ff384bda005d",
 		"legacySongID": 151,
-		"searchTerms": ["ONGEKI Zen'iki Akane-sama?"],
+		"searchTerms": [
+			"ONGEKI Zen'iki Akane-sama?"
+		],
 		"title": "オンゲキ全域★アカネサマ？"
 	},
 	{
@@ -1856,7 +2014,10 @@
 		},
 		"id": "S19d35e0ff3914c505e5",
 		"legacySongID": 152,
-		"searchTerms": ["Ikazuchi~Mitsuyoshi Takenobu Ichibu Nazo~", "April fools"],
+		"searchTerms": [
+			"Ikazuchi~Mitsuyoshi Takenobu Ichibu Nazo~",
+			"April fools"
+		],
 		"title": "怒槌～光吉猛修一部謎～"
 	},
 	{
@@ -1880,7 +2041,9 @@
 		},
 		"id": "S19d35e0ff3b6f6aa0b1",
 		"legacySongID": 154,
-		"searchTerms": ["Gokujou Smile"],
+		"searchTerms": [
+			"Gokujou Smile"
+		],
 		"title": "極上スマイル"
 	},
 	{
@@ -1916,7 +2079,9 @@
 		},
 		"id": "S19d35e0ff3e6586377a",
 		"legacySongID": 157,
-		"searchTerms": ["Arisa no Thema"],
+		"searchTerms": [
+			"Arisa no Thema"
+		],
 		"title": "アリサのテーマ"
 	},
 	{
@@ -1940,7 +2105,9 @@
 		},
 		"id": "S19d35e0ff4001b83c3c",
 		"legacySongID": 159,
-		"searchTerms": ["Menimeni Manimani"],
+		"searchTerms": [
+			"Menimeni Manimani"
+		],
 		"title": "メニメニマニマニ"
 	},
 	{
@@ -1952,7 +2119,9 @@
 		},
 		"id": "S19d35e0ff41354afeb1",
 		"legacySongID": 160,
-		"searchTerms": ["Ne! Ko!"],
+		"searchTerms": [
+			"Ne! Ko!"
+		],
 		"title": "ネ！コ！"
 	},
 	{
@@ -1964,7 +2133,9 @@
 		},
 		"id": "S19d35e0ff42ab592530",
 		"legacySongID": 161,
-		"searchTerms": ["Charles"],
+		"searchTerms": [
+			"Charles"
+		],
 		"title": "シャルル"
 	},
 	{
@@ -1976,7 +2147,9 @@
 		},
 		"id": "S19d35e0ff4323bbb825",
 		"legacySongID": 162,
-		"searchTerms": ["Owari no Saki no Syllable"],
+		"searchTerms": [
+			"Owari no Saki no Syllable"
+		],
 		"title": "終わりの先の音節"
 	},
 	{
@@ -1988,7 +2161,9 @@
 		},
 		"id": "S19d35e0ff44d0f17de0",
 		"legacySongID": 163,
-		"searchTerms": ["Epikouros no Niji wa Mou Mienai"],
+		"searchTerms": [
+			"Epikouros no Niji wa Mou Mienai"
+		],
 		"title": "エピクロスの虹はもう見えない"
 	},
 	{
@@ -2012,7 +2187,9 @@
 		},
 		"id": "S19d35e0ff46bf0c24ba",
 		"legacySongID": 165,
-		"searchTerms": ["Mendooi! Yahhooi! Tomodachi!"],
+		"searchTerms": [
+			"Mendooi! Yahhooi! Tomodachi!"
+		],
 		"title": "めんどーい！やっほーい！ともだち！"
 	},
 	{
@@ -2038,7 +2215,10 @@
 		},
 		"id": "S19d35e0ff4813932b2a",
 		"legacySongID": 167,
-		"searchTerms": ["Kokoro", "Heart"],
+		"searchTerms": [
+			"Kokoro",
+			"Heart"
+		],
 		"title": "心"
 	},
 	{
@@ -2050,7 +2230,9 @@
 		},
 		"id": "S19d35e0ff49fdee8f3e",
 		"legacySongID": 168,
-		"searchTerms": ["Shinchoku Dou Desu ka?"],
+		"searchTerms": [
+			"Shinchoku Dou Desu ka?"
+		],
 		"title": "進捗どうですか？"
 	},
 	{
@@ -2062,7 +2244,9 @@
 		},
 		"id": "S19d35e0ff4a1b701755",
 		"legacySongID": 169,
-		"searchTerms": ["Touhou Youyoumu ~the maximum moving about~"],
+		"searchTerms": [
+			"Touhou Youyoumu ~the maximum moving about~"
+		],
 		"title": "東方妖々夢 ～the maximum moving about～"
 	},
 	{
@@ -2074,7 +2258,9 @@
 		},
 		"id": "S19d35e0ff4b37fc553d",
 		"legacySongID": 170,
-		"searchTerms": ["Kansouou"],
+		"searchTerms": [
+			"Kansouou"
+		],
 		"title": "寒想桜"
 	},
 	{
@@ -2086,7 +2272,9 @@
 		},
 		"id": "S19d35e0ff4c5f222e05",
 		"legacySongID": 171,
-		"searchTerms": ["Youko Sengakuto"],
+		"searchTerms": [
+			"Youko Sengakuto"
+		],
 		"title": "妖狐仙楽踏"
 	},
 	{
@@ -2122,7 +2310,9 @@
 		},
 		"id": "S19d35e0ff4f68735003",
 		"legacySongID": 174,
-		"searchTerms": ["Sakura Musubi"],
+		"searchTerms": [
+			"Sakura Musubi"
+		],
 		"title": "櫻結び"
 	},
 	{
@@ -2195,7 +2385,10 @@
 		},
 		"id": "S19d35e0ff55c133e1d8",
 		"legacySongID": 180,
-		"searchTerms": ["Doubutsu Paradise", "Animal Paradise"],
+		"searchTerms": [
+			"Doubutsu Paradise",
+			"Animal Paradise"
+		],
 		"title": "どうぶつ☆パラダイス"
 	},
 	{
@@ -2207,7 +2400,9 @@
 		},
 		"id": "S19d35e0ff566c33ca1a",
 		"legacySongID": 181,
-		"searchTerms": ["Y.Y.Y. Keikaku!!!!"],
+		"searchTerms": [
+			"Y.Y.Y. Keikaku!!!!"
+		],
 		"title": "Y.Y.Y.計画!!!!"
 	},
 	{
@@ -2279,7 +2474,9 @@
 		},
 		"id": "S19d35e0ff5c5cf06176",
 		"legacySongID": 187,
-		"searchTerms": ["Melt"],
+		"searchTerms": [
+			"Melt"
+		],
 		"title": "メルト"
 	},
 	{
@@ -2340,7 +2537,10 @@
 		},
 		"id": "S19d35e0ff61aa0d492b",
 		"legacySongID": 192,
-		"searchTerms": ["Cirno no Perfect Sansuu Kyoushitsu", "Cirno's Perfect Math Class"],
+		"searchTerms": [
+			"Cirno no Perfect Sansuu Kyoushitsu",
+			"Cirno's Perfect Math Class"
+		],
 		"title": "チルノのパーフェクトさんすう教室"
 	},
 	{
@@ -2366,7 +2566,11 @@
 		},
 		"id": "S19d35e0ff63211c4257",
 		"legacySongID": 194,
-		"searchTerms": ["omega4", "w4", "wwww"],
+		"searchTerms": [
+			"omega4",
+			"w4",
+			"wwww"
+		],
 		"title": "ω4"
 	},
 	{
@@ -2378,7 +2582,9 @@
 		},
 		"id": "S19d35e0ff649ab7b96d",
 		"legacySongID": 195,
-		"searchTerms": ["Donut Hole"],
+		"searchTerms": [
+			"Donut Hole"
+		],
 		"title": "ドーナツホール"
 	},
 	{
@@ -2390,7 +2596,10 @@
 		},
 		"id": "S19d35e0ff65b257ba21",
 		"legacySongID": 196,
-		"searchTerms": ["Jinsei Reset Button", "Life Reset Button"],
+		"searchTerms": [
+			"Jinsei Reset Button",
+			"Life Reset Button"
+		],
 		"title": "人生リセットボタン"
 	},
 	{
@@ -2418,7 +2627,10 @@
 		},
 		"id": "S19d35e0ff67c2470e14",
 		"legacySongID": 198,
-		"searchTerms": ["Kousen Tuning", "Ray Tuning"],
+		"searchTerms": [
+			"Kousen Tuning",
+			"Ray Tuning"
+		],
 		"title": "光線チューニング"
 	},
 	{
@@ -2430,7 +2642,9 @@
 		},
 		"id": "S19d35e0ff68064a216f",
 		"legacySongID": 199,
-		"searchTerms": ["Adabana Necromancy"],
+		"searchTerms": [
+			"Adabana Necromancy"
+		],
 		"title": "徒花ネクロマンシー"
 	},
 	{
@@ -2514,7 +2728,9 @@
 		},
 		"id": "S19d35e0ff6fbeecdb73",
 		"legacySongID": 206,
-		"searchTerms": ["Dance Robot Dance"],
+		"searchTerms": [
+			"Dance Robot Dance"
+		],
 		"title": "ダンスロボットダンス"
 	},
 	{
@@ -2526,7 +2742,9 @@
 		},
 		"id": "S19d35e0ff709c836950",
 		"legacySongID": 207,
-		"searchTerms": ["Gigantic O.T.N"],
+		"searchTerms": [
+			"Gigantic O.T.N"
+		],
 		"title": "ギガンティックO.T.N"
 	},
 	{
@@ -2538,7 +2756,9 @@
 		},
 		"id": "S19d35e0ff717e4db799",
 		"legacySongID": 208,
-		"searchTerms": ["Kaisei"],
+		"searchTerms": [
+			"Kaisei"
+		],
 		"title": "快晴"
 	},
 	{
@@ -2550,7 +2770,9 @@
 		},
 		"id": "S19d35e0ff7276096bf7",
 		"legacySongID": 209,
-		"searchTerms": ["Summertime Record"],
+		"searchTerms": [
+			"Summertime Record"
+		],
 		"title": "サマータイムレコード"
 	},
 	{
@@ -2562,7 +2784,9 @@
 		},
 		"id": "S19d35e0ff73c736f25a",
 		"legacySongID": 210,
-		"searchTerms": ["Bless Your Breath"],
+		"searchTerms": [
+			"Bless Your Breath"
+		],
 		"title": "ブレス・ユア・ブレス"
 	},
 	{
@@ -2586,7 +2810,9 @@
 		},
 		"id": "S19d35e0ff75b65e5b9d",
 		"legacySongID": 212,
-		"searchTerms": ["SadoMamiHolic"],
+		"searchTerms": [
+			"SadoMamiHolic"
+		],
 		"title": "サドマミホリック"
 	},
 	{
@@ -2598,7 +2824,9 @@
 		},
 		"id": "S19d35e0ff7688303ba3",
 		"legacySongID": 213,
-		"searchTerms": ["Kanbu de Tomatte Sugu Tokeru ~ Kyouki no Udongein"],
+		"searchTerms": [
+			"Kanbu de Tomatte Sugu Tokeru ~ Kyouki no Udongein"
+		],
 		"title": "患部で止まってすぐ溶ける～狂気の優曇華院"
 	},
 	{
@@ -2622,7 +2850,9 @@
 		},
 		"id": "S19d35e0ff7849725b75",
 		"legacySongID": 215,
-		"searchTerms": ["Saikyou the Summertime!!!!!"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!!"
+		],
 		"title": "最強 the サマータイム!!!!!"
 	},
 	{
@@ -2635,7 +2865,9 @@
 		},
 		"id": "S19d35e0ff7973571396",
 		"legacySongID": 216,
-		"searchTerms": ["Massugu Stream!"],
+		"searchTerms": [
+			"Massugu Stream!"
+		],
 		"title": "まっすぐ→→→ストリーム！"
 	},
 	{
@@ -2672,7 +2904,9 @@
 		},
 		"id": "S19d35e0ff7c925b25da",
 		"legacySongID": 219,
-		"searchTerms": ["Toridori Morimori! Lovely Fruits"],
+		"searchTerms": [
+			"Toridori Morimori! Lovely Fruits"
+		],
 		"title": "トリドリ⇒モリモリ！Lovely fruits☆"
 	},
 	{
@@ -2697,7 +2931,9 @@
 		},
 		"id": "S19d35e0ff7ebca4b770",
 		"legacySongID": 221,
-		"searchTerms": ["Yoake no String"],
+		"searchTerms": [
+			"Yoake no String"
+		],
 		"title": "夜明けのストリング"
 	},
 	{
@@ -2721,7 +2957,10 @@
 		},
 		"id": "S19d35e0ff8033a053b3",
 		"legacySongID": 223,
-		"searchTerms": ["Hibachi", "Dodonpachi"],
+		"searchTerms": [
+			"Hibachi",
+			"Dodonpachi"
+		],
 		"title": "緋蜂"
 	},
 	{
@@ -2733,7 +2972,9 @@
 		},
 		"id": "S19d35e0ff814205ad90",
 		"legacySongID": 224,
-		"searchTerms": ["Eien Memory"],
+		"searchTerms": [
+			"Eien Memory"
+		],
 		"title": "永遠メモリー"
 	},
 	{
@@ -2745,7 +2986,9 @@
 		},
 		"id": "S19d35e0ff8212836943",
 		"legacySongID": 225,
-		"searchTerms": ["Hoshi no Dialogue"],
+		"searchTerms": [
+			"Hoshi no Dialogue"
+		],
 		"title": "星のダイアローグ"
 	},
 	{
@@ -2769,7 +3012,9 @@
 		},
 		"id": "S19d35e0ff84369f9578",
 		"legacySongID": 227,
-		"searchTerms": ["Jinruimina Senpai!"],
+		"searchTerms": [
+			"Jinruimina Senpai!"
+		],
 		"title": "人類みなセンパイ！"
 	},
 	{
@@ -2781,7 +3026,9 @@
 		},
 		"id": "S19d35e0ff853b9ae9a8",
 		"legacySongID": 228,
-		"searchTerms": ["Toumei Seisai"],
+		"searchTerms": [
+			"Toumei Seisai"
+		],
 		"title": "透明声彩"
 	},
 	{
@@ -2793,7 +3040,9 @@
 		},
 		"id": "S19d35e0ff86e6a0a889",
 		"legacySongID": 229,
-		"searchTerms": ["Usatei"],
+		"searchTerms": [
+			"Usatei"
+		],
 		"title": "ウサテイ"
 	},
 	{
@@ -2805,7 +3054,9 @@
 		},
 		"id": "S19d35e0ff8737442091",
 		"legacySongID": 230,
-		"searchTerms": ["Zenryoku Happy Life"],
+		"searchTerms": [
+			"Zenryoku Happy Life"
+		],
 		"title": "全力ハッピーライフ"
 	},
 	{
@@ -2817,7 +3068,9 @@
 		},
 		"id": "S19d35e0ff88ce984246",
 		"legacySongID": 231,
-		"searchTerms": ["Replica no Koi"],
+		"searchTerms": [
+			"Replica no Koi"
+		],
 		"title": "レプリカの恋"
 	},
 	{
@@ -2841,7 +3094,9 @@
 		},
 		"id": "S19d35e0ff8ad38ca12c",
 		"legacySongID": 233,
-		"searchTerms": ["Gin no Meguri"],
+		"searchTerms": [
+			"Gin no Meguri"
+		],
 		"title": "銀のめぐり"
 	},
 	{
@@ -2853,7 +3108,9 @@
 		},
 		"id": "S19d35e0ff8b306bf52d",
 		"legacySongID": 234,
-		"searchTerms": ["Invisible"],
+		"searchTerms": [
+			"Invisible"
+		],
 		"title": "インビジブル"
 	},
 	{
@@ -2866,7 +3123,9 @@
 		},
 		"id": "S19d35e0ff8c08f98fff",
 		"legacySongID": 235,
-		"searchTerms": ["MAKING! High Touch!"],
+		"searchTerms": [
+			"MAKING! High Touch!"
+		],
 		"title": "MAKING！ハイタッチ！"
 	},
 	{
@@ -2891,7 +3150,9 @@
 		},
 		"id": "S19d35e0ff8ec21a85fc",
 		"legacySongID": 237,
-		"searchTerms": ["Mirai no Kanata"],
+		"searchTerms": [
+			"Mirai no Kanata"
+		],
 		"title": "未来の彼方"
 	},
 	{
@@ -2903,7 +3164,9 @@
 		},
 		"id": "S19d35e0ff8f384a87d9",
 		"legacySongID": 238,
-		"searchTerms": ["Seishun Cider"],
+		"searchTerms": [
+			"Seishun Cider"
+		],
 		"title": "青春サイダー"
 	},
 	{
@@ -2940,7 +3203,9 @@
 		},
 		"id": "S19d35e0ff92bfc27eaf",
 		"legacySongID": 241,
-		"searchTerms": ["Suisei Honeymoon"],
+		"searchTerms": [
+			"Suisei Honeymoon"
+		],
 		"title": "彗星ハネムーン"
 	},
 	{
@@ -2952,7 +3217,9 @@
 		},
 		"id": "S19d35e0ff93be0d3c22",
 		"legacySongID": 242,
-		"searchTerms": ["Mabel (self cover)"],
+		"searchTerms": [
+			"Mabel (self cover)"
+		],
 		"title": "メーベル (self cover)"
 	},
 	{
@@ -2964,7 +3231,10 @@
 		},
 		"id": "S19d35e0ff94bebf2d84",
 		"legacySongID": 243,
-		"searchTerms": ["Night of Knights (Cranky Remix)", "Knight of Nights"],
+		"searchTerms": [
+			"Night of Knights (Cranky Remix)",
+			"Knight of Nights"
+		],
 		"title": "ナイト・オブ・ナイツ (Cranky Remix)"
 	},
 	{
@@ -2976,7 +3246,9 @@
 		},
 		"id": "S19d35e0ff95481683de",
 		"legacySongID": 244,
-		"searchTerms": ["Pocket kara Nuritsubuse!"],
+		"searchTerms": [
+			"Pocket kara Nuritsubuse!"
+		],
 		"title": "ポケットからぬりつぶせ！"
 	},
 	{
@@ -3024,7 +3296,10 @@
 		},
 		"id": "S19d35e0ff99b010f0a2",
 		"legacySongID": 248,
-		"searchTerms": ["WV", "Pizza"],
+		"searchTerms": [
+			"WV",
+			"Pizza"
+		],
 		"title": "World Vanquisher"
 	},
 	{
@@ -3036,7 +3311,9 @@
 		},
 		"id": "S19d35e0ff9ada2c015d",
 		"legacySongID": 249,
-		"searchTerms": ["Start Line"],
+		"searchTerms": [
+			"Start Line"
+		],
 		"title": "スタートライン"
 	},
 	{
@@ -3048,7 +3325,9 @@
 		},
 		"id": "S19d35e0ff9b37da360e",
 		"legacySongID": 250,
-		"searchTerms": ["Onegai My Boy"],
+		"searchTerms": [
+			"Onegai My Boy"
+		],
 		"title": "お願い☆My Boy"
 	},
 	{
@@ -3060,7 +3339,9 @@
 		},
 		"id": "S19d35e0ff9c76baf606",
 		"legacySongID": 251,
-		"searchTerms": ["Hoshikuzu Seeker"],
+		"searchTerms": [
+			"Hoshikuzu Seeker"
+		],
 		"title": "星屑☆シーカー"
 	},
 	{
@@ -3072,7 +3353,9 @@
 		},
 		"id": "S19d35e0ff9df72580b2",
 		"legacySongID": 252,
-		"searchTerms": ["DeliHeal Yondara Kimi ga Kita"],
+		"searchTerms": [
+			"DeliHeal Yondara Kimi ga Kita"
+		],
 		"title": "デリヘル呼んだら君が来た"
 	},
 	{
@@ -3084,7 +3367,9 @@
 		},
 		"id": "S19d35e0ff9e45766b51",
 		"legacySongID": 253,
-		"searchTerms": ["Kanjou Acceleration"],
+		"searchTerms": [
+			"Kanjou Acceleration"
+		],
 		"title": "感情アクセラレイション"
 	},
 	{
@@ -3121,7 +3406,9 @@
 		},
 		"id": "S19d35e0ffa10ad2cbbd",
 		"legacySongID": 256,
-		"searchTerms": ["Sekai no Himitsu"],
+		"searchTerms": [
+			"Sekai no Himitsu"
+		],
 		"title": "セカイのヒミツ"
 	},
 	{
@@ -3133,7 +3420,9 @@
 		},
 		"id": "S19d35e0ffa2479ba4c3",
 		"legacySongID": 257,
-		"searchTerms": ["Tada Kimi ni Hare"],
+		"searchTerms": [
+			"Tada Kimi ni Hare"
+		],
 		"title": "ただ君に晴れ"
 	},
 	{
@@ -3145,7 +3434,9 @@
 		},
 		"id": "S19d35e0ffa3f36aa359",
 		"legacySongID": 258,
-		"searchTerms": ["Uraomote Lovers"],
+		"searchTerms": [
+			"Uraomote Lovers"
+		],
 		"title": "裏表ラバーズ"
 	},
 	{
@@ -3169,7 +3460,9 @@
 		},
 		"id": "S19d35e0ffa554ebbd1e",
 		"legacySongID": 260,
-		"searchTerms": ["Fixer"],
+		"searchTerms": [
+			"Fixer"
+		],
 		"title": "フィクサー"
 	},
 	{
@@ -3181,7 +3474,9 @@
 		},
 		"id": "S19d35e0ffa6357e7ee1",
 		"legacySongID": 261,
-		"searchTerms": ["Kodomo no Shikumi"],
+		"searchTerms": [
+			"Kodomo no Shikumi"
+		],
 		"title": "こどものしくみ"
 	},
 	{
@@ -3193,7 +3488,9 @@
 		},
 		"id": "S19d35e0ffa70e07abbc",
 		"legacySongID": 262,
-		"searchTerms": ["Tokyo Ghetto"],
+		"searchTerms": [
+			"Tokyo Ghetto"
+		],
 		"title": "トーキョーゲットー"
 	},
 	{
@@ -3217,7 +3514,9 @@
 		},
 		"id": "S19d35e0ffa9c8c57253",
 		"legacySongID": 264,
-		"searchTerms": ["Shiroi Yuki no Princess wa"],
+		"searchTerms": [
+			"Shiroi Yuki no Princess wa"
+		],
 		"title": "白い雪のプリンセスは"
 	},
 	{
@@ -3241,7 +3540,9 @@
 		},
 		"id": "S19d35e0ffabe4cbc5a1",
 		"legacySongID": 266,
-		"searchTerms": ["Jingle Bell"],
+		"searchTerms": [
+			"Jingle Bell"
+		],
 		"title": "ジングルベル"
 	},
 	{
@@ -3265,7 +3566,9 @@
 		},
 		"id": "S19d35e0ffad5a25a99a",
 		"legacySongID": 268,
-		"searchTerms": ["Lightspeed Days"],
+		"searchTerms": [
+			"Lightspeed Days"
+		],
 		"title": "ライトスピード・デイズ"
 	},
 	{
@@ -3277,7 +3580,9 @@
 		},
 		"id": "S19d35e0ffae4cbc739a",
 		"legacySongID": 269,
-		"searchTerms": ["Neko Matsuri"],
+		"searchTerms": [
+			"Neko Matsuri"
+		],
 		"title": "猫祭り"
 	},
 	{
@@ -3325,7 +3630,9 @@
 		},
 		"id": "S19d35e0ffb2b25d0e3f",
 		"legacySongID": 273,
-		"searchTerms": ["Ai Kotoba III"],
+		"searchTerms": [
+			"Ai Kotoba III"
+		],
 		"title": "愛言葉Ⅲ"
 	},
 	{
@@ -3337,7 +3644,9 @@
 		},
 		"id": "S19d35e0ffb327fc4b17",
 		"legacySongID": 274,
-		"searchTerms": ["Setsuna Trip"],
+		"searchTerms": [
+			"Setsuna Trip"
+		],
 		"title": "セツナトリップ"
 	},
 	{
@@ -3373,7 +3682,9 @@
 		},
 		"id": "S19d35e0ffb61f663f9c",
 		"legacySongID": 277,
-		"searchTerms": ["Hitoribocchi Satellite"],
+		"searchTerms": [
+			"Hitoribocchi Satellite"
+		],
 		"title": "ヒトリボッチサテライト"
 	},
 	{
@@ -3386,7 +3697,9 @@
 		},
 		"id": "S19d35e0ffb7ad1bbe6f",
 		"legacySongID": 278,
-		"searchTerms": ["GBMGR"],
+		"searchTerms": [
+			"GBMGR"
+		],
 		"title": "Good bye, Merry-Go-Round."
 	},
 	{
@@ -3422,7 +3735,9 @@
 		},
 		"id": "S19d35e0ffbaede97387",
 		"legacySongID": 281,
-		"searchTerms": ["Chikyuu Saigo no Kokuhaku o"],
+		"searchTerms": [
+			"Chikyuu Saigo no Kokuhaku o"
+		],
 		"title": "地球最後の告白を"
 	},
 	{
@@ -3446,7 +3761,9 @@
 		},
 		"id": "S19d35e0ffbcea0938cb",
 		"legacySongID": 283,
-		"searchTerms": ["Shuwa Spa Daisakusen"],
+		"searchTerms": [
+			"Shuwa Spa Daisakusen"
+		],
 		"title": "しゅわスパ大作戦☆"
 	},
 	{
@@ -3506,7 +3823,9 @@
 		},
 		"id": "S19d35e0ffc1d3affa11",
 		"legacySongID": 288,
-		"searchTerms": ["ONEgai Darlin'"],
+		"searchTerms": [
+			"ONEgai Darlin'"
+		],
 		"title": "おねがいダーリン"
 	},
 	{
@@ -3530,7 +3849,9 @@
 		},
 		"id": "S19d35e0ffc33a2706fa",
 		"legacySongID": 290,
-		"searchTerms": ["Harumodoki"],
+		"searchTerms": [
+			"Harumodoki"
+		],
 		"title": "春擬き"
 	},
 	{
@@ -3542,7 +3863,9 @@
 		},
 		"id": "S19d35e0ffc4379f87b2",
 		"legacySongID": 291,
-		"searchTerms": ["Watashitachi Mahou Otome Desu"],
+		"searchTerms": [
+			"Watashitachi Mahou Otome Desu"
+		],
 		"title": "わたしたち魔法乙女です☆"
 	},
 	{
@@ -3554,7 +3877,9 @@
 		},
 		"id": "S19d35e0ffc59263160d",
 		"legacySongID": 292,
-		"searchTerms": ["Peace Sign"],
+		"searchTerms": [
+			"Peace Sign"
+		],
 		"title": "ピースサイン"
 	},
 	{
@@ -3578,7 +3903,9 @@
 		},
 		"id": "S19d35e0ffc70e896abc",
 		"legacySongID": 294,
-		"searchTerms": ["Hyadain no Kakakata Kataomoi-C"],
+		"searchTerms": [
+			"Hyadain no Kakakata Kataomoi-C"
+		],
 		"title": "ヒャダインのカカカタ☆カタオモイ-C"
 	},
 	{
@@ -3590,7 +3917,9 @@
 		},
 		"id": "S19d35e0ffc8456a7cc6",
 		"legacySongID": 295,
-		"searchTerms": ["Onegai Muscle"],
+		"searchTerms": [
+			"Onegai Muscle"
+		],
 		"title": "お願いマッスル"
 	},
 	{
@@ -3602,7 +3931,9 @@
 		},
 		"id": "S19d35e0ffc9f55fecc4",
 		"legacySongID": 296,
-		"searchTerms": ["Otome Kaibou"],
+		"searchTerms": [
+			"Otome Kaibou"
+		],
 		"title": "乙女解剖"
 	},
 	{
@@ -3614,7 +3945,9 @@
 		},
 		"id": "S19d35e0ffcae66f5321",
 		"legacySongID": 297,
-		"searchTerms": ["Dramaturgy"],
+		"searchTerms": [
+			"Dramaturgy"
+		],
 		"title": "ドラマツルギー"
 	},
 	{
@@ -3626,7 +3959,9 @@
 		},
 		"id": "S19d35e0ffcb5b04d9c9",
 		"legacySongID": 298,
-		"searchTerms": ["Melty Land Nightmare"],
+		"searchTerms": [
+			"Melty Land Nightmare"
+		],
 		"title": "メルティランドナイトメア"
 	},
 	{
@@ -3638,7 +3973,9 @@
 		},
 		"id": "S19d35e0ffcc5a6e3524",
 		"legacySongID": 299,
-		"searchTerms": ["Shissou Ensemble"],
+		"searchTerms": [
+			"Shissou Ensemble"
+		],
 		"title": "疾走あんさんぶる"
 	},
 	{
@@ -3712,7 +4049,11 @@
 		},
 		"id": "S19d35e0ffd23bea957d",
 		"legacySongID": 305,
-		"searchTerms": ["Dodonpachi Dai Ondo", "Dodonpachi Daiondo", "Dodonpachi Daifukkatsu"],
+		"searchTerms": [
+			"Dodonpachi Dai Ondo",
+			"Dodonpachi Daiondo",
+			"Dodonpachi Daifukkatsu"
+		],
 		"title": "どどんぱち大音頭"
 	},
 	{
@@ -3736,7 +4077,9 @@
 		},
 		"id": "S19d35e0ffd48f4a0dfc",
 		"legacySongID": 307,
-		"searchTerms": ["Seyana. ~Nandemo Iu Koto o Kiite Kureru Akane-chan~"],
+		"searchTerms": [
+			"Seyana. ~Nandemo Iu Koto o Kiite Kureru Akane-chan~"
+		],
 		"title": "Seyana. ～何でも言うことを聞いてくれるアカネチャン～"
 	},
 	{
@@ -3748,7 +4091,9 @@
 		},
 		"id": "S19d35e0ffd531f8b5df",
 		"legacySongID": 308,
-		"searchTerms": ["Everyday World"],
+		"searchTerms": [
+			"Everyday World"
+		],
 		"title": "エブリデイワールド"
 	},
 	{
@@ -3773,7 +4118,9 @@
 		},
 		"id": "S19d35e0ffd71ced5ef9",
 		"legacySongID": 310,
-		"searchTerms": ["Hoshi no Kizuna"],
+		"searchTerms": [
+			"Hoshi no Kizuna"
+		],
 		"title": "ホシノキズナ"
 	},
 	{
@@ -3797,7 +4144,9 @@
 		},
 		"id": "S19d35e0ffd9a280ed2e",
 		"legacySongID": 312,
-		"searchTerms": ["Android Girl"],
+		"searchTerms": [
+			"Android Girl"
+		],
 		"title": "アンドロイドガール"
 	},
 	{
@@ -3809,7 +4158,9 @@
 		},
 		"id": "S19d35e0ffda3a250c28",
 		"legacySongID": 313,
-		"searchTerms": ["Cheche Check One-two!"],
+		"searchTerms": [
+			"Cheche Check One-two!"
+		],
 		"title": "チェチェ・チェック・ワンツー！"
 	},
 	{
@@ -3821,7 +4172,9 @@
 		},
 		"id": "S19d35e0ffdb8ae1028e",
 		"legacySongID": 314,
-		"searchTerms": ["Ryouran Otome Musougeki"],
+		"searchTerms": [
+			"Ryouran Otome Musougeki"
+		],
 		"title": "撩乱乙女†無双劇"
 	},
 	{
@@ -3857,7 +4210,9 @@
 		},
 		"id": "S19d35e0ffdeac03b8d6",
 		"legacySongID": 317,
-		"searchTerms": ["Contrail ~Kiseki~"],
+		"searchTerms": [
+			"Contrail ~Kiseki~"
+		],
 		"title": "Contrail ～軌跡～"
 	},
 	{
@@ -3869,7 +4224,9 @@
 		},
 		"id": "S19d35e0ffdffab520e3",
 		"legacySongID": 318,
-		"searchTerms": ["Monosugoi Kuruttoru Flan-chan ga Monosugoi Uta"],
+		"searchTerms": [
+			"Monosugoi Kuruttoru Flan-chan ga Monosugoi Uta"
+		],
 		"title": "物凄い狂っとるフランちゃんが物凄いうた"
 	},
 	{
@@ -3893,7 +4250,9 @@
 		},
 		"id": "S19d35e0ffe13d4745f5",
 		"legacySongID": 320,
-		"searchTerms": ["Pakupaku Girl"],
+		"searchTerms": [
+			"Pakupaku Girl"
+		],
 		"title": "ぱくぱく☆がーる"
 	},
 	{
@@ -3917,7 +4276,9 @@
 		},
 		"id": "S19d35e0ffe3d223a92a",
 		"legacySongID": 322,
-		"searchTerms": ["Amatsu Kami"],
+		"searchTerms": [
+			"Amatsu Kami"
+		],
 		"title": "アマツカミ"
 	},
 	{
@@ -3929,7 +4290,9 @@
 		},
 		"id": "S19d35e0ffe431b2de0e",
 		"legacySongID": 323,
-		"searchTerms": ["Sega Saturn Kidou On(H.)(Remix)"],
+		"searchTerms": [
+			"Sega Saturn Kidou On(H.)(Remix)"
+		],
 		"title": "セガサターン起動音[H.][Remix]"
 	},
 	{
@@ -3941,7 +4304,9 @@
 		},
 		"id": "S19d35e0ffe55c5b36dd",
 		"legacySongID": 324,
-		"searchTerms": ["Susume! My Way!"],
+		"searchTerms": [
+			"Susume! My Way!"
+		],
 		"title": "進め！マイウェイ！"
 	},
 	{
@@ -3977,7 +4342,9 @@
 		},
 		"id": "S19d35e0ffe848e3b22f",
 		"legacySongID": 327,
-		"searchTerms": ["Happy Typhoon"],
+		"searchTerms": [
+			"Happy Typhoon"
+		],
 		"title": "ハッピータイフーン"
 	},
 	{
@@ -4049,7 +4416,9 @@
 		},
 		"id": "S19d35e0ffee9a480c54",
 		"legacySongID": 333,
-		"searchTerms": ["Little Soldier"],
+		"searchTerms": [
+			"Little Soldier"
+		],
 		"title": "リトルソルジャー"
 	},
 	{
@@ -4061,7 +4430,10 @@
 		},
 		"id": "S19d35e0ffef794b9d29",
 		"legacySongID": 334,
-		"searchTerms": ["Delukkumaimai Tentekomai!", "Deluxe"],
+		"searchTerms": [
+			"Delukkumaimai Tentekomai!",
+			"Deluxe"
+		],
 		"title": "でらっくmaimai♪てんてこまい!"
 	},
 	{
@@ -4085,7 +4457,9 @@
 		},
 		"id": "S19d35e0fff1beb673b4",
 		"legacySongID": 336,
-		"searchTerms": ["Natsuiro Hanabi"],
+		"searchTerms": [
+			"Natsuiro Hanabi"
+		],
 		"title": "夏色花火"
 	},
 	{
@@ -4109,7 +4483,9 @@
 		},
 		"id": "S19d35e0fff303542afb",
 		"legacySongID": 338,
-		"searchTerms": ["Unknown Mother Goose"],
+		"searchTerms": [
+			"Unknown Mother Goose"
+		],
 		"title": "アンノウン・マザーグース"
 	},
 	{
@@ -4121,7 +4497,9 @@
 		},
 		"id": "S19d35e0fff4f18159d0",
 		"legacySongID": 339,
-		"searchTerms": ["Sweet Magic"],
+		"searchTerms": [
+			"Sweet Magic"
+		],
 		"title": "スイートマジック"
 	},
 	{
@@ -4133,7 +4511,9 @@
 		},
 		"id": "S19d35e0fff53e832380",
 		"legacySongID": 340,
-		"searchTerms": ["Choujou Maimain"],
+		"searchTerms": [
+			"Choujou Maimain"
+		],
 		"title": "超常マイマイン"
 	},
 	{
@@ -4146,7 +4526,9 @@
 		},
 		"id": "S19d35e0fff61c202d89",
 		"legacySongID": 341,
-		"searchTerms": ["Kizuna wa Zutto Growing Up!!!"],
+		"searchTerms": [
+			"Kizuna wa Zutto Growing Up!!!"
+		],
 		"title": "絆はずっとGrowing Up!!!"
 	},
 	{
@@ -4171,7 +4553,9 @@
 		},
 		"id": "S19d35e0fff8addb7407",
 		"legacySongID": 343,
-		"searchTerms": ["Shinkai no Little Cry feat. Toki Asako"],
+		"searchTerms": [
+			"Shinkai no Little Cry feat. Toki Asako"
+		],
 		"title": "深海のリトルクライ feat. 土岐麻子"
 	},
 	{
@@ -4197,7 +4581,9 @@
 		},
 		"id": "S19d35e0fffaf761137c",
 		"legacySongID": 345,
-		"searchTerms": ["Destroyer"],
+		"searchTerms": [
+			"Destroyer"
+		],
 		"title": "Destr0yer"
 	},
 	{
@@ -4233,7 +4619,9 @@
 		},
 		"id": "S19d35e0fffde29f34c3",
 		"legacySongID": 348,
-		"searchTerms": ["Lunatic Red Eyes"],
+		"searchTerms": [
+			"Lunatic Red Eyes"
+		],
 		"title": "ルナティックレッドアイズ"
 	},
 	{
@@ -4246,7 +4634,9 @@
 		},
 		"id": "S19d35e0fffe37081685",
 		"legacySongID": 349,
-		"searchTerms": ["Hanatachi ni Kibou o"],
+		"searchTerms": [
+			"Hanatachi ni Kibou o"
+		],
 		"title": "花たちに希望を"
 	},
 	{
@@ -4258,7 +4648,10 @@
 		},
 		"id": "S19d35e0ffff84788513",
 		"legacySongID": 350,
-		"searchTerms": ["Bassline Yatteru? w", "Can I Friend You on Bassbook? Lol"],
+		"searchTerms": [
+			"Bassline Yatteru? w",
+			"Can I Friend You on Bassbook? Lol"
+		],
 		"title": "ベースラインやってる？笑"
 	},
 	{
@@ -4307,7 +4700,9 @@
 		},
 		"id": "S19d35e10003397a5dfd",
 		"legacySongID": 354,
-		"searchTerms": ["Ludicium"],
+		"searchTerms": [
+			"Ludicium"
+		],
 		"title": "Iudicium “Apocalypsis Mix”"
 	},
 	{
@@ -4343,7 +4738,10 @@
 		},
 		"id": "S19d35e1000679aa2bbd",
 		"legacySongID": 357,
-		"searchTerms": ["Nonsense Bungaku", "Literary Nonsense"],
+		"searchTerms": [
+			"Nonsense Bungaku",
+			"Literary Nonsense"
+		],
 		"title": "ナンセンス文学"
 	},
 	{
@@ -4355,7 +4753,9 @@
 		},
 		"id": "S19d35e10007d3d11b4a",
 		"legacySongID": 358,
-		"searchTerms": ["Sun(Mile)Flower"],
+		"searchTerms": [
+			"Sun(Mile)Flower"
+		],
 		"title": "スン(マイル)フラワー～Sun(Mile)Flower"
 	},
 	{
@@ -4367,7 +4767,9 @@
 		},
 		"id": "S19d35e1000852eaf914",
 		"legacySongID": 359,
-		"searchTerms": ["Yes! Yuyuyu YuruYuri"],
+		"searchTerms": [
+			"Yes! Yuyuyu YuruYuri"
+		],
 		"title": "いぇす！ゆゆゆ☆ゆるゆり♪♪"
 	},
 	{
@@ -4379,7 +4781,9 @@
 		},
 		"id": "S19d35e10009079d92c7",
 		"legacySongID": 360,
-		"searchTerms": ["100% Chuugakusei"],
+		"searchTerms": [
+			"100% Chuugakusei"
+		],
 		"title": "100%ちゅ～学生"
 	},
 	{
@@ -4391,7 +4795,9 @@
 		},
 		"id": "S19d35e1000bb91cd7d3",
 		"legacySongID": 361,
-		"searchTerms": ["Hitogata"],
+		"searchTerms": [
+			"Hitogata"
+		],
 		"title": "ヒトガタ"
 	},
 	{
@@ -4416,7 +4822,11 @@
 		},
 		"id": "S19d35e1000d0e0142ea",
 		"legacySongID": 363,
-		"searchTerms": ["Nouten Chokugeki", "Brain Attack", "Noten Chokugeki"],
+		"searchTerms": [
+			"Nouten Chokugeki",
+			"Brain Attack",
+			"Noten Chokugeki"
+		],
 		"title": "脳天直撃"
 	},
 	{
@@ -4428,7 +4838,9 @@
 		},
 		"id": "S19d35e1000e46d699df",
 		"legacySongID": 364,
-		"searchTerms": ["YuruYuri, Ten'yawan'ya"],
+		"searchTerms": [
+			"YuruYuri, Ten'yawan'ya"
+		],
 		"title": "ゆるゆり、てんやわんや☆"
 	},
 	{
@@ -4440,7 +4852,9 @@
 		},
 		"id": "S19d35e1000f395ed02b",
 		"legacySongID": 365,
-		"searchTerms": ["Supatto! Spy & Spice"],
+		"searchTerms": [
+			"Supatto! Spy & Spice"
+		],
 		"title": "スパッと！スパイ＆スパイス"
 	},
 	{
@@ -4489,7 +4903,9 @@
 		},
 		"id": "S19d35e10013a8cb05b9",
 		"legacySongID": 369,
-		"searchTerms": ["Colorful"],
+		"searchTerms": [
+			"Colorful"
+		],
 		"title": "カラフル"
 	},
 	{
@@ -4513,7 +4929,10 @@
 		},
 		"id": "S19d35e1001572610f96",
 		"legacySongID": 371,
-		"searchTerms": ["Gurenge", "Demon Slayer"],
+		"searchTerms": [
+			"Gurenge",
+			"Demon Slayer"
+		],
 		"title": "紅蓮華"
 	},
 	{
@@ -4537,7 +4956,9 @@
 		},
 		"id": "S19d35e10017565ebc0e",
 		"legacySongID": 373,
-		"searchTerms": ["Fuwafuwa Time"],
+		"searchTerms": [
+			"Fuwafuwa Time"
+		],
 		"title": "ふわふわ時間(タイム)"
 	},
 	{
@@ -4549,7 +4970,9 @@
 		},
 		"id": "S19d35e10018a06593b2",
 		"legacySongID": 374,
-		"searchTerms": ["Shinryaku no Susume"],
+		"searchTerms": [
+			"Shinryaku no Susume"
+		],
 		"title": "侵略ノススメ☆"
 	},
 	{
@@ -4561,7 +4984,9 @@
 		},
 		"id": "S19d35e10019667ab69a",
 		"legacySongID": 375,
-		"searchTerms": ["Gotoubun no Kimochi"],
+		"searchTerms": [
+			"Gotoubun no Kimochi"
+		],
 		"title": "五等分の気持ち"
 	},
 	{
@@ -4573,7 +4998,9 @@
 		},
 		"id": "S19d35e1001a357f57ea",
 		"legacySongID": 376,
-		"searchTerms": ["Dareka no Shinzou ni Nareta Nara"],
+		"searchTerms": [
+			"Dareka no Shinzou ni Nareta Nara"
+		],
 		"title": "だれかの心臓になれたなら"
 	},
 	{
@@ -4585,7 +5012,9 @@
 		},
 		"id": "S19d35e1001bfc841582",
 		"legacySongID": 377,
-		"searchTerms": ["Teo"],
+		"searchTerms": [
+			"Teo"
+		],
 		"title": "テオ"
 	},
 	{
@@ -4597,7 +5026,9 @@
 		},
 		"id": "S19d35e1001c6945e5d2",
 		"legacySongID": 378,
-		"searchTerms": ["Venom"],
+		"searchTerms": [
+			"Venom"
+		],
 		"title": "ベノム"
 	},
 	{
@@ -4609,7 +5040,10 @@
 		},
 		"id": "S19d35e1001d08e4db6b",
 		"legacySongID": 379,
-		"searchTerms": ["Night of Knights (xi Remix)", "Knight of Nights"],
+		"searchTerms": [
+			"Night of Knights (xi Remix)",
+			"Knight of Nights"
+		],
 		"title": "ナイト・オブ・ナイツ (xi Remix)"
 	},
 	{
@@ -4633,7 +5067,9 @@
 		},
 		"id": "S19d35e1001f86e1394f",
 		"legacySongID": 381,
-		"searchTerms": ["RAIKIRI"],
+		"searchTerms": [
+			"RAIKIRI"
+		],
 		"title": "雷切-RAIKIRI-"
 	},
 	{
@@ -4669,7 +5105,9 @@
 		},
 		"id": "S19d35e10022261556e0",
 		"legacySongID": 384,
-		"searchTerms": ["Ukiuki Candy!"],
+		"searchTerms": [
+			"Ukiuki Candy!"
+		],
 		"title": "ウキウキ☆Candy!"
 	},
 	{
@@ -4743,7 +5181,9 @@
 		},
 		"id": "S19d35e100281def54e7",
 		"legacySongID": 390,
-		"searchTerms": ["STARTLINER -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"STARTLINER -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "STARTLINER -星咲 あかりソロver.-"
 	},
 	{
@@ -4755,7 +5195,9 @@
 		},
 		"id": "S19d35e10029a88597fe",
 		"legacySongID": 391,
-		"searchTerms": ["STARTLINER -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"STARTLINER -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "STARTLINER -藤沢 柚子ソロver.-"
 	},
 	{
@@ -4767,7 +5209,9 @@
 		},
 		"id": "S19d35e1002ab2ebe43e",
 		"legacySongID": 392,
-		"searchTerms": ["STARTLINER -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"STARTLINER -Misumi Aoi Solo ver.-"
+		],
 		"title": "STARTLINER -三角 葵ソロver.-"
 	},
 	{
@@ -4779,7 +5223,10 @@
 		},
 		"id": "S19d35e1002b16861d2e",
 		"legacySongID": 393,
-		"searchTerms": ["Toua -O.N.G.E.K.I. MIX-", "Dodonpachi"],
+		"searchTerms": [
+			"Toua -O.N.G.E.K.I. MIX-",
+			"Dodonpachi"
+		],
 		"title": "東亞 -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -4803,7 +5250,9 @@
 		},
 		"id": "S19d35e1002db4157ca1",
 		"legacySongID": 395,
-		"searchTerms": ["Connect"],
+		"searchTerms": [
+			"Connect"
+		],
 		"title": "コネクト"
 	},
 	{
@@ -4839,7 +5288,9 @@
 		},
 		"id": "S19d35e100309f14e933",
 		"legacySongID": 398,
-		"searchTerms": ["Yoimachi Cantare"],
+		"searchTerms": [
+			"Yoimachi Cantare"
+		],
 		"title": "よいまちカンターレ"
 	},
 	{
@@ -4851,7 +5302,9 @@
 		},
 		"id": "S19d35e10031d8cdb0c4",
 		"legacySongID": 399,
-		"searchTerms": ["Gabriel DropKick"],
+		"searchTerms": [
+			"Gabriel DropKick"
+		],
 		"title": "ガヴリールドロップキック"
 	},
 	{
@@ -4876,7 +5329,9 @@
 		},
 		"id": "S19d35e10033fff4e54a",
 		"legacySongID": 401,
-		"searchTerms": ["Tsukuyomi Step"],
+		"searchTerms": [
+			"Tsukuyomi Step"
+		],
 		"title": "ツクヨミステップ"
 	},
 	{
@@ -4888,7 +5343,9 @@
 		},
 		"id": "S19d35e100340edc6c06",
 		"legacySongID": 402,
-		"searchTerms": ["Hangeki! Totsugeki! Back To Back!"],
+		"searchTerms": [
+			"Hangeki! Totsugeki! Back To Back!"
+		],
 		"title": "反撃! 突撃! Back To Back!"
 	},
 	{
@@ -4900,7 +5357,9 @@
 		},
 		"id": "S19d35e100354e4ad93f",
 		"legacySongID": 403,
-		"searchTerms": ["Shinkakei Colors"],
+		"searchTerms": [
+			"Shinkakei Colors"
+		],
 		"title": "進化系Colors"
 	},
 	{
@@ -4912,7 +5371,9 @@
 		},
 		"id": "S19d35e1003648261e5b",
 		"legacySongID": 404,
-		"searchTerms": ["Kono Bangumi wa Urawakaki Koumuintachi no Teikyou de Okuri Itashimasu"],
+		"searchTerms": [
+			"Kono Bangumi wa Urawakaki Koumuintachi no Teikyou de Okuri Itashimasu"
+		],
 		"title": "この番組はうら若き公務員たちの提供でお送りいたします"
 	},
 	{
@@ -4924,7 +5385,9 @@
 		},
 		"id": "S19d35e100372a902340",
 		"legacySongID": 405,
-		"searchTerms": ["Enjou, Enjou!!"],
+		"searchTerms": [
+			"Enjou, Enjou!!"
+		],
 		"title": "宛城、炎上！！"
 	},
 	{
@@ -4936,7 +5399,9 @@
 		},
 		"id": "S19d35e10038b16b1e52",
 		"legacySongID": 406,
-		"searchTerms": ["Zettai ni Chocomint o Taberu Aoi-chan"],
+		"searchTerms": [
+			"Zettai ni Chocomint o Taberu Aoi-chan"
+		],
 		"title": "絶対にチョコミントを食べるアオイチャン"
 	},
 	{
@@ -4948,7 +5413,9 @@
 		},
 		"id": "S19d35e10039c77dbdd9",
 		"legacySongID": 407,
-		"searchTerms": ["Ikasama Life Game"],
+		"searchTerms": [
+			"Ikasama Life Game"
+		],
 		"title": "イカサマライフゲイム"
 	},
 	{
@@ -4960,7 +5427,9 @@
 		},
 		"id": "S19d35e1003ae1ef7f00",
 		"legacySongID": 408,
-		"searchTerms": ["Meitantei Renzoku Satsujin Jiken"],
+		"searchTerms": [
+			"Meitantei Renzoku Satsujin Jiken"
+		],
 		"title": "名探偵連続殺人事件"
 	},
 	{
@@ -4973,7 +5442,9 @@
 		},
 		"id": "S19d35e1003bb5bb085d",
 		"legacySongID": 409,
-		"searchTerms": ["Kimi wa \"Miteitane\"?"],
+		"searchTerms": [
+			"Kimi wa \"Miteitane\"?"
+		],
 		"title": "キミは“見ていたね”？"
 	},
 	{
@@ -5024,7 +5495,9 @@
 		},
 		"id": "S19d35e1003fb316f50b",
 		"legacySongID": 413,
-		"searchTerms": ["Yamitsuki"],
+		"searchTerms": [
+			"Yamitsuki"
+		],
 		"title": "ヤミツキ"
 	},
 	{
@@ -5072,7 +5545,9 @@
 		},
 		"id": "S19d35e10043b857db66",
 		"legacySongID": 417,
-		"searchTerms": ["Let's Starry Party! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Let's Starry Party! -Takase Rio Solo ver.-"
+		],
 		"title": "Let's Starry Party！ -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -5084,7 +5559,9 @@
 		},
 		"id": "S19d35e10044c6854b3d",
 		"legacySongID": 418,
-		"searchTerms": ["Let's Starry Party! -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"Let's Starry Party! -Yūki Riku Solo ver.-"
+		],
 		"title": "Let's Starry Party！ -結城 莉玖ソロver.-"
 	},
 	{
@@ -5096,7 +5573,9 @@
 		},
 		"id": "S19d35e10045e5b53ae8",
 		"legacySongID": 419,
-		"searchTerms": ["Let's Starry Party! -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"Let's Starry Party! -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "Let's Starry Party！ -藍原 椿ソロver.-"
 	},
 	{
@@ -5108,7 +5587,9 @@
 		},
 		"id": "S19d35e1004619ec1c62",
 		"legacySongID": 420,
-		"searchTerms": ["Seishoujo Sacrifice"],
+		"searchTerms": [
+			"Seishoujo Sacrifice"
+		],
 		"title": "聖少女サクリファイス"
 	},
 	{
@@ -5133,7 +5614,9 @@
 		},
 		"id": "S19d35e10048f8e37d83",
 		"legacySongID": 422,
-		"searchTerms": ["Satori ~3rd EyEs (2020 Recall)"],
+		"searchTerms": [
+			"Satori ~3rd EyEs (2020 Recall)"
+		],
 		"title": "Satori ～3rd EyEs (2020 Recall)"
 	},
 	{
@@ -5157,7 +5640,9 @@
 		},
 		"id": "S19d35e1004a4283afbd",
 		"legacySongID": 424,
-		"searchTerms": ["Aisarenakute Mo Kimi ga Iru"],
+		"searchTerms": [
+			"Aisarenakute Mo Kimi ga Iru"
+		],
 		"title": "愛されなくても君がいる"
 	},
 	{
@@ -5181,7 +5666,9 @@
 		},
 		"id": "S19d35e1004c3b734620",
 		"legacySongID": 426,
-		"searchTerms": ["GL"],
+		"searchTerms": [
+			"GL"
+		],
 		"title": "Grievous Lady"
 	},
 	{
@@ -5193,7 +5680,11 @@
 		},
 		"id": "S19d35e1004d927fc294",
 		"legacySongID": 427,
-		"searchTerms": ["Mayoeru Neiro wa Koi no Uta", "A Wandering Melody of Love", "AWMOL"],
+		"searchTerms": [
+			"Mayoeru Neiro wa Koi no Uta",
+			"A Wandering Melody of Love",
+			"AWMOL"
+		],
 		"title": "迷える音色は恋の唄"
 	},
 	{
@@ -5217,7 +5708,10 @@
 		},
 		"id": "S19d35e1004f89bdfc3a",
 		"legacySongID": 429,
-		"searchTerms": ["RBG", "RGB"],
+		"searchTerms": [
+			"RBG",
+			"RGB"
+		],
 		"title": "Red and Blue and Green"
 	},
 	{
@@ -5229,7 +5723,9 @@
 		},
 		"id": "S19d35e10050c8bd4ba1",
 		"legacySongID": 430,
-		"searchTerms": ["Bitter Choco Decoration"],
+		"searchTerms": [
+			"Bitter Choco Decoration"
+		],
 		"title": "ビターチョコデコレーション"
 	},
 	{
@@ -5241,7 +5737,9 @@
 		},
 		"id": "S19d35e10051bdf9f617",
 		"legacySongID": 431,
-		"searchTerms": ["Umiyuri Kaiteitan"],
+		"searchTerms": [
+			"Umiyuri Kaiteitan"
+		],
 		"title": "ウミユリ海底譚"
 	},
 	{
@@ -5253,7 +5751,9 @@
 		},
 		"id": "S19d35e10052d0e631cf",
 		"legacySongID": 432,
-		"searchTerms": ["YAMINABE PANIC ~Gochisou Tsumekomi Full Course~"],
+		"searchTerms": [
+			"YAMINABE PANIC ~Gochisou Tsumekomi Full Course~"
+		],
 		"title": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～"
 	},
 	{
@@ -5279,7 +5779,10 @@
 		},
 		"id": "S19d35e1005482561e31",
 		"legacySongID": 434,
-		"searchTerms": ["DFTM", "Donfai"],
+		"searchTerms": [
+			"DFTM",
+			"Donfai"
+		],
 		"title": "Don't Fight The Music"
 	},
 	{
@@ -5291,7 +5794,9 @@
 		},
 		"id": "S19d35e10055763c0402",
 		"legacySongID": 435,
-		"searchTerms": ["Time Machine"],
+		"searchTerms": [
+			"Time Machine"
+		],
 		"title": "タイムマシン"
 	},
 	{
@@ -5303,7 +5808,9 @@
 		},
 		"id": "S19d35e10056a908b74a",
 		"legacySongID": 436,
-		"searchTerms": ["Tsugihagi Staccato"],
+		"searchTerms": [
+			"Tsugihagi Staccato"
+		],
 		"title": "ツギハギスタッカート"
 	},
 	{
@@ -5339,7 +5846,9 @@
 		},
 		"id": "S19d35e100596fa24674",
 		"legacySongID": 439,
-		"searchTerms": ["Canaria"],
+		"searchTerms": [
+			"Canaria"
+		],
 		"title": "カナリア"
 	},
 	{
@@ -5351,7 +5860,9 @@
 		},
 		"id": "S19d35e1005a9da815d1",
 		"legacySongID": 440,
-		"searchTerms": ["Taiyoukei Disco"],
+		"searchTerms": [
+			"Taiyoukei Disco"
+		],
 		"title": "太陽系デスコ"
 	},
 	{
@@ -5363,7 +5874,9 @@
 		},
 		"id": "S19d35e1005b0351629b",
 		"legacySongID": 441,
-		"searchTerms": ["Tengu no Otoshi Bumi feat. ytr"],
+		"searchTerms": [
+			"Tengu no Otoshi Bumi feat. ytr"
+		],
 		"title": "天狗の落とし文 feat. ｙｔｒ"
 	},
 	{
@@ -5375,7 +5888,9 @@
 		},
 		"id": "S19d35e1005c9952a69e",
 		"legacySongID": 442,
-		"searchTerms": ["Akeboshi Rocket"],
+		"searchTerms": [
+			"Akeboshi Rocket"
+		],
 		"title": "明星ロケット"
 	},
 	{
@@ -5399,7 +5914,9 @@
 		},
 		"id": "S19d35e1005e91de5d41",
 		"legacySongID": 444,
-		"searchTerms": ["Kiss Me Kiss -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"Kiss Me Kiss -Sakurai Haruna Solo ver.-"
+		],
 		"title": "Kiss Me Kiss -桜井 春菜ソロver.-"
 	},
 	{
@@ -5411,7 +5928,9 @@
 		},
 		"id": "S19d35e1005f76ca1fc3",
 		"legacySongID": 445,
-		"searchTerms": ["Kiss Me Kiss -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Kiss Me Kiss -Saotome Ayaka Solo ver.-"
+		],
 		"title": "Kiss Me Kiss -早乙女 彩華ソロver.-"
 	},
 	{
@@ -5423,7 +5942,9 @@
 		},
 		"id": "S19d35e1006029679864",
 		"legacySongID": 446,
-		"searchTerms": ["Crying Heart"],
+		"searchTerms": [
+			"Crying Heart"
+		],
 		"title": "クライングハート"
 	},
 	{
@@ -5435,7 +5956,9 @@
 		},
 		"id": "S19d35e10061ecf2f31d",
 		"legacySongID": 447,
-		"searchTerms": ["Yoshiwara Lament"],
+		"searchTerms": [
+			"Yoshiwara Lament"
+		],
 		"title": "吉原ラメント"
 	},
 	{
@@ -5447,7 +5970,9 @@
 		},
 		"id": "S19d35e10062785b16d2",
 		"legacySongID": 448,
-		"searchTerms": ["Scramble Kousai"],
+		"searchTerms": [
+			"Scramble Kousai"
+		],
 		"title": "スクランブル交際"
 	},
 	{
@@ -5483,7 +6008,9 @@
 		},
 		"id": "S19d35e1006575e19373",
 		"legacySongID": 451,
-		"searchTerms": ["Dakara Boku wa Ongaku o Yameta"],
+		"searchTerms": [
+			"Dakara Boku wa Ongaku o Yameta"
+		],
 		"title": "だから僕は音楽を辞めた"
 	},
 	{
@@ -5495,7 +6022,10 @@
 		},
 		"id": "S19d35e10066250aaca4",
 		"legacySongID": 452,
-		"searchTerms": ["Inochi ni Kirawareteiru", "Hated by Life"],
+		"searchTerms": [
+			"Inochi ni Kirawareteiru",
+			"Hated by Life"
+		],
 		"title": "命に嫌われている"
 	},
 	{
@@ -5507,7 +6037,9 @@
 		},
 		"id": "S19d35e10067327450dc",
 		"legacySongID": 453,
-		"searchTerms": ["SAKURA Skip"],
+		"searchTerms": [
+			"SAKURA Skip"
+		],
 		"title": "SAKURAスキップ"
 	},
 	{
@@ -5531,7 +6063,9 @@
 		},
 		"id": "S19d35e10069b90c0f77",
 		"legacySongID": 455,
-		"searchTerms": ["Watashi Connect"],
+		"searchTerms": [
+			"Watashi Connect"
+		],
 		"title": "ワタシConnect*"
 	},
 	{
@@ -5543,7 +6077,9 @@
 		},
 		"id": "S19d35e1006abe5bc0c8",
 		"legacySongID": 456,
-		"searchTerms": ["Bad Apple!! feat.nomico (Butaotome Ver.)"],
+		"searchTerms": [
+			"Bad Apple!! feat.nomico (Butaotome Ver.)"
+		],
 		"title": "Bad Apple!! feat.nomico (豚乙女 Ver.)"
 	},
 	{
@@ -5567,7 +6103,9 @@
 		},
 		"id": "S19d35e1006cf7ae1e7c",
 		"legacySongID": 458,
-		"searchTerms": ["Miya Getsukyou"],
+		"searchTerms": [
+			"Miya Getsukyou"
+		],
 		"title": "美夜月鏡"
 	},
 	{
@@ -5579,7 +6117,9 @@
 		},
 		"id": "S19d35e1006d42bd7c9c",
 		"legacySongID": 459,
-		"searchTerms": ["Ai no Hana"],
+		"searchTerms": [
+			"Ai no Hana"
+		],
 		"title": "藍の華"
 	},
 	{
@@ -5592,7 +6132,9 @@
 		},
 		"id": "S19d35e1006e4b0db170",
 		"legacySongID": 460,
-		"searchTerms": ["Sakurairo Fuwari"],
+		"searchTerms": [
+			"Sakurairo Fuwari"
+		],
 		"title": "サクライロフワリ"
 	},
 	{
@@ -5628,7 +6170,9 @@
 		},
 		"id": "S19d35e100716fbc95cf",
 		"legacySongID": 463,
-		"searchTerms": ["Tenkuu Cafeteria"],
+		"searchTerms": [
+			"Tenkuu Cafeteria"
+		],
 		"title": "天空カフェテリア"
 	},
 	{
@@ -5652,7 +6196,9 @@
 		},
 		"id": "S19d35e10073936d58b4",
 		"legacySongID": 465,
-		"searchTerms": ["Hatsukoi wa Kimiiro Memory"],
+		"searchTerms": [
+			"Hatsukoi wa Kimiiro Memory"
+		],
 		"title": "初恋は君色メモリー"
 	},
 	{
@@ -5688,7 +6234,9 @@
 		},
 		"id": "S19d35e1007678e3420a",
 		"legacySongID": 468,
-		"searchTerms": ["Byoushin o Kamu"],
+		"searchTerms": [
+			"Byoushin o Kamu"
+		],
 		"title": "秒針を噛む"
 	},
 	{
@@ -5700,7 +6248,9 @@
 		},
 		"id": "S19d35e10077e3feefd6",
 		"legacySongID": 469,
-		"searchTerms": ["World's End Dancehall"],
+		"searchTerms": [
+			"World's End Dancehall"
+		],
 		"title": "ワールズエンド・ダンスホール"
 	},
 	{
@@ -5712,7 +6262,9 @@
 		},
 		"id": "S19d35e1007800baf700",
 		"legacySongID": 470,
-		"searchTerms": ["Kokoroyohou"],
+		"searchTerms": [
+			"Kokoroyohou"
+		],
 		"title": "心予報"
 	},
 	{
@@ -5736,7 +6288,9 @@
 		},
 		"id": "S19d35e1007a73969af9",
 		"legacySongID": 472,
-		"searchTerms": ["LostWord Chronicle"],
+		"searchTerms": [
+			"LostWord Chronicle"
+		],
 		"title": "ロストワードクロニカル"
 	},
 	{
@@ -5797,7 +6351,9 @@
 		},
 		"id": "S19d35e1007fb3bdc128",
 		"legacySongID": 477,
-		"searchTerms": ["Saikkou no Entame Da!!"],
+		"searchTerms": [
+			"Saikkou no Entame Da!!"
+		],
 		"title": "最っ高のエンタメだ!!"
 	},
 	{
@@ -5809,7 +6365,9 @@
 		},
 		"id": "S19d35e10080ead6560b",
 		"legacySongID": 478,
-		"searchTerms": ["RAE"],
+		"searchTerms": [
+			"RAE"
+		],
 		"title": "Random Access Emotions"
 	},
 	{
@@ -5858,7 +6416,9 @@
 		},
 		"id": "S19d35e1008542e7b34e",
 		"legacySongID": 483,
-		"searchTerms": ["Pocket kara Nuritsubuse! -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Pocket kara Nuritsubuse! -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "ポケットからぬりつぶせ！ -日向 千夏ソロver.-"
 	},
 	{
@@ -5870,7 +6430,9 @@
 		},
 		"id": "S19d35e100864d4edc70",
 		"legacySongID": 484,
-		"searchTerms": ["Pocket kara Nuritsubuse! -Kashiwagi Mia Solo ver.-"],
+		"searchTerms": [
+			"Pocket kara Nuritsubuse! -Kashiwagi Mia Solo ver.-"
+		],
 		"title": "ポケットからぬりつぶせ！ -柏木 美亜ソロver.-"
 	},
 	{
@@ -5882,7 +6444,9 @@
 		},
 		"id": "S19d35e10087a5f92142",
 		"legacySongID": 485,
-		"searchTerms": ["Pocket kara Nuritsubuse! -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Pocket kara Nuritsubuse! -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "ポケットからぬりつぶせ！ -東雲 つむぎソロver.-"
 	},
 	{
@@ -5894,7 +6458,9 @@
 		},
 		"id": "S19d35e10088bed55ea4",
 		"legacySongID": 486,
-		"searchTerms": ["Battle Garegga"],
+		"searchTerms": [
+			"Battle Garegga"
+		],
 		"title": "Fly to the Leaden Sky -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -5918,7 +6484,9 @@
 		},
 		"id": "S19d35e1008a38495720",
 		"legacySongID": 488,
-		"searchTerms": ["SEGA NET Mahjong MJ"],
+		"searchTerms": [
+			"SEGA NET Mahjong MJ"
+		],
 		"title": "セガNET麻雀MJ -O.N.G.E.K.I. MIX-"
 	},
 	{
@@ -5930,7 +6498,9 @@
 		},
 		"id": "S19d35e1008b9d589876",
 		"legacySongID": 489,
-		"searchTerms": ["BN1"],
+		"searchTerms": [
+			"BN1"
+		],
 		"title": "BATTLE NO.1"
 	},
 	{
@@ -5966,7 +6536,9 @@
 		},
 		"id": "S19d35e1008e990a01fa",
 		"legacySongID": 492,
-		"searchTerms": ["Shakkiiin!!"],
+		"searchTerms": [
+			"Shakkiiin!!"
+		],
 		"title": "シャッキーーン！！"
 	},
 	{
@@ -5978,7 +6550,9 @@
 		},
 		"id": "S19d35e1008f49fd45a2",
 		"legacySongID": 493,
-		"searchTerms": ["Luckgakist"],
+		"searchTerms": [
+			"Luckgakist"
+		],
 		"title": "ラクガキスト"
 	},
 	{
@@ -5990,7 +6564,9 @@
 		},
 		"id": "S19d35e10090d3441e31",
 		"legacySongID": 494,
-		"searchTerms": ["Bocca Della Verita"],
+		"searchTerms": [
+			"Bocca Della Verita"
+		],
 		"title": "ボッカデラベリタ"
 	},
 	{
@@ -6018,7 +6594,9 @@
 		},
 		"id": "S19d35e100929795ba72",
 		"legacySongID": 496,
-		"searchTerms": ["Bokutachi no Tabi to Epilogue."],
+		"searchTerms": [
+			"Bokutachi no Tabi to Epilogue."
+		],
 		"title": "僕たちの旅とエピローグ。"
 	},
 	{
@@ -6030,7 +6608,10 @@
 		},
 		"id": "S19d35e1009322ddc30d",
 		"legacySongID": 497,
-		"searchTerms": ["Shigatsu no Ame", "April Showers"],
+		"searchTerms": [
+			"Shigatsu no Ame",
+			"April Showers"
+		],
 		"title": "四月の雨"
 	},
 	{
@@ -6042,7 +6623,9 @@
 		},
 		"id": "S19d35e100940fa000aa",
 		"legacySongID": 498,
-		"searchTerms": ["Muteki no Frontier Sanjuushi"],
+		"searchTerms": [
+			"Muteki no Frontier Sanjuushi"
+		],
 		"title": "無敵のフロンティア三銃士"
 	},
 	{
@@ -6066,7 +6649,10 @@
 		},
 		"id": "S19d35e1009654ea9082",
 		"legacySongID": 500,
-		"searchTerms": ["Ahoy!! Warera Houshou Kaizokudan☆", "Houshou Marine"],
+		"searchTerms": [
+			"Ahoy!! Warera Houshou Kaizokudan☆",
+			"Houshou Marine"
+		],
 		"title": "Ahoy!! 我ら宝鐘海賊団☆"
 	},
 	{
@@ -6090,7 +6676,9 @@
 		},
 		"id": "S19d35e100982065f086",
 		"legacySongID": 502,
-		"searchTerms": ["Shiawase Usagi"],
+		"searchTerms": [
+			"Shiawase Usagi"
+		],
 		"title": "シアワセうさぎ・ぺこみこマリン"
 	},
 	{
@@ -6102,7 +6690,9 @@
 		},
 		"id": "S19d35e1009903e5260a",
 		"legacySongID": 503,
-		"searchTerms": ["Mendooi! Yahhooi! Tomodachi! -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Mendooi! Yahhooi! Tomodachi! -Inohara Koboshi Solo ver.-"
+		],
 		"title": "めんどーい！やっほーい！ともだち！  -井之原 小星ソロver.-"
 	},
 	{
@@ -6114,7 +6704,9 @@
 		},
 		"id": "S19d35e1009a89257ac0",
 		"legacySongID": 504,
-		"searchTerms": ["Mendooi! Yahhooi! Tomodachi! -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"Mendooi! Yahhooi! Tomodachi! -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "めんどーい！やっほーい！ともだち！  -柏木 咲姫ソロver.-"
 	},
 	{
@@ -6138,7 +6730,9 @@
 		},
 		"id": "S19d35e1009c90450298",
 		"legacySongID": 506,
-		"searchTerms": ["Yobanashi Deceive"],
+		"searchTerms": [
+			"Yobanashi Deceive"
+		],
 		"title": "夜咄ディセイブ"
 	},
 	{
@@ -6150,7 +6744,9 @@
 		},
 		"id": "S19d35e1009d53e69497",
 		"legacySongID": 507,
-		"searchTerms": ["Last Resort"],
+		"searchTerms": [
+			"Last Resort"
+		],
 		"title": "ラストリゾート"
 	},
 	{
@@ -6237,7 +6833,9 @@
 		},
 		"id": "S19d35e100a43adfc7a2",
 		"legacySongID": 514,
-		"searchTerms": ["Illuminage Land"],
+		"searchTerms": [
+			"Illuminage Land"
+		],
 		"title": "イルミナージュ・ランド"
 	},
 	{
@@ -6249,7 +6847,10 @@
 		},
 		"id": "S19d35e100a547fc53df",
 		"legacySongID": 515,
-		"searchTerms": ["Ame to Petra", "Rain and Petra"],
+		"searchTerms": [
+			"Ame to Petra",
+			"Rain and Petra"
+		],
 		"title": "雨とペトラ"
 	},
 	{
@@ -6273,7 +6874,9 @@
 		},
 		"id": "S19d35e100a7cbcb3b48",
 		"legacySongID": 517,
-		"searchTerms": ["Violence Trigger"],
+		"searchTerms": [
+			"Violence Trigger"
+		],
 		"title": "バイオレンストリガー"
 	},
 	{
@@ -6285,7 +6888,9 @@
 		},
 		"id": "S19d35e100a8b4e6166b",
 		"legacySongID": 518,
-		"searchTerms": ["Alkali Rettousei"],
+		"searchTerms": [
+			"Alkali Rettousei"
+		],
 		"title": "アルカリレットウセイ"
 	},
 	{
@@ -6297,7 +6902,9 @@
 		},
 		"id": "S19d35e100a93b8324f8",
 		"legacySongID": 519,
-		"searchTerms": ["Kire Carry On"],
+		"searchTerms": [
+			"Kire Carry On"
+		],
 		"title": "キレキャリオン"
 	},
 	{
@@ -6309,7 +6916,9 @@
 		},
 		"id": "S19d35e100aa80b59307",
 		"legacySongID": 520,
-		"searchTerms": ["Zenmai Shoujo Tokei"],
+		"searchTerms": [
+			"Zenmai Shoujo Tokei"
+		],
 		"title": "撥条少女時計"
 	},
 	{
@@ -6334,7 +6943,9 @@
 		},
 		"id": "S19d35e100ac623d2c30",
 		"legacySongID": 522,
-		"searchTerms": ["Cinderella Disco"],
+		"searchTerms": [
+			"Cinderella Disco"
+		],
 		"title": "シンデレラディスコ"
 	},
 	{
@@ -6347,7 +6958,9 @@
 		},
 		"id": "S19d35e100ad314410d9",
 		"legacySongID": 523,
-		"searchTerms": ["Jeanne D'Arc no Doukoku"],
+		"searchTerms": [
+			"Jeanne D'Arc no Doukoku"
+		],
 		"title": "ジャンヌ・ダルクの慟哭"
 	},
 	{
@@ -6359,7 +6972,9 @@
 		},
 		"id": "S19d35e100aef97b1250",
 		"legacySongID": 524,
-		"searchTerms": ["Negative Shinkaron"],
+		"searchTerms": [
+			"Negative Shinkaron"
+		],
 		"title": "ネガティブ進化論"
 	},
 	{
@@ -6371,7 +6986,9 @@
 		},
 		"id": "S19d35e100af831336d3",
 		"legacySongID": 525,
-		"searchTerms": ["Nyannyanteki Uchuuron"],
+		"searchTerms": [
+			"Nyannyanteki Uchuuron"
+		],
 		"title": "猫猫的宇宙論"
 	},
 	{
@@ -6383,7 +7000,9 @@
 		},
 		"id": "S19d35e100b086265f03",
 		"legacySongID": 526,
-		"searchTerms": ["Kokuhaku Bungee Jump"],
+		"searchTerms": [
+			"Kokuhaku Bungee Jump"
+		],
 		"title": "告白バンジージャンプ"
 	},
 	{
@@ -6395,7 +7014,9 @@
 		},
 		"id": "S19d35e100b16f5dd297",
 		"legacySongID": 527,
-		"searchTerms": ["Totemo Suteki Na Rokugatsu Deshita"],
+		"searchTerms": [
+			"Totemo Suteki Na Rokugatsu Deshita"
+		],
 		"title": "とても素敵な六月でした"
 	},
 	{
@@ -6432,7 +7053,9 @@
 		},
 		"id": "S19d35e100b43590e6d6",
 		"legacySongID": 530,
-		"searchTerms": ["Ruler Count, Zero -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Ruler Count, Zero -Ōsaka Akane Solo ver.-"
+		],
 		"title": "Ruler Count, Zero -逢坂 茜ソロver.-"
 	},
 	{
@@ -6444,7 +7067,9 @@
 		},
 		"id": "S19d35e100b547900bfc",
 		"legacySongID": 531,
-		"searchTerms": ["Ruler Count, Zero -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Ruler Count, Zero -Kujō Kaede Solo ver.-"
+		],
 		"title": "Ruler Count, Zero -九條 楓ソロver.-"
 	},
 	{
@@ -6456,7 +7081,9 @@
 		},
 		"id": "S19d35e100b62c7107a1",
 		"legacySongID": 532,
-		"searchTerms": ["Ruler Count, Zero -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"Ruler Count, Zero -Suzushima Arisu Solo ver.-"
+		],
 		"title": "Ruler Count, Zero -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -6468,7 +7095,9 @@
 		},
 		"id": "S19d35e100b788c50de1",
 		"legacySongID": 533,
-		"searchTerms": ["Kizuna Sparkling World"],
+		"searchTerms": [
+			"Kizuna Sparkling World"
+		],
 		"title": "キズナ Sparkling World"
 	},
 	{
@@ -6480,7 +7109,9 @@
 		},
 		"id": "S19d35e100b8b10bc883",
 		"legacySongID": 534,
-		"searchTerms": ["Akari ga Yatte Kita Zo"],
+		"searchTerms": [
+			"Akari ga Yatte Kita Zo"
+		],
 		"title": "アカリがやってきたぞっ"
 	},
 	{
@@ -6492,7 +7123,9 @@
 		},
 		"id": "S19d35e100b9c3bf849b",
 		"legacySongID": 535,
-		"searchTerms": ["Kibou no Tsuki"],
+		"searchTerms": [
+			"Kibou no Tsuki"
+		],
 		"title": "幾望の月"
 	},
 	{
@@ -6577,7 +7210,10 @@
 		},
 		"id": "S19d35e100c080f82340",
 		"legacySongID": 542,
-		"searchTerms": ["Ray Ray ~Chouzetsu Saikyou Ame-chan Mix~", "Rei Rei"],
+		"searchTerms": [
+			"Ray Ray ~Chouzetsu Saikyou Ame-chan Mix~",
+			"Rei Rei"
+		],
 		"title": "レーイレーイ ～超絶最強アメちゃん Mix～"
 	},
 	{
@@ -6614,7 +7250,9 @@
 		},
 		"id": "S19d35e100c3ea6937ca",
 		"legacySongID": 545,
-		"searchTerms": ["Oyasumi no Uta"],
+		"searchTerms": [
+			"Oyasumi no Uta"
+		],
 		"title": "おやすみのうた"
 	},
 	{
@@ -6638,7 +7276,9 @@
 		},
 		"id": "S19d35e100c5ba7d9f05",
 		"legacySongID": 547,
-		"searchTerms": ["Splash Dance!! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Splash Dance!! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "Splash Dance!! -星咲 あかりソロver.-"
 	},
 	{
@@ -6650,7 +7290,9 @@
 		},
 		"id": "S19d35e100c61313419c",
 		"legacySongID": 548,
-		"searchTerms": ["Splash Dance!! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Splash Dance!! -Takase Rio Solo ver.-"
+		],
 		"title": "Splash Dance!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -6662,7 +7304,9 @@
 		},
 		"id": "S19d35e100c7c033dd7d",
 		"legacySongID": 549,
-		"searchTerms": ["Splash Dance!! -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"Splash Dance!! -Sakurai Haruna Solo ver.-"
+		],
 		"title": "Splash Dance!! -桜井 春菜ソロver.-"
 	},
 	{
@@ -6674,7 +7318,9 @@
 		},
 		"id": "S19d35e100c8ff41be84",
 		"legacySongID": 550,
-		"searchTerms": ["Splash Dance!! -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Splash Dance!! -Inohara Koboshi Solo ver.-"
+		],
 		"title": "Splash Dance!! -井之原 小星ソロver.-"
 	},
 	{
@@ -6686,7 +7332,9 @@
 		},
 		"id": "S19d35e100c9fed2368e",
 		"legacySongID": 551,
-		"searchTerms": ["Splash Dance!! -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Splash Dance!! -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "Splash Dance!! -日向 千夏ソロver.-"
 	},
 	{
@@ -6698,7 +7346,9 @@
 		},
 		"id": "S19d35e100ca756da2c3",
 		"legacySongID": 552,
-		"searchTerms": ["Next Nest"],
+		"searchTerms": [
+			"Next Nest"
+		],
 		"title": "ネクストネスト"
 	},
 	{
@@ -6770,7 +7420,10 @@
 		},
 		"id": "S19d35e100d02c67e3c2",
 		"legacySongID": 558,
-		"searchTerms": ["Itazura Sensation", "Mischievous Sensation"],
+		"searchTerms": [
+			"Itazura Sensation",
+			"Mischievous Sensation"
+		],
 		"title": "悪戯センセーション"
 	},
 	{
@@ -6822,7 +7475,9 @@
 		},
 		"id": "S19d35e100d4a1abc3e2",
 		"legacySongID": 562,
-		"searchTerms": ["Rinne Tensei"],
+		"searchTerms": [
+			"Rinne Tensei"
+		],
 		"title": "輪廻転生"
 	},
 	{
@@ -6834,7 +7489,9 @@
 		},
 		"id": "S19d35e100d5bd5f969d",
 		"legacySongID": 563,
-		"searchTerms": ["Sono Gunjou ga Itoshikatta You Datta"],
+		"searchTerms": [
+			"Sono Gunjou ga Itoshikatta You Datta"
+		],
 		"title": "その群青が愛しかったようだった"
 	},
 	{
@@ -6859,7 +7516,10 @@
 		},
 		"id": "S19d35e100d79cf606c5",
 		"legacySongID": 565,
-		"searchTerms": ["ReEnd of a Dream", "Re:End of a Dream"],
+		"searchTerms": [
+			"ReEnd of a Dream",
+			"Re:End of a Dream"
+		],
 		"title": "Re：End of a Dream"
 	},
 	{
@@ -6871,7 +7531,9 @@
 		},
 		"id": "S19d35e100d846cac7b7",
 		"legacySongID": 566,
-		"searchTerms": ["Starring Stars -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Starring Stars -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "Starring Stars -星咲 あかりソロver.-"
 	},
 	{
@@ -6883,7 +7545,9 @@
 		},
 		"id": "S19d35e100d922c02a87",
 		"legacySongID": 567,
-		"searchTerms": ["Starring Stars -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Starring Stars -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "Starring Stars -藤沢 柚子ソロver.-"
 	},
 	{
@@ -6895,7 +7559,9 @@
 		},
 		"id": "S19d35e100daaab7c35f",
 		"legacySongID": 568,
-		"searchTerms": ["Starring Stars -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Starring Stars -Misumi Aoi Solo ver.-"
+		],
 		"title": "Starring Stars -三角 葵ソロver.-"
 	},
 	{
@@ -6907,7 +7573,9 @@
 		},
 		"id": "S19d35e100db446a1d2e",
 		"legacySongID": 569,
-		"searchTerms": ["Rail Romanesque Hachiroku Ver."],
+		"searchTerms": [
+			"Rail Romanesque Hachiroku Ver."
+		],
 		"title": "レイル・ロマネスク ハチロクver."
 	},
 	{
@@ -6919,7 +7587,9 @@
 		},
 		"id": "S19d35e100dcb48e85bd",
 		"legacySongID": 570,
-		"searchTerms": ["Kuusou Ressha"],
+		"searchTerms": [
+			"Kuusou Ressha"
+		],
 		"title": "空奏列車"
 	},
 	{
@@ -6932,7 +7602,9 @@
 		},
 		"id": "S19d35e100dddc228c11",
 		"legacySongID": 571,
-		"searchTerms": ["COSMIC RAILROAD"],
+		"searchTerms": [
+			"COSMIC RAILROAD"
+		],
 		"title": "CO5M1C R4ILR0AD"
 	},
 	{
@@ -6982,7 +7654,9 @@
 		},
 		"id": "S19d35e100e15aa26044",
 		"legacySongID": 575,
-		"searchTerms": ["Ohayou Japonica"],
+		"searchTerms": [
+			"Ohayou Japonica"
+		],
 		"title": "おはようジャポニカ"
 	},
 	{
@@ -6994,7 +7668,9 @@
 		},
 		"id": "S19d35e100e266a1260e",
 		"legacySongID": 576,
-		"searchTerms": ["Arimasuka?"],
+		"searchTerms": [
+			"Arimasuka?"
+		],
 		"title": "あ・り・ま・す・か？"
 	},
 	{
@@ -7007,7 +7683,9 @@
 		},
 		"id": "S19d35e100e3242bfa15",
 		"legacySongID": 577,
-		"searchTerms": ["Nini"],
+		"searchTerms": [
+			"Nini"
+		],
 		"title": "ニニ"
 	},
 	{
@@ -7019,7 +7697,9 @@
 		},
 		"id": "S19d35e100e4cb0ffa28",
 		"legacySongID": 578,
-		"searchTerms": ["Kaze ni Noseta Negai"],
+		"searchTerms": [
+			"Kaze ni Noseta Negai"
+		],
 		"title": "風に乗せた願い"
 	},
 	{
@@ -7031,7 +7711,9 @@
 		},
 		"id": "S19d35e100e550fb5889",
 		"legacySongID": 579,
-		"searchTerms": ["Danzai wa Amaneku Ningen no Moto ni"],
+		"searchTerms": [
+			"Danzai wa Amaneku Ningen no Moto ni"
+		],
 		"title": "断罪は遍く人間の元に"
 	},
 	{
@@ -7043,7 +7725,9 @@
 		},
 		"id": "S19d35e100e639fca576",
 		"legacySongID": 580,
-		"searchTerms": ["Kero9destiny"],
+		"searchTerms": [
+			"Kero9destiny"
+		],
 		"title": "ケロ⑨destiny"
 	},
 	{
@@ -7055,7 +7739,9 @@
 		},
 		"id": "S19d35e100e743eaf21e",
 		"legacySongID": 581,
-		"searchTerms": ["Kawazuishi"],
+		"searchTerms": [
+			"Kawazuishi"
+		],
 		"title": "蛙石"
 	},
 	{
@@ -7068,7 +7754,9 @@
 		},
 		"id": "S19d35e100e810c37ecf",
 		"legacySongID": 582,
-		"searchTerms": ["ESM"],
+		"searchTerms": [
+			"ESM"
+		],
 		"title": "ENERGY SYNERGY MATRIX"
 	},
 	{
@@ -7081,7 +7769,9 @@
 		},
 		"id": "S19d35e100e9b809b008",
 		"legacySongID": 583,
-		"searchTerms": ["Karappo Nonfiction"],
+		"searchTerms": [
+			"Karappo Nonfiction"
+		],
 		"title": "カラッポ・ノンフィクション"
 	},
 	{
@@ -7093,7 +7783,10 @@
 		},
 		"id": "S19d35e100eaf7a5116c",
 		"legacySongID": 584,
-		"searchTerms": ["Burning Hearts ~Honoo no ANGEL~", "Burning Angel"],
+		"searchTerms": [
+			"Burning Hearts ~Honoo no ANGEL~",
+			"Burning Angel"
+		],
 		"title": "Burning Hearts ～炎のANGEL～"
 	},
 	{
@@ -7105,7 +7798,9 @@
 		},
 		"id": "S19d35e100ebc9b9bab1",
 		"legacySongID": 585,
-		"searchTerms": ["Nandodemo Waraou"],
+		"searchTerms": [
+			"Nandodemo Waraou"
+		],
 		"title": "なんどでも笑おう"
 	},
 	{
@@ -7129,7 +7824,9 @@
 		},
 		"id": "S19d35e100edc540ee52",
 		"legacySongID": 587,
-		"searchTerms": ["Yonde Mirakurun!"],
+		"searchTerms": [
+			"Yonde Mirakurun!"
+		],
 		"title": "よんでミラクるん!"
 	},
 	{
@@ -7153,7 +7850,9 @@
 		},
 		"id": "S19d35e100efb48a71c7",
 		"legacySongID": 589,
-		"searchTerms": ["Hana wa Odoreya Iroha ni Ho"],
+		"searchTerms": [
+			"Hana wa Odoreya Iroha ni Ho"
+		],
 		"title": "花ハ踊レヤいろはにほ"
 	},
 	{
@@ -7165,7 +7864,9 @@
 		},
 		"id": "S19d35e100f05dc5b679",
 		"legacySongID": 590,
-		"searchTerms": ["Usseewa"],
+		"searchTerms": [
+			"Usseewa"
+		],
 		"title": "うっせぇわ"
 	},
 	{
@@ -7177,7 +7878,9 @@
 		},
 		"id": "S19d35e100f102ae89fb",
 		"legacySongID": 591,
-		"searchTerms": ["Haru o Tsugeru"],
+		"searchTerms": [
+			"Haru o Tsugeru"
+		],
 		"title": "春を告げる"
 	},
 	{
@@ -7201,7 +7904,9 @@
 		},
 		"id": "S19d35e100f35aebce7d",
 		"legacySongID": 593,
-		"searchTerms": ["Darling Dance"],
+		"searchTerms": [
+			"Darling Dance"
+		],
 		"title": "ダーリンダンス"
 	},
 	{
@@ -7213,7 +7918,10 @@
 		},
 		"id": "S19d35e100f4a51cb314",
 		"legacySongID": 594,
-		"searchTerms": ["Ren'ai Saiban", "Love Trial"],
+		"searchTerms": [
+			"Ren'ai Saiban",
+			"Love Trial"
+		],
 		"title": "恋愛裁判"
 	},
 	{
@@ -7225,7 +7933,9 @@
 		},
 		"id": "S19d35e100f52d1c9767",
 		"legacySongID": 595,
-		"searchTerms": ["Junky Night Town Orchestra"],
+		"searchTerms": [
+			"Junky Night Town Orchestra"
+		],
 		"title": "ジャンキーナイトタウンオーケストラ"
 	},
 	{
@@ -7237,7 +7947,9 @@
 		},
 		"id": "S19d35e100f6bbbc918a",
 		"legacySongID": 596,
-		"searchTerms": ["Iro wa Nioedo Chirinuruwo"],
+		"searchTerms": [
+			"Iro wa Nioedo Chirinuruwo"
+		],
 		"title": "色は匂へど散りぬるを"
 	},
 	{
@@ -7249,7 +7961,9 @@
 		},
 		"id": "S19d35e100f856f4e11d",
 		"legacySongID": 598,
-		"searchTerms": ["Dement ~after legend~"],
+		"searchTerms": [
+			"Dement ~after legend~"
+		],
 		"title": "Dement ～after legend～"
 	},
 	{
@@ -7310,7 +8024,9 @@
 		},
 		"id": "S19d35e100fd91f8e335",
 		"legacySongID": 603,
-		"searchTerms": ["Hanadoki wa Yume o Miru"],
+		"searchTerms": [
+			"Hanadoki wa Yume o Miru"
+		],
 		"title": "花時は夢を見る。"
 	},
 	{
@@ -7323,7 +8039,9 @@
 		},
 		"id": "S19d35e100fe310d9879",
 		"legacySongID": 604,
-		"searchTerms": ["Gaming Polar Bear"],
+		"searchTerms": [
+			"Gaming Polar Bear"
+		],
 		"title": "ゲーミングポーラーベア"
 	},
 	{
@@ -7348,7 +8066,9 @@
 		},
 		"id": "S19d35e10100273496b2",
 		"legacySongID": 606,
-		"searchTerms": ["Mirage Fragrance"],
+		"searchTerms": [
+			"Mirage Fragrance"
+		],
 		"title": "ミラージュ・フレイグランス"
 	},
 	{
@@ -7373,7 +8093,9 @@
 		},
 		"id": "S19d35e101021763a562",
 		"legacySongID": 608,
-		"searchTerms": ["No Limit RED Force -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"No Limit RED Force -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "No Limit RED Force -星咲 あかりソロver.-"
 	},
 	{
@@ -7385,7 +8107,9 @@
 		},
 		"id": "S19d35e1010330f9822a",
 		"legacySongID": 609,
-		"searchTerms": ["No Limit RED Force -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"No Limit RED Force -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "No Limit RED Force -藍原 椿ソロver.-"
 	},
 	{
@@ -7397,7 +8121,9 @@
 		},
 		"id": "S19d35e1010420d5c2e4",
 		"legacySongID": 610,
-		"searchTerms": ["No Limit RED Force -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"No Limit RED Force -Saotome Ayaka Solo ver.-"
+		],
 		"title": "No Limit RED Force -早乙女 彩華ソロver.-"
 	},
 	{
@@ -7409,7 +8135,9 @@
 		},
 		"id": "S19d35e10105264a32a9",
 		"legacySongID": 611,
-		"searchTerms": ["No Limit RED Force -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"No Limit RED Force -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "No Limit RED Force -柏木 咲姫ソロver.-"
 	},
 	{
@@ -7421,7 +8149,9 @@
 		},
 		"id": "S19d35e101062c101043",
 		"legacySongID": 612,
-		"searchTerms": ["No Limit RED Force -Kashiwagi Mia Solo ver.-"],
+		"searchTerms": [
+			"No Limit RED Force -Kashiwagi Mia Solo ver.-"
+		],
 		"title": "No Limit RED Force -柏木 美亜ソロver.-"
 	},
 	{
@@ -7433,7 +8163,11 @@
 		},
 		"id": "S19d35e101072ba58253",
 		"legacySongID": 613,
-		"searchTerms": ["Saishuu Kichiku Zenbu Koe", "U.N. Owen wa Kanojo nano ka?", "UN Owen"],
+		"searchTerms": [
+			"Saishuu Kichiku Zenbu Koe",
+			"U.N. Owen wa Kanojo nano ka?",
+			"UN Owen"
+		],
 		"title": "最終鬼畜全部声"
 	},
 	{
@@ -7446,7 +8180,10 @@
 		},
 		"id": "S19d35e101080c2f3062",
 		"legacySongID": 614,
-		"searchTerms": ["Take", "Bamboo"],
+		"searchTerms": [
+			"Take",
+			"Bamboo"
+		],
 		"title": "竹"
 	},
 	{
@@ -7472,7 +8209,9 @@
 		},
 		"id": "S19d35e1010a83b3e42f",
 		"legacySongID": 616,
-		"searchTerms": ["Psalms ~Tamashii no Kaeru Basho~"],
+		"searchTerms": [
+			"Psalms ~Tamashii no Kaeru Basho~"
+		],
 		"title": "Psalms ～魂の還るばしょ～"
 	},
 	{
@@ -7484,7 +8223,9 @@
 		},
 		"id": "S19d35e1010b0ea4bbbd",
 		"legacySongID": 617,
-		"searchTerms": ["Ebby Nurseday"],
+		"searchTerms": [
+			"Ebby Nurseday"
+		],
 		"title": "エッビーナースデイ"
 	},
 	{
@@ -7496,7 +8237,9 @@
 		},
 		"id": "S19d35e1010cb40c4ff2",
 		"legacySongID": 618,
-		"searchTerms": ["Amakamisama"],
+		"searchTerms": [
+			"Amakamisama"
+		],
 		"title": "アマカミサマ"
 	},
 	{
@@ -7508,7 +8251,9 @@
 		},
 		"id": "S19d35e1010d64f89f9e",
 		"legacySongID": 619,
-		"searchTerms": ["Happy End o Hajime kara"],
+		"searchTerms": [
+			"Happy End o Hajime kara"
+		],
 		"title": "ハッピーエンドをはじめから"
 	},
 	{
@@ -7520,7 +8265,10 @@
 		},
 		"id": "S19d35e1010e1ac8aafa",
 		"legacySongID": 620,
-		"searchTerms": ["VTuber no Uta", "Buichubba no Uta"],
+		"searchTerms": [
+			"VTuber no Uta",
+			"Buichubba no Uta"
+		],
 		"title": "ぶいちゅっばの歌"
 	},
 	{
@@ -7532,7 +8280,9 @@
 		},
 		"id": "S19d35e1010fa1773d25",
 		"legacySongID": 621,
-		"searchTerms": ["Y.Y.Y. Keikaku!!!! -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Y.Y.Y. Keikaku!!!! -Ōsaka Akane Solo ver.-"
+		],
 		"title": "Y.Y.Y.計画!!!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -7544,7 +8294,9 @@
 		},
 		"id": "S19d35e10110bde21ad7",
 		"legacySongID": 622,
-		"searchTerms": ["Y.Y.Y. Keikaku!!!! -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Y.Y.Y. Keikaku!!!! -Kujō Kaede Solo ver.-"
+		],
 		"title": "Y.Y.Y.計画!!!! -九條 楓ソロver.-"
 	},
 	{
@@ -7556,7 +8308,9 @@
 		},
 		"id": "S19d35e10111d3b0b176",
 		"legacySongID": 623,
-		"searchTerms": ["Y.Y.Y. Keikaku!!!! -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"Y.Y.Y. Keikaku!!!! -Suzushima Arisu Solo ver.-"
+		],
 		"title": "Y.Y.Y.計画!!!! -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -7593,7 +8347,9 @@
 		},
 		"id": "S19d35e101148b6b9ec2",
 		"legacySongID": 626,
-		"searchTerms": ["magia"],
+		"searchTerms": [
+			"magia"
+		],
 		"title": "μάγια"
 	},
 	{
@@ -7605,7 +8361,9 @@
 		},
 		"id": "S19d35e10115441017de",
 		"legacySongID": 627,
-		"searchTerms": ["Hatsune Tenchi Kaibyaku Shinwa"],
+		"searchTerms": [
+			"Hatsune Tenchi Kaibyaku Shinwa"
+		],
 		"title": "初音天地開闢神話"
 	},
 	{
@@ -7617,7 +8375,9 @@
 		},
 		"id": "S19d35e101160ffef501",
 		"legacySongID": 628,
-		"searchTerms": ["39 Music!"],
+		"searchTerms": [
+			"39 Music!"
+		],
 		"title": "39みゅーじっく！"
 	},
 	{
@@ -7629,7 +8389,9 @@
 		},
 		"id": "S19d35e1011716dd6868",
 		"legacySongID": 629,
-		"searchTerms": ["Welcome to ONSEN!!"],
+		"searchTerms": [
+			"Welcome to ONSEN!!"
+		],
 		"title": "うぇるかむ to ONSEN!!"
 	},
 	{
@@ -7641,7 +8403,9 @@
 		},
 		"id": "S19d35e10118b44d85cd",
 		"legacySongID": 630,
-		"searchTerms": ["Adachi Oufu wwww"],
+		"searchTerms": [
+			"Adachi Oufu wwww"
+		],
 		"title": "足立オウフwwww"
 	},
 	{
@@ -7653,7 +8417,9 @@
 		},
 		"id": "S19d35e10119650ee03a",
 		"legacySongID": 631,
-		"searchTerms": ["Fuku Yadoru Otoya Tamaonsen"],
+		"searchTerms": [
+			"Fuku Yadoru Otoya Tamaonsen"
+		],
 		"title": "福宿音屋魂音泉"
 	},
 	{
@@ -7665,7 +8431,9 @@
 		},
 		"id": "S19d35e1011a5ad8456f",
 		"legacySongID": 632,
-		"searchTerms": ["Pokapoka Onsen Ondo"],
+		"searchTerms": [
+			"Pokapoka Onsen Ondo"
+		],
 		"title": "ぽかぽか温泉音頭"
 	},
 	{
@@ -7704,7 +8472,9 @@
 		},
 		"id": "S19d35e1011dc11cc759",
 		"legacySongID": 635,
-		"searchTerms": ["Dennou Shoujo wa Utahime no Yume o Miru ka?"],
+		"searchTerms": [
+			"Dennou Shoujo wa Utahime no Yume o Miru ka?"
+		],
 		"title": "電脳少女は歌姫の夢を見るか？"
 	},
 	{
@@ -7716,7 +8486,9 @@
 		},
 		"id": "S19d35e1011e4aa462a4",
 		"legacySongID": 636,
-		"searchTerms": ["Doro no Bunzai de Watashi Dake no Taisetsu o Ubaou Da Nante"],
+		"searchTerms": [
+			"Doro no Bunzai de Watashi Dake no Taisetsu o Ubaou Da Nante"
+		],
 		"title": "泥の分際で私だけの大切を奪おうだなんて"
 	},
 	{
@@ -7728,7 +8500,9 @@
 		},
 		"id": "S19d35e1011f2e7c0d22",
 		"legacySongID": 637,
-		"searchTerms": ["Muteki no Frontier Sanjuushi -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Muteki no Frontier Sanjuushi -Misumi Aoi Solo ver.-"
+		],
 		"title": "無敵のフロンティア三銃士 -三角 葵ソロver.-"
 	},
 	{
@@ -7740,7 +8514,9 @@
 		},
 		"id": "S19d35e101206417d94e",
 		"legacySongID": 638,
-		"searchTerms": ["Muteki no Frontier Sanjuushi -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Muteki no Frontier Sanjuushi -Kujō Kaede Solo ver.-"
+		],
 		"title": "無敵のフロンティア三銃士 -九條 楓ソロver.-"
 	},
 	{
@@ -7752,7 +8528,9 @@
 		},
 		"id": "S19d35e101211f8df3eb",
 		"legacySongID": 639,
-		"searchTerms": ["Muteki no Frontier Sanjuushi -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Muteki no Frontier Sanjuushi -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "無敵のフロンティア三銃士 -日向 千夏ソロver.-"
 	},
 	{
@@ -7764,7 +8542,9 @@
 		},
 		"id": "S19d35e10122c0728913",
 		"legacySongID": 640,
-		"searchTerms": ["700,000,000,000,000,000,000,000 no Sora de"],
+		"searchTerms": [
+			"700,000,000,000,000,000,000,000 no Sora de"
+		],
 		"title": "700,000,000,000,000,000,000,000の空で"
 	},
 	{
@@ -7776,7 +8556,9 @@
 		},
 		"id": "S19d35e101231d2e07e7",
 		"legacySongID": 641,
-		"searchTerms": ["Chat Noir"],
+		"searchTerms": [
+			"Chat Noir"
+		],
 		"title": "シャノワール"
 	},
 	{
@@ -7801,7 +8583,9 @@
 		},
 		"id": "S19d35e10125131c854c",
 		"legacySongID": 643,
-		"searchTerms": ["Okuu no Nuclear Fusion Dojo"],
+		"searchTerms": [
+			"Okuu no Nuclear Fusion Dojo"
+		],
 		"title": "お空のニュークリアフュージョン道場"
 	},
 	{
@@ -7889,7 +8673,10 @@
 		},
 		"id": "S19d35e1012cb1714995",
 		"legacySongID": 650,
-		"searchTerms": ["Amatsu Kaze", "Amatsukaze"],
+		"searchTerms": [
+			"Amatsu Kaze",
+			"Amatsukaze"
+		],
 		"title": "天つ風"
 	},
 	{
@@ -7901,7 +8688,9 @@
 		},
 		"id": "S19d35e1012d9f3adcfb",
 		"legacySongID": 651,
-		"searchTerms": ["Happy New Nyaa"],
+		"searchTerms": [
+			"Happy New Nyaa"
+		],
 		"title": "はっぴぃ にゅう にゃあ"
 	},
 	{
@@ -7913,7 +8702,9 @@
 		},
 		"id": "S19d35e1012efe4ab8cc",
 		"legacySongID": 652,
-		"searchTerms": ["Sekai wa Mada Hajimatte Sura Inai"],
+		"searchTerms": [
+			"Sekai wa Mada Hajimatte Sura Inai"
+		],
 		"title": "セカイはまだ始まってすらいない"
 	},
 	{
@@ -7925,7 +8716,9 @@
 		},
 		"id": "S19d35e1012fcb12762d",
 		"legacySongID": 653,
-		"searchTerms": ["Kuyamu to Kaite Mirai"],
+		"searchTerms": [
+			"Kuyamu to Kaite Mirai"
+		],
 		"title": "悔やむと書いてミライ"
 	},
 	{
@@ -7962,7 +8755,9 @@
 		},
 		"id": "S19d35e10132a40084d9",
 		"legacySongID": 656,
-		"searchTerms": ["Heart Cooking Recipe -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Heart Cooking Recipe -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "Heart Cooking Recipe -藤沢 柚子ソロver.-"
 	},
 	{
@@ -7974,7 +8769,9 @@
 		},
 		"id": "S19d35e10133121d858b",
 		"legacySongID": 657,
-		"searchTerms": ["Heart Cooking Recipe -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Heart Cooking Recipe -Inohara Koboshi Solo ver.-"
+		],
 		"title": "Heart Cooking Recipe -井之原 小星ソロver.-"
 	},
 	{
@@ -7986,7 +8783,9 @@
 		},
 		"id": "S19d35e101346e719a8d",
 		"legacySongID": 658,
-		"searchTerms": ["Heart Cooking Recipe -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Heart Cooking Recipe -Kujō Kaede Solo ver.-"
+		],
 		"title": "Heart Cooking Recipe -九條 楓ソロver.-"
 	},
 	{
@@ -8010,7 +8809,9 @@
 		},
 		"id": "S19d35e101365927af8a",
 		"legacySongID": 660,
-		"searchTerms": ["Itsuka Hanasaku Sono Mae ni"],
+		"searchTerms": [
+			"Itsuka Hanasaku Sono Mae ni"
+		],
 		"title": "いつか花咲くその前に"
 	},
 	{
@@ -8046,7 +8847,9 @@
 		},
 		"id": "S19d35e101395584e7ff",
 		"legacySongID": 663,
-		"searchTerms": ["Sekai"],
+		"searchTerms": [
+			"Sekai"
+		],
 		"title": "セカイ"
 	},
 	{
@@ -8058,7 +8861,9 @@
 		},
 		"id": "S19d35e1013a4b6637a4",
 		"legacySongID": 664,
-		"searchTerms": ["Wah Wah World"],
+		"searchTerms": [
+			"Wah Wah World"
+		],
 		"title": "ワーワーワールド"
 	},
 	{
@@ -8070,7 +8875,10 @@
 		},
 		"id": "S19d35e1013bb673283f",
 		"legacySongID": 665,
-		"searchTerms": ["Kimi no Starlight Road", "Groove Coaster"],
+		"searchTerms": [
+			"Kimi no Starlight Road",
+			"Groove Coaster"
+		],
 		"title": "君のStarlight Road"
 	},
 	{
@@ -8082,7 +8890,9 @@
 		},
 		"id": "S19d35e1013cf9b5ac0d",
 		"legacySongID": 666,
-		"searchTerms": ["Groove Coaster"],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "STARLIGHT TWILIGHT -GC edit-"
 	},
 	{
@@ -8094,7 +8904,11 @@
 		},
 		"id": "S19d35e1013d6714a937",
 		"legacySongID": 667,
-		"searchTerms": ["Numbers", "Digits", "Groove Coaster"],
+		"searchTerms": [
+			"Numbers",
+			"Digits",
+			"Groove Coaster"
+		],
 		"title": "2112410403927243233368"
 	},
 	{
@@ -8106,7 +8920,9 @@
 		},
 		"id": "S19d35e1013e45c16dc6",
 		"legacySongID": 668,
-		"searchTerms": ["Groove Coaster"],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Crimson Phoenix"
 	},
 	{
@@ -8118,7 +8934,9 @@
 		},
 		"id": "S19d35e1013f07ea26e5",
 		"legacySongID": 669,
-		"searchTerms": ["Dariusburst"],
+		"searchTerms": [
+			"Dariusburst"
+		],
 		"title": "The world of spirit"
 	},
 	{
@@ -8130,7 +8948,9 @@
 		},
 		"id": "S19d35e101402e8dc69a",
 		"legacySongID": 670,
-		"searchTerms": ["Kusare Gedou to Chocolate"],
+		"searchTerms": [
+			"Kusare Gedou to Chocolate"
+		],
 		"title": "腐れ外道とチョコレゐト"
 	},
 	{
@@ -8181,7 +9001,9 @@
 		},
 		"id": "S19d35e1014486747a9b",
 		"legacySongID": 674,
-		"searchTerms": ["Kimi wa \"Miteitane\"? -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"Kimi wa \"Miteitane\"? -Yūki Riku Solo ver.-"
+		],
 		"title": "キミは“見ていたね”？ -結城 莉玖ソロver.-"
 	},
 	{
@@ -8194,7 +9016,9 @@
 		},
 		"id": "S19d35e10145d45b74a3",
 		"legacySongID": 675,
-		"searchTerms": ["Kimi wa \"Miteitane\"? -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Kimi wa \"Miteitane\"? -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "キミは“見ていたね”？ -東雲 つむぎソロver.-"
 	},
 	{
@@ -8206,7 +9030,9 @@
 		},
 		"id": "S19d35e101463106a27b",
 		"legacySongID": 676,
-		"searchTerms": ["give it up to you -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"give it up to you -Sakurai Haruna Solo ver.-"
+		],
 		"title": "give it up to you -桜井 春菜ソロver.-"
 	},
 	{
@@ -8218,7 +9044,9 @@
 		},
 		"id": "S19d35e10147330a515f",
 		"legacySongID": 677,
-		"searchTerms": ["give it up to you -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"give it up to you -Saotome Ayaka Solo ver.-"
+		],
 		"title": "give it up to you -早乙女 彩華ソロver.-"
 	},
 	{
@@ -8230,7 +9058,9 @@
 		},
 		"id": "S19d35e101485e0a6695",
 		"legacySongID": 678,
-		"searchTerms": ["Mirai Memories!"],
+		"searchTerms": [
+			"Mirai Memories!"
+		],
 		"title": "ミライメモリーズ！"
 	},
 	{
@@ -8243,7 +9073,9 @@
 		},
 		"id": "S19d35e101495279a4f2",
 		"legacySongID": 679,
-		"searchTerms": ["Kiri no Shosai"],
+		"searchTerms": [
+			"Kiri no Shosai"
+		],
 		"title": "霧の書斎"
 	},
 	{
@@ -8268,7 +9100,9 @@
 		},
 		"id": "S19d35e1014bdc89b764",
 		"legacySongID": 681,
-		"searchTerms": ["Watashitachi, Shiki o Asobundesu!!"],
+		"searchTerms": [
+			"Watashitachi, Shiki o Asobundesu!!"
+		],
 		"title": "私たち、四季を遊ぶんです！！"
 	},
 	{
@@ -8292,7 +9126,9 @@
 		},
 		"id": "S19d35e1014d14bd78ff",
 		"legacySongID": 683,
-		"searchTerms": ["Seeno de Tobe Tte Itten No!"],
+		"searchTerms": [
+			"Seeno de Tobe Tte Itten No!"
+		],
 		"title": "せーので跳べって言ってんの！"
 	},
 	{
@@ -8305,7 +9141,9 @@
 		},
 		"id": "S19d35e1014e3e55684b",
 		"legacySongID": 684,
-		"searchTerms": ["Epitorica no Matsuri"],
+		"searchTerms": [
+			"Epitorica no Matsuri"
+		],
 		"title": "エピトゥリカの祀"
 	},
 	{
@@ -8343,7 +9181,9 @@
 		},
 		"id": "S19d35e101518c2d7f46",
 		"legacySongID": 687,
-		"searchTerms": ["Literature"],
+		"searchTerms": [
+			"Literature"
+		],
 		"title": "リテラチュア"
 	},
 	{
@@ -8355,7 +9195,9 @@
 		},
 		"id": "S19d35e10152f109f980",
 		"legacySongID": 688,
-		"searchTerms": ["Thunder Line"],
+		"searchTerms": [
+			"Thunder Line"
+		],
 		"title": "サンダーライン"
 	},
 	{
@@ -8367,7 +9209,9 @@
 		},
 		"id": "S19d35e10153bc4151d5",
 		"legacySongID": 689,
-		"searchTerms": ["Umapyoi Densetsu"],
+		"searchTerms": [
+			"Umapyoi Densetsu"
+		],
 		"title": "うまぴょい伝説"
 	},
 	{
@@ -8391,7 +9235,9 @@
 		},
 		"id": "S19d35e1015516060788",
 		"legacySongID": 691,
-		"searchTerms": ["Hysteric Night Girl"],
+		"searchTerms": [
+			"Hysteric Night Girl"
+		],
 		"title": "ヒステリックナイトガール"
 	},
 	{
@@ -8403,7 +9249,9 @@
 		},
 		"id": "S19d35e101561cac5c68",
 		"legacySongID": 692,
-		"searchTerms": ["Kinmokusei feat.Ado"],
+		"searchTerms": [
+			"Kinmokusei feat.Ado"
+		],
 		"title": "金木犀 feat.Ado"
 	},
 	{
@@ -8427,7 +9275,9 @@
 		},
 		"id": "S19d35e10158165a8de5",
 		"legacySongID": 694,
-		"searchTerms": ["Yuurei Tokyo"],
+		"searchTerms": [
+			"Yuurei Tokyo"
+		],
 		"title": "幽霊東京"
 	},
 	{
@@ -8439,7 +9289,9 @@
 		},
 		"id": "S19d35e101594c9d1a16",
 		"legacySongID": 695,
-		"searchTerms": ["Kamigami ga Koishita Gensoukyou"],
+		"searchTerms": [
+			"Kamigami ga Koishita Gensoukyou"
+		],
 		"title": "神々が恋した幻想郷"
 	},
 	{
@@ -8451,7 +9303,9 @@
 		},
 		"id": "S19d35e1015aa604746b",
 		"legacySongID": 696,
-		"searchTerms": ["Kaiten feat.Ayaponzu*"],
+		"searchTerms": [
+			"Kaiten feat.Ayaponzu*"
+		],
 		"title": "回転 feat.あやぽんず＊"
 	},
 	{
@@ -8463,7 +9317,9 @@
 		},
 		"id": "S19d35e1015b203ac0d3",
 		"legacySongID": 697,
-		"searchTerms": ["Borochi"],
+		"searchTerms": [
+			"Borochi"
+		],
 		"title": "8OROCHI"
 	},
 	{
@@ -8564,7 +9420,9 @@
 		},
 		"id": "S19d35e1016319f1b3c4",
 		"legacySongID": 705,
-		"searchTerms": ["Jump!! Jump!! Jump!! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Jump!! Jump!! Jump!! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "Jump!! Jump!! Jump!! -星咲 あかりソロver.-"
 	},
 	{
@@ -8576,7 +9434,9 @@
 		},
 		"id": "S19d35e10164564a189c",
 		"legacySongID": 706,
-		"searchTerms": ["Jump!! Jump!! Jump!! -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Jump!! Jump!! Jump!! -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "Jump!! Jump!! Jump!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -8588,7 +9448,9 @@
 		},
 		"id": "S19d35e1016594327a1d",
 		"legacySongID": 707,
-		"searchTerms": ["Jump!! Jump!! Jump!! -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Jump!! Jump!! Jump!! -Misumi Aoi Solo ver.-"
+		],
 		"title": "Jump!! Jump!! Jump!! -三角 葵ソロver.-"
 	},
 	{
@@ -8600,7 +9462,9 @@
 		},
 		"id": "S19d35e10166147898a1",
 		"legacySongID": 708,
-		"searchTerms": ["Jump!! Jump!! Jump!! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Jump!! Jump!! Jump!! -Takase Rio Solo ver.-"
+		],
 		"title": "Jump!! Jump!! Jump!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -8612,7 +9476,9 @@
 		},
 		"id": "S19d35e101678f0ffea5",
 		"legacySongID": 709,
-		"searchTerms": ["Jump!! Jump!! Jump!! -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Jump!! Jump!! Jump!! -Ōsaka Akane Solo ver.-"
+		],
 		"title": "Jump!! Jump!! Jump!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -8636,7 +9502,9 @@
 		},
 		"id": "S19d35e101694116f285",
 		"legacySongID": 711,
-		"searchTerms": ["Ataraxia"],
+		"searchTerms": [
+			"Ataraxia"
+		],
 		"title": "Ἀταραξία"
 	},
 	{
@@ -8661,7 +9529,9 @@
 		},
 		"id": "S19d35e1016bcc5a7f38",
 		"legacySongID": 713,
-		"searchTerms": ["Namida Kakushite Onna Michi"],
+		"searchTerms": [
+			"Namida Kakushite Onna Michi"
+		],
 		"title": "涙隠しておんな道"
 	},
 	{
@@ -8723,7 +9593,9 @@
 		},
 		"id": "S19d35e101708e5065e5",
 		"legacySongID": 718,
-		"searchTerms": ["Marimo to Omochabako"],
+		"searchTerms": [
+			"Marimo to Omochabako"
+		],
 		"title": "まりもとおもちゃ箱"
 	},
 	{
@@ -8736,7 +9608,9 @@
 		},
 		"id": "S19d35e10171df6d198d",
 		"legacySongID": 719,
-		"searchTerms": ["Sono Emerald o Miyo"],
+		"searchTerms": [
+			"Sono Emerald o Miyo"
+		],
 		"title": "其のエメラルドを見よ"
 	},
 	{
@@ -8749,7 +9623,10 @@
 		},
 		"id": "S19d35e10172181815f8",
 		"legacySongID": 720,
-		"searchTerms": ["Op. 1 fear TITAN", "Opus 1 fear TITAN"],
+		"searchTerms": [
+			"Op. 1 fear TITAN",
+			"Opus 1 fear TITAN"
+		],
 		"title": "Op.I《fear-TITΛN-》"
 	},
 	{
@@ -8773,7 +9650,9 @@
 		},
 		"id": "S19d35e101749758eb9f",
 		"legacySongID": 722,
-		"searchTerms": ["Saihate"],
+		"searchTerms": [
+			"Saihate"
+		],
 		"title": "サイハテ"
 	},
 	{
@@ -8785,7 +9664,9 @@
 		},
 		"id": "S19d35e1017596b4ff67",
 		"legacySongID": 723,
-		"searchTerms": ["Miracle Paint"],
+		"searchTerms": [
+			"Miracle Paint"
+		],
 		"title": "ミラクルペイント"
 	},
 	{
@@ -8797,7 +9678,9 @@
 		},
 		"id": "S19d35e101761e9c3ad9",
 		"legacySongID": 724,
-		"searchTerms": ["Paradichlorobenzene"],
+		"searchTerms": [
+			"Paradichlorobenzene"
+		],
 		"title": "パラジクロロベンゼン"
 	},
 	{
@@ -8809,7 +9692,9 @@
 		},
 		"id": "S19d35e10177ccf35f45",
 		"legacySongID": 725,
-		"searchTerms": ["Muteki Moment"],
+		"searchTerms": [
+			"Muteki Moment"
+		],
 		"title": "無敵☆moment"
 	},
 	{
@@ -8821,7 +9706,9 @@
 		},
 		"id": "S19d35e101782a09b42b",
 		"legacySongID": 726,
-		"searchTerms": ["Crinoid"],
+		"searchTerms": [
+			"Crinoid"
+		],
 		"title": "クライノイド"
 	},
 	{
@@ -8833,7 +9720,9 @@
 		},
 		"id": "S19d35e1017913ebf870",
 		"legacySongID": 727,
-		"searchTerms": ["Wagamama MIRROR HEART"],
+		"searchTerms": [
+			"Wagamama MIRROR HEART"
+		],
 		"title": "ワガママMIRROR HEART"
 	},
 	{
@@ -8857,7 +9746,9 @@
 		},
 		"id": "S19d35e1017b941fc315",
 		"legacySongID": 729,
-		"searchTerms": ["Positive Dance Time"],
+		"searchTerms": [
+			"Positive Dance Time"
+		],
 		"title": "ポジティブ☆ダンスタイム"
 	},
 	{
@@ -8869,7 +9760,9 @@
 		},
 		"id": "S19d35e1017cbafa3cbc",
 		"legacySongID": 730,
-		"searchTerms": ["Maiodore! Maimai Time"],
+		"searchTerms": [
+			"Maiodore! Maimai Time"
+		],
 		"title": "マイオドレ！舞舞タイム"
 	},
 	{
@@ -8917,7 +9810,9 @@
 		},
 		"id": "S19d35e1018084df577c",
 		"legacySongID": 734,
-		"searchTerms": ["Wakare no Waltz"],
+		"searchTerms": [
+			"Wakare no Waltz"
+		],
 		"title": "別れのワルツ"
 	},
 	{
@@ -8929,7 +9824,9 @@
 		},
 		"id": "S19d35e101814bff63c1",
 		"legacySongID": 735,
-		"searchTerms": ["Sorairo Memories"],
+		"searchTerms": [
+			"Sorairo Memories"
+		],
 		"title": "空色メモリーズ"
 	},
 	{
@@ -8953,7 +9850,9 @@
 		},
 		"id": "S19d35e10183e38cb989",
 		"legacySongID": 737,
-		"searchTerms": ["Saikyou the Summertime!!!!! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "最強 the サマータイム!!!!! -星咲 あかりソロver.-"
 	},
 	{
@@ -8965,7 +9864,9 @@
 		},
 		"id": "S19d35e10184f7a10c0b",
 		"legacySongID": 738,
-		"searchTerms": ["Saikyou the Summertime!!!!! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!! -Takase Rio Solo ver.-"
+		],
 		"title": "最強 the サマータイム!!!!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -8977,7 +9878,9 @@
 		},
 		"id": "S19d35e101857ce9b8a3",
 		"legacySongID": 739,
-		"searchTerms": ["Saikyou the Summertime!!!!! -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!! -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "最強 the サマータイム!!!!! -日向 千夏ソロver.-"
 	},
 	{
@@ -8989,7 +9892,9 @@
 		},
 		"id": "S19d35e1018605341885",
 		"legacySongID": 740,
-		"searchTerms": ["Saikyou the Summertime!!!!! -Kashiwagi Mia Solo ver.-"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!! -Kashiwagi Mia Solo ver.-"
+		],
 		"title": "最強 the サマータイム!!!!! -柏木 美亜ソロver.-"
 	},
 	{
@@ -9001,7 +9906,9 @@
 		},
 		"id": "S19d35e10187086183c5",
 		"legacySongID": 741,
-		"searchTerms": ["Saikyou the Summertime!!!!! -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Saikyou the Summertime!!!!! -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "最強 the サマータイム!!!!! -東雲 つむぎソロver.-"
 	},
 	{
@@ -9013,7 +9920,9 @@
 		},
 		"id": "S19d35e10188284fda0d",
 		"legacySongID": 742,
-		"searchTerms": ["Chouzenshin! Manten Smile!"],
+		"searchTerms": [
+			"Chouzenshin! Manten Smile!"
+		],
 		"title": "超前進！満点スマイル！"
 	},
 	{
@@ -9025,7 +9934,9 @@
 		},
 		"id": "S19d35e1018926c81bd8",
 		"legacySongID": 743,
-		"searchTerms": ["Random Sunday"],
+		"searchTerms": [
+			"Random Sunday"
+		],
 		"title": "ランダムサンデー"
 	},
 	{
@@ -9061,7 +9972,9 @@
 		},
 		"id": "S19d35e1018cec88ae26",
 		"legacySongID": 746,
-		"searchTerms": ["Vibes 2k20 (owl*aging Remix)"],
+		"searchTerms": [
+			"Vibes 2k20 (owl*aging Remix)"
+		],
 		"title": "Vibes 2k20 (owl＊aging remix)"
 	},
 	{
@@ -9073,7 +9986,9 @@
 		},
 		"id": "S19d35e1018ded22c958",
 		"legacySongID": 747,
-		"searchTerms": ["Onsoku Days!!"],
+		"searchTerms": [
+			"Onsoku Days!!"
+		],
 		"title": "オンソクデイズ!!"
 	},
 	{
@@ -9098,7 +10013,9 @@
 		},
 		"id": "S19d35e1018f4eca928d",
 		"legacySongID": 749,
-		"searchTerms": ["Tiger Rampage"],
+		"searchTerms": [
+			"Tiger Rampage"
+		],
 		"title": "タイガーランペイジ"
 	},
 	{
@@ -9110,7 +10027,10 @@
 		},
 		"id": "S19d35e101900ee1bfb2",
 		"legacySongID": 750,
-		"searchTerms": ["Tricksters", "Trricksters"],
+		"searchTerms": [
+			"Tricksters",
+			"Trricksters"
+		],
 		"title": "Trrricksters!!"
 	},
 	{
@@ -9122,7 +10042,9 @@
 		},
 		"id": "S19d35e101919596da2f",
 		"legacySongID": 751,
-		"searchTerms": ["Long Slow Arrive"],
+		"searchTerms": [
+			"Long Slow Arrive"
+		],
 		"title": "ロング・スロー・アライブ"
 	},
 	{
@@ -9172,7 +10094,9 @@
 		},
 		"id": "S19d35e10195fce5816b",
 		"legacySongID": 755,
-		"searchTerms": ["Vivid Hero"],
+		"searchTerms": [
+			"Vivid Hero"
+		],
 		"title": "ビビッドヒーロー"
 	},
 	{
@@ -9184,7 +10108,9 @@
 		},
 		"id": "S19d35e10196c651bf55",
 		"legacySongID": 756,
-		"searchTerms": ["Hikyou Sentai Urotander"],
+		"searchTerms": [
+			"Hikyou Sentai Urotander"
+		],
 		"title": "卑怯戦隊うろたんだー"
 	},
 	{
@@ -9197,7 +10123,9 @@
 		},
 		"id": "S19d35e10197219941c1",
 		"legacySongID": 757,
-		"searchTerms": ["Ondan Choujin Gorillaizer"],
+		"searchTerms": [
+			"Ondan Choujin Gorillaizer"
+		],
 		"title": "音弾超人ゴリライザー"
 	},
 	{
@@ -9209,7 +10137,9 @@
 		},
 		"id": "S19d35e101986d6d1da6",
 		"legacySongID": 758,
-		"searchTerms": ["Geki Geki!! Gekitou Break Out!!"],
+		"searchTerms": [
+			"Geki Geki!! Gekitou Break Out!!"
+		],
 		"title": "Geki Geki!! 激闘Break Out!!"
 	},
 	{
@@ -9221,7 +10151,9 @@
 		},
 		"id": "S19d35e101990c611b22",
 		"legacySongID": 759,
-		"searchTerms": ["STARRED HEART -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"STARRED HEART -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "STARRED HEART -星咲 あかりソロver.-"
 	},
 	{
@@ -9233,7 +10165,9 @@
 		},
 		"id": "S19d35e1019aa5429054",
 		"legacySongID": 760,
-		"searchTerms": ["STARRED HEART -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"STARRED HEART -Yūki Riku Solo ver.-"
+		],
 		"title": "STARRED HEART -結城 莉玖ソロver.-"
 	},
 	{
@@ -9245,7 +10179,9 @@
 		},
 		"id": "S19d35e1019b3c55f284",
 		"legacySongID": 761,
-		"searchTerms": ["STARRED HEART -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"STARRED HEART -Kujō Kaede Solo ver.-"
+		],
 		"title": "STARRED HEART -九條 楓ソロver.-"
 	},
 	{
@@ -9257,7 +10193,9 @@
 		},
 		"id": "S19d35e1019c4f864b4d",
 		"legacySongID": 762,
-		"searchTerms": ["STARRED HEART -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"STARRED HEART -Suzushima Arisu Solo ver.-"
+		],
 		"title": "STARRED HEART -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -9269,7 +10207,9 @@
 		},
 		"id": "S19d35e1019dc626518a",
 		"legacySongID": 763,
-		"searchTerms": ["STARRED HEART -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"STARRED HEART -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "STARRED HEART -東雲 つむぎソロver.-"
 	},
 	{
@@ -9281,7 +10221,10 @@
 		},
 		"id": "S19d35e1019e22a5a161",
 		"legacySongID": 764,
-		"searchTerms": ["U.N. Owen wa Kanojo nano ka? - Greater Scarlet", "UN Owen"],
+		"searchTerms": [
+			"U.N. Owen wa Kanojo nano ka? - Greater Scarlet",
+			"UN Owen"
+		],
 		"title": "U.N.オーエンは彼女なのか？ - Greater Scarlet"
 	},
 	{
@@ -9305,7 +10248,9 @@
 		},
 		"id": "S19d35e101a0a6f8a70a",
 		"legacySongID": 766,
-		"searchTerms": ["Curious Mitsuyoshi Gupai -Matsuri-"],
+		"searchTerms": [
+			"Curious Mitsuyoshi Gupai -Matsuri-"
+		],
 		"title": "キュアリアス光吉古牌　－祭－"
 	},
 	{
@@ -9329,7 +10274,9 @@
 		},
 		"id": "S19d35e101a21d28bdcc",
 		"legacySongID": 768,
-		"searchTerms": ["Youyoubakko ~ Who done it!!!"],
+		"searchTerms": [
+			"Youyoubakko ~ Who done it!!!"
+		],
 		"title": "妖々跋扈 ～ Who done it！！！"
 	},
 	{
@@ -9341,7 +10288,9 @@
 		},
 		"id": "S19d35e101a3afcb4c15",
 		"legacySongID": 769,
-		"searchTerms": ["Yuuyami ni Mezameshi wa"],
+		"searchTerms": [
+			"Yuuyami ni Mezameshi wa"
+		],
 		"title": "幽闇に目醒めしは"
 	},
 	{
@@ -9391,7 +10340,9 @@
 		},
 		"id": "S19d35e101a8481a5eb1",
 		"legacySongID": 774,
-		"searchTerms": ["Rockin' Pink Monster (Butaotome Ranko Vo Ver.)"],
+		"searchTerms": [
+			"Rockin' Pink Monster (Butaotome Ranko Vo Ver.)"
+		],
 		"title": "ロッキンピンクモンスター (豚乙女ランコVo Ver.)"
 	},
 	{
@@ -9415,7 +10366,9 @@
 		},
 		"id": "S19d35e101aa14f83cc9",
 		"legacySongID": 776,
-		"searchTerms": ["History Breaker"],
+		"searchTerms": [
+			"History Breaker"
+		],
 		"title": "ヒストリー×ブレイカー"
 	},
 	{
@@ -9440,7 +10393,10 @@
 		},
 		"id": "S19d35e101ac83cdb5c3",
 		"legacySongID": 778,
-		"searchTerms": ["Seelenwanderung", "Zeerenwanderung"],
+		"searchTerms": [
+			"Seelenwanderung",
+			"Zeerenwanderung"
+		],
 		"title": "ゼーレンヴァンデルング"
 	},
 	{
@@ -9465,7 +10421,9 @@
 		},
 		"id": "S19d35e101aebf0af57f",
 		"legacySongID": 780,
-		"searchTerms": ["Streaming Heart"],
+		"searchTerms": [
+			"Streaming Heart"
+		],
 		"title": "ストリーミングハート"
 	},
 	{
@@ -9477,7 +10435,9 @@
 		},
 		"id": "S19d35e101af2e1395f5",
 		"legacySongID": 781,
-		"searchTerms": ["Haiboku no Shounen"],
+		"searchTerms": [
+			"Haiboku no Shounen"
+		],
 		"title": "敗北の少年"
 	},
 	{
@@ -9489,7 +10449,9 @@
 		},
 		"id": "S19d35e101b0ce098154",
 		"legacySongID": 782,
-		"searchTerms": ["Autophagy"],
+		"searchTerms": [
+			"Autophagy"
+		],
 		"title": "オートファジー"
 	},
 	{
@@ -9501,7 +10463,9 @@
 		},
 		"id": "S19d35e101b1e40fbaa0",
 		"legacySongID": 783,
-		"searchTerms": ["Machigai Sagashi"],
+		"searchTerms": [
+			"Machigai Sagashi"
+		],
 		"title": "マチガイサガシ"
 	},
 	{
@@ -9525,7 +10489,9 @@
 		},
 		"id": "S19d35e101b3e452b7a3",
 		"legacySongID": 785,
-		"searchTerms": ["Malmis"],
+		"searchTerms": [
+			"Malmis"
+		],
 		"title": "Malicious Mischance"
 	},
 	{
@@ -9549,7 +10515,9 @@
 		},
 		"id": "S19d35e101b570cd347b",
 		"legacySongID": 787,
-		"searchTerms": ["Loeschen"],
+		"searchTerms": [
+			"Loeschen"
+		],
 		"title": "Löschen"
 	},
 	{
@@ -9574,7 +10542,9 @@
 		},
 		"id": "S19d35e101b7f31aa628",
 		"legacySongID": 789,
-		"searchTerms": ["Transcend Lights -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Transcend Lights -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "Transcend Lights -星咲 あかりソロver.-"
 	},
 	{
@@ -9587,7 +10557,9 @@
 		},
 		"id": "S19d35e101b8d2294b7a",
 		"legacySongID": 790,
-		"searchTerms": ["Transcend Lights -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Transcend Lights -Takase Rio Solo ver.-"
+		],
 		"title": "Transcend Lights -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -9600,7 +10572,9 @@
 		},
 		"id": "S19d35e101b914cf8e05",
 		"legacySongID": 791,
-		"searchTerms": ["Transcend Lights -Kashiwagi Mia Solo ver.-"],
+		"searchTerms": [
+			"Transcend Lights -Kashiwagi Mia Solo ver.-"
+		],
 		"title": "Transcend Lights -柏木 美亜ソロver.-"
 	},
 	{
@@ -9613,7 +10587,9 @@
 		},
 		"id": "S19d35e101baffc76d89",
 		"legacySongID": 792,
-		"searchTerms": ["Transcend Lights -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Transcend Lights -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "Transcend Lights -東雲 つむぎソロver.-"
 	},
 	{
@@ -9626,7 +10602,9 @@
 		},
 		"id": "S19d35e101bb0ca7f60a",
 		"legacySongID": 793,
-		"searchTerms": ["Transcend Lights -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"Transcend Lights -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "Transcend Lights -皇城 セツナソロver.-"
 	},
 	{
@@ -9662,7 +10640,9 @@
 		},
 		"id": "S19d35e101be309eda7e",
 		"legacySongID": 796,
-		"searchTerms": ["Aozora Contrail"],
+		"searchTerms": [
+			"Aozora Contrail"
+		],
 		"title": "青空コントレール"
 	},
 	{
@@ -9700,7 +10680,9 @@
 		},
 		"id": "S19d35e101c18c0311ea",
 		"legacySongID": 799,
-		"searchTerms": ["Shitoshitoto"],
+		"searchTerms": [
+			"Shitoshitoto"
+		],
 		"title": "しとしとと"
 	},
 	{
@@ -9712,7 +10694,9 @@
 		},
 		"id": "S19d35e101c2d357caa9",
 		"legacySongID": 800,
-		"searchTerms": ["Illumination"],
+		"searchTerms": [
+			"Illumination"
+		],
 		"title": "イルミネーション"
 	},
 	{
@@ -9737,7 +10721,9 @@
 		},
 		"id": "S19d35e101c48b8d7104",
 		"legacySongID": 802,
-		"searchTerms": ["Yume o Kanaeru Basho"],
+		"searchTerms": [
+			"Yume o Kanaeru Basho"
+		],
 		"title": "夢を叶える場所"
 	},
 	{
@@ -9750,7 +10736,9 @@
 		},
 		"id": "S19d35e101c51339f1b8",
 		"legacySongID": 803,
-		"searchTerms": ["Kouen no Lateral Arc"],
+		"searchTerms": [
+			"Kouen no Lateral Arc"
+		],
 		"title": "光焔のラテラルアーク"
 	},
 	{
@@ -9763,7 +10751,11 @@
 		},
 		"id": "S19d35e101c686bbd196",
 		"legacySongID": 804,
-		"searchTerms": ["Ongeki", "Grudge Attack", "Shinji Hosoe"],
+		"searchTerms": [
+			"Ongeki",
+			"Grudge Attack",
+			"Shinji Hosoe"
+		],
 		"title": "怨撃"
 	},
 	{
@@ -9776,7 +10768,14 @@
 		},
 		"id": "S19d35e101c814b3cfb6",
 		"legacySongID": 805,
-		"searchTerms": ["mu3", "myu3", "moo3", "mü3", "micro3", "u3"],
+		"searchTerms": [
+			"mu3",
+			"myu3",
+			"moo3",
+			"mü3",
+			"micro3",
+			"u3"
+		],
 		"title": "μ3"
 	},
 	{
@@ -9820,7 +10819,9 @@
 		},
 		"id": "S19d35e101cb3fd0a0e7",
 		"legacySongID": 808,
-		"searchTerms": ["RL"],
+		"searchTerms": [
+			"RL"
+		],
 		"title": "Recollect Lines"
 	},
 	{
@@ -9833,7 +10834,9 @@
 		},
 		"id": "S19d35e101cc0b8dee1e",
 		"legacySongID": 809,
-		"searchTerms": ["Memories of ONGEKI"],
+		"searchTerms": [
+			"Memories of ONGEKI"
+		],
 		"title": "Memories of O.N.G.E.K.I."
 	},
 	{
@@ -9845,7 +10848,9 @@
 		},
 		"id": "S19d35e101cdcca761ac",
 		"legacySongID": 810,
-		"searchTerms": ["Asayake Platform"],
+		"searchTerms": [
+			"Asayake Platform"
+		],
 		"title": "朝焼けプラットホーム"
 	},
 	{
@@ -9857,7 +10862,9 @@
 		},
 		"id": "S19d35e101ced8fc8efe",
 		"legacySongID": 811,
-		"searchTerms": ["Koko kara Hajimaru Prologue."],
+		"searchTerms": [
+			"Koko kara Hajimaru Prologue."
+		],
 		"title": "ここからはじまるプロローグ。"
 	},
 	{
@@ -9870,7 +10877,9 @@
 		},
 		"id": "S19d35e101cf77d64a6d",
 		"legacySongID": 812,
-		"searchTerms": ["Kizuna wa Zutto Growing Up!!! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Kizuna wa Zutto Growing Up!!! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "絆はずっとGrowing Up!!! -星咲 あかりソロver.-"
 	},
 	{
@@ -9883,7 +10892,9 @@
 		},
 		"id": "S19d35e101d0721c9a6c",
 		"legacySongID": 813,
-		"searchTerms": ["Kizuna wa Zutto Growing Up!!! -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Kizuna wa Zutto Growing Up!!! -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "絆はずっとGrowing Up!!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -9896,7 +10907,9 @@
 		},
 		"id": "S19d35e101d15d10ff78",
 		"legacySongID": 814,
-		"searchTerms": ["Kizuna wa Zutto Growing Up!!! -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Kizuna wa Zutto Growing Up!!! -Misumi Aoi Solo ver.-"
+		],
 		"title": "絆はずっとGrowing Up!!! -三角 葵ソロver.-"
 	},
 	{
@@ -9908,7 +10921,9 @@
 		},
 		"id": "S19d35e101d20c16d4e2",
 		"legacySongID": 815,
-		"searchTerms": ["Tobidase! TO THE COSMIC!!"],
+		"searchTerms": [
+			"Tobidase! TO THE COSMIC!!"
+		],
 		"title": "とびだせ！TO THE COSMIC!!"
 	},
 	{
@@ -9920,7 +10935,9 @@
 		},
 		"id": "S19d35e101d3d993c28f",
 		"legacySongID": 816,
-		"searchTerms": ["Cosmo Pop Funclub"],
+		"searchTerms": [
+			"Cosmo Pop Funclub"
+		],
 		"title": "コスモポップファンクラブ"
 	},
 	{
@@ -9932,7 +10949,9 @@
 		},
 		"id": "S19d35e101d442f45394",
 		"legacySongID": 817,
-		"searchTerms": ["Loctest"],
+		"searchTerms": [
+			"Loctest"
+		],
 		"title": "Perfect Shining!!"
 	},
 	{
@@ -9956,7 +10975,9 @@
 		},
 		"id": "S19d35e101d640338cc4",
 		"legacySongID": 819,
-		"searchTerms": ["Yume Hanabi"],
+		"searchTerms": [
+			"Yume Hanabi"
+		],
 		"title": "夢花火"
 	},
 	{
@@ -9968,7 +10989,9 @@
 		},
 		"id": "S19d35e101d7ddc37359",
 		"legacySongID": 820,
-		"searchTerms": ["Hardcore Syndrome"],
+		"searchTerms": [
+			"Hardcore Syndrome"
+		],
 		"title": "ハードコア・シンドローム"
 	},
 	{
@@ -10004,7 +11027,9 @@
 		},
 		"id": "S19d35e101daf172f767",
 		"legacySongID": 823,
-		"searchTerms": ["Caliburne ~Story of the Legendary Sword~"],
+		"searchTerms": [
+			"Caliburne ~Story of the Legendary Sword~"
+		],
 		"title": "Caliburne ～Story of the Legendary sword～"
 	},
 	{
@@ -10016,7 +11041,9 @@
 		},
 		"id": "S19d35e101db7f418f9d",
 		"legacySongID": 824,
-		"searchTerms": ["Ryouran Otome Musougeki -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Ryouran Otome Musougeki -Takase Rio Solo ver.-"
+		],
 		"title": "撩乱乙女†無双劇 -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -10028,7 +11055,9 @@
 		},
 		"id": "S19d35e101dc63209ebb",
 		"legacySongID": 825,
-		"searchTerms": ["Ryouran Otome Musougeki -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"Ryouran Otome Musougeki -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "撩乱乙女†無双劇 -藍原 椿ソロver.-"
 	},
 	{
@@ -10040,7 +11069,9 @@
 		},
 		"id": "S19d35e101ddb2808b08",
 		"legacySongID": 826,
-		"searchTerms": ["Ryouran Otome Musougeki -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"Ryouran Otome Musougeki -Yūki Riku Solo ver.-"
+		],
 		"title": "撩乱乙女†無双劇 -結城 莉玖ソロver.-"
 	},
 	{
@@ -10052,7 +11083,9 @@
 		},
 		"id": "S19d35e101de836f5f4b",
 		"legacySongID": 827,
-		"searchTerms": ["Sora no Tonari"],
+		"searchTerms": [
+			"Sora no Tonari"
+		],
 		"title": "宙の隣"
 	},
 	{
@@ -10064,7 +11097,9 @@
 		},
 		"id": "S19d35e101dfec06c47a",
 		"legacySongID": 828,
-		"searchTerms": ["Yume Kikyou"],
+		"searchTerms": [
+			"Yume Kikyou"
+		],
 		"title": "ユメキキョウ"
 	},
 	{
@@ -10076,7 +11111,9 @@
 		},
 		"id": "S19d35e101e0eca10889",
 		"legacySongID": 829,
-		"searchTerms": ["Shukusei Shinpan"],
+		"searchTerms": [
+			"Shukusei Shinpan"
+		],
 		"title": "宿星審判"
 	},
 	{
@@ -10089,7 +11126,9 @@
 		},
 		"id": "S19d35e101e1853bb581",
 		"legacySongID": 830,
-		"searchTerms": ["Girl's Party Planet! -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"Girl's Party Planet! -Sakurai Haruna Solo ver.-"
+		],
 		"title": "Girl's Party Planet! -桜井 春菜ソロver.-"
 	},
 	{
@@ -10102,7 +11141,9 @@
 		},
 		"id": "S19d35e101e202878fa4",
 		"legacySongID": 831,
-		"searchTerms": ["Girl's Party Planet! -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Girl's Party Planet! -Saotome Ayaka Solo ver.-"
+		],
 		"title": "Girl's Party Planet! -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10115,7 +11156,9 @@
 		},
 		"id": "S19d35e101e344fbc330",
 		"legacySongID": 832,
-		"searchTerms": ["Girl's Party Planet! -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Girl's Party Planet! -Inohara Koboshi Solo ver.-"
+		],
 		"title": "Girl's Party Planet! -井之原 小星ソロver.-"
 	},
 	{
@@ -10128,7 +11171,9 @@
 		},
 		"id": "S19d35e101e4eea4ca29",
 		"legacySongID": 833,
-		"searchTerms": ["Girl's Party Planet! -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"Girl's Party Planet! -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "Girl's Party Planet! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -10152,7 +11197,9 @@
 		},
 		"id": "S19d35e101e63b3ef5e8",
 		"legacySongID": 835,
-		"searchTerms": ["Hachimitsu Adventure"],
+		"searchTerms": [
+			"Hachimitsu Adventure"
+		],
 		"title": "はちみつアドベンチャー"
 	},
 	{
@@ -10164,7 +11211,9 @@
 		},
 		"id": "S19d35e101e7f068f74c",
 		"legacySongID": 836,
-		"searchTerms": ["Cat Loving"],
+		"searchTerms": [
+			"Cat Loving"
+		],
 		"title": "キャットラビング"
 	},
 	{
@@ -10176,7 +11225,9 @@
 		},
 		"id": "S19d35e101e89dfd2d89",
 		"legacySongID": 837,
-		"searchTerms": ["MUSIC PRAYER"],
+		"searchTerms": [
+			"MUSIC PRAYER"
+		],
 		"title": "MUSIC PЯAYER"
 	},
 	{
@@ -10212,7 +11263,9 @@
 		},
 		"id": "S19d35e101ebbef26240",
 		"legacySongID": 840,
-		"searchTerms": ["Kajou Ginga no Sinfonietta"],
+		"searchTerms": [
+			"Kajou Ginga no Sinfonietta"
+		],
 		"title": "渦状銀河のシンフォニエッタ"
 	},
 	{
@@ -10225,7 +11278,9 @@
 		},
 		"id": "S19d35e101ec52c59989",
 		"legacySongID": 841,
-		"searchTerms": ["HEADLINER -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "HEADLINER -星咲 あかりソロver.-"
 	},
 	{
@@ -10238,7 +11293,9 @@
 		},
 		"id": "S19d35e101ed3984bc94",
 		"legacySongID": 842,
-		"searchTerms": ["HEADLINER -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "HEADLINER -藤沢 柚子ソロver.-"
 	},
 	{
@@ -10251,7 +11308,9 @@
 		},
 		"id": "S19d35e101ee4cc0fa59",
 		"legacySongID": 843,
-		"searchTerms": ["HEADLINER -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Misumi Aoi Solo ver.-"
+		],
 		"title": "HEADLINER -三角 葵ソロver.-"
 	},
 	{
@@ -10264,7 +11323,9 @@
 		},
 		"id": "S19d35e101efa30ac384",
 		"legacySongID": 844,
-		"searchTerms": ["HEADLINER -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Takase Rio Solo ver.-"
+		],
 		"title": "HEADLINER -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -10277,7 +11338,9 @@
 		},
 		"id": "S19d35e101f0c9d4dbaf",
 		"legacySongID": 845,
-		"searchTerms": ["HEADLINER -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Sakurai Haruna Solo ver.-"
+		],
 		"title": "HEADLINER -桜井 春菜ソロver.-"
 	},
 	{
@@ -10290,7 +11353,9 @@
 		},
 		"id": "S19d35e101f1befee665",
 		"legacySongID": 846,
-		"searchTerms": ["HEADLINER -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "HEADLINER -柏木 咲姫ソロver.-"
 	},
 	{
@@ -10303,7 +11368,9 @@
 		},
 		"id": "S19d35e101f26e5eac92",
 		"legacySongID": 847,
-		"searchTerms": ["HEADLINER -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Ōsaka Akane Solo ver.-"
+		],
 		"title": "HEADLINER -逢坂 茜ソロver.-"
 	},
 	{
@@ -10316,7 +11383,9 @@
 		},
 		"id": "S19d35e101f3372310af",
 		"legacySongID": 848,
-		"searchTerms": ["HEADLINER -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "HEADLINER -日向 千夏ソロver.-"
 	},
 	{
@@ -10329,7 +11398,9 @@
 		},
 		"id": "S19d35e101f430dc0b89",
 		"legacySongID": 849,
-		"searchTerms": ["HEADLINER -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"HEADLINER -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "HEADLINER -皇城 セツナソロver.-"
 	},
 	{
@@ -10341,7 +11412,9 @@
 		},
 		"id": "S19d35e101f53a28561c",
 		"legacySongID": 850,
-		"searchTerms": ["Aozora Contrail -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Aozora Contrail -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "青空コントレール -星咲 あかりソロver.-"
 	},
 	{
@@ -10353,7 +11426,9 @@
 		},
 		"id": "S19d35e101f6599d9b0d",
 		"legacySongID": 851,
-		"searchTerms": ["Aozora Contrail -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Aozora Contrail -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "青空コントレール -日向 千夏ソロver.-"
 	},
 	{
@@ -10365,7 +11440,9 @@
 		},
 		"id": "S19d35e101f78b9346fc",
 		"legacySongID": 852,
-		"searchTerms": ["Goodbye Sengen"],
+		"searchTerms": [
+			"Goodbye Sengen"
+		],
 		"title": "グッバイ宣言"
 	},
 	{
@@ -10377,7 +11454,10 @@
 		},
 		"id": "S19d35e101f8e954917c",
 		"legacySongID": 853,
-		"searchTerms": ["Rainy Color Watercolor", "Rainycolor Watercolor"],
+		"searchTerms": [
+			"Rainy Color Watercolor",
+			"Rainycolor Watercolor"
+		],
 		"title": "レイニーカラー・ウォーターカラー"
 	},
 	{
@@ -10401,7 +11481,9 @@
 		},
 		"id": "S19d35e101fa5af9ed06",
 		"legacySongID": 855,
-		"searchTerms": ["Kirameke Shoot It Now!"],
+		"searchTerms": [
+			"Kirameke Shoot It Now!"
+		],
 		"title": "キラメケ→Shoot it Now!"
 	},
 	{
@@ -10413,7 +11495,9 @@
 		},
 		"id": "S19d35e101fb66069631",
 		"legacySongID": 856,
-		"searchTerms": ["Vampire"],
+		"searchTerms": [
+			"Vampire"
+		],
 		"title": "ヴァンパイア"
 	},
 	{
@@ -10437,7 +11521,11 @@
 		},
 		"id": "S19d35e101fd17c8dced",
 		"legacySongID": 858,
-		"searchTerms": ["Kumo no Ito", "Spider's Thread", "Arira"],
+		"searchTerms": [
+			"Kumo no Ito",
+			"Spider's Thread",
+			"Arira"
+		],
 		"title": "蜘蛛の糸"
 	},
 	{
@@ -10449,7 +11537,9 @@
 		},
 		"id": "S19d35e101fe56176980",
 		"legacySongID": 859,
-		"searchTerms": ["Idenshi Level Spiral"],
+		"searchTerms": [
+			"Idenshi Level Spiral"
+		],
 		"title": "遺伝子レベル∞スパイラル"
 	},
 	{
@@ -10461,7 +11551,9 @@
 		},
 		"id": "S19d35e101ff9d76eb55",
 		"legacySongID": 860,
-		"searchTerms": ["Koi Kou Enshi"],
+		"searchTerms": [
+			"Koi Kou Enshi"
+		],
 		"title": "恋ひ恋ふ縁"
 	},
 	{
@@ -10473,7 +11565,9 @@
 		},
 		"id": "S19d35e10200c6919a33",
 		"legacySongID": 861,
-		"searchTerms": ["S'il Vous President"],
+		"searchTerms": [
+			"S'il Vous President"
+		],
 		"title": "シル・ヴ・プレジデント"
 	},
 	{
@@ -10501,7 +11595,9 @@
 		},
 		"id": "S19d35e10202160faf0f",
 		"legacySongID": 863,
-		"searchTerms": ["YAMINABE PANIC ~Gochisou Tsumekomi Full Course~ -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"YAMINABE PANIC ~Gochisou Tsumekomi Full Course~ -Misumi Aoi Solo ver.-"
+		],
 		"title": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～ -三角 葵ソロver.-"
 	},
 	{
@@ -10541,7 +11637,9 @@
 		},
 		"id": "S19d35e10205ed44ba1f",
 		"legacySongID": 866,
-		"searchTerms": ["Phony"],
+		"searchTerms": [
+			"Phony"
+		],
 		"title": "フォニイ"
 	},
 	{
@@ -10613,7 +11711,9 @@
 		},
 		"id": "S19d35e1020bdf581678",
 		"legacySongID": 872,
-		"searchTerms": ["Kimi to Infinity"],
+		"searchTerms": [
+			"Kimi to Infinity"
+		],
 		"title": "君とインフィニティ -2021-"
 	},
 	{
@@ -10625,7 +11725,9 @@
 		},
 		"id": "S19d35e1020c58c8e8f8",
 		"legacySongID": 873,
-		"searchTerms": ["Sensei Sensation"],
+		"searchTerms": [
+			"Sensei Sensation"
+		],
 		"title": "宣誓センセーション"
 	},
 	{
@@ -10649,7 +11751,9 @@
 		},
 		"id": "S19d35e1020efed1d3f2",
 		"legacySongID": 875,
-		"searchTerms": ["Ichigeki! no Thema"],
+		"searchTerms": [
+			"Ichigeki! no Thema"
+		],
 		"title": "いちげき！のテーマ"
 	},
 	{
@@ -10661,7 +11765,9 @@
 		},
 		"id": "S19d35e1020f7d2bbb12",
 		"legacySongID": 876,
-		"searchTerms": ["Parallel Prism"],
+		"searchTerms": [
+			"Parallel Prism"
+		],
 		"title": "PARALLEL★PRISM"
 	},
 	{
@@ -10697,7 +11803,9 @@
 		},
 		"id": "S19d35e102121f575001",
 		"legacySongID": 879,
-		"searchTerms": ["Butterfly Wave -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Butterfly Wave -Saotome Ayaka Solo ver.-"
+		],
 		"title": "Butterfly Wave -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10709,7 +11817,9 @@
 		},
 		"id": "S19d35e1021377db3605",
 		"legacySongID": 880,
-		"searchTerms": ["Butterfly Wave -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Butterfly Wave -Kujō Kaede Solo ver.-"
+		],
 		"title": "Butterfly Wave -九條 楓ソロver.-"
 	},
 	{
@@ -10721,7 +11831,9 @@
 		},
 		"id": "S19d35e10214fcefc952",
 		"legacySongID": 881,
-		"searchTerms": ["Butterfly Wave -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"Butterfly Wave -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "Butterfly Wave -皇城 セツナソロver.-"
 	},
 	{
@@ -10733,7 +11845,9 @@
 		},
 		"id": "S19d35e1021572946760",
 		"legacySongID": 882,
-		"searchTerms": ["Hoshi Meguri, Hate no Kimi e."],
+		"searchTerms": [
+			"Hoshi Meguri, Hate no Kimi e."
+		],
 		"title": "星めぐり、果ての君へ。"
 	},
 	{
@@ -10746,7 +11860,9 @@
 		},
 		"id": "S19d35e1021633805664",
 		"legacySongID": 883,
-		"searchTerms": ["Starlight Limited"],
+		"searchTerms": [
+			"Starlight Limited"
+		],
 		"title": "Starlight★Limited"
 	},
 	{
@@ -10770,7 +11886,9 @@
 		},
 		"id": "S19d35e102186dd1dd61",
 		"legacySongID": 885,
-		"searchTerms": ["Tsukikage no Traumerei"],
+		"searchTerms": [
+			"Tsukikage no Traumerei"
+		],
 		"title": "月影のトロイメライ"
 	},
 	{
@@ -10794,7 +11912,9 @@
 		},
 		"id": "S19d35e1021a7cecb378",
 		"legacySongID": 887,
-		"searchTerms": ["Antigravity Girl"],
+		"searchTerms": [
+			"Antigravity Girl"
+		],
 		"title": "アンチグラビティ・ガール"
 	},
 	{
@@ -10806,7 +11926,9 @@
 		},
 		"id": "S19d35e1021be0bec1dd",
 		"legacySongID": 888,
-		"searchTerms": ["Mondai Nightripper!"],
+		"searchTerms": [
+			"Mondai Nightripper!"
+		],
 		"title": "モンダイナイトリッパー！"
 	},
 	{
@@ -10818,7 +11940,9 @@
 		},
 		"id": "S19d35e1021cc4b17214",
 		"legacySongID": 889,
-		"searchTerms": ["Villain"],
+		"searchTerms": [
+			"Villain"
+		],
 		"title": "ヴィラン"
 	},
 	{
@@ -10830,7 +11954,9 @@
 		},
 		"id": "S19d35e1021d9994aa5a",
 		"legacySongID": 890,
-		"searchTerms": ["Lag Train"],
+		"searchTerms": [
+			"Lag Train"
+		],
 		"title": "ラグトレイン"
 	},
 	{
@@ -10854,7 +11980,9 @@
 		},
 		"id": "S19d35e1021fd06b1bd3",
 		"legacySongID": 892,
-		"searchTerms": ["Cinderella Disco -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"Cinderella Disco -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "シンデレラディスコ -藍原 椿ソロver.-"
 	},
 	{
@@ -10866,7 +11994,9 @@
 		},
 		"id": "S19d35e1022083b02542",
 		"legacySongID": 893,
-		"searchTerms": ["Cinderella Disco -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Cinderella Disco -Saotome Ayaka Solo ver.-"
+		],
 		"title": "シンデレラディスコ -早乙女 彩華ソロver.-"
 	},
 	{
@@ -10952,7 +12082,9 @@
 		},
 		"id": "S19d35e1022788d40706",
 		"legacySongID": 900,
-		"searchTerms": ["On Stage!"],
+		"searchTerms": [
+			"On Stage!"
+		],
 		"title": "オン×ステージ！"
 	},
 	{
@@ -10964,7 +12096,9 @@
 		},
 		"id": "S19d35e10228e178ba3c",
 		"legacySongID": 901,
-		"searchTerms": ["Natsuyoi Starmine"],
+		"searchTerms": [
+			"Natsuyoi Starmine"
+		],
 		"title": "夏宵スターマイン"
 	},
 	{
@@ -10988,7 +12122,9 @@
 		},
 		"id": "S19d35e1022ae927dce1",
 		"legacySongID": 903,
-		"searchTerms": ["Inarabu Kokumotsu to Tameiki Majiri no Unsouya"],
+		"searchTerms": [
+			"Inarabu Kokumotsu to Tameiki Majiri no Unsouya"
+		],
 		"title": "居並ぶ穀物と溜息まじりの運送屋"
 	},
 	{
@@ -11024,7 +12160,9 @@
 		},
 		"id": "S19d35e1022d75684a94",
 		"legacySongID": 906,
-		"searchTerms": ["Natsuyoi Starmine -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Natsuyoi Starmine -Misumi Aoi Solo ver.-"
+		],
 		"title": "夏宵スターマイン -三角 葵ソロver.-"
 	},
 	{
@@ -11036,7 +12174,9 @@
 		},
 		"id": "S19d35e1022e9d056191",
 		"legacySongID": 907,
-		"searchTerms": ["Natsuyoi Starmine -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"Natsuyoi Starmine -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "夏宵スターマイン -藍原 椿ソロver.-"
 	},
 	{
@@ -11048,7 +12188,9 @@
 		},
 		"id": "S19d35e1022ff8dfa50a",
 		"legacySongID": 908,
-		"searchTerms": ["Natsuyoi Starmine -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Natsuyoi Starmine -Saotome Ayaka Solo ver.-"
+		],
 		"title": "夏宵スターマイン -早乙女 彩華ソロver.-"
 	},
 	{
@@ -11060,7 +12202,9 @@
 		},
 		"id": "S19d35e10230dff0fabf",
 		"legacySongID": 909,
-		"searchTerms": ["Natsuyoi Starmine -Kujō Kaede Solo ver.-"],
+		"searchTerms": [
+			"Natsuyoi Starmine -Kujō Kaede Solo ver.-"
+		],
 		"title": "夏宵スターマイン -九條 楓ソロver.-"
 	},
 	{
@@ -11072,7 +12216,9 @@
 		},
 		"id": "S19d35e10231e1bb5a8e",
 		"legacySongID": 910,
-		"searchTerms": ["Natsuyoi Starmine -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Natsuyoi Starmine -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "夏宵スターマイン -東雲 つむぎソロver.-"
 	},
 	{
@@ -11084,7 +12230,9 @@
 		},
 		"id": "S19d35e1023251c17cbb",
 		"legacySongID": 911,
-		"searchTerms": ["Ichigeki! no Thema -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Ichigeki! no Thema -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "いちげき！のテーマ -藤沢 柚子ソロver.-"
 	},
 	{
@@ -11096,7 +12244,9 @@
 		},
 		"id": "S19d35e102331fd8ff5f",
 		"legacySongID": 912,
-		"searchTerms": ["Ichigeki! no Thema -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"Ichigeki! no Thema -Yūki Riku Solo ver.-"
+		],
 		"title": "いちげき！のテーマ -結城 莉玖ソロver.-"
 	},
 	{
@@ -11108,7 +12258,9 @@
 		},
 		"id": "S19d35e10234558d15c6",
 		"legacySongID": 913,
-		"searchTerms": ["Ichigeki! no Thema -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"Ichigeki! no Thema -Suzushima Arisu Solo ver.-"
+		],
 		"title": "いちげき！のテーマ -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -11120,7 +12272,9 @@
 		},
 		"id": "S19d35e10235c2660066",
 		"legacySongID": 914,
-		"searchTerms": ["Ichigeki! no Thema -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Ichigeki! no Thema -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "いちげき！のテーマ -日向 千夏ソロver.-"
 	},
 	{
@@ -11132,7 +12286,9 @@
 		},
 		"id": "S19d35e1023655ad3c07",
 		"legacySongID": 915,
-		"searchTerms": ["Tsukuyomi ni Naru"],
+		"searchTerms": [
+			"Tsukuyomi ni Naru"
+		],
 		"title": "月詠に鳴る"
 	},
 	{
@@ -11157,7 +12313,9 @@
 		},
 		"id": "S19d35e102388769619d",
 		"legacySongID": 917,
-		"searchTerms": ["Kizuna Hitotsu"],
+		"searchTerms": [
+			"Kizuna Hitotsu"
+		],
 		"title": "キズナヒトツ"
 	},
 	{
@@ -11169,7 +12327,9 @@
 		},
 		"id": "S19d35e10239f7ecfce3",
 		"legacySongID": 918,
-		"searchTerms": ["Reitai Spark Ex"],
+		"searchTerms": [
+			"Reitai Spark Ex"
+		],
 		"title": "レータイスパークEx"
 	},
 	{
@@ -11181,7 +12341,9 @@
 		},
 		"id": "S19d35e1023adc8e1ea9",
 		"legacySongID": 919,
-		"searchTerms": ["8bit Explorer"],
+		"searchTerms": [
+			"8bit Explorer"
+		],
 		"title": "VIIIbit Explorer"
 	},
 	{
@@ -11193,7 +12355,9 @@
 		},
 		"id": "S19d35e1023b22ac441c",
 		"legacySongID": 920,
-		"searchTerms": ["Pokapoka Onsen Ondo -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Pokapoka Onsen Ondo -Misumi Aoi Solo ver.-"
+		],
 		"title": "ぽかぽか温泉音頭 -三角 葵ソロver.-"
 	},
 	{
@@ -11205,7 +12369,9 @@
 		},
 		"id": "S19d35e1023c7dc9edd9",
 		"legacySongID": 921,
-		"searchTerms": ["Pokapoka Onsen Ondo -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Pokapoka Onsen Ondo -Ōsaka Akane Solo ver.-"
+		],
 		"title": "ぽかぽか温泉音頭 -逢坂 茜ソロver.-"
 	},
 	{
@@ -11217,7 +12383,9 @@
 		},
 		"id": "S19d35e1023d83166bbb",
 		"legacySongID": 922,
-		"searchTerms": ["Pokapoka Onsen Ondo -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Pokapoka Onsen Ondo -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "ぽかぽか温泉音頭 -日向 千夏ソロver.-"
 	},
 	{
@@ -11290,7 +12458,10 @@
 		},
 		"id": "S19d35e102431d30f9d1",
 		"legacySongID": 928,
-		"searchTerms": ["Amatsu Kaze feat. Natsukawa Yoko", "Amatsukaze"],
+		"searchTerms": [
+			"Amatsu Kaze feat. Natsukawa Yoko",
+			"Amatsukaze"
+		],
 		"title": "天つ風 feat. 夏川陽子"
 	},
 	{
@@ -11352,7 +12523,9 @@
 		},
 		"id": "S19d35e102484677118f",
 		"legacySongID": 933,
-		"searchTerms": ["Groove Coaster"],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "ouroboros -twin stroke of the end-"
 	},
 	{
@@ -11364,7 +12537,12 @@
 		},
 		"id": "S19d35e10249e90a508f",
 		"legacySongID": 934,
-		"searchTerms": ["Seija no Kodou", "Groove Coaster", "Pigeon", "Dove"],
+		"searchTerms": [
+			"Seija no Kodou",
+			"Groove Coaster",
+			"Pigeon",
+			"Dove"
+		],
 		"title": "聖者の鼓動"
 	},
 	{
@@ -11376,7 +12554,10 @@
 		},
 		"id": "S19d35e1024a8d8f0ff1",
 		"legacySongID": 935,
-		"searchTerms": ["Arc-en-ciel", "Groove Coaster"],
+		"searchTerms": [
+			"Arc-en-ciel",
+			"Groove Coaster"
+		],
 		"title": "アルカンシエル"
 	},
 	{
@@ -11388,7 +12569,9 @@
 		},
 		"id": "S19d35e1024b865e4cd7",
 		"legacySongID": 936,
-		"searchTerms": ["NEVER GET OVER"],
+		"searchTerms": [
+			"NEVER GET OVER"
+		],
 		"title": "N3V3R G3T OV3R"
 	},
 	{
@@ -11400,7 +12583,9 @@
 		},
 		"id": "S19d35e1024ce998e03e",
 		"legacySongID": 937,
-		"searchTerms": ["We Are Back"],
+		"searchTerms": [
+			"We Are Back"
+		],
 		"title": "WE'RE BACK!!"
 	},
 	{
@@ -11412,7 +12597,9 @@
 		},
 		"id": "S19d35e1024dde80413d",
 		"legacySongID": 938,
-		"searchTerms": ["Geki Geki!! Gekitou Break Out!! -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Geki Geki!! Gekitou Break Out!! -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "Geki Geki!! 激闘Break Out!! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -11424,7 +12611,9 @@
 		},
 		"id": "S19d35e1024e1ab41bf5",
 		"legacySongID": 939,
-		"searchTerms": ["Geki Geki!! Gekitou Break Out!! -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Geki Geki!! Gekitou Break Out!! -Inohara Koboshi Solo ver.-"
+		],
 		"title": "Geki Geki!! 激闘Break Out!! -井之原 小星ソロver.-"
 	},
 	{
@@ -11436,7 +12625,9 @@
 		},
 		"id": "S19d35e1024faa8d4199",
 		"legacySongID": 940,
-		"searchTerms": ["Geki Geki!! Gekitou Break Out!! -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Geki Geki!! Gekitou Break Out!! -Ōsaka Akane Solo ver.-"
+		],
 		"title": "Geki Geki!! 激闘Break Out!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -11473,7 +12664,9 @@
 		},
 		"id": "S19d35e10252d4e3d460",
 		"legacySongID": 943,
-		"searchTerms": ["Yokan no Signal"],
+		"searchTerms": [
+			"Yokan no Signal"
+		],
 		"title": "予感のシグナル"
 	},
 	{
@@ -11512,7 +12705,9 @@
 		},
 		"id": "S19d35e102552844f63e",
 		"legacySongID": 946,
-		"searchTerms": ["Parasol Cider"],
+		"searchTerms": [
+			"Parasol Cider"
+		],
 		"title": "パラソルサイダー"
 	},
 	{
@@ -11524,7 +12719,9 @@
 		},
 		"id": "S19d35e102565c9fa428",
 		"legacySongID": 947,
-		"searchTerms": ["Stella"],
+		"searchTerms": [
+			"Stella"
+		],
 		"title": "ステラ"
 	},
 	{
@@ -11548,7 +12745,9 @@
 		},
 		"id": "S19d35e102587897055c",
 		"legacySongID": 949,
-		"searchTerms": ["Tsuppare! Nyankee Tamashii"],
+		"searchTerms": [
+			"Tsuppare! Nyankee Tamashii"
+		],
 		"title": "つっぱれ！にゃんきー魂"
 	},
 	{
@@ -11560,7 +12759,9 @@
 		},
 		"id": "S19d35e1025971f24c76",
 		"legacySongID": 950,
-		"searchTerms": ["GAME:CHANGER"],
+		"searchTerms": [
+			"GAME:CHANGER"
+		],
 		"title": "GAME：CHANGER"
 	},
 	{
@@ -11585,7 +12786,12 @@
 		},
 		"id": "S19d35e1025b94c6215f",
 		"legacySongID": 952,
-		"searchTerms": ["3bun Girl", "Sanbun Girl", "3-minute Girl", "Ultra Girl"],
+		"searchTerms": [
+			"3bun Girl",
+			"Sanbun Girl",
+			"3-minute Girl",
+			"Ultra Girl"
+		],
 		"title": "3分ガール"
 	},
 	{
@@ -11597,7 +12803,9 @@
 		},
 		"id": "S19d35e1025c30516335",
 		"legacySongID": 953,
-		"searchTerms": ["Dokuzu"],
+		"searchTerms": [
+			"Dokuzu"
+		],
 		"title": "ド屑"
 	},
 	{
@@ -11609,7 +12817,9 @@
 		},
 		"id": "S19d35e1025d32fe402a",
 		"legacySongID": 954,
-		"searchTerms": ["Hangeki! Totsugeki! Back To Back! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Hangeki! Totsugeki! Back To Back! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "反撃! 突撃! Back To Back! -星咲 あかりソロver.-"
 	},
 	{
@@ -11621,7 +12831,9 @@
 		},
 		"id": "S19d35e1025e8bf4e7a6",
 		"legacySongID": 955,
-		"searchTerms": ["Hangeki! Totsugeki! Back To Back! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Hangeki! Totsugeki! Back To Back! -Takase Rio Solo ver.-"
+		],
 		"title": "反撃! 突撃! Back To Back! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -11633,7 +12845,9 @@
 		},
 		"id": "S19d35e1025f98635ba8",
 		"legacySongID": 956,
-		"searchTerms": ["Sirius no Kagayaki no You ni"],
+		"searchTerms": [
+			"Sirius no Kagayaki no You ni"
+		],
 		"title": "シリウスの輝きのように"
 	},
 	{
@@ -11657,7 +12871,9 @@
 		},
 		"id": "S19d35e102614fab1280",
 		"legacySongID": 958,
-		"searchTerms": ["Kyuukurarin"],
+		"searchTerms": [
+			"Kyuukurarin"
+		],
 		"title": "きゅうくらりん"
 	},
 	{
@@ -11694,7 +12910,9 @@
 		},
 		"id": "S19d35e10264d8b1720b",
 		"legacySongID": 961,
-		"searchTerms": ["ARTM"],
+		"searchTerms": [
+			"ARTM"
+		],
 		"title": "And Revive The Melody"
 	},
 	{
@@ -11731,7 +12949,9 @@
 		},
 		"id": "S19d35e10267833c3b1b",
 		"legacySongID": 964,
-		"searchTerms": ["Happy Shooting Star"],
+		"searchTerms": [
+			"Happy Shooting Star"
+		],
 		"title": "はっぴ～しゅ～てぃんぐすた～"
 	},
 	{
@@ -11769,7 +12989,9 @@
 		},
 		"id": "S19d35e1026ae7ee4aa7",
 		"legacySongID": 967,
-		"searchTerms": ["On Stage! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"On Stage! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "オン×ステージ！ -星咲 あかりソロver.-"
 	},
 	{
@@ -11782,7 +13004,9 @@
 		},
 		"id": "S19d35e1026b7db63cf8",
 		"legacySongID": 968,
-		"searchTerms": ["On Stage! -Shikimiya Mana Solo ver.-"],
+		"searchTerms": [
+			"On Stage! -Shikimiya Mana Solo ver.-"
+		],
 		"title": "オン×ステージ！ -式宮 舞菜ソロver.-"
 	},
 	{
@@ -11795,7 +13019,9 @@
 		},
 		"id": "S19d35e1026c2ad1963f",
 		"legacySongID": 969,
-		"searchTerms": ["Prominence -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"Prominence -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "Prominence -皇城 セツナソロver.-"
 	},
 	{
@@ -11808,7 +13034,9 @@
 		},
 		"id": "S19d35e1026d883e622e",
 		"legacySongID": 970,
-		"searchTerms": ["Prominence -Shikimiya Aone Solo ver.-"],
+		"searchTerms": [
+			"Prominence -Shikimiya Aone Solo ver.-"
+		],
 		"title": "Prominence -式宮 碧音ソロver.-"
 	},
 	{
@@ -11820,7 +13048,9 @@
 		},
 		"id": "S19d35e1026e968ef8cf",
 		"legacySongID": 971,
-		"searchTerms": ["Planetarium Revue"],
+		"searchTerms": [
+			"Planetarium Revue"
+		],
 		"title": "プラネタリウム・レヴュー"
 	},
 	{
@@ -11849,7 +13079,9 @@
 		},
 		"id": "S19d35e10270cbf97f5d",
 		"legacySongID": 973,
-		"searchTerms": ["Dramatic...? -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"Dramatic...? -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "Dramatic…？ -星咲 あかりソロver.-"
 	},
 	{
@@ -11862,7 +13094,9 @@
 		},
 		"id": "S19d35e10271b6237be5",
 		"legacySongID": 974,
-		"searchTerms": ["Dramatic...? -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"Dramatic...? -Suzushima Arisu Solo ver.-"
+		],
 		"title": "Dramatic…？ -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -11875,7 +13109,9 @@
 		},
 		"id": "S19d35e10272120d5916",
 		"legacySongID": 975,
-		"searchTerms": ["Dramatic...? -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Dramatic...? -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "Dramatic…？ -日向 千夏ソロver.-"
 	},
 	{
@@ -11888,7 +13124,9 @@
 		},
 		"id": "S19d35e102730c88a46c",
 		"legacySongID": 976,
-		"searchTerms": ["Dramatic...? -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"Dramatic...? -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "Dramatic…？ -皇城 セツナソロver.-"
 	},
 	{
@@ -11900,7 +13138,9 @@
 		},
 		"id": "S19d35e10274e22970a6",
 		"legacySongID": 977,
-		"searchTerms": ["Angel Pitagori Houmitai!"],
+		"searchTerms": [
+			"Angel Pitagori Houmitai!"
+		],
 		"title": "えんじぇる♡ピタゴリ☆ほーみたい！"
 	},
 	{
@@ -11912,7 +13152,9 @@
 		},
 		"id": "S19d35e10275241dfabb",
 		"legacySongID": 978,
-		"searchTerms": ["Idainaru Akuma wa Jitsuwa Daitenshi Patra-chan-sama nano da!"],
+		"searchTerms": [
+			"Idainaru Akuma wa Jitsuwa Daitenshi Patra-chan-sama nano da!"
+		],
 		"title": "偉大なる悪魔は実は大天使パトラちゃん様なのだ！"
 	},
 	{
@@ -11924,7 +13166,9 @@
 		},
 		"id": "S19d35e1027659c867af",
 		"legacySongID": 979,
-		"searchTerms": ["Heart Thermography"],
+		"searchTerms": [
+			"Heart Thermography"
+		],
 		"title": "ハートサーモグラフィー"
 	},
 	{
@@ -11936,7 +13180,9 @@
 		},
 		"id": "S19d35e10277d502cf84",
 		"legacySongID": 980,
-		"searchTerms": ["History Breaker -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"History Breaker -Takase Rio Solo ver.-"
+		],
 		"title": "ヒストリー×ブレイカー -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -11948,7 +13194,9 @@
 		},
 		"id": "S19d35e102781027596e",
 		"legacySongID": 981,
-		"searchTerms": ["History Breaker -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"History Breaker -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "ヒストリー×ブレイカー -藍原 椿ソロver.-"
 	},
 	{
@@ -11960,7 +13208,9 @@
 		},
 		"id": "S19d35e102798cc2d400",
 		"legacySongID": 982,
-		"searchTerms": ["History Breaker -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"History Breaker -Yūki Riku Solo ver.-"
+		],
 		"title": "ヒストリー×ブレイカー -結城 莉玖ソロver.-"
 	},
 	{
@@ -11996,7 +13246,10 @@
 		},
 		"id": "S19d35e1027c91ccc358",
 		"legacySongID": 985,
-		"searchTerms": ["Romeo to Cinderella", "Romeo and Cinderella"],
+		"searchTerms": [
+			"Romeo to Cinderella",
+			"Romeo and Cinderella"
+		],
 		"title": "ロミオとシンデレラ"
 	},
 	{
@@ -12008,7 +13261,9 @@
 		},
 		"id": "S19d35e1027d0c066b64",
 		"legacySongID": 986,
-		"searchTerms": ["Ohime-sama ni Naritai No!"],
+		"searchTerms": [
+			"Ohime-sama ni Naritai No!"
+		],
 		"title": "おひめさまになりたいのッ！"
 	},
 	{
@@ -12020,7 +13275,9 @@
 		},
 		"id": "S19d35e1027e4e30dfce",
 		"legacySongID": 987,
-		"searchTerms": ["Zunda Party Night"],
+		"searchTerms": [
+			"Zunda Party Night"
+		],
 		"title": "ずんだパーリナイ"
 	},
 	{
@@ -12032,7 +13289,11 @@
 		},
 		"id": "S19d35e1027f7b3f76a4",
 		"legacySongID": 988,
-		"searchTerms": ["Yukiotoko", "Yuki Otoko", "Snowman"],
+		"searchTerms": [
+			"Yukiotoko",
+			"Yuki Otoko",
+			"Snowman"
+		],
 		"title": "雪男"
 	},
 	{
@@ -12056,7 +13317,10 @@
 		},
 		"id": "S19d35e102818a77ed49",
 		"legacySongID": 990,
-		"searchTerms": ["Temptation", "Groove Coaster"],
+		"searchTerms": [
+			"Temptation",
+			"Groove Coaster"
+		],
 		"title": "10pt8ion"
 	},
 	{
@@ -12068,7 +13332,9 @@
 		},
 		"id": "S19d35e1028208a6a9cd",
 		"legacySongID": 991,
-		"searchTerms": ["Groove Coaster"],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Got more raves? -xiRemix-"
 	},
 	{
@@ -12080,7 +13346,9 @@
 		},
 		"id": "S19d35e1028380b1bb78",
 		"legacySongID": 992,
-		"searchTerms": ["Groove Coaster"],
+		"searchTerms": [
+			"Groove Coaster"
+		],
 		"title": "Lethal Dose"
 	},
 	{
@@ -12093,7 +13361,9 @@
 		},
 		"id": "S19d35e102842b7f99cc",
 		"legacySongID": 993,
-		"searchTerms": ["Fuujin Raijin"],
+		"searchTerms": [
+			"Fuujin Raijin"
+		],
 		"title": "風仁雷仁"
 	},
 	{
@@ -12118,7 +13388,9 @@
 		},
 		"id": "S19d35e10286889b3243",
 		"legacySongID": 995,
-		"searchTerms": ["Entei no Gray Euchronia"],
+		"searchTerms": [
+			"Entei no Gray Euchronia"
+		],
 		"title": "淵底のグレイ・ユークロニア"
 	},
 	{
@@ -12130,7 +13402,9 @@
 		},
 		"id": "S19d35e10287e42dd54a",
 		"legacySongID": 996,
-		"searchTerms": ["Meiran Genbu"],
+		"searchTerms": [
+			"Meiran Genbu"
+		],
 		"title": "冥乱幻舞"
 	},
 	{
@@ -12142,7 +13416,9 @@
 		},
 		"id": "S19d35e10288d61e011c",
 		"legacySongID": 997,
-		"searchTerms": ["Gachikoi Labyrinth"],
+		"searchTerms": [
+			"Gachikoi Labyrinth"
+		],
 		"title": "ガチ恋ラビリンス"
 	},
 	{
@@ -12154,7 +13430,9 @@
 		},
 		"id": "S19d35e1028967c10523",
 		"legacySongID": 998,
-		"searchTerms": ["Melancholic"],
+		"searchTerms": [
+			"Melancholic"
+		],
 		"title": "メランコリック"
 	},
 	{
@@ -12178,7 +13456,9 @@
 		},
 		"id": "S19d35e1028bb84c787c",
 		"legacySongID": 1000,
-		"searchTerms": ["Icing Dream"],
+		"searchTerms": [
+			"Icing Dream"
+		],
 		"title": "アイシング・ドリーム"
 	},
 	{
@@ -12202,7 +13482,9 @@
 		},
 		"id": "S19d35e1028dd773c734",
 		"legacySongID": 1002,
-		"searchTerms": ["Thunder Rescue!"],
+		"searchTerms": [
+			"Thunder Rescue!"
+		],
 		"title": "サンダーレスキュー！"
 	},
 	{
@@ -12214,7 +13496,9 @@
 		},
 		"id": "S19d35e1028e51d27e66",
 		"legacySongID": 1003,
-		"searchTerms": ["Awahakuchuumu"],
+		"searchTerms": [
+			"Awahakuchuumu"
+		],
 		"title": "泡白昼夢"
 	},
 	{
@@ -12227,7 +13511,9 @@
 		},
 		"id": "S19d35e1028f261ace14",
 		"legacySongID": 1004,
-		"searchTerms": ["Tricky Treat!!! -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"Tricky Treat!!! -Ōsaka Akane Solo ver.-"
+		],
 		"title": "Tricky Treat!!! -逢坂 茜ソロver.-"
 	},
 	{
@@ -12240,7 +13526,9 @@
 		},
 		"id": "S19d35e10290a2a7cc8a",
 		"legacySongID": 1005,
-		"searchTerms": ["Tricky Treat!!! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Tricky Treat!!! -Takase Rio Solo ver.-"
+		],
 		"title": "Tricky Treat!!! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -12253,7 +13541,9 @@
 		},
 		"id": "S19d35e1029161361227",
 		"legacySongID": 1006,
-		"searchTerms": ["Tricky Treat!!! -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"Tricky Treat!!! -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "Tricky Treat!!! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -12265,7 +13555,9 @@
 		},
 		"id": "S19d35e102924c8404f5",
 		"legacySongID": 1007,
-		"searchTerms": ["Individual on parade! -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "Individual on parade! -柏木 咲姫ソロver.-"
 	},
 	{
@@ -12277,7 +13569,9 @@
 		},
 		"id": "S19d35e10293ba494b2b",
 		"legacySongID": 1008,
-		"searchTerms": ["Individual on parade! -Inohara Koboshi Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Inohara Koboshi Solo ver.-"
+		],
 		"title": "Individual on parade! -井之原 小星ソロver.-"
 	},
 	{
@@ -12289,7 +13583,9 @@
 		},
 		"id": "S19d35e102941738ddb5",
 		"legacySongID": 1009,
-		"searchTerms": ["Individual on parade! -Suzushima Arisu Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Suzushima Arisu Solo ver.-"
+		],
 		"title": "Individual on parade! -珠洲島 有栖ソロver.-"
 	},
 	{
@@ -12301,7 +13597,9 @@
 		},
 		"id": "S19d35e1029503da7401",
 		"legacySongID": 1010,
-		"searchTerms": ["Individual on parade! -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "Individual on parade! -日向 千夏ソロver.-"
 	},
 	{
@@ -12313,7 +13611,9 @@
 		},
 		"id": "S19d35e10296b0502e29",
 		"legacySongID": 1011,
-		"searchTerms": ["Individual on parade! -Sumeragi Setsuna Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Sumeragi Setsuna Solo ver.-"
+		],
 		"title": "Individual on parade! -皇城 セツナソロver.-"
 	},
 	{
@@ -12337,7 +13637,9 @@
 		},
 		"id": "S19d35e102982af74965",
 		"legacySongID": 1013,
-		"searchTerms": ["Amber Chronicle"],
+		"searchTerms": [
+			"Amber Chronicle"
+		],
 		"title": "アンバークロニクル"
 	},
 	{
@@ -12349,7 +13651,9 @@
 		},
 		"id": "S19d35e10299049c76d2",
 		"legacySongID": 1014,
-		"searchTerms": ["Love Labyrinth"],
+		"searchTerms": [
+			"Love Labyrinth"
+		],
 		"title": "ラブ・ラビリンス"
 	},
 	{
@@ -12361,7 +13665,9 @@
 		},
 		"id": "S19d35e1029ac0d6f0e2",
 		"legacySongID": 1015,
-		"searchTerms": ["Idol Life Flight"],
+		"searchTerms": [
+			"Idol Life Flight"
+		],
 		"title": "アイドライフライト"
 	},
 	{
@@ -12373,7 +13679,9 @@
 		},
 		"id": "S19d35e1029b0b67976d",
 		"legacySongID": 1016,
-		"searchTerms": ["Kiraira"],
+		"searchTerms": [
+			"Kiraira"
+		],
 		"title": "キライラ"
 	},
 	{
@@ -12385,7 +13693,9 @@
 		},
 		"id": "S19d35e1029c386dd8c5",
 		"legacySongID": 1017,
-		"searchTerms": ["Slow Arise"],
+		"searchTerms": [
+			"Slow Arise"
+		],
 		"title": "スローアライズ"
 	},
 	{
@@ -12421,7 +13731,9 @@
 		},
 		"id": "S19d35e1029f4acb59e8",
 		"legacySongID": 1020,
-		"searchTerms": ["Crimson Teiou"],
+		"searchTerms": [
+			"Crimson Teiou"
+		],
 		"title": "クリムゾン帝王"
 	},
 	{
@@ -12446,7 +13758,9 @@
 		},
 		"id": "S19d35e102a14dfff000",
 		"legacySongID": 1022,
-		"searchTerms": ["Hiasobi"],
+		"searchTerms": [
+			"Hiasobi"
+		],
 		"title": "ヒアソビ"
 	},
 	{
@@ -12458,7 +13772,9 @@
 		},
 		"id": "S19d35e102a2c525a7cd",
 		"legacySongID": 1023,
-		"searchTerms": ["Sayonara Princess"],
+		"searchTerms": [
+			"Sayonara Princess"
+		],
 		"title": "さよならプリンセス"
 	},
 	{
@@ -12470,7 +13786,10 @@
 		},
 		"id": "S19d35e102a3ebc1f86d",
 		"legacySongID": 1024,
-		"searchTerms": ["Deae Ex Machina", "Deus Ex Machina"],
+		"searchTerms": [
+			"Deae Ex Machina",
+			"Deus Ex Machina"
+		],
 		"title": "デアエ・エクス・マキナ！"
 	},
 	{
@@ -12556,7 +13875,9 @@
 		},
 		"id": "S19d35e102aa98d8bbd9",
 		"legacySongID": 1031,
-		"searchTerms": ["KYOREN ROMANCE"],
+		"searchTerms": [
+			"KYOREN ROMANCE"
+		],
 		"title": "狂恋ROMANCE"
 	},
 	{
@@ -12592,7 +13913,10 @@
 		},
 		"id": "S19d35e102ad648b3da3",
 		"legacySongID": 1034,
-		"searchTerms": ["SAIKYO STRONGER", "SAIKYO WEAKER"],
+		"searchTerms": [
+			"SAIKYO STRONGER",
+			"SAIKYO WEAKER"
+		],
 		"title": "最強STRONGER"
 	},
 	{
@@ -12604,7 +13928,9 @@
 		},
 		"id": "S19d35e102ae65cbcffb",
 		"legacySongID": 1035,
-		"searchTerms": ["Kimi Yo"],
+		"searchTerms": [
+			"Kimi Yo"
+		],
 		"title": "君よ"
 	},
 	{
@@ -12616,7 +13942,9 @@
 		},
 		"id": "S19d35e102afec4f56f5",
 		"legacySongID": 1036,
-		"searchTerms": ["Koi no Illusionista"],
+		"searchTerms": [
+			"Koi no Illusionista"
+		],
 		"title": "恋のイリュージョニスタ"
 	},
 	{
@@ -12652,7 +13980,11 @@
 		},
 		"id": "S19d35e102b2f15f2c31",
 		"legacySongID": 1039,
-		"searchTerms": ["Kurutta Minzoku 2 PRAVARGYAZOOQA", "Prata Bazooka", "Gyoza"],
+		"searchTerms": [
+			"Kurutta Minzoku 2 PRAVARGYAZOOQA",
+			"Prata Bazooka",
+			"Gyoza"
+		],
 		"title": "#狂った民族2 PRAVARGYAZOOQA"
 	},
 	{
@@ -12664,7 +13996,9 @@
 		},
 		"id": "S19d35e102b33cfbb4ce",
 		"legacySongID": 1040,
-		"searchTerms": ["Kodoku no Hate"],
+		"searchTerms": [
+			"Kodoku no Hate"
+		],
 		"title": "孤独の果て"
 	},
 	{
@@ -12676,7 +14010,9 @@
 		},
 		"id": "S19d35e102b42fd54082",
 		"legacySongID": 1041,
-		"searchTerms": ["Yomosugara Kimi Omofu"],
+		"searchTerms": [
+			"Yomosugara Kimi Omofu"
+		],
 		"title": "夜もすがら君想ふ"
 	},
 	{
@@ -12688,7 +14024,9 @@
 		},
 		"id": "S19d35e102b5026f8b91",
 		"legacySongID": 1042,
-		"searchTerms": ["Aria no Saikyou Shimobe Keikaku"],
+		"searchTerms": [
+			"Aria no Saikyou Shimobe Keikaku"
+		],
 		"title": "アリアの最強しもべ計画♡"
 	},
 	{
@@ -12724,7 +14062,9 @@
 		},
 		"id": "S19d35e102b8b7fcde7c",
 		"legacySongID": 1045,
-		"searchTerms": ["Gunjou Signal"],
+		"searchTerms": [
+			"Gunjou Signal"
+		],
 		"title": "群青シグナル"
 	},
 	{
@@ -12736,7 +14076,9 @@
 		},
 		"id": "S19d35e102b9def09e01",
 		"legacySongID": 1046,
-		"searchTerms": ["Tsumugiboshi"],
+		"searchTerms": [
+			"Tsumugiboshi"
+		],
 		"title": "ツムギボシ（starring オンゲキシューターズ）"
 	},
 	{
@@ -12773,7 +14115,9 @@
 		},
 		"id": "S19d35e102bcab413108",
 		"legacySongID": 1049,
-		"searchTerms": ["Gensou Roukaku"],
+		"searchTerms": [
+			"Gensou Roukaku"
+		],
 		"title": "幻想楼閣"
 	},
 	{
@@ -12786,7 +14130,9 @@
 		},
 		"id": "S19d35e102bd7c51ad73",
 		"legacySongID": 1050,
-		"searchTerms": ["DJMAX"],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "DIE IN"
 	},
 	{
@@ -12799,7 +14145,9 @@
 		},
 		"id": "S19d35e102be29b48900",
 		"legacySongID": 1051,
-		"searchTerms": ["DJMAX"],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "OBLIVION"
 	},
 	{
@@ -12812,7 +14160,10 @@
 		},
 		"id": "S19d35e102bfeaaea07e",
 		"legacySongID": 1052,
-		"searchTerms": ["UAD", "DJMAX"],
+		"searchTerms": [
+			"UAD",
+			"DJMAX"
+		],
 		"title": "U.A.D"
 	},
 	{
@@ -12825,7 +14176,9 @@
 		},
 		"id": "S19d35e102c065411260",
 		"legacySongID": 1053,
-		"searchTerms": ["DJMAX"],
+		"searchTerms": [
+			"DJMAX"
+		],
 		"title": "I want You"
 	},
 	{
@@ -12862,7 +14215,9 @@
 		},
 		"id": "S19d35e102c3efb08c27",
 		"legacySongID": 1056,
-		"searchTerms": ["MAKING! High Touch! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"MAKING! High Touch! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "MAKING！ハイタッチ！ -星咲 あかりソロver.-"
 	},
 	{
@@ -12875,7 +14230,9 @@
 		},
 		"id": "S19d35e102c459855979",
 		"legacySongID": 1057,
-		"searchTerms": ["MAKING! High Touch! -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"MAKING! High Touch! -Sakurai Haruna Solo ver.-"
+		],
 		"title": "MAKING！ハイタッチ！ -桜井 春菜ソロver.-"
 	},
 	{
@@ -12888,7 +14245,9 @@
 		},
 		"id": "S19d35e102c5a536f052",
 		"legacySongID": 1058,
-		"searchTerms": ["MAKING! High Touch! -Ōsaka Akane Solo ver.-"],
+		"searchTerms": [
+			"MAKING! High Touch! -Ōsaka Akane Solo ver.-"
+		],
 		"title": "MAKING！ハイタッチ！ -逢坂 茜ソロver.-"
 	},
 	{
@@ -12900,7 +14259,9 @@
 		},
 		"id": "S19d35e102c63e56b711",
 		"legacySongID": 1059,
-		"searchTerms": ["Susume! My Way! -Hinata Chinatsu Solo ver.-"],
+		"searchTerms": [
+			"Susume! My Way! -Hinata Chinatsu Solo ver.-"
+		],
 		"title": "進め！マイウェイ！ -日向 千夏ソロver.-"
 	},
 	{
@@ -12912,7 +14273,9 @@
 		},
 		"id": "S19d35e102c7d4c59140",
 		"legacySongID": 1060,
-		"searchTerms": ["Susume! My Way! -Kashiwagi Mia Solo ver.-"],
+		"searchTerms": [
+			"Susume! My Way! -Kashiwagi Mia Solo ver.-"
+		],
 		"title": "進め！マイウェイ！ -柏木 美亜ソロver.-"
 	},
 	{
@@ -12924,7 +14287,9 @@
 		},
 		"id": "S19d35e102c8ba60a0a2",
 		"legacySongID": 1061,
-		"searchTerms": ["Susume! My Way! -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"Susume! My Way! -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "進め！マイウェイ！ -東雲 つむぎソロver.-"
 	},
 	{
@@ -12997,7 +14362,9 @@
 		},
 		"id": "S19d35e102cefa88c03a",
 		"legacySongID": 1067,
-		"searchTerms": ["Matsuyoi Nightbug"],
+		"searchTerms": [
+			"Matsuyoi Nightbug"
+		],
 		"title": "マツヨイナイトバグ"
 	},
 	{
@@ -13033,7 +14400,9 @@
 		},
 		"id": "S19d35e102d187069ff0",
 		"legacySongID": 1070,
-		"searchTerms": ["Tondemo Wonders"],
+		"searchTerms": [
+			"Tondemo Wonders"
+		],
 		"title": "トンデモワンダーズ"
 	},
 	{
@@ -13045,7 +14414,10 @@
 		},
 		"id": "S19d35e102d2755adc25",
 		"legacySongID": 1071,
-		"searchTerms": ["Mesmerizer", "Mesmeriser"],
+		"searchTerms": [
+			"Mesmerizer",
+			"Mesmeriser"
+		],
 		"title": "メズマライザー"
 	},
 	{
@@ -13057,7 +14429,9 @@
 		},
 		"id": "S19d35e102d3ed6ebe2d",
 		"legacySongID": 1072,
-		"searchTerms": ["Override"],
+		"searchTerms": [
+			"Override"
+		],
 		"title": "オーバーライド"
 	},
 	{
@@ -13083,7 +14457,9 @@
 		},
 		"id": "S19d35e102d5bd9e2903",
 		"legacySongID": 1074,
-		"searchTerms": ["A"],
+		"searchTerms": [
+			"A"
+		],
 		"title": "∀"
 	},
 	{
@@ -13095,7 +14471,9 @@
 		},
 		"id": "S19d35e102d603a25f2f",
 		"legacySongID": 1075,
-		"searchTerms": ["ATM"],
+		"searchTerms": [
+			"ATM"
+		],
 		"title": "8-EM"
 	},
 	{
@@ -13107,7 +14485,9 @@
 		},
 		"id": "S19d35e102d7e9e98fb7",
 		"legacySongID": 1076,
-		"searchTerms": ["Kyoumei Gattai Otogelion"],
+		"searchTerms": [
+			"Kyoumei Gattai Otogelion"
+		],
 		"title": "共鳴合体 オトゲリヲン"
 	},
 	{
@@ -13119,7 +14499,9 @@
 		},
 		"id": "S19d35e102d823e1370d",
 		"legacySongID": 1077,
-		"searchTerms": ["Ichiban Kagayaku Hoshi"],
+		"searchTerms": [
+			"Ichiban Kagayaku Hoshi"
+		],
 		"title": "1番輝く星"
 	},
 	{
@@ -13131,7 +14513,9 @@
 		},
 		"id": "S19d35e102d9a527f947",
 		"legacySongID": 1078,
-		"searchTerms": ["Bibbidiba"],
+		"searchTerms": [
+			"Bibbidiba"
+		],
 		"title": "ビビデバ"
 	},
 	{
@@ -13155,7 +14539,9 @@
 		},
 		"id": "S19d35e102dbac8f0926",
 		"legacySongID": 1080,
-		"searchTerms": ["Honnouteki Survivor -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"Honnouteki Survivor -Takase Rio Solo ver.-"
+		],
 		"title": "本能的 Survivor -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -13167,7 +14553,9 @@
 		},
 		"id": "S19d35e102dce7f42ab2",
 		"legacySongID": 1081,
-		"searchTerms": ["Honnouteki Survivor -Yūki Riku Solo ver.-"],
+		"searchTerms": [
+			"Honnouteki Survivor -Yūki Riku Solo ver.-"
+		],
 		"title": "本能的 Survivor -結城 莉玖ソロver.-"
 	},
 	{
@@ -13179,7 +14567,9 @@
 		},
 		"id": "S19d35e102dd5569bc3e",
 		"legacySongID": 1082,
-		"searchTerms": ["Honnouteki Survivor -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"Honnouteki Survivor -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "本能的 Survivor -藍原 椿ソロver.-"
 	},
 	{
@@ -13191,7 +14581,9 @@
 		},
 		"id": "S19d35e102de18d519d0",
 		"legacySongID": 1083,
-		"searchTerms": ["Individual on parade! -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Individual on parade! -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "Individual on parade! -藤沢 柚子ソロver.-"
 	},
 	{
@@ -13203,7 +14595,9 @@
 		},
 		"id": "S19d35e102df5d521428",
 		"legacySongID": 1084,
-		"searchTerms": ["Gadget wa Princess"],
+		"searchTerms": [
+			"Gadget wa Princess"
+		],
 		"title": "ガジェットはプリンセス"
 	},
 	{
@@ -13215,7 +14609,9 @@
 		},
 		"id": "S19d35e102e08436a355",
 		"legacySongID": 1085,
-		"searchTerms": ["Unison Monologue"],
+		"searchTerms": [
+			"Unison Monologue"
+		],
 		"title": "ユニゾンモノローグ"
 	},
 	{
@@ -13239,7 +14635,9 @@
 		},
 		"id": "S19d35e102e29076e7b6",
 		"legacySongID": 1087,
-		"searchTerms": ["Gaotto!! Saikyou Party Night"],
+		"searchTerms": [
+			"Gaotto!! Saikyou Party Night"
+		],
 		"title": "がおっと!!最強☆ぱーりーないと"
 	},
 	{
@@ -13251,7 +14649,9 @@
 		},
 		"id": "S19d35e102e39ec183da",
 		"legacySongID": 1088,
-		"searchTerms": ["Tsubaki Uruwashi"],
+		"searchTerms": [
+			"Tsubaki Uruwashi"
+		],
 		"title": "耐冬花麗"
 	},
 	{
@@ -13276,7 +14676,10 @@
 		},
 		"id": "S19d35e102e5f5c52847",
 		"legacySongID": 1090,
-		"searchTerms": ["Allnight Dancer", "All Night Dancer"],
+		"searchTerms": [
+			"Allnight Dancer",
+			"All Night Dancer"
+		],
 		"title": "ALLNIGHT_DANCER"
 	},
 	{
@@ -13288,7 +14691,9 @@
 		},
 		"id": "S19d35e102e65514344d",
 		"legacySongID": 1091,
-		"searchTerms": ["Nyx"],
+		"searchTerms": [
+			"Nyx"
+		],
 		"title": "Nýx"
 	},
 	{
@@ -13337,7 +14742,9 @@
 		},
 		"id": "S19d35e102ea30c0c83a",
 		"legacySongID": 1095,
-		"searchTerms": ["Orange Scale"],
+		"searchTerms": [
+			"Orange Scale"
+		],
 		"title": "オレンジスケール"
 	},
 	{
@@ -13349,7 +14756,9 @@
 		},
 		"id": "S19d35e102eb05d4d146",
 		"legacySongID": 1096,
-		"searchTerms": ["Hon no Kansou"],
+		"searchTerms": [
+			"Hon no Kansou"
+		],
 		"title": "ほんの感想"
 	},
 	{
@@ -13361,7 +14770,9 @@
 		},
 		"id": "S19d35e102ecafd3da75",
 		"legacySongID": 1097,
-		"searchTerms": ["Latest Showman"],
+		"searchTerms": [
+			"Latest Showman"
+		],
 		"title": "レイテストショーマン"
 	},
 	{
@@ -13373,7 +14784,9 @@
 		},
 		"id": "S19d35e102ede618c9b9",
 		"legacySongID": 1098,
-		"searchTerms": ["Ikkai Kaite Sayounara"],
+		"searchTerms": [
+			"Ikkai Kaite Sayounara"
+		],
 		"title": "いっかい書いてさようなら"
 	},
 	{
@@ -13397,7 +14810,9 @@
 		},
 		"id": "S19d35e102ef3793fdb7",
 		"legacySongID": 1100,
-		"searchTerms": ["Concussion"],
+		"searchTerms": [
+			"Concussion"
+		],
 		"title": "Concvssion"
 	},
 	{
@@ -13422,7 +14837,9 @@
 		},
 		"id": "S19d35e102f10afedb3e",
 		"legacySongID": 1102,
-		"searchTerms": ["Halo"],
+		"searchTerms": [
+			"Halo"
+		],
 		"title": "[HALO]"
 	},
 	{
@@ -13446,7 +14863,10 @@
 		},
 		"id": "S19d35e102f32f97a293",
 		"legacySongID": 1104,
-		"searchTerms": ["Hitomania", "Hito Mania"],
+		"searchTerms": [
+			"Hitomania",
+			"Hito Mania"
+		],
 		"title": "人マニア"
 	},
 	{
@@ -13458,7 +14878,9 @@
 		},
 		"id": "S19d35e102f4201193e5",
 		"legacySongID": 1105,
-		"searchTerms": ["Liar Dancer"],
+		"searchTerms": [
+			"Liar Dancer"
+		],
 		"title": "ライアーダンサー"
 	},
 	{
@@ -13470,7 +14892,9 @@
 		},
 		"id": "S19d35e102f5899c0300",
 		"legacySongID": 1106,
-		"searchTerms": ["Realize"],
+		"searchTerms": [
+			"Realize"
+		],
 		"title": "リアライズ"
 	},
 	{
@@ -13482,7 +14906,9 @@
 		},
 		"id": "S19d35e102f65449bdb1",
 		"legacySongID": 1107,
-		"searchTerms": ["Azure Vixen"],
+		"searchTerms": [
+			"Azure Vixen"
+		],
 		"title": "Λzure Vixen"
 	},
 	{
@@ -13494,7 +14920,9 @@
 		},
 		"id": "S19d35e102f74e09b1db",
 		"legacySongID": 1108,
-		"searchTerms": ["Papipupe Popping! Talk!"],
+		"searchTerms": [
+			"Papipupe Popping! Talk!"
+		],
 		"title": "パピプペ Popping！ Talk！"
 	},
 	{
@@ -13554,7 +14982,9 @@
 		},
 		"id": "S19d35e102fcfe0a2bf9",
 		"legacySongID": 1113,
-		"searchTerms": ["Issatsu no Arrow"],
+		"searchTerms": [
+			"Issatsu no Arrow"
+		],
 		"title": "一冊のアロー"
 	},
 	{
@@ -13590,7 +15020,9 @@
 		},
 		"id": "S19d35e102fff744fd68",
 		"legacySongID": 1116,
-		"searchTerms": ["Irodori Canvas"],
+		"searchTerms": [
+			"Irodori Canvas"
+		],
 		"title": "彩りキャンバス"
 	},
 	{
@@ -13638,7 +15070,9 @@
 		},
 		"id": "S19d35e1030325ec42a4",
 		"legacySongID": 1120,
-		"searchTerms": ["Natsuiro Hanabi -Fujisawa Yuzu Solo ver.-"],
+		"searchTerms": [
+			"Natsuiro Hanabi -Fujisawa Yuzu Solo ver.-"
+		],
 		"title": "夏色花火 -藤沢 柚子ソロver.-"
 	},
 	{
@@ -13650,7 +15084,9 @@
 		},
 		"id": "S19d35e10304fe926129",
 		"legacySongID": 1121,
-		"searchTerms": ["Natsuiro Hanabi -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Natsuiro Hanabi -Saotome Ayaka Solo ver.-"
+		],
 		"title": "夏色花火 -早乙女 彩華ソロver.-"
 	},
 	{
@@ -13662,7 +15098,10 @@
 		},
 		"id": "S19d35e1030554c53998",
 		"legacySongID": 1122,
-		"searchTerms": ["Iudicium “Apocalypsis Mix” -Kashiwagi Saki Solo ver.-", "Ludicium"],
+		"searchTerms": [
+			"Iudicium “Apocalypsis Mix” -Kashiwagi Saki Solo ver.-",
+			"Ludicium"
+		],
 		"title": "Iudicium “Apocalypsis Mix” -柏木 咲姫ソロver.-"
 	},
 	{
@@ -13674,7 +15113,10 @@
 		},
 		"id": "S19d35e103066d165054",
 		"legacySongID": 1123,
-		"searchTerms": ["Iudicium “Apocalypsis Mix” -Kashiwagi Mia Solo ver.-", "Ludicium"],
+		"searchTerms": [
+			"Iudicium “Apocalypsis Mix” -Kashiwagi Mia Solo ver.-",
+			"Ludicium"
+		],
 		"title": "Iudicium “Apocalypsis Mix” -柏木 美亜ソロver.-"
 	},
 	{
@@ -13686,7 +15128,9 @@
 		},
 		"id": "S19d35e10307073bbed4",
 		"legacySongID": 1124,
-		"searchTerms": ["WakeUP MakeUP FEVER! -Hoshizaki Akari Solo ver.-"],
+		"searchTerms": [
+			"WakeUP MakeUP FEVER! -Hoshizaki Akari Solo ver.-"
+		],
 		"title": "WakeUP MakeUP FEVER! -星咲 あかりソロver.-"
 	},
 	{
@@ -13698,7 +15142,9 @@
 		},
 		"id": "S19d35e10308e2635956",
 		"legacySongID": 1125,
-		"searchTerms": ["WakeUP MakeUP FEVER! -Takase Rio Solo ver.-"],
+		"searchTerms": [
+			"WakeUP MakeUP FEVER! -Takase Rio Solo ver.-"
+		],
 		"title": "WakeUP MakeUP FEVER! -高瀬 梨緒ソロver.-"
 	},
 	{
@@ -13710,7 +15156,9 @@
 		},
 		"id": "S19d35e1030944fa1b22",
 		"legacySongID": 1126,
-		"searchTerms": ["WakeUP MakeUP FEVER! -Aihara Tsubaki Solo ver.-"],
+		"searchTerms": [
+			"WakeUP MakeUP FEVER! -Aihara Tsubaki Solo ver.-"
+		],
 		"title": "WakeUP MakeUP FEVER! -藍原 椿ソロver.-"
 	},
 	{
@@ -13722,7 +15170,9 @@
 		},
 		"id": "S19d35e1030a7c301d24",
 		"legacySongID": 1127,
-		"searchTerms": ["WakeUP MakeUP FEVER! -Sakurai Haruna Solo ver.-"],
+		"searchTerms": [
+			"WakeUP MakeUP FEVER! -Sakurai Haruna Solo ver.-"
+		],
 		"title": "WakeUP MakeUP FEVER! -桜井 春菜ソロver.-"
 	},
 	{
@@ -13734,7 +15184,9 @@
 		},
 		"id": "S19d35e1030b7f1e3f8f",
 		"legacySongID": 1128,
-		"searchTerms": ["WakeUP MakeUP FEVER! -Shinonome Tsumugi Solo ver.-"],
+		"searchTerms": [
+			"WakeUP MakeUP FEVER! -Shinonome Tsumugi Solo ver.-"
+		],
 		"title": "WakeUP MakeUP FEVER! -東雲 つむぎソロver.-"
 	},
 	{
@@ -13746,7 +15198,9 @@
 		},
 		"id": "S19e3332aef6eb1234e7",
 		"legacySongID": 1129,
-		"searchTerms": ["Suki ga Tomaranai"],
+		"searchTerms": [
+			"Suki ga Tomaranai"
+		],
 		"title": "スキが止まらない！"
 	},
 	{
@@ -13758,7 +15212,9 @@
 		},
 		"id": "S19e3332aef718e843de",
 		"legacySongID": 1130,
-		"searchTerms": ["Saki singing in German"],
+		"searchTerms": [
+			"Saki singing in German"
+		],
 		"title": "in den Himmel steigen"
 	},
 	{
@@ -13770,7 +15226,9 @@
 		},
 		"id": "S19e3332aef86260e3b7",
 		"legacySongID": 1131,
-		"searchTerms": ["Tenga Yuuei"],
+		"searchTerms": [
+			"Tenga Yuuei"
+		],
 		"title": "天河游泳"
 	},
 	{
@@ -13795,7 +15253,9 @@
 		},
 		"id": "S19e3332aefa7ff555d6",
 		"legacySongID": 1133,
-		"searchTerms": ["GBMGR"],
+		"searchTerms": [
+			"GBMGR"
+		],
 		"title": "Good bye, Merry-Go-Round. (Kobaryo's FTN-Remix)"
 	},
 	{
@@ -13843,7 +15303,9 @@
 		},
 		"id": "S19e3332aefe04a2b076",
 		"legacySongID": 1137,
-		"searchTerms": ["I Do Me"],
+		"searchTerms": [
+			"I Do Me"
+		],
 		"title": "アイドゥーミー！"
 	},
 	{
@@ -13855,7 +15317,9 @@
 		},
 		"id": "S19e3332aeff135ad48a",
 		"legacySongID": 1138,
-		"searchTerms": ["Ambivalence"],
+		"searchTerms": [
+			"Ambivalence"
+		],
 		"title": "アンビバレンス"
 	},
 	{
@@ -13867,7 +15331,9 @@
 		},
 		"id": "S19e3332af00113c17e7",
 		"legacySongID": 1139,
-		"searchTerms": ["Oshama Na Princess"],
+		"searchTerms": [
+			"Oshama Na Princess"
+		],
 		"title": "おしゃまなプリンセス"
 	},
 	{
@@ -13879,7 +15345,9 @@
 		},
 		"id": "S19e3332af01e0b4cdc4",
 		"legacySongID": 1140,
-		"searchTerms": ["Blood Hunter"],
+		"searchTerms": [
+			"Blood Hunter"
+		],
 		"title": "B100d Hunter"
 	},
 	{
@@ -13891,7 +15359,9 @@
 		},
 		"id": "S19e3332af02e8bdb1e6",
 		"legacySongID": 1141,
-		"searchTerms": ["Hajimari no Mirai"],
+		"searchTerms": [
+			"Hajimari no Mirai"
+		],
 		"title": "はじまりの未来"
 	},
 	{
@@ -13915,7 +15385,10 @@
 		},
 		"id": "S19e3332af04352504ca",
 		"legacySongID": 1143,
-		"searchTerms": ["Dai Dai Dai Dai Dai Kirai", "Daidaidaidaidaikirai"],
+		"searchTerms": [
+			"Dai Dai Dai Dai Dai Kirai",
+			"Daidaidaidaidaikirai"
+		],
 		"title": "ダイダイダイダイダイキライ"
 	},
 	{
@@ -13952,7 +15425,9 @@
 		},
 		"id": "S19e3332af0709877b8d",
 		"legacySongID": 1146,
-		"searchTerms": ["Rokurensei"],
+		"searchTerms": [
+			"Rokurensei"
+		],
 		"title": "六連星"
 	},
 	{
@@ -13964,7 +15439,9 @@
 		},
 		"id": "S19e3332af089900ec7f",
 		"legacySongID": 1147,
-		"searchTerms": ["Tonosama Beam"],
+		"searchTerms": [
+			"Tonosama Beam"
+		],
 		"title": "トノサマビーム"
 	},
 	{
@@ -13976,7 +15453,9 @@
 		},
 		"id": "S19e3332af093304fbbe",
 		"legacySongID": 1148,
-		"searchTerms": ["Kimiiro Chronicle"],
+		"searchTerms": [
+			"Kimiiro Chronicle"
+		],
 		"title": "キミイロクロニクル"
 	},
 	{
@@ -13988,7 +15467,9 @@
 		},
 		"id": "S19e3332af0a32c35d59",
 		"legacySongID": 1149,
-		"searchTerms": ["Tokimeki Kindan Shoujou"],
+		"searchTerms": [
+			"Tokimeki Kindan Shoujou"
+		],
 		"title": "トキメキ禁断症状"
 	},
 	{
@@ -14000,7 +15481,9 @@
 		},
 		"id": "S19e3332af0ba9cbcb25",
 		"legacySongID": 1150,
-		"searchTerms": ["Hikari no Wakusei"],
+		"searchTerms": [
+			"Hikari no Wakusei"
+		],
 		"title": "光の惑星"
 	},
 	{
@@ -14025,7 +15508,9 @@
 		},
 		"id": "S19e3332af0d47514528",
 		"legacySongID": 1152,
-		"searchTerms": ["Ukiyoe Yokochou"],
+		"searchTerms": [
+			"Ukiyoe Yokochou"
+		],
 		"title": "浮世絵横丁"
 	},
 	{
@@ -14049,7 +15534,9 @@
 		},
 		"id": "S19e3332af0f1377c1be",
 		"legacySongID": 1154,
-		"searchTerms": ["Yumetsumugi no Wanderer"],
+		"searchTerms": [
+			"Yumetsumugi no Wanderer"
+		],
 		"title": "夢紡ぎのワンダラー"
 	},
 	{
@@ -14061,7 +15548,9 @@
 		},
 		"id": "S19e3332af10fb0a20a0",
 		"legacySongID": 1155,
-		"searchTerms": ["Saiai Jinsei Runner"],
+		"searchTerms": [
+			"Saiai Jinsei Runner"
+		],
 		"title": "最愛人生ランナー"
 	},
 	{
@@ -14073,7 +15562,9 @@
 		},
 		"id": "S19e3332af119595518a",
 		"legacySongID": 1156,
-		"searchTerms": ["We Are Pico Pico Hammers!!!!"],
+		"searchTerms": [
+			"We Are Pico Pico Hammers!!!!"
+		],
 		"title": "ウィーアーピコピコハンマーズ!!!!"
 	},
 	{
@@ -14085,7 +15576,9 @@
 		},
 		"id": "S19e3332af12f2988b8a",
 		"legacySongID": 1157,
-		"searchTerms": ["Jet Black"],
+		"searchTerms": [
+			"Jet Black"
+		],
 		"title": "ジェットブラック"
 	},
 	{
@@ -14097,7 +15590,9 @@
 		},
 		"id": "S19e3332af13713a2c75",
 		"legacySongID": 1158,
-		"searchTerms": ["Treasure Garden"],
+		"searchTerms": [
+			"Treasure Garden"
+		],
 		"title": "トレジャーガーデン"
 	},
 	{
@@ -14109,7 +15604,9 @@
 		},
 		"id": "S19e3332af14ab165ddb",
 		"legacySongID": 1159,
-		"searchTerms": ["Denkousekka"],
+		"searchTerms": [
+			"Denkousekka"
+		],
 		"title": "電光刹歌"
 	},
 	{
@@ -14136,7 +15633,9 @@
 		},
 		"id": "S19e3332af16ab6463ff",
 		"legacySongID": 1161,
-		"searchTerms": ["Samayoi no Mei ~Amatsu~"],
+		"searchTerms": [
+			"Samayoi no Mei ~Amatsu~"
+		],
 		"title": "彷徨いの冥～天～"
 	},
 	{
@@ -14148,7 +15647,9 @@
 		},
 		"id": "S19e3332af172bd26e95",
 		"legacySongID": 1162,
-		"searchTerms": ["Aishite Aishite Aishite"],
+		"searchTerms": [
+			"Aishite Aishite Aishite"
+		],
 		"title": "愛して愛して愛して"
 	},
 	{
@@ -14160,7 +15661,9 @@
 		},
 		"id": "S19e3332af18aaad19ad",
 		"legacySongID": 1163,
-		"searchTerms": ["Omajinai"],
+		"searchTerms": [
+			"Omajinai"
+		],
 		"title": "お呪い"
 	},
 	{
@@ -14172,7 +15675,9 @@
 		},
 		"id": "S19e3332af198ac2bf59",
 		"legacySongID": 1164,
-		"searchTerms": ["Furafurafura,"],
+		"searchTerms": [
+			"Furafurafura,"
+		],
 		"title": "ふらふらふら、"
 	},
 	{
@@ -14244,7 +15749,9 @@
 		},
 		"id": "S19e3332af1fd9db4e1f",
 		"legacySongID": 1170,
-		"searchTerms": ["Kanjou Acceleration -Misumi Aoi Solo ver.-"],
+		"searchTerms": [
+			"Kanjou Acceleration -Misumi Aoi Solo ver.-"
+		],
 		"title": "感情アクセラレイション -三角 葵ソロver.-"
 	},
 	{
@@ -14256,7 +15763,9 @@
 		},
 		"id": "S19e3332af20cf956ec6",
 		"legacySongID": 1171,
-		"searchTerms": ["Kanjou Acceleration -Saotome Ayaka Solo ver.-"],
+		"searchTerms": [
+			"Kanjou Acceleration -Saotome Ayaka Solo ver.-"
+		],
 		"title": "感情アクセラレイション -早乙女 彩華ソロver.-"
 	},
 	{
@@ -14268,7 +15777,9 @@
 		},
 		"id": "S19e3332af217e0e317c",
 		"legacySongID": 1172,
-		"searchTerms": ["Kanjou Acceleration -Kashiwagi Saki Solo ver.-"],
+		"searchTerms": [
+			"Kanjou Acceleration -Kashiwagi Saki Solo ver.-"
+		],
 		"title": "感情アクセラレイション -柏木 咲姫ソロver.-"
 	}
 ]
