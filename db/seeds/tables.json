@@ -5789,7 +5789,7 @@
 		"id": "T19d35f0d59478c1a928",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-brightMemory3Omni-levels",
-		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix)"
+		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Levels)"
 	},
 	{
 		"default": false,
@@ -5912,7 +5912,7 @@
 		"id": "T19d35f0d594a374ff23",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refreshOmni-levels",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Levels)"
 	},
 	{
 		"default": false,
@@ -5982,7 +5982,7 @@
 		"id": "T19d35f0d5942edb68de",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refresh-levels",
-		"title": "O.N.G.E.K.I. (Re:Fresh)"
+		"title": "O.N.G.E.K.I. (Re:Fresh) (Levels)"
 	},
 	{
 		"default": false,
