@@ -1508,12 +1508,6 @@ export const API_V1_SPEC = {
 		output: docArray<FolderDocument>(),
 	},
 
-	"GET /games/:game/charts/:chartID/playcount": {
-		description: "Number of unique players on a chart.",
-		input: z.object({}),
-		output: z.strictObject({ count: z.number() }),
-	},
-
 	"GET /games/:game/charts/:chartID/pbs": {
 		description: "Top PBs on a chart by ranking page.",
 		input: z.object({ startRanking: z.coerce.number().optional() }),

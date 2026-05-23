@@ -10,6 +10,7 @@ import type { default as SvcFerSettingsTable } from './SvcFerSettings';
 import type { default as InviteLockTable } from './InviteLock';
 import type { default as OrphanChartTable } from './OrphanChart';
 import type { default as GameRivalTable } from './GameRival';
+import type { default as ChartPlaycountTable } from './ChartPlaycount';
 import type { default as GoalTable } from './Goal';
 import type { default as QuestProposalTable } from './QuestProposal';
 import type { default as ImportQuestTable } from './ImportQuest';
@@ -87,6 +88,8 @@ export default interface PublicSchema {
   orphan_chart: OrphanChartTable;
 
   game_rival: GameRivalTable;
+
+  chart_playcount: ChartPlaycountTable;
 
   goal: GoalTable;
 

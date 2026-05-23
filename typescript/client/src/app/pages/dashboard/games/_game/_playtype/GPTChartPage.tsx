@@ -79,7 +79,6 @@ interface ChartPBData {
 	leaderboard: ChartPBLeaderboardReturn;
 	adjacent?: UGPTChartLeaderboardAdjacent;
 	rivals?: ChartRivalsReturn;
-	playcount: integer;
 }
 
 function InternalGPTChartPage({
@@ -103,14 +102,6 @@ function InternalGPTChartPage({
 				throw lRes;
 			}
 
-			const pRes = await APIFetchV1<{ count: integer }>(
-				`/games/${game}/charts/${chart.chartID}/playcount`,
-			);
-
-			if (!pRes.success) {
-				throw pRes;
-			}
-
 			if (user) {
 				const nRes = await APIFetchV1<UGPTChartLeaderboardAdjacent>(
 					`/users/${user.id}/games/${game}/pbs/${chart.chartID}/leaderboard-adjacent`,
@@ -122,7 +113,6 @@ function InternalGPTChartPage({
 
 				const returnValue: ChartPBData = {
 					leaderboard: lRes.body,
-					playcount: pRes.body.count,
 				};
 
 				if (nRes.success) {
@@ -136,7 +126,7 @@ function InternalGPTChartPage({
 				return returnValue;
 			}
 
-			return { leaderboard: lRes.body, playcount: pRes.body.count };
+			return { leaderboard: lRes.body };
 		},
 	);
 

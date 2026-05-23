@@ -424,18 +424,6 @@ export async function LoadPbsOnChartByRankingValueDesc(
 
 	return Promise.all(rows.map((r) => ToPbScoreDocument(r as PbDocumentJoinRow)));
 }
-
-/** Number of PB rows on a chart (legacy Mongo `personal-bests` count by `chartID`). */
-export async function CountPbsOnChart(chartLegacyId: string): Promise<number> {
-	const row = await DB.selectFrom("pb")
-		.innerJoin("chart", "chart.id", "pb.chart_id")
-		.where("chart.id", "=", chartLegacyId)
-		.select((eb) => eb.fn.countAll<number>().as("count"))
-		.executeTakeFirst();
-
-	return Number(row?.count ?? 0);
-}
-
 /**
  * PBs on a chart with leaderboard rank &gt;= `startRanking`, sorted by rank ascending
  * (legacy GET …/charts/:chartID/pbs).
