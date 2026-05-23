@@ -5757,6 +5757,40 @@
 	},
 	{
 		"default": false,
+		"description": "Difficulties for O.N.G.E.K.I. in bright MEMORY Act.3 Omnimix.",
+		"folders": [
+			"brightmemory3omni-basic",
+			"brightmemory3omni-advanced",
+			"brightmemory3omni-expert",
+			"brightmemory3omni-master",
+			"brightmemory3omni-lunatic",
+			"brightmemory3omni-lunatic-remaster"
+		],
+		"game": "ongeki",
+		"id": "T19d35f0d594844feb44",
+		"inactive": false,
+		"legacyTableID": "ongeki-Single-brightMemory3Omni-difficulties",
+		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Difficulties)"
+	},
+	{
+		"default": false,
+		"description": "Genres for O.N.G.E.K.I. in bright MEMORY Act.3 Omnimix.",
+		"folders": [
+			"g-pna-brightmemory3omni",
+			"g-niconico-brightmemory3omni",
+			"g-toho-brightmemory3omni",
+			"g-variety-brightmemory3omni",
+			"g-chumai-brightmemory3omni",
+			"g-ongeki-brightmemory3omni"
+		],
+		"game": "ongeki",
+		"id": "T19e5705123b3a2bcb1f",
+		"inactive": false,
+		"legacyTableID": "ongeki-Single-brightMemory3Omni-genres",
+		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Genres)"
+	},
+	{
+		"default": false,
 		"description": "Levels for O.N.G.E.K.I. in bright MEMORY Act.3 Omnimix.",
 		"folders": [
 			"0-brightmemory3omni",
@@ -5790,23 +5824,6 @@
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-brightMemory3Omni-levels",
 		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Levels)"
-	},
-	{
-		"default": false,
-		"description": "Difficulties for O.N.G.E.K.I. in bright MEMORY Act.3 Omnimix.",
-		"folders": [
-			"brightmemory3omni-basic",
-			"brightmemory3omni-advanced",
-			"brightmemory3omni-expert",
-			"brightmemory3omni-master",
-			"brightmemory3omni-lunatic",
-			"brightmemory3omni-lunatic-remaster"
-		],
-		"game": "ongeki",
-		"id": "T19d35f0d594844feb44",
-		"inactive": false,
-		"legacyTableID": "ongeki-Single-brightMemory3Omni-difficulties",
-		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Difficulties)"
 	},
 	{
 		"default": false,
@@ -5863,20 +5880,37 @@
 	},
 	{
 		"default": false,
-		"description": "Genres for O.N.G.E.K.I. in bright MEMORY Act.3 Omnimix.",
+		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh Omnimix.",
 		"folders": [
-			"g-pna-brightmemory3omni",
-			"g-niconico-brightmemory3omni",
-			"g-toho-brightmemory3omni",
-			"g-variety-brightmemory3omni",
-			"g-chumai-brightmemory3omni",
-			"g-ongeki-brightmemory3omni"
+			"refreshomni-basic",
+			"refreshomni-advanced",
+			"refreshomni-expert",
+			"refreshomni-master",
+			"refreshomni-lunatic",
+			"refreshomni-lunatic-remaster"
 		],
 		"game": "ongeki",
-		"id": "T19e5705123b3a2bcb1f",
+		"id": "T19d35f0d594996cd082",
 		"inactive": false,
-		"legacyTableID": "ongeki-Single-brightMemory3Omni-genres",
-		"title": "O.N.G.E.K.I. (bright MEMORY Act.3 Omnimix) (Genres)"
+		"legacyTableID": "ongeki-Single-refreshOmni-difficulties",
+		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Difficulties)"
+	},
+	{
+		"default": false,
+		"description": "Genres for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"folders": [
+			"g-pna-refreshomni",
+			"g-niconico-refreshomni",
+			"g-toho-refreshomni",
+			"g-variety-refreshomni",
+			"g-chumai-refreshomni",
+			"g-ongeki-refreshomni"
+		],
+		"game": "ongeki",
+		"id": "T19e57042e689f235d24",
+		"inactive": false,
+		"legacyTableID": "ongeki-Single-refreshOmni-genres",
+		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Genres)"
 	},
 	{
 		"default": false,
@@ -5916,37 +5950,37 @@
 	},
 	{
 		"default": false,
-		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh.",
 		"folders": [
-			"refreshomni-basic",
-			"refreshomni-advanced",
-			"refreshomni-expert",
-			"refreshomni-master",
-			"refreshomni-lunatic",
-			"refreshomni-lunatic-remaster"
+			"refresh-basic",
+			"refresh-advanced",
+			"refresh-expert",
+			"refresh-master",
+			"refresh-lunatic",
+			"refresh-lunatic-remaster"
 		],
 		"game": "ongeki",
-		"id": "T19d35f0d594996cd082",
+		"id": "T19d35f0d5941ed3780c",
 		"inactive": false,
-		"legacyTableID": "ongeki-Single-refreshOmni-difficulties",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Difficulties)"
+		"legacyTableID": "ongeki-Single-refresh-difficulties",
+		"title": "O.N.G.E.K.I. (Re:Fresh) (Difficulties)"
 	},
 	{
 		"default": false,
-		"description": "Genres for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"description": "Genres for O.N.G.E.K.I. in Re:Fresh.",
 		"folders": [
-			"g-pna-refreshomni",
-			"g-niconico-refreshomni",
-			"g-toho-refreshomni",
-			"g-variety-refreshomni",
-			"g-chumai-refreshomni",
-			"g-ongeki-refreshomni"
+			"g-pna-refresh",
+			"g-niconico-refresh",
+			"g-toho-refresh",
+			"g-variety-refresh",
+			"g-chumai-refresh",
+			"g-ongeki-refresh"
 		],
 		"game": "ongeki",
-		"id": "T19e57042e689f235d24",
+		"id": "T19e57049a69fe62dd5f",
 		"inactive": false,
-		"legacyTableID": "ongeki-Single-refreshOmni-genres",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Genres)"
+		"legacyTableID": "ongeki-Single-refresh-genres",
+		"title": "O.N.G.E.K.I. (Re:Fresh) (Genres)"
 	},
 	{
 		"default": true,
@@ -5983,40 +6017,6 @@
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refresh-levels",
 		"title": "O.N.G.E.K.I. (Re:Fresh) (Levels)"
-	},
-	{
-		"default": false,
-		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh.",
-		"folders": [
-			"refresh-basic",
-			"refresh-advanced",
-			"refresh-expert",
-			"refresh-master",
-			"refresh-lunatic",
-			"refresh-lunatic-remaster"
-		],
-		"game": "ongeki",
-		"id": "T19d35f0d5941ed3780c",
-		"inactive": false,
-		"legacyTableID": "ongeki-Single-refresh-difficulties",
-		"title": "O.N.G.E.K.I. (Re:Fresh) (Difficulties)"
-	},
-	{
-		"default": false,
-		"description": "Genres for O.N.G.E.K.I. in Re:Fresh.",
-		"folders": [
-			"g-pna-refresh",
-			"g-niconico-refresh",
-			"g-toho-refresh",
-			"g-variety-refresh",
-			"g-chumai-refresh",
-			"g-ongeki-refresh"
-		],
-		"game": "ongeki",
-		"id": "T19e57049a69fe62dd5f",
-		"inactive": false,
-		"legacyTableID": "ongeki-Single-refresh-genres",
-		"title": "O.N.G.E.K.I. (Re:Fresh) (Genres)"
 	},
 	{
 		"default": true,

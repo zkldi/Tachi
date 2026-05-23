@@ -44868,7 +44868,7 @@
 		"versionFilter": [
 			"brightMemory2Omni"
 		],
-		"where": "chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty IN ('LUNATIC', 'Re:MASTER')"
 	},
 	{
 		"game": "ongeki",
@@ -44881,7 +44881,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -44894,7 +44894,7 @@
 		"versionFilter": [
 			"brightMemory3"
 		],
-		"where": "chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -44907,7 +44907,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -44920,7 +44920,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -44933,7 +44933,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -44946,7 +44946,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isReMaster' = 'false' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'LUNATIC'"
 	},
 	{
 		"game": "ongeki",
@@ -45138,7 +45138,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
@@ -45151,7 +45151,7 @@
 		"versionFilter": [
 			"brightMemory3"
 		],
-		"where": "chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
@@ -45164,7 +45164,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
@@ -45177,7 +45177,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
@@ -45190,7 +45190,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
@@ -45203,7 +45203,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isReMaster' = 'true' AND chart.difficulty = 'LUNATIC'"
+		"where": "chart.difficulty = 'Re:MASTER'"
 	},
 	{
 		"game": "ongeki",
