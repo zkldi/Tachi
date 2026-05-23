@@ -2,6 +2,7 @@ import { GetChartsBySongId } from "#lib/db-formats/chart";
 import { SearchGlobalGameSongsAndCharts } from "#lib/search/song-charts";
 import DB from "#services/pg/db";
 import { ImportSeedsSubsetForTests } from "#services/pg/seeds";
+import { seedUser } from "#test-utils/pg-fixtures";
 import { resolveSeedsDir, seedsJsonAvailable } from "#test-utils/seed-paths";
 import { FindChartsOnPopularity } from "#utils/queries/charts";
 import { sql } from "kysely";
@@ -764,7 +765,7 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 			])
 			.execute();
 
-		const userID = 1;
+		const { id: userID } = await seedUser({ username: "pop_filter_scores" });
 		await DB.insertInto("score")
 			.values([
 				{
