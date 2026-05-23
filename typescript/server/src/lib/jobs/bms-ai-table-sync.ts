@@ -19,7 +19,7 @@ export async function UpdateAILevels() {
 
 	const repo = await PullDatabaseSeeds();
 
-	await repo.MutateCollection<ChartDocument<"bms-7k">>("charts-bms", (charts) => {
+	await repo.MutateCollection<ChartDocument<"bms-7k">>("charts-bms-7k", (charts) => {
 		for (const chart of charts) {
 			chart.data.aiLevel = map[chart.data.hashMD5] ?? null;
 		}

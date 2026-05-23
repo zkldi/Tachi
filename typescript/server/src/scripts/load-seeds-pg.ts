@@ -8,7 +8,7 @@
  *   POSTGRES_URL – PostgreSQL connection string
  *
  * Required env vars:
- *   SEEDS_DIR         – path to the seeds/collections directory
+ *   SEEDS_DIR         – path to the db/seeds directory
  *   SEEDS_COMMIT_HASH – git commit SHA to tag the import with (for audit logs)
  *
  * Run with:

@@ -19,14 +19,10 @@ const __dirname = path.dirname(__filename);
 // Seed JSON lives at repo root: db/seeds/ (was typescript/collections).
 const COLLECTIONS_DIR = path.join(__dirname, "../../db/seeds");
 
-/** Third argument to {@link WriteCollection} / {@link MutateCollection}: deterministic sort still runs. */
-export const WRITE_COLLECTION_SKIP_BIOME = Object.freeze({ skipBiomeFormat: true });
-
 /**
  * @param {(data: unknown, collection: string) => unknown} cb
- * @param {{ skipBiomeFormat?: boolean }} [writeOptions] forwarded to {@link DeterministicCollectionSort} after loop
  */
-export function IterateCollections(cb, writeOptions) {
+export function IterateCollections(cb) {
 	for (const collection of fs
 		.readdirSync(COLLECTIONS_DIR)
 		.filter((name) => name.endsWith(".json"))) {
@@ -38,7 +34,7 @@ export function IterateCollections(cb, writeOptions) {
 		fs.writeFileSync(path.join(COLLECTIONS_DIR, collection), JSON.stringify(data, null, "\t"));
 	}
 
-	DeterministicCollectionSort(writeOptions);
+	DeterministicCollectionSort();
 }
 
 export function ReadCollection(name, throwIfNotFound = false) {
@@ -58,28 +54,25 @@ export function ReadCollection(name, throwIfNotFound = false) {
 /**
  * @param {string} name
  * @param {unknown} data
- * @param {{ skipBiomeFormat?: boolean }} [writeOptions] pass `{ skipBiomeFormat: true }` to skip
- * running Biome over all of `db/seeds` after the mandatory deterministic sort pass (much faster).
  */
-export function WriteCollection(name, data, writeOptions) {
+export function WriteCollection(name, data) {
 	fs.writeFileSync(path.join(COLLECTIONS_DIR, name), JSON.stringify(data, null, "\t"));
 
-	DeterministicCollectionSort(writeOptions);
+	DeterministicCollectionSort();
 }
 
 /**
  * @param {string} name
  * @param {(collection: unknown) => unknown} cb
- * @param {{ skipBiomeFormat?: boolean }} [writeOptions] see {@link WriteCollection}
  */
-export function MutateCollection(name, cb, writeOptions) {
+export function MutateCollection(name, cb) {
 	const data = cb(ReadCollection(name));
 
 	if (data === undefined) {
 		throw new Error(`You forgot to return from your MutateCollection function.`);
 	}
 
-	WriteCollection(name, data, writeOptions);
+	WriteCollection(name, data);
 }
 
 // this api sucks, maybe dont use it

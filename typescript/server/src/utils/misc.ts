@@ -342,23 +342,22 @@ export function IsRecord(maybeRecord: unknown): maybeRecord is Record<string, un
 }
 
 /**
- * Wrap a promise in an error handler that exits the process safely, and logs
- * when it completes.
+ * Run a script-style async job, log outcome, then exit after a short delay so transports
+ * can flush. Resolves when the work finishes (before the delayed `process.exit`).
  */
-export function WrapScriptPromise(promise: Promise<unknown>, log: KtLogger) {
-	void promise
-		.then(() => {
-			log.info(`Finished executing.`);
-		})
-		.catch((err: Error) => {
-			log.error({ err }, `Failed executing.`);
-		})
-		.finally(() => {
-			// die in 10 seconds or when the log ends, whatever ends earlier.
-			setTimeout(() => {
-				process.exit(1);
-			}, ONE_SECOND * 10);
-		});
+export async function WrapScriptPromise(promise: Promise<unknown>, log: KtLogger): Promise<void> {
+	let exitCode = 0;
+	try {
+		await promise;
+		log.info(`Finished executing.`);
+	} catch (err: unknown) {
+		exitCode = 1;
+		log.error({ err }, `Failed executing.`);
+	}
+
+	setTimeout(() => {
+		process.exit(exitCode);
+	}, ONE_SECOND * 10);
 }
 
 /**

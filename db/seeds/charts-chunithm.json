@@ -297,7 +297,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b935765ded25",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -425,7 +429,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b93798964872",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -632,7 +640,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b938222962f2",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -646,7 +660,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b938222962f2",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -1000,7 +1018,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b93cd9bb5207",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -1603,7 +1625,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9453fd86574",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -1803,7 +1829,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b946dcf338f3",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -1964,7 +1994,10 @@
 	{
 		"data": {
 			"displayVersion": "CHUNITHM X-VERSE",
-			"inGameID": [8008, 8309]
+			"inGameID": [
+				8008,
+				8309
+			]
 		},
 		"difficulty": "時☆3",
 		"id": "C19e107c92413abb598c",
@@ -2150,7 +2183,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b94954074887",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -2748,7 +2785,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b95319d247f8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -3744,7 +3785,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b95b83a63059",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -4135,7 +4180,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b95f9284094b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -4305,7 +4354,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b960f0148812",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -4861,7 +4914,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b963c69dd34f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -5031,7 +5088,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b965be569cce",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -5201,7 +5262,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b966a68cb649",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -5392,7 +5457,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b967d5c2b801",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -5406,7 +5475,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b967d5c2b801",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -5788,7 +5861,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b96be4a8d806",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -6071,12 +6148,19 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b96dd1384607",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
 			"displayVersion": "CHUNITHM X-VERSE",
-			"inGameID": [8009, 8306]
+			"inGameID": [
+				8009,
+				8306
+			]
 		},
 		"difficulty": "割☆3",
 		"id": "C19e107c923fe8b76289",
@@ -6354,7 +6438,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b96f4f686941",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -6717,7 +6805,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9727cbf6325",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -6731,7 +6823,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9727cbf6325",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -6901,7 +6997,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9737c69890e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -7286,7 +7386,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9753099a4c1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -7801,7 +7905,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b978306a8232",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -7815,7 +7923,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b978306a8232",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -7985,7 +8097,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97963bcd6a6",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8193,7 +8309,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97a8bf948eb",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8363,7 +8483,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ba822392b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8377,7 +8501,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ba822392b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8391,7 +8519,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ba822392b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8405,7 +8537,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ba822392b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8419,7 +8555,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ba822392b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8433,7 +8573,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97c506e2e75",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -8817,7 +8961,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b97ef0753785",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -9598,7 +9746,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b982093a5e41",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -9612,7 +9764,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b982093a5e41",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -10314,7 +10470,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9883501d783",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -10512,7 +10672,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b98be2f7e09e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -10526,7 +10690,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b98be2f7e09e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -10696,7 +10864,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b98be2f7e09e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -11060,7 +11232,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b98db693c99d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -11890,7 +12066,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b992c309092d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -11904,7 +12084,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b992c309092d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -12628,7 +12812,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b996f3abe716",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -13293,7 +13481,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99a31c57898",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -13463,7 +13655,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99bd45c4563",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -13983,7 +14179,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99e381f98ba",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -13997,7 +14197,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99f6307bd0b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -14167,7 +14371,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99f6307bd0b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -14181,7 +14389,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b99f6307bd0b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -15061,7 +15273,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9a6670a413a",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -15075,7 +15291,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9a6670a413a",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -15708,7 +15928,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9aa8b50f711",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -17592,7 +17816,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9b9459840e5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -18074,7 +18302,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9bc1e8551a3",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -18593,7 +18826,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c01b46c6e7",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -18763,7 +19000,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c17b507530",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19126,7 +19367,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c34abe74ea",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19140,7 +19385,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c34abe74ea",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19154,7 +19403,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c34abe74ea",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19168,7 +19421,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c34abe74ea",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19359,7 +19616,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c407862e76",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19685,7 +19946,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c62e2e0c36",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19893,7 +20158,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c7c8b3b591",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -19907,7 +20176,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9c7c8b3b591",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -20263,7 +20536,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9ca42896377",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -20810,7 +21087,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9cea5a779df",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -20944,7 +21225,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9cfbcfe26f1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -21114,7 +21399,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d0b9615c21",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -21475,7 +21764,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d2bcb58131",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22038,7 +22331,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d6d05498b0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22208,7 +22505,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d819c13649",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22222,7 +22523,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d819c13649",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22236,7 +22541,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d9ffae10ef",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22442,7 +22751,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d9ffae10ef",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -22456,7 +22769,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9d9ffae10ef",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -23034,7 +23351,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9dcfb46fbe1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -23048,7 +23369,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9dcfb46fbe1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -23062,7 +23387,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9ddc68ec8b5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -23232,7 +23561,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9ddc68ec8b5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -25369,7 +25702,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9f0d6e4597a",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -25539,7 +25876,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9f1d749e9a1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -26483,7 +26824,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9f771fcf191",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -26653,7 +26998,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9f87eb34def",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -27135,7 +27484,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9fc4629cc74",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -27461,7 +27814,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0b9fd86abf491",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -28019,7 +28376,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba007019c066",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -28217,7 +28578,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba0204d4af43",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -28231,7 +28596,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba0204d4af43",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -28401,7 +28770,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba036b6f8e28",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -28507,7 +28880,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba04db97232c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -29016,7 +29393,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba0757834e74",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -29278,7 +29659,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba09e0d7eb57",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -29952,7 +30337,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba0ec8b8a834",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -29966,7 +30355,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba0ec8b8a834",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -31842,7 +32235,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba1bbb9b4c5d",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -31856,7 +32255,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba1bbb9b4c5d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -32064,7 +32467,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba1c9ded1f04",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -32234,7 +32641,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba1d7085c2e2",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -32835,7 +33246,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba27d88dc4db",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -33005,7 +33422,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba28292b4b72",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -33423,7 +33846,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba2b51d14b96",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -34373,7 +34800,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba31a796ff67",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -35437,7 +35868,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba382409ffb9",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -35451,7 +35886,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba39dd4d8c2d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -36089,7 +36528,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba3c33160697",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -39914,7 +40359,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba557ba3491f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -42388,7 +42837,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba65108d65b1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -42558,7 +43011,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba666fba6148",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -43192,7 +43649,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba6c6c9b67bd",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -43742,7 +44203,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba7066b5a1e3",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -43912,7 +44377,10 @@
 		"level": "15",
 		"levelNum": 15.1,
 		"songID": "S19d35e0ba7199dbd146",
-		"versions": ["xversex-omni", "xversex"]
+		"versions": [
+			"xversex-omni",
+			"xversex"
+		]
 	},
 	{
 		"data": {
@@ -44574,7 +45042,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba758825306e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -45571,7 +46043,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba7b020c7c9c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -47440,7 +47916,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba8682b3fafe",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -48531,7 +49011,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba91611e511f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -48637,7 +49121,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba92dd33ed1f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -48743,7 +49231,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0ba9309cc94f7",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -52027,7 +52519,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0baaf555edece",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -52041,7 +52537,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0baaf555edece",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -53029,7 +53529,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bab58a3c7f73",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -53823,7 +54327,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0babce7ec502c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -53837,7 +54345,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0babce7ec502c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -54007,7 +54519,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0babdcfab5b2b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -54333,7 +54849,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0babf6918cd56",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -54836,7 +55358,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bac5c8bc35c5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -55318,7 +55844,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bac82a958686",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -57320,7 +57852,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0badb93a25f24",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -57826,7 +58362,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0badfe6439269",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -59913,7 +60455,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0baece52d3ad2",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -60083,7 +60631,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0baedb0200c8d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -60097,7 +60649,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0baedb0200c8d",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -61790,7 +62346,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bafdbced2585",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -62621,7 +63181,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb04c3b39359",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -62791,7 +63355,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb04c3b39359",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -63117,7 +63685,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb0698730808",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -64599,7 +65171,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb1262425685",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -66173,7 +66749,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb1de91fc219",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -66187,7 +66767,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb1de91fc219",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -67073,7 +67657,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb23c565b1d4",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -67243,7 +67831,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb251d19f5af",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -67413,7 +68005,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb251d19f5af",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -68583,7 +69179,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb2db5e52d92",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -68597,7 +69197,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb2db5e52d92",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -68611,7 +69215,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb2db5e52d92",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -69649,7 +70257,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb3748d86afb",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -70309,7 +70921,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb410f13ac0c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -72093,7 +72709,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb515cbe752f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -73311,7 +73931,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb5bb6d1d4b6",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -74261,7 +74885,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb6137399489",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -74581,7 +75211,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb630cbb2563",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -74851,7 +75485,14 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb656af782b5",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -75333,7 +75974,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb6932b8d2c8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -75347,7 +75992,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb6932b8d2c8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -75985,7 +76634,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb6fc05b54ca",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -79155,7 +79810,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb86aef27d50",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -80637,7 +81296,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb94b78a472e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -80835,7 +81498,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb968cddfd08",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -81657,7 +82324,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb9cf44e6acf",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -81983,7 +82654,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb9e4eaee9e1",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -82089,7 +82766,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bb9f13ac9af4",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -82471,7 +83152,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bba3a9d3c5d5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -82641,7 +83326,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bba4c5678152",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -82677,7 +83366,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bba4c5678152",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -83186,7 +83878,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bba7671a3ba0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -83512,7 +84208,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbaa9b3f1332",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -84306,7 +85006,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbb0f4af2aa4",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -84320,7 +85024,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbb0f4af2aa4",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -84674,7 +85382,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbb39af6d202",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -88272,7 +88984,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbd2f2e7d790",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -89170,7 +89886,10 @@
 		"level": "15",
 		"levelNum": 15.1,
 		"songID": "S19d35e0bbd926c9b954",
-		"versions": ["xversex-omni", "xversex"]
+		"versions": [
+			"xversex-omni",
+			"xversex"
+		]
 	},
 	{
 		"data": {
@@ -90524,7 +91243,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbe51aa41cd3",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -92432,7 +93155,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbf0bfb8311f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -93538,7 +94265,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bbf7cd672050",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -96013,7 +96744,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc0d0fc35859",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -96495,7 +97230,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc110f43a21b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -98353,7 +99092,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc1c8c0353a4",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -102117,7 +102860,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc38d560320a",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -102943,7 +103690,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc3e83a6dea0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -105797,7 +106548,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc5230be88d6",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -106643,7 +107398,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc5a15ae802c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -113258,7 +114017,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc88e664cf56",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -113908,7 +114671,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc8d4913b5f8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -115286,7 +116053,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bc9811327fa0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -116996,7 +117767,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bca330b49f06",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -117322,7 +118098,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bca584fcaf98",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -118004,7 +118784,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcaa379a43ba",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -118772,7 +119556,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcafa9a6e769",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -119510,7 +120298,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcb46ba2949b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -119836,7 +120628,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcb73ad92ecf",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -120006,7 +120804,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcb895f53aa3",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -120488,7 +121290,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcbc28e1286e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -120710,7 +121516,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcbf1dd2b18f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -121452,7 +122262,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcc40589d932",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -125274,7 +126088,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcde95091107",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -128928,7 +129746,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcf7a99218cf",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -129774,7 +130596,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bcfd0b4b8f3e",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -131764,7 +132590,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd0ad15632e8",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -135446,7 +136277,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd26f088e1f8",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -135772,7 +136608,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd2972ef77f5",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -138960,7 +139800,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd3d90ba3923",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -139694,7 +140538,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd435f44f5f5",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -139864,7 +140714,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd440f934e9f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -141302,7 +142156,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd51f2b16524",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -145189,7 +146047,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd6a8ab50975",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -147359,7 +148221,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd78e0a837c8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -148053,7 +148919,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd7e6d62ca5b",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -148223,7 +149093,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0bd7fcd0f7837",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -153834,7 +154709,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c127c7e441ce",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -154424,7 +155303,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c12baa7ddae0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -154890,7 +155773,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c12ef576fbe9",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -155512,7 +156399,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c132a4ad8732",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -158284,7 +159175,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c145a469d3d1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -159898,7 +160793,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1503dbc58f6",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -161848,7 +162747,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c15dcd356ad1",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -168722,7 +169626,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c18d981e65f3",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -169384,7 +170294,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c192c65454ed",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -169974,7 +170888,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1969ab02fea",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -173112,7 +174030,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1ac8a76bfa7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -174104,7 +175025,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1b46c227daa",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -175444,7 +176369,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1bcf5f85d64",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -175902,7 +176833,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1bf68ad7977",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -183362,7 +184298,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c1f3b407b549",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -185968,7 +186909,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c20732befce8",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -194750,7 +195695,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c246cdd974db",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -196204,7 +197153,12 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c2511b11d428",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -199086,7 +200040,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c26697e14d59",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -199532,7 +200490,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c26abcf94bdf",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -205186,7 +206150,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c29d2d3c863c",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -213094,7 +214062,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c2e255390933",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -214756,7 +215730,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c2f093b93866",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -216592,7 +217572,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c2ffb13e3820",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -216628,7 +217614,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c2ffb13e3820",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -220074,7 +221066,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c31e6e08bc4e",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -222248,7 +223246,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c332cafa4e84",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -232903,7 +233905,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c3a7c31b40a1",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -237016,7 +238024,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c3d3f8fb2f59",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -237222,7 +238234,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c3d56163cb93",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239506,7 +240521,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c3f423fc38cd",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239520,7 +240538,14 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0c3f691648cf5",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239534,7 +240559,14 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19d35e0c3f691648cf5",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239548,7 +240580,14 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19d35e0c3f691648cf5",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239562,7 +240601,14 @@
 		"level": "13",
 		"levelNum": 13,
 		"songID": "S19d35e0c3f691648cf5",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239576,7 +240622,14 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0c3f70eaa7e42",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239590,7 +240643,14 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c3f70eaa7e42",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239604,7 +240664,14 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19d35e0c3f70eaa7e42",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239618,7 +240685,14 @@
 		"level": "12+",
 		"levelNum": 12.6,
 		"songID": "S19d35e0c3f70eaa7e42",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239632,7 +240706,14 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c3f70eaa7e42",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239646,7 +240727,14 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0c3f8c70cec36",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239660,7 +240748,14 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c3f8c70cec36",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239674,7 +240769,14 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19d35e0c3f8c70cec36",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239688,7 +240790,14 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19d35e0c3f8c70cec36",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239702,7 +240811,14 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0c3f931cef84c",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239716,7 +240832,14 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c3f931cef84c",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239730,7 +240853,14 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19d35e0c3f931cef84c",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -239744,7 +240874,14 @@
 		"level": "13",
 		"levelNum": 13.2,
 		"songID": "S19d35e0c3f931cef84c",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -240910,7 +242047,14 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19d35e0c40d5f103b24",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -240924,7 +242068,14 @@
 		"level": "1",
 		"levelNum": 1,
 		"songID": "S19d35e0c40d5f103b24",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -240938,7 +242089,14 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19d35e0c40d5f103b24",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -240952,7 +242110,14 @@
 		"level": "12",
 		"levelNum": 12,
 		"songID": "S19d35e0c40d5f103b24",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -241734,7 +242899,14 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19d35e0c41e00485ca4",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -241748,7 +242920,14 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c41e00485ca4",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -241762,7 +242941,14 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19d35e0c41e00485ca4",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -241776,7 +242962,14 @@
 		"level": "13",
 		"levelNum": 13.1,
 		"songID": "S19d35e0c41e00485ca4",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -242846,7 +244039,10 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19d35e0c42be6dbaffe",
-		"versions": ["xversex-omni", "xversex"]
+		"versions": [
+			"xversex-omni",
+			"xversex"
+		]
 	},
 	{
 		"data": {
@@ -242956,7 +244152,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c42c5546a624",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246201,7 +247400,12 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19d35e0c4563fc0502f",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246215,7 +247419,12 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c4563fc0502f",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246229,7 +247438,12 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19d35e0c4563fc0502f",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246243,7 +247457,12 @@
 		"level": "12+",
 		"levelNum": 12.7,
 		"songID": "S19d35e0c4563fc0502f",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246593,7 +247812,12 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19d35e0c45be98178b3",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246607,7 +247831,12 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c45be98178b3",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246621,7 +247850,12 @@
 		"level": "10",
 		"levelNum": 10,
 		"songID": "S19d35e0c45be98178b3",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -246635,7 +247869,12 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19d35e0c45be98178b3",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249589,7 +250828,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19d35e0c48126f1f1a3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249603,7 +250845,12 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19d35e0c482c60291a0",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249617,7 +250864,12 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19d35e0c482c60291a0",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249631,7 +250883,12 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19d35e0c482c60291a0",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249645,7 +250902,12 @@
 		"level": "13",
 		"levelNum": 13.1,
 		"songID": "S19d35e0c482c60291a0",
-		"versions": ["xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249849,7 +251111,14 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c922d3407b63d",
-		"versions": ["verse", "verse-omni", "xverse", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249929,7 +251198,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c92617125d589",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249943,7 +251218,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c9261f6b20b73",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249957,7 +251238,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c926482456511",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249971,7 +251258,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c926703c9d5ea",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249985,7 +251278,13 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c9268900ed302",
-		"versions": ["verse", "verse-omni", "xverse-omni", "xversex", "xversex-omni"]
+		"versions": [
+			"verse",
+			"verse-omni",
+			"xverse-omni",
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -249999,7 +251298,10 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e107c926959f070ed",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250013,7 +251315,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e107c926cc40bc73d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250027,7 +251332,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e107c926cc40bc73d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250041,7 +251349,10 @@
 		"level": "11+",
 		"levelNum": 11.7,
 		"songID": "S19e107c926cc40bc73d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250055,7 +251366,10 @@
 		"level": "13+",
 		"levelNum": 13.9,
 		"songID": "S19e107c926cc40bc73d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250069,7 +251383,10 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e107c926cde078bd5",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250083,7 +251400,10 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e107c926cde078bd5",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250097,7 +251417,10 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19e107c926cde078bd5",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250111,7 +251434,10 @@
 		"level": "15",
 		"levelNum": 15.1,
 		"songID": "S19e107c926cde078bd5",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250125,7 +251451,10 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e107c926db5b15def",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250139,7 +251468,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c926db5b15def",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250153,7 +251485,10 @@
 		"level": "11",
 		"levelNum": 11.2,
 		"songID": "S19e107c926db5b15def",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250167,7 +251502,10 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e107c926db5b15def",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250181,7 +251519,10 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e107c926e10ef3ef1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250195,7 +251536,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e107c926e10ef3ef1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250209,7 +251553,10 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e107c926e10ef3ef1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250223,7 +251570,10 @@
 		"level": "15+",
 		"levelNum": 15.5,
 		"songID": "S19e107c926e10ef3ef1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250237,7 +251587,10 @@
 		"level": "11+",
 		"levelNum": 11.8,
 		"songID": "S19e107c926f8c32fb8c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250251,7 +251604,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e107c926f8c32fb8c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250265,7 +251621,10 @@
 		"level": "14+",
 		"levelNum": 14.5,
 		"songID": "S19e107c926f8c32fb8c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250279,7 +251638,10 @@
 		"level": "15+",
 		"levelNum": 15.6,
 		"songID": "S19e107c926f8c32fb8c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250293,7 +251655,10 @@
 		"level": "12+",
 		"levelNum": 12.6,
 		"songID": "S19e107c926f99afaa68",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250307,7 +251672,10 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e107c926f99afaa68",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250321,7 +251689,10 @@
 		"level": "14+",
 		"levelNum": 14.8,
 		"songID": "S19e107c926f99afaa68",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250335,7 +251706,10 @@
 		"level": "15+",
 		"levelNum": 15.5,
 		"songID": "S19e107c926f99afaa68",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250349,7 +251723,10 @@
 		"level": "15+",
 		"levelNum": 15.8,
 		"songID": "S19e107c926f99afaa68",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250363,7 +251740,10 @@
 		"level": "11+",
 		"levelNum": 11.7,
 		"songID": "S19e107c927047a8860e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250377,7 +251757,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e107c927047a8860e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250391,7 +251774,10 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e107c927047a8860e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250405,7 +251791,10 @@
 		"level": "15+",
 		"levelNum": 15.5,
 		"songID": "S19e107c927047a8860e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250419,7 +251808,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e107c927098068ab8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250433,7 +251825,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c927098068ab8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250447,7 +251842,10 @@
 		"level": "10",
 		"levelNum": 10.2,
 		"songID": "S19e107c927098068ab8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250461,7 +251859,10 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e107c927098068ab8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250475,7 +251876,10 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19e107c927187fb377f",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250489,7 +251893,10 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e107c927187fb377f",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250503,7 +251910,10 @@
 		"level": "13",
 		"levelNum": 13.2,
 		"songID": "S19e107c927187fb377f",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250517,7 +251927,10 @@
 		"level": "14+",
 		"levelNum": 14.9,
 		"songID": "S19e107c927187fb377f",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250531,7 +251944,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e107c9271d80778f3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250545,7 +251961,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c9271d80778f3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250559,7 +251978,10 @@
 		"level": "12+",
 		"levelNum": 12.6,
 		"songID": "S19e107c9271d80778f3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250573,7 +251995,10 @@
 		"level": "14+",
 		"levelNum": 14.5,
 		"songID": "S19e107c9271d80778f3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250587,7 +252012,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e107c92726facd98e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250601,7 +252029,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c92726facd98e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250615,7 +252046,10 @@
 		"level": "13+",
 		"levelNum": 13.6,
 		"songID": "S19e107c92726facd98e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250629,7 +252063,10 @@
 		"level": "15",
 		"levelNum": 15.2,
 		"songID": "S19e107c92726facd98e",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250643,7 +252080,10 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e107c92728e336545",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250657,7 +252097,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c92728e336545",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250671,7 +252114,10 @@
 		"level": "11+",
 		"levelNum": 11.8,
 		"songID": "S19e107c92728e336545",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250685,7 +252131,10 @@
 		"level": "14+",
 		"levelNum": 14.8,
 		"songID": "S19e107c92728e336545",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250699,7 +252148,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e107c9272c4546230",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250713,7 +252165,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e107c9272c4546230",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250727,7 +252182,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e107c9272c4546230",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250741,7 +252199,10 @@
 		"level": "15",
 		"levelNum": 15.1,
 		"songID": "S19e107c9272c4546230",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250755,7 +252216,10 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19e107c927357b626a1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250769,7 +252233,10 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e107c927357b626a1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250783,7 +252250,10 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e107c927357b626a1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250797,7 +252267,10 @@
 		"level": "15",
 		"levelNum": 15,
 		"songID": "S19e107c927357b626a1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250811,7 +252284,10 @@
 		"level": "11+",
 		"levelNum": 11.6,
 		"songID": "S19e107c9273fc370be3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250825,7 +252301,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e107c9273fc370be3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250839,7 +252318,10 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e107c9273fc370be3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250853,7 +252335,10 @@
 		"level": "15",
 		"levelNum": 15.4,
 		"songID": "S19e107c9273fc370be3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250867,7 +252352,10 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e107c92740d359009",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250881,7 +252369,10 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e107c92740d359009",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250895,7 +252386,10 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e107c92740d359009",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250909,7 +252403,10 @@
 		"level": "15",
 		"levelNum": 15,
 		"songID": "S19e107c92740d359009",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250923,7 +252420,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e107c9274187c4110",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250937,7 +252437,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e107c9274187c4110",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250951,7 +252454,10 @@
 		"level": "10+",
 		"levelNum": 10.7,
 		"songID": "S19e107c9274187c4110",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250965,7 +252471,10 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19e107c9274187c4110",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250979,7 +252488,10 @@
 		"level": "13",
 		"levelNum": 13,
 		"songID": "S19e107c9274f0e77da6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -250993,7 +252505,10 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19e107c9274f0e77da6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251007,7 +252522,10 @@
 		"level": "14+",
 		"levelNum": 14.9,
 		"songID": "S19e107c9274f0e77da6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251021,7 +252539,10 @@
 		"level": "15+",
 		"levelNum": 15.6,
 		"songID": "S19e107c9274f0e77da6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251035,7 +252556,10 @@
 		"level": "16",
 		"levelNum": 16,
 		"songID": "S19e107c9274f0e77da6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251049,7 +252573,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e10e7279d1cdb21d0",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251063,7 +252591,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e10e7279d6177f69f",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251077,7 +252609,11 @@
 		"level": "",
 		"levelNum": 0,
 		"songID": "S19e10e7279df9618de1",
-		"versions": ["verse-omni", "xverse-omni", "xversex-omni"]
+		"versions": [
+			"verse-omni",
+			"xverse-omni",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251091,7 +252627,11 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e3331b890ee0eeade",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251105,7 +252645,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331b890ee0eeade",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251119,7 +252663,11 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331b890ee0eeade",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251133,7 +252681,11 @@
 		"level": "15",
 		"levelNum": 15,
 		"songID": "S19e3331b890ee0eeade",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251147,7 +252699,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0aef7cb884c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251161,7 +252717,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0aef7cb884c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251175,7 +252735,11 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0aef7cb884c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251189,7 +252753,11 @@
 		"level": "13",
 		"levelNum": 13,
 		"songID": "S19e3331c0aef7cb884c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251203,7 +252771,11 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e3331c0aef7cb884c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251217,7 +252789,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0afa37c0eb7",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251231,7 +252807,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0afa37c0eb7",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251245,7 +252825,11 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0afa37c0eb7",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251259,7 +252843,11 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e3331c0afa37c0eb7",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251273,7 +252861,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b036a334e4",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251287,7 +252879,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b036a334e4",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251301,7 +252897,11 @@
 		"level": "10+",
 		"levelNum": 10.7,
 		"songID": "S19e3331c0b036a334e4",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251315,7 +252915,11 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19e3331c0b036a334e4",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251329,7 +252933,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0b14d9d8e78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251343,7 +252951,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b14d9d8e78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251357,7 +252969,11 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0b14d9d8e78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251371,7 +252987,11 @@
 		"level": "12+",
 		"levelNum": 12.6,
 		"songID": "S19e3331c0b14d9d8e78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251385,7 +253005,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b2cc5e1593",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251399,7 +253023,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b2cc5e1593",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251413,7 +253041,11 @@
 		"level": "10",
 		"levelNum": 10.2,
 		"songID": "S19e3331c0b2cc5e1593",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251427,7 +253059,11 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19e3331c0b2cc5e1593",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251441,7 +253077,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0b327e173e5",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251455,7 +253095,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b327e173e5",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251469,7 +253113,11 @@
 		"level": "10",
 		"levelNum": 10.3,
 		"songID": "S19e3331c0b327e173e5",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251483,7 +253131,11 @@
 		"level": "13",
 		"levelNum": 13.2,
 		"songID": "S19e3331c0b327e173e5",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251497,7 +253149,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b456bdb1ab",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251511,7 +253167,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b456bdb1ab",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251525,7 +253185,11 @@
 		"level": "10+",
 		"levelNum": 10.5,
 		"songID": "S19e3331c0b456bdb1ab",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251539,7 +253203,11 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19e3331c0b456bdb1ab",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251553,7 +253221,11 @@
 		"level": "14+",
 		"levelNum": 14.7,
 		"songID": "S19e3331c0b456bdb1ab",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251567,7 +253239,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b5b8e08834",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251581,7 +253257,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b5b8e08834",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251595,7 +253275,11 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0b5b8e08834",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251609,7 +253293,11 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19e3331c0b5b8e08834",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251623,7 +253311,11 @@
 		"level": "14+",
 		"levelNum": 14.5,
 		"songID": "S19e3331c0b5b8e08834",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251637,7 +253329,11 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e3331c0b68237c124",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251651,7 +253347,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0b68237c124",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251665,7 +253365,11 @@
 		"level": "12+",
 		"levelNum": 12.7,
 		"songID": "S19e3331c0b68237c124",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251679,7 +253383,11 @@
 		"level": "14+",
 		"levelNum": 14.5,
 		"songID": "S19e3331c0b68237c124",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251693,7 +253401,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b79f682ac9",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251707,7 +253419,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b79f682ac9",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251721,7 +253437,11 @@
 		"level": "11",
 		"levelNum": 11.1,
 		"songID": "S19e3331c0b79f682ac9",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251735,7 +253455,11 @@
 		"level": "14+",
 		"levelNum": 14.6,
 		"songID": "S19e3331c0b79f682ac9",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251749,7 +253473,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b81d057450",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251763,7 +253491,11 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0b81d057450",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251777,7 +253509,11 @@
 		"level": "10+",
 		"levelNum": 10.5,
 		"songID": "S19e3331c0b81d057450",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251791,7 +253527,11 @@
 		"level": "14+",
 		"levelNum": 14.8,
 		"songID": "S19e3331c0b81d057450",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251805,7 +253545,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0b9ad21f1ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251819,7 +253563,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0b9ad21f1ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251833,7 +253581,11 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19e3331c0b9ad21f1ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251847,7 +253599,11 @@
 		"level": "15",
 		"levelNum": 15.2,
 		"songID": "S19e3331c0b9ad21f1ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251861,7 +253617,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0baa617f39c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251875,7 +253635,11 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0baa617f39c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251889,7 +253653,11 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19e3331c0baa617f39c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251903,7 +253671,11 @@
 		"level": "12+",
 		"levelNum": 12.5,
 		"songID": "S19e3331c0baa617f39c",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251917,7 +253689,11 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0bba2ad0afe",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251931,7 +253707,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0bba2ad0afe",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251945,7 +253725,11 @@
 		"level": "12",
 		"levelNum": 12.3,
 		"songID": "S19e3331c0bba2ad0afe",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251959,7 +253743,11 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19e3331c0bba2ad0afe",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251973,7 +253761,11 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0bc7a940e56",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -251987,7 +253779,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0bc7a940e56",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252001,7 +253797,11 @@
 		"level": "13",
 		"levelNum": 13.2,
 		"songID": "S19e3331c0bc7a940e56",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252015,7 +253815,11 @@
 		"level": "14+",
 		"levelNum": 14.7,
 		"songID": "S19e3331c0bc7a940e56",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252029,7 +253833,11 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0bd72cb9049",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252043,7 +253851,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0bd72cb9049",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252057,7 +253869,11 @@
 		"level": "10+",
 		"levelNum": 10.6,
 		"songID": "S19e3331c0bd72cb9049",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252071,7 +253887,11 @@
 		"level": "14+",
 		"levelNum": 14.8,
 		"songID": "S19e3331c0bd72cb9049",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252085,7 +253905,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0be9bc4a989",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252099,7 +253923,11 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0be9bc4a989",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252113,7 +253941,11 @@
 		"level": "10+",
 		"levelNum": 10.8,
 		"songID": "S19e3331c0be9bc4a989",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252127,7 +253959,11 @@
 		"level": "13",
 		"levelNum": 13.4,
 		"songID": "S19e3331c0be9bc4a989",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252141,7 +253977,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0bf4eb28e9e",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252155,7 +253995,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0bf4eb28e9e",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252169,7 +254013,11 @@
 		"level": "11",
 		"levelNum": 11.3,
 		"songID": "S19e3331c0bf4eb28e9e",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252183,7 +254031,11 @@
 		"level": "13+",
 		"levelNum": 13.6,
 		"songID": "S19e3331c0bf4eb28e9e",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252197,7 +254049,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0c00fad39ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252211,7 +254067,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0c00fad39ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252225,7 +254085,11 @@
 		"level": "12+",
 		"levelNum": 12.8,
 		"songID": "S19e3331c0c00fad39ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252239,7 +254103,11 @@
 		"level": "14+",
 		"levelNum": 14.5,
 		"songID": "S19e3331c0c00fad39ec",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252253,7 +254121,11 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0c1eb3bfc78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252267,7 +254139,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0c1eb3bfc78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252281,7 +254157,11 @@
 		"level": "11+",
 		"levelNum": 11.8,
 		"songID": "S19e3331c0c1eb3bfc78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252295,7 +254175,11 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0c1eb3bfc78",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252309,7 +254193,11 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e3331c0c27708f98b",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252323,7 +254211,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0c27708f98b",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252337,7 +254229,11 @@
 		"level": "12",
 		"levelNum": 12.1,
 		"songID": "S19e3331c0c27708f98b",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252351,7 +254247,11 @@
 		"level": "14",
 		"levelNum": 14.2,
 		"songID": "S19e3331c0c27708f98b",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252365,7 +254265,11 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19e3331c0c300ec925d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252379,7 +254283,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0c300ec925d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252393,7 +254301,11 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0c300ec925d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252407,7 +254319,11 @@
 		"level": "15",
 		"levelNum": 15.2,
 		"songID": "S19e3331c0c300ec925d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252421,7 +254337,11 @@
 		"level": "8+",
 		"levelNum": 8.5,
 		"songID": "S19e3331c0c403b32731",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252435,7 +254355,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0c403b32731",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252449,7 +254373,11 @@
 		"level": "13",
 		"levelNum": 13.1,
 		"songID": "S19e3331c0c403b32731",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252463,7 +254391,11 @@
 		"level": "14+",
 		"levelNum": 14.9,
 		"songID": "S19e3331c0c403b32731",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252477,7 +254409,11 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0c56ae13bce",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252491,7 +254427,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0c56ae13bce",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252505,7 +254445,11 @@
 		"level": "13+",
 		"levelNum": 13.9,
 		"songID": "S19e3331c0c56ae13bce",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252519,7 +254463,11 @@
 		"level": "15",
 		"levelNum": 15.4,
 		"songID": "S19e3331c0c56ae13bce",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252533,7 +254481,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0c667de21dc",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252547,7 +254498,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0c667de21dc",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252561,7 +254515,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0c667de21dc",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252575,7 +254532,10 @@
 		"level": "13+",
 		"levelNum": 13.6,
 		"songID": "S19e3331c0c667de21dc",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252589,7 +254549,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0c764ada78c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252603,7 +254566,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0c764ada78c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252617,7 +254583,10 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0c764ada78c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252631,7 +254600,10 @@
 		"level": "13+",
 		"levelNum": 13.5,
 		"songID": "S19e3331c0c764ada78c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252645,7 +254617,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0c8882719e0",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252659,7 +254635,11 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0c8882719e0",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252673,7 +254653,11 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0c8882719e0",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252687,7 +254671,11 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19e3331c0c8882719e0",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252701,7 +254689,11 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e3331c0c99ac82993",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252715,7 +254707,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0c99ac82993",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252729,7 +254725,11 @@
 		"level": "11",
 		"levelNum": 11.3,
 		"songID": "S19e3331c0c99ac82993",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252743,7 +254743,11 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0c99ac82993",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252757,7 +254761,11 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0caf776c39f",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252771,7 +254779,11 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0caf776c39f",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252785,7 +254797,11 @@
 		"level": "11+",
 		"levelNum": 11.8,
 		"songID": "S19e3331c0caf776c39f",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252799,7 +254815,11 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e3331c0caf776c39f",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -252813,7 +254833,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0cbf7f09636",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252827,7 +254851,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0cbf7f09636",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252841,7 +254869,11 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0cbf7f09636",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252855,7 +254887,11 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0cbf7f09636",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252869,7 +254905,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0cc5cc5f190",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252883,7 +254923,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0cc5cc5f190",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252897,7 +254941,11 @@
 		"level": "10+",
 		"levelNum": 10.6,
 		"songID": "S19e3331c0cc5cc5f190",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252911,7 +254959,11 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e3331c0cc5cc5f190",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252925,7 +254977,11 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e3331c0cdb8cb8e55",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252939,7 +254995,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0cdb8cb8e55",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252953,7 +255013,11 @@
 		"level": "13",
 		"levelNum": 13.4,
 		"songID": "S19e3331c0cdb8cb8e55",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252967,7 +255031,11 @@
 		"level": "15",
 		"levelNum": 15.1,
 		"songID": "S19e3331c0cdb8cb8e55",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252981,7 +255049,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0ce74afa47a",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -252995,7 +255067,11 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0ce74afa47a",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253009,7 +255085,11 @@
 		"level": "10+",
 		"levelNum": 10.9,
 		"songID": "S19e3331c0ce74afa47a",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253023,7 +255103,11 @@
 		"level": "13",
 		"levelNum": 13.4,
 		"songID": "S19e3331c0ce74afa47a",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253037,7 +255121,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0cfc63d8787",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253051,7 +255139,11 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0cfc63d8787",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253065,7 +255157,11 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0cfc63d8787",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253079,7 +255175,11 @@
 		"level": "12+",
 		"levelNum": 12.8,
 		"songID": "S19e3331c0cfc63d8787",
-		"versions": ["xversex", "xversex-omni", "xversex-intl"]
+		"versions": [
+			"xversex",
+			"xversex-omni",
+			"xversex-intl"
+		]
 	},
 	{
 		"data": {
@@ -253093,7 +255193,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0d2224a8d95",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253107,7 +255210,10 @@
 		"level": "4",
 		"levelNum": 4,
 		"songID": "S19e3331c0d2224a8d95",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253121,7 +255227,10 @@
 		"level": "12",
 		"levelNum": 12.2,
 		"songID": "S19e3331c0d2224a8d95",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253135,7 +255244,10 @@
 		"level": "15",
 		"levelNum": 15,
 		"songID": "S19e3331c0d2224a8d95",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253149,7 +255261,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0d346583eb1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253163,7 +255278,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0d346583eb1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253177,7 +255295,10 @@
 		"level": "10",
 		"levelNum": 10.4,
 		"songID": "S19e3331c0d346583eb1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253191,7 +255312,10 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e3331c0d346583eb1",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253205,7 +255329,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0d456e0d9e4",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253219,7 +255346,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0d456e0d9e4",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253233,7 +255363,10 @@
 		"level": "10",
 		"levelNum": 10.3,
 		"songID": "S19e3331c0d456e0d9e4",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253247,7 +255380,10 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0d456e0d9e4",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253261,7 +255397,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0d59dace530",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253275,7 +255414,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0d59dace530",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253289,7 +255431,10 @@
 		"level": "10+",
 		"levelNum": 10.7,
 		"songID": "S19e3331c0d59dace530",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253303,7 +255448,10 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e3331c0d59dace530",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253317,7 +255465,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0d672c6b738",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253331,7 +255482,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0d672c6b738",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253345,7 +255499,10 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19e3331c0d672c6b738",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253359,7 +255516,10 @@
 		"level": "13+",
 		"levelNum": 13.6,
 		"songID": "S19e3331c0d672c6b738",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253373,7 +255533,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0d772051374",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253387,7 +255550,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0d772051374",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253401,7 +255567,10 @@
 		"level": "10",
 		"levelNum": 10.2,
 		"songID": "S19e3331c0d772051374",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253415,7 +255584,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0d772051374",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253429,7 +255601,10 @@
 		"level": "10",
 		"levelNum": 10,
 		"songID": "S19e3331c0d8f06c6c67",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253443,7 +255618,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0d8f06c6c67",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253457,7 +255635,10 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0d8f06c6c67",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253471,7 +255652,10 @@
 		"level": "15+",
 		"levelNum": 15.6,
 		"songID": "S19e3331c0d8f06c6c67",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253485,7 +255669,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0d99495a9ab",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253499,7 +255686,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0d99495a9ab",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253513,7 +255703,10 @@
 		"level": "12",
 		"levelNum": 12.2,
 		"songID": "S19e3331c0d99495a9ab",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253527,7 +255720,10 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19e3331c0d99495a9ab",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253541,7 +255737,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0da0fa0f203",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253555,7 +255754,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0da0fa0f203",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253569,7 +255771,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0da0fa0f203",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253583,7 +255788,10 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19e3331c0da0fa0f203",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253597,7 +255805,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0dbb6421312",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253611,7 +255822,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0dbb6421312",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253625,7 +255839,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0dbb6421312",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253639,7 +255856,10 @@
 		"level": "13",
 		"levelNum": 13,
 		"songID": "S19e3331c0dbb6421312",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253653,7 +255873,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0dcbccbd85d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253667,7 +255890,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0dcbccbd85d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253681,7 +255907,10 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0dcbccbd85d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253695,7 +255924,10 @@
 		"level": "12+",
 		"levelNum": 12.6,
 		"songID": "S19e3331c0dcbccbd85d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253709,7 +255941,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0dd5ec20bad",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253723,7 +255958,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0dd5ec20bad",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253737,7 +255975,10 @@
 		"level": "10",
 		"levelNum": 10.3,
 		"songID": "S19e3331c0dd5ec20bad",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253751,7 +255992,10 @@
 		"level": "13",
 		"levelNum": 13.4,
 		"songID": "S19e3331c0dd5ec20bad",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253765,7 +256009,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0dee190dcf2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253779,7 +256026,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0dee190dcf2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253793,7 +256043,10 @@
 		"level": "10",
 		"levelNum": 10,
 		"songID": "S19e3331c0dee190dcf2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253807,7 +256060,10 @@
 		"level": "12+",
 		"levelNum": 12.9,
 		"songID": "S19e3331c0dee190dcf2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253821,7 +256077,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0df1b2b7872",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253835,7 +256094,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0df1b2b7872",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253849,7 +256111,10 @@
 		"level": "10+",
 		"levelNum": 10.7,
 		"songID": "S19e3331c0df1b2b7872",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253863,7 +256128,10 @@
 		"level": "13",
 		"levelNum": 13.2,
 		"songID": "S19e3331c0df1b2b7872",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253877,7 +256145,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0e0d0c14a05",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253891,7 +256162,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0e0d0c14a05",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253905,7 +256179,10 @@
 		"level": "10+",
 		"levelNum": 10.5,
 		"songID": "S19e3331c0e0d0c14a05",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253919,7 +256196,10 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e3331c0e0d0c14a05",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253933,7 +256213,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0e1e162bf89",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253947,7 +256230,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0e1e162bf89",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253961,7 +256247,10 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c0e1e162bf89",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253975,7 +256264,10 @@
 		"level": "13",
 		"levelNum": 13.1,
 		"songID": "S19e3331c0e1e162bf89",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -253989,7 +256281,10 @@
 		"level": "8",
 		"levelNum": 8,
 		"songID": "S19e3331c0e2506e1de6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254003,7 +256298,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0e2506e1de6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254017,7 +256315,10 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19e3331c0e2506e1de6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254031,7 +256332,10 @@
 		"level": "15",
 		"levelNum": 15,
 		"songID": "S19e3331c0e2506e1de6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254045,7 +256349,11 @@
 		"level": "11+",
 		"levelNum": 11.7,
 		"songID": "S19e3331c0e33fd89341",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254059,7 +256367,11 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0e33fd89341",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254073,7 +256385,11 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0e33fd89341",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254087,7 +256403,11 @@
 		"level": "15+",
 		"levelNum": 15.6,
 		"songID": "S19e3331c0e33fd89341",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254101,7 +256421,11 @@
 		"level": "10",
 		"levelNum": 10,
 		"songID": "S19e3331c0e408af573d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254115,7 +256439,11 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0e408af573d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254129,7 +256457,11 @@
 		"level": "14",
 		"levelNum": 14.4,
 		"songID": "S19e3331c0e408af573d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254143,7 +256475,11 @@
 		"level": "15",
 		"levelNum": 15.4,
 		"songID": "S19e3331c0e408af573d",
-		"versions": ["xversex", "xversex-intl", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-intl",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254157,7 +256493,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0e59d555be7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254171,7 +256510,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0e59d555be7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254185,7 +256527,10 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19e3331c0e59d555be7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254199,7 +256544,10 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e3331c0e59d555be7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254213,7 +256561,10 @@
 		"level": "7",
 		"levelNum": 7,
 		"songID": "S19e3331c0e6a97ba7f7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254227,7 +256578,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0e6a97ba7f7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254241,7 +256595,10 @@
 		"level": "10",
 		"levelNum": 10.3,
 		"songID": "S19e3331c0e6a97ba7f7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254255,7 +256612,10 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19e3331c0e6a97ba7f7",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254269,7 +256629,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0e7ea58b97a",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254283,7 +256646,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0e7ea58b97a",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254297,7 +256663,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0e7ea58b97a",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254311,7 +256680,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0e7ea58b97a",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254325,7 +256697,10 @@
 		"level": "11+",
 		"levelNum": 11.9,
 		"songID": "S19e3331c0e889625775",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254339,7 +256714,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0e889625775",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254353,7 +256731,10 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e3331c0e889625775",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254367,7 +256748,10 @@
 		"level": "15+",
 		"levelNum": 15.5,
 		"songID": "S19e3331c0e889625775",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254381,7 +256765,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0e9c56daed6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254395,7 +256782,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0e9c56daed6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254409,7 +256799,10 @@
 		"level": "10+",
 		"levelNum": 10.9,
 		"songID": "S19e3331c0e9c56daed6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254423,7 +256816,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0e9c56daed6",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254437,7 +256833,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0ead1d67bae",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254451,7 +256850,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0ead1d67bae",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254465,7 +256867,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0ead1d67bae",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254479,7 +256884,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0ead1d67bae",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254493,7 +256901,10 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e3331c0ebed250cb3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254507,7 +256918,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0ebed250cb3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254521,7 +256935,10 @@
 		"level": "11",
 		"levelNum": 11.2,
 		"songID": "S19e3331c0ebed250cb3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254535,7 +256952,10 @@
 		"level": "14",
 		"levelNum": 14.2,
 		"songID": "S19e3331c0ebed250cb3",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254549,7 +256969,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c0ec71c0b67d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254563,7 +256986,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0ec71c0b67d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254577,7 +257003,10 @@
 		"level": "10+",
 		"levelNum": 10.9,
 		"songID": "S19e3331c0ec71c0b67d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254591,7 +257020,10 @@
 		"level": "13+",
 		"levelNum": 13.8,
 		"songID": "S19e3331c0ec71c0b67d",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254605,7 +257037,10 @@
 		"level": "7+",
 		"levelNum": 7.5,
 		"songID": "S19e3331c0ed4f064de2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254619,7 +257054,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0ed4f064de2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254633,7 +257071,10 @@
 		"level": "12",
 		"levelNum": 12.3,
 		"songID": "S19e3331c0ed4f064de2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254647,7 +257088,10 @@
 		"level": "14",
 		"levelNum": 14.3,
 		"songID": "S19e3331c0ed4f064de2",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254661,7 +257105,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0ee3136dfa8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254675,7 +257122,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0ee3136dfa8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254689,7 +257139,10 @@
 		"level": "9+",
 		"levelNum": 9.5,
 		"songID": "S19e3331c0ee3136dfa8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254703,7 +257156,10 @@
 		"level": "14",
 		"levelNum": 14.1,
 		"songID": "S19e3331c0ee3136dfa8",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254717,7 +257173,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0efdc9cb847",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254731,7 +257190,10 @@
 		"level": "3",
 		"levelNum": 3,
 		"songID": "S19e3331c0efdc9cb847",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254745,7 +257207,10 @@
 		"level": "10",
 		"levelNum": 10.1,
 		"songID": "S19e3331c0efdc9cb847",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254759,7 +257224,10 @@
 		"level": "13+",
 		"levelNum": 13.7,
 		"songID": "S19e3331c0efdc9cb847",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254773,7 +257241,10 @@
 		"level": "6",
 		"levelNum": 6,
 		"songID": "S19e3331c0f00dc0526b",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254787,7 +257258,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c0f00dc0526b",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254801,7 +257275,10 @@
 		"level": "11",
 		"levelNum": 11,
 		"songID": "S19e3331c0f00dc0526b",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254815,7 +257292,10 @@
 		"level": "14",
 		"levelNum": 14,
 		"songID": "S19e3331c0f00dc0526b",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254829,7 +257309,10 @@
 		"level": "5",
 		"levelNum": 5,
 		"songID": "S19e3331c11951ec5f5c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254843,7 +257326,10 @@
 		"level": "2",
 		"levelNum": 2,
 		"songID": "S19e3331c11951ec5f5c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254857,7 +257343,10 @@
 		"level": "9",
 		"levelNum": 9,
 		"songID": "S19e3331c11951ec5f5c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	},
 	{
 		"data": {
@@ -254871,6 +257360,9 @@
 		"level": "12",
 		"levelNum": 12,
 		"songID": "S19e3331c11951ec5f5c",
-		"versions": ["xversex", "xversex-omni"]
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
 	}
 ]

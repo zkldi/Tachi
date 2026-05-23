@@ -34,7 +34,7 @@ import { CreateQuestMap, Dedupe, type JSONAttributeDiff, JSONCompare } from "./m
 import { type ValueGetterOrHybrid } from "./ztable/search";
 
 /**
- * Given a repo and a reference return the status of seeds/collections
+ * Given a repo and a reference return the status of db/seeds
  * as of that commit.
  *
  * If "WORKING_DIRECTORY" is passed as a ref, and the repository is local, this will
@@ -67,7 +67,7 @@ export async function LoadSeeds(repo: string, ref: string): Promise<Partial<AllD
 				const res = await fetch(
 					`https://raw.githubusercontent.com/${repo.substring(
 						"GitHub:".length,
-					)}/${ref}/seeds/collections/${file}`,
+					)}/${ref}/db/seeds/${file}`,
 				);
 
 				if (res.status === 404) {

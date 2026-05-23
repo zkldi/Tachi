@@ -1,4 +1,4 @@
-import type { GameGroup } from "tachi-common";
+import type { GameGroup, V3Game } from "tachi-common";
 
 import fs from "fs/promises";
 /* eslint-disable no-await-in-loop */
@@ -8,34 +8,45 @@ import { asyncExec } from "#utils/misc";
 import os from "os";
 import path from "path";
 
+/** On-disk seed JSON basename (no extension), e.g. `songs-iidx`, `charts-bms-7k`. */
 export type SeedsCollections =
 	| "bms-course-lookup"
 	| "folders"
+	| "goals"
+	| "questlines"
+	| "quests"
 	| "tables"
-	| `charts-${GameGroup}`
+	| `charts-${V3Game}`
 	| `songs-${GameGroup}`;
+
+/** Relative to the monorepo root. */
+export const SEEDS_COLLECTIONS_DIR = "db/seeds";
+
+interface DatabaseSeedsRepoOpts {
+	/** Monorepo root containing `db/seeds` and `typescript/seeds-scripts`. */
+	repoRoot: string;
+	shouldDestroy?: "YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD" | false;
+	/** When set, `.Destroy()` removes this path instead of `baseDir`. */
+	destroyPath?: string;
+}
 
 /**
  * Class that encapsulates the behaviour of a seeds repo.
  */
 export class DatabaseSeedsRepo {
 	private readonly baseDir: string;
+	private readonly destroyPath: string;
+	private readonly repoRoot: string;
 	private readonly shouldDestroy: "YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD" | false;
 
 	/**
-	 * Create a seeds repository.
-	 *
-	 * @param baseDir - A path to the `collections` folder in seeds.
-	 * @param shouldDestroy - Whether this repository should be destroyed when .Destroy()
-	 * is called or not. This defaults to false, and will result in nothing happening
-	 * on cleanup. This behaviour is useful for things like local seeds work.
+	 * @param baseDir - Absolute path to `db/seeds` (the collections directory).
 	 */
-	constructor(
-		baseDir: string,
-		shouldDestroy: "YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD" | false = false,
-	) {
+	constructor(baseDir: string, opts: DatabaseSeedsRepoOpts) {
 		this.baseDir = baseDir;
-		this.shouldDestroy = shouldDestroy;
+		this.repoRoot = opts.repoRoot;
+		this.shouldDestroy = opts.shouldDestroy ?? false;
+		this.destroyPath = opts.destroyPath ?? baseDir;
 	}
 
 	/**
@@ -66,19 +77,28 @@ export class DatabaseSeedsRepo {
 
 		return asyncExec(
 			`git config user.name "${ServerConfig.SEEDS_CONFIG.USER_NAME}"`,
-			this.baseDir,
+			this.repoRoot,
 		)
-			.then(() => asyncExec(`git config user.email "${email}"`, this.baseDir))
+			.then(() => asyncExec(`git config user.email "${email}"`, this.repoRoot))
 			.then(() =>
 				asyncExec(
 					`git remote set-url origin "https://$GIT_USERNAME:$GIT_PASSWORD@${url.host}${url.pathname}"`,
-					this.baseDir,
+					this.repoRoot,
 				),
 			);
 	}
 
 	private CollectionNameToPath(collectionName: SeedsCollections) {
 		return path.join(this.baseDir, `${collectionName}.json`);
+	}
+
+	private async runSortSeeds(): Promise<void> {
+		const sortScript = this.sortSeedsScriptPath();
+		await asyncExec(`node "${sortScript}"`, this.repoRoot);
+	}
+
+	private sortSeedsScriptPath(): string {
+		return path.join(this.repoRoot, "typescript/seeds-scripts/sort-seeds.js");
 	}
 
 	/**
@@ -92,38 +112,27 @@ export class DatabaseSeedsRepo {
 		log.debug(`Received commit-back request.`);
 
 		try {
-			const { stdout: statusOut } = await asyncExec(`git status --porcelain`, this.baseDir);
+			const { stdout: statusOut } = await asyncExec(
+				`git status --porcelain -- ${SEEDS_COLLECTIONS_DIR}`,
+				this.repoRoot,
+			);
 
 			if (statusOut === "") {
 				log.info(`No changes. Not committing any changes back.`);
 				return false;
 			}
 
-			// Ok, Testing this is actually a bad idea. Hear me out.
-			// It's exceptionally difficult to actually store and look at the test output. (potentially huge)
-			// especially when filesystem size is our biggest constraint at the moment.
-			//
-			// It's better for us to commit straight away, and have the tests on our github CI fail
-			// (and subsequently yell at us.)
-			//
-			// try {
-			// 	await asyncExec(`cd "${this.baseDir}/scripts" || exit 2; pnpm install; pnpm test`);
-			// } catch ({ err, stdout, stderr }) {
-			// 	log.error({ err }, `Testing the changes failed. ${err}. Not committing back!`);
-			// 	throw err;
-			// }
-
 			log.info(`Changes detected. Authenticating with Github.`);
 
 			await this.#AuthenticateWithGitServer();
 
-			await asyncExec(`git add .`, this.baseDir);
+			await asyncExec(`git add -- ${SEEDS_COLLECTIONS_DIR}`, this.repoRoot);
 			const { stdout: commitOut } = await asyncExec(
-				`git commit -am "automated: ${commitMsg}"`,
-				this.baseDir,
+				`git commit -m "automated: ${commitMsg}" -- ${SEEDS_COLLECTIONS_DIR}`,
+				this.repoRoot,
 			);
 
-			await asyncExec(`git push`, this.baseDir);
+			await asyncExec(`git push`, this.repoRoot);
 
 			log.info(`Commit: ${commitOut}.`);
 
@@ -137,7 +146,7 @@ export class DatabaseSeedsRepo {
 	Destroy() {
 		if (this.shouldDestroy === "YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD") {
 			// scary
-			return fs.rm(this.baseDir, { recursive: true, force: true });
+			return fs.rm(this.destroyPath, { recursive: true, force: true });
 		}
 
 		log.info(`Refusing to delete seeds as they were instantiated locally.`);
@@ -154,12 +163,14 @@ export class DatabaseSeedsRepo {
 	/**
 	 * Get all available collections as bare filenames, without any extension.
 	 *
-	 * As an example, seeds/collections/songs-iidx.json would be "songs-iidx".
+	 * As an example, `db/seeds/songs-iidx.json` would be "songs-iidx".
 	 */
 	async ListCollections() {
 		const colls = await fs.readdir(this.baseDir);
 
-		return colls.map((e) => path.parse(e).name) as Array<SeedsCollections>;
+		return colls
+			.filter((name) => name.endsWith(".json"))
+			.map((e) => path.parse(e).name) as Array<SeedsCollections>;
 	}
 
 	/**
@@ -192,7 +203,7 @@ export class DatabaseSeedsRepo {
 		}
 
 		log.info(`Pulling updates.`);
-		return asyncExec(`git pull`);
+		return asyncExec(`git pull`, this.repoRoot);
 	}
 
 	/**
@@ -216,7 +227,7 @@ export class DatabaseSeedsRepo {
 	 */
 	switchBranch(newBranch: string) {
 		log.info(`Switching to '${newBranch}'...`);
-		return asyncExec(`git switch '${newBranch}'`, this.baseDir);
+		return asyncExec(`git switch '${newBranch}'`, this.repoRoot);
 	}
 
 	/**
@@ -226,11 +237,21 @@ export class DatabaseSeedsRepo {
 	 * @param content - A new array of objects to write.
 	 */
 	async WriteCollection(collectionName: SeedsCollections, content: Array<unknown>) {
-		await fs.writeFile(this.CollectionNameToPath(collectionName), JSON.stringify(content));
+		await fs.writeFile(
+			this.CollectionNameToPath(collectionName),
+			JSON.stringify(content, null, "\t"),
+		);
 
-		// Deterministically sort whatever content we just wrote.
-		await asyncExec(`node ../scripts/sort-seeds.js`, this.baseDir);
+		await this.runSortSeeds();
 	}
+}
+
+function seedsRepoFromBaseDir(
+	baseDir: string,
+	opts: { repoRoot?: string } & Omit<DatabaseSeedsRepoOpts, "repoRoot">,
+): DatabaseSeedsRepo {
+	const repoRoot = opts.repoRoot ?? path.resolve(baseDir, "../..");
+	return new DatabaseSeedsRepo(baseDir, { ...opts, repoRoot });
 }
 
 /**
@@ -249,7 +270,6 @@ export async function PullDatabaseSeeds() {
 
 			// stderr in git clone is normal output.
 			// stdout is for errors.
-			// there were expletives below this comment, but I have removed them.
 			const { stdout: cloneStdout } = await asyncExec(
 				`git clone --sparse --depth=1 "${ServerConfig.SEEDS_CONFIG.REPO_URL}" -b "${branch}" "${seedsDir}"`,
 			);
@@ -259,28 +279,28 @@ export async function PullDatabaseSeeds() {
 			}
 
 			const { stdout: checkoutStdout } = await asyncExec(
-				`git sparse-checkout add seeds`,
+				`git sparse-checkout set ${SEEDS_COLLECTIONS_DIR} typescript/seeds-scripts`,
 				seedsDir,
 			);
-
-			// ^ now that we're in a monorepo, we only want the seeds.
-			// this shaves quite a bit of time off of the clone.
 
 			if (checkoutStdout) {
 				throw new Error(checkoutStdout);
 			}
 
-			return new DatabaseSeedsRepo(
-				`${seedsDir}/seeds/collections`,
-				"YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD",
-			);
+			return seedsRepoFromBaseDir(path.join(seedsDir, SEEDS_COLLECTIONS_DIR), {
+				repoRoot: seedsDir,
+				destroyPath: seedsDir,
+				shouldDestroy: "YES_IM_SURE_PLEASE_LET_THIS_DIRECTORY_BE_RM_RFD",
+			});
 		} catch (e) {
 			const { err, stderr } = e as { err: Error; stderr: string };
 			log.error(`Error cloning seeds. ${stderr}.`);
 			throw err;
 		}
 	} else if (ServerConfig.SEEDS_CONFIG?.TYPE === "LOCAL_FILES") {
-		const local = new DatabaseSeedsRepo(ServerConfig.SEEDS_CONFIG.PATH);
+		const local = seedsRepoFromBaseDir(ServerConfig.SEEDS_CONFIG.PATH, {
+			shouldDestroy: false,
+		});
 
 		await local.pull();
 
