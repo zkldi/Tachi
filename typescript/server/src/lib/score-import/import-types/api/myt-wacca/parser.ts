@@ -3,6 +3,7 @@ import type { ParserFunctionReturns } from "#lib/score-import/import-types/commo
 import type { EmptyObject } from "#utils/types";
 import type { GamesForGroup, integer } from "tachi-common";
 
+import { GetImportTimestop } from "#lib/score-import/framework/common/timestop";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import { drainMytPlaylogStream } from "#lib/score-import/import-types/common/api-myt/buffer-playlog-stream";
 import {
@@ -21,6 +22,7 @@ async function* streamPlaylog(
 	apiId: string,
 	log: KtLogger,
 	userID: integer,
+	lastScoreTime: Date | null,
 ): AsyncIterable<MytWaccaScore> {
 	const client = createClient(WaccaUser, CreateMytTransport());
 	const request = create(PlaylogRequestSchema, { apiId });
@@ -30,10 +32,20 @@ async function* streamPlaylog(
 		userID,
 	});
 
+	const cutoff = lastScoreTime?.getTime() ?? null;
+
 	for (const item of items) {
 		if (!item.info) {
 			log.warn(`Received WACCA playlog stream item with no info - skipping.`);
 			continue;
+		}
+
+		if (cutoff !== null) {
+			const parsed = Date.parse(item.info.userPlayDate);
+
+			if (!Number.isNaN(parsed) && parsed <= cutoff) {
+				continue;
+			}
 		}
 
 		yield item.info;
@@ -44,7 +56,10 @@ export default async function ParseMytWACCA(
 	userID: integer,
 	log: KtLogger,
 ): Promise<ParserFunctionReturns<MytWaccaScore, EmptyObject, GamesForGroup["wacca"]>> {
-	const titleApiId = await FetchMytTitleAPIID(userID, "wacca", log);
+	const [titleApiId, lastScoreTime] = await Promise.all([
+		FetchMytTitleAPIID(userID, "wacca", log),
+		GetImportTimestop(userID, "api/myt-wacca"),
+	]);
 
 	let classProvider;
 
@@ -57,7 +72,7 @@ export default async function ParseMytWACCA(
 
 	return {
 		service: "MYT",
-		iterable: streamPlaylog(titleApiId, log, userID),
+		iterable: streamPlaylog(titleApiId, log, userID, lastScoreTime),
 		context: {},
 		classProvider,
 		gameGroup: "wacca",

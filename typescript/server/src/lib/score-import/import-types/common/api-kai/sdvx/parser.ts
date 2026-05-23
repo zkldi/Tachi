@@ -6,6 +6,7 @@ import nodeFetch from "#utils/fetch";
 
 import type { KaiContext } from "../types";
 
+import { applyKaiTimestop } from "../kai-timestop";
 import { CreateKaiReauthFunction } from "../reauth";
 import { type KaiAPIReauthFunction, TraverseKaiAPI } from "../traverse-api";
 import { KaiTypeToBaseURL } from "../utils";
@@ -17,6 +18,7 @@ export async function ParseKaiSDVX(
 	log: KtLogger,
 	fetch = nodeFetch,
 	reauthFn: KaiAPIReauthFunction | null = null,
+	lastScoreTime: Date | null = null,
 ): Promise<ParserFunctionReturns<unknown, KaiContext, GamesForGroup["sdvx"]>> {
 	const baseUrl = KaiTypeToBaseURL(service);
 
@@ -27,13 +29,16 @@ export async function ParseKaiSDVX(
 
 	return {
 		service,
-		iterable: TraverseKaiAPI(
-			baseUrl,
-			"/api/sdvx/v1/play_history",
-			authDoc.token,
-			log,
-			resolvedReauthFn,
-			fetch,
+		iterable: applyKaiTimestop(
+			TraverseKaiAPI(
+				baseUrl,
+				"/api/sdvx/v1/play_history",
+				authDoc.token,
+				log,
+				resolvedReauthFn,
+				fetch,
+			),
+			lastScoreTime,
 		),
 		context: {
 			service,
