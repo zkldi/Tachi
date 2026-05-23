@@ -1,15 +1,13 @@
 import React from "react";
 import { type integer } from "tachi-common";
+import { FmtStars, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
-export function StarField({
-	stars: stars,
-	compact: compact,
-}: {
-	compact: boolean;
-	stars: integer;
-}) {
-	if (stars !== "★★★★★(虹)") {
-		return <>{compact ? stars.replace(/☆/gu, "") : stars}</>;
+export function StarField({ stars, compact }: { compact: boolean; stars: string | integer }) {
+	if (typeof stars !== "number") {
+		stars = StarEnumToInt(stars);
+	}
+	if (stars < 6) {
+		return <>{FmtStars(stars, compact)}</>;
 	}
 	return (
 		<span
@@ -35,7 +33,6 @@ export default function OngekiPlatinumCell({
 	stars: number;
 }) {
 	const percentage = (platinumScore / maxPlatScore) * 100;
-
 	return (
 		<td>
 			<div className="d-flex flex-column">

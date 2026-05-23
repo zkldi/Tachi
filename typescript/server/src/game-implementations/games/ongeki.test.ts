@@ -12,6 +12,7 @@ import {
 	ONGEKI_BELL_LAMPS,
 	ONGEKI_GRADES,
 	ONGEKI_NOTE_LAMPS,
+	// ONGEKI_PLATINUM_STARS,
 	type ScoreData,
 } from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
@@ -30,7 +31,7 @@ const scoreData: ScoreData<"ongeki"> = {
 	bellLamp: "FULL BELL",
 	score: 1_001_500,
 	platinumScore: 970,
-	platinumStars: "☆☆☆☆☆",
+	platinumStars: "4-star",
 	grade: "SSS",
 	judgements: {},
 	optional: { enumIndexes: {}, bellCount: 100 },
@@ -38,6 +39,7 @@ const scoreData: ScoreData<"ongeki"> = {
 		grade: ONGEKI_GRADES.SSS,
 		noteLamp: ONGEKI_NOTE_LAMPS.CLEAR,
 		bellLamp: ONGEKI_BELL_LAMPS.FULL_BELL,
+		// platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
 	},
 };
 
@@ -201,7 +203,7 @@ describe("ONGEKI_IMPL", () => {
 		});
 
 		it("maps platinum score to stars", () => {
-			const f = (platinumScore: number, expected: number) =>
+			const f = (platinumScore: number, expected: string) =>
 				expect(
 					ONGEKI_IMPL.scoreDeriver(
 						dmf(baseMetrics, { platinumScore }) as never,
@@ -209,14 +211,14 @@ describe("ONGEKI_IMPL", () => {
 					).platinumStars,
 				).toBe(expected);
 
-			f(939, 0);
-			f(940, 1);
-			f(950, 2);
-			f(960, 3);
-			f(970, 4);
-			f(980, 5);
-			f(990, 6);
-			f(1000, 6);
+			f(939, "0-star");
+			f(940, "1-star");
+			f(950, "2-star");
+			f(960, "3-star");
+			f(970, "4-star");
+			f(980, "5-star");
+			f(990, "R-star");
+			f(1000, "R-star");
 		});
 	});
 
@@ -226,9 +228,7 @@ describe("ONGEKI_IMPL", () => {
 
 		expect(calcs.rating).toBe(12.1);
 		expect(calcs.scoreRating).toBe(12.1);
-		expect(calcs.starRating).toBe(
-			Math.floor(scoreData.platinumStars * (chart.levelNum * 10) ** 2) / 100000.0,
-		);
+		expect(calcs.starRating).toBe(Math.floor(4 * (chart.levelNum * 10) ** 2) / 100000.0);
 	});
 
 	it.skip("Session Calcs", () => {
@@ -308,7 +308,7 @@ describe("ONGEKI_IMPL", () => {
 			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumScore(1500)).toBe(
 				"Get 1,500 Platinum Score on",
 			);
-			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumStars(3)).toBe("Get ★★★☆☆ on");
+			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumStars("3-star")).toBe("Get ★★★☆☆ on");
 		});
 
 		it("progress", () => {
@@ -373,6 +373,7 @@ describe("ONGEKI_IMPL", () => {
 					enumIndexes: {
 						noteLamp: ONGEKI_NOTE_LAMPS.FULL_COMBO,
 						bellLamp: ONGEKI_BELL_LAMPS.FULL_BELL,
+						// platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
 					},
 				},
 			});
@@ -386,7 +387,7 @@ describe("ONGEKI_IMPL", () => {
 				...scoreData,
 				score: 0,
 				platinumScore: 990,
-				platinumStars: 6,
+				platinumStars: "R-star",
 			};
 
 			await insertOngekiScore({ userId, scoreId: main.scoreID, sd: scoreData, timeMs: 1000 });
@@ -402,7 +403,7 @@ describe("ONGEKI_IMPL", () => {
 				scoreData: {
 					score: scoreData.score,
 					platinumScore: 990,
-					platinumStars: 6,
+					platinumStars: "R-star",
 				},
 			});
 		});

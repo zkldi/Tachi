@@ -1,6 +1,7 @@
 import type { FolderStatsInfo } from "#types/api-returns";
 
 import { WindowContext } from "#context/WindowContext";
+import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { ToFixedFloor, UppercaseFirst } from "#util/misc";
 import React, { useContext } from "react";
@@ -77,6 +78,7 @@ export default function FolderEnumDistributionBreakdown({
 	/** When stacking inside one card, skip the inset top rule on the first section. */
 	suppressTopRule?: boolean;
 }) {
+	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS.ongeki;
 	const remainderLine = remainderLabel ?? "Not played";
 
 	const {
@@ -101,8 +103,10 @@ export default function FolderEnumDistributionBreakdown({
 	let filled = 0;
 	let cumulativeCount = 0;
 	const rows = [];
+
 	for (let vi = conf.values.length - 1; vi >= valueIndexFloor; vi--) {
 		const label = conf.values[vi];
+		const printedLabel = gptImpl.enumFormatters?.[enumMetric]?.[conf.values[vi]] ?? label;
 		const count = bucket[label] ?? 0;
 
 		filled += count;
@@ -154,7 +158,7 @@ export default function FolderEnumDistributionBreakdown({
 								width: "0.5rem",
 							}}
 						/>
-						{label}
+						{printedLabel}
 					</span>
 					<span className="ms-auto tabular-nums text-nowrap">
 						<span

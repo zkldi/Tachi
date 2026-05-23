@@ -603,6 +603,16 @@ export enum ONGEKI_GRADES {
 	SSS_PLUS = 11,
 }
 
+export enum ONGEKI_STARS {
+	FIVE_STAR = 5,
+	FOUR_STAR = 4,
+	ONE_STAR = 1,
+	RAINBOW_STAR = 6,
+	THREE_STAR = 3,
+	TWO_STAR = 2,
+	ZERO_STAR = 0,
+}
+
 export enum ONGEKI_COLOURS {
 	BLUE = 0,
 	COPPER = 5,

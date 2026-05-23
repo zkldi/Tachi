@@ -253,24 +253,23 @@ export function HumaniseGoalOutOf(v3Game: V3Game, key: GoalKeys, value: number) 
 		);
 	}
 
-	if (metricConf.type === "ENUM") {
-		const val = metricConf.values[value];
-
-		if (val === undefined) {
-			throw new Error(
-				`Attempted to format outOf for metric '${key}' but no such enum exists at index ${value}. (${v3Game})`,
-			);
-		}
-
-		return val;
-	}
-
 	const gptImpl = GAME_IMPLEMENTATIONS[v3Game];
 
 	// @ts-expect-error yeah this is technically unsafe, whatever
 	const fmt: GoalCriteriaFormatter | undefined = gptImpl.goalOutOfFormatters[key];
 
 	if (!fmt) {
+		if (metricConf.type === "ENUM") {
+			const val = metricConf.values[value];
+
+			if (val === undefined) {
+				throw new Error(
+					`Attempted to format outOf for metric '${key}' but no such enum exists at index ${value}. (${v3Game})`,
+				);
+			}
+
+			return val;
+		}
 		throw new Error(
 			`Invalid metric '${key}' passed to format outOf, as no goalCriteriaFormatter exists for it.`,
 		);

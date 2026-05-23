@@ -2,6 +2,7 @@ import type { FolderStatsInfo } from "#types/api-returns";
 
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Muted from "#components/util/Muted";
+import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { ToFixedFloor } from "#util/misc";
 import React, { useLayoutEffect, useRef, useState } from "react";
@@ -32,6 +33,7 @@ export default function FolderEnumProgressBar({
 }) {
 	const barRef = useRef<HTMLDivElement>(null);
 	const [barWidthPx, setBarWidthPx] = useState(0);
+	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS.ongeki;
 
 	useLayoutEffect(() => {
 		const el = barRef.current;
@@ -71,11 +73,12 @@ export default function FolderEnumProgressBar({
 	let filled = 0;
 	for (let vi = conf.values.length - 1; vi >= valueIndexFloor; vi--) {
 		const v = conf.values[vi];
+		const printedV = gptImpl.enumFormatters?.[enumMetric]?.[conf.values[vi]] ?? v;
 		const count = bucket[v] ?? 0;
 		if (count > 0) {
 			filled += count;
 			segments.push({
-				label: v,
+				label: printedV,
 				count,
 				rawFill: colours?.[v] ?? "var(--bs-secondary-bg)",
 			});

@@ -44,6 +44,18 @@ export const OngekiColours = [
 	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ RatingRefresh"),
 ];
 
+type StarEnum = "0-star" | "1-star" | "2-star" | "3-star" | "4-star" | "5-star" | "R-star";
+
+export const StarEnumToInt = (v: StarEnum) => (v === "R-star" ? 6 : parseInt(v[0], 10));
+
+export const FmtStars = (v: number | StarEnum, compact: boolean) => {
+	const n = typeof v === "number" ? v : StarEnumToInt(v);
+	if (n > 5) {
+		return "★★★★★(虹)";
+	}
+	return `${"★".repeat(n)}${"☆".repeat(compact ? 0 : 5 - n)}`;
+};
+
 export const GAME_ONGEKI_CONF = {
 	providedMetrics: {
 		score: {
@@ -83,8 +95,8 @@ export const GAME_ONGEKI_CONF = {
 		},
 		platinumStars: {
 			type: "ENUM",
-			values: ["☆☆☆☆☆", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", "★★★★★(虹)"],
-			minimumRelevantValue: "★☆☆☆☆",
+			values: ["0-star", "1-star", "2-star", "3-star", "4-star", "5-star", "R-star"],
+			minimumRelevantValue: "1-star",
 			description: "The number of platinum stars of this score",
 		},
 	},

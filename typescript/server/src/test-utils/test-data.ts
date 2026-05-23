@@ -1538,7 +1538,7 @@ export const TestingOngekiScorePB: PBScoreDocument<"ongeki"> = {
 		noteLamp: "ALL BREAK+",
 		bellLamp: "FULL BELL",
 		platinumScore: 1000,
-		platinumStars: "★★★★★(虹)",
+		platinumStars: "R-star",
 		grade: "SSS+",
 		enumIndexes: {
 			grade: 11,

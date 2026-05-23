@@ -13,7 +13,7 @@ import MusecaJudgementCell from "#components/tables/cells/MusecaJudgementCell";
 import OngekiDamageCell from "#components/tables/cells/OngekiDamageCell";
 import OngekiJudgementCell from "#components/tables/cells/OngekiJudgementCell";
 import OngekiLampCell from "#components/tables/cells/OngekiLampCell";
-import OngekiPlatinumCell from "#components/tables/cells/OngekiPlatinumCell";
+import OngekiPlatinumCell, { StarField } from "#components/tables/cells/OngekiPlatinumCell";
 import OngekiScoreRatingCell from "#components/tables/cells/OngekiScoreRatingCell";
 import PopnJudgementCell from "#components/tables/cells/PopnJudgementCell";
 import PopnLampCell from "#components/tables/cells/PopnLampCell";
@@ -804,6 +804,17 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				RAINBOW_EX_TRUE: { ...RAINBOW_EX_GRADIENT, shine: true },
 			},
 		},
+		enumFormatters: {
+			platinumStars: {
+				"R-star": <StarField compact="false" stars="6" />,
+				"5-star": <StarField compact="false" stars="5" />,
+				"4-star": <StarField compact="false" stars="4" />,
+				"3-star": <StarField compact="false" stars="3" />,
+				"2-star": <StarField compact="false" stars="2" />,
+				"1-star": <StarField compact="false" stars="1" />,
+				"0-star": <StarField compact="false" stars="0" />,
+			},
+		},
 		enumColours: {
 			grade: {
 				D: COLOUR_SET.red,
@@ -831,13 +842,13 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				"FULL BELL": COLOUR_SET.gold,
 			},
 			platinumStars: {
-				"☆☆☆☆☆": COLOUR_SET.gray,
-				"★☆☆☆☆": COLOUR_SET.red,
-				"★★☆☆☆": COLOUR_SET.orange,
-				"★★★☆☆": COLOUR_SET.blue,
-				"★★★★☆": COLOUR_SET.green,
-				"★★★★★": COLOUR_SET.gold,
-				"★★★★★(虹)": COLOUR_SET.white,
+				"0-star": COLOUR_SET.gray,
+				"1-star": COLOUR_SET.red,
+				"2-star": COLOUR_SET.orange,
+				"3-star": COLOUR_SET.blue,
+				"4-star": COLOUR_SET.green,
+				"5-star": COLOUR_SET.gold,
+				"R-star": COLOUR_SET.white,
 			},
 		},
 		difficultyColours: {

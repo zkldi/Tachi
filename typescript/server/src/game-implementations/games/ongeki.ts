@@ -6,6 +6,7 @@ import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { ONGEKIRating } from "rg-stats";
 import { type ChartDocument, FmtNum, GetGrade, ONGEKI_GBOUNDARIES } from "tachi-common";
+import { FmtStars, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
 import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
 
@@ -20,19 +21,19 @@ const starCount = (platinumScore: number, maxPlatinumScore: number) => {
 	const v = Math.max(0, Math.min(pct, 99) - 93);
 	switch (v) {
 		case 0:
-			return "☆☆☆☆☆";
+			return "0-star";
 		case 1:
-			return "★☆☆☆☆";
+			return "1-star";
 		case 2:
-			return "★★☆☆☆";
+			return "2-star";
 		case 3:
-			return "★★★☆☆";
+			return "3-star";
 		case 4:
-			return "★★★★☆";
+			return "4-star";
 		case 5:
-			return "★★★★★";
+			return "5-star";
 		case 6:
-			return "★★★★★(虹)";
+			return "R-star";
 		default:
 			throw new Error("Invalid star count");
 	}
@@ -92,9 +93,7 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 			),
 			starRating: ONGEKIRating.calculatePlatinum(
 				chart.levelNum,
-				derivedData.platinumStars
-					.split("")
-					.reduce((a: number, v: string) => a + (v === "★" ? 1 : 0), 0),
+				StarEnumToInt(derivedData.platinumStars),
 			),
 		};
 	},
@@ -162,6 +161,7 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 	goalCriteriaFormatters: {
 		score: GoalFmtScore,
 		platinumScore: (val: number) => `Get ${val.toLocaleString("en-GB")} Platinum Score on`,
+		platinumStars: (val: string) => `Get ${FmtStars(val, false)} on`,
 	},
 	goalProgressFormatters: {
 		grade: (pb, gradeIndex) =>
@@ -175,10 +175,12 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 		bellLamp: (pb) => pb.scoreData.bellLamp,
 		score: (pb) => FmtNum(pb.scoreData.score),
 		platinumScore: (pb) => FmtNum(pb.scoreData.platinumScore),
+		platinumStars: (pb) => FmtStars(pb.scoreData.platinumStars, false),
 	},
 	goalOutOfFormatters: {
 		score: GoalOutOfFmtScore,
 		platinumScore: GoalOutOfFmtScore,
+		platinumStars: (v) => FmtStars(v, false),
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(
