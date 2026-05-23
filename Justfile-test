@@ -5,7 +5,7 @@ check:
 	source .scripts/multi_evaluator.sh
 
 	evaluate "just fmt-check"
-	evaluate "bun run --filter '*' lint"
+	evaluate "bun run --filter '*' lint -- --quiet"
 	evaluate "just typecheck"
 	evaluate "bun .scripts/ts_machete.js"
 	evaluate "bun .scripts/ts_autoinherit.js --check"
