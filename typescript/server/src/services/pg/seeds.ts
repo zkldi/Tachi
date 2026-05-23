@@ -1,6 +1,8 @@
 import {
 	ALL_GAMES,
 	type ChartDocument,
+	GAME_GROUP_CONFIGS,
+	GameToGameGroup,
 	type SEEDS_BMSCourseDocument,
 	type SEEDS_ChartDocument,
 	type SEEDS_FolderDocument,
@@ -324,6 +326,14 @@ export function buildGoalIdRemap(seedsDir: string): Map<string, string> {
 // ── Core import logic ──────────────────────────────────────────────────────
 
 export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promise<void> {
+	// Games whose charts originate on the server (via IR uploads) and are backsynced to seeds —
+	// never delete their rows during import, since the seeds may be behind the DB.
+	const dynamicGameGroups = new Set(
+		(Object.entries(GAME_GROUP_CONFIGS) as Array<[string, { dynamicContent: boolean }]>)
+			.filter(([, config]) => config.dynamicContent)
+			.map(([group]) => group),
+	);
+
 	const files = new Set<string>(fs.readdirSync(seedsDir));
 	const songFiles = [...files].filter((f) => f.startsWith("songs-") && f.endsWith(".json"));
 	const chartFiles = [...files].filter((f) => f.startsWith("charts-") && f.endsWith(".json"));
@@ -698,6 +708,11 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 
 		// chart — folder_chart_lookup cascades; score/pb block (intentional)
 		for (const { game, ids } of chartIdsByGame) {
+			if (dynamicGameGroups.has(GameToGameGroup(game as V3Game))) {
+				log.info(`  skipping stale-delete for dynamic-content game ${game}`);
+				continue;
+			}
+
 			try {
 				const n = await deleteSeedStale(txn, "chart", "chart.id", ids, {
 					column: "chart.game",
@@ -718,6 +733,11 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 
 		// song — chart blocks (intentional)
 		for (const { gameGroup, ids } of songIdsByGroup) {
+			if (dynamicGameGroups.has(gameGroup as GameGroup)) {
+				log.info(`  skipping stale-delete for dynamic-content game group ${gameGroup}`);
+				continue;
+			}
+
 			try {
 				const n = await deleteSeedStale(txn, "song", "song.id", ids, {
 					column: "song.game_group",
