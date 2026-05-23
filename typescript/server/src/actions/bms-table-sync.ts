@@ -18,6 +18,7 @@ import {
 	type BMSTableInfo,
 	type ChartDocument,
 	type ChartDocumentData,
+	GameToGameGroup,
 } from "tachi-common";
 
 const UPDATE_CHUNK = 500;
@@ -110,6 +111,7 @@ async function ImportTableLevels(
 	prefix: string,
 	game: BMSGames,
 ) {
+	const gameGroup = GameToGameGroup(game);
 	let failures = 0;
 	let success = 0;
 	const total = tableEntries.length;
@@ -191,7 +193,7 @@ async function ImportTableLevels(
 						: sql`jsonb_set(data::jsonb, '{tableString}', to_jsonb(${tableString}::text))`,
 			})
 			.where("song.id", "=", chart.song.id)
-			.where("song.game_group", "=", "bms")
+			.where("song.game_group", "=", gameGroup)
 			.execute();
 
 		success++;

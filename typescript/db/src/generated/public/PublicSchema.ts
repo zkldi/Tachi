@@ -5,7 +5,6 @@ import type { default as PrivSvcCgCardInfoTable } from './PrivSvcCgCardInfo';
 import type { default as ScoreRederiveTable } from './ScoreRederive';
 import type { default as ClassAchievementTable } from './ClassAchievement';
 import type { default as AccountTable } from './Account';
-import type { default as ImportTimestopTable } from './ImportTimestop';
 import type { default as ImportTrackerTable } from './ImportTracker';
 import type { default as SvcFerSettingsTable } from './SvcFerSettings';
 import type { default as InviteLockTable } from './InviteLock';
@@ -78,8 +77,6 @@ export default interface PublicSchema {
   class_achievement: ClassAchievementTable;
 
   account: AccountTable;
-
-  import_timestop: ImportTimestopTable;
 
   import_tracker: ImportTrackerTable;
 
