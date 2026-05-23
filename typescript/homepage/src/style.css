@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
-	// This makes sizing make so much more sense to me
-	// The only downside I see is margins dont "collapse" into each-other
+	/* This makes sizing make so much more sense to me */
+	/* The only downside I see is margins dont "collapse" into each-other */
 	box-sizing: border-box;
 }
 
@@ -10,22 +10,22 @@ h1,
 h2,
 p,
 ul {
-	// Funky behaviour relating to box-sizing: border-box.
-	// Remove margin-top from elements to prevent them from "double spacing" each-other
+	/* Funky behaviour relating to box-sizing: border-box. */
+	/* Remove margin-top from elements to prevent them from "double spacing" each-other */
 	margin-top: unset;
 }
 
 html {
-	// We could do theme switching but ¯\_(ツ)_/¯
-	// We'd need to do an filter: invert() on the main logo png in light mode (or have a black-logo.png)
+	/* We could do theme switching but ¯\_(ツ)_/¯ */
+	/* We'd need to do an filter: invert() on the main logo png in light mode (or have a black-logo.png) */
 	--background-colour: #131313;
 	--body-colour: #f7f7f7;
 	--bokutachi-colour: #527acc;
 	--kamaitachi-colour: #e61c6e;
 
-	// This really only exists to stop me from making uneven spacing
-	// Crazy how consistent spacing makes a site feel 100x more professional
-	// There are smarter ways to do this but this works great for this set size
+	/* This really only exists to stop me from making uneven spacing */
+	/* Crazy how consistent spacing makes a site feel 100x more professional */
+	/* There are smarter ways to do this but this works great for this set size */
 	--curviness: 4px;
 	--sm-padding: calc(var(--curviness) * 2) calc(var(--curviness) * 3);
 	--md-padding: calc(var(--curviness) * 4) calc(var(--curviness) * 6);

@@ -138,6 +138,7 @@ services:
       - "8080:8080" # server
       - "3000:3000" # client
       - "3001:3001" # docs
+      - "3002:3002" # homepage
       - "3100:3100" # seeds
       - "9779:9779" # metrics
     volumes:

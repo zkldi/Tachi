@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
     paths:
-      - "homepage/**"
+      - "typescript/homepage/**"
       - ".github/workflows/homepage.yml"
   workflow_dispatch:
 
@@ -44,4 +44,4 @@ jobs:
       - name: Deploy
         env:
           TACHI_HOST: ${{ secrets.TACHI_HOST }}
-        run: rsync --recursive --compress --delete --progress ./homepage/dist/. "ci@${TACHI_HOST}:tachi"
+        run: rsync --recursive --compress --delete --progress ./typescript/homepage/dist/. "ci@${TACHI_HOST}:/srv/tachi-static/homepage/"

@@ -11,6 +11,7 @@
 		"TACHI_EMAIL_SECURE": "false"
 	},
 	"postAttachCommand": "./dev/bootstrap.sh",
+	"forwardPorts": [3001, 3002],
 	"updateRemoteUserUID": true,
 	"containerUser": "tachi",
 	"customizations": {

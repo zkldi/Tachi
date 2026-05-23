@@ -268,6 +268,15 @@
         "typescript": "catalog:",
       },
     },
+    "typescript/homepage": {
+      "name": "tachi-homepage",
+      "version": "0.1.0",
+      "devDependencies": {
+        "eslint-config-tachi": "workspace:*",
+        "prettier": "catalog:",
+        "vite": "catalog:",
+      },
+    },
     "typescript/rg-stats": {
       "name": "rg-stats",
       "version": "1.2.1",
@@ -2725,6 +2734,8 @@
     "tachi-db-migration-engine-cli": ["tachi-db-migration-engine-cli@workspace:typescript/db-cli"],
 
     "tachi-github-bot": ["tachi-github-bot@workspace:typescript/github-bot"],
+
+    "tachi-homepage": ["tachi-homepage@workspace:typescript/homepage"],
 
     "tachi-seeds-scripts": ["tachi-seeds-scripts@workspace:typescript/seeds-scripts"],
 
