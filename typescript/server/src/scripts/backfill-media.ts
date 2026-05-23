@@ -32,16 +32,16 @@
  * command line.
  */
 
+import type { Readable } from "node:stream";
 import type { Database } from "tachi-db";
 
-import { PutObjectCommand, GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { Kysely, PostgresDialect } from "kysely";
-import { parseArgs } from "node:util";
+import crypto from "node:crypto";
 import { buffer as streamToBuffer } from "node:stream/consumers";
-import type { Readable } from "node:stream";
+import { parseArgs } from "node:util";
 import pg from "pg";
 import sharp from "sharp";
-import crypto from "node:crypto";
 
 // ─── Constants (must match change-pfp.ts / change-banner.ts) ─────────────────
 
@@ -101,14 +101,10 @@ function requireArg(value: string | undefined, name: string, envVar: string): st
 	return value;
 }
 
-const pgUrl = requireArg(
-	envOr(values["pg-url"], "TACHI_PG_URL"),
-	"pg-url",
-	"TACHI_PG_URL",
-);
+const pgUrl = requireArg(envOr(values["pg-url"], "TACHI_PG_URL"), "pg-url", "TACHI_PG_URL");
 
 const s3Endpoint = requireArg(
-	envOr(values["endpoint"], "TACHI_CDN_SAVE_LOCATION_ENDPOINT"),
+	envOr(values.endpoint, "TACHI_CDN_SAVE_LOCATION_ENDPOINT"),
 	"endpoint",
 	"TACHI_CDN_SAVE_LOCATION_ENDPOINT",
 );
@@ -126,12 +122,12 @@ const s3SecretAccessKey = requireArg(
 );
 
 const s3Bucket = requireArg(
-	envOr(values["bucket"], "TACHI_CDN_SAVE_LOCATION_BUCKET"),
+	envOr(values.bucket, "TACHI_CDN_SAVE_LOCATION_BUCKET"),
 	"bucket",
 	"TACHI_CDN_SAVE_LOCATION_BUCKET",
 );
 
-const s3Region = envOr(values["region"], "TACHI_CDN_SAVE_LOCATION_REGION") ?? "us-east-1";
+const s3Region = envOr(values.region, "TACHI_CDN_SAVE_LOCATION_REGION") ?? "us-east-1";
 const keyPrefix = envOr(values["key-prefix"], "TACHI_CDN_SAVE_LOCATION_KEY_PREFIX") ?? "";
 const isDryRun = values["dry-run"] ?? false;
 
@@ -185,11 +181,7 @@ async function downloadFromS3(cdnPath: string): Promise<Buffer | null> {
 	}
 }
 
-async function uploadToS3(
-	cdnPath: string,
-	body: Buffer,
-	contentType: string,
-): Promise<void> {
+async function uploadToS3(cdnPath: string, body: Buffer, contentType: string): Promise<void> {
 	await s3.send(
 		new PutObjectCommand({
 			Bucket: s3Bucket,
@@ -251,7 +243,7 @@ async function migrateMedia(
 	currentHash: string,
 	cdnPathFn: (id: number, hash: string) => string,
 	resizeFn: (buf: Buffer) => Promise<ResizeResult>,
-	dbColumn: "custom_pfp_location" | "custom_banner_location",
+	dbColumn: "custom_banner_location" | "custom_pfp_location",
 	label: string,
 	stats: Stats,
 ): Promise<void> {
