@@ -283,7 +283,6 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		prefix: "乱打",
 		description: "16th Chordstream table, sl0-sl12 difficulty",
 	},
-
 	{
 		name: "PMS ● (controller)",
 		game: "pms-controller",
@@ -303,14 +302,6 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		colour: COLOUR_SET.maroon,
 	},
 	{
-		name: "PMS PLv (controller)",
-		game: "pms-controller",
-		prefix: "PLv",
-		asciiPrefix: "pmsPLv",
-		description: "PMS tableFolders key PLv.",
-		url: "https://github.com/TachiServices/Tachi",
-	},
-	{
 		name: "PMS ● (keyboard)",
 		game: "pms-keyboard",
 		prefix: "●",
@@ -327,13 +318,5 @@ export const BMS_TABLES: Array<BMSTableInfo> = [
 		description: "The PMS Database insane table. Contains almost every PMS file at Lv46+.",
 		url: "https://pmsdifficulty.xxxxxxxx.jp/insane_PMSdifficulty.html",
 		colour: COLOUR_SET.maroon,
-	},
-	{
-		name: "PMS PLv (keyboard)",
-		game: "pms-keyboard",
-		prefix: "PLv",
-		asciiPrefix: "pmsPLv",
-		description: "PMS tableFolders key PLv.",
-		url: "https://github.com/TachiServices/Tachi",
 	},
 ];
