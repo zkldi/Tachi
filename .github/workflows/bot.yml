@@ -43,17 +43,19 @@ jobs:
     env:
       NODE_ENV: "test"
     services:
-      tachi-postgres:
+      tachi-postgres-test:
         image: postgres:18
         env:
           POSTGRES_USER: tachi
           POSTGRES_PASSWORD: tachi
           POSTGRES_DB: postgres
+          PGDATA: /var/lib/postgresql/data/pgdata
         options: >-
           --health-cmd "pg_isready -U tachi"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
+          --tmpfs /var/lib/postgresql/data:rw,size=1g
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -71,6 +73,8 @@ jobs:
         run: bun run --filter tachi-bot test
         env:
           NODE_ENV: "test"
+          POSTGRES_TEST_HOST: tachi-postgres-test
+          POSTGRES_TEST_URL: postgresql://tachi:tachi@tachi-postgres-test
 
   docker-push:
     runs-on: ubuntu-latest
