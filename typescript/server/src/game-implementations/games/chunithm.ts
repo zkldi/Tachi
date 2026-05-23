@@ -52,6 +52,10 @@ export const CHUNITHM_IMPL: GameImplementation<"chunithm"> = {
 			return { colour: "RAINBOW_II" };
 		} else if (rating >= 16) {
 			return { colour: "RAINBOW" };
+		} else if (rating >= 15.75) {
+			return { colour: "PLATINUM_III" };
+		} else if (rating >= 15.5) {
+			return { colour: "PLATINUM_II" };
 		} else if (rating >= 15.25) {
 			return { colour: "PLATINUM" };
 		} else if (rating >= 14.5) {

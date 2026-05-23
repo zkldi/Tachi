@@ -234,6 +234,8 @@ describe("CHUNITHM_IMPL", () => {
 			c(13.25, "SILVER");
 			c(14.5, "GOLD");
 			c(15.25, "PLATINUM");
+			c(15.5, "PLATINUM_II");
+			c(15.75, "PLATINUM_III");
 			c(16, "RAINBOW");
 			c(16.25, "RAINBOW_II");
 			c(16.5, "RAINBOW_III");

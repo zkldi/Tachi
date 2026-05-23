@@ -38,10 +38,28 @@ export const MAIMAIDX_IMPL: GameImplementation<"maimaidx"> = {
 			return { colour: null };
 		}
 
-		if (rate >= 15000) {
+		if (rate >= 16750) {
+			return { colour: "RAINBOW_EX_IV" };
+		} else if (rate >= 16500) {
+			return { colour: "RAINBOW_EX_III" };
+		} else if (rate >= 16250) {
+			return { colour: "RAINBOW_EX_II" };
+		} else if (rate >= 16000) {
+			return { colour: "RAINBOW_EX_I" };
+		} else if (rate >= 15750) {
+			return { colour: "RAINBOW_IV" };
+		} else if (rate >= 15500) {
+			return { colour: "RAINBOW_III" };
+		} else if (rate >= 15250) {
+			return { colour: "RAINBOW_II" };
+		} else if (rate >= 15000) {
 			return { colour: "RAINBOW" };
+		} else if (rate >= 14750) {
+			return { colour: "PLATINUM_II" };
 		} else if (rate >= 14500) {
 			return { colour: "PLATINUM" };
+		} else if (rate >= 14250) {
+			return { colour: "GOLD_II" };
 		} else if (rate >= 14000) {
 			return { colour: "GOLD" };
 		} else if (rate >= 13000) {
