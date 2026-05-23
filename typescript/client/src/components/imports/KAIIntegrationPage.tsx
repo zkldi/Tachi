@@ -76,7 +76,7 @@ function KAIImporter({ kaiType, game }: Pick<Props, "game" | "kaiType">) {
 		importType = game === "iidx" ? "api/eag-iidx" : "api/eag-sdvx";
 	}
 
-	const { importState, runImport } = useImport("/import/from-api", {
+	const { importState, runImport, resetImport } = useImport("/import/from-api", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -112,7 +112,7 @@ function KAIImporter({ kaiType, game }: Pick<Props, "game" | "kaiType">) {
 				by typing <code>/sync</code>!
 			</div>
 			<Divider />
-			<ImportStateRenderer state={importState} />
+			<ImportStateRenderer onReverted={resetImport} state={importState} />
 		</div>
 	);
 }

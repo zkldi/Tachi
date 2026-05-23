@@ -97,7 +97,7 @@ export default function ImportFileInfo({
 		);
 	}, [errMsg, data, file]);
 
-	const { importState, runImport } = useImport("/import/file", {});
+	const { importState, runImport, resetImport } = useImport("/import/file", {});
 
 	return (
 		<div>
@@ -177,7 +177,7 @@ export default function ImportFileInfo({
 						</div>
 					</div>
 					<Divider />
-					<ImportStateRenderer state={importState} />
+					<ImportStateRenderer onReverted={resetImport} state={importState} />
 				</>
 			)}
 		</div>

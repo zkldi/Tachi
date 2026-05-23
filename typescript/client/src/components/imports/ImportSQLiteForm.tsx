@@ -69,8 +69,16 @@ export default function ImportSQLiteForm({
 	);
 
 	const [convertState, setConvertState] = useState<ConvertState>({ phase: "idle" });
-	const { importState: importState1, runImport: runImport1 } = useImport("/import/file", {});
-	const { importState: importState2, runImport: runImport2 } = useImport("/import/file", {});
+	const {
+		importState: importState1,
+		runImport: runImport1,
+		resetImport: resetImport1,
+	} = useImport("/import/file", {});
+	const {
+		importState: importState2,
+		runImport: runImport2,
+		resetImport: resetImport2,
+	} = useImport("/import/file", {});
 
 	const allFilesProvided = fileInputs.every((f) => files[f.key] !== null);
 	const canConvert =
@@ -260,13 +268,13 @@ export default function ImportSQLiteForm({
 			{importState1.state !== "not_started" && (
 				<>
 					<Divider />
-					<ImportStateRenderer state={importState1} />
+					<ImportStateRenderer onReverted={resetImport1} state={importState1} />
 				</>
 			)}
 			{importState2.state !== "not_started" && (
 				<>
 					<Divider />
-					<ImportStateRenderer state={importState2} />
+					<ImportStateRenderer onReverted={resetImport2} state={importState2} />
 				</>
 			)}
 		</div>
