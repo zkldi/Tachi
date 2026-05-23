@@ -68,6 +68,7 @@
 		"prom-client": "catalog:",
 		"prudence": "catalog:",
 		"rg-stats": "catalog:",
+		"sharp": "catalog:",
 		"tachi-common": "workspace:*",
 		"tachi-db": "workspace:*",
 		"tachi-db-migration-engine": "workspace:*",

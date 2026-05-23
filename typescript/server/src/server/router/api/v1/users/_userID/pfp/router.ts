@@ -78,6 +78,11 @@ API_V1_ROUTER.add("GET /users/:userID/pfp", withRequestedUser, ({ ctx, res }) =>
 
 	log.debug(user, "User Info for /:userID/pfp request is ");
 
+	// The redirect target is content-addressed (hash in path), so the CDN
+	// object itself is immutable. Cache the userId→CDN-URL mapping for 1 hour
+	// so browsers don't hit the API on every page load.
+	res.setHeader("Cache-Control", "public, max-age=3600, stale-while-revalidate=86400");
+
 	if (!user.customPfpLocation) {
 		res.setHeader("Content-Type", "image/png");
 		CDNRedirect(res, "/users/default/pfp");
