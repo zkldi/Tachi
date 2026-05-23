@@ -193,39 +193,18 @@ async function uploadToS3(cdnPath: string, body: Buffer, contentType: string): P
 	);
 }
 
-interface ResizeResult {
-	contentType: string;
-	data: Buffer;
-}
-
-async function resizePfp(buf: Buffer): Promise<ResizeResult> {
-	const meta = await sharp(buf).metadata();
-
-	if (meta.format === "gif") {
-		return { data: buf, contentType: "image/gif" };
-	}
-
-	const data = await sharp(buf)
+async function resizePfp(buf: Buffer): Promise<Buffer> {
+	return sharp(buf, { animated: true })
 		.resize(PFP_MAX_PX, PFP_MAX_PX, { fit: "inside", withoutEnlargement: true })
 		.webp({ quality: 85 })
 		.toBuffer();
-
-	return { data, contentType: "image/webp" };
 }
 
-async function resizeBanner(buf: Buffer): Promise<ResizeResult> {
-	const meta = await sharp(buf).metadata();
-
-	if (meta.format === "gif") {
-		return { data: buf, contentType: "image/gif" };
-	}
-
-	const data = await sharp(buf)
+async function resizeBanner(buf: Buffer): Promise<Buffer> {
+	return sharp(buf, { animated: true })
 		.resize(BANNER_MAX_WIDTH, BANNER_MAX_HEIGHT, { fit: "inside", withoutEnlargement: true })
 		.webp({ quality: 85 })
 		.toBuffer();
-
-	return { data, contentType: "image/webp" };
 }
 
 // ─── Core migration logic ─────────────────────────────────────────────────────
@@ -242,7 +221,7 @@ async function migrateMedia(
 	username: string,
 	currentHash: string,
 	cdnPathFn: (id: number, hash: string) => string,
-	resizeFn: (buf: Buffer) => Promise<ResizeResult>,
+	resizeFn: (buf: Buffer) => Promise<Buffer>,
 	dbColumn: "custom_banner_location" | "custom_pfp_location",
 	label: string,
 	stats: Stats,
@@ -258,7 +237,7 @@ async function migrateMedia(
 		return;
 	}
 
-	let resized: ResizeResult;
+	let resized: Buffer;
 
 	try {
 		resized = await resizeFn(original);
@@ -268,7 +247,7 @@ async function migrateMedia(
 		return;
 	}
 
-	const newHash = hashBuffer(resized.data);
+	const newHash = hashBuffer(resized);
 
 	if (newHash === currentHash) {
 		console.log(`${logPrefix} already optimal (hash unchanged) — skipping.`);
@@ -278,15 +257,15 @@ async function migrateMedia(
 
 	const newCdnPath = cdnPathFn(userId, newHash);
 	const sizeBefore = original.length;
-	const sizeAfter = resized.data.length;
+	const sizeAfter = resized.length;
 	const pct = Math.round((1 - sizeAfter / sizeBefore) * 100);
 
 	console.log(
-		`${logPrefix} ${(sizeBefore / 1024).toFixed(1)} KB → ${(sizeAfter / 1024).toFixed(1)} KB (${pct}% smaller, ${resized.contentType})`,
+		`${logPrefix} ${(sizeBefore / 1024).toFixed(1)} KB → ${(sizeAfter / 1024).toFixed(1)} KB (${pct}% smaller, image/webp)`,
 	);
 
 	if (!isDryRun) {
-		await uploadToS3(newCdnPath, resized.data, resized.contentType);
+		await uploadToS3(newCdnPath, resized, "image/webp");
 
 		await DB.updateTable("account")
 			.set({ [dbColumn]: newHash })
