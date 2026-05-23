@@ -4,7 +4,9 @@ import { MakeAction } from "#lib/actions/actions";
 import { rebuildFolderChartLookup } from "#lib/folders/rebuild-folder-chart-lookup";
 import { log } from "#lib/log/log";
 import { DeorphanBmsIfInOrphanChartPg } from "#lib/orphan-queue/deorphan-bms-pg";
+import { Env } from "#lib/setup/config";
 import DB from "#services/pg/db";
+import fetch from "#utils/fetch";
 import { FormatBMSTables } from "#utils/misc";
 import { FindBMSChartOnHashInGame } from "#utils/queries/charts";
 import { IsUserAdmin } from "#utils/user";
@@ -22,6 +24,151 @@ import {
 } from "tachi-common";
 
 const UPDATE_CHUNK = 500;
+
+const BMS_TABLE_META_RE = /<meta[\s]+name="bmstable"/u;
+
+function isJsonTableHeader(contentType: string | null, text: string): boolean {
+	if (contentType?.includes("application/json")) {
+		return true;
+	}
+
+	return text.trimStart().startsWith("{");
+}
+
+function responseLooksLikeBmstablePage(text: string): boolean {
+	return BMS_TABLE_META_RE.test(text);
+}
+
+/**
+ * Best-effort extraction of redirect targets from HTML migration stubs.
+ * Handles meta refresh, `window.location.*` literals, and `newDomain + pathname` patterns.
+ */
+export function extractBmstableRedirectTarget(sourceUrl: string, html: string): string | null {
+	const newDomainMatch = /(?:var|let|const)\s+newDomain\s*=\s*["']([^"']+)["']/u.exec(html);
+	if (newDomainMatch?.[1]) {
+		const source = new URL(sourceUrl);
+		return new URL(source.pathname + source.search + source.hash, newDomainMatch[1]).href;
+	}
+
+	const locationAssignMatch =
+		/window\.location\.(?:replace|href\s*=)\(\s*["']([^"']+)["']\s*\)/u.exec(html) ??
+		/window\.location\.(?:replace|href\s*=)\s*=\s*["']([^"']+)["']/u.exec(html);
+	if (locationAssignMatch?.[1]) {
+		return new URL(locationAssignMatch[1], sourceUrl).href;
+	}
+
+	const refreshMatch =
+		/<meta[^>]*http-equiv=["']refresh["'][^>]*content=["']([^"']+)["']/iu.exec(html) ??
+		/<meta[^>]*content=["']([^"']+)["'][^>]*http-equiv=["']refresh["']/iu.exec(html);
+	if (refreshMatch?.[1]) {
+		const urlPart = refreshMatch[1].match(/url\s*=\s*(.+)$/iu)?.[1]?.trim();
+		if (urlPart) {
+			const target = new URL(urlPart.replace(/^['"]|['"]$/gu, ""), sourceUrl);
+			const source = new URL(sourceUrl);
+			if ((target.pathname === "/" || target.pathname === "") && source.pathname !== "/") {
+				target.pathname = source.pathname;
+				target.search = source.search;
+				target.hash = source.hash;
+			}
+			return target.href;
+		}
+	}
+
+	return null;
+}
+
+/** Follow HTTP redirects and HTML/JS migration stubs until a BMS table page is reachable. */
+async function resolveBmstableTableUrl(url: string, hopsLeft = 5): Promise<string> {
+	if (Env.NODE_ENV === "test") {
+		return url;
+	}
+
+	if (hopsLeft <= 0) {
+		throw new Error(`Too many redirects while resolving BMS table URL ${url}.`);
+	}
+
+	const res = await fetch(url);
+	if (!res.ok) {
+		throw new Error(`Failed to fetch BMS table URL ${url}: HTTP ${res.status}.`);
+	}
+
+	const text = await res.text();
+	const resolvedHttpUrl = res.url;
+
+	if (
+		isJsonTableHeader(res.headers.get("content-type"), text) ||
+		responseLooksLikeBmstablePage(text)
+	) {
+		return resolvedHttpUrl;
+	}
+
+	const redirectTarget = extractBmstableRedirectTarget(url, text);
+	if (!redirectTarget || redirectTarget === url) {
+		return resolvedHttpUrl;
+	}
+
+	log.info({ from: url, to: redirectTarget }, "Following BMS table redirect.");
+	return resolveBmstableTableUrl(redirectTarget, hopsLeft - 1);
+}
+
+/**
+ * When `LoadBMSTable` fails, re-fetch the URL and log response shape hints
+ * (redirect stubs, missing bmstable meta tag, etc.).
+ */
+async function logBmstableLoadFailureDebug(tableInfo: BMSTableInfo, err: unknown): Promise<void> {
+	try {
+		const res = await fetch(tableInfo.url);
+		const text = await res.text();
+		const contentType = res.headers.get("content-type");
+		const hasBmstableMeta = BMS_TABLE_META_RE.test(text);
+		const looksLikeJsRedirect = /window\.location\.(?:replace|href)/u.test(text);
+		const looksLikeMovedPage =
+			/site has moved|사이트가 이전되었습니다|Redirecting\.\.\./iu.test(text);
+
+		const hints: Array<string> = [];
+		if (res.url !== tableInfo.url) {
+			hints.push(`HTTP redirect resolved to ${res.url}.`);
+		}
+		if (!hasBmstableMeta && looksLikeJsRedirect) {
+			hints.push(
+				"Response looks like a JavaScript redirect page, but no redirect target could be resolved.",
+			);
+		}
+		if (!hasBmstableMeta && looksLikeMovedPage) {
+			hints.push(
+				"Response looks like a site-migration landing page without a bmstable meta tag.",
+			);
+		}
+		if (!hasBmstableMeta && !looksLikeJsRedirect && !looksLikeMovedPage) {
+			hints.push("Response is HTML but has no bmstable meta tag.");
+		}
+
+		log.error(
+			{
+				err,
+				tableName: tableInfo.name,
+				tableGame: tableInfo.game,
+				tablePrefix: tableInfo.prefix,
+				tableUrl: tableInfo.url,
+				finalUrl: res.url,
+				fetchStatus: res.status,
+				contentType,
+				responseBytes: text.length,
+				hasBmstableMeta,
+				looksLikeJsRedirect,
+				looksLikeMovedPage,
+				hints,
+				responsePreview: text.slice(0, 500).replace(/\s+/gu, " "),
+			},
+			`BMS table load diagnostics for ${tableInfo.name} (${tableInfo.url}).`,
+		);
+	} catch (probeErr) {
+		log.error(
+			{ err, probeErr, tableUrl: tableInfo.url },
+			`BMS table load diagnostics probe failed for ${tableInfo.name}.`,
+		);
+	}
+}
 
 type BmsChartData = ChartDocumentData["bms-7k"];
 
@@ -204,7 +351,20 @@ async function ImportTableLevels(
 }
 
 export async function UpdateTable(tableInfo: BMSTableInfo) {
-	const table = await LoadBMSTable(tableInfo.url);
+	let table;
+	try {
+		const loadUrl = await resolveBmstableTableUrl(tableInfo.url);
+		if (loadUrl !== tableInfo.url) {
+			log.info(
+				{ tableName: tableInfo.name, from: tableInfo.url, to: loadUrl },
+				"Resolved BMS table URL after redirect.",
+			);
+		}
+		table = await LoadBMSTable(loadUrl);
+	} catch (err) {
+		await logBmstableLoadFailureDebug(tableInfo, err);
+		throw err;
+	}
 
 	if (table.head.symbol !== tableInfo.prefix) {
 		throw new Error(
