@@ -223,7 +223,12 @@ describe("ACTION_ChangePfp", () => {
 			.where("kind", "=", "CHANGE_PFP")
 			.executeTakeFirstOrThrow();
 
-		expect(action).toMatchObject({ ip: "10.0.0.1", kind: "CHANGE_PFP", result: "GOOD", user_id: userId });
+		expect(action).toMatchObject({
+			ip: "10.0.0.1",
+			kind: "CHANGE_PFP",
+			result: "GOOD",
+			user_id: userId,
+		});
 	});
 
 	it("writes a BAD action row on invalid mimetype", async () => {
@@ -334,7 +339,12 @@ describe("ACTION_DeletePfp", () => {
 			.where("kind", "=", "DELETE_PFP")
 			.executeTakeFirstOrThrow();
 
-		expect(action).toMatchObject({ ip: "10.0.0.1", kind: "DELETE_PFP", result: "GOOD", user_id: userId });
+		expect(action).toMatchObject({
+			ip: "10.0.0.1",
+			kind: "DELETE_PFP",
+			result: "GOOD",
+			user_id: userId,
+		});
 	});
 });
 
@@ -470,7 +480,12 @@ describe("ACTION_ChangeBanner", () => {
 			.where("kind", "=", "CHANGE_BANNER")
 			.executeTakeFirstOrThrow();
 
-		expect(action).toMatchObject({ ip: "10.0.0.1", kind: "CHANGE_BANNER", result: "GOOD", user_id: userId });
+		expect(action).toMatchObject({
+			ip: "10.0.0.1",
+			kind: "CHANGE_BANNER",
+			result: "GOOD",
+			user_id: userId,
+		});
 	});
 
 	it("writes a BAD action row on invalid mimetype", async () => {
@@ -581,6 +596,11 @@ describe("ACTION_DeleteBanner", () => {
 			.where("kind", "=", "DELETE_BANNER")
 			.executeTakeFirstOrThrow();
 
-		expect(action).toMatchObject({ ip: "10.0.0.1", kind: "DELETE_BANNER", result: "GOOD", user_id: userId });
+		expect(action).toMatchObject({
+			ip: "10.0.0.1",
+			kind: "DELETE_BANNER",
+			result: "GOOD",
+			user_id: userId,
+		});
 	});
 });
