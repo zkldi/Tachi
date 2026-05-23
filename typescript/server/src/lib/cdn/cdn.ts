@@ -3,7 +3,12 @@ import type { Response } from "express";
 import { log } from "#lib/log/log";
 import { ServerConfig } from "#lib/setup/config";
 
-import { DeleteFromS3_PUBLIC, GetObjectFromS3_PUBLIC, PushToS3_PUBLIC, type S3ObjectMeta } from "./s3";
+import {
+	DeleteFromS3_PUBLIC,
+	GetObjectFromS3_PUBLIC,
+	PushToS3_PUBLIC,
+	type S3ObjectMeta,
+} from "./s3";
 
 /**
  * Retrieves the bytes at the given CDN location from S3.

@@ -38,17 +38,16 @@ export const ACTION_ChangeBanner = MakeAction(
 			fileMimetype === "image/png" ||
 			fileMimetype === "image/gif"
 		) {
-			const { data: storedBuffer, contentType } = await resizeBanner(fileBuffer, fileMimetype);
+			const { data: storedBuffer, contentType } = await resizeBanner(
+				fileBuffer,
+				fileMimetype,
+			);
 			const contentHash = HashSHA256(storedBuffer);
 
-			await CDNStoreWithMeta(
-				GetProfileBannerURL(taker.acct.id, contentHash),
-				storedBuffer,
-				{
-					contentType,
-					cacheControl: "public, max-age=31536000, immutable",
-				},
-			);
+			await CDNStoreWithMeta(GetProfileBannerURL(taker.acct.id, contentHash), storedBuffer, {
+				contentType,
+				cacheControl: "public, max-age=31536000, immutable",
+			});
 
 			await DB.updateTable("account")
 				.set({ custom_banner_location: contentHash })
