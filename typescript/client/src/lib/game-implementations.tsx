@@ -806,13 +806,13 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 		},
 		enumFormatters: {
 			platinumStars: {
-				"R-star": <StarField compact="false" stars="6" />,
-				"5-star": <StarField compact="false" stars="5" />,
-				"4-star": <StarField compact="false" stars="4" />,
-				"3-star": <StarField compact="false" stars="3" />,
-				"2-star": <StarField compact="false" stars="2" />,
-				"1-star": <StarField compact="false" stars="1" />,
-				"0-star": <StarField compact="false" stars="0" />,
+				"R-star": <StarField compact={false} stars={6} />,
+				"5-star": <StarField compact={false} stars={5} />,
+				"4-star": <StarField compact={false} stars={4} />,
+				"3-star": <StarField compact={false} stars={3} />,
+				"2-star": <StarField compact={false} stars={2} />,
+				"1-star": <StarField compact={false} stars={1} />,
+				"0-star": <StarField compact={false} stars={0} />,
 			},
 		},
 		enumColours: {

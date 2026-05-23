@@ -603,7 +603,8 @@ export enum ONGEKI_GRADES {
 	SSS_PLUS = 11,
 }
 
-export enum ONGEKI_STARS {
+export enum ONGEKI_PLATINUM_STARS {
+	// Murder the formatter for sorting this alphabetically
 	FIVE_STAR = 5,
 	FOUR_STAR = 4,
 	ONE_STAR = 1,

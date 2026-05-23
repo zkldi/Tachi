@@ -131,6 +131,7 @@ export default function TableFolderList({
 									<FolderEnumProgressBar
 										colours={enumColours}
 										enumMetric={enumMetric}
+										game={game}
 										gameConfig={gameConfig}
 										key={`${enumMetric}-${data.folder.slug}`}
 										stats={data.stats}

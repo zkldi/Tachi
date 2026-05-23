@@ -667,6 +667,7 @@ export default function TableEvolutionReplay({
 																	clipToMinimumRelevance
 																	colours={enumColours}
 																	enumMetric={enumMetric}
+																	game={game}
 																	gameConfig={gameConfig}
 																	stats={stats}
 																/>
@@ -688,6 +689,7 @@ export default function TableEvolutionReplay({
 																clipToMinimumRelevance
 																colours={enumColours}
 																enumMetric={enumMetric}
+																game={game}
 																gameConfig={gameConfig}
 																remainderLabel="Unfilled bar (no qualifying milestone)"
 																stats={stats}

@@ -105,6 +105,11 @@ export function FormatGPTScoreRatingName(game: V3Game, key: string) {
 	return gameConfig.ratingAlgNameOverrides?.score?.[key] ?? UppercaseFirst(key);
 }
 
+export function FormatGPTEnumMetric(game: V3Game, enumMetrics: string, key: string) {
+	const gameConfig = GPT_CLIENT_IMPLEMENTATIONS[game];
+	return (gameConfig.enumFormatters as any)?.[enumMetrics]?.[key] ?? key;
+}
+
 /** Lower `displayOrder` first; missing `displayOrder` sorts after set values, then by key. */
 export function compareProfileRatingAlgKeys(game: V3Game, a: string, b: string): number {
 	const cfg = GetGameConfig(game);

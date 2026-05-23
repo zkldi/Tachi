@@ -1,8 +1,8 @@
 import React from "react";
 import { type integer } from "tachi-common";
-import { FmtStars, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
+import { FmtStars, StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
-export function StarField({ stars, compact }: { compact: boolean; stars: string | integer }) {
+export function StarField({ stars, compact }: { compact: boolean; stars: integer | StarEnum }) {
 	if (typeof stars !== "number") {
 		stars = StarEnumToInt(stars);
 	}
@@ -30,7 +30,7 @@ export default function OngekiPlatinumCell({
 }: {
 	maxPlatScore: integer;
 	platinumScore: integer;
-	stars: number;
+	stars: StarEnum;
 }) {
 	const percentage = (platinumScore / maxPlatScore) * 100;
 	return (

@@ -44,7 +44,7 @@ export const OngekiColours = [
 	ClassValue("RAINBOW_EX_TRUE", "虹(極)・真", "Rainbow Extreme (True): 22.000~ RatingRefresh"),
 ];
 
-type StarEnum = "0-star" | "1-star" | "2-star" | "3-star" | "4-star" | "5-star" | "R-star";
+export type StarEnum = "0-star" | "1-star" | "2-star" | "3-star" | "4-star" | "5-star" | "R-star";
 
 export const StarEnumToInt = (v: StarEnum) => (v === "R-star" ? 6 : parseInt(v[0], 10));
 

@@ -12,7 +12,7 @@ import {
 	ONGEKI_BELL_LAMPS,
 	ONGEKI_GRADES,
 	ONGEKI_NOTE_LAMPS,
-	// ONGEKI_PLATINUM_STARS,
+	ONGEKI_PLATINUM_STARS,
 	type ScoreData,
 } from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
@@ -39,7 +39,7 @@ const scoreData: ScoreData<"ongeki"> = {
 		grade: ONGEKI_GRADES.SSS,
 		noteLamp: ONGEKI_NOTE_LAMPS.CLEAR,
 		bellLamp: ONGEKI_BELL_LAMPS.FULL_BELL,
-		// platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
+		platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
 	},
 };
 
@@ -308,7 +308,9 @@ describe("ONGEKI_IMPL", () => {
 			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumScore(1500)).toBe(
 				"Get 1,500 Platinum Score on",
 			);
-			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumStars("3-star")).toBe("Get ★★★☆☆ on");
+			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumStars!("3-star")).toBe(
+				"Get ★★★☆☆ on",
+			);
 		});
 
 		it("progress", () => {
@@ -373,7 +375,7 @@ describe("ONGEKI_IMPL", () => {
 					enumIndexes: {
 						noteLamp: ONGEKI_NOTE_LAMPS.FULL_COMBO,
 						bellLamp: ONGEKI_BELL_LAMPS.FULL_BELL,
-						// platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
+						platinumStars: ONGEKI_PLATINUM_STARS.FOUR_STAR,
 					},
 				},
 			});

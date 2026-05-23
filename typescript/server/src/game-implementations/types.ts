@@ -143,16 +143,24 @@ export type PBRankingValuesFunction<TGame extends V3Game> = (
 export type GoalCriteriaFormatter = (num: number) => string;
 
 /**
- * A record of all non-enum metrics that need formatters. Enums *always* get formatted
- * into their string formats.
+ * After all, why not? Why shouldn't enum metrics allow formatters?
  */
-export type GPTGoalFormatters<TGame extends V3Game> = {
-	[K in keyof ConfScoreMetrics[TGame] as ConfScoreMetrics[TGame][K] extends ConfEnumScoreMetric<
-		infer _
-	>
+export type GoalCriteriaFormatterEnum = (str: string) => string;
+
+type GPTRequiredGoalFormatters<TGame extends V3Game> = {
+	[K in keyof ConfScoreMetrics[TGame] as ConfScoreMetrics[TGame][K] extends ConfEnumScoreMetric<any>
 		? never
 		: K]: GoalCriteriaFormatter;
 };
+
+type GPTEnumGoalFormatters<TGame extends V3Game> = {
+	[K in keyof ConfScoreMetrics[TGame] as ConfScoreMetrics[TGame][K] extends ConfEnumScoreMetric<any>
+		? K
+		: never]?: GoalCriteriaFormatterEnum;
+};
+
+export type GPTGoalFormatters<TGame extends V3Game> = GPTEnumGoalFormatters<TGame> &
+	GPTRequiredGoalFormatters<TGame>;
 
 /**
  * Given a user's PB and the value of the goal, return a string representing this

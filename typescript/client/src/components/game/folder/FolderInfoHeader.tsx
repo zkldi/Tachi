@@ -65,6 +65,7 @@ export default function FolderInfoHeader({
 											clipToMinimumRelevance={false}
 											colours={enumColourMaps?.[metric]}
 											enumMetric={metric}
+											game={game}
 											gameConfig={gameConfig}
 											onEnumBreakdownRowClick={
 												onBreakdownEnumValueClick

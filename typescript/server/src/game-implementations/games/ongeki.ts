@@ -6,7 +6,7 @@ import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { ONGEKIRating } from "rg-stats";
 import { type ChartDocument, FmtNum, GetGrade, ONGEKI_GBOUNDARIES } from "tachi-common";
-import { FmtStars, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
+import { FmtStars, StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
 import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
 
@@ -161,7 +161,7 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 	goalCriteriaFormatters: {
 		score: GoalFmtScore,
 		platinumScore: (val: number) => `Get ${val.toLocaleString("en-GB")} Platinum Score on`,
-		platinumStars: (val: string) => `Get ${FmtStars(val, false)} on`,
+		platinumStars: (val: string) => `Get ${FmtStars(val as StarEnum, false)} on`,
 	},
 	goalProgressFormatters: {
 		grade: (pb, gradeIndex) =>
@@ -180,7 +180,7 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 	goalOutOfFormatters: {
 		score: GoalOutOfFmtScore,
 		platinumScore: GoalOutOfFmtScore,
-		platinumStars: (v) => FmtStars(v, false),
+		platinumStars: (v: any) => FmtStars(v, false),
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

@@ -1544,6 +1544,7 @@ export const TestingOngekiScorePB: PBScoreDocument<"ongeki"> = {
 			grade: 11,
 			noteLamp: 4,
 			bellLamp: 1,
+			platinumStars: 6,
 		},
 		judgements: {},
 		optional: {

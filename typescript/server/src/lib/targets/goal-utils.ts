@@ -1,4 +1,4 @@
-import type { GoalCriteriaFormatter } from "#game-implementations/types";
+import type { GoalCriteriaFormatter, GoalCriteriaFormatterEnum } from "#game-implementations/types";
 
 import { GAME_IMPLEMENTATIONS } from "#game-implementations/game-implementations";
 import { GetChartByIdForGame } from "#lib/db-formats/chart";
@@ -139,7 +139,7 @@ function FormatCriteria<TGame extends V3Game>(
 	}
 
 	if (conf.type === "ENUM") {
-		const fmt: GoalCriteriaFormatter | undefined =
+		const fmt: GoalCriteriaFormatterEnum | undefined =
 			// @ts-expect-error it still thinks criteria.key might be a symbol.
 			GAME_IMPLEMENTATIONS[game].goalCriteriaFormatters[criteria.key];
 		const v = conf.values[criteria.value];
