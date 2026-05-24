@@ -9,6 +9,7 @@ import ChunithmSiteImportPage from "#app/pages/dashboard/import/ChunithmSiteImpo
 import FervidexPage from "#app/pages/dashboard/import/FervidexPage";
 import IIDXCGSiteImportPage from "#app/pages/dashboard/import/IIDXCGSiteImportPage";
 import IIDXEamCSVPage from "#app/pages/dashboard/import/IIDXEamCSVPage";
+import ImportClassPage from "#app/pages/dashboard/import/ImportClassPage";
 import ImportPage from "#app/pages/dashboard/import/ImportPage";
 import ITGHookPage from "#app/pages/dashboard/import/ITGHookPage";
 import KsHookPage from "#app/pages/dashboard/import/KsHookPage";
@@ -61,6 +62,9 @@ export default function ImportRoutes() {
 
 					<Route exact path="/import/batch-manual">
 						<BatchManualPage />
+					</Route>
+					<Route exact path="/import/class">
+						<ImportClassPage />
 					</Route>
 
 					{TachiConfig.TYPE !== "kamai" && (

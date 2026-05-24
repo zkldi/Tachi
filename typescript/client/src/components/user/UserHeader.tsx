@@ -146,6 +146,44 @@ export function UserHeaderBody({ reqUser }: { reqUser: UserDocument }) {
 									Grant Quest Submitter
 								</Button>
 							)}
+
+							{reqUser.canImportProvidedClass !== false ? (
+								<Button
+									onClick={() =>
+										APIFetchV1(
+											`/admin/import-provided-class/${reqUser.id}`,
+											{ method: "DELETE" },
+											true,
+											true,
+										).then(async (res) => {
+											if (res.success) {
+												await invalidateProfileQueries();
+											}
+										})
+									}
+									variant="warning"
+								>
+									Ban Class Import?
+								</Button>
+							) : (
+								<Button
+									onClick={() =>
+										APIFetchV1(
+											`/admin/import-provided-class/${reqUser.id}`,
+											{ method: "POST" },
+											true,
+											true,
+										).then(async (res) => {
+											if (res.success) {
+												await invalidateProfileQueries();
+											}
+										})
+									}
+									variant="outline-success"
+								>
+									Unban Class Import
+								</Button>
+							)}
 						</div>
 					</>
 				)}

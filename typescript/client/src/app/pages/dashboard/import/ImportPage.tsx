@@ -20,6 +20,7 @@ import {
 	type APIImportTypes,
 	type FileUploadImportTypes,
 	type GameGroup,
+	GameGroupHasProvidedClasses,
 	GetGameGroupConfig,
 	type ImportTypes,
 	type integer,
@@ -133,6 +134,13 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 	const gameConfig = GetGameGroupConfig(game);
 
 	const Content = [<ImportTypeInfoCard importType="file/batch-manual" key="file/batch-manual" />];
+
+	if (
+		TachiConfig.IMPORT_TYPES.includes("file/import-class") &&
+		GameGroupHasProvidedClasses(game)
+	) {
+		Content.unshift(<ImportClassCard game={game} key="file/import-class" />);
+	}
 
 	if (game === "iidx") {
 		Content.unshift(
@@ -800,6 +808,41 @@ function ImportTypeInfoCard({
 				</>
 			);
 	}
+}
+
+function ImportClassCard({ game }: { game: GameGroup }) {
+	const gameConfig = GetGameGroupConfig(game);
+
+	return (
+		<Col className="p-2 flex-grow-1" key="import-class">
+			<Card
+				className="h-100 border-warning"
+				footer={
+					<LinkButton className="float-end" to={`/import/class?game=${game}`}>
+						Set your classes
+					</LinkButton>
+				}
+				header={
+					<>
+						Import Class{" "}
+						<Alert className="d-inline-block mb-0 ms-2 py-0 px-2" variant="warning">
+							Self-reported
+						</Alert>
+					</>
+				}
+			>
+				<div style={{ fontSize: "1.5rem" }}>
+					Manually set your PROVIDED classes for {gameConfig.name} — dans, emblems, and
+					similar.
+				</div>
+				<Divider />
+				<div>
+					This includes downgrades. Changes are clearly marked as{" "}
+					<strong>manually set</strong> in your profile and activity feed.
+				</div>
+			</Card>
+		</Col>
+	);
 }
 
 function ImportInfoCard({

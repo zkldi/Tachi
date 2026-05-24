@@ -2,6 +2,7 @@ export type FileUploadImportTypes =
 	| "file/batch-manual"
 	| "file/eamusement-iidx-csv"
 	| "file/eamusement-sdvx-csv"
+	| "file/import-class"
 	| "file/mypagescraper-player-csv"
 	| "file/mypagescraper-records-csv"
 	| "file/pli-iidx-csv"

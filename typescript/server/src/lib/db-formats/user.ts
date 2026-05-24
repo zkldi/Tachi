@@ -26,6 +26,7 @@ export const SELECT_USER = [
 	"account.normalized_username",
 	"account.is_supporter",
 	"account.can_submit_quests",
+	"account.can_import_provided_class",
 ] as const;
 
 export function ToUserDocument(
@@ -65,5 +66,6 @@ export function ToUserDocument(
 		usernameLowercase: row.normalized_username,
 		isSupporter: row.is_supporter,
 		canSubmitQuests: row.can_submit_quests,
+		canImportProvidedClass: row.can_import_provided_class,
 	};
 }

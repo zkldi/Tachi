@@ -42,6 +42,7 @@ type ImportType =
   | 'ir/kshook-sv6c-static'
   | 'ir/kshook-sv6c'
   | 'ir/lr2hook'
-  | 'ir/usc';
+  | 'ir/usc'
+  | 'file/import-class';
 
 export default ImportType;

@@ -1838,6 +1838,15 @@ export const API_V1_SPEC = {
 		output: doc<Record<string, unknown>>(),
 	},
 
+	"POST /import/class": {
+		description: "Self-report PROVIDED classes for a game (dan, emblem, etc.).",
+		input: z.object({
+			game: z.enum(ALL_GAMES),
+			classes: z.record(z.string(), z.string()),
+		}),
+		output: doc<Record<string, unknown>>(),
+	},
+
 	"POST /import/orphans": {
 		description: "Reprocess orphaned scores.",
 		input: z.object({}),
@@ -2071,6 +2080,18 @@ export const API_V1_SPEC = {
 
 	"DELETE /admin/quest-submitter/:userID": {
 		description: "Revoke quest-submission permission from a user.",
+		input: z.object({}),
+		output: empty,
+	},
+
+	"POST /admin/import-provided-class/:userID": {
+		description: "Allow a user to manually import PROVIDED classes.",
+		input: z.object({}),
+		output: empty,
+	},
+
+	"DELETE /admin/import-provided-class/:userID": {
+		description: "Ban a user from manually importing PROVIDED classes.",
 		input: z.object({}),
 		output: empty,
 	},

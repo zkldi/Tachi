@@ -14,6 +14,7 @@ const FILE_IMPORT_TYPES: Record<FileUploadImportTypes, true> = {
 	"file/pli-iidx-csv": true,
 	"file/mypagescraper-records-csv": true,
 	"file/mypagescraper-player-csv": true,
+	"file/import-class": true,
 };
 
 const IR_IMPORT_TYPES: Record<IRImportTypes, true> = {

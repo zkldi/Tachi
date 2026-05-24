@@ -2,6 +2,7 @@ import { ACTION_DeleteScore } from "#actions/delete-score";
 import { ACTION_DeleteSession } from "#actions/delete-session";
 import { ACTION_RebuildFolderChartLookup } from "#actions/rebuild-folder-chart-lookup";
 import { ACTION_RecalcAllGameProfiles } from "#actions/recalc-all-game-profiles";
+import { ACTION_SetUserImportProvidedClassStatus } from "#actions/set-user-import-provided-class-status";
 import { ACTION_SetUserQuestSubmitterStatus } from "#actions/set-user-quest-submitter-status";
 import { ACTION_SetUserSupporterStatus } from "#actions/set-user-supporter-status";
 import {
@@ -230,6 +231,52 @@ API_V1_ROUTER.add("DELETE /admin/quest-submitter/:userID", withAdmin, async ({ p
 
 	return success("Done.", {});
 });
+
+API_V1_ROUTER.add(
+	"POST /admin/import-provided-class/:userID",
+	withAdmin,
+	async ({ params, req }) => {
+		const target = await ResolveUser(params.userID);
+
+		if (!target) {
+			throw new ExpectedErr(404, "This user does not exist.");
+		}
+
+		const adminUserID = req[SYMBOL_TACHI_API_AUTH].userID!;
+		const adminUser = await GetUserWithIDGuaranteed(adminUserID);
+		const taker = { acct: { id: adminUser.id, username: adminUser.username }, ip: req.ip };
+
+		await ACTION_SetUserImportProvidedClassStatus(taker, {
+			canImport: true,
+			userID: target.id,
+		});
+
+		return success("Done.", {});
+	},
+);
+
+API_V1_ROUTER.add(
+	"DELETE /admin/import-provided-class/:userID",
+	withAdmin,
+	async ({ params, req }) => {
+		const target = await ResolveUser(params.userID);
+
+		if (!target) {
+			throw new ExpectedErr(404, "This user does not exist.");
+		}
+
+		const adminUserID = req[SYMBOL_TACHI_API_AUTH].userID!;
+		const adminUser = await GetUserWithIDGuaranteed(adminUserID);
+		const taker = { acct: { id: adminUser.id, username: adminUser.username }, ip: req.ip };
+
+		await ACTION_SetUserImportProvidedClassStatus(taker, {
+			canImport: false,
+			userID: target.id,
+		});
+
+		return success("Done.", {});
+	},
+);
 
 API_V1_ROUTER.add("POST /admin/reprocess-all-goals", withAdmin, () => {
 	throw new ExpectedErr(501, "Not implemented.");
