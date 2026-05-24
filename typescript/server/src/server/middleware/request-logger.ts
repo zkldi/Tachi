@@ -53,10 +53,15 @@ export const RequestLoggerMiddleware: RequestHandler = (req, res, next) => {
 			return;
 		}
 
+		// @ts-expect-error set by {@link ResJsonInteceptor} when handlers use `res.json`
+		const responseBody: unknown | undefined = res.contentBody;
+
 		const contents = {
 			statusCode: res.statusCode,
 			requestQuery: req.query,
 			requestBody: safeBody,
+			// Explains validation/import failures etc.; otherwise logs only show the status code.
+			...(responseBody !== undefined && res.statusCode >= 400 && { responseBody }),
 
 			// This might actually be undefined, as it could be called in some weird scenarios?
 			from: (req[SYMBOL_TACHI_API_AUTH] as APITokenDocument | undefined)?.userID ?? null,
