@@ -66,6 +66,25 @@ import TableEvolutionReplay from "./TableEvolutionReplay";
 /** Extra offset when jumping from breakdown → folder table (`scrollIntoView` start − this). */
 const FOLDER_BREAKDOWN_TABLE_SCROLL_EXTRA_OFFSET_PX = 50;
 
+const FOLDER_TIERLIST_USE_FANCY_COLOUR_LS_KEY = "tachi.folderTierlist.useFancyColours";
+
+function readStoredFolderTierlistUseFancyColour(): boolean {
+	if (typeof window === "undefined") {
+		return false;
+	}
+	return window.localStorage.getItem(FOLDER_TIERLIST_USE_FANCY_COLOUR_LS_KEY) === "true";
+}
+
+function persistFolderTierlistUseFancyColour(useFancy: boolean): void {
+	if (typeof window === "undefined") {
+		return;
+	}
+	window.localStorage.setItem(
+		FOLDER_TIERLIST_USE_FANCY_COLOUR_LS_KEY,
+		useFancy ? "true" : "false",
+	);
+}
+
 interface Props {
 	reqUser: UserDocument;
 	game: V3Game;
@@ -327,7 +346,7 @@ function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
 		}
 	}, [gptImpl.ratingSystems, history, location.pathname, location.search]);
 
-	const [useFancyColour, setUseFancyColour] = useState(false);
+	const [useFancyColour, setUseFancyColour] = useState(readStoredFolderTierlistUseFancyColour);
 	const [forceGridView, setForceGridView] = useState(false);
 
 	const playerStats = useMemo(
@@ -370,7 +389,11 @@ function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
 					checked={!useFancyColour}
 					label="Use simple clear/fail colours"
 					onChange={() => {
-						setUseFancyColour((e) => !e);
+						setUseFancyColour((e) => {
+							const next = !e;
+							persistFolderTierlistUseFancyColour(next);
+							return next;
+						});
 					}}
 					type="checkbox"
 				/>
