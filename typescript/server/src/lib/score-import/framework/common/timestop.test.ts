@@ -2,7 +2,13 @@ import DB from "#services/pg/db";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { beforeEach, describe, expect, it } from "vitest";
 
-import { GetImportTimestop, SetImportTimestop } from "./timestop";
+import {
+	DeleteImportTimestop,
+	GetImportTimestop,
+	ListImportTimestops,
+	SetImportTimestop,
+	SetImportTimestopManual,
+} from "./timestop";
 
 describe("GetImportTimestop", () => {
 	let userID: number;
@@ -122,5 +128,67 @@ describe("SetImportTimestop", () => {
 
 		expect(myResult!.getTime()).toBe(myTime.getTime());
 		expect(theirResult!.getTime()).toBe(theirTime.getTime());
+	});
+});
+
+describe("ListImportTimestops", () => {
+	let userID: number;
+
+	beforeEach(async () => {
+		({ id: userID } = await seedUser());
+	});
+
+	it("returns all API import types with null when unset", async () => {
+		const result = await ListImportTimestops(userID);
+
+		expect(result.length).toBeGreaterThan(0);
+		expect(result.every((entry) => entry.lastScoreTime === null)).toBe(true);
+	});
+
+	it("includes stored cursors", async () => {
+		const time = new Date("2025-03-15T12:00:00.000Z");
+
+		await SetImportTimestop(userID, "api/eag-iidx", time);
+
+		const result = await ListImportTimestops(userID);
+		const entry = result.find((e) => e.importType === "api/eag-iidx");
+
+		expect(entry?.lastScoreTime).toBe(time.getTime());
+	});
+});
+
+describe("DeleteImportTimestop", () => {
+	let userID: number;
+
+	beforeEach(async () => {
+		({ id: userID } = await seedUser());
+	});
+
+	it("removes an existing cursor", async () => {
+		await SetImportTimestop(userID, "api/eag-iidx", new Date("2025-01-01T00:00:00.000Z"));
+
+		await DeleteImportTimestop(userID, "api/eag-iidx");
+
+		expect(await GetImportTimestop(userID, "api/eag-iidx")).toBeNull();
+	});
+});
+
+describe("SetImportTimestopManual", () => {
+	let userID: number;
+
+	beforeEach(async () => {
+		({ id: userID } = await seedUser());
+	});
+
+	it("can move the cursor backwards", async () => {
+		const later = new Date("2025-06-01T00:00:00.000Z");
+		const earlier = new Date("2025-01-01T00:00:00.000Z");
+
+		await SetImportTimestop(userID, "api/eag-iidx", later);
+		await SetImportTimestopManual(userID, "api/eag-iidx", earlier);
+
+		const result = await GetImportTimestop(userID, "api/eag-iidx");
+
+		expect(result!.getTime()).toBe(earlier.getTime());
 	});
 });

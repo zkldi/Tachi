@@ -543,6 +543,34 @@ export const API_V1_SPEC = {
 		output: docArray<ImportTrackerDocument>(),
 	},
 
+	"GET /users/:userID/import-timestops": {
+		description: "List API import timestop cursors for the authenticated user.",
+		input: z.object({}),
+		output: z.strictObject({
+			timestops: z.array(
+				z.strictObject({
+					importType: z.string(),
+					lastScoreTime: z.number().nullable(),
+				}),
+			),
+		}),
+	},
+
+	"DELETE /users/:userID/import-timestops": {
+		description: "Reset an API import timestop cursor.",
+		input: z.object({ importType: z.string() }),
+		output: empty,
+	},
+
+	"PUT /users/:userID/import-timestops": {
+		description: "Set an API import timestop cursor to a specific timestamp.",
+		input: z.object({
+			importType: z.string(),
+			lastScoreTime: z.number(),
+		}),
+		output: empty,
+	},
+
 	// ────────────────────────────────────────────────
 	// Users /:userID/integrations/myt (Kamaitachi only)
 	// ────────────────────────────────────────────────
