@@ -307,7 +307,7 @@ function RankingTimeline({
 			data={[
 				{
 					id: "ranking",
-					data: data.map((d) => ({ x: d.timestamp, y: d.rankings[rating].ranking })),
+					data: data.map((d) => ({ x: d.timestamp, y: d.rankings[rating]?.ranking })),
 				},
 			]}
 			height="30rem"
