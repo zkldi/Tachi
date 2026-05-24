@@ -4,10 +4,10 @@ import { UserContext } from "#context/UserContext";
 import { APIFetchV1 } from "#util/api";
 import { HumaniseError } from "#util/humanise-error";
 import { HistorySafeGoBack } from "#util/misc";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useFormik } from "formik";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
-import ReCAPTCHA from "react-google-recaptcha";
 import toast from "react-hot-toast";
 import { Link, useHistory } from "react-router-dom";
 import { type UserDocument } from "tachi-common";
@@ -19,7 +19,7 @@ export default function LoginPage() {
 	const { setUser } = useContext(UserContext);
 	const history = useHistory();
 
-	const recaptchaRef = useRef<any>(null);
+	const hcaptchaRef = useRef<InstanceType<typeof HCaptcha> | null>(null);
 
 	const [localDevFirstAdminLogin, setLocalDevFirstAdminLogin] = useState<
 		| { password: string; status: "ready"; username: string }
@@ -74,8 +74,8 @@ export default function LoginPage() {
 			false,
 		);
 
-		if (recaptchaRef.current) {
-			recaptchaRef.current.reset();
+		if (hcaptchaRef.current) {
+			hcaptchaRef.current.resetCaptcha();
 		}
 
 		if (!rj.success) {
@@ -174,13 +174,16 @@ export default function LoginPage() {
 					{err}
 				</Form.Group>
 
-				{import.meta.env.VITE_RECAPTCHA_KEY && (
-					<ReCAPTCHA
-						onChange={(v) => {
-							formik.setFieldValue("captcha", v);
+				{import.meta.env.VITE_HCAPTCHA_SITEKEY && (
+					<HCaptcha
+						onExpire={() => {
+							formik.setFieldValue("captcha", "");
 						}}
-						ref={recaptchaRef}
-						sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
+						onVerify={(token) => {
+							formik.setFieldValue("captcha", token);
+						}}
+						ref={hcaptchaRef}
+						sitekey={import.meta.env.VITE_HCAPTCHA_SITEKEY}
 					/>
 				)}
 

@@ -45,7 +45,7 @@ jobs:
         env:
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_TCHIC_MODE: "boku"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
+          VITE_HCAPTCHA_SITEKEY: "4d968a2e-80ec-4b02-80be-c2205a4e7bb8"
           VITE_SERVER_URL: "https://boku.tachi.ac"
           VITE_DISCORD: "https://discord.gg/E4n8ZZF5ES"
           VITE_CDN_URL: "https://cdn-boku.tachi.ac"
@@ -64,7 +64,7 @@ jobs:
           VITE_TCHIC_MODE: "kamai"
           VITE_CDN_URL: "https://cdn-kamai.tachi.ac"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
+          VITE_HCAPTCHA_SITEKEY: "10000000-ffff-ffff-ffff-000000000001"
           TACHI_NAME: "Kamaitachi"
           BUILD_OUT_DIR: /tmp/kamai
 
@@ -79,7 +79,7 @@ jobs:
           VITE_FLO_CLIENT_ID: "9krYLjq1rz9icCefO6OWxoMk"
           VITE_MIN_CLIENT_ID: "A0DBDBB063CD800530EF01C6488B282137E0191E"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
+          VITE_HCAPTCHA_SITEKEY: "10000000-ffff-ffff-ffff-000000000001"
           TACHI_NAME: "Tachi Dev"
           BUILD_OUT_DIR: /tmp/dev
 

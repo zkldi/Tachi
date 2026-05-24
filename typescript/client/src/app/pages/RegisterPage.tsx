@@ -7,10 +7,10 @@ import { type UseFormik } from "#types/react";
 import { APIFetchV1 } from "#util/api";
 import { HumaniseError } from "#util/humanise-error";
 import { HistorySafeGoBack } from "#util/misc";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useFormik } from "formik";
 import React, { type MutableRefObject, useContext, useRef, useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
-import ReCAPTCHA from "react-google-recaptcha";
 import toast from "react-hot-toast";
 import { Link, useHistory } from "react-router-dom";
 import { type UserDocument } from "tachi-common";
@@ -33,7 +33,7 @@ export default function RegisterPage() {
 
 	const { setUser } = useContext(UserContext);
 	const history = useHistory();
-	const recaptchaRef = useRef<any>();
+	const hcaptchaRef = useRef<InstanceType<typeof HCaptcha> | null>(null);
 
 	const urlParams = new URLSearchParams(location.search);
 
@@ -81,8 +81,8 @@ export default function RegisterPage() {
 				true,
 			);
 
-			if (recaptchaRef.current) {
-				recaptchaRef.current.reset();
+			if (hcaptchaRef.current) {
+				hcaptchaRef.current.resetCaptcha();
 			}
 
 			if (!rj.success) {
@@ -126,7 +126,7 @@ export default function RegisterPage() {
 	return (
 		<LoginPageLayout description={<Description />} heading="Register">
 			{readRules === "acknowledged" ? (
-				<RegisterForm err={err} formik={formik} recaptchaRef={recaptchaRef} />
+				<RegisterForm err={err} formik={formik} hcaptchaRef={hcaptchaRef} />
 			) : (
 				<div className="text-center">
 					<div className="mb-8">
@@ -200,7 +200,7 @@ function Description() {
 function RegisterForm({
 	formik,
 	err,
-	recaptchaRef,
+	hcaptchaRef,
 }: {
 	err: string;
 	formik: UseFormik<{
@@ -211,7 +211,7 @@ function RegisterForm({
 		inviteCode: string;
 		username: string;
 	}>;
-	recaptchaRef: MutableRefObject<any>;
+	hcaptchaRef: MutableRefObject<InstanceType<typeof HCaptcha> | null>;
 }) {
 	return (
 		<Form className="d-flex flex-column gap-4 w-100" onSubmit={formik.handleSubmit}>
@@ -275,13 +275,16 @@ function RegisterForm({
 				</Form.Group>
 			)}
 
-			{import.meta.env.VITE_RECAPTCHA_KEY && (
-				<ReCAPTCHA
-					onChange={(v) => {
-						formik.setFieldValue("captcha", v);
+			{import.meta.env.VITE_HCAPTCHA_SITEKEY && (
+				<HCaptcha
+					onExpire={() => {
+						formik.setFieldValue("captcha", "");
 					}}
-					ref={recaptchaRef}
-					sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
+					onVerify={(token) => {
+						formik.setFieldValue("captcha", token);
+					}}
+					ref={hcaptchaRef}
+					sitekey={import.meta.env.VITE_HCAPTCHA_SITEKEY}
 				/>
 			)}
 
