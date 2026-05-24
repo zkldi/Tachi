@@ -4,7 +4,9 @@ import type { ParserFunctionReturns } from "#lib/score-import/import-types/commo
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import { CreateBatchManualClassProvider } from "#lib/score-import/import-types/common/batch-manual/class-handler";
 import { AllEnabledGames } from "#lib/setup/config";
+import DB from "#services/pg/db";
 import { IsRecord } from "#utils/misc";
+import { GetUserWithID } from "#utils/user";
 import {
 	type Classes,
 	GameToGameGroup,
@@ -59,18 +61,37 @@ function ValidateProvidedClasses(
 	)(game, 0, {}, log);
 }
 
-export default function ParseImportClass(
-	_userID: integer,
+async function AssertUserHasGameProfile(userID: integer, game: V3Game): Promise<void> {
+	const profile = await DB.selectFrom("game_profile")
+		.select("game_profile.user_id")
+		.where("game_profile.user_id", "=", userID)
+		.where("game_profile.game", "=", game)
+		.executeTakeFirst();
+
+	if (profile) {
+		return;
+	}
+
+	const user = await GetUserWithID(userID);
+	const username = user?.username ?? String(userID);
+
+	throw new ScoreImportFatalError(404, `The user ${username} has not played ${game}`);
+}
+
+export default async function ParseImportClass(
+	userID: integer,
 	game: V3Game,
 	classes: Record<string, string>,
 	log: KtLogger,
-): ParserFunctionReturns<never, Record<string, never>, V3Game> {
+): Promise<ParserFunctionReturns<never, Record<string, never>, V3Game>> {
 	if (!AllEnabledGames().includes(game)) {
 		throw new ScoreImportFatalError(
 			400,
 			`Invalid game ${game}. Expected any of ${AllEnabledGames().join(", ")}.`,
 		);
 	}
+
+	await AssertUserHasGameProfile(userID, game);
 
 	ValidateProvidedClasses(game, classes, log);
 

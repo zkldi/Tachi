@@ -13,12 +13,13 @@ import { client } from "../main";
 import { GetUGPTStats, GetUserInfo } from "../utils/api-requests";
 import { CreateEmbed } from "../utils/embeds";
 import { PrependTachiUrl } from "../utils/fetch-tachi";
-import { FormatClass, GetGameChannel } from "../utils/misc";
+import { FormatClass, GetGameChannel, UppercaseFirst } from "../utils/misc";
 
 export async function HandleClassUpdateV1(
 	event: WebhookEventClassUpdateV1["content"],
 ): Promise<integer> {
 	const { game } = event;
+	const isManualEntry = event.achievementSource === "manual";
 
 	let channel;
 
@@ -31,7 +32,7 @@ export async function HandleClassUpdateV1(
 		return 500;
 	}
 
-	if (!ShouldRenderUpdate(game, event.set, event.new)) {
+	if (!isManualEntry && !ShouldRenderUpdate(game, event.set, event.new)) {
 		log.info(
 			`Not rendering class update ${event.set}: ${event.old} -> ${event.new} (not relevant).`,
 		);
@@ -40,29 +41,57 @@ export async function HandleClassUpdateV1(
 
 	const userDoc = await GetUserInfo(event.userID);
 
-	const minimumNecessaryScores = GetMinimumScores(game, event.set);
+	if (!isManualEntry) {
+		const minimumNecessaryScores = GetMinimumScores(game, event.set);
 
-	if (minimumNecessaryScores !== null) {
-		const { totalScores } = await GetUGPTStats(userDoc.id, game);
+		if (minimumNecessaryScores !== null) {
+			const { totalScores } = await GetUGPTStats(userDoc.id, game);
 
-		// Do not render if the user hasn't hit the score cap.
-		if (totalScores < minimumNecessaryScores) {
-			log.info(
-				`Not rendering class update ${event.set}: ${event.old} -> ${event.new} (not enough scores).`,
-			);
-			return 204;
+			// Do not render if the user hasn't hit the score cap.
+			if (totalScores < minimumNecessaryScores) {
+				log.info(
+					`Not rendering class update ${event.set}: ${event.old} -> ${event.new} (not enough scores).`,
+				);
+				return 204;
+			}
 		}
 	}
 
 	const newClass = FormatClass(game, event.set, event.new);
 
-	const embed = CreateEmbed()
-		.setTitle(`${userDoc.username} just achieved ${newClass} in ${FormatGame(game)}!`)
+	const embedBase = CreateEmbed()
 		.setURL(`${Env.TACHI_SERVER_LOCATION}/u/${userDoc.username}/games/${game}`)
 		.setThumbnail(PrependTachiUrl(`/users/${userDoc.id}/pfp`));
 
-	if (event.old !== null) {
-		embed.setDescription(`(This was raised from ${FormatClass(game, event.set, event.old)}.)`);
+	let embed;
+
+	if (isManualEntry) {
+		const classSetPretty = UppercaseFirst(String(event.set));
+
+		let desc =
+			"**⚠️ MANUAL UPDATE.**\n\n" +
+			`**${userDoc.username}** manually set **their ${FormatGame(game)} · ${classSetPretty}** to **${newClass}**.\n\n`;
+
+		if (event.old !== null) {
+			desc += `\n\nPreviously saved: **${FormatClass(game, event.set, event.old)}**.`;
+		} else {
+			desc += `\n\nThere was **no saved ${classSetPretty.toLowerCase()}** on their profile before this entry.`;
+		}
+
+		embed = embedBase
+			.setColor("#c0392b")
+			.setTitle(`⚠️ MANUAL UPDATE - ${userDoc.username}`)
+			.setDescription(desc);
+	} else {
+		embed = embedBase.setTitle(
+			`${userDoc.username} just achieved ${newClass} in ${FormatGame(game)}!`,
+		);
+
+		if (event.old !== null) {
+			embed.setDescription(
+				`(This was raised from ${FormatClass(game, event.set, event.old)}.)`,
+			);
+		}
 	}
 
 	await channel.send({ embeds: [embed] });

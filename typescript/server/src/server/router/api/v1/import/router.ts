@@ -146,6 +146,17 @@ API_V1_ROUTER.add("POST /import/class", withPermission("submit_score"), async ({
 		throw new ExpectedErr(403, "You are banned from manually importing classes.");
 	}
 
+	const gameProfile = await DB.selectFrom("game_profile")
+		.select("game_profile.user_id")
+		.where("game_profile.user_id", "=", userID)
+		.where("game_profile.game", "=", game)
+		.executeTakeFirst();
+
+	if (!gameProfile) {
+		const user = await GetUserWithIDGuaranteed(userID);
+		throw new ExpectedErr(404, `The user ${user.username} has not played ${game}`);
+	}
+
 	const importID = Random20Hex();
 	const userIntent = req.header("X-User-Intent")?.toLowerCase() === "true";
 

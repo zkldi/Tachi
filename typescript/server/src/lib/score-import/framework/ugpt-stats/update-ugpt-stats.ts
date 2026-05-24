@@ -64,7 +64,7 @@ export async function UpdateUsersGamePlaytypeStats(
 			.where("game", "=", game)
 			.executeTakeFirst();
 
-		if (!hasAnyScores && !(options?.allowProfileWithoutScores && deltas.length > 0)) {
+		if (!hasAnyScores) {
 			log.debug(
 				{
 					userID,

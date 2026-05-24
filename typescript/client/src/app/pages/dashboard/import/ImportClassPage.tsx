@@ -1,24 +1,21 @@
 import { ErrorPage } from "#app/pages/ErrorPage";
 import ClassBadge from "#components/game/ClassBadge";
-import ImportStateRenderer from "#components/imports/ImportStateRenderer";
+import ImportClassImportState from "#components/imports/ImportClassImportState";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
-import ApiError from "#components/util/ApiError";
 import useImport from "#components/util/import/useImport";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { UserContext } from "#context/UserContext";
 import { type UGPTStatsReturn } from "#types/api-returns";
 import { UppercaseFirst } from "#util/misc";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Alert, Button, Col, Form, Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import {
+	ALL_GAMES,
 	type Classes,
 	FormatGame,
-	type GameGroup,
 	GetGameConfig,
-	GetGameGroupConfig,
-	GetGamesWithProvidedClasses,
 	GetProvidedClassSetsForGame,
 	type V3Game,
 } from "tachi-common";
@@ -28,7 +25,7 @@ export default function ImportClassPage() {
 
 	const { user } = useContext(UserContext);
 	const history = useHistory();
-	const queryGame = new URLSearchParams(window.location.search).get("game") as GameGroup | null;
+	const queryGame = new URLSearchParams(window.location.search).get("game");
 
 	if (!user) {
 		return <ErrorPage statusCode={401} />;
@@ -46,15 +43,21 @@ export default function ImportClassPage() {
 		);
 	}
 
-	const gamesWithProvidedClasses = GetGamesWithProvidedClasses(queryGame);
-
-	if (
-		gamesWithProvidedClasses.length === 0 ||
-		!GetGameGroupConfig(queryGame).games.some((g) => GetProvidedClassSetsForGame(g).length > 0)
-	) {
+	if (!ALL_GAMES.includes(queryGame as V3Game)) {
 		return (
 			<Alert variant="warning">
-				{GetGameGroupConfig(queryGame).name} does not support manual class imports.
+				Invalid game &quot;{queryGame}&quot;. Open Import Class from the import page for a
+				supported game.
+			</Alert>
+		);
+	}
+
+	const game = queryGame as V3Game;
+
+	if (GetProvidedClassSetsForGame(game).length === 0) {
+		return (
+			<Alert variant="warning">
+				{FormatGame(game)} does not support manual class imports.
 			</Alert>
 		);
 	}
@@ -67,42 +70,62 @@ export default function ImportClassPage() {
 		);
 	}
 
-	return <InnerImportClassPage games={gamesWithProvidedClasses} userID={user.id} />;
+	return <InnerImportClassPage game={game} userID={user.id} />;
 }
 
-function InnerImportClassPage({ games, userID }: { games: V3Game[]; userID: number }) {
-	const [selectedGame, setSelectedGame] = useState<V3Game>(games[0]!);
+function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }) {
 	const [classValues, setClassValues] = useState<Partial<Record<Classes[V3Game], string>>>({});
 
-	const { data, error } = useApiQuery<UGPTStatsReturn>(`/users/${userID}/games/${selectedGame}`);
+	const { data, error, isLoading } = useApiQuery<UGPTStatsReturn>(
+		`/users/${userID}/games/${game}`,
+	);
 
-	const providedClassSets = GetProvidedClassSetsForGame(selectedGame) as Classes[V3Game][];
-	const gameConfig = GetGameConfig(selectedGame);
+	const providedClassSets = useMemo(
+		() => GetProvidedClassSetsForGame(game) as Classes[V3Game][],
+		[game],
+	);
+	const gameConfig = GetGameConfig(game);
 
-	const { importState, runImport } = useImport("/import/class", {
+	const { importState, runImport, resetImport } = useImport("/import/class", {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 	});
 
-	useEffect(() => {
-		setClassValues({});
-	}, [selectedGame]);
+	const handleClassChange = (classSet: Classes[V3Game], value: string) => {
+		setClassValues((prev) => ({
+			...prev,
+			[classSet]: value,
+		}));
+		if (importState.state === "done" || importState.state === "failed") {
+			resetImport();
+		}
+	};
 
 	useEffect(() => {
-		if (data?.gameStats.classes) {
-			const initial: Partial<Record<Classes[V3Game], string>> = {};
-			for (const classSet of providedClassSets) {
-				const val = data.gameStats.classes[classSet];
-				if (val) {
-					initial[classSet] = val;
-				}
-			}
-			setClassValues(initial);
+		if (!data?.gameStats.classes) {
+			return;
 		}
-	}, [data, providedClassSets]);
+
+		const initial: Partial<Record<Classes[V3Game], string>> = {};
+		for (const classSet of providedClassSets) {
+			const val = data.gameStats.classes[classSet];
+			if (val) {
+				initial[classSet] = val;
+			}
+		}
+		setClassValues(initial);
+	}, [data, game, providedClassSets]);
 
 	if (error) {
-		return <ApiError error={error} />;
+		return (
+			<Alert variant="danger">
+				{error.description ?? "Failed to load your profile for this game."}
+			</Alert>
+		);
+	}
+
+	if (isLoading) {
+		return <Loading />;
 	}
 
 	if (!data) {
@@ -112,65 +135,88 @@ function InnerImportClassPage({ games, userID }: { games: V3Game[]; userID: numb
 	return (
 		<>
 			<Alert variant="info">
-				<strong>Self-reported classes.</strong> Values you set here are stored as{" "}
-				<strong>manually set</strong> and appear that way in your activity feed. You can
-				upgrade or downgrade PROVIDED classes (such as dans) — unlike score imports.
+				<strong>Manually set classes for {FormatGame(game)}.</strong>
+				<br />
+				<strong>
+					Do not insert false information here, this is monitored and I will revoke access
+					to it!
+				</strong>
 			</Alert>
 
-			{games.length > 1 && (
-				<Form.Group className="mb-3">
-					<Form.Label>Playtype</Form.Label>
-					<Form.Select
-						onChange={(e) => setSelectedGame(e.target.value as V3Game)}
-						value={selectedGame}
-					>
-						{games.map((game) => (
-							<option key={game} value={game}>
-								{FormatGame(game)}
-							</option>
-						))}
-					</Form.Select>
-				</Form.Group>
-			)}
-
 			<Row>
-				{providedClassSets.map((classSet) => (
-					<Col className="mb-3" key={classSet} lg={6} xs={12}>
-						<Form.Group>
-							<Form.Label>{UppercaseFirst(classSet)}</Form.Label>
-							<Form.Select
-								onChange={(e) =>
-									setClassValues((prev) => ({
-										...prev,
-										[classSet]: e.target.value,
-									}))
-								}
-								value={classValues[classSet] ?? ""}
-							>
-								<option value="">Select a value...</option>
-								{gameConfig.classes[classSet]!.values.map((classInfo) => (
-									<option key={classInfo.id} value={classInfo.id}>
-										{classInfo.display}
-									</option>
-								))}
-							</Form.Select>
-							{classValues[classSet] && (
-								<div className="mt-2">
-									Preview:{" "}
-									<ClassBadge
-										classSet={classSet}
-										classValue={classValues[classSet]!}
-										game={selectedGame}
-										showSetOnHover={false}
-									/>
+				{providedClassSets.map((classSet) => {
+					const savedValue = data.gameStats.classes[classSet];
+					const draftValue = classValues[classSet] ?? "";
+					const unchanged = draftValue !== "" && draftValue === (savedValue ?? "");
+
+					return (
+						<Col className="mb-3" key={classSet} lg={6} xs={12}>
+							<Form.Group>
+								<Form.Label>{UppercaseFirst(classSet)}</Form.Label>
+								<Form.Select
+									onChange={(e) => handleClassChange(classSet, e.target.value)}
+									value={draftValue}
+								>
+									<option value="">Select a value...</option>
+									{gameConfig.classes[classSet]!.values.map((classInfo) => (
+										<option key={classInfo.id} value={classInfo.id}>
+											{classInfo.display}
+										</option>
+									))}
+								</Form.Select>
+								<div className="mt-2 pt-2 border-top border-secondary border-opacity-25">
+									<div className="d-flex flex-wrap align-items-center column-gap-3 row-gap-2">
+										<div className="text-start">
+											<div className="small text-muted">
+												Currently on profile
+											</div>
+											<div className="mt-1">
+												{savedValue ? (
+													<ClassBadge
+														classSet={classSet}
+														classValue={savedValue}
+														game={game}
+														showSetOnHover={false}
+													/>
+												) : (
+													<span className="small text-muted">None</span>
+												)}
+											</div>
+										</div>
+										<span aria-hidden className="text-muted user-select-none">
+											→
+										</span>
+										<div className="text-start">
+											<div className="small text-muted">Will import</div>
+											<div className="mt-1">
+												{draftValue ? (
+													<ClassBadge
+														classSet={classSet}
+														classValue={draftValue}
+														game={game}
+														showSetOnHover={false}
+													/>
+												) : (
+													<span className="small text-muted">
+														Pick a value above
+													</span>
+												)}
+											</div>
+										</div>
+									</div>
+									{unchanged && (
+										<div className="small text-muted mt-2 mb-0">
+											No change from profile.
+										</div>
+									)}
 								</div>
-							)}
-						</Form.Group>
-					</Col>
-				))}
+							</Form.Group>
+						</Col>
+					);
+				})}
 			</Row>
 
-			<ImportStateRenderer state={importState} />
+			<ImportClassImportState state={importState} />
 
 			<Button
 				disabled={
@@ -182,7 +228,7 @@ function InnerImportClassPage({ games, userID }: { games: V3Game[]; userID: numb
 					runImport({
 						method: "POST",
 						headers: { "Content-Type": "application/json" },
-						body: JSON.stringify({ game: selectedGame, classes: classValues }),
+						body: JSON.stringify({ game, classes: classValues }),
 					})
 				}
 				variant="primary"

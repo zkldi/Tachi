@@ -1,4 +1,10 @@
-import type { GoalImportStat, integer, QuestImportStat, V3Game } from "./types";
+import type {
+	ClassAchievementSource,
+	GoalImportStat,
+	integer,
+	QuestImportStat,
+	V3Game,
+} from "./types";
 import type { Classes } from "./types/game-config";
 
 /**
@@ -7,6 +13,13 @@ import type { Classes } from "./types/game-config";
 export interface WebhookEventClassUpdateV1 {
 	type: "class-update/v1";
 	content: {
+		/**
+		 * How this class achievement was recorded. When `"manual"` (provided-class Import Class),
+		 * clients should emphasize that this was user-entered, not inferred from scores/sync.
+		 *
+		 * Omit or `"import"` for normal score/importer-derived updates.
+		 */
+		achievementSource?: ClassAchievementSource;
 		game: V3Game;
 		new: string;
 		old: string | null;

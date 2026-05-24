@@ -154,6 +154,7 @@ export async function ProcessClassDeltas(
 							set: delta.set,
 							old: delta.old,
 							new: delta.new,
+							achievementSource: classAchievementSource,
 						},
 					});
 

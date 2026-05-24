@@ -13,7 +13,6 @@ import crypto from "crypto";
 import deepmerge from "deepmerge";
 import { beforeEach, describe, expect, it } from "vitest";
 
-import { MANUAL_CLASS_IMPORT_OPTIONS } from "../profile-calculated-data/class-process-options";
 import { UpdateUsersGamePlaytypeStats } from "./update-ugpt-stats";
 
 async function seedIidx511ForPb() {
@@ -268,33 +267,5 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			.executeTakeFirstOrThrow();
 		const cls = typeof gp.classes === "string" ? JSON.parse(gp.classes) : gp.classes;
 		expect((cls as { dan: string }).dan).toBe("KAIDEN");
-	});
-
-	it("creates game profile without scores when manual class import options are set", async () => {
-		const res = await UpdateUsersGamePlaytypeStats(
-			"iidx-sp",
-			1,
-			() => ({ dan: "CHUUDEN" }),
-			log,
-			MANUAL_CLASS_IMPORT_OPTIONS,
-		);
-
-		expect(res).toEqual(
-			expect.arrayContaining([
-				expect.objectContaining({
-					game: "iidx-sp",
-					set: "dan",
-					new: "CHUUDEN",
-				}),
-			]),
-		);
-
-		const gp = await DB.selectFrom("game_profile")
-			.select("classes")
-			.where("user_id", "=", 1)
-			.where("game", "=", "iidx-sp")
-			.executeTakeFirstOrThrow();
-		const cls = typeof gp.classes === "string" ? JSON.parse(gp.classes) : gp.classes;
-		expect((cls as { dan: string }).dan).toBe("CHUUDEN");
 	});
 });

@@ -1,3 +1,4 @@
+import ImportClassImportInfo from "#components/imports/ImportClassImportInfo";
 import ImportInfo from "#components/imports/ImportInfo";
 import DebugContent from "#components/util/DebugContent";
 import HasDevModeOn from "#components/util/HasDevModeOn";
@@ -23,7 +24,11 @@ export default function ImportDropdown({ data }: { data: ImportDataset[0] }) {
 	} else if (view === "info") {
 		body = (
 			<Col xs={12}>
-				<ImportInfo importID={data.importID} noTopTable />
+				{data.importType === "file/import-class" ? (
+					<ImportClassImportInfo importDoc={data} />
+				) : (
+					<ImportInfo importID={data.importID} noTopTable />
+				)}
 			</Col>
 		);
 	} else if (view === "input") {
@@ -46,7 +51,7 @@ export default function ImportDropdown({ data }: { data: ImportDataset[0] }) {
 					<SelectButton id="input" setValue={setView} value={view}>
 						<Icon type="database" /> Input
 					</SelectButton>
-					{currentUser?.id === data.userID && (
+					{currentUser?.id === data.userID && data.importType !== "file/import-class" && (
 						<SelectButton id="manage" setValue={setView} value={view}>
 							<Icon type="trash" /> Revert Import
 						</SelectButton>
