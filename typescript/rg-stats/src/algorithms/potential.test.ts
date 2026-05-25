@@ -17,6 +17,7 @@ test("Arcaea Potential Tests", () => {
 		MakeTestCase(9_977_755, 11.3, 13.19),
 		MakeTestCase(9_934_498, 11.1, 12.77),
 		MakeTestCase(9_932_746, 10.9, 12.56),
+		MakeTestCase(9_805_015, 11.6, 12.63),
 
 		MakeTestCase(10_000_000, 7.0, 9.0),
 		MakeTestCase(9_900_000, 8.0, 9.5),
