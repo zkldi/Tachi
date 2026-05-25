@@ -686,23 +686,50 @@ function ClassAchievementActivity({
 											user={user}
 										/>
 									</span>
-									<UGPTLink game={classGame} reqUser={user} /> achieved{" "}
-									<ClassBadge
-										classSet={data.classSet}
-										classValue={data.classValue}
-										game={classGame}
-									/>
-									{shouldShowGame && ` in ${FormatGame(classGame)}`}!
-									{data.classOldValue !== null && (
+									<UGPTLink game={classGame} reqUser={user} />{" "}
+									{data.source === "manual" ? (
 										<>
-											{" "}
-											(Raised from{" "}
+											manually set{" "}
 											<ClassBadge
 												classSet={data.classSet}
-												classValue={data.classOldValue}
+												classValue={data.classValue}
 												game={classGame}
 											/>
-											)
+											{shouldShowGame && ` in ${FormatGame(classGame)}`}
+											{data.classOldValue !== null && (
+												<>
+													{" "}
+													(previously{" "}
+													<ClassBadge
+														classSet={data.classSet}
+														classValue={data.classOldValue}
+														game={classGame}
+													/>
+													)
+												</>
+											)}
+										</>
+									) : (
+										<>
+											achieved{" "}
+											<ClassBadge
+												classSet={data.classSet}
+												classValue={data.classValue}
+												game={classGame}
+											/>
+											{shouldShowGame && ` in ${FormatGame(classGame)}`}!
+											{data.classOldValue !== null && (
+												<>
+													{" "}
+													(Raised from{" "}
+													<ClassBadge
+														classSet={data.classSet}
+														classValue={data.classOldValue}
+														game={classGame}
+													/>
+													)
+												</>
+											)}
 										</>
 									)}
 								</>

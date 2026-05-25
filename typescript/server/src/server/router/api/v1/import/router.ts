@@ -1,5 +1,3 @@
-import type { FileUploadImportTypes } from "tachi-common";
-
 import { SIXTEEN_MEGABTYES } from "#lib/constants/filesize";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { log } from "#lib/log/log";
@@ -12,15 +10,17 @@ import {
 	listOrphanScoresForUser,
 } from "#lib/score-import/framework/orphans/orphans";
 import { EnqueueScoreImportJob } from "#lib/score-import/worker/enqueue-pg";
-import { ServerConfig, TachiConfig } from "#lib/setup/config";
+import { AllEnabledGames, ServerConfig, TachiConfig } from "#lib/setup/config";
 import { RequirePermissions } from "#server/middleware/auth";
 import { CreateMulterSingleUploadMiddleware } from "#server/middleware/multer-upload";
 import prValidate from "#server/middleware/prudence-validate";
 import { ScoreImportRateLimiter } from "#server/middleware/rate-limiter";
+import DB from "#services/pg/db";
 import { Random20Hex } from "#utils/misc";
 import { FormatUserDoc, GetUserWithIDGuaranteed } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import { p } from "prudence";
+import { type FileUploadImportTypes, type V3Game } from "tachi-common";
 
 import { API_V1_ROUTER } from "../_singleton";
 
@@ -101,6 +101,69 @@ API_V1_ROUTER.add("POST /import/from-api", async ({ input, req }) => {
 		importID,
 		importType,
 		parserArguments: [userID],
+		userID,
+		userIntent,
+	});
+
+	return {
+		$status: 202,
+		body: {
+			importID,
+			url: `${ServerConfig.OUR_URL}/api/v1/imports/${importID}/poll-status`,
+		},
+		description:
+			"Import loaded into queue. You can poll the provided URL for information on when its complete.",
+		success: true,
+	};
+});
+
+/**
+ * Self-report PROVIDED classes (dan, emblem, etc.) for a game.
+ *
+ * @name POST /api/v1/import/class
+ */
+API_V1_ROUTER.add("POST /import/class", withPermission("submit_score"), async ({ input, req }) => {
+	if (!TachiConfig.IMPORT_TYPES.includes("file/import-class")) {
+		throw new ExpectedErr(400, "Manual class imports are not enabled on this instance.");
+	}
+
+	const userID = req[SYMBOL_TACHI_API_AUTH].userID!;
+	const game = input.game as V3Game;
+
+	if (!AllEnabledGames().includes(game)) {
+		throw new ExpectedErr(
+			400,
+			`Invalid game ${game}. Expected any of ${AllEnabledGames().join(", ")}.`,
+		);
+	}
+
+	const account = await DB.selectFrom("account")
+		.select(["can_import_provided_class"])
+		.where("id", "=", userID)
+		.executeTakeFirst();
+
+	if (!account?.can_import_provided_class) {
+		throw new ExpectedErr(403, "You are banned from manually importing classes.");
+	}
+
+	const gameProfile = await DB.selectFrom("game_profile")
+		.select("game_profile.user_id")
+		.where("game_profile.user_id", "=", userID)
+		.where("game_profile.game", "=", game)
+		.executeTakeFirst();
+
+	if (!gameProfile) {
+		const user = await GetUserWithIDGuaranteed(userID);
+		throw new ExpectedErr(404, `The user ${user.username} has not played ${game}`);
+	}
+
+	const importID = Random20Hex();
+	const userIntent = req.header("X-User-Intent")?.toLowerCase() === "true";
+
+	void EnqueueScoreImportJob({
+		importID,
+		importType: "file/import-class",
+		parserArguments: [userID, game, input.classes],
 		userID,
 		userIntent,
 	});

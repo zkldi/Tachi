@@ -1,8 +1,10 @@
 import { log } from "#lib/log/log";
+import DB from "#services/pg/db";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { type UserGameStats } from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
 
+import { MANUAL_CLASS_IMPORT_OPTIONS } from "./class-process-options";
 import { CalculateUGPTClasses, ProcessClassDeltas } from "./classes";
 
 describe("CalculateUGPTClasses", () => {
@@ -134,5 +136,45 @@ describe("ProcessClassDeltas", () => {
 				new: "DANDELION_I",
 			},
 		]);
+	});
+
+	it("allows downgrade for provided classes when manual import options are set", async () => {
+		const res = await ProcessClassDeltas(
+			"iidx-sp",
+			{ dan: "DAN_10" },
+			{ classes: { dan: "KAIDEN" } } as unknown as UserGameStats,
+			userId,
+			log,
+			MANUAL_CLASS_IMPORT_OPTIONS,
+		);
+
+		expect(res).toEqual([
+			{
+				game: "iidx-sp",
+				set: "dan",
+				old: "KAIDEN",
+				new: "DAN_10",
+			},
+		]);
+	});
+
+	it("writes manual source to class_achievement for manual imports", async () => {
+		await ProcessClassDeltas(
+			"iidx-sp",
+			{ dan: "KAIDEN" },
+			null,
+			userId,
+			log,
+			MANUAL_CLASS_IMPORT_OPTIONS,
+		);
+
+		const row = await DB.selectFrom("class_achievement")
+			.select(["source", "class_value"])
+			.where("user_id", "=", userId)
+			.where("game", "=", "iidx-sp")
+			.executeTakeFirstOrThrow();
+
+		expect(row.source).toBe("manual");
+		expect(row.class_value).toBe("KAIDEN");
 	});
 });

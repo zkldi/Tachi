@@ -50,6 +50,8 @@ export default interface AccountTable {
   is_supporter: ColumnType<boolean, boolean | undefined, boolean>;
 
   can_submit_quests: ColumnType<boolean, boolean | undefined, boolean>;
+
+  can_import_provided_class: ColumnType<boolean, boolean | undefined, boolean>;
 }
 
 export type Account = Selectable<AccountTable>;

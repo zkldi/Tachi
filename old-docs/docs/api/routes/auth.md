@@ -29,7 +29,7 @@ Logs a user in and returns a session cookie.
 | :---------: | :----: | :---------------------------------------------------------------------------------------: |
 | `username`  | String |                 The user's username. This is compared case-insensitively.                 |
 | `!password` | String |                                   The user's password.                                    |
-|  `captcha`  | String | Information about the captcha filled out by the user. We use a Google ReCaptcha instance. |
+|  `captcha`  | String | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
 
 !!! info
 The `!` prefix is special in that anything with it is assumed to be private and is **always**
@@ -85,7 +85,7 @@ POST /api/v1/auth/login
 |          `!password`           |                 String                 |                                           An 8 character or longer string.                                           |
 |           `!email`             |                 String                 |                   Valid email. The `!` prefix keeps this field out of server request logs.                    |
 | `inviteCode` (Kamaitachi Only) | String (Undefined/Unused on Bokutachi) |                                If on Kamaitachi, this is the user's invitation code.                                 |
-|           `captcha`            |                 String                 |                                                                                                                      |
+|           `captcha`            |                 String                 | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
 
 ### Response
 

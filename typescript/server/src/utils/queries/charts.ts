@@ -746,10 +746,7 @@ export async function FindUSCChartsByHashSHA1(hash: string): Promise<Array<Chart
 
 /**
  * Returns the N most popular charts for this game + playtype.
- * Popularity is determined by how many rows exist in Postgres `score` for each chart.
- *
- * Aggregates `score` once per `game` (CTE), then joins `chart`/`song`, so Postgres does not
- * nested-loop probe `score` per chart (see `score_game_chart_id_idx` on `(game, chart_id)`).
+ * Popularity is determined by cached total score rows per chart (`chart_playcount`).
  */
 export async function FindChartsOnPopularity(
 	game: V3Game,
@@ -766,33 +763,10 @@ export async function FindChartsOnPopularity(
 	}
 
 	const chartIdFilter = filters?.chartIDs;
-	const songIdFilter = filters?.songIDs;
 
-	let q = DB.with("score_counts", (db) => {
-		let sq = db
-			.selectFrom("score")
-			.where("score.game", "=", game)
-			.select(["score.chart_id", sql<number>`count(*)::int`.as("playcount")])
-			.groupBy("score.chart_id");
-
-		if (chartIdFilter !== undefined) {
-			sq = sq.where("score.chart_id", "in", chartIdFilter);
-		}
-
-		// When searching by song title, only aggregate scores for matching charts.
-		// Without this, every search scans and groups every score row for the game
-		// (e.g. 3.7M rows for bms-7k on boku) before filtering to ~100 charts.
-		if (songIdFilter !== undefined) {
-			sq = sq
-				.innerJoin("chart as score_count_chart", "score_count_chart.id", "score.chart_id")
-				.where("score_count_chart.song_id", "in", songIdFilter);
-		}
-
-		return sq;
-	})
-		.selectFrom("chart")
+	let q = DB.selectFrom("chart")
 		.innerJoin("song", "song.id", "chart.song_id")
-		.leftJoin("score_counts", "score_counts.chart_id", "chart.id")
+		.leftJoin("chart_playcount", "chart_playcount.chart_id", "chart.id")
 		.where("chart.game", "=", game)
 		.where(sql<SqlBool>`(chart.data->>'2dxtraSet') IS NULL`);
 
@@ -807,9 +781,9 @@ export async function FindChartsOnPopularity(
 	const rows = await q
 		.select([
 			...SELECT_CHART, // format-bearing comment
-			sql<number>`coalesce(score_counts.playcount, 0)::int`.as("playcount"),
+			sql<number>`coalesce(chart_playcount.playcount, 0)::int`.as("playcount"),
 		])
-		.orderBy(sql`coalesce(score_counts.playcount, 0)`, "desc")
+		.orderBy(sql`coalesce(chart_playcount.playcount, 0)`, "desc")
 		.offset(skip)
 		.limit(limit)
 		.execute();

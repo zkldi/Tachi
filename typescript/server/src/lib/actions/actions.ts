@@ -323,6 +323,13 @@ export const ActionSignatures = {
 		}),
 		output: z.object({}),
 	},
+	SET_USER_IMPORT_PROVIDED_CLASS_STATUS: {
+		input: z.object({
+			userID: z.number().int().positive(),
+			canImport: z.boolean(),
+		}),
+		output: z.object({}),
+	},
 	PATCH_UGPT_SETTINGS: {
 		input: z.object({
 			userID: z.number().int(),

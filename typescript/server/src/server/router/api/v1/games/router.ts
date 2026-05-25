@@ -5,7 +5,6 @@ import { LoadFolderDocumentByGameAndSlug, LoadFolderDocumentsByIds } from "#lib/
 import { ToGameStatsDocument } from "#lib/db-formats/game-profiles";
 import { SELECT_GOAL, SELECT_GOAL_SUB_WITH_GOAL_GAME } from "#lib/db-formats/goal";
 import {
-	CountPbsOnChart,
 	LoadPbDocumentsForGameSortedByCalculatedAlg,
 	LoadPbsOnChartByRankAsc,
 	LoadPbsOnChartForUserSearch,
@@ -463,23 +462,6 @@ API_V1_ROUTER.add(
 		}
 
 		return success(`Found ${folders.length} folders that contain this chart.`, folders);
-	},
-);
-
-/**
- * Returns the total amount of unique players that have played this chart.
- *
- * @name GET /api/v1/games/:game/charts/:chartID/playcount
- */
-API_V1_ROUTER.add(
-	"GET /games/:game/charts/:chartID/playcount",
-	withGame,
-	withChart,
-	async ({ ctx }) => {
-		const { chartDoc: chart } = ctx;
-		const count = await CountPbsOnChart(chart.chartID);
-
-		return success("Counted scores for chart.", { count });
 	},
 );
 

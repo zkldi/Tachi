@@ -268,26 +268,6 @@ GET /api/v1/games/iidx/SP/charts/some_chart_id
 
 ---
 
-## Retrieve playcount for this chart.
-
-`GET /api/v1/games/:gameGroup/:playtype/charts/:chartID/playcount`
-
-### Parameters
-
-None.
-
-### Response
-
-| Property |  Type   |            Description             |
-| :------: | :-----: | :--------------------------------: |
-| `count`  | Integer | The amount of plays on this chart. |
-
-### Example
-
-Self-explanatory.
-
----
-
 ## Retrieve leaderboards for this chart.
 
 `GET /api/v1/games/:gameGroup/:playtype/charts/:chartID/pbs`

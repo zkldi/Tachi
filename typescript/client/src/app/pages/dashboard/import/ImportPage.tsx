@@ -19,11 +19,15 @@ import { Link } from "react-router-dom";
 import {
 	type APIImportTypes,
 	type FileUploadImportTypes,
+	FormatGame,
 	type GameGroup,
+	GameGroupHasProvidedClasses,
 	GetGameGroupConfig,
+	GetGamesWithProvidedClasses,
 	type ImportTypes,
 	type integer,
 	type UserDocument,
+	type V3Game,
 } from "tachi-common";
 
 export default function ImportPage({ user }: { user: UserDocument }) {
@@ -133,6 +137,17 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 	const gameConfig = GetGameGroupConfig(game);
 
 	const Content = [<ImportTypeInfoCard importType="file/batch-manual" key="file/batch-manual" />];
+
+	if (
+		TachiConfig.IMPORT_TYPES.includes("file/import-class") &&
+		GameGroupHasProvidedClasses(game)
+	) {
+		for (const v3Game of GetGamesWithProvidedClasses(game)) {
+			Content.unshift(
+				<ImportClassCard key={`file/import-class-${v3Game}`} v3Game={v3Game} />,
+			);
+		}
+	}
 
 	if (game === "iidx") {
 		Content.unshift(
@@ -800,6 +815,37 @@ function ImportTypeInfoCard({
 				</>
 			);
 	}
+}
+
+function ImportClassCard({ v3Game }: { v3Game: V3Game }) {
+	return (
+		<Col className="p-2 flex-grow-1" key={`import-class-${v3Game}`}>
+			<Card
+				className="h-100 border-warning"
+				footer={
+					<LinkButton className="float-end" to={`/import/class?game=${v3Game}`}>
+						Set your classes
+					</LinkButton>
+				}
+				header={
+					<>
+						Import Class ({FormatGame(v3Game)}){" "}
+						<Alert className="d-inline-block mb-0 ms-2 py-0 px-2" variant="warning">
+							Self-reported
+						</Alert>
+					</>
+				}
+			>
+				<div style={{ fontSize: "1.5rem" }}>Manually set a dan or class.</div>
+				<Divider />
+				<div>
+					You can use this to downgrade classes, too. Please be aware this is manually
+					monitored, and you will be banned from doing this if you input false
+					information.
+				</div>
+			</Card>
+		</Col>
+	);
 }
 
 function ImportInfoCard({

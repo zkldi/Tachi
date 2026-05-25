@@ -1,7 +1,6 @@
 import { GetChartsBySongId } from "#lib/db-formats/chart";
 import { AllEnabledGames } from "#lib/setup/config";
 import DB from "#services/pg/db";
-import { sql } from "kysely";
 import {
 	type ChartDocument,
 	GameToGameGroup,
@@ -77,11 +76,9 @@ export async function SearchGlobalGameSongsAndCharts(
 
 	const chartIDs = output.map((o) => o.chart.chartID);
 
-	const playcountRows = await DB.selectFrom("score")
-		.innerJoin("chart", "chart.id", "score.chart_id")
-		.select(["chart.id", sql<number>`count(score.id)::int`.as("playcount")])
-		.where("chart.id", "in", chartIDs)
-		.groupBy("chart.id")
+	const playcountRows = await DB.selectFrom("chart_playcount")
+		.select(["chart_playcount.chart_id as id", "chart_playcount.playcount"])
+		.where("chart_playcount.chart_id", "in", chartIDs)
 		.execute();
 
 	const playcountLookup = Object.fromEntries(playcountRows.map((r) => [r.id, r.playcount]));

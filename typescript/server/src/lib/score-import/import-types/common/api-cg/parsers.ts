@@ -1,11 +1,12 @@
 import type { KtLogger } from "#lib/log/log";
 
 import { SELECT_CG_CARD_INFO, ToCGCardInfo } from "#lib/db-formats/cg-card-info";
+import { GetImportTimestop } from "#lib/score-import/framework/common/timestop";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import DB from "#services/pg/db";
 import fetch from "node-fetch";
 import { p, type PrudenceSchema } from "prudence";
-import { FormatPrError, type integer, type V3Game } from "tachi-common";
+import { type APIImportTypes, FormatPrError, type integer, type V3Game } from "tachi-common";
 
 import type { ParserFunctionReturns } from "../types";
 import type {
@@ -106,16 +107,23 @@ const CG_SCHEMAS: Record<CGSupportedGames, PrudenceSchema> = {
  * Create a CG parser for this supported game. Since all CG parsing code is effectively
  * identical, this basically just placeholders cgGame and service.
  */
-export function CreateCGParser<T>(cgGame: CGSupportedGames, service: CGServices) {
+export function CreateCGParser<T extends { dateTime: string }>(
+	cgGame: CGSupportedGames,
+	service: CGServices,
+	importType: APIImportTypes,
+) {
 	return async (
 		userID: integer,
 		log: KtLogger,
 	): Promise<ParserFunctionReturns<T, CGContext, V3Game>> => {
-		const row = await DB.selectFrom("priv_svc_cg_card_info")
-			.select(SELECT_CG_CARD_INFO)
-			.where("user_id", "=", userID)
-			.where("service", "=", service)
-			.executeTakeFirst();
+		const [row, lastScoreTime] = await Promise.all([
+			DB.selectFrom("priv_svc_cg_card_info")
+				.select(SELECT_CG_CARD_INFO)
+				.where("priv_svc_cg_card_info.user_id", "=", userID)
+				.where("priv_svc_cg_card_info.service", "=", service)
+				.executeTakeFirst(),
+			GetImportTimestop(userID, importType),
+		]);
 
 		const cardInfo = row ? ToCGCardInfo(row) : undefined;
 
@@ -137,6 +145,17 @@ export function CreateCGParser<T>(cgGame: CGSupportedGames, service: CGServices)
 			throw new ScoreImportFatalError(400, FormatPrError(err, `Invalid CG ${cgGame} Score.`));
 		}
 
+		const cutoff = lastScoreTime?.getTime() ?? null;
+
+		const filtered =
+			cutoff === null
+				? (scores as Array<T>)
+				: (scores as Array<T>).filter((s) => {
+						const parsed = Date.parse(s.dateTime);
+
+						return Number.isNaN(parsed) || parsed > cutoff;
+					});
+
 		return {
 			service: FormatCGService(service),
 			context: {
@@ -144,23 +163,23 @@ export function CreateCGParser<T>(cgGame: CGSupportedGames, service: CGServices)
 				userID: cardInfo.userID,
 			},
 			gameGroup: CGGameToTachiGame(cgGame),
-			iterable: scores as Array<T>,
+			iterable: filtered,
 			classProvider: null,
 		};
 	};
 }
 
-export const ParseCGDevMuseca = CreateCGParser<CGMusecaScore>("msc", "dev");
-export const ParseCGDevSDVX = CreateCGParser<CGSDVXScore>("sdvx", "dev");
-export const ParseCGDevJubeat = CreateCGParser<CGJubeatScore>("jb", "dev");
-export const ParseCGDevPopn = CreateCGParser<CGPopnScore>("popn", "dev");
+export const ParseCGDevMuseca = CreateCGParser<CGMusecaScore>("msc", "dev", "api/cg-dev-museca");
+export const ParseCGDevSDVX = CreateCGParser<CGSDVXScore>("sdvx", "dev", "api/cg-dev-sdvx");
+export const ParseCGDevJubeat = CreateCGParser<CGJubeatScore>("jb", "dev", "api/cg-dev-jubeat");
+export const ParseCGDevPopn = CreateCGParser<CGPopnScore>("popn", "dev", "api/cg-dev-popn");
 
-export const ParseCGGanMuseca = CreateCGParser<CGMusecaScore>("msc", "gan");
-export const ParseCGGanSDVX = CreateCGParser<CGSDVXScore>("sdvx", "gan");
-export const ParseCGGanJubeat = CreateCGParser<CGJubeatScore>("jb", "gan");
-export const ParseCGGanPopn = CreateCGParser<CGPopnScore>("popn", "gan");
+export const ParseCGGanMuseca = CreateCGParser<CGMusecaScore>("msc", "gan", "api/cg-gan-museca");
+export const ParseCGGanSDVX = CreateCGParser<CGSDVXScore>("sdvx", "gan", "api/cg-gan-sdvx");
+export const ParseCGGanJubeat = CreateCGParser<CGJubeatScore>("jb", "gan", "api/cg-gan-jubeat");
+export const ParseCGGanPopn = CreateCGParser<CGPopnScore>("popn", "gan", "api/cg-gan-popn");
 
-export const ParseCGNagMuseca = CreateCGParser<CGMusecaScore>("msc", "nag");
-export const ParseCGNagSDVX = CreateCGParser<CGSDVXScore>("sdvx", "nag");
-export const ParseCGNagJubeat = CreateCGParser<CGJubeatScore>("jb", "nag");
-export const ParseCGNagPopn = CreateCGParser<CGPopnScore>("popn", "nag");
+export const ParseCGNagMuseca = CreateCGParser<CGMusecaScore>("msc", "nag", "api/cg-nag-museca");
+export const ParseCGNagSDVX = CreateCGParser<CGSDVXScore>("sdvx", "nag", "api/cg-nag-sdvx");
+export const ParseCGNagJubeat = CreateCGParser<CGJubeatScore>("jb", "nag", "api/cg-nag-jubeat");
+export const ParseCGNagPopn = CreateCGParser<CGPopnScore>("popn", "nag", "api/cg-nag-popn");

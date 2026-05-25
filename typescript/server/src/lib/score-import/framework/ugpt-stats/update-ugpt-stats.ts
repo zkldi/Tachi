@@ -6,6 +6,7 @@ import { loadUserGameStats } from "#utils/class";
 import { type ClassDelta, type integer, type V3Game } from "tachi-common";
 
 import type { ClassProvider } from "../calculated-data/types";
+import type { ClassProcessOptions } from "../profile-calculated-data/class-process-options";
 
 import { CalculateProfileRatings } from "../calculated-data/profile";
 import { CalculateUGPTClasses, ProcessClassDeltas } from "../profile-calculated-data/classes";
@@ -15,6 +16,7 @@ export async function UpdateUsersGamePlaytypeStats(
 	userID: integer,
 	classProvider: ClassProvider<V3Game> | null,
 	log: KtLogger,
+	options?: ClassProcessOptions,
 ): Promise<Array<ClassDelta>> {
 	log.debug(`Calculating Ratings...`);
 
@@ -32,7 +34,7 @@ export async function UpdateUsersGamePlaytypeStats(
 
 	log.debug(`Calculating Class Deltas...`);
 
-	const deltas = await ProcessClassDeltas(game, classes, userGameStats, userID, log);
+	const deltas = await ProcessClassDeltas(game, classes, userGameStats, userID, log, options);
 
 	log.debug(`Had ${deltas.length} deltas.`);
 

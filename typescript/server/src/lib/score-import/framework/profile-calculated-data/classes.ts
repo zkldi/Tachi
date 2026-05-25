@@ -17,6 +17,7 @@ import {
 } from "tachi-common";
 
 import type { ClassProvider } from "../calculated-data/types";
+import type { ClassProcessOptions } from "./class-process-options";
 
 import { CalculateDerivedClasses } from "../calculated-data/profile-classes";
 
@@ -81,12 +82,14 @@ export async function ProcessClassDeltas(
 	userGameStats: UserGameStats | null,
 	userID: integer,
 	log: KtLogger,
+	options?: ClassProcessOptions,
 ): Promise<Array<ClassDelta>> {
 	const deltas: Array<ClassDelta> = [];
 
 	const achievementOps = [];
 
 	const gameConfig = GetGameConfig(game);
+	const classAchievementSource = options?.classAchievementSource ?? "import";
 
 	for (const s of Object.keys(classes)) {
 		const classSet = s as Classes[V3Game];
@@ -103,8 +106,12 @@ export async function ProcessClassDeltas(
 			const isGreater = ReturnClassIfGreater(game, classSet, classVal, userGameStats);
 
 			// if this was worse, and this class is PROVIDED (i.e. it's a dan)
-			// then don't do anything
-			if (isGreater === false && classConfig.type === "PROVIDED") {
+			// then don't do anything unless manual import explicitly allows downgrades
+			if (
+				isGreater === false &&
+				classConfig.type === "PROVIDED" &&
+				!options?.allowProvidedDowngrades
+			) {
 				continue;
 			} else {
 				// otherwise, provide this as an update.
@@ -119,6 +126,13 @@ export async function ProcessClassDeltas(
 						old: null,
 						new: classVal,
 					};
+				} else if (isGreater === true) {
+					delta = {
+						game,
+						set: classSet,
+						old: userGameStats!.classes[classSet]!,
+						new: classVal,
+					};
 				} else {
 					delta = {
 						game,
@@ -128,8 +142,10 @@ export async function ProcessClassDeltas(
 					};
 				}
 
-				// if this wasn't a downgrade
-				if (isGreater !== false) {
+				const shouldRecordAchievement =
+					isGreater !== false || classAchievementSource === "manual";
+
+				if (shouldRecordAchievement) {
 					void EmitWebhookEvent({
 						type: "class-update/v1",
 						content: {
@@ -138,6 +154,7 @@ export async function ProcessClassDeltas(
 							set: delta.set,
 							old: delta.old,
 							new: delta.new,
+							achievementSource: classAchievementSource,
 						},
 					});
 
@@ -148,10 +165,13 @@ export async function ProcessClassDeltas(
 						classValue: delta.new,
 						game,
 						timeAchieved: Date.now(),
+						source: classAchievementSource,
 					});
 				}
 
-				deltas.push(delta);
+				if (delta.old !== delta.new) {
+					deltas.push(delta);
+				}
 			}
 		} catch (err) {
 			log.error(err);
@@ -166,6 +186,7 @@ export async function ProcessClassDeltas(
 					class_set: op.classSet,
 					class_value: op.classValue,
 					game,
+					source: op.source,
 					timestamp: UnixMillisecondsToISO8601(op.timeAchieved),
 					user_id: op.userID,
 				})),

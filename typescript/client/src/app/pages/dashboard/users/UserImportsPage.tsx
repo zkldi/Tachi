@@ -9,8 +9,10 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import SelectLinkButton from "#components/util/SelectLinkButton";
 import { type FailedImportDataset, type ImportDataset } from "#types/tables";
 import React, { useMemo, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import { type ImportDocument, type ImportTrackerFailed, type UserDocument } from "tachi-common";
+
+import UserImportTimestopsTab from "./UserImportTimestopsTab";
 
 export default function UserImportsPage({ reqUser }: { reqUser: UserDocument }) {
 	useSetSubheader(
@@ -37,6 +39,9 @@ export default function UserImportsPage({ reqUser }: { reqUser: UserDocument }) 
 		return p;
 	}, [userIntent, importType]);
 
+	const location = useLocation();
+	const onTimestopsTab = location.pathname.endsWith("/imports/timestops");
+
 	return (
 		<>
 			<div className="d-flex justify-content-center btn-group">
@@ -46,10 +51,19 @@ export default function UserImportsPage({ reqUser }: { reqUser: UserDocument }) 
 				<SelectLinkButton to={`/u/${reqUser.username}/imports/failed`}>
 					Recent Failed Imports
 				</SelectLinkButton>
+				<SelectLinkButton to={`/u/${reqUser.username}/imports/timestops`}>
+					Timestops
+				</SelectLinkButton>
 			</div>
 
-			<Divider />
-			<ImportViewerOptions {...{ userIntent, setUserIntent, importType, setImportType }} />
+			{!onTimestopsTab && (
+				<>
+					<Divider />
+					<ImportViewerOptions
+						{...{ userIntent, setUserIntent, importType, setImportType }}
+					/>
+				</>
+			)}
 			<Divider />
 			<Switch>
 				<Route exact path={`/u/${reqUser.username}/imports`}>
@@ -58,6 +72,10 @@ export default function UserImportsPage({ reqUser }: { reqUser: UserDocument }) 
 
 				<Route path={`/u/${reqUser.username}/imports/failed`}>
 					<ViewRecentFailedImports params={params} reqUser={reqUser} />
+				</Route>
+
+				<Route path={`/u/${reqUser.username}/imports/timestops`}>
+					<UserImportTimestopsTab reqUser={reqUser} />
 				</Route>
 			</Switch>
 		</>

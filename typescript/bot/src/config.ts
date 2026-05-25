@@ -22,7 +22,7 @@ function ParseGameChannels(raw: string | undefined): Partial<Record<GameGroup, s
 	try {
 		parsed = JSON.parse(raw);
 	} catch (err) {
-		throw new Error(`DISCORD_GAME_CHANNELS is not valid JSON: ${err}`);
+		throw new Error(`DISCORD_GAME_CHANNELS is not valid JSON: ${err}. Got ${raw}`);
 	}
 
 	if (!IsRecord(parsed)) {

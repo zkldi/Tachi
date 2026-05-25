@@ -11,6 +11,7 @@ export const SELECT_CLASS_ACHIEVEMENT_DOCUMENT = [
 	"class_achievement.class_prev_value",
 	"class_achievement.class_value",
 	"class_achievement.timestamp",
+	"class_achievement.source",
 ] as const;
 
 type ClassAchievementRow = Selection<
@@ -27,5 +28,6 @@ export function ToClassAchievementDocument(row: ClassAchievementRow): ClassAchie
 		classValue: row.class_value,
 		timeAchieved: ISO8601ToUnixMilliseconds(row.timestamp),
 		userID: row.user_id,
+		source: row.source as ClassAchievementDocument["source"],
 	};
 }

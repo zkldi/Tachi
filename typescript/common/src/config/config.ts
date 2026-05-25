@@ -263,6 +263,28 @@ export function GetGameConfig(game: V3Game): GameConfig {
 	return GAME_CONFIGS[game] as unknown as GameConfig;
 }
 
+export function GetProvidedClassSetsForGame(
+	game: V3Game,
+): Array<keyof GameConfig["classes"] & string> {
+	const config = GetGameConfig(game);
+
+	return Object.entries(config.classes)
+		.filter(([, classConfig]) => classConfig.type === "PROVIDED")
+		.map(([classSet]) => classSet);
+}
+
+export function GameGroupHasProvidedClasses(gameGroup: GameGroup): boolean {
+	return GetGameGroupConfig(gameGroup).games.some(
+		(game) => GetProvidedClassSetsForGame(game).length > 0,
+	);
+}
+
+export function GetGamesWithProvidedClasses(gameGroup: GameGroup): Array<V3Game> {
+	return GetGameGroupConfig(gameGroup).games.filter(
+		(game) => GetProvidedClassSetsForGame(game).length > 0,
+	);
+}
+
 /**
  * Returns the configuration for this specific Game + Playtype. This type is narrowed
  * down to its least generic form, and is instead for gpt-specific use cases.

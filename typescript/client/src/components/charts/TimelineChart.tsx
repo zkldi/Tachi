@@ -1,8 +1,19 @@
 import { WindowContext } from "#context/WindowContext";
 import { ColourConfig } from "#lib/config";
 import { TACHI_LINE_THEME } from "#util/constants/chart-theme";
-import { ResponsiveLine } from "@nivo/line";
-import React, { useContext } from "react";
+import { ResponsiveLine, type Serie } from "@nivo/line";
+import React, { useContext, useMemo } from "react";
+
+function isDefinedTimelineValue(value: unknown): value is number {
+	return value !== undefined && value !== null && !Number.isNaN(Number(value));
+}
+
+function withDefinedTimelineValues(data: readonly Serie[]): Serie[] {
+	return data.map((series) => ({
+		...series,
+		data: series.data.filter((point) => isDefinedTimelineValue(point.y)),
+	}));
+}
 
 export default function TimelineChart({
 	width = "100%",
@@ -23,7 +34,10 @@ export default function TimelineChart({
 		breakpoint: { isMd },
 	} = useContext(WindowContext);
 	const graphStyle = { height: isMd ? height : mobileHeight, width: isMd ? width : mobileWidth };
-	if (!data[0] || data[0].data.length < 2) {
+	const chartData = useMemo(() => withDefinedTimelineValues(data), [data]);
+	const pointCount = chartData[0]?.data.length ?? 0;
+
+	if (!chartData[0] || pointCount < 2) {
 		return (
 			<div className="d-flex justify-content-center align-items-center" style={graphStyle}>
 				<div className="text-center">
@@ -41,7 +55,7 @@ export default function TimelineChart({
 			<ResponsiveLine
 				colors={[ColourConfig.primary]}
 				crosshairType="x"
-				data={data}
+				data={chartData}
 				enablePoints={false}
 				gridXValues={3}
 				legends={[]}

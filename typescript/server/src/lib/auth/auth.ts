@@ -3,7 +3,6 @@ import { Env, ServerConfig } from "#lib/setup/config";
 import DB from "#services/pg/db";
 import nodeFetch from "#utils/fetch";
 import { Random20Hex } from "#utils/misc";
-import { CreateURLWithParams } from "#utils/url";
 import { FormatUserDoc } from "#utils/user";
 import bcrypt from "bcryptjs";
 import { type Transaction } from "kysely";
@@ -173,20 +172,22 @@ export async function InsertDefaultUserSettings(
 }
 
 export async function ValidateCaptcha(
-	recaptcha: string,
+	captchaResponse: string,
 	remoteAddr: string | undefined,
 	fetch = nodeFetch,
 ) {
-	const url = CreateURLWithParams(`https://www.google.com/recaptcha/api/siteverify`, {
-		secret: ServerConfig.CAPTCHA_SECRET_KEY,
-		response: recaptcha,
-		remoteip: remoteAddr ?? "",
-	});
-
-	const googleCaptchaRes: unknown = await fetch(url.href).then((r) => r.json());
+	const verifyRes: unknown = await fetch("https://api.hcaptcha.com/siteverify", {
+		method: "POST",
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		body: new URLSearchParams({
+			secret: ServerConfig.CAPTCHA_SECRET_KEY,
+			response: captchaResponse,
+			remoteip: remoteAddr ?? "",
+		}),
+	}).then((r) => r.json());
 
 	const err = p(
-		googleCaptchaRes,
+		verifyRes,
 		{
 			success: "boolean",
 		},
@@ -196,20 +197,19 @@ export async function ValidateCaptcha(
 
 	if (err) {
 		log.warn(
-			{ googleCaptchaRes, err },
-			`Google ReCaptcha returned something without a success property? Assuming this captcha check failed.`,
+			{ err, verifyRes },
+			`hCaptcha returned something without a success property? Assuming this captcha check failed.`,
 		);
 		return false;
 	}
 
-	// asserted above
-	const gcr = googleCaptchaRes as { success: boolean };
+	const hcr = verifyRes as { "error-codes"?: string[]; success: boolean };
 
-	if (!gcr.success) {
-		log.debug({ gcr }, `Failed GCaptcha response`);
+	if (!hcr.success) {
+		log.debug({ errorCodes: hcr["error-codes"], hcr }, `Failed hCaptcha response`);
 	}
 
-	return gcr.success;
+	return hcr.success;
 }
 
 export function MountAuthCookie(

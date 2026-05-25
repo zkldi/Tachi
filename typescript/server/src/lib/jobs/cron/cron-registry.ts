@@ -8,6 +8,7 @@ import { DefaultAdminUser } from "#lib/jobs/default-admin-user";
 import { DeorphanScoresMain } from "#lib/jobs/deorphan-scores";
 import { drainStatsQueuesInOrder } from "#lib/jobs/drain-dirty-queues";
 import { RebuildFolderChartLookupJob } from "#lib/jobs/rebuild-folder-chart-lookup";
+import { ReconcileChartPlaycountJob } from "#lib/jobs/reconcile-chart-playcount";
 import { Env, TachiConfig } from "#lib/setup/config";
 import { DedupeArr } from "#utils/misc";
 
@@ -46,6 +47,12 @@ function buildList(): Array<CronTaskDef> {
 			schedule: "0 1 * * *",
 			description: "De-Orphan Scores",
 			run: DeorphanScoresMain,
+		},
+		{
+			id: "reconcile_chart_playcount",
+			schedule: "0 4 * * *",
+			description: "Reconcile cached chart playcounts",
+			run: ReconcileChartPlaycountJob,
 		},
 		{
 			id: "drain_stats_queues",

@@ -43,4 +43,6 @@ VITE_GIT_REPO=""
 # What client mode to use. Should be boku, kamai or omni.
 # This affects some things, like what buttons should appear in certain places and what colours the site should be.
 VITE_TCHIC_MODE="omni"
-```
+
+# hCaptcha site key (optional in local dev — omit to hide the widget; required for prod/staging server captcha enforcement).
+VITE_HCAPTCHA_SITEKEY=""

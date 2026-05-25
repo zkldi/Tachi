@@ -5,11 +5,13 @@ import type { default as PrivSvcCgCardInfoTable } from './PrivSvcCgCardInfo';
 import type { default as ScoreRederiveTable } from './ScoreRederive';
 import type { default as ClassAchievementTable } from './ClassAchievement';
 import type { default as AccountTable } from './Account';
+import type { default as ImportTimestopTable } from './ImportTimestop';
 import type { default as ImportTrackerTable } from './ImportTracker';
 import type { default as SvcFerSettingsTable } from './SvcFerSettings';
 import type { default as InviteLockTable } from './InviteLock';
 import type { default as OrphanChartTable } from './OrphanChart';
 import type { default as GameRivalTable } from './GameRival';
+import type { default as ChartPlaycountTable } from './ChartPlaycount';
 import type { default as GoalTable } from './Goal';
 import type { default as QuestProposalTable } from './QuestProposal';
 import type { default as ImportQuestTable } from './ImportQuest';
@@ -78,6 +80,8 @@ export default interface PublicSchema {
 
   account: AccountTable;
 
+  import_timestop: ImportTimestopTable;
+
   import_tracker: ImportTrackerTable;
 
   svc_fer_settings: SvcFerSettingsTable;
@@ -87,6 +91,8 @@ export default interface PublicSchema {
   orphan_chart: OrphanChartTable;
 
   game_rival: GameRivalTable;
+
+  chart_playcount: ChartPlaycountTable;
 
   goal: GoalTable;
 

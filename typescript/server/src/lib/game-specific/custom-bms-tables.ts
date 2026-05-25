@@ -263,20 +263,22 @@ export async function HandleBMSTableBodyRequest(
 /**
  * Normalise a level value fetched from a proxied external BMS table.
  *
- * Rules applied in order after trimming:
- *  - `sub<rest>` → `<rest> (sub)`   e.g. "sub3" → "3 (sub)"
- *  - `<prefix><rest>` → `<rest>`    e.g. "dl3"  → "3"        (when prefix is "dl")
- *  - otherwise returned as-is
+ * Rules applied in order (each step trims its segment so stray spaces after prefix/sub are dropped):
+ *  - outer string is trimmed once
+ *  - `sub<rest>` → `<rest> (sub)` with `<rest>` trimmed, e.g. "sub 3" → "3 (sub)"
+ *  - `<prefix><rest>` → `<rest>` trimmed, e.g. "dl 3" → "3" when prefix is "dl"
+ *  - otherwise the trimmed outer string is returned
  */
 function fixLetsGoTimeHellLevel(raw: number | string, prefix: string): string {
 	const s = String(raw).trim();
+	const p = prefix.trim();
 
 	if (s.startsWith("sub")) {
-		return `${s.slice("sub".length)} (sub)`;
+		return `${s.slice("sub".length).trim()} (sub)`.trim();
 	}
 
-	if (s.startsWith(prefix)) {
-		return s.slice(prefix.length);
+	if (p.length > 0 && s.startsWith(p)) {
+		return s.slice(p.length).trim();
 	}
 
 	return s;

@@ -44,6 +44,7 @@ export const Converters: ConverterMap = {
 	// a CSV that indicates what class you are. Interesting edge case, but we're guaranteed
 	// to have an empty array here, so this will never get called.
 	"file/mypagescraper-player-csv": Never,
+	"file/import-class": Never,
 
 	"api/eag-iidx": ConvertAPIKaiIIDX,
 	"api/eag-sdvx": ConvertAPIKaiSDVX,

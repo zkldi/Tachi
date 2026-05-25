@@ -49,6 +49,7 @@ export interface ImportTypeDataMap {
 	"file/pli-iidx-csv": IIDXEamusementCSVData;
 	"file/mypagescraper-records-csv": MyPageRecordsParsedPB;
 	"file/mypagescraper-player-csv": never;
+	"file/import-class": never;
 
 	"ir/direct-manual": BatchManualScore;
 	"ir/barbatos": BarbatosScore | BarbatosSDVX6Score;
@@ -97,6 +98,7 @@ export interface ImportTypeContextMap {
 	"file/pli-iidx-csv": IIDXEamusementCSVContext;
 	"file/mypagescraper-records-csv": EmptyObject;
 	"file/mypagescraper-player-csv": EmptyObject;
+	"file/import-class": EmptyObject;
 
 	"ir/direct-manual": BatchManualContext;
 	"ir/barbatos": BarbatosContext;

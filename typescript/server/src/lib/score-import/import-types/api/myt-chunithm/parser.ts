@@ -3,6 +3,7 @@ import type { ParserFunctionReturns } from "#lib/score-import/import-types/commo
 import type { EmptyObject } from "#utils/types";
 import type { GamesForGroup, integer } from "tachi-common";
 
+import { GetImportTimestop } from "#lib/score-import/framework/common/timestop";
 import { drainMytPlaylogStream } from "#lib/score-import/import-types/common/api-myt/buffer-playlog-stream";
 import {
 	CreateMytTransport,
@@ -15,9 +16,16 @@ import { createClient } from "@connectrpc/connect";
 import type { MytChunithmScore } from "./types";
 
 async function* streamPlaylog(userID: integer, log: KtLogger): AsyncIterable<MytChunithmScore> {
-	const profileApiId = await FetchMytTitleAPIID(userID, "chunithm", log);
+	const [profileApiId, lastScoreTime] = await Promise.all([
+		FetchMytTitleAPIID(userID, "chunithm", log),
+		GetImportTimestop(userID, "api/myt-chunithm"),
+	]);
+
 	const client = createClient(ChunithmUser, CreateMytTransport());
-	const request = create(GetPlaylogRequestSchema, { profileApiId });
+	const request = create(GetPlaylogRequestSchema, {
+		profileApiId,
+		lastUserPlayDate: lastScoreTime?.toISOString() ?? undefined,
+	});
 
 	yield* await drainMytPlaylogStream(client.getPlaylog(request), log, {
 		gameLabel: "Chunithm",

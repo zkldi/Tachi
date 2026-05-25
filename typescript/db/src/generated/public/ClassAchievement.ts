@@ -23,6 +23,8 @@ export default interface ClassAchievementTable {
   class_value: ColumnType<string, string, string>;
 
   timestamp: ColumnType<string, string, string>;
+
+  source: ColumnType<string, string | undefined, string>;
 }
 
 export type ClassAchievement = Selectable<ClassAchievementTable>;

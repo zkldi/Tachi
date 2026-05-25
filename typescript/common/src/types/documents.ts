@@ -317,6 +317,7 @@ export interface UserDocument {
 	authLevel: UserAuthLevels;
 	isSupporter?: boolean;
 	canSubmitQuests?: boolean;
+	canImportProvidedClass?: boolean;
 }
 
 export interface SpecificUserGameStats<TGame extends V3Game> {
@@ -707,6 +708,8 @@ export interface ClassDelta {
 	new: string;
 }
 
+export type ClassAchievementSource = "import" | "manual";
+
 export interface ClassAchievementDocument<TGame extends V3Game = V3Game> {
 	game: TGame;
 	classSet: Classes[TGame];
@@ -714,6 +717,7 @@ export interface ClassAchievementDocument<TGame extends V3Game = V3Game> {
 	classValue: string;
 	timeAchieved: number;
 	userID: integer;
+	source?: ClassAchievementSource;
 }
 
 export interface RecentlyViewedFolderDocument {

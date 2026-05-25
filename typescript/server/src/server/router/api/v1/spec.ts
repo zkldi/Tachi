@@ -543,6 +543,34 @@ export const API_V1_SPEC = {
 		output: docArray<ImportTrackerDocument>(),
 	},
 
+	"GET /users/:userID/import-timestops": {
+		description: "List API import timestop cursors for the authenticated user.",
+		input: z.object({}),
+		output: z.strictObject({
+			timestops: z.array(
+				z.strictObject({
+					importType: z.string(),
+					lastScoreTime: z.number().nullable(),
+				}),
+			),
+		}),
+	},
+
+	"DELETE /users/:userID/import-timestops": {
+		description: "Reset an API import timestop cursor.",
+		input: z.object({ importType: z.string() }),
+		output: empty,
+	},
+
+	"PUT /users/:userID/import-timestops": {
+		description: "Set an API import timestop cursor to a specific timestamp.",
+		input: z.object({
+			importType: z.string(),
+			lastScoreTime: z.number(),
+		}),
+		output: empty,
+	},
+
 	// ────────────────────────────────────────────────
 	// Users /:userID/integrations/myt (Kamaitachi only)
 	// ────────────────────────────────────────────────
@@ -1508,12 +1536,6 @@ export const API_V1_SPEC = {
 		output: docArray<FolderDocument>(),
 	},
 
-	"GET /games/:game/charts/:chartID/playcount": {
-		description: "Number of unique players on a chart.",
-		input: z.object({}),
-		output: z.strictObject({ count: z.number() }),
-	},
-
 	"GET /games/:game/charts/:chartID/pbs": {
 		description: "Top PBs on a chart by ranking page.",
 		input: z.object({ startRanking: z.coerce.number().optional() }),
@@ -1816,6 +1838,15 @@ export const API_V1_SPEC = {
 		output: doc<Record<string, unknown>>(),
 	},
 
+	"POST /import/class": {
+		description: "Self-report PROVIDED classes for a game (dan, emblem, etc.).",
+		input: z.object({
+			game: z.enum(ALL_GAMES),
+			classes: z.record(z.string(), z.string()),
+		}),
+		output: doc<Record<string, unknown>>(),
+	},
+
 	"POST /import/orphans": {
 		description: "Reprocess orphaned scores.",
 		input: z.object({}),
@@ -2049,6 +2080,18 @@ export const API_V1_SPEC = {
 
 	"DELETE /admin/quest-submitter/:userID": {
 		description: "Revoke quest-submission permission from a user.",
+		input: z.object({}),
+		output: empty,
+	},
+
+	"POST /admin/import-provided-class/:userID": {
+		description: "Allow a user to manually import PROVIDED classes.",
+		input: z.object({}),
+		output: empty,
+	},
+
+	"DELETE /admin/import-provided-class/:userID": {
+		description: "Ban a user from manually importing PROVIDED classes.",
 		input: z.object({}),
 		output: empty,
 	},

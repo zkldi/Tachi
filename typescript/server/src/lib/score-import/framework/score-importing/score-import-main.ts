@@ -7,6 +7,7 @@ import type { ScoreImportJob } from "#lib/score-import/worker/types";
 
 import { LoadImportDocumentById } from "#lib/db-formats/import-document";
 import { clearPbDirtyForUser } from "#lib/jobs/drain-dirty-queues";
+import { SetImportTimestop } from "#lib/score-import/framework/common/timestop";
 import { runWithImportContext } from "#lib/score-import/framework/import-run-context";
 import {
 	deleteImportRun,
@@ -19,6 +20,7 @@ import DB from "#services/pg/db";
 import { GetMillisecondsSince } from "#utils/misc";
 import { GetUserWithID } from "#utils/user";
 import {
+	type APIImportTypes,
 	type GameGroup,
 	GetGameGroupConfig,
 	type GoalImportInfo,
@@ -29,6 +31,7 @@ import {
 	type UserDocument,
 	type V3Game,
 } from "tachi-common";
+import { apiImportTypes } from "tachi-common/constants/import-types";
 
 import type { ClassProvider } from "../calculated-data/types";
 import type { ChartIDGameMap, ScoreGameMap } from "../common/types";
@@ -37,6 +40,10 @@ import { InternalFailure } from "../common/converter-failures";
 import { CreateScoreLogger } from "../common/import-logger";
 import { GetAndUpdateUsersGoals } from "../goals/goals";
 import { ProcessPBs } from "../pb/process-pbs";
+import {
+	type ClassProcessOptions,
+	MANUAL_CLASS_IMPORT_OPTIONS,
+} from "../profile-calculated-data/class-process-options";
 import { UpdateUsersQuests } from "../quests/quests";
 import { CreateSessions } from "../sessions/sessions";
 import { UpdateUsersGamePlaytypeStats } from "../ugpt-stats/update-ugpt-stats";
@@ -184,6 +191,11 @@ export default async function ScoreImportMain<D, C>(
 			absoluteTimes,
 		} = post;
 
+		const finalGames =
+			games.length > 0
+				? games
+				: ([...new Set(classDeltas.map((d) => d.game))] as Array<V3Game>);
+
 		const { importParseTime, sessionTime, pbTime, ugsTime, goalTime, questTime } =
 			absoluteTimes;
 
@@ -215,7 +227,7 @@ export default async function ScoreImportMain<D, C>(
 				service,
 				timeStartedMs: timeStarted,
 				timeFinishedMs: timeFinished,
-				games,
+				games: finalGames,
 				scoreCount: scoreIDs.length,
 				errors,
 				classDeltas,
@@ -238,6 +250,20 @@ export default async function ScoreImportMain<D, C>(
 
 		observeScoreImportDuration(importType, Date.now() - timeStarted);
 
+		// For API imports, advance the per-user timestop cursor so subsequent
+		// imports can stop once they reach already-imported scores.
+		if (apiImportTypes.includes(importType as APIImportTypes)) {
+			const maxTimeAchieved = importInfo
+				.filter((i): i is { success: true } & typeof i => i.success)
+				.map((i) => i.content.score.timeAchieved)
+				.filter((t): t is number => t !== null)
+				.reduce((max, t) => Math.max(max, t), -Infinity);
+
+			if (Number.isFinite(maxTimeAchieved)) {
+				await SetImportTimestop(userID, importType, new Date(maxTimeAchieved));
+			}
+		}
+
 		const loaded = await LoadImportDocumentById(importID);
 
 		if (!loaded) {
@@ -258,13 +284,15 @@ export default async function ScoreImportMain<D, C>(
 export async function HandlePostImportSteps(
 	importInfo: Array<ImportProcessingInfo>,
 	user: UserDocument,
-	_importType: ImportTypes,
+	importType: ImportTypes,
 	gameGroup: GameGroup,
 	classProvider: ClassProvider<V3Game> | null,
 	log: KtLogger,
 	job: ScoreImportJob | undefined,
 	_importId: string,
 ) {
+	const classProcessOptions =
+		importType === "file/import-class" ? MANUAL_CLASS_IMPORT_OPTIONS : undefined;
 	// --- 3. ParseImportInfo ---
 	// ImportInfo is a relatively complex structure. We need some information from it for subsequent steps
 	// such as the list of chartIDs involved in this import.
@@ -323,7 +351,13 @@ export async function HandlePostImportSteps(
 	void SetJobProgress(job, "Updating profile statistics.");
 
 	const ugsTimeStart = process.hrtime.bigint();
-	const classDeltas = await UpdateUsersGameStats(gameGroup, user.id, classProvider, log);
+	const classDeltas = await UpdateUsersGameStats(
+		gameGroup,
+		user.id,
+		classProvider,
+		log,
+		classProcessOptions,
+	);
 
 	const ugsTime = GetMillisecondsSince(ugsTimeStart);
 
@@ -390,11 +424,12 @@ async function UpdateUsersGameStats(
 	userID: integer,
 	classProvider: ClassProvider<V3Game> | null,
 	log: KtLogger,
+	options?: ClassProcessOptions,
 ) {
 	const promises = [];
 
 	for (const game of GetGameGroupConfig(gameGroup).games) {
-		promises.push(UpdateUsersGamePlaytypeStats(game, userID, classProvider, log));
+		promises.push(UpdateUsersGamePlaytypeStats(game, userID, classProvider, log, options));
 	}
 
 	const r = await Promise.all(promises);
