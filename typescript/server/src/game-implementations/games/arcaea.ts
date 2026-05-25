@@ -125,5 +125,19 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 				return "Cannot have a FULL RECALL with non-zero lost count.";
 			}
 		},
+		(s) => {
+			const { pure, far, lost } = s.scoreData.judgements;
+
+			if (
+				!IsNullish(pure) &&
+				(far ?? 0) + (lost ?? 0) === 0 &&
+				s.scoreData.lamp === "PURE MEMORY"
+			) {
+				const shinyPure = s.scoreData.score - 10_000_000;
+				if (shinyPure > pure) {
+					return `Impossible PURE MEMORY. Got ${s.scoreData.score} with ${pure} pures.`;
+				}
+			}
+		},
 	],
 };

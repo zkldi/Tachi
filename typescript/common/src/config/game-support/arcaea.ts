@@ -90,7 +90,7 @@ export const GAME_ARCAEA_CONF = {
 		naivePotential: {
 			description:
 				"The average of your best 30 Potential values. This is different to the in-game algorithm, as it does not take your recent scores into account in any way.",
-			formatter: ToDecimalPlaces(2),
+			formatter: (v) => (Math.round(v * 100.0) / 100.0).toFixed(2),
 			associatedScoreAlgs: ["potential"],
 		},
 	},
@@ -117,6 +117,7 @@ export const GAME_ARCAEA_CONF = {
 		badge: {
 			type: "DERIVED",
 			values: ArcaeaBadges,
+			minimumRelevantValue: "RED",
 		},
 		courseBanner: {
 			type: "PROVIDED",

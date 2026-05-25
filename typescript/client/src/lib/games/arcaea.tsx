@@ -1,12 +1,17 @@
-import ArcaeaJudgementCell from "#components/tables/cells/ArcaeaJudgementCell";
+import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import LampCell from "#components/tables/cells/LampCell";
 import MillionsScoreCell from "#components/tables/cells/MillionsScoreCell";
-import RatingCell from "#components/tables/cells/RatingCell";
 import { GetEnumColour } from "#lib/game-implementations";
 import { type GPTClientImplementation } from "#lib/types";
+import { FormatScoreRating, IsNullish } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
 import React from "react";
-import { COLOUR_SET, type GamesForGroup } from "tachi-common";
+import {
+	COLOUR_SET,
+	type GamesForGroup,
+	type PBScoreDocument,
+	type ScoreDocument,
+} from "tachi-common";
 
 import { bgc } from "./_util";
 
@@ -67,11 +72,61 @@ const ARCAEA_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["classColo
 	},
 };
 
+// Returns 0 for MAX PM, -10 for MAX-10, and -10k if undefined/not applicable
+const MaxPureDelta = (sc: PBScoreDocument<"arcaea"> | ScoreDocument<"arcaea">) =>
+	IsNullish(sc.scoreData.judgements.pure) || sc.scoreData.lamp !== "PURE MEMORY"
+		? -10000
+		: sc.scoreData.score - sc.scoreData.judgements.pure - 10_000_000;
+
 const ARCAEA_SCORE_HEADERS: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreHeaders"] = [
 	["Score", "Score", NumericSOV((x) => x.scoreData.score)],
-	["Far - Lost", "Far - Lost", NumericSOV((x) => x.scoreData.score)],
+	[
+		"Judgements",
+		"Judgements",
+		NumericSOV((sc) =>
+			sc.scoreData.lamp !== "PURE MEMORY"
+				? sc.scoreData.score - 20_000_000
+				: MaxPureDelta(sc),
+		),
+	],
 	["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
 ];
+
+const ArcaeaJudgementCell = ({
+	score,
+}: {
+	score: PBScoreDocument<"arcaea"> | ScoreDocument<"arcaea">;
+}) => {
+	const judgements = score.scoreData.judgements;
+
+	if (IsNullish(judgements.far) || IsNullish(judgements.lost)) {
+		return <td>No Data.</td>;
+	}
+
+	if (score.scoreData.lamp === "PURE MEMORY") {
+		const delta = MaxPureDelta(score);
+		return (
+			<td>
+				<strong>
+					{delta < 0 ? (
+						<span style={{ color: COLOUR_SET.blue }}>MAX{delta}</span>
+					) : (
+						<span style={{ color: COLOUR_SET.vibrantBlue }}>MAX</span>
+					)}
+				</strong>
+			</td>
+		);
+	}
+
+	return (
+		<td>
+			<strong>
+				<span style={{ color: COLOUR_SET.vibrantYellow }}>{judgements.far}</span>-
+				<span style={{ color: COLOUR_SET.red }}>{judgements.lost}</span>
+			</strong>
+		</td>
+	);
+};
 
 const ArcaeaCoreCells: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreCoreCells"] = ({
 	sc,
@@ -90,7 +145,16 @@ const ArcaeaCoreCells: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreCo
 const ArcaeaRatingCell: GPTClientImplementation<GamesForGroup["arcaea"]>["ratingCell"] = ({
 	sc,
 	rating,
-}) => <RatingCell rating={rating} score={sc} />;
+}) => {
+	const ptt = sc.calculatedData.potential ?? 0;
+	return (
+		<QuickTooltip tooltipContent={<div className="fs-5">{ptt.toFixed(6)}</div>}>
+			<td>
+				<div className="underline-on-hover">{FormatScoreRating("arcaea", rating, ptt)}</div>
+			</td>
+		</QuickTooltip>
+	);
+};
 
 export const ARCAEA_TOUCH_IMPL: GPTClientImplementation<"arcaea"> = {
 	sessionImportantScoreCount: 30,

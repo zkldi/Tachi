@@ -131,7 +131,7 @@ describe("ARCAEA_IMPL", () => {
 		expect(
 			ARCAEA_IMPL.scoreCalcs(scoreData, ARCAEA_IMPL.scoreDeriver(scoreData, chart), chart)
 				.potential,
-		).toBe(11.99);
+		).toBe(11.99683);
 	});
 
 	describe("classDerivers (naivePotential → badge)", () => {
@@ -329,6 +329,28 @@ describe("ARCAEA_IMPL", () => {
 			expect(
 				ARCAEA_IMPL.chartSpecificValidators.score(10_001_152, chartWithoutNotecount),
 			).toBe(true);
+		});
+
+		it("rejects inconsistent pure counts", () => {
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "PURE MEMORY",
+						score: 10_001_151,
+						judgements: { pure: 1150, far: 0, lost: 0 },
+					},
+				}),
+			).toEqual([`Impossible PURE MEMORY. Got ${10_001_151} with ${1150} pures.`]);
+
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "PURE MEMORY",
+						score: 10_001_151,
+						judgements: { pure: 1151, far: 0, lost: 0 },
+					},
+				}),
+			).toBeUndefined();
 		});
 	});
 });

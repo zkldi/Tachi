@@ -12,16 +12,15 @@ export function calculate(score: number, internalChartLevel: number) {
 		level: internalChartLevel,
 	});
 
-	const iclInt = Math.round(internalChartLevel * 100);
 	let potential = 0;
 
 	if (score >= 10_000_000) {
-		potential = iclInt + 200;
+		potential = internalChartLevel + 2;
 	} else if (score >= 9_800_000) {
-		potential = iclInt + 100 + Math.floor((score - 9_800_000) / 2_000);
+		potential = internalChartLevel + 1 + (score - 9_800_000) / 200_000;
 	} else {
-		potential = iclInt + Math.floor((score - 9_500_000) / 3_000);
+		potential = internalChartLevel + (score - 9_500_000) / 300_000;
 	}
 
-	return Math.max(potential / 100, 0);
+	return Math.max(potential, 0);
 }
