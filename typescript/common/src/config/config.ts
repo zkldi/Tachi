@@ -355,7 +355,7 @@ export function ValidateMetric(gameConfig: GameConfig, metricName: string, metri
 		return "Cannot validate a graph or nullable graph metric.";
 	}
 
-	if (conf.chartDependentMax) {
+	if (conf.chartDependentMax === true) {
 		return `This metric is chart dependent and not appropriate to check in this context.`;
 	}
 

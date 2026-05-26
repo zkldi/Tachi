@@ -59,12 +59,44 @@ interface ConfIntegerScoreMetricChartDependent {
 	chartDependentMax: true;
 }
 
+interface ConfDecimalScoreMetricConditionallyChartDependent {
+	type: "DECIMAL";
+	formatter: (v: number) => string;
+	validate: (v: number) => string | true;
+
+	/**
+	 * Is the maximum/minimum value of this metric chart dependent?
+	 *
+	 * @example:
+	 * Arcaea's score is upperbounded at 10M+notecount, but scores below 10M
+	 * behave as if the max was 10M.
+	 */
+	chartDependentMax: (v: number) => boolean;
+}
+
+interface ConfIntegerScoreMetricConditionallyChartDependent {
+	type: "INTEGER";
+	formatter: (v: number) => string;
+	validate: (v: number) => string | true;
+
+	/**
+	 * Is the maximum/minimum value of this metric chart dependent?
+	 *
+	 * @example:
+	 * Arcaea's score is upperbounded at 10M+notecount, but scores below 10M
+	 * behave as if the max was 10M.
+	 */
+	chartDependentMax: (v: number) => boolean;
+}
+
 export type ConfDecimalScoreMetric =
 	| ConfDecimalScoreMetricChartDependent
+	| ConfDecimalScoreMetricConditionallyChartDependent
 	| ConfDecimalScoreMetricNormal;
 
 export type ConfIntegerScoreMetric =
 	| ConfIntegerScoreMetricChartDependent
+	| ConfIntegerScoreMetricConditionallyChartDependent
 	| ConfIntegerScoreMetricNormal;
 
 /**

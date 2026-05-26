@@ -265,7 +265,9 @@ export async function ValidateGoalChartsAndCriteria(
 	switch (config.type) {
 		case "DECIMAL":
 		case "INTEGER": {
-			if (config.chartDependentMax && charts.type !== "single") {
+			const chartDependentMax =
+				config.chartDependentMax === true || config.chartDependentMax?.(criteria.value);
+			if (chartDependentMax && charts.type !== "single") {
 				throw new Error(
 					`Creating ${criteria.key} goals on multiple charts where the maximum value is relative to the chart is a terrible idea, and has been disabled.`,
 				);
@@ -273,7 +275,7 @@ export async function ValidateGoalChartsAndCriteria(
 
 			let err;
 
-			if (config.chartDependentMax) {
+			if (chartDependentMax) {
 				const chart = await GetChartByIdForGame(game, charts.data as string);
 
 				if (!chart) {
