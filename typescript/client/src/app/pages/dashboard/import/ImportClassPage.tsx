@@ -74,6 +74,7 @@ export default function ImportClassPage() {
 }
 
 function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }) {
+	useSetSubheader(["Dashboard", "Import Scores", "Import Class", FormatGame(game)], [game]);
 	const [classValues, setClassValues] = useState<Partial<Record<Classes[V3Game], string>>>({});
 
 	const { data, error, isLoading } = useApiQuery<UGPTStatsReturn>(
@@ -134,8 +135,12 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 
 	return (
 		<>
+			<div className="display-1 fw-bold text-break text-body-emphasis mb-4">
+				{FormatGame(game)}
+			</div>
+
 			<Alert variant="info">
-				<strong>Manually set classes for {FormatGame(game)}.</strong>
+				<strong>Manually set classes for your profile.</strong>
 				<br />
 				<strong>
 					Do not insert false information here, this is monitored and I will revoke access
@@ -152,7 +157,9 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 					return (
 						<Col className="mb-3" key={classSet} lg={6} xs={12}>
 							<Form.Group>
-								<Form.Label>{UppercaseFirst(classSet)}</Form.Label>
+								<Form.Label>
+									{FormatGame(game)} {UppercaseFirst(classSet)}
+								</Form.Label>
 								<Form.Select
 									onChange={(e) => handleClassChange(classSet, e.target.value)}
 									value={draftValue}

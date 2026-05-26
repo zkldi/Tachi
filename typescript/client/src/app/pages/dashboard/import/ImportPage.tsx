@@ -836,6 +836,7 @@ function ImportClassCard({ v3Game }: { v3Game: V3Game }) {
 					</>
 				}
 			>
+				<div className="display-6 fw-bold text-break mb-3">{FormatGame(v3Game)}</div>
 				<div style={{ fontSize: "1.5rem" }}>Manually set a dan or class.</div>
 				<Divider />
 				<div>
