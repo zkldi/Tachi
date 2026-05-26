@@ -265,7 +265,8 @@ export async function ValidateGoalChartsAndCriteria(
 	switch (config.type) {
 		case "DECIMAL":
 		case "INTEGER": {
-			const allowFolderGoals = config.chartDependentMax !== true || config.allowFolderGoalsIf?.(criteria.value);
+			const allowFolderGoals =
+				config.chartDependentMax !== true || config.allowFolderGoalsIf?.(criteria.value);
 
 			if (!allowFolderGoals && charts.type !== "single") {
 				throw new Error(
