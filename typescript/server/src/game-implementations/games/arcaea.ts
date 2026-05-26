@@ -139,5 +139,13 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 				}
 			}
 		},
+		(s, c) => {
+			const { pure, far, lost } = s.scoreData.judgements;
+
+			const total = (pure ?? 0) + (far ?? 0) + (lost ?? 0);
+			if (total > 0 && c.data.notecount !== undefined && total > c.data.notecount) {
+				return `Too many judgements: received ${total} in total but the chart's note count is ${c.data.notecount}.`;
+			}
+		},
 	],
 };

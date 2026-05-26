@@ -352,5 +352,39 @@ describe("ARCAEA_IMPL", () => {
 				}),
 			).toBeUndefined();
 		});
+
+		it("rejects impossibly large number of judgements", () => {
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "CLEAR",
+						score: 9_970_000,
+						judgements: { pure: 1150, far: 20, lost: 10 },
+					},
+				}),
+			).toEqual([
+				`Too many judgements: received ${1180} in total but the chart's note count is ${1151}.`,
+			]);
+
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "CLEAR",
+						score: 9_970_000,
+						judgements: { pure: 1121, far: 20, lost: 10 },
+					},
+				}),
+			).toBeUndefined();
+
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "CLEAR",
+						score: 9_970_000,
+						judgements: { pure: 1120, far: 20, lost: 10 },
+					},
+				}),
+			).toBeUndefined();
+		});
 	});
 });
