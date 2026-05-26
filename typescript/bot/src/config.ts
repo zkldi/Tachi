@@ -4,7 +4,7 @@ import { log } from "bliss/log";
 import { config } from "dotenv";
 import { p } from "prudence";
 
-import { IsRecord } from "./utils/predicates";
+import { IsGameGroupKey, IsRecord } from "./utils/predicates";
 import { FormatPrError } from "./utils/prudence";
 
 // Initialise .env.
@@ -42,6 +42,86 @@ function ParseGameChannels(raw: string | undefined): Partial<Record<GameGroup, s
 	return parsed as Partial<Record<GameGroup, string>>;
 }
 
+function ParseSelfAssignRoles(raw: string | undefined): Partial<Record<GameGroup, string>> {
+	if (!raw) {
+		return {};
+	}
+
+	let parsed: unknown;
+
+	try {
+		parsed = JSON.parse(raw);
+	} catch (err) {
+		throw new Error(`DISCORD_GAME_ROLES is not valid JSON: ${err}. Got ${raw}`);
+	}
+
+	if (!IsRecord(parsed)) {
+		throw new Error(
+			"DISCORD_GAME_ROLES must be a JSON object mapping GameGroup identifiers to Discord role IDs.",
+		);
+	}
+
+	const result: Partial<Record<GameGroup, string>> = {};
+
+	for (const [key, value] of Object.entries(parsed)) {
+		if (!IsGameGroupKey(key)) {
+			throw new Error(
+				`DISCORD_GAME_ROLES: unknown key "${key}". Keys must be valid GameGroup identifiers (same as DISCORD_GAME_CHANNELS / Tachi game groups).`,
+			);
+		}
+
+		if (typeof value !== "string" || value.trim() === "") {
+			throw new Error(
+				`DISCORD_GAME_ROLES: invalid value for key "${key}". Expected a non-empty string role ID.`,
+			);
+		}
+
+		result[key] = value;
+	}
+
+	return result;
+}
+
+function ParseNamedSelfAssignRoles(raw: string | undefined): Record<string, string> {
+	if (!raw) {
+		return {};
+	}
+
+	let parsed: unknown;
+
+	try {
+		parsed = JSON.parse(raw);
+	} catch (err) {
+		throw new Error(`DISCORD_OTHER_ROLES is not valid JSON: ${err}. Got ${raw}`);
+	}
+
+	if (!IsRecord(parsed)) {
+		throw new Error(
+			"DISCORD_OTHER_ROLES must be a JSON object mapping role names to Discord role IDs.",
+		);
+	}
+
+	const result: Record<string, string> = {};
+
+	for (const [key, value] of Object.entries(parsed)) {
+		if (key.length === 0 || key.length > 100) {
+			throw new Error(
+				`DISCORD_OTHER_ROLES: invalid key "${key}". Keys must be 1–100 characters (Discord slash choice limit).`,
+			);
+		}
+
+		if (typeof value !== "string" || value.trim() === "") {
+			throw new Error(
+				`DISCORD_OTHER_ROLES: invalid value for key "${key}". Expected a non-empty string role ID.`,
+			);
+		}
+
+		result[key] = value;
+	}
+
+	return result;
+}
+
 export interface ProcessEnvironment {
 	TACHI_SERVER_LOCATION: string;
 	HTTP_SERVER_URL: string;
@@ -53,6 +133,8 @@ export interface ProcessEnvironment {
 	DISCORD_ADMIN_USERS: string[];
 	DISCORD_APPROVED_ROLE: string | undefined;
 	DISCORD_LIMBO_CHANNEL: string | undefined;
+	DISCORD_GAME_ROLES: Partial<Record<GameGroup, string>>;
+	DISCORD_OTHER_ROLES: Record<string, string>;
 	NODE_ENV: "dev" | "production" | "staging" | "test";
 	POSTGRES_URL: string;
 	PORT: integer;
@@ -83,6 +165,8 @@ function ParseEnvVars() {
 			DISCORD_ADMIN_USERS: "*string",
 			DISCORD_APPROVED_ROLE: "*string",
 			DISCORD_LIMBO_CHANNEL: "*string",
+			DISCORD_GAME_ROLES: "*string",
+			DISCORD_OTHER_ROLES: "*string",
 		},
 		{},
 		{ allowExcessKeys: true },
@@ -108,6 +192,8 @@ function ParseEnvVars() {
 		DISCORD_ADMIN_USERS: process.env.DISCORD_ADMIN_USERS?.split(",") ?? [],
 		DISCORD_APPROVED_ROLE: process.env.DISCORD_APPROVED_ROLE,
 		DISCORD_LIMBO_CHANNEL: process.env.DISCORD_LIMBO_CHANNEL,
+		DISCORD_GAME_ROLES: ParseSelfAssignRoles(process.env.DISCORD_GAME_ROLES),
+		DISCORD_OTHER_ROLES: ParseNamedSelfAssignRoles(process.env.DISCORD_OTHER_ROLES),
 	};
 
 	return Env;
