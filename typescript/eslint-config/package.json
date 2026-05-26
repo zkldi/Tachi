@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"bench": "node -e \"process.exit(0)\""
+		"bench": "bun -e \"process.exit(0)\""
 	},
 	"exports": {
 		".": {

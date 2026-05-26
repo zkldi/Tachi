@@ -104,7 +104,7 @@ of this script in the browser console:
 
 Chart constant data will now be copied into your clipboard. Paste them into `upper.json` and `lower.json` respectively.
 
-Run `node parse-scraped-data.js`
+Run `bun parse-scraped-data.js`
 
 ## Note counts
 Go to [ノーツ数順](https://wikiwiki.jp/arcaea/%E3%83%8E%E3%83%BC%E3%83%84%E6%95%B0%E9%A0%86) and paste this script
@@ -158,4 +158,4 @@ into the browser console:
 
 Notecount data will be copied to your clipboard. Paste the contents into `notecount.json`.
 
-Run `node parse-scraped-data.js`.
+Run `bun parse-scraped-data.js`.

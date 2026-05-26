@@ -18,10 +18,10 @@ The file you're looking to run is `parse-gameData-xml.ts`, but it needs two argu
 - `--input`, which is the location of the `musicdb.xml` file you're looking to parse.
 - `--version`, what version of the game this music db is from. For a list of versions, see the [DDR Config](../../game-support/games/ddr-SP.md#versions).
 
-You can run this script by typing `ts-node parse-gameData-xml.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.
+You can run this script by typing `bun parse-gameData-xml.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.
 
 For example, if your file is in the same directory as the script, and you're importing from DDR World:  
-`ts-node parse-gameData-xml.ts --input ./musicdb.xml --version world`
+`bun parse-gameData-xml.ts --input ./musicdb.xml --version world`
 
 !!! warning "Warning"
 
@@ -50,7 +50,7 @@ For example, if your file is in the same directory as the script, and you're imp
 Step counts are generated from SSQ files. You're on your own to find them.
 
 Place all of your SSQ files in the `ssq` folder. The name of each file should correspond to the `basename` of each song, which is a 4~5 characters identifier.
-Then, run `ts-node parse-charts.ts`
+Then, run `bun parse-charts.ts`
 
 
 ## Using a JSON file
@@ -71,7 +71,7 @@ The file you're looking to run is `parse-gameData-json.ts`, but it needs two arg
 - `--input`, which is the location of the JSON file you're looking to parse.
 - `--version`, what version of the game this music db is from. For a list of versions, see the [DDR Config](../../game-support/games/ddr-SP.md#versions).
 
-You can run this script by typing `ts-node parse-gameData-json.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.
+You can run this script by typing `bun parse-gameData-json.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.
 
 For example, if your file is in the same directory as the script, and you're importing from DDR Konaste:  
-`ts-node parse-gameData-json.ts --input ./music.json --version konaste`
+`bun parse-gameData-json.ts --input ./music.json --version konaste`

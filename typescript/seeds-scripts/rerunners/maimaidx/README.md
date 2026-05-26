@@ -18,7 +18,7 @@ This step only needs to be done once.
 2. Navigate to `seeds/scripts/rerunners/maimaidx` and run the `merge-options.ts` script:
 
 ```shell
-ts-node merge-options.ts --version <VERSION> --input /path/to/maimai/App/Package/Sinmai_Data/StreamingAssets /path/to/maimai/Option
+bun merge-options.ts --version <VERSION> --input /path/to/maimai/App/Package/Sinmai_Data/StreamingAssets /path/to/maimai/Option
 ```
 
 3. Check the logs to see if the script changed anything unexpected, and fix if it happens.
@@ -36,7 +36,7 @@ to adjust the constants for the version you're adding.
 3. Deactivate old tables using `seeds/scripts/rerunners/toggle-table-inactive.js`:
 
 ```
-node toggle-table-inactive.js -t maimaidx-Single-<VERSION>-levels
+bun toggle-table-inactive.js -t maimaidx-Single-<VERSION>-levels
 ```
 
 Keep tables for the current and last (aka n-1) versions.

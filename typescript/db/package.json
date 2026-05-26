@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsgo -b",
-		"start": "tsgo -b && node js/main.js",
+		"start": "tsgo -b && bun js/main.js",
 		"typecheck": "tsgo --noEmit",
 		"test": "vitest",
 		"bench": "vitest bench"

@@ -11,7 +11,7 @@
 		"typecheck": "tsgo --noEmit",
 		"sort": "node sort-seeds.js",
 		"test": "./run-tests.sh",
-		"bench": "node -e \"process.exit(0)\""
+		"bench": "bun -e \"process.exit(0)\""
 	},
 	"author": "zk",
 	"license": "MIT",

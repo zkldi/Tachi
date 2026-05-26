@@ -19,14 +19,8 @@ This will execute every test, and also perform coverage
 analysis.
 
 !!! bug
-	This may or may not impact you depending on how
-	dependencies install, but `tap` requires `ts-node`
-	and `typescript` to also be installed.
-
-	Otherwise, you will get a
-	`cannot use import outside of module`
-	error, which indicates that our typescript hasn't
-	been transpiled.
+	Use the workspace Vitest entrypoints (`bun test`, `just test-typescript`, …) rather than running `node`
+	directly on `.ts` files. Bun invokes Vitest without a separate transpiler for day-to-day runs.
 
 ## Writing Tests
 

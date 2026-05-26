@@ -20,4 +20,4 @@ pnpm calc-v1
 
 ## Synchronising with seeds
 
-Run `ts-node seeds/scripts/rerunners/bms-pms/apply-sieglinde`.
+Run `bun typescript/seeds-scripts/rerunners/bms-pms/apply-sieglinde.js` from the repository root (or run the same path after `cd` to the repo).

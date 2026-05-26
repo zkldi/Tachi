@@ -1,4 +1,4 @@
-// usage: cd rerunners && npx ts-node ongeki/parse-music-data.ts
+// usage: cd typescript/seeds-scripts/rerunners && bun ongeki/parse-music-data.ts
 
 import fs from "fs/promises";
 import { type ChartDocument, type Difficulties, type SongDocument } from "tachi-common";

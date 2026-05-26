@@ -12,7 +12,7 @@
 		"lint": "eslint .",
 		"lint-fix": "eslint . --fix",
 		"typecheck": "tsgo --noEmit",
-		"bench": "node -e \"process.exit(0)\""
+		"bench": "bun -e \"process.exit(0)\""
 	},
 	"dependencies": {
 		"@codemirror/lang-sql": "catalog:",

@@ -21,9 +21,7 @@ import {
 import { ParseIIDXData } from "./convert";
 
 if (require.main !== module) {
-	throw new Error(
-		`This is a script. It should be ran directly from the command line with ts-node.`,
-	);
+	throw new Error(`This is a script. It should be ran directly from the command line with bun.`);
 }
 
 const program = new Command();

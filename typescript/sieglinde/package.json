@@ -11,7 +11,7 @@
 		"lint-fix": "eslint . --fix",
 		"typecheck": "tsgo --noEmit",
 		"test": "vitest",
-		"bench": "node -e \"process.exit(0)\""
+		"bench": "bun -e \"process.exit(0)\""
 	},
 	"author": "zk",
 	"license": "MIT",

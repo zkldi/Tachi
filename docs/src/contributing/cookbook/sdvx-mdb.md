@@ -17,4 +17,4 @@ The file you're looking to run is `merge-mdb.ts`, but it needs two arguments:
 - `--input`, which is the location of the `music_db.xml` file you're looking to parse.
 - `--version`, what version of the game this music db is from. For a list of versions, see the [SDVX Config](../../game-support/games/sdvx-Single.md#versions).
 
-You can run this script by typing `ts-node merge-mdb.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.
+You can run this script by typing `bun merge-mdb.ts --input YOUR_INPUT_HERE --version YOUR_VERSION_HERE` in the terminal.

@@ -122,9 +122,7 @@ function randomHex(byteLength: number): string {
 }
 
 if (require.main !== module) {
-	throw new Error(
-		`This is a script. It should be ran directly from the command line with ts-node.`,
-	);
+	throw new Error(`This is a script. It should be ran directly from the command line with bun.`);
 }
 
 const program = new Command()

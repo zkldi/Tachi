@@ -13,7 +13,7 @@ You will need `ifstools` in your `$PATH`. You can do this by installing `python3
 
 Navigate to `seeds/scripts/rerunners/iidx/iidx-mdb-parse`.
 
-Run `ts-node merge-mdb.ts --help` for information on what arguments are needed.
+Run `bun merge-mdb.ts --help` for information on what arguments are needed.
 
 Fill out those arguments, and run the script in the terminal. If everything has gone correctly, `charts-iidx.json` and `songs-iidx.json` will be updated accordingly.
 
@@ -22,5 +22,3 @@ Fill out those arguments, and run the script in the terminal. If everything has 
 Sometimes, you might want to exclude certain charts from the parser.
 Edit `blacklist.txt` accordingly.
 
-!!! tip
-	Make sure you have `ts-node` installed. If you don't, you can get it with `pnpm add -g ts-node`.

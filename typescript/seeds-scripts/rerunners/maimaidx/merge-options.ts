@@ -102,9 +102,7 @@ function calculateLevelNum(data: Pick<NotesData, "level" | "levelDecimal">) {
 }
 
 if (require.main !== module) {
-	throw new Error(
-		`This is a script. It should be ran directly from the command line with ts-node.`,
-	);
+	throw new Error(`This is a script. It should be ran directly from the command line with bun.`);
 }
 
 const options = new Command()

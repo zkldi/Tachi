@@ -2,7 +2,7 @@
 
 [Make sure you have the repository set up.](https://docs.tachi.ac/contributing/setup/)
 
-With that done, run `pnpx ts-node merge-mdb.ts --help`. Provide the right data for `--basedir, --index and --version`.
+With that done, run `bun merge-mdb.ts --help`. Provide the right data for `--basedir, --index and --version`.
 
 Make sure you have `ifstools` installed in your PATH. You'll need python3 installed.
 
