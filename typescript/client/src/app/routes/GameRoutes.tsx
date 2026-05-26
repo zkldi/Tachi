@@ -30,6 +30,7 @@ import { ToCDNURL } from "#util/api";
 import { IsSupportedGame } from "#util/asserts";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartLink } from "#util/data";
+import { getGameGroupBannerRelPathForWeekday } from "#util/game-group-banner-counts";
 import { SelectRightChart } from "#util/misc";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import React, { useContext, useEffect, useState } from "react";
@@ -70,7 +71,7 @@ function V3GameRoutes() {
 			setBackground(null);
 			return;
 		}
-		setBackground(ToCDNURL(`/game-banners/${GameToGameGroup(gameParam)}`));
+		setBackground(ToCDNURL(getGameGroupBannerRelPathForWeekday(GameToGameGroup(gameParam))));
 	}, [gameParam, setBackground]);
 
 	if (!IsSupportedGame(gameParam)) {

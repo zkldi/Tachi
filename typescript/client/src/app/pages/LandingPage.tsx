@@ -3,6 +3,7 @@ import Divider from "#components/util/Divider";
 import LinkButton from "#components/util/LinkButton";
 import { TachiConfig } from "#lib/config";
 import { ToCDNURL } from "#util/api";
+import { DEFAULT_GAME_BANNER_REL_PATH } from "#util/game-group-banner-counts";
 import React from "react";
 
 // This page is currently unused,
@@ -17,7 +18,7 @@ export default function LandingPage() {
 					<div
 						className="hero-bg-image"
 						style={{
-							backgroundImage: `url(${ToCDNURL("/game-banners/default")})`,
+							backgroundImage: `url(${ToCDNURL(DEFAULT_GAME_BANNER_REL_PATH)})`,
 						}}
 					/>
 					<div
