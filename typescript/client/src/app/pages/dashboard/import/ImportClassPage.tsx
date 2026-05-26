@@ -20,6 +20,9 @@ import {
 	type V3Game,
 } from "tachi-common";
 
+/** `<select>` value mapped to JSON `null` when submitting Import Class. */
+const IMPORT_CLASS_CLEAR_SELECT_VALUE = "__tachi_import_class_clear__";
+
 export default function ImportClassPage() {
 	useSetSubheader(["Dashboard", "Import Scores", "Import Class"]);
 
@@ -75,7 +78,9 @@ export default function ImportClassPage() {
 
 function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }) {
 	useSetSubheader(["Dashboard", "Import Scores", "Import Class", FormatGame(game)], [game]);
-	const [classValues, setClassValues] = useState<Partial<Record<Classes[V3Game], string>>>({});
+	const [classValues, setClassValues] = useState<Partial<Record<Classes[V3Game], string | null>>>(
+		{},
+	);
 
 	const { data, error, isLoading } = useApiQuery<UGPTStatsReturn>(
 		`/users/${userID}/games/${game}`,
@@ -92,10 +97,19 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 		headers: { "Content-Type": "application/json" },
 	});
 
-	const handleClassChange = (classSet: Classes[V3Game], value: string) => {
+	const handleClassChange = (classSet: Classes[V3Game], rawSelect: string) => {
+		let next: string | null;
+		if (rawSelect === "") {
+			return;
+		}
+		if (rawSelect === IMPORT_CLASS_CLEAR_SELECT_VALUE) {
+			next = null;
+		} else {
+			next = rawSelect;
+		}
 		setClassValues((prev) => ({
 			...prev,
-			[classSet]: value,
+			[classSet]: next,
 		}));
 		if (importState.state === "done" || importState.state === "failed") {
 			resetImport();
@@ -107,12 +121,10 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 			return;
 		}
 
-		const initial: Partial<Record<Classes[V3Game], string>> = {};
+		const initial: Partial<Record<Classes[V3Game], string | null>> = {};
 		for (const classSet of providedClassSets) {
 			const val = data.gameStats.classes[classSet];
-			if (val) {
-				initial[classSet] = val;
-			}
+			initial[classSet] = val ?? null;
 		}
 		setClassValues(initial);
 	}, [data, game, providedClassSets]);
@@ -151,8 +163,16 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 			<Row>
 				{providedClassSets.map((classSet) => {
 					const savedValue = data.gameStats.classes[classSet];
-					const draftValue = classValues[classSet] ?? "";
-					const unchanged = draftValue !== "" && draftValue === (savedValue ?? "");
+					const chosen = classValues[classSet];
+					const selectValue =
+						chosen === undefined
+							? ""
+							: chosen === null
+								? IMPORT_CLASS_CLEAR_SELECT_VALUE
+								: chosen;
+					const unchanged =
+						chosen !== undefined &&
+						(chosen === null ? !savedValue : chosen === savedValue);
 
 					return (
 						<Col className="mb-3" key={classSet} lg={6} xs={12}>
@@ -162,9 +182,12 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 								</Form.Label>
 								<Form.Select
 									onChange={(e) => handleClassChange(classSet, e.target.value)}
-									value={draftValue}
+									value={selectValue}
 								>
 									<option value="">Select a value...</option>
+									<option value={IMPORT_CLASS_CLEAR_SELECT_VALUE}>
+										— (unset)
+									</option>
 									{gameConfig.classes[classSet]!.values.map((classInfo) => (
 										<option key={classInfo.id} value={classInfo.id}>
 											{classInfo.display}
@@ -196,17 +219,21 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 										<div className="text-start">
 											<div className="small text-muted">Will import</div>
 											<div className="mt-1">
-												{draftValue ? (
-													<ClassBadge
-														classSet={classSet}
-														classValue={draftValue}
-														game={game}
-														showSetOnHover={false}
-													/>
-												) : (
+												{chosen === undefined ? (
 													<span className="small text-muted">
 														Pick a value above
 													</span>
+												) : chosen === null ? (
+													<span className="small text-muted">
+														Unset (clear)
+													</span>
+												) : (
+													<ClassBadge
+														classSet={classSet}
+														classValue={chosen}
+														game={game}
+														showSetOnHover={false}
+													/>
 												)}
 											</div>
 										</div>
@@ -228,16 +255,19 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 			<Button
 				disabled={
 					importState.state !== "not_started" ||
-					Object.keys(classValues).length === 0 ||
-					Object.values(classValues).some((v) => !v)
+					providedClassSets.some((cs) => !(cs in classValues))
 				}
-				onClick={() =>
+				onClick={() => {
+					const classesPayload: Record<string, string | null> = {};
+					for (const cs of providedClassSets) {
+						classesPayload[String(cs)] = classValues[cs]!;
+					}
 					runImport({
 						method: "POST",
 						headers: { "Content-Type": "application/json" },
-						body: JSON.stringify({ game, classes: classValues }),
-					})
-				}
+						body: JSON.stringify({ game, classes: classesPayload }),
+					});
+				}}
 				variant="primary"
 			>
 				Import Class

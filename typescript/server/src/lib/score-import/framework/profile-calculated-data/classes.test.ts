@@ -158,6 +158,26 @@ describe("ProcessClassDeltas", () => {
 		]);
 	});
 
+	it("manual import may clear PROVIDED class with null merged value", async () => {
+		const res = await ProcessClassDeltas(
+			"iidx-sp",
+			{ dan: null },
+			{ classes: { dan: "KAIDEN" } } as unknown as UserGameStats,
+			userId,
+			log,
+			MANUAL_CLASS_IMPORT_OPTIONS,
+		);
+
+		expect(res).toStrictEqual([
+			{
+				game: "iidx-sp",
+				set: "dan",
+				old: "KAIDEN",
+				new: null,
+			},
+		]);
+	});
+
 	it("writes manual source to class_achievement for manual imports", async () => {
 		await ProcessClassDeltas(
 			"iidx-sp",

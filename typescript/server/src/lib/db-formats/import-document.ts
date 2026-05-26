@@ -34,7 +34,7 @@ function mongoImportDocumentFromParts(
 	base: Import,
 	games: Array<{ game: Game }>,
 	errors: Array<{ message: string; type: string }>,
-	classes: Array<{ game: Game; new: string; prev: string | null; set: string }>,
+	classes: Array<{ game: Game; new: string | null; prev: string | null; set: string }>,
 	sessions: Array<{ session_id: string; type: string }>,
 	scoreIds: Array<string>,
 ): ImportDocument {
@@ -44,7 +44,7 @@ function mongoImportDocumentFromParts(
 		game: c.game,
 		set: c.set as ClassDelta["set"],
 		old: c.prev,
-		new: c.new,
+		new: c.new === "" ? null : c.new,
 	}));
 
 	const createdSessions = sessions.map((s) => {
@@ -225,7 +225,7 @@ export async function ListRecentImportDocuments(opts: {
 
 	const classesByImport = new Map<
 		string,
-		Array<{ game: Game; new: string; prev: string | null; set: string }>
+		Array<{ game: Game; new: string | null; prev: string | null; set: string }>
 	>();
 
 	for (const row of classes) {
@@ -233,7 +233,7 @@ export async function ListRecentImportDocuments(opts: {
 
 		arr.push({
 			game: row.game,
-			new: row.new,
+			new: row.new === "" ? null : row.new,
 			prev: row.prev,
 			set: row.set,
 		});

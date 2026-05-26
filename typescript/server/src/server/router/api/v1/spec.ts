@@ -1842,7 +1842,7 @@ export const API_V1_SPEC = {
 		description: "Self-report PROVIDED classes for a game (dan, emblem, etc.).",
 		input: z.object({
 			game: z.enum(ALL_GAMES),
-			classes: z.record(z.string(), z.string()),
+			classes: z.record(z.string(), z.union([z.string(), z.null()])),
 		}),
 		output: doc<Record<string, unknown>>(),
 	},

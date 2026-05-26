@@ -52,8 +52,12 @@ export function FormatDate(ms: number) {
 	return DateTime.fromMillis(ms).toLocaleString(DateTime.DATE_HUGE);
 }
 
-export function FormatClass(game: V3Game, classSet: Classes[V3Game], classValue: string) {
+export function FormatClass(game: V3Game, classSet: Classes[V3Game], classValue: string | null) {
 	const gameConfig = GetGameConfig(game);
+
+	if (classValue === null) {
+		return "-- nothing --";
+	}
 
 	// @ts-expect-error hacky access
 

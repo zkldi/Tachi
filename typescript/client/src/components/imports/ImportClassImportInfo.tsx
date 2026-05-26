@@ -62,12 +62,16 @@ export default function ImportClassImportInfo({ importDoc }: { importDoc: Import
 										)}
 									</td>
 									<td>
-										<ClassBadge
-											classSet={d.set}
-											classValue={d.new}
-											game={d.game}
-											showSetOnHover={false}
-										/>
+										{d.new !== null ? (
+											<ClassBadge
+												classSet={d.set}
+												classValue={d.new}
+												game={d.game}
+												showSetOnHover={false}
+											/>
+										) : (
+											<span className="text-muted">Unset</span>
+										)}
 									</td>
 								</tr>
 							))}

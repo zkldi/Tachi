@@ -18,7 +18,7 @@ import {
 
 function ValidateProvidedClasses(
 	game: V3Game,
-	classes: Record<string, string>,
+	classes: Record<string, string | null>,
 	log: KtLogger,
 ): void {
 	if (!IsRecord(classes)) {
@@ -58,6 +58,7 @@ function ValidateProvidedClasses(
 	CreateBatchManualClassProvider(
 		game,
 		classes as Partial<Record<Classes[V3Game], string | null>>,
+		{ replaceBetterClassesWithIncoming: true },
 	)(game, 0, {}, log);
 }
 
@@ -81,7 +82,7 @@ async function AssertUserHasGameProfile(userID: integer, game: V3Game): Promise<
 export default async function ParseImportClass(
 	userID: integer,
 	game: V3Game,
-	classes: Record<string, string>,
+	classes: Record<string, string | null>,
 	log: KtLogger,
 ): Promise<ParserFunctionReturns<never, Record<string, never>, V3Game>> {
 	if (!AllEnabledGames().includes(game)) {
@@ -98,6 +99,7 @@ export default async function ParseImportClass(
 	const classProvider = CreateBatchManualClassProvider(
 		game,
 		classes as Partial<Record<Classes[V3Game], string | null>>,
+		{ replaceBetterClassesWithIncoming: true },
 	);
 
 	return {

@@ -21,7 +21,7 @@ export interface WebhookEventClassUpdateV1 {
 		 */
 		achievementSource?: ClassAchievementSource;
 		game: V3Game;
-		new: string;
+		new: string | null;
 		old: string | null;
 		set: Classes[V3Game];
 		userID: integer;

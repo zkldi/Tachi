@@ -705,7 +705,8 @@ export interface ClassDelta {
 	game: V3Game;
 	set: Classes[V3Game];
 	old: string | null;
-	new: string;
+	/** `null` when the class was removed from the profile (manual import-clear). */
+	new: string | null;
 }
 
 export type ClassAchievementSource = "import" | "manual";

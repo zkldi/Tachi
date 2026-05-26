@@ -102,7 +102,11 @@ export async function HandleClassUpdateV1(
 /**
  * Returns Whether this class update is notable enough to be rendered or not.
  */
-function ShouldRenderUpdate(game: V3Game, classSet: Classes[V3Game], classValue: string) {
+function ShouldRenderUpdate(game: V3Game, classSet: Classes[V3Game], classValue: string | null) {
+	if (classValue === null) {
+		return "<unset>";
+	}
+
 	const config = GetGameConfig(game);
 	const classSpec = config.classes[classSet];
 

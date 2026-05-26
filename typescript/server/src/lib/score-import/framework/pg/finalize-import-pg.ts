@@ -130,7 +130,7 @@ export async function finalizeImportToPostgres(
 					game: d.game,
 					set: d.set as string,
 					prev: d.old,
-					new: d.new,
+					new: d.new ?? "",
 				})),
 			)
 			.onConflict((oc) => oc.column("row_id").doNothing())

@@ -8,11 +8,13 @@ import type { Classes, integer, V3Game } from "tachi-common";
 // };
 
 // couldn't figure out how to get this typesafe, sorry.
-type RecordClassProvider<TGame extends V3Game> = Record<Classes[TGame], string>;
+type PartialClassProviderRecord<TGame extends V3Game> = Partial<
+	Record<Classes[TGame], string | null | undefined>
+>;
 
 export type ClassProvider<TGame extends V3Game> = (
 	game: TGame,
 	userID: integer,
 	ratings: Record<string, number | null>,
 	log: KtLogger,
-) => Partial<RecordClassProvider<TGame>> | Promise<Partial<RecordClassProvider<TGame>>> | undefined;
+) => PartialClassProviderRecord<TGame> | Promise<PartialClassProviderRecord<TGame>> | undefined;

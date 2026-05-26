@@ -9,7 +9,6 @@ import {
 	type AnyClasses,
 	type ClassDelta,
 	type Classes,
-	type ExtractedClasses,
 	GetGameConfig,
 	type integer,
 	type UserGameStats,
@@ -48,9 +47,9 @@ export async function CalculateUGPTClasses(
 	ratings: Record<string, number | null>,
 	ClassProvider: ClassProvider<V3Game> | null,
 	log: KtLogger,
-): Promise<ExtractedClasses[V3Game]> {
+): Promise<AnyClasses> {
 	// Derive all classes first.
-	let classes = CalculateDerivedClasses(game, ratings);
+	let classes: AnyClasses = CalculateDerivedClasses(game, ratings);
 
 	// If this import method is providing us classes, merge those with the
 	// other classes we have.
@@ -95,7 +94,7 @@ export async function ProcessClassDeltas(
 		const classSet = s as Classes[V3Game];
 		const classVal = classes[classSet];
 
-		if (classVal === undefined || classVal === null) {
+		if (classVal === undefined) {
 			log.debug(`Skipped deltaing-class ${classSet}.`);
 			continue;
 		}
@@ -103,6 +102,56 @@ export async function ProcessClassDeltas(
 		const classConfig = gameConfig.classes[classSet]!;
 
 		try {
+			if (classVal === null) {
+				if (options?.allowUnsettingClasses !== true || classConfig.type !== "PROVIDED") {
+					log.debug(
+						`Skipped deltaing-class ${classSet} (null without clear permission).`,
+					);
+					continue;
+				}
+
+				const prevRaw = userGameStats?.classes[classSet];
+				const prev =
+					prevRaw === undefined || prevRaw === null || prevRaw === "" ? null : prevRaw;
+
+				if (prev === null) {
+					log.debug(`Skipped clearing class ${classSet}: already unset.`);
+					continue;
+				}
+
+				const delta: ClassDelta = {
+					game,
+					set: classSet,
+					old: prev,
+					new: null,
+				};
+
+				void EmitWebhookEvent({
+					type: "class-update/v1",
+					content: {
+						userID,
+						game,
+						set: delta.set,
+						old: delta.old,
+						new: delta.new,
+						achievementSource: classAchievementSource,
+					},
+				});
+
+				achievementOps.push({
+					userID,
+					classSet: delta.set,
+					classOldValue: delta.old,
+					classValue: delta.new ?? "",
+					game,
+					timeAchieved: Date.now(),
+					source: classAchievementSource,
+				});
+
+				deltas.push(delta);
+				continue;
+			}
+
 			const isGreater = ReturnClassIfGreater(game, classSet, classVal, userGameStats);
 
 			if (classConfig.type === "DERIVED" && classAchievementSource === "manual") {
@@ -166,7 +215,7 @@ export async function ProcessClassDeltas(
 						userID,
 						classSet: delta.set,
 						classOldValue: delta.old,
-						classValue: delta.new,
+						classValue: delta.new ?? "",
 						game,
 						timeAchieved: Date.now(),
 						source: classAchievementSource,

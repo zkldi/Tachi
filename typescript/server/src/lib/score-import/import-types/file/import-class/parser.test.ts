@@ -70,4 +70,23 @@ describe("ParseImportClass", () => {
 			ScoreImportFatalError,
 		);
 	});
+
+	it("allows null to clear PROVIDED classes via class provider merge", async () => {
+		await DB.insertInto("game_profile")
+			.values({
+				user_id: userId,
+				game: "iidx-sp",
+				ratings: JSON.stringify({ ktLampRating: 0 }),
+				classes: JSON.stringify({ dan: "CHUUDEN" }),
+			})
+			.execute();
+
+		const res = await ParseImportClass(userId, "iidx-sp", { dan: null }, log);
+
+		expect(res.classProvider).not.toBeNull();
+
+		const cp = res.classProvider!("iidx-sp", userId, {}, log);
+
+		expect(cp).toStrictEqual({ dan: null });
+	});
 });
