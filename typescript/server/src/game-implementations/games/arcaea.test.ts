@@ -410,6 +410,16 @@ describe("ARCAEA_IMPL", () => {
 					},
 				),
 			).toBeUndefined();
+
+			expect(
+				runVal({
+					scoreData: {
+						lamp: "CLEAR",
+						score: 9_970_000,
+						judgements: {},
+					},
+				}),
+			).toBeUndefined();
 		});
 	});
 });
