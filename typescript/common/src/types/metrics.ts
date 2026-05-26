@@ -45,6 +45,7 @@ interface ConfDecimalScoreMetricChartDependent {
 	 * @example: IIDX's EX Score is upperbounded at 2x the chart's notecount.
 	 */
 	chartDependentMax: true;
+	allowFolderGoalsIf?: never;
 }
 
 interface ConfIntegerScoreMetricChartDependent {
@@ -57,46 +58,51 @@ interface ConfIntegerScoreMetricChartDependent {
 	 * @example: IIDX's EX Score is upperbounded at 2x the chart's notecount.
 	 */
 	chartDependentMax: true;
+	allowFolderGoalsIf?: never;
 }
 
-interface ConfDecimalScoreMetricConditionallyChartDependent {
+interface ConfDecimalScoreMetricChartDependentWithExemption {
 	type: "DECIMAL";
 	formatter: (v: number) => string;
 	validate: (v: number) => string | true;
 
 	/**
-	 * Is the maximum/minimum value of this metric chart dependent?
+	 * When the value is chart dependent,
+	 * should folder-wide goals be allowed conditionally?
 	 *
 	 * @example:
 	 * Arcaea's score is upperbounded at 10M+notecount, but scores below 10M
 	 * behave as if the max was 10M.
 	 */
-	chartDependentMax: (v: number) => boolean;
+	allowFolderGoalsIf: (v: number) => boolean;
+	chartDependentMax: true;
 }
 
-interface ConfIntegerScoreMetricConditionallyChartDependent {
+interface ConfIntegerScoreMetricChartDependentWithExemption {
 	type: "INTEGER";
 	formatter: (v: number) => string;
 	validate: (v: number) => string | true;
 
 	/**
-	 * Is the maximum/minimum value of this metric chart dependent?
+	 * When the value is chart dependent,
+	 * should folder-wide goals be allowed conditionally?
 	 *
 	 * @example:
 	 * Arcaea's score is upperbounded at 10M+notecount, but scores below 10M
 	 * behave as if the max was 10M.
 	 */
-	chartDependentMax: (v: number) => boolean;
+	allowFolderGoalsIf: (v: number) => boolean;
+	chartDependentMax: true;
 }
 
 export type ConfDecimalScoreMetric =
 	| ConfDecimalScoreMetricChartDependent
-	| ConfDecimalScoreMetricConditionallyChartDependent
+	| ConfDecimalScoreMetricChartDependentWithExemption
 	| ConfDecimalScoreMetricNormal;
 
 export type ConfIntegerScoreMetric =
 	| ConfIntegerScoreMetricChartDependent
-	| ConfIntegerScoreMetricConditionallyChartDependent
+	| ConfIntegerScoreMetricChartDependentWithExemption
 	| ConfIntegerScoreMetricNormal;
 
 /**

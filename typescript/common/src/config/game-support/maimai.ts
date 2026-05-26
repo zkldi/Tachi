@@ -1,3 +1,4 @@
+import { p } from "prudence";
 import { z } from "zod";
 
 import type { INTERNAL_GAME_CONFIG, INTERNAL_GAME_GROUP_CONFIG } from "../../types/internals";
@@ -62,6 +63,8 @@ export const GAME_MAIMAI_CONF = {
 		percent: {
 			type: "DECIMAL",
 			chartDependentMax: true,
+			allowFolderGoalsIf: (v) => v >= 0 && v < 100.0,
+			validate: p.isPositive,
 			formatter: FmtPercent,
 			description:
 				"The percent this score was worth. Sometimes called 'rate' in game. This is upper-bounded by how many BREAK notes the chart has.",

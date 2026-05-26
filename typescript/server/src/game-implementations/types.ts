@@ -28,7 +28,7 @@ export type ChartSpecificMetricValidator<TGame extends V3Game> = (
 ) => string | true;
 
 interface ChartDependentMax {
-	chartDependentMax: ((v: number) => boolean) | true;
+	chartDependentMax: true;
 }
 
 export type SessionCalculator<TGame extends V3Game> = (
