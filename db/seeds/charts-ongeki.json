@@ -6304,6 +6304,29 @@
 	},
 	{
 		"data": {
+			"chartViewURL": "https://sdvx.in/ongeki/luna/01038luna2.htm",
+			"displayVersion": "オンゲキ bright MEMORY Act.2",
+			"inGameID": 8003,
+			"isBonusTrack": false,
+			"maxPlatScore": 2146
+		},
+		"difficulty": "LUNATIC",
+		"id": "C19d35e17e177770bfca",
+		"isPrimary": true,
+		"legacyChartID": "fb9097f3146153328299b609c771ec919d2e32f7",
+		"level": "0",
+		"levelNum": 0,
+		"songID": "S19d35e0fee643d12a81",
+		"versions": [
+			"brightMemory2Omni",
+			"brightMemory3Omni",
+			"brightMemory3",
+			"refresh",
+			"refreshOmni"
+		]
+	},
+	{
+		"data": {
 			"displayVersion": "オンゲキ",
 			"inGameID": 36,
 			"isBonusTrack": false,
@@ -71697,29 +71720,6 @@
 		"level": "13",
 		"levelNum": 13.3,
 		"songID": "S19d35e101d3d993c28f",
-		"versions": [
-			"brightMemory2Omni",
-			"brightMemory3Omni",
-			"brightMemory3",
-			"refresh",
-			"refreshOmni"
-		]
-	},
-	{
-		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/luna/01038luna2.htm",
-			"displayVersion": "オンゲキ bright MEMORY Act.2",
-			"inGameID": 8003,
-			"isBonusTrack": false,
-			"maxPlatScore": 2146
-		},
-		"difficulty": "LUNATIC",
-		"id": "C19d35e17e177770bfca",
-		"isPrimary": true,
-		"legacyChartID": "fb9097f3146153328299b609c771ec919d2e32f7",
-		"level": "0",
-		"levelNum": 0,
-		"songID": "S19d35e0fee643d12a81",
 		"versions": [
 			"brightMemory2Omni",
 			"brightMemory3Omni",
