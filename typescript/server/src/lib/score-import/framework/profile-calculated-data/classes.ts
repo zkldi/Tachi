@@ -105,6 +105,10 @@ export async function ProcessClassDeltas(
 		try {
 			const isGreater = ReturnClassIfGreater(game, classSet, classVal, userGameStats);
 
+			if (classConfig.type === "DERIVED" && classAchievementSource === "manual") {
+				continue;
+			}
+
 			// if this was worse, and this class is PROVIDED (i.e. it's a dan)
 			// then don't do anything unless manual import explicitly allows downgrades
 			if (
