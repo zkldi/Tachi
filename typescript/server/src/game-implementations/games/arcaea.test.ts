@@ -17,6 +17,7 @@ import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
 	ARCAEA_GRADES,
 	ARCAEA_LAMPS,
+	type ChartDocument,
 	type MongoProvidedMetrics,
 	type ScoreData,
 	type ScoreDocument,
@@ -234,8 +235,15 @@ describe("ARCAEA_IMPL", () => {
 	describe("scoreValidators & chartSpecificValidators", () => {
 		const mockScore = mkMockScore("arcaea", chart, scoreData);
 
-		const runVal = (s: DeepPartial<ScoreDocument<"arcaea">>) =>
-			RunValidators(ARCAEA_IMPL.scoreValidators, dmf(mockScore, s) as never, chart as never);
+		const runVal = (
+			s: DeepPartial<ScoreDocument<"arcaea">>,
+			c?: DeepPartial<ChartDocument<"arcaea">>,
+		) =>
+			RunValidators(
+				ARCAEA_IMPL.scoreValidators,
+				dmf(mockScore, s) as never,
+				dmf(chart, c ?? {}) as never,
+			);
 
 		it("accepts valid PM, FR, and chart score bounds", () => {
 			expect(
@@ -384,6 +392,23 @@ describe("ARCAEA_IMPL", () => {
 						judgements: { pure: 1120, far: 20, lost: 10 },
 					},
 				}),
+			).toBeUndefined();
+
+			expect(
+				runVal(
+					{
+						scoreData: {
+							lamp: "CLEAR",
+							score: 9_970_000,
+							judgements: { pure: 1150, far: 20, lost: 10 },
+						},
+					},
+					{
+						data: {
+							notecount: undefined,
+						},
+					},
+				),
 			).toBeUndefined();
 		});
 	});
