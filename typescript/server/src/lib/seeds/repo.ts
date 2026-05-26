@@ -94,7 +94,7 @@ export class DatabaseSeedsRepo {
 
 	private async runSortSeeds(): Promise<void> {
 		const sortScript = this.sortSeedsScriptPath();
-		await asyncExec(`node "${sortScript}"`, this.repoRoot);
+		await asyncExec(`bun "${sortScript}"`, this.repoRoot);
 	}
 
 	private sortSeedsScriptPath(): string {

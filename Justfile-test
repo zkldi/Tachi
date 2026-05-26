@@ -49,10 +49,12 @@ autofix:
 fmt:
 	bun biome format --write
 	bun prettier --write --list-different .
+	bun run --filter tachi-seeds-scripts sort
 
 fmt-check:
 	bun biome format
 	bun prettier --check .
+	bun run --filter tachi-seeds-scripts sort-check
 
 test FILTER="*":
 	#!/bin/bash

@@ -9,7 +9,8 @@
 		"lint": "eslint .",
 		"lint-fix": "eslint . --fix",
 		"typecheck": "tsgo --noEmit",
-		"sort": "node sort-seeds.js",
+		"sort": "bun ./sort-seeds.js",
+		"sort-check": "bun ./sort-seeds.js --check",
 		"test": "./run-tests.sh",
 		"bench": "node -e \"process.exit(0)\""
 	},

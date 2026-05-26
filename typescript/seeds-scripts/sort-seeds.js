@@ -69,17 +69,25 @@ function BMSCourseSort(a, b) {
 	return a.md5sums.localeCompare(b.md5sums);
 }
 
-/** Deterministic sorting + stable key ordering; JSON is written with tab indentation only. */
-function SortSeeds() {
+/**
+ * Deterministic sorting + stable key ordering; JSON is written with tab indentation only.
+ * @param {{ checkOnly?: boolean }} [opts] — when `checkOnly`, compare to disk and do not write; exit handled by caller via return value.
+ * @returns {boolean} — `true` if all serialized collections match disk (always when not `checkOnly`); `false` if `checkOnly` and any file would change.
+ */
+function SortSeeds(opts = {}) {
+	const { checkOnly = false } = opts;
+
 	const __filename = fileURLToPath(import.meta.url);
 	const __dirname = path.dirname(__filename);
 
 	const collectionsDir = path.join(__dirname, "../../db/seeds");
 	const collections = fs.readdirSync(collectionsDir).filter((name) => name.endsWith(".json"));
 
+	let allMatch = true;
+
 	for (const collection of collections) {
 		const collPath = path.join(collectionsDir, collection);
-		let content = JSON.parse(fs.readFileSync(collPath));
+		let content = JSON.parse(fs.readFileSync(collPath, "utf8"));
 
 		// Auxiliary maps (non-array roots) coexist with seed collections — skip them.
 		if (!Array.isArray(content)) {
@@ -106,8 +114,19 @@ function SortSeeds() {
 
 		content = content.map(SortObjectKeys);
 
-		fs.writeFileSync(collPath, JSON.stringify(content, null, "\t"));
+		const serialized = JSON.stringify(content, null, "\t");
+
+		if (checkOnly) {
+			const onDisk = fs.readFileSync(collPath, "utf8");
+			if (onDisk !== serialized) {
+				allMatch = false;
+			}
+		} else {
+			fs.writeFileSync(collPath, serialized);
+		}
 	}
+
+	return allMatch;
 }
 
 function SortObjectKeys(object) {
@@ -129,7 +148,14 @@ function SortObjectKeys(object) {
 const __resolvedMain = process.argv[1] !== undefined ? path.resolve(process.argv[1]) : "";
 
 if (__resolvedMain === fileURLToPath(import.meta.url)) {
-	SortSeeds();
+	const checkOnly = process.argv.includes("--check");
+	const ok = SortSeeds({ checkOnly });
+	if (checkOnly && !ok) {
+		console.error(
+			"db/seeds JSON is not in canonical sorted order or key ordering. Run: bun run --filter tachi-seeds-scripts sort",
+		);
+		process.exitCode = 1;
+	}
 }
 
 export default SortSeeds;

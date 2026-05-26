@@ -221,7 +221,7 @@ async function writeCollection(ctx: Ctx, name: string, patch: JsonPatch): Promis
 
 async function runSort(ctx: Ctx): Promise<void> {
 	await new Promise<void>((resolve, reject) => {
-		const proc = spawn("node", ["sort-seeds.js"], {
+		const proc = spawn("bun", ["./sort-seeds.js"], {
 			cwd: ctx.seedsScriptsDir,
 			stdio: "inherit",
 		});
