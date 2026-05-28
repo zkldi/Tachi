@@ -1,4 +1,4 @@
-import ImportSQLiteForm from "#components/imports/ImportSQLiteForm";
+import ImportFileForm from "#components/imports/ImportFileForm";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
@@ -20,7 +20,7 @@ export default function USCDBPage() {
 				uploading.
 			</Alert>
 
-			<ImportSQLiteForm
+			<ImportFileForm
 				convert={(dbs) => {
 					if (playtype === "") {
 						throw new Error("Please select an input device.");
@@ -52,6 +52,7 @@ export default function USCDBPage() {
 				extraValid={playtype !== ""}
 				fileInputs={[{ key: "db", label: "USC maps.db" }]}
 				name="USC Database Import"
+				type="sql"
 			/>
 
 			<Divider />

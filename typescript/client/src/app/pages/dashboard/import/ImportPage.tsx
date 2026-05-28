@@ -410,10 +410,19 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 	} else if (game === "arcaea") {
 		Content.unshift(
 			<ImportInfoCard
+				desc="Import PBs from a Telegram bot."
+				href="arcaea-yurisaki"
+				key="Yurisaki"
+				moreInfo="This method is intended for syncing up old scores."
+				name="Yurisaki"
+			/>,
+		);
+		Content.unshift(
+			<ImportInfoCard
 				desc="Import PBs from your local savefile."
 				href="arcaea-st3"
 				key="Arcaea ST3"
-				moreInfo="This method is intended for syncing up old scores offline. "
+				moreInfo="This method is intended for syncing up old scores offline."
 				name="ST3 Import"
 			/>,
 		);

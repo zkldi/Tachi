@@ -1,4 +1,4 @@
-import ImportSQLiteForm from "#components/imports/ImportSQLiteForm";
+import ImportFileForm from "#components/imports/ImportFileForm";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
@@ -10,7 +10,7 @@ export default function LR2DBPage() {
 
 	return (
 		<>
-			<ImportSQLiteForm
+			<ImportFileForm
 				convert={(dbs) => {
 					const { k7, k14, warnings } = convertLR2Db(dbs.score!, dbs.chart!);
 					const results = [k7, k14].filter((r) => r !== null);
@@ -21,6 +21,7 @@ export default function LR2DBPage() {
 					{ key: "chart", label: "LR2 song.db" },
 				]}
 				name="LR2 Database Import"
+				type="sql"
 			/>
 
 			<Divider />

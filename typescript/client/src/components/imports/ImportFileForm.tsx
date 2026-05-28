@@ -26,7 +26,7 @@ export interface SQLiteFileInput {
 	key: string;
 }
 
-interface Props {
+interface BaseProps {
 	/** Heading for this import form. */
 	name: string;
 	/** One file input (USC) or two (LR2 / Beatoraja). */
@@ -40,6 +40,9 @@ interface Props {
 	extraValid?: boolean;
 	/** Target file format (default: .db) */
 	fileFormat?: string;
+}
+
+interface SQLProps extends BaseProps {
 	/**
 	 * Conversion function.  Receives a map of `key → opened Database` and
 	 * returns one or more Batch Manual documents plus any warnings.
@@ -47,7 +50,19 @@ interface Props {
 	 * are a few thousand rows, so this should be fine).
 	 */
 	convert: (dbs: Record<string, Database>) => ConvertResult;
+	type: "sql";
 }
+
+interface PlaintextProps extends BaseProps {
+	/**
+	 * Conversion function.  Receives a map of `key → file contents` and
+	 * returns one or more Batch Manual documents plus any warnings.
+	 */
+	convert: (dbs: Record<string, string>) => ConvertResult;
+	type: "plaintext";
+}
+
+type Props = PlaintextProps | SQLProps;
 
 type ConvertState =
 	| { message: string; phase: "error" }
@@ -55,12 +70,13 @@ type ConvertState =
 	| { phase: "loading" }
 	| { phase: "preview"; results: unknown[]; warnings: ConvertWarning[] };
 
-export default function ImportSQLiteForm({
+export default function ImportFileForm({
 	name,
 	fileInputs,
 	extraControls,
 	extraValid = true,
 	fileFormat,
+	type,
 	convert,
 }: Props) {
 	// One File ref per declared file input
@@ -95,18 +111,26 @@ export default function ImportSQLiteForm({
 
 		setConvertState({ phase: "loading" });
 
-		const dbs: Record<string, Database> = {};
+		const dbs: Record<string, Database> | Record<string, string> = {};
+		let results, warnings;
 		try {
-			for (const { key } of fileInputs) {
-				dbs[key] = await openDatabase(files[key]!);
-			}
+			if (type === "sql") {
+				for (const { key } of fileInputs) {
+					dbs[key] = await openDatabase(files[key]!);
+				}
+				({ results, warnings } = convert(dbs as Record<string, Database>));
+			} else {
+				for (const { key } of fileInputs) {
+					dbs[key] = new TextDecoder().decode(await files[key]!.arrayBuffer());
+				}
 
-			const { results, warnings } = convert(dbs);
+				({ results, warnings } = convert(dbs as Record<string, string>));
+			}
 
 			if (results.length === 0) {
 				setConvertState({
 					phase: "error",
-					message: "No importable scores were found in the database.",
+					message: `No importable scores were found${type === "sql" ? " in the database" : ""}.`,
 				});
 				return;
 			}
@@ -118,11 +142,13 @@ export default function ImportSQLiteForm({
 				message: err instanceof Error ? err.message : String(err),
 			});
 		} finally {
-			for (const db of Object.values(dbs)) {
-				try {
-					db.close();
-				} catch {
-					// ignore
+			if (type === "sql") {
+				for (const db of Object.values(dbs)) {
+					try {
+						db.close();
+					} catch {
+						// ignore
+					}
 				}
 			}
 		}
@@ -166,8 +192,8 @@ export default function ImportSQLiteForm({
 			<h2 className="text-center">{name}</h2>
 
 			<Alert variant="warning">
-				Processing your database file runs entirely in your browser. Depending on the number
-				of scores, this may use significant CPU for a few seconds. This is expected.
+				Processing the file runs entirely in your browser. Depending on the number of
+				scores, this may use significant CPU for a few seconds. This is expected.
 			</Alert>
 			{fileInputs.map(({ key, label }) => (
 				<Form.Group key={key}>

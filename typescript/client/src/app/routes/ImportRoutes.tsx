@@ -1,5 +1,6 @@
 import AquaArtemisExport from "#app/pages/dashboard/import/AquaArtemisExportPage";
 import ArcaeaST3Page from "#app/pages/dashboard/import/ArcaeaST3Page";
+import ArcaeaYurisakiPage from "#app/pages/dashboard/import/ArcaeaYurisakiPage";
 import BarbatosPage from "#app/pages/dashboard/import/BarbatosPage";
 import BatchManualPage from "#app/pages/dashboard/import/BatchManualPage";
 import BeatorajaIRPage from "#app/pages/dashboard/import/BeatorajaIRPage";
@@ -283,6 +284,10 @@ export default function ImportRoutes() {
 
 							<Route exact path="/import/arcaea-st3">
 								<ArcaeaST3Page />
+							</Route>
+
+							<Route exact path="/import/arcaea-yurisaki">
+								<ArcaeaYurisakiPage />
 							</Route>
 						</>
 					)}

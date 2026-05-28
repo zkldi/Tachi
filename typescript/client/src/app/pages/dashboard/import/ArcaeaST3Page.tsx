@@ -1,4 +1,4 @@
-import ImportSQLiteForm from "#components/imports/ImportSQLiteForm";
+import ImportFileForm from "#components/imports/ImportFileForm";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import { convertArcaeaDB } from "#util/db-converters/arcaea";
 import React from "react";
@@ -18,7 +18,7 @@ export default function ArcaeaST3Page() {
 				seek a different method.
 			</Alert>
 
-			<ImportSQLiteForm
+			<ImportFileForm
 				convert={(dbs) => {
 					const { result, warnings } = convertArcaeaDB(dbs.st3!);
 					return { results: result.scores.length > 0 ? [result] : [], warnings };
@@ -26,6 +26,7 @@ export default function ArcaeaST3Page() {
 				fileFormat=""
 				fileInputs={[{ key: "st3", label: "Arcaea st3" }]}
 				name="Arcaea Database Import"
+				type="sql"
 			/>
 		</>
 	);
