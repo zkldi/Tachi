@@ -19,7 +19,11 @@ MutateCollection("charts-chunithm.json", (charts: Array<SEEDS_ChartDocument<"chu
 	for (const chart of charts) {
 		let makeAvailableIDs: Array<integer>;
 
-		if (chart.data.inGameID >= 8000) {
+		if (
+			(Array.isArray(chart.data.inGameID) &&
+				chart.data.inGameID.some((igid) => igid >= 8000)) ||
+			(!Array.isArray(chart.data.inGameID) && chart.data.inGameID >= 8000)
+		) {
 			makeAvailableIDs = IN_GAME_IDS_TO_MAKE_AVAILABLE_WORLDS_END;
 		} else if (chart.difficulty === "ULTIMA") {
 			makeAvailableIDs = IN_GAME_IDS_TO_MAKE_AVAILABLE_ULTIMA;
@@ -27,7 +31,11 @@ MutateCollection("charts-chunithm.json", (charts: Array<SEEDS_ChartDocument<"chu
 			makeAvailableIDs = IN_GAME_IDS_TO_MAKE_AVAILABLE;
 		}
 
-		if (!makeAvailableIDs.includes(chart.data.inGameID)) {
+		if (
+			(Array.isArray(chart.data.inGameID) &&
+				chart.data.inGameID.some((igid) => makeAvailableIDs.includes(igid))) ||
+			(!Array.isArray(chart.data.inGameID) && makeAvailableIDs.includes(chart.data.inGameID))
+		) {
 			continue;
 		}
 
