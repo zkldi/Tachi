@@ -33,8 +33,8 @@ MutateCollection("charts-chunithm.json", (charts: Array<SEEDS_ChartDocument<"chu
 
 		if (
 			(Array.isArray(chart.data.inGameID) &&
-				chart.data.inGameID.some((igid) => makeAvailableIDs.includes(igid))) ||
-			(!Array.isArray(chart.data.inGameID) && makeAvailableIDs.includes(chart.data.inGameID))
+				chart.data.inGameID.every((igid) => !makeAvailableIDs.includes(igid))) ||
+			(!Array.isArray(chart.data.inGameID) && !makeAvailableIDs.includes(chart.data.inGameID))
 		) {
 			continue;
 		}
