@@ -38,7 +38,7 @@
 
 @include media-breakpoint-up(lg) {
 	.session-raise-container .no-max-width {
-		width: auto;
+		max-width: 400px
 	}
 }
 
