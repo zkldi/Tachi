@@ -50,6 +50,8 @@ export default function TitleCell({
 		? tooltipParts.filter(Boolean).join(" — ")
 		: undefined;
 
+	const maxWidth = game === "ongeki" ? TITLE_CELL_WIDTH_PX * 0.6 : TITLE_CELL_WIDTH_PX;
+
 	if (game === "popn" && chart) {
 		backgroundImage = `url(${ToCDNURL(
 			`/misc/popn/banners/${(chart as any).data.inGameID}.png`,
@@ -71,11 +73,11 @@ export default function TitleCell({
 			className="fading-image-td-left title-cell-wrapper"
 			style={{
 				boxSizing: "border-box",
-				maxWidth: `${TITLE_CELL_WIDTH_PX}px`,
+				maxWidth: `${maxWidth}px`,
 				minWidth: 0,
 				overflow: "hidden",
 				textAlign: "left",
-				width: `${TITLE_CELL_WIDTH_PX}px`,
+				width: `${maxWidth}px`,
 				["--image-url" as string]: backgroundImage,
 				backgroundPosition: center ? "center" : undefined,
 			}}

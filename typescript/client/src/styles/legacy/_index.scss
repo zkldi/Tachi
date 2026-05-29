@@ -24,6 +24,8 @@
 	.session-raise-container {
 		width: 100%;
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 @include media-breakpoint-down(md) {
@@ -31,6 +33,12 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.session-raise-container .no-max-width {
+		width: auto;
 	}
 }
 

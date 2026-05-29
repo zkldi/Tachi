@@ -137,7 +137,7 @@ function Row({
 				rankingViewMode={rankingViewMode}
 				userID={pb.userID}
 			/>
-			<TimestampCell time={pb.timeAchieved} />
+			<TimestampCell game={game} time={pb.timeAchieved} />
 			{showPlaycount && <td>{pb.__playcount ?? 0}</td>}
 			<DropdownIndicatorCell />
 		</DropdownRow>

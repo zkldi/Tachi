@@ -110,7 +110,7 @@ function Row({
 				rankingViewMode={rankingViewMode}
 				userID={pb.userID}
 			/>
-			<TimestampCell time={pb.timeAchieved} />
+			<TimestampCell game={game} time={pb.timeAchieved} />
 		</DropdownRow>
 	);
 }

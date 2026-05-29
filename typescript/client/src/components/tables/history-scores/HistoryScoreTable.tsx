@@ -80,7 +80,7 @@ function Row({
 			nested
 		>
 			<ScoreCoreCells chart={chart} game={game} rating={rating as any} score={sc} />
-			<TimestampCell service={sc.service} time={sc.timeAchieved} />
+			<TimestampCell game={game} service={sc.service} time={sc.timeAchieved} />
 			<DropdownIndicatorCell />
 		</DropdownRow>
 	);

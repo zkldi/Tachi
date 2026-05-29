@@ -49,7 +49,7 @@ export default function DifficultyCell({
 
 	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
 
-	if (game === "iidx-sp" || game === "iidx-dp" || game === "maimaidx") {
+	if (["iidx-dp", "iidx-sp", "maimaidx", "ongeki"].includes(game)) {
 		alwaysShort = true;
 	}
 
@@ -120,7 +120,11 @@ export function DisplayLevelNum({
 		return null;
 	}
 
-	if (["chunithm", "maimai", "maimaidx", "ongeki", "wacca"].includes(game)) {
+	if (game === "ongeki" && level === "0") {
+		return null;
+	}
+
+	if (["arcaea", "chunithm", "maimai", "maimaidx", "ongeki", "wacca"].includes(game)) {
 		return (
 			<Muted>
 				{prefix}

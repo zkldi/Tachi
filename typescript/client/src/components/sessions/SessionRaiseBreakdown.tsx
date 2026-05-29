@@ -38,6 +38,13 @@ import { type ConfEnumScoreMetric } from "tachi-common/types/metrics";
 
 type SetScores = (scores: ScoreDocument[]) => void;
 
+const Plural = (str: string) => str + (str.trimEnd().endsWith("s") ? "" : "s");
+
+const FormatEnumTitle = (str: string) =>
+	Plural(UppercaseFirst(str))
+		.split(/(?=[A-Z])/u)
+		.join("\u00a0"); // nbsp
+
 export default function SessionRaiseBreakdown({
 	sessionData,
 	setScores,
@@ -48,7 +55,9 @@ export default function SessionRaiseBreakdown({
 	setScores?: SetScores;
 }) {
 	const game = sessionData.session.game;
-	const lampName = game === "ongeki" || game === "chunithm" ? "noteLamp" : "lamp";
+	const gameConfig = GetGameConfig(game);
+	const enumMetrics = GetScoreMetrics(gameConfig, "ENUM");
+	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
 
 	const { user } = useContext(UserContext);
 
@@ -82,15 +91,21 @@ export default function SessionRaiseBreakdown({
 						<div className="col-12 col-lg-6 offset-lg-3">
 							<div className="d-none d-lg-flex justify-content-center">
 								<div className="btn-group">
-									<SelectButton id={lampName} setValue={setView} value={view}>
-										<Icon type="lightbulb" /> Lamps Only
-									</SelectButton>
 									<SelectButton id={null} setValue={setView} value={view}>
 										<Icon type="bolt" /> All
 									</SelectButton>
-									<SelectButton id="grade" setValue={setView} value={view}>
-										<Icon type="sort-alpha-up" /> Grades Only
-									</SelectButton>
+									{enumMetrics.map((metric) => (
+										<SelectButton
+											id={metric}
+											key={metric}
+											setValue={setView}
+											value={view}
+										>
+											{/* @ts-expect-error ctrl+f `enumIcons[` - standard procedure */}
+											<Icon type={gptImpl.enumIcons[metric] ?? "lightbulb"} />{" "}
+											{FormatEnumTitle(metric)}
+										</SelectButton>
+									))}
 								</div>
 							</div>
 						</div>
@@ -197,10 +212,11 @@ function SessionScoreStatBreakdown({
 					{enumMetrics.map((metric) => (
 						<div key={metric} style={{ flex: 1 }}>
 							<MiniTable
+								className={enumMetrics.length > 2 ? "no-max-width" : ""}
 								colSpan={[1, 100]}
 								headers={[
-									`${UppercaseFirst(metric)}s`,
-									`New ${UppercaseFirst(metric)}s`,
+									FormatEnumTitle(metric),
+									`New ${FormatEnumTitle(metric)}`,
 								]}
 							>
 								<ElementStatTable
@@ -222,7 +238,7 @@ function SessionScoreStatBreakdown({
 				<div className="col-12">
 					<MiniTable
 						colSpan={[1, 100]}
-						headers={[`${UppercaseFirst(view)}s`, `New ${UppercaseFirst(view)}s`]}
+						headers={[`${FormatEnumTitle(view)}`, `New ${FormatEnumTitle(view)}`]}
 					>
 						<ElementStatTable
 							chartMap={chartMap}

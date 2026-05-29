@@ -119,7 +119,7 @@ function Row({
 				song={sc.__related.song}
 			/>
 			<ScoreCoreCells chart={sc.__related.chart} game={game} rating={rating} score={sc} />
-			<TimestampCell service={sc.service} time={sc.timeAchieved} />
+			<TimestampCell game={game} service={sc.service} time={sc.timeAchieved} />
 			<DropdownIndicatorCell />
 		</DropdownRow>
 	);

@@ -1,8 +1,8 @@
 import humaniseDuration from "humanize-duration";
 import { DateTime } from "luxon";
 
-export function MillisToSince(ms: number) {
-	return DateTime.fromMillis(ms).toRelative();
+export function MillisToSince(ms: number, short?: boolean) {
+	return DateTime.fromMillis(ms).toRelative({ style: short ? "narrow" : "long" });
 }
 
 export function FormatTime(ms: number) {
@@ -33,5 +33,5 @@ export function FormatDurationHours(ms: number) {
 }
 
 export function FormatTimeSmall(ms: number) {
-	return DateTime.fromMillis(ms).toLocaleString(DateTime.DATE_SHORT);
+	return DateTime.fromMillis(ms).toISODate();
 }

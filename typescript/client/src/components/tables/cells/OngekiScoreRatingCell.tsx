@@ -8,6 +8,14 @@ import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 import MiniTable from "../components/MiniTable";
 import LampCell from "./LampCell";
 
+const CoreCell = ({ ratingValue }: { ratingValue: number }) => (
+	<td>
+		<div className="underline-on-hover">
+			{FormatScoreRating("ongeki", "scoreRating", ratingValue)}
+		</div>
+	</td>
+);
+
 export default function OngekiScoreRatingCell({
 	score,
 }: {
@@ -33,7 +41,12 @@ export default function OngekiScoreRatingCell({
 					? 0.1
 					: 0;
 	const bellRating = bellLamp === "FULL BELL" ? 0.05 : 0;
-	const techRating = ratingValue - gradeRating - noteRating - bellRating;
+	const techRating = ratingValue === 0 ? 0 : ratingValue - gradeRating - noteRating - bellRating;
+
+	if (techRating <= 0) {
+		// This value is N/A if techRating isn't positive
+		return <CoreCell ratingValue={ratingValue} />;
+	}
 
 	return (
 		<>
@@ -88,11 +101,7 @@ export default function OngekiScoreRatingCell({
 				}
 				wide
 			>
-				<td>
-					<div className="underline-on-hover">
-						{FormatScoreRating("ongeki", "scoreRating", ratingValue)}
-					</div>
-				</td>
+				<CoreCell ratingValue={ratingValue} />
 			</QuickTooltip>
 		</>
 	);

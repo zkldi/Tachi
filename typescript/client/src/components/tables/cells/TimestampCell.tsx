@@ -1,6 +1,7 @@
-import { FormatTime, MillisToSince } from "#util/time";
+import { IsNullish } from "#util/misc";
+import { FormatTime, FormatTimeOfDay, FormatTimeSmall, MillisToSince } from "#util/time";
 import React from "react";
-import { type integer } from "tachi-common";
+import { type integer, type V3Game } from "tachi-common";
 
 /** Same truncation pattern as TitleCell metadata lines. */
 const truncLineCls = "d-block w-100 text-truncate";
@@ -9,14 +10,26 @@ export default function TimestampCell({
 	service,
 	tableFixedLayoutCompat,
 	time,
+	alwaysShort,
+	game,
 }: {
+	alwaysShort?: boolean;
+	game?: V3Game;
 	service?: string | null;
 	tableFixedLayoutCompat?: boolean;
 	time: integer | null;
 }) {
+	if (game === "ongeki" && IsNullish(service)) {
+		alwaysShort = true;
+	}
+
 	const widthStyle = tableFixedLayoutCompat
 		? undefined
-		: { maxWidth: "200px", minWidth: "140px", overflow: "hidden" as const };
+		: {
+				maxWidth: "200px",
+				minWidth: alwaysShort ? "50px" : "140px",
+				overflow: "hidden" as const,
+			};
 
 	return (
 		<td
@@ -25,10 +38,18 @@ export default function TimestampCell({
 		>
 			{time ? (
 				<>
-					{MillisToSince(time)}
+					{MillisToSince(time, alwaysShort)}
 
 					<br />
-					<small className="text-body-secondary">{FormatTime(time)}</small>
+					<small className="text-body-secondary">
+						{alwaysShort ? FormatTimeSmall(time) : FormatTime(time)}
+					</small>
+					{alwaysShort && (
+						<>
+							<br />
+							<small className="text-body-secondary">{FormatTimeOfDay(time)}</small>
+						</>
+					)}
 				</>
 			) : (
 				<span
@@ -44,10 +65,11 @@ export default function TimestampCell({
 					<br />
 					<small
 						className={`${truncLineCls} text-body-secondary`}
-						style={{ fontSize: "0.75rem", minWidth: 0 }}
+						style={{ fontSize: "0.75rem", minWidth: 0, whiteSpace: "normal" }}
 						title={`Played On: ${service}`}
 					>
-						Played On: {service}
+						{!alwaysShort && "Played On: "}
+						{service}
 					</small>
 				</>
 			)}

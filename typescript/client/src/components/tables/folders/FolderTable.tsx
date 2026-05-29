@@ -211,7 +211,7 @@ const RowInner = memo(
 					rankingViewMode={rankingViewMode}
 					userID={score.userID}
 				/>
-				<TimestampCell time={score.timeAchieved} />
+				<TimestampCell game={game} time={score.timeAchieved} />
 			</DropdownRow>
 		);
 	},

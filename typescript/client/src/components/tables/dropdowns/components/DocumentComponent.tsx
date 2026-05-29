@@ -40,8 +40,12 @@ export function ScoreInfo({
 				<tbody>
 					<tr>
 						<ScoreCoreCells chart={chart} game={game} rating={rating} score={score} />
-						{/* @ts-expect-error yeah we know service doesnt necessarily exist */}
-						<TimestampCell service={score?.service} time={score.timeAchieved} />
+						<TimestampCell
+							game={game}
+							/* @ts-expect-error yeah we know service doesnt necessarily exist */
+							service={score?.service}
+							time={score.timeAchieved}
+						/>
 					</tr>
 				</tbody>
 			</table>
