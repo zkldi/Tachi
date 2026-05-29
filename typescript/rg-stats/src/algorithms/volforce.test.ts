@@ -838,8 +838,9 @@ test("VF7 Tests", () => {
 		};
 	}
 
-	// should be exactly the same as vf6 as long as integers are used for levels
 	const VF5ExampleData = [
+		// these should be exactly the same as vf6 as long as integer levels
+		// and no UCs are used
 		VF7TestCase(20, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.462),
 		VF7TestCase(19, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.438),
 		VF7TestCase(18, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.415),
@@ -869,7 +870,7 @@ test("VF7 Tests", () => {
 		VF7TestCase(20, 8_000_000, "FAILED", 0.136),
 		VF7TestCase(20, 8_700_000, "FAILED", 0.153),
 
-		// decimal levels — NABLA introduces them; VF7 must not floor.
+		// decimals and UCs
 		VF7TestCase(19.8, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.457),
 		VF7TestCase(18.5, 9_700_000, "ULTIMATE CHAIN", 0.38),
 		VF7TestCase(19.3, 9_500_000, "MAXXIVE CLEAR", 0.369),
@@ -908,7 +909,6 @@ test("InverseVF7 Tests", () => {
 		InvVF7TestCase(13, 0.121, "CLEAR", 5_817_308),
 		InvVF7TestCase(13, 0.121, "FAILED", 9_595_559),
 
-		// decimal levels — round-trip values picked so the score lands on a clean grade boundary.
 		InvVF7TestCase(17.5, 0.371, "EXCESSIVE CLEAR", 9_900_000),
 		InvVF7TestCase(19.8, 0.384, "CLEAR", 9_700_000),
 		InvVF7TestCase(18.5, 0.354, "MAXXIVE CLEAR", 9_500_000),
