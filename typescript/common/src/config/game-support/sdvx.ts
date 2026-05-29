@@ -137,11 +137,20 @@ export const GAME_SDVX_CONF = {
 			description: "VOLFORCE as it is implemented in SDVX6.",
 			formatter: ToDecimalPlaces(3),
 		},
+		VF7: {
+			description: "VOLFORCE as it is implemented in SDVX7.",
+			formatter: ToDecimalPlaces(3),
+		},
 	},
 	sessionRatingAlgs: {
 		ProfileVF6: {
 			description:
 				"The average of your best 10 VF6s this session, multiplied to be on the same scale as profile VOLFORCE.",
+			formatter: ToDecimalPlaces(3),
+		},
+		ProfileVF7: {
+			description:
+				"The average of your best 10 VF7s this session, multiplied to be on the same scale as profile VOLFORCE.",
 			formatter: ToDecimalPlaces(3),
 		},
 	},
@@ -151,15 +160,20 @@ export const GAME_SDVX_CONF = {
 			formatter: ToDecimalPlaces(3),
 			associatedScoreAlgs: ["VF6"],
 		},
+		VF7: {
+			description: "Your best 50 VF7 values added together.",
+			formatter: ToDecimalPlaces(3),
+			associatedScoreAlgs: ["VF7"],
+		},
 	},
 
-	defaultScoreRatingAlg: "VF6",
-	defaultSessionRatingAlg: "ProfileVF6",
-	defaultProfileRatingAlg: "VF6",
+	defaultScoreRatingAlg: "VF7",
+	defaultSessionRatingAlg: "ProfileVF7",
+	defaultProfileRatingAlg: "VF7",
 
 	difficulties: {
 		type: "FIXED",
-		order: ["NOV", "ADV", "EXH", "INF", "GRV", "HVN", "VVD", "XCD", "MXM", "ULT"],
+		order: ["NOV", "ADV", "EXH", "INF", "GRV", "HVN", "VVD", "XCD", "NBL", "MXM", "ULT"],
 		formatShort: {}, // they're all already short enough
 		formatLong: {},
 		default: "EXH",
@@ -186,6 +200,7 @@ export const GAME_SDVX_CONF = {
 		heaven: "HEAVENLY HAVEN",
 		vivid: "VIVID WAVE",
 		exceed: "EXCEED GEAR",
+		nabla: "NABLA",
 		konaste: "Konaste",
 	},
 

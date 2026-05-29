@@ -9,3 +9,9 @@ exports[`VF4 Validation Tests > Should throw if score is greater than 10 million
 exports[`VF4 Validation Tests > Should throw if score is negative. 1`] = `"Invalid input, Score cannot be negative. score=-1."`;
 
 exports[`VF4 Validation Tests > Should throw if the VF4 requested as an inversion is impossible. 1`] = `"Invalid input, A VF4 of 9000 is not possible on a chart with level 20. vf4=9000, level=20."`;
+
+exports[`VF7 Validation Tests > Should throw if score is greater than 10 million. 1`] = `"Invalid input, Score cannot be greater than 10million. score=10000001."`;
+
+exports[`VF7 Validation Tests > Should throw if score is negative. 1`] = `"Invalid input, Score cannot be negative. score=-1."`;
+
+exports[`VF7 Validation Tests > Should throw if the volforce is impossible to achieve with this lamp/level. 1`] = `"Invalid input, A VF7 of 900 is not possible on a chart with level 1. vf7=900, level=1."`;

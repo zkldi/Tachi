@@ -6649,7 +6649,7 @@
 		"title": "Pop'n Music Unilab Levels"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Levels for SOUND VOLTEX in EXCEED GEAR.",
 		"folders": [
 			"1-exceed",
@@ -6740,6 +6740,37 @@
 		"inactive": false,
 		"legacyTableID": "sdvx-Single-konaste-levels",
 		"title": "SOUND VOLTEX (Konaste)"
+	},
+	{
+		"default": true,
+		"description": "Levels for SOUND VOLTEX in NABLA.",
+		"folders": [
+			"1-nabla",
+			"2-nabla",
+			"3-nabla",
+			"4-nabla",
+			"5-nabla",
+			"6-nabla",
+			"7-nabla",
+			"8-nabla",
+			"9-nabla",
+			"10-nabla",
+			"11-nabla",
+			"12-nabla",
+			"13-nabla",
+			"14-nabla",
+			"15-nabla",
+			"16-nabla",
+			"17-nabla",
+			"18-nabla",
+			"19-nabla",
+			"20-nabla"
+		],
+		"game": "sdvx",
+		"id": "T19e65f7d66c54197d1a",
+		"inactive": false,
+		"legacyTableID": "sdvx-Single-nabla-levels",
+		"title": "SOUND VOLTEX (NABLA)"
 	},
 	{
 		"default": false,

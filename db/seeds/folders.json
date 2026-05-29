@@ -49978,6 +49978,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a94105487528",
+		"inactive": false,
+		"legacyFolderID": "F06c91aacb43ee04f91d4177f9d49d29a6dfc2fc1cfeef36b9f3e34f1284ff878",
+		"searchTerms": [],
+		"slug": "1-nabla",
+		"title": "Level 1 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2ae1f2b212",
 		"inactive": false,
 		"legacyFolderID": "F6f759af83ab316bde12f923433945a025c0782a77ed0d2c27aedfa4ba6db9a43",
@@ -50025,6 +50038,19 @@
 		"title": "Level 10 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a942444b4c56",
+		"inactive": false,
+		"legacyFolderID": "F970863cec6edbbe00b06f52ec90cc460a73e93375f7533b6920ee332caf62bf3",
+		"searchTerms": [],
+		"slug": "10-nabla",
+		"title": "Level 10 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -50082,6 +50108,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a9425d117c9f",
+		"inactive": false,
+		"legacyFolderID": "F4045668507fd550b4419d7cea09d910dff69344863e76ccaa57d371911993412",
+		"searchTerms": [],
+		"slug": "11-nabla",
+		"title": "Level 11 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a79f306a2",
 		"inactive": false,
 		"legacyFolderID": "F42b02cf8abf2035069cf694b1815e952f12b5248c807f747263ce1094b742302",
@@ -50129,6 +50168,19 @@
 		"title": "Level 12 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a94235340bef",
+		"inactive": false,
+		"legacyFolderID": "F1e79c7a470afc3951b4f83e4609c55464e70d5f149c584eb613dfaa632f8136b",
+		"searchTerms": [],
+		"slug": "12-nabla",
+		"title": "Level 12 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -50186,6 +50238,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a94212d9d5b6",
+		"inactive": false,
+		"legacyFolderID": "F4c37c527e97a10aa71cd49319c54724d95e5659d90ddb794cedc5acd02479f31",
+		"searchTerms": [],
+		"slug": "13-nabla",
+		"title": "Level 13 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a8394786a",
 		"inactive": false,
 		"legacyFolderID": "F6c4274e5d4b6c38fac04cb8e4930598fb7588cc0188d66d807cb5d820d2fe2cd",
@@ -50233,6 +50298,19 @@
 		"title": "Level 14 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a942a93b25dd",
+		"inactive": false,
+		"legacyFolderID": "F5cbddfe1699d57b247a5ab3cd000e7b2b77b5e970fc2bcf5fe7b0d4aeddd8716",
+		"searchTerms": [],
+		"slug": "14-nabla",
+		"title": "Level 14 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '14'"
 	},
@@ -50290,6 +50368,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a942d12d2bcd",
+		"inactive": false,
+		"legacyFolderID": "F9a5bc24a0d80df92beb16a0bd901af37e24a4a82ff934cd210d1fe39580cdfe8",
+		"searchTerms": [],
+		"slug": "15-nabla",
+		"title": "Level 15 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a942955fb",
 		"inactive": false,
 		"legacyFolderID": "Ff3e2aecb831550de238499974be45657fe60d67f476f13677b30229daca7418f",
@@ -50342,6 +50433,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a942225ed289",
+		"inactive": false,
+		"legacyFolderID": "F7cb5d43e93e0a7947433629e21cf0bada5b71468925cfd00fa3a5eb6b63e2764",
+		"searchTerms": [],
+		"slug": "16-nabla",
+		"title": "Level 16 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2ae339891a",
 		"inactive": false,
 		"legacyFolderID": "Fa8840e871649ee764bd9737fe36cc8f1dd40b21e743c32b99bcc46bf383fb8a8",
@@ -50364,7 +50468,7 @@
 		"versionFilter": [
 			"exceed"
 		],
-		"where": "chart.level = '17'"
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
 	},
 	{
 		"game": "sdvx",
@@ -50377,7 +50481,7 @@
 		"versionFilter": [
 			"heaven"
 		],
-		"where": "chart.level = '17'"
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
 	},
 	{
 		"game": "sdvx",
@@ -50390,7 +50494,20 @@
 		"versionFilter": [
 			"konaste"
 		],
-		"where": "chart.level = '17'"
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a942390eb617",
+		"inactive": false,
+		"legacyFolderID": "Fa7f8a1b2ae78df26c3331df5f540a040bbd86a1db1b05d739ecdfc670aeb9637",
+		"searchTerms": [],
+		"slug": "17-nabla",
+		"title": "Level 17 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
 	},
 	{
 		"game": "sdvx",
@@ -50403,7 +50520,7 @@
 		"versionFilter": [
 			"vivid"
 		],
-		"where": "chart.level = '17'"
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
 	},
 	{
 		"game": "sdvx",
@@ -50416,7 +50533,7 @@
 		"versionFilter": [
 			"exceed"
 		],
-		"where": "chart.level = '18'"
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
 	},
 	{
 		"game": "sdvx",
@@ -50429,7 +50546,7 @@
 		"versionFilter": [
 			"heaven"
 		],
-		"where": "chart.level = '18'"
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
 	},
 	{
 		"game": "sdvx",
@@ -50442,7 +50559,20 @@
 		"versionFilter": [
 			"konaste"
 		],
-		"where": "chart.level = '18'"
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a942f68fcb77",
+		"inactive": false,
+		"legacyFolderID": "F046dcc346fd2040e76fa5c0c3017c5b35efd91a6a8213f0b35c1f192e23d36f9",
+		"searchTerms": [],
+		"slug": "18-nabla",
+		"title": "Level 18 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
 	},
 	{
 		"game": "sdvx",
@@ -50455,7 +50585,7 @@
 		"versionFilter": [
 			"vivid"
 		],
-		"where": "chart.level = '18'"
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
 	},
 	{
 		"game": "sdvx",
@@ -50468,7 +50598,7 @@
 		"versionFilter": [
 			"exceed"
 		],
-		"where": "chart.level = '19'"
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
 	},
 	{
 		"game": "sdvx",
@@ -50481,7 +50611,7 @@
 		"versionFilter": [
 			"heaven"
 		],
-		"where": "chart.level = '19'"
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
 	},
 	{
 		"game": "sdvx",
@@ -50494,7 +50624,20 @@
 		"versionFilter": [
 			"konaste"
 		],
-		"where": "chart.level = '19'"
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a94350f1b2f5",
+		"inactive": false,
+		"legacyFolderID": "F6d7a9b50f1839a5e381eeb9f7b7687db32b7ff85dba48a50993e04332af55b70",
+		"searchTerms": [],
+		"slug": "19-nabla",
+		"title": "Level 19 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
 	},
 	{
 		"game": "sdvx",
@@ -50507,7 +50650,7 @@
 		"versionFilter": [
 			"vivid"
 		],
-		"where": "chart.level = '19'"
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
 	},
 	{
 		"game": "sdvx",
@@ -50550,6 +50693,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a94229f855f6",
+		"inactive": false,
+		"legacyFolderID": "Fc13d7cfa4d3c2e40731a344c92f817ef40b4a24dba9acef269afdcf001d963e9",
+		"searchTerms": [],
+		"slug": "2-nabla",
+		"title": "Level 2 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a22330d01",
 		"inactive": false,
 		"legacyFolderID": "F848a99e733cddf868e9b633f5c9e3427e5bbe72526ead6fccc15adab6b59ccaf",
@@ -50572,7 +50728,7 @@
 		"versionFilter": [
 			"exceed"
 		],
-		"where": "chart.level = '20'"
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
 	},
 	{
 		"game": "sdvx",
@@ -50585,7 +50741,7 @@
 		"versionFilter": [
 			"heaven"
 		],
-		"where": "chart.level = '20'"
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
 	},
 	{
 		"game": "sdvx",
@@ -50598,7 +50754,20 @@
 		"versionFilter": [
 			"konaste"
 		],
-		"where": "chart.level = '20'"
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a94315059cf3",
+		"inactive": false,
+		"legacyFolderID": "Fc0d1303ba2ab371dc6445463e3fb05000d2bec0b67b9cc677014af06c34ceef3",
+		"searchTerms": [],
+		"slug": "20-nabla",
+		"title": "Level 20 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
 	},
 	{
 		"game": "sdvx",
@@ -50611,7 +50780,7 @@
 		"versionFilter": [
 			"vivid"
 		],
-		"where": "chart.level = '20'"
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
 	},
 	{
 		"game": "sdvx",
@@ -50649,6 +50818,19 @@
 		"title": "Level 3 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a942170986fd",
+		"inactive": false,
+		"legacyFolderID": "F85a95f0b1e9d63bbdf3e016262a417f0d2a06250dee0fa504946d166b05ece1e",
+		"searchTerms": [],
+		"slug": "3-nabla",
+		"title": "Level 3 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -50706,6 +50888,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a942de718bd5",
+		"inactive": false,
+		"legacyFolderID": "F838aad7f1c94023b53a5db8a4451860f3296ffc6b9f57131c9be18fe7aac0e0e",
+		"searchTerms": [],
+		"slug": "4-nabla",
+		"title": "Level 4 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a22e402eb",
 		"inactive": false,
 		"legacyFolderID": "Fac0914bf4354bdb6f5363931193145f85195767052c3bbea5bff56391c8a820e",
@@ -50753,6 +50948,19 @@
 		"title": "Level 5 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a94271aae4a7",
+		"inactive": false,
+		"legacyFolderID": "Fd7dbe2c07e0b9b837269b705b49a36c3da497ab9b9b5a51ecd4427d3d2f89511",
+		"searchTerms": [],
+		"slug": "5-nabla",
+		"title": "Level 5 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -50810,6 +51018,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a942e0ce038a",
+		"inactive": false,
+		"legacyFolderID": "F3ebcf8d84db180f6ad0ebfe996080e1ff1f57f297668b43d3275757670d4657f",
+		"searchTerms": [],
+		"slug": "6-nabla",
+		"title": "Level 6 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a1c419e6a",
 		"inactive": false,
 		"legacyFolderID": "F9d0f77e317f93b0d7fdd4f8b7deb15569a2088a22a4d1a764e95692d92b794fc",
@@ -50857,6 +51078,19 @@
 		"title": "Level 7 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a9429db47f49",
+		"inactive": false,
+		"legacyFolderID": "F82e42ab32600c922e03364d9da6ce7fef8c2d16351686231ac71d5b2b4e96cd1",
+		"searchTerms": [],
+		"slug": "7-nabla",
+		"title": "Level 7 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -50914,6 +51148,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19e65f7a942aad71db4",
+		"inactive": false,
+		"legacyFolderID": "Fbd0528ee59b36b3d9cf8e77604e8c4de577e02c8f4c2144b1e30155ee3400b2c",
+		"searchTerms": [],
+		"slug": "8-nabla",
+		"title": "Level 8 (NABLA)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2ad2b8d882",
 		"inactive": false,
 		"legacyFolderID": "F9213a97736af2597fa7184acdd81ae911725ce463c4097b37d5c42c11a358352",
@@ -50961,6 +51208,19 @@
 		"title": "Level 9 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19e65f7a94252a65257",
+		"inactive": false,
+		"legacyFolderID": "F7373a1e3b34ab71b72326914721e448441cfad85399f554f951ada07af7e44c3",
+		"searchTerms": [],
+		"slug": "9-nabla",
+		"title": "Level 9 (NABLA)",
+		"versionFilter": [
+			"nabla"
 		],
 		"where": "chart.level = '9'"
 	},

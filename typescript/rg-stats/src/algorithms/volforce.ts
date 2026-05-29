@@ -48,6 +48,12 @@ const VF5LampCoefficients: Record<SDVXLamps, number> = {
 	FAILED: 50,
 };
 
+// NABLA buffed UC from 105 to 106, everything else matches VF6
+const VF7LampCoefficients: Record<SDVXLamps, number> = {
+	...VF5LampCoefficients,
+	"ULTIMATE CHAIN": 106,
+};
+
 /**
  * Calculate VOLFORCE as it's defined in SDVX4.
  *
@@ -134,8 +140,12 @@ export function inverseVF5(
  * @param score - The user's score. Between 0 and 10million.
  * @param level - The level of the chart. Between 0 and 20, but this is not enforced.
  */
-export function calculateVF6(score: integer, lamp: SDVXLamps, level: integer) {
+export function calculateVF6(score: integer, lamp: SDVXLamps, level: number) {
 	AssertProvidedScore(score);
+
+	// levels can have decimals starting at nabla,
+	// flooring it to get vf6 algorithm
+	level = Math.floor(level);
 
 	const unroundedVF5 = CalculateWholeVF5(score, lamp, level);
 
@@ -177,6 +187,53 @@ export function inverseVF6(
 }
 
 /**
+ * Calculate VOLFORCE as it's defined in SDVX7.
+ *
+ * @param score - The user's score. Between 0 and 10million.
+ * @param level - The level of the chart. Between 0 and 20, but this is not enforced.
+ */
+export function calculateVF7(score: integer, lamp: SDVXLamps, level: number) {
+	AssertProvidedScore(score);
+
+	const vf7 = CalculateWholeVF7(score, lamp, level);
+
+	// just like VF6, VF7 is unroundedVF5 rounded to 3 decimal places instead of 2.
+	return Math.floor(vf7 / 1000) / 1000;
+}
+
+/**
+ * Given a VF7 value and a chart level, return what score is needed to get that
+ * VF5.
+ *
+ * If the score needed is greater than 10million, this function will throw.
+ **
+ * @param vf7 - The VF7 to invert.
+ * @param lamp - The lamp for this score. This is necessary to know, as lampCoefficient
+ * plays a part in VF6. Passing "PERFECT ULTIMATE CHAIN" as a lamp is invalid, as inverting
+ * it into a score makes no sense.
+ * @param level - The level of the chart you're inverting for.
+ */
+export function inverseVF7(
+	vf7: number,
+	// Exclude PUC as input. It doesn't make sense as input, since the answer would
+	// always be 10million.
+	lamp: Exclude<SDVXLamps, "PERFECT ULTIMATE CHAIN">,
+	level: integer,
+) {
+	// note: this function is actually identical to inverseVF5, but with the caveat
+	// that the error message is different.
+
+	const score = InvertUnroundedVF7(vf7, lamp, level);
+
+	ThrowIf(score === null, `A VF7 of ${vf7} is not possible on a chart with level ${level}.`, {
+		vf7,
+		level,
+	});
+	// guaranteed to not be null
+	return score!;
+}
+
+/**
  * Calculate VF5 without performing any rounding. This is useful because VF5
  * is floored to 2 decimal places, wherease VF6 is floored to 3. This lets us
  * reuse the same algorithm.
@@ -186,6 +243,19 @@ function CalculateWholeVF5(score: integer, lamp: SDVXLamps, level: integer) {
 
 	const gradeCoefficient = VF5GradeCoefficients[grade];
 	const lampCoefficient = VF5LampCoefficients[lamp];
+
+	return level * 2 * (score / 10_000_000) * gradeCoefficient * lampCoefficient;
+}
+
+/**
+ * Calculate VF7 without performing any rounding. This is the same as VF6
+ * with the exception that the level can be a number and UCs have been buffed.
+ */
+function CalculateWholeVF7(score: integer, lamp: SDVXLamps, level: number) {
+	const grade = SDVXScoreToGrade(score);
+
+	const gradeCoefficient = VF5GradeCoefficients[grade];
+	const lampCoefficient = VF7LampCoefficients[lamp];
 
 	return level * 2 * (score / 10_000_000) * gradeCoefficient * lampCoefficient;
 }
@@ -208,6 +278,30 @@ function InvertUnroundedVF5(vf5: number, lamp: SDVXLamps, level: integer) {
 	const lampCoefficient = VF5LampCoefficients[lamp];
 
 	const scoreTimesGradeCoef = (1_000_000 * 10_000_000 * vf5) / (2 * level * lampCoefficient);
+
+	const score = AttemptGradeCoefficientDivide(scoreTimesGradeCoef, VF5GradeCoefficients);
+
+	return score;
+}
+
+/**
+ * Attempt to invert VF7 into a score.
+ *
+ * @returns The score if it was possible to be achieved. Else, it returns null.
+ */
+function InvertUnroundedVF7(vf7: number, lamp: SDVXLamps, level: number) {
+	// Note: PERFECT ULTIMATE CHAIN is never passed into this function from typescript
+	// as the calling functions Exclude<T> it from the lamps.
+	// However, a JS caller may call it like this anyway, so we mayaswell throw.
+	ThrowIf(
+		lamp === "PERFECT ULTIMATE CHAIN",
+		"PERFECT ULTIMATE CHAIN as a lampCoefficient does not make sense for an inversion, since the answer would always be 10million.",
+		{ lamp },
+	);
+
+	const lampCoefficient = VF7LampCoefficients[lamp];
+
+	const scoreTimesGradeCoef = (1_000_000 * 10_000_000 * vf7) / (2 * level * lampCoefficient);
 
 	const score = AttemptGradeCoefficientDivide(scoreTimesGradeCoef, VF5GradeCoefficients);
 

@@ -181,16 +181,22 @@ export function VF6ToClass(vf: number): SpecificUserGameStats<"sdvx">["classes"]
 
 export const SDVXLIKE_SCORE_CALCS: GPTScoreCalcs<SDVXLikes> = (scoreData, _derivedData, chart) => ({
 	VF6: Volforce.calculateVF6(scoreData.score, scoreData.lamp, chart.levelNum),
+	VF7: Volforce.calculateVF7(scoreData.score, scoreData.lamp, chart.levelNum),
 });
 
 export const SDVXLIKE_SESSION_CALCS: GPTSessionCalcs<SDVXLikes> = (arr) => {
 	const v = SessionAvgBest10For("VF6")(arr);
+	const v2 = SessionAvgBest10For("VF7")(arr);
 
-	return { ProfileVF6: v !== null ? v * 50 : null };
+	return {
+		ProfileVF6: v !== null ? v * 50 : null,
+		ProfileVF7: v2 !== null ? v2 * 50 : null,
+	};
 };
 
 export const SDVXLIKE_PROFILE_CALCS: GPTProfileCalcs<SDVXLikes> = async (game, userID) => ({
 	VF6: await ProfileSumBestN("VF6", 50)(game, userID),
+	VF7: await ProfileSumBestN("VF7", 50)(game, userID),
 });
 
 export const SDVXLIKE_CLASS_DERIVERS: GPTClassDerivers<SDVXLikes> = (ratings) => ({

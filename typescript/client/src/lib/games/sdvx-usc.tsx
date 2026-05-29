@@ -2,6 +2,7 @@ import MillionsScoreCell from "#components/tables/cells/MillionsScoreCell";
 import SDVXJudgementCell from "#components/tables/cells/SDVXJudgementCell";
 import SDVXLampCell from "#components/tables/cells/SDVXLampCell";
 import VF6Cell from "#components/tables/cells/VF6Cell";
+import VF7Cell from "#components/tables/cells/VF7Cell";
 import { GetEnumColour } from "#lib/game-implementations";
 import { type GPTClientImplementation } from "#lib/types";
 import { ChangeOpacity } from "#util/color-opacity";
@@ -72,9 +73,8 @@ const SDVXCoreCells: GPTClientImplementation<"sdvx">["scoreCoreCells"] = ({ sc }
 	</>
 );
 
-const SDVXRatingCell: GPTClientImplementation<SDVXLikes>["ratingCell"] = ({ sc, chart }) => (
-	<VF6Cell chart={chart} score={sc} />
-);
+const SDVXRatingCell: GPTClientImplementation<SDVXLikes>["ratingCell"] = ({ sc, chart, rating }) =>
+	rating === "VF7" ? <VF7Cell chart={chart} score={sc} /> : <VF6Cell chart={chart} score={sc} />;
 
 export const SDVX_IMPL: GPTClientImplementation<"sdvx"> = {
 	sessionImportantScoreCount: 50,
@@ -92,6 +92,7 @@ export const SDVX_IMPL: GPTClientImplementation<"sdvx"> = {
 		HVN: COLOUR_SET.teal,
 		VVD: COLOUR_SET.pink,
 		XCD: COLOUR_SET.blue,
+		NBL: COLOUR_SET.paleGreen,
 		MXM: COLOUR_SET.white,
 		ULT: COLOUR_SET.vibrantOrange,
 	},

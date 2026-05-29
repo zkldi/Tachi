@@ -5,9 +5,11 @@ import {
 	calculateVF4,
 	calculateVF5,
 	calculateVF6,
+	calculateVF7,
 	inverseVF4,
 	inverseVF5,
 	inverseVF6,
+	inverseVF7,
 	SDVXLamps,
 } from "./volforce";
 
@@ -817,4 +819,108 @@ test("InverseVF6 Tests", () => {
 		() => inverseVF6(900, "FAILED", 1),
 		"Should throw if the volforce is impossible to achieve with this lamp/level.",
 	);
+});
+
+test("VF7 Tests", () => {
+	function VF7TestCase(
+		level: number,
+		score: number,
+		lamp: SDVXLamps,
+		expectedVF7: number,
+	): TestCase {
+		return () => {
+			const vf7 = calculateVF7(score, lamp, level);
+
+			expect(
+				vf7,
+				`${score} on a level ${level} chart with lamp ${lamp} should be worth ${expectedVF7} VF7. (Got ${vf7})`,
+			).toBe(expectedVF7);
+		};
+	}
+
+	// should be exactly the same as vf6 as long as integers are used for levels
+	const VF5ExampleData = [
+		VF7TestCase(20, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.462),
+		VF7TestCase(19, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.438),
+		VF7TestCase(18, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.415),
+		VF7TestCase(17, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.392),
+		VF7TestCase(16, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.369),
+		VF7TestCase(15, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.346),
+		VF7TestCase(14, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.323),
+		VF7TestCase(13, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.3),
+		VF7TestCase(12, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.277),
+		VF7TestCase(11, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.254),
+		VF7TestCase(10, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.231),
+		VF7TestCase(9, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.207),
+		VF7TestCase(8, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.184),
+		VF7TestCase(7, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.161),
+		VF7TestCase(6, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.138),
+		VF7TestCase(5, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.115),
+		VF7TestCase(4, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.092),
+		VF7TestCase(3, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.069),
+		VF7TestCase(2, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.046),
+		VF7TestCase(1, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.023),
+		VF7TestCase(19, 9_500_000, "EXCESSIVE CLEAR", 0.357),
+		VF7TestCase(18, 9_923_042, "MAXXIVE CLEAR", 0.39),
+		VF7TestCase(19, 9_500_000, "CLEAR", 0.35),
+		VF7TestCase(19, 9_500_000, "FAILED", 0.175),
+		VF7TestCase(20, 5_000_000, "FAILED", 0.08),
+		VF7TestCase(20, 7_000_000, "FAILED", 0.114),
+		VF7TestCase(20, 8_000_000, "FAILED", 0.136),
+		VF7TestCase(20, 8_700_000, "FAILED", 0.153),
+
+		// decimal levels — NABLA introduces them; VF7 must not floor.
+		VF7TestCase(19.8, 10_000_000, "PERFECT ULTIMATE CHAIN", 0.457),
+		VF7TestCase(18.5, 9_700_000, "ULTIMATE CHAIN", 0.38),
+		VF7TestCase(19.3, 9_500_000, "MAXXIVE CLEAR", 0.369),
+		VF7TestCase(17.5, 9_700_000, "EXCESSIVE CLEAR", 0.346),
+		VF7TestCase(19.6, 9_900_000, "PERFECT ULTIMATE CHAIN", 0.448),
+		VF7TestCase(18.7, 9_700_000, "ULTIMATE CHAIN", 0.384),
+		VF7TestCase(19.6, 8_000_000, "FAILED", 0.133),
+	];
+
+	for (const testCase of VF5ExampleData) {
+		testCase();
+	}
+});
+
+test("InverseVF7 Tests", () => {
+	function InvVF7TestCase(
+		level: number,
+		vf7: number,
+		lamp: Exclude<SDVXLamps, "PERFECT ULTIMATE CHAIN">,
+		expectedScore: number,
+	): TestCase {
+		return () => {
+			const score = inverseVF7(vf7, lamp, level);
+
+			expect(
+				score,
+				`${vf7} VF7 on a level ${level} chart with lamp ${lamp} should be inverted to ${expectedScore}. (Got ${score})`,
+			).toBe(expectedScore);
+		};
+	}
+
+	const testCases = [
+		InvVF7TestCase(20, 0.413, "CLEAR", 9_900_000),
+		InvVF7TestCase(20, 0.232, "MAXXIVE CLEAR", 6_971_154),
+		InvVF7TestCase(20, 0.421, "EXCESSIVE CLEAR", 9_900_000),
+		InvVF7TestCase(13, 0.121, "CLEAR", 5_817_308),
+		InvVF7TestCase(13, 0.121, "FAILED", 9_595_559),
+
+		// decimal levels — round-trip values picked so the score lands on a clean grade boundary.
+		InvVF7TestCase(17.5, 0.371, "EXCESSIVE CLEAR", 9_900_000),
+		InvVF7TestCase(19.8, 0.384, "CLEAR", 9_700_000),
+		InvVF7TestCase(18.5, 0.354, "MAXXIVE CLEAR", 9_500_000),
+		InvVF7TestCase(17.5, 0.328, "EXCESSIVE CLEAR", 9_500_000),
+		InvVF7TestCase(19.8, 0.39, "MAXXIVE CLEAR", 9_700_000),
+		InvVF7TestCase(18.7, 0.36, "CLEAR", 9_700_000),
+		InvVF7TestCase(17.5, 0.328, "EXCESSIVE CLEAR", 9_500_000),
+		InvVF7TestCase(19.8, 0.39, "MAXXIVE CLEAR", 9_700_000),
+		InvVF7TestCase(18.7, 0.36, "CLEAR", 9_700_000),
+	];
+
+	for (const testCase of testCases) {
+		testCase();
+	}
 });
