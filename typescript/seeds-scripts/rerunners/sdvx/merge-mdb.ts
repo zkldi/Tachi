@@ -188,6 +188,9 @@ const InsaneCharRebinds = {
 	疉: "Ö",
 	讎: "ö",
 	鑒: "₩",
+	壥: "Є",
+	醵: "乀",
+	鷸: "♫",
 };
 
 // apply char rebinds
