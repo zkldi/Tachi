@@ -28916,7 +28916,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "りりぃろっくfeat.壥И1GM4&桃寝ちのい",
+		"artist": "りりぃろっくfeat.ЄИ1GM4&桃寝ちのい",
 		"data": {
 			"displayVersion": "nabla"
 		},
@@ -29071,8 +29071,10 @@
 		"title": "イガク"
 	},
 	{
-		"altTitles": [],
-		"artist": "音戯探偵ひなビタ鷸",
+		"altTitles": [
+			"華麗なる！音戯探偵ひなビタ鷸"
+		],
+		"artist": "音戯探偵ひなビタ♫",
 		"data": {
 			"displayVersion": "nabla"
 		},
@@ -29081,7 +29083,7 @@
 		"searchTerms": [
 			"kareinaruhinabita_penoreri"
 		],
-		"title": "華麗なる！音戯探偵ひなビタ鷸"
+		"title": "華麗なる！音戯探偵ひなビタ♫"
 	},
 	{
 		"altTitles": [],
