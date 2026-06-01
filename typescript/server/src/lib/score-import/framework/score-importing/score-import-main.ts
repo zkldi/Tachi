@@ -7,7 +7,6 @@ import type { ScoreImportJob } from "#lib/score-import/worker/types";
 
 import { LoadImportDocumentById } from "#lib/db-formats/import-document";
 import { clearPbDirtyForUser } from "#lib/jobs/drain-dirty-queues";
-import { SetImportTimestop } from "#lib/score-import/framework/common/timestop";
 import { runWithImportContext } from "#lib/score-import/framework/import-run-context";
 import {
 	deleteImportRun,
@@ -20,7 +19,6 @@ import DB from "#services/pg/db";
 import { GetMillisecondsSince } from "#utils/misc";
 import { GetUserWithID } from "#utils/user";
 import {
-	type APIImportTypes,
 	type GameGroup,
 	GetGameGroupConfig,
 	type GoalImportInfo,
@@ -31,7 +29,6 @@ import {
 	type UserDocument,
 	type V3Game,
 } from "tachi-common";
-import { apiImportTypes } from "tachi-common/constants/import-types";
 
 import type { ClassProvider } from "../calculated-data/types";
 import type { ChartIDGameMap, ScoreGameMap } from "../common/types";
@@ -249,20 +246,6 @@ export default async function ScoreImportMain<D, C>(
 		});
 
 		observeScoreImportDuration(importType, Date.now() - timeStarted);
-
-		// For API imports, advance the per-user timestop cursor so subsequent
-		// imports can stop once they reach already-imported scores.
-		if (apiImportTypes.includes(importType as APIImportTypes)) {
-			const maxTimeAchieved = importInfo
-				.filter((i): i is { success: true } & typeof i => i.success)
-				.map((i) => i.content.score.timeAchieved)
-				.filter((t): t is number => t !== null)
-				.reduce((max, t) => Math.max(max, t), -Infinity);
-
-			if (Number.isFinite(maxTimeAchieved)) {
-				await SetImportTimestop(userID, importType, new Date(maxTimeAchieved));
-			}
-		}
 
 		const loaded = await LoadImportDocumentById(importID);
 
