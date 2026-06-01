@@ -16,6 +16,7 @@ import {
 	ReadCollection,
 	WriteCollection,
 } from "../../util";
+import { InsaneCharRebinds } from "./chars";
 
 const program = new Command();
 program.requiredOption("-i, --input <music_db.xml>");
@@ -135,63 +136,6 @@ const newCharts: Array<ChartDocument<"sdvx">> = [];
 
 // anything we don't want to include?
 const blacklist = [1259, 1491, 1438, 1490];
-
-// these chars are nonsensically remapped in the xml
-// go figure
-const InsaneCharRebinds = {
-	齶: "♡",
-	齲: "♥",
-	齷: "é",
-	齪: "♣",
-	曦: "à",
-	曩: "è",
-	霻: "♠",
-	隯: "©",
-	鑈: "♦",
-	詹: "Ú",
-	罇: "ê",
-	彜: "ū",
-	鬯: "ī",
-	瑟: "ō",
-	驩: "Ø",
-	驫: "ā",
-	骭: "ü",
-	黷: "ē",
-	騫: "á",
-	躔: "🐾",
-	蹙: "ℱ",
-	趁: "Ǣ",
-	壘: "É",
-	黻: "*",
-	隰: "℗",
-	雋: "Ǜ",
-	鬻: "♃",
-	鬥: "Ã",
-	鬆: "Ý",
-	鬮: "¡",
-	隍: "Ü",
-	頽: "ä",
-	龕: "€",
-	蹇: "₂",
-	釁: "🍄",
-	鑷: "ゔ",
-	盥: "⚙",
-	餮: "Ƶ",
-	蔕: "ῦ",
-	闃: "Ā",
-	饌: "²",
-	煢: "ø",
-	眄: "³",
-	墸: " ͟͞ ",
-	鹹: "Ĥ",
-	瀑: "À",
-	疉: "Ö",
-	讎: "ö",
-	鑒: "₩",
-	壥: "Є",
-	醵: "乀",
-	鷸: "♫",
-};
 
 // apply char rebinds
 function fixString(string: string): string {
