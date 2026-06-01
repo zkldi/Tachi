@@ -103,6 +103,24 @@ services:
       POSTGRES_DB: postgres
       PGDATA: /var/lib/postgresql/data/pgdata
 
+  # PostgreSQL admin UI (http://localhost:5050). Dev + test servers are pre-registered
+  # on first launch via dev/pgadmin/servers.json (wipe tachi-pgadmin volume to reload).
+  tachi-pgadmin:
+    container_name: tachi-pgadmin
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    depends_on:
+      - tachi-postgres
+      - tachi-postgres-test
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@example.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - tachi-pgadmin:/var/lib/pgadmin
+      - "./dev/pgadmin/servers.json:/pgadmin4/servers.json:ro"
+
   tachi-s3:
     container_name: tachi-s3
     image: quay.io/minio/minio:RELEASE.2024-10-29T16-01-48Z
@@ -209,6 +227,7 @@ volumes:
   tachi-redis:
   tachi-logs:
   tachi-postgres:
+  tachi-pgadmin:
   tachi-minio:
   tachi-grafana:
   tachi-prometheus:

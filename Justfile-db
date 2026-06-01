@@ -51,3 +51,35 @@ db-load-seeds POSTGRES_DB=DEFAULT_DB:
 # Reset templatedb from migrations, then dump schema and indexes for local debugging.
 db-schema: (db-cheap-reset "templatedb")
 	pg_dump "{{POSTGRES_URL}}/templatedb" --schema-only --no-owner --no-acl -f db/schema.sql
+
+# Download (if needed) and restore an anonymised dataset dump into anon-$name on tachi-postgres.
+db-load-dataset:
+	#!/bin/bash
+	set -euo pipefail
+
+	datasets=(tachi-boku-2026-06 tachi-kamai-2026-06)
+
+	name=$(printf '%s\n' "${datasets[@]}" | fzf --prompt="Select dataset: ")
+	[[ -z "$name" ]] && exit 0
+
+	file="datasets/$name.sql.gz"
+	mkdir -p datasets
+
+	if [[ ! -f "$file" ]]; then
+		echo "Downloading $name.sql.gz from CDN..."
+		wget -O "$file" "https://cdn.tachi.ac/datasets/$name.sql.gz"
+	else
+		echo "Using cached $file"
+	fi
+
+	db_name="anon-$name"
+	db_url="postgresql://tachi:tachi@tachi-postgres:5432/$db_name"
+
+	psql "{{POSTGRES_URL}}/postgres" -c "DROP DATABASE IF EXISTS \"$db_name\""
+	psql "{{POSTGRES_URL}}/postgres" -c "CREATE DATABASE \"$db_name\""
+
+	echo "Restoring $file into $db_name..."
+	gunzip -c "$file" | psql -d "$db_url"
+
+	echo "Done. Change typescript/server/.env to use DATABASE_URL=$db_url."
+
