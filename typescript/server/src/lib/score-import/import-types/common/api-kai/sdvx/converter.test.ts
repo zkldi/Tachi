@@ -130,7 +130,8 @@ describe("ConvertDifficulty (Kai SDVX)", () => {
 		expect(ConvertDifficulty(2)).toBe("EXH");
 		expect(ConvertDifficulty(3)).toBe("ANY_INF");
 		expect(ConvertDifficulty(4)).toBe("MXM");
-		expect(() => ConvertDifficulty(5)).toThrow(InvalidScoreFailure);
+		expect(ConvertDifficulty(5)).toBe("ULT");
+		expect(() => ConvertDifficulty(6)).toThrow(InvalidScoreFailure);
 	});
 });
 

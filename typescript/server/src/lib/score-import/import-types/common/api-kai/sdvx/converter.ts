@@ -18,7 +18,7 @@ import type { KaiContext, KaiSDVXScore } from "../types";
 
 const PR_KAI_SDVX_SCORE = {
 	music_id: p.isPositiveInteger,
-	music_difficulty: p.isBoundedInteger(0, 4),
+	music_difficulty: p.isBoundedInteger(0, 5),
 	played_version: p.isBoundedInteger(1, 6),
 	clear_type: p.isBoundedInteger(1, 6),
 	max_chain: p.isPositiveInteger,
@@ -111,6 +111,8 @@ export function ConvertDifficulty(diff: number) {
 			return "ANY_INF";
 		case 4:
 			return "MXM";
+		case 5:
+			return "ULT";
 	}
 
 	throw new InvalidScoreFailure(`Invalid difficulty of ${diff} - Could not convert.`);
