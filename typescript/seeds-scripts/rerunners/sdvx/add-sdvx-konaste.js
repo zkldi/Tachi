@@ -3,7 +3,7 @@ import Encoding from "encoding-japanese";
 import { XMLParser } from "fast-xml-parser";
 import fs from "fs";
 
-import { CreateChartID, ReadCollection, WriteCollection } from "../../util.js";
+import { CreateChartID, CreateSongID, ReadCollection, WriteCollection } from "../../util.js";
 
 const VERSIONS = {
 	1: "booth",
@@ -19,6 +19,7 @@ const VERSION_DIFFICULTIES = {
 	3: "GRV",
 	4: "HVN",
 	5: "VVD",
+	6: "XCD",
 };
 
 const DIFFICULTIES = {
@@ -66,18 +67,26 @@ let newChartCount = 0;
 for (const music of xmlData.mdb.music) {
 	const id = Number(music["@_id"]);
 
-	const newSong = !songs.find((song) => song.id === id);
-	if (newSong) {
-		songs.push({
+	const chart = charts.find((chart) => chart.data.inGameID === id);
+	let song;
+	const isNewSong = !chart;
+	if (isNewSong) {
+		console.log(`New song ${getTitle(id, music.info.title_name)}`);
+		const newSong = {
 			altTitles: [],
 			artist: music.info.artist_name,
 			data: {
 				displayVersion: VERSIONS[music.info.version["#text"]],
 			},
-			id,
+			id: CreateSongID(),
+			legacySongID: id,
 			searchTerms: [music.info.ascii.replaceAll("_", " "), music.info.title_yomigana],
 			title: getTitle(id, music.info.title_name),
-		});
+		};
+		songs.push(newSong);
+		song = newSong;
+	} else {
+		song = songs.find((song) => song.id === chart.songID);
 	}
 
 	for (const diffKey in music.difficulty) {
@@ -90,7 +99,7 @@ for (const music of xmlData.mdb.music) {
 		const difficulty = getDifficulty(diffKey, music.info.inf_ver["#text"]);
 
 		const chartIndex = charts.findIndex(
-			(chart) => chart.song.id === id && chart.difficulty === difficulty,
+			(chart) => chart.data.inGameID === id && chart.difficulty === difficulty,
 		);
 		if (chartIndex === -1) {
 			charts.push({
@@ -103,11 +112,11 @@ for (const music of xmlData.mdb.music) {
 				level: levelNum.toString(),
 				levelNum,
 				playtype: "Single",
-				songID: id,
+				songID: song.id,
 				versions: ["konaste"],
 			});
 
-			if (!newSong) {
+			if (!isNewSong) {
 				console.log(`New ${difficulty} ${levelNum} for song id ${id}`);
 			}
 
