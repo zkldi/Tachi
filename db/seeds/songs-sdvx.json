@@ -29383,5 +29383,89 @@
 			"science_mimi"
 		],
 		"title": "サイエンス"
+	},
+	{
+		"altTitles": [],
+		"artist": "Synthion",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188c8c1172c0",
+		"legacySongID": 2479,
+		"searchTerms": [
+			"cyanotype synthion",
+			"ｻｲｱﾉﾀｲﾌﾟ"
+		],
+		"title": "cyanotype"
+	},
+	{
+		"altTitles": [],
+		"artist": "ak+q",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188d384603f9",
+		"legacySongID": 2480,
+		"searchTerms": [
+			"excelsia akq",
+			"ｴｸｾﾙｼｱ"
+		],
+		"title": "Excelsia"
+	},
+	{
+		"altTitles": [],
+		"artist": "不知火フレア",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188d73d4324e",
+		"legacySongID": 2481,
+		"searchTerms": [
+			"silentflame siranuiflare",
+			"ｻｲﾚﾝﾄﾌﾚｲﾑﾈﾊﾞｰﾌｪｲﾄﾞ"
+		],
+		"title": "Silent Flame,Never Fade"
+	},
+	{
+		"altTitles": [],
+		"artist": "不知火フレア",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188d903f612f",
+		"legacySongID": 2482,
+		"searchTerms": [
+			"smileandgo siranuiflare",
+			"ｽﾏｲﾙｱﾝﾄﾞｺﾞｰ"
+		],
+		"title": "Smile & Go!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "不知火フレア",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188ea09596b3",
+		"legacySongID": 2483,
+		"searchTerms": [
+			"kakuutohontou siranuiflare",
+			"ｶｸｳﾄﾎﾝﾄｳ"
+		],
+		"title": "架空と本当"
+	},
+	{
+		"altTitles": [],
+		"artist": "covered by 不知火フレア",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19e8690188ebd98e383",
+		"legacySongID": 2484,
+		"searchTerms": [
+			"homesickpt23 siranuiflare",
+			"ﾎｰﾑｼｯｸﾊﾟｰﾄﾂｰｱﾝﾄﾞｽﾘｰ"
+		],
+		"title": "Homesick Pt.2&3"
 	}
 ]
