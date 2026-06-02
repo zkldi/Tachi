@@ -121,9 +121,9 @@ describe.each([
 		});
 	});
 
-	describe("classDerivers (VF6 → vfClass)", () => {
+	describe("classDerivers (VF7 → vfClass)", () => {
 		const vf = (v: number | null, expected: ReturnType<typeof impl.classDerivers>["vfClass"]) =>
-			expect(impl.classDerivers({ VF6: v }).vfClass).toBe(expected);
+			expect(impl.classDerivers({ VF7: v }).vfClass).toBe(expected);
 
 		it("maps VOLFORCE to VF class tiers", () => {
 			vf(null, null);
