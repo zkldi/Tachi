@@ -73,7 +73,7 @@ router.get("/scores", async (req, res) => {
 				chart.data.hashSHA256,
 				score.userID === requestingUserID ? "" : username,
 				chart.data.notecount,
-				0,
+				1,
 			),
 		);
 	}

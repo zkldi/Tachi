@@ -112,7 +112,7 @@ async function FormatBeatorajaPbsForUser(user: UserDocument, requestedBy: intege
 				chartData.sha256,
 				user.id === requestedBy ? "" : user.username,
 				chartData.notecount,
-				0,
+				1,
 			);
 		}),
 	);
