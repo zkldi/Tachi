@@ -22,7 +22,9 @@ const DIFFICULTY_MAP: Map<string, Difficulties["sdvx"]> = new Map([
 	["HEAVENLY", "HVN"],
 	["INFINITE", "INF"],
 	["MAXIMUM", "MXM"],
+	["NABLA", "NBL"],
 	["NOVICE", "NOV"],
+	["ULTIMATE", "ULT"],
 	["VIVID", "VVD"],
 ]);
 
