@@ -205,9 +205,9 @@ export const GAME_ONGEKI_CONF = {
 		},
 	},
 
-	defaultScoreRatingAlg: "rating",
-	defaultSessionRatingAlg: "naiveRating",
-	defaultProfileRatingAlg: "naiveRating",
+	defaultScoreRatingAlg: "scoreRating",
+	defaultSessionRatingAlg: "naiveScoreRating",
+	defaultProfileRatingAlg: "naiveRatingRefresh",
 
 	difficulties: {
 		type: "FIXED",
