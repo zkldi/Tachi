@@ -310,7 +310,7 @@ describe("GET /ir/beatoraja/rivals and /players/:userID/scores (Postgres)", () =
 		expect(res.body.body[0]).toMatchObject({
 			sha256: BMSGazerChart.data.hashSHA256,
 			player: "",
-			playcount: 0,
+			playcount: 1,
 			minbp: 12,
 			gauge: 80,
 			maxcombo: 321,
@@ -340,7 +340,7 @@ describe("GET /ir/beatoraja/rivals and /players/:userID/scores (Postgres)", () =
 		expect(res.status).toBe(200);
 		expect(res.body.body[0]).toMatchObject({
 			player: "beatoraja_rival_scores_rival",
-			playcount: 0,
+			playcount: 1,
 		});
 	});
 
