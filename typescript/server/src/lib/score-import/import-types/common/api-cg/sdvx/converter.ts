@@ -43,7 +43,7 @@ export const ConverterAPICGSDVX: ConverterFunction<CGSDVXScore, CGContext> = asy
 		throw new InternalFailure(`Song-Chart desync with song ID ${chart.song.id} (sdvx).`);
 	}
 
-	const lamp = ConvertCGSDVXLamp(data.clearType);
+	const lamp = ConvertCGSDVXLamp(version, data.clearType);
 
 	const timeAchieved = ParseDateFromString(data.dateTime);
 
@@ -116,7 +116,27 @@ function ConvertVersion(ver: number): Versions["sdvx"] {
  * Convert CG's clearType enum into a Tachi lamp. Note that what numbers mean what are
  * dependent on what version of the game we're listening for.
  */
-function ConvertCGSDVXLamp(clearType: number): GetEnumValue<"sdvx", "lamp"> {
+export function ConvertCGSDVXLamp(
+	gameVersion: Versions["sdvx"],
+	clearType: number,
+): GetEnumValue<"sdvx", "lamp"> {
+	if (gameVersion === "nabla") {
+		switch (clearType) {
+			case 1:
+				return "FAILED";
+			case 2:
+				return "CLEAR";
+			case 3:
+				return "EXCESSIVE CLEAR";
+			case 4:
+				return "MAXXIVE CLEAR";
+			case 5:
+				return "ULTIMATE CHAIN";
+			case 6:
+				return "PERFECT ULTIMATE CHAIN";
+		}
+	}
+
 	switch (clearType) {
 		case 1:
 			return "FAILED";
