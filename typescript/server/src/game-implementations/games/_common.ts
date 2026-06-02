@@ -94,7 +94,7 @@ export const IIDXLIKE_PB_RANKING_VALUES: PBRankingValuesFunction<IIDXLikes> = (p
 	tb5: null,
 });
 
-export function VF6ToClass(vf: number): SpecificUserGameStats<"sdvx">["classes"]["vfClass"] {
+export function VF7ToClass(vf: number): SpecificUserGameStats<"sdvx">["classes"]["vfClass"] {
 	// jesus christ man
 	if (vf >= 23) {
 		return "IMPERIAL_IV";
@@ -200,7 +200,7 @@ export const SDVXLIKE_PROFILE_CALCS: GPTProfileCalcs<SDVXLikes> = async (game, u
 });
 
 export const SDVXLIKE_CLASS_DERIVERS: GPTClassDerivers<SDVXLikes> = (ratings) => ({
-	vfClass: IsNullish(ratings.VF6) ? null : VF6ToClass(ratings.VF6),
+	vfClass: IsNullish(ratings.VF7) ? null : VF7ToClass(ratings.VF7),
 });
 
 export const SDVXLIKE_GOAL_FMT: GPTGoalFormatters<SDVXLikes> = {

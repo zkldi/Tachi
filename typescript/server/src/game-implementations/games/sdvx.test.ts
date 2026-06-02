@@ -129,11 +129,11 @@ describe("SDVX_IMPL", () => {
 		});
 	});
 
-	describe("classDerivers (VF6 → vfClass)", () => {
+	describe("classDerivers (VF7 → vfClass)", () => {
 		const vf = (
 			v: number | null,
 			expected: ReturnType<typeof SDVX_IMPL.classDerivers>["vfClass"],
-		) => expect(SDVX_IMPL.classDerivers({ VF6: v }).vfClass).toBe(expected);
+		) => expect(SDVX_IMPL.classDerivers({ VF7: v }).vfClass).toBe(expected);
 
 		it("maps VOLFORCE to VF class tiers", () => {
 			vf(null, null);
