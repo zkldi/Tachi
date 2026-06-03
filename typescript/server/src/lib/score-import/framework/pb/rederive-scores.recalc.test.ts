@@ -20,6 +20,7 @@ import { mongoScoreDataToPg, pgScoreDataToAPI } from "#lib/v3/migration-tools";
 import DB from "#services/pg/db";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { Testing511Song, Testing511SPA } from "#test-utils/test-data";
+import { sql } from "kysely";
 import { type ChartDocument, type PgScoreData, type ScoreData } from "tachi-common";
 import { describe, expect, it } from "vitest";
 
@@ -533,6 +534,33 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 
 	it("drainStatsQueuesInOrder completes with empty queues", async () => {
 		await drainStatsQueuesInOrder();
+	});
+
+	it("uses statement-level score dirty triggers for downstream queues", async () => {
+		const triggerNames = [
+			"score_session_dirty_ai",
+			"score_session_dirty_au",
+			"score_session_dirty_ad",
+			"score_game_profile_dirty_ai",
+			"score_game_profile_dirty_au",
+			"score_game_profile_dirty_ad",
+		];
+
+		const res = await sql<{ is_row_trigger: boolean; tgname: string }>`
+			SELECT
+				tgname,
+				((tgtype & 1) <> 0) AS is_row_trigger
+			FROM pg_trigger
+			WHERE
+				tgrelid = 'score'::regclass
+				AND tgname IN (${sql.join(triggerNames)})
+		`.execute(DB);
+
+		expect(res.rows).toHaveLength(6);
+
+		for (const row of res.rows) {
+			expect(row.is_row_trigger, row.tgname).toBe(false);
+		}
 	});
 
 	it("bulk-updates all scores on a multi-score chart correctly", async () => {
