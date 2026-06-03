@@ -35,6 +35,26 @@ const PB_DIRTY_CAP = 100_000;
 const SESSION_DIRTY_CAP = 50_000;
 const GAME_PROFILE_DIRTY_CAP = 5_000;
 
+export async function drainUntilIdleOrCap(
+	drain: () => Promise<number>,
+	cap: number,
+): Promise<{ capped: boolean; processed: number }> {
+	let processed = 0;
+
+	while (processed < cap) {
+		// eslint-disable-next-line no-await-in-loop
+		const n = await drain();
+
+		if (n === 0) {
+			return { capped: false, processed };
+		}
+
+		processed += n;
+	}
+
+	return { capped: true, processed };
+}
+
 /**
  * Drain the `pb_dirty` queue: group entries by (game, playtype, user_id),
  * call ProcessPBs per group, and delete processed rows.
@@ -258,9 +278,9 @@ export async function drainGameProfileDirtyFully(): Promise<void> {
 }
 
 /**
- * Drain `score_rederive`, then `pb_dirty`, then `session_dirty`, then `game_profile_dirty`,
- * repeating until a full pass does nothing. Each queue has its own per-tick row budget so
- * a large `score_rederive` backlog cannot permanently starve the downstream queues.
+ * Drain `score_rederive`, then `pb_dirty`, then `session_dirty`, then `game_profile_dirty`.
+ * Each queue gets one bounded budget per cron tick so a large import/recalc backlog cannot
+ * monopolize the worker forever. Admin-triggered recalcs use the explicit "fully" helpers.
  * PBs must run before game profiles (ratings read from `pb`).
  */
 export async function drainStatsQueuesInOrder(): Promise<void> {
@@ -291,68 +311,24 @@ export async function drainStatsQueuesInOrder(): Promise<void> {
 		"drainStatsQueuesInOrder: queue sizes at tick start",
 	);
 
-	while (true) {
-		let cycleMoved = 0;
+	const scoreRederive = await drainUntilIdleOrCap(drainScoreRederive, SCORE_REDERIVE_CAP);
+	const pbDirty = await drainUntilIdleOrCap(drainPbDirty, PB_DIRTY_CAP);
+	const sessionDirty = await drainUntilIdleOrCap(drainSessionDirty, SESSION_DIRTY_CAP);
+	const gameProfileDirty = await drainUntilIdleOrCap(
+		drainGameProfileDirty,
+		GAME_PROFILE_DIRTY_CAP,
+	);
 
-		let srProcessed = 0;
-
-		while (srProcessed < SCORE_REDERIVE_CAP) {
-			// eslint-disable-next-line no-await-in-loop
-			const n = await drainScoreRederive();
-
-			if (n === 0) {
-				break;
-			}
-
-			srProcessed += n;
-			cycleMoved += n;
-		}
-
-		let pbProcessed = 0;
-
-		while (pbProcessed < PB_DIRTY_CAP) {
-			// eslint-disable-next-line no-await-in-loop
-			const n = await drainPbDirty();
-
-			if (n === 0) {
-				break;
-			}
-
-			pbProcessed += n;
-			cycleMoved += n;
-		}
-
-		let sessionProcessed = 0;
-
-		while (sessionProcessed < SESSION_DIRTY_CAP) {
-			// eslint-disable-next-line no-await-in-loop
-			const n = await drainSessionDirty();
-
-			if (n === 0) {
-				break;
-			}
-
-			sessionProcessed += n;
-			cycleMoved += n;
-		}
-
-		let gpProcessed = 0;
-
-		while (gpProcessed < GAME_PROFILE_DIRTY_CAP) {
-			// eslint-disable-next-line no-await-in-loop
-			const n = await drainGameProfileDirty();
-
-			if (n === 0) {
-				break;
-			}
-
-			gpProcessed += n;
-			cycleMoved += n;
-		}
-
-		if (cycleMoved === 0) {
-			break;
-		}
+	if (scoreRederive.capped || pbDirty.capped || sessionDirty.capped || gameProfileDirty.capped) {
+		log.info(
+			{
+				score_rederive: scoreRederive,
+				pb_dirty: pbDirty,
+				session_dirty: sessionDirty,
+				game_profile_dirty: gameProfileDirty,
+			},
+			"drainStatsQueuesInOrder: tick budget reached; any remaining rows will drain on a later tick",
+		);
 	}
 
 	const elapsedMs = Date.now() - tickStart;
