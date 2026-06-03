@@ -8593,7 +8593,9 @@
 		"title": "XyHATTE"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"暴走"
+		],
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"displayVersion": "gw"
@@ -8603,10 +8605,12 @@
 		"searchTerms": [
 			"bousou"
 		],
-		"title": "暴走"
+		"title": "初音ミクの暴走"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"消失"
+		],
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"displayVersion": "gw"
@@ -8618,7 +8622,7 @@
 			"dead end",
 			"shoushitsu"
 		],
-		"title": "消失"
+		"title": "初音ミクの消失"
 	},
 	{
 		"altTitles": [],
@@ -13277,7 +13281,9 @@
 		"title": "スペクトラム"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"消失(Hommarju Remix)"
+		],
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"displayVersion": "vivid"
@@ -13288,7 +13294,7 @@
 			"the disappearance of hatsune miku",
 			"shoushitsu"
 		],
-		"title": "消失(Hommarju Remix)"
+		"title": "初音ミクの消失(Hommarju Remix)"
 	},
 	{
 		"altTitles": [],
