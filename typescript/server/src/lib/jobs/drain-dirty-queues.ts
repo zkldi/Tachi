@@ -4,6 +4,7 @@ import {
 	ToScoreDocument,
 } from "#lib/db-formats/score";
 import { SELECT_SESSION_DOCUMENT } from "#lib/db-formats/session";
+import { ReconcileChartLeaderboardJob } from "#lib/jobs/reconcile-chart-leaderboard";
 import { log } from "#lib/log/log";
 import { CreateSessionCalcData } from "#lib/score-import/framework/calculated-data/session";
 import { ProcessPBs } from "#lib/score-import/framework/pb/process-pbs";
@@ -34,6 +35,21 @@ const SCORE_REDERIVE_CAP = 50_000;
 const PB_DIRTY_CAP = 100_000;
 const SESSION_DIRTY_CAP = 50_000;
 const GAME_PROFILE_DIRTY_CAP = 5_000;
+
+async function hasDownstreamDirtyWork(): Promise<boolean> {
+	const [sessionDirty, gameProfileDirty] = await Promise.all([
+		DB.selectFrom("session_dirty")
+			.select("session_dirty.session_id")
+			.limit(1)
+			.executeTakeFirst(),
+		DB.selectFrom("game_profile_dirty")
+			.select(["game_profile_dirty.user_id", "game_profile_dirty.game"])
+			.limit(1)
+			.executeTakeFirst(),
+	]);
+
+	return sessionDirty !== undefined || gameProfileDirty !== undefined;
+}
 
 /**
  * Drain the `pb_dirty` queue: group entries by (game, playtype, user_id),
@@ -322,6 +338,15 @@ export async function drainStatsQueuesInOrder(): Promise<void> {
 			cycleMoved += n;
 		}
 
+		// Seed/dataset restores can contain pb rows without their cached
+		// chart_leaderboard rows. Repair those before downstream recalculation,
+		// otherwise inner joins on chart_leaderboard hide otherwise-valid PBs.
+		// eslint-disable-next-line no-await-in-loop
+		if (pbProcessed > 0 || (await hasDownstreamDirtyWork())) {
+			// eslint-disable-next-line no-await-in-loop
+			cycleMoved += await ReconcileChartLeaderboardJob();
+		}
+
 		let sessionProcessed = 0;
 
 		while (sessionProcessed < SESSION_DIRTY_CAP) {
@@ -389,6 +414,8 @@ export async function drainStatsQueuesFully(): Promise<void> {
 			cycleMoved += n;
 		}
 
+		cycleMoved += await ReconcileChartLeaderboardJob();
+
 		while (true) {
 			const n = await drainSessionDirty();
 
@@ -432,6 +459,8 @@ export async function drainPbDirtyAndDownstream(): Promise<void> {
 
 			cycleMoved += n;
 		}
+
+		cycleMoved += await ReconcileChartLeaderboardJob();
 
 		while (true) {
 			const n = await drainSessionDirty();
