@@ -1657,7 +1657,7 @@
 	},
 	{
 		"altTitles": [
-			"Help me， ERINNNNNN!!"
+			"Help me， ERINNNNNN!!（2004 ver.）"
 		],
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
@@ -1668,7 +1668,7 @@
 		"searchTerms": [
 			"beatmario"
 		],
-		"title": "Help me, ERINNNNNN!!"
+		"title": "Help me, ERINNNNNN!!（2004 ver.）"
 	},
 	{
 		"altTitles": [],
@@ -13297,7 +13297,9 @@
 		"title": "初音ミクの消失(Hommarju Remix)"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"チルノのパーフェクトさんすう教室 ⑨周年バージョン"
+		],
 		"artist": "IOSYSと愉快な⑨周年フレンズ",
 		"data": {
 			"displayVersion": "heaven"
@@ -24476,7 +24478,9 @@
 		"title": "WWW"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"ヒバナ-Reloaded-"
+		],
 		"artist": "DECO*27",
 		"data": {
 			"displayVersion": "exceed"
@@ -24485,9 +24489,10 @@
 		"legacySongID": 2103,
 		"searchTerms": [
 			"hibana -reloaded-",
+			"hibana (reloaded)",
 			"DECO黻27"
 		],
-		"title": "ヒバナ-Reloaded-"
+		"title": "ヒバナ (Reloaded)"
 	},
 	{
 		"altTitles": [],
@@ -25028,7 +25033,8 @@
 	},
 	{
 		"altTitles": [
-			"ませまてぃっく齶ま＋ま＝まじっく！　～徹夜の追込みエナジーまっくす！～"
+			"ませまてぃっく齶ま＋ま＝まじっく！　～徹夜の追込みエナジーまっくす！～",
+			"ませまてぃっく♡ま＋ま＝まじっく！ ～徹夜の追込みエナジーまっくす！～"
 		],
 		"artist": "KAH feat.こにゃばた",
 		"data": {
@@ -27181,7 +27187,9 @@
 		"title": "いいわけバニー"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"全人類 兎化計画！"
+		],
 		"artist": "兎田ぺこら",
 		"data": {
 			"displayVersion": "exceed"
@@ -28583,7 +28591,9 @@
 		"title": "murmur twins (guitar pop ver.)"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"カジノファイヤーことみちゃん(covered by 一条莉々華(ReGLOSS))"
+		],
 		"artist": "covered by 一条莉々華(ReGLOSS)",
 		"data": {
 			"displayVersion": "exceed"
@@ -28596,7 +28606,9 @@
 		"title": "カジノファイヤーことみちゃん"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"朱と碧のランページ(covered by 儒烏風亭らでん(ReGLOSS))"
+		],
 		"artist": "covered by 儒烏風亭らでん(ReGLOSS)",
 		"data": {
 			"displayVersion": "exceed"
@@ -28830,7 +28842,9 @@
 		"title": "Black Out"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"CAKE，Cake'n Cake!"
+		],
 		"artist": "苺咲べりぃ",
 		"data": {
 			"displayVersion": "nabla"
@@ -28856,7 +28870,9 @@
 		"title": "Celestial Conquest"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Help me， ERINNNNNN!!"
+		],
 		"artist": "ビートまりお",
 		"data": {
 			"displayVersion": "nabla"
@@ -29352,7 +29368,9 @@
 		"title": "Anti-Matter"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Pick up， Me!"
+		],
 		"artist": "Capchii feat. 初音ミク",
 		"data": {
 			"displayVersion": "nabla"
