@@ -11,6 +11,7 @@ import { rederiveScoresForChart } from "#lib/score-import/framework/pb/rederive-
 import { scoreVisibleSql } from "#lib/score-import/framework/pg/score-visibility";
 import { UpdateUsersGamePlaytypeStats } from "#lib/score-import/framework/ugpt-stats/update-ugpt-stats";
 import DB from "#services/pg/db";
+import { sql } from "kysely";
 import {
 	type GameGroup,
 	type integer,
@@ -34,6 +35,18 @@ const SCORE_REDERIVE_CAP = 50_000;
 const PB_DIRTY_CAP = 100_000;
 const SESSION_DIRTY_CAP = 50_000;
 const GAME_PROFILE_DIRTY_CAP = 5_000;
+
+const REQUIRED_STATS_QUEUE_TABLES = [
+	"public.score_rederive",
+	"public.pb_dirty",
+	"public.session_dirty",
+	"public.game_profile_dirty",
+	"public.chart_leaderboard",
+] as const;
+
+const REQUIRED_STATS_QUEUE_FUNCTIONS = [
+	"public.refresh_chart_leaderboard_partition(text,text)",
+] as const;
 
 /**
  * Drain the `pb_dirty` queue: group entries by (game, playtype, user_id),
@@ -257,6 +270,42 @@ export async function drainGameProfileDirtyFully(): Promise<void> {
 	}
 }
 
+export async function statsQueuesSchemaReady(): Promise<boolean> {
+	const missing: Array<string> = [];
+
+	for (const tableName of REQUIRED_STATS_QUEUE_TABLES) {
+		// eslint-disable-next-line no-await-in-loop
+		const result = await sql<{ exists: boolean }>`
+			SELECT to_regclass(${tableName}) IS NOT NULL AS exists
+		`.execute(DB);
+
+		if (result.rows[0]?.exists !== true) {
+			missing.push(tableName);
+		}
+	}
+
+	for (const functionSignature of REQUIRED_STATS_QUEUE_FUNCTIONS) {
+		// eslint-disable-next-line no-await-in-loop
+		const result = await sql<{ exists: boolean }>`
+			SELECT to_regprocedure(${functionSignature}) IS NOT NULL AS exists
+		`.execute(DB);
+
+		if (result.rows[0]?.exists !== true) {
+			missing.push(functionSignature);
+		}
+	}
+
+	if (missing.length > 0) {
+		log.warn(
+			{ missing },
+			"drainStatsQueuesInOrder: required database objects missing; skipping tick.",
+		);
+		return false;
+	}
+
+	return true;
+}
+
 /**
  * Drain `score_rederive`, then `pb_dirty`, then `session_dirty`, then `game_profile_dirty`,
  * repeating until a full pass does nothing. Each queue has its own per-tick row budget so
@@ -264,6 +313,10 @@ export async function drainGameProfileDirtyFully(): Promise<void> {
  * PBs must run before game profiles (ratings read from `pb`).
  */
 export async function drainStatsQueuesInOrder(): Promise<void> {
+	if (!(await statsQueuesSchemaReady())) {
+		return;
+	}
+
 	const tickStart = Date.now();
 
 	const queueSizes = await Promise.all([
