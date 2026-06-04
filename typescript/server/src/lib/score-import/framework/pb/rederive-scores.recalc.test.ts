@@ -11,6 +11,7 @@ import {
 	drainScoreRederive,
 	drainSessionDirty,
 	drainStatsQueuesInOrder,
+	statsQueuesSchemaReady,
 } from "#lib/jobs/drain-dirty-queues";
 import { log } from "#lib/log/log";
 import { CreateSessionCalcData } from "#lib/score-import/framework/calculated-data/session";
@@ -533,6 +534,10 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 
 	it("drainStatsQueuesInOrder completes with empty queues", async () => {
 		await drainStatsQueuesInOrder();
+	});
+
+	it("reports the stats queue schema as ready after migrations", async () => {
+		await expect(statsQueuesSchemaReady()).resolves.toBe(true);
 	});
 
 	it("bulk-updates all scores on a multi-score chart correctly", async () => {
