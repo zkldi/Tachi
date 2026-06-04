@@ -26,12 +26,26 @@ function setupShell {
 	fish dev/setup.fish
 }
 
-function mvExampleFiles {
-	echo "Moving example config files into usable places..."
+function copyEnvExamples {
+	echo "Copying .env.example → .env (skips packages that already have .env)..."
 
-	cp --update=none typescript/client/example/.env typescript/client/.env
-
-	echo "Moved!"
+	ENV_PACKAGES=(
+		typescript/server
+		typescript/client
+		typescript/bot
+		typescript/github-bot
+	)
+	for pkg in "${ENV_PACKAGES[@]}"; do
+		if [[ ! -f "$pkg/.env.example" ]]; then
+			continue
+		fi
+		if [[ -f "$pkg/.env" ]]; then
+			echo "  $pkg: .env already exists, skipped"
+		else
+			cp --update=none "$pkg/.env.example" "$pkg/.env"
+			echo "  $pkg: created .env from .env.example"
+		fi
+	done
 }
 
 function seedMinioCdn {
@@ -111,7 +125,7 @@ function syncDatabaseWithSeeds {
 
 # always setup the shell
 setupShell
-mvExampleFiles
+copyEnvExamples
 seedMinioCdn
 bunInstall
 configureGitHooks
