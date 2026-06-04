@@ -134,12 +134,13 @@ async function insertIidxScore(opts: {
 async function insertIidxScoreN(opts: {
 	chartId: string;
 	scoreData: ScoreData<"iidx-sp">;
+	scoreId?: string;
 	sessionId?: string | null;
 	userId: number;
 }) {
 	const now = new Date().toISOString();
 	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", opts.scoreData);
-	const scoreId = `sc-recalc-n-${opts.chartId}-${++insertIidxScoreCounter}`;
+	const scoreId = opts.scoreId ?? `sc-recalc-n-${opts.chartId}-${++insertIidxScoreCounter}`;
 
 	await DB.insertInto("score")
 		.values({
@@ -162,6 +163,62 @@ async function insertIidxScoreN(opts: {
 		.execute();
 
 	return scoreId;
+}
+
+async function insertIidxSession(opts: { id: string; name: string; userId: number }) {
+	const now = new Date().toISOString();
+
+	await DB.insertInto("session")
+		.values({
+			id: opts.id,
+			user_id: opts.userId,
+			game: "iidx-sp",
+			name: opts.name,
+			description: null,
+			time_inserted: now,
+			time_started: now,
+			time_ended: now,
+			calculated_data: JSON.stringify({}),
+			highlight: false,
+		})
+		.execute();
+}
+
+async function clearDirtyQueues() {
+	await DB.deleteFrom("score_rederive").execute();
+	await DB.deleteFrom("pb_dirty").execute();
+	await DB.deleteFrom("session_dirty").execute();
+	await DB.deleteFrom("game_profile_dirty").execute();
+}
+
+// Keeps the two score UPDATE statements overlapped long enough for the old row-level
+// dirty-queue triggers to lock the same session_dirty rows in opposite order.
+async function installScoreUpdateBarrier() {
+	await sql`DROP TRIGGER IF EXISTS "zz_test_score_update_barrier" ON score`.execute(DB);
+	await sql`DROP FUNCTION IF EXISTS _test_score_update_barrier()`.execute(DB);
+
+	await sql`
+		CREATE FUNCTION _test_score_update_barrier() RETURNS trigger AS $$
+		BEGIN
+			IF NEW.id LIKE 'sc-recalc-deadlock-%' THEN
+				PERFORM pg_sleep(0.25);
+			END IF;
+
+			RETURN NULL;
+		END;
+		$$ LANGUAGE plpgsql
+	`.execute(DB);
+
+	await sql`
+		CREATE TRIGGER "zz_test_score_update_barrier"
+			AFTER UPDATE ON score
+			FOR EACH ROW EXECUTE FUNCTION _test_score_update_barrier()
+	`.execute(DB);
+}
+
+async function uninstallScoreUpdateBarrier() {
+	await sql`DROP TRIGGER IF EXISTS "zz_test_score_update_barrier" ON score`.execute(DB);
+	await sql`DROP FUNCTION IF EXISTS _test_score_update_barrier()`.execute(DB);
 }
 
 function parseJsonb<T>(v: unknown): T {
@@ -534,6 +591,100 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 
 	it("drainStatsQueuesInOrder completes with empty queues", async () => {
 		await drainStatsQueuesInOrder();
+	});
+
+	it("drainScoreRederive avoids dirty-queue deadlocks when parallel chart updates share sessions", async () => {
+		const n = ++recalcSeedCounter;
+		const { id: userA } = await seedUser({ username: `recalc_deadlock_a_${n}` });
+		const { id: userB } = await seedUser({ username: `recalc_deadlock_b_${n}` });
+		await seedIidxSpGameProfile(userA);
+		await seedIidxSpGameProfile(userB);
+
+		const sessionA = `sess-recalc-deadlock-a-${n}`;
+		const sessionB = `sess-recalc-deadlock-b-${n}`;
+
+		await insertIidxSession({
+			id: sessionA,
+			userId: userA,
+			name: "Recalc deadlock session A",
+		});
+		await insertIidxSession({
+			id: sessionB,
+			userId: userA,
+			name: "Recalc deadlock session B",
+		});
+
+		const chartA = `C_RECALC_DEADLOCK_A_${n}`;
+		const chartB = `C_RECALC_DEADLOCK_B_${n}`;
+		await insertSongAndChart(buildIidxSpChartDoc(chartA, `S_RECALC_DEADLOCK_A_${n}`, 10, 786));
+		await insertSongAndChart(buildIidxSpChartDoc(chartB, `S_RECALC_DEADLOCK_B_${n}`, 10, 786));
+
+		const scoreData = {
+			lamp: "CLEAR",
+			score: 1000,
+			grade: "AAA",
+			percent: 50,
+			optional: {},
+			judgements: { pgreat: 500, great: 0 },
+		} as ScoreData<"iidx-sp">;
+
+		await insertIidxScoreN({
+			chartId: chartA,
+			userId: userA,
+			sessionId: sessionA,
+			scoreData,
+			scoreId: `sc-recalc-deadlock-a-1-${n}`,
+		});
+		await insertIidxScoreN({
+			chartId: chartA,
+			userId: userA,
+			sessionId: sessionB,
+			scoreData,
+			scoreId: `sc-recalc-deadlock-a-2-${n}`,
+		});
+		await insertIidxScoreN({
+			chartId: chartB,
+			userId: userB,
+			sessionId: sessionB,
+			scoreData,
+			scoreId: `sc-recalc-deadlock-b-1-${n}`,
+		});
+		await insertIidxScoreN({
+			chartId: chartB,
+			userId: userB,
+			sessionId: sessionA,
+			scoreData,
+			scoreId: `sc-recalc-deadlock-b-2-${n}`,
+		});
+
+		await clearDirtyQueues();
+		await DB.insertInto("score_rederive")
+			.values([{ chart_id: chartA }, { chart_id: chartB }])
+			.execute();
+		await installScoreUpdateBarrier();
+
+		try {
+			const processedCharts = await drainScoreRederive();
+
+			expect(processedCharts).toBe(2);
+		} finally {
+			await uninstallScoreUpdateBarrier();
+		}
+
+		const queuedCharts = await DB.selectFrom("score_rederive")
+			.select(["score_rederive.chart_id"])
+			.where("score_rederive.chart_id", "in", [chartA, chartB])
+			.execute();
+
+		expect(queuedCharts).toHaveLength(0);
+
+		const dirtySessions = await DB.selectFrom("session_dirty")
+			.select(["session_dirty.session_id"])
+			.where("session_dirty.session_id", "in", [sessionA, sessionB])
+			.orderBy("session_dirty.session_id", "asc")
+			.execute();
+
+		expect(dirtySessions.map((r) => r.session_id)).toEqual([sessionA, sessionB]);
 	});
 
 	it("uses statement-level score dirty triggers for downstream queues", async () => {
