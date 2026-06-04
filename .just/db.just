@@ -81,5 +81,5 @@ db-load-dataset:
 	echo "Restoring $file into $db_name..."
 	gunzip -c "$file" | psql -d "$db_url"
 
-	echo "Done. Change typescript/server/.env to use DATABASE_URL=$db_url."
+	echo "Done. Change typescript/server/.env to use POSTGRES=\"$db_url\""
 

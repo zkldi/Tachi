@@ -8,7 +8,6 @@ import ".just/misc.just"
 import ".just/observability.just"
 import ".just/test.just"
 import ".just/bench.just"
-import ".just/dataset.just"
 import ".just/repo.just"
 
 [private]
