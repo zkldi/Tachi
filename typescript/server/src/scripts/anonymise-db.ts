@@ -131,6 +131,7 @@ async function main(): Promise<void> {
 		"account_settings",
 		"bms_course_lookup",
 		"chart",
+		"chart_leaderboard",
 		"class_achievement",
 		"folder",
 		"folder_chart_lookup",

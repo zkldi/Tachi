@@ -37,9 +37,6 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: rm .env
-        run: rm typescript/client/.env
-
       - name: Build Bokutachi
         run: bun run --filter tachi-client build
         env:

@@ -154,7 +154,13 @@ to your repository.
 Type `gh auth login` and follow the instructions.
 You should now be properly authenticated!
 
-## 5. Start Tachi!
+## 5. Environment files
+
+The repo tracks `.env.example` templates under `typescript/server`, `typescript/client`, `typescript/bot`, and `typescript/github-bot`. Your local `.env` files are gitignored.
+
+Run `just setup` (or rely on the dev container bootstrap on attach) to copy each `.env.example` to `.env` where you do not already have one. Edit `.env` for machine-specific values; do not commit it.
+
+## 6. Start Tachi!
 
 With a terminal open inside the `Tachi` container you just cloned, run `just start`.
 
@@ -166,7 +172,7 @@ Type `just` in the terminal to see other available commands.
 
 Navigate to http://localhost:3000 and check your Tachi instance!
 
-## 6. OK, Now what.
+## 7. OK, Now what.
 
 Now that you've got a working version of Tachi running on your local PC, you should go check out the [component-specific contribution guides](./components.md)!
 

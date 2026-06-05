@@ -1,5 +1,9 @@
 node_modules
 
+# Local env (templates are .env.example; setup copies them to .env)
+.env
+**/.env
+
 your-pc
 
 # ide stuffs

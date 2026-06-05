@@ -3,7 +3,7 @@ import { type PBDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
 import { CreateDefaultPBSearchParams } from "#util/tables/create-search";
 import { GetPBLeadingHeaders } from "#util/tables/get-pb-leaders";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { type AnyScoreRatingAlg, type V3Game } from "tachi-common";
 
 import DropdownIndicatorCell from "../cells/DropdownIndicatorCell";
@@ -41,8 +41,11 @@ export default function PBTable({
 	showUser?: boolean;
 }) {
 	const defaultRating = useScoreRatingAlg(game);
-
 	const [rating, setRating] = useState(alg ?? defaultRating);
+
+	useEffect(() => {
+		setRating(alg ?? defaultRating);
+	}, [alg, defaultRating]);
 	const [rankingViewMode, setRankingViewMode] = useState<RankingViewMode>(
 		defaultRankingViewMode ?? "global",
 	);
