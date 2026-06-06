@@ -305,7 +305,7 @@ API_V1_ROUTER.add(
 
 		return success("Returned username change eligibility.", {
 			canChange,
-			nextChange: nextAvailableChange,
+			nextAvailableChange,
 		});
 	},
 );
