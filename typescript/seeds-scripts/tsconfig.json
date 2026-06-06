@@ -8,7 +8,7 @@
 		"allowJs": true,
 		"strict": false,
 		"paths": {
-			"#*": ["./src/*"]
+			"#*": ["./*", "./*.ts", "./*.js"]
 		}
 	},
 	"exclude": ["node_modules", "rerunners/**"]

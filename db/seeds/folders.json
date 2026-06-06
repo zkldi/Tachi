@@ -406,7 +406,9 @@
 		"id": "F19d35f0cf26048e77ce",
 		"inactive": false,
 		"legacyFolderID": "Fabc87551958f41fbe9e18ae52307d87e9d50a6dc8293e64a77fbf9705ffbb0fe",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library ?"
+		],
 		"slug": "dplibrary-q",
 		"title": "☆?",
 		"where": "(chart.data->'tableFolders'->>'☆') = '?'"
@@ -416,7 +418,9 @@
 		"id": "F19d35f0cf26a6d2ce5e",
 		"inactive": false,
 		"legacyFolderID": "F85e5a6cb478173a31a095d4dc9dc091f9db565af0280c2d6f0661827b428b082",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 1"
+		],
 		"slug": "dplibrary-1",
 		"title": "☆1",
 		"where": "(chart.data->'tableFolders'->>'☆') = '1'"
@@ -426,7 +430,9 @@
 		"id": "F19d35f0cf26be232c9b",
 		"inactive": false,
 		"legacyFolderID": "Fdab8a9cb11f8a6d80bb7db26d352c241f11936c51bfa41e5ab99ac48383789be",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 10中"
+		],
 		"slug": "dplibrary-10-u4e2d",
 		"title": "☆10中",
 		"where": "(chart.data->'tableFolders'->>'☆') = '10中'"
@@ -436,7 +442,9 @@
 		"id": "F19d35f0cf26377a8130",
 		"inactive": false,
 		"legacyFolderID": "F23daea5cf06c12ac964561a4cee99b537c781953afcdd180fedb606bfffd2e99",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 10弱"
+		],
 		"slug": "dplibrary-10-u5f31",
 		"title": "☆10弱",
 		"where": "(chart.data->'tableFolders'->>'☆') = '10弱'"
@@ -446,7 +454,9 @@
 		"id": "F19d35f0cf2609edfdfd",
 		"inactive": false,
 		"legacyFolderID": "F3eaf1f10e6d46f220b45526bd9cfa181e321dd3ac5e8e425f62ba97a66b709b0",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 10強"
+		],
 		"slug": "dplibrary-10-u5f37",
 		"title": "☆10強",
 		"where": "(chart.data->'tableFolders'->>'☆') = '10強'"
@@ -456,7 +466,9 @@
 		"id": "F19d35f0cf26d1d2c05f",
 		"inactive": false,
 		"legacyFolderID": "Fc913ce0110dcf4d0c7208ebc7bc14f6a66232cd866362ea8869a6eef673c822a",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 11中"
+		],
 		"slug": "dplibrary-11-u4e2d",
 		"title": "☆11中",
 		"where": "(chart.data->'tableFolders'->>'☆') = '11中'"
@@ -466,7 +478,9 @@
 		"id": "F19d35f0cf26266d166a",
 		"inactive": false,
 		"legacyFolderID": "Ffb5eddce6485497ae8d4429c3d04346e17af63776aaddf0b9025970f005af0a9",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 11弱"
+		],
 		"slug": "dplibrary-11-u5f31",
 		"title": "☆11弱",
 		"where": "(chart.data->'tableFolders'->>'☆') = '11弱'"
@@ -476,7 +490,9 @@
 		"id": "F19d35f0cf260f0d847a",
 		"inactive": false,
 		"legacyFolderID": "F6302556b656f03c330c01bcf5f29b65ec42989c63e54eb1b39a5f99a9cc236c8",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 11強"
+		],
 		"slug": "dplibrary-11-u5f37",
 		"title": "☆11強",
 		"where": "(chart.data->'tableFolders'->>'☆') = '11強'"
@@ -486,7 +502,9 @@
 		"id": "F19d35f0cf265daf4608",
 		"inactive": false,
 		"legacyFolderID": "F61e8e3cb52b9d70358f33a7558c3ea5d9f6422be29b92de203f81e2ef7f6f356",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 12"
+		],
 		"slug": "dplibrary-12",
 		"title": "☆12",
 		"where": "(chart.data->'tableFolders'->>'☆') = '12'"
@@ -496,7 +514,9 @@
 		"id": "F19d35f0cf267dd803ca",
 		"inactive": false,
 		"legacyFolderID": "Ff64b0c187fb528d51d6d42bb843f5e81481193d72b46b384d61e1de38931e4c9",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 2"
+		],
 		"slug": "dplibrary-2",
 		"title": "☆2",
 		"where": "(chart.data->'tableFolders'->>'☆') = '2'"
@@ -506,7 +526,9 @@
 		"id": "F19d35f0cf2693b6c15d",
 		"inactive": false,
 		"legacyFolderID": "F70388fd85e665e8e2a1d8aee26167ad822b05555175778c5492afa4d969c8ec5",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 3"
+		],
 		"slug": "dplibrary-3",
 		"title": "☆3",
 		"where": "(chart.data->'tableFolders'->>'☆') = '3'"
@@ -516,7 +538,9 @@
 		"id": "F19d35f0cf263b318ed0",
 		"inactive": false,
 		"legacyFolderID": "Fd050ee0d0a1a20ccde5da8b5f4cd429b1ad829c68e971dacd720646f102cf02c",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 4"
+		],
 		"slug": "dplibrary-4",
 		"title": "☆4",
 		"where": "(chart.data->'tableFolders'->>'☆') = '4'"
@@ -526,7 +550,9 @@
 		"id": "F19d35f0cf268c54ba18",
 		"inactive": false,
 		"legacyFolderID": "F631b1e2a5d7142d71c7fff75a0a45cec5d6a0073e0061fcf7d4b3b0ecbe7503e",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 5"
+		],
 		"slug": "dplibrary-5",
 		"title": "☆5",
 		"where": "(chart.data->'tableFolders'->>'☆') = '5'"
@@ -536,7 +562,9 @@
 		"id": "F19d35f0cf266091b99f",
 		"inactive": false,
 		"legacyFolderID": "F097e70e31cd9a197c1c3cff0fadcac621855bacf965b97f6f2e3f3fbd1937d86",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 6"
+		],
 		"slug": "dplibrary-6",
 		"title": "☆6",
 		"where": "(chart.data->'tableFolders'->>'☆') = '6'"
@@ -546,7 +574,9 @@
 		"id": "F19d35f0cf2642225b53",
 		"inactive": false,
 		"legacyFolderID": "F010882d42b33a08301b9b2a66bac20ec03bc74584df16fb4574fc9545d4bdc65",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 7"
+		],
 		"slug": "dplibrary-7",
 		"title": "☆7",
 		"where": "(chart.data->'tableFolders'->>'☆') = '7'"
@@ -556,7 +586,9 @@
 		"id": "F19d35f0cf2676926bd9",
 		"inactive": false,
 		"legacyFolderID": "F3abf6dfc63479acb04c37953b5e47ea9b8c4f4a89257003fe26d30b85b7c1484",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 8弱"
+		],
 		"slug": "dplibrary-8-u5f31",
 		"title": "☆8弱",
 		"where": "(chart.data->'tableFolders'->>'☆') = '8弱'"
@@ -566,7 +598,9 @@
 		"id": "F19d35f0cf26632cfe61",
 		"inactive": false,
 		"legacyFolderID": "F68dc542e10b4e7943ee2ff7833457aa88fccde93e79dee2708459838268b03e1",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 8強"
+		],
 		"slug": "dplibrary-8-u5f37",
 		"title": "☆8強",
 		"where": "(chart.data->'tableFolders'->>'☆') = '8強'"
@@ -576,7 +610,9 @@
 		"id": "F19d35f0cf26aa204925",
 		"inactive": false,
 		"legacyFolderID": "Fe4e8beac2736bd65d9cd14a54b293616db54c4c0a93ef3f60ca5a1ddd8f1114b",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 9中"
+		],
 		"slug": "dplibrary-9-u4e2d",
 		"title": "☆9中",
 		"where": "(chart.data->'tableFolders'->>'☆') = '9中'"
@@ -586,7 +622,9 @@
 		"id": "F19d35f0cf2675b19b62",
 		"inactive": false,
 		"legacyFolderID": "F0ae9eae5d7b84d3a6aac1d3a6bf3d45949396b23266c295176ecb59624f979e8",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 9弱"
+		],
 		"slug": "dplibrary-9-u5f31",
 		"title": "☆9弱",
 		"where": "(chart.data->'tableFolders'->>'☆') = '9弱'"
@@ -596,7 +634,9 @@
 		"id": "F19d35f0cf26e60366c2",
 		"inactive": false,
 		"legacyFolderID": "Ff907793e104a0fe7cbd1923176311557619f9e8e921341ccddadc55adf4506c6",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 9強"
+		],
 		"slug": "dplibrary-9-u5f37",
 		"title": "☆9強",
 		"where": "(chart.data->'tableFolders'->>'☆') = '9強'"
@@ -606,7 +646,9 @@
 		"id": "F19d35f0cf262f00f07d",
 		"inactive": false,
 		"legacyFolderID": "Fa7aa1988d283bee7866fb584fb13c3253c75ef2cdd2d35a408adb7682e6331d2",
-		"searchTerms": [],
+		"searchTerms": [
+			"DP Library 足"
+		],
 		"slug": "dplibrary-u8db3",
 		"title": "☆足",
 		"where": "(chart.data->'tableFolders'->>'☆') = '足'"
@@ -668,8 +710,8 @@
 			"DP Satellite 0"
 		],
 		"slug": "dpsatellite-0",
-		"title": "sl0",
-		"where": "(chart.data->'tableFolders'->>'sl') = '0'"
+		"title": "DPsl0",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '0'"
 	},
 	{
 		"game": "bms-14k",
@@ -680,8 +722,8 @@
 			"DP Satellite 1"
 		],
 		"slug": "dpsatellite-1",
-		"title": "sl1",
-		"where": "(chart.data->'tableFolders'->>'sl') = '1'"
+		"title": "DPsl1",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '1'"
 	},
 	{
 		"game": "bms-14k",
@@ -692,8 +734,104 @@
 			"DP Satellite 10"
 		],
 		"slug": "dpsatellite-10",
-		"title": "sl10",
-		"where": "(chart.data->'tableFolders'->>'sl') = '10'"
+		"title": "DPsl10",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '10'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf264c1795b2",
+		"inactive": false,
+		"legacyFolderID": "F30219ee1cdd6e37c8f1aca81a5c6391911a25389221dc1eeb460082d66a53940",
+		"searchTerms": [
+			"DP Satellite 2"
+		],
+		"slug": "dpsatellite-2",
+		"title": "DPsl2",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '2'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf263534a91b",
+		"inactive": false,
+		"legacyFolderID": "F42eaa8e25dde2207c875731eb4bf954d0fa21868f8f96c187de298236aa473a8",
+		"searchTerms": [
+			"DP Satellite 3"
+		],
+		"slug": "dpsatellite-3",
+		"title": "DPsl3",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '3'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf26b3121797",
+		"inactive": false,
+		"legacyFolderID": "F3901caf2991cebd7844b281dc6b4b29ccf8aac73ea0f376d4462d2247292a494",
+		"searchTerms": [
+			"DP Satellite 4"
+		],
+		"slug": "dpsatellite-4",
+		"title": "DPsl4",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '4'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf26dc2ca266",
+		"inactive": false,
+		"legacyFolderID": "F2b1ddd7af4e09c20bec5386c716a3cfcd0073a5988b36f755136a2749e6d2657",
+		"searchTerms": [
+			"DP Satellite 5"
+		],
+		"slug": "dpsatellite-5",
+		"title": "DPsl5",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '5'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf265ac6ef0d",
+		"inactive": false,
+		"legacyFolderID": "F5399807ea6a32abe489850a520fe1a29297b30d4e12cab9bcd5d2bacfd036444",
+		"searchTerms": [
+			"DP Satellite 6"
+		],
+		"slug": "dpsatellite-6",
+		"title": "DPsl6",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '6'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf26d82fe699",
+		"inactive": false,
+		"legacyFolderID": "Fa069b7b23f92413abcb0451d051685ed00d4be6515bc0c7b1c512153a31ad72d",
+		"searchTerms": [
+			"DP Satellite 7"
+		],
+		"slug": "dpsatellite-7",
+		"title": "DPsl7",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '7'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf26a14241c8",
+		"inactive": false,
+		"legacyFolderID": "F474ba10be45823e5eb3368932e54225454ffb153c19bd252b25824800d94a76f",
+		"searchTerms": [
+			"DP Satellite 8"
+		],
+		"slug": "dpsatellite-8",
+		"title": "DPsl8",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '8'"
+	},
+	{
+		"game": "bms-14k",
+		"id": "F19d35f0cf26304ca845",
+		"inactive": false,
+		"legacyFolderID": "Fbce56c0b502fa073ae280d17292a0a224cc02a6c710e9e4a0b591fc546b77361",
+		"searchTerms": [
+			"DP Satellite 9"
+		],
+		"slug": "dpsatellite-9",
+		"title": "DPsl9",
+		"where": "(chart.data->'tableFolders'->>'DPsl') = '9'"
 	},
 	{
 		"game": "bms-14k",
@@ -718,102 +856,6 @@
 		"slug": "dpsatellite-12",
 		"title": "sl12",
 		"where": "(chart.data->'tableFolders'->>'sl') = '12'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf264c1795b2",
-		"inactive": false,
-		"legacyFolderID": "F30219ee1cdd6e37c8f1aca81a5c6391911a25389221dc1eeb460082d66a53940",
-		"searchTerms": [
-			"DP Satellite 2"
-		],
-		"slug": "dpsatellite-2",
-		"title": "sl2",
-		"where": "(chart.data->'tableFolders'->>'sl') = '2'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf263534a91b",
-		"inactive": false,
-		"legacyFolderID": "F42eaa8e25dde2207c875731eb4bf954d0fa21868f8f96c187de298236aa473a8",
-		"searchTerms": [
-			"DP Satellite 3"
-		],
-		"slug": "dpsatellite-3",
-		"title": "sl3",
-		"where": "(chart.data->'tableFolders'->>'sl') = '3'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf26b3121797",
-		"inactive": false,
-		"legacyFolderID": "F3901caf2991cebd7844b281dc6b4b29ccf8aac73ea0f376d4462d2247292a494",
-		"searchTerms": [
-			"DP Satellite 4"
-		],
-		"slug": "dpsatellite-4",
-		"title": "sl4",
-		"where": "(chart.data->'tableFolders'->>'sl') = '4'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf26dc2ca266",
-		"inactive": false,
-		"legacyFolderID": "F2b1ddd7af4e09c20bec5386c716a3cfcd0073a5988b36f755136a2749e6d2657",
-		"searchTerms": [
-			"DP Satellite 5"
-		],
-		"slug": "dpsatellite-5",
-		"title": "sl5",
-		"where": "(chart.data->'tableFolders'->>'sl') = '5'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf265ac6ef0d",
-		"inactive": false,
-		"legacyFolderID": "F5399807ea6a32abe489850a520fe1a29297b30d4e12cab9bcd5d2bacfd036444",
-		"searchTerms": [
-			"DP Satellite 6"
-		],
-		"slug": "dpsatellite-6",
-		"title": "sl6",
-		"where": "(chart.data->'tableFolders'->>'sl') = '6'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf26d82fe699",
-		"inactive": false,
-		"legacyFolderID": "Fa069b7b23f92413abcb0451d051685ed00d4be6515bc0c7b1c512153a31ad72d",
-		"searchTerms": [
-			"DP Satellite 7"
-		],
-		"slug": "dpsatellite-7",
-		"title": "sl7",
-		"where": "(chart.data->'tableFolders'->>'sl') = '7'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf26a14241c8",
-		"inactive": false,
-		"legacyFolderID": "F474ba10be45823e5eb3368932e54225454ffb153c19bd252b25824800d94a76f",
-		"searchTerms": [
-			"DP Satellite 8"
-		],
-		"slug": "dpsatellite-8",
-		"title": "sl8",
-		"where": "(chart.data->'tableFolders'->>'sl') = '8'"
-	},
-	{
-		"game": "bms-14k",
-		"id": "F19d35f0cf26304ca845",
-		"inactive": false,
-		"legacyFolderID": "Fbce56c0b502fa073ae280d17292a0a224cc02a6c710e9e4a0b591fc546b77361",
-		"searchTerms": [
-			"DP Satellite 9"
-		],
-		"slug": "dpsatellite-9",
-		"title": "sl9",
-		"where": "(chart.data->'tableFolders'->>'sl') = '9'"
 	},
 	{
 		"game": "bms-14k",
@@ -2578,7 +2620,9 @@
 		"id": "F19d35f0cf267957fb96",
 		"inactive": false,
 		"legacyFolderID": "F8b333132a49460ab61e84014c97875f40b6a9e968016071cd664104a8c737696",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy -1"
+		],
 		"slug": "delayjoy-dash-1",
 		"title": "dl-1",
 		"where": "(chart.data->'tableFolders'->>'dl') = '-1'"
@@ -2588,7 +2632,9 @@
 		"id": "F19d35f0cf26364c4c3e",
 		"inactive": false,
 		"legacyFolderID": "F2d4d1253fedb8cbd8ae0a6ea91406b9e03c7b80d87f019d17e4c5013f53c918c",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy -2"
+		],
 		"slug": "delayjoy-dash-2",
 		"title": "dl-2",
 		"where": "(chart.data->'tableFolders'->>'dl') = '-2'"
@@ -2598,7 +2644,9 @@
 		"id": "F19d35f0cf264f123bd5",
 		"inactive": false,
 		"legacyFolderID": "F263a2a84b04568658df5a67818e4f399bb3de3344d63a4fe35dc3c1c32140a0d",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 0"
+		],
 		"slug": "delayjoy-0",
 		"title": "dl0",
 		"where": "(chart.data->'tableFolders'->>'dl') = '0'"
@@ -2608,7 +2656,9 @@
 		"id": "F19d35f0cf26c4eecc14",
 		"inactive": false,
 		"legacyFolderID": "F362c5ef8ed5a97fe6e7f6eac22e59638ae57d93559a173b8be18c6750ce4daef",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 1"
+		],
 		"slug": "delayjoy-1",
 		"title": "dl1",
 		"where": "(chart.data->'tableFolders'->>'dl') = '1'"
@@ -2618,7 +2668,9 @@
 		"id": "F19d35f0cf2665777ca9",
 		"inactive": false,
 		"legacyFolderID": "F9bb597c4c96d2d461c2d87fc51da69cadd74f5ef63fd1cfb25aabcf01fe4fba3",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 10"
+		],
 		"slug": "delayjoy-10",
 		"title": "dl10",
 		"where": "(chart.data->'tableFolders'->>'dl') = '10'"
@@ -2628,7 +2680,9 @@
 		"id": "F19d35f0cf26ab449386",
 		"inactive": false,
 		"legacyFolderID": "F8bfcdab7b1978ad2ca33dd75cd8677594547a9a9aa6f05fd875ea67cfc9d76e0",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 11"
+		],
 		"slug": "delayjoy-11",
 		"title": "dl11",
 		"where": "(chart.data->'tableFolders'->>'dl') = '11'"
@@ -2638,7 +2692,9 @@
 		"id": "F19d35f0cf26a7bdd091",
 		"inactive": false,
 		"legacyFolderID": "F638aff74990ebaf19eaafe1d5b53c33c82b9f4d61d5c0fe1285e3c759d693f33",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 12"
+		],
 		"slug": "delayjoy-12",
 		"title": "dl12",
 		"where": "(chart.data->'tableFolders'->>'dl') = '12'"
@@ -2648,7 +2704,9 @@
 		"id": "F19d35f0cf2637d8cce3",
 		"inactive": false,
 		"legacyFolderID": "F8a6c56f1da112ba17008898b3b8163c18d542f10bf2f8366fef0f085bb60b5f1",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 2"
+		],
 		"slug": "delayjoy-2",
 		"title": "dl2",
 		"where": "(chart.data->'tableFolders'->>'dl') = '2'"
@@ -2658,7 +2716,9 @@
 		"id": "F19d35f0cf26413d74ba",
 		"inactive": false,
 		"legacyFolderID": "Fa2e5b83869994e350bc21fb1b289bcf0cf5602ccf23baf3ad63685ef3e35258a",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 3"
+		],
 		"slug": "delayjoy-3",
 		"title": "dl3",
 		"where": "(chart.data->'tableFolders'->>'dl') = '3'"
@@ -2668,7 +2728,9 @@
 		"id": "F19d35f0cf26ae5b9bcf",
 		"inactive": false,
 		"legacyFolderID": "F57b91005a8de0c24fa0ad97c326036d573d8e85245598d83504dda344bbf3289",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 4"
+		],
 		"slug": "delayjoy-4",
 		"title": "dl4",
 		"where": "(chart.data->'tableFolders'->>'dl') = '4'"
@@ -2678,7 +2740,9 @@
 		"id": "F19d35f0cf26430155d4",
 		"inactive": false,
 		"legacyFolderID": "Fcbe1af365e5b1fefdead9e9c964c7a7dfc065b3210f5a6deb0b1b786f0c3704f",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 5"
+		],
 		"slug": "delayjoy-5",
 		"title": "dl5",
 		"where": "(chart.data->'tableFolders'->>'dl') = '5'"
@@ -2688,7 +2752,9 @@
 		"id": "F19d35f0cf266d126865",
 		"inactive": false,
 		"legacyFolderID": "F7ec784427c8a29fcd38499ac3fecbbaf32a4d409888973640a986210ca504336",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 6"
+		],
 		"slug": "delayjoy-6",
 		"title": "dl6",
 		"where": "(chart.data->'tableFolders'->>'dl') = '6'"
@@ -2698,7 +2764,9 @@
 		"id": "F19d35f0cf26dac05734",
 		"inactive": false,
 		"legacyFolderID": "F99d9be6408cbe5ebf5aba5fa8beb6cfc76aaf155bec57a65efad9a745641f006",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 7"
+		],
 		"slug": "delayjoy-7",
 		"title": "dl7",
 		"where": "(chart.data->'tableFolders'->>'dl') = '7'"
@@ -2708,7 +2776,9 @@
 		"id": "F19d35f0cf26a5b642e4",
 		"inactive": false,
 		"legacyFolderID": "Fc6108a926fc179610399b764454daf721dfcb4f1964e902972c58a1e6054210c",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 8"
+		],
 		"slug": "delayjoy-8",
 		"title": "dl8",
 		"where": "(chart.data->'tableFolders'->>'dl') = '8'"
@@ -2718,7 +2788,9 @@
 		"id": "F19d35f0cf263d584693",
 		"inactive": false,
 		"legacyFolderID": "Fa582c8b28d1e9847ced7391da0e1f13775c5ea1e67d5bd60dbf17d654a647922",
-		"searchTerms": [],
+		"searchTerms": [
+			"delayjoy 9"
+		],
 		"slug": "delayjoy-9",
 		"title": "dl9",
 		"where": "(chart.data->'tableFolders'->>'dl') = '9'"
@@ -2728,7 +2800,9 @@
 		"id": "F19d35f0cf2673058541",
 		"inactive": false,
 		"legacyFolderID": "F4feae15fe1c3f525edb0f955f392c79ac502ec80219a4271af5b9b1a78cfb00c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia ？"
+		],
 		"slug": "dystopia-uff1f",
 		"title": "dy？",
 		"where": "(chart.data->'tableFolders'->>'dy') = '？'"
@@ -2738,7 +2812,9 @@
 		"id": "F19d35f0cf263a135ba2",
 		"inactive": false,
 		"legacyFolderID": "Faca9f7c3a64e81cb18ab3489c31408541f725a397f9bdecfc47cc41966d40012",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 0"
+		],
 		"slug": "dystopia-0",
 		"title": "dy0",
 		"where": "(chart.data->'tableFolders'->>'dy') = '0'"
@@ -2748,7 +2824,9 @@
 		"id": "F19d35f0cf2608ffab9f",
 		"inactive": false,
 		"legacyFolderID": "Fba6f89c636959478c6f8c8da1090c70f532229a6520c827435e3aa9945c8490b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 1"
+		],
 		"slug": "dystopia-1",
 		"title": "dy1",
 		"where": "(chart.data->'tableFolders'->>'dy') = '1'"
@@ -2758,7 +2836,9 @@
 		"id": "F19d35f0cf261fdf1813",
 		"inactive": false,
 		"legacyFolderID": "Fd2fdecdf1c0574b0f17aedcbefb29ea99ed58a8a693cc3bdc1e3f32500fb27a5",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 2"
+		],
 		"slug": "dystopia-2",
 		"title": "dy2",
 		"where": "(chart.data->'tableFolders'->>'dy') = '2'"
@@ -2768,7 +2848,9 @@
 		"id": "F19d35f0cf2692ea2a3b",
 		"inactive": false,
 		"legacyFolderID": "Fe708c9bb01b971d030b36a27556a204e27fe74a33eba1bdca16fcdc5ada4f992",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 3"
+		],
 		"slug": "dystopia-3",
 		"title": "dy3",
 		"where": "(chart.data->'tableFolders'->>'dy') = '3'"
@@ -2778,7 +2860,9 @@
 		"id": "F19d35f0cf26e100267d",
 		"inactive": false,
 		"legacyFolderID": "F5d62516c32ea5da46c21a2b1aa1c9ad349613cf39fa76113c081cd21baf9cf0a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 4"
+		],
 		"slug": "dystopia-4",
 		"title": "dy4",
 		"where": "(chart.data->'tableFolders'->>'dy') = '4'"
@@ -2788,7 +2872,9 @@
 		"id": "F19d35f0cf266cec282b",
 		"inactive": false,
 		"legacyFolderID": "F4556c9708a752f6f13307fe00549a0bd7f6bdbe6f25d1f72065999e9c116dc3c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 5"
+		],
 		"slug": "dystopia-5",
 		"title": "dy5",
 		"where": "(chart.data->'tableFolders'->>'dy') = '5'"
@@ -2798,7 +2884,9 @@
 		"id": "F19d35f0cf26a7b2bfdf",
 		"inactive": false,
 		"legacyFolderID": "F8ac40f4583b76adfaec22b9c0c5ae20a544ba350d385272d212cf9971a056821",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 6"
+		],
 		"slug": "dystopia-6",
 		"title": "dy6",
 		"where": "(chart.data->'tableFolders'->>'dy') = '6'"
@@ -2808,7 +2896,9 @@
 		"id": "F19d35f0cf26e1f99323",
 		"inactive": false,
 		"legacyFolderID": "Fed65fc214bf9e0256a23d6798c75d2f3f856f40b80c653611cae738026681a28",
-		"searchTerms": [],
+		"searchTerms": [
+			"Dystopia 7"
+		],
 		"slug": "dystopia-7",
 		"title": "dy7",
 		"where": "(chart.data->'tableFolders'->>'dy') = '7'"
@@ -3334,7 +3424,9 @@
 		"id": "F19d35f0cf26580d40ad",
 		"inactive": false,
 		"legacyFolderID": "F95e1c93906b4383747ee1cf3dd497930c8a0a8d4b3f9b0df6aeeb29aa3ab82dc",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 0"
+		],
 		"slug": "exoplanet-0",
 		"title": "fr0",
 		"where": "(chart.data->'tableFolders'->>'fr') = '0'"
@@ -3344,7 +3436,9 @@
 		"id": "F19d35f0cf26edc8d0a4",
 		"inactive": false,
 		"legacyFolderID": "F4c4691b5586369b3fd710c57fef72e3a9142bbca80e12ed21a42e89a2630fbb1",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 1"
+		],
 		"slug": "exoplanet-1",
 		"title": "fr1",
 		"where": "(chart.data->'tableFolders'->>'fr') = '1'"
@@ -3354,7 +3448,9 @@
 		"id": "F19d35f0cf2694b2c49e",
 		"inactive": false,
 		"legacyFolderID": "Fd82d98e194ca42baecd43733b1104849c2505391bd5246870edeba79fef44c18",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 10"
+		],
 		"slug": "exoplanet-10",
 		"title": "fr10",
 		"where": "(chart.data->'tableFolders'->>'fr') = '10'"
@@ -3364,7 +3460,9 @@
 		"id": "F19d35f0cf2679a0dead",
 		"inactive": false,
 		"legacyFolderID": "F3cbda44dbd6b920132f1d708f8a12e574952af3bd0aa87d55a143cb9e797601b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 11"
+		],
 		"slug": "exoplanet-11",
 		"title": "fr11",
 		"where": "(chart.data->'tableFolders'->>'fr') = '11'"
@@ -3374,7 +3472,9 @@
 		"id": "F19d35f0cf26aea829fd",
 		"inactive": false,
 		"legacyFolderID": "Fb6960028c17fe316615f5f9f57f4221bbe857181ff9e4a2580ba035e7aae0404",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 12"
+		],
 		"slug": "exoplanet-12",
 		"title": "fr12",
 		"where": "(chart.data->'tableFolders'->>'fr') = '12'"
@@ -3384,7 +3484,9 @@
 		"id": "F19d35f0cf26bf887900",
 		"inactive": false,
 		"legacyFolderID": "F77088b6f565fa8ddd7ef99bc9f29671551ea5543d159ef9275e38abff812ad21",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 2"
+		],
 		"slug": "exoplanet-2",
 		"title": "fr2",
 		"where": "(chart.data->'tableFolders'->>'fr') = '2'"
@@ -3394,7 +3496,9 @@
 		"id": "F19d35f0cf26c6460d28",
 		"inactive": false,
 		"legacyFolderID": "Fb0cc8a33a6b8ec9b963d295881db7b1ffabc110abb322432b4fd8f663fc0f26a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 3"
+		],
 		"slug": "exoplanet-3",
 		"title": "fr3",
 		"where": "(chart.data->'tableFolders'->>'fr') = '3'"
@@ -3404,7 +3508,9 @@
 		"id": "F19d35f0cf26577d7b30",
 		"inactive": false,
 		"legacyFolderID": "F1216510109aa7fe397fb210c2f121df1b5a69ca8316ba716d2bfdd18afbfc1d7",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 4"
+		],
 		"slug": "exoplanet-4",
 		"title": "fr4",
 		"where": "(chart.data->'tableFolders'->>'fr') = '4'"
@@ -3414,7 +3520,9 @@
 		"id": "F19d35f0cf2651693338",
 		"inactive": false,
 		"legacyFolderID": "F0c2ec5ba6b37a1cf4b6eb1172e88123ccaf39689b1d44159d86b7fca9458a268",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 5"
+		],
 		"slug": "exoplanet-5",
 		"title": "fr5",
 		"where": "(chart.data->'tableFolders'->>'fr') = '5'"
@@ -3424,7 +3532,9 @@
 		"id": "F19d35f0cf26ccb0c875",
 		"inactive": false,
 		"legacyFolderID": "F9ceecdd6a3b5bf43aa0378fd0e52df07c97d3220c628638fc5eba65d9f2a21c2",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 6"
+		],
 		"slug": "exoplanet-6",
 		"title": "fr6",
 		"where": "(chart.data->'tableFolders'->>'fr') = '6'"
@@ -3434,7 +3544,9 @@
 		"id": "F19d35f0cf26bd9480fb",
 		"inactive": false,
 		"legacyFolderID": "F564af57768d6c60a8fcab444b2a1f88f58432a3b9a85a741cb1244212c7acb7a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 7"
+		],
 		"slug": "exoplanet-7",
 		"title": "fr7",
 		"where": "(chart.data->'tableFolders'->>'fr') = '7'"
@@ -3444,7 +3556,9 @@
 		"id": "F19d35f0cf26c19640eb",
 		"inactive": false,
 		"legacyFolderID": "Ffe1c281214fadcfb786d698330bd3a78cbb40ed5a5c6dfe1b09d07d889b444fd",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 8"
+		],
 		"slug": "exoplanet-8",
 		"title": "fr8",
 		"where": "(chart.data->'tableFolders'->>'fr') = '8'"
@@ -3454,7 +3568,9 @@
 		"id": "F19d35f0cf269484745d",
 		"inactive": false,
 		"legacyFolderID": "F681110531867085a17d4eb8f0fad12758beebc875e0f6ecf3c4903198dbe4d9c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Exoplanet 9"
+		],
 		"slug": "exoplanet-9",
 		"title": "fr9",
 		"where": "(chart.data->'tableFolders'->>'fr') = '9'"
@@ -3465,10 +3581,10 @@
 		"inactive": false,
 		"legacyFolderID": "Fd87fd6cae620b851468df1da0cc1b7fd4173f6bc0fe3e1c1a01abedf66a2b1e8",
 		"searchTerms": [
-			"gachimjoy"
+			"gachimijoy"
 		],
-		"slug": "gachimjoy-present",
-		"title": "Gachimjoy",
+		"slug": "gachimijoy-present",
+		"title": "Gachimijoy",
 		"where": "(chart.data->'tableFolders') ? '双'"
 	},
 	{
@@ -4226,7 +4342,9 @@
 		"id": "F19d35f0cf2602577346",
 		"inactive": false,
 		"legacyFolderID": "F9104f4130d83e50920b77845ba592c86a2573754bc13ae4b69d53c1b52f61bdc",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 1"
+		],
 		"slug": "luminous-1",
 		"title": "ln1",
 		"where": "(chart.data->'tableFolders'->>'ln') = '1'"
@@ -4236,7 +4354,9 @@
 		"id": "F19d35f0cf264f65d3cf",
 		"inactive": false,
 		"legacyFolderID": "F0a2636dc18f2a5f15dd574596d9cff51292459a0c830a2f07e1a3d971004703e",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 10"
+		],
 		"slug": "luminous-10",
 		"title": "ln10",
 		"where": "(chart.data->'tableFolders'->>'ln') = '10'"
@@ -4246,7 +4366,9 @@
 		"id": "F19d35f0cf26fbcc7ad1",
 		"inactive": false,
 		"legacyFolderID": "F5e13ad28285603a07c8ad4c31506bfe8213148f7ae663a3acba8aecfbce551c1",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 11"
+		],
 		"slug": "luminous-11",
 		"title": "ln11",
 		"where": "(chart.data->'tableFolders'->>'ln') = '11'"
@@ -4256,7 +4378,9 @@
 		"id": "F19d35f0cf2608bd8d6d",
 		"inactive": false,
 		"legacyFolderID": "F88b3fbc30a433c7a021108b0b4e8f26b3d4d6ccb3dd856d812fad3e9bbdb6ef3",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 12"
+		],
 		"slug": "luminous-12",
 		"title": "ln12",
 		"where": "(chart.data->'tableFolders'->>'ln') = '12'"
@@ -4266,7 +4390,9 @@
 		"id": "F19d35f0cf2675ed3b46",
 		"inactive": false,
 		"legacyFolderID": "F1ae9027cdb55636972ac8a25554d809e442ac4762903349ee4db8a7eb9a38087",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 13"
+		],
 		"slug": "luminous-13",
 		"title": "ln13",
 		"where": "(chart.data->'tableFolders'->>'ln') = '13'"
@@ -4276,7 +4402,9 @@
 		"id": "F19d35f0cf26c10b1a1e",
 		"inactive": false,
 		"legacyFolderID": "F4555369433ee1908e97b88ffe3aefe96ccc8730efae6fa6f3229111023c6bf0d",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 14"
+		],
 		"slug": "luminous-14",
 		"title": "ln14",
 		"where": "(chart.data->'tableFolders'->>'ln') = '14'"
@@ -4286,7 +4414,9 @@
 		"id": "F19d35f0cf26bd7e726e",
 		"inactive": false,
 		"legacyFolderID": "Fc3020e6330d258d8d504c5e828fad97470c1b892a56f9ffde884367348db70b5",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 15"
+		],
 		"slug": "luminous-15",
 		"title": "ln15",
 		"where": "(chart.data->'tableFolders'->>'ln') = '15'"
@@ -4296,7 +4426,9 @@
 		"id": "F19d35f0cf266cf70f17",
 		"inactive": false,
 		"legacyFolderID": "F5781b1a90bf41d5f8d20edfe699d9974421c937a317023fe12dd6cae53ab295c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 16"
+		],
 		"slug": "luminous-16",
 		"title": "ln16",
 		"where": "(chart.data->'tableFolders'->>'ln') = '16'"
@@ -4306,7 +4438,9 @@
 		"id": "F19d35f0cf26edc78ff8",
 		"inactive": false,
 		"legacyFolderID": "F928b71cd75fdd7120a193bd8441cc0185b6372c02742023272adbb73c57b3044",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 17"
+		],
 		"slug": "luminous-17",
 		"title": "ln17",
 		"where": "(chart.data->'tableFolders'->>'ln') = '17'"
@@ -4316,7 +4450,9 @@
 		"id": "F19d35f0cf2610287735",
 		"inactive": false,
 		"legacyFolderID": "F94f987c38b8aa1561f3b06e4ad460d66b4d0c95d5f0e9b0eac47186e21e98359",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 18"
+		],
 		"slug": "luminous-18",
 		"title": "ln18",
 		"where": "(chart.data->'tableFolders'->>'ln') = '18'"
@@ -4326,7 +4462,9 @@
 		"id": "F19d35f0cf2642d3a3e9",
 		"inactive": false,
 		"legacyFolderID": "F437e1cee03eb67317f6585f3d5c4d9033a81664445e7592ac5beadd0ce189953",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 19"
+		],
 		"slug": "luminous-19",
 		"title": "ln19",
 		"where": "(chart.data->'tableFolders'->>'ln') = '19'"
@@ -4336,7 +4474,9 @@
 		"id": "F19d35f0cf2633d78aff",
 		"inactive": false,
 		"legacyFolderID": "F55be4ea91937b7dcc8b62ab454511e81a61b5427088903903a2ab6cb0dac69e0",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 2"
+		],
 		"slug": "luminous-2",
 		"title": "ln2",
 		"where": "(chart.data->'tableFolders'->>'ln') = '2'"
@@ -4346,7 +4486,9 @@
 		"id": "F19d35f0cf265763f035",
 		"inactive": false,
 		"legacyFolderID": "F7164e0b5c29c5dd5fd0e6aba5bdc6fc8d5464380201ab1296056ccf1731df5b9",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 20"
+		],
 		"slug": "luminous-20",
 		"title": "ln20",
 		"where": "(chart.data->'tableFolders'->>'ln') = '20'"
@@ -4356,7 +4498,9 @@
 		"id": "F19d35f0cf26f8651508",
 		"inactive": false,
 		"legacyFolderID": "F12f45ae9f3436449c5c84e56cb848c5deb478e597ec248009af2ed98cf208d04",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 21"
+		],
 		"slug": "luminous-21",
 		"title": "ln21",
 		"where": "(chart.data->'tableFolders'->>'ln') = '21'"
@@ -4366,7 +4510,9 @@
 		"id": "F19d35f0cf26e7baff46",
 		"inactive": false,
 		"legacyFolderID": "F318d604bc4ce6bc64562f247f57641b76c81d307cd49b8078e96c86a48abadac",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 22"
+		],
 		"slug": "luminous-22",
 		"title": "ln22",
 		"where": "(chart.data->'tableFolders'->>'ln') = '22'"
@@ -4376,7 +4522,9 @@
 		"id": "F19d35f0cf2679bd6d7d",
 		"inactive": false,
 		"legacyFolderID": "F4e725ba129b46e79ff589d31433e6439840eabaca47ae6df45e85d29e14ed94b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 23"
+		],
 		"slug": "luminous-23",
 		"title": "ln23",
 		"where": "(chart.data->'tableFolders'->>'ln') = '23'"
@@ -4386,7 +4534,9 @@
 		"id": "F19d35f0cf26a7d6be0a",
 		"inactive": false,
 		"legacyFolderID": "F9b1a242280fb1acf93f5d098b21ace9c3b3e1dbaaa4055b168da1e2c2f113d12",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 24"
+		],
 		"slug": "luminous-24",
 		"title": "ln24",
 		"where": "(chart.data->'tableFolders'->>'ln') = '24'"
@@ -4396,7 +4546,9 @@
 		"id": "F19d35f0cf2693c1e6a7",
 		"inactive": false,
 		"legacyFolderID": "F0890b2dc47d57e23b27cef2afc91427596b2fb7d9a4a5c80322a5416626feaff",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 25"
+		],
 		"slug": "luminous-25",
 		"title": "ln25",
 		"where": "(chart.data->'tableFolders'->>'ln') = '25'"
@@ -4406,7 +4558,9 @@
 		"id": "F19d35f0cf26987ce975",
 		"inactive": false,
 		"legacyFolderID": "F0dbcfafac524a9e62ea5af108df31a77f4a4f4e484c1d386a692e4d06c14eb79",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 26"
+		],
 		"slug": "luminous-26",
 		"title": "ln26",
 		"where": "(chart.data->'tableFolders'->>'ln') = '26'"
@@ -4416,7 +4570,9 @@
 		"id": "F19d35f0cf265fe65f0d",
 		"inactive": false,
 		"legacyFolderID": "Fb5ffe8ad9f862fc4390161593905f60a9d0e7274ebfda92253d9e9c6aab02933",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 3"
+		],
 		"slug": "luminous-3",
 		"title": "ln3",
 		"where": "(chart.data->'tableFolders'->>'ln') = '3'"
@@ -4426,7 +4582,9 @@
 		"id": "F19d35f0cf265c668fd7",
 		"inactive": false,
 		"legacyFolderID": "F493b3f7ed7b923019a849ad8d8502b699547acec58aabe6e07ad876cf525eaae",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 4"
+		],
 		"slug": "luminous-4",
 		"title": "ln4",
 		"where": "(chart.data->'tableFolders'->>'ln') = '4'"
@@ -4436,7 +4594,9 @@
 		"id": "F19d35f0cf267597b7ce",
 		"inactive": false,
 		"legacyFolderID": "F2bc4a12519a037a976fe98e19cd7152f731793774cb5a97d3b8871feb7ba6a2c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 5"
+		],
 		"slug": "luminous-5",
 		"title": "ln5",
 		"where": "(chart.data->'tableFolders'->>'ln') = '5'"
@@ -4446,7 +4606,9 @@
 		"id": "F19d35f0cf2625ad1f2e",
 		"inactive": false,
 		"legacyFolderID": "Fc462deadadfbccb976668adca98efb0f0810c57cd48e77467c2de43d31422bc7",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 6"
+		],
 		"slug": "luminous-6",
 		"title": "ln6",
 		"where": "(chart.data->'tableFolders'->>'ln') = '6'"
@@ -4456,7 +4618,9 @@
 		"id": "F19d35f0cf26cfef1b73",
 		"inactive": false,
 		"legacyFolderID": "Fac4373d114b9a580f5ad5c4dc793ab0f1d13820ffd283151963eed0cdbf6f7bb",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 7"
+		],
 		"slug": "luminous-7",
 		"title": "ln7",
 		"where": "(chart.data->'tableFolders'->>'ln') = '7'"
@@ -4466,7 +4630,9 @@
 		"id": "F19d35f0cf265713dbc4",
 		"inactive": false,
 		"legacyFolderID": "Fc3fd2543c09870587b4daf8797ae0aae0a26727237a1bbfd3abbd2a6df12abdf",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 8"
+		],
 		"slug": "luminous-8",
 		"title": "ln8",
 		"where": "(chart.data->'tableFolders'->>'ln') = '8'"
@@ -4476,7 +4642,9 @@
 		"id": "F19d35f0cf261b46016a",
 		"inactive": false,
 		"legacyFolderID": "F060cecf9aeb09da6bcbce43f41517f9e1ad7f2b5cf9b5e9f220ea4edb1aca9c6",
-		"searchTerms": [],
+		"searchTerms": [
+			"Luminous 9"
+		],
 		"slug": "luminous-9",
 		"title": "ln9",
 		"where": "(chart.data->'tableFolders'->>'ln') = '9'"
@@ -4538,7 +4706,9 @@
 		"id": "F19d35f0cf263cb362a9",
 		"inactive": false,
 		"legacyFolderID": "F078c8fbb335a2d610a2d80f0a2c551e37bf922764fe2ff33103770bcde058f3f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble -1"
+		],
 		"slug": "scramble-dash-1",
 		"title": "SB-1",
 		"where": "(chart.data->'tableFolders'->>'SB') = '-1'"
@@ -4548,7 +4718,9 @@
 		"id": "F19d35f0cf26e5aab7ea",
 		"inactive": false,
 		"legacyFolderID": "Feae6078111916ad5037c118c44579dae59887faa3eb9192aa1c4d727490830dd",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble !i"
+		],
 		"slug": "scramble-excl-i",
 		"title": "SB!i",
 		"where": "(chart.data->'tableFolders'->>'SB') = '!i'"
@@ -4558,7 +4730,9 @@
 		"id": "F19d35f0cf2636f32175",
 		"inactive": false,
 		"legacyFolderID": "F18e2b787c802bf8714a83bf25ae386f27be7bd519ad507e7d913e7d9151779cd",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 0"
+		],
 		"slug": "scramble-0",
 		"title": "SB0",
 		"where": "(chart.data->'tableFolders'->>'SB') = '0'"
@@ -4568,7 +4742,9 @@
 		"id": "F19d35f0cf26fd64c6f6",
 		"inactive": false,
 		"legacyFolderID": "Ff2679db33d051392b6df22400b916d95df84495e809554dabdb4e999db04c162",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 1"
+		],
 		"slug": "scramble-1",
 		"title": "SB1",
 		"where": "(chart.data->'tableFolders'->>'SB') = '1'"
@@ -4578,7 +4754,9 @@
 		"id": "F19d35f0cf263b372f21",
 		"inactive": false,
 		"legacyFolderID": "F62c6acd92079a90f08457f98eceeee3f48b9a5a12a374162aab2c9460bf94790",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 10"
+		],
 		"slug": "scramble-10",
 		"title": "SB10",
 		"where": "(chart.data->'tableFolders'->>'SB') = '10'"
@@ -4588,7 +4766,9 @@
 		"id": "F19d35f0cf262c06edad",
 		"inactive": false,
 		"legacyFolderID": "Fec3557af11ff5a66b6b5c7a9ff717fc836fbcc9fcc3d2779887b8ffeba08e02f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 11"
+		],
 		"slug": "scramble-11",
 		"title": "SB11",
 		"where": "(chart.data->'tableFolders'->>'SB') = '11'"
@@ -4598,7 +4778,9 @@
 		"id": "F19d35f0cf267c694619",
 		"inactive": false,
 		"legacyFolderID": "F12893ed39be532545eb42f5127578da3ac816650373292ec11d2e1a1abc79945",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 12"
+		],
 		"slug": "scramble-12",
 		"title": "SB12",
 		"where": "(chart.data->'tableFolders'->>'SB') = '12'"
@@ -4608,7 +4790,9 @@
 		"id": "F19d35f0cf26e79cf559",
 		"inactive": false,
 		"legacyFolderID": "Fccf27ca56017a7e048bbddacecd2b0f0e8ba4853d6605efb5dee7196b4520a3d",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 2"
+		],
 		"slug": "scramble-2",
 		"title": "SB2",
 		"where": "(chart.data->'tableFolders'->>'SB') = '2'"
@@ -4618,7 +4802,9 @@
 		"id": "F19d35f0cf267896d81b",
 		"inactive": false,
 		"legacyFolderID": "Facee02cb46f9c8b0c4772110bc51653fe7a4497aa638e3a0ab0816758620de7e",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 3"
+		],
 		"slug": "scramble-3",
 		"title": "SB3",
 		"where": "(chart.data->'tableFolders'->>'SB') = '3'"
@@ -4628,7 +4814,9 @@
 		"id": "F19d35f0cf2626d2be93",
 		"inactive": false,
 		"legacyFolderID": "F9c19419eee83b3b7d2ff133ccc96d198493823e16658cfe1cd400651efb6d845",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 4"
+		],
 		"slug": "scramble-4",
 		"title": "SB4",
 		"where": "(chart.data->'tableFolders'->>'SB') = '4'"
@@ -4638,7 +4826,9 @@
 		"id": "F19d35f0cf267161e906",
 		"inactive": false,
 		"legacyFolderID": "F364eddb3541d8a81aacafd7ed39b1bb29f9f5e95c89c641753acfda055ecc11a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 5"
+		],
 		"slug": "scramble-5",
 		"title": "SB5",
 		"where": "(chart.data->'tableFolders'->>'SB') = '5'"
@@ -4648,7 +4838,9 @@
 		"id": "F19d35f0cf26e8f13ce5",
 		"inactive": false,
 		"legacyFolderID": "F02807f1c8c0f57635a94642465345f5784146c7acb0141ff41ef6bde2ad254f3",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 6"
+		],
 		"slug": "scramble-6",
 		"title": "SB6",
 		"where": "(chart.data->'tableFolders'->>'SB') = '6'"
@@ -4658,7 +4850,9 @@
 		"id": "F19d35f0cf26209272f6",
 		"inactive": false,
 		"legacyFolderID": "Fb4aac43ae442e2d43ca3a1e4f9961c7415b82d80bd86e8738d2dbee344ad3800",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 7"
+		],
 		"slug": "scramble-7",
 		"title": "SB7",
 		"where": "(chart.data->'tableFolders'->>'SB') = '7'"
@@ -4668,7 +4862,9 @@
 		"id": "F19d35f0cf26693c66f7",
 		"inactive": false,
 		"legacyFolderID": "F844cc3d9adcd5bc687d8515a1bf0ff5da7785d45caecb96a43037b540affa70a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 8"
+		],
 		"slug": "scramble-8",
 		"title": "SB8",
 		"where": "(chart.data->'tableFolders'->>'SB') = '8'"
@@ -4678,7 +4874,9 @@
 		"id": "F19d35f0cf26a9b1c18c",
 		"inactive": false,
 		"legacyFolderID": "F4cd8960917057b360eebd413d1df7e63a1c181262694f51f5dc3366dded9f10f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Scramble 9"
+		],
 		"slug": "scramble-9",
 		"title": "SB9",
 		"where": "(chart.data->'tableFolders'->>'SB') = '9'"
@@ -4866,7 +5064,9 @@
 		"id": "F19d35f0cf26a6fdaae0",
 		"inactive": false,
 		"legacyFolderID": "Fc2ac8a9e56455c7502944fc193575dbed1a885708beb0bc598525a96d5d8374f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 0"
+		],
 		"slug": "supernova-0",
 		"title": "sn0",
 		"where": "(chart.data->'tableFolders'->>'sn') = '0'"
@@ -4876,7 +5076,9 @@
 		"id": "F19d35f0cf26ec96cec7",
 		"inactive": false,
 		"legacyFolderID": "Fc1a0e192dcb76e6ffcf2768339a507724c32ea5eea5ec8ed59d0861bef075064",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 1"
+		],
 		"slug": "supernova-1",
 		"title": "sn1",
 		"where": "(chart.data->'tableFolders'->>'sn') = '1'"
@@ -4886,7 +5088,9 @@
 		"id": "F19d35f0cf26cb736199",
 		"inactive": false,
 		"legacyFolderID": "F66770e27c119af000db4dc73e0f3a9311a96d9be2f32a128db159e60eba1ae71",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 10"
+		],
 		"slug": "supernova-10",
 		"title": "sn10",
 		"where": "(chart.data->'tableFolders'->>'sn') = '10'"
@@ -4896,7 +5100,9 @@
 		"id": "F19d35f0cf267b024d9a",
 		"inactive": false,
 		"legacyFolderID": "F67a277f384072f10d4e6c84d87fe397597ce1ee62e193bdcc3e5642867a67ec0",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 11"
+		],
 		"slug": "supernova-11",
 		"title": "sn11",
 		"where": "(chart.data->'tableFolders'->>'sn') = '11'"
@@ -4916,7 +5122,9 @@
 		"id": "F19d35f0cf266bcdf85d",
 		"inactive": false,
 		"legacyFolderID": "F665b0fb22bfb083e7dd102d0962e3ea00a9a0b062d946926b73eeb4368d79c80",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 2"
+		],
 		"slug": "supernova-2",
 		"title": "sn2",
 		"where": "(chart.data->'tableFolders'->>'sn') = '2'"
@@ -4926,7 +5134,9 @@
 		"id": "F19d35f0cf2620b408d0",
 		"inactive": false,
 		"legacyFolderID": "F4d7bf8096511c436e9b4fb0f663d14e2b938bbe2cffad3ea8f40fdd7e1d65f1b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 3"
+		],
 		"slug": "supernova-3",
 		"title": "sn3",
 		"where": "(chart.data->'tableFolders'->>'sn') = '3'"
@@ -4936,7 +5146,9 @@
 		"id": "F19d35f0cf26bdba98cc",
 		"inactive": false,
 		"legacyFolderID": "Feb86a857395601a1d27f84d1578aeceef74c4e83c8fd5f24ff1b248945a64a10",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 4"
+		],
 		"slug": "supernova-4",
 		"title": "sn4",
 		"where": "(chart.data->'tableFolders'->>'sn') = '4'"
@@ -4946,7 +5158,9 @@
 		"id": "F19d35f0cf26fd3995f8",
 		"inactive": false,
 		"legacyFolderID": "F1bdfb104793d2cf0a4d8f7462243ea665f701db9f4cc2e953b919692c875187b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 5"
+		],
 		"slug": "supernova-5",
 		"title": "sn5",
 		"where": "(chart.data->'tableFolders'->>'sn') = '5'"
@@ -4956,7 +5170,9 @@
 		"id": "F19d35f0cf260fe198ae",
 		"inactive": false,
 		"legacyFolderID": "F514f91feb7306b81bcdf89d05b23bd97215a05e9220051aa0e8980c13a8d1c52",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 6"
+		],
 		"slug": "supernova-6",
 		"title": "sn6",
 		"where": "(chart.data->'tableFolders'->>'sn') = '6'"
@@ -4966,7 +5182,9 @@
 		"id": "F19d35f0cf268ca8d552",
 		"inactive": false,
 		"legacyFolderID": "F3d3efbb41eb7395c62f8fe5de1513acf5c7f83316b71a4458629449e4a43aac2",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 7"
+		],
 		"slug": "supernova-7",
 		"title": "sn7",
 		"where": "(chart.data->'tableFolders'->>'sn') = '7'"
@@ -4976,7 +5194,9 @@
 		"id": "F19d35f0cf26c35d81b4",
 		"inactive": false,
 		"legacyFolderID": "F179d2df88d5677ce3c2a3ec3ad97c5660fd6505d296507feed2ee1aeaf22f408",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 8"
+		],
 		"slug": "supernova-8",
 		"title": "sn8",
 		"where": "(chart.data->'tableFolders'->>'sn') = '8'"
@@ -4986,7 +5206,9 @@
 		"id": "F19d35f0cf26a96d10b5",
 		"inactive": false,
 		"legacyFolderID": "F964275ecd90ebda1fdfc7c7e66243078c13f81908f1257a1418719bb6c410db2",
-		"searchTerms": [],
+		"searchTerms": [
+			"Supernova 9"
+		],
 		"slug": "supernova-9",
 		"title": "sn9",
 		"where": "(chart.data->'tableFolders'->>'sn') = '9'"
@@ -4996,7 +5218,9 @@
 		"id": "F19d35f0cf26aca49a22",
 		"inactive": false,
 		"legacyFolderID": "F90018c2ea858993e4a395fa4a86d687c052390a50b97c516cf37d2b5c9969cd4",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 0"
+		],
 		"slug": "solar-0",
 		"title": "so0",
 		"where": "(chart.data->'tableFolders'->>'so') = '0'"
@@ -5006,7 +5230,9 @@
 		"id": "F19d35f0cf2658b6aaea",
 		"inactive": false,
 		"legacyFolderID": "F3ae364912dadd34e419f75b41cc8523e83645b6b0074fda8b84f4b3472b6e324",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 1"
+		],
 		"slug": "solar-1",
 		"title": "so1",
 		"where": "(chart.data->'tableFolders'->>'so') = '1'"
@@ -5016,7 +5242,9 @@
 		"id": "F19d35f0cf2607d63128",
 		"inactive": false,
 		"legacyFolderID": "F0d9219bcdfbc9e47a00c519ce3613a14823c4ad5722839d5970d178f78e1921f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 10"
+		],
 		"slug": "solar-10",
 		"title": "so10",
 		"where": "(chart.data->'tableFolders'->>'so') = '10'"
@@ -5026,7 +5254,9 @@
 		"id": "F19d35f0cf26cdd02c41",
 		"inactive": false,
 		"legacyFolderID": "F6f93be9a9100aabcb420b14b49ea607f22fe9ead7105b0049ca8117a695aa6ad",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 11"
+		],
 		"slug": "solar-11",
 		"title": "so11",
 		"where": "(chart.data->'tableFolders'->>'so') = '11'"
@@ -5036,7 +5266,9 @@
 		"id": "F19d35f0cf268e6435ab",
 		"inactive": false,
 		"legacyFolderID": "F569a5ef67ce75df8d232a80feb43923e063c9933da947744fe50923a38af327f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 12"
+		],
 		"slug": "solar-12",
 		"title": "so12",
 		"where": "(chart.data->'tableFolders'->>'so') = '12'"
@@ -5046,7 +5278,9 @@
 		"id": "F19d35f0cf2633320d02",
 		"inactive": false,
 		"legacyFolderID": "Fdecb12edc6b325f53bebb8851a3c4eb0ca53327fb656b868156c7f2dc3a842f2",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 2"
+		],
 		"slug": "solar-2",
 		"title": "so2",
 		"where": "(chart.data->'tableFolders'->>'so') = '2'"
@@ -5056,7 +5290,9 @@
 		"id": "F19d35f0cf26d15ef9e8",
 		"inactive": false,
 		"legacyFolderID": "Fe375353ab7cecd5461e8c0e9e9f34522f9e1d0d75cb83cfbcbc5c1da252d7017",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 3"
+		],
 		"slug": "solar-3",
 		"title": "so3",
 		"where": "(chart.data->'tableFolders'->>'so') = '3'"
@@ -5066,7 +5302,9 @@
 		"id": "F19d35f0cf26a4b14dcc",
 		"inactive": false,
 		"legacyFolderID": "F41f85a95151aa72239cf2196c5baeadc693b6f4d5c227ec1f96e0f6572fb3cdc",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 4"
+		],
 		"slug": "solar-4",
 		"title": "so4",
 		"where": "(chart.data->'tableFolders'->>'so') = '4'"
@@ -5076,7 +5314,9 @@
 		"id": "F19d35f0cf26bc8789e8",
 		"inactive": false,
 		"legacyFolderID": "Fabb672bf47e8dba1473308c91cf94bfdb374fde81bd9eff64ab54b8a30e28963",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 5"
+		],
 		"slug": "solar-5",
 		"title": "so5",
 		"where": "(chart.data->'tableFolders'->>'so') = '5'"
@@ -5086,7 +5326,9 @@
 		"id": "F19d35f0cf26164762e3",
 		"inactive": false,
 		"legacyFolderID": "Fd6d7e8958d4f385490b12844c23a999a42cf0b87dc5cad487e52aa7f53f9b946",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 6"
+		],
 		"slug": "solar-6",
 		"title": "so6",
 		"where": "(chart.data->'tableFolders'->>'so') = '6'"
@@ -5096,7 +5338,9 @@
 		"id": "F19d35f0cf26a1902252",
 		"inactive": false,
 		"legacyFolderID": "F70aa698b7282ae39d87863b80ae96bc7172df79d68fe8611f1de09c47ec574ff",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 7"
+		],
 		"slug": "solar-7",
 		"title": "so7",
 		"where": "(chart.data->'tableFolders'->>'so') = '7'"
@@ -5106,7 +5350,9 @@
 		"id": "F19d35f0cf26bc5a741f",
 		"inactive": false,
 		"legacyFolderID": "F8a247853ecc1deb3a3d858a4e4cc30fc8500eb47c16bc453c2d7430ee1c85f3f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 8"
+		],
 		"slug": "solar-8",
 		"title": "so8",
 		"where": "(chart.data->'tableFolders'->>'so') = '8'"
@@ -5116,7 +5362,9 @@
 		"id": "F19d35f0cf26b6aa4e1f",
 		"inactive": false,
 		"legacyFolderID": "F200ede1e5a592cfdd4dfee37f49d902e87404c0db5fef6e726081315c2ed2ad8",
-		"searchTerms": [],
+		"searchTerms": [
+			"Solar 9"
+		],
 		"slug": "solar-9",
 		"title": "so9",
 		"where": "(chart.data->'tableFolders'->>'so') = '9'"
@@ -5532,7 +5780,9 @@
 		"id": "F19d35f0cf26340b30ba",
 		"inactive": false,
 		"legacyFolderID": "Fa19c8f49da25cd984fc90b9c8ced846dd7087ee4eee023302619c02b9ed038bf",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 0"
+		],
 		"slug": "armshougakkou-0",
 		"title": "Ude0",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '0'"
@@ -5542,7 +5792,9 @@
 		"id": "F19d35f0cf26551399dc",
 		"inactive": false,
 		"legacyFolderID": "Fd10c8dfa9ffb5fe7c5a9c2158c21680e72ddcfa4559c038ad9bef4f493cb6d5a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 1"
+		],
 		"slug": "armshougakkou-1",
 		"title": "Ude1",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '1'"
@@ -5552,7 +5804,9 @@
 		"id": "F19d35f0cf2669180c6a",
 		"inactive": false,
 		"legacyFolderID": "F0e1cc016f8b750b3722bb5df6d04d8cd2726d7d72bcc6b7ab8d3e5171d95cc36",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 10"
+		],
 		"slug": "armshougakkou-10",
 		"title": "Ude10",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '10'"
@@ -5562,7 +5816,9 @@
 		"id": "F19d35f0cf263fba20d7",
 		"inactive": false,
 		"legacyFolderID": "F630da8b4f1c304483a48648384a69bdf150b4671592b58fa0d63b8c1f2fba209",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 11"
+		],
 		"slug": "armshougakkou-11",
 		"title": "Ude11",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '11'"
@@ -5572,7 +5828,9 @@
 		"id": "F19d35f0cf26424ac6fc",
 		"inactive": false,
 		"legacyFolderID": "Fa569cec329a1b377153529e33219dc349dd23ad7dc7838e05f8947ae8f6d4f1f",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 12"
+		],
 		"slug": "armshougakkou-12",
 		"title": "Ude12",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '12'"
@@ -5582,7 +5840,9 @@
 		"id": "F19d35f0cf266ac7f371",
 		"inactive": false,
 		"legacyFolderID": "Fadc6e5213942fbec28020e75c1185dc6d9ea830a996a74b1fda94a14124d1849",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 2"
+		],
 		"slug": "armshougakkou-2",
 		"title": "Ude2",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '2'"
@@ -5592,7 +5852,9 @@
 		"id": "F19d35f0cf267d02b705",
 		"inactive": false,
 		"legacyFolderID": "Facef941687d59b487f927f98b985c498b81d3800c510284fbbf4284c7906678a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 3"
+		],
 		"slug": "armshougakkou-3",
 		"title": "Ude3",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '3'"
@@ -5602,7 +5864,9 @@
 		"id": "F19d35f0cf26506c1bad",
 		"inactive": false,
 		"legacyFolderID": "F224f57c953c30ba6e57842daff4f969c7819dc7d4a3b27e5aca1080573228d88",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 4"
+		],
 		"slug": "armshougakkou-4",
 		"title": "Ude4",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '4'"
@@ -5612,7 +5876,9 @@
 		"id": "F19d35f0cf26c9a14a8e",
 		"inactive": false,
 		"legacyFolderID": "Fca0412781e575d596972704a92ea0020efbd6372a88b3cdac92b4f8af5d3947b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 5"
+		],
 		"slug": "armshougakkou-5",
 		"title": "Ude5",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '5'"
@@ -5622,7 +5888,9 @@
 		"id": "F19d35f0cf2614d6e869",
 		"inactive": false,
 		"legacyFolderID": "F623b9db1c661e7a5f39578412a82909337dd9736b8c444b27362bc9ceed87384",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 6"
+		],
 		"slug": "armshougakkou-6",
 		"title": "Ude6",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '6'"
@@ -5632,7 +5900,9 @@
 		"id": "F19d35f0cf26cb06d429",
 		"inactive": false,
 		"legacyFolderID": "F4f75723af4737bf139d547898fe81a53c3a841d0a4ad2e8fd908c2e6f8877693",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 7"
+		],
 		"slug": "armshougakkou-7",
 		"title": "Ude7",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '7'"
@@ -5642,7 +5912,9 @@
 		"id": "F19d35f0cf265256cca9",
 		"inactive": false,
 		"legacyFolderID": "F436a1a97882fc38996c64917a883d74dac5d4a5f7c9378752c2d43c5c58ce6f8",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 8"
+		],
 		"slug": "armshougakkou-8",
 		"title": "Ude8",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '8'"
@@ -5652,7 +5924,9 @@
 		"id": "F19d35f0cf26fff01eba",
 		"inactive": false,
 		"legacyFolderID": "F5f402055c27b371780b42a9a3972cec1c1ec5474f21fcc50f7badd21700a6b54",
-		"searchTerms": [],
+		"searchTerms": [
+			"Arm Shougakkou 9"
+		],
 		"slug": "armshougakkou-9",
 		"title": "Ude9",
 		"where": "(chart.data->'tableFolders'->>'Ude') = '9'"
@@ -5830,7 +6104,9 @@
 		"id": "F19e3343c38d7a499b0f",
 		"inactive": false,
 		"legacyFolderID": "F2024dfa1f989b1fb70c620f766e12c8c8b7893e4f5d90a408f3863e112cc6e76",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 0"
+		],
 		"slug": "cssl-0",
 		"title": "乱打0",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '0'"
@@ -5840,7 +6116,9 @@
 		"id": "F19e3343c38dbf0335cb",
 		"inactive": false,
 		"legacyFolderID": "F8570287bef888ffc6aec50d0d5bf48be19d46835969df2729c6f6f2c0c3fb16d",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 1"
+		],
 		"slug": "cssl-1",
 		"title": "乱打1",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '1'"
@@ -5850,7 +6128,9 @@
 		"id": "F19e3343c38dd3c063d9",
 		"inactive": false,
 		"legacyFolderID": "Fe448c6f719b2a2d2815851f050f725b9a7b92326f74fe5ae9af6d621f87638a7",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 10"
+		],
 		"slug": "cssl-10",
 		"title": "乱打10",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '10'"
@@ -5860,7 +6140,9 @@
 		"id": "F19e3343c38dea0c104f",
 		"inactive": false,
 		"legacyFolderID": "F647aee6dd33d4187c5c485afdc341f1bc02d82a8bebea533b6c2fda483676cba",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 11"
+		],
 		"slug": "cssl-11",
 		"title": "乱打11",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '11'"
@@ -5870,7 +6152,9 @@
 		"id": "F19e3343c38dd306b687",
 		"inactive": false,
 		"legacyFolderID": "F4c4fb43dcd8f5aeba532ce8d3fc06da244fbd40174824950697e2b9f97ae94a3",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 12"
+		],
 		"slug": "cssl-12",
 		"title": "乱打12",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '12'"
@@ -5880,7 +6164,9 @@
 		"id": "F19e3343c38d9d7f69a5",
 		"inactive": false,
 		"legacyFolderID": "F86d70f1f19c6086ba795796e899b8baeea3bb1e6f538b6aa2aef7bcc4951bd17",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 2"
+		],
 		"slug": "cssl-2",
 		"title": "乱打2",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '2'"
@@ -5890,7 +6176,9 @@
 		"id": "F19e3343c38db0063ea1",
 		"inactive": false,
 		"legacyFolderID": "Fca514d2931d76607b3dd92bbd5692eecfd7b585d994fa29788d38e50ff918f55",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 3"
+		],
 		"slug": "cssl-3",
 		"title": "乱打3",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '3'"
@@ -5900,7 +6188,9 @@
 		"id": "F19e3343c38d0c21505d",
 		"inactive": false,
 		"legacyFolderID": "F60b112da4e6d3e429db25c47c18979f33f80c811f66894fba4c9d83c9acb2df3",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 4"
+		],
 		"slug": "cssl-4",
 		"title": "乱打4",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '4'"
@@ -5910,7 +6200,9 @@
 		"id": "F19e3343c38d0b762791",
 		"inactive": false,
 		"legacyFolderID": "F1e84df333d23386ee98052492db3851d862be191dcf9322f734f0ad9e1050297",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 5"
+		],
 		"slug": "cssl-5",
 		"title": "乱打5",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '5'"
@@ -5920,7 +6212,9 @@
 		"id": "F19e3343c38d294f092c",
 		"inactive": false,
 		"legacyFolderID": "F43431ee4a724c9d8cf0de4105747c2d38d16b55628ab108aae2726426347dba3",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 6"
+		],
 		"slug": "cssl-6",
 		"title": "乱打6",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '6'"
@@ -5930,7 +6224,9 @@
 		"id": "F19e3343c38d93bc3ccd",
 		"inactive": false,
 		"legacyFolderID": "F550777d5bc1c662a1bcd0f10e89433f4aba48c2224f149688499a640b93a7272",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 7"
+		],
 		"slug": "cssl-7",
 		"title": "乱打7",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '7'"
@@ -5940,7 +6236,9 @@
 		"id": "F19e3343c38d9adb57ad",
 		"inactive": false,
 		"legacyFolderID": "F4f764821cb9a43ab8d56ffea47fb060d28c33ee006243724491b7b7b5116d098",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 8"
+		],
 		"slug": "cssl-8",
 		"title": "乱打8",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '8'"
@@ -5950,98 +6248,118 @@
 		"id": "F19e3343c38dd0605c65",
 		"inactive": false,
 		"legacyFolderID": "F07575a59a43fb11ae26dfdd97ac3ea982a289d5b8c95ff174faa93425ea93183",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (sl) 9"
+		],
 		"slug": "cssl-9",
 		"title": "乱打9",
 		"where": "(chart.data->'tableFolders'->>'乱打') = '9'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf26eee6cc2e",
+		"id": "F19e9d2d4068edc620dc",
 		"inactive": false,
-		"legacyFolderID": "Fa746812d023b6cbba5daf77723a06f1b47b7d7be5d4b3db96fa0f81e4b790cdb",
-		"searchTerms": [],
-		"slug": "gachimjoy-0",
+		"legacyFolderID": "Faf299cdf2d774e2fc9b7ff0787ffded8ce0025a80e0093f52b6609eaeb4ac1d8",
+		"searchTerms": [
+			"Gachimijoy 0"
+		],
+		"slug": "gachimijoy-0",
 		"title": "双0",
 		"where": "(chart.data->'tableFolders'->>'双') = '0'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf2680ee9e9b",
+		"id": "F19e9d2d406934f892e9",
 		"inactive": false,
-		"legacyFolderID": "F37314803cacf7c7ee3f4f96079a07565ddefabf0ea966ed8c26965e099db50b9",
-		"searchTerms": [],
-		"slug": "gachimjoy-1",
+		"legacyFolderID": "F65240dcf39933b761f282b5b4037580ab44716e2acd7a23aea5cc796b6848462",
+		"searchTerms": [
+			"Gachimijoy 1"
+		],
+		"slug": "gachimijoy-1",
 		"title": "双1",
 		"where": "(chart.data->'tableFolders'->>'双') = '1'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf2686917094",
+		"id": "F19e9d2d4069c9e183d5",
 		"inactive": false,
-		"legacyFolderID": "Feb82b0fa59c843ce7e91c6ad5954bd22e73ce24689a716e0acc57f8c69eb2b3b",
-		"searchTerms": [],
-		"slug": "gachimjoy-2",
+		"legacyFolderID": "F2bfdd370af18d52df70fd815a6cf66ea4aec0ae9b2565bd3065e0af96eba9b1f",
+		"searchTerms": [
+			"Gachimijoy 2"
+		],
+		"slug": "gachimijoy-2",
 		"title": "双2",
 		"where": "(chart.data->'tableFolders'->>'双') = '2'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf2641525c6f",
+		"id": "F19e9d2d4069e76379e2",
 		"inactive": false,
-		"legacyFolderID": "Ff1c99bead00d7aab743022a37043f9b961d2eaa662a3f0b64000f09f9e7e0b20",
-		"searchTerms": [],
-		"slug": "gachimjoy-3",
+		"legacyFolderID": "Ff177dc6add58eec77771987fcd083a41e0387bc32558d6985214a3360584d500",
+		"searchTerms": [
+			"Gachimijoy 3"
+		],
+		"slug": "gachimijoy-3",
 		"title": "双3",
 		"where": "(chart.data->'tableFolders'->>'双') = '3'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf2662049003",
+		"id": "F19e9d2d406948034982",
 		"inactive": false,
-		"legacyFolderID": "F76e24e985a4b2de782bdc99649ab7167e1b986f0d11655754837d8f6d6351cc5",
-		"searchTerms": [],
-		"slug": "gachimjoy-4",
+		"legacyFolderID": "F93244924dbc9e7086229dadc8e3b42a5c1e606cbed358fef653bec02a2d95788",
+		"searchTerms": [
+			"Gachimijoy 4"
+		],
+		"slug": "gachimijoy-4",
 		"title": "双4",
 		"where": "(chart.data->'tableFolders'->>'双') = '4'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf26e170ae8e",
+		"id": "F19e9d2d4069694fe50f",
 		"inactive": false,
-		"legacyFolderID": "F53f9921133229a0c978777f0f527650e23819e6cba8dd073c5d704448b6785e0",
-		"searchTerms": [],
-		"slug": "gachimjoy-5",
+		"legacyFolderID": "Fbac45b6f30bce3b58bebd8b2dade690af6e3adac6fb4fc7af4061ec522bbae06",
+		"searchTerms": [
+			"Gachimijoy 5"
+		],
+		"slug": "gachimijoy-5",
 		"title": "双5",
 		"where": "(chart.data->'tableFolders'->>'双') = '5'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf26c8ca407c",
+		"id": "F19e9d2d406988f28fb1",
 		"inactive": false,
-		"legacyFolderID": "Fb1fd3357726d25373181d03b582f1a950ceb4cb7263b0390444b2269aec3e4cb",
-		"searchTerms": [],
-		"slug": "gachimjoy-6",
+		"legacyFolderID": "Fafa1440436690b53ff862727066cf001bc48ed94aa3f9140410ac0aa2972b7fd",
+		"searchTerms": [
+			"Gachimijoy 6"
+		],
+		"slug": "gachimijoy-6",
 		"title": "双6",
 		"where": "(chart.data->'tableFolders'->>'双') = '6'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf26781dd825",
+		"id": "F19e9d2d4069924adcfe",
 		"inactive": false,
-		"legacyFolderID": "Fe849b3ebe1dfc41ea8ed2c26b6325dde3151ecba2b3472c9b9cfc58def3adfb2",
-		"searchTerms": [],
-		"slug": "gachimjoy-7",
+		"legacyFolderID": "Ff81745d8cf8933887e1d1942116762f62fe12f0c98e2aa023cea0914eb8f2115",
+		"searchTerms": [
+			"Gachimijoy 7"
+		],
+		"slug": "gachimijoy-7",
 		"title": "双7",
 		"where": "(chart.data->'tableFolders'->>'双') = '7'"
 	},
 	{
 		"game": "bms-7k",
-		"id": "F19d35f0cf26b5d6a87b",
+		"id": "F19e9d2d40691c6a3b2a",
 		"inactive": false,
-		"legacyFolderID": "F4b7802d608038b56177417fdb36b70aef4908f0935c1d9e9ab7e4613d76150b5",
-		"searchTerms": [],
-		"slug": "gachimjoy-8",
+		"legacyFolderID": "Ffa863e16d0f659e5fe2f6efac0016cd7831c2a1218c379bbb98833a80712f9fc",
+		"searchTerms": [
+			"Gachimijoy 8"
+		],
+		"slug": "gachimijoy-8",
 		"title": "双8",
 		"where": "(chart.data->'tableFolders'->>'双') = '8'"
 	},
@@ -6050,7 +6368,9 @@
 		"id": "F19e3343c38d1f2c3fbe",
 		"inactive": false,
 		"legacyFolderID": "F5ca2f787d0039642af83f84451eae2ed1b283a4438a19b224f6af7ae3dfc7f1a",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 0"
+		],
 		"slug": "csst-0",
 		"title": "重発狂0",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '0'"
@@ -6060,7 +6380,9 @@
 		"id": "F19e3343c38dba19b4fb",
 		"inactive": false,
 		"legacyFolderID": "Fb35a8721c993c27832484c90e4590641cfc41a0ee030aea05e057ed0469c0953",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 1"
+		],
 		"slug": "csst-1",
 		"title": "重発狂1",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '1'"
@@ -6070,7 +6392,9 @@
 		"id": "F19e3343c38d9d059b30",
 		"inactive": false,
 		"legacyFolderID": "F79ec311d178509f1f0e8089cbac8ef74119fdc3cc349fb23bbb06a85918ce64c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 10"
+		],
 		"slug": "csst-10",
 		"title": "重発狂10",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '10'"
@@ -6080,7 +6404,9 @@
 		"id": "F19e3343c38da462e9e2",
 		"inactive": false,
 		"legacyFolderID": "F9e8a24a8f3a1b9430c50bf2662e4a2c9c20ff416d6930f769569a2806b00d05b",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 11"
+		],
 		"slug": "csst-11",
 		"title": "重発狂11",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '11'"
@@ -6090,7 +6416,9 @@
 		"id": "F19e3343c38df916a1d2",
 		"inactive": false,
 		"legacyFolderID": "Fa9fe48fae0b9adbc3ac5ee6a7bbdf7ddd3dd8bae25f9abafdcbdb3ac8ee50de9",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 12"
+		],
 		"slug": "csst-12",
 		"title": "重発狂12",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '12'"
@@ -6100,7 +6428,9 @@
 		"id": "F19e3343c38de539216e",
 		"inactive": false,
 		"legacyFolderID": "Ffa89eb67cb227878e60432f79b2c5a8020f092c2d4e81b5ac4b7a83680533388",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 2"
+		],
 		"slug": "csst-2",
 		"title": "重発狂2",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '2'"
@@ -6110,7 +6440,9 @@
 		"id": "F19e3343c38d7705fe05",
 		"inactive": false,
 		"legacyFolderID": "Ff15c799d1a70728f7aa0802d67e7a46f7c49c255df9337ce4c948d11ac7e52e8",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 3"
+		],
 		"slug": "csst-3",
 		"title": "重発狂3",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '3'"
@@ -6120,7 +6452,9 @@
 		"id": "F19e3343c38d03f85eb9",
 		"inactive": false,
 		"legacyFolderID": "F424e146103a54ccf5806a435e045a5ff8dcac7f07c59343896c8b5801a52fd16",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 4"
+		],
 		"slug": "csst-4",
 		"title": "重発狂4",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '4'"
@@ -6130,7 +6464,9 @@
 		"id": "F19e3343c38ddbc719d2",
 		"inactive": false,
 		"legacyFolderID": "F91534a5be4aa723a26666d28ae54a0a2411b5b4960da6193457fe43295ba4e73",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 5"
+		],
 		"slug": "csst-5",
 		"title": "重発狂5",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '5'"
@@ -6140,7 +6476,9 @@
 		"id": "F19e3343c38d5c792384",
 		"inactive": false,
 		"legacyFolderID": "F2ebc9c3a60c0dd0296dda88506924c36d3e8a0d89e764c4fe5a6b2b372cec3d6",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 6"
+		],
 		"slug": "csst-6",
 		"title": "重発狂6",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '6'"
@@ -6150,7 +6488,9 @@
 		"id": "F19e3343c38d5bf8b086",
 		"inactive": false,
 		"legacyFolderID": "F54e779257e4ea9b7c4aaadd86269959e7ecc7d562232a1108081b4bd064a87f7",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 7"
+		],
 		"slug": "csst-7",
 		"title": "重発狂7",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '7'"
@@ -6160,7 +6500,9 @@
 		"id": "F19e3343c38d48ca2d1f",
 		"inactive": false,
 		"legacyFolderID": "F91bd575dce367f321fb146e47ceeaea4215030069e7d7fcc92546dd4895e815c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 8"
+		],
 		"slug": "csst-8",
 		"title": "重発狂8",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '8'"
@@ -6170,7 +6512,9 @@
 		"id": "F19e3343c38d0e24303c",
 		"inactive": false,
 		"legacyFolderID": "F1dee03881a672d8e61c5c6397f7c35ea5f8f900bdbc274d9e205b1d69eb65e3c",
-		"searchTerms": [],
+		"searchTerms": [
+			"Code Stream (st) 9"
+		],
 		"slug": "csst-9",
 		"title": "重発狂9",
 		"where": "(chart.data->'tableFolders'->>'重発狂') = '9'"
