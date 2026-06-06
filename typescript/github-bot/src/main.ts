@@ -22,6 +22,7 @@ const app = new App({
 const COMMENT_MARKERS = {
 	questProposal: "<!-- tachi-ghbot:quest-proposal -->",
 	seedDiff: "<!-- tachi-ghbot:seed-diff -->",
+	githubDirWarning: "<!-- tachi-ghbot:github-dir-warning -->",
 } as const;
 
 type CommentMarker = (typeof COMMENT_MARKERS)[keyof typeof COMMENT_MARKERS];
@@ -84,6 +85,28 @@ _A reviewer will check the content and merge when it looks good. You can update 
 
 function prTouchesSeeds(files: Array<{ filename: string }>): boolean {
 	return files.some((k) => k.filename.startsWith("db/seeds/") || k.filename === "db/seeds");
+}
+
+function prTouchesGithubDir(files: Array<{ filename: string }>): boolean {
+	return files.some((k) => k.filename.startsWith(".github/") || k.filename === ".github");
+}
+
+/**
+ * Returns the subset of changed files that live inside .github/.
+ */
+function githubDirFiles(files: Array<{ filename: string }>): Array<string> {
+	return files.map((k) => k.filename).filter((f) => f.startsWith(".github/") || f === ".github");
+}
+
+/**
+ * Extremely noisy warning comment for PRs that modify files under .github/.
+ * Changes here can affect CI, permissions, and the entire repository security
+ * surface, so reviewers must treat them with extreme caution.
+ */
+function mkGithubDirWarningMsg(touchedFiles: Array<string>): string {
+	const fileList = touchedFiles.map((f) => `- \`${f}\``).join("\n");
+
+	return `${`# ⛔ WARNING ⛔ — This PR modifies files in .github. Don't approve the CI runs until you've read it Mr ZK.\n`.repeat(3)}\n${fileList}`;
 }
 
 async function listAllPullFiles(
@@ -235,6 +258,20 @@ app.webhooks.on(
 				pr.number,
 			);
 
+			if (prTouchesGithubDir(filesChanged)) {
+				const commentAction = await upsertBotComment(
+					mkGithubDirWarningMsg(githubDirFiles(filesChanged)),
+					COMMENT_MARKERS.githubDirWarning,
+					octokit,
+					repo,
+					pr.number,
+				);
+				log.info(
+					{ prNumber: pr.number, commentAction },
+					"Upserted .github dir warning comment.",
+				);
+			}
+
 			if (prTouchesSeeds(filesChanged)) {
 				const commentAction = await upsertBotComment(
 					mkSeedDiffViewMsg(pr.base.sha, pr.head.sha, pr.number),
@@ -247,7 +284,10 @@ app.webhooks.on(
 				return;
 			}
 
-			log.debug({ prNumber: pr.number }, "PR does not touch db/seeds; no comment posted.");
+			log.debug(
+				{ prNumber: pr.number },
+				"PR does not touch db/seeds or .github; no further comments posted.",
+			);
 		} catch (err) {
 			log.error(
 				{ err, prNumber: pr.number },
