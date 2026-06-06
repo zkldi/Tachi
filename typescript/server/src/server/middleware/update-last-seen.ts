@@ -5,7 +5,7 @@ import { sql } from "kysely";
 
 export const UpdateLastSeen: RequestHandler = (req, res, next) => {
 	res.once("finish", () => {
-		if (req.session.tachi?.user.id === undefined) {
+		if (req.session?.tachi?.user.id === undefined) {
 			return;
 		}
 
