@@ -299,9 +299,14 @@ API_V1_ROUTER.add(
 		const { requestedUser: user } = ctx;
 
 		const canChange = await CanChangeUsername(DB, user.id);
-		const nextChange = canChange ? null : await GetNextAvailableUsernameChange(DB, user.id);
+		const nextAvailableChange = canChange
+			? null
+			: await GetNextAvailableUsernameChange(DB, user.id);
 
-		return success("Returned username change eligibility.", { canChange, nextChange });
+		return success("Returned username change eligibility.", {
+			canChange,
+			nextChange: nextAvailableChange,
+		});
 	},
 );
 

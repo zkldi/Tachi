@@ -331,7 +331,7 @@ export const API_V1_SPEC = {
 		input: z.object({}),
 		output: z.strictObject({
 			canChange: z.boolean(),
-			nextChange: z.number().nullable(),
+			nextAvailableChange: z.number().nullable(),
 		}),
 	},
 

@@ -19,7 +19,15 @@ export const UpdateLastSeen: RequestHandler = (req, _res, next) => {
 		.set({
 			last_seen: sql`NOW()`,
 		})
-		.where("id", "=", req.session.tachi.user.id)
+		.where(
+			"id",
+			"=",
+			DB.selectFrom("account")
+				.select(["id"])
+				.where("id", "=", req.session.tachi.user.id)
+				.forUpdate()
+				.skipLocked(),
+		)
 		.execute();
 
 	next();
