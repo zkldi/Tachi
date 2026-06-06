@@ -46,6 +46,7 @@ jobs:
           VITE_SERVER_URL: "https://boku.tachi.ac"
           VITE_DISCORD: "https://discord.gg/E4n8ZZF5ES"
           VITE_CDN_URL: "https://cdn-boku.tachi.ac"
+          VITE_SKIP_RULES: true
           TACHI_NAME: "Bokutachi"
           BUILD_OUT_DIR: /tmp/boku
 
@@ -62,6 +63,7 @@ jobs:
           VITE_CDN_URL: "https://cdn-kamai.tachi.ac"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_HCAPTCHA_SITEKEY: "33267860-177c-487a-a4e6-e1b23f804810"
+          VITE_SKIP_RULES: true
           TACHI_NAME: "Kamaitachi"
           BUILD_OUT_DIR: /tmp/kamai
 
@@ -77,6 +79,7 @@ jobs:
           VITE_MIN_CLIENT_ID: "A0DBDBB063CD800530EF01C6488B282137E0191E"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_HCAPTCHA_SITEKEY: "f502cf14-6c48-4f5c-8692-c670a0d00314"
+          VITE_SKIP_RULES: true
           TACHI_NAME: "Tachi Dev"
           BUILD_OUT_DIR: /tmp/dev
 
