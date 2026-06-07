@@ -56,7 +56,7 @@ function fish_greeting
 		echo ""
 		echo "Type $(cmd "just start") to start up tachi."
 		echo "    $(rgb "The site will start on http://localhost:3000." ffff00 000000)"
-		echo "    $(rgb "The seeds web UI will start on http://localhost:3100." ffff00 000000)"
+		echo "    $(rgb "The seeds web UI will start on http://localhost:3003." ffff00 000000)"
 		echo "    $(rgb "Use Ctrl+C to stop Tachi." ffff00 000000)"
 		echo ""
 		echo "You can also run:"
