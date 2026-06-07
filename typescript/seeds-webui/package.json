@@ -3,7 +3,7 @@
 	"version": "0.1.0-see-project-root",
 	"private": true,
 	"type": "module",
-	"license": "AGPL3",
+	"license": "MIT",
 	"description": "Workstation UI for Tachi's db/seeds: browse, query, diff over git history, and (in localdev) edit.",
 	"scripts": {
 		"dev": "vite",
