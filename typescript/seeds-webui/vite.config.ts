@@ -40,7 +40,7 @@ export default defineConfig(({ command }) => ({
 	define: {
 		"import.meta.env.VITE_SEEDS_EDIT_MODE": JSON.stringify(command === "serve"),
 		"import.meta.env.VITE_SEEDS_REPO": JSON.stringify(
-			process.env.VITE_SEEDS_REPO ?? "zkldi/Tachi3",
+			process.env.VITE_SEEDS_REPO ?? "zkldi/Tachi",
 		),
 		"import.meta.env.VITE_SEEDS_BRANCH": JSON.stringify(
 			process.env.VITE_SEEDS_BRANCH ?? "main",
@@ -136,10 +136,10 @@ export default defineConfig(({ command }) => ({
 	server: {
 		host: true,
 		open: false,
-		port: 3100,
+		port: 3003,
 	},
 	preview: {
 		open: false,
-		port: 3100,
+		port: 3003,
 	},
 }));
