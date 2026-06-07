@@ -31,7 +31,7 @@ import { ClumpActivity, GetUsers } from "#util/activity";
 import { APIFetchV1 } from "#util/api";
 import { ONE_HOUR } from "#util/constants/time";
 import { CreateScoreIDMap, CreateUserMap } from "#util/data";
-import { NO_OP, TruncateString } from "#util/misc";
+import { NO_OP, TruncateString, UppercaseFirst } from "#util/misc";
 import { FormatTime, MillisToSince } from "#util/time";
 import React, { useContext, useEffect, useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
@@ -689,12 +689,18 @@ function ClassAchievementActivity({
 									<UGPTLink game={classGame} reqUser={user} />{" "}
 									{data.source === "manual" ? (
 										<>
-											manually set{" "}
-											<ClassBadge
-												classSet={data.classSet}
-												classValue={data.classValue}
-												game={classGame}
-											/>
+											{data.classValue ? (
+												<>
+													manually set{" "}
+													<ClassBadge
+														classSet={data.classSet}
+														classValue={data.classValue}
+														game={classGame}
+													/>
+												</>
+											) : (
+												`manually unset ${UppercaseFirst(data.classSet)}`
+											)}
 											{shouldShowGame && ` in ${FormatGame(classGame)}`}
 											{data.classOldValue !== null && (
 												<>

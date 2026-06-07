@@ -306,7 +306,7 @@ function ChangePasswordForm({ reqUser }: { reqUser: UserDocument }) {
 
 function ChangeUsernameForm({ reqUser }: { reqUser: UserDocument }) {
 	const lastUsernameChange = useApiQuery<
-		{ canChange: false; nextAvailableChange: integer | null } | { canChange: true }
+		{ canChange: false; nextChange: integer | null } | { canChange: true }
 	>(`/users/${reqUser.id}/last-username-change`);
 
 	const nameChangeFormik = useFormik({
@@ -424,10 +424,7 @@ function ChangeUsernameForm({ reqUser }: { reqUser: UserDocument }) {
 					<Alert variant="danger">
 						You can only change your username every 6 months. Your next username change
 						will be available on{" "}
-						{new Date(
-							lastUsernameChange.data?.nextAvailableChange ?? 0,
-						).toLocaleDateString()}
-						.
+						{new Date(lastUsernameChange.data?.nextChange ?? 0).toLocaleDateString()}.
 					</Alert>
 				)}
 				<Button

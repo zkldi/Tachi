@@ -24,7 +24,6 @@
 		"@types/lodash.get": "catalog:",
 		"@types/node": "catalog:",
 		"binary-parser": "catalog:",
-		"bms-table-loader": "catalog:",
 		"chalk": "catalog:",
 		"cheerio": "catalog:",
 		"commander": "catalog:",

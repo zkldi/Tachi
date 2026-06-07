@@ -133,6 +133,7 @@
       "name": "tachi-common",
       "version": "2.4.0-dev",
       "dependencies": {
+        "bms-table-loader": "catalog:",
         "prudence": "catalog:",
         "zod": "catalog:",
       },
@@ -293,7 +294,6 @@
         "@types/lodash.get": "catalog:",
         "@types/node": "catalog:",
         "binary-parser": "catalog:",
-        "bms-table-loader": "catalog:",
         "chalk": "catalog:",
         "cheerio": "catalog:",
         "commander": "catalog:",

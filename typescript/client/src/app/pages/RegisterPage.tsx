@@ -18,6 +18,9 @@ import { type UserDocument } from "tachi-common";
 // seconds it takes for a user to actually read the rules.
 const RULES_READ_TIME = Number(import.meta.env.VITE_RULES_READ_TIME) || 30;
 
+// When set, skip the rules gate entirely and go straight to the signup form.
+const SKIP_RULES = import.meta.env.VITE_SKIP_RULES === "true";
+
 export default function RegisterPage() {
 	useSetSubheader("Register");
 
@@ -26,7 +29,7 @@ export default function RegisterPage() {
 	// opened: user has clicked the rules link
 	// read: at least 30 seconds have expired.
 	const [readRules, setReadRules] = useState<"acknowledged" | "not-opened" | "opened" | "read">(
-		"not-opened",
+		SKIP_RULES ? "acknowledged" : "not-opened",
 	);
 	const [disabled, setDisabled] = useState(true);
 	const [btnText, setBtnText] = useState("I've read the rules. (Click the rules.)");

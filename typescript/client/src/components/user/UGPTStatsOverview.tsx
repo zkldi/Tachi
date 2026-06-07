@@ -28,7 +28,7 @@ export default function UGPTRatingsTable({ ugs }: { ugs: UserGameStats }) {
 			<>
 				{(Object.keys(gameConfig.classes) as Classes[V3Game][])
 					.sort(StrSOV((x) => x[0]))
-					.filter((k) => ugs.classes[k] !== undefined)
+					.filter((k) => ugs.classes[k] !== undefined && ugs.classes[k] !== null)
 					.map((k) => (
 						<tr key={k}>
 							<td>{UppercaseFirst(k)}</td>

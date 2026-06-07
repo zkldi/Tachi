@@ -149,7 +149,7 @@
 	},
 	{
 		"default": false,
-		"description": "The Arm-Shougakkou table is A gachi and gachi-ish practice table, Ude0 is approximately equivalent to an sl0",
+		"description": "The Arm-Shougakkou table is a gachi and gachi-ish practice table. Ude0 is approximately equivalent to an sl0",
 		"folders": [
 			"armshougakkou-0",
 			"armshougakkou-1",
@@ -293,23 +293,23 @@
 	},
 	{
 		"default": false,
-		"description": "Gachimjoy is a gachi practice table. 双1 is approximately equivalent to an ★★1",
+		"description": "Gachimijoy is a gachi practice table. 双1 is approximately equivalent to an ★★1",
 		"folders": [
-			"gachimjoy-0",
-			"gachimjoy-1",
-			"gachimjoy-2",
-			"gachimjoy-3",
-			"gachimjoy-4",
-			"gachimjoy-5",
-			"gachimjoy-6",
-			"gachimjoy-7",
-			"gachimjoy-8"
+			"gachimijoy-0",
+			"gachimijoy-1",
+			"gachimijoy-2",
+			"gachimijoy-3",
+			"gachimijoy-4",
+			"gachimijoy-5",
+			"gachimijoy-6",
+			"gachimijoy-7",
+			"gachimijoy-8"
 		],
 		"game": "bms-7k",
-		"id": "T19d35f0d592e33c0d44",
+		"id": "T19e9d2d406937f13eb2",
 		"inactive": false,
-		"legacyTableID": "bms-7K-gachimjoy",
-		"title": "Gachimjoy"
+		"legacyTableID": "bms-7K-gachimijoy",
+		"title": "Gachimijoy"
 	},
 	{
 		"default": true,
@@ -501,7 +501,6 @@
 			"starlight-present",
 			"lnoverjoy-present",
 			"luminous-present",
-			"gachimjoy-present",
 			"delayjoy-present",
 			"armshougakkou-present",
 			"exoplanet-present",
@@ -510,7 +509,8 @@
 			"solar-present",
 			"supernova-present",
 			"csst-present",
-			"cssl-present"
+			"cssl-present",
+			"gachimijoy-present"
 		],
 		"game": "bms-7k",
 		"id": "T19d35f0d592d728c226",

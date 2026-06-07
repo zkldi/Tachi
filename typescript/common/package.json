@@ -36,6 +36,7 @@
 	"author": "zk",
 	"license": "MIT",
 	"dependencies": {
+		"bms-table-loader": "catalog:",
 		"prudence": "catalog:",
 		"zod": "catalog:"
 	},
