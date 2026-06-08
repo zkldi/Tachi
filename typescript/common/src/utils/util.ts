@@ -108,7 +108,22 @@ function FormatDifficultyInternal(chart: ChartDocument, short: boolean): string 
  * Formats a chart's difficulty for searching, such as forwarding this query to youtube.
  */
 export function FormatDifficultySearch(chart: ChartDocument): string | null {
-	return FormatDifficultyLong(chart);
+	const gameGroup = GameToGameGroup(chart.game);
+	const gameConfig = GetGameConfig(chart.game);
+
+	if (["bms", "itg", "pms"].includes(gameGroup)) {
+		return "";
+	}
+
+	let diff: string | undefined;
+	if (
+		gameConfig.difficulties.type === "FIXED" ||
+		gameConfig.difficulties.type === "CHUGEKIMAI_STYLE"
+	) {
+		diff = gameConfig.difficulties.formatLong[chart.difficulty];
+	}
+	diff ??= chart.difficulty;
+	return diff.trim();
 }
 
 export function FormatGame(game: V3Game): string {
