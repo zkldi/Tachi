@@ -233,7 +233,6 @@ for (const entry of data.songs) {
 		if (exists) {
 			// update chart levels
 			exists.level = `${chart.rating}${chart.ratingPlus ? "+" : ""}`;
-			exists.levelNum = chart.rating + (chart.ratingPlus ? 0.7 : 0);
 			continue;
 		}
 

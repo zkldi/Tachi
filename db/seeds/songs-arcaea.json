@@ -8200,5 +8200,63 @@
 		"legacySongID": 543,
 		"searchTerms": [],
 		"title": "Mistempered Malignance"
+	},
+	{
+		"altTitles": [],
+		"artist": "void (Mournfinale)",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S19ea8d88f710ccfdd65",
+		"legacySongID": 547,
+		"searchTerms": [
+			"おるたーしすと",
+			"알터시스트"
+		],
+		"title": "Altersist"
+	},
+	{
+		"altTitles": [],
+		"artist": "Lamanya",
+		"data": {
+			"songPack": "World Extend 4"
+		},
+		"id": "S19ea8d88f717283de9a",
+		"legacySongID": 546,
+		"searchTerms": [
+			"ふれきしでぃふぁいん",
+			"플렉시디파인"
+		],
+		"title": "flexidefine"
+	},
+	{
+		"altTitles": [],
+		"artist": "Aoi",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S19ea8d88f71945526c5",
+		"legacySongID": 548,
+		"searchTerms": [
+			"しーえすきゅーえぬ",
+			"시 에스 큐 엔",
+			"csqn"
+		],
+		"title": "c.s.q.n."
+	},
+	{
+		"altTitles": [],
+		"artist": "Darren + Altermis",
+		"data": {
+			"songPack": "World Extend 4"
+		},
+		"id": "S19ea8d88f71ca081a55",
+		"legacySongID": 545,
+		"searchTerms": [
+			"こすもじゃいらる",
+			"코스모자이럴",
+			"코스모자이랄"
+		],
+		"title": "Cosmogyral"
 	}
 ]

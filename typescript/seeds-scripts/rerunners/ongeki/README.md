@@ -10,4 +10,4 @@
    1. Run `bun scrape-sdvx-in.ts`.
    2. Fix any missing entries manually in `seeds/collections/charts-ongeki.json` (refer to `songs-ongeki.json` for `songID`s).
 5. Manually add search terms in `songs-ongeki.json`, especially romanizations (optional)
-6. In the root project folder, run `just seeds test`.
+6. Run `just db-load-seeds`.
