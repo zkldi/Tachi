@@ -112,7 +112,7 @@ export function FormatDifficultySearch(chart: ChartDocument): string | null {
 	const gameConfig = GetGameConfig(chart.game);
 
 	if (["bms", "itg", "pms"].includes(gameGroup)) {
-		return "";
+		return null;
 	}
 
 	let diff: string | undefined;
