@@ -14,7 +14,7 @@ For more information on what metrics are and how they work, see [TODO]!
 | Metric Name | Type | Description |
 | :: | :: | :: |
 | `score` | Integer | The score value. This is between 0 and 10 million. |
-| `lamp` | "FAILED", "CLEAR", "EXCESSIVE CLEAR", "ULTIMATE CHAIN", "PERFECT ULTIMATE CHAIN" | The type of clear this was. |
+| `lamp` | "FAILED", "CLEAR", "EXCESSIVE CLEAR", "MAXXIVE CLEAR", "ULTIMATE CHAIN", "PERFECT ULTIMATE CHAIN" | The type of clear this was. |
 
 ### Derived Metrics
 

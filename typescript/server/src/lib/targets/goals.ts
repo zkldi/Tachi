@@ -452,6 +452,63 @@ export async function GetQuestsThatContainGoal(goalID: string): Promise<Array<Qu
 	return rows.map(ToQuestDocument);
 }
 
+/** Rewrites quest_data goal references after a goal primary key changes. */
+export async function remapGoalIdInQuests(oldGoalId: string, newGoalId: string) {
+	const quests = await GetQuestsThatContainGoal(oldGoalId);
+
+	for (const quest of quests) {
+		const newQuestData: QuestDocument["questData"] = [];
+
+		for (const qd of quest.questData) {
+			const goals = [];
+
+			for (const goal of qd.goals) {
+				if (goal.goalID === oldGoalId) {
+					goals.push({ ...goal, goalID: newGoalId });
+				} else {
+					goals.push(goal);
+				}
+			}
+
+			newQuestData.push({
+				...qd,
+				goals,
+			});
+		}
+
+		await DB.updateTable("quest")
+			.set({ quest_data: newQuestData })
+			.where("quest.id", "=", quest.questID)
+			.execute();
+	}
+}
+
+/**
+ * Moves subscriptions and import history from a duplicate goal row onto the
+ * canonical goal id, dropping rows that would violate (goal_id, user_id).
+ */
+export async function mergeGoalSubscriptions(oldGoalId: string, newGoalId: string) {
+	await sql`
+		UPDATE goal_sub
+		SET goal_id = ${newGoalId}
+		WHERE goal_id = ${oldGoalId}
+			AND NOT EXISTS (
+				SELECT 1
+				FROM goal_sub AS existing
+				WHERE existing.goal_id = ${newGoalId}
+					AND existing.user_id = goal_sub.user_id
+			)
+	`.execute(DB);
+
+	await DB.deleteFrom("goal_sub").where("goal_id", "=", oldGoalId).execute();
+
+	await sql`
+		UPDATE import_goal
+		SET goal_id = ${newGoalId}
+		WHERE goal_id = ${oldGoalId}
+	`.execute(DB);
+}
+
 /**
  * Unsubscribing from a goal may not be legal, because the goal might be part of
  * a quest the user is subscribed to. This function returns all quests
@@ -748,55 +805,28 @@ export async function EditGoal(oldGoal: GoalDocument, newGoal: GoalDocument) {
 	const newGoalID = CreateGoalID(newGoal.charts, newGoal.criteria, newGoal.game);
 
 	newGoal.goalID = newGoalID;
-
-	await DB.updateTable("goal_sub")
-		.set({ goal_id: newGoalID })
-		.where("goal_id", "=", oldGoal.goalID)
-		.execute();
-
-	const quests = await GetQuestsThatContainGoal(oldGoal.goalID);
-
-	for (const quest of quests) {
-		const newQuestData: QuestDocument["questData"] = [];
-
-		for (const qd of quest.questData) {
-			const goals = [];
-
-			for (const goal of qd.goals) {
-				if (goal.goalID === oldGoal.goalID) {
-					goals.push({ ...goal, goalID: newGoal.goalID });
-				} else {
-					goals.push(goal);
-				}
-			}
-
-			newQuestData.push({
-				...qd,
-				goals,
-			});
-		}
-
-		await DB.updateTable("quest")
-			.set({ quest_data: newQuestData })
-			.where("quest.id", "=", quest.questID)
-			.execute();
-	}
-
-	await DB.deleteFrom("goal").where("goal.id", "=", oldGoal.goalID).execute();
-
 	newGoal.name = await CreateGoalName(newGoal.charts, newGoal.criteria, newGoal.game);
 
-	try {
-		await DB.insertInto("goal")
-			.values({
-				id: newGoal.goalID,
-				game: newGoal.game,
-				name: newGoal.name,
-				charts: newGoal.charts,
-				criteria: newGoal.criteria,
-			})
-			.execute();
-	} catch {
-		log.info(`Goal ${newGoal.name} already existed.`);
+	const existingTarget = await DB.selectFrom("goal")
+		.select("goal.id")
+		.where("goal.id", "=", newGoalID)
+		.executeTakeFirst();
+
+	await remapGoalIdInQuests(oldGoal.goalID, newGoalID);
+
+	if (existingTarget && existingTarget.id !== oldGoal.goalID) {
+		await mergeGoalSubscriptions(oldGoal.goalID, newGoalID);
+		await DB.deleteFrom("goal").where("goal.id", "=", oldGoal.goalID).execute();
+		return;
 	}
+
+	await DB.updateTable("goal")
+		.set({
+			id: newGoal.goalID,
+			name: newGoal.name,
+			charts: newGoal.charts,
+			criteria: newGoal.criteria,
+		})
+		.where("goal.id", "=", oldGoal.goalID)
+		.execute();
 }
