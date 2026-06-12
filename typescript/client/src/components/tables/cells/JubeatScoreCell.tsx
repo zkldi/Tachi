@@ -1,7 +1,6 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { FormatMillions, ToFixedFloor } from "#util/misc";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 export default function JubeatScoreCell({
@@ -13,7 +12,7 @@ export default function JubeatScoreCell({
 		<td
 			style={{
 				backgroundColor: ChangeOpacity(
-					GPT_CLIENT_IMPLEMENTATIONS.jubeat.enumColours.grade[sc.scoreData.grade],
+					GAME_CLIENT_IMPLEMENTATIONS.jubeat.enumColours.grade[sc.scoreData.grade],
 					0.2,
 				),
 			}}

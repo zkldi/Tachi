@@ -1,15 +1,14 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { ChangeOpacity } from "#util/color-opacity";
 import { FormatTables } from "#util/misc";
-import React from "react";
 import {
 	BMS_TABLES,
 	type ChartDocument,
 	COLOUR_SET,
-	type UGPTSettingsDocument,
+	type UserGameSettingsDocument,
 } from "tachi-common";
 
 import { DIFFICULTY_CELL_WIDTH_PX } from "./difficulty-cell-layout";
@@ -26,8 +25,8 @@ export default function BMSOrPMSDifficultyCell({
 	chart: ChartDocument<BMSGames>;
 	game: BMSGames;
 }) {
-	const { settings } = useLUGPTSettings() as {
-		settings: UGPTSettingsDocument<"bms-7k" | "bms-14k"> | null;
+	const { settings } = useLoggedInUserGameSettings() as {
+		settings: UserGameSettingsDocument<"bms-7k" | "bms-14k"> | null;
 	};
 
 	const hasLevel = Object.keys((chart as ChartDocument<"bms-7k">).data.tableFolders).length > 0;

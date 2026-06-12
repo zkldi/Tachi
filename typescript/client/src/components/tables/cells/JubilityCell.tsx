@@ -1,4 +1,3 @@
-import React from "react";
 import { COLOUR_SET, type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 export default function JubilityCell({ score }: { score: PBScoreDocument | ScoreDocument }) {

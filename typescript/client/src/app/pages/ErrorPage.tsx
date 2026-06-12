@@ -1,10 +1,9 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import { ToCDNURL } from "#util/api";
 import { HistorySafeGoBack } from "#util/misc";
-import React from "react";
 import { useHistory } from "react-router-dom";
 
-export function ErrorPage({
+export default function ErrorPage({
 	statusCode,
 	customMessage,
 }: {

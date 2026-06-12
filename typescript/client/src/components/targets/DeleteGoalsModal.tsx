@@ -3,7 +3,6 @@ import Icon from "#components/util/Icon";
 import { type SetState } from "#types/react";
 import { type GoalSubDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { Button, Col, Modal, Row } from "react-bootstrap";
 
 import { InnerQuestSectionGoal } from "./quests/Quest";

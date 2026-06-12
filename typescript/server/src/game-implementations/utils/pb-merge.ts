@@ -18,7 +18,7 @@ import DB from "#services/pg/db";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { sql } from "kysely";
 
-// insane typemagic to get mongodb-safe names for this GPT's metrics.
+// metrics available for this game
 type MetricKeys<TGame extends V3Game> =
 	| {
 			metric: keyof ConfDerivedMetrics[TGame];

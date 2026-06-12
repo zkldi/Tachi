@@ -1,9 +1,9 @@
 import { GetGameConfig, type V3Game } from "tachi-common";
 
-import useLUGPTSettings from "./useLUGPTSettings";
+import useLoggedInUserGameSettings from "./useLoggedInUserGameSettings";
 
 export function useBucket(game: V3Game) {
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings?.preferences.preferredDefaultEnum) {
 		const gameConfig = GetGameConfig(game);

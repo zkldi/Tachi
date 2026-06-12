@@ -1,11 +1,10 @@
 import Activity from "#components/activity/Activity";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
-import { type UGPT } from "#types/react";
-import React from "react";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
+import { type GameProfileProps } from "#types/react";
 import { Link } from "react-router-dom";
 
-export default function RivalsActivityPage({ reqUser, game }: UGPT) {
-	const { settings } = useLUGPTSettings();
+export default function RivalsActivityPage({ reqUser, game }: GameProfileProps) {
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings) {
 		return <>You have no settings. How did you get here?</>;

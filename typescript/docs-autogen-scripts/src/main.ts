@@ -1,16 +1,10 @@
-// Generate documentation for all GPT configs in-tree.
+// Generate documentation for all game configs in-tree.
 
 import type { ConfScoreMetric } from "tachi-common/types/metrics";
 
 import { writeFileSync } from "fs";
 import path from "path";
-import {
-	ALL_GAMES,
-	FormatGame,
-	GetGameConfig,
-	LEGACY_GameToGPTString,
-	type V3Game,
-} from "tachi-common";
+import { ALL_GAMES, FormatGame, GetGameConfig, type V3Game } from "tachi-common";
 import {
 	type ClassConfig,
 	type DifficultyConfig,
@@ -115,12 +109,11 @@ function formatVersions(versions: Record<string, string>): string {
 }
 
 function createConfigDocumentation(game: V3Game) {
-	const gptString = LEGACY_GameToGPTString(game);
 	const gameConfig = GetGameConfig(game);
 
 	const output = `# ${FormatGame(game)} Support
 
-This game has the internal GPTString of \`${gptString}\`.
+This game is internally called \`${game}\`.
 
 !!! note
 	For information on what each section means, please see [Common Config](../common-config/index.md).

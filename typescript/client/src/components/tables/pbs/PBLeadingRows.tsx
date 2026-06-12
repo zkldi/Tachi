@@ -1,7 +1,6 @@
 import Muted from "#components/util/Muted";
 import { type SetState } from "#types/react";
 import { type PBDataset } from "#types/tables";
-import React from "react";
 
 import DifficultyCell from "../cells/DifficultyCell";
 import IndicatorsCell from "../cells/IndicatorsCell";

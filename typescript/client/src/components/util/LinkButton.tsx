@@ -1,5 +1,4 @@
 import { type LinkContainerProps } from "#types/bootstrap";
-import React from "react";
 import Button, { type ButtonProps } from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 

@@ -5,8 +5,8 @@ import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
-import React, { useCallback, useEffect, useLayoutEffect, useMemo, useState } from "react";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import Form from "react-bootstrap/Form";
@@ -22,7 +22,7 @@ const FOLDER_ROUTE_PATTERN = "/u/:userID/games/:game/folders/:folderSlug";
 export default function FolderTablePage({ reqUser, game }: FolderTableScopedProps) {
 	const { data, error } = useApiQuery<TableDocument[]>(`/games/${game}/tables?showInactive=true`);
 
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const location = useLocation();
 	const history = useHistory();

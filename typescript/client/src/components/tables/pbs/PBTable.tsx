@@ -3,7 +3,7 @@ import { type PBDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
 import { CreateDefaultPBSearchParams } from "#util/tables/create-search";
 import { GetPBLeadingHeaders } from "#util/tables/get-pb-leaders";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { type AnyScoreRatingAlg, type V3Game } from "tachi-common";
 
 import DropdownIndicatorCell from "../cells/DropdownIndicatorCell";
@@ -16,7 +16,7 @@ import { usePBState } from "../components/UseScoreState";
 import PBDropdown from "../dropdowns/PBDropdown";
 import ScoreCoreCells from "../game-core-cells/ScoreCoreCells";
 import ChartHeader from "../headers/ChartHeader";
-import { GetGPTCoreHeaders } from "../headers/GameHeaders";
+import { GetGameCoreHeaders } from "../headers/GameHeaders";
 import { EmptyHeader } from "../headers/IndicatorHeader";
 import { CreateRankingHeader } from "../headers/RankingHeader";
 import PBLeadingRows from "./PBLeadingRows";
@@ -57,7 +57,7 @@ export default function PBTable({
 			ChartHeader(game, (k) => k.__related.chart),
 		),
 		EmptyHeader,
-		...GetGPTCoreHeaders<PBDataset>(game, rating, setRating, (x) => x),
+		...GetGameCoreHeaders<PBDataset>(game, rating, setRating, (x) => x),
 		CreateRankingHeader(rankingViewMode, setRankingViewMode, (k) => k.rankingData),
 		["Last Raised", "Last Raised", NumericSOV((x) => x.timeAchieved ?? 0)],
 		EmptyHeader,

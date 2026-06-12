@@ -1,4 +1,3 @@
-import React from "react";
 import { type integer } from "tachi-common";
 
 // gold, silver, bronze

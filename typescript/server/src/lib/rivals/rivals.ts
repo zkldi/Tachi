@@ -12,7 +12,7 @@ import { GetGameConfig, type integer, type PgScoreData, type V3Game } from "tach
 
 /**
  * Retrieve all of a user's set rival IDs.
- * Throws if the user hasn't played the GPT in question.
+ * Throws if the user hasn't played the game in question.
  */
 export async function GetRivalIDs(userID: integer, game: V3Game) {
 	const profile = await DB.selectFrom("game_profile")
@@ -35,8 +35,8 @@ export async function GetRivalIDs(userID: integer, game: V3Game) {
 }
 
 /**
- * Get the user documents of the rivals for this UGPT.
- * Throws if the user hasn't played the GPT in question.
+ * Get the user documents of the rivals for this usergame.
+ * Throws if the user hasn't played the game in question.
  */
 export async function GetRivalUsers(userID: integer, game: V3Game) {
 	const rivalIDs = await GetRivalIDs(userID, game);
@@ -120,10 +120,10 @@ export async function setRivalsWithResult(
 		.where("game_profile.user_id", "in", newRivals)
 		.executeTakeFirstOrThrow();
 
-	const playedGPTCount = Number(count);
+	const playedGameCount = Number(count);
 
-	if (playedGPTCount !== newRivals.length) {
-		return SetRivalsFailReasons.RIVALS_HAVENT_PLAYED_GPT;
+	if (playedGameCount !== newRivals.length) {
+		return SetRivalsFailReasons.RIVALS_HAVENT_PLAYED_GAME;
 	}
 
 	const currentGameProfile = await DB.selectFrom("game_profile")
@@ -197,7 +197,7 @@ export async function AddRival(userID: integer, game: V3Game, newRival: integer)
 /**
  * Remove a single rival by their userID.
  *
- * @returns null if this UGPT is not rivals with the user, and therefore there is
+ * @returns null if this usergame is not rivals with the user, and therefore there is
  * nothing to change.
  */
 export async function RemoveRival(userID: integer, game: V3Game, toRemove: integer) {
@@ -213,7 +213,7 @@ export async function RemoveRival(userID: integer, game: V3Game, toRemove: integ
 }
 
 /**
- * Get all of the userIDs of people who rival the userID for this GPT.
+ * Get all of the userIDs of people who rival the userID for this game.
  */
 export async function GetChallengerIDs(userID: integer, game: V3Game) {
 	const result = await DB.selectFrom("game_rival")
@@ -226,7 +226,7 @@ export async function GetChallengerIDs(userID: integer, game: V3Game) {
 }
 
 /**
- * Get the user documents of everyone who is rivalling this userID for this GPT.
+ * Get the user documents of everyone who is rivalling this userID for this game.
  */
 export async function GetChallengerUsers(userID: integer, game: V3Game) {
 	const challengerIDs = await GetChallengerIDs(userID, game);
@@ -235,7 +235,7 @@ export async function GetChallengerUsers(userID: integer, game: V3Game) {
 }
 
 /**
- * Given a UGPT, update their rival rankings.
+ * Given a UserProfile, update their rival rankings.
  *
  * @warn Horrifically race-condition insensitive. This method for updating rankings
  * on PBs is just absolutely horrifically misguided, and will break.

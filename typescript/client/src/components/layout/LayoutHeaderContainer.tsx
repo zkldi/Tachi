@@ -1,5 +1,4 @@
 import Divider from "#components/util/Divider";
-import React from "react";
 
 export default function UserHeaderContainer({
 	header,

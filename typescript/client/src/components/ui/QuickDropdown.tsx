@@ -1,5 +1,4 @@
 import Icon from "#components/util/Icon";
-import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { type DropdownToggleProps } from "react-bootstrap/esm/DropdownToggle";
 import { type AlignType } from "react-bootstrap/esm/types";

@@ -1,5 +1,4 @@
 import { DoesMatchRoute } from "#util/routing";
-import React from "react";
 import { type ButtonVariant } from "react-bootstrap/esm/types";
 
 import LinkButton, { type LinkButtonProps } from "./LinkButton";

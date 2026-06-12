@@ -1,4 +1,3 @@
-import React from "react";
 import { COLOUR_SET, type PBScoreDocument } from "tachi-common";
 import { type ConfScoreMetric } from "tachi-common/types/metrics";
 

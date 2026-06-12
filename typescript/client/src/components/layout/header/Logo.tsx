@@ -1,6 +1,5 @@
 import { TachiConfig } from "#lib/config";
 import { ToCDNURL } from "#util/api";
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Logo() {

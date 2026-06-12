@@ -5,7 +5,7 @@ import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import { type GoalsOnChartReturn } from "#types/api-returns";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { type UnsuccessfulAPIFetchResponse } from "#util/api";
 import { CreateGoalSubDataset, CreateUserMap } from "#util/data";
 import React, { useState } from "react";
@@ -26,7 +26,7 @@ export default function TargetInfo({
 	error: UnsuccessfulAPIFetchResponse | null;
 	onGoalSet: () => void;
 	song: SongDocument;
-} & UGPT) {
+} & GameProfileProps) {
 	const [show, setShow] = useState(false);
 
 	if (error) {

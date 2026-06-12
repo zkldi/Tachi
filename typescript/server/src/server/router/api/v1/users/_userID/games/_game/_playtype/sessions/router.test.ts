@@ -188,7 +188,7 @@ describe("GET /api/v1/users/:userID/games/:game/sessions/recent", () => {
 });
 
 describe("GET /api/v1/users/:userID/games/:game/sessions/last", () => {
-	it("returns 404 when the user has no sessions for this GPT", async () => {
+	it("returns 404 when the user has no sessions for this game", async () => {
 		const { id: userId } = await seedUser({ username: `sess_last_404_${++counter}` });
 		await seedIidxSpProfile(userId);
 

@@ -2,10 +2,10 @@ import LoginPageLayout from "#components/layout/LoginPageLayout";
 import MainPageTitleContainer from "#components/util/MainPageTitleContainer";
 import { APIFetchV1 } from "#util/api";
 import { ShortDelayify } from "#util/misc";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 
-import { ErrorPage } from "./ErrorPage";
+import ErrorPage from "./ErrorPage";
 
 export default function ResetPasswordPage() {
 	const code = new URLSearchParams(window.location.search).get("code");

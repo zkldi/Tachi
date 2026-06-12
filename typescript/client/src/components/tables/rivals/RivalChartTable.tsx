@@ -2,7 +2,7 @@ import Muted from "#components/util/Muted";
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { type RivalChartDataset } from "#types/tables";
 import { NumericSOV, StrSOV } from "#util/sorts";
-import React, { useState } from "react";
+import { useState } from "react";
 import { type AnyScoreRatingAlg, type ChartDocument, type V3Game } from "tachi-common";
 
 import IndexCell from "../cells/IndexCell";
@@ -12,9 +12,9 @@ import UserCell from "../cells/UserCell";
 import DropdownRow from "../components/DropdownRow";
 import TachiTable, { type Header } from "../components/TachiTable";
 import { GraphAndJudgementDataComponent } from "../dropdowns/components/DocumentComponent";
-import { GPTDropdownSettings } from "../dropdowns/GPTDropdownSettings";
+import { GameDropdownSettings } from "../dropdowns/GameDropdownSettings";
 import ScoreCoreCells from "../game-core-cells/ScoreCoreCells";
-import { GetGPTCoreHeaders } from "../headers/GameHeaders";
+import { GetGameCoreHeaders } from "../headers/GameHeaders";
 import { CreateRankingHeader } from "../headers/RankingHeader";
 
 export default function RivalChartTable({
@@ -34,7 +34,7 @@ export default function RivalChartTable({
 	const headers: Header<RivalChartDataset[0]>[] = [
 		["#", "#", NumericSOV((x) => x.__related.index)],
 		["User", "User", StrSOV((x) => x.username)],
-		...GetGPTCoreHeaders<RivalChartDataset>(game, rating, setRating, (x) => x.__related.pb),
+		...GetGameCoreHeaders<RivalChartDataset>(game, rating, setRating, (x) => x.__related.pb),
 		CreateRankingHeader(
 			rankingViewMode,
 			setRankingViewMode,
@@ -97,7 +97,7 @@ function Row({
 				<GraphAndJudgementDataComponent
 					chart={chart}
 					score={data.__related.pb}
-					{...{ ...GPTDropdownSettings(game) }}
+					{...{ ...GameDropdownSettings(game) }}
 				/>
 			}
 			nested

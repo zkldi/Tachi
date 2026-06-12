@@ -1,4 +1,4 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type SetState } from "#types/react";
 import {
 	type ComparePBsDataset,
@@ -7,9 +7,8 @@ import {
 	type RivalChartDataset,
 	type ScoreDataset,
 } from "#types/tables";
-import { FormatGPTScoreRatingName } from "#util/misc";
+import { FormatGameScoreRatingName } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import {
 	type AnyScoreRatingAlg,
 	GetGameConfig,
@@ -22,7 +21,7 @@ import {
 import SelectableRating from "../components/SelectableRating";
 import { type Header, type ZTableTHProps } from "../components/TachiTable";
 
-export function GetGPTCoreHeaders<
+export function GetGameCoreHeaders<
 	Dataset extends
 		| ComparePBsDataset
 		| FolderDataset
@@ -43,8 +42,8 @@ export function GetGPTCoreHeaders<
 		const alg = Object.keys(gameConfig.scoreRatingAlgs)[0] as AnyScoreRatingAlg;
 
 		RatingHeader = [
-			FormatGPTScoreRatingName(game, alg),
-			FormatGPTScoreRatingName(game, alg),
+			FormatGameScoreRatingName(game, alg),
+			FormatGameScoreRatingName(game, alg),
 			NumericSOV((x) => kMapToScoreOrPB(x)?.calculatedData[alg] ?? -Infinity),
 		];
 	} else {
@@ -64,7 +63,7 @@ export function GetGPTCoreHeaders<
 		];
 	}
 
-	const implHeaders = GPT_CLIENT_IMPLEMENTATIONS[game].scoreHeaders;
+	const implHeaders = GAME_CLIENT_IMPLEMENTATIONS[game].scoreHeaders;
 
 	const outHeaders: Array<Header<Dataset[0]>> = [];
 

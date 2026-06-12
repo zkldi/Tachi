@@ -64,7 +64,7 @@ export async function GetRecentSessions(userID: integer) {
 	return sessionRows.map((row) => ToSessionDocument(row, scoresBySession.get(row.id) ?? []));
 }
 
-export async function GetRecentlyViewedFoldersAnyGPT(userID: integer) {
+export async function GetRecentlyViewedFoldersAnyGame(userID: integer) {
 	const time = GetTimeXHoursAgo(REASONABLE_HOURS_AGO);
 
 	const rows = await DB.selectFrom("folder_view")

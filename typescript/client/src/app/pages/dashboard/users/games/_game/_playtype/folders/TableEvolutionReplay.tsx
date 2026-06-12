@@ -1,4 +1,4 @@
-import type { FolderStatsInfo, UGPTEvolutionReplayReturns } from "#types/api-returns";
+import type { FolderStatsInfo, UserGameEvolutionReplayReturns } from "#types/api-returns";
 
 import ApiError from "#components/util/ApiError";
 import Icon from "#components/util/Icon";
@@ -7,12 +7,12 @@ import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectButton from "#components/util/SelectButton";
 import { useBucket } from "#components/util/useBucket";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartIDMap, CreateSongMap } from "#util/data";
 import { UppercaseFirst } from "#util/misc";
 import { FormatDate, MillisToSince } from "#util/time";
-import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -141,7 +141,7 @@ export default function TableEvolutionReplay({
 		data: evo,
 		error: evoError,
 		isLoading: evolutionLoading,
-	} = useApiQuery<UGPTEvolutionReplayReturns>(evolutionUrl, undefined, undefined, !open);
+	} = useApiQuery<UserGameEvolutionReplayReturns>(evolutionUrl, undefined, undefined, !open);
 
 	const events = useMemo(() => evo?.events ?? [], [evo?.events]);
 
@@ -403,7 +403,7 @@ export default function TableEvolutionReplay({
 
 	const allEnumColours = useMemo(
 		() =>
-			GPT_CLIENT_IMPLEMENTATIONS[game].enumColours as
+			GAME_CLIENT_IMPLEMENTATIONS[game].enumColours as
 				| Record<string, Record<string, string>>
 				| undefined,
 		[game],
@@ -499,7 +499,7 @@ export default function TableEvolutionReplay({
 								<Icon
 									type={
 										/* @ts-expect-error enum icon keys align with score metrics */
-										GPT_CLIENT_IMPLEMENTATIONS[game].enumIcons[metric]
+										GAME_CLIENT_IMPLEMENTATIONS[game].enumIcons[metric]
 									}
 								/>{" "}
 								{UppercaseFirst(metric)}

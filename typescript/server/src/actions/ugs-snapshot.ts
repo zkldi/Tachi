@@ -7,7 +7,7 @@ import { log } from "#lib/log/log";
 import DB from "#services/pg/db";
 import { GetMillisecondsSince } from "#utils/misc";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
-import { GetAllRankings, GetUGPTPlaycount, IsUserAdmin } from "#utils/user";
+import { GetAllRankings, GetUserGamePlaycount, IsUserAdmin } from "#utils/user";
 import { ExpectedErr } from "bliss";
 
 const PROFILE_BATCH = 500;
@@ -94,7 +94,7 @@ export async function runUgsSnapshotCore() {
 				log.debug(`Snapshotting ${stats.userID} ${stats.game}.`);
 
 				const [playcount, rankings] = await Promise.all([
-					GetUGPTPlaycount(stats.userID, stats.game),
+					GetUserGamePlaycount(stats.userID, stats.game),
 					GetAllRankings(stats),
 				]);
 

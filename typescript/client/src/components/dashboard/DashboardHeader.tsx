@@ -1,5 +1,4 @@
 import Navbar from "#components/nav/Navbar";
-import React from "react";
 
 export function DashboardHeader() {
 	const navItems = [

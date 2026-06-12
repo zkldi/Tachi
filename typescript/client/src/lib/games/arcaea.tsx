@@ -2,10 +2,9 @@ import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import LampCell from "#components/tables/cells/LampCell";
 import MillionsScoreCell from "#components/tables/cells/MillionsScoreCell";
 import { GetEnumColour } from "#lib/game-implementations";
-import { type GPTClientImplementation } from "#lib/types";
+import { type GameClientImplementation } from "#lib/types";
 import { FormatScoreRating, IsNullish } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import {
 	COLOUR_SET,
 	type GamesForGroup,
@@ -15,7 +14,7 @@ import {
 
 import { bgc } from "./_util";
 
-const ARCAEA_DIFFICULTY_COLORS: GPTClientImplementation<
+const ARCAEA_DIFFICULTY_COLORS: GameClientImplementation<
 	GamesForGroup["arcaea"]
 >["difficultyColours"] = {
 	Past: COLOUR_SET.blue,
@@ -25,7 +24,7 @@ const ARCAEA_DIFFICULTY_COLORS: GPTClientImplementation<
 	Beyond: COLOUR_SET.vibrantRed,
 };
 
-const ARCAEA_ENUM_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["enumColours"] = {
+const ARCAEA_ENUM_COLORS: GameClientImplementation<GamesForGroup["arcaea"]>["enumColours"] = {
 	lamp: {
 		LOST: COLOUR_SET.red,
 		"EASY CLEAR": COLOUR_SET.green,
@@ -45,7 +44,7 @@ const ARCAEA_ENUM_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["enum
 	},
 };
 
-const ARCAEA_COLORS: GPTClientImplementation<GamesForGroup["arcaea"]>["classColours"] = {
+const ARCAEA_COLORS: GameClientImplementation<GamesForGroup["arcaea"]>["classColours"] = {
 	badge: {
 		BLUE: bgc("midnightblue", "var(--bs-light)"),
 		GREEN: bgc("darkgreen", "var(--bs-light)"),
@@ -78,7 +77,7 @@ const MaxPureDelta = (sc: PBScoreDocument<"arcaea"> | ScoreDocument<"arcaea">) =
 		? -10000
 		: sc.scoreData.score - sc.scoreData.judgements.pure - 10_000_000;
 
-const ARCAEA_SCORE_HEADERS: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreHeaders"] = [
+const ARCAEA_SCORE_HEADERS: GameClientImplementation<GamesForGroup["arcaea"]>["scoreHeaders"] = [
 	["Score", "Score", NumericSOV((x) => x.scoreData.score)],
 	[
 		"Judgements",
@@ -128,7 +127,7 @@ const ArcaeaJudgementCell = ({
 	);
 };
 
-const ArcaeaCoreCells: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreCoreCells"] = ({
+const ArcaeaCoreCells: GameClientImplementation<GamesForGroup["arcaea"]>["scoreCoreCells"] = ({
 	sc,
 }) => (
 	<>
@@ -142,7 +141,7 @@ const ArcaeaCoreCells: GPTClientImplementation<GamesForGroup["arcaea"]>["scoreCo
 	</>
 );
 
-const ArcaeaRatingCell: GPTClientImplementation<GamesForGroup["arcaea"]>["ratingCell"] = ({
+const ArcaeaRatingCell: GameClientImplementation<GamesForGroup["arcaea"]>["ratingCell"] = ({
 	sc,
 	rating,
 }) => {
@@ -156,7 +155,7 @@ const ArcaeaRatingCell: GPTClientImplementation<GamesForGroup["arcaea"]>["rating
 	);
 };
 
-export const ARCAEA_TOUCH_IMPL: GPTClientImplementation<"arcaea"> = {
+export const ARCAEA_TOUCH_IMPL: GameClientImplementation<"arcaea"> = {
 	sessionImportantScoreCount: 30,
 	ratingSystems: [],
 	enumIcons: {

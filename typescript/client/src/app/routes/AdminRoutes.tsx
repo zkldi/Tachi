@@ -3,10 +3,10 @@ import AdminCronJobsPage from "#app/pages/admin/AdminCronJobsPage";
 import AdminDestructivePage from "#app/pages/admin/AdminDestructivePage";
 import AdminJobQueuePage from "#app/pages/admin/AdminJobQueuePage";
 import AdminOperationsPage from "#app/pages/admin/AdminOperationsPage";
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import { AdminPanelLayout } from "#components/admin/AdminPanelLayout";
 import { UserContext } from "#context/UserContext";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { UserAuthLevels } from "tachi-common";
 

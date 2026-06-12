@@ -37,7 +37,7 @@ async function seedQuest(suffix: string) {
 		.values({
 			id: questId,
 			game: "iidx-sp",
-			name: `UGPT Quest ${suffix}`,
+			name: `Quest ${suffix}`,
 			description: "Test quest",
 			quest_data: JSON.stringify([]),
 		})

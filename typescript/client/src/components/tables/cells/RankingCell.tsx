@@ -1,4 +1,3 @@
-import React from "react";
 import { type integer, type PBScoreDocument } from "tachi-common";
 
 import { rankingColumnTdStyle } from "./ranking-cell-layout";

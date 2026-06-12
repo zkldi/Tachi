@@ -3,7 +3,7 @@ import TitleCell from "#components/tables/cells/TitleCell";
 import MiniTable from "#components/tables/components/MiniTable";
 import ScoreCoreCells from "#components/tables/game-core-cells/ScoreCoreCells";
 import Muted from "#components/util/Muted";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { type FolderDataset } from "#types/tables";
 import { ToFixedFloor, UppercaseFirst } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
@@ -17,7 +17,7 @@ import {
 export default function FolderScoreAverages({
 	folderDataset,
 	game,
-}: { folderDataset: FolderDataset } & UGPT) {
+}: { folderDataset: FolderDataset } & GameProfileProps) {
 	const gameConfig = GetGameConfig(game);
 
 	const metrics = {

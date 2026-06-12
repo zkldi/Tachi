@@ -21,11 +21,11 @@ MY_ACTION: {
 
 ### Action files
 
-Place the implementation in `src/actions/my-action.ts`. Always use `.js` extensions on imports (the package uses ESM):
+Place the implementation in `src/actions/my-action.ts`:
 
 ```typescript
-import { MakeAction } from "#lib/actions/actions.js";
-import DB from "#services/pg/db.js";
+import { MakeAction } from "#lib/actions/actions";
+import DB from "#services/pg/db";
 import { ExpectedErr } from "bliss";
 
 export const ACTION_MyAction = MakeAction(
@@ -75,7 +75,6 @@ return res.status(200).json({ success: true, description: "...", body: result })
 
 ```typescript
 import DB from "#services/pg/db";          // routers / utils
-import DB from "#services/pg/db.js";       // action files (ESM)
 ```
 
 `DB` is a typed `Kysely<Database>` instance. Types come from the generated `tachi-db` workspace package (`src/generated/public/Priv*.ts`).

@@ -46,7 +46,7 @@ export type ClassDeriver<TGame extends V3Game, V extends string> = (
 // {
 //     colour: ClassDeriver<"YELLOW" | "asdf" ...>
 // }
-export type GPTClassDeriverFuncs<TGame extends V3Game> = {
+export type GameClassDeriverFuncs<TGame extends V3Game> = {
 	[C in keyof ClassConfigs[TGame] as ClassConfigs[TGame][C] extends DerivedClassConfig
 		? C
 		: never]: ClassConfigs[TGame][C] extends DerivedClassConfig<infer V>
@@ -75,39 +75,36 @@ export type PBMergeFunction<TGame extends V3Game> = (
  * The only metrics that need validators are those that have `chartDependentMax` set.
  * Otherwise, a validator is built into the ConfScoreMetric.
  */
-export type GPTChartSpecificMetricValidators<TGame extends V3Game> = {
+export type GameChartSpecificMetricValidators<TGame extends V3Game> = {
 	[M in keyof AllConfMetrics[TGame] as AllConfMetrics[TGame][M] extends ChartDependentMax
 		? M
 		: never]: ChartSpecificMetricValidator<TGame>;
 };
 
 /** Derives chart-dependent score metrics (grade, percent, …) from provided score data. */
-export type GPTScoreDeriver<TGame extends V3Game> = (
+export type GameScoreDeriver<TGame extends V3Game> = (
 	scoreData: ScoreData<TGame>,
 	chart: ChartDocument<TGame>,
 ) => MongoDerivedMetrics[TGame];
 
-export type GPTScoreCalcs<TGame extends V3Game> = (
+export type GameScoreCalcs<TGame extends V3Game> = (
 	scoreData: ScoreData<TGame>,
 	derivedData: MongoDerivedMetrics[TGame],
 	chart: ChartDocument<TGame>,
 ) => Record<ScoreRatingAlgorithms[TGame], number | null>;
 
-/** Session ratings from the session's score calculated-data: f(scoreCalcData) -> sessionCalcData. */
-export type GPTSessionCalcs<TGame extends V3Game> = (
+export type GameSessionCalcs<TGame extends V3Game> = (
 	scoreCalcData: Array<ScoreDocument<TGame>["calculatedData"]>,
 ) => Record<SessionRatingAlgorithms[TGame], number | null>;
 
-/** Profile ratings for a v3 `game`: async f(game, userID) -> profile ratings record. */
-export type GPTProfileCalcs<TGame extends V3Game> = (
+export type GameProfileCalcs<TGame extends V3Game> = (
 	game: TGame,
 	userID: integer,
 ) => Promise<Record<ProfileRatingAlgorithms[TGame], number | null>>;
 
-// Class deriver: f(profileRatings) -> derivedClasses (one object with all derived class values).
-export type GPTClassDerivers<TGame extends V3Game> = (
+export type GameClassDerivers<TGame extends V3Game> = (
 	profileRatings: SpecificUserGameStats<TGame>["ratings"],
-) => { [C in keyof GPTClassDeriverFuncs<TGame>]: ReturnType<GPTClassDeriverFuncs<TGame>[C]> };
+) => { [C in keyof GameClassDeriverFuncs<TGame>]: ReturnType<GameClassDeriverFuncs<TGame>[C]> };
 
 /**
  * The float values used to rank this PB against others on the same chart.
@@ -147,33 +144,33 @@ export interface GameImplementation<TGame extends V3Game> {
 	 * For any chart-dependent metrics, such as EX Score for IIDX, how should we
 	 * validate they're correct?
 	 */
-	chartSpecificValidators: GPTChartSpecificMetricValidators<TGame>;
+	chartSpecificValidators: GameChartSpecificMetricValidators<TGame>;
 
 	/**
 	 * How should we derive the derived metrics for this game?
 	 */
-	scoreDeriver: GPTScoreDeriver<TGame>;
+	scoreDeriver: GameScoreDeriver<TGame>;
 
 	/**
 	 * How should we compute the score rating algorithms for this game?
 	 */
-	scoreCalcs: GPTScoreCalcs<TGame>;
+	scoreCalcs: GameScoreCalcs<TGame>;
 
 	/**
 	 * How should we compute session ratings for this game?
 	 */
-	sessionCalcs: GPTSessionCalcs<TGame>;
+	sessionCalcs: GameSessionCalcs<TGame>;
 
 	/**
 	 * How should we compute profile ratings for this game?
 	 */
-	profileCalcs: GPTProfileCalcs<TGame>;
+	profileCalcs: GameProfileCalcs<TGame>;
 
 	/**
 	 * For any "derived" classes for this game (i.e. classes that are the function
 	 * of the user's state), how should they work?
 	 */
-	classDerivers: GPTClassDerivers<TGame>;
+	classDerivers: GameClassDerivers<TGame>;
 
 	/**
 	 * How should we mutate PBs (to join best lamps, lowest BPs, etc.) for this GPT?

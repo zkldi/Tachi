@@ -1,5 +1,4 @@
 import { type SetState } from "#types/react";
-import React from "react";
 import { Form, type FormControlProps, InputGroup } from "react-bootstrap";
 
 export default function FormInput({

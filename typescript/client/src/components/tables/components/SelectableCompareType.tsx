@@ -1,7 +1,6 @@
 import Icon from "#components/util/Icon";
 import { type SetState } from "#types/react";
 import { UppercaseFirst } from "#util/misc";
-import React from "react";
 import { type GameConfig, GetScoreMetrics } from "tachi-common";
 
 import { type ZTableTHProps } from "./TachiTable";

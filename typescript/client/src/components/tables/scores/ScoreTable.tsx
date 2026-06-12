@@ -2,7 +2,7 @@ import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { type ScoreDataset } from "#types/tables";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import { CreateDefaultScoreSearchParams } from "#util/tables/create-search";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
 	type AnyScoreRatingAlg,
 	type integer,
@@ -22,7 +22,7 @@ import { useScoreState } from "../components/UseScoreState";
 import ScoreDropdown from "../dropdowns/ScoreDropdown";
 import ScoreCoreCells from "../game-core-cells/ScoreCoreCells";
 import ChartHeader from "../headers/ChartHeader";
-import { GetGPTCoreHeaders } from "../headers/GameHeaders";
+import { GetGameCoreHeaders } from "../headers/GameHeaders";
 import IndicatorHeader, { EmptyHeader } from "../headers/IndicatorHeader";
 
 export default function ScoreTable({
@@ -49,7 +49,7 @@ export default function ScoreTable({
 		ChartHeader(game, (k) => k.__related.chart),
 		IndicatorHeader,
 		["Song", "Song", StrSOV((x) => x.__related.song.title)],
-		...GetGPTCoreHeaders<ScoreDataset>(game, rating, setRating, (k) => k),
+		...GetGameCoreHeaders<ScoreDataset>(game, rating, setRating, (k) => k),
 		["Timestamp", "Timestamp", NumericSOV((x) => x.timeAchieved ?? 0)],
 		EmptyHeader,
 	];

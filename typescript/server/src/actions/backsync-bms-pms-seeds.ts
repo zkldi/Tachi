@@ -24,9 +24,10 @@ async function loadAllSongsForSeedExport(
 		.select(SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT)
 		.where("game_group", "=", gameGroup)
 		.orderBy("id", "asc")
-		.execute();
+		.execute()
+		.then((r) => r.map(ToSeedSongDocument));
 
-	return rows.map(ToSeedSongDocument);
+	return rows;
 }
 
 async function loadAllChartsForGameGroup(gameGroup: GameGroup): Promise<Array<ChartDocument>> {
@@ -41,7 +42,7 @@ async function loadAllChartsForGameGroup(gameGroup: GameGroup): Promise<Array<Ch
 	return out;
 }
 
-/** DB/API chart row → seed file row (`charts-*.json` uses id/songID, not chartID/nested song). */
+// Turn the db data into the SEEDS_ChartDocument shape.
 function chartDocumentToSeedRow<G extends V3Game>(chart: ChartDocument<G>): SEEDS_ChartDocument<G> {
 	return {
 		id: chart.chartID,

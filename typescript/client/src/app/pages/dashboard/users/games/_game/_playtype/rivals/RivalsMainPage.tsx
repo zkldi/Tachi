@@ -3,9 +3,8 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import SelectLinkButton from "#components/util/SelectLinkButton";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
-import useUGPTBase from "#components/util/useUGPTBase";
-import React from "react";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
+import useUserGameBase from "#components/util/useUserGameBase";
 import { Col, Row } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import {
@@ -32,9 +31,9 @@ export default function RivalsMainPage({ reqUser, game }: { game: V3Game; reqUse
 		`${reqUser.username}'s ${FormatGame(game)} Rivals`,
 	);
 
-	const base = useUGPTBase({ reqUser, game });
+	const base = useUserGameBase({ reqUser, game });
 
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings) {
 		return <div>You have no settings set. How did you cause this?</div>;

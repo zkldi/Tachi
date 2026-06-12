@@ -1,5 +1,4 @@
 import { type JustChildren } from "#types/react";
-import React from "react";
 
 import SplashImage from "./misc/SplashImage";
 

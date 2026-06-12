@@ -1,5 +1,4 @@
 import { type SetState } from "#types/react";
-import React from "react";
 import { Button } from "react-bootstrap";
 import { type integer } from "tachi-common";
 

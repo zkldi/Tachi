@@ -1,11 +1,11 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { UserContext } from "#context/UserContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { IsNullish } from "#util/misc";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { PoyashiBPI } from "rg-stats";
 import {
 	type ChartDocument,
@@ -29,7 +29,7 @@ export default function BPICell({
 	score: PBScoreDocument<GamesForGroup["iidx"]> | ScoreDocument<GamesForGroup["iidx"]>;
 }) {
 	const { user } = useContext(UserContext);
-	const { settings } = useLUGPTSettings<GamesForGroup["iidx"]>();
+	const { settings } = useLoggedInUserGameSettings<GamesForGroup["iidx"]>();
 
 	const bpi = score.calculatedData.BPI;
 	const { kaidenAverage, worldRecord, notecount, bpiCoefficient } = chart.data;
@@ -162,7 +162,7 @@ function FormatAverage(exScore: integer, playtype: "DP" | "SP", notecount: integ
 	return {
 		score: (
 			<ScoreCell
-				colour={GPT_CLIENT_IMPLEMENTATIONS[iidxGame].enumColours.grade[grade]}
+				colour={GAME_CLIENT_IMPLEMENTATIONS[iidxGame].enumColours.grade[grade]}
 				grade={grade}
 				percent={percent}
 				score={exScore}

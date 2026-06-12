@@ -1,12 +1,12 @@
 import { MakeAction } from "#lib/actions/actions";
-import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings";
 import DB from "#services/pg/db";
 import { IsUserAdmin } from "#utils/user";
 import { ExpectedErr } from "bliss";
 import { type ShowcaseStatDetails } from "tachi-common";
 
-export const ACTION_UpdateUgptShowcase = MakeAction(
-	"UPDATE_UGPT_SHOWCASE",
+export const ACTION_UpdateUserGameShowcase = MakeAction(
+	"UPDATE_USER_GAME_SHOWCASE",
 	async (taker, input) => {
 		const { userID, game, stats } = input;
 
@@ -32,7 +32,7 @@ export const ACTION_UpdateUgptShowcase = MakeAction(
 			.where("game_profile.game", "=", game)
 			.execute();
 
-		const newSettings = await GetUGPTSettingsDocument(userID, game);
+		const newSettings = await GetUserGameSettingsDocument(userID, game);
 
 		if (!newSettings) {
 			throw new ExpectedErr(500, "Failed to load settings after updating showcase.");

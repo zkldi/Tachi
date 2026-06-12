@@ -1,6 +1,6 @@
 import type { FolderStatsInfo, TableEvolutionEventAPI } from "#types/api-returns";
 
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import {
 	type FolderDocument,
 	type GameConfig,
@@ -16,7 +16,7 @@ export type FolderTableScopedProps = {
 	reqUser: UserDocument;
 };
 
-export interface UGPTFolderStats {
+export interface UserGameFolderStats {
 	folder: FolderDocument;
 	stats: FolderStatsInfo;
 }
@@ -26,11 +26,10 @@ export interface UGPTFolderStats {
  *
  * `table.folders` is ascending (e.g. Level 1 … 12), and by default we reverse so the
  * highest folder / level renders first. Games can opt out via `reverseFolderOrder` on
- * their GPT client impl, in which case we reverse again — i.e. render in the table's
- * declared order (currently used for BMS/PMS).
+ * their game client impl.
  */
 export function tableFolderSlugsDisplayOrder(table: TableDocument, game: V3Game): string[] {
-	const reverseAgain = GPT_CLIENT_IMPLEMENTATIONS[game].reverseFolderOrder ?? false;
+	const reverseAgain = GAME_CLIENT_IMPLEMENTATIONS[game].reverseFolderOrder ?? false;
 
 	return reverseAgain ? [...table.folders] : [...table.folders].reverse();
 }

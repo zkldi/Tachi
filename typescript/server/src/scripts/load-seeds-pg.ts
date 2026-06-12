@@ -19,19 +19,9 @@
  * promotes user #1 to admin so seed import can run.
  */
 
-import {
-	buildChartIdMap,
-	buildGoalIdRemap,
-	importSeeds,
-	ImportSeedsSubsetForTests,
-} from "../services/pg/seeds";
+import { buildGoalIdRemap, importSeeds, ImportSeedsSubsetForTests } from "../services/pg/seeds";
 
-export {
-	buildChartIdMap,
-	buildGoalIdRemap,
-	importSeeds,
-	ImportSeedsSubsetForTests as importSeedsSubset,
-};
+export { buildGoalIdRemap, importSeeds, ImportSeedsSubsetForTests as importSeedsSubset };
 
 // ── Standalone entrypoint ──────────────────────────────────────────────────
 

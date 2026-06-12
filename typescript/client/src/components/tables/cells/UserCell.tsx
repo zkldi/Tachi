@@ -1,11 +1,10 @@
 import SupporterIcon from "#components/util/SupporterIcon";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { ToAPIURL } from "#util/api";
-import React from "react";
 import { Link } from "react-router-dom";
 import { type UserDocument } from "tachi-common";
 
-export default function UserCell({ user, game }: { user: UserDocument } & GamePT) {
+export default function UserCell({ user, game }: { user: UserDocument } & GameProps) {
 	return (
 		<td
 			className="fading-image-td-right"

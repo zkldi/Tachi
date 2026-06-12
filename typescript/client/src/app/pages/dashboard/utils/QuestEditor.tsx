@@ -21,17 +21,13 @@ import { type RawQuestDocument, type RawQuestlineDocument } from "#types/tachi";
 import { APIFetchV1 } from "#util/api";
 import { ChangeAtPosition, DeleteInPosition } from "#util/misc";
 import { p, type PrudenceSchema } from "prudence";
-import React, { useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { Alert, Badge, Button, Col, Form, Modal, Row, Spinner } from "react-bootstrap";
 import {
 	ALL_GAMES,
 	FormatGame,
 	FormatPrError,
-	type GameGroup,
 	GetGameGroupConfig,
-	LEGACY_GameGroupPTToGame,
-	type LEGACY_GPTString,
-	type LEGACY_Playtype,
 	type V3Game,
 } from "tachi-common";
 
@@ -205,12 +201,9 @@ export default function QuestEditor() {
 	// ── Derived ────────────────────────────────────────────────────────────────
 	const selectedQuest = selectedQuestIdx !== null ? (quests[selectedQuestIdx] ?? null) : null;
 
-	const addQuest = (gptString: LEGACY_GPTString) => {
-		const [game, playtype] = gptString.split(":") as [GameGroup, LEGACY_Playtype];
-		const v3Game: V3Game = LEGACY_GameGroupPTToGame(game, playtype);
-
+	const addQuest = (game: V3Game) => {
 		const newQuest: RawQuestDocument = {
-			game: v3Game,
+			game,
 			name: "Untitled Quest",
 			desc: "Please set a description.",
 			rawQuestData: [],
@@ -651,22 +644,23 @@ function QuestList({
 	onSelect,
 	onAddQuest,
 }: {
-	onAddQuest: (gpt: LEGACY_GPTString) => void;
+	onAddQuest: (game: V3Game) => void;
 	onSelect: (idx: number) => void;
 	quests: Array<RawQuestDocument>;
 	selectedIdx: number | null;
 }) {
-	const [gpt, setGpt] = useState<LEGACY_GPTString | null>(null);
+	const [game, setGame] = useState<V3Game | null>(null);
 
-	const allGpts: Array<{ label: string; value: LEGACY_GPTString }> =
-		TachiConfig.GAME_GROUPS.flatMap((gameGroup) => {
+	const allGames: Array<{ label: string; value: V3Game }> = TachiConfig.GAME_GROUPS.flatMap(
+		(gameGroup) => {
 			const config = GetGameGroupConfig(gameGroup);
 
-			return config.playtypes.map((pt) => ({
-				value: `${gameGroup}:${pt}` as LEGACY_GPTString,
-				label: FormatGame(LEGACY_GameGroupPTToGame(gameGroup, pt)),
+			return config.games.map((game) => ({
+				value: game,
+				label: FormatGame(game),
 			}));
-		});
+		},
+	);
 
 	return (
 		<div className="d-flex flex-column gap-1 mb-3">
@@ -691,23 +685,23 @@ function QuestList({
 			{/* Inline new-quest form */}
 			<div className="mt-2 d-flex gap-2 align-items-center">
 				<Form.Select
-					onChange={(e) => setGpt(e.target.value as LEGACY_GPTString)}
+					onChange={(e) => setGame(e.target.value as V3Game)}
 					size="sm"
 					style={{ flex: 1 }}
-					value={gpt ?? ""}
+					value={game ?? ""}
 				>
 					<option value="">Game…</option>
-					{allGpts.map((g) => (
+					{allGames.map((g) => (
 						<option key={g.value} value={g.value}>
 							{g.label}
 						</option>
 					))}
 				</Form.Select>
 				<Button
-					disabled={gpt === null}
+					disabled={game === null}
 					onClick={() => {
-						if (gpt) {
-							onAddQuest(gpt);
+						if (game) {
+							onAddQuest(game);
 						}
 					}}
 					size="sm"
@@ -736,17 +730,18 @@ function QuestlineComposer({
 	quests: Array<RawQuestDocument>;
 }) {
 	const [newName, setNewName] = useState("");
-	const [newGame, setNewGame] = useState<"" | LEGACY_GPTString>("");
+	const [newGame, setNewGame] = useState<"" | V3Game>("");
 
-	const allGpts: Array<{ label: string; value: LEGACY_GPTString }> =
-		TachiConfig.GAME_GROUPS.flatMap((gameGroup) => {
+	const allGames: Array<{ label: string; value: V3Game }> = TachiConfig.GAME_GROUPS.flatMap(
+		(gameGroup) => {
 			const config = GetGameGroupConfig(gameGroup);
 
-			return config.playtypes.map((pt) => ({
-				value: `${gameGroup}:${pt}` as LEGACY_GPTString,
-				label: FormatGame(LEGACY_GameGroupPTToGame(gameGroup, pt)),
+			return config.games.map((game) => ({
+				value: game,
+				label: FormatGame(game),
 			}));
-		});
+		},
+	);
 
 	return (
 		<div className="d-flex flex-column gap-3 mb-3">
@@ -776,13 +771,13 @@ function QuestlineComposer({
 				/>
 				<div className="d-flex gap-2">
 					<Form.Select
-						onChange={(e) => setNewGame(e.target.value as LEGACY_GPTString)}
+						onChange={(e) => setNewGame(e.target.value as V3Game)}
 						size="sm"
 						style={{ flex: 1 }}
 						value={newGame}
 					>
 						<option value="">Game…</option>
-						{allGpts.map((g) => (
+						{allGames.map((g) => (
 							<option key={g.value} value={g.value}>
 								{g.label}
 							</option>
@@ -795,13 +790,6 @@ function QuestlineComposer({
 								return;
 							}
 
-							const [gameGroup, playtype] = newGame.split(":") as [
-								GameGroup,
-								LEGACY_Playtype,
-							];
-
-							const v3Game = LEGACY_GameGroupPTToGame(gameGroup, playtype);
-
 							const slug = newName
 								.trim()
 								.toLowerCase()
@@ -812,7 +800,7 @@ function QuestlineComposer({
 								questlineID: `${slug}-${Date.now()}`,
 								name: newName.trim(),
 								desc: "",
-								game: v3Game,
+								game: newGame,
 								quests: [],
 							});
 

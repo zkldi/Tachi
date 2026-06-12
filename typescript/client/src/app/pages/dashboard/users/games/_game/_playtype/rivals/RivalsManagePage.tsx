@@ -7,12 +7,12 @@ import Loading from "#components/util/Loading";
 import UserSelectModal from "#components/util/modal/UserSelectModal";
 import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import UserIcon from "#components/util/UserIcon";
 import { UserContext } from "#context/UserContext";
 import { APIFetchV1 } from "#util/api";
 import { SendErrorToast } from "#util/toaster";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Alert, Button, Col } from "react-bootstrap";
 import { Prompt } from "react-router-dom";
 import {
@@ -44,7 +44,7 @@ export default function RivalsManagePage({
 		`Managing ${reqUser.username}'s ${FormatGame(game)} Rivals`,
 	);
 
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const { data, error } = useApiQuery<UserDocument[]>(
 		`/users/${reqUser.id}/games/${game}/rivals`,
@@ -101,7 +101,7 @@ function RivalsOverviewPage({
 
 	const [rivals, setRivals] = useState(initialRivals);
 	const [show, setShow] = useState(false);
-	const { settings, setSettings } = useLUGPTSettings();
+	const { settings, setSettings } = useLoggedInUserGameSettings();
 
 	const [currentRivals, setCurrentRivals] = useState(initialRivals);
 

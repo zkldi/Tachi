@@ -20,7 +20,7 @@ async function seedBmsSongAndChart(opts: {
 			id: songNewID,
 			legacy_id: 970_000 + n,
 			game_group: "bms",
-			title: `Sieglinde GPT Test ${n}`,
+			title: `Sieglinde Test ${n}`,
 			artist: "Test",
 			search_terms: [],
 			alt_titles: [],
@@ -117,7 +117,7 @@ describe("GET /api/v1/games/:game/sieglinde-charts", () => {
 
 		expect(res.body.body.songs).toHaveLength(1);
 		expect(res.body.body.songs[0].id).toBe(songPgId);
-		expect(res.body.body.songs[0].title).toContain("Sieglinde GPT Test");
+		expect(res.body.body.songs[0].title).toContain("Sieglinde Test");
 	});
 
 	it("includes charts with sglHC > 0", async () => {

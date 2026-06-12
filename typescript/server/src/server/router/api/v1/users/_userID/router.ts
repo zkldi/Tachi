@@ -13,7 +13,7 @@ import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import {
 	GetGoalSummary,
-	GetRecentlyViewedFoldersAnyGPT,
+	GetRecentlyViewedFoldersAnyGame,
 	GetRecentPlaycount,
 	GetRecentSessions,
 } from "#utils/queries/summary";
@@ -137,7 +137,7 @@ API_V1_ROUTER.add("GET /users/:userID/recent-summary", withRequestedUser, async 
 	] = await Promise.all([
 		GetRecentPlaycount(user.id),
 		GetRecentSessions(user.id),
-		GetRecentlyViewedFoldersAnyGPT(user.id),
+		GetRecentlyViewedFoldersAnyGame(user.id),
 		GetGoalSummary(user.id),
 	]);
 
@@ -364,7 +364,7 @@ API_V1_ROUTER.add("GET /users/:userID/stats", withRequestedUser, async ({ ctx })
 });
 
 /**
- * Fetch this users recent activity, and all of their rivals for each GPT they've played.
+ * Fetch this users recent activity, and all of their rivals for each game they've played.
  *
  * @name GET /api/v1/users/:userID/activity
  */

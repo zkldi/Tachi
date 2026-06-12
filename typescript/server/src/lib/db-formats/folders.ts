@@ -64,7 +64,7 @@ export async function LoadFolderDocumentsByIds(
 }
 
 /**
- * Loads a folder for this GPT. The key may be **`slug`**, primary **`folder.id`**, or
+ * Loads a folder for this game. The key may be **`slug`**, primary **`folder.id`**, or
  * **`legacy_id`** (in that order of precedence when keys could theoretically collide).
  */
 export async function LoadFolderDocumentByGameAndSlug(

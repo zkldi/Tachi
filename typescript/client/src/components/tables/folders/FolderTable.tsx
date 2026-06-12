@@ -5,7 +5,7 @@ import { WindowContext } from "#context/WindowContext";
 import { type FolderDataset } from "#types/tables";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import { CreateDefaultFolderSearchParams } from "#util/tables/create-search";
-import React, { memo, useCallback, useContext, useMemo, useState } from "react";
+import { memo, useCallback, useContext, useMemo, useState } from "react";
 import { Alert, Button } from "react-bootstrap";
 import { type PBScoreDocument, type ScoreRatingAlgorithms, type V3Game } from "tachi-common";
 
@@ -20,7 +20,7 @@ import { usePBState } from "../components/UseScoreState";
 import PBDropdown from "../dropdowns/PBDropdown";
 import ScoreCoreCells from "../game-core-cells/ScoreCoreCells";
 import ChartHeader from "../headers/ChartHeader";
-import { GetGPTCoreHeaders } from "../headers/GameHeaders";
+import { GetGameCoreHeaders } from "../headers/GameHeaders";
 import { EmptyHeader, FolderIndicatorHeader } from "../headers/IndicatorHeader";
 import { CreateRankingHeader } from "../headers/RankingHeader";
 
@@ -82,7 +82,7 @@ export default function FolderTable({
 		FolderIndicatorHeader,
 		["Song", "Song", StrSOV((x) => x.__related.song.title)],
 		EmptyHeader,
-		...GetGPTCoreHeaders<FolderDataset>(game, rating, setRating, (x) => x.__related.pb),
+		...GetGameCoreHeaders<FolderDataset>(game, rating, setRating, (x) => x.__related.pb),
 		CreateRankingHeader(
 			rankingViewMode,
 			setRankingViewMode,

@@ -77,7 +77,7 @@ export interface ProvidedClassConfig<V extends string = string> extends BaseClas
 }
 
 /**
- * This class is always derived a user's state on this GPT.
+ * This class is always derived a user's state on this game.
  *
  * An example of this would be "jubility colours". These are a function of a user's
  * "jubility" profile metric, and therefore are always derived when a new import comes

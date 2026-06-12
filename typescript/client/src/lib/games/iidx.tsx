@@ -4,15 +4,14 @@ import IIDXLampCell from "#components/tables/cells/IIDXLampCell";
 import RatingCell from "#components/tables/cells/RatingCell";
 import ScoreCell from "#components/tables/cells/ScoreCell";
 import { GetEnumColour } from "#lib/game-implementations";
-import { type GPTClientImplementation } from "#lib/types";
+import { type GameClientImplementation } from "#lib/types";
 import { ChangeOpacity } from "#util/color-opacity";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { COLOUR_SET, type GamesForGroup, IIDX_LAMPS, IIDXLIKE_GBOUNDARIES } from "tachi-common";
 
 import { bgc, CreateRatingSys } from "./_util";
 
-const IIDX_ENUM_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["enumColours"] = {
+const IIDX_ENUM_COLOURS: GameClientImplementation<GamesForGroup["iidx"]>["enumColours"] = {
 	grade: {
 		F: COLOUR_SET.gray,
 		E: COLOUR_SET.red,
@@ -37,7 +36,7 @@ const IIDX_ENUM_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["enumCol
 	},
 };
 
-const IIDX_DIFF_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["difficultyColours"] = {
+const IIDX_DIFF_COLOURS: GameClientImplementation<GamesForGroup["iidx"]>["difficultyColours"] = {
 	NORMAL: COLOUR_SET.blue,
 	HYPER: COLOUR_SET.orange,
 	ANOTHER: COLOUR_SET.red,
@@ -56,13 +55,13 @@ const IIDX_DIFF_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["difficu
 	"Kiraku LEGGENDARIA": COLOUR_SET.purple,
 };
 
-const IIDX_HEADERS: GPTClientImplementation<GamesForGroup["iidx"]>["scoreHeaders"] = [
+const IIDX_HEADERS: GameClientImplementation<GamesForGroup["iidx"]>["scoreHeaders"] = [
 	["Score", "Score", NumericSOV((x) => x.scoreData.percent)],
 	["Deltas", "Deltas", NumericSOV((x) => x.scoreData.percent)],
 	["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
 ];
 
-const IIDX_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["classColours"] = {
+const IIDX_COLOURS: GameClientImplementation<GamesForGroup["iidx"]>["classColours"] = {
 	dan: {
 		KYU_7: bgc("green", "var(--bs-light)"),
 		KYU_6: bgc("green", "var(--bs-light)"),
@@ -86,7 +85,7 @@ const IIDX_COLOURS: GPTClientImplementation<GamesForGroup["iidx"]>["classColours
 	},
 };
 
-const IIDXCoreCells: GPTClientImplementation<GamesForGroup["iidx"]>["scoreCoreCells"] = ({
+const IIDXCoreCells: GameClientImplementation<GamesForGroup["iidx"]>["scoreCoreCells"] = ({
 	sc,
 	chart,
 }) => (
@@ -115,9 +114,8 @@ const IIDXCoreCells: GPTClientImplementation<GamesForGroup["iidx"]>["scoreCoreCe
 	</>
 );
 
-/** Applied to the profile stats table value cell only (see UGPTRatingsTable). */
 const IIDX_PROFILE_RATING_VALUE_CELL_STYLE: NonNullable<
-	GPTClientImplementation<GamesForGroup["iidx"]>["profileRatingAlgRowStyle"]
+	GameClientImplementation<GamesForGroup["iidx"]>["profileRatingAlgRowStyle"]
 > = {
 	ktLampRating: { backgroundColor: ChangeOpacity(COLOUR_SET.purple, 0.12) },
 	ktLampRatingHC: { backgroundColor: ChangeOpacity(COLOUR_SET.orange, 0.14) },
@@ -125,7 +123,7 @@ const IIDX_PROFILE_RATING_VALUE_CELL_STYLE: NonNullable<
 	BPI: { backgroundColor: ChangeOpacity(COLOUR_SET.paleBlue, 0.12) },
 };
 
-const IIDXRatingCell: GPTClientImplementation<GamesForGroup["iidx"]>["ratingCell"] = ({
+const IIDXRatingCell: GameClientImplementation<GamesForGroup["iidx"]>["ratingCell"] = ({
 	sc,
 	chart,
 	rating,
@@ -139,7 +137,7 @@ const IIDXRatingCell: GPTClientImplementation<GamesForGroup["iidx"]>["ratingCell
 	</>
 );
 
-export const IIDX_SP_IMPL: GPTClientImplementation<"iidx-sp"> = {
+export const IIDX_SP_IMPL: GameClientImplementation<"iidx-sp"> = {
 	sessionImportantScoreCount: 20,
 	difficultyColours: IIDX_DIFF_COLOURS,
 	enumColours: IIDX_ENUM_COLOURS,
@@ -183,7 +181,7 @@ export const IIDX_SP_IMPL: GPTClientImplementation<"iidx-sp"> = {
 	profileRatingAlgRowStyle: IIDX_PROFILE_RATING_VALUE_CELL_STYLE,
 };
 
-export const IIDX_DP_IMPL: GPTClientImplementation<"iidx-dp"> = {
+export const IIDX_DP_IMPL: GameClientImplementation<"iidx-dp"> = {
 	sessionImportantScoreCount: 20,
 	difficultyColours: IIDX_DIFF_COLOURS,
 	enumColours: IIDX_ENUM_COLOURS,

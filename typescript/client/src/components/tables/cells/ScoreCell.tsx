@@ -1,6 +1,5 @@
 import { ChangeOpacity } from "#util/color-opacity";
 import { ToFixedFloor } from "#util/misc";
-import React from "react";
 import { type integer } from "tachi-common";
 
 export default function ScoreCell({

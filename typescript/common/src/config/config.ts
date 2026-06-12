@@ -293,7 +293,8 @@ export function GetSpecificGameConfig<TGame extends V3Game>(game: TGame) {
 	return GAME_CONFIGS[game] as unknown as SpecificGameConfig<TGame>;
 }
 
-export const allGPTStrings = Object.keys(GAME_CONFIGS) as Array<LEGACY_GPTString>;
+// @deprecated
+export const LEGACY_allGPTStrings = Object.keys(GAME_CONFIGS) as Array<LEGACY_GPTString>;
 
 export function GetScoreMetrics(
 	gameConfig: GameConfig,

@@ -6,15 +6,14 @@ import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { type QuestlineReturn } from "#types/api-returns";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { CreateGoalMap } from "#util/data";
 import { CreateQuestMap } from "#util/misc";
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import { FormatGame } from "tachi-common";
 
-export default function QuestlinePage({ game }: GamePT) {
+export default function QuestlinePage({ game }: GameProps) {
 	const { questlineID } = useParams<{ questlineID: string }>();
 
 	const { data, error } = useApiQuery<QuestlineReturn>(

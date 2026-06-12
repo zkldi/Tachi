@@ -1,5 +1,4 @@
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import { type GetEnumValue } from "tachi-common/types/metrics";
 
 import { constrainedLampTdStyle } from "./delta-lamp-cell-layout";

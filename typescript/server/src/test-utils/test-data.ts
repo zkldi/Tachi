@@ -35,8 +35,8 @@ import {
 	type QuestSubscriptionDocument,
 	type ScoreDocument,
 	type SongDocument,
-	type UGPTSettingsDocument,
 	type UserDocument,
+	type UserGameSettingsDocument,
 } from "tachi-common";
 
 import { dmf } from "./misc";
@@ -1112,7 +1112,7 @@ export const FakeOtherUser: UserDocument = {
 	usernameLowercase: "other_user",
 };
 
-export const FakeGameSettings: UGPTSettingsDocument = {
+export const FakeGameSettings: UserGameSettingsDocument = {
 	game: "iidx-sp",
 	preferences: {
 		defaultTable: null,

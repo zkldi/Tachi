@@ -1,5 +1,4 @@
 import { type JustChildren } from "#types/react";
-import React from "react";
 import { type integer } from "tachi-common";
 
 export default function MiniTable({

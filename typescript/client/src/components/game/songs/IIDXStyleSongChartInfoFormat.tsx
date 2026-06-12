@@ -1,5 +1,4 @@
 import { FormatTables } from "#util/misc";
-import React from "react";
 import {
 	type ChartDocument,
 	FormatDifficultyLong,

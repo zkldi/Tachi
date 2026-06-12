@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { type GoalDocument } from "tachi-common";
 
-import useLUGPTSettings from "./useLUGPTSettings";
+import useLoggedInUserGameSettings from "./useLoggedInUserGameSettings";
 
 export default function GoalLink({ goal, noPad }: { goal: GoalDocument; noPad?: boolean }) {
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const pad = noPad ? "" : "ms-2";
 	const v3Game = goal.game;

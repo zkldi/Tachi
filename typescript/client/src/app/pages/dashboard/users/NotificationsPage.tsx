@@ -1,4 +1,4 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import NotificationRow from "#components/notifications/NotificationRow";
 import MiniTable from "#components/tables/components/MiniTable";
@@ -6,7 +6,7 @@ import Loading from "#components/util/Loading";
 import { NotificationsContext } from "#context/NotificationsContext";
 import { UserContext } from "#context/UserContext";
 import { APIFetchV1 } from "#util/api";
-import React, { useContext, useEffect, useMemo } from "react";
+import { useContext, useEffect, useMemo } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { type UserDocument } from "tachi-common";
 

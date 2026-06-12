@@ -27,7 +27,7 @@ import {
 	FormatUserDoc,
 	GetAllRankings,
 	GetLeaderboardRanksForUserIds,
-	GetUGPTPlaycount,
+	GetUserGamePlaycount,
 	GetUserPrivateInfo,
 	GetUsersRankingAndOutOf,
 	GetUsersWithIDs,
@@ -171,7 +171,7 @@ API_V1_ROUTER.add(
 		const currentSnapshot: Omit<UserGameStatsSnapshotDocument, "game" | "playtype" | "userID"> =
 			{
 				classes: stats.classes,
-				playcount: await GetUGPTPlaycount(user.id, game),
+				playcount: await GetUserGamePlaycount(user.id, game),
 				rankings: await GetAllRankings(stats),
 				ratings: stats.ratings,
 				timestamp: Date.now(),
@@ -368,7 +368,7 @@ API_V1_ROUTER.add(
 		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(v3Game);
 
 		log.info(
-			`Recieved request to delete UGPT ${FormatUserDoc(user)} ${LEGACY_FormatGameGroupPT(gameGroup, playtype)}`,
+			`Recieved request to delete user-game ${FormatUserDoc(user)} ${LEGACY_FormatGameGroupPT(gameGroup, playtype)}`,
 		);
 
 		const privateInfo = await GetUserPrivateInfo(user.id);

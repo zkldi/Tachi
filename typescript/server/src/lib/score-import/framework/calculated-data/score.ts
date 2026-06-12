@@ -18,14 +18,16 @@ export function CreateScoreCalcData<TGame extends V3Game>(
 ) {
 	const impl = GAME_IMPLEMENTATIONS[chart.game];
 
-	// Union of per-GPT `scoreDeriver` signatures is not callable with generic `GPT`.
+	// Union of per-game `scoreDeriver` signatures is not callable with a generic game
+	// so hack here with as any.
 
+	// derive score data and then run calc
 	const derivedData = impl.scoreDeriver(
 		scoreData as any,
 		chart as any,
 	) as MongoDerivedMetrics[TGame];
 
-	// Per-GPT `scoreCalcs` take game-specific score/derived types; at runtime inputs match `game`.
+	// override generic types into concrete ones
 	const scoreCalcs = impl.scoreCalcs as unknown as (
 		scoreData: ScoreData<TGame>,
 		derivedData: MongoDerivedMetrics[TGame],

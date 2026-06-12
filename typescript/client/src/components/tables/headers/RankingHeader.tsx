@@ -1,6 +1,5 @@
 import { type SetState } from "#types/react";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { type PBScoreDocument } from "tachi-common";
 
 import { type RankingViewMode } from "../cells/RankingCell";

@@ -1,11 +1,11 @@
-import GPTChartPage from "#app/pages/dashboard/games/_game/_playtype/GPTChartPage";
-import GPTChartsPage from "#app/pages/dashboard/games/_game/_playtype/GPTChartsPage";
-import GPTDevInfo from "#app/pages/dashboard/games/_game/_playtype/GPTDevInfo";
-import GPTLeaderboardsPage from "#app/pages/dashboard/games/_game/_playtype/GPTLeaderboardsPage";
-import GPTMainPage from "#app/pages/dashboard/games/_game/_playtype/GPTMainPage";
-import { ErrorPage } from "#app/pages/ErrorPage";
+import GameChartPage from "#app/pages/dashboard/games/_game/GameChartPage";
+import GameChartsPage from "#app/pages/dashboard/games/_game/GameChartsPage";
+import GameDevInfo from "#app/pages/dashboard/games/_game/GameDevInfo";
+import GameLeaderboardsPage from "#app/pages/dashboard/games/_game/GameLeaderboardsPage";
+import GameMainPage from "#app/pages/dashboard/games/_game/GameMainPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import ChartInfoFormat from "#components/game/charts/ChartInfoFormat";
-import { GPTBottomNav } from "#components/game/GPTHeader";
+import GameBottomNav from "#components/game/GameBottomNav";
 import SongChartInfoFormat from "#components/game/songs/SongChartInfoFormat";
 import QuestlinePage from "#components/game/targets/QuestlinePage";
 import QuestPage from "#components/game/targets/QuestPage";
@@ -18,14 +18,14 @@ import Loading from "#components/util/Loading";
 import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectButton from "#components/util/SelectButton";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { BackgroundContext } from "#context/BackgroundContext";
 import { TargetsContextProvider } from "#context/TargetsContext";
-import { UGPTContextProvider } from "#context/UGPTContext";
+import { UserGameContextProvider } from "#context/UserGameContext";
 import { UserSettingsContext } from "#context/UserSettingsContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type SongsReturn } from "#types/api-returns";
-import { type GamePT, type SetState } from "#types/react";
+import { type GameProps, type SetState } from "#types/react";
 import { ToCDNURL } from "#util/api";
 import { IsSupportedGame } from "#util/asserts";
 import { ChangeOpacity } from "#util/color-opacity";
@@ -33,7 +33,7 @@ import { CreateChartLink } from "#util/data";
 import { getGameGroupBannerRelPathForWeekday } from "#util/game-group-banner-counts";
 import { SelectRightChart } from "#util/misc";
 import { NumericSOV, StrSOV } from "#util/sorts";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Redirect, Route, Switch, useParams } from "react-router-dom";
 import {
@@ -83,11 +83,11 @@ function V3GameRoutes() {
 	const game = gameParam;
 
 	return (
-		<UGPTContextProvider>
+		<UserGameContextProvider>
 			<TargetsContextProvider>
 				<GameV3Routes game={game} />
 			</TargetsContextProvider>
-		</UGPTContextProvider>
+		</UserGameContextProvider>
 	);
 }
 
@@ -95,12 +95,12 @@ function GameV3Routes({ game }: { game: V3Game }) {
 	return (
 		<>
 			<div className="card">
-				<GPTBottomNav baseUrl={`/games/${game}`} />
+				<GameBottomNav baseUrl={`/games/${game}`} />
 			</div>
 			<Divider />
 			<Switch>
 				<Route exact path="/games/:game">
-					<GPTMainPage game={game} />
+					<GameMainPage game={game} />
 				</Route>
 
 				<Route exact path="/games/:game/songs">
@@ -108,7 +108,7 @@ function GameV3Routes({ game }: { game: V3Game }) {
 				</Route>
 
 				<Route exact path="/games/:game/charts">
-					<GPTChartsPage game={game} />
+					<GameChartsPage game={game} />
 				</Route>
 
 				<Route path="/games/:game/charts/:chartID">
@@ -120,14 +120,14 @@ function GameV3Routes({ game }: { game: V3Game }) {
 				</Route>
 
 				<Route path="/games/:game/(quests|questlines|goals)">
-					<GPTQuestRoutes game={game} />
+					<GameQuestRoutes game={game} />
 				</Route>
 
 				<Route exact path="/games/:game/leaderboards">
-					<GPTLeaderboardsPage game={game} />
+					<GameLeaderboardsPage game={game} />
 				</Route>
 				<Route exact path="/games/:game/dev-info">
-					<GPTDevInfo game={game} />
+					<GameDevInfo game={game} />
 				</Route>
 
 				<Route path="*">
@@ -138,7 +138,7 @@ function GameV3Routes({ game }: { game: V3Game }) {
 	);
 }
 
-function GPTQuestRoutes({ game }: GamePT) {
+function GameQuestRoutes({ game }: GameProps) {
 	return (
 		<>
 			<Switch>
@@ -166,7 +166,7 @@ function GPTQuestRoutes({ game }: GamePT) {
 	);
 }
 
-function ChartPageRoutes({ game }: GamePT) {
+function ChartPageRoutes({ game }: GameProps) {
 	const { chartID } = useParams<{ chartID: string }>();
 
 	const { data: singleData, error: chartErr } = useApiQuery<{
@@ -217,7 +217,7 @@ function ChartPageRoutes({ game }: GamePT) {
 				setActiveChart={setActiveChart}
 			/>
 			<Divider />
-			<GPTChartPage chart={activeChart} game={game} song={songsData.song} />
+			<GameChartPage chart={activeChart} game={game} song={songsData.song} />
 			{settings?.preferences.developerMode && (
 				<>
 					<Divider />
@@ -230,7 +230,7 @@ function ChartPageRoutes({ game }: GamePT) {
 	);
 }
 
-function SongChartRedirectRoutes({ game }: GamePT) {
+function SongChartRedirectRoutes({ game }: GameProps) {
 	const { songID } = useParams<{ songID: string }>();
 
 	const { data, error } = useApiQuery<SongsReturn>(`/games/${game}/songs/${songID}`);
@@ -281,7 +281,7 @@ function SongChartRedirectRoutes({ game }: GamePT) {
 	);
 }
 
-function SongSongIdOnlyRedirect({ charts, game }: { charts: ChartDocument[] } & GamePT) {
+function SongSongIdOnlyRedirect({ charts, game }: { charts: ChartDocument[] } & GameProps) {
 	const hardest = charts.slice(0).sort(NumericSOV((x) => x.levelNum, true))[0];
 
 	if (!hardest.chartID) {
@@ -296,7 +296,7 @@ function SongSongIdOnlyRedirect({ charts, game }: { charts: ChartDocument[] } & 
 	return <Redirect to={`/games/${game}/charts/${hardest.chartID}`} />;
 }
 
-function SongDifficultyRedirect({ data, game }: { data: SongsReturn } & GamePT) {
+function SongDifficultyRedirect({ data, game }: { data: SongsReturn } & GameProps) {
 	const { difficulty: d } = useParams<{ difficulty: string }>();
 	const difficulty = decodeURIComponent(d);
 
@@ -319,7 +319,7 @@ function SongInfoHeader({
 }: {
 	activeChart: ChartDocument | null;
 	setActiveChart: SetState<ChartDocument | null>;
-} & GamePT &
+} & GameProps &
 	SongsReturn) {
 	const gameConfig = GetGameConfig(game);
 	const sortedCharts = charts.slice(0);
@@ -415,7 +415,7 @@ function SongInfoHeader({
 type Props = {
 	activeChart: ChartDocument | null;
 	setActiveChart: SetState<ChartDocument | null>;
-} & { song: SongDocument } & GamePT;
+} & { song: SongDocument } & GameProps;
 
 const ITG_COLOUR_LOOKUP = {
 	Beginner: COLOUR_SET.paleBlue,
@@ -432,7 +432,7 @@ function DifficultyButton({
 	setActiveChart,
 	activeChart,
 }: { chart: ChartDocument } & Props) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const diffTag = chart.difficulty;
 	const gameGroup = GameToGameGroup(game);
@@ -522,7 +522,7 @@ function IIDXDifficultyList({
 }: {
 	charts: ChartDocument[];
 } & Props) {
-	const { settings } = useLUGPTSettings<GamesForGroup["iidx"]>();
+	const { settings } = useLoggedInUserGameSettings<GamesForGroup["iidx"]>();
 
 	const [set, setSet] = useState<"All Scratch" | "Kichiku" | "Kiraku" | null>(null);
 

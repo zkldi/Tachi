@@ -3,7 +3,6 @@ import Divider from "#components/util/Divider";
 import ExternalLink from "#components/util/ExternalLink";
 import Muted from "#components/util/Muted";
 import { TachiConfig } from "#lib/config";
-import React from "react";
 import { Alert } from "react-bootstrap";
 
 export default function ITGHookPage() {

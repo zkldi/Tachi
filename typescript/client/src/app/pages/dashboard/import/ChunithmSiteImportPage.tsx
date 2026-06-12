@@ -2,7 +2,6 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import ExternalLink from "#components/util/ExternalLink";
 import { TachiConfig } from "#lib/config";
-import React from "react";
 
 export default function ChunithmSiteImportPage() {
 	useSetSubheader(["Import Scores", "CHUNITHM Site Importer"]);

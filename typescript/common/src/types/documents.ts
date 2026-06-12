@@ -8,7 +8,6 @@ import type {
 	GameGroupFromGame,
 	integer,
 	Judgements,
-	LEGACY_GPTStringToGameGroup,
 	MongoDerivedMetrics,
 	MongoOptionalMetrics,
 	MongoProvidedMetrics,
@@ -25,7 +24,6 @@ import type {
 	SongDocumentData,
 	UserAuthLevels,
 	V3Game,
-	V3GameToGPTString,
 	Versions,
 } from "../types";
 import type { APIPermissions } from "./api";
@@ -47,7 +45,7 @@ export interface BaseGoalDocument<TGame extends V3Game = V3Game> {
 interface GoalCriteria<_TGame extends V3Game = V3Game> {
 	// vvv this basically doesn't work as it starts thinking this might be a symbol
 	// causing a myriad of annoying errors.
-	// key: keyof DerivedMetrics[GPT] | keyof ProvidedMetrics[GPT];
+	// key: keyof DerivedMetrics[TGame] | keyof ProvidedMetrics[TGame];
 
 	// doing this silly hack instead.
 	key: string;
@@ -328,7 +326,7 @@ export interface SpecificUserGameStats<TGame extends V3Game> {
 }
 
 /**
- * GPT agnostic stats for a game. This type is easier to work with than the
+ * Game agnostic stats for a game. This type is easier to work with than the
  * specificUserGameStats one for general cases.
  */
 export interface UserGameStats {
@@ -479,8 +477,9 @@ export interface PBScoreDocument<TGame extends V3Game = V3Game> {
 
 		// out of their rivals, what is their position on this chart?
 		// note that we don't need to store rivalOutOf, as it's pretty much a constant
-		// that can just be read from the UGPT settings.
-		// null if the user has no rivals.
+		// that can just be read from the UserGameSettings.
+		//
+		// this value is null if the user has no rivals.
 		rivalRank: integer | null;
 	};
 	userID: integer;
@@ -636,7 +635,7 @@ export interface ShowcaseStatChart {
 	chartID: string;
 }
 
-export interface UGPTSettingsDocument<TGame extends V3Game = V3Game> {
+export interface UserGameSettingsDocument<TGame extends V3Game = V3Game> {
 	userID: integer;
 	game: TGame;
 	preferences: {
@@ -697,7 +696,7 @@ export interface KsHookSettingsDocument {
 export interface OrphanChartDocument<TGame extends V3Game = V3Game> {
 	game: TGame;
 	chartDoc: ChartDocument<TGame>;
-	songDoc: SongDocument<LEGACY_GPTStringToGameGroup[V3GameToGPTString[TGame]]>;
+	songDoc: SongDocument<GameGroupFromGame[TGame]>;
 	userIDs: Array<integer>;
 }
 

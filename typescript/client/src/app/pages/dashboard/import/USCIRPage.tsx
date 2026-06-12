@@ -2,7 +2,6 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import ExternalLink from "#components/util/ExternalLink";
 import { ToServerURL } from "#util/api";
-import React from "react";
 import { Alert } from "react-bootstrap";
 
 export default function USCIRPage() {

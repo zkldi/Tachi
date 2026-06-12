@@ -4,18 +4,17 @@ import SDVXLampCell from "#components/tables/cells/SDVXLampCell";
 import VF6Cell from "#components/tables/cells/VF6Cell";
 import VF7Cell from "#components/tables/cells/VF7Cell";
 import { GetEnumColour } from "#lib/game-implementations";
-import { type GPTClientImplementation } from "#lib/types";
+import { type GameClientImplementation } from "#lib/types";
 import { ChangeOpacity } from "#util/color-opacity";
 import { FormatMillions } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { COLOUR_SET, type GamesForGroup, SDVX_GRADES, SDVX_LAMPS } from "tachi-common";
 
 import { bgc, CreateRatingSys } from "./_util";
 
 type SDVXLikes = GamesForGroup["sdvx" | "usc"];
 
-const SDVXLIKE_ENUM_COLOURS: GPTClientImplementation<SDVXLikes>["enumColours"] = {
+const SDVXLIKE_ENUM_COLOURS: GameClientImplementation<SDVXLikes>["enumColours"] = {
 	grade: {
 		D: COLOUR_SET.gray,
 		C: COLOUR_SET.red,
@@ -39,7 +38,7 @@ const SDVXLIKE_ENUM_COLOURS: GPTClientImplementation<SDVXLikes>["enumColours"] =
 	},
 };
 
-const USCCoreCells: GPTClientImplementation<GamesForGroup["usc"]>["scoreCoreCells"] = ({ sc }) => (
+const USCCoreCells: GameClientImplementation<GamesForGroup["usc"]>["scoreCoreCells"] = ({ sc }) => (
 	<>
 		<MillionsScoreCell
 			colour={GetEnumColour(sc, "grade")}
@@ -51,7 +50,7 @@ const USCCoreCells: GPTClientImplementation<GamesForGroup["usc"]>["scoreCoreCell
 	</>
 );
 
-const SDVXCoreCells: GPTClientImplementation<"sdvx">["scoreCoreCells"] = ({ sc }) => (
+const SDVXCoreCells: GameClientImplementation<"sdvx">["scoreCoreCells"] = ({ sc }) => (
 	<>
 		<td
 			style={{
@@ -73,10 +72,14 @@ const SDVXCoreCells: GPTClientImplementation<"sdvx">["scoreCoreCells"] = ({ sc }
 	</>
 );
 
-const SDVXRatingCell: GPTClientImplementation<SDVXLikes>["ratingCell"] = ({ sc, chart, rating }) =>
+const SDVXRatingCell: GameClientImplementation<SDVXLikes>["ratingCell"] = ({
+	sc,
+	chart,
+	rating,
+}) =>
 	rating === "VF7" ? <VF7Cell chart={chart} score={sc} /> : <VF6Cell chart={chart} score={sc} />;
 
-export const SDVX_IMPL: GPTClientImplementation<"sdvx"> = {
+export const SDVX_IMPL: GameClientImplementation<"sdvx"> = {
 	sessionImportantScoreCount: 50,
 	enumColours: SDVXLIKE_ENUM_COLOURS,
 	enumIcons: {
@@ -194,7 +197,7 @@ export const SDVX_IMPL: GPTClientImplementation<"sdvx"> = {
 	scoreCoreCells: SDVXCoreCells,
 	ratingCell: SDVXRatingCell,
 };
-export const USC_IMPL: GPTClientImplementation<GamesForGroup["usc"]> = {
+export const USC_IMPL: GameClientImplementation<GamesForGroup["usc"]> = {
 	sessionImportantScoreCount: 50,
 	enumColours: SDVXLIKE_ENUM_COLOURS,
 	enumIcons: {

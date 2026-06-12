@@ -1,4 +1,4 @@
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { UserContext } from "#context/UserContext";
 import { IsNullish } from "#util/misc";
 import React, { useContext } from "react";
@@ -27,7 +27,7 @@ export default function VF6Cell({
 	score: PBScoreDocument<VF6Game> | ScoreDocument<VF6Game>;
 }) {
 	const { user } = useContext(UserContext);
-	const { settings } = useLUGPTSettings<VF6Game>();
+	const { settings } = useLoggedInUserGameSettings<VF6Game>();
 
 	if (IsNullish(score.calculatedData.VF6)) {
 		return <td>N/A</td>;

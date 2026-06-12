@@ -12,7 +12,7 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import { UserContext } from "#context/UserContext";
 import { UserSettingsContext } from "#context/UserSettingsContext";
 import { type SessionAdjacentReturns, type SessionReturns } from "#types/api-returns";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { APIFetchV1 } from "#util/api";
 import { CreateChartMap, CreateScoreIDMap, CreateSongMap } from "#util/data";
 import React, { useContext, useMemo, useState } from "react";
@@ -20,7 +20,7 @@ import { Badge, Button, Col, Row } from "react-bootstrap";
 import { Redirect, useParams } from "react-router-dom";
 import { GameToGameGroup, GetGameGroupConfig, type SessionDocument } from "tachi-common";
 
-export default function SpecificSessionPage({ reqUser, game }: UGPT) {
+export default function SpecificSessionPage({ reqUser, game }: GameProfileProps) {
 	const { sessionID } = useParams<{ sessionID: string }>();
 
 	const { data, error } = useApiQuery<SessionReturns>(`/sessions/${sessionID}`);
@@ -46,7 +46,7 @@ export default function SpecificSessionPage({ reqUser, game }: UGPT) {
 	return <SessionPage key={data.session.sessionID} {...{ data, game, reqUser }} />;
 }
 
-function SessionPage({ data, game }: { data: SessionReturns } & UGPT) {
+function SessionPage({ data, game }: { data: SessionReturns } & GameProfileProps) {
 	const { settings } = useContext(UserSettingsContext);
 
 	const [sessionData, setSessionData] = useState(data);

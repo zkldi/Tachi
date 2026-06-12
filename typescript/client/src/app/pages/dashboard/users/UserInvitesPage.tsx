@@ -9,7 +9,6 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import { APIFetchV1 } from "#util/api";
 import { CopyToClipboard } from "#util/misc";
 import { FormatTime } from "#util/time";
-import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { useQueryClient } from "react-query";
 import { Link } from "react-router-dom";

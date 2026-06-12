@@ -6,7 +6,7 @@ import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { TargetsContext } from "#context/TargetsContext";
 import { type GoalsOnFolderReturn } from "#types/api-returns";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { CreateGoalSubDataset, CreateUserMap } from "#util/data";
 import React, { useContext, useReducer, useState } from "react";
 import { Button, Col } from "react-bootstrap";
@@ -18,7 +18,7 @@ export default function FolderQuestsPage({
 	reqUser,
 }: {
 	folder: FolderDocument;
-} & UGPT) {
+} & GameProfileProps) {
 	const [refresh, forceRefresh] = useReducer((x) => x + 1, 0);
 	const { reloadTargets } = useContext(TargetsContext);
 
@@ -63,7 +63,7 @@ function FolderQuestsInner({
 }: {
 	data: GoalsOnFolderReturn;
 	folder: FolderDocument;
-} & UGPT) {
+} & GameProfileProps) {
 	const userMap = CreateUserMap([reqUser]);
 
 	return <GoalSubInfo dataset={CreateGoalSubDataset(data, userMap)} game={game} />;

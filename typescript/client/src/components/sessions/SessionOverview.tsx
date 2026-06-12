@@ -4,14 +4,14 @@ import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectLinkButton from "#components/util/SelectLinkButton";
-import useUGPTBase from "#components/util/useUGPTBase";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import useUserGameBase from "#components/util/useUserGameBase";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type SessionReturns } from "#types/api-returns";
 import { type SetState } from "#types/react";
 import { type ScoreDataset } from "#types/tables";
-import { FormatGPTSessionRatingName, FormatSessionRating } from "#util/misc";
+import { FormatGameSessionRatingName, FormatSessionRating } from "#util/misc";
 import { FormatDuration } from "#util/time";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Badge, Col, Row } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import {
@@ -42,7 +42,7 @@ export default function SessionOverview({
 	const { scores, session } = sessionData;
 	const game = session.game;
 	const gameConfig = GetGameConfig(game);
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 	const MAX_SCORES = gptImpl.sessionImportantScoreCount;
 
 	const setScores = (scores: ScoreDocument[]) => {
@@ -94,7 +94,7 @@ export default function SessionOverview({
 		setImportantScores(scoreDataset.filter((e) => important.includes(e.scoreID)));
 	}, [data]);
 
-	const base = useUGPTBase({ game, reqUser });
+	const base = useUserGameBase({ game, reqUser });
 	const baseUrl = `${base}/sessions/${session.sessionID}`;
 
 	const highlightedScores = scoreDataset.filter((e) => e.highlight);
@@ -223,7 +223,7 @@ function RatingsOverview({ session }: { session: SessionDocument }) {
 			{Object.keys(gameConfig.sessionRatingAlgs).map((e) => (
 				<Thing
 					key={e}
-					name={`Average ${FormatGPTSessionRatingName(game, e)}`}
+					name={`Average ${FormatGameSessionRatingName(game, e)}`}
 					value={FormatSessionRating(
 						game,
 						e as AnySessionRatingAlg,

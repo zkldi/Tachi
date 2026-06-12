@@ -1,4 +1,3 @@
-import React from "react";
 import { type TachiAPIClientDocument, type UserDocument } from "tachi-common";
 
 import ApiError from "./ApiError";

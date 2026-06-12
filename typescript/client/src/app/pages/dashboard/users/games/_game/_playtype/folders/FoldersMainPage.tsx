@@ -1,14 +1,13 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
-import { type UGPT } from "#types/react";
-import React from "react";
+import { type GameProfileProps } from "#types/react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { FormatGame, GameToGameGroup, GetGameGroupConfig } from "tachi-common";
 
 import FolderTablePage from "./FolderTablePage";
 import SpecificFolderPage from "./SpecificFolderPage";
 
-export default function FoldersMainPage({ reqUser, game }: UGPT) {
+export default function FoldersMainPage({ reqUser, game }: GameProfileProps) {
 	useSetSubheader(
 		[
 			"Users",

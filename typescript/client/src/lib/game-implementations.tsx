@@ -22,7 +22,6 @@ import ScoreCell from "#components/tables/cells/ScoreCell";
 import WaccaJudgementCell from "#components/tables/cells/WACCAJudgementCell";
 import { ChangeOpacity } from "#util/color-opacity";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { COLOUR_SET, type PBScoreDocument, type ScoreDocument, type V3Game } from "tachi-common";
 
 import { bgc, RAINBOW_EX_GRADIENT, RAINBOW_GRADIENT } from "./games/_util";
@@ -32,10 +31,10 @@ import { DDR_DP_IMPL, DDR_SP_IMPL } from "./games/ddr";
 import { GITADORA_DORA_IMPL, GITADORA_GITA_IMPL } from "./games/gitadora";
 import { IIDX_DP_IMPL, IIDX_SP_IMPL } from "./games/iidx";
 import { SDVX_IMPL, USC_IMPL } from "./games/sdvx-usc";
-import { type GPTClientImplementation } from "./types";
+import { type GameClientImplementation } from "./types";
 
-type GPTClientImplementations = {
-	[GPT in V3Game]: GPTClientImplementation<GPT>;
+type GameClientImplementations = {
+	[TGame in V3Game]: GameClientImplementation<TGame>;
 };
 
 const defaultEnumIcons = {
@@ -43,7 +42,7 @@ const defaultEnumIcons = {
 	lamp: "lightbulb",
 } as const;
 
-export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
+export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 	"iidx-sp": IIDX_SP_IMPL,
 	"iidx-dp": IIDX_DP_IMPL,
 	"ddr-sp": DDR_SP_IMPL,
@@ -955,7 +954,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 
 export function GetEnumColour(score: PBScoreDocument | ScoreDocument, enumName: string) {
 	const game = score.game;
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	// @ts-expect-error lol
 	return gptImpl.enumColours[enumName][score.scoreData[enumName]];

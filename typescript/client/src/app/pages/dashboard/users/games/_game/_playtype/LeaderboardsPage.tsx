@@ -6,13 +6,13 @@ import GentleLink from "#components/util/GentleLink";
 import LinkButton from "#components/util/LinkButton";
 import LoadingWrapper from "#components/util/LoadingWrapper";
 import { useProfileRatingAlg } from "#components/util/useScoreRatingAlg";
-import { type GPTLeaderboard, type UGPTLeaderboardAdjacent } from "#types/api-returns";
-import { type GamePT, type SetState, type UGPT } from "#types/react";
+import { type GameLeaderboard, type UserGameLeaderboardAdjacent } from "#types/api-returns";
+import { type GameProfileProps, type GameProps, type SetState } from "#types/react";
 import { APIFetchV1, type UnsuccessfulAPIFetchResponse } from "#util/api";
 import { ChangeOpacity } from "#util/color-opacity";
-import { FormatGPTProfileRating, FormatGPTProfileRatingName, IsNotNullish } from "#util/misc";
+import { FormatGameProfileRating, FormatGameProfileRatingName, IsNotNullish } from "#util/misc";
 import { StrSOV } from "#util/sorts";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useQuery } from "react-query";
 import {
 	type Classes,
@@ -29,11 +29,11 @@ import {
 } from "tachi-common";
 
 interface LeaderboardsData {
-	stats: UGPTLeaderboardAdjacent;
-	leaderboard: GPTLeaderboard;
+	stats: UserGameLeaderboardAdjacent;
+	leaderboard: GameLeaderboard;
 }
 
-export default function LeaderboardsPage({ reqUser, game }: UGPT) {
+export default function LeaderboardsPage({ reqUser, game }: GameProfileProps) {
 	useSetSubheader(
 		[
 			"Users",
@@ -54,13 +54,13 @@ export default function LeaderboardsPage({ reqUser, game }: UGPT) {
 	const { data, error } = useQuery<LeaderboardsData, UnsuccessfulAPIFetchResponse>(
 		url,
 		async () => {
-			const res = await APIFetchV1<UGPTLeaderboardAdjacent>(url);
+			const res = await APIFetchV1<UserGameLeaderboardAdjacent>(url);
 
 			if (!res.success) {
 				throw res;
 			}
 
-			const lRes = await APIFetchV1<GPTLeaderboard>(
+			const lRes = await APIFetchV1<GameLeaderboard>(
 				`/games/${game}/leaderboard?limit=3&alg=${alg}`,
 			);
 
@@ -92,7 +92,7 @@ function LeaderboardsPageContent({
 	data: LeaderboardsData;
 	reqUser: UserDocument;
 	setAlg: SetState<ProfileRatingAlgorithms[V3Game]>;
-} & GamePT) {
+} & GameProps) {
 	const { stats, leaderboard } = data;
 
 	const gameConfig = GetGameConfig(game);
@@ -135,7 +135,7 @@ function LeaderboardsPageContent({
 				</td>
 				<td>
 					{IsNotNullish(s.ratings[alg])
-						? FormatGPTProfileRating(game, alg, s.ratings[alg]!)
+						? FormatGameProfileRating(game, alg, s.ratings[alg]!)
 						: "No Data."}
 				</td>
 				<td>
@@ -171,7 +171,7 @@ function LeaderboardsPageContent({
 		>
 			<MiniTable
 				className="text-center"
-				headers={["Position", "User", FormatGPTProfileRatingName(game, alg), "Classes"]}
+				headers={["Position", "User", FormatGameProfileRatingName(game, alg), "Classes"]}
 			>
 				<>
 					{bestNearbyUser >= 1 &&

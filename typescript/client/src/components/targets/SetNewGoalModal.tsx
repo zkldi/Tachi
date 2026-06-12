@@ -1,7 +1,7 @@
 import CheckEdit from "#components/util/CheckEdit";
 import Divider from "#components/util/Divider";
 import Select from "#components/util/Select";
-import { type GamePT, type SetState, type UGPT } from "#types/react";
+import { type GameProfileProps, type GameProps, type SetState } from "#types/react";
 import { APIFetchV1 } from "#util/api";
 import { clamp, UppercaseFirst } from "#util/misc";
 import React, { useEffect, useMemo, useState } from "react";
@@ -30,7 +30,7 @@ export default function SetNewGoalModal({
 	preData: FolderDocument | { chart: ChartDocument; song: SongDocument };
 	setShow: SetState<boolean>;
 	show: boolean;
-} & UGPT) {
+} & GameProfileProps) {
 	const gameConfig = GetGameConfig(game);
 	const conf = GetScoreMetricConf(
 		gameConfig,
@@ -125,7 +125,7 @@ export function RenderGoalCriteriaPicker({
 	charts: GoalDocument["charts"];
 	criteria: GoalDocument["criteria"];
 	setCriteria: SetState<GoalDocument["criteria"]>;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 
 	return (
@@ -201,7 +201,7 @@ function CriteriaModePicker({
 	charts: GoalDocument["charts"];
 	criteria: GoalDocument["criteria"];
 	onChange: (value: GoalDocument["criteria"]["mode"], countNum?: number) => void;
-} & GamePT) {
+} & GameProps) {
 	const [absCountNum, setAbsCountNum] = useState(
 		criteria.mode === "absolute" ? criteria.countNum : 10,
 	);
@@ -276,7 +276,7 @@ function CriteriaValuePicker({
 }: {
 	criteria: GoalDocument["criteria"];
 	onChange: (value: GoalDocument["criteria"]["value"]) => void;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 	const conf = GetScoreMetricConf(gameConfig, criteria.key);
 

@@ -1,5 +1,4 @@
 import { type JustChildren } from "#types/react";
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 import styles from "./AdminPanelNav.module.scss";

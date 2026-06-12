@@ -29,9 +29,9 @@ export async function SearchSpecificGameSongsAndCharts(game: V3Game, search: str
 }
 
 /**
- * Search this Game/GPTs songs and charts, but globally.
+ * Search this game's songs and charts, but globally.
  *
- * Returns at most `limit` **chart** rows per GPT (same cap as song search). Without this,
+ * Returns at most `limit` **chart** rows per game (same cap as song search). Without this,
  * N matched songs × charts per song could return a huge payload from `/api/v1/search`.
  */
 export async function SearchGlobalGameSongsAndCharts(

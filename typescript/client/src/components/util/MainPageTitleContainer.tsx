@@ -1,5 +1,3 @@
-import React from "react";
-
 import SiteWordmark from "./SiteWordmark";
 
 export default function MainPageTitleContainer({ title, desc }: { desc: string; title: string }) {

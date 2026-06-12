@@ -2,12 +2,12 @@ import TimestampCell from "#components/tables/cells/TimestampCell";
 import ScoreCoreCells from "#components/tables/game-core-cells/ScoreCoreCells";
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { UserContext } from "#context/UserContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type UGPTChartPBComposition } from "#types/api-returns";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type UserGameChartPBComposition } from "#types/api-returns";
 import { type SetState } from "#types/react";
 import { IsScore } from "#util/asserts";
-import { FormatGPTProfileRatingName } from "#util/misc";
-import React, { useContext, useEffect, useState } from "react";
+import { FormatGameProfileRatingName } from "#util/misc";
+import { useContext, useEffect, useState } from "react";
 import { type ChartDocument, type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import CommentContainer from "./CommentContainer";
@@ -25,7 +25,7 @@ export function ScoreInfo({
 }) {
 	const game = score.game;
 	const rating = useScoreRatingAlg(game);
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	return (
 		<div className="col-12">
@@ -33,7 +33,7 @@ export function ScoreInfo({
 				<thead>
 					<tr>
 						<td colSpan={gptImpl.scoreHeaders.length}>Score Info</td>
-						<td>{FormatGPTProfileRatingName(game, rating)}</td>
+						<td>{FormatGameProfileRatingName(game, rating)}</td>
 						<td>Timestamp</td>
 					</tr>
 				</thead>
@@ -83,7 +83,7 @@ export default function DocumentComponent({
 		  }) => JSX.Element)
 		| null;
 	onScoreUpdate?: (sc: ScoreDocument) => void;
-	pbData: UGPTChartPBComposition;
+	pbData: UserGameChartPBComposition;
 	renderScoreInfo?: boolean;
 	score: PBScoreDocument | ScoreDocument;
 	scoreState: {

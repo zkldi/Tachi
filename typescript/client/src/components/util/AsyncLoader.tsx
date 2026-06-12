@@ -1,4 +1,3 @@
-import React from "react";
 import Async from "react-async";
 
 import Loading from "./Loading";

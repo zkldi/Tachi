@@ -24,10 +24,10 @@ async function seedIidxSpProfile(userId: number) {
 
 async function seedIidxChartPb(opts: { userId: number; withComposition?: boolean }) {
 	const n = ++seedCounter;
-	const songPg = `S_UGPT_PB_${n}`;
-	const chartPg = `C_UGPT_PB_${n}`;
-	const chartLegacy = `c_ugpt_pb_legacy_${n}`;
-	const scoreId = `sc-ugpt-pb-${n}`;
+	const songPg = `S_UG_PB_${n}`;
+	const chartPg = `C_UG_PB_${n}`;
+	const chartLegacy = `c_ug_pb_legacy_${n}`;
+	const scoreId = `sc-ug-pb-${n}`;
 
 	await DB.insertInto("song")
 		.values({
@@ -151,7 +151,7 @@ async function insertPbOnChart(opts: {
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/all", () => {
 	it("returns primary-chart PBs with songs and charts", async () => {
-		const { id: userId } = await seedUser({ username: "ugpt_pb_all" });
+		const { id: userId } = await seedUser({ username: "ug_pb_all" });
 		await seedIidxSpProfile(userId);
 		await seedIidxChartPb({ userId });
 		await seedIidxChartPb({ userId });
@@ -167,7 +167,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/all", () => {
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/best", () => {
 	it("orders primary PBs by ktLampRating descending by default", async () => {
-		const { id: userId } = await seedUser({ username: "ugpt_pb_best" });
+		const { id: userId } = await seedUser({ username: "ug_pb_best" });
 		await seedIidxSpProfile(userId);
 
 		const a = await seedIidxChartPb({ userId });
@@ -195,7 +195,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/best", () => {
 	});
 
 	it("orders by alg=BPI with non-null values before null (NULLS LAST)", async () => {
-		const { id: userId } = await seedUser({ username: "ugpt_pb_best_bpi" });
+		const { id: userId } = await seedUser({ username: "ug_pb_best_bpi" });
 		await seedIidxSpProfile(userId);
 
 		const nullA = await seedIidxChartPb({ userId });
@@ -239,8 +239,8 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/best", () => {
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/rivals", () => {
 	it("returns rival PBs and the user PB on the chart", async () => {
-		const { id: mainId } = await seedUser({ username: "ugpt_pb_main" });
-		const { id: rivalId } = await seedUser({ username: "ugpt_pb_rival" });
+		const { id: mainId } = await seedUser({ username: "ug_pb_main" });
+		const { id: rivalId } = await seedUser({ username: "ug_pb_rival" });
 		await seedIidxSpProfile(mainId);
 		await seedIidxSpProfile(rivalId);
 
@@ -267,9 +267,9 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/rivals", () => {
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/leaderboard-adjacent", () => {
 	it("returns adjacent ladder ranks around the user", async () => {
-		const { id: u1 } = await seedUser({ username: "ugpt_pb_lb1" });
-		const { id: u2 } = await seedUser({ username: "ugpt_pb_lb2" });
-		const { id: u3 } = await seedUser({ username: "ugpt_pb_lb3" });
+		const { id: u1 } = await seedUser({ username: "ug_pb_lb1" });
+		const { id: u2 } = await seedUser({ username: "ug_pb_lb2" });
+		const { id: u3 } = await seedUser({ username: "ug_pb_lb3" });
 		await seedIidxSpProfile(u1);
 		await seedIidxSpProfile(u2);
 		await seedIidxSpProfile(u3);
@@ -330,7 +330,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/leaderboard-adjacen
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/song/:songID", () => {
 	it("returns 404 when the song does not exist", async () => {
-		const { id } = await seedUser({ username: "ugpt_pb_song_missing" });
+		const { id } = await seedUser({ username: "ug_pb_song_missing" });
 		await seedIidxSpProfile(id);
 
 		const res = await mockApi.get(
@@ -342,13 +342,13 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/song/:songID", () => {
 	});
 
 	it("returns PBs for every chart on the song the user has played", async () => {
-		const { id: userId } = await seedUser({ username: "ugpt_pb_song_multi" });
+		const { id: userId } = await seedUser({ username: "ug_pb_song_multi" });
 		await seedIidxSpProfile(userId);
 
 		const n = ++seedCounter;
-		const songPg = `S_UGPT_PB_MULT_${n}`;
-		const chartPgA = `C_UGPT_PB_MULT_A_${n}`;
-		const chartPgB = `C_UGPT_PB_MULT_B_${n}`;
+		const songPg = `S_UG_PB_MULT_${n}`;
+		const chartPgA = `C_UG_PB_MULT_A_${n}`;
+		const chartPgB = `C_UG_PB_MULT_B_${n}`;
 
 		await DB.insertInto("song")
 			.values({
@@ -402,12 +402,12 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/song/:songID", () => {
 	});
 
 	it("returns empty PBs when the user has not played any chart of the song", async () => {
-		const { id: userId } = await seedUser({ username: "ugpt_pb_song_empty" });
+		const { id: userId } = await seedUser({ username: "ug_pb_song_empty" });
 		await seedIidxSpProfile(userId);
 
 		const { songPg } = await seedIidxChartPb({ userId });
 
-		const { id: otherId } = await seedUser({ username: "ugpt_pb_song_empty_b" });
+		const { id: otherId } = await seedUser({ username: "ug_pb_song_empty_b" });
 		await seedIidxSpProfile(otherId);
 
 		const res = await mockApi.get(`/api/v1/users/${otherId}/games/iidx-sp/pbs/song/${songPg}`);
@@ -421,7 +421,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/song/:songID", () => {
 
 describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID", () => {
 	it("returns 404 when the chart does not exist", async () => {
-		const { id } = await seedUser({ username: "ugpt_pb_chart_missing" });
+		const { id } = await seedUser({ username: "ug_pb_chart_missing" });
 		await seedIidxSpProfile(id);
 
 		const res = await mockApi.get(
@@ -434,12 +434,12 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID", () => {
 	});
 
 	it("returns 404 when the user has no PB on the chart", async () => {
-		const { id: targetId } = await seedUser({ username: "ugpt_pb_none" });
+		const { id: targetId } = await seedUser({ username: "ug_pb_none" });
 		await seedIidxSpProfile(targetId);
 
 		const n = ++seedCounter;
-		const songPg = `S_UGPT_PB_EMPTY_${n}`;
-		const chartPg = `C_UGPT_PB_EMPTY_${n}`;
+		const songPg = `S_UG_PB_EMPTY_${n}`;
+		const chartPg = `C_UG_PB_EMPTY_${n}`;
 
 		await DB.insertInto("song")
 			.values({
@@ -477,7 +477,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID", () => {
 	});
 
 	it("returns pb and chart (by Postgres chart id)", async () => {
-		const { id: targetId } = await seedUser({ username: "ugpt_pb_ok" });
+		const { id: targetId } = await seedUser({ username: "ug_pb_ok" });
 		await seedIidxSpProfile(targetId);
 		const { chartPg } = await seedIidxChartPb({ userId: targetId });
 
@@ -490,7 +490,7 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID", () => {
 	});
 
 	it("returns composed scores when getComposition is set", async () => {
-		const { id: targetId } = await seedUser({ username: "ugpt_pb_comp" });
+		const { id: targetId } = await seedUser({ username: "ug_pb_comp" });
 		await seedIidxSpProfile(targetId);
 		const { chartPg, scoreId } = await seedIidxChartPb({
 			userId: targetId,

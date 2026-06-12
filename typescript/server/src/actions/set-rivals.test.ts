@@ -36,7 +36,7 @@ describe("ACTION_SetRivals", () => {
 			.execute();
 	});
 
-	it("replaces game_rival rows for the UGPT", async () => {
+	it("replaces game_rival rows for the usergame", async () => {
 		const taker = { ip: "127.0.0.1", acct: { id: userId, username } };
 
 		await ACTION_SetRivals(taker, {

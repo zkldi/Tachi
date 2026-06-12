@@ -1,5 +1,4 @@
 import { type TextColour } from "#types/bootstrap";
-import React from "react";
 
 export default function Icon({
 	type,

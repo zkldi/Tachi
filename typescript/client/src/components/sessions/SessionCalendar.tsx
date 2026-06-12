@@ -6,12 +6,11 @@ import Loading from "#components/util/Loading";
 import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { type SessionReturns } from "#types/api-returns";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { ChangeOpacity } from "#util/color-opacity";
 import { type EventInput } from "@fullcalendar/core";
-import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
-import FullCalendar from "@fullcalendar/react"; // must go before plugins
-import React from "react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import FullCalendar from "@fullcalendar/react";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { COLOUR_SET, FormatGame, type SessionDocument, type UserDocument } from "tachi-common";
@@ -119,7 +118,7 @@ export default function SessionCalendar({
 	);
 }
 
-function SessionTooltip({ sessionID, game, reqUser }: { sessionID: string } & UGPT) {
+function SessionTooltip({ sessionID, game, reqUser }: { sessionID: string } & GameProfileProps) {
 	const { data, error } = useApiQuery<SessionReturns>(`/sessions/${sessionID}`);
 
 	if (error) {

@@ -9,7 +9,7 @@ import DB from "#services/pg/db";
 import { sql } from "kysely";
 import { GetGameConfig, type integer, type ScoreDocument, type V3Game } from "tachi-common";
 
-/** Shared score + chart + song + import select used by activity and UGPT score queries. */
+/** Shared score + chart + song + import select used by activity and usergame score queries. */
 export function scoreDocumentJoin() {
 	return DB.selectFrom("score")
 		.innerJoin("chart", "chart.id", "score.chart_id")
@@ -18,7 +18,7 @@ export function scoreDocumentJoin() {
 		.select(SELECT_SCORE_DOCUMENT);
 }
 
-export async function GetRecentUGPTScores(userID: integer, game: V3Game, limit = 100) {
+export async function GetRecentUserGameScores(userID: integer, game: V3Game, limit = 100) {
 	const rows = await scoreDocumentJoin()
 		.where("score.user_id", "=", userID)
 		.where("score.game", "=", game)
@@ -33,7 +33,7 @@ export async function GetRecentUGPTScores(userID: integer, game: V3Game, limit =
  * Recent scores for a user/game/playtype, ordered by play time (`time_achieved`) descending
  * (Mongo `timeAchieved: -1` parity). Null play times sort last.
  */
-export async function GetRecentUGPTScoresByTimeAchieved(
+export async function GetRecentUserGameScoresByTimeAchieved(
 	userID: integer,
 	game: V3Game,
 	limit = 100,
@@ -71,7 +71,7 @@ export async function GetScoresForUserOnChartIDs(
 }
 
 /** All scores for a user on primary charts only (`chart.is_primary`), unordered (Mongo `/scores/all` parity). */
-export async function GetPrimaryScoresForUserUGPT(userID: integer, game: Game) {
+export async function GetPrimaryScoresForUserGame(userID: integer, game: Game) {
 	const rows = await scoreDocumentJoin()
 		.where("score.user_id", "=", userID)
 		.where("score.game", "=", game)
@@ -81,7 +81,7 @@ export async function GetPrimaryScoresForUserUGPT(userID: integer, game: Game) {
 	return rows.map((row) => ToScoreDocument(row as ScoreDocumentJoinRow));
 }
 
-export async function GetRecentUGPTHighlights(userID: integer, game: V3Game, limit = 100) {
+export async function GetRecentUserGameHighlights(userID: integer, game: V3Game, limit = 100) {
 	const rows = await scoreDocumentJoin()
 		.where("score.user_id", "=", userID)
 		.where("score.game", "=", game)

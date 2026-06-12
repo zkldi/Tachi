@@ -1,6 +1,5 @@
 import { DisplayLevelNum } from "#components/tables/cells/DifficultyCell";
 import Muted from "#components/util/Muted";
-import React from "react";
 import { type ChartDocument, GameToGameGroup, type SongDocument, type V3Game } from "tachi-common";
 
 import DefaultSongChartInfoFormat from "./DefaultSongChartInfoFormat";

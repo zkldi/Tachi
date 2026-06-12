@@ -74,7 +74,7 @@ describe("PATCH /api/v1/users/:userID/games/:game/settings", () => {
 	});
 });
 
-describe("PATCH UGPT settings - extended cases", () => {
+describe("PATCH UG settings - extended cases", () => {
 	it.todo(
 		"port remaining router.oldtest.ts cases (BPI bounds, defaultTable validation, cross-user 403, …)",
 	);

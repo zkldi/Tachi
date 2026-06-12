@@ -13,7 +13,7 @@ import type { ClassProvider } from "../calculated-data/types";
 import type { ClassProcessOptions } from "../profile-calculated-data/class-process-options";
 
 import { CalculateProfileRatings } from "../calculated-data/profile";
-import { CalculateUGPTClasses, ProcessClassDeltas } from "../profile-calculated-data/classes";
+import { CalculateUserGameClasses, ProcessClassDeltas } from "../profile-calculated-data/classes";
 
 export type UpdateUsersGamePlaytypeStatsOptions = {
 	runStartedAt?: CalculationRunStartedAt;
@@ -37,7 +37,7 @@ export async function UpdateUsersGamePlaytypeStats(
 
 	log.debug(`Calculating UGSClasses...`);
 
-	const classes = await CalculateUGPTClasses(game, userID, ratings, classProvider, log);
+	const classes = await CalculateUserGameClasses(game, userID, ratings, classProvider, log);
 
 	log.debug(`Finished Calculating UGSClasses`);
 

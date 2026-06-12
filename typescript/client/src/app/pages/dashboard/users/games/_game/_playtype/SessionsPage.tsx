@@ -9,7 +9,7 @@ import Icon from "#components/util/Icon";
 import LoadingWrapper from "#components/util/LoadingWrapper";
 import SelectButton from "#components/util/SelectButton";
 import { useSessionRatingAlg } from "#components/util/useScoreRatingAlg";
-import { type GamePT, type UGPT } from "#types/react";
+import { type GameProfileProps, type GameProps } from "#types/react";
 import { APIFetchV1 } from "#util/api";
 import { NumericSOV } from "#util/sorts";
 import React, { useState } from "react";
@@ -23,7 +23,7 @@ import {
 	type UserDocument,
 } from "tachi-common";
 
-export default function SessionsPage({ reqUser, game }: UGPT) {
+export default function SessionsPage({ reqUser, game }: GameProfileProps) {
 	const [sessionSet, setSessionSet] = useState<"best" | "highlighted" | "recent">("best");
 	const [search, setSearch] = useState("");
 
@@ -128,7 +128,7 @@ function SearchSessionsTable({
 	game,
 	reqUser,
 	baseUrl,
-}: { baseUrl: string; reqUser: UserDocument; search: string } & GamePT) {
+}: { baseUrl: string; reqUser: UserDocument; search: string } & GameProps) {
 	const { data, error } = useQuery<SessionDataset, UnsuccessfulAPIResponse>(
 		`${baseUrl}?search=${search}`,
 		async () => {

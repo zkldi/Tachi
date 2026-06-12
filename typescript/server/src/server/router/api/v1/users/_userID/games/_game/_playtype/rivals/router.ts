@@ -27,7 +27,7 @@ API_V1_ROUTER.add("GET /users/:userID/games/:game/rivals", withUserGameProfile, 
 });
 
 /**
- * Sets the user's rivals for this GPT.
+ * Sets the user's rivals for this game.
  *
  * @name PUT /api/v1/users/:userID/games/:game/rivals
  */
@@ -55,7 +55,7 @@ API_V1_ROUTER.add(
 );
 
 /**
- * Return all of the users that are rivalling this user for this GPT.
+ * Return all of the users that are rivalling this user for this game.
  *
  * @name GET /api/v1/users/:userID/games/:game/rivals/challengers
  */
@@ -110,7 +110,7 @@ API_V1_ROUTER.add(
 );
 
 /**
- * Retrieve activity for this user and their rivals on this GPT (same user set as the PB leaderboard).
+ * Retrieve activity for this user and their rivals on this game (same user set as the PB leaderboard).
  *
  * @name GET /api/v1/users/:userID/games/:game/rivals/activity
  */

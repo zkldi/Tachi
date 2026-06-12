@@ -5,6 +5,6 @@ export enum SubscribeFailReasons {
 
 export enum SetRivalsFailReasons {
 	RIVALED_SELF = 1,
-	RIVALS_HAVENT_PLAYED_GPT = 2,
+	RIVALS_HAVENT_PLAYED_GAME = 2,
 	TOO_MANY = 0,
 }

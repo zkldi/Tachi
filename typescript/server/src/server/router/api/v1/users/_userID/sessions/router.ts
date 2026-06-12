@@ -5,7 +5,7 @@ import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 
 /**
- * Returns all sessions, FOR ALL GPTs
+ * Returns all sessions, FOR ALL GAMES!
  * but with unnecessary properties removed so as to reduce
  * bandwidth. This is used for the calendar view in tachi-client, hence the name.
  *

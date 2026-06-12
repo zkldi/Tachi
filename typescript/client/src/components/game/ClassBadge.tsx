@@ -1,24 +1,23 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GamePT } from "#types/react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameProps } from "#types/react";
 import { UppercaseFirst } from "#util/misc";
-import React from "react";
 import { Badge } from "react-bootstrap";
 import { type Classes, GetGameConfig, type V3Game } from "tachi-common";
 
-export default function ClassBadge<GPT extends V3Game = V3Game>({
+export default function ClassBadge<TGame extends V3Game = V3Game>({
 	game,
 	classSet,
 	classValue,
 	showSetOnHover = true,
 }: {
-	classSet: Classes[GPT];
+	classSet: Classes[TGame];
 	classValue: string;
 	showSetOnHover?: boolean;
-} & GamePT) {
+} & GameProps) {
 	const classStyle =
 		// @ts-expect-error complex indexed types
-		GPT_CLIENT_IMPLEMENTATIONS[game].classColours[classSet][classValue];
+		GAME_CLIENT_IMPLEMENTATIONS[game].classColours[classSet][classValue];
 
 	const data = GetGameConfig(game).classes[classSet].values.find((e) => e.id === classValue);
 

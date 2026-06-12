@@ -2,7 +2,6 @@ import { GetEnumColour } from "#lib/game-implementations";
 import { IsScore } from "#util/asserts";
 import { ChangeOpacity } from "#util/color-opacity";
 import { IsNotNullish } from "#util/misc";
-import React from "react";
 import {
 	type ChartDocument,
 	type GamesForGroup,

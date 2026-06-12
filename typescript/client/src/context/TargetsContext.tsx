@@ -1,8 +1,8 @@
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
-import { type UGPTTargetSubs } from "#types/api-returns";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
+import { type UserGameTargetSubs } from "#types/api-returns";
 import { type JustChildren } from "#types/react";
 import { APIFetchV1 } from "#util/api";
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { type GoalSubscriptionDocument, type QuestSubscriptionDocument } from "tachi-common";
 
 export const TargetsContext = createContext<{
@@ -17,7 +17,7 @@ export const TargetsContext = createContext<{
 });
 
 export function TargetsContextProvider({ children }: JustChildren) {
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const [questSubs, setQuestSubs] = useState<Map<string, QuestSubscriptionDocument>>(new Map());
 	const [goalSubs, setGoalSubs] = useState<Map<string, GoalSubscriptionDocument>>(new Map());
@@ -29,7 +29,7 @@ export function TargetsContextProvider({ children }: JustChildren) {
 			return;
 		}
 
-		await APIFetchV1<UGPTTargetSubs>(
+		await APIFetchV1<UserGameTargetSubs>(
 			`/users/${settings.userID}/games/${settings.game}/targets/all-subs`,
 		).then((r) => {
 			if (!r.success) {

@@ -46,7 +46,7 @@ async function finalizeHits(
 }
 
 /**
- * Search a user's sessions for one GPT: `websearch_to_tsquery` on `session.textsearch`, optional
+ * Search a user's sessions for one game: `websearch_to_tsquery` on `session.textsearch`, optional
  * short-query exact match, then pg_trgm / ILIKE - same strategy as
  * {@link SearchSongsForGameFtsAndTrgm} / {@link SearchFoldersForGameFtsAndTrgm}.
  *

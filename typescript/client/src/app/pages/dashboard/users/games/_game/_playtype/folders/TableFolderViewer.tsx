@@ -1,14 +1,14 @@
-import type { UGPTTableReturns } from "#types/api-returns";
+import type { UserGameTableReturns } from "#types/api-returns";
 
 import ApiError from "#components/util/ApiError";
 import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { useBucket } from "#components/util/useBucket";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GetGameConfig, type TableDocument } from "tachi-common";
 
-import type { FolderTableScopedProps, UGPTFolderStats } from "./folderTableShared";
+import type { FolderTableScopedProps, UserGameFolderStats } from "./folderTableShared";
 
 import TableEvolutionReplay from "./TableEvolutionReplay";
 import TableFolderList from "./TableFolderList";
@@ -26,7 +26,7 @@ export default function TableFolderViewer({
 	onFolderRowNavigate?: () => void;
 	table: TableDocument;
 } & FolderTableScopedProps) {
-	const { data, error } = useApiQuery<UGPTTableReturns>(
+	const { data, error } = useApiQuery<UserGameTableReturns>(
 		`/users/${reqUser.id}/games/${game}/tables/${table.tableID}`,
 	);
 
@@ -37,7 +37,7 @@ export default function TableFolderViewer({
 		setEnumMetric(bucket);
 	}, [bucket, table.tableID]);
 
-	const [dataMap, setDataMap] = useState<Map<string, UGPTFolderStats>>(new Map());
+	const [dataMap, setDataMap] = useState<Map<string, UserGameFolderStats>>(new Map());
 	const [hasLoadedFolderMap, setHasLoadedFolderMap] = useState(false);
 
 	useEffect(() => {

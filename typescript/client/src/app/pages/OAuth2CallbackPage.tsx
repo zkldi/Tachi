@@ -1,10 +1,9 @@
 import ApiError from "#components/util/ApiError";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
-import React from "react";
 import { Link } from "react-router-dom";
 
-import { ErrorPage } from "./ErrorPage";
+import ErrorPage from "./ErrorPage";
 
 export default function OAuth2CallbackPage({
 	counterWeight,

@@ -11,8 +11,8 @@ import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import SelectButton from "#components/util/SelectButton";
 import { UserContext } from "#context/UserContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GPTClientImplementation } from "#lib/types";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameClientImplementation } from "#lib/types";
 import { type SessionReturns } from "#types/api-returns";
 import { APIFetchV1 } from "#util/api";
 import { ChangeOpacity } from "#util/color-opacity";
@@ -57,7 +57,7 @@ export default function SessionRaiseBreakdown({
 	const game = sessionData.session.game;
 	const gameConfig = GetGameConfig(game);
 	const enumMetrics = GetScoreMetrics(gameConfig, "ENUM");
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const { user } = useContext(UserContext);
 
@@ -198,7 +198,7 @@ function SessionScoreStatBreakdown({
 		return newEnums;
 	}, [view]);
 
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	return (
 		<>
@@ -276,7 +276,7 @@ function ElementStatTable({
 	fullSize?: boolean;
 	game: V3Game;
 	gameConfig: GameConfig;
-	gptImpl: GPTClientImplementation<any>;
+	gptImpl: GameClientImplementation<any>;
 	metric: string;
 	scores: ScoreDocument[];
 	setScores?: SetScores;
@@ -438,7 +438,7 @@ function BreakdownChartContents({
 	}
 
 	if (fullSize) {
-		const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[score.game];
+		const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[score.game];
 
 		let preScoreCell = <td colSpan={gptImpl.scoreHeaders.length}>No Play</td>;
 

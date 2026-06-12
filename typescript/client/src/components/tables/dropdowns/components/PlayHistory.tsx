@@ -1,8 +1,7 @@
 import HistoryScoreTable from "#components/tables/history-scores/HistoryScoreTable";
 import Loading from "#components/util/Loading";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { type UnsuccessfulAPIFetchResponse } from "#util/api";
-import React from "react";
 import { type ChartDocument, type ScoreDocument } from "tachi-common";
 
 export default function PlayHistory({
@@ -14,7 +13,7 @@ export default function PlayHistory({
 	chart: ChartDocument;
 	data?: ScoreDocument[];
 	error: UnsuccessfulAPIFetchResponse | null;
-} & GamePT) {
+} & GameProps) {
 	if (error) {
 		return <>{error.description}</>;
 	}

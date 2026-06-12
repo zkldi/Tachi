@@ -1,5 +1,5 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GamePT } from "#types/react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameProps } from "#types/react";
 import { type FolderDataset } from "#types/tables";
 import { CountElements, Reverse } from "#util/misc";
 import React, { useMemo } from "react";
@@ -11,13 +11,13 @@ import FolderDistributionTable from "./FolderDistributionTable";
 type Props = {
 	folderDataset: FolderDataset;
 	view: string;
-} & GamePT;
+} & GameProps;
 
 export default function FolderScoreDistributionChart({ game, folderDataset, view: metric }: Props) {
 	const gameConfig = GetGameConfig(game);
 	const conf = GetScoreMetricConf(gameConfig, metric) as ConfEnumScoreMetric<string>;
 
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const values = useMemo(
 		// @ts-expect-error hack

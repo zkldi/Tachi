@@ -1,5 +1,5 @@
 import Muted from "#components/util/Muted";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type ComparePBsDataset } from "#types/tables";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import { CreatePBCompareSearchParams } from "#util/tables/create-search";
@@ -26,7 +26,7 @@ export default function ComparePBsTable({
 	game: V3Game;
 }) {
 	const gameConfig = GetGameConfig(game);
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const [metric, setMetric] = useState<string>(gameConfig.defaultMetric);
 
@@ -102,7 +102,7 @@ export default function ComparePBsTable({
 }
 
 function Row({ data, game, metric }: { data: ComparePBsDataset[0]; game: V3Game; metric: string }) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 	const metricConf = GetScoreMetricConf(GetGameConfig(game), metric)!;
 
 	return (

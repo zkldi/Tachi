@@ -1,6 +1,5 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
-import UGPTProfiles from "#components/user/UGPTProfiles";
-import React from "react";
+import UserGameProfiles from "#components/user/UserGameProfiles";
 import { type UserDocument } from "tachi-common";
 
 export default function UserGamesPage({ reqUser }: { reqUser: UserDocument }) {
@@ -10,5 +9,5 @@ export default function UserGamesPage({ reqUser }: { reqUser: UserDocument }) {
 		`${reqUser.username}'s Game Profiles`,
 	);
 
-	return <UGPTProfiles reqUser={reqUser} />;
+	return <UserGameProfiles reqUser={reqUser} />;
 }

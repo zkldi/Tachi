@@ -2,7 +2,7 @@ import BackgroundImage from "#components/layout/misc/BackgroundImage";
 import { BackgroundContextProvider } from "#context/BackgroundContext";
 import { WindowContext } from "#context/WindowContext";
 import { type JustChildren } from "#types/react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Container from "react-bootstrap/Container";
 
 import { Footer } from "./footer/Footer";

@@ -1,6 +1,5 @@
 import { GetEnumColour } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import { constrainedLampTdStyle } from "./delta-lamp-cell-layout";

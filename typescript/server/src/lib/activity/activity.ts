@@ -86,7 +86,7 @@ function whereMsRangeOnColumn(
 }
 
 /**
- * Retrieves recent activity for this group of users for this GPT.
+ * Retrieves recent activity for this group of users for this game.
  *
  * At the moment, this retrieves the following events:
  * - Recent Sessions

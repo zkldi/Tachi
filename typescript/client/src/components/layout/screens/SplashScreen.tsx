@@ -1,5 +1,4 @@
 import Loading from "#components/util/Loading";
-import React from "react";
 
 import SplashImage from "../misc/SplashImage";
 

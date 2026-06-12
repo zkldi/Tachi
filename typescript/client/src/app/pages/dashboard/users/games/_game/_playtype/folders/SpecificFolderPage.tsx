@@ -1,4 +1,4 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import FolderInfoHeader from "#components/game/folder/FolderInfoHeader";
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import DifficultyCell from "#components/tables/cells/DifficultyCell";
@@ -17,17 +17,17 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import ReferToUser from "#components/util/ReferToUser";
 import SelectButton from "#components/util/SelectButton";
 import SelectLinkButton from "#components/util/SelectLinkButton";
-import useUGPTBase from "#components/util/useUGPTBase";
+import useUserGameBase from "#components/util/useUserGameBase";
 import { WindowContext } from "#context/WindowContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GPTRatingSystem } from "#lib/types";
-import { type UGPTFolderReturns } from "#types/api-returns";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameRatingSystem } from "#lib/types";
+import { type UserGameFolderReturns } from "#types/api-returns";
 import { type FolderDataset } from "#types/tables";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartIDMap, CreateChartLink, CreateSongMap } from "#util/data";
 import { DistinctArr, ToFixedFloor } from "#util/misc";
 import { NumericSOV, StrSOV } from "#util/sorts";
-import React, {
+import {
 	type SetStateAction,
 	useCallback,
 	useContext,
@@ -93,7 +93,7 @@ interface Props {
 export default function SpecificFolderPage({ reqUser, game }: Props) {
 	const { folderSlug } = useParams<{ folderSlug: string }>();
 
-	const { data, error } = useApiQuery<UGPTFolderReturns>(
+	const { data, error } = useApiQuery<UserGameFolderReturns>(
 		`/users/${reqUser.id}/games/${game}/folders/${folderSlug}`,
 	);
 
@@ -163,7 +163,7 @@ export default function SpecificFolderPage({ reqUser, game }: Props) {
 		);
 	}, [data, folderSlug, folderDataset, game, onBreakdownEnumValueClick, reqUser]);
 
-	const base = `${useUGPTBase({ reqUser, game })}/folders/${folderSlug}`;
+	const base = `${useUserGameBase({ reqUser, game })}/folders/${folderSlug}`;
 
 	if (error?.statusCode === 404) {
 		return (
@@ -182,7 +182,7 @@ export default function SpecificFolderPage({ reqUser, game }: Props) {
 		return <Loading />;
 	}
 
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	return (
 		<div className="row">
@@ -257,7 +257,7 @@ function FolderNormalView({
 	game,
 	reqUser,
 }: {
-	data: UGPTFolderReturns;
+	data: UserGameFolderReturns;
 	folderDataset: FolderDataset;
 	folderTableEnumPreset: FolderEnumBreakdownTablePreset | null;
 } & Props) {
@@ -292,12 +292,12 @@ function FolderNormalView({
 // so
 
 type InfoProps = {
-	data: UGPTFolderReturns;
+	data: UserGameFolderReturns;
 	folderDataset: FolderDataset;
 } & Props;
 
 function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const history = useHistory();
 	const location = useLocation();
@@ -305,7 +305,7 @@ function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
 	const canonicalFirstTier = gptImpl.ratingSystems[0]?.name ?? "";
 
 	const tierlist = useMemo((): string => {
-		const systems = gptImpl.ratingSystems as GPTRatingSystem<V3Game>[];
+		const systems = gptImpl.ratingSystems as GameRatingSystem<V3Game>[];
 		const fromQs = new URLSearchParams(location.search).get("tierlist");
 		if (!fromQs) {
 			return canonicalFirstTier;
@@ -329,7 +329,7 @@ function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
 	);
 
 	useEffect(() => {
-		const systems = gptImpl.ratingSystems as GPTRatingSystem<V3Game>[];
+		const systems = gptImpl.ratingSystems as GameRatingSystem<V3Game>[];
 		if (systems.length === 0) {
 			return;
 		}
@@ -354,7 +354,7 @@ function TierlistBreakdown({ game, folderDataset, reqUser }: InfoProps) {
 		[folderDataset, game, tierlist],
 	);
 
-	const tierlistImpl = (gptImpl.ratingSystems as GPTRatingSystem<V3Game>[]).find(
+	const tierlistImpl = (gptImpl.ratingSystems as GameRatingSystem<V3Game>[]).find(
 		(rs) => rs.name === tierlist,
 	);
 
@@ -449,7 +449,7 @@ function tierlistRowEnumBucketKey(row: TierlistInfo, game: V3Game, enumMetric: s
 	try {
 		const label = EnumIndexToValue(
 			game,
-			// @ts-expect-error GPTRatingSystem.enumName matches score enums on this GPT
+			// @ts-expect-error GameRatingSystem.enumName matches score enums on this game
 			enumMetric,
 			idx,
 		);
@@ -468,7 +468,7 @@ interface TierlistBucketBarSegment {
 function computeTierlistBucketBarModel(
 	bucket: TierlistInfo[],
 	game: V3Game,
-	tierlistImpl: GPTRatingSystem<V3Game>,
+	tierlistImpl: GameRatingSystem<V3Game>,
 	useFancyColour: boolean,
 ): { achieved: number; segments: TierlistBucketBarSegment[]; total: number } {
 	const total = bucket.length;
@@ -530,7 +530,7 @@ function computeTierlistBucketBarModel(
 
 	const enumMetric = tierlistImpl.enumName;
 	const conf = GetScoreEnumConfs(GetGameConfig(game))[enumMetric];
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const counts = new Map<string, number>();
 	for (const row of bucket) {
@@ -749,7 +749,7 @@ function TierlistBucketsSummaryTable({
 	expandedBucketIndices: Set<number>;
 	game: V3Game;
 	onTierActivate: (bucketIndex: number) => void;
-	tierlistImpl: GPTRatingSystem<V3Game>;
+	tierlistImpl: GameRatingSystem<V3Game>;
 	useFancyColour: boolean;
 }) {
 	if (buckets.length === 0) {
@@ -873,7 +873,7 @@ function TierlistInfoLadder({
 	game: V3Game;
 	playerStats: Record<string, { score: string | null; status: AchievedStatuses }>;
 	reqUser: UserDocument;
-	tierlistImpl: GPTRatingSystem<V3Game>;
+	tierlistImpl: GameRatingSystem<V3Game>;
 	useFancyColour: boolean;
 }) {
 	const buckets: TierlistInfo[][] = useMemo(() => {
@@ -1091,7 +1091,7 @@ function TierlistBucket({
 	forceGridView: boolean;
 	game: V3Game;
 	reqUser: UserDocument;
-	tierlistImpl: GPTRatingSystem<V3Game>;
+	tierlistImpl: GameRatingSystem<V3Game>;
 	useFancyColour: boolean;
 }) {
 	const {
@@ -1150,7 +1150,7 @@ function TierlistInfoBucketValues({
 	game: V3Game;
 	i: integer;
 	reqUser: UserDocument;
-	tierlistImpl: GPTRatingSystem<V3Game>;
+	tierlistImpl: GameRatingSystem<V3Game>;
 	tierlistInfo: TierlistInfo;
 	useFancyColour: boolean;
 }) {
@@ -1167,7 +1167,7 @@ function TierlistInfoBucketValues({
 	let colourCss: string | undefined;
 
 	if (useFancyColour) {
-		const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+		const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 		// @ts-expect-error lol
 		colourCss = gptImpl.enumColours[tierlistImpl.enumName][tierlistInfo.score];
@@ -1305,7 +1305,7 @@ enum AchievedStatuses {
 function FolderDatasetAchievedStatus(folderDataset: FolderDataset, game: V3Game, tierlist: string) {
 	const tierlistInfo: Record<string, { score: string | null; status: AchievedStatuses }> = {};
 
-	const fn = (GPT_CLIENT_IMPLEMENTATIONS[game].ratingSystems as GPTRatingSystem<V3Game>[]).find(
+	const fn = (GAME_CLIENT_IMPLEMENTATIONS[game].ratingSystems as GameRatingSystem<V3Game>[]).find(
 		(e) => e.name === tierlist,
 	)?.achievementFn;
 

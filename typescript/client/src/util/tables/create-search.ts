@@ -26,10 +26,10 @@ function GetBMSTableVal(chart: ChartDocument<"bms-7k" | "bms-14k">, key: string)
 	return null;
 }
 
-export function CreateDefaultScoreSearchParams<GPT extends V3Game = V3Game>(game: GPT) {
+export function CreateDefaultScoreSearchParams<TGame extends V3Game = V3Game>(game: TGame) {
 	const gameConfig = GetGameConfig(game);
 
-	const searchFunctions: Record<string, ValueGetterOrHybrid<ScoreDataset<GPT>[0]>> = {
+	const searchFunctions: Record<string, ValueGetterOrHybrid<ScoreDataset<TGame>[0]>> = {
 		artist: (x) => x.__related.song.artist,
 		title: (x) => x.__related.song.title,
 		difficulty: (x) => x.__related.chart.difficulty,
@@ -92,10 +92,10 @@ export function GetMetricSearchParams(
 	return searchFns;
 }
 
-export function CreateDefaultPBSearchParams<GPT extends V3Game = V3Game>(game: GPT) {
+export function CreateDefaultPBSearchParams<TGame extends V3Game = V3Game>(game: TGame) {
 	const gameConfig = GetGameConfig(game);
 
-	const searchFunctions: Record<string, ValueGetterOrHybrid<PBDataset<GPT>[0]>> = {
+	const searchFunctions: Record<string, ValueGetterOrHybrid<PBDataset<TGame>[0]>> = {
 		artist: (x) => x.__related.song.artist,
 		title: (x) => x.__related.song.title,
 		difficulty: (x) => x.__related.chart.difficulty,
@@ -115,8 +115,8 @@ export function CreateDefaultPBSearchParams<GPT extends V3Game = V3Game>(game: G
 	return searchFunctions;
 }
 
-export function CreatePBCompareSearchParams<GPT extends V3Game = V3Game>(game: GPT) {
-	const searchFunctions: Record<string, ValueGetterOrHybrid<ComparePBsDataset<GPT>[0]>> = {
+export function CreatePBCompareSearchParams<TGame extends V3Game = V3Game>(game: TGame) {
+	const searchFunctions: Record<string, ValueGetterOrHybrid<ComparePBsDataset<TGame>[0]>> = {
 		artist: (x) => x.song.artist,
 		title: (x) => x.song.title,
 		difficulty: (x) => x.chart.difficulty,
@@ -130,10 +130,10 @@ export function CreatePBCompareSearchParams<GPT extends V3Game = V3Game>(game: G
 	return searchFunctions;
 }
 
-export function CreateDefaultFolderSearchParams<GPT extends V3Game = V3Game>(game: GPT) {
+export function CreateDefaultFolderSearchParams<TGame extends V3Game = V3Game>(game: TGame) {
 	const gameConfig = GetGameConfig(game);
 
-	const searchFunctions: Record<string, ValueGetterOrHybrid<FolderDataset<GPT>[0]>> = {
+	const searchFunctions: Record<string, ValueGetterOrHybrid<FolderDataset<TGame>[0]>> = {
 		artist: (x) => x.__related.song.artist,
 		title: (x) => x.__related.song.title,
 		difficulty: (x) => x.difficulty,

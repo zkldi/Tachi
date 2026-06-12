@@ -4,12 +4,12 @@ import QuestProgressBar from "#components/targets/QuestProgressBar";
 import Icon from "#components/util/Icon";
 import LinkButton from "#components/util/LinkButton";
 import Muted from "#components/util/Muted";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { TargetsContext } from "#context/TargetsContext";
 import { APIFetchV1 } from "#util/api";
 import { GetGoalIDsFromQuest } from "#util/data";
 import { FormatTime } from "#util/time";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Badge, Button, Collapse } from "react-bootstrap";
 import { type QuestDocument, type QuestlineDocument } from "tachi-common";
 
@@ -193,7 +193,7 @@ function QuestTimelineNode({
 }
 
 function QuestSubscribeButton({ quest }: { quest: QuestDocument }) {
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 	const { questSubs, reloadTargets } = useContext(TargetsContext);
 	const [loading, setLoading] = useState(false);
 

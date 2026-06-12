@@ -2,7 +2,6 @@ import ImportFileInfo from "#components/imports/ImportFileInfo";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import ExternalLink from "#components/util/ExternalLink";
-import React from "react";
 
 function RecordsParseFunction(data: string) {
 	if (

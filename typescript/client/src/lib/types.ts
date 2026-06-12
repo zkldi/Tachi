@@ -13,30 +13,30 @@ import {
 } from "tachi-common";
 import { type ExtractEnumMetricNames, type GetEnumValue } from "tachi-common/types/metrics";
 
-export type GPTEnumColours<GPT extends V3Game> = {
+export type GameEnumColours<TGame extends V3Game> = {
 	// @ts-expect-error this is fine please do not worry
-	[M in ExtractEnumMetricNames<ConfScoreMetrics[GPT]>]: Record<GetEnumValue<GPT, M>, string>;
+	[M in ExtractEnumMetricNames<ConfScoreMetrics[TGame]>]: Record<GetEnumValue<TGame, M>, string>;
 };
 
-export type GPTEnumFormatters<GPT extends V3Game> = {
-	[M in ExtractEnumMetricNames<ConfScoreMetrics[GPT]>]?: Record<
+export type GameEnumFormatters<TGame extends V3Game> = {
+	[M in ExtractEnumMetricNames<ConfScoreMetrics[TGame]>]?: Record<
 		// @ts-expect-error I am not worried
-		GetEnumValue<GPT, M>,
+		GetEnumValue<TGame, M>,
 		JSX.Element
 	>;
 };
 
-export type GPTEnumIcons<GPT extends V3Game> = {
-	[M in ExtractEnumMetricNames<ConfScoreMetrics[GPT]>]: string;
+export type GameEnumIcons<TGame extends V3Game> = {
+	[M in ExtractEnumMetricNames<ConfScoreMetrics[TGame]>]: string;
 };
 
-export type GPTDifficultyColours<GPT extends V3Game> = Record<Difficulties[GPT], string>;
+export type GameDifficultyColours<TGame extends V3Game> = Record<Difficulties[TGame], string>;
 
 /**
- * Every GPT has to have some sort of "rating system" for charts defined.
+ * Every game has to have some sort of "rating system" for charts defined.
  * The UI uses this to handle things like sorting on the difficulty cell.
  */
-export type GPTRatingSystem<GPT extends V3Game> = {
+export type GameRatingSystem<TGame extends V3Game> = {
 	/**
 	 * What qualifies as "achieving" the band in this rating system?
 	 * For example, a clear tierlist would use this to discriminate clears
@@ -46,7 +46,9 @@ export type GPTRatingSystem<GPT extends V3Game> = {
 	 * end user (i.e. the string lamp when the target is hard clear)
 	 * the second is whether they achieved this or not.
 	 */
-	achievementFn?: (p: PBScoreDocument<GPT> | ScoreDocument<GPT>) => [number | string, boolean];
+	achievementFn?: (
+		p: PBScoreDocument<TGame> | ScoreDocument<TGame>,
+	) => [number | string, boolean];
 	description: string;
 	enumName: string;
 
@@ -54,16 +56,16 @@ export type GPTRatingSystem<GPT extends V3Game> = {
 	 * Does this rating system say this chart has strong individual differences
 	 * between players?
 	 */
-	idvDifference: (c: ChartDocument<GPT>) => boolean | null | undefined;
+	idvDifference: (c: ChartDocument<TGame>) => boolean | null | undefined;
 	name: string;
 
-	toNumber: (c: ChartDocument<GPT>) => number | null | undefined;
+	toNumber: (c: ChartDocument<TGame>) => number | null | undefined;
 
-	toString: (c: ChartDocument<GPT>) => string | null | undefined;
+	toString: (c: ChartDocument<TGame>) => string | null | undefined;
 };
 
-export type GPTClassColours<GPT extends V3Game> = {
-	[C in keyof ClassConfigs[GPT]]: {
+export type GameClassColours<TGame extends V3Game> = {
+	[C in keyof ClassConfigs[TGame]]: {
 		// @ts-expect-error it's kinda cool how TS lets me just uhh
 		// ignore, errors
 		// in the abhorrent stringly based typesystem i have created.
@@ -72,7 +74,7 @@ export type GPTClassColours<GPT extends V3Game> = {
 		// string => bootstrap variant
 		// css properties => css
 		// null -> no styling
-		[V in ClassConfigs[GPT][C]["values"][number]["id"]]:
+		[V in ClassConfigs[TGame][C]["values"][number]["id"]]:
 			| ({ shine?: boolean } & CSSProperties)
 			| "danger"
 			| "info"
@@ -84,18 +86,18 @@ export type GPTClassColours<GPT extends V3Game> = {
 	};
 };
 
-export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
-	enumColours: GPTEnumColours<GPT>;
+export interface GameClientImplementation<TGame extends V3Game = V3Game> {
+	enumColours: GameEnumColours<TGame>;
 
-	enumFormatters?: GPTEnumFormatters<GPT>;
+	enumFormatters?: GameEnumFormatters<TGame>;
 
 	/**
 	 * Fontawesome Icons to use next to enum names.
 	 */
-	enumIcons: GPTEnumIcons<GPT>;
+	enumIcons: GameEnumIcons<TGame>;
 
-	difficultyColours: GPTDifficultyColours<GPT>;
-	classColours: GPTClassColours<GPT>;
+	difficultyColours: GameDifficultyColours<TGame>;
+	classColours: GameClassColours<TGame>;
 
 	/**
 	 * Other than chart.level and chart.levelNum, what other rating systems exist
@@ -103,7 +105,7 @@ export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
 	 *
 	 * You can use this to add things like tierlists (chart.data.ncTier, hcTier, etc.)
 	 */
-	ratingSystems: Array<GPTRatingSystem<GPT>>;
+	ratingSystems: Array<GameRatingSystem<TGame>>;
 
 	/**
 	 * Can be used to replace the display name of the algorithm.
@@ -125,7 +127,7 @@ export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
 	/**
 	 * What headers should be used when rendering scores in a table for this game?
 	 */
-	scoreHeaders: Array<Header<PBScoreDocument<GPT> | ScoreDocument<GPT>>>;
+	scoreHeaders: Array<Header<PBScoreDocument<TGame> | ScoreDocument<TGame>>>;
 
 	/**
 	 * How should we render the "core cells" for a score row in this game?
@@ -133,8 +135,8 @@ export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
 	 * This should render exactly the same amount of cells as there are headers.
 	 */
 	scoreCoreCells: (props: {
-		chart: ChartDocument<GPT>;
-		sc: PBScoreDocument<GPT> | ScoreDocument<GPT>;
+		chart: ChartDocument<TGame>;
+		sc: PBScoreDocument<TGame> | ScoreDocument<TGame>;
 	}) => JSX.Element;
 
 	/**
@@ -148,9 +150,9 @@ export interface GPTClientImplementation<GPT extends V3Game = V3Game> {
 	 * got 0 points on an unranked chart, etc..
 	 */
 	ratingCell: (props: {
-		chart: ChartDocument<GPT>;
-		rating: ScoreRatingAlgorithms[GPT];
-		sc: PBScoreDocument<GPT> | ScoreDocument<GPT>;
+		chart: ChartDocument<TGame>;
+		rating: ScoreRatingAlgorithms[TGame];
+		sc: PBScoreDocument<TGame> | ScoreDocument<TGame>;
 	}) => JSX.Element;
 
 	/**

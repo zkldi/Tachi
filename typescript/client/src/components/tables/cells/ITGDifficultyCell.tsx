@@ -2,7 +2,6 @@ import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import { type ChartDocument, COLOUR_SET } from "tachi-common";
 
 import MiniTable from "../components/MiniTable";

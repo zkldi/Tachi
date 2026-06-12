@@ -1,6 +1,5 @@
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import React from "react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import {
 	type AnyScoreRatingAlg,
 	type ChartDocument,
@@ -26,7 +25,7 @@ export default function ScoreCoreCells({
 }): JSX.Element {
 	const [defaultRating] = useScoreRatingAlg(game);
 
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	// fallback to this users preferred rating if none provided.
 	// @ts-expect-error whateverr

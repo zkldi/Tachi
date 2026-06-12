@@ -5,7 +5,7 @@ import Divider from "#components/util/Divider";
 import EditableText from "#components/util/EditableText";
 import Icon from "#components/util/Icon";
 import Muted from "#components/util/Muted";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { type RawQuestDocument, type RawQuestGoal, type RawQuestSection } from "#types/tachi";
 import { ChangeAtPosition, CopyToClipboard, DeleteInPosition } from "#util/misc";
 import React, { useState } from "react";
@@ -140,7 +140,7 @@ function QuestSection({
 	onMoveDown?: () => void;
 	onMoveUp?: () => void;
 	section: RawQuestSection;
-} & GamePT) {
+} & GameProps) {
 	const [showGoalBuilder, setShowGoalBuilder] = useState(false);
 
 	return (
@@ -284,7 +284,7 @@ function EditableGoalRow({
 	onMoveUp?: () => void;
 	onUpdate: (newGoal: RawQuestGoal) => void;
 	rawGoal: RawQuestGoal;
-} & GamePT) {
+} & GameProps) {
 	const [showEdit, setShowEdit] = useState(false);
 
 	return (

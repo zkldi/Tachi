@@ -1,7 +1,7 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import { UserContext } from "#context/UserContext";
 import { type JustChildren } from "#types/react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { UserAuthLevels } from "tachi-common";
 

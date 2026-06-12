@@ -1,12 +1,11 @@
 import Icon from "#components/util/Icon";
 import { type SetState } from "#types/react";
 import {
-	FormatGPTProfileRatingName,
-	FormatGPTScoreRatingName,
-	FormatGPTSessionRatingName,
+	FormatGameProfileRatingName,
+	FormatGameScoreRatingName,
+	FormatGameSessionRatingName,
 	getProfileRatingAlgKeysInDisplayOrder,
 } from "#util/misc";
-import React from "react";
 import { GetGameConfig, type V3Game } from "tachi-common";
 
 import { type ZTableTHProps } from "./TachiTable";
@@ -54,10 +53,10 @@ export default function SelectableRating({
 					{ratingKeys.map((s) => (
 						<option key={s} value={s}>
 							{mode === "session"
-								? FormatGPTSessionRatingName(game, s)
+								? FormatGameSessionRatingName(game, s)
 								: mode === "profile"
-									? FormatGPTProfileRatingName(game, s)
-									: FormatGPTScoreRatingName(game, s)}
+									? FormatGameProfileRatingName(game, s)
+									: FormatGameScoreRatingName(game, s)}
 						</option>
 					))}
 				</select>

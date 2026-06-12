@@ -1,4 +1,4 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import ClassBadge from "#components/game/ClassBadge";
 import ImportClassImportState from "#components/imports/ImportClassImportState";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
@@ -6,9 +6,9 @@ import useImport from "#components/util/import/useImport";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { UserContext } from "#context/UserContext";
-import { type UGPTStatsReturn } from "#types/api-returns";
+import { type UserGameStatsReturn } from "#types/api-returns";
 import { UppercaseFirst } from "#util/misc";
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { Alert, Button, Col, Form, Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import {
@@ -82,7 +82,7 @@ function InnerImportClassPage({ game, userID }: { game: V3Game; userID: number }
 		{},
 	);
 
-	const { data, error, isLoading } = useApiQuery<UGPTStatsReturn>(
+	const { data, error, isLoading } = useApiQuery<UserGameStatsReturn>(
 		`/users/${userID}/games/${game}`,
 	);
 

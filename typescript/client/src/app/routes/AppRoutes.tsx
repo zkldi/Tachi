@@ -1,4 +1,4 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import ForgotPasswordPage from "#app/pages/ForgotPasswordPage";
 import LoginPage from "#app/pages/LoginPage";
 import OAuthRequestAuthPage from "#app/pages/OAuthRequestAuthPage";
@@ -10,7 +10,7 @@ import ErrorBoundary from "#components/util/ErrorBoundary";
 import { UserContext } from "#context/UserContext";
 import { ClientConfig } from "#lib/config";
 import { HistorySafeGoBack } from "#util/misc";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 
 import ClientFileFlowRoutes from "./ClientFileFlowRoutes";

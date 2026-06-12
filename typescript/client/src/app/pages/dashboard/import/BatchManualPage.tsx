@@ -2,7 +2,6 @@ import ImportFileInfo from "#components/imports/ImportFileInfo";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import { TachiConfig } from "#lib/config";
 import { p } from "prudence";
-import React from "react";
 import {
 	ALL_GAMES,
 	type BatchManual,

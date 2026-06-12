@@ -1,6 +1,5 @@
 import { IsNullish } from "#util/misc";
 import { FormatTime, FormatTimeOfDay, FormatTimeSmall, MillisToSince } from "#util/time";
-import React from "react";
 import { type integer, type V3Game } from "tachi-common";
 
 /** Same truncation pattern as TitleCell metadata lines. */

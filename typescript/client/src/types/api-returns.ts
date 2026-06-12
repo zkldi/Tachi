@@ -30,13 +30,13 @@ import {
 	type V3Game,
 } from "tachi-common";
 
-export interface UGPTStatsReturn<GPT extends V3Game = V3Game> {
+export interface UserGameStatsReturn<TGame extends V3Game = V3Game> {
 	gameStats: UserGameStats;
-	firstScore: ScoreDocument<GPT>;
-	mostRecentScore: ScoreDocument<GPT>;
+	firstScore: ScoreDocument<TGame>;
+	mostRecentScore: ScoreDocument<TGame>;
 	totalScores: number;
 	rankingData: Record<
-		ProfileRatingAlgorithms[GPT],
+		ProfileRatingAlgorithms[TGame],
 		{
 			outOf: integer;
 			ranking: integer;
@@ -45,7 +45,7 @@ export interface UGPTStatsReturn<GPT extends V3Game = V3Game> {
 	playtime: number;
 }
 
-export interface UGPTLeaderboardAdjacent {
+export interface UserGameLeaderboardAdjacent {
 	above: UserGameStatsWithProfileLeaderboardRank[];
 	below: UserGameStatsWithProfileLeaderboardRank[];
 	users: UserDocument[];
@@ -56,12 +56,12 @@ export interface UGPTLeaderboardAdjacent {
 	};
 }
 
-export interface GPTLeaderboard {
+export interface GameLeaderboard {
 	gameStats: UserGameStatsWithProfileLeaderboardRank[];
 	users: UserDocument[];
 }
 
-export type UGPTPreferenceStatsReturn =
+export type UserGamePreferenceStatsReturn =
 	| {
 			related: {
 				chart: ChartDocument;
@@ -76,24 +76,24 @@ export type UGPTPreferenceStatsReturn =
 			stat: ShowcaseStatFolder;
 	  };
 
-export type UGPTPreferenceChartStatsReturn = Extract<
-	UGPTPreferenceStatsReturn,
+export type UserGamePreferenceChartStatsReturn = Extract<
+	UserGamePreferenceStatsReturn,
 	{ stat: ShowcaseStatChart }
 >;
 
-export type UGPTPreferenceFolderStatsReturn = Extract<
-	UGPTPreferenceStatsReturn,
+export type UserGamePreferenceFolderStatsReturn = Extract<
+	UserGamePreferenceStatsReturn,
 	{ stat: ShowcaseStatFolder }
 >;
 
-export type UGPTHistory = Omit<UserGameStatsSnapshotDocument, "game" | "playtype" | "userID">[];
+export type UserGameHistory = Omit<UserGameStatsSnapshotDocument, "game" | "playtype" | "userID">[];
 
-export interface SessionReturns<GPT extends V3Game = V3Game> {
+export interface SessionReturns<TGame extends V3Game = V3Game> {
 	session: SessionDocument;
 	scores: ScoreDocument[];
 	scoreInfo: Array<SessionScoreInfo>;
 	songs: SongDocument<GameGroup>[];
-	charts: ChartDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
 	user: UserDocument;
 	index: number;
 }
@@ -103,19 +103,19 @@ export interface SessionAdjacentReturns {
 	next: SessionDocument | null;
 }
 
-export interface UGPTChartPBComposition<GPT extends V3Game = V3Game> {
-	scores: ScoreDocument<GPT>[];
-	chart: ChartDocument<GPT>;
-	pb: PBScoreDocument<GPT>;
+export interface UserGameChartPBComposition<TGame extends V3Game = V3Game> {
+	scores: ScoreDocument<TGame>[];
+	chart: ChartDocument<TGame>;
+	pb: PBScoreDocument<TGame>;
 }
 
-export type UGSWithRankingData<GPT extends V3Game = V3Game> = {
-	__rankingData: Record<ProfileRatingAlgorithms[GPT], { outOf: number; ranking: number }>;
+export type UGSWithRankingData<TGame extends V3Game = V3Game> = {
+	__rankingData: Record<ProfileRatingAlgorithms[TGame], { outOf: number; ranking: number }>;
 } & UserGameStats;
 
-export interface SongChartsSearch<GPT extends V3Game = V3Game> {
+export interface SongChartsSearch<TGame extends V3Game = V3Game> {
 	songs: SongDocument<GameGroup>[];
-	charts: ChartDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
 }
 
 export interface FolderStatsInfo {
@@ -124,12 +124,12 @@ export interface FolderStatsInfo {
 	chartCount: integer;
 }
 
-export interface UGPTFolderSearch {
+export interface UserGameFolderSearch {
 	folders: FolderDocument[];
 	stats: FolderStatsInfo[];
 }
 
-export interface UGPTTableReturns {
+export interface UserGameTableReturns {
 	folders: FolderDocument[];
 	stats: FolderStatsInfo[];
 	table: TableDocument;
@@ -146,7 +146,7 @@ export interface TableEvolutionEventAPI {
 	value: string;
 }
 
-export interface UGPTTableEvolutionReturns {
+export interface UserGameTableEvolutionReturns {
 	charts: ChartDocument[];
 	events: TableEvolutionEventAPI[];
 	folderChartIDs: Record<string, string[]>;
@@ -156,7 +156,7 @@ export interface UGPTTableEvolutionReturns {
 }
 
 /** Same event/chart payloads as table evolution; scoped to a single folder. */
-export interface UGPTFolderEvolutionReturns {
+export interface UserGameFolderEvolutionReturns {
 	charts: ChartDocument[];
 	events: TableEvolutionEventAPI[];
 	folder: FolderDocument;
@@ -165,28 +165,30 @@ export interface UGPTFolderEvolutionReturns {
 	songs: SongDocument<GameGroup>[];
 }
 
-export type UGPTEvolutionReplayReturns = UGPTFolderEvolutionReturns | UGPTTableEvolutionReturns;
+export type UserGameEvolutionReplayReturns =
+	| UserGameFolderEvolutionReturns
+	| UserGameTableEvolutionReturns;
 
-export interface UGPTFolderReturns<GPT extends V3Game = V3Game> {
+export interface UserGameFolderReturns<TGame extends V3Game = V3Game> {
 	folder: FolderDocument;
 	songs: SongDocument<GameGroup>[];
-	charts: ChartDocument<GPT>[];
-	pbs: PBScoreDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
+	pbs: PBScoreDocument<TGame>[];
 }
 
 /** `GET .../folders/:folderSlug/stats`. */
-export interface UGPTFolderSlugStatsReturns {
+export interface UserGameFolderSlugStatsReturns {
 	folder: FolderDocument;
 	stats: FolderStatsInfo | null;
 }
 
-export interface GPTFolderReturns<GPT extends V3Game = V3Game> {
+export interface GameFolderReturns<TGame extends V3Game = V3Game> {
 	folder: FolderDocument;
 	songs: SongDocument<GameGroup>[];
-	charts: ChartDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
 }
 
-export interface GPTStatsReturn {
+export interface GameStatsReturn {
 	config: GameConfig;
 	playerCount: integer;
 	chartCount: integer;
@@ -198,28 +200,28 @@ export interface RecentClassesReturn {
 	users: UserDocument[];
 }
 
-export interface SongsReturn<GPT extends V3Game = V3Game> {
+export interface SongsReturn<TGame extends V3Game = V3Game> {
 	song: SongDocument<GameGroup>;
-	charts: ChartDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
 }
 
-export interface ChartPBLeaderboardReturn<GPT extends V3Game = V3Game> {
+export interface ChartPBLeaderboardReturn<TGame extends V3Game = V3Game> {
 	users: UserDocument[];
-	pbs: PBScoreDocument<GPT>[];
+	pbs: PBScoreDocument<TGame>[];
 }
 
-export interface UGPTChartLeaderboardAdjacent<GPT extends V3Game = V3Game> {
+export interface UserGameChartLeaderboardAdjacent<TGame extends V3Game = V3Game> {
 	users: UserDocument[];
-	pb: PBScoreDocument<GPT>;
-	adjacentAbove: PBScoreDocument<GPT>[];
-	adjacentBelow: PBScoreDocument<GPT>[];
+	pb: PBScoreDocument<TGame>;
+	adjacentAbove: PBScoreDocument<TGame>[];
+	adjacentBelow: PBScoreDocument<TGame>[];
 }
 
-export interface ScoreLeaderboardReturns<GPT extends V3Game = V3Game> {
+export interface ScoreLeaderboardReturns<TGame extends V3Game = V3Game> {
 	users: UserDocument[];
 	songs: SongDocument<GameGroup>[];
-	charts: ChartDocument<GPT>[];
-	pbs: PBScoreDocument<GPT>[];
+	charts: ChartDocument<TGame>[];
+	pbs: PBScoreDocument<TGame>[];
 }
 
 export interface UserLeaderboardReturns {
@@ -305,7 +307,7 @@ export interface GoalsOnChartReturn {
 }
 
 export type GoalsOnFolderReturn = GoalsOnChartReturn;
-export type AllUGPTGoalsReturn = GoalsOnChartReturn;
+export type AllUserGameGoalsReturn = GoalsOnChartReturn;
 
 export interface RecentlyAchievedOrRaisedTargets {
 	goals: Array<GoalDocument>;
@@ -315,12 +317,12 @@ export interface RecentlyAchievedOrRaisedTargets {
 	user: UserDocument;
 }
 
-export interface GPTQuestsReturn {
+export interface GameQuestsReturn {
 	goals: Array<GoalDocument>;
 	quests: Array<QuestDocument>;
 }
 
-export interface UGPTTargetSubs {
+export interface UserGameTargetSubs {
 	goalSubs: Array<GoalSubscriptionDocument>;
 	questSubs: Array<QuestSubscriptionDocument>;
 }

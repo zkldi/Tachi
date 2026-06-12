@@ -15,38 +15,38 @@ import {
 	type V3Game,
 } from "tachi-common";
 
-export type PBDataset<GPT extends V3Game = V3Game> = ({
+export type PBDataset<TGame extends V3Game = V3Game> = ({
 	__playcount?: integer;
 	__related: {
-		chart: ChartDocument<GPT>;
+		chart: ChartDocument<TGame>;
 		index: integer;
 		song: SongDocument<GameGroup>;
 		user?: UserDocument;
 	};
-} & PBScoreDocument<GPT>)[];
+} & PBScoreDocument<TGame>)[];
 
-export type ScoreDataset<GPT extends V3Game = V3Game> = ({
+export type ScoreDataset<TGame extends V3Game = V3Game> = ({
 	__related: {
-		chart: ChartDocument<GPT>;
+		chart: ChartDocument<TGame>;
 		index: integer;
 		song: SongDocument<GameGroup>;
 		user: UserDocument;
 	};
-} & ScoreDocument<GPT>)[];
+} & ScoreDocument<TGame>)[];
 
-export type FolderDataset<GPT extends V3Game = V3Game> = ({
+export type FolderDataset<TGame extends V3Game = V3Game> = ({
 	__related: {
-		pb: PBScoreDocument<GPT> | null;
+		pb: PBScoreDocument<TGame> | null;
 		song: SongDocument<GameGroup>;
 		user: UserDocument;
 	};
-} & ChartDocument<GPT>)[];
+} & ChartDocument<TGame>)[];
 
-export type ChartLeaderboardDataset<GPT extends V3Game = V3Game> = ({
+export type ChartLeaderboardDataset<TGame extends V3Game = V3Game> = ({
 	__related: {
 		user: UserDocument;
 	};
-} & PBScoreDocument<GPT>)[];
+} & PBScoreDocument<TGame>)[];
 
 export type UGSDataset = ({
 	__related: {
@@ -55,17 +55,17 @@ export type UGSDataset = ({
 	};
 } & UserGameStatsWithProfileLeaderboardRank)[];
 
-export type RivalChartDataset<GPT extends V3Game = V3Game> = ({
+export type RivalChartDataset<TGame extends V3Game = V3Game> = ({
 	__related: {
 		index: number;
-		pb: PBScoreDocument<GPT> | null;
+		pb: PBScoreDocument<TGame> | null;
 	};
 } & UserDocument)[];
 
-export type ComparePBsDataset<GPT extends V3Game = V3Game> = Array<{
-	base: PBScoreDocument<GPT> | null;
+export type ComparePBsDataset<TGame extends V3Game = V3Game> = Array<{
+	base: PBScoreDocument<TGame> | null;
 	chart: ChartDocument;
-	compare: PBScoreDocument<GPT> | null;
+	compare: PBScoreDocument<TGame> | null;
 	song: SongDocument;
 }>;
 

@@ -1,8 +1,8 @@
 import Icon from "#components/util/Icon";
 import { UserContext } from "#context/UserContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { APIFetchV1 } from "#util/api";
-import React, { useContext, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useContext, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { GetGameConfig, type TableDocument } from "tachi-common";
 
@@ -11,7 +11,7 @@ import folderTableStyles from "./FolderTablePage.module.scss";
 import {
 	type FolderTableScopedProps,
 	tableFolderSlugsDisplayOrder,
-	type UGPTFolderStats,
+	type UserGameFolderStats,
 } from "./folderTableShared";
 
 export default function TableFolderList({
@@ -24,7 +24,7 @@ export default function TableFolderList({
 	reqUser,
 	table,
 }: {
-	dataMap: Map<string, UGPTFolderStats>;
+	dataMap: Map<string, UserGameFolderStats>;
 	enumMetric: string;
 	highlightFolderSlug?: string;
 	highlightRevealKey?: number;
@@ -36,7 +36,7 @@ export default function TableFolderList({
 	const enumColours = useMemo(
 		() =>
 			(
-				GPT_CLIENT_IMPLEMENTATIONS[game].enumColours as
+				GAME_CLIENT_IMPLEMENTATIONS[game].enumColours as
 					| Record<string, Record<string, string>>
 					| undefined
 			)?.[enumMetric],

@@ -11,8 +11,8 @@ import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
 import DB from "#services/pg/db";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import {
-	GetPrimaryScoresForUserUGPT,
-	GetRecentUGPTScoresByTimeAchieved,
+	GetPrimaryScoresForUserGame,
+	GetRecentUserGameScoresByTimeAchieved,
 	GetScoresForUserOnChartIDs,
 } from "#utils/queries/scores";
 import { FilterChartsAndSongs } from "#utils/scores";
@@ -55,7 +55,7 @@ API_V1_ROUTER.add(
 	async ({ ctx }) => {
 		const { requestedUser: user, game } = ctx;
 
-		const scores = await GetPrimaryScoresForUserUGPT(user.id, game);
+		const scores = await GetPrimaryScoresForUserGame(user.id, game);
 		const { songs, charts } = await GetRelevantSongsAndCharts(scores);
 
 		return success(`Returned ${scores.length} PBs.`, { charts, scores, songs });
@@ -73,7 +73,7 @@ API_V1_ROUTER.add(
 	async ({ ctx }) => {
 		const { requestedUser: user, game } = ctx;
 
-		const recentScores = await GetRecentUGPTScoresByTimeAchieved(user.id, game, 100);
+		const recentScores = await GetRecentUserGameScoresByTimeAchieved(user.id, game, 100);
 		const { songs, charts } = await GetRelevantSongsAndCharts(recentScores);
 
 		return success(`Retrieved ${recentScores.length} scores.`, {

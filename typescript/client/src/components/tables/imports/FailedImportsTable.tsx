@@ -1,7 +1,6 @@
 import { type FailedImportDataset } from "#types/tables";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import { MillisToSince } from "#util/time";
-import React from "react";
 import { Link } from "react-router-dom";
 
 import DropdownRow from "../components/DropdownRow";

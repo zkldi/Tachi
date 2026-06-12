@@ -3,7 +3,6 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
 import { convertBeatorajaDb } from "#util/db-converters/beatoraja";
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function LR2orajaDBPage() {

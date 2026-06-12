@@ -15,7 +15,7 @@ import { ExpectedErr } from "bliss";
 import { type GoalDocument } from "tachi-common";
 
 /**
- * Retrieves this user's set goals for this GPT.
+ * Retrieves this user's set goals for this game.
  *
  * @name GET /api/v1/users/:userID/games/:game/targets/goals
  */

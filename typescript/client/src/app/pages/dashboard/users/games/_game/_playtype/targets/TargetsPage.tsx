@@ -2,17 +2,16 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import SelectLinkButton from "#components/util/SelectLinkButton";
-import useUGPTBase from "#components/util/useUGPTBase";
-import { type UGPT } from "#types/react";
-import React from "react";
+import useUserGameBase from "#components/util/useUserGameBase";
+import { type GameProfileProps } from "#types/react";
 import { Col, Row } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import { FormatGame, GameToGameGroup, GetGameGroupConfig } from "tachi-common";
 
-import UGPTGoalsPage from "./UGPTGoalsPage";
-import UGPTQuestsPage from "./UGPTQuestsPage";
+import UserGameGoalsPage from "./UserGameGoalsPage";
+import UserGameQuestsPage from "./UserGameQuestsPage";
 
-export default function TargetsPage({ reqUser, game }: UGPT) {
+export default function TargetsPage({ reqUser, game }: GameProfileProps) {
 	useSetSubheader(
 		[
 			"Users",
@@ -25,7 +24,7 @@ export default function TargetsPage({ reqUser, game }: UGPT) {
 		`${reqUser.username}'s ${FormatGame(game)} Goals & Quests`,
 	);
 
-	const base = useUGPTBase({ reqUser, game });
+	const base = useUserGameBase({ reqUser, game });
 
 	return (
 		<Row>
@@ -43,10 +42,10 @@ export default function TargetsPage({ reqUser, game }: UGPT) {
 			<Col xs={12}>
 				<Switch>
 					<Route exact path="/u/:userID/games/:game/targets/goals">
-						<UGPTGoalsPage {...{ reqUser, game }} />
+						<UserGameGoalsPage {...{ reqUser, game }} />
 					</Route>
 					<Route exact path="/u/:userID/games/:game/targets">
-						<UGPTQuestsPage {...{ reqUser, game }} />
+						<UserGameQuestsPage {...{ reqUser, game }} />
 					</Route>
 				</Switch>
 			</Col>

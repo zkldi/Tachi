@@ -30,9 +30,10 @@ const BMS_TABLE_META_RE = /<meta[\s]+name="bmstable"/u;
 
 /**
  * When `LoadBMSTable` fails, re-fetch the URL and log response shape hints
- * (redirect stubs, missing bmstable meta tag, etc.).
+ * (redirect stubs, missing bmstable meta tag, etc.). Anything for some diagnostics
+ * as to why the request failed.
  */
-async function logBmstableLoadFailureDebug(tableInfo: BMSTableInfo, err: unknown): Promise<void> {
+async function logBMSTableLoadFailureDebug(tableInfo: BMSTableInfo, err: unknown): Promise<void> {
 	try {
 		const res = await fetch(tableInfo.url);
 		const text = await res.text();
@@ -168,6 +169,7 @@ async function ImportTableLevels(
 		await DB.updateTable("chart")
 			.set({ data: stripTableFoldersKeySql(prefix) })
 			.where("game", "=", game)
+			// TODO(zk): does the ::jsonb cast here serve _any_ purpose?
 			.where(sql`(data::jsonb->>'hashMD5')::text`, "in", md5s)
 			.execute();
 	}
@@ -257,7 +259,7 @@ export async function UpdateTable(tableInfo: BMSTableInfo) {
 		}
 		table = result.table;
 	} catch (err) {
-		await logBmstableLoadFailureDebug(tableInfo, err);
+		await logBMSTableLoadFailureDebug(tableInfo, err);
 		throw err;
 	}
 
@@ -266,7 +268,7 @@ export async function UpdateTable(tableInfo: BMSTableInfo) {
 	log.info(`Levels bumped.`);
 }
 
-/** Full sync over {@link BMS_TABLES}. */
+// Synchronise everything in BMS_TABLES
 export async function syncBmsTablesCore() {
 	for (const table of BMS_TABLES) {
 		try {

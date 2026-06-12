@@ -1,16 +1,16 @@
-import { type GPTRatingSystem } from "#lib/types";
+import { type GameRatingSystem } from "#lib/types";
 import { type CSSProperties } from "react";
 import { type V3Game } from "tachi-common";
 
-export function CreateRatingSys<GPT extends V3Game>(
+export function CreateRatingSys<TGame extends V3Game>(
 	name: string,
 	description: string,
 	enumName: string,
-	toNumber: GPTRatingSystem<GPT>["toNumber"],
-	toString: GPTRatingSystem<GPT>["toString"],
-	idvDifference: GPTRatingSystem<GPT>["idvDifference"] = () => false,
-	achievementFn: GPTRatingSystem<GPT>["achievementFn"] = undefined,
-): GPTRatingSystem<GPT> {
+	toNumber: GameRatingSystem<TGame>["toNumber"],
+	toString: GameRatingSystem<TGame>["toString"],
+	idvDifference: GameRatingSystem<TGame>["idvDifference"] = () => false,
+	achievementFn: GameRatingSystem<TGame>["achievementFn"] = undefined,
+): GameRatingSystem<TGame> {
 	return {
 		description,
 		enumName,

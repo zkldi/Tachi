@@ -1,6 +1,6 @@
 import Divider from "#components/util/Divider";
 import Select from "#components/util/Select";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { type GoalSubDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
 import React, { useMemo, useState } from "react";
@@ -13,7 +13,7 @@ export default function GoalSubInfo({
 	dataset,
 	game,
 	onEditGoal,
-}: { dataset: GoalSubDataset; onEditGoal?: (goal: GoalDocument) => void } & GamePT) {
+}: { dataset: GoalSubDataset; onEditGoal?: (goal: GoalDocument) => void } & GameProps) {
 	const [show, setShow] = useState<"achieved" | "all" | "unachieved">("all");
 
 	const { directGoals, folderGoals } = useMemo(() => {

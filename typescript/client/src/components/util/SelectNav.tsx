@@ -1,5 +1,4 @@
 import { type JustChildren, type SetState } from "#types/react";
-import React from "react";
 import { Nav } from "react-bootstrap";
 
 export default function SelectNav<T>({

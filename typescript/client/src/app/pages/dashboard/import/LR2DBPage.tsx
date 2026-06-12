@@ -3,7 +3,6 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Divider from "#components/util/Divider";
 import Muted from "#components/util/Muted";
 import { convertLR2Db } from "#util/db-converters/lr2";
-import React from "react";
 
 export default function LR2DBPage() {
 	useSetSubheader(["Import Scores", "LR2 Database File"]);

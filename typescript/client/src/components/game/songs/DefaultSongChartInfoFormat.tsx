@@ -1,5 +1,4 @@
 import { DisplayLevelNum } from "#components/tables/cells/DifficultyCell";
-import React from "react";
 import {
 	type ChartDocument,
 	FormatDifficultyLong,

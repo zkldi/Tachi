@@ -5,30 +5,30 @@ import RivalsMainPage from "#app/pages/dashboard/users/games/_game/_playtype/riv
 import SessionsPage from "#app/pages/dashboard/users/games/_game/_playtype/SessionsPage";
 import SpecificSessionPage from "#app/pages/dashboard/users/games/_game/_playtype/SpecificSessionPage";
 import TargetsPage from "#app/pages/dashboard/users/games/_game/_playtype/targets/TargetsPage";
-import UGPTSettingsPage from "#app/pages/dashboard/users/games/_game/_playtype/UGPTSettingsPage";
-import UGPTUtilsPage from "#app/pages/dashboard/users/games/_game/_playtype/utils/UGPTUtilsPage";
+import UserGameSettingsPage from "#app/pages/dashboard/users/games/_game/_playtype/UserGameSettingsPage";
+import UserGameUtilsPage from "#app/pages/dashboard/users/games/_game/_playtype/utils/UserGameUtilsPage";
 import UserGamesPage from "#app/pages/dashboard/users/UserGamesPage";
 import UserImportsPage from "#app/pages/dashboard/users/UserImportsPage";
 import UserIntegrationsPage from "#app/pages/dashboard/users/UserIntegrationsPage";
 import UserInvitesPage from "#app/pages/dashboard/users/UserInvitesPage";
 import UserOrphansPage from "#app/pages/dashboard/users/UserOrphansPage";
 import UserSettingsPage from "#app/pages/dashboard/users/UserSettingsPage";
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import RequireAuthAsUserParam from "#components/auth/RequireAuthAsUserParam";
 import LayoutHeaderContainer from "#components/layout/LayoutHeaderContainer";
-import { UGPTBottomNav, UGPTHeaderBody } from "#components/user/UGPTHeader";
+import { UserGameHeaderBody, UserGameNav } from "#components/user/UserGameHeader";
 import { UserBottomNav, UserHeaderBody } from "#components/user/UserHeader";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { BackgroundContext } from "#context/BackgroundContext";
 import { TargetsContextProvider } from "#context/TargetsContext";
-import { UGPTContextProvider } from "#context/UGPTContext";
 import { UserContext } from "#context/UserContext";
+import { UserGameContextProvider } from "#context/UserGameContext";
 import { UserSettingsContext } from "#context/UserSettingsContext";
-import { type UGPTStatsReturn } from "#types/api-returns";
+import { type UserGameStatsReturn } from "#types/api-returns";
 import { APIFetchV1, type APIFetchV1Return, ToAPIURL } from "#util/api";
 import { IsSupportedGame } from "#util/asserts";
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useQuery } from "react-query";
 import { Redirect, Route, Switch, useHistory, useParams } from "react-router-dom";
 import { FormatGame, type UserDocument, type UserGameStats, type V3Game } from "tachi-common";
@@ -170,21 +170,21 @@ function V3UserGameRoutes({ reqUser }: { reqUser: UserDocument }) {
 	const game = gameParam;
 
 	return (
-		<UGPTContextProvider>
+		<UserGameContextProvider>
 			<TargetsContextProvider>
 				<Inner game={game} reqUser={reqUser} />
 			</TargetsContextProvider>
-		</UGPTContextProvider>
+		</UserGameContextProvider>
 	);
 }
 
 function Inner({ reqUser, game }: { game: V3Game; reqUser: UserDocument }) {
 	const { user } = useContext(UserContext);
 
-	const { data, error } = useQuery<UGPTStatsReturn, APIFetchV1Return<UserGameStats>>(
+	const { data, error } = useQuery<UserGameStatsReturn, APIFetchV1Return<UserGameStats>>(
 		[reqUser.id, game],
 		async () => {
-			const res = await APIFetchV1<UGPTStatsReturn>(`/users/${reqUser.id}/games/${game}`);
+			const res = await APIFetchV1<UserGameStatsReturn>(`/users/${reqUser.id}/games/${game}`);
 
 			if (!res.success) {
 				console.error(res);
@@ -214,7 +214,7 @@ function Inner({ reqUser, game }: { game: V3Game; reqUser: UserDocument }) {
 		<>
 			<LayoutHeaderContainer
 				footer={
-					<UGPTBottomNav
+					<UserGameNav
 						baseUrl={`/u/${reqUser.username}/games/${game}`}
 						game={game}
 						isRequestedUser={reqUser.id === user?.id}
@@ -222,7 +222,7 @@ function Inner({ reqUser, game }: { game: V3Game; reqUser: UserDocument }) {
 				}
 				header={`${reqUser.username}'s ${FormatGame(game)} Profile`}
 			>
-				<UGPTHeaderBody game={game} reqUser={reqUser} stats={stats} />
+				<UserGameHeaderBody game={game} reqUser={reqUser} stats={stats} />
 			</LayoutHeaderContainer>
 			<Switch>
 				<Route exact path="/u/:userID/games/:game">
@@ -250,11 +250,11 @@ function Inner({ reqUser, game }: { game: V3Game; reqUser: UserDocument }) {
 					<LeaderboardsPage game={game} reqUser={reqUser} />
 				</Route>
 				<Route path="/u/:userID/games/:game/utils">
-					<UGPTUtilsPage game={game} reqUser={reqUser} />
+					<UserGameUtilsPage game={game} reqUser={reqUser} />
 				</Route>
 				<RequireAuthAsUserParam>
 					<Route exact path="/u/:userID/games/:game/settings">
-						<UGPTSettingsPage game={game} reqUser={reqUser} />
+						<UserGameSettingsPage game={game} reqUser={reqUser} />
 					</Route>
 				</RequireAuthAsUserParam>
 				<Route path="*">

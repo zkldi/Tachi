@@ -11,8 +11,8 @@ import {
 	type PBScoreDocument,
 	type ScoreData,
 	type ScoreDocument,
-	type UGPTSettingsDocument,
 	type UserDocument,
+	type UserGameSettingsDocument,
 	type UserGameStats,
 	type V3Game,
 } from "tachi-common";
@@ -75,7 +75,7 @@ export function mkFakeUser(userID: integer, modifant: DeepPartial<UserDocument> 
 export function mkFakeGameSettings(
 	userID: integer,
 	game: V3Game,
-	modifant: DeepPartial<UGPTSettingsDocument> = {},
+	modifant: DeepPartial<UserGameSettingsDocument> = {},
 ) {
 	return dmf(FakeGameSettings, {
 		userID,

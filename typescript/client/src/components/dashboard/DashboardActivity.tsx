@@ -1,12 +1,12 @@
 import Activity from "#components/activity/Activity";
-import { AllLUGPTStatsContext } from "#context/AllLUGPTStatsContext";
-import React, { useContext } from "react";
+import { AllYourUGStatsContext } from "#context/AllYourUGStatsContext";
+import { useContext } from "react";
 import { type UserDocument } from "tachi-common";
 
 import { DashboardLoggedInNoScores } from "./DashboardLoggedInNoScores";
 
 export default function DashboardActivity({ user }: { user: UserDocument }) {
-	const { ugs } = useContext(AllLUGPTStatsContext);
+	const { ugs } = useContext(AllYourUGStatsContext);
 
 	if (ugs?.length === 0) {
 		return <DashboardLoggedInNoScores user={user} />;

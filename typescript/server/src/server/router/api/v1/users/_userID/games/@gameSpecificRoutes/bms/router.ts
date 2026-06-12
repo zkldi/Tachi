@@ -44,7 +44,7 @@ function resolveUserCustomBMSTableOrThrow(
 /**
  * Return some HTML for this custom table.
  *
- * @note Since this is the UGPT route, trying to fetch GPT custom tables
+ * @note Since this is the user-game route, trying to fetch game custom tables
  * will result in a 404. This applies for all subsequent :tableUrlName routes.
  *
  * @name GET /api/v1/users/:userID/games/:game/custom-tables/:tableUrlName

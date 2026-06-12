@@ -11,7 +11,7 @@ import {
 
 type SearchResults = {
 	charts: {
-		[GPT in V3Game]?: Array<{
+		[TGame in V3Game]?: Array<{
 			chart: ChartDocument;
 			playcount: integer;
 			song: SongDocument;
@@ -23,7 +23,7 @@ type SearchResults = {
 
 type ChartHashSearchReturns = {
 	charts: {
-		[GPT in V3Game]?: Array<{
+		[TGame in V3Game]?: Array<{
 			chart: ChartDocument;
 			playcount: integer;
 			song: SongDocument;

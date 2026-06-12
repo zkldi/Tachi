@@ -38,8 +38,8 @@ import {
 	type SongDocument,
 	type TableDocument,
 	type TachiAPIClientDocument,
-	type UGPTSettingsDocument,
 	type UserDocument,
+	type UserGameSettingsDocument,
 	type UserGameStats,
 	type UserGameStatsSnapshotDocument,
 	type UserGameStatsWithProfileLeaderboardRank,
@@ -64,7 +64,7 @@ type SearchChartsByGame = Record<
 	}>
 >;
 type UserRankingPosition = { outOf: integer; ranking: integer };
-type UGPTHistorySnapshot = Omit<UserGameStatsSnapshotDocument, "game" | "playtype" | "userID">;
+type UGHistorySnapshot = Omit<UserGameStatsSnapshotDocument, "game" | "playtype" | "userID">;
 type AdminJobQueueFilters = { job_kind?: string; scope?: string; status?: number };
 type AdminActionFilters = { kind?: string; username?: string };
 
@@ -356,7 +356,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /users/:userID/activity": {
-		description: "Per-GPT activity feed for the user.",
+		description: "Per-game activity feed for the user.",
 		input: z.object({
 			startTime: z.coerce.number().optional(),
 			includeRivals: z.string().optional(),
@@ -673,7 +673,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// Users /:userID/games/:game (UGPT)
+	// Users /:userID/games/:game
 	// ────────────────────────────────────────────────
 
 	// User games - literal gameGroup segments (game-specific)
@@ -720,7 +720,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /users/:userID/games/:game": {
-		description: "UGPT overview (game stats, rankings).",
+		description: "User-game overview (game stats, rankings).",
 		input: z.object({}),
 		output: z.strictObject({
 			gameStats: doc<UserGameStatsWithRanking>(),
@@ -737,11 +737,11 @@ export const API_V1_SPEC = {
 		input: z.object({
 			duration: z.enum(["week", "month", "3mo", "year", "all"]).optional(),
 		}),
-		output: docArray<UGPTHistorySnapshot>(),
+		output: docArray<UGHistorySnapshot>(),
 	},
 
 	"GET /users/:userID/games/:game/most-played": {
-		description: "Most played charts for the user on this GPT.",
+		description: "Most played charts for the user on this game.",
 		input: z.object({}),
 		output: z.strictObject({
 			charts: docArray<ChartDocument>(),
@@ -763,7 +763,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /users/:userID/games/:game/activity": {
-		description: "Activity feed for this user+GPT.",
+		description: "Activity feed for this user+game.",
 		input: z.object({
 			sessions: z.coerce.number().min(10).max(100).optional(),
 			startTime: z.coerce.number().optional(),
@@ -778,7 +778,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT PBs
+	// User-Game PBs
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/pbs": {
@@ -869,7 +869,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Scores
+	// User-Game Scores
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/scores": {
@@ -909,7 +909,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Sessions
+	// User-Game Sessions
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/sessions": {
@@ -952,7 +952,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Tables
+	// User-Game Tables
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/tables/:tableID": {
@@ -990,7 +990,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Showcase
+	// User-Game Showcase
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/showcase": {
@@ -1016,21 +1016,21 @@ export const API_V1_SPEC = {
 		input: z.object({
 			showcase: z.array(z.unknown()).max(6),
 		}),
-		output: z.nullable(doc<UGPTSettingsDocument>()),
+		output: z.nullable(doc<UserGameSettingsDocument>()),
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Settings
+	// User-Game Settings
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/settings": {
-		description: "Get this user's UGPT settings.",
+		description: "Get this user's user-game settings.",
 		input: z.object({}),
-		output: z.nullable(doc<UGPTSettingsDocument>()),
+		output: z.nullable(doc<UserGameSettingsDocument>()),
 	},
 
 	"PATCH /users/:userID/games/:game/settings": {
-		description: "Patch UGPT settings preferences.",
+		description: "Patch user-game settings preferences.",
 		input: z.object({
 			preferredScoreAlg: z.string().nullable().optional(),
 			preferredSessionAlg: z.string().nullable().optional(),
@@ -1040,11 +1040,11 @@ export const API_V1_SPEC = {
 			gameSpecific: z.record(z.string(), z.unknown()).optional(),
 			preferredDefaultEnum: z.string().nullable().optional(),
 		}),
-		output: doc<UGPTSettingsDocument>(),
+		output: doc<UserGameSettingsDocument>(),
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Folders
+	// User-Game Folders
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/folders": {
@@ -1132,7 +1132,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Targets
+	// User-Game Targets
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/targets/recently-achieved": {
@@ -1183,7 +1183,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /users/:userID/games/:game/targets/all-subs": {
-		description: "All goal and quest subscriptions for the user on this GPT.",
+		description: "All goal and quest subscriptions for the user on this game.",
 		input: z.object({}),
 		output: z.strictObject({
 			goalSubs: docArray<GoalSubscriptionDocument>(),
@@ -1193,7 +1193,7 @@ export const API_V1_SPEC = {
 		}),
 	},
 
-	// UGPT Goals
+	// User-Game Goals
 	"GET /users/:userID/games/:game/targets/goals": {
 		description: "User's goal subscriptions with related quest info.",
 		input: z.object({}),
@@ -1247,7 +1247,7 @@ export const API_V1_SPEC = {
 		output: empty,
 	},
 
-	// UGPT Quests
+	// User-Game Quests
 	"GET /users/:userID/games/:game/targets/quests": {
 		description: "Subscribed quests for the user.",
 		input: z.object({}),
@@ -1287,7 +1287,7 @@ export const API_V1_SPEC = {
 	},
 
 	// ────────────────────────────────────────────────
-	// UGPT Rivals
+	// User-Game Rivals
 	// ────────────────────────────────────────────────
 
 	"GET /users/:userID/games/:game/rivals": {
@@ -1452,7 +1452,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/leaderboard": {
-		description: "Profile leaderboard for a GPT.",
+		description: "Profile leaderboard for a game.",
 		input: z.object({
 			alg: z.string().optional(),
 			limit: z.coerce.number().max(500).optional(),
@@ -1464,7 +1464,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/pb-leaderboard": {
-		description: "PB-based leaderboard for a GPT.",
+		description: "PB-based leaderboard for a game.",
 		input: z.object({
 			alg: z.string().optional(),
 			limit: z.coerce.number().max(50).optional(),
@@ -1478,13 +1478,13 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/players": {
-		description: "Search for players who have played this GPT.",
+		description: "Search for players who have played this game.",
 		input: z.object({ search: z.string() }),
 		output: docArray<UserDocument>(),
 	},
 
 	"GET /games/:game/activity": {
-		description: "Activity feed for a GPT.",
+		description: "Activity feed for a game.",
 		input: z.object({
 			sessions: z.coerce.number().min(10).max(100).optional(),
 			startTime: z.coerce.number().optional(),
@@ -1494,7 +1494,7 @@ export const API_V1_SPEC = {
 
 	// Games Charts
 	"GET /games/:game/charts": {
-		description: "List or search charts for a GPT.",
+		description: "List or search charts for a game.",
 		input: z.object({
 			search: z.string().optional(),
 			noIntelligentOmit: z.string().optional(),
@@ -1556,7 +1556,7 @@ export const API_V1_SPEC = {
 
 	// Games Songs
 	"GET /games/:game/songs/:songID": {
-		description: "Song document and all its charts for a GPT.",
+		description: "Song document and all its charts for a game.",
 		input: z.object({}),
 		output: z.strictObject({
 			song: doc<SongDocument>(),
@@ -1566,7 +1566,7 @@ export const API_V1_SPEC = {
 
 	// Games Folders
 	"GET /games/:game/folders": {
-		description: "Search folders for a GPT.",
+		description: "Search folders for a game.",
 		input: z.object({
 			search: z.string(),
 			inactive: z.string().optional(),
@@ -1586,7 +1586,7 @@ export const API_V1_SPEC = {
 
 	// Games Tables
 	"GET /games/:game/tables": {
-		description: "List tables for a GPT.",
+		description: "List tables for a game.",
 		input: z.object({ showInactive: z.string().optional() }),
 		output: docArray<TableDocument>(),
 	},
@@ -1602,7 +1602,7 @@ export const API_V1_SPEC = {
 
 	// Games Targets
 	"GET /games/:game/targets/recently-achieved": {
-		description: "Recently achieved goals/quests across all users for this GPT.",
+		description: "Recently achieved goals/quests across all users for this game.",
 		input: z.object({}),
 		output: z.strictObject({
 			goals: docArray<GoalDocument>(),
@@ -1613,7 +1613,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/targets/recently-raised": {
-		description: "Recently interacted goals/quests across all users for this GPT.",
+		description: "Recently interacted goals/quests across all users for this game.",
 		input: z.object({}),
 		output: z.strictObject({
 			goals: docArray<GoalDocument>(),
@@ -1624,7 +1624,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/targets/goals/popular": {
-		description: "Get the most popular goals for this GPT.",
+		description: "Get the most popular goals for this game.",
 		input: z.object({}),
 		output: docArray<GoalDocument>(),
 	},
@@ -1650,7 +1650,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/targets/quests": {
-		description: "Search quests for this GPT.",
+		description: "Search quests for this game.",
 		input: z.object({ search: z.string() }),
 		output: z.strictObject({
 			quests: docArray<QuestDocument>(),
@@ -1671,7 +1671,7 @@ export const API_V1_SPEC = {
 	},
 
 	"GET /games/:game/targets/questlines": {
-		description: "Retrieve all questlines for this GPT.",
+		description: "Retrieve all questlines for this game.",
 		input: z.object({}),
 		output: z.strictObject({
 			questlines: docArray<QuestlineDocument>(),

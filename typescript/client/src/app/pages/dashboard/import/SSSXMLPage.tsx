@@ -1,6 +1,5 @@
 import ImportFileInfo from "#components/imports/ImportFileInfo";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
-import React from "react";
 
 export default function SSSXMLPage() {
 	useSetSubheader(["Import Scores", "SSS .xml"]);

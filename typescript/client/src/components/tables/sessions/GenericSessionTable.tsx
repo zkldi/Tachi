@@ -1,6 +1,6 @@
 import { useSessionRatingAlg } from "#components/util/useScoreRatingAlg";
 import { GetPBs } from "#util/data";
-import { FormatGPTSessionRating, UppercaseFirst } from "#util/misc";
+import { FormatGameSessionRating, UppercaseFirst } from "#util/misc";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import { FormatDuration, FormatTime, MillisToSince } from "#util/time";
 import React, { useState } from "react";
@@ -129,7 +129,7 @@ function Row({
 					{data.__related?.scoreInfo && `PBs: ${GetPBs(data.__related.scoreInfo).length}`}
 				</small>
 			</td>
-			<td>{FormatGPTSessionRating(game, ratingAlg, data.calculatedData[ratingAlg])}</td>
+			<td>{FormatGameSessionRating(game, ratingAlg, data.calculatedData[ratingAlg])}</td>
 			<td>{FormatDuration(data.timeEnded - data.timeStarted)}</td>
 			<td>
 				{MillisToSince(data.timeStarted)}

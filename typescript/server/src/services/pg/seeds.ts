@@ -1,5 +1,4 @@
 import {
-	ALL_GAMES,
 	type ChartDocument,
 	GAME_GROUP_CONFIGS,
 	GameToGameGroup,
@@ -36,20 +35,6 @@ import { log } from "#lib/log/log";
 import fs from "fs";
 import { type Insertable, type Kysely, type RawBuilder, sql } from "kysely";
 import path from "path";
-
-/**
- * Maps a `game` field from seeds JSON (always a canonical V3Game, e.g. "iidx-sp") to the
- * Postgres `game` enum. Run `just seeds-v3-migrate` if legacy shapes appear in repo seeds.
- */
-function seedJsonGameToPg(game: string, label: string): PgGame {
-	if ((ALL_GAMES as readonly string[]).includes(game)) {
-		return game as PgGame;
-	}
-
-	throw new Error(
-		`[seeds] ${label}: unrecognised game ${JSON.stringify(game)}. Expected a V3Game string.`,
-	);
-}
 
 const INSERT_CHUNK = 500;
 
@@ -260,36 +245,6 @@ export async function ImportSeedsSubsetForTests(
 			}
 		}
 	}
-}
-
-// ── Chart ID map ───────────────────────────────────────────────────────────
-
-/**
- * Reads all chart seed files and returns a map of old MongoDB chartID (40-char
- * SHA1 hex) → new hex id. Used by the migration script to translate chart_id
- * FK references in scores and PBs.
- */
-export function buildChartIdMap(seedsDir: string): Map<string, string> {
-	const map = new Map<string, string>();
-
-	const chartFiles = fs
-		.readdirSync(seedsDir)
-		.filter((f) => f.startsWith("charts-") && f.endsWith(".json"));
-
-	for (const file of chartFiles) {
-		const charts = JSON.parse(fs.readFileSync(path.join(seedsDir, file), "utf-8")) as Array<{
-			id: string;
-			legacyChartID?: string;
-		}>;
-
-		for (const c of charts) {
-			if (c.legacyChartID && c.id) {
-				map.set(c.legacyChartID, c.id);
-			}
-		}
-	}
-
-	return map;
 }
 
 /**
@@ -572,7 +527,7 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 			const seeds = readSeedFile<SEEDS_GoalDocument>(seedsDir, "goals.json");
 			const rows: Array<NewGoal> = seeds.map((g) => ({
 				id: g.goalID,
-				game: seedJsonGameToPg(g.game, `goal ${g.goalID}`),
+				game: g.game,
 				name: g.name,
 				charts: JSON.stringify(g.charts),
 				criteria: JSON.stringify(g.criteria),
@@ -598,7 +553,7 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 			const seeds = readSeedFile<SEEDS_QuestDocument>(seedsDir, "quests.json");
 			const rows: Array<NewQuest> = seeds.map((q) => ({
 				id: q.questID,
-				game: seedJsonGameToPg(q.game, `quest ${q.questID}`),
+				game: q.game,
 				name: q.name,
 				description: q.desc,
 				quest_data: JSON.stringify(q.questData),
@@ -627,7 +582,7 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 			const seeds = readSeedFile<SEEDS_QuestlineDocument>(seedsDir, "questlines.json");
 			const rows: Array<NewQuestline> = seeds.map((ql) => ({
 				id: ql.questlineID,
-				game: seedJsonGameToPg(ql.game, `questline ${ql.questlineID}`),
+				game: ql.game,
 				name: ql.name,
 				description: ql.desc,
 			}));

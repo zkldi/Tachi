@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SmallText({ small, large }: { large: string; small: string }) {
 	return (
 		<>

@@ -17,7 +17,7 @@ import {
 	type RecordActivityReturn,
 	type SessionReturns,
 } from "#types/api-returns";
-import { type UGPT } from "#types/react";
+import { type GameProfileProps } from "#types/react";
 import { type ScoreDataset } from "#types/tables";
 import {
 	type ClumpedActivity,
@@ -33,7 +33,7 @@ import { ONE_HOUR } from "#util/constants/time";
 import { CreateScoreIDMap, CreateUserMap } from "#util/data";
 import { NO_OP, TruncateString, UppercaseFirst } from "#util/misc";
 import { FormatTime, MillisToSince } from "#util/time";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -58,7 +58,7 @@ function activityUrlWithCursor(baseUrl: string, startTimeMs: number): string {
 	return `${path}?${params.toString()}`;
 }
 
-// Records activity for a group of users on a GPT. Also used for single users.
+// Records activity for a group of users on a game. Also used for single users.
 export default function Activity({
 	url,
 	handleNoActivity = (
@@ -317,7 +317,7 @@ function ScoresActivity({
 				>
 					<div className="timeline-content-title">
 						<span className="me-2">
-							<ProfilePicture size="sm" toGPT={{ game }} user={user} />
+							<ProfilePicture size="sm" toGame={{ game }} user={user} />
 						</span>
 						<Icon
 							style={{
@@ -326,7 +326,7 @@ function ScoresActivity({
 							type={`chevron-${show ? "down" : "right"}`}
 						/>
 						<span className="ms-2" style={{ fontSize: "1.15rem" }}>
-							<UGPTLink game={game} reqUser={user} /> highlighted {subMessage}!
+							<UserGameLink game={game} reqUser={user} /> highlighted {subMessage}!
 						</span>
 						{mutedText && (
 							<>
@@ -402,7 +402,7 @@ function GoalActivity({
 				>
 					<div className="timeline-content-title">
 						<span className="me-2">
-							<ProfilePicture size="sm" toGPT={{ game }} user={user} />
+							<ProfilePicture size="sm" toGame={{ game }} user={user} />
 						</span>
 						<Icon
 							style={{
@@ -411,7 +411,7 @@ function GoalActivity({
 							type={`chevron-${show ? "down" : "right"}`}
 						/>
 						<span className="ms-2" style={{ fontSize: "1.15rem" }}>
-							<UGPTLink game={game} reqUser={user} /> achieved {subMessage}!
+							<UserGameLink game={game} reqUser={user} /> achieved {subMessage}!
 						</span>
 						{mutedText && (
 							<>
@@ -470,9 +470,9 @@ function QuestActivity({
 					<div className="timeline-content-title">
 						<span style={{ fontSize: "1.15rem" }}>
 							<span className="me-2">
-								<ProfilePicture size="sm" toGPT={{ game }} user={user} />
+								<ProfilePicture size="sm" toGame={{ game }} user={user} />
 							</span>
-							<UGPTLink game={game} reqUser={user} /> completed the{" "}
+							<UserGameLink game={game} reqUser={user} /> completed the{" "}
 							<Link
 								className="text-decoration-none"
 								to={`/games/${game}/quests/${data.quest.questID}`}
@@ -529,7 +529,7 @@ function SessionActivity({
 				>
 					<div className="timeline-content-title">
 						<span className="me-2">
-							<ProfilePicture size="sm" toGPT={{ game }} user={user} />
+							<ProfilePicture size="sm" toGame={{ game }} user={user} />
 						</span>
 						<Icon
 							style={{
@@ -545,7 +545,7 @@ function SessionActivity({
 							}}
 						>
 							{/* worst string formatting ever */}
-							<UGPTLink game={game} reqUser={user} />{" "}
+							<UserGameLink game={game} reqUser={user} />{" "}
 							{isProbablyActive
 								? user.id === loggedInUser?.id
 									? "are having"
@@ -682,11 +682,11 @@ function ClassAchievementActivity({
 									<span className="me-2">
 										<ProfilePicture
 											size="sm"
-											toGPT={{ game: classGame }}
+											toGame={{ game: classGame }}
 											user={user}
 										/>
 									</span>
-									<UGPTLink game={classGame} reqUser={user} />{" "}
+									<UserGameLink game={classGame} reqUser={user} />{" "}
 									{data.source === "manual" ? (
 										<>
 											{data.classValue ? (
@@ -756,7 +756,7 @@ function ClassAchievementActivity({
 	);
 }
 
-function UGPTLink({ reqUser, game }: UGPT) {
+function UserGameLink({ reqUser, game }: GameProfileProps) {
 	const { user } = useContext(UserContext);
 
 	return (

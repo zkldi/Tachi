@@ -213,7 +213,7 @@ type GoalKeys = GoalDocument["criteria"]["key"];
  * Turn a users progress (i.e. their PB on a chart where the goal is "AAA $chart")
  * into a human-understandable string.
  *
- * This applies GPT-specific formatting in some cases, like appending 'bp' to
+ * This applies game-specific formatting in some cases, like appending 'bp' to
  * IIDX lamp goals.
  */
 export function HumaniseGoalProgress(
@@ -626,7 +626,7 @@ export async function GetGoalDependencies(goalSub: GoalSubscriptionDocument) {
 }
 
 /**
- * For a given UGPT, unsubscribe from all their goals that no longer have any parent,
+ * For a given usergame, unsubscribe from all their goals that no longer have any parent,
  * for example, a quest was removed, now they are left with some stranded goals that we
  * don't want to keep around.
  */

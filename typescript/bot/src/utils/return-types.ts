@@ -36,7 +36,7 @@ export type ImportPollStatus =
 			};
 	  };
 
-export interface UGPTStats<TGame extends V3Game = V3Game> {
+export interface UserGameStatsReturn<TGame extends V3Game = V3Game> {
 	gameStats: UserGameStats;
 	firstScore: ScoreDocument;
 	mostRecentScore: ScoreDocument;

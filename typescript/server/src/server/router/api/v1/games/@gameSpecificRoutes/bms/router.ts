@@ -75,7 +75,7 @@ API_V1_ROUTER.add("GET /games/:game/custom-tables", withGame, ({ ctx }) => {
 /**
  * Return some HTML for this custom table.
  *
- * @note Since this is the GPT route, trying to fetch user specific custom tables
+ * @note Since this is the game route, trying to fetch user-specific custom tables
  * will result in a 404. This applies for all subsequent :tableUrlName routes.
  *
  * @name GET /api/v1/games/:game/custom-tables/:tableUrlName

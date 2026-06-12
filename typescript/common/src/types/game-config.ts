@@ -158,7 +158,10 @@ export interface GameGroupFromGame {
 	wacca: "wacca";
 }
 
-export type V3GameToGPTString = {
+/**
+ * @deprecated
+ */
+export type LEGACY_V3GameToGPTString = {
 	arcaea: "arcaea:Touch";
 	"bms-7k": "bms:7K";
 	"bms-14k": "bms:14K";
@@ -184,7 +187,10 @@ export type V3GameToGPTString = {
 	wacca: "wacca:Single";
 };
 
-export type GPTStringToV3Game = {
+/**
+ * @deprecated
+ */
+export type LEGACY_GPTStringToV3Game = {
 	"arcaea:Touch": "arcaea";
 	"bms:7K": "bms-7k";
 	"bms:14K": "bms-14k";
@@ -222,9 +228,15 @@ export type LEGACY_GPTStrings = {
 	[G in GameGroup]: `${G}:${LEGACY_Playtypes[G]}`;
 };
 
-export type GetGameGroupFromGPTString<GPT extends LEGACY_GPTString> =
+/**
+ * @deprecated
+ */
+export type LEGACY_GetGameGroupFromGPTString<GPT extends LEGACY_GPTString> =
 	GPT extends `${infer G}:${infer _}` ? G : never;
-export type GetPlaytypeFromGPTString<GPT extends LEGACY_GPTString> =
+/**
+ * @deprecated
+ */
+export type LEGACY_GetPlaytypeFromGPTString<GPT extends LEGACY_GPTString> =
 	GPT extends `${infer _}:${infer PT}` ? PT : never;
 
 // Now that we've got GPTString defined, we can define "lookup types" for things about this GPT.
@@ -232,15 +244,17 @@ export type GetPlaytypeFromGPTString<GPT extends LEGACY_GPTString> =
 // Difficulties["iidx:SP"] which expresses those difficulties.
 
 export type LEGACY_GPTStringToGameGroup = {
-	[GPT in LEGACY_GPTString]: GetGameGroupFromGPTString<GPT>;
+	[GPT in LEGACY_GPTString]: LEGACY_GetGameGroupFromGPTString<GPT>;
 };
 
 export type LEGACY_GPTStringToPlaytype = {
-	[GPT in LEGACY_GPTString]: GetPlaytypeFromGPTString<GPT>;
+	[GPT in LEGACY_GPTString]: LEGACY_GetPlaytypeFromGPTString<GPT>;
 };
 
 export type LEGACY_GameToPlaytype = {
-	[TGame in V3Game]: LEGACY_Playtypes[GetGameGroupFromGPTString<V3GameToGPTString[TGame]>];
+	[TGame in V3Game]: LEGACY_Playtypes[LEGACY_GetGameGroupFromGPTString<
+		LEGACY_V3GameToGPTString[TGame]
+	>];
 };
 
 export type Difficulties = {
@@ -386,7 +400,7 @@ export type GameConfig = {
 } & INTERNAL_GAME_CONFIG;
 
 /**
- * Configuration for a GPT. This declares *almost everything* about how this game is
+ * Configuration for a game. This declares *almost everything* about how this game is
  * implemented in Tachi, such as what metrics it supports, how it handles chart
  * difficulties, etc.
  *
@@ -425,7 +439,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	derivedMetrics: ConfDerivedMetrics[TGame];
 
 	/**
-	 * What's the default metric for this GPT?
+	 * What's the default metric for this game?
 	 *
 	 * This will be used to order leaderboard rankings.
 	 *
@@ -434,7 +448,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	defaultMetric: keyof ConfDerivedMetrics[TGame] | keyof ConfProvidedMetrics[TGame];
 
 	/**
-	 * What's the preferred default enum for this GPT?
+	 * What's the preferred default enum for this game?
 	 *
 	 * Enum types are used across the UI (think folder breakdown charts), and the game
 	 * should generally declare a default.
@@ -458,7 +472,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	additionalMetrics: ConfOptionalMetrics[TGame];
 
 	/**
-	 * What rating algorithms may a score have attached onto it for this GPT?
+	 * What rating algorithms may a score have attached onto it for this game?
 	 *
 	 * @note The implementations for these rating algorithms are handled in the
 	 * server config. By defining them here, the typesystem will enforce that you
@@ -467,7 +481,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	scoreRatingAlgs: Record<ScoreRatingAlgorithms[TGame], RatingAlgorithmConfig>;
 
 	/**
-	 * What rating algorithms may a session have attached onto it for this GPT?
+	 * What rating algorithms may a session have attached onto it for this game?
 	 *
 	 * @note The implementations for these rating algorithms are handled in the
 	 * server config. By defining them here, the typesystem will enforce that you
@@ -476,11 +490,11 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	sessionRatingAlgs: Record<SessionRatingAlgorithms[TGame], RatingAlgorithmConfig>;
 
 	/**
-	 * What rating algorithms may a profile have attached onto it for this GPT?
+	 * What rating algorithms may a profile have attached onto it for this game?
 	 *
 	 * @note This is **SPECIFICALLY** for numeric, calculatable metrics. This means
 	 * that the metric *must* be calculatable *at all times* from the set of all
-	 * scores this user has on this GPT.
+	 * scores this user has on this game.
 	 *
 	 * This is intended for numeric, continous data.
 	 * If you want to store something with a fixed set of values, such as a user's
@@ -496,7 +510,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	profileRatingAlgs: Record<ProfileRatingAlgorithms[TGame], ProfileRatingAlgorithmConfig>;
 
 	/**
-	 * What classes may a profile have attached onto it for this GPT?
+	 * What classes may a profile have attached onto it for this game?
 	 *
 	 * Classes are a *fixed*, *ordered* set of values.
 	 * They may be a function of existing state (like "rating colours", where a user
@@ -507,28 +521,28 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	classes: ClassConfigs[TGame];
 
 	/**
-	 * What's the default score rating algorithm for this GPT?
+	 * What's the default score rating algorithm for this game?
 	 *
 	 * @note This should be one of the keys in scoreRatingAlgs.
 	 */
 	defaultScoreRatingAlg: ScoreRatingAlgorithms[TGame];
 
 	/**
-	 * What's the default session rating algorithm for this GPT?
+	 * What's the default session rating algorithm for this game?
 	 *
 	 * @note This should be one of the keys in sessionRatingAlgs.
 	 */
 	defaultSessionRatingAlg: SessionRatingAlgorithms[TGame];
 
 	/**
-	 * What's the default profile rating algorithm for this GPT1?
+	 * What's the default profile rating algorithm for this game?
 	 *
 	 * @note This should be one of the keys in sessionRatingAlgs.
 	 */
 	defaultProfileRatingAlg: ProfileRatingAlgorithms[TGame];
 
 	/**
-	 * How does this GPT handle difficulties?
+	 * How does this game handle difficulties?
 	 *
 	 * "Difficulties" are used to allow one song to have multiple charts. Some games
 	 * may have a known set of possible difficulties, such as "Easy", "Normal" and
@@ -541,14 +555,14 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	difficulties: DifficultyConfigs[TGame];
 
 	/**
-	 * What judgements does this GPT have? These are typically timing-window names.
+	 * What judgements does this game have? These are typically timing-window names.
 	 *
 	 * These should be ordered from **best to worst**.
 	 */
 	orderedJudgements: ReadonlyArray<Judgements[TGame]>;
 
 	/**
-	 * What versions do we support for this GPT?
+	 * What versions do we support for this game?
 	 *
 	 * The keys are the version names, and the values are a humanised, prettified
 	 * form for them.
@@ -564,14 +578,14 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	 *
 	 * We need to handle these cases, so we disambiguate by attaching "chart sets" onto
 	 * every chart. These "chart sets" indicate what sets of chart states they
-	 * appeared in for this GPT. Then, when a score is coming in, it can indicate what
+	 * appeared in for this game. Then, when a score is coming in, it can indicate what
 	 * version this score was on. That way, we can make sure they resolve to the right
 	 * chart.
 	 */
 	versions: Record<Versions[TGame], string>;
 
 	/**
-	 * Chart documents get their own GPT-specific record that they use for whatever
+	 * Chart documents get their own game-specific record that they use for whatever
 	 * they want. IIDX documents store BPI information like kaiden averages, BMS
 	 * charts store sha256/md5 hashes, etc.
 	 *
@@ -580,13 +594,13 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	chartData: ZodObject;
 
 	/**
-	 * This is a zod schema that can be used to validate provided GPT-specific
+	 * This is a zod schema that can be used to validate provided game-specific
 	 * preferences.
 	 */
 	preferences: ZodObject;
 
 	/**
-	 * What game-specific metadata should be stored on scores for this GPT?
+	 * What game-specific metadata should be stored on scores for this game?
 	 *
 	 * These are for things like what options were used (RANDOM, MIRROR etc.)
 	 * and don't exist on PBs.

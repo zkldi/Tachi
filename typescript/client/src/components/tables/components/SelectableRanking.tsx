@@ -1,5 +1,4 @@
 import { type SetState } from "#types/react";
-import React from "react";
 
 import { rankingColumnThStyle } from "../cells/ranking-cell-layout";
 import { type RankingViewMode } from "../cells/RankingCell";

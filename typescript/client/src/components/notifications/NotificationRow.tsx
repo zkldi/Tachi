@@ -1,6 +1,5 @@
 import TimestampCell from "#components/tables/cells/TimestampCell";
 import Icon from "#components/util/Icon";
-import React from "react";
 import { Link } from "react-router-dom";
 import { type NotificationDocument } from "tachi-common";
 

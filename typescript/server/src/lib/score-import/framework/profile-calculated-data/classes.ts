@@ -41,7 +41,7 @@ import { CalculateDerivedClasses } from "../calculated-data/profile-classes";
  * for providing information about a class. This returns the same thing as this function, and it is merged with the
  * defaults.
  */
-export async function CalculateUGPTClasses(
+export async function CalculateUserGameClasses(
 	game: V3Game,
 	userID: integer,
 	ratings: Record<string, number | null>,

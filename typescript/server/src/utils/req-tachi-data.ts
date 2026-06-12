@@ -45,27 +45,6 @@ export function REQ_GetUser(req: Request) {
 	return user;
 }
 
-/**
- * @deprecated Use REQ_GetUserGame instead.
- */
-export function LEGACY_REQ_GetUGPT(req: Request) {
-	const user = REQ_GetTachiData(req, "requestedUser");
-	const gameGroup = REQ_GetTachiData(req, "gameGroup");
-	const playtype = REQ_GetTachiData(req, "playtype");
-
-	return { user, gameGroup, playtype };
-}
-
-/**
- * @deprecated Use REQ_GetGame instead.
- */
-export function LEGACY_REQ_GetGPT(req: Request) {
-	const gameGroup = REQ_GetTachiData(req, "gameGroup");
-	const playtype = REQ_GetTachiData(req, "playtype");
-
-	return { gameGroup, playtype };
-}
-
 export function REQ_GetUserGame(req: Request) {
 	const user = REQ_GetTachiData(req, "requestedUser");
 	const game = REQ_GetTachiData(req, "game");

@@ -14,7 +14,7 @@ import {
 	type V3Game,
 } from "tachi-common";
 
-import type { ImportDeferred, ImportPollStatus, UGPTStats } from "./return-types";
+import type { ImportDeferred, ImportPollStatus, UserGameStatsReturn } from "./return-types";
 
 import { RequestTypes, TachiServerV1Get, TachiServerV1Request } from "./fetch-tachi";
 import { Sleep } from "./misc";
@@ -29,11 +29,11 @@ export async function GetUserInfo(userID: string | integer) {
 	return res.body;
 }
 
-export async function GetUGPTStats(userID: string | integer, game: V3Game) {
-	const res = await TachiServerV1Get<UGPTStats>(`/users/${userID}/games/${game}`, null);
+export async function GetUserGameStats(userID: string | integer, game: V3Game) {
+	const res = await TachiServerV1Get<UserGameStatsReturn>(`/users/${userID}/games/${game}`, null);
 
 	if (!res.success) {
-		throw new Error(`Failed to fetch UGPT stats for userID ${userID}, ${game}.`);
+		throw new Error(`Failed to fetch UserGame stats for userID ${userID}, ${game}.`);
 	}
 
 	return res.body;

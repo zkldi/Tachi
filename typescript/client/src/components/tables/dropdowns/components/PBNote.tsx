@@ -1,5 +1,4 @@
 import ExternalLink from "#components/util/ExternalLink";
-import React from "react";
 
 export default function PBNote() {
 	return (

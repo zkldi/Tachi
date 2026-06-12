@@ -13,7 +13,7 @@ import { seedsDevPlugin } from "./dev/vite-plugin-seeds-dev";
 
 const REPO_ROOT = path.resolve(__dirname, "../..");
 
-/** Hoisted path for a workspace @codemirror/* package (single instance - avoids "Unrecognized extension value" from nested node_modules). */
+// Some sort of hack for dealing with multiple @codemirror instances.
 const cmPackage = (name: string) => path.join(REPO_ROOT, "node_modules", "@codemirror", name);
 
 const codemirrorSingleInstanceAliases: {
@@ -25,7 +25,9 @@ const codemirrorSingleInstanceAliases: {
 
 const lezerPackage = (name: string) => path.join(REPO_ROOT, "node_modules", "@lezer", name);
 
-/** One copy of @lezer/* (nested under @codemirror/* breaks NodeProp + highlight rules, → undefined rule.tags, TreeHighlighter crash). */
+// A similar hack to the cmPackage one above - AI stuffed
+// both of these in the repo in response to an issue with
+// the code editor not highlighting things correctly.
 const lezerSingleInstanceAliases: {
 	find: string;
 	replacement: string;
@@ -36,7 +38,7 @@ const lezerSingleInstanceAliases: {
 
 export default defineConfig(({ command }) => ({
 	// Edit mode is only on for `vite dev` - `vite build` and `vite preview`
-	// produce a read-only bundle suitable for hosting at seeds.tachi.ac.
+	// disable the editing-of-seeds stuff that is only useful for local dev.
 	define: {
 		"import.meta.env.VITE_SEEDS_EDIT_MODE": JSON.stringify(command === "serve"),
 		"import.meta.env.VITE_SEEDS_REPO": JSON.stringify(

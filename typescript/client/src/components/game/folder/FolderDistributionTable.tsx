@@ -5,7 +5,6 @@ import { ChangeOpacity } from "#util/color-opacity";
 import { TACHI_BAR_THEME } from "#util/constants/chart-theme";
 import { PercentFrom, StepFromToMax } from "#util/misc";
 import { ResponsiveBar } from "@nivo/bar";
-import React from "react";
 import { type integer } from "tachi-common";
 
 export default function FolderDistributionTable<T extends string>({

@@ -1,7 +1,7 @@
 import Icon from "#components/util/Icon";
 import LinkButton from "#components/util/LinkButton";
 import { NotificationsContext } from "#context/NotificationsContext";
-import React, { useContext, useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { Badge } from "react-bootstrap";
 
 export function UserNotificationButton() {

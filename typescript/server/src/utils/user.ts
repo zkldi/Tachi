@@ -161,7 +161,7 @@ export async function GetUsersRanking(stats: UserGameStats) {
 	return ranking;
 }
 
-export function GetUGPTPlaycount(userID: integer, game: V3Game) {
+export function GetUserGamePlaycount(userID: integer, game: V3Game) {
 	return DB.selectFrom("score")
 		.select((eb) => eb.fn.countAll().as("playcount"))
 		.where("user_id", "=", userID)

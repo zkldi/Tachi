@@ -1,6 +1,5 @@
 import { type JustChildren } from "#types/react";
 import { type BarDatum, type BarTooltipProps } from "@nivo/bar";
-import React from "react";
 
 /*function pointTooltipContent(point: PointTooltipProps["point"]) {
 	return (

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function NoDataWrapper({ children }: { children: JSX.Element[] }) {
 	if (children.length === 0) {
 		return (

@@ -1,8 +1,8 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Icon from "#components/util/Icon";
 import Muted from "#components/util/Muted";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GPTRatingSystem } from "#lib/types";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameRatingSystem } from "#lib/types";
 import { IsNotNullish } from "#util/misc";
 import React from "react";
 import { type ChartDocument, type V3Game } from "tachi-common";
@@ -18,8 +18,8 @@ export default function RatingSystemPart({
 	game: V3Game;
 	truncateRatingsLines?: boolean;
 }) {
-	const ratingSystems: Array<GPTRatingSystem<any>> =
-		GPT_CLIENT_IMPLEMENTATIONS[game].ratingSystems;
+	const ratingSystems: Array<GameRatingSystem<any>> =
+		GAME_CLIENT_IMPLEMENTATIONS[game].ratingSystems;
 
 	if (ratingSystems.filter((e) => typeof e.toNumber(chart) === "number").length === 0) {
 		return null;

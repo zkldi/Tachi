@@ -1,4 +1,3 @@
-import React from "react";
 import { COLOUR_SET } from "tachi-common";
 
 export default function OngekiDamageCell({ damage }: { damage: number | null | undefined }) {

@@ -1,7 +1,7 @@
 import type {
 	GameImplementation,
-	GPTProfileCalcs,
-	GPTSessionCalcs,
+	GameProfileCalcs,
+	GameSessionCalcs,
 	PBMergeFunction,
 } from "#game-implementations/types";
 
@@ -20,14 +20,14 @@ import {
 /** `iidx:SP` / `iidx:DP` as v3 games. */
 type IIDXGames = "iidx-dp" | "iidx-sp";
 
-const IIDX_SESSION_CALCS: GPTSessionCalcs<IIDXGames> = (arr) => ({
+const IIDX_SESSION_CALCS: GameSessionCalcs<IIDXGames> = (arr) => ({
 	BPI: SessionAvgBest10For("BPI")(arr),
 	ktLampRating: SessionAvgBest10For("ktLampRating")(arr),
 	ktLampRatingHC: SessionAvgBest10For("ktLampRatingHC")(arr),
 	ktLampRatingEXHC: SessionAvgBest10For("ktLampRatingEXHC")(arr),
 });
 
-const IIDX_PROFILE_CALCS: GPTProfileCalcs<IIDXGames> = async (game, userID) => {
+const IIDX_PROFILE_CALCS: GameProfileCalcs<IIDXGames> = async (game, userID) => {
 	const [BPI, ktLampRating, ktLampRatingHC, ktLampRatingEXHC] = await Promise.all([
 		ProfileAvgBestN("BPI", 20, true)(game, userID),
 		ProfileAvgBestN("ktLampRating", 20)(game, userID),

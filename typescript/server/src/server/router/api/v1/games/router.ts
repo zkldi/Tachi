@@ -22,8 +22,8 @@ import {
 	ToQuestDocument,
 	ToQuestSubscriptionDocument,
 } from "#lib/db-formats/target-documents";
-import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
 import { SELECT_USER, ToUserDocument } from "#lib/db-formats/user";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings";
 import {
 	GetFolderChartsAndSongs,
 	GetFolderIDsForChartId,
@@ -78,7 +78,7 @@ import {
 	LEGACY_FormatGameGroupPT,
 	LEGACY_GameToGameGroupPT,
 	LEGACY_GetGamePTConfig,
-	type UGPTSettingsDocument,
+	type UserGameSettingsDocument,
 	type UserGameStatsWithProfileLeaderboardRank,
 	type V3Game,
 } from "tachi-common";
@@ -292,7 +292,7 @@ API_V1_ROUTER.add("GET /games/:game/players", withGame, async ({ input, ctx }) =
 });
 
 /**
- * Retrieve activity for this GPT.
+ * Retrieve activity for this game.
  *
  * @name GET /api/v1/games/:game/activity
  */
@@ -363,12 +363,13 @@ API_V1_ROUTER.add("GET /games/:game/charts", withGame, async ({ input, ctx, req 
 				(e) => (e as ChartDocument<GamesForGroup["iidx"]>).data["2dxtraSet"] === null,
 			);
 		} else {
-			const iidxSettings = await GetUGPTSettingsDocument(
+			const iidxSettings = await GetUserGameSettingsDocument(
 				req[SYMBOL_TACHI_API_AUTH].userID,
 				v3Game,
 			);
 
-			const iidxGameSpecific = iidxSettings?.preferences.gameSpecific as UGPTSettingsDocument<
+			const iidxGameSpecific = iidxSettings?.preferences
+				.gameSpecific as UserGameSettingsDocument<
 				GamesForGroup["iidx"]
 			>["preferences"]["gameSpecific"];
 
@@ -535,7 +536,7 @@ API_V1_ROUTER.add("GET /games/:game/songs/:songID", withGame, async ({ ctx, para
 });
 
 /**
- * Search the folders for this GPT.
+ * Search the folders for this game.
  *
  * @param search - The query to search for.
  * @param inactive - Also show inactive folders.
@@ -653,7 +654,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/recently-raised", withGame, async ({
 });
 
 /**
- * Get the most popular goals for this GPT.
+ * Get the most popular goals for this game.
  *
  * @name GET /api/v1/games/:game/targets/goals/popular
  */
@@ -728,7 +729,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/goals/:goalID", withGame, async ({ c
 });
 
 /**
- * Search quests for this GPT.
+ * Search quests for this game.
  *
  * @param search - The query to search for.
  *
@@ -797,7 +798,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/quests/:questID", withGame, async ({
 });
 
 /**
- * Retrieve all questlines for this GPT. Also returns any standalone quests.
+ * Retrieve all questlines for this game. Also returns any standalone quests.
  *
  * @name GET /api/v1/games/:game/targets/questlines
  */

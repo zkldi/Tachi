@@ -6,8 +6,8 @@ import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GamePT } from "#types/react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameProps } from "#types/react";
 import { type FolderDataset } from "#types/tables";
 import { ChangeOpacity } from "#util/color-opacity";
 import { ONE_WEEK } from "#util/constants/time";
@@ -31,7 +31,7 @@ type Props = {
 	enumMetric: string;
 	folderDataset: FolderDataset;
 	reqUser: UserDocument;
-} & GamePT;
+} & GameProps;
 
 export default function FolderMinimap(props: Props) {
 	const { data, isLoading, error } = useApiQuery<{
@@ -175,7 +175,7 @@ function MinimapElement({
 	gameConfig: GameConfig;
 	wasRecent: boolean;
 }) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	let icon = "level-up-alt";
 

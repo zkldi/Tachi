@@ -1,8 +1,8 @@
-import { ACTION_UpdateUgptShowcase as ACTION_UpdateUGPTShowcase } from "#actions/update-ugpt-showcase";
+import { ACTION_UpdateUserGameShowcase } from "#actions/update-ugpt-showcase";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import { GetChartById } from "#lib/db-formats/chart";
 import { LoadFolderDocumentByGameAndSlug } from "#lib/db-formats/folders";
-import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { EvaluateShowcaseStat } from "#lib/showcase/evaluator";
@@ -157,13 +157,13 @@ API_V1_ROUTER.add(
 		const authedUser = await GetUserWithIDGuaranteed(authUserID);
 		const taker = { acct: { id: authedUser.id, username: authedUser.username }, ip: req.ip };
 
-		await ACTION_UpdateUGPTShowcase(taker, {
+		await ACTION_UpdateUserGameShowcase(taker, {
 			game,
 			stats: stats as Array<ShowcaseStatDetails>,
 			userID: user.id,
 		});
 
-		const settings = await GetUGPTSettingsDocument(user.id, game);
+		const settings = await GetUserGameSettingsDocument(user.id, game);
 
 		return success("Updated showcase.", settings);
 	},

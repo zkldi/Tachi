@@ -1,6 +1,6 @@
-import { ACTION_PatchUGPTSettings } from "#actions/patch-ugpt-settings";
+import { ACTION_PatchUserGameSettings } from "#actions/patch-user-game-settings";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
-import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings";
 import { withUserGameProfile } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { API_V1_ROUTER } from "#server/router/api/v1/_singleton";
@@ -8,7 +8,7 @@ import { GetUserWithIDGuaranteed } from "#utils/user";
 import { ExpectedErr } from "bliss";
 
 /**
- * Returns this user's UGPT settings.
+ * Returns this user's game settings.
  *
  * @name GET /api/v1/users/:userID/games/:game/settings
  */
@@ -18,14 +18,14 @@ API_V1_ROUTER.add(
 	async ({ ctx }) => {
 		const { requestedUser: user, game } = ctx;
 
-		const settings = await GetUGPTSettingsDocument(user.id, game);
+		const settings = await GetUserGameSettingsDocument(user.id, game);
 
 		return success(`Returned ${user.username}'s settings.`, settings);
 	},
 );
 
 /**
- * Update UGPT settings preferences.
+ * Update user-game settings preferences.
  *
  * @name PATCH /api/v1/users/:userID/games/:game/settings
  */
@@ -44,9 +44,9 @@ API_V1_ROUTER.add(
 		const authedUser = await GetUserWithIDGuaranteed(authUserID);
 		const taker = { acct: { id: authedUser.id, username: authedUser.username }, ip: req.ip };
 
-		const { settings } = await ACTION_PatchUGPTSettings(taker, {
+		const { settings } = await ACTION_PatchUserGameSettings(taker, {
 			game,
-			preferences: input as Parameters<typeof ACTION_PatchUGPTSettings>[1]["preferences"],
+			preferences: input as Parameters<typeof ACTION_PatchUserGameSettings>[1]["preferences"],
 			userID: user.id,
 		});
 

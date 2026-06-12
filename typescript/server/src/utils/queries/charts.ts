@@ -162,10 +162,10 @@ export async function FindBMSChartOnHash(hash: string) {
 }
 
 /**
- * BMS charts for a playtype whose chart `data` has sieglinde EC or HC &gt; 0 (GPT sieglinde-charts),
+ * BMS charts for a playtype whose chart `data` has sieglinde EC or HC > 0
  * with joined song rows (`songs[i]` matches `charts[i]`).
  */
-export async function FindBMSSieglindeRatedCharts(game: "bms-7k" | "bms-14k"): Promise<{
+export async function FindBMSSieglindeRatedCharts(game: GamesForGroup["bms"]): Promise<{
 	charts: Array<ChartDocument<GamesForGroup["bms"]>>;
 	songs: Array<SongDocument<"bms">>;
 }> {

@@ -1,4 +1,4 @@
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { UserContext } from "#context/UserContext";
 import { IsNullish } from "#util/misc";
 import React, { useContext } from "react";
@@ -27,7 +27,7 @@ export default function VF7Cell({
 	score: PBScoreDocument<VF7Game> | ScoreDocument<VF7Game>;
 }) {
 	const { user } = useContext(UserContext);
-	const { settings } = useLUGPTSettings<VF7Game>();
+	const { settings } = useLoggedInUserGameSettings<VF7Game>();
 
 	if (IsNullish(score.calculatedData.VF7)) {
 		return <td>N/A</td>;

@@ -1,6 +1,5 @@
 import { type FolderDataset, type PBDataset, type ScoreDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import { type Header } from "../components/TachiTable";

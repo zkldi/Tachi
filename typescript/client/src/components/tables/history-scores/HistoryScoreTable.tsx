@@ -1,7 +1,7 @@
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { type ScoreDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
 	type ChartDocument,
 	type integer,
@@ -15,9 +15,9 @@ import TimestampCell from "../cells/TimestampCell";
 import DropdownRow from "../components/DropdownRow";
 import TachiTable from "../components/TachiTable";
 import { GraphAndJudgementDataComponent } from "../dropdowns/components/DocumentComponent";
-import { GPTDropdownSettings } from "../dropdowns/GPTDropdownSettings";
+import { GameDropdownSettings } from "../dropdowns/GameDropdownSettings";
 import ScoreCoreCells from "../game-core-cells/ScoreCoreCells";
-import { GetGPTCoreHeaders } from "../headers/GameHeaders";
+import { GetGameCoreHeaders } from "../headers/GameHeaders";
 import { EmptyHeader } from "../headers/IndicatorHeader";
 
 export default function HistoryScoreTable({
@@ -35,7 +35,7 @@ export default function HistoryScoreTable({
 
 	const [rating, setRating] = useState(defaultRating);
 
-	const headers = GetGPTCoreHeaders<ScoreDataset>(game, rating, setRating, (k) => k);
+	const headers = GetGameCoreHeaders<ScoreDataset>(game, rating, setRating, (k) => k);
 
 	return (
 		<TachiTable
@@ -74,7 +74,7 @@ function Row({
 				<GraphAndJudgementDataComponent
 					chart={chart}
 					score={sc}
-					{...{ ...GPTDropdownSettings(game) }}
+					{...{ ...GameDropdownSettings(game) }}
 				/>
 			}
 			nested

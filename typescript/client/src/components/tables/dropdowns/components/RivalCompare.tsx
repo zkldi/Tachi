@@ -2,12 +2,12 @@ import RivalChartTable from "#components/tables/rivals/RivalChartTable";
 import ApiError from "#components/util/ApiError";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
-import useUGPTBase from "#components/util/useUGPTBase";
+import useUserGameBase from "#components/util/useUserGameBase";
 import { UserContext } from "#context/UserContext";
 import { type ChartRivalsReturn } from "#types/api-returns";
 import { type RivalChartDataset } from "#types/tables";
 import { NumericSOV } from "#util/sorts";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { type ChartDocument, GetGameConfig, type UserDocument, type V3Game } from "tachi-common";
@@ -31,7 +31,7 @@ function Inner({
 	currentUser: UserDocument;
 	game: V3Game;
 }) {
-	const base = useUGPTBase({ reqUser: currentUser, game });
+	const base = useUserGameBase({ reqUser: currentUser, game });
 
 	const { data, error } = useApiQuery<ChartRivalsReturn>(
 		`/users/${currentUser.id}/games/${game}/pbs/${chart.chartID}/rivals`,

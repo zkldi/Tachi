@@ -1,7 +1,6 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import ExternalLink from "#components/util/ExternalLink";
 import { TachiConfig } from "#lib/config";
-import React from "react";
 
 export default function PrivacyPolicyPage() {
 	useSetSubheader(["Dashboard", "GDPR/Legal Stuff"]);

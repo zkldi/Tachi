@@ -3,9 +3,9 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { describe, expect, it } from "vitest";
 
-import { GetRecentUGPTHighlights, GetRecentUGPTScores } from "./scores";
+import { GetRecentUserGameHighlights, GetRecentUserGameScores } from "./scores";
 
-describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
+describe("GetRecentUserGameScores / GetRecentUserGameHighlights (Postgres)", () => {
 	let counter = 0;
 
 	async function seedIidxScore(opts: {
@@ -71,7 +71,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 			.execute();
 	}
 
-	it("GetRecentUGPTScores orders by time_achieved desc, nulls last", async () => {
+	it("GetRecentUserGameScores orders by time_achieved desc, nulls last", async () => {
 		const { id: userId } = await seedUser();
 		await seedIidxScore({
 			userId,
@@ -92,7 +92,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 			timeAchievedMs: null,
 		});
 
-		const scores = await GetRecentUGPTScores(userId, "iidx-sp", 10);
+		const scores = await GetRecentUserGameScores(userId, "iidx-sp", 10);
 		expect(scores.length).toBeGreaterThanOrEqual(3);
 		// newest play time first
 		expect(scores[0]?.timeAchieved).toBeGreaterThanOrEqual(scores[1]?.timeAchieved ?? 0);
@@ -100,7 +100,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 		expect(scores[scores.length - 1]?.timeAchieved).toBeNull();
 	});
 
-	it("GetRecentUGPTHighlights only returns highlight scores", async () => {
+	it("GetRecentUserGameHighlights only returns highlight scores", async () => {
 		const { id: userId } = await seedUser();
 		const base = Date.now();
 		await seedIidxScore({
@@ -116,7 +116,7 @@ describe("GetRecentUGPTScores / GetRecentUGPTHighlights (Postgres)", () => {
 			timeAchievedMs: base + 2000,
 		});
 
-		const highlights = await GetRecentUGPTHighlights(userId, "iidx-sp", 50);
+		const highlights = await GetRecentUserGameHighlights(userId, "iidx-sp", 50);
 		const ours = highlights.filter((s) => s.scoreID.startsWith("sc-hl-"));
 		expect(ours).toHaveLength(1);
 		expect(ours[0]?.highlight).toBe(true);

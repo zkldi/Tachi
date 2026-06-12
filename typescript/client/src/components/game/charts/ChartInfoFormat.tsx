@@ -6,12 +6,12 @@ import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
-import { AllLUGPTStatsContext } from "#context/AllLUGPTStatsContext";
+import { AllYourUGStatsContext } from "#context/AllYourUGStatsContext";
 import { UserContext } from "#context/UserContext";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type GamePT } from "#types/react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type GameProps } from "#types/react";
 import { IsNotNullish } from "#util/misc";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -28,8 +28,8 @@ export default function ChartInfoFormat({
 	song,
 	chart,
 	game,
-}: { chart: ChartDocument; song: SongDocument } & GamePT) {
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+}: { chart: ChartDocument; song: SongDocument } & GameProps) {
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	const ratingSystems = gptImpl.ratingSystems;
 
@@ -38,7 +38,7 @@ export default function ChartInfoFormat({
 	);
 
 	const { user } = useContext(UserContext);
-	const { ugs } = useContext(AllLUGPTStatsContext);
+	const { ugs } = useContext(AllYourUGStatsContext);
 
 	if (error) {
 		return <ApiError error={error} />;

@@ -1,13 +1,12 @@
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { ToAPIURL } from "#util/api";
-import React from "react";
 import { Link } from "react-router-dom";
 import { type UserDocument } from "tachi-common";
 
 export default function ProfilePicture({
 	user,
 	src,
-	toGPT,
+	toGame,
 	link = true,
 	size = "lg",
 }: {
@@ -27,9 +26,9 @@ export default function ProfilePicture({
 	src?: string;
 
 	/**
-	 * When clicking this this profile, should it take you to a UGPT page?
+	 * When clicking this this profile, should it take you to a UserGame page?
 	 */
-	toGPT?: GamePT;
+	toGame?: GameProps;
 
 	user: UserDocument;
 }) {
@@ -46,8 +45,8 @@ export default function ProfilePicture({
 
 	if (link) {
 		let addendum = "";
-		if (toGPT) {
-			addendum = `/games/${toGPT.game}`;
+		if (toGame) {
+			addendum = `/games/${toGame.game}`;
 		}
 
 		return (

@@ -8,10 +8,10 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import SelectLinkButton from "#components/util/SelectLinkButton";
 import usePreferredRanking from "#components/util/usePreferredRanking";
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
-import useUGPTBase from "#components/util/useUGPTBase";
-import { type GamePT, type SetState, type UGPT } from "#types/react";
-import { FormatGPTScoreRatingName } from "#util/misc";
-import React, { useState } from "react";
+import useUserGameBase from "#components/util/useUserGameBase";
+import { type GameProfileProps, type GameProps, type SetState } from "#types/react";
+import { FormatGameScoreRatingName } from "#util/misc";
+import { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import {
@@ -34,7 +34,7 @@ export default function ScoresPage({
 	game,
 }: {
 	reqUser: UserDocument;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 
 	const defaultRating = useScoreRatingAlg(game);
@@ -53,7 +53,7 @@ export default function ScoresPage({
 		`${reqUser.username}'s ${FormatGame(game)} Scores`,
 	);
 
-	const base = useUGPTBase({ reqUser, game });
+	const base = useUserGameBase({ reqUser, game });
 
 	return (
 		<Row xs={{ cols: 1 }}>
@@ -121,7 +121,7 @@ function AlgSelector({
 }: {
 	alg: ScoreRatingAlgorithms[V3Game];
 	setAlg: SetState<ScoreRatingAlgorithms[V3Game]>;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 	return (
 		<Form.Group className="d-flex flex-column gap-1">
@@ -129,7 +129,7 @@ function AlgSelector({
 			<Form.Select onChange={(e) => setAlg(e.target.value as any)} value={alg}>
 				{Object.keys(gameConfig.scoreRatingAlgs).map((e) => (
 					<option key={e} value={e}>
-						{FormatGPTScoreRatingName(game, e)}
+						{FormatGameScoreRatingName(game, e)}
 					</option>
 				))}
 			</Form.Select>
@@ -163,7 +163,7 @@ function PBsOverview({
 	reqUser: UserDocument;
 	showPlaycount?: boolean;
 	url: string;
-} & GamePT) {
+} & GameProps) {
 	const [search, setSearch] = useState("");
 
 	const { data, error } = useFetchPBs(url, reqUser);
@@ -247,7 +247,7 @@ function PBsSearch({
 	alg?: ScoreRatingAlgorithms[V3Game];
 	reqUser: UserDocument;
 	search: string;
-} & GamePT) {
+} & GameProps) {
 	const { data, error } = useFetchPBs(
 		`/users/${reqUser.id}/games/${game}/pbs?search=${search}`,
 		reqUser,
@@ -260,7 +260,7 @@ function PBsSearch({
 	);
 }
 
-function ScoresOverview({ reqUser, game }: UGPT) {
+function ScoresOverview({ reqUser, game }: GameProfileProps) {
 	const [search, setSearch] = useState("");
 
 	const { data, error } = useFetchScores(
@@ -294,7 +294,7 @@ function ScoresSearch({
 	reqUser,
 	game,
 	search,
-}: { reqUser: UserDocument; search: string } & GamePT) {
+}: { reqUser: UserDocument; search: string } & GameProps) {
 	const { data, error } = useFetchScores(
 		`/users/${reqUser.id}/games/${game}/scores?search=${search}`,
 		reqUser,

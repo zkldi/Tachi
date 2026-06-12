@@ -1,8 +1,7 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { FormatMillions, FormatScoreRating } from "#util/misc";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import MiniTable from "../components/MiniTable";
@@ -27,7 +26,7 @@ export default function OngekiScoreRatingCell({
 	const grade = score.scoreData.grade;
 
 	const gradeColor = ChangeOpacity(
-		GPT_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.grade[score.scoreData.grade],
+		GAME_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.grade[score.scoreData.grade],
 		0.2,
 	);
 
@@ -67,7 +66,7 @@ export default function OngekiScoreRatingCell({
 							<tr>
 								<LampCell
 									colour={
-										GPT_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.noteLamp[
+										GAME_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.noteLamp[
 											noteLamp
 										]
 									}
@@ -78,7 +77,7 @@ export default function OngekiScoreRatingCell({
 							<tr>
 								<LampCell
 									colour={
-										GPT_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.bellLamp[
+										GAME_CLIENT_IMPLEMENTATIONS.ongeki.enumColours.bellLamp[
 											bellLamp
 										]
 									}

@@ -7,7 +7,7 @@ import Icon from "#components/util/Icon";
 import Muted from "#components/util/Muted";
 import { TargetsContext } from "#context/TargetsContext";
 import { UserContext } from "#context/UserContext";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { APIFetchV1 } from "#util/api";
 import { GetGoalIDsFromQuest } from "#util/data";
 import { HumanisedJoinArray } from "#util/misc";
@@ -170,7 +170,7 @@ function QuestSectionComponent({
 }: {
 	goals: Map<string, GoalDocument>;
 	section: QuestSection;
-} & GamePT) {
+} & GameProps) {
 	const { goalSubs } = useContext(TargetsContext);
 
 	const achievedInSection = section.goals.filter((g) => goalSubs.get(g.goalID)?.achieved).length;
@@ -228,7 +228,7 @@ function GoalCard({
 	goal: GoalDocument;
 	note?: string;
 	onEdit?: () => void;
-} & GamePT) {
+} & GameProps) {
 	const { goalSubs } = useContext(TargetsContext);
 	const goalSub = goalSubs.get(goal.goalID);
 

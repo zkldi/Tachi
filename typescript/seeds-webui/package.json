@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"license": "MIT",
-	"description": "Workstation UI for Tachi's db/seeds: browse, query, diff over git history, and (in localdev) edit.",
+	"description": "Web UI for Tachi's seeds: browse, query, diff over git history, and (in localdev) edit.",
 	"scripts": {
 		"dev": "vite",
 		"build": "bun scripts/bundle-current-seeds.ts && vite build",

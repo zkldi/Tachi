@@ -1,5 +1,4 @@
 import Icon from "#components/util/Icon";
-import React from "react";
 import toast from "react-hot-toast";
 
 export function SendErrorToast(text: string) {

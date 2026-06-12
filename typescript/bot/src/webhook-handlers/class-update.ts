@@ -10,7 +10,7 @@ import {
 
 import { Env } from "../config";
 import { client } from "../main";
-import { GetUGPTStats, GetUserInfo } from "../utils/api-requests";
+import { GetUserGameStats, GetUserInfo } from "../utils/api-requests";
 import { CreateEmbed } from "../utils/embeds";
 import { PrependTachiUrl } from "../utils/fetch-tachi";
 import { FormatClass, GetGameChannel, UppercaseFirst } from "../utils/misc";
@@ -45,7 +45,7 @@ export async function HandleClassUpdateV1(
 		const minimumNecessaryScores = GetMinimumScores(game, event.set);
 
 		if (minimumNecessaryScores !== null) {
-			const { totalScores } = await GetUGPTStats(userDoc.id, game);
+			const { totalScores } = await GetUserGameStats(userDoc.id, game);
 
 			// Do not render if the user hasn't hit the score cap.
 			if (totalScores < minimumNecessaryScores) {

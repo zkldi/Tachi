@@ -2,7 +2,6 @@ import Card from "#components/layout/page/Card";
 import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import { type ImportStates } from "#types/import";
-import React from "react";
 
 import ImportClassImportInfo from "./ImportClassImportInfo";
 

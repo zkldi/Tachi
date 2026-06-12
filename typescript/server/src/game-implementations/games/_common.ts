@@ -1,11 +1,11 @@
 import type {
 	ChartSpecificMetricValidator,
-	GPTChartSpecificMetricValidators,
-	GPTClassDerivers,
-	GPTProfileCalcs,
-	GPTScoreCalcs,
-	GPTScoreDeriver,
-	GPTSessionCalcs,
+	GameChartSpecificMetricValidators,
+	GameClassDerivers,
+	GameProfileCalcs,
+	GameScoreCalcs,
+	GameScoreDeriver,
+	GameSessionCalcs,
 	PBMergeFunction,
 	PBRankingValuesFunction,
 	ScoreValidator,
@@ -52,12 +52,12 @@ function calculateIIDXLikePercent(exScore: integer, notecount: integer) {
 	return (100 * exScore) / (notecount * 2);
 }
 
-export const IIDXLIKE_SCORE_DERIVER: GPTScoreDeriver<IIDXLikes> = (scoreData, chart) => ({
+export const IIDXLIKE_SCORE_DERIVER: GameScoreDeriver<IIDXLikes> = (scoreData, chart) => ({
 	percent: calculateIIDXLikePercent(scoreData.score, chart.data.notecount),
 	grade: IIDXLikeGetGrade(scoreData.score, chart.data.notecount),
 });
 
-export const IIDXLIKE_VALIDATORS: GPTChartSpecificMetricValidators<IIDXLikes> = {
+export const IIDXLIKE_VALIDATORS: GameChartSpecificMetricValidators<IIDXLikes> = {
 	score: EX_SCORE_CHECK,
 };
 
@@ -75,7 +75,7 @@ export const IIDXLIKE_SCORE_VALIDATORS: Array<ScoreValidator<IIDXLikes>> = [
 	},
 ];
 
-export const SDVXLIKE_SCORE_DERIVER: GPTScoreDeriver<SDVXLikes> = (scoreData, _chart) => ({
+export const SDVXLIKE_SCORE_DERIVER: GameScoreDeriver<SDVXLikes> = (scoreData, _chart) => ({
 	grade: GetGrade(SDVXLIKE_GBOUNDARIES, scoreData.score),
 });
 
@@ -173,12 +173,16 @@ export function VF7ToClass(vf: number): SpecificUserGameStats<"sdvx">["classes"]
 	return "SIENNA_I";
 }
 
-export const SDVXLIKE_SCORE_CALCS: GPTScoreCalcs<SDVXLikes> = (scoreData, _derivedData, chart) => ({
+export const SDVXLIKE_SCORE_CALCS: GameScoreCalcs<SDVXLikes> = (
+	scoreData,
+	_derivedData,
+	chart,
+) => ({
 	VF6: Volforce.calculateVF6(scoreData.score, scoreData.lamp, chart.levelNum),
 	VF7: Volforce.calculateVF7(scoreData.score, scoreData.lamp, chart.levelNum),
 });
 
-export const SDVXLIKE_SESSION_CALCS: GPTSessionCalcs<SDVXLikes> = (arr) => {
+export const SDVXLIKE_SESSION_CALCS: GameSessionCalcs<SDVXLikes> = (arr) => {
 	const v = SessionAvgBest10For("VF6")(arr);
 	const v2 = SessionAvgBest10For("VF7")(arr);
 
@@ -188,12 +192,12 @@ export const SDVXLIKE_SESSION_CALCS: GPTSessionCalcs<SDVXLikes> = (arr) => {
 	};
 };
 
-export const SDVXLIKE_PROFILE_CALCS: GPTProfileCalcs<SDVXLikes> = async (game, userID) => ({
+export const SDVXLIKE_PROFILE_CALCS: GameProfileCalcs<SDVXLikes> = async (game, userID) => ({
 	VF6: await ProfileSumBestN("VF6", 50)(game, userID),
 	VF7: await ProfileSumBestN("VF7", 50)(game, userID),
 });
 
-export const SDVXLIKE_CLASS_DERIVERS: GPTClassDerivers<SDVXLikes> = (ratings) => ({
+export const SDVXLIKE_CLASS_DERIVERS: GameClassDerivers<SDVXLikes> = (ratings) => ({
 	vfClass: IsNullish(ratings.VF7) ? null : VF7ToClass(ratings.VF7),
 });
 
@@ -232,15 +236,15 @@ export const SDVXLIKE_SCORE_VALIDATORS: Array<ScoreValidator<SDVXLikes>> = [
 	},
 ];
 
-export const SGL_SESSION_CALCS: GPTSessionCalcs<BmsPmsGames> = (arr) => ({
+export const SGL_SESSION_CALCS: GameSessionCalcs<BmsPmsGames> = (arr) => ({
 	sieglinde: SessionAvgBest10For("sieglinde")(arr),
 });
 
-export const SGL_PROFILE_CALCS: GPTProfileCalcs<BmsPmsGames> = async (game, userID) => ({
+export const SGL_PROFILE_CALCS: GameProfileCalcs<BmsPmsGames> = async (game, userID) => ({
 	sieglinde: await ProfileAvgBestN("sieglinde", 20)(game, userID),
 });
 
-export const SGL_SCORE_CALCS: GPTScoreCalcs<BmsPmsGames> = (scoreData, _derivedData, chart) => {
+export const SGL_SCORE_CALCS: GameScoreCalcs<BmsPmsGames> = (scoreData, _derivedData, chart) => {
 	const ecValue = chart.data.sglEC ?? 0;
 	const hcValue = chart.data.sglHC ?? 0;
 

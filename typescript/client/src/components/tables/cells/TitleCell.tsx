@@ -2,7 +2,6 @@ import GentleLink from "#components/util/GentleLink";
 import Muted from "#components/util/Muted";
 import { ToCDNURL } from "#util/api";
 import { CreateChartLink } from "#util/data";
-import React from "react";
 import { type ChartDocument, type SongDocument, type V3Game } from "tachi-common";
 
 /** Fixed title column width; content truncates per line under `table-layout` fixed/auto. */

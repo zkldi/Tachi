@@ -4,9 +4,9 @@ export function IsSupportedGame(str: string): str is V3Game {
 	return IsValidGame(str);
 }
 
-export function IsScore<GPT extends V3Game>(
-	pbOrScore: PBScoreDocument<GPT> | ScoreDocument<GPT>,
-): pbOrScore is ScoreDocument<GPT> {
+export function IsScore<TGame extends V3Game>(
+	pbOrScore: PBScoreDocument<TGame> | ScoreDocument<TGame>,
+): pbOrScore is ScoreDocument<TGame> {
 	// @ts-expect-error thats the test...
 	return !!pbOrScore.scoreMeta;
 }

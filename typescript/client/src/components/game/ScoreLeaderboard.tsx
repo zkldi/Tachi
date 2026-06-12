@@ -5,11 +5,11 @@ import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { type ScoreLeaderboardReturns } from "#types/api-returns";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { type PBDataset } from "#types/tables";
 import { DEFAULT_BAR_PROPS } from "#util/charts";
 import { CreateChartMap, CreateUserMap } from "#util/data";
-import { FormatGPTScoreRatingName } from "#util/misc";
+import { FormatGameScoreRatingName } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
 import { ResponsiveBar } from "@nivo/bar";
 import React, { useState } from "react";
@@ -29,7 +29,7 @@ export default function ScoreLeaderboard({
 	game,
 	url,
 	refreshDeps = [],
-}: { refreshDeps?: Array<string>; url: string } & GamePT) {
+}: { refreshDeps?: Array<string>; url: string } & GameProps) {
 	const gameConfig = GetGameConfig(game);
 
 	const defaultAlg = useScoreRatingAlg(game);
@@ -41,7 +41,7 @@ export default function ScoreLeaderboard({
 			<Form.Select onChange={(e) => setAlg(e.target.value as any)} value={alg}>
 				{Object.keys(gameConfig.scoreRatingAlgs).map((e) => (
 					<option key={e} value={e}>
-						{FormatGPTScoreRatingName(game, e)}
+						{FormatGameScoreRatingName(game, e)}
 					</option>
 				))}
 			</Form.Select>

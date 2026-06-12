@@ -2,7 +2,6 @@ import DropdownNavLink from "#components/ui/DropdownNavLink";
 import QuickDropdown from "#components/ui/QuickDropdown";
 import { TachiConfig } from "#lib/config";
 import { type SetState } from "#types/react";
-import React from "react";
 import { GetGameGroupConfig } from "tachi-common";
 
 export default function ImportScoresLink({

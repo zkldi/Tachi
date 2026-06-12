@@ -209,7 +209,7 @@ describe("GetRecentActivity (Postgres)", () => {
 		expect(result.achievedClasses[0]?.classValue).toBe("DAN_1");
 	});
 
-	it("returns only goals for the requested GPT", async () => {
+	it("returns only goals for the requested game", async () => {
 		const { id: userId } = await seedUser({
 			username: `act_goal_${Date.now()}`,
 		});

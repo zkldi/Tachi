@@ -14,7 +14,7 @@ import { type V3Game } from "../types";
 /**
  * What's the "mold" for a game config? All game configs *must* satisfy this interface.
  *
- * @see {GameConfig} for the intended-to-use type. This is an *outline* for a GPT
+ * @see {GameConfig} for the intended-to-use type. This is an *outline* for a game
  * config, and has significantly less typesafety.
  *
  * Documentation for this type can be found in `game-support.ts`, which has the
@@ -78,6 +78,10 @@ export type INTERNAL_GAME_GROUP_CONFIG<PT extends string = string> = Readonly<{
 	dynamicContent: boolean;
 	games: ReadonlyArray<V3Game>;
 	name: string;
+	/**
+	 * @deprecated - Legacy V2 way of referring to games, uses gameGroup+playtype as game ID
+	 * instead of just "Game".
+	 */
 	playtypes: ReadonlyArray<PT>;
 	songData: ZodObject;
 }>;

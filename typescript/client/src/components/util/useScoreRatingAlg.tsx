@@ -6,46 +6,46 @@ import {
 	type V3Game,
 } from "tachi-common";
 
-import useLUGPTSettings from "./useLUGPTSettings";
+import useLoggedInUserGameSettings from "./useLoggedInUserGameSettings";
 
-export default function useScoreRatingAlg<GPT extends V3Game = V3Game>(
-	game: GPT,
-): ScoreRatingAlgorithms[GPT] {
-	const { settings } = useLUGPTSettings();
+export default function useScoreRatingAlg<TGame extends V3Game = V3Game>(
+	game: TGame,
+): ScoreRatingAlgorithms[TGame] {
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings?.preferences.preferredScoreAlg) {
 		const gameConfig = GetGameConfig(game);
 
-		return gameConfig.defaultScoreRatingAlg as ScoreRatingAlgorithms[GPT];
+		return gameConfig.defaultScoreRatingAlg as ScoreRatingAlgorithms[TGame];
 	}
 
-	return settings.preferences.preferredScoreAlg as ScoreRatingAlgorithms[GPT];
+	return settings.preferences.preferredScoreAlg as ScoreRatingAlgorithms[TGame];
 }
 
-export function useSessionRatingAlg<GPT extends V3Game = V3Game>(
-	game: GPT,
-): SessionRatingAlgorithms[GPT] {
-	const { settings } = useLUGPTSettings();
+export function useSessionRatingAlg<TGame extends V3Game = V3Game>(
+	game: TGame,
+): SessionRatingAlgorithms[TGame] {
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings?.preferences.preferredSessionAlg) {
 		const gameConfig = GetGameConfig(game);
 
-		return gameConfig.defaultSessionRatingAlg as SessionRatingAlgorithms[GPT];
+		return gameConfig.defaultSessionRatingAlg as SessionRatingAlgorithms[TGame];
 	}
 
-	return settings.preferences.preferredSessionAlg as SessionRatingAlgorithms[GPT];
+	return settings.preferences.preferredSessionAlg as SessionRatingAlgorithms[TGame];
 }
 
-export function useProfileRatingAlg<GPT extends V3Game = V3Game>(
-	game: GPT,
-): ProfileRatingAlgorithms[GPT] {
-	const { settings } = useLUGPTSettings();
+export function useProfileRatingAlg<TGame extends V3Game = V3Game>(
+	game: TGame,
+): ProfileRatingAlgorithms[TGame] {
+	const { settings } = useLoggedInUserGameSettings();
 
 	if (!settings?.preferences.preferredProfileAlg) {
 		const gameConfig = GetGameConfig(game);
 
-		return gameConfig.defaultProfileRatingAlg as ProfileRatingAlgorithms[GPT];
+		return gameConfig.defaultProfileRatingAlg as ProfileRatingAlgorithms[TGame];
 	}
 
-	return settings.preferences.preferredProfileAlg as ProfileRatingAlgorithms[GPT];
+	return settings.preferences.preferredProfileAlg as ProfileRatingAlgorithms[TGame];
 }

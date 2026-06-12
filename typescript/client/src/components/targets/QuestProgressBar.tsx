@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./QuestProgressBar.module.scss";
 
 /** Renders a themed track + fill for quest / questline completion (0–100%). */

@@ -7,12 +7,12 @@ import Icon from "#components/util/Icon";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectButton from "#components/util/SelectButton";
-import { AllLUGPTStatsContext } from "#context/AllLUGPTStatsContext";
+import { AllYourUGStatsContext } from "#context/AllYourUGStatsContext";
 import { UserContext } from "#context/UserContext";
 import { type ScoreDataset } from "#types/tables";
 import { APIFetchV1 } from "#util/api";
 import { CreateChartMap, CreateSongMap } from "#util/data";
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { Alert, ButtonGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -44,7 +44,7 @@ export default function ImportInfo({
 }) {
 	const { data, error } = useApiQuery<Data>(`/imports/${importID}`);
 
-	const { setUGS } = useContext(AllLUGPTStatsContext);
+	const { setUGS } = useContext(AllYourUGStatsContext);
 	const { user } = useContext(UserContext);
 	const [hasUpdatedStats, setHasUpdatedStats] = useState(false);
 

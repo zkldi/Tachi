@@ -1,7 +1,6 @@
 import ImportSQLiteForm from "#components/imports/ImportSQLiteForm";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import { convertArcaeaDB } from "#util/db-converters/arcaea";
-import React from "react";
 import { Alert } from "react-bootstrap";
 
 export default function ArcaeaST3Page() {

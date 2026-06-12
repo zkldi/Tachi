@@ -3,7 +3,7 @@ import ChartTooltip from "#components/charts/ChartTooltip";
 import TimelineChart from "#components/charts/TimelineChart";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import Card from "#components/layout/page/Card";
-import UGPTStatShowcase from "#components/user/UGPTStatShowcase";
+import UserGameStatShowcase from "#components/user/UserGameStatShowcase";
 import ApiError from "#components/util/ApiError";
 import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
@@ -13,11 +13,11 @@ import useApiQuery from "#components/util/query/useApiQuery";
 import Select from "#components/util/Select";
 import SelectButton from "#components/util/SelectButton";
 import { useProfileRatingAlg } from "#components/util/useScoreRatingAlg";
-import { type UGPTHistory } from "#types/api-returns";
-import { type GamePT, type SetState, type UGPT } from "#types/react";
+import { type UserGameHistory } from "#types/api-returns";
+import { type GameProfileProps, type GameProps, type SetState } from "#types/react";
 import {
-	FormatGPTProfileRating,
-	FormatGPTProfileRatingName,
+	FormatGameProfileRating,
+	FormatGameProfileRatingName,
 	getProfileRatingAlgKeysInDisplayOrder,
 	UppercaseFirst,
 } from "#util/misc";
@@ -27,7 +27,7 @@ import React, { useMemo, useState } from "react";
 import FormSelect from "react-bootstrap/FormSelect";
 import { FormatGame, GetGameConfig, type UserGameStats, type V3Game } from "tachi-common";
 
-export default function OverviewPage({ reqUser, game }: UGPT) {
+export default function OverviewPage({ reqUser, game }: GameProfileProps) {
 	useSetSubheader(
 		["Users", reqUser.username, "Games", FormatGame(game)],
 		[reqUser, game],
@@ -36,14 +36,14 @@ export default function OverviewPage({ reqUser, game }: UGPT) {
 
 	return (
 		<React.Fragment key={game}>
-			<UGPTStatShowcase game={game} reqUser={reqUser} />
+			<UserGameStatShowcase game={game} reqUser={reqUser} />
 			<RankingInfo game={game} reqUser={reqUser} />
 			<RecentActivity game={game} reqUser={reqUser} />
 		</React.Fragment>
 	);
 }
 
-function RecentActivity({ reqUser, game }: UGPT) {
+function RecentActivity({ reqUser, game }: GameProfileProps) {
 	return (
 		<div className="mt-4">
 			<Activity handleNoActivity={null} url={`/users/${reqUser.id}/games/${game}/activity`} />
@@ -53,10 +53,10 @@ function RecentActivity({ reqUser, game }: UGPT) {
 
 type RankingDurations = "3mo" | "all" | "month" | "week" | "year";
 
-function RankingInfo({ reqUser, game }: UGPT) {
+function RankingInfo({ reqUser, game }: GameProfileProps) {
 	const [duration, setDuration] = useState<RankingDurations>("3mo");
 
-	const { data, error } = useApiQuery<UGPTHistory>(
+	const { data, error } = useApiQuery<UserGameHistory>(
 		`/users/${reqUser.id}/games/${game}/history?duration=${duration}`,
 	);
 
@@ -84,10 +84,10 @@ function UserHistory({
 	duration,
 	setDuration,
 }: {
-	data: UGPTHistory;
+	data: UserGameHistory;
 	duration: RankingDurations;
 	setDuration: SetState<RankingDurations>;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 
 	const [mode, setMode] = useState<"playcount" | "ranking" | "rating">("rating");
@@ -98,9 +98,9 @@ function UserHistory({
 
 	const propName = useMemo(() => {
 		if (mode === "rating" && rating) {
-			return FormatGPTProfileRatingName(game, rating);
+			return FormatGameProfileRatingName(game, rating);
 		} else if (mode === "ranking") {
-			return `${FormatGPTProfileRatingName(game, rating)} Ranking`;
+			return `${FormatGameProfileRatingName(game, rating)} Ranking`;
 		}
 
 		return UppercaseFirst(mode);
@@ -114,7 +114,7 @@ function UserHistory({
 				return "N/A";
 			}
 
-			return FormatGPTProfileRating(game, rating, ratingValue);
+			return FormatGameProfileRating(game, rating, ratingValue);
 		} else if (mode === "ranking") {
 			return (
 				<>
@@ -173,7 +173,7 @@ function UserHistory({
 							>
 								{getProfileRatingAlgKeysInDisplayOrder(game).map((e) => (
 									<option key={e} value={e}>
-										{FormatGPTProfileRatingName(game, e)}
+										{FormatGameProfileRatingName(game, e)}
 									</option>
 								))}
 							</FormSelect>
@@ -226,7 +226,7 @@ function UserHistory({
 							>
 								{getProfileRatingAlgKeysInDisplayOrder(game).map((e) => (
 									<option key={e} value={e}>
-										{FormatGPTProfileRatingName(game, e)}
+										{FormatGameProfileRatingName(game, e)}
 									</option>
 								))}
 							</FormSelect>
@@ -245,7 +245,7 @@ function RatingTimeline({
 	data,
 	rating,
 }: {
-	data: UGPTHistory;
+	data: UserGameHistory;
 	game: V3Game;
 	rating: keyof UserGameStats["ratings"];
 }) {
@@ -263,7 +263,7 @@ function RatingTimeline({
 				tickSize: 5,
 				tickPadding: 5,
 				tickRotation: 0,
-				format: (y) => (y ? FormatGPTProfileRating(game, rating, y) : "N/A"),
+				format: (y) => (y ? FormatGameProfileRating(game, rating, y) : "N/A"),
 			}}
 			data={ratingDataset}
 			height="30rem"
@@ -272,9 +272,9 @@ function RatingTimeline({
 				<ChartTooltip>
 					<div>
 						{p.point.data.y
-							? FormatGPTProfileRating(game, rating, p.point.data.y as number)
+							? FormatGameProfileRating(game, rating, p.point.data.y as number)
 							: "N/A"}{" "}
-						{FormatGPTProfileRatingName(game, rating)}
+						{FormatGameProfileRatingName(game, rating)}
 					</div>
 					<small className="text-body-secondary">
 						{MillisToSince(+p.point.data.xFormatted)}
@@ -289,7 +289,7 @@ function RankingTimeline({
 	data,
 	rating,
 }: {
-	data: UGPTHistory;
+	data: UserGameHistory;
 	rating: keyof UserGameStats["ratings"];
 }) {
 	return (

@@ -1,5 +1,4 @@
 import { TachiConfig } from "#lib/config";
-import React from "react";
 import { type UserDocument } from "tachi-common";
 
 export default function SupportBanner({ user }: { user: UserDocument }) {

@@ -1,4 +1,3 @@
-import React from "react";
 import { type integer } from "tachi-common";
 import { FmtStars, StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 

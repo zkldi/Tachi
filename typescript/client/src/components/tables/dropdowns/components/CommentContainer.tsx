@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CommentContainer({ comment }: { comment: string | null }) {
 	if (!comment) {
 		return null;

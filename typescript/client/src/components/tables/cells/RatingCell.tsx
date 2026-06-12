@@ -1,5 +1,4 @@
 import { FormatScoreRating } from "#util/misc";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 export default function RatingCell({

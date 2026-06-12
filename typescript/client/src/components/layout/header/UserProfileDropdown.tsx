@@ -8,7 +8,7 @@ import SupporterIcon from "#components/util/SupporterIcon";
 import { type TextColour } from "#types/bootstrap";
 import { RFA } from "#util/misc";
 import { heySplashes } from "#util/splashes";
-import React, { useState } from "react";
+import { useState } from "react";
 import { UserAuthLevels, type UserDocument } from "tachi-common";
 
 function UserProfileDropdownToggle({ user }: { user: UserDocument }) {

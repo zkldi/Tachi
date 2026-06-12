@@ -5,17 +5,17 @@ import { type UserGameStats } from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
 
 import { MANUAL_CLASS_IMPORT_OPTIONS } from "./class-process-options";
-import { CalculateUGPTClasses, ProcessClassDeltas } from "./classes";
+import { CalculateUserGameClasses, ProcessClassDeltas } from "./classes";
 
-describe("CalculateUGPTClasses", () => {
+describe("CalculateUserGameClasses", () => {
 	it("produces an empty object when there are no derived or custom classes", async () => {
-		const res = await CalculateUGPTClasses("iidx-sp", 1, {}, null, log);
+		const res = await CalculateUserGameClasses("iidx-sp", 1, {}, null, log);
 
 		expect(res).toEqual({});
 	});
 
 	it("merges classes from the ClassProvider", async () => {
-		const res = await CalculateUGPTClasses(
+		const res = await CalculateUserGameClasses(
 			"iidx-sp",
 			1,
 			{},
@@ -27,7 +27,13 @@ describe("CalculateUGPTClasses", () => {
 	});
 
 	it("applies static derived handlers when present", async () => {
-		const res = await CalculateUGPTClasses("gitadora-dora", 1, { naiveSkill: 9000 }, null, log);
+		const res = await CalculateUserGameClasses(
+			"gitadora-dora",
+			1,
+			{ naiveSkill: 9000 },
+			null,
+			log,
+		);
 
 		expect(res).toEqual({ colour: "RAINBOW" });
 	});

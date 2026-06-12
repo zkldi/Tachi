@@ -1,6 +1,5 @@
 import ImportFileInfo from "#components/imports/ImportFileInfo";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
-import React from "react";
 import { type FileUploadImportTypes } from "tachi-common";
 
 export default function SDVXEamCSVPage({

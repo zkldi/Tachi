@@ -6,7 +6,6 @@ import OAuthMoreInfo from "#components/util/OAuthMoreInfo";
 import useApiQuery from "#components/util/query/useApiQuery";
 import useQueryString from "#components/util/useQueryString";
 import { APIFetchV1 } from "#util/api";
-import React from "react";
 import { Link } from "react-router-dom";
 import { type integer, type TachiAPIClientDocument } from "tachi-common";
 

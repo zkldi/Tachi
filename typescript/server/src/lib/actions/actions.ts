@@ -330,7 +330,7 @@ export const ActionSignatures = {
 		}),
 		output: z.object({}),
 	},
-	PATCH_UGPT_SETTINGS: {
+	PATCH_USER_GAME_SETTINGS: {
 		input: z.object({
 			userID: z.number().int(),
 			game: z.enum(ALL_GAMES),
@@ -380,7 +380,7 @@ export const ActionSignatures = {
 			changed: z.boolean(),
 		}),
 	},
-	UPDATE_UGPT_SHOWCASE: {
+	UPDATE_USER_GAME_SHOWCASE: {
 		input: z.object({
 			userID: z.number().int(),
 			game: z.enum(ALL_GAMES),

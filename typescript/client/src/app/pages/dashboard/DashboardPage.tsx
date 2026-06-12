@@ -4,7 +4,7 @@ import { DashboardHeader } from "#components/dashboard/DashboardHeader";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import SessionCalendar from "#components/sessions/SessionCalendar";
 import SessionCard from "#components/sessions/SessionCard";
-import UGPTProfiles from "#components/user/UGPTProfiles";
+import UserGameProfiles from "#components/user/UserGameProfiles";
 import ApiError from "#components/util/ApiError";
 import Divider from "#components/util/Divider";
 import GoalLink from "#components/util/GoalLink";
@@ -68,7 +68,7 @@ function DashboardLoggedIn({ user }: { user: UserDocument }) {
 					/>
 				</Route>
 				<Route exact path="/profiles">
-					<UGPTProfiles />
+					<UserGameProfiles />
 				</Route>
 				<Route exact path="/global-activity">
 					<Activity url="/ublock-blocks-this" />

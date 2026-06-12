@@ -3,7 +3,7 @@ import MyProposalsPage from "#app/pages/dashboard/proposals/MyProposalsPage";
 import ProposalsPage from "#app/pages/dashboard/proposals/ProposalsPage";
 import SearchPage from "#app/pages/dashboard/search/SearchPage";
 import NotificationsPage from "#app/pages/dashboard/users/NotificationsPage";
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import PrivacyPolicyPage from "#app/pages/PrivacyPolicyPage";
 import { Layout } from "#components/layout/Layout";
 import EmailVerify from "#components/layout/misc/EmailVerify";
@@ -13,7 +13,7 @@ import { BannedContext } from "#context/BannedContext";
 import { UserContext } from "#context/UserContext";
 import { TachiConfig } from "#lib/config";
 import { APIFetchV1, ToAPIURL } from "#util/api";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 import { DashboardPage } from "../pages/dashboard/DashboardPage";

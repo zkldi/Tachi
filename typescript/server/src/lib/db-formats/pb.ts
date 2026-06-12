@@ -182,9 +182,11 @@ export async function LoadPbsForUserOnChartsByPgIds(
 	return Promise.all(rows.map((r) => ToPbScoreDocument(r as PbDocumentJoinRow)));
 }
 
-/** PBs for a user on all charts of a song in this GPT (`chart.game` + `song.id`), newest `time_achieved` first. */
+/** PBs for a user on all charts of a song, newest `time_achieved` first. */
 export async function LoadPbsForUserOnSongPgId(
 	userId: number,
+	// pointless arg, this is an optimisation but users shouldn't need to pass
+	// this in... - zk
 	v3Game: Game,
 	songPgId: string,
 ): Promise<PBScoreDocument[]> {
@@ -215,7 +217,7 @@ export async function LoadAllPbsForChartPgId(chartPgId: string): Promise<PBScore
 	return Promise.all(rows.map((r) => ToPbScoreDocument(r as PbDocumentJoinRow)));
 }
 
-/** All PBs for a user on primary charts for this GPT (`chart.game` + `is_primary`). */
+/** All PBs for a user on primary charts for this game. */
 export async function LoadPbDocumentsForUserPrimaryCharts(
 	userId: number,
 	v3Game: Game,
@@ -260,8 +262,8 @@ export async function LoadPbDocumentsForUserPrimaryChartsSortedByAlg(
 }
 
 /**
- * Top PBs in this GPT (`chart.game`), sorted by a numeric field in `calculated_data`
- * (descending). Matches legacy Mongo `personal-bests` queries for the GPT PB leaderboard.
+ * Top PBs in this game, sorted by a numeric field in `calculated_data`
+ * (descending).
  */
 export async function LoadPbDocumentsForGameSortedByCalculatedAlg(
 	v3Game: Game,
@@ -286,9 +288,8 @@ export async function LoadPbDocumentsForGameSortedByCalculatedAlg(
 }
 
 /**
- * PBs for any of the given users in this GPT (`chart.game`), sorted by a numeric field in
- * `calculated_data` (descending). Matches legacy Mongo `personal-bests` queries that did not
- * filter to primary charts only.
+ * PBs for any of the given users in this game, sorted by a numeric field in
+ * `calculated_data` (descending).
  */
 export async function LoadPbDocumentsForUserSetSortedByCalculatedAlg(
 	userIds: number[],

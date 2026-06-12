@@ -1,11 +1,11 @@
-import { type UGPTSettingsDocument } from "tachi-common";
+import { type UserGameSettingsDocument } from "tachi-common";
 
-import useLUGPTSettings from "./useLUGPTSettings";
+import useLoggedInUserGameSettings from "./useLoggedInUserGameSettings";
 
 export default function usePreferredRanking():
-	| UGPTSettingsDocument["preferences"]["preferredRanking"]
+	| UserGameSettingsDocument["preferences"]["preferredRanking"]
 	| null {
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const raw = settings?.preferences.preferredRanking ?? null;
 	// Rival ranking display is disabled; treat stored preference as global.

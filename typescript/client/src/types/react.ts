@@ -85,11 +85,11 @@ export type UseFormik<Values> = {
 	values: Values;
 };
 
-export interface GamePT {
+export interface GameProps {
 	game: V3Game;
 }
 
-export interface UGPT {
+export interface GameProfileProps {
 	reqUser: UserDocument;
 	game: V3Game;
 }

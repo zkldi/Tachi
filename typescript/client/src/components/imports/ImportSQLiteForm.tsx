@@ -2,7 +2,7 @@ import Divider from "#components/util/Divider";
 import useImport from "#components/util/import/useImport";
 import Loading from "#components/util/Loading";
 import { openDatabase } from "#util/db-converters/sql-loader";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
 import { type Database } from "sql.js";
 

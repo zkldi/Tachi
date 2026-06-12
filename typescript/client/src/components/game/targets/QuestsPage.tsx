@@ -7,9 +7,8 @@ import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { TachiConfig } from "#lib/config";
-import { type GamePT } from "#types/react";
+import { type GameProps } from "#types/react";
 import { CreateGoalMap } from "#util/data";
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -19,7 +18,7 @@ import {
 	type QuestlineDocument,
 } from "tachi-common";
 
-export default function QuestsPage({ game }: GamePT) {
+export default function QuestsPage({ game }: GameProps) {
 	useSetSubheader(["Games", FormatGame(game), "Quests"], [game], `${FormatGame(game)} Quests`);
 
 	return (
@@ -29,7 +28,7 @@ export default function QuestsPage({ game }: GamePT) {
 	);
 }
 
-function QuestlineSelector({ game }: GamePT) {
+function QuestlineSelector({ game }: GameProps) {
 	const { data, error } = useApiQuery<{
 		questlines: Array<QuestlineDocument>;
 		standalone: Array<QuestDocument>;

@@ -1,20 +1,20 @@
 import Card from "#components/layout/page/Card";
 import ComparePBsTable from "#components/tables/rivals/ComparePBsTable";
 import ProfilePicture from "#components/user/ProfilePicture";
-import UGPTRatingsTable from "#components/user/UGPTStatsOverview";
+import UserGameRatingsTable from "#components/user/UserGameStatsOverview";
 import ApiError from "#components/util/ApiError";
 import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import UserSelectModal from "#components/util/modal/UserSelectModal";
 import useApiQuery from "#components/util/query/useApiQuery";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import UserIcon from "#components/util/UserIcon";
 import { UserContext } from "#context/UserContext";
-import { type UGPTFolderReturns, type UGPTStatsReturn } from "#types/api-returns";
-import { type GamePT } from "#types/react";
+import { type UserGameFolderReturns, type UserGameStatsReturn } from "#types/api-returns";
+import { type GameProps } from "#types/react";
 import { type ComparePBsDataset } from "#types/tables";
 import { CreateSongMap } from "#util/data";
-import React, { useContext, useMemo, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -30,8 +30,8 @@ export default function RivalCompareFolderPage({
 }: {
 	folder: FolderDocument;
 	reqUser: UserDocument;
-} & GamePT) {
-	const { settings } = useLUGPTSettings();
+} & GameProps) {
+	const { settings } = useLoggedInUserGameSettings();
 	const { user } = useContext(UserContext);
 
 	const [selectedUser, setSelectedUser] = useState<UserDocument | null>(null);
@@ -118,12 +118,12 @@ function FolderCompare({
 	folder: FolderDocument;
 	reqUser: UserDocument;
 	withUser: UserDocument;
-} & GamePT) {
-	const { data: baseData, error: baseError } = useApiQuery<UGPTFolderReturns>(
+} & GameProps) {
+	const { data: baseData, error: baseError } = useApiQuery<UserGameFolderReturns>(
 		`/users/${reqUser.id}/games/${game}/folders/${folder.slug}`,
 	);
 
-	const { data: compareData, error: compareError } = useApiQuery<UGPTFolderReturns>(
+	const { data: compareData, error: compareError } = useApiQuery<UserGameFolderReturns>(
 		`/users/${withUser.id}/games/${game}/folders/${folder.slug}`,
 	);
 
@@ -186,8 +186,10 @@ function FolderCompare({
 	);
 }
 
-function UserCard({ user, game }: { user: UserDocument } & GamePT) {
-	const { data, error } = useApiQuery<UGPTStatsReturn>(`/users/${user.username}/games/${game}`);
+function UserCard({ user, game }: { user: UserDocument } & GameProps) {
+	const { data, error } = useApiQuery<UserGameStatsReturn>(
+		`/users/${user.username}/games/${game}`,
+	);
 
 	if (error) {
 		return <ApiError error={error} />;
@@ -206,7 +208,7 @@ function UserCard({ user, game }: { user: UserDocument } & GamePT) {
 					<ProfilePicture user={user} />
 				</div>
 				<Col lg={7} sm={6} xl={6} xs={12}>
-					{data ? <UGPTRatingsTable ugs={data.gameStats} /> : <Loading />}
+					{data ? <UserGameRatingsTable ugs={data.gameStats} /> : <Loading />}
 				</Col>
 			</Card>
 		</Col>

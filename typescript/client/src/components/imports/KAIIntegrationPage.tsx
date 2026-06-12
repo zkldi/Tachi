@@ -1,4 +1,4 @@
-import { ErrorPage } from "#app/pages/ErrorPage";
+import ErrorPage from "#app/pages/ErrorPage";
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import ApiError from "#components/util/ApiError";
 import Divider from "#components/util/Divider";
@@ -7,7 +7,7 @@ import useImport from "#components/util/import/useImport";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { UserContext } from "#context/UserContext";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { type APIImportTypes, GetGameGroupConfig } from "tachi-common";
 

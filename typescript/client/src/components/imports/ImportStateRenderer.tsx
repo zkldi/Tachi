@@ -3,7 +3,6 @@ import ManageImport from "#components/tables/dropdowns/components/ManageImport";
 import Divider from "#components/util/Divider";
 import Loading from "#components/util/Loading";
 import { type ImportStates } from "#types/import";
-import React from "react";
 
 import ImportInfo from "./ImportInfo";
 

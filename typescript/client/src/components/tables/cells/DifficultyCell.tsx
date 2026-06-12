@@ -1,9 +1,8 @@
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Icon from "#components/util/Icon";
 import Muted from "#components/util/Muted";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import {
 	type ChartDocument,
 	FormatDifficultyLong,
@@ -47,7 +46,7 @@ export default function DifficultyCell({
 		return <ITGDifficultyCell chart={chart as ChartDocument<"itg-stamina">} />;
 	}
 
-	const gptImpl = GPT_CLIENT_IMPLEMENTATIONS[game];
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
 	if (["iidx-dp", "iidx-sp", "maimaidx", "ongeki"].includes(game)) {
 		alwaysShort = true;

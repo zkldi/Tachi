@@ -3,7 +3,7 @@ import type { FolderStatsInfo } from "#types/api-returns";
 import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Muted from "#components/util/Muted";
 import { ChangeOpacity } from "#util/color-opacity";
-import { FormatGPTEnumMetric, ToFixedFloor } from "#util/misc";
+import { FormatGameEnumMetric, ToFixedFloor } from "#util/misc";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { type GameConfig, GetScoreMetricConf, V3Game } from "tachi-common";
 
@@ -77,7 +77,7 @@ export default function FolderEnumProgressBar({
 		if (count > 0) {
 			filled += count;
 			segments.push({
-				label: FormatGPTEnumMetric(game, enumMetric, v),
+				label: FormatGameEnumMetric(game, enumMetric, v),
 				count,
 				rawFill: colours?.[v] ?? "var(--bs-secondary-bg)",
 			});

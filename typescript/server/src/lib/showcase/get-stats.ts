@@ -1,4 +1,4 @@
-import { GetUGPTSettingsDocument } from "#lib/db-formats/ugpt-settings";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings.js";
 import { log } from "#lib/log/log";
 import { type integer, type ShowcaseStatDetails, type V3Game } from "tachi-common";
 
@@ -16,7 +16,7 @@ export async function EvaluateUsersStatsShowcase(
 	projectUserStats?: integer,
 ) {
 	const getSettingsID = projectUserStats ?? userID;
-	const settings = await GetUGPTSettingsDocument(getSettingsID, game);
+	const settings = await GetUserGameSettingsDocument(getSettingsID, game);
 
 	if (!settings) {
 		log.error(

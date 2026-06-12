@@ -1,6 +1,5 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import { type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import { constrainedLampTdStyle } from "./delta-lamp-cell-layout";
@@ -16,7 +15,7 @@ export default function PopnLampCell({
 			style={{
 				...constrainedLampTdStyle,
 				backgroundColor: ChangeOpacity(
-					GPT_CLIENT_IMPLEMENTATIONS.popn.enumColours.lamp[lamp],
+					GAME_CLIENT_IMPLEMENTATIONS.popn.enumColours.lamp[lamp],
 					0.2,
 				),
 			}}

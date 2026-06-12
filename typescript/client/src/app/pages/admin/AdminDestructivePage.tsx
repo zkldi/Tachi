@@ -11,10 +11,10 @@ export default function AdminDestructivePage() {
 	const [deleteScoreId, setDeleteScoreId] = useState("");
 	const [deleteSessionId, setDeleteSessionId] = useState("");
 
-	const [ugptUserId, setUgptUserId] = useState("");
-	const [ugptGame, setUgptGame] = useState<GameGroup>(TachiConfig.GAME_GROUPS[0]);
-	const ugptGameConfig = useMemo(() => GetGameGroupConfig(ugptGame), [ugptGame]);
-	const [ugptPlaytype, setUgptPlaytype] = useState<string>(
+	const [userGameUserID, setUserGameUserID] = useState("");
+	const [userGameGame, setUserGameGame] = useState<GameGroup>(TachiConfig.GAME_GROUPS[0]);
+	const userGameConfig = useMemo(() => GetGameGroupConfig(userGameGame), [userGameGame]);
+	const [userGamePlaytype, setUserGamePlaytype] = useState<string>(
 		() => GetGameGroupConfig(TachiConfig.GAME_GROUPS[0]).playtypes[0],
 	);
 
@@ -116,27 +116,27 @@ export default function AdminDestructivePage() {
 			<Col lg={6}>
 				<Card className="border-danger">
 					<Card.Header className="bg-danger bg-opacity-10 text-danger">
-						Destroy user game profile (UGPT)
+						Destroy user game profile
 					</Card.Header>
 					<Card.Body>
-						<Form.Group className="mb-3" controlId="ugpt-user">
+						<Form.Group className="mb-3" controlId="userprofile-user">
 							<Form.Label>User ID</Form.Label>
 							<Form.Control
-								onChange={(e) => setUgptUserId(e.target.value)}
+								onChange={(e) => setUserGameUserID(e.target.value)}
 								type="number"
-								value={ugptUserId}
+								value={userGameUserID}
 							/>
 						</Form.Group>
-						<Form.Group className="mb-3" controlId="ugpt-game">
+						<Form.Group className="mb-3" controlId="userprofile-game">
 							<Form.Label>Game</Form.Label>
 							<Form.Select
 								onChange={(e) => {
 									const g = e.target.value as GameGroup;
-									setUgptGame(g);
+									setUserGameGame(g);
 									const cfg = GetGameGroupConfig(g);
-									setUgptPlaytype(cfg.playtypes[0]);
+									setUserGamePlaytype(cfg.playtypes[0]);
 								}}
-								value={ugptGame}
+								value={userGameGame}
 							>
 								{TachiConfig.GAME_GROUPS.map((g) => (
 									<option key={g} value={g}>
@@ -145,13 +145,13 @@ export default function AdminDestructivePage() {
 								))}
 							</Form.Select>
 						</Form.Group>
-						<Form.Group className="mb-3" controlId="ugpt-pt">
+						<Form.Group className="mb-3" controlId="userprofile-pt">
 							<Form.Label>Playtype</Form.Label>
 							<Form.Select
-								onChange={(e) => setUgptPlaytype(e.target.value)}
-								value={ugptPlaytype}
+								onChange={(e) => setUserGamePlaytype(e.target.value)}
+								value={userGamePlaytype}
 							>
-								{ugptGameConfig.playtypes.map((pt) => (
+								{userGameConfig.playtypes.map((pt) => (
 									<option key={pt} value={pt}>
 										{pt}
 									</option>
@@ -159,29 +159,29 @@ export default function AdminDestructivePage() {
 							</Form.Select>
 						</Form.Group>
 						<Button
-							disabled={!ugptUserId.trim()}
+							disabled={!userGameUserID.trim()}
 							onClick={() => {
-								const uid = Number.parseInt(ugptUserId, 10);
+								const uid = Number.parseInt(userGameUserID, 10);
 								if (Number.isNaN(uid)) {
 									alert("User ID must be a number.");
 									return;
 								}
 								if (
 									!confirmDelete(
-										`Destroy all stats for user ${uid} (${ugptGame} ${ugptPlaytype})? This cannot be undone.`,
+										`Destroy all stats for user ${uid} (${userGameGame} ${userGamePlaytype})? This cannot be undone.`,
 									)
 								) {
 									return;
 								}
 								void APIFetchV1(
-									`/admin/destroy-ugpt`,
+									`/admin/destroy-userprofile`,
 									{
 										method: "POST",
 										headers: { "Content-Type": "application/json" },
 										body: JSON.stringify({
 											userID: uid,
-											game: ugptGame,
-											playtype: ugptPlaytype,
+											game: userGameGame,
+											playtype: userGamePlaytype,
 										}),
 									},
 									true,
@@ -190,7 +190,7 @@ export default function AdminDestructivePage() {
 							}}
 							variant="danger"
 						>
-							Destroy UGPT
+							Destroy User Profile
 						</Button>
 					</Card.Body>
 				</Card>

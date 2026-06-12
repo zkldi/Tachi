@@ -207,7 +207,7 @@ export type PgExtractMetricValue<M extends ConfScoreMetric> = M extends ConfDeci
 /**
  * Extract all the names of enum types from this record of score metrics.
  *
- * This is used for enforcing the "default enum" for a GPT. All games have to have
+ * This is used for enforcing the "default enum" for a game. All games have to have
  * a default, preferred enum, for things like folder raises and graphs.
  *
  * For most games, this will be "grade" or "lamp". However, we need a typesafe way
@@ -226,7 +226,7 @@ export type ExtractEnumMetricNames<R extends Record<string, ConfScoreMetric>> = 
 }[keyof R];
 
 /**
- * What are all the metrics available for this GPT?
+ * What are all the metrics available for this game?
  */
 export type AllConfMetrics = {
 	[TGame in V3Game]: ConfDerivedMetrics[TGame] &

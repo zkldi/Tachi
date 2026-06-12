@@ -1,5 +1,4 @@
-import { type UGPTChartPBComposition } from "#types/api-returns";
-import React from "react";
+import { type UserGameChartPBComposition } from "#types/api-returns";
 import { type ChartDocument, type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 import { type ScoreState } from "../ScoreDropdown";
@@ -9,11 +8,11 @@ export default function PBCompare({
 	scoreState,
 	DocComponent,
 }: {
-	data: UGPTChartPBComposition;
+	data: UserGameChartPBComposition;
 	DocComponent: (props: {
 		chart: ChartDocument;
 		forceScoreData: boolean;
-		pbData: UGPTChartPBComposition;
+		pbData: UserGameChartPBComposition;
 		score: PBScoreDocument | ScoreDocument;
 		scoreState: ScoreState;
 	}) => JSX.Element;

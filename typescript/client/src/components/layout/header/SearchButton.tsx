@@ -1,6 +1,5 @@
 import Icon from "#components/util/Icon";
 import LinkButton from "#components/util/LinkButton";
-import React from "react";
 
 export function SearchButton() {
 	return (

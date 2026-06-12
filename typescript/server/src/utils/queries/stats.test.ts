@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 import { GetClassDistribution } from "./stats";
 
 describe("GetClassDistribution (Postgres)", () => {
-	it("groups game_profile.classes by key for the GPT", async () => {
+	it("groups game_profile.classes by key for the game", async () => {
 		const t = Date.now();
 		const { id: u1 } = await seedUser({ username: `stats_a_${t}` });
 		const { id: u2 } = await seedUser({ username: `stats_b_${t}` });

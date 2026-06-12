@@ -1,7 +1,6 @@
 import CenterPage from "#components/util/CenterPage";
 import SiteWordmark from "#components/util/SiteWordmark";
 import { type JustChildren } from "#types/react";
-import React from "react";
 
 export default function LoginPageLayout({
 	children,

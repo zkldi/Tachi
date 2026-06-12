@@ -15,7 +15,7 @@ import AsyncSelect from "#components/util/AsyncSelect";
 import Divider from "#components/util/Divider";
 import Icon from "#components/util/Icon";
 import { type SongChartsSearch } from "#types/api-returns";
-import { type GamePT, type SetState } from "#types/react";
+import { type GameProps, type SetState } from "#types/react";
 import { type RawQuestGoal } from "#types/tachi";
 import { APIFetchV1 } from "#util/api";
 import { clamp, UppercaseFirst } from "#util/misc";
@@ -37,7 +37,7 @@ import { type ConfEnumScoreMetric } from "tachi-common/types/metrics";
 
 // ─── Public interface ─────────────────────────────────────────────────────────
 
-interface GoalBuilderProps extends GamePT {
+interface GoalBuilderProps extends GameProps {
 	/**
 	 * Called when the user confirms the goal.
 	 *
@@ -245,7 +245,7 @@ function ChartTargetPicker({
 }: {
 	charts: GoalDocument["charts"];
 	onChange: (charts: GoalDocument["charts"]) => void;
-} & GamePT) {
+} & GameProps) {
 	const [type, setType] = useState<GoalDocument["charts"]["type"]>(charts.type);
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const [data, setData] = useState<any>("data" in charts ? charts.data : null);
@@ -320,7 +320,7 @@ function CriteriaPicker({
 	charts: GoalDocument["charts"];
 	criteria: GoalDocument["criteria"];
 	setCriteria: SetState<GoalDocument["criteria"]>;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 	const availableMetrics = GetScoreMetrics(gameConfig, ["ENUM", "DECIMAL", "INTEGER"]);
 
@@ -402,7 +402,7 @@ function CriteriaValuePicker({
 }: {
 	criteria: GoalDocument["criteria"];
 	onChange: (value: number) => void;
-} & GamePT) {
+} & GameProps) {
 	const gameConfig = GetGameConfig(game);
 	const conf = GetScoreMetricConf(gameConfig, criteria.key);
 
@@ -464,7 +464,7 @@ function CriteriaModePicker({
 	charts: GoalDocument["charts"];
 	criteria: GoalDocument["criteria"];
 	onChange: (mode: GoalDocument["criteria"]["mode"], countNum?: number) => void;
-} & GamePT) {
+} & GameProps) {
 	const [absCount, setAbsCount] = useState(criteria.mode === "absolute" ? criteria.countNum : 10);
 	const [perCount, setPerCount] = useState(
 		criteria.mode === "proportion" ? criteria.countNum * 100 : 10,
@@ -544,7 +544,7 @@ function FolderSelect({
 	game,
 	onChange,
 	initialValue,
-}: { initialValue?: string | null; onChange: (data: string) => void } & GamePT) {
+}: { initialValue?: string | null; onChange: (data: string) => void } & GameProps) {
 	let lastTimeout: number | null = null;
 
 	const loadOptions = (
@@ -594,7 +594,7 @@ function ChartSelect({
 	initialValue?: string | string[] | null;
 	multi?: boolean;
 	onChange: (data: string | string[]) => void;
-} & GamePT) {
+} & GameProps) {
 	let lastTimeout: number | null = null;
 
 	const loadOptions = (

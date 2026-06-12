@@ -2,7 +2,6 @@ import useSetSubheader from "#components/layout/header/useSetSubheader";
 import useApiQuery from "#components/util/query/useApiQuery";
 import { ADMIN_PAGE_SIZE, ADMIN_RECENT_HOURS, JOB_STATUS } from "#lib/adminConstants";
 import { MillisToSince } from "#util/time";
-import React from "react";
 import { Button, Form, Table } from "react-bootstrap";
 import { Link, useHistory, useLocation } from "react-router-dom";
 

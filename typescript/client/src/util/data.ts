@@ -69,8 +69,8 @@ export function CreateChartIDMap<T extends { chartID: string }>(arr: T[]): Map<s
 	return map;
 }
 
-export function CreateChartMap<GPT extends V3Game = V3Game>(charts: ChartDocument<GPT>[]) {
-	const chartMap = new Map<string, ChartDocument<GPT>>();
+export function CreateChartMap<TGame extends V3Game = V3Game>(charts: ChartDocument<TGame>[]) {
+	const chartMap = new Map<string, ChartDocument<TGame>>();
 
 	for (const chart of charts) {
 		chartMap.set(chart.chartID, chart);
@@ -79,8 +79,8 @@ export function CreateChartMap<GPT extends V3Game = V3Game>(charts: ChartDocumen
 	return chartMap;
 }
 
-export function CreateScoreIDMap<GPT extends V3Game = V3Game>(scores: ScoreDocument<GPT>[]) {
-	const scoreMap = new Map<string, ScoreDocument<GPT>>();
+export function CreateScoreIDMap<TGame extends V3Game = V3Game>(scores: ScoreDocument<TGame>[]) {
+	const scoreMap = new Map<string, ScoreDocument<TGame>>();
 
 	for (const score of scores) {
 		scoreMap.set(score.scoreID, score);

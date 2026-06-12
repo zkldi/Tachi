@@ -1,6 +1,5 @@
 import ProfilePicture from "#components/user/ProfilePicture";
 import LinkButton from "#components/util/LinkButton";
-import React from "react";
 import { type UserDocument } from "tachi-common/types/documents";
 
 import { SearchButton } from "./SearchButton";

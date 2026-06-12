@@ -1,7 +1,6 @@
 import Card from "#components/layout/page/Card";
 import { TachiConfig } from "#lib/config";
 import { type SetState } from "#types/react";
-import React from "react";
 
 import Select from "../Select";
 

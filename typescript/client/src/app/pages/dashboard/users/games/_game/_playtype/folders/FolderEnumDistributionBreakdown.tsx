@@ -2,9 +2,9 @@ import type { FolderStatsInfo } from "#types/api-returns";
 
 import { WindowContext } from "#context/WindowContext";
 import { ChangeOpacity } from "#util/color-opacity";
-import { FormatGPTEnumMetric, ToFixedFloor, UppercaseFirst } from "#util/misc";
-import React, { useContext } from "react";
-import { type GameConfig, GetScoreMetricConf, V3Game } from "tachi-common";
+import { FormatGameEnumMetric, ToFixedFloor, UppercaseFirst } from "#util/misc";
+import { useContext } from "react";
+import { type GameConfig, GetScoreMetricConf, type V3Game } from "tachi-common";
 
 import breakdownStyles from "./FolderEnumDistributionBreakdown.module.scss";
 
@@ -48,7 +48,7 @@ function distributionRowChrome(enumColour: string | undefined): {
 
 /**
  * Styled enum value × count breakdown (counts + % of folder charts).
- * Rows use GPT enum colours; optional floor at `minimumRelevantValue`; remainder row for unmatched charts.
+ * Rows use game enum colours; optional floor at `minimumRelevantValue`; remainder row for unmatched charts.
  */
 export default function FolderEnumDistributionBreakdown({
 	game,
@@ -106,7 +106,7 @@ export default function FolderEnumDistributionBreakdown({
 
 	for (let vi = conf.values.length - 1; vi >= valueIndexFloor; vi--) {
 		const label = conf.values[vi];
-		const printedLabel = FormatGPTEnumMetric(game, enumMetric, label);
+		const printedLabel = FormatGameEnumMetric(game, enumMetric, label);
 		const count = bucket[label] ?? 0;
 
 		filled += count;

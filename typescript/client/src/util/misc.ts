@@ -1,4 +1,4 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import fjsh from "fast-json-stable-hash";
 import { type CSSProperties } from "react";
 import toast from "react-hot-toast";
@@ -54,7 +54,7 @@ export function FormatTables(tables: Record<string, string>) {
 		.join(", ");
 }
 
-export function FormatGPTProfileRating(
+export function FormatGameProfileRating(
 	game: V3Game,
 	key: AnyProfileRatingAlg,
 	value: number | null,
@@ -72,7 +72,7 @@ export function FormatGPTProfileRating(
 	return ToFixedFloor(value, 2);
 }
 
-export function FormatGPTSessionRating(
+export function FormatGameSessionRating(
 	game: V3Game,
 	key: AnySessionRatingAlg,
 	value: number | null | undefined,
@@ -90,23 +90,23 @@ export function FormatGPTSessionRating(
 	return value.toFixed(2);
 }
 
-export function FormatGPTProfileRatingName(game: V3Game, key: string) {
-	const gameConfig = GPT_CLIENT_IMPLEMENTATIONS[game];
+export function FormatGameProfileRatingName(game: V3Game, key: string) {
+	const gameConfig = GAME_CLIENT_IMPLEMENTATIONS[game];
 	return gameConfig.ratingAlgNameOverrides?.profile?.[key] ?? UppercaseFirst(key);
 }
 
-export function FormatGPTSessionRatingName(game: V3Game, key: string) {
-	const gameConfig = GPT_CLIENT_IMPLEMENTATIONS[game];
+export function FormatGameSessionRatingName(game: V3Game, key: string) {
+	const gameConfig = GAME_CLIENT_IMPLEMENTATIONS[game];
 	return gameConfig.ratingAlgNameOverrides?.session?.[key] ?? UppercaseFirst(key);
 }
 
-export function FormatGPTScoreRatingName(game: V3Game, key: string) {
-	const gameConfig = GPT_CLIENT_IMPLEMENTATIONS[game];
+export function FormatGameScoreRatingName(game: V3Game, key: string) {
+	const gameConfig = GAME_CLIENT_IMPLEMENTATIONS[game];
 	return gameConfig.ratingAlgNameOverrides?.score?.[key] ?? UppercaseFirst(key);
 }
 
-export function FormatGPTEnumMetric(game: V3Game, enumMetrics: string, key: string) {
-	const gameConfig = GPT_CLIENT_IMPLEMENTATIONS[game];
+export function FormatGameEnumMetric(game: V3Game, enumMetrics: string, key: string) {
+	const gameConfig = GAME_CLIENT_IMPLEMENTATIONS[game];
 	return (gameConfig.enumFormatters as any)?.[enumMetrics]?.[key] ?? key;
 }
 
@@ -140,7 +140,7 @@ export function sortProfileRatingEntries<K extends string, V>(
 
 /** Styles for the profile rating value cell (right column), not the label. */
 export function getProfileRatingAlgRowStyle(game: V3Game, key: string): CSSProperties | undefined {
-	return GPT_CLIENT_IMPLEMENTATIONS[game]?.profileRatingAlgRowStyle?.[key];
+	return GAME_CLIENT_IMPLEMENTATIONS[game]?.profileRatingAlgRowStyle?.[key];
 }
 
 export function ReverseStr(str: string) {

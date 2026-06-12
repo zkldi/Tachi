@@ -1,6 +1,6 @@
 import type {
 	GameImplementation,
-	GPTProfileCalcs,
+	GameProfileCalcs,
 	ScoreValidator,
 } from "#game-implementations/types";
 
@@ -120,7 +120,7 @@ export const DDR_SCORE_VALIDATORS: Array<ScoreValidator<DDRGames>> = [
 	},
 ];
 
-const DDR_PROFILE_CALCS: GPTProfileCalcs<DDRGames> = async (game, userID) => {
+const DDR_PROFILE_CALCS: GameProfileCalcs<DDRGames> = async (game, userID) => {
 	const rows = await DB.selectFrom("pb")
 		.innerJoin("chart", "chart.id", "pb.chart_id")
 		.innerJoin("song", "song.id", "chart.song_id")

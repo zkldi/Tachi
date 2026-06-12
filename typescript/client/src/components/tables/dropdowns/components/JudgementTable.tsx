@@ -1,6 +1,5 @@
 import MiniTable from "#components/tables/components/MiniTable";
 import { ChangeOpacity } from "#util/color-opacity";
-import React from "react";
 import { COLOUR_SET, GetGameConfig, type PBScoreDocument, type ScoreDocument } from "tachi-common";
 
 export default function JudgementTable({ score }: { score: PBScoreDocument | ScoreDocument }) {

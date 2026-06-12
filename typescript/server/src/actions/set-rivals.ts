@@ -10,7 +10,7 @@ function throwIfSetRivalsFailed(game: V3Game, reason: SetRivalsFailReasons): nev
 	switch (reason) {
 		case SetRivalsFailReasons.RIVALED_SELF:
 			throw new ExpectedErr(400, `You cannot rival yourself.`);
-		case SetRivalsFailReasons.RIVALS_HAVENT_PLAYED_GPT:
+		case SetRivalsFailReasons.RIVALS_HAVENT_PLAYED_GAME:
 			throw new ExpectedErr(400, `Not all of the rivals you specified have played ${game}.`);
 		case SetRivalsFailReasons.TOO_MANY:
 			throw new ExpectedErr(400, `You can't set more than 5 rivals.`);

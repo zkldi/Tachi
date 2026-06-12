@@ -1,6 +1,5 @@
 import Icon from "#components/util/Icon";
 import { type SetState } from "#types/react";
-import React from "react";
 
 export default function MobileMenuToggle({
 	state,

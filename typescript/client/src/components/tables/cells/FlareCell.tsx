@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FlareCell({ value }: { value: string }) {
 	return (
 		<td

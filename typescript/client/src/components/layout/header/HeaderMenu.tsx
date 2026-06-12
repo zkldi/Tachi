@@ -1,17 +1,17 @@
 import useApiQuery from "#components/util/query/useApiQuery";
-import { AllLUGPTStatsContext } from "#context/AllLUGPTStatsContext";
+import { AllYourUGStatsContext } from "#context/AllYourUGStatsContext";
 import { UserContext } from "#context/UserContext";
 import { UserSettingsContext } from "#context/UserSettingsContext";
 import { TachiConfig } from "#lib/config";
 import { type SetState } from "#types/react";
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 import { type UserGameStats } from "tachi-common";
 
 import GlobalInfoDropdown from "./GlobalInfoDropdown";
 import ImportScoresDropdown from "./ImportScoresDropdown";
-import UGPTDropdown from "./UGPTDropdown";
+import UserGameDropdown from "./UserGameDropdown";
 
 const toggleClassNames = "w-100 justify-content-between";
 const menuClassNames = "shadow-none shadow-lg-lg";
@@ -24,7 +24,7 @@ export function HeaderMenu({
 	setState?: SetState<boolean>;
 }) {
 	const { user } = useContext(UserContext);
-	const { ugs, setUGS } = useContext(AllLUGPTStatsContext);
+	const { ugs, setUGS } = useContext(AllYourUGStatsContext);
 	const { settings } = useContext(UserSettingsContext);
 
 	const { data, error } = useApiQuery<UserGameStats[]>(
@@ -49,7 +49,7 @@ export function HeaderMenu({
 	return (
 		<Nav as="nav" className="p-4 d-flex align-content-between gap-4 h-100">
 			{user && ugs && ugs.length !== 0 && (
-				<UGPTDropdown
+				<UserGameDropdown
 					className={toggleClassNames}
 					menuClassName={menuClassNames}
 					setState={setState}

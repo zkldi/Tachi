@@ -28,7 +28,7 @@ import { ACTION_FollowUser } from "#actions/follow-user";
 import { ACTION_ImportSeeds } from "#actions/import-seeds";
 import { ACTION_InstallBuiltinClient } from "#actions/install-builtin-client";
 import { ACTION_MarkAllNotificationsRead } from "#actions/mark-all-notifications-read";
-import { ACTION_PatchUGPTSettings } from "#actions/patch-ugpt-settings";
+import { ACTION_PatchUserGameSettings } from "#actions/patch-user-game-settings";
 import { ACTION_RebuildFolderChartLookup } from "#actions/rebuild-folder-chart-lookup";
 import { ACTION_RecalcAllGameProfiles } from "#actions/recalc-all-game-profiles";
 import { ACTION_RemoveGoalSubscription } from "#actions/remove-goal-subscription";
@@ -49,7 +49,7 @@ import { ACTION_UpdateKshookSv6cSettings } from "#actions/update-kshook-sv6c-set
 import { ACTION_UpdateMytCardInfo } from "#actions/update-myt-card-info";
 import { ACTION_UpdateSession } from "#actions/update-session";
 import { ACTION_UpdateSp12Data } from "#actions/update-sp12-data";
-import { ACTION_UpdateUgptShowcase } from "#actions/update-ugpt-showcase";
+import { ACTION_UpdateUserGameShowcase as ACTION_UpdateUserGameShowcase } from "#actions/update-ugpt-showcase";
 import { ACTION_UpdateUser } from "#actions/update-user";
 import { ACTION_UpdateUserSettings } from "#actions/update-user-settings";
 import { ACTION_UpsertKaiAuthToken } from "#actions/upsert-kai-auth-token";
@@ -92,7 +92,7 @@ export const authenticatedActionHandlers = {
 	IMPORT_SEEDS: ACTION_ImportSeeds,
 	INSTALL_BUILTIN_CLIENT: ACTION_InstallBuiltinClient,
 	MARK_ALL_NOTIFICATIONS_READ: ACTION_MarkAllNotificationsRead,
-	PATCH_UGPT_SETTINGS: ACTION_PatchUGPTSettings,
+	PATCH_USER_GAME_SETTINGS: ACTION_PatchUserGameSettings,
 	REBUILD_FOLDER_CHART_LOOKUP: ACTION_RebuildFolderChartLookup,
 	RECALC_ALL_GAME_PROFILES: ACTION_RecalcAllGameProfiles,
 	REMOVE_GOAL_SUBSCRIPTION: ACTION_RemoveGoalSubscription,
@@ -112,7 +112,7 @@ export const authenticatedActionHandlers = {
 	UPDATE_MYT_CARD_INFO: ACTION_UpdateMytCardInfo,
 	UPDATE_SESSION: ACTION_UpdateSession,
 	UPDATE_SP12_DATA: ACTION_UpdateSp12Data,
-	UPDATE_UGPT_SHOWCASE: ACTION_UpdateUgptShowcase,
+	UPDATE_USER_GAME_SHOWCASE: ACTION_UpdateUserGameShowcase,
 	UPDATE_USER: ACTION_UpdateUser,
 	UPDATE_USER_SETTINGS: ACTION_UpdateUserSettings,
 	UGS_SNAPSHOT: ACTION_UGSSnapshot,

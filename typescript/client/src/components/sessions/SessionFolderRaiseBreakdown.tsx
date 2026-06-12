@@ -7,8 +7,8 @@ import Loading from "#components/util/Loading";
 import Muted from "#components/util/Muted";
 import useApiQuery from "#components/util/query/useApiQuery";
 import Select from "#components/util/Select";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type SessionFolderRaises, type SessionReturns } from "#types/api-returns";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartLink, CreateChartMap, CreateSongMap } from "#util/data";
@@ -16,7 +16,7 @@ import { JoinJSX } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
 import _ from "lodash";
 import NaturalCompare from "natural-compare";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
@@ -37,7 +37,7 @@ export default function SessionFolderRaiseBreakdown({
 	sessionData: SessionReturns;
 }) {
 	const reqUser = sessionData.user;
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
 	const game = sessionData.session.game;
 	const gameConfig = GetGameConfig(game);
@@ -217,7 +217,7 @@ function FolderRaiseRender({
 }) {
 	const colour =
 		// @ts-expect-error lazy
-		GPT_CLIENT_IMPLEMENTATIONS[game].enumColours[folderRaiseInfo.type][folderRaiseInfo.value];
+		GAME_CLIENT_IMPLEMENTATIONS[game].enumColours[folderRaiseInfo.type][folderRaiseInfo.value];
 
 	const newTotal = folderRaiseInfo.previousCount + folderRaiseInfo.raisedCharts.length;
 

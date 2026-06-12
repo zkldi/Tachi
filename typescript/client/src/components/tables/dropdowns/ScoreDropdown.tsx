@@ -5,11 +5,11 @@ import LinkButton from "#components/util/LinkButton";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectButton from "#components/util/SelectButton";
-import useLUGPTSettings from "#components/util/useLUGPTSettings";
+import useLoggedInUserGameSettings from "#components/util/useLoggedInUserGameSettings";
 import { UserContext } from "#context/UserContext";
-import { type GoalsOnChartReturn, type UGPTChartPBComposition } from "#types/api-returns";
-import { type GamePT, type SetState } from "#types/react";
-import React, { useContext, useReducer, useState } from "react";
+import { type GoalsOnChartReturn, type UserGameChartPBComposition } from "#types/api-returns";
+import { type GameProps, type SetState } from "#types/react";
+import { useContext, useReducer, useState } from "react";
 import {
 	type ChartDocument,
 	type PBScoreDocument,
@@ -24,7 +24,7 @@ import PBCompare from "./components/PBCompare";
 import PlayHistory from "./components/PlayHistory";
 import RivalCompare from "./components/RivalCompare";
 import TargetInfo from "./components/TargetInfo";
-import { GPTDropdownSettings } from "./GPTDropdownSettings";
+import { GameDropdownSettings } from "./GameDropdownSettings";
 
 export interface ScoreState {
 	highlight: boolean;
@@ -53,19 +53,19 @@ export default function ScoreDropdown({
 	song: SongDocument;
 	thisScore: ScoreDocument;
 	user: UserDocument;
-} & GamePT) {
+} & GameProps) {
 	const DocComponent: DocumentComponentType = (props) =>
 		DocComponentCreator({
 			renderScoreInfo: false,
 			...props,
-			...GPTDropdownSettings(game),
+			...GameDropdownSettings(game),
 		});
 
 	const [view, setView] = useState(defaultView);
 	const { user: currentUser } = useContext(UserContext);
-	const { settings } = useLUGPTSettings();
+	const { settings } = useLoggedInUserGameSettings();
 
-	const { data, error } = useApiQuery<UGPTChartPBComposition>(
+	const { data, error } = useApiQuery<UserGameChartPBComposition>(
 		`/users/${user.id}/games/${game}/pbs/${chart.chartID}?getComposition=true`,
 	);
 

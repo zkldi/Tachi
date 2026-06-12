@@ -1,7 +1,7 @@
 import { CustomScrollbar } from "#components/layout/CustomScrollbar";
 import { LocalDevMissingSeedsBanner } from "#components/layout/LocalDevMissingSeedsBanner";
 import { LoadingScreen } from "#components/layout/screens/LoadingScreen";
-import { AllLUGPTStatsContextProvider } from "#context/AllLUGPTStatsContext";
+import { AllYourUGStatsContextProvider } from "#context/AllYourUGStatsContext";
 import { BannedContextProvider } from "#context/BannedContext";
 import { NotificationsContextProvider } from "#context/NotificationsContext";
 import { SubheaderContextProvider } from "#context/SubheaderContext";
@@ -30,7 +30,7 @@ export default function App({ basename }: { basename: string }) {
 							<LoadingScreen>
 								<NotificationsContextProvider>
 									<UserSettingsContextProvider>
-										<AllLUGPTStatsContextProvider>
+										<AllYourUGStatsContextProvider>
 											<BrowserRouter basename={basename}>
 												<Toaster />
 												<LocalDevMissingSeedsBanner />
@@ -38,7 +38,7 @@ export default function App({ basename }: { basename: string }) {
 													<Routes />
 												</SubheaderContextProvider>
 											</BrowserRouter>
-										</AllLUGPTStatsContextProvider>
+										</AllYourUGStatsContextProvider>
 									</UserSettingsContextProvider>
 								</NotificationsContextProvider>
 							</LoadingScreen>

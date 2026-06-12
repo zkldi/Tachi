@@ -254,7 +254,7 @@ export async function HumaniseChartID(chartID: string) {
 /**
  * Get recently achieved goals for this query.
  *
- * @param baseQuery - A base query, used to limit results on GPTs or UGPTs.
+ * @param baseQuery - A base query, used to limit results on games or user-games.
  * @param limit - How many recently achieved goals to search for. `0` means no limit.
  * @returns - The goals and their subs.
  */

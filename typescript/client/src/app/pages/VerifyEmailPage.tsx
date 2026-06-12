@@ -6,9 +6,9 @@ import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import useQueryString from "#components/util/useQueryString";
 import { UserContext } from "#context/UserContext";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
-import { ErrorPage } from "./ErrorPage";
+import ErrorPage from "./ErrorPage";
 import LoginPage from "./LoginPage";
 
 export default function VerifyEmailPage() {

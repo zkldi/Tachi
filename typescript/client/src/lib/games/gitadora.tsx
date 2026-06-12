@@ -3,14 +3,13 @@ import LampCell from "#components/tables/cells/LampCell";
 import RatingCell from "#components/tables/cells/RatingCell";
 import ScoreCell from "#components/tables/cells/ScoreCell";
 import { GetEnumColour } from "#lib/game-implementations";
-import { type GPTClientImplementation } from "#lib/types";
+import { type GameClientImplementation } from "#lib/types";
 import { NumericSOV } from "#util/sorts";
-import React from "react";
 import { COLOUR_SET, type GamesForGroup } from "tachi-common";
 
 import { bgc } from "./_util";
 
-const GITADORA_ENUM_COLOURS: GPTClientImplementation<
+const GITADORA_ENUM_COLOURS: GameClientImplementation<
 	"gitadora-dora" | "gitadora-gita"
 >["enumColours"] = {
 	grade: {
@@ -29,14 +28,15 @@ const GITADORA_ENUM_COLOURS: GPTClientImplementation<
 	},
 };
 
-const GITADORA_HEADERS: GPTClientImplementation<"gitadora-dora" | "gitadora-gita">["scoreHeaders"] =
-	[
-		["Percent", "Percent", NumericSOV((x) => x.scoreData.percent)],
-		["Judgements", "Hits", NumericSOV((x) => x.scoreData.percent)],
-		["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
-	];
+const GITADORA_HEADERS: GameClientImplementation<
+	"gitadora-dora" | "gitadora-gita"
+>["scoreHeaders"] = [
+	["Percent", "Percent", NumericSOV((x) => x.scoreData.percent)],
+	["Judgements", "Hits", NumericSOV((x) => x.scoreData.percent)],
+	["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
+];
 
-const GITADORA_COLOURS: GPTClientImplementation<GamesForGroup["gitadora"]>["classColours"] = {
+const GITADORA_COLOURS: GameClientImplementation<GamesForGroup["gitadora"]>["classColours"] = {
 	colour: {
 		WHITE: bgc("white", "var(--bs-dark)"),
 		ORANGE: bgc("orange", "var(--bs-dark)"),
@@ -63,7 +63,7 @@ const GITADORA_COLOURS: GPTClientImplementation<GamesForGroup["gitadora"]>["clas
 	},
 };
 
-const GITADORACoreCells: GPTClientImplementation<GamesForGroup["gitadora"]>["scoreCoreCells"] = ({
+const GITADORACoreCells: GameClientImplementation<GamesForGroup["gitadora"]>["scoreCoreCells"] = ({
 	sc,
 }) => (
 	<>
@@ -77,12 +77,12 @@ const GITADORACoreCells: GPTClientImplementation<GamesForGroup["gitadora"]>["sco
 	</>
 );
 
-const GITADORARatingCell: GPTClientImplementation<GamesForGroup["gitadora"]>["ratingCell"] = ({
+const GITADORARatingCell: GameClientImplementation<GamesForGroup["gitadora"]>["ratingCell"] = ({
 	sc,
 	rating,
 }) => <RatingCell rating={rating} score={sc} />;
 
-export const GITADORA_GITA_IMPL: GPTClientImplementation<"gitadora-gita"> = {
+export const GITADORA_GITA_IMPL: GameClientImplementation<"gitadora-gita"> = {
 	sessionImportantScoreCount: 50,
 	enumIcons: {
 		grade: "sort-alpha-up",
@@ -106,7 +106,7 @@ export const GITADORA_GITA_IMPL: GPTClientImplementation<"gitadora-gita"> = {
 	ratingCell: GITADORARatingCell,
 };
 
-export const GITADORA_DORA_IMPL: GPTClientImplementation<"gitadora-dora"> = {
+export const GITADORA_DORA_IMPL: GameClientImplementation<"gitadora-dora"> = {
 	sessionImportantScoreCount: 50,
 	enumIcons: {
 		grade: "sort-alpha-up",

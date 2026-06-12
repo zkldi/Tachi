@@ -1,4 +1,3 @@
-import React from "react";
 import { GetGradeDeltas, type GradeBoundary } from "tachi-common";
 
 import { constrainedDeltaTdStyle } from "./delta-lamp-cell-layout";

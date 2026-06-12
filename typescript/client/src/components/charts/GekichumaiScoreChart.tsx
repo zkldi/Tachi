@@ -1,4 +1,4 @@
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { ChangeOpacity } from "#util/color-opacity";
 import { TACHI_LINE_THEME } from "#util/constants/chart-theme";
 import { clamp } from "#util/misc";
@@ -11,7 +11,6 @@ import {
 	ResponsiveLine,
 	type Serie,
 } from "@nivo/line";
-import React from "react";
 import { COLOUR_SET, type Difficulties, type GameGroup } from "tachi-common";
 
 import ChartTooltip from "./ChartTooltip";
@@ -181,17 +180,17 @@ export default function GekichumaiScoreChart({
 	if (type === "Score") {
 		if (game === "chunithm") {
 			color =
-				GPT_CLIENT_IMPLEMENTATIONS.chunithm.difficultyColours[
+				GAME_CLIENT_IMPLEMENTATIONS.chunithm.difficultyColours[
 					difficulty as Difficulties["chunithm"]
 				];
 		} else if (game === "ongeki") {
 			color =
-				GPT_CLIENT_IMPLEMENTATIONS.ongeki.difficultyColours[
+				GAME_CLIENT_IMPLEMENTATIONS.ongeki.difficultyColours[
 					difficulty as Difficulties["ongeki"]
 				];
 		} else if (game === "maimaidx") {
 			color =
-				GPT_CLIENT_IMPLEMENTATIONS.maimaidx.difficultyColours[
+				GAME_CLIENT_IMPLEMENTATIONS.maimaidx.difficultyColours[
 					difficulty as Difficulties["maimaidx"]
 				];
 		}

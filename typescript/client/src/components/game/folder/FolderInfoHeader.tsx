@@ -3,10 +3,10 @@ import Card from "#components/layout/page/Card";
 import ApiError from "#components/util/ApiError";
 import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
-import { GPT_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
-import { type UGPTFolderSlugStatsReturns } from "#types/api-returns";
-import { type GamePT } from "#types/react";
-import React, { useMemo } from "react";
+import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { type UserGameFolderSlugStatsReturns } from "#types/api-returns";
+import { type GameProps } from "#types/react";
+import { useMemo } from "react";
 import { GetGameConfig, GetScoreMetrics, type UserDocument } from "tachi-common";
 
 export default function FolderInfoHeader({
@@ -20,18 +20,18 @@ export default function FolderInfoHeader({
 	folderTitle: string;
 	onBreakdownEnumValueClick?: (metricKey: string, enumValueLabel: string) => void;
 	reqUser: UserDocument;
-} & GamePT) {
+} & GameProps) {
 	const folderStatsUrl = `/users/${reqUser.id}/games/${game}/folders/${folderSlug}/stats`;
 	const {
 		data: folderStatsBody,
 		error: folderStatsError,
 		isLoading: folderStatsLoading,
-	} = useApiQuery<UGPTFolderSlugStatsReturns>(folderStatsUrl);
+	} = useApiQuery<UserGameFolderSlugStatsReturns>(folderStatsUrl);
 
 	const gameConfig = GetGameConfig(game);
 
 	const enumMetrics = useMemo(() => GetScoreMetrics(gameConfig, "ENUM"), [gameConfig]);
-	const enumColourMaps = GPT_CLIENT_IMPLEMENTATIONS[game].enumColours as
+	const enumColourMaps = GAME_CLIENT_IMPLEMENTATIONS[game].enumColours as
 		| Record<string, Record<string, string>>
 		| undefined;
 

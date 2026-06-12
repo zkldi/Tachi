@@ -6,9 +6,9 @@ import Loading from "#components/util/Loading";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectButton from "#components/util/SelectButton";
 import { UserContext } from "#context/UserContext";
-import { type GoalsOnChartReturn, type UGPTChartPBComposition } from "#types/api-returns";
-import { type GamePT } from "#types/react";
-import React, { useContext, useMemo, useReducer, useState } from "react";
+import { type GoalsOnChartReturn, type UserGameChartPBComposition } from "#types/api-returns";
+import { type GameProps } from "#types/react";
+import { useContext, useMemo, useReducer, useState } from "react";
 import {
 	type ChartDocument,
 	type integer,
@@ -25,12 +25,12 @@ import DropdownStructure from "./components/DropdownStructure";
 import PlayHistory from "./components/PlayHistory";
 import RivalCompare from "./components/RivalCompare";
 import TargetInfo from "./components/TargetInfo";
-import { GPTDropdownSettings } from "./GPTDropdownSettings";
+import { GameDropdownSettings } from "./GameDropdownSettings";
 
 export interface ScoreDropdownProps {
 	score: PBScoreDocument | ScoreDocument;
 	scoreState: ScoreState;
-	pbData: UGPTChartPBComposition;
+	pbData: UserGameChartPBComposition;
 	chart: ChartDocument;
 }
 
@@ -47,15 +47,15 @@ export default function PBDropdown({
 	scoreState: ScoreState;
 	song: SongDocument;
 	userID: integer;
-} & GamePT) {
+} & GameProps) {
 	const { user: currentUser } = useContext(UserContext);
 
 	const DocComponent: DocumentComponentType = (props) =>
-		DocComponentCreator({ ...props, ...GPTDropdownSettings(game) });
+		DocComponentCreator({ ...props, ...GameDropdownSettings(game) });
 
 	const [view, setView] = useState(defaultView);
 
-	const { data, error } = useApiQuery<UGPTChartPBComposition>(
+	const { data, error } = useApiQuery<UserGameChartPBComposition>(
 		`/users/${userID}/games/${game}/pbs/${chart.chartID}?getComposition=true`,
 	);
 

@@ -1,6 +1,5 @@
 import { TACHI_LINE_THEME } from "#util/constants/chart-theme";
 import { ResponsiveLine, type Serie } from "@nivo/line";
-import React from "react";
 import { COLOUR_SET } from "tachi-common";
 
 import ChartTooltip from "./ChartTooltip";
