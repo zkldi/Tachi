@@ -1,10 +1,11 @@
 /**
- * Reconcile every goal row's primary key with its canonical content hash.
+ * Reconcile goal rows with their canonical id and display name.
  *
- * Goal ids are `CreateGoalID(charts, criteria, game)`. When stored ids drift
- * (e.g. after a criteria fix without rehashing), this script renames rows so
- * ids match content. `goal_sub` and `import_goal` follow via ON UPDATE CASCADE
- * (see migration goal_id_on_update_cascade).
+ * Goal ids are `CreateGoalID(charts, criteria, game)`. Names come from
+ * `CreateGoalTitle(charts, criteria, game)`. When either drifts (e.g. after a
+ * criteria fix without rehashing), this script repairs rows. `goal_sub` and
+ * `import_goal` follow id renames via ON UPDATE CASCADE (see migration
+ * goal_id_on_update_cascade).
  *
  * Quest goal references in `quest.quest_data` are updated separately (JSON, not FK).
  *
@@ -20,6 +21,7 @@
 import { SELECT_GOAL } from "#lib/db-formats/goal";
 import { ToGoalDocument } from "#lib/db-formats/target-documents";
 import { log } from "#lib/log/log";
+import { CreateGoalTitle } from "#lib/targets/goal-utils";
 import {
 	CreateGoalID,
 	mergeGoalSubscriptions,
@@ -42,7 +44,7 @@ const { values } = parseArgs({
 
 if (values.help) {
 	console.log(`
-reconcile-goal-ids — align goal.id with CreateGoalID(charts, criteria, game)
+reconcile-goal-ids — align goal.id and goal.name with charts + criteria
 
   --batch-size <n>  Goals per DB fetch (default ${DEFAULT_BATCH_SIZE})
   --dry-run         Log changes without writing
@@ -56,6 +58,18 @@ const batchSize = Math.max(1, Number.parseInt(values["batch-size"] ?? "", 10) ||
 
 function canonicalGoalId(goal: GoalDocument): string {
 	return CreateGoalID(goal.charts, goal.criteria, goal.game);
+}
+
+async function canonicalGoalName(goal: GoalDocument): Promise<string | null> {
+	try {
+		return await CreateGoalTitle(goal.charts, goal.criteria, goal.game);
+	} catch (err) {
+		log.warn(
+			{ err, goalID: goal.goalID, game: goal.game },
+			`Could not derive goal name for ${goal.goalID}; skipping name update.`,
+		);
+		return null;
+	}
 }
 
 async function loadGoalBatch(afterId: string, limit: number): Promise<Array<GoalDocument>> {
@@ -82,13 +96,13 @@ async function loadExistingGoalIds(goalIds: Array<string>): Promise<Set<string>>
 	return new Set(rows.map((r) => r.id));
 }
 
-async function reconcileGoal(
+async function reconcileGoalId(
 	goal: GoalDocument,
+	expectedId: string,
+	expectedName: string | null,
 	targetExists: boolean,
 	isDryRun: boolean,
 ): Promise<"renamed" | "merged"> {
-	const expectedId = canonicalGoalId(goal);
-
 	if (isDryRun) {
 		log.info(
 			targetExists
@@ -107,13 +121,44 @@ async function reconcileGoal(
 		return "merged";
 	}
 
+	const update: { id: string; name?: string } = { id: expectedId };
+
+	if (expectedName !== null) {
+		update.name = expectedName;
+	}
+
 	await DB.updateTable("goal")
-		.set({ id: expectedId })
+		.set(update)
 		.where("goal.id", "=", goal.goalID)
 		.execute();
 
 	log.info(`Renamed ${goal.goalID} -> ${expectedId} (${goal.name})`);
 	return "renamed";
+}
+
+async function reconcileGoalName(
+	goal: GoalDocument,
+	expectedName: string,
+	isDryRun: boolean,
+): Promise<boolean> {
+	if (goal.name === expectedName) {
+		return false;
+	}
+
+	if (isDryRun) {
+		log.info(
+			`[dry-run] Would rename goal ${goal.goalID}: "${goal.name}" -> "${expectedName}"`,
+		);
+		return true;
+	}
+
+	await DB.updateTable("goal")
+		.set({ name: expectedName })
+		.where("goal.id", "=", goal.goalID)
+		.execute();
+
+	log.info(`Updated goal name ${goal.goalID}: "${goal.name}" -> "${expectedName}"`);
+	return true;
 }
 
 export async function reconcileGoalIds(options?: { batchSize?: number; dryRun?: boolean }) {
@@ -122,6 +167,7 @@ export async function reconcileGoalIds(options?: { batchSize?: number; dryRun?: 
 
 	let renamed = 0;
 	let merged = 0;
+	let namesUpdated = 0;
 	let skipped = 0;
 	let scanned = 0;
 	let afterId = "";
@@ -136,29 +182,44 @@ export async function reconcileGoalIds(options?: { batchSize?: number; dryRun?: 
 		scanned += batch.length;
 
 		const drifted = batch.filter((goal) => canonicalGoalId(goal) !== goal.goalID);
-		skipped += batch.length - drifted.length;
-
 		const expectedIds = [...new Set(drifted.map((goal) => canonicalGoalId(goal)))];
 		const existingIds = await loadExistingGoalIds(expectedIds);
 
-		for (const goal of drifted) {
+		for (const goal of batch) {
 			const expectedId = canonicalGoalId(goal);
-			const targetExists = existingIds.has(expectedId) && expectedId !== goal.goalID;
+			const expectedName = await canonicalGoalName(goal);
 
-			const result = await reconcileGoal(goal, targetExists, isDryRun);
+			if (expectedId !== goal.goalID) {
+				const targetExists = existingIds.has(expectedId);
+				const result = await reconcileGoalId(
+					goal,
+					expectedId,
+					expectedName,
+					targetExists,
+					isDryRun,
+				);
 
-			if (result === "renamed") {
-				renamed++;
+				if (result === "renamed") {
+					renamed++;
+				} else {
+					merged++;
+				}
+
+				continue;
+			}
+
+			if (expectedName !== null && goal.name !== expectedName) {
+				if (await reconcileGoalName(goal, expectedName, isDryRun)) {
+					namesUpdated++;
+				}
 			} else {
-				merged++;
+				skipped++;
 			}
 		}
 
 		afterId = batch[batch.length - 1]!.goalID;
 
-		log.info(
-			`reconcile-goal-ids: scanned ${scanned} goals (batch through ${afterId})`,
-		);
+		log.info(`reconcile-goal-ids: scanned ${scanned} goals (batch through ${afterId})`);
 
 		if (batch.length < limit) {
 			break;
@@ -166,10 +227,10 @@ export async function reconcileGoalIds(options?: { batchSize?: number; dryRun?: 
 	}
 
 	log.info(
-		`reconcile-goal-ids complete: ${scanned} scanned, ${renamed} renamed, ${merged} merged, ${skipped} already canonical.`,
+		`reconcile-goal-ids complete: ${scanned} scanned, ${renamed} id-renamed, ${merged} merged, ${namesUpdated} names updated, ${skipped} unchanged.`,
 	);
 
-	return { renamed, merged, skipped, scanned };
+	return { renamed, merged, namesUpdated, skipped, scanned };
 }
 
 if (require.main === module) {

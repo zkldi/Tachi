@@ -1,5 +1,6 @@
 import { reconcileGoalIds } from "#scripts/reconcile-goal-ids";
 import { CreateGoalID } from "#lib/targets/goals";
+import { CreateGoalTitle } from "#lib/targets/goal-utils";
 import DB from "#services/pg/db";
 import { seedMinimalIidxSpChart, seedUser } from "#test-utils/pg-fixtures";
 import { describe, expect, it } from "vitest";
@@ -48,11 +49,12 @@ describe("reconcileGoalIds", () => {
 		expect(renamed).toBe(1);
 
 		const goalRow = await DB.selectFrom("goal")
-			.select("goal.id")
+			.select(["goal.id", "goal.name"])
 			.where("goal.id", "=", canonicalId)
 			.executeTakeFirst();
 
 		expect(goalRow).toBeDefined();
+		expect(goalRow?.name).toBe(await CreateGoalTitle(charts, criteria, game));
 
 		const staleGoal = await DB.selectFrom("goal")
 			.select("goal.id")
@@ -67,5 +69,37 @@ describe("reconcileGoalIds", () => {
 			.executeTakeFirst();
 
 		expect(subRow?.goal_id).toBe(canonicalId);
+	});
+
+	it("updates stale goal names when the id is already canonical", async () => {
+		const chartId = await seedMinimalIidxSpChart();
+
+		const charts = { type: "single" as const, data: chartId };
+		const criteria = { mode: "single" as const, value: 5, key: "lamp" as const };
+		const game = "iidx-sp" as const;
+		const goalID = CreateGoalID(charts, criteria, game);
+		const expectedName = await CreateGoalTitle(charts, criteria, game);
+
+		await DB.insertInto("goal")
+			.values({
+				id: goalID,
+				game,
+				name: "stale human-readable title",
+				charts,
+				criteria,
+			})
+			.execute();
+
+		const { namesUpdated, renamed } = await reconcileGoalIds({ dryRun: false });
+
+		expect(renamed).toBe(0);
+		expect(namesUpdated).toBe(1);
+
+		const goalRow = await DB.selectFrom("goal")
+			.select("goal.name")
+			.where("goal.id", "=", goalID)
+			.executeTakeFirst();
+
+		expect(goalRow?.name).toBe(expectedName);
 	});
 });
