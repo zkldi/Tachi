@@ -1,5 +1,6 @@
-import chalk from "chalk";
 import type { GoalDocument, V3Game } from "tachi-common";
+
+import chalk from "chalk";
 
 import {
 	buildGoalTitleContext,
@@ -7,7 +8,7 @@ import {
 } from "../lib/goals/goal-title-from-seeds";
 import { CreateGoalID, ReadCollection } from "../util";
 
-type SeedGoal = GoalDocument & { goalID: string; name: string };
+type SeedGoal = { goalID: string; name: string } & GoalDocument;
 
 let exitCode = 0;
 let idMismatches = 0;

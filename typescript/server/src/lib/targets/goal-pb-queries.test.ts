@@ -1,9 +1,4 @@
-import {
-	GetGameConfig,
-	GetScoreMetricConf,
-	type PBScoreDocument,
-	SDVX_LAMPS,
-} from "tachi-common";
+import { GetGameConfig, GetScoreMetricConf, type PBScoreDocument, SDVX_LAMPS } from "tachi-common";
 import { describe, expect, it } from "vitest";
 
 import { pbMeetsGoalThreshold } from "./goal-pb-queries";

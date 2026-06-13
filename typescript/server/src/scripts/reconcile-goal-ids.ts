@@ -22,11 +22,7 @@ import { SELECT_GOAL } from "#lib/db-formats/goal";
 import { ToGoalDocument } from "#lib/db-formats/target-documents";
 import { log } from "#lib/log/log";
 import { CreateGoalTitle } from "#lib/targets/goal-utils";
-import {
-	CreateGoalID,
-	mergeGoalSubscriptions,
-	remapGoalIdInQuests,
-} from "#lib/targets/goals";
+import { CreateGoalID, mergeGoalSubscriptions, remapGoalIdInQuests } from "#lib/targets/goals";
 import DB from "#services/pg/db";
 import { parseArgs } from "node:util";
 import { type GoalDocument } from "tachi-common";
@@ -54,7 +50,10 @@ reconcile-goal-ids — align goal.id and goal.name with charts + criteria
 }
 
 const cliDryRun = values["dry-run"] ?? false;
-const batchSize = Math.max(1, Number.parseInt(values["batch-size"] ?? "", 10) || DEFAULT_BATCH_SIZE);
+const batchSize = Math.max(
+	1,
+	Number.parseInt(values["batch-size"] ?? "", 10) || DEFAULT_BATCH_SIZE,
+);
 
 function canonicalGoalId(goal: GoalDocument): string {
 	return CreateGoalID(goal.charts, goal.criteria, goal.game);
@@ -102,7 +101,7 @@ async function reconcileGoalId(
 	expectedName: string | null,
 	targetExists: boolean,
 	isDryRun: boolean,
-): Promise<"renamed" | "merged"> {
+): Promise<"merged" | "renamed"> {
 	if (isDryRun) {
 		log.info(
 			targetExists
@@ -127,10 +126,7 @@ async function reconcileGoalId(
 		update.name = expectedName;
 	}
 
-	await DB.updateTable("goal")
-		.set(update)
-		.where("goal.id", "=", goal.goalID)
-		.execute();
+	await DB.updateTable("goal").set(update).where("goal.id", "=", goal.goalID).execute();
 
 	log.info(`Renamed ${goal.goalID} -> ${expectedId} (${goal.name})`);
 	return "renamed";
@@ -146,9 +142,7 @@ async function reconcileGoalName(
 	}
 
 	if (isDryRun) {
-		log.info(
-			`[dry-run] Would rename goal ${goal.goalID}: "${goal.name}" -> "${expectedName}"`,
-		);
+		log.info(`[dry-run] Would rename goal ${goal.goalID}: "${goal.name}" -> "${expectedName}"`);
 		return true;
 	}
 

@@ -1,6 +1,6 @@
-import { reconcileGoalIds } from "#scripts/reconcile-goal-ids";
-import { CreateGoalID } from "#lib/targets/goals";
 import { CreateGoalTitle } from "#lib/targets/goal-utils";
+import { CreateGoalID } from "#lib/targets/goals";
+import { reconcileGoalIds } from "#scripts/reconcile-goal-ids";
 import DB from "#services/pg/db";
 import { seedMinimalIidxSpChart, seedUser } from "#test-utils/pg-fixtures";
 import { describe, expect, it } from "vitest";
