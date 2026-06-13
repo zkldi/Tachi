@@ -41,6 +41,8 @@ export default interface PbTable {
   highlight: ColumnType<boolean, boolean, boolean>;
 
   time_achieved: ColumnType<string | null, string | null, string | null>;
+
+  last_clean_started_at: ColumnType<string, string | undefined, string>;
 }
 
 export type Pb = Selectable<PbTable>;

@@ -33,6 +33,8 @@ export default interface GameProfileTable {
   data: ColumnType<unknown, unknown | undefined, unknown>;
 
   showcase: ColumnType<unknown, unknown | undefined, unknown>;
+
+  last_clean_started_at: ColumnType<string, string | undefined, string>;
 }
 
 export type GameProfile = Selectable<GameProfileTable>;

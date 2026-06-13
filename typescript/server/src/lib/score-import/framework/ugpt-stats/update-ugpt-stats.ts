@@ -1,5 +1,9 @@
 import type { KtLogger } from "#lib/log/log";
 
+import {
+	type CalculationRunStartedAt,
+	newCalculationRunStartedAt,
+} from "#lib/dirty-queues/calculation-run";
 import { newGameProfilePreferenceColumns } from "#lib/game-settings/create-game-settings";
 import DB from "#services/pg/db";
 import { loadUserGameStats } from "#utils/class";
@@ -11,13 +15,18 @@ import type { ClassProcessOptions } from "../profile-calculated-data/class-proce
 import { CalculateProfileRatings } from "../calculated-data/profile";
 import { CalculateUGPTClasses, ProcessClassDeltas } from "../profile-calculated-data/classes";
 
+export type UpdateUsersGamePlaytypeStatsOptions = {
+	runStartedAt?: CalculationRunStartedAt;
+} & ClassProcessOptions;
+
 export async function UpdateUsersGamePlaytypeStats(
 	game: V3Game,
 	userID: integer,
 	classProvider: ClassProvider<V3Game> | null,
 	log: KtLogger,
-	options?: ClassProcessOptions,
+	options?: UpdateUsersGamePlaytypeStatsOptions,
 ): Promise<Array<ClassDelta>> {
+	const runStartedAt = options?.runStartedAt ?? (await newCalculationRunStartedAt());
 	log.debug(`Calculating Ratings...`);
 
 	const ratings = await CalculateProfileRatings(game, userID);
@@ -53,9 +62,11 @@ export async function UpdateUsersGamePlaytypeStats(
 			.set({
 				ratings: JSON.stringify(ratings),
 				classes: JSON.stringify(nextClasses),
+				last_clean_started_at: runStartedAt,
 			})
 			.where("user_id", "=", userID)
 			.where("game", "=", game)
+			.where("last_clean_started_at", "<=", runStartedAt)
 			.execute();
 	} else {
 		const hasAnyScores = await DB.selectFrom("score")
@@ -82,6 +93,7 @@ export async function UpdateUsersGamePlaytypeStats(
 				game,
 				ratings: JSON.stringify(ratings),
 				classes: JSON.stringify(classes),
+				last_clean_started_at: runStartedAt,
 				...newGameProfilePreferenceColumns(game),
 			})
 			.execute();

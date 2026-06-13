@@ -1,3 +1,4 @@
+import type { CalculationRunStartedAt } from "#lib/dirty-queues/calculation-run";
 import type { Kysely } from "kysely";
 import type { Database } from "tachi-db";
 
@@ -13,11 +14,14 @@ export type PBScoreDocumentNoRank<TGame extends V3Game = V3Game> = Omit<
 
 /**
  * Inserts or updates a `pb` row plus `pb_composed_from` for one user/chart (lens = null).
+ *
+ * Returns whether the row was written. Stale runs (see `last_clean_started_at`) are skipped.
  */
 export async function upsertPbFromMongoDoc(
 	db: Kysely<Database>,
 	pbDoc: PBScoreDocumentNoRank,
-): Promise<void> {
+	runStartedAt: CalculationRunStartedAt,
+): Promise<boolean> {
 	const game = pbDoc.game;
 	const { data, derived, judgements } = mongoScoreDataToPg(game, pbDoc.scoreData);
 	const judgementsJson = JSON.stringify(judgements);
@@ -40,11 +44,12 @@ export async function upsertPbFromMongoDoc(
 		.executeTakeFirst();
 
 	let pbId: string;
+	let applied = false;
 
 	if (existing) {
 		pbId = existing.row_id;
 
-		await db
+		const updated = await db
 			.updateTable("pb")
 			.set({
 				data: JSON.stringify(data),
@@ -62,9 +67,14 @@ export async function upsertPbFromMongoDoc(
 					pbDoc.timeAchieved !== null && pbDoc.timeAchieved !== undefined
 						? UnixMillisecondsToISO8601(pbDoc.timeAchieved)
 						: null,
+				last_clean_started_at: runStartedAt,
 			})
 			.where("row_id", "=", pbId)
-			.execute();
+			.where("last_clean_started_at", "<=", runStartedAt)
+			.returning("row_id")
+			.executeTakeFirst();
+
+		applied = updated !== undefined;
 	} else {
 		const inserted = await db
 			.insertInto("pb")
@@ -87,11 +97,21 @@ export async function upsertPbFromMongoDoc(
 					pbDoc.timeAchieved !== null && pbDoc.timeAchieved !== undefined
 						? UnixMillisecondsToISO8601(pbDoc.timeAchieved)
 						: null,
+				last_clean_started_at: runStartedAt,
 			})
 			.returning("row_id")
-			.executeTakeFirstOrThrow();
+			.executeTakeFirst();
+
+		if (!inserted) {
+			return false;
+		}
 
 		pbId = inserted.row_id;
+		applied = true;
+	}
+
+	if (!applied) {
+		return false;
 	}
 
 	await db.deleteFrom("pb_composed_from").where("pb_id", "=", pbId).execute();
@@ -108,4 +128,6 @@ export async function upsertPbFromMongoDoc(
 			)
 			.execute();
 	}
+
+	return true;
 }

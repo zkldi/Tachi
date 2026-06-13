@@ -4,6 +4,12 @@ import {
 	ToScoreDocument,
 } from "#lib/db-formats/score";
 import { SELECT_SESSION_DOCUMENT } from "#lib/db-formats/session";
+import { newCalculationRunStartedAt } from "#lib/dirty-queues/calculation-run";
+import {
+	claimGameProfileDirtyRows,
+	claimPbDirtyRows,
+	claimSessionDirtyRows,
+} from "#lib/dirty-queues/claim-dirty-queue";
 import { log } from "#lib/log/log";
 import { CreateSessionCalcData } from "#lib/score-import/framework/calculated-data/session";
 import { ProcessPBs } from "#lib/score-import/framework/pb/process-pbs";
@@ -36,16 +42,11 @@ const SESSION_DIRTY_CAP = 50_000;
 const GAME_PROFILE_DIRTY_CAP = 5_000;
 
 /**
- * Drain the `pb_dirty` queue: group entries by (game, playtype, user_id),
- * call ProcessPBs per group, and delete processed rows.
+ * Drain the `pb_dirty` queue: claim rows with SKIP LOCKED, group by (game, playtype, user_id),
+ * call ProcessPBs per group. Claiming deletes rows atomically so concurrent workers are safe.
  */
 export async function drainPbDirty(): Promise<number> {
-	const rows = await DB.selectFrom("pb_dirty")
-		.innerJoin("chart", "chart.id", "pb_dirty.chart_id")
-		.select(["pb_dirty.user_id", "pb_dirty.chart_id", "chart.game as chart_game"])
-		.orderBy("pb_dirty.enqueued_at", "asc")
-		.limit(PB_DIRTY_BATCH)
-		.execute();
+	const rows = await claimPbDirtyRows(PB_DIRTY_BATCH);
 
 	if (rows.length === 0) {
 		return 0;
@@ -53,7 +54,13 @@ export async function drainPbDirty(): Promise<number> {
 
 	const groups = new Map<
 		string,
-		{ chartIDs: Set<string>; game: GameGroup; playtype: LEGACY_Playtype; userID: integer }
+		{
+			chartIDs: Set<string>;
+			game: GameGroup;
+			playtype: LEGACY_Playtype;
+			runStartedAt: Awaited<ReturnType<typeof newCalculationRunStartedAt>>;
+			userID: integer;
+		}
 	>();
 
 	for (const row of rows) {
@@ -63,7 +70,13 @@ export async function drainPbDirty(): Promise<number> {
 		let group = groups.get(key);
 
 		if (!group) {
-			group = { game, playtype, userID: row.user_id, chartIDs: new Set() };
+			group = {
+				game,
+				playtype,
+				userID: row.user_id,
+				chartIDs: new Set(),
+				runStartedAt: await newCalculationRunStartedAt(),
+			};
 			groups.set(key, group);
 		}
 
@@ -73,17 +86,9 @@ export async function drainPbDirty(): Promise<number> {
 	for (const group of groups.values()) {
 		const v3Game = LEGACY_GameGroupPTToGame(group.game, group.playtype);
 		// eslint-disable-next-line no-await-in-loop
-		await ProcessPBs(v3Game, group.userID, group.chartIDs, log);
-	}
-
-	const processedPairs = rows.map((r) => [r.user_id, r.chart_id] as const);
-
-	for (const [userId, chartId] of processedPairs) {
-		// eslint-disable-next-line no-await-in-loop
-		await DB.deleteFrom("pb_dirty")
-			.where("pb_dirty.user_id", "=", userId)
-			.where("pb_dirty.chart_id", "=", chartId)
-			.execute();
+		await ProcessPBs(v3Game, group.userID, group.chartIDs, log, {
+			runStartedAt: group.runStartedAt,
+		});
 	}
 
 	log.info(`Drained ${rows.length} pb_dirty entries across ${groups.size} user/game groups.`);
@@ -141,14 +146,10 @@ export async function drainScoreRederive(): Promise<number> {
 }
 
 /**
- * Drain `session_dirty`: recompute `session.calculated_data` from visible scores in that session.
+ * Drain `session_dirty`: claim rows with SKIP LOCKED, recompute `session.calculated_data`.
  */
 export async function drainSessionDirty(): Promise<number> {
-	const rows = await DB.selectFrom("session_dirty")
-		.select(["session_dirty.session_id"])
-		.orderBy("session_dirty.enqueued_at", "asc")
-		.limit(SESSION_DIRTY_BATCH)
-		.execute();
+	const rows = await claimSessionDirtyRows(SESSION_DIRTY_BATCH);
 
 	if (rows.length === 0) {
 		return 0;
@@ -156,6 +157,7 @@ export async function drainSessionDirty(): Promise<number> {
 
 	for (const row of rows) {
 		const sessionId = row.session_id;
+		const runStartedAt = await newCalculationRunStartedAt();
 
 		// eslint-disable-next-line no-await-in-loop
 		const scoreRows = await DB.selectFrom("score")
@@ -168,10 +170,6 @@ export async function drainSessionDirty(): Promise<number> {
 			.execute();
 
 		if (scoreRows.length === 0) {
-			// eslint-disable-next-line no-await-in-loop
-			await DB.deleteFrom("session_dirty")
-				.where("session_dirty.session_id", "=", sessionId)
-				.execute();
 			continue;
 		}
 
@@ -182,10 +180,6 @@ export async function drainSessionDirty(): Promise<number> {
 			.executeTakeFirst();
 
 		if (!sessionRow) {
-			// eslint-disable-next-line no-await-in-loop
-			await DB.deleteFrom("session_dirty")
-				.where("session_dirty.session_id", "=", sessionId)
-				.execute();
 			continue;
 		}
 
@@ -196,13 +190,10 @@ export async function drainSessionDirty(): Promise<number> {
 		await DB.updateTable("session")
 			.set({
 				calculated_data: JSON.stringify(calculatedData),
+				last_clean_started_at: runStartedAt,
 			})
 			.where("session.id", "=", sessionId)
-			.execute();
-
-		// eslint-disable-next-line no-await-in-loop
-		await DB.deleteFrom("session_dirty")
-			.where("session_dirty.session_id", "=", sessionId)
+			.where("session.last_clean_started_at", "<=", runStartedAt)
 			.execute();
 	}
 
@@ -212,14 +203,10 @@ export async function drainSessionDirty(): Promise<number> {
 }
 
 /**
- * Drain `game_profile_dirty`: recompute `game_profile` ratings/classes for each (user, playtype).
+ * Drain `game_profile_dirty`: claim rows with SKIP LOCKED, recompute ratings/classes.
  */
 export async function drainGameProfileDirty(): Promise<number> {
-	const rows = await DB.selectFrom("game_profile_dirty")
-		.select(["game_profile_dirty.user_id", "game_profile_dirty.game"])
-		.orderBy("game_profile_dirty.enqueued_at", "asc")
-		.limit(GAME_PROFILE_DIRTY_BATCH)
-		.execute();
+	const rows = await claimGameProfileDirtyRows(GAME_PROFILE_DIRTY_BATCH);
 
 	if (rows.length === 0) {
 		return 0;
@@ -227,15 +214,12 @@ export async function drainGameProfileDirty(): Promise<number> {
 
 	for (const row of rows) {
 		const userId = row.user_id;
+		const runStartedAt = await newCalculationRunStartedAt();
 
 		// eslint-disable-next-line no-await-in-loop
-		await UpdateUsersGamePlaytypeStats(row.game as V3Game, userId, null, log);
-
-		// eslint-disable-next-line no-await-in-loop
-		await DB.deleteFrom("game_profile_dirty")
-			.where("game_profile_dirty.user_id", "=", userId)
-			.where("game_profile_dirty.game", "=", row.game)
-			.execute();
+		await UpdateUsersGamePlaytypeStats(row.game as V3Game, userId, null, log, {
+			runStartedAt,
+		});
 	}
 
 	log.info(`Drained ${rows.length} game_profile_dirty entries.`);

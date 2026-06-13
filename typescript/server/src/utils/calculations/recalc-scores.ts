@@ -18,7 +18,12 @@ export async function RecalcAllScores(): Promise<void> {
  */
 export async function UpdateAllPBs(): Promise<void> {
 	await DB.insertInto("pb_dirty")
-		.expression(DB.selectFrom("score").select(["score.user_id", "score.chart_id"]).distinct())
+		.expression(
+			DB.selectFrom("score")
+				.select(["score.user_id", "score.chart_id"])
+				.where("score.committed", "=", true)
+				.distinct(),
+		)
 		.onConflict((oc) => oc.doNothing())
 		.execute();
 }

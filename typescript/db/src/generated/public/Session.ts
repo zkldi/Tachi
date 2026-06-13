@@ -31,6 +31,8 @@ export default interface SessionTable {
   highlight: ColumnType<boolean, boolean, boolean>;
 
   textsearch: ColumnType<string, never, never>;
+
+  last_clean_started_at: ColumnType<string, string | undefined, string>;
 }
 
 export type Session = Selectable<SessionTable>;

@@ -1,11 +1,19 @@
 import type { KtLogger } from "#lib/log/log";
 
+import {
+	type CalculationRunStartedAt,
+	newCalculationRunStartedAt,
+} from "#lib/dirty-queues/calculation-run";
 import DB from "#services/pg/db";
 import { GetChartForIDGuaranteed } from "#utils/db";
 import { type integer, type V3Game } from "tachi-common";
 
 import { CreatePBDoc, type PBScoreDocumentNoRank, UpdateChartRanking } from "./create-pb-doc";
 import { upsertPbFromMongoDoc } from "./upsert-pb-pg";
+
+export interface ProcessPBsOptions {
+	runStartedAt?: CalculationRunStartedAt;
+}
 
 /**
  * Process, recalculate and update a users PBs for this set of chartIDs.
@@ -18,10 +26,13 @@ export async function ProcessPBs(
 	userID: integer,
 	chartIDs: Set<string>,
 	log: KtLogger,
+	options?: ProcessPBsOptions,
 ): Promise<void> {
 	if (chartIDs.size === 0) {
 		return;
 	}
+
+	const runStartedAt = options?.runStartedAt ?? (await newCalculationRunStartedAt());
 
 	const chartIDsArray = [...chartIDs];
 	const promises = chartIDsArray.map((chartID) =>
@@ -69,7 +80,7 @@ export async function ProcessPBs(
 	await DB.transaction().execute(async (trx) => {
 		// TODO(zk): parallelize?
 		for (const doc of pbDocs) {
-			await upsertPbFromMongoDoc(trx, doc);
+			await upsertPbFromMongoDoc(trx, doc, runStartedAt);
 		}
 	});
 
