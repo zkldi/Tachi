@@ -25,7 +25,6 @@ import {
 	type GoalDocument,
 	type GoalSubscriptionDocument,
 	type integer,
-	LEGACY_GameToGameGroupPT,
 	type QuestDocument,
 	type QuestSubscriptionDocument,
 	type ScoreDocument,
@@ -175,8 +174,6 @@ export async function GetRecentActivity(
 	);
 	const timeWhereScore = whereMsRangeOnColumn("score.time_achieved", earliestSession, startFrom);
 
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
-
 	let classQ = DB.selectFrom("class_achievement")
 		.select(SELECT_CLASS_ACHIEVEMENT_DOCUMENT)
 		.where("class_achievement.game", "=", game)
@@ -199,14 +196,8 @@ export async function GetRecentActivity(
 		await Promise.all([
 			classQ.orderBy("class_achievement.timestamp", "desc").execute(),
 			highlightQ.orderBy(sql`score.time_achieved desc nulls last`).execute(),
-			GetRecentlyAchievedGoals(
-				{ ...query, game: gameGroup, playtype, timeAchieved: timeConstraint },
-				0,
-			),
-			GetRecentlyAchievedQuests(
-				{ ...query, game: gameGroup, playtype, timeAchieved: timeConstraint },
-				0,
-			),
+			GetRecentlyAchievedGoals({ ...query, game, timeAchieved: timeConstraint }, 0),
+			GetRecentlyAchievedQuests({ ...query, game, timeAchieved: timeConstraint }, 0),
 		]);
 
 	const achievedClasses = classRows.map(ToClassAchievementDocument);

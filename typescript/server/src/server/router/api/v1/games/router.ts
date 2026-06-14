@@ -69,15 +69,13 @@ import NodeCache from "node-cache";
 import {
 	type ChartDocument,
 	type FolderDocument,
+	FormatGame,
 	type GamesForGroup,
 	GameToGameGroup,
 	GetGameConfig,
 	GetGameGroupConfig,
 	type GoalDocument,
 	type integer,
-	LEGACY_FormatGameGroupPT,
-	LEGACY_GameToGameGroupPT,
-	LEGACY_GetGamePTConfig,
 	type UserGameSettingsDocument,
 	type UserGameStatsWithProfileLeaderboardRank,
 	type V3Game,
@@ -156,14 +154,13 @@ API_V1_ROUTER.add("GET /games/:gameGroup", withGameGroup, ({ ctx }) =>
  * @name GET /api/v1/games/:game
  */
 API_V1_ROUTER.add("GET /games/:game", withGame, async ({ ctx }) => {
-	const v3Game = ctx.game;
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(v3Game);
+	const game = ctx.game;
 
-	const { scoreCount, playerCount, chartCount } = await GetGameStats(v3Game);
+	const { scoreCount, playerCount, chartCount } = await GetGameStats(game);
 
-	return success(`Retrieved information about ${LEGACY_FormatGameGroupPT(gameGroup, playtype)}`, {
+	return success(`Retrieved information about ${FormatGame(game)}`, {
 		chartCount,
-		config: LEGACY_GetGamePTConfig(gameGroup, playtype),
+		config: GetGameConfig(game),
 		playerCount,
 		scoreCount,
 	});
@@ -621,17 +618,17 @@ API_V1_ROUTER.add("GET /games/:game/tables/:tableID", withGame, async ({ ctx, pa
  * @name GET /api/v1/games/:game/targets/recently-achieved
  */
 API_V1_ROUTER.add("GET /games/:game/targets/recently-achieved", withGame, async ({ ctx }) => {
-	const { gameGroup: game, playtype } = LEGACY_GameToGameGroupPT(ctx.game);
-
 	const [{ goals, goalSubs }, { quests, questSubs }] = await Promise.all([
-		GetRecentlyAchievedGoals({ game, playtype }),
-		GetRecentlyAchievedQuests({ game, playtype }),
+		GetRecentlyAchievedGoals({ game: ctx.game }),
+		GetRecentlyAchievedQuests({ game: ctx.game }),
 	]);
 
-	return success(
-		`Retrieved some recently achieved targets for ${LEGACY_FormatGameGroupPT(game, playtype)}`,
-		{ goalSubs, goals, questSubs, quests },
-	);
+	return success(`Retrieved some recently achieved targets for ${ctx.game}`, {
+		goalSubs,
+		goals,
+		questSubs,
+		quests,
+	});
 });
 
 /**
@@ -640,17 +637,17 @@ API_V1_ROUTER.add("GET /games/:game/targets/recently-achieved", withGame, async 
  * @name GET /api/v1/games/:game/targets/recently-raised
  */
 API_V1_ROUTER.add("GET /games/:game/targets/recently-raised", withGame, async ({ ctx }) => {
-	const { gameGroup: game, playtype } = LEGACY_GameToGameGroupPT(ctx.game);
-
 	const [{ goals, goalSubs }, { quests, questSubs }] = await Promise.all([
-		GetRecentlyInteractedGoals({ game, playtype }),
-		GetRecentlyInteractedQuests({ game, playtype }),
+		GetRecentlyInteractedGoals({ game: ctx.game }),
+		GetRecentlyInteractedQuests({ game: ctx.game }),
 	]);
 
-	return success(
-		`Retrieved some recently interacted-with targets for ${LEGACY_FormatGameGroupPT(game, playtype)}`,
-		{ goalSubs, goals, questSubs, quests },
-	);
+	return success(`Retrieved some recently interacted-with targets for ${ctx.game}`, {
+		goalSubs,
+		goals,
+		questSubs,
+		quests,
+	});
 });
 
 /**
@@ -659,9 +656,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/recently-raised", withGame, async ({
  * @name GET /api/v1/games/:game/targets/goals/popular
  */
 API_V1_ROUTER.add("GET /games/:game/targets/goals/popular", withGame, async ({ ctx }) => {
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(ctx.game);
-
-	const goals = await GetMostSubscribedGoals({ game: gameGroup, playtype });
+	const goals = await GetMostSubscribedGoals({ game: ctx.game });
 
 	return success(`Returned ${goals.length} goals.`, goals);
 });
@@ -803,11 +798,10 @@ API_V1_ROUTER.add("GET /games/:game/targets/quests/:questID", withGame, async ({
  * @name GET /api/v1/games/:game/targets/questlines
  */
 API_V1_ROUTER.add("GET /games/:game/targets/questlines", withGame, async ({ ctx }) => {
-	const v3Game = ctx.game;
-	const { gameGroup: _gameGroup, playtype } = LEGACY_GameToGameGroupPT(v3Game);
+	const game = ctx.game;
 
-	const questlines = await GetQuestlinesForGame(v3Game);
-	const standalone = await FindStandaloneQuests(_gameGroup, playtype);
+	const questlines = await GetQuestlinesForGame(game);
+	const standalone = await FindStandaloneQuests(game);
 	const standaloneGoals = await GetGoalsInQuests(standalone);
 
 	return success(`Returned ${questlines.length} questlines.`, {

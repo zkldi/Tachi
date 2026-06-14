@@ -13,9 +13,8 @@ import { type RequestHandler, Router } from "express";
 import { p } from "prudence";
 import {
 	type GamesForGroup,
+	GetGameConfig,
 	type integer,
-	LEGACY_GetGamePTConfig,
-	type LEGACY_Playtypes,
 	type SpecificGameConfig,
 } from "tachi-common";
 
@@ -318,13 +317,10 @@ router.post("/class/submit", ValidateModelHeader, async (req, res) => {
 	}
 
 	// is 0 or 1.
-	const playtype: LEGACY_Playtypes["iidx"] = body.play_style === 0 ? "SP" : "DP";
+	const game: GamesForGroup["iidx"] = body.play_style === 0 ? "iidx-sp" : "iidx-dp";
 
-	const dans = (
-		LEGACY_GetGamePTConfig("iidx", playtype) as unknown as SpecificGameConfig<
-			GamesForGroup["iidx"]
-		>
-	).classes.dan.values;
+	const dans = (GetGameConfig(game) as unknown as SpecificGameConfig<GamesForGroup["iidx"]>)
+		.classes.dan.values;
 
 	const dan = dans[body.course_id];
 
@@ -334,8 +330,6 @@ router.post("/class/submit", ValidateModelHeader, async (req, res) => {
 			description: `Unknown course_id ${body.course_id}.`,
 		});
 	}
-
-	const game = playtype === "SP" ? "iidx-sp" : "iidx-dp";
 
 	const r = await UpdateClassIfGreater(req[SYMBOL_TACHI_API_AUTH].userID!, game, "dan", dan.id);
 

@@ -2,7 +2,7 @@ import DropdownNavLink from "#components/ui/DropdownNavLink";
 import QuickDropdown from "#components/ui/QuickDropdown";
 import { TachiConfig } from "#lib/config";
 import { type SetState } from "#types/react";
-import { FormatGame, GetGameGroupConfig, LEGACY_GameGroupPTToGame } from "tachi-common";
+import { FormatGame, GetGameGroupConfig } from "tachi-common";
 
 export default function GlobalInfoDropdown({
 	className,
@@ -17,17 +17,13 @@ export default function GlobalInfoDropdown({
 }) {
 	const links = [];
 
-	for (const game of TachiConfig.GAME_GROUPS) {
-		const gameConfig = GetGameGroupConfig(game);
+	for (const gameGroup of TachiConfig.GAME_GROUPS) {
+		const gameConfig = GetGameGroupConfig(gameGroup);
 
-		for (const playtype of gameConfig.playtypes) {
+		for (const game of gameConfig.games) {
 			links.push(
-				<DropdownNavLink
-					key={`${game}:${playtype}`}
-					onClick={() => setState?.(false)}
-					to={`/games/${LEGACY_GameGroupPTToGame(game, playtype)}`}
-				>
-					{FormatGame(LEGACY_GameGroupPTToGame(game, playtype))}
+				<DropdownNavLink key={game} onClick={() => setState?.(false)} to={`/games/${game}`}>
+					{FormatGame(game)}
 				</DropdownNavLink>,
 			);
 		}

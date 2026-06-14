@@ -42,10 +42,9 @@ import {
 	type ChartDocument,
 	type Difficulties,
 	FormatGame,
+	GameToGameGroup,
 	GetGameConfig,
 	LEGACY_GameGroupPTToGame,
-	LEGACY_GameToGameGroupPT,
-	LEGACY_GetGamePTConfig,
 	type MatchTypeResolver,
 	type MatchTypeResolverWithDifficulty,
 	type MongoProvidedMetrics,
@@ -185,7 +184,7 @@ export async function ResolveSongAndChart(
 	log: KtLogger,
 ): Promise<{ chart: ChartDocument; song: SongDocument } | null> {
 	const { game } = resolver;
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
+	const gameGroup = GameToGameGroup(game);
 
 	const gameConfig = GetGameConfig(game);
 
@@ -316,7 +315,7 @@ export async function ResolveSongAndChart(
 
 			const identifier = Number(resolver.identifier);
 
-			const config = LEGACY_GetGamePTConfig("sdvx", "Single");
+			const config = GetGameConfig("sdvx");
 
 			if (config.difficulties.type === "DYNAMIC") {
 				log.error(

@@ -17,12 +17,9 @@ import DB from "#services/pg/db";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import { sql } from "kysely";
 import {
-	type GameGroup,
 	type GoalDocument,
 	type GoalSubscriptionDocument,
 	type integer,
-	LEGACY_GameGroupPTToGame,
-	type LEGACY_Playtype,
 	type QuestDocument,
 	type QuestSubscriptionDocument,
 	type V3Game,
@@ -447,12 +444,10 @@ export async function GetParentQuests(
 /**
  * Find all quests not in any questlines.
  */
-export async function FindStandaloneQuests(game: GameGroup, playtype: LEGACY_Playtype) {
-	const v3Game = LEGACY_GameGroupPTToGame(game, playtype);
-
+export async function FindStandaloneQuests(game: V3Game) {
 	const rows = await DB.selectFrom("quest")
 		.select(SELECT_QUEST)
-		.where("quest.game", "=", v3Game)
+		.where("quest.game", "=", game)
 		.where(
 			sql<boolean>`not exists (
 				select 1 from questline_quest qq where qq.quest_id = quest.id

@@ -24,7 +24,6 @@ import {
 	GetRecentlyInteractedQuests,
 } from "#utils/db";
 import { ExpectedErr } from "bliss";
-import { LEGACY_GameToGameGroupPT } from "tachi-common";
 
 /**
  * Return a user's recently achieved goals and quests.
@@ -36,11 +35,10 @@ API_V1_ROUTER.add(
 	withUserGameProfile,
 	async ({ ctx }) => {
 		const { requestedUser: user, game } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
 
 		const [{ goals, goalSubs }, { quests, questSubs }] = await Promise.all([
-			GetRecentlyAchievedGoals({ game: gameGroup, playtype, userID: user.id }),
-			GetRecentlyAchievedQuests({ game: gameGroup, playtype, userID: user.id }),
+			GetRecentlyAchievedGoals({ game, userID: user.id }),
+			GetRecentlyAchievedQuests({ game, userID: user.id }),
 		]);
 
 		return success(`Returned ${user.username}'s recently achieved targets.`, {
@@ -63,11 +61,10 @@ API_V1_ROUTER.add(
 	withUserGameProfile,
 	async ({ ctx }) => {
 		const { requestedUser: user, game } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
 
 		const [{ goals, goalSubs }, { quests, questSubs }] = await Promise.all([
-			GetRecentlyInteractedGoals({ game: gameGroup, playtype, userID: user.id }),
-			GetRecentlyInteractedQuests({ game: gameGroup, playtype, userID: user.id }),
+			GetRecentlyInteractedGoals({ game, userID: user.id }),
+			GetRecentlyInteractedQuests({ game, userID: user.id }),
 		]);
 
 		return success(`Returned ${user.username}'s recently achieved targets.`, {

@@ -14,7 +14,7 @@ import { GetScoreIdsGroupedBySessionId } from "#utils/queries/sessions";
 import { CheckStrSessionAlg } from "#utils/string-checks";
 import { ExpectedErr } from "bliss";
 import { sql } from "kysely";
-import { type AnySessionRatingAlg, GetGameConfig, LEGACY_GameToGameGroupPT } from "tachi-common";
+import { type AnySessionRatingAlg, GetGameConfig } from "tachi-common";
 import { type Game } from "tachi-db";
 
 /**
@@ -27,9 +27,8 @@ API_V1_ROUTER.add(
 	withUserGameProfile,
 	async ({ ctx, input }) => {
 		const { requestedUser: user, game } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
 
-		const hits = await SearchSessions(input.search, gameGroup, playtype, user.id, 100);
+		const hits = await SearchSessions(input.search, game, user.id, 100);
 
 		return success(
 			`Retrieved ${hits.length} sessions.`,

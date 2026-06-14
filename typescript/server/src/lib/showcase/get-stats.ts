@@ -1,4 +1,4 @@
-import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings.js";
+import { GetUserGameSettingsDocument } from "#lib/db-formats/user-game-settings";
 import { log } from "#lib/log/log";
 import { type integer, type ShowcaseStatDetails, type V3Game } from "tachi-common";
 

@@ -1,6 +1,4 @@
-// Schemas for some objects in tachi. These are exported in a record that maps
-// their name in the database to the object they schemaify.
-// The schemas themselves are wrapped in functions that throw on error.
+// Last bastion of prudence code - the validator for batch manual input.
 
 import {
 	p,
@@ -9,145 +7,16 @@ import {
 	type ValidSchemaValue,
 } from "prudence";
 
-import type { GameGroup, LEGACY_Playtypes, V3Game } from "../types/game-config";
+import type { V3Game } from "../types/game-config";
 import type { ConfScoreMetric } from "../types/metrics";
 
-import {
-	allSupportedGameGroups,
-	GameToGameGroup,
-	GetGameConfig,
-	GetGameGroupConfig,
-	GetScoreMetrics,
-	LEGACY_GameGroupPTToGame,
-	LEGACY_GameToPlaytypeFn,
-	LEGACY_GetGamePTConfig,
-} from "../config/config";
+import { GameToGameGroup, GetGameConfig, LEGACY_GameToPlaytypeFn } from "../config/config";
 import { PrudenceZodShim } from "../utils/util";
 
 export const optNull = (v: ValidSchemaValue): ValidationFunctionParentOptionsKeychain =>
 	p.optional(p.nullable(v));
 
 export const optNullFluffStrField = optNull(p.isBoundedString(3, 140));
-
-/**
- * Wrap a prudence schema in a callable function that takes an unknown item and attempts
- * to validate it.
- */
-function prSchemaFnWrap(schema: PrudenceSchema) {
-	return (s: unknown): true => {
-		const err = p(s, schema);
-
-		if (err) {
-			throw err;
-		}
-
-		return true;
-	};
-}
-
-const extractGame = (self: unknown) => {
-	if (typeof self !== "object" || !self) {
-		throw new Error("Expected an object.");
-	}
-
-	const s = self as Record<string, unknown>;
-
-	if (typeof s.game !== "string") {
-		throw new Error(`Expected a string where self.game is. Got ${s.game}`);
-	}
-
-	if (typeof s.playtype !== "string") {
-		throw new Error(`Expected a string where self.playtype is. Got ${s.playtype}`);
-	}
-
-	if (!IsValidGameGroup(s.game)) {
-		throw new Error(`Expected valid game -- got ${s.game}.`);
-	}
-
-	if (!IsValidPlaytype(s.game, s.playtype)) {
-		throw new Error(`Expected valid playtype -- got ${s.playtype}.`);
-	}
-
-	return {
-		v3Game: LEGACY_GameGroupPTToGame(s.game, s.playtype),
-		gameGroup: s.game,
-		playtype: s.playtype,
-	};
-};
-
-function IsValidPlaytype(game: GameGroup, str: string): str is LEGACY_Playtypes[GameGroup] {
-	return GetGameGroupConfig(game).playtypes.includes(str as LEGACY_Playtypes[GameGroup]);
-}
-
-function IsValidGameGroup(str: string): str is GameGroup {
-	return allSupportedGameGroups.includes(str as GameGroup);
-}
-
-const games = allSupportedGameGroups;
-
-const isValidPlaytype = (self: unknown, parent: Record<string, unknown>) => {
-	if (typeof parent.game !== "string" || !IsValidGameGroup(parent.game)) {
-		throw new Error(`Invalid Schema, need game to base IsValidPlaytype off of.`);
-	}
-
-	if (typeof self !== "string") {
-		return "Expected a string.";
-	}
-
-	if (!IsValidPlaytype(parent.game, self)) {
-		return `Expected a valid playtype for ${parent.game}`;
-	}
-
-	return true;
-};
-
-export const PR_GOAL_SCHEMA = (self: unknown) => {
-	const { gameGroup: game, playtype } = extractGame(self);
-
-	return prSchemaFnWrap({
-		game: p.isIn(games),
-		playtype: isValidPlaytype,
-		name: "string",
-		goalID: "string",
-		criteria: p.or(
-			{
-				mode: p.is("single"),
-				key: (self) => {
-					const gameConfig = LEGACY_GetGamePTConfig(game, playtype);
-					const metrics = GetScoreMetrics(gameConfig);
-
-					return p.isIn(metrics)(self);
-				},
-				value: "number",
-			},
-			{
-				mode: p.isIn("absolute", "proportion"),
-				countNum: p.isPositive,
-				key: (self) => {
-					const gameConfig = LEGACY_GetGamePTConfig(game, playtype);
-					const metrics = GetScoreMetrics(gameConfig);
-
-					return p.isIn(metrics)(self);
-				},
-				value: "number",
-			},
-		),
-		charts: p.or(
-			{
-				type: p.is("folder"),
-				data: "string",
-			},
-			{
-				type: p.is("multi"),
-				data: ["string"],
-			},
-			{
-				type: p.is("single"),
-				data: "string",
-			},
-		),
-	})(self);
-};
 
 // Returns true on success, throws on failure.
 export type SchemaValidatorFunction = (self: unknown) => true;
@@ -311,26 +180,3 @@ export const PR_BATCH_MANUAL = (game: V3Game): PrudenceSchema => ({
 	scores: [PR_BATCH_MANUAL_SCORE(game)],
 	classes: optNull(PR_BATCH_MANUAL_CLASSES(game)),
 });
-
-export const PR_RESOLVER: PrudenceSchema = {
-	matchType: p.isIn(
-		"songTitle",
-		"tachiSongID",
-		"bmsChartHash",
-		"gcmInGameIDSpecialChart",
-		"itgChartHash",
-		"sdvxInGameID",
-		"inGameID",
-		"inGameStrID",
-		"uscChartHash",
-		"popnChartHash",
-		"ddrSongHash",
-	),
-	identifier: "string",
-	comment: optNull(p.isBoundedString(3, 240)),
-
-	// extra disambiguators
-	difficulty: "*?string",
-	artist: "*?string",
-	version: "*?string",
-};

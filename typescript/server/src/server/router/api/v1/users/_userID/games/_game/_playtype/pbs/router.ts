@@ -21,12 +21,7 @@ import { GetAdjacentAbove, GetAdjacentBelow } from "#utils/queries/pbs";
 import { FilterChartsAndSongs, GetScoreIDsFromComposed } from "#utils/scores";
 import { GetUsersWithIDs } from "#utils/user";
 import { ExpectedErr } from "bliss";
-import {
-	GameToGameGroup,
-	LEGACY_GameToGameGroupPT,
-	LEGACY_GetGamePTConfig,
-	type MatchTypeResolver,
-} from "tachi-common";
+import { GameToGameGroup, GetGameConfig, type MatchTypeResolver } from "tachi-common";
 
 /**
  * Searches a user's personal bests.
@@ -81,8 +76,7 @@ API_V1_ROUTER.add(
 	withUserGameProfile,
 	async ({ ctx, input }) => {
 		const { requestedUser: user, game } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
-		const gameConfig = LEGACY_GetGamePTConfig(gameGroup, playtype);
+		const gameConfig = GetGameConfig(game);
 
 		if (input.alg !== undefined && !IsValidScoreAlg(gameConfig, input.alg)) {
 			throw new ExpectedErr(
@@ -110,12 +104,10 @@ API_V1_ROUTER.add(
 	withUserGameProfile,
 	async ({ ctx, input }) => {
 		const { requestedUser: user, game } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
 
 		const safeBody = {
 			...input,
-			game: gameGroup,
-			playtype,
+			game,
 		} as unknown as MatchTypeResolver;
 
 		const got = await ResolveSongAndChart(safeBody, log);

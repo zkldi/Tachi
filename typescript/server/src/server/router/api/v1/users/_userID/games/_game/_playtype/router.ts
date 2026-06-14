@@ -35,10 +35,9 @@ import {
 import { ExpectedErr } from "bliss";
 import { sql, type SqlBool } from "kysely";
 import {
+	FormatGame,
 	GetGameConfig,
 	type integer,
-	LEGACY_FormatGameGroupPT,
-	LEGACY_GameToGameGroupPT,
 	type PBScoreDocument,
 	type UserGameStats,
 	type UserGameStatsSnapshotDocument,
@@ -52,7 +51,6 @@ import {
  */
 API_V1_ROUTER.add("GET /users/:userID/games/:game", withUserGameProfile, async ({ ctx }) => {
 	const { requestedUser: user, game, userGameStats: stats } = ctx;
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
 
 	const scoreJoin = () =>
 		DB.selectFrom("score")
@@ -93,7 +91,7 @@ API_V1_ROUTER.add("GET /users/:userID/games/:game", withUserGameProfile, async (
 	const firstScore = firstRow ? ToScoreDocument(firstRow as ScoreDocumentJoinRow) : null;
 	const mostRecentScore = recentRow ? ToScoreDocument(recentRow as ScoreDocumentJoinRow) : null;
 
-	return success(`Retrieved user statistics for ${user.username} (${gameGroup} ${playtype})`, {
+	return success(`Retrieved user statistics for ${user.username} (${FormatGame(game)})`, {
 		firstScore,
 		gameStats: stats,
 		mostRecentScore,
@@ -364,12 +362,9 @@ API_V1_ROUTER.add(
 	"DELETE /users/:userID/games/:game",
 	withUserGameProfile,
 	async ({ ctx, input }) => {
-		const { game: v3Game, requestedUser: user } = ctx;
-		const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(v3Game);
+		const { game, requestedUser: user } = ctx;
 
-		log.info(
-			`Recieved request to delete user-game ${FormatUserDoc(user)} ${LEGACY_FormatGameGroupPT(gameGroup, playtype)}`,
-		);
+		log.info(`Recieved request to delete user-game ${FormatUserDoc(user)} ${FormatGame(game)}`);
 
 		const privateInfo = await GetUserPrivateInfo(user.id);
 
@@ -391,7 +386,7 @@ API_V1_ROUTER.add(
 			throw new ExpectedErr(403, "Invalid password.");
 		}
 
-		await DestroyUserGameProfile(user.id, v3Game);
+		await DestroyUserGameProfile(user.id, game);
 
 		return success("Destroyed profile.", {});
 	},

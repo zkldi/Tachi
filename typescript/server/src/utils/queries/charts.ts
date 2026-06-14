@@ -10,9 +10,8 @@ import {
 	type Difficulties,
 	type GameGroup,
 	type GamesForGroup,
+	GameToGameGroup,
 	type integer,
-	LEGACY_GameGroupPTToGame,
-	type LEGACY_Playtype,
 	type SongDocument,
 	type V3Game,
 	type Versions,
@@ -668,15 +667,15 @@ export async function FindSDVXChartOnDFVersion(
 	return ToChartDocument(row);
 }
 
-export async function FindChartOnSHA256(game: GameGroup, hash: string) {
-	if (game !== "bms" && game !== "usc" && game !== "iidx" && game !== "pms") {
-		throw new Error(`Cannot call FindChartOnSHA256 for game ${game}.`);
+export async function FindChartOnSHA256GameGroup(gameGroup: GameGroup, hash: string) {
+	if (gameGroup !== "bms" && gameGroup !== "usc" && gameGroup !== "iidx" && gameGroup !== "pms") {
+		throw new Error(`Cannot call FindChartOnSHA256 for game group ${gameGroup}.`);
 	}
 
 	const row = await DB.selectFrom("chart")
 		.innerJoin("song", "song.id", "chart.song_id")
 		.select(SELECT_CHART)
-		.where("song.game_group", "=", game)
+		.where("song.game_group", "=", gameGroup)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
 		.executeTakeFirst();
 
@@ -687,22 +686,16 @@ export async function FindChartOnSHA256(game: GameGroup, hash: string) {
 	return ToChartDocument(row);
 }
 
-export async function FindChartOnSHA256Playtype(
-	game: GameGroup,
-	hash: string,
-	playtype: LEGACY_Playtype,
-) {
-	if (game !== "bms" && game !== "usc" && game !== "iidx" && game !== "pms") {
+export async function FindChartOnSHA256(game: V3Game, hash: string) {
+	const gameGroup = GameToGameGroup(game);
+	if (gameGroup !== "bms" && gameGroup !== "usc" && gameGroup !== "iidx" && gameGroup !== "pms") {
 		throw new Error(`Cannot call FindChartOnSHA256 for game ${game}.`);
 	}
-
-	const v3Game = LEGACY_GameGroupPTToGame(game, playtype) as Game;
 
 	const row = await DB.selectFrom("chart")
 		.innerJoin("song", "song.id", "chart.song_id")
 		.select(SELECT_CHART)
-		.where("song.game_group", "=", game)
-		.where("chart.game", "=", v3Game)
+		.where("chart.game", "=", game)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
 		.executeTakeFirst();
 
@@ -714,7 +707,7 @@ export async function FindChartOnSHA256Playtype(
 }
 
 /**
- * Find a USC chart on its SHA1 hash (from chart data) and playtype.
+ * Find a USC chart on its SHA1 hash (from chart data).
  * Used by the USC IR and batch-manual uscChartHash matching.
  */
 export async function FindUSCChartOnSHA1(hash: string, game: "usc-controller" | "usc-keyboard") {

@@ -17,14 +17,7 @@ import { rederiveScoresForChart } from "#lib/score-import/framework/pb/rederive-
 import { scoreVisibleSql } from "#lib/score-import/framework/pg/score-visibility";
 import { UpdateUsersGamePlaytypeStats } from "#lib/score-import/framework/ugpt-stats/update-ugpt-stats";
 import DB from "#services/pg/db";
-import {
-	type GameGroup,
-	type integer,
-	LEGACY_GameGroupPTToGame,
-	LEGACY_GameToGameGroupPT,
-	type LEGACY_Playtype,
-	type V3Game,
-} from "tachi-common";
+import { type integer, type V3Game } from "tachi-common";
 
 const PB_DIRTY_BATCH = 5000;
 const SCORE_REDERIVE_BATCH = 5000;
@@ -42,7 +35,7 @@ const SESSION_DIRTY_CAP = 50_000;
 const GAME_PROFILE_DIRTY_CAP = 5_000;
 
 /**
- * Drain the `pb_dirty` queue: claim rows with SKIP LOCKED, group by (game, playtype, user_id),
+ * Drain the `pb_dirty` queue: claim rows with SKIP LOCKED, group by (game, user_id),
  * call ProcessPBs per group. Claiming deletes rows atomically so concurrent workers are safe.
  */
 export async function drainPbDirty(): Promise<number> {
@@ -56,23 +49,20 @@ export async function drainPbDirty(): Promise<number> {
 		string,
 		{
 			chartIDs: Set<string>;
-			game: GameGroup;
-			playtype: LEGACY_Playtype;
+			game: V3Game;
 			runStartedAt: Awaited<ReturnType<typeof newCalculationRunStartedAt>>;
 			userID: integer;
 		}
 	>();
 
 	for (const row of rows) {
-		const { gameGroup: game, playtype } = LEGACY_GameToGameGroupPT(row.chart_game as V3Game);
-		const key = `${game}:${playtype}:${row.user_id}`;
+		const key = `${row.chart_game}:${row.user_id}`;
 
 		let group = groups.get(key);
 
 		if (!group) {
 			group = {
-				game,
-				playtype,
+				game: row.chart_game,
 				userID: row.user_id,
 				chartIDs: new Set(),
 				runStartedAt: await newCalculationRunStartedAt(),
@@ -84,9 +74,8 @@ export async function drainPbDirty(): Promise<number> {
 	}
 
 	for (const group of groups.values()) {
-		const v3Game = LEGACY_GameGroupPTToGame(group.game, group.playtype);
 		// eslint-disable-next-line no-await-in-loop
-		await ProcessPBs(v3Game, group.userID, group.chartIDs, log, {
+		await ProcessPBs(group.game, group.userID, group.chartIDs, log, {
 			runStartedAt: group.runStartedAt,
 		});
 	}

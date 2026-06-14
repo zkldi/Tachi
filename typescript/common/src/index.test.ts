@@ -6,7 +6,6 @@ import * as tachiCommon from "./index";
 describe("Property Checks", () => {
 	it("exports core APIs and constants", () => {
 		expect(typeof tachiCommon.GetGameGroupConfig).toBe("function");
-		expect(typeof tachiCommon.LEGACY_GetGamePTConfig).toBe("function");
 		expect(typeof tachiCommon.COLOUR_SET).toBe("object");
 	});
 });

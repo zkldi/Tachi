@@ -12,14 +12,13 @@ import {
 import { DeorphanScores } from "#lib/score-import/framework/orphans/orphans";
 import { ServerConfig, TachiConfig } from "#lib/setup/config";
 import { Random20Hex } from "#utils/misc";
-import { FindChartOnSHA256, FindChartOnSHA256Playtype } from "#utils/queries/charts";
+import { FindChartOnSHA256, FindChartOnSHA256GameGroup } from "#utils/queries/charts";
 import { FindSongOnID } from "#utils/queries/songs";
 import {
 	type BMSGames,
 	type ChartDocument,
 	CreateChartID,
 	type GamesForGroup,
-	type LEGACY_Playtypes,
 	type SongDocument,
 } from "tachi-common";
 
@@ -166,40 +165,40 @@ export const ConverterIRBeatoraja: ConverterFunction<BeatorajaScore, BeatorajaCo
 		);
 	}
 
-	const game = context.chart.mode === "POPN_9K" ? "pms" : "bms";
+	const gameGroup = context.chart.mode === "POPN_9K" ? "pms" : "bms";
 
 	let chart: ChartDocument<BMSGames> | null;
 
-	if (game === "bms") {
-		chart = (await FindChartOnSHA256(game, data.sha256)) as ChartDocument<
+	if (gameGroup === "bms") {
+		chart = (await FindChartOnSHA256GameGroup(gameGroup, data.sha256)) as ChartDocument<
 			GamesForGroup["bms"]
 		> | null;
 	} else {
-		let playtype: LEGACY_Playtypes["pms"];
+		let game: GamesForGroup["pms"];
 
 		// It's still called BM_CONTROLLER even though its popn!
 		if (data.deviceType === "BM_CONTROLLER") {
-			playtype = "Controller";
+			game = "pms-controller";
 		} else if (data.deviceType === "KEYBOARD") {
-			playtype = "Keyboard";
+			game = "pms-keyboard";
 		} else {
 			throw new InvalidScoreFailure("MIDI is not allowed for PMS scores.");
 		}
 
-		chart = (await FindChartOnSHA256Playtype(game, data.sha256, playtype)) as ChartDocument<
+		chart = (await FindChartOnSHA256(game, data.sha256)) as ChartDocument<
 			GamesForGroup["pms"]
 		> | null;
 	}
 
 	if (!chart) {
-		chart = await HandleOrphanChartProcess(game, data, context, log);
+		chart = await HandleOrphanChartProcess(gameGroup, data, context, log);
 	}
 
-	const song = await FindSongOnID(game, chart.song.id);
+	const song = await FindSongOnID(gameGroup, chart.song.id);
 
 	if (!song) {
-		log.error(`Song-Chart Desync with ${game} ${chart.chartID}.`);
-		throw new InternalFailure(`Song-Chart Desync with ${game} ${chart.chartID}.`);
+		log.error(`Song-Chart Desync with ${gameGroup} ${chart.chartID}.`);
+		throw new InternalFailure(`Song-Chart Desync with ${gameGroup} ${chart.chartID}.`);
 	}
 
 	const optional: Mutable<DryScore<BMSGames>["scoreData"]["optional"]> = {
@@ -229,7 +228,7 @@ export const ConverterIRBeatoraja: ConverterFunction<BeatorajaScore, BeatorajaCo
 	optional.lpr = (optional.lpr ?? 0) + data.lms;
 
 	const judgements = {
-		[game === "pms" ? "cool" : "pgreat"]: data.epg + data.lpg,
+		[gameGroup === "pms" ? "cool" : "pgreat"]: data.epg + data.lpg,
 		great: data.egr + data.lgr,
 		good: data.egd + data.lgd,
 		bad: data.ebd + data.lbd,

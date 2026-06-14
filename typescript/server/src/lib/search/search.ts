@@ -17,13 +17,10 @@ import {
 	type GameGroup,
 	type GamesForGroup,
 	type integer,
-	LEGACY_GameGroupPTToGame,
-	type LEGACY_Playtype,
 	type SongDocument,
 	type UserDocument,
 	type V3Game,
 } from "tachi-common";
-import { type Game } from "tachi-db";
 
 import { SearchFoldersFtsAndTrgmGlobal } from "./folders";
 import { type SearchSessionHit, SearchSessionsForUserGptFtsAndTrgm } from "./session-search";
@@ -33,18 +30,11 @@ export type { SearchSessionHit } from "./session-search";
 
 export function SearchSessions(
 	search: string,
-	game?: GameGroup,
-	playtype?: LEGACY_Playtype,
-	userID?: integer,
+	game: V3Game,
+	userID: integer,
 	limit = 100,
 ): Promise<Array<SearchSessionHit>> {
-	if (game === undefined || playtype === undefined || userID === undefined) {
-		return Promise.resolve([]);
-	}
-
-	const v3Game = LEGACY_GameGroupPTToGame(game, playtype) as Game;
-
-	return SearchSessionsForUserGptFtsAndTrgm(userID, v3Game, search, limit);
+	return SearchSessionsForUserGptFtsAndTrgm(userID, game, search, limit);
 }
 
 /**

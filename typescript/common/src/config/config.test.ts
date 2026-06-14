@@ -1,12 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { IsValidGame } from "../utils/util";
-import {
-	ALL_GAMES,
-	allSupportedGameGroups,
-	GetGameGroupConfig,
-	LEGACY_GetGamePTConfig,
-} from "./config";
+import { ALL_GAMES, allSupportedGameGroups, GetGameConfig, GetGameGroupConfig } from "./config";
 
 describe("#IsValidGame", () => {
 	it("accepts games and rejects unknown strings", () => {
@@ -66,13 +61,13 @@ const BANNED_METRIC_NAMES = [
 
 describe("#GetGamePTConfig", () => {
 	it("defines playtype configs with consistent rating algs and metrics", () => {
-		for (const game of allSupportedGameGroups) {
-			const gameConfig = GetGameGroupConfig(game);
+		for (const gameGroup of allSupportedGameGroups) {
+			const gameConfig = GetGameGroupConfig(gameGroup);
 
-			for (const playtype of gameConfig.playtypes) {
-				const conf = LEGACY_GetGamePTConfig(game, playtype);
+			for (const game of gameConfig.games) {
+				const conf = GetGameConfig(game);
 
-				expect(conf, `'${game}:${playtype}' should have a config defined.`).toBeDefined();
+				expect(conf, `'${gameGroup}:${game}' should have a config defined.`).toBeDefined();
 				if (!conf) {
 					continue;
 				}

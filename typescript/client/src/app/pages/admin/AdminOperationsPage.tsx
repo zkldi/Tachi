@@ -1,27 +1,18 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
-import { TachiConfig } from "#lib/config";
 import { APIFetchV1 } from "#util/api";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Card, Col, Form, Row } from "react-bootstrap";
-import {
-	FormatGame,
-	type GameGroup,
-	GetGameGroupConfig,
-	LEGACY_GameGroupPTToGame,
-} from "tachi-common";
+import { ALL_GAMES, FormatGame, type V3Game } from "tachi-common";
 
 export default function AdminOperationsPage() {
 	useSetSubheader(["Admin", "Operations"]);
 
 	const [announcementTitle, setAnnouncementTitle] = useState("");
-	const [announcementGame, setAnnouncementGame] = useState<"" | GameGroup>("");
-	const [announcementPlaytype, setAnnouncementPlaytype] = useState("");
+	const [announcementGame, setAnnouncementPlaytype] = useState<V3Game | null>(null);
 
 	const [folderId, setFolderId] = useState("");
 
 	const [supporterUser, setSupporterUser] = useState("");
-
-	const announcementGameConfig = announcementGame ? GetGameGroupConfig(announcementGame) : null;
 
 	return (
 		<Row className="g-4">
@@ -38,44 +29,19 @@ export default function AdminOperationsPage() {
 							/>
 						</Form.Group>
 						<Form.Group className="mb-3" controlId="announcement-game">
-							<Form.Label>Game (optional)</Form.Label>
+							<Form.Label>Game</Form.Label>
 							<Form.Select
-								onChange={(e) => {
-									const v = e.target.value;
-									setAnnouncementGame(v === "" ? "" : (v as GameGroup));
-									setAnnouncementPlaytype("");
-								}}
-								value={announcementGame === "" ? "" : announcementGame}
+								onChange={(e) => setAnnouncementPlaytype(e.target.value as V3Game)}
+								value={announcementGame ?? ""}
 							>
-								<option value="">- Site-wide -</option>
-								{TachiConfig.GAME_GROUPS.map((g) => (
-									<option key={g} value={g}>
-										{g}
+								<option value="">-</option>
+								{ALL_GAMES.map((game) => (
+									<option key={game} value={game}>
+										{FormatGame(game)}
 									</option>
 								))}
 							</Form.Select>
 						</Form.Group>
-						{announcementGameConfig && (
-							<Form.Group className="mb-3" controlId="announcement-playtype">
-								<Form.Label>Playtype (optional)</Form.Label>
-								<Form.Select
-									onChange={(e) => setAnnouncementPlaytype(e.target.value)}
-									value={announcementPlaytype}
-								>
-									<option value="">-</option>
-									{announcementGameConfig.playtypes.map((pt) => (
-										<option key={pt} value={pt}>
-											{FormatGame(
-												LEGACY_GameGroupPTToGame(
-													announcementGame as GameGroup,
-													pt,
-												),
-											)}
-										</option>
-									))}
-								</Form.Select>
-							</Form.Group>
-						)}
 						<Button
 							disabled={!announcementTitle.trim()}
 							onClick={() => {
@@ -84,9 +50,6 @@ export default function AdminOperationsPage() {
 								};
 								if (announcementGame) {
 									body.game = announcementGame;
-								}
-								if (announcementGame && announcementPlaytype) {
-									body.playtype = announcementPlaytype;
 								}
 								void APIFetchV1(
 									`/admin/announcement`,

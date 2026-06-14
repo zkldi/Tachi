@@ -6,7 +6,6 @@ import type {
 	GameGroupConfig,
 	LEGACY_GPTString,
 	LEGACY_Playtype,
-	LEGACY_Playtypes,
 	SpecificGameConfig,
 	V3Game,
 } from "../types/game-config";
@@ -228,7 +227,7 @@ export function GameToGameGroup(game: V3Game): GameGroup {
 	return mapping[game];
 }
 
-export function LEGACY_GameToGameGroupPT(v3Game: V3Game): {
+function LEGACY_GameToGameGroupPT(v3Game: V3Game): {
 	gameGroup: GameGroup;
 	playtype: LEGACY_Playtype;
 } {
@@ -239,24 +238,6 @@ export function LEGACY_GameToGameGroupPT(v3Game: V3Game): {
 
 export function LEGACY_GameToPlaytypeFn(v3Game: V3Game): LEGACY_Playtype {
 	return LEGACY_GameToGameGroupPT(v3Game).playtype;
-}
-
-/**
- * Returns the configuration for this Game + Playtype. The type here is expanded to
- * its most generic form, for easiest interaction.
- */
-export function LEGACY_GetGamePTConfig(
-	gameGroup: GameGroup,
-	playtype: LEGACY_Playtypes[GameGroup],
-): GameConfig {
-	const game = LEGACY_GameGroupPTToGame(gameGroup, playtype);
-
-	return GAME_CONFIGS[game] as unknown as GameConfig;
-}
-
-export function LEGACY_GetGPTConfig(gptString: LEGACY_GPTString): GameConfig {
-	const game = LEGACY_GPTStringToGame(gptString);
-	return GAME_CONFIGS[game] as unknown as GameConfig;
 }
 
 export function GetGameConfig(game: V3Game): GameConfig {
@@ -292,9 +273,6 @@ export function GetGamesWithProvidedClasses(gameGroup: GameGroup): Array<V3Game>
 export function GetSpecificGameConfig<TGame extends V3Game>(game: TGame) {
 	return GAME_CONFIGS[game] as unknown as SpecificGameConfig<TGame>;
 }
-
-// @deprecated
-export const LEGACY_allGPTStrings = Object.keys(GAME_CONFIGS) as Array<LEGACY_GPTString>;
 
 export function GetScoreMetrics(
 	gameConfig: GameConfig,

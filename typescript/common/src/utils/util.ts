@@ -9,7 +9,6 @@ import type {
 	GameGroup,
 	GamesForGroup,
 	integer,
-	LEGACY_Playtypes,
 	SEEDS_BMSCourseDocument,
 	SEEDS_SongDocument,
 	SongDocument,
@@ -22,13 +21,7 @@ import type {
 	GetEnumValue,
 } from "../types/metrics";
 
-import {
-	ALL_GAMES,
-	GameToGameGroup,
-	GetGameConfig,
-	GetGameGroupConfig,
-	LEGACY_GameToGameGroupPT,
-} from "../config/config";
+import { ALL_GAMES, GameToGameGroup, GetGameConfig, GetGameGroupConfig } from "../config/config";
 
 /**
  * Stick this in the "default" branch of switch exprs to statically typecheck that your
@@ -127,25 +120,21 @@ export function FormatDifficultySearch(chart: ChartDocument): string | null {
 }
 
 export function FormatGame(game: V3Game): string {
-	const { gameGroup, playtype } = LEGACY_GameToGameGroupPT(game);
-	return LEGACY_FormatGameGroupPT(gameGroup, playtype);
-}
+	const gameGroup = GameToGameGroup(game);
+	const gameGroupConfig = GetGameGroupConfig(gameGroup);
 
-export function LEGACY_FormatGameGroupPT(
-	game: GameGroup,
-	playtype: LEGACY_Playtypes[GameGroup],
-): string {
-	const gameConfig = GetGameGroupConfig(game);
-
-	if (gameConfig.playtypes.length === 1) {
-		return gameConfig.name;
+	if (gameGroupConfig.games.length === 1) {
+		return gameGroupConfig.name;
 	}
 
-	if (game === "usc" && playtype === "Keyboard") {
-		return `${gameConfig.name} (Keyboard/Other)`;
+	if (game === "usc-keyboard") {
+		return `${gameGroupConfig.name} (Keyboard/Other)`;
 	}
 
-	return `${gameConfig.name} (${playtype})`;
+	const idx = gameGroupConfig.games.indexOf(game);
+	const playtype = gameGroupConfig.playtypes[idx];
+
+	return `${gameGroupConfig.name} (${playtype})`;
 }
 
 export function FormatChart(chart: ChartDocument): string {
