@@ -31493,5 +31493,109 @@
 			"Pupcore"
 		],
 		"title": "ポチコの幸せな日常"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "kors k",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "チッピンレイヴ"
+  		},
+  		"id": "S19c87f11bf56c2af859",
+  		"legacySongID": 2583,
+  		"searchTerms": [],
+  		"title": "Bleep Beep Bop"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Another Infinity feat. Mayumi Morinaga",
+ 		 "data": {
+    		"displayVersion": "inf",
+    		"genre": "MIRACLE DANCE POP"
+  		},
+  		"id": "S19a282b7e4c2933820b",
+  		"legacySongID": 2584,
+  		"searchTerms": [],
+  		"title": "It's my Miracle"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "kors k",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "TRANCECORE"
+  		},
+  		"id": "S19cd0c14cd5b80e83ea",
+  		"legacySongID": 2585,
+  		"searchTerms": [],
+  		"title": "In Your EyEs"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Ryu☆ feat.青龍",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "DANCE SPEED"
+  		},
+  		"id": "S1979e12181936404132",
+  		"legacySongID": 2586,
+  		"searchTerms": [
+    		"Geki"
+  		],
+  		"title": "檄"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Ryu☆",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "HAPPY HARDCORE"
+  		},
+  		"id": "S197de2b24f48c56ee58",
+  		"legacySongID": 2587,
+  		"searchTerms": [],
+  		"title": "Sakura Sunrise"
+	},
+	{
+  		"altTitles": [],
+ 		"artist": "kors k Lovers DJ Yoshitaka",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "ELECTRO POP"
+  			},
+  		"id": "S19806ce5cf5024cc429",
+  		"legacySongID": 2588,
+  		"searchTerms": [],
+  		"title": "Juicy"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "tūmahaB",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "TRANCE CORE"
+  		},
+  		"id": "S1914a8a374c15d8cb15",
+  		"legacySongID": 2589,
+  		"searchTerms": [
+    		"Lagrangian Point 0",
+    		"Lagrangian Point O",
+    		"Lagrangian Point Zero"
+  		],
+  		"title": "Lagrangian Point Ø"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "kors k feat.吉河順央",
+  		"data": {
+    		"displayVersion": "inf",
+    		"genre": "BEAT ROCK"
+  		},
+  		"id": "S19f2e080f89321f4e8d",
+  		"legacySongID": 2590,
+  		"searchTerms": [
+    		"Rush"
+  		],
+		"title": "Rush!!"
 	}
 ]
