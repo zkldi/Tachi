@@ -22,6 +22,12 @@ export interface CronTaskDef {
 	schedule: string;
 	/** Shown in admin and synced to `cron_task.description`. */
 	description: string;
+	/**
+	 * When true, the scheduler logs completion at debug instead of info, and the task's own
+	 * routine logs should also be at debug. Use for high-frequency tasks whose output is too
+	 * noisy at info level.
+	 */
+	quiet?: boolean;
 	run: () => Promise<void>;
 }
 
@@ -59,6 +65,7 @@ function buildList(): Array<CronTaskDef> {
 			schedule: "* * * * *", // TODO(zk): really? this is so lazy
 			description:
 				"Drain score_rederive, pb_dirty, session_dirty, game_profile_dirty (ordered)",
+			quiet: true,
 			run: drainStatsQueuesInOrder,
 		},
 	];

@@ -91,7 +91,7 @@ export async function drainPbDirty(): Promise<number> {
 		});
 	}
 
-	log.info(`Drained ${rows.length} pb_dirty entries across ${groups.size} user/game groups.`);
+	log.debug(`Drained ${rows.length} pb_dirty entries across ${groups.size} user/game groups.`);
 
 	return rows.length;
 }
@@ -197,7 +197,7 @@ export async function drainSessionDirty(): Promise<number> {
 			.execute();
 	}
 
-	log.info(`Drained ${rows.length} session_dirty entries.`);
+	log.debug(`Drained ${rows.length} session_dirty entries.`);
 
 	return rows.length;
 }
@@ -222,7 +222,7 @@ export async function drainGameProfileDirty(): Promise<number> {
 		});
 	}
 
-	log.info(`Drained ${rows.length} game_profile_dirty entries.`);
+	log.debug(`Drained ${rows.length} game_profile_dirty entries.`);
 
 	return rows.length;
 }
@@ -265,7 +265,7 @@ export async function drainStatsQueuesInOrder(): Promise<void> {
 			.executeTakeFirst(),
 	]);
 
-	log.info(
+	log.debug(
 		{
 			score_rederive: Number(queueSizes[0]?.n ?? 0),
 			pb_dirty: Number(queueSizes[1]?.n ?? 0),
@@ -341,7 +341,7 @@ export async function drainStatsQueuesInOrder(): Promise<void> {
 
 	const elapsedMs = Date.now() - tickStart;
 
-	log.info({ elapsedMs }, "drainStatsQueuesInOrder: tick complete");
+	log.debug({ elapsedMs }, "drainStatsQueuesInOrder: tick complete");
 }
 
 /**

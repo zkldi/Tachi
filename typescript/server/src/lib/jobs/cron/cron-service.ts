@@ -158,7 +158,9 @@ export async function runCronTickOnce(): Promise<void> {
 						})
 						.where("cron_task_execution.id", "=", execRow.id)
 						.execute();
-					log.info(`Cron task ${def.id} completed for fire ${scheduledAtIso}.`);
+					(def.quiet ? log.debug : log.info)(
+						`Cron task ${def.id} completed for fire ${scheduledAtIso}.`,
+					);
 				} catch (err) {
 					const message = err instanceof Error ? err.message : String(err);
 					log.error({ err }, `Cron task ${def.id} failed.`);
