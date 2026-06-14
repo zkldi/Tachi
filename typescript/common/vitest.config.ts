@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { configDefaults, defineConfig } from "vitest/config";
 
 export default defineConfig({
 	test: {
@@ -8,6 +8,7 @@ export default defineConfig({
 			NODE_ENV: "test",
 		},
 		exclude: [
+			...configDefaults.exclude,
 			// Compiled output - not test sources.
 			"build/**",
 		],
