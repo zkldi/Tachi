@@ -95,6 +95,17 @@ export async function setRivalsWithResult(
 	game: V3Game,
 	newRivals: Array<integer>,
 ): Promise<SetRivalsFailReasons | null> {
+	if (newRivals.length === 0) {
+		await DB.deleteFrom("game_rival")
+			.where("user_id", "=", userID)
+			.where("game", "=", game)
+			.execute();
+
+		await UpdatePlayersRivalRankings(userID, game);
+
+		return null;
+	}
+
 	if (newRivals.length > ServerConfig.MAX_RIVALS) {
 		return SetRivalsFailReasons.TOO_MANY;
 	}
