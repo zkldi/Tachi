@@ -401,10 +401,6 @@ export function StatDisplay({
 					>
 						<span className="fs-5 fw-semibold">{FormatChart(chart)}</span>
 					</Link>
-					<div className="align-items-baseline d-flex flex-wrap gap-1 justify-content-center mt-2">
-						<span className="small text-body-secondary text-uppercase">Playcount</span>
-						<span className="fs-3 fw-bold tabular-nums">{playcount}</span>
-					</div>
 				</div>
 				{pb ? (
 					<div className="overflow-x-auto px-0">
@@ -421,6 +417,10 @@ export function StatDisplay({
 				) : (
 					<p className="fst-italic mb-0 text-body-secondary">Not played</p>
 				)}
+				<div className="align-items-baseline d-flex flex-wrap gap-1 justify-content-center">
+					<span className="small text-body-secondary text-uppercase">Playcount</span>
+					<span className="fw-semibold small tabular-nums">{playcount}</span>
+				</div>
 				{compareChart && (
 					<div className="showcase-compare-block text-start">
 						<StatDelta
