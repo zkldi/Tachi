@@ -11,7 +11,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingWaccaPupaExp, TestingWaccaPupaSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
 	GetGameConfig,
+	GetScoreMetricConf,
 	type MongoProvidedMetrics,
 	type ScoreData,
 	type ScoreDocument,
@@ -166,24 +169,22 @@ describe("WACCA_IMPL", () => {
 		const mockPB = mkMockPB("wacca", chart, scoreData);
 
 		it("criteria", () => {
-			expect(WACCA_IMPL.goalCriteriaFormatters.score(908_182)).toBe(
-				"Get a score of 908,182 on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 908_182, mode: "single" }, "wacca"),
+			).toBe("Get a score of 908,182 on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.wacca;
 			const f = (
-				k: keyof typeof WACCA_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"wacca">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					WACCA_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S", score: 917_342 }, GRADES.indexOf("SS"), "(S+)-13K");
 			f("score", { score: 982_123 }, 1_000_000, "982,123");
@@ -191,8 +192,11 @@ describe("WACCA_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(WACCA_IMPL.goalOutOfFormatters.score(901_003)).toBe("901,003");
-			expect(WACCA_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig("wacca"), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(901_003)).toBe("901,003");
+			expect(scoreMetric.goalOutOfFormatter(983_132)).toBe("983,132");
 		});
 	});
 

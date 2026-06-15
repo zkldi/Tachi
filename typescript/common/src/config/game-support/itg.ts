@@ -22,6 +22,8 @@ export const GAME_ITG_STAMINA_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get ${v.toFixed(2)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The % value this score was worth. This is a number between 0 and 100. Note that negative %s, although existing in ITG, are not supported.",
 		},
@@ -34,6 +36,8 @@ export const GAME_ITG_STAMINA_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Survive ${v.toFixed(2)}% through`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"How far this user survived through the chart. For clears, this should be 100, if the user got halfway through, this should be 50, etc.",
 		},
@@ -77,6 +81,22 @@ export const GAME_ITG_STAMINA_CONF = {
 				}
 
 				return `Cleared with ${(v - 100).toFixed(2)}%`;
+			},
+			goalTitleFormatter: (v) => {
+				if (v === 100) {
+					return "CLEAR";
+				} else if (v < 100) {
+					return `Survive ${v.toFixed(2)}% through`;
+				}
+
+				return `CLEAR, and get ${(v - 100).toFixed(2)}% on`;
+			},
+			goalOutOfFormatter: (v) => {
+				if (v >= 100) {
+					return `CLEAR with ${(v - 100).toFixed(2)}%`;
+				}
+
+				return `${v.toFixed(2)}%`;
 			},
 			description:
 				"A combination of `survivedPercent` and `scorePercent`. This metric is `survivedPercent` if the player didn't clear the chart. Otherwise, it's their `scorePercent` + 100.",

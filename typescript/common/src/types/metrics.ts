@@ -18,6 +18,8 @@ import type { ConfDerivedMetrics, ConfOptionalMetrics, ConfProvidedMetrics } fro
 interface ConfDecimalScoreMetricNormal {
 	type: "DECIMAL";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 
 	validate: (v: number) => string | true;
 
@@ -28,6 +30,8 @@ interface ConfDecimalScoreMetricNormal {
 interface ConfIntegerScoreMetricNormal {
 	type: "INTEGER";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 
 	validate: (v: number) => string | true;
 
@@ -38,6 +42,8 @@ interface ConfIntegerScoreMetricNormal {
 interface ConfDecimalScoreMetricChartDependent {
 	type: "DECIMAL";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 
 	/**
 	 * Is the maximum/minimum value of this metric chart dependent?
@@ -51,6 +57,8 @@ interface ConfDecimalScoreMetricChartDependent {
 interface ConfIntegerScoreMetricChartDependent {
 	type: "INTEGER";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 
 	/**
 	 * Is the maximum/minimum value of this metric chart dependent?
@@ -64,6 +72,8 @@ interface ConfIntegerScoreMetricChartDependent {
 interface ConfDecimalScoreMetricChartDependentWithExemption {
 	type: "DECIMAL";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 	validate: (v: number) => string | true;
 
 	/**
@@ -81,6 +91,8 @@ interface ConfDecimalScoreMetricChartDependentWithExemption {
 interface ConfIntegerScoreMetricChartDependentWithExemption {
 	type: "INTEGER";
 	formatter: (v: number) => string;
+	goalTitleFormatter: (value: number) => string;
+	goalOutOfFormatter: (value: number) => string;
 	validate: (v: number) => string | true;
 
 	/**
@@ -120,6 +132,15 @@ export interface ConfEnumScoreMetric<V extends string> {
 	 * "You got 5 new fails/D ranks today!" etc.
 	 */
 	minimumRelevantValue: V;
+
+	/**
+	 * Optional custom formatter for this enum metric's value when used in goal titles.
+	 *
+	 * When absent, the raw enum string value is used directly.
+	 *
+	 * @example: ongeki's platinumStars "3-star" → "★★★☆☆"
+	 */
+	goalTitleFormatter?: (value: V) => string;
 }
 
 /**

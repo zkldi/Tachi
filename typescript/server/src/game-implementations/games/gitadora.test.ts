@@ -8,6 +8,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingGitadoraChart, TestingGitadoraSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	GITADORA_GRADES,
 	GITADORA_LAMPS,
 	type MongoProvidedMetrics,
@@ -166,23 +170,25 @@ describe.each([
 		const mockPB = mkMockPB(game, chart, scoreData);
 
 		it("criteria", () => {
-			expect(impl.goalCriteriaFormatters.percent(28.194)).toBe("Get 28.19% on");
-			expect(impl.goalCriteriaFormatters.percent(28.195)).toBe("Get 28.20% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 28.194, mode: "single" }, game),
+			).toBe("Get 28.19% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 28.195, mode: "single" }, game),
+			).toBe("Get 28.20% on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS[game];
 			const f = (
-				k: keyof typeof impl.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<typeof game>>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					impl.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("percent", { percent: 12.32 }, 30, "12.32%");
 			f("grade", { grade: "SS", percent: 98.19 }, GITADORA_GRADES.MAX, "MAX-1.81%");
@@ -190,7 +196,10 @@ describe.each([
 		});
 
 		it("outOf", () => {
-			expect(impl.goalOutOfFormatters.percent(28.194)).toBe("28.19%");
+			const percentMetric = GetScoreMetricConf(GetGameConfig(game), "percent") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(percentMetric.goalOutOfFormatter(28.194)).toBe("28.19%");
 		});
 	});
 

@@ -5,10 +5,8 @@ import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { ONGEKIRating } from "rg-stats";
-import { type ChartDocument, FmtNum, GetGrade, ONGEKI_GBOUNDARIES } from "tachi-common";
-import { FmtStars, StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { type ChartDocument, GetGrade, ONGEKI_GBOUNDARIES } from "tachi-common";
+import { StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
 const isUnranked = (chart: ChartDocument<"ongeki">) => {
 	const ig = chart.data.inGameID;
@@ -157,30 +155,6 @@ export const ONGEKI_IMPL: GameImplementation<"ongeki"> = {
 		}
 
 		return { colour: "BLUE" };
-	},
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-		platinumScore: (val: number) => `Get ${val.toLocaleString("en-GB")} Platinum Score on`,
-		platinumStars: (val: string) => `Get ${FmtStars(val as StarEnum, false)} on`,
-	},
-	goalProgressFormatters: {
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				ONGEKI_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				ONGEKI_GBOUNDARIES[gradeIndex]?.name ?? "D",
-			),
-		noteLamp: (pb) => pb.scoreData.noteLamp,
-		bellLamp: (pb) => pb.scoreData.bellLamp,
-		score: (pb) => FmtNum(pb.scoreData.score),
-		platinumScore: (pb) => FmtNum(pb.scoreData.platinumScore),
-		platinumStars: (pb) => FmtStars(pb.scoreData.platinumStars, false),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
-		platinumScore: GoalOutOfFmtScore,
-		platinumStars: (v: any) => FmtStars(v, false),
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

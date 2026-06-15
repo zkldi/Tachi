@@ -7,7 +7,16 @@ import { dmf, mkMockPB, mkMockScore } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingUSCChart, TestingUSCSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
-import { type MongoProvidedMetrics, type ScoreData, SDVX_GRADES, USC_LAMPS } from "tachi-common";
+import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
+	type MongoProvidedMetrics,
+	type ScoreData,
+	SDVX_GRADES,
+	USC_LAMPS,
+} from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
 
 const baseMetrics: MongoProvidedMetrics["usc-controller" | "usc-keyboard"] = {
@@ -176,18 +185,21 @@ describe.each([
 		const mockPB = mkMockPB(game, chart, scoreData);
 
 		it("formats score criteria", () => {
-			expect(impl.goalCriteriaFormatters.score(908_182)).toBe("Get a score of 908,182 on");
+			expect(FormatGoalCriteria({ key: "score", value: 908_182, mode: "single" }, game)).toBe(
+				"Get a score of 908,182 on",
+			);
 		});
 
 		it("formats progress for grade, score, and lamp", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS[game];
 			const f = (
-				k: keyof typeof impl.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<typeof game>>,
 				goalValue: number,
 				expected: string,
 			) =>
 				expect(
-					impl.goalProgressFormatters[k](
+					fmt[k](
 						dmf(mockPB, {
 							scoreData: modifant,
 						}) as never,
@@ -201,8 +213,11 @@ describe.each([
 		});
 
 		it("formats out-of score", () => {
-			expect(impl.goalOutOfFormatters.score(901_003)).toBe("901,003");
-			expect(impl.goalOutOfFormatters.score(983_132)).toBe("983,132");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig(game), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(901_003)).toBe("901,003");
+			expect(scoreMetric.goalOutOfFormatter(983_132)).toBe("983,132");
 		});
 	});
 

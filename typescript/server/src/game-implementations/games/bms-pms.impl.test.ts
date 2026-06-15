@@ -16,6 +16,10 @@ import {
 	type BMSGames,
 	type ChartDocument,
 	type ChartDocumentData,
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	IIDX_GRADES,
 	IIDX_LAMPS,
 	type MongoProvidedMetrics,
@@ -210,21 +214,30 @@ describe.each([
 
 	describe("goal formatters", () => {
 		it("criteria", () => {
-			expect(impl.goalCriteriaFormatters.percent(94.42123)).toBe("Get 94.42% on");
-			expect(impl.goalCriteriaFormatters.percent(94.426)).toBe("Get 94.43% on");
-			expect(impl.goalCriteriaFormatters.score(3570)).toBe("Get a score of 3570 on");
-			expect(impl.goalCriteriaFormatters.score(0)).toBe("Get a score of 0 on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 94.42123, mode: "single" }, game),
+			).toBe("Get 94.42% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 94.426, mode: "single" }, game),
+			).toBe("Get 94.43% on");
+			expect(FormatGoalCriteria({ key: "score", value: 3570, mode: "single" }, game)).toBe(
+				"Get a score of 3570 on",
+			);
+			expect(FormatGoalCriteria({ key: "score", value: 0, mode: "single" }, game)).toBe(
+				"Get a score of 0 on",
+			);
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS[game];
 			const f = (
-				k: keyof typeof impl.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<G>>,
 				goalValue: unknown,
 				expected: string,
 			) => {
 				expect(
-					impl.goalProgressFormatters[k](
+					fmt[k](
 						dmf(mockPB, {
 							scoreData: modifant,
 						}) as never,
@@ -274,8 +287,12 @@ describe.each([
 		});
 
 		it("outOf", () => {
-			expect(impl.goalOutOfFormatters.percent(94.42123)).toBe("94.42%");
-			expect(impl.goalOutOfFormatters.score(3570)).toBe("3570");
+			const gConf = GetGameConfig(game);
+			const toFmt = (m: string) =>
+				(GetScoreMetricConf(gConf, m) as { goalOutOfFormatter: (v: number) => string })
+					.goalOutOfFormatter;
+			expect(toFmt("percent")(94.42123)).toBe("94.42%");
+			expect(toFmt("score")(3570)).toBe("3570");
 		});
 	});
 

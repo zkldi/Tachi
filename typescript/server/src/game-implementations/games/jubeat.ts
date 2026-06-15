@@ -10,7 +10,6 @@ import { sql } from "kysely";
 import { p } from "prudence";
 import { Jubility } from "rg-stats";
 import {
-	FmtNum,
 	GetGrade,
 	type integer,
 	JUBEAT_GBOUNDARIES,
@@ -18,8 +17,6 @@ import {
 	type V3Game,
 	type Versions,
 } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
 
 /**
  * Best PB per (song, jubility difficulty bucket): BSC / ADV / EXT maps HARD * and normal
@@ -218,26 +215,6 @@ export const JUBEAT_IMPL: GameImplementation<"jubeat"> = {
 		}
 
 		return { colour: "BLACK" };
-	},
-	goalCriteriaFormatters: {
-		musicRate: (v) => `Get a music rate of ${v.toFixed(1)}% on`,
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		score: (pb) => FmtNum(pb.scoreData.score),
-		musicRate: (pb) => `${pb.scoreData.musicRate.toFixed(1)}%`,
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				JUBEAT_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				JUBEAT_GBOUNDARIES[gradeIndex]!.name,
-			),
-	},
-	goalOutOfFormatters: {
-		musicRate: (v) => `${v.toFixed(1)}%`,
-		score: GoalOutOfFmtScore,
 	},
 
 	// musicRate is the default prop

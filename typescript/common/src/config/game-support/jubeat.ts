@@ -36,12 +36,16 @@ export const GAME_JUBEAT_SINGLE_CONF = {
 			type: "INTEGER",
 			validate: p.isBetween(0, 1_000_000),
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get a score of ${v.toLocaleString("en-GB")} on`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description: "The score value. This is between 0 and 1 million.",
 		},
 		musicRate: {
 			type: "DECIMAL",
 			chartDependentMax: true,
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get a music rate of ${v.toFixed(1)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(1)}%`,
 			description:
 				"The music rate for this score. This is between 0 and 100 on normal difficulties, and 0 and 120 for hard-mode difficulties. This should be submitted to one decimal place.",
 		},

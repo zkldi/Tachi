@@ -4,9 +4,7 @@ import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { CuratorSkill } from "rg-stats";
-import { FmtNum, GetGrade, MUSECA_GBOUNDARIES } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { GetGrade, MUSECA_GBOUNDARIES } from "tachi-common";
 
 export const MUSECA_IMPL: GameImplementation<"museca"> = {
 	chartSpecificValidators: {},
@@ -31,23 +29,6 @@ export const MUSECA_IMPL: GameImplementation<"museca"> = {
 		curatorSkill: await ProfileSumBestN("curatorSkill", 20)(game, userID),
 	}),
 	classDerivers: (_ratings) => ({}),
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		score: (pb) => FmtNum(pb.scoreData.score),
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				MUSECA_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				MUSECA_GBOUNDARIES[gradeIndex]!.name,
-			),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
-	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(
 			"largest",

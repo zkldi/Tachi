@@ -41,6 +41,8 @@ export const GAME_GITADORA_GITA_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get ${v.toFixed(2)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The percent this score was worth. Sometimes referred to as 'Achievement Rate' in game. This is a value between 0 and 100.",
 		},

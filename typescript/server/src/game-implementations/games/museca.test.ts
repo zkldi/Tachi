@@ -8,6 +8,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingMusecaChart, TestingMusecaSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	type MongoProvidedMetrics,
 	MUSECA_GRADES,
 	MUSECA_LAMPS,
@@ -120,24 +124,22 @@ describe("MUSECA_IMPL", () => {
 		const mockPB = mkMockPB("museca", chart, scoreData);
 
 		it("formats score criteria", () => {
-			expect(MUSECA_IMPL.goalCriteriaFormatters.score(908_182)).toBe(
-				"Get a score of 908,182 on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 908_182, mode: "single" }, "museca"),
+			).toBe("Get a score of 908,182 on");
 		});
 
 		it("formats progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.museca;
 			const f = (
-				k: keyof typeof MUSECA_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"museca">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					MUSECA_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "傑", score: 997_342 }, MUSECA_GRADES.傑, "傑G-2.7K");
 			f("score", { score: 982_123 }, 1_000_000, "982,123");
@@ -145,8 +147,11 @@ describe("MUSECA_IMPL", () => {
 		});
 
 		it("formats out-of score", () => {
-			expect(MUSECA_IMPL.goalOutOfFormatters.score(901_003)).toBe("901,003");
-			expect(MUSECA_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig("museca"), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(901_003)).toBe("901,003");
+			expect(scoreMetric.goalOutOfFormatter(983_132)).toBe("983,132");
 		});
 	});
 

@@ -1,7 +1,5 @@
 import type {
 	GameImplementation,
-	GPTGoalFormatters,
-	GPTGoalProgressFormatters,
 	GPTProfileCalcs,
 	ScoreValidator,
 } from "#game-implementations/types";
@@ -13,7 +11,6 @@ import { DDRFlare } from "rg-stats";
 import {
 	type ChartDocument,
 	DDR_GBOUNDARIES,
-	FmtNum,
 	GetGameConfig,
 	GetGrade,
 	type ScoreDocument,
@@ -21,31 +18,8 @@ import {
 
 import { CreatePBMergeFor } from "../utils/pb-merge";
 import { SessionAvgBest10For } from "../utils/session-calc";
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
-
 /** `ddr:SP` / `ddr:DP` as v3 games. */
 type DDRGames = "ddr-dp" | "ddr-sp";
-
-const DDR_GOAL_FMT: GPTGoalFormatters<DDRGames> = {
-	score: GoalFmtScore,
-};
-
-const DDR_GOAL_OO_FMT: GPTGoalFormatters<DDRGames> = {
-	score: GoalOutOfFmtScore,
-};
-
-const DDR_GOAL_PG_FMT: GPTGoalProgressFormatters<DDRGames> = {
-	score: (pb) => FmtNum(pb.scoreData.score),
-	lamp: (pb) => pb.scoreData.lamp,
-	grade: (pb, gradeIndex) =>
-		GradeGoalFormatter(
-			DDR_GBOUNDARIES,
-			pb.scoreData.grade,
-			pb.scoreData.score,
-			DDR_GBOUNDARIES[gradeIndex]!.name,
-			(delta) => FmtNum(delta),
-		),
-};
 
 export const DDR_SCORE_VALIDATORS: Array<ScoreValidator<DDRGames>> = [
 	(s: ScoreDocument<DDRGames>, chart?: ChartDocument<DDRGames>) => {
@@ -313,9 +287,6 @@ export const DDR_IMPL: GameImplementation<DDRGames> = {
 		tb4: null,
 		tb5: null,
 	}),
-	goalCriteriaFormatters: DDR_GOAL_FMT,
-	goalProgressFormatters: DDR_GOAL_PG_FMT,
-	goalOutOfFormatters: DDR_GOAL_OO_FMT,
 	pbMergeFunctions: [
 		CreatePBMergeFor(
 			"largest",

@@ -1,6 +1,3 @@
-import type { GoalCriteriaFormatter } from "#game-implementations/types";
-
-import { GAME_IMPLEMENTATIONS } from "#game-implementations/game-implementations";
 import { SubscribeFailReasons } from "#lib/constants/err-codes";
 import { SELECT_GOAL, SELECT_GOAL_SUB_WITH_GOAL_GAME } from "#lib/db-formats/goal";
 import { SELECT_QUEST, SELECT_QUEST_SUB_WITH_QUEST_GAME } from "#lib/db-formats/quest";
@@ -24,6 +21,7 @@ import fjsh from "fast-json-stable-hash";
 import { sql } from "kysely";
 import {
 	FormatGame,
+	GAME_GOAL_PROGRESS_FORMATTERS,
 	GetGameConfig,
 	GetScoreMetricConf,
 	type GoalDocument,
@@ -224,10 +222,8 @@ export function HumaniseGoalProgress(
 	goalValue: integer,
 	userPB: PBScoreDocument,
 ): string {
-	const gptImpl = GAME_IMPLEMENTATIONS[game];
-
-	// @ts-expect-error yeah this might fail, i know.
-	const formatter = gptImpl.goalProgressFormatters[key];
+	const formatters = GAME_GOAL_PROGRESS_FORMATTERS[game];
+	const formatter = formatters[key];
 
 	if (!formatter) {
 		throw new Error(
@@ -235,7 +231,8 @@ export function HumaniseGoalProgress(
 		);
 	}
 
-	return formatter(userPB, goalValue);
+	// formatter is game-specific; userPB is the correct type at runtime
+	return (formatter as (pb: PBScoreDocument, goalValue: number) => string)(userPB, goalValue);
 }
 
 /**
@@ -244,7 +241,6 @@ export function HumaniseGoalProgress(
  */
 export function HumaniseGoalOutOf(v3Game: V3Game, key: GoalKeys, value: number) {
 	const gameConfig = GetGameConfig(v3Game);
-
 	const metricConf = GetScoreMetricConf(gameConfig, key);
 
 	if (!metricConf) {
@@ -253,29 +249,28 @@ export function HumaniseGoalOutOf(v3Game: V3Game, key: GoalKeys, value: number) 
 		);
 	}
 
-	const gptImpl = GAME_IMPLEMENTATIONS[v3Game];
+	if (metricConf.type === "ENUM") {
+		// ENUM metrics optionally provide a goalOutOfFormatter; fall back to the enum string.
+		const fmt = (metricConf as { goalOutOfFormatter?: (v: number) => string })
+			.goalOutOfFormatter;
 
-	// @ts-expect-error yeah this is technically unsafe, whatever
-	const fmt: GoalCriteriaFormatter | undefined = gptImpl.goalOutOfFormatters[key];
-
-	if (!fmt) {
-		if (metricConf.type === "ENUM") {
-			const val = metricConf.values[value];
-
-			if (val === undefined) {
-				throw new Error(
-					`Attempted to format outOf for metric '${key}' but no such enum exists at index ${value}. (${v3Game})`,
-				);
-			}
-
-			return val;
+		if (fmt) {
+			return fmt(value);
 		}
-		throw new Error(
-			`Invalid metric '${key}' passed to format outOf, as no goalCriteriaFormatter exists for it.`,
-		);
+
+		const val = metricConf.values[value];
+
+		if (val === undefined) {
+			throw new Error(
+				`Attempted to format outOf for metric '${key}' but no such enum exists at index ${value}. (${v3Game})`,
+			);
+		}
+
+		return val;
 	}
 
-	return fmt(value);
+	// DECIMAL and INTEGER metrics always have goalOutOfFormatter (required by type).
+	return (metricConf as { goalOutOfFormatter: (v: number) => string }).goalOutOfFormatter(value);
 }
 
 /**

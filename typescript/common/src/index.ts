@@ -9,6 +9,8 @@ export * as StaticConfig from "./constants/import-types";
 export * from "./constants/permissions";
 export * from "./lib/bmstable-load";
 export * from "./lib/folder-slug";
+export * from "./lib/goal-progress-formatters";
+export * from "./lib/goal-title";
 export * as Schemas from "./lib/schemas";
 export * from "./lib/zod-schemas";
 export * from "./seeds/types";

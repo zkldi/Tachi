@@ -6,9 +6,7 @@ import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { PopnClassPoints } from "rg-stats";
-import { FmtNum, GetGrade, POPN_GBOUNDARIES } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { GetGrade, POPN_GBOUNDARIES } from "tachi-common";
 
 export function PopnClearMedalToLamp(
 	clearMedal: GetEnumValue<"popn", "clearMedal">,
@@ -87,24 +85,6 @@ export const POPN_IMPL: GameImplementation<"popn"> = {
 		}
 
 		return { class: "GOD" };
-	},
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		score: (pb) => FmtNum(pb.scoreData.score),
-		clearMedal: (pb) => pb.scoreData.clearMedal,
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				POPN_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				POPN_GBOUNDARIES[gradeIndex]!.name,
-			),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

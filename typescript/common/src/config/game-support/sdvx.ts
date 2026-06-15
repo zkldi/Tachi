@@ -81,6 +81,8 @@ export const GAME_SDVX_CONF = {
 			type: "INTEGER",
 			validate: p.isBetween(0, 10_000_000),
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get a score of ${v.toLocaleString("en-GB")} on`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description: "The score value. This is between 0 and 10 million.",
 		},
 		lamp: {
@@ -116,6 +118,8 @@ export const GAME_SDVX_CONF = {
 			type: "INTEGER",
 			chartDependentMax: true,
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get an EX score of ${v.toLocaleString("en-GB")} in`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 
 			// We want to track the best EXScore a user gets, but it is an optional
 			// metric.
@@ -128,6 +132,8 @@ export const GAME_SDVX_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get a final gauge of ${v.toFixed(2)}% in`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description: "The amount of life in the gauge at the end of this chart.",
 		},
 	},

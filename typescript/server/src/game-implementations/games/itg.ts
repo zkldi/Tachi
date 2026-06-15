@@ -3,11 +3,8 @@ import type { GameImplementation } from "#game-implementations/types";
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBestNFor } from "#game-implementations/utils/session-calc";
-import { NumToDP } from "#utils/misc";
 import { ITGHighestUnbroken } from "rg-stats";
 import { GetGrade, ITG_GBOUNDARIES } from "tachi-common";
-
-import { GoalFmtPercent, GradeGoalFormatter } from "./_common";
 
 export const ITG_STAMINA_IMPL: GameImplementation<"itg-stamina"> = {
 	chartSpecificValidators: {},
@@ -58,58 +55,6 @@ export const ITG_STAMINA_IMPL: GameImplementation<"itg-stamina"> = {
 		return { highestBlock, fastest32 };
 	},
 	classDerivers: (_ratings) => ({}),
-	goalCriteriaFormatters: {
-		survivedPercent: (val) => `Survive ${NumToDP(val)}% through`,
-
-		// maybe this whole metric is silly. help.
-		finalPercent: (val) => {
-			if (val === 100) {
-				return "CLEAR";
-			} else if (val < 100) {
-				return `Survive ${NumToDP(val)}% through`;
-			}
-
-			return `CLEAR, and get ${NumToDP(val - 100)}% on`;
-		},
-		scorePercent: GoalFmtPercent,
-	},
-	goalProgressFormatters: {
-		lamp: (pb) => {
-			if (pb.scoreData.lamp === "FAILED") {
-				return `Died ${pb.scoreData.survivedPercent.toFixed(2)}% in`;
-			}
-
-			return pb.scoreData.lamp;
-		},
-		scorePercent: (pb) => `${pb.scoreData.scorePercent.toFixed(2)}%`,
-		survivedPercent: (pb) => `${pb.scoreData.survivedPercent.toFixed(2)}%`,
-		finalPercent: (pb) => {
-			if (pb.scoreData.finalPercent < 100) {
-				return `Died ${pb.scoreData.survivedPercent.toFixed(2)}% in`;
-			}
-
-			return `${pb.scoreData.lamp} with ${pb.scoreData.scorePercent.toFixed(2)}%`;
-		},
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				ITG_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.scorePercent,
-				ITG_GBOUNDARIES[gradeIndex]!.name,
-				(v) => `${v.toFixed(2)}%`,
-			),
-	},
-	goalOutOfFormatters: {
-		survivedPercent: (num) => `${NumToDP(num)}%`,
-		scorePercent: (num) => `${NumToDP(num)}%`,
-		finalPercent: (num) => {
-			if (num >= 100) {
-				return `CLEAR with ${NumToDP(num - 100)}%`;
-			}
-
-			return `${NumToDP(num)}%`;
-		},
-	},
 	pbMergeFunctions: [
 		// we'll pluck the best lamp, but this game has a pretty interesting concept
 		// for merging PBs. This is probably fine.

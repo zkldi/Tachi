@@ -11,6 +11,10 @@ import {
 	CHUNITHM_CLEAR_LAMPS,
 	CHUNITHM_GRADES,
 	CHUNITHM_NOTE_LAMPS,
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	type MongoProvidedMetrics,
 	type ScoreData,
 } from "tachi-common";
@@ -250,24 +254,22 @@ describe("CHUNITHM_IMPL", () => {
 		const mockPB = mkMockPB("chunithm", chart, scoreData);
 
 		it("formats criteria", () => {
-			expect(CHUNITHM_IMPL.goalCriteriaFormatters.score(1_008_182)).toBe(
-				"Get a score of 1,008,182 on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 1_008_182, mode: "single" }, "chunithm"),
+			).toBe("Get a score of 1,008,182 on");
 		});
 
 		it("formats progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.chunithm;
 			const f = (
-				k: keyof typeof CHUNITHM_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"chunithm">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					CHUNITHM_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S+", score: 997_342 }, CHUNITHM_GRADES.SS, "SS-2.7K");
 			f("score", { score: 982_123 }, 1_000_000, "982,123");
@@ -276,8 +278,12 @@ describe("CHUNITHM_IMPL", () => {
 		});
 
 		it("formats out-of", () => {
-			expect(CHUNITHM_IMPL.goalOutOfFormatters.score(1_001_003)).toBe("1,001,003");
-			expect(CHUNITHM_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
+			const gConf = GetGameConfig("chunithm");
+			const scoreMetric = GetScoreMetricConf(gConf, "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(1_001_003)).toBe("1,001,003");
+			expect(scoreMetric.goalOutOfFormatter(983_132)).toBe("983,132");
 		});
 	});
 

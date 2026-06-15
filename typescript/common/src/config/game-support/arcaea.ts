@@ -52,6 +52,8 @@ export const GAME_ARCAEA_CONF = {
 			validate: p.isPositiveInteger,
 			allowFolderGoalsIf: (v: number) => v < 10_000_000,
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get a score of ${v.toLocaleString("en-GB")} on`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description:
 				"The score value. This is between 0 and 10 million, plus bonus points dependent on how many shiny PUREs you get.",
 		},

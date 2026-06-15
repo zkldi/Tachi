@@ -5,6 +5,10 @@ import {
 	type ChartDocumentData,
 	DDR_GRADES,
 	DDR_LAMPS,
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	type integer,
 	type MongoProvidedMetrics,
 	type ScoreData,
@@ -120,19 +124,24 @@ describe("DDR_IMPL", () => {
 		const impl = DDR_IMPL;
 
 		it("criteria", () => {
-			expect(impl.goalCriteriaFormatters.score(123456)).toBe("Get a score of 123,456 on");
-			expect(impl.goalCriteriaFormatters.score(0)).toBe("Get a score of 0 on");
+			expect(
+				FormatGoalCriteria({ key: "score", value: 123456, mode: "single" }, "ddr-sp"),
+			).toBe("Get a score of 123,456 on");
+			expect(FormatGoalCriteria({ key: "score", value: 0, mode: "single" }, "ddr-sp")).toBe(
+				"Get a score of 0 on",
+			);
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS["ddr-sp"];
 			const f = (
-				k: keyof typeof impl.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"ddr-dp" | "ddr-sp">>,
 				goalValue: integer,
 				expected: string,
 			) => {
 				expect(
-					impl.goalProgressFormatters[k](
+					fmt[k](
 						mkFakePBDDRSP({
 							scoreData: modifant,
 						} as never),
@@ -158,7 +167,10 @@ describe("DDR_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(impl.goalOutOfFormatters.score(123456)).toBe("123,456");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig("ddr-sp"), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(123456)).toBe("123,456");
 		});
 	});
 });

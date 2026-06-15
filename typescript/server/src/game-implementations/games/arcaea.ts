@@ -4,9 +4,7 @@ import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { Potential } from "rg-stats";
-import { ARCAEA_GBOUNDARIES, FmtNum, GetGrade } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { ARCAEA_GBOUNDARIES, GetGrade } from "tachi-common";
 
 export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 	chartSpecificValidators: {
@@ -66,23 +64,6 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		}
 
 		return { badge: "BLUE" };
-	},
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		score: (pb) => FmtNum(pb.scoreData.score),
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				ARCAEA_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				ARCAEA_GBOUNDARIES[gradeIndex]!.name,
-			),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

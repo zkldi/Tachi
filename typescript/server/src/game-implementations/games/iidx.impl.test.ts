@@ -3,6 +3,10 @@ import { dmf, mkFakePBIIDXSP } from "#test-utils/misc";
 import { Testing511SPA, TestingIIDXSPScore } from "#test-utils/test-data";
 import {
 	type ChartDocumentData,
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	IIDX_GRADES,
 	IIDX_LAMPS,
 	type integer,
@@ -329,23 +333,34 @@ describe("IIDX_IMPL (unit)", () => {
 	});
 
 	describe("goal formatters", () => {
-		describe.each([IIDX_SP_IMPL, IIDX_DP_IMPL] as const)("impl", (impl) => {
-			it("criteria", () => {
-				expect(impl.goalCriteriaFormatters.percent(94.42123)).toBe("Get 94.42% on");
-				expect(impl.goalCriteriaFormatters.percent(94.426)).toBe("Get 94.43% on");
-				expect(impl.goalCriteriaFormatters.score(1234)).toBe("Get a score of 1234 on");
-				expect(impl.goalCriteriaFormatters.score(0)).toBe("Get a score of 0 on");
-			});
-
+		it("criteria", () => {
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 94.42123, mode: "single" }, "iidx-sp"),
+			).toBe("Get 94.42% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 94.426, mode: "single" }, "iidx-sp"),
+			).toBe("Get 94.43% on");
+			expect(
+				FormatGoalCriteria({ key: "score", value: 1234, mode: "single" }, "iidx-sp"),
+			).toBe("Get a score of 1234 on");
+			expect(FormatGoalCriteria({ key: "score", value: 0, mode: "single" }, "iidx-sp")).toBe(
+				"Get a score of 0 on",
+			);
+		});
+		describe.each([
+			[IIDX_SP_IMPL, "iidx-sp"],
+			[IIDX_DP_IMPL, "iidx-dp"],
+		] as const)("impl", (impl, game) => {
 			it("progress", () => {
+				const fmt = GAME_GOAL_PROGRESS_FORMATTERS[game];
 				const f = (
-					k: keyof typeof impl.goalProgressFormatters,
+					k: keyof typeof fmt,
 					modifant: Partial<ScoreData<"iidx-dp" | "iidx-sp">>,
 					goalValue: integer,
 					expected: string,
 				) => {
 					expect(
-						impl.goalProgressFormatters[k](
+						fmt[k](
 							mkFakePBIIDXSP({ scoreData: modifant } as never) as never,
 							goalValue,
 						),
@@ -406,8 +421,12 @@ describe("IIDX_IMPL (unit)", () => {
 			});
 
 			it("outOf", () => {
-				expect(impl.goalOutOfFormatters.percent(94.42123)).toBe("94.42%");
-				expect(impl.goalOutOfFormatters.score(1234)).toBe("1234");
+				const gConf = GetGameConfig(game);
+				const toFmt = (m: string) =>
+					(GetScoreMetricConf(gConf, m) as { goalOutOfFormatter: (v: number) => string })
+						.goalOutOfFormatter;
+				expect(toFmt("percent")(94.42123)).toBe("94.42%");
+				expect(toFmt("score")(1234)).toBe("1234");
 			});
 		});
 	});

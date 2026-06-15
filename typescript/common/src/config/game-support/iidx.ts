@@ -63,6 +63,8 @@ export const GAME_IIDX_SP_CONF = {
 			type: "INTEGER",
 			chartDependentMax: true,
 			formatter: FmtScoreNoCommas,
+			goalTitleFormatter: (v) => `Get a score of ${v} on`,
+			goalOutOfFormatter: (v) => v.toString(),
 			description:
 				"EX Score. This should be between 0 and the maximum possible EX on this chart.",
 		},
@@ -88,6 +90,8 @@ export const GAME_IIDX_SP_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get ${v.toFixed(2)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description: "EX Score divided by the maximum possible EX Score on this chart.",
 		},
 		grade: {
@@ -109,12 +113,16 @@ export const GAME_IIDX_SP_CONF = {
 			type: "INTEGER",
 			validate: p.isPositive,
 			formatter: FmtScoreNoCommas,
+			goalTitleFormatter: (v) => `Get a BP of ${v} in`,
+			goalOutOfFormatter: (v) => v.toString(),
 			description: "The total bads + poors in this score.",
 		},
 		gauge: {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get a final gauge of ${v.toFixed(2)}% in`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The life in percent (between 0 and 100) that was on the gauge at the end of the chart.",
 		},
@@ -122,6 +130,8 @@ export const GAME_IIDX_SP_CONF = {
 			type: "INTEGER",
 			validate: p.isPositive,
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get ${v} combo breaks in`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description: "The amount of times combo was broken.",
 		},
 

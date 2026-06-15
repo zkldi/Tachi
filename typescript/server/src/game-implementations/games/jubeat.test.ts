@@ -8,7 +8,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingJubeatChart, TestingJubeatSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
 	GetGameConfig,
+	GetScoreMetricConf,
 	type integer,
 	type MongoProvidedMetrics,
 	type ScoreData,
@@ -204,27 +207,25 @@ describe("JUBEAT_IMPL", () => {
 		const mockPB = mkMockPB("jubeat", chart, scoreData);
 
 		it("criteria", () => {
-			expect(JUBEAT_IMPL.goalCriteriaFormatters.score(1_008_182)).toBe(
-				"Get a score of 1,008,182 on",
-			);
-			expect(JUBEAT_IMPL.goalCriteriaFormatters.musicRate(93.1)).toBe(
-				"Get a music rate of 93.1% on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 1_008_182, mode: "single" }, "jubeat"),
+			).toBe("Get a score of 1,008,182 on");
+			expect(
+				FormatGoalCriteria({ key: "musicRate", value: 93.1, mode: "single" }, "jubeat"),
+			).toBe("Get a music rate of 93.1% on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.jubeat;
 			const f = (
-				k: keyof typeof JUBEAT_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"jubeat">>,
 				goalValue: integer,
 				expected: string,
 			) =>
-				expect(
-					JUBEAT_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S", score: 927_342 }, GRADES.indexOf("S"), "SS-23K");
 			f("score", { score: 982_123 }, 1_000_000, "982,123");
@@ -233,8 +234,12 @@ describe("JUBEAT_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(JUBEAT_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
-			expect(JUBEAT_IMPL.goalOutOfFormatters.musicRate(99.1123)).toBe("99.1%");
+			const gConf = GetGameConfig("jubeat");
+			const toFmt = (m: string) =>
+				(GetScoreMetricConf(gConf, m) as { goalOutOfFormatter: (v: number) => string })
+					.goalOutOfFormatter;
+			expect(toFmt("score")(983_132)).toBe("983,132");
+			expect(toFmt("musicRate")(99.1123)).toBe("99.1%");
 		});
 	});
 

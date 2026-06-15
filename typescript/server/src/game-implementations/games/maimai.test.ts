@@ -8,7 +8,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingMaimaiChart, TestingMaimaiSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
 	GetGameConfig,
+	GetScoreMetricConf,
 	type integer,
 	type MongoProvidedMetrics,
 	type ScoreData,
@@ -183,22 +186,22 @@ describe("MAIMAI_IMPL", () => {
 		const mockPB = mkMockPB("maimai", chart, scoreData);
 
 		it("criteria", () => {
-			expect(MAIMAI_IMPL.goalCriteriaFormatters.percent(93.14)).toBe("Get 93.14% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 93.14, mode: "single" }, "maimai"),
+			).toBe("Get 93.14% on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.maimai;
 			const f = (
-				k: keyof typeof MAIMAI_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"maimai">>,
 				goalValue: integer,
 				expected: string,
 			) =>
-				expect(
-					MAIMAI_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S", percent: 97.5 }, GRADES.indexOf("SS"), "(S+)-0.50%");
 			f("grade", { grade: "S", percent: 97.5 }, GRADES.indexOf("SSS+"), "(S+)-0.50%");
@@ -209,7 +212,10 @@ describe("MAIMAI_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(MAIMAI_IMPL.goalOutOfFormatters.percent(99.11)).toBe("99.11%");
+			const percentMetric = GetScoreMetricConf(GetGameConfig("maimai"), "percent") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(percentMetric.goalOutOfFormatter(99.11)).toBe("99.11%");
 		});
 	});
 

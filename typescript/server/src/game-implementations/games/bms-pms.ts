@@ -1,12 +1,9 @@
 import type { GameImplementation, PBMergeFunction } from "#game-implementations/types";
 
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
-import { type BMSGames, IIDXLIKE_GBOUNDARIES } from "tachi-common";
+import { type BMSGames } from "tachi-common";
 
 import {
-	GoalFmtPercent,
-	GoalOutOfFmtPercent,
-	GradeGoalFormatter,
 	IIDXLIKE_PB_RANKING_VALUES,
 	IIDXLIKE_SCORE_DERIVER,
 	IIDXLIKE_SCORE_VALIDATORS,
@@ -44,43 +41,6 @@ const BMS_IMPL: GameImplementation<BMSGames> = {
 	classDerivers: (_ratings) => ({}),
 	chartSpecificValidators: IIDXLIKE_VALIDATORS,
 	pbRankingValues: IIDXLIKE_PB_RANKING_VALUES,
-	goalCriteriaFormatters: {
-		percent: GoalFmtPercent,
-		score: (v) => `Get a score of ${v} on`,
-	},
-	goalProgressFormatters: {
-		percent: (pb) => `${pb.scoreData.percent.toFixed(2)}%`,
-
-		// 4519 -> "4519". Don't add commas or anything.
-		score: (pb) => pb.scoreData.score.toString(),
-
-		lamp: (pb) => {
-			// if bp exists
-			if (typeof pb.scoreData.optional.bp === "number") {
-				return `${pb.scoreData.lamp} (BP: ${pb.scoreData.optional.bp})`;
-			}
-
-			return pb.scoreData.lamp;
-		},
-		grade: (pb, goalValue) =>
-			GradeGoalFormatter(
-				IIDXLIKE_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.percent,
-				IIDXLIKE_GBOUNDARIES[goalValue]!.name,
-				// use notecount to turn the percent deltas into whole ex-scores.
-				(deltaPercent) => {
-					const max = Math.floor(pb.scoreData.score / (pb.scoreData.percent / 100));
-
-					return ((deltaPercent / 100) * max).toFixed(0);
-				},
-			),
-	},
-	goalOutOfFormatters: {
-		percent: GoalOutOfFmtPercent,
-		// don't insert commas or anything.
-		score: (m) => m.toString(),
-	},
 	pbMergeFunctions: BMS_PMS_MERGERS,
 	defaultMergeRefName: "Best Score",
 	scoreValidators: IIDXLIKE_SCORE_VALIDATORS,

@@ -44,6 +44,8 @@ export const GAME_POPN_CONF = {
 			type: "INTEGER",
 			validate: p.isBetween(0, 100_000),
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get a score of ${v.toLocaleString("en-GB")} on`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description: "The score value.",
 		},
 		clearMedal: {
@@ -96,6 +98,8 @@ export const GAME_POPN_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get a final gauge of ${v.toFixed(2)}% in`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The gauge value this score had at the end. This is a value between 0 and 100.",
 		},

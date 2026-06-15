@@ -2,8 +2,6 @@ import type {
 	ChartSpecificMetricValidator,
 	GPTChartSpecificMetricValidators,
 	GPTClassDerivers,
-	GPTGoalFormatters,
-	GPTGoalProgressFormatters,
 	GPTProfileCalcs,
 	GPTScoreCalcs,
 	GPTScoreDeriver,
@@ -16,15 +14,11 @@ import type {
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileAvgBestN, ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
-import { IsNullish, NumToDP } from "#utils/misc";
+import { IsNullish } from "#utils/misc";
 import { Volforce } from "rg-stats";
 import {
 	type ChartDocument,
-	FmtNum,
-	FmtNumCompact,
 	GetGrade,
-	GetGradeDeltas,
-	type GradeBoundary,
 	IIDXLikeGetGrade,
 	type integer,
 	type ScoreDocument,
@@ -203,26 +197,6 @@ export const SDVXLIKE_CLASS_DERIVERS: GPTClassDerivers<SDVXLikes> = (ratings) =>
 	vfClass: IsNullish(ratings.VF7) ? null : VF7ToClass(ratings.VF7),
 });
 
-export const SDVXLIKE_GOAL_FMT: GPTGoalFormatters<SDVXLikes> = {
-	score: GoalFmtScore,
-};
-
-export const SDVXLIKE_GOAL_OO_FMT: GPTGoalFormatters<SDVXLikes> = {
-	score: GoalOutOfFmtScore,
-};
-
-export const SDVXLIKE_GOAL_PG_FMT: GPTGoalProgressFormatters<SDVXLikes> = {
-	score: (pb) => FmtNum(pb.scoreData.score),
-	lamp: (pb) => pb.scoreData.lamp,
-	grade: (pb, goalValue) =>
-		GradeGoalFormatter(
-			SDVXLIKE_GBOUNDARIES,
-			pb.scoreData.grade,
-			pb.scoreData.score,
-			SDVXLIKE_GBOUNDARIES[goalValue]!.name,
-		),
-};
-
 export const SDVXLIKE_PB_MERGERS: Array<PBMergeFunction<SDVXLikes>> = [
 	CreatePBMergeFor<SDVXLikes>(
 		"largest",
@@ -282,59 +256,6 @@ export const SGL_SCORE_CALCS: GPTScoreCalcs<BmsPmsGames> = (scoreData, _derivedD
 			return { sieglinde: 0 };
 	}
 };
-
-export function GoalFmtPercent(val: number, dp = 2) {
-	return `Get ${NumToDP(val, dp)}% on`;
-}
-
-export function GoalFmtScore(val: number) {
-	return `Get a score of ${val.toLocaleString("en-GB")} on`;
-}
-
-export function GoalOutOfFmtPercent(val: number, dp = 2) {
-	return `${NumToDP(val, dp)}%`;
-}
-
-export function GoalOutOfFmtScore(val: number) {
-	return val.toLocaleString("en-GB");
-}
-
-/**
- * Given some grade boundaries and some values, format a grade delta for a goal.
- *
- * I.e. if the goal is to S a chart (needing 900k) and the user has 840k, return
- * S-fmtNum(60_000).
- */
-export function GradeGoalFormatter<G extends string>(
-	gradeBoundaries: Array<GradeBoundary<G>>,
-	scoreGrade: G,
-	scoreValue: number,
-	goalGrade: G,
-	formatNumFn = FmtNumCompact,
-) {
-	const { closer, lower, upper } = GetGradeDeltas(
-		gradeBoundaries,
-		scoreGrade,
-		scoreValue,
-		formatNumFn,
-	);
-
-	// if upper doesn't exist, we have to return lower (this is a MAX)
-	// or something.
-	if (!upper) {
-		return lower;
-	}
-
-	// if the upper bound is relevant to the grade we're looking for
-	// i.e. the goal is to AAA a chart and the user has AA+20/AAA-100
-	// prefer AAA-100 instead of AA+20.
-	if (new RegExp(`^\\(?${goalGrade}\\)?-`, "u").exec(upper)) {
-		return upper;
-	}
-
-	// otherwise, return whichever is closer.
-	return closer === "lower" ? lower : upper;
-}
 
 /**
  * Run all of the provided validators on the given score.

@@ -109,6 +109,8 @@ export const GAME_MAIMAI_DX_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 101),
 			formatter: (v) => FmtPercent(v, 4),
+			goalTitleFormatter: (v) => `Get ${v.toFixed(4)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(4)}%`,
 			description:
 				"The percent this score was worth. Sometimes called 'rate' in game. This is between 0 and 101.",
 		},

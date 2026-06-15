@@ -5,9 +5,6 @@ import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import {
 	SDVXLIKE_CLASS_DERIVERS,
 	SDVXLIKE_DEFAULT_MERGE_NAME,
-	SDVXLIKE_GOAL_FMT,
-	SDVXLIKE_GOAL_OO_FMT,
-	SDVXLIKE_GOAL_PG_FMT,
 	SDVXLIKE_PROFILE_CALCS,
 	SDVXLIKE_SCORE_CALCS,
 	SDVXLIKE_SCORE_DERIVER,
@@ -43,9 +40,6 @@ export const SDVX_IMPL: GameImplementation<"sdvx"> = {
 			return true;
 		},
 	},
-	goalCriteriaFormatters: SDVXLIKE_GOAL_FMT,
-	goalProgressFormatters: SDVXLIKE_GOAL_PG_FMT,
-	goalOutOfFormatters: SDVXLIKE_GOAL_OO_FMT,
 	pbMergeFunctions: [
 		CreatePBMergeFor(
 			"largest",

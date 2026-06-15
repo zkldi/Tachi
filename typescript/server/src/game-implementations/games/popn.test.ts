@@ -7,7 +7,14 @@ import { dmf, mkMockPB, mkMockScore } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingPopnChart, TestingPopnSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
-import { GetGameConfig, type MongoProvidedMetrics, type ScoreData } from "tachi-common";
+import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
+	type MongoProvidedMetrics,
+	type ScoreData,
+} from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
 
 function enumMetricValues(m: {
@@ -176,24 +183,22 @@ describe("POPN_IMPL", () => {
 		const mockPB = mkMockPB("popn", chart, scoreData);
 
 		it("criteria", () => {
-			expect(POPN_IMPL.goalCriteriaFormatters.score(908_182)).toBe(
-				"Get a score of 908,182 on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 908_182, mode: "single" }, "popn"),
+			).toBe("Get a score of 908,182 on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.popn;
 			const f = (
-				k: keyof typeof POPN_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"popn">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					POPN_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "AAA", score: 95_342 }, GRADES.indexOf("S"), "S-2.7K");
 			f("score", { score: 98_123 }, 100_000, "98,123");
@@ -201,8 +206,11 @@ describe("POPN_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(POPN_IMPL.goalOutOfFormatters.score(901_003)).toBe("901,003");
-			expect(POPN_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig("popn"), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(901_003)).toBe("901,003");
+			expect(scoreMetric.goalOutOfFormatter(983_132)).toBe("983,132");
 		});
 	});
 

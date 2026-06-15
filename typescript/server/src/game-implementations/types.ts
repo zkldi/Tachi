@@ -2,11 +2,9 @@ import type { PBScoreDocumentNoRank } from "#lib/score-import/framework/pb/creat
 import type {
 	ChartDocument,
 	ClassConfigs,
-	ConfScoreMetrics,
 	integer,
 	MongoDerivedMetrics,
 	PBReference,
-	PBScoreDocument,
 	ProfileRatingAlgorithms,
 	ScoreData,
 	ScoreDocument,
@@ -16,7 +14,7 @@ import type {
 	V3Game,
 } from "tachi-common";
 import type { DerivedClassConfig } from "tachi-common/types/game-config-utils";
-import type { AllConfMetrics, ConfEnumScoreMetric } from "tachi-common/types/metrics";
+import type { AllConfMetrics } from "tachi-common/types/metrics";
 
 /**
  * Validate this chart-specific metric. This should return a string representing an
@@ -136,48 +134,6 @@ export type PBRankingValuesFunction<TGame extends V3Game> = (
 ) => RankingValues;
 
 /**
- * Format a goal into a string. If a function is provided, it's called with this goals
- * criteria value, so a goal of "get 3600 on $CHART" would receive 3600 as its
- * argument.
- */
-export type GoalCriteriaFormatter = (num: number) => string;
-
-/**
- * After all, why not? Why shouldn't enum metrics allow formatters?
- */
-export type GoalCriteriaFormatterEnum = (str: string) => string;
-
-type GPTRequiredGoalFormatters<TGame extends V3Game> = {
-	[K in keyof ConfScoreMetrics[TGame] as ConfScoreMetrics[TGame][K] extends ConfEnumScoreMetric<any>
-		? never
-		: K]: GoalCriteriaFormatter;
-};
-
-type GPTEnumGoalFormatters<TGame extends V3Game> = {
-	[K in keyof ConfScoreMetrics[TGame] as ConfScoreMetrics[TGame][K] extends ConfEnumScoreMetric<any>
-		? K
-		: never]?: GoalCriteriaFormatterEnum;
-};
-
-export type GPTGoalFormatters<TGame extends V3Game> = GPTEnumGoalFormatters<TGame> &
-	GPTRequiredGoalFormatters<TGame>;
-
-/**
- * Given a user's PB and the value of the goal, return a string representing this
- * user's progress through this goal.
- *
- * This only applies to "single" goals, i.e. goals on a single chart.
- */
-export type GoalProgressFormatter<TGame extends V3Game> = (
-	pb: PBScoreDocument<TGame>,
-	goalValue: integer,
-) => string;
-
-export type GPTGoalProgressFormatters<TGame extends V3Game> = {
-	[K in keyof ConfScoreMetrics[TGame]]: GoalProgressFormatter<TGame>;
-};
-
-/**
  * Return nothing on success, and a string
  * indicating what the error was on failure.
  */
@@ -218,33 +174,6 @@ export interface GameImplementation<TGame extends V3Game> {
 	 * of the user's state), how should they work?
 	 */
 	classDerivers: GPTClassDerivers<TGame>;
-
-	/**
-	 * When creating a goal, how should we format the title?
-	 *
-	 * Get a score of 1234 on 5.1.1 SP ANOTHER
-	 * ^^^^^^^^^^^^^^^^^^^^^^
-	 * this bit
-	 */
-	goalCriteriaFormatters: GPTGoalFormatters<TGame>;
-
-	/**
-	 * How should we format the "outOf" part of a goal?
-	 *
-	 * HARD CLEAR/FULL COMBO
-	 *             ^^^^^^^^
-	 *              this bit
-	 */
-	goalOutOfFormatters: GPTGoalFormatters<TGame>;
-
-	/**
-	 * How should we format the progress on a goal?
-	 *
-	 * HARD CLEAR/FULL COMBO
-	 *  ^^^^^^^^
-	 *   this bit
-	 */
-	goalProgressFormatters: GPTGoalProgressFormatters<TGame>;
 
 	/**
 	 * How should we mutate PBs (to join best lamps, lowest BPs, etc.) for this GPT?

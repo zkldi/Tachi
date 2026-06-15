@@ -1,13 +1,13 @@
-import type { GoalCriteriaFormatter, GoalCriteriaFormatterEnum } from "#game-implementations/types";
-
 import { GAME_IMPLEMENTATIONS } from "#game-implementations/game-implementations";
 import { GetChartByIdForGame } from "#lib/db-formats/chart";
 import { LoadFolderDocumentById } from "#lib/db-formats/folders";
 import { GetFolderChartIDs } from "#lib/folders/folders";
 import { HumaniseChartID } from "#utils/db";
-import { HumanisedJoinArray, OnlyFloatToDP } from "#utils/misc";
+import { HumanisedJoinArray, staticAssertUnreachable } from "#utils/misc";
 import {
+	AssembleGoalTitle,
 	FormatGame,
+	FormatGoalCriteria,
 	GetGameConfig,
 	GetScoreMetricConf,
 	type GoalDocument,
@@ -19,70 +19,10 @@ export async function CreateGoalTitle(
 	criteria: GoalDocument["criteria"],
 	game: V3Game,
 ) {
-	const formattedCriteria = FormatCriteria(criteria, game);
-
+	const formattedCriteria = FormatGoalCriteria(criteria, game);
 	const datasetName = await FormatCharts(charts, criteria);
 
-	// Formatting this stuff into english is hard and excruciatingly manual.
-	switch (criteria.mode) {
-		case "single":
-			switch (charts.type) {
-				case "single":
-					return `${formattedCriteria} ${datasetName}`;
-
-				case "multi": {
-					if (charts.data.length === 2) {
-						// CLEAR either A or B
-						return `${formattedCriteria} either ${datasetName}`;
-					}
-
-					// CLEAR any of A, B or C.
-					return `${formattedCriteria} any one of ${datasetName}`;
-				}
-
-				case "folder":
-					return `${formattedCriteria} any chart in ${datasetName}`;
-			}
-
-		// Eslint can't figure out that the above switches are safely exhastive. Ah well.
-		// eslint-disable-next-line no-fallthrough
-		case "absolute":
-			switch (charts.type) {
-				case "multi": {
-					// CLEAR all of A, B and C
-					if (criteria.countNum === charts.data.length) {
-						return `${formattedCriteria} ${datasetName}`;
-					}
-
-					// CLEAR any 2 of A, B or C
-					return `${formattedCriteria} any ${criteria.countNum} of ${datasetName}`;
-				}
-
-				case "folder":
-					return `${formattedCriteria} ${criteria.countNum} charts in ${datasetName}`;
-				case "single":
-					throw new Error(
-						`Invalid goal -- absolute mode cannot be paired with a charts.type of 'single'.`,
-					);
-			}
-
-		// See above about switch exhaustivity
-		// eslint-disable-next-line no-fallthrough
-		case "proportion": {
-			const propFormat = OnlyFloatToDP(criteria.countNum * 100);
-
-			switch (charts.type) {
-				case "multi":
-					return `${formattedCriteria} ${propFormat}% of ${datasetName}`;
-				case "folder":
-					return `${formattedCriteria} ${propFormat}% of the charts in ${datasetName}`;
-				case "single":
-					throw new Error(
-						`Invalid goal -- absolute mode cannot be paired with a charts.type of 'single'.`,
-					);
-			}
-		}
-	}
+	return AssembleGoalTitle(formattedCriteria, datasetName, criteria, charts);
 }
 
 async function FormatCharts(charts: GoalDocument["charts"], criteria: GoalDocument["criteria"]) {
@@ -118,50 +58,8 @@ async function FormatCharts(charts: GoalDocument["charts"], criteria: GoalDocume
 		}
 
 		default:
-			throw new Error(
-				`Invalid goal charts.type -- got ${
-					(charts as GoalDocument["charts"]).type
-				}, which we don't support?`,
-			);
+			staticAssertUnreachable(charts);
 	}
-}
-
-function FormatCriteria<TGame extends V3Game>(
-	criteria: GoalDocument<TGame>["criteria"],
-	game: TGame,
-) {
-	const gameConfig = GetGameConfig(game);
-
-	const conf = GetScoreMetricConf(gameConfig, criteria.key);
-
-	if (!conf) {
-		throw new Error(`Invalid goal criteria with key ${criteria.key}. No config exists?`);
-	}
-
-	if (conf.type === "ENUM") {
-		const fmt: GoalCriteriaFormatterEnum | undefined =
-			// @ts-expect-error it still thinks criteria.key might be a symbol.
-			GAME_IMPLEMENTATIONS[game].goalCriteriaFormatters[criteria.key];
-		const v = conf.values[criteria.value];
-
-		if (v === undefined) {
-			throw new Error(`Invalid criteria value '${criteria.value}'.`);
-		}
-
-		return fmt ? fmt(v) : v;
-	} else if (conf.type === "DECIMAL" || conf.type === "INTEGER") {
-		const fmt: GoalCriteriaFormatter | undefined =
-			// @ts-expect-error it still thinks criteria.key might be a symbol.
-			GAME_IMPLEMENTATIONS[game].goalCriteriaFormatters[criteria.key];
-
-		if (!fmt) {
-			throw new Error(`No formatter defined for ${criteria.key}, yet one must exist?`);
-		}
-
-		return fmt(criteria.value);
-	}
-
-	throw new Error(`Cannot set a goal for ${criteria.key} as it is of type ${conf.type}.`);
 }
 
 /**
@@ -225,9 +123,7 @@ export async function ValidateGoalChartsAndCriteria(
 		}
 
 		default:
-			// @ts-expect-error Charts is stated to be never here, but if we get to this point it's
-			// effectively unknown
-			throw new Error(`Invalid goal.charts.type of ${charts.type}.`);
+			staticAssertUnreachable(charts);
 	}
 
 	// Validating criteria.mode against countNum.
@@ -315,6 +211,9 @@ export async function ValidateGoalChartsAndCriteria(
 		case "GRAPH":
 		case "NULLABLE_GRAPH":
 			throw new Error(`Cannot set a goal on ${criteria.key} as it's a graph metric.`);
+
+		default:
+			staticAssertUnreachable(config);
 	}
 
 	if (charts.type === "single" && criteria.mode !== "single") {

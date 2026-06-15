@@ -22,6 +22,8 @@ export const GAME_USC_CONTROLLER_CONF = {
 			type: "INTEGER",
 			validate: p.isBetween(0, 10_000_000),
 			formatter: FmtNum,
+			goalTitleFormatter: (v) => `Get a score of ${v.toLocaleString("en-GB")} on`,
+			goalOutOfFormatter: (v) => v.toLocaleString("en-GB"),
 			description: "The score value. This is between 0 and 10 million.",
 		},
 		lamp: {
@@ -56,6 +58,8 @@ export const GAME_USC_CONTROLLER_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get a final gauge of ${v.toFixed(2)}% in`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The amount of life in the gauge when this chart finished. This is between 0 and 100.",
 		},

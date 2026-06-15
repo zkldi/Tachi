@@ -7,8 +7,6 @@ import { IsNullish } from "#utils/misc";
 import { MaimaiRate } from "rg-stats";
 import { GetGrade, MAIMAI_GBOUNDARIES } from "tachi-common";
 
-import { GoalFmtPercent, GoalOutOfFmtPercent, GradeGoalFormatter } from "./_common";
-
 export const MAIMAI_IMPL: GameImplementation<"maimai"> = {
 	chartSpecificValidators: {
 		percent: (percent, chart) => {
@@ -74,45 +72,6 @@ export const MAIMAI_IMPL: GameImplementation<"maimai"> = {
 		}
 
 		return { colour: "WHITE" };
-	},
-	goalCriteriaFormatters: {
-		percent: GoalFmtPercent,
-	},
-	goalProgressFormatters: {
-		percent: (pb) => `${pb.scoreData.percent.toFixed(2)}%`,
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) => {
-			if (pb.scoreData.grade === "SSS+") {
-				return "SSS+";
-			}
-
-			// gradeIndex is guaranteed to be a valid rank
-
-			const goalGrade = MAIMAI_GBOUNDARIES[gradeIndex]!.name;
-
-			// Grade SSS+ is chart-dependent, and it isn't possible to get the
-			// max score/max percent from only the percent.
-			//
-			// As such, if the goal is to SSS+, we have to return the current rank+delta.
-			if (goalGrade === "SSS+" && pb.scoreData.grade === "SSS") {
-				const boundary =
-					MAIMAI_GBOUNDARIES.find((c) => c.name === "SSS")?.lowerBound ?? 100;
-				const delta = pb.scoreData.percent - boundary;
-
-				return `SSS+${delta.toFixed(2)}%`;
-			}
-
-			return GradeGoalFormatter(
-				MAIMAI_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.percent,
-				goalGrade,
-				(v) => `${v.toFixed(2)}%`,
-			);
-		},
-	},
-	goalOutOfFormatters: {
-		percent: GoalOutOfFmtPercent,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

@@ -50,6 +50,8 @@ export const GAME_PMS_CONTROLLER_CONF = {
 			type: "INTEGER",
 			chartDependentMax: true,
 			formatter: FmtScoreNoCommas,
+			goalTitleFormatter: (v) => `Get a score of ${v} on`,
+			goalOutOfFormatter: (v) => v.toString(),
 			description:
 				"EX Score. This should be between 0 and the maximum possible EX on this chart.",
 		},
@@ -87,6 +89,8 @@ export const GAME_PMS_CONTROLLER_CONF = {
 			type: "DECIMAL",
 			validate: p.isBetween(0, 100),
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get ${v.toFixed(2)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description: "EX Score divided by the maximum possible EX Score on this chart.",
 		},
 	},

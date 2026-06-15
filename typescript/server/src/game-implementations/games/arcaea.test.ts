@@ -18,6 +18,10 @@ import {
 	ARCAEA_GRADES,
 	ARCAEA_LAMPS,
 	type ChartDocument,
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	type MongoProvidedMetrics,
 	type ScoreData,
 	type ScoreDocument,
@@ -158,24 +162,22 @@ describe("ARCAEA_IMPL", () => {
 		const mockPB = mkMockPB("arcaea", chart, scoreData);
 
 		it("formats score criteria", () => {
-			expect(ARCAEA_IMPL.goalCriteriaFormatters.score(10_002_221)).toBe(
-				"Get a score of 10,002,221 on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 10_002_221, mode: "single" }, "arcaea"),
+			).toBe("Get a score of 10,002,221 on");
 		});
 
 		it("formats progress for grade, score, and lamp", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.arcaea;
 			const f = (
-				k: keyof typeof ARCAEA_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"arcaea">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					ARCAEA_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "EX", score: 9_897_342 }, ARCAEA_GRADES.EX_PLUS, "(EX+)-2.7K");
 			f("score", { score: 9_982_123 }, 10_000_000, "9,982,123");
@@ -183,8 +185,11 @@ describe("ARCAEA_IMPL", () => {
 		});
 
 		it("formats out-of score", () => {
-			expect(ARCAEA_IMPL.goalOutOfFormatters.score(10_001_003)).toBe("10,001,003");
-			expect(ARCAEA_IMPL.goalOutOfFormatters.score(9_983_132)).toBe("9,983,132");
+			const scoreMetric = GetScoreMetricConf(GetGameConfig("arcaea"), "score") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(scoreMetric.goalOutOfFormatter(10_001_003)).toBe("10,001,003");
+			expect(scoreMetric.goalOutOfFormatter(9_983_132)).toBe("9,983,132");
 		});
 	});
 

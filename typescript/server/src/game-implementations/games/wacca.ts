@@ -5,9 +5,7 @@ import { ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { WACCARate } from "rg-stats";
-import { FmtNum, GetGrade, WACCA_GBOUNDARIES } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { GetGrade, WACCA_GBOUNDARIES } from "tachi-common";
 
 export const WACCA_IMPL: GameImplementation<"wacca"> = {
 	chartSpecificValidators: {},
@@ -57,23 +55,6 @@ export const WACCA_IMPL: GameImplementation<"wacca"> = {
 		}
 
 		return { colour: "ASH" };
-	},
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		score: (pb) => FmtNum(pb.scoreData.score),
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				WACCA_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				WACCA_GBOUNDARIES[gradeIndex]!.name,
-			),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

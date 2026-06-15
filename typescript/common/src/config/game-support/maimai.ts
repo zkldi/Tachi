@@ -66,6 +66,8 @@ export const GAME_MAIMAI_CONF = {
 			allowFolderGoalsIf: (v) => v >= 0 && v < 100.0,
 			validate: p.isPositive,
 			formatter: FmtPercent,
+			goalTitleFormatter: (v) => `Get ${v.toFixed(2)}% on`,
+			goalOutOfFormatter: (v) => `${v.toFixed(2)}%`,
 			description:
 				"The percent this score was worth. Sometimes called 'rate' in game. This is upper-bounded by how many BREAK notes the chart has.",
 		},

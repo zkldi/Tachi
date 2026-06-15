@@ -1,7 +1,5 @@
 import type {
 	GameImplementation,
-	GPTGoalFormatters,
-	GPTGoalProgressFormatters,
 	GPTProfileCalcs,
 	GPTSessionCalcs,
 	PBMergeFunction,
@@ -11,12 +9,8 @@ import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { PoyashiBPI } from "rg-stats";
-import { IIDXLIKE_GBOUNDARIES } from "tachi-common";
 
 import {
-	GoalFmtPercent,
-	GoalOutOfFmtPercent,
-	GradeGoalFormatter,
 	IIDXLIKE_PB_RANKING_VALUES,
 	IIDXLIKE_SCORE_DERIVER,
 	IIDXLIKE_SCORE_VALIDATORS,
@@ -63,51 +57,6 @@ const IIDX_MERGERS: Array<PBMergeFunction<IIDXGames>> = [
 		base.scoreData.optional.bp = bp.scoreData.optional.bp;
 	}),
 ];
-
-const IIDX_GOAL_FMT: GPTGoalFormatters<IIDXGames> = {
-	percent: GoalFmtPercent,
-
-	// don't want commas
-	score: (v) => `Get a score of ${v} on`,
-};
-
-const IIDX_GOAL_OO_FMT: GPTGoalFormatters<IIDXGames> = {
-	percent: GoalOutOfFmtPercent,
-	// don't insert commas or anything.
-	score: (m) => m.toString(),
-};
-
-const IIDX_GOAL_PG_FMT: GPTGoalProgressFormatters<IIDXGames> = {
-	percent: (pb) => `${pb.scoreData.percent.toFixed(2)}%`,
-
-	// 4519 -> "4519". Don't add commas or anything.
-	score: (pb) => pb.scoreData.score.toString(),
-
-	lamp: (pb) => {
-		// if bp exists
-		if (typeof pb.scoreData.optional.bp === "number") {
-			return `${pb.scoreData.lamp} (BP: ${pb.scoreData.optional.bp})`;
-		}
-
-		return pb.scoreData.lamp;
-	},
-	grade: (pb, gradeIndex) =>
-		GradeGoalFormatter(
-			IIDXLIKE_GBOUNDARIES,
-			pb.scoreData.grade,
-			pb.scoreData.percent,
-			IIDXLIKE_GBOUNDARIES[gradeIndex]!.name,
-
-			// use notecount to turn the percent deltas into whole ex-scores.
-			(deltaPercent) => {
-				const max = Math.floor(pb.scoreData.score / (pb.scoreData.percent / 100));
-
-				const v = (deltaPercent / 100) * max;
-
-				return Math.round(v).toFixed(0);
-			},
-		),
-};
 
 export const IIDX_SP_IMPL: GameImplementation<"iidx-sp"> = {
 	scoreDeriver: IIDXLIKE_SCORE_DERIVER,
@@ -172,9 +121,6 @@ export const IIDX_SP_IMPL: GameImplementation<"iidx-sp"> = {
 	sessionCalcs: IIDX_SESSION_CALCS,
 	profileCalcs: IIDX_PROFILE_CALCS,
 	classDerivers: (_ratings) => ({}),
-	goalCriteriaFormatters: IIDX_GOAL_FMT,
-	goalProgressFormatters: IIDX_GOAL_PG_FMT,
-	goalOutOfFormatters: IIDX_GOAL_OO_FMT,
 	pbMergeFunctions: IIDX_MERGERS,
 	defaultMergeRefName: "Best Score",
 	scoreValidators: IIDXLIKE_SCORE_VALIDATORS,
@@ -244,9 +190,6 @@ export const IIDX_DP_IMPL: GameImplementation<"iidx-dp"> = {
 	sessionCalcs: IIDX_SESSION_CALCS,
 	profileCalcs: IIDX_PROFILE_CALCS,
 	classDerivers: (_ratings) => ({}),
-	goalCriteriaFormatters: IIDX_GOAL_FMT,
-	goalProgressFormatters: IIDX_GOAL_PG_FMT,
-	goalOutOfFormatters: IIDX_GOAL_OO_FMT,
 	pbMergeFunctions: IIDX_MERGERS,
 	defaultMergeRefName: "Best Score",
 	scoreValidators: IIDXLIKE_SCORE_VALIDATORS,

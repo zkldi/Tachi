@@ -7,7 +7,14 @@ import { dmf, mkMockPB, mkMockScore } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingMaimaiDXChart, TestingMaimaiDXSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
-import { GetGameConfig, type MongoProvidedMetrics, type ScoreData } from "tachi-common";
+import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
+	type MongoProvidedMetrics,
+	type ScoreData,
+} from "tachi-common";
 import { beforeEach, describe, expect, it } from "vitest";
 
 function enumMetricValues(m: {
@@ -165,22 +172,22 @@ describe("MAIMAIDX_IMPL", () => {
 		const mockPB = mkMockPB("maimaidx", chart, scoreData);
 
 		it("criteria", () => {
-			expect(MAIMAIDX_IMPL.goalCriteriaFormatters.percent(93.1415)).toBe("Get 93.1415% on");
+			expect(
+				FormatGoalCriteria({ key: "percent", value: 93.1415, mode: "single" }, "maimaidx"),
+			).toBe("Get 93.1415% on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.maimaidx;
 			const f = (
-				k: keyof typeof MAIMAIDX_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"maimaidx">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					MAIMAIDX_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S", percent: 97.5 }, GRADES.indexOf("SS"), "(S+)-0.5000%");
 			f("percent", { percent: 98.23 }, 1_000_000, "98.2300%");
@@ -188,7 +195,10 @@ describe("MAIMAIDX_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(MAIMAIDX_IMPL.goalOutOfFormatters.percent(99.1123)).toBe("99.1123%");
+			const percentMetric = GetScoreMetricConf(GetGameConfig("maimaidx"), "percent") as {
+				goalOutOfFormatter: (v: number) => string;
+			};
+			expect(percentMetric.goalOutOfFormatter(99.1123)).toBe("99.1123%");
 		});
 	});
 

@@ -7,8 +7,6 @@ import { IsNullish } from "#utils/misc";
 import { MaimaiDXRate } from "rg-stats";
 import { GetGrade, MAIMAIDX_GBOUNDARIES } from "tachi-common";
 
-import { GoalFmtPercent, GoalOutOfFmtPercent, GradeGoalFormatter } from "./_common";
-
 export const MAIMAIDX_IMPL: GameImplementation<"maimaidx"> = {
 	chartSpecificValidators: {},
 	scoreDeriver: (scoreData, _chart) => ({
@@ -79,24 +77,6 @@ export const MAIMAIDX_IMPL: GameImplementation<"maimaidx"> = {
 		}
 
 		return { colour: "WHITE" };
-	},
-	goalCriteriaFormatters: {
-		percent: (v) => GoalFmtPercent(v, 4),
-	},
-	goalProgressFormatters: {
-		percent: (pb) => `${pb.scoreData.percent.toFixed(4)}%`,
-		lamp: (pb) => pb.scoreData.lamp,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				MAIMAIDX_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.percent,
-				MAIMAIDX_GBOUNDARIES[gradeIndex]!.name,
-				(v) => `${v.toFixed(4)}%`,
-			),
-	},
-	goalOutOfFormatters: {
-		percent: (v) => GoalOutOfFmtPercent(v, 4),
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

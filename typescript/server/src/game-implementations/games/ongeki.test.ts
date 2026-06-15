@@ -8,6 +8,10 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { TestingOngekiChart, TestingOngekiScorePB, TestingOngekiSong } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
 import {
+	FormatGoalCriteria,
+	GAME_GOAL_PROGRESS_FORMATTERS,
+	GetGameConfig,
+	GetScoreMetricConf,
 	type MongoProvidedMetrics,
 	ONGEKI_BELL_LAMPS,
 	ONGEKI_GRADES,
@@ -302,30 +306,29 @@ describe("ONGEKI_IMPL", () => {
 		const mockPB = mkMockPB("ongeki", chart, scoreData);
 
 		it("criteria", () => {
-			expect(ONGEKI_IMPL.goalCriteriaFormatters.score(1_008_182)).toBe(
-				"Get a score of 1,008,182 on",
-			);
-			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumScore(1500)).toBe(
-				"Get 1,500 Platinum Score on",
-			);
-			expect(ONGEKI_IMPL.goalCriteriaFormatters.platinumStars!("3-star")).toBe(
-				"Get ★★★☆☆ on",
-			);
+			expect(
+				FormatGoalCriteria({ key: "score", value: 1_008_182, mode: "single" }, "ongeki"),
+			).toBe("Get a score of 1,008,182 on");
+			expect(
+				FormatGoalCriteria({ key: "platinumScore", value: 1500, mode: "single" }, "ongeki"),
+			).toBe("Get 1,500 Platinum Score on");
+			// "3-star" is at index 3 in the platinumStars enum values
+			expect(
+				FormatGoalCriteria({ key: "platinumStars", value: 3, mode: "single" }, "ongeki"),
+			).toBe("Get ★★★☆☆ on");
 		});
 
 		it("progress", () => {
+			const fmt = GAME_GOAL_PROGRESS_FORMATTERS.ongeki;
 			const f = (
-				k: keyof typeof ONGEKI_IMPL.goalProgressFormatters,
+				k: keyof typeof fmt,
 				modifant: Partial<ScoreData<"ongeki">>,
 				goalValue: number,
 				expected: string,
 			) =>
-				expect(
-					ONGEKI_IMPL.goalProgressFormatters[k](
-						dmf(mockPB, { scoreData: modifant }) as never,
-						goalValue,
-					),
-				).toBe(expected);
+				expect(fmt[k](dmf(mockPB, { scoreData: modifant }) as never, goalValue)).toBe(
+					expected,
+				);
 
 			f("grade", { grade: "S", score: 987_342 }, ONGEKI_GRADES.S, "SS-2.7K");
 			f("noteLamp", { noteLamp: "CLEAR" }, ONGEKI_NOTE_LAMPS.CLEAR, "CLEAR");
@@ -335,9 +338,13 @@ describe("ONGEKI_IMPL", () => {
 		});
 
 		it("outOf", () => {
-			expect(ONGEKI_IMPL.goalOutOfFormatters.score(1_001_003)).toBe("1,001,003");
-			expect(ONGEKI_IMPL.goalOutOfFormatters.score(983_132)).toBe("983,132");
-			expect(ONGEKI_IMPL.goalOutOfFormatters.platinumScore(1234)).toBe("1,234");
+			const gConf = GetGameConfig("ongeki");
+			const toFmt = (m: string) =>
+				(GetScoreMetricConf(gConf, m) as { goalOutOfFormatter: (v: number) => string })
+					.goalOutOfFormatter;
+			expect(toFmt("score")(1_001_003)).toBe("1,001,003");
+			expect(toFmt("score")(983_132)).toBe("983,132");
+			expect(toFmt("platinumScore")(1234)).toBe("1,234");
 		});
 	});
 

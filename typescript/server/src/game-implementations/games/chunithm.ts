@@ -5,9 +5,7 @@ import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { CHUNITHMRating } from "rg-stats";
-import { CHUNITHM_GBOUNDARIES, FmtNum, GetGrade } from "tachi-common";
-
-import { GoalFmtScore, GoalOutOfFmtScore, GradeGoalFormatter } from "./_common";
+import { CHUNITHM_GBOUNDARIES, GetGrade } from "tachi-common";
 
 export const CHUNITHM_IMPL: GameImplementation<"chunithm"> = {
 	chartSpecificValidators: {},
@@ -75,24 +73,6 @@ export const CHUNITHM_IMPL: GameImplementation<"chunithm"> = {
 		}
 
 		return { colour: "BLUE" };
-	},
-	goalCriteriaFormatters: {
-		score: GoalFmtScore,
-	},
-	goalProgressFormatters: {
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				CHUNITHM_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.score,
-				CHUNITHM_GBOUNDARIES[gradeIndex]!.name,
-			),
-		noteLamp: (pb) => pb.scoreData.noteLamp,
-		clearLamp: (pb) => pb.scoreData.clearLamp,
-		score: (pb) => FmtNum(pb.scoreData.score),
-	},
-	goalOutOfFormatters: {
-		score: GoalOutOfFmtScore,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(

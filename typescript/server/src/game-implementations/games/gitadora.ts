@@ -6,8 +6,6 @@ import { IsNullish } from "#utils/misc";
 import { GITADORASkill } from "rg-stats";
 import { GetGrade, GITADORA_GBOUNDARIES } from "tachi-common";
 
-import { GoalFmtPercent, GoalOutOfFmtPercent, GradeGoalFormatter } from "./_common";
-
 const GITADORA_IMPL: GameImplementation<"gitadora-dora" | "gitadora-gita"> = {
 	chartSpecificValidators: {},
 	scoreDeriver: (scoreData, _chart) => ({
@@ -72,24 +70,6 @@ const GITADORA_IMPL: GameImplementation<"gitadora-dora" | "gitadora-gita"> = {
 		}
 
 		return { colour: "WHITE" };
-	},
-	goalCriteriaFormatters: {
-		percent: GoalFmtPercent,
-	},
-	goalProgressFormatters: {
-		lamp: (pb) => pb.scoreData.lamp,
-		percent: (pb) => `${pb.scoreData.percent.toFixed(2)}%`,
-		grade: (pb, gradeIndex) =>
-			GradeGoalFormatter(
-				GITADORA_GBOUNDARIES,
-				pb.scoreData.grade,
-				pb.scoreData.percent,
-				GITADORA_GBOUNDARIES[gradeIndex]!.name,
-				(v) => `${v.toFixed(2)}%`,
-			),
-	},
-	goalOutOfFormatters: {
-		percent: GoalOutOfFmtPercent,
 	},
 	pbMergeFunctions: [
 		CreatePBMergeFor(
