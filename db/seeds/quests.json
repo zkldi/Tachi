@@ -1322,5 +1322,947 @@
 			}
 		],
 		"questID": "f8af13364de96af3703d2839a4edb2be9b92f378"
+	},
+	{
+		"desc": "Beginning of a journey! Goals suitable for players between 10 and 12 rating.",
+		"game": "chunithm",
+		"name": "Purple Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "Explore the game and have fun.",
+				"goals": [
+					{
+						"goalID": "Ge3f657a264d01c3482f81ac848ddeda68f64af999601f1a92a9e0d819bc798f1",
+						"note": "Play some easy MASTER charts!"
+					},
+					{
+						"goalID": "Gdeaa19b125c7318ab25dd52a8d54e3640dbcf0d6908b28122d8d08b0cb6a0c6e",
+						"note": "SS is a good overall goal for charts at your level."
+					},
+					{
+						"goalID": "G9c2e7bae29679546bfd66bf9c4ecaf8ce3611caf9e9779af89105caa3f4e6766",
+						"note": "Play some harder charts!"
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Learn the principles of CHUNITHM.",
+				"goals": [
+					{
+						"goalID": "G0e3a917c0c832970d4a44026fbdf3c0e8d3668966d388cd762f60d65c22d29ff",
+						"note": "ALL JUSTICE?? Well... start from something really easy!"
+					},
+					{
+						"goalID": "G5356e36f74cbb18d530145e0524cf1b3fc53630c6525aa307db1e86a6e213083",
+						"note": "Pick some lower difficulties for this challenge."
+					},
+					{
+						"goalID": "G80de42ec6be6778920407587e1724e042d0a0ee3f9876b1c4e6894fdcf81695c",
+						"note": "SSS is a tough goal, so practice on some simple EXPERT charts."
+					}
+				]
+			}
+		],
+		"questID": "795a2227c2ea485a90b5060c4c0738ed0ee8a7522731882ff9bc2d05b1594fd0"
+	},
+	{
+		"desc": "Getting hooked! Goals suitable for players between 12 and 13.25 rating. Try to clear any CLASS I Course.",
+		"game": "chunithm",
+		"name": "Bronze Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "Play some fun stuff.",
+				"goals": [
+					{
+						"goalID": "G0af3d204e2de60416bd544e56fe556cf53f3662b7d1ba26463d8675aef98f761",
+						"note": "Explore more of the MASTER folder."
+					},
+					{
+						"goalID": "Gbc31464901161fe6aaad9b44ccfe11bb710d6191f8fb37f50418bf59a77fb6b6",
+						"note": "Tip: EXPERT charts are usually simpler to score on."
+					},
+					{
+						"goalID": "G324a358e67d239a8a7c2cc87d5c85fdb8a7fcef9218d1e9d0e93811688ea462b",
+						"note": "Try pushing your limits within reasonable bounds!"
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Highscoring is the vital part of this game.",
+				"goals": [
+					{
+						"goalID": "Gfdf21e5d1c4557877933f3b09bb79939d8e6e40d7abe581739a22970fb06d1b8",
+						"note": "AJ on an EXPERT chart can be already quite demanding. Pick an easy one!"
+					},
+					{
+						"goalID": "Gcb638d4bad9486a7d1cb5ffeae0963e2adddac841536e92ed267965799a1f493",
+						"note": "Getting SSS ranks is a vital part of the game."
+					},
+					{
+						"goalID": "Gcd7335d742806edc62678e1264fe32b082cf20c5197c399ea7e5911eed635960",
+						"note": "Keep playing those MASTER difficulties."
+					},
+					{
+						"goalID": "G415ab53b0128fcc18c8e03cf0936311e57364802f69e9217cd56e5b33aa2df97",
+						"note": "Hone your skills on some simpler EXPERT charts."
+					}
+				]
+			}
+		],
+		"questID": "1500e64346b0a0e640d64c71e002ea930d0b4d74811d8e050bf3848d92f8a42e"
+	},
+	{
+		"desc": "Getting comfortable! Goals suitable for players between 13.25 and 14.50 rating. Try to clear any CLASS II Course and get CLASS I Emblem.",
+		"game": "chunithm",
+		"name": "Silver Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "Some real push starts here.",
+				"goals": [
+					{
+						"goalID": "G824528f9134591a5e9c92296ed06038767a2a523479b81b01b21af9ce04b570b",
+						"note": "Play more charts!"
+					},
+					{
+						"goalID": "G1d6a10d894a388ab2b10a7885573c871af31ee5fd63fec504109ab16477f1c32",
+						"note": "13s are when charting gets quite complex. Don't give up!"
+					},
+					{
+						"goalID": "G4c6e95b721936c906cf4e6b2b55994113caaeaed41ac2a74feb3d8ba20abf10b",
+						"note": "Explore some 14s. Test your limits!"
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Goals towards building up your rating.",
+				"goals": [
+					{
+						"goalID": "G177364e4e846cd3d4707c24c6f8ed481d24696bd6b84d1fa0e841e65d110360c",
+						"note": "This will be a tough challenge. You can do it!"
+					},
+					{
+						"goalID": "G395790f40f7d8f92e250601473f5a3025868394eaf2a39b862b6551c80f00842",
+						"note": "You need to be careful with your movements when aiming for SSS."
+					},
+					{
+						"goalID": "G53cde09cca3a4025d4af3c8a03f467e751f91eacb71800891b0757d488ef7b92",
+						"note": "MASTERs are more and more manageable now."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 24 charts, minimum 6 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G018d1a24c861c8bc12f9ad282f7a05bd9f64984ad21faa1b74b1e9421217c107",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "Gd0c96995f09dd6e0e746c0ed49fc51ff4d6fde3368003e28181875cdceaadb72",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "Gb7a57778aa058c61f0dfb6d6b462afd29d465c4be66cfb50e751cae58d60afa4",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G825e5d4f5e0240ed9e252154c8898b932d2c54be0939798ad87397cac6c0fe11",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "Gb8926732135e281c62ae6f5b8651341c67a30b9f7bacb9a4b17fda79e6ad0d79",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "6e3bc4ec140e7da03c95271a18fd912249a7404834d810de621bc141fc26295e"
+	},
+	{
+		"desc": "You're already pretty good! Goals suitable for players between 14.50 and 15.25 rating. Try to clear any CLASS III Course and get CLASS II Emblem.",
+		"game": "chunithm",
+		"name": "Gold Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "You're discovering the harder content this game has to offer.",
+				"goals": [
+					{
+						"goalID": "Gb3ac771f55ebf77fed1bc4e9b765755500fb009cf845793be7f83a38e290e70d",
+						"note": "You've seen a decent amount of MASTER charts by now. Keep going!"
+					},
+					{
+						"goalID": "Gb38a1eb4473d19b036dcc55d44495f3f70ada18c0b0af9dc824eb09cee865e1b",
+						"note": "A great way to get rating. 13s are not easy though!"
+					},
+					{
+						"goalID": "Gac2ede85fa95ab99b718e6e1bf9a638c25c8eb2aa2e6554e419dc8914bc1d2d9",
+						"note": "Some of the easier 13+s should be already in your range."
+					},
+					{
+						"goalID": "G56523b5e25da394ff7c92ecdbd5d0b63f488cc3330376150c82d9cb975ac895a",
+						"note": "It's time to get more comfy in the 14 folder. Don't mash!"
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Developing your fundamentals is key in understanding the patterns.",
+				"goals": [
+					{
+						"goalID": "G65383b20eb86dbb7568d5097578512404b9fba9491015d7dfc3ca2aaceafb240",
+						"note": "The revered \"99 AJ\". This will be a good JUSTICE accuracy test."
+					},
+					{
+						"goalID": "Gd704fcbe1ff0c1abb8dd01984bbc25ee762505bdb0eceade1f3675f131a5bfec",
+						"note": "There are some simple MASTER charts for this goal."
+					},
+					{
+						"goalID": "Gaebd02e3c0cde9d437fb518434c4a484c1bfcbd9c2e3fae0032eb52e4312b403",
+						"note": "SSSing charts should become a habit."
+					},
+					{
+						"goalID": "Gfad6eddca4cbf9650a39029201bae83047ec8fe89227ad6c423a515eafcbdef5",
+						"note": "Chances are you get this goal while trying to farm rating."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 24 charts, minimum 6 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G57a360e1e5fd2c1148f712a8e46cd6777696e19e30a537fc16e8777a36c5ad33",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "Gddc5785096838e2f1295079bc1362706a84d0a0f316d6872b9c7f85e7b7f3b90",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "G2dbcbfcbc2b041fd040c60db77238179a37db9e71b9a5351a80fdd64d3310dfe",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G1339ebee91ea7cc88c16cfe0c0de6194ac874133e1408e735659cf7fc1e3431d",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "G967c5bff124171d0ce10c9a1ec5bc3d6d6ef8c1fcc797d81d69afc78cd0b296b",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "d59e71097afc86cba56f59b7452dcfd349cdb1494a8a3fab6d882f5c26298791"
+	},
+	{
+		"desc": "Push for Rainbow rating! Goals suitable for players between 15.25 and 16.00 rating. Try to clear any CLASS IV Course and get CLASS III Emblem.",
+		"game": "chunithm",
+		"name": "Platinum Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "Discover the possibilities of this game.",
+				"goals": [
+					{
+						"goalID": "Gb024a004d41e0fadf92f1612cee71d4206e4fbab3e326076f5a82e126cdc57ea",
+						"note": "Play a diversity of charts!"
+					},
+					{
+						"goalID": "G4f04fff5fa63383cf064106bf6313a843a5b128e7fc735830be4c610c3d8e722",
+						"note": "You're starting to approach rainbow!"
+					},
+					{
+						"goalID": "Gac2ede85fa95ab99b718e6e1bf9a638c25c8eb2aa2e6554e419dc8914bc1d2d9",
+						"note": "Chances are, you can already play some 14 decently well."
+					},
+					{
+						"goalID": "G3bd17845ef60162738d420a698159af22c9fc6d881c461a896951be8ed2621dc",
+						"note": "Pushing 14s is a good way to progress."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Apply the knowledge you learned to harder charts.",
+				"goals": [
+					{
+						"goalID": "G36370a64fde2d680a32d5ef68d39fc8b6472a279147ecd269351052892ba2e7c",
+						"note": "Doing it on EXPERT was much simpler."
+					},
+					{
+						"goalID": "Ga16ba2789fe9a0d5f443fb6c955b1ce6f3934931c7c4423bdd28bdb93593d326",
+						"note": "ALL JUSTICEs are more possible than you think!"
+					},
+					{
+						"goalID": "Gee7402e310131271a758bb6836392d69659c79af8d6e5e1bc2c9165a52ddb4dd",
+						"note": "SSS is the best way to get rating."
+					},
+					{
+						"goalID": "G64bece95f9584d1b43bec887506ad231f9b030feb53c9bb4d39e57865f27c71c",
+						"note": "You should get this goal quickly with just playing the game."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 24 charts, minimum 6 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "Ga713de663cc3d8d6d5691141fc0b94e8559935da6b4cca48ec48b66821f608f5",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "Gdb6b54cf9d99736f72deaf5bb24096eeee1281051f562c778c246b3b0c3bd38a",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "G2ec06513d23492e682eb931b3a63f0f7a7c602a0458d8b012072eecab1c810c6",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G87258f5622ea33d28307115a4d841814f30952cf555a8c0975f3bbf2480b0881",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "G59363c3d96f07846c6b99029d0dd751682e2acc53bc2d53bbb44263baa44a36a",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "fb3318f66aa0833a4cfa69cbbbae7cf9e0a4ae9e4305cbbd18eaff8adacc6197"
+	},
+	{
+		"desc": "Rainbow rating! The climb starts now. Goals suitable for players between 16.00 and 16.25 rating. Try to clear any CLASS IV Course and get CLASS III Emblem.",
+		"game": "chunithm",
+		"name": "Rainbow I Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "The completion goals have been moved to Overpower now. Additionally, try to achieve 10 scores worth 16.25 rating, and 30 scores worth 16.10 rating.",
+				"goals": [
+					{
+						"goalID": "Ga6c55eac61256cf16aa604afcdc57efd009ca80fa1dbb03af95b9b3d6abd0d75",
+						"note": "This is worth at least 16.50 rating. Good luck!"
+					},
+					{
+						"goalID": "G4009ce043c5a7a6d22829c54f45928decc8497a6b60c48d971a9cd982e37a73d",
+						"note": "Time to start playing 14+ seriously."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "You will be aiming for SSS a lot more often now.",
+				"goals": [
+					{
+						"goalID": "Ga34b65af7b1f341cfa2bf5d080fa6f98ad9b4bb708d7c4e6a4461428ed33c6dd",
+						"note": "That's right. Get a max score on a chart. On something simple."
+					},
+					{
+						"goalID": "G6612b4230ec1c8d0052963c0a5b18e3df0db850867852d8776b41af9217cdc8d",
+						"note": "Start collecting those AJs."
+					},
+					{
+						"goalID": "G374f810ebb3a82106f23182f75e204c5d71f6de04806363dffaca2c1cd3e2f7e",
+						"note": "Controlling your JUSTICE counts is a great way to improve control."
+					},
+					{
+						"goalID": "G43d55c8a99beeaae9daceddc03c8c7853701b7b3396b1e100e95661214793f3b",
+						"note": "This looks hard, but is the only way you can gain rating now."
+					},
+					{
+						"goalID": "G03ae162bd576661ac97999c2c050924805bb2b396c1f34a0ee4a83d8c2320b22",
+						"note": "You should be able to perform well on many 14s by now."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Game completion. Discover new charts!",
+				"goals": [
+					{
+						"goalID": "Gdec27a009d9cfea59fb26e9c25cd4287e9e1f712beebae7df3fa82bfd8cf21a7",
+						"note": "Starting the road to possession, one step at a time."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 20 charts, minimum 5 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G98245a655169ece4c7e88b9ba7c40ea427fd6f89efa50c8eaf680a00a2deece2",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "G094475fc2be7b58a93a69f0f52130ebaea26c48c7b87032f229a4b562efec7d7",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "Gb9f239c89128edb051726539238f88747663b87d5fd3ec860c342d50e85b8f33",
+						"note": "Tech"
+					},
+					{
+						"goalID": "Gd561ffed6baf97f11d3faf8c5fc761b92b333fc9a4218972641072b87e1a7367",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "G887502a8e3024a969a486b7be8cfd5614745161d1f5e4b4353930d47163ec2f4",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "2a956bb1d1e0aae1a63d7e1f7c1c597527b064d6242ec6834238a1f0f6afe339"
+	},
+	{
+		"desc": "You're an established Rainbow player, but can you aim higher? Goals suitable for players between 16.25 and 16.50 rating. Try to get CLASS IV Emblem.",
+		"game": "chunithm",
+		"name": "Rainbow II Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "Some serious push begins. Additionally, try to achieve 10 scores worth 16.50 rating, and 30 scores worth 16.35 rating.",
+				"goals": [
+					{
+						"goalID": "Ge4b503c9c5a3dc58ff24d87aa74b0ebc30d01cb8c720b64e42a48d5b3ecfcc89",
+						"note": "Big score, big rating. 5 times."
+					},
+					{
+						"goalID": "G5f6ec92c14413b7e1792229115059c1308850b9cddc40acb292074ffdada600d",
+						"note": "You can really hold your own on 14+ now."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "With big push comes big fundamentals training.",
+				"goals": [
+					{
+						"goalID": "Gecf991468daeb8ac281b528e674717b179cc65898574ed88899a12432fbd63c4",
+						"note": "Level up. Max out an EXPERT. It's easier than it seems!"
+					},
+					{
+						"goalID": "G0fb17ed8e0db3c61f39121468d0ebaf7bf861a9ba37908d4c02ad47bb2d5aa7b",
+						"note": "ALL JUSTICE is already impressive, but can you AJ 13s?"
+					},
+					{
+						"goalID": "Gfaf97ffbc1f72429166a1b8ea4229fdad299ace9ed9383a8bd41b1ff58ffaaad",
+						"note": "Try to improve your control on 13+."
+					},
+					{
+						"goalID": "G7ddb2a0b349aac2dfb869d8f224816fa63dd884ed5a35de3014a1d8a2a5b7927",
+						"note": "A (hopefully) easy way to build your rating."
+					},
+					{
+						"goalID": "Ge535c4b71df2496692aca9504eb3887745b5b0181afa6b1987e3a14da3278e64",
+						"note": "You should be confident playing a good portion of 14s."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Keep playing the game.",
+				"goals": [
+					{
+						"goalID": "G0dd7c7fd47189221692acb53feb49b4910fae66945c92b4fb1198f60e752da87",
+						"note": "That's about half of the game played. Keep it up!"
+					},
+					{
+						"goalID": "G69ceb0985ee8707cfb0d701b80079625a4ab6b0f34e1598e6efea5561bd45bd5",
+						"note": "Collecting the AJs is a good way to increase OP."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 20 charts, minimum 5 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "Ga7848a7f3383ed6b4e2aa893cd7e0d6d6525506c45bed5aca7e716c59facb228",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "G3197afcb47163be8bbef82c2144893a31e73324cbdf7d80bc33967250aeedee2",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "G5177867537e71a6518487037e05883cd56bf0ce6c914c04cbf5f97ed31ba5b3a",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G7852992075a69367b79ca2d25c128de46ab3ebb97afa6f28581f969e5f92434d",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "Gc87d14a0f57d5560d0910d21269717330e40e9a7ca0a7fb337573b2ea6ecc87b",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "29fbf176faed18804bc1877b2953f86eba882ea1bb62c4a8eae37b008d9e7a7c"
+	},
+	{
+		"desc": "Midway through Rainbow. The game is pretty hard now. Goals suitable for players between 16.50 and 16.75 rating. Try to clear any CLASS V Course and get CLASS IV Emblem.",
+		"game": "chunithm",
+		"name": "Rainbow III Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "The grind is real! Additionally, try to achieve 10 scores worth 16.75 rating, and 30 scores worth 16.60 rating.",
+				"goals": [
+					{
+						"goalID": "Ga5b044e7da7a01a652ba3baaf302a9ec4ffc663d70804158dc7e704e271c9e1f",
+						"note": "14s don't really give any rating now. Time to go higher."
+					},
+					{
+						"goalID": "Gc33e3a63b7d567adfb9350e5037a741941323bb5d433ccce0b4f5dd36b94a27e",
+						"note": "Even if you miss the SSS window, don't give up! You're almost there."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Remember, CHUNITHM is a highscoring game.",
+				"goals": [
+					{
+						"goalID": "G8ecc23bb2de4977ed09c91e93cefc1fcd08431d19ce569d0724eabee7f1c0e86",
+						"note": "The time has come. You are ready."
+					},
+					{
+						"goalID": "Gd0f3d09f914b421f7ff35c5dba50d1a84c347227aaf0847501ba93c4adf604b6",
+						"note": "AJ 14s. Yes, you're at that level already."
+					},
+					{
+						"goalID": "G8e147616ad5c06bcc32a0b3113f0576b57018523e8b4ba7a34df664c15667839",
+						"note": "You can't gain rating from 14s anymore, but you can still learn a lot."
+					},
+					{
+						"goalID": "Gd91400b57e74f9b62a0d880d1b07b305df430000307ab00e7a424259841b761b",
+						"note": "14+ are difficult to acc, but the requirement is more loose this time."
+					},
+					{
+						"goalID": "G090fb3e7d995d4b9c4c9b1874ad44c711f781513c6b98be051197457f2412a1c",
+						"note": "14s got nothing on you."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "You've seen a lot.",
+				"goals": [
+					{
+						"goalID": "G16402bb5ca6d7ed211680888170402eb56bbc66e469ae8e618c7e8e97b6faf4c",
+						"note": "You've played 3 out of 4 MAS/ULT charts in this game."
+					},
+					{
+						"goalID": "G48455e04567fd7406631fa8466fd6776bbf4935c4836810022049772f04f771f",
+						"note": "The sad moment where AJs stop being special."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 20 charts, minimum 5 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G130fedd4255431d188af811735b6b54f5500a3f939f1c11ce2c831cb1159d736",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "G6d2f89ce8ece5f0ac6cb1882a9d5a98f8e3382d7aa498d47e34f8e3eb50efebc",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "Gb789985730b5e9ebd6df806c74ea7422d7867965fdafd9d9c7caf62ae9cbbf37",
+						"note": "Tech"
+					},
+					{
+						"goalID": "Gf6bea92a9973053c165c5caa4e9b4b15b83d5e8db4d576a0bcb1f0455e2fe888",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "G2249f91a2d5c39774e5508474294c3eb91eea9b5f7ef681efd861d2288f7e8ad",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "4c923c6f96c6578797fb691c9b4a8fc19abfb74fdd54bf106bb59d12cb32506c"
+	},
+	{
+		"desc": "Can you push to Kiwami Rainbow? Goals suitable for players between 16.75 and 17.00 rating. Try to clear any CLASS V Course and get CLASS IV Emblem.",
+		"game": "chunithm",
+		"name": "Rainbow IV Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "The game gets really demanding. Additionally, try to achieve 10 scores worth 17.00 rating, and 30 scores worth 16.85 rating.",
+				"goals": [
+					{
+						"goalID": "Gda66dada9621e49277d5c24c30d831864edefdc44617ebabe1130647cd3f6330",
+						"note": "15 at last. Get those 17 rated scores!"
+					},
+					{
+						"goalID": "G7c3258e31940d21af0a3418e6a965fa3207433c838db864a69bc10f3b8f1cebd",
+						"note": "I hope you've been practicing."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Building accuracy on really tough stuff.",
+				"goals": [
+					{
+						"goalID": "Gd990863f06aeccfc1ff51f726cff8717de5ef188debd9dc3468bf06e569ef1be",
+						"note": "What, 10? Yes. Play some lowers."
+					},
+					{
+						"goalID": "Ga39145689813b7a67d8611e39fc5acafc5dd81ef6b52a01d4f4977ed415f0cd0",
+						"note": "Some easier 14+s will do the trick."
+					},
+					{
+						"goalID": "Ga5daf96afaa8ed92ecf133c85fb388b4059097413b7bfef64e54e43bcc7ee626",
+						"note": "Develop your consistency. The difficulty will increase in the next tier."
+					},
+					{
+						"goalID": "G78460a751c27a046d82a4bab400c0d42c62621cbefb325baaea5ba0c04cbb957",
+						"note": "With high notecounts, there are many opportunities to do JUSTICEs. Don't."
+					},
+					{
+						"goalID": "G122c09d94beee1be1a3d223617e29215f6f211895974d4bbfa644ddfb01c9680",
+						"note": "You can actually farm most 14+s."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Silver Possession!",
+				"goals": [
+					{
+						"goalID": "Ga9a345bdbcd1705a83f2edb5fc394a67889ad7b793e5fa3a692b99b72e81e245",
+						"note": "S rank full game. That's it. Congratulations on your Silver Possession plate!"
+					},
+					{
+						"goalID": "Gb03af1a7ab389fd5ef270920473bf20a50547518d2ef27dfadadbf46d40faa2e",
+						"note": "The AJ grind does not stop. Luckily there's still plenty of easier stuff."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 20 charts, minimum 5 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G5ec5b85190a08c0e75d05aaa89caf1b7e07d1176c049d3271eeb7aa032afce6d",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "G2655fe1f7578e01c7fcd1c1ac8d16b5b4c1448c3f9ad4bf6e67214da6b516b6a",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "Gc790dae3c6be23c9147c3c271b58c3a5989d7e2d37302b34abf62980f7bd20cf",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G578b6c05e40a44db84ac23826b00836149a4198aeef5f8bbb90bfbd0d24d6493",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "Gfdd3e5d03d494f9a99cff73bb8ff64e685c3a5cc9ee62aaa6fefc2e5457c82eb",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "5ee131fd83e633ae1e0cfe326cf519cb13672b9fd2cc562915d6c920a342829e"
+	},
+	{
+		"desc": "Congratulations. You're a pro now. Goals suitable for players between 17.00 and 17.25 rating. Try to get CLASS V Emblem. All goals will now be % folder based. Good luck!",
+		"game": "chunithm",
+		"name": "Kiwami I Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "You're actually reaching the ceiling soon. Additionally, achieve 10 scores worth 17.25 rating, and 30 scores worth 17.10 rating.",
+				"goals": [
+					{
+						"goalID": "G479f72b5cb15e49380585fa56584b249b09d5ce5dcb41cdf7ed0046669c503bd",
+						"note": "The 15 folder is big and the easier ones might be in your grasp."
+					},
+					{
+						"goalID": "G092511d88368af70e6096744eea147974fc4fe7ec8be06812b1ccb9c89e9876a",
+						"note": "14+ don't give you rating anymore. Let that sink in."
+					},
+					{
+						"goalID": "Ga1cc59389eac36d2de69b16cb70936b7e708f7f6bc7d98adced47ddbf03c9582",
+						"note": "This is how you gain rating when you're above 17."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "At 17, precision is more important than ever.",
+				"goals": [
+					{
+						"goalID": "G6a1310cb611675e8d21ca4861a77e536f17405326bc0b4c5a429731e6984b04a",
+						"note": "It's time to start getting used to pursuing AJCs on lowers."
+					},
+					{
+						"goalID": "Gc662366c88d87b7dd7dc7e36500941c5b537e9df16f6786d2b31435b5bb5cfdd",
+						"note": "Your comfort zone is really high now."
+					},
+					{
+						"goalID": "G55d36790350c05c53d4f5e82b585651b5cdc46cf77239fb54d047f4570cc4cb7",
+						"note": "This accuracy training will be essential."
+					},
+					{
+						"goalID": "G605bd63ff93f3e1fb7f63c525c9987e1357c523c72b9f973998a1f6f58eb306e",
+						"note": "You still have some leeway, but don't let your guard down!"
+					},
+					{
+						"goalID": "G605b0e8ecff08710a9c928c626b1ecfb9760e04acbeb187cba303f43825dcf37",
+						"note": "Prepare the 14 folder for higher levels of possession."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Gold Possession is reached upon 97.5% in-game OVERPOWER.",
+				"goals": [
+					{
+						"goalID": "Gf2879fbc228e1e0e17a27453c691de3493ee15ed241218f3d70870aa1d663b2a",
+						"note": "This is one of Gold Possession requirements. Good luck on 15+!"
+					},
+					{
+						"goalID": "G59b962f98ed5cf11c24e40a40100fd2b6338ceda52b8cc2d3bd4b471a8722f4d",
+						"note": "This goal represents the average score needed for 98% OP in the Level 14 folder."
+					},
+					{
+						"goalID": "G12ba5b1166f62fc1d144e5c383418cd90e9e365be2a247c7e73a82a51bc615a8",
+						"note": "This goal represents the average score needed for 96% OP in the Level 14+ folder."
+					},
+					{
+						"goalID": "Gfb4eca10e82fcf79493610927605be1de8d94511a1821581e7cc741572991df4",
+						"note": "This is the leap between SILVER and GOLD. 500 AJs should help a lot."
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 24 charts, minimum 6 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "Gf41c8337f9c177702da050bccbb3c6b59af06e804e98d4c8b035f86c84488e1e",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "Ga7a7c1305588302ae2e6e67f6d6268c9266a7504318faf5b132b84e842183792",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "G41079ef8f5b6e5a4d75ff5cc953aa427424e997e4c07dcba7a7f80b23b8973fc",
+						"note": "Tech"
+					},
+					{
+						"goalID": "Gea2b4c649929153aef810f83b582cf276439d5460df9d3a41d40b189bf126193",
+						"note": "Stamina/Endurance"
+					},
+					{
+						"goalID": "G4f660122fc1d598d8952a47b299858c22eba94244e20510be45e206d51ec7ed5"
+					}
+				]
+			}
+		],
+		"questID": "0eb790234633986cfc5fd021aadb9aa5102263abf17dd255a02c54d8b8feb760"
+	},
+	{
+		"desc": "You came so far. Goals suitable for players between 17.25 and 17.50 rating. Try to clear CLASS INF Course and get CLASS V Emblem.",
+		"game": "chunithm",
+		"name": "Kiwami II Tier",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "You can play pretty much anything. Additionally, achieve 10 scores worth 17.50 rating, and 30 scores worth 17.35 rating.",
+				"goals": [
+					{
+						"goalID": "Gbde2783bd5f85dbdfc9fecda9c4fe77fd2565e05ab6b51c6e7f4850126e86e66",
+						"note": "You really need to do this to get any rating at this point."
+					},
+					{
+						"goalID": "G2d7ec341d715ca592171f9a1c55612d996b3d150c02188dc88b05c5d74ed49ed",
+						"note": "14+s should pose no threat to you anymore."
+					},
+					{
+						"goalID": "G97de7c7a50ff8ac89498139c64fdfb3273d1072f3f11946dea9c9cceb1b63aed",
+						"note": "You've been in the 15 folder for long, but only now you can truly conquer it."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Since there's not much to push, all that's left is precision.",
+				"goals": [
+					{
+						"goalID": "G8b435fa9e9a2f17ded16deacc876083e75817e2d0cf8ebfe6c4fc4b6609a5015",
+						"note": "Funnily enough, this may be one of the easiest goals here."
+					},
+					{
+						"goalID": "G6c8b73d3c0afbb11ec34976de8dc1461944c2c9b6c169f24c167d06afa7b5713",
+						"note": "Time to start perfecting the 14+ folder."
+					},
+					{
+						"goalID": "G3e36b31fffd30dd1c8b0cb3484c3e798880d91c789e06d8f88db3e49f7eedf33",
+						"note": "This should really be 100% for platinum possession, but I'll let it slide."
+					},
+					{
+						"goalID": "G44db9024b69e593d8b72f2c351c120a9de5c8f8124761dd8d1993749c32cc943",
+						"note": "Accuracy on 14+ should be simple now."
+					},
+					{
+						"goalID": "Gfa2757931541d8a7f4d63668da37f68a4b9c7634be914a5351942d5b1461299e",
+						"note": "Good idea to pair this with the SSS goal."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Platinum Possession is obtained with 99% in-game OVERPOWER.",
+				"goals": [
+					{
+						"goalID": "G225ef31a06ef0cc0751443703c65f7a1d2db7af6ac8eb2b43ca0713ab63e1c80",
+						"note": "This is the bare minimum for platinum, as is only here as a formality."
+					},
+					{
+						"goalID": "G6dc2dfff4071a2f435b46721a1a4623b31c811d3f5a7285fa799c62bd0caee57",
+						"note": "Benchmark for 99% OP on 14s (with AJ bonus). Don't slack!"
+					},
+					{
+						"goalID": "G1010c761f3e56e3ec7b03b9261e615759b62fa6415833fa740dc83c61412e132",
+						"note": "Benchmark score for 97% OP on 14+s."
+					},
+					{
+						"goalID": "G14f64eb557850794316f3ea5f444ebe1d5489c949c43b07d9f8d8b6ab03c86d8",
+						"note": "Benchmark score for 95% OP on 15s."
+					},
+					{
+						"goalID": "G666ed68e3c1ef5908383bbc6586187c018f6a8bafa7d8839b6571f137114bd61",
+						"note": "1000 AJs. Be sure to get your 1000th on something special!"
+					}
+				]
+			},
+			{
+				"title": "Task Charts",
+				"desc": "SSS 24 charts, minimum 6 per category. Tricky charts only need to be cleared once!",
+				"goals": [
+					{
+						"goalID": "G98080120481f5019fc7566c8736cc51d23dfa712effb0f02bd2182bd0cdedcdd",
+						"note": "Fundamentals (Mania)"
+					},
+					{
+						"goalID": "G994c1713b5ce19db6956dbb5cbd61ddcd2853bb4b568d3a208ed3e197b5ece14",
+						"note": "Fundamentals (CHUNITHM)"
+					},
+					{
+						"goalID": "Gc05801aba9e49b1b01a310cfa3375c59d961dbb5f95da89251444448264a13ab",
+						"note": "Tech"
+					},
+					{
+						"goalID": "G656d5defa2c418af94fb10b140cbbf537bda15b83f99e3d1d3ef5642bb5a084f"
+					},
+					{
+						"goalID": "G19e4d269eb29455c0c5173c8450877f5cf3fadc67b8ba99ba64779bea60bcbb9",
+						"note": "Tricky"
+					}
+				]
+			}
+		],
+		"questID": "c5347184e92e213817bb10283ea72e8addae554792711acd4bee154f2e419791"
+	},
+	{
+		"desc": "You're a top ranker now. Congratulations. Goals suitable for players above 17.50 rating. Get CLASS INF Emblem.",
+		"game": "chunithm",
+		"name": "Endgame",
+		"questData": [
+			{
+				"title": "Skill Ceiling",
+				"desc": "There is nothing more, is there?",
+				"goals": [
+					{
+						"goalID": "G5f8883d9e48c698c1d18a2b4f1e781a4b39ff01e8f56ae27cb4ba908b5ecc0e0",
+						"note": "The hardest charts in the game."
+					},
+					{
+						"goalID": "G6bd3810d8da19c29d26cb5b01d5327e7eb1e2cd38f6b92d07b1ad6eae7ae76a4",
+						"note": "15 folder is your playground."
+					}
+				]
+			},
+			{
+				"title": "Precision",
+				"desc": "Maxing out the game.",
+				"goals": [
+					{
+						"goalID": "Gf285153da6b2ecfcef0ddccdfd68f4b35c7ee65d7c7e77202d6c8ede29c877fa",
+						"note": "AJCs should come naturally by now."
+					},
+					{
+						"goalID": "G3fa7e687667dd05b6439997dbfcc67d425fb59b900dff3f98ffd01aeb03fec16",
+						"note": "Perfecting the 15s will be tough."
+					},
+					{
+						"goalID": "Gb6a8af6aaabe5ed19504c84fadbfa37cceeb271cdabf1537d057d126af2e4da5",
+						"note": "Bringing the 14+ folder closer to completion."
+					},
+					{
+						"goalID": "Gce606773d34f0547ab5553f1322592cac27f707b0b1a3c9d5dfb67fd3417df62",
+						"note": "15s are accuracy gaming now."
+					},
+					{
+						"goalID": "Gb74edee014cfa637b39154b60269a97f3d6f773bce6dbb0f8b3cab31185f795b",
+						"note": "Getting below 150 JUSTICE on those will require serious practice."
+					}
+				]
+			},
+			{
+				"title": "Overpower",
+				"desc": "Rainbow Possession is achieved by getting 99.5% in-game OVERPOWER, in addition to SSS on every chart in the game, which is quite a bit harder this version!",
+				"goals": [
+					{
+						"goalID": "Gf9eb5eaeeeb66358afbbf1dfdc1e6f42367779a1ee9a8d2361b6df9740123be8",
+						"note": "A requirement for the Rainbow Possession. You basically beat the game now."
+					},
+					{
+						"goalID": "G2bae8dde1c2f9f0105f6108979a7630a6134afdf620c04de89037efbb616ea7d",
+						"note": "Benchmark score for 99% OP on 15s (with AJ bonus)."
+					},
+					{
+						"goalID": "Gf1210ebfe2946ad6f0e02c9bcecf6e6a1c7cf8c3661da39ee95a8a83071f447a",
+						"note": "Benchmark score for 97% OP on 15+s. It's pretty much the SSS+ border."
+					},
+					{
+						"goalID": "G691f0a6bde58b700430c9c2c5c748a8eb63fdae108fe9fed069270ad7641085f",
+						"note": "SHOW ME YOUR CHUNITHM"
+					},
+					{
+						"goalID": "Gb7247d45535a89dbb74f1563376d4218e22b6210eb0e7b85631365d3dfdd7c75",
+						"note": "Arms of steel and infinite stamina."
+					}
+				]
+			}
+		],
+		"questID": "011049eb85d7bb7b1bfcb4ff6cee1aa307c667e22a8eebb50b809f656c7abf1b"
 	}
 ]

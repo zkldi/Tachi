@@ -3467,5 +3467,2613 @@
 		"game": "sdvx",
 		"goalID": "Gf67e8bf457336de147cd7e3aa5fd27d3aaa33f057a66452c4a3eae73d73e0ef0",
 		"name": "CLEAR 100% of the charts in the Level 20 (EXCEED GEAR) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Ge3f657a264d01c3482f81ac848ddeda68f64af999601f1a92a9e0d819bc798f1",
+		"name": "CLEAR 5 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38da9286fb0",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 15,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "Gdeaa19b125c7318ab25dd52a8d54e3640dbcf0d6908b28122d8d08b0cb6a0c6e",
+		"name": "SS 15 charts in the Level 10 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d94e0f37a",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 9
+		},
+		"game": "chunithm",
+		"goalID": "G9c2e7bae29679546bfd66bf9c4ecaf8ce3611caf9e9779af89105caa3f4e6766",
+		"name": "S+ 10 charts in the Level 12 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38de0b62ea4",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G0e3a917c0c832970d4a44026fbdf3c0e8d3668966d388cd762f60d65c22d29ff",
+		"name": "ALL JUSTICE any chart in the ADVANCED (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 9
+		},
+		"game": "chunithm",
+		"goalID": "G5356e36f74cbb18d530145e0524cf1b3fc53630c6525aa307db1e86a6e213083",
+		"name": "S+ 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5c639203",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G80de42ec6be6778920407587e1724e042d0a0ee3f9876b1c4e6894fdcf81695c",
+		"name": "SSS 5 charts in the EXPERT (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G0af3d204e2de60416bd544e56fe556cf53f3662b7d1ba26463d8675aef98f761",
+		"name": "CLEAR 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d94e0f37a",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "Gbc31464901161fe6aaad9b44ccfe11bb710d6191f8fb37f50418bf59a77fb6b6",
+		"name": "SS 10 charts in the Level 12 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d6a44a2df",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 15,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 9
+		},
+		"game": "chunithm",
+		"goalID": "G324a358e67d239a8a7c2cc87d5c85fdb8a7fcef9218d1e9d0e93811688ea462b",
+		"name": "S+ 15 charts in the Level 13 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5c639203",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gfdf21e5d1c4557877933f3b09bb79939d8e6e40d7abe581739a22970fb06d1b8",
+		"name": "ALL JUSTICE any chart in the EXPERT (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "grade",
+			"mode": "single",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gcb638d4bad9486a7d1cb5ffeae0963e2adddac841536e92ed267965799a1f493",
+		"name": "SSS any chart in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "Gcd7335d742806edc62678e1264fe32b082cf20c5197c399ea7e5911eed635960",
+		"name": "SS 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5c639203",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G415ab53b0128fcc18c8e03cf0936311e57364802f69e9217cd56e5b33aa2df97",
+		"name": "SSS 20 charts in the EXPERT (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 25,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G824528f9134591a5e9c92296ed06038767a2a523479b81b01b21af9ce04b570b",
+		"name": "CLEAR 25 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d6a44a2df",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G1d6a10d894a388ab2b10a7885573c871af31ee5fd63fec504109ab16477f1c32",
+		"name": "SS 10 charts in the Level 13 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 15,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 9
+		},
+		"game": "chunithm",
+		"goalID": "G4c6e95b721936c906cf4e6b2b55994113caaeaed41ac2a74feb3d8ba20abf10b",
+		"name": "S+ 15 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G177364e4e846cd3d4707c24c6f8ed481d24696bd6b84d1fa0e841e65d110360c",
+		"name": "ALL JUSTICE any chart in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G395790f40f7d8f92e250601473f5a3025868394eaf2a39b862b6551c80f00842",
+		"name": "SSS 5 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G53cde09cca3a4025d4af3c8a03f467e751f91eacb71800891b0757d488ef7b92",
+		"name": "SS 20 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e137922153eec1",
+				"C19d35e13f40aba833f9",
+				"C19d35e137ce5f2657a9",
+				"C19d35e13f750699fa04",
+				"C19d35e137865e855641",
+				"C19d35e13ae04e9fe201",
+				"C19d35e14064f31c1bc6",
+				"C19d35e140c66102868f"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G018d1a24c861c8bc12f9ad282f7a05bd9f64984ad21faa1b74b1e9421217c107",
+		"name": "SSS any 6 of エンドマークに希望と涙を添えて (E 11+), 人生攻略☆Tips (M 11+), 幾四音-Ixion- (M 12), NewStartでReadyGo! (M 12), Yet Another ”drizzly rain” (M 12), felys -final remix- (E 12), 幻想即興曲 (E 12) or スン(マイル)フラワー～Sun(Mile)Flower (M 12+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13844ca33bbd3",
+				"C19d35e13fe0efae8bfb",
+				"C19d35e1403d670a9b58",
+				"C19d35e139fb636d0eb0",
+				"C19d35e1404792271e72",
+				"C19d35e13f681b0352ed",
+				"C19d35e13b558f86e74b",
+				"C19d35e141c7c8d7c5be"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gd0c96995f09dd6e0e746c0ed49fc51ff4d6fde3368003e28181875cdceaadb72",
+		"name": "SSS any 6 of リモコン (M 11+), 3倍！Sun Shine！カーニバル！ (M 11+), シンデレラ (M 12), FEEL the BEATS (M 12), 三妖精SAY YA!!! (M 12), ポジティブ・パレード (M 12), おいでよ！ 高須らいむランド (M 12+) or ドリームケッチャー (M 12)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e139f9db722c79",
+				"C19d35e13aebfa808eec",
+				"C19d35e1385336184dab",
+				"C19d35e139ee9e66a1c4",
+				"C19d35e137bdca9560c0",
+				"C19d35e140e6be90c71a",
+				"C19d35e13ffbd2dbf7e0",
+				"C19d35e138ead9b9527a"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gb7a57778aa058c61f0dfb6d6b462afd29d465c4be66cfb50e751cae58d60afa4",
+		"name": "SSS any 6 of CYCLES (M 11+), Jump for Joy (M 11+), 響 (M 12), Magic (M 12), 夕暮れワンルーム (M 12), ドーナドーナのうた (M 12), ハウリング (M 12) or Palette (M 12+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e138eb6271c854",
+				"C19d35e140579f8069c7",
+				"C19d35e1406f7d600872",
+				"C19d35e14124b8c21791",
+				"C19d35e13a00d09ddf8f",
+				"C19d35e13a74cac8441c",
+				"C19d35e138dd5d2da019",
+				"C19d35e137af1923d756"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G825e5d4f5e0240ed9e252154c8898b932d2c54be0939798ad87397cac6c0fe11",
+		"name": "SSS any 6 of アマツキツネ (M 11+), To：Be Continued (A 11+), MAXRAGE (E 12), MuseDashを作っているPeroPeroGamesさんが倒産しちゃったよ～ (E 12), CITRUS MONSTER (E 12), Walzer für das Nichts (E 12), 光線チューニング (M 12) or イカサマライフゲイム (M 12+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fd3d2c76a69",
+				"C19d35e1383e8f84de1a",
+				"C19d35e137d53d9edfd2",
+				"C19d35e14129cda9c41d",
+				"C19d35e137b020302424",
+				"C19d35e13f9a747040df",
+				"C19d35e137fef320c771",
+				"C19d35e137ff71f23be7"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 8,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Gb8926732135e281c62ae6f5b8651341c67a30b9f7bacb9a4b17fda79e6ad0d79",
+		"name": "CLEAR Breakthrough (E 11+), 願い星 (M 11+), DETARAME ROCK&ROLL THEORY (M 12), どこにもいかない (M 12), シリョクケンサ (M 12), 帝国少女 (M 12), 天樂 (M 12) and いろは唄 (M 12+)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 50,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Gb3ac771f55ebf77fed1bc4e9b765755500fb009cf845793be7f83a38e290e70d",
+		"name": "CLEAR 50 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d6a44a2df",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gb38a1eb4473d19b036dcc55d44495f3f70ada18c0b0af9dc824eb09cee865e1b",
+		"name": "SSS 10 charts in the Level 13 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "Gac2ede85fa95ab99b718e6e1bf9a638c25c8eb2aa2e6554e419dc8914bc1d2d9",
+		"name": "SS+ 10 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G56523b5e25da394ff7c92ecdbd5d0b63f488cc3330376150c82d9cb975ac895a",
+		"name": "SS 10 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5c639203",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "score",
+			"mode": "single",
+			"value": 1009900
+		},
+		"game": "chunithm",
+		"goalID": "G65383b20eb86dbb7568d5097578512404b9fba9491015d7dfc3ca2aaceafb240",
+		"name": "Get a score of 1,009,900 on any chart in the EXPERT (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gd704fcbe1ff0c1abb8dd01984bbc25ee762505bdb0eceade1f3675f131a5bfec",
+		"name": "ALL JUSTICE 5 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gaebd02e3c0cde9d437fb518434c4a484c1bfcbd9c2e3fae0032eb52e4312b403",
+		"name": "SSS 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "Gfad6eddca4cbf9650a39029201bae83047ec8fe89227ad6c423a515eafcbdef5",
+		"name": "SS 30 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13b6501230455",
+				"C19d35e13b7324e05967",
+				"C19d35e13a82d9f98b86",
+				"C19d35e13f73ad0c9b47",
+				"C19d35e137f6c24b695f",
+				"C19d35e14041db60d0e7",
+				"C19d35e1378f6d103836",
+				"C19d35e139e8dbd9769b"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G57a360e1e5fd2c1148f712a8e46cd6777696e19e30a537fc16e8777a36c5ad33",
+		"name": "SSS any 6 of Blessed Rain (E 12+), What color... (M 12+), 《理想》 ～ Cloudland (M 12+), ルナティックレッドアイズ (M 12+), FLOWER (M 13), 生きる (M 13), After the rain (U 13) or 2DVenture (M 13)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fb126bc4201",
+				"C19d35e13a15f763ecbc",
+				"C19d35e141103493f759",
+				"C19d35e1408c7122e0c6",
+				"C19d35e13ffdb12ba355",
+				"C19d35e13f12326dbba6",
+				"C19d35e13b62d52dc5f3",
+				"C19d35e141cecbdd9ed2"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gddc5785096838e2f1295079bc1362706a84d0a0f316d6872b9c7f85e7b7f3b90",
+		"name": "SSS any 6 of シル・ヴ・プレジデント (M 12+), トランスダンスアナーキー (M 12+), ユックリ feat.餅千歳 (M 12+), カレシのジュード (M 13), みずいろレインドロップ (M 13), ヴィラン (M 13), ケ・セラ・セラ奇想曲 (M 13) or ジョハリ (M 13)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e140d8827aa26c",
+				"C19d35e13adf9720b58e",
+				"C19d35e13a999def2d2f",
+				"C19d35e13b80b94f1c1d",
+				"C19d35e13f5f4d0d01db",
+				"C19d35e1376bbf210423",
+				"C19d35e13f9858b43d83",
+				"C19d35e13a7a9fa8e0fe"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G2dbcbfcbc2b041fd040c60db77238179a37db9e71b9a5351a80fdd64d3310dfe",
+		"name": "SSS any 6 of カリスマ煉獄天神 (M 12+), クレイジー・ビート (M 12+), Cosmic Magic Shooter (M 12+), Tattoo (M 12+), Limits (M 13), Anemone (U 13), ボッカデラベリタ (M 13) or リンカーネイション (M 13)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1404facfff9a0",
+				"C19d35e139a79c727651",
+				"C19d35e13fbe5bfbacb7",
+				"C19d35e139fa24ccd8dc",
+				"C19d35e1404cbc76c6be",
+				"C19d35e138d8c3e8bed2",
+				"C19d35e13adbead1d599",
+				"C19d35e1422b4ffee5e3"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G1339ebee91ea7cc88c16cfe0c0de6194ac874133e1408e735659cf7fc1e3431d",
+		"name": "SSS any 6 of マチガイサガシ (M 12+), 咲キ誇レ常世ノ華 (M 12+), パズルリボン (M 12+), 夢花火 (M 13), アイロニック (M 13), 儚きもの人間 (M 13), バイオレンストリガー (M 13) or Campus mode!! (M 12+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1387c09607d80",
+				"C19d35e13b3f17eca598",
+				"C19d35e13a928aaa08cb",
+				"C19d35e138308f72418b",
+				"C19d35e14042196f7756",
+				"C19d35e13a479f5a7355",
+				"C19d35e1385527e6a5ce",
+				"C19d35e1391f129c40a3"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 8,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G967c5bff124171d0ce10c9a1ec5bc3d6d6ef8c1fcc797d81d69afc78cd0b296b",
+		"name": "CLEAR シジョウノコエ VOCALO ver. (M 12+), 恋はりんりん☆あーりんベル (M 12+), 結んで開いて羅刹と骸 (M 12+), D.E.A.D.L.Y. (M 12+), MAIGAHARA パンチラインキッカーズ (M 13), お嫁にしなさいっ！ (M 13), 風仁雷仁 (M 13) and D✪N’T ST✪P R✪CKIN’ ～[✪_✪] MIX～ (M 13)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 75,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Gb024a004d41e0fadf92f1612cee71d4206e4fbab3e326076f5a82e126cdc57ea",
+		"name": "CLEAR 75 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d8533f107",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G4f04fff5fa63383cf064106bf6313a843a5b128e7fc735830be4c610c3d8e722",
+		"name": "SSS 10 charts in the Level 13+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G3bd17845ef60162738d420a698159af22c9fc6d881c461a896951be8ed2621dc",
+		"name": "SS 20 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "score",
+			"mode": "single",
+			"value": 1009900
+		},
+		"game": "chunithm",
+		"goalID": "G36370a64fde2d680a32d5ef68d39fc8b6472a279147ecd269351052892ba2e7c",
+		"name": "Get a score of 1,009,900 on any chart in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Ga16ba2789fe9a0d5f443fb6c955b1ce6f3934931c7c4423bdd28bdb93593d326",
+		"name": "ALL JUSTICE 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 25,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gee7402e310131271a758bb6836392d69659c79af8d6e5e1bc2c9165a52ddb4dd",
+		"name": "SSS 25 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 50,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G64bece95f9584d1b43bec887506ad231f9b030feb53c9bb4d39e57865f27c71c",
+		"name": "SS 50 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13abff375fa96",
+				"C19d35e13939bee11f42",
+				"C19d35e139db1c77351e",
+				"C19d35e13ad1bcfc6cdb",
+				"C19d35e1387023ad2420",
+				"C19d35e137a511990958",
+				"C19d35e137d4c2536d7c",
+				"C19d35e139c5fcc788ba"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga713de663cc3d8d6d5691141fc0b94e8559935da6b4cca48ec48b66821f608f5",
+		"name": "SSS any 6 of やらなきゃいけないことばかり (M 13), ETERNAL DRAIN (M 13+), ライトスピード・デイズ (M 13+), Energy Booster ～ 上海紅茶館 (M 13+), STAGER (M 13+), 少女幻葬戦慄曲　～　Necro Fantasia (M 13+), elegante (U 13+) or 聖少女サクリファイス (M 13+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e138fc0796d289",
+				"C19d35e139d5abd70a41",
+				"C19d35e13919f6805ab0",
+				"C19d35e1385f6f311d42",
+				"C19d35e138bc44eb742c",
+				"C19d35e1389cb4b22739",
+				"C19d35e140b189501237",
+				"C19d35e1422ce63fe5aa"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gdb6b54cf9d99736f72deaf5bb24096eeee1281051f562c778c246b3b0c3bd38a",
+		"name": "SSS any 6 of Wake up Dreamer (M 13), Papyrus (M 13+), 時の冒険者 (M 13+), Paqqin (M 13+), 最愛テトラグラマトン (M 13+), おこちゃま戦争 (M 13+), REL0VE REL1VE (M 13+) or Fighting My Way (M 13+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fc7e6b39b53",
+				"C19d35e140fd03679898",
+				"C19d35e140cd09eb5164",
+				"C19d35e14146063bd987",
+				"C19d35e14181b52eddc4",
+				"C19d35e14123e3f8ac02",
+				"C19d35e14036b4979e0d",
+				"C19d35e13fd3158f4c12"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G2ec06513d23492e682eb931b3a63f0f7a7c602a0458d8b012072eecab1c810c6",
+		"name": "SSS any 6 of アナタニナルノ (M 13), ラブカ？ (M 13+), 《楽土》 ～ One and Only One (M 13+), First Light (M 13+), 乙女戦士☆あーし。 (M 13+), Stronghold LandEater (M 13+), GRÄNDIR (M 13+) or Breakthrough (M 13+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fcf092b107a",
+				"C19d35e13871d0c93846",
+				"C19d35e13730d343a7a5",
+				"C19d35e13fa29ca4acb4",
+				"C19d35e137777c4d353a",
+				"C19d35e13ac0dce03060",
+				"C19d35e1397ba00215ee",
+				"C19d35e141ef3d365e05"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G87258f5622ea33d28307115a4d841814f30952cf555a8c0975f3bbf2480b0881",
+		"name": "SSS any 6 of 舞高最強ドリームセッション!!!!! ～180秒一曲勝負～ (M 13), Her Majesty (M 13+), Reach For The Stars (U 13+), Starting Over (M 13+), ケモノガル (M 13+), エンドマークに希望と涙を添えて ～イロドリミドリアレンジ～ (M 13+), サンシャインサマー☆夏期講習 (M 13+) or オーバーライド (M 13+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13768660744a3",
+				"C19d35e1382cc787ad82",
+				"C19d35e141252de7241c",
+				"C19d35e13b48282c3e3e",
+				"C19d35e140ac8d2da55f",
+				"C19d35e13b5c020d0f85",
+				"C19d35e140c961841e85",
+				"C19d35e141f1b6043530"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 8,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G59363c3d96f07846c6b99029d0dd751682e2acc53bc2d53bbb44263baa44a36a",
+		"name": "CLEAR 名も無い鳥 (M 13), 札付きのワル　～マイケルのうた～ (M 13+), Rush B (M 13+), ぷよぷよのうた ピコピコミックス (M 13+), Survive (M 13+), こちら、幸福安心委員会です。 (M 13+), snooze (M 13+) and 黒塗り世界宛て書簡 (M 13+)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "grade",
+			"mode": "single",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga6c55eac61256cf16aa604afcdc57efd009ca80fa1dbb03af95b9b3d6abd0d75",
+		"name": "SSS any chart in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "G4009ce043c5a7a6d22829c54f45928decc8497a6b60c48d971a9cd982e37a73d",
+		"name": "SS+ 20 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38de0b62ea4",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Ga34b65af7b1f341cfa2bf5d080fa6f98ad9b4bb708d7c4e6a4461428ed33c6dd",
+		"name": "ALL JUSTICE CRITICAL any chart in the ADVANCED (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G6612b4230ec1c8d0052963c0a5b18e3df0db850867852d8776b41af9217cdc8d",
+		"name": "ALL JUSTICE 30 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d6a44a2df",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 25,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "G374f810ebb3a82106f23182f75e204c5d71f6de04806363dffaca2c1cd3e2f7e",
+		"name": "ABSOLUTE 25 charts in the Level 13 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G43d55c8a99beeaae9daceddc03c8c7853701b7b3396b1e100e95661214793f3b",
+		"name": "SSS 20 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 50,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "G03ae162bd576661ac97999c2c050924805bb2b396c1f34a0ee4a83d8c2320b22",
+		"name": "SS+ 50 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gdec27a009d9cfea59fb26e9c25cd4287e9e1f712beebae7df3fa82bfd8cf21a7",
+		"name": "ALL JUSTICE 20 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13a6ba91d6f2e",
+				"C19d35e1383b9f914baa",
+				"C19d35e137ed8f1943b9",
+				"C19d35e13f7d0a237822",
+				"C19d35e13af69567e18f",
+				"C19d35e13b3e0372cf29"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G98245a655169ece4c7e88b9ba7c40ea427fd6f89efa50c8eaf680a00a2deece2",
+		"name": "SSS any 5 of ハジマリノピアノ (M 14), 鬼KYOKAN (M 14), Phantasm Brigade (M 14), 88D (M 14), Jade Star (M 14) or Technicians High (M 14)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1409ced088f7e",
+				"C19d35e13f94c1ebb5b2",
+				"C19d35e14075f6d8c727",
+				"C19d35e1377184207866",
+				"C19d35e141ddfbceae0e",
+				"C19d35e1424929b0d92d"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G094475fc2be7b58a93a69f0f52130ebaea26c48c7b87032f229a4b562efec7d7",
+		"name": "SSS any 5 of フリーフォール (M 14), Baqeela (M 14), アマツカミ (M 14), Infantoon Fantasy (U 14), 〚隔絶〛 ～Flame of Determination (M 14) or Wing:No.6223 (M 14)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e141705e42a946",
+				"C19d35e13b25ba610fe5",
+				"C19d35e1414338183fe8",
+				"C19d35e140cc384fd6b8",
+				"C19d35e138e23d5d718c",
+				"C19d35e142485cd69168"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gb9f239c89128edb051726539238f88747663b87d5fd3ec860c342d50e85b8f33",
+		"name": "SSS any 5 of チューリングの跡 (E 14), 宙の隣 (M 14), Sunlight Starlight (M 14), 《真紅》 ～ Pavane Pour La Flamme (M 14), トリスメギストス (M 14) or luminoid love PART2 (M 14)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13901a456b324",
+				"C19d35e13b8226853c6b",
+				"C19d35e13f14f7ee7ae6",
+				"C19d35e1385d48ae36ac",
+				"C19d35e137af4b12d0fc",
+				"C19d35e1426dfab4daed"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gd561ffed6baf97f11d3faf8c5fc761b92b333fc9a4218972641072b87e1a7367",
+		"name": "SSS any 5 of 奏者はただ背中と提琴で語るのみ (M 14), 再生不能 (M 14), 電脳少女は歌姫の夢を見るか？ (M 14), 幻想のサテライト (M 14), イカサマライフゲイム (U 14) or Idoratrize World (M 14)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e139174b12907f",
+				"C19d35e138ca49ffd44d",
+				"C19d35e13a52c55b63ba",
+				"C19d35e137f0b121121d",
+				"C19d35e137f5fef78b4d",
+				"C19d35e1409999ebf85c"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G887502a8e3024a969a486b7be8cfd5614745161d1f5e4b4353930d47163ec2f4",
+		"name": "CLEAR bubble attack (M 14), The wheel to the Night ～インド人が夢に!?～ (M 14), Vibrant Verve (M 14), Jack-the-Ripper◆ (M 14), GEMINI -C- (M 14) and ASH (M 14)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ge4b503c9c5a3dc58ff24d87aa74b0ebc30d01cb8c720b64e42a48d5b3ecfcc89",
+		"name": "SSS 5 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 50,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G5f6ec92c14413b7e1792229115059c1308850b9cddc40acb292074ffdada600d",
+		"name": "SS 50 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5c639203",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gecf991468daeb8ac281b528e674717b179cc65898574ed88899a12432fbd63c4",
+		"name": "ALL JUSTICE CRITICAL any chart in the EXPERT (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d6a44a2df",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G0fb17ed8e0db3c61f39121468d0ebaf7bf861a9ba37908d4c02ad47bb2d5aa7b",
+		"name": "ALL JUSTICE 10 charts in the Level 13 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d8533f107",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "Gfaf97ffbc1f72429166a1b8ea4229fdad299ace9ed9383a8bd41b1ff58ffaaad",
+		"name": "ABSOLUTE 30 charts in the Level 13+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 40,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G7ddb2a0b349aac2dfb869d8f224816fa63dd884ed5a35de3014a1d8a2a5b7927",
+		"name": "SSS 40 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 60,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "Ge535c4b71df2496692aca9504eb3887745b5b0181afa6b1987e3a14da3278e64",
+		"name": "SS+ 60 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 8
+		},
+		"game": "chunithm",
+		"goalID": "G0dd7c7fd47189221692acb53feb49b4910fae66945c92b4fb1198f60e752da87",
+		"name": "S 50% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 40,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G69ceb0985ee8707cfb0d701b80079625a4ab6b0f34e1598e6efea5561bd45bd5",
+		"name": "ALL JUSTICE 40 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13a162ba23c4f",
+				"C19d35e13ae0cc884a97",
+				"C19d35e138b2248d5f3c",
+				"C19d35e13f7b077666ae",
+				"C19d35e141b016c5c3ca",
+				"C19d35e1420338312024"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga7848a7f3383ed6b4e2aa893cd7e0d6d6525506c45bed5aca7e716c59facb228",
+		"name": "SSS any 5 of ゴールドビジョン (M 14), felys -final remix- (M 14), Name of oath (M 14+), Akasagarbha -reincarnate- (M 14+), On your mark (104期 Ver.) (U 14) or jaQup (M 14)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fc55147f5c5",
+				"C19d35e1394306e75667",
+				"C19d35e13967f37ad1f3",
+				"C19d35e13ac5d3d8062f",
+				"C19d35e1403036730b23",
+				"C19d35e13fa7e499e662"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G3197afcb47163be8bbef82c2144893a31e73324cbdf7d80bc33967250aeedee2",
+		"name": "SSS any 5 of Komplexe (M 14), BlazinG AIR (M 14), Twilight (M 14), シャッキーーン！！ (M 14), Wildfire (M 14+) or Valsqotch (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1405f775cf80c",
+				"C19d35e139eb4c75dcfc",
+				"C19d35e14067c07b5404",
+				"C19d35e13af9e90c53df",
+				"C19d35e138322192d0dd",
+				"C19d35e14267bc03e8b4"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G5177867537e71a6518487037e05883cd56bf0ce6c914c04cbf5f97ed31ba5b3a",
+		"name": "SSS any 5 of PRAGMATISM -RESURRECTION- (M 14), StufeStern (M 14), Moon of Noon (M 14), U ARE (M 14+), Tidal Wave (M 14) or きゅびびびびずむ (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e139e9ebdd5250",
+				"C19d35e13f803dd445cb",
+				"C19d35e13882ed8192d7",
+				"C19d35e1418283651a29",
+				"C19d35e1406f64a52ead",
+				"C19d35e1402d953ccffb"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G7852992075a69367b79ca2d25c128de46ab3ebb97afa6f28581f969e5f92434d",
+		"name": "SSS any 5 of ぜったい！昇天★鎮魂歌♂ (M 14), プナイプナイたいそう (M 14), オススメ☆♂♀☆でぃすとぴあ (M 14), おしゃまなプリンセス (M 14+), MAXRAGE (M 14) or めっちゃ煽ってくるタイプの音ゲーボス曲ちゃんなんかに負けないが？？？？？ (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13f2beedac151",
+				"C19d35e1412023f084d0",
+				"C19d35e13772a2f26e1b",
+				"C19d35e13b7d809a3d17",
+				"C19d35e13ab366d35557",
+				"C19d35e14273a949cd55"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Gc87d14a0f57d5560d0910d21269717330e40e9a7ca0a7fb337573b2ea6ecc87b",
+		"name": "CLEAR Satellite System ft.Diana Chiaki (M 14), Love's Theme of BADASS ～バッド・アス 愛のテーマ～ (M 14), Genesis (M 14+), TECHNOPOLIS 2085 (M 14+), チョウの標本 (M 14) and Warp Speed (M 14)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga5b044e7da7a01a652ba3baaf302a9ec4ffc663d70804158dc7e704e271c9e1f",
+		"name": "SSS 20 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 40,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "Gc33e3a63b7d567adfb9350e5037a741941323bb5d433ccce0b4f5dd36b94a27e",
+		"name": "SS+ 40 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"key": "noteLamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "G8ecc23bb2de4977ed09c91e93cefc1fcd08431d19ce569d0724eabee7f1c0e86",
+		"name": "ALL JUSTICE CRITICAL any chart in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 20,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gd0f3d09f914b421f7ff35c5dba50d1a84c347227aaf0847501ba93c4adf604b6",
+		"name": "ALL JUSTICE 20 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "G8e147616ad5c06bcc32a0b3113f0576b57018523e8b4ba7a34df664c15667839",
+		"name": "ABSOLUTE 30 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gd91400b57e74f9b62a0d880d1b07b305df430000307ab00e7a424259841b761b",
+		"name": "BRAVE 30 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 60,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G090fb3e7d995d4b9c4c9b1874ad44c711f781513c6b98be051197457f2412a1c",
+		"name": "SSS 60 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.75,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 8
+		},
+		"game": "chunithm",
+		"goalID": "G16402bb5ca6d7ed211680888170402eb56bbc66e469ae8e618c7e8e97b6faf4c",
+		"name": "S 75% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 70,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G48455e04567fd7406631fa8466fd6776bbf4935c4836810022049772f04f771f",
+		"name": "ALL JUSTICE 70 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1381521cbebd0",
+				"C19d35e14111ec6fcd1c",
+				"C19d35e1413901e7255e",
+				"C19d35e1412fec549321",
+				"C19d35e142268950b59d",
+				"C19d35e141df674aafa8"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G130fedd4255431d188af811735b6b54f5500a3f939f1c11ce2c831cb1159d736",
+		"name": "SSS any 5 of アルストロメリア (U 14+), 本物のヒーローとの戦い (M 14+), Alcyone (M 14+), Sage (M 14+), Destined Marionette (M 14+) or 〚盲従〛 ～Fantasia Sonata Flower (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13a6fbb32ea58",
+				"C19d35e13b53afe4e5d9",
+				"C19d35e13fe9f6e6ae83",
+				"C19d35e140e4baf83f64",
+				"C19d35e13b111e5c1249",
+				"C19d35e141168427a582"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G6d2f89ce8ece5f0ac6cb1882a9d5a98f8e3382d7aa498d47e34f8e3eb50efebc",
+		"name": "SSS any 5 of Destr0yer (M 14+), Good bye, Merry-Go-Round. (M 14+), WE'RE BACK!! (M 14+), GEOMETRIC DANCE (M 14+), B100d Hunter (M 14+) or VALLIS-NERIA (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e137904ac1f29a",
+				"C19d35e13f95c37b05e8",
+				"C19d35e140bc758282b3",
+				"C19d35e140a4317a90c4",
+				"C19d35e14242107e2cde",
+				"C19d35e138113c216c03"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gb789985730b5e9ebd6df806c74ea7422d7867965fdafd9d9c7caf62ae9cbbf37",
+		"name": "SSS any 5 of Tango Rouge (M 14+), 花と、雪と、ドラムンベース。 (M 14+), 空間創造理論 (M 14+), LiftOff (M 14+), Daydreama (M 14+) or Hyperion (U 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13731d6f64a1c",
+				"C19d35e13afa1368c722",
+				"C19d35e1413fb5e0ce58",
+				"C19d35e13b12ed38e00b",
+				"C19d35e13fc0e06c816a",
+				"C19d35e1403a1296688d"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gf6bea92a9973053c165c5caa4e9b4b15b83d5e8db4d576a0bcb1f0455e2fe888",
+		"name": "SSS any 5 of 初音ミクの消失 (M 14+), ハードコア・シンドローム (M 14+), ウニの歌 (M 14+), Last Celebration (M 14+), Everlasting Liberty (M 14+) or †大闘士＝クライン・フォーゲル・シュピール＝えりか† (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1374b9bc3a00b",
+				"C19d35e137b8d5028483",
+				"C19d35e13b39711cf495",
+				"C19d35e141e08f2a5e29",
+				"C19d35e14065b3c2ddb2",
+				"C19d35e13767ed5ddb8c"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G2249f91a2d5c39774e5508474294c3eb91eea9b5f7ef681efd861d2288f7e8ad",
+		"name": "CLEAR Blue Noise (M 14+), 閃鋼のブリューナク (M 14+), 《本能》 ～ ReCoda (M 14+), 〚空虚〛 ～Pyrophilia (M 14+), 月の光 (M 14+) and GOLDEN RULE (M 14+)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gda66dada9621e49277d5c24c30d831864edefdc44617ebabe1130647cd3f6330",
+		"name": "SSS 5 charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 30,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 11
+		},
+		"game": "chunithm",
+		"goalID": "G7c3258e31940d21af0a3418e6a965fa3207433c838db864a69bc10f3b8f1cebd",
+		"name": "SS+ 30 charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 10,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gd990863f06aeccfc1ff51f726cff8717de5ef188debd9dc3468bf06e569ef1be",
+		"name": "ALL JUSTICE CRITICAL 10 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Ga39145689813b7a67d8611e39fc5acafc5dd81ef6b52a01d4f4977ed415f0cd0",
+		"name": "ALL JUSTICE 5 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 60,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "Ga5daf96afaa8ed92ecf133c85fb388b4059097413b7bfef64e54e43bcc7ee626",
+		"name": "ABSOLUTE 60 charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 60,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "G78460a751c27a046d82a4bab400c0d42c62621cbefb325baaea5ba0c04cbb957",
+		"name": "BRAVE 60 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 60,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G122c09d94beee1be1a3d223617e29215f6f211895974d4bbfa644ddfb01c9680",
+		"name": "SSS 60 charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 1,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 8
+		},
+		"game": "chunithm",
+		"goalID": "Ga9a345bdbcd1705a83f2edb5fc394a67889ad7b793e5fa3a692b99b72e81e245",
+		"name": "S 100% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 100,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gb03af1a7ab389fd5ef270920473bf20a50547518d2ef27dfadadbf46d40faa2e",
+		"name": "ALL JUSTICE 100 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e139543b949a7d",
+				"C19d35e13a9055660f38",
+				"C19d35e14062501d1145",
+				"C19d35e139ea53eccc8a",
+				"C19d35e140b394d3c0fb",
+				"C19d35e14280ecf0807d"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G5ec5b85190a08c0e75d05aaa89caf1b7e07d1176c049d3271eeb7aa032afce6d",
+		"name": "SSS any 5 of Sparking Revolver (M 14+), MEGATON BLAST (M 14+), Sheriruth (M 14+), 夕焼けのRed Parade (M 14+), Aiolos (M 15) or DEvourER (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fde9b26432d",
+				"C19d35e13f64cbf6d443",
+				"C19d35e14010c37f6bc1",
+				"C19d35e13a1ed0078b3d",
+				"C19d35e13abe4ffdd1b0",
+				"C19d35e13afb538bdea1"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G2655fe1f7578e01c7fcd1c1ac8d16b5b4c1448c3f9ad4bf6e67214da6b516b6a",
+		"name": "SSS any 5 of 色彩過剰のダイアリーミュージック (M 14+), Don't Fight The Music (M 14+), TEmPTaTiON (M 15), Grievous Lady (M 14+), Sound Chimera (M 14+) or Hainuwele (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e139271ac2bfea",
+				"C19d35e14151bc5efc36",
+				"C19d35e13877d377755a",
+				"C19d35e140ec2a03374a",
+				"C19d35e13a9fa8f17f79",
+				"C19d35e14214baceb3cc"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gc790dae3c6be23c9147c3c271b58c3a5989d7e2d37302b34abf62980f7bd20cf",
+		"name": "SSS any 5 of G e n g a o z o (M 14+), ÅMARA (大未来電脳) (M 14+), 猛進ソリストライフ！ (U 14+), Yorugao (M 14+), Megameteor (M 15) or 7thSense (M 14+)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1405d6b18fc37",
+				"C19d35e137a1a17c3afb",
+				"C19d35e1412286c33eb8",
+				"C19d35e140832710475a",
+				"C19d35e13b75698122ce",
+				"C19d35e13aefc30da016"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G578b6c05e40a44db84ac23826b00836149a4198aeef5f8bbb90bfbd0d24d6493",
+		"name": "SSS any 5 of FLUFFY FLASH (M 14+), 腐れ外道とチョコレゐト (U 14+), Burn it All (M 14+), Exitium (M 14+), 真千年女王 (M 14+) or Blackmagik Blazing (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e14069d119b016",
+				"C19d35e13784cd39aa6f",
+				"C19d35e1378d07368fa4",
+				"C19d35e138e6bbe43df6",
+				"C19d35e13a67ac487834",
+				"C19d35e142779fdbe748"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "Gfdd3e5d03d494f9a99cff73bb8ff64e685c3a5cc9ee62aaa6fefc2e5457c82eb",
+		"name": "CLEAR 4月1日でございました (M 14+), L'épisode (M 14+), 魔理沙は大変なものを盗んでいきました (U 15), Kattobi KEIKYU Rider (M 14+), 神威 (NAOKI × ZPP MIX) (M 15) and Hardsync (M 14+)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.125,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G479f72b5cb15e49380585fa56584b249b09d5ce5dcb41cdf7ed0046669c503bd",
+		"name": "SSS+ 12.50% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G092511d88368af70e6096744eea147974fc4fe7ec8be06812b1ccb9c89e9876a",
+		"name": "SSS+ 50% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga1cc59389eac36d2de69b16cb70936b7e708f7f6bc7d98adced47ddbf03c9582",
+		"name": "SSS 25% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 25,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "G6a1310cb611675e8d21ca4861a77e536f17405326bc0b4c5a429731e6984b04a",
+		"name": "ALL JUSTICE CRITICAL 25 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.1,
+			"key": "noteLamp",
+			"mode": "proportion",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gc662366c88d87b7dd7dc7e36500941c5b537e9df16f6786d2b31435b5bb5cfdd",
+		"name": "ALL JUSTICE 10% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "G55d36790350c05c53d4f5e82b585651b5cdc46cf77239fb54d047f4570cc4cb7",
+		"name": "ABSOLUTE 25% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "G605bd63ff93f3e1fb7f63c525c9987e1357c523c72b9f973998a1f6f58eb306e",
+		"name": "BRAVE 25% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G605b0e8ecff08710a9c928c626b1ecfb9760e04acbeb187cba303f43825dcf37",
+		"name": "SSS+ 50% of the charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 1,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 9
+		},
+		"game": "chunithm",
+		"goalID": "Gf2879fbc228e1e0e17a27453c691de3493ee15ed241218f3d70870aa1d663b2a",
+		"name": "S+ 100% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.7,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1009355
+		},
+		"game": "chunithm",
+		"goalID": "G59b962f98ed5cf11c24e40a40100fd2b6338ceda52b8cc2d3bd4b471a8722f4d",
+		"name": "Get a score of 1,009,355 on 70% of the charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.7,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1008500
+		},
+		"game": "chunithm",
+		"goalID": "G12ba5b1166f62fc1d144e5c383418cd90e9e365be2a247c7e73a82a51bc615a8",
+		"name": "Get a score of 1,008,500 on 70% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 500,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gfb4eca10e82fcf79493610927605be1de8d94511a1821581e7cc741572991df4",
+		"name": "ALL JUSTICE 500 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e142181ceb572d",
+				"C19d35e140912958dade",
+				"C19d35e140bfa38499f0",
+				"C19d35e1415ce9e63b6c",
+				"C19d35e14064bc0beb7d",
+				"C19d35e142291588c9e3",
+				"C19d35e138691a2c4a37"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gf41c8337f9c177702da050bccbb3c6b59af06e804e98d4c8b035f86c84488e1e",
+		"name": "SSS any 6 of 超最終鬼畜妹フランドール・S (M 15), neu (M 15), Cult future (M 15), 其のエメラルドを見よ (M 15), 幻想即興曲 (M 15), A c i - L (M 15) or Air (U 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13a0cd5aa5ba1",
+				"C19d35e13b5ad64aa702",
+				"C19d35e13a42cb930839",
+				"C19d35e142528b70c804",
+				"C19d35e13902b211bed3",
+				"C19d35e14247326f565e",
+				"C19d35e13ac6844ec702"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Ga7a7c1305588302ae2e6e67f6d6268c9266a7504318faf5b132b84e842183792",
+		"name": "SSS any 6 of 電光石火 (M 15), Blazing:Storm (M 15), GIGA DRIVE (M 15), あの日、あの部屋で、あったこと (M 15), Xevel (M 15), 並行天涯 (M 15) or 《破滅》 ～ Rhapsody for The End (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13a66a1d2a055",
+				"C19d35e138ff11552d27",
+				"C19d35e1411706e7da59",
+				"C19d35e138af8ca5ab1f",
+				"C19d35e140d178a2e72c",
+				"C19d35e13a3fd2431cbc",
+				"C19d35e1423fb12003df"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G41079ef8f5b6e5a4d75ff5cc953aa427424e997e4c07dcba7a7f80b23b8973fc",
+		"name": "SSS any 6 of Opfer (M 15), Iudicium (M 15), Big Bang (M 15), 神威 (M 15), 《創造》 ～ Cries, beyond The End (M 15), YURUSHITE (M 15) or ニルヴの心臓 (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e138e76ccf5dde",
+				"C19d35e13757a0b4b08b",
+				"C19d35e14185efd5425a",
+				"C19d35e13b3b0bcf272a",
+				"C19d35e1408405743fc0",
+				"C19d35e1386d8a9425b3",
+				"C19d35e13f3612039784"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gea2b4c649929153aef810f83b582cf276439d5460df9d3a41d40b189bf126193",
+		"name": "SSS any 6 of Glorious Crown (tpz over-Over-OVERCUTE REMIX) (M 15), L9 (U 15), マシンガンポエムドール (M 15), 赤壁、大炎上！！ (M 15), eden (M 15), ERIS -Legend of Gaidelia- (U 15) or 雪男 (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e137ca995c0e01",
+				"C19d35e137959a729b17",
+				"C19d35e140228e2e7c47",
+				"C19d35e13aa6f8f8e361",
+				"C19d35e13769e503c137",
+				"C19d35e137d2d3ae8728",
+				"C19d35e138b6680056a5"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 7,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G4f660122fc1d598d8952a47b299858c22eba94244e20510be45e206d51ec7ed5",
+		"name": "CLEAR ジングルベル (U 15), 宛城、炎上！！ (M 15), Armageddon (M 15), SON OF SUN (U 15), Gate of Fate (U 15), 脳漿炸裂ガール (U 15) and Dengeki Tube (M 15)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "Gbde2783bd5f85dbdfc9fecda9c4fe77fd2565e05ab6b51c6e7f4850126e86e66",
+		"name": "SSS+ 25% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.75,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G2d7ec341d715ca592171f9a1c55612d996b3d150c02188dc88b05c5d74ed49ed",
+		"name": "SSS+ 75% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G97de7c7a50ff8ac89498139c64fdfb3273d1072f3f11946dea9c9cceb1b63aed",
+		"name": "SSS 50% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 50,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "G8b435fa9e9a2f17ded16deacc876083e75817e2d0cf8ebfe6c4fc4b6609a5015",
+		"name": "ALL JUSTICE CRITICAL 50 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "noteLamp",
+			"mode": "proportion",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G6c8b73d3c0afbb11ec34976de8dc1461944c2c9b6c169f24c167d06afa7b5713",
+		"name": "ALL JUSTICE 25% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.75,
+			"key": "noteLamp",
+			"mode": "proportion",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G3e36b31fffd30dd1c8b0cb3484c3e798880d91c789e06d8f88db3e49f7eedf33",
+		"name": "ALL JUSTICE 75% of the charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "G44db9024b69e593d8b72f2c351c120a9de5c8f8124761dd8d1993749c32cc943",
+		"name": "ABSOLUTE 50% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gfa2757931541d8a7f4d63668da37f68a4b9c7634be914a5351942d5b1461299e",
+		"name": "BRAVE 50% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 1,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 10
+		},
+		"game": "chunithm",
+		"goalID": "G225ef31a06ef0cc0751443703c65f7a1d2db7af6ac8eb2b43ca0713ab63e1c80",
+		"name": "SS 100% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d622ba1ea",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1009600
+		},
+		"game": "chunithm",
+		"goalID": "G6dc2dfff4071a2f435b46721a1a4623b31c811d3f5a7285fa799c62bd0caee57",
+		"name": "Get a score of 1,009,600 on 60% of the charts in the Level 14 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1009063
+		},
+		"game": "chunithm",
+		"goalID": "G1010c761f3e56e3ec7b03b9261e615759b62fa6415833fa740dc83c61412e132",
+		"name": "Get a score of 1,009,063 on 60% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1007800
+		},
+		"game": "chunithm",
+		"goalID": "G14f64eb557850794316f3ea5f444ebe1d5489c949c43b07d9f8d8b6ab03c86d8",
+		"name": "Get a score of 1,007,800 on 60% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 1000,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G666ed68e3c1ef5908383bbc6586187c018f6a8bafa7d8839b6571f137114bd61",
+		"name": "ALL JUSTICE 1000 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e142826a9fb075",
+				"C19d35e13fd476e052ac",
+				"C19d35e1419917f58669",
+				"C19d35e13a3814d78edf",
+				"C19d35e14224d9238021",
+				"C19d35e1427686dc9c7d",
+				"C19d35e140bda6c97f99"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G98080120481f5019fc7566c8736cc51d23dfa712effb0f02bd2182bd0cdedcdd",
+		"name": "SSS any 6 of Kaleidoscope (M 15), Scythe of Death (M 15), What's up? Pop! (M 15), Killing Rhythm (M 15), キミとボクへの葬送歌 (M 15), 輪廻玲々 (M 15) or βlαnoir (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e137f46003112f",
+				"C19d35e13b29bd05b871",
+				"C19d35e141cdd0eb56cf",
+				"C19d35e141590ea57f9e",
+				"C19d35e13aa090e9f56b",
+				"C19d35e14260c0c57b9f",
+				"C19d35e141edf63e0753"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G994c1713b5ce19db6956dbb5cbd61ddcd2853bb4b568d3a208ed3e197b5ece14",
+		"name": "SSS any 6 of Contrapasso -inferno- (M 15), ANU (M 15), Theatore Creatore (U 15), Stardust:RAY (M 15), Trrricksters!! (M 15), Everything Will Be One (M 15) or Crush the Dystopia (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1413e12c9d58d",
+				"C19d35e14162594af1c8",
+				"C19d35e13b679465e474",
+				"C19d35e13f784fd7c80a",
+				"C19d35e13f7af91b513c",
+				"C19d35e138fe90318f71",
+				"C19d35e14190a29b5391"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gc05801aba9e49b1b01a310cfa3375c59d961dbb5f95da89251444448264a13ab",
+		"name": "SSS any 6 of ZegalltA (M 15), リ・フィクション・O (M 15), X7124 (M 15), parvorbital (M 15), Strange Love (M 15), macrocosmos (M 15) or Acid God (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e1409dc39e1d19",
+				"C19d35e1426f396379ae",
+				"C19d35e1382e69ae27db",
+				"C19d35e141cce8cbe35c",
+				"C19d35e1426b5adc0ec0",
+				"C19d35e13fbaa7b5794a",
+				"C19d35e141195076582e"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 6,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G656d5defa2c418af94fb10b140cbbf537bda15b83f99e3d1d3ef5642bb5a084f",
+		"name": "SSS any 6 of Invisible Frenzy (M 15), Galaxy Collapse (M 15), TiamaT:F minor (M 15), The Devil Incarnate (M 15), OUTRAGE (M 15), ENDYMION (M 15) or ΩΩPARTS (M 15)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e13fd2e5c5421d",
+				"C19d35e1418bb7f63256",
+				"C19d35e13fa39f87172c",
+				"C19d35e13776b98e3bd6",
+				"C19d35e1380680d41f6c",
+				"C19d35e138d9c136a88d",
+				"C19d35e137dfdff54d98"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 7,
+			"key": "clearLamp",
+			"mode": "absolute",
+			"value": 1
+		},
+		"game": "chunithm",
+		"goalID": "G19e4d269eb29455c0c5173c8450877f5cf3fadc67b8ba99ba64779bea60bcbb9",
+		"name": "CLEAR Reverberate (M 15), LibrariA (M 15), POTENTIAL (M 15), luna blu (U 15), 玩具狂奏曲 -終焉- (M 15), Aleph-0 (U 15) and 怒槌 (M 15)"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5419ea0c",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 5,
+			"key": "grade",
+			"mode": "absolute",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G5f8883d9e48c698c1d18a2b4f1e781a4b39ff01e8f56ae27cb4ba908b5ecc0e0",
+		"name": "SSS+ 5 charts in the Level 15+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 13
+		},
+		"game": "chunithm",
+		"goalID": "G6bd3810d8da19c29d26cb5b01d5327e7eb1e2cd38f6b92d07b1ad6eae7ae76a4",
+		"name": "SSS+ 50% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 100,
+			"key": "noteLamp",
+			"mode": "absolute",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gf285153da6b2ecfcef0ddccdfd68f4b35c7ee65d7c7e77202d6c8ede29c877fa",
+		"name": "ALL JUSTICE CRITICAL 100 charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "noteLamp",
+			"mode": "proportion",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "G3fa7e687667dd05b6439997dbfcc67d425fb59b900dff3f98ffd01aeb03fec16",
+		"name": "ALL JUSTICE 25% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dd1b06b58",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "noteLamp",
+			"mode": "proportion",
+			"value": 2
+		},
+		"game": "chunithm",
+		"goalID": "Gb6a8af6aaabe5ed19504c84fadbfa37cceeb271cdabf1537d057d126af2e4da5",
+		"name": "ALL JUSTICE 60% of the charts in the Level 14+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.25,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 4
+		},
+		"game": "chunithm",
+		"goalID": "Gce606773d34f0547ab5553f1322592cac27f707b0b1a3c9d5dfb67fd3417df62",
+		"name": "ABSOLUTE 25% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5419ea0c",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.5,
+			"key": "clearLamp",
+			"mode": "proportion",
+			"value": 3
+		},
+		"game": "chunithm",
+		"goalID": "Gb74edee014cfa637b39154b60269a97f3d6f773bce6dbb0f8b3cab31185f795b",
+		"name": "BRAVE 50% of the charts in the Level 15+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5febd355",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 1,
+			"key": "grade",
+			"mode": "proportion",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gf9eb5eaeeeb66358afbbf1dfdc1e6f42367779a1ee9a8d2361b6df9740123be8",
+		"name": "SSS 100% of the charts in the MASTER+ULTIMA (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38dc9b0c216",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1009560
+		},
+		"game": "chunithm",
+		"goalID": "G2bae8dde1c2f9f0105f6108979a7630a6134afdf620c04de89037efbb616ea7d",
+		"name": "Get a score of 1,009,560 on 60% of the charts in the Level 15 (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "F19e3343c38d5419ea0c",
+			"type": "folder"
+		},
+		"criteria": {
+			"countNum": 0.6,
+			"key": "score",
+			"mode": "proportion",
+			"value": 1008973
+		},
+		"game": "chunithm",
+		"goalID": "Gf1210ebfe2946ad6f0e02c9bcecf6e6a1c7cf8c3661da39ee95a8a83071f447a",
+		"name": "Get a score of 1,008,973 on 60% of the charts in the Level 15+ (X-VERSE-X) folder"
+	},
+	{
+		"charts": {
+			"data": "C19e107c92745f47dbd7",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "grade",
+			"mode": "single",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "G691f0a6bde58b700430c9c2c5c748a8eb63fdae108fe9fed069270ad7641085f",
+		"name": "SSS Melodiniq (U 16)"
+	},
+	{
+		"charts": {
+			"data": "C19e107c926fa55bee6d",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "grade",
+			"mode": "single",
+			"value": 12
+		},
+		"game": "chunithm",
+		"goalID": "Gb7247d45535a89dbb74f1563376d4218e22b6210eb0e7b85631365d3dfdd7c75",
+		"name": "SSS YOUNITHM (U 15+)"
 	}
 ]

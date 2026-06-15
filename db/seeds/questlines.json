@@ -33,5 +33,25 @@
 			"be34d7c1e0f82a1117f659feeb5cc9abbfd07b8a",
 			"f8af13364de96af3703d2839a4edb2be9b92f378"
 		]
+	},
+	{
+		"desc": "A comprehensive goal list for players of all levels to aid with game progression. Created by Codex and underjoy. If you'd like a visual companion to this questline, you can find one at https://tinyurl.com/5n94ab2k",
+		"game": "chunithm",
+		"name": "Codex & underjoy's CHUNITHM Questline",
+		"questlineID": "chunithm-questline-1779482467691",
+		"quests": [
+			"795a2227c2ea485a90b5060c4c0738ed0ee8a7522731882ff9bc2d05b1594fd0",
+			"1500e64346b0a0e640d64c71e002ea930d0b4d74811d8e050bf3848d92f8a42e",
+			"6e3bc4ec140e7da03c95271a18fd912249a7404834d810de621bc141fc26295e",
+			"d59e71097afc86cba56f59b7452dcfd349cdb1494a8a3fab6d882f5c26298791",
+			"fb3318f66aa0833a4cfa69cbbbae7cf9e0a4ae9e4305cbbd18eaff8adacc6197",
+			"2a956bb1d1e0aae1a63d7e1f7c1c597527b064d6242ec6834238a1f0f6afe339",
+			"29fbf176faed18804bc1877b2953f86eba882ea1bb62c4a8eae37b008d9e7a7c",
+			"4c923c6f96c6578797fb691c9b4a8fc19abfb74fdd54bf106bb59d12cb32506c",
+			"5ee131fd83e633ae1e0cfe326cf519cb13672b9fd2cc562915d6c920a342829e",
+			"0eb790234633986cfc5fd021aadb9aa5102263abf17dd255a02c54d8b8feb760",
+			"c5347184e92e213817bb10283ea72e8addae554792711acd4bee154f2e419791",
+			"011049eb85d7bb7b1bfcb4ff6cee1aa307c667e22a8eebb50b809f656c7abf1b"
+		]
 	}
 ]
