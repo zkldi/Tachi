@@ -16067,5 +16067,45 @@
 		"legacySongID": 1183,
 		"searchTerms": [],
 		"title": "Hypernaid"
+	},
+	{
+		"altTitles": [],
+		"artist": "黒鉄たま (CV: 秋奈)",
+		"data": {
+			"duration": null,
+			"genre": "POPS＆ANIME"
+		},
+		"id": "S19ed05979d00a580216",
+		"legacySongID": 1186,
+		"searchTerms": [],
+		"title": "PRECIOUS NIGHT (Prod.ハレトキドキ)"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：珠洲島 有栖(CV：長縄 まりあ)",
+		"data": {
+			"duration": null,
+			"genre": "オンゲキ"
+		},
+		"id": "S19ed05979d00bba474e",
+		"legacySongID": 1187,
+		"searchTerms": [
+			"Handmade Good Day -Suzushima Arisu Solo ver-"
+		],
+		"title": "Handmade Good Day -珠洲島 有栖ソロver.-"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：皇城 セツナ(CV：八巻 アンナ)",
+		"data": {
+			"duration": null,
+			"genre": "オンゲキ"
+		},
+		"id": "S19ed05979d01425473b",
+		"legacySongID": 1188,
+		"searchTerms": [
+			"Handmade Good Day -Sumeragi Setsuna Solo ver-"
+		],
+		"title": "Handmade Good Day -皇城 セツナソロver.-"
 	}
 ]
