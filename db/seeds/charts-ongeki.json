@@ -103728,14 +103728,14 @@
 			"displayVersion": "オンゲキ Re:Fresh",
 			"inGameID": null,
 			"isBonusTrack": true,
-			"maxPlatScore": ""
+			"maxPlatScore": 1648
 		},
 		"difficulty": "EXPERT",
 		"id": "C19ed05979d0328e4fd7",
 		"isPrimary": true,
 		"legacyChartID": "83a64de2b692783fb383411808358911b6ca7c87",
 		"level": "9+",
-		"levelNum": "",
+		"levelNum": 9.7,
 		"songID": "S19ed05979d00bba474e",
 		"versions": [
 			"refresh",
