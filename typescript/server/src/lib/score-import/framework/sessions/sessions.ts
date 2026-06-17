@@ -77,6 +77,7 @@ function ScoreToSessionScoreInfo(
 		scoreID: score.scoreID,
 		isNewScore: false,
 		deltas,
+		previousPB,
 	};
 }
 

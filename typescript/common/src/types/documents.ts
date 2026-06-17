@@ -129,6 +129,12 @@ interface SessionScorePBInfo {
 
 	// metric -> difference between previous PB.
 	deltas: Record<string, number>;
+
+	// The user's PB on this chart as of the session's start, i.e. exactly what
+	// this score raised from. Lets consumers render the true previous values
+	// (optional metrics, judgements, merges) instead of reconstructing them from
+	// deltas. Has no `rankingData`, as that isn't meaningful for a historical PB.
+	previousPB: Omit<PBScoreDocument, "rankingData">;
 }
 
 interface SessionScoreNewInfo {

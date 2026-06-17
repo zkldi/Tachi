@@ -20,7 +20,11 @@ export default function ScoreCoreCells({
 	chart: ChartDocument;
 	game: V3Game;
 	rating?: AnyScoreRatingAlg;
-	score: PBScoreDocument | ScoreDocument;
+
+	// `Omit<PBScoreDocument, "rankingData">` covers historical/"as of" PBs (e.g.
+	// a session's previous PB), which carry no ranking data. Neither the score
+	// cells nor the rating cell read `rankingData`, so this is safe.
+	score: Omit<PBScoreDocument, "rankingData"> | ScoreDocument;
 	short?: boolean;
 }): JSX.Element {
 	const [defaultRating] = useScoreRatingAlg(game);

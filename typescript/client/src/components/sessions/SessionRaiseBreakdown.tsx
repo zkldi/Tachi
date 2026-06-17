@@ -18,9 +18,7 @@ import { APIFetchV1 } from "#util/api";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartMap, CreateScoreIDMap, CreateSongMap } from "#util/data";
 import { Reverse, UppercaseFirst } from "#util/misc";
-import deepmerge from "deepmerge";
-import { cloneDeep } from "lodash";
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { useQuery } from "react-query";
 import {
 	type ChartDocument,
@@ -315,7 +313,6 @@ function ElementStatTable({
 							songMap,
 							fullSize,
 							game,
-							gameConfig,
 							metric: metric,
 							scores,
 							setScores,
@@ -334,7 +331,6 @@ function ElementStatTable({
 								songMap,
 								fullSize,
 								game,
-								gameConfig,
 								metric: metric,
 								scores,
 								setScores,
@@ -366,7 +362,6 @@ function BreakdownChartContents({
 	songMap,
 	chartMap,
 	fullSize,
-	gameConfig,
 	metric,
 	scores,
 	setScores,
@@ -374,7 +369,6 @@ function BreakdownChartContents({
 	chartMap: Map<string, ChartDocument<V3Game>>;
 	fullSize: boolean;
 	game: V3Game;
-	gameConfig: GameConfig;
 	metric: string;
 	score: ScoreDocument;
 	scoreInfo: SessionScoreInfo;
@@ -443,39 +437,11 @@ function BreakdownChartContents({
 		let preScoreCell = <td colSpan={gptImpl.scoreHeaders.length}>No Play</td>;
 
 		if (!scoreInfo.isNewScore) {
-			const newScoreData = cloneDeep(score.scoreData);
-
-			for (const [k, d] of Object.entries(scoreInfo.deltas)) {
-				// @ts-expect-error it'll be an enum
-				if (typeof score.scoreData[k] === "string") {
-					const enumConf = GetScoreMetricConf(
-						gameConfig,
-						k,
-					) as ConfEnumScoreMetric<string>;
-
-					// @ts-expect-error alter the enum
-					const newIndex = score.scoreData.enumIndexes[k] - d;
-
-					// @ts-expect-error alter the enum
-					newScoreData.enumIndexes[k] = newIndex;
-					// @ts-expect-error alter the enum
-					newScoreData[k] = enumConf.values[newIndex] ?? "UNKNOWN ENUM ??";
-				} else {
-					// @ts-expect-error ugh
-					newScoreData[k] = score.scoreData[k] - d;
-				}
-			}
-
-			const mockScore = deepmerge(score, {
-				scoreData: newScoreData,
-			}) as ScoreDocument;
-
-			// We don't actually know what the user's previous score was, we can only walk
-			// back the raise information we have. As such, we don't keep track of
-			// judgements, and must nix them here.
-			mockScore.scoreData.judgements = {};
-
-			preScoreCell = <ScoreCoreCells chart={chart} game={game} score={mockScore} short />;
+			// The server hands us the user's exact PB as of the session start, so
+			// render that directly instead of reconstructing it from deltas.
+			preScoreCell = (
+				<ScoreCoreCells chart={chart} game={game} score={scoreInfo.previousPB} short />
+			);
 		}
 
 		if (score) {
