@@ -140,7 +140,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        destination: [boku, kamai, dev]
+        destination: [boku, kamai]
     steps:
       - name: Dispatch deploy
         env:
