@@ -14,7 +14,7 @@ import { APIFetchV1, ToAPIURL } from "#util/api";
 import { FetchJSONBody, UppercaseFirst } from "#util/misc";
 import { getStoredTheme, mediaQueryPrefers, setTheme, type Themes } from "#util/themeUtils";
 import { useFormik } from "formik";
-import React, { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -420,11 +420,16 @@ function ChangeUsernameForm({ reqUser }: { reqUser: UserDocument }) {
 						</div>
 					)}
 				</Form.Group>
-				{!lastUsernameChange.data?.canChange && (
+				{lastUsernameChange.data && !lastUsernameChange.data.canChange && (
 					<Alert variant="danger">
-						You can only change your username every 6 months. Your next username change
-						will be available on{" "}
-						{new Date(lastUsernameChange.data?.nextChange ?? 0).toLocaleDateString()}.
+						You can only change your username every 6 months.
+						{lastUsernameChange.data.nextChange !== null && (
+							<>
+								{" "}
+								Your next username change will be available on{" "}
+								{new Date(lastUsernameChange.data.nextChange).toLocaleDateString()}.
+							</>
+						)}
 					</Alert>
 				)}
 				<Button
