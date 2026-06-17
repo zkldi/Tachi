@@ -1,7 +1,6 @@
 import type { PrudenceError, ValidSchemaValue } from "prudence";
 import type { ZodObject } from "zod";
 
-import type { GradeBoundary, IIDXLikes } from "../constants/grade-boundaries";
 import type {
 	BMSCourseDocument,
 	BMSGames,
@@ -22,6 +21,11 @@ import type {
 } from "../types/metrics";
 
 import { ALL_GAMES, GameToGameGroup, GetGameConfig, GetGameGroupConfig } from "../config/config";
+import {
+	type GradeBoundary,
+	type IIDXLikes,
+	MakeGradeBoundaries,
+} from "../constants/grade-boundaries";
 
 /**
  * Stick this in the "default" branch of switch exprs to statically typecheck that your
@@ -452,6 +456,32 @@ export function IIDXLikeGetGrade(
 	}
 
 	return "F";
+}
+
+/**
+ * Computes exact integer EX-score grade boundaries for a given IIDX-like notecount.
+ *
+ * These mirror the integer arithmetic in IIDXLikeGetGrade and avoid the
+ * floating-point rounding errors that arise from working through percent-space
+ * when the grade denominators are ninths (or eighteenths for MAX-).
+ */
+export function RawIIDXGradeBoundaries(
+	notecount: integer,
+): Array<GradeBoundary<GetEnumValue<IIDXLikes, "grade">>> {
+	const max = notecount * 2;
+
+	return MakeGradeBoundaries<GetEnumValue<IIDXLikes, "grade">>({
+		F: 0,
+		E: max * 4,
+		D: max * 6,
+		C: max * 8,
+		B: max * 10,
+		A: max * 12,
+		AA: max * 14,
+		AAA: max * 16,
+		"MAX-": max * 17,
+		MAX: max * 18,
+	});
 }
 
 export function EnumIndexToValue<

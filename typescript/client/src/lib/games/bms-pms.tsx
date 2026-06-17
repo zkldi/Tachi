@@ -6,7 +6,7 @@ import { GetEnumColour } from "#lib/game-implementations";
 import { type GameClientImplementation } from "#lib/types";
 import { IsNullish } from "#util/misc";
 import { NumericSOV } from "#util/sorts";
-import { COLOUR_SET, type GamesForGroup, IIDXLIKE_GBOUNDARIES } from "tachi-common";
+import { COLOUR_SET, type GamesForGroup, RawIIDXGradeBoundaries } from "tachi-common";
 import { FormatSieglindeBMS } from "tachi-common/config/game-support/bms";
 
 import { bgc, CreateRatingSys } from "./_util";
@@ -67,7 +67,7 @@ const BASE_IMPL: GameClientImplementation<GamesForGroup["bms" | "pms"]> = {
 		["Deltas", "Deltas", NumericSOV((x) => x.scoreData.percent)],
 		["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
 	],
-	scoreCoreCells: ({ sc }) => (
+	scoreCoreCells: ({ sc, chart }) => (
 		<>
 			<ScoreCell
 				colour={GetEnumColour(sc, "grade")}
@@ -76,18 +76,10 @@ const BASE_IMPL: GameClientImplementation<GamesForGroup["bms" | "pms"]> = {
 				score={sc.scoreData.score}
 			/>
 			<DeltaCell
-				formatNumFn={(deltaPercent) => {
-					const max = Math.floor(sc.scoreData.score / (sc.scoreData.percent / 100));
-
-					const v = (deltaPercent / 100) * max;
-
-					// i don't know if this is correct
-					// it's just really hard to work out.
-					return Math.round(v).toFixed(0);
-				}}
+				formatNumFn={(n) => Math.floor(n / 18).toString()}
 				grade={sc.scoreData.grade}
-				gradeBoundaries={IIDXLIKE_GBOUNDARIES}
-				value={sc.scoreData.percent}
+				gradeBoundaries={RawIIDXGradeBoundaries(chart.data.notecount)}
+				value={sc.scoreData.score * 18}
 			/>
 			<BMSOrPMSLampCell score={sc} />
 		</>
