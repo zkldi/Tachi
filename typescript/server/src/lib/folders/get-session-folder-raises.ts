@@ -69,43 +69,62 @@ export async function GetSessionFolderRaises(
 		}
 
 		for (const [metric, conf] of Object.entries(enumMetrics)) {
-			if (!info.isNewScore) {
+			const enumIndexes = score.scoreData.enumIndexes;
+			const newIdx = enumIndexes?.[metric as keyof typeof enumIndexes];
+
+			if (newIdx === undefined) {
+				continue;
+			}
+
+			// Index of this metric before this score. New scores had no previous
+			// PB, so they crossed every threshold from the bottom.
+			let oldIdx: number;
+
+			if (info.isNewScore) {
+				oldIdx = -1;
+			} else {
 				const delta = info.deltas[metric];
 
 				if (delta === undefined || delta <= 0) {
 					continue;
 				}
+
+				oldIdx = newIdx - delta;
 			}
 
-			const enumIndexes = score.scoreData.enumIndexes;
-			const idx = enumIndexes?.[metric as keyof typeof enumIndexes];
+			const minIdx = conf.values.indexOf(conf.minimumRelevantValue);
 
-			if (idx === undefined) {
-				continue;
-			}
+			// This view is cumulative: reaching e.g. EX HARD CLEAR also counts as
+			// a HARD CLEAR (and CLEAR, ...). So this score raised every enum
+			// value-or-better bucket it crossed, i.e. every threshold in
+			// (oldIdx, newIdx]. Only surface thresholds above the
+			// minimum-relevant value (so we don't show NO PLAY / FAILED rows).
+			const startIdx = Math.max(oldIdx, minIdx) + 1;
 
-			if (idx <= conf.values.indexOf(conf.minimumRelevantValue)) {
-				continue;
-			}
-
-			const valueRaw = (score.scoreData as Record<string, unknown>)[metric];
-
-			if (typeof valueRaw !== "string") {
+			if (startIdx > newIdx) {
 				continue;
 			}
 
 			const folderIds = await folderIdsForChartCached(score.chartID, chartFolderCache);
 
-			for (const folderId of folderIds) {
-				const key = bucketKey(folderId, metric, valueRaw);
-				let set = bucket.get(key);
+			for (let vi = startIdx; vi <= newIdx; vi++) {
+				const value = conf.values[vi];
 
-				if (!set) {
-					set = new Set();
-					bucket.set(key, set);
+				if (value === undefined) {
+					continue;
 				}
 
-				set.add(score.chartID);
+				for (const folderId of folderIds) {
+					const key = bucketKey(folderId, metric, value);
+					let set = bucket.get(key);
+
+					if (!set) {
+						set = new Set();
+						bucket.set(key, set);
+					}
+
+					set.add(score.chartID);
+				}
 			}
 		}
 	}
@@ -143,7 +162,10 @@ export async function GetSessionFolderRaises(
 			continue;
 		}
 
-		const previousCount = dist.enumDist[metric]?.[value] ?? 0;
+		// Cumulative: how many charts were already at this value-or-better before
+		// the session. Pairs with the cumulative raise buckets above so that
+		// `previousCount + raisedCharts.length` is the true value-or-better total.
+		const previousCount = dist.cumulativeEnumDist[metric]?.[value] ?? 0;
 
 		out.push({
 			folder,

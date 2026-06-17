@@ -165,6 +165,53 @@ describe("GET /api/v1/sessions/:sessionID/folder-raises", () => {
 		expect(typeof hit.type).toBe("string");
 		expect(typeof hit.value).toBe("string");
 	});
+
+	it("treats raises cumulatively (an EX HARD CLEAR is also a HARD CLEAR)", async () => {
+		const { sessionId } = await seedSessionFixture();
+		const folderId = `F_folder_sess_cumulative_${sessionId}`;
+
+		await DB.insertInto("folder")
+			.values({
+				id: folderId,
+				legacy_id: folderId,
+				game: "iidx-sp",
+				inactive: false,
+				title: "Session Folder Cumulative Test",
+				slug: folderId,
+				where: `chart.id = '${CHART_PG}'`,
+				version_filter: null,
+				search_terms: [],
+			})
+			.execute();
+
+		await DB.insertInto("folder_chart_lookup")
+			.values({ folder_id: folderId, chart_id: CHART_PG })
+			.execute();
+
+		const res = await mockApi.get(`/api/v1/sessions/${sessionId}/folder-raises`);
+
+		expect(res.status).toBe(200);
+		expect(res.body.success).toBe(true);
+
+		const lampRows = (
+			res.body.body as Array<{
+				folder: { folderID: string };
+				raisedCharts: Array<string>;
+				type: string;
+				value: string;
+			}>
+		).filter((r) => r.folder.folderID === folderId && r.type === "lamp");
+
+		// The seeded score is an EX HARD CLEAR, so it should raise the EX HARD
+		// CLEAR bucket *and* the HARD CLEAR (and CLEAR) value-or-better buckets.
+		const exhc = lampRows.find((r) => r.value === "EX HARD CLEAR");
+		const hc = lampRows.find((r) => r.value === "HARD CLEAR");
+
+		expect(exhc).toBeDefined();
+		expect(exhc?.raisedCharts).toContain(CHART_PG);
+		expect(hc).toBeDefined();
+		expect(hc?.raisedCharts).toContain(CHART_PG);
+	});
 });
 
 describe("GET /api/v1/sessions/:sessionID/adjacent", () => {
