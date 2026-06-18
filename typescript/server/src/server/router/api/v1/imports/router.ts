@@ -301,9 +301,10 @@ API_V1_ROUTER.rawAdd("GET", "/imports/:importID/stream", async (req: Request, re
 	res.setHeader("Connection", "keep-alive");
 	res.flushHeaders();
 
-	const subscriber = await RedisClient.duplicate();
+	const subscriber = RedisClient.duplicate();
+	const channel = importProgressChannel(importID);
 
-	await subscriber.subscribe(importProgressChannel(importID), (message) => {
+	subscriber.on("message", (_ch, message) => {
 		let event: ImportProgressEvent;
 		try {
 			event = JSON.parse(message) as ImportProgressEvent;
@@ -325,6 +326,8 @@ API_V1_ROUTER.rawAdd("GET", "/imports/:importID/stream", async (req: Request, re
 		}
 	});
 
+	await subscriber.subscribe(channel);
+
 	const keepalive = setInterval(() => res.write(": keepalive\n\n"), 25_000);
 
 	const timeout = setTimeout(() => {
@@ -338,7 +341,7 @@ API_V1_ROUTER.rawAdd("GET", "/imports/:importID/stream", async (req: Request, re
 		clearInterval(keepalive);
 		clearTimeout(timeout);
 		subscriber.unsubscribe().catch(() => {});
-		subscriber.close();
+		subscriber.disconnect();
 	}
 
 	req.on("close", cleanup);

@@ -1,17 +1,16 @@
+import type Redis from "ioredis";
+
 import { type SessionData, Store } from "express-session";
 
 /**
- * express-session store backed by Bun's built-in Redis client.
+ * express-session store backed by an ioredis client.
  */
-export class BunRedisSessionStore extends Store {
-	private readonly client: InstanceType<typeof Bun.RedisClient>;
+export class RedisSessionStore extends Store {
+	private readonly client: Redis;
 	private readonly defaultTtl: number;
 	private readonly prefix: string;
 
-	constructor(
-		client: InstanceType<typeof Bun.RedisClient>,
-		options: { prefix?: string; ttl?: number } = {},
-	) {
+	constructor(client: Redis, options: { prefix?: string; ttl?: number } = {}) {
 		super();
 		this.client = client;
 		this.prefix = options.prefix ?? "sess:";

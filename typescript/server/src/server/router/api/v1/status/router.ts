@@ -101,9 +101,9 @@ API_V1_ROUTER.rawAdd("GET", "/status/worker-stream", async (req: Request, res: R
 
 	sendEvent("snapshot", { activeJobs: activeJobsEnriched, queueDepth, workerCount });
 
-	const subscriber = await RedisClient.duplicate();
+	const subscriber = RedisClient.duplicate();
 
-	await subscriber.subscribe(JOB_QUEUE_EVENTS_CHANNEL, (message) => {
+	subscriber.on("message", (_channel, message) => {
 		void (async () => {
 			let event: WorkerPubSubEvent;
 			try {
@@ -131,6 +131,8 @@ API_V1_ROUTER.rawAdd("GET", "/status/worker-stream", async (req: Request, res: R
 		})();
 	});
 
+	await subscriber.subscribe(JOB_QUEUE_EVENTS_CHANNEL);
+
 	const keepalive = setInterval(() => {
 		res.write(": keepalive\n\n");
 	}, 25_000);
@@ -138,7 +140,7 @@ API_V1_ROUTER.rawAdd("GET", "/status/worker-stream", async (req: Request, res: R
 	req.on("close", () => {
 		clearInterval(keepalive);
 		subscriber.unsubscribe().catch(() => {});
-		subscriber.close();
+		subscriber.disconnect();
 	});
 });
 

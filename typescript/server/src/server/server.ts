@@ -22,13 +22,11 @@ let store;
 if (Env.NODE_ENV !== "test") {
 	log.info({ bootInfo: true }, "Connecting ExpressSession to Redis.");
 	// n.b. load bearing prefix here - do not remove the prefix for any reason.
-	// Dynamic import keeps redis.ts (which uses Bun.RedisClient) out of the
-	// module graph when running under Vitest's Node.js worker threads in tests.
-	const [{ RedisClient }, { BunRedisSessionStore }] = await Promise.all([
+	const [{ RedisClient }, { RedisSessionStore }] = await Promise.all([
 		import("#services/redis/redis"),
 		import("#services/redis/session-store"),
 	]);
-	store = new BunRedisSessionStore(RedisClient, { prefix: TachiConfig.NAME });
+	store = new RedisSessionStore(RedisClient, { prefix: TachiConfig.NAME });
 }
 
 const userSessionMiddleware = expressSession({

@@ -174,7 +174,8 @@
 		"fast-json-patch": "^3.1.1",
 		"cron-parser": "5.0.2",
 		"@types/sql.js": "^1.4.11",
-		"sql.js": "^1.14.1"
+		"sql.js": "^1.14.1",
+		"ioredis": "^5.11.1"
 	},
 	"overrides": {
 		"@types/node": "20.19.37",

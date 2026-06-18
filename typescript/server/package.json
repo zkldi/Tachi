@@ -57,6 +57,7 @@
 		"fast-xml-parser": "catalog:",
 		"helmet": "catalog:",
 		"html-entities": "catalog:",
+		"ioredis": "catalog:",
 		"kysely": "catalog:",
 		"lodash": "catalog:",
 		"multer": "catalog:",
