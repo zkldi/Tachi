@@ -44,7 +44,7 @@ jobs:
       NODE_ENV: "test"
     services:
       tachi-postgres-test:
-        image: postgres:18
+        image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
         env:
           POSTGRES_USER: tachi
           POSTGRES_PASSWORD: tachi
