@@ -8,6 +8,8 @@
  *
  * Usage:
  *   bun run src/scripts/anonymise-db.ts -- --url postgresql://localhost/anon-kamai
+ *
+ * User #1 is promoted to admin so dataset consumers can run admin-only flows locally.
  */
 
 import type { Database } from "tachi-db";
@@ -102,6 +104,12 @@ async function main(): Promise<void> {
 			bd_beta: false,
 			bd_dev_team: false,
 		})
+		.execute();
+
+	console.log("[anonymise-db] Promoting user #1 to admin…");
+	await DB.updateTable("account")
+		.set({ auth_level: "admin" })
+		.where("account.id", "=", 1)
 		.execute();
 
 	console.log("[anonymise-db] Anonymising session names…");

@@ -14,6 +14,7 @@ import {
 	MarkJobFailed,
 	RequeueJobAfter409Attempt,
 } from "#lib/jobs/job-queue/queue-ops";
+import { PublishJobEvent, WORKER_COUNT_REDIS_KEY } from "#lib/jobs/job-queue/worker-pubsub";
 import { log } from "#lib/log/log";
 import { maybeStartWorkerMetricsServer } from "#lib/metrics/worker-metrics";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
@@ -21,7 +22,7 @@ import { MarkImportAsFailed } from "#lib/score-import/framework/status-tracking/
 import { processScoreImportJobFromPayload } from "#lib/score-import/worker/score-import-job-processor";
 import { Env } from "#lib/setup/config";
 import { ClosePgConnection } from "#services/pg/db";
-import { CloseRedisConnection } from "#services/redis/redis";
+import { CloseRedisConnection, RedisClient } from "#services/redis/redis";
 import { Sleep } from "#utils/misc";
 import { writeFileSync } from "fs";
 import { Counter, Histogram } from "prom-client";
@@ -51,6 +52,9 @@ async function bootstrap() {
 		{ bootInfo: true, workerCount, pgPoolMax: Env.PG_POOL_MAX },
 		"tachi job-queue worker starting (Postgres job_queue).",
 	);
+
+	// Advertise pool size to the HTTP process so the visualiser can render the right number of slots.
+	await RedisClient.set(WORKER_COUNT_REDIS_KEY, String(workerCount));
 
 	let jobsTotal: Counter | null = null;
 	let jobDurationSeconds: Histogram | null = null;
@@ -106,9 +110,22 @@ async function bootstrap() {
 					| undefined;
 
 				switch (job.job_kind) {
-					case JOB_KIND_SCORE_IMPORT:
+					case JOB_KIND_SCORE_IMPORT: {
+						const p = job.payload as {
+							importID: string;
+							importType: string;
+							userID: number;
+						};
+						PublishJobEvent({
+							type: "job:start",
+							jobId: job.row_id,
+							userId: p.userID,
+							importType: p.importType,
+							importId: p.importID,
+						});
 						result = await processScoreImportJobFromPayload(job.payload);
 						break;
+					}
 					default:
 						log.error(
 							{ job_kind: job.job_kind, row_id: job.row_id, workerId },
@@ -133,11 +150,15 @@ async function bootstrap() {
 							new ScoreImportFatalError(409, result.description),
 						);
 						await MarkJobFailed(job.row_id);
-						jobDurationSeconds?.observe(
-							{ job_kind: job.job_kind },
-							(Date.now() - startMs) / 1000,
-						);
+						const gaveUpMs = Date.now() - startMs;
+						jobDurationSeconds?.observe({ job_kind: job.job_kind }, gaveUpMs / 1000);
 						jobsTotal?.inc({ job_kind: job.job_kind, status: "failure" });
+						PublishJobEvent({
+							type: "job:done",
+							jobId: job.row_id,
+							durationMs: gaveUpMs,
+							success: false,
+						});
 					} else {
 						const delayMs = computeBackoffDelayMs(job.failed_attempts);
 						const scheduledFor = new Date(Date.now() + delayMs).toISOString();
@@ -158,20 +179,28 @@ async function bootstrap() {
 					}
 				} else {
 					await MarkJobDone(job.row_id);
-					jobDurationSeconds?.observe(
-						{ job_kind: job.job_kind },
-						(Date.now() - startMs) / 1000,
-					);
+					const doneMs = Date.now() - startMs;
+					jobDurationSeconds?.observe({ job_kind: job.job_kind }, doneMs / 1000);
 					jobsTotal?.inc({ job_kind: job.job_kind, status: "success" });
+					PublishJobEvent({
+						type: "job:done",
+						jobId: job.row_id,
+						durationMs: doneMs,
+						success: true,
+					});
 				}
 			} catch (e) {
 				log.error(e, `Job ${job.row_id} (worker ${workerId}) failed.`);
 				await MarkJobFailed(job.row_id);
-				jobDurationSeconds?.observe(
-					{ job_kind: job.job_kind },
-					(Date.now() - startMs) / 1000,
-				);
+				const failedMs = Date.now() - startMs;
+				jobDurationSeconds?.observe({ job_kind: job.job_kind }, failedMs / 1000);
 				jobsTotal?.inc({ job_kind: job.job_kind, status: "failure" });
+				PublishJobEvent({
+					type: "job:done",
+					jobId: job.row_id,
+					durationMs: failedMs,
+					success: false,
+				});
 			}
 		}
 	}

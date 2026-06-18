@@ -3,8 +3,7 @@ import { type ImportStates, NotStartedState } from "#types/import";
 import { useCallback, useState } from "react";
 import { type ImportDocument, type integer } from "tachi-common";
 /* eslint-disable no-await-in-loop */
-import { APIFetchV1 } from "#util/api";
-import { Sleep } from "#util/misc";
+import { APIFetchV1, ToAPIURL } from "#util/api";
 
 export interface ImportDeferred {
 	url: string;
@@ -54,49 +53,79 @@ export default function useImport(url: string, options: RequestInit) {
 				import: importRes.body.import,
 			});
 		} else if (initRes.statusCode === 202) {
-			// 202 means the import is processing. We'll have to poll the
-			// status of the import in real time to see whats happening.
+			// 202 means the import is queued. Open an SSE stream for real-time progress
+			// instead of polling.
+			const importID = (initRes.body as ImportDeferred).importID;
 
-			let isImportFinished = false;
+			setImportState({
+				state: "waiting_processing",
+				progressInfo: { description: "Queued for processing." },
+			});
 
-			while (!isImportFinished) {
-				const pollRes = await APIFetchV1<ImportPollStatus>(
-					`/imports/${initRes.body.importID}/poll-status`,
-				);
+			await new Promise<void>((resolve) => {
+				const es = new EventSource(ToAPIURL(`/imports/${importID}/stream`), {
+					withCredentials: true,
+				});
 
-				if (!pollRes.success || pollRes.statusCode >= 400) {
-					setImportState({ state: "failed", error: pollRes.description });
-					isImportFinished = true;
-					continue;
-				}
-
-				if (pollRes.body.importStatus === "completed") {
-					isImportFinished = true;
-					setImportState({ state: "done", import: pollRes.body.import });
-				} else if (pollRes.body.importStatus === "ongoing") {
-					const progress = pollRes.body.progress;
-					const description =
-						progress &&
-						typeof progress === "object" &&
-						"description" in progress &&
-						typeof progress.description === "string"
-							? progress.description
-							: "Importing.";
-
+				es.addEventListener("progress", (e) => {
+					const { description } = JSON.parse((e as MessageEvent<string>).data) as {
+						description: string;
+					};
 					setImportState({
 						state: "waiting_processing",
 						progressInfo: { description },
 					});
+				});
 
-					await Sleep(1000);
-				} else {
-					setImportState({
-						state: "failed",
-						error: pollRes.description ?? "Import failed.",
-					});
-					isImportFinished = true;
-				}
-			}
+				es.addEventListener("done", () => {
+					// Import finished — fetch the result from poll-status.
+					APIFetchV1<ImportPollStatus>(`/imports/${importID}/poll-status`)
+						.then((pollRes) => {
+							if (pollRes.success && pollRes.body.importStatus === "completed") {
+								setImportState({ state: "done", import: pollRes.body.import });
+							} else {
+								setImportState({
+									state: "failed",
+									error: "Import completed but could not be loaded.",
+								});
+							}
+						})
+						.catch(() => {
+							setImportState({
+								state: "failed",
+								error: "Import completed but could not be loaded.",
+							});
+						})
+						.finally(() => {
+							es.close();
+							resolve();
+						});
+				});
+
+				es.addEventListener("import:failed", (e) => {
+					const { description } = JSON.parse((e as MessageEvent<string>).data) as {
+						description: string;
+					};
+					setImportState({ state: "failed", error: description });
+					es.close();
+					resolve();
+				});
+
+				// Connection-level error (network drop, server restart, etc.).
+				// EventSource auto-reconnects; if it keeps failing, surface it to the user.
+				let connectionErrors = 0;
+				es.onerror = () => {
+					connectionErrors++;
+					if (connectionErrors >= 5) {
+						setImportState({
+							state: "failed",
+							error: "Lost connection to the import progress stream. Please refresh.",
+						});
+						es.close();
+						resolve();
+					}
+				};
+			});
 		} else {
 			setImportState({
 				state: "failed",

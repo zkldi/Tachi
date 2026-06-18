@@ -30,6 +30,15 @@ export interface PaginatedResult<T> {
 	total: number;
 }
 
+/** Count of jobs currently in the queued (waiting) state. */
+export async function CountQueuedJobs(): Promise<number> {
+	const row = await DB.selectFrom("job_queue")
+		.select((eb) => eb.fn.countAll<number>().as("count"))
+		.where("job_queue.status", "=", 0)
+		.executeTakeFirstOrThrow();
+	return Number(row.count);
+}
+
 /** Currently running jobs (not limited by the recent-hours window). */
 export function GetActiveJobs(limit = ADMIN_PAGE_SIZE): Promise<Array<JobQueue>> {
 	return DB.selectFrom("job_queue")

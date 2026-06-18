@@ -88,7 +88,7 @@ export async function ImportAllIterableData<D, C>(
 
 		i++;
 
-		if (job) {
+		if (job && i % 50 === 0) {
 			void job.updateProgress({ description: `Imported ${i} scores.` });
 		}
 	}

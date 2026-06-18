@@ -1,6 +1,7 @@
 import type { ScoreImportJobData } from "#lib/score-import/worker/types";
 
 import { MakeAction } from "#lib/actions/actions";
+import { PublishImportProgressEvent } from "#lib/jobs/job-queue/worker-pubsub";
 import { GetInputParser } from "#lib/score-import/framework/common/get-input-parser";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import ScoreImportMain from "#lib/score-import/framework/score-importing/score-import-main";
@@ -9,6 +10,7 @@ import {
 	MarkImportAsFailed,
 	StartTrackingImport,
 } from "#lib/score-import/framework/status-tracking/import-status-tracking";
+import { RedisScoreImportJob } from "#lib/score-import/worker/redis-score-import-job";
 import { ExpectedErr } from "bliss";
 import { type ImportTypes } from "tachi-common";
 
@@ -39,6 +41,8 @@ export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input
 		await StartTrackingImport(jobData);
 	}
 
+	const job = new RedisScoreImportJob(importID);
+
 	try {
 		const InputParser = GetInputParser(jobData);
 		await ScoreImportMain(
@@ -47,12 +51,19 @@ export const ACTION_ScoreImport = MakeAction("SCORE_IMPORT", async (taker, input
 			importType as ImportTypes,
 			InputParser,
 			importID,
+			undefined,
+			job,
 		);
 		await EndTrackingImport(importID);
+		PublishImportProgressEvent(importID, { type: "done" });
 		return { importID };
 	} catch (e) {
 		const err = e as Error | ScoreImportFatalError;
 		await MarkImportAsFailed(importID, err);
+		PublishImportProgressEvent(importID, {
+			type: "import:failed",
+			description: err.message,
+		});
 		if (err instanceof ScoreImportFatalError) {
 			throw new ExpectedErr(err.statusCode, err.message);
 		}

@@ -5,12 +5,9 @@ import type { account_id } from './Account';
 import type { default as ActionResult } from './ActionResult';
 import type { ColumnType, Selectable, Insertable, Updateable } from 'kysely';
 
-/** Identifier type for public.action */
-export type action_row_id = string;
-
 /** Represents the table public.action */
 export default interface ActionTable {
-  row_id: ColumnType<action_row_id, action_row_id | undefined, action_row_id>;
+  row_id: ColumnType<string, string | undefined, string>;
 
   user_id: ColumnType<account_id | null, account_id | null, account_id | null>;
 

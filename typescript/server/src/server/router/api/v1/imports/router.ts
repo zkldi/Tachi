@@ -1,3 +1,5 @@
+import type { Request, Response } from "express";
+
 import { ACTION_DeleteImport } from "#actions/delete-import";
 import { SYMBOL_TACHI_API_AUTH } from "#lib/constants/tachi";
 import {
@@ -14,10 +16,12 @@ import {
 	JOB_STATUS_QUEUED,
 	JOB_STATUS_RUNNING,
 } from "#lib/jobs/job-queue/constants";
+import { importProgressChannel, type ImportProgressEvent } from "#lib/jobs/job-queue/worker-pubsub";
 import { log } from "#lib/log/log";
 import { withImport } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import DB from "#services/pg/db";
+import { RedisClient } from "#services/redis/redis";
 import { GetRelevantSongsAndCharts } from "#utils/db";
 import { GetUsersWithIDs, GetUserWithID } from "#utils/user";
 import { ExpectedErr } from "bliss";
@@ -242,4 +246,100 @@ API_V1_ROUTER.add("GET /imports/:importID/poll-status", async ({ params }) => {
 	}
 
 	throw new ExpectedErr(500, "Unrecognised job queue state.");
+});
+
+// ─── Import live-progress SSE stream ─────────────────────────────────────────
+
+/** Max time (ms) to hold an SSE connection open waiting for an import. */
+const IMPORT_STREAM_TIMEOUT_MS = 10 * 60 * 1000;
+
+/**
+ * Server-Sent Events stream for a score import.
+ *
+ * The client receives named events:
+ *   - `progress`      — `{ description: string }` — a stage or score-count update
+ *   - `done`          — `{}` — import finished; client should fetch poll-status for the result
+ *   - `import:failed` — `{ description: string }` — import failed with this reason
+ *
+ * If the import has already completed or failed before the client connects,
+ * the appropriate event is sent immediately and the connection is closed.
+ *
+ * No authentication is required (mirrors poll-status which is also public).
+ *
+ * @name GET /api/v1/imports/:importID/stream
+ */
+API_V1_ROUTER.rawAdd("GET", "/imports/:importID/stream", async (req: Request, res: Response) => {
+	const importID = req.params.importID;
+
+	// ── Check if already done / failed before subscribing ──────────────────────
+	const importRow = await DB.selectFrom("import")
+		.select(["import.id", "import.status"])
+		.where("import.id", "=", importID)
+		.executeTakeFirst();
+
+	if (importRow?.status === "completed") {
+		res.setHeader("Content-Type", "text/event-stream");
+		res.write("event: done\ndata: {}\n\n");
+		res.end();
+		return;
+	}
+
+	const tracker = await GetImportTrackerByImportId(importID);
+
+	if (tracker?.type === "FAILED") {
+		res.setHeader("Content-Type", "text/event-stream");
+		res.write(
+			`event: import:failed\ndata: ${JSON.stringify({ description: tracker.error.message })}\n\n`,
+		);
+		res.end();
+		return;
+	}
+
+	// ── Import is in-flight — set up SSE and subscribe ─────────────────────────
+	res.setHeader("Content-Type", "text/event-stream");
+	res.setHeader("Cache-Control", "no-cache");
+	res.setHeader("Connection", "keep-alive");
+	res.flushHeaders();
+
+	const subscriber = await RedisClient.duplicate();
+
+	await subscriber.subscribe(importProgressChannel(importID), (message) => {
+		let event: ImportProgressEvent;
+		try {
+			event = JSON.parse(message) as ImportProgressEvent;
+		} catch {
+			return;
+		}
+
+		if (event.type === "progress") {
+			res.write(
+				`event: progress\ndata: ${JSON.stringify({ description: event.description })}\n\n`,
+			);
+		} else if (event.type === "done") {
+			res.write("event: done\ndata: {}\n\n");
+		} else {
+			// import:failed
+			res.write(
+				`event: import:failed\ndata: ${JSON.stringify({ description: event.description })}\n\n`,
+			);
+		}
+	});
+
+	const keepalive = setInterval(() => res.write(": keepalive\n\n"), 25_000);
+
+	const timeout = setTimeout(() => {
+		res.write(
+			`event: import:failed\ndata: ${JSON.stringify({ description: "Import timed out waiting for the worker." })}\n\n`,
+		);
+		cleanup();
+	}, IMPORT_STREAM_TIMEOUT_MS);
+
+	function cleanup() {
+		clearInterval(keepalive);
+		clearTimeout(timeout);
+		subscriber.unsubscribe().catch(() => {});
+		subscriber.close();
+	}
+
+	req.on("close", cleanup);
 });
