@@ -10,17 +10,20 @@ services:
       - tachi-redis:/data
   tachi-postgres:
     container_name: tachi-postgres
-    image: postgres:18
+    build:
+      context: .
+      dockerfile: dev/Dockerfile.postgres
     restart: unless-stopped
     ports:
       - "5432:5432"
-    # Dev observability: pg_stat_statements + slow-query logging + auto_explain plans.
-    # Recreate the container (or bump volume) after changing these; existing DBs: run
-    # CREATE EXTENSION pg_stat_statements; once if missing.
     command:
       - postgres
       - -c
-      - shared_preload_libraries=pg_stat_statements,auto_explain
+      - shared_preload_libraries=pg_stat_statements,auto_explain,pg_partman_bgw
+      - -c
+      - pg_partman_bgw.interval=3600
+      - -c
+      - pg_partman_bgw.dbname=tachi
       - -c
       - pg_stat_statements.track=all
       - -c
@@ -47,7 +50,9 @@ services:
   # we want for tests.
   tachi-postgres-test:
     container_name: tachi-postgres-test
-    image: postgres:18
+    build:
+      context: .
+      dockerfile: dev/Dockerfile.postgres
     restart: unless-stopped
     ports:
       - "5433:5432"
@@ -89,7 +94,7 @@ services:
       - -c
       - autovacuum_analyze_scale_factor=0.1
       - -c
-      - shared_preload_libraries=pg_stat_statements
+      - shared_preload_libraries=pg_stat_statements,pg_partman_bgw
       - -c
       - pg_stat_statements.track=all
     # Sized for ~16 concurrent worker DBs + template + WAL headroom.
@@ -102,24 +107,6 @@ services:
       POSTGRES_PASSWORD: tachi
       POSTGRES_DB: postgres
       PGDATA: /var/lib/postgresql/data/pgdata
-
-  # PostgreSQL admin UI (http://localhost:5050). Dev + test servers are pre-registered
-  # on first launch via dev/pgadmin/servers.json (wipe tachi-pgadmin volume to reload).
-  tachi-pgadmin:
-    container_name: tachi-pgadmin
-    image: dpage/pgadmin4
-    restart: unless-stopped
-    depends_on:
-      - tachi-postgres
-      - tachi-postgres-test
-    ports:
-      - "5050:80"
-    environment:
-      PGADMIN_DEFAULT_EMAIL: pgadmin@example.com
-      PGADMIN_DEFAULT_PASSWORD: password
-    volumes:
-      - tachi-pgadmin:/var/lib/pgadmin
-      - "./dev/pgadmin/servers.json:/pgadmin4/servers.json:ro"
 
   tachi-s3:
     container_name: tachi-s3
@@ -134,7 +121,7 @@ services:
         - tachi-minio:/data
     entrypoint: /usr/bin/minio server /data --console-address=':9001'
 
-  # Local SMTP capture + web UI (http://localhost:8025). Server uses tachi-mailpit:1025 via env.
+  # Read emails on port 1025.
   tachi-mailpit:
     container_name: tachi-mailpit
     image: axllent/mailpit:v1.29.7
@@ -167,7 +154,7 @@ services:
       - /tachi/node_modules/
       - /tachi/.bun
 
-  # Local observability (Grafana + Prometheus + Alloy). Grafana UI: http://localhost:3005
+  # Local observability stack (Grafana + Prometheus + Alloy). Grafana UI: http://localhost:3005
   # Alloy scrapes the API metrics endpoint at tachi-dev:9779 and remote-writes into Prometheus.
   tachi-grafana:
     container_name: tachi-grafana
@@ -227,7 +214,6 @@ volumes:
   tachi-redis:
   tachi-logs:
   tachi-postgres:
-  tachi-pgadmin:
   tachi-minio:
   tachi-grafana:
   tachi-prometheus:

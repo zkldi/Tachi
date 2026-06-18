@@ -107,7 +107,7 @@ describe("score-importing duplicate score ID regression", () => {
 		expect(flushAfterSkip).not.toBeNull();
 		expect(flushAfterSkip).toBe(0);
 
-		const rowCount = await DB.selectFrom("score")
+		const rowCount = await DB.selectFrom("raw_score")
 			.select((eb) => eb.fn.countAll().as("c"))
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0));
@@ -131,7 +131,7 @@ describe("score-importing duplicate score ID regression", () => {
 		expect(results).toHaveLength(1);
 		expect(results[0]?.success).toBe(true);
 
-		const rowCount = await DB.selectFrom("score")
+		const rowCount = await DB.selectFrom("raw_score")
 			.select((eb) => eb.fn.countAll().as("c"))
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0));

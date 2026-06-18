@@ -110,7 +110,7 @@ async function insertCommittedScore(opts: {
 	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", doc.scoreData);
 	const ts = UnixMillisecondsToISO8601(1_700_000_000_000);
 
-	await DB.insertInto("score")
+	await DB.insertInto("raw_score")
 		.values({
 			id: opts.scoreId,
 			user_id: opts.userId,
@@ -155,7 +155,7 @@ async function insertUncommittedScore(opts: {
 	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", doc.scoreData);
 	const ts = UnixMillisecondsToISO8601(1_700_000_100_000);
 
-	await DB.insertInto("score")
+	await DB.insertInto("raw_score")
 		.values({
 			id: opts.scoreId,
 			user_id: opts.userId,
@@ -478,9 +478,9 @@ describe("dirty queue race harness", () => {
 		await drainPbDirty();
 		expect(await readPbPercent(userId, chartId)).toBe(50);
 
-		await DB.updateTable("score")
+		await DB.updateTable("raw_score")
 			.set({ committed: true })
-			.where("score.import_id", "=", importId)
+			.where("raw_score.import_id", "=", importId)
 			.execute();
 
 		const afterCommitDirty = await DB.selectFrom("pb_dirty")

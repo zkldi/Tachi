@@ -34,7 +34,7 @@ export async function DeleteMultipleScores(
 	const scoreIDs = scores.map((e) => e.scoreID);
 	const chartIDs = scores.map((e) => e.chartID);
 
-	const sessionLinks = await DB.selectFrom("score")
+	const sessionLinks = await DB.selectFrom("raw_score as score")
 		.select("session_id")
 		.where("id", "in", scoreIDs)
 		.execute();
@@ -49,10 +49,10 @@ export async function DeleteMultipleScores(
 
 	await DB.deleteFrom("pb_composed_from").where("score_id", "in", scoreIDs).execute();
 
-	await DB.deleteFrom("score").where("id", "in", scoreIDs).execute();
+	await DB.deleteFrom("raw_score").where("id", "in", scoreIDs).execute();
 
 	for (const sessionId of sessionIds) {
-		const remainingRows = await DB.selectFrom("score")
+		const remainingRows = await DB.selectFrom("raw_score as score")
 			.innerJoin("chart", "chart.id", "score.chart_id")
 			.innerJoin("song", "song.id", "chart.song_id")
 			.leftJoin("import", "import.id", "score.import_id")

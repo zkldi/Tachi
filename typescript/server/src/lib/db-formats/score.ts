@@ -107,7 +107,7 @@ export async function LoadScoreDocumentById(scoreID: string): Promise<ScoreDocum
 
 /** All scores linked to a Postgres `import.id` (`score.import_id`). */
 export async function LoadScoreDocumentsForImport(importId: string): Promise<Array<ScoreDocument>> {
-	const rows = await DB.selectFrom("score")
+	const rows = await DB.selectFrom("raw_score as score")
 		.innerJoin("chart", "chart.id", "score.chart_id")
 		.innerJoin("song", "song.id", "chart.song_id")
 		.leftJoin("import", "import.id", "score.import_id")

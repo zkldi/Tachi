@@ -366,7 +366,7 @@ async function HydrateCheckAndInsertScore(
 	}
 
 	// committed or not - don't import scores twice.
-	const existing = await DB.selectFrom("score")
+	const existing = await DB.selectFrom("raw_score")
 		.select("id")
 		.where("id", "=", scoreID)
 		.executeTakeFirst();

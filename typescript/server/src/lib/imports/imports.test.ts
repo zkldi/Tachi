@@ -66,7 +66,7 @@ async function insertIidxScore(opts: {
 	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", doc.scoreData);
 	const ts = UnixMillisecondsToISO8601(timeMs);
 
-	await DB.insertInto("score")
+	await DB.insertInto("raw_score")
 		.values({
 			id: opts.scoreId,
 			user_id: opts.userId,
@@ -173,15 +173,15 @@ describe("RevertImport", () => {
 			.executeTakeFirst();
 		expect(importRow).toBeUndefined();
 
-		const s1 = await DB.selectFrom("score")
+		const s1 = await DB.selectFrom("raw_score")
 			.select("id")
 			.where("id", "=", "score_1")
 			.executeTakeFirst();
-		const s2 = await DB.selectFrom("score")
+		const s2 = await DB.selectFrom("raw_score")
 			.select("id")
 			.where("id", "=", "score_2")
 			.executeTakeFirst();
-		const s3 = await DB.selectFrom("score")
+		const s3 = await DB.selectFrom("raw_score")
 			.select("id")
 			.where("id", "=", "score_3")
 			.executeTakeFirst();
@@ -265,7 +265,7 @@ describe("RevertImport", () => {
 			.executeTakeFirst();
 		expect(link).toBeUndefined();
 
-		const deletedScore = await DB.selectFrom("score")
+		const deletedScore = await DB.selectFrom("raw_score")
 			.select("id")
 			.where("id", "=", scoreId)
 			.executeTakeFirst();

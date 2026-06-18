@@ -70,7 +70,7 @@ async function insertScoreRow(opts: {
 	const { data, derived, judgements } = mongoScoreDataToPg("iidx-sp", doc.scoreData);
 	const ts = UnixMillisecondsToISO8601(1_700_000_000_000);
 
-	await DB.insertInto("score")
+	await DB.insertInto("raw_score")
 		.values({
 			id: opts.scoreId,
 			user_id: opts.userId,
@@ -147,9 +147,9 @@ describe("pb_dirty trigger and last_clean_started_at guards", () => {
 			importId,
 		});
 
-		await DB.updateTable("score")
+		await DB.updateTable("raw_score")
 			.set({ committed: true })
-			.where("score.id", "=", "score_staged")
+			.where("raw_score.id", "=", "score_staged")
 			.execute();
 
 		const dirty = await DB.selectFrom("pb_dirty")
