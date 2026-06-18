@@ -29880,5 +29880,70 @@
 			"ruina_dustupmaxmaximizer"
 		],
 		"title": "RUINA"
+	},
+	{
+		"altTitles": [],
+		"artist": "打打だいず",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19ea91be1186d6756a0",
+		"legacySongID": 2514,
+		"searchTerms": [
+			"alive_dadadaizu"
+		],
+		"title": "ΔLI∇E"
+	},
+	{
+		"altTitles": [],
+		"artist": "qfeileadh",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19ea91be12528ff4fbf",
+		"legacySongID": 2515,
+		"searchTerms": [
+			"avyxxirenia_qfeileadh"
+		],
+		"title": "ΛVYXXIRENIΛ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yuta Imai",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19ea91be1269582ffcd",
+		"legacySongID": 2518,
+		"searchTerms": [
+			"ultracharge_yutaimai"
+		],
+		"title": "ULTRACHARGE"
+	},
+	{
+		"altTitles": [],
+		"artist": "影虎。",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19ea91be126daaf3543",
+		"legacySongID": 2516,
+		"searchTerms": [
+			"ryotenmekko_kagetora"
+		],
+		"title": "凌天滅狐"
+	},
+	{
+		"altTitles": [],
+		"artist": "Alkome",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19ea91be126e061cc25",
+		"legacySongID": 2517,
+		"searchTerms": [
+			"solitarypoison_alkome"
+		],
+		"title": "Solitary Poison"
 	}
 ]
