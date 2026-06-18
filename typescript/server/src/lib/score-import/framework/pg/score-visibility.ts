@@ -6,7 +6,8 @@ import { type ExpressionBuilder, sql } from "kysely";
 import { getActiveImportId } from "../import-run-context";
 
 /**
- * SQL predicate: score row is visible for import logic (committed scores, or scores from the active import run).
+ * SQL predicate for queries against `raw_score as score`: visible means committed,
+ * or belonging to the currently active import run (staged scores).
  */
 export function scoreVisiblePredicate(eb: ExpressionBuilder<Database, "score">) {
 	const importId = getActiveImportId();
@@ -19,10 +20,8 @@ export function scoreVisiblePredicate(eb: ExpressionBuilder<Database, "score">) 
 }
 
 /**
- * Same as {@link scoreVisiblePredicate}, but as a standalone expression for queries that join `score` with other tables (Kysely's `ExpressionBuilder` table set differs).
- *
- * TODO(zk): move scores into an "internal_scores" table, then have a "scores" view which contains only
- * the visible ones - allows us to ban users and stuff.
+ * Same as {@link scoreVisiblePredicate}, but as a standalone SQL fragment for queries
+ * that join `raw_score as score` with other tables (Kysely's ExpressionBuilder table set differs).
  */
 export function scoreVisibleSql() {
 	const importId = getActiveImportId();
@@ -36,17 +35,17 @@ export function scoreVisibleSql() {
 
 /** Deletes all uncommitted scores for an import run (failed import cleanup). */
 export async function deleteUncommittedScoresForImport(importId: string): Promise<void> {
-	await DB.deleteFrom("score")
-		.where("import_id", "=", importId)
-		.where("committed", "=", false)
+	await DB.deleteFrom("raw_score as score")
+		.where("score.import_id", "=", importId)
+		.where("score.committed", "=", false)
 		.execute();
 }
 
 /** Marks staged scores as committed after successful post-import steps. */
 export async function commitScoresForImport(importId: string): Promise<void> {
-	await DB.updateTable("score")
+	await DB.updateTable("raw_score as score")
 		.set({ committed: true })
-		.where("import_id", "=", importId)
-		.where("committed", "=", false)
+		.where("score.import_id", "=", importId)
+		.where("score.committed", "=", false)
 		.execute();
 }

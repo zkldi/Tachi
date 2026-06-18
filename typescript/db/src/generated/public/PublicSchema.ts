@@ -46,7 +46,6 @@ import type { default as AccountFollowingTable } from './AccountFollowing';
 import type { default as ImportTable } from './Import';
 import type { default as FolderTable } from './Folder';
 import type { default as PrivAccountCredentialTable } from './PrivAccountCredential';
-import type { default as ScoreTable } from './Score';
 import type { default as ImportTimingTable } from './ImportTiming';
 import type { default as QuestSubTable } from './QuestSub';
 import type { default as OrphanScoreTable } from './OrphanScore';
@@ -55,6 +54,7 @@ import type { default as TableTable } from './Table';
 import type { default as ChartLeaderboardTable } from './ChartLeaderboard';
 import type { default as GoalSubTable } from './GoalSub';
 import type { default as JobQueueTable } from './JobQueue';
+import type { default as RawScoreTable } from './RawScore';
 import type { default as PrivApiClientTable } from './PrivApiClient';
 import type { default as PrivApiTokenTable } from './PrivApiToken';
 import type { default as SvcKshookSv6cSettingsTable } from './SvcKshookSv6cSettings';
@@ -70,6 +70,7 @@ import type { default as QuestlineTable } from './Questline';
 import type { default as CronTaskTable } from './CronTask';
 import type { default as ImportClassTable } from './ImportClass';
 import type { default as GameStatsSnapshotTable } from './GameStatsSnapshot';
+import type { default as ScoreTable } from './Score';
 
 export default interface PublicSchema {
   priv_svc_cg_card_info: PrivSvcCgCardInfoTable;
@@ -162,8 +163,6 @@ export default interface PublicSchema {
 
   priv_account_credential: PrivAccountCredentialTable;
 
-  score: ScoreTable;
-
   import_timing: ImportTimingTable;
 
   quest_sub: QuestSubTable;
@@ -179,6 +178,8 @@ export default interface PublicSchema {
   goal_sub: GoalSubTable;
 
   job_queue: JobQueueTable;
+
+  raw_score: RawScoreTable;
 
   priv_api_client: PrivApiClientTable;
 
@@ -209,4 +210,6 @@ export default interface PublicSchema {
   import_class: ImportClassTable;
 
   game_stats_snapshot: GameStatsSnapshotTable;
+
+  score: ScoreTable;
 }

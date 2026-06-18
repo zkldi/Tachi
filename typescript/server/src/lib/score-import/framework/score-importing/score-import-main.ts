@@ -9,6 +9,7 @@ import { LoadImportDocumentById } from "#lib/db-formats/import-document";
 import { clearPbDirtyForUser } from "#lib/jobs/drain-dirty-queues";
 import { runWithImportContext } from "#lib/score-import/framework/import-run-context";
 import {
+	cleanUpStaleImportsForUser,
 	deleteImportRun,
 	ensureImportStub,
 } from "#lib/score-import/framework/pg/ensure-import-stub";
@@ -97,6 +98,8 @@ export default async function ScoreImportMain<D, C>(
 	}
 
 	return runWithImportContext(importID, async () => {
+		// Wipe any committed=false rows from previous crashed imports before we begin.
+		await cleanUpStaleImportsForUser(user.id, importID);
 		await deleteImportRun(importID);
 
 		const timeStarted = Date.now();

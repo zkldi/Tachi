@@ -1,4 +1,4 @@
-import type { NewScore } from "tachi-db";
+import type { NewRawScore } from "tachi-db";
 
 import { mongoScoreDataToPg } from "#lib/v3/migration-tools";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
@@ -16,7 +16,7 @@ export function mongoScoreDocumentToNewScoreRow(
 		importId: string | null;
 		sessionId: string | null;
 	},
-): NewScore {
+): NewRawScore {
 	const game = score.game;
 	const { data, derived, judgements } = mongoScoreDataToPg(game, score.scoreData);
 

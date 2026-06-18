@@ -149,7 +149,7 @@ export async function drainSessionDirty(): Promise<number> {
 		const runStartedAt = await newCalculationRunStartedAt();
 
 		// eslint-disable-next-line no-await-in-loop
-		const scoreRows = await DB.selectFrom("score")
+		const scoreRows = await DB.selectFrom("raw_score as score")
 			.innerJoin("chart", "chart.id", "score.chart_id")
 			.innerJoin("song", "song.id", "chart.song_id")
 			.leftJoin("import", "import.id", "score.import_id")

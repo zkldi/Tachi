@@ -46,7 +46,6 @@ export { type default as AccountFollowingTable, type AccountFollowing, type NewA
 export { type import_id, type default as ImportTable, type Import, type NewImport, type ImportUpdate } from './public/Import';
 export { type folder_id, type default as FolderTable, type Folder, type NewFolder, type FolderUpdate } from './public/Folder';
 export { type default as PrivAccountCredentialTable, type PrivAccountCredential, type NewPrivAccountCredential, type PrivAccountCredentialUpdate } from './public/PrivAccountCredential';
-export { type score_id, type default as ScoreTable, type Score, type NewScore, type ScoreUpdate } from './public/Score';
 export { type default as ImportTimingTable, type ImportTiming, type NewImportTiming, type ImportTimingUpdate } from './public/ImportTiming';
 export { type default as QuestSubTable, type QuestSub, type NewQuestSub, type QuestSubUpdate } from './public/QuestSub';
 export { type orphan_score_row_id, type default as OrphanScoreTable, type OrphanScore, type NewOrphanScore, type OrphanScoreUpdate } from './public/OrphanScore';
@@ -55,6 +54,7 @@ export { type table_id, type default as TableTable, type Table, type NewTable, t
 export { type default as ChartLeaderboardTable, type ChartLeaderboard, type NewChartLeaderboard, type ChartLeaderboardUpdate } from './public/ChartLeaderboard';
 export { type default as GoalSubTable, type GoalSub, type NewGoalSub, type GoalSubUpdate } from './public/GoalSub';
 export { type job_queue_row_id, type default as JobQueueTable, type JobQueue, type NewJobQueue, type JobQueueUpdate } from './public/JobQueue';
+export { type raw_score_id, type default as RawScoreTable, type RawScore, type NewRawScore, type RawScoreUpdate } from './public/RawScore';
 export { type priv_api_client_client_id, type default as PrivApiClientTable, type PrivApiClient, type NewPrivApiClient, type PrivApiClientUpdate } from './public/PrivApiClient';
 export { type priv_api_token_token, type default as PrivApiTokenTable, type PrivApiToken, type NewPrivApiToken, type PrivApiTokenUpdate } from './public/PrivApiToken';
 export { type default as SvcKshookSv6cSettingsTable, type SvcKshookSv6cSettings, type NewSvcKshookSv6cSettings, type SvcKshookSv6cSettingsUpdate } from './public/SvcKshookSv6cSettings';
@@ -70,6 +70,7 @@ export { type questline_id, type default as QuestlineTable, type Questline, type
 export { type cron_task_id, type default as CronTaskTable, type CronTask, type NewCronTask, type CronTaskUpdate } from './public/CronTask';
 export { type import_class_row_id, type default as ImportClassTable, type ImportClass, type NewImportClass, type ImportClassUpdate } from './public/ImportClass';
 export { type game_stats_snapshot_game, type game_stats_snapshot_timestamp, type default as GameStatsSnapshotTable, type GameStatsSnapshot, type NewGameStatsSnapshot, type GameStatsSnapshotUpdate } from './public/GameStatsSnapshot';
+export { type default as ScoreTable, type Score } from './public/Score';
 export { type default as AuthLevel } from './public/AuthLevel';
 export { type default as AccountBadgeKind } from './public/AccountBadgeKind';
 export { type default as ImportStatus } from './public/ImportStatus';

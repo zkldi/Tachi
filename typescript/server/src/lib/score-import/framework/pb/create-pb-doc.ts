@@ -48,7 +48,7 @@ async function GetBaseScoreForPB(
 ): Promise<ScoreDocument | null> {
 	const sortVal = defaultMetricSortValueSql(game);
 
-	let q = DB.selectFrom("score")
+	let q = DB.selectFrom("raw_score as score")
 		.innerJoin("chart", "chart.id", "score.chart_id")
 		.innerJoin("song", "song.id", "chart.song_id")
 		.leftJoin("import", "import.id", "score.import_id")

@@ -300,9 +300,9 @@ export async function LoadScoresIntoSessions(
 				.where("id", "=", session.sessionID)
 				.execute();
 
-			await DB.updateTable("score")
+			await DB.updateTable("raw_score as score")
 				.set({ session_id: session.sessionID })
-				.where("id", "in", scoreIDs)
+				.where("score.id", "in", scoreIDs)
 				.execute();
 		} else {
 			log.debug(
@@ -330,9 +330,9 @@ export async function LoadScoresIntoSessions(
 				})
 				.execute();
 
-			await DB.updateTable("score")
+			await DB.updateTable("raw_score as score")
 				.set({ session_id: session.sessionID })
-				.where("id", "in", scoreIDs)
+				.where("score.id", "in", scoreIDs)
 				.execute();
 		}
 

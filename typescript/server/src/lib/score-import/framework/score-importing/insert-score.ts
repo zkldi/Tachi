@@ -67,7 +67,7 @@ export async function InsertQueue(userID: integer) {
 				}),
 			);
 
-			await DB.insertInto("score").values(rows).execute();
+			await DB.insertInto("raw_score").values(rows).execute();
 		} catch (err) {
 			log.warn(
 				{ err },

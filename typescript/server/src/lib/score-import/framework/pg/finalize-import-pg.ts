@@ -88,10 +88,10 @@ export async function finalizeImportToPostgres(
 		.execute();
 
 	await db
-		.updateTable("score")
+		.updateTable("raw_score as score")
 		.set({ committed: true })
-		.where("import_id", "=", importID)
-		.where("committed", "=", false)
+		.where("score.import_id", "=", importID)
+		.where("score.committed", "=", false)
 		.execute();
 
 	await db.deleteFrom("import_game").where("id", "=", importID).execute();
