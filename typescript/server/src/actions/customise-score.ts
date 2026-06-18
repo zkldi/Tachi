@@ -9,7 +9,7 @@ export const ACTION_CustomiseScore = MakeAction("CUSTOMISE_SCORE", async (_taker
 
 	await DB.transaction().execute(async (trx) => {
 		const scoreRow = await trx
-			.selectFrom("score")
+			.selectFrom("raw_score")
 			.select(["chart_id", "user_id"])
 			.where("id", "=", input.scoreID)
 			.executeTakeFirst();
@@ -28,7 +28,7 @@ export const ACTION_CustomiseScore = MakeAction("CUSTOMISE_SCORE", async (_taker
 			setScore.highlight = input.highlight;
 		}
 
-		await trx.updateTable("score").set(setScore).where("id", "=", input.scoreID).execute();
+		await trx.updateTable("raw_score").set(setScore).where("id", "=", input.scoreID).execute();
 
 		if (input.highlight === true || input.highlight === false) {
 			await trx

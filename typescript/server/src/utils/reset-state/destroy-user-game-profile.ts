@@ -23,10 +23,10 @@ export default async function DestroyUserGameProfile(userID: integer, game: V3Ga
 		.where("pb.lens", "is", null)
 		.execute();
 
-	const scoreChartRows = await DB.selectFrom("score")
-		.innerJoin("chart", "chart.id", "score.chart_id")
+	const scoreChartRows = await DB.selectFrom("raw_score")
+		.innerJoin("chart", "chart.id", "raw_score.chart_id")
 		.select("chart.id")
-		.where("score.user_id", "=", userID)
+		.where("raw_score.user_id", "=", userID)
 		.where("chart.game", "=", game)
 		.execute();
 
@@ -34,10 +34,10 @@ export default async function DestroyUserGameProfile(userID: integer, game: V3Ga
 		...new Set([...chartRows.map((r) => r.id), ...scoreChartRows.map((r) => r.id)]),
 	];
 
-	const scoreRows = await DB.selectFrom("score")
-		.innerJoin("chart", "chart.id", "score.chart_id")
-		.select("score.id")
-		.where("score.user_id", "=", userID)
+	const scoreRows = await DB.selectFrom("raw_score")
+		.innerJoin("chart", "chart.id", "raw_score.chart_id")
+		.select("raw_score.id")
+		.where("raw_score.user_id", "=", userID)
 		.where("chart.game", "=", game)
 		.execute();
 
@@ -46,7 +46,7 @@ export default async function DestroyUserGameProfile(userID: integer, game: V3Ga
 	if (scoreIds.length > 0) {
 		await DB.deleteFrom("pb_composed_from").where("score_id", "in", scoreIds).execute();
 
-		await DB.deleteFrom("score").where("id", "in", scoreIds).execute();
+		await DB.deleteFrom("raw_score").where("id", "in", scoreIds).execute();
 	}
 
 	const pbRowIds = await DB.selectFrom("pb")

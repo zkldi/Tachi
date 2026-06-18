@@ -113,7 +113,7 @@ async function main(): Promise<void> {
 		.execute();
 
 	console.log("[anonymise-db] Nulling score comments…");
-	await DB.updateTable("score").set({ comment: null }).execute();
+	await DB.updateTable("raw_score").set({ comment: null }).execute();
 
 	// ── 2. TRUNCATE: remove all rows from every table NOT in the whitelist ────
 	//

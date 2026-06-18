@@ -1,5 +1,11 @@
 import type { GameGroup, ImportTypes, integer } from "tachi-common";
 
+import {
+	type ScoreDocumentJoinRow,
+	SELECT_SCORE_DOCUMENT,
+	ToScoreDocument,
+} from "#lib/db-formats/score";
+import { DeleteMultipleScores } from "#lib/score-mutation/delete-scores";
 import DB from "#services/pg/db";
 
 /**
@@ -33,12 +39,21 @@ export async function ensureImportStub(
 
 /**
  * Removes an in-progress import run: staged scores and the import stub (dependent rows cascade).
+ *
+ * Uses {@link DeleteMultipleScores} so that pb_composed_from, sessions, PBs, goals,
+ * and quests are all correctly rolled back if ProcessPBs already ran against these scores.
  */
 export async function deleteImportRun(importId: string): Promise<void> {
-	await DB.deleteFrom("raw_score as score")
+	const rows = await DB.selectFrom("raw_score as score")
+		.innerJoin("chart", "chart.id", "score.chart_id")
+		.innerJoin("song", "song.id", "chart.song_id")
+		.leftJoin("import", "import.id", "score.import_id")
+		.select(SELECT_SCORE_DOCUMENT)
 		.where("score.import_id", "=", importId)
 		.where("score.committed", "=", false)
 		.execute();
+
+	await DeleteMultipleScores(rows.map((r) => ToScoreDocument(r as ScoreDocumentJoinRow)));
 
 	// import_* / import_timing / import_game rows cascade. orphan_score.import_id is set null (not deleted).
 	await DB.deleteFrom("import").where("id", "=", importId).execute();
@@ -70,9 +85,17 @@ export async function cleanUpStaleImportsForUser(
 	}
 
 	// Safety net: delete any committed=false scores whose import row was already removed.
-	await DB.deleteFrom("raw_score as score")
+	const uncommittedRows = await DB.selectFrom("raw_score as score")
+		.innerJoin("chart", "chart.id", "score.chart_id")
+		.innerJoin("song", "song.id", "chart.song_id")
+		.leftJoin("import", "import.id", "score.import_id")
+		.select(SELECT_SCORE_DOCUMENT)
 		.where("score.user_id", "=", userId)
 		.where("score.committed", "=", false)
 		.where("score.import_id", "!=", currentImportId)
 		.execute();
+
+	await DeleteMultipleScores(
+		uncommittedRows.map((r) => ToScoreDocument(r as ScoreDocumentJoinRow)),
+	);
 }

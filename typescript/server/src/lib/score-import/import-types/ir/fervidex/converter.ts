@@ -266,7 +266,7 @@ export const ConverterIRFervidex: ConverterFunction<FervidexScore, FervidexConte
 
 		await DB.transaction().execute(async (trx) => {
 			const scoreRow = await trx
-				.selectFrom("score")
+				.selectFrom("raw_score")
 				.select("chart_id")
 				.where("id", "=", scoreID)
 				.where("user_id", "=", context.userID)
@@ -277,7 +277,7 @@ export const ConverterIRFervidex: ConverterFunction<FervidexScore, FervidexConte
 			}
 
 			await trx
-				.updateTable("score")
+				.updateTable("raw_score")
 				.set({ highlight: true })
 				.where("id", "=", scoreID)
 				.execute();

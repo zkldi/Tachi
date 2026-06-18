@@ -392,7 +392,7 @@ async function HydrateCheckAndInsertScore(
 
 	if (force) {
 		try {
-			await DB.insertInto("score")
+			await DB.insertInto("raw_score")
 				.values(
 					mongoScoreDocumentToNewScoreRow(score, chart.chartID, {
 						committed,
