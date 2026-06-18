@@ -10,9 +10,7 @@ services:
       - tachi-redis:/data
   tachi-postgres:
     container_name: tachi-postgres
-    build:
-      context: .
-      dockerfile: dev/Dockerfile.postgres
+    image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
     restart: unless-stopped
     ports:
       - "5432:5432"
@@ -50,9 +48,7 @@ services:
   # we want for tests.
   tachi-postgres-test:
     container_name: tachi-postgres-test
-    build:
-      context: .
-      dockerfile: dev/Dockerfile.postgres
+    image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
     restart: unless-stopped
     ports:
       - "5433:5432"

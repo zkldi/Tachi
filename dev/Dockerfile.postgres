@@ -1,5 +1,0 @@
-# pg-partman doesn't come with your xbox
-FROM postgres:18@sha256:78481659c47e862334611ccdaf7c369c986b3046da9857112f3b309114a65fb4
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends postgresql-18-partman \
-    && rm -rf /var/lib/apt/lists/*
