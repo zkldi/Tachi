@@ -5,8 +5,11 @@
 -- (20260618180000) so that the two steps can be reasoned about independently and the
 -- data migration can be re-run or batched manually on prod if the table is very large.
 --
--- Historical data goes back to 2021-12, so we ask pg_partman to pre-create partitions
--- from that date forward.
+-- pg_partman creates partitions centred on NOW() (+/- p_premake months).  Historical
+-- rows inserted by the copy migration land in the DEFAULT partition; run
+--   SELECT partman.partition_data_time('public.game_stats_snapshot');
+-- on prod after deploying to move them into proper monthly partitions.  This avoids
+-- pre-creating ~55 empty historical partitions in every CI/fresh-install DB.
 
 ALTER TABLE game_stats_snapshot RENAME TO game_stats_snapshot_old;
 
@@ -24,11 +27,10 @@ CREATE TABLE game_stats_snapshot (
 CREATE INDEX ON game_stats_snapshot (game, timestamp DESC);
 
 SELECT partman.create_parent(
-    p_parent_table    => 'public.game_stats_snapshot',
-    p_control         => 'timestamp',
-    p_interval        => '1 month',
-    p_premake         => 3,
-    p_start_partition => '2021-12-01'
+    p_parent_table => 'public.game_stats_snapshot',
+    p_control      => 'timestamp',
+    p_interval     => '1 month',
+    p_premake      => 3
 );
 
 -- All historical data is valuable — no automatic partition drops.

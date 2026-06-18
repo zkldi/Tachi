@@ -56,3 +56,15 @@ WHERE  parent_table = 'public.action';
 INSERT INTO action SELECT * FROM action_unpartitioned;
 
 DROP TABLE action_unpartitioned;
+
+-- Redistribute any rows that landed in the DEFAULT partition into proper monthly slices.
+DO $$
+DECLARE
+    moved BIGINT;
+BEGIN
+    LOOP
+        SELECT partman.partition_data_time('public.action', p_batch_count => 1000)
+        INTO moved;
+        EXIT WHEN moved = 0;
+    END LOOP;
+END $$;
