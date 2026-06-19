@@ -4,12 +4,14 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/common/**"
       - ".github/workflows/common.yml"
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/common/**"
       - ".github/workflows/common.yml"

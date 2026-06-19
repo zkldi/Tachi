@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/server/**"
       - "typescript/common/**"
@@ -15,6 +16,7 @@ on:
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/server/**"
       - "typescript/common/**"
@@ -170,20 +172,28 @@ jobs:
         id: build_time
         run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
+      - name: Compute floating image tags
+        id: floating_tags
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            echo "value=ghcr.io/zkldi/tachi:main\nghcr.io/zkldi/tachi:latest" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=ghcr.io/zkldi/tachi:main-dev" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build and push unified server image
         uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f # v7.1.0
         with:
           context: .
           file: docker/Dockerfile.server
           target: prod
-          push: ${{ github.ref == 'refs/heads/main' }}
+          push: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev' }}
           provenance: true
           sbom: true
           tags: |
             ghcr.io/zkldi/tachi:${{ steps.revision.outputs.image_tag }}
             ghcr.io/zkldi/tachi:${{ github.sha }}
-            ghcr.io/zkldi/tachi:main
-            ghcr.io/zkldi/tachi:latest
+            ${{ steps.floating_tags.outputs.value }}
           build-args: |
             VERSION=${{ steps.server_version.outputs.version }}
             VERSION_DETAIL=${{ steps.revision.outputs.image_tag }}
@@ -192,17 +202,16 @@ jobs:
           cache-from: type=gha,scope=server-${{ github.ref_name }}
           cache-to: type=gha,mode=max,scope=server-${{ github.ref_name }}
 
-  dispatch-deploy:
-    # Fire a repository_dispatch at server-ceres (private). That repo's workflow
-    # owns the SSH key and Kamal output — keeping deploy logs out of this
-    # public repo. See server-ceres/.github/workflows/tachi-deploy.yml.
+  dispatch-deploy-prod:
+    # Deploys boku and kamai from main.
+    # See server.yml for rationale — deploy logs live in the private server-ceres repo.
     runs-on: ubuntu-latest
     needs: [test, docker-push]
     if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     strategy:
       fail-fast: false
       matrix:
-        destination: [boku, kamai, dev]
+        destination: [boku, kamai]
     permissions:
       contents: read
     steps:
@@ -221,3 +230,27 @@ jobs:
             -F "client_payload[sha]=${SHA}" \
             -F "client_payload[image_tag]=${IMAGE_TAG}"
           echo "::notice::Dispatched server@${DEST} ${IMAGE_TAG} (${SHA}) — logs: https://github.com/zkldi/server-ceres/actions/workflows/tachi-deploy.yml"
+
+  dispatch-deploy-dev:
+    # Deploys dev from main-dev.
+    # See server.yml for rationale — deploy logs live in the private server-ceres repo.
+    runs-on: ubuntu-latest
+    needs: [test, docker-push]
+    if: ${{ github.ref == 'refs/heads/main-dev' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    permissions:
+      contents: read
+    steps:
+      - name: Dispatch deploy
+        env:
+          # Fine-grained PAT, repo-scoped to zkldi/server-ceres, Contents: write.
+          GH_TOKEN: ${{ secrets.DEPLOY_DISPATCH_TOKEN }}
+          SHA: ${{ github.sha }}
+          IMAGE_TAG: ${{ needs.docker-push.outputs.image_tag }}
+        run: |
+          gh api repos/zkldi/server-ceres/dispatches \
+            -f event_type=deploy \
+            -F "client_payload[app]=server" \
+            -F "client_payload[dest]=dev" \
+            -F "client_payload[sha]=${SHA}" \
+            -F "client_payload[image_tag]=${IMAGE_TAG}"
+          echo "::notice::Dispatched server@dev ${IMAGE_TAG} (${SHA}) — logs: https://github.com/zkldi/server-ceres/actions/workflows/tachi-deploy.yml"

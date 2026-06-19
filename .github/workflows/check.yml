@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/**"
       - "biome.json"
@@ -15,6 +16,7 @@ on:
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/**"
       - "biome.json"

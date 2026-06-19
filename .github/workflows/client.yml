@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/client/**"
       - "typescript/common/**"
@@ -12,6 +13,7 @@ on:
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
       - "typescript/client/**"
       - "typescript/common/**"
@@ -27,7 +29,7 @@ jobs:
     container:
       image: ghcr.io/zkldi/tachi-ci:main
       options: --user root
-    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -38,6 +40,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build Bokutachi
+        if: github.ref == 'refs/heads/main'
         run: bun run --filter tachi-client build
         env:
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
@@ -51,6 +54,7 @@ jobs:
           BUILD_OUT_DIR: /tmp/boku
 
       - name: Build Kamaitachi
+        if: github.ref == 'refs/heads/main'
         run: bun run --filter tachi-client build
         env:
           VITE_MANDATE_LOGIN: true
@@ -68,6 +72,7 @@ jobs:
           BUILD_OUT_DIR: /tmp/kamai
 
       - name: Build Dev
+        if: github.ref == 'refs/heads/main-dev'
         run: bun run --filter tachi-client build
         env:
           VITE_MANDATE_LOGIN: true
@@ -83,8 +88,13 @@ jobs:
           TACHI_NAME: "Tachi Dev"
           BUILD_OUT_DIR: /tmp/dev
 
-      - name: Bundle build outputs
-        run: tar -C /tmp -czf client-builds.tgz boku kamai dev
+      - name: Bundle build outputs (main)
+        if: github.ref == 'refs/heads/main'
+        run: tar -C /tmp -czf client-builds.tgz boku kamai
+
+      - name: Bundle build outputs (main-dev)
+        if: github.ref == 'refs/heads/main-dev'
+        run: tar -C /tmp -czf client-builds.tgz dev
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
@@ -95,7 +105,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     steps:
       - name: Install rsync
         run: sudo apt-get update && sudo apt-get install -y rsync
@@ -119,10 +129,16 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           printf '%s' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
 
-      - name: Deploy static to VPS (Caddy roots)
+      - name: Deploy static to Ceres — production (kamai + boku)
+        if: github.ref == 'refs/heads/main'
         env:
           TACHI_HOST: ${{ secrets.TACHI_HOST }}
         run: |
           rsync --recursive --compress --delete --progress /tmp/kamai/. "ci@${TACHI_HOST}:/srv/tachi-static/kamai/"
           rsync --recursive --compress --delete --progress /tmp/boku/. "ci@${TACHI_HOST}:/srv/tachi-static/boku/"
-          rsync --recursive --compress --delete --progress /tmp/dev/. "ci@${TACHI_HOST}:/srv/tachi-static/dev/"
+
+      - name: Deploy static to Ceres — dev
+        if: github.ref == 'refs/heads/main-dev'
+        env:
+          TACHI_HOST: ${{ secrets.TACHI_HOST }}
+        run: rsync --recursive --compress --delete --progress /tmp/dev/. "ci@${TACHI_HOST}:/srv/tachi-static/dev/"
