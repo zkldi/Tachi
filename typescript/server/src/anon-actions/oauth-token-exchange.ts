@@ -63,71 +63,73 @@ export const ANON_ACTION_OAuthTokenExchange = MakeAnonAction(
 		const apiToken = Random20Hex();
 		const identifier = `${client.name} Token`;
 
-		await DB.transaction().execute(async (txn) => {
-			const deleted = await txn
-				.deleteFrom("priv_oauth2_auth_token")
-				.where("priv_oauth2_auth_token.token", "=", input.code)
-				.returning([
-					"priv_oauth2_auth_token.user_id",
-					"priv_oauth2_auth_token.code_challenge",
-					"priv_oauth2_auth_token.code_challenge_method",
-				])
-				.executeTakeFirst();
+		// Consume the authorization code up front, in its own committed
+		// statement, *before* verifying the verifier/secret. A failed
+		// verification below must still burn the code; otherwise a rolled-back
+		// deletion would leave the code redeemable and turn this endpoint into
+		// an unbounded verification oracle (unlimited guessing against a
+		// single-use, non-expiring code).
+		const deleted = await DB.deleteFrom("priv_oauth2_auth_token")
+			.where("priv_oauth2_auth_token.token", "=", input.code)
+			.returning([
+				"priv_oauth2_auth_token.user_id",
+				"priv_oauth2_auth_token.code_challenge",
+				"priv_oauth2_auth_token.code_challenge_method",
+			])
+			.executeTakeFirst();
 
-			if (!deleted) {
-				throw new ExpectedErr(404, `This code does not exist.`);
+		if (!deleted) {
+			throw new ExpectedErr(404, `This code does not exist.`);
+		}
+
+		if (deleted.code_challenge !== null) {
+			// PKCE flow: verify code_verifier, client_secret is not required.
+			if (!input.code_verifier) {
+				throw new ExpectedErr(
+					400,
+					"This authorization code requires PKCE. Provide code_verifier.",
+				);
 			}
 
-			if (deleted.code_challenge !== null) {
-				// PKCE flow: verify code_verifier, client_secret is not required.
-				if (!input.code_verifier) {
-					throw new ExpectedErr(
-						400,
-						"This authorization code requires PKCE. Provide code_verifier.",
-					);
-				}
-
-				if (!verifyPkceChallenge(input.code_verifier, deleted.code_challenge)) {
-					throw new ExpectedErr(403, "Invalid code_verifier.");
-				}
-			} else {
-				// Legacy flow: client_secret is required.
-				if (!input.client_secret) {
-					throw new ExpectedErr(
-						400,
-						"client_secret is required for non-PKCE authorization codes.",
-					);
-				}
-
-				const expectedBuf = Buffer.from(client.client_secret, "utf8");
-				const receivedBuf = Buffer.from(String(input.client_secret), "utf8");
-
-				if (
-					expectedBuf.length !== receivedBuf.length ||
-					!crypto.timingSafeEqual(expectedBuf, receivedBuf)
-				) {
-					throw new ExpectedErr(403, `Invalid secret.`);
-				}
+			if (!verifyPkceChallenge(input.code_verifier, deleted.code_challenge)) {
+				throw new ExpectedErr(403, "Invalid code_verifier.");
+			}
+		} else {
+			// Legacy flow: client_secret is required.
+			if (!input.client_secret) {
+				throw new ExpectedErr(
+					400,
+					"client_secret is required for non-PKCE authorization codes.",
+				);
 			}
 
-			await txn
-				.insertInto("priv_api_token")
-				.values({
-					token: apiToken,
-					user_id: deleted.user_id,
-					identifier,
-					from_oauth2_client: client.client_id,
-					pm_customise_profile: client.pm_customise_profile,
-					pm_customise_score: client.pm_customise_score,
-					pm_customise_session: client.pm_customise_session,
-					pm_delete_score: client.pm_delete_score,
-					pm_manage_rivals: client.pm_manage_rivals,
-					pm_manage_targets: client.pm_manage_targets,
-					pm_submit_score: client.pm_submit_score,
-					pm_manage_challenges: client.pm_manage_challenges,
-				})
-				.execute();
-		});
+			const expectedBuf = Buffer.from(client.client_secret, "utf8");
+			const receivedBuf = Buffer.from(String(input.client_secret), "utf8");
+
+			if (
+				expectedBuf.length !== receivedBuf.length ||
+				!crypto.timingSafeEqual(expectedBuf, receivedBuf)
+			) {
+				throw new ExpectedErr(403, `Invalid secret.`);
+			}
+		}
+
+		await DB.insertInto("priv_api_token")
+			.values({
+				token: apiToken,
+				user_id: deleted.user_id,
+				identifier,
+				from_oauth2_client: client.client_id,
+				pm_customise_profile: client.pm_customise_profile,
+				pm_customise_score: client.pm_customise_score,
+				pm_customise_session: client.pm_customise_session,
+				pm_delete_score: client.pm_delete_score,
+				pm_manage_rivals: client.pm_manage_rivals,
+				pm_manage_targets: client.pm_manage_targets,
+				pm_submit_score: client.pm_submit_score,
+				pm_manage_challenges: client.pm_manage_challenges,
+			})
+			.execute();
 
 		const row = await DB.selectFrom("priv_api_token")
 			.select(SELECT_API_TOKEN)

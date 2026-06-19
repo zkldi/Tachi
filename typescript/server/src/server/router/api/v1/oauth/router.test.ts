@@ -162,6 +162,8 @@ describe("POST /api/v1/oauth/token (PKCE)", () => {
 	const clientSecret = "PKCE_CLIENT_SECRET";
 	const redirectUri = "https://example.com/pkce-callback";
 	const codeVerifier = "dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk";
+	// Correctly formatted (43-char unreserved) but not the real verifier.
+	const wrongCodeVerifier = "wrongVerifierValueButValidLength0123456789a";
 	const authCode = "PKCE_AUTH_CODE";
 
 	let codeChallenge: string;
@@ -223,10 +225,39 @@ describe("POST /api/v1/oauth/token (PKCE)", () => {
 			grant_type: "authorization_code",
 			redirect_uri: redirectUri,
 			code: authCode,
-			code_verifier: "wrong-verifier-value",
+			code_verifier: wrongCodeVerifier,
 		});
 
 		expect(res.status).toBe(403);
+	});
+
+	it("consumes the code on a failed code_verifier so it cannot be retried", async () => {
+		const firstRes = await mockApi.post(`/api/v1/oauth/token`).send({
+			client_id: clientId,
+			grant_type: "authorization_code",
+			redirect_uri: redirectUri,
+			code: authCode,
+			code_verifier: wrongCodeVerifier,
+		});
+
+		expect(firstRes.status).toBe(403);
+
+		const codeRow = await DB.selectFrom("priv_oauth2_auth_token")
+			.selectAll()
+			.where("token", "=", authCode)
+			.executeTakeFirst();
+
+		expect(codeRow).toBeUndefined();
+
+		const retryRes = await mockApi.post(`/api/v1/oauth/token`).send({
+			client_id: clientId,
+			grant_type: "authorization_code",
+			redirect_uri: redirectUri,
+			code: authCode,
+			code_verifier: codeVerifier,
+		});
+
+		expect(retryRes.status).toBe(404);
 	});
 
 	it("returns 400 when code_verifier is missing for a PKCE code", async () => {
@@ -317,5 +348,21 @@ describe("POST /api/v1/oauth/create-code", () => {
 		expect(Number(row?.user_id)).toBe(uid);
 		expect(row?.code_challenge).toBe(challenge);
 		expect(row?.code_challenge_method).toBe("S256");
+	});
+
+	it("rejects a malformed (wrong-length) code_challenge", async () => {
+		await seedUser({
+			username: "bad_pkce_code_user",
+			withCredential: true,
+			withSettings: true,
+		});
+		const cookie = await loginAs("bad_pkce_code_user");
+
+		const res = await mockApi
+			.post("/api/v1/oauth/create-code")
+			.set("Cookie", cookie)
+			.send({ code_challenge: "too-short", code_challenge_method: "S256" });
+
+		expect(res.status).toBe(400);
 	});
 });

@@ -283,7 +283,14 @@ export const ActionSignatures = {
 	},
 	CREATE_OAUTH2_AUTH_CODE: {
 		input: z.object({
-			codeChallenge: z.string().optional(),
+			// BASE64URL(SHA256(verifier)) is always exactly 43 unpadded base64url chars (RFC 7636 §4.2).
+			codeChallenge: z
+				.string()
+				.regex(
+					/^[A-Za-z0-9_-]{43}$/u,
+					"code_challenge must be a 43-character base64url SHA-256 digest.",
+				)
+				.optional(),
 			codeChallengeMethod: z.literal("S256").optional(),
 		}),
 		output: z.object({
@@ -506,7 +513,14 @@ export const AnonActionSignatures = {
 			grant_type: z.literal("authorization_code"),
 			redirect_uri: z.string(),
 			code: z.string(),
-			code_verifier: z.string().optional(),
+			// RFC 7636 §4.1: code_verifier is 43-128 chars from the unreserved set.
+			code_verifier: z
+				.string()
+				.regex(
+					/^[A-Za-z0-9._~-]{43,128}$/u,
+					"code_verifier must be 43-128 unreserved characters.",
+				)
+				.optional(),
 		}),
 		output: z.object({
 			userID: z.number().int(),
