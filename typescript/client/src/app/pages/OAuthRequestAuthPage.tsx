@@ -65,6 +65,8 @@ function OAuthRequestAuthMain({
 	const params = useQueryString();
 
 	const context = params.get("context");
+	const codeChallenge = params.get("code_challenge");
+	const codeChallengeMethod = params.get("code_challenge_method");
 
 	return (
 		<div className="row">
@@ -88,6 +90,16 @@ function OAuthRequestAuthMain({
 					<button
 						className="btn btn-success"
 						onClick={async () => {
+							const body: Record<string, string> = {};
+
+							if (codeChallenge) {
+								body.code_challenge = codeChallenge;
+							}
+
+							if (codeChallengeMethod) {
+								body.code_challenge_method = codeChallengeMethod;
+							}
+
 							const tokenRes = await APIFetchV1<{
 								code: string;
 								createdOn: number;
@@ -96,6 +108,8 @@ function OAuthRequestAuthMain({
 								"/oauth/create-code",
 								{
 									method: "POST",
+									headers: { "Content-Type": "application/json" },
+									body: JSON.stringify(body),
 								},
 								false,
 								true,

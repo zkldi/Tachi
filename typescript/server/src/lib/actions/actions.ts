@@ -282,7 +282,10 @@ export const ActionSignatures = {
 		output: z.object({}),
 	},
 	CREATE_OAUTH2_AUTH_CODE: {
-		input: z.object({}),
+		input: z.object({
+			codeChallenge: z.string().optional(),
+			codeChallengeMethod: z.literal("S256").optional(),
+		}),
 		output: z.object({
 			code: z.string(),
 			userID: z.number().int(),
@@ -499,10 +502,11 @@ export const AnonActionSignatures = {
 	OAUTH_TOKEN_EXCHANGE: {
 		input: z.object({
 			client_id: z.string(),
-			client_secret: z.string(),
+			client_secret: z.string().optional(),
 			grant_type: z.literal("authorization_code"),
 			redirect_uri: z.string(),
 			code: z.string(),
+			code_verifier: z.string().optional(),
 		}),
 		output: z.object({
 			userID: z.number().int(),

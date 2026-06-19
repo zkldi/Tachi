@@ -1333,13 +1333,15 @@ export const API_V1_SPEC = {
 	// ────────────────────────────────────────────────
 
 	"POST /oauth/token": {
-		description: "Exchange an OAuth2 authorization code for an API token.",
+		description:
+			"Exchange an OAuth2 authorization code for an API token. Supports both the standard client_secret flow and the PKCE flow (RFC 7636). For PKCE, omit client_secret and provide code_verifier instead.",
 		input: z.object({
 			client_id: z.string(),
-			client_secret: z.string(),
+			client_secret: z.string().optional(),
 			grant_type: z.literal("authorization_code"),
 			redirect_uri: z.string(),
 			code: z.string(),
+			code_verifier: z.string().optional(),
 		}),
 		output: z.strictObject({
 			userID: z.number(),
@@ -1351,8 +1353,12 @@ export const API_V1_SPEC = {
 	},
 
 	"POST /oauth/create-code": {
-		description: "Create an OAuth2 authorization code (session auth required).",
-		input: z.object({}),
+		description:
+			"Create an OAuth2 authorization code (session auth required). Pass code_challenge and code_challenge_method to use the PKCE flow (RFC 7636).",
+		input: z.object({
+			code_challenge: z.string().optional(),
+			code_challenge_method: z.literal("S256").optional(),
+		}),
 		output: z.strictObject({
 			code: z.string(),
 			userID: z.number(),

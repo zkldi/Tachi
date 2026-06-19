@@ -14,6 +14,10 @@ export default interface PrivOauth2AuthTokenTable {
   created_on: ColumnType<string, string, string>;
 
   user_id: ColumnType<account_id, account_id, account_id>;
+
+  code_challenge: ColumnType<string | null, string | null, string | null>;
+
+  code_challenge_method: ColumnType<string | null, string | null, string | null>;
 }
 
 export type PrivOauth2AuthToken = Selectable<PrivOauth2AuthTokenTable>;
