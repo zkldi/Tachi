@@ -154,6 +154,7 @@ export const GAME_DDR_SP_CONF = {
 		flareSkill: {
 			description: "Flare Skill as it's implemented in DDR World.",
 			formatter: FmtScoreNoCommas,
+			canSetGoalsOn: false,
 		},
 	},
 

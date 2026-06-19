@@ -218,11 +218,13 @@ const SEEDS_GOAL_CRITERIA_SCHEMA = z.union([
 		countNum: z.number(),
 		key: z.string(),
 		mode: z.union([z.literal("absolute"), z.literal("proportion")]),
+		source: z.enum(["score", "calculated"]).optional(),
 		value: z.number(),
 	}),
 	z.strictObject({
 		key: z.string(),
 		mode: z.literal("single"),
+		source: z.enum(["score", "calculated"]).optional(),
 		value: z.number(),
 	}),
 ]);

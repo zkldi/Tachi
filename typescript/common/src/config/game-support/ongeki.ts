@@ -164,14 +164,17 @@ export const GAME_ONGEKI_CONF = {
 		rating: {
 			description: "Technical Score-based rating as it's implemented in bright MEMORY.",
 			formatter: ToDecimalPlaces(2),
+			canSetGoalsOn: true,
 		},
 		scoreRating: {
 			description: "Technical Score-based rating as it's implemented in Re:Fresh.",
 			formatter: ToDecimalPlaces(3),
+			canSetGoalsOn: true,
 		},
 		starRating: {
 			description: "Platinum Stars-based rating as it's implemented in Re:Fresh.",
 			formatter: ToDecimalPlaces(3),
+			canSetGoalsOn: false,
 		},
 	},
 	sessionRatingAlgs: {

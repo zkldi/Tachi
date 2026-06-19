@@ -34,8 +34,17 @@ export async function LoadPbsForUserOnChartsForGoal(
 export function getGoalMetricValueFromPb(
 	pb: PBScoreDocument,
 	criteriaKey: GoalDocument["criteria"]["key"],
-	scoreConf: GoalMetricConf,
+	scoreConf: GoalMetricConf | null,
 ): number | null {
+	// null scoreConf signals a calculated-data goal — read from pb.calculatedData
+	if (scoreConf === null) {
+		const v = (pb.calculatedData as Record<string, number | null | undefined>)[
+			criteriaKey as string
+		];
+
+		return typeof v === "number" ? v : null;
+	}
+
 	if (scoreConf.type === "ENUM") {
 		const v = pb.scoreData.enumIndexes[criteriaKey as keyof typeof pb.scoreData.enumIndexes];
 
@@ -51,7 +60,7 @@ export function pbMeetsGoalThreshold(
 	pb: PBScoreDocument,
 	criteriaKey: GoalDocument["criteria"]["key"],
 	threshold: number,
-	scoreConf: GoalMetricConf,
+	scoreConf: GoalMetricConf | null,
 ): boolean {
 	const v = getGoalMetricValueFromPb(pb, criteriaKey, scoreConf);
 

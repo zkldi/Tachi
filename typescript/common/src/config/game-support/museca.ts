@@ -64,6 +64,7 @@ export const GAME_MUSECA_CONF = {
 		curatorSkill: {
 			description: "Curator Skill as it's implemented in-game.",
 			formatter: NoDecimalPlace,
+			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {

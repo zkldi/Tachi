@@ -69,10 +69,12 @@ export const GAME_USC_CONTROLLER_CONF = {
 		VF6: {
 			description: "VOLFORCE as it is implemented in SDVX6.",
 			formatter: ToDecimalPlaces(3),
+			canSetGoalsOn: false,
 		},
 		VF7: {
 			description: "VOLFORCE as it is implemented in SDVX7.",
 			formatter: ToDecimalPlaces(3),
+			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {

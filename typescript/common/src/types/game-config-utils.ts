@@ -15,6 +15,16 @@ export interface RatingAlgorithmConfig {
 	formatter?: (value: number) => string;
 }
 
+/**
+ * Config for a **score**-level rating algorithm (i.e. an entry in `scoreRatingAlgs`).
+ *
+ * Extends the base with `canSetGoalsOn`, which gates whether users are allowed to
+ * create goals targeting this algorithm (e.g. "get a BPI of X on this chart").
+ */
+export interface ScoreRatingAlgorithmConfig extends RatingAlgorithmConfig {
+	canSetGoalsOn: boolean;
+}
+
 export interface ProfileRatingAlgorithmConfig extends RatingAlgorithmConfig {
 	/**
 	 * Which score rating algorithms should be mentioned in the footnote

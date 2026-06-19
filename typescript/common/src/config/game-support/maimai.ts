@@ -109,7 +109,11 @@ export const GAME_MAIMAI_CONF = {
 	optionalMetrics: FAST_SLOW_MAXCOMBO,
 
 	scoreRatingAlgs: {
-		rate: { description: "Rating as it's implemented in game.", formatter: ToDecimalPlaces(2) },
+		rate: {
+			description: "Rating as it's implemented in game.",
+			formatter: ToDecimalPlaces(2),
+			canSetGoalsOn: true,
+		},
 	},
 	sessionRatingAlgs: {
 		rate: {

@@ -10,7 +10,7 @@
 import type { GradeBoundary } from "../constants/grade-boundaries";
 import type { GoalDocument, V3Game } from "../types";
 
-import { GetGameConfig, GetScoreMetricConf } from "../config/config";
+import { GetGameConfig, GetScoreMetricConf, GetScoreRatingAlgConf } from "../config/config";
 import { FmtNumCompact, GetGradeDeltas, staticAssertUnreachable } from "../utils/util";
 
 // ─── Internal helpers (also exported for use by consumers) ────────────────────
@@ -95,6 +95,21 @@ export function GradeGoalFormatter<G extends string>(
  */
 export function FormatGoalCriteria(criteria: GoalDocument["criteria"], game: V3Game): string {
 	const gameConfig = GetGameConfig(game);
+
+	if (criteria.source === "calculated") {
+		const calcConf = GetScoreRatingAlgConf(gameConfig, criteria.key);
+
+		if (!calcConf) {
+			throw new Error(
+				`Invalid goal criteria with key ${criteria.key}. No rating algorithm config exists for ${game}?`,
+			);
+		}
+
+		const fmt = calcConf.formatter ?? OnlyFloatToDP;
+
+		return `Get a ${criteria.key} of ${fmt(criteria.value)} on`;
+	}
+
 	const conf = GetScoreMetricConf(gameConfig, criteria.key);
 
 	if (!conf) {

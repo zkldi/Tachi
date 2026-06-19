@@ -182,17 +182,21 @@ export const GAME_IIDX_SP_CONF = {
 		ktLampRating: {
 			description:
 				"A rating system that values your clear lamps on charts. Tierlist information is taken into account.",
+			canSetGoalsOn: false,
 		},
 		ktLampRatingHC: {
 			description: "Your hard clear performance. Tierlist information is taken into account.",
+			canSetGoalsOn: false,
 		},
 		ktLampRatingEXHC: {
 			description:
 				"Your EX-hard clear performance. Tierlist information is taken into account.",
+			canSetGoalsOn: false,
 		},
 		BPI: {
 			description:
 				"A rating system for Kaiden level play. Only applies to 11s and 12s. A BPI of 0 states the score is equal to the Kaiden Average for that chart. A BPI of 100 is equal to the world record.",
+			canSetGoalsOn: true,
 		},
 	},
 

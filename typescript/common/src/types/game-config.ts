@@ -8,6 +8,7 @@ import type {
 	FixedDifficulties,
 	ProfileRatingAlgorithmConfig,
 	RatingAlgorithmConfig,
+	ScoreRatingAlgorithmConfig,
 } from "./game-config-utils";
 import type { INTERNAL_GAME_CONFIG } from "./internals";
 import type {
@@ -478,7 +479,7 @@ export interface SpecificGameConfig<TGame extends V3Game> {
 	 * server config. By defining them here, the typesystem will enforce that you
 	 * implement them elsewhere.
 	 */
-	scoreRatingAlgs: Record<ScoreRatingAlgorithms[TGame], RatingAlgorithmConfig>;
+	scoreRatingAlgs: Record<ScoreRatingAlgorithms[TGame], ScoreRatingAlgorithmConfig>;
 
 	/**
 	 * What rating algorithms may a session have attached onto it for this game?

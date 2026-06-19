@@ -108,6 +108,7 @@ export const GAME_POPN_CONF = {
 	scoreRatingAlgs: {
 		classPoints: {
 			description: "Class Points as they're implemented in game.",
+			canSetGoalsOn: false,
 		},
 	},
 

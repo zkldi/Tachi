@@ -118,6 +118,7 @@ export const GAME_CHUNITHM_CONF = {
 			description:
 				"The rating value of this score. This is identical to the system used in game.",
 			formatter: ToDecimalPlaces(2),
+			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {

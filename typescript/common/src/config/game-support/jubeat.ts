@@ -79,7 +79,12 @@ export const GAME_JUBEAT_SINGLE_CONF = {
 		},
 	},
 
-	scoreRatingAlgs: { jubility: { description: "Jubility as it's implemented in game." } },
+	scoreRatingAlgs: {
+		jubility: {
+			description: "Jubility as it's implemented in game.",
+			canSetGoalsOn: true,
+		},
+	},
 	sessionRatingAlgs: {
 		jubility: { description: "The average of your best 10 jubilities this session." },
 	},

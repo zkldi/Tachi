@@ -30,6 +30,7 @@ import {
 	GetGameConfig,
 	GetScoreMetricConf,
 	GetScoreMetrics,
+	GetScoreRatingAlgConf,
 	type GoalDocument,
 	type SongDocument,
 } from "tachi-common";
@@ -323,15 +324,22 @@ function CriteriaPicker({
 } & GameProps) {
 	const gameConfig = GetGameConfig(game);
 	const availableMetrics = GetScoreMetrics(gameConfig, ["ENUM", "DECIMAL", "INTEGER"]);
+	const calculatedMetrics = Object.entries(gameConfig.scoreRatingAlgs)
+		.filter(([, conf]) => conf.canSetGoalsOn)
+		.map(([key]) => key);
+
+	const isCalculatedKey = criteria.source === "calculated";
 
 	return (
 		<>
-			{/* Metric pills */}
+			{/* Score metric pills */}
 			<div className="d-flex flex-wrap gap-2 mb-3">
 				{availableMetrics.map((metricKey) => (
 					<button
 						className={`btn btn-sm ${
-							criteria.key === metricKey ? "btn-primary" : "btn-outline-secondary"
+							!isCalculatedKey && criteria.key === metricKey
+								? "btn-primary"
+								: "btn-outline-secondary"
 						}`}
 						key={metricKey}
 						onClick={() => {
@@ -345,6 +353,7 @@ function CriteriaPicker({
 								...criteria,
 								key: metricKey,
 								value: defaultValue,
+								source: "score",
 							});
 						}}
 						type="button"
@@ -352,6 +361,33 @@ function CriteriaPicker({
 						{UppercaseFirst(metricKey)}
 					</button>
 				))}
+				{calculatedMetrics.length > 0 && (
+					<>
+						<span className="text-body-secondary align-self-center small px-1">|</span>
+						{calculatedMetrics.map((calcKey) => (
+							<button
+								className={`btn btn-sm ${
+									isCalculatedKey && criteria.key === calcKey
+										? "btn-info"
+										: "btn-outline-info"
+								}`}
+								key={calcKey}
+								onClick={() =>
+									setCriteria({
+										...criteria,
+										key: calcKey,
+										value: 0,
+										source: "calculated",
+									})
+								}
+								title="Rating algorithm"
+								type="button"
+							>
+								{UppercaseFirst(calcKey)}
+							</button>
+						))}
+					</>
+				)}
 			</div>
 
 			{/* Value row */}
@@ -404,6 +440,28 @@ function CriteriaValuePicker({
 	onChange: (value: number) => void;
 } & GameProps) {
 	const gameConfig = GetGameConfig(game);
+
+	if (criteria.source === "calculated") {
+		const calcConf = GetScoreRatingAlgConf(gameConfig, criteria.key);
+
+		if (!calcConf) {
+			return (
+				<span className="text-danger small">Unknown rating algorithm: {criteria.key}</span>
+			);
+		}
+
+		return (
+			<Form.Control
+				min={0}
+				onChange={(e) => onChange(Number(e.target.value))}
+				step="0.01"
+				style={{ width: "120px" }}
+				type="number"
+				value={criteria.value}
+			/>
+		);
+	}
+
 	const conf = GetScoreMetricConf(gameConfig, criteria.key);
 
 	if (!conf) {

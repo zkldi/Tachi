@@ -107,6 +107,7 @@ export const GAME_PMS_CONTROLLER_CONF = {
 			description:
 				"A clearing algorithm that rewards you points based on how difficult an easy clear or hard clear was.",
 			formatter: FormatSieglindePMS,
+			canSetGoalsOn: false,
 		},
 	},
 	sessionRatingAlgs: {

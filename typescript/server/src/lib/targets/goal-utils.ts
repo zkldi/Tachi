@@ -10,6 +10,7 @@ import {
 	FormatGoalCriteria,
 	GetGameConfig,
 	GetScoreMetricConf,
+	GetScoreRatingAlgConf,
 	type GoalDocument,
 	type V3Game,
 } from "tachi-common";
@@ -153,67 +154,90 @@ export async function ValidateGoalChartsAndCriteria(
 	// checking whether the key and value make sense
 	const gameConfig = GetGameConfig(game);
 
-	const config = GetScoreMetricConf(gameConfig, criteria.key);
+	if (criteria.source === "calculated") {
+		const calcConf = GetScoreRatingAlgConf(gameConfig, criteria.key);
 
-	if (!config) {
-		throw new Error(`Invalid criteria.key for ${FormatGame(game)} (Got ${criteria.key}).`);
-	}
+		if (!calcConf) {
+			throw new Error(
+				`Invalid criteria.key '${criteria.key}' for ${FormatGame(game)}: not a score rating algorithm.`,
+			);
+		}
 
-	const gptImpl = GAME_IMPLEMENTATIONS[game];
+		if (!calcConf.canSetGoalsOn) {
+			throw new Error(
+				`Cannot set goals on '${criteria.key}' for ${FormatGame(game)}: this rating algorithm does not support goals.`,
+			);
+		}
 
-	switch (config.type) {
-		case "DECIMAL":
-		case "INTEGER": {
-			const allowFolderGoals =
-				config.chartDependentMax !== true || config.allowFolderGoalsIf?.(criteria.value);
+		if (typeof criteria.value !== "number" || criteria.value < 0) {
+			throw new Error(
+				`Invalid value ${criteria.value} for calculated metric ${criteria.key}: must be a non-negative number.`,
+			);
+		}
+	} else {
+		const config = GetScoreMetricConf(gameConfig, criteria.key);
 
-			if (!allowFolderGoals && charts.type !== "single") {
-				throw new Error(
-					`Creating ${criteria.key} goals on multiple charts where the maximum value is relative to the chart is a terrible idea, and has been disabled.`,
-				);
-			}
+		if (!config) {
+			throw new Error(`Invalid criteria.key for ${FormatGame(game)} (Got ${criteria.key}).`);
+		}
 
-			let err;
+		const gptImpl = GAME_IMPLEMENTATIONS[game];
 
-			if (!allowFolderGoals) {
-				const chart = await GetChartByIdForGame(game, charts.data as string);
+		switch (config.type) {
+			case "DECIMAL":
+			case "INTEGER": {
+				const allowFolderGoals =
+					config.chartDependentMax !== true ||
+					config.allowFolderGoalsIf?.(criteria.value);
 
-				if (!chart) {
+				if (!allowFolderGoals && charts.type !== "single") {
 					throw new Error(
-						`Chart ${charts.data} was removed from the database while a goal was being validated on it?`,
+						`Creating ${criteria.key} goals on multiple charts where the maximum value is relative to the chart is a terrible idea, and has been disabled.`,
 					);
 				}
 
-				// @ts-expect-error this is fine leave me alone
-				err = gptImpl.chartSpecificValidators[criteria.key](criteria.value, chart);
-			} else {
-				// @ts-expect-error if allowFolderGoals is true, validate has to exist, and tsc's opinion has no weight here.
-				err = config.validate(criteria.value);
+				let err;
+
+				if (!allowFolderGoals) {
+					const chart = await GetChartByIdForGame(game, charts.data as string);
+
+					if (!chart) {
+						throw new Error(
+							`Chart ${charts.data} was removed from the database while a goal was being validated on it?`,
+						);
+					}
+
+					// @ts-expect-error this is fine leave me alone
+					err = gptImpl.chartSpecificValidators[criteria.key](criteria.value, chart);
+				} else {
+					// @ts-expect-error if allowFolderGoals is true, validate has to exist, and tsc's opinion has no weight here.
+					err = config.validate(criteria.value);
+				}
+
+				if (err !== true) {
+					throw new Error(`Invalid value ${criteria.value} for ${criteria.key}, ${err}`);
+				}
+
+				break;
 			}
 
-			if (err !== true) {
-				throw new Error(`Invalid value ${criteria.value} for ${criteria.key}, ${err}`);
+			case "ENUM": {
+				if (!config.values[criteria.value]) {
+					throw new Error(
+						`Invalid value of ${criteria.value} for ${criteria.key} goal. No such ${criteria.key} exists at that index.`,
+					);
+				}
+
+				break;
 			}
 
-			break;
+			case "GRAPH":
+			case "NULLABLE_GRAPH":
+				throw new Error(`Cannot set a goal on ${criteria.key} as it's a graph metric.`);
+
+			default:
+				staticAssertUnreachable(config);
 		}
-
-		case "ENUM": {
-			if (!config.values[criteria.value]) {
-				throw new Error(
-					`Invalid value of ${criteria.value} for ${criteria.key} goal. No such ${criteria.key} exists at that index.`,
-				);
-			}
-
-			break;
-		}
-
-		case "GRAPH":
-		case "NULLABLE_GRAPH":
-			throw new Error(`Cannot set a goal on ${criteria.key} as it's a graph metric.`);
-
-		default:
-			staticAssertUnreachable(config);
 	}
 
 	if (charts.type === "single" && criteria.mode !== "single") {

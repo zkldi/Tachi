@@ -9,6 +9,7 @@ import type {
 	SpecificGameConfig,
 	V3Game,
 } from "../types/game-config";
+import type { ScoreRatingAlgorithmConfig } from "../types/game-config-utils";
 import type { INTERNAL_GAME_CONFIG, INTERNAL_GAME_GROUP_CONFIG } from "../types/internals";
 import type { ConfEnumScoreMetric, ConfScoreMetric } from "../types/metrics";
 
@@ -343,4 +344,15 @@ export function ValidateMetric(gameConfig: GameConfig, metricName: string, metri
 
 export function GetScoreMetricConf(gameConfig: GameConfig, metric: string) {
 	return gameConfig.providedMetrics[metric] ?? gameConfig.derivedMetrics[metric];
+}
+
+/**
+ * Returns the rating algorithm config for a `scoreRatingAlgs` key, or `undefined`
+ * if no such algorithm exists for this game.
+ */
+export function GetScoreRatingAlgConf(
+	gameConfig: GameConfig,
+	key: string,
+): ScoreRatingAlgorithmConfig | undefined {
+	return gameConfig.scoreRatingAlgs[key];
 }

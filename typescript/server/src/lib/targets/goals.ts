@@ -24,9 +24,11 @@ import {
 	GAME_GOAL_PROGRESS_FORMATTERS,
 	GetGameConfig,
 	GetScoreMetricConf,
+	GetScoreRatingAlgConf,
 	type GoalDocument,
 	type GoalSubscriptionDocument,
 	type integer,
+	OnlyFloatToDP,
 	type PBScoreDocument,
 	type QuestDocument,
 	type QuestSubscriptionDocument,
@@ -70,9 +72,12 @@ export async function EvaluateGoalForUser(
 	const chartIDs = await ResolveGoalCharts(goal);
 	const v3Game = goal.game;
 	const gameConfig = GetGameConfig(v3Game);
-	const scoreConf = GetScoreMetricConf(gameConfig, goal.criteria.key);
+	const isCalculated = goal.criteria.source === "calculated";
 
-	if (!scoreConf) {
+	// null scoreConf signals a calculated-data goal; getGoalMetricValueFromPb handles this.
+	const scoreConf = isCalculated ? null : GetScoreMetricConf(gameConfig, goal.criteria.key);
+
+	if (!isCalculated && !scoreConf) {
 		throw new Error(
 			`Invalid goal.criteria.key, got '${goal.criteria.key}', but no config exists for this metric for ${v3Game}.`,
 		);
@@ -82,7 +87,12 @@ export async function EvaluateGoalForUser(
 
 	switch (goal.criteria.mode) {
 		case "single": {
-			const outOfHuman = HumaniseGoalOutOf(v3Game, goal.criteria.key, goal.criteria.value);
+			const outOfHuman = HumaniseGoalOutOf(
+				v3Game,
+				goal.criteria.key,
+				goal.criteria.value,
+				goal.criteria.source,
+			);
 
 			const qualifying = pbs.filter((pb) =>
 				pbMeetsGoalThreshold(pb, goal.criteria.key, goal.criteria.value, scoreConf),
@@ -94,18 +104,14 @@ export async function EvaluateGoalForUser(
 				return {
 					achieved: true,
 					outOf: goal.criteria.value,
-					progress:
-						scoreConf.type === "ENUM"
-							? // @ts-expect-error narrow
-								res.scoreData.enumIndexes[goal.criteria.key]
-							: // @ts-expect-error narrow
-								res.scoreData[goal.criteria.key],
+					progress: getGoalMetricValueFromPb(res, goal.criteria.key, scoreConf),
 					outOfHuman,
 					progressHuman: HumaniseGoalProgress(
 						v3Game,
 						goal.criteria.key,
 						goal.criteria.value,
 						res,
+						goal.criteria.source,
 					),
 				};
 			}
@@ -134,17 +140,13 @@ export async function EvaluateGoalForUser(
 				achieved: false,
 				outOf: goal.criteria.value,
 				outOfHuman,
-				progress:
-					scoreConf.type === "ENUM"
-						? // @ts-expect-error narrow
-							nextBestScore.scoreData.enumIndexes[goal.criteria.key]
-						: // @ts-expect-error narrow
-							nextBestScore.scoreData[goal.criteria.key],
+				progress: getGoalMetricValueFromPb(nextBestScore, goal.criteria.key, scoreConf),
 				progressHuman: HumaniseGoalProgress(
 					v3Game,
 					goal.criteria.key,
 					goal.criteria.value,
 					nextBestScore,
+					goal.criteria.source,
 				),
 			};
 		}
@@ -221,7 +223,17 @@ export function HumaniseGoalProgress(
 	key: GoalKeys,
 	goalValue: integer,
 	userPB: PBScoreDocument,
+	source?: "calculated" | "score",
 ): string {
+	if (source === "calculated") {
+		const gameConfig = GetGameConfig(game);
+		const calcConf = GetScoreRatingAlgConf(gameConfig, key);
+		const fmt = calcConf?.formatter ?? OnlyFloatToDP;
+		const v = (userPB.calculatedData as Record<string, number | null | undefined>)[key];
+
+		return typeof v === "number" ? fmt(v) : "NO DATA";
+	}
+
 	const formatters = GAME_GOAL_PROGRESS_FORMATTERS[game];
 	const formatter = formatters[key];
 
@@ -239,8 +251,28 @@ export function HumaniseGoalProgress(
  * Turn a goal's "outOf" (i.e. HARD CLEAR; AAA or score=2450) into a human-understandable
  * string.
  */
-export function HumaniseGoalOutOf(v3Game: V3Game, key: GoalKeys, value: number) {
+export function HumaniseGoalOutOf(
+	v3Game: V3Game,
+	key: GoalKeys,
+	value: number,
+	source?: "calculated" | "score",
+) {
 	const gameConfig = GetGameConfig(v3Game);
+
+	if (source === "calculated") {
+		const calcConf = GetScoreRatingAlgConf(gameConfig, key);
+
+		if (!calcConf) {
+			throw new Error(
+				`Attempted to format outOf for calculated metric '${key}' when no such rating algorithm exists for ${v3Game}.`,
+			);
+		}
+
+		const fmt = calcConf.formatter ?? OnlyFloatToDP;
+
+		return fmt(value);
+	}
+
 	const metricConf = GetScoreMetricConf(gameConfig, key);
 
 	if (!metricConf) {

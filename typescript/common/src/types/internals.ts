@@ -6,6 +6,7 @@ import type {
 	DifficultyConfig,
 	ProfileRatingAlgorithmConfig,
 	RatingAlgorithmConfig,
+	ScoreRatingAlgorithmConfig,
 } from "./game-config-utils";
 import type { ConfScoreMetric } from "./metrics";
 
@@ -61,7 +62,7 @@ export type INTERNAL_GAME_CONFIG = Readonly<{
 
 	scoreMeta: ZodObject;
 
-	scoreRatingAlgs: Record<string, RatingAlgorithmConfig>;
+	scoreRatingAlgs: Record<string, ScoreRatingAlgorithmConfig>;
 	sessionRatingAlgs: Record<string, RatingAlgorithmConfig>;
 	supportedMatchTypes: ReadonlyArray<MatchTypes>;
 	versions: Record<string, string>;

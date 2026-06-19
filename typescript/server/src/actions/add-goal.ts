@@ -33,10 +33,13 @@ export const ACTION_AddGoal = MakeAction("ADD_GOAL", async (taker, input) => {
 
 	const gameConfig = GetGameConfig(game);
 
-	const validCriteria = [
-		...Object.keys(gameConfig.providedMetrics),
-		...Object.keys(gameConfig.derivedMetrics),
-	];
+	const isCalculated = (criteria as { source?: string }).source === "calculated";
+
+	const validCriteria = isCalculated
+		? Object.entries(gameConfig.scoreRatingAlgs)
+				.filter(([, conf]) => conf.canSetGoalsOn)
+				.map(([key]) => key)
+		: [...Object.keys(gameConfig.providedMetrics), ...Object.keys(gameConfig.derivedMetrics)];
 
 	const criteriaKey = (criteria as { key?: string }).key;
 

@@ -98,6 +98,7 @@ export const GAME_WACCA_CONF = {
 	scoreRatingAlgs: {
 		rate: {
 			description: "Rating as it's implemented in game.",
+			canSetGoalsOn: true,
 		},
 	},
 	profileRatingAlgs: {

@@ -51,6 +51,15 @@ interface GoalCriteria<_TGame extends V3Game = V3Game> {
 	key: string;
 
 	value: number;
+
+	/**
+	 * Where the metric value is read from on the PB.
+	 * - `"score"` (default, backwards-compatible): reads from `pb.scoreData` —
+	 *   covers `providedMetrics` and `derivedMetrics`.
+	 * - `"calculated"`: reads from `pb.calculatedData` — covers `scoreRatingAlgs`
+	 *   (e.g. BPI, rating).
+	 */
+	source?: "calculated" | "score";
 }
 
 export interface GoalSingleCriteria<TGame extends V3Game = V3Game> extends GoalCriteria<TGame> {

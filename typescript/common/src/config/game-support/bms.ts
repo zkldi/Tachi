@@ -345,6 +345,7 @@ export const GAME_BMS_7K_CONF = {
 			description:
 				"A clearing algorithm that rewards you points based on how difficult an easy clear or hard clear was.",
 			formatter: FormatSieglindeBMS,
+			canSetGoalsOn: false,
 		},
 	},
 	sessionRatingAlgs: {

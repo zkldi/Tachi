@@ -118,10 +118,12 @@ export const GAME_ITG_STAMINA_CONF = {
 		blockRating: {
 			description: "How much this clear is worth.",
 			formatter: NoDecimalPlace,
+			canSetGoalsOn: false,
 		},
 		fastest32: {
 			description: "The fastest BPM this score streamed 32 measures straight for.",
 			formatter: NoDecimalPlace,
+			canSetGoalsOn: false,
 		},
 	},
 

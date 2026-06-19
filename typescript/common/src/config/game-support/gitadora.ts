@@ -70,7 +70,12 @@ export const GAME_GITADORA_GITA_CONF = {
 		...FAST_SLOW_MAXCOMBO,
 	},
 
-	scoreRatingAlgs: { skill: { description: "Skill Rating as it's implemented in game." } },
+	scoreRatingAlgs: {
+		skill: {
+			description: "Skill Rating as it's implemented in game.",
+			canSetGoalsOn: true,
+		},
+	},
 	sessionRatingAlgs: {
 		skill: { description: "The average of your best 10 skill ratings this session." },
 	},

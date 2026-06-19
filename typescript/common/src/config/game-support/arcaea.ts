@@ -83,6 +83,7 @@ export const GAME_ARCAEA_CONF = {
 		potential: {
 			description: "Potential as it is implemented in Arcaea.",
 			formatter: ToDecimalPlaces(2),
+			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {

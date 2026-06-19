@@ -165,7 +165,11 @@ export const GAME_MAIMAI_DX_CONF = {
 	},
 
 	scoreRatingAlgs: {
-		rate: { description: "Rating as it's implemented in game.", formatter: NoDecimalPlace },
+		rate: {
+			description: "Rating as it's implemented in game.",
+			formatter: NoDecimalPlace,
+			canSetGoalsOn: true,
+		},
 	},
 	sessionRatingAlgs: {
 		rate: {
