@@ -176,9 +176,18 @@ jobs:
         id: floating_tags
         run: |
           if [ "$GITHUB_REF" = "refs/heads/main" ]; then
-            echo "value=ghcr.io/zkldi/tachi:main\nghcr.io/zkldi/tachi:latest" >> "$GITHUB_OUTPUT"
+            {
+              echo "value<<TAGS_EOF"
+              echo "ghcr.io/zkldi/tachi:main"
+              echo "ghcr.io/zkldi/tachi:latest"
+              echo "TAGS_EOF"
+            } >> "$GITHUB_OUTPUT"
           else
-            echo "value=ghcr.io/zkldi/tachi:main-dev" >> "$GITHUB_OUTPUT"
+            {
+              echo "value<<TAGS_EOF"
+              echo "ghcr.io/zkldi/tachi:main-dev"
+              echo "TAGS_EOF"
+            } >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build and push unified server image
