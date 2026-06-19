@@ -68,7 +68,7 @@ API_V1_ROUTER.add("GET /admin/actions", withAdmin, async ({ input }) => {
 });
 
 API_V1_ROUTER.add("GET /admin/cron-tasks", withAdmin, async () => {
-	const [tasks, executions] = await Promise.all([GetCronTasks(), GetCronTaskExecutions(100)]);
+	const [tasks, executions] = await Promise.all([GetCronTasks(), GetCronTaskExecutions()]);
 
 	return success("Done.", { executions, tasks });
 });

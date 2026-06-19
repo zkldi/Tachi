@@ -7,6 +7,7 @@ import {
 	SELECT_JOB_QUEUE,
 } from "#lib/db-formats/admin-jobs";
 import DB from "#services/pg/db";
+import { sql } from "kysely";
 
 export const ADMIN_PAGE_SIZE = 50;
 
@@ -161,10 +162,34 @@ export function GetCronTasks(): Promise<Array<CronTask>> {
 		.execute();
 }
 
-export function GetCronTaskExecutions(limit = 100): Promise<Array<CronTaskExecution>> {
-	return DB.selectFrom("cron_task_execution")
-		.select(SELECT_CRON_TASK_EXECUTION)
-		.orderBy("cron_task_execution.scheduled_at", "desc")
-		.limit(limit)
+const CAP_PER_TASK_TYPE = 100;
+
+export async function GetCronTaskExecutions(): Promise<Array<CronTaskExecution>> {
+	const rows = await DB.with("ranked", (db) =>
+		db
+			.selectFrom("cron_task_execution")
+			.select([
+				...SELECT_CRON_TASK_EXECUTION,
+				sql<number>`ROW_NUMBER() OVER (PARTITION BY cron_task_execution.task_id ORDER BY cron_task_execution.scheduled_at DESC)`.as(
+					"rn",
+				),
+			])
+			.where("cron_task_execution.scheduled_at", ">=", adminRecentSinceIso()),
+	)
+		.selectFrom("ranked")
+		.select([
+			"ranked.id",
+			"ranked.task_id",
+			"ranked.scheduled_at",
+			"ranked.started_at",
+			"ranked.completed_at",
+			"ranked.status",
+			"ranked.output",
+			"ranked.error",
+		])
+		.where(sql<boolean>`ranked.rn <= ${sql.lit(CAP_PER_TASK_TYPE)}`)
+		.orderBy("ranked.scheduled_at", "desc")
 		.execute();
+
+	return rows as Array<CronTaskExecution>;
 }
