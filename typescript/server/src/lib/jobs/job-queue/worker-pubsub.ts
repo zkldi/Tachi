@@ -1,13 +1,16 @@
 import { log } from "#lib/log/log";
+import { TachiConfig } from "#lib/setup/config";
 import { RedisClient } from "#services/redis/redis";
 
-export const JOB_QUEUE_EVENTS_CHANNEL = "job-queue:events";
+const PREFIX = TachiConfig.NAME;
+
+export const JOB_QUEUE_EVENTS_CHANNEL = `${PREFIX}:job-queue:events`;
 
 /**
  * Redis key written by the worker process on startup so the HTTP process
  * (and therefore the SSE stream) knows how many worker slots exist.
  */
-export const WORKER_COUNT_REDIS_KEY = "job-queue:worker-count";
+export const WORKER_COUNT_REDIS_KEY = `${PREFIX}:job-queue:worker-count`;
 
 export type WorkerPubSubEvent =
 	| {
@@ -39,7 +42,7 @@ export function PublishJobEvent(event: WorkerPubSubEvent): void {
 
 /** Per-import Redis pub/sub channel name. */
 export function importProgressChannel(importID: string): string {
-	return `import-progress:${importID}`;
+	return `${PREFIX}:import-progress:${importID}`;
 }
 
 export type ImportProgressEvent =
