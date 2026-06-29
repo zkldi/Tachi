@@ -71,6 +71,23 @@ const getScoreYAxisNotch = (game: GameGroup) => (s: number) => {
 	return "";
 };
 
+const getBaseline = (_game: "ongeki", data: Serie[]) => {
+	const dataset = data[0].data;
+	const dv = dataset[dataset.length - 1].y;
+	const finalValue: number = typeof dv === "number" ? dv : 0;
+
+	if (finalValue >= 1007_500) {
+		return 1007_500;
+	}
+	if (finalValue >= 1000_000) {
+		return 1000_000;
+	}
+	if (finalValue >= 990_000) {
+		return 990_000;
+	}
+	return 970_000;
+};
+
 const strokeColor = (
 	type: "BELLS" | Difficulties["chunithm"] | Difficulties["maimaidx"] | Difficulties["ongeki"],
 ) => {
@@ -238,16 +255,17 @@ export default function GekichumaiScoreChart({
 
 	if (type === "Score") {
 		if (game === "ongeki") {
+			const baseline = getBaseline("ongeki", data);
 			component = (
 				<ResponsiveLine
 					{...commonProps}
-					areaBaselineValue={970000}
+					areaBaselineValue={baseline}
 					axisLeft={{
 						tickValues: [970_000, 990_000, 1000_000, 1007_500, 1010_000],
 						format: getScoreYAxisNotch(game),
 					}}
 					colors={strokeColor(difficulty)}
-					data={limitScoreGraph(data, 970_000)}
+					data={limitScoreGraph(data, baseline)}
 					enableGridY={true}
 					gridYValues={[970_000, 980_000, 990_000, 1000_000, 1007_500, 1010_000]}
 					tooltip={(d: PointTooltipProps) => (
@@ -259,7 +277,7 @@ export default function GekichumaiScoreChart({
 						</ChartTooltip>
 					)}
 					yFormat={">-,.0f"}
-					yScale={{ type: "linear", min: 970_000, max: 1010_000 }}
+					yScale={{ type: "linear", min: baseline, max: 1010_000 }}
 				/>
 			);
 		} else if (game === "chunithm") {
