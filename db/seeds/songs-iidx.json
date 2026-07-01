@@ -31597,5 +31597,197 @@
 			"Rush"
 		],
 		"title": "Rush!!"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "OSTER project feat. 花たん",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "TRIUMPHAL ANTHEM"
+  		},
+  		"id": "S19dd4acb6dc336ea454",
+  		"legacySongID": 2591,
+  		"searchTerms": [],
+  		"title": "blue anthem"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "SOUND HOLIC feat. STEVIE(44MAGNUM)",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "CYBER ROCK"
+  		},
+  		"id": "S19bd502dae9343e2f7f",
+  		"legacySongID": 2592,
+  		"searchTerms": [],
+  		"title": "ESPRIT ONE"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "DÉ DÉ MOUSE",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "Nu-NRG / FUTUREDISCO"
+  		},
+  		"id": "S19251aaf95d83b22774",
+  		"legacySongID": 2593,
+  		"searchTerms": [],
+  		"title": "Get Into The Groove feat.WaMi"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "nora2r feat. Liqo & DD\"ナカタ\"Metal",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "HYBRID METALCORE"
+  		},
+  		"id": "S1990f414129cbbe810d",
+  		"legacySongID": 2594,
+  		"searchTerms": [],
+  		"title": "Mighty Beat Monsterz"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "BlackY feat. Risa Yuzuki",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "LIGHTNING Hi-TECH"
+  		},
+  		"id": "S1920f6348d8557a1085",
+  		"legacySongID": 2595,
+  		"searchTerms": [],
+  		"title": "THUNDERSTRIKE"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "暁Records",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "JAPANESE ALTERNATIVE ROCK"
+  		},
+  		"id": "S19418561db2805a0592",
+  		"legacySongID": 2596,
+  		"searchTerms": [],
+  		"title": "Wizards!"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "森羅万象",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "DANCE POP"
+  		},
+  		"id": "S19a9fc151bbcaf0cd7c",
+  		"legacySongID": 2597,
+  		"searchTerms": [
+    		"Meteora",
+    		"Meteora -meteor-",
+    		"meteor"
+  		],
+  		"title": "メテオラ-meteor-"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "MK",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "DRUMSTEP"
+  		},
+  		"id": "S19beaf6181b5eb809e6",
+  		"legacySongID": 2598,
+  		"searchTerms": [],
+  		"title": "Astra Blaze"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Juggernaut",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "GLHF"
+  		},
+  		"id": "S193608b356794611ada",
+  		"legacySongID": 2599,
+  		"searchTerms": [
+    		"GO"
+  		],
+  		"title": "GO!"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "SOUND HOLIC feat. Nana Takahashi",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "FUTURE VIBES"
+  		},
+  		"id": "S19858e92318551cd3f9",
+  		"legacySongID": 2600,
+  		"searchTerms": [],
+  		"title": "HORIZON BEATZ"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Numb'n'dub",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "ブレイクコア"
+  		},
+  		"id": "S198323427fea95b582f",
+  		"legacySongID": 2601,
+  		"searchTerms": [],
+  		"title": "King of Tribe"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Tatsunoshin",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "STAR☆CORE"
+  		},
+  		"id": "S195b41082f57a270a83",
+  		"legacySongID": 2602,
+  		"searchTerms": [
+    		"Meteor Shower"
+  		],
+  		"title": "Meteor☆Shower"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "BlackY",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "GOLDEN FORCE"
+  		},
+  		"id": "S1966940525062bf23cb",
+  		"legacySongID": 2603,
+  		"searchTerms": [
+    		"Rizing Gamers",
+    		"Rizing-Gamers",
+    		"Rising Gamers"
+  		],
+  		"title": "RIZING-GAMERS."
+	},
+	{
+  		"altTitles": [],
+  		"artist": "DJ Shimamura",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "HARDCORE RAVE"
+  		},
+  		"id": "S19942cd2d4bb159f3cd",
+  		"legacySongID": 2604,
+  		"searchTerms": [],
+  		"title": "SILKY BRAVE"
+	},
+	{
+  		"altTitles": [],
+  		"artist": "Rainy。",
+  		"data": {
+    		"displayVersion": "33",
+    		"genre": "COLOR DANCE POP"
+  		},
+  		"id": "S191de0bc75be28bf112",
+  		"legacySongID": 2605,
+  		"searchTerms": [],
+  		"title": "COLOR BURST"
 	}
 ]
