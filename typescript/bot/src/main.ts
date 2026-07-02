@@ -6,6 +6,7 @@ import { Env, ServerConfig } from "./config";
 import { handleIsCommand } from "./interaction-handlers/handle-is-command";
 import { GetUserAndTokenForDiscordID } from "./query/user-map";
 import { app } from "./server/server";
+import { ClosePgConnection } from "./services/pg/db";
 import { RegisterSlashCommands } from "./slash-commands/register";
 import { VERSION_PRETTY } from "./version";
 
@@ -22,6 +23,23 @@ BigInt.prototype.toJSON = function toJSON() {
 
 export const client = new Client({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES],
+});
+
+// discord.js throws an unhandled 'error' event from the WebSocket if no listener
+// is attached. Without this, transient gateway errors will crash the process.
+client.on("error", (err) => {
+	log.error({ err }, "Discord client error event.");
+});
+
+// Healthcheck that verifies the Discord gateway is actually connected,
+// not just that the Express HTTP server is alive. Docker HEALTHCHECK hits
+// this endpoint; returning 503 when the gateway is dead triggers a restart.
+app.get("/.deploy/up", (_req, res) => {
+	// client.ws.status: 0=READY, 1=CONNECTING, 2=RECONNECTING, ... 5=DISCONNECTED
+	if (client.ws.status === 0) {
+		return res.sendStatus(200);
+	}
+	return res.sendStatus(503);
 });
 
 client.on("guildMemberAdd", async (_member) => {
@@ -84,7 +102,18 @@ void (async () => {
 		log.info(`Logged in successfully to ${client.guilds.cache.size} guilds.`);
 
 		// Mount our express server.
-		app.listen(Env.PORT);
+		const server = app.listen(Env.PORT);
+
+		// Graceful shutdown on SIGTERM/SIGINT (Docker stop, Ctrl+C).
+		const shutdown = () => {
+			log.info("SIGTERM/SIGINT received -- shutting down gracefully.");
+			server.close(async () => {
+				await ClosePgConnection();
+				process.exit(0);
+			});
+		};
+		process.on("SIGTERM", shutdown);
+		process.on("SIGINT", shutdown);
 
 		log.info(
 			`Invite URL: https://discord.com/api/oauth2/authorize?client_id=${
@@ -103,4 +132,11 @@ void (async () => {
 // to avoid future deprecation.
 process.on("unhandledRejection", (reason, promise) => {
 	log.error({ promise }, reason as string);
+});
+
+// Mirrors the server's uncaughtException handler: log and exit so the
+// orchestrator restarts the container instead of leaving a broken process.
+process.on("uncaughtException", (err) => {
+	log.fatal({ err }, "Uncaught exception -- exiting.");
+	process.exit(1);
 });

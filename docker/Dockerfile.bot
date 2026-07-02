@@ -44,7 +44,7 @@ LABEL service="tachi-bot" \
       org.opencontainers.image.revision="${GIT_REVISION}" \
       org.opencontainers.image.created="${BUILD_TIME}"
 
-HEALTHCHECK --interval=15s --timeout=5s \
+HEALTHCHECK --interval=15s --timeout=5s --start-period=30s \
   CMD curl -sf http://localhost:${PORT:-8080}/.deploy/up || exit 1
 
 CMD ["/bot"]

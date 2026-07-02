@@ -159,8 +159,6 @@ app.post("/webhook", ValidateWebhookRequest, async (req, res) => {
 	return res.sendStatus(statusCode);
 });
 
-app.get("/.deploy/up", (_req, res) => res.sendStatus(200));
-
 /**
  * 404 Handler. If something gets to this point, they haven't matched with anything.
  *
