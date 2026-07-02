@@ -34166,6 +34166,23 @@
 	},
 	{
 		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 250
+		},
+		"difficulty": "ULTIMA",
+		"id": "C19f20a11b5c885fa3c0",
+		"isPrimary": true,
+		"legacyChartID": "c8ede4734353c722a4119821d79ec4e008390c9e",
+		"level": "15",
+		"levelNum": 15.1,
+		"songID": "S19d35e0ba2d3efe7b94",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
 			"displayVersion": "CHUNITHM PLUS",
 			"inGameID": 251
 		},
@@ -83368,6 +83385,7 @@
 		"songID": "S19d35e0bba4c5678152",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -174032,6 +174050,7 @@
 		"songID": "S19d35e0c1ac8a76bfa7",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -244041,6 +244060,7 @@
 		"songID": "S19d35e0c42be6dbaffe",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -244154,6 +244174,7 @@
 		"songID": "S19d35e0c42c5546a624",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254483,6 +254504,7 @@
 		"songID": "S19e3331c0c667de21dc",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254500,6 +254522,7 @@
 		"songID": "S19e3331c0c667de21dc",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254517,6 +254540,7 @@
 		"songID": "S19e3331c0c667de21dc",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254534,6 +254558,7 @@
 		"songID": "S19e3331c0c667de21dc",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254551,6 +254576,7 @@
 		"songID": "S19e3331c0c764ada78c",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254568,6 +254594,7 @@
 		"songID": "S19e3331c0c764ada78c",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254585,6 +254612,7 @@
 		"songID": "S19e3331c0c764ada78c",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -254602,6 +254630,7 @@
 		"songID": "S19e3331c0c764ada78c",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255411,6 +255440,7 @@
 		"songID": "S19e3331c0d59dace530",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255428,6 +255458,7 @@
 		"songID": "S19e3331c0d59dace530",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255445,6 +255476,7 @@
 		"songID": "S19e3331c0d59dace530",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255462,6 +255494,7 @@
 		"songID": "S19e3331c0d59dace530",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255479,6 +255512,7 @@
 		"songID": "S19e3331c0d672c6b738",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255496,6 +255530,7 @@
 		"songID": "S19e3331c0d672c6b738",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255513,6 +255548,7 @@
 		"songID": "S19e3331c0d672c6b738",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255530,6 +255566,7 @@
 		"songID": "S19e3331c0d672c6b738",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255547,6 +255584,7 @@
 		"songID": "S19e3331c0d772051374",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255564,6 +255602,7 @@
 		"songID": "S19e3331c0d772051374",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255581,6 +255620,7 @@
 		"songID": "S19e3331c0d772051374",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255598,6 +255638,7 @@
 		"songID": "S19e3331c0d772051374",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255615,6 +255656,7 @@
 		"songID": "S19e3331c0d8f06c6c67",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255632,6 +255674,7 @@
 		"songID": "S19e3331c0d8f06c6c67",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255649,6 +255692,7 @@
 		"songID": "S19e3331c0d8f06c6c67",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255666,6 +255710,7 @@
 		"songID": "S19e3331c0d8f06c6c67",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255683,6 +255728,7 @@
 		"songID": "S19e3331c0d99495a9ab",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255700,6 +255746,7 @@
 		"songID": "S19e3331c0d99495a9ab",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255717,6 +255764,7 @@
 		"songID": "S19e3331c0d99495a9ab",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255734,6 +255782,7 @@
 		"songID": "S19e3331c0d99495a9ab",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255955,6 +256004,7 @@
 		"songID": "S19e3331c0dd5ec20bad",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255972,6 +256022,7 @@
 		"songID": "S19e3331c0dd5ec20bad",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -255989,6 +256040,7 @@
 		"songID": "S19e3331c0dd5ec20bad",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256006,6 +256058,7 @@
 		"songID": "S19e3331c0dd5ec20bad",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256023,6 +256076,7 @@
 		"songID": "S19e3331c0dee190dcf2",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256040,6 +256094,7 @@
 		"songID": "S19e3331c0dee190dcf2",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256057,6 +256112,7 @@
 		"songID": "S19e3331c0dee190dcf2",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256074,6 +256130,7 @@
 		"songID": "S19e3331c0dee190dcf2",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256091,6 +256148,7 @@
 		"songID": "S19e3331c0df1b2b7872",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256108,6 +256166,7 @@
 		"songID": "S19e3331c0df1b2b7872",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256125,6 +256184,7 @@
 		"songID": "S19e3331c0df1b2b7872",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256142,6 +256202,7 @@
 		"songID": "S19e3331c0df1b2b7872",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256159,6 +256220,7 @@
 		"songID": "S19e3331c0e0d0c14a05",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256176,6 +256238,7 @@
 		"songID": "S19e3331c0e0d0c14a05",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256193,6 +256256,7 @@
 		"songID": "S19e3331c0e0d0c14a05",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256210,6 +256274,7 @@
 		"songID": "S19e3331c0e0d0c14a05",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256227,6 +256292,7 @@
 		"songID": "S19e3331c0e1e162bf89",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256244,6 +256310,7 @@
 		"songID": "S19e3331c0e1e162bf89",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256261,6 +256328,7 @@
 		"songID": "S19e3331c0e1e162bf89",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256278,6 +256346,7 @@
 		"songID": "S19e3331c0e1e162bf89",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256779,6 +256848,7 @@
 		"songID": "S19e3331c0e9c56daed6",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256796,6 +256866,7 @@
 		"songID": "S19e3331c0e9c56daed6",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256813,6 +256884,7 @@
 		"songID": "S19e3331c0e9c56daed6",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -256830,6 +256902,7 @@
 		"songID": "S19e3331c0e9c56daed6",
 		"versions": [
 			"xversex",
+			"xversex-intl",
 			"xversex-omni"
 		]
 	},
@@ -257378,6 +257451,1111 @@
 		"versions": [
 			"xversex",
 			"xversex-intl",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2979
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b54514224e5",
+		"isPrimary": true,
+		"legacyChartID": "d163d709f3df9bdbde55f10cc56941472cfdcb83",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f20a11b53e622226e",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2979
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b53ae910606",
+		"isPrimary": true,
+		"legacyChartID": "0e515dfdb4aeab68c407df16646fca31b605b948",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b53e622226e",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2979
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b548cd74a79",
+		"isPrimary": true,
+		"legacyChartID": "ec61d5858c46a0df27a1bef9a819bb8580330ebc",
+		"level": "10",
+		"levelNum": 10.3,
+		"songID": "S19f20a11b53e622226e",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2979
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5413e705c8",
+		"isPrimary": true,
+		"legacyChartID": "ffa87dad0e204fa232081e7375d2f4d0de46415e",
+		"level": "13+",
+		"levelNum": 13.5,
+		"songID": "S19f20a11b53e622226e",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2980
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b540c953272",
+		"isPrimary": true,
+		"legacyChartID": "438a6865c6d75505ce2b10507341fbc49d020fbf",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f20a11b5419e4e62a",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2980
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b54d31e1597",
+		"isPrimary": true,
+		"legacyChartID": "679b7d85e74a1fe8949502858ff06e08e8925f6e",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5419e4e62a",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2980
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b545725d0a4",
+		"isPrimary": true,
+		"legacyChartID": "8ec8e956628b2229068c08fbd4f38c906ea2a9a0",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S19f20a11b5419e4e62a",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2980
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5461b165f8",
+		"isPrimary": true,
+		"legacyChartID": "293244670236db7bd7e51b66140c27fff775b2d0",
+		"level": "12+",
+		"levelNum": 12.8,
+		"songID": "S19f20a11b5419e4e62a",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2980
+		},
+		"difficulty": "ULTIMA",
+		"id": "C19f20a11b54246e5309",
+		"isPrimary": true,
+		"legacyChartID": "2d80f712e40e97d6c9e5fe96653b2718a566eb63",
+		"level": "14",
+		"levelNum": 14.2,
+		"songID": "S19f20a11b5419e4e62a",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2981
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b552c90d201",
+		"isPrimary": true,
+		"legacyChartID": "3c5ecd899cbb41b7e9395d9d9f39e91e6dc2b7bc",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f20a11b558c16ee65",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2981
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5596a19a3f",
+		"isPrimary": true,
+		"legacyChartID": "593ff007bb8fa76f64b260e5f3cbe8f1239bdb2b",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b558c16ee65",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2981
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b55192e1572",
+		"isPrimary": true,
+		"legacyChartID": "9015edf92677bcc923c556d5a16e585c697be2b7",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19f20a11b558c16ee65",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2981
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b55a0ab11da",
+		"isPrimary": true,
+		"legacyChartID": "06b2cc0a733708f610795cf163708b99b7a52f76",
+		"level": "13+",
+		"levelNum": 13.6,
+		"songID": "S19f20a11b558c16ee65",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2982
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5614162671",
+		"isPrimary": true,
+		"legacyChartID": "eeca525dcd507227d69bee2d48acb2094f1fd10b",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f20a11b56618d18dc",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2982
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b56978580b3",
+		"isPrimary": true,
+		"legacyChartID": "f012e1e33d7cbf302bc457e824f172f17162578c",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19f20a11b56618d18dc",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2982
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b564a99c1cd",
+		"isPrimary": true,
+		"legacyChartID": "074564d99c810ba65d215d18b76eab8de182b2c6",
+		"level": "10+",
+		"levelNum": 10.5,
+		"songID": "S19f20a11b56618d18dc",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2982
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5684dfcd4f",
+		"isPrimary": true,
+		"legacyChartID": "186562e7790f8cdc6497fc527c63259dce284cb3",
+		"level": "14+",
+		"levelNum": 14.5,
+		"songID": "S19f20a11b56618d18dc",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3002
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b57bbb134f0",
+		"isPrimary": true,
+		"legacyChartID": "e02fdb032278f1a6b5cd248575270ce68d540da2",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f20a11b573fd7060f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3002
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b57e1f9b224",
+		"isPrimary": true,
+		"legacyChartID": "b6f9995eb34a70d8f2146b49de65d4db5d63c5f8",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b573fd7060f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3002
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b572b77eacb",
+		"isPrimary": true,
+		"legacyChartID": "72aa8bd2c7fba385af5af95f8a97c521416d49e1",
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19f20a11b573fd7060f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3002
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b576f5fba6c",
+		"isPrimary": true,
+		"legacyChartID": "f8201dc369f2578423ed27b6092d73af31359689",
+		"level": "13",
+		"levelNum": 13.3,
+		"songID": "S19f20a11b573fd7060f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2983
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5856977833",
+		"isPrimary": true,
+		"legacyChartID": "a90bd6382151c118b618afedc6b6f328c667335d",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f20a11b58b70b6542",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2983
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b58c05730dc",
+		"isPrimary": true,
+		"legacyChartID": "ba9ba03bf0cff2f9440786e9061704c617b0a88d",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19f20a11b58b70b6542",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2983
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b58da9dfaea",
+		"isPrimary": true,
+		"legacyChartID": "3ee4b7ac30e7e25a97eee583d024bf13a13d703a",
+		"level": "10",
+		"levelNum": 10.2,
+		"songID": "S19f20a11b58b70b6542",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2983
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b58b1416689",
+		"isPrimary": true,
+		"legacyChartID": "f3a605a8236f974809923a90bb7871597846e62e",
+		"level": "13",
+		"levelNum": 13.3,
+		"songID": "S19f20a11b58b70b6542",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2985
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b59632db0d5",
+		"isPrimary": true,
+		"legacyChartID": "8af4af8deadf7136003ca02b25eedde78b036dac",
+		"level": "7+",
+		"levelNum": 7.5,
+		"songID": "S19f20a11b59a42bd962",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2985
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b59eb298bf8",
+		"isPrimary": true,
+		"legacyChartID": "447cffd3edf4f190ad6d232634b8327e36bce36f",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b59a42bd962",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2985
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b59109438b5",
+		"isPrimary": true,
+		"legacyChartID": "d7d046a51e4e14d8ff58516c4e3fea0c277ae9d5",
+		"level": "11",
+		"levelNum": 11.3,
+		"songID": "S19f20a11b59a42bd962",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2985
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5945dfd948",
+		"isPrimary": true,
+		"legacyChartID": "a6eb74d2cd735b3fd85c82db546099c0f416d067",
+		"level": "14+",
+		"levelNum": 14.5,
+		"songID": "S19f20a11b59a42bd962",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2984
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b592cf4fa7f",
+		"isPrimary": true,
+		"legacyChartID": "be5599c0b700920d2583a1919787edbe55787d04",
+		"level": "7+",
+		"levelNum": 7.5,
+		"songID": "S19f20a11b59ab9bc39f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2984
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b59cd591fd8",
+		"isPrimary": true,
+		"legacyChartID": "abf454988d07080f34242bb29bcbefdeeaea4a91",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b59ab9bc39f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2984
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b590bbdb111",
+		"isPrimary": true,
+		"legacyChartID": "13979c7de4f1d18f4be8b0bf114b7aaa0377b9cd",
+		"level": "12",
+		"levelNum": 12.2,
+		"songID": "S19f20a11b59ab9bc39f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2984
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b59e716feac",
+		"isPrimary": true,
+		"legacyChartID": "17cb6d13ae1f01d286424fdef329693aac8fb42d",
+		"level": "14+",
+		"levelNum": 14.8,
+		"songID": "S19f20a11b59ab9bc39f",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2987
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5a7e89d4ad",
+		"isPrimary": true,
+		"legacyChartID": "a63c4a3d7d6afa84b94a7512cbc78785ea5cdde6",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19f20a11b5a8073bcf6",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2987
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5a2d9f0d98",
+		"isPrimary": true,
+		"legacyChartID": "17debf3dca9951d89cf6b1a364e0a52c1b0d7e06",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5a8073bcf6",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2987
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5acfe19125",
+		"isPrimary": true,
+		"legacyChartID": "6626cdb73dd071a61cf00ccc47697526a51cffbd",
+		"level": "12+",
+		"levelNum": 12.8,
+		"songID": "S19f20a11b5a8073bcf6",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2987
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5ac6e87e55",
+		"isPrimary": true,
+		"legacyChartID": "2d926f2de2b216a5e4963ab1870fab56075aa3a8",
+		"level": "14",
+		"levelNum": 14.4,
+		"songID": "S19f20a11b5a8073bcf6",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2986
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5aa869dfd4",
+		"isPrimary": true,
+		"legacyChartID": "037f0f6e7463d9058055ecf48c4225ca1bb0b83a",
+		"level": "7+",
+		"levelNum": 7.5,
+		"songID": "S19f20a11b5aafe86409",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2986
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5a495c3273",
+		"isPrimary": true,
+		"legacyChartID": "6ba7fcde5445eeb561ea796bc9a48d40be11fa1e",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5aafe86409",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2986
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5a0fc6be01",
+		"isPrimary": true,
+		"legacyChartID": "95d57f88cfc6020e267e2044ac549a53c6c6d4ef",
+		"level": "11+",
+		"levelNum": 11.6,
+		"songID": "S19f20a11b5aafe86409",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2986
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5a81d380df",
+		"isPrimary": true,
+		"legacyChartID": "1a0a60e4c5347b8520a231477af96c66f3fefd19",
+		"level": "14+",
+		"levelNum": 14.7,
+		"songID": "S19f20a11b5aafe86409",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2988
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5c4f9229c6",
+		"isPrimary": true,
+		"legacyChartID": "44f23760ab90ac2dea5c7465ec0641abd8147efa",
+		"level": "8+",
+		"levelNum": 8.5,
+		"songID": "S19f20a11b5c5b5706b5",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2988
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5c63182803",
+		"isPrimary": true,
+		"legacyChartID": "a6358b937624e4c3ccd28dc50daf29542957e87d",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19f20a11b5c5b5706b5",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2988
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5cf8234868",
+		"isPrimary": true,
+		"legacyChartID": "6c4be9b513b89b465a0aa80ce0a0e01cf92725ed",
+		"level": "11+",
+		"levelNum": 11.6,
+		"songID": "S19f20a11b5c5b5706b5",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2988
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5c2ab0f513",
+		"isPrimary": true,
+		"legacyChartID": "d202ca6563c6961382ec2c49cd69b7eb8df51b4d",
+		"level": "15",
+		"levelNum": 15,
+		"songID": "S19f20a11b5c5b5706b5",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2989
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5d48c6ae54",
+		"isPrimary": true,
+		"legacyChartID": "2a4b5ef5d28cf0d1aeef4bfee44916ff00ee4bec",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19f20a11b5d304e9cf9",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2989
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5d44143ba9",
+		"isPrimary": true,
+		"legacyChartID": "2ff1a90e066a4d844e81a2eff9da1954cfc8568e",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5d304e9cf9",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2989
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5d4edd2ee9",
+		"isPrimary": true,
+		"legacyChartID": "401a4edf2f9116b7b6e891d2ac1c70e3170b255a",
+		"level": "10",
+		"levelNum": 10.1,
+		"songID": "S19f20a11b5d304e9cf9",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2989
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5db22fa221",
+		"isPrimary": true,
+		"legacyChartID": "4a985dc5009213f33fe080e027764f4f5c13c790",
+		"level": "13+",
+		"levelNum": 13.5,
+		"songID": "S19f20a11b5d304e9cf9",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2990
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5ef13df21b",
+		"isPrimary": true,
+		"legacyChartID": "5f74bcec9694998900174e4a38c771dc914efdfd",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f20a11b5e73a22c7c",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2990
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5efb799aa4",
+		"isPrimary": true,
+		"legacyChartID": "fc029d112d8793ca385391ef4c32491bcdd154b4",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5e73a22c7c",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2990
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5e844d4a9c",
+		"isPrimary": true,
+		"legacyChartID": "a9a57dbe49a1e005eb44144faa1081e0877e17c5",
+		"level": "8+",
+		"levelNum": 8.5,
+		"songID": "S19f20a11b5e73a22c7c",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2990
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5e19eafa85",
+		"isPrimary": true,
+		"legacyChartID": "655a4f596075d9caeef40c47c60462983e2c3e90",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S19f20a11b5e73a22c7c",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2993
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5fc3af0e7b",
+		"isPrimary": true,
+		"legacyChartID": "ba6e9c4171c793fd28c6ad00c784a0cfd2ce4714",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f20a11b5f5cc26fe7",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2993
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5f53e78a09",
+		"isPrimary": true,
+		"legacyChartID": "b7a4a791a236b8116fae8eb6b0f9ee2175b00ade",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19f20a11b5f5cc26fe7",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2993
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5f1bc2ef41",
+		"isPrimary": true,
+		"legacyChartID": "78413ab2a1fffc356561a79a7167499590894714",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19f20a11b5f5cc26fe7",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2993
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b60a116a4a5",
+		"isPrimary": true,
+		"legacyChartID": "1a446691769ccac180430f3cf353e68fdc1965f6",
+		"level": "11+",
+		"levelNum": 11.6,
+		"songID": "S19f20a11b5f5cc26fe7",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2992
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b5f362239a0",
+		"isPrimary": true,
+		"legacyChartID": "660cfc65518d7487972826581166c0c7f341ffc0",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f20a11b5fe0295c85",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2992
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b5f77b5f894",
+		"isPrimary": true,
+		"legacyChartID": "ee5d5038f4feaaf3544093b2540e22e9ccf5b133",
+		"level": "3",
+		"levelNum": 3,
+		"songID": "S19f20a11b5fe0295c85",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2992
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b5f880ac4ab",
+		"isPrimary": true,
+		"legacyChartID": "1e98b4705fd967b58242966ee353e50f89de4aab",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S19f20a11b5fe0295c85",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 2992
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b5f5047d6ea",
+		"isPrimary": true,
+		"legacyChartID": "3950e1e16b88e2e5fe2031e02eb9429efee90878",
+		"level": "12+",
+		"levelNum": 12.7,
+		"songID": "S19f20a11b5fe0295c85",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3004
+		},
+		"difficulty": "ADVANCED",
+		"id": "C19f20a11b6032ac96a9",
+		"isPrimary": true,
+		"legacyChartID": "d3a24d66cd51511c1d4e838edc77bafedd193f05",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f20a11b601d093478",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3004
+		},
+		"difficulty": "BASIC",
+		"id": "C19f20a11b60551676a0",
+		"isPrimary": true,
+		"legacyChartID": "bf723924a72eb76b9d9a4653bcaf03835796a5bb",
+		"level": "2",
+		"levelNum": 2,
+		"songID": "S19f20a11b601d093478",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3004
+		},
+		"difficulty": "EXPERT",
+		"id": "C19f20a11b6048befed5",
+		"isPrimary": true,
+		"legacyChartID": "2539937085a0d6abdd4d7446a6fe8ef104bc71c4",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S19f20a11b601d093478",
+		"versions": [
+			"xversex",
+			"xversex-omni"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "CHUNITHM X-VERSE-X",
+			"inGameID": 3004
+		},
+		"difficulty": "MASTER",
+		"id": "C19f20a11b60d4bcab2a",
+		"isPrimary": true,
+		"legacyChartID": "f35863d861502afa9b27349429361c77f6cdc677",
+		"level": "12",
+		"levelNum": 12.3,
+		"songID": "S19f20a11b601d093478",
+		"versions": [
+			"xversex",
 			"xversex-omni"
 		]
 	}
