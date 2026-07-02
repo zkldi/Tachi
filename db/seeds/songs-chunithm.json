@@ -25738,5 +25738,66 @@
 		"legacySongID": 3004,
 		"searchTerms": [],
 		"title": "さくらんぼキッス～爆発だも～ん～"
+	},
+	{
+		"altTitles": [],
+		"artist": "Shoichiro Hirata feat.Sana",
+		"data": {
+			"genre": "ゲキマイ"
+		},
+		"id": "S19f20b362f4b7d05d5d",
+		"legacySongID": 2994,
+		"searchTerms": [
+			"prism rhythm"
+		],
+		"title": "プリズム△▽リズム"
+	},
+	{
+		"altTitles": [],
+		"artist": "千本松 仁",
+		"data": {
+			"genre": "ゲキマイ"
+		},
+		"id": "S19f20b362f96bb5020b",
+		"legacySongID": 2995,
+		"searchTerms": [],
+		"title": "ARAIS"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
+		"data": {
+			"genre": "ゲキマイ"
+		},
+		"id": "S19f20b362fd222283ca",
+		"legacySongID": 2996,
+		"searchTerms": [
+			"ichigeki no theme"
+		],
+		"title": "いちげき！のテーマ"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
+		"data": {
+			"genre": "ゲキマイ"
+		},
+		"id": "S19f20b363005a2a5af2",
+		"legacySongID": 2997,
+		"searchTerms": [
+			"icicle dream"
+		],
+		"title": "アイシング・ドリーム"
+	},
+	{
+		"altTitles": [],
+		"artist": "pan",
+		"data": {
+			"genre": "ゲキマイ"
+		},
+		"id": "S19f20b3630493457741",
+		"legacySongID": 2998,
+		"searchTerms": [],
+		"title": "Pastel Sprinkles"
 	}
 ]
