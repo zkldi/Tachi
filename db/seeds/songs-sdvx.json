@@ -29947,5 +29947,83 @@
 			"solitarypoison_alkome"
 		],
 		"title": "Solitary Poison"
+	},
+	{
+		"altTitles": [],
+		"artist": "KE!JU",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8a5d643a0e",
+		"legacySongID": 2519,
+		"searchTerms": [
+			"danzainomimesis_keiju"
+		],
+		"title": "断罪のミメシス"
+	},
+	{
+		"altTitles": [],
+		"artist": "猫叉劇団",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8b305c5036",
+		"legacySongID": 2524,
+		"searchTerms": [
+			"esperanza_nekomatagekidan"
+		],
+		"title": "Esperanza"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"Yvya\" feat. 吾龍",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8b4ed158fd",
+		"legacySongID": 2523,
+		"searchTerms": [
+			"secretraid_yvya"
+		],
+		"title": "Secret Raid"
+	},
+	{
+		"altTitles": [],
+		"artist": "めめめ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8b5c9e61f1",
+		"legacySongID": 2521,
+		"searchTerms": [
+			"anypercent_mememe"
+		],
+		"title": "Any％"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"S-C-U & SYUNN\"",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8b843afd82",
+		"legacySongID": 2522,
+		"searchTerms": [
+			"lavaflow_scusyunn"
+		],
+		"title": "Lava Flow"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAN1CHU",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19efff7de8beac08a01",
+		"legacySongID": 2520,
+		"searchTerms": [
+			"smintheus_tan1chu"
+		],
+		"title": "Smintheus"
 	}
 ]
