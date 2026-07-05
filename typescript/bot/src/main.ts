@@ -5,7 +5,7 @@ import { Client, type CommandInteraction, Intents, type SelectMenuInteraction } 
 import { Env, ServerConfig } from "./config";
 import { handleIsCommand } from "./interaction-handlers/handle-is-command";
 import { GetUserAndTokenForDiscordID } from "./query/user-map";
-import { app } from "./server/server";
+import { app, MountFallbackHandlers } from "./server/server";
 import { ClosePgConnection } from "./services/pg/db";
 import { RegisterSlashCommands } from "./slash-commands/register";
 import { VERSION_PRETTY } from "./version";
@@ -100,6 +100,9 @@ void (async () => {
 		await client.login(Env.DISCORD_TOKEN);
 
 		log.info(`Logged in successfully to ${client.guilds.cache.size} guilds.`);
+
+		// Mount the 404 + error fallbacks last.
+		MountFallbackHandlers();
 
 		// Mount our express server.
 		const server = app.listen(Env.PORT);

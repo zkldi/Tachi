@@ -159,18 +159,6 @@ app.post("/webhook", ValidateWebhookRequest, async (req, res) => {
 	return res.sendStatus(statusCode);
 });
 
-/**
- * 404 Handler. If something gets to this point, they haven't matched with anything.
- *
- * @name ALL *
- */
-app.all("*", (_req, res) =>
-	res.status(404).json({
-		success: false,
-		description: "Nothing found here.",
-	}),
-);
-
 interface ExpressJSONErr extends SyntaxError {
 	status: number;
 	message: string;
@@ -209,6 +197,20 @@ const MainExpressErrorHandler: express.ErrorRequestHandler = (err, req, res, _ne
 	});
 };
 
-app.use(MainExpressErrorHandler);
+export function MountFallbackHandlers(): void {
+	/**
+	 * 404 Handler. If something gets to this point, they haven't matched with anything.
+	 *
+	 * @name ALL *
+	 */
+	app.all("*", (_req, res) =>
+		res.status(404).json({
+			success: false,
+			description: "Nothing found here.",
+		}),
+	);
+
+	app.use(MainExpressErrorHandler);
+}
 
 log.info(`Starting express server on port ${Env.PORT}.`);
