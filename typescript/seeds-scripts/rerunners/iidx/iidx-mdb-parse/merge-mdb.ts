@@ -3,18 +3,20 @@ import { Command } from "commander";
 import fs from "fs";
 import path from "path";
 import {
-	type ChartDocument,
+	type SEEDS_ChartDocument,
 	type Difficulties,
 	type GamesForGroup,
 	type integer,
-	LEGACY_GetGamePTConfig,
-	type SongDocument,
+	GetGameConfig,
+	type SEEDS_SongDocument,
 	type Versions,
 } from "tachi-common";
 
 import {
 	CreateChartID,
+	CreateSongID,
 	GetFreshSongIDGenerator,
+	randomHex,
 	ReadCollection,
 	WriteCollection,
 } from "../../../util";
@@ -46,7 +48,7 @@ const options = program.opts() as {
 	version: Versions["iidx-sp"];
 };
 
-const iidxConfig = LEGACY_GetGamePTConfig("iidx", "SP");
+const iidxConfig = GetGameConfig("iidx-sp");
 
 if (!Object.keys(iidxConfig.versions).includes(options.version)) {
 	throw new Error(
@@ -62,9 +64,10 @@ if (options.index !== "0" && options.index !== "1") {
 	throw new Error(`Expected an --index of 0 or 1. Got ${options.index}.`);
 }
 
-const existingCharts: ChartDocument<GamesForGroup["iidx"]>[] = ReadCollection("charts-iidx.json");
+const existingChartsSP: SEEDS_ChartDocument<"iidx-sp">[] = ReadCollection("charts-iidx-sp.json");
+const existingChartsDP: SEEDS_ChartDocument<"iidx-dp">[] = ReadCollection("charts-iidx-dp.json");
 
-const existingSongs: SongDocument<"iidx">[] = ReadCollection("songs-iidx.json");
+const existingSongs: SEEDS_SongDocument<"iidx">[] = ReadCollection("songs-iidx.json");
 
 const blacklist = fs
 	.readFileSync(path.join(__dirname, "blacklist.txt"), "utf-8")
@@ -99,17 +102,17 @@ async function ParseIIDXMDB() {
 		options.alwaysExtract,
 	);
 
-	const chartMap = new Map<integer, ChartDocument<GamesForGroup["iidx"]>>();
-	const songMap = new Map<integer, SongDocument<"iidx">>();
-	const songTitleMap = new Map<string, SongDocument<"iidx">>();
-	const chartDiffMap = new Map<string, ChartDocument<GamesForGroup["iidx"]>>();
+	const chartMap = new Map<integer, SEEDS_ChartDocument<GamesForGroup["iidx"]>>();
+	const songMap = new Map<string, SEEDS_SongDocument<"iidx">>();
+	const songTitleMap = new Map<string, SEEDS_SongDocument<"iidx">>();
+	const chartDiffMap = new Map<string, SEEDS_ChartDocument<GamesForGroup["iidx"]>>();
 
 	for (const song of existingSongs) {
 		songMap.set(song.id, song);
 		songTitleMap.set(song.title, song);
 	}
 
-	for (const chart of existingCharts) {
+	for (const chart of [...existingChartsSP, ...existingChartsDP]) {
 		// what, you thought this was easy?
 		if (Array.isArray(chart.data.inGameID)) {
 			for (const igid of chart.data.inGameID) {
@@ -120,17 +123,27 @@ async function ParseIIDXMDB() {
 		}
 	}
 
-	for (const chart of existingCharts) {
+	for (const chart of existingChartsSP) {
 		if (Array.isArray(chart.data.inGameID)) {
 			for (const igid of chart.data.inGameID) {
-				chartDiffMap.set(`${igid}-${chart.playtype}-${chart.difficulty}`, chart);
+				chartDiffMap.set(`${igid}-SP-${chart.difficulty}`, chart);
 			}
 		} else {
-			chartDiffMap.set(`${chart.data.inGameID}-${chart.playtype}-${chart.difficulty}`, chart);
+			chartDiffMap.set(`${chart.data.inGameID}-SP-${chart.difficulty}`, chart);
 		}
 	}
 
-	const getFreeSongID = GetFreshSongIDGenerator("iidx");
+	for (const chart of existingChartsDP) {
+		if (Array.isArray(chart.data.inGameID)) {
+			for (const igid of chart.data.inGameID) {
+				chartDiffMap.set(`${igid}-DP-${chart.difficulty}`, chart);
+			}
+		} else {
+			chartDiffMap.set(`${chart.data.inGameID}-DP-${chart.difficulty}`, chart);
+		}
+	}
+
+	const getFreeLegacySongID = GetFreshSongIDGenerator("iidx");
 
 	for (const inp of mdbCharts) {
 		if (isInBlacklist(`S${inp.songID}`)) {
@@ -141,7 +154,7 @@ async function ParseIIDXMDB() {
 		}
 
 		const anySongIDMatch = chartMap.get(inp.songID);
-		let song: SongDocument<"iidx">;
+		let song: SEEDS_SongDocument<"iidx">;
 
 		if (!anySongIDMatch) {
 			// new song?
@@ -168,8 +181,9 @@ async function ParseIIDXMDB() {
 				searchTerms.push(inp.marquee);
 			}
 
-			const tachiSong: SongDocument<"iidx"> = {
-				id: getFreeSongID(),
+			const tachiSong: SEEDS_SongDocument<"iidx"> = {
+				id: CreateSongID(),
+				legacySongID: getFreeLegacySongID(),
 				artist: inp.artist,
 				title: inp.title,
 				data: {
@@ -241,15 +255,13 @@ async function ParseIIDXMDB() {
 
 				// otherwise, make new chart?
 				const playtypeStr = diffName.split("-")[0] as "DP" | "SP";
-				const game: GamesForGroup["iidx"] = playtypeStr === "SP" ? "iidx-sp" : "iidx-dp";
-				const tachiChart: ChartDocument<GamesForGroup["iidx"]> = {
-					game,
-					chartID: CreateChartID(),
+				const tachiChart: SEEDS_ChartDocument<GamesForGroup["iidx"]> = {
+					id: CreateChartID(),
+					legacyChartID: randomHex(20),
 					difficulty: diffName.split("-")[1] as Difficulties[GamesForGroup["iidx"]],
 					level: level.toString(),
 					levelNum: level,
 					isPrimary: true,
-					playtype: playtypeStr,
 
 					songID: song.id,
 					versions: [options.version],
@@ -265,7 +277,11 @@ async function ParseIIDXMDB() {
 				};
 
 				log.info(`Inserting new chart ${inp.title} ${diffName}.`);
-				existingCharts.push(tachiChart);
+				if (playtypeStr === "SP") {
+					existingChartsSP.push(tachiChart);
+				} else {
+					existingChartsDP.push(tachiChart);
+				}
 			} else {
 				if (!notecount) {
 					log.warn(
@@ -304,7 +320,8 @@ async function ParseIIDXMDB() {
 	}
 
 	WriteCollection("songs-iidx.json", existingSongs);
-	WriteCollection("charts-iidx.json", existingCharts);
+	WriteCollection("charts-iidx-sp.json", existingChartsSP);
+	WriteCollection("charts-iidx-dp.json", existingChartsDP);
 }
 
 ParseIIDXMDB();
