@@ -214,7 +214,11 @@ export async function ParseIIDXData(
 				const notecount = chart.notecount;
 
 				if (chart.difficulty === "LEGGENDARIA") {
-					if (notecount !== 0 && notecounts[`${chart.playtype}-LEGGENDARIA`]) {
+					if (
+						notecount !== 0 &&
+						notecounts[`${chart.playtype}-LEGGENDARIA`] &&
+						notecount !== notecounts[`${chart.playtype}-LEGGENDARIA`]
+					) {
 						log.warn(
 							`${chart.artist} - ${chart.title} has conflicting ${
 								chart.playtype
