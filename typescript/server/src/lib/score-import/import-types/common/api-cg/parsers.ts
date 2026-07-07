@@ -11,6 +11,7 @@ import { type APIImportTypes, FormatPrError, type integer, type V3Game } from "t
 import type { ParserFunctionReturns } from "../types";
 import type {
 	CGContext,
+	CGIIDXScore,
 	CGJubeatScore,
 	CGMusecaScore,
 	CGPopnScore,
@@ -21,6 +22,29 @@ import type {
 
 import { FetchCGScores } from "./traverse-api";
 import { CGGameToTachiGame, FormatCGService } from "./util";
+
+const PR_CG_IIDX = {
+	internalId: p.isPositiveInteger,
+	difficulty: "string",
+	version: p.isPositiveInteger,
+	exScore: p.isPositiveInteger,
+	clearType: p.isPositiveInteger,
+	perfectCount: p.isPositiveInteger,
+	greatCount: p.isPositiveInteger,
+
+	// missCount is -1 when it's not recorded, so we have to allow that.
+	missCount: p.or(p.isPositiveInteger, p.is(-1)),
+
+	// unused
+	dead: p.any,
+
+	option1: p.isPositiveInteger,
+	option2: p.isPositiveInteger,
+	ghost: p.any,
+	ghostGauge: p.any,
+
+	dateTime: "string",
+};
 
 const PR_CG_JUBEAT = {
 	internalId: p.isPositiveInteger,
@@ -97,6 +121,7 @@ const PR_CG_POPN = {
 
 // given a CG game, what should the returned data look like?
 const CG_SCHEMAS: Record<CGSupportedGames, PrudenceSchema> = {
+	iidx: PR_CG_IIDX,
 	jb: PR_CG_JUBEAT,
 	msc: PR_CG_MUSECA,
 	sdvx: PR_CG_SDVX,
@@ -169,16 +194,19 @@ export function CreateCGParser<T extends { dateTime: string }>(
 	};
 }
 
+export const ParseCGDevIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev", "api/cg-dev-iidx");
 export const ParseCGDevMuseca = CreateCGParser<CGMusecaScore>("msc", "dev", "api/cg-dev-museca");
 export const ParseCGDevSDVX = CreateCGParser<CGSDVXScore>("sdvx", "dev", "api/cg-dev-sdvx");
 export const ParseCGDevJubeat = CreateCGParser<CGJubeatScore>("jb", "dev", "api/cg-dev-jubeat");
 export const ParseCGDevPopn = CreateCGParser<CGPopnScore>("popn", "dev", "api/cg-dev-popn");
 
+export const ParseCGGanIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev", "api/cg-gan-iidx");
 export const ParseCGGanMuseca = CreateCGParser<CGMusecaScore>("msc", "gan", "api/cg-gan-museca");
 export const ParseCGGanSDVX = CreateCGParser<CGSDVXScore>("sdvx", "gan", "api/cg-gan-sdvx");
 export const ParseCGGanJubeat = CreateCGParser<CGJubeatScore>("jb", "gan", "api/cg-gan-jubeat");
 export const ParseCGGanPopn = CreateCGParser<CGPopnScore>("popn", "gan", "api/cg-gan-popn");
 
+export const ParseCGNagIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev", "api/cg-nag-iidx");
 export const ParseCGNagMuseca = CreateCGParser<CGMusecaScore>("msc", "nag", "api/cg-nag-museca");
 export const ParseCGNagSDVX = CreateCGParser<CGSDVXScore>("sdvx", "nag", "api/cg-nag-sdvx");
 export const ParseCGNagJubeat = CreateCGParser<CGJubeatScore>("jb", "nag", "api/cg-nag-jubeat");

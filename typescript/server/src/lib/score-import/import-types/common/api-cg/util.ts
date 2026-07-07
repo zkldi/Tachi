@@ -8,6 +8,7 @@ export function CGGameToTachiGame(cgGame: CGSupportedGames): GameGroup {
 			return "jubeat";
 		case "msc":
 			return "museca";
+		case "iidx":
 		case "popn":
 		case "sdvx":
 			return cgGame;

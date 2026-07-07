@@ -164,6 +164,9 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 			/>,
 			<ImportTypeInfoCard importType="api/flo-iidx" key="api/flo-iidx" />,
 			<ImportTypeInfoCard importType="api/eag-iidx" key="api/eag-iidx" />,
+			<ImportTypeInfoCard importType="api/cg-gan-iidx" key="api/cg-gan-iidx" />,
+			<ImportTypeInfoCard importType="api/cg-nag-iidx" key="api/cg-nag-iidx" />,
+			<ImportTypeInfoCard importType="api/cg-dev-iidx" key="api/cg-dev-iidx" />,
 			<ImportInfoCard
 				desc="Use your data from a CG instance (Dev/GAN/NAG)."
 				href="kt-cg-iidx-importer"
@@ -691,6 +694,36 @@ function ImportTypeInfoCard({
 					desc="Pull your Jubeat scores from the GAN Network."
 					href="cg-gan-jubeat"
 					key="cg-gan-jubeat"
+					moreInfo="Note: All networks are reduced to their first three letters for anonymity reasons."
+					name="CG GAN Integration"
+				/>
+			);
+		case "api/cg-dev-iidx":
+			return (
+				<ImportInfoCard
+					desc="Pull your IIDX scores from the CG Dev Network."
+					href="cg-dev-iidx"
+					key="cg-dev-iidx"
+					moreInfo="Note: All networks are reduced to their first three letters for anonymity reasons."
+					name="CG Dev Integration"
+				/>
+			);
+		case "api/cg-nag-iidx":
+			return (
+				<ImportInfoCard
+					desc="Pull your IIDX scores from the NAG Network."
+					href="cg-nag-iidx"
+					key="cg-nag-iidx"
+					moreInfo="Note: All networks are reduced to their first three letters for anonymity reasons."
+					name="CG NAG Integration"
+				/>
+			);
+		case "api/cg-gan-iidx":
+			return (
+				<ImportInfoCard
+					desc="Pull your IIDX scores from the GAN Network."
+					href="cg-gan-iidx"
+					key="cg-gan-iidx"
 					moreInfo="Note: All networks are reduced to their first three letters for anonymity reasons."
 					name="CG GAN Integration"
 				/>

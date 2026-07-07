@@ -32,6 +32,7 @@ import type { LR2HookContext, LR2HookScore } from "../ir/lr2hook/types";
 import type { IRUSCContext } from "../ir/usc/types";
 import type {
 	CGContext,
+	CGIIDXScore,
 	CGJubeatScore,
 	CGMusecaScore,
 	CGPopnScore,
@@ -78,16 +79,19 @@ export interface ImportTypeDataMap {
 	"api/cg-dev-museca": CGMusecaScore;
 	"api/cg-dev-popn": CGPopnScore;
 	"api/cg-dev-jubeat": CGJubeatScore;
+	"api/cg-dev-iidx": CGIIDXScore;
 
 	"api/cg-nag-sdvx": CGSDVXScore;
 	"api/cg-nag-museca": CGMusecaScore;
 	"api/cg-nag-popn": CGPopnScore;
 	"api/cg-nag-jubeat": CGJubeatScore;
+	"api/cg-nag-iidx": CGIIDXScore;
 
 	"api/cg-gan-sdvx": CGSDVXScore;
 	"api/cg-gan-museca": CGMusecaScore;
 	"api/cg-gan-popn": CGPopnScore;
 	"api/cg-gan-jubeat": CGJubeatScore;
+	"api/cg-gan-iidx": CGIIDXScore;
 }
 
 export interface ImportTypeContextMap {
@@ -124,14 +128,17 @@ export interface ImportTypeContextMap {
 	"api/cg-dev-sdvx": CGContext;
 	"api/cg-dev-museca": CGContext;
 	"api/cg-dev-popn": CGContext;
+	"api/cg-dev-iidx": CGContext;
 	"api/cg-nag-jubeat": CGContext;
 	"api/cg-nag-sdvx": CGContext;
 	"api/cg-nag-museca": CGContext;
 	"api/cg-nag-popn": CGContext;
+	"api/cg-nag-iidx": CGContext;
 	"api/cg-gan-jubeat": CGContext;
 	"api/cg-gan-sdvx": CGContext;
 	"api/cg-gan-museca": CGContext;
 	"api/cg-gan-popn": CGContext;
+	"api/cg-gan-iidx": CGContext;
 }
 
 export interface OrphanScoreDocument<T extends ImportTypes = ImportTypes> {

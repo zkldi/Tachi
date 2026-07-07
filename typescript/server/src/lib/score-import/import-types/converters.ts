@@ -8,6 +8,7 @@ import ConvertAPIMytChunithm from "./api/myt-chunithm/converter";
 import ConvertAPIMytMaimaiDx from "./api/myt-maimaidx/converter";
 import ConvertAPIMytOngeki from "./api/myt-ongeki/converter";
 import ConvertAPIMytWACCA from "./api/myt-wacca/converter";
+import { ConverterAPICGIIDX } from "./common/api-cg/iidx/converter";
 import { ConverterAPICGJubeat } from "./common/api-cg/jb/converter";
 import { ConverterAPICGMuseca } from "./common/api-cg/museca/converter";
 import { ConverterAPICGPopn } from "./common/api-cg/popn/converter";
@@ -70,12 +71,15 @@ export const Converters: ConverterMap = {
 	"api/cg-dev-museca": ConverterAPICGMuseca,
 	"api/cg-dev-popn": ConverterAPICGPopn,
 	"api/cg-dev-jubeat": ConverterAPICGJubeat,
+	"api/cg-dev-iidx": ConverterAPICGIIDX,
 	"api/cg-nag-sdvx": ConverterAPICGSDVX,
 	"api/cg-nag-museca": ConverterAPICGMuseca,
 	"api/cg-nag-popn": ConverterAPICGPopn,
 	"api/cg-nag-jubeat": ConverterAPICGJubeat,
+	"api/cg-nag-iidx": ConverterAPICGIIDX,
 	"api/cg-gan-sdvx": ConverterAPICGSDVX,
 	"api/cg-gan-museca": ConverterAPICGMuseca,
 	"api/cg-gan-popn": ConverterAPICGPopn,
 	"api/cg-gan-jubeat": ConverterAPICGJubeat,
+	"api/cg-gan-iidx": ConverterAPICGIIDX,
 };

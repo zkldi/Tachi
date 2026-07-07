@@ -1,6 +1,7 @@
 import type { integer } from "tachi-common";
 
 export type CGSupportedGames =
+	| "iidx"
 	| "jb" // jubeat
 	| "msc" // museca
 	| "popn"
@@ -22,6 +23,23 @@ export interface CGScoresResponse<T> {
 export interface CGErrorResponse {
 	success: false;
 	message: string;
+}
+
+export interface CGIIDXScore {
+	version: integer;
+	internalId: integer;
+	difficulty: string;
+	exScore: integer;
+	clearType: integer;
+	perfectCount: integer;
+	greatCount: integer;
+	missCount: integer;
+	dead: integer;
+	ghost: string;
+	ghostGauge: string;
+	option1: integer;
+	option2: integer;
+	dateTime: string;
 }
 
 export interface CGMusecaScore {

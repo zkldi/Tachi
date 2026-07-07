@@ -213,6 +213,9 @@ export default function ImportRoutes() {
 							<Route exact path="/import/cg-dev-jubeat">
 								<CGIntegrationPage cgType="dev" game="jubeat" />
 							</Route>
+							<Route exact path="/import/cg-dev-iidx">
+								<CGIntegrationPage cgType="dev" game="iidx" />
+							</Route>
 
 							<Route exact path="/import/cg-nag-sdvx">
 								<CGIntegrationPage cgType="nag" game="sdvx" />
@@ -226,6 +229,9 @@ export default function ImportRoutes() {
 							<Route exact path="/import/cg-nag-jubeat">
 								<CGIntegrationPage cgType="nag" game="jubeat" />
 							</Route>
+							<Route exact path="/import/cg-nag-iidx">
+								<CGIntegrationPage cgType="nag" game="iidx" />
+							</Route>
 
 							<Route exact path="/import/cg-gan-sdvx">
 								<CGIntegrationPage cgType="gan" game="sdvx" />
@@ -238,6 +244,9 @@ export default function ImportRoutes() {
 							</Route>
 							<Route exact path="/import/cg-gan-jubeat">
 								<CGIntegrationPage cgType="gan" game="jubeat" />
+							</Route>
+							<Route exact path="/import/cg-gan-iidx">
+								<CGIntegrationPage cgType="gan" game="iidx" />
 							</Route>
 
 							<Route exact path="/import/kt-cg-iidx-importer">

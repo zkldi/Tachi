@@ -20,9 +20,9 @@ export type APIImportTypes =
 	| "api/myt-wacca"
 
 	// cg has dev and prod supported
-	// with four games.
+	// with five games.
 	// this typescript feature for stringliteral expansion is kinda neat.
-	| `api/cg-${"dev" | "gan" | "nag"}-${"jubeat" | "museca" | "popn" | "sdvx"}`;
+	| `api/cg-${"dev" | "gan" | "nag"}-${"iidx" | "jubeat" | "museca" | "popn" | "sdvx"}`;
 
 export type IRImportTypes =
 	| "ir/barbatos"
