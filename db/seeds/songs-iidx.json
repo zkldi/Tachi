@@ -3309,6 +3309,7 @@
 		"artist": "AKIRA YAMAOKA",
 		"data": {
 			"displayVersion": "7",
+			"eamusementCsvTitle": "i feel...",
 			"genre": "TRANCE"
 		},
 		"id": "S19d35e0afd14495fc26",
@@ -9848,6 +9849,7 @@
 		"artist": "TAKA respect for J.S.B.",
 		"data": {
 			"displayVersion": "15",
+			"eamusementCsvTitle": "Ubertreffen",
 			"genre": "PROGRESSIVE BAROQUE"
 		},
 		"id": "S19d35e0b1de03f23552",
@@ -10388,6 +10390,7 @@
 		"artist": "上野圭市(aka. Babyweapon,DJ SWAMI)feat.星野奏子",
 		"data": {
 			"displayVersion": "16",
+			"eamusementCsvTitle": "Punch Love 仮面",
 			"genre": "E-DANCE POP"
 		},
 		"id": "S19d35e0b20ea1acdfc0",
@@ -13832,6 +13835,7 @@
 		"artist": "劇団レコード",
 		"data": {
 			"displayVersion": "20",
+			"eamusementCsvTitle": "YELLOW FROG  from Steel Chronicle",
 			"genre": "DESERT ALTERNATIVE EDGE"
 		},
 		"id": "S19d35e0b32c0098974d",
@@ -13846,6 +13850,7 @@
 		"artist": "dj TAKA feat.wac & secret K",
 		"data": {
 			"displayVersion": "20",
+			"eamusementCsvTitle": "Time to Empress",
 			"genre": "TRANCE"
 		},
 		"id": "S19d35e0b32dc934f33e",
@@ -14625,6 +14630,7 @@
 		"artist": "楓璃夢＝ジークフリード＝ファイエルローゼン",
 		"data": {
 			"displayVersion": "21",
+			"eamusementCsvTitle": "旋律のドグマ～Miserables～",
 			"genre": "JUVENILE DRUM & BASS"
 		},
 		"id": "S19d35e0b36cf10b8206",
@@ -14756,6 +14762,7 @@
 		"artist": "天叢雲剣",
 		"data": {
 			"displayVersion": "21",
+			"eamusementCsvTitle": "Close the World feat.a☆ru",
 			"genre": "J-CORE"
 		},
 		"id": "S19d35e0b376b3400853",
@@ -15362,6 +15369,7 @@
 		"artist": "TAG underground",
 		"data": {
 			"displayVersion": "21",
+			"eamusementCsvTitle": "ATHER",
 			"genre": "ASTRAL HARDCORE"
 		},
 		"id": "S19d35e0b3a535522359",
@@ -15798,6 +15806,7 @@
 		"artist": "機龍",
 		"data": {
 			"displayVersion": "22",
+			"eamusementCsvTitle": "Rave*it!! Rave*it!! ",
 			"genre": "EDM SPEED"
 		},
 		"id": "S19d35e0b3dcd6c8243d",
@@ -16439,6 +16448,7 @@
 		"artist": "Y&Co.",
 		"data": {
 			"displayVersion": "22",
+			"eamusementCsvTitle": "TA・DA☆YO・SHI",
 			"genre": "EUROBEAT"
 		},
 		"id": "S19d35e0b40e9bff9379",
@@ -16913,6 +16923,7 @@
 		"artist": "Hommarju",
 		"data": {
 			"displayVersion": "22",
+			"eamusementCsvTitle": "Sounds Of Summer ",
 			"genre": "UK HARDCORE"
 		},
 		"id": "S19d35e0b4341f5e547d",
@@ -18270,6 +18281,7 @@
 		"artist": "Ryu*",
 		"data": {
 			"displayVersion": "24",
+			"eamusementCsvTitle": "!Viva!",
 			"genre": "TRIBAL HOUSE"
 		},
 		"id": "S19d35e0b4c01dddda3d",
@@ -18479,6 +18491,7 @@
 		"artist": "RoughSkreamZ feat.楽天斎",
 		"data": {
 			"displayVersion": "24",
+			"eamusementCsvTitle": "火影",
 			"genre": "HIP HOP"
 		},
 		"id": "S19d35e0b4d9a7e63d39",
@@ -19331,6 +19344,7 @@
 		"artist": "BEMANI Sound Team \"TAG\"",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "BLOSSOM",
 			"genre": "BLOOM TRANCE"
 		},
 		"id": "S19d35e0b51d9e2dc98c",
@@ -19488,6 +19502,7 @@
 		"artist": "kors k",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "Macho Monky",
 			"genre": "JUNGLE TERROR"
 		},
 		"id": "S19d35e0b5295ee51691",
@@ -19743,6 +19758,7 @@
 		"artist": "Y&Co.",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "ROCK女 feat. 大山愛未， Ken",
 			"genre": "TRANCE"
 		},
 		"id": "S19d35e0b53d3ccd451d",
@@ -19997,6 +20013,7 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "Xlo",
 			"genre": "NEUTRONIKA"
 		},
 		"id": "S19d35e0b5516f90f625",
@@ -20356,6 +20373,7 @@
 		"artist": "Maozon",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "Geirskogul",
 			"genre": "CYBER DRUMSTEP"
 		},
 		"id": "S19d35e0b56d7e9d3f4e",
@@ -20894,6 +20912,7 @@
 		"artist": "RoughSketch",
 		"data": {
 			"displayVersion": "25",
+			"eamusementCsvTitle": "Life Is A Game ft.DD\"ナカタ\"",
 			"genre": "UPTEMPO HARDCORE"
 		},
 		"id": "S19d35e0b5991c24de0b",
@@ -21285,6 +21304,7 @@
 		"artist": "D-Evoke（与那嶺雅人/小日向翔）",
 		"data": {
 			"displayVersion": "25",
+			"eamusementCsvTitle": "共犯ヘヴンズコード",
 			"genre": "ELEGANT SWING"
 		},
 		"id": "S19d35e0b5b8bd078201",
@@ -21785,6 +21805,7 @@
 		"artist": "MOSAIC.WAV",
 		"data": {
 			"displayVersion": "25",
+			"eamusementCsvTitle": "パラドキシカル・タイムリープトライアル(Short.Ver)",
 			"genre": "AKIBA-POP"
 		},
 		"id": "S19d35e0b5e004a8b9df",
@@ -21837,6 +21858,7 @@
 		"artist": "Dirty Androids",
 		"data": {
 			"displayVersion": "25",
+			"eamusementCsvTitle": "City Never Sleeps (IIDX EDITION)",
 			"genre": "DRUM&BASS"
 		},
 		"id": "S19d35e0b5e4fcfbab69",
@@ -21911,6 +21933,7 @@
 		"artist": "BEMANI Sound Team \"Sota F.\"",
 		"data": {
 			"displayVersion": "25",
+			"eamusementCsvTitle": "Let's bounce !!",
 			"genre": "FUTURE HOUSE"
 		},
 		"id": "S19d35e0b5ea8fddea95",
@@ -22017,6 +22040,7 @@
 		"artist": "T.Σ.Generation",
 		"data": {
 			"displayVersion": "26",
+			"eamusementCsvTitle": "Χ-DEN",
 			"genre": "ULTIΣATE COLLABORATION"
 		},
 		"id": "S19d35e0b5f2303164f0",
@@ -22107,6 +22131,7 @@
 		"artist": "猫叉Master",
 		"data": {
 			"displayVersion": "20",
+			"eamusementCsvTitle": "Reflection Into the EDEN",
 			"genre": "BOSSA ELECTRONICA"
 		},
 		"id": "S19d35e0b5f9e932a3da",
@@ -22210,6 +22235,7 @@
 		"artist": "BEMANI Sound Team \"レ・度胸兄弟\"",
 		"data": {
 			"displayVersion": "27",
+			"eamusementCsvTitle": "Dans la nuit de l'eternite",
 			"genre": "POLONAISE"
 		},
 		"id": "S19d35e0b602eaa58303",
@@ -23578,6 +23604,7 @@
 		"artist": "BEMANI Sound Team Sota Fujimori",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "Breakin' Rules",
 			"genre": "CYBER PUNK"
 		},
 		"id": "S19d35e0b670854ca114",
@@ -23592,6 +23619,7 @@
 		"artist": "BEMANI Sound Team Sota Fujimori",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "Hands Up feat. kradness BEMANI Sound Team \"Sota Fujimori\" Remix",
 			"genre": "THE 4TH"
 		},
 		"id": "S19d35e0b6714d682759",
@@ -23882,6 +23910,7 @@
 		"artist": "Nhato",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "Dont Stop The Music feat. Kanae Asaba",
 			"genre": "ELECTRO FUNK"
 		},
 		"id": "S19d35e0b688cdf86f5a",
@@ -23923,6 +23952,7 @@
 		"artist": "かめりあ feat. ななひら",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "POLKAMANIA",
 			"genre": "ポルカ2020"
 		},
 		"id": "S19d35e0b68b00229000",
@@ -24469,6 +24499,7 @@
 		"artist": "BEMANI Sound Team \"U1 overground\"",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "Parvati",
 			"genre": "ORBITALIC WORLD MUSIC"
 		},
 		"id": "S19d35e0b6b7cea13e16",
@@ -24715,6 +24746,7 @@
 		"artist": "BEMANI Sound Team \"神\"",
 		"data": {
 			"displayVersion": "28",
+			"eamusementCsvTitle": "Ignis†Irae",
 			"genre": "X"
 		},
 		"id": "S19d35e0b6cbe5666c1e",
@@ -25788,6 +25820,7 @@
 		"artist": "MK",
 		"data": {
 			"displayVersion": "29",
+			"eamusementCsvTitle": "Get set， Go! feat.Kanae Asaba",
 			"genre": "FUTURE BOUNCE"
 		},
 		"id": "S19d35e0b7237cb6d652",
@@ -26840,6 +26873,7 @@
 		"artist": "かめりあ",
 		"data": {
 			"displayVersion": "30",
+			"eamusementCsvTitle": "Ou Legends",
 			"genre": "TOHOKU NEURO DENSETSU"
 		},
 		"id": "S19d35e0b778cda770ea",
@@ -27472,6 +27506,7 @@
 		"artist": "GeMiNioИ",
 		"data": {
 			"displayVersion": "30",
+			"eamusementCsvTitle": "RINNE",
 			"genre": "SYMPHONIC SAVIOR"
 		},
 		"id": "S19d35e0b7aa4f36d79f",
@@ -27618,6 +27653,7 @@
 		"artist": "天土",
 		"data": {
 			"displayVersion": "30",
+			"eamusementCsvTitle": "異心前進♪ぴょんぴょんぴょん ",
 			"genre": "EUROBEAT"
 		},
 		"id": "S19d35e0b7b5c5fe360d",
@@ -28962,6 +28998,7 @@
 		"artist": "モリモリあつし",
 		"data": {
 			"displayVersion": "31",
+			"eamusementCsvTitle": "ACT0",
 			"genre": "NEOTRANCE CORE"
 		},
 		"id": "S19d35e0b81dbf132cab",
@@ -29487,6 +29524,7 @@
 		"artist": "BEMANI Sound Team \"TATSUYA\" feat. ななひら",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "最強頂戴girl",
 			"genre": "TWINKLE POP"
 		},
 		"id": "S19d35e0b84637d5b3be",
@@ -29637,6 +29675,7 @@
 		"artist": "BlackY feat. Risa Yuzuki",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "FERMI PARADOX",
 			"genre": "COSMIC HAPPY TUNE"
 		},
 		"id": "S19d35e0b8522759e6f6",
@@ -29727,6 +29766,7 @@
 		"artist": "lapix feat. PANXI",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "オッド ラヴィ",
 			"genre": "LOVELY TECHCORE"
 		},
 		"id": "S19d35e0b85914e9c8a3",
@@ -29883,6 +29923,7 @@
 		"artist": "Tatsunoshin & 藍良あれれ",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "Raspberry Potion (feat.あれたん & ぎゃるのしん☆)",
 			"genre": "LOVE♡CORE"
 		},
 		"id": "S19d35e0b8658b46a23f",
@@ -31065,10 +31106,13 @@
 		"title": "From Human Blood"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Space Battleship S4TO"
+		],
 		"artist": "BEMANI Sound Team \"Captain Sonic\"",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "Space Battleship S4TO",
 			"genre": "BIGCORE"
 		},
 		"id": "S19d35e0b8c03f018a8e",
