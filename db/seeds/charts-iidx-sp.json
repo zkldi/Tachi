@@ -52634,7 +52634,10 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
-			"inGameID": 10201,
+			"inGameID": [
+				10201,
+				33114
+			],
 			"kaidenAverage": null,
 			"notecount": 934,
 			"worldRecord": null
@@ -52658,7 +52661,8 @@
 			"30-2dxtra",
 			"31-omni",
 			"31-2dxtra",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
@@ -52666,7 +52670,10 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
-			"inGameID": 10201,
+			"inGameID": [
+				10201,
+				33114
+			],
 			"kaidenAverage": null,
 			"notecount": 845,
 			"worldRecord": null
@@ -52690,7 +52697,8 @@
 			"30-2dxtra",
 			"31-omni",
 			"31-2dxtra",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
@@ -52698,7 +52706,10 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
-			"inGameID": 10201,
+			"inGameID": [
+				10201,
+				33114
+			],
 			"kaidenAverage": null,
 			"notecount": 573,
 			"worldRecord": null
@@ -52722,7 +52733,8 @@
 			"30-2dxtra",
 			"31-omni",
 			"31-2dxtra",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
@@ -293765,7 +293777,8 @@
 			"hashSHA256": null,
 			"inGameID": [
 				80072,
-				32272
+				32272,
+				33019
 			],
 			"kaidenAverage": null,
 			"notecount": 1346,
@@ -293780,7 +293793,8 @@
 		"songID": "S19d35e0b87f15da52e7",
 		"versions": [
 			"inf",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
@@ -293790,7 +293804,8 @@
 			"hashSHA256": null,
 			"inGameID": [
 				80072,
-				32272
+				32272,
+				33019
 			],
 			"kaidenAverage": null,
 			"notecount": 973,
@@ -293805,7 +293820,8 @@
 		"songID": "S19d35e0b87f15da52e7",
 		"versions": [
 			"inf",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
@@ -293815,7 +293831,8 @@
 			"hashSHA256": null,
 			"inGameID": [
 				80072,
-				32272
+				32272,
+				33019
 			],
 			"kaidenAverage": null,
 			"notecount": 635,
@@ -293830,7 +293847,8 @@
 		"songID": "S19d35e0b87f15da52e7",
 		"versions": [
 			"inf",
-			"32-omni"
+			"32-omni",
+			"33"
 		]
 	},
 	{
