@@ -940,6 +940,76 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 			</>
 		),
 	},
+	polarischord: {
+		sessionImportantScoreCount: 50,
+		enumIcons: defaultEnumIcons,
+		enumColours: {
+			grade: {
+				D: COLOUR_SET.gray,
+				C: COLOUR_SET.red,
+				B: COLOUR_SET.orange,
+				A: COLOUR_SET.green,
+				AA: COLOUR_SET.paleBlue,
+				AAA: COLOUR_SET.blue,
+				S: COLOUR_SET.gold,
+				SS: COLOUR_SET.paleOrange,
+				SSS: COLOUR_SET.teal,
+				"SSS+": COLOUR_SET.vibrantPink,
+				AP: COLOUR_SET.vibrantPurple,
+			},
+			lamp: {
+				"NO PLAY": COLOUR_SET.white,
+				"GOOD TRY": COLOUR_SET.green,
+				SUCCESS: COLOUR_SET.vibrantBlue,
+				"FULL COMBO": COLOUR_SET.pink,
+				"ALL PERFECT": COLOUR_SET.purple,
+			},
+		},
+		classColours: {
+			colour: {
+				GRAY: bgc("gray", "var(--bs-light)"),
+				GREEN: bgc("green", "var(--bs-light)"),
+				LIME: bgc("limegreen", "var(--bs-dark)"),
+				BLUE: bgc("cornflowerblue", "var(--bs-light)"),
+				CYAN: bgc("cadetblue", "var(--bs-dark)"),
+				LEMON: bgc("goldenrod", "var(--bs-dark)"),
+				ORANGE: bgc("orange", "var(--bs-dark)"),
+				CORAL: bgc("darksalmon", "var(--bs-dark)"),
+				RED: bgc("firebrick", "var(--bs-light)"),
+				PURPLE: bgc("purple", "var(--bs-light)"),
+				NAVY: bgc("darkblue", "var(--bs-light)"),
+				RAINBOW: {
+					background:
+						"linear-gradient(45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
+					color: "var(--bs-dark)",
+				},
+			},
+		},
+		difficultyColours: {
+			EASY: COLOUR_SET.blue,
+			NORMAL: COLOUR_SET.green,
+			HARD: COLOUR_SET.gold,
+			INFLUENCE: COLOUR_SET.pink,
+			POLAR: COLOUR_SET.purple,
+		},
+		ratingSystems: [],
+		scoreHeaders: [
+			["Percent", "%", NumericSOV((x) => x.scoreData.percent)],
+			["Lamp", "Lamp", NumericSOV((x) => x.scoreData.enumIndexes.lamp)],
+		],
+		scoreCoreCells: ({ sc }) => (
+			<>
+				<ScoreCell
+					colour={GetEnumColour(sc, "grade")}
+					grade={sc.scoreData.grade}
+					percent={sc.scoreData.percent}
+					percentDp={2}
+				/>
+				<LampCell colour={GetEnumColour(sc, "lamp")} lamp={sc.scoreData.lamp} />
+			</>
+		),
+		ratingCell: ({ sc, rating }) => <RatingCell rating={rating} score={sc} />,
+	},
 	arcaea: ARCAEA_TOUCH_IMPL,
 	"gitadora-dora": GITADORA_DORA_IMPL,
 	"gitadora-gita": GITADORA_GITA_IMPL,

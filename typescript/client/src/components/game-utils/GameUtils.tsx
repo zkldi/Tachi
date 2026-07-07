@@ -35,6 +35,7 @@ const GAME_UTILS: Record<V3Game, Array<GameUtility>> = {
 	ongeki: [ONGEKIRefreshBreakdownInsight, ONGEKIClassicBreakdownInsight],
 	"ddr-sp": [],
 	"ddr-dp": [],
+	polarischord: [],
 };
 
 export function GetGameUtils(game: V3Game) {

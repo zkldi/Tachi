@@ -16,6 +16,7 @@ import { POPN_IMPL } from "./games/popn";
 import { SDVX_IMPL } from "./games/sdvx";
 import { USC_CONTROLLER_IMPL, USC_KEYBOARD_IMPL } from "./games/usc";
 import { WACCA_IMPL } from "./games/wacca";
+import { POLARISCHORD_IMPL } from "./games/polarischord";
 
 /**
  * Server-Specific implementation details for games. These handle things like validating
@@ -49,4 +50,5 @@ export const GAME_IMPLEMENTATIONS: GameImplementations = {
 	ongeki: ONGEKI_IMPL,
 	"ddr-sp": DDR_IMPL,
 	"ddr-dp": DDR_IMPL,
+	polarischord: POLARISCHORD_IMPL,
 };

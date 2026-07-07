@@ -300,4 +300,8 @@ export const GAME_GOAL_PROGRESS_FORMATTERS: {
 				WACCA_GBOUNDARIES[gradeIndex]!.name,
 			),
 	},
+	polarischord: {
+		percent: (pb) => `${pb.scoreData.percent.toFixed(2)}%`,
+		lamp: (pb) => pb.scoreData.lamp,
+	},
 };
