@@ -11,6 +11,7 @@ import {
 	EXT_PINKYCRUSH,
 	EXT_RESIDENT,
 	EXT_ROOTAGE,
+	EXT_SPARKLE_SHOWER,
 	MODEL_IIDX,
 	MODEL_IIDX_LIGHTNING,
 	MODEL_INFINITAS_2,
@@ -156,6 +157,10 @@ export function SoftwareIDToVersion(model: string, log: KtLogger): Versions[Game
 					return "32";
 				} else if (data.rev === REV_OMNIMIX) {
 					return "32-omni";
+				}
+			} else if (EXT_SPARKLE_SHOWER.includes(data.ext)) {
+				if (data.rev === REV_NORMAL) {
+					return "33";
 				}
 			}
 		}

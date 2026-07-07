@@ -26,4 +26,13 @@ export const EXT_PINKYCRUSH = [
 	"2025082500",
 ];
 
+export const EXT_SPARKLE_SHOWER = [
+	"2026022400",
+	"2026031000",
+	"2026033100",
+	"2026042200",
+	"2026052600",
+	"2026061600",
+];
+
 export const MODEL_SDVX3_KONASTE = "QCV";
