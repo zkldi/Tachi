@@ -471,8 +471,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 33089,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1759,
 			"worldRecord": null
 		},
@@ -744,8 +754,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 33093,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12E",
+				"value": 12
+			},
 			"notecount": 1590,
 			"worldRecord": null
 		},
@@ -1209,8 +1229,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 33091,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1730,
 			"worldRecord": null
 		},
@@ -37127,8 +37157,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12D",
-				"value": 12.2
+				"text": "12C",
+				"value": 12.4
 			},
 			"inGameID": 8048,
 			"kaidenAverage": 1764,
@@ -49381,8 +49411,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12E",
-				"value": 12
+				"text": "12D",
+				"value": 12.2
 			},
 			"inGameID": 10028,
 			"kaidenAverage": 2170,
@@ -61331,8 +61361,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12A",
-				"value": 12.8
+				"text": "12A+",
+				"value": 12.9
 			},
 			"inGameID": 12007,
 			"kaidenAverage": 2406,
@@ -61587,8 +61617,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 12008,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 2042,
 			"worldRecord": null
 		},
@@ -62091,8 +62131,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 12011,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1738,
 			"worldRecord": null
 		},
@@ -63329,8 +63379,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 12020,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1583,
 			"worldRecord": null
 		},
@@ -80459,8 +80519,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12E",
-				"value": 12
+				"text": "12D",
+				"value": 12.2
 			},
 			"inGameID": 14021,
 			"kaidenAverage": 2823,
@@ -90553,16 +90613,16 @@
 			},
 			"hashSHA256": null,
 			"hcTier": {
-				"individualDifference": true,
+				"individualDifference": false,
 				"text": "12S",
-				"value": 13.1
+				"value": 13
 			},
 			"inGameID": 15025,
 			"kaidenAverage": null,
 			"ncTier": {
-				"individualDifference": true,
-				"text": "12S",
-				"value": 13
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
 			},
 			"notecount": 1317,
 			"worldRecord": null
@@ -117474,8 +117534,8 @@
 			"kaidenAverage": 2617,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12B",
-				"value": 12.6
+				"text": "12B+",
+				"value": 12.7
 			},
 			"notecount": 1623,
 			"worldRecord": 3217
@@ -131529,8 +131589,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12B",
-				"value": 12.6
+				"text": "12B+",
+				"value": 12.7
 			},
 			"inGameID": 19042,
 			"kaidenAverage": 2445,
@@ -131627,8 +131687,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"inGameID": 19042,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"notecount": 2290,
 			"worldRecord": null
 		},
@@ -135045,8 +135115,8 @@
 			"kaidenAverage": 2682,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12C",
-				"value": 12.4
+				"text": "12B",
+				"value": 12.6
 			},
 			"notecount": 1596,
 			"worldRecord": 3181
@@ -138770,8 +138840,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 20064,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 1778,
 			"worldRecord": null
 		},
@@ -140172,8 +140252,8 @@
 			"kaidenAverage": 3422,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12B",
-				"value": 12.6
+				"text": "12B+",
+				"value": 12.7
 			},
 			"notecount": 1999,
 			"worldRecord": 3976
@@ -145287,8 +145367,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12S+",
-				"value": 13.2
+				"text": "12S",
+				"value": 13
 			},
 			"inGameID": 20043,
 			"kaidenAverage": 2325,
@@ -151995,8 +152075,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12C",
-				"value": 12.4
+				"text": "12D",
+				"value": 12.2
 			},
 			"inGameID": 21019,
 			"kaidenAverage": 2518,
@@ -165064,8 +165144,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 22016,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2090,
 			"worldRecord": null
 		},
@@ -168125,8 +168215,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 22040,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 2273,
 			"worldRecord": null
 		},
@@ -171553,8 +171653,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12C",
-				"value": 12.4
+				"text": "12B",
+				"value": 12.6
 			},
 			"inGameID": 22065,
 			"kaidenAverage": 2887,
@@ -173321,9 +173421,9 @@
 			"inGameID": 22077,
 			"kaidenAverage": 2719,
 			"ncTier": {
-				"individualDifference": true,
-				"text": "12C",
-				"value": 12.4
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
 			},
 			"notecount": 1541,
 			"worldRecord": 3079
@@ -177662,8 +177762,8 @@
 			"kaidenAverage": 2684,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12B",
-				"value": 12.6
+				"text": "12C",
+				"value": 12.4
 			},
 			"notecount": 1546,
 			"worldRecord": 3074
@@ -187262,8 +187362,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12C",
-				"value": 12.4
+				"text": "12D",
+				"value": 12.2
 			},
 			"inGameID": 23083,
 			"kaidenAverage": 2506,
@@ -187358,8 +187458,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12A+",
-				"value": 12.9
+				"text": "12S",
+				"value": 13
 			},
 			"inGameID": 23083,
 			"kaidenAverage": 2696,
@@ -187990,8 +188090,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 23087,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"notecount": 1857,
 			"worldRecord": null
 		},
@@ -188061,8 +188171,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12S",
-				"value": 13
+				"text": "12A+",
+				"value": 12.9
 			},
 			"inGameID": 23088,
 			"kaidenAverage": 2837,
@@ -190819,8 +190929,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12B",
-				"value": 12.6
+				"text": "12C",
+				"value": 12.4
 			},
 			"inGameID": 24012,
 			"kaidenAverage": 2287,
@@ -199157,8 +199267,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": true,
-				"text": "12A",
-				"value": 12.8
+				"text": "12B+",
+				"value": 12.7
 			},
 			"inGameID": 24073,
 			"kaidenAverage": 3026,
@@ -202784,8 +202894,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 26026,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 1957,
 			"worldRecord": null
 		},
@@ -206468,8 +206588,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 26055,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1582,
 			"worldRecord": null
 		},
@@ -209182,8 +209312,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12D",
-				"value": 12.2
+				"text": "12C",
+				"value": 12.4
 			},
 			"inGameID": 26079,
 			"kaidenAverage": 3047,
@@ -216017,8 +216147,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 25005,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2000,
 			"worldRecord": null
 		},
@@ -229286,8 +229426,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 26011,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1822,
 			"worldRecord": null
 		},
@@ -231065,8 +231215,8 @@
 			"hashSHA256": null,
 			"hcTier": {
 				"individualDifference": false,
-				"text": "12A+",
-				"value": 12.9
+				"text": "12S",
+				"value": 13
 			},
 			"inGameID": 27007,
 			"kaidenAverage": null,
@@ -234136,8 +234286,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 27033,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2176,
 			"worldRecord": null
 		},
@@ -246912,8 +247072,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 28050,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1960,
 			"worldRecord": null
 		},
@@ -247517,8 +247687,8 @@
 			"kaidenAverage": 3070,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12D",
-				"value": 12.2
+				"text": "12E",
+				"value": 12
 			},
 			"notecount": 1688,
 			"worldRecord": 3372
@@ -265174,8 +265344,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 29082,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 2094,
 			"worldRecord": null
 		},
@@ -266332,8 +266512,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 29102,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1849,
 			"worldRecord": null
 		},
@@ -266767,7 +266957,7 @@
 			"bpiCoefficient": 0.808794,
 			"hashSHA256": null,
 			"hcTier": {
-				"individualDifference": false,
+				"individualDifference": true,
 				"text": "12A+",
 				"value": 12.9
 			},
@@ -267603,8 +267793,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 30029,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 2333,
 			"worldRecord": null
 		},
@@ -276560,8 +276760,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 30100,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 2098,
 			"worldRecord": null
 		},
@@ -276671,8 +276881,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 30101,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1574,
 			"worldRecord": null
 		},
@@ -278094,12 +278314,22 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": [
 				80038,
 				31238,
 				32006
 			],
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1547,
 			"worldRecord": null
 		},
@@ -281121,8 +281351,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 31049,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 2104,
 			"worldRecord": null
 		},
@@ -281223,8 +281463,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 31050,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"notecount": 1827,
 			"worldRecord": null
 		},
@@ -284464,12 +284714,22 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": [
 				80045,
 				31245,
 				32107
 			],
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1746,
 			"worldRecord": null
 		},
@@ -285302,8 +285562,8 @@
 			"kaidenAverage": 2913,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12C",
-				"value": 12.4
+				"text": "12D",
+				"value": 12.2
 			},
 			"notecount": 1650,
 			"worldRecord": 3290
@@ -289323,8 +289583,8 @@
 			"kaidenAverage": null,
 			"ncTier": {
 				"individualDifference": false,
-				"text": "12B",
-				"value": 12.6
+				"text": "12C",
+				"value": 12.4
 			},
 			"notecount": 1698,
 			"worldRecord": null
@@ -295861,8 +296121,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 32002,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2193,
 			"worldRecord": null
 		},
@@ -295999,8 +296269,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 32007,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1399,
 			"worldRecord": null
 		},
@@ -296068,8 +296348,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 32010,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1833,
 			"worldRecord": null
 		},
@@ -296482,8 +296772,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 32034,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 1800,
 			"worldRecord": null
 		},
@@ -296551,8 +296851,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 32038,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1773,
 			"worldRecord": null
 		},
@@ -296689,8 +296999,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 32051,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1798,
 			"worldRecord": null
 		},
@@ -296827,8 +297147,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 32064,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"notecount": 1690,
 			"worldRecord": null
 		},
@@ -297034,8 +297364,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"inGameID": 32099,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"notecount": 1572,
 			"worldRecord": null
 		},
@@ -297103,8 +297443,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 32100,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1972,
 			"worldRecord": null
 		},
@@ -297448,8 +297798,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"inGameID": 32108,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"notecount": 2077,
 			"worldRecord": null
 		},
@@ -297517,8 +297877,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 32109,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1824,
 			"worldRecord": null
 		},
@@ -297632,8 +298002,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 32110,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1432,
 			"worldRecord": null
 		},
@@ -297814,8 +298194,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 33000,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1896,
 			"worldRecord": null
 		},
@@ -298324,8 +298714,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 33021,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1850,
 			"worldRecord": null
 		},
@@ -298387,8 +298787,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 33022,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1900,
 			"worldRecord": null
 		},
@@ -298450,8 +298860,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 33024,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 1471,
 			"worldRecord": null
 		},
@@ -298513,8 +298933,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 33028,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"notecount": 1840,
 			"worldRecord": null
 		},
@@ -298891,8 +299321,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 33040,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1674,
 			"worldRecord": null
 		},
@@ -299143,8 +299583,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 33047,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2085,
 			"worldRecord": null
 		},
@@ -299269,8 +299719,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 33050,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1557,
 			"worldRecord": null
 		},
@@ -299395,8 +299855,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 33061,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 1851,
 			"worldRecord": null
 		},
@@ -299710,8 +300180,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"inGameID": 33073,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 1872,
 			"worldRecord": null
 		},
@@ -301990,8 +302470,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 33003,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1831,
 			"worldRecord": null
 		},
@@ -302053,8 +302543,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 33002,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"notecount": 1902,
 			"worldRecord": null
 		},
@@ -302116,8 +302616,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 33005,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 1878,
 			"worldRecord": null
 		},
@@ -302179,8 +302689,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 33009,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 1861,
 			"worldRecord": null
 		},
@@ -302242,8 +302762,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"inGameID": 33006,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1481,
 			"worldRecord": null
 		},
@@ -302494,8 +303024,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12B",
+				"value": 12.6
+			},
 			"inGameID": 33102,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1692,
 			"worldRecord": null
 		},
@@ -302557,8 +303097,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 33044,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12B+",
+				"value": 12.7
+			},
 			"notecount": 1787,
 			"worldRecord": null
 		},
@@ -302620,8 +303170,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12E",
+				"value": 12
+			},
 			"inGameID": 33058,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12E",
+				"value": 12
+			},
 			"notecount": 1692,
 			"worldRecord": null
 		},
@@ -302662,8 +303222,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S+",
+				"value": 13.2
+			},
 			"inGameID": 33058,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 2394,
 			"worldRecord": null
 		},
@@ -302767,8 +303337,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 33023,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 1988,
 			"worldRecord": null
 		},
@@ -302830,8 +303410,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 33053,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1867,
 			"worldRecord": null
 		},
@@ -302893,8 +303483,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 33051,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"notecount": 1990,
 			"worldRecord": null
 		},
@@ -303082,8 +303682,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 33101,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2026,
 			"worldRecord": null
 		},
@@ -303145,8 +303755,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 33018,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12S",
+				"value": 13
+			},
 			"notecount": 1800,
 			"worldRecord": null
 		},
@@ -303208,8 +303828,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"inGameID": 33076,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12D",
+				"value": 12.2
+			},
 			"notecount": 1638,
 			"worldRecord": null
 		},
@@ -303901,8 +304531,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A",
+				"value": 12.8
+			},
 			"inGameID": 33011,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12C",
+				"value": 12.4
+			},
 			"notecount": 1742,
 			"worldRecord": null
 		},
@@ -304216,8 +304856,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"inGameID": 33068,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": false,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 2171,
 			"worldRecord": null
 		},
@@ -304531,8 +305181,18 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"hcTier": {
+				"individualDifference": true,
+				"text": "12S",
+				"value": 13
+			},
 			"inGameID": 33104,
 			"kaidenAverage": null,
+			"ncTier": {
+				"individualDifference": true,
+				"text": "12A+",
+				"value": 12.9
+			},
 			"notecount": 1533,
 			"worldRecord": null
 		},
