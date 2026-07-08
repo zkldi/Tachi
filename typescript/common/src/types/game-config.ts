@@ -132,7 +132,7 @@ export type V3Game =
 	| "usc-controller"
 	| "usc-keyboard"
 	| "wacca"
-	| "polarischord";
+	| "poco";
 
 export interface GameGroupFromGame {
 	arcaea: "arcaea";
@@ -158,7 +158,7 @@ export interface GameGroupFromGame {
 	"usc-controller": "usc";
 	"usc-keyboard": "usc";
 	wacca: "wacca";
-	polarischord: "polarischord";
+	poco: "poco";
 }
 
 /**
@@ -188,7 +188,7 @@ export type LEGACY_V3GameToGPTString = {
 	"usc-controller": "usc:Controller";
 	"usc-keyboard": "usc:Keyboard";
 	wacca: "wacca:Single";
-	polarischord: "polarischord:Single";
+	poco: "poco:Single";
 };
 
 /**
@@ -218,7 +218,7 @@ export type LEGACY_GPTStringToV3Game = {
 	"usc:Controller": "usc-controller";
 	"usc:Keyboard": "usc-keyboard";
 	"wacca:Single": "wacca";
-	"polarischord:Single": "polarischord";
+	"poco:Single": "poco";
 };
 
 /// Get all the games that exist for this game group.

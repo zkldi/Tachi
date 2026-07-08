@@ -242,7 +242,7 @@ export const DDR_GBOUNDARIES = MakeGradeBoundaries<GetEnumValue<"ddr-dp" | "ddr-
 	E: -Infinity,
 });
 
-export const POCO_GBOUNDARIES = MakeGradeBoundaries<GetEnumValue<"polarischord", "grade">>({
+export const POCO_GBOUNDARIES = MakeGradeBoundaries<GetEnumValue<"poco", "grade">>({
 	D: 0,
 	C: 70,
 	B: 80,

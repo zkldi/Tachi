@@ -940,7 +940,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 			</>
 		),
 	},
-	polarischord: {
+	poco: {
 		sessionImportantScoreCount: 50,
 		enumIcons: defaultEnumIcons,
 		enumColours: {

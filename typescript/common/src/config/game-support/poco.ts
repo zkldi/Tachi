@@ -10,7 +10,7 @@ import { FAST_SLOW_MAXCOMBO } from "./_common";
 export const GAME_GROUP_POLARISCHORD_CONF = {
 	name: "Polaris Chord",
 	dynamicContent: false,
-	games: ["polarischord"],
+	games: ["poco"],
 	playtypes: ["Single"],
 	songData: z.strictObject({
 		genre: z.string().optional(),
@@ -63,22 +63,92 @@ export const GAME_POLARISCHORD_CONF = {
 
 	optionalMetrics: {
 		...FAST_SLOW_MAXCOMBO,
-		//timing mettics
-		fastBad: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Early Bad judgements." },
-		fastGood: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Early Good judgements." },
-		fastGreat: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Early Great judgements." },
-		slowGreat: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Late Great judgements." },
-		slowGood: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Late Good judgements." },
-		slowBad: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Late Bad judgements." },
+		//timing metrics
+		fastBad: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Early Bad judgements.",
+		},
+		fastGood: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Early Good judgements.",
+		},
+		fastGreat: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Early Great judgements.",
+		},
+		slowGreat: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Late Great judgements.",
+		},
+		slowGood: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Late Good judgements.",
+		},
+		slowBad: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Late Bad judgements.",
+		},
 		//note type metrics
-		hold: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Successful hold judgements." },
-		holdMax: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Maximum possible hold judgements." },
-		flick: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Successful flick judgements." },
-		flickMax: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Maximum possible flick judgements." },
-		fader: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Successful fader judgements." },
-		faderMax: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Maximum possible fader judgements." },
-		honeycomb: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Successful honeycomb judgements." },
-		honeycombMax: { type: "INTEGER", validate: p.isPositiveInteger, formatter: FmtNum, description: "Maximum possible honeycomb judgements." },
+		hold: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Successful hold judgements.",
+		},
+		holdMax: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Maximum possible hold judgements.",
+		},
+		flick: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Successful flick judgements.",
+		},
+		flickMax: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Maximum possible flick judgements.",
+		},
+		fader: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Successful fader judgements.",
+		},
+		faderMax: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Maximum possible fader judgements.",
+		},
+		honeycomb: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Successful honeycomb judgements.",
+		},
+		honeycombMax: {
+			type: "INTEGER",
+			validate: p.isPositiveInteger,
+			formatter: FmtNum,
+			description: "Maximum possible honeycomb judgements.",
+		},
 	},
 
 	defaultMetric: "percent",
@@ -99,7 +169,7 @@ export const GAME_POLARISCHORD_CONF = {
 		},
 	},
 	sessionRatingAlgs: {
-		paSkill: { 
+		paSkill: {
 			description: "The average of your best PA SKILL ratings this session.",
 			formatter: (v) => v.toFixed(2), //should always displays 2 digit in client as opposed to 5 full digits in the server as shown in-game
 		},
@@ -134,7 +204,7 @@ export const GAME_POLARISCHORD_CONF = {
 	orderedJudgements: ["perfect", "great", "good", "bad", "miss"],
 
 	versions: {
-		polarischord: "Polaris Chord",
+		poco: "Polaris Chord",
 	},
 
 	chartData: z.strictObject({

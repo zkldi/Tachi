@@ -7,7 +7,7 @@ import { IsNullish } from "#utils/misc";
 import { PolarisChordPaSkill } from "rg-stats";
 import { GetGrade, POCO_GBOUNDARIES } from "tachi-common";
 
-export const POLARISCHORD_IMPL: GameImplementation<"polarischord"> = {
+export const POLARISCHORD_IMPL: GameImplementation<"poco"> = {
 	chartSpecificValidators: {},
 	scoreDeriver: (scoreData, _chart) => ({
 		grade: GetGrade(POCO_GBOUNDARIES, scoreData.percent),
@@ -42,17 +42,17 @@ export const POLARISCHORD_IMPL: GameImplementation<"polarischord"> = {
 			return { colour: null };
 		}
 
-		if (rate >= 16.00) return { colour: "RAINBOW" };
-		if (rate >= 15.50) return { colour: "NAVY" };
-		if (rate >= 15.00) return { colour: "PURPLE" };
-		if (rate >= 14.00) return { colour: "RED" };
-		if (rate >= 13.00) return { colour: "CORAL" };
-		if (rate >= 12.00) return { colour: "ORANGE" };
-		if (rate >= 11.00) return { colour: "LEMON" };
-		if (rate >= 9.00) return { colour: "CYAN" };
-		if (rate >= 6.00) return { colour: "BLUE" };
-		if (rate >= 3.00) return { colour: "LIME" };
-		if (rate >= 1.00) return { colour: "GREEN" };
+		if (rate >= 16.0) return { colour: "RAINBOW" };
+		if (rate >= 15.5) return { colour: "NAVY" };
+		if (rate >= 15.0) return { colour: "PURPLE" };
+		if (rate >= 14.0) return { colour: "RED" };
+		if (rate >= 13.0) return { colour: "CORAL" };
+		if (rate >= 12.0) return { colour: "ORANGE" };
+		if (rate >= 11.0) return { colour: "LEMON" };
+		if (rate >= 9.0) return { colour: "CYAN" };
+		if (rate >= 6.0) return { colour: "BLUE" };
+		if (rate >= 3.0) return { colour: "LIME" };
+		if (rate >= 1.0) return { colour: "GREEN" };
 
 		return { colour: "GRAY" };
 	},
@@ -73,10 +73,20 @@ export const POLARISCHORD_IMPL: GameImplementation<"polarischord"> = {
 		(s) => {
 			const opt = s.scoreData.optional;
 			if (opt) {
-				if (opt.fast === undefined && opt.fastBad !== undefined && opt.fastGood !== undefined && opt.fastGreat !== undefined) {
+				if (
+					opt.fast === undefined &&
+					opt.fastBad !== undefined &&
+					opt.fastGood !== undefined &&
+					opt.fastGreat !== undefined
+				) {
 					opt.fast = opt.fastBad + opt.fastGood + opt.fastGreat;
 				}
-				if (opt.slow === undefined && opt.slowBad !== undefined && opt.slowGood !== undefined && opt.slowGreat !== undefined) {
+				if (
+					opt.slow === undefined &&
+					opt.slowBad !== undefined &&
+					opt.slowGood !== undefined &&
+					opt.slowGreat !== undefined
+				) {
 					opt.slow = opt.slowBad + opt.slowGood + opt.slowGreat;
 				}
 			}
