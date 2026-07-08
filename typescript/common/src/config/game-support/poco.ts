@@ -107,23 +107,11 @@ export const GAME_POLARISCHORD_CONF = {
 			formatter: FmtNum,
 			description: "Successful hold judgements.",
 		},
-		holdMax: {
-			type: "INTEGER",
-			validate: p.isPositiveInteger,
-			formatter: FmtNum,
-			description: "Maximum possible hold judgements.",
-		},
 		flick: {
 			type: "INTEGER",
 			validate: p.isPositiveInteger,
 			formatter: FmtNum,
 			description: "Successful flick judgements.",
-		},
-		flickMax: {
-			type: "INTEGER",
-			validate: p.isPositiveInteger,
-			formatter: FmtNum,
-			description: "Maximum possible flick judgements.",
 		},
 		fader: {
 			type: "INTEGER",
@@ -131,24 +119,12 @@ export const GAME_POLARISCHORD_CONF = {
 			formatter: FmtNum,
 			description: "Successful fader judgements.",
 		},
-		faderMax: {
-			type: "INTEGER",
-			validate: p.isPositiveInteger,
-			formatter: FmtNum,
-			description: "Maximum possible fader judgements.",
-		},
 		honeycomb: {
 			type: "INTEGER",
 			validate: p.isPositiveInteger,
 			formatter: FmtNum,
 			description: "Successful honeycomb judgements.",
-		},
-		honeycombMax: {
-			type: "INTEGER",
-			validate: p.isPositiveInteger,
-			formatter: FmtNum,
-			description: "Maximum possible honeycomb judgements.",
-		},
+		}
 	},
 
 	defaultMetric: "percent",
@@ -209,6 +185,10 @@ export const GAME_POLARISCHORD_CONF = {
 
 	chartData: z.strictObject({
 		inGameID: zodNonNegativeInt.optional(),
+		holdMax: zodNonNegativeInt.optional(),
+		flickMax: zodNonNegativeInt.optional(),
+		faderMax: zodNonNegativeInt.optional(),
+		honeycombMax: zodNonNegativeInt.optional(),
 	}),
 
 	preferences: z.strictObject({}),
