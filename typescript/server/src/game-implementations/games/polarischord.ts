@@ -4,37 +4,13 @@ import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
-import { PolarisChordSkill } from "rg-stats";
-
-// 100% ACHIEVEMENT RATE is a SSS+ lamp but has its own rank
-const POLARISCHORD_GBOUNDARIES: Array<[string, number]> = [
-	["AP", 100.0],
-	["SSS+", 99.5],
-	["SSS", 99.0],
-	["SS", 98.5],
-	["S", 98.0],
-	["AAA", 95.0],
-	["AA", 90.0],
-	["A", 85.0],
-	["B", 80.0],
-	["C", 70.0],
-	["D", 0],
-];
-
-function getGrade(score: number): string {
-	for (const [grade, req] of POLARISCHORD_GBOUNDARIES) {
-		if (score >= req) {
-			return grade;
-		}
-	}
-	return "D";
-}
-
+import { PolarisChordPaSkill } from "rg-stats";
+import { GetGrade, POCO_GBOUNDARIES } from "tachi-common";
 
 export const POLARISCHORD_IMPL: GameImplementation<"polarischord"> = {
 	chartSpecificValidators: {},
 	scoreDeriver: (scoreData, _chart) => ({
-		grade: getGrade(scoreData.percent),
+		grade: GetGrade(POCO_GBOUNDARIES, scoreData.percent),
 	}),
 	scoreCalcs: (scoreData, _derivedData, chart) => ({
 		paSkill: PolarisChordPaSkill.calculate(scoreData.percent, chart.levelNum),

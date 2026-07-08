@@ -241,3 +241,17 @@ export const DDR_GBOUNDARIES = MakeGradeBoundaries<GetEnumValue<"ddr-dp" | "ddr-
 	// cannot be achieved. This can only be attained if the player failed the chart.
 	E: -Infinity,
 });
+
+export const POCO_GBOUNDARIES = MakeGradeBoundaries<GetEnumValue<"polarischord", "grade">>({
+	D: 0,
+	C: 70,
+	B: 80,
+	A: 85,
+	AA: 90,
+	AAA: 95,
+	S: 98,
+	SS: 98.5,
+	SSS: 99,
+	"SSS+": 99.5,
+	AP: 100,
+});
