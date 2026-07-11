@@ -1,6 +1,6 @@
 import type { DryScore } from "#lib/score-import/framework/common/types";
 import type { ConverterFunction } from "#lib/score-import/import-types/common/types";
-import type { Difficulties, integer, Versions } from "tachi-common";
+import type { Difficulties, integer, ScoreMeta, Versions } from "tachi-common";
 import type { GetEnumValue } from "tachi-common/types/metrics";
 
 import {
@@ -241,29 +241,35 @@ function ConvertOptions(data: CGIIDXScore) {
 	const opt2 = BigInt(data.option2);
 	const isModern = data.version >= 27;
 
-	const RANDOM_MASKS: Record<string, bigint> = isModern
+	type Without<T, U> = { [P in Exclude<keyof T, keyof U>]?: never };
+	type XOR<T, U> = (T | Without<U, T>) & (U | Without<T, U>);
+
+	type randoms = NonNullable<ScoreMeta["iidx-sp"]["random"]>;
+	type gauges = NonNullable<ScoreMeta["iidx-sp"]["gauge"]>;
+
+	const RANDOM_MASKS: Partial<Record<randoms, bigint>> = isModern
 		? {
 				RANDOM: 1n << 39n,
-				"R-RAN": 1n << 40n,
-				"S-RAN": 1n << 41n,
+				"R-RANDOM": 1n << 40n,
+				"S-RANDOM": 1n << 41n,
 				MIRROR: 1n << 42n,
 			}
 		: {
 				RANDOM: 1n << 18n,
-				"R-RAN": 1n << 19n,
-				"S-RAN": 1n << 20n,
+				"R-RANDOM": 1n << 19n,
+				"S-RANDOM": 1n << 20n,
 				MIRROR: 1n << 21n,
 			};
 
-	const GAUGE_MASKS: Record<string, bigint> = isModern
+	const GAUGE_MASKS: Partial<Record<gauges, bigint>> = isModern
 		? {
-				"ASSIST EASY": 1n << 35n,
+				"ASSISTED EASY": 1n << 35n,
 				EASY: 1n << 36n,
 				HARD: 1n << 37n,
 				"EX-HARD": 1n << 38n,
 			}
 		: {
-				"ASSIST EASY": 1n << 14n,
+				"ASSISTED EASY": 1n << 14n,
 				EASY: 1n << 15n,
 				HARD: 1n << 16n,
 				"EX-HARD": 1n << 17n,
@@ -272,7 +278,10 @@ function ConvertOptions(data: CGIIDXScore) {
 	// TODO: find bits for AUTO SCRATCH and LEGACY NOTE
 
 	// Helper to find which string keys match the bitmask
-	const getActiveOptions = (val: bigint, masks: Record<string, bigint>): Array<string> => {
+	const getActiveOptions = (
+		val: bigint,
+		masks: Record<string, bigint>,
+	): Array<XOR<gauges, randoms>> => {
 		const options = [];
 
 		for (const [name, mask] of Object.entries(masks)) {
@@ -284,7 +293,7 @@ function ConvertOptions(data: CGIIDXScore) {
 		return options;
 	};
 
-	const scoreMeta: any = {};
+	const scoreMeta: Partial<ScoreMeta["iidx-dp" | "iidx-sp"]> = {};
 
 	// for Random options, if no options are selected we know NONRAN is used.
 	// and we know only one option can be selected.
@@ -294,16 +303,16 @@ function ConvertOptions(data: CGIIDXScore) {
 	const randomOptions = getActiveOptions(opt1, RANDOM_MASKS);
 
 	if (randomOptions.length > 0) {
-		scoreMeta.random = randomOptions[0];
+		scoreMeta.random = randomOptions[0] as randoms;
 	}
 
-	// Handle Double Play (DP) difficulty if it starts with "D"
+	// For DP random is an array [p1 side, p2 side]
 	if (data.difficulty.startsWith("D")) {
 		scoreMeta.random = [scoreMeta.random, "NONRAN"];
 		const rightSide = getActiveOptions(opt2, RANDOM_MASKS);
 
 		if (rightSide.length > 0) {
-			scoreMeta.random[1] = rightSide[0];
+			scoreMeta.random[1] = rightSide[0] as randoms;
 		}
 	}
 
@@ -313,7 +322,7 @@ function ConvertOptions(data: CGIIDXScore) {
 	const gaugeOptions = getActiveOptions(opt1, GAUGE_MASKS);
 
 	if (gaugeOptions.length > 0) {
-		scoreMeta.gauge = gaugeOptions[0];
+		scoreMeta.gauge = gaugeOptions[0] as gauges;
 	}
 
 	return scoreMeta;
