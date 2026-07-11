@@ -60,30 +60,25 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 		throw new InternalFailure(`Song-Chart desync with song ID ${chart.song.id} (iidx).`);
 	}
 
-	const lamp = ConvertLamp(data.clearType);
-
-	const timeAchieved = ParseDateFromString(data.dateTime);
-
-	const scoreMeta = ConvertOptions(data);
-
 	const dryScore: DryScore<"iidx-dp" | "iidx-sp"> = {
 		comment: null,
 		game: game,
 		importType,
-		timeAchieved,
+		timeAchieved: ParseDateFromString(data.dateTime),
 		service: FormatCGService(processContext.service),
 		scoreData: {
 			score: data.exScore,
-			lamp,
+			lamp: ConvertLamp(data.clearType),
 			judgements: {
 				pgreat: data.perfectCount,
 				great: data.greatCount,
 			},
 			optional: {
 				bp: data.missCount === -1 ? null : data.missCount,
+				gaugeHistory: ConvertGhostGauge(data.ghostGauge),
 			},
 		},
-		scoreMeta,
+		scoreMeta: ConvertOptions(data),
 	};
 
 	return { song, chart, dryScore };
@@ -232,7 +227,7 @@ const OldLeggendariaConversionTable: Record<integer, integer> = {
 	24101: 24011,
 };
 
-function ConvertOptions(data: CGIIDXScore) {
+function ConvertOptions(data: CGIIDXScore): ScoreMeta["iidx-dp"] | ScoreMeta["iidx-sp"] {
 	if (data.version < 23) {
 		return {}; // Unknown if bits are the same in older versions
 	}
@@ -326,6 +321,26 @@ function ConvertOptions(data: CGIIDXScore) {
 	}
 
 	return scoreMeta;
+}
+
+function ConvertGhostGauge(rawHex: string): Array<number> | null {
+	// Sanity check, all ghostGauge data that we have seen is 1,536 characters.
+	if (rawHex.length !== 1536) {
+		return null;
+	}
+
+	const graph = [];
+	const MAX_VAL = 5000;
+
+	for (let i = 0; i < rawHex.length; i += 4) {
+		const chunk = rawHex.slice(i, i + 4);
+		const bigEndianHex = chunk.slice(2, 4) + chunk.slice(0, 2);
+		const rawValue = parseInt(bigEndianHex, 16);
+		const percentage = (rawValue / MAX_VAL) * 100;
+		graph.push(Number(percentage.toFixed(2)));
+	}
+
+	return graph;
 }
 
 function ConvertDifficulty(difficulty: string): Difficulties["iidx-dp" | "iidx-sp"] {
