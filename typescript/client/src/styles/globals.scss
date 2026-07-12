@@ -1,0 +1,46 @@
+// Hide native document scrollbar (width); overlay bar in CustomScrollbar.tsx
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.nav-link {
+	@extend .rounded;
+}
+
+.credits-easter-egg {
+	transition: text-decoration-color 120ms ease-in-out;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	&:hover {
+		text-decoration-color: var(--#{$prefix}body-color);
+	}
+}
+
+a {
+	@extend .transition-color;
+}
+
+body,
+header {
+	@extend .transition-bg;
+	@extend .transition-color;
+}
+
+code {
+	padding: #{$kbd-padding-y} #{$kbd-padding-x};
+	border-radius: var(--#{$prefix}border-radius-sm);
+}

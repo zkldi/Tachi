@@ -1,0 +1,38 @@
+{
+	"name": "tachi-db-migration-engine-cli",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "CLI for Postgres migrations, modelled after sqlx migrate.",
+	"bin": {
+		"tachi-migrate": "./src/index.ts"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"dependencies": {
+		"commander": "catalog:",
+		"pg": "catalog:",
+		"tachi-db-migration-engine": "workspace:*"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@types/node": "catalog:",
+		"@types/pg": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

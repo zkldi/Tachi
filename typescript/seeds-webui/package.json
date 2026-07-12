@@ -1,0 +1,54 @@
+{
+	"name": "tachi-seeds-webui",
+	"version": "0.1.0-see-project-root",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"description": "Web UI for Tachi's seeds: browse, query, diff over git history, and (in localdev) edit.",
+	"scripts": {
+		"dev": "vite",
+		"build": "bun scripts/bundle-current-seeds.ts && vite build",
+		"preview": "vite preview",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"dependencies": {
+		"@codemirror/lang-sql": "catalog:",
+		"@codemirror/language": "catalog:",
+		"@lezer/highlight": "catalog:",
+		"@sqlite.org/sqlite-wasm": "catalog:",
+		"codemirror": "catalog:",
+		"comlink": "catalog:",
+		"fast-json-patch": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"react-query": "catalog:",
+		"react-router-dom": "catalog:",
+		"tachi-common": "workspace:*",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"@types/react-router-dom": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"@vitejs/plugin-react": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:",
+		"vite": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*.tsx",
+			"./src/*/index.ts",
+			"./src/*/index.tsx"
+		]
+	}
+}

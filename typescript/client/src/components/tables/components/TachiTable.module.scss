@@ -1,0 +1,70 @@
+/* Shell around the Bootstrap input-group filter bar */
+.filterBarChrome {
+	align-self: flex-end;
+	border-radius: var(--bs-border-radius);
+	flex: none;
+	max-width: 100%;
+	overflow: hidden;
+	transition:
+		box-shadow 0.22s ease,
+		background-color 0.22s ease,
+		filter 0.22s ease;
+	width: auto;
+}
+
+.filterBarChromeActive {
+	background-color: color-mix(in srgb, var(--bs-primary) 12%, transparent);
+	box-shadow:
+		inset 0 0 0 2px var(--bs-primary),
+		0 0 0 3px color-mix(in srgb, var(--bs-primary) 18%, transparent),
+		0 8px 24px color-mix(in srgb, var(--bs-primary) 12%, transparent);
+
+	:global(.form-control) {
+		background-color: color-mix(in srgb, var(--bs-primary) 6%, var(--bs-body-bg, #fff));
+
+		&:focus {
+			border-color: var(--bs-border-color);
+			box-shadow: none;
+		}
+	}
+
+	:global(.btn),
+	:global(.input-group-text) {
+		background-color: color-mix(in srgb, var(--bs-primary) 8%, var(--bs-body-bg, #fff));
+		border-left-color: var(--bs-border-color);
+		color: inherit;
+	}
+}
+
+/* Extra punch when syncing from preset (combined with `.filterBarChromeActive`) */
+.searchFilterFlash {
+	animation: tachiFilterAttentionBurst 1.15s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+@keyframes tachiFilterAttentionBurst {
+	0% {
+		background-color: color-mix(in srgb, var(--bs-primary) 12%, transparent);
+		box-shadow:
+			inset 0 0 0 2px var(--bs-primary),
+			0 0 0 3px color-mix(in srgb, var(--bs-primary) 18%, transparent),
+			0 8px 24px color-mix(in srgb, var(--bs-primary) 12%, transparent);
+	}
+
+	28% {
+		background-color: color-mix(in srgb, var(--bs-primary) 24%, transparent);
+		box-shadow:
+			inset 0 0 0 3px color-mix(in srgb, var(--bs-warning) 35%, var(--bs-primary)),
+			0 0 0 7px color-mix(in srgb, var(--bs-primary) 38%, transparent),
+			0 14px 40px color-mix(in srgb, var(--bs-primary) 28%, transparent);
+		filter: saturate(1.12);
+	}
+
+	100% {
+		background-color: color-mix(in srgb, var(--bs-primary) 12%, transparent);
+		box-shadow:
+			inset 0 0 0 2px var(--bs-primary),
+			0 0 0 3px color-mix(in srgb, var(--bs-primary) 18%, transparent),
+			0 8px 24px color-mix(in srgb, var(--bs-primary) 12%, transparent);
+		filter: none;
+	}
+}

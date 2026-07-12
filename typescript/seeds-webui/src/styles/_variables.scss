@@ -1,0 +1,37 @@
+// Tachi brand pink - matches the .st1 fill in logo.svg.
+$tachi-pink: #e61c6e;
+
+// Bootstrap overrides (must come before `@import "bootstrap-scss/bootstrap"`).
+$primary: $tachi-pink;
+
+$font-family-sans-serif:
+	"Poppins",
+	system-ui,
+	-apple-system,
+	"Helvetica Neue",
+	sans-serif,
+	"Apple Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol",
+	"Noto Color Emoji";
+$font-family-monospace: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+	"Courier New", monospace;
+
+// Match tachi-client's type scale.
+$font-size-root: 13px;
+$font-size-base: 1rem;
+
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.75rem;
+
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+
+$min-contrast-ratio: 3;
+
+// Slightly warmer/cooler grays on each theme - matches the vibe of tachi-client.
+$body-bg-dark: #131313;
+$body-tertiary-bg-dark: #1a1a1a;
+$body-secondary-bg-dark: #242424;

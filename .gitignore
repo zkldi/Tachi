@@ -1,5 +1,9 @@
 node_modules
 
+# Local env (templates are .env.example; setup copies them to .env)
+.env
+**/.env
+
 your-pc
 
 # ide stuffs
@@ -18,35 +22,29 @@ your-pc
 
 # Compiled output
 js
+build
 
-# Ignore all .env's apart from example.env
-.env
-*.env
-!example.env
-
-# Ignore all conf.json5's apart from example.conf.json5
-conf.json5
-*.conf.json5
-!example.conf.json5
-
-# Redis dumps these files into PWD if it exits unexpectedly
-*.rdb
-
-# Don't want to check in logs
-logs
-
-# Anything about BFG stuff we shredded
-...bfg-report
-
-# Test coverages
-.nyc_output
+# Coverage
 coverage
-out.*
-failed-tests.log
+test-results
+.nyc_output
 
-.tsbuildinfo
+# Vitest bench --outputJson (see Justfile-bench)
+typescript/server/bench-results.json
+
+*.tsbuildinfo
 
 # legacy bootstrap flag
 I_HAVE_BOOTSTRAPPED_OK
 # new bootstrap flag
 BOOTSTRAP_OK
+# v3 bootstrap flag (omg)
+_SETUP_OK
+
+# Local debugging: `just db-schema` (see Justfile-db)
+db/schema.sql
+datasets/
+
+# java/beatoraja-ir (Gradle)
+java/**/.gradle
+java/**/build.DS_Store

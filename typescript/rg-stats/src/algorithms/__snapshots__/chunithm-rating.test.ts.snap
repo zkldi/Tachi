@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CHUNITHM Rating Validation Tests > Should throw if chart level is negative. 1`] = `"Invalid input, Chart level cannot be negative. internalChartLevel=-1."`;
+
+exports[`CHUNITHM Rating Validation Tests > Should throw if your score is >= 1.01million. 1`] = `"Invalid input, Score cannot be greater than 1.01Million. score=1010001."`;
+
+exports[`CHUNITHM Rating Validation Tests > Should throw if your score is negative. 1`] = `"Invalid input, Score cannot be negative. score=-1."`;

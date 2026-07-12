@@ -1,0 +1,84 @@
+{
+	"Invalid Goal: negative percent": "[criteria.value] Expected number to be greater than or equal to 0. (Received -1)",
+	"Invalid Goal: percent of 0 is a non-goal": "Invalid value of 0 for percent goal. Percents must be between 0 and 100.",
+	"Invalid Goal: percent greater than 100": "Invalid value 100.1 for percent, Expected a number between 0 and 100.",
+	"Invalid Goal: abs without countNum": "[criteria.countNum] Expected number to be greater than or equal to 0. (Received nothing (undefined))",
+	"Invalid Goal: proportion without countNum": "[criteria.countNum] Expected number to be greater than or equal to 0. (Received nothing (undefined))",
+	"Invalid Goal: single with countNum": "[criteria.countNum] Invalid countNum for mode 'single'. Must not have one! (Received 123)",
+	"Invalid Goal: nonsense mode": "[criteria.mode] Expected any of single, absolute, proportion. (Received nonsense)",
+	"Invalid Goal: abs with countNum but charts.type == single": "Invalid countNum for goal with criteria.mode of 'absolute'. Expected a whole number less than the total amount of charts available and greater than 1. (Got 1, while total charts was 1.)",
+	"Invalid Goal: nonsense charts.type": "[charts.type] Expected any of single, multi, folder. (Received nonsense)",
+	"Invalid Goal: charts.data when type == any": "[charts.data] Invalid charts.data for type 'any'. Must not have any data! (Received foo)",
+	"Invalid Goal: charts.data array when type == single": "[charts.data] Expected a string in charts.data due to charts.type being 'single'.",
+	"Invalid Goal: charts.data array of identical chartIDs": "Expected charts.data to match 2 charts. Instead, it only matched 1. Are all of these chartIDs valid?",
+	"Invalid Goal: charts.data array of single chartID": "[charts.data] Expected an array of 2 to 10 strings in charts.data due to charts.type being 'multi'.",
+	"Invalid Goal: charts.data array of chartIDs that don't exist": "Expected charts.data to match 2 charts. Instead, it only matched 1. Are all of these chartIDs valid?",
+	"Invalid Goal: charts.data folder refers to folder that doesn't exist": "A folder with id fake-folder does not exist for iidx:SP.",
+	"Invalid Goal: nonsense charts.data": "A chart with id nonsense does not exist for iidx:SP.",
+	"Invalid Goal: multi-score for iidx is illegal": "Creating score goals on multiple charts where the maximum value is relative to the chart is a terrible idea, and has been disabled.",
+	"Invalid Goal: too big grade": "Invalid value of 10 for grade goal. No such grade exists at that index.",
+	"Invalid Goal: invalid grade": "Invalid value of 0.5 for grade goal. No such grade exists at that index.",
+	"Invalid Goal: too big lamp": "Invalid value of 8 for lamp goal. No such lamp exists at that index.",
+	"Invalid Goal: invalid lamp": "Invalid value of 0.5 for lamp goal. No such lamp exists at that index.",
+	"Invalid Goal: proportion with negative countNum": "[criteria.countNum] Expected number to be greater than or equal to 0. (Received -0.5)",
+	"Invalid Goal: proportion with greater than 1 countNum": "Invalid countNum for goal with criteria.mode of 'proportion'. Expected a decimal in (0, 1]",
+	"Invalid Goal: proportion which results in countNum of 0": "countNum (0.05) is too small for a goal with 2 charts. Would result in requiring 0 charts to achieve the goal.",
+	"Invalid Goal: charts.data array of chartIDs where some don't exist": "Expected charts.data to match 2 charts. Instead, it only matched 1. Are all of these chartIDs valid?",
+	"Invalid Goal: folder-score for iidx is illegal": "Creating score goals on multiple charts where the maximum value is relative to the chart is a terrible idea, and has been disabled.",
+	"Invalid Goal: any-score for iidx is illegal": "Invalid key for iidx with multiple charts. Creating score goals on multiple charts where score is relative to notecount is a terrible idea, and has been disabled.",
+	"Invalid Goal: charts single but criteria not.": "Invalid countNum for goal with criteria.mode of 'absolute'. Expected a whole number less than the total amount of charts available and greater than 1. (Got 2, while total charts was 1.)",
+	"Invalid Goal: too big score": "Invalid value 9000 for score, EX Score cannot be greater than 1572 for this chart.",
+	"Invalid Goal: LampIndex:Multi:Proportion Case": "Criteria Mode must be 'single' or 'absolute' if Charts Type is 'multi'. Doesn't make sense to have proportional goals when you're capped at 10 charts.",
+	"Invalid Goal: GradeIndex:Multi:Proportion Case": "Criteria Mode must be 'single' or 'absolute' if Charts Type is 'multi'. Doesn't make sense to have proportional goals when you're capped at 10 charts.",
+	"Invalid Goal: Percent:Multi:Proportion Case": "Criteria Mode must be 'single' or 'absolute' if Charts Type is 'multi'. Doesn't make sense to have proportional goals when you're capped at 10 charts.",
+	"Invalid Goal: string enum": "[criteria.value] Expected number to be greater than or equal to 0. (Received 9)",
+	"Jubeat Music Rate Validator: negative": "Expected a number between 0 and 100.",
+	"Jubeat Music Rate Validator: too big": "Expected a number between 0 and 100.",
+	"Jubeat Music Rate Validator: too big (hard)": "Expected a number between 0 and 120.",
+	"EX Score Validator SP: negative": "EX Score cannot be negative.",
+	"EX Score Validator SP: excessive": "EX Score cannot be greater than 1572 for this chart.",
+	"EX Score Validator DP: negative": "EX Score cannot be negative.",
+	"EX Score Validator DP: excessive": "EX Score cannot be greater than 1572 for this chart.",
+	"EX Score Validator SDVX: negative": "EX Score must be non-negative. Got -1",
+	"EX Score Validator 7K: negative": "EX Score cannot be negative.",
+	"EX Score Validator 7K: excessive": "EX Score cannot be greater than 4512 for this chart.",
+	"EX Score Validator 14K: negative": "EX Score cannot be negative.",
+	"EX Score Validator 14K: excessive": "EX Score cannot be greater than 4512 for this chart.",
+	"EX Score Validator Controller: negative": "EX Score cannot be negative.",
+	"EX Score Validator Controller: excessive": "EX Score cannot be greater than 4512 for this chart.",
+	"EX Score Validator Keyboard: negative": "EX Score cannot be negative.",
+	"EX Score Validator Keyboard: excessive": "EX Score cannot be greater than 4512 for this chart.",
+	"Maimai Percent Validator: negative": "Percent cannot be negative.",
+	"Maimai Percent Validator: excessive": "Percent cannot be greater than 100.78 for this chart.",
+	"WACCA IMPL Validators: Should disallow ALL MARVELOUS with non-perfect score.": [
+		"ALL MARVELOUS scores must have a perfect score. Got 999999 instead."
+	],
+	"WACCA IMPL Validators: Should disallow FC with miss": [
+		"Cannot have a FULL COMBO with misses."
+	],
+	"WACCA IMPL Validators: Should disallow ALL MARVELOUS with non-perfect good judgements.": [
+		"ALL MARVELOUS scores must have a perfect score. Got 953000 instead.",
+		"Cannot have an ALL MARVELOUS if all judgements were not marvelous."
+	],
+	"Arcaea IMPL Validators: Should disallow PURE MEMORY with non-perfect score": [
+		"PURE MEMORY scores must have a score larger than 10 million. Got 9999999 instead.",
+		"Cannot have a PURE MEMORY with any fars or losts."
+	],
+	"Arcaea IMPL Validators: Should disallow FR with lost": [
+		"Cannot have a FULL RECALL with non-zero lost count."
+	],
+	"Arcaea IMPL Validators: Should disallow PURE MEMORY with non-perfect Far judgements.": [
+		"PURE MEMORY scores must have a score larger than 10 million. Got 9979366 instead.",
+		"Cannot have a PURE MEMORY with any fars or losts."
+	],
+	"Arcaea IMPL Validators: Should disallow PURE MEMORY with non-perfect Lost judgements.": [
+		"PURE MEMORY scores must have a score larger than 10 million. Got 9979366 instead.",
+		"Cannot have a PURE MEMORY with any fars or losts."
+	],
+	"Arcaea IMPL Validators: Should disallow FULL RECALL scores smaller than the minimum possible score": [
+		"FULL RECALL scores must have a score larger than 5 million. Got 4999999 instead.",
+		"Cannot have a FULL RECALL with non-zero lost count."
+	],
+	"Arcaea IMPL Validators: Should disallow negative scores.": "Score must be non-negative. Got -1",
+	"Arcaea IMPL Validators: Should disallow scores that exceed 10 million + notecount.": "Score cannot exceed 10001151 for this chart."
+}

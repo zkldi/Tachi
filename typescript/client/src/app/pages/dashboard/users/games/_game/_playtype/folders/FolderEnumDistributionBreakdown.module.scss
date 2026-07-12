@@ -1,0 +1,33 @@
+.enumRowInteractive {
+	cursor: pointer;
+	transition:
+		transform 120ms ease,
+		box-shadow 120ms ease,
+		filter 120ms ease;
+
+	&:hover {
+		transform: translateY(-1px);
+		box-shadow:
+			var(--bs-box-shadow-sm),
+			0 0 0 1px color-mix(in srgb, var(--bs-emphasis-color) 12%, transparent);
+		filter: brightness(1.03);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--bs-primary);
+		outline-offset: 2px;
+	}
+
+	&:active {
+		transform: translateY(0);
+		filter: brightness(0.99);
+	}
+}
+
+.enumRowButtonReset {
+	all: unset;
+	box-sizing: border-box;
+	cursor: inherit;
+	display: block;
+	width: 100%;
+}

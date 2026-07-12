@@ -21,25 +21,31 @@ function rgb
 	printf "\033[0m"
 end
 
+# "Git Move Root" - cd relative to the .git root.
+function gmr --wraps=cd
+	set -l git_root (git rev-parse --show-toplevel 2>/dev/null)
+	if test $status != 0;
+		return 1
+	end
+	cd "$git_root/$1"
+end
+
 function cmd
 	rgb $argv[1] e61c6e 000000
 end
 
-
-
 function fish_greeting
-	# check $PATH is correct
-	if not contains ~/.local/pnpm $PATH
-		fish_add_path ~/.local/pnpm
+	if test (random 0 100) -lt 10; and test -d /host-pc/dl # entropy
+		perl /tachi/dev/eye.pl
 	end
 
 	echo "Welcome to $(rgb "Tachi" e61c6e 131313)!"
 
-	if ! test -e /tachi/BOOTSTRAP_OK
+	if ! test -e /tachi/_SETUP_OK
 		echo ""
 		echo $(rgb "Something went wrong and Tachi didn't set up correctly." ff0000 000000)
 		echo ""
-		echo $(rgb "Please run" ff0000 000000) $(cmd "just bootstrap"). $(rgb "An incorrectly setup Tachi might not launch." ff0000 000000)
+		echo $(rgb "Please run" ff0000 000000) $(cmd "just setup"). $(rgb "An incorrectly setup Tachi might not launch." ff0000 000000)
 		return
 	end
 
@@ -48,12 +54,18 @@ function fish_greeting
 		echo $(rgb "This terminal is set up inside a Linux Machine!" ffffff 000000)
 		echo $(rgb "This machine comes pre-installed with Tachi and helpful tools." ffffff 000000)
 		echo ""
-		echo "Type $(cmd "just start") to start up a frontend and backend."
-		echo "    $(rgb "The server will start on http://127.0.0.1:3000." ffff00 000000)"
-		echo "    $(rgb "Use Ctrl+C to stop the server." ffff00 000000)"
+		echo "Type $(cmd "just start") to start up tachi."
+		echo "    $(rgb "The site will start on http://localhost:3000." ffff00 000000)"
+		echo "    $(rgb "The seeds web UI will start on http://localhost:3003." ffff00 000000)"
+		echo "    $(rgb "Use Ctrl+C to stop Tachi." ffff00 000000)"
+		echo ""
+		echo "You can also run:"
+		echo "    $(cmd "just grafana") to view the Grafana dashboard."
+		echo "    $(cmd "just mailpit") to view emails that have been sent by Tachi."
+		echo "    $(cmd "just seeds-webui") to view the seeds web UI."
 		echo ""
 		echo "Type $(cmd "seeds") to run seeds scripts."
-		echo "    $(rgb "Create new script files in seeds/scripts." ffff00 000000)"
+		echo "    $(rgb "Create new script files in typescript/seeds-scripts." ffff00 000000)"
 		echo "    Your host PC files can be found in $(rgb "/host-pc" ffff00 000000)."
 		echo ""
 		echo "Type $(cmd "just") to see everything else we have going on."
@@ -96,24 +108,26 @@ end
 function seeds
 	set fzfcmd fzf --border
 
-	set mode (echo "Single Use"\n"Rerunners" | $fzfcmd)
+	set mode (echo "Personal"\n"Rerunners" | $fzfcmd)
 
 	if test -z "$mode"
 		return
 	end
 
-	if test $mode = "Single Use"
-		set place single-use
+	if test $mode = "Personal"
+		set place personal
 	else if test $mode = "Rerunners"
 		set place rerunners
 	end
 
-	cd /tachi/seeds/scripts/$place
+	set scripts_dir /tachi/typescript/seeds-scripts/$place
+
+	cd $scripts_dir
 
 	set selected_file (fd -e ts -e js --strip-cwd-prefix | $fzfcmd)
 
 	if test -n "$selected_file"
-		set cmd ts-node "./$selected_file"
+		set cmd bun run "./$selected_file"
 		echo $cmd
 	
 		$cmd

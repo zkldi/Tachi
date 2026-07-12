@@ -1,0 +1,15 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"allowJs": true,
+		"strict": false,
+		"paths": {
+			"#*": ["./*", "./*.ts", "./*.js"]
+		}
+	},
+	"exclude": ["node_modules", "rerunners/**"]
+}

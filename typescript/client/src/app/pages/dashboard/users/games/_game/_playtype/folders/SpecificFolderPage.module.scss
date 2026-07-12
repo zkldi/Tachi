@@ -1,0 +1,71 @@
+@keyframes tierlistBarEnter {
+	from {
+		opacity: 0;
+		transform: translateY(4px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes tierlistSegmentFade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.tierlistBar {
+	animation: tierlistBarEnter 0.42s ease-out both;
+}
+
+.tierlistBarSegment {
+	align-items: center;
+	animation: tierlistSegmentFade 0.38s ease-out both;
+	display: flex;
+	flex: none;
+	height: 100%;
+	justify-content: center;
+	min-width: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.tierlistBarRemainder {
+	animation: tierlistSegmentFade 0.38s ease-out both;
+}
+
+.tierlistBarLabel {
+	color: #fff;
+	font-size: 0.65rem;
+	font-weight: 700;
+	line-height: 1;
+	pointer-events: none;
+	text-shadow:
+		0 0 1px rgb(0 0 0 / 0.9),
+		0 1px 2px rgb(0 0 0 / 0.55);
+	white-space: nowrap;
+}
+
+/** Stable width for Met stats so distribution bars line up across summary rows. */
+.tierlistMetFraction {
+	align-items: baseline;
+	display: inline-flex;
+	font-variant-numeric: tabular-nums;
+	gap: 0.35rem;
+	min-width: 11ch;
+}
+
+.tierlistMetFractionCenter {
+	justify-content: center;
+}
+
+.tierlistSummaryMetHeader {
+	min-width: 12ch;
+	width: 12ch;
+}

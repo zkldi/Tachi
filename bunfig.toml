@@ -1,0 +1,6 @@
+telemetry = false
+
+# Single node_modules at repo root (npm/Yarn-style hoisting).
+# Avoids per-workspace node_modules and keeps CI volume setup simple.
+[install]
+linker = "hoisted"

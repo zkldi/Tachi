@@ -1,6 +1,0 @@
-Hey. If by any chance I'm not available, you can (and should) run these scripts with TS-Node.
-https://github.com/TypeStrong/ts-node
-
-They have only been tested for ts-node.
-
-pnpm install -g ts-node

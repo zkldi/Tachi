@@ -1,0 +1,24 @@
+{
+	"Servers": {
+		"1": {
+			"Name": "Tachi Postgres (dev)",
+			"Group": "Tachi",
+			"Host": "tachi-postgres",
+			"Port": 5432,
+			"MaintenanceDB": "tachi",
+			"Username": "tachi",
+			"Password": "tachi",
+			"SSLMode": "prefer"
+		},
+		"2": {
+			"Name": "Tachi Postgres (test)",
+			"Group": "Tachi",
+			"Host": "tachi-postgres-test",
+			"Port": 5432,
+			"MaintenanceDB": "postgres",
+			"Username": "tachi",
+			"Password": "tachi",
+			"SSLMode": "prefer"
+		}
+	}
+}

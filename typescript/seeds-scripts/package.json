@@ -1,0 +1,49 @@
+{
+	"name": "tachi-seeds-scripts",
+	"type": "module",
+	"version": "0.1.0-see-project-root",
+	"private": true,
+	"description": "Scripts for dealing with tachi-seeds.",
+	"scripts": {
+		"build": "tsgo -b",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"sort": "bun ./sort-seeds.js",
+		"sort-check": "bun ./sort-seeds.js --check",
+		"test": "./run-tests.sh",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"author": "zk",
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"eslint-config-tachi": "workspace:*"
+	},
+	"dependencies": {
+		"@types/lodash.get": "catalog:",
+		"@types/node": "catalog:",
+		"binary-parser": "catalog:",
+		"chalk": "catalog:",
+		"cheerio": "catalog:",
+		"commander": "catalog:",
+		"csv-parse": "catalog:",
+		"encoding-japanese": "catalog:",
+		"fast-json-stable-hash": "catalog:",
+		"fast-xml-parser": "catalog:",
+		"iconv-lite": "catalog:",
+		"lodash.get": "catalog:",
+		"node-fetch": "catalog:",
+		"tachi-common": "workspace:*",
+		"zod": "catalog:"
+	},
+	"imports": {
+		"#*": [
+			"./*",
+			"./*.ts",
+			"./*.js",
+			"./*/index.ts",
+			"./*/index.js"
+		]
+	}
+}

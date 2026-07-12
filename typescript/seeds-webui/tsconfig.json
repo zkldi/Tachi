@@ -1,0 +1,17 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"lib": ["DOM", "DOM.Iterable", "ES2022", "WebWorker"],
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"types": ["vite/client"],
+		"paths": {
+			"#*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+}

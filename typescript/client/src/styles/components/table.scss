@@ -1,0 +1,95 @@
+table {
+	border-width: $table-border-width;
+	border-style: solid;
+}
+
+.table.table-vertical-center th,
+.table.table-vertical-center td {
+	vertical-align: middle;
+}
+
+.fading-image-td-left {
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		display: block;
+		background-image: var(--image-url);
+		mask-image: linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, var(--fading-image-opacity)) 30%,
+			rgba(0, 0, 0, 0)
+		);
+		-webkit-mask-image: linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, var(--fading-image-opacity)) 30%,
+			rgba(0, 0, 0, 0)
+		);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: inherit;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	&:after {
+		content: "";
+		display: block;
+		inset: 0;
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+	}
+}
+
+.fading-image-td-right {
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		display: block;
+		background-image: var(--image-url);
+		mask-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, var(--fading-image-opacity)) 33%,
+			rgba(0, 0, 0, 0)
+		);
+		-webkit-mask-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, var(--fading-image-opacity)) 33%,
+			rgba(0, 0, 0, 0)
+		);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: inherit;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+
+.expandable-pseudo-row,
+.nested-expandable-pseudo-row {
+	td {
+		border: none;
+	}
+}
+
+.fake-row {
+	border: none;
+}
+
+.highlighted-row {
+	td {
+		background-color: rgba($color: $primary, $alpha: 0.1);
+	}
+}

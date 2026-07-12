@@ -1,0 +1,4 @@
+build/
+dist/
+public/seeds-bundle/
+node_modules/

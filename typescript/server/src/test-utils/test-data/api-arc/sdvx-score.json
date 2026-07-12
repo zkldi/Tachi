@@ -1,0 +1,25 @@
+{
+	"_links": {
+		"_self": "",
+		"chart": "",
+		"music": "",
+		"profile": ""
+	},
+	"_id": "AAWuBrMR7oE",
+	"_etag": "AAAAAAAAAAA",
+	"chart_id": "EOZ7FixCDpv",
+	"music_id": "Fa7KhwvN098",
+	"profile_id": "B5HJRdYZPCq",
+	"score": 9312500,
+	"lamp": "CLEAR",
+	"grade": "AA",
+	"btn_rate": 89.5,
+	"long_rate": 92.5,
+	"vol_rate": 96.5,
+	"critical": 946,
+	"near": 45,
+	"error": 49,
+	"max_chain": 184,
+	"timestamp": "2019-09-05T12:18:05.077Z",
+	"status": "CLEAR"
+}

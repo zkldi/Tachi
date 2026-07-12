@@ -1,0 +1,5 @@
+# Metrics are ingested via remote write from Grafana Alloy (see alloy-config.alloy).
+global:
+  scrape_interval: 15s
+
+scrape_configs: []

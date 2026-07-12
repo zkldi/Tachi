@@ -1,0 +1,7 @@
+{
+	"extends": "../../tsconfig.node.json",
+	"compilerOptions": {
+		"types": []
+	},
+	"include": ["vite.config.ts", "dev/**/*.ts", "scripts/**/*.ts"]
+}

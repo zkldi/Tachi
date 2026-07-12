@@ -1,0 +1,41 @@
+{
+	"name": "tachi-github-bot",
+	"version": "0.1.0-see-project-root",
+	"private": true,
+	"description": "A GitHub bot for listening to Tachi's GitHub Repo.",
+	"author": "zk",
+	"type": "module",
+	"scripts": {
+		"build": "tsgo -b",
+		"start": "tsgo -b && bun js/main.js",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"dependencies": {
+		"@octokit/app": "catalog:",
+		"@octokit/webhooks-types": "catalog:",
+		"bliss": "workspace:*",
+		"dotenv": "catalog:",
+		"express": "catalog:",
+		"prudence": "catalog:"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@types/express": "catalog:",
+		"@types/node": "catalog:",
+		"typescript": "catalog:",
+		"eslint-config-tachi": "workspace:*"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

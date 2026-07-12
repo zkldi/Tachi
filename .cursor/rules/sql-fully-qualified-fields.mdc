@@ -1,0 +1,25 @@
+---
+description: Fully qualify SQL/Kysely column names (table.alias prefix)
+globs: typescript/server/**/*.ts
+alwaysApply: false
+---
+
+# Fully qualified fields in queries
+
+In Kysely `select`, `where`, `orderBy`, `join` conditions, and raw `sql` fragments, **always** qualify column names with the table or join alias. Do not use bare column names when the query references a table (including single-table queries, for consistency and safer refactors).
+
+```typescript
+// ❌ BAD - ambiguous once joins or CTEs are added; harder to grep
+.select(["data", "chart_id", "user_id"])
+.where("id", "=", id)
+
+// ✅ GOOD
+.select(["chart.data", "score.chart_id", "score.user_id"])
+.where("chart.id", "=", chartId)
+```
+
+- Prefer the same alias the query uses in `from` / `innerJoin` (e.g. `chart`, `score`, `song`).
+- For `sql` tagged templates, qualify identifiers the same way: `` sql`chart.data` ``, not bare `` sql`data` `` when `data` is a column name.
+- When selecting with `as`, keep the qualified source on the left: `"chart.data as chart_data"` (see existing patterns in actions and queries).
+
+This avoids duplicate-column errors, makes intent obvious in code review, and matches how API-facing selects are written alongside `db-formats` column lists.

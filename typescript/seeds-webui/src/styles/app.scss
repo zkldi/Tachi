@@ -1,0 +1,2208 @@
+@import "variables";
+@import "bootstrap-scss/bootstrap";
+
+// ---------------------------------------------------------------------------
+// Per-theme tweaks. Mirrors typescript/client/src/styles/themes.scss in spirit
+// so the seeds-webui feels like a sibling of the main tachi client.
+// ---------------------------------------------------------------------------
+
+[data-bs-theme="light"] {
+	--sw-header-bg: #{rgba($white, 0.85)};
+	--sw-sidebar-bg: #{$gray-100};
+	--sw-panel-bg: #{$white};
+	--sw-glow: #{rgba($tachi-pink, 0.12)};
+	--sw-schema-subtle: #{$gray-700};
+	--sw-schema-border-col: var(--bs-border-color);
+
+	code {
+		background-color: var(--bs-body-tertiary-bg);
+	}
+}
+
+[data-bs-theme="dark"] {
+	--sw-header-bg: rgba(19, 19, 19, 0.85);
+	--sw-sidebar-bg: #{$body-tertiary-bg-dark};
+	--sw-panel-bg: #{$body-secondary-bg-dark};
+	--sw-glow: #{rgba($tachi-pink, 0.18)};
+	// Schema sidebar: avoid Bootstrap’s `text-muted` in dark (too dim / purplish on near-black).
+	--sw-schema-subtle: #c4cad6;
+	--sw-schema-border-col: rgba(255, 255, 255, 0.22);
+
+	--bs-body-bg: #{$body-bg-dark};
+	--bs-body-bg-rgb: 19, 19, 19;
+
+	code {
+		background-color: var(--bs-black);
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Globals.
+// ---------------------------------------------------------------------------
+
+:root {
+	--sw-mono: var(--bs-font-monospace);
+	--sw-header-height: 60px;
+}
+
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+body {
+	background: var(--bs-body-bg);
+	color: var(--bs-body-color);
+	font-family: var(--bs-font-sans-serif);
+}
+
+a {
+	transition:
+		color 120ms ease-in-out,
+		background-color 120ms ease-in-out;
+}
+
+code,
+.mono {
+	font-family: var(--sw-mono);
+	font-variant-ligatures: none;
+	font-feature-settings:
+		"liga" 0,
+		"calt" 0;
+}
+
+code {
+	padding: 0.1rem 0.35rem;
+	border-radius: var(--bs-border-radius-sm);
+	color: var(--bs-body-color);
+}
+
+// ---------------------------------------------------------------------------
+// Shell layout: header on top, sidebar + content below.
+// ---------------------------------------------------------------------------
+
+.app-shell {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sw-header {
+	position: sticky;
+	top: 0;
+	z-index: 30;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	height: var(--sw-header-height);
+	padding: 0 1.25rem;
+	background: var(--sw-header-bg);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid var(--bs-border-color);
+
+	.brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+		color: inherit;
+		text-decoration: none;
+		padding: 0.25rem 0.5rem;
+		border-radius: var(--bs-border-radius);
+
+		&:hover {
+			background: var(--sw-glow);
+		}
+
+		img {
+			height: 28px;
+			display: block;
+		}
+
+		.brand-wordmark {
+			font-size: 1.05rem;
+			font-weight: 600;
+			letter-spacing: 0.02em;
+			line-height: 1;
+
+			small {
+				display: block;
+				margin-top: 2px;
+				font-size: 0.7rem;
+				font-weight: 400;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: var(--bs-secondary-color);
+			}
+		}
+	}
+
+	.sw-nav {
+		display: flex;
+		gap: 0.15rem;
+		margin-left: 1rem;
+		align-items: center;
+
+		a {
+			padding: 0.4rem 0.85rem;
+			border-radius: var(--bs-border-radius);
+			color: var(--bs-body-color);
+			text-decoration: none;
+			font-size: 0.95rem;
+
+			&:hover {
+				background: var(--bs-tertiary-bg);
+			}
+
+			&.active {
+				color: var(--bs-primary);
+				background: var(--sw-glow);
+			}
+		}
+
+		.nav-sep {
+			width: 1px;
+			height: 20px;
+			background: var(--bs-border-color);
+			margin: 0 0.5rem;
+		}
+
+		.dev-label {
+			font-size: 0.7rem;
+			font-weight: 600;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			color: var(--bs-secondary-color);
+			padding: 0 0.25rem;
+		}
+	}
+
+	.sw-header-right {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	// Draft count badge attached to the Drafts nav link.
+	.draft-badge {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 1.15rem;
+		height: 1.15rem;
+		padding: 0 0.28rem;
+		margin-left: 0.3rem;
+		background: $tachi-pink;
+		color: #fff;
+		font-size: 0.65rem;
+		font-weight: 700;
+		border-radius: 999px;
+		line-height: 1;
+		font-family: var(--bs-font-sans-serif);
+		vertical-align: middle;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.theme-toggle {
+		background: transparent;
+		border: 1px solid var(--bs-border-color);
+		color: var(--bs-body-color);
+		padding: 0.35rem 0.65rem;
+		border-radius: var(--bs-border-radius);
+		font-size: 0.85rem;
+
+		&:hover {
+			background: var(--bs-tertiary-bg);
+		}
+	}
+
+	.mode-badge {
+		font-size: 0.7rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 0.2rem 0.55rem;
+		border-radius: var(--bs-border-radius-sm);
+		border: 1px solid var(--bs-border-color);
+
+		&.mode-dev {
+			color: $tachi-pink;
+			border-color: rgba($tachi-pink, 0.4);
+			background: var(--sw-glow);
+		}
+
+		&.mode-readonly {
+			color: var(--bs-secondary-color);
+			background: var(--bs-tertiary-bg);
+		}
+	}
+}
+
+.sw-body {
+	display: flex;
+	flex: 1;
+	min-height: 0;
+}
+
+.sw-content {
+	flex: 1;
+	padding: 1.5rem 2rem 3rem;
+	min-width: 0;
+	max-width: 100%;
+}
+
+// ---------------------------------------------------------------------------
+// Git status strip - appears under the header in dev mode.
+// ---------------------------------------------------------------------------
+
+.git-strip {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 1.5rem;
+	background: var(--sw-glow);
+	border-bottom: 1px solid var(--bs-border-color);
+	font-size: 0.85rem;
+
+	code {
+		background: rgba(0, 0, 0, 0.1);
+	}
+
+	.dirty {
+		color: var(--bs-warning-text-emphasis);
+	}
+
+	.clean {
+		color: var(--bs-success-text-emphasis);
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Page-level helpers.
+// ---------------------------------------------------------------------------
+
+.page-title {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	margin-bottom: 0.25rem;
+	font-family: var(--bs-font-sans-serif);
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+.page-subtitle {
+	color: var(--bs-secondary-color);
+	margin-bottom: 1.5rem;
+}
+
+.panel {
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius-lg);
+	padding: 1.25rem;
+}
+
+.stat-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 0.75rem;
+}
+
+.stat-card {
+	padding: 0.9rem 1rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+
+	.stat-label {
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--bs-secondary-color);
+		font-weight: 500;
+	}
+
+	.stat-value {
+		font-family: var(--sw-mono);
+		font-size: 1.35rem;
+		font-weight: 500;
+		margin-top: 0.15rem;
+		word-break: break-all;
+	}
+}
+
+// ---------------------------------------------------------------------------
+// SQL console + result tables.
+// ---------------------------------------------------------------------------
+
+.sql-console {
+	textarea {
+		font-family: var(--sw-mono);
+		font-size: 0.92rem;
+		min-height: 140px;
+		background: var(--sw-panel-bg);
+	}
+
+	.sql-editor-row {
+		display: flex;
+		gap: 0.75rem;
+		align-items: stretch;
+		flex-wrap: nowrap;
+	}
+
+	.sql-editor-main {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.schema-sidebar {
+		flex: 0 0 17rem;
+		max-width: 100%;
+		background: var(--sw-panel-bg);
+		border: 1px solid var(--bs-border-color);
+		border-radius: var(--bs-border-radius);
+		padding: 0.65rem 0.75rem;
+		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+		min-height: 12rem;
+		max-height: min(70vh, 28rem);
+		// SchemaPanel’s root is a plain <div>: without this, .schema-panel-scroll’s flex + min-height
+		// don’t apply (parent isn’t a flex container), the column list ignores max-height, and
+		// the sidebar layout breaks.
+		overflow: hidden;
+		> * {
+			flex: 1 1 auto;
+			min-height: 0;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.schema-panel-title,
+	.schema-panel-hint {
+		color: var(--sw-schema-subtle);
+	}
+
+	.schema-panel-title {
+		flex-shrink: 0;
+	}
+
+	.schema-panel-scroll {
+		overflow: auto;
+		flex: 1 1 auto;
+		min-height: 0;
+	}
+
+	.schema-tables {
+		margin: 0;
+	}
+
+	.schema-table-columns {
+		margin: 0.2rem 0 0;
+		padding: 0 0 0 0.6rem;
+		font-size: 0.8rem;
+		border-left: 1px solid var(--sw-schema-border-col, var(--bs-border-color));
+
+		li {
+			padding: 0.1rem 0;
+			line-height: 1.35;
+			color: var(--sw-schema-subtle);
+		}
+	}
+}
+
+// Placeholder on Query / Bulk while OPFS + ingest run (mirrors min editor height).
+.sql-workspace-gate {
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	background: var(--sw-panel-bg);
+	min-height: 220px;
+	display: flex;
+	align-items: stretch;
+}
+
+.sql-workspace-gate-inner {
+	padding: 1rem 1.1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sql-workspace-gate-bar {
+	max-width: 22rem;
+}
+
+// ---------------------------------------------------------------------------
+// Result tables (Query / Collection / anywhere we render raw sqlite rows).
+//
+// The previous styling forced single-line ellipsised cells, which meant long
+// `raw` JSON blobs and chart titles were effectively invisible. The v2 shell
+// below lets cells wrap, caps the per-cell height so one fat column doesn't
+// stretch the row off-screen, and renders JSON-ish strings in pretty-printed
+// scroll boxes.
+// ---------------------------------------------------------------------------
+
+.result-wrap {
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	overflow: hidden;
+}
+
+.result-scroll {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.result-table-v2 {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: var(--sw-mono);
+	font-size: 0.82rem;
+	table-layout: auto;
+
+	thead th {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background: var(--bs-body-tertiary-bg);
+		border-bottom: 1px solid var(--bs-border-color);
+		font-family: var(--bs-font-sans-serif);
+		font-weight: 500;
+		color: var(--bs-secondary-color);
+		text-transform: uppercase;
+		font-size: 0.7rem;
+		letter-spacing: 0.08em;
+		padding: 0.5rem 0.75rem;
+		text-align: left;
+		white-space: nowrap;
+
+		&.col-wide {
+			min-width: 320px;
+		}
+	}
+
+	tbody td {
+		padding: 0.55rem 0.75rem;
+		vertical-align: top;
+		border-bottom: 1px solid var(--bs-border-color);
+		line-height: 1.5;
+		// Regular (non-blob) cells wrap rather than ellipsising. This caps
+		// their typical width so a long string doesn't push everything else
+		// off-screen; cell-blob below overrides for multi-line content.
+		max-width: 420px;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		white-space: pre-wrap;
+	}
+
+	tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	tbody tr:hover td {
+		background: var(--sw-glow);
+	}
+
+	// Rows that toggle an expanded panel on click.
+	tbody tr.result-row-clickable {
+		cursor: pointer;
+
+		&:focus-visible td {
+			outline: 2px solid var(--bs-primary);
+			outline-offset: -2px;
+		}
+	}
+
+	// Row-expand column - narrow, center-aligned, no hover bg.
+	.result-col-expand {
+		width: 2rem;
+		padding: 0.35rem 0.25rem 0.35rem 0.5rem;
+		text-align: center;
+		white-space: nowrap;
+		min-width: 0;
+	}
+
+	// Blob cells: multi-line scroll boxes for JSON / long strings.
+	.cell-blob {
+		max-width: 560px;
+		padding: 0.4rem 0.5rem;
+	}
+
+	.cell-pre {
+		margin: 0;
+		padding: 0.4rem 0.55rem;
+		background: var(--bs-body-tertiary-bg);
+		border: 1px solid var(--bs-border-color);
+		border-radius: 0.3rem;
+		font-size: 0.78rem;
+		line-height: 1.45;
+		white-space: pre-wrap;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		max-height: 16rem;
+		overflow: auto;
+	}
+
+	// Expanded-row detail.
+	tr.result-expanded td {
+		background: var(--bs-body-tertiary-bg);
+		border-top: 1px dashed var(--bs-border-color);
+	}
+
+	// Always-visible diff under each row (Bulk); extra padding for diff cards.
+	tr.result-expanded-inline > td {
+		padding: 0.5rem 0.65rem 0.85rem;
+	}
+
+	.result-row-json {
+		margin: 0;
+		padding: 0.6rem 0.75rem;
+		background: var(--bs-body-bg);
+		border: 1px solid var(--bs-border-color);
+		border-radius: 0.3rem;
+		font-size: 0.78rem;
+		line-height: 1.5;
+		white-space: pre-wrap;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		max-height: 32rem;
+		overflow: auto;
+	}
+}
+
+.result-expander {
+	appearance: none;
+	background: transparent;
+	border: none;
+	padding: 0;
+	color: var(--bs-secondary-color);
+	font-size: 0.9rem;
+	line-height: 1;
+	cursor: pointer;
+	transition:
+		transform 120ms ease-in-out,
+		color 120ms ease-in-out;
+
+	&:hover {
+		color: var(--bs-primary);
+	}
+
+	&.is-open {
+		transform: rotate(90deg);
+		color: var(--bs-primary);
+	}
+}
+
+.result-foot {
+	padding: 0.5rem 0.75rem;
+	font-size: 0.78rem;
+	color: var(--bs-secondary-color);
+	border-top: 1px solid var(--bs-border-color);
+	background: var(--bs-body-tertiary-bg);
+}
+
+.run-output {
+	font-family: var(--sw-mono);
+	font-size: 0.85rem;
+	background: var(--bs-tertiary-bg);
+	color: var(--bs-body-color);
+	padding: 0.9rem 1rem;
+	border-radius: var(--bs-border-radius);
+	max-height: 520px;
+	overflow: auto;
+	white-space: pre-wrap;
+	border: 1px solid var(--bs-border-color);
+
+	.stderr {
+		color: var(--bs-danger-text-emphasis);
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Clickable row affordance. Shared by commit rows, collection rows, and any
+// other "block link" we want to feel like a row in a list. Always rendered
+// as an <a> or <Link>: the whole row is the hit target.
+// ---------------------------------------------------------------------------
+
+.row-link {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	color: var(--bs-body-color);
+	text-decoration: none;
+	cursor: pointer;
+	transition:
+		border-color 120ms ease-in-out,
+		background-color 120ms ease-in-out,
+		transform 80ms ease-in-out;
+
+	&::after {
+		content: "›";
+		margin-left: 0.5rem;
+		color: var(--bs-secondary-color);
+		font-size: 1.25rem;
+		line-height: 1;
+		transition:
+			color 120ms ease-in-out,
+			transform 120ms ease-in-out;
+	}
+
+	&:hover {
+		border-color: rgba($tachi-pink, 0.55);
+		background: linear-gradient(90deg, var(--sw-panel-bg) 0%, var(--sw-glow) 100%);
+		color: var(--bs-body-color);
+
+		&::after {
+			color: var(--bs-primary);
+			transform: translateX(3px);
+		}
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--bs-primary);
+		outline-offset: 2px;
+	}
+
+	.sha {
+		font-family: var(--sw-mono);
+		font-size: 0.85rem;
+		color: var(--bs-secondary-color);
+		flex-shrink: 0;
+	}
+
+	.subject {
+		flex: 1;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.meta {
+		font-size: 0.75rem;
+		color: var(--bs-secondary-color);
+		flex-shrink: 0;
+	}
+
+	.row-count {
+		font-family: var(--sw-mono);
+		color: var(--bs-secondary-color);
+		flex-shrink: 0;
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+.spacer-y {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+// ---------------------------------------------------------------------------
+// Skeleton loading placeholder - used anywhere a list of rows is loading.
+// ---------------------------------------------------------------------------
+
+@keyframes skeleton-shimmer {
+	0% {
+		background-position: -400px 0;
+	}
+	100% {
+		background-position: 400px 0;
+	}
+}
+
+.skeleton-row {
+	height: 3rem;
+	border-radius: var(--bs-border-radius);
+	background: linear-gradient(
+		90deg,
+		var(--bs-tertiary-bg) 25%,
+		var(--bs-secondary-bg) 50%,
+		var(--bs-tertiary-bg) 75%
+	);
+	background-size: 800px 100%;
+	animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+// ---------------------------------------------------------------------------
+// Commit activity sparkline on the Overview page.
+// ---------------------------------------------------------------------------
+
+.sparkline-wrap {
+	padding: 0.9rem 1rem 0.75rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+}
+
+.sparkline-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 0.5rem;
+
+	.sparkline-title {
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.sparkline-meta {
+		font-size: 0.78rem;
+		color: var(--bs-secondary-color);
+	}
+}
+
+.sparkline {
+	width: 100%;
+	height: 70px;
+	display: block;
+}
+
+.sparkline-bar {
+	fill: var(--bs-border-color);
+	transition: fill 120ms ease-in-out;
+
+	&.is-active {
+		fill: $tachi-pink;
+	}
+
+	&:hover {
+		fill: lighten($tachi-pink, 10%);
+	}
+}
+
+.sparkline-scale {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.25rem;
+	font-size: 0.7rem;
+	color: var(--bs-secondary-color);
+}
+
+// ---------------------------------------------------------------------------
+// Ingest toast - pinned bottom-right overlay that reports sqlite build
+// progress from anywhere in the app. Non-blocking; slides up on mount and
+// fades out once the database is ready.
+// ---------------------------------------------------------------------------
+
+@keyframes ingest-toast-in {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes ingest-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.ingest-toast {
+	position: fixed;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	z-index: 1050;
+	width: min(360px, calc(100vw - 2.5rem));
+	padding: 0.75rem 0.9rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	box-shadow:
+		0 10px 30px -12px rgba(0, 0, 0, 0.45),
+		0 2px 8px -4px rgba(0, 0, 0, 0.25);
+	color: var(--bs-body-color);
+	font-size: 0.85rem;
+	animation: ingest-toast-in 160ms ease-out;
+	transition:
+		opacity 260ms ease-in-out,
+		transform 260ms ease-in-out;
+
+	&.is-hiding {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	&.is-error {
+		border-color: rgba(#e65c5c, 0.55);
+	}
+}
+
+.ingest-toast-head {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	strong {
+		font-weight: 600;
+	}
+
+	.ingest-count {
+		margin-left: auto;
+		font-family: var(--sw-mono);
+		font-size: 0.75rem;
+		color: var(--bs-secondary-color);
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+.ingest-dot {
+	width: 0.55rem;
+	height: 0.55rem;
+	border-radius: 50%;
+	flex-shrink: 0;
+
+	&.dot-ok {
+		background: #3ecf8e;
+		box-shadow: 0 0 0 3px rgba(62, 207, 142, 0.15);
+	}
+
+	&.dot-error {
+		background: #e65c5c;
+		box-shadow: 0 0 0 3px rgba(230, 92, 92, 0.15);
+	}
+}
+
+.ingest-spinner {
+	width: 0.85rem;
+	height: 0.85rem;
+	border: 2px solid rgba($tachi-pink, 0.25);
+	border-top-color: $tachi-pink;
+	border-radius: 50%;
+	animation: ingest-spin 0.8s linear infinite;
+	flex-shrink: 0;
+}
+
+.ingest-file {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+	font-size: 0.78rem;
+	color: var(--bs-secondary-color);
+
+	.ingest-file-name {
+		flex: 1;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: var(--bs-body-color);
+	}
+
+	.ingest-file-meta {
+		flex-shrink: 0;
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+.ingest-bar {
+	margin-top: 0.5rem;
+	height: 4px;
+	background: var(--bs-border-color);
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.ingest-bar-fill {
+	height: 100%;
+	background: linear-gradient(90deg, $tachi-pink, lighten($tachi-pink, 12%));
+	border-radius: inherit;
+	transition: width 140ms ease-out;
+}
+
+.ingest-error-msg {
+	margin-top: 0.5rem;
+	font-size: 0.75rem;
+	color: #e65c5c;
+	word-break: break-word;
+}
+
+// ---------------------------------------------------------------------------
+// Diff view - card-per-row with field-level highlighting. Readable over the
+// previous ellipsised table.
+// ---------------------------------------------------------------------------
+
+$diff-add-bg: rgba(62, 207, 142, 0.14);
+$diff-add-fg: #3ecf8e;
+$diff-add-border: rgba(62, 207, 142, 0.35);
+
+$diff-rm-bg: rgba(230, 92, 92, 0.14);
+$diff-rm-fg: #e65c5c;
+$diff-rm-border: rgba(230, 92, 92, 0.35);
+
+$diff-chg-bg: rgba(255, 180, 60, 0.1);
+$diff-chg-fg: #f5b14c;
+$diff-chg-border: rgba(245, 177, 76, 0.4);
+
+.commit-header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"main  refs"
+		"main  actions";
+	gap: 0.75rem 1.25rem;
+	padding: 1rem 1.25rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-left: 3px solid $tachi-pink;
+	border-radius: var(--bs-border-radius);
+
+	@media (max-width: 760px) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"main"
+			"refs"
+			"actions";
+	}
+}
+
+.commit-header-main {
+	grid-area: main;
+	display: flex;
+	gap: 0.9rem;
+	min-width: 0;
+}
+
+.commit-header-avatar {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	background: linear-gradient(135deg, $tachi-pink, darken($tachi-pink, 15%));
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.95rem;
+	flex-shrink: 0;
+}
+
+.commit-header-body {
+	min-width: 0;
+	flex: 1;
+}
+
+.commit-header-subject {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.35;
+	margin-bottom: 0.2rem;
+	overflow-wrap: anywhere;
+}
+
+.commit-header-meta {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	font-size: 0.82rem;
+	color: var(--bs-secondary-color);
+
+	.commit-header-dot {
+		color: var(--bs-secondary-color);
+	}
+}
+
+.commit-header-body-text {
+	margin: 0.5rem 0 0;
+	padding: 0.5rem 0.65rem;
+	background: var(--bs-body-tertiary-bg);
+	border-radius: 0.3rem;
+	font-family: var(--sw-mono);
+	font-size: 0.78rem;
+	line-height: 1.5;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	color: var(--bs-body-color);
+	max-height: 12rem;
+	overflow: auto;
+}
+
+.commit-header-refs {
+	grid-area: refs;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	align-self: start;
+	font-size: 0.85rem;
+
+	.commit-ref {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+
+		.label {
+			color: var(--bs-secondary-color);
+			font-size: 0.72rem;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+	}
+
+	.commit-arrow {
+		color: var(--bs-secondary-color);
+	}
+
+	a {
+		color: var(--bs-body-color);
+		text-decoration: none;
+
+		code {
+			background: var(--bs-body-tertiary-bg);
+			border: 1px solid var(--bs-border-color);
+		}
+
+		&:hover code {
+			border-color: rgba($tachi-pink, 0.5);
+			color: var(--bs-primary);
+		}
+	}
+}
+
+.commit-header-actions {
+	grid-area: actions;
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	align-self: end;
+	justify-self: end;
+
+	@media (max-width: 760px) {
+		justify-self: start;
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Edit drawer + Row editor (schema-driven form).
+// ---------------------------------------------------------------------------
+
+.drawer-backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 1040;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: flex-end;
+	animation: ingest-toast-in 140ms ease-out;
+}
+
+.drawer {
+	width: min(640px, 100%);
+	height: 100%;
+	background: var(--bs-body-bg);
+	border-left: 1px solid var(--bs-border-color);
+	box-shadow: -10px 0 30px -10px rgba(0, 0, 0, 0.5);
+	overflow-y: auto;
+	padding: 1.25rem 1.5rem;
+	position: relative;
+}
+
+.drawer-close {
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	appearance: none;
+	background: transparent;
+	border: none;
+	color: var(--bs-secondary-color);
+	font-size: 1.6rem;
+	line-height: 1;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--bs-body-color);
+	}
+}
+
+.row-editor {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.row-editor-title {
+	margin: 0;
+	padding-right: 2rem;
+	font-weight: 600;
+}
+
+.row-editor-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.row-editor-error {
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+.row-editor-actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.5rem;
+	border-top: 1px solid var(--bs-border-color);
+	padding-top: 1rem;
+	position: sticky;
+	bottom: 0;
+	background: var(--bs-body-bg);
+}
+
+.field-object {
+	&:not(.is-compact) {
+		padding: 0.65rem 0.75rem;
+		border: 1px solid var(--bs-border-color);
+		border-radius: var(--bs-border-radius);
+		background: var(--sw-panel-bg);
+	}
+
+	& > .field-label {
+		font-size: 0.82rem;
+		font-weight: 600;
+		margin-bottom: 0.4rem;
+		color: var(--bs-secondary-color);
+	}
+}
+
+.field-object-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.field-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.25rem;
+}
+
+.field-row-label {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	font-size: 0.85rem;
+	font-weight: 500;
+
+	.field-opt {
+		color: var(--bs-secondary-color);
+		font-weight: 400;
+	}
+
+	.field-row-path {
+		color: var(--bs-secondary-color);
+		font-size: 0.7rem;
+		font-weight: 400;
+	}
+}
+
+.field-row-control {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+
+	& > .form-control,
+	& > .form-select,
+	& > .field-array,
+	& > .field-union,
+	& > .field-json,
+	& > .field-object {
+		flex: 1 1 100%;
+	}
+}
+
+.field-row-unset {
+	padding: 0 0.4rem;
+	font-size: 0.75rem;
+	text-decoration: none;
+}
+
+.field-row-null {
+	color: var(--bs-secondary-color);
+	font-size: 0.8rem;
+}
+
+.field-literal {
+	padding: 0.2rem 0.45rem;
+	background: var(--bs-body-tertiary-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius-sm);
+	font-family: var(--sw-mono);
+	font-size: 0.82rem;
+}
+
+.field-array {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	.field-array-items {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.field-array-item {
+		position: relative;
+		padding: 0.5rem 0.6rem 0.6rem;
+		border: 1px dashed var(--bs-border-color);
+		border-radius: var(--bs-border-radius-sm);
+	}
+
+	.field-array-item-head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0.3rem;
+		font-size: 0.75rem;
+	}
+}
+
+.field-union {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.field-json {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	textarea {
+		font-size: 0.8rem;
+		line-height: 1.5;
+	}
+
+	.field-json-err {
+		font-size: 0.72rem;
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Seed document list - Collection page renderer.
+//
+// Each seed document is a collapsible row: a one-line summary header with
+// optional edit/delete buttons, and a pretty-printed JSON block when open.
+// ---------------------------------------------------------------------------
+
+.seed-doc-list {
+	display: flex;
+	flex-direction: column;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	overflow: hidden;
+}
+
+.seed-doc-item {
+	border-bottom: 1px solid var(--bs-border-color);
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&:hover > .seed-doc-head {
+		background: var(--sw-glow);
+	}
+}
+
+.seed-doc-head {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	padding: 0.45rem 0.75rem;
+	min-height: 2.4rem;
+	cursor: pointer;
+	transition: background-color 120ms ease-in-out;
+
+	&:focus-visible {
+		outline: 2px solid var(--bs-primary);
+		outline-offset: -2px;
+	}
+}
+
+.seed-doc-summary {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.82rem;
+	color: var(--bs-body-color);
+}
+
+.seed-doc-actions {
+	flex-shrink: 0;
+}
+
+.seed-doc-json {
+	margin: 0;
+	padding: 0.65rem 1rem;
+	font-size: 0.78rem;
+	line-height: 1.5;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	background: var(--bs-body-tertiary-bg);
+	border-top: 1px dashed var(--bs-border-color);
+	max-height: 36rem;
+	overflow-y: auto;
+}
+
+.result-col-actions {
+	width: 1%;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.diff-controls {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	align-items: flex-end;
+
+	.control {
+		min-width: 220px;
+	}
+	.control-grow {
+		flex: 1 1 320px;
+	}
+}
+
+.diff-badges {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+
+	.diff-badges-meta {
+		color: var(--bs-secondary-color);
+		font-size: 0.85rem;
+		margin-left: 0.25rem;
+	}
+}
+
+.diff-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.diff-card {
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-left-width: 3px;
+	border-radius: var(--bs-border-radius);
+	padding: 0.85rem 1rem;
+
+	&.diff-card-added {
+		border-left-color: $diff-add-border;
+	}
+	&.diff-card-removed {
+		border-left-color: $diff-rm-border;
+	}
+	&.diff-card-changed {
+		border-left-color: $diff-chg-border;
+	}
+}
+
+.diff-card-head {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 0.5rem;
+	flex-wrap: wrap;
+
+	.diff-card-spacer {
+		flex: 1;
+	}
+
+	.diff-field-count {
+		color: var(--bs-secondary-color);
+		font-size: 0.8rem;
+	}
+}
+
+.diff-kind {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 0.35rem;
+	font-family: var(--sw-mono);
+	font-weight: 600;
+	line-height: 1;
+	flex-shrink: 0;
+
+	&.diff-kind-added {
+		background: $diff-add-bg;
+		color: $diff-add-fg;
+	}
+	&.diff-kind-removed {
+		background: $diff-rm-bg;
+		color: $diff-rm-fg;
+	}
+	&.diff-kind-changed {
+		background: $diff-chg-bg;
+		color: $diff-chg-fg;
+	}
+}
+
+.diff-id {
+	font-size: 0.85rem;
+	padding: 0.2rem 0.45rem;
+	background: var(--bs-body-tertiary-bg);
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-break: break-all;
+}
+
+.diff-pretty {
+	font-size: 0.88rem;
+	color: var(--bs-body-color);
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.diff-fields {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+
+	thead th {
+		text-align: left;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: var(--bs-secondary-color);
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		padding: 0.25rem 0.5rem;
+		border-bottom: 1px solid var(--bs-border-color);
+	}
+
+	// Field name column gets a fixed ratio; before/after split the rest.
+	thead th:first-child,
+	tbody td:first-child {
+		width: 22%;
+	}
+
+	td {
+		padding: 0.4rem 0.5rem;
+		vertical-align: top;
+		border-bottom: 1px solid var(--bs-border-color);
+	}
+
+	tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.diff-fields-path {
+		font-size: 0.82rem;
+		color: var(--bs-body-color);
+		overflow-wrap: anywhere;
+		word-break: break-word;
+	}
+
+	.diff-fields-before pre,
+	.diff-fields-after pre {
+		margin: 0;
+		padding: 0.35rem 0.5rem;
+		border-radius: 0.3rem;
+		font-size: 0.78rem;
+		line-height: 1.45;
+		white-space: pre-wrap;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		max-height: 14rem;
+		overflow: auto;
+	}
+
+	.diff-fields-before pre {
+		background: $diff-rm-bg;
+		color: inherit;
+		border: 1px solid $diff-rm-border;
+	}
+	.diff-fields-after pre {
+		background: $diff-add-bg;
+		color: inherit;
+		border: 1px solid $diff-add-border;
+	}
+
+	// Pure-addition / pure-removal rows: only color the populated side.
+	.diff-fields-row-added .diff-fields-before,
+	.diff-fields-row-removed .diff-fields-after {
+		color: var(--bs-secondary-color);
+	}
+}
+
+.diff-json {
+	margin: 0;
+	padding: 0.6rem 0.75rem;
+	border-radius: 0.3rem;
+	font-family: var(--sw-mono);
+	font-size: 0.78rem;
+	line-height: 1.45;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	max-height: 24rem;
+	overflow: auto;
+	border: 1px solid var(--bs-border-color);
+}
+
+.diff-json-added {
+	background: $diff-add-bg;
+	border-color: $diff-add-border;
+}
+.diff-json-removed {
+	background: $diff-rm-bg;
+	border-color: $diff-rm-border;
+}
+
+.diff-json-pair {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+	margin-top: 0.75rem;
+
+	@media (max-width: 900px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.diff-json-label {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--bs-secondary-color);
+	margin-bottom: 0.2rem;
+}
+
+// ---------------------------------------------------------------------------
+// Floating drafts bar - pinned bottom-left, shown when there are staged edits
+// and the user is not already on /drafts.
+// ---------------------------------------------------------------------------
+
+.drafts-bar {
+	position: fixed;
+	bottom: 1.25rem;
+	left: 1.25rem;
+	z-index: 1050;
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.55rem 0.9rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid rgba($tachi-pink, 0.45);
+	border-radius: var(--bs-border-radius);
+	box-shadow:
+		0 8px 24px -8px rgba(0, 0, 0, 0.4),
+		0 0 0 1px rgba($tachi-pink, 0.08);
+	font-size: 0.85rem;
+	animation: ingest-toast-in 160ms ease-out;
+
+	.drafts-bar-icon {
+		color: $tachi-pink;
+		font-size: 1rem;
+		line-height: 1;
+	}
+
+	.drafts-bar-text {
+		color: var(--bs-body-color);
+
+		strong {
+			font-variant-numeric: tabular-nums;
+		}
+	}
+
+	.drafts-bar-link {
+		color: $tachi-pink;
+		text-decoration: none;
+		font-weight: 500;
+		white-space: nowrap;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Drafts page.
+// ---------------------------------------------------------------------------
+
+.drafts-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+
+	.page-title {
+		margin-bottom: 0.2rem;
+	}
+
+	.page-subtitle {
+		margin-bottom: 0;
+	}
+}
+
+.drafts-actions {
+	display: flex;
+	gap: 0.5rem;
+	flex-shrink: 0;
+	padding-top: 0.2rem;
+}
+
+// Large count badge inside the page title.
+.drafts-count-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5rem;
+	height: 1.5rem;
+	padding: 0 0.4rem;
+	margin-left: 0.5rem;
+	background: $tachi-pink;
+	color: #fff;
+	font-size: 0.8rem;
+	font-weight: 700;
+	border-radius: 999px;
+	line-height: 1;
+	font-family: var(--bs-font-sans-serif);
+	vertical-align: middle;
+	font-variant-numeric: tabular-nums;
+}
+
+.drafts-empty {
+	padding: 3rem 1rem;
+	text-align: center;
+	color: var(--bs-secondary-color);
+
+	.drafts-empty-icon {
+		font-size: 2.5rem;
+		margin-bottom: 0.65rem;
+		opacity: 0.35;
+		line-height: 1;
+	}
+
+	.drafts-empty-title {
+		font-weight: 600;
+		font-size: 1rem;
+		color: var(--bs-body-color);
+	}
+
+	p {
+		margin-top: 0.4rem;
+		font-size: 0.9rem;
+		margin-bottom: 0;
+	}
+}
+
+.drafts-collections {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.draft-collection {
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	overflow: hidden;
+}
+
+.draft-collection-head {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 0.85rem;
+	background: var(--bs-body-tertiary-bg);
+	border-bottom: 1px solid var(--bs-border-color);
+
+	.draft-collection-name {
+		flex: 1;
+		font-size: 0.85rem;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.draft-collection-count {
+		font-size: 0.75rem;
+		color: var(--bs-secondary-color);
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+.draft-item {
+	border-bottom: 1px solid var(--bs-border-color);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+// Slim bar: op, time, discard. Diff card is always shown below.
+.draft-item-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.35rem 0.85rem;
+	min-height: 2.25rem;
+	background: var(--bs-body-tertiary-bg);
+}
+
+.draft-item-toolbar-spacer {
+	flex: 1;
+	min-width: 0;
+}
+
+.draft-op-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.1rem 0.42rem;
+	border-radius: 0.25rem;
+	font-family: var(--sw-mono);
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	flex-shrink: 0;
+	text-transform: uppercase;
+
+	&.badge-op-add {
+		background: $diff-add-bg;
+		color: $diff-add-fg;
+	}
+
+	&.badge-op-replace {
+		background: $diff-chg-bg;
+		color: $diff-chg-fg;
+	}
+
+	&.badge-op-remove {
+		background: $diff-rm-bg;
+		color: $diff-rm-fg;
+	}
+}
+
+.draft-item-time {
+	font-size: 0.7rem;
+	color: var(--bs-secondary-color);
+	flex-shrink: 0;
+	font-variant-numeric: tabular-nums;
+}
+
+.draft-item-drop {
+	background: transparent;
+	border: none;
+	color: var(--bs-secondary-color);
+	font-size: 1.15rem;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0 0.2rem;
+	flex-shrink: 0;
+	transition: color 100ms ease-in-out;
+
+	&:hover {
+		color: var(--bs-danger-text-emphasis);
+	}
+}
+
+// Expanded diff area below the header row.
+.draft-item-diff {
+	border-top: 1px dashed var(--bs-border-color);
+	padding: 0.75rem 1rem;
+	background: var(--bs-body-tertiary-bg);
+}
+
+.draft-diff-table {
+	// Reuse diff-fields layout; just ensure it fills the panel.
+	width: 100%;
+}
+
+.draft-diff-single {
+	// Single-sided diff (add or remove).
+}
+
+.draft-diff-loading,
+.draft-diff-error {
+	font-size: 0.82rem;
+	color: var(--bs-secondary-color);
+	padding: 0.25rem 0;
+}
+
+.draft-diff-error {
+	color: var(--bs-danger-text-emphasis);
+}
+
+// ---------------------------------------------------------------------------
+// Quest Proposal PR page (/pr/:prNumber)
+// ---------------------------------------------------------------------------
+
+.pr-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+	padding: 1rem 1.25rem;
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-left: 3px solid $tachi-pink;
+	border-radius: var(--bs-border-radius);
+
+	.pr-header-main {
+		flex: 1;
+		min-width: 0;
+
+		.page-title {
+			margin-bottom: 0.35rem;
+		}
+	}
+
+	.pr-header-actions {
+		display: flex;
+		gap: 0.5rem;
+		flex-shrink: 0;
+		align-items: flex-start;
+		padding-top: 0.15rem;
+	}
+}
+
+.pr-meta {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	font-size: 0.85rem;
+	color: var(--bs-secondary-color);
+
+	.pr-author {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+	}
+
+	.pr-avatar {
+		width: 1.25rem;
+		height: 1.25rem;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.pr-branch code {
+		font-size: 0.8rem;
+	}
+}
+
+.pr-status-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.15rem 0.55rem;
+	border-radius: 999px;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	flex-shrink: 0;
+
+	&.badge-open {
+		background: rgba(62, 207, 142, 0.15);
+		color: #3ecf8e;
+		border: 1px solid rgba(62, 207, 142, 0.35);
+	}
+
+	&.badge-closed {
+		background: rgba(230, 92, 92, 0.15);
+		color: #e65c5c;
+		border: 1px solid rgba(230, 92, 92, 0.35);
+	}
+
+	&.badge-merged {
+		background: rgba(160, 100, 230, 0.15);
+		color: #a064e6;
+		border: 1px solid rgba(160, 100, 230, 0.35);
+	}
+}
+
+.quest-proposal-tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.15rem 0.55rem;
+	border-radius: var(--bs-border-radius-sm);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	background: var(--sw-glow);
+	color: var(--bs-primary);
+	border: 1px solid rgba($tachi-pink, 0.3);
+	flex-shrink: 0;
+}
+
+.btn-ghost {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.35rem 0.75rem;
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	color: var(--bs-body-color);
+	text-decoration: none;
+	font-size: 0.82rem;
+	background: transparent;
+	transition:
+		border-color 120ms ease-in-out,
+		background-color 120ms ease-in-out;
+
+	&:hover {
+		border-color: rgba($tachi-pink, 0.5);
+		background: var(--sw-glow);
+		color: var(--bs-body-color);
+	}
+}
+
+.section-title {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0 0 0.85rem;
+
+	.section-count {
+		font-size: 0.72rem;
+		font-weight: 600;
+		padding: 0.1rem 0.45rem;
+		border-radius: 999px;
+		letter-spacing: 0.03em;
+
+		&.section-count-added {
+			background: rgba(62, 207, 142, 0.15);
+			color: #3ecf8e;
+			border: 1px solid rgba(62, 207, 142, 0.3);
+		}
+
+		&.section-count-changed {
+			background: rgba(245, 177, 76, 0.12);
+			color: #f5b14c;
+			border: 1px solid rgba(245, 177, 76, 0.3);
+		}
+	}
+}
+
+.quest-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.quest-card {
+	background: var(--sw-panel-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	padding: 0.85rem 1rem;
+
+	.quest-card-header {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.4rem;
+		flex-wrap: wrap;
+	}
+
+	.quest-badge {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.1rem 0.42rem;
+		border-radius: 0.25rem;
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		flex-shrink: 0;
+
+		&.quest-badge-new {
+			background: rgba(62, 207, 142, 0.15);
+			color: #3ecf8e;
+		}
+
+		&.quest-badge-updated {
+			background: rgba(245, 177, 76, 0.12);
+			color: #f5b14c;
+		}
+	}
+
+	.quest-game {
+		font-family: var(--sw-mono);
+		font-size: 0.75rem;
+		padding: 0.1rem 0.45rem;
+		background: var(--bs-body-tertiary-bg);
+		border: 1px solid var(--bs-border-color);
+		border-radius: var(--bs-border-radius-sm);
+		color: var(--bs-secondary-color);
+		flex-shrink: 0;
+	}
+
+	.quest-name {
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+
+	.quest-desc {
+		font-size: 0.85rem;
+		color: var(--bs-secondary-color);
+		margin: 0 0 0.65rem;
+		line-height: 1.5;
+	}
+
+	.quest-sections {
+		display: flex;
+		flex-direction: column;
+		gap: 0.65rem;
+	}
+
+	.quest-section {
+		.quest-section-title {
+			font-size: 0.8rem;
+			font-weight: 600;
+			color: var(--bs-secondary-color);
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+			margin: 0 0 0.35rem;
+		}
+	}
+
+	.quest-goals {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+	}
+
+	.questline-quests {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		align-items: center;
+		margin-top: 0.25rem;
+	}
+
+	.questline-step {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		font-size: 0.82rem;
+
+		.questline-step-num {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 1.3rem;
+			height: 1.3rem;
+			border-radius: 50%;
+			background: var(--bs-body-tertiary-bg);
+			border: 1px solid var(--bs-border-color);
+			font-size: 0.68rem;
+			font-weight: 600;
+			color: var(--bs-secondary-color);
+			flex-shrink: 0;
+		}
+	}
+}
+
+.goal-chip {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.15rem 0.55rem;
+	background: var(--bs-body-tertiary-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius-sm);
+	font-size: 0.78rem;
+	color: var(--bs-body-color);
+	cursor: default;
+	max-width: 100%;
+	overflow-wrap: anywhere;
+
+	&.goal-chip-missing {
+		color: var(--bs-secondary-color);
+		font-style: italic;
+	}
+}
+
+.goal-note {
+	font-size: 0.78rem;
+	color: var(--bs-secondary-color);
+}
+
+.pr-not-quest-proposal {
+	margin-top: 1rem;
+	padding: 0.85rem 1rem;
+	background: var(--bs-body-tertiary-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	font-size: 0.85rem;
+	color: var(--bs-secondary-color);
+
+	p {
+		margin: 0 0 0.35rem;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.pr-body-details {
+	margin-top: 1.25rem;
+
+	summary {
+		cursor: pointer;
+		font-size: 0.85rem;
+		color: var(--bs-secondary-color);
+		padding: 0.35rem 0;
+		user-select: none;
+
+		&:hover {
+			color: var(--bs-body-color);
+		}
+	}
+}
+
+.pr-body-pre {
+	margin: 0.5rem 0 0;
+	padding: 0.75rem 1rem;
+	background: var(--bs-body-tertiary-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	font-size: 0.82rem;
+	line-height: 1.55;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	max-height: 24rem;
+	overflow-y: auto;
+	font-family: var(--sw-mono);
+}

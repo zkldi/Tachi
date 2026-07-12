@@ -4,118 +4,262 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "server/**"
-      - "common/**"
+      - "typescript/server/**"
+      - "typescript/common/**"
+      - "typescript/db/**"
+      - "typescript/db-migration-engine/**"
+      - "docker/**"
+      - "db/migrations/**"
+      - ".github/workflows/server.yml"
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "server/**"
-      - "common/**"
+      - "typescript/server/**"
+      - "typescript/common/**"
+      - "typescript/db/**"
+      - "typescript/db-migration-engine/**"
+      - "docker/**"
+      - "db/migrations/**"
+      - ".github/workflows/server.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
-  group: "seeds-lock-${{ github.sha }}"
+  group: "server-${{ github.ref }}-${{ github.workflow }}"
   cancel-in-progress: false
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zkldi/tachi-ci:main
+      options: --user root
     env:
       NODE_ENV: "test"
+    services:
+      # Test Postgres mirrors `tachi-postgres-test` in docker-compose-dev.yml:
+      # a tmpfs-backed PG sized for ~8 long-lived worker DBs with autovacuum
+      # on. `PGDATA` must be a SUBDIRECTORY of the tmpfs mount, otherwise
+      # initdb refuses to clobber the mount root. The runtime-tunable knobs
+      # (synchronous_commit, WAL ceiling, autovacuum naptime, etc.) are
+      # applied via `ALTER SYSTEM` in a setup step below; restart-required
+      # knobs (fsync, full_page_writes, shared_buffers, ...) we leave at
+      # the postgres defaults because `services:` does not let us pass
+      # postgres CLI args. With tmpfs, fsync is essentially free anyway.
+      tachi-postgres-test:
+        image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
+        env:
+          POSTGRES_USER: tachi
+          POSTGRES_PASSWORD: tachi
+          POSTGRES_DB: postgres
+          PGDATA: /var/lib/postgresql/data/pgdata
+        options: >-
+          --health-cmd "pg_isready -U tachi"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+          --tmpfs /var/lib/postgresql/data:rw,size=3g
+      tachi-redis:
+        image: redis:7.4-alpine
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+      tachi-s3:
+        image: quay.io/minio/minio:RELEASE.2024-10-29T16-01-48Z
+        env:
+          MINIO_ROOT_USER: minio
+          MINIO_ROOT_PASSWORD: password
+        entrypoint: /usr/bin/minio
+        command: server /data --console-address=:9001
+        options: >-
+          --health-cmd "curl -f http://localhost:9000/minio/health/live"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v4
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          version: 8.15.6
+          persist-credentials: false
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
+      - name: Link workspace to /tachi
+        # tachidb, just recipes, and .env.test all assume the repo lives at /tachi.
+        # GHA mounts the workspace elsewhere, so we replace the empty /tachi dir
+        # (created by the image's WORKDIR) with a symlink to the real checkout.
+        run: rm -rf /tachi && ln -sf "$GITHUB_WORKSPACE" /tachi
 
       - name: Install dependencies
-        run: pnpm --filter tachi-server... --filter . install
+        run: bun install --frozen-lockfile
 
-      - name: Lint code
-        run: pnpm --filter tachi-server lint
-
-      - name: Typecheck code
-        run: pnpm --filter tachi-server typecheck
-
-        # configure external dbs
-      - uses: supercharge/mongodb-github-action@1.4.1
-      - uses: supercharge/redis-github-action@1.1.0
+      - name: Tune test Postgres for short-lived worker DBs
+        # The restart-only knobs (fsync, shared_buffers, ...) cannot be set
+        # because the GHA service syntax does not let us pass postgres CLI
+        # args. Everything below is reloadable; it lines up with the
+        # `-c ...` flags on `tachi-postgres-test` in docker-compose-dev.yml
+        # so CI and local behave the same once the suite starts running.
+        env:
+          PGPASSWORD: tachi
+        run: |
+          psql -h tachi-postgres-test -U tachi -d postgres <<'SQL'
+            ALTER SYSTEM SET synchronous_commit = off;
+            ALTER SYSTEM SET max_wal_size = '128MB';
+            ALTER SYSTEM SET min_wal_size = '32MB';
+            ALTER SYSTEM SET checkpoint_timeout = '30s';
+            ALTER SYSTEM SET autovacuum_naptime = '5s';
+            ALTER SYSTEM SET autovacuum_vacuum_scale_factor = 0.05;
+            ALTER SYSTEM SET autovacuum_analyze_scale_factor = 0.1;
+            SELECT pg_reload_conf();
+          SQL
 
       - name: Run tests
-        run: pnpm --filter tachi-server test
         env:
           NODE_ENV: "test"
           PORT: 8080
-          MONGO_URL: "127.0.0.1"
-          REDIS_URL: "127.0.0.1"
+          POSTGRES_TEST_HOST: tachi-postgres-test
+          POSTGRES_TEST_URL: postgresql://tachi:tachi@tachi-postgres-test
+          # ubuntu-latest is 4 vCPU; cap workers to leave headroom for the
+          # PG service container and avoid oversubscribing tmpfs.
+          VITEST_MAX_WORKERS: "4"
+        run: bun run --filter tachi-server test
 
   docker-push:
     runs-on: ubuntu-latest
     needs: [test]
-    defaults:
-      run:
-        working-directory: ./server
     if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      image_tag: ${{ steps.revision.outputs.image_tag }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Docker Hub login
-        uses: docker/login-action@v2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          persist-credentials: false
 
-      - name: Commit Hash
-        run: 'echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV'
+      - name: Revision tag (YYYYMMDD-shortsha + full SHA aliases)
+        id: revision
+        run: |
+          set -eu
+          short=$(git rev-parse --short=7 HEAD)
+          d=$(TZ=UTC0 git log -1 --format=%cd --date=format:%Y%m%d HEAD)
+          echo "image_tag=${d}-${short}" >> "$GITHUB_OUTPUT"
 
-      - name: Docker Tag
-        if: github.ref == 'refs/heads/main'
-        run: 'echo "DOCKER_TAG=stable" >> $GITHUB_ENV'
+      - name: Log in to GHCR
+        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4.0.0
 
-      - name: Build and push
-        id: docker_build
-        uses: docker/build-push-action@v3
+      - name: Read server package version
+        id: server_version
+        run: |
+          echo "version=$(jq -r .version typescript/server/package.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Set build time
+        id: build_time
+        run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+
+      - name: Compute floating image tags
+        id: floating_tags
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            {
+              echo "value<<TAGS_EOF"
+              echo "ghcr.io/zkldi/tachi:main"
+              echo "ghcr.io/zkldi/tachi:latest"
+              echo "TAGS_EOF"
+            } >> "$GITHUB_OUTPUT"
+          else
+            {
+              echo "value<<TAGS_EOF"
+              echo "ghcr.io/zkldi/tachi:main-dev"
+              echo "TAGS_EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build and push unified server image
+        uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f # v7.1.0
         with:
-          context: ./
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/tachi-server:${{ env.DOCKER_TAG }}
-          file: ./Dockerfile.server
+          context: .
+          file: docker/Dockerfile.server
+          target: prod
+          push: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev' }}
+          provenance: true
+          sbom: true
+          tags: |
+            ghcr.io/zkldi/tachi:${{ steps.revision.outputs.image_tag }}
+            ghcr.io/zkldi/tachi:${{ github.sha }}
+            ${{ steps.floating_tags.outputs.value }}
           build-args: |
-            COMMIT_HASH=${{ env.SHORT_SHA }}
-          cache-from: type=gha,scope=$GITHUB_REF_NAME-server
-          cache-to: type=gha,mode=max,scope=$GITHUB_REF_NAME-server
+            VERSION=${{ steps.server_version.outputs.version }}
+            VERSION_DETAIL=${{ steps.revision.outputs.image_tag }}
+            GIT_REVISION=${{ github.sha }}
+            BUILD_TIME=${{ steps.build_time.outputs.value }}
+          cache-from: type=gha,scope=server-${{ github.ref_name }}
+          cache-to: type=gha,mode=max,scope=server-${{ github.ref_name }}
 
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
-
-  deploy:
+  dispatch-deploy-prod:
+    # Deploys boku and kamai from main.
+    # See server.yml for rationale — deploy logs live in the private server-ceres repo.
     runs-on: ubuntu-latest
     needs: [test, docker-push]
-    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
+    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    strategy:
+      fail-fast: false
+      matrix:
+        destination: [boku, kamai]
+    permissions:
+      contents: read
     steps:
-      - name: Enable SSH Key
+      - name: Dispatch deploy
+        env:
+          # Fine-grained PAT, repo-scoped to zkldi/server-ceres, Contents: write.
+          GH_TOKEN: ${{ secrets.DEPLOY_DISPATCH_TOKEN }}
+          DEST: ${{ matrix.destination }}
+          SHA: ${{ github.sha }}
+          IMAGE_TAG: ${{ needs.docker-push.outputs.image_tag }}
         run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          sudo chmod 600 ~/.ssh/id_rsa
-          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-        env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
+          gh api repos/zkldi/server-ceres/dispatches \
+            -f event_type=deploy \
+            -F "client_payload[app]=server" \
+            -F "client_payload[dest]=${DEST}" \
+            -F "client_payload[sha]=${SHA}" \
+            -F "client_payload[image_tag]=${IMAGE_TAG}"
+          echo "::notice::Dispatched server@${DEST} ${IMAGE_TAG} (${SHA}) — logs: https://github.com/zkldi/server-ceres/actions/workflows/tachi-deploy.yml"
 
-      - name: Deploy updates
-        run: ssh ci@"$TACHI_HOST" /home/ci/tachi-devops/scripts/deploy_server.sh
+  dispatch-deploy-dev:
+    # Deploys dev from main-dev.
+    # See server.yml for rationale — deploy logs live in the private server-ceres repo.
+    runs-on: ubuntu-latest
+    needs: [test, docker-push]
+    if: ${{ github.ref == 'refs/heads/main-dev' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    permissions:
+      contents: read
+    steps:
+      - name: Dispatch deploy
         env:
-          TACHI_HOST: ${{secrets.TACHI_HOST}}
+          # Fine-grained PAT, repo-scoped to zkldi/server-ceres, Contents: write.
+          GH_TOKEN: ${{ secrets.DEPLOY_DISPATCH_TOKEN }}
+          SHA: ${{ github.sha }}
+          IMAGE_TAG: ${{ needs.docker-push.outputs.image_tag }}
+        run: |
+          gh api repos/zkldi/server-ceres/dispatches \
+            -f event_type=deploy \
+            -F "client_payload[app]=server" \
+            -F "client_payload[dest]=dev" \
+            -F "client_payload[sha]=${SHA}" \
+            -F "client_payload[image_tag]=${IMAGE_TAG}"
+          echo "::notice::Dispatched server@dev ${IMAGE_TAG} (${SHA}) — logs: https://github.com/zkldi/server-ceres/actions/workflows/tachi-deploy.yml"

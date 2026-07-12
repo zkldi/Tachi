@@ -1,0 +1,10 @@
+.track {
+	&:focus-visible {
+		outline: 3px solid var(--bs-focus-ring-color, rgb(230 28 110 / 0.55));
+		outline-offset: 3px;
+	}
+
+	&:active {
+		cursor: grabbing !important;
+	}
+}

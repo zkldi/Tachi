@@ -1,0 +1,12 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"allowJs": true,
+		"strict": false
+	},
+	"exclude": ["../seeds-scripts/node_modules"]
+}

@@ -1,39 +1,16 @@
 {
-	"compilerOptions": {
-		"target": "ES2020",
-		"module": "CommonJS",
-		"lib": [
-			"ES2019",
-		],
-		"declaration": true,
-		"strict": true,
-		"allowJs": false,
-		"esModuleInterop": true,
-		"noUncheckedIndexedAccess": true,
-		"sourceMap": true,
-		"rootDir": ".",
-		"composite": true,
-		"tsBuildInfoFile": ".tsbuildinfo"
-	},
 	"files": [],
 	"references": [
-		{
-			"path": "./common"
-		},
-		{
-			"path": "./server"
-		},
-		{
-			"path": "./bot"
-		},
-		{
-			"path": "./client"
-		},
-		{
-			"path": "./sieglinde"
-		},
-		{
-			"path": "./seeds/scripts"
-		}
+		{ "path": "./typescript/bliss" },
+		{ "path": "./typescript/common" },
+		{ "path": "./typescript/db" },
+		{ "path": "./typescript/db-migration-engine" },
+		{ "path": "./typescript/db-cli" },
+		{ "path": "./typescript/server" },
+		{ "path": "./typescript/bot" },
+		{ "path": "./typescript/client" },
+		{ "path": "./typescript/sieglinde" },
+		{ "path": "./typescript/seeds-scripts" },
+		{ "path": "./typescript/docs-autogen-scripts" }
 	]
 }

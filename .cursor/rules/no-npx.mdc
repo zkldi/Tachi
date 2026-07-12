@@ -1,0 +1,8 @@
+---
+description: Never use npx to run commands
+alwaysApply: true
+---
+
+# No npx
+
+Never use `npx` to run anything. Use the local binary directly (e.g. `node_modules/.bin/tsgo`) or use `bun` instead.

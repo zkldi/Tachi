@@ -1,0 +1,1988 @@
+{
+	"annotations": {
+		"list": [
+			{
+				"builtIn": 1,
+				"datasource": { "type": "prometheus", "uid": "" },
+				"enable": true,
+				"hide": true,
+				"iconColor": "rgba(0, 211, 255, 1)",
+				"name": "Annotations & Alerts",
+				"type": "dashboard"
+			}
+		]
+	},
+	"description": "Tachi API - endpoint latencies, score import durations, error rates & system health",
+	"editable": true,
+	"fiscalYearStartMonth": 0,
+	"graphTooltip": 1,
+	"id": null,
+	"links": [],
+	"panels": [
+		{
+			"collapsed": false,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 },
+			"id": 100,
+			"title": "Overview",
+			"type": "row"
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [{ "color": "#73BF69", "value": null }]
+					},
+					"unit": "reqps"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 0, "y": 1 },
+			"id": 1,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Request Rate",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "sum(rate(http_requests_total{job=\"tachi-api\"}[$__rate_interval]))",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#73BF69", "value": null },
+							{ "color": "#FF9830", "value": 0.01 },
+							{ "color": "#F2495C", "value": 0.05 }
+						]
+					},
+					"unit": "percentunit",
+					"min": 0,
+					"max": 1
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 4, "y": 1 },
+			"id": 2,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Error Rate (5xx)",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "sum(rate(http_requests_total{job=\"tachi-api\",status_code=~\"5..\"}[$__rate_interval])) / sum(rate(http_requests_total{job=\"tachi-api\"}[$__rate_interval]))",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [{ "color": "#73BF69", "value": null }]
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 8, "y": 1 },
+			"id": 3,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "none",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "P50 Latency",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.50, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval])))",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#73BF69", "value": null },
+							{ "color": "#FF9830", "value": 1 },
+							{ "color": "#F2495C", "value": 5 }
+						]
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 12, "y": 1 },
+			"id": 4,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "none",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "P99 Latency",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.99, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval])))",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [{ "color": "#73BF69", "value": null }]
+					},
+					"unit": "short"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 16, "y": 1 },
+			"id": 5,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Imports (last hour)",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "sum(increase(score_import_duration_seconds_count{job=\"tachi-api\"}[1h]))",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [
+						{ "options": { "0": { "color": "red", "text": "DOWN" } }, "type": "value" },
+						{ "options": { "1": { "color": "green", "text": "UP" } }, "type": "value" }
+					],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#F2495C", "value": null },
+							{ "color": "#73BF69", "value": 1 }
+						]
+					}
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 4, "x": 20, "y": 1 },
+			"id": 6,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "none",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "API Status",
+			"type": "stat",
+			"targets": [
+				{
+					"expr": "up{job=\"tachi-api\"}",
+					"legendFormat": "",
+					"refId": "A"
+				}
+			]
+		},
+
+		{
+			"collapsed": false,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 5 },
+			"id": 200,
+			"title": "HTTP Endpoints",
+			"type": "row"
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 15,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 6 },
+			"id": 10,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Max",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Endpoint Latency (P95)",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.95, sum by (le, path) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval])))",
+					"legendFormat": "{{ path }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "reqps"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 6 },
+			"id": 11,
+			"options": {
+				"legend": {
+					"calcs": ["mean"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Mean",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Request Rate by Endpoint",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "sum by (path) (rate(http_requests_total{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval]))",
+					"legendFormat": "{{ path }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 10,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 15 },
+			"id": 12,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Max",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Endpoint Latency (P50 vs P99)",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.50, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval])))",
+					"legendFormat": "P50 (all endpoints)",
+					"refId": "A"
+				},
+				{
+					"expr": "histogram_quantile(0.95, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval])))",
+					"legendFormat": "P95 (all endpoints)",
+					"refId": "B"
+				},
+				{
+					"expr": "histogram_quantile(0.99, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval])))",
+					"legendFormat": "P99 (all endpoints)",
+					"refId": "C"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "reqps"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 15 },
+			"id": 13,
+			"options": {
+				"legend": {
+					"calcs": ["sum"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Total",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Errors by Status Code",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "sum by (status_code) (rate(http_requests_total{job=\"tachi-api\",status_code=~\"[45]..\"}[$__rate_interval]))",
+					"legendFormat": "{{ status_code }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"custom": {
+						"align": "auto",
+						"cellOptions": { "type": "auto" },
+						"inspect": false
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "green", "value": null },
+							{ "color": "#FF9830", "value": 0.5 },
+							{ "color": "red", "value": 2 }
+						]
+					},
+					"unit": "s"
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byName", "options": "Endpoint" },
+						"properties": [
+							{ "id": "custom.width", "value": 350 },
+							{ "id": "unit", "value": "string" }
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P95 Latency" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P99 Latency" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					}
+				]
+			},
+			"gridPos": { "h": 9, "w": 24, "x": 0, "y": 24 },
+			"id": 14,
+			"options": {
+				"cellHeight": "sm",
+				"footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+				"showHeader": true,
+				"sortBy": [{ "desc": true, "displayName": "P95 Latency" }]
+			},
+			"title": "Slowest Endpoints",
+			"type": "table",
+			"transformations": [
+				{
+					"id": "merge",
+					"options": {}
+				}
+			],
+			"targets": [
+				{
+					"expr": "topk(20, histogram_quantile(0.95, sum by (le, path) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[5m]))))",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "A"
+				},
+				{
+					"expr": "topk(20, histogram_quantile(0.99, sum by (le, path) (rate(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[5m]))))",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "B"
+				},
+				{
+					"expr": "topk(20, sum by (path) (rate(http_requests_total{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[5m])))",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "C"
+				}
+			],
+			"transformations": [
+				{
+					"id": "seriesToColumns",
+					"options": { "byField": "path" }
+				},
+				{
+					"id": "organize",
+					"options": {
+						"excludeByName": {
+							"Time": true,
+							"Time 1": true,
+							"Time 2": true,
+							"Time 3": true,
+							"__name__": true,
+							"__name__ 1": true,
+							"__name__ 2": true,
+							"job": true,
+							"job 1": true,
+							"job 2": true,
+							"instance": true,
+							"instance 1": true,
+							"instance 2": true
+						},
+						"renameByName": {
+							"path": "Endpoint",
+							"Value #A": "P95 Latency",
+							"Value #B": "P99 Latency",
+							"Value #C": "Req/s"
+						}
+					}
+				}
+			]
+		},
+
+		{
+			"collapsed": false,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 33 },
+			"id": 300,
+			"title": "Score Imports",
+			"type": "row"
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 20,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "auto",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": {
+							"mode": "line+area",
+							"line": { "color": "#FF9830" },
+							"area": { "color": "rgba(255, 152, 48, 0.05)" }
+						}
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "transparent", "value": null },
+							{ "color": "rgba(255,152,48,0.08)", "value": 60 }
+						]
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 34 },
+			"id": 20,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max", "lastNotNull"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Max",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Import Duration by Type (P95)",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.95, sum by (le, import_type) (rate(score_import_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval])))",
+					"legendFormat": "{{ import_type }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 20,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "auto",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 34 },
+			"id": 21,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Max",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Import Duration by Type (P50 vs P99)",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.50, sum by (le, import_type) (rate(score_import_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval])))",
+					"legendFormat": "P50 {{ import_type }}",
+					"refId": "A"
+				},
+				{
+					"expr": "histogram_quantile(0.99, sum by (le, import_type) (rate(score_import_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval])))",
+					"legendFormat": "P99 {{ import_type }}",
+					"refId": "B"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "short"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 43 },
+			"id": 22,
+			"options": {
+				"legend": {
+					"calcs": ["sum"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Total",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Import Count by Type",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "sum by (import_type) (increase(score_import_duration_seconds_count{job=\"tachi-api\"}[$__rate_interval]))",
+					"legendFormat": "{{ import_type }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"custom": {
+						"align": "auto",
+						"cellOptions": { "type": "auto" },
+						"inspect": false
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "green", "value": null },
+							{ "color": "#FF9830", "value": 30 },
+							{ "color": "red", "value": 120 }
+						]
+					},
+					"unit": "s"
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byName", "options": "Import Type" },
+						"properties": [
+							{ "id": "custom.width", "value": 300 },
+							{ "id": "unit", "value": "string" }
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P95 Duration" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P99 Duration" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "Max Duration" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					}
+				]
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 43 },
+			"id": 23,
+			"options": {
+				"cellHeight": "sm",
+				"footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+				"showHeader": true,
+				"sortBy": [{ "desc": true, "displayName": "P95 Duration" }]
+			},
+			"title": "Slow Imports by Type",
+			"type": "table",
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.95, sum by (le, import_type) (rate(score_import_duration_seconds_bucket{job=\"tachi-api\"}[5m])))",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "A"
+				},
+				{
+					"expr": "histogram_quantile(0.99, sum by (le, import_type) (rate(score_import_duration_seconds_bucket{job=\"tachi-api\"}[5m])))",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "B"
+				},
+				{
+					"expr": "max by (import_type) (score_import_duration_seconds_sum{job=\"tachi-api\"} / score_import_duration_seconds_count{job=\"tachi-api\"})",
+					"format": "table",
+					"instant": true,
+					"legendFormat": "",
+					"refId": "C"
+				}
+			],
+			"transformations": [
+				{
+					"id": "seriesToColumns",
+					"options": { "byField": "import_type" }
+				},
+				{
+					"id": "organize",
+					"options": {
+						"excludeByName": {
+							"Time": true,
+							"Time 1": true,
+							"Time 2": true,
+							"Time 3": true,
+							"__name__": true,
+							"__name__ 1": true,
+							"__name__ 2": true,
+							"job": true,
+							"job 1": true,
+							"job 2": true,
+							"instance": true,
+							"instance 1": true,
+							"instance 2": true
+						},
+						"renameByName": {
+							"import_type": "Import Type",
+							"Value #A": "P95 Duration",
+							"Value #B": "P99 Duration",
+							"Value #C": "Max Duration"
+						}
+					}
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "continuous-GrYlRd" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"lineWidth": 0,
+						"scaleDistribution": { "type": "symlog", "log": 2 }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 8, "w": 24, "x": 0, "y": 52 },
+			"id": 24,
+			"options": {
+				"calculate": false,
+				"cellGap": 2,
+				"color": {
+					"exponent": 0.5,
+					"fill": "dark-orange",
+					"mode": "scheme",
+					"reverse": false,
+					"scale": "exponential",
+					"scheme": "RdYlGn",
+					"steps": 128
+				},
+				"exemplars": { "color": "rgba(255,0,255,0.7)" },
+				"filterValues": { "le": 1e-9 },
+				"legend": { "show": true },
+				"rowsFrame": { "layout": "auto" },
+				"tooltip": { "mode": "single", "yHistogram": true },
+				"yAxis": {
+					"axisPlacement": "left",
+					"reverse": false,
+					"unit": "s"
+				}
+			},
+			"title": "Import Duration Heatmap",
+			"type": "heatmap",
+			"targets": [
+				{
+					"expr": "sum by (le) (increase(score_import_duration_seconds_bucket{job=\"tachi-api\"}[$__rate_interval]))",
+					"format": "heatmap",
+					"legendFormat": "{{ le }}",
+					"refId": "A"
+				}
+			]
+		},
+
+		{
+			"collapsed": false,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 60 },
+			"id": 600,
+			"title": "Actions",
+			"type": "row"
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [{ "color": "#73BF69", "value": null }]
+					}
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 6, "x": 0, "y": 61 },
+			"id": 50,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Actions (last hour)",
+			"type": "stat",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT COUNT(*) AS \"actions\" FROM action WHERE ts_start >= NOW() - INTERVAL '1 hour'",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#F2495C", "value": null },
+							{ "color": "#FF9830", "value": 0.9 },
+							{ "color": "#73BF69", "value": 0.98 }
+						]
+					},
+					"unit": "percentunit",
+					"min": 0,
+					"max": 1
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 6, "x": 6, "y": 61 },
+			"id": 51,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Success Rate",
+			"type": "stat",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT COALESCE(COUNT(*) FILTER (WHERE result = 'GOOD')::float / NULLIF(COUNT(*), 0), 1) AS \"rate\" FROM action WHERE ts_start >= NOW() - INTERVAL '1 hour'",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#73BF69", "value": null },
+							{ "color": "#FF9830", "value": 1 },
+							{ "color": "#F2495C", "value": 5 }
+						]
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 6, "x": 12, "y": 61 },
+			"id": 52,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "none",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Avg Duration",
+			"type": "stat",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT COALESCE(AVG(EXTRACT(EPOCH FROM (ts_end - ts_start))), 0) AS \"duration\" FROM action WHERE ts_start >= NOW() - INTERVAL '1 hour'",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "#73BF69", "value": null },
+							{ "color": "#FF9830", "value": 1 },
+							{ "color": "#F2495C", "value": 5 }
+						]
+					}
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 4, "w": 6, "x": 18, "y": 61 },
+			"id": 53,
+			"options": {
+				"colorMode": "background_solid",
+				"graphMode": "area",
+				"justifyMode": "auto",
+				"orientation": "auto",
+				"reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+				"textMode": "auto",
+				"wideLayout": true
+			},
+			"title": "Errors (THROW)",
+			"type": "stat",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT COUNT(*) AS \"errors\" FROM action WHERE ts_start >= NOW() - INTERVAL '1 hour' AND result = 'THROW'",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "short"
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byName", "options": "GOOD" },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#73BF69", "mode": "fixed" } }
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "BAD" },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#FF9830", "mode": "fixed" } }
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "THROW" },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#F2495C", "mode": "fixed" } }
+						]
+					}
+				]
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 65 },
+			"id": 54,
+			"options": {
+				"legend": {
+					"calcs": ["sum"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Total",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Action Volume by Result",
+			"type": "timeseries",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT $__timeGroupAlias(ts_start, $__interval), result AS metric, COUNT(*)::float AS value FROM action WHERE $__timeFilter(ts_start) GROUP BY 1, 2 ORDER BY 1",
+					"format": "time_series",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 15,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 65 },
+			"id": 55,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Max",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Action Duration (P50 / P95 / P99)",
+			"type": "timeseries",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT $__timeGroupAlias(ts_start, $__interval), percentile_cont(0.50) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (ts_end - ts_start))) AS \"P50\", percentile_cont(0.95) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (ts_end - ts_start))) AS \"P95\", percentile_cont(0.99) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (ts_end - ts_start))) AS \"P99\" FROM action WHERE $__timeFilter(ts_start) GROUP BY 1 ORDER BY 1",
+					"format": "time_series",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "line",
+						"fillOpacity": 10,
+						"gradientMode": "opacity",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineInterpolation": "smooth",
+						"lineWidth": 2,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "auto",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "none" },
+						"thresholdsStyle": {
+							"mode": "line+area",
+							"line": { "color": "#F2495C" },
+							"area": { "color": "rgba(242, 73, 92, 0.05)" }
+						}
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "transparent", "value": null },
+							{ "color": "rgba(242,73,92,0.08)", "value": 0.05 }
+						]
+					},
+					"unit": "percentunit",
+					"min": 0,
+					"max": 1
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 0, "y": 74 },
+			"id": 56,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "max", "lastNotNull"],
+					"displayMode": "table",
+					"placement": "bottom"
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Failure Rate Over Time",
+			"type": "timeseries",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT $__timeGroupAlias(ts_start, $__interval), COUNT(*) FILTER (WHERE result != 'GOOD')::float / NULLIF(COUNT(*), 0)::float AS \"Failure Rate\" FROM action WHERE $__timeFilter(ts_start) GROUP BY 1 ORDER BY 1",
+					"format": "time_series",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "short"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 9, "w": 12, "x": 12, "y": 74 },
+			"id": 57,
+			"options": {
+				"legend": {
+					"calcs": ["sum"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Total",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Actions by Kind",
+			"type": "timeseries",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT $__timeGroupAlias(ts_start, $__interval), app || '/' || kind AS metric, COUNT(*)::float AS value FROM action WHERE $__timeFilter(ts_start) GROUP BY 1, 2 ORDER BY 1",
+					"format": "time_series",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"custom": {
+						"align": "auto",
+						"cellOptions": { "type": "auto" },
+						"inspect": false
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "green", "value": null },
+							{ "color": "#FF9830", "value": 1 },
+							{ "color": "red", "value": 5 }
+						]
+					}
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byName", "options": "Result" },
+						"properties": [
+							{ "id": "custom.width", "value": 80 },
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "Duration (s)" },
+						"properties": [
+							{ "id": "custom.width", "value": 120 },
+							{ "id": "unit", "value": "s" },
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "App" },
+						"properties": [{ "id": "custom.width", "value": 200 }]
+					},
+					{
+						"matcher": { "id": "byName", "options": "Kind" },
+						"properties": [{ "id": "custom.width", "value": 250 }]
+					}
+				]
+			},
+			"gridPos": { "h": 10, "w": 24, "x": 0, "y": 83 },
+			"id": 58,
+			"options": {
+				"cellHeight": "sm",
+				"footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+				"showHeader": true,
+				"sortBy": [{ "desc": true, "displayName": "Time" }]
+			},
+			"title": "Recent Actions",
+			"type": "table",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT ts_start AS \"Time\", app AS \"App\", kind AS \"Kind\", result AS \"Result\", ROUND(EXTRACT(EPOCH FROM (ts_end - ts_start))::numeric, 3) AS \"Duration (s)\" FROM action WHERE $__timeFilter(ts_start) ORDER BY ts_start DESC LIMIT 50",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "thresholds" },
+					"custom": {
+						"align": "auto",
+						"cellOptions": { "type": "auto" },
+						"inspect": false
+					},
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{ "color": "green", "value": null },
+							{ "color": "#FF9830", "value": 1 },
+							{ "color": "red", "value": 5 }
+						]
+					}
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byName", "options": "Action" },
+						"properties": [
+							{ "id": "custom.width", "value": 300 },
+							{ "id": "unit", "value": "string" }
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P95 (s)" },
+						"properties": [
+							{ "id": "unit", "value": "s" },
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "P99 (s)" },
+						"properties": [
+							{ "id": "unit", "value": "s" },
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							}
+						]
+					},
+					{
+						"matcher": { "id": "byName", "options": "Throw" },
+						"properties": [
+							{
+								"id": "custom.cellOptions",
+								"value": { "mode": "gradient", "type": "color-background" }
+							},
+							{
+								"id": "thresholds",
+								"value": {
+									"mode": "absolute",
+									"steps": [
+										{ "color": "green", "value": null },
+										{ "color": "red", "value": 1 }
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"gridPos": { "h": 9, "w": 24, "x": 0, "y": 93 },
+			"id": 59,
+			"options": {
+				"cellHeight": "sm",
+				"footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+				"showHeader": true,
+				"sortBy": [{ "desc": true, "displayName": "P95 (s)" }]
+			},
+			"title": "Action Performance by Kind",
+			"type": "table",
+			"targets": [
+				{
+					"datasource": { "type": "postgres", "uid": "${pg_datasource}" },
+					"rawSql": "SELECT app || '/' || kind AS \"Action\", COUNT(*) AS \"Total\", COUNT(*) FILTER (WHERE result = 'GOOD') AS \"Good\", COUNT(*) FILTER (WHERE result = 'BAD') AS \"Bad\", COUNT(*) FILTER (WHERE result = 'THROW') AS \"Throw\", ROUND(AVG(EXTRACT(EPOCH FROM (ts_end - ts_start)))::numeric, 3) AS \"Avg (s)\", ROUND((percentile_cont(0.95) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (ts_end - ts_start))))::numeric, 3) AS \"P95 (s)\", ROUND((percentile_cont(0.99) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (ts_end - ts_start))))::numeric, 3) AS \"P99 (s)\" FROM action WHERE $__timeFilter(ts_start) GROUP BY 1 ORDER BY \"P95 (s)\" DESC LIMIT 20",
+					"format": "table",
+					"refId": "A"
+				}
+			]
+		},
+
+		{
+			"collapsed": false,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 102 },
+			"id": 400,
+			"title": "HTTP Detail",
+			"type": "row"
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "palette-classic" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 70,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "reqps"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 8, "w": 12, "x": 0, "y": 103 },
+			"id": 30,
+			"options": {
+				"legend": {
+					"calcs": ["mean"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Mean",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Request Rate by Method",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "sum by (method) (rate(http_requests_total{job=\"tachi-api\"}[$__rate_interval]))",
+					"legendFormat": "{{ method }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic-by-name"
+					},
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"barAlignment": 0,
+						"drawStyle": "bars",
+						"fillOpacity": 70,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"insertNulls": false,
+						"lineWidth": 0,
+						"pointSize": 5,
+						"scaleDistribution": { "type": "linear" },
+						"showPoints": "never",
+						"spanNulls": true,
+						"stacking": { "group": "A", "mode": "normal" },
+						"thresholdsStyle": { "mode": "off" }
+					},
+					"unit": "reqps"
+				},
+				"overrides": [
+					{
+						"matcher": { "id": "byRegexp", "options": "^2.." },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#73BF69", "mode": "fixed" } }
+						]
+					},
+					{
+						"matcher": { "id": "byRegexp", "options": "^3.." },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#5794F2", "mode": "fixed" } }
+						]
+					},
+					{
+						"matcher": { "id": "byRegexp", "options": "^4.." },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#FF9830", "mode": "fixed" } }
+						]
+					},
+					{
+						"matcher": { "id": "byRegexp", "options": "^5.." },
+						"properties": [
+							{ "id": "color", "value": { "fixedColor": "#F2495C", "mode": "fixed" } }
+						]
+					}
+				]
+			},
+			"gridPos": { "h": 8, "w": 12, "x": 12, "y": 103 },
+			"id": 31,
+			"options": {
+				"legend": {
+					"calcs": ["mean", "sum"],
+					"displayMode": "table",
+					"placement": "bottom",
+					"sortBy": "Mean",
+					"sortDesc": true
+				},
+				"tooltip": { "mode": "multi", "sort": "desc" }
+			},
+			"title": "Request Rate by Status Code",
+			"type": "timeseries",
+			"targets": [
+				{
+					"expr": "sum by (status_code) (rate(http_requests_total{job=\"tachi-api\"}[$__rate_interval]))",
+					"legendFormat": "{{ status_code }}",
+					"refId": "A"
+				}
+			]
+		},
+		{
+			"datasource": { "type": "prometheus", "uid": "${datasource}" },
+			"fieldConfig": {
+				"defaults": {
+					"color": { "mode": "continuous-GrYlRd" },
+					"custom": {
+						"axisBorderShow": false,
+						"axisCenteredZero": false,
+						"axisLabel": "",
+						"axisPlacement": "auto",
+						"fillOpacity": 80,
+						"gradientMode": "scheme",
+						"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+						"lineWidth": 0,
+						"scaleDistribution": { "type": "symlog", "log": 2 }
+					},
+					"unit": "s"
+				},
+				"overrides": []
+			},
+			"gridPos": { "h": 8, "w": 24, "x": 0, "y": 111 },
+			"id": 32,
+			"options": {
+				"calculate": false,
+				"cellGap": 2,
+				"color": {
+					"exponent": 0.5,
+					"fill": "dark-orange",
+					"mode": "scheme",
+					"reverse": false,
+					"scale": "exponential",
+					"scheme": "Turbo",
+					"steps": 128
+				},
+				"exemplars": { "color": "rgba(255,0,255,0.7)" },
+				"filterValues": { "le": 1e-9 },
+				"legend": { "show": true },
+				"rowsFrame": { "layout": "auto" },
+				"tooltip": { "mode": "single", "yHistogram": true },
+				"yAxis": {
+					"axisPlacement": "left",
+					"reverse": false,
+					"unit": "s"
+				}
+			},
+			"title": "Request Latency Heatmap",
+			"type": "heatmap",
+			"targets": [
+				{
+					"expr": "sum by (le) (increase(http_request_duration_seconds_bucket{job=\"tachi-api\",path!=\"/metrics\",path!=\"/.deploy/up\"}[$__rate_interval]))",
+					"format": "heatmap",
+					"legendFormat": "{{ le }}",
+					"refId": "A"
+				}
+			]
+		},
+
+		{
+			"collapsed": true,
+			"gridPos": { "h": 1, "w": 24, "x": 0, "y": 119 },
+			"id": 500,
+			"title": "System Health (Node.js)",
+			"type": "row",
+			"panels": [
+				{
+					"datasource": { "type": "prometheus", "uid": "${datasource}" },
+					"fieldConfig": {
+						"defaults": {
+							"color": { "mode": "palette-classic" },
+							"custom": {
+								"axisBorderShow": false,
+								"axisCenteredZero": false,
+								"axisLabel": "",
+								"axisPlacement": "auto",
+								"barAlignment": 0,
+								"drawStyle": "line",
+								"fillOpacity": 20,
+								"gradientMode": "opacity",
+								"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+								"insertNulls": false,
+								"lineInterpolation": "smooth",
+								"lineWidth": 2,
+								"pointSize": 5,
+								"scaleDistribution": { "type": "linear" },
+								"showPoints": "never",
+								"spanNulls": true,
+								"stacking": { "group": "A", "mode": "none" },
+								"thresholdsStyle": { "mode": "off" }
+							},
+							"unit": "bytes"
+						},
+						"overrides": []
+					},
+					"gridPos": { "h": 8, "w": 12, "x": 0, "y": 120 },
+					"id": 40,
+					"options": {
+						"legend": {
+							"calcs": ["mean", "max"],
+							"displayMode": "table",
+							"placement": "bottom"
+						},
+						"tooltip": { "mode": "multi", "sort": "desc" }
+					},
+					"title": "Memory Usage",
+					"type": "timeseries",
+					"targets": [
+						{
+							"expr": "process_resident_memory_bytes{job=\"tachi-api\"}",
+							"legendFormat": "RSS",
+							"refId": "A"
+						},
+						{
+							"expr": "nodejs_heap_size_total_bytes{job=\"tachi-api\"}",
+							"legendFormat": "Heap Total",
+							"refId": "B"
+						},
+						{
+							"expr": "nodejs_heap_size_used_bytes{job=\"tachi-api\"}",
+							"legendFormat": "Heap Used",
+							"refId": "C"
+						},
+						{
+							"expr": "nodejs_external_memory_bytes{job=\"tachi-api\"}",
+							"legendFormat": "External",
+							"refId": "D"
+						}
+					]
+				},
+				{
+					"datasource": { "type": "prometheus", "uid": "${datasource}" },
+					"fieldConfig": {
+						"defaults": {
+							"color": { "mode": "palette-classic" },
+							"custom": {
+								"axisBorderShow": false,
+								"axisCenteredZero": false,
+								"axisLabel": "",
+								"axisPlacement": "auto",
+								"barAlignment": 0,
+								"drawStyle": "line",
+								"fillOpacity": 20,
+								"gradientMode": "opacity",
+								"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+								"insertNulls": false,
+								"lineInterpolation": "smooth",
+								"lineWidth": 2,
+								"pointSize": 5,
+								"scaleDistribution": { "type": "linear" },
+								"showPoints": "never",
+								"spanNulls": true,
+								"stacking": { "group": "A", "mode": "none" },
+								"thresholdsStyle": { "mode": "off" }
+							},
+							"unit": "percentunit",
+							"min": 0
+						},
+						"overrides": []
+					},
+					"gridPos": { "h": 8, "w": 12, "x": 12, "y": 120 },
+					"id": 41,
+					"options": {
+						"legend": {
+							"calcs": ["mean", "max"],
+							"displayMode": "table",
+							"placement": "bottom"
+						},
+						"tooltip": { "mode": "multi", "sort": "desc" }
+					},
+					"title": "CPU Usage",
+					"type": "timeseries",
+					"targets": [
+						{
+							"expr": "rate(process_cpu_user_seconds_total{job=\"tachi-api\"}[$__rate_interval])",
+							"legendFormat": "User",
+							"refId": "A"
+						},
+						{
+							"expr": "rate(process_cpu_system_seconds_total{job=\"tachi-api\"}[$__rate_interval])",
+							"legendFormat": "System",
+							"refId": "B"
+						}
+					]
+				},
+				{
+					"datasource": { "type": "prometheus", "uid": "${datasource}" },
+					"fieldConfig": {
+						"defaults": {
+							"color": { "mode": "palette-classic" },
+							"custom": {
+								"axisBorderShow": false,
+								"axisCenteredZero": false,
+								"axisLabel": "",
+								"axisPlacement": "auto",
+								"barAlignment": 0,
+								"drawStyle": "line",
+								"fillOpacity": 20,
+								"gradientMode": "opacity",
+								"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+								"insertNulls": false,
+								"lineInterpolation": "smooth",
+								"lineWidth": 2,
+								"pointSize": 5,
+								"scaleDistribution": { "type": "linear" },
+								"showPoints": "never",
+								"spanNulls": true,
+								"stacking": { "group": "A", "mode": "none" },
+								"thresholdsStyle": {
+									"mode": "line",
+									"line": { "color": "red" }
+								}
+							},
+							"thresholds": {
+								"mode": "absolute",
+								"steps": [
+									{ "color": "green", "value": null },
+									{ "color": "red", "value": 0.1 }
+								]
+							},
+							"unit": "s"
+						},
+						"overrides": []
+					},
+					"gridPos": { "h": 8, "w": 12, "x": 0, "y": 128 },
+					"id": 42,
+					"options": {
+						"legend": {
+							"calcs": ["mean", "max"],
+							"displayMode": "table",
+							"placement": "bottom"
+						},
+						"tooltip": { "mode": "multi", "sort": "desc" }
+					},
+					"title": "Event Loop Lag",
+					"type": "timeseries",
+					"targets": [
+						{
+							"expr": "nodejs_eventloop_lag_seconds{job=\"tachi-api\"}",
+							"legendFormat": "Event Loop Lag",
+							"refId": "A"
+						},
+						{
+							"expr": "nodejs_eventloop_lag_p99_seconds{job=\"tachi-api\"}",
+							"legendFormat": "P99 Lag",
+							"refId": "B"
+						}
+					]
+				},
+				{
+					"datasource": { "type": "prometheus", "uid": "${datasource}" },
+					"fieldConfig": {
+						"defaults": {
+							"color": { "mode": "palette-classic" },
+							"custom": {
+								"axisBorderShow": false,
+								"axisCenteredZero": false,
+								"axisLabel": "",
+								"axisPlacement": "auto",
+								"barAlignment": 0,
+								"drawStyle": "line",
+								"fillOpacity": 20,
+								"gradientMode": "opacity",
+								"hideFrom": { "legend": false, "tooltip": false, "viz": false },
+								"insertNulls": false,
+								"lineInterpolation": "smooth",
+								"lineWidth": 2,
+								"pointSize": 5,
+								"scaleDistribution": { "type": "linear" },
+								"showPoints": "never",
+								"spanNulls": true,
+								"stacking": { "group": "A", "mode": "none" },
+								"thresholdsStyle": { "mode": "off" }
+							},
+							"unit": "short"
+						},
+						"overrides": []
+					},
+					"gridPos": { "h": 8, "w": 12, "x": 12, "y": 128 },
+					"id": 43,
+					"options": {
+						"legend": {
+							"calcs": ["mean", "max"],
+							"displayMode": "table",
+							"placement": "bottom"
+						},
+						"tooltip": { "mode": "multi", "sort": "desc" }
+					},
+					"title": "Active Handles & Requests",
+					"type": "timeseries",
+					"targets": [
+						{
+							"expr": "nodejs_active_handles_total{job=\"tachi-api\"}",
+							"legendFormat": "Active Handles",
+							"refId": "A"
+						},
+						{
+							"expr": "nodejs_active_requests_total{job=\"tachi-api\"}",
+							"legendFormat": "Active Requests",
+							"refId": "B"
+						}
+					]
+				}
+			]
+		}
+	],
+	"refresh": "30s",
+	"schemaVersion": 39,
+	"tags": ["tachi", "api", "performance"],
+	"templating": {
+		"list": [
+			{
+				"current": { "selected": false, "text": "Prometheus", "value": "Prometheus" },
+				"hide": 0,
+				"includeAll": false,
+				"label": "Data Source",
+				"multi": false,
+				"name": "datasource",
+				"options": [],
+				"query": "prometheus",
+				"queryValue": "",
+				"refresh": 1,
+				"regex": "",
+				"skipUrlSync": false,
+				"type": "datasource"
+			},
+			{
+				"current": { "selected": false, "text": "Postgres", "value": "Postgres" },
+				"hide": 0,
+				"includeAll": false,
+				"label": "Postgres",
+				"multi": false,
+				"name": "pg_datasource",
+				"options": [],
+				"query": "postgres",
+				"queryValue": "",
+				"refresh": 1,
+				"regex": "",
+				"skipUrlSync": false,
+				"type": "datasource"
+			}
+		]
+	},
+	"time": { "from": "now-3h", "to": "now" },
+	"timepicker": {},
+	"timezone": "",
+	"title": "Tachi API",
+	"uid": "tachi-api-overview",
+	"version": 1
+}

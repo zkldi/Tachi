@@ -1,0 +1,9 @@
+# IDE specific
+.idea
+.vscode
+
+# Node Specific
+node_modules
+
+# Vite build output
+dist/

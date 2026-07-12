@@ -1,0 +1,94 @@
+// Folder page timeline tab: single full-width score table aligned across rows.
+
+.timeline.timeline-folder {
+	.folder-timeline-table-wrap {
+		margin: 0 0.5rem;
+		overflow-x: auto;
+		width: calc(100% - 1rem);
+
+		@include media-breakpoint-down(md) {
+			margin: 0.5rem 0;
+		}
+	}
+
+	.folder-timeline-table {
+		--folder-timeline-score-cols: 4;
+
+		table-layout: fixed;
+		width: 100%;
+
+		tbody tr.folder-timeline-score-row td {
+			vertical-align: middle;
+		}
+
+		tbody tr.folder-timeline-date-row td {
+			background-color: var(--bs-secondary-bg);
+			border-block: 1px solid var(--bs-border-color);
+			border-inline: none;
+			padding-block: 0.95rem 1.05rem;
+			padding-inline: 1rem;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.folder-timeline-date-heading {
+			color: var(--bs-emphasis-color);
+			display: block;
+			font-size: clamp(1rem, 2vw, 1.2rem);
+			font-weight: 600;
+			letter-spacing: normal;
+			line-height: 1.35;
+			text-transform: none;
+		}
+
+		tr.folder-timeline-score-row {
+			td {
+				border-bottom: 1px solid var(--bs-secondary);
+				padding-inline: 0.35rem;
+			}
+
+			td:nth-child(1) {
+				min-width: 2.75rem;
+				width: 6%;
+			}
+
+			td:nth-child(2) {
+				min-width: 0;
+				overflow: hidden;
+				width: 100px;
+			}
+
+			td:nth-child(3) {
+				min-width: 0;
+				overflow: hidden;
+				text-align: left !important;
+				width: 29%;
+			}
+
+			td:nth-child(n + 4):not(:last-child) {
+				min-width: 0;
+				overflow: hidden;
+				width: calc((50% - 7rem) / max(var(--folder-timeline-score-cols), 1));
+			}
+
+			td:last-child {
+				min-width: 5.75rem;
+				vertical-align: middle;
+				width: 13%;
+			}
+		}
+
+		tr.folder-timeline-score-row:last-child td {
+			border-bottom: none;
+		}
+
+		tr.folder-timeline-score-row.timeline-hover:hover td {
+			background-color: var(--bs-secondary-bg);
+		}
+
+		td.folder-timeline-timestamp {
+			min-width: 0;
+			overflow-x: hidden;
+		}
+	}
+}

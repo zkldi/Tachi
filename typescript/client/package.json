@@ -1,0 +1,98 @@
+{
+	"name": "tachi-client",
+	"version": "0.1.0-see-project-root",
+	"private": true,
+	"type": "module",
+	"license": "AGPL3",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint src",
+		"lint-fix": "eslint src --fix",
+		"preview": "vite build && vite preview",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all",
+			"not ie <= 11"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version",
+			"last 1 edge version",
+			"not ie <= 11"
+		]
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "catalog:",
+		"@fullcalendar/core": "catalog:",
+		"@fullcalendar/daygrid": "catalog:",
+		"@fullcalendar/react": "catalog:",
+		"@hcaptcha/react-hcaptcha": "catalog:",
+		"@nivo/bar": "catalog:",
+		"@nivo/core": "catalog:",
+		"@nivo/line": "catalog:",
+		"@types/lodash": "catalog:",
+		"@types/natural-compare": "catalog:",
+		"deepmerge": "catalog:",
+		"dotenv": "catalog:",
+		"fast-json-stable-hash": "catalog:",
+		"formik": "catalog:",
+		"humanize-duration": "catalog:",
+		"lodash": "catalog:",
+		"luxon": "catalog:",
+		"nanoid": "catalog:",
+		"natural-compare": "catalog:",
+		"pretty-bytes": "catalog:",
+		"prudence": "catalog:",
+		"react": "catalog:",
+		"react-async": "catalog:",
+		"react-bootstrap": "catalog:",
+		"react-dom": "catalog:",
+		"react-hot-toast": "catalog:",
+		"react-markdown": "catalog:",
+		"react-query": "catalog:",
+		"react-router-bootstrap": "catalog:",
+		"react-router-dom": "catalog:",
+		"react-select": "catalog:",
+		"rg-stats": "catalog:",
+		"sql.js": "catalog:",
+		"sync-fetch": "catalog:",
+		"tachi-common": "workspace:*",
+		"vite-plugin-html": "catalog:"
+	},
+	"devDependencies": {
+		"@types/history": "catalog:",
+		"@types/humanize-duration": "catalog:",
+		"@types/luxon": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"@types/react-router-bootstrap": "catalog:",
+		"@types/react-router-dom": "catalog:",
+		"@types/sql.js": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"@vitejs/plugin-react": "catalog:",
+		"bootstrap-scss": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"sass": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*.tsx",
+			"./src/*/index.ts",
+			"./src/*/index.tsx"
+		]
+	}
+}

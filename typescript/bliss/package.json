@@ -1,0 +1,47 @@
+{
+	"name": "bliss",
+	"version": "0.0.1",
+	"description": "Architecture from Zenith, for writing applications.",
+	"type": "module",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"scripts": {
+		"build": "tsgo -p tsconfig.build.json",
+		"prepublishOnly": "tsgo -p tsconfig.build.json",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"publishConfig": {
+		"main": "./build/index.js",
+		"exports": {
+			".": {
+				"types": "./build/index.d.ts",
+				"default": "./build/index.js"
+			},
+			"./*": {
+				"types": "./build/*.d.ts",
+				"default": "./build/*.js"
+			}
+		}
+	},
+	"author": "zk",
+	"license": "MIT",
+	"dependencies": {
+		"pino": "catalog:",
+		"pino-pretty": "catalog:",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:"
+	}
+}

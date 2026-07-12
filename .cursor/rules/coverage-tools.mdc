@@ -1,0 +1,11 @@
+---
+description: Pointer to coverage aggregation tooling (see skill)
+globs: "{Justfile-test,typescript/**/vitest.config.ts,typescript/coverage-tools/**/*.ts}"
+alwaysApply: false
+---
+
+# Coverage tooling
+
+Full commands, manifest registration, and API: read [.cursor/skills/coverage-tools/SKILL.md](.cursor/skills/coverage-tools/SKILL.md).
+
+Quick: after `just test-typescript`, run `just coverage-report` (add `--by-dir`, `--json`, or `--min-lines N --strict` as needed).

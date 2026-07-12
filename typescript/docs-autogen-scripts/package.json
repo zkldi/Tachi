@@ -1,0 +1,34 @@
+{
+	"name": "tachi-autogen-docs",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Scripts for automatically generating Tachi documentation.",
+	"scripts": {
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"run": "bun run src/main.ts",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"keywords": [],
+	"author": "zk",
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"eslint-config-tachi": "workspace:*"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"dependencies": {
+		"tachi-common": "workspace:*"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

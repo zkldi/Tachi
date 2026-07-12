@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title><%= TACHI_NAME %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="<%= TACHI_NAME %> is a powerful, modular and modern rhythm game score tracker.">
+	<%- THEME_INIT %>
+	<link rel="icon" type="image/x-icon" href="<%= VITE_CDN_URL %>/logos/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<script type="module" src="/src/index.tsx"></script>
+</head>
+
+<body>
+	<noscript>
+		You have JavaScript disabled, probably.<br />
+		I also use a JavaScript blocker!<br />
+		This site uses React to render its contents.<br />
+		We don't use JS to track you or try to do anything malicious. You'll have
+		to enable JS in order for this site to work.
+	</noscript>
+	<div id="root"></div>
+	<div id="layout-portal"></div>
+</body>
+
+</html>

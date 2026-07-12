@@ -1,0 +1,46 @@
+{
+	"name": "tachi-db",
+	"version": "0.1.0-see-project-root",
+	"private": true,
+	"description": "Database types and utilities for Tachi.",
+	"author": "zk",
+	"type": "module",
+	"scripts": {
+		"build": "tsgo -b",
+		"start": "tsgo -b && bun js/main.js",
+		"typecheck": "tsgo --noEmit",
+		"test": "vitest",
+		"bench": "vitest bench"
+	},
+	"dependencies": {
+		"kysely": "catalog:"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@types/express": "catalog:",
+		"@types/node": "catalog:",
+		"@types/node-fetch": "catalog:",
+		"typescript": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"vitest": "catalog:",
+		"@vitest/coverage-v8": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	},
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+// Scrape Tachi API Prometheus metrics and remote-write to local Prometheus.
+
+prometheus.remote_write "default" {
+  endpoint {
+    url = "http://tachi-prometheus:9090/api/v1/write"
+  }
+}
+
+prometheus.scrape "tachi_api" {
+  targets = [
+    {
+      "__address__" = "tachi-dev:9779",
+      "job"         = "tachi-api",
+    },
+  ]
+
+  forward_to      = [prometheus.remote_write.default.receiver]
+  scrape_interval = "15s"
+  metrics_path    = "/metrics"
+}

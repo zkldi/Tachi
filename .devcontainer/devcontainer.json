@@ -1,11 +1,17 @@
 {
 	"name": "Tachi",
-	"dockerComposeFile": [
-		"../docker-compose-dev.yml"
-	],
+	"dockerComposeFile": ["../docker-compose-dev.yml"],
 	"service": "tachi-dev",
 	"workspaceFolder": "/tachi",
+	"containerEnv": {
+		"MINIO_ENDPOINT": "http://tachi-s3:9000",
+		"TACHI_EMAIL_FROM": "dev@localhost",
+		"TACHI_EMAIL_HOST": "tachi-mailpit",
+		"TACHI_EMAIL_PORT": "1025",
+		"TACHI_EMAIL_SECURE": "false"
+	},
 	"postAttachCommand": "./dev/bootstrap.sh",
+	"forwardPorts": [3000, 3001, 3002, 3003, 8080, 9779],
 	"updateRemoteUserUID": true,
 	"containerUser": "tachi",
 	"customizations": {
@@ -14,11 +20,15 @@
 				"typescript.tsdk": "node_modules/typescript/lib",
 				"[typescriptreact]": {
 					"editor.formatOnSave": true,
-					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+					"editor.defaultFormatter": "biomejs.biome"
 				},
 				"[typescript]": {
 					"editor.formatOnSave": true,
-					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+					"editor.defaultFormatter": "biomejs.biome"
+				},
+				"[javascript]": {
+					"editor.formatOnSave": true,
+					"editor.defaultFormatter": "biomejs.biome"
 				},
 				"terminal.integrated.profiles.linux": {
 					"fish": {
@@ -44,9 +54,7 @@
 					}
 				]
 			},
-			"extensions": [
-				"dbaeumer.vscode-eslint"
-			]
+			"extensions": ["dbaeumer.vscode-eslint", "biomejs.biome"]
 		}
 	}
 }

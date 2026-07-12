@@ -1,0 +1,23 @@
+{
+	"name": "tachi-coverage-tools",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Aggregate Vitest v8/Istanbul coverage reports across workspaces.",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"report": "bun run src/report-coverage.ts",
+		"typecheck": "tsgo --noEmit"
+	},
+	"dependencies": {
+		"istanbul-lib-coverage": "catalog:"
+	},
+	"devDependencies": {
+		"@types/istanbul-lib-coverage": "catalog:",
+		"@types/node": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"typescript": "catalog:"
+	}
+}

@@ -1,0 +1,122 @@
+check:
+	#!/bin/bash
+	set -euo pipefail
+
+	source .scripts/multi_evaluator.sh
+
+	evaluate "just fmt-check"
+	evaluate "bun run --filter '*' lint -- --quiet"
+	evaluate "just typecheck"
+	evaluate "bun .scripts/ts_machete.js"
+	evaluate "bun .scripts/ts_autoinherit.js --check"
+
+	post_evaluate
+
+typecheck:
+	bun run --elide-lines=0 --filter '!tachi-seeds-scripts' typecheck
+
+typecheck-sequential:
+	bun run --elide-lines=0 --filter '!tachi-seeds-scripts' typecheck
+
+fix:
+	#!/bin/bash
+	set -euo pipefail
+
+	just gen
+	bun run --elide-lines=0 --filter '*' lint-fix -- --quiet
+	.scripts/ts_autoinherit.js
+	just fmt
+
+# Automatically fix any issues we can in the codebase and then
+# make a commit for them
+autofix:
+	#!/bin/bash
+	set -euo pipefail
+
+	# Only generate a commit if the repo is clean
+	SHOULD_COMMIT=0
+	if [ -z "$(git status --porcelain)" ]; then
+		SHOULD_COMMIT=1
+	fi
+
+	just fix
+
+	if [ $SHOULD_COMMIT -eq 1 ]; then
+		git add .
+		git commit -m "chore: autofix"
+	fi
+
+fmt:
+	bun biome format --write
+	bun prettier --write --list-different .
+	bun run --filter tachi-seeds-scripts sort
+
+fmt-check:
+	bun biome format
+	bun prettier --check .
+	bun run --filter tachi-seeds-scripts sort-check
+
+test FILTER="*":
+	#!/bin/bash
+	set -euo pipefail
+
+	source .scripts/multi_evaluator.sh
+
+	evaluate "just test-typescript '{{FILTER}}'"
+
+	post_evaluate
+
+test-typescript FILTER="*":
+	#!/bin/bash
+	set -euo pipefail
+
+	export POSTGRES_TEST_HOST="tachi-postgres-test"
+	export POSTGRES_TEST_URL="postgresql://tachi:tachi@${POSTGRES_TEST_HOST}"
+	bun run --elide-lines=0 --sequential --filter '{{FILTER}}' test -- --reporter=default --reporter=junit --outputFile.junit=test-results/junit.xml
+
+# Summarize Vitest v8 coverage across workspaces (see typescript/coverage-tools).
+coverage-report *ARGS:
+	bun run --filter tachi-coverage-tools report -- {{ARGS}}
+
+
+# Run all parity suites, or a single one if a name is given.
+test-parity suite="":
+	TACHI_SERVER=https://localhost:8080 bun vitest run {{ if suite != "" { "tests/" + suite + ".test.ts" } else { "" } }}
+
+# ==> Orchestration of parallel db tests
+
+# Create (or recreate) the bot test template database with all migrations applied.
+# Workers clone from this template rather than re-running migrations each time.
+# Targets the dedicated tmpfs `tachi-postgres-test` server (override via
+# POSTGRES_TEST_URL).
+bot-db-test-template-reset:
+	#!/bin/bash
+	set -euo pipefail
+	export POSTGRES_URL="{{POSTGRES_TEST_URL}}/tachi_bot_test_template"
+	tachidb database drop
+	tachidb database create
+	tachidb migrate run
+
+# Create (or recreate) the server test template database with all migrations applied.
+# Workers clone from this template rather than re-running migrations each time.
+# Targets the dedicated tmpfs `tachi-postgres-test` server (override via
+# POSTGRES_TEST_URL).
+server-db-test-template-reset:
+	#!/bin/bash
+	set -euo pipefail
+	export POSTGRES_URL="{{POSTGRES_TEST_URL}}/tachi_server_test_template"
+	tachidb database drop
+	tachidb database create
+	tachidb migrate run
+
+# <== End of parallel db test justscripts
+
+# Score-import HTTP load tests against a live server (multipart /api/v1/import/file).
+# See typescript/server/src/load-tests/README.md
+load-test-score-import *ARGS:
+	cd typescript/server && bun run load-test:score-import -- {{ARGS}}
+
+# Seed N dev users + API tokens (submit_score); writes one token per line to OUTPUT_FILE.
+# Uses the server package env (.env); same Postgres as a local tachi-server.
+load-test-score-import-seed-tokens COUNT OUTPUT_FILE:
+	cd typescript/server && bun run src/load-tests/seed-stress-api-tokens.ts {{COUNT}} {{OUTPUT_FILE}}

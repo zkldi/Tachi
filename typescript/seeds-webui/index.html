@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tachi Seeds</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Browse, query, diff, and edit Tachi's seeds database.">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script>
+		// Bootstrap the data-bs-theme attribute before any CSS applies so we don't
+		// flash a light background on dark-mode users.
+		const root = document.documentElement;
+		const theme = localStorage.getItem("seeds-webui-theme")
+			|| (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+		root.style.setProperty("color-scheme", theme === "light" ? "light" : "dark");
+		root.setAttribute("data-bs-theme", theme);
+	</script>
+	<script type="module" src="/src/main.tsx"></script>
+</head>
+<body>
+	<noscript>
+		This site is a single-page React app and requires JavaScript.
+	</noscript>
+	<div id="root"></div>
+</body>
+</html>

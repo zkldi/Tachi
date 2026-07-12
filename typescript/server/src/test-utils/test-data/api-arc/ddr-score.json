@@ -1,0 +1,31 @@
+{
+	"_links": {
+		"_self": "",
+		"chart": "",
+		"music": "",
+		"profile": ""
+	},
+	"_id": "AAYq0gmgjYf",
+	"_etag": "AAAAAAAAAAC",
+	"profile_id": "HUt71vN_0aO",
+	"chart_id": "BD_uIVl5USj",
+	"music_id": "Htfjs-HBb-T",
+	"lamp": "PERFECT_FC",
+	"grade": "AAA",
+	"score": 999760,
+	"ex_score": 807,
+	"max_combo": 260,
+	"judgments": {
+		"marvelous": 236,
+		"perfect": 24,
+		"great": 0,
+		"good": 0,
+		"boo": 0,
+		"miss": 0,
+		"ok": 17,
+		"ng": 0
+	},
+	"fast": 10,
+	"slow": 14,
+	"timestamp": "2020-06-10T20:55:50.346Z"
+}

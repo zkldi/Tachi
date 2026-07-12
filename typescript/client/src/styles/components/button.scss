@@ -1,0 +1,58 @@
+.btn-clear {
+	border: transparent !important;
+	&:not(:focus),
+	&:not(:focus-visible) {
+		box-shadow: none !important;
+	}
+	//--#{$prefix}btn-bg: ;
+	//--#{$prefix}btn-border-color: ;
+	//--#{$prefix}btn-hover-color: ;
+	--#{$prefix}btn-hover-bg: rgba(var(--#{$prefix}tertiary-bg-rgb), 0.5);
+	//--#{$prefix}btn-hover-border-color: ;
+	//--#{$prefix}btn-focus-shadow-rgb: ;
+	//--#{$prefix}btn-active-color: ;
+	--#{$prefix}btn-active-bg: rgba(var(--#{$prefix}tertiary-bg-rgb), 0.25);
+	//--#{$prefix}btn-active-border-color: ;
+	--#{$prefix}btn-active-shadow: var(--#{$prefix}box-shadow);
+	--#{$prefix}btn-disabled-color: rgba(var(--#{$prefix}body-color-rgb), 0.65);
+	//--#{$prefix}btn-disabled-bg: ;
+	//--#{$prefix}btn-disabled-border-color: ;
+	--#{$prefix}btn-box-shadow: none;
+	--#{$prefix}btn-focus-box-shadow: #{$focus-ring-box-shadow};
+	&:focus-visible {
+		//color: var(--#{$prefix}btn-hover-color);
+		background-color: var(--#{$prefix}btn-hover-bg);
+		//border-color: var(--#{$prefix}btn-hover-border-color);
+		box-shadow: var(--#{$prefix}btn-focus-box-shadow);
+	}
+}
+
+// bootstrap only likes coloured buttons and secondary does not suffice.
+// here lies a button that blends in with the page...
+.btn-base {
+	--#{$prefix}btn-bg: var(--#{$prefix}tertiary-bg);
+	--#{$prefix}btn-border-color: var(--#{$prefix}tertiary-bg);
+	--#{$prefix}btn-active-border-color: var(--#{$prefix}tertiary-bg);
+	--#{$prefix}btn-active-bg: var(--#{$prefix}tertiary-bg);
+	--#{$prefix}btn-box-shadow: none;
+	--#{$prefix}btn-focus-shadow-rgb: var(--#{$prefix}emphasis-color-rgb);
+	--#{$prefix}btn-active-shadow: var(--#{$prefix}box-shadow);
+	--#{$prefix}btn-disabled-bg: var(--#{$prefix}secondary-bg);
+	--#{$prefix}btn-disabled-border-color: transparent;
+	&:focus-visible {
+		box-shadow: var(--bs-btn-focus-box-shadow);
+	}
+}
+
+[data-bs-theme="light"] {
+	.btn-base {
+		--#{$prefix}btn-hover-border-color: var(--#{$prefix}gray-400);
+		--#{$prefix}btn-hover-bg: var(--#{$prefix}gray-400);
+	}
+}
+[data-bs-theme="dark"] {
+	.btn-base {
+		--#{$prefix}btn-hover-border-color: var(--#{$prefix}gray-600);
+		--#{$prefix}btn-hover-bg: var(--#{$prefix}gray-600);
+	}
+}

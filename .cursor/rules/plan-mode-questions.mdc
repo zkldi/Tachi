@@ -1,0 +1,14 @@
+---
+description: In Plan mode, ask exploratory questions liberally before designing
+alwaysApply: true
+---
+
+# Plan mode: ask before you architect
+
+When **Plan mode** is active (or when the user asked for planning before implementation), treat curiosity as a feature: **ask as many clarifying and exploratory questions as you need** before settling on an approach.
+
+- Prefer surfacing unknowns, trade-offs, constraints, and alternative shapes early over silently guessing.
+- It is acceptable to send several questions in one turn when they are related; grouping beats slow back-and-forth when the answers chain together.
+- After questions are answered (or explicitly waived), converge on a concrete plan—not an endless Q&A loop.
+
+This does **not** override other rules that require executing work in Agent mode once the plan is accepted.

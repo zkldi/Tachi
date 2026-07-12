@@ -1,0 +1,62 @@
+{
+	"name": "rg-stats",
+	"version": "1.2.1",
+	"description": "A library for calculating various rhythm game stats.",
+	"exports": {
+		".": {
+			"types": "./src/index.ts",
+			"default": "./src/index.ts"
+		},
+		"./js/util/types": {
+			"types": "./src/util/types.ts",
+			"default": "./src/util/types.ts"
+		}
+	},
+	"scripts": {
+		"test": "vitest run",
+		"snapshot": "vitest run -u",
+		"snap": "vitest run -u",
+		"build": "tsgo -p tsconfig.build.json",
+		"prepublishOnly": "vitest run --coverage && tsgo -p tsconfig.build.json",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"publishConfig": {
+		"main": "./build/index.js",
+		"exports": {
+			".": {
+				"types": "./build/index.d.ts",
+				"default": "./build/index.js"
+			},
+			"./js/util/types": {
+				"types": "./build/util/types.d.ts",
+				"default": "./build/util/types.js"
+			}
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zkldi/rg-stats.git"
+	},
+	"keywords": [
+		"rhythm",
+		"game",
+		"stats",
+		"math"
+	],
+	"author": "zkldi",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/zkldi/rg-stats/issues"
+	},
+	"homepage": "https://github.com/zkldi/rg-stats#readme",
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	}
+}

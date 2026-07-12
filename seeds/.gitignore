@@ -1,9 +1,0 @@
-# Single time fired scripts
-scripts/personal/*
-!scripts/personal/README.md
-!scripts/personal/example.js
-
-# Rerunner output that I don't want to commit
-scripts/rerunners/bpi-output.json
-scripts/rerunners/aix-ina/*.json
-

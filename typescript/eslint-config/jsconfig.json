@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"lib": ["es2022"],
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"strict": true,
+		"skipLibCheck": true,
+		"noEmit": true,
+		"checkJs": true,
+		"types": []
+	}
+}

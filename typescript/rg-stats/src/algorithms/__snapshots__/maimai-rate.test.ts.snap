@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`maimai Rate Validation Tests > Should throw if level is negative. 1`] = `"Invalid input, Internal chart level cannot be negative. level=-1."`;
+
+exports[`maimai Rate Validation Tests > Should throw if max score is greater than 104%. 1`] = `"Invalid input, Max score cannot be greater than 104%. maxScore=104.1."`;
+
+exports[`maimai Rate Validation Tests > Should throw if score is greater than max score. 1`] = `"Invalid input, Score cannot be greater than max score. score=101.5, maxScore=100.68."`;
+
+exports[`maimai Rate Validation Tests > Should throw if score is negative. 1`] = `"Invalid input, Score cannot be negative. score=-1."`;

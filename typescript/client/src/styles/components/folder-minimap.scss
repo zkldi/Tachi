@@ -1,0 +1,155 @@
+.scoreinfo-grid-minimap {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 20px);
+	// No gap — half‑rem gutters were outside every <a>, so moving through them showed no tooltip.
+	gap: 0;
+
+	a {
+		display: block;
+		line-height: 0;
+		outline: none;
+		text-decoration: none;
+
+		&:focus-visible .scoreinfo-grid-minimap-element {
+			outline: 2px solid var(--#{$prefix}primary);
+			outline-offset: 2px;
+		}
+	}
+
+	&-element {
+		cursor: pointer;
+		height: 20px;
+		position: relative;
+		transition:
+			box-shadow 0.22s ease,
+			filter 0.22s ease,
+			outline-color 0.2s ease,
+			transform 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+		width: 20px;
+
+		background-color: var(--#{$prefix}tertiary-bg);
+		border-radius: var(--#{$prefix}border-radius-sm);
+		outline: 1px var(--#{$prefix}dark) solid;
+	}
+
+	a:hover .scoreinfo-grid-minimap-element {
+		box-shadow: 0 3px 14px rgba(0, 0, 0, 0.14);
+		filter: brightness(1.05) saturate(1.08);
+		outline-color: var(--#{$prefix}primary);
+		transform: scale(1.2);
+		z-index: 3;
+	}
+
+	a:active .scoreinfo-grid-minimap-element {
+		filter: brightness(0.97);
+		transform: scale(1.05);
+		transition-duration: 0.08s;
+	}
+
+	&-element-recent {
+		animation: folder-minimap-recent-hint 2.5s ease-in-out infinite;
+	}
+}
+
+@keyframes folder-minimap-recent-hint {
+	0%,
+	100% {
+		box-shadow: inset 0 0 4px rgba(218, 165, 32, 0.55);
+	}
+
+	50% {
+		box-shadow: inset 0 0 11px rgba(255, 215, 0, 0.82);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.scoreinfo-grid-minimap-element {
+		animation: none !important;
+		transition: none !important;
+	}
+
+	a:hover .scoreinfo-grid-minimap-element,
+	a:active .scoreinfo-grid-minimap-element {
+		filter: none !important;
+		transform: none !important;
+	}
+}
+
+[data-bs-theme="light"] {
+	.scoreinfo-grid-minimap-element {
+		outline: 1px var(--#{$prefix}border-color-translucent) solid;
+		filter: brightness(0.98) saturate(1.25);
+	}
+
+	a:hover .scoreinfo-grid-minimap-element {
+		filter: brightness(1.02) saturate(1.35);
+	}
+}
+
+// Switchboard / minimap chart — scoped tooltip panel (instant show/hide, no Bootstrap fade)
+.tooltip.tooltip-folder-minimap.fade {
+	transition: none !important;
+}
+
+.tooltip.tooltip-folder-minimap .tooltip-inner {
+	border: 1px solid var(--#{$prefix}border-color-translucent);
+	border-radius: var(--#{$prefix}border-radius-lg);
+	box-shadow:
+		0 4px 6px rgb(0 0 0 / 0.05),
+		0 14px 32px rgb(0 0 0 / 0.16);
+	max-width: min(94vw, 22rem);
+	padding: 0.65rem 0.82rem;
+	text-align: start;
+}
+
+.folder-minimap-tooltip-title {
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.35;
+	color: var(--#{$prefix}emphasis-color);
+}
+
+.folder-minimap-tooltip-divider {
+	margin-block: 0.42rem !important;
+	opacity: 0.42;
+}
+
+.folder-minimap-tooltip-recent {
+	align-items: center;
+	background-color: var(--#{$prefix}warning-bg-subtle);
+	border: 1px solid transparent;
+	border-radius: var(--#{$prefix}border-radius-sm);
+	color: var(--#{$prefix}warning-text-emphasis);
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.8rem;
+	font-weight: 600;
+	gap: 0.4rem;
+	line-height: 1.25;
+	margin-bottom: 0.52rem;
+	padding: 0.38rem 0.48rem;
+}
+
+.folder-minimap-tooltip-recent-icon {
+	font-size: 0.75rem;
+	opacity: 0.95;
+	vertical-align: -0.05em;
+}
+
+.folder-minimap-tooltip-score .table {
+	font-size: 0.86rem;
+	margin-block-end: 0;
+
+	th,
+	td {
+		padding-block: 0.35rem !important;
+		vertical-align: middle;
+	}
+}
+
+.folder-minimap-tooltip-empty {
+	color: var(--#{$prefix}secondary-color);
+	font-size: 0.87rem;
+	font-style: italic;
+	opacity: 0.88;
+}

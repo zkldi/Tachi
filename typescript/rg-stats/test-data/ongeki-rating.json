@@ -1,0 +1,956 @@
+{
+	"ratingRefresh": [
+		{
+			"technicalScore": 980222,
+			"internalChartLevel": 11.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.783
+		},
+		{
+			"technicalScore": 1002264,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.6
+		},
+		{
+			"technicalScore": 1004423,
+			"internalChartLevel": 9.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 11.594
+		},
+		{
+			"technicalScore": 1003820,
+			"internalChartLevel": 9.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 11.554
+		},
+		{
+			"technicalScore": 984237,
+			"internalChartLevel": 11,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.533
+		},
+		{
+			"technicalScore": 971413,
+			"internalChartLevel": 11.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.502
+		},
+		{
+			"technicalScore": 1002809,
+			"internalChartLevel": 9.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": false,
+			"expectedRating": 11.437
+		},
+		{
+			"technicalScore": 992482,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.424
+		},
+		{
+			"technicalScore": 992903,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.395
+		},
+		{
+			"technicalScore": 960709,
+			"internalChartLevel": 11.9,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.369
+		},
+		{
+			"technicalScore": 992390,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.369
+		},
+		{
+			"technicalScore": 974221,
+			"internalChartLevel": 11.2,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.358
+		},
+		{
+			"technicalScore": 1003051,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.353
+		},
+		{
+			"technicalScore": 1000644,
+			"internalChartLevel": 9.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 11.342
+		},
+		{
+			"technicalScore": 1000092,
+			"internalChartLevel": 9.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 11.306
+		},
+		{
+			"technicalScore": 1007462,
+			"internalChartLevel": 9,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 11.297
+		},
+		{
+			"technicalScore": 1001326,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.288
+		},
+		{
+			"technicalScore": 990337,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.266
+		},
+		{
+			"technicalScore": 1000990,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.266
+		},
+		{
+			"technicalScore": 976624,
+			"internalChartLevel": 11,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.248
+		},
+		{
+			"technicalScore": 1000651,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.243
+		},
+		{
+			"technicalScore": 1006617,
+			"internalChartLevel": 9,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 11.241
+		},
+		{
+			"technicalScore": 966927,
+			"internalChartLevel": 11.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.224
+		},
+		{
+			"technicalScore": 983431,
+			"internalChartLevel": 10.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.203
+		},
+		{
+			"technicalScore": 996527,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.176
+		},
+		{
+			"technicalScore": 1003522,
+			"internalChartLevel": 9.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.134
+		},
+		{
+			"technicalScore": 989383,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.126
+		},
+		{
+			"technicalScore": 981071,
+			"internalChartLevel": 10.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.115
+		},
+		{
+			"technicalScore": 947421,
+			"internalChartLevel": 12.4,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.109
+		},
+		{
+			"technicalScore": 987120,
+			"internalChartLevel": 10.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.092
+		},
+		{
+			"technicalScore": 1001221,
+			"internalChartLevel": 9.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 11.081
+		},
+		{
+			"technicalScore": 994489,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.074
+		},
+		{
+			"technicalScore": 993276,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.063
+		},
+		{
+			"technicalScore": 999451,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 11.022
+		},
+		{
+			"technicalScore": 969473,
+			"internalChartLevel": 11,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.019
+		},
+		{
+			"technicalScore": 1001567,
+			"internalChartLevel": 9.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11.004
+		},
+		{
+			"technicalScore": 992019,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 11
+		},
+		{
+			"technicalScore": 977810,
+			"internalChartLevel": 10.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.992
+		},
+		{
+			"technicalScore": 1000351,
+			"internalChartLevel": 9.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": false,
+			"expectedRating": 10.973
+		},
+		{
+			"technicalScore": 992267,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.963
+		},
+		{
+			"technicalScore": 997824,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.941
+		},
+		{
+			"technicalScore": 975952,
+			"internalChartLevel": 10.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.923
+		},
+		{
+			"technicalScore": 997408,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.92
+		},
+		{
+			"technicalScore": 968530,
+			"internalChartLevel": 11,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.916
+		},
+		{
+			"technicalScore": 990245,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 10.912
+		},
+		{
+			"technicalScore": 999864,
+			"internalChartLevel": 9.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 10.893
+		},
+		{
+			"technicalScore": 999736,
+			"internalChartLevel": 9.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 10.886
+		},
+		{
+			"technicalScore": 990642,
+			"internalChartLevel": 10,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.882
+		},
+		{
+			"technicalScore": 1004980,
+			"internalChartLevel": 9,
+			"noteLamp": "FULL COMBO",
+			"fullBell": false,
+			"expectedRating": 10.882
+		},
+		{
+			"technicalScore": 996328,
+			"internalChartLevel": 9.7,
+			"noteLamp": "CLEAR",
+			"fullBell": false,
+			"expectedRating": 10.866
+		},
+		{
+			"technicalScore": 1009980,
+			"internalChartLevel": 14.7,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 17.348
+		},
+		{
+			"technicalScore": 1008800,
+			"internalChartLevel": 14.7,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 17.23
+		},
+		{
+			"technicalScore": 1007777,
+			"internalChartLevel": 15,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 17.127
+		},
+		{
+			"technicalScore": 1007880,
+			"internalChartLevel": 14.4,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.838
+		},
+		{
+			"technicalScore": 1007869,
+			"internalChartLevel": 14.3,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.736
+		},
+		{
+			"technicalScore": 1008463,
+			"internalChartLevel": 14.2,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.696
+		},
+		{
+			"technicalScore": 1000246,
+			"internalChartLevel": 15.1,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.616
+		},
+		{
+			"technicalScore": 1007656,
+			"internalChartLevel": 14.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.615
+		},
+		{
+			"technicalScore": 1007413,
+			"internalChartLevel": 14.3,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.594
+		},
+		{
+			"technicalScore": 1007075,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.571
+		},
+		{
+			"technicalScore": 1008110,
+			"internalChartLevel": 14.1,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.561
+		},
+		{
+			"technicalScore": 1008009,
+			"internalChartLevel": 14.1,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.55
+		},
+		{
+			"technicalScore": 1006747,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.549
+		},
+		{
+			"technicalScore": 1002172,
+			"internalChartLevel": 14.9,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.544
+		},
+		{
+			"technicalScore": 1005089,
+			"internalChartLevel": 14.6,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.539
+		},
+		{
+			"technicalScore": 1003464,
+			"internalChartLevel": 14.8,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.53
+		},
+		{
+			"technicalScore": 1006444,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.529
+		},
+		{
+			"technicalScore": 1007774,
+			"internalChartLevel": 14.3,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.527
+		},
+		{
+			"technicalScore": 1008633,
+			"internalChartLevel": 14,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.513
+		},
+		{
+			"technicalScore": 1003156,
+			"internalChartLevel": 14.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.51
+		},
+		{
+			"technicalScore": 1005940,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.496
+		},
+		{
+			"technicalScore": 1005487,
+			"internalChartLevel": 14.6,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.465
+		},
+		{
+			"technicalScore": 1003727,
+			"internalChartLevel": 14.6,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.448
+		},
+		{
+			"technicalScore": 1003733,
+			"internalChartLevel": 14.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.448
+		},
+		{
+			"technicalScore": 1006570,
+			"internalChartLevel": 14.5,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.438
+		},
+		{
+			"technicalScore": 1007887,
+			"internalChartLevel": 14.2,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.438
+		},
+		{
+			"technicalScore": 1008777,
+			"internalChartLevel": 13.9,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.427
+		},
+		{
+			"technicalScore": 1001877,
+			"internalChartLevel": 14.8,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.425
+		},
+		{
+			"technicalScore": 1001888,
+			"internalChartLevel": 14.7,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.425
+		},
+		{
+			"technicalScore": 1003302,
+			"internalChartLevel": 14.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.42
+		},
+		{
+			"technicalScore": 1003102,
+			"internalChartLevel": 14.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.406
+		},
+		{
+			"technicalScore": 1004599,
+			"internalChartLevel": 14.6,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.406
+		},
+		{
+			"technicalScore": 1006028,
+			"internalChartLevel": 14.5,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.401
+		},
+		{
+			"technicalScore": 1008346,
+			"internalChartLevel": 13.9,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.384
+		},
+		{
+			"technicalScore": 1004172,
+			"internalChartLevel": 14.6,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.378
+		},
+		{
+			"technicalScore": 993361,
+			"internalChartLevel": 15.3,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.368
+		},
+		{
+			"technicalScore": 1002406,
+			"internalChartLevel": 14.7,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.36
+		},
+		{
+			"technicalScore": 1003877,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.358
+		},
+		{
+			"technicalScore": 1008069,
+			"internalChartLevel": 13.9,
+			"noteLamp": "ALL BREAK",
+			"fullBell": true,
+			"expectedRating": 16.356
+		},
+		{
+			"technicalScore": 1009056,
+			"internalChartLevel": 14,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.355
+		},
+		{
+			"technicalScore": 1002252,
+			"internalChartLevel": 14.6,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.35
+		},
+		{
+			"technicalScore": 1006711,
+			"internalChartLevel": 14.3,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.347
+		},
+		{
+			"technicalScore": 1007840,
+			"internalChartLevel": 14.1,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.334
+		},
+		{
+			"technicalScore": 1003489,
+			"internalChartLevel": 14.5,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.332
+		},
+		{
+			"technicalScore": 1007809,
+			"internalChartLevel": 14.1,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.33
+		},
+		{
+			"technicalScore": 1006379,
+			"internalChartLevel": 14.4,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.325
+		},
+		{
+			"technicalScore": 1004803,
+			"internalChartLevel": 14.5,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.32
+		},
+		{
+			"technicalScore": 1004767,
+			"internalChartLevel": 14.4,
+			"noteLamp": "FULL COMBO",
+			"fullBell": true,
+			"expectedRating": 16.317
+		},
+		{
+			"technicalScore": 1003181,
+			"internalChartLevel": 14.6,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.312
+		},
+		{
+			"technicalScore": 1003186,
+			"internalChartLevel": 14.6,
+			"noteLamp": "CLEAR",
+			"fullBell": true,
+			"expectedRating": 16.312
+		}
+	],
+	"ratingPlatinum": [
+		{
+			"internalChartLevel": 14.7,
+			"stars": 6,
+			"expectedRating": 1.08
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 5,
+			"expectedRating": 0.819
+		},
+		{
+			"internalChartLevel": 11.9,
+			"stars": 5,
+			"expectedRating": 0.708
+		},
+		{
+			"internalChartLevel": 13.3,
+			"stars": 4,
+			"expectedRating": 0.707
+		},
+		{
+			"internalChartLevel": 13,
+			"stars": 4,
+			"expectedRating": 0.676
+		},
+		{
+			"internalChartLevel": 13,
+			"stars": 4,
+			"expectedRating": 0.676
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 4,
+			"expectedRating": 0.665
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 4,
+			"expectedRating": 0.655
+		},
+		{
+			"internalChartLevel": 14.7,
+			"stars": 3,
+			"expectedRating": 0.648
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 4,
+			"expectedRating": 0.645
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 4,
+			"expectedRating": 0.645
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 4,
+			"expectedRating": 0.645
+		},
+		{
+			"internalChartLevel": 12.6,
+			"stars": 4,
+			"expectedRating": 0.635
+		},
+		{
+			"internalChartLevel": 12.5,
+			"stars": 4,
+			"expectedRating": 0.625
+		},
+		{
+			"internalChartLevel": 14,
+			"stars": 3,
+			"expectedRating": 0.588
+		},
+		{
+			"internalChartLevel": 13.4,
+			"stars": 3,
+			"expectedRating": 0.538
+		},
+		{
+			"internalChartLevel": 13.4,
+			"stars": 3,
+			"expectedRating": 0.538
+		},
+		{
+			"internalChartLevel": 13.1,
+			"stars": 3,
+			"expectedRating": 0.514
+		},
+		{
+			"internalChartLevel": 13.1,
+			"stars": 3,
+			"expectedRating": 0.514
+		},
+		{
+			"internalChartLevel": 13,
+			"stars": 3,
+			"expectedRating": 0.507
+		},
+		{
+			"internalChartLevel": 13,
+			"stars": 3,
+			"expectedRating": 0.507
+		},
+		{
+			"internalChartLevel": 13,
+			"stars": 3,
+			"expectedRating": 0.507
+		},
+		{
+			"internalChartLevel": 11.2,
+			"stars": 4,
+			"expectedRating": 0.501
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.9,
+			"stars": 3,
+			"expectedRating": 0.499
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.8,
+			"stars": 3,
+			"expectedRating": 0.491
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 3,
+			"expectedRating": 0.483
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 3,
+			"expectedRating": 0.483
+		},
+		{
+			"internalChartLevel": 12.7,
+			"stars": 3,
+			"expectedRating": 0.483
+		},
+		{
+			"internalChartLevel": 12.6,
+			"stars": 3,
+			"expectedRating": 0.476
+		},
+		{
+			"internalChartLevel": 12.6,
+			"stars": 3,
+			"expectedRating": 0.476
+		},
+		{
+			"internalChartLevel": 12.6,
+			"stars": 3,
+			"expectedRating": 0.476
+		},
+		{
+			"internalChartLevel": 12.6,
+			"stars": 3,
+			"expectedRating": 0.476
+		},
+		{
+			"internalChartLevel": 12.5,
+			"stars": 3,
+			"expectedRating": 0.468
+		},
+		{
+			"internalChartLevel": 12.5,
+			"stars": 3,
+			"expectedRating": 0.468
+		},
+		{
+			"internalChartLevel": 12.5,
+			"stars": 3,
+			"expectedRating": 0.468
+		},
+		{
+			"internalChartLevel": 12.4,
+			"stars": 3,
+			"expectedRating": 0.461
+		},
+		{
+			"internalChartLevel": 12.4,
+			"stars": 3,
+			"expectedRating": 0.461
+		},
+		{
+			"internalChartLevel": 12.4,
+			"stars": 3,
+			"expectedRating": 0.461
+		}
+	]
+}

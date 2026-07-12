@@ -4,96 +4,60 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "client/**"
-      - "common/**"
+      - "typescript/client/**"
+      - "typescript/common/**"
+      - ".github/workflows/client.yml"
 
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "server/**"
-      - "common/**"
+      - "typescript/client/**"
+      - "typescript/common/**"
+      - ".github/workflows/client.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zkldi/tachi-ci:main
+      options: --user root
+    if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          version: 8.15.6
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
+          persist-credentials: false
 
       - name: Install dependencies
-        run: pnpm --filter tachi-client... --filter . install
-
-      - name: Lint
-        run: pnpm --filter tachi-client lint
-
-      - name: Typecheck
-        run: pnpm --filter tachi-client typecheck
-
-  deploy:
-    runs-on: [ubuntu-latest]
-    needs: test
-    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Install rsync
-        run: sudo apt install -y rsync
-
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 8.15.6
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Enable SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          sudo chmod 600 ~/.ssh/id_rsa
-          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-        env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
-
-      - name: Install dependencies
-        run: pnpm --filter tachi-client... --filter . install
+        run: bun install --frozen-lockfile
 
       - name: Build Bokutachi
         if: github.ref == 'refs/heads/main'
-        run: pnpm --filter tachi-client build
+        run: bun run --filter tachi-client build
         env:
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
           VITE_TCHIC_MODE: "boku"
-          VITE_GOATCOUNTER: "https://tachi.goatcounter.com/count"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
+          VITE_HCAPTCHA_SITEKEY: "2e541bb6-cfb0-4418-92dc-6b8adac6f2fe"
           VITE_SERVER_URL: "https://boku.tachi.ac"
           VITE_DISCORD: "https://discord.gg/E4n8ZZF5ES"
           VITE_CDN_URL: "https://cdn-boku.tachi.ac"
+          VITE_SKIP_RULES: true
           TACHI_NAME: "Bokutachi"
-          BUILD_OUT_DIR: /home/runner/boku
+          BUILD_OUT_DIR: /tmp/boku
 
       - name: Build Kamaitachi
         if: github.ref == 'refs/heads/main'
-        run: pnpm --filter tachi-client build
+        run: bun run --filter tachi-client build
         env:
           VITE_MANDATE_LOGIN: true
-          VITE_GOATCOUNTER: "https://tachi.goatcounter.com/count"
           VITE_SERVER_URL: "https://kamai.tachi.ac"
           VITE_EAG_CLIENT_ID: "332B9789DEA10B94DB0E345A6F8ECF54BB86E6DD"
           VITE_FLO_CLIENT_ID: "98B965554FB2341D969667F3D04CFC28F8C080ED"
@@ -102,36 +66,79 @@ jobs:
           VITE_TCHIC_MODE: "kamai"
           VITE_CDN_URL: "https://cdn-kamai.tachi.ac"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
+          VITE_HCAPTCHA_SITEKEY: "33267860-177c-487a-a4e6-e1b23f804810"
+          VITE_SKIP_RULES: true
           TACHI_NAME: "Kamaitachi"
-          BUILD_OUT_DIR: /home/runner/kamai
+          BUILD_OUT_DIR: /tmp/kamai
 
-      - name: Deploy Kamaitachi
-        if: github.ref == 'refs/heads/main'
-        run: rsync --recursive --compress --delete --progress ~/kamai/. ci@"$TACHI_HOST":tachi-client/kamai
-        env:
-          TACHI_HOST: ${{secrets.TACHI_HOST}}
-
-      - name: Deploy Bokutachi
-        if: github.ref == 'refs/heads/main'
-        run: rsync --recursive --compress --delete --progress ~/boku/. ci@"$TACHI_HOST":tachi-client/boku
-        env:
-          TACHI_HOST: ${{secrets.TACHI_HOST}}
-
-      - name: Build Staging
-        run: pnpm --filter tachi-client build
+      - name: Build Dev
+        if: github.ref == 'refs/heads/main-dev'
+        run: bun run --filter tachi-client build
         env:
           VITE_MANDATE_LOGIN: true
-          VITE_GOATCOUNTER: "https://tachi.goatcounter.com/count"
-          VITE_SERVER_URL: "https://staging.tachi.ac"
+          VITE_SERVER_URL: "https://dev.tachi.ac"
           VITE_TCHIC_MODE: "omni"
-          VITE_CDN_URL: "https://cdn-staging.tachi.ac"
+          VITE_CDN_URL: "https://cdn-dev.tachi.ac"
+          VITE_EAG_CLIENT_ID: "A52JhudyAPK1KdBS3NrUhNsn"
+          VITE_FLO_CLIENT_ID: "9krYLjq1rz9icCefO6OWxoMk"
+          VITE_MIN_CLIENT_ID: "A0DBDBB063CD800530EF01C6488B282137E0191E"
           VITE_GIT_REPO: "GitHub:zkldi/Tachi"
-          VITE_RECAPTCHA_KEY: "6LcsYbIpAAAAAEJffjIXmbQcxj_SBZG7BnSPjF4L"
-          TACHI_NAME: "Tachi Staging"
-          BUILD_OUT_DIR: /home/runner/staging
+          VITE_HCAPTCHA_SITEKEY: "f502cf14-6c48-4f5c-8692-c670a0d00314"
+          VITE_SKIP_RULES: true
+          TACHI_NAME: "Tachi Dev"
+          BUILD_OUT_DIR: /tmp/dev
 
-      - name: Deploy Staging
-        run: rsync --recursive --compress --delete --progress ~/staging/. ci@"$TACHI_HOST":tachi-client/staging
+      - name: Bundle build outputs (main)
+        if: github.ref == 'refs/heads/main'
+        run: tar -C /tmp -czf client-builds.tgz boku kamai
+
+      - name: Bundle build outputs (main-dev)
+        if: github.ref == 'refs/heads/main-dev'
+        run: tar -C /tmp -czf client-builds.tgz dev
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: client-builds
+          path: client-builds.tgz
+          retention-days: 1
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main-dev') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    steps:
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: client-builds
+
+      - name: Unpack build outputs
+        run: |
+          mkdir -p /tmp/boku /tmp/kamai /tmp/dev
+          tar -C /tmp -xzf client-builds.tgz
+
+      - name: Enable SSH
         env:
-          TACHI_HOST: ${{secrets.TACHI_HOST}}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          printf '%s' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Deploy static to Ceres — production (kamai + boku)
+        if: github.ref == 'refs/heads/main'
+        env:
+          TACHI_HOST: ${{ secrets.TACHI_HOST }}
+        run: |
+          rsync --recursive --compress --delete --progress /tmp/kamai/. "ci@${TACHI_HOST}:/srv/tachi-static/kamai/"
+          rsync --recursive --compress --delete --progress /tmp/boku/. "ci@${TACHI_HOST}:/srv/tachi-static/boku/"
+
+      - name: Deploy static to Ceres — dev
+        if: github.ref == 'refs/heads/main-dev'
+        env:
+          TACHI_HOST: ${{ secrets.TACHI_HOST }}
+        run: rsync --recursive --compress --delete --progress /tmp/dev/. "ci@${TACHI_HOST}:/srv/tachi-static/dev/"

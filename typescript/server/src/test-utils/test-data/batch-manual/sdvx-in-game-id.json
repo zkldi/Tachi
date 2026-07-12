@@ -1,0 +1,16 @@
+{
+	"meta": {
+		"game": "sdvx",
+		"playtype": "Single",
+		"service": "foobar"
+	},
+	"scores": [
+		{
+			"score": 9000000,
+			"lamp": "CLEAR",
+			"matchType": "sdvxInGameID",
+			"identifier": "1",
+			"difficulty": "ADV"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"name": "tachi-bot",
+	"version": "2.2.0",
+	"private": true,
+	"type": "module",
+	"main": "js/bot/src/main.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsgo -b",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"test": "vitest",
+		"bench": "vitest bench"
+	},
+	"devDependencies": {
+		"@types/express": "catalog:",
+		"@types/lodash": "catalog:",
+		"@types/luxon": "catalog:",
+		"@types/node": "catalog:",
+		"@types/pg": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"@types/node-fetch": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"vitest": "catalog:"
+	},
+	"dependencies": {
+		"@discordjs/builders": "catalog:",
+		"@discordjs/rest": "catalog:",
+		"deepmerge": "catalog:",
+		"discord-api-types": "catalog:",
+		"discord.js": "catalog:",
+		"dotenv": "catalog:",
+		"express": "catalog:",
+		"kysely": "catalog:",
+		"lodash": "catalog:",
+		"luxon": "catalog:",
+		"node-fetch": "catalog:",
+		"pg": "catalog:",
+		"bliss": "workspace:*",
+		"prudence": "catalog:",
+		"tachi-common": "workspace:*",
+		"tachi-db": "workspace:*",
+		"typescript": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

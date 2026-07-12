@@ -1,0 +1,22 @@
+.feedRowLink {
+	color: inherit;
+	display: block;
+	text-decoration: none;
+	transition:
+		box-shadow 0.12s ease,
+		transform 0.12s ease;
+
+	&:hover {
+		box-shadow:
+			0 0 0 1px var(--bs-primary),
+			0 0.35rem 1rem rgb(0 0 0 / 0.12);
+		color: inherit;
+		text-decoration: none;
+		transform: translateY(-2px);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--bs-primary);
+		outline-offset: 2px;
+	}
+}

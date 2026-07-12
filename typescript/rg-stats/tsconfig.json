@@ -1,0 +1,9 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler"
+	},
+	"include": ["src", "eslint.config.mjs", "vitest.config.ts"],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DDR Flare Validation Tests > Should throw if chart level is greater than 19. 1`] = `"Invalid input, Internal chart level cannot be greater than 19. level=20."`;
+
+exports[`DDR Flare Validation Tests > Should throw if chart level is negative. 1`] = `"Invalid input, Internal chart level cannot be negative or zero. level=-1."`;
+
+exports[`DDR Flare Validation Tests > Should throw if flare level is greater than 10. 1`] = `"Invalid input, Flare level cannot be greater than 10. level=11."`;
+
+exports[`DDR Flare Validation Tests > Should throw if flare level is negative. 1`] = `"Invalid input, Flare level cannot be negative. level=-1."`;

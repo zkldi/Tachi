@@ -1,0 +1,16 @@
+{
+	"meta": {
+		"game": "iidx",
+		"playtype": "SP",
+		"service": "foobar"
+	},
+	"scores": [
+		{
+			"score": 500,
+			"lamp": "HARD CLEAR",
+			"matchType": "songTitle",
+			"identifier": "5.1.1.",
+			"difficulty": "ANOTHER"
+		}
+	]
+}

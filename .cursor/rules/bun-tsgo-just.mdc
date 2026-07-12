@@ -1,0 +1,23 @@
+---
+description: Use Bun and tsgo; prefer just fix / just check
+alwaysApply: true
+---
+
+# Bun, tsgo, and `just`
+
+## Runtime and package scripts
+
+- Prefer **bun** over **node** for running project tooling and scripts (`bun run …`, workspace filters). Use **node** only when unavoidable (for example an existing artifact or script explicitly requires it).
+- Prefer workspace scripts and **bun**-driven pipelines over hand-rolled single-binary invocations when both exist.
+
+## TypeScript (`tsgo`, not `tsc`)
+
+- This repo uses **tsgo** for builds and **`tsgo --noEmit`** style checks via package `typecheck`/`build` scripts.
+- Do **not** invoke **`tsc` directly** unless the user explicitly asked for upstream `typescript`/`tsc` behavior or compatibility.
+
+## Canonical fix / check entrypoints
+
+- **`just check`** — preferred way to validate the tree (format checks, lint, typecheck bundle). Prefer this over reassembling separate commands unless you need a narrower slice for speed or debugging.
+- **`just fix`** — preferred way to apply automated fixes (includes codegen, lint-fix, formatter, related helpers).
+
+When unclear what lint/typecheck/format steps to run locally, default to **`just check`** and **`just fix`** instead of improvising alternatives.

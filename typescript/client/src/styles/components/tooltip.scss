@@ -1,0 +1,28 @@
+.tooltip {
+	@extend .backdrop-blur-md;
+}
+
+// Wide tooltips (e.g. IIDX BPI breakdown): contain nested tables without Popper/td issues.
+.tooltip.tooltip-wide .tooltip-inner {
+	max-width: min(100vw - 2rem, 26rem);
+	padding: 0.5rem 0.6rem;
+	text-align: center;
+
+	.bpi-tooltip-stack {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		min-width: 0;
+		width: 100%;
+	}
+
+	.bpi-tooltip-stack .table {
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	.bpi-tooltip-stack .table th,
+	.bpi-tooltip-stack .table td {
+		vertical-align: middle;
+	}
+}

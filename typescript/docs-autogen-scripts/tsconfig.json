@@ -1,0 +1,12 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"paths": {
+			"#*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

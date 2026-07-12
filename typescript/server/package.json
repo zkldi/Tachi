@@ -1,0 +1,101 @@
+{
+	"name": "tachi-server",
+	"version": "3.0.0",
+	"description": "A score tracking server.",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "bun --watch src/main.ts",
+		"test": "vitest",
+		"bench": "vitest bench",
+		"build": "tsgo -b tsconfig.build.json -v",
+		"typecheck": "tsgo --noEmit",
+		"lint": "eslint ./src",
+		"lint-fix": "eslint ./src --fix",
+		"cron-worker": "bun run src/cron-worker.ts",
+		"job-queue-worker": "bun run src/job-queue-worker.ts",
+		"load-test:score-import": "bun run src/load-tests/score-import-load-cli.ts",
+		"run-action": "bun run src/scripts/run-action.ts"
+	},
+	"author": "zk",
+	"license": "AGPL3",
+	"devDependencies": {
+		"@types/bun": "catalog:",
+		"@types/pg": "catalog:",
+		"@types/supertest": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"node-mocks-http": "catalog:",
+		"supertest": "catalog:",
+		"vitest": "catalog:"
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "catalog:",
+		"@octokit/app": "catalog:",
+		"@types/bcryptjs": "catalog:",
+		"@types/express": "catalog:",
+		"@types/express-serve-static-core": "catalog:",
+		"@types/express-session": "catalog:",
+		"@types/multer": "catalog:",
+		"@types/node": "catalog:",
+		"@types/node-fetch": "catalog:",
+		"@types/nodemailer": "catalog:",
+		"bcryptjs": "catalog:",
+		"bliss": "workspace:*",
+		"bms-table-loader": "catalog:",
+		"commander": "catalog:",
+		"cron-parser": "catalog:",
+		"csv-parse": "catalog:",
+		"deepmerge": "catalog:",
+		"dotenv": "catalog:",
+		"express": "catalog:",
+		"express-async-errors": "catalog:",
+		"express-prom-bundle": "catalog:",
+		"express-session": "catalog:",
+		"fast-json-stable-hash": "catalog:",
+		"fast-xml-parser": "catalog:",
+		"helmet": "catalog:",
+		"html-entities": "catalog:",
+		"ioredis": "catalog:",
+		"kysely": "catalog:",
+		"lodash": "catalog:",
+		"multer": "catalog:",
+		"node-cache": "catalog:",
+		"node-fetch": "catalog:",
+		"node-html-parser": "catalog:",
+		"nodemailer": "catalog:",
+		"pg": "catalog:",
+		"prom-client": "catalog:",
+		"prudence": "catalog:",
+		"rg-stats": "catalog:",
+		"sharp": "catalog:",
+		"tachi-common": "workspace:*",
+		"tachi-db": "workspace:*",
+		"tachi-db-migration-engine": "workspace:*",
+		"typescript": "catalog:",
+		"zod": "catalog:"
+	},
+	"nyc": {
+		"reporter": [
+			"html",
+			"lcov"
+		],
+		"all": true,
+		"include": [
+			"src/*/!(test-utils)/**/*.ts"
+		],
+		"exclude": []
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*.d.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

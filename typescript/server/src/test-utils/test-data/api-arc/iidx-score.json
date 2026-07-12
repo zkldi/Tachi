@@ -1,0 +1,18 @@
+{
+	"_links": {
+		"_self": "",
+		"chart": "",
+		"music": "",
+		"profile": ""
+	},
+	"_id": "AAOVE3UFHOx",
+	"_etag": "AAAAAAAAAAD",
+	"chart_id": "CYjwAuz7Yq9",
+	"music_id": "CsO-Ud3D-e8",
+	"profile_id": "D5EQKa-j1fI",
+	"lamp": "HARD_CLEAR",
+	"ex_score": 1200,
+	"miss_count": 43,
+	"timestamp": "2020-11-07T21:31:21.894Z",
+	"status": "HARD_CLEAR"
+}

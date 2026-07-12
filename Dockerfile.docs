@@ -1,7 +1,0 @@
-FROM python:3.11-slim
-RUN pip install mkdocs==1.5.3
-RUN pip install mkdocs-material==9.5.17
-
-COPY docs ./
-
-CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]

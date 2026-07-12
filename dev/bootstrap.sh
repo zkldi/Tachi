@@ -5,95 +5,119 @@ set -eo pipefail
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+FORCE=0
+
+while getopts "f" opt; do
+	case $opt in
+		f)
+			FORCE=1
+			;;
+		*)
+			echo "Invalid option: -$opt"
+			exit 1
+	esac
+done
+
 cd "$SCRIPT_DIR";
 cd ..;
-
-function installLocalDebs {
-	for file in /tachi/dev/deb/*.deb; do
-		sudo apt install -f -y "$file";
-	done
-}
 
 function setupShell {
 	echo "Setting up fish..."
 	fish dev/setup.fish
 }
 
-function mvExampleFiles {
-	echo "Moving example config files into usable places..."
+function copyEnvExamples {
+	echo "Copying .env.example → .env (skips packages that already have .env)..."
 
-	cp --update=none client/example/.env client/.env
-
-	cp --update=none server/example/conf.json5 server/conf.json5
-	cp --update=none server/example/.env server/.env
-
-	mkdir -p server/local-cdn
-	cp -r --update=none server/example/default-cdn-contents/* server/local-cdn
-
-	cp --update=none bot/example/conf.json5 bot/conf.json5
-	cp --update=none bot/example/example.env bot/.env
-
-	echo "Moved!"
+	ENV_PACKAGES=(
+		typescript/server
+		typescript/client
+		typescript/bot
+		typescript/github-bot
+	)
+	for pkg in "${ENV_PACKAGES[@]}"; do
+		if [[ ! -f "$pkg/.env.example" ]]; then
+			continue
+		fi
+		if [[ -f "$pkg/.env" ]]; then
+			echo "  $pkg: .env already exists, skipped"
+		else
+			cp --update=none "$pkg/.env.example" "$pkg/.env"
+			echo "  $pkg: created .env from .env.example"
+		fi
+	done
 }
 
-function selfSignHTTPS {
-	if [ -e server/cert/key.pem ] && [ -e server/cert/cert.pem ] && openssl x509 -checkend 0 -noout -in server/cert/cert.pem; then
-		echo "HTTPS Certificates for local-dev server already exists and has not expired."
-		return 0
-	fi
-
-	echo "Self-Signing HTTPS Certificates for local-dev server..."
-
-	# This is for dev servers only! You should use this to
-	# create a self-signed HTTPS certificate for local dev.
-	# That is it. This is not secure.
-	mkdir -p server/cert
-
-	openssl req -x509 -newkey rsa:4096 -keyout server/cert/key.pem -out server/cert/cert.pem -sha256 -days 365 -nodes -subj "/C=AU/ST=TachiExample/L=TachiExample/O=TachiExample/CN=127.0.0.1" &> /dev/null
-
-	echo "Created HTTPS Certificates!"
-}
-
-function pnpmInstall {
-	echo "Installing dependencies..."
-
-	if ! command -v pnpm &> /dev/null
-	then
-		echo "Couldn't find pnpm. Can't install dependencies. Install it with npm install -g pnpm."
+function seedMinioCdn {
+	# Uploads example/default-cdn-contents when MinIO is up. Buckets + anonymous download use MinIO client;
+	# Debian package `minio-client` installs the `minio-client` binary (same CLI as upstream `mc`).
+	# override endpoint with MINIO_ENDPOINT (devcontainer sets http://tachi-s3:9000).
+	if ! command -v minio-client &> /dev/null; then
+		echo "Couldn't find MinIO client (minio-client). On Debian: apt install minio-client - see Dockerfile.dev."
 		exit 1
 	fi
 
-	pnpm fetch
-	pnpm install
+	(
+		MC_CONFIG_DIR=$(mktemp -d)
+		trap 'rm -rf "$MC_CONFIG_DIR"' EXIT
+		MINIO_ENDPOINT="http://tachi-s3:9000"
+		MC=(minio-client --config-dir "$MC_CONFIG_DIR")
+		MC_ALIAS="tachi-s3"
 
-	# install ts-node aswell so people can use that inside enter-seeds.
-	#
-	# This requires quite a bit of ceremony as pnpm wants to install to PNPM_HOME
-	PATH=$PATH:~/.local/pnpm
-	PNPM_HOME=~/.local/pnpm pnpm install ts-node -g
+		if ! "${MC[@]}" alias set "$MC_ALIAS" "$MINIO_ENDPOINT" minio password --api s3v4; then
+			echo "Could not seed MinIO CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
+			exit 0
+		fi
+
+		for b in tachi-public tachi-private tachi-backups; do
+			"${MC[@]}" mb --ignore-existing "${MC_ALIAS}/${b}" 2>/dev/null || true
+		done
+
+		# Public reads only for tachi-public (dev/minio-tachi-public-bucket-policy.json). tachi-private and tachi-backups stay private.
+		if ! "${MC[@]}" anonymous set download "${MC_ALIAS}/tachi-public"; then
+			echo "Could not set anonymous download on tachi-public (MinIO up?)."
+		fi
+
+		if "${MC[@]}" cp --recursive typescript/server/example/default-cdn-contents/ "${MC_ALIAS}/tachi-public/"; then
+			echo "Uploaded default CDN assets to MinIO."
+		else
+			echo "Could not seed MinIO CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
+		fi
+		exit 0
+	)
+}
+
+function bunInstall {
+	echo "Installing dependencies..."
+
+	if ! command -v bun &> /dev/null
+	then
+		echo "Couldn't find bun. Can't install dependencies. Install it from https://bun.sh."
+		exit 1
+	fi
+
+	bun install
 
 	echo "Installed dependencies."
 }
 
-function setIndexes {
-	echo "Setting indexes..."
-
-	(
-		cd server
-		pnpm run set-indexes
-	)
-
-	echo "Set."
-
+function configureGitHooks {
+	echo "Configuring git hooks path..."
+	git config core.hooksPath .githooks
+	echo "Git hooks path set to .githooks."
 }
 
 function syncDatabaseWithSeeds {
 	echo "Syncing database with seeds..."
 
-	(
-		cd server
+	# TODO(zk)
+	echo "[DISABLED] FOR NOW"
+	return 0; 
 
-		pnpm run load-seeds
+	(
+		cd typescript/server
+
+		bun run load-seeds
 	)
 
 	echo "Synced."
@@ -101,28 +125,27 @@ function syncDatabaseWithSeeds {
 
 # always setup the shell
 setupShell
-mvExampleFiles
-selfSignHTTPS
-pnpmInstall
-installLocalDebs
+copyEnvExamples
+seedMinioCdn
+bunInstall
+configureGitHooks
 
-if [ -e BOOTSTRAP_OK ]; then
+if [ -e _SETUP_OK ] && [ $FORCE -eq 0 ]; then
 	echo "Already bootstrapped."
 	exit 0
 fi
 
-setIndexes
 syncDatabaseWithSeeds
 
 echo "Bootstrap Complete."
 
-cat << EOF > BOOTSTRAP_OK
-Tachi was bootstrapped here on $(date).
+cat << EOF > _SETUP_OK
+Tachi(v3) was setup here on $(date).
 
-The existence of this file stops Tachi from bootstrapping again.
-There's nothing harmful about this -- you can bootstrap as much as you want!
-We just don't want to necessarily bootstrap *each* time we boot Tachi.
+The existence of this file stops Tachi from running a setup again.
+There's nothing harmful about this -- you can setup as much as you want!
+We just don't want to necessarily setup *each* time we boot Tachi.
 
-To bootstrap again (in case you think something has gone wrong)
-Delete this file and re-run ./dev/bootstrap.sh
+To setup again (in case you think something has gone wrong)
+run 'just setup'.
 EOF

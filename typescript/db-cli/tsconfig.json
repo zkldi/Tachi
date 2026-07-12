@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"paths": {
+			"#*": ["./src/*"],
+			"tachi-db-migration-engine": ["../db-migration-engine/src/index.ts"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,64 @@
+# Build context must be the repo root (same as GHA docker-push: context `.`).
+# Respects .dockerignore (see repo root). Full tree copy keeps workspace installs correct.
+# docker build -f docker/Dockerfile.server \
+#   --build-arg VERSION="$(jq -r .version typescript/server/package.json)" \
+#   --build-arg VERSION_DETAIL="$(TZ=UTC0 git log -1 --format=%cd --date=format:%Y%m%d HEAD)-$(git rev-parse --short=7 HEAD)" \
+#   --build-arg GIT_REVISION="$(git rev-parse HEAD)" \
+#   --build-arg BUILD_TIME="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+#   -t tachi-server:local .
+#
+# Default CMD runs the API server. Override to run a worker:
+#   docker run tachi-server:local bun run ./typescript/server/src/job-queue-worker.ts
+#   docker run tachi-server:local bun run ./typescript/server/src/cron-worker.ts
+#
+# Worker containers use a file-based heartbeat (/tmp/worker-heartbeat) rather than HTTP,
+# so their HEALTHCHECK must be configured at the deployment layer (compose/k8s), not here.
+#
+# NOTE: bun build --compile is NOT used here because it's
+# FUCKING BROKEN
+
+# Bun version is pinned and kept in sync with Dockerfile.dev (which uses the
+# `-debian` variant of the same tag). Bump both together.
+FROM oven/bun:1.3.14-alpine AS deps
+WORKDIR /app
+COPY . .
+RUN bun install --frozen-lockfile
+
+FROM oven/bun:1.3.14-alpine AS prod
+
+ARG VERSION
+ARG VERSION_DETAIL
+ARG GIT_REVISION
+ARG BUILD_TIME
+# Fail the build if any arg is omitted (Docker has no required-ARG syntax).
+RUN set -eu; \
+	: "${VERSION:?Dockerfile.server: VERSION build-arg is required}"; \
+	: "${VERSION_DETAIL:?Dockerfile.server: VERSION_DETAIL build-arg is required}"; \
+	: "${GIT_REVISION:?Dockerfile.server: GIT_REVISION build-arg is required}"; \
+	: "${BUILD_TIME:?Dockerfile.server: BUILD_TIME build-arg is required}";
+
+ENV VERSION=${VERSION}
+ENV VERSION_DETAIL=${VERSION_DETAIL}
+ENV MIGRATIONS_DIR=/app/db/migrations
+ENV PORT=8080
+
+# curl is only needed by the API healthcheck below; workers don't use it.
+# git is needed by cron tasks that clone the seeds repo (BMS table sync, backsync, etc.).
+RUN apk add --no-cache curl git
+
+WORKDIR /app
+COPY --from=deps /app .
+
+LABEL service="tachi-server" \
+      org.opencontainers.image.source="https://github.com/zkldi/Tachi3" \
+      org.opencontainers.image.revision="${GIT_REVISION}" \
+      org.opencontainers.image.version="${VERSION}" \
+      org.opencontainers.image.created="${BUILD_TIME}"
+
+EXPOSE 8080
+
+# Matches the default CMD (API server). Worker deployments must override this.
+HEALTHCHECK --interval=15s --timeout=5s --start-period=30s \
+  CMD curl -sf http://localhost:8080/.deploy/up || exit 1
+
+CMD ["bun", "run", "./typescript/server/src/main.ts"]

@@ -1,0 +1,63 @@
+{
+	"name": "tachi-common",
+	"version": "2.4.0-dev",
+	"description": "Common Types & Utilities for Tachi",
+	"type": "module",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"scripts": {
+		"test": "vitest",
+		"bench": "vitest bench",
+		"build": "tsgo -p tsconfig.build.json",
+		"prepublishOnly": "tsgo -p tsconfig.build.json",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit"
+	},
+	"publishConfig": {
+		"main": "./build/index.js",
+		"exports": {
+			".": {
+				"types": "./build/index.d.ts",
+				"default": "./build/index.js"
+			},
+			"./*": {
+				"types": "./build/*.d.ts",
+				"default": "./build/*.js"
+			}
+		}
+	},
+	"author": "zk",
+	"license": "MIT",
+	"dependencies": {
+		"bms-table-loader": "catalog:",
+		"prudence": "catalog:",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"nyc": {
+		"reporter": [
+			"html",
+			"lcov"
+		],
+		"all": true,
+		"include": [
+			"src/*/!(test-utils)/**/*.ts"
+		],
+		"exclude": [
+			"src/**/*.test.ts"
+		]
+	}
+}

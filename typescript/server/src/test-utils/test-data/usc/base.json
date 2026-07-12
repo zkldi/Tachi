@@ -1,0 +1,33 @@
+{
+	"chart": {
+		"artist": "カモメサノ エレクトリックオーケストラ",
+		"bpm": "128",
+		"difficulty": 3,
+		"effector": "PHQUASE utopia",
+		"illustrator": "蒼弐 utopia",
+		"level": 20,
+		"title": "HE4VEN ～天国へようこそ～ hard bit",
+		"chartHash": "172970b99ec08e89d30a918d402b33abc91fcb61"
+	},
+	"score": {
+		"crit": 12,
+		"near": 0,
+		"error": 26,
+		"score": 3157894,
+		"gauge": 0.20073963701725006,
+		"timestamp": 1607229633,
+		"options": {
+			"gaugeType": 0,
+			"mirror": false,
+			"random": false,
+			"autoFlags": 0
+		},
+		"windows": {
+			"good": 150,
+			"hold": 150,
+			"miss": 300,
+			"perfect": 46,
+			"slam": 84
+		}
+	}
+}

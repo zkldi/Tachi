@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`maimai DX Rate Validation Tests > Should throw if lamp is ALL PERFECT but score is below 100%. 1`] = `"Invalid input, Cannot have an ALL PERFECT without at least 100%. score=99.9, lamp="ALL PERFECT"."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if lamp is ALL PERFECT+ but score is not 101%. 1`] = `"Invalid input, Cannot have an ALL PERFECT+ without 101%. score=100.5, lamp="ALL PERFECT+"."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if lamp is CLEAR but score is below 80%. 1`] = `"Invalid input, A score of <80% should not be a CLEAR. score=79, lamp="CLEAR"."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if lamp is FAILED but score is above 80%. 1`] = `"Invalid input, A score of >=80% should not be a FAILED. score=81, lamp="FAILED"."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if level is negative. 1`] = `"Invalid input, Internal chart level cannot be negative. level=-1."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if score is 101% but lamp is not ALL PERFECT+ 1`] = `"Invalid input, A score of 101% should be an ALL PERFECT+. score=101, lamp="ALL PERFECT"."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if score is greater than 101%. 1`] = `"Invalid input, Score cannot be greater than 101%. score=101.5."`;
+
+exports[`maimai DX Rate Validation Tests > Should throw if score is negative. 1`] = `"Invalid input, Score cannot be negative. score=-1."`;

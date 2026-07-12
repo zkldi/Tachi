@@ -1,7 +1,0 @@
-[private]
-interactive:
-	-@cd ../ && just
-
-# Run just the docs on http://127.0.0.1:3001.
-start:
-	mkdocs serve -a 0.0.0.0:3001

@@ -1,0 +1,85 @@
+POSTGRES_URL := "postgresql://tachi:tachi@tachi-postgres"
+# Test Postgres lives on tmpfs with durability disabled (docker-compose-dev.yml,
+# `tachi-postgres-test` service). Defaults to the dev Postgres so tests still run
+# in environments without the dedicated -test service; override via env var.
+POSTGRES_TEST_URL := env_var_or_default("POSTGRES_TEST_URL", "postgresql://tachi:tachi@tachi-postgres")
+DEFAULT_DB := "tachi_dev"
+
+# Open a psql shell against the local dev Postgres instance.
+db POSTGRES_DB=DEFAULT_DB:
+	psql "{{POSTGRES_URL}}/{{POSTGRES_DB}}"
+
+db-cheap-reset POSTGRES_DB=DEFAULT_DB:
+	#!/bin/bash
+	set -euo pipefail
+	# Disconnect all sessions using this DB so DROP DATABASE can succeed.
+	psql "{{POSTGRES_URL}}/postgres" -v ON_ERROR_STOP=1 -c \
+		"SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '{{POSTGRES_DB}}'"
+	export POSTGRES_URL="{{POSTGRES_URL}}/{{POSTGRES_DB}}"
+	tachidb database drop
+	tachidb database create
+	tachidb migrate run
+
+# Drop and recreate the database so migrations can be re-applied from scratch.
+db-reset POSTGRES_DB=DEFAULT_DB:
+	#!/bin/bash
+	set -euo pipefail
+
+	just db-cheap-reset "{{POSTGRES_DB}}"
+	just db-load-seeds "{{POSTGRES_DB}}"
+
+# Show the status of all applied (and failed) migrations.
+db-migrate-status POSTGRES_DB=DEFAULT_DB:
+	psql "{{POSTGRES_URL}}/{{POSTGRES_DB}}" -c \
+		"SELECT version, description, success, installed_on, execution_time || 'µs' AS execution_time \
+		 FROM \"_migration\" \
+		 ORDER BY version"
+
+# Load the seeds into the database.
+db-load-seeds POSTGRES_DB=DEFAULT_DB:
+	#!/bin/bash
+	set -euo pipefail
+	cd typescript/server
+	export POSTGRES_URL="{{POSTGRES_URL}}/{{POSTGRES_DB}}"
+	export SEEDS_DIR="../../db/seeds"
+	if [[ -z "${SEEDS_COMMIT_HASH:-}" ]]; then
+		SEEDS_COMMIT_HASH="$(git rev-parse HEAD 2>/dev/null || echo local)"
+	fi
+	export SEEDS_COMMIT_HASH
+	bun run src/scripts/load-seeds-pg.ts
+
+# Reset templatedb from migrations, then dump schema and indexes for local debugging.
+db-schema: (db-cheap-reset "templatedb")
+	pg_dump "{{POSTGRES_URL}}/templatedb" --schema-only --no-owner --no-acl -f db/schema.sql
+
+# Download (if needed) and restore an anonymised dataset dump into anon-$name on tachi-postgres.
+db-load-dataset:
+	#!/bin/bash
+	set -euo pipefail
+
+	datasets=(tachi-boku-2026-06 tachi-kamai-2026-06)
+
+	name=$(printf '%s\n' "${datasets[@]}" | fzf --prompt="Select dataset: ")
+	[[ -z "$name" ]] && exit 0
+
+	file="datasets/$name.sql.gz"
+	mkdir -p datasets
+
+	if [[ ! -f "$file" ]]; then
+		echo "Downloading $name.sql.gz from CDN..."
+		wget -O "$file" "https://cdn.tachi.ac/datasets/$name.sql.gz"
+	else
+		echo "Using cached $file"
+	fi
+
+	db_name="anon-$name"
+	db_url="postgresql://tachi:tachi@tachi-postgres:5432/$db_name"
+
+	psql "{{POSTGRES_URL}}/postgres" -c "DROP DATABASE IF EXISTS \"$db_name\""
+	psql "{{POSTGRES_URL}}/postgres" -c "CREATE DATABASE \"$db_name\""
+
+	echo "Restoring $file into $db_name..."
+	gunzip -c "$file" | psql -d "$db_url"
+
+	echo "Done. Change typescript/server/.env to use POSTGRES_URL=\"$db_url\""
+

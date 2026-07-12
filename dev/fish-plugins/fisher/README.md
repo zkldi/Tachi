@@ -1,12 +1,12 @@
 # Fisher
 
-> A plugin manager for [Fish](https://fishshell.com)—your friendly interactive shell. [Snag fresh plugins!](https://github.com/jorgebucaran/awsm.fish#readme)
+> A plugin manager for [Fish](https://fishshell.com)-your friendly interactive shell. [Snag fresh plugins!](https://github.com/jorgebucaran/awsm.fish#readme)
 
 Take control of functions, completions, bindings, and snippets from the command line. Unleash your shell's true potential, perfect your prompt, and craft repeatable configurations across different systems effortlessly. Fisher's zero impact on shell startup keeps your shell zippy and responsive. No gimmicks, just smooth sailing!
 
 - Fisher is 100% pure-Fish, making it easy to contribute or modify
 - Scorching fast concurrent plugin downloads that'll make you question reality
-- Zero configuration needed—we're not kidding!
+- Zero configuration needed-we're not kidding!
 - Oh My Fish! plugins supported too
 
 > #### ☝️ [Upgrading from Fisher `3.x` or older? Strap in and read this!](https://github.com/jorgebucaran/fisher/issues/652)
@@ -29,7 +29,7 @@ To install plugins, use the `install` command and point it to the GitHub reposit
 fisher install jorgebucaran/nvm.fish
 ```
 
-> Wanna install from GitLab? No problemo—just prepend `gitlab.com/` to the plugin path.
+> Wanna install from GitLab? No problemo-just prepend `gitlab.com/` to the plugin path.
 
 You can also snag a specific version of a plugin by adding an `@` symbol after the plugin name, followed by a tag, branch, or [commit](https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefcommit-ishacommit-ishalsocommittish).
 

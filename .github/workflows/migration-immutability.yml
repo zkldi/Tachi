@@ -1,0 +1,38 @@
+name: Migration immutability
+
+# Reject PRs that modify, delete, rename, or copy existing SQL migrations.
+# Adding new files under db/migrations/ is allowed.
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "db/migrations/**"
+      - ".github/workflows/migration-immutability.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  no-mutation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Reject modified or deleted migrations
+        run: |
+          set -euo pipefail
+          base="${{ github.event.pull_request.base.sha }}"
+          head="${{ github.event.pull_request.head.sha }}"
+          diff_out=$(git diff --name-status "$base" "$head" -- db/migrations/)
+          bad_lines=$(printf '%s\n' "$diff_out" | awk 'NF && $1 != "A" { print }' || true)
+          if [[ -n "$bad_lines" ]]; then
+            echo "::error::SQL migrations under db/migrations/ must not be modified, deleted, renamed, or copied. Add a new migration file instead."
+            echo "$bad_lines"
+            exit 1
+          fi

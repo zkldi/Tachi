@@ -4,40 +4,38 @@ on:
   push:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "common/**"
+      - "typescript/common/**"
+      - ".github/workflows/common.yml"
   pull_request:
     branches:
       - "main"
+      - "main-dev"
     paths:
-      - "common/**"
+      - "typescript/common/**"
+      - ".github/workflows/common.yml"
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zkldi/tachi-ci:main
+      options: --user root
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - uses: pnpm/action-setup@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          version: 8.15.6
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
+          persist-credentials: false
 
       - name: Install dependencies
-        run: pnpm --filter tachi-common... --filter . install
-
-      - name: Run Linter
-        run: pnpm --filter tachi-common lint
-        env:
-          NODE_ENV: "test"
+        run: bun install --frozen-lockfile
 
       - name: Run Tests
-        run: pnpm --filter tachi-common test
+        run: bun run --filter tachi-common test
         env:
           NODE_ENV: "test"

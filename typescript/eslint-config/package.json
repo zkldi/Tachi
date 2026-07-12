@@ -1,0 +1,42 @@
+{
+	"name": "eslint-config-tachi",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"exports": {
+		".": {
+			"default": "./index.js"
+		},
+		"./*": {
+			"default": "./*.js"
+		}
+	},
+	"dependencies": {
+		"@eslint-community/eslint-utils": "catalog:",
+		"@eslint-community/regexpp": "catalog:",
+		"@eslint/js": "catalog:",
+		"@typescript-eslint/eslint-plugin": "catalog:",
+		"@typescript-eslint/parser": "catalog:",
+		"@typescript-eslint/utils": "catalog:",
+		"eslint-config-prettier": "catalog:",
+		"eslint-import-resolver-typescript": "catalog:",
+		"eslint-plugin-import": "catalog:",
+		"eslint-plugin-unused-imports": "catalog:",
+		"eslint-plugin-jsx-a11y": "catalog:",
+		"eslint-plugin-perfectionist": "catalog:",
+		"eslint-plugin-react": "catalog:",
+		"eslint-plugin-react-hooks": "catalog:",
+		"eslint-plugin-react-refresh": "catalog:",
+		"globals": "catalog:",
+		"typescript-eslint": "catalog:"
+	},
+	"devDependencies": {
+		"@types/eslint__js": "catalog:"
+	},
+	"peerDependencies": {
+		"eslint": "^9.20.1",
+		"prettier": "^3.4.2"
+	}
+}

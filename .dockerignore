@@ -1,9 +1,26 @@
 .git
+.bun
+
+# Env files - keep secrets out of the build context; runtime env comes from orchestrator / secrets.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
 node_modules
-.tsbuildinfo
+tsconfig.json.tsbuildinfo
 **/node_modules
-**/.tsbuildinfo
+**/tsconfig.json.tsbuildinfo
+
+# Build outputs & tool caches
+**/dist
+**/build
+**/.turbo
+**/coverage
+**/.vite
 
 # Extracted data from iidx merge script
-seeds/scripts/rerunners/iidx/iidx-mdb-parse/ifs-output
-seeds/scripts/rerunners/iidx/iidx-mdb-parse/logs
+typescript/seeds-scripts/rerunners/iidx/iidx-mdb-parse/ifs-output
+typescript/seeds-scripts/rerunners/iidx/iidx-mdb-parse/logs

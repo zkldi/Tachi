@@ -1,0 +1,50 @@
+# Build context must be the repo root. Full tree + .dockerignore (see repo root).
+# docker build -f docker/Dockerfile.bot \
+#   --build-arg GIT_REVISION="$(git rev-parse HEAD)" \
+#   --build-arg BUILD_TIME="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+#   .
+
+FROM oven/bun:alpine AS base
+WORKDIR /app
+
+FROM base AS deps
+
+COPY . .
+RUN bun install --frozen-lockfile
+
+FROM deps AS build
+
+# Do not inline process.env at build time; binary reads runtime env from the host.
+# Do not auto-load dotenv inside the standalone executable.
+RUN bun build \
+  --compile \
+  --env=disable \
+  --no-compile-autoload-dotenv \
+  --target=bun \
+  ./typescript/bot/src/main.ts \
+  --outfile /bot
+
+# Runtime: `bun build --compile` links against libstdc++/libgcc; bare alpine:3.21 has neither.
+# --- prod: nothing but the binary ---
+FROM alpine:3.21 AS prod
+
+ARG GIT_REVISION
+ARG BUILD_TIME
+# Fail the build if any arg is omitted (Docker has no required-ARG syntax).
+RUN set -eu; \
+	: "${GIT_REVISION:?Dockerfile.bot: GIT_REVISION build-arg is required}"; \
+	: "${BUILD_TIME:?Dockerfile.bot: BUILD_TIME build-arg is required}";
+
+RUN apk add --no-cache curl libstdc++ libgcc
+
+COPY --from=build /bot /bot
+
+LABEL service="tachi-bot" \
+      org.opencontainers.image.source="https://github.com/zkldi/Tachi3" \
+      org.opencontainers.image.revision="${GIT_REVISION}" \
+      org.opencontainers.image.created="${BUILD_TIME}"
+
+HEALTHCHECK --interval=15s --timeout=5s --start-period=30s \
+  CMD curl -sf http://localhost:${PORT:-8080}/.deploy/up || exit 1
+
+CMD ["/bot"]

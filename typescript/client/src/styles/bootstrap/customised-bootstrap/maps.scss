@@ -1,0 +1,243 @@
+// known unused utilities are commented out. they can be added in and expanded when wanted
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"width": (
+			property: width,
+			class: w,
+			values: (
+				//1: 0.25rem,
+				2: 0.5rem,
+				//3: 0.75rem,
+				//4: 1.rem,
+				//6: 1.5em,
+				//8: 2rem,
+				//10: 2.5rem,
+				//12: 3rem,
+				14: 3.5rem,
+				//16: 4rem,
+				50: 50%,
+				//75: 75%,
+				100: 100%,
+				//half: 50%,
+				full: 100%,
+				min: min-content,
+				fit: fit-content,
+				max: max-content,
+				auto: auto,
+			),
+		),
+		"height": (
+			property: height,
+			class: h,
+			responsive: true,
+			values: (
+				//1: 0.25rem,
+				2: 0.5rem,
+				//3: 0.75rem,
+				//4: 1.rem,
+				//6: 1.5em,
+				//8: 2rem,
+				//10: 2.5rem,
+				//12: 3rem,
+				14: 3.5rem,
+				//16: 4rem,
+				//50: 50%,
+				//75: 75%,
+				100: 100%,
+				//half: 50%,
+				full: 100%,
+				min: min-content,
+				fit: fit-content,
+				max: max-content,
+				auto: auto,
+			),
+		),
+		"inset": (
+			property: inset,
+			class: inset,
+			values: (
+				0: 0,
+				//...
+			),
+		),
+		"animate": (
+			property: animation,
+			class: animate,
+			values: (
+				"fade-in": fade #{$transition-duration} ease-in forwards,
+				"fade-out": fade #{$transition-duration} ease-in backwards,
+			),
+		),
+		"backdrop-blur": (
+			property: backdrop-filter -webkit-backdrop-filter,
+			class: backdrop-blur,
+			values: (
+				//sm: blur(4px),
+				md: blur(8px),
+				//lg: blur(12px),
+				xl: blur(16px),
+			),
+		),
+		"background-color": (
+			property: background-color,
+			class: bg,
+			local-vars: (
+				"bg-opacity": 1,
+			),
+			state: hover,
+			values:
+				map-merge(
+					$utilities-bg-colors,
+					(
+						"transparent": transparent,
+						"body-secondary":
+							rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
+						"body-tertiary":
+							rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity)),
+						"body-emphasis":
+							rgba(var(--#{$prefix}emphasis-color-rgb), var(--#{$prefix}bg-opacity)),
+					)
+				),
+		),
+		"subtle-background-color": (
+			property: background-color,
+			class: bg,
+			state: hover,
+			values: $utilities-bg-subtle,
+		),
+		/*"bg-opacity": (
+            css-var: true,
+            class: bg-opacity,
+            state: hover focus,
+            values: (
+                10: 0.1,
+                25: 0.25,
+                50: 0.5,
+                75: 0.75,
+                100: 1
+            )
+        ),*/
+			"border-color":
+			(
+				property: border-color,
+				class: border,
+				local-vars: (
+					"border-opacity": 1,
+				),
+				values:
+					map-merge(
+						$utilities-border-colors,
+						(
+							body:
+								rgba(var(--#{$prefix}body-bg-rgb), var(--#{$prefix}border-opacity)),
+							body-secondary:
+								rgba(
+									var(--#{$prefix}secondary-bg-rgb),
+									var(--#{$prefix}border-opacity)
+								),
+							body-tertiary:
+								rgba(
+									var(--#{$prefix}tertiary-bg-rgb),
+									var(--#{$prefix}border-opacity)
+								),
+							translucent: var(--#{$prefix}border-color-translucent),
+						)
+					),
+			),
+		"box-shadow": (
+			property: box-shadow,
+			class: shadow,
+			responsive: true,
+			state: focus,
+			values: (
+				"sm": var(--#{$prefix}box-shadow-sm),
+				"md": var(--#{$prefix}box-shadow),
+				"lg": var(--#{$prefix}box-shadow-lg),
+				"inset": var(--#{$prefix}box-shadow-inset),
+				"none": none,
+			),
+		),
+		"color": (
+			property: color,
+			class: text,
+			local-vars: (
+				"text-opacity": 1,
+			),
+			state: (
+				hover,
+				focus,
+			),
+			values:
+				map-merge(
+					$utilities-text-colors,
+					(
+						"body-secondary": var(--#{$prefix}secondary-color),
+						"body-tertiary": var(--#{$prefix}tertiary-color),
+						"body-emphasis": var(--#{$prefix}emphasis-color),
+						"reset": inherit,
+					)
+				),
+		),
+		"text-color": (
+			property: color,
+			class: text,
+			state: hover,
+			values: $utilities-text-emphasis-colors,
+		),
+		"text-opacity": (
+			property: --#{$prefix}text-opacity,
+			class: text-opacity,
+			state: hover,
+			values: (
+				10: 10%,
+				25: 25%,
+				50: 50%,
+				75: 75%,
+				100: 100%,
+			),
+		),
+		"cursor": (
+			property: cursor,
+			class: cursor,
+			values: pointer not-allowed wait help default auto,
+		),
+		"transition": (
+			property: transition,
+			class: transition,
+			values: (
+				"color": color #{$transition-duration} ease-in-out,
+				"bg": background-color #{$transition-duration} ease-in-out,
+				"box-shadow": box-shadow #{$transition-duration} ease-in-out,
+			),
+		),
+		"overflow-y": (
+			property: overflow-y,
+			responsive: true,
+			values: auto hidden visible scroll,
+		),
+		"overflow-x": (
+			property: overflow-x,
+			responsive: true,
+			values: auto hidden visible scroll,
+		),
+		"overflow": (
+			property: overflow,
+			responsive: true,
+			values: auto hidden visible scroll,
+		),
+		"grid-rows": (
+			property: --#{$prefix}rows,
+			class: grid-rows,
+			responsive: true,
+			values: 1 2 3 4 5 6 7 8 9 10 11 12,
+		),
+		"grid-cols": (
+			property: --#{$prefix}columns,
+			class: grid-cols,
+			responsive: true,
+			values: 1 2 3 4 5 6 7 8 9 10 11 12,
+		),
+	)
+);

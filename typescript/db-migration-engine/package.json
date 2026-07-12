@@ -1,0 +1,43 @@
+{
+	"name": "tachi-db-migration-engine",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "A postgres migration engine for Tachi.",
+	"main": "./src/index.ts",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"build": "tsgo -p tsconfig.build.json",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"dependencies": {
+		"pg": "catalog:"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@types/node": "catalog:",
+		"@types/pg": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"typescript": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

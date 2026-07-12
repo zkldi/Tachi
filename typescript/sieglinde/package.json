@@ -1,0 +1,42 @@
+{
+	"name": "tachi-sieglinde",
+	"version": "0.1.0-see-project-root",
+	"description": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsgo -b",
+		"calc-v1": "bun run src/main.ts $@",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"typecheck": "tsgo --noEmit",
+		"test": "vitest",
+		"bench": "bun -e \"process.exit(0)\""
+	},
+	"author": "zk",
+	"license": "MIT",
+	"dependencies": {
+		"@types/node-fetch": "catalog:",
+		"bms-table-loader": "catalog:",
+		"commander": "catalog:",
+		"fast-xml-parser": "catalog:",
+		"node-fetch": "catalog:",
+		"tachi-common": "workspace:*"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"eslint-config-tachi": "workspace:*",
+		"vitest": "catalog:"
+	},
+	"engines": {
+		"bun": ">=1.2.0"
+	},
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	}
+}

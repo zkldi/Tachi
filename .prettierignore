@@ -1,0 +1,10 @@
+# Only check SCSS
+# please note that in typical JS tooling fashion, their gitignore implementation
+# is just wrong.
+# 
+# https://github.com/prettier/prettier/issues/14427
+
+*
+!*/
+
+!*.scss

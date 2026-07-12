@@ -1,43 +1,215 @@
 services:
-  mongo:
-    container_name: mongo
-    command: "--config /etc/mongod.conf"
-    image: mongo:5
-    restart: unless-stopped
-    ports:
-      - "27017:27017"
-    volumes:
-      - tachi-volume:/data/db
-      - "./dev/mongod.conf:/etc/mongod.conf"
-
-  redis:
-    container_name: redis
+  tachi-redis:
+    container_name: tachi-redis
     command: redis-server --save 60 1 --loglevel warning
-    image: redis:6
+    image: redis:7.4-alpine
     restart: unless-stopped
     ports:
       - "6379:6379"
     volumes:
       - tachi-redis:/data
+  tachi-postgres:
+    container_name: tachi-postgres
+    image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    command:
+      - postgres
+      - -c
+      - shared_preload_libraries=pg_stat_statements,auto_explain,pg_partman_bgw
+      - -c
+      - pg_partman_bgw.interval=3600
+      - -c
+      - pg_partman_bgw.dbname=tachi
+      - -c
+      - pg_stat_statements.track=all
+      - -c
+      - log_min_duration_statement=100
+      - -c
+      - log_line_prefix=%m [%p] %q%u@%d
+      - -c
+      - auto_explain.log_min_duration=500
+      - -c
+      - auto_explain.log_analyze=on
+      - -c
+      - auto_explain.log_buffers=on
+    environment:
+      POSTGRES_USER: tachi
+      POSTGRES_PASSWORD: tachi
+      POSTGRES_DB: tachi
+    volumes:
+      - tachi-postgres:/var/lib/postgresql
+      - "./dev/postgres-init.sql:/docker-entrypoint-initdb.d/init.sql"
+
+  # Dedicated test Postgres. Lives on tmpfs with durability disabled - every
+  # `CREATE DATABASE ... TEMPLATE`, every `TRUNCATE`, every commit is ~5-20x
+  # faster than the dev DB. Wiped on container restart, which is exactly what
+  # we want for tests.
+  tachi-postgres-test:
+    container_name: tachi-postgres-test
+    image: ghcr.io/zkldi/zk-postgres:18@sha256:484fa9e6501ec93c5729ba9f9312d8ee4dfe0c136f1b4881fab5e0aed5aa68fd
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    # NOTE: with `pool: "threads" + isolate: false` (vitest.config.ts) the
+    # vitest worker DBs are long-lived (~25-30 files of writes each), so
+    # autovacuum + a small WAL ceiling + a working bgwriter are NEEDED to
+    # avoid filling the tmpfs. Earlier we shipped autovacuum=off +
+    # max_wal_size=1GB + bgwriter_lru_maxpages=0 (which was fine for the
+    # short-lived per-file DBs of isolate:true) and tests started failing
+    # mid-run with `No space left on device`.
+    command:
+      - postgres
+      - -c
+      - fsync=off
+      - -c
+      - synchronous_commit=off
+      - -c
+      - full_page_writes=off
+      - -c
+      - wal_level=minimal
+      - -c
+      - max_wal_senders=0
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - max_connections=200
+      - -c
+      - max_wal_size=128MB
+      - -c
+      - min_wal_size=32MB
+      - -c
+      - checkpoint_timeout=30s
+      - -c
+      - autovacuum=on
+      - -c
+      - autovacuum_naptime=5s
+      - -c
+      - autovacuum_vacuum_scale_factor=0.05
+      - -c
+      - autovacuum_analyze_scale_factor=0.1
+      - -c
+      - shared_preload_libraries=pg_stat_statements,pg_partman_bgw
+      - -c
+      - pg_stat_statements.track=all
+    # Sized for ~16 concurrent worker DBs + template + WAL headroom.
+    # Each worker DB clone is ~150-250 MB post-migration, and `CREATE
+    # DATABASE ... TEMPLATE` can briefly double that during the copy.
+    tmpfs:
+      - /var/lib/postgresql/data:rw,size=6g
+    environment:
+      POSTGRES_USER: tachi
+      POSTGRES_PASSWORD: tachi
+      POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+  tachi-s3:
+    container_name: tachi-s3
+    image: quay.io/minio/minio:RELEASE.2024-10-29T16-01-48Z
+    environment:
+        MINIO_ROOT_USER: minio
+        MINIO_ROOT_PASSWORD: password
+    ports:
+        - "9000:9000"
+        - "9001:9001"
+    volumes:
+        - tachi-minio:/data
+    entrypoint: /usr/bin/minio server /data --console-address=':9001'
+
+  # Read emails on port 1025.
+  tachi-mailpit:
+    container_name: tachi-mailpit
+    image: axllent/mailpit:v1.29.7
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+
   tachi-dev:
     user: "1000:1000"
     tty: true
     container_name: tachi-dev
+    depends_on:
+      - tachi-s3
+      - tachi-mailpit
     build:
       dockerfile: Dockerfile.dev
     ports:
-      - "8080:8080" # server
       - "3000:3000" # client
       - "3001:3001" # docs
+      - "3002:3002" # homepage
+      - "3003:3003" # seeds
+      - "8080:8080" # server
+      - "9779:9779" # metrics
     volumes:
       - ./:/tachi
       # Mount your home files under your-pc, so you can easily access them
       - ~:/host-pc
-      # don't let pnpm's node_modules linkery bleed out of its container
+      # keep node_modules inside the container, not on the host mount
       - /tachi/node_modules/
-      - /tachi/.pnpm-store
+      - /tachi/.bun
+
+  # Local observability stack (Grafana + Prometheus + Alloy). Grafana UI: http://localhost:3005
+  # Alloy scrapes the API metrics endpoint at tachi-dev:9779 and remote-writes into Prometheus.
+  tachi-grafana:
+    container_name: tachi-grafana
+    image: grafana/grafana:12.4.2
+    restart: unless-stopped
+    depends_on:
+      - tachi-prometheus
+    ports:
+      - "3005:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: tachi
+      GF_SECURITY_ADMIN_PASSWORD: tachi
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_SERVER_HTTP_ADDR: 0.0.0.0
+      GF_SERVER_HTTP_PORT: "3000"
+      GF_SERVER_ROOT_URL: http://localhost:3005
+    volumes:
+      - tachi-grafana:/var/lib/grafana
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning
+      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards
+
+  tachi-prometheus:
+    container_name: tachi-prometheus
+    image: prom/prometheus:v3.11.0
+    restart: unless-stopped
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.enable-lifecycle
+      - --web.enable-remote-write-receiver
+    ports:
+      - "9090:9090"
+    volumes:
+      - tachi-prometheus:/prometheus
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  tachi-alloy:
+    container_name: tachi-alloy
+    image: grafana/alloy:v1.15.0
+    restart: unless-stopped
+    depends_on:
+      - tachi-prometheus
+    command:
+      - run
+      - --server.http.listen-addr=0.0.0.0:12345
+      - --storage.path=/var/lib/alloy/data
+      - /etc/alloy/config.alloy
+    ports:
+      - "12345:12345"
+    # Writable WAL path (named volumes are often root-owned; Alloy runs non-root and can crash-loop).
+    tmpfs:
+      - /var/lib/alloy/data
+    volumes:
+      - ./observability/alloy-config.alloy:/etc/alloy/config.alloy
 
 volumes:
-  tachi-volume:
   tachi-redis:
   tachi-logs:
+  tachi-postgres:
+  tachi-minio:
+  tachi-grafana:
+  tachi-prometheus:

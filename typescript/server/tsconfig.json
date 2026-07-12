@@ -1,0 +1,14 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"lib": ["ES2022"],
+		"types": ["bun"],
+		"paths": {
+			"#*": ["./src/*"]
+		}
+	},
+	"include": ["src", "vitest.config.ts", "vitest.globalSetup.ts", "vitest.setup.ts"],
+	"exclude": ["node_modules"]
+}
