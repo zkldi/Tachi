@@ -9,7 +9,6 @@ import {
 	CreateQuestID,
 	CreateSongID,
 	CreateTableID,
-	randomHex,
 } from "tachi-common";
 
 import DeterministicCollectionSort from "./sort-seeds.js";
@@ -136,5 +135,4 @@ export {
 	CreateSongID,
 	CreateTableID,
 	GetSongCollectionGameGroup as GetSongCollectionGame,
-	randomHex,
 };

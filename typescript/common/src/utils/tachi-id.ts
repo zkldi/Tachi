@@ -1,4 +1,4 @@
-export function randomHex(byteLength: number): string {
+function randomHex(byteLength: number): string {
 	const buf = new Uint8Array(byteLength);
 
 	globalThis.crypto.getRandomValues(buf);

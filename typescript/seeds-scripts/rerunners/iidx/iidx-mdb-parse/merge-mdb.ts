@@ -16,11 +16,16 @@ import {
 	CreateChartID,
 	CreateSongID,
 	GetFreshSongIDGenerator,
-	randomHex,
 	ReadCollection,
 	WriteCollection,
 } from "../../../util";
 import { ParseIIDXData } from "./convert";
+
+function randomHex(bytes: any) {
+	const buf = new Uint8Array(bytes);
+	globalThis.crypto.getRandomValues(buf);
+	return Array.from(buf, (b) => b.toString(16).padStart(2, "0")).join("");
+}
 
 if (require.main !== module) {
 	throw new Error(`This is a script. It should be ran directly from the command line with bun.`);
