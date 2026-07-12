@@ -331,13 +331,32 @@ function ConvertGhostGauge(rawHex: string): Array<number> | null {
 
 	const graph = [];
 	const MAX_VAL = 5000;
+	let failed = false;
 
 	for (let i = 0; i < rawHex.length; i += 4) {
 		const chunk = rawHex.slice(i, i + 4);
 		const bigEndianHex = chunk.slice(2, 4) + chunk.slice(0, 2);
 		const rawValue = parseInt(bigEndianHex, 16);
+
+		if (rawValue > MAX_VAL) {
+			failed = true; // We've encountered a status flag seemingly indicating death.
+			graph.push(0.0);
+			break;
+		}
 		const percentage = (rawValue / MAX_VAL) * 100;
 		graph.push(Number(percentage.toFixed(2)));
+	}
+
+	// Remove padding 0s at the end of a normal play.
+	if (!failed) {
+		let lastDataIndex = -1;
+		for (let i = graph.length - 1; i >= 0; i--) {
+			if (graph[i] > 0) {
+				lastDataIndex = i;
+				break;
+			}
+		}
+		return lastDataIndex === -1 ? null : graph.slice(0, lastDataIndex + 1);
 	}
 
 	return graph;
