@@ -74,7 +74,7 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 				great: data.greatCount,
 			},
 			optional: {
-				bp: data.missCount === -1 ? null : data.missCount,
+				bp: data.missCount,
 				gaugeHistory: ConvertGhostGauge(data.ghostGauge),
 			},
 		},

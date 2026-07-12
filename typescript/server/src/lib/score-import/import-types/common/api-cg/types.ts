@@ -33,7 +33,7 @@ export interface CGIIDXScore {
 	clearType: integer;
 	perfectCount: integer;
 	greatCount: integer;
-	missCount: integer;
+	missCount: integer | null;
 	dead: integer;
 	ghost: string;
 	ghostGauge: string;
