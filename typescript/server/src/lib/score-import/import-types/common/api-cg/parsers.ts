@@ -32,8 +32,8 @@ const PR_CG_IIDX = {
 	perfectCount: p.isPositiveInteger,
 	greatCount: p.isPositiveInteger,
 
-	// missCount is -1 when it's not recorded, so we have to allow that.
-	missCount: p.or(p.isPositiveInteger, p.is(-1)),
+	// missCount is null when it's not recorded, so we have to allow that.
+	missCount: p.or(p.isPositiveInteger, p.is(null)),
 
 	// unused
 	dead: p.any,
