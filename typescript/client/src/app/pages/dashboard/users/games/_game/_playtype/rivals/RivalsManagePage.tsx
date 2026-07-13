@@ -119,9 +119,12 @@ function RivalsOverviewPage({
 		return <div>Looks like you're not signed in. How did you get to this page?</div>;
 	}
 
+	const rivalIdsKey = (users: Array<UserDocument>) => users.map((e) => e.id).join(",");
+	const hasUnsavedRivalChanges = rivalIdsKey(currentRivals) !== rivalIdsKey(rivals);
+
 	return (
 		<>
-			{isRequestingUser && currentRivals.toString() !== rivals.toString() && (
+			{isRequestingUser && hasUnsavedRivalChanges && (
 				<Alert className="vstack" variant="warning">
 					<Prompt
 						message={
