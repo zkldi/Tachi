@@ -167,13 +167,6 @@ function ImportInfoDisplayer({ game }: { game: GameGroup }) {
 			<ImportTypeInfoCard importType="api/cg-gan-iidx" key="api/cg-gan-iidx" />,
 			<ImportTypeInfoCard importType="api/cg-nag-iidx" key="api/cg-nag-iidx" />,
 			<ImportTypeInfoCard importType="api/cg-dev-iidx" key="api/cg-dev-iidx" />,
-			<ImportInfoCard
-				desc="Use your data from a CG instance (Dev/GAN/NAG)."
-				href="kt-cg-iidx-importer"
-				key="IIDX CG Site Importer"
-				moreInfo="Note: All networks are reduced to their first three letters for anonymity reasons."
-				name="IIDX CG Site Importer"
-			/>,
 			<ImportTypeInfoCard importType="file/solid-state-squad" key="file/solid-state-squad" />,
 			<ImportTypeInfoCard importType="file/pli-iidx-csv" key="file/pli-iidx-csv" />,
 		);

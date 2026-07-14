@@ -7,7 +7,6 @@ import ChunitachiPage from "#app/pages/dashboard/import/ChunitachiPage";
 import ChunithmMYTExport from "#app/pages/dashboard/import/ChunithmMYTExportPage";
 import ChunithmSiteImportPage from "#app/pages/dashboard/import/ChunithmSiteImportPage";
 import FervidexPage from "#app/pages/dashboard/import/FervidexPage";
-import IIDXCGSiteImportPage from "#app/pages/dashboard/import/IIDXCGSiteImportPage";
 import IIDXEamCSVPage from "#app/pages/dashboard/import/IIDXEamCSVPage";
 import ImportClassPage from "#app/pages/dashboard/import/ImportClassPage";
 import ImportPage from "#app/pages/dashboard/import/ImportPage";
@@ -247,10 +246,6 @@ export default function ImportRoutes() {
 							</Route>
 							<Route exact path="/import/cg-gan-iidx">
 								<CGIntegrationPage cgType="gan" game="iidx" />
-							</Route>
-
-							<Route exact path="/import/kt-cg-iidx-importer">
-								<IIDXCGSiteImportPage />
 							</Route>
 
 							<Route exact path="/import/myt-chunithm">
