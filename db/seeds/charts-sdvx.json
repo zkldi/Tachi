@@ -191747,5 +191747,245 @@
 		"versions": [
 			"nabla"
 		]
+	},
+	{
+		"data": {
+			"inGameID": 2298
+		},
+		"difficulty": "ADV",
+		"id": "C19f6b1cd40c50ddbc0b",
+		"isPrimary": true,
+		"legacyChartID": "0637318b9c2da521736702d1e991cc7084460ab0",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19f6b1cd40a179fcdda",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2298
+		},
+		"difficulty": "EXH",
+		"id": "C19f6b1cd40c300f6c4d",
+		"isPrimary": true,
+		"legacyChartID": "f499c04df1cd73ddf06dfa91d2f5394e0a6b4e67",
+		"level": "16",
+		"levelNum": 16,
+		"songID": "S19f6b1cd40a179fcdda",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2298
+		},
+		"difficulty": "MXM",
+		"id": "C19f6b1cd40cc2acba26",
+		"isPrimary": true,
+		"legacyChartID": "66bc4d26c663ac7a25e23468223c24957f34ba59",
+		"level": "18.2",
+		"levelNum": 18.2,
+		"songID": "S19f6b1cd40a179fcdda",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2298
+		},
+		"difficulty": "NOV",
+		"id": "C19f6b1cd40c4cfab399",
+		"isPrimary": true,
+		"legacyChartID": "bf13d175a7f52b23aea3f2b52451fd2e704d91dd",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f6b1cd40a179fcdda",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2304
+		},
+		"difficulty": "ADV",
+		"id": "C19f6b1cd40dd8eec655",
+		"isPrimary": true,
+		"legacyChartID": "ed5bfdf49856aa1b444bcb13032fe5909f7a2d94",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S19f6b1cd40d41888f9b",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2304
+		},
+		"difficulty": "EXH",
+		"id": "C19f6b1cd40ddd3d245f",
+		"isPrimary": true,
+		"legacyChartID": "df8a3140c4673ad9bdd78c2f472fee42ad74c66a",
+		"level": "15",
+		"levelNum": 15,
+		"songID": "S19f6b1cd40d41888f9b",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2304
+		},
+		"difficulty": "MXM",
+		"id": "C19f6b1cd40d2d952584",
+		"isPrimary": true,
+		"legacyChartID": "acc20011b157ae95d79f1f11ed1e5b1d9e5ecc42",
+		"level": "17.5",
+		"levelNum": 17.5,
+		"songID": "S19f6b1cd40d41888f9b",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2304
+		},
+		"difficulty": "NOV",
+		"id": "C19f6b1cd40dfb6ad2c8",
+		"isPrimary": true,
+		"legacyChartID": "d9a46b32b9ef37b9b50b7a8909f3bece5ca774dd",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19f6b1cd40d41888f9b",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2307
+		},
+		"difficulty": "ADV",
+		"id": "C19f6b1cd40d3e7fe7f1",
+		"isPrimary": true,
+		"legacyChartID": "4263e4df923e2878b0a7dd64cb9551edd7616475",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19f6b1cd40d4247391d",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2307
+		},
+		"difficulty": "EXH",
+		"id": "C19f6b1cd40d93fdbab9",
+		"isPrimary": true,
+		"legacyChartID": "4971c964d8e47884a4702e4cc17260a8cb9a88a7",
+		"level": "16",
+		"levelNum": 16,
+		"songID": "S19f6b1cd40d4247391d",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2307
+		},
+		"difficulty": "MXM",
+		"id": "C19f6b1cd40d92084e1e",
+		"isPrimary": true,
+		"legacyChartID": "1f8acc2d0c17ee6076cda50780eead7608dd2ad7",
+		"level": "18.7",
+		"levelNum": 18.7,
+		"songID": "S19f6b1cd40d4247391d",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2307
+		},
+		"difficulty": "NOV",
+		"id": "C19f6b1cd40d58ace82f",
+		"isPrimary": true,
+		"legacyChartID": "9453961953418de3a87329fd98ce0b468c341011",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f6b1cd40d4247391d",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2311
+		},
+		"difficulty": "ADV",
+		"id": "C19f6b1cd40d283dc9a3",
+		"isPrimary": true,
+		"legacyChartID": "e95e22ed09126794240de0e8103f883e5d97a89c",
+		"level": "13",
+		"levelNum": 13,
+		"songID": "S19f6b1cd40d7b495efd",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2311
+		},
+		"difficulty": "EXH",
+		"id": "C19f6b1cd40d2dc01f5f",
+		"isPrimary": true,
+		"legacyChartID": "765b15d515c9bad8b973fbd8e58d0876713a318b",
+		"level": "16",
+		"levelNum": 16,
+		"songID": "S19f6b1cd40d7b495efd",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2311
+		},
+		"difficulty": "MXM",
+		"id": "C19f6b1cd40d8e9a6c49",
+		"isPrimary": true,
+		"legacyChartID": "b443cb452fd4c276c4701c389a4bd1432f9853a9",
+		"level": "18.6",
+		"levelNum": 18.6,
+		"songID": "S19f6b1cd40d7b495efd",
+		"versions": [
+			"nabla"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 2311
+		},
+		"difficulty": "NOV",
+		"id": "C19f6b1cd40ddbe6258a",
+		"isPrimary": true,
+		"legacyChartID": "b10fe4fef720b2e397f1e7c9e991b4e779b55399",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19f6b1cd40d7b495efd",
+		"versions": [
+			"nabla"
+		]
 	}
 ]
