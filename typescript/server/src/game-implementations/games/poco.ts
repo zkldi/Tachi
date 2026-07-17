@@ -75,17 +75,17 @@ export const POLARISCHORD_IMPL: GameImplementation<"poco"> = {
 			if (opt) {
 				if (
 					opt.fast === undefined &&
-					opt.fastBad !== undefined &&
-					opt.fastGood !== undefined &&
-					opt.fastGreat !== undefined
+					opt.fastBad != null &&
+					opt.fastGood != null &&
+					opt.fastGreat != null
 				) {
 					opt.fast = opt.fastBad + opt.fastGood + opt.fastGreat;
 				}
 				if (
 					opt.slow === undefined &&
-					opt.slowBad !== undefined &&
-					opt.slowGood !== undefined &&
-					opt.slowGreat !== undefined
+					opt.slowBad != null &&
+					opt.slowGood != null &&
+					opt.slowGreat != null
 				) {
 					opt.slow = opt.slowBad + opt.slowGood + opt.slowGreat;
 				}
