@@ -60,6 +60,8 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 		throw new InternalFailure(`Song-Chart desync with song ID ${chart.song.id} (iidx).`);
 	}
 
+	const gaugeHistory = ConvertGhostGauge(data.ghostGauge);
+
 	const dryScore: DryScore<"iidx-dp" | "iidx-sp"> = {
 		comment: null,
 		game: game,
@@ -75,7 +77,8 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 			},
 			optional: {
 				bp: data.missCount,
-				gaugeHistory: ConvertGhostGauge(data.ghostGauge),
+				gauge: gaugeHistory ? gaugeHistory[gaugeHistory.length - 1] : undefined,
+				gaugeHistory: gaugeHistory,
 			},
 		},
 		scoreMeta: ConvertOptions(data),
