@@ -127,12 +127,12 @@ export type V3Game =
 	| "ongeki"
 	| "pms-controller"
 	| "pms-keyboard"
+	| "poco"
 	| "popn"
 	| "sdvx"
 	| "usc-controller"
 	| "usc-keyboard"
-	| "wacca"
-	| "poco";
+	| "wacca";
 
 export interface GameGroupFromGame {
 	arcaea: "arcaea";
@@ -183,12 +183,12 @@ export type LEGACY_V3GameToGPTString = {
 	ongeki: "ongeki:Single";
 	"pms-controller": "pms:Controller";
 	"pms-keyboard": "pms:Keyboard";
+	poco: "poco:Single";
 	popn: "popn:9B";
 	sdvx: "sdvx:Single";
 	"usc-controller": "usc:Controller";
 	"usc-keyboard": "usc:Keyboard";
 	wacca: "wacca:Single";
-	poco: "poco:Single";
 };
 
 /**
@@ -213,12 +213,12 @@ export type LEGACY_GPTStringToV3Game = {
 	"ongeki:Single": "ongeki";
 	"pms:Controller": "pms-controller";
 	"pms:Keyboard": "pms-keyboard";
+	"poco:Single": "poco";
 	"popn:9B": "popn";
 	"sdvx:Single": "sdvx";
 	"usc:Controller": "usc-controller";
 	"usc:Keyboard": "usc-keyboard";
 	"wacca:Single": "wacca";
-	"poco:Single": "poco";
 };
 
 /// Get all the games that exist for this game group.

@@ -123,7 +123,7 @@ export function DisplayLevelNum({
 		return null;
 	}
 
-	if (["arcaea", "chunithm", "maimai", "maimaidx", "ongeki", "wacca", "polarischord"].includes(game)) {
+	if (["arcaea", "chunithm", "maimai", "maimaidx", "ongeki", "poco", "wacca"].includes(game)) {
 		return (
 			<Muted>
 				{prefix}

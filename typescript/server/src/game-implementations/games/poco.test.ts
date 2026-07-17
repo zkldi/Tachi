@@ -1,5 +1,6 @@
-import { POLARISCHORD_IMPL } from "#game-implementations/games/poco";
 import type { ChartDocument } from "tachi-common";
+
+import { POLARISCHORD_IMPL } from "#game-implementations/games/poco";
 import { describe, expect, it } from "vitest";
 
 const mockChart = {
@@ -81,7 +82,7 @@ describe("POLARISCHORD_IMPL", () => {
 					{ scoreData: { lamp: "ALL PERFECT", percent: 99.9 } } as any,
 					null as any,
 				),
-			).toMatch(/ALL PERFECT scores must have a 100% percent/);
+			).toMatch(/ALL PERFECT scores must have a 100% percent/u);
 			expect(
 				apValidator(
 					{ scoreData: { lamp: "ALL PERFECT", percent: 100 } } as any,
@@ -96,7 +97,7 @@ describe("POLARISCHORD_IMPL", () => {
 					{ scoreData: { lamp: "FULL COMBO", judgements: { miss: 1 } } } as any,
 					null as any,
 				),
-			).toMatch(/Cannot have a FULL COMBO with misses/);
+			).toMatch(/Cannot have a FULL COMBO with misses/u);
 			expect(
 				fcValidator(
 					{ scoreData: { lamp: "FULL COMBO", judgements: { miss: 0 } } } as any,
@@ -111,7 +112,7 @@ describe("POLARISCHORD_IMPL", () => {
 					{ scoreData: { lamp: "ALL PERFECT", judgements: { good: 1 } } } as any,
 					null as any,
 				),
-			).toMatch(/Cannot have an ALL PERFECT/);
+			).toMatch(/Cannot have an ALL PERFECT/u);
 			expect(
 				apJudgementsValidator(
 					{

@@ -144,7 +144,7 @@ export const GAME_POLARISCHORD_CONF = {
 			goalTitleFormatter: (v) => `Get ${v} Honeycombs in`,
 			goalOutOfFormatter: (v) => `${v} Honeycombs`,
 			description: "Successful honeycomb judgements.",
-		}
+		},
 	},
 
 	defaultMetric: "percent",

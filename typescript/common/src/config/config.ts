@@ -34,6 +34,7 @@ import {
 	GAME_PMS_CONTROLLER_CONF,
 	GAME_PMS_KEYBOARD_CONF,
 } from "./game-support/pms";
+import { GAME_GROUP_POLARISCHORD_CONF, GAME_POLARISCHORD_CONF } from "./game-support/poco";
 import { GAME_GROUP_POPN_CONF, GAME_POPN_CONF } from "./game-support/popn";
 import { GAME_GROUP_SDVX_CONF, GAME_SDVX_CONF } from "./game-support/sdvx";
 import {
@@ -42,7 +43,6 @@ import {
 	GAME_USC_KEYBOARD_CONF,
 } from "./game-support/usc";
 import { GAME_GROUP_WACCA_CONF, GAME_WACCA_CONF } from "./game-support/wacca";
-import { GAME_GROUP_POLARISCHORD_CONF, GAME_POLARISCHORD_CONF } from "./game-support/poco";
 
 /**
  * All game groups that Tachi supports.
