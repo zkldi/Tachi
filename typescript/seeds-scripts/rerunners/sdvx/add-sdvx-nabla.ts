@@ -13,6 +13,7 @@ program.parse(process.argv);
 const options = program.opts();
 
 const VERSION = "nabla";
+const VERSION_OMNI = "nabla-omni";
 
 type XMLText<T> = { "#text": T };
 
@@ -211,7 +212,7 @@ for (const entry of xml.mdb.music) {
 			level,
 			levelNum,
 			songID,
-			versions: [VERSION],
+			versions: [VERSION, VERSION_OMNI],
 		};
 		charts.push(chart);
 		chartByKey.set(key, chart);
