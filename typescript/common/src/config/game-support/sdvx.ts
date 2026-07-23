@@ -210,6 +210,8 @@ export const GAME_SDVX_CONF = {
 		vivid: "VIVID WAVE",
 		exceed: "EXCEED GEAR",
 		nabla: "NABLA",
+		"exceed-omni": "EXCEED GEAR Omnimix",
+		"nabla-omni": "NABLA Omnimix",
 		konaste: "Konaste",
 	},
 
