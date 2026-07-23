@@ -50283,6 +50283,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90e2417a983dff3c",
+		"inactive": false,
+		"legacyFolderID": "Ffddd36377a90724b269e493cb71a33dbcf1a36e3e8a825e19aa98fa0a714de59",
+		"searchTerms": [],
+		"slug": "1-exceed-omni",
+		"title": "Level 1 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19d35f0cf2a1c41096d",
 		"inactive": false,
 		"legacyFolderID": "Fc87850208f0703651560980d04bc5e0c4f326c2f5dbe688d51029a63abdd4c5f",
@@ -50322,6 +50335,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9fccc033c1",
+		"inactive": false,
+		"legacyFolderID": "Ff8f16bc8765d4974fe5119fbfb4208cfa58c5468e16b3079560eab3d58a65df4",
+		"searchTerms": [],
+		"slug": "1-nabla-omni",
+		"title": "Level 1 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94105487528",
 		"inactive": false,
 		"legacyFolderID": "F06c91aacb43ee04f91d4177f9d49d29a6dfc2fc1cfeef36b9f3e34f1284ff878",
@@ -50345,6 +50371,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '1'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417aad8298bf",
+		"inactive": false,
+		"legacyFolderID": "F2296386f327960e3918fa61105e36ca99e1fbbf733f032ea6730a81c19740a18",
+		"searchTerms": [],
+		"slug": "10-exceed-omni",
+		"title": "Level 10 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '10'"
 	},
 	{
 		"game": "sdvx",
@@ -50387,6 +50426,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9ffebe8068",
+		"inactive": false,
+		"legacyFolderID": "F8e609dc398223614cb409031c562e65f99e92c45ef41bd34683ac58a08516e4c",
+		"searchTerms": [],
+		"slug": "10-nabla-omni",
+		"title": "Level 10 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942444b4c56",
 		"inactive": false,
 		"legacyFolderID": "F970863cec6edbbe00b06f52ec90cc460a73e93375f7533b6920ee332caf62bf3",
@@ -50410,6 +50462,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '10'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417ad7a215be",
+		"inactive": false,
+		"legacyFolderID": "F58b36c9b84deeeb9946ec9989fcedf28f40ad3e1ee224cb648892c42b248c932",
+		"searchTerms": [],
+		"slug": "11-exceed-omni",
+		"title": "Level 11 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '11'"
 	},
 	{
 		"game": "sdvx",
@@ -50452,6 +50517,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9fc93dfac4",
+		"inactive": false,
+		"legacyFolderID": "F82495569b0bd527e509f74747df17a8d092f21b2d105eb33e61df07a9fb65e2f",
+		"searchTerms": [],
+		"slug": "11-nabla-omni",
+		"title": "Level 11 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a9425d117c9f",
 		"inactive": false,
 		"legacyFolderID": "F4045668507fd550b4419d7cea09d910dff69344863e76ccaa57d371911993412",
@@ -50475,6 +50553,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '11'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a35d3c1fb",
+		"inactive": false,
+		"legacyFolderID": "F51ad89116b86f37debe4ec80fc3c71e103517eb0b283ba77bc096ac90c75f2a4",
+		"searchTerms": [],
+		"slug": "12-exceed-omni",
+		"title": "Level 12 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '12'"
 	},
 	{
 		"game": "sdvx",
@@ -50517,6 +50608,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9ff25b492e",
+		"inactive": false,
+		"legacyFolderID": "F9c886c06db481a6a01c61cf7dcd128cab717e230e41fe52b3bca2bb80328961a",
+		"searchTerms": [],
+		"slug": "12-nabla-omni",
+		"title": "Level 12 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94235340bef",
 		"inactive": false,
 		"legacyFolderID": "F1e79c7a470afc3951b4f83e4609c55464e70d5f149c584eb613dfaa632f8136b",
@@ -50540,6 +50644,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '12'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a3ad2011f",
+		"inactive": false,
+		"legacyFolderID": "Fcd3113fa1dcc6a995f58a18f3af80878951e333bf70646fcf4b206427b4ac14d",
+		"searchTerms": [],
+		"slug": "13-exceed-omni",
+		"title": "Level 13 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '13'"
 	},
 	{
 		"game": "sdvx",
@@ -50582,6 +50699,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f5e66183b",
+		"inactive": false,
+		"legacyFolderID": "Fcdfd96fd17cda358c3199db3d329bb1227a7acb2489928b2fc18c8c0c80cd19c",
+		"searchTerms": [],
+		"slug": "13-nabla-omni",
+		"title": "Level 13 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94212d9d5b6",
 		"inactive": false,
 		"legacyFolderID": "F4c37c527e97a10aa71cd49319c54724d95e5659d90ddb794cedc5acd02479f31",
@@ -50605,6 +50735,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '13'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417ac1560b61",
+		"inactive": false,
+		"legacyFolderID": "Fcc8d85afd101e39088809fc5cd161885b2193eb4544dabffca712d3cf8f151f5",
+		"searchTerms": [],
+		"slug": "14-exceed-omni",
+		"title": "Level 14 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '14'"
 	},
 	{
 		"game": "sdvx",
@@ -50647,6 +50790,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9fc0264000",
+		"inactive": false,
+		"legacyFolderID": "F435a6480fcf6ddc80cec54932057a993ebe96dbdd058d65064092edf4258c33d",
+		"searchTerms": [],
+		"slug": "14-nabla-omni",
+		"title": "Level 14 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942a93b25dd",
 		"inactive": false,
 		"legacyFolderID": "F5cbddfe1699d57b247a5ab3cd000e7b2b77b5e970fc2bcf5fe7b0d4aeddd8716",
@@ -50670,6 +50826,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '14'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a35e33cfa",
+		"inactive": false,
+		"legacyFolderID": "F60fb76589880d55f346978983e6b20bb85f737c77d2255a6816770c795d2e586",
+		"searchTerms": [],
+		"slug": "15-exceed-omni",
+		"title": "Level 15 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '15'"
 	},
 	{
 		"game": "sdvx",
@@ -50712,6 +50881,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f6f7f3c50",
+		"inactive": false,
+		"legacyFolderID": "F391eefa61695c89246bc01f19b13f289c471260a9c78dba1b8131d3199effc0b",
+		"searchTerms": [],
+		"slug": "15-nabla-omni",
+		"title": "Level 15 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942d12d2bcd",
 		"inactive": false,
 		"legacyFolderID": "F9a5bc24a0d80df92beb16a0bd901af37e24a4a82ff934cd210d1fe39580cdfe8",
@@ -50735,6 +50917,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '15'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a9de14d56",
+		"inactive": false,
+		"legacyFolderID": "F7d831f5df9b8adc629b5710b7cb1a3205bb01d1495a69ef83540a3785d8da2d2",
+		"searchTerms": [],
+		"slug": "16-exceed-omni",
+		"title": "Level 16 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '16'"
 	},
 	{
 		"game": "sdvx",
@@ -50777,6 +50972,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9fae575fd1",
+		"inactive": false,
+		"legacyFolderID": "F9a9bce83112fae4cf452b70487e541d11112574ddbccee9c47aca830a584ca22",
+		"searchTerms": [],
+		"slug": "16-nabla-omni",
+		"title": "Level 16 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942225ed289",
 		"inactive": false,
 		"legacyFolderID": "F7cb5d43e93e0a7947433629e21cf0bada5b71468925cfd00fa3a5eb6b63e2764",
@@ -50800,6 +51008,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '16'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417adcaf536f",
+		"inactive": false,
+		"legacyFolderID": "F0f4fbac153759bc2ac9235b4328e8f85b9a3d1e03a337a26a7f5cad7fafcd19d",
+		"searchTerms": [],
+		"slug": "17-exceed-omni",
+		"title": "Level 17 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
 	},
 	{
 		"game": "sdvx",
@@ -50842,6 +51063,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f7b750714",
+		"inactive": false,
+		"legacyFolderID": "Ff7384c38aafc89ccbfd725e0a0a8b636a3b2051d516865332bdf5233f7defab0",
+		"searchTerms": [],
+		"slug": "17-nabla-omni",
+		"title": "Level 17 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level_num >= 17 AND chart.level_num < 18"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942390eb617",
 		"inactive": false,
 		"legacyFolderID": "Fa7f8a1b2ae78df26c3331df5f540a040bbd86a1db1b05d739ecdfc670aeb9637",
@@ -50865,6 +51099,19 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 17 AND chart.level_num < 18"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417aa917f35a",
+		"inactive": false,
+		"legacyFolderID": "F904a645a14eb3edfe839e899516d34bd64a08ba970d686c1e635d7764d8cbefe",
+		"searchTerms": [],
+		"slug": "18-exceed-omni",
+		"title": "Level 18 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
 	},
 	{
 		"game": "sdvx",
@@ -50907,6 +51154,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f92f1ad56",
+		"inactive": false,
+		"legacyFolderID": "Fb08a7427eae15d844e98b73ba20af03cc5597a73d6b6aa4029debe103285ecd0",
+		"searchTerms": [],
+		"slug": "18-nabla-omni",
+		"title": "Level 18 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level_num >= 18 AND chart.level_num < 19"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942f68fcb77",
 		"inactive": false,
 		"legacyFolderID": "F046dcc346fd2040e76fa5c0c3017c5b35efd91a6a8213f0b35c1f192e23d36f9",
@@ -50930,6 +51190,19 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 18 AND chart.level_num < 19"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a0909a26f",
+		"inactive": false,
+		"legacyFolderID": "Fa0d4a46266cb69eda6d75c55ff40583efed96932dfeea467036991b2cac398e8",
+		"searchTerms": [],
+		"slug": "19-exceed-omni",
+		"title": "Level 19 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
 	},
 	{
 		"game": "sdvx",
@@ -50972,6 +51245,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f7c16c044",
+		"inactive": false,
+		"legacyFolderID": "F74d12c0c67ad6f56bac0b884dc153c4a229562651c57015c4c5f4a1fc2e3dc69",
+		"searchTerms": [],
+		"slug": "19-nabla-omni",
+		"title": "Level 19 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level_num >= 19 AND chart.level_num < 20"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94350f1b2f5",
 		"inactive": false,
 		"legacyFolderID": "F6d7a9b50f1839a5e381eeb9f7b7687db32b7ff85dba48a50993e04332af55b70",
@@ -50995,6 +51281,19 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 19 AND chart.level_num < 20"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a6d616e4a",
+		"inactive": false,
+		"legacyFolderID": "F7ec9bcc1d467f9cabe8079eed8fb5ab8f88197f6ade28149a76b0e7804b00ecb",
+		"searchTerms": [],
+		"slug": "2-exceed-omni",
+		"title": "Level 2 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '2'"
 	},
 	{
 		"game": "sdvx",
@@ -51037,6 +51336,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f65580fd4",
+		"inactive": false,
+		"legacyFolderID": "F19f7756aa99f14395d9062da8e0cd0c44cea6b47b8b04ce8d9ab7cee3d46add4",
+		"searchTerms": [],
+		"slug": "2-nabla-omni",
+		"title": "Level 2 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94229f855f6",
 		"inactive": false,
 		"legacyFolderID": "Fc13d7cfa4d3c2e40731a344c92f817ef40b4a24dba9acef269afdcf001d963e9",
@@ -51060,6 +51372,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '2'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417ac10946a0",
+		"inactive": false,
+		"legacyFolderID": "F98b1e6fe6b33e8358f8a5f9934f9c4e04bbf13c6c715bbab0119f46c84727fab",
+		"searchTerms": [],
+		"slug": "20-exceed-omni",
+		"title": "Level 20 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
 	},
 	{
 		"game": "sdvx",
@@ -51102,6 +51427,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966f9f5f3d14b9",
+		"inactive": false,
+		"legacyFolderID": "F7f35b4b206e9fa229305758cc154a96a39185004a9c9b6c8d7bf560e7cb9eab5",
+		"searchTerms": [],
+		"slug": "20-nabla-omni",
+		"title": "Level 20 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level_num >= 20 AND chart.level_num < 21"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94315059cf3",
 		"inactive": false,
 		"legacyFolderID": "Fc0d1303ba2ab371dc6445463e3fb05000d2bec0b67b9cc677014af06c34ceef3",
@@ -51125,6 +51463,19 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 20 AND chart.level_num < 21"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a95fd4659",
+		"inactive": false,
+		"legacyFolderID": "Fefc96a9a38e687c74c0b605fd7701f1dca2ab64f3ea6c84d67b9a06d07c45b41",
+		"searchTerms": [],
+		"slug": "3-exceed-omni",
+		"title": "Level 3 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '3'"
 	},
 	{
 		"game": "sdvx",
@@ -51167,6 +51518,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa0f2964777",
+		"inactive": false,
+		"legacyFolderID": "F86b5f8237aab6d66d8a4904b5c1754a42923d4e269921cc0becd1d919970a383",
+		"searchTerms": [],
+		"slug": "3-nabla-omni",
+		"title": "Level 3 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942170986fd",
 		"inactive": false,
 		"legacyFolderID": "F85a95f0b1e9d63bbdf3e016262a417f0d2a06250dee0fa504946d166b05ece1e",
@@ -51190,6 +51554,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '3'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a23e0dc5f",
+		"inactive": false,
+		"legacyFolderID": "Fa700408bfbc0860d55ee4a4b07d36460d21193c1b15f3b2dc2b7ab5c3015bdb7",
+		"searchTerms": [],
+		"slug": "4-exceed-omni",
+		"title": "Level 4 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '4'"
 	},
 	{
 		"game": "sdvx",
@@ -51232,6 +51609,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa0a4ed97be",
+		"inactive": false,
+		"legacyFolderID": "Fdd9235a4b4c6bab97bc67a863d50c11ab021ab209fdbe8d4ba454b23eda5d6b7",
+		"searchTerms": [],
+		"slug": "4-nabla-omni",
+		"title": "Level 4 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942de718bd5",
 		"inactive": false,
 		"legacyFolderID": "F838aad7f1c94023b53a5db8a4451860f3296ffc6b9f57131c9be18fe7aac0e0e",
@@ -51255,6 +51645,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '4'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a096a5b1f",
+		"inactive": false,
+		"legacyFolderID": "F5df8f3fe6ee1e9e91c115e783f9b80d8fa1981eb187ec2a38da459abd55294a7",
+		"searchTerms": [],
+		"slug": "5-exceed-omni",
+		"title": "Level 5 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '5'"
 	},
 	{
 		"game": "sdvx",
@@ -51297,6 +51700,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa031ca4de1",
+		"inactive": false,
+		"legacyFolderID": "F9d8a7dbf5aaaaa1f3e7122928ceee1e4e9fe8a18bbb8bbaa07dca6be73f77e2b",
+		"searchTerms": [],
+		"slug": "5-nabla-omni",
+		"title": "Level 5 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a94271aae4a7",
 		"inactive": false,
 		"legacyFolderID": "Fd7dbe2c07e0b9b837269b705b49a36c3da497ab9b9b5a51ecd4427d3d2f89511",
@@ -51320,6 +51736,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '5'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a499ad804",
+		"inactive": false,
+		"legacyFolderID": "F030b1f9c9ca4f879fb76718cb8758105ac231400cd661388c89052befb619847",
+		"searchTerms": [],
+		"slug": "6-exceed-omni",
+		"title": "Level 6 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '6'"
 	},
 	{
 		"game": "sdvx",
@@ -51362,6 +51791,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa085959279",
+		"inactive": false,
+		"legacyFolderID": "Ffe3b32aa7e931e9b20186f4682cc717f1d0043c4bae7593fe17cce5df3a27391",
+		"searchTerms": [],
+		"slug": "6-nabla-omni",
+		"title": "Level 6 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942e0ce038a",
 		"inactive": false,
 		"legacyFolderID": "F3ebcf8d84db180f6ad0ebfe996080e1ff1f57f297668b43d3275757670d4657f",
@@ -51385,6 +51827,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '6'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417ae8bee88a",
+		"inactive": false,
+		"legacyFolderID": "F6036711942194c5ba07d9608fca5bd467723663d09d9056292e09025a0ba51d9",
+		"searchTerms": [],
+		"slug": "7-exceed-omni",
+		"title": "Level 7 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '7'"
 	},
 	{
 		"game": "sdvx",
@@ -51427,6 +51882,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa00247966b",
+		"inactive": false,
+		"legacyFolderID": "Fe7fa6924736e74b683f4e3f1ac4e92526771ab17c5e2df6c8ad0dadab8edd296",
+		"searchTerms": [],
+		"slug": "7-nabla-omni",
+		"title": "Level 7 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a9429db47f49",
 		"inactive": false,
 		"legacyFolderID": "F82e42ab32600c922e03364d9da6ce7fef8c2d16351686231ac71d5b2b4e96cd1",
@@ -51450,6 +51918,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '7'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417ad6143f3c",
+		"inactive": false,
+		"legacyFolderID": "F356c52f0a78cf86445fd8237802259a3fa0fb1d8b0ad6b36d3357e143d961dbf",
+		"searchTerms": [],
+		"slug": "8-exceed-omni",
+		"title": "Level 8 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '8'"
 	},
 	{
 		"game": "sdvx",
@@ -51492,6 +51973,19 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F19f90966fa0accb3f96",
+		"inactive": false,
+		"legacyFolderID": "F7050f26b50c24dcfb13bbdbc40456a3fe6067d5ace712bfce21c761dbd4d8894",
+		"searchTerms": [],
+		"slug": "8-nabla-omni",
+		"title": "Level 8 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19e65f7a942aad71db4",
 		"inactive": false,
 		"legacyFolderID": "Fbd0528ee59b36b3d9cf8e77604e8c4de577e02c8f4c2144b1e30155ee3400b2c",
@@ -51515,6 +52009,19 @@
 			"vivid"
 		],
 		"where": "chart.level = '8'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90e2417a32605e08",
+		"inactive": false,
+		"legacyFolderID": "Fb00567a19c71e31c34e7cacaa0f9ea161567ccf1075d0d65d1ce83ddde8b85a7",
+		"searchTerms": [],
+		"slug": "9-exceed-omni",
+		"title": "Level 9 (EXCEED GEAR Omnimix)",
+		"versionFilter": [
+			"exceed-omni"
+		],
+		"where": "chart.level = '9'"
 	},
 	{
 		"game": "sdvx",
@@ -51552,6 +52059,19 @@
 		"title": "Level 9 (Konaste)",
 		"versionFilter": [
 			"konaste"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "sdvx",
+		"id": "F19f90966fa068094fa2",
+		"inactive": false,
+		"legacyFolderID": "F3ad70a97277f765a30a2b0d05c74853523de83d7fe5dcf2df9c42977db4196df",
+		"searchTerms": [],
+		"slug": "9-nabla-omni",
+		"title": "Level 9 (NABLA Omnimix)",
+		"versionFilter": [
+			"nabla-omni"
 		],
 		"where": "chart.level = '9'"
 	},
