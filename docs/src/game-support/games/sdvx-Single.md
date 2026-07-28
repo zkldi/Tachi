@@ -90,6 +90,9 @@ The following judgements are defined:
 | `heaven` | HEAVENLY HAVEN |
 | `vivid` | VIVID WAVE |
 | `exceed` | EXCEED GEAR |
+| `nabla` | NABLA |
+| `exceed-omni` | EXCEED GEAR Omnimix |
+| `nabla-omni` | NABLA Omnimix |
 | `konaste` | Konaste |
 
 ## Supported Match Types
