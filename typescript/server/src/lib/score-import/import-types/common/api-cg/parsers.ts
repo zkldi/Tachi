@@ -200,13 +200,13 @@ export const ParseCGDevSDVX = CreateCGParser<CGSDVXScore>("sdvx", "dev", "api/cg
 export const ParseCGDevJubeat = CreateCGParser<CGJubeatScore>("jb", "dev", "api/cg-dev-jubeat");
 export const ParseCGDevPopn = CreateCGParser<CGPopnScore>("popn", "dev", "api/cg-dev-popn");
 
-export const ParseCGGanIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev", "api/cg-gan-iidx");
+export const ParseCGGanIIDX = CreateCGParser<CGIIDXScore>("iidx", "gan", "api/cg-gan-iidx");
 export const ParseCGGanMuseca = CreateCGParser<CGMusecaScore>("msc", "gan", "api/cg-gan-museca");
 export const ParseCGGanSDVX = CreateCGParser<CGSDVXScore>("sdvx", "gan", "api/cg-gan-sdvx");
 export const ParseCGGanJubeat = CreateCGParser<CGJubeatScore>("jb", "gan", "api/cg-gan-jubeat");
 export const ParseCGGanPopn = CreateCGParser<CGPopnScore>("popn", "gan", "api/cg-gan-popn");
 
-export const ParseCGNagIIDX = CreateCGParser<CGIIDXScore>("iidx", "dev", "api/cg-nag-iidx");
+export const ParseCGNagIIDX = CreateCGParser<CGIIDXScore>("iidx", "nag", "api/cg-nag-iidx");
 export const ParseCGNagMuseca = CreateCGParser<CGMusecaScore>("msc", "nag", "api/cg-nag-museca");
 export const ParseCGNagSDVX = CreateCGParser<CGSDVXScore>("sdvx", "nag", "api/cg-nag-sdvx");
 export const ParseCGNagJubeat = CreateCGParser<CGJubeatScore>("jb", "nag", "api/cg-nag-jubeat");
