@@ -30077,5 +30077,57 @@
 			"tracklaundering_genbokuaoi"
 		],
 		"title": "Track Laundering"
+	},
+	{
+		"altTitles": [],
+		"artist": "NAMV",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19fb8571a421c9a60b9",
+		"legacySongID": 2530,
+		"searchTerms": [
+			"mononokekyousou_namv"
+		],
+		"title": "モノノケ狂想曲"
+	},
+	{
+		"altTitles": [],
+		"artist": "Juggernaut.",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19fb8571a4221e38550",
+		"legacySongID": 2531,
+		"searchTerms": [
+			"faithoffrenzy_juggernaut"
+		],
+		"title": "Faith of Frenzy"
+	},
+	{
+		"altTitles": [],
+		"artist": "あまみ×ひなみ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19fb8571a42e22209eb",
+		"legacySongID": 2529,
+		"searchTerms": [
+			"littleprana_amamihinami"
+		],
+		"title": "Little Prana"
+	},
+	{
+		"altTitles": [],
+		"artist": "SOUND HOLIC feat. Nana Takahashi",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S19fb8571a43d0ba43b4",
+		"legacySongID": 2532,
+		"searchTerms": [
+			"zillionray_soundholic"
+		],
+		"title": "ZILLION RAY"
 	}
 ]
