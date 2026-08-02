@@ -1605,7 +1605,6 @@ export const nouns = [
 	"Steak",
 	"Union",
 	"Agreement",
-	"Cancer",
 	"Currency",
 	"Employment",
 	"Engineering",
