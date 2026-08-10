@@ -3,12 +3,19 @@ import fs from "fs";
 
 import {
 	CreateChartID,
+	CreateSongID,
 	GetFreshSongIDGenerator,
 	MutateCollection,
 	ReadCollection,
 } from "../../util.js";
 
-const getNewSongID = GetFreshSongIDGenerator("wacca");
+function randomHex(bytes) {
+	const buf = new Uint8Array(bytes);
+	globalThis.crypto.getRandomValues(buf);
+	return Array.from(buf, (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+const getNewLegacySongID = GetFreshSongIDGenerator("wacca");
 const waccaDiffIndex = ["NORMAL", "HARD", "EXPERT", "INFERNO"];
 
 const program = new Command();
@@ -49,7 +56,8 @@ for (const song of songdata) {
 				displayVersion: "plus",
 				genre: song.category,
 			},
-			id: getNewSongID(),
+			id: CreateSongID(),
+			legacySongID: getNewLegacySongID(),
 			searchTerms: [],
 			title: song.title,
 		};
@@ -58,6 +66,7 @@ for (const song of songdata) {
 			const isPlus = (chart.difficulty * 10) % 10 >= 7;
 			const chartDoc = {
 				chartID: CreateChartID(),
+				legacyChartID: randomHex(20),
 				data: {
 					inGameID: song.id,
 				},
@@ -86,6 +95,7 @@ for (const song of songdata) {
 					const isPlus = (chart.difficulty * 10) % 10 >= 7;
 					newCharts.push({
 						chartID: CreateChartID(),
+						legacyChartID: randomHex(20),
 						data: {
 							inGameID: song.id,
 						},
