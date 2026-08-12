@@ -18,20 +18,50 @@ export function CreateEmbed(userID?: integer) {
 	return embed;
 }
 
-export function CreateImportEmbed(importDoc: ImportDocument) {
+function buildImportResultEmbed(
+	userID: integer,
+	games: ImportDocument["games"],
+	scoreCount: number,
+	sessionCount: number,
+	errorCount: number,
+) {
+	const profileUrl =
+		games.length > 0
+			? `${Env.TACHI_SERVER_LOCATION}/u/${userID}/games/${games[0]}`
+			: `${Env.TACHI_SERVER_LOCATION}/u/${userID}`;
+
 	return CreateEmbed()
-		.setTitle(
-			`Imported ${importDoc.scoreIDs.length} ${Pluralise(
-				importDoc.scoreIDs.length,
-				"score",
-			)}!`,
-		)
-		.addField("Created Sessions", importDoc.createdSessions.length.toString(), true)
-		.addField("Errors", importDoc.errors.length.toString(), true)
-		.addField(
-			"Your Profile",
-			`${Env.TACHI_SERVER_LOCATION}/u/${importDoc.userID}/games/${importDoc.games[0]}`,
-		);
+		.setTitle(`Imported ${scoreCount} ${Pluralise(scoreCount, "score")}!`)
+		.addField("Created Sessions", sessionCount.toString(), true)
+		.addField("Errors", errorCount.toString(), true)
+		.addField("Your Profile", profileUrl);
+}
+
+export function CreateImportEmbed(importDoc: ImportDocument) {
+	return buildImportResultEmbed(
+		importDoc.userID,
+		importDoc.games,
+		importDoc.scoreIDs.length,
+		importDoc.createdSessions.length,
+		importDoc.errors.length,
+	);
+}
+
+/** Same embed as {@link CreateImportEmbed}, built from the `/sync` action summary. */
+export function CreateImportEmbedFromSyncResult(result: {
+	error_count: number;
+	games: string[];
+	score_count: number;
+	session_count: number;
+	user_id: integer;
+}) {
+	return buildImportResultEmbed(
+		result.user_id,
+		result.games as ImportDocument["games"],
+		result.score_count,
+		result.session_count,
+		result.error_count,
+	);
 }
 
 export function CreateUserEmbed(userDoc: UserDocument) {
