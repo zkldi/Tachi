@@ -42,7 +42,7 @@ const existingChartDocs = ReadCollection("charts-wacca.json");
 const inGameIDToSongIDMap = new Map();
 
 for (const chart of existingChartDocs) {
-	inGameIDToSongIDMap.set(chart.data.inGameID, chart.song.id);
+	inGameIDToSongIDMap.set(chart.data.inGameID, chart.songID);
 }
 
 for (const song of songdata) {
@@ -65,7 +65,7 @@ for (const song of songdata) {
 		for (const chart of song.sheets) {
 			const isPlus = (chart.difficulty * 10) % 10 >= 7;
 			const chartDoc = {
-				chartID: CreateChartID(),
+				id: CreateChartID(),
 				legacyChartID: randomHex(20),
 				data: {
 					inGameID: song.id,
@@ -94,7 +94,7 @@ for (const song of songdata) {
 					);
 					const isPlus = (chart.difficulty * 10) % 10 >= 7;
 					newCharts.push({
-						chartID: CreateChartID(),
+						id: CreateChartID(),
 						legacyChartID: randomHex(20),
 						data: {
 							inGameID: song.id,
@@ -133,7 +133,7 @@ MutateCollection("charts-wacca.json", (charts) => {
 						existing.difficulty === waccaDiffIndex[diffIndex],
 				);
 				for (const chart of charts) {
-					if (chart.chartID === oldChart.chartID) {
+					if (chart.id === oldChart.id) {
 						console.log(`Changing from ${chart.levelNum} to ${newChart.difficulty}`);
 						chart.level = `${Math.trunc(newChart.difficulty)}${isPlus ? "+" : ""}`;
 						chart.levelNum = newChart.difficulty;
