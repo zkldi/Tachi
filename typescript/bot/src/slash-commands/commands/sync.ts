@@ -1,12 +1,11 @@
-import { Env, ServerConfig } from "#config";
+import { ServerConfig } from "#config";
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { ExpectedErr } from "bliss";
 
 import type { SlashCommand } from "../types";
 
 import { ACTION_Sync } from "../../actions/sync";
-import { CreateEmbed } from "../../utils/embeds";
-import { Pluralise } from "../../utils/misc";
+import { CreateImportEmbedFromSyncResult } from "../../utils/embeds";
 
 const choices: Array<[string, string]> = (
 	[
@@ -60,16 +59,7 @@ const command: SlashCommand = {
 				{ import_type, "!api_token": requestingUser.api_token },
 			);
 
-			return CreateEmbed()
-				.setTitle(
-					`Imported ${result.score_count} ${Pluralise(result.score_count, "score")}!`,
-				)
-				.addField("Created Sessions", result.session_count.toString(), true)
-				.addField("Errors", result.error_count.toString(), true)
-				.addField(
-					"Your Profile",
-					`${Env.TACHI_SERVER_LOCATION}/u/${result.user_id}/games/${result.games[0]}`,
-				);
+			return CreateImportEmbedFromSyncResult(result);
 		} catch (e) {
 			if (ExpectedErr.is(e)) {
 				return e.reason;
