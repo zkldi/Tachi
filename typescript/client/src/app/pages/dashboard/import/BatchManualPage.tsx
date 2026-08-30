@@ -64,6 +64,10 @@ export default function BatchManualPage() {
 
 				const game = ResolveBatchManualGameFromMeta(data.meta);
 
+				if (!("service" in data.meta)) {
+					throw new Error("Invalid BATCH-MANUAL: Missing service name");
+				}
+
 				const err = p(data, PR_BATCH_MANUAL(game));
 
 				if (err) {

@@ -1,7 +1,12 @@
 UPDATE orphan_score
-SET data[difficulty] = 'Inscribed'
-WHERE data[difficulty] = 'Beyond' 
-AND data[identifier] ~ '(dreadarea|rivenpilgrim|deinosphainein|cataclysmcry)';
+SET data = jsonb_set(data, '{difficulty}', '"AnyBeyond"')
+WHERE data->>'difficulty' = 'Beyond' 
+AND data->>'identifier' ~ '(dreadarea|rivenpilgrim|deinosphainein|cataclysmcry)';
+
+UPDATE orphan_score
+SET data = jsonb_set(data, '{matchType}', '"arcaeaInGameStrID"')
+WHERE data->>'matchType' = 'inGameStrID'
+AND data->>'game' = 'arcaea';
 
 INSERT INTO score_rederive (chart_id)
 SELECT id as chart_id
