@@ -68,6 +68,18 @@ const MATCH_TYPE_CHECKS: Record<
 			return `${c.data.inGameID}-${diff}`;
 		},
 	},
+	arcaeaInGameStrID: {
+		type: "CHARTS",
+		fn: (c) => {
+			let diff = c.difficulty;
+
+			if (["Beyond", "Inscribed"].includes(diff)) {
+				diff = "AnyBeyond";
+			}
+
+			return `${c.data.inGameStrID}-${diff}`;
+		},
+	},
 	uscChartHash: { type: "CHARTS", fn: (c) => c.data.hashSHA1 },
 	ddrSongHash: {
 		type: "SONGS",
@@ -126,7 +138,7 @@ for (const { game, matchType } of uniquenessChecks) {
 		}
 
 		if (
-			matchType === "inGameStrID" &&
+			(matchType === "inGameStrID" || matchType === "arcaeaInGameStrID") &&
 			el.data.inGameStrID === null &&
 			el.data.inGameStrID === undefined
 		) {

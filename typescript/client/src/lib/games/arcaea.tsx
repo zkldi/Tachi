@@ -22,6 +22,7 @@ const ARCAEA_DIFFICULTY_COLORS: GameClientImplementation<
 	Future: COLOUR_SET.purple,
 	Eternal: COLOUR_SET.paleBlue,
 	Beyond: COLOUR_SET.vibrantRed,
+	Inscribed: COLOUR_SET.vibrantBlue,
 };
 
 const ARCAEA_ENUM_COLORS: GameClientImplementation<GamesForGroup["arcaea"]>["enumColours"] = {

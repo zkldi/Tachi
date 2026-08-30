@@ -50,13 +50,13 @@ The following judgements are defined:
 
 | Name | Description |
 | :: | :: |
-| `naivePotential` | The average of your best 10 potentials this session. |
+| `potential` | The average of your best 10 Potentials this session. |
 
 ### Profile Rating Algorithms
 
 | Name | Description |
 | :: | :: |
-| `naivePotential` | The average of your best 30 potential values. This is different to in-game, as it does not take into account your recent scores in any way. |
+| `potential` | The average of your best 50 Potential values and your best 10 Potential values. |
 
 ## Difficulties
 
@@ -65,6 +65,7 @@ The following judgements are defined:
 - `Future`
 - `Eternal`
 - `Beyond`
+- `Inscribed`
 
 ## Classes
 
@@ -82,6 +83,6 @@ The following judgements are defined:
 
 ## Supported Match Types
 
-- `inGameStrID`
+- `arcaeaInGameStrID`
 - `songTitle`
 - `tachiSongID`

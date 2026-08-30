@@ -45,6 +45,12 @@ Looks up on the in game ID for this chart, but allows a special difficulty strin
 
 If `"ANY_INF"` is the difficulty, then that difficulty will try to find a chart with this in game ID where the difficulty is any of INF, GRV, HVN, VVD or XCD.
 
+### `arcaeaInGameStrID`
+
+Looks up on the in game ID for this chart, but allows a special difficulty string - `"AnyBeyond"` to be passed.
+
+If `"AnyBeyond"` is the difficulty, then that difficulty will try to find a chart with this in game ID where the difficulty is any of Beyond or Inscribed.
+
 ### `songTitle`
 
 Looks up the song on its title or any of its defined `altTitles`. Can also match the artist field of the song if an `artist` property is defined.
