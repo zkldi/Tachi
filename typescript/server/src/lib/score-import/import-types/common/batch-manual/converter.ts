@@ -15,6 +15,7 @@ import {
 	staticAssertUnreachable,
 } from "#utils/misc";
 import {
+	FindArcaeaChartOnInGameStrID,
 	FindBMSChartOnHash,
 	FindChartOnInGameIDIfUnique,
 	FindChartOnInGameIDPrimary,
@@ -432,6 +433,53 @@ export async function ResolveSongAndChart(
 			}
 
 			const song = await FindSongOnID(gameGroup, chart.song.id);
+
+			if (!song) {
+				log.error(`Song-Chart desync on ${chart.song.id}.`);
+				throw new InternalFailure(`Failed to get song for a chart that exists.`);
+			}
+
+			return { song, chart };
+		}
+
+		case "arcaeaInGameStrID": {
+			const identifier = resolver.identifier;
+
+			const config = GetGameConfig("arcaea");
+
+			if (config.difficulties.type === "DYNAMIC") {
+				log.error(
+					{
+						config,
+					},
+					`Arcaea has 'DYNAMIC' difficulties set. This is completely unexpected.`,
+				);
+				throw new ScoreImportFatalError(
+					500,
+					`Arcaea has 'DYNAMIC' difficulties set. This is completely unexpected.`,
+				);
+			}
+
+			if (
+				!config.difficulties.order.includes(resolver.difficulty) &&
+				resolver.difficulty !== "AnyBeyond"
+			) {
+				throw new InvalidScoreFailure(
+					`Invalid difficulty '${
+						resolver.difficulty
+					}', Expected any of ${config.difficulties.order.join(", ")} or AnyBeyond`,
+				);
+			}
+
+			const diff = resolver.difficulty as "AnyBeyond" | Difficulties["arcaea"];
+
+			const chart = await FindArcaeaChartOnInGameStrID(identifier, diff);
+
+			if (!chart) {
+				return null;
+			}
+
+			const song = await FindSongOnID("arcaea", chart.song.id);
 
 			if (!song) {
 				log.error(`Song-Chart desync on ${chart.song.id}.`);

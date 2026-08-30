@@ -1,6 +1,6 @@
 import { type GameImplementation } from "#game-implementations/types";
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
-import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
+import { ProfileAvgBestN, ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { Potential } from "rg-stats";
@@ -24,7 +24,10 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		grade: GetGrade(ARCAEA_GBOUNDARIES, scoreData.score),
 	}),
 	scoreCalcs: (scoreData, _derivedData, chart) => ({
-		potential: chart.levelNum > 0 ? Potential.calculate(scoreData.score, chart.levelNum) : 0,
+		potential:
+			chart.levelNum > 0
+				? Potential.calculate(scoreData.score, chart.levelNum, scoreData.lamp !== "LOST")
+				: 0,
 	}),
 	pbRankingValues: (pb) => ({
 		ranking: pb.scoreData.score,
@@ -39,9 +42,13 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 	}),
 	profileCalcs: async (game, userID) => ({
 		naivePotential: await ProfileAvgBestN("potential", 30)(game, userID),
+		potential:
+			(((await ProfileSumBestN("potential", 50)(game, userID)) ?? 0) +
+				((await ProfileSumBestN("potential", 10)(game, userID)) ?? 0)) /
+			60,
 	}),
 	classDerivers: (ratings) => {
-		const potential = ratings.naivePotential;
+		const potential = ratings.potential;
 
 		if (IsNullish(potential)) {
 			return { badge: null };

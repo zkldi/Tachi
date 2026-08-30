@@ -82,12 +82,12 @@ export const GAME_ARCAEA_CONF = {
 	scoreRatingAlgs: {
 		potential: {
 			description: "Potential as it is implemented in Arcaea.",
-			formatter: ToDecimalPlaces(2),
+			formatter: ToDecimalPlaces(3),
 			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {
-		potential: {
+		naivePotential: {
 			description: "The average of your best 10 Potentials this session.",
 			formatter: ToDecimalPlaces(3),
 		},
@@ -99,10 +99,15 @@ export const GAME_ARCAEA_CONF = {
 			formatter: (v) => (Math.round(v * 1000.0) / 1000.0).toFixed(3),
 			associatedScoreAlgs: ["potential"],
 		},
+		naivePotential: {
+			description: "The average of your best 50 Potential values.",
+			formatter: (v) => (Math.round(v * 1000.0) / 1000.0).toFixed(3),
+			associatedScoreAlgs: ["potential"],
+		},
 	},
 
 	defaultScoreRatingAlg: "potential",
-	defaultSessionRatingAlg: "potential",
+	defaultSessionRatingAlg: "naivePotential",
 	defaultProfileRatingAlg: "potential",
 
 	difficulties: {

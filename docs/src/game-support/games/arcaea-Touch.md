@@ -57,6 +57,7 @@ The following judgements are defined:
 | Name | Description |
 | :: | :: |
 | `potential` | The average of your best 50 Potential values and your best 10 Potential values. |
+| `naivePotential` | The average of your best 50 Potential values. |
 
 ## Difficulties
 

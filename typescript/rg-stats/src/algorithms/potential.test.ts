@@ -4,10 +4,15 @@ import { TestCase } from "../test-utils/test-case";
 import { calculate } from "./potential";
 
 test("Arcaea Potential Tests", () => {
-	function MakeTestCase(score: number, level: number, expectedPotential: number): TestCase {
+	function MakeTestCase(
+		score: number,
+		level: number,
+		expectedPotential: number,
+		isClear?: boolean,
+	): TestCase {
 		return () =>
 			isAprx(
-				calculate(score, level),
+				calculate(score, level, isClear ?? false),
 				expectedPotential,
 				`A score of ${score} on a chart of level ${level} should be worth ${expectedPotential}`,
 			);
@@ -26,6 +31,9 @@ test("Arcaea Potential Tests", () => {
 		MakeTestCase(9_200_000, 7.5, 6.5),
 		MakeTestCase(8_900_000, 9.5, 7.5),
 		MakeTestCase(8_600_000, 10.5, 7.5),
+
+		MakeTestCase(9_805_015, 11.6, 12.83, true),
+		MakeTestCase(8_600_000, 10.5, 7.7, true),
 	];
 
 	for (const testCase of testCases) {
@@ -33,7 +41,7 @@ test("Arcaea Potential Tests", () => {
 	}
 
 	expect(
-		calculate(10_000_000, 10.0),
+		calculate(10_000_000, 10.0, true),
 		"Anything above 10,000,000 should give identical potential.",
-	).toBe(calculate(10_001_000, 10.0));
+	).toBe(calculate(10_001_000, 10.0, true));
 });
