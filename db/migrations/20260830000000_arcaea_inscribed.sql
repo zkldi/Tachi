@@ -6,7 +6,7 @@ AND data->>'identifier' ~ '(dreadarea|rivenpilgrim|deinosphainein|cataclysmcry)'
 UPDATE orphan_score
 SET data = jsonb_set(data, '{matchType}', '"arcaeaInGameStrID"')
 WHERE data->>'matchType' = 'inGameStrID'
-AND data->>'game' = 'arcaea';
+AND context->>'game' = 'arcaea';
 
 INSERT INTO score_rederive (chart_id)
 SELECT id as chart_id

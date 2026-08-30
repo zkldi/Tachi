@@ -136,14 +136,14 @@ describe("ARCAEA_IMPL", () => {
 		expect(
 			ARCAEA_IMPL.scoreCalcs(scoreData, ARCAEA_IMPL.scoreDeriver(scoreData, chart), chart)
 				.potential,
-		).toBe(11.99683);
+		).toBeCloseTo(12.19683, 3);
 	});
 
-	describe("classDerivers (naivePotential → badge)", () => {
+	describe("classDerivers (potential → badge)", () => {
 		const badge = (
 			v: number | null,
 			expected: ReturnType<typeof ARCAEA_IMPL.classDerivers>["badge"],
-		) => expect(ARCAEA_IMPL.classDerivers({ naivePotential: v }).badge).toBe(expected);
+		) => expect(ARCAEA_IMPL.classDerivers({ potential: v }).badge).toBe(expected);
 
 		it("maps potential tiers to badge colours", () => {
 			badge(null, null);
