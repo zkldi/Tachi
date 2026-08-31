@@ -139,7 +139,7 @@ describe("ARCAEA_IMPL", () => {
 		).toBeCloseTo(11.99683, 3);
 	});
 
-	describe("classDerivers (potential → badge)", () => {
+	describe("classDerivers (naivePotential → badge)", () => {
 		const badge = (
 			v: number | null,
 			expected: ReturnType<typeof ARCAEA_IMPL.classDerivers>["badge"],
