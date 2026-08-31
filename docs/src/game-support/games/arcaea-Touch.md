@@ -50,16 +50,17 @@ The following judgements are defined:
 
 | Name | Description |
 | :: | :: |
-| `potential` | The average of your best 10 Potentials this session. |
+| `naivePotential` | The average of your best 10 Potentials this session. |
 
 ### Profile Rating Algorithms
 
 | Name | Description |
 | :: | :: |
-| `potential` | The average of your best 50 Potential values and your best 10 Potential values. |
-| `naivePotential` | The average of your best 50 Potential values. |
+| `naivePotential` | The average of your best 50 Potential values, with the best 10 being counted twice. Named naivePotential for legacy reasons, but it's actually Potential as implemented in Arcaea. |
 
 ## Difficulties
+
+`Beyond` and `Inscribed` can use the alias `AnyBeyond` for imports using `arcaeaInGameStrID`.
 
 - `Past`
 - `Present`

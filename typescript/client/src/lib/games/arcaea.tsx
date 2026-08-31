@@ -163,6 +163,11 @@ export const ARCAEA_TOUCH_IMPL: GameClientImplementation<"arcaea"> = {
 		grade: "sort-alpha-up",
 		lamp: "lightbulb",
 	},
+	ratingAlgNameOverrides: {
+		profile: {
+			naivePotential: "Potential",
+		},
+	},
 	enumColours: ARCAEA_ENUM_COLORS,
 	classColours: ARCAEA_COLORS,
 	difficultyColours: ARCAEA_DIFFICULTY_COLORS,

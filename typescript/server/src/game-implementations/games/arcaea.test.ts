@@ -143,7 +143,7 @@ describe("ARCAEA_IMPL", () => {
 		const badge = (
 			v: number | null,
 			expected: ReturnType<typeof ARCAEA_IMPL.classDerivers>["badge"],
-		) => expect(ARCAEA_IMPL.classDerivers({ potential: v }).badge).toBe(expected);
+		) => expect(ARCAEA_IMPL.classDerivers({ naivePotential: v }).badge).toBe(expected);
 
 		it("maps potential tiers to badge colours", () => {
 			badge(null, null);

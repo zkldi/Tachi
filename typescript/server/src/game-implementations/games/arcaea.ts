@@ -1,6 +1,6 @@
 import { type GameImplementation } from "#game-implementations/types";
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
-import { ProfileAvgBestN, ProfileSumBestN } from "#game-implementations/utils/profile-calc";
+import { ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
 import { IsNullish } from "#utils/misc";
 import { Potential } from "rg-stats";
@@ -41,14 +41,13 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		naivePotential: SessionAvgBest10For("potential")(arr),
 	}),
 	profileCalcs: async (game, userID) => ({
-		naivePotential: await ProfileAvgBestN("potential", 50)(game, userID),
-		potential:
+		naivePotential:
 			(((await ProfileSumBestN("potential", 50)(game, userID)) ?? 0) +
 				((await ProfileSumBestN("potential", 10)(game, userID)) ?? 0)) /
 			60,
 	}),
 	classDerivers: (ratings) => {
-		const potential = ratings.potential;
+		const potential = ratings.naivePotential;
 
 		if (IsNullish(potential)) {
 			return { badge: null };

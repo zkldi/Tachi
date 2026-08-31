@@ -93,14 +93,9 @@ export const GAME_ARCAEA_CONF = {
 		},
 	},
 	profileRatingAlgs: {
-		potential: {
-			description:
-				"The average of your best 50 Potential values and your best 10 Potential values. Profile Potential as it's implemented in Arcaea 7.0+.",
-			formatter: (v) => (Math.round(v * 1000.0) / 1000.0).toFixed(3),
-			associatedScoreAlgs: ["potential"],
-		},
 		naivePotential: {
-			description: "The average of your best 50 Potential values.",
+			description:
+				"The average of your best 50 Potential values, with the best 10 being counted twice. Profile Potential as it's implemented in Arcaea 7.0+.",
 			formatter: (v) => (Math.round(v * 1000.0) / 1000.0).toFixed(3),
 			associatedScoreAlgs: ["potential"],
 		},
@@ -108,7 +103,7 @@ export const GAME_ARCAEA_CONF = {
 
 	defaultScoreRatingAlg: "potential",
 	defaultSessionRatingAlg: "naivePotential",
-	defaultProfileRatingAlg: "potential",
+	defaultProfileRatingAlg: "naivePotential",
 
 	difficulties: {
 		type: "FIXED",
