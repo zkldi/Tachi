@@ -41,7 +41,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 		naivePotential: SessionAvgBest10For("potential")(arr),
 	}),
 	profileCalcs: async (game, userID) => ({
-		naivePotential: await ProfileAvgBestN("potential", 30)(game, userID),
+		naivePotential: await ProfileAvgBestN("potential", 50)(game, userID),
 		potential:
 			(((await ProfileSumBestN("potential", 50)(game, userID)) ?? 0) +
 				((await ProfileSumBestN("potential", 10)(game, userID)) ?? 0)) /
