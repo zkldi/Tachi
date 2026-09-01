@@ -5568,7 +5568,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/01/01055exp.htm",
 			"displayVersion": "オンゲキ",
 			"inGameID": 78,
 			"isBonusTrack": false,
@@ -6975,7 +6974,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/01/01044exp.htm",
 			"displayVersion": "オンゲキ",
 			"inGameID": 68,
 			"isBonusTrack": false,
@@ -7290,7 +7288,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/01/01047exp.htm",
 			"displayVersion": "オンゲキ",
 			"inGameID": 71,
 			"isBonusTrack": false,
@@ -7427,7 +7424,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/luna/01048luna.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 8189,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2948
 		},
@@ -15024,7 +15021,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/01/01163exp.htm",
 			"displayVersion": "オンゲキ PLUS",
 			"inGameID": 192,
 			"isBonusTrack": false,
@@ -19120,7 +19116,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/02/02014exp.htm",
 			"displayVersion": "オンゲキ SUMMER",
 			"inGameID": 252,
 			"isBonusTrack": false,
@@ -30309,7 +30304,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/02/02144exp.htm",
 			"displayVersion": "オンゲキ SUMMER PLUS",
 			"inGameID": 387,
 			"isBonusTrack": false,
@@ -41409,7 +41403,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/03/03093exp.htm",
 			"displayVersion": "オンゲキ R.E.D. PLUS",
 			"inGameID": 502,
 			"isBonusTrack": false,
@@ -41848,7 +41841,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/03/03098exp.htm",
 			"displayVersion": "オンゲキ R.E.D. PLUS",
 			"inGameID": 507,
 			"isBonusTrack": false,
@@ -45816,7 +45808,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/03/03139exp.htm",
 			"displayVersion": "オンゲキ R.E.D. PLUS",
 			"inGameID": 546,
 			"isBonusTrack": false,
@@ -59727,7 +59718,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04076exp.htm",
 			"displayVersion": "オンゲキ bright",
 			"inGameID": 681,
 			"isBonusTrack": false,
@@ -60287,7 +60277,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04082exp.htm",
 			"displayVersion": "オンゲキ bright",
 			"inGameID": 675,
 			"isBonusTrack": false,
@@ -62838,7 +62827,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04106exp.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
 			"inGameID": 774,
 			"isBonusTrack": false,
@@ -75452,7 +75440,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04213exp.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.2",
 			"inGameID": 834,
 			"isBonusTrack": false,
@@ -89105,7 +89092,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04323exp.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.3",
 			"inGameID": 1017,
 			"isBonusTrack": false,
@@ -89962,7 +89948,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04331exp.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.3",
 			"inGameID": 1024,
 			"isBonusTrack": false,
@@ -92580,7 +92565,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/04/04362exp.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.3",
 			"inGameID": 1054,
 			"isBonusTrack": false,
@@ -97789,7 +97773,6 @@
 	},
 	{
 		"data": {
-			"chartViewURL": "https://sdvx.in/ongeki/05/05052exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
 			"inGameID": 1109,
 			"isBonusTrack": false,
@@ -98525,7 +98508,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1114,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1328
 		},
@@ -98544,7 +98527,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1114,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1312
 		},
@@ -98564,7 +98547,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05055exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1114,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2732
 		},
@@ -98584,7 +98567,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05055mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1114,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3276
 		},
@@ -98603,7 +98586,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1115,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 974
 		},
@@ -98622,7 +98605,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1115,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 766
 		},
@@ -98642,7 +98625,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05056exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1115,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2350
 		},
@@ -98662,7 +98645,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05056mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1115,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3840
 		},
@@ -98681,7 +98664,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1116,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1114
 		},
@@ -98700,7 +98683,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1116,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 706
 		},
@@ -98720,7 +98703,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05057exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1116,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2224
 		},
@@ -98740,7 +98723,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05057mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1116,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2586
 		},
@@ -98759,7 +98742,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1117,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1216
 		},
@@ -98778,7 +98761,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1117,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 842
 		},
@@ -98798,7 +98781,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05058exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1117,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2146
 		},
@@ -98818,7 +98801,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05058mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1117,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2844
 		},
@@ -98837,7 +98820,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1118,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1362
 		},
@@ -98856,7 +98839,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1118,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 768
 		},
@@ -98876,7 +98859,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05059exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1118,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2112
 		},
@@ -98896,7 +98879,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05059mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1118,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3000
 		},
@@ -98915,7 +98898,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1119,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1014
 		},
@@ -98934,7 +98917,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1119,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 602
 		},
@@ -98954,7 +98937,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05060exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1119,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2048
 		},
@@ -98974,7 +98957,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05060mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1119,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2652
 		},
@@ -98994,7 +98977,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05061adv.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1120,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2088
 		},
@@ -99013,7 +98996,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1120,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1120
 		},
@@ -99033,7 +99016,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05061exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1120,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2440
 		},
@@ -99053,7 +99036,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05061mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1120,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 4396
 		},
@@ -99072,7 +99055,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1121,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1206
 		},
@@ -99091,7 +99074,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1121,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 630
 		},
@@ -99110,7 +99093,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1121,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1654
 		},
@@ -99130,7 +99113,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05062mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1121,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2512
 		},
@@ -99149,7 +99132,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1122,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 678
 		},
@@ -99168,7 +99151,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1122,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 530
 		},
@@ -99187,7 +99170,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1122,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1174
 		},
@@ -99207,7 +99190,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05063mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1122,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2222
 		},
@@ -99226,7 +99209,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1124,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1424
 		},
@@ -99245,7 +99228,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1124,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1200
 		},
@@ -99265,7 +99248,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05064exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1124,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2008
 		},
@@ -99285,7 +99268,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05064mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1124,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3024
 		},
@@ -99304,7 +99287,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1125,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1204
 		},
@@ -99323,7 +99306,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1125,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 998
 		},
@@ -99343,7 +99326,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05066exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1125,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2140
 		},
@@ -99363,7 +99346,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05066mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1125,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3246
 		},
@@ -99382,7 +99365,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1126,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1092
 		},
@@ -99401,7 +99384,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1126,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 492
 		},
@@ -99421,7 +99404,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05065exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1126,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2272
 		},
@@ -99441,7 +99424,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05065mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1126,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2834
 		},
@@ -99460,7 +99443,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1127,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 844
 		},
@@ -99479,7 +99462,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1127,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 882
 		},
@@ -99498,7 +99481,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1127,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1306
 		},
@@ -99518,7 +99501,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05067mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1127,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1858
 		},
@@ -99537,7 +99520,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1128,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 652
 		},
@@ -99556,7 +99539,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1128,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 534
 		},
@@ -99575,7 +99558,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1128,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1206
 		},
@@ -99595,7 +99578,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05068mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1128,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2352
 		},
@@ -99614,7 +99597,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1129,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 984
 		},
@@ -99633,7 +99616,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1129,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 636
 		},
@@ -99652,7 +99635,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1129,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1400
 		},
@@ -99672,7 +99655,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05069mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1129,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2296
 		},
@@ -99691,7 +99674,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1130,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1546
 		},
@@ -99710,7 +99693,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1130,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 772
 		},
@@ -99730,7 +99713,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05070exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1130,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2948
 		},
@@ -99750,7 +99733,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05070mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1130,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2906
 		},
@@ -99769,7 +99752,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1131,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1946
 		},
@@ -99788,7 +99771,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1131,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1140
 		},
@@ -99808,7 +99791,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05071exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1131,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3388
 		},
@@ -99828,7 +99811,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05071mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1131,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 4520
 		},
@@ -99847,7 +99830,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1132,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1126
 		},
@@ -99866,7 +99849,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1132,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 660
 		},
@@ -99886,7 +99869,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05073exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1132,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2018
 		},
@@ -99906,7 +99889,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05073mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1132,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2266
 		},
@@ -99925,7 +99908,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1133,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1130
 		},
@@ -99944,7 +99927,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1133,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 818
 		},
@@ -99964,7 +99947,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05072exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1133,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1464
 		},
@@ -99984,7 +99967,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05072mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1133,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2350
 		},
@@ -100003,7 +99986,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1134,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1568
 		},
@@ -100022,7 +100005,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1134,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 932
 		},
@@ -100041,7 +100024,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1134,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2388
 		},
@@ -100061,7 +100044,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05074mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1134,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3760
 		},
@@ -100080,7 +100063,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1135,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 916
 		},
@@ -100099,7 +100082,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1135,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 678
 		},
@@ -100118,7 +100101,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1135,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1426
 		},
@@ -100138,7 +100121,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05075mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1135,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2000
 		},
@@ -100157,7 +100140,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1136,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1572
 		},
@@ -100176,7 +100159,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1136,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1116
 		},
@@ -100195,7 +100178,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1136,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2200
 		},
@@ -100215,7 +100198,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05076mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1136,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3348
 		},
@@ -100234,7 +100217,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1137,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2350
 		},
@@ -100253,7 +100236,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1137,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1060
 		},
@@ -100273,7 +100256,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05077exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1137,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2400
 		},
@@ -100293,7 +100276,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05077mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1137,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3648
 		},
@@ -100312,7 +100295,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1138,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1376
 		},
@@ -100331,7 +100314,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1138,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 654
 		},
@@ -100351,7 +100334,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05078exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1138,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1906
 		},
@@ -100371,7 +100354,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05078mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1138,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3396
 		},
@@ -100390,7 +100373,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1139,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1386
 		},
@@ -100409,7 +100392,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1139,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1068
 		},
@@ -100429,7 +100412,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05079exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1139,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2232
 		},
@@ -100449,7 +100432,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05079mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1139,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3522
 		},
@@ -100468,7 +100451,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1140,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1440
 		},
@@ -100487,7 +100470,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1140,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 908
 		},
@@ -100507,7 +100490,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05080exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1140,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2376
 		},
@@ -100527,7 +100510,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05080mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1140,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2940
 		},
@@ -100546,7 +100529,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1141,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1264
 		},
@@ -100565,7 +100548,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1141,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 856
 		},
@@ -100585,7 +100568,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05081exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1141,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1916
 		},
@@ -100605,7 +100588,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05081mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1141,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3570
 		},
@@ -100624,7 +100607,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1142,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1536
 		},
@@ -100643,7 +100626,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1142,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 976
 		},
@@ -100663,7 +100646,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05082exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1142,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2570
 		},
@@ -100683,7 +100666,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05082mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1142,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3442
 		},
@@ -100702,7 +100685,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1143,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1120
 		},
@@ -100721,7 +100704,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1143,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 758
 		},
@@ -100740,7 +100723,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1143,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1640
 		},
@@ -100760,7 +100743,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05083mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1143,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2920
 		},
@@ -100779,7 +100762,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1144,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1320
 		},
@@ -100798,7 +100781,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1144,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 862
 		},
@@ -100818,7 +100801,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05084exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1144,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2188
 		},
@@ -100838,7 +100821,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05084mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1144,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3194
 		},
@@ -100857,7 +100840,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1145,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1230
 		},
@@ -100876,7 +100859,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1145,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 674
 		},
@@ -100896,7 +100879,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05085exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1145,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1984
 		},
@@ -100916,7 +100899,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05085mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1145,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3520
 		},
@@ -100935,7 +100918,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1146,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 868
 		},
@@ -100954,7 +100937,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1146,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 582
 		},
@@ -100974,7 +100957,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05086exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1146,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1410
 		},
@@ -100994,7 +100977,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05086mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1146,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2336
 		},
@@ -101013,7 +100996,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1147,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 984
 		},
@@ -101032,7 +101015,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1147,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 654
 		},
@@ -101051,7 +101034,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1147,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1792
 		},
@@ -101071,7 +101054,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05087mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1147,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2440
 		},
@@ -101090,7 +101073,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1148,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1282
 		},
@@ -101109,7 +101092,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1148,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 742
 		},
@@ -101128,7 +101111,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1148,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1980
 		},
@@ -101148,7 +101131,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05090mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1148,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2852
 		},
@@ -101167,7 +101150,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1149,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 842
 		},
@@ -101186,7 +101169,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1149,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 808
 		},
@@ -101206,7 +101189,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05091exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1149,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1428
 		},
@@ -101226,7 +101209,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05091mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1149,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2676
 		},
@@ -101245,7 +101228,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1150,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 944
 		},
@@ -101264,7 +101247,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1150,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 458
 		},
@@ -101284,7 +101267,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05088exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1150,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1436
 		},
@@ -101304,7 +101287,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05088mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1150,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2282
 		},
@@ -101323,7 +101306,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1151,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1622
 		},
@@ -101342,7 +101325,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1151,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 990
 		},
@@ -101362,7 +101345,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05089exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1151,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2340
 		},
@@ -101382,7 +101365,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05089mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1151,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3354
 		},
@@ -101401,7 +101384,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1156,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1450
 		},
@@ -101420,7 +101403,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1156,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1144
 		},
@@ -101439,7 +101422,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1156,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2002
 		},
@@ -101459,7 +101442,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05092mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1156,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 4734
 		},
@@ -101478,7 +101461,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1157,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1114
 		},
@@ -101497,7 +101480,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1157,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 926
 		},
@@ -101517,7 +101500,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05093exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1157,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2414
 		},
@@ -101537,7 +101520,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05093mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1157,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3596
 		},
@@ -101556,7 +101539,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1158,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 922
 		},
@@ -101575,7 +101558,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1158,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 864
 		},
@@ -101595,7 +101578,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05094exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1158,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1892
 		},
@@ -101615,7 +101598,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05094mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1158,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3060
 		},
@@ -101634,7 +101617,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1159,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 1178
 		},
@@ -101653,7 +101636,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1159,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 968
 		},
@@ -101673,7 +101656,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05095exp.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1159,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 2138
 		},
@@ -101693,7 +101676,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/05/05095mst.htm",
 			"displayVersion": "オンゲキ Re:Fresh",
-			"inGameID": 1159,
+			"inGameID": null,
 			"isBonusTrack": false,
 			"maxPlatScore": 3022
 		},
@@ -101712,7 +101695,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7063,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1236
 		},
@@ -101731,7 +101714,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7063,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 672
 		},
@@ -101750,7 +101733,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7063,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1754
 		},
@@ -101770,7 +101753,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/02/02054mst.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7063,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 2600
 		},
@@ -101789,7 +101772,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7064,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1236
 		},
@@ -101808,7 +101791,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7064,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 672
 		},
@@ -101827,7 +101810,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7064,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1754
 		},
@@ -101847,7 +101830,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/02/02054mst.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7064,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 2600
 		},
@@ -101866,7 +101849,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7065,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1236
 		},
@@ -101885,7 +101868,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7065,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 672
 		},
@@ -101904,7 +101887,7 @@
 	{
 		"data": {
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7065,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 1754
 		},
@@ -101924,7 +101907,7 @@
 		"data": {
 			"chartViewURL": "https://sdvx.in/ongeki/02/02054mst.htm",
 			"displayVersion": "オンゲキ bright MEMORY Act.1",
-			"inGameID": 7065,
+			"inGameID": null,
 			"isBonusTrack": true,
 			"maxPlatScore": 2600
 		},
