@@ -131,7 +131,7 @@ const scrapeAll = async (charts: OngekiChart[], songs: OngekiSong[]) => {
 
 const listMissing = async (charts: OngekiChart[], songs: OngekiSong[], minLevel: number) => {
 	for (const chart of charts) {
-		if (chart.data.inGameID >= 7000 && chart.data.inGameID < 8000) {
+		if (chart.data.isBonusTrack) {
 			// Bonus track
 			continue;
 		}

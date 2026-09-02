@@ -32,7 +32,7 @@ const LEVELS = [
 	"15",
 	"15+",
 ];
-const DIFFICULTIES = ["BASIC", "ADVANCED", "EXPERT", "MASTER", "LUNATIC", "Re:MASTER"];
+const DIFFICULTIES = [["BASIC", "basic"], ["ADVANCED", "advanced"], ["EXPERT", "expert"], ["MASTER", "master"], ["LUNATIC", "lunatic"], ["Re:MASTER", "lunatic-remaster"]];
 const GENRES = [
 	["POPS＆ANIME", "pna"],
 	["niconico", "niconico"],
@@ -59,99 +59,33 @@ const newFolders: SeedFolderRow[] = [];
 const levelFolderIDs: string[] = [];
 const difficultyFolderIDs: string[] = [];
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!
-// !! Not yet updated for V3!
-// !!!!!!!!!!!!!!!!!!!!!!!!!!
+for (const level of LEVELS) {
+	newFolders.push({
+		game: "ongeki",
+		id: CreateFolderID(),
+		inactive: false,
+		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		searchTerms: [],
+		slug: `${level}-${version.toLowerCase()}`,
+		title: `Level ${level} (${versionName})`,
+		versionFilter: [version],
+		where: `chart.data->>'isBonusTrack' = 'false' AND chart.level = '${level}'`,
+	});
+}
 
-// for (const level of LEVELS) {
-// 	const data = {
-// 		level,
-// 		versions: version,
-// 		isBonusTrack: false,
-// 	};
-// 	const legacyFolderID = CreateLegacyFolderID(data, "ongeki", "Single");
-
-// 	levelFolderIDs.push(folderID);
-
-// 	newFolders.push({
-// 		data,
-// 		id: CreateFolderID(),
-// 		legacyFolderID,
-// 		game: "ongeki",
-// 		inactive: false,
-// 		playtype: "Single",
-// 		searchTerms: [],
-// 		title: `Level ${level} (${versionName})`,
-// 		type: "charts",
-// 	});
-// }
-
-// for (const difficulty of DIFFICULTIES) {
-// 	const data = { difficulty, versions: version };
-
-// 	if (difficulty === "LUNATIC") {
-// 		data["data¬isReMaster"] = false;
-// 	} else if (difficulty === "Re:MASTER") {
-// 		data["data¬isReMaster"] = true;
-// 		data.difficulty = "LUNATIC";
-// 	} else {
-// 		data["data¬inGameID"] = {
-// 			"~lt": 7000,
-// 		};
-// 	}
-
-// 	const folderID = CreateLegacyFolderID(data, "ongeki", "Single");
-
-// 	difficultyFolderIDs.push(folderID);
-
-// 	newFolders.push({
-// 		data,
-// 		folderID,
-// 		game: "ongeki",
-// 		inactive: false,
-// 		playtype: "Single",
-// 		searchTerms: [],
-// 		title: `${difficulty} (${versionName})`,
-// 		type: "charts",
-// 	});
-// }
-
-MutateCollection("tables.json", (ts) => {
-	ts.push(
-		// {
-		// 	default: false,
-		// 	description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
-		// 	folders: levelFolderIDs,
-		// 	game: "ongeki",
-		// 	inactive: false,
-		// 	playtype: "Single",
-		// 	tableID: `ongeki-Single-${version}-levels`,
-		// 	title: `O.N.G.E.K.I. (${versionName})`,
-		// },
-		// {
-		// 	default: false,
-		// 	description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
-		// 	folders: difficultyFolderIDs,
-		// 	game: "ongeki",
-		// 	inactive: false,
-		// 	playtype: "Single",
-		// 	tableID: `ongeki-Single-${version}-difficulties`,
-		// 	title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
-		// },
-		{
-			default: false,
-			description: `Genres for O.N.G.E.K.I. in ${versionName}.`,
-			folders: GENRES.map(([_, g]) => `g-${g}-${version.toLowerCase()}`),
-			game: "ongeki",
-			id: CreateTableID(),
-			inactive: false,
-			legacyTableID: `ongeki-Single-${version}-genres`,
-			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
-		},
-	);
-
-	return ts;
-});
+for (const [fullName, safeName] of DIFFICULTIES) {
+	newFolders.push({
+		game: "ongeki",
+		id: CreateFolderID(),
+		inactive: false,
+		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		searchTerms: [],
+		slug: `${version.toLowerCase()}-${safeName}`,
+		title: `${fullName} (${versionName})`,
+		versionFilter: [version],
+		where: `chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = '${fullName}'`,
+	});
+}
 
 for (const [fullName, safeName] of GENRES) {
 	newFolders.push({
@@ -166,5 +100,42 @@ for (const [fullName, safeName] of GENRES) {
 		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`,
 	});
 }
+
+MutateCollection("tables.json", (ts) => {
+	ts.push(
+		{
+			default: false,
+			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
+			folders: levelFolderIDs,
+			game: "ongeki",
+			inactive: false,
+			playtype: "Single",
+			tableID: `ongeki-Single-${version}-levels`,
+			title: `O.N.G.E.K.I. (${versionName})`,
+		},
+		{
+			default: false,
+			description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
+			folders: difficultyFolderIDs,
+			game: "ongeki",
+			inactive: false,
+			playtype: "Single",
+			tableID: `ongeki-Single-${version}-difficulties`,
+			title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
+		},
+		{
+			default: false,
+			description: `Genres for O.N.G.E.K.I. in ${versionName}.`,
+			folders: GENRES.map(([_, g]) => `g-${g}-${version.toLowerCase()}`),
+			game: "ongeki",
+			id: CreateTableID(),
+			inactive: false,
+			legacyTableID: `ongeki-Single-${version}-genres`,
+			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
+		},
+	);
+
+	return ts;
+});
 
 MutateCollection("folders.json", (fs) => [...fs, ...newFolders]);

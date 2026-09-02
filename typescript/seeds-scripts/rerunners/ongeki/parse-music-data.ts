@@ -1,4 +1,4 @@
-// usage: cd typescript/seeds-scripts/rerunners && bun ongeki/parse-music-data.ts
+// usage: cd typescript/seeds-scripts/rerunners/ongeki && bun run parse-music-data.ts
 
 import fs from "fs/promises";
 import { type ChartDocument, type Difficulties, type SongDocument } from "tachi-common";
@@ -43,6 +43,7 @@ interface Changes {
 	versions: string[];
 	rerates: string[];
 	renames: string[];
+	ids: string[];
 }
 
 const convertLevel = (chart: InputChart) => {
@@ -73,9 +74,9 @@ const updateChart = (out: OngekiChart, input: InputChart, song: InputSong, chang
 		changes.versions.push(`${song.name} ${diff}: ${CURRENT_OMNIMIX}`);
 		out.versions.push(CURRENT_OMNIMIX);
 	}
-
-	if (input.difficulty === "LUNATIC") {
-		out.data.isReMaster = song.isReMaster;
+	if(out.inGameID === null) {
+		changes.ids.push(`${song.id} ${diff}: ${song.id}`);
+		out.inGameID = song.id;
 	}
 };
 
@@ -93,6 +94,7 @@ const main = async () => {
 		versions: [],
 		rerates: [],
 		renames: [],
+		ids: [],
 	};
 
 	for (const inputSong of input.music) {
@@ -164,9 +166,10 @@ const main = async () => {
 					levelNum: parseFloat(inputChart.internalLevel),
 					playtype: "Single",
 					versions: [CURRENT_VERSION, CURRENT_OMNIMIX],
+					isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
 				};
-				if (newChart.difficulty === "LUNATIC") {
-					newChart.data.isReMaster = inputSong.isReMaster;
+				if (inputChart.difficulty === "LUNATIC" && inputSong.isReMaster) {
+					newChart.data.difficulty = "Re:MASTER";
 				}
 				chart = newChart;
 				changes.charts.push(`${song.title} ${chart.difficulty} ${chart.level}`);
