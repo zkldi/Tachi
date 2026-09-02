@@ -1,4 +1,4 @@
-import type { TableDocument } from "tachi-common";
+import type { SEEDS_FolderDocument, TableDocument } from "tachi-common";
 
 import { LoadTableDocumentByLegacyId } from "#lib/db-formats/table";
 import {
@@ -7,16 +7,42 @@ import {
 	GetTableForIDGuaranteed,
 } from "#lib/folders/folders";
 import DB from "#services/pg/db";
+import { DEFAULT_SEEDS_DIR } from "#test-utils/seed-paths";
+import { sql } from "kysely";
 import { randomUUID } from "node:crypto";
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 
-/**
- * `BuildFolderQuery` loads `folder.where` and splices it into
- * `SELECT chart.id FROM chart INNER JOIN song s … WHERE <query>`, optionally
- * AND-ing overlap on `chart.versions` when `version_filter` is set. The column
- * must hold a SQL predicate (no leading `WHERE`), e.g. `chart.level_num = 10`.
- */
 describe("BuildFolderQuery", () => {
+	it("folder queries work innit", async () => {
+		const folders = JSON.parse(
+			fs.readFileSync(path.join(DEFAULT_SEEDS_DIR, "folders.json"), "utf8"),
+		) as Array<SEEDS_FolderDocument>;
+		const predicates = folders.map((folder) => {
+			const versionFilter = folder.versionFilter?.length
+				? sql`
+					AND chart.versions && ARRAY[${sql.join(
+						folder.versionFilter.map((version) => sql`${version}`),
+					)}]::text[]
+				`
+				: sql``;
+
+			return sql`(${sql.raw(folder.where)}) AND chart.game = ${folder.game} ${versionFilter}`;
+		});
+
+		// Keep each statement comfortably below PostgreSQL's expression-depth limits.
+		for (let i = 0; i < predicates.length; i = i + 100) {
+			await sql`
+				EXPLAIN
+				SELECT chart.id
+				FROM chart
+				INNER JOIN song ON song.id = chart.song_id
+				WHERE ${sql.join(predicates.slice(i, i + 100), sql` OR `)}
+			`.execute(DB);
+		}
+	});
+
 	function ids(prefix: string) {
 		const u = randomUUID().replace(/-/gu, "").slice(0, 12);
 
