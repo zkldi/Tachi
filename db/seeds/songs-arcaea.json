@@ -8522,5 +8522,20 @@
 			"카타클리즘 시티"
 		],
 		"title": "Cataclysm Cry"
+	},
+	{
+		"altTitles": [],
+		"artist": "Silentroom Dismantled XOR かたぎり",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a06240e55220088ac4",
+		"legacySongID": 566,
+		"searchTerms": [
+			"sacrosanct",
+			"さくろさんくと",
+			"사크로상트"
+		],
+		"title": "⊥⊬"
 	}
 ]

@@ -29172,7 +29172,7 @@
 		"isPrimary": true,
 		"legacyChartID": "d097a9614d9f7727177948882c5f171fd5b3f119",
 		"level": "8",
-		"levelNum": 8.8,
+		"levelNum": 8.6,
 		"songID": "S19e3cb7a00bcd4fe829",
 		"versions": [
 			"mobile"
@@ -31243,6 +31243,57 @@
 		"level": "8+",
 		"levelNum": 8.8,
 		"songID": "S1a048225d26d1dcad1e",
+		"versions": [
+			"mobile"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "7.0",
+			"inGameStrID": "sacrosanct",
+			"notecount": 1888
+		},
+		"difficulty": "Future",
+		"id": "C1a06240e5527a97b636",
+		"isPrimary": true,
+		"legacyChartID": "14a7c99939af737f74ee26ec537925fe11862d02",
+		"level": "10+",
+		"levelNum": 10.7,
+		"songID": "S1a06240e55220088ac4",
+		"versions": [
+			"mobile"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "7.0",
+			"inGameStrID": "sacrosanct",
+			"notecount": 1256
+		},
+		"difficulty": "Past",
+		"id": "C1a06240e5522ab72e9a",
+		"isPrimary": true,
+		"legacyChartID": "afd181d9a5f0eb21cc07b69a5200b8197e666499",
+		"level": "6",
+		"levelNum": 6.5,
+		"songID": "S1a06240e55220088ac4",
+		"versions": [
+			"mobile"
+		]
+	},
+	{
+		"data": {
+			"displayVersion": "7.0",
+			"inGameStrID": "sacrosanct",
+			"notecount": 1385
+		},
+		"difficulty": "Present",
+		"id": "C1a06240e5522eab15d4",
+		"isPrimary": true,
+		"legacyChartID": "b7d12a1c76119721fbd9962d64c47c9453eda432",
+		"level": "9",
+		"levelNum": 9.6,
+		"songID": "S1a06240e55220088ac4",
 		"versions": [
 			"mobile"
 		]
