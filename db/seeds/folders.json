@@ -53466,7 +53466,7 @@
 		"versionFilter": [
 			"plus"
 		],
-		"where": "chart.level IN ('14', '15')"
+		"where": "chart.level IN ('14', '14+', 15')"
 	},
 	{
 		"game": "wacca",
