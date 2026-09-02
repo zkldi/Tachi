@@ -26,7 +26,7 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 	scoreCalcs: (scoreData, _derivedData, chart) => ({
 		potential:
 			chart.levelNum > 0
-				? Potential.calculate(scoreData.score, chart.levelNum, scoreData.lamp !== "LOST")
+				? Potential.calculate(scoreData.score, chart.levelNum, scoreData.lamp)
 				: 0,
 	}),
 	pbRankingValues: (pb) => ({
