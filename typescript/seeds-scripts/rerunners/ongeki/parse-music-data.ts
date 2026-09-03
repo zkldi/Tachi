@@ -74,7 +74,7 @@ const updateChart = (out: OngekiChart, input: InputChart, song: InputSong, chang
 		changes.versions.push(`${song.name} ${diff}: ${CURRENT_OMNIMIX}`);
 		out.versions.push(CURRENT_OMNIMIX);
 	}
-	if(out.inGameID === null) {
+	if (out.inGameID === null) {
 		changes.ids.push(`${song.id} ${diff}: ${song.id}`);
 		out.inGameID = song.id;
 	}

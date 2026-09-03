@@ -32,7 +32,14 @@ const LEVELS = [
 	"15",
 	"15+",
 ];
-const DIFFICULTIES = [["BASIC", "basic"], ["ADVANCED", "advanced"], ["EXPERT", "expert"], ["MASTER", "master"], ["LUNATIC", "lunatic"], ["Re:MASTER", "lunatic-remaster"]];
+const DIFFICULTIES = [
+	["BASIC", "basic"],
+	["ADVANCED", "advanced"],
+	["EXPERT", "expert"],
+	["MASTER", "master"],
+	["LUNATIC", "lunatic"],
+	["Re:MASTER", "lunatic-remaster"],
+];
 const GENRES = [
 	["POPS＆ANIME", "pna"],
 	["niconico", "niconico"],

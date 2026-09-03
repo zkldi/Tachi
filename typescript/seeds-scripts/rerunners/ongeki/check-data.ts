@@ -44,25 +44,25 @@ const main = () => {
 	console.log(
 		`Missing chart views (${missingChartViews.length} total):\n${missingChartViews
 			.map((s) => `\t ${s.id} ${s.title}`)
-			.join("\n")}`
+			.join("\n")}`,
 	);
 
 	console.log(
 		`Missing search terms (${missingTerms.length} total):\n${missingTerms
 			.map((s) => `\t ${s.id} ${s.title}`)
-			.join("\n")}`
+			.join("\n")}`,
 	);
 
 	console.log(
 		`Missing durations (${missingDurations.length} total):\n${missingDurations
 			.map((s) => `\t ${s.id} ${s.title}`)
-			.join("\n")}`
+			.join("\n")}`,
 	);
 
 	console.log(
 		`Missing IDs (${missingIDs.size} total):\n${[...missingIDs]
 			.map(([song, count]) => `\t ${song.id} ${song.title} [${count}]`)
-			.join("\n")}`
+			.join("\n")}`,
 	);
 };
 
