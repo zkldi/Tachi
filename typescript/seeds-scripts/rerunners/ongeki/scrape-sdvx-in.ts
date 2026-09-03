@@ -108,6 +108,12 @@ const scrape = async (url: string, allCharts: OngekiChart[], allSongs: OngekiSon
 		}
 
 		const song = songs[0]!;
+
+		if (song.id === "S19d35e0fee643d12a81") {
+			// Perfect shining my behated
+			continue;
+		}
+
 		const properDiff = convertDiffProper(diff!);
 		const chart = allCharts.find(
 			(c) =>
