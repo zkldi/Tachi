@@ -2,11 +2,11 @@
 import { Command, InvalidArgumentError } from "commander";
 import { XMLParser } from "fast-xml-parser";
 import { type PathLike } from "fs";
-import { execFile } from "node:child_process";
-import fs from "node:fs/promises";
-import path from "node:path";
-import { promisify } from "node:util";
-import { type ChartDocument, type SongDocument } from "tachi-common";
+import { execFile } from "child_process";
+import fs from "fs/promises";
+import path from "path";
+import { promisify } from "util";
+import { SEEDS_ChartDocument, SEEDS_SongDocument } from "tachi-common";
 
 import { ReadCollection, WriteCollection } from "../../util";
 
@@ -16,17 +16,23 @@ const command = new Command()
 	.requiredOption("-v, --vgms <path-to-vgmstream-cli>")
 	.requiredOption("-d, --data <path-with-AXXX>")
 	.requiredOption("-g, --game <ongeki|chunithm>")
+	.option("-d, --debug")
 	.parse(process.argv);
 
 const options = command.opts();
 const vgmsPath = options.vgms;
 const optPath = options.data;
+const debug = options.debug;
 const game = options.game;
+
+const debugLog = (u: unknown) => {
+	if (debug) console.log(u);
+};
 
 const readOpt = async (
 	musicPath: string,
-	charts: ChartDocument<"chunithm" | "ongeki">[],
-	songs: SongDocument<"chunithm" | "ongeki">[],
+	charts: SEEDS_ChartDocument<"chunithm" | "ongeki">[],
+	songs: SEEDS_SongDocument<"chunithm" | "ongeki">[],
 ) => {
 	let musicDir: string[];
 	try {
@@ -38,6 +44,7 @@ const readOpt = async (
 
 	const parser = new XMLParser();
 	for (const songPath of musicDir) {
+		debugLog(songPath);
 		const p = path.join(musicPath, songPath);
 		if (!(await fs.stat(p)).isDirectory()) {
 			console.log(`${p}: not a directory`);
@@ -60,18 +67,17 @@ const readOpt = async (
 
 				const chart = charts.find((c) => c.data.inGameID === id);
 				if (chart === undefined) {
-					if (!(game === "chunithm" && id >= 8000)) {
-						console.error(`Song #${id}: not present in the seeds`);
-					}
+					console.error(`Song #${id}: not present in the seeds`);
 					continue;
 				}
-				const song = songs.find((s) => s.id === chart.song.id);
+				const song = songs.find((s) => s.id === chart.songID);
 				if (song === undefined) {
 					console.error(`Song #${id}: orphan`);
 					continue;
 				}
 
-				if ("duration" in song.data) {
+				if ("duration" in song.data && song.data.duration !== null) {
+					debugLog(`Skipping ${song.title}`);
 					continue;
 				}
 

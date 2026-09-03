@@ -1,18 +1,28 @@
-// usage: cd typescript/seeds-scripts/rerunners && bun ongeki/parse-music-data.ts
+// usage: cd typescript/seeds-scripts/rerunners/ongeki && bun run parse-music-data.ts
 
 import fs from "fs/promises";
-import { type ChartDocument, type Difficulties, type SongDocument } from "tachi-common";
-
+import {
+	CreateSongID,
+	SEEDS_ChartDocument,
+	SEEDS_SongDocument,
+	type Difficulties,
+} from "tachi-common";
+import { Command } from "commander";
 import { CreateChartID, ReadCollection, WriteCollection } from "../../util";
+import crypto from "crypto";
 
-type OngekiChart = ChartDocument<"ongeki">;
-type OngekiSong = SongDocument<"ongeki">;
+type OngekiChart = SEEDS_ChartDocument<"ongeki">;
+type OngekiSong = SEEDS_SongDocument<"ongeki">;
 type Difficulty = Difficulties["ongeki"];
+
+const command = new Command()
+	.requiredOption("-m, --musicjson <path-to-music-json>")
+	.parse(process.argv);
+const options = command.opts();
 
 const CURRENT_VERSION = "refresh";
 const CURRENT_OMNIMIX = "refreshOmni";
 const DRY_RUN = false;
-const SOURCE = "ongeki/music.json";
 
 interface Input {
 	dataVersion: string;
@@ -43,6 +53,7 @@ interface Changes {
 	versions: string[];
 	rerates: string[];
 	renames: string[];
+	ids: string[];
 }
 
 const convertLevel = (chart: InputChart) => {
@@ -73,9 +84,9 @@ const updateChart = (out: OngekiChart, input: InputChart, song: InputSong, chang
 		changes.versions.push(`${song.name} ${diff}: ${CURRENT_OMNIMIX}`);
 		out.versions.push(CURRENT_OMNIMIX);
 	}
-
-	if (input.difficulty === "LUNATIC") {
-		out.data.isReMaster = song.isReMaster;
+	if (out.data.inGameID === null) {
+		changes.ids.push(`${song.name} ${diff}: ${song.id}`);
+		out.data.inGameID = song.id;
 	}
 };
 
@@ -83,9 +94,9 @@ const main = async () => {
 	const charts: OngekiChart[] = ReadCollection("charts-ongeki.json");
 	const songs: OngekiSong[] = ReadCollection("songs-ongeki.json");
 
-	const input: Input = JSON.parse((await fs.readFile(SOURCE)).toString());
+	const input: Input = JSON.parse((await fs.readFile(options.musicjson)).toString());
 
-	console.log(`Parsing ${SOURCE} ${input.dataVersion}`);
+	console.log(`Parsing ${options.musicjson} ${input.dataVersion}`);
 
 	const changes: Changes = {
 		songs: [],
@@ -93,6 +104,7 @@ const main = async () => {
 		versions: [],
 		rerates: [],
 		renames: [],
+		ids: [],
 	};
 
 	for (const inputSong of input.music) {
@@ -108,13 +120,15 @@ const main = async () => {
 			song = songs.find((s) => s.title === inputSong.name && s.artist === inputSong.artist);
 			if (song === undefined) {
 				song = {
-					id: songs[songs.length - 1]!.id + 1,
+					id: CreateSongID(),
+					legacySongID: songs[songs.length - 1]!.legacySongID + 1,
 					altTitles: [],
 					searchTerms: [],
 					artist: inputSong.artist,
 					data: {
 						genre: inputSong.genre as any,
-					} as any,
+						duration: null,
+					},
 					title: inputSong.name,
 				};
 				changes.songs.push(song.title);
@@ -139,6 +153,9 @@ const main = async () => {
 		}
 
 		for (const inputChart of inputSong.charts) {
+			if (inputChart.difficulty === "LUNATIC" && inputSong.isReMaster) {
+				inputChart.difficulty = "Re:MASTER";
+			}
 			let chart = charts.find(
 				(c) => c.songID === song!.id && c.difficulty === inputChart.difficulty,
 			);
@@ -150,24 +167,22 @@ const main = async () => {
 					ver = `オンゲキ ${ver}`;
 				}
 				const newChart: OngekiChart = {
-					chartID: CreateChartID(),
+					id: CreateChartID(),
+					legacyChartID: `C${crypto.randomBytes(19).toString("hex")}`,
 					songID: song.id,
-					game: "ongeki",
 					data: {
 						displayVersion: ver as any,
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
+						isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
 					},
 					difficulty: inputChart.difficulty,
 					isPrimary: true,
 					level: convertLevel(inputChart),
 					levelNum: parseFloat(inputChart.internalLevel),
-					playtype: "Single",
 					versions: [CURRENT_VERSION, CURRENT_OMNIMIX],
 				};
-				if (newChart.difficulty === "LUNATIC") {
-					newChart.data.isReMaster = inputSong.isReMaster;
-				}
+
 				chart = newChart;
 				changes.charts.push(`${song.title} ${chart.difficulty} ${chart.level}`);
 				charts.push(chart);
