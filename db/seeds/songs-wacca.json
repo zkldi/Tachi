@@ -6178,5 +6178,65 @@
 		"legacySongID": 481,
 		"searchTerms": [],
 		"title": "radio galaxy"
+	},
+	{
+		"altTitles": [],
+		"artist": "ゆうゆ / 篠螺悠那",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "東方アレンジ"
+		},
+		"id": "S1a0690e912c514e8667",
+		"legacySongID": 485,
+		"searchTerms": [],
+		"title": "Imperishable Night 2006 (2016 Refine)"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお(COOL&CREATE)",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "東方アレンジ"
+		},
+		"id": "S1a0690e912cbbdd7a2a",
+		"legacySongID": 486,
+		"searchTerms": [],
+		"title": "サドマミホリック | SadoMamiHolic"
+	},
+	{
+		"altTitles": [],
+		"artist": "cYsmix",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "東方アレンジ"
+		},
+		"id": "S1a0690e912cd4d994cc",
+		"legacySongID": 484,
+		"searchTerms": [],
+		"title": "Eden"
+	},
+	{
+		"altTitles": [],
+		"artist": "Zekk",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "バラエティ"
+		},
+		"id": "S1a0690e912cd9b09a66",
+		"legacySongID": 483,
+		"searchTerms": [],
+		"title": "SUPER☆HARAGURO☆POP"
+	},
+	{
+		"altTitles": [],
+		"artist": "Silver Forest",
+		"data": {
+			"displayVersion": "plus",
+			"genre": "東方アレンジ"
+		},
+		"id": "S1a0690e912cf691287f",
+		"legacySongID": 487,
+		"searchTerms": [],
+		"title": "つるぺったん | Tsurupettan"
 	}
 ]
