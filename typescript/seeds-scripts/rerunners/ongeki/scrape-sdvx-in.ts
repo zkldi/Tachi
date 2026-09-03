@@ -109,7 +109,12 @@ const scrape = async (url: string, allCharts: OngekiChart[], allSongs: OngekiSon
 
 		const song = songs[0]!;
 		const properDiff = convertDiffProper(diff!);
-		const chart = allCharts.find((c) => c.songID === song.id && c.difficulty === properDiff);
+		const chart = allCharts.find(
+			(c) =>
+				c.songID === song.id &&
+				(c.difficulty === properDiff ||
+					(properDiff === "LUNATIC" && c.difficulty === "Re:MASTER")),
+		);
 
 		if (chart) {
 			chart.data.chartViewURL = link;
