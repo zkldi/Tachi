@@ -1,9 +1,9 @@
 import { Command } from "commander";
-import { type FolderDocument, GetGameConfig } from "tachi-common";
-import { type SeedFolderRow } from "tachi-common/lib/folder-slug";
+import { GetGameConfig } from "tachi-common";
+import { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types/seeds-documents-zod";
 import crypto from "crypto";
 
-import { CreateFolderID, CreateTableID, CreateLegacyFolderID, MutateCollection } from "../../util";
+import { CreateFolderID, CreateTableID, MutateCollection } from "../../util";
 
 const LEVELS = [
 	"0",
@@ -62,7 +62,7 @@ if (!versionName) {
 	);
 }
 
-const newFolders: SeedFolderRow[] = [];
+const newFolders: SEEDS_FolderDocument[] = [];
 const levelFolderIDs: string[] = [];
 const difficultyFolderIDs: string[] = [];
 
@@ -109,15 +109,15 @@ for (const [fullName, safeName] of GENRES) {
 }
 
 MutateCollection("tables.json", (ts) => {
-	ts.push(
+	(ts as SEEDS_TableDocument[]).push(
 		{
 			default: false,
 			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
 			folders: levelFolderIDs,
 			game: "ongeki",
 			inactive: false,
-			playtype: "Single",
-			tableID: `ongeki-Single-${version}-levels`,
+			id: CreateTableID(),
+			legacyTableID: `ongeki-Single-${version}-levels`,
 			title: `O.N.G.E.K.I. (${versionName})`,
 		},
 		{
@@ -126,8 +126,8 @@ MutateCollection("tables.json", (ts) => {
 			folders: difficultyFolderIDs,
 			game: "ongeki",
 			inactive: false,
-			playtype: "Single",
-			tableID: `ongeki-Single-${version}-difficulties`,
+			id: CreateTableID(),
+			legacyTableID: `ongeki-Single-${version}-difficulties`,
 			title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
 		},
 		{
@@ -135,8 +135,8 @@ MutateCollection("tables.json", (ts) => {
 			description: `Genres for O.N.G.E.K.I. in ${versionName}.`,
 			folders: GENRES.map(([_, g]) => `g-${g}-${version.toLowerCase()}`),
 			game: "ongeki",
-			id: CreateTableID(),
 			inactive: false,
+			id: CreateTableID(),
 			legacyTableID: `ongeki-Single-${version}-genres`,
 			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
 		},
@@ -145,4 +145,4 @@ MutateCollection("tables.json", (ts) => {
 	return ts;
 });
 
-MutateCollection("folders.json", (fs) => [...fs, ...newFolders]);
+MutateCollection("folders.json", (fs) => [...(fs as SEEDS_FolderDocument[]), ...newFolders]);

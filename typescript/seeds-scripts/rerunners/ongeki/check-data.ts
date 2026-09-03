@@ -1,8 +1,8 @@
 import { ReadCollection } from "../../util";
-import { ChartDocument, SongDocument } from "tachi-common";
+import { SEEDS_ChartDocument, SEEDS_SongDocument } from "tachi-common";
 
-type OngekiSong = SongDocument<"ongeki">;
-type OngekiChart = ChartDocument<"ongeki:Single">;
+type OngekiSong = SEEDS_SongDocument<"ongeki">;
+type OngekiChart = SEEDS_ChartDocument<"ongeki">;
 
 const hasCJK = (str: string) =>
 	str.match(/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f]/u);
