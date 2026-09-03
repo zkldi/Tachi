@@ -29,6 +29,7 @@ const inverseConvertDifficulty = (input: string) => {
 		case "Future":
 			return 2;
 		case "Beyond":
+		case "Inscribed":
 			return 3;
 		case "Eternal":
 			return 4;

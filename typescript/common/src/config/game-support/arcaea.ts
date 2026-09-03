@@ -82,21 +82,21 @@ export const GAME_ARCAEA_CONF = {
 	scoreRatingAlgs: {
 		potential: {
 			description: "Potential as it is implemented in Arcaea.",
-			formatter: ToDecimalPlaces(2),
+			formatter: ToDecimalPlaces(3),
 			canSetGoalsOn: true,
 		},
 	},
 	sessionRatingAlgs: {
 		naivePotential: {
-			description: "The average of your best 10 potentials this session.",
-			formatter: ToDecimalPlaces(2),
+			description: "The average of your best 10 Potentials this session.",
+			formatter: ToDecimalPlaces(3),
 		},
 	},
 	profileRatingAlgs: {
 		naivePotential: {
 			description:
-				"The average of your best 30 Potential values. This is different to the in-game algorithm, as it does not take your recent scores into account in any way.",
-			formatter: (v) => (Math.round(v * 100.0) / 100.0).toFixed(2),
+				"The average of your best 50 Potential values, with the best 10 being counted twice. Profile Potential as it's implemented in Arcaea 7.0+.",
+			formatter: (v) => (Math.round(v * 1000.0) / 1000.0).toFixed(3),
 			associatedScoreAlgs: ["potential"],
 		},
 	},
@@ -107,13 +107,14 @@ export const GAME_ARCAEA_CONF = {
 
 	difficulties: {
 		type: "FIXED",
-		order: ["Past", "Present", "Future", "Eternal", "Beyond"],
+		order: ["Past", "Present", "Future", "Eternal", "Beyond", "Inscribed"],
 		formatShort: {
 			Past: "PST",
 			Present: "PRS",
 			Future: "FTR",
 			Eternal: "ETR",
 			Beyond: "BYD",
+			Inscribed: "INS",
 		},
 		formatLong: {},
 		default: "Future",
@@ -147,5 +148,5 @@ export const GAME_ARCAEA_CONF = {
 	preferences: z.strictObject({}),
 	scoreMeta: z.strictObject({}),
 
-	supportedMatchTypes: ["inGameStrID", "songTitle", "tachiSongID"],
+	supportedMatchTypes: ["arcaeaInGameStrID", "songTitle", "tachiSongID"],
 } as const satisfies INTERNAL_GAME_CONFIG;
