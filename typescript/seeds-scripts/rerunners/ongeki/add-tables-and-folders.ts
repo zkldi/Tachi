@@ -63,49 +63,56 @@ if (!versionName) {
 }
 
 const newFolders: SEEDS_FolderDocument[] = [];
-const levelFolderIDs: string[] = [];
-const difficultyFolderIDs: string[] = [];
+const levelFolderSlugs: string[] = [];
+const difficultyFolderSlugs: string[] = [];
+const genreFolderSlugs: string[] = [];
 
 for (const level of LEVELS) {
+	const slug = `${level}-${version.toLowerCase()}`;
 	newFolders.push({
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
 		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
 		searchTerms: [],
-		slug: `${level}-${version.toLowerCase()}`,
+		slug,
 		title: `Level ${level} (${versionName})`,
 		versionFilter: [version],
 		where: `chart.data->>'isBonusTrack' = 'false' AND chart.level = '${level}'`,
 	});
+	levelFolderSlugs.push(slug);
 }
 
 for (const [fullName, safeName] of DIFFICULTIES) {
+	const slug = `${version.toLowerCase()}-${safeName}`;
 	newFolders.push({
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
 		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
 		searchTerms: [],
-		slug: `${version.toLowerCase()}-${safeName}`,
+		slug,
 		title: `${fullName} (${versionName})`,
 		versionFilter: [version],
 		where: `chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = '${fullName}'`,
 	});
+	difficultyFolderSlugs.push(slug);
 }
 
 for (const [fullName, safeName] of GENRES) {
+	const slug = `g-${safeName}-${version.toLowerCase()}`;
 	newFolders.push({
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
 		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
 		searchTerms: [],
-		slug: `g-${safeName}-${version.toLowerCase()}`,
+		slug,
 		title: `${fullName} (${versionName})`,
 		versionFilter: [version],
 		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`,
 	});
+	genreFolderSlugs.push(slug);
 }
 
 MutateCollection("tables.json", (ts) => {
@@ -113,7 +120,7 @@ MutateCollection("tables.json", (ts) => {
 		{
 			default: false,
 			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
-			folders: levelFolderIDs,
+			folders: levelFolderSlugs,
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
@@ -123,7 +130,7 @@ MutateCollection("tables.json", (ts) => {
 		{
 			default: false,
 			description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
-			folders: difficultyFolderIDs,
+			folders: difficultyFolderSlugs,
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
@@ -133,7 +140,7 @@ MutateCollection("tables.json", (ts) => {
 		{
 			default: false,
 			description: `Genres for O.N.G.E.K.I. in ${versionName}.`,
-			folders: GENRES.map(([_, g]) => `g-${g}-${version.toLowerCase()}`),
+			folders: genreFolderSlugs,
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
