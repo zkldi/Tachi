@@ -30129,5 +30129,122 @@
 			"zillionray_soundholic"
 		],
 		"title": "ZILLION RAY"
+	},
+	{
+		"altTitles": [],
+		"artist": "hololive IDOL PROJECT",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b4636a7fa564",
+		"legacySongID": 2533,
+		"searchTerms": [
+			"yumeirowonder_holodreams"
+		],
+		"title": "夢色ワンダー"
+	},
+	{
+		"altTitles": [],
+		"artist": "テヅカ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b4650c42d60e",
+		"legacySongID": 2540,
+		"searchTerms": [
+			"stellarpilgrim_tezuka"
+		],
+		"title": "Stellar Pilgrim"
+	},
+	{
+		"altTitles": [],
+		"artist": "あまみ×ひなみ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465447ec900",
+		"legacySongID": 2538,
+		"searchTerms": [
+			"sakuraeyelen_amamihinami"
+		],
+		"title": "Sakura Eyelen"
+	},
+	{
+		"altTitles": [],
+		"artist": "technoplanet feat. 木下珠子",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b46555c89450",
+		"legacySongID": 2535,
+		"searchTerms": [
+			"kakuteishinkoku_technoplanet"
+		],
+		"title": "覚帝神刻"
+	},
+	{
+		"altTitles": [],
+		"artist": "FLOOR LEGENDS -KAC-",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465b1ef5896",
+		"legacySongID": 2541,
+		"searchTerms": [
+			"kacchronicle_floorlegends"
+		],
+		"title": "KAC PERFECT ULTIMATE CHRONICLE -Lord of the SOUND VOLTEX-"
+	},
+	{
+		"altTitles": [],
+		"artist": "Tanchiky",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465c619c256",
+		"legacySongID": 2539,
+		"searchTerms": [
+			"viiix_tanchiky"
+		],
+		"title": "VIIIΧ"
+	},
+	{
+		"altTitles": [],
+		"artist": "NAMV feat. あかつき るき",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465d3066f1b",
+		"legacySongID": 2534,
+		"searchTerms": [
+			"saihate_namv"
+		],
+		"title": "サイハテ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ke-ji",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465daf0ed6a",
+		"legacySongID": 2537,
+		"searchTerms": [
+			"raisetheflagvictory_keji"
+		],
+		"title": "Raise the flag of victory!"
+	},
+	{
+		"altTitles": [],
+		"artist": "庭師",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a08288b465ee3b718b",
+		"legacySongID": 2536,
+		"searchTerms": [
+			"scifinder_niwashi"
+		],
+		"title": "Sci-Φ-nder"
 	}
 ]
