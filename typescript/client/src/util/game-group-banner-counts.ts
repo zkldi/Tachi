@@ -27,6 +27,7 @@ export const GAME_GROUP_BANNER_COUNTS = {
 	arcaea: 1,
 	ongeki: 1,
 	ddr: 1,
+	poco: 1,
 } as const satisfies Record<GameGroup, number>;
 
 export function getGameGroupBannerCount(gameGroup: GameGroup): number {

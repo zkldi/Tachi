@@ -6267,6 +6267,16 @@
 		"title": "Normal PMS Database"
 	},
 	{
+		"default": true,
+		"description": "Levels for Polaris Chord.",
+		"folders": [],
+		"game": "poco",
+		"id": "T19d35f0d592ffffffff",
+		"inactive": false,
+		"legacyTableID": "poco-Default",
+		"title": "Polaris Chord"
+	},
+	{
 		"default": false,
 		"description": "All pop'n Jam & Fizz levels individually.",
 		"folders": [
