@@ -38371,8 +38371,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29c09367bd",
+		"id": "F1a0918f4b476d878978",
 		"inactive": false,
+		"legacyFolderID": "F2f5f6eec62581da5ef2d49f4cfc1b4fee1a4cbae226f606e7dccaa8be692b782",
+		"searchTerms": [],
+		"slug": "1-circle-omni",
+		"title": "Level 1 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb3a8283ff3",
+		"inactive": false,
+		"legacyFolderID": "Ffe7221fad476c70d07629e21e00200d9840f60d5617fc90670a9112e2a3c4afd",
+		"searchTerms": [],
+		"slug": "1-circleplus",
+		"title": "Level 1 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29c09367bd",
+		"inactive": true,
 		"legacyFolderID": "F0a80f6806ffb5e84c076feb92e3030040437d95b1e375826a93033543f993508",
 		"searchTerms": [],
 		"slug": "1-circle",
@@ -38527,8 +38553,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf296bdb6313",
+		"id": "F1a0918f4b482f3b72f4",
 		"inactive": false,
+		"legacyFolderID": "Fe25b53f5bdf15a445a77b0caee58bfef81d16605e5aa65625dc009b5d52849c0",
+		"searchTerms": [],
+		"slug": "10-circle-omni",
+		"title": "Level 10 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4fc2dd45f",
+		"inactive": false,
+		"legacyFolderID": "Fb76255ba2305704497cf7e2d521e38596a236ec7dfcaef35419a93577c7ed634",
+		"searchTerms": [],
+		"slug": "10-circleplus",
+		"title": "Level 10 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf296bdb6313",
+		"inactive": true,
 		"legacyFolderID": "F27880c2cb47716e18fcb45c9ff2cc27c34dc695b822f4a12b79e0e75a7c98120",
 		"searchTerms": [],
 		"slug": "10-circle",
@@ -38683,8 +38735,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2975a407f7",
+		"id": "F1a0918f4b48bab14ec6",
 		"inactive": false,
+		"legacyFolderID": "Ff99dd95c45c29520a5c718181d1ee3907b75f640a00441e016e85c6b9dbbc9b3",
+		"searchTerms": [],
+		"slug": "10p-circle-omni",
+		"title": "Level 10+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '10+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4f38bdd8d",
+		"inactive": false,
+		"legacyFolderID": "Fe1ca53d07e002b36fb74ad30861f030ffc93e5289a7086cd43ff916110567566",
+		"searchTerms": [],
+		"slug": "10p-circleplus",
+		"title": "Level 10+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '10+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2975a407f7",
+		"inactive": true,
 		"legacyFolderID": "F10bcd0a5d8714b321cadd2c392d4496a9609c483540c8f1ad84acfbbc6e6a128",
 		"searchTerms": [],
 		"slug": "10p-circle",
@@ -38839,8 +38917,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf295d8abb87",
+		"id": "F1a0918f4b48e69ac908",
 		"inactive": false,
+		"legacyFolderID": "Fe85f21f71b840a74b2bca99db623899e49f04b5a13f4d619af0e680559057395",
+		"searchTerms": [],
+		"slug": "11-circle-omni",
+		"title": "Level 11 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb46c80de1a",
+		"inactive": false,
+		"legacyFolderID": "Fb54122a82eece9f20ebc447c5cba0ebc6988c7bfd3856f8e50c9232d51cd059e",
+		"searchTerms": [],
+		"slug": "11-circleplus",
+		"title": "Level 11 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf295d8abb87",
+		"inactive": true,
 		"legacyFolderID": "F54988e616f86114a99d3dc411b46e3d9ba317b5c1f1df373c56d7870d69def43",
 		"searchTerms": [],
 		"slug": "11-circle",
@@ -38995,8 +39099,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf297ee2d5bb",
+		"id": "F1a0918f4b48eefe8df8",
 		"inactive": false,
+		"legacyFolderID": "F7e2f98cbf8176fcf4e4f399d5e52851f8d3edff0b83ae41f29c1612bc4d86ff6",
+		"searchTerms": [],
+		"slug": "11p-circle-omni",
+		"title": "Level 11+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb45bef6713",
+		"inactive": false,
+		"legacyFolderID": "Fd1a6223df985e126c48f2cf675ce1fc5d128d780b60e2a34c6c62dc5406e7a8f",
+		"searchTerms": [],
+		"slug": "11p-circleplus",
+		"title": "Level 11+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf297ee2d5bb",
+		"inactive": true,
 		"legacyFolderID": "Fd92e4e693de99d258ff1826ed9022cc1c7718222b5a9b25ead7a4614304cecc0",
 		"searchTerms": [],
 		"slug": "11p-circle",
@@ -39151,8 +39281,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf290572a9a6",
+		"id": "F1a0918f4b483d4375d7",
 		"inactive": false,
+		"legacyFolderID": "F97128d028ba677c43ff5e1ee8ab04216a0bfdf27b5241255b5a10e4f0f28ba24",
+		"searchTerms": [],
+		"slug": "12-circle-omni",
+		"title": "Level 12 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb480735689",
+		"inactive": false,
+		"legacyFolderID": "Fff6eb3c4782d3b1acfe8ec51cd02cfd27e55c70b7eefc8456ab2bc1d892ae1c4",
+		"searchTerms": [],
+		"slug": "12-circleplus",
+		"title": "Level 12 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf290572a9a6",
+		"inactive": true,
 		"legacyFolderID": "F7b2aa694e3871434b48e1c7cbfd36ef4275488ecd88a0cec16a5b99a2b7b5ec5",
 		"searchTerms": [],
 		"slug": "12-circle",
@@ -39307,8 +39463,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf296759746b",
+		"id": "F1a0918f4b48e2732f65",
 		"inactive": false,
+		"legacyFolderID": "Fd166a009b14da1544c7410761fe16988edf34d57a5948c66c9b4092726c59baf",
+		"searchTerms": [],
+		"slug": "12p-circle-omni",
+		"title": "Level 12+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '12+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb448b75a63",
+		"inactive": false,
+		"legacyFolderID": "F25bd6816020fd90dec6d6cf71aa81953dbf79ea0fa69275ff8cb3173bde76fb3",
+		"searchTerms": [],
+		"slug": "12p-circleplus",
+		"title": "Level 12+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '12+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf296759746b",
+		"inactive": true,
 		"legacyFolderID": "F22fe4d7aa48026a1aa5f719c05b3e9d8ca639af907ce7b96df44090a13e4031f",
 		"searchTerms": [],
 		"slug": "12p-circle",
@@ -39463,8 +39645,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29c155ac55",
+		"id": "F1a0918f4b489f5efdfe",
 		"inactive": false,
+		"legacyFolderID": "F218ee68ee2c8f04e48c55849e8892640c7271c9a2d077a60e81249f4254ec4b7",
+		"searchTerms": [],
+		"slug": "13-circle-omni",
+		"title": "Level 13 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4230eee77",
+		"inactive": false,
+		"legacyFolderID": "F9923b8d9350feda676ba5f31f30a0c674d82e9c40b971deb5940750c8694c924",
+		"searchTerms": [],
+		"slug": "13-circleplus",
+		"title": "Level 13 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29c155ac55",
+		"inactive": true,
 		"legacyFolderID": "Fc76d023b4aa0651369631987ad16ad5ce801c80190f0a45147b006e43fd3ce11",
 		"searchTerms": [],
 		"slug": "13-circle",
@@ -39619,8 +39827,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29d34055dc",
+		"id": "F1a0918f4b481a3663a3",
 		"inactive": false,
+		"legacyFolderID": "F43bd22cc56afaf345ef13131a29083e13302d9daa73e762c4e4c9a10b772a6fb",
+		"searchTerms": [],
+		"slug": "13p-circle-omni",
+		"title": "Level 13+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '13+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4d0d67e0e",
+		"inactive": false,
+		"legacyFolderID": "Fdc6f6ac39ada2ffbd5c38544b6c3f3b44241a28f9b46cfc30285f2ec75820bad",
+		"searchTerms": [],
+		"slug": "13p-circleplus",
+		"title": "Level 13+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '13+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29d34055dc",
+		"inactive": true,
 		"legacyFolderID": "Ffbef2634a665f654e7c1c94ffc33a677c00a7ee184846fcfc5875c4dccc91462",
 		"searchTerms": [],
 		"slug": "13p-circle",
@@ -39775,8 +40009,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29b75c1d5c",
+		"id": "F1a0918f4b481c971982",
 		"inactive": false,
+		"legacyFolderID": "F2cab8085d00aa59f90aa81e92a22b221884ae483a464cec86413b54473364964",
+		"searchTerms": [],
+		"slug": "14-circle-omni",
+		"title": "Level 14 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4bb976c4e",
+		"inactive": false,
+		"legacyFolderID": "Fc8c42b19ff7d46cd475f9dfd7b2b255fbe47836002ccdcc6a9ed699bec6c6cd0",
+		"searchTerms": [],
+		"slug": "14-circleplus",
+		"title": "Level 14 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29b75c1d5c",
+		"inactive": true,
 		"legacyFolderID": "F4aeecfede4dd6caa86ea15f6383ba66edb81f4202a7649910343ff5092733e9c",
 		"searchTerms": [],
 		"slug": "14-circle",
@@ -39931,8 +40191,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2970e6f54b",
+		"id": "F1a0918f4b4864bffb28",
 		"inactive": false,
+		"legacyFolderID": "Fb8ff3b454d86c0b25e5d11c3f550859334cd14d7dc2febb9a97d629e79a56168",
+		"searchTerms": [],
+		"slug": "14p-circle-omni",
+		"title": "Level 14+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '14+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4f65fa2ab",
+		"inactive": false,
+		"legacyFolderID": "F20201d6f9ed9ea2260fa7be382ddb1c4bfff48e01e082c7546c132a88dbfcd75",
+		"searchTerms": [],
+		"slug": "14p-circleplus",
+		"title": "Level 14+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '14+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2970e6f54b",
+		"inactive": true,
 		"legacyFolderID": "Ff8568d8ee3a245752e7859f54ed6b77c2078075d301706a5269ac0dd05c29f98",
 		"searchTerms": [],
 		"slug": "14p-circle",
@@ -40087,8 +40373,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2995afee5d",
+		"id": "F1a0918f4b483dc5a95f",
 		"inactive": false,
+		"legacyFolderID": "F0a86e5d5545fe50caf1a563fae0cc0efd5f3387ecea0ec8b2ba3b98a099305f0",
+		"searchTerms": [],
+		"slug": "15-circle-omni",
+		"title": "Level 15 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb498426d67",
+		"inactive": false,
+		"legacyFolderID": "F59fb43cde06958afa680ec1da4c1094831d3782bc71c6126a69cfc2ad2e35904",
+		"searchTerms": [],
+		"slug": "15-circleplus",
+		"title": "Level 15 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2995afee5d",
+		"inactive": true,
 		"legacyFolderID": "Fadb6e5f50803a81537cd3fb11103a691b3eda5553846f0b2e6c13a14a3ad990c",
 		"searchTerms": [],
 		"slug": "15-circle",
@@ -40243,8 +40555,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29b6625250",
+		"id": "F1a0918f4b48a40afc0c",
 		"inactive": false,
+		"legacyFolderID": "F94b23be00049d7c6e1dc3a9f49605cd2fa3dfcd9bb926359de1e6b0bac707d67",
+		"searchTerms": [],
+		"slug": "2-circle-omni",
+		"title": "Level 2 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4a5faad32",
+		"inactive": false,
+		"legacyFolderID": "F8bf57275b40ba24aad91ec59b8a3a7046076a4581cff01a92530f70162b85bae",
+		"searchTerms": [],
+		"slug": "2-circleplus",
+		"title": "Level 2 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29b6625250",
+		"inactive": true,
 		"legacyFolderID": "F3e9346868af3e1a9ccaa27ef98d5653a2e35683b9d18a24944211d3b021372a6",
 		"searchTerms": [],
 		"slug": "2-circle",
@@ -40399,8 +40737,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2932eb35be",
+		"id": "F1a0918f4b4865575e95",
 		"inactive": false,
+		"legacyFolderID": "F28e7619329a35beea5ebecbfcee758ca562f49dc8968efb73d46ab73603805a8",
+		"searchTerms": [],
+		"slug": "3-circle-omni",
+		"title": "Level 3 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4c5bc619e",
+		"inactive": false,
+		"legacyFolderID": "Fd0b8be3513bfb88fdbfe0fc6cb15d6ddd8af6ffedb2989a9fc7a7c142620e8d9",
+		"searchTerms": [],
+		"slug": "3-circleplus",
+		"title": "Level 3 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2932eb35be",
+		"inactive": true,
 		"legacyFolderID": "F6524800df1f331b2bd1fbc6c8850d9309d944cc3f3cb339f654907738aa5bd7b",
 		"searchTerms": [],
 		"slug": "3-circle",
@@ -40555,8 +40919,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2977240875",
+		"id": "F1a0918f4b481ea1c8fc",
 		"inactive": false,
+		"legacyFolderID": "Fd0ecfc96078664ef6a1a4e45bc6d87fbf8917e970cdd52e2e522b8ca453cde4b",
+		"searchTerms": [],
+		"slug": "4-circle-omni",
+		"title": "Level 4 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb412c3e7a9",
+		"inactive": false,
+		"legacyFolderID": "Fefcc2c79f789f589dbe4457513b9cc39944cf57009d26af272337229495d9394",
+		"searchTerms": [],
+		"slug": "4-circleplus",
+		"title": "Level 4 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2977240875",
+		"inactive": true,
 		"legacyFolderID": "F5abb7d24ec22e7ad6ea9833777a7ae223fab3afa6c41cf5874bc9a80a49d469e",
 		"searchTerms": [],
 		"slug": "4-circle",
@@ -40711,8 +41101,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29a1c38c04",
+		"id": "F1a0918f4b486c232346",
 		"inactive": false,
+		"legacyFolderID": "Fdfb740bc83de727d769892144a463cf006b340e432893c6d940fb28e3e3e121f",
+		"searchTerms": [],
+		"slug": "5-circle-omni",
+		"title": "Level 5 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4f5b5ca15",
+		"inactive": false,
+		"legacyFolderID": "F2e577b822b6b342dae85b30832620de854d415055712c9bd08c33a3a82c42b37",
+		"searchTerms": [],
+		"slug": "5-circleplus",
+		"title": "Level 5 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29a1c38c04",
+		"inactive": true,
 		"legacyFolderID": "F99b0979f23d688a772e004eaa5757552be3d70dee8c1863d1154c178514d182a",
 		"searchTerms": [],
 		"slug": "5-circle",
@@ -40867,8 +41283,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29f8d6de25",
+		"id": "F1a0918f4b48e5a09623",
 		"inactive": false,
+		"legacyFolderID": "F09fd7681b1a107fe31c87e68e492aebf83a8135c14ec6e96b80786cbbd8acfa6",
+		"searchTerms": [],
+		"slug": "6-circle-omni",
+		"title": "Level 6 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb4635c55aa",
+		"inactive": false,
+		"legacyFolderID": "Fea88c4cd77332fe7407e402d25989eff93676781fab14b6913c34e66bd984960",
+		"searchTerms": [],
+		"slug": "6-circleplus",
+		"title": "Level 6 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29f8d6de25",
+		"inactive": true,
 		"legacyFolderID": "F26f15f676ddff949a99b5416ab041c263dc14a35639da6953ca030b49bfef76e",
 		"searchTerms": [],
 		"slug": "6-circle",
@@ -41023,8 +41465,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29eb2a9a98",
+		"id": "F1a0918f4b48cbd4c101",
 		"inactive": false,
+		"legacyFolderID": "F404a6b5d2e6ab969eaf994e016bce4ff2ff02e8a3a7a6b7630035aceffe54d0d",
+		"searchTerms": [],
+		"slug": "7-circle-omni",
+		"title": "Level 7 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb48483df89",
+		"inactive": false,
+		"legacyFolderID": "Feefa73ee9613794dc4679ebd2b80fc48a8909087ef930ae4e1da2443be2b205a",
+		"searchTerms": [],
+		"slug": "7-circleplus",
+		"title": "Level 7 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29eb2a9a98",
+		"inactive": true,
 		"legacyFolderID": "F81a995704b5ca4c08e3f8a1d7cd25f76a62954ab991db032838beeb281d42184",
 		"searchTerms": [],
 		"slug": "7-circle",
@@ -41179,8 +41647,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2945bc639b",
+		"id": "F1a0918f4b485fac529d",
 		"inactive": false,
+		"legacyFolderID": "F35d7e94cc44928ecaeb27c28bcea34ade3b8452e60edbeb966c8fc5816649803",
+		"searchTerms": [],
+		"slug": "7p-circle-omni",
+		"title": "Level 7+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb48b1d252f",
+		"inactive": false,
+		"legacyFolderID": "Fc9d25f3572df5640e2364850e7b228ed3c67a95655a049d6f0ae0b3c76ca08a5",
+		"searchTerms": [],
+		"slug": "7p-circleplus",
+		"title": "Level 7+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2945bc639b",
+		"inactive": true,
 		"legacyFolderID": "Fd35c0d38b593f15bc7d935ca0206fbd6e72d0a3d7982834d05e01174d82f3658",
 		"searchTerms": [],
 		"slug": "7p-circle",
@@ -41335,8 +41829,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf295f0f6537",
+		"id": "F1a0918f4b481b49da78",
 		"inactive": false,
+		"legacyFolderID": "F199b5d9380af84d4f15f411770629bdb56643b9110c1e6b45aeaca53d741894a",
+		"searchTerms": [],
+		"slug": "8-circle-omni",
+		"title": "Level 8 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb439a78015",
+		"inactive": false,
+		"legacyFolderID": "Fe28d3d613620c790ae4bee46d784d7d52c66e1a3ffced3e258dc6ac7196ff743",
+		"searchTerms": [],
+		"slug": "8-circleplus",
+		"title": "Level 8 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf295f0f6537",
+		"inactive": true,
 		"legacyFolderID": "F14c296a8311483d4cd4b009ba673c883acf0333dba46ae2443af8336637be23a",
 		"searchTerms": [],
 		"slug": "8-circle",
@@ -41491,8 +42011,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf29f956be68",
+		"id": "F1a0918f4b488374425b",
 		"inactive": false,
+		"legacyFolderID": "F07664afa729067cf16a14f4a244cb9843eda9cd3e3a4c267c7b5232aa149039c",
+		"searchTerms": [],
+		"slug": "8p-circle-omni",
+		"title": "Level 8+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '8+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb48b07b491",
+		"inactive": false,
+		"legacyFolderID": "Fa396467af6313c2a8ef874999f6ac16cffbfb00708a5fd5a3781a957e620bda9",
+		"searchTerms": [],
+		"slug": "8p-circleplus",
+		"title": "Level 8+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '8+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf29f956be68",
+		"inactive": true,
 		"legacyFolderID": "F4e5cd0675b01831312aec0ea2b0ee42abd990227a206f86a4baeae47155deeb6",
 		"searchTerms": [],
 		"slug": "8p-circle",
@@ -41647,8 +42193,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2abfcc0e7f",
+		"id": "F1a0918f4b4897844220",
 		"inactive": false,
+		"legacyFolderID": "Fe7d46324b963aeba5bbd18da386dcfe0422bec9e152086f3cd0ee22a445222d2",
+		"searchTerms": [],
+		"slug": "9-circle-omni",
+		"title": "Level 9 (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb437dc781b",
+		"inactive": false,
+		"legacyFolderID": "F495892f7a85519e54888aaed8895ab65ff23bb1e92ac051607b0647b079127fd",
+		"searchTerms": [],
+		"slug": "9-circleplus",
+		"title": "Level 9 (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2abfcc0e7f",
+		"inactive": true,
 		"legacyFolderID": "Fbe66537e71a1c8bc490bc25eb37fded8d8c15c0c37e6d6a4e123e79f0960da6f",
 		"searchTerms": [],
 		"slug": "9-circle",
@@ -41803,8 +42375,34 @@
 	},
 	{
 		"game": "maimaidx",
-		"id": "F19d35f0cf2a52e54b98",
+		"id": "F1a0918f4b484315cc7f",
 		"inactive": false,
+		"legacyFolderID": "F3824b47b11a3520154fa9902ef32465dd11478ee52a99dcc7400b8ce577cc0c6",
+		"searchTerms": [],
+		"slug": "9p-circle-omni",
+		"title": "Level 9+ (CiRCLE Omnimix)",
+		"versionFilter": [
+			"circle-omni"
+		],
+		"where": "chart.level = '9+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F1a0918c9cb476846adb",
+		"inactive": false,
+		"legacyFolderID": "F07bc10b13782d6380577432f7c94804c9890f8036a1e0bc13f588402303d4fdc",
+		"searchTerms": [],
+		"slug": "9p-circleplus",
+		"title": "Level 9+ (CiRCLE PLUS)",
+		"versionFilter": [
+			"circleplus"
+		],
+		"where": "chart.level = '9+'"
+	},
+	{
+		"game": "maimaidx",
+		"id": "F19d35f0cf2a52e54b98",
+		"inactive": true,
 		"legacyFolderID": "Fcc5dbd80328ac7d1e74b8110a04663cffc265144f20c95406f72c71b99dd3e0e",
 		"searchTerms": [],
 		"slug": "9p-circle",

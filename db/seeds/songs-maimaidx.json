@@ -22051,5 +22051,411 @@
 			"yaminabe"
 		],
 		"title": "ヤミナベ!!!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "nayuta",
+		"data": {
+			"duration": 141.667,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea27db17eb597",
+		"legacySongID": 1600,
+		"searchTerms": [
+			"suuroguroo"
+		],
+		"title": "スローグロー"
+	},
+	{
+		"altTitles": [],
+		"artist": "棗いつき",
+		"data": {
+			"duration": 149.845,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea2884befd087",
+		"legacySongID": 1601,
+		"searchTerms": [
+			"echo,"
+		],
+		"title": "ECHO,"
+	},
+	{
+		"altTitles": [],
+		"artist": "藍月なくる",
+		"data": {
+			"duration": 152.308,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea2984e270fcc",
+		"legacySongID": 1602,
+		"searchTerms": [
+			"phase: theatre"
+		],
+		"title": "Phase: Theatre"
+	},
+	{
+		"altTitles": [],
+		"artist": "La prière",
+		"data": {
+			"duration": 160.351,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea2a1be1230dd",
+		"legacySongID": 1603,
+		"searchTerms": [
+			"sky trails"
+		],
+		"title": "Sky Trails"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+		"data": {
+			"duration": 163.432,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a0917ea2d2c6967c3e",
+		"legacySongID": 1604,
+		"searchTerms": [
+			"wakeup makeup fever!"
+		],
+		"title": "WakeUP MakeUP FEVER!"
+	},
+	{
+		"altTitles": [],
+		"artist": "曲：中土智博／歌：bitter flavor [桜井 春菜(CV：近藤 玲奈)、早乙女 彩華(CV：中島 唯)]",
+		"data": {
+			"duration": 128.621,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a0917ea2df74f6574e",
+		"legacySongID": 1605,
+		"searchTerms": [
+			"give it up to you"
+		],
+		"title": "give it up to you"
+	},
+	{
+		"altTitles": [],
+		"artist": "Srav3R",
+		"data": {
+			"duration": 146.211,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a0917ea2e9b110289d",
+		"legacySongID": 1606,
+		"searchTerms": [
+			"iceburn"
+		],
+		"title": "ICEBURN"
+	},
+	{
+		"altTitles": [],
+		"artist": "Artifact",
+		"data": {
+			"duration": 145.297,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a0917ea2f3d654a7f2",
+		"legacySongID": 1607,
+		"searchTerms": [
+			"daredevil glaive"
+		],
+		"title": "Daredevil Glaive"
+	},
+	{
+		"altTitles": [],
+		"artist": "中野家の五つ子",
+		"data": {
+			"duration": 145.91,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea329c9100541",
+		"legacySongID": 1608,
+		"searchTerms": [
+			"kimidattakara"
+		],
+		"title": "君だったから"
+	},
+	{
+		"altTitles": [],
+		"artist": "uno×夕野ヨシミ feat. miko",
+		"data": {
+			"duration": 109.942,
+			"genre": "東方Project"
+		},
+		"id": "S1a0917ea4a7985c4cd1",
+		"legacySongID": 1609,
+		"searchTerms": [
+			"koi no hyouketsu otenba yukemuri chiruno onsen"
+		],
+		"title": "恋の氷結おてんば湯けむりチルノ温泉"
+	},
+	{
+		"altTitles": [],
+		"artist": "七条レタスグループ",
+		"data": {
+			"duration": 146.786,
+			"genre": "東方Project"
+		},
+		"id": "S1a0917ea4b0144e89b1",
+		"legacySongID": 1610,
+		"searchTerms": [
+			"itaden wa yamete bokura no sukaaretto kooru"
+		],
+		"title": "イタ電はやめて！ ぼくらのスカーレット・コール"
+	},
+	{
+		"altTitles": [],
+		"artist": "ARM×狐夢想 feat. miko×山本椛",
+		"data": {
+			"duration": 136.8,
+			"genre": "東方Project"
+		},
+		"id": "S1a0917ea4bae6b9baea",
+		"legacySongID": 1611,
+		"searchTerms": [
+			"mushimikounyaa no happipii"
+		],
+		"title": "むしみこうにゃーのハッピッピー"
+	},
+	{
+		"altTitles": [],
+		"artist": "DIVELA feat.ラングドシャ",
+		"data": {
+			"duration": 127.354,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea4d7b3d4cebc",
+		"legacySongID": 1612,
+		"searchTerms": [
+			"knock out!!"
+		],
+		"title": "KNØCK ØUT!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "tokiwa×むﾄ",
+		"data": {
+			"duration": 137.7,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea4e012321259",
+		"legacySongID": 1613,
+		"searchTerms": [
+			"aides"
+		],
+		"title": "Aides"
+	},
+	{
+		"altTitles": [],
+		"artist": "7mai",
+		"data": {
+			"duration": 134.018,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea4e93b5172b1",
+		"legacySongID": 1614,
+		"searchTerms": [
+			"treasure chest expedition"
+		],
+		"title": "Treasure Chest Expedition"
+	},
+	{
+		"altTitles": [],
+		"artist": "Rafutsuri feat.桜あおい",
+		"data": {
+			"duration": 150,
+			"genre": "maimai"
+		},
+		"id": "S1a0917ea4f3279e0bcd",
+		"legacySongID": 1615,
+		"searchTerms": [
+			"soteria"
+		],
+		"title": "ソテリア"
+	},
+	{
+		"altTitles": [],
+		"artist": "PRASTIK DANCEFLOOR",
+		"data": {
+			"duration": 138.806,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a0917ea4fcd0173ac3",
+		"legacySongID": 1616,
+		"searchTerms": [
+			"technopolis 2085"
+		],
+		"title": "TECHNOPOLIS 2085"
+	},
+	{
+		"altTitles": [],
+		"artist": "米津玄師",
+		"data": {
+			"duration": 91,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea5135ffa5840",
+		"legacySongID": 1617,
+		"searchTerms": [
+			"bow and arrow (anime opening ver.)"
+		],
+		"title": "BOW AND ARROW （アニメ・オープニングver.）"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾),長門有希(CV.茅原実里),朝比奈みくる(CV.後藤邑子)、キョン(CV.杉田智和)、古泉一樹(CV.小野大輔)",
+		"data": {
+			"duration": 138.162,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea51dad39fb64",
+		"legacySongID": 1618,
+		"searchTerms": [
+			"mutekiteki hapinesu! (sosdan 5nin ver.)"
+		],
+		"title": "無敵的ハピネス！(SOS団5人Ver.)"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"data": {
+			"duration": 162.581,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea52713f38370",
+		"legacySongID": 1619,
+		"searchTerms": [
+			"chasing destiny"
+		],
+		"title": "Chasing destiny"
+	},
+	{
+		"altTitles": [],
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"data": {
+			"duration": 165.185,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea530cfff01b4",
+		"legacySongID": 1620,
+		"searchTerms": [
+			"colorful starting line"
+		],
+		"title": "Colorful Starting Line"
+	},
+	{
+		"altTitles": [],
+		"artist": "AiScReam[黒澤ルビィ(CV.降幡 愛)、上原歩夢(CV.大西亜玖璃)、若菜四季(CV.大熊和奏)]",
+		"data": {
+			"duration": 164.545,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a0917ea53ac4f089cb",
+		"legacySongID": 1621,
+		"searchTerms": [
+			"ai sukuriiimu"
+		],
+		"title": "愛♡スクリ～ム！"
+	},
+	{
+		"altTitles": [],
+		"artist": "DECO*27",
+		"data": {
+			"duration": 139.902,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a0917ea545da39a874",
+		"legacySongID": 1622,
+		"searchTerms": [
+			"terepashi"
+		],
+		"title": "テレパシ"
+	},
+	{
+		"altTitles": [],
+		"artist": "雨良 Amala",
+		"data": {
+			"duration": 159.231,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a0917ea5505581bd2f",
+		"legacySongID": 1623,
+		"searchTerms": [
+			"daidaidaidaidaikirai"
+		],
+		"title": "ダイダイダイダイダイキライ"
+	},
+	{
+		"altTitles": [],
+		"artist": "ナユタン星人",
+		"data": {
+			"duration": 156.364,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a0917ea55bcd2cf4fd",
+		"legacySongID": 1624,
+		"searchTerms": [
+			"opera supeesu opera"
+		],
+		"title": "オペラ！スペースオペラ！"
+	},
+	{
+		"altTitles": [],
+		"artist": "ピノキオピー",
+		"data": {
+			"duration": 163.636,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a0917ea5731a614e76",
+		"legacySongID": 1625,
+		"searchTerms": [
+			"t-shi no hanashi o shinjiruna"
+		],
+		"title": "T氏の話を信じるな"
+	},
+	{
+		"altTitles": [],
+		"artist": "ビートまりお×まろん",
+		"data": {
+			"duration": 132.124,
+			"genre": "東方Project"
+		},
+		"id": "S1a0917ea57decef397c",
+		"legacySongID": 1626,
+		"searchTerms": [
+			"chou naito obu naitsu"
+		],
+		"title": "超ナイト・オブ・ナイツ"
+	},
+	{
+		"altTitles": [],
+		"artist": "魔界都市ニイガタ（黄泉路テヂーモ×dawn-system×かゆき）",
+		"data": {
+			"duration": 130.938,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": "S1a0917ea58676961476",
+		"legacySongID": 1627,
+		"searchTerms": [
+			"ukiyoe yokochou"
+		],
+		"title": "浮世絵横丁"
+	},
+	{
+		"altTitles": [],
+		"artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+		"data": {
+			"duration": 154,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": "S1a0917ea591df90f1de",
+		"legacySongID": 1628,
+		"searchTerms": [
+			"ai ae"
+		],
+		"title": "AiAe"
 	}
 ]
