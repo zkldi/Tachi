@@ -1,9 +1,9 @@
 import { Command } from "commander";
-import { type FolderDocument, GetGameConfig } from "tachi-common";
-import { type SeedFolderRow } from "tachi-common/lib/folder-slug";
+import { GetGameConfig } from "tachi-common";
+import { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types/seeds-documents-zod";
 import crypto from "crypto";
 
-import { CreateFolderID, CreateTableID, CreateLegacyFolderID, MutateCollection } from "../../util";
+import { CreateFolderID, CreateTableID, MutateCollection } from "../../util";
 
 const LEVELS = [
 	"0",
@@ -32,7 +32,14 @@ const LEVELS = [
 	"15",
 	"15+",
 ];
-const DIFFICULTIES = ["BASIC", "ADVANCED", "EXPERT", "MASTER", "LUNATIC", "Re:MASTER"];
+const DIFFICULTIES = [
+	["BASIC", "basic"],
+	["ADVANCED", "advanced"],
+	["EXPERT", "expert"],
+	["MASTER", "master"],
+	["LUNATIC", "lunatic"],
+	["Re:MASTER", "lunatic-remaster"],
+];
 const GENRES = [
 	["POPS＆ANIME", "pna"],
 	["niconico", "niconico"],
@@ -55,96 +62,88 @@ if (!versionName) {
 	);
 }
 
-const newFolders: SeedFolderRow[] = [];
-const levelFolderIDs: string[] = [];
-const difficultyFolderIDs: string[] = [];
+const newFolders: SEEDS_FolderDocument[] = [];
+const levelFolderSlugs: string[] = [];
+const difficultyFolderSlugs: string[] = [];
+const genreFolderSlugs: string[] = [];
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!
-// !! Not yet updated for V3!
-// !!!!!!!!!!!!!!!!!!!!!!!!!!
+for (const level of LEVELS) {
+	const slug = `${level}-${version.toLowerCase()}`;
+	newFolders.push({
+		game: "ongeki",
+		id: CreateFolderID(),
+		inactive: false,
+		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		searchTerms: [],
+		slug,
+		title: `Level ${level} (${versionName})`,
+		versionFilter: [version],
+		where: `chart.data->>'isBonusTrack' = 'false' AND chart.level = '${level}'`,
+	});
+	levelFolderSlugs.push(slug);
+}
 
-// for (const level of LEVELS) {
-// 	const data = {
-// 		level,
-// 		versions: version,
-// 		isBonusTrack: false,
-// 	};
-// 	const legacyFolderID = CreateLegacyFolderID(data, "ongeki", "Single");
+for (const [fullName, safeName] of DIFFICULTIES) {
+	const slug = `${version.toLowerCase()}-${safeName}`;
+	newFolders.push({
+		game: "ongeki",
+		id: CreateFolderID(),
+		inactive: false,
+		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		searchTerms: [],
+		slug,
+		title: `${fullName} (${versionName})`,
+		versionFilter: [version],
+		where: `chart.data->>'isBonusTrack' = 'false' AND chart.difficulty = '${fullName}'`,
+	});
+	difficultyFolderSlugs.push(slug);
+}
 
-// 	levelFolderIDs.push(folderID);
-
-// 	newFolders.push({
-// 		data,
-// 		id: CreateFolderID(),
-// 		legacyFolderID,
-// 		game: "ongeki",
-// 		inactive: false,
-// 		playtype: "Single",
-// 		searchTerms: [],
-// 		title: `Level ${level} (${versionName})`,
-// 		type: "charts",
-// 	});
-// }
-
-// for (const difficulty of DIFFICULTIES) {
-// 	const data = { difficulty, versions: version };
-
-// 	if (difficulty === "LUNATIC") {
-// 		data["data¬isReMaster"] = false;
-// 	} else if (difficulty === "Re:MASTER") {
-// 		data["data¬isReMaster"] = true;
-// 		data.difficulty = "LUNATIC";
-// 	} else {
-// 		data["data¬inGameID"] = {
-// 			"~lt": 7000,
-// 		};
-// 	}
-
-// 	const folderID = CreateLegacyFolderID(data, "ongeki", "Single");
-
-// 	difficultyFolderIDs.push(folderID);
-
-// 	newFolders.push({
-// 		data,
-// 		folderID,
-// 		game: "ongeki",
-// 		inactive: false,
-// 		playtype: "Single",
-// 		searchTerms: [],
-// 		title: `${difficulty} (${versionName})`,
-// 		type: "charts",
-// 	});
-// }
+for (const [fullName, safeName] of GENRES) {
+	const slug = `g-${safeName}-${version.toLowerCase()}`;
+	newFolders.push({
+		game: "ongeki",
+		id: CreateFolderID(),
+		inactive: false,
+		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		searchTerms: [],
+		slug,
+		title: `${fullName} (${versionName})`,
+		versionFilter: [version],
+		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`,
+	});
+	genreFolderSlugs.push(slug);
+}
 
 MutateCollection("tables.json", (ts) => {
-	ts.push(
-		// {
-		// 	default: false,
-		// 	description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
-		// 	folders: levelFolderIDs,
-		// 	game: "ongeki",
-		// 	inactive: false,
-		// 	playtype: "Single",
-		// 	tableID: `ongeki-Single-${version}-levels`,
-		// 	title: `O.N.G.E.K.I. (${versionName})`,
-		// },
-		// {
-		// 	default: false,
-		// 	description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
-		// 	folders: difficultyFolderIDs,
-		// 	game: "ongeki",
-		// 	inactive: false,
-		// 	playtype: "Single",
-		// 	tableID: `ongeki-Single-${version}-difficulties`,
-		// 	title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
-		// },
+	(ts as SEEDS_TableDocument[]).push(
+		{
+			default: false,
+			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,
+			folders: levelFolderSlugs,
+			game: "ongeki",
+			inactive: false,
+			id: CreateTableID(),
+			legacyTableID: `ongeki-Single-${version}-levels`,
+			title: `O.N.G.E.K.I. (${versionName})`,
+		},
+		{
+			default: false,
+			description: `Difficulties for O.N.G.E.K.I. in ${versionName}.`,
+			folders: difficultyFolderSlugs,
+			game: "ongeki",
+			inactive: false,
+			id: CreateTableID(),
+			legacyTableID: `ongeki-Single-${version}-difficulties`,
+			title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
+		},
 		{
 			default: false,
 			description: `Genres for O.N.G.E.K.I. in ${versionName}.`,
-			folders: GENRES.map(([_, g]) => `g-${g}-${version.toLowerCase()}`),
+			folders: genreFolderSlugs,
 			game: "ongeki",
-			id: CreateTableID(),
 			inactive: false,
+			id: CreateTableID(),
 			legacyTableID: `ongeki-Single-${version}-genres`,
 			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
 		},
@@ -153,18 +152,4 @@ MutateCollection("tables.json", (ts) => {
 	return ts;
 });
 
-for (const [fullName, safeName] of GENRES) {
-	newFolders.push({
-		game: "ongeki",
-		id: CreateFolderID(),
-		inactive: false,
-		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
-		searchTerms: [],
-		slug: `g-${safeName}-${version.toLowerCase()}`,
-		title: `${fullName} (${versionName})`,
-		versionFilter: [version],
-		where: `(song.data->>'genre')::text = '${fullName}' AND (chart.difficulty = 'MASTER' OR chart.difficulty = 'Re:MASTER')`,
-	});
-}
-
-MutateCollection("folders.json", (fs) => [...fs, ...newFolders]);
+MutateCollection("folders.json", (fs) => [...(fs as SEEDS_FolderDocument[]), ...newFolders]);

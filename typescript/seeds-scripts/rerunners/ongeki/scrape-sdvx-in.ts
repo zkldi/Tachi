@@ -1,12 +1,12 @@
 /* eslint-disable no-await-in-loop */
 
 import readline from "readline";
-import { type ChartDocument, type SongDocument } from "tachi-common";
+import { SEEDS_ChartDocument, SEEDS_SongDocument } from "tachi-common";
 
 import { ReadCollection, WriteCollection } from "../../util";
 
-type OngekiChart = ChartDocument<"ongeki">;
-type OngekiSong = SongDocument<"ongeki">;
+type OngekiChart = SEEDS_ChartDocument<"ongeki">;
+type OngekiSong = SEEDS_SongDocument<"ongeki">;
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 const prompt = (query: string) => new Promise((resolve) => rl.question(query, resolve));
@@ -108,8 +108,19 @@ const scrape = async (url: string, allCharts: OngekiChart[], allSongs: OngekiSon
 		}
 
 		const song = songs[0]!;
+
+		if (song.id === "S19d35e0fee643d12a81") {
+			// Perfect shining my behated
+			continue;
+		}
+
 		const properDiff = convertDiffProper(diff!);
-		const chart = allCharts.find((c) => c.songID === song.id && c.difficulty === properDiff);
+		const chart = allCharts.find(
+			(c) =>
+				c.songID === song.id &&
+				(c.difficulty === properDiff ||
+					(properDiff === "LUNATIC" && c.difficulty === "Re:MASTER")),
+		);
 
 		if (chart) {
 			chart.data.chartViewURL = link;
@@ -131,13 +142,13 @@ const scrapeAll = async (charts: OngekiChart[], songs: OngekiSong[]) => {
 
 const listMissing = async (charts: OngekiChart[], songs: OngekiSong[], minLevel: number) => {
 	for (const chart of charts) {
-		if (chart.data.inGameID >= 7000 && chart.data.inGameID < 8000) {
+		if (chart.data.isBonusTrack) {
 			// Bonus track
 			continue;
 		}
 		if (chart.levelNum >= minLevel && !chart.data.chartViewURL) {
-			const song = songs.find((s) => s.id === chart.song.id);
-			// @ts-expect-error The linter disagrees with the compiler
+			const song = songs.find((s) => s.id === chart.songID);
+			// @ts-expect-error what??
 			chart.data.chartViewURL = await prompt(
 				`Missing: ${song?.artist} ${song?.title} ${chart.difficulty} ${chart.level}\n`,
 			);
