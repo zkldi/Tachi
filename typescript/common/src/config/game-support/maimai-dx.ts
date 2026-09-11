@@ -250,6 +250,8 @@ export const GAME_MAIMAI_DX_CONF = {
 		prismplus: "PRiSM PLUS",
 		"prismplus-omni": "PRiSM PLUS Omnimix",
 		circle: "CiRCLE",
+		"circle-omni": "CiRCLE Omnimix",
+		circleplus: "CiRCLE PLUS",
 	},
 
 	chartData: z.strictObject({

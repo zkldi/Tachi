@@ -1,14 +1,20 @@
-import { CreateFolderID, MutateCollection } from "../../util.js";
+import {
+	MutateCollection,
+	ReadCollection,
+	WriteCollection,
+	CreateLegacyFolderID,
+} from "../../util.js";
 
-// Change these for whatever table you are adding.
+import { CreateTableID, CreateFolderID } from "/tachi/typescript/common/src/utils/tachi-id.ts";
+
 const GAME = "maimaidx";
 const PLAYTYPES = ["Single"];
-const PREFIX = "Level";
-const VERSION = "CiRCLE";
-const VERSIONID = "circle";
+const VERSION = "CiRCLE Omnimix";
+const VERSIONID = "circle-omni";
 const TITLE = `maimai DX (${VERSION})`;
-const SHORTTITLE = `${VERSIONID}-levels`; // this is used in the tableID
+const SHORTTITLE = `${VERSIONID}-levels`;
 const DESCRIPTION = `Levels for maimai DX in ${VERSION}.`;
+
 const LEVELS = [
 	"1",
 	"2",
@@ -37,51 +43,56 @@ const LEVELS = [
 
 const ptFolders = {};
 
-MutateCollection("folders.json", (foldersCol) => {
+MutateCollection("folders.json", (folders) => {
 	for (const level of LEVELS) {
-		const folder = {
-			data: {
-				level,
-				versions: VERSIONID,
-			},
-			game: GAME,
-			inactive: false,
-			searchTerms: [],
-			title: `${PREFIX} ${level} (${VERSION})`,
-			type: "charts",
+		const data = {
+			level,
+			versions: VERSIONID,
 		};
 
+		const slugLevel = level.replace("+", "p");
+		const slug = `${slugLevel}-${VERSIONID}`;
+
 		for (const playtype of PLAYTYPES) {
-			const folderID = CreateFolderID(folder.data, folder.game, playtype);
+			const folder = {
+				game: GAME,
+				id: CreateFolderID(),
+				inactive: false,
+				legacyFolderID: CreateLegacyFolderID(data, GAME, playtype),
+				searchTerms: [],
+				slug,
+				title: `Level ${level} (${VERSION})`,
+				versionFilter: [VERSIONID],
+				where: `chart.level = '${level}'`,
+			};
 
-			const realFolder = Object.assign({ folderID, playtype }, folder);
-
-			if (ptFolders[playtype]) {
-				ptFolders[playtype].push(realFolder);
-			} else {
-				ptFolders[playtype] = [realFolder];
+			if (!ptFolders[playtype]) {
+				ptFolders[playtype] = [];
 			}
 
-			foldersCol.push(realFolder);
+			ptFolders[playtype].push(folder);
+			folders.push(folder);
 		}
 	}
 
-	return foldersCol;
+	return folders;
 });
 
-MutateCollection("tables.json", (tables) => {
-	for (const playtype of PLAYTYPES) {
-		tables.push({
-			default: false,
-			description: DESCRIPTION,
-			folders: ptFolders[playtype].map((e) => e.folderID),
-			game: GAME,
-			inactive: false,
-			playtype,
-			tableID: `${GAME}-${playtype}-${SHORTTITLE}`,
-			title: TITLE,
-		});
-	}
+const tables = ReadCollection("tables.json");
 
-	return tables;
-});
+for (const playtype of PLAYTYPES) {
+	const legacyTableID = `${GAME}-${playtype}-${SHORTTITLE}`;
+
+	tables.push({
+		default: false,
+		description: DESCRIPTION,
+		folders: ptFolders[playtype].map((folder) => folder.slug),
+		game: GAME,
+		id: CreateTableID(),
+		inactive: false,
+		legacyTableID,
+		title: TITLE,
+	});
+}
+
+WriteCollection("tables.json", tables);
