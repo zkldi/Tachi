@@ -1,7 +1,7 @@
 import { spawnSync } from "child_process";
 import { Command } from "commander";
 import fs from "fs";
-import { type QuestDocument, type QuestlineDocument } from "tachi-common";
+import { SEEDS_QuestDocument, SEEDS_QuestlineDocument } from "tachi-common";
 
 import { MutateCollection, ReadCollection } from "../util";
 
@@ -16,19 +16,16 @@ import { MutateCollection, ReadCollection } from "../util";
  */
 
 const program = new Command();
-program.requiredOption("-g, --game <game>").requiredOption("-p, --playtype <playtype>");
+program.requiredOption("-g, --game <game>");
 
 program.parse(process.argv);
 const options = program.opts();
+const { game } = options;
 
-const { game, playtype } = options;
-
-const quests = ReadCollection("quests.json").filter(
-	(e) => e.game === game && e.playtype === playtype,
-) as Array<QuestDocument>;
+const quests = ReadCollection<SEEDS_QuestDocument>("quests.json").filter((e) => e.game === game);
 
 if (quests.length === 0) {
-	console.log(`No quests found for game ${game} and playtype ${playtype}.`);
+	console.log(`No quests found for game ${game}.`);
 
 	process.exit(1);
 }
@@ -51,7 +48,7 @@ ${quests.map((e) => `${e.questID} ${e.name}`).join("\n")}
 );
 
 try {
-	const r = spawnSync(process.env.EDITOR || "nano", [file], {
+	const r = spawnSync(process.env.EDITOR || "vim", [file], {
 		stdio: "inherit",
 	});
 
@@ -109,9 +106,8 @@ if (questIDs.length === 0) {
 	process.exit(1);
 }
 
-const questline: QuestlineDocument = {
+const questline: SEEDS_QuestlineDocument = {
 	game,
-	playtype,
 	desc,
 	name,
 	quests: questIDs,

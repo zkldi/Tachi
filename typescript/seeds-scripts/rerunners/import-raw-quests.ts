@@ -1,11 +1,11 @@
 import { Command } from "commander";
 import fs from "fs";
-import { type GoalDocument, type QuestDocument } from "tachi-common";
+import { SEEDS_GoalDocument, type GoalDocument, type QuestDocument } from "tachi-common";
 
 import { CreateGoalID, CreateQuestID, MutateCollection } from "../util";
 
 const program = new Command();
-program.option("-f, --file <quests.json>");
+program.requiredOption("-f, --file <quests.json>");
 
 program.parse(process.argv);
 const options = program.opts();
@@ -78,7 +78,7 @@ const newQuests = data.map(HydrateQuest);
 
 MutateCollection("quests.json", (quests) => [...quests, ...newQuests]);
 
-MutateCollection("goals.json", (goals) => {
+MutateCollection("goals.json", (goals: SEEDS_GoalDocument[]) => {
 	// don't duplicate goals
 	const goalIDs = new Set(goals.map((e) => e.goalID));
 

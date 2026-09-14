@@ -137,8 +137,8 @@ const main = async () => {
 	if (game !== "ongeki" && game !== "chunithm") {
 		throw new InvalidArgumentError("Bad game");
 	}
-	const charts = ReadCollection(`charts-${game}.json`);
-	const songs = ReadCollection(`songs-${game}.json`);
+	const charts = ReadCollection<SEEDS_ChartDocument<"ongeki">>(`charts-${game}.json`);
+	const songs = ReadCollection<SEEDS_SongDocument<"ongeki">>(`songs-${game}.json`);
 	const dir = await fs.readdir(optPath);
 	const promises: Promise<void>[] = [];
 	for (const opt of dir) {
