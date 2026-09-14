@@ -13,7 +13,7 @@ const tables = ReadCollection("tables.json");
 let table;
 
 for (const findTable of tables) {
-	if (findTable.tableID === options.tableID) {
+	if (findTable.legacyTableID === options.tableID) {
 		table = findTable;
 		findTable.inactive = !findTable.inactive;
 		break;
