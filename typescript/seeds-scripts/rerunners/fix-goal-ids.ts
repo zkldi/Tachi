@@ -1,15 +1,16 @@
+import { SEEDS_GoalDocument, SEEDS_QuestDocument } from "tachi-common";
 import { log as logger } from "../log.ts";
 import { CreateGoalID, MutateCollection, ReadCollection, WriteCollection } from "../util.js";
 
 const translateMap = new Map();
 
-const origGoals = ReadCollection("goals.json", true);
+const origGoals = ReadCollection<SEEDS_GoalDocument>("goals.json", true);
 
-MutateCollection("goals.json", (goals) => {
+MutateCollection("goals.json", (goals: SEEDS_GoalDocument[]) => {
 	logger.info("Updating goals.");
 
 	for (const goal of goals) {
-		const expectedGoalID = CreateGoalID(goal.charts, goal.criteria, goal.game, goal.playtype);
+		const expectedGoalID = CreateGoalID(goal.charts, goal.criteria, goal.game);
 
 		if (expectedGoalID !== goal.goalID) {
 			translateMap.set(goal.goalID, expectedGoalID);
@@ -21,7 +22,7 @@ MutateCollection("goals.json", (goals) => {
 });
 
 try {
-	MutateCollection("quests.json", (quests) => {
+	MutateCollection("quests.json", (quests: SEEDS_QuestDocument[]) => {
 		logger.info("Updating Quests.");
 
 		for (const quest of quests) {
@@ -52,6 +53,6 @@ try {
 		return quests;
 	});
 } catch (err) {
-	logger.error("Failed to update tables.json, reverting all auto-folder fixes.", { err });
+	logger.error("Failed to update tables.json, reverting all auto-folder fixes. %s", { err });
 	WriteCollection("goals.json", origGoals);
 }

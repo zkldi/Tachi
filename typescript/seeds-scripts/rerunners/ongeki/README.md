@@ -6,7 +6,7 @@
 3. Parse song durations
    1. Download `vgmstream-cli` and put it in `seeds/scripts/personal`.
    2. Put opts in `seeds/scripts/personal`.
-   3. Run `bun parse-song-duration.ts -v /tachi/typescript/seeds-scripts/personal/vgmstream-cli -d ../../personal/vgmstream-cli -g ongeki`.
+   3. Run `bun parse-song-duration.ts -v /tachi/typescript/seeds-scripts/personal/vgmstream-cli -d ../../personal/opts -g ongeki`.
 4. Scrape sdvx.in links (optional)
    1. Run `bun scrape-sdvx-in.ts`.
    2. Fix any missing entries manually in `seeds/collections/charts-ongeki.json` (refer to `songs-ongeki.json` for `songID`s).
