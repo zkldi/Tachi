@@ -51102,6 +51102,32 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F1a03fd1ab3b33febecb",
+		"inactive": false,
+		"legacyFolderID": "F6e66b2d6f180652241019b712cd3dc8824e00d4579e4582cefffbb36c64bff34",
+		"searchTerms": [],
+		"slug": "17p0-nabla",
+		"title": "Level 17.0 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 17.0"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3baee691e2",
+		"inactive": false,
+		"legacyFolderID": "Fdb652782f4a267b2f4f2199016cdec43a2343049f4f263928b0ac9a4ffcf6e6c",
+		"searchTerms": [],
+		"slug": "17p5-nabla",
+		"title": "Level 17.5 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 17.5"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19f90e2417aa917f35a",
 		"inactive": false,
 		"legacyFolderID": "F904a645a14eb3edfe839e899516d34bd64a08ba970d686c1e635d7764d8cbefe",
@@ -51193,6 +51219,136 @@
 	},
 	{
 		"game": "sdvx",
+		"id": "F1a03fd1ab3baf9c3ff4",
+		"inactive": false,
+		"legacyFolderID": "F0f5c9082b1075d238702c2b9c138e09be0a8cd7a57cd45f18ac5809f943189df",
+		"searchTerms": [],
+		"slug": "18p0-nabla",
+		"title": "Level 18.0 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.0"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b87c16061",
+		"inactive": false,
+		"legacyFolderID": "Fe7082c257d94e0d3754a3cb05d5933666537540503f9ad4eb00ffc203a18f3fc",
+		"searchTerms": [],
+		"slug": "18p1-nabla",
+		"title": "Level 18.1 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.1"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bb2dc2c8a",
+		"inactive": false,
+		"legacyFolderID": "F26ca8dc1fc0085e6967eef2f0a8318acd1db1adf58109f0a4082823db77a28bc",
+		"searchTerms": [],
+		"slug": "18p2-nabla",
+		"title": "Level 18.2 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.2"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b85960c89",
+		"inactive": false,
+		"legacyFolderID": "Fe652a6b94ffb4661d64fa77bfdcfa78e9ecb07efd1a08cbe7be8aa906ebecd66",
+		"searchTerms": [],
+		"slug": "18p3-nabla",
+		"title": "Level 18.3 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.3"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b647d7aeb",
+		"inactive": false,
+		"legacyFolderID": "Fd7b65d7fb8bff3729b10df0e6278f8ef0146635b226df5d3a86471dbab1ad464",
+		"searchTerms": [],
+		"slug": "18p4-nabla",
+		"title": "Level 18.4 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.4"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b1b96cb24",
+		"inactive": false,
+		"legacyFolderID": "F7182d455bb9968bd1c19867fc8e59bbee76a6e8fbac35aa7342e01f1b05cb6de",
+		"searchTerms": [],
+		"slug": "18p5-nabla",
+		"title": "Level 18.5 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.5"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b1daf6aa2",
+		"inactive": false,
+		"legacyFolderID": "F01d3eb2f2b13085f9b97bc0e8a44612cf727df8eca8c9ec37425c0a6aefefc38",
+		"searchTerms": [],
+		"slug": "18p6-nabla",
+		"title": "Level 18.6 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.6"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b920768c8",
+		"inactive": false,
+		"legacyFolderID": "F6bc342492137676987fec9dd9a81253c4a0098eb94ce223b42c681c4d61a89e2",
+		"searchTerms": [],
+		"slug": "18p7-nabla",
+		"title": "Level 18.7 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.7"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bd909cd74",
+		"inactive": false,
+		"legacyFolderID": "Fb5ed6de543c8a7b0c226d20fefd07f4740e88ab6fa644c6f9eb3193ceffecb78",
+		"searchTerms": [],
+		"slug": "18p8-nabla",
+		"title": "Level 18.8 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.8"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b1ade437a",
+		"inactive": false,
+		"legacyFolderID": "F88b2e4f2fe0c9cdc1627460006adfb3357d3729bd98ee0228e244e4e1d2c1642",
+		"searchTerms": [],
+		"slug": "18p9-nabla",
+		"title": "Level 18.9 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 18.9"
+	},
+	{
+		"game": "sdvx",
 		"id": "F19f90e2417a0909a26f",
 		"inactive": false,
 		"legacyFolderID": "Fa0d4a46266cb69eda6d75c55ff40583efed96932dfeea467036991b2cac398e8",
@@ -51281,6 +51437,136 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 19 AND chart.level_num < 20"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b81e6b002",
+		"inactive": false,
+		"legacyFolderID": "F66b2d0b624a9dab396b464ede055aee754ece537c1255d205b430b43309d9b5a",
+		"searchTerms": [],
+		"slug": "19p0-nabla",
+		"title": "Level 19.0 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.0"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b539d0d41",
+		"inactive": false,
+		"legacyFolderID": "F29f6726e75b4b16c418d07e2f650ff8201587490cb27aeca122b645c892805f7",
+		"searchTerms": [],
+		"slug": "19p1-nabla",
+		"title": "Level 19.1 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.1"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bbb43f72f",
+		"inactive": false,
+		"legacyFolderID": "Fa3f8b00d01e0c16890da2c03f241c112b684609d16eb319d607b8c5799f8eab4",
+		"searchTerms": [],
+		"slug": "19p2-nabla",
+		"title": "Level 19.2 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.2"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b212210ea",
+		"inactive": false,
+		"legacyFolderID": "F6970a2a92a6458da182f1f3350cdc08f19305c34192423420d754cbe25ee547c",
+		"searchTerms": [],
+		"slug": "19p3-nabla",
+		"title": "Level 19.3 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.3"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b5d2a142c",
+		"inactive": false,
+		"legacyFolderID": "F650e7e41160823398fd4aaaa89752fd91ccd86264ecaed294fd03571632ed3c5",
+		"searchTerms": [],
+		"slug": "19p4-nabla",
+		"title": "Level 19.4 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.4"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b21c9208a",
+		"inactive": false,
+		"legacyFolderID": "F94604e2aa0b726ff42a08b8aa963d434ef3b748ec544f5c9b1a714ec583a0d6a",
+		"searchTerms": [],
+		"slug": "19p5-nabla",
+		"title": "Level 19.5 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.5"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b4c47f795",
+		"inactive": false,
+		"legacyFolderID": "F932706caf4838204bd9162d90cea53a23ade95cb55a09c3a2eb932a8cf3f4b77",
+		"searchTerms": [],
+		"slug": "19p6-nabla",
+		"title": "Level 19.6 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.6"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bdd758215",
+		"inactive": false,
+		"legacyFolderID": "F3959ab4e4df31bfe6ab8f8e9d3117086b5184c61d66051421b9fef7adaa4eeb8",
+		"searchTerms": [],
+		"slug": "19p7-nabla",
+		"title": "Level 19.7 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.7"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3ba209ba94",
+		"inactive": false,
+		"legacyFolderID": "F820f7ff2d6e105a10872e303926db7ec823e19510d1c74067b16342b703daa0c",
+		"searchTerms": [],
+		"slug": "19p8-nabla",
+		"title": "Level 19.8 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.8"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bd44833b9",
+		"inactive": false,
+		"legacyFolderID": "F7dcd3ad98eaf9438ce917fdf74a5e7b1daed4d5af731f2e1033a8a6c6bfee393",
+		"searchTerms": [],
+		"slug": "19p9-nabla",
+		"title": "Level 19.9 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 19.9"
 	},
 	{
 		"game": "sdvx",
@@ -51463,6 +51749,136 @@
 			"vivid"
 		],
 		"where": "chart.level_num >= 20 AND chart.level_num < 21"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b7ab08821",
+		"inactive": false,
+		"legacyFolderID": "F59f584187ae5095704a091f6a9d1fd44dd69be8e1260704dec873ef52b5f75b9",
+		"searchTerms": [],
+		"slug": "20p0-nabla",
+		"title": "Level 20.0 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.0"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b93f6593d",
+		"inactive": false,
+		"legacyFolderID": "F113d94d039c2eca9ebbd1a29f3752e4707efddb04d037e5480a5d3acb80fc15f",
+		"searchTerms": [],
+		"slug": "20p1-nabla",
+		"title": "Level 20.1 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.1"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b50993b85",
+		"inactive": false,
+		"legacyFolderID": "F34acdb2dbec6bbbb0e721dd8910127caded7ef6526279a0d873433d19f32ccff",
+		"searchTerms": [],
+		"slug": "20p2-nabla",
+		"title": "Level 20.2 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.2"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b361d943f",
+		"inactive": false,
+		"legacyFolderID": "F6ba5c646c1e365d2a50e6c709892630b5f30fb79b43d42fc8911ae6991397657",
+		"searchTerms": [],
+		"slug": "20p3-nabla",
+		"title": "Level 20.3 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.3"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b6aee8026",
+		"inactive": false,
+		"legacyFolderID": "F68d7998d687a05ae06f07f0c1b6121aabd81eb3a42723555ff0a650f11ec99cc",
+		"searchTerms": [],
+		"slug": "20p4-nabla",
+		"title": "Level 20.4 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.4"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3bdaf60339",
+		"inactive": false,
+		"legacyFolderID": "Fe398854552e06446a7bdc8cdd030a32497540c8c536cba6f798d9904a27f054d",
+		"searchTerms": [],
+		"slug": "20p5-nabla",
+		"title": "Level 20.5 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.5"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b556cf3c8",
+		"inactive": false,
+		"legacyFolderID": "F014f663c23fd42122486486f6a0b8b2796ee8a60db6eaa4a7711741126237dbd",
+		"searchTerms": [],
+		"slug": "20p6-nabla",
+		"title": "Level 20.6 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.6"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b5481c25e",
+		"inactive": false,
+		"legacyFolderID": "Fa20cb8b472a453a189a61f135bbfff03c604f4f2bf27fb47bbc8d00f5aabfdb1",
+		"searchTerms": [],
+		"slug": "20p7-nabla",
+		"title": "Level 20.7 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.7"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3ba229e3ea",
+		"inactive": false,
+		"legacyFolderID": "F17327652fddb79f7f160905d1dff0c558528a2a3d146bc6806c0763e5111df17",
+		"searchTerms": [],
+		"slug": "20p8-nabla",
+		"title": "Level 20.8 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.8"
+	},
+	{
+		"game": "sdvx",
+		"id": "F1a03fd1ab3b94183b13",
+		"inactive": false,
+		"legacyFolderID": "Ffdc539f562e663a8ab4c7b755f67e4dbdcc9668109649ce27571792e234f3b77",
+		"searchTerms": [],
+		"slug": "20p9-nabla",
+		"title": "Level 20.9 (NABLA Decimal Levels)",
+		"versionFilter": [
+			"nabla"
+		],
+		"where": "chart.level_num = 20.9"
 	},
 	{
 		"game": "sdvx",
