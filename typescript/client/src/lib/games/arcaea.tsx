@@ -22,6 +22,7 @@ const ARCAEA_DIFFICULTY_COLORS: GameClientImplementation<
 	Future: COLOUR_SET.purple,
 	Eternal: COLOUR_SET.paleBlue,
 	Beyond: COLOUR_SET.vibrantRed,
+	Inscribed: COLOUR_SET.vibrantBlue,
 };
 
 const ARCAEA_ENUM_COLORS: GameClientImplementation<GamesForGroup["arcaea"]>["enumColours"] = {
@@ -161,6 +162,11 @@ export const ARCAEA_TOUCH_IMPL: GameClientImplementation<"arcaea"> = {
 	enumIcons: {
 		grade: "sort-alpha-up",
 		lamp: "lightbulb",
+	},
+	ratingAlgNameOverrides: {
+		profile: {
+			naivePotential: "Potential",
+		},
 	},
 	enumColours: ARCAEA_ENUM_COLORS,
 	classColours: ARCAEA_COLORS,

@@ -168,6 +168,17 @@ means that it will check for any of `INF/GRV/HVN/VVD/XCD` for this song.
 
 This is useful for services that store all of those as the same difficulty.
 
+- arcaeaInGameStrID
+
+This uses the in-game-ID for this Arcaea song. You must specify
+the difficulty for this chart as well.
+
+The reason Arcaea gets its own special `matchType` is because this
+matchType supports `difficulty: "AnyBeyond"`. This special difficulty
+means that it will check for any of `Beyond/Inscribed` for this song.
+
+This is useful for services that store all of those as the same difficulty.
+
 - ddrSongHash
 
 This is a 32-character hash used by the official DDR e-amusement website to

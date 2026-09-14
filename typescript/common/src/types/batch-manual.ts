@@ -21,6 +21,7 @@ type MatchTypesNoDifficulty =
 
 // These MatchTypes need `difficulty` set in the batch manual.
 type MatchTypesWithDifficulty =
+	| "arcaeaInGameStrID"
 	| "ddrSongHash"
 	| "inGameID"
 	| "inGameStrID"
