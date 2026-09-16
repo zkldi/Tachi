@@ -8258,5 +8258,284 @@
 			"코스모자이랄"
 		],
 		"title": "Cosmogyral"
+	},
+	{
+		"altTitles": [
+			"ザラメノキワミ"
+		],
+		"artist": "STEAKA",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a048225d2313463f74",
+		"legacySongID": 549,
+		"searchTerms": [
+			"zaramenokiwami",
+			"수크로마니아",
+			"자라메노키와미"
+		],
+		"title": "Sucromania"
+	},
+	{
+		"altTitles": [
+			"神っぽいな"
+		],
+		"artist": "ピノキオピー",
+		"data": {
+			"songPack": "Virtual Singers"
+		},
+		"id": "S1a048225d240aa071b9",
+		"legacySongID": 551,
+		"searchTerms": [
+			"kamippoina",
+			"かみっぽいな",
+			"신 같네",
+			"카밋포이나",
+			"카밋뽀이나",
+			"가디시"
+		],
+		"title": "God-ish"
+	},
+	{
+		"altTitles": [
+			"テレパシ"
+		],
+		"artist": "DECO*27",
+		"data": {
+			"songPack": "Virtual Singers"
+		},
+		"id": "S1a048225d24215b10b2",
+		"legacySongID": 553,
+		"searchTerms": [
+			"terepashi",
+			"텔레파시"
+		],
+		"title": "Telepathy"
+	},
+	{
+		"altTitles": [
+			"ラヴィ"
+		],
+		"artist": "すりぃ",
+		"data": {
+			"songPack": "Virtual Singers"
+		},
+		"id": "S1a048225d24796e8484",
+		"legacySongID": 550,
+		"searchTerms": [
+			"ravi",
+			"라비"
+		],
+		"title": "Lavie"
+	},
+	{
+		"altTitles": [
+			"オーバーライド"
+		],
+		"artist": "吉田夜世",
+		"data": {
+			"songPack": "Virtual Singers"
+		},
+		"id": "S1a048225d24bb967053",
+		"legacySongID": 552,
+		"searchTerms": [
+			"obaraido",
+			"오버라이드"
+		],
+		"title": "Override"
+	},
+	{
+		"altTitles": [
+			"愛して愛して愛して"
+		],
+		"artist": "きくお",
+		"data": {
+			"songPack": "Virtual Singers"
+		},
+		"id": "S1a048225d24f53846c6",
+		"legacySongID": 554,
+		"searchTerms": [
+			"aishiteaishiteaishite",
+			"あいしてあいしてあいして",
+			"사랑해줘 사랑해줘 사랑해줘",
+			"아이시테 아이시테 아이시테",
+			"러브 미 러브 미 러브 미"
+		],
+		"title": "Love me, Love me, Love me"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yuta Imai",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a048225d253cdc0e43",
+		"legacySongID": 556,
+		"searchTerms": [
+			"あしっどごっど",
+			"애시드 갓"
+		],
+		"title": "Acid God"
+	},
+	{
+		"altTitles": [],
+		"artist": "tn-shi",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a048225d2548f19015",
+		"legacySongID": 555,
+		"searchTerms": [
+			"しんせしす",
+			"신테시스",
+			"신세시스"
+		],
+		"title": "Synthesis."
+	},
+	{
+		"altTitles": [],
+		"artist": "TAK x Sobrem",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a048225d25e2544c0b",
+		"legacySongID": 557,
+		"searchTerms": [
+			"だいいん",
+			"だいん",
+			"다이 인"
+		],
+		"title": "DIE IN"
+	},
+	{
+		"altTitles": [],
+		"artist": "lowiro Sound Team (ak+q x nitro)",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a048225d26066ab5a6",
+		"legacySongID": 558,
+		"searchTerms": [
+			"くろのろじあ",
+			"크로노로지아"
+		],
+		"title": "chronologia"
+	},
+	{
+		"altTitles": [],
+		"artist": "黒魔",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d260ce5389b",
+		"legacySongID": 561,
+		"searchTerms": [
+			"あん",
+			"언",
+			"은",
+			"운"
+		],
+		"title": "un"
+	},
+	{
+		"altTitles": [],
+		"artist": "Powerless & siqlo feat. Tia",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d260e77c468",
+		"legacySongID": 565,
+		"searchTerms": [
+			"えんばー",
+			"엠버"
+		],
+		"title": "Ember"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ashrount vs. 打打だいず",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d260ef2b185",
+		"legacySongID": 560,
+		"searchTerms": [
+			"どれっどえりあ",
+			"드레드 에어리어"
+		],
+		"title": "DREAD AREA"
+	},
+	{
+		"altTitles": [],
+		"artist": "rejection & Supire feat. eili",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d263a3bf06d",
+		"legacySongID": 562,
+		"searchTerms": [
+			"りべんぴるぐりめーじ",
+			"리벤 필그러메이지"
+		],
+		"title": "Riven Pilgrimage"
+	},
+	{
+		"altTitles": [],
+		"artist": "Redsign",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d263c54c554",
+		"legacySongID": 559,
+		"searchTerms": [
+			"ばろーる",
+			"ばろる",
+			"발러",
+			"밸러"
+		],
+		"title": "Balor"
+	},
+	{
+		"altTitles": [],
+		"artist": "Blacklolita vs Juggernaut.",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d2652d61d6b",
+		"legacySongID": 564,
+		"searchTerms": [
+			"えいのすふぁいねいん",
+			"에이노스 파이네인"
+		],
+		"title": "DEINOS PHAINEIN"
+	},
+	{
+		"altTitles": [],
+		"artist": "Aid",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a048225d26d1dcad1e",
+		"legacySongID": 563,
+		"searchTerms": [
+			"かたくりずむくらい",
+			"카타클리즘 시티"
+		],
+		"title": "Cataclysm Cry"
+	},
+	{
+		"altTitles": [],
+		"artist": "Silentroom Dismantled XOR かたぎり",
+		"data": {
+			"songPack": "Divine Oblivion"
+		},
+		"id": "S1a06240e55220088ac4",
+		"legacySongID": 566,
+		"searchTerms": [
+			"sacrosanct",
+			"さくろさんくと",
+			"사크로상트"
+		],
+		"title": "⊥⊬"
 	}
 ]

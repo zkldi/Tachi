@@ -23,7 +23,7 @@ const getDifficulty = (score: ArcaeaST3ScoreRow) => {
 		case 2:
 			return "Future";
 		case 3:
-			return "Beyond";
+			return "AnyBeyond";
 		case 4:
 			return "Eternal";
 		default:
@@ -100,7 +100,7 @@ export function convertArcaeaDB(db: Database): { result: ArcaeaBatchManual; warn
 		}
 		scores.push({
 			identifier: row.songId,
-			matchType: "inGameStrID",
+			matchType: "arcaeaInGameStrID",
 			difficulty: getDifficulty(row),
 			score: row.score,
 			lamp: getLamp(row),

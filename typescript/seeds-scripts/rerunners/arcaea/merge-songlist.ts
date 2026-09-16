@@ -22,6 +22,7 @@ type LocalizedSearchTerms = Record<string, Array<string>>;
 
 interface SonglistChart {
 	ratingClass: integer;
+	ratingClassAlias?: integer;
 	title_localized?: LocalizedText;
 	artist?: string;
 	audioOverride?: boolean;
@@ -93,7 +94,7 @@ class MultiMapUniqueValues<K, V> {
 	}
 }
 
-function convertDifficulty(input: integer): Difficulties["arcaea"] {
+function convertDifficulty(input: integer, alias?: integer): Difficulties["arcaea"] {
 	switch (input) {
 		case 0:
 			return "Past";
@@ -102,7 +103,11 @@ function convertDifficulty(input: integer): Difficulties["arcaea"] {
 		case 2:
 			return "Future";
 		case 3:
-			return "Beyond";
+			if (alias === 1) {
+				return "Inscribed";
+			} else {
+				return "Beyond";
+			}
 		case 4:
 			return "Eternal";
 	}
@@ -227,7 +232,7 @@ for (const entry of data.songs) {
 			continue;
 		}
 
-		const difficulty = convertDifficulty(chart.ratingClass);
+		const difficulty = convertDifficulty(chart.ratingClass, chart.ratingClassAlias);
 		const exists = existingCharts.get(`${inGameID}-${difficulty}`);
 
 		if (exists) {

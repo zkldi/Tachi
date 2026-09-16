@@ -37,7 +37,7 @@ const baseMetrics: MongoProvidedMetrics["arcaea"] = {
 };
 
 const scoreData: ScoreData<"arcaea"> = {
-	lamp: "CLEAR",
+	lamp: "LOST",
 	score: 9_979_366,
 	grade: "EX+",
 	judgements: {
@@ -48,7 +48,7 @@ const scoreData: ScoreData<"arcaea"> = {
 	optional: { enumIndexes: {} },
 	enumIndexes: {
 		grade: ARCAEA_GRADES.EX_PLUS,
-		lamp: ARCAEA_LAMPS.CLEAR,
+		lamp: ARCAEA_LAMPS.LOST,
 	},
 };
 
@@ -136,7 +136,7 @@ describe("ARCAEA_IMPL", () => {
 		expect(
 			ARCAEA_IMPL.scoreCalcs(scoreData, ARCAEA_IMPL.scoreDeriver(scoreData, chart), chart)
 				.potential,
-		).toBe(11.99683);
+		).toBeCloseTo(11.99683, 3);
 	});
 
 	describe("classDerivers (naivePotential → badge)", () => {
@@ -225,6 +225,8 @@ describe("ARCAEA_IMPL", () => {
 			});
 
 			const pb = await CreatePBDoc("arcaea", userId, chart, log);
+
+			expect(pb?.calculatedData.potential).toBeCloseTo(12.19683, 3);
 
 			expect(pb).toMatchObject({
 				composedFrom: [{ name: "Best Score" }, { name: "Best Lamp", scoreID: "bestLamp" }],

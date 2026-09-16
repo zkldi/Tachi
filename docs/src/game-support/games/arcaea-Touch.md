@@ -50,21 +50,24 @@ The following judgements are defined:
 
 | Name | Description |
 | :: | :: |
-| `naivePotential` | The average of your best 10 potentials this session. |
+| `naivePotential` | The average of your best 10 Potentials this session. |
 
 ### Profile Rating Algorithms
 
 | Name | Description |
 | :: | :: |
-| `naivePotential` | The average of your best 30 potential values. This is different to in-game, as it does not take into account your recent scores in any way. |
+| `naivePotential` | The average of your best 50 Potential values, with the best 10 being counted twice. Named naivePotential for legacy reasons, but it's actually Potential as implemented in Arcaea. |
 
 ## Difficulties
+
+`Beyond` and `Inscribed` can use the alias `AnyBeyond` for imports using `arcaeaInGameStrID`.
 
 - `Past`
 - `Present`
 - `Future`
 - `Eternal`
 - `Beyond`
+- `Inscribed`
 
 ## Classes
 
@@ -82,6 +85,6 @@ The following judgements are defined:
 
 ## Supported Match Types
 
-- `inGameStrID`
+- `arcaeaInGameStrID`
 - `songTitle`
 - `tachiSongID`

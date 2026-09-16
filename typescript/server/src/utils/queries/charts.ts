@@ -563,6 +563,39 @@ export async function FindChartOnInGameStrIDVersion<TGame extends V3Game = V3Gam
 	return ToChartDocument(row);
 }
 
+const ARCAEA_BEYOND_DIFFS = ["Beyond", "Inscribed"] as const;
+
+/**
+ * Find an Arcaea Chart on its in game string ID. This exists to handle
+ * oddities with Arcaea difficulties - If "AnyBeyond" is sent, it actually
+ * refers to any of Beyond or Inscribed. This is because some services treat
+ * all of those as the same difficulty, but we do not.
+ */
+export async function FindArcaeaChartOnInGameStrID(
+	inGameStrID: string,
+	difficulty: "AnyBeyond" | Difficulties[GamesForGroup["arcaea"]],
+) {
+	let q = DB.selectFrom("chart")
+		.innerJoin("song", "song.id", "chart.song_id")
+		.select(SELECT_CHART)
+		.where("chart.game", "=", "arcaea")
+		.where(sql<boolean>`(chart.data::jsonb->>'inGameStrID') = ${inGameStrID}`)
+		.where("chart.is_primary", "=", true);
+
+	q =
+		difficulty === "AnyBeyond"
+			? q.where("chart.difficulty", "in", [...ARCAEA_BEYOND_DIFFS])
+			: q.where("chart.difficulty", "=", difficulty);
+
+	const row = await q.executeTakeFirst();
+
+	if (!row) {
+		return null;
+	}
+
+	return ToChartDocument(row);
+}
+
 /**
  * Finds an IIDX chart on its 2dxtra hash, which is the sha256 of the .1 buffer.
  */

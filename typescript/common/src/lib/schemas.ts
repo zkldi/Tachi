@@ -39,6 +39,7 @@ const PR_BATCH_MANUAL_SCORE = (game: V3Game): PrudenceSchema => {
 			"uscChartHash",
 			"popnChartHash",
 			"ddrSongHash",
+			"arcaeaInGameStrID",
 		),
 		identifier: "string",
 		comment: optNull(p.isBoundedString(3, 240)),
