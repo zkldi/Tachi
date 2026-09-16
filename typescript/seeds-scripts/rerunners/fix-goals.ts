@@ -4,7 +4,7 @@
  * Run: bun typescript/seeds-scripts/rerunners/fix-goals.ts
  */
 
-import { type V3Game } from "tachi-common";
+import { SEEDS_GoalDocument, SEEDS_QuestDocument, type V3Game } from "tachi-common";
 
 import {
 	buildGoalTitleContext,
@@ -14,10 +14,10 @@ import { log as logger } from "../log.ts";
 import { CreateGoalID, MutateCollection, ReadCollection, WriteCollection } from "../util.js";
 
 const translateMap = new Map<string, string>();
-const origGoals = ReadCollection("goals.json", true);
+const origGoals = ReadCollection<SEEDS_GoalDocument>("goals.json", true);
 const ctx = buildGoalTitleContext();
 
-MutateCollection("goals.json", (goals) => {
+MutateCollection("goals.json", (goals: SEEDS_GoalDocument[]) => {
 	logger.info("Re-deriving goalID and name for all goals.");
 
 	let idUpdates = 0;
@@ -56,7 +56,7 @@ MutateCollection("goals.json", (goals) => {
 
 if (translateMap.size > 0) {
 	try {
-		MutateCollection("quests.json", (quests) => {
+		MutateCollection("quests.json", (quests: SEEDS_QuestDocument[]) => {
 			logger.info("Updating quest goalID references.");
 
 			let patched = 0;
@@ -76,8 +76,8 @@ if (translateMap.size > 0) {
 
 			return quests;
 		});
-	} catch (err) {
-		logger.error("Failed to update quests.json, reverting goals.json.", { err });
+	} catch (err: unknown) {
+		logger.error("Failed to update quests.json, reverting goals.json. %s", { err });
 		WriteCollection("goals.json", origGoals);
 		throw err;
 	}

@@ -52,7 +52,7 @@ to adjust the constants for the version you're adding.
 3. Deactivate old tables using `seeds/scripts/rerunners/toggle-table-inactive.js`:
 
 ```
-bun toggle-table-inactive.js -t chunithm-Single-<VERSION>-levels
+bun toggle-table-inactive.ts -t chunithm-Single-<VERSION>-levels
 ```
 
 Keep tables for the current and last (aka n-1) versions.

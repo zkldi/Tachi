@@ -1,9 +1,13 @@
 import { Command } from "commander";
 import { GetGameConfig } from "tachi-common";
 import { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types/seeds-documents-zod";
-import crypto from "crypto";
 
-import { CreateFolderID, CreateTableID, MutateCollection } from "../../util";
+import {
+	CreateFolderID,
+	CreateRandomLegacyFolderID,
+	CreateTableID,
+	MutateCollection,
+} from "../../util";
 
 const LEVELS = [
 	"0",
@@ -73,7 +77,7 @@ for (const level of LEVELS) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `Level ${level} (${versionName})`,
@@ -89,7 +93,7 @@ for (const [fullName, safeName] of DIFFICULTIES) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `${fullName} (${versionName})`,
@@ -105,7 +109,7 @@ for (const [fullName, safeName] of GENRES) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: `F${crypto.randomBytes(32).toString("hex")}`,
+		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `${fullName} (${versionName})`,
@@ -115,8 +119,8 @@ for (const [fullName, safeName] of GENRES) {
 	genreFolderSlugs.push(slug);
 }
 
-MutateCollection("tables.json", (ts) => {
-	(ts as SEEDS_TableDocument[]).push(
+MutateCollection("tables.json", (ts: SEEDS_TableDocument[]) => {
+	ts.push(
 		{
 			default: false,
 			description: `Levels for O.N.G.E.K.I. in ${versionName}.`,

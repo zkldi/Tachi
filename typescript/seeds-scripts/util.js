@@ -10,6 +10,7 @@ import {
 	CreateSongID,
 	CreateTableID,
 } from "tachi-common";
+import crypto from "crypto";
 
 import DeterministicCollectionSort from "./sort-seeds.js";
 
@@ -37,6 +38,12 @@ export function IterateCollections(cb) {
 	DeterministicCollectionSort();
 }
 
+/**
+ * @template T
+ * @param {string} name
+ * @param {boolean} throwIfNotFound
+ * @returns {T[]}
+ */
 export function ReadCollection(name, throwIfNotFound = false) {
 	const p = path.join(COLLECTIONS_DIR, name);
 	if (!fs.existsSync(p)) {
@@ -62,8 +69,9 @@ export function WriteCollection(name, data) {
 }
 
 /**
+ * @template T
  * @param {string} name
- * @param {(collection: unknown) => unknown} cb
+ * @param {(collection: T[]) => T[]} cb
  */
 export function MutateCollection(name, cb) {
 	const data = cb(ReadCollection(name));
@@ -80,6 +88,10 @@ export function MutateCollection(name, cb) {
 // TODO(zk): remove this and give folders actual readable names
 export function CreateLegacyFolderID(query, game, playtype) {
 	return `F${fjsh.hash(Object.assign({ game, playtype }, query), "SHA256")}`;
+}
+
+export function CreateRandomLegacyFolderID() {
+	return `F${crypto.randomBytes(32).toString("hex")}`;
 }
 
 export function CreateLegacyFolderIDFromFolder(folder) {
