@@ -127,6 +127,7 @@ export type V3Game =
 	| "ongeki"
 	| "pms-controller"
 	| "pms-keyboard"
+	| "poco"
 	| "popn"
 	| "sdvx"
 	| "usc-controller"
@@ -157,6 +158,7 @@ export interface GameGroupFromGame {
 	"usc-controller": "usc";
 	"usc-keyboard": "usc";
 	wacca: "wacca";
+	poco: "poco";
 }
 
 /**
@@ -181,6 +183,7 @@ export type LEGACY_V3GameToGPTString = {
 	ongeki: "ongeki:Single";
 	"pms-controller": "pms:Controller";
 	"pms-keyboard": "pms:Keyboard";
+	poco: "poco:Single";
 	popn: "popn:9B";
 	sdvx: "sdvx:Single";
 	"usc-controller": "usc:Controller";
@@ -210,6 +213,7 @@ export type LEGACY_GPTStringToV3Game = {
 	"ongeki:Single": "ongeki";
 	"pms:Controller": "pms-controller";
 	"pms:Keyboard": "pms-keyboard";
+	"poco:Single": "poco";
 	"popn:9B": "popn";
 	"sdvx:Single": "sdvx";
 	"usc:Controller": "usc-controller";
