@@ -2,7 +2,7 @@ import { type GameImplementation } from "#game-implementations/types";
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileSumBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
-import { IsNullish } from "#utils/misc";
+import { FloorToNDP, IsNullish } from "#utils/misc";
 import { Potential } from "rg-stats";
 import { ARCAEA_GBOUNDARIES, GetGrade } from "tachi-common";
 
@@ -40,12 +40,16 @@ export const ARCAEA_IMPL: GameImplementation<"arcaea"> = {
 	sessionCalcs: (arr) => ({
 		naivePotential: SessionAvgBest10For("potential")(arr),
 	}),
-	profileCalcs: async (game, userID) => ({
-		naivePotential:
-			(((await ProfileSumBestN("potential", 50)(game, userID)) ?? 0) +
-				((await ProfileSumBestN("potential", 10)(game, userID)) ?? 0)) /
-			60,
-	}),
+	profileCalcs: async (game, userID) => {
+		const b50 = (await ProfileSumBestN("potential", 50)(game, userID)) ?? 0;
+		const b10 = (await ProfileSumBestN("potential", 10)(game, userID)) ?? 0;
+
+		// FloorToNDP is safe to use here because Arcaea's
+		// individual score ratings are stored with arbitrary precision.
+		return {
+			naivePotential: FloorToNDP((b50 + b10) / 60, 3),
+		};
+	},
 	classDerivers: (ratings) => {
 		const potential = ratings.naivePotential;
 
