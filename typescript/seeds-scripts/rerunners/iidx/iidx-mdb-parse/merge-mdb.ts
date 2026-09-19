@@ -37,7 +37,11 @@ program
 	.requiredOption("-i, --index <val>", "Whether this game uses 0 or 1 for the mdb.")
 	.requiredOption("-v, --version <This .bin version name>")
 	.option("-o, --omni", "Whether to fetch omnimix or not.")
-	.option("-f --force", "Forces overwrites when they shouldn't be automatically done.")
+	.option("-fs, --force-song", "Assume a matching song title means it's a duplicate inGameID")
+	.option(
+		"-fc, --force-chart",
+		"Forces notecount overwrites when they shouldn't be automatically done.",
+	)
 	.option(
 		"--always-extract",
 		"Always re-extract IFS files even when they exist in ifs-output. Useful if the IFS files have changed.",
@@ -47,7 +51,8 @@ program.parse(process.argv);
 const options = program.opts() as {
 	alwaysExtract: boolean;
 	basedir: string;
-	force: boolean;
+	forceSong: boolean;
+	forceChart: boolean;
 	index: "0" | "1";
 	omni: boolean;
 	version: Versions["iidx-sp"];
@@ -171,51 +176,64 @@ async function ParseIIDXMDB() {
 					`A song called '${inp.title}' already exists in songs-iidx (songID:${titleAlreadyExists.id}). Is this a duplicate with a different inGameID?`,
 				);
 
-				if (!options.force) {
+				if (!options.forceSong) {
 					log.warn(
-						`Must be resolved manually. Use --force to blindly overwrite it anyway.`,
+						`Must be resolved manually. Use --force-song to blindly overwrite it anyway.`,
 					);
 					continue;
 				} else {
-					log.warn(`--force provided, adding it to the DB anyway.`);
+					log.warn(
+						`--force-song used, assuming this is a new inGameID for an existing song.`,
+					);
+					for (const chart of existingChartsSP.concat(existingChartsDP)) {
+						if (chart.songID === titleAlreadyExists.id) {
+							if (Array.isArray(chart.data.inGameID)) {
+								chart.data.inGameID.push(inp.songID);
+							} else {
+								chart.data.inGameID = [chart.data.inGameID, inp.songID];
+							}
+							chart.versions.push(options.version);
+						}
+					}
+					continue;
 				}
+			} else {
+				const searchTerms: string[] = [];
+				if (inp.marquee.toLowerCase() !== inp.title.toLowerCase()) {
+					searchTerms.push(inp.marquee);
+				}
+
+				const tachiSong: SEEDS_SongDocument<"iidx"> = {
+					id: CreateSongID(),
+					legacySongID: getFreeLegacySongID(),
+					artist: inp.artist,
+					title: inp.title,
+					data: {
+						genre: inp.genre,
+						displayVersion: inp.folder.toString(),
+					},
+					searchTerms: searchTerms,
+					altTitles: [],
+				};
+
+				log.info(`Added new song ${inp.title}.`);
+
+				if (inp.title.match(/\?/gu)) {
+					log.warn(
+						`${inp.title} has a potentially konami-screwed title. Investigate it manually.`,
+					);
+				}
+
+				if (inp.artist.match(/\?/gu)) {
+					log.warn(
+						`${inp.artist} - ${inp.title} has a potentially konami-screwed title. Investigate it manually.`,
+					);
+				}
+
+				existingSongs.push(tachiSong);
+
+				song = tachiSong;
 			}
-
-			const searchTerms: string[] = [];
-			if (inp.marquee.toLowerCase() !== inp.title.toLowerCase()) {
-				searchTerms.push(inp.marquee);
-			}
-
-			const tachiSong: SEEDS_SongDocument<"iidx"> = {
-				id: CreateSongID(),
-				legacySongID: getFreeLegacySongID(),
-				artist: inp.artist,
-				title: inp.title,
-				data: {
-					genre: inp.genre,
-					displayVersion: inp.folder.toString(),
-				},
-				searchTerms: searchTerms,
-				altTitles: [],
-			};
-
-			log.info(`Added new song ${inp.title}.`);
-
-			if (inp.title.match(/\?/gu)) {
-				log.warn(
-					`${inp.title} has a potentially konami-screwed title. Investigate it manually.`,
-				);
-			}
-
-			if (inp.artist.match(/\?/gu)) {
-				log.warn(
-					`${inp.artist} - ${inp.title} has a potentially konami-screwed title. Investigate it manually.`,
-				);
-			}
-
-			existingSongs.push(tachiSong);
-
-			song = tachiSong;
 		} else {
 			const sxng = songMap.get(anySongIDMatch.songID);
 
@@ -231,7 +249,7 @@ async function ParseIIDXMDB() {
 		for (const diffName of diffNames) {
 			if (isInBlacklist(`C${inp.songID}-${diffName}`)) {
 				log.debug(
-					`Ignored ${song.title} (${inp.songID}) ${diffName} as it was in the blacklist.`,
+					`Ignored ${song?.title} (${inp.songID}) ${diffName} as it was in the blacklist.`,
 				);
 				continue;
 			}
@@ -300,7 +318,7 @@ async function ParseIIDXMDB() {
 					log.warn(
 						`Chart ${inp.title} ${diffName} has a different notecount in the JSON to the data just parsed. Has this chart been edited? OLD: ${chart.data.notecount} -> NEW: ${notecount}.`,
 					);
-					if (!options.force) {
+					if (!options.forceChart) {
 						log.warn(
 							`Must be resolved manually. Use --force to blindly overwrite it anyway.`,
 						);

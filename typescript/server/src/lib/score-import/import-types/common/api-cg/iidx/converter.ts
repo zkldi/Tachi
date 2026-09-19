@@ -432,7 +432,7 @@ function ConvertVersion(version: integer): Versions["iidx-dp" | "iidx-sp"] {
 		case 32:
 			return "32-omni";
 		case 33:
-			return "33";
+			return "33-omni";
 	}
 
 	throw new InvalidScoreFailure(`Unsupported version ${version}.`);
