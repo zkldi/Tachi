@@ -3317,6 +3317,29 @@
 	},
 	{
 		"default": false,
+		"description": "Levels for beatmania IIDX (DP) in Sparkle Shower Omnimix.",
+		"folders": [
+			"1-sparkleshower-omni",
+			"2-sparkleshower-omni",
+			"3-sparkleshower-omni",
+			"4-sparkleshower-omni",
+			"5-sparkleshower-omni",
+			"6-sparkleshower-omni",
+			"7-sparkleshower-omni",
+			"8-sparkleshower-omni",
+			"9-sparkleshower-omni",
+			"10-sparkleshower-omni",
+			"11-sparkleshower-omni",
+			"12-sparkleshower-omni"
+		],
+		"game": "iidx-dp",
+		"id": "T1a0b81bb5a35e17b620",
+		"inactive": false,
+		"legacyTableID": "iidx-dp-sparkleshower-omni-levels",
+		"title": "beatmania IIDX (DP) (Sparkle Shower Omnimix)"
+	},
+	{
+		"default": false,
 		"description": "Levels for beatmania IIDX (DP) in Sparkle Shower.",
 		"folders": [
 			"1-sparkleshower",
@@ -4188,6 +4211,29 @@
 		"inactive": true,
 		"legacyTableID": "iidx-SP-21-levels",
 		"title": "beatmania IIDX (SP) (SPADA)"
+	},
+	{
+		"default": false,
+		"description": "Levels for beatmania IIDX (SP) in Sparkle Shower Omnimix.",
+		"folders": [
+			"1-sparkleshower-omni",
+			"2-sparkleshower-omni",
+			"3-sparkleshower-omni",
+			"4-sparkleshower-omni",
+			"5-sparkleshower-omni",
+			"6-sparkleshower-omni",
+			"7-sparkleshower-omni",
+			"8-sparkleshower-omni",
+			"9-sparkleshower-omni",
+			"10-sparkleshower-omni",
+			"11-sparkleshower-omni",
+			"12-sparkleshower-omni"
+		],
+		"game": "iidx-sp",
+		"id": "T1a0b81bae5db963c437",
+		"inactive": false,
+		"legacyTableID": "iidx-sp-sparkleshower-omni-levels",
+		"title": "beatmania IIDX (SP) (Sparkle Shower Omnimix)"
 	},
 	{
 		"default": false,
