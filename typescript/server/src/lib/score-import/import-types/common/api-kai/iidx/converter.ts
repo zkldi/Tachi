@@ -300,6 +300,8 @@ function ConvertVersion(version: integer): Versions[GamesForGroup["iidx"]] {
 			return "31";
 		case 32:
 			return "32";
+		case 33:
+			return "33";
 	}
 
 	throw new InvalidScoreFailure(`Unsupported version ${version}.`);
