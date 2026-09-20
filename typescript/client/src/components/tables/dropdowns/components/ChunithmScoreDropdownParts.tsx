@@ -1,8 +1,7 @@
 import GekichumaiScoreChart from "#components/charts/GekichumaiScoreChart";
 import useApiQuery from "#components/util/query/useApiQuery";
 import SelectNav from "#components/util/SelectNav";
-import { type SetState } from "#types/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Nav } from "react-bootstrap";
 import {
 	type ChartDocument,
@@ -23,36 +22,6 @@ export function ChunithmGraphsComponent({
 	score: PBScoreDocument<"chunithm"> | ScoreDocument<"chunithm">;
 }) {
 	const [graph, setGraph] = useState<ChartType>("Score");
-	const available = score.scoreData.optional.scoreGraph && score.scoreData.optional.lifeGraph;
-
-	if (!available) {
-		return <Box message="No charts available" />;
-	}
-
-	return (
-		<Inner
-			available={available}
-			chart={chart}
-			graph={graph}
-			score={score}
-			setGraph={setGraph}
-		/>
-	);
-}
-
-function Inner({
-	score,
-	chart,
-	graph,
-	setGraph,
-	available,
-}: {
-	available: number[] | null | undefined;
-	chart: ChartDocument<"chunithm">;
-	graph: ChartType;
-	score: PBScoreDocument<"chunithm"> | ScoreDocument<"chunithm">;
-	setGraph: SetState<ChartType>;
-}) {
 	const { data, error } = useApiQuery<{
 		song: SongDocument<"chunithm">;
 	}>(`/games/chunithm/songs/${score.songID}`);
@@ -61,7 +30,11 @@ function Inner({
 		return <Box message="Error retrieving chart" />;
 	}
 
-	if (data.song.data.duration === null) {
+	if (!score.scoreData.optional.scoreGraph && !score.scoreData.optional.lifeGraph) {
+		return <Box message="No charts available" />;
+	}
+
+	if (!data.song.data.duration) {
 		return <Box message="No charts available" />;
 	}
 
@@ -69,22 +42,16 @@ function Inner({
 		<>
 			<div className="col-12 d-flex justify-content-center">
 				<Nav variant="pills">
-					<SelectNav
-						disabled={!available}
-						id={"Score" as const}
-						setValue={setGraph}
-						value={graph}
-					>
-						Score
-					</SelectNav>
-					<SelectNav
-						disabled={!available}
-						id={"Life" as const}
-						setValue={setGraph}
-						value={graph}
-					>
-						Life
-					</SelectNav>
+					{score.scoreData.optional.scoreGraph && (
+						<SelectNav id={"Score" as const} setValue={setGraph} value={graph}>
+							Score
+						</SelectNav>
+					)}
+					{score.scoreData.optional.lifeGraph && (
+						<SelectNav id={"Life" as const} setValue={setGraph} value={graph}>
+							Life
+						</SelectNav>
+					)}
 				</Nav>
 			</div>
 			<div className="col-12">
