@@ -8,7 +8,7 @@ This scenario appears frequently, and is typically shortened to UGPT.
 
 ## Get information about a user's plays on a game + playtype.
 
-`GET /api/v1/users/:userID/games/:gameGroup/:playtype`
+`GET /api/v1/users/:userID/games/:game`
 
 ### Parameters
 
@@ -29,7 +29,7 @@ None.
 #### Request
 
 ```
-GET /api/v1/users/zkldi/games/iidx/SP
+GET /api/v1/users/zkldi/games/iidx-sp
 ```
 
 #### Response
