@@ -48,10 +48,10 @@ function copyEnvExamples {
 	done
 }
 
-function seedMinioCdn {
-	# Uploads example/default-cdn-contents when MinIO is up. Buckets + anonymous download use MinIO client;
+function seedS3Cdn {
+	# Uploads example/default-cdn-contents to RustFS using the S3-compatible client.
 	# Debian package `minio-client` installs the `minio-client` binary (same CLI as upstream `mc`).
-	# override endpoint with MINIO_ENDPOINT (devcontainer sets http://tachi-s3:9000).
+	# Override the endpoint with S3_ENDPOINT (devcontainer sets http://tachi-s3:9000).
 	if ! command -v minio-client &> /dev/null; then
 		echo "Couldn't find MinIO client (minio-client). On Debian: apt install minio-client - see Dockerfile.dev."
 		exit 1
@@ -60,12 +60,12 @@ function seedMinioCdn {
 	(
 		MC_CONFIG_DIR=$(mktemp -d)
 		trap 'rm -rf "$MC_CONFIG_DIR"' EXIT
-		MINIO_ENDPOINT="http://tachi-s3:9000"
+		S3_ENDPOINT="${S3_ENDPOINT:-http://tachi-s3:9000}"
 		MC=(minio-client --config-dir "$MC_CONFIG_DIR")
 		MC_ALIAS="tachi-s3"
 
-		if ! "${MC[@]}" alias set "$MC_ALIAS" "$MINIO_ENDPOINT" minio password --api s3v4; then
-			echo "Could not seed MinIO CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
+		if ! "${MC[@]}" alias set "$MC_ALIAS" "$S3_ENDPOINT" minio password --api s3v4; then
+			echo "Could not seed RustFS CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
 			exit 0
 		fi
 
@@ -73,15 +73,15 @@ function seedMinioCdn {
 			"${MC[@]}" mb --ignore-existing "${MC_ALIAS}/${b}" 2>/dev/null || true
 		done
 
-		# Public reads only for tachi-public (dev/minio-tachi-public-bucket-policy.json). tachi-private and tachi-backups stay private.
-		if ! "${MC[@]}" anonymous set download "${MC_ALIAS}/tachi-public"; then
-			echo "Could not set anonymous download on tachi-public (MinIO up?)."
+		# Public reads only for tachi-public (dev/s3-public-bucket-policy.json). tachi-private and tachi-backups stay private.
+		if ! "${MC[@]}" anonymous set-json dev/s3-public-bucket-policy.json "${MC_ALIAS}/tachi-public"; then
+			echo "Could not set anonymous download on tachi-public (RustFS up?)."
 		fi
 
 		if "${MC[@]}" cp --recursive typescript/server/example/default-cdn-contents/ "${MC_ALIAS}/tachi-public/"; then
-			echo "Uploaded default CDN assets to MinIO."
+			echo "Uploaded default CDN assets to RustFS."
 		else
-			echo "Could not seed MinIO CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
+			echo "Could not seed RustFS CDN (start compose and tachi-s3, then re-run bootstrap with -f or upload manually)."
 		fi
 		exit 0
 	)
@@ -126,7 +126,7 @@ function syncDatabaseWithSeeds {
 # always setup the shell
 setupShell
 copyEnvExamples
-seedMinioCdn
+seedS3Cdn
 bunInstall
 configureGitHooks
 

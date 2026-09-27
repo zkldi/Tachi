@@ -81,7 +81,7 @@ RUN apt-get update \
 		ripgrep fd-find bat fzf parallel wget \
 		# github CLI for `gh auth login`-style flows
 		gh \
-		# MinIO CLI (binary is `minio-client`, not Midnight Commander's `mc`)
+		# S3-compatible CLI for RustFS (binary is `minio-client`, not Midnight Commander's `mc`)
 		minio-client \
 		# `xdg-open` so the client vite plugin can launch a browser without
 		# crashing on missing binary (see typescript/client/vite.config.ts).

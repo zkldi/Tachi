@@ -7,8 +7,8 @@ import {
 
 import { loadServerEnvFile } from "../lib/setup/load-server-env";
 
-/** MinIO buckets for dev/CI (matches docker-compose / bootstrap). */
-const MINIO_BUCKETS = ["tachi-public", "tachi-private", "tachi-backups"] as const;
+/** S3 buckets for dev/CI (matches docker-compose / bootstrap). */
+const S3_BUCKETS = ["tachi-public", "tachi-private", "tachi-backups"] as const;
 
 function anonymousGetObjectPolicy(bucket: string): string {
 	return JSON.stringify({
@@ -25,7 +25,7 @@ function anonymousGetObjectPolicy(bucket: string): string {
 }
 
 /**
- * Ensures MinIO buckets exist and tachi-public allows anonymous reads for seeded CDN assets (CI + local test runs).
+ * Ensures S3 buckets exist and tachi-public allows anonymous reads for seeded CDN assets (CI + local test runs).
  */
 export async function ensureTestCdnBucket() {
 	loadServerEnvFile(".env.test");
@@ -62,7 +62,7 @@ export async function ensureTestCdnBucket() {
 	});
 
 	async function ensureBucketExists(bucketName: string): Promise<void> {
-		/* eslint-disable no-await-in-loop -- retry Head/Create until MinIO accepts connections */
+		/* eslint-disable no-await-in-loop -- retry Head/Create until S3 accepts connections */
 		for (let attempt = 0; attempt < 60; attempt++) {
 			try {
 				await client.send(new HeadBucketCommand({ Bucket: bucketName }));
@@ -81,12 +81,12 @@ export async function ensureTestCdnBucket() {
 		/* eslint-enable no-await-in-loop */
 
 		throw new Error(
-			`Could not reach or create S3 bucket "${bucketName}" at ${endpoint}. Is MinIO running?`,
+			`Could not reach or create S3 bucket "${bucketName}" at ${endpoint}. Is the S3 service running?`,
 		);
 	}
 
 	/* eslint-disable no-await-in-loop -- sequential bucket setup */
-	for (const b of MINIO_BUCKETS) {
+	for (const b of S3_BUCKETS) {
 		await ensureBucketExists(b);
 	}
 	/* eslint-enable no-await-in-loop */

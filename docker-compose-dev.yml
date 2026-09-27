@@ -106,16 +106,26 @@ services:
 
   tachi-s3:
     container_name: tachi-s3
-    image: quay.io/minio/minio:RELEASE.2024-10-29T16-01-48Z
+    image: rustfs/rustfs:1.0.0@sha256:8cc9801755448b71a786705ce76692c77e14936cccd87cf2fc31842e58f4d1ff
     environment:
-        MINIO_ROOT_USER: minio
-        MINIO_ROOT_PASSWORD: password
+      # Keep the existing dev credentials so existing .env files still work.
+      RUSTFS_ACCESS_KEY: minio
+      RUSTFS_SECRET_KEY: password
+      RUSTFS_VOLUMES: /data
+      RUSTFS_ADDRESS: "0.0.0.0:9000"
+      RUSTFS_CONSOLE_ADDRESS: "0.0.0.0:9001"
+      RUSTFS_CONSOLE_ENABLE: "true"
     ports:
-        - "9000:9000"
-        - "9001:9001"
+      - "9000:9000"
+      - "9001:9001"
     volumes:
-        - tachi-minio:/data
-    entrypoint: /usr/bin/minio server /data --console-address=':9001'
+      - tachi-rustfs:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
 
   # Read emails on port 1025.
   tachi-mailpit:
@@ -131,8 +141,10 @@ services:
     tty: true
     container_name: tachi-dev
     depends_on:
-      - tachi-s3
-      - tachi-mailpit
+      tachi-s3:
+        condition: service_healthy
+      tachi-mailpit:
+        condition: service_started
     build:
       dockerfile: Dockerfile.dev
     ports:
@@ -210,6 +222,6 @@ volumes:
   tachi-redis:
   tachi-logs:
   tachi-postgres:
-  tachi-minio:
+  tachi-rustfs:
   tachi-grafana:
   tachi-prometheus:
