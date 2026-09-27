@@ -200,8 +200,13 @@ export function RoundToNDecimalPlaces(value: number, n: integer) {
 /**
  * Floor a number to N decimal places.
  *
+ * WARNING:
+ * Avoid using this function in server code unless the precision of `number`
+ * significantly exceeds the requested precision of `dp`.
+ * Otherwise, you'll introduce round-off errors.
+ *
  * @example `FloorToNDP(1.594, 1) -> 1.5`
- * @example `FloorToNDP(1.599, 2) -> 1.59`
+ * @example `FloorToNDP(1.5997, 2) -> 1.59`
  *
  * @param number - The number to floor.
  * @param dp - The amount of decimal places to floor to.
