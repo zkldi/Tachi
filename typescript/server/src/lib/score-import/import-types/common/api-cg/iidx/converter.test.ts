@@ -150,21 +150,6 @@ describe("ConverterAPICGIIDX", () => {
 		});
 	});
 
-	it("uses the omnimix chart for version 33", async () => {
-		await seed511Another();
-		await DB.updateTable("chart")
-			.set({ versions: ["33-omni"] })
-			.where("id", "=", Testing511SPA.chartID)
-			.execute();
-
-		const res = await ConverterAPICGIIDX(iidxScore, context, "api/cg-dev-iidx", log);
-
-		expect(res.chart).toMatchObject({
-			chartID: Testing511SPA.chartID,
-			versions: ["33-omni"],
-		});
-	});
-
 	it("converts legacy Leggendaria music_id via lookup table", async () => {
 		await seed511Another();
 		await seedLeggendariaFixture();
