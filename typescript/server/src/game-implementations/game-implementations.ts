@@ -12,6 +12,7 @@ import { MAIMAI_IMPL } from "./games/maimai";
 import { MAIMAIDX_IMPL } from "./games/maimaidx";
 import { MUSECA_IMPL } from "./games/museca";
 import { ONGEKI_IMPL } from "./games/ongeki";
+import { POLARISCHORD_IMPL } from "./games/poco";
 import { POPN_IMPL } from "./games/popn";
 import { SDVX_IMPL } from "./games/sdvx";
 import { USC_CONTROLLER_IMPL, USC_KEYBOARD_IMPL } from "./games/usc";
@@ -49,4 +50,5 @@ export const GAME_IMPLEMENTATIONS: GameImplementations = {
 	ongeki: ONGEKI_IMPL,
 	"ddr-sp": DDR_IMPL,
 	"ddr-dp": DDR_IMPL,
+	poco: POLARISCHORD_IMPL,
 };

@@ -25,6 +25,7 @@ type Game =
   | 'arcaea'
   | 'ongeki'
   | 'ddr-sp'
-  | 'ddr-dp';
+  | 'ddr-dp'
+  | 'poco';
 
 export default Game;
