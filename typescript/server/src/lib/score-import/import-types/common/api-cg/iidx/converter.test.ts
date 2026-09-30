@@ -90,7 +90,7 @@ async function seedLeggendariaFixture() {
 			level: "12",
 			level_num: 12,
 			is_primary: true,
-			versions: ["33"],
+			versions: ["33", "33-omni"],
 			data: {
 				inGameID: 24_011,
 				notecount: 100,
@@ -147,6 +147,21 @@ describe("ConverterAPICGIIDX", () => {
 			scoreMeta: {
 				random: "S-RANDOM",
 			},
+		});
+	});
+
+	it("uses the omnimix chart for version 33", async () => {
+		await seed511Another();
+		await DB.updateTable("chart")
+			.set({ versions: ["33-omni"] })
+			.where("id", "=", Testing511SPA.chartID)
+			.execute();
+
+		const res = await ConverterAPICGIIDX(iidxScore, context, "api/cg-dev-iidx", log);
+
+		expect(res.chart).toMatchObject({
+			chartID: Testing511SPA.chartID,
+			versions: ["33-omni"],
 		});
 	});
 
