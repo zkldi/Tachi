@@ -48,6 +48,7 @@ const VERSION_DISPLAY_NAMES = [
 	"maimaiでらっくす PRiSM",
 	"maimaiでらっくす PRiSM PLUS",
 	"maimaiでらっくす CiRCLE",
+	"maimaiでらっくす CiRCLE PLUS",
 ];
 const DIFFICULTIES = ["Basic", "Advanced", "Expert", "Master", "Re:Master"];
 const GENRE_MAP: Record<integer, string> = {
