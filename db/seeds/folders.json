@@ -19222,6 +19222,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec959a9227",
+		"inactive": false,
+		"legacyFolderID": "Fb82b5bcb3e2350001784655a4d537139f0a188d4c1d4a375696b69b6033a2574",
+		"searchTerms": [],
+		"slug": "1-sparkleshower-omni",
+		"title": "Level 1 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf28288ded0b",
 		"inactive": false,
 		"legacyFolderID": "Fa48be9743bbf5c76506acd751db0e1f9ca6c39ea78e9d32bfd1c120da3a0e675",
@@ -19711,6 +19724,19 @@
 		"title": "Level 10 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1ecd0a051e8",
+		"inactive": false,
+		"legacyFolderID": "F645c0ce2a148aec78b391bcd3dd24ed11fe48228dab806a1fbb626e6320870f4",
+		"searchTerms": [],
+		"slug": "10-sparkleshower-omni",
+		"title": "Level 10 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -20210,6 +20236,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec22d380b7",
+		"inactive": false,
+		"legacyFolderID": "F0e7b66fd831aceafb7c94cfaa0b2dcf40771d86985a3c54266230337abd03782",
+		"searchTerms": [],
+		"slug": "11-sparkleshower-omni",
+		"title": "Level 11 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf28afcba7ba",
 		"inactive": false,
 		"legacyFolderID": "F74d0073038e258ed6e7430fe73e9d05e575d8b64704d5396d4108c02b8494853",
@@ -20699,6 +20738,19 @@
 		"title": "Level 12 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec96d99ce9",
+		"inactive": false,
+		"legacyFolderID": "F50bf5f41319e99fe307c23fdc4a5b8953bd58dd759c053b84a9398cea8eb2df3",
+		"searchTerms": [],
+		"slug": "12-sparkleshower-omni",
+		"title": "Level 12 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -21198,6 +21250,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec029c841b",
+		"inactive": false,
+		"legacyFolderID": "F48fe680e1315483097eb61a02c2ad3077f6f7fb89d8f6b05e3c9ab8ff449248a",
+		"searchTerms": [],
+		"slug": "2-sparkleshower-omni",
+		"title": "Level 2 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf285fd634c1",
 		"inactive": false,
 		"legacyFolderID": "F373b83d9e576304cf3725509dea513fc3ee1c033b63fff33c2a7e320b2688bbe",
@@ -21687,6 +21752,19 @@
 		"title": "Level 3 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec684746a2",
+		"inactive": false,
+		"legacyFolderID": "F0a62349796c127b03e7e16f09033e725007b7988bc26c59b2c9a4031c661465a",
+		"searchTerms": [],
+		"slug": "3-sparkleshower-omni",
+		"title": "Level 3 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -22186,6 +22264,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ecb9250778",
+		"inactive": false,
+		"legacyFolderID": "F55b165c13a32be542078e92dddc73e75bf23772b88ebf9f1250f6107791975b1",
+		"searchTerms": [],
+		"slug": "4-sparkleshower-omni",
+		"title": "Level 4 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf28963ef37b",
 		"inactive": false,
 		"legacyFolderID": "F6430adbf9da78a57eef2f5b65629d8f1effe400eae4a9e84ee33fd55b9075df1",
@@ -22675,6 +22766,19 @@
 		"title": "Level 5 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1ecd0361db8",
+		"inactive": false,
+		"legacyFolderID": "Fc4c923402abeb84825198339949d5d43968b46cc532d122d948c9c79094a18dd",
+		"searchTerms": [],
+		"slug": "5-sparkleshower-omni",
+		"title": "Level 5 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -23174,6 +23278,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec7f112da2",
+		"inactive": false,
+		"legacyFolderID": "F7f6c31e5db11318bb3554753376b37237ad6ac8cb1519c2e814d41569b727561",
+		"searchTerms": [],
+		"slug": "6-sparkleshower-omni",
+		"title": "Level 6 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf286d15b56c",
 		"inactive": false,
 		"legacyFolderID": "F451fe6994b97642585cb3c0a50296ae9e3c20bc81d9d855be709bfc47c2c5452",
@@ -23663,6 +23780,19 @@
 		"title": "Level 7 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1eca1384035",
+		"inactive": false,
+		"legacyFolderID": "F333c43f80c0da002cc86fe9775e4f5a2c3fec4cee7dca1f8d489ea6c7d990d35",
+		"searchTerms": [],
+		"slug": "7-sparkleshower-omni",
+		"title": "Level 7 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -24162,6 +24292,19 @@
 	},
 	{
 		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec5a0ae6ad",
+		"inactive": false,
+		"legacyFolderID": "Fdd5669650a713a3cef1171ab90c6033fbbda22c973d603c4603d311d81b52583",
+		"searchTerms": [],
+		"slug": "8-sparkleshower-omni",
+		"title": "Level 8 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "iidx-dp",
 		"id": "F19d35f0cf29608e6b04",
 		"inactive": false,
 		"legacyFolderID": "F22cb3ed62c98cc0738e38c0900cd9498cb69d30c5ced40e4ad7584c275c919a2",
@@ -24651,6 +24794,19 @@
 		"title": "Level 9 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a0b81bb1ec78c588fb",
+		"inactive": false,
+		"legacyFolderID": "Fd803f3a47cc6a8af206523d26265a7dc8323609e52bf8ddb13690da12698e06b",
+		"searchTerms": [],
+		"slug": "9-sparkleshower-omni",
+		"title": "Level 9 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '9'"
 	},
@@ -25150,6 +25306,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8e749bb274",
+		"inactive": false,
+		"legacyFolderID": "F1eacf522ff0c5fad97862c7ca8c832d894c77fb7995afaa73ead21d09311de46",
+		"searchTerms": [],
+		"slug": "1-sparkleshower-omni",
+		"title": "Level 1 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf28a313ed1c",
 		"inactive": false,
 		"legacyFolderID": "F126b6d34ca92dfab50d56146b7ebe0b608067a247e8fc12c4bef57d33839903b",
@@ -25639,6 +25808,19 @@
 		"title": "Level 10 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8e0a1bdb58",
+		"inactive": false,
+		"legacyFolderID": "F54e0fa2d2c311143a46214ac70a215844bf664dee1893f23b0aad4b201b2f581",
+		"searchTerms": [],
+		"slug": "10-sparkleshower-omni",
+		"title": "Level 10 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -26138,6 +26320,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8e7d82e6fb",
+		"inactive": false,
+		"legacyFolderID": "F596275a1c8aed0467d2c273459df387883409ebdc24db122c61ff27e3644194a",
+		"searchTerms": [],
+		"slug": "11-sparkleshower-omni",
+		"title": "Level 11 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf28019c0792",
 		"inactive": false,
 		"legacyFolderID": "F10bbea98c9a6b1cb7a25e3d43a7a9233a08baa0fe1ddf2ec55ecc2ae6a3ea62d",
@@ -26627,6 +26822,19 @@
 		"title": "Level 12 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8e4c17fff6",
+		"inactive": false,
+		"legacyFolderID": "F2962ee74a96ad44d838c2a9eecf341ab42169835c725cfbc12d9f69e35a54870",
+		"searchTerms": [],
+		"slug": "12-sparkleshower-omni",
+		"title": "Level 12 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -27126,6 +27334,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8ef3896102",
+		"inactive": false,
+		"legacyFolderID": "F7cccfa2adde7e68e8c09c9d1d9cfebd6306e03624d84cca84eb8194710283e6d",
+		"searchTerms": [],
+		"slug": "2-sparkleshower-omni",
+		"title": "Level 2 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf283ea138ab",
 		"inactive": false,
 		"legacyFolderID": "F9998d47390bdf77e57a1f948f9f67a5eb1f2771880334521e0d58645dab110d8",
@@ -27615,6 +27836,19 @@
 		"title": "Level 3 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8e66b66db8",
+		"inactive": false,
+		"legacyFolderID": "F0e421109bc84ffac812453b8bc54306af9a6322f9d683d1df8e213d2422c6bf1",
+		"searchTerms": [],
+		"slug": "3-sparkleshower-omni",
+		"title": "Level 3 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -28114,6 +28348,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8ef33ee6a0",
+		"inactive": false,
+		"legacyFolderID": "F6be0d187ac212a4f54f55a61a3b88c48cf948ba4411607aa90675cbb600e5e66",
+		"searchTerms": [],
+		"slug": "4-sparkleshower-omni",
+		"title": "Level 4 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf2875fb39a5",
 		"inactive": false,
 		"legacyFolderID": "F95af0fa33691cd756266b8505d1c2f0b92ef47e1270ead1d4d55392d9ff316de",
@@ -28603,6 +28850,19 @@
 		"title": "Level 5 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8ea3ef52d5",
+		"inactive": false,
+		"legacyFolderID": "F05b4948753c62debfe3eefd8266175aa19f20208b7d07ba2b472072342495969",
+		"searchTerms": [],
+		"slug": "5-sparkleshower-omni",
+		"title": "Level 5 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -29102,6 +29362,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8e00d64615",
+		"inactive": false,
+		"legacyFolderID": "Fae6aa6389f886cff509a7f1e38c1ebaf645d554068670ec992785e387f2e5f0e",
+		"searchTerms": [],
+		"slug": "6-sparkleshower-omni",
+		"title": "Level 6 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf28bbb37771",
 		"inactive": false,
 		"legacyFolderID": "F06e5a7f403c37e967558c3a2d00b08bebf583750bf52948dc732aa453ccb7656",
@@ -29591,6 +29864,19 @@
 		"title": "Level 7 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8ed744f86c",
+		"inactive": false,
+		"legacyFolderID": "Fbd7f4702c4169d926870dbcf9206976083368b23dd75768b56b0d2b4ba7f8348",
+		"searchTerms": [],
+		"slug": "7-sparkleshower-omni",
+		"title": "Level 7 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -30090,6 +30376,19 @@
 	},
 	{
 		"game": "iidx-sp",
+		"id": "F1a0b81baa8e0fcba1db",
+		"inactive": false,
+		"legacyFolderID": "F2263df90f6e43eb43fc871edae1eaa301e15bc8be552f50c8cd1bf6f7a6c5d27",
+		"searchTerms": [],
+		"slug": "8-sparkleshower-omni",
+		"title": "Level 8 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "iidx-sp",
 		"id": "F19d35f0cf29d471955d",
 		"inactive": false,
 		"legacyFolderID": "F0268a968013866e93c0d2b57efa872f1e7e0c6f8275bce720dbaf1215611fd02",
@@ -30579,6 +30878,19 @@
 		"title": "Level 9 (SPADA)",
 		"versionFilter": [
 			"21"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a0b81baa8ec3abcda3",
+		"inactive": false,
+		"legacyFolderID": "Ffd0a8b8cae2f1fe256a1ed24988cd3e26c52bcfcf528091486405298d8c343d4",
+		"searchTerms": [],
+		"slug": "9-sparkleshower-omni",
+		"title": "Level 9 (Sparkle Shower Omnimix)",
+		"versionFilter": [
+			"33-omni"
 		],
 		"where": "chart.level = '9'"
 	},

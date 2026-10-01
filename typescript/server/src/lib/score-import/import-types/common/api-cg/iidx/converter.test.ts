@@ -90,7 +90,7 @@ async function seedLeggendariaFixture() {
 			level: "12",
 			level_num: 12,
 			is_primary: true,
-			versions: ["33"],
+			versions: ["33", "33-omni"],
 			data: {
 				inGameID: 24_011,
 				notecount: 100,

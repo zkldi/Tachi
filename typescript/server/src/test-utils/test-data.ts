@@ -664,6 +664,7 @@ export const Testing511SPA: ChartDocument<"iidx-sp"> = {
 		"31-2dxtra",
 		"33",
 		"32-omni",
+		"33-omni",
 	],
 };
 

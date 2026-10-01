@@ -32497,5 +32497,185 @@
 			"Any Percent"
 		],
 		"title": "Any%"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sparkle Sound Systems",
+		"data": {
+			"displayVersion": "33",
+			"genre": "SPARKLE SHOWER"
+		},
+		"id": "S1a0b7e83493331f646f",
+		"legacySongID": 2659,
+		"searchTerms": [],
+		"title": "Iridescent Memories"
+	},
+	{
+		"altTitles": [],
+		"artist": "D.J.Amuro",
+		"data": {
+			"displayVersion": "33",
+			"genre": "TECH SPEED"
+		},
+		"id": "S1a0b7e8349354d71451",
+		"legacySongID": 2658,
+		"searchTerms": [],
+		"title": "super double play sessions"
+	},
+	{
+		"altTitles": [],
+		"artist": "lapix",
+		"data": {
+			"displayVersion": "33",
+			"genre": "AQUA FRONTIER"
+		},
+		"id": "S1a0b7e834937431126e",
+		"legacySongID": 2661,
+		"searchTerms": [],
+		"title": "Dolphin Kick"
+	},
+	{
+		"altTitles": [],
+		"artist": "RoughSketch",
+		"data": {
+			"displayVersion": "33",
+			"genre": "HARDCORE"
+		},
+		"id": "S1a0b7e83493b738f0a6",
+		"legacySongID": 2660,
+		"searchTerms": [
+			"DKN ON"
+		],
+		"title": "D.K.N. ON"
+	},
+	{
+		"altTitles": [],
+		"artist": "Maozon",
+		"data": {
+			"displayVersion": "33",
+			"genre": "CYBER LIQUIDFUNK"
+		},
+		"id": "S1a0b7e83493f34c2999",
+		"legacySongID": 2662,
+		"searchTerms": [],
+		"title": "Limelight"
+	},
+	{
+		"altTitles": [],
+		"artist": "TORIENA",
+		"data": {
+			"displayVersion": "33",
+			"genre": "HAPPY HARDCORE"
+		},
+		"id": "S1a0b7e834941f827158",
+		"legacySongID": 2666,
+		"searchTerms": [],
+		"title": "FIZZY FIZZY POP"
+	},
+	{
+		"altTitles": [],
+		"artist": "ryo (supercell)",
+		"data": {
+			"displayVersion": "33",
+			"genre": "アニメ／ボーカロイド／J-POP"
+		},
+		"id": "S1a0b7e834946d912198",
+		"legacySongID": 2668,
+		"searchTerms": [
+			"Melt CPK! Remix Hatsune Miku ver."
+		],
+		"title": "メルト CPK! Remix (初音ミク ver.)"
+	},
+	{
+		"altTitles": [],
+		"artist": "KARUT",
+		"data": {
+			"displayVersion": "33",
+			"genre": "SPED UP TECHNO"
+		},
+		"id": "S1a0b7e83494b326eb97",
+		"legacySongID": 2665,
+		"searchTerms": [],
+		"title": "Digitized Ocean"
+	},
+	{
+		"altTitles": [],
+		"artist": "ryo (supercell) / かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織) from 超かぐや姫！",
+		"data": {
+			"displayVersion": "33",
+			"genre": "アニメ"
+		},
+		"id": "S1a0b7e83494b4799d95",
+		"legacySongID": 2669,
+		"searchTerms": [],
+		"title": "Ex-Otogibanashi"
+	},
+	{
+		"altTitles": [],
+		"artist": "俺たち度胸兄弟",
+		"data": {
+			"displayVersion": "33",
+			"genre": "OVERTURE"
+		},
+		"id": "S1a0b7e83494ba299e72",
+		"legacySongID": 2664,
+		"searchTerms": [
+			"SATURDAYNIGHT GALLOP"
+		],
+		"title": "サタデーナイト☆ギャロップ"
+	},
+	{
+		"altTitles": [],
+		"artist": "SOUND HOLIC feat. Nana Takahashi",
+		"data": {
+			"displayVersion": "33",
+			"genre": "PARADISE POP"
+		},
+		"id": "S1a0b7e83494cf38b0ff",
+		"legacySongID": 2663,
+		"searchTerms": [
+			"Jelly Jewel Jungle"
+		],
+		"title": "じぇりー じゅえる ジャングル"
+	},
+	{
+		"altTitles": [],
+		"artist": "hololive IDOL PROJECT",
+		"data": {
+			"displayVersion": "33",
+			"genre": "J-POP"
+		},
+		"id": "S1a0b7e83494da8b5fed",
+		"legacySongID": 2667,
+		"searchTerms": [
+			"yumeiro wonder"
+		],
+		"title": "夢色ワンダー"
+	},
+	{
+		"altTitles": [],
+		"artist": "めめめ",
+		"data": {
+			"displayVersion": "33",
+			"genre": "HARD DANCE"
+		},
+		"id": "S1a0b7e83494dc9298ad",
+		"legacySongID": 2670,
+		"searchTerms": [],
+		"title": "9-1"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yuta Imai",
+		"data": {
+			"displayVersion": "33",
+			"genre": "EUPHORIC HARDSTYLE"
+		},
+		"id": "S1a0b7e83494decb9db9",
+		"legacySongID": 2671,
+		"searchTerms": [
+			"HEKIREKI"
+		],
+		"title": "霹靂"
 	}
 ]

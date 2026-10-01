@@ -161,6 +161,8 @@ export function SoftwareIDToVersion(model: string, log: KtLogger): Versions[Game
 			} else if (EXT_SPARKLE_SHOWER.includes(data.ext)) {
 				if (data.rev === REV_NORMAL) {
 					return "33";
+				} else if (data.rev === REV_OMNIMIX) {
+					return "33-omni";
 				}
 			}
 		}
