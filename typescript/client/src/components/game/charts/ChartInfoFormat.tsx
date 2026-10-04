@@ -158,12 +158,12 @@ function ChartInfoMiddle({
 function ChartInfoRight({ game, chart }: { chart: ChartDocument; game: V3Game }) {
 	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
-	if (gptImpl.displayPerVersionLevels !== undefined && "levelHistory" in chart.data) {
+	if (gptImpl.displayLevelHistory !== undefined && "levelHistory" in chart.data) {
 		const gameConfig = GetGameConfig(game);
 		return (
 			<>
 				<MiniTable colSpan={2} headers={["Rating history"]}>
-					{gptImpl.displayPerVersionLevels.map((v) => {
+					{gptImpl.displayLevelHistory.map((v) => {
 						const levelHistory = (chart.data as any).levelHistory as Record<
 							string,
 							{ level: string; levelNum: number } | null

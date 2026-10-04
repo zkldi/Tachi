@@ -124,7 +124,7 @@ export interface GameClientImplementation<TGame extends V3Game = V3Game> {
 	 * which are assumed to be stored in `chart.data.levelHistory[versionName]`.
 	 * Only versions listed in this array will be displayed.
 	 */
-	displayPerVersionLevels?: Array<Versions[TGame]>;
+	displayLevelHistory?: Array<Versions[TGame]>;
 
 	/**
 	 * Optional styles for the **value** cell (not the label) in the profile stats mini-table,

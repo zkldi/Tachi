@@ -876,7 +876,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				naiveRating: "NaiveRatingClassic",
 			},
 		},
-		displayPerVersionLevels: ["brightMemory3", "refresh"],
+		displayLevelHistory: ["brightMemory3", "refresh"],
 		scoreHeaders: [
 			[
 				"Score",
