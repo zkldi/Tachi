@@ -145,13 +145,17 @@ function ChartInfoMiddle({
 		return (
 			<>
 				<ExternalLink
-					href={`https://bms-score-viewer.pages.dev/view?md5=${bmsChart.data.hashMD5}`}
+					href={`https://makiba.ac/charts/sha256/${bmsChart.data.hashSHA256}/view`}
 				>
 					View Chart
 				</ExternalLink>
 				<br />
 				<ExternalLink href={`https://lr2ir.com/charts/${bmsChart.data.hashMD5}`}>
 					View on LR2IR Archive
+				</ExternalLink>
+				<br />
+				<ExternalLink href={`backbeat://charts/sha256/${bmsChart.data.hashSHA256}`}>
+					Download with Backbeat
 				</ExternalLink>
 			</>
 		);
@@ -162,6 +166,10 @@ function ChartInfoMiddle({
 			<>
 				<ExternalLink href={`https://lr2ir.com/charts/${pmsChart.data.hashMD5}`}>
 					View on LR2IR Archive
+				</ExternalLink>
+				<br />
+				<ExternalLink href={`backbeat://charts/sha256/${pmsChart.data.hashSHA256}`}>
+					Download with Backbeat
 				</ExternalLink>
 			</>
 		);
