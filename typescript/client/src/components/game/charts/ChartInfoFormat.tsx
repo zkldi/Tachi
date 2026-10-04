@@ -162,7 +162,7 @@ function ChartInfoRight({ game, chart }: { chart: ChartDocument; game: V3Game })
 		const gameConfig = GetGameConfig(game);
 		return (
 			<>
-				<MiniTable colSpan={2} headers={["Rating history"]}>
+				<MiniTable colSpan={2} headers={["Level history"]}>
 					{gptImpl.displayLevelHistory.map((v) => {
 						const levelHistory = (chart.data as any).levelHistory as Record<
 							string,
