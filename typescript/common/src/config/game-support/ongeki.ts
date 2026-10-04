@@ -7,6 +7,36 @@ import { FmtNum } from "../../utils/util";
 import { ClassValue, ToDecimalPlaces } from "../config-utils";
 import { FAST_SLOW_MAXCOMBO } from "./_common";
 
+const GCM_LEVEL = z
+	.enum([
+		"0",
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"7+",
+		"8",
+		"8+",
+		"9",
+		"9+",
+		"10",
+		"10+",
+		"11",
+		"11+",
+		"12",
+		"12+",
+		"13",
+		"13+",
+		"14",
+		"14+",
+		"15",
+		"15+",
+	])
+	.nullable();
+
 export const GAME_GROUP_ONGEKI_CONF = {
 	name: "O.N.G.E.K.I.",
 	dynamicContent: false,
@@ -274,6 +304,11 @@ export const GAME_ONGEKI_CONF = {
 		maxPlatScore: z.number().int().nonnegative(),
 		inGameID: z.number().int().nonnegative().nullable(),
 		chartViewURL: z.string().optional(),
+		versionLevel: z.strictObject({
+			brightMemory3Omni: GCM_LEVEL,
+			refresh: GCM_LEVEL,
+			refreshOmni: GCM_LEVEL,
+		}),
 	}),
 
 	preferences: z.strictObject({}),

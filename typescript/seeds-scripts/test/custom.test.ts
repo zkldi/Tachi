@@ -148,6 +148,21 @@ const CHART_CHECKS: { [G in GameGroup]?: Array<Test<ChartDocument<GamesForGroup[
 			}
 			return true;
 		}),
+		test("data.versionLevel should match versions", (c) => {
+			const versions = ["brightMemory3Omni", "refresh", "refreshOmni"];
+			for (const version of versions) {
+				if (c.versions.includes(version)) {
+					if (c.data.versionLevel[version] === null) {
+						return false;
+					}
+				} else {
+					if (c.data.versionLevel[version] !== null) {
+						return false;
+					}
+				}
+			}
+			return true;
+		}),
 	],
 };
 
