@@ -43548,7 +43548,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '0'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '0'"
 	},
 	{
 		"game": "ongeki",
@@ -43574,7 +43574,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '0'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '0'"
 	},
 	{
 		"game": "ongeki",
@@ -43587,7 +43587,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '0'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '0'"
 	},
 	{
 		"game": "ongeki",
@@ -43600,7 +43600,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '0'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '0'"
 	},
 	{
 		"game": "ongeki",
@@ -43613,7 +43613,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '0'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '0'"
 	},
 	{
 		"game": "ongeki",
@@ -43652,7 +43652,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '1'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '1'"
 	},
 	{
 		"game": "ongeki",
@@ -43678,7 +43678,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '1'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '1'"
 	},
 	{
 		"game": "ongeki",
@@ -43691,7 +43691,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '1'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '1'"
 	},
 	{
 		"game": "ongeki",
@@ -43704,7 +43704,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '1'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '1'"
 	},
 	{
 		"game": "ongeki",
@@ -43717,7 +43717,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '1'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '1'"
 	},
 	{
 		"game": "ongeki",
@@ -43756,7 +43756,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '10'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '10'"
 	},
 	{
 		"game": "ongeki",
@@ -43782,7 +43782,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '10'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '10'"
 	},
 	{
 		"game": "ongeki",
@@ -43795,7 +43795,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '10'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '10'"
 	},
 	{
 		"game": "ongeki",
@@ -43808,7 +43808,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '10'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '10'"
 	},
 	{
 		"game": "ongeki",
@@ -43821,7 +43821,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '10'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '10'"
 	},
 	{
 		"game": "ongeki",
@@ -43860,7 +43860,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '10+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '10+'"
 	},
 	{
 		"game": "ongeki",
@@ -43886,7 +43886,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '10+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '10+'"
 	},
 	{
 		"game": "ongeki",
@@ -43899,7 +43899,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '10+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '10+'"
 	},
 	{
 		"game": "ongeki",
@@ -43912,7 +43912,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '10+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '10+'"
 	},
 	{
 		"game": "ongeki",
@@ -43925,7 +43925,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '10+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '10+'"
 	},
 	{
 		"game": "ongeki",
@@ -43964,7 +43964,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '11'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '11'"
 	},
 	{
 		"game": "ongeki",
@@ -43990,7 +43990,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '11'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '11'"
 	},
 	{
 		"game": "ongeki",
@@ -44003,7 +44003,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '11'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '11'"
 	},
 	{
 		"game": "ongeki",
@@ -44016,7 +44016,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '11'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '11'"
 	},
 	{
 		"game": "ongeki",
@@ -44029,7 +44029,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '11'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '11'"
 	},
 	{
 		"game": "ongeki",
@@ -44068,7 +44068,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '11+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '11+'"
 	},
 	{
 		"game": "ongeki",
@@ -44094,7 +44094,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '11+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '11+'"
 	},
 	{
 		"game": "ongeki",
@@ -44107,7 +44107,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '11+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '11+'"
 	},
 	{
 		"game": "ongeki",
@@ -44120,7 +44120,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '11+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '11+'"
 	},
 	{
 		"game": "ongeki",
@@ -44133,7 +44133,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '11+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '11+'"
 	},
 	{
 		"game": "ongeki",
@@ -44172,7 +44172,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '12'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '12'"
 	},
 	{
 		"game": "ongeki",
@@ -44198,7 +44198,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '12'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '12'"
 	},
 	{
 		"game": "ongeki",
@@ -44211,7 +44211,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '12'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '12'"
 	},
 	{
 		"game": "ongeki",
@@ -44224,7 +44224,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '12'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '12'"
 	},
 	{
 		"game": "ongeki",
@@ -44237,7 +44237,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '12'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '12'"
 	},
 	{
 		"game": "ongeki",
@@ -44276,7 +44276,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '12+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '12+'"
 	},
 	{
 		"game": "ongeki",
@@ -44302,7 +44302,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '12+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '12+'"
 	},
 	{
 		"game": "ongeki",
@@ -44315,7 +44315,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '12+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '12+'"
 	},
 	{
 		"game": "ongeki",
@@ -44328,7 +44328,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '12+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '12+'"
 	},
 	{
 		"game": "ongeki",
@@ -44341,7 +44341,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '12+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '12+'"
 	},
 	{
 		"game": "ongeki",
@@ -44380,7 +44380,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '13'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '13'"
 	},
 	{
 		"game": "ongeki",
@@ -44406,7 +44406,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '13'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '13'"
 	},
 	{
 		"game": "ongeki",
@@ -44419,7 +44419,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '13'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '13'"
 	},
 	{
 		"game": "ongeki",
@@ -44432,7 +44432,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '13'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '13'"
 	},
 	{
 		"game": "ongeki",
@@ -44445,7 +44445,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '13'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '13'"
 	},
 	{
 		"game": "ongeki",
@@ -44484,7 +44484,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '13+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '13+'"
 	},
 	{
 		"game": "ongeki",
@@ -44510,7 +44510,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '13+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '13+'"
 	},
 	{
 		"game": "ongeki",
@@ -44523,7 +44523,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '13+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '13+'"
 	},
 	{
 		"game": "ongeki",
@@ -44536,7 +44536,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '13+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '13+'"
 	},
 	{
 		"game": "ongeki",
@@ -44549,7 +44549,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '13+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '13+'"
 	},
 	{
 		"game": "ongeki",
@@ -44588,7 +44588,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '14'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '14'"
 	},
 	{
 		"game": "ongeki",
@@ -44614,7 +44614,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '14'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '14'"
 	},
 	{
 		"game": "ongeki",
@@ -44627,7 +44627,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '14'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '14'"
 	},
 	{
 		"game": "ongeki",
@@ -44640,7 +44640,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '14'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '14'"
 	},
 	{
 		"game": "ongeki",
@@ -44653,7 +44653,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '14'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '14'"
 	},
 	{
 		"game": "ongeki",
@@ -44692,7 +44692,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '14+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '14+'"
 	},
 	{
 		"game": "ongeki",
@@ -44718,7 +44718,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '14+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '14+'"
 	},
 	{
 		"game": "ongeki",
@@ -44731,7 +44731,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '14+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '14+'"
 	},
 	{
 		"game": "ongeki",
@@ -44744,7 +44744,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '14+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '14+'"
 	},
 	{
 		"game": "ongeki",
@@ -44757,7 +44757,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '14+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '14+'"
 	},
 	{
 		"game": "ongeki",
@@ -44796,7 +44796,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '15'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '15'"
 	},
 	{
 		"game": "ongeki",
@@ -44822,7 +44822,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '15'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '15'"
 	},
 	{
 		"game": "ongeki",
@@ -44835,7 +44835,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '15'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '15'"
 	},
 	{
 		"game": "ongeki",
@@ -44848,7 +44848,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '15'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '15'"
 	},
 	{
 		"game": "ongeki",
@@ -44861,7 +44861,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '15'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '15'"
 	},
 	{
 		"game": "ongeki",
@@ -44900,7 +44900,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '15+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '15+'"
 	},
 	{
 		"game": "ongeki",
@@ -44926,7 +44926,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '15+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '15+'"
 	},
 	{
 		"game": "ongeki",
@@ -44939,7 +44939,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '15+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '15+'"
 	},
 	{
 		"game": "ongeki",
@@ -44952,7 +44952,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '15+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '15+'"
 	},
 	{
 		"game": "ongeki",
@@ -44965,7 +44965,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '15+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '15+'"
 	},
 	{
 		"game": "ongeki",
@@ -45004,7 +45004,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '2'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '2'"
 	},
 	{
 		"game": "ongeki",
@@ -45030,7 +45030,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '2'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '2'"
 	},
 	{
 		"game": "ongeki",
@@ -45043,7 +45043,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '2'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '2'"
 	},
 	{
 		"game": "ongeki",
@@ -45056,7 +45056,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '2'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '2'"
 	},
 	{
 		"game": "ongeki",
@@ -45069,7 +45069,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '2'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '2'"
 	},
 	{
 		"game": "ongeki",
@@ -45108,7 +45108,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '3'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '3'"
 	},
 	{
 		"game": "ongeki",
@@ -45134,7 +45134,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '3'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '3'"
 	},
 	{
 		"game": "ongeki",
@@ -45147,7 +45147,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '3'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '3'"
 	},
 	{
 		"game": "ongeki",
@@ -45160,7 +45160,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '3'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '3'"
 	},
 	{
 		"game": "ongeki",
@@ -45173,7 +45173,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '3'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '3'"
 	},
 	{
 		"game": "ongeki",
@@ -45212,7 +45212,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '4'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '4'"
 	},
 	{
 		"game": "ongeki",
@@ -45238,7 +45238,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '4'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '4'"
 	},
 	{
 		"game": "ongeki",
@@ -45251,7 +45251,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '4'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '4'"
 	},
 	{
 		"game": "ongeki",
@@ -45264,7 +45264,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '4'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '4'"
 	},
 	{
 		"game": "ongeki",
@@ -45277,7 +45277,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '4'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '4'"
 	},
 	{
 		"game": "ongeki",
@@ -45316,7 +45316,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '5'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '5'"
 	},
 	{
 		"game": "ongeki",
@@ -45342,7 +45342,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '5'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '5'"
 	},
 	{
 		"game": "ongeki",
@@ -45355,7 +45355,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '5'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '5'"
 	},
 	{
 		"game": "ongeki",
@@ -45368,7 +45368,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '5'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '5'"
 	},
 	{
 		"game": "ongeki",
@@ -45381,7 +45381,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '5'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '5'"
 	},
 	{
 		"game": "ongeki",
@@ -45420,7 +45420,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '6'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '6'"
 	},
 	{
 		"game": "ongeki",
@@ -45446,7 +45446,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '6'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '6'"
 	},
 	{
 		"game": "ongeki",
@@ -45459,7 +45459,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '6'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '6'"
 	},
 	{
 		"game": "ongeki",
@@ -45472,7 +45472,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '6'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '6'"
 	},
 	{
 		"game": "ongeki",
@@ -45485,7 +45485,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '6'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '6'"
 	},
 	{
 		"game": "ongeki",
@@ -45524,7 +45524,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '7'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '7'"
 	},
 	{
 		"game": "ongeki",
@@ -45550,7 +45550,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '7'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '7'"
 	},
 	{
 		"game": "ongeki",
@@ -45563,7 +45563,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '7'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '7'"
 	},
 	{
 		"game": "ongeki",
@@ -45576,7 +45576,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '7'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '7'"
 	},
 	{
 		"game": "ongeki",
@@ -45589,7 +45589,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '7'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '7'"
 	},
 	{
 		"game": "ongeki",
@@ -45628,7 +45628,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '7+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '7+'"
 	},
 	{
 		"game": "ongeki",
@@ -45654,7 +45654,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '7+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '7+'"
 	},
 	{
 		"game": "ongeki",
@@ -45667,7 +45667,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '7+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '7+'"
 	},
 	{
 		"game": "ongeki",
@@ -45680,7 +45680,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '7+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '7+'"
 	},
 	{
 		"game": "ongeki",
@@ -45693,7 +45693,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '7+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '7+'"
 	},
 	{
 		"game": "ongeki",
@@ -45732,7 +45732,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '8'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '8'"
 	},
 	{
 		"game": "ongeki",
@@ -45758,7 +45758,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '8'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '8'"
 	},
 	{
 		"game": "ongeki",
@@ -45771,7 +45771,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '8'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '8'"
 	},
 	{
 		"game": "ongeki",
@@ -45784,7 +45784,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '8'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '8'"
 	},
 	{
 		"game": "ongeki",
@@ -45797,7 +45797,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '8'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '8'"
 	},
 	{
 		"game": "ongeki",
@@ -45836,7 +45836,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '8+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '8+'"
 	},
 	{
 		"game": "ongeki",
@@ -45862,7 +45862,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '8+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '8+'"
 	},
 	{
 		"game": "ongeki",
@@ -45875,7 +45875,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '8+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '8+'"
 	},
 	{
 		"game": "ongeki",
@@ -45888,7 +45888,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '8+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '8+'"
 	},
 	{
 		"game": "ongeki",
@@ -45901,7 +45901,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '8+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '8+'"
 	},
 	{
 		"game": "ongeki",
@@ -45940,7 +45940,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '9'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '9'"
 	},
 	{
 		"game": "ongeki",
@@ -45966,7 +45966,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '9'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '9'"
 	},
 	{
 		"game": "ongeki",
@@ -45979,7 +45979,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '9'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '9'"
 	},
 	{
 		"game": "ongeki",
@@ -45992,7 +45992,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '9'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '9'"
 	},
 	{
 		"game": "ongeki",
@@ -46005,7 +46005,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '9'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '9'"
 	},
 	{
 		"game": "ongeki",
@@ -46044,7 +46044,7 @@
 		"versionFilter": [
 			"brightMemory3Omni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'brightMemory3Omni' = '9+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'brightMemory3Omni'->>'level' = '9+'"
 	},
 	{
 		"game": "ongeki",
@@ -46070,7 +46070,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '9+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '9+'"
 	},
 	{
 		"game": "ongeki",
@@ -46083,7 +46083,7 @@
 		"versionFilter": [
 			"refreshOmni"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refreshOmni' = '9+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refreshOmni'->>'level' = '9+'"
 	},
 	{
 		"game": "ongeki",
@@ -46096,7 +46096,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '9+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '9+'"
 	},
 	{
 		"game": "ongeki",
@@ -46109,7 +46109,7 @@
 		"versionFilter": [
 			"refresh"
 		],
-		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'versionLevel'->>'refresh' = '9+'"
+		"where": "chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'refresh'->>'level' = '9+'"
 	},
 	{
 		"game": "ongeki",

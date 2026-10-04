@@ -1537,10 +1537,11 @@ export const TestingOngekiChart: ChartDocument<"ongeki"> = {
 		inGameID: 2137,
 		maxPlatScore: 1000,
 		isBonusTrack: false,
-		versionLevel: {
-			brightMemory3Omni: "10",
-			refresh: null,
-			refreshOmni: "10",
+		levelHistory: {
+			brightMemory3: { level: "10", levelNum: 10.5 },
+			brightMemory3Omni: { level: "10", levelNum: 10.5 },
+			refresh: { level: "10", levelNum: 10.5 },
+			refreshOmni: { level: "10", levelNum: 10.5 },
 		},
 	},
 	difficulty: "MASTER",
@@ -1597,10 +1598,11 @@ export const TestingOngekiChartConverter: ChartDocument<"ongeki"> = {
 		inGameID: 678,
 		maxPlatScore: 2768,
 		isBonusTrack: false,
-		versionLevel: {
-			brightMemory3Omni: "13+",
+		levelHistory: {
+			brightMemory3: { level: "13+", levelNum: 13.7 },
+			brightMemory3Omni: { level: "13+", levelNum: 13.7 },
 			refresh: null,
-			refreshOmni: "13+",
+			refreshOmni: { level: "13+", levelNum: 13.7 },
 		},
 	},
 	difficulty: "MASTER",

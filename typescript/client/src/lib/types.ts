@@ -10,6 +10,7 @@ import {
 	type ScoreDocument,
 	type ScoreRatingAlgorithms,
 	type V3Game,
+	type Versions,
 } from "tachi-common";
 import { type ExtractEnumMetricNames, type GetEnumValue } from "tachi-common/types/metrics";
 
@@ -117,6 +118,13 @@ export interface GameClientImplementation<TGame extends V3Game = V3Game> {
 		score?: Record<string, string>;
 		session?: Record<string, string>;
 	};
+
+	/**
+	 * If this field exists, the tierlist corner on the chart page is replaced with per-version chart levels
+	 * which are assumed to be stored in `chart.data.levelHistory[versionName]`.
+	 * Only versions listed in this array will be displayed.
+	 */
+	displayPerVersionLevels?: Array<Versions[TGame]>;
 
 	/**
 	 * Optional styles for the **value** cell (not the label) in the profile stats mini-table,

@@ -19,6 +19,7 @@ import {
 	type FolderDocument,
 	FormatDifficultySearch,
 	GameToGameGroup,
+	GetGameConfig,
 	GetGameGroupConfig,
 	type SongDocument,
 	type V3Game,
@@ -29,10 +30,6 @@ export default function ChartInfoFormat({
 	chart,
 	game,
 }: { chart: ChartDocument; song: SongDocument } & GameProps) {
-	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
-
-	const ratingSystems = gptImpl.ratingSystems;
-
 	const { data, error } = useApiQuery<FolderDocument[]>(
 		`/games/${game}/charts/${chart.chartID}/folders`,
 	);
@@ -83,48 +80,7 @@ export default function ChartInfoFormat({
 				<ChartInfoMiddle chart={chart} game={game} song={song} />
 			</Col>
 			<Col lg={3} xs={12}>
-				{ratingSystems.length !== 0 &&
-				ratingSystems.some((k) => IsNotNullish(k.toString(chart as any))) ? (
-					<MiniTable colSpan={2} headers={["Ratings"]}>
-						{ratingSystems.map((e) => {
-							// @ts-expect-error bad types
-							const strV = e.toString(chart);
-							// @ts-expect-error bad types
-							const numV = e.toNumber(chart);
-
-							if (
-								strV === null ||
-								strV === undefined ||
-								numV === null ||
-								numV === undefined
-							) {
-								return null;
-							}
-
-							return (
-								<tr key={e.name}>
-									<td>{e.name}</td>
-									<td>
-										{strV} <Muted>({numV.toFixed(2)})</Muted>
-										{/* @ts-expect-error utterly silly types */}
-										{e.idvDifference(chart) && (
-											<>
-												<br />
-												<QuickTooltip tooltipContent="Individual Difference - The difficulty of this varies massively between people!">
-													<span>
-														<Icon type="balance-scale-left" />
-													</span>
-												</QuickTooltip>
-											</>
-										)}
-									</td>
-								</tr>
-							);
-						})}
-					</MiniTable>
-				) : (
-					<Muted>No tierlist info.</Muted>
-				)}
+				<ChartInfoRight chart={chart} game={game} />
 			</Col>
 		</Row>
 	);
@@ -197,4 +153,95 @@ function ChartInfoMiddle({
 			)}
 		</>
 	);
+}
+
+function ChartInfoRight({ game, chart }: { chart: ChartDocument; game: V3Game }) {
+	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
+
+	if (gptImpl.displayPerVersionLevels !== undefined && "levelHistory" in chart.data) {
+		const gameConfig = GetGameConfig(game);
+		return (
+			<>
+				<MiniTable colSpan={2} headers={["Rating history"]}>
+					{gptImpl.displayPerVersionLevels.map((v) => {
+						const levelHistory = (chart.data as any).levelHistory as Record<
+							string,
+							{ level: string; levelNum: number } | null
+						>;
+						if (levelHistory[v] === null) {
+							return (
+								<tr key={v}>
+									<td>{gameConfig.versions[v]}</td>
+									<td>
+										<Muted>N/A</Muted>
+									</td>
+								</tr>
+							);
+						}
+						const { level, levelNum } = levelHistory[v];
+						return (
+							<tr key={v}>
+								<td>{gameConfig.versions[v]}</td>
+								<td>
+									{level} <Muted>({levelNum.toFixed(1)})</Muted>
+								</td>
+							</tr>
+						);
+					})}
+				</MiniTable>
+			</>
+		);
+	}
+
+	const ratingSystems = gptImpl.ratingSystems;
+
+	if (ratingSystems.some((k) => IsNotNullish(k.toString(chart as any)))) {
+		return (
+			<>
+				<MiniTable colSpan={2} headers={["Ratings"]}>
+					{ratingSystems.map((e) => {
+						// @ts-expect-error bad types
+						const strV = e.toString(chart);
+						// @ts-expect-error bad types
+						const numV = e.toNumber(chart);
+
+						if (
+							strV === null ||
+							strV === undefined ||
+							numV === null ||
+							numV === undefined
+						) {
+							return null;
+						}
+
+						return (
+							<tr key={e.name}>
+								<td>{e.name}</td>
+								<td>
+									{strV} <Muted>({numV.toFixed(2)})</Muted>
+									{/* @ts-expect-error utterly silly types */}
+									{e.idvDifference(chart) && (
+										<>
+											<br />
+											<QuickTooltip tooltipContent="Individual Difference - The difficulty of this varies massively between people!">
+												<span>
+													<Icon type="balance-scale-left" />
+												</span>
+											</QuickTooltip>
+										</>
+									)}
+								</td>
+							</tr>
+						);
+					})}
+				</MiniTable>
+			</>
+		);
+	} else {
+		return (
+			<>
+				<Muted>No tierlist info.</Muted>
+			</>
+		);
+	}
 }

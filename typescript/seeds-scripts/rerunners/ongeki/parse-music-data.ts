@@ -89,10 +89,10 @@ const updateChart = (out: OngekiChart, input: InputChart, song: InputSong, chang
 		out.data.inGameID = song.id;
 	}
 	if (out.versions.includes(CURRENT_VERSION)) {
-		out.data.versionLevel[CURRENT_VERSION] = out.level;
+		out.data.levelHistory[CURRENT_VERSION] = { level: out.level, levelNum: out.levelNum };
 	}
 	if (out.versions.includes(CURRENT_OMNIMIX)) {
-		out.data.versionLevel[CURRENT_OMNIMIX] = out.level;
+		out.data.levelHistory[CURRENT_OMNIMIX] = { level: out.level, levelNum: out.levelNum };
 	}
 };
 
@@ -181,7 +181,8 @@ const main = async () => {
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
 						isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
-						versionLevel: {
+						levelHistory: {
+							brightMemory3: null,
 							brightMemory3Omni: null,
 							refresh: null,
 							refreshOmni: null,
@@ -194,8 +195,14 @@ const main = async () => {
 					versions: [CURRENT_VERSION, CURRENT_OMNIMIX],
 				};
 
-				newChart.data.versionLevel[CURRENT_VERSION] = newChart.level;
-				newChart.data.versionLevel[CURRENT_OMNIMIX] = newChart.level;
+				newChart.data.levelHistory[CURRENT_VERSION] = {
+					level: newChart.level,
+					levelNum: newChart.levelNum,
+				};
+				newChart.data.levelHistory[CURRENT_OMNIMIX] = {
+					level: newChart.level,
+					levelNum: newChart.levelNum,
+				};
 
 				chart = newChart;
 				changes.charts.push(`${song.title} ${chart.difficulty} ${chart.level}`);
