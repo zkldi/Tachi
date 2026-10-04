@@ -71,21 +71,18 @@ const getScoreYAxisNotch = (game: GameGroup) => (s: number) => {
 	return "";
 };
 
-const getBaseline = (_game: "ongeki", data: Serie[]) => {
+const getBaseline = (data: Serie[], tickValues: number[]) => {
 	const dataset = data[0].data;
 	const dv = dataset[dataset.length - 1].y;
 	const finalValue: number = typeof dv === "number" ? dv : 0;
 
-	if (finalValue >= 1007_500) {
-		return 1007_500;
+	for (let i = tickValues.length - 1; i >= 0; i--) {
+		if (finalValue >= tickValues[i]) {
+			return tickValues[i];
+		}
 	}
-	if (finalValue >= 1000_000) {
-		return 1000_000;
-	}
-	if (finalValue >= 990_000) {
-		return 990_000;
-	}
-	return 970_000;
+
+	return tickValues[0];
 };
 
 const strokeColor = (
@@ -255,13 +252,15 @@ export default function GekichumaiScoreChart({
 
 	if (type === "Score") {
 		if (game === "ongeki") {
-			const baseline = getBaseline("ongeki", data);
+			const tickValues = [970_000, 990_000, 1000_000, 1007_500, 1010_000];
+			const baseline = getBaseline(data, tickValues);
+
 			component = (
 				<ResponsiveLine
 					{...commonProps}
 					areaBaselineValue={baseline}
 					axisLeft={{
-						tickValues: [970_000, 990_000, 1000_000, 1007_500, 1010_000],
+						tickValues,
 						format: getScoreYAxisNotch(game),
 					}}
 					colors={strokeColor(difficulty)}
@@ -281,12 +280,15 @@ export default function GekichumaiScoreChart({
 				/>
 			);
 		} else if (game === "chunithm") {
+			const tickValues = [990_000, 1000_000, 1005_000, 1007_500, 1009_000, 1010_000];
+			const baseline = getBaseline(data, tickValues);
+
 			component = (
 				<ResponsiveLine
 					{...commonProps}
-					areaBaselineValue={990000}
+					areaBaselineValue={baseline}
 					axisLeft={{
-						tickValues: [990_000, 1000_000, 1005_000, 1007_500, 1009_000, 1010_000],
+						tickValues,
 						format: getScoreYAxisNotch(game),
 					}}
 					colors={strokeColor(difficulty)}
@@ -306,12 +308,15 @@ export default function GekichumaiScoreChart({
 				/>
 			);
 		} else if (game === "maimaidx") {
+			const tickValues = [97, 98, 99, 99.5, 100, 100.5, 101];
+			const baseline = getBaseline(data, tickValues);
+
 			component = (
 				<ResponsiveLine
 					{...commonProps}
-					areaBaselineValue={97}
+					areaBaselineValue={baseline}
 					axisLeft={{
-						tickValues: [97, 98, 99, 99.5, 100, 100.5, 101],
+						tickValues,
 						format: getScoreYAxisNotch(game),
 					}}
 					colors={strokeColor(difficulty)}
