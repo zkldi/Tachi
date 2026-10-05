@@ -26,8 +26,13 @@ const MANUAL_PUC_TIERS: { [level: number]: { [tier: string]: string } } = {
 		11: "16.999",
 		12: "16.?",
 	},
-	17: {
-		10: "18.0",
+	17.5: {
+		0: "~17.5",
+		1: "17.5",
+		2: "17.6",
+		3: "17.7",
+		4: "17.8",
+		5: "17.9",
 	},
 	19: {
 		0: "19.13",
@@ -61,6 +66,8 @@ const MANUAL_PUC_TIERS: { [level: number]: { [tier: string]: string } } = {
 
 // Used for tierlist value sorting
 const MANUAL_PUC_VALUES: { [tierText: string]: number } = {
+	// The ~17.5 group sorts just before the regular 17.5 group
+	"~17.5": 17.49,
 	// ".?" values indicate individual difference and should appear at the bottom of their tierlists
 	"16.?": 15.9,
 	"19.?": 18.9,
@@ -81,8 +88,20 @@ const MANUAL_S_TIERS: { [level: number]: { [tier: string]: string } } = {
 	},
 };
 
+// Aliases to map song titles in the event Maya2's title doesn't match Tachi's
+// Only one song presently needs this, since it has emojis in its name
+const MAYA2_TITLE_ALIASES: Record<string, string> = {
+	"まみむめ?まるっと?まっしゅるーむ??": "まみむめ🍄まるっと🍄まっしゅるーむ🍄🍄",
+};
+
 function normalizeStr(s: string) {
 	return s.toLowerCase().replace(/ /gu, "");
+}
+
+function decodeChartAttribute(value: string) {
+	// Decode Maya2's double-escaped symbols so titles and artists match Tachi's data
+	const $ = cheerio.load(`<textarea>${value.replace(/</gu, "&lt;")}</textarea>`);
+	return $("textarea").text();
 }
 
 async function scrape(
@@ -103,14 +122,29 @@ async function scrape(
 			continue;
 		}
 
-		const tierText =
-			tierlistType === "S_RANK"
-				? `T${MANUAL_S_TIERS[level]?.[tier] ?? tier}`
-				: (MANUAL_PUC_TIERS[level]?.[tier] ?? `${level}.${tier}`);
-
+		let tierText: string;
+		let value: number;
+		if (tierlistType === "S_RANK") {
+			tierText = `T${MANUAL_S_TIERS[level]?.[tier] ?? tier}`;
+			// Levels 17 and 17.5 now have separate T10–T1 S tables (sorted 17.00-17.45, 17.50-17.95)
+			value =
+				level === 17 || level === 17.5
+					? (level * 100 + (10 - Number(tier)) * 5) / 100
+					: level + 1 - Number(tier) / 10;
+		} else if (level === 18) {
+			// Level 18 PUC has T15–T1, sorted between 18.00 and 18.99
+			tierText = `T${tier}`;
+			value = (1800 + Math.round(((15 - Number(tier)) * 99) / 14)) / 100;
+		} else {
+			tierText = MANUAL_PUC_TIERS[level]?.[tier] ?? `${level}.${tier}`;
+			value = MANUAL_PUC_VALUES[tierText] ?? Number(tierText);
+		}
 		for (const chartData of $(tierBox).find(".chart_data")) {
-			const title = chartData.attribs["data-title"] || "";
-			const artist = chartData.attribs["data-artist"] || "";
+			const sourceTitle = decodeChartAttribute(chartData.attribs["data-title"] || "");
+			const title = Object.hasOwn(MAYA2_TITLE_ALIASES, sourceTitle)
+				? MAYA2_TITLE_ALIASES[sourceTitle]
+				: sourceTitle;
+			const artist = decodeChartAttribute(chartData.attribs["data-artist"] || "");
 			const song = songs.find(
 				(s) =>
 					normalizeStr(s.artist) === normalizeStr(artist) &&
@@ -132,13 +166,6 @@ async function scrape(
 				continue;
 			}
 
-			// S_RANK value is derived since the S tierlist groups charts under Tier 1, Tier 2, etc.
-			// instead of 17.3, 17.4, etc. like the PUC tierlist
-			// Example: Level 17 Tier 9 -> 17 + 1 - 9 / 10 = 17.1
-			const value =
-				tierlistType === "S_RANK"
-					? level + 1 - parseInt(tier, 10) / 10
-					: (MANUAL_PUC_VALUES[tierText] ?? Number(tierText));
 			const individualDifference = tierText.includes("?");
 			const tierInfoKey: keyof SDVXChart["data"] =
 				tierlistType === "S_RANK" ? "sTier" : "pucTier";
@@ -173,11 +200,11 @@ async function main() {
 	const charts: SDVXChart[] = ReadCollection("charts-sdvx.json");
 	const songs: SDVXSong[] = ReadCollection("songs-sdvx.json");
 
-	for (const level of [17, 18, 19]) {
+	for (const level of [17, 17.5, 18, 19]) {
 		console.log(`\n[S Rank] Scraping Level ${level}`);
 
 		await scrape(
-			`https://sdvx.maya2silence.com/table/${level}`,
+			`https://sdvx.maya2silence.com/table/${level}/tier`,
 			charts,
 			songs,
 			level,
@@ -185,11 +212,11 @@ async function main() {
 		);
 	}
 
-	for (const level of [16, 17, 18, 19, 20]) {
+	for (const level of [16, 17, 17.5, 18, 19, 20]) {
 		console.log(`\n[PUC Lamp] Scraping Level ${level}`);
 
 		await scrape(
-			`https://sdvx.maya2silence.com/table/${level}p`,
+			`https://sdvx.maya2silence.com/table/${level}p/tier`,
 			charts,
 			songs,
 			level,
