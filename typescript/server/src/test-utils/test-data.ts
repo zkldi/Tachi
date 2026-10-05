@@ -771,6 +771,21 @@ export const CHUNITHMBBKKChart: ChartDocument<"chunithm"> = {
 	data: {
 		displayVersion: "CHUNITHM",
 		inGameID: 3,
+		levelHistory: {
+			paradiselost: {
+				levelNum: 3,
+				level: "3",
+			},
+			verse: null,
+			"verse-intl": null,
+			"verse-omni": null,
+			xverse: null,
+			"xverse-intl": null,
+			"xverse-omni": null,
+			xversex: null,
+			"xversex-intl": null,
+			"xversex-omni": null,
+		},
 	},
 	isPrimary: true,
 	versions: ["paradiselost"],
@@ -1632,6 +1647,21 @@ export const TestingChunithmChartConverter: ChartDocument<"chunithm"> = {
 	data: {
 		displayVersion: "CHUNITHM CRYSTAL PLUS",
 		inGameID: 956,
+		levelHistory: {
+			paradiselost: {
+				levelNum: 12,
+				level: "12",
+			},
+			verse: null,
+			"verse-intl": null,
+			"verse-omni": null,
+			xverse: null,
+			"xverse-intl": null,
+			"xverse-omni": null,
+			xversex: null,
+			"xversex-intl": null,
+			"xversex-omni": null,
+		},
 	},
 	difficulty: "MASTER",
 	isPrimary: true,
@@ -1658,6 +1688,7 @@ export const TestingChunithmWEChartConverter: ChartDocument<"chunithm"> = {
 	data: {
 		displayVersion: "CHUNITHM NEW PLUS",
 		inGameID: 8235,
+		levelHistory: null,
 	},
 	difficulty: "割☆4",
 	chartID: "C19e10e7a402af3865b8",
