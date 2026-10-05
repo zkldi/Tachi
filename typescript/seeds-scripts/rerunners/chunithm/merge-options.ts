@@ -8,6 +8,7 @@ import {
 	type integer,
 	GetGameConfig,
 	type SEEDS_SongDocument,
+	Versions,
 } from "tachi-common";
 
 import { log } from "../../log";
@@ -47,6 +48,18 @@ const VERSIONS = [
 	"xverse",
 	"xversex",
 ];
+const EMPTY_LEVEL_HISTORY = {
+	paradiselost: null,
+	verse: null,
+	"verse-intl": null,
+	"verse-omni": null,
+	xverse: null,
+	"xverse-intl": null,
+	"xverse-omni": null,
+	xversex: null,
+	"xversex-intl": null,
+	"xversex-omni": null,
+};
 
 // WE charts that need extra disambiguators. Mapping of inGameID to the disambiguator.
 const DIFFICULTY_EXTRAS = new Map<integer, string>([
@@ -427,6 +440,7 @@ for (const optionsDir of options.input) {
 						data: {
 							inGameID,
 							displayVersion,
+							levelHistory: null,
 						},
 					};
 
@@ -515,7 +529,15 @@ for (const optionsDir of options.input) {
 						data: {
 							inGameID,
 							displayVersion: chartDisplayVersion,
+							levelHistory: EMPTY_LEVEL_HISTORY,
 						},
+					};
+
+					chartDoc.data.levelHistory![
+						options.version as keyof typeof EMPTY_LEVEL_HISTORY
+					] = {
+						level,
+						levelNum,
 					};
 
 					newCharts.push(chartDoc);

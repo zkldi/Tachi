@@ -48,6 +48,13 @@ export const CHUNITHMClasses = [
 	ClassValue("DAN_INFINITE", "∞", "Infinite Class"),
 ];
 
+const CHUNITHMLevel = z
+	.strictObject({
+		level: z.string(),
+		levelNum: z.number().nonnegative(),
+	})
+	.nullable();
+
 export const GAME_CHUNITHM_CONF = {
 	providedMetrics: {
 		score: {
@@ -204,6 +211,20 @@ export const GAME_CHUNITHM_CONF = {
 	chartData: z.strictObject({
 		inGameID: z.union([z.array(zodNonNegativeInt), zodNonNegativeInt]),
 		displayVersion: z.string(),
+		levelHistory: z
+			.strictObject({
+				paradiselost: CHUNITHMLevel,
+				verse: CHUNITHMLevel,
+				"verse-intl": CHUNITHMLevel,
+				"verse-omni": CHUNITHMLevel,
+				xverse: CHUNITHMLevel,
+				"xverse-intl": CHUNITHMLevel,
+				"xverse-omni": CHUNITHMLevel,
+				xversex: CHUNITHMLevel,
+				"xversex-intl": CHUNITHMLevel,
+				"xversex-omni": CHUNITHMLevel,
+			})
+			.nullable(), // WORLD'S END should be null
 	}),
 
 	preferences: z.strictObject({}),

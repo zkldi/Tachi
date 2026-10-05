@@ -7492,7 +7492,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7570,7 +7570,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7583,7 +7583,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7596,7 +7596,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7609,7 +7609,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7622,7 +7622,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7635,7 +7635,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7648,7 +7648,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7661,7 +7661,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7674,7 +7674,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '1'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '1'"
 	},
 	{
 		"game": "chunithm",
@@ -7791,7 +7791,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7869,7 +7869,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7882,7 +7882,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7895,7 +7895,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7908,7 +7908,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7921,7 +7921,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7934,7 +7934,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7947,7 +7947,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7960,7 +7960,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -7973,7 +7973,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '10'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '10'"
 	},
 	{
 		"game": "chunithm",
@@ -8090,7 +8090,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8168,7 +8168,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8181,7 +8181,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8194,7 +8194,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8207,7 +8207,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8220,7 +8220,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8233,7 +8233,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8246,7 +8246,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8259,7 +8259,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8272,7 +8272,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '10+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '10+'"
 	},
 	{
 		"game": "chunithm",
@@ -8389,7 +8389,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8467,7 +8467,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8480,7 +8480,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8493,7 +8493,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8506,7 +8506,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8519,7 +8519,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8532,7 +8532,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8545,7 +8545,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8558,7 +8558,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8571,7 +8571,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '11'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '11'"
 	},
 	{
 		"game": "chunithm",
@@ -8688,7 +8688,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8766,7 +8766,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8779,7 +8779,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8792,7 +8792,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8805,7 +8805,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8818,7 +8818,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8831,7 +8831,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8844,7 +8844,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8857,7 +8857,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8870,7 +8870,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '11+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '11+'"
 	},
 	{
 		"game": "chunithm",
@@ -8987,7 +8987,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9065,7 +9065,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9078,7 +9078,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9091,7 +9091,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9104,7 +9104,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9117,7 +9117,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9130,7 +9130,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9143,7 +9143,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9156,7 +9156,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9169,7 +9169,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '12'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '12'"
 	},
 	{
 		"game": "chunithm",
@@ -9286,7 +9286,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9364,7 +9364,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9377,7 +9377,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9390,7 +9390,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9403,7 +9403,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9416,7 +9416,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9429,7 +9429,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9442,7 +9442,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9455,7 +9455,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9468,7 +9468,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '12+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '12+'"
 	},
 	{
 		"game": "chunithm",
@@ -9585,7 +9585,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9663,7 +9663,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9676,7 +9676,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9689,7 +9689,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9702,7 +9702,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9715,7 +9715,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9728,7 +9728,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9741,7 +9741,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9754,7 +9754,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9767,7 +9767,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '13'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '13'"
 	},
 	{
 		"game": "chunithm",
@@ -9884,7 +9884,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -9962,7 +9962,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -9975,7 +9975,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -9988,7 +9988,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10001,7 +10001,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10014,7 +10014,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10027,7 +10027,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10040,7 +10040,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10053,7 +10053,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10066,7 +10066,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '13+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '13+'"
 	},
 	{
 		"game": "chunithm",
@@ -10183,7 +10183,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10261,7 +10261,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10274,7 +10274,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10287,7 +10287,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10300,7 +10300,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10313,7 +10313,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10326,7 +10326,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10339,7 +10339,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10352,7 +10352,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10365,7 +10365,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '14'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '14'"
 	},
 	{
 		"game": "chunithm",
@@ -10482,7 +10482,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10560,7 +10560,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10573,7 +10573,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10586,7 +10586,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10599,7 +10599,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10612,7 +10612,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10625,7 +10625,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10638,7 +10638,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10651,7 +10651,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10664,7 +10664,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '14+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '14+'"
 	},
 	{
 		"game": "chunithm",
@@ -10781,7 +10781,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10859,7 +10859,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10872,7 +10872,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10885,7 +10885,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10898,7 +10898,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10911,7 +10911,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10924,7 +10924,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10937,7 +10937,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10950,7 +10950,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -10963,7 +10963,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '15'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '15'"
 	},
 	{
 		"game": "chunithm",
@@ -11080,7 +11080,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11158,7 +11158,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11171,7 +11171,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11184,7 +11184,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11197,7 +11197,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11210,7 +11210,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11223,7 +11223,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11236,7 +11236,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11249,7 +11249,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11262,7 +11262,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '15+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '15+'"
 	},
 	{
 		"game": "chunithm",
@@ -11275,7 +11275,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '16'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '16'"
 	},
 	{
 		"game": "chunithm",
@@ -11288,7 +11288,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '16'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '16'"
 	},
 	{
 		"game": "chunithm",
@@ -11301,7 +11301,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '16'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '16'"
 	},
 	{
 		"game": "chunithm",
@@ -11418,7 +11418,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11496,7 +11496,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11509,7 +11509,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11522,7 +11522,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11535,7 +11535,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11548,7 +11548,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11561,7 +11561,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11574,7 +11574,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11587,7 +11587,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11600,7 +11600,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '2'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '2'"
 	},
 	{
 		"game": "chunithm",
@@ -11717,7 +11717,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11795,7 +11795,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11808,7 +11808,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11821,7 +11821,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11834,7 +11834,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11847,7 +11847,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11860,7 +11860,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11873,7 +11873,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11886,7 +11886,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -11899,7 +11899,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '3'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '3'"
 	},
 	{
 		"game": "chunithm",
@@ -12016,7 +12016,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12094,7 +12094,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12107,7 +12107,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12120,7 +12120,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12133,7 +12133,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12146,7 +12146,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12159,7 +12159,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12172,7 +12172,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12185,7 +12185,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12198,7 +12198,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '4'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '4'"
 	},
 	{
 		"game": "chunithm",
@@ -12315,7 +12315,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12393,7 +12393,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12406,7 +12406,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12419,7 +12419,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12432,7 +12432,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12445,7 +12445,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12458,7 +12458,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12471,7 +12471,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12484,7 +12484,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12497,7 +12497,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '5'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '5'"
 	},
 	{
 		"game": "chunithm",
@@ -12614,7 +12614,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12692,7 +12692,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12705,7 +12705,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12718,7 +12718,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12731,7 +12731,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12744,7 +12744,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12757,7 +12757,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12770,7 +12770,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12783,7 +12783,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12796,7 +12796,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '6'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '6'"
 	},
 	{
 		"game": "chunithm",
@@ -12913,7 +12913,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -12991,7 +12991,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13004,7 +13004,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13017,7 +13017,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13030,7 +13030,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13043,7 +13043,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13056,7 +13056,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13069,7 +13069,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13082,7 +13082,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13095,7 +13095,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '7'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '7'"
 	},
 	{
 		"game": "chunithm",
@@ -13212,7 +13212,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13290,7 +13290,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13303,7 +13303,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13316,7 +13316,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13329,7 +13329,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13342,7 +13342,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13355,7 +13355,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13368,7 +13368,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13381,7 +13381,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13394,7 +13394,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '7+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '7+'"
 	},
 	{
 		"game": "chunithm",
@@ -13511,7 +13511,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13589,7 +13589,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13602,7 +13602,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13615,7 +13615,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13628,7 +13628,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13641,7 +13641,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13654,7 +13654,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13667,7 +13667,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13680,7 +13680,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13693,7 +13693,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '8'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '8'"
 	},
 	{
 		"game": "chunithm",
@@ -13810,7 +13810,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13888,7 +13888,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13901,7 +13901,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13914,7 +13914,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13927,7 +13927,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13940,7 +13940,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13953,7 +13953,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13966,7 +13966,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13979,7 +13979,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -13992,7 +13992,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '8+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '8+'"
 	},
 	{
 		"game": "chunithm",
@@ -14109,7 +14109,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14187,7 +14187,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14200,7 +14200,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14213,7 +14213,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14226,7 +14226,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14239,7 +14239,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14252,7 +14252,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14265,7 +14265,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14278,7 +14278,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14291,7 +14291,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '9'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '9'"
 	},
 	{
 		"game": "chunithm",
@@ -14408,7 +14408,7 @@
 		"versionFilter": [
 			"paradiselost"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'paradiselost'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14486,7 +14486,7 @@
 		"versionFilter": [
 			"verse-intl"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'verse-intl'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14499,7 +14499,7 @@
 		"versionFilter": [
 			"verse-omni"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'verse-omni'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14512,7 +14512,7 @@
 		"versionFilter": [
 			"verse"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'verse'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14525,7 +14525,7 @@
 		"versionFilter": [
 			"xverse-intl"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xverse-intl'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14538,7 +14538,7 @@
 		"versionFilter": [
 			"xverse-omni"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xverse-omni'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14551,7 +14551,7 @@
 		"versionFilter": [
 			"xversex-intl"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xversex-intl'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14564,7 +14564,7 @@
 		"versionFilter": [
 			"xversex-omni"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xversex-omni'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14577,7 +14577,7 @@
 		"versionFilter": [
 			"xversex"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xversex'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",
@@ -14590,7 +14590,7 @@
 		"versionFilter": [
 			"xverse"
 		],
-		"where": "chart.level = '9+'"
+		"where": "chart.data->'levelHistory'->'xverse'->>'level' = '9+'"
 	},
 	{
 		"game": "chunithm",

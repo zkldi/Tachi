@@ -6,6 +6,7 @@ import {
 	type GameGroup,
 	type GamesForGroup,
 	type SongDocument,
+	type Versions,
 } from "tachi-common";
 
 import { ReadCollection } from "../util";
@@ -69,6 +70,40 @@ const CHART_CHECKS: { [G in GameGroup]?: Array<Test<ChartDocument<GamesForGroup[
 			} else {
 				return (c.levelNum * 10) % 10 < 5;
 			}
+		}),
+		test("Level history nullability should match versions", (c) => {
+			const versions: Array<Versions["chunithm"]> = [
+				"paradiselost",
+				"verse",
+				"verse-intl",
+				"verse-omni",
+				"xverse",
+				"xverse-intl",
+				"xverse-omni",
+				"xversex",
+				"xversex-intl",
+				"xversex-omni",
+			];
+			if (
+				(Array.isArray(c.data.inGameID) && c.data.inGameID.some((igid) => igid >= 8000)) ||
+				(!Array.isArray(c.data.inGameID) && c.data.inGameID >= 8000)
+			) {
+				return c.data.levelHistory === null;
+			} else if (c.data.levelHistory === null) {
+				return false;
+			}
+			for (const version of versions) {
+				if (c.versions.includes(version)) {
+					if (c.data.levelHistory[version] === null) {
+						return false;
+					}
+				} else {
+					if (c.data.levelHistory[version] !== null) {
+						return false;
+					}
+				}
+			}
+			return true;
 		}),
 	],
 	maimaidx: [
@@ -148,8 +183,13 @@ const CHART_CHECKS: { [G in GameGroup]?: Array<Test<ChartDocument<GamesForGroup[
 			}
 			return true;
 		}),
-		test("data.levelHistory should match versions", (c) => {
-			const versions = ["brightMemory3", "brightMemory3Omni", "refresh", "refreshOmni"];
+		test("Level history nullability should match versions", (c) => {
+			const versions: Array<Versions["ongeki"]> = [
+				"brightMemory3",
+				"brightMemory3Omni",
+				"refresh",
+				"refreshOmni",
+			];
 			for (const version of versions) {
 				if (c.versions.includes(version)) {
 					if (c.data.levelHistory[version] === null) {

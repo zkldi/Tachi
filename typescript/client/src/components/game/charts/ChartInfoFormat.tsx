@@ -160,6 +160,9 @@ function ChartInfoRight({ game, chart }: { chart: ChartDocument; game: V3Game })
 
 	if (gptImpl.displayLevelHistory !== undefined && "levelHistory" in chart.data) {
 		const gameConfig = GetGameConfig(game);
+		if (chart.data.levelHistory === null) {
+			return <Muted>N/A</Muted>;
+		}
 		return (
 			<>
 				<MiniTable colSpan={2} headers={["Level history"]}>

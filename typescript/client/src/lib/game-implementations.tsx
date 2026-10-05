@@ -144,6 +144,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				),
 			],
 		],
+		displayLevelHistory: ["paradiselost", "verse", "xverse", "xversex"],
 		scoreCoreCells: ({ sc }) => (
 			<>
 				<MillionsScoreCell
