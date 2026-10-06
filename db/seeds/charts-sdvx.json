@@ -18095,6 +18095,11 @@
 				"individualDifference": false,
 				"text": "19.2",
 				"value": 19.2
+			},
+			"sTier": {
+				"individualDifference": false,
+				"text": "T3",
+				"value": 19.7
 			}
 		},
 		"difficulty": "NBL",
@@ -54765,6 +54770,11 @@
 				"individualDifference": false,
 				"text": "T12",
 				"value": 18.21
+			},
+			"sTier": {
+				"individualDifference": false,
+				"text": "T9",
+				"value": 18.1
 			}
 		},
 		"difficulty": "NBL",
@@ -211009,7 +211019,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2298
+			"inGameID": 2298,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T7",
+				"value": 18.3
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19f6b1cd40cc2acba26",
@@ -211147,7 +211162,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2307
+			"inGameID": 2307,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T3",
+				"value": 18.7
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19f6b1cd40d92084e1e",
@@ -211216,7 +211236,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2311
+			"inGameID": 2311,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T4",
+				"value": 18.6
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19f6b1cd40d8e9a6c49",
@@ -211285,7 +211310,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2271
+			"inGameID": 2271,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T3",
+				"value": 18.7
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19fb8571a4226597bb7",
@@ -211354,7 +211384,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2281
+			"inGameID": 2281,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T6",
+				"value": 18.4
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19fb8571a42f7f71331",
@@ -211423,7 +211458,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2268
+			"inGameID": 2268,
+			"sTier": {
+				"individualDifference": false,
+				"text": "T9",
+				"value": 18.1
+			}
 		},
 		"difficulty": "MXM",
 		"id": "C19fb8571a425ffe90b4",
@@ -212161,7 +212201,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2295
+			"inGameID": 2295,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.4",
+				"value": 16.4
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cff9a75aa0ad",
@@ -212289,7 +212334,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2416
+			"inGameID": 2416,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.4",
+				"value": 16.4
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cff976773147",
@@ -212481,7 +212531,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2417
+			"inGameID": 2417,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.4",
+				"value": 16.4
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cff9a40123f4",
@@ -212609,7 +212664,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2308
+			"inGameID": 2308,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.5",
+				"value": 16.5
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cff9ea004aba",
@@ -212673,7 +212733,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2418
+			"inGameID": 2418,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.5",
+				"value": 16.5
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cffaa1126c53",
