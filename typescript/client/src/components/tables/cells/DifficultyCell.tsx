@@ -2,6 +2,7 @@ import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import Icon from "#components/util/Icon";
 import Muted from "#components/util/Muted";
 import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
+import { GetChartColor } from "#util/charts";
 import { ChangeOpacity } from "#util/color-opacity";
 import {
 	type ChartDocument,
@@ -62,13 +63,16 @@ export default function DifficultyCell({
 		.filter(Boolean)
 		.join(" — ");
 
+	const baseColor = GetChartColor(chart);
+	const backgroundColor = baseColor ? ChangeOpacity(baseColor, 0.2) : "var(--bs-secondary-bg)";
+
 	return (
 		<td
+			className="text-body"
 			style={{
 				boxSizing: "border-box",
 				minWidth: 0,
-				// @ts-expect-error yawn
-				backgroundColor: ChangeOpacity(gptImpl.difficultyColours[chart.difficulty]!, 0.2),
+				backgroundColor,
 				maxWidth: `${difficultyCellWidthPx}px`,
 				overflow: "hidden",
 				width: `${difficultyCellWidthPx}px`,
