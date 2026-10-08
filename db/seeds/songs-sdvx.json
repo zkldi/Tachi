@@ -24289,7 +24289,8 @@
 		"id": "S19d35e0e733d0900a69",
 		"legacySongID": 2087,
 		"searchTerms": [
-			"morimori atsushi"
+			"morimori atsushi",
+			"suddendeath"
 		],
 		"title": "SuddeИDeath"
 	},
@@ -30246,5 +30247,137 @@
 			"scifinder_niwashi"
 		],
 		"title": "Sci-Φ-nder"
+	},
+	{
+		"altTitles": [],
+		"artist": "テヅカ x 神楽坂ヨシキ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff8ff4df9cd",
+		"legacySongID": 2542,
+		"searchTerms": [
+			"lr_tedukakagurazaka"
+		],
+		"title": "LR"
+	},
+	{
+		"altTitles": [],
+		"artist": "K-forest vs. Reku Mochizuki vs. DRIVE.",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff995925302",
+		"legacySongID": 2547,
+		"searchTerms": [
+			"trinityvurst_kforest"
+		],
+		"title": "Trinity ∇urst"
+	},
+	{
+		"altTitles": [],
+		"artist": "iru",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff999e7aff7",
+		"legacySongID": 2548,
+		"searchTerms": [
+			"kodomogokoro_iru"
+		],
+		"title": "こどもごころのアドベンチャー"
+	},
+	{
+		"altTitles": [],
+		"artist": "lapin 5",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff9a07f6fc9",
+		"legacySongID": 2543,
+		"searchTerms": [
+			"arigatouno_lapin5"
+		],
+		"title": "ありがとうのマホウ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Hommarju",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff9e6a0f4e0",
+		"legacySongID": 2546,
+		"searchTerms": [
+			"no1_hommarju"
+		],
+		"title": "No.1"
+	},
+	{
+		"altTitles": [
+			"Quetzalc麌retl"
+		],
+		"artist": "Tatsunoshin x Juggernaut.",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff9ef437ddf",
+		"legacySongID": 2549,
+		"searchTerms": [
+			"quetzalcoretl_tatsujugger"
+		],
+		"title": "Quetzalcóretl"
+	},
+	{
+		"altTitles": [],
+		"artist": "hololive IDOL PROJECT",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff9f18247db",
+		"legacySongID": 2545,
+		"searchTerms": [
+			"gimmegimmeent_holodreams"
+		],
+		"title": "ギミギミエンターテイメント"
+	},
+	{
+		"altTitles": [],
+		"artist": "EYEN(seatrus+kuro)",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cff9fc945c17",
+		"legacySongID": 2544,
+		"searchTerms": [
+			"diliucurum_seatruskuro"
+		],
+		"title": "dilucurum"
+	},
+	{
+		"altTitles": [],
+		"artist": "U-ske feat. 駄々子",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cffab79021e2",
+		"legacySongID": 2550,
+		"searchTerms": [
+			"victim_uske"
+		],
+		"title": "VICTIM"
+	},
+	{
+		"altTitles": [],
+		"artist": "立秋 feat.ちょこ",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a11195cffae8912107",
+		"legacySongID": 2551,
+		"searchTerms": [
+			"bo_risshu"
+		],
+		"title": "ボ"
 	}
 ]
