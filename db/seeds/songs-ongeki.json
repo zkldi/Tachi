@@ -4,7 +4,8 @@
 		"artist": "supercell 「化物語」",
 		"data": {
 			"duration": 111.296,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kimi no Shiranai Monogatari"
 		},
 		"id": "S19d35e0fea2b80b07b0",
 		"legacySongID": 1,
@@ -19,7 +20,8 @@
 		"artist": "UNISON SQUARE GARDEN",
 		"data": {
 			"duration": 151.186,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Sugar Song to Bitter Step"
 		},
 		"id": "S19d35e0fea3634aa6b6",
 		"legacySongID": 2,
@@ -34,7 +36,8 @@
 		"artist": "歌組雪月花 夜々(原田 ひとみ)/いろり(茅野 愛衣)/小紫(小倉 唯) 「機巧少女は傷つかない」",
 		"data": {
 			"duration": 141.375,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Maware! Setsugetsuka"
 		},
 		"id": "S19d35e0fea4a8038ea4",
 		"legacySongID": 3,
@@ -48,7 +51,8 @@
 		"artist": "どうぶつビスケッツ×PPP「けものフレンズ」",
 		"data": {
 			"duration": 151.765,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Youkoso Japari Park e"
 		},
 		"id": "S19d35e0fea58115aa04",
 		"legacySongID": 4,
@@ -62,7 +66,8 @@
 		"artist": "新庄 かなえ(CV:三森 すずこ) 「てーきゅう」",
 		"data": {
 			"duration": 150.938,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Fattoshite Tougenkyou"
 		},
 		"id": "S19d35e0fea62ec58d71",
 		"legacySongID": 5,
@@ -76,7 +81,8 @@
 		"artist": "土間うまる [CV.田中あいみ]「干物妹！うまるちゃん」",
 		"data": {
 			"duration": 132.324,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kakushinteki Metamaruphose!"
 		},
 		"id": "S19d35e0fea73cf547e8",
 		"legacySongID": 6,
@@ -138,7 +144,8 @@
 		"artist": "Lia「AIR」",
 		"data": {
 			"duration": 171.67,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tori no Uta"
 		},
 		"id": "S19d35e0feac419a6e98",
 		"legacySongID": 11,
@@ -164,7 +171,8 @@
 		"artist": "Poppin’Party「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 107,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tokimeki Experience!"
 		},
 		"id": "S19d35e0feae50537d28",
 		"legacySongID": 13,
@@ -190,7 +198,8 @@
 		"artist": "Pastel＊Palettes「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 101.932,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Shuwarin Dreamin'"
 		},
 		"id": "S19d35e0feb0f59a87dc",
 		"legacySongID": 15,
@@ -216,7 +225,8 @@
 		"artist": "ハロー、ハッピーワールド！「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 101.957,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Egao no Orchestra!"
 		},
 		"id": "S19d35e0feb2fc2ed2dd",
 		"legacySongID": 17,
@@ -230,7 +240,8 @@
 		"artist": "れるりり",
 		"data": {
 			"duration": 154.645,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Noushou Sakuretsu Girl"
 		},
 		"id": "S19d35e0feb314518a84",
 		"legacySongID": 18,
@@ -244,7 +255,8 @@
 		"artist": "164",
 		"data": {
 			"duration": 130.5,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Amanojaku"
 		},
 		"id": "S19d35e0feb4f01c0d6a",
 		"legacySongID": 19,
@@ -258,7 +270,8 @@
 		"artist": "ギガ/れをる",
 		"data": {
 			"duration": 144.171,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Okochama Sensou"
 		},
 		"id": "S19d35e0feb52a3b2df9",
 		"legacySongID": 20,
@@ -272,7 +285,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 144.615,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Rokuchounen to Ichiya Monogatari"
 		},
 		"id": "S19d35e0feb6c12f3087",
 		"legacySongID": 21,
@@ -287,7 +301,8 @@
 		"artist": "黒うさP",
 		"data": {
 			"duration": 155.844,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Senbonzakura"
 		},
 		"id": "S19d35e0feb70abadf3a",
 		"legacySongID": 22,
@@ -302,7 +317,8 @@
 		"artist": "Orangestar",
 		"data": {
 			"duration": 123.204,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kimi no Yozora Shoukaihan"
 		},
 		"id": "S19d35e0feb813f64943",
 		"legacySongID": 23,
@@ -316,7 +332,8 @@
 		"artist": "hanzo/赤飯歌唱Ver",
 		"data": {
 			"duration": 149.2,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kibori Namazu to Migikata Zombie"
 		},
 		"id": "S19d35e0feb9206a5320",
 		"legacySongID": 24,
@@ -330,7 +347,8 @@
 		"artist": "じーざすP（ワンダフル☆オポチュニティ！）",
 		"data": {
 			"duration": 143.703,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Oni KYOKAN"
 		},
 		"id": "S19d35e0febaee6f3bd7",
 		"legacySongID": 25,
@@ -346,7 +364,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 142.377,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Bokura no 16bit Warz"
 		},
 		"id": "S19d35e0febbe65380ad",
 		"legacySongID": 26,
@@ -360,7 +379,8 @@
 		"artist": "Storyteller",
 		"data": {
 			"duration": 159.75,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hatsune Miku no Gekishou"
 		},
 		"id": "S19d35e0febc167fa91d",
 		"legacySongID": 27,
@@ -376,7 +396,8 @@
 		"artist": "GigaReol",
 		"data": {
 			"duration": 157.929,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hibikase"
 		},
 		"id": "S19d35e0febd7bb8a378",
 		"legacySongID": 28,
@@ -390,7 +411,8 @@
 		"artist": "Omoi feat. 初音ミク",
 		"data": {
 			"duration": 153.45,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Greenlights Serenade"
 		},
 		"id": "S19d35e0febefd11ddb2",
 		"legacySongID": 29,
@@ -404,7 +426,8 @@
 		"artist": "ハチ",
 		"data": {
 			"duration": 126.176,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Suna no Wakusei"
 		},
 		"id": "S19d35e0febfdf7dd2dd",
 		"legacySongID": 30,
@@ -420,7 +443,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 151,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ghost Rule"
 		},
 		"id": "S19d35e0fec05f847f11",
 		"legacySongID": 31,
@@ -434,7 +458,8 @@
 		"artist": "日向電工",
 		"data": {
 			"duration": 133.256,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Buriki no Dance"
 		},
 		"id": "S19d35e0fec1e7f3c69d",
 		"legacySongID": 32,
@@ -460,7 +485,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 113.333,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Night of Knights"
 		},
 		"id": "S19d35e0fec322fd393e",
 		"legacySongID": 34,
@@ -487,7 +513,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 141.522,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Gensou no Satellite"
 		},
 		"id": "S19d35e0fec54cae49d5",
 		"legacySongID": 36,
@@ -501,7 +528,8 @@
 		"artist": "激戦の人",
 		"data": {
 			"duration": 139.251,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Energy Booster ~ Shanghai Kouchakan"
 		},
 		"id": "S19d35e0fec66d7fa8db",
 		"legacySongID": 37,
@@ -515,7 +543,8 @@
 		"artist": "森羅万象",
 		"data": {
 			"duration": 135.947,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Aqua Terrarium"
 		},
 		"id": "S19d35e0fec7918fa5b5",
 		"legacySongID": 38,
@@ -529,7 +558,8 @@
 		"artist": "koutaq",
 		"data": {
 			"duration": 149.333,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Yojigen Chouyaku Kikan"
 		},
 		"id": "S19d35e0fec8b1cbb266",
 		"legacySongID": 39,
@@ -543,7 +573,8 @@
 		"artist": "ふぉれすとぴれお",
 		"data": {
 			"duration": 143.591,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Remilia Destiny"
 		},
 		"id": "S19d35e0fec9b31b5999",
 		"legacySongID": 40,
@@ -581,7 +612,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 135,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Saishuu Kichiku Imouto Flandre S"
 		},
 		"id": "S19d35e0fecc8ecda5bc",
 		"legacySongID": 43,
@@ -598,7 +630,8 @@
 		"artist": "真宮寺さくら（横山智佐）＆帝国歌劇団「サクラ大戦」",
 		"data": {
 			"duration": 159.467,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Geki! Teikoku Kagekidan"
 		},
 		"id": "S19d35e0fecdbae5e452",
 		"legacySongID": 44,
@@ -650,7 +683,8 @@
 		"artist": "loos feat. 柊莉杏",
 		"data": {
 			"duration": 137.143,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Omoiyoshino"
 		},
 		"id": "S19d35e0fed110db15ab",
 		"legacySongID": 48,
@@ -664,7 +698,8 @@
 		"artist": "TJ.hangneil",
 		"data": {
 			"duration": 151.571,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Kamui"
 		},
 		"id": "S19d35e0fed2c4e13495",
 		"legacySongID": 49,
@@ -690,7 +725,8 @@
 		"artist": "片霧烈火オンザみんマンション",
 		"data": {
 			"duration": 153.409,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "GO!GO! Love Rhythm"
 		},
 		"id": "S19d35e0fed4c13c43d8",
 		"legacySongID": 51,
@@ -717,7 +753,8 @@
 		"artist": "Orangestar",
 		"data": {
 			"duration": 153,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Shinshou Shinkirou"
 		},
 		"id": "S19d35e0fed6c19ab8bb",
 		"legacySongID": 53,
@@ -755,7 +792,8 @@
 		"artist": "削除",
 		"data": {
 			"duration": 140.129,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Amenohoakari"
 		},
 		"id": "S19d35e0fed9b854ac64",
 		"legacySongID": 56,
@@ -841,7 +879,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 141,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Senkou no Brionac"
 		},
 		"id": "S19d35e0fee05d01705d",
 		"legacySongID": 63,
@@ -880,7 +919,8 @@
 		"artist": "あべにゅうぷろじぇくと feat.佐倉 紗織　produced by ave;new",
 		"data": {
 			"duration": 142.991,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Ima Zo Agame Tatematsure Omaerayo!! ~Hime no Himetal Katsubou~"
 		},
 		"id": "S19d35e0fee3a61a4735",
 		"legacySongID": 66,
@@ -906,7 +946,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 170.895,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "End Mark ni Kibou to Namida o Soete"
 		},
 		"id": "S19d35e0fee585e843d0",
 		"legacySongID": 68,
@@ -945,7 +986,8 @@
 		"artist": "曲：ヒゲドライバー／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 156,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Minna Happy!!"
 		},
 		"id": "S19d35e0fee84a89fe44",
 		"legacySongID": 71,
@@ -996,7 +1038,8 @@
 		"data": {
 			"duration": 157.44,
 			"flavorGenre": "モンスターJKロック",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "P!P!P!P! Gaoh!!"
 		},
 		"id": "S19d35e0feece524cdbf",
 		"legacySongID": 75,
@@ -1010,7 +1053,8 @@
 		"artist": "曲：鯨井国家／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 126.167,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Tatemae to Honshin no Dairantou"
 		},
 		"id": "S19d35e0feedbb4cb10f",
 		"legacySongID": 76,
@@ -1037,7 +1081,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 133.68,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Rockin' Pink Monster"
 		},
 		"id": "S19d35e0feef64eced33",
 		"legacySongID": 78,
@@ -1052,7 +1097,8 @@
 		"data": {
 			"duration": 149.813,
 			"flavorGenre": "NEOEDOBTZ",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Butsumetsu Beaters"
 		},
 		"id": "S19d35e0fef02e5b45eb",
 		"legacySongID": 79,
@@ -1205,7 +1251,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 146.601,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kamisama Nejimaki"
 		},
 		"id": "S19d35e0fefce26859ad",
 		"legacySongID": 91,
@@ -1219,7 +1266,8 @@
 		"artist": "みきとP",
 		"data": {
 			"duration": 152.069,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Yi-er Fun Club"
 		},
 		"id": "S19d35e0fefd731fa394",
 		"legacySongID": 92,
@@ -1233,7 +1281,8 @@
 		"artist": "うたたP",
 		"data": {
 			"duration": 149.155,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Shiawase ni Nareru Kakushi Command ga Arurashii"
 		},
 		"id": "S19d35e0fefe096b55ba",
 		"legacySongID": 93,
@@ -1249,7 +1298,8 @@
 		"artist": "和田たけあき(くらげP)",
 		"data": {
 			"duration": 150.409,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Chururira Chururira Daddadda!"
 		},
 		"id": "S19d35e0feff9d2c9ffe",
 		"legacySongID": 94,
@@ -1275,7 +1325,8 @@
 		"artist": "アクア（CV：雨宮天）「この素晴らしい世界に祝福を！2」",
 		"data": {
 			"duration": 115.304,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Watashi Ondo"
 		},
 		"id": "S19d35e0ff01f4f757db",
 		"legacySongID": 96,
@@ -1289,7 +1340,8 @@
 		"artist": "ダクネス（CV：茅野愛衣）「この素晴らしい世界に祝福を！2」",
 		"data": {
 			"duration": 122.663,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tsuresatte Tojikomete Suki ni Shite"
 		},
 		"id": "S19d35e0ff026f5d61eb",
 		"legacySongID": 97,
@@ -1328,7 +1380,8 @@
 		"artist": "幽閉サテライト",
 		"data": {
 			"duration": 129.205,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Tsuki ni Murakumo Hana ni Kaze"
 		},
 		"id": "S19d35e0ff051c35654c",
 		"legacySongID": 100,
@@ -1354,7 +1407,8 @@
 		"artist": "Afterglow「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 110.506,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hey-day Capriccio"
 		},
 		"id": "S19d35e0ff071d11e269",
 		"legacySongID": 102,
@@ -1368,7 +1422,8 @@
 		"artist": "Pastel＊Palettes「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 105.093,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Yura Yura Ring-Dong-Dance"
 		},
 		"id": "S19d35e0ff08b0d305f1",
 		"legacySongID": 103,
@@ -1394,7 +1449,8 @@
 		"artist": "ハロー、ハッピーワールド！「バンドリ！ ガールズバンドパーティ！」",
 		"data": {
 			"duration": 102.837,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Goka! Gokai!? Phantom Thief!"
 		},
 		"id": "S19d35e0ff0a7ae2d8d5",
 		"legacySongID": 105,
@@ -1408,7 +1464,8 @@
 		"artist": "光吉猛修",
 		"data": {
 			"duration": 150.326,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Ikazuchi"
 		},
 		"id": "S19d35e0ff0b0ad5e392",
 		"legacySongID": 106,
@@ -1422,7 +1479,8 @@
 		"artist": "穴山大輔",
 		"data": {
 			"duration": 151.75,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Konton o Koeshi Warera ga Shinseinaru Chouritsunushi o Tataeyo"
 		},
 		"id": "S19d35e0ff0c357bed77",
 		"legacySongID": 107,
@@ -1475,7 +1533,8 @@
 		"artist": "本間芽衣子(茅野愛衣)、安城鳴子(戸松遥)、鶴見知利子(早見沙織)「あの日見た花の名前を僕達はまだ知らない。」",
 		"data": {
 			"duration": 146.866,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Secret Base ~Kimi ga Kuretamono~ (10 years after ver.)"
 		},
 		"id": "S19d35e0ff10ccd1039c",
 		"legacySongID": 111,
@@ -1549,7 +1608,8 @@
 		"artist": "ふわりP",
 		"data": {
 			"duration": 178.977,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kokoro Koko kara"
 		},
 		"id": "S19d35e0ff1605cef089",
 		"legacySongID": 117,
@@ -1563,7 +1623,8 @@
 		"artist": "lumo",
 		"data": {
 			"duration": 165,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Robot Planet Utopia"
 		},
 		"id": "S19d35e0ff172b183891",
 		"legacySongID": 118,
@@ -1577,7 +1638,8 @@
 		"artist": "40mP feat.シャノ",
 		"data": {
 			"duration": 154.08,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Toki no Boukensha"
 		},
 		"id": "S19d35e0ff18ffe4e826",
 		"legacySongID": 119,
@@ -1615,7 +1677,8 @@
 		"artist": "藍井エイル",
 		"data": {
 			"duration": 117.902,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ryuusei"
 		},
 		"id": "S19d35e0ff1b2e098367",
 		"legacySongID": 122,
@@ -1641,7 +1704,8 @@
 		"artist": "御坂美琴（佐藤利奈）「とある科学の超電磁砲」",
 		"data": {
 			"duration": 138.333,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Girly Days"
 		},
 		"id": "S19d35e0ff1db8414c04",
 		"legacySongID": 124,
@@ -1655,7 +1719,8 @@
 		"artist": "白井黒子（新井里美）「とある科学の超電磁砲」",
 		"data": {
 			"duration": 159.002,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Desuno! White & Black"
 		},
 		"id": "S19d35e0ff1e94dcbd80",
 		"legacySongID": 125,
@@ -1669,7 +1734,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 139.2,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hibana"
 		},
 		"id": "S19d35e0ff1f2c142d2e",
 		"legacySongID": 126,
@@ -1683,7 +1749,8 @@
 		"artist": "みきとP",
 		"data": {
 			"duration": 149.6,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Roki"
 		},
 		"id": "S19d35e0ff209d6e2f3b",
 		"legacySongID": 127,
@@ -1697,7 +1764,8 @@
 		"artist": "奏音69×巡音ルカ",
 		"data": {
 			"duration": 158.376,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Queen of Heart"
 		},
 		"id": "S19d35e0ff21a6729f87",
 		"legacySongID": 128,
@@ -1785,7 +1853,8 @@
 		"artist": "初春飾利（豊崎愛生）＆佐天涙子（伊藤かな恵）「とある科学の超電磁砲」",
 		"data": {
 			"duration": 135.857,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kanpeki Will"
 		},
 		"id": "S19d35e0ff28a0cb41f0",
 		"legacySongID": 135,
@@ -1799,7 +1868,8 @@
 		"artist": "wowaka",
 		"data": {
 			"duration": 119.561,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Unhappy Refrain"
 		},
 		"id": "S19d35e0ff294c90292a",
 		"legacySongID": 136,
@@ -1825,7 +1895,8 @@
 		"artist": "曲：eba／歌：⊿TRiEDGE [高瀬 梨緒(CV：久保 ユリカ)、結城 莉玖(CV：朝日奈 丸佳)、藍原 椿(CV：橋本 ちなみ)]",
 		"data": {
 			"duration": 143.505,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Honnouteki Survivor"
 		},
 		"id": "S19d35e0ff2bc78a0ec7",
 		"legacySongID": 138,
@@ -1851,7 +1922,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 142.25,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hatsune Miku no Shoushitsu"
 		},
 		"id": "S19d35e0ff2ded8cb7a7",
 		"legacySongID": 140,
@@ -1866,7 +1938,8 @@
 		"artist": "iroha(sasaki)／kuma(alfred)",
 		"data": {
 			"duration": 151.636,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Roshin Yuukai"
 		},
 		"id": "S19d35e0ff2efb97dc33",
 		"legacySongID": 141,
@@ -1881,7 +1954,8 @@
 		"artist": "otetsu",
 		"data": {
 			"duration": 145.375,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hoshikuzu Utopia"
 		},
 		"id": "S19d35e0ff2fd44d4c35",
 		"legacySongID": 142,
@@ -1907,7 +1981,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 122.1,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "*Hello, Planet."
 		},
 		"id": "S19d35e0ff311d5a913b",
 		"legacySongID": 144,
@@ -1921,7 +1996,8 @@
 		"artist": "40mP",
 		"data": {
 			"duration": 157.353,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Karakuri Pierrot"
 		},
 		"id": "S19d35e0ff3274c13133",
 		"legacySongID": 145,
@@ -1996,7 +2072,8 @@
 		"artist": "曲：MOSAIC.WAV／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 146.604,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "ONGEKI Zen'iki Akane-sama?"
 		},
 		"id": "S19d35e0ff384bda005d",
 		"legacySongID": 151,
@@ -2010,7 +2087,8 @@
 		"artist": "光吉猛修",
 		"data": {
 			"duration": 92.1,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Ikazuchi~Mitsuyoshi Takenobu Ichibu Nazo~"
 		},
 		"id": "S19d35e0ff3914c505e5",
 		"legacySongID": 152,
@@ -2037,7 +2115,8 @@
 		"artist": "Wake Up, Girls！",
 		"data": {
 			"duration": 144.755,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gokujou Smile"
 		},
 		"id": "S19d35e0ff3b6f6aa0b1",
 		"legacySongID": 154,
@@ -2075,7 +2154,8 @@
 		"artist": "池頼広「Shadowverse」",
 		"data": {
 			"duration": 139.116,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Arisa no Thema"
 		},
 		"id": "S19d35e0ff3e6586377a",
 		"legacySongID": 157,
@@ -2101,7 +2181,8 @@
 		"artist": "高宮なすの(CV:鳴海杏子)「てーきゅう」",
 		"data": {
 			"duration": 158.182,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Menimeni Manimani"
 		},
 		"id": "S19d35e0ff4001b83c3c",
 		"legacySongID": 159,
@@ -2115,7 +2196,8 @@
 		"artist": "パトリシア・オブ・エンド(CV:高森奈津美)・黒木未知(CV:仙台エリ)・夕莉シャチ(CV:浅川悠)・明日原ユウキ(CV:種﨑敦美)「ノラと皇女と野良猫ハート」",
 		"data": {
 			"duration": 140.44,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ne! Ko!"
 		},
 		"id": "S19d35e0ff41354afeb1",
 		"legacySongID": 160,
@@ -2129,7 +2211,8 @@
 		"artist": "バルーン",
 		"data": {
 			"duration": 138.207,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Charles"
 		},
 		"id": "S19d35e0ff42ab592530",
 		"legacySongID": 161,
@@ -2143,7 +2226,8 @@
 		"artist": "少女病",
 		"data": {
 			"duration": 164.198,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Owari no Saki no Syllable"
 		},
 		"id": "S19d35e0ff4323bbb825",
 		"legacySongID": 162,
@@ -2157,7 +2241,8 @@
 		"artist": "SYNC.ART'S feat.美里",
 		"data": {
 			"duration": 145.742,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Epikouros no Niji wa Mou Mienai"
 		},
 		"id": "S19d35e0ff44d0f17de0",
 		"legacySongID": 163,
@@ -2183,7 +2268,8 @@
 		"artist": "曲：前山田健一／歌：7EVENDAYS⇔HOLIDAYS [井之原 小星(CV：ももの はるな)、柏木 咲姫(CV：石見 舞菜香)]",
 		"data": {
 			"duration": 154.615,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Mendooi! Yahhooi! Tomodachi!"
 		},
 		"id": "S19d35e0ff46bf0c24ba",
 		"legacySongID": 165,
@@ -2211,7 +2297,8 @@
 		"data": {
 			"duration": 149.848,
 			"flavorGenre": "Life",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kokoro"
 		},
 		"id": "S19d35e0ff4813932b2a",
 		"legacySongID": 167,
@@ -2226,7 +2313,8 @@
 		"artist": "sumijun(Halozy) feat. ななひら(Confetto)",
 		"data": {
 			"duration": 127.839,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Shinchoku Dou Desu ka?"
 		},
 		"id": "S19d35e0ff49fdee8f3e",
 		"legacySongID": 168,
@@ -2240,7 +2328,8 @@
 		"artist": "石鹸屋",
 		"data": {
 			"duration": 147.879,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Touhou Youyoumu ~the maximum moving about~"
 		},
 		"id": "S19d35e0ff4a1b701755",
 		"legacySongID": 169,
@@ -2254,7 +2343,8 @@
 		"artist": "あ～るの～と（いえろ～ぜぶら）",
 		"data": {
 			"duration": 135.273,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kansouou"
 		},
 		"id": "S19d35e0ff4b37fc553d",
 		"legacySongID": 170,
@@ -2268,7 +2358,8 @@
 		"artist": "片霧烈火＆橋本鏡也",
 		"data": {
 			"duration": 149.25,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Youko Sengakuto"
 		},
 		"id": "S19d35e0ff4c5f222e05",
 		"legacySongID": 171,
@@ -2306,7 +2397,8 @@
 		"artist": "IOSYS",
 		"data": {
 			"duration": 140.333,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Sakura Musubi"
 		},
 		"id": "S19d35e0ff4f68735003",
 		"legacySongID": 174,
@@ -2381,7 +2473,8 @@
 		"artist": "曲：村井大／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 145.263,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Doubutsu Paradise"
 		},
 		"id": "S19d35e0ff55c133e1d8",
 		"legacySongID": 180,
@@ -2396,7 +2489,8 @@
 		"artist": "曲：烏屋茶房／歌：R.B.P. [九條 楓(CV：佳村 はるか)、逢坂 茜(CV：大空 直美)、珠洲島 有栖(CV：長縄 まりあ)]",
 		"data": {
 			"duration": 151.613,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Y.Y.Y. Keikaku!!!!"
 		},
 		"id": "S19d35e0ff566c33ca1a",
 		"legacySongID": 181,
@@ -2470,7 +2564,8 @@
 		"artist": "supercell",
 		"data": {
 			"duration": 160.941,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Melt"
 		},
 		"id": "S19d35e0ff5c5cf06176",
 		"legacySongID": 187,
@@ -2533,7 +2628,8 @@
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat.miko",
 		"data": {
 			"duration": 128.815,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Cirno no Perfect Sansuu Kyoushitsu"
 		},
 		"id": "S19d35e0ff61aa0d492b",
 		"legacySongID": 192,
@@ -2578,7 +2674,8 @@
 		"artist": "ハチ",
 		"data": {
 			"duration": 140.238,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Donut Hole"
 		},
 		"id": "S19d35e0ff649ab7b96d",
 		"legacySongID": 195,
@@ -2592,7 +2689,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 153.15,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Jinsei Reset Button"
 		},
 		"id": "S19d35e0ff65b257ba21",
 		"legacySongID": 196,
@@ -2607,7 +2705,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 145.99,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Mousou Kanshou Daishou Renmei"
 		},
 		"id": "S19d35e0ff660043f249",
 		"legacySongID": 197,
@@ -2623,7 +2722,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 146.842,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kousen Tuning"
 		},
 		"id": "S19d35e0ff67c2470e14",
 		"legacySongID": 198,
@@ -2638,7 +2738,8 @@
 		"artist": "フランシュシュ「ゾンビランドサガ」",
 		"data": {
 			"duration": 159.767,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Adabana Necromancy"
 		},
 		"id": "S19d35e0ff68064a216f",
 		"legacySongID": 199,
@@ -2724,7 +2825,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 151.579,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dance Robot Dance"
 		},
 		"id": "S19d35e0ff6fbeecdb73",
 		"legacySongID": 206,
@@ -2738,7 +2840,8 @@
 		"artist": "ギガ",
 		"data": {
 			"duration": 135.158,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Gigantic O.T.N"
 		},
 		"id": "S19d35e0ff709c836950",
 		"legacySongID": 207,
@@ -2752,7 +2855,8 @@
 		"artist": "Orangestar feat.初音ミク",
 		"data": {
 			"duration": 153.488,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kaisei"
 		},
 		"id": "S19d35e0ff717e4db799",
 		"legacySongID": 208,
@@ -2766,7 +2870,8 @@
 		"artist": "じん",
 		"data": {
 			"duration": 147.892,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Summertime Record"
 		},
 		"id": "S19d35e0ff7276096bf7",
 		"legacySongID": 209,
@@ -2780,7 +2885,8 @@
 		"artist": "和田たけあき",
 		"data": {
 			"duration": 162.829,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Bless Your Breath"
 		},
 		"id": "S19d35e0ff73c736f25a",
 		"legacySongID": 210,
@@ -2806,7 +2912,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 131.55,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "SadoMamiHolic"
 		},
 		"id": "S19d35e0ff75b65e5b9d",
 		"legacySongID": 212,
@@ -2820,7 +2927,8 @@
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat.miko",
 		"data": {
 			"duration": 133.5,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kanbu de Tomatte Sugu Tokeru ~ Kyouki no Udongein"
 		},
 		"id": "S19d35e0ff7688303ba3",
 		"legacySongID": 213,
@@ -2846,7 +2954,8 @@
 		"artist": "曲：村カワ基成／歌：オンゲキシューターズ",
 		"data": {
 			"duration": 159.769,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Saikyou the Summertime!!!!!"
 		},
 		"id": "S19d35e0ff7849725b75",
 		"legacySongID": 215,
@@ -2861,7 +2970,8 @@
 		"data": {
 			"duration": 159.783,
 			"flavorGenre": "OTAKU HAPPYCORE",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Massugu Stream!"
 		},
 		"id": "S19d35e0ff7973571396",
 		"legacySongID": 216,
@@ -2900,7 +3010,8 @@
 		"artist": "曲：やしきん／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 145.946,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Toridori Morimori! Lovely Fruits"
 		},
 		"id": "S19d35e0ff7c925b25da",
 		"legacySongID": 219,
@@ -2927,7 +3038,8 @@
 		"artist": "曲：DJ Genki／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 142.927,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Yoake no String"
 		},
 		"id": "S19d35e0ff7ebca4b770",
 		"legacySongID": 221,
@@ -2953,7 +3065,8 @@
 		"artist": "並木 学「怒首領蜂大往生」",
 		"data": {
 			"duration": 101.156,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Hibachi"
 		},
 		"id": "S19d35e0ff8033a053b3",
 		"legacySongID": 223,
@@ -2968,7 +3081,8 @@
 		"artist": "DOLLS「プロジェクト東京ドールズ」",
 		"data": {
 			"duration": 115.593,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Eien Memory"
 		},
 		"id": "S19d35e0ff814205ad90",
 		"legacySongID": 224,
@@ -2982,7 +3096,8 @@
 		"artist": "スタァライト九九組「少女☆歌劇 レヴュースタァライト」",
 		"data": {
 			"duration": 103.04,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hoshi no Dialogue"
 		},
 		"id": "S19d35e0ff8212836943",
 		"legacySongID": 225,
@@ -3008,7 +3123,8 @@
 		"artist": "アズマ リム",
 		"data": {
 			"duration": 157.8,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Jinruimina Senpai!"
 		},
 		"id": "S19d35e0ff84369f9578",
 		"legacySongID": 227,
@@ -3022,7 +3138,8 @@
 		"artist": "YuNi",
 		"data": {
 			"duration": 134.571,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Toumei Seisai"
 		},
 		"id": "S19d35e0ff853b9ae9a8",
 		"legacySongID": 228,
@@ -3036,7 +3153,8 @@
 		"artist": "あまね＋ビートまりお(COOL＆CREATE)",
 		"data": {
 			"duration": 110.211,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Usatei"
 		},
 		"id": "S19d35e0ff86e6a0a889",
 		"legacySongID": 229,
@@ -3050,7 +3168,8 @@
 		"artist": "森羅万象",
 		"data": {
 			"duration": 157.777,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Zenryoku Happy Life"
 		},
 		"id": "S19d35e0ff8737442091",
 		"legacySongID": 230,
@@ -3064,7 +3183,8 @@
 		"artist": "幽閉サテライト",
 		"data": {
 			"duration": 150.677,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Replica no Koi"
 		},
 		"id": "S19d35e0ff88ce984246",
 		"legacySongID": 231,
@@ -3090,7 +3210,8 @@
 		"artist": "SYNC.ART'S feat. 3L",
 		"data": {
 			"duration": 129.882,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Gin no Meguri"
 		},
 		"id": "S19d35e0ff8ad38ca12c",
 		"legacySongID": 233,
@@ -3104,7 +3225,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 133.75,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Invisible"
 		},
 		"id": "S19d35e0ff8b306bf52d",
 		"legacySongID": 234,
@@ -3119,7 +3241,8 @@
 		"data": {
 			"duration": 150.216,
 			"flavorGenre": "High Touch! SKA-ROCK",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "MAKING! High Touch!"
 		},
 		"id": "S19d35e0ff8c08f98fff",
 		"legacySongID": 235,
@@ -3146,7 +3269,8 @@
 		"artist": "草津結衣奈(CV:高田憂希)、尖石内湾(CV:安齋由香里)「温泉むすめ」",
 		"data": {
 			"duration": 164.889,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Mirai no Kanata"
 		},
 		"id": "S19d35e0ff8ec21a85fc",
 		"legacySongID": 237,
@@ -3160,7 +3284,8 @@
 		"artist": "SPRiNGS「温泉むすめ」",
 		"data": {
 			"duration": 135.375,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Seishun Cider"
 		},
 		"id": "S19d35e0ff8f384a87d9",
 		"legacySongID": 238,
@@ -3199,7 +3324,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 151,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Suisei Honeymoon"
 		},
 		"id": "S19d35e0ff92bfc27eaf",
 		"legacySongID": 241,
@@ -3213,7 +3339,8 @@
 		"artist": "バルーン",
 		"data": {
 			"duration": 147,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Mabel (self cover)"
 		},
 		"id": "S19d35e0ff93be0d3c22",
 		"legacySongID": 242,
@@ -3227,7 +3354,8 @@
 		"artist": "ビートまりお × Cranky",
 		"data": {
 			"duration": 144.833,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Night of Knights (Cranky Remix)"
 		},
 		"id": "S19d35e0ff94bebf2d84",
 		"legacySongID": 243,
@@ -3242,7 +3370,8 @@
 		"artist": "曲：中山真斗／歌：マーチングポケッツ [日向 千夏(CV：岡咲 美保)、柏木 美亜(CV：和氣 あず未)、東雲 つむぎ(CV：和泉 風花)]",
 		"data": {
 			"duration": 152.381,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Pocket kara Nuritsubuse!"
 		},
 		"id": "S19d35e0ff95481683de",
 		"legacySongID": 244,
@@ -3307,7 +3436,8 @@
 		"artist": "777☆SISTERS「Tokyo 7th シスターズ」",
 		"data": {
 			"duration": 155.25,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Start Line"
 		},
 		"id": "S19d35e0ff9ada2c015d",
 		"legacySongID": 249,
@@ -3321,7 +3451,8 @@
 		"artist": "SiSH「Tokyo 7th シスターズ」",
 		"data": {
 			"duration": 160.714,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Onegai My Boy"
 		},
 		"id": "S19d35e0ff9b37da360e",
 		"legacySongID": 250,
@@ -3335,7 +3466,8 @@
 		"artist": "WITCH NUMBER 4「Tokyo 7th シスターズ」",
 		"data": {
 			"duration": 158.769,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hoshikuzu Seeker"
 		},
 		"id": "S19d35e0ff9c76baf606",
 		"legacySongID": 251,
@@ -3349,7 +3481,8 @@
 		"artist": "ナナホシ管弦楽団 ",
 		"data": {
 			"duration": 156.158,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "DeliHeal Yondara Kimi ga Kita"
 		},
 		"id": "S19d35e0ff9df72580b2",
 		"legacySongID": 252,
@@ -3363,7 +3496,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：AQUAシューターズ",
 		"data": {
 			"duration": 158.63,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kanjou Acceleration"
 		},
 		"id": "S19d35e0ff9e45766b51",
 		"legacySongID": 253,
@@ -3402,7 +3536,8 @@
 		"artist": "サンボンリボン「Tokyo 7th シスターズ」",
 		"data": {
 			"duration": 161.044,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Sekai no Himitsu"
 		},
 		"id": "S19d35e0ffa10ad2cbbd",
 		"legacySongID": 256,
@@ -3416,7 +3551,8 @@
 		"artist": "ヨルシカ",
 		"data": {
 			"duration": 136.286,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tada Kimi ni Hare"
 		},
 		"id": "S19d35e0ffa2479ba4c3",
 		"legacySongID": 257,
@@ -3430,7 +3566,8 @@
 		"artist": "wowaka",
 		"data": {
 			"duration": 123.208,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Uraomote Lovers"
 		},
 		"id": "S19d35e0ffa3f36aa359",
 		"legacySongID": 258,
@@ -3456,7 +3593,8 @@
 		"artist": "ぬゆり",
 		"data": {
 			"duration": 144,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Fixer"
 		},
 		"id": "S19d35e0ffa554ebbd1e",
 		"legacySongID": 260,
@@ -3470,7 +3608,8 @@
 		"artist": "ピノキオピー",
 		"data": {
 			"duration": 149.647,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kodomo no Shikumi"
 		},
 		"id": "S19d35e0ffa6357e7ee1",
 		"legacySongID": 261,
@@ -3484,7 +3623,8 @@
 		"artist": "Eve",
 		"data": {
 			"duration": 116.143,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Tokyo Ghetto"
 		},
 		"id": "S19d35e0ffa70e07abbc",
 		"legacySongID": 262,
@@ -3510,7 +3650,8 @@
 		"artist": "のぼる↑",
 		"data": {
 			"duration": 133.5,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Shiroi Yuki no Princess wa"
 		},
 		"id": "S19d35e0ffa9c8c57253",
 		"legacySongID": 264,
@@ -3536,7 +3677,8 @@
 		"artist": "[H.]",
 		"data": {
 			"duration": 111.678,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Jingle Bell"
 		},
 		"id": "S19d35e0ffabe4cbc5a1",
 		"legacySongID": 266,
@@ -3562,7 +3704,8 @@
 		"artist": "明坂 芹菜(CV:新田 恵海)＆小仏 凪(CV:佐倉 薫)",
 		"data": {
 			"duration": 143.103,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Lightspeed Days"
 		},
 		"id": "S19d35e0ffad5a25a99a",
 		"legacySongID": 268,
@@ -3576,7 +3719,8 @@
 		"artist": "箱部 なる(CV:M・A・O)",
 		"data": {
 			"duration": 144.656,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Neko Matsuri"
 		},
 		"id": "S19d35e0ffae4cbc739a",
 		"legacySongID": 269,
@@ -3626,7 +3770,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 151.533,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ai Kotoba III"
 		},
 		"id": "S19d35e0ffb2b25d0e3f",
 		"legacySongID": 273,
@@ -3640,7 +3785,8 @@
 		"artist": "Last Note.",
 		"data": {
 			"duration": 150.939,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Setsuna Trip"
 		},
 		"id": "S19d35e0ffb327fc4b17",
 		"legacySongID": 274,
@@ -3678,7 +3824,8 @@
 		"artist": "cosMo＠暴走P ver.Ø",
 		"data": {
 			"duration": 148.421,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Hitoribocchi Satellite"
 		},
 		"id": "S19d35e0ffb61f663f9c",
 		"legacySongID": 277,
@@ -3731,7 +3878,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 156.504,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Chikyuu Saigo no Kokuhaku o"
 		},
 		"id": "S19d35e0ffbaede97387",
 		"legacySongID": 281,
@@ -3757,7 +3905,8 @@
 		"artist": "SOUND HOLIC feat. Nana Takahashi",
 		"data": {
 			"duration": 138.857,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Shuwa Spa Daisakusen"
 		},
 		"id": "S19d35e0ffbcea0938cb",
 		"legacySongID": 283,
@@ -3819,7 +3968,8 @@
 		"artist": "ナナホシ管弦楽団 feat. 松下",
 		"data": {
 			"duration": 155,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "ONEgai Darlin'"
 		},
 		"id": "S19d35e0ffc1d3affa11",
 		"legacySongID": 288,
@@ -3845,7 +3995,8 @@
 		"artist": "やなぎなぎ「やはり俺の青春ラブコメはまちがっている。続」",
 		"data": {
 			"duration": 122.759,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Harumodoki"
 		},
 		"id": "S19d35e0ffc33a2706fa",
 		"legacySongID": 290,
@@ -3859,7 +4010,8 @@
 		"artist": "LOVE☆MAXガールズ「ゴシックは魔法乙女」",
 		"data": {
 			"duration": 158.211,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Watashitachi Mahou Otome Desu"
 		},
 		"id": "S19d35e0ffc4379f87b2",
 		"legacySongID": 291,
@@ -3873,7 +4025,8 @@
 		"artist": "米津玄師",
 		"data": {
 			"duration": 92.4,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Peace Sign"
 		},
 		"id": "S19d35e0ffc59263160d",
 		"legacySongID": 292,
@@ -3899,7 +4052,8 @@
 		"artist": "ヒャダイン「日常」",
 		"data": {
 			"duration": 135,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hyadain no Kakakata Kataomoi-C"
 		},
 		"id": "S19d35e0ffc70e896abc",
 		"legacySongID": 294,
@@ -3913,7 +4067,8 @@
 		"artist": "紗倉ひびき（CV:ファイルーズあい）＆街雄鳴造（CV:石川界人）「ダンベル何キロ持てる？」",
 		"data": {
 			"duration": 155.455,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Onegai Muscle"
 		},
 		"id": "S19d35e0ffc8456a7cc6",
 		"legacySongID": 295,
@@ -3927,7 +4082,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 157.164,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Otome Kaibou"
 		},
 		"id": "S19d35e0ffc9f55fecc4",
 		"legacySongID": 296,
@@ -3941,7 +4097,8 @@
 		"artist": "Eve",
 		"data": {
 			"duration": 130.067,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dramaturgy"
 		},
 		"id": "S19d35e0ffcae66f5321",
 		"legacySongID": 297,
@@ -3955,7 +4112,8 @@
 		"artist": "はるまきごはん feat.初音ミク",
 		"data": {
 			"duration": 146.124,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Melty Land Nightmare"
 		},
 		"id": "S19d35e0ffcb5b04d9c9",
 		"legacySongID": 298,
@@ -3969,7 +4127,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 132.923,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Shissou Ensemble"
 		},
 		"id": "S19d35e0ffcc5a6e3524",
 		"legacySongID": 299,
@@ -4045,7 +4204,8 @@
 		"artist": "内藤那津子「怒首領蜂大復活」",
 		"data": {
 			"duration": 137.619,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Dodonpachi Dai Ondo"
 		},
 		"id": "S19d35e0ffd23bea957d",
 		"legacySongID": 305,
@@ -4073,7 +4233,8 @@
 		"artist": "GYARI",
 		"data": {
 			"duration": 126.667,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Seyana. ~Nandemo Iu Koto o Kiite Kureru Akane-chan~"
 		},
 		"id": "S19d35e0ffd48f4a0dfc",
 		"legacySongID": 307,
@@ -4087,7 +4248,8 @@
 		"artist": "雪ノ下雪乃(CV：早見沙織)＆由比ヶ浜結衣(CV：東山奈央) 「やはり俺の青春ラブコメはまちがっている。続」",
 		"data": {
 			"duration": 113.766,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Everyday World"
 		},
 		"id": "S19d35e0ffd531f8b5df",
 		"legacySongID": 308,
@@ -4114,7 +4276,8 @@
 		"artist": "神樹ヶ峰女学園星守クラス「バトルガール ハイスクール」",
 		"data": {
 			"duration": 163.82,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hoshi no Kizuna"
 		},
 		"id": "S19d35e0ffd71ced5ef9",
 		"legacySongID": 310,
@@ -4140,7 +4303,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 148.755,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Android Girl"
 		},
 		"id": "S19d35e0ffd9a280ed2e",
 		"legacySongID": 312,
@@ -4154,7 +4318,8 @@
 		"artist": "和田たけあき(くらげP)",
 		"data": {
 			"duration": 128.615,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Cheche Check One-two!"
 		},
 		"id": "S19d35e0ffda3a250c28",
 		"legacySongID": 313,
@@ -4168,7 +4333,8 @@
 		"artist": "曲：Haggy Rock & 佐藤厚仁／歌：⊿TRiEDGE [高瀬 梨緒(CV：久保 ユリカ)、結城 莉玖(CV：朝日奈 丸佳)、藍原 椿(CV：橋本 ちなみ)]",
 		"data": {
 			"duration": 155.466,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Ryouran Otome Musougeki"
 		},
 		"id": "S19d35e0ffdb8ae1028e",
 		"legacySongID": 314,
@@ -4206,7 +4372,8 @@
 		"artist": "川田まみ「蒼の彼方のフォーリズム」",
 		"data": {
 			"duration": 160,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Contrail ~Kiseki~"
 		},
 		"id": "S19d35e0ffdeac03b8d6",
 		"legacySongID": 317,
@@ -4220,7 +4387,8 @@
 		"artist": "Halozy feat. ななひら",
 		"data": {
 			"duration": 129.144,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Monosugoi Kuruttoru Flan-chan ga Monosugoi Uta"
 		},
 		"id": "S19d35e0ffdffab520e3",
 		"legacySongID": 318,
@@ -4246,7 +4414,8 @@
 		"artist": "曲：齋藤大／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 166.612,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Pakupaku Girl"
 		},
 		"id": "S19d35e0ffe13d4745f5",
 		"legacySongID": 320,
@@ -4272,7 +4441,8 @@
 		"artist": "a_hisa",
 		"data": {
 			"duration": 149.333,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Amatsu Kami"
 		},
 		"id": "S19d35e0ffe3d223a92a",
 		"legacySongID": 322,
@@ -4286,7 +4456,8 @@
 		"artist": "Hiro",
 		"data": {
 			"duration": 109.459,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Sega Saturn Kidou On(H.)(Remix)"
 		},
 		"id": "S19d35e0ffe431b2de0e",
 		"legacySongID": 323,
@@ -4300,7 +4471,8 @@
 		"artist": "曲：篠崎あやと、橘亮祐／歌：マーチングポケッツ [日向 千夏(CV：岡咲 美保)、柏木 美亜(CV：和氣 あず未)、東雲 つむぎ(CV：和泉 風花)]",
 		"data": {
 			"duration": 142.125,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Susume! My Way!"
 		},
 		"id": "S19d35e0ffe55c5b36dd",
 		"legacySongID": 324,
@@ -4338,7 +4510,8 @@
 		"artist": "KiRaRe「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 120,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Happy Typhoon"
 		},
 		"id": "S19d35e0ffe848e3b22f",
 		"legacySongID": 327,
@@ -4412,7 +4585,8 @@
 		"artist": "田所あずさ「転生したらスライムだった件」",
 		"data": {
 			"duration": 159.167,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Little Soldier"
 		},
 		"id": "S19d35e0ffee9a480c54",
 		"legacySongID": 333,
@@ -4426,7 +4600,8 @@
 		"artist": "やしきん feat.でらっくま(CV:三森すずこ)",
 		"data": {
 			"duration": 153.034,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Delukkumaimai Tentekomai!"
 		},
 		"id": "S19d35e0ffef794b9d29",
 		"legacySongID": 334,
@@ -4453,7 +4628,8 @@
 		"artist": "曲：穴山大輔, 水野健治／歌：藤沢 柚子(CV：久保田 梨沙)、早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 178.729,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Natsuiro Hanabi"
 		},
 		"id": "S19d35e0fff1beb673b4",
 		"legacySongID": 336,
@@ -4479,7 +4655,8 @@
 		"artist": "wowaka",
 		"data": {
 			"duration": 136.926,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Unknown Mother Goose"
 		},
 		"id": "S19d35e0fff303542afb",
 		"legacySongID": 338,
@@ -4493,7 +4670,8 @@
 		"artist": "ろん×Junky",
 		"data": {
 			"duration": 143.151,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Sweet Magic"
 		},
 		"id": "S19d35e0fff4f18159d0",
 		"legacySongID": 339,
@@ -4507,7 +4685,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 142.934,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Choujou Maimain"
 		},
 		"id": "S19d35e0fff53e832380",
 		"legacySongID": 340,
@@ -4522,7 +4701,8 @@
 		"data": {
 			"duration": 165.472,
 			"flavorGenre": "KizunaEmotions",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kizuna wa Zutto Growing Up!!!"
 		},
 		"id": "S19d35e0fff61c202d89",
 		"legacySongID": 341,
@@ -4549,7 +4729,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 165.542,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Shinkai no Little Cry feat. Toki Asako"
 		},
 		"id": "S19d35e0fff8addb7407",
 		"legacySongID": 343,
@@ -4615,7 +4796,8 @@
 		"artist": "Innocent Key",
 		"data": {
 			"duration": 148,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Lunatic Red Eyes"
 		},
 		"id": "S19d35e0fffde29f34c3",
 		"legacySongID": 348,
@@ -4630,7 +4812,8 @@
 		"data": {
 			"duration": 172.941,
 			"flavorGenre": "FINALE",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Hanatachi ni Kibou o"
 		},
 		"id": "S19d35e0fffe37081685",
 		"legacySongID": 349,
@@ -4644,7 +4827,8 @@
 		"artist": "かめりあ feat. ななひら",
 		"data": {
 			"duration": 149.531,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Bassline Yatteru? w"
 		},
 		"id": "S19d35e0ffff84788513",
 		"legacySongID": 350,
@@ -4734,7 +4918,8 @@
 		"artist": "Eve",
 		"data": {
 			"duration": 144.935,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Nonsense Bungaku"
 		},
 		"id": "S19d35e1000679aa2bbd",
 		"legacySongID": 357,
@@ -4749,7 +4934,8 @@
 		"artist": "曲：Funta7／歌：星咲 あかり(CV：赤尾 ひかる)、日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 171.75,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Sun(Mile)Flower"
 		},
 		"id": "S19d35e10007d3d11b4a",
 		"legacySongID": 358,
@@ -4763,7 +4949,8 @@
 		"artist": "七森中☆ごらく部「ゆるゆり♪♪」",
 		"data": {
 			"duration": 91.366,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Yes! Yuyuyu YuruYuri"
 		},
 		"id": "S19d35e1000852eaf914",
 		"legacySongID": 359,
@@ -4777,7 +4964,8 @@
 		"artist": "七森中☆ごらく部「ゆるゆり♪♪」",
 		"data": {
 			"duration": 158.857,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "100% Chuugakusei"
 		},
 		"id": "S19d35e10009079d92c7",
 		"legacySongID": 360,
@@ -4791,7 +4979,8 @@
 		"artist": "HIMEHINA「バーチャルさんはみている」",
 		"data": {
 			"duration": 157.2,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hitogata"
 		},
 		"id": "S19d35e1000bb91cd7d3",
 		"legacySongID": 361,
@@ -4818,7 +5007,8 @@
 		"data": {
 			"duration": 173.793,
 			"flavorGenre": "Wダイスケ",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Nouten Chokugeki"
 		},
 		"id": "S19d35e1000d0e0142ea",
 		"legacySongID": 363,
@@ -4834,7 +5024,8 @@
 		"artist": "七森中☆ごらく部「ゆるゆり、」",
 		"data": {
 			"duration": 160.419,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "YuruYuri, Ten'yawan'ya"
 		},
 		"id": "S19d35e1000e46d699df",
 		"legacySongID": 364,
@@ -4848,7 +5039,8 @@
 		"artist": "ツキカゲ（安齋由香里，沼倉愛美，藤田茜，洲崎綾，のぐちゆり，内田彩）「RELEASE THE SPYCE」",
 		"data": {
 			"duration": 149.25,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Supatto! Spy & Spice"
 		},
 		"id": "S19d35e1000f395ed02b",
 		"legacySongID": 365,
@@ -4899,7 +5091,8 @@
 		"artist": "ClariS　「劇場版 魔法少女まどか☆マギカ[新編]叛逆の物語」",
 		"data": {
 			"duration": 124.382,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Colorful"
 		},
 		"id": "S19d35e10013a8cb05b9",
 		"legacySongID": 369,
@@ -4925,7 +5118,8 @@
 		"artist": "LiSA",
 		"data": {
 			"duration": 156.457,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gurenge"
 		},
 		"id": "S19d35e1001572610f96",
 		"legacySongID": 371,
@@ -4952,7 +5146,8 @@
 		"artist": "桜高軽音部",
 		"data": {
 			"duration": 165,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Fuwafuwa Time"
 		},
 		"id": "S19d35e10017565ebc0e",
 		"legacySongID": 373,
@@ -4966,7 +5161,8 @@
 		"artist": "ULTRA-PRISM with イカ娘（金元寿子）「侵略！イカ娘」",
 		"data": {
 			"duration": 152.432,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Shinryaku no Susume"
 		},
 		"id": "S19d35e10018a06593b2",
 		"legacySongID": 374,
@@ -4980,7 +5176,8 @@
 		"artist": "中野家の五つ子（花澤香菜、竹達彩奈、伊藤美来、佐倉綾音、水瀬いのり）「五等分の花嫁」",
 		"data": {
 			"duration": 139.198,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gotoubun no Kimochi"
 		},
 		"id": "S19d35e10019667ab69a",
 		"legacySongID": 375,
@@ -4994,7 +5191,8 @@
 		"artist": "ユリイ・カノン feat.GUMI",
 		"data": {
 			"duration": 137.379,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dareka no Shinzou ni Nareta Nara"
 		},
 		"id": "S19d35e1001a357f57ea",
 		"legacySongID": 376,
@@ -5008,7 +5206,8 @@
 		"artist": "Omoi feat. 初音ミク",
 		"data": {
 			"duration": 163.459,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Teo"
 		},
 		"id": "S19d35e1001bfc841582",
 		"legacySongID": 377,
@@ -5022,7 +5221,8 @@
 		"artist": "かいりきベア feat.flower",
 		"data": {
 			"duration": 142.105,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Venom"
 		},
 		"id": "S19d35e1001c6945e5d2",
 		"legacySongID": 378,
@@ -5036,7 +5236,8 @@
 		"artist": "xi",
 		"data": {
 			"duration": 147.958,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Night of Knights (xi Remix)"
 		},
 		"id": "S19d35e1001d08e4db6b",
 		"legacySongID": 379,
@@ -5063,7 +5264,8 @@
 		"artist": "kanone",
 		"data": {
 			"duration": 135.5,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "RAIKIRI"
 		},
 		"id": "S19d35e1001f86e1394f",
 		"legacySongID": 381,
@@ -5101,7 +5303,8 @@
 		"artist": "曲：設楽哲也／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 146.277,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Ukiuki Candy!"
 		},
 		"id": "S19d35e10022261556e0",
 		"legacySongID": 384,
@@ -5177,7 +5380,8 @@
 		"artist": "曲：kz(livetune)／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 159.111,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARTLINER -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e100281def54e7",
 		"legacySongID": 390,
@@ -5191,7 +5395,8 @@
 		"artist": "曲：kz(livetune)／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 159.111,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARTLINER -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e10029a88597fe",
 		"legacySongID": 391,
@@ -5205,7 +5410,8 @@
 		"artist": "曲：kz(livetune)／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 159.111,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARTLINER -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e1002ab2ebe43e",
 		"legacySongID": 392,
@@ -5219,7 +5425,8 @@
 		"artist": "並木 学「怒首領蜂大往生」",
 		"data": {
 			"duration": 179.673,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Toua -O.N.G.E.K.I. MIX-"
 		},
 		"id": "S19d35e1002b16861d2e",
 		"legacySongID": 393,
@@ -5246,7 +5453,8 @@
 		"artist": "ClariS　「魔法少女まどか☆マギカ」",
 		"data": {
 			"duration": 112.136,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Connect"
 		},
 		"id": "S19d35e1002db4157ca1",
 		"legacySongID": 395,
@@ -5284,7 +5492,8 @@
 		"artist": "コーロまちカド(シャミ子･桃･リリス･ミカン)/CV:小原好美･鬼頭明里･高橋未奈美･高柳知葉「まちカドまぞく」",
 		"data": {
 			"duration": 153.684,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Yoimachi Cantare"
 		},
 		"id": "S19d35e100309f14e933",
 		"legacySongID": 398,
@@ -5298,7 +5507,8 @@
 		"artist": "ガヴリール（富田美憂），ヴィーネ（大西沙織），サターニャ（大空直美），ラフィエル（花澤香菜）「ガヴリールドロップアウト」",
 		"data": {
 			"duration": 140.536,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gabriel DropKick"
 		},
 		"id": "S19d35e10031d8cdb0c4",
 		"legacySongID": 399,
@@ -5325,7 +5535,8 @@
 		"artist": "ユリイ・カノン feat.nameless",
 		"data": {
 			"duration": 143.721,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Tsukuyomi Step"
 		},
 		"id": "S19d35e10033fff4e54a",
 		"legacySongID": 401,
@@ -5339,7 +5550,8 @@
 		"artist": "曲：矢鴇つかさ & 脇眞富（Arte Refact）／歌：星咲 あかり(CV：赤尾 ひかる)、高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 158.382,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Hangeki! Totsugeki! Back To Back!"
 		},
 		"id": "S19d35e100340edc6c06",
 		"legacySongID": 402,
@@ -5353,7 +5565,8 @@
 		"artist": "衛藤可奈美（CV：本渡 楓）、十条姫和（CV：大西沙織）、柳瀬舞衣（CV：和氣あず未）、糸見沙耶香（CV：木野日菜）、益子 薫（CV：松田利冴）、古波蔵エレン（CV：鈴木絵理）「刀使ノ巫女」",
 		"data": {
 			"duration": 154.499,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Shinkakei Colors"
 		},
 		"id": "S19d35e100354e4ad93f",
 		"legacySongID": 403,
@@ -5367,7 +5580,8 @@
 		"artist": "衛藤可奈美（CV：本渡 楓）＆安桜美炎（CV：茜屋日海夏）「みにとじ」",
 		"data": {
 			"duration": 142.4,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kono Bangumi wa Urawakaki Koumuintachi no Teikyou de Okuri Itashimasu"
 		},
 		"id": "S19d35e1003648261e5b",
 		"legacySongID": 404,
@@ -5381,7 +5595,8 @@
 		"artist": "Cranky feat.おもしろ三国志",
 		"data": {
 			"duration": 171.244,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Enjou, Enjou!!"
 		},
 		"id": "S19d35e100372a902340",
 		"legacySongID": 405,
@@ -5395,7 +5610,8 @@
 		"artist": "GYARI",
 		"data": {
 			"duration": 178.5,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Zettai ni Chocomint o Taberu Aoi-chan"
 		},
 		"id": "S19d35e10038b16b1e52",
 		"legacySongID": 406,
@@ -5409,7 +5625,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 152.4,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ikasama Life Game"
 		},
 		"id": "S19d35e10039c77dbdd9",
 		"legacySongID": 407,
@@ -5423,7 +5640,8 @@
 		"artist": "てにをは",
 		"data": {
 			"duration": 136,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Meitantei Renzoku Satsujin Jiken"
 		},
 		"id": "S19d35e1003ae1ef7f00",
 		"legacySongID": 408,
@@ -5438,7 +5656,8 @@
 		"data": {
 			"duration": 145,
 			"flavorGenre": "探偵ポップス",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kimi wa \"Miteitane\"?"
 		},
 		"id": "S19d35e1003bb5bb085d",
 		"legacySongID": 409,
@@ -5464,7 +5683,8 @@
 		"artist": "かめりあ",
 		"data": {
 			"duration": 154.468,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Night of Knights (Camellia's \"Once Upon A Night\" Remix)"
 		},
 		"id": "S19d35e1003d05753bbe",
 		"legacySongID": 411,
@@ -5491,7 +5711,8 @@
 		"artist": "MARETU",
 		"data": {
 			"duration": 153.462,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Yamitsuki"
 		},
 		"id": "S19d35e1003fb316f50b",
 		"legacySongID": 413,
@@ -5541,7 +5762,8 @@
 		"artist": "曲：原田篤（Arte Refact）／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 165.294,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Let's Starry Party! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10043b857db66",
 		"legacySongID": 417,
@@ -5555,7 +5777,8 @@
 		"artist": "曲：原田篤（Arte Refact）／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 165.294,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Let's Starry Party! -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e10044c6854b3d",
 		"legacySongID": 418,
@@ -5569,7 +5792,8 @@
 		"artist": "曲：原田篤（Arte Refact）／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 165.294,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Let's Starry Party! -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e10045e5b53ae8",
 		"legacySongID": 419,
@@ -5583,7 +5807,8 @@
 		"artist": "Silver Forest",
 		"data": {
 			"duration": 140.893,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Seishoujo Sacrifice"
 		},
 		"id": "S19d35e1004619ec1c62",
 		"legacySongID": 420,
@@ -5636,7 +5861,8 @@
 		"artist": "ピノキオピー",
 		"data": {
 			"duration": 153.2,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Aisarenakute Mo Kimi ga Iru"
 		},
 		"id": "S19d35e1004a4283afbd",
 		"legacySongID": 424,
@@ -5676,7 +5902,8 @@
 		"artist": "からとPαnchii少年 feat.はるの「Arcaea」",
 		"data": {
 			"duration": 135.273,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Mayoeru Neiro wa Koi no Uta"
 		},
 		"id": "S19d35e1004d927fc294",
 		"legacySongID": 427,
@@ -5719,7 +5946,8 @@
 		"artist": "syudou",
 		"data": {
 			"duration": 140,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Bitter Choco Decoration"
 		},
 		"id": "S19d35e10050c8bd4ba1",
 		"legacySongID": 430,
@@ -5733,7 +5961,8 @@
 		"artist": "n-buna",
 		"data": {
 			"duration": 137.321,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Umiyuri Kaiteitan"
 		},
 		"id": "S19d35e10051bdf9f617",
 		"legacySongID": 431,
@@ -5747,7 +5976,8 @@
 		"artist": "曲：高木龍一(Dream Monster)／歌：三角 葵(CV：春野 杏)、桜井 春菜(CV：近藤 玲奈)、珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 141.997,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "YAMINABE PANIC ~Gochisou Tsumekomi Full Course~"
 		},
 		"id": "S19d35e10052d0e631cf",
 		"legacySongID": 432,
@@ -5790,7 +6020,8 @@
 		"artist": "1640mP（164×40mP） / 初音ミク / Leo/need「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 125.238,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Time Machine"
 		},
 		"id": "S19d35e10055763c0402",
 		"legacySongID": 435,
@@ -5804,7 +6035,8 @@
 		"artist": "とあ / 初音ミク / MORE MORE JUMP!「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 123.453,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Tsugihagi Staccato"
 		},
 		"id": "S19d35e10056a908b74a",
 		"legacySongID": 436,
@@ -5842,7 +6074,8 @@
 		"artist": "テトラルキア「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 148.356,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Canaria"
 		},
 		"id": "S19d35e100596fa24674",
 		"legacySongID": 439,
@@ -5856,7 +6089,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 147.2,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Taiyoukei Disco"
 		},
 		"id": "S19d35e1005a9da815d1",
 		"legacySongID": 440,
@@ -5870,7 +6104,8 @@
 		"artist": "魂音泉",
 		"data": {
 			"duration": 139.5,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Tengu no Otoshi Bumi feat. ytr"
 		},
 		"id": "S19d35e1005b0351629b",
 		"legacySongID": 441,
@@ -5884,7 +6119,8 @@
 		"artist": "岸田教団＆THE明星ロケッツ",
 		"data": {
 			"duration": 149.816,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Akeboshi Rocket"
 		},
 		"id": "S19d35e1005c9952a69e",
 		"legacySongID": 442,
@@ -5910,7 +6146,8 @@
 		"artist": "曲：大畑拓也／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
 			"duration": 149.571,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kiss Me Kiss -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e1005e91de5d41",
 		"legacySongID": 444,
@@ -5924,7 +6161,8 @@
 		"artist": "曲：大畑拓也／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 149.571,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kiss Me Kiss -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e1005f76ca1fc3",
 		"legacySongID": 445,
@@ -5938,7 +6176,8 @@
 		"artist": "パトリシア・オブ・エンド, ルーシア・オブ・エンド・サクラメント, ユウラシア・オブ・エンド「ノラと皇女と野良猫ハート2」",
 		"data": {
 			"duration": 109.213,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Crying Heart"
 		},
 		"id": "S19d35e1006029679864",
 		"legacySongID": 446,
@@ -5952,7 +6191,8 @@
 		"artist": "亜沙",
 		"data": {
 			"duration": 140.178,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Yoshiwara Lament"
 		},
 		"id": "S19d35e10061ecf2f31d",
 		"legacySongID": 447,
@@ -5966,7 +6206,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 150.4,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Scramble Kousai"
 		},
 		"id": "S19d35e10062785b16d2",
 		"legacySongID": 448,
@@ -6004,7 +6245,8 @@
 		"artist": "ヨルシカ",
 		"data": {
 			"duration": 151.2,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Dakara Boku wa Ongaku o Yameta"
 		},
 		"id": "S19d35e1006575e19373",
 		"legacySongID": 451,
@@ -6018,7 +6260,8 @@
 		"artist": "カンザキイオリ",
 		"data": {
 			"duration": 158.4,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Inochi ni Kirawareteiru"
 		},
 		"id": "S19d35e10066250aaca4",
 		"legacySongID": 452,
@@ -6033,7 +6276,8 @@
 		"artist": "fourfolium［涼風青葉（CV：高田憂希）／滝本ひふみ（CV：山口 愛）／篠田はじめ（CV：戸田めぐみ）／飯島ゆん（CV：竹尾歩美）］「NEW GAME!」",
 		"data": {
 			"duration": 150.909,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "SAKURA Skip"
 		},
 		"id": "S19d35e10067327450dc",
 		"legacySongID": 453,
@@ -6059,7 +6303,8 @@
 		"artist": "滝本ひふみ（CV：山口 愛）「NEW GAME!」",
 		"data": {
 			"duration": 160.552,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Watashi Connect"
 		},
 		"id": "S19d35e10069b90c0f77",
 		"legacySongID": 455,
@@ -6073,7 +6318,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 144.348,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Bad Apple!! feat.nomico (Butaotome Ver.)"
 		},
 		"id": "S19d35e1006abe5bc0c8",
 		"legacySongID": 456,
@@ -6099,7 +6345,8 @@
 		"artist": "かゆき",
 		"data": {
 			"duration": 147.5,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Miya Getsukyou"
 		},
 		"id": "S19d35e1006cf7ae1e7c",
 		"legacySongID": 458,
@@ -6113,7 +6360,8 @@
 		"artist": "HIMEHINA",
 		"data": {
 			"duration": 158.182,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ai no Hana"
 		},
 		"id": "S19d35e1006d42bd7c9c",
 		"legacySongID": 459,
@@ -6128,7 +6376,8 @@
 		"data": {
 			"duration": 156.183,
 			"flavorGenre": "TECHNO POP",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Sakurairo Fuwari"
 		},
 		"id": "S19d35e1006e4b0db170",
 		"legacySongID": 460,
@@ -6166,7 +6415,8 @@
 		"artist": "Petit Rabbit's「ご注文はうさぎですか？BLOOM」",
 		"data": {
 			"duration": 154.317,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tenkuu Cafeteria"
 		},
 		"id": "S19d35e100716fbc95cf",
 		"legacySongID": 463,
@@ -6192,7 +6442,8 @@
 		"artist": "白雪姫リボン「モンソニ！」",
 		"data": {
 			"duration": 159.621,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hatsukoi wa Kimiiro Memory"
 		},
 		"id": "S19d35e10073936d58b4",
 		"legacySongID": 465,
@@ -6230,7 +6481,8 @@
 		"artist": "ずっと真夜中でいいのに。",
 		"data": {
 			"duration": 158.796,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Byoushin o Kamu"
 		},
 		"id": "S19d35e1007678e3420a",
 		"legacySongID": 468,
@@ -6244,7 +6496,8 @@
 		"artist": "wowaka",
 		"data": {
 			"duration": 147.789,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "World's End Dancehall"
 		},
 		"id": "S19d35e10077e3feefd6",
 		"legacySongID": 469,
@@ -6258,7 +6511,8 @@
 		"artist": "Eve",
 		"data": {
 			"duration": 147.693,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kokoroyohou"
 		},
 		"id": "S19d35e1007800baf700",
 		"legacySongID": 470,
@@ -6284,7 +6538,8 @@
 		"artist": "東方LostWord feat.いとうかなこ",
 		"data": {
 			"duration": 155.638,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "LostWord Chronicle"
 		},
 		"id": "S19d35e1007a73969af9",
 		"legacySongID": 472,
@@ -6347,7 +6602,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：7EVENDAYS⇔HOLIDAYS [井之原 小星(CV：ももの はるな)、柏木 咲姫(CV：石見 舞菜香)]",
 		"data": {
 			"duration": 157.284,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Saikkou no Entame Da!!"
 		},
 		"id": "S19d35e1007fb3bdc128",
 		"legacySongID": 477,
@@ -6412,7 +6668,8 @@
 		"artist": "曲：中山真斗／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 152.802,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pocket kara Nuritsubuse! -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e1008542e7b34e",
 		"legacySongID": 483,
@@ -6426,7 +6683,8 @@
 		"artist": "曲：中山真斗／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 152.802,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pocket kara Nuritsubuse! -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e100864d4edc70",
 		"legacySongID": 484,
@@ -6440,7 +6698,8 @@
 		"artist": "曲：中山真斗／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 152.802,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pocket kara Nuritsubuse! -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e10087a5f92142",
 		"legacySongID": 485,
@@ -6480,7 +6739,8 @@
 		"artist": "SEGA SOUND STAFF「セガNET麻雀 MJ」",
 		"data": {
 			"duration": 171.896,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "SEGA NET Mahjong MJ"
 		},
 		"id": "S19d35e1008a38495720",
 		"legacySongID": 488,
@@ -6532,7 +6792,8 @@
 		"artist": "黒魔",
 		"data": {
 			"duration": 158.057,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Shakkiiin!!"
 		},
 		"id": "S19d35e1008e990a01fa",
 		"legacySongID": 492,
@@ -6546,7 +6807,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 155.697,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Luckgakist"
 		},
 		"id": "S19d35e1008f49fd45a2",
 		"legacySongID": 493,
@@ -6560,7 +6822,8 @@
 		"artist": "柊キライ",
 		"data": {
 			"duration": 147.244,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Bocca Della Verita"
 		},
 		"id": "S19d35e10090d3441e31",
 		"legacySongID": 494,
@@ -6574,7 +6837,8 @@
 		"artist": "ツユ",
 		"data": {
 			"duration": 135.921,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ano Yo Iki no Bus ni Notte Saraba."
 		},
 		"id": "S19d35e100911b916150",
 		"legacySongID": 495,
@@ -6590,7 +6854,8 @@
 		"data": {
 			"duration": 141.373,
 			"flavorGenre": "game music",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Bokutachi no Tabi to Epilogue."
 		},
 		"id": "S19d35e100929795ba72",
 		"legacySongID": 496,
@@ -6604,7 +6869,8 @@
 		"artist": "cubesato",
 		"data": {
 			"duration": 129.535,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Shigatsu no Ame"
 		},
 		"id": "S19d35e1009322ddc30d",
 		"legacySongID": 497,
@@ -6619,7 +6885,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：三角 葵(CV：春野 杏)、九條 楓(CV：佳村 はるか)、日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 161.009,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Muteki no Frontier Sanjuushi"
 		},
 		"id": "S19d35e100940fa000aa",
 		"legacySongID": 498,
@@ -6645,7 +6912,8 @@
 		"artist": "宝鐘マリン（ホロライブ）",
 		"data": {
 			"duration": 159.597,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ahoy!! Warera Houshou Kaizokudan☆"
 		},
 		"id": "S19d35e1009654ea9082",
 		"legacySongID": 500,
@@ -6672,7 +6940,8 @@
 		"artist": "COOL&CREATE × 兎田ぺこら、さくらみこ、宝鐘マリン",
 		"data": {
 			"duration": 148.706,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Shiawase Usagi"
 		},
 		"id": "S19d35e100982065f086",
 		"legacySongID": 502,
@@ -6686,7 +6955,8 @@
 		"artist": "曲：前山田健一／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 155.036,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Mendooi! Yahhooi! Tomodachi! -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e1009903e5260a",
 		"legacySongID": 503,
@@ -6700,7 +6970,8 @@
 		"artist": "曲：前山田健一／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 155.036,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Mendooi! Yahhooi! Tomodachi! -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e1009a89257ac0",
 		"legacySongID": 504,
@@ -6726,7 +6997,8 @@
 		"artist": "じん",
 		"data": {
 			"duration": 140.036,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Yobanashi Deceive"
 		},
 		"id": "S19d35e1009c90450298",
 		"legacySongID": 506,
@@ -6740,7 +7012,8 @@
 		"artist": "Ayase",
 		"data": {
 			"duration": 127.195,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Last Resort"
 		},
 		"id": "S19d35e1009d53e69497",
 		"legacySongID": 507,
@@ -6829,7 +7102,8 @@
 		"artist": "Run Girls, Run!",
 		"data": {
 			"duration": 110.538,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Illuminage Land"
 		},
 		"id": "S19d35e100a43adfc7a2",
 		"legacySongID": 514,
@@ -6843,7 +7117,8 @@
 		"artist": "バルーン",
 		"data": {
 			"duration": 140.728,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ame to Petra"
 		},
 		"id": "S19d35e100a547fc53df",
 		"legacySongID": 515,
@@ -6870,7 +7145,8 @@
 		"artist": "八王子P「#コンパス」",
 		"data": {
 			"duration": 144.91,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Violence Trigger"
 		},
 		"id": "S19d35e100a7cbcb3b48",
 		"legacySongID": 517,
@@ -6884,7 +7160,8 @@
 		"artist": "かいりきベア「#コンパス」",
 		"data": {
 			"duration": 144.345,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Alkali Rettousei"
 		},
 		"id": "S19d35e100a8b4e6166b",
 		"legacySongID": 518,
@@ -6898,7 +7175,8 @@
 		"artist": "ポリスピカデリー「#コンパス」",
 		"data": {
 			"duration": 145.48,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kire Carry On"
 		},
 		"id": "S19d35e100a93b8324f8",
 		"legacySongID": 519,
@@ -6912,7 +7190,8 @@
 		"artist": "Drop & 葉月ゆら「#コンパス」",
 		"data": {
 			"duration": 154.451,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Zenmai Shoujo Tokei"
 		},
 		"id": "S19d35e100aa80b59307",
 		"legacySongID": 520,
@@ -6939,7 +7218,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：藍原 椿(CV：橋本 ちなみ)、早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 159.651,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Cinderella Disco"
 		},
 		"id": "S19d35e100ac623d2c30",
 		"legacySongID": 522,
@@ -6954,7 +7234,8 @@
 		"data": {
 			"duration": 129.421,
 			"flavorGenre": "Hard Musette",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Jeanne D'Arc no Doukoku"
 		},
 		"id": "S19d35e100ad314410d9",
 		"legacySongID": 523,
@@ -6968,7 +7249,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 129.421,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Negative Shinkaron"
 		},
 		"id": "S19d35e100aef97b1250",
 		"legacySongID": 524,
@@ -6982,7 +7264,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 153.555,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Nyannyanteki Uchuuron"
 		},
 		"id": "S19d35e100af831336d3",
 		"legacySongID": 525,
@@ -6996,7 +7279,8 @@
 		"artist": "halca / TVアニメ「彼女、お借りします」EDテーマ",
 		"data": {
 			"duration": 135.988,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kokuhaku Bungee Jump"
 		},
 		"id": "S19d35e100b086265f03",
 		"legacySongID": 526,
@@ -7010,7 +7294,8 @@
 		"artist": "Eight / FantasticYouth",
 		"data": {
 			"duration": 160.444,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Totemo Suteki Na Rokugatsu Deshita"
 		},
 		"id": "S19d35e100b16f5dd297",
 		"legacySongID": 527,
@@ -7049,7 +7334,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 137.338,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ruler Count, Zero -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e100b43590e6d6",
 		"legacySongID": 530,
@@ -7063,7 +7349,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 137.338,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ruler Count, Zero -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e100b547900bfc",
 		"legacySongID": 531,
@@ -7077,7 +7364,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 137.338,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ruler Count, Zero -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e100b62c7107a1",
 		"legacySongID": 532,
@@ -7091,7 +7379,8 @@
 		"artist": "Angely Diva「モンソニ！」",
 		"data": {
 			"duration": 122.198,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kizuna Sparkling World"
 		},
 		"id": "S19d35e100b788c50de1",
 		"legacySongID": 533,
@@ -7105,7 +7394,8 @@
 		"artist": "GYARI",
 		"data": {
 			"duration": 157.038,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Akari ga Yatte Kita Zo"
 		},
 		"id": "S19d35e100b8b10bc883",
 		"legacySongID": 534,
@@ -7119,7 +7409,8 @@
 		"artist": "なきゃむりゃ",
 		"data": {
 			"duration": 163.907,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kibou no Tsuki"
 		},
 		"id": "S19d35e100b9c3bf849b",
 		"legacySongID": 535,
@@ -7206,7 +7497,8 @@
 		"artist": "曲：かいりきベア／歌：高瀬 梨緒(CV：久保 ユリカ)、藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 152.336,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Ray Ray ~Chouzetsu Saikyou Ame-chan Mix~"
 		},
 		"id": "S19d35e100c080f82340",
 		"legacySongID": 542,
@@ -7246,7 +7538,8 @@
 		"data": {
 			"duration": 150.415,
 			"flavorGenre": "僕らが紡ぐRPG",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Oyasumi no Uta"
 		},
 		"id": "S19d35e100c3ea6937ca",
 		"legacySongID": 545,
@@ -7272,7 +7565,8 @@
 		"artist": "曲：Q-MHz／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 159.905,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Splash Dance!! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e100c5ba7d9f05",
 		"legacySongID": 547,
@@ -7286,7 +7580,8 @@
 		"artist": "曲：Q-MHz／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 159.905,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Splash Dance!! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e100c61313419c",
 		"legacySongID": 548,
@@ -7300,7 +7595,8 @@
 		"artist": "曲：Q-MHz／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
 			"duration": 159.905,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Splash Dance!! -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e100c7c033dd7d",
 		"legacySongID": 549,
@@ -7314,7 +7610,8 @@
 		"artist": "曲：Q-MHz／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 159.905,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Splash Dance!! -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e100c8ff41be84",
 		"legacySongID": 550,
@@ -7328,7 +7625,8 @@
 		"artist": "曲：Q-MHz／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 159.905,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Splash Dance!! -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e100c9fed2368e",
 		"legacySongID": 551,
@@ -7342,7 +7640,8 @@
 		"artist": "さつき が てんこもり feat. 初音ミク",
 		"data": {
 			"duration": 141.163,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Next Nest"
 		},
 		"id": "S19d35e100ca756da2c3",
 		"legacySongID": 552,
@@ -7416,7 +7715,8 @@
 		"artist": "森羅万象",
 		"data": {
 			"duration": 120.421,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Itazura Sensation"
 		},
 		"id": "S19d35e100d02c67e3c2",
 		"legacySongID": 558,
@@ -7444,7 +7744,8 @@
 		"data": {
 			"duration": 157.517,
 			"flavorGenre": "PANDORA FOX",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Eta Beta Ita"
 		},
 		"id": "S19d35e100d2a90201ac",
 		"legacySongID": 560,
@@ -7471,7 +7772,8 @@
 		"artist": "まふまふ",
 		"data": {
 			"duration": 147.053,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Rinne Tensei"
 		},
 		"id": "S19d35e100d4a1abc3e2",
 		"legacySongID": 562,
@@ -7485,7 +7787,8 @@
 		"artist": "n-buna feat.ヤギヌマカナ",
 		"data": {
 			"duration": 160.512,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Sono Gunjou ga Itoshikatta You Datta"
 		},
 		"id": "S19d35e100d5bd5f969d",
 		"legacySongID": 563,
@@ -7527,7 +7830,8 @@
 		"artist": "曲：馬渕直純／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 144.421,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Starring Stars -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e100d846cac7b7",
 		"legacySongID": 566,
@@ -7541,7 +7845,8 @@
 		"artist": "曲：馬渕直純／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 144.421,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Starring Stars -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e100d922c02a87",
 		"legacySongID": 567,
@@ -7555,7 +7860,8 @@
 		"artist": "曲：馬渕直純／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 144.421,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Starring Stars -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e100daaab7c35f",
 		"legacySongID": 568,
@@ -7569,7 +7875,8 @@
 		"artist": "ハチロク「まいてつ」",
 		"data": {
 			"duration": 160.733,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Rail Romanesque Hachiroku Ver."
 		},
 		"id": "S19d35e100db446a1d2e",
 		"legacySongID": 569,
@@ -7583,7 +7890,8 @@
 		"artist": "Orangestar",
 		"data": {
 			"duration": 165.335,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kuusou Ressha"
 		},
 		"id": "S19d35e100dcb48e85bd",
 		"legacySongID": 570,
@@ -7650,7 +7958,8 @@
 		"artist": "SPicA「温泉むすめ」",
 		"data": {
 			"duration": 132.007,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ohayou Japonica"
 		},
 		"id": "S19d35e100e15aa26044",
 		"legacySongID": 575,
@@ -7664,7 +7973,8 @@
 		"artist": "温泉むすめ 有馬楓花（CV:桑原由気）「温泉むすめ」",
 		"data": {
 			"duration": 162.774,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Arimasuka?"
 		},
 		"id": "S19d35e100e266a1260e",
 		"legacySongID": 576,
@@ -7679,7 +7989,8 @@
 		"data": {
 			"duration": 142.49,
 			"flavorGenre": "ORIENTAL CORE",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Nini"
 		},
 		"id": "S19d35e100e3242bfa15",
 		"legacySongID": 577,
@@ -7693,7 +8004,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 144.613,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kaze ni Noseta Negai"
 		},
 		"id": "S19d35e100e4cb0ffa28",
 		"legacySongID": 578,
@@ -7707,7 +8019,8 @@
 		"artist": "Unlucky Morpheus",
 		"data": {
 			"duration": 149.647,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Danzai wa Amaneku Ningen no Moto ni"
 		},
 		"id": "S19d35e100e550fb5889",
 		"legacySongID": 579,
@@ -7721,7 +8034,8 @@
 		"artist": "Silver Forest",
 		"data": {
 			"duration": 125.581,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kero9destiny"
 		},
 		"id": "S19d35e100e639fca576",
 		"legacySongID": 580,
@@ -7735,7 +8049,8 @@
 		"artist": "舞風-Maikaze",
 		"data": {
 			"duration": 153.754,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kawazuishi"
 		},
 		"id": "S19d35e100e743eaf21e",
 		"legacySongID": 581,
@@ -7765,7 +8080,8 @@
 		"data": {
 			"duration": 150.068,
 			"flavorGenre": "BOYS FutureCore POP",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Karappo Nonfiction"
 		},
 		"id": "S19d35e100e9b809b008",
 		"legacySongID": 583,
@@ -7779,7 +8095,8 @@
 		"artist": "光吉猛修「バーニングレンジャー」",
 		"data": {
 			"duration": 157.792,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Burning Hearts ~Honoo no ANGEL~"
 		},
 		"id": "S19d35e100eaf7a5116c",
 		"legacySongID": 584,
@@ -7794,7 +8111,8 @@
 		"artist": "THE IDOLM@STER FIVE STARS!!!!!「アイドルマスター」シリーズ",
 		"data": {
 			"duration": 134.71,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Nandodemo Waraou"
 		},
 		"id": "S19d35e100ebc9b9bab1",
 		"legacySongID": 585,
@@ -7820,7 +8138,8 @@
 		"artist": "魔女っ娘ミラクるん（CV：竹達彩奈）「ゆるゆり♪♪」",
 		"data": {
 			"duration": 146,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Yonde Mirakurun!"
 		},
 		"id": "S19d35e100edc540ee52",
 		"legacySongID": 587,
@@ -7846,7 +8165,8 @@
 		"artist": "チーム“ハナヤマタ”「ハナヤマタ」",
 		"data": {
 			"duration": 160.5,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hana wa Odoreya Iroha ni Ho"
 		},
 		"id": "S19d35e100efb48a71c7",
 		"legacySongID": 589,
@@ -7860,7 +8180,8 @@
 		"artist": "Ado",
 		"data": {
 			"duration": 136.18,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Usseewa"
 		},
 		"id": "S19d35e100f05dc5b679",
 		"legacySongID": 590,
@@ -7874,7 +8195,8 @@
 		"artist": "yama",
 		"data": {
 			"duration": 134,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Haru o Tsugeru"
 		},
 		"id": "S19d35e100f102ae89fb",
 		"legacySongID": 591,
@@ -7900,7 +8222,8 @@
 		"artist": "かいりきベア",
 		"data": {
 			"duration": 143.137,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Darling Dance"
 		},
 		"id": "S19d35e100f35aebce7d",
 		"legacySongID": 593,
@@ -7914,7 +8237,8 @@
 		"artist": "40mP",
 		"data": {
 			"duration": 152.015,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ren'ai Saiban"
 		},
 		"id": "S19d35e100f4a51cb314",
 		"legacySongID": 594,
@@ -7929,7 +8253,8 @@
 		"artist": "すりぃ feat.鏡音レン",
 		"data": {
 			"duration": 156,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Junky Night Town Orchestra"
 		},
 		"id": "S19d35e100f52d1c9767",
 		"legacySongID": 595,
@@ -7943,7 +8268,8 @@
 		"artist": "幽閉サテライト",
 		"data": {
 			"duration": 128.698,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Iro wa Nioedo Chirinuruwo"
 		},
 		"id": "S19d35e100f6bbbc918a",
 		"legacySongID": 596,
@@ -8020,7 +8346,8 @@
 		"artist": "曲：ラムシーニ／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 156.076,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Hanadoki wa Yume o Miru"
 		},
 		"id": "S19d35e100fd91f8e335",
 		"legacySongID": 603,
@@ -8035,7 +8362,8 @@
 		"data": {
 			"duration": 158.625,
 			"flavorGenre": "CYBER PANIC FUSION",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Gaming Polar Bear"
 		},
 		"id": "S19d35e100fe310d9879",
 		"legacySongID": 604,
@@ -8062,7 +8390,8 @@
 		"data": {
 			"duration": 156.835,
 			"flavorGenre": "Progressive Fantasia",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Mirage Fragrance"
 		},
 		"id": "S19d35e10100273496b2",
 		"legacySongID": 606,
@@ -8089,7 +8418,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 157.397,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "No Limit RED Force -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101021763a562",
 		"legacySongID": 608,
@@ -8103,7 +8433,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 157.397,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "No Limit RED Force -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e1010330f9822a",
 		"legacySongID": 609,
@@ -8117,7 +8448,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 157.397,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "No Limit RED Force -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e1010420d5c2e4",
 		"legacySongID": 610,
@@ -8131,7 +8463,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 157.397,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "No Limit RED Force -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e10105264a32a9",
 		"legacySongID": 611,
@@ -8145,7 +8478,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 157.397,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "No Limit RED Force -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e101062c101043",
 		"legacySongID": 612,
@@ -8159,7 +8493,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 114.815,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Saishuu Kichiku Zenbu Koe"
 		},
 		"id": "S19d35e101072ba58253",
 		"legacySongID": 613,
@@ -8176,7 +8511,8 @@
 		"data": {
 			"duration": 143.683,
 			"flavorGenre": "社会",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Take"
 		},
 		"id": "S19d35e101080c2f3062",
 		"legacySongID": 614,
@@ -8205,7 +8541,8 @@
 		"data": {
 			"duration": 153.615,
 			"flavorGenre": "Requiem",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Psalms ~Tamashii no Kaeru Basho~"
 		},
 		"id": "S19d35e1010a83b3e42f",
 		"legacySongID": 616,
@@ -8219,7 +8556,8 @@
 		"artist": "名取さな",
 		"data": {
 			"duration": 164.333,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ebby Nurseday"
 		},
 		"id": "S19d35e1010b0ea4bbbd",
 		"legacySongID": 617,
@@ -8233,7 +8571,8 @@
 		"artist": "名取さな",
 		"data": {
 			"duration": 146.207,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Amakamisama"
 		},
 		"id": "S19d35e1010cb40c4ff2",
 		"legacySongID": 618,
@@ -8247,7 +8586,8 @@
 		"artist": "リゼ・ヘルエスタ",
 		"data": {
 			"duration": 156.117,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Happy End o Hajime kara"
 		},
 		"id": "S19d35e1010d64f89f9e",
 		"legacySongID": 619,
@@ -8261,7 +8601,8 @@
 		"artist": "周防パトラ",
 		"data": {
 			"duration": 147.2,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "VTuber no Uta"
 		},
 		"id": "S19d35e1010e1ac8aafa",
 		"legacySongID": 620,
@@ -8276,7 +8617,8 @@
 		"artist": "曲：烏屋茶房／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 151.613,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Y.Y.Y. Keikaku!!!! -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e1010fa1773d25",
 		"legacySongID": 621,
@@ -8290,7 +8632,8 @@
 		"artist": "曲：烏屋茶房／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 151.613,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Y.Y.Y. Keikaku!!!! -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e10110bde21ad7",
 		"legacySongID": 622,
@@ -8304,7 +8647,8 @@
 		"artist": "曲：烏屋茶房／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 151.613,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Y.Y.Y. Keikaku!!!! -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e10111d3b0b176",
 		"legacySongID": 623,
@@ -8357,7 +8701,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 163.25,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hatsune Tenchi Kaibyaku Shinwa"
 		},
 		"id": "S19d35e10115441017de",
 		"legacySongID": 627,
@@ -8371,7 +8716,8 @@
 		"artist": "みきとP",
 		"data": {
 			"duration": 138.462,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "39 Music!"
 		},
 		"id": "S19d35e101160ffef501",
 		"legacySongID": 628,
@@ -8385,7 +8731,8 @@
 		"artist": "温泉むすめ 道後泉海（CV:篠田みなみ）「温泉むすめ」",
 		"data": {
 			"duration": 154.348,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Welcome to ONSEN!!"
 		},
 		"id": "S19d35e1011716dd6868",
 		"legacySongID": 629,
@@ -8399,7 +8746,8 @@
 		"artist": "笑う角を曲がる",
 		"data": {
 			"duration": 140.914,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Adachi Oufu wwww"
 		},
 		"id": "S19d35e10118b44d85cd",
 		"legacySongID": 630,
@@ -8413,7 +8761,8 @@
 		"artist": "魂音泉",
 		"data": {
 			"duration": 145.185,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Fuku Yadoru Otoya Tamaonsen"
 		},
 		"id": "S19d35e10119650ee03a",
 		"legacySongID": 631,
@@ -8427,7 +8776,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：三角 葵(CV：春野 杏)、逢坂 茜(CV：大空 直美)、日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 173.6,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Pokapoka Onsen Ondo"
 		},
 		"id": "S19d35e1011a5ad8456f",
 		"legacySongID": 632,
@@ -8453,7 +8803,8 @@
 		"artist": "GYARI",
 		"data": {
 			"duration": 152.381,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Eien ni Game de Taisen Shitai Kiritan"
 		},
 		"id": "S19d35e1011c4c3bbfd0",
 		"legacySongID": 634,
@@ -8468,7 +8819,8 @@
 		"artist": "デスおはぎ",
 		"data": {
 			"duration": 120.5,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dennou Shoujo wa Utahime no Yume o Miru ka?"
 		},
 		"id": "S19d35e1011dc11cc759",
 		"legacySongID": 635,
@@ -8482,7 +8834,8 @@
 		"artist": "ツユ",
 		"data": {
 			"duration": 133.867,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Doro no Bunzai de Watashi Dake no Taisetsu o Ubaou Da Nante"
 		},
 		"id": "S19d35e1011e4aa462a4",
 		"legacySongID": 636,
@@ -8496,7 +8849,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 160.588,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Muteki no Frontier Sanjuushi -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e1011f2e7c0d22",
 		"legacySongID": 637,
@@ -8510,7 +8864,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 160.588,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Muteki no Frontier Sanjuushi -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e101206417d94e",
 		"legacySongID": 638,
@@ -8524,7 +8879,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 160.588,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Muteki no Frontier Sanjuushi -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e101211f8df3eb",
 		"legacySongID": 639,
@@ -8538,7 +8894,8 @@
 		"artist": "LiGHTs「ラピスリライツ」",
 		"data": {
 			"duration": 166.087,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "700,000,000,000,000,000,000,000 no Sora de"
 		},
 		"id": "S19d35e10122c0728913",
 		"legacySongID": 640,
@@ -8552,7 +8909,8 @@
 		"artist": "シュガーポケッツ「ラピスリライツ」",
 		"data": {
 			"duration": 140.611,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Chat Noir"
 		},
 		"id": "S19d35e101231d2e07e7",
 		"legacySongID": 641,
@@ -8579,7 +8937,8 @@
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat. 藤枝あかね",
 		"data": {
 			"duration": 155.657,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Okuu no Nuclear Fusion Dojo"
 		},
 		"id": "S19d35e10125131c854c",
 		"legacySongID": 643,
@@ -8669,7 +9028,8 @@
 		"artist": "onoken feat. 土屋雄作",
 		"data": {
 			"duration": 155.593,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Amatsu Kaze"
 		},
 		"id": "S19d35e1012cb1714995",
 		"legacySongID": 650,
@@ -8684,7 +9044,8 @@
 		"artist": "芹沢文乃（伊藤かな恵）＆梅ノ森千世（井口裕香）＆霧谷希（竹達彩奈）",
 		"data": {
 			"duration": 160.702,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Happy New Nyaa"
 		},
 		"id": "S19d35e1012d9f3adcfb",
 		"legacySongID": 651,
@@ -8698,7 +9059,8 @@
 		"artist": "ピノキオピー / 初音ミク / ワンダーランズ×ショウタイム「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 153.043,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Sekai wa Mada Hajimatte Sura Inai"
 		},
 		"id": "S19d35e1012efe4ab8cc",
 		"legacySongID": 652,
@@ -8712,7 +9074,8 @@
 		"artist": "まふまふ / 初音ミク / 25時、ナイトコードで。「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 154.021,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kuyamu to Kaite Mirai"
 		},
 		"id": "S19d35e1012fcb12762d",
 		"legacySongID": 653,
@@ -8751,7 +9114,8 @@
 		"artist": "曲：睦月周平／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 143.704,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Heart Cooking Recipe -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e10132a40084d9",
 		"legacySongID": 656,
@@ -8765,7 +9129,8 @@
 		"artist": "曲：睦月周平／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 143.704,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Heart Cooking Recipe -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e10133121d858b",
 		"legacySongID": 657,
@@ -8779,7 +9144,8 @@
 		"artist": "曲：睦月周平／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 143.704,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Heart Cooking Recipe -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e101346e719a8d",
 		"legacySongID": 658,
@@ -8805,7 +9171,8 @@
 		"artist": "曲：Kensuke／歌：逢坂 茜(CV：大空 直美)、藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 166.091,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Itsuka Hanasaku Sono Mae ni"
 		},
 		"id": "S19d35e101365927af8a",
 		"legacySongID": 660,
@@ -8843,7 +9210,8 @@
 		"artist": "DECO*27 × 堀江晶太(kemu) / 初音ミク、星乃一歌、天馬司、宵崎奏「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 162.406,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Sekai"
 		},
 		"id": "S19d35e101395584e7ff",
 		"legacySongID": 663,
@@ -8857,7 +9225,8 @@
 		"artist": "Giga & Mitchie M / 初音ミク、花里みのり、小豆沢こはね「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 159.75,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Wah Wah World"
 		},
 		"id": "S19d35e1013a4b6637a4",
 		"legacySongID": 664,
@@ -8871,7 +9240,8 @@
 		"artist": "セイネ (CV: 河上英里子) 「グルーヴコースター」",
 		"data": {
 			"duration": 147.978,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Kimi no Starlight Road"
 		},
 		"id": "S19d35e1013bb673283f",
 		"legacySongID": 665,
@@ -8944,7 +9314,8 @@
 		"artist": "ピノキオピー",
 		"data": {
 			"duration": 149.423,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kusare Gedou to Chocolate"
 		},
 		"id": "S19d35e101402e8dc69a",
 		"legacySongID": 670,
@@ -8997,7 +9368,8 @@
 		"data": {
 			"duration": 145,
 			"flavorGenre": "探偵ポップス",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kimi wa \"Miteitane\"? -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e1014486747a9b",
 		"legacySongID": 674,
@@ -9012,7 +9384,8 @@
 		"data": {
 			"duration": 145,
 			"flavorGenre": "探偵ポップス",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kimi wa \"Miteitane\"? -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e10145d45b74a3",
 		"legacySongID": 675,
@@ -9026,7 +9399,8 @@
 		"artist": "曲：中土智博／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
 			"duration": 128.621,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "give it up to you -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e101463106a27b",
 		"legacySongID": 676,
@@ -9040,7 +9414,8 @@
 		"artist": "曲：中土智博／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 128.621,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "give it up to you -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e10147330a515f",
 		"legacySongID": 677,
@@ -9054,7 +9429,8 @@
 		"artist": "為栗メロ（CV:会沢紗弥）新阪ルナ（CV:香里有佐）恋浜みろく（CV:柳原かなこ）「駅メモ！ - ステーションメモリーズ！-」",
 		"data": {
 			"duration": 168.158,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Mirai Memories!"
 		},
 		"id": "S19d35e101485e0a6695",
 		"legacySongID": 678,
@@ -9069,7 +9445,8 @@
 		"data": {
 			"duration": 143.5,
 			"flavorGenre": "Bibliophilia",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kiri no Shosai"
 		},
 		"id": "S19d35e101495279a4f2",
 		"legacySongID": 679,
@@ -9096,7 +9473,8 @@
 		"artist": "Re:STAGE! ALL IDOL「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 124.968,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Watashitachi, Shiki o Asobundesu!!"
 		},
 		"id": "S19d35e1014bdc89b764",
 		"legacySongID": 681,
@@ -9122,7 +9500,8 @@
 		"artist": "本城香澄（CV：岩橋由佳）「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 164.842,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Seeno de Tobe Tte Itten No!"
 		},
 		"id": "S19d35e1014d14bd78ff",
 		"legacySongID": 683,
@@ -9137,7 +9516,8 @@
 		"data": {
 			"duration": 173.836,
 			"flavorGenre": "WORLDTRONICA",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Epitorica no Matsuri"
 		},
 		"id": "S19d35e1014e3e55684b",
 		"legacySongID": 684,
@@ -9177,7 +9557,8 @@
 		"artist": "上田麗奈「魔女の旅々」",
 		"data": {
 			"duration": 157.119,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Literature"
 		},
 		"id": "S19d35e101518c2d7f46",
 		"legacySongID": 687,
@@ -9191,7 +9572,8 @@
 		"artist": "レイナ（CV.久保ユリカ），ヒヨ（CV.鈴木絵理），ナナミ（CV.佐倉綾音）「プロジェクト東京ドールズ」",
 		"data": {
 			"duration": 150.978,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Thunder Line"
 		},
 		"id": "S19d35e10152f109f980",
 		"legacySongID": 688,
@@ -9205,7 +9587,8 @@
 		"artist": "スペシャルウィーク （CV.和氣あず未）、サイレンススズカ （CV.高野麻里佳）、トウカイテイオー （CV.Machico）",
 		"data": {
 			"duration": 136.575,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Umapyoi Densetsu"
 		},
 		"id": "S19d35e10153bc4151d5",
 		"legacySongID": 689,
@@ -9231,7 +9614,8 @@
 		"artist": "PSYQUI",
 		"data": {
 			"duration": 130,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hysteric Night Girl"
 		},
 		"id": "S19d35e1015516060788",
 		"legacySongID": 691,
@@ -9245,7 +9629,8 @@
 		"artist": "くじら",
 		"data": {
 			"duration": 140.488,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kinmokusei feat.Ado"
 		},
 		"id": "S19d35e101561cac5c68",
 		"legacySongID": 692,
@@ -9271,7 +9656,8 @@
 		"artist": "Ayase",
 		"data": {
 			"duration": 151.452,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Yuurei Tokyo"
 		},
 		"id": "S19d35e10158165a8de5",
 		"legacySongID": 694,
@@ -9285,7 +9671,8 @@
 		"artist": "Unlucky Morpheus",
 		"data": {
 			"duration": 148.645,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kamigami ga Koishita Gensoukyou"
 		},
 		"id": "S19d35e101594c9d1a16",
 		"legacySongID": 695,
@@ -9299,7 +9686,8 @@
 		"artist": "森羅万象",
 		"data": {
 			"duration": 160.843,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Kaiten feat.Ayaponzu*"
 		},
 		"id": "S19d35e1015aa604746b",
 		"legacySongID": 696,
@@ -9416,7 +9804,8 @@
 		"artist": "曲：宮崎誠／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 145.574,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Jump!! Jump!! Jump!! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e1016319f1b3c4",
 		"legacySongID": 705,
@@ -9430,7 +9819,8 @@
 		"artist": "曲：宮崎誠／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 145.574,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Jump!! Jump!! Jump!! -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e10164564a189c",
 		"legacySongID": 706,
@@ -9444,7 +9834,8 @@
 		"artist": "曲：宮崎誠／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 145.574,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Jump!! Jump!! Jump!! -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e1016594327a1d",
 		"legacySongID": 707,
@@ -9458,7 +9849,8 @@
 		"artist": "曲：宮崎誠／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 145.574,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Jump!! Jump!! Jump!! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10166147898a1",
 		"legacySongID": 708,
@@ -9472,7 +9864,8 @@
 		"artist": "曲：宮崎誠／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 145.574,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Jump!! Jump!! Jump!! -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e101678f0ffea5",
 		"legacySongID": 709,
@@ -9525,7 +9918,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 156.964,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Namida Kakushite Onna Michi"
 		},
 		"id": "S19d35e1016bcc5a7f38",
 		"legacySongID": 713,
@@ -9589,7 +9983,8 @@
 		"artist": "やどりぎ",
 		"data": {
 			"duration": 143.544,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Marimo to Omochabako"
 		},
 		"id": "S19d35e101708e5065e5",
 		"legacySongID": 718,
@@ -9604,7 +9999,8 @@
 		"data": {
 			"duration": 162.623,
 			"flavorGenre": "Hybrid SpeedSamba",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Sono Emerald o Miyo"
 		},
 		"id": "S19d35e10171df6d198d",
 		"legacySongID": 719,
@@ -9646,7 +10042,8 @@
 		"artist": "小林オニキス",
 		"data": {
 			"duration": 150.411,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Saihate"
 		},
 		"id": "S19d35e101749758eb9f",
 		"legacySongID": 722,
@@ -9660,7 +10057,8 @@
 		"artist": "OSTER project",
 		"data": {
 			"duration": 146.116,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Miracle Paint"
 		},
 		"id": "S19d35e1017596b4ff67",
 		"legacySongID": 723,
@@ -9674,7 +10072,8 @@
 		"artist": "オワタP",
 		"data": {
 			"duration": 174.773,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Paradichlorobenzene"
 		},
 		"id": "S19d35e101761e9c3ad9",
 		"legacySongID": 724,
@@ -9688,7 +10087,8 @@
 		"artist": "Peaky P-key「D4DJ」",
 		"data": {
 			"duration": 138,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Muteki Moment"
 		},
 		"id": "S19d35e10177ccf35f45",
 		"legacySongID": 725,
@@ -9702,7 +10102,8 @@
 		"artist": "燐舞曲「D4DJ」",
 		"data": {
 			"duration": 135.892,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Crinoid"
 		},
 		"id": "S19d35e101782a09b42b",
 		"legacySongID": 726,
@@ -9716,7 +10117,8 @@
 		"artist": "大橋彩香「政宗くんのリベンジ」",
 		"data": {
 			"duration": 164.42,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Wagamama MIRROR HEART"
 		},
 		"id": "S19d35e1017913ebf870",
 		"legacySongID": 727,
@@ -9742,7 +10144,8 @@
 		"artist": "キノシタ feat.音街ウナ・鏡音リン",
 		"data": {
 			"duration": 150.286,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Positive Dance Time"
 		},
 		"id": "S19d35e1017b941fc315",
 		"legacySongID": 729,
@@ -9756,7 +10159,8 @@
 		"artist": "キノシタ feat. そらみこ",
 		"data": {
 			"duration": 139.016,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Maiodore! Maimai Time"
 		},
 		"id": "S19d35e1017cbafa3cbc",
 		"legacySongID": 730,
@@ -9806,7 +10210,8 @@
 		"artist": "編曲：SEGA SOUND STAFF",
 		"data": {
 			"duration": 96.6,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Wakare no Waltz"
 		},
 		"id": "S19d35e1018084df577c",
 		"legacySongID": 734,
@@ -9820,7 +10225,8 @@
 		"artist": "成海遥香（CV：雨宮天）、煌上花音（CV：本渡楓）、楠明日葉（CV：田村睦心）、南ひなた（CV：五十嵐裕美）、サドネ（CV：悠木碧）、朝比奈心美（CV：原田ひとみ）「バトルガール ハイスクール」",
 		"data": {
 			"duration": 161.912,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Sorairo Memories"
 		},
 		"id": "S19d35e101814bff63c1",
 		"legacySongID": 735,
@@ -9846,7 +10252,8 @@
 		"artist": "曲：村カワ基成／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 159.769,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikyou the Summertime!!!!! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e10183e38cb989",
 		"legacySongID": 737,
@@ -9860,7 +10267,8 @@
 		"artist": "曲：村カワ基成／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 159.769,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikyou the Summertime!!!!! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10184f7a10c0b",
 		"legacySongID": 738,
@@ -9874,7 +10282,8 @@
 		"artist": "曲：村カワ基成／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 159.769,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikyou the Summertime!!!!! -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e101857ce9b8a3",
 		"legacySongID": 739,
@@ -9888,7 +10297,8 @@
 		"artist": "曲：村カワ基成／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 159.769,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikyou the Summertime!!!!! -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e1018605341885",
 		"legacySongID": 740,
@@ -9902,7 +10312,8 @@
 		"artist": "曲：村カワ基成／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 159.769,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikyou the Summertime!!!!! -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e10187086183c5",
 		"legacySongID": 741,
@@ -9916,7 +10327,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 168,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Chouzenshin! Manten Smile!"
 		},
 		"id": "S19d35e10188284fda0d",
 		"legacySongID": 742,
@@ -9930,7 +10342,8 @@
 		"artist": "曲：Nika Lenz（Arte Refact）／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 141.429,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Random Sunday"
 		},
 		"id": "S19d35e1018926c81bd8",
 		"legacySongID": 743,
@@ -9982,7 +10395,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 143.077,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Onsoku Days!!"
 		},
 		"id": "S19d35e1018ded22c958",
 		"legacySongID": 747,
@@ -10009,7 +10423,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 152.788,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Tiger Rampage"
 		},
 		"id": "S19d35e1018f4eca928d",
 		"legacySongID": 749,
@@ -10038,7 +10453,8 @@
 		"artist": "はるまきごはん feat.めらみぽっぷ",
 		"data": {
 			"duration": 139.2,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Long Slow Arrive"
 		},
 		"id": "S19d35e101919596da2f",
 		"legacySongID": 751,
@@ -10090,7 +10506,8 @@
 		"artist": "DIVELA",
 		"data": {
 			"duration": 141.569,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Vivid Hero"
 		},
 		"id": "S19d35e10195fce5816b",
 		"legacySongID": 755,
@@ -10104,7 +10521,8 @@
 		"artist": "シンP",
 		"data": {
 			"duration": 145.415,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hikyou Sentai Urotander"
 		},
 		"id": "S19d35e10196c651bf55",
 		"legacySongID": 756,
@@ -10119,7 +10537,8 @@
 		"data": {
 			"duration": 107.391,
 			"flavorGenre": "特撮",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Ondan Choujin Gorillaizer"
 		},
 		"id": "S19d35e10197219941c1",
 		"legacySongID": 757,
@@ -10133,7 +10552,8 @@
 		"artist": "曲：Haggy Rock(Dream Monster)／歌：藤沢 柚子(CV：久保田 梨沙)、井之原 小星(CV：ももの はるな)、逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 174.242,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Geki Geki!! Gekitou Break Out!!"
 		},
 		"id": "S19d35e101986d6d1da6",
 		"legacySongID": 758,
@@ -10147,7 +10567,8 @@
 		"artist": "曲：広川恵一 (MONACA)／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 147.082,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARRED HEART -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101990c611b22",
 		"legacySongID": 759,
@@ -10161,7 +10582,8 @@
 		"artist": "曲：広川恵一 (MONACA)／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 147.082,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARRED HEART -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e1019aa5429054",
 		"legacySongID": 760,
@@ -10175,7 +10597,8 @@
 		"artist": "曲：広川恵一 (MONACA)／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 147.082,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARRED HEART -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e1019b3c55f284",
 		"legacySongID": 761,
@@ -10189,7 +10612,8 @@
 		"artist": "曲：広川恵一 (MONACA)／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 147.082,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARRED HEART -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e1019c4f864b4d",
 		"legacySongID": 762,
@@ -10203,7 +10627,8 @@
 		"artist": "曲：広川恵一 (MONACA)／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 147.082,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "STARRED HEART -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e1019dc626518a",
 		"legacySongID": 763,
@@ -10217,7 +10642,8 @@
 		"artist": "並木 学「東方幻想麻雀」",
 		"data": {
 			"duration": 152.129,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "U.N. Owen wa Kanojo nano ka? - Greater Scarlet"
 		},
 		"id": "S19d35e1019e22a5a161",
 		"legacySongID": 764,
@@ -10244,7 +10670,8 @@
 		"artist": "光吉猛修「東方幻想麻雀」",
 		"data": {
 			"duration": 139.935,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Curious Mitsuyoshi Gupai -Matsuri-"
 		},
 		"id": "S19d35e101a0a6f8a70a",
 		"legacySongID": 766,
@@ -10270,7 +10697,8 @@
 		"artist": "demetori",
 		"data": {
 			"duration": 143.032,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Youyoubakko ~ Who done it!!!"
 		},
 		"id": "S19d35e101a21d28bdcc",
 		"legacySongID": 768,
@@ -10284,7 +10712,8 @@
 		"artist": "セブンスヘブンMAXION",
 		"data": {
 			"duration": 143.5,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Yuuyami ni Mezameshi wa"
 		},
 		"id": "S19d35e101a3afcb4c15",
 		"legacySongID": 769,
@@ -10336,7 +10765,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 121.92,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Rockin' Pink Monster (Butaotome Ranko Vo Ver.)"
 		},
 		"id": "S19d35e101a8481a5eb1",
 		"legacySongID": 774,
@@ -10362,7 +10792,8 @@
 		"artist": "曲：中土智博／歌：⊿TRiEDGE [高瀬 梨緒(CV：久保 ユリカ)、結城 莉玖(CV：朝日奈 丸佳)、藍原 椿(CV：橋本 ちなみ)]",
 		"data": {
 			"duration": 151.343,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "History Breaker"
 		},
 		"id": "S19d35e101aa14f83cc9",
 		"legacySongID": 776,
@@ -10389,7 +10820,8 @@
 		"artist": "ke-ji(CERTIA)",
 		"data": {
 			"duration": 148.247,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Seelenwanderung"
 		},
 		"id": "S19d35e101ac83cdb5c3",
 		"legacySongID": 778,
@@ -10417,7 +10849,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 136.048,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Streaming Heart"
 		},
 		"id": "S19d35e101aebf0af57f",
 		"legacySongID": 780,
@@ -10431,7 +10864,8 @@
 		"artist": "kemu",
 		"data": {
 			"duration": 146.6,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Haiboku no Shounen"
 		},
 		"id": "S19d35e101af2e1395f5",
 		"legacySongID": 781,
@@ -10445,7 +10879,8 @@
 		"artist": "柊キライ",
 		"data": {
 			"duration": 159.416,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Autophagy"
 		},
 		"id": "S19d35e101b0ce098154",
 		"legacySongID": 782,
@@ -10459,7 +10894,8 @@
 		"artist": "まふまふ「#コンパス」",
 		"data": {
 			"duration": 156.25,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Machigai Sagashi"
 		},
 		"id": "S19d35e101b1e40fbaa0",
 		"legacySongID": 783,
@@ -10538,7 +10974,8 @@
 		"data": {
 			"duration": 159.75,
 			"flavorGenre": "ファンタスティックスペクタクル",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Transcend Lights -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101b7f31aa628",
 		"legacySongID": 789,
@@ -10553,7 +10990,8 @@
 		"data": {
 			"duration": 159.75,
 			"flavorGenre": "ファンタスティックスペクタクル",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Transcend Lights -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e101b8d2294b7a",
 		"legacySongID": 790,
@@ -10568,7 +11006,8 @@
 		"data": {
 			"duration": 159.75,
 			"flavorGenre": "ファンタスティックスペクタクル",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Transcend Lights -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e101b914cf8e05",
 		"legacySongID": 791,
@@ -10583,7 +11022,8 @@
 		"data": {
 			"duration": 159.75,
 			"flavorGenre": "ファンタスティックスペクタクル",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Transcend Lights -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e101baffc76d89",
 		"legacySongID": 792,
@@ -10598,7 +11038,8 @@
 		"data": {
 			"duration": 159.75,
 			"flavorGenre": "ファンタスティックスペクタクル",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Transcend Lights -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e101bb0ca7f60a",
 		"legacySongID": 793,
@@ -10636,7 +11077,8 @@
 		"artist": "曲：脇眞富（Arte Refact）／歌：星咲 あかり(CV：赤尾 ひかる)、日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 150,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Aozora Contrail"
 		},
 		"id": "S19d35e101be309eda7e",
 		"legacySongID": 796,
@@ -10676,7 +11118,8 @@
 		"data": {
 			"duration": 146.233,
 			"flavorGenre": "rain music",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Shitoshitoto"
 		},
 		"id": "S19d35e101c18c0311ea",
 		"legacySongID": 799,
@@ -10690,7 +11133,8 @@
 		"artist": "曲：央海加亥／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 178.626,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Illumination"
 		},
 		"id": "S19d35e101c2d357caa9",
 		"legacySongID": 800,
@@ -10717,7 +11161,8 @@
 		"data": {
 			"duration": 168.982,
 			"flavorGenre": "Maiden House",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Yume o Kanaeru Basho"
 		},
 		"id": "S19d35e101c48b8d7104",
 		"legacySongID": 802,
@@ -10732,7 +11177,8 @@
 		"data": {
 			"duration": 156.818,
 			"flavorGenre": "BRIGHT",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kouen no Lateral Arc"
 		},
 		"id": "S19d35e101c51339f1b8",
 		"legacySongID": 803,
@@ -10747,7 +11193,8 @@
 		"data": {
 			"duration": 138.546,
 			"flavorGenre": "BULLET HELL GABBA",
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Ongeki"
 		},
 		"id": "S19d35e101c686bbd196",
 		"legacySongID": 804,
@@ -10796,7 +11243,8 @@
 		"artist": "細江慎治",
 		"data": {
 			"duration": 138.546,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Ongeki Shin"
 		},
 		"id": "S19d35e101caaefb13e9",
 		"legacySongID": 807,
@@ -10844,7 +11292,8 @@
 		"artist": "40mP feat.シャノ",
 		"data": {
 			"duration": 160.172,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Asayake Platform"
 		},
 		"id": "S19d35e101cdcca761ac",
 		"legacySongID": 810,
@@ -10858,7 +11307,8 @@
 		"artist": "ああああ",
 		"data": {
 			"duration": 131.538,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Koko kara Hajimaru Prologue."
 		},
 		"id": "S19d35e101ced8fc8efe",
 		"legacySongID": 811,
@@ -10873,7 +11323,8 @@
 		"data": {
 			"duration": 165.472,
 			"flavorGenre": "KizunaEmotions",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kizuna wa Zutto Growing Up!!! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101cf77d64a6d",
 		"legacySongID": 812,
@@ -10888,7 +11339,8 @@
 		"data": {
 			"duration": 165.472,
 			"flavorGenre": "KizunaEmotions",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kizuna wa Zutto Growing Up!!! -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e101d0721c9a6c",
 		"legacySongID": 813,
@@ -10903,7 +11355,8 @@
 		"data": {
 			"duration": 165.472,
 			"flavorGenre": "KizunaEmotions",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kizuna wa Zutto Growing Up!!! -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e101d15d10ff78",
 		"legacySongID": 814,
@@ -10917,7 +11370,8 @@
 		"artist": "t+pazolite feat. しゃま(CV:種﨑 敦美) & みるく(CV:伊藤 あすか)",
 		"data": {
 			"duration": 160,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Tobidase! TO THE COSMIC!!"
 		},
 		"id": "S19d35e101d20c16d4e2",
 		"legacySongID": 815,
@@ -10931,7 +11385,8 @@
 		"artist": "ナユタン星人",
 		"data": {
 			"duration": 143.256,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Cosmo Pop Funclub"
 		},
 		"id": "S19d35e101d3d993c28f",
 		"legacySongID": 816,
@@ -10969,7 +11424,8 @@
 		"artist": "豚乙女",
 		"data": {
 			"duration": 136.774,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Yume Hanabi"
 		},
 		"id": "S19d35e101d640338cc4",
 		"legacySongID": 819,
@@ -10983,7 +11439,8 @@
 		"artist": "t+pazolite (HARDCORE TANO*C) feat.TANO*C ALL STARS",
 		"data": {
 			"duration": 155.351,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Hardcore Syndrome"
 		},
 		"id": "S19d35e101d7ddc37359",
 		"legacySongID": 820,
@@ -11035,7 +11492,8 @@
 		"artist": "曲：Haggy Rock & 佐藤厚仁／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 155.466,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ryouran Otome Musougeki -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e101db7f418f9d",
 		"legacySongID": 824,
@@ -11049,7 +11507,8 @@
 		"artist": "曲：Haggy Rock & 佐藤厚仁／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 155.466,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ryouran Otome Musougeki -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e101dc63209ebb",
 		"legacySongID": 825,
@@ -11063,7 +11522,8 @@
 		"artist": "曲：Haggy Rock & 佐藤厚仁／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 155.466,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ryouran Otome Musougeki -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e101ddb2808b08",
 		"legacySongID": 826,
@@ -11077,7 +11537,8 @@
 		"artist": "くるぶっこちゃん",
 		"data": {
 			"duration": 156,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Sora no Tonari"
 		},
 		"id": "S19d35e101de836f5f4b",
 		"legacySongID": 827,
@@ -11091,7 +11552,8 @@
 		"artist": "RD-Sounds feat.中恵光城",
 		"data": {
 			"duration": 149.412,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Yume Kikyou"
 		},
 		"id": "S19d35e101dfec06c47a",
 		"legacySongID": 828,
@@ -11105,7 +11567,8 @@
 		"artist": "suzu",
 		"data": {
 			"duration": 140.952,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Shukusei Shinpan"
 		},
 		"id": "S19d35e101e0eca10889",
 		"legacySongID": 829,
@@ -11120,7 +11583,8 @@
 		"data": {
 			"duration": 150.6,
 			"flavorGenre": "女子会ディスコ",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Girl's Party Planet! -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e101e1853bb581",
 		"legacySongID": 830,
@@ -11135,7 +11599,8 @@
 		"data": {
 			"duration": 150.6,
 			"flavorGenre": "女子会ディスコ",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Girl's Party Planet! -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e101e202878fa4",
 		"legacySongID": 831,
@@ -11150,7 +11615,8 @@
 		"data": {
 			"duration": 150.6,
 			"flavorGenre": "女子会ディスコ",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Girl's Party Planet! -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e101e344fbc330",
 		"legacySongID": 832,
@@ -11165,7 +11631,8 @@
 		"data": {
 			"duration": 150.6,
 			"flavorGenre": "女子会ディスコ",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Girl's Party Planet! -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e101e4eea4ca29",
 		"legacySongID": 833,
@@ -11191,7 +11658,8 @@
 		"artist": "Yunomi feat.nicamoq",
 		"data": {
 			"duration": 135.938,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Hachimitsu Adventure"
 		},
 		"id": "S19d35e101e63b3ef5e8",
 		"legacySongID": 835,
@@ -11205,7 +11673,8 @@
 		"artist": "香椎モイミ",
 		"data": {
 			"duration": 117.423,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Cat Loving"
 		},
 		"id": "S19d35e101e7f068f74c",
 		"legacySongID": 836,
@@ -11257,7 +11726,8 @@
 		"artist": "山本真央樹",
 		"data": {
 			"duration": 154.79,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kajou Ginga no Sinfonietta"
 		},
 		"id": "S19d35e101ebbef26240",
 		"legacySongID": 840,
@@ -11272,7 +11742,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101ec52c59989",
 		"legacySongID": 841,
@@ -11287,7 +11758,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e101ed3984bc94",
 		"legacySongID": 842,
@@ -11302,7 +11774,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e101ee4cc0fa59",
 		"legacySongID": 843,
@@ -11317,7 +11790,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e101efa30ac384",
 		"legacySongID": 844,
@@ -11332,7 +11806,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e101f0c9d4dbaf",
 		"legacySongID": 845,
@@ -11347,7 +11822,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e101f1befee665",
 		"legacySongID": 846,
@@ -11362,7 +11838,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e101f26e5eac92",
 		"legacySongID": 847,
@@ -11377,7 +11854,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e101f3372310af",
 		"legacySongID": 848,
@@ -11392,7 +11870,8 @@
 		"data": {
 			"duration": 220.779,
 			"flavorGenre": "MEMORY",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "HEADLINER -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e101f430dc0b89",
 		"legacySongID": 849,
@@ -11406,7 +11885,8 @@
 		"artist": "曲：脇眞富（Arte Refact）／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 150,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Aozora Contrail -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e101f53a28561c",
 		"legacySongID": 850,
@@ -11420,7 +11900,8 @@
 		"artist": "曲：脇眞富（Arte Refact）／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 150,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Aozora Contrail -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e101f6599d9b0d",
 		"legacySongID": 851,
@@ -11434,7 +11915,8 @@
 		"artist": "Chinozo",
 		"data": {
 			"duration": 127.059,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Goodbye Sengen"
 		},
 		"id": "S19d35e101f78b9346fc",
 		"legacySongID": 852,
@@ -11448,7 +11930,8 @@
 		"artist": "烏屋茶房 feat.利香",
 		"data": {
 			"duration": 158.873,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Rainycolor Watercolor"
 		},
 		"id": "S19d35e101f8e954917c",
 		"legacySongID": 853,
@@ -11475,7 +11958,8 @@
 		"artist": "t+pazolite feat.ななひら",
 		"data": {
 			"duration": 163.317,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kirameke Shoot It Now!"
 		},
 		"id": "S19d35e101fa5af9ed06",
 		"legacySongID": 855,
@@ -11489,7 +11973,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": 133.171,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Vampire"
 		},
 		"id": "S19d35e101fb66069631",
 		"legacySongID": 856,
@@ -11515,7 +12000,8 @@
 		"artist": "きくお×cosMo＠暴走P feat.影縫英",
 		"data": {
 			"duration": 143.5,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kumo no Ito"
 		},
 		"id": "S19d35e101fd17c8dced",
 		"legacySongID": 858,
@@ -11531,7 +12017,8 @@
 		"artist": "NAOKI feat.小坂りゆ",
 		"data": {
 			"duration": 135.366,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Idenshi Level Spiral"
 		},
 		"id": "S19d35e101fe56176980",
 		"legacySongID": 859,
@@ -11545,7 +12032,8 @@
 		"artist": "KOTOKO",
 		"data": {
 			"duration": 152.5,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Koi Kou Enshi"
 		},
 		"id": "S19d35e101ff9d76eb55",
 		"legacySongID": 860,
@@ -11559,7 +12047,8 @@
 		"artist": "P丸様。",
 		"data": {
 			"duration": 128.182,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "S'il Vous President"
 		},
 		"id": "S19d35e10200c6919a33",
 		"legacySongID": 861,
@@ -11573,7 +12062,8 @@
 		"artist": "kanone feat. せんざい",
 		"data": {
 			"duration": 139.083,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Hana To, Yuki To, Drum 'n' Bass."
 		},
 		"id": "S19d35e10201669a3447",
 		"legacySongID": 862,
@@ -11589,7 +12079,8 @@
 		"artist": "曲：高木龍一(Dream Monster)／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 141.997,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "YAMINABE PANIC ~Gochisou Tsumekomi Full Course~ -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e10202160faf0f",
 		"legacySongID": 863,
@@ -11603,7 +12094,8 @@
 		"artist": "曲：高木龍一(Dream Monster)／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
 			"duration": 141.997,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "YAMINABE PANIC ~Gochisou Tsumekomi Full Course~ -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e10203d730bf1c",
 		"legacySongID": 864,
@@ -11617,7 +12109,8 @@
 		"artist": "曲：高木龍一(Dream Monster)／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 141.997,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "YAMINABE PANIC ~Gochisou Tsumekomi Full Course~ -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e102040c0f5d87",
 		"legacySongID": 865,
@@ -11631,7 +12124,8 @@
 		"artist": "ツミキ",
 		"data": {
 			"duration": 138.706,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Phony"
 		},
 		"id": "S19d35e10205ed44ba1f",
 		"legacySongID": 866,
@@ -11705,7 +12199,8 @@
 		"artist": "オルタンシア「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 155.667,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kimi to Infinity"
 		},
 		"id": "S19d35e1020bdf581678",
 		"legacySongID": 872,
@@ -11719,7 +12214,8 @@
 		"artist": "KiRaRe「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 164.901,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Sensei Sensation"
 		},
 		"id": "S19d35e1020c58c8e8f8",
 		"legacySongID": 873,
@@ -11745,7 +12241,8 @@
 		"artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
 		"data": {
 			"duration": 154.629,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Ichigeki! no Thema"
 		},
 		"id": "S19d35e1020efed1d3f2",
 		"legacySongID": 875,
@@ -11797,7 +12294,8 @@
 		"artist": "曲：馬渕直純／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 162.745,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Butterfly Wave -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e102121f575001",
 		"legacySongID": 879,
@@ -11811,7 +12309,8 @@
 		"artist": "曲：馬渕直純／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 162.745,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Butterfly Wave -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e1021377db3605",
 		"legacySongID": 880,
@@ -11825,7 +12324,8 @@
 		"artist": "曲：馬渕直純／歌：皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
 			"duration": 162.745,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Butterfly Wave -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e10214fcefc952",
 		"legacySongID": 881,
@@ -11839,7 +12339,8 @@
 		"artist": "TAKU1175 ft.駄々子",
 		"data": {
 			"duration": 150.857,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Hoshi Meguri, Hate no Kimi e."
 		},
 		"id": "S19d35e1021572946760",
 		"legacySongID": 882,
@@ -11880,7 +12381,8 @@
 		"artist": "トロワアンジュ「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 108.611,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tsukikage no Traumerei"
 		},
 		"id": "S19d35e102186dd1dd61",
 		"legacySongID": 885,
@@ -11906,7 +12408,8 @@
 		"artist": "月ノ美兎",
 		"data": {
 			"duration": 166.517,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Antigravity Girl"
 		},
 		"id": "S19d35e1021a7cecb378",
 		"legacySongID": 887,
@@ -11920,7 +12423,8 @@
 		"artist": "名取さな",
 		"data": {
 			"duration": 145.833,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Mondai Nightripper!"
 		},
 		"id": "S19d35e1021be0bec1dd",
 		"legacySongID": 888,
@@ -11934,7 +12438,8 @@
 		"artist": "てにをは",
 		"data": {
 			"duration": 132.353,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Villain"
 		},
 		"id": "S19d35e1021cc4b17214",
 		"legacySongID": 889,
@@ -11948,7 +12453,8 @@
 		"artist": "稲葉曇",
 		"data": {
 			"duration": 153.469,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Lag Train"
 		},
 		"id": "S19d35e1021d9994aa5a",
 		"legacySongID": 890,
@@ -11974,7 +12480,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 159.651,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Cinderella Disco -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e1021fd06b1bd3",
 		"legacySongID": 892,
@@ -11988,7 +12495,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 159.651,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Cinderella Disco -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e1022083b02542",
 		"legacySongID": 893,
@@ -12076,7 +12584,8 @@
 		"data": {
 			"duration": 167.294,
 			"flavorGenre": "ズッ友POP",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "On Stage!"
 		},
 		"id": "S19d35e1022788d40706",
 		"legacySongID": 900,
@@ -12090,7 +12599,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：オンゲキシューターズ",
 		"data": {
 			"duration": 152.771,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Natsuyoi Starmine"
 		},
 		"id": "S19d35e10228e178ba3c",
 		"legacySongID": 901,
@@ -12116,7 +12626,8 @@
 		"artist": "hanzo",
 		"data": {
 			"duration": 157.5,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Inarabu Kokumotsu to Tameiki Majiri no Unsouya"
 		},
 		"id": "S19d35e1022ae927dce1",
 		"legacySongID": 903,
@@ -12154,7 +12665,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 152.771,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuyoi Starmine -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e1022d75684a94",
 		"legacySongID": 906,
@@ -12168,7 +12680,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 152.771,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuyoi Starmine -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e1022e9d056191",
 		"legacySongID": 907,
@@ -12182,7 +12695,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 152.771,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuyoi Starmine -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e1022ff8dfa50a",
 		"legacySongID": 908,
@@ -12196,7 +12710,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：九條 楓(CV：佳村 はるか)",
 		"data": {
 			"duration": 152.771,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuyoi Starmine -Kujō Kaede Solo ver.-"
 		},
 		"id": "S19d35e10230dff0fabf",
 		"legacySongID": 909,
@@ -12210,7 +12725,8 @@
 		"artist": "曲：本多友紀（Arte Refact）／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 152.771,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuyoi Starmine -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e10231e1bb5a8e",
 		"legacySongID": 910,
@@ -12224,7 +12740,8 @@
 		"artist": "曲：ヒゲドライバー／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 154.629,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ichigeki! no Thema -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e1023251c17cbb",
 		"legacySongID": 911,
@@ -12238,7 +12755,8 @@
 		"artist": "曲：ヒゲドライバー／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 154.629,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ichigeki! no Thema -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e102331fd8ff5f",
 		"legacySongID": 912,
@@ -12252,7 +12770,8 @@
 		"artist": "曲：ヒゲドライバー／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 154.629,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ichigeki! no Thema -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e10234558d15c6",
 		"legacySongID": 913,
@@ -12266,7 +12785,8 @@
 		"artist": "曲：ヒゲドライバー／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 154.629,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Ichigeki! no Thema -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e10235c2660066",
 		"legacySongID": 914,
@@ -12280,7 +12800,8 @@
 		"artist": "Feryquitous feat.藍月なくる",
 		"data": {
 			"duration": 135,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Tsukuyomi ni Naru"
 		},
 		"id": "S19d35e1023655ad3c07",
 		"legacySongID": 915,
@@ -12307,7 +12828,8 @@
 		"artist": "ムラサメ (CV：佐藤 みかん) 「千恋＊万花」",
 		"data": {
 			"duration": 155.357,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kizuna Hitotsu"
 		},
 		"id": "S19d35e102388769619d",
 		"legacySongID": 917,
@@ -12321,7 +12843,8 @@
 		"artist": "ビートまりお（COOL&CREATE）",
 		"data": {
 			"duration": 149.143,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Reitai Spark Ex"
 		},
 		"id": "S19d35e10239f7ecfce3",
 		"legacySongID": 918,
@@ -12349,7 +12872,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 173.6,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pokapoka Onsen Ondo -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19d35e1023b22ac441c",
 		"legacySongID": 920,
@@ -12363,7 +12887,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 173.6,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pokapoka Onsen Ondo -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e1023c7dc9edd9",
 		"legacySongID": 921,
@@ -12377,7 +12902,8 @@
 		"artist": "曲：橘亮祐、篠崎あやと／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 173.6,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Pokapoka Onsen Ondo -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e1023d83166bbb",
 		"legacySongID": 922,
@@ -12452,7 +12978,8 @@
 		"artist": "onoken",
 		"data": {
 			"duration": 155.593,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Amatsu Kaze feat. Natsukawa Yoko"
 		},
 		"id": "S19d35e102431d30f9d1",
 		"legacySongID": 928,
@@ -12531,7 +13058,8 @@
 		"artist": "世阿弥「グルーヴコースター」",
 		"data": {
 			"duration": 134.201,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Seija no Kodou"
 		},
 		"id": "S19d35e10249e90a508f",
 		"legacySongID": 934,
@@ -12548,7 +13076,8 @@
 		"artist": "Yamajet「グルーヴコースター」",
 		"data": {
 			"duration": 131.591,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Arc-en-ciel"
 		},
 		"id": "S19d35e1024a8d8f0ff1",
 		"legacySongID": 935,
@@ -12591,7 +13120,8 @@
 		"artist": "曲：Haggy Rock(Dream Monster)／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 174.242,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Geki Geki!! Gekitou Break Out!! -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e1024dde80413d",
 		"legacySongID": 938,
@@ -12605,7 +13135,8 @@
 		"artist": "曲：Haggy Rock(Dream Monster)／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 174.242,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Geki Geki!! Gekitou Break Out!! -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e1024e1ab41bf5",
 		"legacySongID": 939,
@@ -12619,7 +13150,8 @@
 		"artist": "曲：Haggy Rock(Dream Monster)／歌：逢坂 茜(CV：大空 直美)",
 		"data": {
 			"duration": 174.242,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Geki Geki!! Gekitou Break Out!! -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e1024faa8d4199",
 		"legacySongID": 940,
@@ -12658,7 +13190,8 @@
 		"artist": "温泉むすめ 日中早百合（CV:春野 杏）「温泉むすめ」",
 		"data": {
 			"duration": 163.358,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Yokan no Signal"
 		},
 		"id": "S19d35e10252d4e3d460",
 		"legacySongID": 943,
@@ -12684,7 +13217,8 @@
 		"artist": "南ノ南",
 		"data": {
 			"duration": 154.909,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "SEKAI-chan to KAFU-chan no Otsukai Gassoukyoku"
 		},
 		"id": "S19d35e10254af0da2ba",
 		"legacySongID": 945,
@@ -12699,7 +13233,8 @@
 		"artist": "ナナホシ管弦楽団/巡音ルカ/MORE MORE JUMP！「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 92.386,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Parasol Cider"
 		},
 		"id": "S19d35e102552844f63e",
 		"legacySongID": 946,
@@ -12713,7 +13248,8 @@
 		"artist": "じん/初音ミク/Leo/need「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」",
 		"data": {
 			"duration": 134.315,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Stella"
 		},
 		"id": "S19d35e102565c9fa428",
 		"legacySongID": 947,
@@ -12739,7 +13275,8 @@
 		"artist": "Neko Hacker feat.うごくちゃん",
 		"data": {
 			"duration": 141.75,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Tsuppare! Nyankee Tamashii"
 		},
 		"id": "S19d35e102587897055c",
 		"legacySongID": 949,
@@ -12780,7 +13317,8 @@
 		"artist": "HIMEHINA",
 		"data": {
 			"duration": 184.966,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "3bun Girl"
 		},
 		"id": "S19d35e1025b94c6215f",
 		"legacySongID": 952,
@@ -12797,7 +13335,8 @@
 		"artist": "なきそ",
 		"data": {
 			"duration": 122.087,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dokuzu"
 		},
 		"id": "S19d35e1025c30516335",
 		"legacySongID": 953,
@@ -12811,7 +13350,8 @@
 		"artist": "曲：矢鴇つかさ & 脇眞富（Arte Refact）／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 158.382,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Hangeki! Totsugeki! Back To Back! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e1025d32fe402a",
 		"legacySongID": 954,
@@ -12825,7 +13365,8 @@
 		"artist": "曲：矢鴇つかさ & 脇眞富（Arte Refact）／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 158.382,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Hangeki! Totsugeki! Back To Back! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e1025e8bf4e7a6",
 		"legacySongID": 955,
@@ -12839,7 +13380,8 @@
 		"artist": "鳳 ここな(CV.石見舞菜香)、静香(CV.長谷川育美)、カトリナ・グリーベル(CV.天城サリー)、新妻八恵(CV.長縄まりあ)、柳場ぱんだ(CV.大空直美)、流石知冴(CV.佐々木李子)",
 		"data": {
 			"duration": 116.035,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Sirius no Kagayaki no You ni"
 		},
 		"id": "S19d35e1025f98635ba8",
 		"legacySongID": 956,
@@ -12865,7 +13407,8 @@
 		"artist": "いよわ",
 		"data": {
 			"duration": 145.636,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kyuukurarin"
 		},
 		"id": "S19d35e102614fab1280",
 		"legacySongID": 958,
@@ -12943,7 +13486,8 @@
 		"artist": "曲：森羅万象／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 144.118,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Happy Shooting Star"
 		},
 		"id": "S19d35e10267833c3b1b",
 		"legacySongID": 964,
@@ -12983,7 +13527,8 @@
 		"data": {
 			"duration": 167.294,
 			"flavorGenre": "ズッ友POP",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "On Stage! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e1026ae7ee4aa7",
 		"legacySongID": 967,
@@ -12998,7 +13543,8 @@
 		"data": {
 			"duration": 167.294,
 			"flavorGenre": "ズッ友POP",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "On Stage! -Shikimiya Mana Solo ver.-"
 		},
 		"id": "S19d35e1026b7db63cf8",
 		"legacySongID": 968,
@@ -13013,7 +13559,8 @@
 		"data": {
 			"duration": 166.568,
 			"flavorGenre": "ズッ友ROCK",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Prominence -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e1026c2ad1963f",
 		"legacySongID": 969,
@@ -13028,7 +13575,8 @@
 		"data": {
 			"duration": 166.568,
 			"flavorGenre": "ズッ友ROCK",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Prominence -Shikimiya Aone Solo ver.-"
 		},
 		"id": "S19d35e1026d883e622e",
 		"legacySongID": 970,
@@ -13042,7 +13590,8 @@
 		"artist": "千寿 暦(CV.鳥部万里子)、ラモーナ・ウォルフ(CV.田中美海)、王 雪(CV.花井美春)、リリヤ・クルトベイ(CV.安齋由香里)、与那国緋花里(CV.下地紫野)",
 		"data": {
 			"duration": 95.647,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Planetarium Revue"
 		},
 		"id": "S19d35e1026e968ef8cf",
 		"legacySongID": 971,
@@ -13056,7 +13605,8 @@
 		"artist": "七条レタスグループ",
 		"data": {
 			"duration": 120.016,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Scarlet Keisatsu no Ghetto Patrol 24 Ji"
 		},
 		"id": "S19d35e1026fce1b0429",
 		"legacySongID": 972,
@@ -13073,7 +13623,8 @@
 		"data": {
 			"duration": 149.511,
 			"flavorGenre": "Progressive Drum&Bass",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Dramatic...? -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e10270cbf97f5d",
 		"legacySongID": 973,
@@ -13088,7 +13639,8 @@
 		"data": {
 			"duration": 149.511,
 			"flavorGenre": "Progressive Drum&Bass",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Dramatic...? -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e10271b6237be5",
 		"legacySongID": 974,
@@ -13103,7 +13655,8 @@
 		"data": {
 			"duration": 149.511,
 			"flavorGenre": "Progressive Drum&Bass",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Dramatic...? -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e10272120d5916",
 		"legacySongID": 975,
@@ -13118,7 +13671,8 @@
 		"data": {
 			"duration": 149.511,
 			"flavorGenre": "Progressive Drum&Bass",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Dramatic...? -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e102730c88a46c",
 		"legacySongID": 976,
@@ -13132,7 +13686,8 @@
 		"artist": "あべにゅうぷろじぇくと feat.エンジェルオールスターズ(めぐる・すみれ・遥・葵・クルミ・テスラ・ナイン)",
 		"data": {
 			"duration": 157.371,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Angel Pitagori Houmitai!"
 		},
 		"id": "S19d35e10274e22970a6",
 		"legacySongID": 977,
@@ -13146,7 +13701,8 @@
 		"artist": "周防パトラ",
 		"data": {
 			"duration": 149.538,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Idainaru Akuma wa Jitsuwa Daitenshi Patra-chan-sama nano da!"
 		},
 		"id": "S19d35e10275241dfabb",
 		"legacySongID": 978,
@@ -13160,7 +13716,8 @@
 		"artist": "周防パトラ",
 		"data": {
 			"duration": 164.333,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Heart Thermography"
 		},
 		"id": "S19d35e1027659c867af",
 		"legacySongID": 979,
@@ -13174,7 +13731,8 @@
 		"artist": "曲：中土智博／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 151.343,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "History Breaker -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10277d502cf84",
 		"legacySongID": 980,
@@ -13188,7 +13746,8 @@
 		"artist": "曲：中土智博／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 151.343,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "History Breaker -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e102781027596e",
 		"legacySongID": 981,
@@ -13202,7 +13761,8 @@
 		"artist": "曲：中土智博／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 151.343,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "History Breaker -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e102798cc2d400",
 		"legacySongID": 982,
@@ -13240,7 +13800,8 @@
 		"artist": "doriko",
 		"data": {
 			"duration": 153,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Romeo to Cinderella"
 		},
 		"id": "S19d35e1027c91ccc358",
 		"legacySongID": 985,
@@ -13255,7 +13816,8 @@
 		"artist": "OSTER project",
 		"data": {
 			"duration": 157.333,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Ohime-sama ni Naritai No!"
 		},
 		"id": "S19d35e1027d0c066b64",
 		"legacySongID": 986,
@@ -13269,7 +13831,8 @@
 		"artist": "なみぐる feat.ずんだもん",
 		"data": {
 			"duration": 155.459,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Zunda Party Night"
 		},
 		"id": "S19d35e1027e4e30dfce",
 		"legacySongID": 987,
@@ -13283,7 +13846,8 @@
 		"artist": "かねこちはる",
 		"data": {
 			"duration": 149.063,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Yukiotoko"
 		},
 		"id": "S19d35e1027f7b3f76a4",
 		"legacySongID": 988,
@@ -13355,7 +13919,8 @@
 		"data": {
 			"duration": 146.62,
 			"flavorGenre": "classical crossover pop",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Fuujin Raijin"
 		},
 		"id": "S19d35e102842b7f99cc",
 		"legacySongID": 993,
@@ -13382,7 +13947,8 @@
 		"data": {
 			"duration": 148.429,
 			"flavorGenre": "Symphonic Hardcore",
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Entei no Gray Euchronia"
 		},
 		"id": "S19d35e10286889b3243",
 		"legacySongID": 995,
@@ -13396,7 +13962,8 @@
 		"artist": "PRASTIK DANCEFLOOR",
 		"data": {
 			"duration": 144.205,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Meiran Genbu"
 		},
 		"id": "S19d35e10287e42dd54a",
 		"legacySongID": 996,
@@ -13410,7 +13977,8 @@
 		"artist": "森羅万象",
 		"data": {
 			"duration": 147.606,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Gachikoi Labyrinth"
 		},
 		"id": "S19d35e10288d61e011c",
 		"legacySongID": 997,
@@ -13424,7 +13992,8 @@
 		"artist": "Junky",
 		"data": {
 			"duration": 155.571,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Melancholic"
 		},
 		"id": "S19d35e1028967c10523",
 		"legacySongID": 998,
@@ -13450,7 +14019,8 @@
 		"artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
 		"data": {
 			"duration": 108.857,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Icing Dream"
 		},
 		"id": "S19d35e1028bb84c787c",
 		"legacySongID": 1000,
@@ -13476,7 +14046,8 @@
 		"artist": "トライアムトーン「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 162.476,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Thunder Rescue!"
 		},
 		"id": "S19d35e1028dd773c734",
 		"legacySongID": 1002,
@@ -13490,7 +14061,8 @@
 		"artist": "アルシュシュ「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 103.597,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Awahakuchuumu"
 		},
 		"id": "S19d35e1028e51d27e66",
 		"legacySongID": 1003,
@@ -13505,7 +14077,8 @@
 		"data": {
 			"duration": 148.937,
 			"flavorGenre": "Spooky Core",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Tricky Treat!!! -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e1028f261ace14",
 		"legacySongID": 1004,
@@ -13520,7 +14093,8 @@
 		"data": {
 			"duration": 148.937,
 			"flavorGenre": "Spooky Core",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Tricky Treat!!! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10290a2a7cc8a",
 		"legacySongID": 1005,
@@ -13535,7 +14109,8 @@
 		"data": {
 			"duration": 148.937,
 			"flavorGenre": "Spooky Core",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Tricky Treat!!! -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e1029161361227",
 		"legacySongID": 1006,
@@ -13549,7 +14124,8 @@
 		"artist": "曲：渡部チェル／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e102924c8404f5",
 		"legacySongID": 1007,
@@ -13563,7 +14139,8 @@
 		"artist": "曲：渡部チェル／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Inohara Koboshi Solo ver.-"
 		},
 		"id": "S19d35e10293ba494b2b",
 		"legacySongID": 1008,
@@ -13577,7 +14154,8 @@
 		"artist": "曲：渡部チェル／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Suzushima Arisu Solo ver.-"
 		},
 		"id": "S19d35e102941738ddb5",
 		"legacySongID": 1009,
@@ -13591,7 +14169,8 @@
 		"artist": "曲：渡部チェル／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e1029503da7401",
 		"legacySongID": 1010,
@@ -13605,7 +14184,8 @@
 		"artist": "曲：渡部チェル／歌：皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Sumeragi Setsuna Solo ver.-"
 		},
 		"id": "S19d35e10296b0502e29",
 		"legacySongID": 1011,
@@ -13631,7 +14211,8 @@
 		"artist": "しーけー feat.ricono",
 		"data": {
 			"duration": 151.563,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Amber Chronicle"
 		},
 		"id": "S19d35e102982af74965",
 		"legacySongID": 1013,
@@ -13645,7 +14226,8 @@
 		"artist": "RouteHeart（七海ロナ・藤宮コトハ）",
 		"data": {
 			"duration": 155.625,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Love Labyrinth"
 		},
 		"id": "S19d35e10299049c76d2",
 		"legacySongID": 1014,
@@ -13659,7 +14241,8 @@
 		"artist": "Sputrip（暁月クララ・香鳴ハノン・常磐カナメ）",
 		"data": {
 			"duration": 153.443,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Idol Life Flight"
 		},
 		"id": "S19d35e1029ac0d6f0e2",
 		"legacySongID": 1015,
@@ -13673,7 +14256,8 @@
 		"artist": "REGALILIA（江波キョウカ・鬼多見アユム）",
 		"data": {
 			"duration": 136.389,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kiraira"
 		},
 		"id": "S19d35e1029b0b67976d",
 		"legacySongID": 1016,
@@ -13687,7 +14271,8 @@
 		"artist": "Endorfin.",
 		"data": {
 			"duration": 139.784,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Slow Arise"
 		},
 		"id": "S19d35e1029c386dd8c5",
 		"legacySongID": 1017,
@@ -13725,7 +14310,8 @@
 		"artist": "REDALiCE「WACCA」",
 		"data": {
 			"duration": 145.826,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Crimson Teiou"
 		},
 		"id": "S19d35e1029f4acb59e8",
 		"legacySongID": 1020,
@@ -13752,7 +14338,8 @@
 		"artist": "かめりあ",
 		"data": {
 			"duration": 157.612,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hiasobi"
 		},
 		"id": "S19d35e102a14dfff000",
 		"legacySongID": 1022,
@@ -13766,7 +14353,8 @@
 		"artist": "Kai",
 		"data": {
 			"duration": 129.846,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Sayonara Princess"
 		},
 		"id": "S19d35e102a2c525a7cd",
 		"legacySongID": 1023,
@@ -13780,7 +14368,8 @@
 		"artist": "千寿 いろは(CV.岡咲 美保)、白丸 美兎(CV.近藤 玲奈)、阿岐留 カミラ(CV.若井 友希)、猫足 蕾(CV.芹澤 優)、本巣 叶羽(CV.赤尾 ひかる)",
 		"data": {
 			"duration": 92.4,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Deae Ex Machina"
 		},
 		"id": "S19d35e102a3ebc1f86d",
 		"legacySongID": 1024,
@@ -13869,7 +14458,8 @@
 		"artist": "REDALiCE vs DJ Myosuke feat. DELUTAYA「Arcaea」",
 		"data": {
 			"duration": 161.854,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "KYOREN ROMANCE"
 		},
 		"id": "S19d35e102aa98d8bbd9",
 		"legacySongID": 1031,
@@ -13907,7 +14497,8 @@
 		"artist": "REDALiCE vs USAO「Arcaea」",
 		"data": {
 			"duration": 145.171,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "SAIKYO STRONGER"
 		},
 		"id": "S19d35e102ad648b3da3",
 		"legacySongID": 1034,
@@ -13922,7 +14513,8 @@
 		"artist": "La prière(棗いつき、藍月なくる、nayuta)",
 		"data": {
 			"duration": 137.294,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kimi Yo"
 		},
 		"id": "S19d35e102ae65cbcffb",
 		"legacySongID": 1035,
@@ -13936,7 +14528,8 @@
 		"artist": "La prière(棗いつき、藍月なくる、nayuta)",
 		"data": {
 			"duration": 104.889,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Koi no Illusionista"
 		},
 		"id": "S19d35e102afec4f56f5",
 		"legacySongID": 1036,
@@ -13974,7 +14567,8 @@
 		"artist": "DJ Raisei",
 		"data": {
 			"duration": 128.471,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Kurutta Minzoku 2 PRAVARGYAZOOQA"
 		},
 		"id": "S19d35e102b2f15f2c31",
 		"legacySongID": 1039,
@@ -13990,7 +14584,8 @@
 		"artist": "光収容",
 		"data": {
 			"duration": 125,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Kodoku no Hate"
 		},
 		"id": "S19d35e102b33cfbb4ce",
 		"legacySongID": 1040,
@@ -14004,7 +14599,8 @@
 		"artist": "TOKOTOKO（西沢さんP）",
 		"data": {
 			"duration": 159.324,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Yomosugara Kimi Omofu"
 		},
 		"id": "S19d35e102b42fd54082",
 		"legacySongID": 1041,
@@ -14018,7 +14614,8 @@
 		"artist": "月紫アリア",
 		"data": {
 			"duration": 179.348,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Aria no Saikyou Shimobe Keikaku"
 		},
 		"id": "S19d35e102b5026f8b91",
 		"legacySongID": 1042,
@@ -14056,7 +14653,8 @@
 		"artist": "テヅカ feat. 獅子神レオナ",
 		"data": {
 			"duration": 153.786,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Gunjou Signal"
 		},
 		"id": "S19d35e102b8b7fcde7c",
 		"legacySongID": 1045,
@@ -14070,7 +14668,8 @@
 		"artist": "曲：大国奏音／歌：東雲 つむぎ(CV：和泉 風花)、井之原 小星(CV：ももの はるな)、星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 161.053,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Tsumugiboshi"
 		},
 		"id": "S19d35e102b9def09e01",
 		"legacySongID": 1046,
@@ -14109,7 +14708,8 @@
 		"artist": "橋本みゆき",
 		"data": {
 			"duration": 149,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gensou Roukaku"
 		},
 		"id": "S19d35e102bcab413108",
 		"legacySongID": 1049,
@@ -14209,7 +14809,8 @@
 		"data": {
 			"duration": 150.216,
 			"flavorGenre": "High Touch! SKA-ROCK",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "MAKING! High Touch! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e102c3efb08c27",
 		"legacySongID": 1056,
@@ -14224,7 +14825,8 @@
 		"data": {
 			"duration": 150.216,
 			"flavorGenre": "High Touch! SKA-ROCK",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "MAKING! High Touch! -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e102c459855979",
 		"legacySongID": 1057,
@@ -14239,7 +14841,8 @@
 		"data": {
 			"duration": 150.216,
 			"flavorGenre": "High Touch! SKA-ROCK",
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "MAKING! High Touch! -Ōsaka Akane Solo ver.-"
 		},
 		"id": "S19d35e102c5a536f052",
 		"legacySongID": 1058,
@@ -14253,7 +14856,8 @@
 		"artist": "曲：篠崎あやと、橘亮祐／歌：日向 千夏(CV：岡咲 美保)",
 		"data": {
 			"duration": 142.125,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Susume! My Way! -Hinata Chinatsu Solo ver.-"
 		},
 		"id": "S19d35e102c63e56b711",
 		"legacySongID": 1059,
@@ -14267,7 +14871,8 @@
 		"artist": "曲：篠崎あやと、橘亮祐／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 142.125,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Susume! My Way! -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e102c7d4c59140",
 		"legacySongID": 1060,
@@ -14281,7 +14886,8 @@
 		"artist": "曲：篠崎あやと、橘亮祐／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 142.125,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Susume! My Way! -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e102c8ba60a0a2",
 		"legacySongID": 1061,
@@ -14356,7 +14962,8 @@
 		"artist": "COOL&CREATE feat.ビートまりおとまろん「東方ダンマクカグラ」",
 		"data": {
 			"duration": 134.978,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Matsuyoi Nightbug"
 		},
 		"id": "S19d35e102cefa88c03a",
 		"legacySongID": 1067,
@@ -14394,7 +15001,8 @@
 		"artist": "sasakure.UK",
 		"data": {
 			"duration": 125.69,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Tondemo Wonders"
 		},
 		"id": "S19d35e102d187069ff0",
 		"legacySongID": 1070,
@@ -14408,7 +15016,8 @@
 		"artist": "サツキ feat.初音ミク・重音テト",
 		"data": {
 			"duration": 157.297,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Mesmerizer"
 		},
 		"id": "S19d35e102d2755adc25",
 		"legacySongID": 1071,
@@ -14423,7 +15032,8 @@
 		"artist": "吉田夜世",
 		"data": {
 			"duration": 140.588,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Override"
 		},
 		"id": "S19d35e102d3ed6ebe2d",
 		"legacySongID": 1072,
@@ -14479,7 +15089,8 @@
 		"artist": "Tanchiky feat.からめる",
 		"data": {
 			"duration": 145.172,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kyoumei Gattai Otogelion"
 		},
 		"id": "S19d35e102d7e9e98fb7",
 		"legacySongID": 1076,
@@ -14493,7 +15104,8 @@
 		"artist": "アーリャ（CV：上坂すみれ）",
 		"data": {
 			"duration": 98.736,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ichiban Kagayaku Hoshi"
 		},
 		"id": "S19d35e102d823e1370d",
 		"legacySongID": 1077,
@@ -14507,7 +15119,8 @@
 		"artist": "星街すいせい(ホロライブ)",
 		"data": {
 			"duration": 168,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Bibbidiba"
 		},
 		"id": "S19d35e102d9a527f947",
 		"legacySongID": 1078,
@@ -14533,7 +15146,8 @@
 		"artist": "曲：eba／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 143.505,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Honnouteki Survivor -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e102dbac8f0926",
 		"legacySongID": 1080,
@@ -14547,7 +15161,8 @@
 		"artist": "曲：eba／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 143.505,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Honnouteki Survivor -Yūki Riku Solo ver.-"
 		},
 		"id": "S19d35e102dce7f42ab2",
 		"legacySongID": 1081,
@@ -14561,7 +15176,8 @@
 		"artist": "曲：eba／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 143.505,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Honnouteki Survivor -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e102dd5569bc3e",
 		"legacySongID": 1082,
@@ -14575,7 +15191,8 @@
 		"artist": "曲：渡部チェル／歌：藤沢 柚子(CV：保科 李沙)",
 		"data": {
 			"duration": 152.79,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Individual on parade! -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e102de18d519d0",
 		"legacySongID": 1083,
@@ -14589,7 +15206,8 @@
 		"artist": "柊かえ（CV:立花芽恵夢）「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 120,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Gadget wa Princess"
 		},
 		"id": "S19d35e102df5d521428",
 		"legacySongID": 1084,
@@ -14603,7 +15221,8 @@
 		"artist": "テトラルキア「Re:ステージ！プリズムステップ」",
 		"data": {
 			"duration": 93.818,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Unison Monologue"
 		},
 		"id": "S19d35e102e08436a355",
 		"legacySongID": 1085,
@@ -14629,7 +15248,8 @@
 		"artist": "曲：KENSUKE／歌：結城 莉玖(CV：朝日奈 丸佳)",
 		"data": {
 			"duration": 173,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Gaotto!! Saikyou Party Night"
 		},
 		"id": "S19d35e102e29076e7b6",
 		"legacySongID": 1087,
@@ -14643,7 +15263,8 @@
 		"artist": "曲：テラ(少女理論観測所)／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 166.304,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Tsubaki Uruwashi"
 		},
 		"id": "S19d35e102e39ec183da",
 		"legacySongID": 1088,
@@ -14736,7 +15357,8 @@
 		"artist": "歌：長瀬有花／曲：いよわ",
 		"data": {
 			"duration": 133,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Orange Scale"
 		},
 		"id": "S19d35e102ea30c0c83a",
 		"legacySongID": 1095,
@@ -14750,7 +15372,8 @@
 		"artist": "歌：長瀬有花／曲：いよわ",
 		"data": {
 			"duration": 171.378,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hon no Kansou"
 		},
 		"id": "S19d35e102eb05d4d146",
 		"legacySongID": 1096,
@@ -14764,7 +15387,8 @@
 		"artist": "ジョー・力一",
 		"data": {
 			"duration": 139.13,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Latest Showman"
 		},
 		"id": "S19d35e102ecafd3da75",
 		"legacySongID": 1097,
@@ -14778,7 +15402,8 @@
 		"artist": "名取さな",
 		"data": {
 			"duration": 121.444,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Ikkai Kaite Sayounara"
 		},
 		"id": "S19d35e102ede618c9b9",
 		"legacySongID": 1098,
@@ -14857,7 +15482,8 @@
 		"artist": "原口沙輔 feat.重音テト",
 		"data": {
 			"duration": 128.8,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hitomania"
 		},
 		"id": "S19d35e102f32f97a293",
 		"legacySongID": 1104,
@@ -14872,7 +15498,8 @@
 		"artist": "マサラダ",
 		"data": {
 			"duration": 159.882,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Liar Dancer"
 		},
 		"id": "S19d35e102f4201193e5",
 		"legacySongID": 1105,
@@ -14886,7 +15513,8 @@
 		"artist": "柊マグネタイト",
 		"data": {
 			"duration": 160.8,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Realize"
 		},
 		"id": "S19d35e102f5899c0300",
 		"legacySongID": 1106,
@@ -14914,7 +15542,8 @@
 		"artist": "曲：脇眞富／歌：オンゲキシューターズ",
 		"data": {
 			"duration": 154.167,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Papipupe Popping! Talk!"
 		},
 		"id": "S19d35e102f74e09b1db",
 		"legacySongID": 1108,
@@ -14976,7 +15605,8 @@
 		"artist": "歌：櫻川めぐ／曲：堀江晶太",
 		"data": {
 			"duration": 149.915,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Issatsu no Arrow"
 		},
 		"id": "S19d35e102fcfe0a2bf9",
 		"legacySongID": 1113,
@@ -15014,7 +15644,8 @@
 		"artist": "SUGAR RUSH「ブルーアーカイブ -Blue Archive-」",
 		"data": {
 			"duration": 158.333,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Irodori Canvas"
 		},
 		"id": "S19d35e102fff744fd68",
 		"legacySongID": 1116,
@@ -15064,7 +15695,8 @@
 		"artist": "曲：穴山大輔, 水野健治／歌：藤沢 柚子(CV：久保田 梨沙)",
 		"data": {
 			"duration": 178.729,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuiro Hanabi -Fujisawa Yuzu Solo ver.-"
 		},
 		"id": "S19d35e1030325ec42a4",
 		"legacySongID": 1120,
@@ -15078,7 +15710,8 @@
 		"artist": "曲：穴山大輔, 水野健治／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 178.729,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Natsuiro Hanabi -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19d35e10304fe926129",
 		"legacySongID": 1121,
@@ -15092,7 +15725,8 @@
 		"artist": "曲：Powerless／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 150.529,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Iudicium “Apocalypsis Mix” -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19d35e1030554c53998",
 		"legacySongID": 1122,
@@ -15107,7 +15741,8 @@
 		"artist": "曲：Powerless／歌：柏木 美亜(CV：和氣 あず未)",
 		"data": {
 			"duration": 150.529,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Iudicium “Apocalypsis Mix” -Kashiwagi Mia Solo ver.-"
 		},
 		"id": "S19d35e103066d165054",
 		"legacySongID": 1123,
@@ -15122,7 +15757,8 @@
 		"artist": "曲：アオワイファイ／歌：星咲 あかり(CV：赤尾 ひかる)",
 		"data": {
 			"duration": 163.432,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "WakeUP MakeUP FEVER! -Hoshizaki Akari Solo ver.-"
 		},
 		"id": "S19d35e10307073bbed4",
 		"legacySongID": 1124,
@@ -15136,7 +15772,8 @@
 		"artist": "曲：アオワイファイ／歌：高瀬 梨緒(CV：久保 ユリカ)",
 		"data": {
 			"duration": 163.432,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "WakeUP MakeUP FEVER! -Takase Rio Solo ver.-"
 		},
 		"id": "S19d35e10308e2635956",
 		"legacySongID": 1125,
@@ -15150,7 +15787,8 @@
 		"artist": "曲：アオワイファイ／歌：藍原 椿(CV：橋本 ちなみ)",
 		"data": {
 			"duration": 163.432,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "WakeUP MakeUP FEVER! -Aihara Tsubaki Solo ver.-"
 		},
 		"id": "S19d35e1030944fa1b22",
 		"legacySongID": 1126,
@@ -15164,7 +15802,8 @@
 		"artist": "曲：アオワイファイ／歌：桜井 春菜(CV：近藤 玲奈)",
 		"data": {
 			"duration": 163.432,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "WakeUP MakeUP FEVER! -Sakurai Haruna Solo ver.-"
 		},
 		"id": "S19d35e1030a7c301d24",
 		"legacySongID": 1127,
@@ -15178,7 +15817,8 @@
 		"artist": "曲：アオワイファイ／歌：東雲 つむぎ(CV：和泉 風花)",
 		"data": {
 			"duration": 163.432,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "WakeUP MakeUP FEVER! -Shinonome Tsumugi Solo ver.-"
 		},
 		"id": "S19d35e1030b7f1e3f8f",
 		"legacySongID": 1128,
@@ -15192,7 +15832,8 @@
 		"artist": "曲：TAG／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": 157.895,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Suki ga Tomaranai"
 		},
 		"id": "S19e3332aef6eb1234e7",
 		"legacySongID": 1129,
@@ -15220,7 +15861,8 @@
 		"artist": "igel",
 		"data": {
 			"duration": 141.489,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Tenga Yuuei"
 		},
 		"id": "S19e3332aef86260e3b7",
 		"legacySongID": 1131,
@@ -15297,7 +15939,8 @@
 		"artist": "蓮ノ空女学院スクールアイドルクラブ",
 		"data": {
 			"duration": 119.027,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "I Do Me"
 		},
 		"id": "S19e3332aefe04a2b076",
 		"legacySongID": 1137,
@@ -15311,7 +15954,8 @@
 		"artist": "すりぃ×相沢",
 		"data": {
 			"duration": 161.711,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Ambivalence"
 		},
 		"id": "S19e3332aeff135ad48a",
 		"legacySongID": 1138,
@@ -15325,7 +15969,8 @@
 		"artist": "Shu feat. 七海うらら",
 		"data": {
 			"duration": 155.4,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Oshama Na Princess"
 		},
 		"id": "S19e3332af00113c17e7",
 		"legacySongID": 1139,
@@ -15353,7 +15998,8 @@
 		"artist": "40mP × sasakure.UK",
 		"data": {
 			"duration": 133.077,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Hajimari no Mirai"
 		},
 		"id": "S19e3332af02e8bdb1e6",
 		"legacySongID": 1141,
@@ -15379,7 +16025,8 @@
 		"artist": "雨良 Amala",
 		"data": {
 			"duration": 159.231,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Dai Dai Dai Dai Dai Kirai"
 		},
 		"id": "S19e3332af04352504ca",
 		"legacySongID": 1143,
@@ -15419,7 +16066,8 @@
 		"artist": "taichi hiyama",
 		"data": {
 			"duration": 142.394,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Rokurensei"
 		},
 		"id": "S19e3332af0709877b8d",
 		"legacySongID": 1146,
@@ -15433,7 +16081,8 @@
 		"artist": "ぼっちぼろまる",
 		"data": {
 			"duration": 140.118,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Tonosama Beam"
 		},
 		"id": "S19e3332af089900ec7f",
 		"legacySongID": 1147,
@@ -15447,7 +16096,8 @@
 		"artist": "Palette Project（暁月クララ、七海ロナ、常磐カナメ、藤宮コトハ、江波キョウカ、鬼多見アユム、香鳴ハノン）",
 		"data": {
 			"duration": 154.915,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kimiiro Chronicle"
 		},
 		"id": "S19e3332af093304fbbe",
 		"legacySongID": 1148,
@@ -15461,7 +16111,8 @@
 		"artist": "RouteHeart（七海ロナ・藤宮コトハ）",
 		"data": {
 			"duration": 158.118,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Tokimeki Kindan Shoujou"
 		},
 		"id": "S19e3332af0a32c35d59",
 		"legacySongID": 1149,
@@ -15475,7 +16126,8 @@
 		"artist": "Sputrip（暁月クララ・香鳴ハノン・常磐カナメ）",
 		"data": {
 			"duration": 184.941,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Hikari no Wakusei"
 		},
 		"id": "S19e3332af0ba9cbcb25",
 		"legacySongID": 1150,
@@ -15502,7 +16154,8 @@
 		"data": {
 			"duration": 129.375,
 			"flavorGenre": "tatamiser",
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Ukiyoe Yokochou"
 		},
 		"id": "S19e3332af0d47514528",
 		"legacySongID": 1152,
@@ -15528,7 +16181,8 @@
 		"artist": "いるかアイス × Tanchiky feat. 初音ミク",
 		"data": {
 			"duration": 152.211,
-			"genre": "VARIETY"
+			"genre": "VARIETY",
+			"titleEn": "Yumetsumugi no Wanderer"
 		},
 		"id": "S19e3332af0f1377c1be",
 		"legacySongID": 1154,
@@ -15542,7 +16196,8 @@
 		"artist": "かいりきベア",
 		"data": {
 			"duration": 159,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Saiai Jinsei Runner"
 		},
 		"id": "S19e3332af10fb0a20a0",
 		"legacySongID": 1155,
@@ -15556,7 +16211,8 @@
 		"artist": "cosMo＠暴走P",
 		"data": {
 			"duration": 146.436,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "We Are Pico Pico Hammers!!!!"
 		},
 		"id": "S19e3332af119595518a",
 		"legacySongID": 1156,
@@ -15570,7 +16226,8 @@
 		"artist": "雄之助",
 		"data": {
 			"duration": 153.882,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Jet Black"
 		},
 		"id": "S19e3332af12f2988b8a",
 		"legacySongID": 1157,
@@ -15584,7 +16241,8 @@
 		"artist": "Ponchi♪ feat.初音ミク",
 		"data": {
 			"duration": 159.948,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Treasure Garden"
 		},
 		"id": "S19e3332af13713a2c75",
 		"legacySongID": 1158,
@@ -15598,7 +16256,8 @@
 		"artist": "かめりあ",
 		"data": {
 			"duration": 141.159,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Denkousekka"
 		},
 		"id": "S19e3332af14ab165ddb",
 		"legacySongID": 1159,
@@ -15612,7 +16271,8 @@
 		"artist": "ARM＋夕野ヨシミ (IOSYS) feat.藤咲かりん",
 		"data": {
 			"duration": 123.333,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Marisa wa Taihen Na Mono wo Nusunde Ikimashita"
 		},
 		"id": "S19e3332af151516e9e5",
 		"legacySongID": 1160,
@@ -15627,7 +16287,8 @@
 		"artist": "少女フラクタル",
 		"data": {
 			"duration": 151.875,
-			"genre": "東方Project"
+			"genre": "東方Project",
+			"titleEn": "Samayoi no Mei ~Amatsu~"
 		},
 		"id": "S19e3332af16ab6463ff",
 		"legacySongID": 1161,
@@ -15641,7 +16302,8 @@
 		"artist": "きくお",
 		"data": {
 			"duration": 130.696,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Aishite Aishite Aishite"
 		},
 		"id": "S19e3332af172bd26e95",
 		"legacySongID": 1162,
@@ -15655,7 +16317,8 @@
 		"artist": "なきそ",
 		"data": {
 			"duration": 119.478,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Omajinai"
 		},
 		"id": "S19e3332af18aaad19ad",
 		"legacySongID": 1163,
@@ -15669,7 +16332,8 @@
 		"artist": "アオワイファイ feat.犀羅",
 		"data": {
 			"duration": 136.8,
-			"genre": "チュウマイ"
+			"genre": "チュウマイ",
+			"titleEn": "Furafurafura,"
 		},
 		"id": "S19e3332af198ac2bf59",
 		"legacySongID": 1164,
@@ -15743,7 +16407,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：三角 葵(CV：春野 杏)",
 		"data": {
 			"duration": 158.63,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kanjou Acceleration -Misumi Aoi Solo ver.-"
 		},
 		"id": "S19e3332af1fd9db4e1f",
 		"legacySongID": 1170,
@@ -15757,7 +16422,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：早乙女 彩華(CV：中島 唯)",
 		"data": {
 			"duration": 158.63,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kanjou Acceleration -Saotome Ayaka Solo ver.-"
 		},
 		"id": "S19e3332af20cf956ec6",
 		"legacySongID": 1171,
@@ -15771,7 +16437,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": 158.63,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Kanjou Acceleration -Kashiwagi Saki Solo ver.-"
 		},
 		"id": "S19e3332af217e0e317c",
 		"legacySongID": 1172,
@@ -15797,7 +16464,8 @@
 		"artist": "HIMEHINA",
 		"data": {
 			"duration": null,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Utakata Yoi Kanai de"
 		},
 		"id": "S19eb183204d22ea6b39",
 		"legacySongID": 1192,
@@ -15811,7 +16479,8 @@
 		"artist": "曲：高橋涼 (SUPA LOVE)／歌：ASTERISM [星咲 あかり(CV：赤尾 ひかる)、藤沢 柚子(CV：保科 李沙)、三角 葵(CV：春野 杏)]",
 		"data": {
 			"duration": null,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Kokorieeru"
 		},
 		"id": "S19eb183204d2dd834eb",
 		"legacySongID": 1189,
@@ -15825,7 +16494,8 @@
 		"artist": "涼宮ハルヒ(CV.平野綾),長門有希(CV.茅原実里),朝比奈みくる(CV.後藤邑子)、キョン(CV.杉田智和)、古泉一樹(CV.小野大輔)",
 		"data": {
 			"duration": null,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Mutekiteki happiness!(SOSdan 5nin Ver.)"
 		},
 		"id": "S19eb183204d2e64ac59",
 		"legacySongID": 1174,
@@ -15839,7 +16509,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": null,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Monitoring"
 		},
 		"id": "S19eb183204d3241bbcb",
 		"legacySongID": 1177,
@@ -15853,7 +16524,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": null,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Telepathy"
 		},
 		"id": "S19eb183204d42404757",
 		"legacySongID": 1178,
@@ -15879,7 +16551,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：井之原 小星(CV：ももの はるな)",
 		"data": {
 			"duration": null,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikkou no entame da! -Inohara Koboshi solo ver.-"
 		},
 		"id": "S19eb183204d6aafaba7",
 		"legacySongID": 1195,
@@ -15893,7 +16566,8 @@
 		"artist": "Lime",
 		"data": {
 			"duration": null,
-			"genre": "オンゲキ"
+			"genre": "オンゲキ",
+			"titleEn": "Hoshi tsuzuri no alchemist"
 		},
 		"id": "S19eb183204d79fe5f18",
 		"legacySongID": 1188,
@@ -15919,7 +16593,8 @@
 		"artist": "柊マグネタイト",
 		"data": {
 			"duration": null,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Tetoris"
 		},
 		"id": "S19eb183204d836247a5",
 		"legacySongID": 1180,
@@ -15933,7 +16608,8 @@
 		"artist": "DECO*27",
 		"data": {
 			"duration": null,
-			"genre": "niconico"
+			"genre": "niconico",
+			"titleEn": "Rabbit Hole"
 		},
 		"id": "S19eb183204d8e93f8b2",
 		"legacySongID": 1179,
@@ -15947,7 +16623,8 @@
 		"artist": "曲：本田正樹(Dream Monster)／歌：柏木 咲姫(CV：石見 舞菜香)",
 		"data": {
 			"duration": null,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Saikkou no entame da! -Kashiwagi Saki solo ver.-"
 		},
 		"id": "S19eb183204d8fa96cd0",
 		"legacySongID": 1196,
@@ -15985,7 +16662,8 @@
 		"artist": "HIMEHINA",
 		"data": {
 			"duration": null,
-			"genre": "POPS＆ANIME"
+			"genre": "POPS＆ANIME",
+			"titleEn": "Kiss Kitsune"
 		},
 		"id": "S19eb183204db038bdf0",
 		"legacySongID": 1190,
@@ -15999,7 +16677,8 @@
 		"artist": "アルル(CV 園崎未恵)「ぷよぷよ」",
 		"data": {
 			"duration": null,
-			"genre": "LUNATIC"
+			"genre": "LUNATIC",
+			"titleEn": "Jikuu Wo Koete Hisashiburi!"
 		},
 		"id": "S19eb183204dba25bc59",
 		"legacySongID": 1181,
@@ -16085,7 +16764,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：珠洲島 有栖(CV：長縄 まりあ)",
 		"data": {
 			"duration": null,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Handmade Good Day -Suzushima Arisu Solo ver-"
 		},
 		"id": "S19ed05979d00bba474e",
 		"legacySongID": 1187,
@@ -16099,7 +16779,8 @@
 		"artist": "曲：矢鴇つかさ（Arte Refact）／歌：皇城 セツナ(CV：八巻 アンナ)",
 		"data": {
 			"duration": null,
-			"genre": "ボーナストラック"
+			"genre": "ボーナストラック",
+			"titleEn": "Handmade Good Day -Sumeragi Setsuna Solo ver-"
 		},
 		"id": "S19ed05979d01425473b",
 		"legacySongID": 1197,
