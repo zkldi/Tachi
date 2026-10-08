@@ -23,11 +23,11 @@ import { BackgroundContext } from "#context/BackgroundContext";
 import { TargetsContextProvider } from "#context/TargetsContext";
 import { UserGameContextProvider } from "#context/UserGameContext";
 import { UserSettingsContext } from "#context/UserSettingsContext";
-import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type SongsReturn } from "#types/api-returns";
 import { type GameProps, type SetState } from "#types/react";
 import { ToCDNURL } from "#util/api";
 import { IsSupportedGame } from "#util/asserts";
+import { GetChartColor } from "#util/charts";
 import { ChangeOpacity } from "#util/color-opacity";
 import { CreateChartLink } from "#util/data";
 import { getGameGroupBannerRelPathForWeekday } from "#util/game-group-banner-counts";
@@ -432,31 +432,30 @@ function DifficultyButton({
 	setActiveChart,
 	activeChart,
 }: { chart: ChartDocument } & Props) {
-	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
-
 	const diffTag = chart.difficulty;
 	const gameGroup = GameToGameGroup(game);
+	const isActiveChart = activeChart?.chartID === chart.chartID;
+
+	let backgroundColor = GetChartColor(chart);
+	let backgroundClass = "";
+
+	if (gameGroup === "itg" && backgroundColor === undefined) {
+		// @ts-expect-error is this still needed?
+		backgroundColor = ITG_COLOUR_LOOKUP[chart.data.difficultyTag];
+	}
+	if (backgroundColor === undefined) {
+		backgroundClass = `bg-secondary bg-opacity-${isActiveChart ? "50" : "25"}`;
+	} else {
+		backgroundColor = ChangeOpacity(backgroundColor, isActiveChart ? 0.4 : 0.2);
+	}
 
 	return (
 		<LinkButton
-			className="text-body"
+			className={`text-body ${backgroundClass}`}
 			key={chart.chartID}
 			onClick={() => setActiveChart(chart)}
 			style={{
-				// @ts-expect-error hack!
-				backgroundColor: gptImpl.difficultyColours[diffTag]
-					? ChangeOpacity(
-							// @ts-expect-error hack!
-							gptImpl.difficultyColours[diffTag],
-							activeChart?.chartID === chart.chartID ? 0.4 : 0.2,
-						)
-					: gameGroup === "itg"
-						? ChangeOpacity(
-								// @ts-expect-error hack!
-								ITG_COLOUR_LOOKUP[chart.data.difficultyTag],
-								activeChart?.chartID === chart.chartID ? 0.4 : 0.2,
-							)
-						: undefined,
+				backgroundColor,
 			}}
 			to={CreateChartLink(chart)}
 			variant="secondary"
