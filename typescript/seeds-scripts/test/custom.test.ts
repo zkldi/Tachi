@@ -151,7 +151,16 @@ const CHART_CHECKS: { [G in GameGroup]?: Array<Test<ChartDocument<GamesForGroup[
 	],
 };
 
-const SONG_CHECKS: { [G in GameGroup]?: Array<Test<SongDocument<G>>> } = {};
+const SONG_CHECKS: { [G in GameGroup]?: Array<Test<SongDocument<G>>> } = {
+	ongeki: [
+		test("EN title must be a search term", (c) => {
+			if (c.data.titleEn) {
+				return c.searchTerms.some((s) => s === c.data.titleEn);
+			}
+			return true;
+		}),
+	],
+};
 
 let exitCode = 0;
 const suites: Array<{ good: boolean; name: string; report: unknown }> = [];

@@ -25,6 +25,7 @@ export const GAME_GROUP_ONGEKI_CONF = {
 		]),
 		duration: z.number().nullable(),
 		flavorGenre: z.string().optional(),
+		titleEn: z.string().optional(),
 	}),
 } as const satisfies INTERNAL_GAME_GROUP_CONFIG;
 
