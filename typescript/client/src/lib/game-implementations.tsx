@@ -144,6 +144,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				),
 			],
 		],
+		displayLevelHistory: ["paradiselost", "verse", "xverse", "xversex"],
 		scoreCoreCells: ({ sc }) => (
 			<>
 				<MillionsScoreCell
@@ -876,6 +877,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				naiveRating: "NaiveRatingClassic",
 			},
 		},
+		displayLevelHistory: ["brightMemory3", "refresh"],
 		scoreHeaders: [
 			[
 				"Score",

@@ -88,6 +88,12 @@ const updateChart = (out: OngekiChart, input: InputChart, song: InputSong, chang
 		changes.ids.push(`${song.name} ${diff}: ${song.id}`);
 		out.data.inGameID = song.id;
 	}
+	if (out.versions.includes(CURRENT_VERSION)) {
+		out.data.levelHistory[CURRENT_VERSION] = { level: out.level, levelNum: out.levelNum };
+	}
+	if (out.versions.includes(CURRENT_OMNIMIX)) {
+		out.data.levelHistory[CURRENT_OMNIMIX] = { level: out.level, levelNum: out.levelNum };
+	}
 };
 
 const main = async () => {
@@ -175,12 +181,27 @@ const main = async () => {
 						inGameID: inputSong.id,
 						maxPlatScore: inputChart.platinumScoreMax,
 						isBonusTrack: inputSong.id >= 7000 && inputSong.id < 8000,
+						levelHistory: {
+							brightMemory3: null,
+							brightMemory3Omni: null,
+							refresh: null,
+							refreshOmni: null,
+						},
 					},
 					difficulty: inputChart.difficulty,
 					isPrimary: true,
 					level: convertLevel(inputChart),
 					levelNum: parseFloat(inputChart.internalLevel),
 					versions: [CURRENT_VERSION, CURRENT_OMNIMIX],
+				};
+
+				newChart.data.levelHistory[CURRENT_VERSION] = {
+					level: newChart.level,
+					levelNum: newChart.levelNum,
+				};
+				newChart.data.levelHistory[CURRENT_OMNIMIX] = {
+					level: newChart.level,
+					levelNum: newChart.levelNum,
 				};
 
 				chart = newChart;
