@@ -49,7 +49,7 @@ export default function DifficultyCell({
 
 	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
 
-	if (["iidx-dp", "iidx-sp", "maimaidx", "ongeki"].includes(game)) {
+	if (["arcaea", "chunithm", "iidx-dp", "iidx-sp", "maimaidx", "ongeki"].includes(game)) {
 		alwaysShort = true;
 	}
 
