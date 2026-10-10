@@ -20674,7 +20674,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -33579,7 +33580,7 @@
 			"hashSHA256": null,
 			"inGameID": 8030,
 			"kaidenAverage": null,
-			"notecount": 442,
+			"notecount": 440,
 			"worldRecord": null
 		},
 		"difficulty": "NORMAL",
@@ -117000,7 +117001,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -146029,7 +146031,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -236465,7 +236468,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -248732,7 +248736,8 @@
 			"31-omni",
 			"31-2dxtra",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -248769,7 +248774,8 @@
 			"31-omni",
 			"31-2dxtra",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -248801,7 +248807,8 @@
 			"31-omni",
 			"31-2dxtra",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -289472,7 +289479,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -289499,7 +289507,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -289526,7 +289535,8 @@
 			"31-2dxtra",
 			"33",
 			"32-omni",
-			"33-omni"
+			"33-omni",
+			"inf"
 		]
 	},
 	{
@@ -304767,7 +304777,7 @@
 				33306
 			],
 			"kaidenAverage": null,
-			"notecount": 592,
+			"notecount": 593,
 			"worldRecord": null
 		},
 		"difficulty": "NORMAL",
