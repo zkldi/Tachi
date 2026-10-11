@@ -130,34 +130,6 @@ export const POLARISCHORD_IMPL: GameImplementation<"poco"> = {
 
 	scoreValidators: [
 		(s) => {
-			const opt = s.scoreData.optional;
-			if (opt) {
-				if (
-					opt.fast === undefined &&
-					opt.fastBad !== undefined &&
-					opt.fastBad !== null &&
-					opt.fastGood !== undefined &&
-					opt.fastGood !== null &&
-					opt.fastGreat !== undefined &&
-					opt.fastGreat !== null
-				) {
-					opt.fast = opt.fastBad + opt.fastGood + opt.fastGreat;
-				}
-				if (
-					opt.slow === undefined &&
-					opt.slowBad !== undefined &&
-					opt.slowBad !== null &&
-					opt.slowGood !== undefined &&
-					opt.slowGood !== null &&
-					opt.slowGreat !== undefined &&
-					opt.slowGreat !== null
-				) {
-					opt.slow = opt.slowBad + opt.slowGood + opt.slowGreat;
-				}
-			}
-			return undefined;
-		},
-		(s) => {
 			if (s.scoreData.lamp === "ALL PERFECT" && s.scoreData.percent !== 100) {
 				return `ALL PERFECT scores must have a 100% percent. Got ${s.scoreData.percent} instead.`;
 			}

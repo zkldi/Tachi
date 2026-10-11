@@ -73,7 +73,7 @@ describe("POLARISCHORD_IMPL", () => {
 
 	//This test serves as a validator for score lamps and other metrics to match the corresponding ACHIEVEMENT RATE
 	describe("scoreValidators", () => {
-		const [, apValidator, fcValidator, apJudgementsValidator] =
+		const [apValidator, fcValidator, apJudgementsValidator] =
 			POLARISCHORD_IMPL.scoreValidators!;
 
 		it("validates ALL PERFECT percent", () => {
