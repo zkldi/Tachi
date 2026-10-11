@@ -14,7 +14,6 @@ export const GAME_GROUP_POLARISCHORD_CONF = {
 	playtypes: ["Single"],
 	songData: z.strictObject({
 		genre: z.string().optional(),
-		displayVersion: z.nullable(z.string()).optional(),
 	}),
 } as const satisfies INTERNAL_GAME_GROUP_CONFIG;
 
