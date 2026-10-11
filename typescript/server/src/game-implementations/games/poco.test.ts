@@ -126,4 +126,51 @@ describe("POLARISCHORD_IMPL", () => {
 			).toBeUndefined();
 		});
 	});
+
+	describe("chartSpecificValidators", () => {
+		const chartWithMax = {
+			data: {
+				holdMax: 50,
+				flickMax: 20,
+				faderMax: 10,
+				honeycombMax: 5,
+			},
+		} as ChartDocument<"poco">;
+
+		const chartWithoutMax = {
+			data: {},
+		} as ChartDocument<"poco">;
+
+		it("validates hold correctly", () => {
+			const validator = POLARISCHORD_IMPL.chartSpecificValidators.hold;
+			expect(validator(-1, chartWithMax)).toMatch(/Hold count must be non-negative/u);
+			expect(validator(51, chartWithMax)).toMatch(/Hold count cannot exceed chart's max hold/u);
+			expect(validator(50, chartWithMax)).toBe(true);
+			expect(validator(100, chartWithoutMax)).toBe(true);
+		});
+
+		it("validates flick correctly", () => {
+			const validator = POLARISCHORD_IMPL.chartSpecificValidators.flick;
+			expect(validator(-1, chartWithMax)).toMatch(/Flick count must be non-negative/u);
+			expect(validator(21, chartWithMax)).toMatch(/Flick count cannot exceed chart's max flick/u);
+			expect(validator(20, chartWithMax)).toBe(true);
+			expect(validator(100, chartWithoutMax)).toBe(true);
+		});
+
+		it("validates fader correctly", () => {
+			const validator = POLARISCHORD_IMPL.chartSpecificValidators.fader;
+			expect(validator(-1, chartWithMax)).toMatch(/Fader count must be non-negative/u);
+			expect(validator(11, chartWithMax)).toMatch(/Fader count cannot exceed chart's max fader/u);
+			expect(validator(10, chartWithMax)).toBe(true);
+			expect(validator(100, chartWithoutMax)).toBe(true);
+		});
+
+		it("validates honeycomb correctly", () => {
+			const validator = POLARISCHORD_IMPL.chartSpecificValidators.honeycomb;
+			expect(validator(-1, chartWithMax)).toMatch(/Honeycomb count must be non-negative/u);
+			expect(validator(6, chartWithMax)).toMatch(/Honeycomb count cannot exceed chart's max honeycomb/u);
+			expect(validator(5, chartWithMax)).toBe(true);
+			expect(validator(100, chartWithoutMax)).toBe(true);
+		});
+	});
 });

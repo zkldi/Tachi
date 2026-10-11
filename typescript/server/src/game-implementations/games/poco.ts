@@ -8,7 +8,44 @@ import { PolarisChordPaSkill } from "rg-stats";
 import { GetGrade, POCO_GBOUNDARIES } from "tachi-common";
 
 export const POLARISCHORD_IMPL: GameImplementation<"poco"> = {
-	chartSpecificValidators: {},
+	chartSpecificValidators: {
+		hold: (hold, chart) => {
+			if (!Number.isInteger(hold) || hold < 0) {
+				return `Hold count must be non-negative. Got ${hold}.`;
+			}
+			if (chart.data.holdMax !== undefined && hold > chart.data.holdMax) {
+				return `Hold count cannot exceed chart's max hold (${chart.data.holdMax}). Got ${hold}.`;
+			}
+			return true;
+		},
+		flick: (flick, chart) => {
+			if (!Number.isInteger(flick) || flick < 0) {
+				return `Flick count must be non-negative. Got ${flick}.`;
+			}
+			if (chart.data.flickMax !== undefined && flick > chart.data.flickMax) {
+				return `Flick count cannot exceed chart's max flick (${chart.data.flickMax}). Got ${flick}.`;
+			}
+			return true;
+		},
+		fader: (fader, chart) => {
+			if (!Number.isInteger(fader) || fader < 0) {
+				return `Fader count must be non-negative. Got ${fader}.`;
+			}
+			if (chart.data.faderMax !== undefined && fader > chart.data.faderMax) {
+				return `Fader count cannot exceed chart's max fader (${chart.data.faderMax}). Got ${fader}.`;
+			}
+			return true;
+		},
+		honeycomb: (honeycomb, chart) => {
+			if (!Number.isInteger(honeycomb) || honeycomb < 0) {
+				return `Honeycomb count must be non-negative. Got ${honeycomb}.`;
+			}
+			if (chart.data.honeycombMax !== undefined && honeycomb > chart.data.honeycombMax) {
+				return `Honeycomb count cannot exceed chart's max honeycomb (${chart.data.honeycombMax}). Got ${honeycomb}.`;
+			}
+			return true;
+		},
+	},
 	scoreDeriver: (scoreData, _chart) => ({
 		grade: GetGrade(POCO_GBOUNDARIES, scoreData.percent),
 	}),
