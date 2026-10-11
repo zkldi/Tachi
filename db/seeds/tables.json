@@ -6269,7 +6269,22 @@
 	{
 		"default": true,
 		"description": "Levels for Polaris Chord.",
-		"folders": [],
+		"folders": [
+			"1-poco",
+			"2-poco",
+			"3-poco",
+			"4-poco",
+			"5-poco",
+			"6-poco",
+			"7-poco",
+			"8-poco",
+			"9-poco",
+			"10-poco",
+			"11-poco",
+			"12-poco",
+			"13-poco",
+			"14-poco"
+		],
 		"game": "poco",
 		"id": "T19d35f0d592ffffffff",
 		"inactive": false,

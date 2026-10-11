@@ -47526,6 +47526,188 @@
 		"where": "(chart.data->'tableFolders'->>'PLv') = '9'"
 	},
 	{
+		"game": "poco",
+		"id": "F1a12b035ee2ce054c24",
+		"inactive": false,
+		"legacyFolderID": "Fdb5ff463d25b98ccd864fbe8a06d4a9312f02bfa5d9356fe1d0e58a84e1bafb7",
+		"searchTerms": [],
+		"slug": "1-poco",
+		"title": "Level 1 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee882f54abb",
+		"inactive": false,
+		"legacyFolderID": "Fe1359738ce2e9a9ee2155603f3f114794e280747c27db98d5ae66cfb7243a447",
+		"searchTerms": [],
+		"slug": "10-poco",
+		"title": "Level 10 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee8987543c0",
+		"inactive": false,
+		"legacyFolderID": "Fe61297a231224433cd4d07571e004782a52b203e5b68683214140f5937b25878",
+		"searchTerms": [],
+		"slug": "11-poco",
+		"title": "Level 11 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee81fe790d9",
+		"inactive": false,
+		"legacyFolderID": "F66d2f789df53dc621699abddc5aa0c982addb36db6cb3ad56119881d8f7ef8d1",
+		"searchTerms": [],
+		"slug": "12-poco",
+		"title": "Level 12 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee8cfed50d3",
+		"inactive": false,
+		"legacyFolderID": "F129cd41d18bfea78eee40074ce3433c8fd265df7255b45895593b62e8f21de0f",
+		"searchTerms": [],
+		"slug": "13-poco",
+		"title": "Level 13 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee898bddb4b",
+		"inactive": false,
+		"legacyFolderID": "Fd914689a62235b82d4ebee7db1f0157007a7c3fc2c53d2b19a0d885e410d597f",
+		"searchTerms": [],
+		"slug": "14-poco",
+		"title": "Level 14 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee86d4f1e38",
+		"inactive": false,
+		"legacyFolderID": "F37b0fd4dca7b20ad1e271aee46abbad808ee0cac8c7ea100a1097457c6b2ff2e",
+		"searchTerms": [],
+		"slug": "2-poco",
+		"title": "Level 2 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee84d6e4fc2",
+		"inactive": false,
+		"legacyFolderID": "Fcd88345432819c03de7ea5707e47ac5a0a0473b27a82c735c146d4914a91af3a",
+		"searchTerms": [],
+		"slug": "3-poco",
+		"title": "Level 3 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee8b7d12f62",
+		"inactive": false,
+		"legacyFolderID": "F95357144c26aaeb28cdbb5ee9cb2694c0549d834644ab5e47d5e025efc85c2eb",
+		"searchTerms": [],
+		"slug": "4-poco",
+		"title": "Level 4 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee843523cd1",
+		"inactive": false,
+		"legacyFolderID": "Fca22c3dc5adc102015b1d6bc919427a9f0e749b62299d19517f2e409081d5298",
+		"searchTerms": [],
+		"slug": "5-poco",
+		"title": "Level 5 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee8d8d54e42",
+		"inactive": false,
+		"legacyFolderID": "F92d949e1c8dd123e529d8fc4f98b11d3e76391433af49f8ae09071fc0a32c903",
+		"searchTerms": [],
+		"slug": "6-poco",
+		"title": "Level 6 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee82ecc0522",
+		"inactive": false,
+		"legacyFolderID": "F5b51f0bc0954ef2367349a8e9698b2b9ca651a5e4745d86413502c9f78b24597",
+		"searchTerms": [],
+		"slug": "7-poco",
+		"title": "Level 7 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee851939a46",
+		"inactive": false,
+		"legacyFolderID": "F02dacb31e1fbfba93a35596eed01dc62b9e2e1190fc66c71de12b6289aa8344a",
+		"searchTerms": [],
+		"slug": "8-poco",
+		"title": "Level 8 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "poco",
+		"id": "F1a12b035ee8c5785b11",
+		"inactive": false,
+		"legacyFolderID": "F47ab9d1f3e3d88639bbe472224ac1f89d79788a53d90510c84f1b23709d293a0",
+		"searchTerms": [],
+		"slug": "9-poco",
+		"title": "Level 9 (Polaris Chord)",
+		"versionFilter": [
+			"poco"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
 		"game": "popn",
 		"id": "F19e5b4ffe77b1733440",
 		"inactive": false,
