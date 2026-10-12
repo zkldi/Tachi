@@ -47,7 +47,7 @@ export default function ChartInfoFormat({
 
 	return (
 		<Row
-			className="text-center align-items-center"
+			className="text-center align-items-center gap-8 gap-lg-0"
 			style={{
 				paddingTop: "2.2rem",
 				justifyContent: "space-evenly",
