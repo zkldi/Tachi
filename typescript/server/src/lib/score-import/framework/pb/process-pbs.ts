@@ -9,6 +9,7 @@ import { GetChartForIDGuaranteed } from "#utils/db";
 import { type integer, type V3Game } from "tachi-common";
 
 import { CreatePBDoc, type PBScoreDocumentNoRank, UpdateChartRanking } from "./create-pb-doc";
+import { retryPbTransaction } from "./retry-pb-transaction";
 import { upsertPbFromMongoDoc } from "./upsert-pb-pg";
 
 export interface ProcessPBsOptions {
@@ -56,33 +57,35 @@ export async function ProcessPBs(
 		pbDocs.push(doc);
 	}
 
-	// Delete stale PB rows for charts where the user has no remaining scores.
-	// pb_composed_from has no ON DELETE CASCADE on the pb_id FK, so clean it up first.
-	if (emptyChartIDs.length > 0) {
-		const stalePbRows = await DB.selectFrom("pb")
-			.select("pb.row_id")
-			.where("pb.user_id", "=", userID)
-			.where("pb.chart_id", "in", emptyChartIDs)
-			.where("pb.lens", "is", null)
-			.execute();
+	await retryPbTransaction(
+		() =>
+			DB.transaction().execute(async (trx) => {
+				if (emptyChartIDs.length > 0) {
+					const stalePbRows = await trx
+						.selectFrom("pb")
+						.select("pb.row_id")
+						.where("pb.user_id", "=", userID)
+						.where("pb.chart_id", "in", emptyChartIDs)
+						.where("pb.lens", "is", null)
+						.execute();
 
-		if (stalePbRows.length > 0) {
-			const stalePbIds = stalePbRows.map((r) => r.row_id);
-			await DB.deleteFrom("pb_composed_from").where("pb_id", "in", stalePbIds).execute();
-			await DB.deleteFrom("pb").where("pb.row_id", "in", stalePbIds).execute();
-		}
-	}
+					if (stalePbRows.length > 0) {
+						const stalePbIds = stalePbRows.map((r) => r.row_id);
+						await trx
+							.deleteFrom("pb_composed_from")
+							.where("pb_id", "in", stalePbIds)
+							.execute();
+						await trx.deleteFrom("pb").where("pb.row_id", "in", stalePbIds).execute();
+					}
+				}
 
-	if (pbDocs.length === 0) {
-		return;
-	}
-
-	await DB.transaction().execute(async (trx) => {
-		// TODO(zk): parallelize?
-		for (const doc of pbDocs) {
-			await upsertPbFromMongoDoc(trx, doc, runStartedAt);
-		}
-	});
+				// TODO(zk): parallelize?
+				for (const doc of pbDocs) {
+					await upsertPbFromMongoDoc(trx, doc, runStartedAt);
+				}
+			}),
+		log,
+	);
 
 	await Promise.all(pbDocs.map((doc) => UpdateChartRanking(doc.game, doc.chartID)));
 }
