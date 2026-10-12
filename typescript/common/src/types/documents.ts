@@ -407,6 +407,7 @@ export interface BaseFolderDocument {
 	 */
 	inactive: boolean;
 	searchTerms: Array<string>;
+	versionFilter?: Array<string>;
 }
 
 export type FolderDocument = BaseFolderDocument;

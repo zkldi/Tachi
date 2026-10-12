@@ -55,26 +55,11 @@ export default function ChartInfoFormat({
 		>
 			<Col lg={3} style={{ textAlign: "left" }} xs={12}>
 				<h4>Appears In</h4>
-				{data.length !== 0 ? (
-					data
-						.sort((a, b) => a.title.localeCompare(b.title))
-						.map((e) => (
-							<li key={e.slug}>
-								{user && ugs ? (
-									<Link
-										className="text-decoration-none"
-										to={`/u/${user.username}/games/${game}/folders/${e.slug}`}
-									>
-										{e.title}
-									</Link>
-								) : (
-									<span>{e.title}</span>
-								)}
-							</li>
-						))
-				) : (
-					<Muted>No folders...</Muted>
-				)}
+				<ChartInfoLeft
+					data={data}
+					game={game}
+					username={user && ugs ? user.username : undefined}
+				/>
 			</Col>
 			<Col lg={4} xs={12}>
 				<ChartInfoMiddle chart={chart} game={game} song={song} />
@@ -83,6 +68,129 @@ export default function ChartInfoFormat({
 				<ChartInfoRight chart={chart} game={game} />
 			</Col>
 		</Row>
+	);
+}
+
+function ChartInfoLeft({
+	game,
+	data,
+	username,
+}: {
+	data: FolderDocument[];
+	game: V3Game;
+	username: string | undefined;
+}) {
+	if (data.length === 0) {
+		return <Muted>No folders...</Muted>;
+	}
+
+	const gameConfig = GetGameConfig(game);
+	const versionKeys = Object.keys(gameConfig.versions);
+
+	// These games define folders other than "Level N"
+	if (
+		game === "ongeki" ||
+		game === "chunithm" ||
+		game === "jubeat" ||
+		game === "sdvx" ||
+		game === "popn"
+	) {
+		const groups: { [key: string]: FolderDocument[] } = Object.fromEntries(
+			[...versionKeys, "__other"].map((s) => [s, []]),
+		);
+		for (const folder of data) {
+			if (folder.versionFilter?.length === 1) {
+				groups[folder.versionFilter[0]].push(folder);
+			} else {
+				groups.__other.push(folder);
+			}
+		}
+		const sortingKey = (e: { slug: string; title: string }) => {
+			if (e.title.startsWith("Level")) {
+				// Prioritize wider folders (i.e. popn, jubeat)
+				if (e.title.match(/Level \d+-\d+/u)) {
+					return 1;
+				}
+				if (e.title.match(/Level \d+\.\d/u)) {
+					return 3;
+				}
+				return 2;
+			}
+			if (
+				"order" in gameConfig.difficulties &&
+				gameConfig.difficulties.order.includes(e.title)
+			) {
+				return 4;
+			}
+			return 5;
+		};
+		return (
+			<>
+				{Object.entries(groups)
+					.sort(([a], [b]) => versionKeys.indexOf(a) - versionKeys.indexOf(b))
+					.filter(([, v]) => v.length > 0)
+					.map(([k, v]) => (
+						<div className="mb-2" key={k}>
+							<>
+								{k !== "__other" && (
+									<div className="fw-bold">{gameConfig.versions[k]}</div>
+								)}
+							</>
+							<>
+								{v
+									.map((e) => ({
+										slug: e.slug,
+										title: e.title.match(/([^(]+) \(/u)?.[1] ?? e.title,
+									}))
+									.sort((a, b) => sortingKey(a) - sortingKey(b))
+									.map((e, idx) => (
+										<span key={e.slug}>
+											<>{idx > 0 && " • "}</>
+											<span>
+												{username ? (
+													<Link
+														className="text-decoration-none"
+														to={`/u/${username}/games/${game}/folders/${e.slug}`}
+													>
+														{e.title}
+													</Link>
+												) : (
+													<span>{e.title}</span>
+												)}
+											</span>
+										</span>
+									))}
+							</>
+						</div>
+					))}
+			</>
+		);
+	}
+
+	return (
+		<>
+			{data
+				.sort((a, b) => a.title.localeCompare(b.title))
+				.sort(
+					(a, b) =>
+						versionKeys.indexOf(a.versionFilter?.[0] ?? "") -
+						versionKeys.indexOf(b.versionFilter?.[0] ?? ""),
+				)
+				.map((e) => (
+					<li key={e.slug}>
+						{username ? (
+							<Link
+								className="text-decoration-none"
+								to={`/u/${username}/games/${game}/folders/${e.slug}`}
+							>
+								{e.title}
+							</Link>
+						) : (
+							<span>{e.title}</span>
+						)}
+					</li>
+				))}
+		</>
 	);
 }
 
