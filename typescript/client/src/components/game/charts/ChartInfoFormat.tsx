@@ -88,13 +88,7 @@ function ChartInfoLeft({
 	const versionKeys = Object.keys(gameConfig.versions);
 
 	// These games define folders other than "Level N"
-	if (
-		game === "ongeki" ||
-		game === "chunithm" ||
-		game === "jubeat" ||
-		game === "sdvx" ||
-		game === "popn"
-	) {
+	if (["chunithm", "jubeat", "ongeki", "popn", "sdvx"].includes(game)) {
 		const groups: { [key: string]: FolderDocument[] } = Object.fromEntries(
 			[...versionKeys, "__other"].map((s) => [s, []]),
 		);
@@ -131,36 +125,32 @@ function ChartInfoLeft({
 					.filter(([, v]) => v.length > 0)
 					.map(([k, v]) => (
 						<div className="mb-2" key={k}>
-							<>
-								{k !== "__other" && (
-									<div className="fw-bold">{gameConfig.versions[k]}</div>
-								)}
-							</>
-							<>
-								{v
-									.map((e) => ({
-										slug: e.slug,
-										title: e.title.match(/([^(]+) \(/u)?.[1] ?? e.title,
-									}))
-									.sort((a, b) => sortingKey(a) - sortingKey(b))
-									.map((e, idx) => (
-										<span key={e.slug}>
-											<>{idx > 0 && " • "}</>
-											<span>
-												{username ? (
-													<Link
-														className="text-decoration-none"
-														to={`/u/${username}/games/${game}/folders/${e.slug}`}
-													>
-														{e.title}
-													</Link>
-												) : (
-													<span>{e.title}</span>
-												)}
-											</span>
+							{k !== "__other" && (
+								<div className="fw-bold">{gameConfig.versions[k]}</div>
+							)}
+							{v
+								.map((e) => ({
+									slug: e.slug,
+									title: e.title.match(/([^(]+) \(/u)?.[1] ?? e.title,
+								}))
+								.sort((a, b) => sortingKey(a) - sortingKey(b))
+								.map((e, idx) => (
+									<span key={e.slug}>
+										<>{idx > 0 && " • "}</>
+										<span>
+											{username ? (
+												<Link
+													className="text-decoration-none"
+													to={`/u/${username}/games/${game}/folders/${e.slug}`}
+												>
+													{e.title}
+												</Link>
+											) : (
+												<span>{e.title}</span>
+											)}
 										</span>
-									))}
-							</>
+									</span>
+								))}
 						</div>
 					))}
 			</>
