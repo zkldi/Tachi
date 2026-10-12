@@ -5,8 +5,9 @@ import { mkFakeScoreIIDXSP } from "#test-utils/misc";
 import { seedUser } from "#test-utils/pg-fixtures";
 import { Testing511Song, Testing511SPA, TestingIIDXSPScore } from "#test-utils/test-data";
 import { UnixMillisecondsToISO8601 } from "#utils/time";
+import { sql } from "kysely";
 import { randomBytes } from "node:crypto";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { ProcessPBs } from "./process-pbs";
 
@@ -181,6 +182,87 @@ describe("ProcessPBs", () => {
 			.where("pb.user_id", "=", userId)
 			.execute();
 		expect(pbs).toHaveLength(4);
+	});
+
+	it("retries all PB writes in a fresh transaction after a leaderboard violation", async () => {
+		await seedIidx511Chart();
+		await seedExtraChart("retry-chart", 2);
+		const { id: userId } = await seedUser();
+		const chartIDs = [Testing511SPA.chartID, "retry-chart"];
+
+		for (const [i, chartId] of chartIDs.entries()) {
+			await insertIidxScoreRow({ userId, scoreId: `retry-${i}`, chartId, timeMs: 1000 });
+		}
+
+		const transaction = DB.transaction.bind(DB);
+		const rowsBeforeAttempt: Array<number> = [];
+		const writtenRows: Array<Array<{ last_clean_started_at: string; row_id: string }>> = [];
+		const transactionSpy = vi.spyOn(DB, "transaction").mockImplementation(() => {
+			const builder = transaction();
+			const execute = builder.execute.bind(builder);
+			builder.execute = (callback) =>
+				execute(async (trx) => {
+					const before = await trx
+						.selectFrom("pb")
+						.select("row_id")
+						.where("user_id", "=", userId)
+						.execute();
+					rowsBeforeAttempt.push(before.length);
+					const result = await callback(trx);
+					writtenRows.push(
+						await trx
+							.selectFrom("pb")
+							.select(["row_id", "last_clean_started_at"])
+							.where("user_id", "=", userId)
+							.orderBy("chart_id")
+							.execute(),
+					);
+
+					if (writtenRows.length === 1) {
+						// A real PostgreSQL error aborts the transaction after both PBs
+						// and their composed-from rows have been written.
+						await sql`DO $$ BEGIN
+							RAISE EXCEPTION 'simulated concurrent leaderboard rebuild'
+								USING ERRCODE = '23505', CONSTRAINT = 'chart_leaderboard_new_pkey';
+						END $$`.execute(trx);
+					}
+
+					return result;
+				});
+			return builder;
+		});
+
+		try {
+			await ProcessPBs("iidx-sp", userId, new Set(chartIDs), log);
+		} finally {
+			transactionSpy.mockRestore();
+		}
+
+		expect(rowsBeforeAttempt).toEqual([0, 0]);
+		expect(writtenRows.map((rows) => rows.length)).toEqual([2, 2]);
+		expect(writtenRows[0]!.map((row) => row.row_id)).not.toEqual(
+			writtenRows[1]!.map((row) => row.row_id),
+		);
+		expect(writtenRows[0]!.map((row) => row.last_clean_started_at)).toEqual(
+			writtenRows[1]!.map((row) => row.last_clean_started_at),
+		);
+
+		const composed = await DB.selectFrom("pb_composed_from")
+			.innerJoin("pb", "pb.row_id", "pb_composed_from.pb_id")
+			.select("pb_composed_from.score_id")
+			.where("pb.user_id", "=", userId)
+			.execute();
+		expect(composed.map((row) => row.score_id).sort()).toEqual(["retry-0", "retry-1"]);
+
+		const leaderboard = await DB.selectFrom("chart_leaderboard")
+			.innerJoin("pb", "pb.row_id", "chart_leaderboard.row_id")
+			.select(["chart_leaderboard.rank", "chart_leaderboard.out_of"])
+			.where("pb.user_id", "=", userId)
+			.execute();
+		expect(leaderboard).toEqual([
+			{ rank: 1, out_of: 1 },
+			{ rank: 1, out_of: 1 },
+		]);
 	});
 
 	it("deletes a stale pb row when the user has no remaining scores on the chart (#1521)", async () => {
