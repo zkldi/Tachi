@@ -23,6 +23,7 @@ const sdvxScore = {
 	gauge_type: 0,
 	gauge_rate: 90.01,
 	timestamp: "2020-08-30T13:08:11Z",
+	exscore: 2611, // Not a real exscore
 	_id: 127108,
 };
 
@@ -87,6 +88,7 @@ describe("ConvertAPIKaiSDVX", () => {
 					slow: 42,
 					gauge: 90.01,
 					maxCombo: 179,
+					exscore: 2611, // Not a real exscore
 				},
 			},
 			scoreMeta: {},
