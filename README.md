@@ -22,7 +22,7 @@ Full database dumps for Tachi are published semi-regularly (when I remember to);
 
 ## Quick Setup For Experienced Programmers
 
-- Open `Tachi` in [VSCode](https://code.visualstudio.com) or [Cursor](https://cursor.com).
+- Clone this repo and open `Tachi` in [VSCode](https://code.visualstudio.com) or [Cursor](https://cursor.com).
 - Other editors can be used, but you will need to set up devcontainers yourself.
 - Install the `Dev Containers` extension
 - Run `Dev Container: Rebuild and Open in Container`
@@ -50,7 +50,7 @@ The client and the server are fairly decoupled. Someone could trivially create t
 
 This contains all of our API calls, and interfaces with our database, and powers the actual score import engine.
 
-- `seeds/`, Which is a git-tracked set of data to be synced with Tachi. (unlicense)
+- `db/seeds/`, Which is a git-tracked set of data to be synced with Tachi. (unlicense)
 
 **This is the source of truth for the songs, charts, and more on the site!**
 By submitting PRs to this, you can fix bugs on the website, add new charts, and more.
@@ -61,7 +61,7 @@ By submitting PRs to this, you can fix bugs on the website, add new charts, and 
 
 This is also published to NPM when it hits production.
 
-- `docs/`, Which contains Tachi documentation. (MIT)
+- `docs/`, Which contains Tachi documentation (currently outdated). (MIT)
 
 - `typescript/sieglinde/`, Which contains our BMS/PMS analysis functions. (MIT)
 
