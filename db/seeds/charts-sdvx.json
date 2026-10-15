@@ -5708,6 +5708,22 @@
 		"data": {
 			"inGameID": 67
 		},
+		"difficulty": "NBL",
+		"id": "C1a13dbc9f4997925302",
+		"isPrimary": true,
+		"legacyChartID": "1b1eded0640f64150cacf7978b87a499a5e1520b",
+		"level": "18",
+		"levelNum": 18,
+		"songID": "S19d35e0df4a24265ab2",
+		"versions": [
+			"nabla",
+			"nabla-omni"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 67
+		},
 		"difficulty": "NOV",
 		"id": "C19d35e11ac92ec5bc4b",
 		"isPrimary": true,
@@ -12846,6 +12862,22 @@
 		"data": {
 			"inGameID": 146
 		},
+		"difficulty": "NBL",
+		"id": "C1a13dbc9f4998b22a6f",
+		"isPrimary": true,
+		"legacyChartID": "b13276f41baddc5825824c359bdf615339c0e2af",
+		"level": "17.5",
+		"levelNum": 17.5,
+		"songID": "S19d35e0df9907c8a41d",
+		"versions": [
+			"nabla",
+			"nabla-omni"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 146
+		},
 		"difficulty": "NOV",
 		"id": "C19d35e11b195c49c5a6",
 		"isPrimary": true,
@@ -14969,6 +15001,22 @@
 			"exceed",
 			"nabla",
 			"exceed-omni",
+			"nabla-omni"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 175
+		},
+		"difficulty": "NBL",
+		"id": "C1a13dbc9f4907d7da96",
+		"isPrimary": true,
+		"legacyChartID": "6a1413a6e542c2de2098ced9f8b2fc5be5f05f27",
+		"level": "17",
+		"levelNum": 17,
+		"songID": "S19d35e0dfb77e7f00fa",
+		"versions": [
+			"nabla",
 			"nabla-omni"
 		]
 	},
@@ -24485,6 +24533,22 @@
 			"konaste",
 			"nabla",
 			"exceed-omni",
+			"nabla-omni"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 302
+		},
+		"difficulty": "NBL",
+		"id": "C1a13dbc9f4ad2a01788",
+		"isPrimary": true,
+		"legacyChartID": "84c93657fba4afe58d94bebea55b4a0926726e5c",
+		"level": "18.6",
+		"levelNum": 18.6,
+		"songID": "S19d35e0e03669239698",
+		"versions": [
+			"nabla",
 			"nabla-omni"
 		]
 	},
@@ -64411,6 +64475,22 @@
 			"exceed",
 			"nabla",
 			"exceed-omni",
+			"nabla-omni"
+		]
+	},
+	{
+		"data": {
+			"inGameID": 801
+		},
+		"difficulty": "NBL",
+		"id": "C1a13dbc9f4a59adee92",
+		"isPrimary": true,
+		"legacyChartID": "f2d477850d02ed52ae6213595678d818032a26fc",
+		"level": "18.4",
+		"levelNum": 18.4,
+		"songID": "S19d35e0e22ae817c19c",
+		"versions": [
+			"nabla",
 			"nabla-omni"
 		]
 	},
@@ -212600,7 +212680,12 @@
 	},
 	{
 		"data": {
-			"inGameID": 2404
+			"inGameID": 2404,
+			"pucTier": {
+				"individualDifference": false,
+				"text": "16.4",
+				"value": 16.4
+			}
 		},
 		"difficulty": "EXH",
 		"id": "C1a11195cff925a489cc",
