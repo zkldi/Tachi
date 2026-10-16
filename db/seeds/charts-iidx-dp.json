@@ -286,6 +286,132 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"inGameID": 80122,
+			"kaidenAverage": null,
+			"notecount": 1307,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C197b2a8ea48ffb1638f",
+		"isPrimary": true,
+		"legacyChartID": "ebd0b48d4eb0806748f52cf24cc824a5fa11212b",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S1925f7e082328b33948",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80122,
+			"kaidenAverage": null,
+			"notecount": 846,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C197831de464aef55fc0",
+		"isPrimary": true,
+		"legacyChartID": "60b5952fe21a16ee3c68ab47f7f6f9da19650ddc",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S1925f7e082328b33948",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80122,
+			"kaidenAverage": null,
+			"notecount": 575,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19e98e1ae83a899f938",
+		"isPrimary": true,
+		"legacyChartID": "266e811d0d762da334d8c05598e1d861f9ba2eb9",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S1925f7e082328b33948",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80125,
+			"kaidenAverage": null,
+			"notecount": 941,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C19d2b494c902fcae027",
+		"isPrimary": true,
+		"legacyChartID": "e2075ad1a90e854513a8c6514cefee22144f1499",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S1929362f9a5c9ec1465",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80125,
+			"kaidenAverage": null,
+			"notecount": 662,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C199fa93be6c6e49ecfe",
+		"isPrimary": true,
+		"legacyChartID": "4a9d7cee14f41559c7126db656ec0201c2dd06a6",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S1929362f9a5c9ec1465",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80125,
+			"kaidenAverage": null,
+			"notecount": 473,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19b3bd3a79a7e49408e",
+		"isPrimary": true,
+		"legacyChartID": "f8a5a5589245487635a4f3536792bc2a5eeb2137",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S1929362f9a5c9ec1465",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
 			"inGameID": 33087,
 			"kaidenAverage": null,
 			"notecount": 1559,
@@ -348,6 +474,69 @@
 			"33",
 			"inf",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80126,
+			"kaidenAverage": null,
+			"notecount": 1148,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C19520e30138bf59de60",
+		"isPrimary": true,
+		"legacyChartID": "1e72d7d2cb600ad29cd29a16843a1d186a291e43",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S193f5dad95e5b65faa8",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80126,
+			"kaidenAverage": null,
+			"notecount": 838,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C19fe35c353026ffe4ea",
+		"isPrimary": true,
+		"legacyChartID": "34341ba356e2956a7ff7df13f1149502cc85e3b3",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S193f5dad95e5b65faa8",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80126,
+			"kaidenAverage": null,
+			"notecount": 409,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19822f1fb5b532563b0",
+		"isPrimary": true,
+		"legacyChartID": "f55bcf8c40065f1b01a38df01538389000dde563",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S193f5dad95e5b65faa8",
+		"versions": [
+			"inf"
 		]
 	},
 	{
@@ -493,6 +682,69 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"inGameID": 80124,
+			"kaidenAverage": null,
+			"notecount": 1070,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C19ee6c85c52d9de513a",
+		"isPrimary": true,
+		"legacyChartID": "67d70363a2585f43a9dca06974f1db95bf260f78",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S195fd752d66429e21cf",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80124,
+			"kaidenAverage": null,
+			"notecount": 784,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C19dce8b6d08ea043d3d",
+		"isPrimary": true,
+		"legacyChartID": "b508253cf83077624b901e5bf629ad201081395a",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S195fd752d66429e21cf",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80124,
+			"kaidenAverage": null,
+			"notecount": 403,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19782a5afca29da302a",
+		"isPrimary": true,
+		"legacyChartID": "a20eb1f13ac86a77c9428f916038a315128fee70",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S195fd752d66429e21cf",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
 			"inGameID": 33089,
 			"kaidenAverage": null,
 			"notecount": 1751,
@@ -555,6 +807,132 @@
 			"33",
 			"inf",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80120,
+			"kaidenAverage": null,
+			"notecount": 1461,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C19d3a20b83add299f8d",
+		"isPrimary": true,
+		"legacyChartID": "89487ad474b0bbcb492234d6edabcfd8eb35a4cc",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S196f15ea61e2d3520b0",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80120,
+			"kaidenAverage": null,
+			"notecount": 993,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C199329fa3c975d18fd7",
+		"isPrimary": true,
+		"legacyChartID": "98485b2f5ff99d55322d910915b1ee7b71cb9f06",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S196f15ea61e2d3520b0",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80120,
+			"kaidenAverage": null,
+			"notecount": 497,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C199e94eb06747cf999f",
+		"isPrimary": true,
+		"legacyChartID": "7630d952b8d8af2c0565cb7c94d92e0adab6b67e",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S196f15ea61e2d3520b0",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80116,
+			"kaidenAverage": null,
+			"notecount": 1715,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C1900004aa71b3e03b92",
+		"isPrimary": true,
+		"legacyChartID": "6fde86b92ccc146ebe25cc787768749e72a0afa9",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S1972b39a6a648910bd5",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80116,
+			"kaidenAverage": null,
+			"notecount": 1055,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C194ccf062c7e90d1776",
+		"isPrimary": true,
+		"legacyChartID": "d4ccda5c77151ce8242f42c47de5045b285b8032",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S1972b39a6a648910bd5",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80116,
+			"kaidenAverage": null,
+			"notecount": 641,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19213963404b9f9d774",
+		"isPrimary": true,
+		"legacyChartID": "09be62287d0df70c73ab4cc2c155498bcbc41018",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S1972b39a6a648910bd5",
+		"versions": [
+			"inf"
 		]
 	},
 	{
@@ -630,6 +1008,69 @@
 		"versions": [
 			"inf",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80121,
+			"kaidenAverage": null,
+			"notecount": 934,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C197c6c08249355efafb",
+		"isPrimary": true,
+		"legacyChartID": "822710a3221afaf5fc91ed0259cf2f961394fd5c",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S197bd1ff40c7146f5e3",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80121,
+			"kaidenAverage": null,
+			"notecount": 565,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C19f9ab675661c7265fc",
+		"isPrimary": true,
+		"legacyChartID": "9c0d086dd5adeeebec5e1473a8ca456aed072a9d",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S197bd1ff40c7146f5e3",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80121,
+			"kaidenAverage": null,
+			"notecount": 329,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19d12a48001bde24013",
+		"isPrimary": true,
+		"legacyChartID": "1e389d869f13aede42eb98446d61413c8251d53b",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S197bd1ff40c7146f5e3",
+		"versions": [
+			"inf"
 		]
 	},
 	{
@@ -787,6 +1228,69 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"inGameID": 80119,
+			"kaidenAverage": null,
+			"notecount": 1384,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C194a3afc575cf09e02e",
+		"isPrimary": true,
+		"legacyChartID": "ecc96d787fb5c3ce86dc39cbac71198b26968278",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19811d59159931da87c",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80119,
+			"kaidenAverage": null,
+			"notecount": 804,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C1949a88b2112e01af0a",
+		"isPrimary": true,
+		"legacyChartID": "6b1058503c6be52edca98be34ed19bbff8e3901a",
+		"level": "8",
+		"levelNum": 8,
+		"songID": "S19811d59159931da87c",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80119,
+			"kaidenAverage": null,
+			"notecount": 459,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19d64db16a6ab51a8cb",
+		"isPrimary": true,
+		"legacyChartID": "4e89d8d71fbd57eda448c9f682a9d4c21520ea2f",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19811d59159931da87c",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
 			"inGameID": 33093,
 			"kaidenAverage": null,
 			"notecount": 1552,
@@ -918,6 +1422,69 @@
 			"33",
 			"inf",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80123,
+			"kaidenAverage": null,
+			"notecount": 1453,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C193c549a16201e4db17",
+		"isPrimary": true,
+		"legacyChartID": "9d19c7812da5d71dae28bfa9ab16e721a500f27a",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S198f942e509a20c0037",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80123,
+			"kaidenAverage": null,
+			"notecount": 1012,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C1970644fde41161c7e1",
+		"isPrimary": true,
+		"legacyChartID": "47bd2cd4bd9a58f5ccdf4c706f768f6aae462841",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S198f942e509a20c0037",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80123,
+			"kaidenAverage": null,
+			"notecount": 584,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C193164f35e668728d53",
+		"isPrimary": true,
+		"legacyChartID": "7f83e5b6d21529df04ae80a1bdea3b4014360d01",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S198f942e509a20c0037",
+		"versions": [
+			"inf"
 		]
 	},
 	{
@@ -304647,6 +305214,69 @@
 			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
+			"inGameID": 80118,
+			"kaidenAverage": null,
+			"notecount": 1631,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C193e03fbe11ee2241db",
+		"isPrimary": true,
+		"legacyChartID": "bd9383e68f8f36bb70009bbce6bc953b00bcc3f5",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S19e1baba561bd076fa9",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80118,
+			"kaidenAverage": null,
+			"notecount": 1061,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C1992f64bc93bd904736",
+		"isPrimary": true,
+		"legacyChartID": "159444d7bd66e7eb853ac995c890da195643af6e",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19e1baba561bd076fa9",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80118,
+			"kaidenAverage": null,
+			"notecount": 518,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C198222e0882a9201f90",
+		"isPrimary": true,
+		"legacyChartID": "e5040fa6f73e539525129d8a5ff5cda51e3808fd",
+		"level": "6",
+		"levelNum": 6,
+		"songID": "S19e1baba561bd076fa9",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
 			"inGameID": [
 				80104,
 				33304
@@ -305015,6 +305645,69 @@
 		"versions": [
 			"inf",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80117,
+			"kaidenAverage": null,
+			"notecount": 1161,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C196cc15fec897034728",
+		"isPrimary": true,
+		"legacyChartID": "c8e26d7d50dc9ebe77888d995235b3b2e8f44431",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19e65f161564120441d",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80117,
+			"kaidenAverage": null,
+			"notecount": 829,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C19d4711e52f745a524d",
+		"isPrimary": true,
+		"legacyChartID": "cb4cfc7c1c48db15f7e68a07cb57f663a19e0934",
+		"level": "9",
+		"levelNum": 9,
+		"songID": "S19e65f161564120441d",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80117,
+			"kaidenAverage": null,
+			"notecount": 447,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C19857145f2ec4f913c1",
+		"isPrimary": true,
+		"legacyChartID": "f8fda7671314c63c71047fc358aa61ca7986c795",
+		"level": "5",
+		"levelNum": 5,
+		"songID": "S19e65f161564120441d",
+		"versions": [
+			"inf"
 		]
 	},
 	{
@@ -308544,6 +309237,69 @@
 		"versions": [
 			"33",
 			"33-omni"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80127,
+			"kaidenAverage": null,
+			"notecount": 1058,
+			"worldRecord": null
+		},
+		"difficulty": "ANOTHER",
+		"id": "C193a598de9d8f0627f5",
+		"isPrimary": true,
+		"legacyChartID": "1c33e454f8fa1289dea6e1d367047d59ae3fd953",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19f3ab9f70781178f70",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80127,
+			"kaidenAverage": null,
+			"notecount": 691,
+			"worldRecord": null
+		},
+		"difficulty": "HYPER",
+		"id": "C1937d33f50aac5f0962",
+		"isPrimary": true,
+		"legacyChartID": "6d46f963264481ba2732a5fa72190bed9257faa3",
+		"level": "7",
+		"levelNum": 7,
+		"songID": "S19f3ab9f70781178f70",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80127,
+			"kaidenAverage": null,
+			"notecount": 319,
+			"worldRecord": null
+		},
+		"difficulty": "NORMAL",
+		"id": "C1953e18b72b2ea08a0b",
+		"isPrimary": true,
+		"legacyChartID": "3cd480770d4026a6da7cbb19182e68c6207622b3",
+		"level": "4",
+		"levelNum": 4,
+		"songID": "S19f3ab9f70781178f70",
+		"versions": [
+			"inf"
 		]
 	},
 	{

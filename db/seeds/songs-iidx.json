@@ -53,6 +53,30 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "RYOQUCHA",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "HiTECH"
+		},
+		"id": "S1925f7e082328b33948",
+		"legacySongID": 2678,
+		"searchTerms": [],
+		"title": "Sector"
+	},
+	{
+		"altTitles": [],
+		"artist": "NATSUMI",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "JUNGLE TERROR"
+		},
+		"id": "S1929362f9a5c9ec1465",
+		"legacySongID": 2681,
+		"searchTerms": [],
+		"title": "Jungle Dance"
+	},
+	{
+		"altTitles": [],
 		"artist": "Juggernaut",
 		"data": {
 			"displayVersion": "33",
@@ -64,6 +88,18 @@
 			"GO"
 		],
 		"title": "GO!"
+	},
+	{
+		"altTitles": [],
+		"artist": "MYUKKE.",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "NU DISCO HOUSE"
+		},
+		"id": "S193f5dad95e5b65faa8",
+		"legacySongID": 2682,
+		"searchTerms": [],
+		"title": "The 88's Instigation"
 	},
 	{
 		"altTitles": [],
@@ -93,6 +129,18 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "Se-U-Ra",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "CELTIC ELECTRO TECH"
+		},
+		"id": "S195fd752d66429e21cf",
+		"legacySongID": 2680,
+		"searchTerms": [],
+		"title": "The Ashes of Boreas"
+	},
+	{
+		"altTitles": [],
 		"artist": "BlackY",
 		"data": {
 			"displayVersion": "33",
@@ -109,6 +157,30 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "m1dy",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "TOKYO STYLE SPEEDCORE"
+		},
+		"id": "S196f15ea61e2d3520b0",
+		"legacySongID": 2676,
+		"searchTerms": [],
+		"title": "Come To m1dy"
+	},
+	{
+		"altTitles": [],
+		"artist": "DC Mizey",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "HYBRID RAVE"
+		},
+		"id": "S1972b39a6a648910bd5",
+		"legacySongID": 2672,
+		"searchTerms": [],
+		"title": "Euphoric Fragmentation"
+	},
+	{
+		"altTitles": [],
 		"artist": "Ryu☆ feat.青龍",
 		"data": {
 			"displayVersion": "inf",
@@ -120,6 +192,18 @@
 			"Geki"
 		],
 		"title": "檄"
+	},
+	{
+		"altTitles": [],
+		"artist": "Oyubi",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "JUKE/FOOTWORK"
+		},
+		"id": "S197bd1ff40c7146f5e3",
+		"legacySongID": 2677,
+		"searchTerms": [],
+		"title": "Bang Pad(Werk Mix)"
 	},
 	{
 		"altTitles": [],
@@ -147,6 +231,18 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "ARM(IOSYS) feat.Nicole Curry",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "UK HARDCORE"
+		},
+		"id": "S19811d59159931da87c",
+		"legacySongID": 2675,
+		"searchTerms": [],
+		"title": "Come to Life"
+	},
+	{
+		"altTitles": [],
 		"artist": "Numb'n'dub",
 		"data": {
 			"displayVersion": "33",
@@ -168,6 +264,18 @@
 		"legacySongID": 2600,
 		"searchTerms": [],
 		"title": "HORIZON BEATZ"
+	},
+	{
+		"altTitles": [],
+		"artist": "BEMANI Sound Team \"Coyaan\"",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "丼ベース"
+		},
+		"id": "S198f942e509a20c0037",
+		"legacySongID": 2679,
+		"searchTerms": [],
+		"title": "Deep tenDon Reflex"
 	},
 	{
 		"altTitles": [],
@@ -31758,6 +31866,18 @@
 	},
 	{
 		"altTitles": [],
+		"artist": "L.E.D.-G",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "HARDCORE"
+		},
+		"id": "S19e1baba561bd076fa9",
+		"legacySongID": 2674,
+		"searchTerms": [],
+		"title": "NEPHILIM DELTA"
+	},
+	{
+		"altTitles": [],
 		"artist": "SOUND HOLIC feat. Nana Takahashi",
 		"data": {
 			"displayVersion": "inf",
@@ -31819,6 +31939,18 @@
 			"Pupcore"
 		],
 		"title": "ポチコの幸せな日常"
+	},
+	{
+		"altTitles": [],
+		"artist": "lapix",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "ABSTRACT NEUROFUNK"
+		},
+		"id": "S19e65f161564120441d",
+		"legacySongID": 2673,
+		"searchTerms": [],
+		"title": "Glitch Angel"
 	},
 	{
 		"altTitles": [],
@@ -32497,6 +32629,18 @@
 			"Any Percent"
 		],
 		"title": "Any%"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu☆ feat.Mayumi Morinaga",
+		"data": {
+			"displayVersion": "inf",
+			"genre": "BUBBLEGUM DANCE"
+		},
+		"id": "S19f3ab9f70781178f70",
+		"legacySongID": 2683,
+		"searchTerms": [],
+		"title": "Din Don Dan"
 	},
 	{
 		"altTitles": [],
