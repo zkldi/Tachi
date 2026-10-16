@@ -31601,7 +31601,9 @@
 		"title": "Caramel Pain"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Nyan Nyan University "
+		],
 		"artist": "Aice room",
 		"data": {
 			"displayVersion": "33",
@@ -31610,7 +31612,7 @@
 		"id": "S19d35e0b8df806d7478",
 		"legacySongID": 2559,
 		"searchTerms": [],
-		"title": "Nyan Nyan University "
+		"title": "Nyan Nyan University"
 	},
 	{
 		"altTitles": [],
