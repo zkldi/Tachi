@@ -1,5 +1,5 @@
 import GameChartPage from "#app/pages/dashboard/games/_game/GameChartPage";
-import GameChartsPage from "#app/pages/dashboard/games/_game/GameChartsPage";
+import GameChartsPage, { FolderSongsTable } from "#app/pages/dashboard/games/_game/GameChartsPage";
 import GameDevInfo from "#app/pages/dashboard/games/_game/GameDevInfo";
 import GameLeaderboardsPage from "#app/pages/dashboard/games/_game/GameLeaderboardsPage";
 import GameMainPage from "#app/pages/dashboard/games/_game/GameMainPage";
@@ -39,6 +39,7 @@ import { Redirect, Route, Switch, useParams } from "react-router-dom";
 import {
 	type ChartDocument,
 	COLOUR_SET,
+	type FolderDocument,
 	FormatDifficultyLong,
 	type GamesForGroup,
 	GameToGameGroup,
@@ -130,6 +131,14 @@ function GameV3Routes({ game }: { game: V3Game }) {
 					<GameDevInfo game={game} />
 				</Route>
 
+				<Route exact path="/games/:game/folders">
+					<Redirect to={`/games/${game}/charts`} />
+				</Route>
+
+				<Route path="/games/:game/folders/:folderSlug">
+					<FolderPageRoutes game={game} />
+				</Route>
+
 				<Route path="*">
 					<ErrorPage statusCode={404} />
 				</Route>
@@ -164,6 +173,26 @@ function GameQuestRoutes({ game }: GameProps) {
 			</Switch>
 		</>
 	);
+}
+
+function FolderPageRoutes({ game }: GameProps) {
+	const { folderSlug } = useParams<{ folderSlug: string }>();
+
+	const { data, error } = useApiQuery<{
+		charts: ChartDocument[];
+		folder: FolderDocument;
+		songs: SongDocument[];
+	}>(`/games/${game}/folders/${folderSlug}`);
+
+	if (error) {
+		return <ErrorPage customMessage={error.description} statusCode={error.statusCode} />;
+	}
+
+	if (!data) {
+		return <Loading />;
+	}
+
+	return <FolderSongsTable data={data} game={game} />;
 }
 
 function ChartPageRoutes({ game }: GameProps) {

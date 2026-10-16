@@ -22,6 +22,7 @@ import {
 	GetGameConfig,
 	GetGameGroupConfig,
 	type SongDocument,
+	type UserGameStats,
 	type V3Game,
 } from "tachi-common";
 
@@ -45,6 +46,8 @@ export default function ChartInfoFormat({
 		return <Loading />;
 	}
 
+	const ugsExists = user && ugs?.find((u: UserGameStats) => u.game === game);
+
 	return (
 		<Row
 			className="text-center align-items-center gap-8 gap-lg-0"
@@ -58,7 +61,7 @@ export default function ChartInfoFormat({
 				<ChartInfoLeft
 					data={data}
 					game={game}
-					username={user && ugs ? user.username : undefined}
+					username={ugsExists ? user.username : undefined}
 				/>
 			</Col>
 			<Col lg={4} xs={12}>
@@ -138,16 +141,12 @@ function ChartInfoLeft({
 									<span key={e.slug}>
 										<>{idx > 0 && " • "}</>
 										<span>
-											{username ? (
-												<Link
-													className="text-decoration-none"
-													to={`/u/${username}/games/${game}/folders/${e.slug}`}
-												>
-													{e.title}
-												</Link>
-											) : (
-												<span>{e.title}</span>
-											)}
+											<Link
+												className="text-decoration-none"
+												to={`${username ? `/u/${username}` : ""}/games/${game}/folders/${e.slug}`}
+											>
+												{e.title}
+											</Link>
 										</span>
 									</span>
 								))}
@@ -168,16 +167,12 @@ function ChartInfoLeft({
 				)
 				.map((e) => (
 					<li key={e.slug}>
-						{username ? (
-							<Link
-								className="text-decoration-none"
-								to={`/u/${username}/games/${game}/folders/${e.slug}`}
-							>
-								{e.title}
-							</Link>
-						) : (
-							<span>{e.title}</span>
-						)}
+						<Link
+							className="text-decoration-none"
+							to={`${username ? `/u/${username}` : ""}/games/${game}/folders/${e.slug}`}
+						>
+							{e.title}
+						</Link>
 					</li>
 				))}
 		</>

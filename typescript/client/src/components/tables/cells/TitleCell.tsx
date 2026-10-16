@@ -17,6 +17,7 @@ export default function TitleCell({
 	comment,
 	showSearchTerms,
 	showAltTitles,
+	wide,
 }: {
 	// chart is optional as we overload this titlecell to render pretty song tables
 	// in some places
@@ -27,6 +28,7 @@ export default function TitleCell({
 	showAltTitles?: boolean;
 	showSearchTerms?: boolean;
 	song: SongDocument;
+	wide?: boolean;
 }) {
 	let backgroundImage = undefined;
 	let center = false;
@@ -70,6 +72,7 @@ export default function TitleCell({
 	return (
 		<td
 			className="fading-image-td-left title-cell-wrapper"
+			colSpan={wide ? 2 : 1}
 			style={{
 				boxSizing: "border-box",
 				maxWidth: `${maxWidth}px`,

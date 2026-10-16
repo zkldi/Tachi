@@ -152,7 +152,7 @@ function Row({
 				<DifficultyCell chart={data} game={game} />
 				<IndicatorsCell highlight={false} />
 				<TitleCell chart={data} game={game} song={data.__related.song} />
-				<td colSpan={7}>
+				<td colSpan={1000}>
 					<Muted>Not Played.</Muted>
 				</td>
 			</tr>
