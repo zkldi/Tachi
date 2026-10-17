@@ -15,6 +15,7 @@ import RankingCell, { type RankingViewMode } from "../cells/RankingCell";
 import TimestampCell from "../cells/TimestampCell";
 import TitleCell from "../cells/TitleCell";
 import DropdownRow from "../components/DropdownRow";
+import MobileScoreRow from "../components/MobileScoreRow";
 import TachiTable, { type Header } from "../components/TachiTable";
 import { usePBState } from "../components/UseScoreState";
 import PBDropdown from "../dropdowns/PBDropdown";
@@ -123,6 +124,15 @@ export default function FolderTable({
 				externalSearchPreset={externalPreset}
 				headers={headers}
 				key={usePaginatedView ? "folder-paginated" : "folder-full"}
+				mobileRowFunction={(data) => (
+					<Row
+						data={data}
+						game={game}
+						mobile
+						rankingViewMode={rankingViewMode}
+						rating={rating}
+					/>
+				)}
 				pageLen={usePaginatedView ? 10 : 1000}
 				pageLenOptions={[1000, 100, 50, 25, 10]}
 				rowFunction={rowFn}
@@ -138,15 +148,28 @@ function Row({
 	rating,
 	game,
 	rankingViewMode,
+	mobile = false,
 }: {
 	data: FolderDataset[0];
 	game: V3Game;
+	mobile?: boolean;
 	rankingViewMode: RankingViewMode;
 	rating: ScoreRatingAlgorithms[V3Game];
 }) {
 	const score = data.__related.pb;
 
 	if (!score) {
+		if (mobile) {
+			return (
+				<MobileScoreRow
+					chart={data}
+					game={game}
+					rating={rating}
+					score={null}
+					song={data.__related.song}
+				/>
+			);
+		}
 		return (
 			<tr>
 				<DifficultyCell chart={data} game={game} />
@@ -163,6 +186,7 @@ function Row({
 		<RowInner
 			data={data}
 			game={game}
+			mobile={mobile}
 			rankingViewMode={rankingViewMode}
 			rating={rating}
 			score={score}
@@ -177,28 +201,51 @@ const RowInner = memo(
 		rating,
 		rankingViewMode,
 		score,
+		mobile = false,
 	}: {
 		data: FolderDataset[0];
 		game: V3Game;
+		mobile?: boolean;
 		rankingViewMode: RankingViewMode;
 		rating: ScoreRatingAlgorithms[V3Game];
 		score: PBScoreDocument;
 	}) => {
 		// screw the rules of hooks
 		const scoreState = usePBState(score);
+		const dropdown = (
+			<PBDropdown
+				chart={data}
+				game={game}
+				scoreState={scoreState}
+				song={data.__related.song}
+				userID={score.userID}
+			/>
+		);
+
+		if (mobile) {
+			return (
+				<MobileScoreRow
+					chart={data}
+					dropdown={dropdown}
+					extraCells={
+						<RankingCell
+							rankingData={score.rankingData}
+							rankingViewMode={rankingViewMode}
+							userID={score.userID}
+						/>
+					}
+					extraLabels={["Ranking"]}
+					game={game}
+					highlight={scoreState.highlight}
+					rating={rating}
+					score={score}
+					song={data.__related.song}
+				/>
+			);
+		}
 
 		return (
-			<DropdownRow
-				dropdown={
-					<PBDropdown
-						chart={data}
-						game={game}
-						scoreState={scoreState}
-						song={data.__related.song}
-						userID={score.userID}
-					/>
-				}
-			>
+			<DropdownRow dropdown={dropdown}>
 				<DifficultyCell chart={data} game={game} />
 				<IndicatorsCell highlight={scoreState.highlight} />
 				<TitleCell chart={data} game={game} song={data.__related.song} />
@@ -219,6 +266,7 @@ const RowInner = memo(
 		prev.data === next.data &&
 		prev.score === next.score &&
 		prev.game === next.game &&
+		prev.mobile === next.mobile &&
 		prev.rating === next.rating &&
 		prev.rankingViewMode === next.rankingViewMode,
 );

@@ -10,6 +10,7 @@ import RankingCell, { type RankingViewMode } from "../cells/RankingCell";
 import TimestampCell from "../cells/TimestampCell";
 import UserCell from "../cells/UserCell";
 import DropdownRow from "../components/DropdownRow";
+import MobileScoreRow from "../components/MobileScoreRow";
 import TachiTable, { type Header } from "../components/TachiTable";
 import { GraphAndJudgementDataComponent } from "../dropdowns/components/DocumentComponent";
 import { GameDropdownSettings } from "../dropdowns/GameDropdownSettings";
@@ -49,6 +50,17 @@ export default function RivalChartTable({
 			defaultSortMode="#"
 			entryName="Rivals"
 			headers={headers}
+			mobileRowFunction={(data) => (
+				<Row
+					chart={chart}
+					data={data}
+					game={game}
+					key={data.id}
+					mobile
+					rankingViewMode={rankingViewMode}
+					rating={rating}
+				/>
+			)}
 			noTopDisplayStr
 			rowFunction={(data) => (
 				<Row
@@ -70,14 +82,44 @@ function Row({
 	game,
 	chart,
 	rankingViewMode,
+	mobile = false,
 }: {
 	chart: ChartDocument;
 	data: RivalChartDataset[0];
 	game: V3Game;
+	mobile?: boolean;
 	rankingViewMode: RankingViewMode;
 	rating: AnyScoreRatingAlg;
 }) {
 	const pb = data.__related.pb;
+	const dropdown = pb ? (
+		<GraphAndJudgementDataComponent chart={chart} score={pb} {...GameDropdownSettings(game)} />
+	) : undefined;
+
+	if (mobile) {
+		return (
+			<MobileScoreRow
+				chart={chart}
+				dropdown={dropdown}
+				extraCells={
+					pb && (
+						<RankingCell
+							rankingData={pb.rankingData}
+							rankingViewMode={rankingViewMode}
+							userID={pb.userID}
+						/>
+					)
+				}
+				extraLabels={["Ranking"]}
+				game={game}
+				index={pb ? data.__related.index : undefined}
+				rating={rating}
+				score={pb}
+				showChart={false}
+				user={data}
+			/>
+		);
+	}
 
 	if (!pb) {
 		return (
@@ -92,16 +134,7 @@ function Row({
 	}
 
 	return (
-		<DropdownRow
-			dropdown={
-				<GraphAndJudgementDataComponent
-					chart={chart}
-					score={data.__related.pb}
-					{...{ ...GameDropdownSettings(game) }}
-				/>
-			}
-			nested
-		>
+		<DropdownRow dropdown={dropdown} nested>
 			<IndexCell index={data.__related.index} />
 			<UserCell game={game} user={data} />
 			<ScoreCoreCells chart={chart} game={game} rating={rating} score={pb} />

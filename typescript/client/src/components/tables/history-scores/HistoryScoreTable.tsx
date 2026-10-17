@@ -13,6 +13,7 @@ import {
 import DropdownIndicatorCell from "../cells/DropdownIndicatorCell";
 import TimestampCell from "../cells/TimestampCell";
 import DropdownRow from "../components/DropdownRow";
+import MobileScoreRow from "../components/MobileScoreRow";
 import TachiTable from "../components/TachiTable";
 import { GraphAndJudgementDataComponent } from "../dropdowns/components/DocumentComponent";
 import { GameDropdownSettings } from "../dropdowns/GameDropdownSettings";
@@ -48,6 +49,9 @@ export default function HistoryScoreTable({
 				["Timestamp", "Timestamp", NumericSOV((x) => x.timeAchieved ?? 0)],
 				EmptyHeader,
 			]}
+			mobileRowFunction={(sc) => (
+				<Row chart={chart} game={game} key={sc.scoreID} mobile rating={rating} sc={sc} />
+			)}
 			noTopDisplayStr
 			pageLen={pageLen}
 			rowFunction={(sc) => (
@@ -62,23 +66,31 @@ function Row({
 	chart,
 	rating,
 	game,
+	mobile = false,
 }: {
 	chart: ChartDocument;
 	game: V3Game;
+	mobile?: boolean;
 	rating: ScoreRatingAlgorithms[V3Game];
 	sc: ScoreDocument;
 }) {
+	const dropdown = (
+		<GraphAndJudgementDataComponent chart={chart} score={sc} {...GameDropdownSettings(game)} />
+	);
+	if (mobile) {
+		return (
+			<MobileScoreRow
+				chart={chart}
+				dropdown={dropdown}
+				game={game}
+				rating={rating}
+				score={sc}
+				showChart={false}
+			/>
+		);
+	}
 	return (
-		<DropdownRow
-			dropdown={
-				<GraphAndJudgementDataComponent
-					chart={chart}
-					score={sc}
-					{...{ ...GameDropdownSettings(game) }}
-				/>
-			}
-			nested
-		>
+		<DropdownRow dropdown={dropdown} nested>
 			<ScoreCoreCells chart={chart} game={game} rating={rating as any} score={sc} />
 			<TimestampCell game={game} service={sc.service} time={sc.timeAchieved} />
 			<DropdownIndicatorCell />

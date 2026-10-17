@@ -13,6 +13,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { type integer } from "tachi-common";
 
 import FilterDirectivesIndicator from "./FilterDirectivesIndicator";
+import MobileTable from "./MobileTable";
 import NoDataWrapper from "./NoDataWrapper";
 import PageSelector from "./PageSelector";
 import SortableTH from "./SortableTH";
@@ -89,6 +90,7 @@ function ParseHeaders<D>(headers: Header<D>[], thProps: ZTableTHProps) {
 export default function TachiTable<D>({
 	dataset,
 	rowFunction,
+	mobileRowFunction,
 	headers,
 	entryName,
 	pageLen = 10,
@@ -111,6 +113,7 @@ export default function TachiTable<D>({
 	 */
 	externalSearchPreset?: { nonce: number; search: string } | null;
 	headers: Header<D>[];
+	mobileRowFunction?: (data: D) => JSX.Element;
 	noBottomDisplayPager?: boolean;
 	noTopDisplayStr?: boolean;
 	pageLen?: integer;
@@ -170,6 +173,18 @@ export default function TachiTable<D>({
 	const {
 		breakpoint: { isLg },
 	} = useContext(WindowContext);
+	const useMobileTable = !isLg && mobileRowFunction !== undefined;
+	const rows = pageWindow.map((entry, index) => (
+		<React.Fragment
+			key={
+				rowKey && entry !== null && entry !== undefined
+					? rowKey(entry)
+					: index + ztable.pageLen * (page - 1)
+			}
+		>
+			{entry && (useMobileTable ? mobileRowFunction(entry) : rowFunction(entry))}
+		</React.Fragment>
+	));
 
 	const filterChromeClass = useMemo(() => {
 		const hasFilterText = search.trim().length > 0;
@@ -232,6 +247,7 @@ export default function TachiTable<D>({
 					>
 						<InputGroup>
 							<Form.Control
+								aria-label={`Filter ${entryName}`}
 								onChange={(e) => setSearch(e.target.value)}
 								placeholder={`Filter ${entryName}`}
 								type="text"
@@ -247,29 +263,29 @@ export default function TachiTable<D>({
 					</div>
 				)}
 			</div>
-			<div className="px-0 mt-4 mb-4 overflow-x-auto overflow-x-lg-hidden">
-				<table className="table table-striped table-hover table-vertical-center text-center">
-					<thead>{headersRow}</thead>
-					<tbody>
-						<NoDataWrapper>
-							{pageWindow.map((e, i) => {
-								const fallbackKey = i + ztable.pageLen * (page - 1);
-								return (
-									<React.Fragment
-										key={
-											rowKey && e !== null && e !== undefined
-												? rowKey(e)
-												: fallbackKey
-										}
-									>
-										{e && rowFunction(e)}
-									</React.Fragment>
-								);
-							})}
-						</NoDataWrapper>
-					</tbody>
-				</table>
-			</div>
+			{useMobileTable ? (
+				<div className="my-2">
+					<MobileTable
+						changeSort={changeSort}
+						currentSortMode={sortMode}
+						entryName={entryName}
+						headers={headers}
+						headersRow={headersRow}
+						reverseSort={reverseSort}
+					>
+						{rows}
+					</MobileTable>
+				</div>
+			) : (
+				<div className="px-0 mt-4 mb-4 overflow-x-auto overflow-x-lg-hidden">
+					<table className="table table-striped table-hover table-vertical-center text-center">
+						<thead>{headersRow}</thead>
+						<tbody>
+							<NoDataWrapper>{rows}</NoDataWrapper>
+						</tbody>
+					</table>
+				</div>
+			)}
 			<div className="row row-gap-4">
 				<div className="col-lg-4 d-flex justify-content-center justify-content-lg-start">
 					{dataset.length > 10 && !noBottomDisplayPager && (
