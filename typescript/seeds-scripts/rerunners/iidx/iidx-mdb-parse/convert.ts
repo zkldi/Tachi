@@ -87,6 +87,7 @@ export async function ParseIIDXData(
 			break;
 		case 32:
 		case 33:
+		case 34:
 			start = buffer.readUInt16LE(0xc) * 4 + 0x10;
 			structSize = 0x7f8;
 			levelsOffset = 0x3ec;
