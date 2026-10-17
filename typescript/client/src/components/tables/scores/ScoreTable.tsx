@@ -17,6 +17,7 @@ import TimestampCell from "../cells/TimestampCell";
 import TitleCell from "../cells/TitleCell";
 import UserCell from "../cells/UserCell";
 import DropdownRow from "../components/DropdownRow";
+import MobileScoreRow from "../components/MobileScoreRow";
 import TachiTable, { type Header } from "../components/TachiTable";
 import { useScoreState } from "../components/UseScoreState";
 import ScoreDropdown from "../dropdowns/ScoreDropdown";
@@ -63,6 +64,17 @@ export default function ScoreTable({
 			dataset={dataset}
 			entryName="Scores"
 			headers={headers}
+			mobileRowFunction={(sc) => (
+				<Row
+					game={game}
+					key={sc.scoreID}
+					mobile
+					onScoreUpdate={onScoreUpdate}
+					rating={rating as AnyScoreRatingAlg}
+					sc={sc}
+					userCol={userCol}
+				/>
+			)}
 			noTopDisplayStr={noTopDisplayStr}
 			pageLen={pageLen}
 			rowFunction={(sc) => (
@@ -86,29 +98,46 @@ function Row({
 	userCol,
 	game,
 	onScoreUpdate,
+	mobile = false,
 }: {
 	game: V3Game;
+	mobile?: boolean;
 	onScoreUpdate?: (sc: ScoreDocument) => void;
 	rating: AnyScoreRatingAlg;
 	sc: ScoreDataset[0];
 	userCol: boolean;
 }) {
 	const scoreState = useScoreState(sc);
+	const dropdown = (
+		<ScoreDropdown
+			chart={sc.__related.chart}
+			game={game}
+			onScoreUpdate={onScoreUpdate}
+			scoreState={scoreState}
+			song={sc.__related.song}
+			thisScore={sc}
+			user={sc.__related.user}
+		/>
+	);
+
+	if (mobile) {
+		return (
+			<MobileScoreRow
+				chart={sc.__related.chart}
+				comment={scoreState.comment}
+				dropdown={dropdown}
+				game={game}
+				highlight={scoreState.highlight}
+				rating={rating}
+				score={sc}
+				song={sc.__related.song}
+				user={userCol ? sc.__related.user : undefined}
+			/>
+		);
+	}
 
 	return (
-		<DropdownRow
-			dropdown={
-				<ScoreDropdown
-					chart={sc.__related.chart}
-					game={game}
-					onScoreUpdate={onScoreUpdate}
-					scoreState={scoreState}
-					song={sc.__related.song}
-					thisScore={sc}
-					user={sc.__related.user}
-				/>
-			}
-		>
+		<DropdownRow dropdown={dropdown}>
 			{userCol && <UserCell game={game} user={sc.__related.user} />}
 			<DifficultyCell chart={sc.__related.chart} game={game} />
 			<IndicatorsCell highlight={scoreState.highlight} />

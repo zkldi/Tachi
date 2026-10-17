@@ -12,6 +12,8 @@ import {
 	type SongDocument,
 } from "tachi-common";
 
+import styles from "./ScoreDetails.module.scss";
+
 type ChartType = "Life" | "Score";
 
 export function ChunithmGraphsComponent({
@@ -100,12 +102,7 @@ function GraphComponent({
 function Box({ message }: { message: string }) {
 	return (
 		<div className="col-12">
-			<div
-				className="d-flex align-items-center justify-content-center"
-				style={{ height: "200px" }}
-			>
-				<span className="text-body-secondary">{message}</span>
-			</div>
+			<div className={styles.emptyGraph}>{message}</div>
 		</div>
 	);
 }
