@@ -61478,6 +61478,29 @@
 			"hashSHA256": null,
 			"inGameID": 12012,
 			"kaidenAverage": null,
+			"notecount": 1189,
+			"worldRecord": null
+		},
+		"difficulty": "LEGGENDARIA",
+		"id": "C1a14beb401895e25a2a",
+		"isPrimary": true,
+		"legacyChartID": "b40b9b83fd8811cdaff118eb77b4bfbaaefafdb6",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19d35e0b0e4ef8a8b8f",
+		"versions": [
+			"33",
+			"33-omni",
+			"34"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 12012,
+			"kaidenAverage": null,
 			"notecount": 403,
 			"worldRecord": null
 		},
