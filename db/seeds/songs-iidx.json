@@ -30953,10 +30953,13 @@
 		"title": "Skratch Education Lv-1"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Uaigh Gealai"
+		],
 		"artist": "かめりあ",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "Uaigh Gealai",
 			"genre": "NEURO FUNK / CEILTEACH DORCHA"
 		},
 		"id": "S19d35e0b8ad39925521",
@@ -31598,6 +31601,7 @@
 		"artist": "Aice room",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "Nyan Nyan University ",
 			"genre": "MAJOR IN MEWOLOGY"
 		},
 		"id": "S19d35e0b8df806d7478",
@@ -32184,10 +32188,13 @@
 		"title": "色を喪った街"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"FiZZλ_POT!0N"
+		],
 		"artist": "めめめ",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "FiZZλ_POT!0N",
 			"genre": "超炭酸すぱしゃわコア"
 		},
 		"id": "S19f39a108df5c783cfa",
@@ -32450,10 +32457,13 @@
 		"title": "Second Heaven(Mamonis Remix)"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"華麗なる！音戯探偵ひなビタ"
+		],
 		"artist": "音戯探偵ひなビタ♫",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "華麗なる！音戯探偵ひなビタ",
 			"genre": "オトギタンテイ"
 		},
 		"id": "S19f39a108e0364c8ab5",
@@ -32582,10 +32592,13 @@
 		"title": "キミとえがくキセキ"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Τeλοs"
+		],
 		"artist": "BEMANI Sound Team \"HuΣeR\" feat.ゆきまめ",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "Τeλοs",
 			"genre": "幻想音樂"
 		},
 		"id": "S19f39a108e0b9009b03",
