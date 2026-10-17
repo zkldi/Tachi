@@ -88,7 +88,7 @@ describe("ConvertAPIKaiSDVX", () => {
 					slow: 42,
 					gauge: 90.01,
 					maxCombo: 179,
-					exscore: 2611, // Not a real exscore
+					exScore: 2611, // Not a real exscore
 				},
 			},
 			scoreMeta: {},
