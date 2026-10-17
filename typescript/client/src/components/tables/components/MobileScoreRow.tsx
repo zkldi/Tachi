@@ -86,7 +86,13 @@ export default function MobileScoreRow({
 											song={song}
 										/>
 									)}
-									{!showChart && user && <UserCell game={game} user={user} />}
+									{!showChart && user && (
+										<UserCell
+											game={game}
+											showProfilePicture={false}
+											user={user}
+										/>
+									)}
 								</tr>
 							</tbody>
 						</table>
@@ -95,7 +101,7 @@ export default function MobileScoreRow({
 						<table className={styles.user}>
 							<tbody>
 								<tr>
-									<UserCell game={game} user={user} />
+									<UserCell game={game} showProfilePicture={false} user={user} />
 								</tr>
 							</tbody>
 						</table>
