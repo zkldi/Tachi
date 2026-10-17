@@ -34,6 +34,7 @@ import {
 	GAME_PMS_CONTROLLER_CONF,
 	GAME_PMS_KEYBOARD_CONF,
 } from "./game-support/pms";
+import { GAME_GROUP_POLARISCHORD_CONF, GAME_POLARISCHORD_CONF } from "./game-support/poco";
 import { GAME_GROUP_POPN_CONF, GAME_POPN_CONF } from "./game-support/popn";
 import { GAME_GROUP_SDVX_CONF, GAME_SDVX_CONF } from "./game-support/sdvx";
 import {
@@ -61,6 +62,7 @@ export const GAME_GROUP_CONFIGS = {
 	sdvx: GAME_GROUP_SDVX_CONF,
 	usc: GAME_GROUP_USC_CONF,
 	wacca: GAME_GROUP_WACCA_CONF,
+	poco: GAME_GROUP_POLARISCHORD_CONF,
 	pms: GAME_PMS_CONF,
 	itg: GAME_GROUP_ITG_CONF,
 	arcaea: GAME_GROUP_ARCAEA_CONF,
@@ -103,6 +105,7 @@ export const GAME_CONFIGS = {
 	"gitadora-dora": GAME_GITADORA_DORA_CONF,
 	chunithm: GAME_CHUNITHM_CONF,
 	wacca: GAME_WACCA_CONF,
+	poco: GAME_POLARISCHORD_CONF,
 	jubeat: GAME_JUBEAT_SINGLE_CONF,
 	popn: GAME_POPN_CONF,
 	maimai: GAME_MAIMAI_CONF,
@@ -129,6 +132,7 @@ const v3GameMappings: Record<LEGACY_GPTString, V3Game> = {
 	"gitadora:Gita": "gitadora-gita",
 	"chunithm:Single": "chunithm",
 	"wacca:Single": "wacca",
+	"poco:Single": "poco",
 	"jubeat:Single": "jubeat",
 	"popn:9B": "popn",
 	"maimai:Single": "maimai",
@@ -173,6 +177,7 @@ export function LEGACY_GameToGPTString(game: V3Game): LEGACY_GPTString {
 		"gitadora-gita": "gitadora:Gita",
 		chunithm: "chunithm:Single",
 		wacca: "wacca:Single",
+		poco: "poco:Single",
 		jubeat: "jubeat:Single",
 		popn: "popn:9B",
 		maimai: "maimai:Single",
@@ -210,6 +215,7 @@ export function GameToGameGroup(game: V3Game): GameGroup {
 		"gitadora-gita": "gitadora",
 		chunithm: "chunithm",
 		wacca: "wacca",
+		poco: "poco",
 		jubeat: "jubeat",
 		popn: "popn",
 		maimai: "maimai",
