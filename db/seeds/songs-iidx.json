@@ -15410,9 +15410,6 @@
 		},
 		"id": "S19d35e0b3a05ba90459",
 		"legacySongID": 1218,
-		"searchTerms": [
-			"Idola "
-		],
 		"title": "Idola"
 	},
 	{
@@ -16224,9 +16221,6 @@
 		},
 		"id": "S19d35e0b3f463d9a771",
 		"legacySongID": 1301,
-		"searchTerms": [
-			"COLOSSEUM "
-		],
 		"title": "COLOSSEUM"
 	},
 	{
@@ -17036,9 +17030,6 @@
 		},
 		"id": "S19d35e0b4341f5e547d",
 		"legacySongID": 1365,
-		"searchTerms": [
-			"Sounds Of Summer "
-		],
 		"title": "Sounds Of Summer"
 	},
 	{
@@ -18987,7 +18978,7 @@
 		"id": "S19d35e0b4f82edc80cb",
 		"legacySongID": 1561,
 		"searchTerms": [
-			"Oinochi Cho-D.A.I. 901Girl "
+			"Oinochi Cho-D.A.I. 901Girl"
 		],
 		"title": "お命ちょうDAI！901娘"
 	},
@@ -19586,7 +19577,7 @@
 		"id": "S19d35e0b527d6438be7",
 		"legacySongID": 1608,
 		"searchTerms": [
-			"shinaino regret "
+			"shinaino regret"
 		],
 		"title": "深愛のリグレット"
 	},
@@ -31232,7 +31223,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "DJ RENA ",
+		"artist": "DJ RENA",
 		"data": {
 			"displayVersion": "33",
 			"genre": "JUNGLE, DRUM N BASS"
