@@ -43,7 +43,7 @@ the main benefits for us are as follows:
 		BETA_USER_BONUS: 5,
 	},
 	CDN_CONFIG: {
-		WEB_LOCATION: "http://localhost:9000/tachi-public",
+		WEB_LOCATION: "http://127.0.0.1:9000/tachi-public",
 		SAVE_LOCATION: {
 			TYPE: "S3_BUCKET",
 			ENDPOINT: "http://tachi-s3:9000",
@@ -351,10 +351,6 @@ If no LOGGER_CONFIG is provided, this is not set.
 - Type: CDN_CONFIG
 
 Configures the CDN for the Tachi Server. Files are always stored in an S3-compatible bucket (AWS S3, Backblaze, RustFS, etc.).
-
-For local development with `docker-compose-dev.yml`, run the `tachi-s3` RustFS service and point `SAVE_LOCATION.ENDPOINT` at it (from the `tachi-dev` container, `http://tachi-s3:9000`). Use a `WEB_LOCATION` URL that browsers can load (for example `http://localhost:9000/<bucket>` when RustFS’s API port is published to the host).
-
-The local RustFS service keeps the existing `minio` / `password` dev credentials and uses a fresh `tachi-rustfs` volume. Existing MinIO volumes are not migrated automatically. After switching, run `./dev/bootstrap.sh` inside the devcontainer to recreate the buckets and seed the default CDN assets.
 
 ```ts
 interface CDN_CONFIG: {

@@ -82,7 +82,7 @@ jobs:
           RUSTFS_CONSOLE_ADDRESS: "0.0.0.0:9001"
           RUSTFS_CONSOLE_ENABLE: "true"
         options: >-
-          --health-cmd "curl -f http://localhost:9000/health"
+          --health-cmd "curl -f http://127.0.0.1:9000/health"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
