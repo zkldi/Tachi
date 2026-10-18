@@ -22,10 +22,22 @@ Full database dumps for Tachi are published semi-regularly (when I remember to);
 
 ## Quick Setup For Experienced Programmers
 
-- Clone this repo and open `Tachi` in [VSCode](https://code.visualstudio.com) or [Cursor](https://cursor.com).
+- Clone this repo and open `Tachi` in [Zed](https://zed.dev), [VSCode](https://code.visualstudio.com) or [Cursor](https://cursor.com).
 - Other editors can be used, but you will need to set up devcontainers yourself.
+
+## For Zed
+
+- Hit `ctrl-shift-p` or `cmd-shift-p` on mac
+- Run `projects: open dev container`
+- 
+
+## For VSCode, Cursor
+
 - Install the `Dev Containers` extension
 - Run `Dev Container: Rebuild and Open in Container`
+
+## Then
+
 - (It can take a couple minutes to build and bootstrap)
 - You should be placed inside a vscode instance called `Tachi (dev-container)`
 - Inside there, you'll have a perfectly set up shell with fancy utils and fancy graphics. Use `just start` to start Tachi, use `seeds` to run seeds scripts, etc.
