@@ -120,7 +120,7 @@ RUN echo "LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8" > /etc/default/locale
 
 # create tachi user and give them sudo
 RUN addgroup --gid 1000 tachi \
-	&& adduser --disabled-password --uid 1000 --gid 1000 --home /home/tachi tachi \
+	&& adduser --disabled-password --uid 1000 --gid 1000 --home /home/tachi --shell /usr/bin/fish tachi \
 	&& echo "tachi ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # Make the /tachi working directory owned by our user instead of root. Docker volumes
