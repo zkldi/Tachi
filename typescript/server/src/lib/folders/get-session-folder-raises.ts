@@ -97,9 +97,9 @@ export async function GetSessionFolderRaises(
 			// This view is cumulative: reaching e.g. EX HARD CLEAR also counts as
 			// a HARD CLEAR (and CLEAR, ...). So this score raised every enum
 			// value-or-better bucket it crossed, i.e. every threshold in
-			// (oldIdx, newIdx]. Only surface thresholds above the
+			// (oldIdx, newIdx]. Only surface thresholds at or above the
 			// minimum-relevant value (so we don't show NO PLAY / FAILED rows).
-			const startIdx = Math.max(oldIdx, minIdx) + 1;
+			const startIdx = Math.max(oldIdx + 1, minIdx);
 
 			if (startIdx > newIdx) {
 				continue;
