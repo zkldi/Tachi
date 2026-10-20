@@ -4,7 +4,7 @@ import { VERSION_STR } from "#lib/constants/version";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import { TachiConfig } from "#lib/setup/config";
 import nodeFetch from "#utils/fetch";
-import { IsRecord } from "#utils/misc";
+import { IsRecord, Sleep } from "#utils/misc";
 import { URL } from "url";
 
 /**
@@ -24,11 +24,16 @@ export type KaiAPIReauthFunction = () => Promise<string>;
 const MAX_REAUTH_ATTEMPTS = 1;
 
 /**
+ * How many times can we retry 429s before we give up?
+ */
+const MAX_RETRY_ATTEMPTS = 5;
+
+/**
  * Defines the absolute maximum amount of loops this function can do.
  * A maliciously crafted API can cause us to enter an infinite loop and
  * blow up - we don't want that.
  */
-const MAX_ITERATIONS = 500;
+const MAX_ITERATIONS = 2_000;
 
 /**
  * Traverses a Kai-like personal_bests api.
@@ -51,6 +56,7 @@ export async function* TraverseKaiAPI(
 
 	let reauthAttempts = 0;
 	let currentIteration = 0;
+	let retryAttempts = 0;
 
 	while (fetchMoreData) {
 		// Rough SSRF check - KAI-like apis could potentially get us to perform
@@ -113,6 +119,50 @@ export async function* TraverseKaiAPI(
 			continue;
 		}
 
+		// retry later
+		if (res.status === 429) {
+			// there, or one second
+			const retryAfter = res.headers.get("Retry-After") ?? "1";
+
+			const maybeDate = Date.parse(retryAfter);
+			const maybeNum = Number(retryAfter);
+
+			let msToSleep;
+
+			if (!Number.isNaN(maybeNum)) {
+				msToSleep = maybeNum * 1000;
+			} else if (!Number.isNaN(maybeDate)) {
+				msToSleep = maybeDate - Date.now();
+			} else {
+				msToSleep = 1000;
+			}
+
+			if (msToSleep < 1000) {
+				msToSleep = 1000;
+			}
+			// deliberate
+			if (msToSleep > 5_000) {
+				msToSleep = 5_000;
+			}
+
+			retryAttempts++;
+
+			if (retryAttempts > MAX_RETRY_ATTEMPTS) {
+				throw new ScoreImportFatalError(
+					500,
+					`The server rate limited us for too long, and we cannot reasonably hold open this request.`,
+				);
+			}
+
+			// eslint-disable-next-line no-await-in-loop
+			await Sleep(msToSleep);
+
+			// go to start of loop
+			continue;
+		}
+
+		retryAttempts = 0;
+
 		let text;
 
 		try {
@@ -120,6 +170,13 @@ export async function* TraverseKaiAPI(
 			// in the case of disaster.
 			// eslint-disable-next-line no-await-in-loop
 			text = await res.text();
+
+			if (res.status !== 200) {
+				log.warn(
+					{ text },
+					`Received unexpected status code ${res.status}. The server returned this message: ${text}.`,
+				);
+			}
 
 			json = JSON.parse(text) as unknown;
 		} catch (err) {
