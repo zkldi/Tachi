@@ -122,6 +122,7 @@ The default rating algorithm is `ktLampRating`.
 | `31` | Epolis |
 | `32` | Pinky Crush |
 | `33` | Sparkle Shower |
+| `34` | ZINRAI |
 | `3-cs` | 3rd Style CS |
 | `4-cs` | 4th Style CS |
 | `5-cs` | 5th Style CS |

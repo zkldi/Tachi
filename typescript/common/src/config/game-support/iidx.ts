@@ -331,6 +331,7 @@ export const GAME_IIDX_SP_CONF = {
 		"31": "Epolis",
 		"32": "Pinky Crush",
 		"33": "Sparkle Shower",
+		"34": "ZINRAI",
 		"26-omni": "ROOTAGE Omnimix",
 		"27-omni": "HEROIC VERSE Omnimix",
 		"28-omni": "BISTROVER Omnimix",
