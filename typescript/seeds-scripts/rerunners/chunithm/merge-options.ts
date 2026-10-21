@@ -8,7 +8,6 @@ import {
 	type integer,
 	GetGameConfig,
 	type SEEDS_SongDocument,
-	Versions,
 } from "tachi-common";
 
 import { log } from "../../log";
@@ -37,6 +36,7 @@ const DISPLAY_VERSIONS = [
 	"CHUNITHM VERSE",
 	"CHUNITHM X-VERSE",
 	"CHUNITHM X-VERSE-X",
+	"CHUNITHM Mate",
 ];
 const VERSIONS = [
 	"paradiselost",
@@ -47,6 +47,7 @@ const VERSIONS = [
 	"verse",
 	"xverse",
 	"xversex",
+	"mate",
 ];
 const EMPTY_LEVEL_HISTORY = {
 	paradiselost: null,
@@ -59,6 +60,9 @@ const EMPTY_LEVEL_HISTORY = {
 	xversex: null,
 	"xversex-intl": null,
 	"xversex-omni": null,
+	mate: null,
+	"mate-intl": null,
+	"mate-omni": null,
 };
 
 // WE charts that need extra disambiguators. Mapping of inGameID to the disambiguator.
@@ -462,6 +466,13 @@ for (const optionsDir of options.input) {
 					const exists = existingCharts.get(`${inGameID}-${difficultyName}`);
 
 					if (exists) {
+						exists.data.levelHistory![
+							options.version as keyof typeof EMPTY_LEVEL_HISTORY
+						] = {
+							level,
+							levelNum,
+						};
+
 						const displayName = `${musicData.artistName.str} - ${musicData.name.str} [${difficultyName}] (${exists.id})`;
 						const versionIndex = exists.versions.indexOf(options.version);
 
