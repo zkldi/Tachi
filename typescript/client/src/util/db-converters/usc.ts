@@ -12,7 +12,7 @@ import { queryAll, queryOne } from "./sql-loader";
 const SERVICE = "tachi-import-scripts";
 
 const MIN_DB_VERSION = 19;
-const MAX_DB_VERSION = 20;
+const MAX_DB_VERSION = 21;
 
 interface USCScoreRow {
 	score: number;
