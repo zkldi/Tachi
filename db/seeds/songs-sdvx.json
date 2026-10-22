@@ -30379,5 +30379,44 @@
 			"bo_risshu"
 		],
 		"title": "ボ"
+	},
+	{
+		"altTitles": [],
+		"artist": "Laur",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a1644166b0efd8da85",
+		"legacySongID": 2552,
+		"searchTerms": [
+			"rebellionfromthe_laur"
+		],
+		"title": "Rebellion from the Dark Side"
+	},
+	{
+		"altTitles": [],
+		"artist": "CHUBAY",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a1644166b2d4cba475",
+		"legacySongID": 2554,
+		"searchTerms": [
+			"allthedeities_chubay"
+		],
+		"title": "All the Deities"
+	},
+	{
+		"altTitles": [],
+		"artist": "しーけー",
+		"data": {
+			"displayVersion": "nabla"
+		},
+		"id": "S1a1644166b2fc7bb446",
+		"legacySongID": 2553,
+		"searchTerms": [
+			"forgottenfaith_siikee"
+		],
+		"title": "Forgotten faith"
 	}
 ]
