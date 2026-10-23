@@ -144,6 +144,7 @@ export interface GameClientImplementation<TGame extends V3Game = V3Game> {
 	 */
 	scoreCoreCells: (props: {
 		chart: ChartDocument<TGame>;
+		mobile: boolean;
 		sc: PBScoreDocument<TGame> | ScoreDocument<TGame>;
 	}) => JSX.Element;
 

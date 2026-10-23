@@ -23,9 +23,9 @@ export function StarField({ stars, compact }: { compact: boolean; stars: integer
 }
 
 export default function OngekiPlatinumCell({
-	platinumScore: platinumScore,
-	maxPlatScore: maxPlatScore,
-	stars: stars,
+	platinumScore,
+	maxPlatScore,
+	stars,
 }: {
 	maxPlatScore: integer;
 	platinumScore: integer;
@@ -34,7 +34,7 @@ export default function OngekiPlatinumCell({
 	const percentage = (platinumScore / maxPlatScore) * 100;
 	return (
 		<td>
-			<div className="d-flex flex-column">
+			<div className="d-flex flex-column" style={{ whiteSpace: "nowrap", minWidth: "5em" }}>
 				<strong>
 					{percentage.toLocaleString("en-US", {
 						minimumFractionDigits: 2,
