@@ -126,6 +126,7 @@ export default function MobileScoreRow({
 									<ScoreCoreCells
 										chart={chart}
 										game={game}
+										mobile
 										rating={rating}
 										score={score}
 									/>

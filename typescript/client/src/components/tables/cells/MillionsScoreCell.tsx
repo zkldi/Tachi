@@ -18,8 +18,7 @@ export default function MillionsScoreCell({
 			}}
 		>
 			<strong>{grade}</strong>
-			<br />
-			{FormatMillions(score)}
+			<div style={{ whiteSpace: "nowrap" }}>{FormatMillions(score)}</div>
 		</td>
 	);
 }
