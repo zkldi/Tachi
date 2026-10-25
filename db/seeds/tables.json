@@ -3147,12 +3147,12 @@
 		],
 		"game": "iidx-dp",
 		"id": "T19d35f0d59334223382",
-		"inactive": false,
+		"inactive": true,
 		"legacyTableID": "iidx-DP-32-omni-levels",
 		"title": "beatmania IIDX (DP) (Pinky Crush Omnimix)"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Levels for beatmania IIDX (DP) in Pinky Crush.",
 		"folders": [
 			"1-pinkycrush",
@@ -3170,7 +3170,7 @@
 		],
 		"game": "iidx-dp",
 		"id": "T19d35f0d5932c901434",
-		"inactive": false,
+		"inactive": true,
 		"legacyTableID": "iidx-DP-32-levels",
 		"title": "beatmania IIDX (DP) (Pinky Crush)"
 	},
@@ -3336,7 +3336,7 @@
 		"title": "beatmania IIDX (DP) (Sparkle Shower Omnimix)"
 	},
 	{
-		"default": false,
+		"default": true,
 		"description": "Levels for beatmania IIDX (DP) in Sparkle Shower.",
 		"folders": [
 			"1-sparkleshower",
@@ -3380,6 +3380,29 @@
 		"inactive": true,
 		"legacyTableID": "iidx-DP-20-levels",
 		"title": "beatmania IIDX (DP) (tricoro)"
+	},
+	{
+		"default": false,
+		"description": "Levels for beatmania IIDX (DP) in ZINRAI.",
+		"folders": [
+			"1-zinrai",
+			"2-zinrai",
+			"3-zinrai",
+			"4-zinrai",
+			"5-zinrai",
+			"6-zinrai",
+			"7-zinrai",
+			"8-zinrai",
+			"9-zinrai",
+			"10-zinrai",
+			"11-zinrai",
+			"12-zinrai"
+		],
+		"game": "iidx-dp",
+		"id": "T1a14bf2261ee35a12c1",
+		"inactive": false,
+		"legacyTableID": "iidx-dp-zinrai-levels",
+		"title": "beatmania IIDX (DP) (ZINRAI)"
 	},
 	{
 		"default": false,
@@ -4044,12 +4067,12 @@
 		],
 		"game": "iidx-sp",
 		"id": "T19d35f0d5939810c007",
-		"inactive": false,
+		"inactive": true,
 		"legacyTableID": "iidx-SP-32-omni-levels",
 		"title": "beatmania IIDX (SP) (Pinky Crush Omnimix)"
 	},
 	{
-		"default": true,
+		"default": false,
 		"description": "Levels for beatmania IIDX (SP) in Pinky Crush.",
 		"folders": [
 			"1-pinkycrush",
@@ -4067,7 +4090,7 @@
 		],
 		"game": "iidx-sp",
 		"id": "T19d35f0d5931645c1f5",
-		"inactive": false,
+		"inactive": true,
 		"legacyTableID": "iidx-SP-32-levels",
 		"title": "beatmania IIDX (SP) (Pinky Crush)"
 	},
@@ -4233,7 +4256,7 @@
 		"title": "beatmania IIDX (SP) (Sparkle Shower Omnimix)"
 	},
 	{
-		"default": false,
+		"default": true,
 		"description": "Levels for beatmania IIDX (SP) in Sparkle Shower.",
 		"folders": [
 			"1-sparkleshower",
@@ -4277,6 +4300,29 @@
 		"inactive": true,
 		"legacyTableID": "iidx-SP-20-levels",
 		"title": "beatmania IIDX (SP) (tricoro)"
+	},
+	{
+		"default": false,
+		"description": "Levels for beatmania IIDX (SP) in ZINRAI.",
+		"folders": [
+			"1-zinrai",
+			"2-zinrai",
+			"3-zinrai",
+			"4-zinrai",
+			"5-zinrai",
+			"6-zinrai",
+			"7-zinrai",
+			"8-zinrai",
+			"9-zinrai",
+			"10-zinrai",
+			"11-zinrai",
+			"12-zinrai"
+		],
+		"game": "iidx-sp",
+		"id": "T1a14bf220d418ab9e55",
+		"inactive": false,
+		"legacyTableID": "iidx-sp-zinrai-levels",
+		"title": "beatmania IIDX (SP) (ZINRAI)"
 	},
 	{
 		"default": false,

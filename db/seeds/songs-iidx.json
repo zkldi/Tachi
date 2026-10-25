@@ -15410,9 +15410,7 @@
 		},
 		"id": "S19d35e0b3a05ba90459",
 		"legacySongID": 1218,
-		"searchTerms": [
-			"Idola "
-		],
+		"searchTerms": [],
 		"title": "Idola"
 	},
 	{
@@ -16224,9 +16222,7 @@
 		},
 		"id": "S19d35e0b3f463d9a771",
 		"legacySongID": 1301,
-		"searchTerms": [
-			"COLOSSEUM "
-		],
+		"searchTerms": [],
 		"title": "COLOSSEUM"
 	},
 	{
@@ -17036,9 +17032,7 @@
 		},
 		"id": "S19d35e0b4341f5e547d",
 		"legacySongID": 1365,
-		"searchTerms": [
-			"Sounds Of Summer "
-		],
+		"searchTerms": [],
 		"title": "Sounds Of Summer"
 	},
 	{
@@ -18987,7 +18981,7 @@
 		"id": "S19d35e0b4f82edc80cb",
 		"legacySongID": 1561,
 		"searchTerms": [
-			"Oinochi Cho-D.A.I. 901Girl "
+			"Oinochi Cho-D.A.I. 901Girl"
 		],
 		"title": "お命ちょうDAI！901娘"
 	},
@@ -19586,7 +19580,7 @@
 		"id": "S19d35e0b527d6438be7",
 		"legacySongID": 1608,
 		"searchTerms": [
-			"shinaino regret "
+			"shinaino regret"
 		],
 		"title": "深愛のリグレット"
 	},
@@ -30962,10 +30956,13 @@
 		"title": "Skratch Education Lv-1"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Uaigh Gealai"
+		],
 		"artist": "かめりあ",
 		"data": {
 			"displayVersion": "32",
+			"eamusementCsvTitle": "Uaigh Gealai",
 			"genre": "NEURO FUNK / CEILTEACH DORCHA"
 		},
 		"id": "S19d35e0b8ad39925521",
@@ -31232,7 +31229,7 @@
 	},
 	{
 		"altTitles": [],
-		"artist": "DJ RENA ",
+		"artist": "DJ RENA",
 		"data": {
 			"displayVersion": "33",
 			"genre": "JUNGLE, DRUM N BASS"
@@ -31607,6 +31604,7 @@
 		"artist": "Aice room",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "Nyan Nyan University ",
 			"genre": "MAJOR IN MEWOLOGY"
 		},
 		"id": "S19d35e0b8df806d7478",
@@ -32193,10 +32191,13 @@
 		"title": "色を喪った街"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"FiZZλ_POT!0N"
+		],
 		"artist": "めめめ",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "FiZZλ_POT!0N",
 			"genre": "超炭酸すぱしゃわコア"
 		},
 		"id": "S19f39a108df5c783cfa",
@@ -32459,10 +32460,13 @@
 		"title": "Second Heaven(Mamonis Remix)"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"華麗なる！音戯探偵ひなビタ"
+		],
 		"artist": "音戯探偵ひなビタ♫",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "華麗なる！音戯探偵ひなビタ",
 			"genre": "オトギタンテイ"
 		},
 		"id": "S19f39a108e0364c8ab5",
@@ -32591,10 +32595,13 @@
 		"title": "キミとえがくキセキ"
 	},
 	{
-		"altTitles": [],
+		"altTitles": [
+			"Τeλοs"
+		],
 		"artist": "BEMANI Sound Team \"HuΣeR\" feat.ゆきまめ",
 		"data": {
 			"displayVersion": "33",
+			"eamusementCsvTitle": "Τeλοs",
 			"genre": "幻想音樂"
 		},
 		"id": "S19f39a108e0b9009b03",
@@ -32722,7 +32729,7 @@
 		"altTitles": [],
 		"artist": "ryo (supercell)",
 		"data": {
-			"displayVersion": "33",
+			"displayVersion": "34",
 			"genre": "アニメ／ボーカロイド／J-POP"
 		},
 		"id": "S1a0b7e834946d912198",
@@ -32748,7 +32755,7 @@
 		"altTitles": [],
 		"artist": "ryo (supercell) / かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織) from 超かぐや姫！",
 		"data": {
-			"displayVersion": "33",
+			"displayVersion": "34",
 			"genre": "アニメ"
 		},
 		"id": "S1a0b7e83494b4799d95",
@@ -32802,7 +32809,7 @@
 		"altTitles": [],
 		"artist": "めめめ",
 		"data": {
-			"displayVersion": "33",
+			"displayVersion": "34",
 			"genre": "HARD DANCE"
 		},
 		"id": "S1a0b7e83494dc9298ad",
@@ -32814,7 +32821,7 @@
 		"altTitles": [],
 		"artist": "Yuta Imai",
 		"data": {
-			"displayVersion": "33",
+			"displayVersion": "34",
 			"genre": "EUPHORIC HARDSTYLE"
 		},
 		"id": "S1a0b7e83494decb9db9",
@@ -32823,5 +32830,511 @@
 			"HEKIREKI"
 		],
 		"title": "霹靂"
+	},
+	{
+		"altTitles": [],
+		"artist": "劇団レコード feat.T4K",
+		"data": {
+			"displayVersion": "34",
+			"genre": "BATTLE SWORD"
+		},
+		"id": "S1a14b668b7426343a29",
+		"legacySongID": 2690,
+		"searchTerms": [
+			"Yasha No Tamashii"
+		],
+		"title": "夜叉ノ魂"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sota Fujimori",
+		"data": {
+			"displayVersion": "34",
+			"genre": "TECH CORE"
+		},
+		"id": "S1a14b668b743f4a91d6",
+		"legacySongID": 2688,
+		"searchTerms": [],
+		"title": "GENERATED GRID"
+	},
+	{
+		"altTitles": [],
+		"artist": "STEVIE(Trymatic)/Nana Takahashi Prod. by L.E.D.",
+		"data": {
+			"displayVersion": "34",
+			"genre": "DEATH TEKNO"
+		},
+		"id": "S1a14b668b74402334ce",
+		"legacySongID": 2684,
+		"searchTerms": [],
+		"title": "TEKNO KEISER"
+	},
+	{
+		"altTitles": [],
+		"artist": "Remixed by L.E.D.-G feat. 佐伯伊織",
+		"data": {
+			"displayVersion": "34",
+			"genre": "IIDX EDITION"
+		},
+		"id": "S1a14b668b7448d9793e",
+		"legacySongID": 2685,
+		"searchTerms": [
+			"baibai fight!"
+		],
+		"title": "倍倍FIGHT!"
+	},
+	{
+		"altTitles": [],
+		"artist": "dj TAKA",
+		"data": {
+			"displayVersion": "34",
+			"genre": "TECH SPEED"
+		},
+		"id": "S1a14b668b749a1292ec",
+		"legacySongID": 2687,
+		"searchTerms": [
+			"RAITEI NO GOTOSHI"
+		],
+		"title": "雷霆の如し"
+	},
+	{
+		"altTitles": [],
+		"artist": "HuΣeR",
+		"data": {
+			"displayVersion": "34",
+			"genre": "STYLISH FUTURE"
+		},
+		"id": "S1a14b668b74b529878d",
+		"legacySongID": 2686,
+		"searchTerms": [],
+		"title": "Singularity Girl"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yvya",
+		"data": {
+			"displayVersion": "34",
+			"genre": "PROGRESSIVE METAL"
+		},
+		"id": "S1a14b668b74fdcf2d1f",
+		"legacySongID": 2689,
+		"searchTerms": [
+			"ANOMALY"
+		],
+		"title": "ΛИ0MΛLY"
+	},
+	{
+		"altTitles": [],
+		"artist": "EmoCosine",
+		"data": {
+			"displayVersion": "34",
+			"genre": "JERSEY FUTURE CORE"
+		},
+		"id": "S1a14b668b760dea6047",
+		"legacySongID": 2698,
+		"searchTerms": [],
+		"title": "Dying 4 U"
+	},
+	{
+		"altTitles": [],
+		"artist": "KARUT",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HYBRID BREAKS"
+		},
+		"id": "S1a14b668b761f62c073",
+		"legacySongID": 2693,
+		"searchTerms": [],
+		"title": "PISTOL SWORD"
+	},
+	{
+		"altTitles": [],
+		"artist": "U1 overground",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ORBITALIC MOON REQUIEM"
+		},
+		"id": "S1a14b668b763ccf9ec2",
+		"legacySongID": 2691,
+		"searchTerms": [
+			"Tsuki no shitani chiru yaiba"
+		],
+		"title": "月下散刄"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nhato",
+		"data": {
+			"displayVersion": "34",
+			"genre": "TECH TRANCE"
+		},
+		"id": "S1a14b668b7642971ce4",
+		"legacySongID": 2702,
+		"searchTerms": [],
+		"title": "Spark Rush"
+	},
+	{
+		"altTitles": [],
+		"artist": "Xceon",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HYPER ENKA POP"
+		},
+		"id": "S1a14b668b76481d321b",
+		"legacySongID": 2694,
+		"searchTerms": [],
+		"title": "Shogun's Last Dawn ft. Kanae Asaba"
+	},
+	{
+		"altTitles": [],
+		"artist": "デラむぅとのらつーあーる",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ぽっぷむぅ～じっく"
+		},
+		"id": "S1a14b668b7657e088c6",
+		"legacySongID": 2700,
+		"searchTerms": [
+			"deramu no deruxe karuta notes chord peak edition"
+		],
+		"title": "デラむぅのでらっくす☆かるた ～NOTES・CHORD・PEAK編～"
+	},
+	{
+		"altTitles": [],
+		"artist": "めと（Metomate）",
+		"data": {
+			"displayVersion": "34",
+			"genre": "EPHEMERAL ROCK"
+		},
+		"id": "S1a14b668b765bf0b41b",
+		"legacySongID": 2699,
+		"searchTerms": [
+			"AIMLESS REFLECTION"
+		],
+		"title": "映夢雪花抄"
+	},
+	{
+		"altTitles": [],
+		"artist": "RoughSkreamZ feat. Fra",
+		"data": {
+			"displayVersion": "34",
+			"genre": "DJENT/UK INDUSTRIAL/RAP"
+		},
+		"id": "S1a14b668b76648877be",
+		"legacySongID": 2696,
+		"searchTerms": [
+			"Akujikyouki"
+		],
+		"title": "悪ジ狂キ"
+	},
+	{
+		"altTitles": [],
+		"artist": "xi feat. Risa Yuzuki",
+		"data": {
+			"displayVersion": "34",
+			"genre": "JAPANESE PIANO ROCK"
+		},
+		"id": "S1a14b668b76669c4789",
+		"legacySongID": 2706,
+		"searchTerms": [
+			"UTAKATA TO TSUKI"
+		],
+		"title": "泡沫と月"
+	},
+	{
+		"altTitles": [],
+		"artist": "Taishi",
+		"data": {
+			"displayVersion": "34",
+			"genre": "TRANCE"
+		},
+		"id": "S1a14b668b7685225509",
+		"legacySongID": 2701,
+		"searchTerms": [],
+		"title": "Rise Beyond"
+	},
+	{
+		"altTitles": [],
+		"artist": "satella",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ORIENTAL"
+		},
+		"id": "S1a14b668b76878080f1",
+		"legacySongID": 2703,
+		"searchTerms": [
+			"SAIKAI"
+		],
+		"title": "斎戒"
+	},
+	{
+		"altTitles": [],
+		"artist": "Dubscribe",
+		"data": {
+			"displayVersion": "34",
+			"genre": "DUBSTEP"
+		},
+		"id": "S1a14b668b76a1025b13",
+		"legacySongID": 2695,
+		"searchTerms": [],
+		"title": "Samurai Sword"
+	},
+	{
+		"altTitles": [],
+		"artist": "Zekk",
+		"data": {
+			"displayVersion": "34",
+			"genre": "BREAKCORE"
+		},
+		"id": "S1a14b668b76d2900fd2",
+		"legacySongID": 2704,
+		"searchTerms": [],
+		"title": "Deathstalker"
+	},
+	{
+		"altTitles": [],
+		"artist": "REMO-CON",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HYPERTRANCE"
+		},
+		"id": "S1a14b668b76d70d7a50",
+		"legacySongID": 2705,
+		"searchTerms": [],
+		"title": "Citroforte"
+	},
+	{
+		"altTitles": [],
+		"artist": "nora2r",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HARDCORE"
+		},
+		"id": "S1a14b668b76ec569c64",
+		"legacySongID": 2697,
+		"searchTerms": [],
+		"title": "Memorylust"
+	},
+	{
+		"altTitles": [],
+		"artist": "YUC'e",
+		"data": {
+			"displayVersion": "34",
+			"genre": "IVORY BASS"
+		},
+		"id": "S1a14b668b76f7581da6",
+		"legacySongID": 2692,
+		"searchTerms": [],
+		"title": "Mellow Diary"
+	},
+	{
+		"altTitles": [],
+		"artist": "魂音泉",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HIPHOP"
+		},
+		"id": "S1a14b668b7714218c47",
+		"legacySongID": 2709,
+		"searchTerms": [
+			"NOMAD feat. Rapbit"
+		],
+		"title": "NOMAD (feat. らっぷびと)"
+	},
+	{
+		"altTitles": [],
+		"artist": "影虎。",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ORIENTAL HARDPSY"
+		},
+		"id": "S1a14b668b7760572c68",
+		"legacySongID": 2707,
+		"searchTerms": [],
+		"title": "OTOROSHI"
+	},
+	{
+		"altTitles": [],
+		"artist": "Hylen feat. DJ 14 (SCRATCHING)",
+		"data": {
+			"displayVersion": "34",
+			"genre": "DJENTLE ZAAGBREAKSTEP"
+		},
+		"id": "S1a14b668b7760ac6039",
+		"legacySongID": 2708,
+		"searchTerms": [],
+		"title": "DEADRABBIT!!"
+	},
+	{
+		"altTitles": [],
+		"artist": "hololive IDOL PROJECT",
+		"data": {
+			"displayVersion": "34",
+			"genre": "J-POP"
+		},
+		"id": "S1a14b668b78234b7beb",
+		"legacySongID": 2712,
+		"searchTerms": [
+			"Gimmick Gimmick Entertainment"
+		],
+		"title": "ギミギミエンターテイメント"
+	},
+	{
+		"altTitles": [],
+		"artist": "BlackY",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ENERGETIC JAPANESQUE"
+		},
+		"id": "S1a14b668b78a3083c05",
+		"legacySongID": 2710,
+		"searchTerms": [],
+		"title": "BENiZAKURA"
+	},
+	{
+		"altTitles": [],
+		"artist": "irucaice feat. あやぽんず＊ (森羅万象)",
+		"data": {
+			"displayVersion": "34",
+			"genre": "和風歌謡電子恋歌"
+		},
+		"id": "S1a14b668b78d92f0236",
+		"legacySongID": 2711,
+		"searchTerms": [
+			"TSUKUMONOKOIMUSUBI"
+		],
+		"title": "九十九ノ恋結ビ"
+	},
+	{
+		"altTitles": [],
+		"artist": "HIMEHINA",
+		"data": {
+			"displayVersion": "34",
+			"genre": "J-POP"
+		},
+		"id": "S1a14b668b7a20e69228",
+		"legacySongID": 2713,
+		"searchTerms": [
+			"Frankenstein's monster"
+		],
+		"title": "フランケンシュタインの怪物"
+	},
+	{
+		"altTitles": [],
+		"artist": "Prim / Remixed by RoughSketch",
+		"data": {
+			"displayVersion": "34",
+			"genre": "Hi-リミックスコア"
+		},
+		"id": "S1a14b668b7a373aced3",
+		"legacySongID": 2717,
+		"searchTerms": [
+			"koisuru uchusensou!! koisuru hardcore mix"
+		],
+		"title": "恋する☆宇宙戦争っ!! (恋する★ハードコアRemix)"
+	},
+	{
+		"altTitles": [],
+		"artist": "雨良 Amala feat.初音ミク、重音テト",
+		"data": {
+			"displayVersion": "34",
+			"genre": "エレクトロ"
+		},
+		"id": "S1a14b668b7a6bca0729",
+		"legacySongID": 2715,
+		"searchTerms": [
+			"Dadadadadaru"
+		],
+		"title": "ダダダダダル"
+	},
+	{
+		"altTitles": [],
+		"artist": "ナユタン星人",
+		"data": {
+			"displayVersion": "34",
+			"genre": "ボカロ"
+		},
+		"id": "S1a14b668b7ae9a9aed4",
+		"legacySongID": 2714,
+		"searchTerms": [
+			"Discommutant!"
+		],
+		"title": "でぃすこみゅーたんと！"
+	},
+	{
+		"altTitles": [],
+		"artist": "DECO*27",
+		"data": {
+			"displayVersion": "34",
+			"genre": "J-POP・VOCALOID"
+		},
+		"id": "S1a14b668b7aefaa13ba",
+		"legacySongID": 2716,
+		"searchTerms": [
+			"Love Para"
+		],
+		"title": "ラブパラ"
+	},
+	{
+		"altTitles": [],
+		"artist": "dj TAKA",
+		"data": {
+			"displayVersion": "34",
+			"genre": "dj TAKA"
+		},
+		"id": "S1a14b668b7b25d9eb1f",
+		"legacySongID": 2718,
+		"searchTerms": [],
+		"title": "History of dj TAKA - single style collection -"
+	},
+	{
+		"altTitles": [],
+		"artist": "teranoid",
+		"data": {
+			"displayVersion": "34",
+			"genre": "NUSTYLE GABBA"
+		},
+		"id": "S1a14b668b7b6f52ed93",
+		"legacySongID": 2719,
+		"searchTerms": [],
+		"title": "gigadelic (WILD STYLE)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sota Fujimori",
+		"data": {
+			"displayVersion": "34",
+			"genre": "DREAM TRANCE"
+		},
+		"id": "S1a14b668b7b7b234d34",
+		"legacySongID": 2721,
+		"searchTerms": [],
+		"title": "Fly Above -20th Anniversary Mix-"
+	},
+	{
+		"altTitles": [],
+		"artist": "猫叉Master",
+		"data": {
+			"displayVersion": "34",
+			"genre": "クロモフロック"
+		},
+		"id": "S1a14b668b7b99f27e85",
+		"legacySongID": 2722,
+		"searchTerms": [
+			"moffing nekomatamaster meets beta2 kuropaka mix"
+		],
+		"title": "moffing 猫叉Master meets β2 黒パカミックス"
+	},
+	{
+		"altTitles": [],
+		"artist": "Ryu☆",
+		"data": {
+			"displayVersion": "34",
+			"genre": "HAPPY HARDCORE"
+		},
+		"id": "S1a14b668b7ba44d1554",
+		"legacySongID": 2720,
+		"searchTerms": [],
+		"title": "I'm so Happy (20th Anniv.Mix)"
 	}
 ]

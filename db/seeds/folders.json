@@ -19119,7 +19119,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf287fbc6af4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc1411fe3deeada73749dca7bbc41a01c9b7311467b149c95a1fda2942e788e05",
 		"searchTerms": [],
 		"slug": "1-pinkycrush-omni",
@@ -19132,7 +19132,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf281777ee7d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2b2fcda94a766584618391be7c46b9dac6b7914f92386ad0171b97403a4f849f",
 		"searchTerms": [],
 		"slug": "1-pinkycrush",
@@ -19256,6 +19256,19 @@
 		"title": "Level 1 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a88ae286a",
+		"inactive": false,
+		"legacyFolderID": "Fe3042e9344d49205b7fee2f31c039d8656a9bc93b8f42deb9475ab21208ddf0f",
+		"searchTerms": [],
+		"slug": "1-zinrai",
+		"title": "Level 1 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '1'"
 	},
@@ -19626,7 +19639,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf283260b63e",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F90577fc619c5e79f53ae83af34212ccf5fc222832ad95131bc07aa1cd6a61c71",
 		"searchTerms": [],
 		"slug": "10-pinkycrush-omni",
@@ -19639,7 +19652,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf288585705f",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Ff7de366cce345e873c464922e6d9ac098dc90cc6790896b11a5170c0842b0ae6",
 		"searchTerms": [],
 		"slug": "10-pinkycrush",
@@ -19763,6 +19776,19 @@
 		"title": "Level 10 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a95bc30ab",
+		"inactive": false,
+		"legacyFolderID": "Fc8c135871d4a65325a8b5d6bcbaa7c5e0cf7397399cfc97d867b9b996fc10eb9",
+		"searchTerms": [],
+		"slug": "10-zinrai",
+		"title": "Level 10 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -20133,7 +20159,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf289c8f1970",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F1b340f24ab4b5c6bef93824a3d9e7f60106d68951b3f7977e097be64a7c74255",
 		"searchTerms": [],
 		"slug": "11-pinkycrush-omni",
@@ -20146,7 +20172,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf28985e2faa",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2f12724378cd72e4d55d309bf8168f9313f9b5d1f65a06ca7a1b12be4f48a4fe",
 		"searchTerms": [],
 		"slug": "11-pinkycrush",
@@ -20270,6 +20296,19 @@
 		"title": "Level 11 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a754b3a42",
+		"inactive": false,
+		"legacyFolderID": "F70789509a95ee3c5397d36c1ea2f5eba9ebfe4777f30e36952ef0450a9401a4a",
+		"searchTerms": [],
+		"slug": "11-zinrai",
+		"title": "Level 11 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '11'"
 	},
@@ -20640,7 +20679,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf2837b4973a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fad77774ce608f72d2a149d8de3d47c0974f06878f30e5c429a599cc80becff84",
 		"searchTerms": [],
 		"slug": "12-pinkycrush-omni",
@@ -20653,7 +20692,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf286521bb65",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7fffb3d5ebf0d000d1c8d8aa9e3fe6190e940286e623870d38b11edc9502502a",
 		"searchTerms": [],
 		"slug": "12-pinkycrush",
@@ -20777,6 +20816,19 @@
 		"title": "Level 12 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a21e247d5",
+		"inactive": false,
+		"legacyFolderID": "F507d8f051160df68842f080e177a95ed31bb10d923608c8a8199461a0ff27ddb",
+		"searchTerms": [],
+		"slug": "12-zinrai",
+		"title": "Level 12 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -21147,7 +21199,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf281df507e2",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9d200c707b5677f86159833694f6300ea1bb47cbeacd86362cd4e5d6500f0ec6",
 		"searchTerms": [],
 		"slug": "2-pinkycrush-omni",
@@ -21160,7 +21212,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf283836f73c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F166cfacd26723310870e4efc93341af713135145284b054b9020270245e8c5cb",
 		"searchTerms": [],
 		"slug": "2-pinkycrush",
@@ -21284,6 +21336,19 @@
 		"title": "Level 2 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237aabb0006e",
+		"inactive": false,
+		"legacyFolderID": "Fcf2d18592689949c7818af1a1ec3dba3da07e6b36ae9550cc05978e3e093552b",
+		"searchTerms": [],
+		"slug": "2-zinrai",
+		"title": "Level 2 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '2'"
 	},
@@ -21654,7 +21719,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf2865b5a149",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F49346c3823a8f4d15d2898fcc8585771c77f8404d5386637b3993929cf2e3243",
 		"searchTerms": [],
 		"slug": "3-pinkycrush-omni",
@@ -21667,7 +21732,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf28725ddcb5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc1dfd93347e8b69cbf964684e89cf8aebd18413841e43a64d53f9004d0a349e4",
 		"searchTerms": [],
 		"slug": "3-pinkycrush",
@@ -21791,6 +21856,19 @@
 		"title": "Level 3 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237ab4a4d708",
+		"inactive": false,
+		"legacyFolderID": "F25e71c00762f6a3c0e5133be93b74837ca15df7b38d38c91da3ef2627387aebb",
+		"searchTerms": [],
+		"slug": "3-zinrai",
+		"title": "Level 3 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -22161,7 +22239,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf284e7d51c3",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2b0dd9ae8b4d96baa6a91496c910a31f84cae215dea2129e7ef6827da7482f06",
 		"searchTerms": [],
 		"slug": "4-pinkycrush-omni",
@@ -22174,7 +22252,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf281c282eca",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc3dde78cc02ca22ffcf1e20ea6673f7d55f5a1595a61fc96028097ec32fa9d57",
 		"searchTerms": [],
 		"slug": "4-pinkycrush",
@@ -22298,6 +22376,19 @@
 		"title": "Level 4 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237ad1548004",
+		"inactive": false,
+		"legacyFolderID": "F6506096f8d855e8df03b9f6872ca9bc3862aeaa275d71dbb8feaec660e085d41",
+		"searchTerms": [],
+		"slug": "4-zinrai",
+		"title": "Level 4 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '4'"
 	},
@@ -22668,7 +22759,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf2847db79c6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb97b3afab645b55257ca632244e8b8648d0be248abfbd12ec96dcc84b400e413",
 		"searchTerms": [],
 		"slug": "5-pinkycrush-omni",
@@ -22681,7 +22772,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf288a09bd20",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb98a7db6546c42f3c015a5ba2bc846b5363dccaf1c9ef2804de81a16290d5c03",
 		"searchTerms": [],
 		"slug": "5-pinkycrush",
@@ -22805,6 +22896,19 @@
 		"title": "Level 5 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237ae667331f",
+		"inactive": false,
+		"legacyFolderID": "F0e071c517cc3f955aada4ecfd24e65bc4fc2409296a0dfadd9a86cdae2feee32",
+		"searchTerms": [],
+		"slug": "5-zinrai",
+		"title": "Level 5 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -23175,7 +23279,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf284d0ac18b",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fe7b34714f0acb4fe0f7e209cb34c2c015f5899998360685cdd192d55380ce5e0",
 		"searchTerms": [],
 		"slug": "6-pinkycrush-omni",
@@ -23188,7 +23292,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf280bbff470",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F623a451f7495805159079174a46fca394252b49ad9e2b96fbd8c9c79b39cc32c",
 		"searchTerms": [],
 		"slug": "6-pinkycrush",
@@ -23312,6 +23416,19 @@
 		"title": "Level 6 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237abd61a95b",
+		"inactive": false,
+		"legacyFolderID": "F6abc5cb8bd14cbaedf545ab87905aee56bbebc6fb510406ec28d10ccac391e21",
+		"searchTerms": [],
+		"slug": "6-zinrai",
+		"title": "Level 6 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '6'"
 	},
@@ -23682,7 +23799,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf28f1626ba5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fa775e3c2062c80cab6bed74a12ee10f35d7bce32b2a7b50d9ef9217c8f27a588",
 		"searchTerms": [],
 		"slug": "7-pinkycrush-omni",
@@ -23695,7 +23812,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf285c14a9c9",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7fbee99fdeffde18a9691ba4889b728eedb26d6bdfd62ae7dca7d2ebd843db9c",
 		"searchTerms": [],
 		"slug": "7-pinkycrush",
@@ -23819,6 +23936,19 @@
 		"title": "Level 7 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a8068a580",
+		"inactive": false,
+		"legacyFolderID": "Fb4f31b1760633024b9aadb9a9faa3e13b4a719885c5d4dd291cb448992450bd5",
+		"searchTerms": [],
+		"slug": "7-zinrai",
+		"title": "Level 7 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -24189,7 +24319,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf2995391bef",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F73bd3e42cf134b79cac734257c7f4e2a30f19351a0ce1aa812cffa3025ff95e8",
 		"searchTerms": [],
 		"slug": "8-pinkycrush-omni",
@@ -24202,7 +24332,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf297cd91e6c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb8af9c89a5c1403788857a49a6adc33b498cbb992661149b27ebfe5dfce87d3b",
 		"searchTerms": [],
 		"slug": "8-pinkycrush",
@@ -24326,6 +24456,19 @@
 		"title": "Level 8 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237a5010830a",
+		"inactive": false,
+		"legacyFolderID": "F5bb2fb0d56cc12ebdd39479523db0ea2e44cea40bbd428e4fd41bb936d2c429a",
+		"searchTerms": [],
+		"slug": "8-zinrai",
+		"title": "Level 8 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '8'"
 	},
@@ -24696,7 +24839,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf29585dc895",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0a5bdb6b242fe775a30d235a88d3d98d14cc92e50911cc6d64d189a0b98db82c",
 		"searchTerms": [],
 		"slug": "9-pinkycrush-omni",
@@ -24709,7 +24852,7 @@
 	{
 		"game": "iidx-dp",
 		"id": "F19d35f0cf291b6a9c4a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F05f2f8e88514747d601ed0f62fe9774267741222ed9680a9f05388e788d270c6",
 		"searchTerms": [],
 		"slug": "9-pinkycrush",
@@ -24833,6 +24976,19 @@
 		"title": "Level 9 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "iidx-dp",
+		"id": "F1a14bf2237aa547c2ca",
+		"inactive": false,
+		"legacyFolderID": "F47da134644675f3a667da9a047a11cdd6eb2c545ba0fa37d0ea43cdd9b77a2e9",
+		"searchTerms": [],
+		"slug": "9-zinrai",
+		"title": "Level 9 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '9'"
 	},
@@ -25203,7 +25359,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28162be6be",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F4bd1f76d74a9dc216ff0d75b4d806f783a36fc229caa8d3214377b8eb613335e",
 		"searchTerms": [],
 		"slug": "1-pinkycrush-omni",
@@ -25216,7 +25372,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28f0963ad3",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F414a38ddc83bbe981e09331b7f254c3163520e4357286039fe8c33da64808545",
 		"searchTerms": [],
 		"slug": "1-pinkycrush",
@@ -25340,6 +25496,19 @@
 		"title": "Level 1 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e014d683df3",
+		"inactive": false,
+		"legacyFolderID": "F047ca5fa3f09a58b7a0b6dde0a7b1c10eac20e8321400993713aa042328668ca",
+		"searchTerms": [],
+		"slug": "1-zinrai",
+		"title": "Level 1 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '1'"
 	},
@@ -25710,7 +25879,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2803a318ff",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fdba364f495ef053d68f4d862649480983558502fb0bef11b44b692d2b616831a",
 		"searchTerms": [],
 		"slug": "10-pinkycrush-omni",
@@ -25723,7 +25892,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2842f15c7f",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9360022ed3e9a10d14765ce461a23d63b11cd0b9e51a1698d0bba33e1ddb5c7f",
 		"searchTerms": [],
 		"slug": "10-pinkycrush",
@@ -25847,6 +26016,19 @@
 		"title": "Level 10 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e013a2bc392",
+		"inactive": false,
+		"legacyFolderID": "Fa83a2de81893b1a135d1c289828a5048aa982a20ed78ec61993045a1f8afafd0",
+		"searchTerms": [],
+		"slug": "10-zinrai",
+		"title": "Level 10 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -26217,7 +26399,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf285baa0c78",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F3e767db6448dac5c48b7df3aff0ebeaf7e5dc3a261aa6822691b938d0dcbd7c2",
 		"searchTerms": [],
 		"slug": "11-pinkycrush-omni",
@@ -26230,7 +26412,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28a166573c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F57b065b790f15c0ff80b1f608f2ce470a380788d1a66c555e26c8eb5ffd72130",
 		"searchTerms": [],
 		"slug": "11-pinkycrush",
@@ -26354,6 +26536,19 @@
 		"title": "Level 11 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01b9bbe708",
+		"inactive": false,
+		"legacyFolderID": "Fc463245d9ab5244d98190e88bb253e0a947950b312191150975c2d215c6f1a5f",
+		"searchTerms": [],
+		"slug": "11-zinrai",
+		"title": "Level 11 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '11'"
 	},
@@ -26724,7 +26919,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf280f65d2f6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0931e5c31673322dadcf0e21d01a152347d50560081083f9389bf4893de74389",
 		"searchTerms": [],
 		"slug": "12-pinkycrush-omni",
@@ -26737,7 +26932,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2808cdc420",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9792eaf29418651dd05d6b6a9b98d470d3b3b637247c65237d8344ba662517f4",
 		"searchTerms": [],
 		"slug": "12-pinkycrush",
@@ -26861,6 +27056,19 @@
 		"title": "Level 12 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01b1bce1b8",
+		"inactive": false,
+		"legacyFolderID": "Fa62c163ae27a43c69fea1724d6801af050347b7c8ec99e42bfb1008897a3475c",
+		"searchTerms": [],
+		"slug": "12-zinrai",
+		"title": "Level 12 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -27231,7 +27439,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28bda39e1a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7899766fea7350ae34e7b3f630078da2e459b16cb85edefbb1e1ac9ef5042ae3",
 		"searchTerms": [],
 		"slug": "2-pinkycrush-omni",
@@ -27244,7 +27452,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28562bf6df",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc08cb877c833790324ccb0afac9bca1dc88d4d46f105826bf8ff4bbb59aedc74",
 		"searchTerms": [],
 		"slug": "2-pinkycrush",
@@ -27368,6 +27576,19 @@
 		"title": "Level 2 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e011da86851",
+		"inactive": false,
+		"legacyFolderID": "Ff2b8a536a3b4ddab467e4af0db84b83fdb1a601a355cdd636b9752e365886713",
+		"searchTerms": [],
+		"slug": "2-zinrai",
+		"title": "Level 2 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '2'"
 	},
@@ -27738,7 +27959,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28209a956d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fe118f348ee709196e57074ae654fdb4f93de4f26c9f9447eafcd29525c249efc",
 		"searchTerms": [],
 		"slug": "3-pinkycrush-omni",
@@ -27751,7 +27972,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf282d5df334",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fabda68ee64002b6f5df4438f85b90c664c92553aee52c69a181f9e1f3183ee0b",
 		"searchTerms": [],
 		"slug": "3-pinkycrush",
@@ -27875,6 +28096,19 @@
 		"title": "Level 3 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01c81a8680",
+		"inactive": false,
+		"legacyFolderID": "F31ef1aab843e52ba60f4085950822f30c9bf27fea5643280199132e3a06bcc50",
+		"searchTerms": [],
+		"slug": "3-zinrai",
+		"title": "Level 3 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -28245,7 +28479,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf288c636431",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0c1739ece3377be4e17303a556ffe8220aa2b78d4a0e1a4df1720230caffb57e",
 		"searchTerms": [],
 		"slug": "4-pinkycrush-omni",
@@ -28258,7 +28492,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf286aaf0a3c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F3b8224cb7b11dde3ca4db9fcdc2e368afbbd10605bf6de6d7674df1338708c44",
 		"searchTerms": [],
 		"slug": "4-pinkycrush",
@@ -28382,6 +28616,19 @@
 		"title": "Level 4 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01d84309bc",
+		"inactive": false,
+		"legacyFolderID": "F1ce906281f2e2bec82f76cddc1136fc736b9f92bf34c9b031dc2ca80e3ef999b",
+		"searchTerms": [],
+		"slug": "4-zinrai",
+		"title": "Level 4 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '4'"
 	},
@@ -28752,7 +28999,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2824cb9012",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd15733d1f7ba07ba321c5aa57670eb821c29e3d70653e8024949a7daa18f9b97",
 		"searchTerms": [],
 		"slug": "5-pinkycrush-omni",
@@ -28765,7 +29012,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28d3e18db6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7a3a7de4e067bd524ae191f6597923c692f30909708afe6f72bfc5c8dc6477d5",
 		"searchTerms": [],
 		"slug": "5-pinkycrush",
@@ -28889,6 +29136,19 @@
 		"title": "Level 5 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01e3aad20c",
+		"inactive": false,
+		"legacyFolderID": "F9835dc8293c61262187490ca5750e3afa97eb90bffc04eeaa62bd2251051a57a",
+		"searchTerms": [],
+		"slug": "5-zinrai",
+		"title": "Level 5 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -29259,7 +29519,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2804773d70",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F071539c9beeb901add74407a23df40c897cd36f9572e90a3f2b42695cfdeb31a",
 		"searchTerms": [],
 		"slug": "6-pinkycrush-omni",
@@ -29272,7 +29532,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf28c290f8d1",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0d502fb445f73dd3c432f4ab75a092a84131975b4bd851b071cafe215c74e149",
 		"searchTerms": [],
 		"slug": "6-pinkycrush",
@@ -29396,6 +29656,19 @@
 		"title": "Level 6 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01ed62cd81",
+		"inactive": false,
+		"legacyFolderID": "Ffc1fb1bc4662852fdf2fe73b119f013c04d510f9ffdef42ef8a72985656d6dff",
+		"searchTerms": [],
+		"slug": "6-zinrai",
+		"title": "Level 6 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '6'"
 	},
@@ -29766,7 +30039,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf283e1b6edd",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F548e5d7fae8a99802afd81567fabb4a033d3b69803174bf312c88e7fbf979062",
 		"searchTerms": [],
 		"slug": "7-pinkycrush-omni",
@@ -29779,7 +30052,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf284a715025",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7b540271711dae047bb3c2359338d917ec30d607279e094c2fe3d246a408b59f",
 		"searchTerms": [],
 		"slug": "7-pinkycrush",
@@ -29903,6 +30176,19 @@
 		"title": "Level 7 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e019b1ef9c8",
+		"inactive": false,
+		"legacyFolderID": "F3e7de8dcb938c2c4b8a3c428ee1f94d1369072557329b98a979e17695d17260f",
+		"searchTerms": [],
+		"slug": "7-zinrai",
+		"title": "Level 7 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -30273,7 +30559,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf29222f1e69",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9d108adacc0f704f19e4b63e0f8df9bacad677468a17fb65f97d71d06f9eae88",
 		"searchTerms": [],
 		"slug": "8-pinkycrush-omni",
@@ -30286,7 +30572,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf2926cdc5f6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F877376c9f0b76da0be8b85fca69d608d4274fc7da595bb87c955e2d02746e892",
 		"searchTerms": [],
 		"slug": "8-pinkycrush",
@@ -30410,6 +30696,19 @@
 		"title": "Level 8 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e0146a1c452",
+		"inactive": false,
+		"legacyFolderID": "F07dbc27358f6280f566e6d063481fa087e6a39995b4ebd87bcb3e5225926a7b1",
+		"searchTerms": [],
+		"slug": "8-zinrai",
+		"title": "Level 8 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '8'"
 	},
@@ -30780,7 +31079,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf29fc0742f7",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F70c7a7b53d91ba7870e7a5dac3986545c5796f4b4000e6d266a010140b2b3560",
 		"searchTerms": [],
 		"slug": "9-pinkycrush-omni",
@@ -30793,7 +31092,7 @@
 	{
 		"game": "iidx-sp",
 		"id": "F19d35f0cf29d4d938b0",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd9bf1060d183a680bc80892ab83cbb6a63f0288d8db7093eba3e2d6d659f4af8",
 		"searchTerms": [],
 		"slug": "9-pinkycrush",
@@ -30917,6 +31216,19 @@
 		"title": "Level 9 (tricoro)",
 		"versionFilter": [
 			"20"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "iidx-sp",
+		"id": "F1a14bf21e01d90c9e08",
+		"inactive": false,
+		"legacyFolderID": "F369d5c587ba145562f6314e81f86b3de938b6959969f28ab937d2b7c71b4e8be",
+		"searchTerms": [],
+		"slug": "9-zinrai",
+		"title": "Level 9 (ZINRAI)",
+		"versionFilter": [
+			"34"
 		],
 		"where": "chart.level = '9'"
 	},

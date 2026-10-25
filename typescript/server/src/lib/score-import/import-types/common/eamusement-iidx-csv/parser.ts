@@ -42,6 +42,7 @@ export enum EAM_VERSION_NAMES {
 	SPADA = 21,
 	"Sparkle Shower" = 33,
 	tricoro = 20,
+	ZINRAI = 34,
 }
 
 const PRE_HV_HEADER_COUNT = 27;
