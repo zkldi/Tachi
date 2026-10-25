@@ -53,4 +53,5 @@ export const InsaneCharRebinds = {
 	壥: "Є",
 	醵: "乀",
 	鷸: "♫",
+	麌: "ó",
 };

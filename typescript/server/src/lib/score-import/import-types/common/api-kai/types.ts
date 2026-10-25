@@ -33,6 +33,7 @@ export interface KaiSDVXScore {
 	gauge_type: 0 | 1 | 2 | 3;
 	gauge_rate: integer;
 	timestamp: string;
+	exscore: integer | null;
 }
 
 export interface KaiContext {

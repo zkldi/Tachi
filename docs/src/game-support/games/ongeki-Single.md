@@ -102,11 +102,11 @@ The `LUNATIC`/`Re:MASTER` split is transparent; your import script must assume e
 
 | ID | Pretty Name |
 | :: | :: |
-| `brightMemory2Omni` | bright MEMORY Act.II Omnimix |
-| `brightMemory3` | bright MEMORY Act.III |
-| `brightMemory3Omni` | bright MEMORY Act.III Omnimix |
-| `refresh` | Re:Fresh |
-| `refreshOmni` | Re:Fresh Omnimix |
+| `brightMemory2Omni` | bright MEMORY Act.2 Omnimix |
+| `brightMemory3` | bright MEMORY Act.3 |
+| `brightMemory3Omni` | bright MEMORY Act.3 Omnimix |
+| `refresh` | Re:Fresh Act.1 |
+| `refreshOmni` | Re:Fresh Act.1 Omnimix |
 
 ## Supported Match Types
 

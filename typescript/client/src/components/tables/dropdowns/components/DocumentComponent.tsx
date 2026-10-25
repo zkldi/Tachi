@@ -1,7 +1,10 @@
 import TimestampCell from "#components/tables/cells/TimestampCell";
+import MobileScoreRow from "#components/tables/components/MobileScoreRow";
+import mobileTableStyles from "#components/tables/components/MobileTable.module.scss";
 import ScoreCoreCells from "#components/tables/game-core-cells/ScoreCoreCells";
 import useScoreRatingAlg from "#components/util/useScoreRatingAlg";
 import { UserContext } from "#context/UserContext";
+import { WindowContext } from "#context/WindowContext";
 import { GAME_CLIENT_IMPLEMENTATIONS } from "#lib/game-implementations";
 import { type UserGameChartPBComposition } from "#types/api-returns";
 import { type SetState } from "#types/react";
@@ -14,6 +17,7 @@ import CommentContainer from "./CommentContainer";
 import DeleteScoreBtn from "./DeleteScoreBtn";
 import JudgementTable from "./JudgementTable";
 import PBNote from "./PBNote";
+import styles from "./ScoreDetails.module.scss";
 import ScoreEditButtons from "./ScoreEditButtons";
 
 export function ScoreInfo({
@@ -26,9 +30,30 @@ export function ScoreInfo({
 	const game = score.game;
 	const rating = useScoreRatingAlg(game);
 	const gptImpl = GAME_CLIENT_IMPLEMENTATIONS[game];
+	const {
+		breakpoint: { isLg },
+	} = useContext(WindowContext);
+
+	if (!isLg) {
+		return (
+			<div className="col-12">
+				<table aria-label="Score information" className={mobileTableStyles.entries}>
+					<tbody>
+						<MobileScoreRow
+							chart={chart}
+							game={game}
+							rating={rating}
+							score={score}
+							showChart={false}
+						/>
+					</tbody>
+				</table>
+			</div>
+		);
+	}
 
 	return (
-		<div className="col-12">
+		<div className={`col-12 ${styles.scoreInfo}`}>
 			<table className="table">
 				<thead>
 					<tr>
@@ -108,18 +133,13 @@ export default function DocumentComponent({
 	const isAuthorised = user && (user.id === score.userID || user.authLevel === 3);
 
 	return (
-		<div className="w-100 h-100 mb-0 d-flex" style={{ gap: "10px" }}>
-			<div style={{ flex: 9 }}>
-				<div className="row h-100 justify-content-center">
+		<div className={styles.document}>
+			<div className={styles.documentMain}>
+				<div className={`row justify-content-center ${styles.mainContent}`}>
 					{GraphComponent ? (
 						<GraphComponent chart={chart} score={score} />
 					) : (
-						<div
-							className="d-flex align-items-center justify-content-center"
-							style={{ height: "200px" }}
-						>
-							<span className="text-body-secondary">No graphs available :(</span>
-						</div>
+						<div className={styles.emptyGraph}>No graphs available :(</div>
 					)}
 
 					{IsScore(score) ? (
@@ -160,21 +180,14 @@ export default function DocumentComponent({
 					)}
 				</div>
 			</div>
-			<div className="m-4" style={{ flex: 3 }}>
-				<div
-					className="h-100 d-flex"
-					style={{ flexDirection: "column", justifyContent: "space-between" }}
-				>
-					<div className="my-auto">
-						<JudgementTable score={score} />
-					</div>
+			<div className={styles.documentAside}>
+				<JudgementTable score={score} />
 
-					{IsScore(score) && isAuthorised && (
-						<div>
-							<DeleteScoreBtn score={score} />
-						</div>
-					)}
-				</div>
+				{IsScore(score) && isAuthorised && (
+					<div>
+						<DeleteScoreBtn score={score} />
+					</div>
+				)}
 			</div>
 		</div>
 	);
@@ -201,22 +214,17 @@ export function GraphAndJudgementDataComponent({
 	showSingleScoreNote?: boolean;
 }) {
 	return (
-		<div className="row w-100">
-			<div className="col-9">
-				<div className="row h-100 justify-content-center">
+		<div className={styles.document}>
+			<div className={styles.documentMain}>
+				<div className={`row justify-content-center ${styles.mainContent}`}>
 					{GraphComponent ? (
 						<GraphComponent chart={chart} score={score} />
 					) : (
-						<div
-							className="d-flex align-items-center justify-content-center"
-							style={{ height: "200px" }}
-						>
-							<span className="text-body-secondary">No graphs available :(</span>
-						</div>
+						<div className={styles.emptyGraph}>No graphs available :(</div>
 					)}
 				</div>
 			</div>
-			<div className="col-3 align-self-center">
+			<div className={styles.documentAside}>
 				<JudgementTable score={score} />
 			</div>
 		</div>

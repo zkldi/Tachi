@@ -1,3 +1,4 @@
+import QuickTooltip from "#components/layout/misc/QuickTooltip";
 import { FormatTables } from "#util/misc";
 import {
 	type ChartDocument,
@@ -31,11 +32,26 @@ export default function IIDXStyleSongChartInfoFormat({
 	return (
 		<>
 			<h4>{genre}</h4>
-			<h4 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>{song.title}</h4>
+			<SongTitle game={game} song={song} />
 			<h4>{song.artist}</h4>
 			{chart && <h5>({LevelText(chart)})</h5>}
 		</>
 	);
+}
+
+function SongTitle({ game, song }: { game: V3Game; song: SongDocument }) {
+	if (game === "ongeki" && "titleEn" in song.data) {
+		return (
+			<QuickTooltip
+				tooltipContent={<h4 style={{ fontWeight: "bold" }}>{song.data.titleEn}</h4>}
+				wide
+			>
+				<h4 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>{song.title}</h4>
+			</QuickTooltip>
+		);
+	}
+
+	return <h4 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>{song.title}</h4>;
 }
 
 function LevelText(chart: ChartDocument) {

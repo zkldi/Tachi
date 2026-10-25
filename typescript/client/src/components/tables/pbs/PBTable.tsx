@@ -11,6 +11,7 @@ import IndexCell from "../cells/IndexCell";
 import RankingCell, { type RankingViewMode } from "../cells/RankingCell";
 import TimestampCell from "../cells/TimestampCell";
 import DropdownRow from "../components/DropdownRow";
+import MobileScoreRow from "../components/MobileScoreRow";
 import TachiTable, { type Header } from "../components/TachiTable";
 import { usePBState } from "../components/UseScoreState";
 import PBDropdown from "../dropdowns/PBDropdown";
@@ -80,6 +81,20 @@ export default function PBTable({
 			defaultSortMode={indexCol ? "#" : undefined}
 			entryName="PBs"
 			headers={headers}
+			mobileRowFunction={(pb) => (
+				<Row
+					game={game}
+					indexCol={indexCol}
+					key={`${pb.chartID}:${pb.userID}`}
+					mobile
+					pb={pb}
+					rankingViewMode={rankingViewMode}
+					rating={rating}
+					showChart={showChart}
+					showPlaycount={showPlaycount}
+					showUser={showUser ?? false}
+				/>
+			)}
 			rowFunction={(pb) => (
 				<Row
 					game={game}
@@ -107,9 +122,11 @@ function Row({
 	game,
 	rating,
 	rankingViewMode,
+	mobile = false,
 }: {
 	game: V3Game;
 	indexCol: boolean;
+	mobile?: boolean;
 	pb: PBDataset[0];
 	rankingViewMode: RankingViewMode;
 	// ts bug?
@@ -119,19 +136,46 @@ function Row({
 	showUser: boolean;
 }) {
 	const scoreState = usePBState(pb);
+	const dropdown = (
+		<PBDropdown
+			chart={pb.__related.chart}
+			game={game}
+			scoreState={scoreState}
+			song={pb.__related.song}
+			userID={pb.userID}
+		/>
+	);
+
+	if (mobile) {
+		return (
+			<MobileScoreRow
+				chart={pb.__related.chart}
+				dropdown={dropdown}
+				extraCells={
+					<>
+						<RankingCell
+							rankingData={pb.rankingData}
+							rankingViewMode={rankingViewMode}
+							userID={pb.userID}
+						/>
+						{showPlaycount && <td>{pb.__playcount ?? 0}</td>}
+					</>
+				}
+				extraLabels={["Ranking", ...(showPlaycount ? ["Plays"] : [])]}
+				game={game}
+				highlight={scoreState.highlight}
+				index={indexCol ? pb.__related.index : undefined}
+				rating={rating}
+				score={pb}
+				showChart={showChart}
+				song={pb.__related.song}
+				user={showUser ? pb.__related.user : undefined}
+			/>
+		);
+	}
 
 	return (
-		<DropdownRow
-			dropdown={
-				<PBDropdown
-					chart={pb.__related.chart}
-					game={game}
-					scoreState={scoreState}
-					song={pb.__related.song}
-					userID={pb.userID}
-				/>
-			}
-		>
+		<DropdownRow dropdown={dropdown}>
 			{indexCol && <IndexCell index={pb.__related.index} />}
 			<PBLeadingRows {...{ showUser, showChart, pb, scoreState }} />
 			<ScoreCoreCells chart={pb.__related.chart} game={game} rating={rating} score={pb} />

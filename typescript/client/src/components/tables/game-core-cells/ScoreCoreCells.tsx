@@ -13,12 +13,14 @@ export default function ScoreCoreCells({
 	score,
 	rating,
 	chart,
+	mobile,
 
 	// should we show the rating cell or not?
 	short = false,
 }: {
 	chart: ChartDocument;
 	game: V3Game;
+	mobile?: boolean;
 	rating?: AnyScoreRatingAlg;
 
 	// `Omit<PBScoreDocument, "rankingData">` covers historical/"as of" PBs (e.g.
@@ -40,13 +42,13 @@ export default function ScoreCoreCells({
 
 	if (short) {
 		// @ts-expect-error it thinks things won't be synced up, but they are. don't worry.
-		return gptImpl.scoreCoreCells({ sc, chart: ch });
+		return gptImpl.scoreCoreCells({ sc, chart: ch, mobile: mobile ?? false });
 	}
 
 	return (
 		<>
 			{/* @ts-expect-error this will work, but the types don't like the signature ambiguity. */}
-			{gptImpl.scoreCoreCells({ sc, chart: ch })}
+			{gptImpl.scoreCoreCells({ sc, chart: ch, mobile: mobile ?? false })}
 			{/* @ts-expect-error see above */}
 			{gptImpl.ratingCell({ sc, chart: ch, rating: rt })}
 		</>

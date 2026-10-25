@@ -13,7 +13,15 @@ import { CreateSongMap } from "#util/data";
 import { NumericSOV, StrSOV } from "#util/sorts";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { type ChartDocument, FormatGame, type integer, type SongDocument } from "tachi-common";
+import {
+	type ChartDocument,
+	type FolderDocument,
+	FormatGame,
+	GameToGameGroup,
+	GetGameGroupConfig,
+	type integer,
+	type SongDocument,
+} from "tachi-common";
 
 export default function GameChartsPage({ game }: GameProps) {
 	useSetSubheader(["Games", FormatGame(game), "Charts"], [game], `${FormatGame(game)} Songs`);
@@ -89,6 +97,70 @@ function SearchSongsTable({ game, search }: { search: string } & GameProps) {
 					title: (x) => x.__related.song.title,
 					artist: (x) => x.__related.song.artist,
 					playcount: (x) => x.__playcount,
+					difficulty: (x) => x.difficulty,
+					level: (x) => x.levelNum,
+				}}
+			/>
+		</>
+	);
+}
+
+export function FolderSongsTable({
+	game,
+	data,
+}: {
+	data: { charts: ChartDocument[]; folder: FolderDocument; songs: SongDocument[] };
+} & GameProps) {
+	useSetSubheader([
+		"Games",
+		GetGameGroupConfig(GameToGameGroup(game)).name,
+		"Folders",
+		data.folder.title,
+	]);
+
+	if (!data) {
+		return <Loading />;
+	}
+
+	const songMap = CreateSongMap(data.songs);
+
+	const rawDataset = [];
+
+	for (const chart of data.charts) {
+		rawDataset.push({
+			...chart,
+			__related: {
+				song: songMap.get(chart.song.id)!,
+			},
+		});
+	}
+
+	const dataset = rawDataset.sort((a, b) =>
+		a.__related.song.title.localeCompare(b.__related.song.title),
+	);
+
+	return (
+		<>
+			<div className="w-100 text-center">
+				<h4>Displaying charts for {data.folder.title}</h4>
+				<Divider />
+			</div>
+			<TachiTable
+				dataset={dataset}
+				entryName="Charts"
+				headers={[
+					["Chart", "Chart", (a, b) => CascadingRatingValue(game, a, b)],
+					["Song Title", "Song", StrSOV((x) => x.__related.song.title)],
+				]}
+				rowFunction={(d) => (
+					<tr>
+						<DifficultyCell chart={d} game={game} />
+						<TitleCell chart={d} game={game} song={d.__related.song} wide />
+					</tr>
+				)}
+				searchFunctions={{
+					title: (x) => x.__related.song.title,
+					artist: (x) => x.__related.song.artist,
 					difficulty: (x) => x.difficulty,
 					level: (x) => x.levelNum,
 				}}

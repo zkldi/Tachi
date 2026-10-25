@@ -30,6 +30,7 @@ const PR_KAI_SDVX_SCORE = {
 	late: p.nullable(p.isPositiveInteger),
 	gauge_rate: p.isBetween(0, 100),
 	timestamp: "string",
+	exscore: p.nullable(p.isPositiveInteger),
 };
 
 export const ConvertAPIKaiSDVX: ConverterFunction<unknown, KaiContext> = async (
@@ -72,6 +73,9 @@ export const ConvertAPIKaiSDVX: ConverterFunction<unknown, KaiContext> = async (
 
 	const timeAchieved = ParseDateFromString(score.timestamp);
 
+	// Kai currently returns 0 for exscore even if there is no actual exscore available for a score, so in the meanwhile we will treat 0 as null
+	const parsedExScore = score.exscore === null || score.exscore <= 0 ? null : score.exscore;
+
 	const dryScore: DryScore<"sdvx"> = {
 		comment: null,
 		game: "sdvx",
@@ -91,6 +95,7 @@ export const ConvertAPIKaiSDVX: ConverterFunction<unknown, KaiContext> = async (
 				slow: score.late,
 				gauge: score.gauge_rate,
 				maxCombo: score.max_chain,
+				exScore: parsedExScore,
 			},
 		},
 		scoreMeta: {},

@@ -12,6 +12,12 @@
 	width: auto;
 }
 
+@media (max-width: 1007.98px) {
+	.filterBarChrome {
+		width: 100%;
+	}
+}
+
 .filterBarChromeActive {
 	background-color: color-mix(in srgb, var(--bs-primary) 12%, transparent);
 	box-shadow:

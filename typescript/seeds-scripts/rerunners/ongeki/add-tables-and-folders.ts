@@ -82,7 +82,7 @@ for (const level of LEVELS) {
 		slug,
 		title: `Level ${level} (${versionName})`,
 		versionFilter: [version],
-		where: `chart.data->>'isBonusTrack' = 'false' AND chart.level = '${level}'`,
+		where: `chart.data->>'isBonusTrack' = 'false' AND chart.data->'levelHistory'->'${version}'->>'level' = '${level}'`,
 	});
 	levelFolderSlugs.push(slug);
 }

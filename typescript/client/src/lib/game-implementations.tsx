@@ -144,6 +144,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				),
 			],
 		],
+		displayLevelHistory: ["paradiselost", "verse", "xverse", "xversex"],
 		scoreCoreCells: ({ sc }) => (
 			<>
 				<MillionsScoreCell
@@ -876,6 +877,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				naiveRating: "NaiveRatingClassic",
 			},
 		},
+		displayLevelHistory: ["brightMemory3", "refresh"],
 		scoreHeaders: [
 			[
 				"Score",
@@ -909,7 +911,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				),
 			],
 		],
-		scoreCoreCells: ({ sc, chart }) => (
+		scoreCoreCells: ({ sc, chart, mobile }) => (
 			<>
 				<MillionsScoreCell
 					colour={GetEnumColour(sc, "grade")}
@@ -921,11 +923,12 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 					platinumScore={sc.scoreData.platinumScore}
 					stars={sc.scoreData.platinumStars}
 				/>
-				<OngekiJudgementCell score={sc} />
-				<OngekiDamageCell damage={sc.scoreData.optional.damage} />
+				<OngekiJudgementCell mobile={mobile} score={sc} />
+				<OngekiDamageCell damage={sc.scoreData.optional.damage} mobile={mobile} />
 				<OngekiLampCell
 					bellLamp={sc.scoreData.bellLamp}
 					colour={GetEnumColour(sc, "noteLamp")}
+					mobile={mobile}
 					noteLamp={sc.scoreData.noteLamp}
 				/>
 			</>

@@ -9,7 +9,11 @@ export default function GameBottomNav({ baseUrl }: { baseUrl: string }) {
 		<Navbar.Item key="activity" to={`${baseUrl}/`}>
 			Activity
 		</Navbar.Item>,
-		<Navbar.Item key="charts" to={`${baseUrl}/charts`}>
+		<Navbar.Item
+			key="charts"
+			otherMatchingPaths={[`${baseUrl}/folders`]}
+			to={`${baseUrl}/charts`}
+		>
 			Charts
 		</Navbar.Item>,
 		<Navbar.Item key="leaderboards" to={`${baseUrl}/leaderboards`}>

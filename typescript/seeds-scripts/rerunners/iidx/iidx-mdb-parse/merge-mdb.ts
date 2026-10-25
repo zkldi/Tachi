@@ -169,6 +169,10 @@ async function ParseIIDXMDB() {
 		if (!anySongIDMatch) {
 			// new song?
 
+			inp.title = inp.title.trim();
+			inp.artist = inp.artist.trim();
+			inp.genre = inp.genre.trim();
+
 			const titleAlreadyExists = songTitleMap.get(inp.title);
 
 			if (titleAlreadyExists) {

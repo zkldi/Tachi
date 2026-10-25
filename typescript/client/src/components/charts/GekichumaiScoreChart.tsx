@@ -71,14 +71,16 @@ const getScoreYAxisNotch = (game: GameGroup) => (s: number) => {
 	return "";
 };
 
+// For visual clarity, find the highest tickValue that's no higher than the final score
 const getBaseline = (data: Serie[], tickValues: number[]) => {
 	const dataset = data[0].data;
 	const dv = dataset[dataset.length - 1].y;
 	const finalValue: number = typeof dv === "number" ? dv : 0;
 
-	for (let i = tickValues.length - 1; i >= 0; i--) {
-		if (finalValue >= tickValues[i]) {
-			return tickValues[i];
+	// The highest tickValue is ignored as it would cause 101 scores to display a flat line.
+	for (const tv of [...tickValues].reverse().slice(1)) {
+		if (finalValue >= tv) {
+			return tv;
 		}
 	}
 
@@ -135,6 +137,9 @@ const limitScoreGraph = (data: Serie[], minval: number) => {
 const scaleFloor = (data: Datum[], maximum: number | undefined) => {
 	if (maximum === undefined) {
 		return 0;
+	}
+	if (maximum === 0) {
+		return -1;
 	}
 	// Scale the chart so that it drops by 3/4, unless it's a flatline
 	const lowestValue = Number(data.filter((v) => v.y !== null).pop()?.y ?? 0);
