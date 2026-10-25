@@ -22732,5 +22732,94 @@
 			"utakata yo ikanaide"
 		],
 		"title": "うたかたよいかないで"
+	},
+	{
+		"altTitles": [],
+		"artist": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+		"data": {
+			"duration": 168.571,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a17458935d8df4de18",
+		"legacySongID": 1672,
+		"searchTerms": [
+			"mi mu ka wa naisu torai",
+			"mimukawa nice try"
+		],
+		"title": "み　む　かｩ　わ　ナ　イ　ス　ト　ラ　イ"
+	},
+	{
+		"altTitles": [],
+		"artist": "なきそ",
+		"data": {
+			"duration": 118.667,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a174589450b0f9395e",
+		"legacySongID": 1673,
+		"searchTerms": [
+			"bake no hana"
+		],
+		"title": "化けの花"
+	},
+	{
+		"altTitles": [],
+		"artist": "3markets[ ]",
+		"data": {
+			"duration": 164.4,
+			"genre": "POPS＆アニメ"
+		},
+		"id": "S1a174589572e43156d6",
+		"legacySongID": 1674,
+		"searchTerms": [],
+		"title": "INTJINTPENTJENTPINFJENFJINFPENFPISTJISFJESTJESFJESTPISTPISFPESFP"
+	},
+	{
+		"altTitles": [],
+		"artist": "Yunosuke / CircusP",
+		"data": {
+			"duration": 145.286,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a1745899ebb98cd691",
+		"legacySongID": 1683,
+		"searchTerms": [],
+		"title": "Intergalactic Bound"
+	},
+	{
+		"altTitles": [],
+		"artist": "TAK",
+		"data": {
+			"duration": 155,
+			"genre": "niconico＆ボーカロイド"
+		},
+		"id": "S1a1745899fd96f1210c",
+		"legacySongID": 1684,
+		"searchTerms": [],
+		"title": "LEMON MELON COOKIE"
+	},
+	{
+		"altTitles": [],
+		"artist": "Sound Souler",
+		"data": {
+			"duration": 161.077,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": "S1a174589a1332abb058",
+		"legacySongID": 1685,
+		"searchTerms": [],
+		"title": "3rd Avenue"
+	},
+	{
+		"altTitles": [],
+		"artist": "Camellia ft. Petra Gurin「In Falsus」",
+		"data": {
+			"duration": 143.586,
+			"genre": "ゲーム＆バラエティ"
+		},
+		"id": "S1a174589b58be44c662",
+		"legacySongID": 1702,
+		"searchTerms": [],
+		"title": "Cryogenic"
 	}
 ]
