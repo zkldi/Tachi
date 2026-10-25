@@ -3,7 +3,9 @@ import { COLOUR_SET, type PBScoreDocument, type ScoreDocument } from "tachi-comm
 
 export default function OngekiJudgementCell({
 	score,
+	mobile,
 }: {
+	mobile: boolean;
 	score: PBScoreDocument<"ongeki"> | ScoreDocument<"ongeki">;
 }) {
 	const judgements = score.scoreData.judgements;
@@ -29,6 +31,11 @@ export default function OngekiJudgementCell({
 				<div style={{ color: COLOUR_SET.vibrantYellow }}>
 					{score.scoreData.optional.bellCount ?? "?"}/
 					{score.scoreData.optional.totalBellCount ?? "?"}
+					{mobile && (
+						<span style={{ color: COLOUR_SET.red }}>
+							&nbsp;&nbsp;{score.scoreData.optional.damage ?? "?"}
+						</span>
+					)}
 				</div>
 			</strong>
 		</td>

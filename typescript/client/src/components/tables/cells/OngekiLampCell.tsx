@@ -5,18 +5,29 @@ import { constrainedLampTdStyle } from "./delta-lamp-cell-layout";
 
 const truncLine = "d-block text-truncate";
 
+const shortMappings = {
+	"ALL BREAK": "AB",
+	"ALL BREAK+": "AB+",
+	CLEAR: "CLR",
+	"FULL COMBO": "FC",
+	"FULL BELL": "FB",
+	LOSS: "LOSS",
+};
+
 export default function OngekiLampCell({
 	noteLamp,
 	bellLamp,
 	colour,
+	mobile,
 }: {
 	bellLamp: "FULL BELL" | "NONE";
 	colour: string;
+	mobile: boolean;
 	noteLamp: "ALL BREAK" | "ALL BREAK+" | "CLEAR" | "FULL COMBO" | "LOSS";
 }) {
 	let content: React.ReactNode = (
 		<div className={truncLine} style={{ minWidth: 0 }}>
-			{noteLamp}
+			{mobile ? shortMappings[noteLamp] : noteLamp}
 		</div>
 	);
 	let title: string = noteLamp;
@@ -26,7 +37,7 @@ export default function OngekiLampCell({
 			title = bellLamp;
 			content = (
 				<div className={truncLine} style={{ minWidth: 0 }}>
-					{bellLamp}
+					{mobile ? shortMappings[bellLamp] : bellLamp}
 				</div>
 			);
 		} else {
@@ -34,10 +45,10 @@ export default function OngekiLampCell({
 			content = (
 				<span>
 					<div className={truncLine} style={{ minWidth: 0 }}>
-						{noteLamp}
+						{mobile ? shortMappings[noteLamp] : noteLamp}
 					</div>
 					<div className={truncLine} style={{ minWidth: 0 }}>
-						{bellLamp}
+						{mobile ? shortMappings[bellLamp] : bellLamp}
 					</div>
 				</span>
 			);
@@ -51,6 +62,7 @@ export default function OngekiLampCell({
 		<td
 			style={{
 				...constrainedLampTdStyle,
+
 				background:
 					bellLamp === "FULL BELL"
 						? `linear-gradient(-45deg, ${lowCorner} 0%,${lowCorner} 12%,${low} 12%,${low} 100%)`
