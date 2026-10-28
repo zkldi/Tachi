@@ -22821,5 +22821,89 @@
 		"legacySongID": 1702,
 		"searchTerms": [],
 		"title": "Cryogenic"
+	},
+	{
+		"altTitles": [],
+		"artist": "森羅万象",
+		"data": {
+			"duration": 164.962,
+			"genre": "東方Project"
+		},
+		"id": "S1a180f157cd4e4f5b7e",
+		"legacySongID": 1703,
+		"searchTerms": [
+			"junjou armeria",
+			"junjou arumeria"
+		],
+		"title": "純情アルメリア"
+	},
+	{
+		"altTitles": [],
+		"artist": "森羅万象",
+		"data": {
+			"duration": 159.892,
+			"genre": "東方Project"
+		},
+		"id": "S1a180f157da3cba8dcd",
+		"legacySongID": 1704,
+		"searchTerms": [
+			"unmei senjou no aria"
+		],
+		"title": "運命線上のアリア"
+	},
+	{
+		"altTitles": [],
+		"artist": "森羅万象",
+		"data": {
+			"duration": 151.16,
+			"genre": "東方Project"
+		},
+		"id": "S1a180f157e7e2507add",
+		"legacySongID": 1705,
+		"searchTerms": [
+			"dendera party night"
+		],
+		"title": "デンデラパーティーナイト"
+	},
+	{
+		"altTitles": [],
+		"artist": "Laur",
+		"data": {
+			"duration": 135.273,
+			"genre": "東方Project"
+		},
+		"id": "S1a180f157f39b0cbdd0",
+		"legacySongID": 1706,
+		"searchTerms": [],
+		"title": "Absolute Queen"
+	},
+	{
+		"altTitles": [],
+		"artist": "igel",
+		"data": {
+			"duration": 152.456,
+			"genre": "maimai"
+		},
+		"id": "S1a18113b7b67a3ff6dc",
+		"legacySongID": 1707,
+		"searchTerms": [
+			"mahou shikake no fantasia",
+			"enchanted fantasia"
+		],
+		"title": "魔法仕掛けのファンタジア"
+	},
+	{
+		"altTitles": [],
+		"artist": "Alicemetix",
+		"data": {
+			"duration": 138.305,
+			"genre": "maimai"
+		},
+		"id": "S1a181210b8f2769a215",
+		"legacySongID": 1708,
+		"searchTerms": [
+			"overclock"
+		],
+		"title": "OV3RCLOCK"
 	}
 ]
