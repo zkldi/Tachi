@@ -463,6 +463,7 @@ export function computeFolderSlug(folder: SeedFolderRow): string {
 		case "maimai":
 		case "maimaidx":
 		case "museca":
+		case "poco":
 		case "popn":
 		case "sdvx":
 		case "wacca":
