@@ -6075,5 +6075,1307 @@
 		"game": "chunithm",
 		"goalID": "Gb7247d45535a89dbb74f1563376d4218e22b6210eb0e7b85631365d3dfdd7c75",
 		"name": "SSS YOUNITHM (ULT 15+)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111809f87bade",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Ge6640505fc245f9cd315898fa39bf8a8803f2827b3dbc5f30c616e6010042b49",
+		"name": "CLEAR ここからよろしく大作戦143 (SPH 8)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11179264b2d7f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 5
+		},
+		"game": "iidx-sp",
+		"goalID": "G95448f7a7640d04e031fda31a014daa0a01937210640b3e0644a8db09f716da5",
+		"name": "HARD CLEAR Chewingood!!! (SPH 7)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10c92d74dc0dc",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc856cfa837b72f955560ab343b4ff665f864b21e5d67a1e987ee81fb910b64f0",
+		"name": "CLEAR Digitank System (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11013dc19690b",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gfcec9dfe407322dfb66c3f75a11d0aaf5b5ed04c49cba38bd3f0e9261fcc23bc",
+		"name": "CLEAR Red. by Jack Trance (SPN 7)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110896a5d6edd",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G209738277bf4bc5d0d35b052055da33f579f844410e87341c978989f367348fb",
+		"name": "CLEAR FREEDOM (SPH 8)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11105b6b0d6f8",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2773a83e62f5d9f6974966d1eef0fa95c6c58689dc80b029c1eea4faee79f5d6",
+		"name": "CLEAR 灼熱Beach Side Bunny (Masayoshi Iimori Remix) (SPH 7)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e110e22da95e77",
+				"C19d35e1119be642077a",
+				"C19d35e10fb05cdeb4d1",
+				"C19d35e110e1c41e7577"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 2,
+			"key": "lamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G56597018c155d49d23dffab1eba1766e5035d454ad372c18514e97e6bf7f37d5",
+		"name": "CLEAR any 2 of rough percussionythm (SPH 9), Jungle Eater (SPH 9), 焱影 (SPH 9) or 27th style (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e10ce13c87556a",
+				"C19d35e11108b927144b"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G4a52f6f3523bbcc52c3def71b51228c680089c697701835cac9cd6d5be26f216",
+		"name": "CLEAR either naughty girl@Queen's Palace (SPH 9) or SCREW // owo // SCREW (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10ebcdfc84a72",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 5
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc7a4f7e3a4e59ac20391b6aad3551d16d4d9d4013ba9bd3d0fe42b0a26525923",
+		"name": "HARD CLEAR chrono diver -fragment- (SPA 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f675ff79a32",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G0ff29ac4c296f9e99ec4e1ab7d187791ad24a7dd4af4a22b7dcd43d5be06ca92",
+		"name": "CLEAR Damage Per Second (SPL 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f4c84686734",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gb72353beae0cc9179bf410d0e6e36ccda4278d43f59767bafd7b05cd8812229c",
+		"name": "CLEAR Dynamite (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10e1f7619da92",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G951311c7b356e436faf3e8947c578ef86bba1507c66ce1571e646a9d24e16d81",
+		"name": "CLEAR Plan 8 (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1102bbb5bb138",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gd8f6636567fe795e0dd68f50b23611ff6b222176ca2065df0b1d7f1acac941da",
+		"name": "CLEAR Level One (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10feafd4c58c0",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G483c905ca95d28f02e79a8761f404535f27840557e6d346ddd799b388cac3076",
+		"name": "CLEAR BroGamer (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11231d01cce9d",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G278fddb547c14b481886564782901dd9d93f8989b74fc93b7917171e7bb88eef",
+		"name": "CLEAR Driver (SPA 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1109a423cf20f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gd737c8705c35cb21972905f54835cf8d1581bdf7827ac302d220f25760875cdc",
+		"name": "CLEAR The Chase (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d2837198d4a",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G57acc1808910f59bd5cceba43a662698ea56ec83c73e0d8ef6b2db47d620b7da",
+		"name": "CLEAR Red. by Full Metal Jacket (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111aa3c652e3d",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G8b1f17b0963e8e1cb59d391e0c6a8d8efaf68e18818ab8f5dea7edb29f0688a0",
+		"name": "CLEAR Level 3 (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1112177e3c075",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G0b5656f26a7b597dd8b4b2d8dcf2d505a1409d809b7b32b7fd175af000025ecd",
+		"name": "CLEAR Level 2 (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f689a719dbc",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "iidx-sp",
+		"goalID": "Gfd96bd7b5052f233ccedd003c69d56889c969223b26af199ea07d2feb78a8b73",
+		"name": "EASY CLEAR 199024club -Re:BounceKiller- (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112b0b15dd587",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G4ddbe0e43a6ec1e102d0cc62c294c0af7cbb28db6574b0b81f24a7f737b64299",
+		"name": "CLEAR Tripping Jumping (SPA 10)"
+	},
+	{
+		"charts": {
+			"data": [
+				"C19d35e10c6b87c980e2",
+				"C19d35e10d4d700640e6",
+				"C19d35e10fd362518fca"
+			],
+			"type": "multi"
+		},
+		"criteria": {
+			"countNum": 2,
+			"key": "lamp",
+			"mode": "absolute",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G91ce892f247e0e0933355e8af05e0bdab9ab83ada1efce4f24884ac43a7da9b0",
+		"name": "CLEAR any 2 of Watch out!! (SPA 9), Watch Out Pt.2 (SPH 9) or SAMURAI-Scramble (SPH 9)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d9a5bb78f50",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G18faaae1f25d2a62bd21ba9bef915c6648ee9717b0623b84e864888dfd7c935e",
+		"name": "CLEAR Snake Stick (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10c8658255b35",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G09a444e241b716dbad68c48ada73a61c2217f82699dea8911ce44593b2479e08",
+		"name": "CLEAR TROOPERS (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1120256afa6e2",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "iidx-sp",
+		"goalID": "G81c588a199281b42f28d8bfda1678067a644253013ebbc5139a43ae974d2c744",
+		"name": "EASY CLEAR WHA (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d6cf301b1e3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gd27fd52e4ee3f5a89c6c1b3d13d0812cb613601bd1292ca96f05839b892b9d27",
+		"name": "CLEAR 灼熱Beach Side Bunny (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10dbf151ed6df",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2c1f543af8309344903da89b40154db5218188a3bc0f340d4ecc778cdfe10eb6",
+		"name": "CLEAR BLACK.by X-Cross Fade (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1101378dcb6d3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G425ba3a7c0d7b0f945aed9c64807a0adfffc6a95d1f45e1f7cade470772776c1",
+		"name": "CLEAR Red. by Jack Trance (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111051ffc7579",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Ge25df5be53a2096a45175c57dd91a7d96d1471d62971b4ec359e4644c8f20158",
+		"name": "CLEAR 灼熱Beach Side Bunny (Masayoshi Iimori Remix) (SPA 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1139c1131d3c2",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Geef99ba41998bc98a596dedccdfd07fa46383555577bea163e5aabafe57327c5",
+		"name": "CLEAR Makin' It (SPH 10)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f8c35df0bb6",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G8074cf5e1a11e95ace0cf55c64533ed98dbc4a13c5e97a5fac8611ba9f323b1b",
+		"name": "CLEAR ZEPHYRANTHES (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110d8d61322ee",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G575db755ce992f84a1db9f9e9db9b293a9ef3e5ad2c9526fa13b3d4be7750421",
+		"name": "CLEAR UNITE THE HEART (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f6424f8cb51",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G17d48a15ebc4542adff78d51a3e9f77ecfde829589aa4a9720a69c265287e9ae",
+		"name": "CLEAR 灼熱 Pt.2 Long Train Running (SPH 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111993dd54c72",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gebe25a7c1de48477b296cd7d5119c5047914af6701c1fa356a4bcfff1265b011",
+		"name": "CLEAR Ritual of Anubis (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110e212713957",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G7f661522cd0ad81c8f93db5d6ab7824dc2a941673e421db630498fa4539efa9b",
+		"name": "CLEAR rough percussionythm (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10e7f94bbb645",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G361fa2730efa4439c2a6b95c9ab9bcfdc105dbf7a4a5a75457d9c03f75b01663",
+		"name": "CLEAR BRAINSTORM (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10ce1607d87b4",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G75b6d371998caad5282a8c458b6482a1794ed6cdfd2369b852f25885ba2cc750",
+		"name": "CLEAR naughty girl@Queen's Palace (SPL 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11012a88670b6",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc897be9c5fd42e5800f5c82d4f0dad8dce3c8923f7698f4ecaec137252f671c2",
+		"name": "CLEAR IDC feat.REVERBEE (Mo'Cuts Ver) (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f6603ae6437",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G6b018ee121025017ec2001713f42ba74623c67c0898336b31884a7b6aeac8cea",
+		"name": "CLEAR On the FM (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110e162807903",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2f0503c8dbed8ed790dbe3dc6aecac649c8c0e830774f07f45d8db6767f1dac1",
+		"name": "CLEAR 27th style (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10c92cd3d3ff7",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G73197c09d70134ded53133975f1a8da8e6a6bcde1e5cc9f46f2b45847014c14f",
+		"name": "CLEAR Digitank System (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1119b5e1a85f3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G621ed659e755e67d62ad1c0ef462fb14d719b817ab5f75ab05a519055aa67918",
+		"name": "CLEAR Jungle Eater (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d339d48db8a",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G4b078982a0706266e140bd0c347f53ee8291ddbed0fdf6020f66eb05b4e06711",
+		"name": "CLEAR Hydrogen Blueback (SPL 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1123d1421aa9f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G3253271663f91d1a47c9587346d835637bf410f4f869d9f513be99bcd10a9dc2",
+		"name": "CLEAR VOLCANIC BIGBEAT (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d62e20b5446",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Ga2d460ab5957e62e545c766c158c211967386a8fff12b86008d8040518e320a3",
+		"name": "CLEAR Bounce Bounce Bounce (SPA 11)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110405a303f51",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gd667d3f47eea76b51408a5b76c00bd86fa7ed15ef5b0762f7ab23f4f85ef2183",
+		"name": "CLEAR Carry Me Away (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112b493dc9abf",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2bccb4173f6a34dcad80dc99eb8369c25732d91a55673d25c04588e1093bb69d",
+		"name": "CLEAR Dahlia (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f969d24a96e",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G99528069e858e361f1f128222af5529d3f550c59db90edd9d0953547bf8bc55e",
+		"name": "CLEAR Caterpillar (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11271c106d8fe",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2a00b2f54272eebbccd77a8d2e7711ea7615aa2a1d5165329615183c182ca1f3",
+		"name": "CLEAR dica dica (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111215da1368f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G3f9dfafb9bb3f0e772a673663e300e6f66d426976ba823b457404c3699ad980c",
+		"name": "CLEAR Level 2 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10bda091fdd14",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G81cab82cde538c8e5c888715f790a6f74f017cb7d1dd142ffffa1e53220ff7f2",
+		"name": "CLEAR SCREAM SQUAD (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d28511d0a70",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G9f8845c9acd11f63c927eb7e0282e8c9556ced6d3193194870f7047cb27a5419",
+		"name": "CLEAR Red. by Full Metal Jacket (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f6815e2d9c3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "iidx-sp",
+		"goalID": "G647f21879937fc501dca25619b6ec444befa2fcc9103ff7ef6fb63c60d489817",
+		"name": "EASY CLEAR 199024club -Re:BounceKiller- (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1133af77e9d28",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G1423218eeb3092488607d7a57317c7e1adcab2588206f54b05e074a80d2a6206",
+		"name": "CLEAR 灼熱 Lost Summer Dayz (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112c7eb9fa234",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G7330b29e7a95de8a071eafa7e6dac47d6d7f144b375fb5c2f6fba9e44b0116b5",
+		"name": "CLEAR GAME ON (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10ebab8f7556f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G2d99365b3fe38e6e5a8430d4379e38dc01c51b5ab57496c63e8a28eba4635c00",
+		"name": "CLEAR NEO GENERATOR SEVEN (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111ff08c178ff",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G147c61b307f0b100cc9077a3e608657fa63b5d3162877f84edb835c80986cdda",
+		"name": "CLEAR 禊 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11075b8fd1595",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G4210f3426fc673d4fa35c5fe99d7c0246269da5ce0f94f1e3d5e140eb15530b7",
+		"name": "CLEAR Papilio ulysses (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111c3c0772e15",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G28622f8fd7a5793b2f57614816709533fec7a0cdde15456b07d7a8c55d803e11",
+		"name": "CLEAR Fegrix (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111002ed90efc",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G6b954f1f3fe7f410c5928c0a82f1f46fe551fd49901d9761583cbab1b73e859e",
+		"name": "CLEAR Double Dribble (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111132c4f57ed",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gde9010db25917f90f9c1f5c1d8ca1fd1bd7b9e3ccba22639c8a31f76f107d7e6",
+		"name": "CLEAR Friction[!]Function (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112bedc816203",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G5b8e8a67f27915748d3e2e4e62f79a88ff1bcf0323550dce41a38c828f383449",
+		"name": "CLEAR MAXIMUM CHEAT GIRL (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e110a0133900f6",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G709b8e339ff5d9932cfa21e6e4b4f5a96896832797698cb62aa7c62e0b5c712b",
+		"name": "CLEAR Xperanza (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1107e43516725",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 3
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc029639987d99c30295f58662f8827b37372b6deb8cfbafd3759cc41141163b2",
+		"name": "EASY CLEAR Boomy and The Boost (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112ae4e30939e",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc832de484b56e06d056fbd9d0c47d0b35cadcd3374c8e5c68107b46fde58bf3a",
+		"name": "CLEAR 灼熱Beach Side Bunny (かめりあ's \"Summertime D'n'B\" Remix) (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10fb0c214220d",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G4c50b6b9a4214dec07d674a348d5cb1cb499d43f4cfe03a5c82240e027ad90c1",
+		"name": "CLEAR 焱影 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f6815e2d9c3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 5
+		},
+		"game": "iidx-sp",
+		"goalID": "G4712cebb15c8ffca9cbf80d34a6651115c007162cb693f5f247d2bffe403715f",
+		"name": "HARD CLEAR 199024club -Re:BounceKiller- (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111215da1368f",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 5
+		},
+		"game": "iidx-sp",
+		"goalID": "G90638e7d3fcd13714c64dc8eeece4d935c91e26524e36513bcf0bbf4d64182cc",
+		"name": "HARD CLEAR Level 2 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d4dd4f478d8",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gd5466e7c42173bc97f0d1ac43a2b857cff7d02d01af615b2193273f028d56b3a",
+		"name": "CLEAR Watch Out Pt.2 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d9a810c7092",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc753e38a4d8d798b86c58ed2ba82e7045a5a71d3eef5a77d6b12136a79636fec",
+		"name": "CLEAR Snake Stick (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1116b51b1c1c0",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Ga29caa1e758252f8454e4a8c1f3f69415247a79b6cd6d638175e998ffc9e4b5a",
+		"name": "CLEAR Burning Flame (SPL 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f502a3f74ec",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G302bd79c1a580df13af3d3023c0fd518795a0f1f4ec8cea087ae2ff85274208c",
+		"name": "CLEAR STARLIGHT DANCEHALL (SPL 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111f9079a87c0",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gc5a61d0db46a5a11e766a0eb0bf7432b52d9056bd77e1e09296d55c308e953a0",
+		"name": "CLEAR 2 Beasts Unchained (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10fcde113b404",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Ge7d4c1153b3e5b57ad2c0bf27e88ed35c36bd31dc0d14f75f1bc1c23cc3331ef",
+		"name": "CLEAR HADES (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f5a2de5552e",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G3beabe0e36387fb52801a539468ff06ca9be4d3a83b7ee84238a7723ec8d24c2",
+		"name": "CLEAR 真 地獄超特急 -HELL or HELL- (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111e9c3b6e884",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G0135a32af793468ef3678191f1c0a98ac7108ab74f4d884c55e9f00258e905d1",
+		"name": "CLEAR TOMAHAWK (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1118b8af9e25a",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gddaa269025ec6ab17561de1d2d38de3389daf9bc06a0e5ae67a6656273392289",
+		"name": "CLEAR LOCUS OF THE TRAVEL (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1102b4fbd8b7a",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G3752f2746b64407669a5188dca386bc1a303d7a4e5ba82863a3352a2bc382067",
+		"name": "CLEAR Level One (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11108b396a14a",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G98be418f15ae1408966f4c2a6fc9ed25fabacf2c19d3d6fea5b28b5c87602e67",
+		"name": "CLEAR SCREW // owo // SCREW (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111aaf6b15495",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G125e5e68dc4fa488b558d0a17505bd11cf6e0e35b69499167a26f6a4e127176b",
+		"name": "CLEAR Level 3 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e1128076c5cad7",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G8dc7df26928f019d9e514821bd64c5cbfa03e6c7f7a129bcb548bd99cadcd86b",
+		"name": "CLEAR Level 4 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10e50bee2bbba",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G822a142b19c09b940969021d3a99c98b00953e7ee57d98da1ef383819ae5d2b8",
+		"name": "CLEAR Miracle 5ympho X (SPL 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111440479471b",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gab661189e06ae97464f7382be5ba598db008c11db64f2fa195e9fccf21fc6554",
+		"name": "CLEAR THE PEERLESS UNDER HEAVEN (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11013507a64c7",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G1b98ddb5d6f252946318457a822544c49210bd79c7d6869db9827949656848c4",
+		"name": "CLEAR Red. by Jack Trance (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e112c905ea0982",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G5df4a9f713ef7a9233234ae66e3cef00a0f4f19776dd4bf4c4fcd05fcbdf57ac",
+		"name": "CLEAR SOLAR ECLIPSE (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11202329c9876",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G9434e7913d581b9cbae3ee4e337339f3eb012d40656b3e1b1c46f5859f352f1b",
+		"name": "CLEAR WHA (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e11304d8eec60c",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gcb8683f123b385b142af82a41ca12124788db34ca2fd76264050bc480c01bdd6",
+		"name": "CLEAR Level 5 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f900ccc806c",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G925cecb0b25558d8c1f0d1f345f559047e5b2de7292f3ba95698abbb34f89970",
+		"name": "CLEAR 焔極OVERKILL (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e111fefdf5a7c3",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G488bb8b2b7150d8210f6928a15c9c39c8b4fd09a7f498dae7af6bbbb8f3ea0c8",
+		"name": "CLEAR RAGE feat.H14 of LEONAIR (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10e1fa8c50f59",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "G8ca0a44442f1997af5979c1d0243c36c62271707add5f80e0d3273d00ce297d8",
+		"name": "CLEAR Plan 8 (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10d6cf3457ce4",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gcf6fb46ea8b401e97117dad475115d12a6250c383321f1f081708a60b1719990",
+		"name": "CLEAR 灼熱Beach Side Bunny (SPA 12)"
+	},
+	{
+		"charts": {
+			"data": "C19d35e10f64eaa8c280",
+			"type": "single"
+		},
+		"criteria": {
+			"key": "lamp",
+			"mode": "single",
+			"value": 4
+		},
+		"game": "iidx-sp",
+		"goalID": "Gfb56bf0be4a3601c3a4afc14c599ceeb94af59b2448899682274aa3450e365f6",
+		"name": "CLEAR 灼熱 Pt.2 Long Train Running (SPA 12)"
 	}
 ]

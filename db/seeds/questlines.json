@@ -53,5 +53,20 @@
 			"c5347184e92e213817bb10283ea72e8addae554792711acd4bee154f2e419791",
 			"011049eb85d7bb7b1bfcb4ff6cee1aa307c667e22a8eebb50b809f656c7abf1b"
 		]
+	},
+	{
+		"desc": "A thorough course on improving your scratch skills. Created by @catto.",
+		"game": "iidx-sp",
+		"name": "Scratching & Turntablism, Bachelor's Degree",
+		"questlineID": "scratching--turntablism-bachelors-degree-1784694757457",
+		"quests": [
+			"991c843944350cd2f0f6725261f116653b58185f4039c108ee2dc5243b690379",
+			"70e023c197d9ba8865372103411ab0dfeb433eb4155e64835ac213f52d2fa8f7",
+			"1c07d483bd4b4b601993e44a2a87afad6175b7750296c93825016253389f0341",
+			"c839aa402ff7ed72b650419a8f0a42dafa71f3547ff16090f884c3f441a27fbd",
+			"a0b29c48c7de140de724562c7a751682b5bce80c4e717e365a165d66cee00a34",
+			"dc0be50069ee2c967f54271f32d632f80805c95432fd236ffb02bd51bd1312fd",
+			"11432867f6048740ec1c8d25722365cd45fac8bf34e3e9912e22fe722c2b73e0"
+		]
 	}
 ]
