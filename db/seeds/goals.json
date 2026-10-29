@@ -6078,12 +6078,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111809f87bade"
+			"data": "C19d35e111809f87bade",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6092,12 +6092,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11179264b2d7f"
+			"data": "C19d35e11179264b2d7f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 5
 		},
 		"game": "iidx-sp",
@@ -6106,12 +6106,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10c92d74dc0dc"
+			"data": "C19d35e10c92d74dc0dc",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6120,12 +6120,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11013dc19690b"
+			"data": "C19d35e11013dc19690b",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6134,12 +6134,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110896a5d6edd"
+			"data": "C19d35e110896a5d6edd",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6148,12 +6148,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11105b6b0d6f8"
+			"data": "C19d35e11105b6b0d6f8",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6162,19 +6162,19 @@
 	},
 	{
 		"charts": {
-			"type": "multi",
 			"data": [
 				"C19d35e110e22da95e77",
 				"C19d35e1119be642077a",
 				"C19d35e10fb05cdeb4d1",
 				"C19d35e110e1c41e7577"
-			]
+			],
+			"type": "multi"
 		},
 		"criteria": {
-			"mode": "absolute",
+			"countNum": 2,
 			"key": "lamp",
-			"value": 4,
-			"countNum": 2
+			"mode": "absolute",
+			"value": 4
 		},
 		"game": "iidx-sp",
 		"goalID": "G56597018c155d49d23dffab1eba1766e5035d454ad372c18514e97e6bf7f37d5",
@@ -6182,15 +6182,15 @@
 	},
 	{
 		"charts": {
-			"type": "multi",
 			"data": [
 				"C19d35e10ce13c87556a",
 				"C19d35e11108b927144b"
-			]
+			],
+			"type": "multi"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6199,12 +6199,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10ebcdfc84a72"
+			"data": "C19d35e10ebcdfc84a72",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 5
 		},
 		"game": "iidx-sp",
@@ -6213,12 +6213,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f675ff79a32"
+			"data": "C19d35e10f675ff79a32",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6227,12 +6227,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f4c84686734"
+			"data": "C19d35e10f4c84686734",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6241,12 +6241,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10e1f7619da92"
+			"data": "C19d35e10e1f7619da92",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6255,12 +6255,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1102bbb5bb138"
+			"data": "C19d35e1102bbb5bb138",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6269,12 +6269,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10feafd4c58c0"
+			"data": "C19d35e10feafd4c58c0",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6283,12 +6283,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11231d01cce9d"
+			"data": "C19d35e11231d01cce9d",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6297,12 +6297,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1109a423cf20f"
+			"data": "C19d35e1109a423cf20f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6311,12 +6311,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d2837198d4a"
+			"data": "C19d35e10d2837198d4a",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6325,12 +6325,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111aa3c652e3d"
+			"data": "C19d35e111aa3c652e3d",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6339,12 +6339,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1112177e3c075"
+			"data": "C19d35e1112177e3c075",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6353,12 +6353,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f689a719dbc"
+			"data": "C19d35e10f689a719dbc",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 3
 		},
 		"game": "iidx-sp",
@@ -6367,12 +6367,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112b0b15dd587"
+			"data": "C19d35e112b0b15dd587",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6381,18 +6381,18 @@
 	},
 	{
 		"charts": {
-			"type": "multi",
 			"data": [
 				"C19d35e10c6b87c980e2",
 				"C19d35e10d4d700640e6",
 				"C19d35e10fd362518fca"
-			]
+			],
+			"type": "multi"
 		},
 		"criteria": {
-			"mode": "absolute",
+			"countNum": 2,
 			"key": "lamp",
-			"value": 4,
-			"countNum": 2
+			"mode": "absolute",
+			"value": 4
 		},
 		"game": "iidx-sp",
 		"goalID": "G91ce892f247e0e0933355e8af05e0bdab9ab83ada1efce4f24884ac43a7da9b0",
@@ -6400,12 +6400,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d9a5bb78f50"
+			"data": "C19d35e10d9a5bb78f50",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6414,12 +6414,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10c8658255b35"
+			"data": "C19d35e10c8658255b35",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6428,12 +6428,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1120256afa6e2"
+			"data": "C19d35e1120256afa6e2",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 3
 		},
 		"game": "iidx-sp",
@@ -6442,12 +6442,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d6cf301b1e3"
+			"data": "C19d35e10d6cf301b1e3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6456,12 +6456,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10dbf151ed6df"
+			"data": "C19d35e10dbf151ed6df",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6470,12 +6470,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1101378dcb6d3"
+			"data": "C19d35e1101378dcb6d3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6484,12 +6484,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111051ffc7579"
+			"data": "C19d35e111051ffc7579",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6498,12 +6498,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1139c1131d3c2"
+			"data": "C19d35e1139c1131d3c2",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6512,12 +6512,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f8c35df0bb6"
+			"data": "C19d35e10f8c35df0bb6",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6526,12 +6526,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110d8d61322ee"
+			"data": "C19d35e110d8d61322ee",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6540,12 +6540,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f6424f8cb51"
+			"data": "C19d35e10f6424f8cb51",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6554,12 +6554,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111993dd54c72"
+			"data": "C19d35e111993dd54c72",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6568,12 +6568,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110e212713957"
+			"data": "C19d35e110e212713957",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6582,12 +6582,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10e7f94bbb645"
+			"data": "C19d35e10e7f94bbb645",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6596,12 +6596,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10ce1607d87b4"
+			"data": "C19d35e10ce1607d87b4",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6610,12 +6610,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11012a88670b6"
+			"data": "C19d35e11012a88670b6",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6624,12 +6624,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f6603ae6437"
+			"data": "C19d35e10f6603ae6437",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6638,12 +6638,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110e162807903"
+			"data": "C19d35e110e162807903",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6652,12 +6652,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10c92cd3d3ff7"
+			"data": "C19d35e10c92cd3d3ff7",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6666,12 +6666,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1119b5e1a85f3"
+			"data": "C19d35e1119b5e1a85f3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6680,12 +6680,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d339d48db8a"
+			"data": "C19d35e10d339d48db8a",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6694,12 +6694,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1123d1421aa9f"
+			"data": "C19d35e1123d1421aa9f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6708,12 +6708,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d62e20b5446"
+			"data": "C19d35e10d62e20b5446",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6722,12 +6722,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110405a303f51"
+			"data": "C19d35e110405a303f51",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6736,12 +6736,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112b493dc9abf"
+			"data": "C19d35e112b493dc9abf",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6750,12 +6750,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f969d24a96e"
+			"data": "C19d35e10f969d24a96e",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6764,12 +6764,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11271c106d8fe"
+			"data": "C19d35e11271c106d8fe",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6778,12 +6778,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111215da1368f"
+			"data": "C19d35e111215da1368f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6792,12 +6792,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10bda091fdd14"
+			"data": "C19d35e10bda091fdd14",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6806,12 +6806,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d28511d0a70"
+			"data": "C19d35e10d28511d0a70",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6820,12 +6820,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f6815e2d9c3"
+			"data": "C19d35e10f6815e2d9c3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 3
 		},
 		"game": "iidx-sp",
@@ -6834,12 +6834,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1133af77e9d28"
+			"data": "C19d35e1133af77e9d28",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6848,12 +6848,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112c7eb9fa234"
+			"data": "C19d35e112c7eb9fa234",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6862,12 +6862,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10ebab8f7556f"
+			"data": "C19d35e10ebab8f7556f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6876,12 +6876,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111ff08c178ff"
+			"data": "C19d35e111ff08c178ff",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6890,12 +6890,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11075b8fd1595"
+			"data": "C19d35e11075b8fd1595",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6904,12 +6904,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111c3c0772e15"
+			"data": "C19d35e111c3c0772e15",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6918,12 +6918,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111002ed90efc"
+			"data": "C19d35e111002ed90efc",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6932,12 +6932,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111132c4f57ed"
+			"data": "C19d35e111132c4f57ed",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6946,12 +6946,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112bedc816203"
+			"data": "C19d35e112bedc816203",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6960,12 +6960,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e110a0133900f6"
+			"data": "C19d35e110a0133900f6",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -6974,12 +6974,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1107e43516725"
+			"data": "C19d35e1107e43516725",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 3
 		},
 		"game": "iidx-sp",
@@ -6988,12 +6988,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112ae4e30939e"
+			"data": "C19d35e112ae4e30939e",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7002,12 +7002,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10fb0c214220d"
+			"data": "C19d35e10fb0c214220d",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7016,12 +7016,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f6815e2d9c3"
+			"data": "C19d35e10f6815e2d9c3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 5
 		},
 		"game": "iidx-sp",
@@ -7030,12 +7030,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111215da1368f"
+			"data": "C19d35e111215da1368f",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 5
 		},
 		"game": "iidx-sp",
@@ -7044,12 +7044,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d4dd4f478d8"
+			"data": "C19d35e10d4dd4f478d8",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7058,12 +7058,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d9a810c7092"
+			"data": "C19d35e10d9a810c7092",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7072,12 +7072,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1116b51b1c1c0"
+			"data": "C19d35e1116b51b1c1c0",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7086,12 +7086,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f502a3f74ec"
+			"data": "C19d35e10f502a3f74ec",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7100,12 +7100,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111f9079a87c0"
+			"data": "C19d35e111f9079a87c0",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7114,12 +7114,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10fcde113b404"
+			"data": "C19d35e10fcde113b404",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7128,12 +7128,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f5a2de5552e"
+			"data": "C19d35e10f5a2de5552e",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7142,12 +7142,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111e9c3b6e884"
+			"data": "C19d35e111e9c3b6e884",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7156,12 +7156,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1118b8af9e25a"
+			"data": "C19d35e1118b8af9e25a",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7170,12 +7170,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1102b4fbd8b7a"
+			"data": "C19d35e1102b4fbd8b7a",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7184,12 +7184,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11108b396a14a"
+			"data": "C19d35e11108b396a14a",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7198,12 +7198,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111aaf6b15495"
+			"data": "C19d35e111aaf6b15495",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7212,12 +7212,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e1128076c5cad7"
+			"data": "C19d35e1128076c5cad7",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7226,12 +7226,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10e50bee2bbba"
+			"data": "C19d35e10e50bee2bbba",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7240,12 +7240,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111440479471b"
+			"data": "C19d35e111440479471b",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7254,12 +7254,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11013507a64c7"
+			"data": "C19d35e11013507a64c7",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7268,12 +7268,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e112c905ea0982"
+			"data": "C19d35e112c905ea0982",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7282,12 +7282,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11202329c9876"
+			"data": "C19d35e11202329c9876",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7296,12 +7296,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e11304d8eec60c"
+			"data": "C19d35e11304d8eec60c",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7310,12 +7310,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f900ccc806c"
+			"data": "C19d35e10f900ccc806c",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7324,12 +7324,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e111fefdf5a7c3"
+			"data": "C19d35e111fefdf5a7c3",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7338,12 +7338,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10e1fa8c50f59"
+			"data": "C19d35e10e1fa8c50f59",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7352,12 +7352,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10d6cf3457ce4"
+			"data": "C19d35e10d6cf3457ce4",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",
@@ -7366,12 +7366,12 @@
 	},
 	{
 		"charts": {
-			"type": "single",
-			"data": "C19d35e10f64eaa8c280"
+			"data": "C19d35e10f64eaa8c280",
+			"type": "single"
 		},
 		"criteria": {
-			"mode": "single",
 			"key": "lamp",
+			"mode": "single",
 			"value": 4
 		},
 		"game": "iidx-sp",

@@ -2266,10 +2266,9 @@
 		"questID": "011049eb85d7bb7b1bfcb4ff6cee1aa307c667e22a8eebb50b809f656c7abf1b"
 	},
 	{
-		"questID": "991c843944350cd2f0f6725261f116653b58185f4039c108ee2dc5243b690379",
-		"name": "Turntable 101: Introduction to Scratching",
 		"desc": "Prerequisite: 4/5th dan. A pure introduction to the turntable",
 		"game": "iidx-sp",
+		"name": "Turntable 101: Introduction to Scratching",
 		"questData": [
 			{
 				"title": "Review",
@@ -2289,7 +2288,7 @@
 				"goals": [
 					{
 						"goalID": "Gc856cfa837b72f955560ab343b4ff665f864b21e5d67a1e987ee81fb910b64f0",
-						"note": "It's slower than yout hink. Listen very carefully and get with the rhythm! Perhaps the most important chart in this quest. A significant portion of the song is only scratches, so focus on learning how to get on the turntable and stay on the turntable."
+						"note": "It's slower than you think. Listen very carefully and get with the rhythm! Perhaps the most important chart in this quest. A significant portion of the song is only scratches, so focus on learning how to get on the turntable and stay on the turntable."
 					},
 					{
 						"goalID": "Gfcec9dfe407322dfb66c3f75a11d0aaf5b5ed04c49cba38bd3f0e9261fcc23bc",
@@ -2319,13 +2318,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "991c843944350cd2f0f6725261f116653b58185f4039c108ee2dc5243b690379"
 	},
 	{
-		"questID": "70e023c197d9ba8865372103411ab0dfeb433eb4155e64835ac213f52d2fa8f7",
-		"name": "Turntable 201: Intermediate Scratching",
 		"desc": "Prerequisite: TRTB101 or 6th-8th dan. Intermediate scratching in hard scratch 9s and scratch 10s.",
 		"game": "iidx-sp",
+		"name": "Turntable 201: Intermediate Scratching",
 		"questData": [
 			{
 				"title": "Review",
@@ -2443,13 +2442,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "70e023c197d9ba8865372103411ab0dfeb433eb4155e64835ac213f52d2fa8f7"
 	},
 	{
-		"questID": "1c07d483bd4b4b601993e44a2a87afad6175b7750296c93825016253389f0341",
-		"name": "Turntable 301: Introduction to Turntablism",
 		"desc": "Prerequisite: TRTB 201 or 9/10th",
 		"game": "iidx-sp",
+		"name": "Turntable 301: Introduction to Turntablism",
 		"questData": [
 			{
 				"title": "Review",
@@ -2521,13 +2520,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "1c07d483bd4b4b601993e44a2a87afad6175b7750296c93825016253389f0341"
 	},
 	{
-		"questID": "c839aa402ff7ed72b650419a8f0a42dafa71f3547ff16090f884c3f441a27fbd",
-		"name": "Turntable 401: Turntablism and You",
 		"desc": "Prerequisite: TRTB 301 or 9th-Chuuden",
 		"game": "iidx-sp",
+		"name": "Turntable 401: Turntablism and You",
 		"questData": [
 			{
 				"title": "Review",
@@ -2589,13 +2588,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "c839aa402ff7ed72b650419a8f0a42dafa71f3547ff16090f884c3f441a27fbd"
 	},
 	{
-		"questID": "a0b29c48c7de140de724562c7a751682b5bce80c4e717e365a165d66cee00a34",
-		"name": "Turntable 501: Late Stage Turntablism",
 		"desc": "Prerequisite: TRTB 401 or 10th dan and above",
 		"game": "iidx-sp",
+		"name": "Turntable 501: Late Stage Turntablism",
 		"questData": [
 			{
 				"title": "Review",
@@ -2672,13 +2671,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "a0b29c48c7de140de724562c7a751682b5bce80c4e717e365a165d66cee00a34"
 	},
 	{
-		"questID": "dc0be50069ee2c967f54271f32d632f80805c95432fd236ffb02bd51bd1312fd",
-		"name": "Turntable 601: Postmodern Turntablism",
 		"desc": "Prerequisite: TRTB 501 or mid 10th dan and above",
 		"game": "iidx-sp",
+		"name": "Turntable 601: Postmodern Turntablism",
 		"questData": [
 			{
 				"title": "Review",
@@ -2748,13 +2747,13 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "dc0be50069ee2c967f54271f32d632f80805c95432fd236ffb02bd51bd1312fd"
 	},
 	{
-		"questID": "11432867f6048740ec1c8d25722365cd45fac8bf34e3e9912e22fe722c2b73e0",
-		"name": "Turntable 701: Thesis Defense",
 		"desc": "This is it. If you're done, go play BMS or hunt better lamps.",
 		"game": "iidx-sp",
+		"name": "Turntable 701: Thesis Defense",
 		"questData": [
 			{
 				"title": "Notable Charts",
@@ -2810,6 +2809,7 @@
 					}
 				]
 			}
-		]
+		],
+		"questID": "11432867f6048740ec1c8d25722365cd45fac8bf34e3e9912e22fe722c2b73e0"
 	}
 ]
