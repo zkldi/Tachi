@@ -122,7 +122,7 @@ export default function FolderEnumProgressBar({
 						: ChangeOpacity(seg.rawFill, 0.92);
 					const segmentWidthPx = barWidthPx > 0 ? (pct / 100) * barWidthPx : 0;
 					const showInlinePct = segmentWidthPx >= MIN_SEGMENT_WIDTH_PX_FOR_INLINE_LABEL;
-					const inlinePctText = `${Math.round(pct)}%`;
+					const inlinePctText = `${Math.floor(pct)}%`;
 
 					return (
 						<QuickTooltip
