@@ -20,8 +20,8 @@ const command = new Command()
 	.parse(process.argv);
 const options = command.opts();
 
-const CURRENT_VERSION = "refresh";
-const CURRENT_OMNIMIX = "refreshOmni";
+const CURRENT_VERSION = "refresh2";
+const CURRENT_OMNIMIX = "refreshOmni2";
 const DRY_RUN = false;
 
 interface Input {

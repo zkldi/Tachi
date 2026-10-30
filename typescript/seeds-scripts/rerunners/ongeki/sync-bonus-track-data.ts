@@ -24,6 +24,7 @@ const characters = {
 	"皇城 セツナ": "Sumeragi Setsuna",
 	"式宮 舞菜": "Shikimiya Mana",
 	"式宮 碧音": "Shikimiya Aone",
+	"西館 ハク": "Nishidate Haku",
 };
 
 // Songs that have search terms and don't need a romanization
