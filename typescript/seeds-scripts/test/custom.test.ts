@@ -83,6 +83,9 @@ const CHART_CHECKS: { [G in GameGroup]?: Array<Test<ChartDocument<GamesForGroup[
 				"xversex",
 				"xversex-intl",
 				"xversex-omni",
+				"mate",
+				"mate-intl",
+				"mate-omni",
 			];
 			if (
 				(Array.isArray(c.data.inGameID) && c.data.inGameID.some((igid) => igid >= 8000)) ||

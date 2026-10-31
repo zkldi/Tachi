@@ -6599,6 +6599,45 @@
 	},
 	{
 		"game": "chunithm",
+		"id": "F1a15f1fca3add297fbd",
+		"inactive": false,
+		"legacyFolderID": "F442d1e8f31889e44a8157c9b0aa6245366468a111ca7f269fa26242d67cb948d",
+		"searchTerms": [],
+		"slug": "advanced-mate-intl",
+		"title": "ADVANCED (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty = 'ADVANCED'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eccec2bf69",
+		"inactive": false,
+		"legacyFolderID": "F7f2cb3ba22ea29e3833cf3cc250f23620f4838e1def48d7be6b53aaca2c2748f",
+		"searchTerms": [],
+		"slug": "advanced-mate-omni",
+		"title": "ADVANCED (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty = 'ADVANCED'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bb872b729",
+		"inactive": false,
+		"legacyFolderID": "Fbd708f0922eda307eebdbcb2b1d27bf90e70202c4c93e0e5443e44fd3c26df0e",
+		"searchTerms": [],
+		"slug": "advanced-mate",
+		"title": "ADVANCED (Mate)",
+		"versionFilter": [
+			"mate"
+		],
+		"where": "chart.difficulty = 'ADVANCED'"
+	},
+	{
+		"game": "chunithm",
 		"id": "F19d35f0cf2683ec46a3",
 		"inactive": true,
 		"legacyFolderID": "Fbacc32764c26df97a99a3f18b49d285c3a5498038d2242639e337ce079d65a70",
@@ -6743,7 +6782,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf276386d0e5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F405274c8729a9606cfd80af8a257f03b6e2b3f10dc3b5c3894d5da71204d3f20",
 		"searchTerms": [],
 		"slug": "advanced-xverse-omni",
@@ -6756,7 +6795,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38de22ee307",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc9b70c67ebea3a108f0b4864403233c2950de7f0792ae4ccd9739b6e31d63e34",
 		"searchTerms": [],
 		"slug": "advanced-xversex-intl",
@@ -6795,7 +6834,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27da677596",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc6fe5786e00a80396ddf1b2e5d8c935ff1599ea7f3dee623365f51fb2a14eab8",
 		"searchTerms": [],
 		"slug": "advanced-xverse",
@@ -6880,6 +6919,45 @@
 		"title": "BASIC (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.difficulty = 'BASIC'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca397a4d6595",
+		"inactive": false,
+		"legacyFolderID": "F15b3337f0bce7c05f596ecf1948a287dcc1328ef18015d6c30c4600465169dd1",
+		"searchTerms": [],
+		"slug": "basic-mate-intl",
+		"title": "BASIC (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty = 'BASIC'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec8f914cec",
+		"inactive": false,
+		"legacyFolderID": "F6a6a55559647af83a6986aa888f869a16e4c5e489292df7912bf8bd5cb490f55",
+		"searchTerms": [],
+		"slug": "basic-mate-omni",
+		"title": "BASIC (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty = 'BASIC'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9be9ca1bae",
+		"inactive": false,
+		"legacyFolderID": "Fe40094988c09f419e6fee9a80e91189bc7455bb42339bd1b4ecfdbdbf158ab32",
+		"searchTerms": [],
+		"slug": "basic-mate",
+		"title": "BASIC (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.difficulty = 'BASIC'"
 	},
@@ -7029,7 +7107,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2777cd4629",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fa24a8ede359fbcc7def3b43277bdb9e652f70ffe3fc8a9b4f93dd79426cdb0da",
 		"searchTerms": [],
 		"slug": "basic-xverse-omni",
@@ -7042,7 +7120,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38dba96f3f6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fdd4b38839861f45cada10c710d166b76527065977dce54d461804c73b3f44a27",
 		"searchTerms": [],
 		"slug": "basic-xversex-intl",
@@ -7081,7 +7159,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27b30ee26a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0c3eaf9249fa04e8501d0680c4fdcfd53cc947ce14d8fd7ededd124633c4fd66",
 		"searchTerms": [],
 		"slug": "basic-xverse",
@@ -7166,6 +7244,45 @@
 		"title": "EXPERT (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.difficulty = 'EXPERT'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3a8fe9053d",
+		"inactive": false,
+		"legacyFolderID": "F976daaf75993e416f91cae79d21e55d2bdab504e77dbdf2eea255caec22a71a8",
+		"searchTerms": [],
+		"slug": "expert-mate-intl",
+		"title": "EXPERT (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty = 'EXPERT'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec77cbbd64",
+		"inactive": false,
+		"legacyFolderID": "F7439173163d8ef36f4e037551089f14135c74eef6fbb19ae27dc6af4eebe0542",
+		"searchTerms": [],
+		"slug": "expert-mate-omni",
+		"title": "EXPERT (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty = 'EXPERT'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b1f8cc77d",
+		"inactive": false,
+		"legacyFolderID": "Fb31a84725d5ed284e72ea55d51990fcfd6328531b4db43310eee2b2913203162",
+		"searchTerms": [],
+		"slug": "expert-mate",
+		"title": "EXPERT (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.difficulty = 'EXPERT'"
 	},
@@ -7315,7 +7432,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2732cbc61d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7b0ecb8b690df07129792d03848e456bb824c1545ba27c3993851fface4bf1a6",
 		"searchTerms": [],
 		"slug": "expert-xverse-omni",
@@ -7328,7 +7445,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d5c109172",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7adea00133170ed8e8956aeea7c6f471faba03a8b72feb1edae67b9a22be88ae",
 		"searchTerms": [],
 		"slug": "expert-xversex-intl",
@@ -7367,7 +7484,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2722c50046",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F53b0ceccfe55fd580f515272c27e09213ae8d482733490ba953463d40509e51e",
 		"searchTerms": [],
 		"slug": "expert-xverse",
@@ -7452,6 +7569,45 @@
 		"title": "Level 1 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca38562591d1",
+		"inactive": false,
+		"legacyFolderID": "Fcbc535dbdaf81ce08e8af10cc75fa733ce7a80a9cb0bfb036824aaa422f8301c",
+		"searchTerms": [],
+		"slug": "1-mate-intl",
+		"title": "Level 1 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ea815c6298",
+		"inactive": false,
+		"legacyFolderID": "Fea689ce583b3d2f2efdcfb61193ff7965f92927267c1d47f9355f77f5dfe09cd",
+		"searchTerms": [],
+		"slug": "1-mate-omni",
+		"title": "Level 1 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '1'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9aeac48910",
+		"inactive": false,
+		"legacyFolderID": "F0759d569b1d09cb156fc70b663fee77dedc04091a555773b1bf9d93fdabc9e62",
+		"searchTerms": [],
+		"slug": "1-mate",
+		"title": "Level 1 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '1'"
 	},
@@ -7614,7 +7770,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2718c60dd7",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc429784caeff000ae22fba7d484092b363198600704b0e259e6364b25a5881df",
 		"searchTerms": [],
 		"slug": "1-xverse-omni",
@@ -7627,7 +7783,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38da143d88e",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F10f8ced62275119617b2cc090628b11f6c6261801360c829232a5ad0af213fda",
 		"searchTerms": [],
 		"slug": "1-xversex-intl",
@@ -7666,7 +7822,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2739f2c8f4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7b6305ea7ed5ec5bef5f980b1d012e61f195cda4bc9968918c303d864af1b1d6",
 		"searchTerms": [],
 		"slug": "1-xverse",
@@ -7751,6 +7907,45 @@
 		"title": "Level 10 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca396a2e619d",
+		"inactive": false,
+		"legacyFolderID": "F8a241049405b3f5d4c97b449c5f370365696880ab80435006d225046218684e9",
+		"searchTerms": [],
+		"slug": "10-mate-intl",
+		"title": "Level 10 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec9d30dc3a",
+		"inactive": false,
+		"legacyFolderID": "F3febee5c5dfe51faae65cbc01fd527911f238e1727a49ec307b132a26f15b1c4",
+		"searchTerms": [],
+		"slug": "10-mate-omni",
+		"title": "Level 10 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '10'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bcf37ff3d",
+		"inactive": false,
+		"legacyFolderID": "F8c010ca48a96e2575f63aef2fcb45cfc054dd2a60ecff91782243c7f9a3ea53c",
+		"searchTerms": [],
+		"slug": "10-mate",
+		"title": "Level 10 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '10'"
 	},
@@ -7913,7 +8108,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27bd8f157e",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Ffe61aa86aef86eea8269c184b63e817cadcab05489f649915e882bdd69c7cd4a",
 		"searchTerms": [],
 		"slug": "10-xverse-omni",
@@ -7926,7 +8121,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d5a324b43",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc5cfb7274045b12cb9e36c1837e869bcade076a60b34b70c9badfc2c4b8152a3",
 		"searchTerms": [],
 		"slug": "10-xversex-intl",
@@ -7965,7 +8160,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27409be9fc",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F1f92fadd45d053f02da059ffef90bfae458c430b9be0f7be1bd98d99a8eaa727",
 		"searchTerms": [],
 		"slug": "10-xverse",
@@ -8050,6 +8245,45 @@
 		"title": "Level 10+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '10+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3983d35500",
+		"inactive": false,
+		"legacyFolderID": "Fa73a05012bad7f0c4c8f9de3ddcb4c718fb806aa6051aec71b6bb2787a7dd155",
+		"searchTerms": [],
+		"slug": "10p-mate-intl",
+		"title": "Level 10+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '10+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eca63f8a1f",
+		"inactive": false,
+		"legacyFolderID": "Facc429f1c1e9df3c5aca73bcf6bdc70f076a1ce5ab6648f7100123fa51005dc6",
+		"searchTerms": [],
+		"slug": "10p-mate-omni",
+		"title": "Level 10+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '10+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b81d923ca",
+		"inactive": false,
+		"legacyFolderID": "F87ba413af60f7426bfcd23d88974ff2a3055d8089af7acb00e18eff52e9ede20",
+		"searchTerms": [],
+		"slug": "10p-mate",
+		"title": "Level 10+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '10+'"
 	},
@@ -8212,7 +8446,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf276634d469",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F88c97aa503fe954bdedb645e8255ffb0af21e7c384e8870a4ab157cba192fd44",
 		"searchTerms": [],
 		"slug": "10p-xverse-omni",
@@ -8225,7 +8459,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d762cd000",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0090ef80fb39cb81013333743217862a3ba04b51464389b95beed62a049c501f",
 		"searchTerms": [],
 		"slug": "10p-xversex-intl",
@@ -8264,7 +8498,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf278298af17",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F3427c117fc3a0c77297f72e646480576ab6de2d6ee61290ebb348160a69091e2",
 		"searchTerms": [],
 		"slug": "10p-xverse",
@@ -8349,6 +8583,45 @@
 		"title": "Level 11 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39520e971c",
+		"inactive": false,
+		"legacyFolderID": "Fac05dd82a364de79b8d1f626645d857199a43fe1e14475dfa8dca1192aec700d",
+		"searchTerms": [],
+		"slug": "11-mate-intl",
+		"title": "Level 11 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec48279aec",
+		"inactive": false,
+		"legacyFolderID": "Fd04cb9634cda04eeea68da860f1d099213a4081322396785a51042bb84a35520",
+		"searchTerms": [],
+		"slug": "11-mate-omni",
+		"title": "Level 11 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '11'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bff19bfb3",
+		"inactive": false,
+		"legacyFolderID": "F7424a891cc72ca20de613a0f8cb103aa9248892bf7354f8ee5994b0040dd7e76",
+		"searchTerms": [],
+		"slug": "11-mate",
+		"title": "Level 11 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '11'"
 	},
@@ -8511,7 +8784,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27c6b6c6e4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2e27a1b7cddb18fc51f2fac5823b62b16da16aa9096430cf412e09f0bb9bfbfa",
 		"searchTerms": [],
 		"slug": "11-xverse-omni",
@@ -8524,7 +8797,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d7e853f5d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F21e3258edbaf730c5480013df5fd4b2277539643032d5d691aa0a641bd306a05",
 		"searchTerms": [],
 		"slug": "11-xversex-intl",
@@ -8563,7 +8836,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2708702ea5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fa27715dd78044592f849dcebe62cbcdcc7705135bff3800118e8e597fb4a2209",
 		"searchTerms": [],
 		"slug": "11-xverse",
@@ -8648,6 +8921,45 @@
 		"title": "Level 11+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39f8db79e9",
+		"inactive": false,
+		"legacyFolderID": "F283c4e640c473e8df0a7cd8d8fdef324efee9c82f296150d20485c36e7b9ee5c",
+		"searchTerms": [],
+		"slug": "11p-mate-intl",
+		"title": "Level 11+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec1ec2bc3f",
+		"inactive": false,
+		"legacyFolderID": "F5a796e1ab1b6ac7e973e9b579b4b1d5ad4f9fff2ea8b5696deaae484e17fad06",
+		"searchTerms": [],
+		"slug": "11p-mate-omni",
+		"title": "Level 11+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '11+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b4f7158e1",
+		"inactive": false,
+		"legacyFolderID": "F00fa7ed9bf6500297f3d6d5e9e4e2a9fe3d383b8afa0c07d3562906344eeaea6",
+		"searchTerms": [],
+		"slug": "11p-mate",
+		"title": "Level 11+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '11+'"
 	},
@@ -8810,7 +9122,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27cb55a32a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Ffee9110d161fa009c01d9345ced29b250b3ba19b8a0290e87a0387a00e576b41",
 		"searchTerms": [],
 		"slug": "11p-xverse-omni",
@@ -8823,7 +9135,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d545d2e76",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2f010029e193be66257f4561541ff327bf5a024359ef4fd0d6182d6c640cde35",
 		"searchTerms": [],
 		"slug": "11p-xversex-intl",
@@ -8862,7 +9174,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27657568a0",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F8904dc7b23bb9a3e00e02c7c85ca77db7554240b240da394862ea5d073b5001f",
 		"searchTerms": [],
 		"slug": "11p-xverse",
@@ -8947,6 +9259,45 @@
 		"title": "Level 12 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca390df54b65",
+		"inactive": false,
+		"legacyFolderID": "F348f8eed015a55595fefde3a1a3e0cefa5a64aa5ec02fa810949f138ce7e48d6",
+		"searchTerms": [],
+		"slug": "12-mate-intl",
+		"title": "Level 12 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec6bafd795",
+		"inactive": false,
+		"legacyFolderID": "Ff33c54a0ee63c2c84e1e97f0084e84eb698478c2dba89f1acca54b651cbfd617",
+		"searchTerms": [],
+		"slug": "12-mate-omni",
+		"title": "Level 12 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '12'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b19a521b1",
+		"inactive": false,
+		"legacyFolderID": "Ff86529a96f3bcf127ee13fbe0dc9721641ccf863d275a6734651943ead8d3f90",
+		"searchTerms": [],
+		"slug": "12-mate",
+		"title": "Level 12 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '12'"
 	},
@@ -9109,7 +9460,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2735656f30",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F74e34a65b8067265eb6372ac22bfc47506db69a0d4d55aaaf7bd607bf04fbf57",
 		"searchTerms": [],
 		"slug": "12-xverse-omni",
@@ -9122,7 +9473,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38db0482111",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Faafed2efd314c61bfe45e8c8a69300378ebca4df75380d7982aeaf8468421a05",
 		"searchTerms": [],
 		"slug": "12-xversex-intl",
@@ -9161,7 +9512,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf275aa6164f",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fdb652b6a45268f1ecdbd64eb2c0ef59d3720dc2d39440a265cd02d424fb2cafd",
 		"searchTerms": [],
 		"slug": "12-xverse",
@@ -9246,6 +9597,45 @@
 		"title": "Level 12+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '12+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39370a1ecd",
+		"inactive": false,
+		"legacyFolderID": "Fe9eb3b8cc15dd71fcb731b61bd19e71201d775a5e926910b63111a4b730f29e5",
+		"searchTerms": [],
+		"slug": "12p-mate-intl",
+		"title": "Level 12+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '12+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec8f44d2df",
+		"inactive": false,
+		"legacyFolderID": "Fc2f7b728764729737106873746d40c334328e5a941955c865a7fbe5c16be5ecb",
+		"searchTerms": [],
+		"slug": "12p-mate-omni",
+		"title": "Level 12+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '12+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9ba0690f92",
+		"inactive": false,
+		"legacyFolderID": "F0c6882e6431802857c2cad2293f3a38f60fbdb2ac4911a7caaff4af63178925b",
+		"searchTerms": [],
+		"slug": "12p-mate",
+		"title": "Level 12+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '12+'"
 	},
@@ -9408,7 +9798,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2765cde42d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F25bc85d7a459a8d965a1f2e172470afe079bbc5334cb40aabfadb74923f16ad8",
 		"searchTerms": [],
 		"slug": "12p-xverse-omni",
@@ -9421,7 +9811,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d1315217c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fea7f965d7ecee5d5668a58c64fd4dfb1ddc6f8636ab710283298a88db4b94802",
 		"searchTerms": [],
 		"slug": "12p-xversex-intl",
@@ -9460,7 +9850,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf270eb84616",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb61d80c8da317a07ae548a04b354c9938d3ae3f61f7e327f826bb8386632032e",
 		"searchTerms": [],
 		"slug": "12p-xverse",
@@ -9545,6 +9935,45 @@
 		"title": "Level 13 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca394cb5a03b",
+		"inactive": false,
+		"legacyFolderID": "F3fadf92d620ba83935dabb958826c550d01c69e90aa5b067abea6a1162fcfe50",
+		"searchTerms": [],
+		"slug": "13-mate-intl",
+		"title": "Level 13 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ecf67e94a7",
+		"inactive": false,
+		"legacyFolderID": "F8a74aa2a0efb74273bd27f9b9e0364b04456b3475eb4e38f5101eea48af739b6",
+		"searchTerms": [],
+		"slug": "13-mate-omni",
+		"title": "Level 13 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '13'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b1ab58d53",
+		"inactive": false,
+		"legacyFolderID": "F99badbdc3bfc400ba23c758df9f45232297799ad383f3bd546fdb5a2a9fbf8f8",
+		"searchTerms": [],
+		"slug": "13-mate",
+		"title": "Level 13 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '13'"
 	},
@@ -9707,7 +10136,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2734cc98f4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5baf2261e0dd1951a23b829904e64b3432873d154f61997f7008bbff2c5ff2bd",
 		"searchTerms": [],
 		"slug": "13-xverse-omni",
@@ -9720,7 +10149,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38df9a4bba3",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F606bfab292fe5e9a48b6948164cc910efeac633a442bb0c85fa97920d72ef5eb",
 		"searchTerms": [],
 		"slug": "13-xversex-intl",
@@ -9759,7 +10188,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27d4b70a89",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F15084c19e21332976e1f5faa8b6c2c94aeb8d37b9cc2880dd4828be5895e7b76",
 		"searchTerms": [],
 		"slug": "13-xverse",
@@ -9844,6 +10273,45 @@
 		"title": "Level 13+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '13+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39abfed78b",
+		"inactive": false,
+		"legacyFolderID": "F3cf9fc8d1a87415d2d0c1c11497c2560cb419af852ff2e515c8a3d2bd086075d",
+		"searchTerms": [],
+		"slug": "13p-mate-intl",
+		"title": "Level 13+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '13+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec2172cc38",
+		"inactive": false,
+		"legacyFolderID": "F6d573581c10eff43035bb2c97bbbd6e02712668b85683cab3659cdf86252d09e",
+		"searchTerms": [],
+		"slug": "13p-mate-omni",
+		"title": "Level 13+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '13+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bf92e220d",
+		"inactive": false,
+		"legacyFolderID": "F4c7d5cd32ad35e8407117d1bfb364100d61b2f5de19642a1da05dfd07b6bf6a7",
+		"searchTerms": [],
+		"slug": "13p-mate",
+		"title": "Level 13+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '13+'"
 	},
@@ -10006,7 +10474,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27c8af30d7",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F4b84a2f010cbc4a5d4ea86ad8bc3d5044bded033886c4880e834d95d689077f3",
 		"searchTerms": [],
 		"slug": "13p-xverse-omni",
@@ -10019,7 +10487,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d4d2a8f9f",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F32baaf1d05c9c04a13bcfa9fb3140a0441572a1257814a6db51c31792e94b11e",
 		"searchTerms": [],
 		"slug": "13p-xversex-intl",
@@ -10058,7 +10526,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27de2bcf32",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F4edb32d69ea6044883da052dd8fdb79880b5145d152c3467b949c7e76326532f",
 		"searchTerms": [],
 		"slug": "13p-xverse",
@@ -10143,6 +10611,45 @@
 		"title": "Level 14 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3928664e50",
+		"inactive": false,
+		"legacyFolderID": "F8e75197c14a69dbb9c3320316e58276ea5d4f70f60934ddf8c46d64d72ca6654",
+		"searchTerms": [],
+		"slug": "14-mate-intl",
+		"title": "Level 14 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ecb154eaac",
+		"inactive": false,
+		"legacyFolderID": "F660397d37c92df43278d0c0bde768eaeb02cc0059f856876a635fbd9e3d3ae54",
+		"searchTerms": [],
+		"slug": "14-mate-omni",
+		"title": "Level 14 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '14'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bea3c2d21",
+		"inactive": false,
+		"legacyFolderID": "Fc81a95b4ac9fc1bee278da21377d34d27f0bbe9b7e07c350f2f97316d9cc8734",
+		"searchTerms": [],
+		"slug": "14-mate",
+		"title": "Level 14 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '14'"
 	},
@@ -10305,7 +10812,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27f5a3c3d2",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F14a30424b9c340ed14ddd1cfbb1d29a141c2d19f19b81ee72883315a6c76ba8c",
 		"searchTerms": [],
 		"slug": "14-xverse-omni",
@@ -10318,7 +10825,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d5e5cc4a5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7d137f460e821299ad548693c87c7614b549d91221ad99ee265bc481b31d134f",
 		"searchTerms": [],
 		"slug": "14-xversex-intl",
@@ -10357,7 +10864,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf279bfa5c0e",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fa7d0693da3b654e880c35dd390c367b80ff83e16f2057e02e1034d96370dbe30",
 		"searchTerms": [],
 		"slug": "14-xverse",
@@ -10442,6 +10949,45 @@
 		"title": "Level 14+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '14+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca398ba45890",
+		"inactive": false,
+		"legacyFolderID": "Fae398b86256be0b5d080dc9dba68a52140c39f91cff16aa4a442e4f348703afe",
+		"searchTerms": [],
+		"slug": "14p-mate-intl",
+		"title": "Level 14+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '14+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ecc68741ed",
+		"inactive": false,
+		"legacyFolderID": "F6a472ca0c07f7944764f10fc75144387ce214d4a4ed8db88c6eb3ac1b2c16c42",
+		"searchTerms": [],
+		"slug": "14p-mate-omni",
+		"title": "Level 14+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '14+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b0fc2ab0d",
+		"inactive": false,
+		"legacyFolderID": "F28bca1183bcbcdb8dfcc4f11872ff8596d3be0db925d3716dd720e436aa4b3a8",
+		"searchTerms": [],
+		"slug": "14p-mate",
+		"title": "Level 14+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '14+'"
 	},
@@ -10604,7 +11150,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27a8cfafeb",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F245da7e6646724753e98d52b00c7d26a9ec23efe892a7b4f199f50ca7f8bd630",
 		"searchTerms": [],
 		"slug": "14p-xverse-omni",
@@ -10617,7 +11163,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d7d1c14b1",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fad07d35afa8aa489bfd0e759a532f98a6605a5568926b539d9b00e9e2d84e97a",
 		"searchTerms": [],
 		"slug": "14p-xversex-intl",
@@ -10656,7 +11202,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27d4932034",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb8dd20c5b26b296bab04c0ec33435cbae06eb073b78ead6270a9d037bb714cd8",
 		"searchTerms": [],
 		"slug": "14p-xverse",
@@ -10741,6 +11287,45 @@
 		"title": "Level 15 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca397b22039f",
+		"inactive": false,
+		"legacyFolderID": "Ffa88c8bb6cb4b78708de4829a04d42a1dd6243b123e8a012d5e8bd518ebb06d2",
+		"searchTerms": [],
+		"slug": "15-mate-intl",
+		"title": "Level 15 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec29e7a6d6",
+		"inactive": false,
+		"legacyFolderID": "Fccdf9447639061a0ce134c1dcd0b56d4b38c7a9515bab8d30e67b67961f46cb9",
+		"searchTerms": [],
+		"slug": "15-mate-omni",
+		"title": "Level 15 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '15'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b173b3652",
+		"inactive": false,
+		"legacyFolderID": "F0d19dbd57520038a6c0d4db029e8f440ba707a1b5f1f7736c82767abdba46db9",
+		"searchTerms": [],
+		"slug": "15-mate",
+		"title": "Level 15 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '15'"
 	},
@@ -10903,7 +11488,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27bca2022b",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0d0d4f8730f76190fb730075affaa7a5b8276e09a93435d81acacb92393a1ca6",
 		"searchTerms": [],
 		"slug": "15-xverse-omni",
@@ -10916,7 +11501,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38dcbef93e1",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd638681ec631f679030a0210f376256935c1a6f43fddd8853628f2a40604736f",
 		"searchTerms": [],
 		"slug": "15-xversex-intl",
@@ -10955,7 +11540,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf277c6535ae",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fb838946527662355bfdf9f5ccf446db994f4eb0945e46a7098e41c31e2cb23c3",
 		"searchTerms": [],
 		"slug": "15-xverse",
@@ -11040,6 +11625,45 @@
 		"title": "Level 15+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '15+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39bf1e8f20",
+		"inactive": false,
+		"legacyFolderID": "Fb0af0f2cd504f389455f76245ec413cb1726f9489c8e376177bf0fc1fddfea48",
+		"searchTerms": [],
+		"slug": "15p-mate-intl",
+		"title": "Level 15+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '15+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec24e12be8",
+		"inactive": false,
+		"legacyFolderID": "F01ec89fbf20fd9adb25fadf9e06b3accf938bac60363b4e9c3cab43ffebfed5f",
+		"searchTerms": [],
+		"slug": "15p-mate-omni",
+		"title": "Level 15+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '15+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b72593cf0",
+		"inactive": false,
+		"legacyFolderID": "Fa327bdf3c155a03bb5b604c110fe4ccc160707cf370f09af622e486a9f966a7c",
+		"searchTerms": [],
+		"slug": "15p-mate",
+		"title": "Level 15+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '15+'"
 	},
@@ -11202,7 +11826,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27481fd3e5",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F124173f84369a68925522f74bd8a0355c04a87a0826f7f91d9ce1c21d498b436",
 		"searchTerms": [],
 		"slug": "15p-xverse-omni",
@@ -11215,7 +11839,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d38447506",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5bbc22eaa30ef98e60f083a06c099a9555fc1d3bb55085e756fe7c25a1b82dde",
 		"searchTerms": [],
 		"slug": "15p-xversex-intl",
@@ -11254,7 +11878,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf274229136a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5f1f2f243c69ac61afcc2fca47dac27b18017882c9b965bab7c420c0cc6e23e0",
 		"searchTerms": [],
 		"slug": "15p-xverse",
@@ -11266,8 +11890,47 @@
 	},
 	{
 		"game": "chunithm",
-		"id": "F19e3ea332a16b1cfd30",
+		"id": "F1a15f1fca397c3949a0",
 		"inactive": false,
+		"legacyFolderID": "F280ec812048582fc917d8ce8390e44a4d6b8ab31c4ebfa9948445fc2b74b6556",
+		"searchTerms": [],
+		"slug": "16-mate-intl",
+		"title": "Level 16 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec876e4a53",
+		"inactive": false,
+		"legacyFolderID": "F11c9b121cf935d6437ec26a46ea2d38529d4519b0dc42e492f700e342d57a116",
+		"searchTerms": [],
+		"slug": "16-mate-omni",
+		"title": "Level 16 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bf188889e",
+		"inactive": false,
+		"legacyFolderID": "Fe51abb715ff306cf95f5acf6e4d9b7208971cfdc752d152eaee78bf7c84f29a7",
+		"searchTerms": [],
+		"slug": "16-mate",
+		"title": "Level 16 (Mate)",
+		"versionFilter": [
+			"mate"
+		],
+		"where": "chart.level = '16'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F19e3ea332a16b1cfd30",
+		"inactive": true,
 		"legacyFolderID": "Fcba47513351918a76f87a7d8742e480a39bc6ff0c3dc15eadeecf2537924e654",
 		"searchTerms": [],
 		"slug": "16-xversex-intl",
@@ -11378,6 +12041,45 @@
 		"title": "Level 2 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39fe9b865b",
+		"inactive": false,
+		"legacyFolderID": "Fed7ab8aa5f980fe9082aba1da279ba59d20f63f000601e15ee35e0834e639e20",
+		"searchTerms": [],
+		"slug": "2-mate-intl",
+		"title": "Level 2 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb90e29a79",
+		"inactive": false,
+		"legacyFolderID": "Fffbca5051841371a7d575fe57462a55c6c476f1c94e45c278853400c84f64c42",
+		"searchTerms": [],
+		"slug": "2-mate-omni",
+		"title": "Level 2 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '2'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9a55110065",
+		"inactive": false,
+		"legacyFolderID": "Ff569de4f27fa599e06686106e0d4a2b0f467cd8d2b3e5e456b9eedd46a539e63",
+		"searchTerms": [],
+		"slug": "2-mate",
+		"title": "Level 2 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '2'"
 	},
@@ -11540,7 +12242,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2726a561f3",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fe006089cfc89eb7b2b1fe2c6342e3d9200c43817c846d93091898b29334aeec1",
 		"searchTerms": [],
 		"slug": "2-xverse-omni",
@@ -11553,7 +12255,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d657fa85a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F72f41c91fa5a8f3ee48243195b0440e5100f21794b03d285b10f42f9f88abcb1",
 		"searchTerms": [],
 		"slug": "2-xversex-intl",
@@ -11592,7 +12294,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27131b0385",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F139404c3e1e346510c9b10389e532caef17d03a4b94d657d989a357a99e78236",
 		"searchTerms": [],
 		"slug": "2-xverse",
@@ -11677,6 +12379,45 @@
 		"title": "Level 3 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39b660eb2e",
+		"inactive": false,
+		"legacyFolderID": "F91712193a61579f6a1e615a98df929c1a9c771c2bb4097e86ca2d0260ce8e59d",
+		"searchTerms": [],
+		"slug": "3-mate-intl",
+		"title": "Level 3 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ebf6d4041c",
+		"inactive": false,
+		"legacyFolderID": "F2049824ded6f4f0ef9dc42430fa1e40dc4bd22e7013af7cdd417ec03e33f312b",
+		"searchTerms": [],
+		"slug": "3-mate-omni",
+		"title": "Level 3 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '3'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9a6220b736",
+		"inactive": false,
+		"legacyFolderID": "Fa3790e79c7cfa04b00145d7a4001dbc14840fe40e87ccc2059ce767d6cdce237",
+		"searchTerms": [],
+		"slug": "3-mate",
+		"title": "Level 3 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '3'"
 	},
@@ -11839,7 +12580,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf278eb74ae4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F26199ec75c91707bdf2c1bf6e99d3e028f9e2a2d130ca0868b703c92028def59",
 		"searchTerms": [],
 		"slug": "3-xverse-omni",
@@ -11852,7 +12593,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d1a2100fe",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5f6bc79ced64f3ee70ae45dcf32b563fb0f1521f2b3238f63025434fdba039b5",
 		"searchTerms": [],
 		"slug": "3-xversex-intl",
@@ -11891,7 +12632,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27848aa874",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0a416172c558455b1eca4f40d19e3fb3b19c4a4d119eeb36bed0debb00944567",
 		"searchTerms": [],
 		"slug": "3-xverse",
@@ -11976,6 +12717,45 @@
 		"title": "Level 4 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca394171f641",
+		"inactive": false,
+		"legacyFolderID": "F29ac313f3fa8ce41ae1902642d32ef6f1f0a9adcd3de62af30db26fa94ab4d7a",
+		"searchTerms": [],
+		"slug": "4-mate-intl",
+		"title": "Level 4 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb5ae3d691",
+		"inactive": false,
+		"legacyFolderID": "Fdb114ec9f58a5c6562d43643817c7f2e647e0cc9cc219d7b985c4be110632366",
+		"searchTerms": [],
+		"slug": "4-mate-omni",
+		"title": "Level 4 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '4'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9a474b3d5d",
+		"inactive": false,
+		"legacyFolderID": "Fb3052fbd6e16b9637c750ff941bc9db4e111912079982a269b8bf5ec1d2db65b",
+		"searchTerms": [],
+		"slug": "4-mate",
+		"title": "Level 4 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '4'"
 	},
@@ -12138,7 +12918,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27f063cf82",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5377638cdb94810566c0997a7dc9017f08f9ff717037c9d097296bfa19663f8f",
 		"searchTerms": [],
 		"slug": "4-xverse-omni",
@@ -12151,7 +12931,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d2b10637a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F60105b126c3008d8820b4033973e7bc1e8cb775b0bbd68f6c1e532dc6ad48efd",
 		"searchTerms": [],
 		"slug": "4-xversex-intl",
@@ -12190,7 +12970,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf270943f4e3",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F50e5a11bf7d0cbea739ed30bef9094c9e24a34043e509eda4d13f68f7e250529",
 		"searchTerms": [],
 		"slug": "4-xverse",
@@ -12275,6 +13055,45 @@
 		"title": "Level 5 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39f98e3a82",
+		"inactive": false,
+		"legacyFolderID": "F1296ea322bbc4df9771e2cabb3d988f7364188cfbbe0d802f7da8eeaef680937",
+		"searchTerms": [],
+		"slug": "5-mate-intl",
+		"title": "Level 5 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb0560c1cd",
+		"inactive": false,
+		"legacyFolderID": "F19ba3b29e46f2dd4313fb78db626407b0cbd6e140a3a2275e136fb6f0be1202c",
+		"searchTerms": [],
+		"slug": "5-mate-omni",
+		"title": "Level 5 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '5'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9a924986c9",
+		"inactive": false,
+		"legacyFolderID": "F905bd655668923636882f942212e093a34f5cb7fe0f0e811dd9d9785bd347dbf",
+		"searchTerms": [],
+		"slug": "5-mate",
+		"title": "Level 5 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '5'"
 	},
@@ -12437,7 +13256,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27b95cc096",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5c13a20a45a523bbb351ddffeb08ba66199f4479118e23896969584f038ea119",
 		"searchTerms": [],
 		"slug": "5-xverse-omni",
@@ -12450,7 +13269,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38dbc1d2a57",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F34d3c213fda72df0e11ded23e42b57ff55f37ddef0ff1b854862d27a85dc660f",
 		"searchTerms": [],
 		"slug": "5-xversex-intl",
@@ -12489,7 +13308,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2754d64434",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F06bddb855c74f0f0b06ab9623a86521104f7b6918b1416bf83927490c5e3f6d9",
 		"searchTerms": [],
 		"slug": "5-xverse",
@@ -12574,6 +13393,45 @@
 		"title": "Level 6 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca391f5498b6",
+		"inactive": false,
+		"legacyFolderID": "F2247054ef30b44028b1c70da3d9dd6b74478a46e0d6d4e048377f21bb89960f2",
+		"searchTerms": [],
+		"slug": "6-mate-intl",
+		"title": "Level 6 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ebbb6ba69e",
+		"inactive": false,
+		"legacyFolderID": "F9d89b7e94bc5a04eb3a1a203a06e1c88af60fabb2396d79b5c975fe6669432f5",
+		"searchTerms": [],
+		"slug": "6-mate-omni",
+		"title": "Level 6 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '6'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9a4c4fd984",
+		"inactive": false,
+		"legacyFolderID": "F5024817bfcc4a14141fed1e363127b398571df52d13c146332269eb13e38c2ab",
+		"searchTerms": [],
+		"slug": "6-mate",
+		"title": "Level 6 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '6'"
 	},
@@ -12736,7 +13594,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27be662765",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F54735bff37cad7724f519551a2ee08bebff164f2b07f767c9e158eafc1ab33af",
 		"searchTerms": [],
 		"slug": "6-xverse-omni",
@@ -12749,7 +13607,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38df9353cd8",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F5ac4f99c7f376736657e31ed5f4d7906a3271d438feabb7043cd8ad104ec7be2",
 		"searchTerms": [],
 		"slug": "6-xversex-intl",
@@ -12788,7 +13646,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf273bb6b1ff",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd38afe63b64bcfe163f92900fe3b98904fd65c457e209207a5dae4e9058e4283",
 		"searchTerms": [],
 		"slug": "6-xverse",
@@ -12873,6 +13731,45 @@
 		"title": "Level 7 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3938ae41c2",
+		"inactive": false,
+		"legacyFolderID": "Fe976baccf84d37d72a72fc5c44b6d9b75e6c7bf4b5d15a87dd9aae14550e3823",
+		"searchTerms": [],
+		"slug": "7-mate-intl",
+		"title": "Level 7 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb76723bae",
+		"inactive": false,
+		"legacyFolderID": "F066ba6b107da157cde054a96331fce99f3f6a3f441fd32452b43f12ffe0c98f8",
+		"searchTerms": [],
+		"slug": "7-mate-omni",
+		"title": "Level 7 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '7'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b814f1962",
+		"inactive": false,
+		"legacyFolderID": "F75fdfce280108cf9efa67caf0c66609eb55c1ef7db1f560cf5326faaded7d3f2",
+		"searchTerms": [],
+		"slug": "7-mate",
+		"title": "Level 7 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '7'"
 	},
@@ -13035,7 +13932,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf276675caf4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F24633285c3dfadf192819fbe24510d30e570910fecb89d84d0be1f443b8baee6",
 		"searchTerms": [],
 		"slug": "7-xverse-omni",
@@ -13048,7 +13945,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38df6a0c409",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd1af559fd214f76e4ea6c87b90a9d31ef11c9cdadc015a93cfbc4d84d9ac4833",
 		"searchTerms": [],
 		"slug": "7-xversex-intl",
@@ -13087,7 +13984,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf277847ff8f",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F4d0778cfb84315310c148b546b9e3407b9c9ba824e490761cccc7320867c927b",
 		"searchTerms": [],
 		"slug": "7-xverse",
@@ -13172,6 +14069,45 @@
 		"title": "Level 7+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3901bbdb55",
+		"inactive": false,
+		"legacyFolderID": "F8e7221f1ef8d93f389a57142becaa9ec0bfae02ea4245e33d99a7d35350214ac",
+		"searchTerms": [],
+		"slug": "7p-mate-intl",
+		"title": "Level 7+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb7cf6b3f1",
+		"inactive": false,
+		"legacyFolderID": "F8955b4e4c761762937974de2e0d10c932202eb385a47e40d980f81348b5345f0",
+		"searchTerms": [],
+		"slug": "7p-mate-omni",
+		"title": "Level 7+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '7+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b274a7565",
+		"inactive": false,
+		"legacyFolderID": "F301911bac9d31eeb190dea9d93286477d089a15116a3fbf92f09987e1c63ef8b",
+		"searchTerms": [],
+		"slug": "7p-mate",
+		"title": "Level 7+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '7+'"
 	},
@@ -13334,7 +14270,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf278f36dba0",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F0f69bd36549a23eca398abc399eb3633f7088fe5698c3fdc879044ada5ab2a33",
 		"searchTerms": [],
 		"slug": "7p-xverse-omni",
@@ -13347,7 +14283,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d79a03619",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F2aae0124c8b8a615cbd69d42e55bd48024d0560e3961e8bff15b7ffaf8d13931",
 		"searchTerms": [],
 		"slug": "7p-xversex-intl",
@@ -13386,7 +14322,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27aa030ecf",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd2bab4d3785eddb1c0658c722bab8a2642f82d8d90f56540a7ea4c79823af579",
 		"searchTerms": [],
 		"slug": "7p-xverse",
@@ -13471,6 +14407,45 @@
 		"title": "Level 8 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39a8423bef",
+		"inactive": false,
+		"legacyFolderID": "Ff3a3b25eed0e906875a8ae6d2d3e1a995dd387334ff33f962c1e79709e944d53",
+		"searchTerms": [],
+		"slug": "8-mate-intl",
+		"title": "Level 8 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb5be3ad37",
+		"inactive": false,
+		"legacyFolderID": "F2ddc9b7755a5161d86fa24af4a194a49184342c54a1db2fa602d21fc7ea2e38b",
+		"searchTerms": [],
+		"slug": "8-mate-omni",
+		"title": "Level 8 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '8'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b513fd015",
+		"inactive": false,
+		"legacyFolderID": "Fdfe4b3c01d131ad5d0aa7bad21e3520661a6607b34a394206812b031e12ef4d7",
+		"searchTerms": [],
+		"slug": "8-mate",
+		"title": "Level 8 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '8'"
 	},
@@ -13633,7 +14608,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2747141c0c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fddd14e10560db50561fdaddbd01a175855b922f4fa9510a365c5cc9d08c7c311",
 		"searchTerms": [],
 		"slug": "8-xverse-omni",
@@ -13646,7 +14621,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38da84ccc88",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F26d428a90c674a18ebdaa8106094dd2a05aa0c23818feb0cbb09a46546b336ca",
 		"searchTerms": [],
 		"slug": "8-xversex-intl",
@@ -13685,7 +14660,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2729d1938a",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Ff943cdbcd5e3ef9dbf82bd0a6bf83997878d521477e4a1c24279155ea8f90742",
 		"searchTerms": [],
 		"slug": "8-xverse",
@@ -13770,6 +14745,45 @@
 		"title": "Level 8+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '8+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca396e2381bc",
+		"inactive": false,
+		"legacyFolderID": "F9e59004bf554b6a82d60ee3bffb71832c75b2bc2336f05e633b897f2fbace37a",
+		"searchTerms": [],
+		"slug": "8p-mate-intl",
+		"title": "Level 8+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '8+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ebd8862134",
+		"inactive": false,
+		"legacyFolderID": "F4522532b1ec58cf7d98a816a6c4a863f80f188c61e39c1ae083565b37be71d55",
+		"searchTerms": [],
+		"slug": "8p-mate-omni",
+		"title": "Level 8+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '8+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bfe3bb787",
+		"inactive": false,
+		"legacyFolderID": "Fdafafbddcaa633bebcd4b07461be5d65ebdcc074308fe5e80c64b727edad277b",
+		"searchTerms": [],
+		"slug": "8p-mate",
+		"title": "Level 8+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '8+'"
 	},
@@ -13932,7 +14946,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27168a37c4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fc468ce4cbe28fb9767a1a0962673ef01cd3f6190aac88462896b4d0b9fa8d9c0",
 		"searchTerms": [],
 		"slug": "8p-xverse-omni",
@@ -13945,7 +14959,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d3698d5d4",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F24d5ec0095262d4246dfa8804d1111df045a41520b0df11c63fbeb42aaed0209",
 		"searchTerms": [],
 		"slug": "8p-xversex-intl",
@@ -13984,7 +14998,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf274b067fb0",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9bdbb4910f9706a2a8c347e6016119ee8b153f12d7408bb2ee999b24df16a871",
 		"searchTerms": [],
 		"slug": "8p-xverse",
@@ -14069,6 +15083,45 @@
 		"title": "Level 9 (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3951773654",
+		"inactive": false,
+		"legacyFolderID": "F32daa7b42f654b6280d151bf84f00887eb1412556e0e54b9e9cfddd6d7d2436a",
+		"searchTerms": [],
+		"slug": "9-mate-intl",
+		"title": "Level 9 (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1eb7c0abc66",
+		"inactive": false,
+		"legacyFolderID": "Fdb491b6f450234b1c47b60e3db6b80ce5fa4dbf94400570f3cc972475024eabc",
+		"searchTerms": [],
+		"slug": "9-mate-omni",
+		"title": "Level 9 (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '9'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9bb9253617",
+		"inactive": false,
+		"legacyFolderID": "F3b46ccf5ff88bde84fc3cd6649b2432f8eb646c61e316d8fa0a3f6cf9216277d",
+		"searchTerms": [],
+		"slug": "9-mate",
+		"title": "Level 9 (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '9'"
 	},
@@ -14231,7 +15284,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27c19526a8",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F15eb5fb557bd60d06aa79ef4014455a021178eb8a4b638cf4636a97de0a2bbc1",
 		"searchTerms": [],
 		"slug": "9-xverse-omni",
@@ -14244,7 +15297,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d99c9318d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd2160b4d66198e290952f5a3a98387f68bf67a9740e812ae0b4538977aefda10",
 		"searchTerms": [],
 		"slug": "9-xversex-intl",
@@ -14283,7 +15336,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf279a0ead47",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F8682445afed83b8ed7595629415ed705867f133f9e92345e1662232ad0e13961",
 		"searchTerms": [],
 		"slug": "9-xverse",
@@ -14368,6 +15421,45 @@
 		"title": "Level 9+ (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.level = '9+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca39e0274919",
+		"inactive": false,
+		"legacyFolderID": "F1600bd58b2b4eccee4286598e341a2746c20dcbabbd39131d6ede6181953490d",
+		"searchTerms": [],
+		"slug": "9p-mate-intl",
+		"title": "Level 9+ (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.level = '9+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec02653ae2",
+		"inactive": false,
+		"legacyFolderID": "F241470fdbcd515d7feb828e1d27aae8091af9ebe20580528ac67c274f546b3bf",
+		"searchTerms": [],
+		"slug": "9p-mate-omni",
+		"title": "Level 9+ (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.level = '9+'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b64de6d8e",
+		"inactive": false,
+		"legacyFolderID": "Fc7ca6684fcbee0078e095c24a6b70ba45655f202f454466cbeb6caf5e7cb5070",
+		"searchTerms": [],
+		"slug": "9p-mate",
+		"title": "Level 9+ (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.level = '9+'"
 	},
@@ -14530,7 +15622,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27ce6da07b",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F7c3ded39712c123fbc009b2ed2e7e0192e109e5d71a8988afc4ca04bc9a7e49d",
 		"searchTerms": [],
 		"slug": "9p-xverse-omni",
@@ -14543,7 +15635,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d4b622211",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fd85bb3a0573d701a915f8a0e1906d00c5f2394e0613e47906cd4ff4d15bead29",
 		"searchTerms": [],
 		"slug": "9p-xversex-intl",
@@ -14582,7 +15674,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27294a1bd6",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "Fe6f718c84cf23f0b344de37e30f86e01c9708a2ae9d6c13f97a6542a2bc6671b",
 		"searchTerms": [],
 		"slug": "9p-xverse",
@@ -14667,6 +15759,45 @@
 		"title": "MASTER (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.difficulty = 'MASTER'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3af12ee4e7",
+		"inactive": false,
+		"legacyFolderID": "F832550290f40b29dbb3872cdcd39848ca3a6f5389403b862edcfd4f9d7d4d378",
+		"searchTerms": [],
+		"slug": "master-mate-intl",
+		"title": "MASTER (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty = 'MASTER'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec56743db3",
+		"inactive": false,
+		"legacyFolderID": "Fc58dc74f472cb5192e8e37024d002624031d93a112a5cbe8634b525797266e30",
+		"searchTerms": [],
+		"slug": "master-mate-omni",
+		"title": "MASTER (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty = 'MASTER'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b6e2995f0",
+		"inactive": false,
+		"legacyFolderID": "F056cd099505406c515ac35a87966395fffe42edd2879b033ec195582ac6dc454",
+		"searchTerms": [],
+		"slug": "master-mate",
+		"title": "MASTER (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.difficulty = 'MASTER'"
 	},
@@ -14816,7 +15947,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf275c41c32d",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F9e47bf5304b86844e274859134c54236dbf9a6314b8eb9d35aa2cfa0b5640ead",
 		"searchTerms": [],
 		"slug": "master-xverse-omni",
@@ -14829,7 +15960,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d76989afe",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F8e0da9418524adebca50c8be8d756653416c99657630c573806ad8e975e3b218",
 		"searchTerms": [],
 		"slug": "master-xversex-intl",
@@ -14868,7 +15999,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27aabd54d1",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F14463ead732fa6f8bb8d050fd439f9823dbd77aa700c1a17436efe92565b29e5",
 		"searchTerms": [],
 		"slug": "master-xverse",
@@ -14901,6 +16032,45 @@
 		"title": "MASTER+ULTIMA (LUMINOUS PLUS)",
 		"versionFilter": [
 			"luminousplus"
+		],
+		"where": "chart.difficulty IN ('MASTER', 'ULTIMA')"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3aa82b9999",
+		"inactive": false,
+		"legacyFolderID": "F3933aae94bdbdbb659ad3fee989fdf780b60f1dc1155e184f334cc1c57e8420b",
+		"searchTerms": [],
+		"slug": "master-ultima-mate-intl",
+		"title": "MASTER+ULTIMA (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty IN ('MASTER', 'ULTIMA')"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ecc6c337e4",
+		"inactive": false,
+		"legacyFolderID": "F644b574843ae575e2e975f2a0e5469dc08c6feffb65b48936115c33d45fe1fc6",
+		"searchTerms": [],
+		"slug": "master-ultima-mate-omni",
+		"title": "MASTER+ULTIMA (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty IN ('MASTER', 'ULTIMA')"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b1ade1dbf",
+		"inactive": false,
+		"legacyFolderID": "Fa02da1fae6018eb8f6c04734f1680b0bde4a24f497c8a663d59a3fbb514df659",
+		"searchTerms": [],
+		"slug": "master-ultima-mate",
+		"title": "MASTER+ULTIMA (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.difficulty IN ('MASTER', 'ULTIMA')"
 	},
@@ -14959,7 +16129,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf272513cf63",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F09392625378737b320168c8e1554162dfa249e938366b49836bd5cd0df2e7ef4",
 		"searchTerms": [],
 		"slug": "master-ultima-xverse-omni",
@@ -14972,7 +16142,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d56770edc",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F364f7a7e028a84c7a958623aa248b150ebc864aa5fbc845d5e2eb1a5cef11767",
 		"searchTerms": [],
 		"slug": "master-ultima-xversex-intl",
@@ -15011,7 +16181,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf279eb4f882",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F4e83259002f2ebc240e7e655644eeafc86917e1db0135643f269dab8a94a7a02",
 		"searchTerms": [],
 		"slug": "master-ultima-xverse",
@@ -15096,6 +16266,45 @@
 		"title": "ULTIMA (LUMINOUS)",
 		"versionFilter": [
 			"luminous"
+		],
+		"where": "chart.difficulty = 'ULTIMA'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3a9e846797",
+		"inactive": false,
+		"legacyFolderID": "F0c5c28964a7afd0ce97fd546b83cf333de4731d0e1f68b66970191de55c77e73",
+		"searchTerms": [],
+		"slug": "ultima-mate-intl",
+		"title": "ULTIMA (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "chart.difficulty = 'ULTIMA'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ecef2063f1",
+		"inactive": false,
+		"legacyFolderID": "Faa8b18cc35422fc8b3557cbad60268ad92131e41e8e83d99f195615db9b9a676",
+		"searchTerms": [],
+		"slug": "ultima-mate-omni",
+		"title": "ULTIMA (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "chart.difficulty = 'ULTIMA'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b29f90372",
+		"inactive": false,
+		"legacyFolderID": "F4d58c6d84969fd26d0219113e8c1d53139266fc4df23f07a398e34903896f9a5",
+		"searchTerms": [],
+		"slug": "ultima-mate",
+		"title": "ULTIMA (Mate)",
+		"versionFilter": [
+			"mate"
 		],
 		"where": "chart.difficulty = 'ULTIMA'"
 	},
@@ -15245,7 +16454,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf2744ffafa2",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F660ce2d42c07dbcb642ac028464813a5038955afa9a873e58ea072ac5f9dcfaf",
 		"searchTerms": [],
 		"slug": "ultima-xverse-omni",
@@ -15258,7 +16467,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3343c38d0241fbb8",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F714deb8914270717a5056f73dc39e38f234a4cec1f6df65fac543fdaf7a56c20",
 		"searchTerms": [],
 		"slug": "ultima-xversex-intl",
@@ -15297,7 +16506,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19d35f0cf27aff7befc",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F205e23b63ffede2e7cc8a8ad71a270316bec837be31401393ab6250329479f22",
 		"searchTerms": [],
 		"slug": "ultima-xverse",
@@ -15306,6 +16515,45 @@
 			"xverse"
 		],
 		"where": "chart.difficulty = 'ULTIMA'"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fca3a299db8e7",
+		"inactive": false,
+		"legacyFolderID": "F831fd98ab1432a21e414109e27278a316ee20386d0334997b81fb993c69e1c5d",
+		"searchTerms": [],
+		"slug": "worlds-end-mate-intl",
+		"title": "WORLD'S END (Mate International)",
+		"versionFilter": [
+			"mate-intl"
+		],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1ff1ec0b867057",
+		"inactive": false,
+		"legacyFolderID": "F0d99e83baec32820bc8c5fe5d91d858c4c3134413c55b08cdd0988dd81b0b1d1",
+		"searchTerms": [],
+		"slug": "worlds-end-mate-omni",
+		"title": "WORLD'S END (Mate Omnimix)",
+		"versionFilter": [
+			"mate-omni"
+		],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
+	},
+	{
+		"game": "chunithm",
+		"id": "F1a15f1fab9b622cec68",
+		"inactive": false,
+		"legacyFolderID": "F75a497356587b0cc3fca1fda84d613f0e92d30a4657cb3060012f8e3ebc8184d",
+		"searchTerms": [],
+		"slug": "worlds-end-mate",
+		"title": "WORLD'S END (Mate)",
+		"versionFilter": [
+			"mate"
+		],
+		"where": "((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))"
 	},
 	{
 		"game": "chunithm",
@@ -15362,7 +16610,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3ea688c9aca70727",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F12ad787aff38d2eff1c509b2edd1fdfd903b5128b7a99657e030e8e275c720a8",
 		"searchTerms": [],
 		"slug": "worlds-end-xverse-omni",
@@ -15375,7 +16623,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3ea332a248cb1e4c",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F14d53464ca145adf7896d2ef3da5c96236838b826cb6e88ff251de2ba5938ceb",
 		"searchTerms": [],
 		"slug": "worlds-end-xversex-intl",
@@ -15414,7 +16662,7 @@
 	{
 		"game": "chunithm",
 		"id": "F19e3ea67b46f0df934e",
-		"inactive": false,
+		"inactive": true,
 		"legacyFolderID": "F692942a465068bf9aaa14030a9cb6656220920ce4ef6e2471680a5435670cd32",
 		"searchTerms": [],
 		"slug": "worlds-end-xverse",
