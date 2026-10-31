@@ -2,10 +2,10 @@ import { Command } from "commander";
 import fjsh from "fast-json-stable-hash";
 import fs from "fs";
 import {
-	type ChartDocument,
+	SEEDS_ChartDocument,
+	SEEDS_SongDocument,
 	type Difficulties,
 	type integer,
-	type SongDocument,
 } from "tachi-common";
 import crypto from "crypto";
 
@@ -23,6 +23,7 @@ type LocalizedSearchTerms = Record<string, Array<string>>;
 interface SonglistChart {
 	ratingClass: integer;
 	ratingClassAlias?: integer;
+	date?: number;
 	title_localized?: LocalizedText;
 	artist?: string;
 	audioOverride?: boolean;
@@ -36,6 +37,7 @@ interface SonglistChart {
 interface SonglistEntry {
 	idx: integer;
 	id: string;
+	date: number;
 	title_localized: LocalizedText;
 	artist: string;
 	set: string;
@@ -157,15 +159,16 @@ const packlistContent = fs.readFileSync(options.packlist, { encoding: "utf-8" })
 const packlistData: { packs: Array<PacklistEntry> } = JSON.parse(packlistContent);
 const packsByID = Object.fromEntries(packlistData.packs.map((p) => [p.id, p]));
 
-const existingSongDocsById: Map<number, SongDocument<"arcaea">> = new Map(
-	ReadCollection("songs-arcaea.json").map((e: SongDocument<"arcaea">) => [e.id, e]),
+const existingSongDocsById: Map<string, SEEDS_SongDocument<"arcaea">> = new Map(
+	ReadCollection<SEEDS_SongDocument<"arcaea">>("songs-arcaea.json").map((e) => [e.id, e]),
 );
-const existingChartDocs: Array<ChartDocument<"arcaea">> = ReadCollection("charts-arcaea.json");
+const existingChartDocs: Array<SEEDS_ChartDocument<"arcaea">> =
+	ReadCollection("charts-arcaea.json");
 const inGameIDToSongsMap: MultiMapUniqueValues<
 	string,
-	SongDocument<"arcaea">
+	SEEDS_SongDocument<"arcaea">
 > = new MultiMapUniqueValues();
-const existingCharts: Map<string, ChartDocument<"arcaea">> = new Map();
+const existingCharts: Map<string, SEEDS_ChartDocument<"arcaea">> = new Map();
 
 for (const chart of existingChartDocs) {
 	const song = existingSongDocsById.get(chart.songID);
@@ -179,8 +182,8 @@ for (const chart of existingChartDocs) {
 
 const getNewSongID = GetFreshSongIDGenerator("arcaea");
 
-const newSongs: Array<SongDocument<"arcaea">> = [];
-const newCharts: Array<ChartDocument<"arcaea">> = [];
+const newSongs: Array<SEEDS_SongDocument<"arcaea">> = [];
+const newCharts: Array<SEEDS_ChartDocument<"arcaea">> = [];
 
 for (const entry of data.songs) {
 	if (entry.deleted) {
@@ -203,7 +206,7 @@ for (const entry of data.songs) {
 			...new Set(Object.values(entry.title_localized).filter((t) => t !== title)),
 		];
 
-		const songDoc: SongDocument<"arcaea"> = {
+		const songDoc: SEEDS_SongDocument<"arcaea"> = {
 			title,
 			artist: entry.artist,
 			altTitles,
@@ -221,7 +224,7 @@ for (const entry of data.songs) {
 	}
 
 	for (const chart of entry.difficulties) {
-		let song: SongDocument<"arcaea">;
+		let song: SEEDS_SongDocument<"arcaea">;
 
 		if (chart.hidden_until_unlocked && chart.hidden_until === "always") {
 			// Deactivated difficulty
@@ -254,7 +257,7 @@ for (const entry of data.songs) {
 				...new Set(Object.values(chart.title_localized).filter((t) => t !== title)),
 			];
 
-			const songDoc: SongDocument<"arcaea"> = {
+			const songDoc: SEEDS_SongDocument<"arcaea"> = {
 				title,
 				artist: chart.artist ?? entry.artist,
 				altTitles,
@@ -281,7 +284,7 @@ for (const entry of data.songs) {
 			song = possibleSong;
 		}
 
-		const chartDoc: ChartDocument<"arcaea"> = {
+		const chartDoc: SEEDS_ChartDocument<"arcaea"> = {
 			id: CreateChartID(),
 			songID: song.id,
 			legacyChartID: crypto.randomBytes(20).toString("hex"),
@@ -293,6 +296,10 @@ for (const entry of data.songs) {
 			data: {
 				inGameStrID: inGameID,
 				displayVersion: chart.version ?? entry.version,
+				releaseDate: new Date((chart.date ?? entry.date) * 1000).toLocaleDateString(
+					"en-CA",
+					{ timeZone: "UTC" },
+				),
 			},
 		};
 		newCharts.push(chartDoc);
