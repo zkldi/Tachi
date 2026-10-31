@@ -288,6 +288,8 @@ export const GAME_ONGEKI_CONF = {
 		brightMemory3Omni: "bright MEMORY Act.3 Omnimix",
 		refresh: "Re:Fresh Act.1",
 		refreshOmni: "Re:Fresh Act.1 Omnimix",
+		//refresh2: "Re:Fresh Act.2",
+		//refresh2Omni: "Re:Fresh Act.2 Omnimix",
 	},
 
 	chartData: z.strictObject({
@@ -303,6 +305,7 @@ export const GAME_ONGEKI_CONF = {
 			"オンゲキ bright MEMORY Act.2",
 			"オンゲキ bright MEMORY Act.3",
 			"オンゲキ Re:Fresh Act.1",
+			"オンゲキ Re:Fresh Act.2",
 		]),
 		isBonusTrack: z.boolean(),
 		maxPlatScore: z.number().int().nonnegative(),
@@ -313,6 +316,8 @@ export const GAME_ONGEKI_CONF = {
 			brightMemory3Omni: ONGEKI_LEVEL,
 			refresh: ONGEKI_LEVEL,
 			refreshOmni: ONGEKI_LEVEL,
+			//refresh2: ONGEKI_LEVEL,
+			//refresh2Omni: ONGEKI_LEVEL,
 		}),
 	}),
 

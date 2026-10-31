@@ -21,7 +21,7 @@ const command = new Command()
 const options = command.opts();
 
 const CURRENT_VERSION = "refresh2";
-const CURRENT_OMNIMIX = "refreshOmni2";
+const CURRENT_OMNIMIX = "refresh2Omni";
 const DRY_RUN = false;
 
 interface Input {
