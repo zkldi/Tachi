@@ -1506,6 +1506,7 @@ export const TestingArcaeaSheriruthFTR: ChartDocument<"arcaea"> = {
 		displayVersion: "1.0",
 		inGameStrID: "sheriruth",
 		notecount: 1151,
+		releaseDate: "1970-01-01",
 	},
 	difficulty: "Future",
 	isPrimary: true,
@@ -1522,6 +1523,7 @@ export const TestingArcaeaSheriruthPST: ChartDocument<"arcaea"> = {
 	data: {
 		displayVersion: "1.0",
 		inGameStrID: "sheriruth",
+		releaseDate: "1970-01-01",
 	},
 	difficulty: "Past",
 	isPrimary: true,
