@@ -8537,5 +8537,129 @@
 			"사크로상트"
 		],
 		"title": "⊥⊬"
+	},
+	{
+		"altTitles": [
+			"Chateau de cartes"
+		],
+		"artist": "Inverted Silence ft. Pernelle",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a1934fe5ac15ce4d04",
+		"legacySongID": 567,
+		"searchTerms": [
+			"Chateau",
+			"しゃとーどかると",
+			"샤또 드 카흐뜨",
+			"샤또 드 카뜨"
+		],
+		"title": "Château de cartes"
+	},
+	{
+		"altTitles": [],
+		"artist": "crayvxn",
+		"data": {
+			"songPack": "Diverse System"
+		},
+		"id": "S1a1934fe5c011d1156a",
+		"legacySongID": 570,
+		"searchTerms": [
+			"いーさーどらいぶ",
+			"えーてるどらいぶ",
+			"에테르 드라이브"
+		],
+		"title": "Ether Drive"
+	},
+	{
+		"altTitles": [],
+		"artist": "xi vs ak+q (lowiro)",
+		"data": {
+			"songPack": "Diverse System"
+		},
+		"id": "S1a1934fe5c015459e7d",
+		"legacySongID": 573,
+		"searchTerms": [
+			"ぱららっくす",
+			"패럴렉스"
+		],
+		"title": "Parallax"
+	},
+	{
+		"altTitles": [],
+		"artist": "Shunji Fujii feat. 千花",
+		"data": {
+			"songPack": "World Extend 4"
+		},
+		"id": "S1a1934fe5c0aa669a67",
+		"legacySongID": 568,
+		"searchTerms": [
+			"chika",
+			"ぼやーじゅとぅざふゅーちゃー",
+			"보야지 투 더 퓨처"
+		],
+		"title": "Voyage to the Future"
+	},
+	{
+		"altTitles": [],
+		"artist": "Renpul",
+		"data": {
+			"songPack": "Diverse System"
+		},
+		"id": "S1a1934fe5c0b24ffd21",
+		"legacySongID": 572,
+		"searchTerms": [
+			"ふぇいたりてぃ",
+			"페이탈리티"
+		],
+		"title": "Fatality"
+	},
+	{
+		"altTitles": [
+			"蘭"
+		],
+		"artist": "Feryquitous",
+		"data": {
+			"songPack": "Diverse System"
+		},
+		"id": "S1a1934fe5c0b68f3d2b",
+		"legacySongID": 569,
+		"searchTerms": [
+			"ran",
+			"らん",
+			"란"
+		],
+		"title": "Ran"
+	},
+	{
+		"altTitles": [],
+		"artist": "REMO-CON",
+		"data": {
+			"songPack": "Diverse System"
+		},
+		"id": "S1a1934fe5c0dc955716",
+		"legacySongID": 571,
+		"searchTerms": [
+			"しゅらごー",
+			"うちなーたいむ",
+			"うちなたいむ",
+			"쉬라 고 우치나 테마"
+		],
+		"title": "Schra Go (Uchina Time)"
+	},
+	{
+		"altTitles": [],
+		"artist": "Nothing But Requiem",
+		"data": {
+			"songPack": "Memory Archive"
+		},
+		"id": "S1a1934fe5c1c9e50685",
+		"legacySongID": 574,
+		"searchTerms": [
+			"trick master",
+			"とりっくますたー",
+			"트릭 마스터"
+		],
+		"title": "Tr!cK Ma?tEr"
 	}
 ]

@@ -29,6 +29,7 @@ export default function SongChartInfoFormat({
 	}
 	if (["arcaea", "chunithm", "maimaidx", "ongeki"].includes(gameGroup)) {
 		let displayVersion: string | null = null;
+		let releaseDate: string | undefined;
 
 		if (chart !== null && "displayVersion" in chart.data) {
 			displayVersion = chart.data.displayVersion;
@@ -38,6 +39,10 @@ export default function SongChartInfoFormat({
 
 		if (displayVersion !== null && gameGroup === "arcaea") {
 			displayVersion = `version ${displayVersion}`;
+		}
+
+		if (chart !== null && "releaseDate" in chart.data) {
+			releaseDate = chart.data.releaseDate;
 		}
 		return (
 			<>
@@ -60,7 +65,9 @@ export default function SongChartInfoFormat({
 						</h6>
 						{displayVersion && (
 							<h6>
-								<Muted>From {displayVersion}</Muted>
+								<Muted>
+									From {displayVersion} {releaseDate && <>({releaseDate})</>}
+								</Muted>
 							</h6>
 						)}
 					</>

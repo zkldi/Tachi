@@ -143,6 +143,7 @@ export const GAME_ARCAEA_CONF = {
 		inGameStrID: z.string(),
 		displayVersion: z.string(),
 		notecount: z.number().int().positive().optional(),
+		releaseDate: z.iso.date(),
 	}),
 
 	preferences: z.strictObject({}),
