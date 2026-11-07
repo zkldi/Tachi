@@ -40,8 +40,8 @@ bun parse-song-duration.ts -v "$(which vgmstream-cli)" -d /path/to/chunithm/Opti
 
 ## Adding songs to the international version
 
-See the [make-things-available-in-intl.js](./make-things-available-in-intl.js) script. Afterwards,
-reorder the versions by running the [sort-versions.js](./sort-versions.js) script.
+See the [make-things-available-in-intl.ts](./make-things-available-in-intl.ts) script. Afterwards,
+reorder the versions by running the [sort-versions.js](./sort-versions.ts) script.
 
 ## Adding a new version
 

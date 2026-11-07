@@ -206,6 +206,9 @@ export const GAME_CHUNITHM_CONF = {
 		xversex: "X-VERSE-X",
 		"xversex-intl": "X-VERSE-X International",
 		"xversex-omni": "X-VERSE-X Omnimix",
+		mate: "Mate",
+		"mate-intl": "Mate International",
+		"mate-omni": "Mate Omnimix",
 	},
 
 	chartData: z.strictObject({
@@ -223,6 +226,9 @@ export const GAME_CHUNITHM_CONF = {
 				xversex: CHUNITHMLevel,
 				"xversex-intl": CHUNITHMLevel,
 				"xversex-omni": CHUNITHMLevel,
+				mate: CHUNITHMLevel,
+				"mate-intl": CHUNITHMLevel,
+				"mate-omni": CHUNITHMLevel,
 			})
 			.nullable(), // WORLD'S END should be null
 	}),
