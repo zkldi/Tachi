@@ -24,8 +24,7 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 	log,
 ) => {
 	const version = ConvertVersion(data.version);
-	const playtype = data.difficulty.startsWith("S") ? "SP" : "DP";
-	const game = playtype === "SP" ? "iidx-sp" : "iidx-dp";
+	const game = data.difficulty.startsWith("S") ? "iidx-sp" : "iidx-dp";
 
 	let musicID = data.internalId;
 
@@ -46,7 +45,7 @@ export const ConverterAPICGIIDX: ConverterFunction<CGIIDXScore, CGContext> = asy
 
 	if (!chart) {
 		throw new SongOrChartNotFoundFailure(
-			`Could not find chart with songID ${musicID} (${playtype} ${difficulty} - Version ${version})`,
+			`Could not find chart with songID ${musicID} (${game} ${difficulty} - Version ${version})`,
 			importType,
 			data,
 			processContext,
