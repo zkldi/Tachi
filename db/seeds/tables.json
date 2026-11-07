@@ -6037,7 +6037,7 @@
 	},
 	{
 		"default": false,
-		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh Act.1 Omnimix.",
 		"folders": [
 			"refreshomni-basic",
 			"refreshomni-advanced",
@@ -6050,11 +6050,11 @@
 		"id": "T19d35f0d594996cd082",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refreshOmni-difficulties",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Difficulties)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1 Omnimix) (Difficulties)"
 	},
 	{
 		"default": false,
-		"description": "Genres for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"description": "Genres for O.N.G.E.K.I. in Re:Fresh Act.1 Omnimix.",
 		"folders": [
 			"g-pna-refreshomni",
 			"g-niconico-refreshomni",
@@ -6067,11 +6067,11 @@
 		"id": "T19e57042e689f235d24",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refreshOmni-genres",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Genres)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1 Omnimix) (Genres)"
 	},
 	{
 		"default": false,
-		"description": "Levels for O.N.G.E.K.I. in Re:Fresh Omnimix.",
+		"description": "Levels for O.N.G.E.K.I. in Re:Fresh Act.1 Omnimix.",
 		"folders": [
 			"0-refreshomni",
 			"1-refreshomni",
@@ -6103,11 +6103,11 @@
 		"id": "T19d35f0d594a374ff23",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refreshOmni-levels",
-		"title": "O.N.G.E.K.I. (Re:Fresh Omnimix) (Levels)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1 Omnimix) (Levels)"
 	},
 	{
 		"default": false,
-		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh.",
+		"description": "Difficulties for O.N.G.E.K.I. in Re:Fresh Act.1.",
 		"folders": [
 			"refresh-basic",
 			"refresh-advanced",
@@ -6120,11 +6120,11 @@
 		"id": "T19d35f0d5941ed3780c",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refresh-difficulties",
-		"title": "O.N.G.E.K.I. (Re:Fresh) (Difficulties)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1) (Difficulties)"
 	},
 	{
 		"default": false,
-		"description": "Genres for O.N.G.E.K.I. in Re:Fresh.",
+		"description": "Genres for O.N.G.E.K.I. in Re:Fresh Act.1.",
 		"folders": [
 			"g-pna-refresh",
 			"g-niconico-refresh",
@@ -6137,11 +6137,11 @@
 		"id": "T19e57049a69fe62dd5f",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refresh-genres",
-		"title": "O.N.G.E.K.I. (Re:Fresh) (Genres)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1) (Genres)"
 	},
 	{
 		"default": true,
-		"description": "Levels for O.N.G.E.K.I. in Re:Fresh.",
+		"description": "Levels for O.N.G.E.K.I. in Re:Fresh Act.1.",
 		"folders": [
 			"0-refresh",
 			"1-refresh",
@@ -6173,7 +6173,7 @@
 		"id": "T19d35f0d5942edb68de",
 		"inactive": false,
 		"legacyTableID": "ongeki-Single-refresh-levels",
-		"title": "O.N.G.E.K.I. (Re:Fresh) (Levels)"
+		"title": "O.N.G.E.K.I. (Re:Fresh Act.1) (Levels)"
 	},
 	{
 		"default": true,

@@ -150,7 +150,7 @@ const listMissing = async (charts: OngekiChart[], songs: OngekiSong[], minLevel:
 			const song = songs.find((s) => s.id === chart.songID);
 			// @ts-expect-error what??
 			chart.data.chartViewURL = await prompt(
-				`Missing: ${song?.artist} ${song?.title} ${chart.difficulty} ${chart.level}\n`,
+				`Missing: ${song?.artist} ${song?.title} ${chart.difficulty} ${chart.level}\n\tEnter URL manually: `,
 			);
 			WriteCollection("charts-ongeki.json", charts);
 		}

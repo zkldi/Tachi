@@ -7,6 +7,14 @@ type OngekiChart = SEEDS_ChartDocument<"ongeki">;
 const hasCJK = (str: string) =>
 	str.match(/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f]/u);
 
+// Kindly do not complain about these titles
+const cjkTitleBlacklist = [
+	"Scream out! -音華鏡 Re:BREAK-",
+	"NATSUKAGE-夏陰-",
+	"On your mark (104期 Ver.)",
+	"Dream Believers (105期Ver.)",
+];
+
 const main = () => {
 	const songs: OngekiSong[] = ReadCollection("songs-ongeki.json");
 	const charts: OngekiChart[] = ReadCollection("charts-ongeki.json");
@@ -21,7 +29,9 @@ const main = () => {
 			missingDurations.push(song);
 		}
 		if (hasCJK(song.title) && song.searchTerms.length === 0) {
-			missingTerms.push(song);
+			if (!cjkTitleBlacklist.includes(song.title)) {
+				missingTerms.push(song);
+			}
 		}
 	}
 

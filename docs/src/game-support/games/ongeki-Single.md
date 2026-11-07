@@ -1,6 +1,6 @@
 # O.N.G.E.K.I. Support
 
-This game has the internal GPTString of `ongeki:Single`.
+This game has the internal game string of `ongeki`.
 
 !!! note
 	For information on what each section means, please see [Common Config](../common-config/index.md).
@@ -23,7 +23,7 @@ For more information on what metrics are and how they work, see [TODO]!
 | Metric Name | Type | Description |
 | :: | :: | :: |
 | `grade` | "D", "C", "B", "BB", "BBB", "A", "AA", "AAA", "S", "SS", "SSS", "SSS+" | The grade this score was. |
-| `platinumStars` | Integer | The number of platinum stars of this score |
+| `platinumStars` | "0-star", "1-star", "2-star", "3-star", "4-star", "5-star", "R-star" | The number of platinum stars of this score, with "R-star" representing rainbow. |
 
 ### Optional Metrics
 
@@ -60,6 +60,7 @@ The default rating algorithm is `rating`.
 | `rating` | A rating value of this score, capping at +2.0 at SSS+. This is identical to the system used in bright MEMORY and earlier versions. |
 | `scoreRating` | A rating value of this score, capping at +2.7 at 1,010,000. This is identical to the system used in Re:Fresh. |
 | `starRating` | A rating value of this score, based on stars derived from Platinum Score. This is identical to the system used in Re:Fresh. |
+
 ### Session Rating Algorithms
 
 The default rating algorithm is `naiveRating`.
@@ -128,7 +129,40 @@ There are several songs with non-unique names:
 - Perfect_Shining!! LUNATIC 13+ (Re:Master) `inGameID: 8091`
 
 Most of these conflicts can be resolved by providing the `artist` field; the only exception is Perfect Shining, which uniquely has two LUNATIC charts and has to be matched by `inGameID`.
-There are numerous songs with non-unique names (e.g. Singularity, Singularity, Singularity and Xingularity), but this can be resolved by providing the `artist` field. The only exception is Perfect Shining!!, which uniquely has two LUNATIC charts and has to be matched by `inGameID`:
+There are numerous songs with non-unique names (e.g. Singularity, Singularity, Singularity and Xingularity), but this can be resolved by providing the `artist` field. The only exception is Perfect Shining!!, which uniquely has two LUNATIC charts and has to be matched by `inGameID`.
 
-- LUNATIC 0 (Loctest chart) `inGameID: 8003`
-- Re:MASTER 13+ `inGameID: 8091`
+### Song Data
+O.N.G.E.K.I. song data additionally includes the following fields:
+- `genre` (String): The GCM-style *genre* used to categorize songs in-game. This is guaranteed to be one of the following:
+	- "POPS＆ANIME",
+	- "niconico",
+	- "東方Project",
+	- "VARIETY",
+	- "チュウマイ",
+	- "オンゲキ",
+	- "LUNATIC",
+	- "ボーナストラック"
+- `duration` (Number | null): The duration of the audio file, in seconds. This is used to plot graphs uniformly.
+- `titleEn` (String | undefined): Romaji title, displayed on hover.
+- `flavorGenre` (String | undefined): Optional [IIDX-style *genre*](https://silentblue.remywiki.com/ONGEKI:Genres).
+
+### Chart Data
+O.N.G.E.K.I. chart data additionally includes the following fields:
+- `displayVersion`: The version this chart originates from. Note the value can differ between LUN and other charts. Gguaranteed to be one of the following:
+	- "オンゲキ",
+	- "オンゲキ PLUS",
+	- "オンゲキ SUMMER",
+	- "オンゲキ SUMMER PLUS",
+	- "オンゲキ R.E.D.",
+	- "オンゲキ R.E.D. PLUS",
+	- "オンゲキ bright",
+	- "オンゲキ bright MEMORY Act.1",
+	- "オンゲキ bright MEMORY Act.2",
+	- "オンゲキ bright MEMORY Act.3",
+	- "オンゲキ Re:Fresh Act.1"
+- `isBonusTrack` (Bool): Bonus Tracks are solo versions of O.N.G.E.K.I.' original vocal songs. They use the `inGameID` range of 7XXX, reuse the same charts as the base songs, are unranked (Rating is always 0.000), do not appear in regular folders, and their genre is "ボーナストラック".
+	- For example, the song [青空コントレール](https://kamai.tachi.ac/games/ongeki/charts/C19d35e17e0287b74fcd) is a duet of [星咲 あかり](https://kamai.tachi.ac/games/ongeki/charts/C19d35e17e38a5edca25) and [日向 千夏](https://kamai.tachi.ac/games/ongeki/charts/C19d35e17e39c78a7a2a).
+- `maxPlatScore` (Integer): Max Platinum Score, or note count multiplied by 2.
+- `inGameID` (Number | null): Internal song ID.
+- `chartViewURL` (String | undefined): Link to https://sdvx.in/ongeki.html.
+- `levelHistory`: List of game versions alongside `level`/`levelNum` pairs. If the chart wasn't present in the version, the value is `null` instead.
