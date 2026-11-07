@@ -41,7 +41,7 @@ function defaultFixtureForType(t: FileUploadImportTypes): string {
 		case "file/solid-state-squad":
 			return path.join(TEST_DATA, "s3/large-example.xml");
 		case "file/batch-manual":
-			return path.join(TEST_DATA, "batch-manual/chunitachi.json");
+			return path.join(TEST_DATA, "batch-manual/small-file.json");
 		case "file/mypagescraper-records-csv":
 			return path.join(TEST_DATA, "wacca-mypage-scraper/records.csv");
 		default:

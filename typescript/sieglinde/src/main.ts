@@ -4,13 +4,14 @@ import SieglindeV1Calc from "#calc/v1-jiminp";
 import { Command } from "commander";
 import fs from "fs";
 import path from "path";
+import { GameToGameGroup } from "tachi-common";
 
 import GetTableData from "./fetch-tables";
 import logger from "./logger";
 
 const program = new Command();
 
-program.requiredOption("-p, --playtype <7K or 14K>");
+program.requiredOption("-g, --game <bms-7k, bms-14k>");
 
 program.parse(process.argv);
 const options = program.opts();
@@ -25,14 +26,10 @@ void (async () => {
 
 	fs.mkdirSync(`${__dirname}/cache`, { recursive: true });
 
-	const PLAYTYPE_TO_GAME: Record<string, "bms-7k" | "bms-14k"> = {
-		"7K": "bms-7k",
-		"14K": "bms-14k",
-	};
-	const game = PLAYTYPE_TO_GAME[options.playtype];
+	const game = options.game;
 
-	if (!game) {
-		throw new Error(`Unknown playtype '${options.playtype}'. Expected '7K' or '14K'.`);
+	if (GameToGameGroup(game) !== "bms") {
+		throw new Error(`Unknown playtype '${options.game}'. Expected '7K' or '14K'.`);
 	}
 
 	const tableInfo = await GetTableData(game);
