@@ -89,7 +89,7 @@ function SearchSongsTable({ game, search }: { search: string } & GameProps) {
 				rowFunction={(d) => (
 					<tr>
 						<DifficultyCell chart={d} game={game} />
-						<TitleCell chart={d} game={game} song={d.__related.song} />
+						<TitleCell chart={d} game={game} song={d.__related.song} wide />
 						<td>{d.__playcount}</td>
 					</tr>
 				)}

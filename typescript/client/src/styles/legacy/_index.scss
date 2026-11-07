@@ -47,3 +47,50 @@
 }
 
 @import "tachi-custom/custom", "tachi-custom/hero", "tachi-custom/splash-screen";
+
+@include media-breakpoint-up(xs) {
+	.title-cell-link-wide {
+		max-width: 200px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.title-cell-link-wide {
+		max-width: 275px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.title-cell-link-wide {
+		max-width: 375px;
+	}
+	.title-cell-link-narrow {
+		max-width: 100px;
+	}
+	.title-cell-link-tiny {
+		max-width: 60px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.title-cell-link-wide {
+		max-width: 575px;
+	}
+	.title-cell-link-narrow {
+		max-width: 275px;
+	}
+	.title-cell-link-tiny {
+		max-width: 155px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.title-cell-link-wide {
+		max-width: 800px;
+	}
+}
+@include media-breakpoint-only(lg) {
+	.table-striped td {
+		padding: 0.7rem 0.7rem;
+	}
+}

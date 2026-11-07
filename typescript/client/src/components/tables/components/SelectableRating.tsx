@@ -1,4 +1,5 @@
 import Icon from "#components/util/Icon";
+import { WindowContext } from "#context/WindowContext";
 import { type SetState } from "#types/react";
 import {
 	FormatGameProfileRatingName,
@@ -6,6 +7,7 @@ import {
 	FormatGameSessionRatingName,
 	getProfileRatingAlgKeysInDisplayOrder,
 } from "#util/misc";
+import { useContext } from "react";
 import { GetGameConfig, type V3Game } from "tachi-common";
 
 import { type ZTableTHProps } from "./TachiTable";
@@ -26,6 +28,9 @@ export default function SelectableRating({
 	rating: AllRatings;
 	setRating: SetState<AllRatings>;
 } & ZTableTHProps) {
+	const {
+		breakpoint: { isXl },
+	} = useContext(WindowContext);
 	const gameConfig = GetGameConfig(game);
 
 	let key: "profileRatingAlgs" | "scoreRatingAlgs" | "sessionRatingAlgs";
@@ -56,7 +61,7 @@ export default function SelectableRating({
 								? FormatGameSessionRatingName(game, s)
 								: mode === "profile"
 									? FormatGameProfileRatingName(game, s)
-									: FormatGameScoreRatingName(game, s)}
+									: FormatGameScoreRatingName(game, s, !isXl)}
 						</option>
 					))}
 				</select>

@@ -41,7 +41,7 @@ export default function RivalChartTable({
 			setRankingViewMode,
 			(k) => k.__related.pb?.rankingData,
 		),
-		["Last Raised", "Last Raised", NumericSOV((x) => x.__related.pb?.timeAchieved ?? 0)],
+		["Last Raised", "Raised", NumericSOV((x) => x.__related.pb?.timeAchieved ?? 0)],
 	];
 
 	return (

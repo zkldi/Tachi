@@ -4,9 +4,6 @@ import { ToCDNURL } from "#util/api";
 import { CreateChartLink } from "#util/data";
 import { type ChartDocument, type SongDocument, type V3Game } from "tachi-common";
 
-/** Fixed title column width; content truncates per line under `table-layout` fixed/auto. */
-const TITLE_CELL_WIDTH_PX = 275;
-
 const truncLineCls = "d-block text-truncate";
 
 export default function TitleCell({
@@ -51,8 +48,6 @@ export default function TitleCell({
 		? tooltipParts.filter(Boolean).join(" — ")
 		: undefined;
 
-	const maxWidth = game === "ongeki" ? TITLE_CELL_WIDTH_PX * 0.6 : TITLE_CELL_WIDTH_PX;
-
 	if (game === "popn" && chart) {
 		backgroundImage = `url(${ToCDNURL(
 			`/misc/popn/banners/${(chart as any).data.inGameID}.png`,
@@ -72,14 +67,11 @@ export default function TitleCell({
 	return (
 		<td
 			className="fading-image-td-left title-cell-wrapper"
-			colSpan={wide ? 2 : 1}
 			style={{
 				boxSizing: "border-box",
-				maxWidth: `${maxWidth}px`,
 				minWidth: 0,
 				overflow: "hidden",
 				textAlign: "left",
-				width: `${maxWidth}px`,
 				["--image-url" as string]: backgroundImage,
 				backgroundPosition: center ? "center" : undefined,
 			}}
@@ -98,7 +90,13 @@ export default function TitleCell({
 				</>
 			)}
 			<GentleLink
-				className="title-cell-link d-block w-100"
+				className={`title-cell-link d-block w-100 mw-50 mw-xl-100 ${
+					wide
+						? "title-cell-link-wide"
+						: game === "ongeki"
+							? "title-cell-link-tiny"
+							: "title-cell-link-narrow"
+				}`}
 				style={{ minWidth: 0 }}
 				to={chart ? CreateChartLink(chart) : ""}
 			>

@@ -115,7 +115,7 @@ export interface GameClientImplementation<TGame extends V3Game = V3Game> {
 	 */
 	ratingAlgNameOverrides?: {
 		profile?: Record<string, string>;
-		score?: Record<string, string>;
+		score?: Record<string, string | { long?: string; short?: string }>;
 		session?: Record<string, string>;
 	};
 

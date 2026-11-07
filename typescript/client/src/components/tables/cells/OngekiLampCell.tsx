@@ -3,7 +3,8 @@ import { COLOUR_SET } from "tachi-common";
 
 import { constrainedLampTdStyle } from "./delta-lamp-cell-layout";
 
-const truncLine = "d-block text-truncate";
+const truncLineShort = "d-block text-truncate d-xl-none";
+const truncLine = "d-none text-truncate d-xl-block";
 
 const shortMappings = {
 	"ALL BREAK": "AB",
@@ -18,17 +19,20 @@ export default function OngekiLampCell({
 	noteLamp,
 	bellLamp,
 	colour,
-	mobile,
 }: {
 	bellLamp: "FULL BELL" | "NONE";
 	colour: string;
-	mobile: boolean;
 	noteLamp: "ALL BREAK" | "ALL BREAK+" | "CLEAR" | "FULL COMBO" | "LOSS";
 }) {
 	let content: React.ReactNode = (
-		<div className={truncLine} style={{ minWidth: 0 }}>
-			{mobile ? shortMappings[noteLamp] : noteLamp}
-		</div>
+		<>
+			<div className={truncLineShort} style={{ minWidth: 0 }}>
+				{shortMappings[noteLamp]}
+			</div>
+			<div className={truncLine} style={{ minWidth: 0 }}>
+				{noteLamp}
+			</div>
+		</>
 	);
 	let title: string = noteLamp;
 
@@ -36,21 +40,32 @@ export default function OngekiLampCell({
 		if (noteLamp === "CLEAR") {
 			title = bellLamp;
 			content = (
-				<div className={truncLine} style={{ minWidth: 0 }}>
-					{mobile ? shortMappings[bellLamp] : bellLamp}
-				</div>
+				<>
+					<div className={truncLineShort} style={{ minWidth: 0 }}>
+						{shortMappings[bellLamp]}
+					</div>
+					<div className={truncLine} style={{ minWidth: 0 }}>
+						{bellLamp}
+					</div>
+				</>
 			);
 		} else {
 			title = `${noteLamp} · ${bellLamp}`;
 			content = (
-				<span>
-					<div className={truncLine} style={{ minWidth: 0 }}>
-						{mobile ? shortMappings[noteLamp] : noteLamp}
+				<>
+					<div className={truncLineShort} style={{ minWidth: 0 }}>
+						{shortMappings[noteLamp]}
 					</div>
 					<div className={truncLine} style={{ minWidth: 0 }}>
-						{mobile ? shortMappings[bellLamp] : bellLamp}
+						{noteLamp}
 					</div>
-				</span>
+					<div className={truncLineShort} style={{ minWidth: 0 }}>
+						{shortMappings[bellLamp]}
+					</div>
+					<div className={truncLine} style={{ minWidth: 0 }}>
+						{bellLamp}
+					</div>
+				</>
 			);
 		}
 	}

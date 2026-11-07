@@ -60,7 +60,7 @@ export default function PBTable({
 		EmptyHeader,
 		...GetGameCoreHeaders<PBDataset>(game, rating, setRating, (x) => x),
 		CreateRankingHeader(rankingViewMode, setRankingViewMode, (k) => k.rankingData),
-		["Last Raised", "Last Raised", NumericSOV((x) => x.timeAchieved ?? 0)],
+		["Last Raised", "Raised", NumericSOV((x) => x.timeAchieved ?? 0)],
 		EmptyHeader,
 	];
 

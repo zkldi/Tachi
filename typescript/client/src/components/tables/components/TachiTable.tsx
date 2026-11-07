@@ -294,11 +294,14 @@ export default function TachiTable<D>({
 							setValue={(e) => ztable.setPageLen(Number(e))}
 							value={ztable.pageLen.toString()}
 						>
-							{pageLenOptions.map((n) => (
-								<option key={n} value={String(n)}>
-									{n}
-								</option>
-							))}
+							{pageLenOptions
+								// Remove N+1th pagination if Nth pagination is already big enough
+								.filter((_, i, a) => (i === 0 ? true : dataset.length > a[i - 1]))
+								.map((n) => (
+									<option key={n} value={String(n)}>
+										{n}
+									</option>
+								))}
 						</Select>
 					)}
 				</div>

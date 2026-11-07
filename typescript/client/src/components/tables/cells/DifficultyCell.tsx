@@ -56,7 +56,7 @@ export default function DifficultyCell({
 	const difficultyCellWidthPx =
 		// EXHC makes it too long...
 		game === "iidx-sp" || game === "iidx-dp"
-			? DIFFICULTY_CELL_WIDTH_PX + 16
+			? DIFFICULTY_CELL_WIDTH_PX + 30
 			: DIFFICULTY_CELL_WIDTH_PX;
 
 	const nativeTitleTooltip = [FormatDifficultyLong(chart), chart.level]

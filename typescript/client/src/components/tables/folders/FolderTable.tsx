@@ -89,7 +89,7 @@ export default function FolderTable({
 			setRankingViewMode,
 			(k) => k.__related.pb?.rankingData,
 		),
-		["Last Raised", "Last Raised", NumericSOV((x) => x.__related.pb?.timeAchieved ?? 0)],
+		["Last Raised", "Raised", NumericSOV((x) => x.__related.pb?.timeAchieved ?? 0)],
 	];
 
 	const rowFn = useCallback(
@@ -133,8 +133,8 @@ export default function FolderTable({
 						rating={rating}
 					/>
 				)}
+				noBottomDisplayPager={!usePaginatedView}
 				pageLen={usePaginatedView ? 10 : 1000}
-				pageLenOptions={[1000, 100, 50, 25, 10]}
 				rowFunction={rowFn}
 				rowKey={(d) => d.chartID}
 				searchFunctions={folderSearchFunctions}

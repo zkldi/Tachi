@@ -100,9 +100,20 @@ export function FormatGameSessionRatingName(game: V3Game, key: string) {
 	return gameConfig.ratingAlgNameOverrides?.session?.[key] ?? UppercaseFirst(key);
 }
 
-export function FormatGameScoreRatingName(game: V3Game, key: string) {
+export function FormatGameScoreRatingName(game: V3Game, key: string, short?: boolean) {
 	const gameConfig = GAME_CLIENT_IMPLEMENTATIONS[game];
-	return gameConfig.ratingAlgNameOverrides?.score?.[key] ?? UppercaseFirst(key);
+	const alias = gameConfig.ratingAlgNameOverrides?.score?.[key];
+	if (typeof alias === "object") {
+		if (short && alias.short !== undefined) {
+			return alias.short;
+		}
+		if (alias.long !== undefined) {
+			return alias.long;
+		}
+	} else if (alias !== undefined) {
+		return alias;
+	}
+	return UppercaseFirst(key);
 }
 
 export function FormatGameEnumMetric(game: V3Game, enumMetrics: string, key: string) {

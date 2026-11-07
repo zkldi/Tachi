@@ -868,7 +868,16 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 		ratingSystems: [],
 		ratingAlgNameOverrides: {
 			score: {
-				rating: "ClassicRating",
+				rating: {
+					long: "ClassicRating",
+					short: "CR",
+				},
+				scoreRating: {
+					short: "SR",
+				},
+				starRating: {
+					short: "★R",
+				},
 			},
 			session: {
 				naiveRating: "NaiveClassicRating",
@@ -896,7 +905,7 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 					return x.scoreData.platinumScore;
 				}),
 			],
-			["Judgements", "Notes", NumericSOV((x) => x.scoreData.judgements.cbreak ?? 0)],
+			["Judgements", "Judgements", NumericSOV((x) => x.scoreData.judgements.cbreak ?? 0)],
 			[
 				"Hits",
 				"Hits",
@@ -928,7 +937,6 @@ export const GAME_CLIENT_IMPLEMENTATIONS: GameClientImplementations = {
 				<OngekiLampCell
 					bellLamp={sc.scoreData.bellLamp}
 					colour={GetEnumColour(sc, "noteLamp")}
-					mobile={mobile}
 					noteLamp={sc.scoreData.noteLamp}
 				/>
 			</>
