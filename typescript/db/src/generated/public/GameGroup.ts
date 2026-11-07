@@ -19,6 +19,7 @@ type GameGroup =
   | 'itg'
   | 'arcaea'
   | 'ongeki'
-  | 'ddr';
+  | 'ddr'
+  | 'poco';
 
 export default GameGroup;

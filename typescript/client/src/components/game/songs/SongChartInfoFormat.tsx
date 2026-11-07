@@ -34,7 +34,7 @@ export default function SongChartInfoFormat({
 		if (chart !== null && "displayVersion" in chart.data) {
 			displayVersion = chart.data.displayVersion;
 		} else if ("displayVersion" in song.data) {
-			displayVersion = song.data.displayVersion;
+			displayVersion = song.data.displayVersion ?? null;
 		}
 
 		if (displayVersion !== null && gameGroup === "arcaea") {
