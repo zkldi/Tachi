@@ -1372,12 +1372,6 @@ export const API_V1_SPEC = {
 		}),
 	},
 
-	"GET /games/:gameGroup": {
-		description: "Configuration for a specific game group.",
-		input: z.object({}),
-		output: doc<GameGroupConfig>(),
-	},
-
 	"GET /games/:game": {
 		description: "Info and counts for a specific game+playtype.",
 		input: z.object({}),
