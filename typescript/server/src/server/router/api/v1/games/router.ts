@@ -83,6 +83,7 @@ import {
 
 import { API_V1_ROUTER } from "../_singleton";
 
+// TODO(zk): This caching is ridiculous
 const gptStatCache = new NodeCache();
 
 async function GetGameStats(
@@ -118,7 +119,6 @@ async function GetGameStats(
 	return { chartCount, playerCount, scoreCount };
 }
 
-/** Vitest: invalidate per-game stats cache after Postgres truncate (same process). */
 export function clearGameStatsCacheForTests(): void {
 	gptStatCache.flushAll();
 }
@@ -138,15 +138,6 @@ API_V1_ROUTER.add("GET /games", () => {
 		supportedGames: TachiConfig.GAME_GROUPS,
 	});
 });
-
-/**
- * Returns the configuration for this game.
- *
- * @name GET /api/v1/games/:gameGroup
- */
-API_V1_ROUTER.add("GET /games/:gameGroup", withGameGroup, ({ ctx }) =>
-	success(`Returned information for ${ctx.gameGroup}`, GetGameGroupConfig(ctx.gameGroup)),
-);
 
 /**
  * Returns the configuration for this game along with some statistics.
