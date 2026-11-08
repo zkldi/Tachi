@@ -15,6 +15,8 @@ import { API_V1_ROUTER } from "../_singleton";
  * Retrieve the clients you created. Must be performed with a session-level request.
  *
  * @warn This also returns the client_secrets! Those *have* to be kept secret.
+ *
+ * @name GET /api/v1/clients
  */
 API_V1_ROUTER.add("GET /clients", async ({ req }) => {
 	const user = req.session.tachi?.user;
@@ -46,6 +48,8 @@ API_V1_ROUTER.add("GET /clients", async ({ req }) => {
  * @param apiKeyFilename - Optionally, a filename to automatically download the template to, when doing
  * static flow.
  * @param permissions - An array of APIPermissions this client is expected to use.
+ *
+ * @name POST /api/v1/clients/create
  */
 API_V1_ROUTER.add("POST /clients/create", async ({ input, req }) => {
 	const user = req.session.tachi?.user;
@@ -70,6 +74,8 @@ API_V1_ROUTER.add("POST /clients/create", async ({ input, req }) => {
 
 /**
  * Retrieves information about the client at this ID.
+ *
+ * @name GET /api/v1/clients/:clientID
  */
 API_V1_ROUTER.add("GET /clients/:clientID", withClient, ({ ctx }) =>
 	success(`Retrieved client ${ctx.apiClientDoc.name}.`, ctx.apiClientDoc),
@@ -84,6 +90,8 @@ API_V1_ROUTER.add("GET /clients/:clientID", withClient, ({ ctx }) =>
  * @param redirectUri - Change a bound redirectUri for this client.
  * @param apiKeyTemplate - Change the APIKeyTemplate for this client.
  * @param apiKeyFilename - Change the APIKeyFilename for this client.
+ *
+ * @name PATCH /api/v1/clients/:clientID
  */
 API_V1_ROUTER.add("PATCH /clients/:clientID", withClient, async ({ params, input, req }) => {
 	const user = req.session.tachi?.user;
@@ -109,6 +117,8 @@ API_V1_ROUTER.add("PATCH /clients/:clientID", withClient, async ({ params, input
 /**
  * Resets the clientSecret for this client.
  * This will NOT invalidate any existing tokens, as per oauth2 spec.
+ *
+ * @name POST /api/v1/clients/:clientID/reset-secret
  */
 API_V1_ROUTER.add("POST /clients/:clientID/reset-secret", withClient, async ({ params, req }) => {
 	const user = req.session.tachi?.user;
@@ -127,6 +137,8 @@ API_V1_ROUTER.add("POST /clients/:clientID/reset-secret", withClient, async ({ p
 
 /**
  * Delete this client. Must be authorized at a session-request level.
+ *
+ * @name DELETE /api/v1/clients/:clientID
  */
 API_V1_ROUTER.add("DELETE /clients/:clientID", withClient, async ({ params, req }) => {
 	const user = req.session.tachi?.user;

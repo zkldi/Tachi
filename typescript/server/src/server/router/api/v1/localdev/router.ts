@@ -8,6 +8,8 @@ import { API_V1_ROUTER } from "../_singleton";
 
 /**
  * Reports whether the database has any rows in the `song` table (seed data).
+ *
+ * @name GET /api/v1/localdev-song-seed-status
  */
 API_V1_ROUTER.add("GET /localdev/song-seed-status", withLocalDev, async () => {
 	const row = await DB.selectFrom("song")
@@ -22,6 +24,8 @@ API_V1_ROUTER.add("GET /localdev/song-seed-status", withLocalDev, async () => {
 /**
  * Username of the lowest-ID admin (same as {@link GetFirstAdmin}) and the dev default
  * password for the quick-login button on the login page.
+ *
+ * @name GET /api/v1/localdev/first-admin-login
  */
 API_V1_ROUTER.add("GET /localdev/first-admin-login", withLocalDev, async () => {
 	try {

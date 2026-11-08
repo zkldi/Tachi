@@ -19,11 +19,15 @@ async function globalActivityImpl(input: { startTime?: number }) {
  *
  * @param session - See CreateActivityRouteHandler
  * @param startTime - See CreateActivityRouteHandler
+ *
+ * @name GET /api/v1/activity
  */
 API_V1_ROUTER.add("GET /activity", ({ input }) => globalActivityImpl(input));
 
 /**
  * Same behavior as `GET /activity`. Some browser blocklists match `/activity`;
  * use this path when an ad blocker interferes.
+ *
+ * @name GET /api/v1/ublock-blocks-this
  */
 API_V1_ROUTER.add("GET /ublock-blocks-this", ({ input }) => globalActivityImpl(input));

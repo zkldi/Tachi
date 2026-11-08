@@ -19,6 +19,8 @@ const startTime = Date.now();
 
 /**
  * Returns the current status of the Tachi Server.
+ *
+ * @name GET /api/v1/status
  */
 API_V1_ROUTER.add("GET /status", ({ input, req }) => {
 	let echo;
