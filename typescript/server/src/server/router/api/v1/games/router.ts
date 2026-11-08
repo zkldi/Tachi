@@ -30,7 +30,7 @@ import {
 	GetFoldersFromTable,
 } from "#lib/folders/folders";
 import { log } from "#lib/log/log";
-import { withChart, withGame, withGameGroup } from "#lib/router/middleware";
+import { withChart, withGame } from "#lib/router/middleware";
 import { success } from "#lib/router/typed-router";
 import { InvalidScoreFailure } from "#lib/score-import/framework/common/converter-failures";
 import { ResolveSongAndChart } from "#lib/score-import/import-types/common/batch-manual/converter";

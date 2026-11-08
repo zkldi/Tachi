@@ -1,6 +1,5 @@
 import useSetSubheader from "#components/layout/header/useSetSubheader";
 import useApiQuery from "#components/util/query/useApiQuery";
-import WorkerVisualizer from "#components/workers/WorkerVisualizer";
 import { ADMIN_PAGE_SIZE, ADMIN_RECENT_HOURS, JOB_STATUS } from "#lib/adminConstants";
 import { MillisToSince } from "#util/time";
 import { Button, Form, Table } from "react-bootstrap";
@@ -117,8 +116,6 @@ export default function AdminJobQueuePage() {
 
 	return (
 		<div className="d-flex flex-column gap-4">
-			<WorkerVisualizer />
-
 			{activeJobs.length > 0 && (
 				<section>
 					<h2 className="h5">
