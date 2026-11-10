@@ -1,3 +1,4 @@
+/* eslint-disable no-await-in-loop */
 import type { Database } from "tachi-db";
 
 import { getCronTaskDefinitions } from "#lib/jobs/cron/cron-registry";
@@ -158,9 +159,12 @@ export async function runCronTickOnce(): Promise<void> {
 						})
 						.where("cron_task_execution.id", "=", execRow.id)
 						.execute();
-					(def.quiet ? log.debug : log.info)(
-						`Cron task ${def.id} completed for fire ${scheduledAtIso}.`,
-					);
+
+					if (def.quiet) {
+						log.debug(`Cron task ${def.id} completed for fire ${scheduledAtIso}.`);
+					} else {
+						log.info(`Cron task ${def.id} completed for fire ${scheduledAtIso}.`);
+					}
 				} catch (err) {
 					const message = err instanceof Error ? err.message : String(err);
 					log.error({ err }, `Cron task ${def.id} failed.`);
