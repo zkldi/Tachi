@@ -1,4 +1,5 @@
 import BPICell from "#components/tables/cells/BPICell";
+import BPIV2Cell from "#components/tables/cells/BPIV2Cell";
 import DeltaCell from "#components/tables/cells/DeltaCell";
 import IIDXLampCell from "#components/tables/cells/IIDXLampCell";
 import RatingCell from "#components/tables/cells/RatingCell";
@@ -115,19 +116,27 @@ const IIDX_PROFILE_RATING_VALUE_CELL_STYLE: NonNullable<
 	BPI: { backgroundColor: ChangeOpacity(COLOUR_SET.paleBlue, 0.12) },
 };
 
-const IIDXRatingCell: GameClientImplementation<GamesForGroup["iidx"]>["ratingCell"] = ({
+const IIDXSPRatingCell: GameClientImplementation<"iidx-sp">["ratingCell"] = ({
 	sc,
 	chart,
 	rating,
-}) => (
-	<>
-		{rating === "BPI" ? (
-			<BPICell chart={chart} score={sc} />
-		) : (
-			<RatingCell rating={rating} score={sc} />
-		)}
-	</>
-);
+}) =>
+	rating === "BPI" ? (
+		<BPIV2Cell chart={chart} score={sc} />
+	) : (
+		<RatingCell rating={rating} score={sc} />
+	);
+
+const IIDXDPRatingCell: GameClientImplementation<"iidx-dp">["ratingCell"] = ({
+	sc,
+	chart,
+	rating,
+}) =>
+	rating === "BPI" ? (
+		<BPICell chart={chart} score={sc} />
+	) : (
+		<RatingCell rating={rating} score={sc} />
+	);
 
 export const IIDX_SP_IMPL: GameClientImplementation<"iidx-sp"> = {
 	sessionImportantScoreCount: 20,
@@ -169,7 +178,7 @@ export const IIDX_SP_IMPL: GameClientImplementation<"iidx-sp"> = {
 	scoreHeaders: IIDX_HEADERS,
 	classColours: IIDX_COLOURS,
 	scoreCoreCells: IIDXCoreCells,
-	ratingCell: IIDXRatingCell,
+	ratingCell: IIDXSPRatingCell,
 	profileRatingAlgRowStyle: IIDX_PROFILE_RATING_VALUE_CELL_STYLE,
 };
 
@@ -195,6 +204,6 @@ export const IIDX_DP_IMPL: GameClientImplementation<"iidx-dp"> = {
 	scoreHeaders: IIDX_HEADERS,
 	classColours: IIDX_COLOURS,
 	scoreCoreCells: IIDXCoreCells,
-	ratingCell: IIDXRatingCell,
+	ratingCell: IIDXDPRatingCell,
 	profileRatingAlgRowStyle: IIDX_PROFILE_RATING_VALUE_CELL_STYLE,
 };

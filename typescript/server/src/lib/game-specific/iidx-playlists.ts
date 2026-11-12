@@ -2,7 +2,7 @@ import { SELECT_CHART, ToChartDocument } from "#lib/db-formats/chart";
 import { log } from "#lib/log/log";
 import DB from "#services/pg/db";
 import { sql, type SqlBool } from "kysely";
-import { PoyashiBPI } from "rg-stats";
+import { PoyashiBPI, PoyashiBPI2 } from "rg-stats";
 import { type ChartDocument, type GamesForGroup, type integer } from "tachi-common";
 
 interface PlaylistEntry {
@@ -123,19 +123,38 @@ export const CUSTOM_TACHI_IIDX_PLAYLISTS: Array<TachiIIDXPlaylist> = [
 			const entries = [];
 
 			for (const chart of charts) {
+				if (
+					game === "iidx-sp" &&
+					(chart.data.worldRecord === null ||
+						chart.data.bpi2Mu === null ||
+						chart.data.bpi2Sigma === null)
+				) {
+					continue;
+				}
+
 				// what's the least EX Score you can have for an AAA on this chart?
 				const AAA_EX = Math.ceil(chart.data.notecount * 2 * (8 / 9));
 
-				entries.push({
-					chart,
-					bpi: PoyashiBPI.calculate(
-						AAA_EX,
-						chart.data.kaidenAverage!,
-						chart.data.worldRecord!,
-						chart.data.notecount * 2,
-						chart.data.bpiCoefficient,
-					),
-				});
+				const bpi =
+					game === "iidx-sp"
+						? PoyashiBPI2.calculate(AAA_EX, {
+								notecount: chart.data.notecount,
+								worldRecord: chart.data.worldRecord,
+								coefficient: chart.data.bpiCoefficient,
+								mu: chart.data.bpi2Mu,
+								sigma: chart.data.bpi2Sigma,
+							})
+						: PoyashiBPI.calculate(
+								AAA_EX,
+								chart.data.kaidenAverage!,
+								chart.data.worldRecord!,
+								chart.data.notecount * 2,
+								chart.data.bpiCoefficient,
+							);
+
+				if (bpi !== null) {
+					entries.push({ chart, bpi });
+				}
 			}
 
 			const playlists: Array<IIDXPlaylist> = [];

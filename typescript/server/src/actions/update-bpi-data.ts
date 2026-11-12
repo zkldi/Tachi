@@ -6,10 +6,14 @@ import { MakeAction } from "#lib/actions/actions";
 import { log } from "#lib/log/log";
 import DB from "#services/pg/db";
 import fetch from "#utils/fetch";
-import { FindChartWithSongDifficultyVersion } from "#utils/queries/charts";
+import {
+	FindChartWithSongDifficulty,
+	FindChartWithSongDifficultyVersion,
+} from "#utils/queries/charts";
 import { FindSongOnTitle } from "#utils/queries/songs";
 import { IsUserAdmin } from "#utils/user";
 import { ExpectedErr } from "bliss";
+import { z } from "zod";
 
 const difficultyResolve: Record<
 	string,
@@ -43,18 +47,59 @@ interface PoyashiProxyData {
 	body: Array<PoyashiProxyBPIInfo>;
 }
 
+const BPIM2_TITLE_TRANSLATIONS: Record<string, string> = {
+	Flamingo: "Flämingo",
+	"SμG@R RU$#": "SµG@R RU$#",
+	uen: "uən",
+	VOID: "VØID",
+};
+
+const BPIM2SongsResponseSchema = z.object({
+	error: z.boolean(),
+	errorMessage: z.string().nullable(),
+	body: z.array(
+		z.object({
+			title: z.string(),
+			difficulty: z.enum(["ANOTHER", "HYPER", "LEGGENDARIA"]),
+			difficultyLevel: z.number().int(),
+			notes: z.number().int().positive(),
+			wrScore: z.number().int().positive().nullable(),
+			kaidenAvg: z.number().int().positive().nullable(),
+			coef: z.union([z.number().positive(), z.literal(-1)]).nullable(),
+			mu: z.number().nullable(),
+			sigma: z.number().positive().nullable(),
+		}),
+	),
+});
+
 /**
- * Fetches Poyashi BPI's latest information and writes BPI coefficients / WR / kaiden avg
- * to Postgres `chart.data` for IIDX charts (version 29).
+ * Fetch BPI constants from Poyashi
  */
 export async function updateBpiDataCore() {
-	log.info("Fetching data from proxy...");
-	const data = (await fetch("https://proxy.poyashi.me/?type=bpi").then((r) =>
-		r.json(),
-	)) as PoyashiProxyData;
+	log.info("Fetching BPI definitions...");
+	const [data, bpi2Data] = await Promise.all([
+		fetch("https://proxy.poyashi.me/?type=bpi").then((r) =>
+			r.json(),
+		) as Promise<PoyashiProxyData>,
+		fetch("https://bpi2.poyashi.me/api/v2/songs", {
+			headers: { "User-Agent": "Tachi/3.0 (+https://github.com/zkldi/Tachi)" },
+		}).then(async (r) => {
+			if (!r.ok) {
+				throw new Error(`BPIM2 returned HTTP ${r.status}.`);
+			}
 
-	log.info("Fetched data.");
-	const updatedChartIDs: Array<string> = [];
+			return BPIM2SongsResponseSchema.parse(await r.json());
+		}),
+	]);
+
+	if (bpi2Data.error || !Array.isArray(bpi2Data.body)) {
+		throw new Error(
+			`Failed to fetch BPIM2 definitions: ${bpi2Data.errorMessage ?? "unknown error"}`,
+		);
+	}
+
+	log.info("Fetched BPI definitions.");
+	const updatedChartIDs = new Set<string>();
 
 	for (const d of data.body) {
 		const res: [GamesForGroup["iidx"], Difficulties[GamesForGroup["iidx"]]] | undefined =
@@ -104,7 +149,7 @@ export async function updateBpiDataCore() {
 			iidxChart.data.kaidenAverage !== newKavg ||
 			iidxChart.data.worldRecord !== newWR
 		) {
-			updatedChartIDs.push(tachiChart.chartID);
+			updatedChartIDs.add(tachiChart.chartID);
 
 			const mergedData = {
 				...iidxChart.data,
@@ -126,14 +171,90 @@ export async function updateBpiDataCore() {
 		}
 	}
 
-	if (updatedChartIDs.length !== 0) {
+	const sortedBpi2Data = [...bpi2Data.body].sort(
+		(a, b) =>
+			Number(a.mu !== null && a.sigma !== null) - Number(b.mu !== null && b.sigma !== null),
+	);
+
+	for (const d of sortedBpi2Data) {
+		if (d.difficultyLevel !== 11 && d.difficultyLevel !== 12) {
+			continue;
+		}
+
+		const translatedTitle = BPIM2_TITLE_TRANSLATIONS[d.title] ?? d.title;
+		const normalizedTitle = translatedTitle.normalize("NFKC");
+		const tachiSong =
+			(await FindSongOnTitle("iidx", translatedTitle)) ??
+			(normalizedTitle === translatedTitle
+				? null
+				: await FindSongOnTitle("iidx", normalizedTitle));
+
+		if (!tachiSong) {
+			log.warn(`Cannot find BPIM2 song ${d.title}?`);
+			continue;
+		}
+
+		const tachiChart = await FindChartWithSongDifficulty<"iidx-sp">(
+			"iidx-sp",
+			tachiSong.id,
+			d.difficulty,
+		);
+
+		if (!tachiChart) {
+			log.warn(`Cannot find BPIM2 chart ${tachiSong.title} iidx-sp, ${d.difficulty}?`);
+			continue;
+		}
+
+		const iidxChart = tachiChart as ChartDocument<"iidx-sp">;
+		const coefficient = d.coef === -1 ? null : d.coef;
+
+		if (iidxChart.data.notecount !== d.notes) {
+			log.warn(
+				`BPIM2 note count mismatch for ${tachiSong.title} ${d.difficulty}: ` +
+					`${d.notes} upstream, ${iidxChart.data.notecount} in Tachi.`,
+			);
+			continue;
+		}
+
+		if (
+			iidxChart.data.bpiCoefficient !== coefficient ||
+			iidxChart.data.kaidenAverage !== d.kaidenAvg ||
+			iidxChart.data.worldRecord !== d.wrScore ||
+			iidxChart.data.bpi2Mu !== d.mu ||
+			iidxChart.data.bpi2Sigma !== d.sigma
+		) {
+			updatedChartIDs.add(tachiChart.chartID);
+
+			const mergedData = {
+				...iidxChart.data,
+				bpiCoefficient: coefficient,
+				kaidenAverage: d.kaidenAvg,
+				worldRecord: d.wrScore,
+				bpi2Mu: d.mu,
+				bpi2Sigma: d.sigma,
+			};
+
+			const updatedChart = { ...tachiChart, data: mergedData } as ChartDocument;
+			const checksum = ComputeChartStabilityChecksum("iidx-sp", updatedChart);
+
+			await DB.updateTable("chart")
+				.set({
+					data: mergedData as object,
+					derivation_checksum: checksum,
+				})
+				.where("id", "=", tachiChart.chartID)
+				.execute();
+		}
+	}
+
+	if (updatedChartIDs.size !== 0) {
 		log.info(
-			`Finished applying BPI changes in Postgres (${updatedChartIDs.length} charts). ` +
+			`Finished applying BPI changes in Postgres (${updatedChartIDs.size} charts). ` +
 				`Score re-derivation will be handled by the score_rederive queue.`,
 		);
 	}
 
-	return { chartsUpdated: updatedChartIDs.length };
+	return { chartsUpdated: updatedChartIDs.size };
 }
 
 export const ACTION_UpdateBpiData = MakeAction("UPDATE_BPI_DATA", async (taker, _input) => {

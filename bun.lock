@@ -279,6 +279,9 @@
     "typescript/rg-stats": {
       "name": "rg-stats",
       "version": "1.2.1",
+      "dependencies": {
+        "@bpim/bpicalc": "catalog:",
+      },
       "devDependencies": {
         "@typescript/native-preview": "catalog:",
         "@vitest/coverage-v8": "catalog:",
@@ -429,6 +432,7 @@
   },
   "catalog": {
     "@aws-sdk/client-s3": "3.49.0",
+    "@bpim/bpicalc": "0.3.0",
     "@codemirror/lang-sql": "^6.10.0",
     "@codemirror/language": "^6.12.3",
     "@discordjs/builders": "0.5.0",
@@ -763,6 +767,8 @@
     "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.4.6", "", { "os": "win32", "cpu": "arm64" }, "sha512-xzThn87Pf3YrOGTEODFGONmqXpTwUNxovQb72iaUOdcw8sBSY3+3WD8Hm9IhMYLnPi0n32s3L3NWU6+eSjfqFg=="],
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.4.6", "", { "os": "win32", "cpu": "x64" }, "sha512-7++XhnsPlr1HDbor5amovPjOH6vsrFOCdp93iKXhFn6bcMUI6soodj3WWKfgEO6JosKU1W5n3uky3WW9RlRjTg=="],
+
+    "@bpim/bpicalc": ["@bpim/bpicalc@0.3.0", "", {}, "sha512-FDbzVvcykCn9Kcxe0ZTx3ECaKddFI7jgSCCHp0ETmTRMwYe+6V8VtC6glSDQVRjQT3okjcrRQZeDAgi7S/1Ocw=="],
 
     "@bufbuild/buf": ["@bufbuild/buf@1.66.1", "", { "optionalDependencies": { "@bufbuild/buf-darwin-arm64": "1.66.1", "@bufbuild/buf-darwin-x64": "1.66.1", "@bufbuild/buf-linux-aarch64": "1.66.1", "@bufbuild/buf-linux-armv7": "1.66.1", "@bufbuild/buf-linux-x64": "1.66.1", "@bufbuild/buf-win32-arm64": "1.66.1", "@bufbuild/buf-win32-x64": "1.66.1" }, "bin": { "buf": "bin/buf", "protoc-gen-buf-breaking": "bin/protoc-gen-buf-breaking", "protoc-gen-buf-lint": "bin/protoc-gen-buf-lint" } }, "sha512-TelMLptEDfdcl8D+WjKQLzGGYKAwOSVjCPJ21L9X9xT7KZHigTAhHP5idrTCtXKHHPPQB6Sq12wVnhWgFQ9s7w=="],
 

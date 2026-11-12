@@ -624,6 +624,8 @@ export const Testing511SPA: ChartDocument<"iidx-sp"> = {
 		"2dxtraSet": null,
 		hashSHA256: null,
 		bpiCoefficient: null,
+		bpi2Mu: null,
+		bpi2Sigma: null,
 		kaidenAverage: null,
 		worldRecord: null,
 		exhcTier: null,

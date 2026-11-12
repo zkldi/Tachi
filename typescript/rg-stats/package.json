@@ -52,6 +52,9 @@
 		"url": "https://github.com/zkldi/rg-stats/issues"
 	},
 	"homepage": "https://github.com/zkldi/rg-stats#readme",
+	"dependencies": {
+		"@bpim/bpicalc": "catalog:"
+	},
 	"devDependencies": {
 		"@typescript/native-preview": "catalog:",
 		"@vitest/coverage-v8": "catalog:",

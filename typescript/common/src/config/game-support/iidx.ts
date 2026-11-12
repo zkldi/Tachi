@@ -53,6 +53,8 @@ const BASE_IIDX_CHART_DATA = {
 	kaidenAverage: z.number().int().positive().nullable(),
 	worldRecord: z.number().int().positive().nullable(),
 	bpiCoefficient: z.number().positive().nullable(),
+	bpi2Mu: z.number().nullable(),
+	bpi2Sigma: z.number().positive().nullable(),
 };
 
 const RANDOM_SCHEMA = z.enum(["NONRAN", "MIRROR", "R-RANDOM", "RANDOM", "S-RANDOM"]);
@@ -194,6 +196,7 @@ export const GAME_IIDX_SP_CONF = {
 			canSetGoalsOn: false,
 		},
 		BPI: {
+			// this isn't really true anymore, but how the hell do i explain what v2 does?
 			description:
 				"A rating system for Kaiden level play. Only applies to 11s and 12s. A BPI of 0 states the score is equal to the Kaiden Average for that chart. A BPI of 100 is equal to the world record.",
 			canSetGoalsOn: true,

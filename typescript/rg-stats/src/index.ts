@@ -1,4 +1,5 @@
 export * as PoyashiBPI from "./algorithms/poyashi-bpi";
+export * as PoyashiBPI2 from "./algorithms/poyashi-bpi2";
 export * as CHUNITHMRating from "./algorithms/chunithm-rating";
 export * as Jubility from "./algorithms/jubility";
 export * as Volforce from "./algorithms/volforce";
