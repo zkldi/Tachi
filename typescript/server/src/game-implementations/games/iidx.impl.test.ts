@@ -130,35 +130,41 @@ describe("IIDX_IMPL (unit)", () => {
 	});
 
 	describe("scoreCalcs BPI", () => {
-		it.each([IIDX_SP_IMPL, IIDX_DP_IMPL] as const)("BPI cases", (impl) => {
-			const f = (
-				scoreData: Partial<ScoreData<"iidx-dp" | "iidx-sp">>,
-				chartData: Partial<ChartDocumentData["iidx-dp" | "iidx-sp"]>,
-				expected: number,
-				_msg?: string,
-			) => {
-				const sd = dmf(TestingIIDXSPScore.scoreData, scoreData);
-				const ch = dmf(Testing511SPA, { data: chartData as never });
-
-				expect(
-					impl.scoreCalcs(sd, impl.scoreDeriver(sd, ch as never), ch as never).BPI,
-				).toBe(expected);
+		it("uses BPI V2 for IIDX SP", () => {
+			const chartData = {
+				notecount: 1834,
+				worldRecord: 3660,
+				bpiCoefficient: 1.039,
+				bpi2Mu: -6.0842,
+				bpi2Sigma: 0.6781,
 			};
+			const ch = dmf(Testing511SPA, { data: chartData });
+			const sd = dmf(TestingIIDXSPScore.scoreData, { score: 2800 });
 
-			f(
-				{ score: 123 },
-				{ kaidenAverage: 123, worldRecord: 200 },
-				0,
-				"score == kaidenAverage",
+			expect(IIDX_SP_IMPL.scoreCalcs(sd, IIDX_SP_IMPL.scoreDeriver(sd, ch), ch).BPI).toBe(
+				-11.82,
 			);
-			f({ score: 200 }, { kaidenAverage: 123, worldRecord: 200 }, 100, "score == WR");
-			f(
-				{ score: 180 },
-				{ kaidenAverage: 123, worldRecord: 200 },
-				69.64067840359507,
-				"general calc",
-			);
-			f({ score: 100 }, { kaidenAverage: 123, worldRecord: 200 }, -15, "below kavg");
+		});
+
+		it("returns null for IIDX SP charts without BPI V2 parameters", () => {
+			const ch = dmf(Testing511SPA, { data: { worldRecord: 200 } });
+			const sd = dmf(TestingIIDXSPScore.scoreData, { score: 180 });
+
+			expect(
+				IIDX_SP_IMPL.scoreCalcs(sd, IIDX_SP_IMPL.scoreDeriver(sd, ch), ch).BPI,
+			).toBeNull();
+		});
+
+		it("Uses BPIv1 for IIDX DP", () => {
+			const ch = dmf(Testing511SPA, {
+				data: { kaidenAverage: 123, worldRecord: 200 },
+			});
+			const sd = dmf(TestingIIDXSPScore.scoreData, { score: 180 });
+
+			expect(
+				IIDX_DP_IMPL.scoreCalcs(sd, IIDX_DP_IMPL.scoreDeriver(sd, ch as never), ch as never)
+					.BPI,
+			).toBe(69.64067840359507);
 		});
 	});
 

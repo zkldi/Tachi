@@ -8,7 +8,7 @@ import type {
 import { CreatePBMergeFor } from "#game-implementations/utils/pb-merge";
 import { ProfileAvgBestN } from "#game-implementations/utils/profile-calc";
 import { SessionAvgBest10For } from "#game-implementations/utils/session-calc";
-import { PoyashiBPI } from "rg-stats";
+import { PoyashiBPI, PoyashiBPI2 } from "rg-stats";
 
 import {
 	IIDXLIKE_PB_RANKING_VALUES,
@@ -64,15 +64,17 @@ export const IIDX_SP_IMPL: GameImplementation<"iidx-sp"> = {
 	pbRankingValues: IIDXLIKE_PB_RANKING_VALUES,
 	scoreCalcs: (scoreData, _derivedData, chart) => {
 		const bpi =
-			chart.data.kaidenAverage === null || chart.data.worldRecord === null
+			chart.data.worldRecord === null ||
+			chart.data.bpi2Mu === null ||
+			chart.data.bpi2Sigma === null
 				? null
-				: PoyashiBPI.calculate(
-						scoreData.score,
-						chart.data.kaidenAverage,
-						chart.data.worldRecord,
-						chart.data.notecount * 2,
-						chart.data.bpiCoefficient,
-					);
+				: PoyashiBPI2.calculate(scoreData.score, {
+						notecount: chart.data.notecount,
+						worldRecord: chart.data.worldRecord,
+						coefficient: chart.data.bpiCoefficient,
+						mu: chart.data.bpi2Mu,
+						sigma: chart.data.bpi2Sigma,
+					});
 
 		const ncValue = chart.data.ncTier?.value ?? chart.levelNum;
 		const hcValue = Math.max(chart.data.hcTier?.value ?? 0, ncValue);
@@ -130,6 +132,8 @@ export const IIDX_SP_IMPL: GameImplementation<"iidx-sp"> = {
 		"data.kaidenAverage",
 		"data.worldRecord",
 		"data.bpiCoefficient",
+		"data.bpi2Mu",
+		"data.bpi2Sigma",
 		"data.ncTier",
 		"data.hcTier",
 		"data.exhcTier",

@@ -298,6 +298,8 @@ async function ParseIIDXMDB() {
 						hashSHA256: null,
 						"2dxtraSet": null,
 						bpiCoefficient: null,
+						bpi2Mu: null,
+						bpi2Sigma: null,
 						kaidenAverage: null,
 						worldRecord: null,
 					},
