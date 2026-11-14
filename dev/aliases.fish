@@ -8,6 +8,7 @@ defnew gp=git push
 defnew gsw=git switch
 defnew gswc=git switch -c
 defnew gsm=git switch main
+defnew gsml=git switch main && git pull
 defnew gl=git pull
 defnew fj="git status"
 defnew gaa="git add :/"

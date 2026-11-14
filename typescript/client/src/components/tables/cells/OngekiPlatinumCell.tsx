@@ -1,5 +1,5 @@
 import { type integer } from "tachi-common";
-import { FmtStars, StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
+import { FmtStars, type StarEnum, StarEnumToInt } from "tachi-common/config/game-support/ongeki";
 
 export function StarField({ stars, compact }: { compact: boolean; stars: integer | StarEnum }) {
 	if (typeof stars !== "number") {

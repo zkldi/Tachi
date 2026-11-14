@@ -1,32 +1,7 @@
-// Canonical SQL schema for the seeds SQLite db.
-//
-// Strategy: *per-collection* tables mirror the on-disk files exactly
-// (so a row in `charts_iidx_sp` corresponds 1:1 to a JSON object in
-// `db/seeds/charts-iidx-sp.json`). We project the scalar fields we
-// query on into columns and keep the rest as a JSON blob - SQLite's
-// `json_extract` makes that queryable when needed.
-//
-// Cross-cutting questions ("how many charts does iidx-sp have across all
-// versions?") get answered by materialised views built over per-collection
-// tables. We build the union of charts/songs lazily - i.e. the view DDL
-// references every `charts_<game>` table that has been created.
-//
-// Table name convention: lowercase, '-' -> '_', strip '.json'.
-
 export function tableNameFor(collection: string): string {
 	return collection.replace(/\.json$/u, "").replace(/-/gu, "_");
 }
 
-// Schemas are table-flavoured: each collection maps to one of these.
-//
-//   "songs"   -> songs-*.json
-//   "charts"  -> charts-*.json
-//   "folders" -> folders.json
-//   "goals"   -> goals.json
-//   "quests"  -> quests.json
-//   "questlines" -> questlines.json
-//   "tables"  -> tables.json
-//   "bms-course-lookup" -> bms-course-lookup.json
 export type Flavour =
 	| "bms-course-lookup"
 	| "charts"
@@ -65,9 +40,6 @@ export function flavourFor(collection: string): Flavour {
 	throw new Error(`Unknown seeds collection flavour: ${collection}`);
 }
 
-// Columns that each flavour exposes as real columns (everything else goes
-// into the `raw` JSON blob). Chosen to cover the common queries:
-// filter by game/playtype/difficulty/level, join song<->chart.
 export const FLAVOUR_COLUMNS: Record<Flavour, string[]> = {
 	"bms-course-lookup": ["md5sums", "game", "set", "value", "title"],
 	charts: [
@@ -98,18 +70,12 @@ export const FLAVOUR_COLUMNS: Record<Flavour, string[]> = {
 	],
 };
 
-// DDL for per-collection tables. `raw` is the full JSON object; the rest are
-// extracted scalar projections for indexing. Columns beyond `raw` are declared
-// as `JSON` when they are arrays/objects (e.g. chart.versions, goal.criteria)
-// and otherwise as TEXT/INTEGER as appropriate. SQLite doesn't care about
-// declared types for storage, but having them helps readability.
 export function ddlFor(collection: string): string {
 	const tbl = tableNameFor(collection);
 	const flav = flavourFor(collection);
 	const cols = FLAVOUR_COLUMNS[flav];
 
-	// Primary key per flavour.
-	const pk = {
+	const primaryKeys = {
 		"bms-course-lookup": "md5sums",
 		charts: "id",
 		folders: "id",
@@ -122,7 +88,7 @@ export function ddlFor(collection: string): string {
 
 	const colDecls = cols
 		.map((c) => {
-			if (c === pk) {
+			if (c === primaryKeys) {
 				return `"${c}" PRIMARY KEY`;
 			}
 			if (c === "versions" || c === "criteria") {
@@ -164,8 +130,6 @@ export function indexesFor(collection: string): string[] {
 	return idx;
 }
 
-// Meta table tracks what we have ingested. Key is the collection filename,
-// value is the sha256(prefix-16) of the JSON bytes.
 export const META_DDL = `
 CREATE TABLE IF NOT EXISTS "_meta" (
 	"name" TEXT PRIMARY KEY,
@@ -175,8 +139,6 @@ CREATE TABLE IF NOT EXISTS "_meta" (
 );
 `;
 
-// Row projection: given a JSON row and the flavour, produce the ordered values
-// to bind to the INSERT (followed by the full JSON string as `raw`).
 export function projectRow(collection: string, row: Record<string, unknown>): unknown[] {
 	const flav = flavourFor(collection);
 	const cols = FLAVOUR_COLUMNS[flav];

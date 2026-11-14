@@ -162,66 +162,9 @@ services:
       - /tachi/node_modules/
       - /tachi/.bun
 
-  # Local observability stack (Grafana + Prometheus + Alloy). Grafana UI: http://localhost:3005
-  # Alloy scrapes the API metrics endpoint at tachi-dev:9779 and remote-writes into Prometheus.
-  tachi-grafana:
-    container_name: tachi-grafana
-    image: grafana/grafana:12.4.2
-    restart: unless-stopped
-    depends_on:
-      - tachi-prometheus
-    ports:
-      - "3005:3000"
-    environment:
-      GF_SECURITY_ADMIN_USER: tachi
-      GF_SECURITY_ADMIN_PASSWORD: tachi
-      GF_USERS_ALLOW_SIGN_UP: "false"
-      GF_SERVER_HTTP_ADDR: 0.0.0.0
-      GF_SERVER_HTTP_PORT: "3000"
-      GF_SERVER_ROOT_URL: http://localhost:3005
-    volumes:
-      - tachi-grafana:/var/lib/grafana
-      - ./observability/grafana/provisioning:/etc/grafana/provisioning
-      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards
-
-  tachi-prometheus:
-    container_name: tachi-prometheus
-    image: prom/prometheus:v3.11.0
-    restart: unless-stopped
-    command:
-      - --config.file=/etc/prometheus/prometheus.yml
-      - --storage.tsdb.path=/prometheus
-      - --web.enable-lifecycle
-      - --web.enable-remote-write-receiver
-    ports:
-      - "9090:9090"
-    volumes:
-      - tachi-prometheus:/prometheus
-      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
-
-  tachi-alloy:
-    container_name: tachi-alloy
-    image: grafana/alloy:v1.15.0
-    restart: unless-stopped
-    depends_on:
-      - tachi-prometheus
-    command:
-      - run
-      - --server.http.listen-addr=0.0.0.0:12345
-      - --storage.path=/var/lib/alloy/data
-      - /etc/alloy/config.alloy
-    ports:
-      - "12345:12345"
-    # Writable WAL path (named volumes are often root-owned; Alloy runs non-root and can crash-loop).
-    tmpfs:
-      - /var/lib/alloy/data
-    volumes:
-      - ./observability/alloy-config.alloy:/etc/alloy/config.alloy
 
 volumes:
   tachi-redis:
   tachi-logs:
   tachi-postgres:
   tachi-rustfs:
-  tachi-grafana:
-  tachi-prometheus:

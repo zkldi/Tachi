@@ -5,7 +5,7 @@ import Muted from "#components/util/Muted";
 import { ChangeOpacity } from "#util/color-opacity";
 import { FormatGameEnumMetric, ToFixedFloor } from "#util/misc";
 import React, { useLayoutEffect, useRef, useState } from "react";
-import { type GameConfig, GetScoreMetricConf, V3Game } from "tachi-common";
+import { type GameConfig, GetScoreMetricConf, type V3Game } from "tachi-common";
 
 import barStyles from "./FolderEnumProgressBar.module.scss";
 
