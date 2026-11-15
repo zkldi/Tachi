@@ -12,7 +12,6 @@ async function seedGazerChart() {
 	await DB.insertInto("song")
 		.values({
 			id: BMSGazerSong.id,
-			legacy_id: 27_339,
 			game_group: "bms",
 			title: BMSGazerSong.title,
 			artist: BMSGazerSong.artist,

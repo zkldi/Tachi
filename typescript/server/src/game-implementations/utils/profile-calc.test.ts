@@ -16,7 +16,6 @@ async function seedChunithmChartsWithPbs(userId: number, ratings: Array<number>)
 			await DB.insertInto("song")
 				.values({
 					id: songId,
-					legacy_id: n,
 					game_group: "chunithm",
 					title: "T",
 					artist: "A",
@@ -116,7 +115,6 @@ describe("profile-calc (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: n,
 				game_group: "chunithm",
 				title: "T",
 				artist: "A",

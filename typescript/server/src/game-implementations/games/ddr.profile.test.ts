@@ -31,7 +31,6 @@ async function seedDdrPbRow(
 	await DB.insertInto("song")
 		.values({
 			id: songId,
-			legacy_id: 300_000 + n,
 			game_group: "ddr",
 			title: "T",
 			artist: "A",

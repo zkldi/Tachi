@@ -35,7 +35,6 @@ describe("LoadSessionDocumentById", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 1,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",

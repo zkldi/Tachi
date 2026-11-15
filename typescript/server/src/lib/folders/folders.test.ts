@@ -89,7 +89,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_800_001,
 				game_group: "iidx",
 				title: "BFQ Song",
 				artist: "X",
@@ -157,7 +156,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_800_010,
 				game_group: "iidx",
 				title: "OR precedence song",
 				artist: "Z",
@@ -239,7 +237,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_800_002,
 				game_group: "iidx",
 				title: "BFQ Song 2",
 				artist: "Y",

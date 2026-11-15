@@ -21,7 +21,6 @@ describe("GetRecentUserGameScores / GetRecentUserGameHighlights (Postgres)", () 
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 6_000_000 + n,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",

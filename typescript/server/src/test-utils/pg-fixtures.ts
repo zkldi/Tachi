@@ -34,7 +34,6 @@ export async function seedMinimalIidxSpChart() {
 	await DB.insertInto("song")
 		.values({
 			id: songId,
-			legacy_id: 90_000 + n,
 			game_group: "iidx",
 			title: "Minimal IIDX Test Chart",
 			artist: "Tester",

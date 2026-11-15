@@ -38,7 +38,6 @@ async function seed511Another() {
 	await DB.insertInto("song")
 		.values({
 			id: Testing511Song.id,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -69,7 +68,6 @@ async function seedLeggendariaFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: LEG_SONG_ID,
-			legacy_id: 24_011,
 			game_group: "iidx",
 			title: "冬椿 ft. Kanae Asaba",
 			artist: "artist",

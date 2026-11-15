@@ -49,7 +49,6 @@ async function seedMaimaiDxConverterFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingMaimaiDXSongConverter.id,
-			legacy_id: 11294,
 			game_group: "maimaidx",
 			title: TestingMaimaiDXSongConverter.title,
 			artist: TestingMaimaiDXSongConverter.artist,

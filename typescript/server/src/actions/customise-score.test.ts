@@ -46,7 +46,6 @@ describe("ACTION_CustomiseScore", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: n,
 				game_group: "iidx",
 				title: "S",
 				artist: "A",

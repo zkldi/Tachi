@@ -27,7 +27,6 @@ async function seedIidxChartAndScores(opts: { otherUserId: number; targetUserId:
 	await DB.insertInto("song")
 		.values({
 			id: songPg,
-			legacy_id: 77_000 + n,
 			game_group: "iidx",
 			title: "Chart Scores Test",
 			artist: "Tester",
@@ -114,7 +113,6 @@ describe("GET /api/v1/users/:userID/games/:game/scores/:chartID", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songPg,
-				legacy_id: 78_000 + seedCounter,
 				game_group: "iidx",
 				title: "Empty",
 				artist: "A",

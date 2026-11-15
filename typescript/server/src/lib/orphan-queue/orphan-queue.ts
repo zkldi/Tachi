@@ -3,7 +3,6 @@ import type { Database, Game } from "tachi-db";
 import { GetChartById } from "#lib/db-formats/chart";
 import { log } from "#lib/log/log";
 import DB from "#services/pg/db";
-import { GetNextBmsPmsSongLegacyId } from "#utils/db";
 import { DedupeArr } from "#utils/misc";
 import { type Kysely, sql } from "kysely";
 import {
@@ -71,7 +70,6 @@ async function writeBmsPmsSongAndChart(
 	songDoc: SongDocument<"bms" | "pms">,
 	chartDoc: ChartDocument,
 	songNewID: string,
-	songLegacyId: integer,
 ) {
 	const ftsDocument = [...songDoc.searchTerms, ...songDoc.altTitles].filter(Boolean).join(" ");
 
@@ -79,7 +77,6 @@ async function writeBmsPmsSongAndChart(
 		.insertInto("song")
 		.values({
 			id: songNewID,
-			legacy_id: songLegacyId,
 			game_group: gameGroup,
 			title: songDoc.title,
 			artist: songDoc.artist,
@@ -178,14 +175,12 @@ export async function HandleOrphanQueue<TGame extends V3Game>(
 	if (playcount >= queueSize) {
 		log.info(`Song ${chartName} was unorphaned by userIDs ${uniqueUsersArr.join(", ")}.`);
 
-		const songLegacyId = await GetNextBmsPmsSongLegacyId(gameGroup);
-
-		log.debug(`${chartName} has been assigned songID ${songLegacyId}.`);
-
 		const songDocU = { ...orphan.songDoc };
 		let chartDocU = { ...orphan.chartDoc };
 
 		const songNewID = CreateSongID();
+		log.debug(`${chartName} has been assigned songID ${songNewID}.`);
+
 		songDocU.id = songNewID;
 		chartDocU = { ...chartDocU, song: songDocU };
 
@@ -197,7 +192,6 @@ export async function HandleOrphanQueue<TGame extends V3Game>(
 				songDocU as SongDocument<"bms" | "pms">,
 				chartDocU,
 				songNewID,
-				songLegacyId,
 			);
 
 			await trx
@@ -249,15 +243,14 @@ export async function DeorphanIfInQueue<TGame extends V3Game>(
 
 	log.info(`Song ${songDoc.title} was unorphaned forcefully.`);
 
-	const songLegacyId = await GetNextBmsPmsSongLegacyId(gameGroup);
-
-	log.debug(`${songDoc.title} has been assigned songID ${songLegacyId}.`);
-
 	const songDocU = { ...songDoc };
 	let chartDocU = { ...chartDoc };
 
 	const songNewID = CreateSongID();
 	songDocU.id = songNewID;
+
+	log.debug(`${songDoc.title} has been assigned songID ${songNewID}.`);
+
 	chartDocU = { ...chartDocU, song: songDocU };
 
 	await DB.transaction().execute(async (trx) => {
@@ -268,7 +261,6 @@ export async function DeorphanIfInQueue<TGame extends V3Game>(
 			songDocU as SongDocument<"bms" | "pms">,
 			chartDocU,
 			songNewID,
-			songLegacyId,
 		);
 
 		await trx

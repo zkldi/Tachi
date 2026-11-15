@@ -29,7 +29,7 @@ function chartDupKeyDecls(): DuplicateKeyDecl[] {
 const SongChartKeys: Record<string, DuplicateKeyDecl[]> = {};
 
 for (const gameGroup of allSupportedGameGroups) {
-	SongChartKeys[`songs-${gameGroup}`] = ["id", "legacySongID"];
+	SongChartKeys[`songs-${gameGroup}`] = ["id"];
 }
 
 for (const v3Game of ALL_GAMES) {

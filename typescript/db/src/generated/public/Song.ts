@@ -11,8 +11,6 @@ export type song_id = string;
 export default interface SongTable {
   id: ColumnType<song_id, song_id, song_id>;
 
-  legacy_id: ColumnType<number, number, number>;
-
   game_group: ColumnType<GameGroup, GameGroup, GameGroup>;
 
   title: ColumnType<string, string, string>;

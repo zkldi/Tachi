@@ -60,7 +60,6 @@ async function seedPopnCgFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingPopnSong.id,
-			legacy_id: 1,
 			game_group: "popn",
 			title: TestingPopnSong.title,
 			artist: TestingPopnSong.artist,

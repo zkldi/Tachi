@@ -170,7 +170,6 @@ export async function ImportSeedsSubsetForTests(
 		for (const s of songs) {
 			songRows.push({
 				id: s.id,
-				legacy_id: s.legacySongID,
 				game_group: gg,
 				title: s.title,
 				artist: s.artist,
@@ -314,7 +313,6 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 				for (const s of seeds) {
 					rows.push({
 						id: s.id,
-						legacy_id: s.legacySongID,
 						game_group: gameGroup,
 						title: s.title,
 						artist: s.artist,

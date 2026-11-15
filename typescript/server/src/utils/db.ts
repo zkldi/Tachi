@@ -130,22 +130,6 @@ function whereUserIdOnQuestSub(userID: UserIDFilter | undefined) {
 	return (eb: any) => eb("quest_sub.user_id", "in", ids);
 }
 
-/**
- * Next numeric `song.legacy_id` for BMS/PMS - `max(existing) + 1`, or `1` if none.
- * Replaces Mongo `counters` `*-song-id` documents.
- *
- * This shit sucks and should be dropped asap: TODO(zk)
- */
-export async function GetNextBmsPmsSongLegacyId(game: "bms" | "pms"): Promise<integer> {
-	const row = await DB.selectFrom("song")
-		.select(sql<number>`coalesce(max(song.legacy_id), 0)::int`.as("m"))
-		.where("game_group", "=", game)
-		.limit(1)
-		.executeTakeFirst();
-
-	return (row?.m ?? 0) + 1;
-}
-
 export async function GetRelevantSongsAndCharts(scores: Array<PBScoreDocument | ScoreDocument>) {
 	const songIDs = [...new Set(scores.map((e) => e.songID))];
 	const chartIDs = [...new Set(scores.map((e) => e.chartID))];

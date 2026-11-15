@@ -303,7 +303,6 @@ describe.each([
 			await DB.insertInto("song")
 				.values({
 					id: chart.song.id,
-					legacy_id: 27_339,
 					game_group: gameGroup,
 					title: chart.song.title,
 					artist: chart.song.artist,

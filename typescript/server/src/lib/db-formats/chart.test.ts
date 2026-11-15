@@ -7,14 +7,12 @@ afterAll(() => CloseServerConnection());
 
 const SONG_PG_ID = "S_TEST_CHARTFMT_SONG_001";
 const CHART_ID = "C_TEST_CHARTFMT_CHART_001";
-const SONG_LEGACY_ID = 50_001;
 const CHART_LEGACY_ID = "c2311194e3897ddb5745b1760d2c0141f933e683";
 
 async function seedSong() {
 	await DB.insertInto("song")
 		.values({
 			id: SONG_PG_ID,
-			legacy_id: SONG_LEGACY_ID,
 			game_group: "iidx",
 			title: "Test",
 			artist: "Artist",

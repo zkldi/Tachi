@@ -56,7 +56,6 @@ async function seedChunithmChartsWithPbs(userId: number, ratings: Array<number>)
 			await DB.insertInto("song")
 				.values({
 					id: songId,
-					legacy_id: 80_000 + n,
 					game_group: "chunithm",
 					title: "P",
 					artist: "A",
@@ -111,7 +110,6 @@ async function seedBbkkChart() {
 	await DB.insertInto("song")
 		.values({
 			id: CHUNITHMBBKKSong.id,
-			legacy_id: 3,
 			game_group: "chunithm",
 			title: CHUNITHMBBKKSong.title,
 			artist: CHUNITHMBBKKSong.artist,

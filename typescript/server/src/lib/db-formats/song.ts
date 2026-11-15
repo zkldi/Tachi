@@ -14,17 +14,7 @@ export const SELECT_SONG_DOCUMENT = [
 	"song.game_group as song_game_group",
 ] as const;
 
-/** Song row fields needed to write PG rows back into `songs-${game}.json`. */
-export const SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT = [
-	...SELECT_SONG_DOCUMENT,
-	"song.legacy_id as song_legacy_id",
-] as const;
-
-export type SongSeedExportRow = Selection<
-	Database,
-	"song",
-	(typeof SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT)[number]
->;
+export type SongSeedExportRow = Selection<Database, "song", (typeof SELECT_SONG_DOCUMENT)[number]>;
 
 /** Full `song` row for single-table queries (e.g. title search). */
 export const SELECT_SONG_ROW = [
@@ -42,13 +32,13 @@ export const SELECT_SONG_ROW = [
 export type SongRow = Selection<Database, "song", (typeof SELECT_SONG_ROW)[number]>;
 
 export async function GetSongByID(
-	game: GameGroup,
+	gameGroup: GameGroup,
 	id: string,
 ): Promise<{ doc: SongDocument; newSongID: string } | undefined> {
 	const row = await DB.selectFrom("song")
 		.select(SELECT_SONG_DOCUMENT)
 		.where("song.id", "=", id)
-		.where("game_group", "=", game)
+		.where("game_group", "=", gameGroup)
 		.limit(1)
 		.executeTakeFirst();
 
@@ -62,7 +52,7 @@ export async function GetSongByID(
 		artist: row.song_artist,
 		searchTerms: row.song_search_terms,
 		altTitles: row.song_alt_titles,
-		data: row.song_data as SongDocumentData[typeof game],
+		data: row.song_data as SongDocumentData[typeof gameGroup],
 	};
 
 	return { doc, newSongID: row.song_id };
@@ -109,21 +99,18 @@ export function ToSongDocument(
 		artist: row.song_artist,
 		searchTerms: row.song_search_terms,
 		altTitles: row.song_alt_titles,
-		data: row.song_data as SongDocumentData[typeof row.song_game_group],
+		data: row.song_data as SongDocumentData[GameGroup],
 	};
 }
 
-/** Shape expected by seed import (`legacySongID` + id fields PG uses elsewhere). */
 export function ToSeedSongDocument(row: SongSeedExportRow): SEEDS_SongDocument<GameGroup> {
-	const gg = row.song_game_group;
 	return {
 		id: row.song_id,
 		title: row.song_title,
 		artist: row.song_artist,
 		searchTerms: row.song_search_terms,
 		altTitles: row.song_alt_titles,
-		data: row.song_data as SongDocumentData[typeof gg],
-		legacySongID: Number(row.song_legacy_id),
+		data: row.song_data as SongDocumentData[GameGroup],
 	} as SEEDS_SongDocument<GameGroup>;
 }
 
@@ -134,6 +121,6 @@ export function ToSongDocumentFromRow(row: SongRow): SongDocument {
 		artist: row.artist,
 		searchTerms: row.search_terms,
 		altTitles: row.alt_titles,
-		data: row.data as SongDocumentData[typeof row.game_group],
+		data: row.data as SongDocumentData[GameGroup],
 	};
 }

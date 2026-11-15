@@ -49,7 +49,6 @@ describe("GetRecentActivity (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: opts.songId,
-				legacy_id: 7_000_000 + n,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",
@@ -230,7 +229,6 @@ describe("GetRecentActivity (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sdvxSongId,
-				legacy_id: 92_000,
 				game_group: "sdvx",
 				title: "sdvx",
 				artist: "a",

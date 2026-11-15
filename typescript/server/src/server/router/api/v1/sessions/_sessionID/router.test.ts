@@ -23,7 +23,6 @@ async function seedSessionFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: SONG_PG,
-			legacy_id: SONG_LEGACY,
 			game_group: "iidx",
 			title: "5.1.1.",
 			artist: "dj nagureo",

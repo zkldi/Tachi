@@ -121,7 +121,6 @@ describe("POST /api/v1/import/orphans", () => {
 		await DB.insertInto("song")
 			.values({
 				id: "S_IMP_ORPHAN",
-				legacy_id: 1,
 				game_group: "iidx",
 				title: "5.1.1.",
 				artist: "dj nagureo",

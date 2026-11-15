@@ -34,7 +34,6 @@ async function seedIidxSongAndChart() {
 	await DB.insertInto("song")
 		.values({
 			id: SONG_PG_ID,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: "5.1.1.",
 			artist: "dj nagureo",

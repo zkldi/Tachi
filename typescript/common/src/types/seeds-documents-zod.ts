@@ -118,7 +118,6 @@ function seedsSongDocumentSchemaForGroup<G extends GameGroup>(group: G) {
 		artist: z.string(),
 		data: songData,
 		id: SEEDS_TachiIdSchema("S"),
-		legacySongID: z.number(),
 		searchTerms: z.array(z.string()),
 		title: z.string(),
 	}) as unknown as z.ZodType<{
@@ -126,7 +125,6 @@ function seedsSongDocumentSchemaForGroup<G extends GameGroup>(group: G) {
 		artist: string;
 		data: SongDocumentData[G];
 		id: string;
-		legacySongID: number;
 		searchTerms: Array<string>;
 		title: string;
 	}>;

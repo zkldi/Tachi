@@ -15,7 +15,6 @@ describe("GetAdjacentAbove / GetAdjacentBelow (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 3_000_000 + k,
 				game_group: "usc",
 				title: "T",
 				artist: "A",

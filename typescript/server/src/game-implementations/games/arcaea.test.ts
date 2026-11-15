@@ -56,7 +56,6 @@ async function seedSheriruthChart() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingArcaeaSheriruthSong.id,
-			legacy_id: 19,
 			game_group: "arcaea",
 			title: TestingArcaeaSheriruthSong.title,
 			artist: TestingArcaeaSheriruthSong.artist,

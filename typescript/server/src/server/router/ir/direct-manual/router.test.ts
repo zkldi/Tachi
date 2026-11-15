@@ -30,7 +30,6 @@ async function seed511() {
 	await DB.insertInto("song")
 		.values({
 			id: Testing511Song.id,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -61,7 +60,6 @@ async function seedChunithmBbkk() {
 	await DB.insertInto("song")
 		.values({
 			id: CHUNITHMBBKKSong.id,
-			legacy_id: 900_001,
 			game_group: "chunithm",
 			title: CHUNITHMBBKKSong.title,
 			artist: CHUNITHMBBKKSong.artist,

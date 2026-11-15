@@ -1,5 +1,5 @@
 node_modules
-
+.DS_Store
 # Local env (templates are .env.example; setup copies them to .env)
 .env
 **/.env

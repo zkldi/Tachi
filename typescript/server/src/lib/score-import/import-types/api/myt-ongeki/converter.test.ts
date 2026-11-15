@@ -53,7 +53,6 @@ async function seedOngekiConverterFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingOngekiSong.id,
-			legacy_id: 678,
 			game_group: "ongeki",
 			title: TestingOngekiSong.title,
 			artist: TestingOngekiSong.artist,

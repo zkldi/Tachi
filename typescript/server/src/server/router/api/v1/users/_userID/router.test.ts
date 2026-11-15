@@ -15,7 +15,6 @@ async function seedSongAndChart() {
 	await DB.insertInto("song")
 		.values({
 			id,
-			legacy_id: entityCounter,
 			game_group: "iidx",
 			title: "Test Song",
 			artist: "Test Artist",

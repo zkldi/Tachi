@@ -18,7 +18,6 @@ describe("GET /api/v1/users/:userID/games/:game/tables/:tableID", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 1,
 				game_group: "iidx",
 				title: "S",
 				artist: "A",

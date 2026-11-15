@@ -58,7 +58,6 @@ async function seedWaccaChart() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingWaccaPupaSong.id,
-			legacy_id: 77,
 			game_group: "wacca",
 			title: TestingWaccaPupaSong.title,
 			artist: TestingWaccaPupaSong.artist,

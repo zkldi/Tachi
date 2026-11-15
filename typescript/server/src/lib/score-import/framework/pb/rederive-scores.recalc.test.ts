@@ -64,7 +64,6 @@ async function insertSongAndChart(chartDoc: ChartDocument<"iidx-sp">) {
 	await DB.insertInto("song")
 		.values({
 			id: songId,
-			legacy_id: 91_000 + n,
 			game_group: "iidx",
 			title: chartDoc.song.title,
 			artist: chartDoc.song.artist,

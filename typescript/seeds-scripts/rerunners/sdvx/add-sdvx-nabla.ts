@@ -44,7 +44,6 @@ type SeedSong = {
 	artist: string;
 	data: { displayVersion: string };
 	id: string;
-	legacySongID: number;
 	searchTerms: string[];
 	title: string;
 };
@@ -137,8 +136,6 @@ for (const c of charts) {
 	chartByKey.set(`${c.data.inGameID}-${c.difficulty}`, c);
 }
 
-let nextLegacySongID = songs.reduce((m, s) => Math.max(m, s.legacySongID), 0) + 1;
-
 let newSongCount = 0;
 let newChartCount = 0;
 let versionTagCount = 0;
@@ -158,7 +155,6 @@ for (const entry of xml.mdb.music) {
 			artist: fixString(entry.info.artist_name),
 			data: { displayVersion: convertVersion(entry.info.version["#text"]) },
 			id: CreateSongID(),
-			legacySongID: nextLegacySongID++,
 			searchTerms: [entry.info.ascii],
 			title: fixedTitle,
 		};

@@ -20,7 +20,6 @@ describe("ACTION_DeleteSession", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 800_000 + n,
 				game_group: "iidx",
 				title: "S",
 				artist: "A",

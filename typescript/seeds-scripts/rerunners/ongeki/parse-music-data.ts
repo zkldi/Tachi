@@ -127,7 +127,6 @@ const main = async () => {
 			if (song === undefined) {
 				song = {
 					id: CreateSongID(),
-					legacySongID: songs[songs.length - 1]!.legacySongID + 1,
 					altTitles: [],
 					searchTerms: [],
 					artist: inputSong.artist,

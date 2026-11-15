@@ -134,12 +134,6 @@ function GetSongCollectionGameGroup(filename) {
 	return result[1];
 }
 
-export function GetFreshSongIDGenerator(gameGroup) {
-	const existing = ReadCollection(`songs-${gameGroup}.json`);
-	let max = existing.reduce((acc, s) => Math.max(acc, s.legacySongID ?? 0), 0);
-	return () => ++max;
-}
-
 export {
 	CreateChartID,
 	CreateFolderID,
