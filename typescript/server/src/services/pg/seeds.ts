@@ -407,7 +407,6 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 			folderSlugToId = buildFolderGameSlugToIdMap(seeds);
 			const rows: Array<NewFolder> = seeds.map((f) => ({
 				id: f.id,
-				legacy_id: f.legacyFolderID,
 				game: f.game as PgGame,
 				inactive: f.inactive,
 				title: f.title,

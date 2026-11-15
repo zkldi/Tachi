@@ -2,7 +2,6 @@ import { Command } from "commander";
 
 import { GetGameConfig } from "../../../common/src/index.ts";
 import { CreateFolderID, MutateCollection, CreateTableID } from "../../util.js";
-import { Random20Hex } from "../../../server/src/utils/misc.ts";
 
 const tableMainFolders = [];
 const tableAllFolders = [];
@@ -24,7 +23,6 @@ MutateCollection("folders.json", (folders) => {
 		const folder = {
 			game: "popn",
 			inactive: false,
-			legacyFolderID: Random20Hex(),
 			searchTerms: [],
 			slug: `ge-${lb}-le-${ub}-${options.version}`,
 			title: `Level ${lb}-${ub} (${fmtVersion})`,
@@ -44,7 +42,6 @@ MutateCollection("folders.json", (folders) => {
 		const folder = {
 			game: "popn",
 			inactive: false,
-			legacyFolderID: Random20Hex(),
 			searchTerms: [],
 			slug: `${i}-${options.version}`,
 			title: `Level ${i} (${fmtVersion})`,

@@ -47,7 +47,6 @@ describe("GET /api/v1/users/:userID/games/:game/tables/:tableID", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: "testing_folder",
 				game: "iidx-sp",
 				inactive: false,
 				title: TestingIIDXFolderSP10.title,

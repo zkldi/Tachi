@@ -10,7 +10,6 @@ import {
 	CreateSongID,
 	CreateTableID,
 } from "tachi-common";
-import crypto from "crypto";
 
 import DeterministicCollectionSort from "./sort-seeds.js";
 
@@ -81,21 +80,6 @@ export function MutateCollection(name, cb) {
 	}
 
 	WriteCollection(name, data);
-}
-
-// this api sucks, maybe dont use it
-//
-// TODO(zk): remove this and give folders actual readable names
-export function CreateLegacyFolderID(query, game, playtype) {
-	return `F${fjsh.hash(Object.assign({ game, playtype }, query), "SHA256")}`;
-}
-
-export function CreateRandomLegacyFolderID() {
-	return `F${crypto.randomBytes(32).toString("hex")}`;
-}
-
-export function CreateLegacyFolderIDFromFolder(folder) {
-	return CreateLegacyFolderID(folder.data, folder.game, folder.playtype);
 }
 
 export function CreateGoalID(charts, criteria, game) {

@@ -1,14 +1,9 @@
 import type { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types";
 
 import { Command } from "commander";
-import fjsh from "fast-json-stable-hash";
 import { computeFolderSlug, GetGameConfig } from "../../../common/src";
 
 import { CreateFolderID, CreateTableID, MutateCollection, ReadCollection } from "../../util";
-
-function CreateLegacyFolderID(query: any, game: string, playtype: string) {
-	return `F${fjsh.hash(Object.assign({ game, playtype }, query), "SHA256")}`;
-}
 
 const LEVELS = [
 	"1",
@@ -75,7 +70,6 @@ for (const level of LEVELS) {
 		game: "chunithm",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: CreateLegacyFolderID({ level, versions: version }, "chunithm", "Single"),
 		searchTerms: [],
 		slug: "",
 		title: `Level ${level} (${versionName})`,
@@ -99,7 +93,6 @@ for (const difficulty of DIFFICULTIES) {
 		game: "chunithm",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: "",
 		searchTerms: [],
 		slug: "",
 		title: `${difficulty} (${versionName})`,
@@ -109,28 +102,13 @@ for (const difficulty of DIFFICULTIES) {
 
 	if (difficulty === "MASTER+ULTIMA") {
 		folder.where = "chart.difficulty IN ('MASTER', 'ULTIMA')";
-		folder.legacyFolderID = CreateLegacyFolderID(
-			{ difficulty: { "~in": ["MASTER", "ULTIMA"] }, versions: version },
-			"chunithm",
-			"Single",
-		);
 	} else if (difficulty === "WORLD'S END") {
 		// inGameID is a number and inGameID >= 8000
 		// OR inGameID is an array and all numbers must be >= 8000
 		folder.where =
 			"((jsonb_typeof(chart.data->'inGameID') = 'number' AND (chart.data->>'inGameID')::int >= 8000) OR (jsonb_typeof(chart.data->'inGameID') = 'array' AND jsonb_path_match(chart.data->'inGameID', '!exists($.* ? (@ < 8000))')))";
-		folder.legacyFolderID = CreateLegacyFolderID(
-			{ "data¬inGameID": { "~ge": 8000 }, versions: version },
-			"chunithm",
-			"Single",
-		);
 	} else {
 		folder.where = `chart.difficulty = '${difficulty}'`;
-		folder.legacyFolderID = CreateLegacyFolderID(
-			{ difficulty, versions: version },
-			"chunithm",
-			"Single",
-		);
 	}
 
 	folder.slug = computeFolderSlug(folder);

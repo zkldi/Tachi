@@ -1,5 +1,6 @@
 import type { SEEDS_FolderDocument, TableDocument } from "tachi-common";
 
+import { LoadFolderDocumentByGameAndSlug } from "#lib/db-formats/folders";
 import { LoadTableDocumentByLegacyId } from "#lib/db-formats/table";
 import {
 	BuildFolderQuery,
@@ -13,6 +14,55 @@ import { randomUUID } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+
+describe("LoadFolderDocumentByGameAndSlug", () => {
+	async function insertFolder(id: string, slug: string) {
+		await DB.insertInto("folder")
+			.values({
+				id,
+				game: "iidx-sp",
+				inactive: false,
+				title: "Lookup test",
+				slug,
+				where: "chart.level_num = 10",
+				version_filter: null,
+				search_terms: [],
+			})
+			.execute();
+	}
+
+	it("loads by slug and current id", async () => {
+		const id = randomUUID();
+		const slug = `lookup-${id}`;
+		await insertFolder(id, slug);
+
+		for (const key of [slug, id]) {
+			const folder = await LoadFolderDocumentByGameAndSlug("iidx-sp", key);
+			expect(folder).toMatchObject({ folderID: id, slug });
+		}
+	});
+
+	it("prefers a matching slug over a matching id", async () => {
+		const key = randomUUID();
+		const slugMatchId = randomUUID();
+		await insertFolder(key, `lookup-${key}`);
+		await insertFolder(slugMatchId, key);
+
+		const folder = await LoadFolderDocumentByGameAndSlug("iidx-sp", key);
+		expect(folder?.folderID).toBe(slugMatchId);
+	});
+
+	it("does not resolve another game's folder or an unknown key", async () => {
+		const id = randomUUID();
+		const slug = `lookup-${id}`;
+		await insertFolder(id, slug);
+
+		for (const key of [slug, id]) {
+			expect(await LoadFolderDocumentByGameAndSlug("sdvx", key)).toBeUndefined();
+		}
+		expect(await LoadFolderDocumentByGameAndSlug("iidx-sp", "missing-folder")).toBeUndefined();
+	});
+});
 
 describe("BuildFolderQuery", () => {
 	it("folder queries work innit", async () => {
@@ -48,7 +98,6 @@ describe("BuildFolderQuery", () => {
 
 		return {
 			folderId: `${prefix}-f-${u}`,
-			folderLegacy: `${prefix}-fl-${u}`,
 			songId: `${prefix}-s-${u}`,
 			chartA: `${prefix}-ca-${u}`,
 			chartB: `${prefix}-cb-${u}`,
@@ -62,12 +111,11 @@ describe("BuildFolderQuery", () => {
 	});
 
 	it("fails at execute time when folder.where is not valid SQL (e.g. JSON)", async () => {
-		const { folderId, folderLegacy } = ids("bfq0");
+		const { folderId } = ids("bfq0");
 
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "JSON query column",
@@ -84,7 +132,7 @@ describe("BuildFolderQuery", () => {
 	});
 
 	it("returns chart rows that satisfy the stored SQL predicate", async () => {
-		const { folderId, folderLegacy, songId, chartA, chartB } = ids("bfq1");
+		const { folderId, songId, chartA, chartB } = ids("bfq1");
 
 		await DB.insertInto("song")
 			.values({
@@ -131,7 +179,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "BFQ level 10 only",
@@ -150,7 +197,7 @@ describe("BuildFolderQuery", () => {
 	});
 
 	it("wraps folder.where so OR does not bypass chart.game (and version_filter) ANDs", async () => {
-		const { folderId, folderLegacy, songId, chartA, chartB } = ids("bfq-or");
+		const { folderId, songId, chartA, chartB } = ids("bfq-or");
 		const otherGameChart = `${chartA}-other`;
 
 		await DB.insertInto("song")
@@ -210,7 +257,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "OR game filter",
@@ -232,7 +278,7 @@ describe("BuildFolderQuery", () => {
 	});
 
 	it("with version_filter, requires overlapping chart.versions", async () => {
-		const { folderId, folderLegacy, songId, chartA, chartB } = ids("bfq2");
+		const { folderId, songId, chartA, chartB } = ids("bfq2");
 
 		await DB.insertInto("song")
 			.values({
@@ -280,7 +326,6 @@ describe("BuildFolderQuery", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "Level 10 (EPOLIS)",
@@ -321,7 +366,6 @@ describe("Postgres table + folder helpers", () => {
 			await DB.insertInto("folder")
 				.values({
 					id,
-					legacy_id: `${id}-leg`,
 					game: "iidx-sp",
 					inactive: false,
 					title,
@@ -378,7 +422,6 @@ describe("Postgres table + folder helpers", () => {
 			await DB.insertInto("folder")
 				.values({
 					id,
-					legacy_id: `${id}-leg`,
 					game: "iidx-sp",
 					inactive: false,
 					title,

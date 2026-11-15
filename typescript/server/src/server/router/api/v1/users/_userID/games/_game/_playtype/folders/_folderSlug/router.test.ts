@@ -24,7 +24,7 @@ async function seedIidxSpProfile(userId: number) {
 		.execute();
 }
 
-async function seedFolderWithThreeCharts(opts: { folderId: string; folderLegacy: string }) {
+async function seedFolderWithThreeCharts(opts: { folderId: string }) {
 	const n = ++seedCounter;
 	const songId = `S_FL_TL_${n}`;
 	const chartA = `C_FL_TL_A_${n}`;
@@ -90,7 +90,6 @@ async function seedFolderWithThreeCharts(opts: { folderId: string; folderLegacy:
 	await DB.insertInto("folder")
 		.values({
 			id: opts.folderId,
-			legacy_id: opts.folderLegacy,
 			game: "iidx-sp",
 			inactive: false,
 			title: "TL folder",
@@ -146,10 +145,7 @@ describe("GET /api/v1/users/:userID/games/:game/folders/:folderID/timeline", () 
 		await seedIidxSpProfile(userId);
 
 		const folderId = `folder_tl_${Date.now()}`;
-		const { chartA, chartB, chartC } = await seedFolderWithThreeCharts({
-			folderId,
-			folderLegacy: `${folderId}_leg`,
-		});
+		const { chartA, chartB, chartC } = await seedFolderWithThreeCharts({ folderId });
 
 		const baseSd = TestingIIDXSPScore.scoreData;
 
@@ -219,7 +215,7 @@ describe("GET /api/v1/users/:userID/games/:game/folders/:folderID/timeline", () 
 		const { id: userId } = await seedUser({ username: `folder_tl_bad_${Date.now()}` });
 		await seedIidxSpProfile(userId);
 		const folderId = `folder_tl_bad_${Date.now()}`;
-		await seedFolderWithThreeCharts({ folderId, folderLegacy: `${folderId}_leg` });
+		await seedFolderWithThreeCharts({ folderId });
 
 		const res = await mockApi.get(
 			`/api/v1/users/${userId}/games/iidx-sp/folders/${folderId}/timeline?criteriaType=not_a_metric&criteriaValue=CLEAR`,
@@ -232,7 +228,7 @@ describe("GET /api/v1/users/:userID/games/:game/folders/:folderID/timeline", () 
 		const { id: userId } = await seedUser({ username: `folder_tl_badval_${Date.now()}` });
 		await seedIidxSpProfile(userId);
 		const folderId = `folder_tl_badval_${Date.now()}`;
-		await seedFolderWithThreeCharts({ folderId, folderLegacy: `${folderId}_leg` });
+		await seedFolderWithThreeCharts({ folderId });
 
 		const res = await mockApi.get(
 			`/api/v1/users/${userId}/games/iidx-sp/folders/${folderId}/timeline?criteriaType=lamp&criteriaValue=nope`,
@@ -248,10 +244,7 @@ describe("GET /api/v1/users/:userID/games/:game/folders/:folderSlug/evolution", 
 		await seedIidxSpProfile(userId);
 
 		const folderId = `folder_evo_${Date.now()}`;
-		const { chartA } = await seedFolderWithThreeCharts({
-			folderId,
-			folderLegacy: `${folderId}_leg`,
-		});
+		const { chartA } = await seedFolderWithThreeCharts({ folderId });
 
 		const uid = `${Date.now()}_${Math.floor(Math.random() * 100_000)}`;
 

@@ -20,10 +20,10 @@ import {
 // Bump history:
 //   1  initial schema.
 //   2  charts: PK changed from `chartID` to `id`, `legacyChartID` added.
-//   3  folders/tables: PK changed to `id`, `legacyFolderID`/`legacyTableID`
-//      added.
+//   3  folders/tables: PK changed to `id`, legacy IDs added.
+//   4  folders: legacy ID removed.
 const DB_PATH = "/seeds-webui.sqlite3";
-const SCHEMA_VERSION = 3;
+const SCHEMA_VERSION = 4;
 
 let db: Database | null = null;
 

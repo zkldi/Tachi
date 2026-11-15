@@ -11,8 +11,6 @@ export type folder_id = string;
 export default interface FolderTable {
   id: ColumnType<folder_id, folder_id, folder_id>;
 
-  legacy_id: ColumnType<string, string, string>;
-
   game: ColumnType<Game, Game, Game>;
 
   inactive: ColumnType<boolean, boolean, boolean>;

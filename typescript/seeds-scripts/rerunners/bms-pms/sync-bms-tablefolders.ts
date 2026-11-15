@@ -11,7 +11,6 @@ import {
 	ParseAndLoadBMSTable,
 } from "tachi-common";
 
-import { Random20Hex } from "../../../server/src/utils/misc";
 import { CreateFolderID, MutateCollection, ReadCollection } from "../../util";
 
 const fetchBMSTable: BmstableFetch = async (url) => {
@@ -81,7 +80,6 @@ function buildLevelFolder(tableInfo: BMSTableInfo, level: string | number): SEED
 		game: tableInfo.game,
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: Random20Hex(),
 		slug: "",
 		...fields,
 	};
@@ -95,7 +93,6 @@ function buildPresentFolder(tableInfo: BMSTableInfo): SEEDS_FolderDocument {
 		game: tableInfo.game,
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: Random20Hex(),
 		slug: "",
 		...fields,
 	};

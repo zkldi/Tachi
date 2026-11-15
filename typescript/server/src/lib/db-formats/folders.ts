@@ -5,7 +5,6 @@ import { type Database } from "tachi-db";
 
 export const SELECT_FOLDER = [
 	"folder.id",
-	"folder.legacy_id",
 	"folder.game",
 	"folder.inactive",
 	"folder.title",
@@ -67,8 +66,7 @@ export async function LoadFolderDocumentsByIds(
 }
 
 /**
- * Loads a folder for this game. The key may be **`slug`**, primary **`folder.id`**, or
- * **`legacy_id`** (in that order of precedence when keys could theoretically collide).
+ * Loads a folder for this game by slug or primary id, preferring slug on collisions.
  */
 export async function LoadFolderDocumentByGameAndSlug(
 	game: V3Game,
@@ -94,17 +92,6 @@ export async function LoadFolderDocumentByGameAndSlug(
 
 	if (byId) {
 		return ToFolderDocument(byId);
-	}
-
-	const byLegacy = await DB.selectFrom("folder")
-		.select(SELECT_FOLDER)
-		.where("folder.game", "=", game)
-		.where("folder.legacy_id", "=", slugOrFolderKey)
-		.limit(1)
-		.executeTakeFirst();
-
-	if (byLegacy) {
-		return ToFolderDocument(byLegacy);
 	}
 
 	return undefined;
