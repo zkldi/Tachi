@@ -24,36 +24,15 @@ import type { AllFieldsNullableOptional, ExtractArrayElementType } from "./utils
 export type GameGroup = keyof typeof GAME_GROUP_CONFIGS;
 
 /**
- * LEGACY. Game + Playtype was the v2 way of identifying games.
- *
- * ---
- *
- * What game + playtypes does Tachi support? We typically shorten this concept
- * to a "GPT", or Game+Playtype.
- *
- * The keys on the left are the games Tachi supports. The value of those keys
- * are the playtypes that game has.
- *
- * A playtype is a way of splitting a game up into sub, completely separate games.
- * A good example is the difference between IIDX SP and IIDX DP. Although they share
- * songs and a *lot* of logic, they should be completely separate when it comes to
- * storing scores and user profiles.
- *
- * For games that don't really have a meaningful concept of "playtypes", "Single"
- * is the go-to.
+ * LEGACY. Originally, games were identified by GameGroup and a second string
+ * "playtype" that would distinguish between e.g. SP and DP. Nowadays, these
+ * are just repr'd as "iidx-sp", "iidx-dp" and share "iidx" as a game group.
  *
  * @deprecated
  */
 export type LEGACY_Playtypes = {
 	[G in GameGroup]: (typeof GAME_GROUP_CONFIGS)[G]["playtypes"][number];
 };
-
-/**
- * Expresses any playtype (for any game). Alias for LEGACY_Playtypes[Game].
- *
- * @deprecated
- */
-export type LEGACY_Playtype = LEGACY_Playtypes[GameGroup];
 
 export type SongDocumentData = {
 	[G in GameGroup]: z.infer<(typeof GAME_GROUP_CONFIGS)[G]["songData"]>;
@@ -92,21 +71,6 @@ export interface GameGroupConfig<G extends GameGroup = GameGroup> {
 	 */
 	readonly dynamicContent: boolean;
 }
-
-/**
- * GPTStrings are an legacy identifier used to identify GameGroup + Playtype combos.
- *
- * These are used in places where we want to switch over all supported game + playtype
- * combos.
- *
- * The below type magic automatically creates all combinations like iidx:SP, iidx:DP...
- * using the `Playtypes` thing above.
- *
- * @deprecated Use V3Game instead.
- */
-export type LEGACY_GPTString = keyof {
-	[G in GameGroup as `${G}:${LEGACY_Playtypes[G]}`]: never;
-};
 
 export type V3Game =
 	| "arcaea"
@@ -159,103 +123,9 @@ export interface GameGroupFromGame {
 	wacca: "wacca";
 }
 
-/**
- * @deprecated
- */
-export type LEGACY_V3GameToGPTString = {
-	arcaea: "arcaea:Touch";
-	"bms-7k": "bms:7K";
-	"bms-14k": "bms:14K";
-	chunithm: "chunithm:Single";
-	"ddr-dp": "ddr:DP";
-	"ddr-sp": "ddr:SP";
-	"gitadora-dora": "gitadora:Dora";
-	"gitadora-gita": "gitadora:Gita";
-	"iidx-dp": "iidx:DP";
-	"iidx-sp": "iidx:SP";
-	"itg-stamina": "itg:Stamina";
-	jubeat: "jubeat:Single";
-	maimai: "maimai:Single";
-	maimaidx: "maimaidx:Single";
-	museca: "museca:Single";
-	ongeki: "ongeki:Single";
-	"pms-controller": "pms:Controller";
-	"pms-keyboard": "pms:Keyboard";
-	popn: "popn:9B";
-	sdvx: "sdvx:Single";
-	"usc-controller": "usc:Controller";
-	"usc-keyboard": "usc:Keyboard";
-	wacca: "wacca:Single";
-};
-
-/**
- * @deprecated
- */
-export type LEGACY_GPTStringToV3Game = {
-	"arcaea:Touch": "arcaea";
-	"bms:7K": "bms-7k";
-	"bms:14K": "bms-14k";
-	"chunithm:Single": "chunithm";
-	"ddr:DP": "ddr-dp";
-	"ddr:SP": "ddr-sp";
-	"gitadora:Dora": "gitadora-dora";
-	"gitadora:Gita": "gitadora-gita";
-	"iidx:DP": "iidx-dp";
-	"iidx:SP": "iidx-sp";
-	"itg:Stamina": "itg-stamina";
-	"jubeat:Single": "jubeat";
-	"maimai:Single": "maimai";
-	"maimaidx:Single": "maimaidx";
-	"museca:Single": "museca";
-	"ongeki:Single": "ongeki";
-	"pms:Controller": "pms-controller";
-	"pms:Keyboard": "pms-keyboard";
-	"popn:9B": "popn";
-	"sdvx:Single": "sdvx";
-	"usc:Controller": "usc-controller";
-	"usc:Keyboard": "usc-keyboard";
-	"wacca:Single": "wacca";
-};
-
 /// Get all the games that exist for this game group.
 export type GamesForGroup = {
 	[G in GameGroup]: (typeof GAME_GROUP_CONFIGS)[G]["games"][number];
-};
-
-/**
- * @deprecated Use V3Game instead.
- */
-export type LEGACY_GPTStrings = {
-	[G in GameGroup]: `${G}:${LEGACY_Playtypes[G]}`;
-};
-
-/**
- * @deprecated
- */
-export type LEGACY_GetGameGroupFromGPTString<GPT extends LEGACY_GPTString> =
-	GPT extends `${infer G}:${infer _}` ? G : never;
-/**
- * @deprecated
- */
-export type LEGACY_GetPlaytypeFromGPTString<GPT extends LEGACY_GPTString> =
-	GPT extends `${infer _}:${infer PT}` ? PT : never;
-
-// Now that we've got GPTString defined, we can define "lookup types" for things about this GPT.
-// For example, if we have a function that works with IIDX's difficulties, we want a type like
-// Difficulties["iidx:SP"] which expresses those difficulties.
-
-export type LEGACY_GPTStringToGameGroup = {
-	[GPT in LEGACY_GPTString]: LEGACY_GetGameGroupFromGPTString<GPT>;
-};
-
-export type LEGACY_GPTStringToPlaytype = {
-	[GPT in LEGACY_GPTString]: LEGACY_GetPlaytypeFromGPTString<GPT>;
-};
-
-export type LEGACY_GameToPlaytype = {
-	[TGame in V3Game]: LEGACY_Playtypes[LEGACY_GetGameGroupFromGPTString<
-		LEGACY_V3GameToGPTString[TGame]
-	>];
 };
 
 export type Difficulties = {
@@ -405,7 +275,7 @@ export type GameConfig = {
  * implemented in Tachi, such as what metrics it supports, how it handles chart
  * difficulties, etc.
  *
- * To get a GameConfig for a given Game + Playtype, @see {GetGameConfig}
+ * To get a GameConfig for a given Game, @see {GetGameConfig}
  */
 export interface SpecificGameConfig<TGame extends V3Game> {
 	/**

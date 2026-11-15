@@ -9,9 +9,7 @@ import {
 	type GameConfig,
 	type GameGroup,
 	GetGameConfig,
-	GetGameGroupConfig,
 	type integer,
-	type LEGACY_Playtype,
 	type V3Game,
 	type Versions,
 } from "tachi-common";
@@ -101,10 +99,6 @@ export function IsEnabledGame(str: string): str is V3Game {
 
 export function IsEnabledGameGroup(str: string): str is GameGroup {
 	return !!TachiConfig.GAME_GROUPS.includes(str as GameGroup);
-}
-
-export function IsValidPlaytype(gameGroup: GameGroup, str: string): str is LEGACY_Playtype {
-	return GetGameGroupConfig(gameGroup).playtypes.includes(str as LEGACY_Playtype);
 }
 
 export function IsValidScoreAlg(

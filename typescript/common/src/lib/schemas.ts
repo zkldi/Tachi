@@ -10,7 +10,7 @@ import {
 import type { V3Game } from "../types/game-config";
 import type { ConfScoreMetric } from "../types/metrics";
 
-import { GameToGameGroup, GetGameConfig, LEGACY_GameToPlaytypeFn } from "../config/config";
+import { GameToGameGroup, GetGameConfig } from "../config/config";
 import { PrudenceZodShim } from "../utils/util";
 
 export const optNull = (v: ValidSchemaValue): ValidationFunctionParentOptionsKeychain =>
@@ -158,8 +158,8 @@ const PR_BATCH_MANUAL_CLASSES = (game: V3Game): PrudenceSchema => {
 };
 
 /**
- * Batch-manual meta supports either legacy `{ game: GameGroup, playtype }` or v3 `{ game: V3Game }`
- * without `playtype` (see batch-manual parser on the server).
+ * Batch-manual meta supports `{ game: V3Game }` or (secretly) legacy `{ game: GameGroup, playtype }`.
+ * Don't actually use the legacy format, it's not public, not intentional, and will be removed at any time.
  */
 const PR_BATCH_MANUAL_META = (game: V3Game) =>
 	p.or(
@@ -171,7 +171,57 @@ const PR_BATCH_MANUAL_META = (game: V3Game) =>
 		{
 			service: p.isBoundedString(3, 60),
 			game: p.is(GameToGameGroup(game)),
-			playtype: p.is(LEGACY_GameToPlaytypeFn(game)),
+			playtype: (maybePlaytype) => {
+				function ughNoExpressions() {
+					switch (game) {
+						case "arcaea":
+							return ["Touch"];
+						case "chunithm":
+						case "jubeat":
+						case "maimai":
+						case "maimaidx":
+						case "museca":
+						case "ongeki":
+						case "sdvx":
+						case "wacca":
+							return ["Single"];
+						case "popn":
+							return ["9B"];
+						case "iidx-sp":
+						case "ddr-sp":
+							return ["SP"];
+						case "iidx-dp":
+						case "ddr-dp":
+							return ["DP"];
+						case "bms-7k":
+							return ["7K"];
+						case "bms-14k":
+							return ["14K"];
+						case "gitadora-gita":
+							return ["Gita"];
+						case "gitadora-dora":
+							return ["Dora"];
+						case "usc-keyboard":
+						case "pms-keyboard":
+							return ["Keyboard"];
+						case "usc-controller":
+						case "pms-controller":
+							return ["Controller"];
+						case "itg-stamina":
+							return ["Stamina"];
+					}
+				}
+
+				if (typeof maybePlaytype !== "string") {
+					return "Invalid playtype";
+				}
+
+				if (ughNoExpressions().includes(maybePlaytype)) {
+					return true;
+				}
+
+				return "Invalid playtype";
+			},
 			version: "*?string",
 		},
 	);

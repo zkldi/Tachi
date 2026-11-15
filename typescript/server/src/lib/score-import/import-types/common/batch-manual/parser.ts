@@ -1,17 +1,14 @@
 import type { KtLogger } from "#lib/log/log";
 
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
-import { AllEnabledGames, TachiConfig } from "#lib/setup/config";
-import { IsEnabledGame, IsEnabledGameGroup, IsRecord, IsValidPlaytype } from "#utils/misc";
+import { IsRecord } from "#utils/misc";
 import { FormatPrError } from "#utils/prudence";
 import { p } from "prudence";
 import {
 	type BatchManual,
 	type BatchManualScore,
 	GameToGameGroup,
-	GetGameGroupConfig,
 	type ImportTypes,
-	LEGACY_GameGroupPTToGame,
 	type V3Game,
 } from "tachi-common";
 import { PR_BATCH_MANUAL } from "tachi-common/lib/schemas";
@@ -20,6 +17,7 @@ import type { ParserFunctionReturns } from "../types";
 import type { BatchManualContext } from "./types";
 
 import { CreateBatchManualClassProvider } from "./class-handler";
+import { ResolveBatchManualGame } from "./common";
 
 /**
  * Parses an object of BATCH-MANUAL data.
@@ -54,44 +52,24 @@ export function ParseBatchManualFromObject(
 		);
 	}
 
+	if (typeof maybeGame !== "string") {
+		throw new ScoreImportFatalError(
+			400,
+			`Invalid meta.game, expected a string - is this valid BATCH-MANUAL?`,
+		);
+	}
+
 	// @ts-expect-error man.
 	const maybePlaytype = object.meta?.playtype as unknown;
 
-	let game: V3Game;
-
-	if (maybePlaytype === undefined) {
-		// so, game should be a v3 game.
-
-		if (typeof maybeGame !== "string" || !IsEnabledGame(maybeGame)) {
-			throw new ScoreImportFatalError(
-				400,
-				`Invalid game '${maybeGame}'. It must be one of ${AllEnabledGames().join(", ")}.`,
-			);
-		}
-
-		game = maybeGame as V3Game;
-	} else {
-		// playtype provided
-
-		const maybeGameGroup = maybeGame;
-
-		if (typeof maybeGameGroup !== "string" || !IsEnabledGameGroup(maybeGameGroup)) {
-			throw new ScoreImportFatalError(
-				400,
-				`Invalid game group '${maybeGameGroup}' - expected any of ${TachiConfig.GAME_GROUPS.join(", ")}.`,
-			);
-		}
-
-		if (typeof maybePlaytype !== "string" || !IsValidPlaytype(maybeGameGroup, maybePlaytype)) {
-			const gameGroupConfig = GetGameGroupConfig(maybeGameGroup);
-			throw new ScoreImportFatalError(
-				400,
-				`Invalid playtype '${maybePlaytype}' - expected any of ${gameGroupConfig.playtypes.join(", ")}.`,
-			);
-		}
-
-		game = LEGACY_GameGroupPTToGame(maybeGameGroup, maybePlaytype);
+	if (maybePlaytype !== undefined && typeof maybePlaytype !== "string") {
+		throw new ScoreImportFatalError(
+			400,
+			`Do not provide 'playtype'. This is legacy code and barely supported.`,
+		);
 	}
+
+	const game = ResolveBatchManualGame(maybeGame, maybePlaytype);
 
 	// now that we have the game, we can validate this against
 	// the prudence schema for batch-manual.

@@ -121,7 +121,7 @@ describe("#ParserFn", () => {
 					false,
 					log,
 				),
-			mockErr("Invalid game 'iidx'. It must be one of"),
+			mockErr("Unknown game provided - Expected any of"),
 		);
 	});
 
@@ -213,7 +213,7 @@ describe("#ParserFn", () => {
 		});
 	});
 
-	it("meta.playtype forces legacy interpretation of meta.game (reject bare V3 string)", () => {
+	it("rejects modern meta.game combined with legacy meta.playtype", () => {
 		expectThrowsFatalMatch(
 			() =>
 				ParserFn(
@@ -225,7 +225,7 @@ describe("#ParserFn", () => {
 					false,
 					log,
 				),
-			mockErr("Invalid game group"),
+			mockErr("Invalid BATCH-MANUAL: meta |"),
 		);
 	});
 

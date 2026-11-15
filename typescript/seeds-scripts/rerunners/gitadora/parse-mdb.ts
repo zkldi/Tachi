@@ -2,9 +2,9 @@ import { Command } from "commander";
 import { XMLParser } from "fast-xml-parser";
 import { readFileSync } from "fs";
 import {
+	GamesForGroup,
 	type ChartDocument,
 	type Difficulties,
-	type LEGACY_Playtypes,
 	type SongDocument,
 	type Versions,
 } from "tachi-common";
@@ -103,7 +103,7 @@ const DIFFICULTIES: (Difficulties["gitadora-dora" | "gitadora-gita"] | null)[] =
 	"BASS EXTREME",
 	"BASS MASTER",
 ];
-const PLAYTYPE_DIFFICULTY_MAP: (LEGACY_Playtypes["gitadora"] | null)[] = [
+const PLAYTYPE_DIFFICULTY_MAP: ("Gita" | "Dora" | null)[] = [
 	null,
 	"Gita",
 	"Gita",
@@ -136,13 +136,11 @@ const buildChart = (
 	entry: Entry,
 	difficulty: number,
 	difficultyString: Difficulties["gitadora-dora" | "gitadora-gita"],
-	playType: LEGACY_Playtypes["gitadora"],
+	game: GamesForGroup["gitadora"],
 ): ChartDocument<"gitadora-dora" | "gitadora-gita"> => {
 	// Comes in a 435, needs to become "4.35"
 	const convertedDifficultyAsFloat = difficulty / 100;
 	const convertedDifficultyAsString = convertedDifficultyAsFloat.toFixed(2);
-	const game: "gitadora-dora" | "gitadora-gita" =
-		playType === "Gita" ? "gitadora-gita" : "gitadora-dora";
 
 	return {
 		game,
@@ -154,7 +152,6 @@ const buildChart = (
 		isPrimary: true,
 		level: convertedDifficultyAsString,
 		levelNum: convertedDifficultyAsFloat,
-		playtype: playType,
 		songID: entry.music_id["#text"],
 		versions: [version],
 	};

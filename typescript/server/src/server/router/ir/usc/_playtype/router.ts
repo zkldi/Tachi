@@ -21,8 +21,6 @@ import { p } from "prudence";
 import {
 	type ChartDocument,
 	type ImportDocument,
-	LEGACY_GameGroupPTToGame,
-	type LEGACY_Playtypes,
 	type PBScoreDocument,
 	type SuccessfulAPIResponse,
 } from "tachi-common";
@@ -121,8 +119,7 @@ router.get("/", (_req, res) =>
 );
 
 const RetrieveChart: RequestHandler = async (req, res, next) => {
-	const playtype = req.params.playtype as LEGACY_Playtypes["usc"];
-	const game = LEGACY_GameGroupPTToGame("usc", playtype) as "usc-controller" | "usc-keyboard";
+	const game = req.params.playtype === "Keyboard" ? "usc-keyboard" : "usc-controller";
 
 	const chart = await FindUSCChartOnSHA1(req.params.chartHash, game);
 
@@ -261,8 +258,8 @@ const PR_USCIR_CHART_DOC = {
  * @name POST /ir/usc/:playtype/scores
  */
 router.post("/scores", RequirePermissions("submit_score"), async (req, res) => {
-	const playtype = req.params.playtype as LEGACY_Playtypes["usc"];
-	const game = LEGACY_GameGroupPTToGame("usc", playtype) as "usc-controller" | "usc-keyboard";
+	const playtype = req.params.playtype === "Keyboard" ? "Keyboard" : "Controller";
+	const game = playtype === "Keyboard" ? "usc-keyboard" : "usc-controller";
 
 	const chartErr = p(
 		req.safeBody.chart,

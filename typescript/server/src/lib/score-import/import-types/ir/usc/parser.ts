@@ -1,7 +1,7 @@
 import type { KtLogger } from "#lib/log/log";
 import type { ParserFunctionReturns } from "#lib/score-import/import-types/common/types";
-import type { USCClientScore } from "#server/router/ir/usc/_playtype/types";
-import type { GamesForGroup, LEGACY_Playtypes } from "tachi-common";
+import type { USCClientScore, USCInputType } from "#server/router/ir/usc/_playtype/types";
+import type { GamesForGroup } from "tachi-common";
 
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
 import { FormatPrError } from "#utils/prudence";
@@ -37,7 +37,7 @@ const PR_USCIR_SCORE: PrudenceSchema = {
 export function ParseIRUSC(
 	body: Record<string, unknown>,
 	chartHash: string,
-	playtype: LEGACY_Playtypes["usc"],
+	inputType: USCInputType,
 	_log: KtLogger,
 ): ParserFunctionReturns<USCClientScore, IRUSCContext, GamesForGroup["usc"]> {
 	const err = p(
@@ -64,7 +64,7 @@ export function ParseIRUSC(
 		service: "USC-IR",
 		context: {
 			chartHash,
-			playtype,
+			playtype: inputType,
 			timeReceived: Date.now(),
 		},
 		gameGroup: "usc",

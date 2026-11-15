@@ -6,7 +6,6 @@ import { seedUser } from "#test-utils/pg-fixtures";
 import { resolveSeedsDir, seedsJsonAvailable } from "#test-utils/seed-paths";
 import { FindChartsOnPopularity } from "#utils/queries/charts";
 import { sql } from "kysely";
-import { LEGACY_GameGroupPTToGame } from "tachi-common";
 import { describe, expect, it } from "vitest";
 
 import {
@@ -574,8 +573,8 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 			])
 			.execute();
 
-		const all = await GetChartsBySongId(LEGACY_GameGroupPTToGame("iidx", "SP"), sid);
-		const filtered = await GetChartsBySongId(LEGACY_GameGroupPTToGame("iidx", "SP"), sid, {
+		const all = await GetChartsBySongId("iidx-sp", sid);
+		const filtered = await GetChartsBySongId("iidx-sp", sid, {
 			omit2dxtraCharts: true,
 		});
 

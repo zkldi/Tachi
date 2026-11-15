@@ -8,12 +8,7 @@ import {
 } from "#lib/score-import/framework/common/converter-failures";
 import { AssertStrAsDifficulty } from "#lib/score-import/framework/common/string-asserts";
 import ScoreImportFatalError from "#lib/score-import/framework/score-importing/score-import-error";
-import {
-	IsEnabledGame,
-	IsEnabledGameGroup,
-	IsValidPlaytype,
-	staticAssertUnreachable,
-} from "#utils/misc";
+import { staticAssertUnreachable } from "#utils/misc";
 import {
 	FindArcaeaChartOnInGameStrID,
 	FindBMSChartOnHash,
@@ -45,45 +40,18 @@ import {
 	FormatGame,
 	GameToGameGroup,
 	GetGameConfig,
-	LEGACY_GameGroupPTToGame,
 	type MatchTypeResolver,
 	type MatchTypeResolverWithDifficulty,
 	type MongoProvidedMetrics,
 	type SongDocument,
+	V3Game,
 	type Versions,
 } from "tachi-common";
 
 import type { ConverterFunction } from "../types";
 import type { BatchManualContext } from "./types";
 
-/**
- * Some stored orphan rows (and other legacy payloads) put a {@link GameGroup}
- * in `context.game` and the legacy playtype in `context.playtype`. Current
- * imports set `context.game` to a {@link V3Game} directly.
- */
-function ResolveBatchManualV3Game(context: BatchManualContext): BatchManualContext["game"] {
-	if (IsEnabledGame(context.game)) {
-		return context.game;
-	}
-
-	const playtype = (context as { playtype?: unknown } & BatchManualContext).playtype;
-
-	if (
-		IsEnabledGameGroup(context.game) &&
-		typeof playtype === "string" &&
-		IsValidPlaytype(context.game, playtype)
-	) {
-		return LEGACY_GameGroupPTToGame(context.game, playtype);
-	}
-
-	throw new InternalFailure(
-		`Legacy batch-manual context could not be resolved to a V3 game (game=${JSON.stringify(
-			context.game,
-		)}, playtype=${JSON.stringify(
-			(context as { playtype?: unknown } & BatchManualContext).playtype,
-		)}).`,
-	);
-}
+import { ResolveBatchManualGame } from "./common";
 
 // only public because used in tests; ts has no way of doing that
 // lol
@@ -117,7 +85,8 @@ export const ConverterBatchManual: ConverterFunction<BatchManualScore, BatchManu
 	importType,
 	log,
 ) => {
-	const game = ResolveBatchManualV3Game(context);
+	const legacyContext = context as { playtype?: string } & BatchManualContext;
+	const game = ResolveBatchManualGame(legacyContext.game, legacyContext.playtype);
 	const contextWithV3Game: BatchManualContext = { ...context, game };
 
 	const resolver = BatchManualScoreToResolver(data, contextWithV3Game);
