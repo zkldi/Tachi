@@ -80,7 +80,7 @@ describe("GET /api/v1/users/:userID/games/:game", () => {
 			expect(scoreQueries).toHaveLength(2);
 			for (const query of scoreQueries) {
 				expect(query.sql).toMatch(
-					/order by "score"\."time_achieved" (asc|desc) limit \$\d+$/u,
+					/order by "score"\."time_achieved" (asc nulls first|desc nulls last) limit \$\d+$/u,
 				);
 				expect(query.parameters.at(-1)).toBe(1);
 			}
