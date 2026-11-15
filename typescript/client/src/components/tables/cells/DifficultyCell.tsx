@@ -95,7 +95,7 @@ export default function DifficultyCell({
 				<DisplayLevelNum game={game} level={chart.level} levelNum={chart.levelNum} />
 			</div>
 			{!noTierlist && gptImpl.ratingSystems.length > 0 && (
-				<RatingSystemPart chart={chart} game={game} truncateRatingsLines />
+				<RatingSystemPart chart={chart} game={game} wrapRatingsLines />
 			)}
 			{!chart.isPrimary && (
 				<QuickTooltip tooltipContent="This chart is an alternate, old chart.">

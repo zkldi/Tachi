@@ -41,7 +41,7 @@ export default function USCDifficultyCell({ chart }: { chart: ChartDocument<USCG
 			<span className={truncLineCls} style={{ minWidth: 0 }}>
 				{levelText}
 			</span>
-			<RatingSystemPart chart={chart} game={game} truncateRatingsLines />
+			<RatingSystemPart chart={chart} game={game} wrapRatingsLines />
 			{!chart.isPrimary && (
 				<QuickTooltip tooltipContent="This chart is an alternate, old chart.">
 					<div>
