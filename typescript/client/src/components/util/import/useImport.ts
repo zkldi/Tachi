@@ -1,9 +1,8 @@
 import { type ImportIDReturn } from "#types/api-returns";
 import { type ImportStates, NotStartedState } from "#types/import";
+import { APIFetchV1, ToAPIURL } from "#util/api";
 import { useCallback, useState } from "react";
 import { type ImportDocument, type integer } from "tachi-common";
-/* eslint-disable no-await-in-loop */
-import { APIFetchV1, ToAPIURL } from "#util/api";
 
 export interface ImportDeferred {
 	url: string;

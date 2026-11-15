@@ -5,7 +5,6 @@ import type { GetEnumDistForFolder } from "#lib/folders/folders";
 import type { AnyRouterSpec } from "#lib/router/typed-router";
 import type { TachiServerConfig } from "#lib/setup/config";
 import type { EvaluateUsersStatsShowcase } from "#lib/showcase/get-stats";
-import type { GitCommit } from "#utils/git";
 import type { CronTask, CronTaskExecution, JobQueue } from "tachi-db";
 
 import {
@@ -1373,12 +1372,6 @@ export const API_V1_SPEC = {
 		}),
 	},
 
-	"GET /games/:gameGroup": {
-		description: "Configuration for a specific game group.",
-		input: z.object({}),
-		output: doc<GameGroupConfig>(),
-	},
-
 	"GET /games/:game": {
 		description: "Info and counts for a specific game+playtype.",
 		input: z.object({}),
@@ -2106,52 +2099,6 @@ export const API_V1_SPEC = {
 		description: "Reprocess all goals (stub; not yet implemented).",
 		input: z.object({}),
 		output: empty,
-	},
-
-	// ────────────────────────────────────────────────
-	// Seeds (local dev only)
-	// ────────────────────────────────────────────────
-
-	"GET /seeds": {
-		description: "Feature probe for the seeds API.",
-		input: z.object({}),
-		output: empty,
-	},
-
-	"GET /seeds/has-uncommitted-changes": {
-		description: "Whether the seeds git repo has uncommitted changes.",
-		input: z.object({}),
-		output: z.boolean(),
-	},
-
-	"GET /seeds/commits": {
-		description: "List commits in the seeds repo.",
-		input: z.object({
-			branch: z.string(),
-			file: z.string().optional(),
-		}),
-		output: docArray<GitCommit>(),
-	},
-
-	"GET /seeds/branches": {
-		description: "List branches in the seeds repo.",
-		input: z.object({}),
-		output: z.strictObject({
-			branches: z.array(z.strictObject({ name: z.string(), sha: z.string() })),
-			current: z.nullable(z.strictObject({ name: z.string(), sha: z.string() })),
-		}),
-	},
-
-	"GET /seeds/collections": {
-		description: "Retrieve seed JSON at an optional revision.",
-		input: z.object({ revision: z.string().optional() }),
-		output: z.record(z.string(), z.unknown()),
-	},
-
-	"GET /seeds/commit": {
-		description: "Get metadata for a specific commit in the seeds repo.",
-		input: z.object({ sha: z.string() }),
-		output: doc<GitCommit>(),
 	},
 
 	// ────────────────────────────────────────────────

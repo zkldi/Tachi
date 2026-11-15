@@ -27,6 +27,7 @@ const hyperAggressiveRL = wrapExpressMiddleware(HyperAggressiveRateLimitMiddlewa
 
 /**
  * Logs in a user.
+ *
  * @name POST /api/v1/auth/login
  */
 API_V1_ROUTER.add("POST /auth/login", aggressiveRL, async ({ input, req, res }) => {
@@ -170,6 +171,7 @@ API_V1_ROUTER.add("POST /auth/resend-verify-email", hyperAggressiveRL, async ({ 
 
 /**
  * Logs out the requesting user.
+ *
  * @name POST /api/v1/auth/logout
  */
 API_V1_ROUTER.add("POST /auth/logout", ({ req, res }) => {

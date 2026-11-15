@@ -29,7 +29,6 @@ import "./clients/router";
 import "./activity/router";
 import "./config/router";
 import "./localdev/router";
-import "./seeds/router";
 import "./proposals/router";
 import "./scores/_scoreID/router";
 import "./users/_userID/router";

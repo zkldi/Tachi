@@ -1,29 +1,22 @@
 /**
- * Imports seed data (songs, charts, folders, tables, goals, quests, questlines,
- * BMS courses) from the local seeds directory into PostgreSQL.
- *
- * Songs and charts must have been processed by the v3 rerunner scripts first:
+ * Imports seed data from a seeds folder into postgres.
  *
  * Required env vars:
- *   POSTGRES_URL – PostgreSQL connection string
+ *   POSTGRES_URL
  *
  * Required env vars:
- *   SEEDS_DIR         – path to the db/seeds directory
- *   SEEDS_COMMIT_HASH – git commit SHA to tag the import with (for audit logs)
+ *   SEEDS_DIR         - path to the db/seeds directory
+ *   SEEDS_COMMIT_HASH - git commit SHA to tag the import with (for audit logs)
  *
  * Run with:
  *   just db-load-seeds
  *
- * In `NODE_ENV=dev` only, if no admin account exists yet, creates the same
- * default admin as server boot (`admin` / `password` / admin@example.com), or
- * promotes user #1 to admin so seed import can run.
+ * In `NODE_ENV=dev` only, if no admin account exists yet, this script will make an admin.
  */
 
 import { buildGoalIdRemap, importSeeds, ImportSeedsSubsetForTests } from "../services/pg/seeds";
 
 export { buildGoalIdRemap, importSeeds, ImportSeedsSubsetForTests as importSeedsSubset };
-
-// ── Standalone entrypoint ──────────────────────────────────────────────────
 
 if (require.main === module) {
 	const seedsDir = process.env.SEEDS_DIR;

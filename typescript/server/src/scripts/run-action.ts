@@ -1,11 +1,5 @@
 /**
- * Run an authenticated server action as a given user (dev / ops).
- *
- * Requires POSTGRES_URL (same as server). Loads `.env` from the server package.
- *
- * Payload must be JSON. Keys can include "!" prefixes (e.g. "!password").
- * Actions that require Buffer input (CHANGE_PFP, CHANGE_BANNER, …) are not
- * supported here—use the API or a dedicated script.
+ * Run a server action as a one off.
  *
  * Usage:
  *   bun run src/scripts/run-action.ts -- --user-id 1 --action UPSERT_KAI_AUTH_TOKEN \
