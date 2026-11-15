@@ -5,7 +5,6 @@ import {
 	type Difficulties,
 	type GamesForGroup,
 	type integer,
-	type LEGACY_Playtypes,
 	type SongDocument,
 } from "tachi-common";
 
@@ -67,7 +66,7 @@ const DIFF_MAP = {
 
 function SplitAixDiff(diff: ChartStrings): {
 	difficulty: Difficulties[GamesForGroup["iidx"]];
-	playtype: LEGACY_Playtypes["iidx"];
+	game: GamesForGroup["iidx"];
 } {
 	const difficulty = DIFF_MAP[diff[2]];
 
@@ -76,17 +75,17 @@ function SplitAixDiff(diff: ChartStrings): {
 	}
 
 	return {
-		playtype: diff.startsWith("sp") ? "SP" : "DP",
+		game: diff.startsWith("sp") ? "iidx-sp" : "iidx-dp",
 		difficulty,
 	};
 }
 
 function ParseAixChart(d: AixData, c: AixChart, diff: ChartStrings, songID: integer) {
-	const { difficulty, playtype } = SplitAixDiff(diff);
+	const { difficulty, game } = SplitAixDiff(diff);
 
 	let chart: ChartDocument<GamesForGroup["iidx"]>;
 
-	if (playtype === "SP") {
+	if (game === "iidx-sp") {
 		const temp: ChartDocument<"iidx-sp"> = {
 			game: "iidx-sp",
 			chartID: CreateChartID(),
@@ -105,7 +104,6 @@ function ParseAixChart(d: AixData, c: AixChart, diff: ChartStrings, songID: inte
 				ncTier: null,
 			},
 			difficulty,
-			playtype,
 			isPrimary: true,
 			level: c.rating.toString(),
 			levelNum: c.rating,
@@ -131,7 +129,6 @@ function ParseAixChart(d: AixData, c: AixChart, diff: ChartStrings, songID: inte
 				dpTier: null,
 			},
 			difficulty,
-			playtype,
 			isPrimary: true,
 			level: c.rating.toString(),
 			levelNum: c.rating,

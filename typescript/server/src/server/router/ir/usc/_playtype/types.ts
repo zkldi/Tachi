@@ -1,5 +1,7 @@
 import type { integer } from "tachi-common";
 
+export type USCInputType = "Controller" | "Keyboard";
+
 export interface USCServerScore {
 	score: integer;
 	lamp: 0 | 1 | 2 | 3 | 4 | 5;

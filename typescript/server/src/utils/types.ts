@@ -7,7 +7,6 @@ import type {
 	GoalSubscriptionDocument,
 	ImportDocument,
 	integer,
-	LEGACY_Playtype,
 	QuestDocument,
 	QuestlineDocument,
 	QuestSubscriptionDocument,
@@ -76,7 +75,6 @@ export interface TachiRequestData {
 	requestedUserGameStats?: UserGameStats;
 	gameGroup?: GameGroup;
 	game?: V3Game;
-	playtype?: LEGACY_Playtype;
 
 	chartDoc?: ChartDocument;
 	songDoc?: SongDocument;

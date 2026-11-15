@@ -3,7 +3,6 @@ import {
 	type Difficulties,
 	type GameGroupConfig,
 	GetGameGroupConfig,
-	type LEGACY_Playtypes,
 	type SongDocument,
 	type Versions,
 } from "tachi-common";
@@ -70,7 +69,7 @@ function buildSong(music: Music): SongDocument<"ddr"> {
 
 function buildChart(
 	music: Music,
-	playtype: LEGACY_Playtypes["ddr"],
+	playtype: "SP" | "DP",
 	difficulty: Difficulties["ddr-dp" | "ddr-sp"],
 	version: Versions["ddr-dp" | "ddr-sp"],
 ): ChartDocument<"ddr-dp" | "ddr-sp"> {

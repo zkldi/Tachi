@@ -4,8 +4,6 @@ import type {
 	GameConfig,
 	GameGroup,
 	GameGroupConfig,
-	LEGACY_GPTString,
-	LEGACY_Playtype,
 	SpecificGameConfig,
 	V3Game,
 } from "../types/game-config";
@@ -78,17 +76,6 @@ export function GetGameGroupConfig<G extends GameGroup>(game: G): GameGroupConfi
 }
 
 /**
- * Given a game and playtype, combine them into a GPTString.
- */
-export function LEGACY_GetGPTString(game: GameGroup, playtype: LEGACY_Playtype): LEGACY_GPTString {
-	return `${game}:${playtype}` as LEGACY_GPTString;
-}
-
-export function LEGACY_SplitGPT(gpt: LEGACY_GPTString) {
-	return gpt.split(":") as [GameGroup, LEGACY_Playtype];
-}
-
-/**
  * Based on every declared playtype for every declared game, they all need a GPT
  * config. This controls almost everything about each GPT.
  */
@@ -118,87 +105,15 @@ export const GAME_CONFIGS = {
 	"ddr-dp": GAME_DDR_DP_CONF,
 } as const satisfies Record<V3Game, INTERNAL_GAME_CONFIG>;
 
-const v3GameMappings: Record<LEGACY_GPTString, V3Game> = {
-	"iidx:SP": "iidx-sp",
-	"iidx:DP": "iidx-dp",
-	"museca:Single": "museca",
-	"sdvx:Single": "sdvx",
-	"bms:14K": "bms-14k",
-	"bms:7K": "bms-7k",
-	"gitadora:Dora": "gitadora-dora",
-	"gitadora:Gita": "gitadora-gita",
-	"chunithm:Single": "chunithm",
-	"wacca:Single": "wacca",
-	"jubeat:Single": "jubeat",
-	"popn:9B": "popn",
-	"maimai:Single": "maimai",
-	"maimaidx:Single": "maimaidx",
-	"pms:Controller": "pms-controller",
-	"pms:Keyboard": "pms-keyboard",
-	"usc:Controller": "usc-controller",
-	"usc:Keyboard": "usc-keyboard",
-	"itg:Stamina": "itg-stamina",
-	"arcaea:Touch": "arcaea",
-	"ongeki:Single": "ongeki",
-	"ddr:SP": "ddr-sp",
-	"ddr:DP": "ddr-dp",
-};
-
-/**
- * @deprecated
- */
-export function LEGACY_GameGroupPTToGame(game: GameGroup, playtype: LEGACY_Playtype): V3Game {
-	return LEGACY_GPTStringToGame(LEGACY_GetGPTString(game, playtype));
-}
-
-/**
- * @deprecated
- */
-export function LEGACY_GPTStringToGame(gptString: LEGACY_GPTString): V3Game {
-	return v3GameMappings[gptString];
-}
-
-/**
- * @deprecated
- */
-export function LEGACY_GameToGPTString(game: V3Game): LEGACY_GPTString {
-	const mapping: Record<V3Game, LEGACY_GPTString> = {
-		"iidx-sp": "iidx:SP",
-		"iidx-dp": "iidx:DP",
-		museca: "museca:Single",
-		sdvx: "sdvx:Single",
-		"bms-14k": "bms:14K",
-		"bms-7k": "bms:7K",
-		"gitadora-dora": "gitadora:Dora",
-		"gitadora-gita": "gitadora:Gita",
-		chunithm: "chunithm:Single",
-		wacca: "wacca:Single",
-		jubeat: "jubeat:Single",
-		popn: "popn:9B",
-		maimai: "maimai:Single",
-		maimaidx: "maimaidx:Single",
-		"pms-controller": "pms:Controller",
-		"pms-keyboard": "pms:Keyboard",
-		"usc-controller": "usc:Controller",
-		"usc-keyboard": "usc:Keyboard",
-		"itg-stamina": "itg:Stamina",
-		arcaea: "arcaea:Touch",
-		ongeki: "ongeki:Single",
-		"ddr-dp": "ddr:DP",
-		"ddr-sp": "ddr:SP",
-	};
-
-	return mapping[game];
-}
-
 export const allSupportedGameGroups = Object.keys(GAME_GROUP_CONFIGS) as Array<GameGroup>;
 
-/** V3 games in game-group order (matches each group's `games` array, e.g. BMS 7K before 14K). */
+// All games that tachi supports.
 export const ALL_GAMES = allSupportedGameGroups.flatMap(
 	(group) => GetGameGroupConfig(group).games,
 ) as Array<V3Game>;
 
 export function GameToGameGroup(game: V3Game): GameGroup {
+	// TODO(zk): shouldn't this be a part of game config?
 	const mapping: Record<V3Game, GameGroup> = {
 		"iidx-sp": "iidx",
 		"iidx-dp": "iidx",
@@ -228,19 +143,6 @@ export function GameToGameGroup(game: V3Game): GameGroup {
 	return mapping[game];
 }
 
-function LEGACY_GameToGameGroupPT(v3Game: V3Game): {
-	gameGroup: GameGroup;
-	playtype: LEGACY_Playtype;
-} {
-	const gptString = LEGACY_GameToGPTString(v3Game);
-	const [gameGroup, playtype] = LEGACY_SplitGPT(gptString);
-	return { gameGroup, playtype };
-}
-
-export function LEGACY_GameToPlaytypeFn(v3Game: V3Game): LEGACY_Playtype {
-	return LEGACY_GameToGameGroupPT(v3Game).playtype;
-}
-
 export function GetGameConfig(game: V3Game): GameConfig {
 	return GAME_CONFIGS[game] as unknown as GameConfig;
 }
@@ -268,8 +170,8 @@ export function GetGamesWithProvidedClasses(gameGroup: GameGroup): Array<V3Game>
 }
 
 /**
- * Returns the configuration for this specific Game + Playtype. This type is narrowed
- * down to its least generic form, and is instead for gpt-specific use cases.
+ * Returns the configuration for this specific game. This type is narrowed
+ * down to its least generic form, and is instead for game-specific use cases.
  */
 export function GetSpecificGameConfig<TGame extends V3Game>(game: TGame) {
 	return GAME_CONFIGS[game] as unknown as SpecificGameConfig<TGame>;
