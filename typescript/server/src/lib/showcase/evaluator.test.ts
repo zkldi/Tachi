@@ -45,7 +45,6 @@ async function seed511AndFolder() {
 	await DB.insertInto("folder")
 		.values({
 			id: TestingIIDXFolderSP10.folderID,
-			legacy_id: TestingIIDXFolderSP10.folderID,
 			game: "iidx-sp",
 			inactive: false,
 			title: TestingIIDXFolderSP10.title,

@@ -53,7 +53,7 @@ export const FLAVOUR_COLUMNS: Record<Flavour, string[]> = {
 		"isPrimary",
 		"versions",
 	],
-	folders: ["id", "legacyFolderID", "game", "playtype", "title", "table", "type", "inactive"],
+	folders: ["id", "game", "playtype", "title", "table", "type", "inactive"],
 	goals: ["goalID", "name", "criteria"],
 	questlines: ["questlineID", "game", "playtype", "name"],
 	quests: ["questID", "game", "playtype", "name"],

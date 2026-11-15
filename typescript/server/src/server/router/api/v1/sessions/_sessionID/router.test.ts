@@ -132,7 +132,6 @@ describe("GET /api/v1/sessions/:sessionID/folder-raises", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderId,
 				game: "iidx-sp",
 				inactive: false,
 				title: "Session Folder Raises Test",
@@ -172,7 +171,6 @@ describe("GET /api/v1/sessions/:sessionID/folder-raises", () => {
 		await DB.insertInto("folder")
 			.values({
 				id: folderId,
-				legacy_id: folderId,
 				game: "iidx-sp",
 				inactive: false,
 				title: "Session Folder Cumulative Test",

@@ -1,9 +1,4 @@
-import {
-	MutateCollection,
-	ReadCollection,
-	WriteCollection,
-	CreateLegacyFolderID,
-} from "../../util.js";
+import { MutateCollection, ReadCollection, WriteCollection } from "../../util.js";
 
 import { CreateTableID, CreateFolderID } from "/tachi/typescript/common/src/utils/tachi-id.ts";
 
@@ -45,11 +40,6 @@ const ptFolders = {};
 
 MutateCollection("folders.json", (folders) => {
 	for (const level of LEVELS) {
-		const data = {
-			level,
-			versions: VERSIONID,
-		};
-
 		const slugLevel = level.replace("+", "p");
 		const slug = `${slugLevel}-${VERSIONID}`;
 
@@ -58,7 +48,6 @@ MutateCollection("folders.json", (folders) => {
 				game: GAME,
 				id: CreateFolderID(),
 				inactive: false,
-				legacyFolderID: CreateLegacyFolderID(data, GAME, playtype),
 				searchTerms: [],
 				slug,
 				title: `Level ${level} (${VERSION})`,

@@ -1,5 +1,5 @@
 import { CreateTableID, SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common";
-import { CreateFolderID, CreateRandomLegacyFolderID, MutateCollection } from "../util.js";
+import { CreateFolderID, MutateCollection } from "../util.js";
 
 // The original intention was for you to
 // change these for whatever table you are adding.
@@ -42,7 +42,6 @@ MutateCollection("folders.json", (foldersCol: SEEDS_FolderDocument[]) => {
 			game: GAME,
 			id: CreateFolderID(),
 			inactive: false,
-			legacyFolderID: CreateRandomLegacyFolderID(),
 			searchTerms: [],
 			slug,
 			title: `${PREFIX}${level}`,

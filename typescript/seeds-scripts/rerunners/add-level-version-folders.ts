@@ -5,7 +5,7 @@ import {
 	SEEDS_TableDocument,
 	V3Game,
 } from "tachi-common";
-import { CreateFolderID, CreateRandomLegacyFolderID, MutateCollection } from "../util.js";
+import { CreateFolderID, MutateCollection } from "../util.js";
 
 export default function AddLevelVersionFolders(
 	name: string,
@@ -23,7 +23,6 @@ export default function AddLevelVersionFolders(
 				game,
 				id: CreateFolderID(),
 				inactive: false,
-				legacyFolderID: CreateRandomLegacyFolderID(),
 				searchTerms: [],
 				slug,
 				title: `Level ${level} (${name})`,

@@ -2,12 +2,7 @@ import { Command } from "commander";
 import { GetGameConfig } from "tachi-common";
 import { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types/seeds-documents-zod";
 
-import {
-	CreateFolderID,
-	CreateRandomLegacyFolderID,
-	CreateTableID,
-	MutateCollection,
-} from "../../util";
+import { CreateFolderID, CreateTableID, MutateCollection } from "../../util";
 
 const LEVELS = [
 	"0",
@@ -77,7 +72,6 @@ for (const level of LEVELS) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `Level ${level} (${versionName})`,
@@ -93,7 +87,6 @@ for (const [fullName, safeName] of DIFFICULTIES) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `${fullName} (${versionName})`,
@@ -109,7 +102,6 @@ for (const [fullName, safeName] of GENRES) {
 		game: "ongeki",
 		id: CreateFolderID(),
 		inactive: false,
-		legacyFolderID: CreateRandomLegacyFolderID(),
 		searchTerms: [],
 		slug,
 		title: `${fullName} (${versionName})`,

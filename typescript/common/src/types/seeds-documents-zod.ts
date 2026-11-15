@@ -201,7 +201,6 @@ export const SEEDS_FOLDER_DOCUMENT_SCHEMA = z.strictObject({
 	game: SEEDS_V3_GAME_SCHEMA,
 	id: SEEDS_TachiIdSchema("F"),
 	inactive: z.boolean(),
-	legacyFolderID: z.string(),
 	searchTerms: z.array(z.string()),
 	slug: z.string(),
 	title: z.string(),
