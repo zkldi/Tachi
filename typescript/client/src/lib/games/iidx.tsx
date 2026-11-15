@@ -11,6 +11,7 @@ import { NumericSOV } from "#util/sorts";
 import { COLOUR_SET, type GamesForGroup, IIDX_LAMPS, RawIIDXGradeBoundaries } from "tachi-common";
 
 import { bgc, CreateRatingSys } from "./_util";
+import { IIDX_AAA_DIFFICULTY } from "./iidx-aaa";
 
 const IIDX_ENUM_COLOURS: GameClientImplementation<GamesForGroup["iidx"]>["enumColours"] = {
 	grade: {
@@ -174,6 +175,7 @@ export const IIDX_SP_IMPL: GameClientImplementation<"iidx-sp"> = {
 			(c) => c.data.exhcTier?.individualDifference,
 			(s) => [s.scoreData.lamp, s.scoreData.enumIndexes.lamp >= IIDX_LAMPS.EX_HARD_CLEAR],
 		),
+		IIDX_AAA_DIFFICULTY,
 	],
 	scoreHeaders: IIDX_HEADERS,
 	classColours: IIDX_COLOURS,
