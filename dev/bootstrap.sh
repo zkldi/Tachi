@@ -101,10 +101,12 @@ function bunInstall {
 	echo "Installed dependencies."
 }
 
-function configureGitHooks {
-	echo "Configuring git hooks path..."
-	git config core.hooksPath .githooks
+function configureGit {
+	echo "Configuring git..."
+	git config --local core.hooksPath .githooks
+	git config --local core.checkStat minimal
 	echo "Git hooks path set to .githooks."
+	echo "Git stat checks optimized for the bind-mounted workspace."
 }
 
 function syncDatabaseWithSeeds {
@@ -125,10 +127,10 @@ function syncDatabaseWithSeeds {
 
 # always setup the shell
 setupShell
+configureGit
 copyEnvExamples
 seedS3Cdn
 bunInstall
-configureGitHooks
 
 if [ -e _SETUP_OK ] && [ $FORCE -eq 0 ]; then
 	echo "Already bootstrapped."
