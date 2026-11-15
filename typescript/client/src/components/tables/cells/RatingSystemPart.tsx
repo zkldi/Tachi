@@ -12,11 +12,11 @@ import MiniTable from "../components/MiniTable";
 export default function RatingSystemPart({
 	chart,
 	game,
-	truncateRatingsLines,
+	wrapRatingsLines,
 }: {
 	chart: ChartDocument;
 	game: V3Game;
-	truncateRatingsLines?: boolean;
+	wrapRatingsLines?: boolean;
 }) {
 	const ratingSystems: Array<GameRatingSystem<any>> =
 		GAME_CLIENT_IMPLEMENTATIONS[game].ratingSystems;
@@ -25,10 +25,24 @@ export default function RatingSystemPart({
 		return null;
 	}
 
-	const joinedRatingsDisplay = ratingSystems
-		.map((r) => r.toString(chart as any))
-		.filter((e) => IsNotNullish(e))
-		.join(" / ");
+	const ratingsDisplay = ratingSystems
+		.map((r) => ({ name: r.name, text: r.toString(chart as any) }))
+		.filter((r) => IsNotNullish(r.text));
+
+	const joinedRatingsDisplay = ratingsDisplay.map((r) => r.text).join(" / ");
+
+	const wrappedRatingsBlock = (
+		<div style={{ minWidth: 0, whiteSpace: "normal" }}>
+			<Muted>
+				{ratingsDisplay.map((r, index) => (
+					<React.Fragment key={r.name}>
+						{index > 0 && " / "}
+						<span className="text-nowrap">{r.text}</span>
+					</React.Fragment>
+				))}
+			</Muted>
+		</div>
+	);
 
 	const miniTableRatingsContent = (
 		<MiniTable colSpan={2} headers={["Ratings"]}>
@@ -62,10 +76,8 @@ export default function RatingSystemPart({
 		</MiniTable>
 	);
 
-	const desktopMutedBlock = truncateRatingsLines ? (
-		<div className="d-block text-truncate" style={{ minWidth: 0 }}>
-			<Muted>{joinedRatingsDisplay}</Muted>
-		</div>
+	const desktopMutedBlock = wrapRatingsLines ? (
+		wrappedRatingsBlock
 	) : (
 		<div>
 			<Muted>{joinedRatingsDisplay}</Muted>
@@ -80,10 +92,8 @@ export default function RatingSystemPart({
 				</QuickTooltip>
 			</div>
 			<div className="d-block d-lg-none">
-				{truncateRatingsLines ? (
-					<div className="d-block text-truncate" style={{ minWidth: 0 }}>
-						<Muted>{joinedRatingsDisplay}</Muted>
-					</div>
+				{wrapRatingsLines ? (
+					wrappedRatingsBlock
 				) : (
 					<Muted>
 						{ratingSystems.map((r) => (
