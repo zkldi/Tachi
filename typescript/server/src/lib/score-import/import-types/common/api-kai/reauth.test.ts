@@ -62,6 +62,7 @@ describe("#CreateKaiReauthFunction", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "FLO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(dbChange.token).toBe("NEW_ACCESS_TOKEN");
@@ -94,6 +95,7 @@ describe("#CreateKaiReauthFunction", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "FLO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(dbChange.refresh_token).toBe(authDoc.refreshToken);
@@ -130,6 +132,7 @@ describe("#CreateKaiReauthFunction", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "FLO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(dbChange.refresh_token).toBe(authDoc.refreshToken);

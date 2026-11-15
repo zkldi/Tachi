@@ -122,6 +122,7 @@ describe("ACTION_UpdateGoalSubscription", () => {
 			.selectAll()
 			.where("goal_sub.goal_id", "=", oldGoalID)
 			.where("goal_sub.user_id", "=", userID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(oldSub).toBeUndefined();
@@ -147,6 +148,7 @@ describe("ACTION_UpdateGoalSubscription", () => {
 			.selectAll()
 			.where("kind", "=", "UPDATE_GOAL_SUBSCRIPTION")
 			.orderBy("action.ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({

@@ -127,10 +127,12 @@ describe("ACTION_DeleteSession", () => {
 		const sess = await DB.selectFrom("session")
 			.select("id")
 			.where("id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 		const score = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", scoreId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sess).toBeUndefined();
@@ -147,10 +149,12 @@ describe("ACTION_DeleteSession", () => {
 		const sess = await DB.selectFrom("session")
 			.select("id")
 			.where("id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 		const score = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", scoreId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sess).toBeUndefined();
@@ -168,6 +172,7 @@ describe("ACTION_DeleteSession", () => {
 			.selectAll()
 			.where("kind", "=", "DELETE_SESSION")
 			.orderBy("ts_end", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

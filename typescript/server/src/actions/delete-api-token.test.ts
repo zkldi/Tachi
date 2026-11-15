@@ -45,6 +45,7 @@ describe("ACTION_DeleteApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "DELETE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -104,6 +105,7 @@ describe("ACTION_DeleteApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

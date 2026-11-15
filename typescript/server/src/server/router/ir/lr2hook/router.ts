@@ -60,6 +60,7 @@ router.post(
 		const course = await DB.selectFrom("bms_course_lookup")
 			.select(["set", "game", "value"])
 			.where("md5sums", "=", score.md5)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!course) {

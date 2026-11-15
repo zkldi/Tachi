@@ -338,6 +338,7 @@ describe("ConverterIRFervidex", () => {
 		const row = await DB.selectFrom("score")
 			.select("highlight")
 			.where("id", "=", scoreID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row?.highlight).toBe(true);

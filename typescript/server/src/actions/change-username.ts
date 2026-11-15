@@ -19,6 +19,7 @@ export const ACTION_ChangeUsername = MakeAction(
 					.selectFrom("priv_account_credential")
 					.select("password")
 					.where("user_id", "=", taker.acct.id)
+					.limit(1)
 					.executeTakeFirstOrThrow();
 
 				if (!pw) {

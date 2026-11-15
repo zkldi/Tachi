@@ -24,6 +24,7 @@ async function getCachedPlaycount(chartId: string): Promise<number> {
 	const row = await DB.selectFrom("chart_playcount")
 		.select("chart_playcount.playcount")
 		.where("chart_playcount.chart_id", "=", chartId)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row?.playcount ?? 0;

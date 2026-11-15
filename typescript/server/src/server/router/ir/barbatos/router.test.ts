@@ -72,6 +72,7 @@ describe("POST /ir/barbatos/score/submit (Postgres)", () => {
 			.select((eb) => eb.fn.countAll<number>().as("c"))
 			.where("user_id", "=", 1)
 			.where("game", "=", "sdvx")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(Number(row?.c)).toBe(1);

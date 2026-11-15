@@ -34,6 +34,7 @@ describe("ACTION_ResendVerifyEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).not.toBe(originalToken);
@@ -62,6 +63,7 @@ describe("ACTION_ResendVerifyEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).toMatch(/^[0-9a-f]{40}$/u);
@@ -78,6 +80,7 @@ describe("ACTION_ResendVerifyEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).toBe(otherToken);
@@ -92,6 +95,7 @@ describe("ACTION_ResendVerifyEmail", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "RESEND_VERIFY_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -130,6 +134,7 @@ describe("ACTION_ResendVerifyEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "RESEND_VERIFY_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("GOOD");

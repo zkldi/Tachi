@@ -26,6 +26,7 @@ export async function loadUserGameStats(
 		.select(["ratings", "classes"])
 		.where("user_id", "=", userID)
 		.where("game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

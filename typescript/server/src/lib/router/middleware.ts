@@ -265,6 +265,7 @@ export const withUserGameProfile = async (
 		.select(SELECT_GAME_PROFILE)
 		.where("user_id", "=", user.id)
 		.where("game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -468,6 +469,7 @@ export const withGoal = async (req: Request): Promise<{ goalDoc: GoalDocument }>
 		.select(SELECT_GOAL)
 		.where("goal.id", "=", req.params.goalID)
 		.where("goal.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -497,6 +499,7 @@ export const withQuest = async (req: Request): Promise<{ questDoc: QuestDocument
 		.select(SELECT_QUEST)
 		.where("quest.id", "=", req.params.questID)
 		.where("quest.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

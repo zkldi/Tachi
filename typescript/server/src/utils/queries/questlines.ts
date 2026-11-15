@@ -96,6 +96,7 @@ export async function GetQuestlineById(
 		.select(SELECT_QUESTLINE)
 		.where("questline.id", "=", questlineID)
 		.where("questline.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

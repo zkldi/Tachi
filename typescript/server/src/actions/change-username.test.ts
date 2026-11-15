@@ -62,6 +62,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -93,6 +94,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -111,6 +113,7 @@ describe("ACTION_ChangeUsername", () => {
 		const row = await DB.selectFrom("account")
 			.select("username")
 			.where("id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.username).toBe(username);
@@ -140,6 +143,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -157,6 +161,7 @@ describe("ACTION_ChangeUsername", () => {
 		const row = await DB.selectFrom("account")
 			.select("username")
 			.where("id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.username).toBe(username);
@@ -199,6 +204,7 @@ describe("ACTION_ChangeUsername", () => {
 		const row = await DB.selectFrom("account")
 			.select("username")
 			.where("id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.username).toBe("new_username");
@@ -216,6 +222,7 @@ describe("ACTION_ChangeUsername", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.orderBy("timestamp", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(change).toMatchObject({
@@ -254,6 +261,7 @@ describe("ACTION_ChangeUsername", () => {
 		const row = await DB.selectFrom("account")
 			.select("username")
 			.where("id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.username).toBe("other_user");
@@ -272,6 +280,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -293,6 +302,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;
@@ -311,6 +321,7 @@ describe("ACTION_ChangeUsername", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_USERNAME")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = JSON.stringify(action.input);

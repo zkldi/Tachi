@@ -113,6 +113,7 @@ describe("ACTION_DeleteAllNotifications", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_ALL_NOTIFICATIONS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

@@ -33,6 +33,7 @@ describe("POST /api/v1/auth/register", () => {
 		const created = await DB.selectFrom("account")
 			.select("username")
 			.where("username", "=", "newuser")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(created?.username).toBe("newuser");
@@ -130,6 +131,7 @@ describe("POST /api/v1/auth/register", () => {
 		const invite = await DB.selectFrom("priv_invite")
 			.select("consumed")
 			.where("code", "=", inviteCode)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(invite.consumed).toBe(false);
@@ -147,6 +149,7 @@ describe("POST /api/v1/auth/register", () => {
 		const invite = await DB.selectFrom("priv_invite")
 			.select("consumed")
 			.where("code", "=", inviteCode)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(invite.consumed).toBe(true);
@@ -315,6 +318,7 @@ describe("POST /api/v1/auth/reset-password", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare("brand_new_password", cred.password)).toBe(true);

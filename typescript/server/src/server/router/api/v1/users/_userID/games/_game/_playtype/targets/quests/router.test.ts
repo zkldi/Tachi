@@ -168,6 +168,7 @@ describe("PUT /api/v1/users/:userID/games/:game/targets/quests/:questID", () => 
 		const row = await DB.selectFrom("account")
 			.select("account.id")
 			.where("account.username", "=", username)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		userId = Number(row.id);
@@ -210,6 +211,7 @@ describe("PUT /api/v1/users/:userID/games/:game/targets/quests/:questID", () => 
 			.selectAll()
 			.where("quest_sub.quest_id", "=", questId)
 			.where("quest_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sub).toBeDefined();
@@ -251,6 +253,7 @@ describe("DELETE /api/v1/users/:userID/games/:game/targets/quests/:questID", () 
 		const row = await DB.selectFrom("account")
 			.select("account.id")
 			.where("account.username", "=", username)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		userId = Number(row.id);
@@ -299,6 +302,7 @@ describe("DELETE /api/v1/users/:userID/games/:game/targets/quests/:questID", () 
 			.selectAll()
 			.where("quest_sub.quest_id", "=", questId)
 			.where("quest_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sub).toBeUndefined();

@@ -21,6 +21,7 @@ export async function GetImportTimestop(
 		.select(["import_timestop.last_score_time"])
 		.where("import_timestop.user_id", "=", userID)
 		.where("import_timestop.import_type", "=", importType)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

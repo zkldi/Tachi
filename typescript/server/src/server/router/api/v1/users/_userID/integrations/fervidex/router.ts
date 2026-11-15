@@ -22,6 +22,7 @@ API_V1_ROUTER.add(
 		const row = await DB.selectFrom("svc_fer_settings")
 			.select(SELECT_FER_SETTINGS)
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

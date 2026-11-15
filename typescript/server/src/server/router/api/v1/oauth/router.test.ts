@@ -68,6 +68,7 @@ describe("POST /api/v1/oauth/token", () => {
 		const tokenRow = await DB.selectFrom("priv_api_token")
 			.selectAll()
 			.where("token", "=", res.body.body.token)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(tokenRow).toBeDefined();
@@ -77,6 +78,7 @@ describe("POST /api/v1/oauth/token", () => {
 		const codeRow = await DB.selectFrom("priv_oauth2_auth_token")
 			.selectAll()
 			.where("token", "=", authCode)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(codeRow).toBeUndefined();
@@ -157,6 +159,7 @@ describe("POST /api/v1/oauth/create-code", () => {
 		const row = await DB.selectFrom("priv_oauth2_auth_token")
 			.selectAll()
 			.where("token", "=", res.body.body.code)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();

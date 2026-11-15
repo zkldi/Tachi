@@ -33,6 +33,7 @@ async function readPbPercent(userId: number, chartId: string): Promise<number> {
 		.where("pb.user_id", "=", userId)
 		.where("pb.chart_id", "=", chartId)
 		.where("pb.lens", "is", null)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -341,6 +342,7 @@ describe("dirty queue race harness", () => {
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", chartId)
 			.where("pb.lens", "is", null)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.last_clean_started_at).toBe(newerRun);
@@ -402,6 +404,7 @@ describe("dirty queue race harness", () => {
 		const row = await DB.selectFrom("session")
 			.select(["session.calculated_data", "session.last_clean_started_at"])
 			.where("session.id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect((row.calculated_data as { marker: string }).marker).toBe("newer");

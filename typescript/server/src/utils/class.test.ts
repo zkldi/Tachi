@@ -32,6 +32,7 @@ describe("UpdateClassIfGreater (Postgres)", () => {
 			.select("classes")
 			.where("user_id", "=", id)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(asClassesJson(row.classes).dan).toBe("DAN_1");
@@ -56,6 +57,7 @@ describe("UpdateClassIfGreater (Postgres)", () => {
 			.select("classes")
 			.where("user_id", "=", id)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(asClassesJson(row.classes).dan).toBe("DAN_1");
@@ -65,6 +67,7 @@ describe("UpdateClassIfGreater (Postgres)", () => {
 			.where("user_id", "=", id)
 			.where("game", "=", "iidx-sp")
 			.orderBy("timestamp", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(ach.class_value).toBe("DAN_1");
@@ -81,6 +84,7 @@ describe("UpdateClassIfGreater (Postgres)", () => {
 			.selectAll()
 			.where("user_id", "=", id)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(asClassesJson(profile.classes).dan).toBe("DAN_1");

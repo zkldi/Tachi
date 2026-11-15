@@ -40,6 +40,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare("new_secure_password", cred.password)).toBe(true);
@@ -56,6 +57,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare(user.password, cred.password)).toBe(false);
@@ -75,6 +77,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "RESET_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -110,6 +113,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare(user.password, cred.password)).toBe(true);
@@ -128,6 +132,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "RESET_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -168,6 +173,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare(user.password, cred.password)).toBe(true);
@@ -184,6 +190,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "RESET_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -202,6 +209,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const remaining = await DB.selectFrom("priv_password_reset_token")
 			.select("token")
 			.where("token", "=", "VALID_RESET_TOKEN")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(remaining).toBeUndefined();
@@ -225,6 +233,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare("new_secure_password", cred.password)).toBe(true);
@@ -250,6 +259,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const otherCred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare("other_original_pw", otherCred.password)).toBe(true);
@@ -276,6 +286,7 @@ describe("ANON_ACTION_ResetPassword", () => {
 		const userCred = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(await PasswordCompare(user.password, userCred.password)).toBe(true);

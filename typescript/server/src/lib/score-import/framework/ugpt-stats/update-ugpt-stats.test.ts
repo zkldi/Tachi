@@ -121,6 +121,7 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			.selectAll()
 			.where("user_id", "=", 1)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const ratings = typeof gp.ratings === "string" ? JSON.parse(gp.ratings) : gp.ratings;
@@ -187,6 +188,7 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			.select("ratings")
 			.where("user_id", "=", 1)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const r = typeof gp.ratings === "string" ? JSON.parse(gp.ratings) : gp.ratings;
@@ -227,6 +229,7 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			.select("classes")
 			.where("user_id", "=", 1)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 		const cls = typeof gp.classes === "string" ? JSON.parse(gp.classes) : gp.classes;
 		expect((cls as { dan: string }).dan).toBe("KAIDEN");
@@ -264,6 +267,7 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			.select("classes")
 			.where("user_id", "=", 1)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 		const cls = typeof gp.classes === "string" ? JSON.parse(gp.classes) : gp.classes;
 		expect((cls as { dan: string }).dan).toBe("KAIDEN");

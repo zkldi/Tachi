@@ -45,6 +45,7 @@ export const ACTION_CreateApiToken = MakeAction(
 					"pm_manage_challenges",
 				])
 				.where("client_id", "=", clientID)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (!client) {
@@ -55,6 +56,7 @@ export const ACTION_CreateApiToken = MakeAction(
 				.select("token")
 				.where("user_id", "=", taker.acct.id)
 				.where("from_oauth2_client", "=", clientID)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (existing) {

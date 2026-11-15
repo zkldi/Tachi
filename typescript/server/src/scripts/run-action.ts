@@ -90,6 +90,7 @@ async function main(): Promise<void> {
 	const row = await DB.selectFrom("account")
 		.select(["account.username"])
 		.where("account.id", "=", userId)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

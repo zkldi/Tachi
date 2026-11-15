@@ -270,6 +270,7 @@ export const ConverterIRFervidex: ConverterFunction<FervidexScore, FervidexConte
 				.select("chart_id")
 				.where("id", "=", scoreID)
 				.where("user_id", "=", context.userID)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (!scoreRow) {

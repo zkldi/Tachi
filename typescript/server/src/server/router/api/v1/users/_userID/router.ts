@@ -167,6 +167,7 @@ API_V1_ROUTER.add(
 
 		const verifyInfo = await DB.selectFrom("priv_verify_email_token")
 			.where("priv_verify_email_token.user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		const verified = !verifyInfo;
@@ -189,6 +190,7 @@ API_V1_ROUTER.add("GET /users/:userID/email", withRequestedUser, withSelf, async
 	const row = await DB.selectFrom("priv_account_credential")
 		.select("priv_account_credential.email")
 		.where("priv_account_credential.user_id", "=", user.id)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -348,11 +350,13 @@ API_V1_ROUTER.add("GET /users/:userID/stats", withRequestedUser, async ({ ctx })
 		DB.selectFrom("score")
 			.select(DB.fn.countAll().as("count"))
 			.where("score.user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow()
 			.then((r) => Number(r.count)),
 		DB.selectFrom("session")
 			.select(DB.fn.countAll().as("count"))
 			.where("session.user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow()
 			.then((r) => Number(r.count)),
 	]);

@@ -71,6 +71,7 @@ describe("ACTION_CreateInvite", () => {
 		const row = await DB.selectFrom("priv_invite")
 			.select("code")
 			.where("code", "=", result.code)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -96,6 +97,7 @@ describe("ACTION_CreateInvite", () => {
 		const row = await DB.selectFrom("priv_invite")
 			.select(["code", "consumed", "created_by"])
 			.where("code", "=", result.code)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.consumed).toBe(false);
@@ -130,6 +132,7 @@ describe("ACTION_CreateInvite", () => {
 		const { count } = await DB.selectFrom("priv_invite")
 			.select(DB.fn.countAll().as("count"))
 			.where("created_by", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count)).toBe(1);
@@ -147,6 +150,7 @@ describe("ACTION_CreateInvite", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CREATE_INVITE")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -176,6 +180,7 @@ describe("ACTION_CreateInvite", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CREATE_INVITE")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

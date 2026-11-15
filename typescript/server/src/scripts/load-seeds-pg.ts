@@ -43,6 +43,7 @@ if (require.main === module) {
 		const anyAdmin = await DB.selectFrom("account")
 			.select("id")
 			.where("auth_level", "=", "admin")
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!anyAdmin) {

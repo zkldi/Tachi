@@ -18,6 +18,7 @@ async function getSettings(userId: number) {
 	return DB.selectFrom("account_settings")
 		.selectAll()
 		.where("user_id", "=", userId)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -183,6 +184,7 @@ describe("PATCH /api/v1/users/:userID/settings", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_USER_SETTINGS")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(action).toBeDefined();

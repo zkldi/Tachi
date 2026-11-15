@@ -13,6 +13,7 @@ async function getMytCardRow(userId: number) {
 	return DB.selectFrom("priv_svc_myt_card_info")
 		.selectAll()
 		.where("user_id", "=", userId)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -53,6 +54,7 @@ describe("ACTION_UpdateMytCardInfo", () => {
 		const { count } = await DB.selectFrom("priv_svc_myt_card_info")
 			.select(DB.fn.countAll().as("count"))
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count)).toBe(1);
@@ -80,6 +82,7 @@ describe("ACTION_UpdateMytCardInfo", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_MYT_CARD_INFO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -148,6 +151,7 @@ describe("ACTION_DeleteMytCardInfo", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_MYT_CARD_INFO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

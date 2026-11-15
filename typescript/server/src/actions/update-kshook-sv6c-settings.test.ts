@@ -8,6 +8,7 @@ async function getKshookSettings(userId: number) {
 	return DB.selectFrom("svc_kshook_sv6c_settings")
 		.selectAll()
 		.where("user_id", "=", userId)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -61,6 +62,7 @@ describe("ACTION_UpdateKshookSv6cSettings", () => {
 		const count = await DB.selectFrom("svc_kshook_sv6c_settings")
 			.select(DB.fn.countAll().as("count"))
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count.count)).toBe(1);
@@ -93,6 +95,7 @@ describe("ACTION_UpdateKshookSv6cSettings", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_KSHOOK_SV6C_SETTINGS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

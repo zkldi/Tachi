@@ -20,6 +20,7 @@ export const ACTION_AddGoal = MakeAction("ADD_GOAL", async (taker, input) => {
 		.select(sql<number>`count(*)::int`.as("c"))
 		.where("goal_sub.user_id", "=", userID)
 		.where("goal.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	const existingGoalsCount = Number(row?.c ?? 0);

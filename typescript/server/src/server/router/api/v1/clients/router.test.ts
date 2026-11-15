@@ -196,6 +196,7 @@ describe("POST /api/v1/clients/create", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select(["client_id", "name"])
 			.where("client_id", "=", res.body.body.clientID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row?.name).toBe("Persistent App");
@@ -337,6 +338,7 @@ describe("PATCH /api/v1/clients/:clientID", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("name")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.name).toBe("Persisted Name");
@@ -419,6 +421,7 @@ describe("POST /api/v1/clients/:clientID/reset-secret", () => {
 		const before = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const res = await mockApi
@@ -430,6 +433,7 @@ describe("POST /api/v1/clients/:clientID/reset-secret", () => {
 		const after = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(after.client_secret).not.toBe(before.client_secret);
@@ -444,6 +448,7 @@ describe("POST /api/v1/clients/:clientID/reset-secret", () => {
 		const token = await DB.selectFrom("priv_api_token")
 			.select("token")
 			.where("token", "=", "T_should_survive")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(token).toBeDefined();
@@ -506,6 +511,7 @@ describe("DELETE /api/v1/clients/:clientID", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("client_id")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();
@@ -519,6 +525,7 @@ describe("DELETE /api/v1/clients/:clientID", () => {
 		const token = await DB.selectFrom("priv_api_token")
 			.select("token")
 			.where("token", "=", "T_linked_token")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(token).toBeUndefined();
@@ -534,6 +541,7 @@ describe("DELETE /api/v1/clients/:clientID", () => {
 		const preserved = await DB.selectFrom("priv_api_token")
 			.select("token")
 			.where("token", "=", "T_other_token")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(preserved).toBeDefined();

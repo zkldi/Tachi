@@ -102,6 +102,7 @@ describe("ACTION_FollowUser", () => {
 			.select(["user_id", "followee"])
 			.where("user_id", "=", userId)
 			.where("followee", "=", targetId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -145,6 +146,7 @@ describe("ACTION_FollowUser", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "FOLLOW_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -163,6 +165,7 @@ describe("ACTION_FollowUser", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "FOLLOW_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

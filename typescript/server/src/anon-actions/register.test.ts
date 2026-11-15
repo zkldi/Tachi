@@ -43,6 +43,7 @@ describe("ANON_ACTION_Register", () => {
 		const user = await DB.selectFrom("account")
 			.select("username")
 			.where("username", "=", "newuser")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(user?.username).toBe("newuser");
@@ -60,6 +61,7 @@ describe("ANON_ACTION_Register", () => {
 		const cred = await DB.selectFrom("priv_account_credential")
 			.select("email")
 			.where("user_id", "=", userID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(cred.email).toBe("newuser@example.com");
@@ -77,6 +79,7 @@ describe("ANON_ACTION_Register", () => {
 		const invite = await DB.selectFrom("priv_invite")
 			.select(["consumed", "consumed_by"])
 			.where("code", "=", inviteCode)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(invite.consumed).toBe(true);
@@ -95,6 +98,7 @@ describe("ANON_ACTION_Register", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "REGISTER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -194,6 +198,7 @@ describe("ANON_ACTION_Register", () => {
 		const invite = await DB.selectFrom("priv_invite")
 			.select("consumed")
 			.where("code", "=", inviteCode)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(invite.consumed).toBe(false);
@@ -213,6 +218,7 @@ describe("ANON_ACTION_Register", () => {
 		const user = await DB.selectFrom("account")
 			.select("username")
 			.where("username", "=", "newuser")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(user).toBeUndefined();
@@ -280,6 +286,7 @@ describe("ANON_ACTION_Register", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "REGISTER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -299,6 +306,7 @@ describe("ANON_ACTION_Register", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "REGISTER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -316,6 +324,7 @@ describe("ANON_ACTION_Register", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "REGISTER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;
@@ -353,6 +362,7 @@ describe("ANON_ACTION_Register - bootstrap invite", () => {
 		const account = await DB.selectFrom("account")
 			.select(["account.id", "account.auth_level"])
 			.where("account.id", "=", result.userID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(account.auth_level).toBe("admin");
@@ -369,6 +379,7 @@ describe("ANON_ACTION_Register - bootstrap invite", () => {
 
 		const invites = await DB.selectFrom("priv_invite")
 			.select(DB.fn.countAll().as("count"))
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(invites.count)).toBe(0);

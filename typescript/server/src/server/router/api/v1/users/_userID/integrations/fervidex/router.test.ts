@@ -272,6 +272,7 @@ describe("PATCH /api/v1/users/:userID/integrations/fervidex/settings", () => {
 		const row = await DB.selectFrom("svc_fer_settings")
 			.selectAll()
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.force_static_import).toBe(true);

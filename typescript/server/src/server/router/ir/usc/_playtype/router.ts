@@ -66,6 +66,7 @@ const ValidateUSCRequest: RequestHandler = async (req, res, next) => {
 	const uscAuthDoc = await DB.selectFrom("priv_api_token")
 		.select(SELECT_API_TOKEN)
 		.where("token", "=", splitToken[1])
+		.limit(1)
 		.executeTakeFirst()
 		.then((r) => (r ? ToAPITokenDocument(r) : null));
 

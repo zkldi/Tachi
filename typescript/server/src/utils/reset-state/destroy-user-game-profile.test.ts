@@ -86,6 +86,7 @@ describe("DestroyUserGameProfile (DELETE .../games/:game)", () => {
 		const sess = await DB.selectFrom("session")
 			.select("session.id")
 			.where("session.id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sess).toBeUndefined();
@@ -93,6 +94,7 @@ describe("DestroyUserGameProfile (DELETE .../games/:game)", () => {
 		const link = await DB.selectFrom("import_session")
 			.select("import_session.row_id")
 			.where("import_session.session_id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(link).toBeUndefined();

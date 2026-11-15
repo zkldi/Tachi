@@ -188,6 +188,7 @@ async function loadScorePayload(chartId: string) {
 	const row = await DB.selectFrom("score")
 		.select(["score.data", "score.derived_data", "score.judgements", "score.calculated_data"])
 		.where("score.chart_id", "=", chartId)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	return {
@@ -227,6 +228,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const queued = await DB.selectFrom("score_rederive")
 			.select(["score_rederive.chart_id"])
 			.where("score_rederive.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(queued?.chart_id).toBe(chartId);
@@ -246,6 +248,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const queued = await DB.selectFrom("score_rederive")
 			.select(["score_rederive.chart_id"])
 			.where("score_rederive.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(queued).toBeUndefined();
@@ -378,6 +381,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", chartId)
 			.where("pb.lens", "is", null)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const pbCalc = parseJsonb<{ ktLampRating: number }>(pbRow.calculated_data);
@@ -423,6 +427,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const stillQueued = await DB.selectFrom("score_rederive")
 			.select(["score_rederive.chart_id"])
 			.where("score_rederive.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(stillQueued).toBeUndefined();
@@ -480,6 +485,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		let sessRow = await DB.selectFrom("session")
 			.select(["session.calculated_data"])
 			.where("session.id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		let scoreDocs = await loadScoresForSession(sessionId);
@@ -490,6 +496,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 			.select(["game_profile.ratings"])
 			.where("game_profile.user_id", "=", userId)
 			.where("game_profile.game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		let ratings = parseJsonb<{ ktLampRating: number | null }>(gpRow.ratings);
@@ -515,6 +522,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		sessRow = await DB.selectFrom("session")
 			.select(["session.calculated_data"])
 			.where("session.id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		scoreDocs = await loadScoresForSession(sessionId);
@@ -525,6 +533,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 			.select(["game_profile.ratings"])
 			.where("game_profile.user_id", "=", userId)
 			.where("game_profile.game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		ratings = parseJsonb<{ ktLampRating: number | null }>(gpRow.ratings);
@@ -580,6 +589,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 			const row = await DB.selectFrom("score")
 				.select(["score.calculated_data"])
 				.where("score.id", "=", scoreId)
+				.limit(1)
 				.executeTakeFirstOrThrow();
 
 			const calc = parseJsonb<{ ktLampRating: number }>(row.calculated_data);
@@ -618,6 +628,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const pbDirtyBefore = await DB.selectFrom("pb_dirty")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
 			.where("pb_dirty.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(pbDirtyBefore.n)).toBe(0);
@@ -630,6 +641,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const pbDirtyAfter = await DB.selectFrom("pb_dirty")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
 			.where("pb_dirty.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		// No new pb_dirty rows should be enqueued since no score was updated
@@ -676,6 +688,7 @@ describe("rederiveScoresForChart / chart checksum recalc (Postgres)", () => {
 		const stillQueued = await DB.selectFrom("score_rederive")
 			.select(["score_rederive.chart_id"])
 			.where("score_rederive.chart_id", "=", chartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(stillQueued).toBeUndefined();

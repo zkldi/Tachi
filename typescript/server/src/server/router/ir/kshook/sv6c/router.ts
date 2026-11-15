@@ -109,6 +109,7 @@ router.post("/score/export", async (req, res) => {
 	const row = await DB.selectFrom("svc_kshook_sv6c_settings")
 		.select(SELECT_KSHOOK_SV6C_SETTINGS)
 		.where("user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row?.force_static_import) {

@@ -18,6 +18,7 @@ export const ACTION_UpdateUserGameShowcase = MakeAction(
 			.select("game_profile.user_id")
 			.where("game_profile.user_id", "=", userID)
 			.where("game_profile.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!profileRow) {

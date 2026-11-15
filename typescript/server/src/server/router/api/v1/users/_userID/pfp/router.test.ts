@@ -58,6 +58,7 @@ describe("PUT /api/v1/users/:userID/pfp", () => {
 		const { custom_pfp_location } = await DB.selectFrom("account")
 			.select("custom_pfp_location")
 			.where("id", "=", 1)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const stored = await CDNRetrieve(GetProfilePictureURL(1, custom_pfp_location!));
@@ -83,6 +84,7 @@ describe("PUT /api/v1/users/:userID/pfp", () => {
 		const { custom_pfp_location } = await DB.selectFrom("account")
 			.select("custom_pfp_location")
 			.where("id", "=", 1)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const stored = await CDNRetrieve(GetProfilePictureURL(1, custom_pfp_location!));

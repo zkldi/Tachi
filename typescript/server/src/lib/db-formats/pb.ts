@@ -149,6 +149,7 @@ export async function GetPBOnChart(
 		.select(SELECT_PB_DOCUMENT_WITH_LEADERBOARD)
 		.where("pb.user_id", "=", userID)
 		.where("chart.id", "=", chartID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -399,6 +400,7 @@ export async function LoadPbRankOneOnChartID(chartID: string): Promise<PBScoreDo
 		.select(SELECT_PB_DOCUMENT_WITH_LEADERBOARD)
 		.where("chart.id", "=", chartID)
 		.where(sql<boolean>`chart_leaderboard.rank = 1`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

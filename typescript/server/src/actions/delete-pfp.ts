@@ -8,6 +8,7 @@ export const ACTION_DeletePfp = MakeAction("DELETE_PFP", async (taker) => {
 	const account = await DB.selectFrom("account")
 		.select("custom_pfp_location")
 		.where("id", "=", taker.acct.id)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	if (!account.custom_pfp_location) {

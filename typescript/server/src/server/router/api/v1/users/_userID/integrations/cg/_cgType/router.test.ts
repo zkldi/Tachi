@@ -143,6 +143,7 @@ describe("PUT /api/v1/users/:userID/integrations/cg/:cgType", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "gan")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.card_id).toBe(CARD);
@@ -186,6 +187,7 @@ describe("DELETE /api/v1/users/:userID/integrations/cg/:cgType", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "nag")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();

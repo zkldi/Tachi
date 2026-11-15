@@ -148,6 +148,7 @@ describe("CreatePBMergeFor (Postgres)", () => {
 		const picked = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", result!.scoreID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(picked?.id).toContain(String(2_000_000));
 	});

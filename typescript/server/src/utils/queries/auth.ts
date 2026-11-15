@@ -13,6 +13,7 @@ export async function GetKaiAuth(
 		.select(SELECT_KAI_AUTH_TOKEN)
 		.where("user_id", "=", userID)
 		.where("service", "=", service)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row ? ToKaiAuthDocument(row) : null;

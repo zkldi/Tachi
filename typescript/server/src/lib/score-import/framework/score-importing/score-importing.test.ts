@@ -109,6 +109,7 @@ describe("score-importing duplicate score ID regression", () => {
 
 		const rowCount = await DB.selectFrom("raw_score")
 			.select((eb) => eb.fn.countAll().as("c"))
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0));
 
@@ -133,6 +134,7 @@ describe("score-importing duplicate score ID regression", () => {
 
 		const rowCount = await DB.selectFrom("raw_score")
 			.select((eb) => eb.fn.countAll().as("c"))
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0));
 

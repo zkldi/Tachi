@@ -8,6 +8,7 @@ export const ACTION_UpdateFervidexSettings = MakeAction(
 		const existing = await DB.selectFrom("svc_fer_settings")
 			.select(["svc_fer_settings.force_static_import"])
 			.where("user_id", "=", taker.acct.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		const newForceStaticImport = forceStaticImport ?? existing?.force_static_import ?? false;

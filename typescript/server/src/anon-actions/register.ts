@@ -93,6 +93,7 @@ export const ANON_ACTION_Register = MakeAnonAction(
 				const { count } = await txn
 					.selectFrom("account")
 					.select(txn.fn.countAll().as("count"))
+					.limit(1)
 					.executeTakeFirstOrThrow();
 
 				if (Number(count) > 0) {
@@ -110,6 +111,7 @@ export const ANON_ACTION_Register = MakeAnonAction(
 					.where("priv_invite.code", "=", inviteCode!)
 					.where("priv_invite.consumed", "=", false)
 					.forUpdate()
+					.limit(1)
 					.executeTakeFirst();
 
 				if (!inviteCodeDoc) {

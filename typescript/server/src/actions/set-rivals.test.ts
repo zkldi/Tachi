@@ -67,6 +67,7 @@ describe("ACTION_SetRivals", () => {
 		const actionRow = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "SET_RIVALS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({ result: "GOOD", ip: "10.0.0.3", user_id: userId });

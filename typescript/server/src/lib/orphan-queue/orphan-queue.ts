@@ -43,7 +43,7 @@ async function selectOrphanByCriteria<TGame extends V3Game>(
 		q = q.where(sql<boolean>`(orphan_chart.chart_doc::jsonb->'data'->>'hashSHA256') = ${sha}`);
 	}
 
-	const row = await q.executeTakeFirst();
+	const row = await q.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;

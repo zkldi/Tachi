@@ -93,6 +93,7 @@ async function countScoresForGame(game: V3Game) {
 		.select((eb) => eb.fn.countAll<number>().as("c"))
 		.where("user_id", "=", 1)
 		.where("game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 	return Number(row?.c ?? 0);
 }

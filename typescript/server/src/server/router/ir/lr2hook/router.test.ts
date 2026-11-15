@@ -160,6 +160,7 @@ describe("POST /ir/lr2hook/import/course (Postgres)", () => {
 			.selectAll()
 			.where("user_id", "=", 1)
 			.where("game", "=", "bms-7k")
+			.limit(1)
 			.executeTakeFirst();
 
 		const classes = typeof gp?.classes === "string" ? JSON.parse(gp.classes) : gp?.classes;
@@ -181,6 +182,7 @@ describe("POST /ir/lr2hook/import/course (Postgres)", () => {
 			.selectAll()
 			.where("user_id", "=", 1)
 			.where("game", "=", "bms-7k")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(gp).toBeUndefined();

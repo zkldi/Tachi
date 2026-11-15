@@ -48,6 +48,7 @@ describe("ACTION_ChangePassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -57,6 +58,7 @@ describe("ACTION_ChangePassword", () => {
 		const before = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const taker = { ip: "127.0.0.1", acct: { id: userId, username } };
@@ -71,6 +73,7 @@ describe("ACTION_ChangePassword", () => {
 		const after = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(after.password).toBe(before.password);
@@ -100,6 +103,7 @@ describe("ACTION_ChangePassword", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		await expect(PasswordCompare(NEW_PASSWORD, row.password)).resolves.toBe(true);
@@ -116,6 +120,7 @@ describe("ACTION_ChangePassword", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		await expect(PasswordCompare(OLD_PASSWORD, row.password)).resolves.toBe(false);
@@ -132,6 +137,7 @@ describe("ACTION_ChangePassword", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.password).not.toBe(NEW_PASSWORD);
@@ -149,6 +155,7 @@ describe("ACTION_ChangePassword", () => {
 		const otherBefore = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const taker = { ip: "127.0.0.1", acct: { id: userId, username } };
@@ -161,6 +168,7 @@ describe("ACTION_ChangePassword", () => {
 		const otherAfter = await DB.selectFrom("priv_account_credential")
 			.select("password")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(otherAfter.password).toBe(otherBefore.password);
@@ -179,6 +187,7 @@ describe("ACTION_ChangePassword", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CHANGE_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -200,6 +209,7 @@ describe("ACTION_ChangePassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = JSON.stringify(action.input);

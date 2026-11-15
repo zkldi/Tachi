@@ -6,6 +6,7 @@ export function GetClientByID(clientID: string): Promise<TachiAPIClientDocument 
 	return DB.selectFrom("priv_api_client")
 		.select(SELECT_API_CLIENT)
 		.where("client_id", "=", clientID)
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => (res ? ToAPIClientDocument(res) : null));
 }

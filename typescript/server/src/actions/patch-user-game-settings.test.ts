@@ -45,6 +45,7 @@ describe("ACTION_PatchUserGameSettings", () => {
 			.select(SELECT_GAME_PROFILE_SETTINGS)
 			.where("game_profile.user_id", "=", userId)
 			.where("game_profile.game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.pf_preferred_score_alg).toBe("ktLampRating");
@@ -62,6 +63,7 @@ describe("ACTION_PatchUserGameSettings", () => {
 		const actionRow = await DB.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "PATCH_USER_GAME_SETTINGS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({ result: "GOOD", ip: "10.0.0.2", user_id: userId });

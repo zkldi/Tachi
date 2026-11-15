@@ -127,6 +127,7 @@ export async function LoadImportDocumentById(
 		.select(SELECT_IMPORT)
 		.where("import.id", "=", importID)
 		.where("import.status", "=", "completed")
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!base) {
@@ -307,6 +308,7 @@ export async function GetImportTrackerByImportId(
 	const row = await DB.selectFrom("import_tracker")
 		.select(SELECT_IMPORT_TRACKER)
 		.where("import_tracker.import_id", "=", importID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

@@ -42,6 +42,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const originalRow = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const taker = { ip: "127.0.0.1", acct: { id: userId, username } };
@@ -50,6 +51,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const updatedRow = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(updatedRow.client_secret).not.toBe(originalRow.client_secret);
@@ -69,6 +71,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.client_secret).toBe(result.clientSecret);
@@ -108,6 +111,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const tokenStillExists = await DB.selectFrom("priv_api_token")
 			.select("token")
 			.where("token", "=", "T_existing_token")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(tokenStillExists).toBeDefined();
@@ -123,6 +127,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "RESET_API_CLIENT_SECRET")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -143,6 +148,7 @@ describe("ACTION_ResetApiClientSecret", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "RESET_API_CLIENT_SECRET")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

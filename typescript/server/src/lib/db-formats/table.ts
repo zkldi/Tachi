@@ -92,6 +92,7 @@ export async function LoadTableDocumentByLegacyId(
 	const row = await DB.selectFrom("table")
 		.select(SELECT_TABLE)
 		.where("legacy_id", "=", legacyId)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -113,6 +114,7 @@ export async function LoadTableDocumentByLegacyIdForGame(
 		.select(SELECT_TABLE)
 		.where("legacy_id", "=", legacyId)
 		.where("game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

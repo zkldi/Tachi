@@ -12,6 +12,7 @@ export const ACTION_CustomiseScore = MakeAction("CUSTOMISE_SCORE", async (_taker
 			.selectFrom("raw_score")
 			.select(["chart_id", "user_id"])
 			.where("id", "=", input.scoreID)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!scoreRow) {

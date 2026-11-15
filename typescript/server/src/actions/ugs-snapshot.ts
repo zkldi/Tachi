@@ -29,6 +29,7 @@ export async function runUgsSnapshotCore() {
 	const dupe = await DB.selectFrom("game_stats_snapshot")
 		.select("user_id")
 		.where("timestamp", "=", snapshotTimestampIso)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (dupe) {

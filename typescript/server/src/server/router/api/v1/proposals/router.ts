@@ -113,6 +113,7 @@ API_V1_ROUTER.add("POST /proposals", async ({ req, input }) => {
 	const account = await DB.selectFrom("account")
 		.select(["can_submit_quests"])
 		.where("id", "=", sessionUser.id)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!account?.can_submit_quests) {
@@ -355,6 +356,7 @@ API_V1_ROUTER.add("GET /proposals/:proposalID", async ({ params }) => {
 			"account.username",
 		])
 		.where("quest_proposal.row_id", "=", params.proposalID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -423,6 +425,7 @@ API_V1_ROUTER.add("PUT /proposals/:proposalID", async ({ req, params, input }) =
 			"quest_proposal.user_id",
 		])
 		.where("quest_proposal.row_id", "=", params.proposalID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -547,6 +550,7 @@ API_V1_ROUTER.add("DELETE /proposals/:proposalID", async ({ req, params }) => {
 			"account.auth_level",
 		])
 		.where("quest_proposal.row_id", "=", params.proposalID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

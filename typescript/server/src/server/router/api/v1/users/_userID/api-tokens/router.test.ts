@@ -146,6 +146,7 @@ describe("POST /api/v1/users/:userID/api-tokens/create", () => {
 		const row = await DB.selectFrom("priv_api_token")
 			.selectAll()
 			.where("identifier", "=", "Hello World")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toMatchObject({
@@ -186,6 +187,7 @@ describe("POST /api/v1/users/:userID/api-tokens/create", () => {
 		const row = await DB.selectFrom("priv_api_token")
 			.selectAll()
 			.where("identifier", "=", "Test_Service")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toMatchObject({

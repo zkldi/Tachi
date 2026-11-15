@@ -150,6 +150,7 @@ describe("PATCH /api/v1/users/:userID/integrations/kshook-sv6c/settings", () => 
 		const row = await DB.selectFrom("svc_kshook_sv6c_settings")
 			.selectAll()
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.force_static_import).toBe(true);

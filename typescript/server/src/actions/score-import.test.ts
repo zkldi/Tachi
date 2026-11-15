@@ -53,6 +53,7 @@ describe("RunScoreImportOnce – lock contention", () => {
 		const before = await DB.selectFrom("action")
 			.select((eb) => eb.fn.countAll<number>().as("n"))
 			.where("action.kind", "=", "SCORE_IMPORT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		await RunScoreImportOnce({
@@ -64,6 +65,7 @@ describe("RunScoreImportOnce – lock contention", () => {
 		const after = await DB.selectFrom("action")
 			.select((eb) => eb.fn.countAll<number>().as("n"))
 			.where("action.kind", "=", "SCORE_IMPORT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(after.n)).toBe(Number(before.n));

@@ -47,6 +47,7 @@ export async function LoadSessionDocumentById(
 	const row = await DB.selectFrom("session")
 		.select(SELECT_SESSION_DOCUMENT)
 		.where("id", "=", sessionID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

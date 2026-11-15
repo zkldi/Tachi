@@ -146,6 +146,7 @@ export function CreateCGParser<T extends { dateTime: string }>(
 				.select(SELECT_CG_CARD_INFO)
 				.where("priv_svc_cg_card_info.user_id", "=", userID)
 				.where("priv_svc_cg_card_info.service", "=", service)
+				.limit(1)
 				.executeTakeFirst(),
 			GetImportTimestop(userID, importType),
 		]);

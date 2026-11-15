@@ -14,6 +14,7 @@ export async function GetUserAndTokenForDiscordID(
 		.innerJoin("account", "priv_discord_user_map.user_id", "account.id")
 		.select(["api_token", "user_id", "discord_id", "account.username"])
 		.where("discord_id", "=", discordID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -34,6 +35,7 @@ export async function GetUserIDForDiscordID(discordID: string): Promise<integer 
 		.selectFrom("priv_discord_user_map")
 		.select("user_id")
 		.where("discord_id", "=", discordID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

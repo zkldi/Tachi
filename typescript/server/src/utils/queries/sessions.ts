@@ -117,6 +117,7 @@ export async function GetSessionIndex(session: SessionDocument): Promise<number>
 				]),
 			]),
 		)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	return Number(row.count);

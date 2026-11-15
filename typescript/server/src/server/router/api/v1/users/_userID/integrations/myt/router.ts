@@ -22,6 +22,7 @@ API_V1_ROUTER.add(
 		const row = await DB.selectFrom("priv_svc_myt_card_info")
 			.select(SELECT_MYT_CARD_INFO)
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		return success(

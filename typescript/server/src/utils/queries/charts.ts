@@ -22,6 +22,7 @@ export async function FindChartWithChartID(chartID: string) {
 		.innerJoin("song", "song.id", "chart.song_id")
 		.select(SELECT_CHART)
 		.where("chart.id", "=", chartID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -48,6 +49,7 @@ export async function FindChartWithSongDifficulty<TGame extends V3Game = V3Game>
 		.where("chart.game", "=", game)
 		.where("chart.difficulty", "=", difficulty as string)
 		.where("chart.is_primary", "=", true)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -112,6 +114,7 @@ export async function FindChartWithSongDifficultyVersion<TGame extends V3Game = 
 		.where("chart.game", "=", game)
 		.where("chart.difficulty", "=", difficulty as string)
 		.where(sql<boolean>`${sql.lit(String(version))} = ANY(chart.versions)`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -127,6 +130,7 @@ export async function FindITGChartOnHash(hash: string) {
 		.select(SELECT_CHART)
 		.where("chart.game", "=", "itg-stamina" as Game)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashGSv3') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -151,6 +155,7 @@ export async function FindBMSChartOnHash(hash: string) {
 				sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`,
 			]),
 		)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -203,6 +208,7 @@ export async function FindBMSChartOnHashInGame(hash: string, v3Game: Game) {
 				sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`,
 			]),
 		)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -269,6 +275,7 @@ export async function FindBeatorajaChartOnHashSHA256(
 		.select(SELECT_CHART)
 		.where("song.game_group", "=", "bms")
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (bmsRow) {
@@ -280,6 +287,7 @@ export async function FindBeatorajaChartOnHashSHA256(
 		.select(SELECT_CHART)
 		.where("song.game_group", "=", "pms")
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!pmsRow) {
@@ -298,6 +306,7 @@ export async function FindPopnChartOnHashSHA256(hash: string) {
 		.select(SELECT_CHART)
 		.where("chart.game", "=", "popn")
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -316,6 +325,7 @@ export async function SongHasAnyChart(game: GameGroup, songID: string): Promise<
 		.select("chart.id")
 		.where("song.game_group", "=", game)
 		.where("song.id", "=", songID)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row !== undefined;
@@ -347,6 +357,7 @@ export async function FindChartOnInGameID(
 		.where("chart.game", "=", game)
 		.where(sqlChartDataInGameIDEquals(inGameID))
 		.where("chart.difficulty", "=", difficulty as string)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -371,6 +382,7 @@ export async function FindChartOnInGameIDPrimary(
 		.where(sqlChartDataInGameIDEquals(inGameID))
 		.where("chart.difficulty", "=", difficulty as string)
 		.where("chart.is_primary", "=", true)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -419,6 +431,7 @@ export async function FindIIDXChartOnInGameID(
 		.where(sql<SqlBool>`(chart.data->>'2dxtraSet') IS NULL`)
 		.where("chart.is_primary", "=", true)
 		.where("chart.difficulty", "=", difficulty as string)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -446,6 +459,7 @@ export async function FindIIDXChartOnInGameIDVersion(
 		.where(sql<SqlBool>`(chart.data->>'2dxtraSet') IS NULL`)
 		.where("chart.difficulty", "=", difficulty as string)
 		.where(sql<boolean>`${sql.lit(String(version))} = ANY(chart.versions)`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -480,7 +494,7 @@ export async function FindOngekiChartOnInGameID(
 		query = query.where("chart.difficulty", "=", difficulty as string);
 	}
 
-	const row = await query.executeTakeFirst();
+	const row = await query.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;
@@ -505,6 +519,7 @@ export async function FindChartOnInGameIDVersion<TGame extends V3Game = V3Game>(
 		.where(sqlChartDataInGameIDEquals(inGameID))
 		.where("chart.difficulty", "=", difficulty as string)
 		.where(sql<boolean>`${sql.lit(String(version))} = ANY(chart.versions)`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -529,6 +544,7 @@ export async function FindChartOnInGameStrIDPrimary(
 		.where(sql<boolean>`(chart.data::jsonb->>'inGameStrID') = ${inGameStrID}`)
 		.where("chart.difficulty", "=", difficulty as string)
 		.where("chart.is_primary", "=", true)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -554,6 +570,7 @@ export async function FindChartOnInGameStrIDVersion<TGame extends V3Game = V3Gam
 		.where(sql<boolean>`(chart.data::jsonb->>'inGameStrID') = ${inGameStrID}`)
 		.where("chart.difficulty", "=", difficulty as string)
 		.where(sql<boolean>`${sql.lit(String(version))} = ANY(chart.versions)`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -587,7 +604,7 @@ export async function FindArcaeaChartOnInGameStrID(
 			? q.where("chart.difficulty", "in", [...ARCAEA_BEYOND_DIFFS])
 			: q.where("chart.difficulty", "=", difficulty);
 
-	const row = await q.executeTakeFirst();
+	const row = await q.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;
@@ -605,6 +622,7 @@ export async function FindIIDXChartWith2DXtraHash(hash: string) {
 		.select(SELECT_CHART)
 		.where("chart.game", "=", "iidx-sp" as Game)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -638,7 +656,7 @@ export async function FindSDVXChartOnInGameID(
 			? q.where("chart.difficulty", "in", [...SDVX_INF_DIFFS])
 			: q.where("chart.difficulty", "=", difficulty);
 
-	const row = await q.executeTakeFirst();
+	const row = await q.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;
@@ -664,7 +682,7 @@ export async function FindSDVXChartOnInGameIDVersion(
 			? q.where("chart.difficulty", "in", [...SDVX_INF_DIFFS])
 			: q.where("chart.difficulty", "=", difficulty);
 
-	const row = await q.executeTakeFirst();
+	const row = await q.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;
@@ -691,7 +709,7 @@ export async function FindSDVXChartOnDFVersion(
 			? q.where("chart.difficulty", "in", [...SDVX_INF_DIFFS])
 			: q.where("chart.difficulty", "=", difficulty);
 
-	const row = await q.executeTakeFirst();
+	const row = await q.limit(1).executeTakeFirst();
 
 	if (!row) {
 		return null;
@@ -710,6 +728,7 @@ export async function FindChartOnSHA256GameGroup(gameGroup: GameGroup, hash: str
 		.select(SELECT_CHART)
 		.where("song.game_group", "=", gameGroup)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -730,6 +749,7 @@ export async function FindChartOnSHA256(game: V3Game, hash: string) {
 		.select(SELECT_CHART)
 		.where("chart.game", "=", game)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA256') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -749,6 +769,7 @@ export async function FindUSCChartOnSHA1(hash: string, game: "usc-controller" | 
 		.select(SELECT_CHART)
 		.where("chart.game", "=", game)
 		.where(sql<boolean>`(chart.data::jsonb->>'hashSHA1') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

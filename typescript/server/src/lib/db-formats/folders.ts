@@ -35,6 +35,7 @@ export async function LoadFolderDocumentById(
 	const row = await DB.selectFrom("folder")
 		.select(SELECT_FOLDER)
 		.where("id", "=", folderID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -77,6 +78,7 @@ export async function LoadFolderDocumentByGameAndSlug(
 		.select(SELECT_FOLDER)
 		.where("folder.game", "=", game)
 		.where("folder.slug", "=", slugOrFolderKey)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (bySlug) {
@@ -87,6 +89,7 @@ export async function LoadFolderDocumentByGameAndSlug(
 		.select(SELECT_FOLDER)
 		.where("folder.game", "=", game)
 		.where("folder.id", "=", slugOrFolderKey)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (byId) {
@@ -97,6 +100,7 @@ export async function LoadFolderDocumentByGameAndSlug(
 		.select(SELECT_FOLDER)
 		.where("folder.game", "=", game)
 		.where("folder.legacy_id", "=", slugOrFolderKey)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (byLegacy) {

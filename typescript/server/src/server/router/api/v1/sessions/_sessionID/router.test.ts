@@ -296,6 +296,7 @@ describe("PATCH /api/v1/sessions/:sessionID", () => {
 		const row = await DB.selectFrom("session")
 			.select("name")
 			.where("id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row?.name).toBe("patched_name");

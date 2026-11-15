@@ -60,6 +60,7 @@ describe("ACTION_Letmein", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "LETMEIN")
+			.limit(1)
 			.executeTakeFirst();
 
 		// node-pg returns BIGINT columns as strings
@@ -94,6 +95,7 @@ describe("ACTION_Letmein", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "LETMEIN")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(action?.result).toBe("THROW");

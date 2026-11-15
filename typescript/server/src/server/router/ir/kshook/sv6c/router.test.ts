@@ -144,6 +144,7 @@ describe("POST /ir/kshook/sv6c/score/export", () => {
 		const dbRes = await DB.selectFrom("svc_kshook_sv6c_settings")
 			.selectAll()
 			.where("user_id", "=", IR_USER_ID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(dbRes?.force_static_import).toBe(false);

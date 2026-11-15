@@ -161,6 +161,7 @@ API_V1_ROUTER.add(
 			.where("user_id", "=", user.id)
 			.where("game", "=", v3Game)
 			.orderBy("session.time_ended", "desc")
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

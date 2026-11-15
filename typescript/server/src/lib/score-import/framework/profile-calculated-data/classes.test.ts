@@ -198,6 +198,7 @@ describe("ProcessClassDeltas", () => {
 			.select(["source", "class_value"])
 			.where("user_id", "=", userId)
 			.where("game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.source).toBe("manual");

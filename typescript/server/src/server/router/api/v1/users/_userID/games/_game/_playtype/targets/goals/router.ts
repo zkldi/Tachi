@@ -122,6 +122,7 @@ API_V1_ROUTER.add(
 			.where("goal_sub.user_id", "=", user.id)
 			.where("goal_sub.goal_id", "=", params.goalID)
 			.where("goal.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

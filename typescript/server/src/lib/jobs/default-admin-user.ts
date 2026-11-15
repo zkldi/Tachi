@@ -12,6 +12,7 @@ export const DefaultAdminUser = {
 			.select(["id", "username"])
 			.where("auth_level", "=", "admin")
 			.orderBy("id", "asc")
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

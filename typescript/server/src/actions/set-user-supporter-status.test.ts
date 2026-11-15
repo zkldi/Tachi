@@ -46,6 +46,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 			.select(["result", "kind", "ip"])
 			.where("kind", "=", "SET_USER_SUPPORTER_STATUS")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -85,6 +86,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 			.selectAll()
 			.where("kind", "=", "SET_USER_SUPPORTER_STATUS")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -118,6 +120,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 			.selectAll()
 			.where("kind", "=", "SET_USER_SUPPORTER_STATUS")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -145,6 +148,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 		const row = await DB.selectFrom("account")
 			.select("is_supporter")
 			.where("id", "=", targetId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.is_supporter).toBe(true);
@@ -161,6 +165,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 		const row = await DB.selectFrom("account")
 			.select("is_supporter")
 			.where("id", "=", targetId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.is_supporter).toBe(false);
@@ -176,6 +181,7 @@ describe("ACTION_SetUserSupporterStatus", () => {
 			.selectAll()
 			.where("kind", "=", "SET_USER_SUPPORTER_STATUS")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

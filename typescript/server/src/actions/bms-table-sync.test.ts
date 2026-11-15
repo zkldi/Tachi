@@ -115,6 +115,7 @@ describe("ACTION_BMSTableSync", () => {
 		const chartRow = await DB.selectFrom("chart")
 			.select("data")
 			.where("id", "=", chartId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const folders = (chartRow.data as { tableFolders: Record<string, string> }).tableFolders;
@@ -123,6 +124,7 @@ describe("ACTION_BMSTableSync", () => {
 		const songRow = await DB.selectFrom("song")
 			.select("data")
 			.where("id", "=", songNewID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const ts = (songRow.data as { tableString: string | null }).tableString;

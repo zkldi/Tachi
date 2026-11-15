@@ -19,6 +19,7 @@ export async function GetRivalIDs(userID: integer, game: V3Game) {
 		.select("game_profile.user_id")
 		.where("game_profile.user_id", "=", userID)
 		.where("game_profile.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!profile) {
@@ -118,6 +119,7 @@ export async function setRivalsWithResult(
 		.select(DB.fn.countAll().as("count"))
 		.where("game_profile.game", "=", game)
 		.where("game_profile.user_id", "in", newRivals)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	const playedGameCount = Number(count);
@@ -130,6 +132,7 @@ export async function setRivalsWithResult(
 		.select("game_profile.user_id")
 		.where("game_profile.user_id", "=", userID)
 		.where("game_profile.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!currentGameProfile) {

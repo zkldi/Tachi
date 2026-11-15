@@ -10,6 +10,7 @@ export const ACTION_UnfollowUser = MakeAction(
 			.select("followee")
 			.where("user_id", "=", taker.acct.id)
 			.where("followee", "=", toUnfollow)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!existingFollow) {

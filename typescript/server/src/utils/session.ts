@@ -36,6 +36,7 @@ export async function GetSessionFromScore(score: ScoreDocument) {
 	const row = await DB.selectFrom("score")
 		.select("session_id")
 		.where("id", "=", score.scoreID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row?.session_id) {

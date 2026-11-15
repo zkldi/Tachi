@@ -111,6 +111,7 @@ describe("ACTION_DeleteScore", () => {
 		const row = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", scoreId)
+			.limit(1)
 			.executeTakeFirst();
 		expect(row).toBeUndefined();
 	});
@@ -125,6 +126,7 @@ describe("ACTION_DeleteScore", () => {
 		const row = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", scoreId)
+			.limit(1)
 			.executeTakeFirst();
 		expect(row).toBeUndefined();
 	});
@@ -140,6 +142,7 @@ describe("ACTION_DeleteScore", () => {
 			.selectAll()
 			.where("kind", "=", "DELETE_SCORE")
 			.orderBy("ts_end", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

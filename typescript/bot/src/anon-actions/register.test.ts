@@ -30,6 +30,7 @@ describe("ACTION_Register", () => {
 			.selectFrom("priv_discord_user_map")
 			.select(SELECT_PRIV_DISCORD_USER_MAP)
 			.where("priv_discord_user_map.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toMatchObject({
@@ -61,6 +62,7 @@ describe("ACTION_Register", () => {
 			.selectFrom("priv_discord_user_map")
 			.select(SELECT_PRIV_DISCORD_USER_MAP)
 			.where("priv_discord_user_map.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row?.discord_id).toBe(newDiscordId);
@@ -77,6 +79,7 @@ describe("ACTION_Register", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "REGISTER")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(action).toMatchObject({

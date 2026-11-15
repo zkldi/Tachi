@@ -42,6 +42,7 @@ describe("ACTION_ChangeEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -57,6 +58,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("email")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.email).toBe("old@example.com");
@@ -94,6 +96,7 @@ describe("ACTION_ChangeEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -115,6 +118,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("email")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.email).toBe("old@example.com");
@@ -149,6 +153,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("email")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.email).toBe(NEW_EMAIL);
@@ -162,6 +167,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.selectAll()
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.email).toBe(NEW_EMAIL);
@@ -175,6 +181,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).toMatch(/^[0-9a-f]{40}$/u);
@@ -225,6 +232,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).toBe("OTHER_TOKEN_XYZ");
@@ -244,6 +252,7 @@ describe("ACTION_ChangeEmail", () => {
 		const row = await DB.selectFrom("priv_account_credential")
 			.select("email")
 			.where("user_id", "=", other.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.email).toBe("other@example.com");
@@ -259,6 +268,7 @@ describe("ACTION_ChangeEmail", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CHANGE_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -277,6 +287,7 @@ describe("ACTION_ChangeEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(JSON.stringify(action.input)).not.toContain(PASSWORD);
@@ -290,6 +301,7 @@ describe("ACTION_ChangeEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;

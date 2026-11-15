@@ -13,6 +13,7 @@ export const ACTION_FollowUser = MakeAction("FOLLOW_USER", async (taker, { userI
 		.select("followee")
 		.where("user_id", "=", taker.acct.id)
 		.where("followee", "=", toFollow)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (existingFollow) {
@@ -22,6 +23,7 @@ export const ACTION_FollowUser = MakeAction("FOLLOW_USER", async (taker, { userI
 	const { count } = await DB.selectFrom("account_following")
 		.select(DB.fn.countAll<number>().as("count"))
 		.where("user_id", "=", taker.acct.id)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	if (Number(count) >= ServerConfig.MAX_FOLLOWING_AMOUNT) {

@@ -75,6 +75,7 @@ export async function FetchMytTitleAPIID(
 	const row = await DB.selectFrom("priv_svc_myt_card_info")
 		.select(SELECT_MYT_CARD_INFO)
 		.where("user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

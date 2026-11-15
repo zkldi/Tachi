@@ -46,6 +46,7 @@ describe("ACTION_DeleteApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("client_id")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();
@@ -83,6 +84,7 @@ describe("ACTION_DeleteApiClient", () => {
 		const preserved = await DB.selectFrom("priv_api_token")
 			.select("token")
 			.where("token", "=", "T_other_token")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(preserved).toBeDefined();
@@ -106,6 +108,7 @@ describe("ACTION_DeleteApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -126,6 +129,7 @@ describe("ACTION_DeleteApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "DELETE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

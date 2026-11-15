@@ -32,6 +32,7 @@ export async function DeorphanBmsIfInOrphanChartPg(
 		.select(["orphan_chart.id", "orphan_chart.chart_doc", "orphan_chart.song_doc"])
 		.where("orphan_chart.game", "=", game)
 		.where(hashMatch)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!orphanRow) {
