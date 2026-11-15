@@ -15,7 +15,6 @@ async function seedJubeatSong(args: { displayVersion: string; songID: string }):
 	await DB.insertInto("song")
 		.values({
 			id: args.songID,
-			legacy_id: n,
 			game_group: "jubeat",
 			title: "T",
 			artist: "A",
@@ -239,7 +238,6 @@ describe("GetPBsForJubility (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songID,
-				legacy_id: n,
 				game_group: "jubeat",
 				title: "T",
 				artist: "A",

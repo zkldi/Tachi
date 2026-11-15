@@ -22,7 +22,6 @@ async function seedBmsChartWithHashes(opts: {
 	await DB.insertInto("song")
 		.values({
 			id: songNewID,
-			legacy_id: 960_000 + n,
 			game_group: "bms",
 			title: "BMS Router Test",
 			artist: "Test",

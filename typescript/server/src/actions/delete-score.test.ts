@@ -19,7 +19,6 @@ describe("ACTION_DeleteScore", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 700_000 + n,
 				game_group: "iidx",
 				title: "S",
 				artist: "A",

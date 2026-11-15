@@ -26,7 +26,6 @@ async function seedIidx511Chart() {
 	await DB.insertInto("song")
 		.values({
 			id: Testing511Song.id,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -57,7 +56,6 @@ async function seedExtraIidxCharts() {
 	await DB.insertInto("song")
 		.values({
 			id: "s-not",
-			legacy_id: 123,
 			game_group: "iidx",
 			title: "Other",
 			artist: "X",
@@ -86,7 +84,6 @@ async function seedExtraIidxCharts() {
 	await DB.insertInto("song")
 		.values({
 			id: "s-oth",
-			legacy_id: 124,
 			game_group: "iidx",
 			title: "Other 10",
 			artist: "Y",
@@ -117,7 +114,6 @@ async function seedSecondChartForMulti(fakeOtherChartId: string) {
 	await DB.insertInto("song")
 		.values({
 			id: "s-fake-other",
-			legacy_id: 999,
 			game_group: "iidx",
 			title: "Fake",
 			artist: "Z",
@@ -597,7 +593,6 @@ describe("GetRelevantGoals", () => {
 			await DB.insertInto("song")
 				.values({
 					id: songId,
-					legacy_id: 10_000 + i,
 					game_group: "iidx",
 					title: `T${i}`,
 					artist: "A",

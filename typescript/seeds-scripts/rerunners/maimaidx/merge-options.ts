@@ -349,7 +349,6 @@ for (const optionsDir of options.input) {
 			// New song?
 			if (tachiSongID === undefined) {
 				tachiSongID = CreateSongID();
-				const newLegacySongID = songIDGenerator();
 
 				const songDoc: SEEDS_SongDocument<"maimaidx"> = {
 					title: musicData.name.str,
@@ -357,7 +356,6 @@ for (const optionsDir of options.input) {
 					searchTerms: [],
 					artist: musicData.artistName.str,
 					id: tachiSongID,
-					legacySongID: newLegacySongID,
 					data: {
 						genre,
 						duration,

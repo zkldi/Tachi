@@ -2,7 +2,7 @@
 
 import { MakeAction } from "#lib/actions/actions";
 import { SELECT_CHART, ToChartDocument } from "#lib/db-formats/chart";
-import { SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT, ToSeedSongDocument } from "#lib/db-formats/song";
+import { SELECT_SONG_DOCUMENT, ToSeedSongDocument } from "#lib/db-formats/song";
 import { log } from "#lib/log/log";
 import { PullDatabaseSeeds, type SeedsCollections } from "#lib/seeds/repo";
 import DB from "#services/pg/db";
@@ -21,7 +21,7 @@ async function loadAllSongsForSeedExport(
 	gameGroup: GameGroup,
 ): Promise<Array<SEEDS_SongDocument<GameGroup>>> {
 	const rows = await DB.selectFrom("song")
-		.select(SELECT_SONG_DOCUMENT_FOR_SEED_EXPORT)
+		.select(SELECT_SONG_DOCUMENT)
 		.where("game_group", "=", gameGroup)
 		.orderBy("id", "asc")
 		.execute()

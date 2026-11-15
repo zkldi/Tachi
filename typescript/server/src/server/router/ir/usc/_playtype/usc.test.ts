@@ -55,7 +55,6 @@ async function seedUscControllerChart() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingUSCSong.id,
-			legacy_id: 1,
 			game_group: "usc",
 			title: TestingUSCSong.title,
 			artist: TestingUSCSong.artist,

@@ -37,7 +37,6 @@ vi.mock("tachi-common", async (importOriginal) => {
 describe("ACTION_BMSTableSync", () => {
 	const songNewID = "song-bms-action-test";
 	const chartId = CreateChartID();
-	const legacySongId = 884_001;
 	let adminId: number;
 
 	beforeEach(async () => {
@@ -66,7 +65,6 @@ describe("ACTION_BMSTableSync", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songNewID,
-				legacy_id: legacySongId,
 				game_group: "bms",
 				title: "Unit Song",
 				artist: "Unit",

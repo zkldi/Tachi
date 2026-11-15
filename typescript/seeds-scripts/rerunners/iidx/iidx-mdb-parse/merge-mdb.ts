@@ -153,8 +153,6 @@ async function ParseIIDXMDB() {
 		}
 	}
 
-	const getFreeLegacySongID = GetFreshSongIDGenerator("iidx");
-
 	for (const inp of mdbCharts) {
 		if (isInBlacklist(`S${inp.songID}`)) {
 			log.debug(
@@ -209,7 +207,6 @@ async function ParseIIDXMDB() {
 
 				const tachiSong: SEEDS_SongDocument<"iidx"> = {
 					id: CreateSongID(),
-					legacySongID: getFreeLegacySongID(),
 					artist: inp.artist,
 					title: inp.title,
 					data: {

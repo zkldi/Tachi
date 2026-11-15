@@ -21,7 +21,6 @@ async function seedAlbidaAdv() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingSDVXAlbidaSong.id,
-			legacy_id: 1,
 			game_group: "sdvx",
 			title: TestingSDVXAlbidaSong.title,
 			artist: TestingSDVXAlbidaSong.artist,

@@ -19,7 +19,6 @@ async function seedIidx511ForPb() {
 	await DB.insertInto("song")
 		.values({
 			id: Testing511Song.id,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -143,7 +142,6 @@ describe("UpdateUsersGamePlaytypeStats (ported from update-ugpt-stats.oldtest.ts
 			await DB.insertInto("song")
 				.values({
 					id: `s_${fakeChart}`,
-					legacy_id: 50_000 + e,
 					game_group: "iidx",
 					title: "T",
 					artist: "A",

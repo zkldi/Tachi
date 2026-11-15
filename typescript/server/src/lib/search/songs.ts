@@ -44,7 +44,6 @@ export type SongSearchRow = {
 	artist: string;
 	data: unknown;
 	id: string;
-	legacy_id: number;
 	rank: number;
 	title: string;
 };
@@ -73,7 +72,6 @@ export async function SearchSongsForGameFtsAndTrgm(
 	const { rows: ftsRows } = await sql<SongSearchRow>`
 		SELECT
 			id,
-			legacy_id,
 			title,
 			artist,
 			data,
@@ -93,7 +91,6 @@ export async function SearchSongsForGameFtsAndTrgm(
 				await sql<SongSearchRow>`
 				SELECT
 					song.id,
-					song.legacy_id,
 					song.title,
 					song.artist,
 					song.data,
@@ -155,7 +152,6 @@ export async function SearchSongsForGameFtsAndTrgm(
 			? await sql<SongSearchRow>`
 				SELECT
 					id,
-					legacy_id,
 					title,
 					artist,
 					data,
@@ -178,7 +174,7 @@ export async function SearchSongsForGameFtsAndTrgm(
 			: await sql<SongSearchRow>`
 				SELECT
 					id,
-					legacy_id,
+
 					title,
 					artist,
 					data,

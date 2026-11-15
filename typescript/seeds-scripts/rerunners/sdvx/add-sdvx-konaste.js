@@ -71,8 +71,6 @@ const charts = ReadCollection("charts-sdvx.json");
 let versionAddedCount = 0;
 let newChartCount = 0;
 
-let nextLegacySongID = songs.reduce((m, s) => Math.max(m, s.legacySongID), 0) + 1;
-
 for (const music of xmlData.mdb.music) {
 	const id = Number(music["@_id"]);
 
@@ -88,7 +86,6 @@ for (const music of xmlData.mdb.music) {
 				displayVersion: VERSIONS[music.info.version["#text"]],
 			},
 			id: CreateSongID(),
-			legacySongID: nextLegacySongID++,
 			searchTerms: [music.info.ascii.replaceAll("_", " "), music.info.title_yomigana],
 			title: getTitle(id, music.info.title_name),
 		};

@@ -66,7 +66,6 @@ async function seedJubeatCgFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingJubeatSong.id,
-			legacy_id: 1,
 			game_group: "jubeat",
 			title: TestingJubeatSong.title,
 			artist: TestingJubeatSong.artist,

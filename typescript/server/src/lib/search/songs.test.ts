@@ -56,7 +56,6 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: makeSongId(1),
-				legacy_id: 9_000_001,
 				game_group: "iidx",
 				title: "Empty Query Test",
 				artist: "X",
@@ -76,7 +75,6 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 			.values([
 				{
 					id: makeSongId(2),
-					legacy_id: 9_000_002,
 					game_group: "iidx",
 					title: "UniqueAlphaToken",
 					artist: "Artist A",
@@ -87,7 +85,6 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 				},
 				{
 					id: makeSongId(3),
-					legacy_id: 9_000_003,
 					game_group: "sdvx",
 					title: "UniqueAlphaToken Other Game",
 					artist: "Artist B",
@@ -102,7 +99,7 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 		const iidx = await SearchSongsForGameFtsAndTrgm("iidx", "UniqueAlphaToken", 10);
 
 		expect(iidx).toHaveLength(1);
-		expect(iidx[0]?.legacy_id).toBe(9_000_002);
+		expect(iidx[0]?.id).toBe(makeSongId(2));
 	});
 
 	it("loads search terms and alt titles via LoadSongChildrenForPgIds", async () => {
@@ -111,7 +108,6 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_004,
 				game_group: "iidx",
 				title: "Child Row Test",
 				artist: "Z",
@@ -134,7 +130,7 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 	it("caps results at MAX_SONG_SEARCH_RESULTS_PER_GAME even when limit is higher", async () => {
 		const rows = Array.from({ length: 150 }, (_, i) => ({
 			id: makeSongId(100 + i),
-			legacy_id: 9_100_000 + i,
+
 			game_group: "iidx" as const,
 			title: `CapBulk ${i}`,
 			artist: "Cap Artist",
@@ -155,7 +151,6 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: makeSongId(300),
-				legacy_id: 9_000_300,
 				game_group: "iidx",
 				title: "Qx",
 				artist: "ShortQ Artist",
@@ -168,7 +163,7 @@ describe("SearchSongsForGameFtsAndTrgm (synthetic rows)", () => {
 
 		const res = await SearchSongsForGameFtsAndTrgm("iidx", "Qx", 10);
 
-		expect(res.some((r) => r.legacy_id === 9_000_300)).toBe(true);
+		expect(res.some((r) => r.id === makeSongId(300))).toBe(true);
 	});
 });
 
@@ -178,7 +173,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 			.values([
 				{
 					id: makeSongId(700),
-					legacy_id: 9_000_700,
 					game_group: "iidx",
 					title: "A",
 					artist: "Some Artist",
@@ -189,7 +183,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 				},
 				{
 					id: makeSongId(701),
-					legacy_id: 9_000_701,
 					game_group: "iidx",
 					title: "About Something",
 					artist: "B",
@@ -200,7 +193,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 				},
 				{
 					id: makeSongId(702),
-					legacy_id: 9_000_702,
 					game_group: "iidx",
 					title: "Many Letters",
 					artist: "Alpha",
@@ -213,11 +205,11 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 			.execute();
 
 		const res = await SearchSongsForGameFtsAndTrgm("iidx", "A", 20);
-		const legacyIds = res.map((r) => r.legacy_id);
+		const songIds = res.map((r) => r.id);
 
-		expect(legacyIds).toContain(9_000_700);
-		expect(legacyIds).not.toContain(9_000_701);
-		expect(legacyIds).not.toContain(9_000_702);
+		expect(songIds).toContain(makeSongId(700));
+		expect(songIds).not.toContain(makeSongId(701));
+		expect(songIds).not.toContain(makeSongId(702));
 	});
 
 	it("distinguishes one-letter title from two-letter title when searching one letter", async () => {
@@ -225,7 +217,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 			.values([
 				{
 					id: makeSongId(710),
-					legacy_id: 9_000_710,
 					game_group: "iidx",
 					title: "A",
 					artist: "X",
@@ -236,7 +227,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 				},
 				{
 					id: makeSongId(711),
-					legacy_id: 9_000_711,
 					game_group: "iidx",
 					title: "AA",
 					artist: "Y",
@@ -250,13 +240,13 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 
 		const one = await SearchSongsForGameFtsAndTrgm("iidx", "A", 20);
 
-		expect(one.map((r) => r.legacy_id)).toContain(9_000_710);
-		expect(one.map((r) => r.legacy_id)).not.toContain(9_000_711);
+		expect(one.map((r) => r.id)).toContain(makeSongId(710));
+		expect(one.map((r) => r.id)).not.toContain(makeSongId(711));
 
 		const two = await SearchSongsForGameFtsAndTrgm("iidx", "AA", 20);
 
-		expect(two.map((r) => r.legacy_id)).toContain(9_000_711);
-		expect(two.map((r) => r.legacy_id)).not.toContain(9_000_710);
+		expect(two.map((r) => r.id)).toContain(makeSongId(711));
+		expect(two.map((r) => r.id)).not.toContain(makeSongId(710));
 	});
 
 	it("matches exact search_term when query is within strict length", async () => {
@@ -265,7 +255,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_720,
 				game_group: "iidx",
 				title: "Long Title",
 				artist: "Z",
@@ -287,7 +276,6 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 		await DB.insertInto("song")
 			.values({
 				id: makeSongId(730),
-				legacy_id: 9_000_730,
 				game_group: "iidx",
 				title: "ZzzUniqueToken",
 				artist: "Z",
@@ -300,7 +288,7 @@ describe("SearchSongsForGameFtsAndTrgm (very short titles / strict query)", () =
 
 		const res = await SearchSongsForGameFtsAndTrgm("iidx", "Zzz", 10);
 
-		expect(res.some((r) => r.legacy_id === 9_000_730)).toBe(true);
+		expect(res.some((r) => r.id === makeSongId(730))).toBe(true);
 	});
 });
 
@@ -310,7 +298,6 @@ describe("SearchSongsForGameFtsAndTrgm (hostile / injection-shaped input)", () =
 			.values([
 				{
 					id: makeSongId(400),
-					legacy_id: 9_000_400,
 					game_group: "iidx",
 					title: "Bait Song",
 					artist: "Bait",
@@ -321,7 +308,6 @@ describe("SearchSongsForGameFtsAndTrgm (hostile / injection-shaped input)", () =
 				},
 				{
 					id: makeSongId(401),
-					legacy_id: 9_000_401,
 					game_group: "iidx",
 					title: "Other Bait",
 					artist: "Bait",
@@ -358,7 +344,6 @@ describe("SearchSongsForGameFtsAndTrgm (hostile / injection-shaped input)", () =
 		await DB.insertInto("song")
 			.values({
 				id: makeSongId(600),
-				legacy_id: 9_000_600,
 				game_group: "iidx",
 				title: "NulProbe",
 				artist: "X",
@@ -385,7 +370,6 @@ describe("SearchSongsForGameFtsAndTrgm (hostile / injection-shaped input)", () =
 			.values([
 				{
 					id: makeSongId(500),
-					legacy_id: 9_000_500,
 					game_group: "iidx",
 					title: "ExactPercent",
 					artist: "NoWildcard",
@@ -396,7 +380,6 @@ describe("SearchSongsForGameFtsAndTrgm (hostile / injection-shaped input)", () =
 				},
 				{
 					id: makeSongId(501),
-					legacy_id: 9_000_501,
 					game_group: "iidx",
 					title: "Something Else Entirely",
 					artist: "NoWildcard",
@@ -420,7 +403,6 @@ describe("SearchSpecificGameSongs", () => {
 		await DB.insertInto("song")
 			.values({
 				id: makeSongId(5),
-				legacy_id: 9_000_005,
 				game_group: "iidx",
 				title: "ScoreFieldTest",
 				artist: "Z",
@@ -446,7 +428,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_860,
 				game_group: "iidx",
 				title: "Only2dxtraSearchToken",
 				artist: "X",
@@ -474,7 +455,7 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 
 		const res = await SearchSongsForGameFtsAndTrgm("iidx", "Only2dxtraSearchToken", 20);
 
-		expect(res.some((r) => r.legacy_id === 9_000_860)).toBe(false);
+		expect(res.some((r) => r.id === sid)).toBe(false);
 	});
 
 	it("includes iidx songs with at least one non-2dxtra chart", async () => {
@@ -483,7 +464,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_861,
 				game_group: "iidx",
 				title: "Mixed2dxtraSearchToken",
 				artist: "X",
@@ -525,7 +505,7 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 
 		const res = await SearchSongsForGameFtsAndTrgm("iidx", "Mixed2dxtraSearchToken", 20);
 
-		expect(res.some((r) => r.legacy_id === 9_000_861)).toBe(true);
+		expect(res.some((r) => r.id === sid)).toBe(true);
 	});
 
 	it("GetChartsBysongNewID omits 2dxtra charts when omit2dxtraCharts is true", async () => {
@@ -534,7 +514,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_870,
 				game_group: "iidx",
 				title: "ChartFilter",
 				artist: "X",
@@ -590,7 +569,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_880,
 				game_group: "iidx",
 				title: "GlobalSearch2dxtraToken",
 				artist: "X",
@@ -649,7 +627,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songID,
-				legacy_id: 9_000_890,
 				game_group: "iidx",
 				title: "Pop2dxtraToken",
 				artist: "X",
@@ -713,7 +690,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 			.values([
 				{
 					id: targetSongID,
-					legacy_id: 9_000_892,
 					game_group: "iidx",
 					title: "PopFilterTarget",
 					artist: "X",
@@ -724,7 +700,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 				},
 				{
 					id: otherSongID,
-					legacy_id: 9_000_893,
 					game_group: "iidx",
 					title: "PopFilterOther",
 					artist: "X",
@@ -840,7 +815,6 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 		await DB.insertInto("song")
 			.values({
 				id: sid,
-				legacy_id: 9_000_900,
 				game_group: "sdvx",
 				title: "Sdvx2dxtraKeyInJson",
 				artist: "X",
@@ -868,7 +842,7 @@ describe("IIDX 2dxtraSet exclusion from search", () => {
 
 		const res = await SearchSongsForGameFtsAndTrgm("sdvx", "Sdvx2dxtraKeyInJson", 20);
 
-		expect(res.some((r) => r.legacy_id === 9_000_900)).toBe(true);
+		expect(res.some((r) => r.id === sid)).toBe(true);
 	});
 });
 

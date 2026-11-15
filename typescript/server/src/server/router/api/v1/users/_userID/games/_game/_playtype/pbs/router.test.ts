@@ -32,7 +32,6 @@ async function seedIidxChartPb(opts: { userId: number; withComposition?: boolean
 	await DB.insertInto("song")
 		.values({
 			id: songPg,
-			legacy_id: 88_000 + n,
 			game_group: "iidx",
 			title: "PB Router Test",
 			artist: "Tester",
@@ -282,7 +281,6 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID/leaderboard-adjacen
 		await DB.insertInto("song")
 			.values({
 				id: songPg,
-				legacy_id: 90_000 + n,
 				game_group: "iidx",
 				title: "Ladder",
 				artist: "A",
@@ -353,7 +351,6 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/song/:songID", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songPg,
-				legacy_id: 91_000 + n,
 				game_group: "iidx",
 				title: "Multi difficulty PB",
 				artist: "Tester",
@@ -444,7 +441,6 @@ describe("GET /api/v1/users/:userID/games/:game/pbs/:chartID", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songPg,
-				legacy_id: 89_000 + n,
 				game_group: "iidx",
 				title: "No PB",
 				artist: "A",

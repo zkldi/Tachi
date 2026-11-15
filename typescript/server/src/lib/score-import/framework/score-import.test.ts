@@ -20,7 +20,6 @@ async function seed511Chart() {
 	await DB.insertInto("song")
 		.values({
 			id: Testing511Song.id,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -171,7 +170,6 @@ async function seedJubeatChartArrayInGameID(opts: { chartId: string; legacyId: n
 	await DB.insertInto("song")
 		.values({
 			id: `${TestingJubeatSong.id}-smoke-${opts.chartId}`,
-			legacy_id: opts.legacyId,
 			game_group: "jubeat",
 			title: TestingJubeatSong.title,
 			artist: TestingJubeatSong.artist,
@@ -211,7 +209,6 @@ async function seedJubeatChartScalarInGameID(opts: {
 	await DB.insertInto("song")
 		.values({
 			id: `${TestingJubeatSong.id}-${opts.songIdSuffix}`,
-			legacy_id: opts.legacyId,
 			game_group: "jubeat",
 			title: TestingJubeatSong.title,
 			artist: TestingJubeatSong.artist,

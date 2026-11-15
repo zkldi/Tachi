@@ -53,7 +53,6 @@ async function seedOngekiChartFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingOngekiSong.id,
-			legacy_id: 1,
 			game_group: "ongeki",
 			title: TestingOngekiSong.title,
 			artist: TestingOngekiSong.artist,
@@ -133,7 +132,6 @@ async function seedOngekiProfilePbs(
 			await DB.insertInto("song")
 				.values({
 					id: songId,
-					legacy_id: n,
 					game_group: "ongeki",
 					title: "T",
 					artist: "A",

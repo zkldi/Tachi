@@ -68,7 +68,6 @@ describe("GetScoresFromSession (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_000_001,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",
@@ -147,7 +146,6 @@ describe("GetSessionFromScore (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_000_002,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",
@@ -241,7 +239,6 @@ describe("GetSessionFromScore (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 9_000_003,
 				game_group: "iidx",
 				title: "T",
 				artist: "A",

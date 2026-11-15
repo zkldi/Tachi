@@ -42,7 +42,6 @@ async function seedUscSongAndChart(game: "usc-controller" | "usc-keyboard") {
 	await DB.insertInto("song")
 		.values({
 			id: TestingUSCSong.id,
-			legacy_id: 99_001,
 			game_group: "usc",
 			title: TestingUSCSong.title,
 			artist: TestingUSCSong.artist,

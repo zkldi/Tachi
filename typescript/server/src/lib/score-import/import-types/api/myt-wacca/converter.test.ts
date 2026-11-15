@@ -46,7 +46,6 @@ async function seedPupaExpert() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingWaccaPupaSong.id,
-			legacy_id: 2085,
 			game_group: "wacca",
 			title: TestingWaccaPupaSong.title,
 			artist: TestingWaccaPupaSong.artist,

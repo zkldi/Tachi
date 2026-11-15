@@ -19,7 +19,6 @@ async function seed511SongOnly() {
 	await DB.insertInto("song")
 		.values({
 			id: SONG_511_ID,
-			legacy_id: 1,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,
@@ -56,7 +55,6 @@ async function seedAbsoluteHyper() {
 	await DB.insertInto("song")
 		.values({
 			id: songId,
-			legacy_id: 97,
 			game_group: "iidx",
 			title: "ABSOLUTE",
 			artist: "artist",

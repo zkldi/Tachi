@@ -53,7 +53,6 @@ async function seedIidxChart(chartId: string, songId: string) {
 	await DB.insertInto("song")
 		.values({
 			id: songId,
-			legacy_id: 95_000 + raceSeedCounter,
 			game_group: "iidx",
 			title: Testing511Song.title,
 			artist: Testing511Song.artist,

@@ -212,7 +212,6 @@ for (const entry of data.songs) {
 			altTitles,
 			searchTerms,
 			id: CreateSongID(),
-			legacySongID: getNewSongID(),
 			data: {
 				songPack: convertPackName(packsByID, entry.set),
 			},
@@ -263,7 +262,6 @@ for (const entry of data.songs) {
 				altTitles,
 				searchTerms,
 				id: CreateSongID(),
-				legacySongID: getNewSongID(),
 				data: {
 					songPack: convertPackName(packsByID, entry.set),
 				},

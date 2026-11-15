@@ -42,7 +42,6 @@ async function seedGitadoraChart(game: "gitadora-dora" | "gitadora-gita") {
 	await DB.insertInto("song")
 		.values({
 			id: TestingGitadoraSong.id,
-			legacy_id: 1,
 			game_group: "gitadora",
 			title: TestingGitadoraSong.title,
 			artist: TestingGitadoraSong.artist,

@@ -27,7 +27,6 @@ describe("CreatePBMergeFor (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 500_000 + n,
 				game_group: "iidx",
 				title: "S",
 				artist: "A",

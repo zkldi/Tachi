@@ -12,7 +12,6 @@ describe("FindChartWithChartID (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 5_100_000,
 				game_group: "ddr",
 				title: "T",
 				artist: "A",
@@ -59,7 +58,6 @@ describe("FindChartOnInGameIDIfUnique (Postgres)", () => {
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 5_200_000,
 				game_group: "wacca",
 				title: "T",
 				artist: "A",
@@ -101,7 +99,6 @@ describe("FindChartOnInGameIDIfUnique (Postgres)", () => {
 			await DB.insertInto("song")
 				.values({
 					id: songId,
-					legacy_id: 5_200_001 + part.charCodeAt(0),
 					game_group: "wacca",
 					title: `T${part}`,
 					artist: "A",

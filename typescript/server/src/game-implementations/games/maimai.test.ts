@@ -55,7 +55,6 @@ async function seedMaimaiChart() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingMaimaiSong.id,
-			legacy_id: 834,
 			game_group: "maimai",
 			title: TestingMaimaiSong.title,
 			artist: TestingMaimaiSong.artist,

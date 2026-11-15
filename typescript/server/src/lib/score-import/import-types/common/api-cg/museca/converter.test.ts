@@ -60,7 +60,6 @@ async function seedMusecaCgFixture() {
 	await DB.insertInto("song")
 		.values({
 			id: TestingMusecaSong.id,
-			legacy_id: 1,
 			game_group: "museca",
 			title: TestingMusecaSong.title,
 			artist: TestingMusecaSong.artist,

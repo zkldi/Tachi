@@ -354,7 +354,6 @@ for (const optionsDir of options.input) {
 					searchTerms: [],
 					artist: musicData.artistName.str,
 					id: tachiSongID,
-					legacySongID: inGameID,
 					data: {
 						genre: musicData.genreNames.list.StringID.str,
 					},

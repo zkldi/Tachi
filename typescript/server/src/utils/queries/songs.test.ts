@@ -12,7 +12,6 @@ describe("FindSongOnTitle / FindSongOnTitleInsensitive / FindSongOnID (Postgres)
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 4_200_000,
 				game_group: "iidx",
 				title,
 				artist: "A",
@@ -30,7 +29,6 @@ describe("FindSongOnTitle / FindSongOnTitleInsensitive / FindSongOnID (Postgres)
 		await DB.insertInto("song")
 			.values({
 				id: songId2,
-				legacy_id: 4_200_001,
 				game_group: "iidx",
 				title: "Other",
 				artist: "B",
@@ -52,7 +50,6 @@ describe("FindSongOnTitle / FindSongOnTitleInsensitive / FindSongOnID (Postgres)
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 4_200_010,
 				game_group: "popn",
 				title: `CaSeD ${suffix}`,
 				artist: "ArtistX",
@@ -74,7 +71,6 @@ describe("FindSongOnTitle / FindSongOnTitleInsensitive / FindSongOnID (Postgres)
 		await DB.insertInto("song")
 			.values({
 				id: songId,
-				legacy_id: 4_200_020,
 				game_group: "sdvx",
 				title: "T",
 				artist: "A",

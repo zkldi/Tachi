@@ -18,7 +18,6 @@ async function seedBmsSongAndChart(opts: {
 	await DB.insertInto("song")
 		.values({
 			id: songNewID,
-			legacy_id: 970_000 + n,
 			game_group: "bms",
 			title: `Sieglinde Test ${n}`,
 			artist: "Test",

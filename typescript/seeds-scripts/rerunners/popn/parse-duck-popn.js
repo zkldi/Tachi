@@ -63,7 +63,6 @@ for (const song of data) {
 				genreEN: null,
 			},
 			id: songID,
-			legacySongID: index,
 			searchTerms: [],
 			title,
 		});
