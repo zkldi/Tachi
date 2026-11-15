@@ -13,6 +13,7 @@ export const ACTION_UpdateSession = MakeAction("UPDATE_SESSION", async (taker, i
 	const row = await DB.selectFrom("session")
 		.select(["id", "user_id"])
 		.where("id", "=", input.sessionID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

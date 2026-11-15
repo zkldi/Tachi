@@ -170,6 +170,7 @@ describe("UpdateGoalsForUser", () => {
 			.selectAll()
 			.where("goal_id", "=", "FAKE_GOAL_ID")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(r).toMatchObject({
@@ -253,6 +254,7 @@ describe("UpdateGoalsForUser", () => {
 			.selectAll()
 			.where("goal_id", "=", "FAKE_GOAL_ID")
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(r).toMatchObject({
@@ -499,6 +501,7 @@ describe("ProcessGoal", () => {
 			.select(SELECT_GOAL_SUB_WITH_GOAL_GAME)
 			.where("goal_sub.goal_id", "=", HC511Goal.goalID)
 			.where("goal_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const goalSub = ToGoalSubscriptionDocument(row);

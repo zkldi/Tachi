@@ -17,6 +17,7 @@ describe("DeorphanBmsIfInOrphanChartPg", () => {
 		const chartRow = await DB.selectFrom("chart")
 			.select("song_id")
 			.where("id", "=", id)
+			.limit(1)
 			.executeTakeFirst();
 
 		await DB.deleteFrom("chart").where("id", "=", id).execute();
@@ -80,6 +81,7 @@ describe("DeorphanBmsIfInOrphanChartPg", () => {
 		const orphan = await DB.selectFrom("orphan_chart")
 			.select("id")
 			.where("id", "=", orphanChartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(orphan).toBeUndefined();
@@ -87,6 +89,7 @@ describe("DeorphanBmsIfInOrphanChartPg", () => {
 		const chartRow = await DB.selectFrom("chart")
 			.select("id")
 			.where("id", "=", orphanChartId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(chartRow).toBeDefined();

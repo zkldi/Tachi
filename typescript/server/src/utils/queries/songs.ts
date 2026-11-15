@@ -90,6 +90,7 @@ export async function FindSongOnID(game: GameGroup, songID: string) {
 		.select(SELECT_SONG_ROW)
 		.where("song.game_group", "=", game)
 		.where("song.id", "=", songID)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row ? ToSongDocumentFromRow(row) : null;
@@ -103,6 +104,7 @@ export async function FindDDRSongOnDDRSongHash(hash: string) {
 		.select(SELECT_SONG_ROW)
 		.where("song.game_group", "=", "ddr")
 		.where(sql<boolean>`(song.data::jsonb->>'ddrSongHash') = ${hash}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row ? ToSongDocumentFromRow(row) : null;

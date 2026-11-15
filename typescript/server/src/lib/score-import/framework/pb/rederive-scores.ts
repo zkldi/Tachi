@@ -37,6 +37,7 @@ export async function rederiveScoresForChart(chartId: string, log: KtLogger): Pr
 		.innerJoin("song", "song.id", "chart.song_id")
 		.select(SELECT_CHART)
 		.where("chart.id", "=", chartId)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!chartRow) {

@@ -51,6 +51,7 @@ async function EvaluateShowcaseChartStat(
 			.select((eb) => eb.fn.countAll<number>().as("cnt"))
 			.where("score.user_id", "=", userID)
 			.where("chart.id", "=", details.chartID)
+			.limit(1)
 			.executeTakeFirst(),
 	]);
 
@@ -113,6 +114,7 @@ async function CountPbsForFolderMetricGte(
 		.where("pb.user_id", "=", userID)
 		.where("pb.chart_id", "in", chartIDs)
 		.where(sql<boolean>`(${jsonBlob}::jsonb->>${sql.lit(metric)})::double precision >= ${gte}`)
+		.limit(1)
 		.executeTakeFirst();
 
 	return row?.count ?? 0;

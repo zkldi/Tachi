@@ -67,6 +67,7 @@ async function AssertUserHasGameProfile(userID: integer, game: V3Game): Promise<
 		.select("game_profile.user_id")
 		.where("game_profile.user_id", "=", userID)
 		.where("game_profile.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (profile) {

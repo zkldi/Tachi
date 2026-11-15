@@ -87,6 +87,7 @@ export async function GetChartById(chartID: string): Promise<ChartDocument | und
 		.innerJoin("song", "song.id", "chart.song_id")
 		.select(SELECT_CHART)
 		.where("chart.id", "=", chartID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!chartRow) {
@@ -105,6 +106,7 @@ export async function GetChartByIdForGame(
 		.select(SELECT_CHART)
 		.where("chart.id", "=", chartID)
 		.where("chart.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!chartRow) {

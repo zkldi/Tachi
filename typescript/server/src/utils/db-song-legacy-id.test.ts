@@ -9,6 +9,7 @@ describe("GetNextBmsPmsSongLegacyId", () => {
 		const maxRow = await DB.selectFrom("song")
 			.select(sql<number>`coalesce(max(song.legacy_id), 0)::int`.as("m"))
 			.where("game_group", "=", "pms")
+			.limit(1)
 			.executeTakeFirst();
 
 		const base = maxRow?.m ?? 0;

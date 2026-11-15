@@ -89,6 +89,7 @@ export default async function ScoreImportMain<D, C>(
 	const lockRow = await DB.selectFrom("import_lock")
 		.select(["import_lock.locked"])
 		.where("import_lock.user_id", "=", user.id)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!lockRow?.locked) {

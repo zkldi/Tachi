@@ -284,6 +284,7 @@ describe("ProcessPBs", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbBefore).toBeDefined();
 
@@ -298,6 +299,7 @@ describe("ProcessPBs", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbAfter).toBeUndefined();
 	});
@@ -320,6 +322,7 @@ describe("ProcessPBs", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		// Verify pb_composed_from was created.
@@ -344,6 +347,7 @@ describe("ProcessPBs", () => {
 		const pbAfter = await DB.selectFrom("pb")
 			.select("pb.row_id")
 			.where("pb.row_id", "=", pbBefore.row_id)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbAfter).toBeUndefined();
 	});
@@ -380,6 +384,7 @@ describe("ProcessPBs", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", userId)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbAfter).toBeDefined();
 	});

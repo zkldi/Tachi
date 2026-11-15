@@ -123,6 +123,7 @@ describe("DELETE /api/v1/users/:userID/integrations/kai/:kaiType", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("service", "=", "EAG")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();

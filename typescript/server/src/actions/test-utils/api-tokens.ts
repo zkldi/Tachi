@@ -80,5 +80,6 @@ export async function getApiToken(token: string) {
 	return DB.selectFrom("priv_api_token")
 		.select(SELECT_API_TOKEN)
 		.where("priv_api_token.token", "=", token)
+		.limit(1)
 		.executeTakeFirst();
 }

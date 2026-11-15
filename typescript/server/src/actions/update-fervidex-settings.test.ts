@@ -8,6 +8,7 @@ async function getFerSettings(userId: number) {
 	return DB.selectFrom("svc_fer_settings")
 		.selectAll()
 		.where("user_id", "=", userId)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -191,6 +192,7 @@ describe("ACTION_UpdateFervidexSettings", () => {
 		const { count } = await DB.selectFrom("svc_fer_settings")
 			.select(DB.fn.countAll().as("count"))
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count)).toBe(1);
@@ -224,6 +226,7 @@ describe("ACTION_UpdateFervidexSettings", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_FERVIDEX_SETTINGS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

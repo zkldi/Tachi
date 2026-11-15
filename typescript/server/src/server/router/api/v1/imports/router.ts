@@ -151,6 +151,7 @@ function findJobQueueForImport(importID: string) {
 		.selectAll()
 		.where("job_queue.scope", "=", `import:${importID}`)
 		.orderBy("job_queue.created_at", "desc")
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -163,6 +164,7 @@ API_V1_ROUTER.add("GET /imports/:importID/poll-status", async ({ params }) => {
 	const importRow = await DB.selectFrom("import")
 		.select(["import.id", "import.status"])
 		.where("import.id", "=", params.importID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (importRow) {
@@ -262,6 +264,7 @@ API_V1_ROUTER.rawAdd("GET", "/imports/:importID/stream", async (req: Request, re
 	const importRow = await DB.selectFrom("import")
 		.select(["import.id", "import.status"])
 		.where("import.id", "=", importID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (importRow?.status === "completed") {

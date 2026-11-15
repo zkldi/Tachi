@@ -181,6 +181,7 @@ describe("POST /api/v1/users/:userID/invites/create", () => {
 		const dbRes = await DB.selectFrom("priv_invite")
 			.selectAll()
 			.where("code", "=", res.body.body.code)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(dbRes).not.toBeNull();

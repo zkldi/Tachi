@@ -121,6 +121,7 @@ export async function EvaluateQuestProgress(userID: integer, quest: QuestDocumen
 		.select(SELECT_QUEST_SUB)
 		.where("quest_sub.quest_id", "=", quest.questID)
 		.where("quest_sub.user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	const goalSubMap = new Map<string, GoalSubscriptionDocument>();
@@ -255,6 +256,7 @@ export async function SubscribeToQuest(
 		.select(SELECT_QUEST_SUB)
 		.where("quest_sub.quest_id", "=", quest.questID)
 		.where("quest_sub.user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (isSubscribedToQuest) {
@@ -331,6 +333,7 @@ export async function UpdateQuestSubscriptions(questID: string) {
 	const maybeQuest = await DB.selectFrom("quest")
 		.select(SELECT_QUEST)
 		.where("quest.id", "=", questID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!maybeQuest) {

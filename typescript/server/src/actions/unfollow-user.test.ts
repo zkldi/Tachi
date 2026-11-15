@@ -77,6 +77,7 @@ describe("ACTION_UnfollowUser", () => {
 			.select(["user_id", "followee"])
 			.where("user_id", "=", userId)
 			.where("followee", "=", targetId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();
@@ -104,6 +105,7 @@ describe("ACTION_UnfollowUser", () => {
 			.select(["user_id", "followee"])
 			.where("user_id", "=", otherId)
 			.where("followee", "=", targetId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(preserved).toBeDefined();
@@ -119,6 +121,7 @@ describe("ACTION_UnfollowUser", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UNFOLLOW_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -138,6 +141,7 @@ describe("ACTION_UnfollowUser", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "UNFOLLOW_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

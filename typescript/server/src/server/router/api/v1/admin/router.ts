@@ -107,6 +107,7 @@ API_V1_ROUTER.add("POST /admin/destroy-ugpt", withAdmin, async ({ input }) => {
 	const ugpt = await DB.selectFrom("game_profile")
 		.where("user_id", "=", input.userID)
 		.where("game", "=", input.game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!ugpt) {

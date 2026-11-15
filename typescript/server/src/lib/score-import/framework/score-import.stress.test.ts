@@ -119,6 +119,7 @@ describe("score import engine — stress / abuse", () => {
 		const scoreCount = await DB.selectFrom("score")
 			.select((eb) => eb.fn.countAll<string>().as("c"))
 			.where("score.import_id", "=", "stress-dup-in-batch")
+			.limit(1)
 			.executeTakeFirst();
 		expect(Number(scoreCount?.c ?? 0)).toBe(1);
 	});
@@ -191,6 +192,7 @@ describe("score import engine — stress / abuse", () => {
 		const lockRow = await DB.selectFrom("import_lock")
 			.select(["import_lock.locked"])
 			.where("import_lock.user_id", "=", 1)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 		expect(lockRow.locked, "lock must be released after both calls return").toBe(false);
 	});
@@ -322,6 +324,7 @@ describe("score import engine — stress / abuse", () => {
 			.select((eb) => eb.fn.countAll<string>().as("c"))
 			.where("score.import_id", "=", "stress-mixed")
 			.where("score.committed", "=", true)
+			.limit(1)
 			.executeTakeFirst();
 		expect(Number(committedCount?.c ?? 0)).toBe(1);
 	});
@@ -355,6 +358,7 @@ describe("score import engine — stress / abuse", () => {
 		const scoreRow = await DB.selectFrom("score")
 			.select(["score.id", "score.session_id"])
 			.where("score.import_id", "=", "stress-no-time")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 		expect(scoreRow.session_id, "score must have null session_id").toBeNull();
 	});
@@ -434,6 +438,7 @@ describe("score import engine — stress / abuse", () => {
 		const scoreRow = await DB.selectFrom("score")
 			.select(["score.session_id", "score.time_achieved"])
 			.where("score.import_id", "=", "stress-time-zero")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(scoreRow.session_id).toBeNull();
@@ -597,6 +602,7 @@ describe("score import engine — stress / abuse", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", 1)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const composed = await DB.selectFrom("pb_composed_from")
@@ -637,6 +643,7 @@ describe("score import engine — stress / abuse", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", 1)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbBefore, "PB must exist after first import").toBeDefined();
 
@@ -646,6 +653,7 @@ describe("score import engine — stress / abuse", () => {
 		const scoreAfterRevert = await DB.selectFrom("score")
 			.select("score.id")
 			.where("score.id", "=", firstScoreId)
+			.limit(1)
 			.executeTakeFirst();
 		expect(scoreAfterRevert, "score must be gone after revert").toBeUndefined();
 
@@ -653,6 +661,7 @@ describe("score import engine — stress / abuse", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", 1)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbAfterRevert, "PB must be cleaned up after revert").toBeUndefined();
 
@@ -679,6 +688,7 @@ describe("score import engine — stress / abuse", () => {
 			.select("pb.row_id")
 			.where("pb.user_id", "=", 1)
 			.where("pb.chart_id", "=", Testing511SPA.chartID)
+			.limit(1)
 			.executeTakeFirst();
 		expect(pbAfterReimport, "PB must be reconstructed after re-import").toBeDefined();
 	});

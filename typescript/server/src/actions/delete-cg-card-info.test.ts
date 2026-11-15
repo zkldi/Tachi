@@ -14,6 +14,7 @@ async function getCgCardRow(userId: number, service: "dev" | "gan" | "nag") {
 		.selectAll()
 		.where("user_id", "=", userId)
 		.where("service", "=", service)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -88,6 +89,7 @@ describe("ACTION_DeleteCgCardInfo", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_CG_CARD_INFO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

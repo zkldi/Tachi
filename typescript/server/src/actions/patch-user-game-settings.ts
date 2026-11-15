@@ -24,6 +24,7 @@ export const ACTION_PatchUserGameSettings = MakeAction(
 				.select("id")
 				.where("game", "=", game)
 				.where("legacy_id", "=", body.defaultTable)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (!table) {
@@ -61,6 +62,7 @@ export const ACTION_PatchUserGameSettings = MakeAction(
 			.select(SELECT_GAME_PROFILE_SETTINGS)
 			.where("game_profile.user_id", "=", userID)
 			.where("game_profile.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

@@ -41,6 +41,7 @@ export async function upsertPbFromMongoDoc(
 		.where("user_id", "=", pbDoc.userID)
 		.where("chart_id", "=", pbDoc.chartID)
 		.where("lens", "is", null)
+		.limit(1)
 		.executeTakeFirst();
 
 	let pbId: string;

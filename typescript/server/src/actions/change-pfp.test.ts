@@ -42,6 +42,7 @@ async function getPfpLocation(userId: number) {
 	const row = await DB.selectFrom("account")
 		.select("custom_pfp_location")
 		.where("id", "=", userId)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	return row.custom_pfp_location;
@@ -51,6 +52,7 @@ async function getBannerLocation(userId: number) {
 	const row = await DB.selectFrom("account")
 		.select("custom_banner_location")
 		.where("id", "=", userId)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	return row.custom_banner_location;
@@ -221,6 +223,7 @@ describe("ACTION_ChangePfp", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CHANGE_PFP")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -241,6 +244,7 @@ describe("ACTION_ChangePfp", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_PFP")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -259,6 +263,7 @@ describe("ACTION_ChangePfp", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_PFP")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(JSON.stringify(action.input)).not.toContain(ACORN_PNG.toString("base64"));
@@ -291,6 +296,7 @@ describe("ACTION_DeletePfp", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "DELETE_PFP")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -337,6 +343,7 @@ describe("ACTION_DeletePfp", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_PFP")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -478,6 +485,7 @@ describe("ACTION_ChangeBanner", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CHANGE_BANNER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -498,6 +506,7 @@ describe("ACTION_ChangeBanner", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CHANGE_BANNER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -516,6 +525,7 @@ describe("ACTION_ChangeBanner", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "CHANGE_BANNER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(JSON.stringify(action.input)).not.toContain(ACORN_PNG.toString("base64"));
@@ -548,6 +558,7 @@ describe("ACTION_DeleteBanner", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "DELETE_BANNER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -594,6 +605,7 @@ describe("ACTION_DeleteBanner", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "DELETE_BANNER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

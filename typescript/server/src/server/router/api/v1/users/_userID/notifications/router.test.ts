@@ -153,6 +153,7 @@ describe("POST /api/v1/users/:userID/notifications/mark-all-read", () => {
 			.selectAll()
 			.where("notification.sent_to", "=", 1)
 			.where("notification.read", "=", false)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(unread).toBeUndefined();
@@ -232,6 +233,7 @@ describe("POST /api/v1/users/:userID/notifications/delete-all", () => {
 		const left = await DB.selectFrom("notification")
 			.selectAll()
 			.where("notification.sent_to", "=", 1)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(left).toBeUndefined();
@@ -239,6 +241,7 @@ describe("POST /api/v1/users/:userID/notifications/delete-all", () => {
 		const other = await DB.selectFrom("notification")
 			.selectAll()
 			.where("notification.sent_to", "=", 2)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(other).toBeDefined();

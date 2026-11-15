@@ -23,6 +23,7 @@ export const ACTION_CreateInvite = MakeAction("CREATE_INVITE", async (taker) => 
 			.select("auth_level")
 			.where("id", "=", userId)
 			.where("auth_level", "=", "admin")
+			.limit(1)
 			.executeTakeFirst()
 			.then((row) => !!row);
 
@@ -31,6 +32,7 @@ export const ACTION_CreateInvite = MakeAction("CREATE_INVITE", async (taker) => 
 				.selectFrom("account")
 				.select(SELECT_USER)
 				.where("id", "=", userId)
+				.limit(1)
 				.executeTakeFirstOrThrow();
 
 			const userDoc = ToUserDocument(userRow);
@@ -39,6 +41,7 @@ export const ACTION_CreateInvite = MakeAction("CREATE_INVITE", async (taker) => 
 				.selectFrom("priv_invite")
 				.select(trx.fn.countAll().as("count"))
 				.where("created_by", "=", userId)
+				.limit(1)
 				.executeTakeFirstOrThrow();
 
 			if (Number(count) >= GetTotalAllowedInvites(userDoc)) {

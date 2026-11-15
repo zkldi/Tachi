@@ -166,6 +166,7 @@ export async function drainSessionDirty(): Promise<number> {
 		const sessionRow = await DB.selectFrom("session")
 			.select(SELECT_SESSION_DOCUMENT)
 			.where("session.id", "=", sessionId)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!sessionRow) {
@@ -242,15 +243,19 @@ export async function drainStatsQueuesInOrder(): Promise<void> {
 	const queueSizes = await Promise.all([
 		DB.selectFrom("score_rederive")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
+			.limit(1)
 			.executeTakeFirst(),
 		DB.selectFrom("pb_dirty")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
+			.limit(1)
 			.executeTakeFirst(),
 		DB.selectFrom("session_dirty")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
+			.limit(1)
 			.executeTakeFirst(),
 		DB.selectFrom("game_profile_dirty")
 			.select((eb) => eb.fn.countAll<string>().as("n"))
+			.limit(1)
 			.executeTakeFirst(),
 	]);
 

@@ -204,6 +204,7 @@ router.post("/submit-score", RequireNotGuest, async (req, res) => {
 			const orphanRow = await DB.selectFrom("orphan_chart")
 				.select("orphan_chart.id")
 				.where(sql`orphan_chart.chart_doc->'data'->>'hashSHA256'`, "=", chart.sha256)
+				.limit(1)
 				.executeTakeFirst();
 
 			const orphanUserCount =
@@ -214,6 +215,7 @@ router.post("/submit-score", RequireNotGuest, async (req, res) => {
 								await DB.selectFrom("orphan_chart_user")
 									.select((eb) => eb.fn.countAll<number>().as("c"))
 									.where("orphan_chart_id", "=", orphanRow.id)
+									.limit(1)
 									.executeTakeFirst()
 							)?.c ?? 0,
 						);
@@ -426,6 +428,7 @@ router.post(
 		const course = await DB.selectFrom("bms_course_lookup")
 			.select(["bms_course_lookup.set", "bms_course_lookup.game", "bms_course_lookup.value"])
 			.where("bms_course_lookup.md5sums", "=", combinedMD5s)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!course) {

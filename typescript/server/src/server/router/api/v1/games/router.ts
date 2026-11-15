@@ -100,16 +100,19 @@ async function GetGameStats(
 		DB.selectFrom("score")
 			.select((eb) => eb.fn.countAll().as("c"))
 			.where("score.game", "=", game)
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0)),
 		DB.selectFrom("game_profile")
 			.select((eb) => eb.fn.countAll().as("c"))
 			.where("game_profile.game", "=", game)
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0)),
 		DB.selectFrom("chart")
 			.select((eb) => eb.fn.countAll().as("c"))
 			.where("chart.game", "=", game)
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0)),
 	]);
@@ -687,6 +690,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/goals/:goalID", withGame, async ({ c
 		.select(SELECT_GOAL)
 		.where("goal.id", "=", params.goalID)
 		.where("goal.game", "=", v3Game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -754,6 +758,7 @@ API_V1_ROUTER.add("GET /games/:game/targets/quests/:questID", withGame, async ({
 		.select(SELECT_QUEST)
 		.where("quest.id", "=", params.questID)
 		.where("quest.game", "=", v3Game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

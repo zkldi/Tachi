@@ -185,6 +185,7 @@ describe("ACTION_CreateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select(["client_id", "name", "author"])
 			.where("client_id", "=", result.clientID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -240,6 +241,7 @@ describe("ACTION_CreateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select(["redirect_uri", "webhook_uri"])
 			.where("client_id", "=", result.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.redirect_uri).toBe("https://example.com/callback");
@@ -261,6 +263,7 @@ describe("ACTION_CreateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select(["api_key_template", "api_key_filename"])
 			.where("client_id", "=", result.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.api_key_template).toBe("key=%%TACHI_KEY%%");
@@ -282,6 +285,7 @@ describe("ACTION_CreateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select(["pm_submit_score", "pm_customise_profile"])
 			.where("client_id", "=", result.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.pm_submit_score).toBe(true);
@@ -305,6 +309,7 @@ describe("ACTION_CreateApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CREATE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -332,6 +337,7 @@ describe("ACTION_CreateApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CREATE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

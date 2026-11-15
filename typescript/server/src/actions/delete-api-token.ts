@@ -7,6 +7,7 @@ export const ACTION_DeleteApiToken = MakeAction("DELETE_API_TOKEN", async (taker
 		.select("token")
 		.where("token", "=", token)
 		.where("user_id", "=", taker.acct.id)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!existing) {

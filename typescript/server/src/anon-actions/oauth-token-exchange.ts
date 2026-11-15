@@ -26,6 +26,7 @@ export const ANON_ACTION_OAuthTokenExchange = MakeAnonAction(
 		const client = await DB.selectFrom("priv_api_client")
 			.select(SELECT_OAUTH_CLIENT)
 			.where("client_id", "=", input.client_id)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!client) {
@@ -85,6 +86,7 @@ export const ANON_ACTION_OAuthTokenExchange = MakeAnonAction(
 		const row = await DB.selectFrom("priv_api_token")
 			.select(SELECT_API_TOKEN)
 			.where("token", "=", apiToken)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const doc = ToAPITokenDocument(row);

@@ -59,6 +59,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "INSTALL_BUILTIN_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -95,6 +96,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const client = await DB.selectFrom("priv_api_client")
 			.selectAll()
 			.where("client_id", "=", BASE_INPUT.clientID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(client).toMatchObject({
@@ -124,6 +126,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const client = await DB.selectFrom("priv_api_client")
 			.select("is_builtin")
 			.where("client_id", "=", BASE_INPUT.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(client.is_builtin).toBe(true);
@@ -137,6 +140,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const client = await DB.selectFrom("priv_api_client")
 			.select("client_secret")
 			.where("client_id", "=", BASE_INPUT.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(client.client_secret).toMatch(/^CS[0-9a-f]{40}$/u);
@@ -156,6 +160,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const client = await DB.selectFrom("priv_api_client")
 			.selectAll()
 			.where("client_id", "=", BASE_INPUT.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(client.api_key_filename).toBeNull();
@@ -198,6 +203,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const client = await DB.selectFrom("priv_api_client")
 			.select("author")
 			.where("client_id", "=", BASE_INPUT.clientID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(client.author).toBe(second.id);
@@ -213,6 +219,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "INSTALL_BUILTIN_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -232,6 +239,7 @@ describe("ACTION_InstallBuiltinClient", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "INSTALL_BUILTIN_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;

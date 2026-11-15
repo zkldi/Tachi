@@ -37,6 +37,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_CG_CARD_INFO)
 			.where("user_id", "=", user.id)
 			.where("service", "=", cgType)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

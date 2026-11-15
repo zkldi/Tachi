@@ -8,6 +8,7 @@ export const ACTION_DeleteBanner = MakeAction("DELETE_BANNER", async (taker) => 
 	const account = await DB.selectFrom("account")
 		.select("custom_banner_location")
 		.where("id", "=", taker.acct.id)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	if (!account.custom_banner_location) {

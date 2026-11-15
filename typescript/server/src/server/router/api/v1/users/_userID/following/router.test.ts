@@ -144,6 +144,7 @@ describe("POST /api/v1/users/:userID/following/add", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("followee", "=", otherId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -205,6 +206,7 @@ describe("POST /api/v1/users/:userID/following/remove", () => {
 			.selectAll()
 			.where("user_id", "=", userId)
 			.where("followee", "=", otherId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();

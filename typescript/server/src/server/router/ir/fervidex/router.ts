@@ -166,6 +166,7 @@ async function ShouldImportScoresFromProfileSubmit(swModel: string, userID: inte
 	const row = await DB.selectFrom("svc_fer_settings")
 		.select(["svc_fer_settings.force_static_import"])
 		.where("user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (row?.force_static_import === true) {

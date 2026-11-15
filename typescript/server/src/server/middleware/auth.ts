@@ -105,6 +105,7 @@ function CreateSetRequestPermissions(errorKeyName: string): Array<RequestHandler
 			const apiTokenData = await DB.selectFrom("priv_api_token")
 				.select(SELECT_API_TOKEN)
 				.where("token", "=", token)
+				.limit(1)
 				.executeTakeFirst()
 				.then((r) => (r ? ToAPITokenDocument(r) : null));
 

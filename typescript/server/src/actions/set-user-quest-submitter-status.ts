@@ -13,6 +13,7 @@ export const ACTION_SetUserQuestSubmitterStatus = MakeAction(
 		const existing = await DB.selectFrom("account")
 			.select("id")
 			.where("id", "=", userID)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!existing) {

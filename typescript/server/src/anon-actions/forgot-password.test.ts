@@ -29,6 +29,7 @@ describe("ANON_ACTION_ForgotPassword", () => {
 		const row = await DB.selectFrom("priv_password_reset_token")
 			.select("token")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -40,6 +41,7 @@ describe("ANON_ACTION_ForgotPassword", () => {
 		const row = await DB.selectFrom("priv_password_reset_token")
 			.select("token")
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.token).toMatch(/^M[0-9a-f]{40}$/u);
@@ -72,6 +74,7 @@ describe("ANON_ACTION_ForgotPassword", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "FORGOT_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -101,6 +104,7 @@ describe("ANON_ACTION_ForgotPassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "FORGOT_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -135,6 +139,7 @@ describe("ANON_ACTION_ForgotPassword", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "FORGOT_PASSWORD")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("GOOD");

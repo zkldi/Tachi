@@ -25,6 +25,7 @@ API_V1_ROUTER.add(
 		const row = await DB.selectFrom("svc_kshook_sv6c_settings")
 			.select(SELECT_KSHOOK_SV6C_SETTINGS)
 			.where("user_id", "=", user.id)
+			.limit(1)
 			.executeTakeFirst();
 
 		return success("Retrieved KsHook (S6VC) settings.", row ? ToKshookSv6cSettings(row) : null);

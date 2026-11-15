@@ -109,6 +109,7 @@ describe("POST /api/v1/users/:userID/games/:game/targets/goals/add-goal", () => 
 		const row = await DB.selectFrom("account")
 			.select("account.id")
 			.where("account.username", "=", username)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		userId = Number(row.id);
@@ -244,6 +245,7 @@ describe("PUT /api/v1/users/:userID/games/:game/targets/goals/:goalID", () => {
 		const row = await DB.selectFrom("account")
 			.select("account.id")
 			.where("account.username", "=", username)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		userId = Number(row.id);
@@ -313,6 +315,7 @@ describe("PUT /api/v1/users/:userID/games/:game/targets/goals/:goalID", () => {
 			.selectAll()
 			.where("goal_sub.goal_id", "=", oldGoalID)
 			.where("goal_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(oldSub).toBeUndefined();
@@ -362,6 +365,7 @@ describe("DELETE /api/v1/users/:userID/games/:game/targets/goals/:goalID", () =>
 		const row = await DB.selectFrom("account")
 			.select("account.id")
 			.where("account.username", "=", username)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		userId = Number(row.id);
@@ -400,6 +404,7 @@ describe("DELETE /api/v1/users/:userID/games/:game/targets/goals/:goalID", () =>
 			.selectAll()
 			.where("goal_sub.goal_id", "=", goalID)
 			.where("goal_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(sub).toBeUndefined();

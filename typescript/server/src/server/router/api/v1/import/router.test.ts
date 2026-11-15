@@ -210,6 +210,7 @@ describe("POST /api/v1/import/orphans", () => {
 
 		const remaining = await DB.selectFrom("orphan_score")
 			.select((eb) => eb.fn.countAll<number>().as("c"))
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(remaining.c)).toBe(1);

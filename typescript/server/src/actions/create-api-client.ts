@@ -58,6 +58,7 @@ export const ACTION_CreateApiClient = MakeAction(
 			const existingCount = await DB.selectFrom("priv_api_client")
 				.select(DB.fn.countAll().as("count"))
 				.where("author", "=", taker.acct.id)
+				.limit(1)
 				.executeTakeFirstOrThrow();
 
 			if (Number(existingCount.count) >= ServerConfig.OAUTH_CLIENT_CAP) {

@@ -96,6 +96,7 @@ export async function LoadScoreDocumentById(scoreID: string): Promise<ScoreDocum
 		.leftJoin("import", "import.id", "score.import_id")
 		.select(SELECT_SCORE_DOCUMENT)
 		.where("score.id", "=", scoreID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

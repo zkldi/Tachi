@@ -118,6 +118,7 @@ describe("ACTION_MarkAllNotificationsRead", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "MARK_ALL_NOTIFICATIONS_READ")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

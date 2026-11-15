@@ -8,6 +8,7 @@ export const ACTION_DeleteApiClient = MakeAction(
 		const existing = await DB.selectFrom("priv_api_client")
 			.select(["client_id", "author"])
 			.where("client_id", "=", clientID)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!existing) {

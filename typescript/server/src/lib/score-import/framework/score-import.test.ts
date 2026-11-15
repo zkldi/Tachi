@@ -82,6 +82,7 @@ describe("RunScoreImportOnce (ported from score-import.oldtest.ts)", () => {
 		const tracker = await DB.selectFrom("import_tracker")
 			.select("import_id")
 			.where("import_id", "=", "mockImportID")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(tracker).toBeUndefined();
@@ -283,6 +284,7 @@ describe("batch-manual score import (smoke)", () => {
 			.select((eb) => eb.fn.countAll<number>().as("c"))
 			.where("import_id", "=", importID)
 			.where("committed", "=", true)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(Number(nCommitted?.c)).toBe(1);
@@ -414,6 +416,7 @@ describe("batch-manual score import (smoke)", () => {
 			.select((eb) => eb.fn.countAll<number>().as("c"))
 			.where("import_id", "=", importID)
 			.where("committed", "=", true)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(Number(nCommitted?.c)).toBe(2);

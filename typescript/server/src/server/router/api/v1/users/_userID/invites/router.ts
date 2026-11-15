@@ -54,6 +54,7 @@ API_V1_ROUTER.add(
 		const { count } = await DB.selectFrom("priv_invite")
 			.select(DB.fn.countAll().as("count"))
 			.where("priv_invite.created_by", "=", user.id)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		return success("Calculated invite limit.", {

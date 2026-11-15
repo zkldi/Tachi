@@ -23,6 +23,7 @@ export async function GetRecentPlaycount(userID: integer) {
 		.select(sql<number>`count(*)::int`.as("c"))
 		.where("user_id", "=", userID)
 		.where("time_achieved", ">=", UnixMillisecondsToISO8601(time))
+		.limit(1)
 		.executeTakeFirst();
 
 	return Number(row?.c ?? 0);

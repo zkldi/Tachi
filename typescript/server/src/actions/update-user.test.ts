@@ -19,6 +19,7 @@ async function getAccountRow(userId: number) {
 			"sm_twitch",
 		])
 		.where("id", "=", userId)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 }
 
@@ -48,6 +49,7 @@ describe("ACTION_UpdateUser", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "UPDATE_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -285,6 +287,7 @@ describe("ACTION_UpdateUser", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -303,6 +306,7 @@ describe("ACTION_UpdateUser", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "UPDATE_USER")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;

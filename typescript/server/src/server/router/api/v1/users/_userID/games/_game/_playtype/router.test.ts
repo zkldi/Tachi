@@ -2,7 +2,7 @@ import { ONE_DAY } from "#lib/constants/time";
 import DB from "#services/pg/db";
 import mockApi, { CloseServerConnection } from "#test-utils/mock-api";
 import { seedUser } from "#test-utils/pg-fixtures";
-import { afterAll, describe, expect, it } from "vitest";
+import { afterAll, describe, expect, it, vi } from "vitest";
 
 afterAll(() => CloseServerConnection());
 
@@ -56,6 +56,39 @@ async function seedHistorySnapshots(userId: number) {
 		])
 		.execute();
 }
+
+describe("GET /api/v1/users/:userID/games/:game", () => {
+	it("limits both first and latest score lookups to one row in SQL", async () => {
+		const { id } = await seedUser();
+		await seedIidxSpProfile(id);
+
+		const executeQuery = vi.spyOn(DB.getExecutor(), "executeQuery");
+
+		try {
+			const res = await mockApi.get(`/api/v1/users/${id}/games/iidx-sp`);
+
+			expect(res.status).toBe(200);
+			expect(res.body.body.firstScore).toBeNull();
+			expect(res.body.body.mostRecentScore).toBeNull();
+
+			const scoreQueries = executeQuery.mock.calls
+				.map(([query]) => query)
+				.filter((query) =>
+					query.sql.includes('"score"."time_achieved" is not null order by'),
+				);
+
+			expect(scoreQueries).toHaveLength(2);
+			for (const query of scoreQueries) {
+				expect(query.sql).toMatch(
+					/order by "score"\."time_achieved" (asc nulls first|desc nulls last) limit \$\d+$/u,
+				);
+				expect(query.parameters.at(-1)).toBe(1);
+			}
+		} finally {
+			executeQuery.mockRestore();
+		}
+	});
+});
 
 describe("GET /api/v1/users/:userID/games/:game/history", () => {
 	it("returns 400 for an invalid duration query", async () => {

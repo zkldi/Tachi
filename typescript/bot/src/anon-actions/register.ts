@@ -10,6 +10,7 @@ export const ANON_ACTION_Register = MakeAnonAction(
 			.selectFrom("priv_discord_user_map")
 			.select("user_id")
 			.where("user_id", "=", user_id)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (existing) {

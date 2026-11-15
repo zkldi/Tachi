@@ -14,6 +14,7 @@ async function getCgCardRow(userId: number, service: "dev" | "gan" | "nag") {
 		.selectAll()
 		.where("user_id", "=", userId)
 		.where("service", "=", service)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -64,6 +65,7 @@ describe("ACTION_UpdateCgCardInfo", () => {
 		const { count } = await DB.selectFrom("priv_svc_cg_card_info")
 			.select(DB.fn.countAll().as("count"))
 			.where("user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count)).toBe(1);
@@ -106,6 +108,7 @@ describe("ACTION_UpdateCgCardInfo", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_CG_CARD_INFO")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

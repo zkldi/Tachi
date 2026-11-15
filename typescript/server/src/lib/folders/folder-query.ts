@@ -12,6 +12,7 @@ export async function BuildFolderQuery(folderID: string, db: Kysely<Database>) {
 		.selectFrom("folder")
 		.select(["folder.game", "folder.where", "folder.version_filter"])
 		.where("folder.id", "=", folderID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!folder) {

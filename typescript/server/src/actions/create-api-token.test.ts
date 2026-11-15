@@ -50,6 +50,7 @@ describe("ACTION_CreateApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CREATE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -73,6 +74,7 @@ describe("ACTION_CreateApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "CREATE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -237,6 +239,7 @@ describe("ACTION_CreateApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CREATE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -256,6 +259,7 @@ describe("ACTION_CreateApiToken", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "CREATE_API_TOKEN")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

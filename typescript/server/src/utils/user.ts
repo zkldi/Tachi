@@ -28,6 +28,7 @@ export async function GetUsernameFromUserID(userID: integer): Promise<string> {
 	const username = await DB.selectFrom("account")
 		.select("username")
 		.where("id", "=", userID)
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => res?.username);
 
@@ -44,6 +45,7 @@ export function GetUserCaseInsensitive(username: string): Promise<UserDocument |
 	return DB.selectFrom("account")
 		.select(SELECT_USER)
 		.where("normalized_username", "=", username.toLowerCase())
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => (res ? ToUserDocument(res) : null));
 }
@@ -51,6 +53,7 @@ export function GetUserCaseInsensitive(username: string): Promise<UserDocument |
 export async function CheckIfEmailInUse(email: string) {
 	const exists = await DB.selectFrom("priv_account_credential")
 		.where("email", "=", email)
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => !!res);
 
@@ -61,6 +64,7 @@ export function GetUserPrivateInfo(userID: integer) {
 	return DB.selectFrom("priv_account_credential")
 		.select(SELECT_PRIV_ACCOUNT_CREDENTIAL)
 		.where("priv_account_credential.user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 }
 
@@ -71,6 +75,7 @@ export function GetUserWithID(userID: integer): Promise<UserDocument | null> {
 	return DB.selectFrom("account")
 		.select(SELECT_USER)
 		.where("id", "=", userID)
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => (res ? ToUserDocument(res) : null));
 }
@@ -81,6 +86,7 @@ export async function GetSettingsForUser(userID: integer): Promise<UserSettingsD
 	return DB.selectFrom("account_settings")
 		.select(SELECT_USER_SETTINGS)
 		.where("user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirstOrThrow()
 		.then((res) => ToUserSettingsDocument(following, res));
 }
@@ -166,6 +172,7 @@ export function GetUserGamePlaycount(userID: integer, game: V3Game) {
 		.select((eb) => eb.fn.countAll().as("playcount"))
 		.where("user_id", "=", userID)
 		.where("game", "=", game)
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => Number(res?.playcount ?? 0));
 }
@@ -208,6 +215,7 @@ export async function GetUsersRankingAndOutOf(
         )`.as("ranking_count"),
 		])
 		.where("game", "=", stats.game)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 
 	return {
@@ -281,6 +289,7 @@ export async function IsUserAdmin(userID: integer) {
 		.select("auth_level")
 		.where("id", "=", userID)
 		.where("auth_level", "=", "admin")
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => !!res);
 
@@ -292,6 +301,7 @@ export function IsUserBanned(userID: integer) {
 		.select("auth_level")
 		.where("id", "=", userID)
 		.where("auth_level", "=", "banned")
+		.limit(1)
 		.executeTakeFirst()
 		.then((res) => !!res);
 }
@@ -337,6 +347,7 @@ export async function GetNextAvailableUsernameChange(
 		.select("timestamp")
 		.where("user_id", "=", userID)
 		.orderBy("timestamp", "desc")
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!lastChange) {
@@ -361,6 +372,7 @@ export async function GetFirstAdmin(): Promise<UserDocument> {
 		.select(SELECT_USER)
 		.where("auth_level", "=", "admin")
 		.orderBy("id", "asc")
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!admin) {

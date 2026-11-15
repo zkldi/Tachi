@@ -28,6 +28,7 @@ export function CheckAndSetOngoingImportLock(userID: integer): Promise<boolean> 
 			.select(SELECT_IMPORT_LOCK)
 			.where("import_lock.user_id", "=", userID)
 			.forUpdate()
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		if (row.locked && row.locked_at) {
@@ -58,6 +59,7 @@ export function CheckAndSetOngoingImportLock(userID: integer): Promise<boolean> 
 				.select(SELECT_IMPORT_LOCK)
 				.where("import_lock.user_id", "=", userID)
 				.forUpdate()
+				.limit(1)
 				.executeTakeFirstOrThrow();
 		}
 

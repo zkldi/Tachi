@@ -110,6 +110,7 @@ describe("PUT /api/v1/users/:userID/games/:game/showcase", () => {
 			.select("game_profile.showcase")
 			.where("game_profile.user_id", "=", userId)
 			.where("game_profile.game", "=", "iidx-sp")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();

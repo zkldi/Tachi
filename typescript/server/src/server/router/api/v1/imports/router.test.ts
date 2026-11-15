@@ -141,6 +141,7 @@ describe("POST /api/v1/imports/:importID/revert", () => {
 		const score = await DB.selectFrom("score")
 			.select("id")
 			.where("id", "=", FakeImport.scoreIDs[0])
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(score).toBeUndefined();

@@ -68,6 +68,7 @@ export async function GetUserGameSettingsDocument(
 		.select(SELECT_GAME_PROFILE_SETTINGS)
 		.where("game_profile.user_id", "=", userID)
 		.where("game_profile.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

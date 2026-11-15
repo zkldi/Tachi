@@ -10,6 +10,7 @@ async function getSettings(userId: number) {
 	return DB.selectFrom("account_settings")
 		.select(SELECT_USER_SETTINGS)
 		.where("account_settings.user_id", "=", userId)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 }
 
@@ -38,6 +39,7 @@ describe("ACTION_UpdateUserSettings", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "UPDATE_USER_SETTINGS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -139,6 +141,7 @@ describe("ACTION_UpdateUserSettings", () => {
 		const action = await DB.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "UPDATE_USER_SETTINGS")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

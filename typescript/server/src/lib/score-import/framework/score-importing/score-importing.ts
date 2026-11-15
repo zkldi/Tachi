@@ -382,6 +382,7 @@ async function HydrateCheckAndInsertScore(
 	const existing = await DB.selectFrom("raw_score")
 		.select("id")
 		.where("id", "=", scoreID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (existing) {

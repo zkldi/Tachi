@@ -68,6 +68,7 @@ describe("SetImportTimestop", () => {
 			.select(["import_timestop.last_score_time"])
 			.where("import_timestop.user_id", "=", userID)
 			.where("import_timestop.import_type", "=", "api/flo-sdvx")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -110,6 +111,7 @@ describe("SetImportTimestop", () => {
 			.select(DB.fn.countAll().as("count"))
 			.where("import_timestop.user_id", "=", userID)
 			.where("import_timestop.import_type", "=", "api/eag-iidx")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(Number(count.count)).toBe(1);

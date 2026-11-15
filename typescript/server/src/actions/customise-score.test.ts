@@ -152,11 +152,16 @@ describe("ACTION_CustomiseScore", () => {
 		});
 
 		const [scoreRow, pbRow] = await Promise.all([
-			DB.selectFrom("score").select("highlight").where("id", "=", scoreId).executeTakeFirst(),
+			DB.selectFrom("score")
+				.select("highlight")
+				.where("id", "=", scoreId)
+				.limit(1)
+				.executeTakeFirst(),
 			DB.selectFrom("pb")
 				.select("highlight")
 				.where("user_id", "=", userId)
 				.where("chart_id", "=", chartId)
+				.limit(1)
 				.executeTakeFirst(),
 		]);
 

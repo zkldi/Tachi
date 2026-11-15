@@ -156,6 +156,7 @@ API_V1_ROUTER.add("POST /import/class", withPermission("submit_score"), async ({
 	const account = await DB.selectFrom("account")
 		.select(["can_import_provided_class"])
 		.where("id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!account?.can_import_provided_class) {
@@ -166,6 +167,7 @@ API_V1_ROUTER.add("POST /import/class", withPermission("submit_score"), async ({
 		.select("game_profile.user_id")
 		.where("game_profile.user_id", "=", userID)
 		.where("game_profile.game", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!gameProfile) {

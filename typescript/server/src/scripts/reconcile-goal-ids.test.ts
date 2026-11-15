@@ -51,6 +51,7 @@ describe("reconcileGoalIds", () => {
 		const goalRow = await DB.selectFrom("goal")
 			.select(["goal.id", "goal.name"])
 			.where("goal.id", "=", canonicalId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(goalRow).toBeDefined();
@@ -59,6 +60,7 @@ describe("reconcileGoalIds", () => {
 		const staleGoal = await DB.selectFrom("goal")
 			.select("goal.id")
 			.where("goal.id", "=", driftedId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(staleGoal).toBeUndefined();
@@ -66,6 +68,7 @@ describe("reconcileGoalIds", () => {
 		const subRow = await DB.selectFrom("goal_sub")
 			.select("goal_sub.goal_id")
 			.where("goal_sub.user_id", "=", userId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(subRow?.goal_id).toBe(canonicalId);
@@ -98,6 +101,7 @@ describe("reconcileGoalIds", () => {
 		const goalRow = await DB.selectFrom("goal")
 			.select("goal.name")
 			.where("goal.id", "=", goalID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(goalRow?.name).toBe(expectedName);

@@ -9,6 +9,7 @@ export const ACTION_ResendVerifyEmail = MakeAction("RESEND_VERIFY_EMAIL", async 
 	const verifyInfo = await DB.selectFrom("priv_verify_email_token")
 		.select("email")
 		.where("user_id", "=", taker.acct.id)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!verifyInfo) {

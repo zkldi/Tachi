@@ -21,6 +21,7 @@ describe("SendNotification", () => {
 		const row = await DB.selectFrom("notification")
 			.select(SELECT_NOTIFICATION)
 			.where("notification.sent_to", "=", userId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.title).toBe("Quest updated");
@@ -42,6 +43,7 @@ describe("SendNotification", () => {
 			.select(SELECT_NOTIFICATION)
 			.where("notification.sent_to", "=", userId)
 			.where("notification.kind", "=", "orphans_restored")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.title).toBe("3 orphan scores were restored");

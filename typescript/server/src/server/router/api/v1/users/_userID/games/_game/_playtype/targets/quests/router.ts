@@ -62,6 +62,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_QUEST)
 			.where("quest.id", "=", params.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!questRow) {
@@ -76,6 +77,7 @@ API_V1_ROUTER.add(
 			.where("quest_sub.user_id", "=", user.id)
 			.where("quest_sub.quest_id", "=", params.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!questSubRow) {
@@ -118,6 +120,7 @@ API_V1_ROUTER.add(
 			.select(sql<number>`count(*)::int`.as("c"))
 			.where("quest_sub.user_id", "=", user.id)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		const existingQuestsCount = Number(countRow?.c ?? 0);
@@ -133,6 +136,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_QUEST)
 			.where("quest.id", "=", params.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!questRow) {
@@ -147,6 +151,7 @@ API_V1_ROUTER.add(
 			.where("quest_sub.user_id", "=", user.id)
 			.where("quest_sub.quest_id", "=", quest.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (alreadySubscribed) {
@@ -184,6 +189,7 @@ API_V1_ROUTER.add(
 			.select(SELECT_QUEST)
 			.where("quest.id", "=", params.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!questRow) {
@@ -198,6 +204,7 @@ API_V1_ROUTER.add(
 			.where("quest_sub.user_id", "=", user.id)
 			.where("quest_sub.quest_id", "=", quest.questID)
 			.where("quest.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!row) {

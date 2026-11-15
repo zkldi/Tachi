@@ -49,6 +49,7 @@ export async function GetSongByID(
 		.select(SELECT_SONG_DOCUMENT)
 		.where("song.id", "=", id)
 		.where("game_group", "=", game)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {

@@ -337,6 +337,7 @@ async function ensureGoalRow(doc: GoalDocument) {
 	const existed = await DB.selectFrom("goal")
 		.select("goal.id")
 		.where("id", "=", doc.goalID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!existed) {
@@ -377,6 +378,7 @@ export async function SubscribeToGoal(
 		.select(SELECT_GOAL_SUB_WITH_GOAL_GAME)
 		.where("goal_sub.goal_id", "=", GoalDocument.goalID)
 		.where("goal_sub.user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (existingSub) {
@@ -401,6 +403,7 @@ export async function SubscribeToGoal(
 			.select(SELECT_GOAL_SUB_WITH_GOAL_GAME)
 			.where("goal_sub.goal_id", "=", GoalDocument.goalID)
 			.where("goal_sub.user_id", "=", userID)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		return ToGoalSubscriptionDocument(updated);
@@ -837,6 +840,7 @@ export async function EditGoal(oldGoal: GoalDocument, newGoal: GoalDocument) {
 	const existingTarget = await DB.selectFrom("goal")
 		.select("goal.id")
 		.where("goal.id", "=", newGoalID)
+		.limit(1)
 		.executeTakeFirst();
 
 	await remapGoalIdInQuests(oldGoal.goalID, newGoalID);

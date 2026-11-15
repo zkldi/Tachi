@@ -66,6 +66,7 @@ export async function DeleteMultipleScores(
 			const sessionRow = await DB.selectFrom("session")
 				.select(SELECT_SESSION_DOCUMENT)
 				.where("session.id", "=", sessionId)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (!sessionRow) {
@@ -94,6 +95,7 @@ export async function DeleteMultipleScores(
 				.select("row_id")
 				.where("user_id", "=", score.userID)
 				.where("score_id", "=", score.scoreID)
+				.limit(1)
 				.executeTakeFirst();
 
 			if (!alreadyBlacklisted) {

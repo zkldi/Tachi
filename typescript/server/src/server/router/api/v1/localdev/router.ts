@@ -14,6 +14,7 @@ import { API_V1_ROUTER } from "../_singleton";
 API_V1_ROUTER.add("GET /localdev/song-seed-status", withLocalDev, async () => {
 	const row = await DB.selectFrom("song")
 		.select((eb) => eb.fn.countAll().as("count"))
+		.limit(1)
 		.executeTakeFirst();
 
 	const songCount = Number(row?.count ?? 0);

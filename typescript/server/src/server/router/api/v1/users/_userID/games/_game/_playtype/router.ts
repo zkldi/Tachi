@@ -66,15 +66,18 @@ API_V1_ROUTER.add("GET /users/:userID/games/:game", withUserGameProfile, async (
 			.select((eb) => eb.fn.countAll().as("c"))
 			.where("user_id", "=", user.id)
 			.where("game", "=", game)
+			.limit(1)
 			.executeTakeFirst()
 			.then((r) => Number(r?.c ?? 0)),
 		scoreJoin()
 			.select(SELECT_SCORE_DOCUMENT)
-			.orderBy("score.time_achieved", "asc")
+			.orderBy("score.time_achieved", sql`asc nulls first`)
+			.limit(1)
 			.executeTakeFirst(),
 		scoreJoin()
 			.select(SELECT_SCORE_DOCUMENT)
-			.orderBy("score.time_achieved", "desc")
+			.orderBy("score.time_achieved", sql`desc nulls last`)
+			.limit(1)
 			.executeTakeFirst(),
 		GetAllRankings(stats),
 		DB.selectFrom("session")
@@ -85,6 +88,7 @@ API_V1_ROUTER.add("GET /users/:userID/games/:game", withUserGameProfile, async (
 			)
 			.where("user_id", "=", user.id)
 			.where("game", "=", game)
+			.limit(1)
 			.executeTakeFirst(),
 	]);
 

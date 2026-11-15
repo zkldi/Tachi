@@ -74,6 +74,7 @@ describe("ACTION_Sync", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "SYNC")
+			.limit(1)
 			.executeTakeFirst();
 
 		const input = action?.input as Record<string, unknown>;
@@ -109,6 +110,7 @@ describe("ACTION_Sync", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "SYNC")
+			.limit(1)
 			.executeTakeFirst();
 
 		// node-pg returns BIGINT columns as strings
@@ -129,6 +131,7 @@ describe("ACTION_Sync", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "SYNC")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(action?.result).toBe("BAD");
@@ -143,6 +146,7 @@ describe("ACTION_Sync", () => {
 			.selectFrom("action")
 			.select(SELECT_ACTION)
 			.where("action.kind", "=", "SYNC")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(action?.result).toBe("THROW");

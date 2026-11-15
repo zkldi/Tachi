@@ -6,6 +6,7 @@ export const ANON_ACTION_VerifyEmail = MakeAnonAction("VERIFY_EMAIL", async (_ta
 	const exists = await DB.selectFrom("priv_verify_email_token")
 		.select("priv_verify_email_token.user_id")
 		.where("priv_verify_email_token.token", "=", code)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!exists) {

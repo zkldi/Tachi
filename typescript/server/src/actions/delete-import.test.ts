@@ -66,6 +66,7 @@ describe("ACTION_DeleteImport", () => {
 		const row = await DB.selectFrom("import")
 			.select("id")
 			.where("id", "=", importId)
+			.limit(1)
 			.executeTakeFirst();
 		expect(row).toBeUndefined();
 	});
@@ -80,6 +81,7 @@ describe("ACTION_DeleteImport", () => {
 		const row = await DB.selectFrom("import")
 			.select("id")
 			.where("id", "=", importId)
+			.limit(1)
 			.executeTakeFirst();
 		expect(row).toBeUndefined();
 	});
@@ -115,6 +117,7 @@ describe("ACTION_DeleteImport", () => {
 			.selectAll()
 			.where("kind", "=", "DELETE_IMPORT")
 			.orderBy("ts_end", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({

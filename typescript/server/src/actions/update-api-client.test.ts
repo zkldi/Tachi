@@ -120,6 +120,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("name")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.name).toBe("New Name");
@@ -136,6 +137,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("redirect_uri")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.redirect_uri).toBe("https://example.com/callback");
@@ -149,6 +151,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("redirect_uri")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.redirect_uri).toBeNull();
@@ -165,6 +168,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("webhook_uri")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.webhook_uri).toBe("https://example.com/webhook");
@@ -181,6 +185,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("api_key_template")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.api_key_template).toBe("key=%%TACHI_KEY%%");
@@ -194,6 +199,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("api_key_template")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.api_key_template).toBeNull();
@@ -207,6 +213,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const row = await DB.selectFrom("priv_api_client")
 			.select("api_key_filename")
 			.where("client_id", "=", clientId)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(row.api_key_filename).toBe("keys.txt");
@@ -235,6 +242,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "UPDATE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -255,6 +263,7 @@ describe("ACTION_UpdateApiClient", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "UPDATE_API_CLIENT")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");

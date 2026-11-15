@@ -59,6 +59,7 @@ describe("ACTION_RemoveGoalSubscription", () => {
 			.selectAll()
 			.where("goal_id", "=", goalID)
 			.where("user_id", "=", userID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(subRow).toBeUndefined();
@@ -85,6 +86,7 @@ describe("ACTION_RemoveGoalSubscription", () => {
 			.selectAll()
 			.where("kind", "=", "REMOVE_GOAL_SUBSCRIPTION")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({
@@ -109,6 +111,7 @@ describe("ACTION_RemoveGoalSubscription", () => {
 			.selectAll()
 			.where("kind", "=", "REMOVE_GOAL_SUBSCRIPTION")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({

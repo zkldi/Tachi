@@ -23,6 +23,7 @@ export const ACTION_UpdateGoalSubscription = MakeAction(
 			.where("goal_sub.user_id", "=", userID)
 			.where("goal_sub.goal_id", "=", oldGoalID)
 			.where("goal.game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!existingSubRow) {

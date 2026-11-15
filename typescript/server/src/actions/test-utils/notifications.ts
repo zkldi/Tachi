@@ -33,6 +33,7 @@ export function getNotification(rowId: string) {
 	return DB.selectFrom("notification")
 		.select(SELECT_NOTIFICATION)
 		.where("notification.row_id", "=", rowId)
+		.limit(1)
 		.executeTakeFirst();
 }
 

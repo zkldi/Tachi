@@ -89,6 +89,7 @@ describe("ACTION_UpdateSession", () => {
 			.selectAll()
 			.where("kind", "=", "UPDATE_SESSION")
 			.orderBy("ts_end", "desc")
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toMatchObject({ result: "GOOD", ip: "127.0.0.1", user_id: userId });

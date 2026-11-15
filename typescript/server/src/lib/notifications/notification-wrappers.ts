@@ -27,6 +27,7 @@ export async function SendSetRivalNotification(
 		.where("sent_to", "=", toUserID)
 		.where("kind", "=", "rivaled_by")
 		.where(sql<boolean>`payload @> ${JSON.stringify(body)}::jsonb`)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (alreadyBeenPinged) {

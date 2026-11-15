@@ -269,6 +269,7 @@ export async function LoadScoresIntoSessions(
 					]),
 				]),
 			)
+			.limit(1)
 			.executeTakeFirst();
 
 		let infoReturn: SessionInfoReturn;

@@ -73,6 +73,7 @@ export async function UpdateUsersGamePlaytypeStats(
 			.select("id")
 			.where("user_id", "=", userID)
 			.where("game", "=", game)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (!hasAnyScores) {

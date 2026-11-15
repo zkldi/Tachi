@@ -59,6 +59,7 @@ describe("PUT /api/v1/users/:userID/banner", () => {
 		const { custom_banner_location } = await DB.selectFrom("account")
 			.select("custom_banner_location")
 			.where("id", "=", 1)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const stored = await CDNRetrieve(GetProfileBannerURL(1, custom_banner_location!));
@@ -84,6 +85,7 @@ describe("PUT /api/v1/users/:userID/banner", () => {
 		const { custom_banner_location } = await DB.selectFrom("account")
 			.select("custom_banner_location")
 			.where("id", "=", 1)
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const stored = await CDNRetrieve(GetProfileBannerURL(1, custom_banner_location!));

@@ -32,6 +32,7 @@ export async function CountQueuedJobs(): Promise<number> {
 	const row = await DB.selectFrom("job_queue")
 		.select((eb) => eb.fn.countAll<number>().as("count"))
 		.where("job_queue.status", "=", 0)
+		.limit(1)
 		.executeTakeFirstOrThrow();
 	return Number(row.count);
 }
@@ -79,6 +80,7 @@ export async function GetJobQueue({
 			.execute(),
 		jobQueueBaseQuery(filters)
 			.select((eb) => eb.fn.countAll<number>().as("count"))
+			.limit(1)
 			.executeTakeFirstOrThrow(),
 	]);
 
@@ -140,6 +142,7 @@ export async function GetActions({
 			.execute(),
 		actionFilteredQuery(filters)
 			.select((eb) => eb.fn.countAll<number>().as("count"))
+			.limit(1)
 			.executeTakeFirstOrThrow(),
 	]);
 

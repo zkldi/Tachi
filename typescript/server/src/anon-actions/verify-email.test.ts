@@ -32,6 +32,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("token", "=", token)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeUndefined();
@@ -43,6 +44,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const action = await DB.selectFrom("action")
 			.selectAll()
 			.where("kind", "=", "VERIFY_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action).toMatchObject({
@@ -58,6 +60,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("input")
 			.where("kind", "=", "VERIFY_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		const input = action.input as Record<string, unknown>;
@@ -82,6 +85,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const action = await DB.selectFrom("action")
 			.select("result")
 			.where("kind", "=", "VERIFY_EMAIL")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(action.result).toBe("BAD");
@@ -95,6 +99,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const row = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("token", "=", token)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row?.token).toBe(token);
@@ -122,6 +127,7 @@ describe("ANON_ACTION_VerifyEmail", () => {
 		const other = await DB.selectFrom("priv_verify_email_token")
 			.select("token")
 			.where("token", "=", otherToken)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(other?.token).toBe(otherToken);

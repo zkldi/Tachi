@@ -48,6 +48,7 @@ describe("ACTION_AddGoal", () => {
 		const goalRow = await DB.selectFrom("goal")
 			.selectAll()
 			.where("id", "=", goalID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(goalRow).toMatchObject({
@@ -60,6 +61,7 @@ describe("ACTION_AddGoal", () => {
 			.selectAll()
 			.where("goal_id", "=", goal.goalID)
 			.where("user_id", "=", userID)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(subRow).toMatchObject({
@@ -84,6 +86,7 @@ describe("ACTION_AddGoal", () => {
 			.selectAll()
 			.where("kind", "=", "ADD_GOAL")
 			.orderBy("ts_start", "desc")
+			.limit(1)
 			.executeTakeFirstOrThrow();
 
 		expect(actionRow).toMatchObject({

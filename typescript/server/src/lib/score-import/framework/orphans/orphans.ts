@@ -170,6 +170,7 @@ export async function getOrphanScoreDetailForUser(
 		.select(SELECT_ORPHAN_SCORE)
 		.where("orphan_score.orphan_id", "=", orphanID)
 		.where("orphan_score.user_id", "=", userID)
+		.limit(1)
 		.executeTakeFirst();
 
 	if (!row) {
@@ -218,6 +219,7 @@ export async function listOrphanScoresForUser(opts: {
 			.select(["orphan_score.time_inserted", "orphan_score.row_id"])
 			.where("orphan_score.user_id", "=", opts.userID)
 			.where("orphan_score.row_id", "=", opts.afterRowID)
+			.limit(1)
 			.executeTakeFirst();
 
 		if (anchor === undefined) {

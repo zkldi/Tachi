@@ -195,6 +195,7 @@ describe("POST /ir/beatoraja/submit-score (Postgres)", () => {
 		const row = await DB.selectFrom("score")
 			.selectAll()
 			.where("id", "=", scoreId)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(row).toBeDefined();
@@ -241,6 +242,7 @@ describe("POST /ir/beatoraja/submit-score (Postgres)", () => {
 		const o = await DB.selectFrom("orphan_chart")
 			.select("id")
 			.where(sql`(orphan_chart.chart_doc::jsonb->'data'->>'hashSHA256')`, "=", NEW_SHA256)
+			.limit(1)
 			.executeTakeFirst();
 
 		expect(o).toBeDefined();
