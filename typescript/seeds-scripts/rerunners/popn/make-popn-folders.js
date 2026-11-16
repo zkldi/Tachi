@@ -1,6 +1,6 @@
 import { Command } from "commander";
 
-import { GetGameConfig } from "../../../common/src/index.ts";
+import { GetGameConfig, NormalizeTableSlug } from "../../../common/src/index.ts";
 import { CreateFolderID, MutateCollection, CreateTableID } from "../../util.js";
 
 const tableMainFolders = [];
@@ -73,7 +73,7 @@ MutateCollection("tables.json", (tables) => {
 		game: "popn",
 		id: CreateTableID(),
 		inactive: false,
-		legacyTableID: `popn-9B-${options.version}-alllevels`,
+		slug: NormalizeTableSlug(`${options.version}-alllevels`),
 		title: `Pop'n Music ${fmtVersion} All Levels`,
 	});
 
@@ -84,7 +84,7 @@ MutateCollection("tables.json", (tables) => {
 		game: "popn",
 		inactive: false,
 		id: CreateTableID(),
-		legacyTableID: `popn-9B-${options.version}-levels`,
+		slug: NormalizeTableSlug(`${options.version}-levels`),
 		title: `Pop'n Music ${fmtVersion} Levels`,
 	});
 

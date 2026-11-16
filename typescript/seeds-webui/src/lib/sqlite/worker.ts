@@ -22,8 +22,9 @@ import {
 //   2  charts: PK changed from `chartID` to `id`, `legacyChartID` added.
 //   3  folders/tables: PK changed to `id`, legacy IDs added.
 //   4  folders: legacy ID removed.
+//   5  tables: legacy ID replaced with slug.
 const DB_PATH = "/seeds-webui.sqlite3";
-const SCHEMA_VERSION = 4;
+const SCHEMA_VERSION = 5;
 
 let db: Database | null = null;
 

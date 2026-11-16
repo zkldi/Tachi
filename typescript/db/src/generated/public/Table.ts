@@ -11,8 +11,6 @@ export type table_id = string;
 export default interface TableTable {
   id: ColumnType<table_id, table_id, table_id>;
 
-  legacy_id: ColumnType<string, string, string>;
-
   game: ColumnType<Game, Game, Game>;
 
   inactive: ColumnType<boolean, boolean, boolean>;
@@ -21,7 +19,7 @@ export default interface TableTable {
 
   default_value: ColumnType<boolean, boolean, boolean>;
 
-  slug: ColumnType<string | null, string | null, string | null>;
+  slug: ColumnType<string, string, string>;
 }
 
 export type Table = Selectable<TableTable>;

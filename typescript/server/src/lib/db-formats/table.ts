@@ -5,7 +5,6 @@ import { type Database } from "tachi-db";
 
 export const SELECT_TABLE = [
 	"table.id",
-	"table.legacy_id",
 	"table.game",
 	"table.inactive",
 	"table.title",
@@ -17,7 +16,8 @@ export type TableRow = Selection<Database, "table", (typeof SELECT_TABLE)[number
 
 export function ToTableDocument(row: TableRow, folderSlugs: Array<string>): TableDocument {
 	return {
-		tableID: row.legacy_id,
+		tableID: row.id,
+		slug: row.slug,
 		game: row.game,
 		title: row.title,
 		description: "",
@@ -82,16 +82,11 @@ export async function GetTableDocumentsForGame(
 	return rows.map((row) => ToTableDocument(row, foldersByTable.get(row.id) ?? []));
 }
 
-/**
- * Load one table by API `tableID` (`table.legacy_id`), with folder slugs from `table_folder`
- * (same join pattern as {@link GetTableDocumentsForGame}).
- */
-export async function LoadTableDocumentByLegacyId(
-	legacyId: string,
-): Promise<TableDocument | undefined> {
+/** Load a table by its primary ID, including its ordered folder slugs. */
+export async function LoadTableDocumentById(tableID: string): Promise<TableDocument | undefined> {
 	const row = await DB.selectFrom("table")
 		.select(SELECT_TABLE)
-		.where("legacy_id", "=", legacyId)
+		.where("id", "=", tableID)
 		.limit(1)
 		.executeTakeFirst();
 
@@ -102,18 +97,26 @@ export async function LoadTableDocumentByLegacyId(
 	return tableRowToDocumentWithFolders(row);
 }
 
-/**
- * Load one table by API `tableID` for a specific game playtype route (matches Mongo
- * `tables.findOne({ tableID, game, playtype })`).
- */
-export async function LoadTableDocumentByLegacyIdForGame(
-	legacyId: string,
+/** Load a table within a game by slug or primary ID, preferring slug on collisions. */
+export async function LoadTableDocumentByGameAndSlug(
 	game: V3Game,
+	slugOrTableID: string,
 ): Promise<TableDocument | undefined> {
+	const bySlug = await DB.selectFrom("table")
+		.select(SELECT_TABLE)
+		.where("game", "=", game)
+		.where("slug", "=", slugOrTableID)
+		.limit(1)
+		.executeTakeFirst();
+
+	if (bySlug) {
+		return tableRowToDocumentWithFolders(bySlug);
+	}
+
 	const row = await DB.selectFrom("table")
 		.select(SELECT_TABLE)
-		.where("legacy_id", "=", legacyId)
 		.where("game", "=", game)
+		.where("id", "=", slugOrTableID)
 		.limit(1)
 		.executeTakeFirst();
 

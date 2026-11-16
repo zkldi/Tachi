@@ -1,6 +1,7 @@
 import {
 	CreateTableID,
 	FormatGame,
+	NormalizeTableSlug,
 	SEEDS_FolderDocument,
 	SEEDS_TableDocument,
 	V3Game,
@@ -45,7 +46,7 @@ export default function AddLevelVersionFolders(
 			game,
 			inactive: false,
 			id: CreateTableID(),
-			legacyTableID: `${game}-${shortName}-levels`,
+			slug: NormalizeTableSlug(`${shortName}-levels`),
 			title: `${FormatGame(game)} (${name})`,
 		});
 

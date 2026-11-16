@@ -8,7 +8,7 @@ import {
 } from "#lib/db-formats/folders";
 import { LoadPbsForUserOnChartsByPgIds } from "#lib/db-formats/pb";
 import { GetSongsByIDs } from "#lib/db-formats/song";
-import { LoadTableDocumentByLegacyId } from "#lib/db-formats/table";
+import { LoadTableDocumentByGameAndSlug, LoadTableDocumentById } from "#lib/db-formats/table";
 import { log } from "#lib/log/log";
 import { pgScoreDataToAPI } from "#lib/v3/migration-tools";
 import DB from "#services/pg/db";
@@ -243,10 +243,23 @@ export async function GetRecentlyViewedFolders(userID: integer, game: V3Game) {
 }
 
 export async function GetTableForIDGuaranteed(tableID: string): Promise<TableDocument> {
-	const table = await LoadTableDocumentByLegacyId(tableID);
+	const table = await LoadTableDocumentById(tableID);
 
 	if (!table) {
 		throw new Error(`Couldn't find table with ID '${tableID}'.`);
+	}
+
+	return table;
+}
+
+export async function GetTableForSlugGuaranteed(
+	game: V3Game,
+	slug: string,
+): Promise<TableDocument> {
+	const table = await LoadTableDocumentByGameAndSlug(game, slug);
+
+	if (!table) {
+		throw new Error(`Couldn't find table with slug '${slug}' for ${game}.`);
 	}
 
 	return table;

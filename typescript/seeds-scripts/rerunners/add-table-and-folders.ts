@@ -1,4 +1,9 @@
-import { CreateTableID, SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common";
+import {
+	CreateTableID,
+	NormalizeTableSlug,
+	SEEDS_FolderDocument,
+	SEEDS_TableDocument,
+} from "tachi-common";
 import { CreateFolderID, MutateCollection } from "../util.js";
 
 // The original intention was for you to
@@ -64,7 +69,7 @@ MutateCollection("tables.json", (tables: SEEDS_TableDocument[]) => {
 		game: GAME,
 		inactive: false,
 		id: CreateTableID(),
-		legacyTableID: `${GAME}-${SHORTTITLE}`,
+		slug: NormalizeTableSlug(SHORTTITLE),
 		title: TITLE,
 	});
 

@@ -64,21 +64,20 @@ async function seedBmsSongAndChart(opts: {
 
 async function seedSieglindeEcTable() {
 	const tablePk = "tbl_sieglinde_ec_test";
-	const tableLegacy = "bms-7K-sgl-EC";
+	const tableSlug = "sgl-ec";
 
 	await DB.insertInto("table")
 		.values({
 			id: tablePk,
-			legacy_id: tableLegacy,
 			game: "bms-7k",
 			inactive: false,
 			title: "Sieglinde EC",
 			default_value: false,
-			slug: null,
+			slug: tableSlug,
 		})
 		.execute();
 
-	return { tablePk, tableLegacy };
+	return { tablePk, tableSlug };
 }
 
 describe("GET /api/v1/games/:game/sieglinde-charts", () => {

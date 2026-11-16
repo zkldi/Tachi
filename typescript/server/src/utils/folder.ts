@@ -13,4 +13,5 @@ export {
 	GetPBsOnFolder,
 	GetRecentlyViewedFolders,
 	GetTableForIDGuaranteed,
+	GetTableForSlugGuaranteed,
 } from "#lib/folders/folders";

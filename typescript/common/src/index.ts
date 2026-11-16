@@ -12,6 +12,7 @@ export * from "./lib/folder-slug";
 export * from "./lib/goal-progress-formatters";
 export * from "./lib/goal-title";
 export * as Schemas from "./lib/schemas";
+export * from "./lib/table-slug";
 export * from "./lib/zod-schemas";
 export * from "./seeds/types";
 export * from "./types";

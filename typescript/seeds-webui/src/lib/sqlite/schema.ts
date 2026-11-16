@@ -58,16 +58,7 @@ export const FLAVOUR_COLUMNS: Record<Flavour, string[]> = {
 	questlines: ["questlineID", "game", "playtype", "name"],
 	quests: ["questID", "game", "playtype", "name"],
 	songs: ["id", "title", "artist"],
-	tables: [
-		"id",
-		"legacyTableID",
-		"game",
-		"playtype",
-		"title",
-		"default",
-		"inactive",
-		"description",
-	],
+	tables: ["id", "slug", "game", "playtype", "title", "default", "inactive", "description"],
 };
 
 export function ddlFor(collection: string): string {

@@ -8,7 +8,7 @@ import {
 	GetFolderChartsAndSongs,
 	GetFolderNamesInOrder,
 	GetFoldersFromTable,
-	GetTableForIDGuaranteed,
+	GetTableForSlugGuaranteed,
 } from "#utils/folder";
 import { GetRecentUserGameHighlights, GetRecentUserGameScores } from "#utils/queries/scores";
 import { REQ_GetGame, REQ_GetUser } from "#utils/req-tachi-data";
@@ -353,12 +353,12 @@ export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
 		description:
 			"Folders for the 'Sieglinde' rating algorithm. These are rough estimates of how hard it is to EASY CLEAR a given chart.",
 		async getBody() {
-			const table = await GetTableForIDGuaranteed("bms-7K-sgl-EC");
+			const table = await GetTableForSlugGuaranteed("bms-7k", "sgl-ec");
 
 			return TachiTableToBMSTableJSON(table);
 		},
 		async getLevelOrder() {
-			const table = await GetTableForIDGuaranteed("bms-7K-sgl-EC");
+			const table = await GetTableForSlugGuaranteed("bms-7k", "sgl-ec");
 
 			return GetFolderNamesInOrder(table);
 		},
@@ -371,12 +371,12 @@ export const CUSTOM_TACHI_BMS_TABLES: Array<TachiBMSTable> = [
 		description:
 			"Folders for the 'Sieglinde' rating algorithm. These are rough estimates of how hard it is to HARD CLEAR a given chart.",
 		async getBody() {
-			const table = await GetTableForIDGuaranteed("bms-7K-sgl-HC");
+			const table = await GetTableForSlugGuaranteed("bms-7k", "sgl-hc");
 
 			return TachiTableToBMSTableJSON(table);
 		},
 		async getLevelOrder() {
-			const table = await GetTableForIDGuaranteed("bms-7K-sgl-HC");
+			const table = await GetTableForSlugGuaranteed("bms-7k", "sgl-hc");
 
 			return GetFolderNamesInOrder(table);
 		},

@@ -61,6 +61,68 @@ describe("PATCH /api/v1/users/:userID/games/:game/settings", () => {
 			.execute();
 	});
 
+	it.each([
+		"table-current-id",
+		"levels",
+	])("stores the canonical table ID when given %s", async (key) => {
+		await DB.insertInto("table")
+			.values({
+				id: "table-current-id",
+				slug: "levels",
+				game: "iidx-sp",
+				inactive: false,
+				title: "Levels",
+				default_value: false,
+			})
+			.execute();
+		const res = await mockApi
+			.patch("/api/v1/users/1/games/iidx-sp/settings")
+			.set("Authorization", "Bearer api_token")
+			.send({ defaultTable: key });
+		expect(res.status).toBe(200);
+		expect(res.body.body.preferences.defaultTable).toBe("table-current-id");
+		const stored = await DB.selectFrom("game_profile")
+			.select("pf_default_table")
+			.where("user_id", "=", 1)
+			.where("game", "=", "iidx-sp")
+			.executeTakeFirstOrThrow();
+		expect(stored.pf_default_table).toBe("table-current-id");
+	});
+
+	it("rejects tables belonging to another game", async () => {
+		await DB.insertInto("table")
+			.values({
+				id: "table-other-game",
+				slug: "levels",
+				game: "iidx-dp",
+				inactive: false,
+				title: "DP levels",
+				default_value: false,
+			})
+			.execute();
+		for (const key of ["levels", "table-other-game", "missing"]) {
+			const res = await mockApi
+				.patch("/api/v1/users/1/games/iidx-sp/settings")
+				.set("Authorization", "Bearer api_token")
+				.send({ defaultTable: key });
+			expect(res.status).toBe(400);
+		}
+	});
+
+	it("allows clearing the default table", async () => {
+		await DB.updateTable("game_profile")
+			.set({ pf_default_table: "previous" })
+			.where("user_id", "=", 1)
+			.where("game", "=", "iidx-sp")
+			.execute();
+		const res = await mockApi
+			.patch("/api/v1/users/1/games/iidx-sp/settings")
+			.set("Authorization", "Bearer api_token")
+			.send({ defaultTable: null });
+		expect(res.status).toBe(200);
+		expect(res.body.body.preferences.defaultTable).toBeNull();
+	});
+
 	it("updates preferredScoreAlg", async () => {
 		const res = await mockApi
 			.patch("/api/v1/users/1/games/iidx-sp/settings")

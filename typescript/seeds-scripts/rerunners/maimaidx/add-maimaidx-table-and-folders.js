@@ -1,4 +1,5 @@
 import { MutateCollection, ReadCollection, WriteCollection } from "../../util.js";
+import { NormalizeTableSlug } from "tachi-common";
 
 import { CreateTableID, CreateFolderID } from "/tachi/typescript/common/src/utils/tachi-id.ts";
 
@@ -70,7 +71,7 @@ MutateCollection("folders.json", (folders) => {
 const tables = ReadCollection("tables.json");
 
 for (const playtype of PLAYTYPES) {
-	const legacyTableID = `${GAME}-${playtype}-${SHORTTITLE}`;
+	const slug = NormalizeTableSlug(SHORTTITLE);
 
 	tables.push({
 		default: false,
@@ -79,7 +80,7 @@ for (const playtype of PLAYTYPES) {
 		game: GAME,
 		id: CreateTableID(),
 		inactive: false,
-		legacyTableID,
+		slug,
 		title: TITLE,
 	});
 }

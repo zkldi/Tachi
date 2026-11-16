@@ -387,6 +387,7 @@ export interface SongDocument<G extends GameGroup = GameGroup> {
 
 export interface TableDocument {
 	tableID: string;
+	slug: string;
 	game: V3Game;
 	title: string;
 	description: string;
