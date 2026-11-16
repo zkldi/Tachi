@@ -11,10 +11,7 @@ import {
 } from "#lib/db-formats/pb";
 import { SELECT_QUEST, SELECT_QUEST_SUB_WITH_QUEST_GAME } from "#lib/db-formats/quest";
 import { GetSongByID, GetSongsByIDs } from "#lib/db-formats/song";
-import {
-	GetTableDocumentsForGame,
-	LoadTableDocumentByLegacyIdForGame,
-} from "#lib/db-formats/table";
+import { GetTableDocumentsForGame, LoadTableDocumentByGameAndSlug } from "#lib/db-formats/table";
 import {
 	AttachFolderSlugsToGoals,
 	ToGoalDocument,
@@ -595,7 +592,7 @@ API_V1_ROUTER.add("GET /games/:game/tables", withGame, async ({ ctx, input }) =>
 API_V1_ROUTER.add("GET /games/:game/tables/:tableID", withGame, async ({ ctx, params }) => {
 	const v3Game = ctx.game;
 
-	const table = await LoadTableDocumentByLegacyIdForGame(params.tableID, v3Game);
+	const table = await LoadTableDocumentByGameAndSlug(v3Game, params.tableID);
 
 	if (!table) {
 		throw new ExpectedErr(404, `No table with ID ${params.tableID} exists.`);

@@ -1,7 +1,7 @@
 import type { SEEDS_FolderDocument, TableDocument } from "tachi-common";
 
 import { LoadFolderDocumentByGameAndSlug } from "#lib/db-formats/folders";
-import { LoadTableDocumentByLegacyId } from "#lib/db-formats/table";
+import { LoadTableDocumentById } from "#lib/db-formats/table";
 import {
 	BuildFolderQuery,
 	GetFoldersFromTable,
@@ -350,14 +350,14 @@ describe("Postgres table + folder helpers", () => {
 
 		return {
 			tablePk: `${prefix}-tbl-${u}`,
-			tableLegacy: `${prefix}-l-${u}`,
+			tableSlug: `${prefix}-l-${u}`,
 			folderA: `${prefix}-fa-${u}`,
 			folderB: `${prefix}-fb-${u}`,
 		};
 	}
 
-	it("LoadTableDocumentByLegacyId and GetTableForIDGuaranteed load folder ids", async () => {
-		const { tablePk, tableLegacy, folderA, folderB } = tableIds("tfolder");
+	it("LoadTableDocumentById and GetTableForIDGuaranteed load folder ids", async () => {
+		const { tablePk, tableSlug, folderA, folderB } = tableIds("tfolder");
 
 		for (const [id, title] of [
 			[folderA, "A"],
@@ -380,12 +380,11 @@ describe("Postgres table + folder helpers", () => {
 		await DB.insertInto("table")
 			.values({
 				id: tablePk,
-				legacy_id: tableLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "Test table",
 				default_value: false,
-				slug: null,
+				slug: tableSlug,
 			})
 			.execute();
 
@@ -396,14 +395,14 @@ describe("Postgres table + folder helpers", () => {
 			])
 			.execute();
 
-		const loaded = await LoadTableDocumentByLegacyId(tableLegacy);
+		const loaded = await LoadTableDocumentById(tablePk);
 
 		expect(loaded).toBeDefined();
-		expect(loaded!.tableID).toBe(tableLegacy);
+		expect(loaded!.tableID).toBe(tablePk);
 		expect(loaded!.game).toBe("iidx-sp");
 		expect(loaded!.folders).toEqual([folderA, folderB]);
 
-		const guaranteed = await GetTableForIDGuaranteed(tableLegacy);
+		const guaranteed = await GetTableForIDGuaranteed(tablePk);
 
 		expect(guaranteed.folders).toEqual([folderA, folderB]);
 
@@ -413,7 +412,7 @@ describe("Postgres table + folder helpers", () => {
 	});
 
 	it("GetFoldersFromTable returns documents in table.folders order", async () => {
-		const { tablePk, tableLegacy, folderA, folderB } = tableIds("gfft");
+		const { tablePk, tableSlug, folderA, folderB } = tableIds("gfft");
 
 		for (const [id, title] of [
 			[folderA, "First"],
@@ -436,12 +435,11 @@ describe("Postgres table + folder helpers", () => {
 		await DB.insertInto("table")
 			.values({
 				id: tablePk,
-				legacy_id: tableLegacy,
 				game: "iidx-sp",
 				inactive: false,
 				title: "Ord",
 				default_value: false,
-				slug: null,
+				slug: tableSlug,
 			})
 			.execute();
 
@@ -450,7 +448,8 @@ describe("Postgres table + folder helpers", () => {
 			.execute();
 
 		const table: TableDocument = {
-			tableID: tableLegacy,
+			tableID: tablePk,
+			slug: tableSlug,
 			game: "iidx-sp",
 			title: "Ord",
 			description: "",

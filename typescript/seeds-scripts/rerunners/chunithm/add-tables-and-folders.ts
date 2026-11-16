@@ -1,7 +1,7 @@
 import type { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types";
 
 import { Command } from "commander";
-import { computeFolderSlug, GetGameConfig } from "../../../common/src";
+import { computeFolderSlug, GetGameConfig, NormalizeTableSlug } from "../../../common/src";
 
 import { CreateFolderID, CreateTableID, MutateCollection, ReadCollection } from "../../util";
 
@@ -140,7 +140,7 @@ MutateCollection("tables.json", (ts: Array<SEEDS_TableDocument>) => {
 			game: "chunithm",
 			id: CreateTableID(),
 			inactive: false,
-			legacyTableID: `chunithm-Single-${version}-levels`,
+			slug: NormalizeTableSlug(`${version}-levels`),
 			title: levelTableTitle,
 		});
 	}
@@ -155,7 +155,7 @@ MutateCollection("tables.json", (ts: Array<SEEDS_TableDocument>) => {
 			game: "chunithm",
 			id: CreateTableID(),
 			inactive: false,
-			legacyTableID: `chunithm-Single-${version}-difficulties`,
+			slug: NormalizeTableSlug(`${version}-difficulties`),
 			title: difficultyTableTitle,
 		});
 	}

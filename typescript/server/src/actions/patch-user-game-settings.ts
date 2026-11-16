@@ -1,4 +1,5 @@
 import { MakeAction } from "#lib/actions/actions";
+import { LoadTableDocumentByGameAndSlug } from "#lib/db-formats/table";
 import {
 	GetUserGameSettingsDocument,
 	SELECT_GAME_PROFILE_SETTINGS,
@@ -19,13 +20,9 @@ export const ACTION_PatchUserGameSettings = MakeAction(
 			throw new ExpectedErr(403, "You are not authorised to modify this user's settings.");
 		}
 
-		if (typeof body.defaultTable === "string") {
-			const table = await DB.selectFrom("table")
-				.select("id")
-				.where("game", "=", game)
-				.where("legacy_id", "=", body.defaultTable)
-				.limit(1)
-				.executeTakeFirst();
+		let defaultTable = body.defaultTable;
+		if (typeof defaultTable === "string") {
+			const table = await LoadTableDocumentByGameAndSlug(game, defaultTable);
 
 			if (!table) {
 				throw new ExpectedErr(
@@ -33,6 +30,7 @@ export const ACTION_PatchUserGameSettings = MakeAction(
 					`The table (${body.defaultTable}) does not exist (and therefore cannot be set as a default).`,
 				);
 			}
+			defaultTable = table.tableID;
 		}
 
 		const hasGameSpecificKeys =
@@ -83,8 +81,8 @@ export const ACTION_PatchUserGameSettings = MakeAction(
 		if (body.preferredDefaultEnum !== undefined) {
 			set.pf_preferred_default_enum = body.preferredDefaultEnum;
 		}
-		if (body.defaultTable !== undefined) {
-			set.pf_default_table = body.defaultTable;
+		if (defaultTable !== undefined) {
+			set.pf_default_table = defaultTable;
 		}
 		if (body.preferredRanking !== undefined) {
 			set.pf_preferred_ranking = body.preferredRanking;

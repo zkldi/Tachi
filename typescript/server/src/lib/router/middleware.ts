@@ -17,7 +17,7 @@ import { SELECT_QUEST } from "#lib/db-formats/quest";
 import { LoadScoreDocumentById } from "#lib/db-formats/score";
 import { LoadSessionDocumentById } from "#lib/db-formats/session";
 import { GetSongByID } from "#lib/db-formats/song";
-import { LoadTableDocumentByLegacyId } from "#lib/db-formats/table";
+import { LoadTableDocumentByGameAndSlug } from "#lib/db-formats/table";
 import {
 	AttachFolderSlugsToGoals,
 	ToGoalDocument,
@@ -415,11 +415,12 @@ export const withFolder = async (req: Request): Promise<{ folderDoc: FolderDocum
 };
 
 /**
- * Resolves :tableID (legacy string ID) to a table document.
+ * Resolves :tableID (slug or current ID, scoped to :game) to a table document.
  * Returns `{ tableDoc }`.
  */
 export const withTable = async (req: Request): Promise<{ tableDoc: TableDocument }> => {
-	const table = await LoadTableDocumentByLegacyId(req.params.tableID);
+	const { game } = await withGame(req);
+	const table = await LoadTableDocumentByGameAndSlug(game, req.params.tableID);
 
 	if (!table) {
 		throw new ExpectedErr(404, `The table ${req.params.tableID} does not exist.`);

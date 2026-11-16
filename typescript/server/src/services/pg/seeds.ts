@@ -445,7 +445,7 @@ export async function importSeeds(pg: Kysely<Database>, seedsDir: string): Promi
 			const seeds = readSeedFile<SEEDS_TableDocument>(seedsDir, "tables.json");
 			const rows: Array<NewTable> = seeds.map((t) => ({
 				id: t.id,
-				legacy_id: t.legacyTableID,
+				slug: t.slug,
 				game: t.game as PgGame,
 				inactive: t.inactive,
 				title: t.title,

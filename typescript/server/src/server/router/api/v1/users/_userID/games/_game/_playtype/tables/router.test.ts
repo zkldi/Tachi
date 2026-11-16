@@ -57,16 +57,15 @@ describe("GET /api/v1/users/:userID/games/:game/tables/:tableID", () => {
 			})
 			.execute();
 
-		const tableUuid = `tblu_${Date.now()}`;
+		const tableUuid = "T000000000000000001";
 		await DB.insertInto("table")
 			.values({
 				id: tableUuid,
-				legacy_id: "mock_table",
 				game: "iidx-sp",
 				inactive: false,
 				title: "T",
 				default_value: false,
-				slug: "mock_table",
+				slug: "mock-table",
 			})
 			.execute();
 
@@ -116,12 +115,33 @@ describe("GET /api/v1/users/:userID/games/:game/tables/:tableID", () => {
 	});
 
 	it("returns stats for a table the user has played", async () => {
-		const res = await mockApi.get("/api/v1/users/1/games/iidx-sp/tables/mock_table");
+		const res = await mockApi.get("/api/v1/users/1/games/iidx-sp/tables/mock-table");
 
 		expect(res.status).toBe(200);
-		expect(res.body.body.table.tableID).toBe("mock_table");
+		expect(res.body.body.table.tableID).toBe("T000000000000000001");
+		expect(res.body.body.table.slug).toBe("mock-table");
 		expect(res.body.body.folders.length).toBe(1);
 		expect(res.body.body.stats.length).toBeGreaterThanOrEqual(1);
+	});
+
+	it("also accepts the current ID", async () => {
+		const res = await mockApi.get("/api/v1/users/1/games/iidx-sp/tables/T000000000000000001");
+		expect(res.status).toBe(200);
+		expect(res.body.body.table.slug).toBe("mock-table");
+	});
+
+	it("exposes slugs and current IDs on game table routes", async () => {
+		const list = await mockApi.get("/api/v1/games/iidx-sp/tables");
+		expect(list.status).toBe(200);
+		expect(list.body.body).toContainEqual(
+			expect.objectContaining({
+				tableID: "T000000000000000001",
+				slug: "mock-table",
+			}),
+		);
+		const res = await mockApi.get("/api/v1/games/iidx-sp/tables/mock-table");
+		expect(res.status).toBe(200);
+		expect(res.body.body.table.tableID).toBe("T000000000000000001");
 	});
 
 	it("returns 404 when the table does not exist", async () => {
@@ -173,7 +193,7 @@ describe("GET /api/v1/users/:userID/games/:game/tables/:tableID", () => {
 
 		it("returns lamp milestones chronologically above minimum relevance", async () => {
 			const res = await mockApi.get(
-				"/api/v1/users/1/games/iidx-sp/tables/mock_table/evolution",
+				"/api/v1/users/1/games/iidx-sp/tables/mock-table/evolution",
 			);
 
 			expect(res.status).toBe(200);

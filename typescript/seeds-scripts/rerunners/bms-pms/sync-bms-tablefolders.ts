@@ -6,6 +6,7 @@ import {
 	type BMSTableInfo,
 	type BmstableFetch,
 	computeFolderSlug,
+	NormalizeTableSlug,
 	type SEEDS_FolderDocument,
 	type SEEDS_TableDocument,
 	ParseAndLoadBMSTable,
@@ -23,14 +24,6 @@ const fetchBMSTable: BmstableFetch = async (url) => {
 		text: () => res.text(),
 	};
 };
-
-function bmsPlaytype(game: BMSGames): "7K" | "14K" {
-	return game === "bms-7k" ? "7K" : "14K";
-}
-
-function legacyTableID(tableInfo: BMSTableInfo): string {
-	return `bms-${bmsPlaytype(tableInfo.game)}-${tableInfo.asciiPrefix}`;
-}
 
 function escapeSqlStringLiteral(value: string): string {
 	return value.replaceAll("'", "''");
@@ -130,7 +123,7 @@ async function syncBmsTableFolders(): Promise<void> {
 	const tables = ReadCollection("tables.json") as Array<SEEDS_TableDocument>;
 
 	const folderByKey = new Map(folders.map((f) => [folderKey(f.game, f.slug), f]));
-	const tableByLegacyId = new Map(tables.map((t) => [t.legacyTableID, t]));
+	const tableByKey = new Map(tables.map((t) => [`${t.game}:${t.slug}`, t]));
 
 	for (const tableInfo of BMS_TABLES) {
 		if (!isBmsGame(tableInfo.game)) {
@@ -144,7 +137,9 @@ async function syncBmsTableFolders(): Promise<void> {
 				log.info(`Resolved ${tableInfo.name} URL: ${tableInfo.url} -> ${loadUrl}`);
 			}
 
-			const existingTable = tableByLegacyId.get(legacyTableID(tableInfo));
+			const existingTable = tableByKey.get(
+				`${tableInfo.game}:${NormalizeTableSlug(tableInfo.asciiPrefix)}`,
+			);
 			const isNewTable = existingTable === undefined;
 			const curatedFolderSlugs = new Set(existingTable?.folders ?? []);
 

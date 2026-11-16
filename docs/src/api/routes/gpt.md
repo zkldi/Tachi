@@ -429,7 +429,7 @@ GET /api/v1/games/iidx/SP/folders/some_folder_id
 
 ## Return all the tables for this game
 
-`GET /api/v1/games/:gameGroup/:playtype/tables`
+`GET /api/v1/games/:game/tables`
 
 !!! note
 Unlike the folders endpoint, this one doesn't have a search parameter. This is because we expect
@@ -439,44 +439,50 @@ the total table count to stay rather small.
 
 ### Parameters
 
-None.
+Supply `showInactive` to include inactive tables.
 
 ### Response
 
-| Property |            Type            |        Description        |
-| :------: | :------------------------: | :-----------------------: |
-| `tables` | Array&lt;TableDocument&gt; | Every table for this GPT. |
+The response body is an array of table documents. Each has a current `tableID` and a
+URL-safe `slug`, unique within its game. Inactive tables are excluded unless
+`showInactive` is supplied.
 
 ### Example
 
 #### Request
 
 ```
-GET /api/v1/games/bms/7K/tables
+GET /api/v1/games/bms-7k/tables
 ```
 
 #### Response
 
 ```js
-{
-	tables: [
-		{
-			name: "Insane",
-			// ...
-		},
-		{
-			name: "Overjoy",
-			// ...
-		},
-	];
-}
+[
+	{
+		tableID: "T19d35f0d592562c1eb7",
+		slug: "sgl-ec",
+		game: "bms-7k",
+		title: "Sieglinde EC",
+		// ...
+	},
+]
 ```
 
 ---
 
 ## Retrieve folder documents for a specific table.
 
-`GET /api/v1/games/:gameGroup/:playtype/tables/:tableID`
+`GET /api/v1/games/:game/tables/:tableID`
+
+`:tableID` accepts a game-scoped slug or a current `T…` ID. Slug matches take
+precedence. Legacy table IDs are no longer supported. The returned `tableID` is
+always the current ID, even when the request uses a slug.
+
+The same lookup applies to user table statistics and evolution endpoints:
+`/users/:userID/games/:game/tables/:tableID` and its `/evolution` subroute.
+Saved `defaultTable` preferences use current IDs; settings updates also accept a
+slug and normalize it to the current ID.
 
 ### Parameters
 
@@ -494,7 +500,7 @@ None.
 #### Request
 
 ```
-GET /api/v1/games/bms/7K/tableID/insane
+GET /api/v1/games/bms-7k/tables/sgl-ec
 ```
 
 #### Response
@@ -502,11 +508,12 @@ GET /api/v1/games/bms/7K/tableID/insane
 ```js
 {
 	folders: [
-		// insane lv1, insane lv2 -- insane lv 25, so on.
+		// Ordered folder documents for the Sieglinde EC table.
 	],
 	table: {
-		tableID: "insane",
-		name: "Insane",
+		tableID: "T19d35f0d592562c1eb7",
+		slug: "sgl-ec",
+		title: "Sieglinde EC",
 		// ...
 	}
 }

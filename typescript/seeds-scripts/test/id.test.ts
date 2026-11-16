@@ -39,7 +39,7 @@ for (const v3Game of ALL_GAMES) {
 const UniqueKeys: Record<string, DuplicateKeyDecl[]> = {
 	"bms-course-lookup": [["set", "game", "value"]],
 	folders: ["id"],
-	tables: ["id", "legacyTableID"],
+	tables: ["id", ["game", "slug"]],
 	questlines: ["questlineID"],
 	quests: ["questID"],
 	goals: ["goalID"],

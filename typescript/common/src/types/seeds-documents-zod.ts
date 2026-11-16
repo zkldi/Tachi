@@ -158,8 +158,7 @@ export const SEEDS_TABLE_DOCUMENT_SCHEMA = z.strictObject({
 	game: SEEDS_V3_GAME_SCHEMA,
 	id: SEEDS_TachiIdSchema("T"),
 	inactive: z.boolean(),
-	legacyTableID: z.string(),
-	slug: z.string().optional(),
+	slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/u),
 	title: z.string(),
 });
 

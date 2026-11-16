@@ -1,5 +1,5 @@
 import { Command } from "commander";
-import { GetGameConfig } from "tachi-common";
+import { GetGameConfig, NormalizeTableSlug } from "tachi-common";
 import { SEEDS_FolderDocument, SEEDS_TableDocument } from "tachi-common/types/seeds-documents-zod";
 
 import { CreateFolderID, CreateTableID, MutateCollection } from "../../util";
@@ -120,7 +120,7 @@ MutateCollection("tables.json", (ts: SEEDS_TableDocument[]) => {
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
-			legacyTableID: `ongeki-Single-${version}-levels`,
+			slug: NormalizeTableSlug(`${version}-levels`),
 			title: `O.N.G.E.K.I. (${versionName})`,
 		},
 		{
@@ -130,7 +130,7 @@ MutateCollection("tables.json", (ts: SEEDS_TableDocument[]) => {
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
-			legacyTableID: `ongeki-Single-${version}-difficulties`,
+			slug: NormalizeTableSlug(`${version}-difficulties`),
 			title: `O.N.G.E.K.I. (${versionName}) (Difficulties)`,
 		},
 		{
@@ -140,7 +140,7 @@ MutateCollection("tables.json", (ts: SEEDS_TableDocument[]) => {
 			game: "ongeki",
 			inactive: false,
 			id: CreateTableID(),
-			legacyTableID: `ongeki-Single-${version}-genres`,
+			slug: NormalizeTableSlug(`${version}-genres`),
 			title: `O.N.G.E.K.I. (${versionName}) (Genres)`,
 		},
 	);

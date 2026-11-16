@@ -1,4 +1,4 @@
-import { LoadTableDocumentByLegacyIdForGame } from "#lib/db-formats/table";
+import { LoadTableDocumentByGameAndSlug } from "#lib/db-formats/table";
 import { GetEnumDistForFolders, GetFoldersFromTable } from "#lib/folders/folders";
 import { LoadTableEvolutionPayload } from "#lib/folders/table-evolution";
 import { withUserGameProfile } from "#lib/router/middleware";
@@ -17,7 +17,7 @@ API_V1_ROUTER.add(
 	async ({ ctx, params }) => {
 		const { requestedUser: user, game } = ctx;
 
-		const table = await LoadTableDocumentByLegacyIdForGame(params.tableID, game);
+		const table = await LoadTableDocumentByGameAndSlug(game, params.tableID);
 
 		if (!table) {
 			throw new ExpectedErr(404, `No table with ID ${params.tableID} exists.`);
@@ -42,7 +42,7 @@ API_V1_ROUTER.add(
 	async ({ ctx, params }) => {
 		const { requestedUser: user, game } = ctx;
 
-		const table = await LoadTableDocumentByLegacyIdForGame(params.tableID, game);
+		const table = await LoadTableDocumentByGameAndSlug(game, params.tableID);
 
 		if (!table) {
 			throw new ExpectedErr(404, `No table with ID ${params.tableID} exists.`);
