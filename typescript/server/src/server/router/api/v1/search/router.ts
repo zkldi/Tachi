@@ -11,6 +11,7 @@ import { API_V1_ROUTER } from "../_singleton";
  * Performs a generic "search" across Tachi.
  *
  * @param search - The criteria to search on.
+ * @param hasPlayedGame - Whether to only list entries for games the user played.
  *
  * @name GET /api/v1/search
  */
@@ -19,7 +20,7 @@ API_V1_ROUTER.add("GET /search", async ({ input, req }) => {
 
 	let relevantGames: Array<V3Game> | null = null;
 
-	if (userID !== null) {
+	if (userID !== null && (input.hasPlayedGame !== false || input.hasPlayedGame === undefined)) {
 		const games = await GetUserPlayedGames(userID);
 
 		relevantGames = games;

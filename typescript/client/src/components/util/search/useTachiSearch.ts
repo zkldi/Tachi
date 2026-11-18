@@ -59,7 +59,7 @@ export function useTachiSearch(
 		searches.push(
 			APIFetchV1<SearchResults>(
 				`/search?search=${encodeURIComponent(search)}${
-					hasPlayedGame ? "&hasPlayedGame=true" : ""
+					hasPlayedGame ? "&hasPlayedGame=true" : "&hasPlayedGame=false"
 				}`,
 			),
 		);

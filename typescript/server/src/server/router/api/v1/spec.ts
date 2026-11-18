@@ -214,7 +214,7 @@ export const API_V1_SPEC = {
 
 	"GET /search": {
 		description: "Search users, charts, and folders.",
-		input: z.object({ search: z.string() }),
+		input: z.object({ search: z.string(), hasPlayedGame: z.stringbool().optional() }),
 		output: z.strictObject({
 			charts: z.record(
 				z.string(),
