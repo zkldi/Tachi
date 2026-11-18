@@ -20,7 +20,7 @@ API_V1_ROUTER.add("GET /search", async ({ input, req }) => {
 
 	let relevantGames: Array<V3Game> | null = null;
 
-	if (userID !== null && (input.hasPlayedGame !== false || input.hasPlayedGame === undefined)) {
+	if (userID !== null && (input.hasPlayedGame === true || input.hasPlayedGame === undefined)) {
 		const games = await GetUserPlayedGames(userID);
 
 		relevantGames = games;
