@@ -259645,6 +259645,8 @@
 	{
 		"data": {
 			"2dxtraSet": null,
+			"bpi2Mu": null,
+			"bpi2Sigma": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": 27066,
@@ -282120,6 +282122,8 @@
 	{
 		"data": {
 			"2dxtraSet": null,
+			"bpi2Mu": null,
+			"bpi2Sigma": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": 29044,
@@ -308309,6 +308313,8 @@
 	{
 		"data": {
 			"2dxtraSet": null,
+			"bpi2Mu": null,
+			"bpi2Sigma": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": 31053,
@@ -312075,6 +312081,8 @@
 	{
 		"data": {
 			"2dxtraSet": null,
+			"bpi2Mu": null,
+			"bpi2Sigma": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": [
