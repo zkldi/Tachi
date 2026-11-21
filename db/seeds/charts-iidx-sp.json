@@ -259628,6 +259628,27 @@
 			"hashSHA256": null,
 			"inGameID": 27066,
 			"kaidenAverage": null,
+			"notecount": 1825,
+			"worldRecord": null
+		},
+		"difficulty": "LEGGENDARIA",
+		"id": "C193a85a27ca83e0ec9b",
+		"isPrimary": true,
+		"legacyChartID": "510e3bdb0d0575f133c9ef4f48d49531dae091de",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S19d35e0b63cceb0cc4b",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 27066,
+			"kaidenAverage": null,
 			"notecount": 393,
 			"worldRecord": null
 		},
@@ -282078,6 +282099,27 @@
 			"2dxtraSet": null,
 			"bpi2Mu": null,
 			"bpi2Sigma": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 29044,
+			"kaidenAverage": null,
+			"notecount": 1248,
+			"worldRecord": null
+		},
+		"difficulty": "LEGGENDARIA",
+		"id": "C1906b304a7ab31d6d6c",
+		"isPrimary": true,
+		"legacyChartID": "e7479c76fa4473533d1aee1486d9b435943da98b",
+		"level": "10",
+		"levelNum": 10,
+		"songID": "S19d35e0b6f3a68c915f",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": 29044,
@@ -308250,6 +308292,27 @@
 			"hashSHA256": null,
 			"inGameID": 31053,
 			"kaidenAverage": null,
+			"notecount": 1416,
+			"worldRecord": null
+		},
+		"difficulty": "LEGGENDARIA",
+		"id": "C1930886ad8b65ab8c0c",
+		"isPrimary": true,
+		"legacyChartID": "fab56474492108741344a96d5e32f63a08b7abd1",
+		"level": "11",
+		"levelNum": 11,
+		"songID": "S19d35e0b7e5f40e04f6",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 31053,
+			"kaidenAverage": null,
 			"notecount": 431,
 			"worldRecord": null
 		},
@@ -311991,6 +312054,27 @@
 			"2dxtraSet": null,
 			"bpi2Mu": null,
 			"bpi2Sigma": null,
+			"bpiCoefficient": null,
+			"hashSHA256": null,
+			"inGameID": 80044,
+			"kaidenAverage": null,
+			"notecount": 2032,
+			"worldRecord": null
+		},
+		"difficulty": "LEGGENDARIA",
+		"id": "C194aebf74ddd2097a9f",
+		"isPrimary": true,
+		"legacyChartID": "da68b1f43a38ee32e570e8dacb9f8ce78cc9613a",
+		"level": "12",
+		"levelNum": 12,
+		"songID": "S19d35e0b80b4027b9f5",
+		"versions": [
+			"inf"
+		]
+	},
+	{
+		"data": {
+			"2dxtraSet": null,
 			"bpiCoefficient": null,
 			"hashSHA256": null,
 			"inGameID": [
