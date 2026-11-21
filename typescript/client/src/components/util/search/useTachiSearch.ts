@@ -33,7 +33,7 @@ type ChartHashSearchReturns = {
 
 export function useTachiSearch(
 	search: string,
-	hasPlayedGame = false,
+	hasPlayedGame: boolean,
 ): {
 	data: SearchResults | null;
 	error: UnsuccessfulAPIFetchResponse | null;
@@ -58,9 +58,7 @@ export function useTachiSearch(
 
 		searches.push(
 			APIFetchV1<SearchResults>(
-				`/search?search=${encodeURIComponent(search)}${
-					hasPlayedGame ? "&hasPlayedGame=true" : ""
-				}`,
+				`/search?search=${encodeURIComponent(search)}&hasPlayedGame=${encodeURIComponent(hasPlayedGame)}`,
 			),
 		);
 
