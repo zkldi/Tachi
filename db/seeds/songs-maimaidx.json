@@ -21249,5 +21249,57 @@
 			"overclock"
 		],
 		"title": "OV3RCLOCK"
+	},
+	{
+		"altTitles": [],
+		"artist": "karato feat.yuno",
+		"data": {
+			"duration": 145.618,
+			"genre": "maimai"
+		},
+		"id": "S1a21a65a276b703ea46",
+		"searchTerms": [
+			"utae odore ya tougenkyou"
+		],
+		"title": "歌え踊れや桃源郷！"
+	},
+	{
+		"altTitles": [],
+		"artist": "イロドリミドリ｜HaNaMiNa｜S.S.L.",
+		"data": {
+			"duration": 161.786,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a21a65a282de196355",
+		"searchTerms": [
+			"watashitachi wa hana ni naru",
+			"we will become flowers"
+		],
+		"title": "私たちは、花になる"
+	},
+	{
+		"altTitles": [],
+		"artist": "イロドリミドリ",
+		"data": {
+			"duration": 152.842,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a21a65a28dc84a06c1",
+		"searchTerms": [],
+		"title": "Here the Our MIRAI!"
+	},
+	{
+		"altTitles": [],
+		"artist": "イロドリミドリ",
+		"data": {
+			"duration": 166.7,
+			"genre": "オンゲキ＆CHUNITHM"
+		},
+		"id": "S1a21a65a29a161853fc",
+		"searchTerms": [
+			"shikisai kajou no daiarii myuujikku",
+			"diary music of too many colors"
+		],
+		"title": "色彩過剰のダイアリーミュージック"
 	}
 ]

@@ -14,12 +14,7 @@ import {
 	CreateSongID,
 } from "tachi-common";
 
-import {
-	CreateChartID,
-	GetFreshSongIDGenerator,
-	ReadCollection,
-	WriteCollection,
-} from "../../util";
+import { CreateChartID, ReadCollection, WriteCollection } from "../../util";
 
 const VERSION_DISPLAY_NAMES = [
 	"maimai",
@@ -236,8 +231,6 @@ const parser = new XMLParser({
 
 const newSongs: Array<SEEDS_SongDocument<"maimaidx">> = [];
 const newCharts: Array<SEEDS_ChartDocument<"maimaidx">> = [];
-
-const songIDGenerator = GetFreshSongIDGenerator("maimaidx");
 
 for (const optionsDir of options.input) {
 	for (const option of readdirSync(optionsDir)) {
